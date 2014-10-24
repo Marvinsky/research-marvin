@@ -1,0 +1,335 @@
+Dispatcher selected state size 1.
+This is a unit task.
+Simplifying transitions... done!
+registered:ss
+ ______________________________
+|  parse_ss - ss_search.cc     |
+ ______________________________
+registered:lmcut
+registered:ss
+ ______________________________
+|  parse_ss - ss_search.cc     |
+ ______________________________
+registered:lmcut
+parser is not dry_run
+g object = 0xa2c8910
+ScalarEvaluator vector pointer []
+ScalarEvaluator vector pointer after add g = [0xa2c8910]
+ScalarEvaluator vector pointer after add eval = [0xa2c8910, 0xa2c6270]
+subevaluators_.size:2
+new vector of ScalarEvaluator created = [0xa2c78a8, 0xa2c6270]
+OpenList vector of state_var_t objects = 0xa2c74c0
+engine = 0xa2c9928
+ ___________________________________
+|         calling initialize        |
+ ___________________________________
+ __________________________________________
+|  initialize() - ss_search.cc             |
+ __________________________________________
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+first_sample set to true
+something here
+argc_copy = 0
+Initial state:
+calling get_involved heuristics
+got 2 heuristics
+got involved heuristics
+got 2 heuristics
+f_evaluator populated
+# heuristics: 1
+conditional_effects_present = 0
+starting timings 
+initial state = 0xa2bf088
+node_counter = 771857
+node_gen_and_exp_cost = 1,29558e-06
+active heuristics size : 1
+# heristics = 1
+dead_end = 0
+heuristics[0]->get_heuristic() = -2
+max_h = 0
+is not dead end
+	Maxing_h[0]:0
+	Maxing_h[1]:170685320
+f_evaluator = 170685320
+generated states = 0
+evaluated states = 1
+expanded states = 0
+reopened states = 0
+lastjump generated states = 0
+lastjump evaluated states = 0
+lastjump expanded states = 0
+lastjump reopened states = 0
+generated_states - lastjump_generated_states = 0
+fnivel: 170685320
+nodesGeneratedByLevel: 0
+ time0: 1
+f: 170685320 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
+last_jump:170685320,F_bound_to_print:0
+F_bound:,170685320,Peak memory=,30,1914
+Best heuristic value: -2 [g=0, 1 evaluated, 0 expanded, t=1s]
+heuristics[0]->get_value() = 170685320
+node.get_state_buffer() = 
+starting timing individual heuristics.
+SAMPLING_PHASE = 0
+Current_RIDA_Phase = 0
+Initializing landmark cut heuristic...
+heur_name = ,regular_lm_cut
+h[,0,] is:,,regular_lm_cut,measured time cost: 8,28438e-06,h:6
+memory before deleting databases: 
+VmRSS memory: 16740 KB
+memory after deleting all databases: 
+VmRSS memory: 16740 KB
+Remaining heuristics:
+remaining initial heur ,regular_lm_cut
+node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
+Implementar SS Heuristic.
+ ____________________________
+|       step process         |
+ ____________________________
+heuristic del nodo intial =6
+valor heuristico del node = 6
+valor heuristico del objeto Type  = 6
+ ______________# chamada = 0_______________
+|      level  = 1                          |
+|          h  = 6                 |
+|          w  = 1                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 1        |
+ ____________________________________
+succ_h = 6
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 1                          |
+|          h  = 6                |
+|          w  = 1                          |
+ ________________________________________________
+ ______________# chamada = 1_______________
+|      level  = 2                          |
+|          h  = 6                 |
+|          w  = 1                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 6
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 2                          |
+|          h  = 6                |
+|          w  = 1                          |
+ ________________________________________________
+succ_h = 5
+valor heuristico del succ_node en el for = 5
+valor heuristico del type en el for = 5
+ ___# chamada interna para el nodo= 1______
+|      level  = 2                          |
+|          h  = 5                |
+|          w  = 1                          |
+ ________________________________________________
+ ______________# chamada = 2_______________
+|      level  = 3                          |
+|          h  = 5                 |
+|          w  = 1                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 6
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 3                          |
+|          h  = 6                |
+|          w  = 1                          |
+ ________________________________________________
+succ_h = 5
+valor heuristico del succ_node en el for = 5
+valor heuristico del type en el for = 5
+ ___# chamada interna para el nodo= 1______
+|      level  = 3                          |
+|          h  = 5                |
+|          w  = 1                          |
+ ________________________________________________
+ ______________# chamada = 3_______________
+|      level  = 3                          |
+|          h  = 6                 |
+|          w  = 1                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 1        |
+ ____________________________________
+succ_h = 6
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 3                          |
+|          h  = 6                |
+|          w  = 1                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 4_______________
+|      level  = 4                          |
+|          h  = 5                 |
+|          w  = 1                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 5
+valor heuristico del succ_node en el for = 5
+valor heuristico del type en el for = 5
+ ___# chamada interna para el nodo= 0______
+|      level  = 4                          |
+|          h  = 5                |
+|          w  = 1                          |
+ ________________________________________________
+succ_h = 6
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 1______
+|      level  = 4                          |
+|          h  = 6                |
+|          w  = 1                          |
+ ________________________________________________
+succ_h = 6
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 2______
+|      level  = 4                          |
+|          h  = 6                |
+|          w  = 1                          |
+ ________________________________________________
+ ______________# chamada = 5_______________
+|      level  = 4                          |
+|          h  = 6                 |
+|          w  = 2                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 6
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 4                          |
+|          h  = 6                |
+|          w  = 2                          |
+ ________________________________________________
+succ_h = 5
+valor heuristico del succ_node en el for = 5
+valor heuristico del type en el for = 5
+ ___# chamada interna para el nodo= 1______
+|      level  = 4                          |
+|          h  = 5                |
+|          w  = 2                          |
+ ________________________________________________
+ ______________# chamada = 6_______________
+|      level  = 5                          |
+|          h  = 5                 |
+|          w  = 4                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 6
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 5                          |
+|          h  = 6                |
+|          w  = 4                          |
+ ________________________________________________
+succ_h = 5
+valor heuristico del succ_node en el for = 5
+valor heuristico del type en el for = 5
+ ___# chamada interna para el nodo= 1______
+|      level  = 5                          |
+|          h  = 5                |
+|          w  = 4                          |
+ ________________________________________________
+ ______________# chamada = 7_______________
+|      level  = 5                          |
+|          h  = 6                 |
+|          w  = 4                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 6
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 5                          |
+|          h  = 6                |
+|          w  = 4                          |
+ ________________________________________________
+succ_h = 5
+ ______________# chamada = 8_______________
+|      level  = 6                          |
+|          h  = 5                 |
+|          w  = 4                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 5
+valor heuristico del succ_node en el for = 5
+valor heuristico del type en el for = 5
+ ___# chamada interna para el nodo= 0______
+|      level  = 6                          |
+|          h  = 5                |
+|          w  = 4                          |
+ ________________________________________________
+succ_h = 6
+succ_h = 6
+ ______________# chamada = 9_______________
+|      level  = 6                          |
+|          h  = 6                 |
+|          w  = 8                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 6
+succ_h = 5
+ ______________# chamada = 10_______________
+|      level  = 7                          |
+|          h  = 5                 |
+|          w  = 4                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 6
+succ_h = 5
+counter k = 11
+ _________________________________________
+|   # of nodes expanded by ss = 31        |
+ _________________________________________
+ ____________________________________
+|   total numero of call step() = 0   |
+ ____________________________________
+Actual search time: 0s [t=1,11s]
+Initial state h value: -2.
+Expanded 0 state(s).
+Reopened 0 state(s).
+Evaluated 1 state(s).
+Evaluations: 1
+Generated 22 state(s).
+Dead ends: 0 state(s).
+Expanded until last jump: 0 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 1 state(s).
+Generated until last jump: 0 state(s).
+Search space hash size: 7
+Search space hash bucket count: 193
+Search time: 1,11s
+Total time: 1,11s
+Peak memory: 30916 KB
+VmRSS memory: 1220 KB
+VmHWM memory: 18576 KB
+destructor of HST eliminates all the hashed state descriptions
+destructor of HST eliminates all the hashed state descriptions

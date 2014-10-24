@@ -1,0 +1,1499 @@
+Dispatcher selected state size 1.
+This is a unit task.
+Simplifying transitions... done!
+registered:ss
+ ______________________________
+|  parse_ss - ss_search.cc     |
+ ______________________________
+registered:lmcut
+registered:ss
+ ______________________________
+|  parse_ss - ss_search.cc     |
+ ______________________________
+registered:lmcut
+parser is not dry_run
+g object = 0x8639790
+ScalarEvaluator vector pointer []
+ScalarEvaluator vector pointer after add g = [0x8639790]
+ScalarEvaluator vector pointer after add eval = [0x8639790, 0x8636f08]
+subevaluators_.size:2
+new vector of ScalarEvaluator created = [0x8638770, 0x8636f08]
+OpenList vector of state_var_t objects = 0x8636ff8
+engine = 0x8636b98
+ ___________________________________
+|         calling initialize        |
+ ___________________________________
+ __________________________________________
+|  initialize() - ss_search.cc             |
+ __________________________________________
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+first_sample set to true
+something here
+argc_copy = 0
+Initial state:
+calling get_involved heuristics
+got 2 heuristics
+got involved heuristics
+got 2 heuristics
+f_evaluator populated
+# heuristics: 1
+conditional_effects_present = 0
+starting timings 
+initial state = 0x862aec8
+node_counter = 627677
+node_gen_and_exp_cost = 1.60911e-06
+active heuristics size : 1
+# heristics = 1
+dead_end = 0
+heuristics[0]->get_heuristic() = -2
+max_h = 0
+is not dead end
+	Maxing_h[0]:0
+	Maxing_h[1]:140723720
+f_evaluator = 140723720
+generated states = 0
+evaluated states = 1
+expanded states = 0
+reopened states = 0
+lastjump generated states = 0
+lastjump evaluated states = 0
+lastjump expanded states = 0
+lastjump reopened states = 0
+generated_states - lastjump_generated_states = 0
+fnivel: 140723720
+nodesGeneratedByLevel: 0
+ time0: 1.01
+f: 140723720 [1 evaluated, 0 expanded, t=1.01s,generated_states:,0,additional_states:,0,],random_comb_index:-1
+last_jump:140723720,F_bound_to_print:0
+F_bound:,140723720,Peak memory=,54.2148
+Best heuristic value: -2 [g=0, 1 evaluated, 0 expanded, t=1.01s]
+heuristics[0]->get_value() = 140723720
+node.get_state_buffer() = 
+starting timing individual heuristics.
+SAMPLING_PHASE = 0
+Current_RIDA_Phase = 0
+Initializing landmark cut heuristic...
+heur_name = ,regular_lm_cut
+h[,0,] is:,,regular_lm_cut,measured time cost: 1.16279e-05,h:7
+memory before deleting databases: 
+VmRSS memory: 18916 KB
+memory after deleting all databases: 
+VmRSS memory: 18916 KB
+Remaining heuristics:
+remaining initial heur ,regular_lm_cut
+node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
+Implementar SS Heuristic.
+ ____________________________
+|       step process         |
+ ____________________________
+heuristic del nodo intial =7
+valor heuristico del node = 7
+valor heuristico del objeto Type  = 7
+ ______________# chamada = 0_______________
+|      level  = 1                          |
+|          h  = 7                 |
+|          w  = 1                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 7
+succ_g = -1
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 1                          |
+|          h  = 7                |
+|          w  = 1                          |
+ ________________________________________________
+succ_h = 6
+succ_g = -1
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 1______
+|      level  = 1                          |
+|          h  = 6                |
+|          w  = 1                          |
+ ________________________________________________
+succ_h = 8
+succ_g = -1
+valor heuristico del succ_node en el for = 8
+valor heuristico del type en el for = 8
+ ___# chamada interna para el nodo= 2______
+|      level  = 1                          |
+|          h  = 8                |
+|          w  = 1                          |
+ ________________________________________________
+ ______________# chamada = 1_______________
+|      level  = 2                          |
+|          h  = 6                 |
+|          w  = 1                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 6
+succ_g = -1
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 2                          |
+|          h  = 6                |
+|          w  = 1                          |
+ ________________________________________________
+succ_h = 7
+succ_g = -1
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 2                          |
+|          h  = 7                |
+|          w  = 1                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 0
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 2______
+|      level  = 2                          |
+|          h  = 7                |
+|          w  = 1                          |
+ ________________________________________________
+ ______________# chamada = 2_______________
+|      level  = 2                          |
+|          h  = 7                 |
+|          w  = 1                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 4        |
+ ____________________________________
+succ_h = 7
+succ_g = 2
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 2                          |
+|          h  = 7                |
+|          w  = 1                          |
+ ________________________________________________
+ a is less than the probability.
+succ_h = 8
+succ_g = -1
+valor heuristico del succ_node en el for = 8
+valor heuristico del type en el for = 8
+ ___# chamada interna para el nodo= 1______
+|      level  = 2                          |
+|          h  = 8                |
+|          w  = 1                          |
+ ________________________________________________
+succ_h = 8
+succ_g = -1
+valor heuristico del succ_node en el for = 8
+valor heuristico del type en el for = 8
+ ___# chamada interna para el nodo= 2______
+|      level  = 2                          |
+|          h  = 8                |
+|          w  = 1                          |
+ ________________________________________________
+succ_h = 8
+succ_g = -1
+valor heuristico del succ_node en el for = 8
+valor heuristico del type en el for = 8
+ ___# chamada interna para el nodo= 3______
+|      level  = 2                          |
+|          h  = 8                |
+|          w  = 1                          |
+ ________________________________________________
+ ______________# chamada = 3_______________
+|      level  = 2                          |
+|          h  = 8                 |
+|          w  = 1                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 8
+succ_g = -1
+valor heuristico del succ_node en el for = 8
+valor heuristico del type en el for = 8
+ ___# chamada interna para el nodo= 0______
+|      level  = 2                          |
+|          h  = 8                |
+|          w  = 1                          |
+ ________________________________________________
+succ_h = 8
+succ_g = -1
+valor heuristico del succ_node en el for = 8
+valor heuristico del type en el for = 8
+ ___# chamada interna para el nodo= 1______
+|      level  = 2                          |
+|          h  = 8                |
+|          w  = 1                          |
+ ________________________________________________
+ a is less than the probability.
+succ_h = 7
+succ_g = 2
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 2______
+|      level  = 2                          |
+|          h  = 7                |
+|          w  = 1                          |
+ ________________________________________________
+ ______________# chamada = 4_______________
+|      level  = 3                          |
+|          h  = 6                 |
+|          w  = 1                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 6
+succ_g = 1
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 3                          |
+|          h  = 6                |
+|          w  = 1                          |
+ ________________________________________________
+succ_h = 7
+succ_g = -1
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 3                          |
+|          h  = 7                |
+|          w  = 1                          |
+ ________________________________________________
+ ______________# chamada = 5_______________
+|      level  = 3                          |
+|          h  = 7                 |
+|          w  = 4                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 7
+succ_g = -1
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 3                          |
+|          h  = 7                |
+|          w  = 4                          |
+ ________________________________________________
+ a is less than the probability.
+succ_h = 6
+succ_g = 3
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 1______
+|      level  = 3                          |
+|          h  = 6                |
+|          w  = 4                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 6_______________
+|      level  = 3                          |
+|          h  = 8                 |
+|          w  = 5                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 7
+succ_g = -1
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 3                          |
+|          h  = 7                |
+|          w  = 5                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 1
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 3                          |
+|          h  = 7                |
+|          w  = 5                          |
+ ________________________________________________
+succ_h = 9
+succ_g = -1
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 2______
+|      level  = 3                          |
+|          h  = 9                |
+|          w  = 5                          |
+ ________________________________________________
+ ______________# chamada = 7_______________
+|      level  = 4                          |
+|          h  = 6                 |
+|          w  = 8                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 6
+succ_g = 2
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 4                          |
+|          h  = 6                |
+|          w  = 8                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 2
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 4                          |
+|          h  = 7                |
+|          w  = 8                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 2
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 2______
+|      level  = 4                          |
+|          h  = 7                |
+|          w  = 8                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 8_______________
+|      level  = 4                          |
+|          h  = 7                 |
+|          w  = 15                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 7
+succ_g = -1
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 4                          |
+|          h  = 7                |
+|          w  = 15                          |
+ ________________________________________________
+succ_h = 6
+succ_g = 4
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 1______
+|      level  = 4                          |
+|          h  = 6                |
+|          w  = 15                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 9_______________
+|      level  = 4                          |
+|          h  = 9                 |
+|          w  = 5                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 9
+succ_g = -1
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 0______
+|      level  = 4                          |
+|          h  = 9                |
+|          w  = 5                          |
+ ________________________________________________
+succ_h = 9
+succ_g = -1
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 1______
+|      level  = 4                          |
+|          h  = 9                |
+|          w  = 5                          |
+ ________________________________________________
+ a is less than the probability.
+succ_h = 8
+succ_g = 2
+valor heuristico del succ_node en el for = 8
+valor heuristico del type en el for = 8
+ ___# chamada interna para el nodo= 2______
+|      level  = 4                          |
+|          h  = 8                |
+|          w  = 5                          |
+ ________________________________________________
+ ______________# chamada = 10_______________
+|      level  = 5                          |
+|          h  = 6                 |
+|          w  = 30                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 6
+succ_g = 3
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 5                          |
+|          h  = 6                |
+|          w  = 30                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 3
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 5                          |
+|          h  = 7                |
+|          w  = 30                          |
+ ________________________________________________
+ ______________# chamada = 11_______________
+|      level  = 5                          |
+|          h  = 7                 |
+|          w  = 31                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 7
+succ_g = 3
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 5                          |
+|          h  = 7                |
+|          w  = 31                          |
+ ________________________________________________
+succ_h = 6
+succ_g = 5
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 1______
+|      level  = 5                          |
+|          h  = 6                |
+|          w  = 31                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 12_______________
+|      level  = 5                          |
+|          h  = 8                 |
+|          w  = 5                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 7
+succ_g = 3
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 5                          |
+|          h  = 7                |
+|          w  = 5                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 3
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 5                          |
+|          h  = 7                |
+|          w  = 5                          |
+ ________________________________________________
+succ_h = 9
+succ_g = 3
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 2______
+|      level  = 5                          |
+|          h  = 9                |
+|          w  = 5                          |
+ ________________________________________________
+ ______________# chamada = 13_______________
+|      level  = 5                          |
+|          h  = 9                 |
+|          w  = 10                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 9
+succ_g = -1
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 0______
+|      level  = 5                          |
+|          h  = 9                |
+|          w  = 10                          |
+ ________________________________________________
+ a is less than the probability.
+succ_h = 9
+succ_g = 5
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 1______
+|      level  = 5                          |
+|          h  = 9                |
+|          w  = 10                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 14_______________
+|      level  = 6                          |
+|          h  = 6                 |
+|          w  = 62                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 6
+succ_g = 4
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 6                          |
+|          h  = 6                |
+|          w  = 62                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 4
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 6                          |
+|          h  = 7                |
+|          w  = 62                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 4
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 2______
+|      level  = 6                          |
+|          h  = 7                |
+|          w  = 62                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 15_______________
+|      level  = 6                          |
+|          h  = 7                 |
+|          w  = 71                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 7
+succ_g = 4
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 6                          |
+|          h  = 7                |
+|          w  = 71                          |
+ ________________________________________________
+succ_h = 6
+succ_g = 6
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 1______
+|      level  = 6                          |
+|          h  = 6                |
+|          w  = 71                          |
+ ________________________________________________
+ ______________# chamada = 16_______________
+|      level  = 6                          |
+|          h  = 9                 |
+|          w  = 20                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 9
+succ_g = 4
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 0______
+|      level  = 6                          |
+|          h  = 9                |
+|          w  = 20                          |
+ ________________________________________________
+succ_h = 9
+succ_g = 4
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 1______
+|      level  = 6                          |
+|          h  = 9                |
+|          w  = 20                          |
+ ________________________________________________
+succ_h = 8
+succ_g = 4
+valor heuristico del succ_node en el for = 8
+valor heuristico del type en el for = 8
+ ___# chamada interna para el nodo= 2______
+|      level  = 6                          |
+|          h  = 8                |
+|          w  = 20                          |
+ ________________________________________________
+ ______________# chamada = 17_______________
+|      level  = 7                          |
+|          h  = 6                 |
+|          w  = 142                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 6
+succ_g = 5
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 7                          |
+|          h  = 6                |
+|          w  = 142                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 5
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 7                          |
+|          h  = 7                |
+|          w  = 142                          |
+ ________________________________________________
+ ______________# chamada = 18_______________
+|      level  = 7                          |
+|          h  = 7                 |
+|          w  = 195                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 7
+succ_g = 5
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 7                          |
+|          h  = 7                |
+|          w  = 195                          |
+ ________________________________________________
+ a is less than the probability.
+succ_h = 6
+succ_g = 7
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 1______
+|      level  = 7                          |
+|          h  = 6                |
+|          w  = 195                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 19_______________
+|      level  = 7                          |
+|          h  = 8                 |
+|          w  = 20                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 7
+succ_g = 5
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 7                          |
+|          h  = 7                |
+|          w  = 20                          |
+ ________________________________________________
+ a is less than the probability.
+succ_h = 7
+succ_g = 5
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 7                          |
+|          h  = 7                |
+|          w  = 20                          |
+ ________________________________________________
+succ_h = 9
+succ_g = 5
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 2______
+|      level  = 7                          |
+|          h  = 9                |
+|          w  = 20                          |
+ ________________________________________________
+ ______________# chamada = 20_______________
+|      level  = 7                          |
+|          h  = 9                 |
+|          w  = 40                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 9
+succ_g = 5
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 0______
+|      level  = 7                          |
+|          h  = 9                |
+|          w  = 40                          |
+ ________________________________________________
+ a is less than the probability.
+succ_h = 9
+succ_g = 7
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 1______
+|      level  = 7                          |
+|          h  = 9                |
+|          w  = 40                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 21_______________
+|      level  = 8                          |
+|          h  = 6                 |
+|          w  = 390                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 6
+succ_g = 6
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 8                          |
+|          h  = 6                |
+|          w  = 390                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 6
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 8                          |
+|          h  = 7                |
+|          w  = 390                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 6
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 2______
+|      level  = 8                          |
+|          h  = 7                |
+|          w  = 390                          |
+ ________________________________________________
+ ______________# chamada = 22_______________
+|      level  = 8                          |
+|          h  = 7                 |
+|          w  = 377                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 7
+succ_g = 6
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 8                          |
+|          h  = 7                |
+|          w  = 377                          |
+ ________________________________________________
+ a is less than the probability.
+succ_h = 6
+succ_g = 8
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 1______
+|      level  = 8                          |
+|          h  = 6                |
+|          w  = 377                          |
+ ________________________________________________
+ ______________# chamada = 23_______________
+|      level  = 8                          |
+|          h  = 9                 |
+|          w  = 80                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 9
+succ_g = 6
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 0______
+|      level  = 8                          |
+|          h  = 9                |
+|          w  = 80                          |
+ ________________________________________________
+succ_h = 9
+succ_g = 6
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 1______
+|      level  = 8                          |
+|          h  = 9                |
+|          w  = 80                          |
+ ________________________________________________
+succ_h = 8
+succ_g = 6
+valor heuristico del succ_node en el for = 8
+valor heuristico del type en el for = 8
+ ___# chamada interna para el nodo= 2______
+|      level  = 8                          |
+|          h  = 8                |
+|          w  = 80                          |
+ ________________________________________________
+ ______________# chamada = 24_______________
+|      level  = 9                          |
+|          h  = 6                 |
+|          w  = 754                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 6
+succ_g = 7
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 9                          |
+|          h  = 6                |
+|          w  = 754                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 7
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 9                          |
+|          h  = 7                |
+|          w  = 754                          |
+ ________________________________________________
+ ______________# chamada = 25_______________
+|      level  = 9                          |
+|          h  = 7                 |
+|          w  = 1157                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 7
+succ_g = 7
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 9                          |
+|          h  = 7                |
+|          w  = 1157                          |
+ ________________________________________________
+ a is less than the probability.
+succ_h = 6
+succ_g = 9
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 1______
+|      level  = 9                          |
+|          h  = 6                |
+|          w  = 1157                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 26_______________
+|      level  = 9                          |
+|          h  = 8                 |
+|          w  = 80                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 7
+succ_g = 7
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 9                          |
+|          h  = 7                |
+|          w  = 80                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 7
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 9                          |
+|          h  = 7                |
+|          w  = 80                          |
+ ________________________________________________
+succ_h = 9
+succ_g = 7
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 2______
+|      level  = 9                          |
+|          h  = 9                |
+|          w  = 80                          |
+ ________________________________________________
+ ______________# chamada = 27_______________
+|      level  = 9                          |
+|          h  = 9                 |
+|          w  = 160                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 9
+succ_g = 7
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 0______
+|      level  = 9                          |
+|          h  = 9                |
+|          w  = 160                          |
+ ________________________________________________
+succ_h = 9
+succ_g = 9
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 1______
+|      level  = 9                          |
+|          h  = 9                |
+|          w  = 160                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 28_______________
+|      level  = 10                          |
+|          h  = 6                 |
+|          w  = 2314                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 6
+succ_g = 8
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 10                          |
+|          h  = 6                |
+|          w  = 2314                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 8
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 10                          |
+|          h  = 7                |
+|          w  = 2314                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 8
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 2______
+|      level  = 10                          |
+|          h  = 7                |
+|          w  = 2314                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 29_______________
+|      level  = 10                          |
+|          h  = 7                 |
+|          w  = 2071                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 7
+succ_g = 8
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 10                          |
+|          h  = 7                |
+|          w  = 2071                          |
+ ________________________________________________
+succ_h = 6
+succ_g = 10
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 1______
+|      level  = 10                          |
+|          h  = 6                |
+|          w  = 2071                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 30_______________
+|      level  = 10                          |
+|          h  = 9                 |
+|          w  = 320                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 9
+succ_g = 8
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 0______
+|      level  = 10                          |
+|          h  = 9                |
+|          w  = 320                          |
+ ________________________________________________
+succ_h = 9
+succ_g = 8
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 1______
+|      level  = 10                          |
+|          h  = 9                |
+|          w  = 320                          |
+ ________________________________________________
+succ_h = 8
+succ_g = 8
+valor heuristico del succ_node en el for = 8
+valor heuristico del type en el for = 8
+ ___# chamada interna para el nodo= 2______
+|      level  = 10                          |
+|          h  = 8                |
+|          w  = 320                          |
+ ________________________________________________
+ ______________# chamada = 31_______________
+|      level  = 11                          |
+|          h  = 6                 |
+|          w  = 4142                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 6
+succ_g = 9
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 11                          |
+|          h  = 6                |
+|          w  = 4142                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 9
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 11                          |
+|          h  = 7                |
+|          w  = 4142                          |
+ ________________________________________________
+ ______________# chamada = 32_______________
+|      level  = 11                          |
+|          h  = 7                 |
+|          w  = 6699                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 7
+succ_g = 9
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 11                          |
+|          h  = 7                |
+|          w  = 6699                          |
+ ________________________________________________
+succ_h = 6
+succ_g = 11
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 1______
+|      level  = 11                          |
+|          h  = 6                |
+|          w  = 6699                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 33_______________
+|      level  = 11                          |
+|          h  = 8                 |
+|          w  = 320                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 7
+succ_g = 9
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 11                          |
+|          h  = 7                |
+|          w  = 320                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 9
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 11                          |
+|          h  = 7                |
+|          w  = 320                          |
+ ________________________________________________
+succ_h = 9
+succ_g = 9
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 2______
+|      level  = 11                          |
+|          h  = 9                |
+|          w  = 320                          |
+ ________________________________________________
+ ______________# chamada = 34_______________
+|      level  = 11                          |
+|          h  = 9                 |
+|          w  = 640                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 9
+succ_g = 9
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 0______
+|      level  = 11                          |
+|          h  = 9                |
+|          w  = 640                          |
+ ________________________________________________
+ a is less than the probability.
+succ_h = 9
+succ_g = 11
+ ______________# chamada = 35_______________
+|      level  = 12                          |
+|          h  = 6                 |
+|          w  = 13398                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 6
+succ_g = 10
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 12                          |
+|          h  = 6                |
+|          w  = 13398                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 10
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 12                          |
+|          h  = 7                |
+|          w  = 13398                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 10
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 2______
+|      level  = 12                          |
+|          h  = 7                |
+|          w  = 13398                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 36_______________
+|      level  = 12                          |
+|          h  = 7                 |
+|          w  = 11481                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 7
+succ_g = 10
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 12                          |
+|          h  = 7                |
+|          w  = 11481                          |
+ ________________________________________________
+succ_h = 6
+succ_g = 12
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 1______
+|      level  = 12                          |
+|          h  = 6                |
+|          w  = 11481                          |
+ ________________________________________________
+ a is less than the probability.
+ ______________# chamada = 37_______________
+|      level  = 12                          |
+|          h  = 9                 |
+|          w  = 960                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 9
+succ_g = 10
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 0______
+|      level  = 12                          |
+|          h  = 9                |
+|          w  = 960                          |
+ ________________________________________________
+succ_h = 9
+succ_g = 10
+valor heuristico del succ_node en el for = 9
+valor heuristico del type en el for = 9
+ ___# chamada interna para el nodo= 1______
+|      level  = 12                          |
+|          h  = 9                |
+|          w  = 960                          |
+ ________________________________________________
+ a is less than the probability.
+succ_h = 8
+succ_g = 10
+valor heuristico del succ_node en el for = 8
+valor heuristico del type en el for = 8
+ ___# chamada interna para el nodo= 2______
+|      level  = 12                          |
+|          h  = 8                |
+|          w  = 960                          |
+ ________________________________________________
+ ______________# chamada = 38_______________
+|      level  = 13                          |
+|          h  = 6                 |
+|          w  = 22962                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 6
+succ_g = 11
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 13                          |
+|          h  = 6                |
+|          w  = 22962                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 11
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 13                          |
+|          h  = 7                |
+|          w  = 22962                          |
+ ________________________________________________
+ ______________# chamada = 39_______________
+|      level  = 13                          |
+|          h  = 7                 |
+|          w  = 38277                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 7
+succ_g = 11
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 13                          |
+|          h  = 7                |
+|          w  = 38277                          |
+ ________________________________________________
+ a is less than the probability.
+succ_h = 6
+succ_g = 13
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 1______
+|      level  = 13                          |
+|          h  = 6                |
+|          w  = 38277                          |
+ ________________________________________________
+ ______________# chamada = 40_______________
+|      level  = 13                          |
+|          h  = 8                 |
+|          w  = 960                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 7
+succ_g = 11
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 13                          |
+|          h  = 7                |
+|          w  = 960                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 11
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 13                          |
+|          h  = 7                |
+|          w  = 960                          |
+ ________________________________________________
+succ_h = 9
+succ_g = 11
+ ______________# chamada = 41_______________
+|      level  = 13                          |
+|          h  = 9                 |
+|          w  = 1920                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 9
+succ_g = 11
+succ_h = 9
+succ_g = 11
+ ______________# chamada = 42_______________
+|      level  = 14                          |
+|          h  = 6                 |
+|          w  = 76554                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 6
+succ_g = 12
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 14                          |
+|          h  = 6                |
+|          w  = 76554                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 12
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 1______
+|      level  = 14                          |
+|          h  = 7                |
+|          w  = 76554                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 12
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 2______
+|      level  = 14                          |
+|          h  = 7                |
+|          w  = 76554                          |
+ ________________________________________________
+ ______________# chamada = 43_______________
+|      level  = 14                          |
+|          h  = 7                 |
+|          w  = 63159                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 7
+succ_g = 12
+valor heuristico del succ_node en el for = 7
+valor heuristico del type en el for = 7
+ ___# chamada interna para el nodo= 0______
+|      level  = 14                          |
+|          h  = 7                |
+|          w  = 63159                          |
+ ________________________________________________
+succ_h = 6
+succ_g = 14
+ ______________# chamada = 44_______________
+|      level  = 15                          |
+|          h  = 6                 |
+|          w  = 76554                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 6
+succ_g = 13
+valor heuristico del succ_node en el for = 6
+valor heuristico del type en el for = 6
+ ___# chamada interna para el nodo= 0______
+|      level  = 15                          |
+|          h  = 6                |
+|          w  = 76554                          |
+ ________________________________________________
+succ_h = 7
+succ_g = 13
+ ______________# chamada = 45_______________
+|      level  = 15                          |
+|          h  = 7                 |
+|          w  = 216267                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 2        |
+ ____________________________________
+succ_h = 7
+succ_g = 13
+succ_h = 6
+succ_g = 15
+ ______________# chamada = 46_______________
+|      level  = 16                          |
+|          h  = 6                 |
+|          w  = 76554                          |
+ ________________________________________________
+ ____________________________________
+|  applicable_ops.size() = 3        |
+ ____________________________________
+succ_h = 6
+succ_g = 14
+succ_h = 7
+succ_g = 14
+succ_h = 7
+succ_g = 14
+counter k = 47
+ _________________________________________
+|   # of nodes expanded by ss = 619218        |
+ _________________________________________
+ ____________________________________
+|   total numero of call step() = 0   |
+ ____________________________________
+Actual search time: 0.01s [t=1.13s]
+Initial state h value: -2.
+Expanded 0 state(s).
+Reopened 0 state(s).
+Evaluated 1 state(s).
+Evaluations: 1
+Generated 117 state(s).
+Dead ends: 0 state(s).
+Expanded until last jump: 0 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 1 state(s).
+Generated until last jump: 0 state(s).
+Search space hash size: 19
+Search space hash bucket count: 193
+Search time: 1.13s
+Total time: 1.13s
+Peak memory: 55516 KB
+VmRSS memory: 1260 KB
+VmHWM memory: 35080 KB
+destructor of HST eliminates all the hashed state descriptions
+destructor of HST eliminates all the hashed state descriptions
