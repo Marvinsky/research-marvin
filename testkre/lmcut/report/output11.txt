@@ -1,0 +1,13 @@
+	lmcut/problemas/blocks/resultado/Astarblocks11.txt
+	f		# Nodes		Runtime(s)
+	12		0		1
+	13		2		1.11
+	14		6		1.11
+	15		8		1.11
+	16		13		1.12
+	17		30		1.12
+	18		63		1.12
+	19		254		1.12
+	20		338		1.15
+	21		1160		1.25
+	22		2092		1.45
