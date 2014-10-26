@@ -1,3 +1,0 @@
-	lmcut/problemas/blocks/resultado/Astarblocks8.txt
-	f		# Nodes		Runtime(s)
-	10		0		1.02

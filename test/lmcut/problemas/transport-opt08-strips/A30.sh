@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/test/lmcut/problemas/transport-opt08-strips/resultad
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/transport-opt08-strips/p30-domain.pddl benchmarks/transport-opt08-strips/p30.pddl Astartransport-opt08-strips30
+python3 src/translate/translate.py benchmarks/transport-opt08-strips/p30-domain.pddl benchmarks/transport-opt08-strips/p30.pddl Astartransport-opt08-strips30  transport-opt08-strips p30.pddl  lmcut
 
 src/preprocess/preprocess < Astartransport-opt08-strips30.sas
 
-src/search/downward --search "astar(lmcut())" <  Astartransport-opt08-strips30 >> ${RESULTS}/Astartransport-opt08-strips30.txt
+src/search/downward --search "astar(lmcut())" <  Astartransport-opt08-strips30 >> ${RESULTS}/p30.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astartransport-opt08-strips30
 
 
 rm Astartransport-opt08-strips30.sas
+
+
+
+rm src/translate/arquivos/p30.pddl
 

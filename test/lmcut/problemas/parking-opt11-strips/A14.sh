@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/test/lmcut/problemas/parking-opt11-strips/resultado
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/parking-opt11-strips/domain.pddl benchmarks/parking-opt11-strips/pfile06-024.pddl Astarparking-opt11-strips14
+python3 src/translate/translate.py benchmarks/parking-opt11-strips/domain.pddl benchmarks/parking-opt11-strips/pfile06-024.pddl Astarparking-opt11-strips14  parking-opt11-strips pfile06-024.pddl  lmcut
 
 src/preprocess/preprocess < Astarparking-opt11-strips14.sas
 
-src/search/downward --search "astar(lmcut())" <  Astarparking-opt11-strips14 >> ${RESULTS}/Astarparking-opt11-strips14.txt
+src/search/downward --search "astar(lmcut())" <  Astarparking-opt11-strips14 >> ${RESULTS}/pfile06-024.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarparking-opt11-strips14
 
 
 rm Astarparking-opt11-strips14.sas
+
+
+
+rm src/translate/arquivos/pfile06-024.pddl
 

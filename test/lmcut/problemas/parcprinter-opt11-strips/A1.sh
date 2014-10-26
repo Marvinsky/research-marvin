@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/test/lmcut/problemas/parcprinter-opt11-strips/result
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/parcprinter-opt11-strips/p01-domain.pddl benchmarks/parcprinter-opt11-strips/p01.pddl Astarparcprinter-opt11-strips1
+python3 src/translate/translate.py benchmarks/parcprinter-opt11-strips/p01-domain.pddl benchmarks/parcprinter-opt11-strips/p01.pddl Astarparcprinter-opt11-strips1  parcprinter-opt11-strips p01.pddl  lmcut
 
 src/preprocess/preprocess < Astarparcprinter-opt11-strips1.sas
 
-src/search/downward --search "astar(lmcut())" <  Astarparcprinter-opt11-strips1 >> ${RESULTS}/Astarparcprinter-opt11-strips1.txt
+src/search/downward --search "astar(lmcut())" <  Astarparcprinter-opt11-strips1 >> ${RESULTS}/p01.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarparcprinter-opt11-strips1
 
 
 rm Astarparcprinter-opt11-strips1.sas
+
+
+
+rm src/translate/arquivos/p01.pddl
 

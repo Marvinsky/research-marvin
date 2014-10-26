@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/test/lmcut/problemas/floortile-opt11-strips/resultad
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/floortile-opt11-strips/domain.pddl benchmarks/floortile-opt11-strips/opt-p10-020.pddl Astarfloortile-opt11-strips20
+python3 src/translate/translate.py benchmarks/floortile-opt11-strips/domain.pddl benchmarks/floortile-opt11-strips/opt-p10-020.pddl Astarfloortile-opt11-strips20  floortile-opt11-strips opt-p10-020.pddl  lmcut
 
 src/preprocess/preprocess < Astarfloortile-opt11-strips20.sas
 
-src/search/downward --search "astar(lmcut())" <  Astarfloortile-opt11-strips20 >> ${RESULTS}/Astarfloortile-opt11-strips20.txt
+src/search/downward --search "astar(lmcut())" <  Astarfloortile-opt11-strips20 >> ${RESULTS}/opt-p10-020.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarfloortile-opt11-strips20
 
 
 rm Astarfloortile-opt11-strips20.sas
+
+
+
+rm src/translate/arquivos/opt-p10-020.pddl
 

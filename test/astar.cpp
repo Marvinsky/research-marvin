@@ -48,15 +48,16 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 	cout<<"pasta = "<<pasta.c_str()<<"\n\n";
 	outfile<<"RESULTS=/home/marvin/marvin/test/"<<heuristic<<"/problemas/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd\n\n";
-	outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"\n\n";
+	outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<" "<<problema.c_str()<<"  "<<heuristic<<"\n\n";
 
 	outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
 
-	outfile<<"src/search/downward --search \"astar("<<heuristic<<"())\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<sas.c_str()<<".txt\n\n";
+	outfile<<"src/search/downward --search \"astar("<<heuristic<<"())\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	
 
 	outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
 	outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
+        outfile<<"\n\nrm "<<"src/translate/arquivos/"<<problema.c_str()<<"\n\n";
 
 	outfile.close();
 

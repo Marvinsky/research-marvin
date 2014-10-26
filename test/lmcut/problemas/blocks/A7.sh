@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/test/lmcut/problemas/blocks/resultado
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/blocks/probBLOCKS-6-0.pddl Astarblocks7
+python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/blocks/probBLOCKS-6-0.pddl Astarblocks7  blocks probBLOCKS-6-0.pddl  lmcut
 
 src/preprocess/preprocess < Astarblocks7.sas
 
-src/search/downward --search "astar(lmcut())" <  Astarblocks7 >> ${RESULTS}/Astarblocks7.txt
+src/search/downward --search "astar(lmcut())" <  Astarblocks7 >> ${RESULTS}/probBLOCKS-6-0.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarblocks7
 
 
 rm Astarblocks7.sas
+
+
+
+rm src/translate/arquivos/probBLOCKS-6-0.pddl
 
