@@ -9,7 +9,7 @@
 using namespace std;
 
 
-void create_report2(string astarText, int nroProb, string heuristic) {
+void create_report2(string astarText, int nroProb, string heuristic, string pasta) {
 	//cout<<astarText<<"\n\n";
 	string plancost = "Plan cost:";
 	string sky1 = "sky1"; //initial state h value 
@@ -38,11 +38,12 @@ void create_report2(string astarText, int nroProb, string heuristic) {
 	stringstream Resultado;
 	string output;
 
- 	output += "output";
+ 	output += "Astar";
+        output += pasta;
 	Resultado<<nroProb + 1;
 	output += Resultado.str();
 	output += string(".txt");
-        
+        output =  pasta+"/"+output;
 	output = "testkre/"+heuristic+"/report/"+output;
 	output = "marvin/" + output;
 	output = "marvin/" + output;
@@ -143,6 +144,10 @@ void create_report1(string heuristic, int countProblems) {
 			}
 		}*/
                 //This code could be removed 
+		
+                string pastaReporte = "mkdir /home/marvin/marvin/testkre/"+heuristic+"/report/"+pasta;
+
+		system(pastaReporte.c_str());
 	
 		for (int i = 0; i < quantidade_problemas; i++) { 
 			string arquivo;
@@ -158,7 +163,7 @@ void create_report1(string heuristic, int countProblems) {
 			arquivo = "/problemas" + arquivo;
 			arquivo = heuristic + arquivo;		
 
-			create_report2(arquivo.c_str(), i, heuristic);
+			create_report2(arquivo.c_str(), i, heuristic, pasta);
 		}
 		countRead++;
 	} while (countRead < countProblems);

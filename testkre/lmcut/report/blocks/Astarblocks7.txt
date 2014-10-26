@@ -1,0 +1,2 @@
+	lmcut/problemas/blocks/resultado/Astarblocks7.txt
+	f		# Nodes		Runtime(s)
