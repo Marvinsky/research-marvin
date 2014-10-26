@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/testss/lmcut/problemas/visitall-opt11-strips/resulta
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/visitall-opt11-strips/domain.pddl benchmarks/visitall-opt11-strips/problem10-full.pddl Astarvisitall-opt11-strips17
+python3 src/translate/translate.py benchmarks/visitall-opt11-strips/domain.pddl benchmarks/visitall-opt11-strips/problem10-full.pddl Astarvisitall-opt11-strips17  visitall-opt11-strips  problem10-full.pddl  lmcut
 
 src/preprocess/preprocess < Astarvisitall-opt11-strips17.sas
 
-src/search/downward --search "ss(lmcut())" <  Astarvisitall-opt11-strips17 >> ${RESULTS}/Astarvisitall-opt11-strips17.txt
+src/search/downward --search "ss(lmcut())" <  Astarvisitall-opt11-strips17 >> ${RESULTS}/problem10-full.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarvisitall-opt11-strips17
 
 
 rm Astarvisitall-opt11-strips17.sas
+
+
+
+rm src/translate/arquivos/problem10-full.pddl
 

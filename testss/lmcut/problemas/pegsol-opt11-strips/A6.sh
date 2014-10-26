@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/testss/lmcut/problemas/pegsol-opt11-strips/resultado
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/pegsol-opt11-strips/domain.pddl benchmarks/pegsol-opt11-strips/p06.pddl Astarpegsol-opt11-strips6
+python3 src/translate/translate.py benchmarks/pegsol-opt11-strips/domain.pddl benchmarks/pegsol-opt11-strips/p06.pddl Astarpegsol-opt11-strips6  pegsol-opt11-strips  p06.pddl  lmcut
 
 src/preprocess/preprocess < Astarpegsol-opt11-strips6.sas
 
-src/search/downward --search "ss(lmcut())" <  Astarpegsol-opt11-strips6 >> ${RESULTS}/Astarpegsol-opt11-strips6.txt
+src/search/downward --search "ss(lmcut())" <  Astarpegsol-opt11-strips6 >> ${RESULTS}/p06.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarpegsol-opt11-strips6
 
 
 rm Astarpegsol-opt11-strips6.sas
+
+
+
+rm src/translate/arquivos/p06.pddl
 

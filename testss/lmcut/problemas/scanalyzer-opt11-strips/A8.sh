@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/testss/lmcut/problemas/scanalyzer-opt11-strips/resul
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/scanalyzer-opt11-strips/domain.pddl benchmarks/scanalyzer-opt11-strips/p08.pddl Astarscanalyzer-opt11-strips8
+python3 src/translate/translate.py benchmarks/scanalyzer-opt11-strips/domain.pddl benchmarks/scanalyzer-opt11-strips/p08.pddl Astarscanalyzer-opt11-strips8  scanalyzer-opt11-strips  p08.pddl  lmcut
 
 src/preprocess/preprocess < Astarscanalyzer-opt11-strips8.sas
 
-src/search/downward --search "ss(lmcut())" <  Astarscanalyzer-opt11-strips8 >> ${RESULTS}/Astarscanalyzer-opt11-strips8.txt
+src/search/downward --search "ss(lmcut())" <  Astarscanalyzer-opt11-strips8 >> ${RESULTS}/p08.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarscanalyzer-opt11-strips8
 
 
 rm Astarscanalyzer-opt11-strips8.sas
+
+
+
+rm src/translate/arquivos/p08.pddl
 

@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/testss/lmcut/problemas/sokoban-opt08-strips/resultad
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/sokoban-opt08-strips/p01-domain.pddl benchmarks/sokoban-opt08-strips/p01.pddl Astarsokoban-opt08-strips1
+python3 src/translate/translate.py benchmarks/sokoban-opt08-strips/p01-domain.pddl benchmarks/sokoban-opt08-strips/p01.pddl Astarsokoban-opt08-strips1  sokoban-opt08-strips  p01.pddl  lmcut
 
 src/preprocess/preprocess < Astarsokoban-opt08-strips1.sas
 
-src/search/downward --search "ss(lmcut())" <  Astarsokoban-opt08-strips1 >> ${RESULTS}/Astarsokoban-opt08-strips1.txt
+src/search/downward --search "ss(lmcut())" <  Astarsokoban-opt08-strips1 >> ${RESULTS}/p01.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarsokoban-opt08-strips1
 
 
 rm Astarsokoban-opt08-strips1.sas
+
+
+
+rm src/translate/arquivos/p01.pddl
 

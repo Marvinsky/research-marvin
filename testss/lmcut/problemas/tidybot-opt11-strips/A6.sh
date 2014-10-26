@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/testss/lmcut/problemas/tidybot-opt11-strips/resultad
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/tidybot-opt11-strips/domain.pddl benchmarks/tidybot-opt11-strips/p06.pddl Astartidybot-opt11-strips6
+python3 src/translate/translate.py benchmarks/tidybot-opt11-strips/domain.pddl benchmarks/tidybot-opt11-strips/p06.pddl Astartidybot-opt11-strips6  tidybot-opt11-strips  p06.pddl  lmcut
 
 src/preprocess/preprocess < Astartidybot-opt11-strips6.sas
 
-src/search/downward --search "ss(lmcut())" <  Astartidybot-opt11-strips6 >> ${RESULTS}/Astartidybot-opt11-strips6.txt
+src/search/downward --search "ss(lmcut())" <  Astartidybot-opt11-strips6 >> ${RESULTS}/p06.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astartidybot-opt11-strips6
 
 
 rm Astartidybot-opt11-strips6.sas
+
+
+
+rm src/translate/arquivos/p06.pddl
 
