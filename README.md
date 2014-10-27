@@ -1,7 +1,7 @@
-research-marvin
-===============
+Repository research-marvin
+==========================
 
-The directories are results from:
+The directories contains results from:
 
 test: Using Astar algorithm.
 
