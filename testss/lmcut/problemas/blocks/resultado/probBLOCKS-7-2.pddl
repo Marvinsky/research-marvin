@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = ss(lmcut())
-argv[4] = XDG_VTNR=1
-argv[5] = XDG_SESSION_ID=c12
+argv[4] = XDG_VTNR=3
+argv[5] = XDG_SESSION_ID=c3
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -22,14 +22,14 @@ registered: ss
  ______________________________
 registered: lmcut
 parser is not dry_run
-g object = 0x9ecabe8
+g object = 0x9793be8
 ScalarEvaluator vector pointer []
-ScalarEvaluator vector pointer after add g = [0x9ecabe8]
-ScalarEvaluator vector pointer after add eval = [0x9ecabe8, 0x9ec7b88]
+ScalarEvaluator vector pointer after add g = [0x9793be8]
+ScalarEvaluator vector pointer after add eval = [0x9793be8, 0x9790b88]
 subevaluators_.size:2
-new vector of ScalarEvaluator created = [0x9ecb3f0, 0x9ec7b88]
-OpenList vector of state_var_t objects = 0x9ecb020
-engine = 0x9ec7c18
+new vector of ScalarEvaluator created = [0x97943f0, 0x9790b88]
+OpenList vector of state_var_t objects = 0x9794020
+engine = 0x9790c18
  ___________________________________
 |         calling initialize        |
  ___________________________________
@@ -50,9 +50,9 @@ f_evaluator populated
 conditional_effects_present = 0
 Conditional effects present = 0
 starting timings 
-initial state = 0x9eaded8
-node_counter = 460787
-node_gen_and_exp_cost = 2,1702e-06
+initial state = 0x9776ed8
+node_counter = 417808
+node_gen_and_exp_cost = 2,39344e-06
 active heuristics size : 1
 # heristics = 1
 dead_end = 0
@@ -60,8 +60,8 @@ heuristics[0]->get_heuristic() = -2
 max_h = 0
 is not dead end
 	Maxing_h[0]:0
-	Maxing_h[1]:166493552
-f_evaluator = 166493552
+	Maxing_h[1]:158928240
+f_evaluator = 158928240
 generated states = 0
 evaluated states = 1
 expanded states = 0
@@ -71,25 +71,26 @@ lastjump evaluated states = 0
 lastjump expanded states = 0
 lastjump reopened states = 0
 generated_states - lastjump_generated_states = 0
-fnivel: 166493552
+fnivel: 158928240
 nodesGeneratedByLevel: 0
  time0: 1
-f: 166493552 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
-last_jump:166493552,F_bound_to_print:0
-F_bound:,166493552,Peak memory=,54,2734
+nodesGeneratedToTheLevel: 0
+f: 158928240 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
+last_jump:158928240,F_bound_to_print:0
+F_bound:,158928240,Peak memory=,54,2734
 Best heuristic value: -2 [g=0, 1 evaluated, 0 expanded, t=1s]
-heuristics[0]->get_value() = 166493552
+heuristics[0]->get_value() = 158928240
 node.get_state_buffer() = 
 starting timing individual heuristics.
 SAMPLING_PHASE = 0
 Current_RIDA_Phase = 0
 Initializing landmark cut heuristic...
 heur_name = ,regular_lm_cut
-h[,0,] is:,,regular_lm_cut,measured time cost: 3,50207e-05,h:12
+h[,0,] is:,,regular_lm_cut,measured time cost: 4,22752e-05,h:12
 memory before deleting databases: 
-VmRSS memory: 20868 KB
+VmRSS memory: 18896 KB
 memory after deleting all databases: 
-VmRSS memory: 20868 KB
+VmRSS memory: 18896 KB
 Remaining heuristics:
 remaining initial heur ,regular_lm_cut
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
@@ -107,136 +108,441 @@ titulo = /home/marvin/marvin/test/lmcut/problemas/blocks/resultado/probBLOCKS-7-
 totalniveles texto =  totalniveles:
 value total niveles = 9
 f = f
-#nodes = #Nodes
+#nodes = #Nodes_by_level
 time = Runtime(s)
+#nodes2 = #Nodes_to_the_level
+12
+13
+14
+15
+16
+17
+18
+19
+20
 List of levels: 
 depth = 12
-heuristic del nodo intial =12
-valor heuristico del node = 12
-valor heuristico del objeto Type  = 12
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 5
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 12 is :     21                |
- _____________________________________________________________________
-depth = 13
-heuristic del nodo intial =11
-valor heuristico del node = 11
-valor heuristico del objeto Type  = 11
- a is less than the probability.
- a is less than the probability.
-counter k = 4
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 13 is :     9                |
- _____________________________________________________________________
-depth = 14
-heuristic del nodo intial =12
-valor heuristico del node = 12
-valor heuristico del objeto Type  = 12
+heuristic value of te initial node based on the heuristic vector = 12
+heuristic value of the initial node based on the node = 12
+heuristic value of the object Type  = 12
+succ_h2 = 12
+succ_g = 1
+succ_h2 = 12
+succ_g = 1
 counter k = 1
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 14 is :     1                |
+|   # of nodes expanded by ss at level 12 is :     1                |
+ _____________________________________________________________________
+depth = 13
+heuristic value of te initial node based on the heuristic vector = 12
+heuristic value of the initial node based on the node = 12
+heuristic value of the object Type  = 12
+succ_h2 = 12
+succ_g = 1
+succ_h2 = 12
+succ_g = 1
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 2
+counter k = 2
+ _____________________________________________________________________
+|   # of nodes expanded by ss at level 13 is :     3                |
+ _____________________________________________________________________
+depth = 14
+heuristic value of te initial node based on the heuristic vector = 12
+heuristic value of the initial node based on the node = 12
+heuristic value of the object Type  = 12
+succ_h2 = 12
+succ_g = 1
+succ_h2 = 12
+succ_g = 1
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 2
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 3
+succ_h2 = 11
+succ_g = 3
+succ_h2 = 11
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+counter k = 4
+ _____________________________________________________________________
+|   # of nodes expanded by ss at level 14 is :     15                |
  _____________________________________________________________________
 depth = 15
-heuristic del nodo intial =12
-valor heuristico del node = 12
-valor heuristico del objeto Type  = 12
- a is less than the probability.
- a is less than the probability.
-counter k = 10
+heuristic value of te initial node based on the heuristic vector = 12
+heuristic value of the initial node based on the node = 12
+heuristic value of the object Type  = 12
+succ_h2 = 12
+succ_g = 1
+succ_h2 = 12
+succ_g = 1
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 3
+succ_h2 = 11
+succ_g = 3
+succ_h2 = 11
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 11
+succ_g = 5
+counter k = 6
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 15 is :     75                |
+|   # of nodes expanded by ss at level 15 is :     27                |
  _____________________________________________________________________
 depth = 16
-heuristic del nodo intial =11
-valor heuristico del node = 11
-valor heuristico del objeto Type  = 11
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 7
+heuristic value of te initial node based on the heuristic vector = 11
+heuristic value of the initial node based on the node = 11
+heuristic value of the object Type  = 11
+succ_h2 = 12
+succ_g = 1
+succ_h2 = 12
+succ_g = 1
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 2
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 12
+succ_g = 3
+succ_h2 = 11
+succ_g = 3
+succ_h2 = 11
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 11
+succ_g = 5
+succ_h2 = 12
+succ_g = 5
+succ_h2 = 11
+succ_g = 5
+succ_h2 = 11
+succ_g = 6
+succ_h2 = 12
+succ_g = 6
+counter k = 8
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 16 is :     173                |
+|   # of nodes expanded by ss at level 16 is :     99                |
  _____________________________________________________________________
 depth = 17
-heuristic del nodo intial =12
-valor heuristico del node = 12
-valor heuristico del objeto Type  = 12
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 14
+heuristic value of te initial node based on the heuristic vector = 12
+heuristic value of the initial node based on the node = 12
+heuristic value of the object Type  = 12
+succ_h2 = 12
+succ_g = 1
+succ_h2 = 12
+succ_g = 1
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 2
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 3
+succ_h2 = 11
+succ_g = 3
+succ_h2 = 11
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 11
+succ_g = 5
+succ_h2 = 12
+succ_g = 5
+succ_h2 = 11
+succ_g = 5
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 11
+succ_g = 6
+succ_h2 = 12
+succ_g = 6
+succ_h2 = 12
+succ_g = 6
+succ_h2 = 12
+succ_g = 6
+succ_h2 = 12
+succ_g = 6
+succ_h2 = 11
+succ_g = 7
+counter k = 10
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 17 is :     459                |
+|   # of nodes expanded by ss at level 17 is :     171                |
  _____________________________________________________________________
 depth = 18
-heuristic del nodo intial =11
-valor heuristico del node = 11
-valor heuristico del objeto Type  = 11
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 9
+heuristic value of te initial node based on the heuristic vector = 11
+heuristic value of the initial node based on the node = 11
+heuristic value of the object Type  = 11
+succ_h2 = 12
+succ_g = 1
+succ_h2 = 12
+succ_g = 1
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 2
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 12
+succ_g = 3
+succ_h2 = 11
+succ_g = 3
+succ_h2 = 11
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 11
+succ_g = 5
+succ_h2 = 12
+succ_g = 5
+succ_h2 = 11
+succ_g = 5
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 11
+succ_g = 6
+succ_h2 = 12
+succ_g = 6
+succ_h2 = 12
+succ_g = 6
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 12
+succ_g = 6
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 12
+succ_g = 6
+succ_h2 = 11
+succ_g = 7
+succ_h2 = 12
+succ_g = 7
+succ_h2 = 11
+succ_g = 7
+succ_h2 = 11
+succ_g = 8
+succ_h2 = 12
+succ_g = 8
+counter k = 12
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 18 is :     1037                |
+|   # of nodes expanded by ss at level 18 is :     459                |
  _____________________________________________________________________
 depth = 19
-heuristic del nodo intial =12
-valor heuristico del node = 12
-valor heuristico del objeto Type  = 12
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 18
+heuristic value of te initial node based on the heuristic vector = 12
+heuristic value of the initial node based on the node = 12
+heuristic value of the object Type  = 12
+succ_h2 = 12
+succ_g = 1
+succ_h2 = 12
+succ_g = 1
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 3
+succ_h2 = 11
+succ_g = 3
+succ_h2 = 11
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 11
+succ_g = 5
+succ_h2 = 12
+succ_g = 5
+succ_h2 = 11
+succ_g = 5
+succ_h2 = 11
+succ_g = 6
+succ_h2 = 12
+succ_g = 6
+succ_h2 = 12
+succ_g = 6
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 12
+succ_g = 6
+succ_h2 = 12
+succ_g = 6
+succ_h2 = 11
+succ_g = 7
+succ_h2 = 12
+succ_g = 7
+succ_h2 = 11
+succ_g = 7
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 11
+succ_g = 8
+succ_h2 = 12
+succ_g = 8
+succ_h2 = 12
+succ_g = 8
+succ_h2 = 12
+succ_g = 8
+succ_h2 = 12
+succ_g = 8
+succ_h2 = 11
+succ_g = 9
+counter k = 14
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 19 is :     1899                |
+|   # of nodes expanded by ss at level 19 is :     747                |
  _____________________________________________________________________
 depth = 20
-heuristic del nodo intial =11
-valor heuristico del node = 11
-valor heuristico del objeto Type  = 11
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 11
+heuristic value of te initial node based on the heuristic vector = 11
+heuristic value of the initial node based on the node = 11
+heuristic value of the object Type  = 11
+succ_h2 = 12
+succ_g = 1
+succ_h2 = 12
+succ_g = 1
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 2
+succ_h2 = 12
+succ_g = 3
+succ_h2 = 11
+succ_g = 3
+succ_h2 = 11
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 12
+succ_g = 4
+succ_h2 = 11
+succ_g = 5
+succ_h2 = 12
+succ_g = 5
+succ_h2 = 11
+succ_g = 5
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 11
+succ_g = 6
+succ_h2 = 12
+succ_g = 6
+succ_h2 = 12
+succ_g = 6
+succ_h2 = 12
+succ_g = 6
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 12
+succ_g = 6
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 11
+succ_g = 7
+succ_h2 = 12
+succ_g = 7
+succ_h2 = 11
+succ_g = 7
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 11
+succ_g = 8
+succ_h2 = 12
+succ_g = 8
+succ_h2 = 12
+succ_g = 8
+succ_h2 = 12
+succ_g = 8
+succ_h2 = 12
+succ_g = 8
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 11
+succ_g = 9
+succ_h2 = 12
+succ_g = 9
+succ_h2 = 11
+succ_g = 9
+succ_h2 = 11
+succ_g = 10
+succ_h2 = 12
+succ_g = 10
+counter k = 16
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 20 is :     6221                |
+|   # of nodes expanded by ss at level 20 is :     1899                |
  _____________________________________________________________________
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
-Actual search time: 0s [t=1,11s]
+Actual search time: 0,01s [t=1,12s]
 Initial state h value: -2.
 Expanded 0 state(s).
 Reopened 0 state(s).
 Evaluated 1 state(s).
 Evaluations: 1
-Generated 175 state(s).
+Generated 0 state(s).
 Dead ends: 0 state(s).
 Expanded until last jump: 0 state(s).
 Reopened until last jump: 0 state(s).
 Evaluated until last jump: 1 state(s).
 Generated until last jump: 0 state(s).
-Search space hash size: 10
+Search space hash size: 7
 Search space hash bucket count: 193
-Search time: 1,11s
-Total time: 1,11s
+Search time: 1,12s
+Total time: 1,12s
 Peak memory: 55576 KB
-VmRSS memory: 1356 KB
-VmHWM memory: 34984 KB
+VmRSS memory: 1328 KB
+VmHWM memory: 35060 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

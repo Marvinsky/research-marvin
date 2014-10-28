@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = ss(lmcut())
-argv[4] = XDG_VTNR=1
-argv[5] = XDG_SESSION_ID=c12
+argv[4] = XDG_VTNR=3
+argv[5] = XDG_SESSION_ID=c3
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -22,14 +22,14 @@ registered: ss
  ______________________________
 registered: lmcut
 parser is not dry_run
-g object = 0x9762f10
+g object = 0xa3eef10
 ScalarEvaluator vector pointer []
-ScalarEvaluator vector pointer after add g = [0x9762f10]
-ScalarEvaluator vector pointer after add eval = [0x9762f10, 0x9762d20]
+ScalarEvaluator vector pointer after add g = [0xa3eef10]
+ScalarEvaluator vector pointer after add eval = [0xa3eef10, 0xa3eed20]
 subevaluators_.size:2
-new vector of ScalarEvaluator created = [0x97658f8, 0x9762d20]
-OpenList vector of state_var_t objects = 0x97647f0
-engine = 0x9762db0
+new vector of ScalarEvaluator created = [0xa3f18f8, 0xa3eed20]
+OpenList vector of state_var_t objects = 0xa3f07f0
+engine = 0xa3eedb0
  ___________________________________
 |         calling initialize        |
  ___________________________________
@@ -50,9 +50,9 @@ f_evaluator populated
 conditional_effects_present = 0
 Conditional effects present = 0
 starting timings 
-initial state = 0x9732ec8
-node_counter = 247264
-node_gen_and_exp_cost = 4,0847e-06
+initial state = 0xa3beec8
+node_counter = 229104
+node_gen_and_exp_cost = 4,40848e-06
 active heuristics size : 1
 # heristics = 1
 dead_end = 1
@@ -62,11 +62,11 @@ SAMPLING_PHASE = 0
 Current_RIDA_Phase = 0
 Initializing landmark cut heuristic...
 heur_name = ,regular_lm_cut
-h[,0,] is:,,regular_lm_cut,measured time cost: 0,000117396,h:16
+h[,0,] is:,,regular_lm_cut,measured time cost: 0,000137845,h:16
 memory before deleting databases: 
-VmRSS memory: 16408 KB
+VmRSS memory: 16368 KB
 memory after deleting all databases: 
-VmRSS memory: 16408 KB
+VmRSS memory: 16368 KB
 Remaining heuristics:
 remaining initial heur ,regular_lm_cut
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
@@ -84,207 +84,576 @@ titulo = /home/marvin/marvin/test/lmcut/problemas/blocks/resultado/probBLOCKS-9-
 totalniveles texto =  totalniveles:
 value total niveles = 15
 f = f
-#nodes = #Nodes
+#nodes = #Nodes_by_level
 time = Runtime(s)
+#nodes2 = #Nodes_to_the_level
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
 List of levels: 
 depth = 16
-heuristic del nodo intial =16
-valor heuristico del node = 16
-valor heuristico del objeto Type  = 16
-counter k = 3
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 16 is :     7                |
- _____________________________________________________________________
-depth = 17
-heuristic del nodo intial =16
-valor heuristico del node = 16
-valor heuristico del objeto Type  = 16
- a is less than the probability.
-counter k = 4
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 17 is :     9                |
- _____________________________________________________________________
-depth = 18
-heuristic del nodo intial =16
-valor heuristico del node = 16
-valor heuristico del objeto Type  = 16
+heuristic value of te initial node based on the heuristic vector = 16
+heuristic value of the initial node based on the node = 16
+heuristic value of the object Type  = 16
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 1
 counter k = 1
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 18 is :     1                |
+|   # of nodes expanded by ss at level 16 is :     1                |
+ _____________________________________________________________________
+depth = 17
+heuristic value of te initial node based on the heuristic vector = 16
+heuristic value of the initial node based on the node = 16
+heuristic value of the object Type  = 16
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 1
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 2
+counter k = 2
+ _____________________________________________________________________
+|   # of nodes expanded by ss at level 17 is :     3                |
+ _____________________________________________________________________
+depth = 18
+heuristic value of te initial node based on the heuristic vector = 16
+heuristic value of the initial node based on the node = 16
+heuristic value of the object Type  = 16
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 1
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 3
+counter k = 3
+ _____________________________________________________________________
+|   # of nodes expanded by ss at level 18 is :     7                |
  _____________________________________________________________________
 depth = 19
-heuristic del nodo intial =16
-valor heuristico del node = 16
-valor heuristico del objeto Type  = 16
-counter k = 6
+heuristic value of te initial node based on the heuristic vector = 16
+heuristic value of the initial node based on the node = 16
+heuristic value of the object Type  = 16
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 1
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 2
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 3
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 4
+counter k = 4
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 19 is :     27                |
+|   # of nodes expanded by ss at level 19 is :     11                |
  _____________________________________________________________________
 depth = 20
-heuristic del nodo intial =16
-valor heuristico del node = 16
-valor heuristico del objeto Type  = 16
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 7
+heuristic value of te initial node based on the heuristic vector = 16
+heuristic value of the initial node based on the node = 16
+heuristic value of the object Type  = 16
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 2
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 3
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 4
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 5
+counter k = 5
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 20 is :     173                |
+|   # of nodes expanded by ss at level 20 is :     19                |
  _____________________________________________________________________
 depth = 21
-heuristic del nodo intial =16
-valor heuristico del node = 16
-valor heuristico del objeto Type  = 16
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 8
+heuristic value of te initial node based on the heuristic vector = 16
+heuristic value of the initial node based on the node = 16
+heuristic value of the object Type  = 16
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 2
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 3
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 5
+succ_h2 = 16
+succ_g = 6
+succ_h2 = 16
+succ_g = 6
+counter k = 6
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 21 is :     59                |
+|   # of nodes expanded by ss at level 21 is :     27                |
  _____________________________________________________________________
 depth = 22
-heuristic del nodo intial =16
-valor heuristico del node = 16
-valor heuristico del objeto Type  = 16
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 9
+heuristic value of te initial node based on the heuristic vector = 16
+heuristic value of the initial node based on the node = 16
+heuristic value of the object Type  = 16
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 1
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 2
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 3
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 5
+succ_h2 = 16
+succ_g = 6
+succ_h2 = 16
+succ_g = 6
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 7
+counter k = 7
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 22 is :     1037                |
+|   # of nodes expanded by ss at level 22 is :     43                |
  _____________________________________________________________________
 depth = 23
-heuristic del nodo intial =16
-valor heuristico del node = 16
-valor heuristico del objeto Type  = 16
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 10
+heuristic value of te initial node based on the heuristic vector = 16
+heuristic value of the initial node based on the node = 16
+heuristic value of the object Type  = 16
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 2
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 3
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 4
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 5
+succ_h2 = 16
+succ_g = 6
+succ_h2 = 16
+succ_g = 6
+succ_h2 = 16
+succ_g = 7
+succ_h2 = 16
+succ_g = 8
+succ_h2 = 16
+succ_g = 8
+counter k = 8
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 23 is :     123                |
+|   # of nodes expanded by ss at level 23 is :     59                |
  _____________________________________________________________________
 depth = 24
-heuristic del nodo intial =16
-valor heuristico del node = 16
-valor heuristico del objeto Type  = 16
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 11
+heuristic value of te initial node based on the heuristic vector = 16
+heuristic value of the initial node based on the node = 16
+heuristic value of the object Type  = 16
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 3
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 5
+succ_h2 = 16
+succ_g = 6
+succ_h2 = 16
+succ_g = 6
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 7
+succ_h2 = 16
+succ_g = 8
+succ_h2 = 16
+succ_g = 8
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 9
+counter k = 9
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 24 is :     6221                |
+|   # of nodes expanded by ss at level 24 is :     91                |
  _____________________________________________________________________
 depth = 25
-heuristic del nodo intial =16
-valor heuristico del node = 16
-valor heuristico del objeto Type  = 16
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 12
+heuristic value of te initial node based on the heuristic vector = 16
+heuristic value of the initial node based on the node = 16
+heuristic value of the object Type  = 16
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 3
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 4
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 5
+succ_h2 = 16
+succ_g = 6
+succ_h2 = 16
+succ_g = 6
+succ_h2 = 16
+succ_g = 7
+succ_h2 = 16
+succ_g = 8
+succ_h2 = 16
+succ_g = 8
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 9
+succ_h2 = 16
+succ_g = 10
+succ_h2 = 16
+succ_g = 10
+counter k = 10
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 25 is :     251                |
+|   # of nodes expanded by ss at level 25 is :     123                |
  _____________________________________________________________________
 depth = 26
-heuristic del nodo intial =16
-valor heuristico del node = 16
-valor heuristico del objeto Type  = 16
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 13
+heuristic value of te initial node based on the heuristic vector = 16
+heuristic value of the initial node based on the node = 16
+heuristic value of the object Type  = 16
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 1
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 2
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 3
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 5
+succ_h2 = 16
+succ_g = 6
+succ_h2 = 16
+succ_g = 6
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 7
+succ_h2 = 16
+succ_g = 8
+succ_h2 = 16
+succ_g = 8
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 9
+succ_h2 = 16
+succ_g = 10
+succ_h2 = 16
+succ_g = 10
+succ_h2 = 16
+succ_g = 11
+counter k = 11
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 26 is :     37325                |
+|   # of nodes expanded by ss at level 26 is :     187                |
  _____________________________________________________________________
 depth = 27
-heuristic del nodo intial =16
-valor heuristico del node = 16
-valor heuristico del objeto Type  = 16
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 14
+heuristic value of te initial node based on the heuristic vector = 16
+heuristic value of the initial node based on the node = 16
+heuristic value of the object Type  = 16
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 2
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 3
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 4
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 5
+succ_h2 = 16
+succ_g = 6
+succ_h2 = 16
+succ_g = 6
+succ_h2 = 16
+succ_g = 7
+succ_h2 = 16
+succ_g = 8
+succ_h2 = 16
+succ_g = 8
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 9
+succ_h2 = 16
+succ_g = 10
+succ_h2 = 16
+succ_g = 10
+succ_h2 = 16
+succ_g = 11
+succ_h2 = 16
+succ_g = 12
+succ_h2 = 16
+succ_g = 12
+counter k = 12
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 27 is :     507                |
+|   # of nodes expanded by ss at level 27 is :     251                |
  _____________________________________________________________________
 depth = 28
-heuristic del nodo intial =16
-valor heuristico del node = 16
-valor heuristico del objeto Type  = 16
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 15
+heuristic value of te initial node based on the heuristic vector = 16
+heuristic value of the initial node based on the node = 16
+heuristic value of the object Type  = 16
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 1
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 3
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 4
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 5
+succ_h2 = 16
+succ_g = 6
+succ_h2 = 16
+succ_g = 6
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 7
+succ_h2 = 16
+succ_g = 8
+succ_h2 = 16
+succ_g = 8
+succ_h2 = 16
+succ_g = 9
+succ_h2 = 16
+succ_g = 10
+succ_h2 = 16
+succ_g = 10
+succ_h2 = 16
+succ_g = 11
+succ_h2 = 16
+succ_g = 12
+succ_h2 = 16
+succ_g = 12
+succ_h2 = 16
+succ_g = 13
+counter k = 13
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 28 is :     223949                |
+|   # of nodes expanded by ss at level 28 is :     379                |
  _____________________________________________________________________
 depth = 29
-heuristic del nodo intial =16
-valor heuristico del node = 16
-valor heuristico del objeto Type  = 16
- a is less than the probability.
- a is less than the probability.
-counter k = 16
+heuristic value of te initial node based on the heuristic vector = 16
+heuristic value of the initial node based on the node = 16
+heuristic value of the object Type  = 16
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 3
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 4
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 5
+succ_h2 = 16
+succ_g = 6
+succ_h2 = 16
+succ_g = 6
+succ_h2 = 16
+succ_g = 7
+succ_h2 = 16
+succ_g = 8
+succ_h2 = 16
+succ_g = 8
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 9
+succ_h2 = 16
+succ_g = 10
+succ_h2 = 16
+succ_g = 10
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 11
+succ_h2 = 16
+succ_g = 12
+succ_h2 = 16
+succ_g = 12
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 13
+succ_h2 = 16
+succ_g = 14
+succ_h2 = 16
+succ_g = 14
+counter k = 14
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 29 is :     1019                |
+|   # of nodes expanded by ss at level 29 is :     507                |
  _____________________________________________________________________
 depth = 30
-heuristic del nodo intial =16
-valor heuristico del node = 16
-valor heuristico del objeto Type  = 16
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 17
+heuristic value of te initial node based on the heuristic vector = 16
+heuristic value of the initial node based on the node = 16
+heuristic value of the object Type  = 16
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 1
+succ_h2 = 16
+succ_g = 2
+succ_h2 = 16
+succ_g = 2
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 3
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 4
+succ_h2 = 16
+succ_g = 5
+succ_h2 = 16
+succ_g = 6
+succ_h2 = 16
+succ_g = 6
+succ_h2 = 16
+succ_g = 7
+succ_h2 = 16
+succ_g = 8
+succ_h2 = 16
+succ_g = 8
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 9
+succ_h2 = 16
+succ_g = 10
+succ_h2 = 16
+succ_g = 10
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 16
+succ_g = 11
+succ_h2 = 16
+succ_g = 12
+succ_h2 = 16
+succ_g = 12
+succ_h2 = 16
+succ_g = 13
+succ_h2 = 16
+succ_g = 14
+succ_h2 = 16
+succ_g = 14
+succ_h2 = 16
+succ_g = 15
+counter k = 15
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 30 is :     1343693                |
+|   # of nodes expanded by ss at level 30 is :     763                |
  _____________________________________________________________________
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
-Actual search time: 0,04s [t=1,17s]
+Actual search time: 0,02s [t=1,15s]
 Expanded 0 state(s).
 Reopened 0 state(s).
 Evaluated 1 state(s).
 Evaluations: 1
-Generated 297 state(s).
+Generated 0 state(s).
 Dead ends: 1 state(s).
-Search space hash size: 7
+Search space hash size: 4
 Search space hash bucket count: 193
-Search time: 1,16s
-Total time: 1,17s
+Search time: 1,14s
+Total time: 1,15s
 Peak memory: 31100 KB
-VmRSS memory: 1440 KB
-VmHWM memory: 18244 KB
+VmRSS memory: 1416 KB
+VmHWM memory: 18204 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

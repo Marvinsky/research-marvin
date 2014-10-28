@@ -1,12 +1,12 @@
 		/home/marvin/marvin/test/lmcut/problemas/blocks/resultado/probBLOCKS-7-2.pddl
 	totalniveles: 9
-	f		#nodes		time		SumByDepth
-	12		0		1		21
-	13		2		1.11		9
-	14		6		1.11		1
-	15		19		1.11		75
-	16		20		1.11		173
-	17		33		1.11		459
-	18		61		1.11		1037
-	19		169		1.11		1899
-	20		313		1.12		6221
+	f	#nodes_by_level	time(s)	#nodes_to_the_level	sum_By_Depth
+	12	0		1		0		1
+	13	2		1.11		2		3
+	14	6		1.11		8		15
+	15	19		1.11		27		27
+	16	20		1.11		47		99
+	17	33		1.11		80		171
+	18	61		1.11		141		459
+	19	169		1.12		310		747
+	20	313		1.13		623		1899

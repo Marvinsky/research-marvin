@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = ss(lmcut())
-argv[4] = XDG_VTNR=1
-argv[5] = XDG_SESSION_ID=c12
+argv[4] = XDG_VTNR=3
+argv[5] = XDG_SESSION_ID=c3
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -22,14 +22,14 @@ registered: ss
  ______________________________
 registered: lmcut
 parser is not dry_run
-g object = 0x8d5c460
+g object = 0xa28a460
 ScalarEvaluator vector pointer []
-ScalarEvaluator vector pointer after add g = [0x8d5c460]
-ScalarEvaluator vector pointer after add eval = [0x8d5c460, 0x8d59b88]
+ScalarEvaluator vector pointer after add g = [0xa28a460]
+ScalarEvaluator vector pointer after add eval = [0xa28a460, 0xa287b88]
 subevaluators_.size:2
-new vector of ScalarEvaluator created = [0x8d5d760, 0x8d59b88]
-OpenList vector of state_var_t objects = 0x8d5d5f0
-engine = 0x8d59c18
+new vector of ScalarEvaluator created = [0xa28b760, 0xa287b88]
+OpenList vector of state_var_t objects = 0xa28b5f0
+engine = 0xa287c18
  ___________________________________
 |         calling initialize        |
  ___________________________________
@@ -50,9 +50,9 @@ f_evaluator populated
 conditional_effects_present = 0
 Conditional effects present = 0
 starting timings 
-initial state = 0x8d46080
-node_counter = 502701
-node_gen_and_exp_cost = 1,98925e-06
+initial state = 0xa274080
+node_counter = 284318
+node_gen_and_exp_cost = 3,51719e-06
 active heuristics size : 1
 # heristics = 1
 dead_end = 0
@@ -60,8 +60,8 @@ heuristics[0]->get_heuristic() = -2
 max_h = 0
 is not dead end
 	Maxing_h[0]:0
-	Maxing_h[1]:148217136
-f_evaluator = 148217136
+	Maxing_h[1]:170425648
+f_evaluator = 170425648
 generated states = 0
 evaluated states = 1
 expanded states = 0
@@ -71,25 +71,26 @@ lastjump evaluated states = 0
 lastjump expanded states = 0
 lastjump reopened states = 0
 generated_states - lastjump_generated_states = 0
-fnivel: 148217136
+fnivel: 170425648
 nodesGeneratedByLevel: 0
  time0: 1
-f: 148217136 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
-last_jump:148217136,F_bound_to_print:0
-F_bound:,148217136,Peak memory=,54,2461
+nodesGeneratedToTheLevel: 0
+f: 170425648 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
+last_jump:170425648,F_bound_to_print:0
+F_bound:,170425648,Peak memory=,30,2461
 Best heuristic value: -2 [g=0, 1 evaluated, 0 expanded, t=1s]
-heuristics[0]->get_value() = 148217136
+heuristics[0]->get_value() = 170425648
 node.get_state_buffer() = 
 starting timing individual heuristics.
 SAMPLING_PHASE = 0
 Current_RIDA_Phase = 0
 Initializing landmark cut heuristic...
 heur_name = ,regular_lm_cut
-h[,0,] is:,,regular_lm_cut,measured time cost: 2,48588e-05,h:10
+h[,0,] is:,,regular_lm_cut,measured time cost: 3,54381e-05,h:10
 memory before deleting databases: 
-VmRSS memory: 18836 KB
+VmRSS memory: 10936 KB
 memory after deleting all databases: 
-VmRSS memory: 18836 KB
+VmRSS memory: 10936 KB
 Remaining heuristics:
 remaining initial heur ,regular_lm_cut
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
@@ -107,51 +108,92 @@ titulo = /home/marvin/marvin/test/lmcut/problemas/blocks/resultado/probBLOCKS-6-
 totalniveles texto =  totalniveles:
 value total niveles = 1
 f = f
-#nodes = #Nodes
+#nodes = #Nodes_by_level
 time = Runtime(s)
+#nodes2 = #Nodes_to_the_level
+10
 List of levels: 
 depth = 10
-heuristic del nodo intial =10
-valor heuristico del node = 10
-valor heuristico del objeto Type  = 10
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
- a is less than the probability.
-counter k = 67
+heuristic value of te initial node based on the heuristic vector = 10
+heuristic value of the initial node based on the node = 10
+heuristic value of the object Type  = 10
+succ_h2 = 9
+succ_g = 1
+succ_h2 = 9
+succ_g = 1
+succ_h2 = 9
+succ_g = 1
+succ_h2 = 11
+succ_g = 1
+succ_h2 = 10
+succ_g = 1
+succ_h2 = 10
+succ_g = 2
+succ_h2 = 10
+succ_g = 2
+succ_h2 = 8
+succ_g = 2
+succ_h2 = 10
+succ_g = 2
+succ_h2 = 10
+succ_g = 2
+succ_h2 = 10
+succ_g = 2
+succ_h2 = 9
+succ_g = 3
+succ_h2 = 7
+succ_g = 3
+succ_h2 = 7
+succ_g = 3
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 7
+succ_g = 3
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 7
+succ_g = 3
+succ_h2 = 6
+succ_g = 4
+succ_h2 = 8
+succ_g = 4
+succ_h2 = 8
+succ_g = 4
+succ_h2 = 8
+succ_g = 4
+succ_h2 = 8
+succ_g = 4
+succ_h2 = 7
+succ_g = 5
+succ_h2 = 5
+succ_g = 5
+succ_h2 = 5
+succ_g = 5
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 5
+succ_g = 5
+succ_h2 = 4
+succ_g = 6
+succ_h2 = 6
+succ_g = 6
+succ_h2 = 6
+succ_g = 6
+succ_h2 = 6
+succ_g = 6
+succ_h2 = 5
+succ_g = 7
+succ_h2 = 3
+succ_g = 7
+succ_h2 = 3
+succ_g = 7
+ (double)rand_100/100 is less than (double)w/(wa + w).
+succ_h2 = 4
+succ_g = 8
+succ_h2 = 3
+succ_g = 8
+succ_h2 = 4
+succ_g = 8
+counter k = 8
  _____________________________________________________________________
-|   # of nodes expanded by ss at level 10 is :     920639                |
+|   # of nodes expanded by ss at level 10 is :     175                |
  _____________________________________________________________________
  ____________________________________
 |   total numero of call step() = 0   |
@@ -162,18 +204,18 @@ Expanded 0 state(s).
 Reopened 0 state(s).
 Evaluated 1 state(s).
 Evaluations: 1
-Generated 224 state(s).
+Generated 0 state(s).
 Dead ends: 0 state(s).
 Expanded until last jump: 0 state(s).
 Reopened until last jump: 0 state(s).
 Evaluated until last jump: 1 state(s).
 Generated until last jump: 0 state(s).
-Search space hash size: 144
+Search space hash size: 29
 Search space hash bucket count: 193
 Search time: 1,11s
 Total time: 1,11s
-Peak memory: 55548 KB
-VmRSS memory: 1328 KB
-VmHWM memory: 35000 KB
+Peak memory: 30972 KB
+VmRSS memory: 1308 KB
+VmHWM memory: 18916 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
