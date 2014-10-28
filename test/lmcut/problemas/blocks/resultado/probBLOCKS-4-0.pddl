@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = astar(lmcut())
-argv[4] = XDG_VTNR=4
-argv[5] = XDG_SESSION_ID=c8
+argv[4] = XDG_VTNR=1
+argv[5] = XDG_SESSION_ID=c1
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -31,7 +31,7 @@ got 2 heuristics
 f_evaluator populated
 # heuristics:1
 starting timings
-node gen_and_exp_cost:1.7747e-06
+node gen_and_exp_cost:1.38087e-06
 active heuristics size:1
 Initializing landmark cut heuristic...
 	Maxing_h[0]:0
@@ -48,16 +48,17 @@ generated_states - lastjump_generated_states = 0
 fnivel: 6
 nodesGeneratedByLevel: 0
  time0: 1
+nodesGeneratedToTheLevel: 0
 f: 6 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
 last_jump:6,F_bound_to_print:0
-F_bound:,6,Peak memory=,30.1914
+F_bound:,6,Peak memory=,30.1953
 Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=1s]
 starting timing individual heuristics
-h[,0,] is:,,regular_lm_cut,measured time cost:1.03374e-05,h:6
+h[,0,] is:,,regular_lm_cut,measured time cost:6.52896e-06,h:6
 memory before deleting databases:
-VmRSS memory: 12716 KB
+VmRSS memory: 16744 KB
 memory after deleting all databases:
-VmRSS memory: 12716 KB
+VmRSS memory: 16744 KB
 Remaining heuristics:
 remaining initial heur,regular_lm_cut
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes:1000
@@ -99,8 +100,8 @@ Search space hash size: 14
 Search space hash bucket count: 193
 Search time: 1.11s
 Total time: 1.11s
-Peak memory: 30916 KB
-VmRSS memory: 1224 KB
-VmHWM memory: 18648 KB
+Peak memory: 30920 KB
+VmRSS memory: 1292 KB
+VmHWM memory: 18580 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

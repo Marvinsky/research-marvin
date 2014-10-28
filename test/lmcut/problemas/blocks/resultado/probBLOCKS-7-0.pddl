@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = astar(lmcut())
-argv[4] = XDG_VTNR=4
-argv[5] = XDG_SESSION_ID=c8
+argv[4] = XDG_VTNR=1
+argv[5] = XDG_SESSION_ID=c1
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -31,7 +31,7 @@ got 2 heuristics
 f_evaluator populated
 # heuristics:1
 starting timings
-node gen_and_exp_cost:4.1056e-06
+node gen_and_exp_cost:2.06948e-06
 active heuristics size:1
 Initializing landmark cut heuristic...
 	Maxing_h[0]:0
@@ -48,16 +48,17 @@ generated_states - lastjump_generated_states = 0
 fnivel: 13
 nodesGeneratedByLevel: 0
  time0: 1
+nodesGeneratedToTheLevel: 0
 f: 13 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
 last_jump:13,F_bound_to_print:0
-F_bound:,13,Peak memory=,30.2695
+F_bound:,13,Peak memory=,54.2734
 Best heuristic value: 13 [g=0, 1 evaluated, 0 expanded, t=1s]
 starting timing individual heuristics
-h[,0,] is:,,regular_lm_cut,measured time cost:7.75194e-05,h:13
+h[,0,] is:,,regular_lm_cut,measured time cost:3.97974e-05,h:13
 memory before deleting databases:
-VmRSS memory: 12148 KB
+VmRSS memory: 23040 KB
 memory after deleting all databases:
-VmRSS memory: 12148 KB
+VmRSS memory: 23040 KB
 Remaining heuristics:
 remaining initial heur,regular_lm_cut
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes:1000
@@ -73,14 +74,15 @@ generated_states - lastjump_generated_states = 1
 fnivel: 14
 nodesGeneratedByLevel: 1
  time0: 1.11
+nodesGeneratedToTheLevel: 1
 f: 14 [2 evaluated, 1 expanded, t=1.11s,generated_states:,1,additional_states:,1,],random_comb_index:-1
 last_jump:14,F_bound_to_print:0
-F_bound:,14,Peak memory=,30.2695
-F_bound:14,Peak memory=30.2695,nodes:2,Nodes mem_space:0.0625,F_boundary_Range:0
+F_bound:,14,Peak memory=,54.2734
+F_bound:14,Peak memory=54.2734,nodes:2,Nodes mem_space:0.0625,F_boundary_Range:0
 F_bound:14F_boundary_time:0.11,Hoff Potential Range:0,leaves_to_sample:0
 new F_bound:14chosen_Hoff_Roots_size:0 out of 0
-Memory after Sampling::30996
-Memory before starting new F-boundary:30996
+Memory after Sampling::55576
+Memory before starting new F-boundary:55576
 Best heuristic value: 12 [g=2, 3 evaluated, 2 expanded, t=1.11s]
 generated states = 5
 evaluated states = 4
@@ -94,14 +96,15 @@ generated_states - lastjump_generated_states = 4
 fnivel: 15
 nodesGeneratedByLevel: 4
  time0: 1.11
+nodesGeneratedToTheLevel: 5
 f: 15 [4 evaluated, 3 expanded, t=1.11s,generated_states:,5,additional_states:,4,],random_comb_index:-1
 last_jump:15,F_bound_to_print:0
-F_bound:,15,Peak memory=,30.2695
-F_bound:15,Peak memory=30.2695,nodes:4,Nodes mem_space:0.125,F_boundary_Range:0
+F_bound:,15,Peak memory=,54.2734
+F_bound:15,Peak memory=54.2734,nodes:4,Nodes mem_space:0.125,F_boundary_Range:0
 F_bound:15F_boundary_time:-9.76866e-17,Hoff Potential Range:0,leaves_to_sample:0
 new F_bound:15chosen_Hoff_Roots_size:0 out of 0
-Memory after Sampling::30996
-Memory before starting new F-boundary:30996
+Memory after Sampling::55576
+Memory before starting new F-boundary:55576
 generated states = 8
 evaluated states = 6
 expanded states = 4
@@ -114,16 +117,17 @@ generated_states - lastjump_generated_states = 3
 fnivel: 16
 nodesGeneratedByLevel: 3
  time0: 1.11
+nodesGeneratedToTheLevel: 8
 f: 16 [6 evaluated, 4 expanded, t=1.11s,generated_states:,8,additional_states:,3,],random_comb_index:-1
 last_jump:16,F_bound_to_print:0
-F_bound:,16,Peak memory=,30.2695
+F_bound:,16,Peak memory=,54.2734
 F:16
-F_bound:16,Peak memory=30.2695,nodes:6,Nodes mem_space:0.1875,F_boundary_Range:1
+F_bound:16,Peak memory=54.2734,nodes:6,Nodes mem_space:0.1875,F_boundary_Range:1
 F:16
 F_bound:16F_boundary_time:-9.76866e-17,Hoff Potential Range:1,leaves_to_sample:1
 new F_bound:16chosen_Hoff_Roots_size:0 out of 1
-Memory after Sampling::30996
-Memory before starting new F-boundary:30996
+Memory after Sampling::55576
+Memory before starting new F-boundary:55576
 generated states = 13
 evaluated states = 9
 expanded states = 6
@@ -136,16 +140,17 @@ generated_states - lastjump_generated_states = 5
 fnivel: 17
 nodesGeneratedByLevel: 5
  time0: 1.11
+nodesGeneratedToTheLevel: 13
 f: 17 [9 evaluated, 6 expanded, t=1.11s,generated_states:,13,additional_states:,5,],random_comb_index:-1
 last_jump:17,F_bound_to_print:0
-F_bound:,17,Peak memory=,30.2695
+F_bound:,17,Peak memory=,54.2734
 F:17
-F_bound:17,Peak memory=30.2695,nodes:9,Nodes mem_space:0.28125,F_boundary_Range:1
+F_bound:17,Peak memory=54.2734,nodes:9,Nodes mem_space:0.28125,F_boundary_Range:1
 F:17
 F_bound:17F_boundary_time:-9.76866e-17,Hoff Potential Range:1,leaves_to_sample:1
 new F_bound:17chosen_Hoff_Roots_size:0 out of 1
-Memory after Sampling::30996
-Memory before starting new F-boundary:30996
+Memory after Sampling::55576
+Memory before starting new F-boundary:55576
 generated states = 20
 evaluated states = 14
 expanded states = 8
@@ -158,16 +163,17 @@ generated_states - lastjump_generated_states = 7
 fnivel: 18
 nodesGeneratedByLevel: 7
  time0: 1.11
+nodesGeneratedToTheLevel: 20
 f: 18 [14 evaluated, 8 expanded, t=1.11s,generated_states:,20,additional_states:,7,],random_comb_index:-1
 last_jump:18,F_bound_to_print:0
-F_bound:,18,Peak memory=,30.2695
+F_bound:,18,Peak memory=,54.2734
 F:18
-F_bound:18,Peak memory=30.2695,nodes:14,Nodes mem_space:0.4375,F_boundary_Range:5
+F_bound:18,Peak memory=54.2734,nodes:14,Nodes mem_space:0.4375,F_boundary_Range:5
 F:18
 F_bound:18F_boundary_time:-9.76866e-17,Hoff Potential Range:5,leaves_to_sample:5
 new F_bound:18chosen_Hoff_Roots_size:0 out of 5
-Memory after Sampling::30996
-Memory before starting new F-boundary:30996
+Memory after Sampling::55576
+Memory before starting new F-boundary:55576
 Best heuristic value: 11 [g=7, 16 evaluated, 10 expanded, t=1.11s]
 generated states = 51
 evaluated states = 35
@@ -180,25 +186,26 @@ lastjump reopened states = 0
 generated_states - lastjump_generated_states = 31
 fnivel: 19
 nodesGeneratedByLevel: 31
- time0: 1.12
-f: 19 [35 evaluated, 17 expanded, t=1.12s,generated_states:,51,additional_states:,31,],random_comb_index:-1
+ time0: 1.11
+nodesGeneratedToTheLevel: 51
+f: 19 [35 evaluated, 17 expanded, t=1.11s,generated_states:,51,additional_states:,31,],random_comb_index:-1
 last_jump:19,F_bound_to_print:0
-F_bound:,19,Peak memory=,30.2695
+F_bound:,19,Peak memory=,54.2734
 F:19
-F_bound:19,Peak memory=30.2695,nodes:35,Nodes mem_space:1.09375,F_boundary_Range:8
+F_bound:19,Peak memory=54.2734,nodes:35,Nodes mem_space:1.09375,F_boundary_Range:8
 F:19
-F_bound:19F_boundary_time:0.01,Hoff Potential Range:8,leaves_to_sample:8
+F_bound:19F_boundary_time:-9.76866e-17,Hoff Potential Range:8,leaves_to_sample:8
 new F_bound:19chosen_Hoff_Roots_size:0 out of 8
-Memory after Sampling::30996
-Memory before starting new F-boundary:30996
-Best heuristic value: 10 [g=9, 41 evaluated, 20 expanded, t=1.12s]
-Best heuristic value: 9 [g=10, 44 evaluated, 21 expanded, t=1.12s]
-Best heuristic value: 8 [g=11, 47 evaluated, 22 expanded, t=1.12s]
-Best heuristic value: 7 [g=12, 54 evaluated, 24 expanded, t=1.12s]
-Best heuristic value: 6 [g=13, 57 evaluated, 25 expanded, t=1.12s]
-Best heuristic value: 5 [g=14, 60 evaluated, 26 expanded, t=1.12s]
-Best heuristic value: 4 [g=15, 63 evaluated, 27 expanded, t=1.12s]
-Best heuristic value: 3 [g=16, 65 evaluated, 28 expanded, t=1.12s]
+Memory after Sampling::55576
+Memory before starting new F-boundary:55576
+Best heuristic value: 10 [g=9, 41 evaluated, 20 expanded, t=1.11s]
+Best heuristic value: 9 [g=10, 44 evaluated, 21 expanded, t=1.11s]
+Best heuristic value: 8 [g=11, 47 evaluated, 22 expanded, t=1.11s]
+Best heuristic value: 7 [g=12, 54 evaluated, 24 expanded, t=1.11s]
+Best heuristic value: 6 [g=13, 57 evaluated, 25 expanded, t=1.11s]
+Best heuristic value: 5 [g=14, 60 evaluated, 26 expanded, t=1.11s]
+Best heuristic value: 4 [g=15, 63 evaluated, 27 expanded, t=1.11s]
+Best heuristic value: 3 [g=16, 65 evaluated, 28 expanded, t=1.11s]
 generated states = 117
 evaluated states = 80
 expanded states = 36
@@ -210,29 +217,30 @@ lastjump reopened states = 0
 generated_states - lastjump_generated_states = 66
 fnivel: 20
 nodesGeneratedByLevel: 66
- time0: 1.12
-f: 20 [80 evaluated, 36 expanded, t=1.12s,generated_states:,117,additional_states:,66,],random_comb_index:-1
+ time0: 1.11
+nodesGeneratedToTheLevel: 117
+f: 20 [80 evaluated, 36 expanded, t=1.11s,generated_states:,117,additional_states:,66,],random_comb_index:-1
 last_jump:20,F_bound_to_print:0
-F_bound:,20,Peak memory=,30.2695
+F_bound:,20,Peak memory=,54.2734
 F:20
-F_bound:20,Peak memory=30.2695,nodes:80,Nodes mem_space:2.5,F_boundary_Range:29
+F_bound:20,Peak memory=54.2734,nodes:80,Nodes mem_space:2.5,F_boundary_Range:29
 F:20
-F_bound:20F_boundary_time:-1.06577e-16,Hoff Potential Range:29,leaves_to_sample:29
+F_bound:20F_boundary_time:-9.76866e-17,Hoff Potential Range:29,leaves_to_sample:29
 new F_bound:20chosen_Hoff_Roots_size:0 out of 29
-Memory after Sampling::30996
-Memory before starting new F-boundary:30996
-Best heuristic value: 2 [g=18, 165 evaluated, 68 expanded, t=1.13s]
-Best heuristic value: 1 [g=19, 166 evaluated, 69 expanded, t=1.13s]
-Best heuristic value: 0 [g=20, 167 evaluated, 70 expanded, t=1.13s]
+Memory after Sampling::55576
+Memory before starting new F-boundary:55576
+Best heuristic value: 2 [g=18, 165 evaluated, 68 expanded, t=1.11s]
+Best heuristic value: 1 [g=19, 166 evaluated, 69 expanded, t=1.11s]
+Best heuristic value: 0 [g=20, 167 evaluated, 70 expanded, t=1.11s]
  _________________________________
 |          Solution found!        |
  _________________________________
-overall generated nodes to last iter:,254,search_time:,1.13,overall time:,1.13
+overall generated nodes to last iter:,254,search_time:,1.11,overall time:,1.11
 totalniveles: 8
  ____________________________________
 |   total numero of call step() = 70   |
  ____________________________________
-Actual search time: 0.02s [t=1.13s]
+Actual search time: 0s [t=1.11s]
 unstack e g (1)
 put-down e (1)
 unstack g b (1)
@@ -268,10 +276,10 @@ Evaluated until last jump: 80 state(s).
 Generated until last jump: 117 state(s).
 Search space hash size: 167
 Search space hash bucket count: 193
-Search time: 1.13s
-Total time: 1.13s
-Peak memory: 30996 KB
-VmRSS memory: 1300 KB
-VmHWM memory: 18080 KB
+Search time: 1.11s
+Total time: 1.11s
+Peak memory: 55576 KB
+VmRSS memory: 1360 KB
+VmHWM memory: 35108 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
