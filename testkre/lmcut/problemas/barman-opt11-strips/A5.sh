@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/testkre/lmcut/problemas/barman-opt11-strips/resultad
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/barman-opt11-strips/domain.pddl benchmarks/barman-opt11-strips/pfile02-005.pddl Astarbarman-opt11-strips5
+python3 src/translate/translate.py benchmarks/barman-opt11-strips/domain.pddl benchmarks/barman-opt11-strips/pfile02-005.pddl Astarbarman-opt11-strips5  barman-opt11-strips pfile02-005.pddl  lmcut
 
 src/preprocess/preprocess < Astarbarman-opt11-strips5.sas
 
-src/search/downward --search "astarkre(lmcut())" <  Astarbarman-opt11-strips5 >> ${RESULTS}/Astarbarman-opt11-strips5.txt
+src/search/downward --search "astarkre(lmcut())" <  Astarbarman-opt11-strips5 >> ${RESULTS}/pfile02-005.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarbarman-opt11-strips5
 
 
 rm Astarbarman-opt11-strips5.sas
+
+
+
+rm src/translate/arquivos/pfile02-005.pddl
 

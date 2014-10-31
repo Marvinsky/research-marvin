@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/testkre/lmcut/problemas/elevators-opt08-strips/resul
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/elevators-opt08-strips/p21-domain.pddl benchmarks/elevators-opt08-strips/p21.pddl Astarelevators-opt08-strips21
+python3 src/translate/translate.py benchmarks/elevators-opt08-strips/p21-domain.pddl benchmarks/elevators-opt08-strips/p21.pddl Astarelevators-opt08-strips21  elevators-opt08-strips p21.pddl  lmcut
 
 src/preprocess/preprocess < Astarelevators-opt08-strips21.sas
 
-src/search/downward --search "astarkre(lmcut())" <  Astarelevators-opt08-strips21 >> ${RESULTS}/Astarelevators-opt08-strips21.txt
+src/search/downward --search "astarkre(lmcut())" <  Astarelevators-opt08-strips21 >> ${RESULTS}/p21.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarelevators-opt08-strips21
 
 
 rm Astarelevators-opt08-strips21.sas
+
+
+
+rm src/translate/arquivos/p21.pddl
 

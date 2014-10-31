@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/testkre/lmcut/problemas/woodworking-opt08-strips/res
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/woodworking-opt08-strips/p02-domain.pddl benchmarks/woodworking-opt08-strips/p02.pddl Astarwoodworking-opt08-strips2
+python3 src/translate/translate.py benchmarks/woodworking-opt08-strips/p02-domain.pddl benchmarks/woodworking-opt08-strips/p02.pddl Astarwoodworking-opt08-strips2  woodworking-opt08-strips p02.pddl  lmcut
 
 src/preprocess/preprocess < Astarwoodworking-opt08-strips2.sas
 
-src/search/downward --search "astarkre(lmcut())" <  Astarwoodworking-opt08-strips2 >> ${RESULTS}/Astarwoodworking-opt08-strips2.txt
+src/search/downward --search "astarkre(lmcut())" <  Astarwoodworking-opt08-strips2 >> ${RESULTS}/p02.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarwoodworking-opt08-strips2
 
 
 rm Astarwoodworking-opt08-strips2.sas
+
+
+
+rm src/translate/arquivos/p02.pddl
 

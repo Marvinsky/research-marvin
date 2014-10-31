@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/testkre/lmcut/problemas/scanalyzer-opt11-strips/resu
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/scanalyzer-opt11-strips/domain.pddl benchmarks/scanalyzer-opt11-strips/p16.pddl Astarscanalyzer-opt11-strips16
+python3 src/translate/translate.py benchmarks/scanalyzer-opt11-strips/domain.pddl benchmarks/scanalyzer-opt11-strips/p16.pddl Astarscanalyzer-opt11-strips16  scanalyzer-opt11-strips p16.pddl  lmcut
 
 src/preprocess/preprocess < Astarscanalyzer-opt11-strips16.sas
 
-src/search/downward --search "astarkre(lmcut())" <  Astarscanalyzer-opt11-strips16 >> ${RESULTS}/Astarscanalyzer-opt11-strips16.txt
+src/search/downward --search "astarkre(lmcut())" <  Astarscanalyzer-opt11-strips16 >> ${RESULTS}/p16.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarscanalyzer-opt11-strips16
 
 
 rm Astarscanalyzer-opt11-strips16.sas
+
+
+
+rm src/translate/arquivos/p16.pddl
 

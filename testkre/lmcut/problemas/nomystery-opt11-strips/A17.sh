@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/testkre/lmcut/problemas/nomystery-opt11-strips/resul
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/nomystery-opt11-strips/domain.pddl benchmarks/nomystery-opt11-strips/p17.pddl Astarnomystery-opt11-strips17
+python3 src/translate/translate.py benchmarks/nomystery-opt11-strips/domain.pddl benchmarks/nomystery-opt11-strips/p17.pddl Astarnomystery-opt11-strips17  nomystery-opt11-strips p17.pddl  lmcut
 
 src/preprocess/preprocess < Astarnomystery-opt11-strips17.sas
 
-src/search/downward --search "astarkre(lmcut())" <  Astarnomystery-opt11-strips17 >> ${RESULTS}/Astarnomystery-opt11-strips17.txt
+src/search/downward --search "astarkre(lmcut())" <  Astarnomystery-opt11-strips17 >> ${RESULTS}/p17.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarnomystery-opt11-strips17
 
 
 rm Astarnomystery-opt11-strips17.sas
+
+
+
+rm src/translate/arquivos/p17.pddl
 

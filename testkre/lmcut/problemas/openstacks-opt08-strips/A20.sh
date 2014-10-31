@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/testkre/lmcut/problemas/openstacks-opt08-strips/resu
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/openstacks-opt08-strips/p20-domain.pddl benchmarks/openstacks-opt08-strips/p20.pddl Astaropenstacks-opt08-strips20
+python3 src/translate/translate.py benchmarks/openstacks-opt08-strips/p20-domain.pddl benchmarks/openstacks-opt08-strips/p20.pddl Astaropenstacks-opt08-strips20  openstacks-opt08-strips p20.pddl  lmcut
 
 src/preprocess/preprocess < Astaropenstacks-opt08-strips20.sas
 
-src/search/downward --search "astarkre(lmcut())" <  Astaropenstacks-opt08-strips20 >> ${RESULTS}/Astaropenstacks-opt08-strips20.txt
+src/search/downward --search "astarkre(lmcut())" <  Astaropenstacks-opt08-strips20 >> ${RESULTS}/p20.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astaropenstacks-opt08-strips20
 
 
 rm Astaropenstacks-opt08-strips20.sas
+
+
+
+rm src/translate/arquivos/p20.pddl
 
