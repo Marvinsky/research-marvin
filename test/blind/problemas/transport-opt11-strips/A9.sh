@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/blind/problemas/transport-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/blind/problemas/transport-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/transport-opt11-strips/domain.pddl benchmarks/transport-opt11-strips/p09.pddl Astartransport-opt11-strips9
+python3 src/translate/translate.py benchmarks/transport-opt11-strips/domain.pddl benchmarks/transport-opt11-strips/p09.pddl Astartransport-opt11-strips9  transport-opt11-strips p09.pddl  blind
 
 src/preprocess/preprocess < Astartransport-opt11-strips9.sas
 
-src/search/downward --search "astar(blind())" <  Astartransport-opt11-strips9 >> ${RESULTS}/Astartransport-opt11-strips9.txt
+src/search/downward --search "astar(blind())" <  Astartransport-opt11-strips9 >> ${RESULTS}/p09.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astartransport-opt11-strips9
 
 
 rm Astartransport-opt11-strips9.sas
+
+
+
+rm src/translate/arquivos/p09.pddl
 

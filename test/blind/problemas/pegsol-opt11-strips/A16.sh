@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/blind/problemas/pegsol-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/blind/problemas/pegsol-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/pegsol-opt11-strips/domain.pddl benchmarks/pegsol-opt11-strips/p16.pddl Astarpegsol-opt11-strips16
+python3 src/translate/translate.py benchmarks/pegsol-opt11-strips/domain.pddl benchmarks/pegsol-opt11-strips/p16.pddl Astarpegsol-opt11-strips16  pegsol-opt11-strips p16.pddl  blind
 
 src/preprocess/preprocess < Astarpegsol-opt11-strips16.sas
 
-src/search/downward --search "astar(blind())" <  Astarpegsol-opt11-strips16 >> ${RESULTS}/Astarpegsol-opt11-strips16.txt
+src/search/downward --search "astar(blind())" <  Astarpegsol-opt11-strips16 >> ${RESULTS}/p16.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarpegsol-opt11-strips16
 
 
 rm Astarpegsol-opt11-strips16.sas
+
+
+
+rm src/translate/arquivos/p16.pddl
 

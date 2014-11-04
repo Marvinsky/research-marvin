@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/blind/problemas/woodworking-opt08-strips/resultado
+RESULTS=/home/marvin/marvin/test/blind/problemas/woodworking-opt08-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/woodworking-opt08-strips/p08-domain.pddl benchmarks/woodworking-opt08-strips/p08.pddl Astarwoodworking-opt08-strips8
+python3 src/translate/translate.py benchmarks/woodworking-opt08-strips/p08-domain.pddl benchmarks/woodworking-opt08-strips/p08.pddl Astarwoodworking-opt08-strips8  woodworking-opt08-strips p08.pddl  blind
 
 src/preprocess/preprocess < Astarwoodworking-opt08-strips8.sas
 
-src/search/downward --search "astar(blind())" <  Astarwoodworking-opt08-strips8 >> ${RESULTS}/Astarwoodworking-opt08-strips8.txt
+src/search/downward --search "astar(blind())" <  Astarwoodworking-opt08-strips8 >> ${RESULTS}/p08.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarwoodworking-opt08-strips8
 
 
 rm Astarwoodworking-opt08-strips8.sas
+
+
+
+rm src/translate/arquivos/p08.pddl
 

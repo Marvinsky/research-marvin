@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/blind/problemas/openstacks-opt08-adl/resultado
+RESULTS=/home/marvin/marvin/test/blind/problemas/openstacks-opt08-adl/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/openstacks-opt08-adl/p16-domain.pddl benchmarks/openstacks-opt08-adl/p16.pddl Astaropenstacks-opt08-adl16
+python3 src/translate/translate.py benchmarks/openstacks-opt08-adl/p16-domain.pddl benchmarks/openstacks-opt08-adl/p16.pddl Astaropenstacks-opt08-adl16  openstacks-opt08-adl p16.pddl  blind
 
 src/preprocess/preprocess < Astaropenstacks-opt08-adl16.sas
 
-src/search/downward --search "astar(blind())" <  Astaropenstacks-opt08-adl16 >> ${RESULTS}/Astaropenstacks-opt08-adl16.txt
+src/search/downward --search "astar(blind())" <  Astaropenstacks-opt08-adl16 >> ${RESULTS}/p16.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astaropenstacks-opt08-adl16
 
 
 rm Astaropenstacks-opt08-adl16.sas
+
+
+
+rm src/translate/arquivos/p16.pddl
 

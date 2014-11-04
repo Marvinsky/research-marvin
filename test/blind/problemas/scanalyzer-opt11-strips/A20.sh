@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/blind/problemas/scanalyzer-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/blind/problemas/scanalyzer-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/scanalyzer-opt11-strips/domain.pddl benchmarks/scanalyzer-opt11-strips/p20.pddl Astarscanalyzer-opt11-strips20
+python3 src/translate/translate.py benchmarks/scanalyzer-opt11-strips/domain.pddl benchmarks/scanalyzer-opt11-strips/p20.pddl Astarscanalyzer-opt11-strips20  scanalyzer-opt11-strips p20.pddl  blind
 
 src/preprocess/preprocess < Astarscanalyzer-opt11-strips20.sas
 
-src/search/downward --search "astar(blind())" <  Astarscanalyzer-opt11-strips20 >> ${RESULTS}/Astarscanalyzer-opt11-strips20.txt
+src/search/downward --search "astar(blind())" <  Astarscanalyzer-opt11-strips20 >> ${RESULTS}/p20.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarscanalyzer-opt11-strips20
 
 
 rm Astarscanalyzer-opt11-strips20.sas
+
+
+
+rm src/translate/arquivos/p20.pddl
 

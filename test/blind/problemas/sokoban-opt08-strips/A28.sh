@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/blind/problemas/sokoban-opt08-strips/resultado
+RESULTS=/home/marvin/marvin/test/blind/problemas/sokoban-opt08-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/sokoban-opt08-strips/p28-domain.pddl benchmarks/sokoban-opt08-strips/p28.pddl Astarsokoban-opt08-strips28
+python3 src/translate/translate.py benchmarks/sokoban-opt08-strips/p28-domain.pddl benchmarks/sokoban-opt08-strips/p28.pddl Astarsokoban-opt08-strips28  sokoban-opt08-strips p28.pddl  blind
 
 src/preprocess/preprocess < Astarsokoban-opt08-strips28.sas
 
-src/search/downward --search "astar(blind())" <  Astarsokoban-opt08-strips28 >> ${RESULTS}/Astarsokoban-opt08-strips28.txt
+src/search/downward --search "astar(blind())" <  Astarsokoban-opt08-strips28 >> ${RESULTS}/p28.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarsokoban-opt08-strips28
 
 
 rm Astarsokoban-opt08-strips28.sas
+
+
+
+rm src/translate/arquivos/p28.pddl
 

@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/blind/problemas/tidybot-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/blind/problemas/tidybot-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/tidybot-opt11-strips/domain.pddl benchmarks/tidybot-opt11-strips/p03.pddl Astartidybot-opt11-strips3
+python3 src/translate/translate.py benchmarks/tidybot-opt11-strips/domain.pddl benchmarks/tidybot-opt11-strips/p03.pddl Astartidybot-opt11-strips3  tidybot-opt11-strips p03.pddl  blind
 
 src/preprocess/preprocess < Astartidybot-opt11-strips3.sas
 
-src/search/downward --search "astar(blind())" <  Astartidybot-opt11-strips3 >> ${RESULTS}/Astartidybot-opt11-strips3.txt
+src/search/downward --search "astar(blind())" <  Astartidybot-opt11-strips3 >> ${RESULTS}/p03.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astartidybot-opt11-strips3
 
 
 rm Astartidybot-opt11-strips3.sas
+
+
+
+rm src/translate/arquivos/p03.pddl
 

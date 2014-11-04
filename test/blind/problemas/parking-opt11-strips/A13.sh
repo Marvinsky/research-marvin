@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/blind/problemas/parking-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/blind/problemas/parking-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/parking-opt11-strips/domain.pddl benchmarks/parking-opt11-strips/pfile06-023.pddl Astarparking-opt11-strips13
+python3 src/translate/translate.py benchmarks/parking-opt11-strips/domain.pddl benchmarks/parking-opt11-strips/pfile06-023.pddl Astarparking-opt11-strips13  parking-opt11-strips pfile06-023.pddl  blind
 
 src/preprocess/preprocess < Astarparking-opt11-strips13.sas
 
-src/search/downward --search "astar(blind())" <  Astarparking-opt11-strips13 >> ${RESULTS}/Astarparking-opt11-strips13.txt
+src/search/downward --search "astar(blind())" <  Astarparking-opt11-strips13 >> ${RESULTS}/pfile06-023.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarparking-opt11-strips13
 
 
 rm Astarparking-opt11-strips13.sas
+
+
+
+rm src/translate/arquivos/pfile06-023.pddl
 

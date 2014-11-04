@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/blind/problemas/visitall-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/blind/problemas/visitall-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/visitall-opt11-strips/domain.pddl benchmarks/visitall-opt11-strips/problem06-full.pddl Astarvisitall-opt11-strips9
+python3 src/translate/translate.py benchmarks/visitall-opt11-strips/domain.pddl benchmarks/visitall-opt11-strips/problem06-full.pddl Astarvisitall-opt11-strips9  visitall-opt11-strips problem06-full.pddl  blind
 
 src/preprocess/preprocess < Astarvisitall-opt11-strips9.sas
 
-src/search/downward --search "astar(blind())" <  Astarvisitall-opt11-strips9 >> ${RESULTS}/Astarvisitall-opt11-strips9.txt
+src/search/downward --search "astar(blind())" <  Astarvisitall-opt11-strips9 >> ${RESULTS}/problem06-full.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarvisitall-opt11-strips9
 
 
 rm Astarvisitall-opt11-strips9.sas
+
+
+
+rm src/translate/arquivos/problem06-full.pddl
 

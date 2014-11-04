@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/blind/problemas/barman-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/blind/problemas/barman-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/barman-opt11-strips/domain.pddl benchmarks/barman-opt11-strips/pfile01-001.pddl Astarbarman-opt11-strips1
+python3 src/translate/translate.py benchmarks/barman-opt11-strips/domain.pddl benchmarks/barman-opt11-strips/pfile01-001.pddl Astarbarman-opt11-strips1  barman-opt11-strips pfile01-001.pddl  blind
 
 src/preprocess/preprocess < Astarbarman-opt11-strips1.sas
 
-src/search/downward --search "astar(blind())" <  Astarbarman-opt11-strips1 >> ${RESULTS}/Astarbarman-opt11-strips1.txt
+src/search/downward --search "astar(blind())" <  Astarbarman-opt11-strips1 >> ${RESULTS}/pfile01-001.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarbarman-opt11-strips1
 
 
 rm Astarbarman-opt11-strips1.sas
+
+
+
+rm src/translate/arquivos/pfile01-001.pddl
 

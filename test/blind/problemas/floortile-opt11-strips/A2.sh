@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/blind/problemas/floortile-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/blind/problemas/floortile-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/floortile-opt11-strips/domain.pddl benchmarks/floortile-opt11-strips/opt-p01-002.pddl Astarfloortile-opt11-strips2
+python3 src/translate/translate.py benchmarks/floortile-opt11-strips/domain.pddl benchmarks/floortile-opt11-strips/opt-p01-002.pddl Astarfloortile-opt11-strips2  floortile-opt11-strips opt-p01-002.pddl  blind
 
 src/preprocess/preprocess < Astarfloortile-opt11-strips2.sas
 
-src/search/downward --search "astar(blind())" <  Astarfloortile-opt11-strips2 >> ${RESULTS}/Astarfloortile-opt11-strips2.txt
+src/search/downward --search "astar(blind())" <  Astarfloortile-opt11-strips2 >> ${RESULTS}/opt-p01-002.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarfloortile-opt11-strips2
 
 
 rm Astarfloortile-opt11-strips2.sas
+
+
+
+rm src/translate/arquivos/opt-p01-002.pddl
 

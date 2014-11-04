@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/blind/problemas/parcprinter-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/blind/problemas/parcprinter-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/parcprinter-opt11-strips/p14-domain.pddl benchmarks/parcprinter-opt11-strips/p14.pddl Astarparcprinter-opt11-strips14
+python3 src/translate/translate.py benchmarks/parcprinter-opt11-strips/p14-domain.pddl benchmarks/parcprinter-opt11-strips/p14.pddl Astarparcprinter-opt11-strips14  parcprinter-opt11-strips p14.pddl  blind
 
 src/preprocess/preprocess < Astarparcprinter-opt11-strips14.sas
 
-src/search/downward --search "astar(blind())" <  Astarparcprinter-opt11-strips14 >> ${RESULTS}/Astarparcprinter-opt11-strips14.txt
+src/search/downward --search "astar(blind())" <  Astarparcprinter-opt11-strips14 >> ${RESULTS}/p14.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarparcprinter-opt11-strips14
 
 
 rm Astarparcprinter-opt11-strips14.sas
+
+
+
+rm src/translate/arquivos/p14.pddl
 

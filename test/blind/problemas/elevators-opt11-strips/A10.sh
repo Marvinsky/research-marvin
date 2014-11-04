@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/blind/problemas/elevators-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/blind/problemas/elevators-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/elevators-opt11-strips/domain.pddl benchmarks/elevators-opt11-strips/p10.pddl Astarelevators-opt11-strips10
+python3 src/translate/translate.py benchmarks/elevators-opt11-strips/domain.pddl benchmarks/elevators-opt11-strips/p10.pddl Astarelevators-opt11-strips10  elevators-opt11-strips p10.pddl  blind
 
 src/preprocess/preprocess < Astarelevators-opt11-strips10.sas
 
-src/search/downward --search "astar(blind())" <  Astarelevators-opt11-strips10 >> ${RESULTS}/Astarelevators-opt11-strips10.txt
+src/search/downward --search "astar(blind())" <  Astarelevators-opt11-strips10 >> ${RESULTS}/p10.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarelevators-opt11-strips10
 
 
 rm Astarelevators-opt11-strips10.sas
+
+
+
+rm src/translate/arquivos/p10.pddl
 

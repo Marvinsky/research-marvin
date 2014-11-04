@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/blind/problemas/elevators-opt08-strips/resultado
+RESULTS=/home/marvin/marvin/test/blind/problemas/elevators-opt08-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/elevators-opt08-strips/p02-domain.pddl benchmarks/elevators-opt08-strips/p02.pddl Astarelevators-opt08-strips2
+python3 src/translate/translate.py benchmarks/elevators-opt08-strips/p02-domain.pddl benchmarks/elevators-opt08-strips/p02.pddl Astarelevators-opt08-strips2  elevators-opt08-strips p02.pddl  blind
 
 src/preprocess/preprocess < Astarelevators-opt08-strips2.sas
 
-src/search/downward --search "astar(blind())" <  Astarelevators-opt08-strips2 >> ${RESULTS}/Astarelevators-opt08-strips2.txt
+src/search/downward --search "astar(blind())" <  Astarelevators-opt08-strips2 >> ${RESULTS}/p02.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarelevators-opt08-strips2
 
 
 rm Astarelevators-opt08-strips2.sas
+
+
+
+rm src/translate/arquivos/p02.pddl
 
