@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = ss(lmcut())
-argv[4] = XDG_VTNR=3
-argv[5] = XDG_SESSION_ID=c3
+argv[4] = XDG_VTNR=2
+argv[5] = XDG_SESSION_ID=c2
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -22,14 +22,14 @@ registered: ss
  ______________________________
 registered: lmcut
 parser is not dry_run
-g object = 0xa04ec88
+g object = 0x9833c88
 ScalarEvaluator vector pointer []
-ScalarEvaluator vector pointer after add g = [0xa04ec88]
-ScalarEvaluator vector pointer after add eval = [0xa04ec88, 0xa04e460]
+ScalarEvaluator vector pointer after add g = [0x9833c88]
+ScalarEvaluator vector pointer after add eval = [0x9833c88, 0x9833460]
 subevaluators_.size:2
-new vector of ScalarEvaluator created = [0xa051480, 0xa04e460]
-OpenList vector of state_var_t objects = 0xa053e38
-engine = 0xa04e4f0
+new vector of ScalarEvaluator created = [0x9836480, 0x9833460]
+OpenList vector of state_var_t objects = 0x9838e38
+engine = 0x98334f0
  ___________________________________
 |         calling initialize        |
  ___________________________________
@@ -50,9 +50,9 @@ f_evaluator populated
 conditional_effects_present = 0
 Conditional effects present = 0
 starting timings 
-initial state = 0xa008ee8
-node_counter = 175757
-node_gen_and_exp_cost = 5,74657e-06
+initial state = 0x97edee8
+node_counter = 338859
+node_gen_and_exp_cost = 2,95108e-06
 active heuristics size : 1
 # heristics = 1
 dead_end = 0
@@ -60,8 +60,8 @@ heuristics[0]->get_heuristic() = -2
 max_h = 0
 is not dead end
 	Maxing_h[0]:0
-	Maxing_h[1]:168092760
-f_evaluator = 168092760
+	Maxing_h[1]:159593560
+f_evaluator = 159593560
 generated states = 0
 evaluated states = 1
 expanded states = 0
@@ -71,15 +71,17 @@ lastjump evaluated states = 0
 lastjump expanded states = 0
 lastjump reopened states = 0
 generated_states - lastjump_generated_states = 0
-fnivel: 168092760
+expanded states - lastjump expanded states = 0
+fnivel: 159593560
 nodesGeneratedByLevel: 0
- time0: 1,03
+ time0: 1
 nodesGeneratedToTheLevel: 0
-f: 168092760 [1 evaluated, 0 expanded, t=1,03s,generated_states:,0,additional_states:,0,],random_comb_index:-1
-last_jump:168092760,F_bound_to_print:0
-F_bound:,168092760,Peak memory=,30,4688
-Best heuristic value: -2 [g=0, 1 evaluated, 0 expanded, t=1,03s]
-heuristics[0]->get_value() = 168092760
+f: 159593560 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
+last_jump:159593560,F_bound_to_print:0
+gen_to_exp_ratio: -nan
+F_bound:,159593560,Peak memory=,54,4766
+Best heuristic value: -2 [g=0, 1 evaluated, 0 expanded, t=1s]
+heuristics[0]->get_value() = 159593560
 node.get_state_buffer() = 
 
 starting timing individual heuristics.
@@ -87,11 +89,11 @@ SAMPLING_PHASE = 0
 Current_RIDA_Phase = 0
 Initializing landmark cut heuristic...
 heur_name = ,regular_lm_cut
-h[,0,] is:,,regular_lm_cut,measured time cost: 0,000259434,h:20
+h[,0,] is:,,regular_lm_cut,measured time cost: 0,000116897,h:20
 memory before deleting databases: 
-VmRSS memory: 16784 KB
+VmRSS memory: 28828 KB
 memory after deleting all databases: 
-VmRSS memory: 16784 KB
+VmRSS memory: 28828 KB
 Remaining heuristics:
 remaining initial heur ,regular_lm_cut
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
@@ -128,42 +130,25 @@ depth = 20
 heuristic value of te initial node based on the heuristic vector = 20
 heuristic value of the initial node based on the node = 20
 heuristic value of the object Type  = 20
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 18
-succ_g = 1
-succ_h2 = 21
-succ_g = 1
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 18
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 19
-succ_g = 2
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 17
-succ_g = 3
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
+v_f_value.size() = 3
+****************************************************************
+for depth = 20 we print the levels and the number of levels.
+g = 1
+f-value generated at 1 level.
+19, 
+g = 2
+f-value generated at 2 level.
+19, 20, 
+g = 3
+f-value generated at 3 level.
+19, 20, 20, 
+g = 4
+f-value generated at 4 level.
+19, 20, 20, 
+p = 4
+The f-Distribution for max_g of this iteration 4
+19, 20, 20, 
+****************************************************************
 counter k = 4
  _____________________________________________________________________
 |   # of nodes expanded by ss at level 20 is :     4                |
@@ -172,73 +157,25 @@ depth = 21
 heuristic value of te initial node based on the heuristic vector = 18
 heuristic value of the initial node based on the node = 18
 heuristic value of the object Type  = 18
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 18
-succ_g = 1
-succ_h2 = 21
-succ_g = 1
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 18
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 19
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 17
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
+v_f_value.size() = 8
+****************************************************************
+for depth = 21 we print the levels and the number of levels.
+g = 1
+f-value generated at 1 level.
+21, 19, 21, 
+g = 2
+f-value generated at 2 level.
+21, 19, 21, 20, 21, 
+g = 3
+f-value generated at 3 level.
+21, 19, 21, 20, 21, 21, 20, 
+g = 4
+f-value generated at 4 level.
+21, 19, 21, 20, 21, 21, 20, 21, 
+p = 4
+The f-Distribution for max_g of this iteration 4
+21, 19, 21, 20, 21, 21, 20, 21, 
+****************************************************************
 counter k = 7
  _____________________________________________________________________
 |   # of nodes expanded by ss at level 21 is :     9                |
@@ -247,126 +184,31 @@ depth = 22
 heuristic value of te initial node based on the heuristic vector = 19
 heuristic value of the initial node based on the node = 19
 heuristic value of the object Type  = 19
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 18
-succ_g = 1
-succ_h2 = 21
-succ_g = 1
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 18
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 19
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 17
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 18
-succ_g = 5
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
+v_f_value.size() = 24
+****************************************************************
+for depth = 22 we print the levels and the number of levels.
+g = 1
+f-value generated at 1 level.
+21, 19, 22, 21, 
+g = 2
+f-value generated at 2 level.
+21, 19, 22, 21, 22, 20, 21, 
+g = 3
+f-value generated at 3 level.
+21, 19, 22, 21, 22, 20, 21, 22, 22, 22, 22, 22, 22, 21, 20, 
+g = 4
+f-value generated at 4 level.
+21, 19, 22, 21, 22, 20, 21, 22, 22, 22, 22, 22, 22, 21, 20, 21, 22, 21, 22, 22, 
+g = 5
+f-value generated at 5 level.
+21, 19, 22, 21, 22, 20, 21, 22, 22, 22, 22, 22, 22, 21, 20, 21, 22, 21, 22, 22, 22, 22, 22, 22, 
+g = 6
+f-value generated at 6 level.
+21, 19, 22, 21, 22, 20, 21, 22, 22, 22, 22, 22, 22, 21, 20, 21, 22, 21, 22, 22, 22, 22, 22, 22, 
+p = 6
+The f-Distribution for max_g of this iteration 6
+21, 19, 22, 21, 22, 20, 21, 22, 22, 22, 22, 22, 22, 21, 20, 21, 22, 21, 22, 22, 22, 22, 22, 22, 
+****************************************************************
 counter k = 12
  _____________________________________________________________________
 |   # of nodes expanded by ss at level 22 is :     35                |
@@ -375,169 +217,31 @@ depth = 23
 heuristic value of te initial node based on the heuristic vector = 18
 heuristic value of the initial node based on the node = 18
 heuristic value of the object Type  = 18
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 18
-succ_g = 1
-succ_h2 = 21
-succ_g = 1
-succ_h2 = 20
-succ_g = 1
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 18
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 17
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 18
-succ_g = 5
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 20
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
+v_f_value.size() = 44
+****************************************************************
+for depth = 23 we print the levels and the number of levels.
+g = 1
+f-value generated at 1 level.
+21, 19, 22, 21, 
+g = 2
+f-value generated at 2 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 
+g = 3
+f-value generated at 3 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 
+g = 4
+f-value generated at 4 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 21, 23, 22, 23, 21, 23, 21, 23, 23, 23, 22, 22, 
+g = 5
+f-value generated at 5 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 21, 23, 22, 23, 21, 23, 21, 23, 23, 23, 22, 22, 22, 23, 22, 22, 23, 23, 22, 
+g = 6
+f-value generated at 6 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 21, 23, 22, 23, 21, 23, 21, 23, 23, 23, 22, 22, 22, 23, 22, 22, 23, 23, 22, 22, 
+p = 6
+The f-Distribution for max_g of this iteration 6
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 21, 23, 22, 23, 21, 23, 21, 23, 23, 23, 22, 22, 22, 23, 22, 22, 23, 23, 22, 22, 
+****************************************************************
 counter k = 16
  _____________________________________________________________________
 |   # of nodes expanded by ss at level 23 is :     191                |
@@ -546,226 +250,37 @@ depth = 24
 heuristic value of te initial node based on the heuristic vector = 19
 heuristic value of the initial node based on the node = 19
 heuristic value of the object Type  = 19
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 18
-succ_g = 1
-succ_h2 = 21
-succ_g = 1
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 18
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 17
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 18
-succ_g = 5
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 20
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 17
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 18
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
+v_f_value.size() = 73
+****************************************************************
+for depth = 24 we print the levels and the number of levels.
+g = 1
+f-value generated at 1 level.
+21, 19, 22, 21, 
+g = 2
+f-value generated at 2 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 
+g = 3
+f-value generated at 3 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 
+g = 4
+f-value generated at 4 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 
+g = 5
+f-value generated at 5 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 24, 22, 23, 22, 24, 24, 22, 24, 23, 24, 24, 24, 24, 24, 23, 24, 24, 24, 23, 22, 
+g = 6
+f-value generated at 6 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 24, 22, 23, 22, 24, 24, 22, 24, 23, 24, 24, 24, 24, 24, 23, 24, 24, 24, 23, 22, 24, 24, 22, 24, 24, 22, 24, 24, 
+g = 7
+f-value generated at 7 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 24, 22, 23, 22, 24, 24, 22, 24, 23, 24, 24, 24, 24, 24, 23, 24, 24, 24, 23, 22, 24, 24, 22, 24, 24, 22, 24, 24, 24, 24, 24, 24, 
+g = 8
+f-value generated at 8 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 24, 22, 23, 22, 24, 24, 22, 24, 23, 24, 24, 24, 24, 24, 23, 24, 24, 24, 23, 22, 24, 24, 22, 24, 24, 22, 24, 24, 24, 24, 24, 24, 
+p = 8
+The f-Distribution for max_g of this iteration 8
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 24, 22, 23, 22, 24, 24, 22, 24, 23, 24, 24, 24, 24, 24, 23, 24, 24, 24, 23, 22, 24, 24, 22, 24, 24, 22, 24, 24, 24, 24, 24, 24, 
+****************************************************************
 counter k = 21
  _____________________________________________________________________
 |   # of nodes expanded by ss at level 24 is :     3521                |
@@ -774,268 +289,37 @@ depth = 25
 heuristic value of te initial node based on the heuristic vector = 18
 heuristic value of the initial node based on the node = 18
 heuristic value of the object Type  = 18
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 18
-succ_g = 1
-succ_h2 = 21
-succ_g = 1
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 18
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 19
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 17
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 5
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 17
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 17
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 5
-succ_h2 = 18
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 5
-succ_h2 = 20
-succ_g = 5
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 18
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 20
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
+v_f_value.size() = 89
+****************************************************************
+for depth = 25 we print the levels and the number of levels.
+g = 1
+f-value generated at 1 level.
+21, 19, 22, 21, 
+g = 2
+f-value generated at 2 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 
+g = 3
+f-value generated at 3 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 
+g = 4
+f-value generated at 4 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 
+g = 5
+f-value generated at 5 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 
+g = 6
+f-value generated at 6 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 23, 25, 25, 25, 24, 24, 
+g = 7
+f-value generated at 7 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 23, 25, 25, 25, 24, 24, 24, 25, 24, 24, 25, 25, 24, 
+g = 8
+f-value generated at 8 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 23, 25, 25, 25, 24, 24, 24, 25, 24, 24, 25, 25, 24, 24, 
+p = 8
+The f-Distribution for max_g of this iteration 8
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 23, 25, 25, 25, 24, 24, 24, 25, 24, 24, 25, 25, 24, 24, 
+****************************************************************
 counter k = 25
  _____________________________________________________________________
 |   # of nodes expanded by ss at level 25 is :     6169                |
@@ -1044,317 +328,43 @@ depth = 26
 heuristic value of te initial node based on the heuristic vector = 19
 heuristic value of the initial node based on the node = 19
 heuristic value of the object Type  = 19
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 18
-succ_g = 1
-succ_h2 = 21
-succ_g = 1
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 18
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 19
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 17
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 18
-succ_g = 5
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 20
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 21
-succ_g = 5
-succ_h2 = 18
-succ_g = 5
-succ_h2 = 21
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 5
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 18
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 20
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 17
-succ_g = 7
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 18
-succ_g = 9
-succ_h2 = 17
-succ_g = 9
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
+v_f_value.size() = 113
+****************************************************************
+for depth = 26 we print the levels and the number of levels.
+g = 1
+f-value generated at 1 level.
+21, 19, 22, 21, 
+g = 2
+f-value generated at 2 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 
+g = 3
+f-value generated at 3 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 
+g = 4
+f-value generated at 4 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 
+g = 5
+f-value generated at 5 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 
+g = 6
+f-value generated at 6 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 
+g = 7
+f-value generated at 7 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 26, 24, 25, 24, 26, 26, 24, 26, 26, 25, 26, 26, 26, 26, 26, 25, 24, 
+g = 8
+f-value generated at 8 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 26, 24, 25, 24, 26, 26, 24, 26, 26, 25, 26, 26, 26, 26, 26, 25, 24, 26, 26, 24, 26, 26, 24, 26, 26, 
+g = 9
+f-value generated at 9 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 26, 24, 25, 24, 26, 26, 24, 26, 26, 25, 26, 26, 26, 26, 26, 25, 24, 26, 26, 24, 26, 26, 24, 26, 26, 26, 26, 26, 26, 
+g = 10
+f-value generated at 10 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 26, 24, 25, 24, 26, 26, 24, 26, 26, 25, 26, 26, 26, 26, 26, 25, 24, 26, 26, 24, 26, 26, 24, 26, 26, 26, 26, 26, 26, 
+p = 10
+The f-Distribution for max_g of this iteration 10
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 26, 24, 25, 24, 26, 26, 24, 26, 26, 25, 26, 26, 26, 26, 26, 25, 24, 26, 26, 24, 26, 26, 24, 26, 26, 26, 26, 26, 26, 
+****************************************************************
 counter k = 30
  _____________________________________________________________________
 |   # of nodes expanded by ss at level 26 is :     83189                |
@@ -1363,355 +373,43 @@ depth = 27
 heuristic value of te initial node based on the heuristic vector = 18
 heuristic value of the initial node based on the node = 18
 heuristic value of the object Type  = 18
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 18
-succ_g = 1
-succ_h2 = 21
-succ_g = 1
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 18
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 17
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 18
-succ_g = 5
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 20
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 17
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 21
-succ_g = 5
-succ_h2 = 18
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 5
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 18
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 20
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 17
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 7
-succ_h2 = 18
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 7
-succ_h2 = 20
-succ_g = 7
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 18
-succ_g = 9
-succ_h2 = 17
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 20
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 17
-succ_g = 9
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
-succ_h2 = 21
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
-succ_h2 = 21
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
+v_f_value.size() = 130
+****************************************************************
+for depth = 27 we print the levels and the number of levels.
+g = 1
+f-value generated at 1 level.
+21, 19, 22, 21, 
+g = 2
+f-value generated at 2 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 
+g = 3
+f-value generated at 3 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 
+g = 4
+f-value generated at 4 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 
+g = 5
+f-value generated at 5 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 
+g = 6
+f-value generated at 6 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 
+g = 7
+f-value generated at 7 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 
+g = 8
+f-value generated at 8 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 25, 27, 27, 27, 26, 26, 
+g = 9
+f-value generated at 9 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 25, 27, 27, 27, 26, 26, 26, 27, 26, 26, 27, 27, 26, 
+g = 10
+f-value generated at 10 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 25, 27, 27, 27, 26, 26, 26, 27, 26, 26, 27, 27, 26, 26, 
+p = 10
+The f-Distribution for max_g of this iteration 10
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 25, 27, 27, 27, 26, 26, 26, 27, 26, 26, 27, 27, 26, 26, 
+****************************************************************
 counter k = 34
  _____________________________________________________________________
 |   # of nodes expanded by ss at level 27 is :     112619                |
@@ -1720,410 +418,49 @@ depth = 28
 heuristic value of te initial node based on the heuristic vector = 19
 heuristic value of the initial node based on the node = 19
 heuristic value of the object Type  = 19
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 18
-succ_g = 1
-succ_h2 = 21
-succ_g = 1
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 18
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 19
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 17
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 5
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 17
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 21
-succ_g = 5
-succ_h2 = 18
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 5
-succ_h2 = 20
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
-succ_h2 = 20
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
-succ_h2 = 21
-succ_g = 7
-succ_h2 = 18
-succ_g = 7
-succ_h2 = 21
-succ_g = 7
-succ_h2 = 20
-succ_g = 7
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 8
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 8
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 18
-succ_g = 9
-succ_h2 = 17
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 20
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 17
-succ_g = 9
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 17
-succ_g = 9
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
-succ_h2 = 21
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 19
-succ_g = 11
-succ_h2 = 19
-succ_g = 11
-succ_h2 = 18
-succ_g = 11
-succ_h2 = 17
-succ_g = 11
-succ_h2 = 20
-succ_g = 12
-succ_h2 = 19
-succ_g = 12
-succ_h2 = 19
-succ_g = 12
-succ_h2 = 18
-succ_g = 12
-succ_h2 = 18
-succ_g = 12
+v_f_value.size() = 154
+****************************************************************
+for depth = 28 we print the levels and the number of levels.
+g = 1
+f-value generated at 1 level.
+21, 19, 22, 21, 
+g = 2
+f-value generated at 2 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 
+g = 3
+f-value generated at 3 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 
+g = 4
+f-value generated at 4 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 
+g = 5
+f-value generated at 5 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 
+g = 6
+f-value generated at 6 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 
+g = 7
+f-value generated at 7 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 
+g = 8
+f-value generated at 8 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 
+g = 9
+f-value generated at 9 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 28, 26, 27, 26, 28, 28, 26, 28, 28, 27, 28, 28, 28, 28, 28, 27, 26, 
+g = 10
+f-value generated at 10 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 28, 26, 27, 26, 28, 28, 26, 28, 28, 27, 28, 28, 28, 28, 28, 27, 26, 28, 28, 26, 28, 28, 26, 28, 28, 
+g = 11
+f-value generated at 11 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 28, 26, 27, 26, 28, 28, 26, 28, 28, 27, 28, 28, 28, 28, 28, 27, 26, 28, 28, 26, 28, 28, 26, 28, 28, 28, 28, 28, 28, 
+g = 12
+f-value generated at 12 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 28, 26, 27, 26, 28, 28, 26, 28, 28, 27, 28, 28, 28, 28, 28, 27, 26, 28, 28, 26, 28, 28, 26, 28, 28, 28, 28, 28, 28, 
+p = 12
+The f-Distribution for max_g of this iteration 12
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 28, 26, 27, 26, 28, 28, 26, 28, 28, 27, 28, 28, 28, 28, 28, 27, 26, 28, 28, 26, 28, 28, 26, 28, 28, 28, 28, 28, 28, 
+****************************************************************
 counter k = 39
  _____________________________________________________________________
 |   # of nodes expanded by ss at level 28 is :     1479961                |
@@ -2132,457 +469,49 @@ depth = 29
 heuristic value of te initial node based on the heuristic vector = 18
 heuristic value of the initial node based on the node = 18
 heuristic value of the object Type  = 18
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 18
-succ_g = 1
-succ_h2 = 21
-succ_g = 1
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 18
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 17
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 5
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 20
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 20
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 21
-succ_g = 5
-succ_h2 = 18
-succ_g = 5
-succ_h2 = 21
-succ_g = 5
-succ_h2 = 20
-succ_g = 5
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
-succ_h2 = 20
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
-succ_h2 = 21
-succ_g = 7
-succ_h2 = 18
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 7
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 8
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 9
-succ_h2 = 17
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 20
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 17
-succ_g = 9
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 9
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 17
-succ_g = 9
-succ_h2 = 21
-succ_g = 9
-succ_h2 = 18
-succ_g = 9
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 9
-succ_h2 = 20
-succ_g = 9
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
-succ_h2 = 21
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 21
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 19
-succ_g = 11
-succ_h2 = 19
-succ_g = 11
-succ_h2 = 18
-succ_g = 11
-succ_h2 = 17
-succ_g = 11
-succ_h2 = 19
-succ_g = 11
-succ_h2 = 20
-succ_g = 11
-succ_h2 = 19
-succ_g = 11
-succ_h2 = 17
-succ_g = 11
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 12
-succ_h2 = 19
-succ_g = 12
-succ_h2 = 19
-succ_g = 12
-succ_h2 = 18
-succ_g = 12
-succ_h2 = 18
-succ_g = 12
-succ_h2 = 21
-succ_g = 12
-succ_h2 = 20
-succ_g = 12
-succ_h2 = 18
-succ_g = 12
-succ_h2 = 21
-succ_g = 12
-succ_h2 = 19
-succ_g = 12
+v_f_value.size() = 171
+****************************************************************
+for depth = 29 we print the levels and the number of levels.
+g = 1
+f-value generated at 1 level.
+21, 19, 22, 21, 
+g = 2
+f-value generated at 2 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 
+g = 3
+f-value generated at 3 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 
+g = 4
+f-value generated at 4 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 
+g = 5
+f-value generated at 5 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 
+g = 6
+f-value generated at 6 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 
+g = 7
+f-value generated at 7 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 
+g = 8
+f-value generated at 8 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 
+g = 9
+f-value generated at 9 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 29, 28, 26, 29, 27, 26, 28, 28, 26, 28, 28, 27, 28, 29, 28, 29, 29, 29, 29, 28, 28, 28, 27, 26, 
+g = 10
+f-value generated at 10 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 29, 28, 26, 29, 27, 26, 28, 28, 26, 28, 28, 27, 28, 29, 28, 29, 29, 29, 29, 28, 28, 28, 27, 26, 28, 29, 28, 26, 29, 28, 28, 26, 27, 29, 29, 29, 28, 28, 
+g = 11
+f-value generated at 11 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 29, 28, 26, 29, 27, 26, 28, 28, 26, 28, 28, 27, 28, 29, 28, 29, 29, 29, 29, 28, 28, 28, 27, 26, 28, 29, 28, 26, 29, 28, 28, 26, 27, 29, 29, 29, 28, 28, 28, 29, 28, 28, 29, 29, 28, 
+g = 12
+f-value generated at 12 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 29, 28, 26, 29, 27, 26, 28, 28, 26, 28, 28, 27, 28, 29, 28, 29, 29, 29, 29, 28, 28, 28, 27, 26, 28, 29, 28, 26, 29, 28, 28, 26, 27, 29, 29, 29, 28, 28, 28, 29, 28, 28, 29, 29, 28, 28, 
+p = 12
+The f-Distribution for max_g of this iteration 12
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 29, 28, 26, 29, 27, 26, 28, 28, 26, 28, 28, 27, 28, 29, 28, 29, 29, 29, 29, 28, 28, 28, 27, 26, 28, 29, 28, 26, 29, 28, 28, 26, 27, 29, 29, 29, 28, 28, 28, 29, 28, 28, 29, 29, 28, 28, 
+****************************************************************
 counter k = 43
  _____________________________________________________________________
 |   # of nodes expanded by ss at level 29 is :     1879643                |
@@ -2591,508 +520,153 @@ depth = 30
 heuristic value of te initial node based on the heuristic vector = 19
 heuristic value of the initial node based on the node = 19
 heuristic value of the object Type  = 19
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 18
-succ_g = 1
-succ_h2 = 21
-succ_g = 1
-succ_h2 = 20
-succ_g = 1
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 18
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 20
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 21
-succ_g = 2
-succ_h2 = 19
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 17
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 18
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 19
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 3
-succ_h2 = 21
-succ_g = 3
-succ_h2 = 20
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 18
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 21
-succ_g = 4
-succ_h2 = 19
-succ_g = 4
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 4
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 5
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 17
-succ_g = 5
-succ_h2 = 20
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 19
-succ_g = 5
-succ_h2 = 17
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 5
-succ_h2 = 18
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 5
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 18
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 6
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
-succ_h2 = 21
-succ_g = 6
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 6
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 18
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
-succ_h2 = 20
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 19
-succ_g = 7
-succ_h2 = 17
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 7
-succ_h2 = 18
-succ_g = 7
-succ_h2 = 21
-succ_g = 7
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 7
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 18
-succ_g = 8
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 21
-succ_g = 8
-succ_h2 = 20
-succ_g = 8
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 18
-succ_g = 9
-succ_h2 = 17
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 20
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 17
-succ_g = 9
-succ_h2 = 20
-succ_g = 9
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 19
-succ_g = 9
-succ_h2 = 17
-succ_g = 9
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 9
-succ_h2 = 18
-succ_g = 9
-succ_h2 = 21
-succ_g = 9
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 9
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
-succ_h2 = 18
-succ_g = 10
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 18
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 19
-succ_g = 10
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 21
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 21
-succ_g = 10
-succ_h2 = 21
-succ_g = 10
-succ_h2 = 21
-succ_g = 10
-succ_h2 = 21
-succ_g = 10
-succ_h2 = 20
-succ_g = 10
-succ_h2 = 19
-succ_g = 11
-succ_h2 = 19
-succ_g = 11
-succ_h2 = 18
-succ_g = 11
-succ_h2 = 17
-succ_g = 11
-succ_h2 = 19
-succ_g = 11
-succ_h2 = 20
-succ_g = 11
-succ_h2 = 19
-succ_g = 11
-succ_h2 = 17
-succ_g = 11
-succ_h2 = 20
-succ_g = 11
-succ_h2 = 19
-succ_g = 11
-succ_h2 = 19
-succ_g = 11
-succ_h2 = 17
-succ_g = 11
-succ_h2 = 20
-succ_g = 12
-succ_h2 = 19
-succ_g = 12
-succ_h2 = 19
-succ_g = 12
-succ_h2 = 18
-succ_g = 12
-succ_h2 = 18
-succ_g = 12
-succ_h2 = 21
-succ_g = 12
-succ_h2 = 20
-succ_g = 12
-succ_h2 = 18
-succ_g = 12
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 21
-succ_g = 12
-succ_h2 = 19
-succ_g = 12
-succ_h2 = 18
-succ_g = 12
-succ_h2 = 20
-succ_g = 12
-succ_h2 = 20
-succ_g = 12
-succ_h2 = 18
-succ_g = 12
-succ_h2 = 20
-succ_g = 12
-succ_h2 = 19
-succ_g = 13
-succ_h2 = 19
-succ_g = 13
-succ_h2 = 18
-succ_g = 13
-succ_h2 = 17
-succ_g = 13
-succ_h2 = 20
-succ_g = 14
-succ_h2 = 19
-succ_g = 14
-succ_h2 = 19
-succ_g = 14
-succ_h2 = 18
-succ_g = 14
-succ_h2 = 18
-succ_g = 14
+v_f_value.size() = 195
+****************************************************************
+for depth = 30 we print the levels and the number of levels.
+g = 1
+f-value generated at 1 level.
+21, 19, 22, 21, 
+g = 2
+f-value generated at 2 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 
+g = 3
+f-value generated at 3 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 
+g = 4
+f-value generated at 4 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 
+g = 5
+f-value generated at 5 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 
+g = 6
+f-value generated at 6 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 
+g = 7
+f-value generated at 7 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 
+g = 8
+f-value generated at 8 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 
+g = 9
+f-value generated at 9 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 29, 28, 26, 29, 27, 26, 28, 28, 26, 28, 28, 27, 28, 29, 28, 29, 29, 29, 29, 28, 28, 28, 27, 26, 
+g = 10
+f-value generated at 10 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 29, 28, 26, 29, 27, 26, 28, 28, 26, 28, 28, 27, 28, 29, 28, 29, 29, 29, 29, 28, 28, 28, 27, 26, 28, 29, 28, 26, 29, 28, 28, 26, 30, 27, 30, 29, 30, 29, 29, 28, 28, 
+g = 11
+f-value generated at 11 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 29, 28, 26, 29, 27, 26, 28, 28, 26, 28, 28, 27, 28, 29, 28, 29, 29, 29, 29, 28, 28, 28, 27, 26, 28, 29, 28, 26, 29, 28, 28, 26, 30, 27, 30, 29, 30, 29, 29, 28, 28, 30, 28, 29, 28, 30, 30, 28, 30, 30, 29, 30, 30, 30, 30, 30, 29, 28, 
+g = 12
+f-value generated at 12 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 29, 28, 26, 29, 27, 26, 28, 28, 26, 28, 28, 27, 28, 29, 28, 29, 29, 29, 29, 28, 28, 28, 27, 26, 28, 29, 28, 26, 29, 28, 28, 26, 30, 27, 30, 29, 30, 29, 29, 28, 28, 30, 28, 29, 28, 30, 30, 28, 30, 30, 29, 30, 30, 30, 30, 30, 29, 28, 30, 30, 28, 30, 30, 28, 30, 30, 
+g = 13
+f-value generated at 13 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 29, 28, 26, 29, 27, 26, 28, 28, 26, 28, 28, 27, 28, 29, 28, 29, 29, 29, 29, 28, 28, 28, 27, 26, 28, 29, 28, 26, 29, 28, 28, 26, 30, 27, 30, 29, 30, 29, 29, 28, 28, 30, 28, 29, 28, 30, 30, 28, 30, 30, 29, 30, 30, 30, 30, 30, 29, 28, 30, 30, 28, 30, 30, 28, 30, 30, 30, 30, 30, 30, 
+g = 14
+f-value generated at 14 level.
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 29, 28, 26, 29, 27, 26, 28, 28, 26, 28, 28, 27, 28, 29, 28, 29, 29, 29, 29, 28, 28, 28, 27, 26, 28, 29, 28, 26, 29, 28, 28, 26, 30, 27, 30, 29, 30, 29, 29, 28, 28, 30, 28, 29, 28, 30, 30, 28, 30, 30, 29, 30, 30, 30, 30, 30, 29, 28, 30, 30, 28, 30, 30, 28, 30, 30, 30, 30, 30, 30, 
+p = 14
+The f-Distribution for max_g of this iteration 14
+21, 19, 22, 21, 23, 22, 20, 23, 21, 22, 23, 23, 22, 22, 22, 23, 23, 23, 23, 22, 22, 21, 20, 23, 24, 21, 23, 22, 23, 21, 24, 23, 24, 21, 24, 23, 24, 23, 23, 22, 22, 25, 24, 22, 25, 23, 22, 24, 24, 22, 24, 23, 24, 24, 25, 24, 24, 25, 25, 24, 25, 23, 24, 24, 24, 23, 22, 24, 25, 24, 22, 25, 24, 24, 22, 26, 23, 26, 25, 26, 25, 25, 24, 24, 27, 26, 24, 27, 25, 24, 26, 26, 24, 26, 26, 25, 26, 27, 26, 27, 27, 27, 27, 26, 26, 26, 25, 24, 26, 27, 26, 24, 27, 26, 26, 24, 28, 25, 28, 27, 28, 27, 27, 26, 26, 29, 28, 26, 29, 27, 26, 28, 28, 26, 28, 28, 27, 28, 29, 28, 29, 29, 29, 29, 28, 28, 28, 27, 26, 28, 29, 28, 26, 29, 28, 28, 26, 30, 27, 30, 29, 30, 29, 29, 28, 28, 30, 28, 29, 28, 30, 30, 28, 30, 30, 29, 30, 30, 30, 30, 30, 29, 28, 30, 30, 28, 30, 30, 28, 30, 30, 30, 30, 30, 30, 
+****************************************************************
 counter k = 48
  _____________________________________________________________________
 |   # of nodes expanded by ss at level 30 is :     24635433                |
  _____________________________________________________________________
+the directory was not created
+-----------------Print the f-Distribution of each level-----------------
+f = 19 q = 1
+f = 20 q = 2
+19 20 20 
+f = 19 q = 1
+f = 20 q = 2
+f = 21 q = 5
+21 19 21 20 21 21 20 21 
+f = 19 q = 1
+f = 20 q = 2
+f = 21 q = 6
+f = 22 q = 15
+21 19 22 21 22 20 21 22 22 22 22 22 22 21 20 21 22 21 22 22 22 22 22 22 
+f = 19 q = 1
+f = 20 q = 2
+f = 21 q = 7
+f = 22 q = 16
+f = 23 q = 18
+21 19 22 21 23 22 20 23 21 22 23 23 22 22 22 23 23 23 23 22 22 21 20 23 21 23 22 23 21 23 21 23 23 23 22 22 22 23 22 22 23 23 22 22 
+f = 19 q = 1
+f = 20 q = 2
+f = 21 q = 7
+f = 22 q = 17
+f = 23 q = 19
+f = 24 q = 27
+21 19 22 21 23 22 20 23 21 22 23 23 22 22 22 23 23 23 23 22 22 21 20 23 24 21 23 22 23 21 24 23 24 21 24 23 24 23 23 22 22 24 22 23 22 24 24 22 24 23 24 24 24 24 24 23 24 24 24 23 22 24 24 22 24 24 22 24 24 24 24 24 24 
+f = 19 q = 1
+f = 20 q = 2
+f = 21 q = 7
+f = 22 q = 17
+f = 23 q = 20
+f = 24 q = 28
+f = 25 q = 14
+21 19 22 21 23 22 20 23 21 22 23 23 22 22 22 23 23 23 23 22 22 21 20 23 24 21 23 22 23 21 24 23 24 21 24 23 24 23 23 22 22 25 24 22 25 23 22 24 24 22 24 23 24 24 25 24 24 25 25 24 25 23 24 24 24 23 22 24 25 24 22 25 24 24 22 23 25 25 25 24 24 24 25 24 24 25 25 24 24 
+f = 19 q = 1
+f = 20 q = 2
+f = 21 q = 7
+f = 22 q = 17
+f = 23 q = 20
+f = 24 q = 29
+f = 25 q = 14
+f = 26 q = 23
+21 19 22 21 23 22 20 23 21 22 23 23 22 22 22 23 23 23 23 22 22 21 20 23 24 21 23 22 23 21 24 23 24 21 24 23 24 23 23 22 22 25 24 22 25 23 22 24 24 22 24 23 24 24 25 24 24 25 25 24 25 23 24 24 24 23 22 24 25 24 22 25 24 24 22 26 23 26 25 26 25 25 24 24 26 24 25 24 26 26 24 26 26 25 26 26 26 26 26 25 24 26 26 24 26 26 24 26 26 26 26 26 26 
+f = 19 q = 1
+f = 20 q = 2
+f = 21 q = 7
+f = 22 q = 17
+f = 23 q = 20
+f = 24 q = 29
+f = 25 q = 15
+f = 26 q = 24
+f = 27 q = 15
+21 19 22 21 23 22 20 23 21 22 23 23 22 22 22 23 23 23 23 22 22 21 20 23 24 21 23 22 23 21 24 23 24 21 24 23 24 23 23 22 22 25 24 22 25 23 22 24 24 22 24 23 24 24 25 24 24 25 25 24 25 23 24 24 24 23 22 24 25 24 22 25 24 24 22 26 23 26 25 26 25 25 24 24 27 26 24 27 25 24 26 26 24 26 26 25 26 27 26 27 27 27 27 26 26 26 25 24 26 27 26 24 27 26 26 24 25 27 27 27 26 26 26 27 26 26 27 27 26 26 
+f = 19 q = 1
+f = 20 q = 2
+f = 21 q = 7
+f = 22 q = 17
+f = 23 q = 20
+f = 24 q = 29
+f = 25 q = 15
+f = 26 q = 25
+f = 27 q = 15
+f = 28 q = 23
+21 19 22 21 23 22 20 23 21 22 23 23 22 22 22 23 23 23 23 22 22 21 20 23 24 21 23 22 23 21 24 23 24 21 24 23 24 23 23 22 22 25 24 22 25 23 22 24 24 22 24 23 24 24 25 24 24 25 25 24 25 23 24 24 24 23 22 24 25 24 22 25 24 24 22 26 23 26 25 26 25 25 24 24 27 26 24 27 25 24 26 26 24 26 26 25 26 27 26 27 27 27 27 26 26 26 25 24 26 27 26 24 27 26 26 24 28 25 28 27 28 27 27 26 26 28 26 27 26 28 28 26 28 28 27 28 28 28 28 28 27 26 28 28 26 28 28 26 28 28 28 28 28 28 
+f = 19 q = 1
+f = 20 q = 2
+f = 21 q = 7
+f = 22 q = 17
+f = 23 q = 20
+f = 24 q = 29
+f = 25 q = 15
+f = 26 q = 25
+f = 27 q = 16
+f = 28 q = 24
+f = 29 q = 15
+21 19 22 21 23 22 20 23 21 22 23 23 22 22 22 23 23 23 23 22 22 21 20 23 24 21 23 22 23 21 24 23 24 21 24 23 24 23 23 22 22 25 24 22 25 23 22 24 24 22 24 23 24 24 25 24 24 25 25 24 25 23 24 24 24 23 22 24 25 24 22 25 24 24 22 26 23 26 25 26 25 25 24 24 27 26 24 27 25 24 26 26 24 26 26 25 26 27 26 27 27 27 27 26 26 26 25 24 26 27 26 24 27 26 26 24 28 25 28 27 28 27 27 26 26 29 28 26 29 27 26 28 28 26 28 28 27 28 29 28 29 29 29 29 28 28 28 27 26 28 29 28 26 29 28 28 26 27 29 29 29 28 28 28 29 28 28 29 29 28 28 
+f = 19 q = 1
+f = 20 q = 2
+f = 21 q = 7
+f = 22 q = 17
+f = 23 q = 20
+f = 24 q = 29
+f = 25 q = 15
+f = 26 q = 25
+f = 27 q = 16
+f = 28 q = 25
+f = 29 q = 15
+f = 30 q = 23
+21 19 22 21 23 22 20 23 21 22 23 23 22 22 22 23 23 23 23 22 22 21 20 23 24 21 23 22 23 21 24 23 24 21 24 23 24 23 23 22 22 25 24 22 25 23 22 24 24 22 24 23 24 24 25 24 24 25 25 24 25 23 24 24 24 23 22 24 25 24 22 25 24 24 22 26 23 26 25 26 25 25 24 24 27 26 24 27 25 24 26 26 24 26 26 25 26 27 26 27 27 27 27 26 26 26 25 24 26 27 26 24 27 26 26 24 28 25 28 27 28 27 27 26 26 29 28 26 29 27 26 28 28 26 28 28 27 28 29 28 29 29 29 29 28 28 28 27 26 28 29 28 26 29 28 28 26 30 27 30 29 30 29 29 28 28 30 28 29 28 30 30 28 30 30 29 30 30 30 30 30 29 28 30 30 28 30 30 28 30 30 30 30 30 30 
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
-Actual search time: 0,33s [t=1,47s]
+Actual search time: 0,17s [t=1,28s]
 Initial state h value: -2.
 Expanded 0 state(s).
 Reopened 0 state(s).
@@ -3106,10 +680,10 @@ Evaluated until last jump: 1 state(s).
 Generated until last jump: 0 state(s).
 Search space hash size: 59
 Search space hash bucket count: 193
-Search time: 1,45s
-Total time: 1,47s
-Peak memory: 31200 KB
-VmRSS memory: 1536 KB
-VmHWM memory: 18620 KB
+Search time: 1,28s
+Total time: 1,28s
+Peak memory: 55784 KB
+VmRSS memory: 1596 KB
+VmHWM memory: 34752 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

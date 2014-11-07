@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = ss(lmcut())
-argv[4] = XDG_VTNR=3
-argv[5] = XDG_SESSION_ID=c3
+argv[4] = XDG_VTNR=2
+argv[5] = XDG_SESSION_ID=c2
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -22,14 +22,14 @@ registered: ss
  ______________________________
 registered: lmcut
 parser is not dry_run
-g object = 0x930d830
+g object = 0xa206830
 ScalarEvaluator vector pointer []
-ScalarEvaluator vector pointer after add g = [0x930d830]
-ScalarEvaluator vector pointer after add eval = [0x930d830, 0x93087d8]
+ScalarEvaluator vector pointer after add g = [0xa206830]
+ScalarEvaluator vector pointer after add eval = [0xa206830, 0xa2017d8]
 subevaluators_.size:2
-new vector of ScalarEvaluator created = [0x930c3a8, 0x93087d8]
-OpenList vector of state_var_t objects = 0x930bae0
-engine = 0x9308868
+new vector of ScalarEvaluator created = [0xa2053a8, 0xa2017d8]
+OpenList vector of state_var_t objects = 0xa204ae0
+engine = 0xa201868
  ___________________________________
 |         calling initialize        |
  ___________________________________
@@ -50,9 +50,9 @@ f_evaluator populated
 conditional_effects_present = 0
 Conditional effects present = 0
 starting timings 
-initial state = 0x92e70e0
-node_counter = 253057
-node_gen_and_exp_cost = 3,9912e-06
+initial state = 0xa1e00e0
+node_counter = 475712
+node_gen_and_exp_cost = 2,10211e-06
 active heuristics size : 1
 # heristics = 1
 dead_end = 0
@@ -71,13 +71,15 @@ lastjump evaluated states = 0
 lastjump expanded states = 0
 lastjump reopened states = 0
 generated_states - lastjump_generated_states = 0
+expanded states - lastjump expanded states = 0
 fnivel: 0
 nodesGeneratedByLevel: 0
- time0: 1,02
+ time0: 1
 nodesGeneratedToTheLevel: 0
-f: 0 [1 evaluated, 0 expanded, t=1,02s,generated_states:,0,additional_states:,0,],random_comb_index:-1
-F_bound:,0,Peak memory=,30,3125
-Best heuristic value: -2 [g=0, 1 evaluated, 0 expanded, t=1,02s]
+f: 0 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
+gen_to_exp_ratio: -nan
+F_bound:,0,Peak memory=,54,3203
+Best heuristic value: -2 [g=0, 1 evaluated, 0 expanded, t=1s]
 heuristics[0]->get_value() = 0
 node.get_state_buffer() = 
 starting timing individual heuristics.
@@ -85,11 +87,11 @@ SAMPLING_PHASE = 0
 Current_RIDA_Phase = 0
 Initializing landmark cut heuristic...
 heur_name = ,regular_lm_cut
-h[,0,] is:,,regular_lm_cut,measured time cost: 8,06452e-05,h:14
+h[,0,] is:,,regular_lm_cut,measured time cost: 4,44265e-05,h:14
 memory before deleting databases: 
-VmRSS memory: 14660 KB
+VmRSS memory: 26764 KB
 memory after deleting all databases: 
-VmRSS memory: 14660 KB
+VmRSS memory: 26764 KB
 Remaining heuristics:
 remaining initial heur ,regular_lm_cut
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
@@ -118,27 +120,19 @@ depth = 14
 heuristic value of te initial node based on the heuristic vector = 14
 heuristic value of the initial node based on the node = 14
 heuristic value of the object Type  = 14
-succ_h2 = 13
-succ_g = 1
-succ_h2 = 14
-succ_g = 1
-succ_h2 = 13
-succ_g = 1
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 14
-succ_g = 1
-succ_h2 = 15
-succ_g = 1
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 13
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
+v_f_value.size() = 2
+****************************************************************
+for depth = 14 we print the levels and the number of levels.
+g = 1
+f-value generated at 1 level.
+14, 14, 
+g = 2
+f-value generated at 2 level.
+14, 14, 
+p = 2
+The f-Distribution for max_g of this iteration 2
+14, 14, 
+****************************************************************
 counter k = 2
  _____________________________________________________________________
 |   # of nodes expanded by ss at level 14 is :     3                |
@@ -147,46 +141,22 @@ depth = 15
 heuristic value of te initial node based on the heuristic vector = 14
 heuristic value of the initial node based on the node = 14
 heuristic value of the object Type  = 14
-succ_h2 = 13
-succ_g = 1
-succ_h2 = 14
-succ_g = 1
-succ_h2 = 13
-succ_g = 1
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 14
-succ_g = 1
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 15
-succ_g = 1
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 13
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 13
-succ_g = 3
-succ_h2 = 13
-succ_g = 3
-succ_h2 = 13
-succ_g = 3
-succ_h2 = 14
-succ_g = 3
+v_f_value.size() = 5
+****************************************************************
+for depth = 15 we print the levels and the number of levels.
+g = 1
+f-value generated at 1 level.
+14, 15, 14, 15, 
+g = 2
+f-value generated at 2 level.
+14, 15, 14, 15, 15, 
+g = 3
+f-value generated at 3 level.
+14, 15, 14, 15, 15, 
+p = 3
+The f-Distribution for max_g of this iteration 3
+14, 15, 14, 15, 15, 
+****************************************************************
 counter k = 4
  _____________________________________________________________________
 |   # of nodes expanded by ss at level 15 is :     7                |
@@ -195,86 +165,44 @@ depth = 16
 heuristic value of te initial node based on the heuristic vector = 14
 heuristic value of the initial node based on the node = 14
 heuristic value of the object Type  = 14
-succ_h2 = 13
-succ_g = 1
-succ_h2 = 14
-succ_g = 1
-succ_h2 = 13
-succ_g = 1
-succ_h2 = 14
-succ_g = 1
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 15
-succ_g = 1
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 13
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 15
-succ_g = 2
-succ_h2 = 15
-succ_g = 2
-succ_h2 = 15
-succ_g = 2
-succ_h2 = 15
-succ_g = 2
-succ_h2 = 14
-succ_g = 2
-succ_h2 = 13
-succ_g = 3
-succ_h2 = 13
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 13
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 14
-succ_g = 3
-succ_h2 = 13
-succ_g = 3
- (double)rand_100/100 is less than (double)w/(wa + w).
-succ_h2 = 13
-succ_g = 3
-succ_h2 = 14
-succ_g = 3
-succ_h2 = 15
-succ_g = 3
-succ_h2 = 14
-succ_g = 4
-succ_h2 = 13
-succ_g = 4
-succ_h2 = 14
-succ_g = 4
-succ_h2 = 14
-succ_g = 4
-succ_h2 = 14
-succ_g = 4
+v_f_value.size() = 21
+****************************************************************
+for depth = 16 we print the levels and the number of levels.
+g = 1
+f-value generated at 1 level.
+14, 15, 14, 15, 16, 
+g = 2
+f-value generated at 2 level.
+14, 15, 14, 15, 16, 16, 15, 16, 16, 16, 
+g = 3
+f-value generated at 3 level.
+14, 15, 14, 15, 16, 16, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 
+g = 4
+f-value generated at 4 level.
+14, 15, 14, 15, 16, 16, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 
+p = 4
+The f-Distribution for max_g of this iteration 4
+14, 15, 14, 15, 16, 16, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 
+****************************************************************
 counter k = 7
  _____________________________________________________________________
 |   # of nodes expanded by ss at level 16 is :     84                |
  _____________________________________________________________________
+the directory was not created
+-----------------Print the f-Distribution of each level-----------------
+f = 14 q = 2
+14 14 
+f = 14 q = 2
+f = 15 q = 3
+14 15 14 15 15 
+f = 14 q = 2
+f = 15 q = 3
+f = 16 q = 16
+14 15 14 15 16 16 15 16 16 16 16 16 16 16 16 16 16 16 16 16 16 
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
-Actual search time: 0s [t=1,13s]
+Actual search time: 0s [t=1,11s]
 Initial state h value: -2.
 Expanded 0 state(s).
 Reopened 0 state(s).
@@ -288,10 +216,10 @@ Evaluated until last jump: 1 state(s).
 Generated until last jump: 0 state(s).
 Search space hash size: 24
 Search space hash bucket count: 193
-Search time: 1,12s
-Total time: 1,13s
-Peak memory: 31040 KB
-VmRSS memory: 1376 KB
-VmHWM memory: 18544 KB
+Search time: 1,11s
+Total time: 1,11s
+Peak memory: 55624 KB
+VmRSS memory: 1384 KB
+VmHWM memory: 34736 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
