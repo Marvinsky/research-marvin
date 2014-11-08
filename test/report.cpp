@@ -80,7 +80,7 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 	std::vector<double> v_bf;
 	ifstream astar3;
 	astar3.open(astarText.c_str());
-	int r = 1;
+	int r = 0;
 	v_bf.push_back(0);
 	while (astar3>>amount) {
 		if (amount == branchingFactor) {
@@ -147,7 +147,7 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 	    }
 	}
 
-	for (int i = 0; i < totalniveles2; i++) {
+	for (int i = 0; i < totalniveles2 - 1; i++) {
 	    //outputFile2<<"\t"<<levels[i][0]<<"\t\t"<<levels[i][1]<<"\t\t"<<levels[i][2]<<"\t\t\t"<<levels[i][3]<<"\t\t"<<v_bf.at(i)<<"\n";
 	      outputFile2<<"\t"<<levels[i][0]<<"\t\t"<<v_bf.at(i)<<"\n";
 	}

@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = astar(blind())
-argv[4] = XDG_VTNR=3
-argv[5] = XDG_SESSION_ID=c3
+argv[4] = XDG_VTNR=1
+argv[5] = XDG_SESSION_ID=c1
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -31,21 +31,17 @@ got 2 heuristics
 f_evaluator populated
 # heuristics:1
 starting timings
-node gen_and_exp_cost:2.06306e-06
+node gen_and_exp_cost:1.76196e-06
 active heuristics size:1
 Initializing blind search heuristic...
 	Maxing_h[0]:0
 	Maxing_h[1]:1
+lastjumpt_f_value = -1
+f in report_f_value = 1
 generated states = 0
 evaluated states = 1
 expanded states = 0
 reopened states = 0
-lastjump generated states = 0
-lastjump evaluated states = 0
-lastjump expanded states = 0
-lastjump reopened states = 0
-generated_states - lastjump_generated_states = 0
-expanded states - lastjump expanded states = 0
 fnivel: 1
 nodesGeneratedByLevel: 0
  time0: 1
@@ -53,18 +49,20 @@ nodesGeneratedToTheLevel: 0
 f: 1 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
 last_jump:1,F_bound_to_print:0
 gen_to_exp_ratio: -nan
-F_bound:,1,Peak memory=,30.25
+F_bound:,1,Peak memory=,54.2539
 Best heuristic value: 1 [g=0, 1 evaluated, 0 expanded, t=1s]
 starting timing individual heuristics
-h[,0,] is:,,heur:blind,measured time cost:5.1846e-07,h:1
+h[,0,] is:,,heur:blind,measured time cost:5.36491e-07,h:1
 memory before deleting databases:
-VmRSS memory: 17216 KB
+VmRSS memory: 21124 KB
 memory after deleting all databases:
-VmRSS memory: 17216 KB
+VmRSS memory: 21124 KB
 Remaining heuristics:
 remaining initial heur,heur:blind
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes:1000
 search_timer() = 1.11
+lastjumpt_f_value = 1
+f in report_f_value = 2
 generated states = 5
 evaluated states = 6
 expanded states = 1
@@ -74,7 +72,7 @@ lastjump evaluated states = 1
 lastjump expanded states = 0
 lastjump reopened states = 0
 generated_states - lastjump_generated_states = 5
-expanded states - lastjump expanded states = 1
+expanded_states - lastjump_expanded_states = 1
 fnivel: 2
 nodesGeneratedByLevel: 5
  time0: 1.11
@@ -82,20 +80,16 @@ nodesGeneratedToTheLevel: 5
 f: 2 [6 evaluated, 1 expanded, t=1.11s,generated_states:,5,additional_states:,5,],random_comb_index:-1
 last_jump:2,F_bound_to_print:0
 gen_to_exp_ratio: 5
-F_bound:,2,Peak memory=,30.25
-bool_expr1 = 1
-bool_expr2 = 1
-nodes expanded in the last level: 0
-nodes generated in the current level: 5
-nodes generated int the last level: 0
-effectiveBranchingFactor: 0
+F_bound:,2,Peak memory=,54.2539
 F:2
-F_bound:2,Peak memory=30.25,nodes:6,Nodes mem_space:0.1875,F_boundary_Range:4
+F_bound:2,Peak memory=54.2539,nodes:6,Nodes mem_space:0.1875,F_boundary_Range:4
 F:2
 F_bound:2F_boundary_time:0.11,Hoff Potential Range:4,leaves_to_sample:4
 new F_bound:2chosen_Hoff_Roots_size:0 out of 4
-Memory after Sampling::30976
-Memory before starting new F-boundary:30976
+Memory after Sampling::55556
+Memory before starting new F-boundary:55556
+lastjumpt_f_value = 2
+f in report_f_value = 3
 generated states = 31
 evaluated states = 27
 expanded states = 6
@@ -105,7 +99,7 @@ lastjump evaluated states = 6
 lastjump expanded states = 1
 lastjump reopened states = 0
 generated_states - lastjump_generated_states = 26
-expanded states - lastjump expanded states = 5
+expanded_states - lastjump_expanded_states = 5
 fnivel: 3
 nodesGeneratedByLevel: 26
  time0: 1.11
@@ -113,20 +107,16 @@ nodesGeneratedToTheLevel: 31
 f: 3 [27 evaluated, 6 expanded, t=1.11s,generated_states:,31,additional_states:,26,],random_comb_index:-1
 last_jump:3,F_bound_to_print:0
 gen_to_exp_ratio: 5.2
-F_bound:,3,Peak memory=,30.25
-bool_expr1 = 1
-bool_expr2 = 1
-nodes expanded in the last level: 1
-nodes generated in the current level: 31
-nodes generated int the last level: 5
-effectiveBranchingFactor: 26
+F_bound:,3,Peak memory=,54.2539
 F:3
-F_bound:3,Peak memory=30.25,nodes:27,Nodes mem_space:0.84375,F_boundary_Range:20
+F_bound:3,Peak memory=54.2539,nodes:27,Nodes mem_space:0.84375,F_boundary_Range:20
 F:3
 F_bound:3F_boundary_time:-9.76866e-17,Hoff Potential Range:20,leaves_to_sample:20
 new F_bound:3chosen_Hoff_Roots_size:0 out of 20
-Memory after Sampling::30976
-Memory before starting new F-boundary:30976
+Memory after Sampling::55556
+Memory before starting new F-boundary:55556
+lastjumpt_f_value = 3
+f in report_f_value = 4
 generated states = 121
 evaluated states = 96
 expanded states = 27
@@ -136,7 +126,7 @@ lastjump evaluated states = 27
 lastjump expanded states = 6
 lastjump reopened states = 0
 generated_states - lastjump_generated_states = 90
-expanded states - lastjump expanded states = 21
+expanded_states - lastjump_expanded_states = 21
 fnivel: 4
 nodesGeneratedByLevel: 90
  time0: 1.11
@@ -144,20 +134,16 @@ nodesGeneratedToTheLevel: 121
 f: 4 [96 evaluated, 27 expanded, t=1.11s,generated_states:,121,additional_states:,90,],random_comb_index:-1
 last_jump:4,F_bound_to_print:0
 gen_to_exp_ratio: 4.28571
-F_bound:,4,Peak memory=,30.25
-bool_expr1 = 1
-bool_expr2 = 1
-nodes expanded in the last level: 5
-nodes generated in the current level: 121
-nodes generated int the last level: 31
-effectiveBranchingFactor: 18
+F_bound:,4,Peak memory=,54.2539
 F:4
-F_bound:4,Peak memory=30.25,nodes:96,Nodes mem_space:3,F_boundary_Range:68
+F_bound:4,Peak memory=54.2539,nodes:96,Nodes mem_space:3,F_boundary_Range:68
 F:4
 F_bound:4F_boundary_time:-9.76866e-17,Hoff Potential Range:68,leaves_to_sample:68
 new F_bound:4chosen_Hoff_Roots_size:0 out of 68
-Memory after Sampling::30976
-Memory before starting new F-boundary:30976
+Memory after Sampling::55556
+Memory before starting new F-boundary:55556
+lastjumpt_f_value = 4
+f in report_f_value = 5
 generated states = 435
 evaluated states = 269
 expanded states = 96
@@ -167,7 +153,7 @@ lastjump evaluated states = 96
 lastjump expanded states = 27
 lastjump reopened states = 0
 generated_states - lastjump_generated_states = 314
-expanded states - lastjump expanded states = 69
+expanded_states - lastjump_expanded_states = 69
 fnivel: 5
 nodesGeneratedByLevel: 314
  time0: 1.11
@@ -175,20 +161,16 @@ nodesGeneratedToTheLevel: 435
 f: 5 [269 evaluated, 96 expanded, t=1.11s,generated_states:,435,additional_states:,314,],random_comb_index:-1
 last_jump:5,F_bound_to_print:0
 gen_to_exp_ratio: 4.55072
-F_bound:,5,Peak memory=,30.25
-bool_expr1 = 1
-bool_expr2 = 1
-nodes expanded in the last level: 21
-nodes generated in the current level: 435
-nodes generated int the last level: 121
-effectiveBranchingFactor: 14.9524
+F_bound:,5,Peak memory=,54.2539
 F:5
-F_bound:5,Peak memory=30.25,nodes:269,Nodes mem_space:8.40625,F_boundary_Range:172
+F_bound:5,Peak memory=54.2539,nodes:269,Nodes mem_space:8.40625,F_boundary_Range:172
 F:5
 F_bound:5F_boundary_time:-9.76866e-17,Hoff Potential Range:172,leaves_to_sample:100
 new F_bound:5chosen_Hoff_Roots_size:0 out of 172
-Memory after Sampling::30976
-Memory before starting new F-boundary:30976
+Memory after Sampling::55556
+Memory before starting new F-boundary:55556
+lastjumpt_f_value = 5
+f in report_f_value = 6
 generated states = 1080
 evaluated states = 645
 expanded states = 269
@@ -198,7 +180,7 @@ lastjump evaluated states = 269
 lastjump expanded states = 96
 lastjump reopened states = 0
 generated_states - lastjump_generated_states = 645
-expanded states - lastjump expanded states = 173
+expanded_states - lastjump_expanded_states = 173
 fnivel: 6
 nodesGeneratedByLevel: 645
  time0: 1.11
@@ -206,20 +188,16 @@ nodesGeneratedToTheLevel: 1080
 f: 6 [645 evaluated, 269 expanded, t=1.11s,generated_states:,1080,additional_states:,645,],random_comb_index:-1
 last_jump:6,F_bound_to_print:0
 gen_to_exp_ratio: 3.72832
-F_bound:,6,Peak memory=,30.25
-bool_expr1 = 1
-bool_expr2 = 1
-nodes expanded in the last level: 69
-nodes generated in the current level: 1080
-nodes generated int the last level: 435
-effectiveBranchingFactor: 9.34783
+F_bound:,6,Peak memory=,54.2539
 F:6
-F_bound:6,Peak memory=30.25,nodes:645,Nodes mem_space:20.1562,F_boundary_Range:375
+F_bound:6,Peak memory=54.2539,nodes:645,Nodes mem_space:20.1562,F_boundary_Range:375
 F:6
 F_bound:6F_boundary_time:-9.76866e-17,Hoff Potential Range:375,leaves_to_sample:100
 new F_bound:6chosen_Hoff_Roots_size:0 out of 375
-Memory after Sampling::30976
-Memory before starting new F-boundary:30976
+Memory after Sampling::55556
+Memory before starting new F-boundary:55556
+lastjumpt_f_value = 6
+f in report_f_value = 7
 generated states = 2600
 evaluated states = 1369
 expanded states = 645
@@ -229,7 +207,7 @@ lastjump evaluated states = 645
 lastjump expanded states = 269
 lastjump reopened states = 0
 generated_states - lastjump_generated_states = 1520
-expanded states - lastjump expanded states = 376
+expanded_states - lastjump_expanded_states = 376
 fnivel: 7
 nodesGeneratedByLevel: 1520
  time0: 1.11
@@ -237,22 +215,18 @@ nodesGeneratedToTheLevel: 2600
 f: 7 [1369 evaluated, 645 expanded, t=1.11s,generated_states:,2600,additional_states:,1520,],random_comb_index:-1
 last_jump:7,F_bound_to_print:0
 gen_to_exp_ratio: 4.04255
-F_bound:,7,Peak memory=,30.25
-bool_expr1 = 1
-bool_expr2 = 1
-nodes expanded in the last level: 173
-nodes generated in the current level: 2600
-nodes generated int the last level: 1080
-effectiveBranchingFactor: 8.78613
+F_bound:,7,Peak memory=,54.2539
 F:7
-F_bound:7,Peak memory=30.25,nodes:1369,Nodes mem_space:42.7812,F_boundary_Range:723
+F_bound:7,Peak memory=54.2539,nodes:1369,Nodes mem_space:42.7812,F_boundary_Range:723
 F:7
 F_bound:7F_boundary_time:-9.76866e-17,Hoff Potential Range:723,leaves_to_sample:100
 new F_bound:7chosen_Hoff_Roots_size:0 out of 723
-Memory after Sampling::30976
-Memory before starting new F-boundary:30976
+Memory after Sampling::55556
+Memory before starting new F-boundary:55556
 search_timer() = 1.11
 search_timer() = 1.11
+lastjumpt_f_value = 7
+f in report_f_value = 8
 generated states = 4884
 evaluated states = 2365
 expanded states = 1369
@@ -262,7 +236,7 @@ lastjump evaluated states = 1369
 lastjump expanded states = 645
 lastjump reopened states = 0
 generated_states - lastjump_generated_states = 2284
-expanded states - lastjump expanded states = 724
+expanded_states - lastjump_expanded_states = 724
 fnivel: 8
 nodesGeneratedByLevel: 2284
  time0: 1.11
@@ -270,22 +244,18 @@ nodesGeneratedToTheLevel: 4884
 f: 8 [2365 evaluated, 1369 expanded, t=1.11s,generated_states:,4884,additional_states:,2284,],random_comb_index:-1
 last_jump:8,F_bound_to_print:0
 gen_to_exp_ratio: 3.1547
-F_bound:,8,Peak memory=,30.25
-bool_expr1 = 1
-bool_expr2 = 1
-nodes expanded in the last level: 376
-nodes generated in the current level: 4884
-nodes generated int the last level: 2600
-effectiveBranchingFactor: 6.07447
+F_bound:,8,Peak memory=,54.2539
 F:8
-F_bound:8,Peak memory=30.25,nodes:2365,Nodes mem_space:73.9062,F_boundary_Range:995
+F_bound:8,Peak memory=54.2539,nodes:2365,Nodes mem_space:73.9062,F_boundary_Range:995
 F:8
 F_bound:8F_boundary_time:-9.76866e-17,Hoff Potential Range:995,leaves_to_sample:100
 new F_bound:8chosen_Hoff_Roots_size:0 out of 995
-Memory after Sampling::30976
-Memory before starting new F-boundary:30976
+Memory after Sampling::55556
+Memory before starting new F-boundary:55556
 search_timer() = 1.11
-search_timer() = 1.11
+search_timer() = 1.12
+lastjumpt_f_value = 8
+f in report_f_value = 9
 generated states = 8316
 evaluated states = 3817
 expanded states = 2365
@@ -295,28 +265,24 @@ lastjump evaluated states = 2365
 lastjump expanded states = 1369
 lastjump reopened states = 0
 generated_states - lastjump_generated_states = 3432
-expanded states - lastjump expanded states = 996
+expanded_states - lastjump_expanded_states = 996
 fnivel: 9
 nodesGeneratedByLevel: 3432
- time0: 1.11
+ time0: 1.12
 nodesGeneratedToTheLevel: 8316
-f: 9 [3817 evaluated, 2365 expanded, t=1.11s,generated_states:,8316,additional_states:,3432,],random_comb_index:-1
+f: 9 [3817 evaluated, 2365 expanded, t=1.12s,generated_states:,8316,additional_states:,3432,],random_comb_index:-1
 last_jump:9,F_bound_to_print:0
 gen_to_exp_ratio: 3.44578
-F_bound:,9,Peak memory=,30.25
-bool_expr1 = 1
-bool_expr2 = 1
-nodes expanded in the last level: 724
-nodes generated in the current level: 8316
-nodes generated int the last level: 4884
-effectiveBranchingFactor: 4.74033
+F_bound:,9,Peak memory=,54.2539
 F:9
-F_bound:9,Peak memory=30.25,nodes:3817,Nodes mem_space:119.281,F_boundary_Range:1451
+F_bound:9,Peak memory=54.2539,nodes:3817,Nodes mem_space:119.281,F_boundary_Range:1451
 F:9
-F_bound:9F_boundary_time:-9.76866e-17,Hoff Potential Range:1451,leaves_to_sample:145
+F_bound:9F_boundary_time:0.01,Hoff Potential Range:1451,leaves_to_sample:145
 new F_bound:9chosen_Hoff_Roots_size:0 out of 1451
-Memory after Sampling::30976
-Memory before starting new F-boundary:30976
+Memory after Sampling::55556
+Memory before starting new F-boundary:55556
+lastjumpt_f_value = 9
+f in report_f_value = 10
 generated states = 11904
 evaluated states = 4921
 expanded states = 3817
@@ -326,7 +292,7 @@ lastjump evaluated states = 3817
 lastjump expanded states = 2365
 lastjump reopened states = 0
 generated_states - lastjump_generated_states = 3588
-expanded states - lastjump expanded states = 1452
+expanded_states - lastjump_expanded_states = 1452
 fnivel: 10
 nodesGeneratedByLevel: 3588
  time0: 1.12
@@ -334,20 +300,14 @@ nodesGeneratedToTheLevel: 11904
 f: 10 [4921 evaluated, 3817 expanded, t=1.12s,generated_states:,11904,additional_states:,3588,],random_comb_index:-1
 last_jump:10,F_bound_to_print:0
 gen_to_exp_ratio: 2.47107
-F_bound:,10,Peak memory=,30.25
-bool_expr1 = 1
-bool_expr2 = 1
-nodes expanded in the last level: 996
-nodes generated in the current level: 11904
-nodes generated int the last level: 8316
-effectiveBranchingFactor: 3.60241
+F_bound:,10,Peak memory=,54.2539
 F:10
-F_bound:10,Peak memory=30.25,nodes:4921,Nodes mem_space:153.781,F_boundary_Range:1103
+F_bound:10,Peak memory=54.2539,nodes:4921,Nodes mem_space:153.781,F_boundary_Range:1103
 F:10
-F_bound:10F_boundary_time:0.01,Hoff Potential Range:1103,leaves_to_sample:110
+F_bound:10F_boundary_time:-1.06577e-16,Hoff Potential Range:1103,leaves_to_sample:110
 new F_bound:10chosen_Hoff_Roots_size:0 out of 1103
-Memory after Sampling::30976
-Memory before starting new F-boundary:30976
+Memory after Sampling::55556
+Memory before starting new F-boundary:55556
 search_timer() = 1.12
 Best heuristic value: 0 [g=10, 5283 evaluated, 4071 expanded, t=1.12s]
  _________________________________
@@ -355,6 +315,15 @@ Best heuristic value: 0 [g=10, 5283 evaluated, 4071 expanded, t=1.12s]
  _________________________________
 overall generated nodes to last iter:,12616,search_time:,1.12,overall time:,1.12
 totalniveles: 10
+effectiveBranchingFactor: 5
+effectiveBranchingFactor: 26
+effectiveBranchingFactor: 18
+effectiveBranchingFactor: 14.9524
+effectiveBranchingFactor: 9.34783
+effectiveBranchingFactor: 8.78613
+effectiveBranchingFactor: 6.07447
+effectiveBranchingFactor: 4.74033
+effectiveBranchingFactor: 3.60241
  ____________________________________
 |   total numero of call step() = 4071   |
  ____________________________________
@@ -386,8 +355,8 @@ Search space hash size: 5283
 Search space hash bucket count: 6151
 Search time: 1.12s
 Total time: 1.12s
-Peak memory: 30976 KB
-VmRSS memory: 1476 KB
-VmHWM memory: 18276 KB
+Peak memory: 55556 KB
+VmRSS memory: 1500 KB
+VmHWM memory: 35240 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
