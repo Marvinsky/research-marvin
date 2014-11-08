@@ -1,0 +1,254 @@
+		/home/marvin/marvin/test/blind/problemas/blocks/resultado/probBLOCKS-6-1.pddl
+	totalniveles: 10
+	threshold: 20
+	level: 1
+		f: 2		q: 5
+	level: 2
+		f: 2		q: 5
+		f: 3		q: 6
+	level: 3
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+	level: 4
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+	level: 5
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+	level: 6
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+	level: 7
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+		f: 8		q: 5
+	level: 8
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+		f: 8		q: 5
+		f: 9		q: 6
+	level: 9
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+		f: 8		q: 5
+		f: 9		q: 6
+		f: 10		q: 5
+	level: 10
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+		f: 8		q: 5
+		f: 9		q: 6
+		f: 10		q: 5
+		f: 11		q: 6
+	level: 11
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+		f: 8		q: 5
+		f: 9		q: 6
+		f: 10		q: 5
+		f: 11		q: 6
+		f: 12		q: 5
+	level: 12
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+		f: 8		q: 5
+		f: 9		q: 6
+		f: 10		q: 5
+		f: 11		q: 6
+		f: 12		q: 5
+		f: 13		q: 6
+	level: 13
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+		f: 8		q: 5
+		f: 9		q: 6
+		f: 10		q: 5
+		f: 11		q: 6
+		f: 12		q: 5
+		f: 13		q: 6
+		f: 14		q: 5
+	level: 14
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+		f: 8		q: 5
+		f: 9		q: 6
+		f: 10		q: 5
+		f: 11		q: 6
+		f: 12		q: 5
+		f: 13		q: 6
+		f: 14		q: 5
+		f: 15		q: 6
+	level: 15
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+		f: 8		q: 5
+		f: 9		q: 6
+		f: 10		q: 5
+		f: 11		q: 6
+		f: 12		q: 5
+		f: 13		q: 6
+		f: 14		q: 5
+		f: 15		q: 6
+		f: 16		q: 5
+	level: 16
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+		f: 8		q: 5
+		f: 9		q: 6
+		f: 10		q: 5
+		f: 11		q: 6
+		f: 12		q: 5
+		f: 13		q: 6
+		f: 14		q: 5
+		f: 15		q: 6
+		f: 16		q: 5
+		f: 17		q: 6
+	level: 17
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+		f: 8		q: 5
+		f: 9		q: 6
+		f: 10		q: 5
+		f: 11		q: 6
+		f: 12		q: 5
+		f: 13		q: 6
+		f: 14		q: 5
+		f: 15		q: 6
+		f: 16		q: 5
+		f: 17		q: 6
+		f: 18		q: 5
+	level: 18
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+		f: 8		q: 5
+		f: 9		q: 6
+		f: 10		q: 5
+		f: 11		q: 6
+		f: 12		q: 5
+		f: 13		q: 6
+		f: 14		q: 5
+		f: 15		q: 6
+		f: 16		q: 5
+		f: 17		q: 6
+		f: 18		q: 5
+		f: 19		q: 6
+	level: 19
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+		f: 8		q: 5
+		f: 9		q: 6
+		f: 10		q: 5
+		f: 11		q: 6
+		f: 12		q: 5
+		f: 13		q: 6
+		f: 14		q: 5
+		f: 15		q: 6
+		f: 16		q: 5
+		f: 17		q: 6
+		f: 18		q: 5
+		f: 19		q: 6
+		f: 20		q: 5
+	level: 20
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+		f: 8		q: 5
+		f: 9		q: 6
+		f: 10		q: 5
+		f: 11		q: 6
+		f: 12		q: 5
+		f: 13		q: 6
+		f: 14		q: 5
+		f: 15		q: 6
+		f: 16		q: 5
+		f: 17		q: 6
+		f: 18		q: 5
+		f: 19		q: 6
+		f: 20		q: 5
+		f: 21		q: 6
+	level: 21
+		f: 2		q: 5
+		f: 3		q: 6
+		f: 4		q: 5
+		f: 5		q: 6
+		f: 6		q: 5
+		f: 7		q: 6
+		f: 8		q: 5
+		f: 9		q: 6
+		f: 10		q: 5
+		f: 11		q: 6
+		f: 12		q: 5
+		f: 13		q: 6
+		f: 14		q: 5
+		f: 15		q: 6
+		f: 16		q: 5
+		f: 17		q: 6
+		f: 18		q: 5
+		f: 19		q: 6
+		f: 20		q: 5
+		f: 21		q: 6
