@@ -22,14 +22,14 @@ registered: ss
  ______________________________
 registered: lmcut
 parser is not dry_run
-g object = 0x9cb2a98
+g object = 0xa5baa98
 ScalarEvaluator vector pointer []
-ScalarEvaluator vector pointer after add g = [0x9cb2a98]
-ScalarEvaluator vector pointer after add eval = [0x9cb2a98, 0x9cb2430]
+ScalarEvaluator vector pointer after add g = [0xa5baa98]
+ScalarEvaluator vector pointer after add eval = [0xa5baa98, 0xa5ba430]
 subevaluators_.size:2
-new vector of ScalarEvaluator created = [0x9cb5470, 0x9cb2430]
-OpenList vector of state_var_t objects = 0x9cb79c8
-engine = 0x9cb24c0
+new vector of ScalarEvaluator created = [0xa5bd470, 0xa5ba430]
+OpenList vector of state_var_t objects = 0xa5bf9c8
+engine = 0xa5ba4c0
  ___________________________________
 |         calling initialize        |
  ___________________________________
@@ -50,9 +50,9 @@ f_evaluator populated
 conditional_effects_present = 0
 Conditional effects present = 0
 starting timings 
-initial state = 0x9c6cee8
-node_counter = 330548
-node_gen_and_exp_cost = 3,02528e-06
+initial state = 0xa574ee8
+node_counter = 174739
+node_gen_and_exp_cost = 5,78005e-06
 active heuristics size : 1
 # heristics = 1
 dead_end = 0
@@ -60,39 +60,35 @@ heuristics[0]->get_heuristic() = -2
 max_h = 0
 is not dead end
 	Maxing_h[0]:0
-	Maxing_h[1]:164308008
-f_evaluator = 164308008
+	Maxing_h[1]:173777960
+f_evaluator = 173777960
+lastjumpt_f_value = -1
+f in report_f_value = 173777960
 generated states = 0
 evaluated states = 1
 expanded states = 0
 reopened states = 0
-lastjump generated states = 0
-lastjump evaluated states = 0
-lastjump expanded states = 0
-lastjump reopened states = 0
-generated_states - lastjump_generated_states = 0
-expanded states - lastjump expanded states = 0
-fnivel: 164308008
+fnivel: 173777960
 nodesGeneratedByLevel: 0
- time0: 1
+ time0: 1,03
 nodesGeneratedToTheLevel: 0
-f: 164308008 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
-last_jump:164308008,F_bound_to_print:0
+f: 173777960 [1 evaluated, 0 expanded, t=1,03s,generated_states:,0,additional_states:,0,],random_comb_index:-1
+last_jump:173777960,F_bound_to_print:0
 gen_to_exp_ratio: -nan
-F_bound:,164308008,Peak memory=,54,4766
-Best heuristic value: -2 [g=0, 1 evaluated, 0 expanded, t=1s]
-heuristics[0]->get_value() = 164308008
+F_bound:,173777960,Peak memory=,30,4766
+Best heuristic value: -2 [g=0, 1 evaluated, 0 expanded, t=1,03s]
+heuristics[0]->get_value() = 173777960
 node.get_state_buffer() = 
 starting timing individual heuristics.
 SAMPLING_PHASE = 0
 Current_RIDA_Phase = 0
 Initializing landmark cut heuristic...
 heur_name = ,regular_lm_cut
-h[,0,] is:,,regular_lm_cut,measured time cost: 0,000123596,h:19
+h[,0,] is:,,regular_lm_cut,measured time cost: 0,000278481,h:19
 memory before deleting databases: 
-VmRSS memory: 28480 KB
+VmRSS memory: 16420 KB
 memory after deleting all databases: 
-VmRSS memory: 28480 KB
+VmRSS memory: 16420 KB
 Remaining heuristics:
 remaining initial heur ,regular_lm_cut
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
@@ -129,797 +125,633 @@ time = Runtime(s)
 32
 33
 34
-List of levels: 
-depth = 19
 heuristic value of te initial node based on the heuristic vector = 19
 heuristic value of the initial node based on the node = 19
 heuristic value of the object Type  = 19
-v_f_value.size() = 0
+v_f_value.size() = 256
 ****************************************************************
-for depth = 19 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-
-p = 1
-The f-Distribution for max_g of this iteration 1
-
+total levels = 33
+The f-Distribution for max_g of this iteration 33
+20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 24, 24, 24, 25, 25, 26, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 26, 26, 26, 27, 27, 28, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 28, 28, 28, 29, 29, 30, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 30, 30, 30, 31, 31, 32, 31, 31, 32, 31, 32, 32, 32, 32, 32, 32, 33, 32, 32, 32, 33, 33, 34, 33, 33, 34, 33, 34, 34, 34, 34, 34, 34, 35, 34, 34, 34, 35, 35, 36, 35, 35, 36, 35, 36, 36, 36, 36, 36, 36, 37, 36, 36, 36, 37, 37, 38, 37, 37, 38, 37, 38, 38, 38, 38, 38, 38, 39, 38, 38, 38, 39, 39, 40, 39, 39, 40, 39, 40, 40, 40, 40, 40, 40, 41, 40, 40, 40, 41, 41, 42, 41, 41, 42, 41, 42, 42, 42, 42, 42, 42, 43, 42, 42, 42, 43, 43, 44, 43, 43, 44, 43, 44, 44, 44, 44, 44, 44, 45, 44, 44, 44, 45, 45, 46, 45, 45, 46, 45, 46, 46, 46, 46, 46, 46, 47, 46, 46, 46, 47, 47, 48, 47, 47, 48, 47, 48, 48, 48, 48, 48, 48, 49, 48, 48, 48, 49, 49, 50, 49, 49, 50, 49, 50, 50, 50, 50, 50, 50, 51, 50, 50, 50, 51, 51, 52, 51, 51, 52, 51, 52, 52, 52, 
 ****************************************************************
-counter k = 1
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 19 is :     1                |
- _____________________________________________________________________
-depth = 20
-heuristic value of te initial node based on the heuristic vector = 19
-heuristic value of the initial node based on the node = 19
-heuristic value of the object Type  = 19
-v_f_value.size() = 2
-****************************************************************
-for depth = 20 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-20, 20, 
-g = 2
-f-value generated at 2 level.
-20, 20, 
-p = 2
-The f-Distribution for max_g of this iteration 2
-20, 20, 
-****************************************************************
-counter k = 2
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 20 is :     3                |
- _____________________________________________________________________
-depth = 21
-heuristic value of te initial node based on the heuristic vector = 19
-heuristic value of the initial node based on the node = 19
-heuristic value of the object Type  = 19
-v_f_value.size() = 4
-****************************************************************
-for depth = 21 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-20, 20, 
-g = 2
-f-value generated at 2 level.
-20, 20, 21, 21, 
-g = 3
-f-value generated at 3 level.
-20, 20, 21, 21, 
-p = 3
-The f-Distribution for max_g of this iteration 3
-20, 20, 21, 21, 
-****************************************************************
-counter k = 3
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 21 is :     7                |
- _____________________________________________________________________
-depth = 22
-heuristic value of te initial node based on the heuristic vector = 19
-heuristic value of the initial node based on the node = 19
-heuristic value of the object Type  = 19
-v_f_value.size() = 8
-****************************************************************
-for depth = 22 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-20, 20, 
-g = 2
-f-value generated at 2 level.
-20, 20, 21, 22, 21, 
-g = 3
-f-value generated at 3 level.
-20, 20, 21, 22, 21, 22, 22, 
-g = 4
-f-value generated at 4 level.
-20, 20, 21, 22, 21, 22, 22, 22, 
-p = 4
-The f-Distribution for max_g of this iteration 4
-20, 20, 21, 22, 21, 22, 22, 22, 
-****************************************************************
-counter k = 5
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 22 is :     13                |
- _____________________________________________________________________
-depth = 23
-heuristic value of te initial node based on the heuristic vector = 19
-heuristic value of the initial node based on the node = 19
-heuristic value of the object Type  = 19
-v_f_value.size() = 11
-****************************************************************
-for depth = 23 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-20, 20, 
-g = 2
-f-value generated at 2 level.
-20, 20, 21, 22, 21, 
-g = 3
-f-value generated at 3 level.
-20, 20, 21, 22, 21, 22, 22, 
-g = 4
-f-value generated at 4 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 23, 
-g = 5
-f-value generated at 5 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 23, 
-p = 5
-The f-Distribution for max_g of this iteration 5
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 23, 
-****************************************************************
-counter k = 7
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 23 is :     23                |
- _____________________________________________________________________
-depth = 24
-heuristic value of te initial node based on the heuristic vector = 19
-heuristic value of the initial node based on the node = 19
-heuristic value of the object Type  = 19
-v_f_value.size() = 18
-****************************************************************
-for depth = 24 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-20, 20, 
-g = 2
-f-value generated at 2 level.
-20, 20, 21, 22, 21, 
-g = 3
-f-value generated at 3 level.
-20, 20, 21, 22, 21, 22, 22, 
-g = 4
-f-value generated at 4 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 
-g = 5
-f-value generated at 5 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 
-g = 6
-f-value generated at 6 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 
-p = 6
-The f-Distribution for max_g of this iteration 6
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 
-****************************************************************
-counter k = 9
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 24 is :     41                |
- _____________________________________________________________________
-depth = 25
-heuristic value of te initial node based on the heuristic vector = 19
-heuristic value of the initial node based on the node = 19
-heuristic value of the object Type  = 19
-v_f_value.size() = 21
-****************************************************************
-for depth = 25 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-20, 20, 
-g = 2
-f-value generated at 2 level.
-20, 20, 21, 22, 21, 
-g = 3
-f-value generated at 3 level.
-20, 20, 21, 22, 21, 22, 22, 
-g = 4
-f-value generated at 4 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 
-g = 5
-f-value generated at 5 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 
-g = 6
-f-value generated at 6 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 25, 
-g = 7
-f-value generated at 7 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 25, 
-p = 7
-The f-Distribution for max_g of this iteration 7
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 25, 
-****************************************************************
-counter k = 11
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 25 is :     71                |
- _____________________________________________________________________
-depth = 26
-heuristic value of te initial node based on the heuristic vector = 19
-heuristic value of the initial node based on the node = 19
-heuristic value of the object Type  = 19
-v_f_value.size() = 28
-****************************************************************
-for depth = 26 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-20, 20, 
-g = 2
-f-value generated at 2 level.
-20, 20, 21, 22, 21, 
-g = 3
-f-value generated at 3 level.
-20, 20, 21, 22, 21, 22, 22, 
-g = 4
-f-value generated at 4 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 
-g = 5
-f-value generated at 5 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 
-g = 6
-f-value generated at 6 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 
-g = 7
-f-value generated at 7 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 
-g = 8
-f-value generated at 8 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 
-p = 8
-The f-Distribution for max_g of this iteration 8
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 
-****************************************************************
-counter k = 13
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 26 is :     125                |
- _____________________________________________________________________
-depth = 27
-heuristic value of te initial node based on the heuristic vector = 19
-heuristic value of the initial node based on the node = 19
-heuristic value of the object Type  = 19
-v_f_value.size() = 31
-****************************************************************
-for depth = 27 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-20, 20, 
-g = 2
-f-value generated at 2 level.
-20, 20, 21, 22, 21, 
-g = 3
-f-value generated at 3 level.
-20, 20, 21, 22, 21, 22, 22, 
-g = 4
-f-value generated at 4 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 
-g = 5
-f-value generated at 5 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 
-g = 6
-f-value generated at 6 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 
-g = 7
-f-value generated at 7 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 
-g = 8
-f-value generated at 8 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 27, 
-g = 9
-f-value generated at 9 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 27, 
-p = 9
-The f-Distribution for max_g of this iteration 9
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 27, 
-****************************************************************
-counter k = 15
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 27 is :     215                |
- _____________________________________________________________________
-depth = 28
-heuristic value of te initial node based on the heuristic vector = 19
-heuristic value of the initial node based on the node = 19
-heuristic value of the object Type  = 19
-v_f_value.size() = 38
-****************************************************************
-for depth = 28 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-20, 20, 
-g = 2
-f-value generated at 2 level.
-20, 20, 21, 22, 21, 
-g = 3
-f-value generated at 3 level.
-20, 20, 21, 22, 21, 22, 22, 
-g = 4
-f-value generated at 4 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 
-g = 5
-f-value generated at 5 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 
-g = 6
-f-value generated at 6 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 
-g = 7
-f-value generated at 7 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 
-g = 8
-f-value generated at 8 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 
-g = 9
-f-value generated at 9 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 
-g = 10
-f-value generated at 10 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 
-p = 10
-The f-Distribution for max_g of this iteration 10
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 
-****************************************************************
-counter k = 17
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 28 is :     377                |
- _____________________________________________________________________
-depth = 29
-heuristic value of te initial node based on the heuristic vector = 19
-heuristic value of the initial node based on the node = 19
-heuristic value of the object Type  = 19
-v_f_value.size() = 41
-****************************************************************
-for depth = 29 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-20, 20, 
-g = 2
-f-value generated at 2 level.
-20, 20, 21, 22, 21, 
-g = 3
-f-value generated at 3 level.
-20, 20, 21, 22, 21, 22, 22, 
-g = 4
-f-value generated at 4 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 
-g = 5
-f-value generated at 5 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 
-g = 6
-f-value generated at 6 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 
-g = 7
-f-value generated at 7 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 
-g = 8
-f-value generated at 8 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 
-g = 9
-f-value generated at 9 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 
-g = 10
-f-value generated at 10 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 29, 
-g = 11
-f-value generated at 11 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 29, 
-p = 11
-The f-Distribution for max_g of this iteration 11
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 29, 
-****************************************************************
-counter k = 19
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 29 is :     647                |
- _____________________________________________________________________
-depth = 30
-heuristic value of te initial node based on the heuristic vector = 19
-heuristic value of the initial node based on the node = 19
-heuristic value of the object Type  = 19
-v_f_value.size() = 48
-****************************************************************
-for depth = 30 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-20, 20, 
-g = 2
-f-value generated at 2 level.
-20, 20, 21, 22, 21, 
-g = 3
-f-value generated at 3 level.
-20, 20, 21, 22, 21, 22, 22, 
-g = 4
-f-value generated at 4 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 
-g = 5
-f-value generated at 5 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 
-g = 6
-f-value generated at 6 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 
-g = 7
-f-value generated at 7 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 
-g = 8
-f-value generated at 8 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 
-g = 9
-f-value generated at 9 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 
-g = 10
-f-value generated at 10 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 
-g = 11
-f-value generated at 11 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 
-g = 12
-f-value generated at 12 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 
-p = 12
-The f-Distribution for max_g of this iteration 12
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 
-****************************************************************
-counter k = 21
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 30 is :     1133                |
- _____________________________________________________________________
-depth = 31
-heuristic value of te initial node based on the heuristic vector = 19
-heuristic value of the initial node based on the node = 19
-heuristic value of the object Type  = 19
-v_f_value.size() = 51
-****************************************************************
-for depth = 31 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-20, 20, 
-g = 2
-f-value generated at 2 level.
-20, 20, 21, 22, 21, 
-g = 3
-f-value generated at 3 level.
-20, 20, 21, 22, 21, 22, 22, 
-g = 4
-f-value generated at 4 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 
-g = 5
-f-value generated at 5 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 
-g = 6
-f-value generated at 6 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 
-g = 7
-f-value generated at 7 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 
-g = 8
-f-value generated at 8 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 
-g = 9
-f-value generated at 9 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 
-g = 10
-f-value generated at 10 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 
-g = 11
-f-value generated at 11 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 
-g = 12
-f-value generated at 12 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 31, 
-g = 13
-f-value generated at 13 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 31, 
-p = 13
-The f-Distribution for max_g of this iteration 13
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 31, 
-****************************************************************
-counter k = 23
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 31 is :     1943                |
- _____________________________________________________________________
-depth = 32
-heuristic value of te initial node based on the heuristic vector = 19
-heuristic value of the initial node based on the node = 19
-heuristic value of the object Type  = 19
-v_f_value.size() = 58
-****************************************************************
-for depth = 32 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-20, 20, 
-g = 2
-f-value generated at 2 level.
-20, 20, 21, 22, 21, 
-g = 3
-f-value generated at 3 level.
-20, 20, 21, 22, 21, 22, 22, 
-g = 4
-f-value generated at 4 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 
-g = 5
-f-value generated at 5 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 
-g = 6
-f-value generated at 6 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 
-g = 7
-f-value generated at 7 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 
-g = 8
-f-value generated at 8 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 
-g = 9
-f-value generated at 9 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 
-g = 10
-f-value generated at 10 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 
-g = 11
-f-value generated at 11 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 
-g = 12
-f-value generated at 12 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 32, 31, 
-g = 13
-f-value generated at 13 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 32, 31, 32, 32, 32, 32, 32, 
-g = 14
-f-value generated at 14 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 32, 31, 32, 32, 32, 32, 32, 32, 
-p = 14
-The f-Distribution for max_g of this iteration 14
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 32, 31, 32, 32, 32, 32, 32, 32, 
-****************************************************************
-counter k = 25
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 32 is :     3401                |
- _____________________________________________________________________
-depth = 33
-heuristic value of te initial node based on the heuristic vector = 19
-heuristic value of the initial node based on the node = 19
-heuristic value of the object Type  = 19
-v_f_value.size() = 61
-****************************************************************
-for depth = 33 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-20, 20, 
-g = 2
-f-value generated at 2 level.
-20, 20, 21, 22, 21, 
-g = 3
-f-value generated at 3 level.
-20, 20, 21, 22, 21, 22, 22, 
-g = 4
-f-value generated at 4 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 
-g = 5
-f-value generated at 5 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 
-g = 6
-f-value generated at 6 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 
-g = 7
-f-value generated at 7 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 
-g = 8
-f-value generated at 8 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 
-g = 9
-f-value generated at 9 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 
-g = 10
-f-value generated at 10 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 
-g = 11
-f-value generated at 11 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 
-g = 12
-f-value generated at 12 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 32, 31, 
-g = 13
-f-value generated at 13 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 32, 31, 32, 32, 32, 32, 32, 
-g = 14
-f-value generated at 14 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 32, 31, 32, 32, 32, 32, 32, 32, 33, 33, 33, 
-g = 15
-f-value generated at 15 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 32, 31, 32, 32, 32, 32, 32, 32, 33, 33, 33, 
-p = 15
-The f-Distribution for max_g of this iteration 15
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 32, 31, 32, 32, 32, 32, 32, 32, 33, 33, 33, 
-****************************************************************
-counter k = 27
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 33 is :     5831                |
- _____________________________________________________________________
-depth = 34
-heuristic value of te initial node based on the heuristic vector = 19
-heuristic value of the initial node based on the node = 19
-heuristic value of the object Type  = 19
-v_f_value.size() = 68
-****************************************************************
-for depth = 34 we print the levels and the number of levels.
-g = 1
-f-value generated at 1 level.
-20, 20, 
-g = 2
-f-value generated at 2 level.
-20, 20, 21, 22, 21, 
-g = 3
-f-value generated at 3 level.
-20, 20, 21, 22, 21, 22, 22, 
-g = 4
-f-value generated at 4 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 
-g = 5
-f-value generated at 5 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 
-g = 6
-f-value generated at 6 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 
-g = 7
-f-value generated at 7 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 
-g = 8
-f-value generated at 8 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 
-g = 9
-f-value generated at 9 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 
-g = 10
-f-value generated at 10 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 
-g = 11
-f-value generated at 11 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 
-g = 12
-f-value generated at 12 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 32, 31, 
-g = 13
-f-value generated at 13 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 32, 31, 32, 32, 32, 32, 32, 
-g = 14
-f-value generated at 14 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 32, 31, 32, 32, 32, 32, 32, 32, 33, 33, 34, 33, 
-g = 15
-f-value generated at 15 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 32, 31, 32, 32, 32, 32, 32, 32, 33, 33, 34, 33, 34, 34, 34, 34, 34, 
-g = 16
-f-value generated at 16 level.
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 32, 31, 32, 32, 32, 32, 32, 32, 33, 33, 34, 33, 34, 34, 34, 34, 34, 34, 
-p = 16
-The f-Distribution for max_g of this iteration 16
-20, 20, 21, 22, 21, 22, 22, 22, 23, 23, 24, 23, 24, 24, 24, 24, 24, 24, 25, 25, 26, 25, 26, 26, 26, 26, 26, 26, 27, 27, 28, 27, 28, 28, 28, 28, 28, 28, 29, 29, 30, 29, 30, 30, 30, 30, 30, 30, 31, 31, 32, 31, 32, 32, 32, 32, 32, 32, 33, 33, 34, 33, 34, 34, 34, 34, 34, 34, 
-****************************************************************
-counter k = 29
- _____________________________________________________________________
-|   # of nodes expanded by ss at level 34 is :     10205                |
- _____________________________________________________________________
+counter in te while k = 109
+Number of expanded nodes with threshold 32 = 1125528375
 the directory was not created
 -----------------Print the f-Distribution of each level-----------------
-
+g = 1
 f = 20 q = 2
-20 20 
-f = 20 q = 2
-f = 21 q = 2
-20 20 21 21 
+g = 2
 f = 20 q = 2
 f = 21 q = 2
-f = 22 q = 4
-20 20 21 22 21 22 22 22 
+f = 22 q = 1
+g = 3
 f = 20 q = 2
 f = 21 q = 2
-f = 22 q = 4
-f = 23 q = 3
-20 20 21 22 21 22 22 22 23 23 23 
+f = 22 q = 3
+g = 4
 f = 20 q = 2
 f = 21 q = 2
 f = 22 q = 4
 f = 23 q = 3
+f = 24 q = 1
+g = 5
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
 f = 24 q = 7
-20 20 21 22 21 22 22 22 23 23 24 23 24 24 24 24 24 24 
+g = 6
 f = 20 q = 2
 f = 21 q = 2
 f = 22 q = 4
-f = 23 q = 3
-f = 24 q = 7
-f = 25 q = 3
-20 20 21 22 21 22 22 22 23 23 24 23 24 24 24 24 24 24 25 25 25 
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 4
+f = 26 q = 1
+g = 7
 f = 20 q = 2
 f = 21 q = 2
 f = 22 q = 4
-f = 23 q = 3
-f = 24 q = 7
-f = 25 q = 3
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
 f = 26 q = 7
-20 20 21 22 21 22 22 22 23 23 24 23 24 24 24 24 24 24 25 25 26 25 26 26 26 26 26 26 
+g = 8
 f = 20 q = 2
 f = 21 q = 2
 f = 22 q = 4
-f = 23 q = 3
-f = 24 q = 7
-f = 25 q = 3
-f = 26 q = 7
-f = 27 q = 3
-20 20 21 22 21 22 22 22 23 23 24 23 24 24 24 24 24 24 25 25 26 25 26 26 26 26 26 26 27 27 27 
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 4
+f = 28 q = 1
+g = 9
 f = 20 q = 2
 f = 21 q = 2
 f = 22 q = 4
-f = 23 q = 3
-f = 24 q = 7
-f = 25 q = 3
-f = 26 q = 7
-f = 27 q = 3
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
 f = 28 q = 7
-20 20 21 22 21 22 22 22 23 23 24 23 24 24 24 24 24 24 25 25 26 25 26 26 26 26 26 26 27 27 28 27 28 28 28 28 28 28 
+g = 10
 f = 20 q = 2
 f = 21 q = 2
 f = 22 q = 4
-f = 23 q = 3
-f = 24 q = 7
-f = 25 q = 3
-f = 26 q = 7
-f = 27 q = 3
-f = 28 q = 7
-f = 29 q = 3
-20 20 21 22 21 22 22 22 23 23 24 23 24 24 24 24 24 24 25 25 26 25 26 26 26 26 26 26 27 27 28 27 28 28 28 28 28 28 29 29 29 
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 4
+f = 30 q = 1
+g = 11
 f = 20 q = 2
 f = 21 q = 2
 f = 22 q = 4
-f = 23 q = 3
-f = 24 q = 7
-f = 25 q = 3
-f = 26 q = 7
-f = 27 q = 3
-f = 28 q = 7
-f = 29 q = 3
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
 f = 30 q = 7
-20 20 21 22 21 22 22 22 23 23 24 23 24 24 24 24 24 24 25 25 26 25 26 26 26 26 26 26 27 27 28 27 28 28 28 28 28 28 29 29 30 29 30 30 30 30 30 30 
+g = 12
 f = 20 q = 2
 f = 21 q = 2
 f = 22 q = 4
-f = 23 q = 3
-f = 24 q = 7
-f = 25 q = 3
-f = 26 q = 7
-f = 27 q = 3
-f = 28 q = 7
-f = 29 q = 3
-f = 30 q = 7
-f = 31 q = 3
-20 20 21 22 21 22 22 22 23 23 24 23 24 24 24 24 24 24 25 25 26 25 26 26 26 26 26 26 27 27 28 27 28 28 28 28 28 28 29 29 30 29 30 30 30 30 30 30 31 31 31 
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 4
+f = 32 q = 1
+g = 13
 f = 20 q = 2
 f = 21 q = 2
 f = 22 q = 4
-f = 23 q = 3
-f = 24 q = 7
-f = 25 q = 3
-f = 26 q = 7
-f = 27 q = 3
-f = 28 q = 7
-f = 29 q = 3
-f = 30 q = 7
-f = 31 q = 3
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
 f = 32 q = 7
-20 20 21 22 21 22 22 22 23 23 24 23 24 24 24 24 24 24 25 25 26 25 26 26 26 26 26 26 27 27 28 27 28 28 28 28 28 28 29 29 30 29 30 30 30 30 30 30 31 31 32 31 32 32 32 32 32 32 
+g = 14
 f = 20 q = 2
 f = 21 q = 2
 f = 22 q = 4
-f = 23 q = 3
-f = 24 q = 7
-f = 25 q = 3
-f = 26 q = 7
-f = 27 q = 3
-f = 28 q = 7
-f = 29 q = 3
-f = 30 q = 7
-f = 31 q = 3
-f = 32 q = 7
-f = 33 q = 3
-20 20 21 22 21 22 22 22 23 23 24 23 24 24 24 24 24 24 25 25 26 25 26 26 26 26 26 26 27 27 28 27 28 28 28 28 28 28 29 29 30 29 30 30 30 30 30 30 31 31 32 31 32 32 32 32 32 32 33 33 33 
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 4
+f = 34 q = 1
+g = 15
 f = 20 q = 2
 f = 21 q = 2
 f = 22 q = 4
-f = 23 q = 3
-f = 24 q = 7
-f = 25 q = 3
-f = 26 q = 7
-f = 27 q = 3
-f = 28 q = 7
-f = 29 q = 3
-f = 30 q = 7
-f = 31 q = 3
-f = 32 q = 7
-f = 33 q = 3
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
 f = 34 q = 7
-20 20 21 22 21 22 22 22 23 23 24 23 24 24 24 24 24 24 25 25 26 25 26 26 26 26 26 26 27 27 28 27 28 28 28 28 28 28 29 29 30 29 30 30 30 30 30 30 31 31 32 31 32 32 32 32 32 32 33 33 34 33 34 34 34 34 34 34 
+g = 16
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 4
+f = 36 q = 1
+g = 17
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 7
+g = 18
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 4
+f = 38 q = 1
+g = 19
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 6
+f = 38 q = 7
+g = 20
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 6
+f = 38 q = 11
+f = 39 q = 4
+f = 40 q = 1
+g = 21
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 6
+f = 38 q = 11
+f = 39 q = 6
+f = 40 q = 7
+g = 22
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 6
+f = 38 q = 11
+f = 39 q = 6
+f = 40 q = 11
+f = 41 q = 4
+f = 42 q = 1
+g = 23
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 6
+f = 38 q = 11
+f = 39 q = 6
+f = 40 q = 11
+f = 41 q = 6
+f = 42 q = 7
+g = 24
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 6
+f = 38 q = 11
+f = 39 q = 6
+f = 40 q = 11
+f = 41 q = 6
+f = 42 q = 11
+f = 43 q = 4
+f = 44 q = 1
+g = 25
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 6
+f = 38 q = 11
+f = 39 q = 6
+f = 40 q = 11
+f = 41 q = 6
+f = 42 q = 11
+f = 43 q = 6
+f = 44 q = 7
+g = 26
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 6
+f = 38 q = 11
+f = 39 q = 6
+f = 40 q = 11
+f = 41 q = 6
+f = 42 q = 11
+f = 43 q = 6
+f = 44 q = 11
+f = 45 q = 4
+f = 46 q = 1
+g = 27
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 6
+f = 38 q = 11
+f = 39 q = 6
+f = 40 q = 11
+f = 41 q = 6
+f = 42 q = 11
+f = 43 q = 6
+f = 44 q = 11
+f = 45 q = 6
+f = 46 q = 7
+g = 28
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 6
+f = 38 q = 11
+f = 39 q = 6
+f = 40 q = 11
+f = 41 q = 6
+f = 42 q = 11
+f = 43 q = 6
+f = 44 q = 11
+f = 45 q = 6
+f = 46 q = 11
+f = 47 q = 4
+f = 48 q = 1
+g = 29
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 6
+f = 38 q = 11
+f = 39 q = 6
+f = 40 q = 11
+f = 41 q = 6
+f = 42 q = 11
+f = 43 q = 6
+f = 44 q = 11
+f = 45 q = 6
+f = 46 q = 11
+f = 47 q = 6
+f = 48 q = 7
+g = 30
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 6
+f = 38 q = 11
+f = 39 q = 6
+f = 40 q = 11
+f = 41 q = 6
+f = 42 q = 11
+f = 43 q = 6
+f = 44 q = 11
+f = 45 q = 6
+f = 46 q = 11
+f = 47 q = 6
+f = 48 q = 11
+f = 49 q = 4
+f = 50 q = 1
+g = 31
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 6
+f = 38 q = 11
+f = 39 q = 6
+f = 40 q = 11
+f = 41 q = 6
+f = 42 q = 11
+f = 43 q = 6
+f = 44 q = 11
+f = 45 q = 6
+f = 46 q = 11
+f = 47 q = 6
+f = 48 q = 11
+f = 49 q = 6
+f = 50 q = 7
+g = 32
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 6
+f = 38 q = 11
+f = 39 q = 6
+f = 40 q = 11
+f = 41 q = 6
+f = 42 q = 11
+f = 43 q = 6
+f = 44 q = 11
+f = 45 q = 6
+f = 46 q = 11
+f = 47 q = 6
+f = 48 q = 11
+f = 49 q = 6
+f = 50 q = 11
+f = 51 q = 4
+f = 52 q = 1
+g = 33
+f = 20 q = 2
+f = 21 q = 2
+f = 22 q = 4
+f = 23 q = 5
+f = 24 q = 11
+f = 25 q = 6
+f = 26 q = 11
+f = 27 q = 6
+f = 28 q = 11
+f = 29 q = 6
+f = 30 q = 11
+f = 31 q = 6
+f = 32 q = 11
+f = 33 q = 6
+f = 34 q = 11
+f = 35 q = 6
+f = 36 q = 11
+f = 37 q = 6
+f = 38 q = 11
+f = 39 q = 6
+f = 40 q = 11
+f = 41 q = 6
+f = 42 q = 11
+f = 43 q = 6
+f = 44 q = 11
+f = 45 q = 6
+f = 46 q = 11
+f = 47 q = 6
+f = 48 q = 11
+f = 49 q = 6
+f = 50 q = 11
+f = 51 q = 6
+f = 52 q = 5
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
-Actual search time: 0,07s [t=1,18s]
+Actual search time: 0,08s [t=1,22s]
 Initial state h value: -2.
 Expanded 0 state(s).
 Reopened 0 state(s).
@@ -933,10 +765,10 @@ Evaluated until last jump: 1 state(s).
 Generated until last jump: 0 state(s).
 Search space hash size: 8
 Search space hash bucket count: 193
-Search time: 1,18s
-Total time: 1,18s
-Peak memory: 55784 KB
-VmRSS memory: 1596 KB
-VmHWM memory: 34404 KB
+Search time: 1,2s
+Total time: 1,22s
+Peak memory: 31208 KB
+VmRSS memory: 1568 KB
+VmHWM memory: 18256 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
