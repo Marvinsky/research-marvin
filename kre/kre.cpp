@@ -172,16 +172,33 @@ void create_kre_report(string Ni, string bf, string fdist) {
 	}
 
 
-
-
-
 	cout<<"-------------------F distribution------------"<<endl;
 	cout<<"fdist = "<<fdist<<endl;
+        int totallevels3;
+        int threshold;
+
         ifstream ffdist(fdist.c_str());
-  
+        ffdist>>str;
+        ffdist>>str;
+        ffdist>>totallevels3;
+        ffdist>>str;
+        ffdist>>threshold;
+        cout<<"totalniveles = "<<totallevels3<<endl;
+        cout<<"threshold = "<<threshold<<endl;        
 
-
-
+	//We do not know how to implement f-dist
+        vector<double> v_N;
+        double sum = 0;
+        for (int i = 0; i < v_Ni.size() - 1; i++) {
+	    int ni = v_Ni.at(i);
+	    for (int j = 0; j < v_bf.size(); j ++) {
+		double bf = v_bf.at(j);
+                if (i == j) {
+                   double N = ni*bf;
+		   cout<<N<<endl; 
+		}
+	    }
+	}
 }
 
 
