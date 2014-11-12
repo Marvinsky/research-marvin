@@ -1,3 +1,6 @@
 blocks
 domain.pddl
 20
+gripper
+domain.pddl
+20
