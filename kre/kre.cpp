@@ -12,6 +12,7 @@
 #include <dirent.h>
 #include <vector>
 
+#include <map>
 
 using namespace std;
 
@@ -23,11 +24,21 @@ protected:
 	}
 };
 
-void create_kre_report(string Ni, string bf, string fdist, string heuristic, string pasta, string fileName) {
+
+double returnPred(vector<double> v) {
+	double sum = 0.0;
+	for (int i = 0; i < v.size(); i++) {
+	    sum = sum + v.at(i);
+	}
+	return sum;
+}
+
+
+void create_kre_report(string Ni, string bf, string fdist, string astar, string heuristic, string pasta, string fileName) {
       
-	std::cout.imbue(std::locale(std::cout.getloc(), new punct_facet1<char, ','>));
-        cout.setf(ios::fixed | ios::showpoint);
-        cout.precision(3);
+	//std::cout.imbue(std::locale(std::cout.getloc(), new punct_facet1<char, ','>));
+        //cout.setf(ios::fixed | ios::showpoint);
+        //cout.precision(3);
 
 	
 	string str;
@@ -58,11 +69,8 @@ void create_kre_report(string Ni, string bf, string fdist, string heuristic, str
 	    v_Ni.insert(v_Ni.begin() + i, levels[i][1]);
 	}
 
-	//for (int i = 0; i < v_Ni.size(); i++) {
-	//    cout<<v_Ni.at(i)<<endl;
-	//}
         fNi.close(); 
-        
+        /*
         cout<<"---------------------Branching factor--------------------"<<endl;
        
 	cout<<"bf = "<<bf<<endl;
@@ -91,7 +99,8 @@ void create_kre_report(string Ni, string bf, string fdist, string heuristic, str
 	}
  
         fbf.close();        
-
+	*/
+	/*
 	cout<<"-------------------F distribution------------"<<endl;
         int totallevels3;
         int threshold;
@@ -120,10 +129,36 @@ void create_kre_report(string Ni, string bf, string fdist, string heuristic, str
 	for (int i = 0; i < threshold; i++) {
 	    v_fdist.insert(v_fdist.begin() + i, levels3[i][1]);
 	}
+	*/
+	cout<<"-------------------Call astar + consistent heuristic------------------"<<endl;
+	int totallevels4;
+	ifstream fastar(astar.c_str());
+	fastar>>str; //title
+	fastar>>str;
+	fastar>>totallevels4;
+	fastar>>str; //f
+        fastar>>str; //nodes by level
+	fastar>>str; //runtime
+	fastar>>str; //nodes to the level
+	float** levels4 = new float*[totallevels4];
+	for (int i = 0; i < totallevels4; i++) {
+	    levels4[i] = new float[4];
+	}
+
+	vector<float> v_astar_f;
+        for (int i = 0; i < totallevels4; i++) {
+	    for (int j = 0; j < 4; j++) {
+		fastar>>levels4[i][j];
+	    }
+	}
+
+	for (int i = 0; i < totallevels4; i++) {
+	    v_astar_f.insert(v_astar_f.begin() + i, levels4[i][0]);
+	}
 
 	string output;
 
-        output = fileName;    
+	output = fileName;    
         output =  pasta+"/"+output;
 	output = "kre/"+heuristic+"/report/"+output;
 	output = "marvin/" + output;
@@ -135,10 +170,95 @@ void create_kre_report(string Ni, string bf, string fdist, string heuristic, str
 	outputFile.open(output.c_str(), ios::out);
 	
 	outputFile<<"\t\t"<<output.c_str()<<"\n\n";
-	outputFile<<"\tlevel\tni\tbf\t\tpercentage\t\tPred1\t\tPred2\n"; 
 
-	//We do not know how to implement f-dist
-        vector<float> v_N;
+	//outputFile<<"\td\t\t#nodes\t\tpred\n\n";
+	 
+
+	//We do know how to implement f-dist
+
+	for (int i = 0; i < v_astar_f.size(); i++) {
+            int threshold = v_astar_f.at(i);
+            cout<<"threshold = "<<threshold<<endl;
+	    outputFile<<threshold<<"\n\n";
+            double pred = 0.0;
+            vector<double> v_pred;
+            for (int j = 0; j < threshold; j++) {
+                int g = j;
+                int ni = v_Ni.at(j);
+		//look for the g in v_fdist
+		ifstream ffdist;
+                ffdist.open(fdist.c_str(), ios::out);
+                string level;
+		stringstream pivot;
+                string amount;
+
+		level += "g:";
+                pivot<<g+1;
+                level += pivot.str();
+                //level += string(":");
+                cout<<level.c_str()<<endl; 
+	        
+                while (ffdist>>amount) {
+ 			
+			if (amount == level.c_str()) {
+                               	outputFile<<level.c_str()<<"\n";
+                                int size;
+                                map<int, int> m;
+				int sumq = 0;
+				ffdist>>amount;
+                                ffdist>>amount;
+                                size = atoi(amount.c_str());
+                                cout<<"size = "<<size<<endl;
+                                for (int p1 = 0; p1 < size; p1++) {
+				    int f = 0;
+                                    int q = 0;
+				    ffdist>>amount;
+                                    ffdist>>amount;
+                                    f = atoi(amount.c_str());
+                                    ffdist>>amount;
+                                    ffdist>>amount;
+                                    q = atoi(amount.c_str());
+                                    sumq = sumq + q;
+                                    cout<<"f = "<<f<<" q = "<<q<<endl;
+                                    outputFile<<"f = "<<f<<" q = "<<q<<"\n";
+                                    m.insert(pair<int, int>(f, q));
+                                    
+				}
+				//Calculate the percentage
+                                int sumR = 0;	
+				for (map<int, int>::iterator it = m.begin(); it != m.end(); it++) {
+				    int f = it->first;
+				    
+                                    if (f <= threshold) {
+				       sumR = sumR + it->second;
+				    }
+				} 
+				outputFile<<"total nodes = "<<sumq<<"\n";
+				outputFile<<"nodes with f less than or equal to"<<threshold<<" = "<<sumR<<"\n";
+
+
+
+                                double percentage = (double)sumR/(double)sumq;
+                                
+				outputFile<<"percentage = "<<percentage<<"\n";
+				cout<<"percentage = "<<percentage<<" ";
+			 	double kre_i = ni*percentage;
+                                v_pred.push_back(kre_i);
+			}
+			//ffdist.close();
+		}	
+	    }
+	    pred = returnPred(v_pred);
+	    outputFile<<"Prediction for threshold "<<threshold<<" = "<<pred<<"\n\n";
+
+	}
+
+
+
+
+
+        /*
+	vector<float> v_N;
         double sum = 0;
         for (int i = 0; i < v_Ni.size() - 1; i++) {
 	    int ni = v_Ni.at(i);
@@ -156,10 +276,9 @@ void create_kre_report(string Ni, string bf, string fdist, string heuristic, str
 		     }
 		}
 	    }
-	}
+	}*/
         outputFile.close();
 }
-
 
 void create_report1(string heuristic, string blind, int countProblems) {
 
@@ -172,9 +291,11 @@ void create_report1(string heuristic, string blind, int countProblems) {
 		std::vector<string> fileNames;
                 std::vector<string> fileNames2;
                 std::vector<string> fileNames3;
+                std::vector<string> fileNames4;
                 string Ni;
                 string bf;
                 string fdist;
+                string astar;
 
 		readFile>>pasta;
                 
@@ -271,6 +392,35 @@ void create_report1(string heuristic, string blind, int countProblems) {
 
 		}
                 
+		string output7;
+                output7 =  pasta+"/"+output7;
+		output7 = "test/"+heuristic+"/report/"+output7;
+		output7 = "marvin/" + output7;
+		output7 = "marvin/" + output7;
+		output7 = "/home/" + output7;	
+	     
+
+		DIR *dir4;
+        	struct dirent *ent4;
+        
+       	 	dir4 = opendir(output7.c_str());
+        	if (dir4 != NULL) {
+	    		while ((ent4 = readdir(dir4)) != NULL) {
+				string fileName = ent4->d_name;
+				int sizeName = fileName.size();
+                		if ((sizeName == 1)  || (sizeName == 2)) {
+					//TODO
+				} else {
+		    			fileNames4.push_back(fileName);
+				}
+            		}
+            		closedir(dir4);
+		} else {
+	    		cout<<"Error trying to open the directory."<<endl;
+
+		}
+           
+
 		for (int i = 0; i < fileNames.size(); i++) {
                     string one = fileNames.at(i);
                     Ni = output+fileNames.at(i); 
@@ -280,10 +430,14 @@ void create_report1(string heuristic, string blind, int countProblems) {
 			for (int k = 0; k < fileNames3.size(); k++) {
                             fdist = output5+fileNames3.at(k);
 			    string three = fileNames3.at(k);
-                            if ((one == two) && (one == three) && (two == three)) {
-                                create_kre_report(Ni.c_str(), bf.c_str(), fdist.c_str(), heuristic, pasta, one);
+                            for (int z = 0; z < fileNames4.size(); z++) {
+				astar = output7+fileNames4.at(z);
+				string four = fileNames4.at(z);
+				if ((one == two) && (one == three) && (one == four) && (two == three) && (two == four) && (three == four)) {	
+                                    create_kre_report(Ni.c_str(), bf.c_str(), fdist.c_str(), astar.c_str(), heuristic, pasta, one);
+			    	}
 			    }
-			}
+             		}
 		    }
 		}
 
