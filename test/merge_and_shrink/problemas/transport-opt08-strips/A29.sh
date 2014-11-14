@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/merge_and_shrink/problemas/transport-opt08-strips/resultado
+RESULTS=/home/marvin/marvin/test/merge_and_shrink/problemas/transport-opt08-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/transport-opt08-strips/p29-domain.pddl benchmarks/transport-opt08-strips/p29.pddl Astartransport-opt08-strips29
+python3 src/translate/translate.py benchmarks/transport-opt08-strips/p29-domain.pddl benchmarks/transport-opt08-strips/p29.pddl Astartransport-opt08-strips29  transport-opt08-strips p29.pddl  merge_and_shrink
 
 src/preprocess/preprocess < Astartransport-opt08-strips29.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astartransport-opt08-strips29 >> ${RESULTS}/Astartransport-opt08-strips29.txt
+src/search/downward --search "astar(merge_and_shrink())" <  Astartransport-opt08-strips29 >> ${RESULTS}/p29.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astartransport-opt08-strips29
 
 
 rm Astartransport-opt08-strips29.sas
+
+
+
+rm src/translate/arquivos/p29.pddl
 

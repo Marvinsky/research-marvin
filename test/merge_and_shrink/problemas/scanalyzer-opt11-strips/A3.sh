@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/merge_and_shrink/problemas/scanalyzer-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/merge_and_shrink/problemas/scanalyzer-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/scanalyzer-opt11-strips/domain.pddl benchmarks/scanalyzer-opt11-strips/p03.pddl Astarscanalyzer-opt11-strips3
+python3 src/translate/translate.py benchmarks/scanalyzer-opt11-strips/domain.pddl benchmarks/scanalyzer-opt11-strips/p03.pddl Astarscanalyzer-opt11-strips3  scanalyzer-opt11-strips p03.pddl  merge_and_shrink
 
 src/preprocess/preprocess < Astarscanalyzer-opt11-strips3.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astarscanalyzer-opt11-strips3 >> ${RESULTS}/Astarscanalyzer-opt11-strips3.txt
+src/search/downward --search "astar(merge_and_shrink())" <  Astarscanalyzer-opt11-strips3 >> ${RESULTS}/p03.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarscanalyzer-opt11-strips3
 
 
 rm Astarscanalyzer-opt11-strips3.sas
+
+
+
+rm src/translate/arquivos/p03.pddl
 

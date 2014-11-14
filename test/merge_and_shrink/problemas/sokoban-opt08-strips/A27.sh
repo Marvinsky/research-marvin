@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/merge_and_shrink/problemas/sokoban-opt08-strips/resultado
+RESULTS=/home/marvin/marvin/test/merge_and_shrink/problemas/sokoban-opt08-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/sokoban-opt08-strips/p27-domain.pddl benchmarks/sokoban-opt08-strips/p27.pddl Astarsokoban-opt08-strips27
+python3 src/translate/translate.py benchmarks/sokoban-opt08-strips/p27-domain.pddl benchmarks/sokoban-opt08-strips/p27.pddl Astarsokoban-opt08-strips27  sokoban-opt08-strips p27.pddl  merge_and_shrink
 
 src/preprocess/preprocess < Astarsokoban-opt08-strips27.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astarsokoban-opt08-strips27 >> ${RESULTS}/Astarsokoban-opt08-strips27.txt
+src/search/downward --search "astar(merge_and_shrink())" <  Astarsokoban-opt08-strips27 >> ${RESULTS}/p27.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarsokoban-opt08-strips27
 
 
 rm Astarsokoban-opt08-strips27.sas
+
+
+
+rm src/translate/arquivos/p27.pddl
 

@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/merge_and_shrink/problemas/barman-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/merge_and_shrink/problemas/barman-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/barman-opt11-strips/domain.pddl benchmarks/barman-opt11-strips/pfile05-018.pddl Astarbarman-opt11-strips18
+python3 src/translate/translate.py benchmarks/barman-opt11-strips/domain.pddl benchmarks/barman-opt11-strips/pfile05-018.pddl Astarbarman-opt11-strips18  barman-opt11-strips pfile05-018.pddl  merge_and_shrink
 
 src/preprocess/preprocess < Astarbarman-opt11-strips18.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astarbarman-opt11-strips18 >> ${RESULTS}/Astarbarman-opt11-strips18.txt
+src/search/downward --search "astar(merge_and_shrink())" <  Astarbarman-opt11-strips18 >> ${RESULTS}/pfile05-018.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarbarman-opt11-strips18
 
 
 rm Astarbarman-opt11-strips18.sas
+
+
+
+rm src/translate/arquivos/pfile05-018.pddl
 

@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/merge_and_shrink/problemas/tidybot-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/merge_and_shrink/problemas/tidybot-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/tidybot-opt11-strips/domain.pddl benchmarks/tidybot-opt11-strips/p14.pddl Astartidybot-opt11-strips14
+python3 src/translate/translate.py benchmarks/tidybot-opt11-strips/domain.pddl benchmarks/tidybot-opt11-strips/p14.pddl Astartidybot-opt11-strips14  tidybot-opt11-strips p14.pddl  merge_and_shrink
 
 src/preprocess/preprocess < Astartidybot-opt11-strips14.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astartidybot-opt11-strips14 >> ${RESULTS}/Astartidybot-opt11-strips14.txt
+src/search/downward --search "astar(merge_and_shrink())" <  Astartidybot-opt11-strips14 >> ${RESULTS}/p14.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astartidybot-opt11-strips14
 
 
 rm Astartidybot-opt11-strips14.sas
+
+
+
+rm src/translate/arquivos/p14.pddl
 

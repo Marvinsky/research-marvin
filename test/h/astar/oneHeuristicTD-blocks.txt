@@ -1,4 +1,4 @@
 22
 2
 blind
-lmcut
+merge_and_shrink

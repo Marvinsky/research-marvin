@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/merge_and_shrink/problemas/openstacks-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/merge_and_shrink/problemas/openstacks-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/openstacks-opt11-strips/p19-domain.pddl benchmarks/openstacks-opt11-strips/p19.pddl Astaropenstacks-opt11-strips19
+python3 src/translate/translate.py benchmarks/openstacks-opt11-strips/p19-domain.pddl benchmarks/openstacks-opt11-strips/p19.pddl Astaropenstacks-opt11-strips19  openstacks-opt11-strips p19.pddl  merge_and_shrink
 
 src/preprocess/preprocess < Astaropenstacks-opt11-strips19.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astaropenstacks-opt11-strips19 >> ${RESULTS}/Astaropenstacks-opt11-strips19.txt
+src/search/downward --search "astar(merge_and_shrink())" <  Astaropenstacks-opt11-strips19 >> ${RESULTS}/p19.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astaropenstacks-opt11-strips19
 
 
 rm Astaropenstacks-opt11-strips19.sas
+
+
+
+rm src/translate/arquivos/p19.pddl
 

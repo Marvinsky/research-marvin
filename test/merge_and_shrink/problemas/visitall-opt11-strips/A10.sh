@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/merge_and_shrink/problemas/visitall-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/merge_and_shrink/problemas/visitall-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/visitall-opt11-strips/domain.pddl benchmarks/visitall-opt11-strips/problem06-half.pddl Astarvisitall-opt11-strips10
+python3 src/translate/translate.py benchmarks/visitall-opt11-strips/domain.pddl benchmarks/visitall-opt11-strips/problem06-half.pddl Astarvisitall-opt11-strips10  visitall-opt11-strips problem06-half.pddl  merge_and_shrink
 
 src/preprocess/preprocess < Astarvisitall-opt11-strips10.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astarvisitall-opt11-strips10 >> ${RESULTS}/Astarvisitall-opt11-strips10.txt
+src/search/downward --search "astar(merge_and_shrink())" <  Astarvisitall-opt11-strips10 >> ${RESULTS}/problem06-half.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarvisitall-opt11-strips10
 
 
 rm Astarvisitall-opt11-strips10.sas
+
+
+
+rm src/translate/arquivos/problem06-half.pddl
 

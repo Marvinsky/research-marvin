@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = astar(blind())
-argv[4] = XDG_VTNR=1
-argv[5] = XDG_SESSION_ID=c5
+argv[4] = XDG_VTNR=2
+argv[5] = XDG_SESSION_ID=c7
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -31,7 +31,7 @@ got 2 heuristics
 f_evaluator populated
 # heuristics:1
 starting timings
-node gen_and_exp_cost:2.96408e-06
+node gen_and_exp_cost:1.59525e-06
 active heuristics size:1
 Initializing blind search heuristic...
 	Maxing_h[0]:0
@@ -49,14 +49,14 @@ nodesGeneratedToTheLevel: 0
 f: 1 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
 last_jump:1,F_bound_to_print:0
 gen_to_exp_ratio: -nan
-F_bound:,1,Peak memory=,30.2266
+F_bound:,1,Peak memory=,30.2305
 Best heuristic value: 1 [g=0, 1 evaluated, 0 expanded, t=1s]
 starting timing individual heuristics
-h[,0,] is:,,heur:blind,measured time cost:1.01476e-06,h:1
+h[,0,] is:,,heur:blind,measured time cost:5.7246e-07,h:1
 memory before deleting databases:
-VmRSS memory: 10452 KB
+VmRSS memory: 17456 KB
 memory after deleting all databases:
-VmRSS memory: 10452 KB
+VmRSS memory: 17456 KB
 Remaining heuristics:
 remaining initial heur,heur:blind
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes:1000
@@ -80,14 +80,14 @@ nodesGeneratedToTheLevel: 2
 f: 2 [3 evaluated, 1 expanded, t=1.11s,generated_states:,2,additional_states:,2,],random_comb_index:-1
 last_jump:2,F_bound_to_print:0
 gen_to_exp_ratio: 2
-F_bound:,2,Peak memory=,30.2266
+F_bound:,2,Peak memory=,30.2305
 F:2
-F_bound:2,Peak memory=30.2266,nodes:3,Nodes mem_space:0.09375,F_boundary_Range:1
+F_bound:2,Peak memory=30.2305,nodes:3,Nodes mem_space:0.09375,F_boundary_Range:1
 F:2
 F_bound:2F_boundary_time:0.11,Hoff Potential Range:1,leaves_to_sample:1
 new F_bound:2chosen_Hoff_Roots_size:0 out of 1
-Memory after Sampling::30952
-Memory before starting new F-boundary:30952
+Memory after Sampling::30956
+Memory before starting new F-boundary:30956
 lastjumpt_f_value = 2
 f in report_f_value = 3
 generated states = 7
@@ -107,14 +107,14 @@ nodesGeneratedToTheLevel: 7
 f: 3 [6 evaluated, 3 expanded, t=1.11s,generated_states:,7,additional_states:,5,],random_comb_index:-1
 last_jump:3,F_bound_to_print:0
 gen_to_exp_ratio: 2.5
-F_bound:,3,Peak memory=,30.2266
+F_bound:,3,Peak memory=,30.2305
 F:3
-F_bound:3,Peak memory=30.2266,nodes:6,Nodes mem_space:0.1875,F_boundary_Range:2
+F_bound:3,Peak memory=30.2305,nodes:6,Nodes mem_space:0.1875,F_boundary_Range:2
 F:3
 F_bound:3F_boundary_time:-9.76866e-17,Hoff Potential Range:2,leaves_to_sample:2
 new F_bound:3chosen_Hoff_Roots_size:0 out of 2
-Memory after Sampling::30952
-Memory before starting new F-boundary:30952
+Memory after Sampling::30956
+Memory before starting new F-boundary:30956
 lastjumpt_f_value = 3
 f in report_f_value = 4
 generated states = 13
@@ -134,14 +134,14 @@ nodesGeneratedToTheLevel: 13
 f: 4 [9 evaluated, 6 expanded, t=1.11s,generated_states:,13,additional_states:,6,],random_comb_index:-1
 last_jump:4,F_bound_to_print:0
 gen_to_exp_ratio: 2
-F_bound:,4,Peak memory=,30.2266
+F_bound:,4,Peak memory=,30.2305
 F:4
-F_bound:4,Peak memory=30.2266,nodes:9,Nodes mem_space:0.28125,F_boundary_Range:2
+F_bound:4,Peak memory=30.2305,nodes:9,Nodes mem_space:0.28125,F_boundary_Range:2
 F:4
 F_bound:4F_boundary_time:-9.76866e-17,Hoff Potential Range:2,leaves_to_sample:2
 new F_bound:4chosen_Hoff_Roots_size:0 out of 2
-Memory after Sampling::30952
-Memory before starting new F-boundary:30952
+Memory after Sampling::30956
+Memory before starting new F-boundary:30956
 lastjumpt_f_value = 4
 f in report_f_value = 5
 generated states = 23
@@ -161,14 +161,14 @@ nodesGeneratedToTheLevel: 23
 f: 5 [16 evaluated, 9 expanded, t=1.11s,generated_states:,23,additional_states:,10,],random_comb_index:-1
 last_jump:5,F_bound_to_print:0
 gen_to_exp_ratio: 3.33333
-F_bound:,5,Peak memory=,30.2266
+F_bound:,5,Peak memory=,30.2305
 F:5
-F_bound:5,Peak memory=30.2266,nodes:16,Nodes mem_space:0.5,F_boundary_Range:6
+F_bound:5,Peak memory=30.2305,nodes:16,Nodes mem_space:0.5,F_boundary_Range:6
 F:5
 F_bound:5F_boundary_time:-9.76866e-17,Hoff Potential Range:6,leaves_to_sample:6
 new F_bound:5chosen_Hoff_Roots_size:0 out of 6
-Memory after Sampling::30952
-Memory before starting new F-boundary:30952
+Memory after Sampling::30956
+Memory before starting new F-boundary:30956
 lastjumpt_f_value = 5
 f in report_f_value = 6
 generated states = 42
@@ -188,14 +188,14 @@ nodesGeneratedToTheLevel: 42
 f: 6 [27 evaluated, 16 expanded, t=1.11s,generated_states:,42,additional_states:,19,],random_comb_index:-1
 last_jump:6,F_bound_to_print:0
 gen_to_exp_ratio: 2.71429
-F_bound:,6,Peak memory=,30.2266
+F_bound:,6,Peak memory=,30.2305
 F:6
-F_bound:6,Peak memory=30.2266,nodes:27,Nodes mem_space:0.84375,F_boundary_Range:10
+F_bound:6,Peak memory=30.2305,nodes:27,Nodes mem_space:0.84375,F_boundary_Range:10
 F:6
 F_bound:6F_boundary_time:-9.76866e-17,Hoff Potential Range:10,leaves_to_sample:10
 new F_bound:6chosen_Hoff_Roots_size:0 out of 10
-Memory after Sampling::30952
-Memory before starting new F-boundary:30952
+Memory after Sampling::30956
+Memory before starting new F-boundary:30956
 lastjumpt_f_value = 6
 f in report_f_value = 7
 generated states = 81
@@ -215,14 +215,14 @@ nodesGeneratedToTheLevel: 81
 f: 7 [53 evaluated, 27 expanded, t=1.11s,generated_states:,81,additional_states:,39,],random_comb_index:-1
 last_jump:7,F_bound_to_print:0
 gen_to_exp_ratio: 3.54545
-F_bound:,7,Peak memory=,30.2266
+F_bound:,7,Peak memory=,30.2305
 F:7
-F_bound:7,Peak memory=30.2266,nodes:53,Nodes mem_space:1.65625,F_boundary_Range:25
+F_bound:7,Peak memory=30.2305,nodes:53,Nodes mem_space:1.65625,F_boundary_Range:25
 F:7
 F_bound:7F_boundary_time:-9.76866e-17,Hoff Potential Range:25,leaves_to_sample:25
 new F_bound:7chosen_Hoff_Roots_size:0 out of 25
-Memory after Sampling::30952
-Memory before starting new F-boundary:30952
+Memory after Sampling::30956
+Memory before starting new F-boundary:30956
 lastjumpt_f_value = 7
 f in report_f_value = 8
 generated states = 159
@@ -242,14 +242,14 @@ nodesGeneratedToTheLevel: 159
 f: 8 [95 evaluated, 53 expanded, t=1.11s,generated_states:,159,additional_states:,78,],random_comb_index:-1
 last_jump:8,F_bound_to_print:0
 gen_to_exp_ratio: 3
-F_bound:,8,Peak memory=,30.2266
+F_bound:,8,Peak memory=,30.2305
 F:8
-F_bound:8,Peak memory=30.2266,nodes:95,Nodes mem_space:2.96875,F_boundary_Range:41
+F_bound:8,Peak memory=30.2305,nodes:95,Nodes mem_space:2.96875,F_boundary_Range:41
 F:8
 F_bound:8F_boundary_time:-9.76866e-17,Hoff Potential Range:41,leaves_to_sample:41
 new F_bound:8chosen_Hoff_Roots_size:0 out of 41
-Memory after Sampling::30952
-Memory before starting new F-boundary:30952
+Memory after Sampling::30956
+Memory before starting new F-boundary:30956
 lastjumpt_f_value = 8
 f in report_f_value = 9
 generated states = 310
@@ -269,14 +269,14 @@ nodesGeneratedToTheLevel: 310
 f: 9 [185 evaluated, 95 expanded, t=1.11s,generated_states:,310,additional_states:,151,],random_comb_index:-1
 last_jump:9,F_bound_to_print:0
 gen_to_exp_ratio: 3.59524
-F_bound:,9,Peak memory=,30.2266
+F_bound:,9,Peak memory=,30.2305
 F:9
-F_bound:9,Peak memory=30.2266,nodes:185,Nodes mem_space:5.78125,F_boundary_Range:89
+F_bound:9,Peak memory=30.2305,nodes:185,Nodes mem_space:5.78125,F_boundary_Range:89
 F:9
 F_bound:9F_boundary_time:-9.76866e-17,Hoff Potential Range:89,leaves_to_sample:89
 new F_bound:9chosen_Hoff_Roots_size:0 out of 89
-Memory after Sampling::30952
-Memory before starting new F-boundary:30952
+Memory after Sampling::30956
+Memory before starting new F-boundary:30956
 lastjumpt_f_value = 9
 f in report_f_value = 10
 generated states = 560
@@ -296,14 +296,14 @@ nodesGeneratedToTheLevel: 560
 f: 10 [297 evaluated, 185 expanded, t=1.11s,generated_states:,560,additional_states:,250,],random_comb_index:-1
 last_jump:10,F_bound_to_print:0
 gen_to_exp_ratio: 2.77778
-F_bound:,10,Peak memory=,30.2266
+F_bound:,10,Peak memory=,30.2305
 F:10
-F_bound:10,Peak memory=30.2266,nodes:297,Nodes mem_space:9.28125,F_boundary_Range:111
+F_bound:10,Peak memory=30.2305,nodes:297,Nodes mem_space:9.28125,F_boundary_Range:111
 F:10
 F_bound:10F_boundary_time:-9.76866e-17,Hoff Potential Range:111,leaves_to_sample:100
 new F_bound:10chosen_Hoff_Roots_size:0 out of 111
-Memory after Sampling::30952
-Memory before starting new F-boundary:30952
+Memory after Sampling::30956
+Memory before starting new F-boundary:30956
 lastjumpt_f_value = 10
 f in report_f_value = 11
 generated states = 918
@@ -323,14 +323,14 @@ nodesGeneratedToTheLevel: 918
 f: 11 [459 evaluated, 297 expanded, t=1.11s,generated_states:,918,additional_states:,358,],random_comb_index:-1
 last_jump:11,F_bound_to_print:0
 gen_to_exp_ratio: 3.19643
-F_bound:,11,Peak memory=,30.2266
+F_bound:,11,Peak memory=,30.2305
 F:11
-F_bound:11,Peak memory=30.2266,nodes:459,Nodes mem_space:14.3438,F_boundary_Range:161
+F_bound:11,Peak memory=30.2305,nodes:459,Nodes mem_space:14.3438,F_boundary_Range:161
 F:11
 F_bound:11F_boundary_time:-9.76866e-17,Hoff Potential Range:161,leaves_to_sample:100
 new F_bound:11chosen_Hoff_Roots_size:0 out of 161
-Memory after Sampling::30952
-Memory before starting new F-boundary:30952
+Memory after Sampling::30956
+Memory before starting new F-boundary:30956
 search_timer() = 1.11
 lastjumpt_f_value = 11
 f in report_f_value = 12
@@ -351,14 +351,14 @@ nodesGeneratedToTheLevel: 1287
 f: 12 [586 evaluated, 459 expanded, t=1.11s,generated_states:,1287,additional_states:,369,],random_comb_index:-1
 last_jump:12,F_bound_to_print:0
 gen_to_exp_ratio: 2.27778
-F_bound:,12,Peak memory=,30.2266
+F_bound:,12,Peak memory=,30.2305
 F:12
-F_bound:12,Peak memory=30.2266,nodes:586,Nodes mem_space:18.3125,F_boundary_Range:126
+F_bound:12,Peak memory=30.2305,nodes:586,Nodes mem_space:18.3125,F_boundary_Range:126
 F:12
 F_bound:12F_boundary_time:-9.76866e-17,Hoff Potential Range:126,leaves_to_sample:100
 new F_bound:12chosen_Hoff_Roots_size:0 out of 126
-Memory after Sampling::30952
-Memory before starting new F-boundary:30952
+Memory after Sampling::30956
+Memory before starting new F-boundary:30956
 Best heuristic value: 0 [g=12, 655 evaluated, 513 expanded, t=1.11s]
  _________________________________
 |          Solution found!        |
@@ -376,6 +376,33 @@ effectiveBranchingFactor: 5.80769
 effectiveBranchingFactor: 5.95238
 effectiveBranchingFactor: 3.97778
 effectiveBranchingFactor: 3.29464
+v_f.size() = 1438
+v_g.size() = 514
+totallevels: 12
+glevel: 1
+nlevel: 2
+glevel: 2
+nlevel: 3
+glevel: 3
+nlevel: 4
+glevel: 4
+nlevel: 7
+glevel: 5
+nlevel: 9
+glevel: 6
+nlevel: 20
+glevel: 7
+nlevel: 38
+glevel: 8
+nlevel: 78
+glevel: 9
+nlevel: 150
+glevel: 10
+nlevel: 252
+glevel: 11
+nlevel: 357
+glevel: 12
+nlevel: 370
  ____________________________________
 |   total numero of call step() = 513   |
  ____________________________________
@@ -409,8 +436,8 @@ Search space hash size: 655
 Search space hash bucket count: 769
 Search time: 1.11s
 Total time: 1.11s
-Peak memory: 30952 KB
-VmRSS memory: 1228 KB
-VmHWM memory: 18432 KB
+Peak memory: 30956 KB
+VmRSS memory: 1224 KB
+VmHWM memory: 18780 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

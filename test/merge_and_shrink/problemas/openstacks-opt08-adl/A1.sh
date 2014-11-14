@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/merge_and_shrink/problemas/openstacks-opt08-adl/resultado
+RESULTS=/home/marvin/marvin/test/merge_and_shrink/problemas/openstacks-opt08-adl/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/openstacks-opt08-adl/p01-domain.pddl benchmarks/openstacks-opt08-adl/p01.pddl Astaropenstacks-opt08-adl1
+python3 src/translate/translate.py benchmarks/openstacks-opt08-adl/p01-domain.pddl benchmarks/openstacks-opt08-adl/p01.pddl Astaropenstacks-opt08-adl1  openstacks-opt08-adl p01.pddl  merge_and_shrink
 
 src/preprocess/preprocess < Astaropenstacks-opt08-adl1.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astaropenstacks-opt08-adl1 >> ${RESULTS}/Astaropenstacks-opt08-adl1.txt
+src/search/downward --search "astar(merge_and_shrink())" <  Astaropenstacks-opt08-adl1 >> ${RESULTS}/p01.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astaropenstacks-opt08-adl1
 
 
 rm Astaropenstacks-opt08-adl1.sas
+
+
+
+rm src/translate/arquivos/p01.pddl
 

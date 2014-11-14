@@ -1,0 +1,41 @@
+#PBS -N merge_and_shrink_d4_p9
+
+#PBS -m b
+
+#PBS -M marvin.zarate@ufv.br
+
+#PBS -l nodes=1:ppn=1
+
+#PBS -l walltime=1800
+
+#PBS -l pmem=6gb
+
+cd $PBS_O_WORKDIR
+
+source /usr/share/modules/init/bash
+
+module load python
+module load mercurial
+
+RESULTS=/home/marvin/marvin/testss/merge_and_shrink/problemas/floortile-opt11-strips/resultado
+
+cd /home/marvin/fd
+
+python3 src/translate/translate.py benchmarks/floortile-opt11-strips/domain.pddl benchmarks/floortile-opt11-strips/opt-p05-009.pddl Astarfloortile-opt11-strips9  floortile-opt11-strips  opt-p05-009.pddl  merge_and_shrink
+
+src/preprocess/preprocess < Astarfloortile-opt11-strips9.sas
+
+src/search/downward --search "ss(merge_and_shrink())" <  Astarfloortile-opt11-strips9 >> ${RESULTS}/opt-p05-009.pddl
+
+
+
+rm Astarfloortile-opt11-strips9
+
+
+
+rm Astarfloortile-opt11-strips9.sas
+
+
+
+rm src/translate/arquivos/opt-p05-009.pddl
+

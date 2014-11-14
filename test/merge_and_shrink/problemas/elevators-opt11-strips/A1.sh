@@ -17,15 +17,15 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/dpi/marvin/test/merge_and_shrink/problemas/elevators-opt11-strips/resultado
+RESULTS=/home/marvin/marvin/test/merge_and_shrink/problemas/elevators-opt11-strips/resultado
 
-cd /home/dpi/fd
+cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/elevators-opt11-strips/domain.pddl benchmarks/elevators-opt11-strips/p01.pddl Astarelevators-opt11-strips1
+python3 src/translate/translate.py benchmarks/elevators-opt11-strips/domain.pddl benchmarks/elevators-opt11-strips/p01.pddl Astarelevators-opt11-strips1  elevators-opt11-strips p01.pddl  merge_and_shrink
 
 src/preprocess/preprocess < Astarelevators-opt11-strips1.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astarelevators-opt11-strips1 >> ${RESULTS}/Astarelevators-opt11-strips1.txt
+src/search/downward --search "astar(merge_and_shrink())" <  Astarelevators-opt11-strips1 >> ${RESULTS}/p01.pddl
 
 
 
@@ -34,4 +34,8 @@ rm Astarelevators-opt11-strips1
 
 
 rm Astarelevators-opt11-strips1.sas
+
+
+
+rm src/translate/arquivos/p01.pddl
 
