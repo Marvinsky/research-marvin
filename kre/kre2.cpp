@@ -146,7 +146,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	}
 
 	vector<float> v_astar_f;
-        vector<float> v_astar_n;         
+        vector<float> v_astar_f_n;
         for (int i = 0; i < totallevels4; i++) {
 	    for (int j = 0; j < 4; j++) {
 		fastar>>levels4[i][j];
@@ -155,9 +155,8 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 
 	for (int i = 0; i < totallevels4; i++) {
 	    v_astar_f.insert(v_astar_f.begin() + i, levels4[i][0]);
-	    v_astar_n.insert(v_astar_n.begin() + i, levels4[i][1]);
+            v_astar_f_n.insert(v_astar_f_n.begin() + i, levels4[i][1]);
 	}
-
 
 	string output;
 
@@ -171,13 +170,14 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 
 	ofstream outputFile;
 	outputFile.open(output.c_str(), ios::out);
+	 
 
 	//We do know how to implement f-dist
-        vector<double> vpred;
-	for (int i = 0; i < v_astar_f.size(); i++) {
+	vector<double> vpred;
+	for (int i = 1; i < v_astar_f.size(); i++) {
             int threshold = v_astar_f.at(i);
-            //cout<<"threshold = "<<threshold<<endl;
-	    //outputFile<<threshold<<"\n\n";
+            cout<<"threshold = "<<threshold<<endl;
+	    outputFile<<threshold<<"\n\n";
             double pred = 0.0;
             vector<double> v_pred;
             for (int j = 0; j < threshold; j++) {
@@ -194,19 +194,19 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
                 pivot<<g+1;
                 level += pivot.str();
                 //level += string(":");
-                //cout<<level.c_str()<<endl; 
+                cout<<level.c_str()<<endl; 
 	        
                 while (ffdist>>amount) {
  			
 			if (amount == level.c_str()) {
-                               	//outputFile<<level.c_str()<<"\n";
+                               	outputFile<<level.c_str()<<"\n";
                                 int size;
                                 map<int, int> m;
 				int sumq = 0;
 				ffdist>>amount;
                                 ffdist>>amount;
                                 size = atoi(amount.c_str());
-                                
+                                cout<<"size = "<<size<<endl;
                                 for (int p1 = 0; p1 < size; p1++) {
 				    int f = 0;
                                     int q = 0;
@@ -217,8 +217,8 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
                                     ffdist>>amount;
                                     q = atoi(amount.c_str());
                                     sumq = sumq + q;
-                                    
-                                    //outputFile<<"f = "<<f<<" q = "<<q<<"\n";
+                                    cout<<"f = "<<f<<" q = "<<q<<endl;
+                                    outputFile<<"f = "<<f<<" q = "<<q<<"\n";
                                     m.insert(pair<int, int>(f, q));
                                     
 				}
@@ -231,44 +231,33 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 				       sumR = sumR + it->second;
 				    }
 				} 
-				//outputFile<<"total nodes = "<<sumq<<"\n";
-				//outputFile<<"nodes with f less than or equal to"<<threshold<<" = "<<sumR<<"\n";
+				outputFile<<"total nodes = "<<sumq<<"\n";
+				outputFile<<"nodes with f less than or equal to "<<threshold<<" = "<<sumR<<"\n";
 
 
 
                                 double percentage = (double)sumR/(double)sumq;
                                 
-				//outputFile<<"percentage = "<<percentage<<"\n";
-				//cout<<"percentage = "<<percentage<<" ";
+				outputFile<<"percentage = "<<percentage<<"\n";
+				cout<<"percentage = "<<percentage<<" ";
 			 	double kre_i = ni*percentage;
                                 v_pred.push_back(kre_i);
-			} //end if
+			}
 			//ffdist.close();
-	       	} //end while	
-	    } //end inner for
+		}	
+	    }
 	    pred = returnPred(v_pred);
-	    //outputFile<<"Prediction for threshold "<<threshold<<" = "<<pred<<"\n\n";
+	    outputFile<<"Prediction for threshold "<<threshold<<" = "<<pred<<"\n\n";
 	    vpred.insert(vpred.begin() + i, pred);
-	} //end outer for
-
-		
-	outputFile<<"\t\t"<<output.c_str()<<"\n\n";
+	}
+	/*
+	outputFile<<"\n\n\t\t"<<output.c_str()<<"\n\n";
 
 	outputFile<<"\td\t\t#nodes\t\tpred\n\n";
-	 
-
-	for (int i = 0; i < vpred.size(); i++) {
-	    outputFile<<"\t"<<v_astar_f.at(i)<<"\t\t"<<v_astar_n.at(i)<<"\t\t"<<vpred.at(i)<<"\n";
+        for (int r = 0; r < vpred.size(); r++ )	 {
+	    outputFile<<"\t"<<v_astar_f.at(r)<<"\t\t"<<v_astar_f_n.at(r)<<"\t\t"<<vpred.at(r)<<"\n";
 	}
-	
-
-
-
-
-
-
-
-
+	*/
         outputFile.close();
 }
 
@@ -318,7 +307,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
             		}
             		closedir(dir);
 		} else {
-	    		cout<<"Error trying to open the directory: "<<output.c_str()<<endl;
+	    		cout<<"Error trying to open the directory."<<endl;
 		}
 
     	
@@ -348,7 +337,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
             		}
             		closedir(dir2);
 		} else {
-	    		cout<<"Error trying to open the directory: "<<output3.c_str()<<endl;
+	    		cout<<"Error trying to open the directory."<<endl;
 
 		}
 
@@ -380,7 +369,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
             		}
             		closedir(dir3);
 		} else {
-	    		cout<<"Error trying to open the directory: "<<output5.c_str()<<endl;
+	    		cout<<"Error trying to open the directory."<<endl;
 
 		}
                 
@@ -408,7 +397,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
             		}
             		closedir(dir4);
 		} else {
-	    		cout<<"Error trying to open the directory: "<<output7.c_str()<<endl;
+	    		cout<<"Error trying to open the directory."<<endl;
 
 		}
            
