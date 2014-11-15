@@ -1,0 +1,22 @@
+	/home/marvin/marvin/test/blind/problemas/blocks/resultado/probBLOCKS-8-0.pddl
+totalniveles: 19
+	f		#Nodes_by_level
+	1		4
+	2		18
+	3		52
+	4		170
+	5		412
+	6		1166
+	7		2696
+	8		6672
+	9		13644
+	10		30012
+	11		56152
+	12		107024
+	13		166704
+	14		249600
+	15		294834
+	16		323614
+	17		341245
+	18		79625
+	19		27818

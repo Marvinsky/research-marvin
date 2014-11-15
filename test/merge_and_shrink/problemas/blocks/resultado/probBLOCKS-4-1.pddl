@@ -6,7 +6,7 @@ argv[0][0] = s
 argv[1] = --search
 argv[2] = astar(merge_and_shrink())
 argv[4] = XDG_VTNR=2
-argv[5] = XDG_SESSION_ID=c7
+argv[5] = XDG_SESSION_ID=c2
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -24,6 +24,7 @@ subevaluators_.size:2
  ___________________________________
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
 first_sample set to true
+first_time set to false and count_last_nodes_gerados to zero.
 Initial state:S:1,0,1,1,0,3,2,1,4,calling get_involved heuristics
 got 2 heuristics
 got involved heuristics
@@ -31,7 +32,7 @@ got 2 heuristics
 f_evaluator populated
 # heuristics:1
 starting timings
-node gen_and_exp_cost:1.40486e-06
+node gen_and_exp_cost:1.30455e-06
 active heuristics size:1
 Initializing merge-and-shrink heuristic...
 Merge strategy: linear CG/GOAL, tie breaking on level (main)
@@ -212,8 +213,8 @@ Abstraction (9/9 vars): applying abstraction to lookup table
 Abstraction (9/9 vars): size after shrink 125, target 125
 Abstraction (9/9 vars): distances already known
 Abstraction (9/9 vars): 125 states, ???/272 arcs, 99444 bytes
-Abstraction (9/9 vars): init h=10, max f=24, max g=12, max h=12 [t=1.01s]
-Done initializing merge-and-shrink heuristic [0.01s]
+Abstraction (9/9 vars): init h=10, max f=24, max g=12, max h=12 [t=1.02s]
+Done initializing merge-and-shrink heuristic [0.02s]
 initial h value: 10
 Estimated peak memory for abstraction: 486348 bytes
 	Maxing_h[0]:0
@@ -224,67 +225,70 @@ generated states = 0
 evaluated states = 1
 expanded states = 0
 reopened states = 0
-fnivel: 10
-nodesGeneratedByLevel: 0
- time0: 1.01
-nodesGeneratedToTheLevel: 0
-f: 10 [1 evaluated, 0 expanded, t=1.01s,generated_states:,0,additional_states:,0,],random_comb_index:-1
+f: 10 [1 evaluated, 0 expanded, t=1.02s,generated_states:,0,additional_states:,0,],random_comb_index:-1
 last_jump:10,F_bound_to_print:0
 gen_to_exp_ratio: -nan
-F_bound:,10,Peak memory=,30.207
-Best heuristic value: 10 [g=0, 1 evaluated, 0 expanded, t=1.01s]
+F_bound:,10,Peak memory=,30.2031
+Best heuristic value: 10 [g=0, 1 evaluated, 0 expanded, t=1.02s]
 starting timing individual heuristics
-h[,0,] is:,heur is not named,measured time cost:6.97642e-07,h:10
+h[,0,] is:,heur is not named,measured time cost:5.92066e-07,h:10
 memory before deleting databases:
-VmRSS memory: 16820 KB
+VmRSS memory: 17328 KB
 memory after deleting all databases:
-VmRSS memory: 16820 KB
+VmRSS memory: 17328 KB
 Remaining heuristics:
 remaining initial heurheur is not named
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes:1000
-search_timer() = 1.12
-Best heuristic value: 9 [g=1, 2 evaluated, 1 expanded, t=1.12s]
-Best heuristic value: 8 [g=2, 3 evaluated, 2 expanded, t=1.12s]
-Best heuristic value: 7 [g=3, 4 evaluated, 3 expanded, t=1.12s]
-Best heuristic value: 6 [g=4, 6 evaluated, 4 expanded, t=1.12s]
-Best heuristic value: 5 [g=5, 7 evaluated, 5 expanded, t=1.12s]
-Best heuristic value: 4 [g=6, 9 evaluated, 6 expanded, t=1.12s]
-Best heuristic value: 3 [g=7, 12 evaluated, 7 expanded, t=1.12s]
-Best heuristic value: 2 [g=8, 14 evaluated, 8 expanded, t=1.12s]
-Best heuristic value: 1 [g=9, 16 evaluated, 9 expanded, t=1.12s]
-Best heuristic value: 0 [g=10, 17 evaluated, 10 expanded, t=1.12s]
+search_timer() = 1.13
+Best heuristic value: 9 [g=1, 2 evaluated, 1 expanded, t=1.13s]
+Best heuristic value: 8 [g=2, 3 evaluated, 2 expanded, t=1.13s]
+Best heuristic value: 7 [g=3, 4 evaluated, 3 expanded, t=1.13s]
+Best heuristic value: 6 [g=4, 6 evaluated, 4 expanded, t=1.13s]
+Best heuristic value: 5 [g=5, 7 evaluated, 5 expanded, t=1.13s]
+Best heuristic value: 4 [g=6, 9 evaluated, 6 expanded, t=1.13s]
+Best heuristic value: 3 [g=7, 12 evaluated, 7 expanded, t=1.13s]
+Best heuristic value: 2 [g=8, 14 evaluated, 8 expanded, t=1.13s]
+Best heuristic value: 1 [g=9, 16 evaluated, 9 expanded, t=1.13s]
+Best heuristic value: 0 [g=10, 17 evaluated, 10 expanded, t=1.13s]
  _________________________________
 |          Solution found!        |
  _________________________________
-overall generated nodes to last iter:,25,search_time:,1.12,overall time:,1.12
+overall generated nodes to last iter:,25,search_time:,1.13,overall time:,1.13
+
+Count the nodes in the last level.
+lastjumpt_f_value = 10
+f in report_f_value = 12
+generated states = 25
+evaluated states = 17
+expanded states = 11
+reopened states = 0
+lastjump generated states = 0
+lastjump evaluated states = 1
+lastjump expanded states = 0
+lastjump reopened states = 0
+generated_states - lastjump_generated_states = 25
+expanded_states - lastjump_expanded_states = 11
+fnivel: 11
+nodesGeneratedByLevel: 25
+ time0: 1.13
+nodesGeneratedToTheLevel: 25
+f: 12 [17 evaluated, 11 expanded, t=1.13s,generated_states:,25,additional_states:,25,],random_comb_index:-1
+last_jump:12,F_bound_to_print:0
+gen_to_exp_ratio: 2.27273
+F_bound:,12,Peak memory=,30.2031
+F:12
+F_bound:12,Peak memory=30.2031,nodes:17,Nodes mem_space:0.53125,F_boundary_Range:5
+F:12
+F_bound:12F_boundary_time:1.06577e-16,Hoff Potential Range:5,leaves_to_sample:5
+new F_bound:12chosen_Hoff_Roots_size:0 out of 5
+Memory after Sampling::30928
+Memory before starting new F-boundary:30928
 totalniveles: 1
-v_f.size() = 25
-v_g.size() = 11
-totallevels: 10
-glevel: 1
-nlevel: 1
-glevel: 2
-nlevel: 2
-glevel: 3
-nlevel: 2
-glevel: 4
-nlevel: 3
-glevel: 5
-nlevel: 3
-glevel: 6
-nlevel: 4
-glevel: 7
-nlevel: 3
-glevel: 8
-nlevel: 3
-glevel: 9
-nlevel: 2
-glevel: 10
-nlevel: 2
+count_last_nodes_gerados: 0
  ____________________________________
-|   total numero of call step() = 10   |
+|   total numero of call step() = 11   |
  ____________________________________
-Actual search time: 0s [t=1.12s]
+Actual search time: 0s [t=1.13s]
 unstack b c (1)
 put-down b (1)
 unstack c a (1)
@@ -298,22 +302,22 @@ stack d c (1)
 Plan length: 10 step(s).
 Plan cost: 10
 Initial state h value: 10.
-Expanded 11 state(s).
+Expanded 12 state(s).
 Reopened 0 state(s).
 Evaluated 17 state(s).
 Evaluations: 17
 Generated 25 state(s).
 Dead ends: 0 state(s).
-Expanded until last jump: 0 state(s).
+Expanded until last jump: 11 state(s).
 Reopened until last jump: 0 state(s).
-Evaluated until last jump: 1 state(s).
-Generated until last jump: 0 state(s).
+Evaluated until last jump: 17 state(s).
+Generated until last jump: 25 state(s).
 Search space hash size: 17
 Search space hash bucket count: 193
-Search time: 1.12s
-Total time: 1.12s
-Peak memory: 30932 KB
-VmRSS memory: 1836 KB
-VmHWM memory: 18028 KB
+Search time: 1.13s
+Total time: 1.13s
+Peak memory: 30928 KB
+VmRSS memory: 2284 KB
+VmHWM memory: 18124 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

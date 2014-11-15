@@ -6,7 +6,7 @@ argv[0][0] = s
 argv[1] = --search
 argv[2] = ss(merge_and_shrink())
 argv[4] = XDG_VTNR=3
-argv[5] = XDG_SESSION_ID=c11
+argv[5] = XDG_SESSION_ID=c3
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -22,14 +22,14 @@ registered: ss
  ______________________________
 registered: merge_and_shrink
 parser is not dry_run
-g object = 0x9a10f88
+g object = 0x8646f88
 ScalarEvaluator vector pointer []
-ScalarEvaluator vector pointer after add g = [0x9a10f88]
-ScalarEvaluator vector pointer after add eval = [0x9a10f88, 0x9a133b0]
+ScalarEvaluator vector pointer after add g = [0x8646f88]
+ScalarEvaluator vector pointer after add eval = [0x8646f88, 0x86493b0]
 subevaluators_.size:2
-new vector of ScalarEvaluator created = [0x9a12dd0, 0x9a133b0]
-OpenList vector of state_var_t objects = 0x9a122a8
-engine = 0x9a12330
+new vector of ScalarEvaluator created = [0x8648dd0, 0x86493b0]
+OpenList vector of state_var_t objects = 0x86482a8
+engine = 0x8648330
  ___________________________________
 |         calling initialize        |
  ___________________________________
@@ -50,9 +50,9 @@ f_evaluator populated
 conditional_effects_present = 0
 Conditional effects present = 0
 starting timings 
-initial state = 0x9a0a088
-node_counter = 778119
-node_gen_and_exp_cost = 1,28515e-06
+initial state = 0x8640088
+node_counter = 423173
+node_gen_and_exp_cost = 2,3631e-06
 active heuristics size : 1
 # heristics = 1
 dead_end = 0
@@ -68,10 +68,6 @@ generated states = 0
 evaluated states = 1
 expanded states = 0
 reopened states = 0
-fnivel: 1650551918
-nodesGeneratedByLevel: 0
- time0: 1
-nodesGeneratedToTheLevel: 0
 f: 1650551918 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
 last_jump:1650551918,F_bound_to_print:0
 gen_to_exp_ratio: -nan
@@ -220,13 +216,13 @@ Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Abstraction (7/9 vars): normalizing with label reduction
 Label reduction: 7 pruned vars, 32 labels, 11 reduced labels
 Abstraction (7/9 vars): 2000 states, ???/13800 arcs, 165644 bytes
-Abstraction (7/9 vars): init h=6, max f=23, max g=12, max h=13 [t=1s]
+Abstraction (7/9 vars): init h=6, max f=23, max g=12, max h=13 [t=1,01s]
 Atomic abstraction #1: normalizing without label reduction
 Atomic abstraction #1: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1s]
+Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1,01s]
 Merging abstraction (7/9 vars) and atomic abstraction #1
 Abstraction (8/9 vars): 4000 states, ???/22400 arcs, 223852 bytes
-Abstraction (8/9 vars): distances not computed [t=1s]
+Abstraction (8/9 vars): distances not computed [t=1,01s]
 Next variable: #0
 Abstraction (8/9 vars): computing distances using unit-cost algorithm
 Abstraction (8/9 vars): unreachable: 1016 states, irrelevant: 0 states
@@ -248,7 +244,7 @@ Atomic abstraction #0: 5 states, ???/8 arcs, 708 bytes
 Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1,01s]
 Merging abstraction (8/9 vars) and atomic abstraction #0
 Abstraction (9/9 vars): 14920 states, ???/46908 arcs, 486348 bytes
-Abstraction (9/9 vars): distances not computed [t=1,01s]
+Abstraction (9/9 vars): distances not computed [t=1,02s]
 Abstraction (9/9 vars): computing distances using unit-cost algorithm
 Abstraction (9/9 vars): unreachable: 14795 states, irrelevant: 0 states
 Abstraction (9/9 vars): shrink forced to prune unreachable/irrelevant states
@@ -261,16 +257,16 @@ Abstraction (9/9 vars): applying abstraction to lookup table
 Abstraction (9/9 vars): size after shrink 125, target 125
 Abstraction (9/9 vars): distances already known
 Abstraction (9/9 vars): 125 states, ???/272 arcs, 99444 bytes
-Abstraction (9/9 vars): init h=6, max f=20, max g=8, max h=12 [t=1,01s]
-Done initializing merge-and-shrink heuristic [0,01s]
+Abstraction (9/9 vars): init h=6, max f=20, max g=8, max h=12 [t=1,02s]
+Done initializing merge-and-shrink heuristic [0,02s]
 initial h value: 6
 Estimated peak memory for abstraction: 486348 bytes
 heur_name = No Name
-h[,0,] is:,heur is not named,measured time cost: 6,74578e-07,h:6
+h[,0,] is:,heur is not named,measured time cost: 1,41539e-06,h:6
 memory before deleting databases: 
-VmRSS memory: 17756 KB
+VmRSS memory: 11516 KB
 memory after deleting all databases: 
-VmRSS memory: 17756 KB
+VmRSS memory: 11516 KB
 Remaining heuristics:
 remaining initial heur heur is not named
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
@@ -359,7 +355,7 @@ Search space hash bucket count: 193
 Search time: 1,11s
 Total time: 1,11s
 Peak memory: 30932 KB
-VmRSS memory: 2252 KB
-VmHWM memory: 18536 KB
+VmRSS memory: 2268 KB
+VmHWM memory: 18428 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
