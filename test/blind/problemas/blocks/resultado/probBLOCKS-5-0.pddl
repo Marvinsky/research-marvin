@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = astar(blind())
-argv[4] = XDG_VTNR=2
-argv[5] = XDG_SESSION_ID=c2
+argv[4] = XDG_VTNR=1
+argv[5] = XDG_SESSION_ID=c1
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -32,7 +32,7 @@ got 2 heuristics
 f_evaluator populated
 # heuristics:1
 starting timings
-node gen_and_exp_cost:1.55454e-06
+node gen_and_exp_cost:1.58852e-06
 active heuristics size:1
 Initializing blind search heuristic...
 	Maxing_h[0]:0
@@ -49,11 +49,11 @@ gen_to_exp_ratio: -nan
 F_bound:,1,Peak memory=,54.2266
 Best heuristic value: 1 [g=0, 1 evaluated, 0 expanded, t=1s]
 starting timing individual heuristics
-h[,0,] is:,,heur:blind,measured time cost:4.85105e-07,h:1
+h[,0,] is:,,heur:blind,measured time cost:5.01223e-07,h:1
 memory before deleting databases:
-VmRSS memory: 19124 KB
+VmRSS memory: 18992 KB
 memory after deleting all databases:
-VmRSS memory: 19124 KB
+VmRSS memory: 18992 KB
 Remaining heuristics:
 remaining initial heur,heur:blind
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes:1000
@@ -437,7 +437,7 @@ Search space hash bucket count: 769
 Search time: 1.11s
 Total time: 1.11s
 Peak memory: 55528 KB
-VmRSS memory: 1288 KB
-VmHWM memory: 35288 KB
+VmRSS memory: 1292 KB
+VmHWM memory: 35156 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

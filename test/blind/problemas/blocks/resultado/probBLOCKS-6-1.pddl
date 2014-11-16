@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = astar(blind())
-argv[4] = XDG_VTNR=2
-argv[5] = XDG_SESSION_ID=c2
+argv[4] = XDG_VTNR=1
+argv[5] = XDG_SESSION_ID=c1
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -32,7 +32,7 @@ got 2 heuristics
 f_evaluator populated
 # heuristics:1
 starting timings
-node gen_and_exp_cost:1.709e-06
+node gen_and_exp_cost:1.67452e-06
 active heuristics size:1
 Initializing blind search heuristic...
 	Maxing_h[0]:0
@@ -49,11 +49,11 @@ gen_to_exp_ratio: -nan
 F_bound:,1,Peak memory=,54.2539
 Best heuristic value: 1 [g=0, 1 evaluated, 0 expanded, t=1s]
 starting timing individual heuristics
-h[,0,] is:,,heur:blind,measured time cost:5.0731e-07,h:1
+h[,0,] is:,,heur:blind,measured time cost:4.92598e-07,h:1
 memory before deleting databases:
-VmRSS memory: 22328 KB
+VmRSS memory: 22316 KB
 memory after deleting all databases:
-VmRSS memory: 22328 KB
+VmRSS memory: 22316 KB
 Remaining heuristics:
 remaining initial heur,heur:blind
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes:1000
@@ -221,7 +221,7 @@ new F_bound:7chosen_Hoff_Roots_size:0 out of 723
 Memory after Sampling::55556
 Memory before starting new F-boundary:55556
 search_timer() = 1.11
-search_timer() = 1.12
+search_timer() = 1.11
 lastjumpt_f_value = 7
 f in report_f_value = 8
 generated states = 4884
@@ -236,21 +236,21 @@ generated_states - lastjump_generated_states = 2284
 expanded_states - lastjump_expanded_states = 724
 fnivel: 7
 nodesGeneratedByLevel: 2284
- time0: 1.12
+ time0: 1.11
 nodesGeneratedToTheLevel: 4884
-f: 8 [2365 evaluated, 1369 expanded, t=1.12s,generated_states:,4884,additional_states:,2284,],random_comb_index:-1
+f: 8 [2365 evaluated, 1369 expanded, t=1.11s,generated_states:,4884,additional_states:,2284,],random_comb_index:-1
 last_jump:8,F_bound_to_print:0
 gen_to_exp_ratio: 3.1547
 F_bound:,8,Peak memory=,54.2539
 F:8
 F_bound:8,Peak memory=54.2539,nodes:2365,Nodes mem_space:73.9062,F_boundary_Range:995
 F:8
-F_bound:8F_boundary_time:0.01,Hoff Potential Range:995,leaves_to_sample:100
+F_bound:8F_boundary_time:-9.76866e-17,Hoff Potential Range:995,leaves_to_sample:100
 new F_bound:8chosen_Hoff_Roots_size:0 out of 995
 Memory after Sampling::55556
 Memory before starting new F-boundary:55556
-search_timer() = 1.12
-search_timer() = 1.12
+search_timer() = 1.11
+search_timer() = 1.11
 lastjumpt_f_value = 8
 f in report_f_value = 9
 generated states = 8316
@@ -265,16 +265,16 @@ generated_states - lastjump_generated_states = 3432
 expanded_states - lastjump_expanded_states = 996
 fnivel: 8
 nodesGeneratedByLevel: 3432
- time0: 1.12
+ time0: 1.11
 nodesGeneratedToTheLevel: 8316
-f: 9 [3817 evaluated, 2365 expanded, t=1.12s,generated_states:,8316,additional_states:,3432,],random_comb_index:-1
+f: 9 [3817 evaluated, 2365 expanded, t=1.11s,generated_states:,8316,additional_states:,3432,],random_comb_index:-1
 last_jump:9,F_bound_to_print:0
 gen_to_exp_ratio: 3.44578
 F_bound:,9,Peak memory=,54.2539
 F:9
 F_bound:9,Peak memory=54.2539,nodes:3817,Nodes mem_space:119.281,F_boundary_Range:1451
 F:9
-F_bound:9F_boundary_time:-1.06577e-16,Hoff Potential Range:1451,leaves_to_sample:145
+F_bound:9F_boundary_time:-9.76866e-17,Hoff Potential Range:1451,leaves_to_sample:145
 new F_bound:9chosen_Hoff_Roots_size:0 out of 1451
 Memory after Sampling::55556
 Memory before starting new F-boundary:55556
@@ -301,7 +301,7 @@ F_bound:,10,Peak memory=,54.2539
 F:10
 F_bound:10,Peak memory=54.2539,nodes:4921,Nodes mem_space:153.781,F_boundary_Range:1103
 F:10
-F_bound:10F_boundary_time:-1.06577e-16,Hoff Potential Range:1103,leaves_to_sample:110
+F_bound:10F_boundary_time:0.01,Hoff Potential Range:1103,leaves_to_sample:110
 new F_bound:10chosen_Hoff_Roots_size:0 out of 1103
 Memory after Sampling::55556
 Memory before starting new F-boundary:55556
@@ -383,7 +383,7 @@ Search space hash bucket count: 6151
 Search time: 1.12s
 Total time: 1.12s
 Peak memory: 55556 KB
-VmRSS memory: 1544 KB
-VmHWM memory: 34396 KB
+VmRSS memory: 1540 KB
+VmHWM memory: 34384 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

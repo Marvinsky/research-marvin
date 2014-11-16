@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = astar(blind())
-argv[4] = XDG_VTNR=2
-argv[5] = XDG_SESSION_ID=c2
+argv[4] = XDG_VTNR=1
+argv[5] = XDG_SESSION_ID=c1
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -32,7 +32,7 @@ got 2 heuristics
 f_evaluator populated
 # heuristics:1
 starting timings
-node gen_and_exp_cost:1.6881e-06
+node gen_and_exp_cost:1.69349e-06
 active heuristics size:1
 Initializing blind search heuristic...
 	Maxing_h[0]:0
@@ -49,11 +49,11 @@ gen_to_exp_ratio: -nan
 F_bound:,1,Peak memory=,54.2539
 Best heuristic value: 1 [g=0, 1 evaluated, 0 expanded, t=1s]
 starting timing individual heuristics
-h[,0,] is:,,heur:blind,measured time cost:4.78477e-07,h:1
+h[,0,] is:,,heur:blind,measured time cost:4.98514e-07,h:1
 memory before deleting databases:
-VmRSS memory: 22992 KB
+VmRSS memory: 22380 KB
 memory after deleting all databases:
-VmRSS memory: 22992 KB
+VmRSS memory: 22380 KB
 Remaining heuristics:
 remaining initial heur,heur:blind
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes:1000
@@ -445,16 +445,16 @@ generated_states - lastjump_generated_states = 2688
 expanded_states - lastjump_expanded_states = 969
 fnivel: 15
 nodesGeneratedByLevel: 2688
- time0: 1.12
+ time0: 1.11
 nodesGeneratedToTheLevel: 7622
-f: 16 [3345 evaluated, 2366 expanded, t=1.12s,generated_states:,7622,additional_states:,2688,],random_comb_index:-1
+f: 16 [3345 evaluated, 2366 expanded, t=1.11s,generated_states:,7622,additional_states:,2688,],random_comb_index:-1
 last_jump:16,F_bound_to_print:0
 gen_to_exp_ratio: 2.77399
 F_bound:,16,Peak memory=,54.2539
 F:16
 F_bound:16,Peak memory=54.2539,nodes:3345,Nodes mem_space:104.531,F_boundary_Range:978
 F:16
-F_bound:16F_boundary_time:0.01,Hoff Potential Range:978,leaves_to_sample:100
+F_bound:16F_boundary_time:-9.76866e-17,Hoff Potential Range:978,leaves_to_sample:100
 new F_bound:16chosen_Hoff_Roots_size:0 out of 978
 Memory after Sampling::55556
 Memory before starting new F-boundary:55556
@@ -472,22 +472,22 @@ generated_states - lastjump_generated_states = 3159
 expanded_states - lastjump_expanded_states = 979
 fnivel: 16
 nodesGeneratedByLevel: 3159
- time0: 1.12
+ time0: 1.11
 nodesGeneratedToTheLevel: 10781
-f: 17 [4593 evaluated, 3345 expanded, t=1.12s,generated_states:,10781,additional_states:,3159,],random_comb_index:-1
+f: 17 [4593 evaluated, 3345 expanded, t=1.11s,generated_states:,10781,additional_states:,3159,],random_comb_index:-1
 last_jump:17,F_bound_to_print:0
 gen_to_exp_ratio: 3.22676
 F_bound:,17,Peak memory=,54.2539
 F:17
 F_bound:17,Peak memory=54.2539,nodes:4593,Nodes mem_space:143.531,F_boundary_Range:1247
 F:17
-F_bound:17F_boundary_time:-1.06577e-16,Hoff Potential Range:1247,leaves_to_sample:124
+F_bound:17F_boundary_time:-9.76866e-17,Hoff Potential Range:1247,leaves_to_sample:124
 new F_bound:17chosen_Hoff_Roots_size:0 out of 1247
 Memory after Sampling::55556
 Memory before starting new F-boundary:55556
-search_timer() = 1.12
-search_timer() = 1.12
-search_timer() = 1.12
+search_timer() = 1.11
+search_timer() = 1.11
+search_timer() = 1.11
 lastjumpt_f_value = 17
 f in report_f_value = 18
 generated states = 13619
@@ -502,16 +502,16 @@ generated_states - lastjump_generated_states = 2838
 expanded_states - lastjump_expanded_states = 1248
 fnivel: 17
 nodesGeneratedByLevel: 2838
- time0: 1.12
+ time0: 1.11
 nodesGeneratedToTheLevel: 13619
-f: 18 [5418 evaluated, 4593 expanded, t=1.12s,generated_states:,13619,additional_states:,2838,],random_comb_index:-1
+f: 18 [5418 evaluated, 4593 expanded, t=1.11s,generated_states:,13619,additional_states:,2838,],random_comb_index:-1
 last_jump:18,F_bound_to_print:0
 gen_to_exp_ratio: 2.27404
 F_bound:,18,Peak memory=,54.2539
 F:18
 F_bound:18,Peak memory=54.2539,nodes:5418,Nodes mem_space:169.312,F_boundary_Range:824
 F:18
-F_bound:18F_boundary_time:-1.06577e-16,Hoff Potential Range:824,leaves_to_sample:100
+F_bound:18F_boundary_time:-9.76866e-17,Hoff Potential Range:824,leaves_to_sample:100
 new F_bound:18chosen_Hoff_Roots_size:0 out of 824
 Memory after Sampling::55556
 Memory before starting new F-boundary:55556
@@ -539,7 +539,7 @@ F_bound:,19,Peak memory=,54.2539
 F:19
 F_bound:19,Peak memory=54.2539,nodes:6317,Nodes mem_space:197.406,F_boundary_Range:898
 F:19
-F_bound:19F_boundary_time:-1.06577e-16,Hoff Potential Range:898,leaves_to_sample:100
+F_bound:19F_boundary_time:0.01,Hoff Potential Range:898,leaves_to_sample:100
 new F_bound:19chosen_Hoff_Roots_size:0 out of 898
 Memory after Sampling::55556
 Memory before starting new F-boundary:55556
@@ -668,6 +668,6 @@ Search time: 1.12s
 Total time: 1.12s
 Peak memory: 55556 KB
 VmRSS memory: 1668 KB
-VmHWM memory: 35060 KB
+VmHWM memory: 34448 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

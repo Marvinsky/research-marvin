@@ -97,8 +97,13 @@ void create_report2(string astarText, string fileName, string pasta, string heur
            if (amount != tniveles) {
 	        if (amount == fnivel) {
 			astar2>>amount;
-			outputFile<<"\t"<<amount<<"\t\t";
-		} else if (amount == nodosNivel) {
+                        int nf = atoi(amount.c_str());
+                        if (total_niveles == 1) {
+			   outputFile<<"\t"<<nf-1<<"\t\t";
+			} else {
+			   outputFile<<"\t"<<amount<<"\t\t";
+			}
+			} else if (amount == nodosNivel) {
  			if (c1 != (total_niveles-2)) {
 				astar2>>amount;
 				outputFile<<amount<<"\t\t";
