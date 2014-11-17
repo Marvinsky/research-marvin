@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = ss(merge_and_shrink())
-argv[4] = XDG_VTNR=3
-argv[5] = XDG_SESSION_ID=c3
+argv[4] = XDG_VTNR=1
+argv[5] = XDG_SESSION_ID=c1
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -22,14 +22,14 @@ registered: ss
  ______________________________
 registered: merge_and_shrink
 parser is not dry_run
-g object = 0xa051790
+g object = 0x888b790
 ScalarEvaluator vector pointer []
-ScalarEvaluator vector pointer after add g = [0xa051790]
-ScalarEvaluator vector pointer after add eval = [0xa051790, 0xa04d7d8]
+ScalarEvaluator vector pointer after add g = [0x888b790]
+ScalarEvaluator vector pointer after add eval = [0x888b790, 0x88877d8]
 subevaluators_.size:2
-new vector of ScalarEvaluator created = [0xa04f770, 0xa04d7d8]
-OpenList vector of state_var_t objects = 0xa04d828
-engine = 0xa052bd8
+new vector of ScalarEvaluator created = [0x8889770, 0x88877d8]
+OpenList vector of state_var_t objects = 0x8887828
+engine = 0x888cbd8
  ___________________________________
 |         calling initialize        |
  ___________________________________
@@ -50,9 +50,9 @@ f_evaluator populated
 conditional_effects_present = 0
 Conditional effects present = 0
 starting timings 
-initial state = 0xa041180
-node_counter = 308579
-node_gen_and_exp_cost = 3,24066e-06
+initial state = 0x887b180
+node_counter = 593010
+node_gen_and_exp_cost = 1,68631e-06
 active heuristics size : 1
 # heristics = 1
 dead_end = 1
@@ -160,70 +160,70 @@ Next variable: #5
 Abstraction (5/11 vars): computing distances using unit-cost algorithm
 Atomic abstraction #5: distances already known
 Abstraction (5/11 vars): 2592 states, ???/32400 arcs, 299076 bytes
-Abstraction (5/11 vars): init h=6, max f=18, max g=9, max h=9 [t=1,01s]
+Abstraction (5/11 vars): init h=6, max f=18, max g=9, max h=9 [t=1s]
 Atomic abstraction #5: 2 states, ???/27 arcs, 1136 bytes
-Atomic abstraction #5: init h=0, max f=1, max g=1, max h=0 [t=1,01s]
+Atomic abstraction #5: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Abstraction (5/11 vars): normalizing with label reduction
 Label reduction: 5 pruned vars, 50 labels, 38 reduced labels
 Abstraction (5/11 vars): 2592 states, ???/32400 arcs, 433092 bytes
-Abstraction (5/11 vars): init h=6, max f=18, max g=9, max h=9 [t=1,02s]
+Abstraction (5/11 vars): init h=6, max f=18, max g=9, max h=9 [t=1s]
 Atomic abstraction #5: normalizing without label reduction
 Atomic abstraction #5: 2 states, ???/27 arcs, 1136 bytes
-Atomic abstraction #5: init h=0, max f=1, max g=1, max h=0 [t=1,02s]
+Atomic abstraction #5: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Merging abstraction (5/11 vars) and atomic abstraction #5
 Abstraction (6/11 vars): 5184 states, ???/59832 arcs, 536676 bytes
-Abstraction (6/11 vars): distances not computed [t=1,02s]
+Abstraction (6/11 vars): distances not computed [t=1s]
 Next variable: #4
 Abstraction (6/11 vars): computing distances using unit-cost algorithm
 Atomic abstraction #4: distances already known
 Abstraction (6/11 vars): 5184 states, ???/59832 arcs, 578148 bytes
-Abstraction (6/11 vars): init h=6, max f=21, max g=14, max h=11 [t=1,02s]
+Abstraction (6/11 vars): init h=6, max f=21, max g=14, max h=11 [t=1s]
 Atomic abstraction #4: 2 states, ???/27 arcs, 1136 bytes
-Atomic abstraction #4: init h=0, max f=1, max g=1, max h=0 [t=1,02s]
+Atomic abstraction #4: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Abstraction (6/11 vars): normalizing with label reduction
 Label reduction: 6 pruned vars, 50 labels, 31 reduced labels
 Abstraction (6/11 vars): 5184 states, ???/59832 arcs, 818340 bytes
-Abstraction (6/11 vars): init h=6, max f=21, max g=14, max h=11 [t=1,03s]
+Abstraction (6/11 vars): init h=6, max f=21, max g=14, max h=11 [t=1,01s]
 Atomic abstraction #4: normalizing without label reduction
 Atomic abstraction #4: 2 states, ???/27 arcs, 1136 bytes
-Atomic abstraction #4: init h=0, max f=1, max g=1, max h=0 [t=1,03s]
+Atomic abstraction #4: init h=0, max f=1, max g=1, max h=0 [t=1,01s]
 Merging abstraction (6/11 vars) and atomic abstraction #4
 Abstraction (7/11 vars): 10368 states, ???/109728 arcs, 992868 bytes
-Abstraction (7/11 vars): distances not computed [t=1,03s]
+Abstraction (7/11 vars): distances not computed [t=1,01s]
 Next variable: #3
 Abstraction (7/11 vars): computing distances using unit-cost algorithm
 Atomic abstraction #3: distances already known
 Abstraction (7/11 vars): 10368 states, ???/109728 arcs, 1075812 bytes
-Abstraction (7/11 vars): init h=6, max f=24, max g=16, max h=13 [t=1,05s]
+Abstraction (7/11 vars): init h=6, max f=24, max g=16, max h=13 [t=1,01s]
 Atomic abstraction #3: 2 states, ???/27 arcs, 1136 bytes
-Atomic abstraction #3: init h=0, max f=1, max g=1, max h=0 [t=1,05s]
+Atomic abstraction #3: init h=0, max f=1, max g=1, max h=0 [t=1,01s]
 Abstraction (7/11 vars): normalizing with label reduction
 Label reduction: 7 pruned vars, 50 labels, 23 reduced labels
 Abstraction (7/11 vars): 10368 states, ???/109728 arcs, 1533284 bytes
-Abstraction (7/11 vars): init h=6, max f=24, max g=16, max h=13 [t=1,07s]
+Abstraction (7/11 vars): init h=6, max f=24, max g=16, max h=13 [t=1,03s]
 Atomic abstraction #3: normalizing without label reduction
 Atomic abstraction #3: 2 states, ???/27 arcs, 1136 bytes
-Atomic abstraction #3: init h=0, max f=1, max g=1, max h=0 [t=1,07s]
+Atomic abstraction #3: init h=0, max f=1, max g=1, max h=0 [t=1,03s]
 Merging abstraction (7/11 vars) and atomic abstraction #3
 Abstraction (8/11 vars): 20736 states, ???/199584 arcs, 1825764 bytes
-Abstraction (8/11 vars): distances not computed [t=1,07s]
+Abstraction (8/11 vars): distances not computed [t=1,03s]
 Next variable: #2
 Abstraction (8/11 vars): computing distances using unit-cost algorithm
 Atomic abstraction #2: distances already known
 Abstraction (8/11 vars): 20736 states, ???/199584 arcs, 1991652 bytes
-Abstraction (8/11 vars): init h=6, max f=27, max g=16, max h=15 [t=1,1s]
+Abstraction (8/11 vars): init h=6, max f=27, max g=16, max h=15 [t=1,05s]
 Atomic abstraction #2: 2 states, ???/27 arcs, 1136 bytes
-Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1,1s]
+Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1,05s]
 Abstraction (8/11 vars): normalizing with label reduction
 Label reduction: 8 pruned vars, 50 labels, 17 reduced labels
 Abstraction (8/11 vars): 20736 states, ???/199584 arcs, 2836196 bytes
-Abstraction (8/11 vars): init h=6, max f=27, max g=16, max h=15 [t=1,13s]
+Abstraction (8/11 vars): init h=6, max f=27, max g=16, max h=15 [t=1,07s]
 Atomic abstraction #2: normalizing without label reduction
 Atomic abstraction #2: 2 states, ???/27 arcs, 1136 bytes
-Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1,13s]
+Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1,07s]
 Merging abstraction (8/11 vars) and atomic abstraction #2
 Abstraction (9/11 vars): 41472 states, ???/359424 arcs, 3332580 bytes
-Abstraction (9/11 vars): distances not computed [t=1,14s]
+Abstraction (9/11 vars): distances not computed [t=1,08s]
 Next variable: #1
 Abstraction (9/11 vars): computing distances using unit-cost algorithm
 Atomic abstraction #1: distances already known
@@ -232,67 +232,67 @@ Abstraction (9/11 vars): applying abstraction (41472 to 25000 states)
 Abstraction (9/11 vars): applying abstraction to lookup table
 Abstraction (9/11 vars): size after shrink 25000, target 25000
 Abstraction (9/11 vars): 25000 states, ???/359424 arcs, 3516132 bytes
-Abstraction (9/11 vars): init h=8, max f=30, max g=16, max h=17 [t=1,21s]
+Abstraction (9/11 vars): init h=8, max f=30, max g=16, max h=17 [t=1,12s]
 Atomic abstraction #1: 2 states, ???/27 arcs, 1136 bytes
-Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1,21s]
+Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1,12s]
 Abstraction (9/11 vars): normalizing with label reduction
 Label reduction: 9 pruned vars, 50 labels, 13 reduced labels
-Abstraction (9/11 vars): 25000 states, ???/265982 arcs, 3458788 bytes
-Abstraction (9/11 vars): init h=8, max f=30, max g=16, max h=17 [t=1,27s]
+Abstraction (9/11 vars): 25000 states, ???/265968 arcs, 3458788 bytes
+Abstraction (9/11 vars): init h=8, max f=30, max g=16, max h=17 [t=1,16s]
 Atomic abstraction #1: normalizing without label reduction
 Atomic abstraction #1: 2 states, ???/27 arcs, 1136 bytes
-Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1,27s]
+Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1,16s]
 Merging abstraction (9/11 vars) and atomic abstraction #1
-Abstraction (10/11 vars): 50000 states, ???/438152 arcs, 4056228 bytes
-Abstraction (10/11 vars): distances not computed [t=1,27s]
+Abstraction (10/11 vars): 50000 states, ???/438128 arcs, 4056036 bytes
+Abstraction (10/11 vars): distances not computed [t=1,16s]
 Next variable: #0
 Abstraction (10/11 vars): computing distances using unit-cost algorithm
-Abstraction (10/11 vars): unreachable: 8593 states, irrelevant: 0 states
+Abstraction (10/11 vars): unreachable: 8598 states, irrelevant: 0 states
 Abstraction (10/11 vars): shrink forced to prune unreachable/irrelevant states
-Abstraction (10/11 vars): applying abstraction (50000 to 41407 states)
+Abstraction (10/11 vars): applying abstraction (50000 to 41402 states)
 Abstraction (10/11 vars): applying abstraction to lookup table
-Abstraction (10/11 vars): size after shrink 41407, target 50000
+Abstraction (10/11 vars): size after shrink 41402, target 50000
 Atomic abstraction #0: distances already known
-Abstraction (10/11 vars): shrink from size 41407 (threshold: 8333)
-Abstraction (10/11 vars): applying abstraction (41407 to 8333 states)
+Abstraction (10/11 vars): shrink from size 41402 (threshold: 8333)
+Abstraction (10/11 vars): applying abstraction (41402 to 8333 states)
 Abstraction (10/11 vars): applying abstraction to lookup table
 Abstraction (10/11 vars): size after shrink 8333, target 8333
-Abstraction (10/11 vars): 8333 states, ???/391820 arcs, 3710572 bytes
-Abstraction (10/11 vars): init h=8, max f=30, max g=16, max h=17 [t=1,37s]
+Abstraction (10/11 vars): 8333 states, ???/391773 arcs, 3710196 bytes
+Abstraction (10/11 vars): init h=8, max f=30, max g=16, max h=17 [t=1,21s]
 Atomic abstraction #0: 6 states, ???/10 arcs, 984 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1,37s]
+Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1,21s]
 Abstraction (10/11 vars): normalizing with label reduction
 Label reduction: 10 pruned vars, 50 labels, 11 reduced labels
-Abstraction (10/11 vars): 8333 states, ???/103260 arcs, 1690124 bytes
-Abstraction (10/11 vars): init h=8, max f=30, max g=16, max h=17 [t=1,39s]
+Abstraction (10/11 vars): 8333 states, ???/103292 arcs, 1690124 bytes
+Abstraction (10/11 vars): init h=8, max f=30, max g=16, max h=17 [t=1,23s]
 Atomic abstraction #0: normalizing without label reduction
 Atomic abstraction #0: 6 states, ???/10 arcs, 984 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1,39s]
+Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1,23s]
 Merging abstraction (10/11 vars) and atomic abstraction #0
-Abstraction (11/11 vars): 49998 states, ???/320675 arcs, 2916400 bytes
-Abstraction (11/11 vars): distances not computed [t=1,4s]
+Abstraction (11/11 vars): 49998 states, ???/320742 arcs, 2916936 bytes
+Abstraction (11/11 vars): distances not computed [t=1,23s]
 Abstraction (11/11 vars): computing distances using unit-cost algorithm
-Abstraction (11/11 vars): unreachable: 6730 states, irrelevant: 51 states
+Abstraction (11/11 vars): unreachable: 6732 states, irrelevant: 51 states
 Abstraction (11/11 vars): shrink forced to prune unreachable/irrelevant states
-Abstraction (11/11 vars): applying abstraction (49998 to 43217 states)
+Abstraction (11/11 vars): applying abstraction (49998 to 43215 states)
 Abstraction (11/11 vars): applying abstraction to lookup table
-Abstraction (11/11 vars): size after shrink 43217, target 49998
+Abstraction (11/11 vars): size after shrink 43215, target 49998
 Abstraction (11/11 vars): shrink forced to prune unreachable/irrelevant states
-Abstraction (11/11 vars): applying abstraction (43217 to 43217 states)
+Abstraction (11/11 vars): applying abstraction (43215 to 43215 states)
 Abstraction (11/11 vars): applying abstraction to lookup table
-Abstraction (11/11 vars): size after shrink 43217, target 43217
+Abstraction (11/11 vars): size after shrink 43215, target 43215
 Abstraction (11/11 vars): distances already known
-Abstraction (11/11 vars): 43217 states, ???/305335 arcs, 3132632 bytes
-Abstraction (11/11 vars): init h=10, max f=30, max g=18, max h=19 [t=1,47s]
-Done initializing merge-and-shrink heuristic [0,47s]
+Abstraction (11/11 vars): 43215 states, ???/305335 arcs, 3132616 bytes
+Abstraction (11/11 vars): init h=10, max f=30, max g=18, max h=19 [t=1,28s]
+Done initializing merge-and-shrink heuristic [0,28s]
 initial h value: 10
-Estimated peak memory for abstraction: 3132632 bytes
+Estimated peak memory for abstraction: 3132616 bytes
 heur_name = No Name
-h[,0,] is:,heur is not named,measured time cost: 0,47,h:10
+h[,0,] is:,heur is not named,measured time cost: 0,28,h:10
 memory before deleting databases: 
-VmRSS memory: 16900 KB
+VmRSS memory: 24436 KB
 memory after deleting all databases: 
-VmRSS memory: 16900 KB
+VmRSS memory: 24436 KB
 Remaining heuristics:
 remaining initial heur heur is not named
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 10
@@ -321,7 +321,7 @@ v_f_value.size() = 0
 ****************************************************************
 total levels = 21
 The f-Distribution for max_g of this iteration 21
-
+22, 
 ****************************************************************
 counter in te while k = 167
 Number of expanded nodes with threshold 20 = 13518612
@@ -383,10 +383,11 @@ g: 20
 f: 20 q: 1
 f: 22 q: 1
 g: 21
+f: 22 q: 1
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
-Actual search time: 0,01s [t=1,48s]
+Actual search time: 0s [t=1,28s]
 Expanded 0 state(s).
 Reopened 0 state(s).
 Evaluated 1 state(s).
@@ -395,10 +396,10 @@ Generated 0 state(s).
 Dead ends: 1 state(s).
 Search space hash size: 41
 Search space hash bucket count: 193
-Search time: 1,48s
-Total time: 1,48s
-Peak memory: 26200 KB
-VmRSS memory: 8892 KB
-VmHWM memory: 20856 KB
+Search time: 1,28s
+Total time: 1,28s
+Peak memory: 34392 KB
+VmRSS memory: 9036 KB
+VmHWM memory: 27536 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

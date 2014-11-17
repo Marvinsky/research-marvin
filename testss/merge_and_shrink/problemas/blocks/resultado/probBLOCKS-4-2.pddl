@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = ss(merge_and_shrink())
-argv[4] = XDG_VTNR=3
-argv[5] = XDG_SESSION_ID=c3
+argv[4] = XDG_VTNR=1
+argv[5] = XDG_SESSION_ID=c1
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -22,14 +22,14 @@ registered: ss
  ______________________________
 registered: merge_and_shrink
 parser is not dry_run
-g object = 0x8646f88
+g object = 0x88ecf88
 ScalarEvaluator vector pointer []
-ScalarEvaluator vector pointer after add g = [0x8646f88]
-ScalarEvaluator vector pointer after add eval = [0x8646f88, 0x86493b0]
+ScalarEvaluator vector pointer after add g = [0x88ecf88]
+ScalarEvaluator vector pointer after add eval = [0x88ecf88, 0x88ef3b0]
 subevaluators_.size:2
-new vector of ScalarEvaluator created = [0x8648dd0, 0x86493b0]
-OpenList vector of state_var_t objects = 0x86482a8
-engine = 0x8648330
+new vector of ScalarEvaluator created = [0x88eedd0, 0x88ef3b0]
+OpenList vector of state_var_t objects = 0x88ee2a8
+engine = 0x88ee330
  ___________________________________
 |         calling initialize        |
  ___________________________________
@@ -50,9 +50,9 @@ f_evaluator populated
 conditional_effects_present = 0
 Conditional effects present = 0
 starting timings 
-initial state = 0x8640088
-node_counter = 423173
-node_gen_and_exp_cost = 2,3631e-06
+initial state = 0x88e6088
+node_counter = 724537
+node_gen_and_exp_cost = 1,38019e-06
 active heuristics size : 1
 # heristics = 1
 dead_end = 0
@@ -216,13 +216,13 @@ Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Abstraction (7/9 vars): normalizing with label reduction
 Label reduction: 7 pruned vars, 32 labels, 11 reduced labels
 Abstraction (7/9 vars): 2000 states, ???/13800 arcs, 165644 bytes
-Abstraction (7/9 vars): init h=6, max f=23, max g=12, max h=13 [t=1,01s]
+Abstraction (7/9 vars): init h=6, max f=23, max g=12, max h=13 [t=1s]
 Atomic abstraction #1: normalizing without label reduction
 Atomic abstraction #1: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1,01s]
+Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Merging abstraction (7/9 vars) and atomic abstraction #1
 Abstraction (8/9 vars): 4000 states, ???/22400 arcs, 223852 bytes
-Abstraction (8/9 vars): distances not computed [t=1,01s]
+Abstraction (8/9 vars): distances not computed [t=1s]
 Next variable: #0
 Abstraction (8/9 vars): computing distances using unit-cost algorithm
 Abstraction (8/9 vars): unreachable: 1016 states, irrelevant: 0 states
@@ -244,7 +244,7 @@ Atomic abstraction #0: 5 states, ???/8 arcs, 708 bytes
 Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1,01s]
 Merging abstraction (8/9 vars) and atomic abstraction #0
 Abstraction (9/9 vars): 14920 states, ???/46908 arcs, 486348 bytes
-Abstraction (9/9 vars): distances not computed [t=1,02s]
+Abstraction (9/9 vars): distances not computed [t=1,01s]
 Abstraction (9/9 vars): computing distances using unit-cost algorithm
 Abstraction (9/9 vars): unreachable: 14795 states, irrelevant: 0 states
 Abstraction (9/9 vars): shrink forced to prune unreachable/irrelevant states
@@ -262,11 +262,11 @@ Done initializing merge-and-shrink heuristic [0,02s]
 initial h value: 6
 Estimated peak memory for abstraction: 486348 bytes
 heur_name = No Name
-h[,0,] is:,heur is not named,measured time cost: 1,41539e-06,h:6
+h[,0,] is:,heur is not named,measured time cost: 9,03053e-07,h:6
 memory before deleting databases: 
-VmRSS memory: 11516 KB
+VmRSS memory: 17632 KB
 memory after deleting all databases: 
-VmRSS memory: 11516 KB
+VmRSS memory: 17632 KB
 Remaining heuristics:
 remaining initial heur heur is not named
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
@@ -295,7 +295,7 @@ v_f_value.size() = 0
 ****************************************************************
 total levels = 13
 The f-Distribution for max_g of this iteration 13
-
+14, 
 ****************************************************************
 counter in te while k = 73
 Number of expanded nodes with threshold 12 = 91122
@@ -335,6 +335,7 @@ g: 12
 f: 12 q: 1
 f: 14 q: 1
 g: 13
+f: 14 q: 1
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
@@ -355,7 +356,7 @@ Search space hash bucket count: 193
 Search time: 1,11s
 Total time: 1,11s
 Peak memory: 30932 KB
-VmRSS memory: 2268 KB
-VmHWM memory: 18428 KB
+VmRSS memory: 2272 KB
+VmHWM memory: 18400 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
