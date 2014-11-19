@@ -91,34 +91,30 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 
         astar2.open(astarText.c_str());	
 	outputFile<<"\tf\t\t#Nodes_by_level\t\tRuntime(s)\t\t#Nodes_to_the_level\n";
-        int c1 = 0;
-	int c2 = 0;
+        int c1 = 1;
+	int c2 = 1;
 	while (astar2>>amount) {
            if (amount != tniveles) {
 	        if (amount == fnivel) {
 			astar2>>amount;
-                        int nf = atoi(amount.c_str());
-                        if (total_niveles == 1) {
-			   outputFile<<"\t"<<nf-1<<"\t\t";
-			} else {
-			   outputFile<<"\t"<<amount<<"\t\t";
-			}
-			} else if (amount == nodosNivel) {
- 			if (c1 != (total_niveles-2)) {
-				astar2>>amount;
-				outputFile<<amount<<"\t\t";
-			} else {
-				astar2>>amount;
-				int a1 = atoi(amount.c_str());
-				int n1 = a1 + count_lastNodes;
-				outputFile<<n1<<"\t\t";
-			}
-                        c1++;
+                        outputFile<<"\t"<<amount<<"\t\t";
+                       
+		} else if (amount == nodosNivel) {
+ 			if (c1 != (total_niveles-1)) {
+			astar2>>amount;
+			outputFile<<amount<<"\t\t";
+		} else {
+			astar2>>amount;
+			int a1 = atoi(amount.c_str());
+			int n1 = a1 + count_lastNodes;
+			outputFile<<n1<<"\t\t";
+		}
+                c1++;
 		} else if (amount == time) {
 			astar2>>amount;
 			outputFile<<"\t"<<amount<<"\t\t";
 		} else if (amount == nodesUpToNivel) {
-			if (c2 != (total_niveles - 2)) {
+			if (c2 != (total_niveles-1)) {
 				astar2>>amount;
                         	outputFile<<"\t"<<amount<<"\n";
 			} else {
@@ -127,7 +123,7 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 				int n2 = a2 + count_lastNodes;
 				outputFile<<"\t"<<n2<<"\n";
 			}
-			c2++;
+		c2++;
 		}
 	   }
 	}

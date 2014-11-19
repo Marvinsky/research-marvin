@@ -1,7 +1,7 @@
 	/home/marvin/marvin/test/merge_and_shrink/problemas/blocks/resultado/probBLOCKS-7-0.pddl
 totalniveles:	4
 	f		#Nodes_by_level		Runtime(s)		#Nodes_to_the_level
-	17		20			3.25			20
-	18		81			3.25			101
-	19		25			3.25			126
-	20		586			3.25			701
+	17		8			4.3			8
+	18		22			4.3			30
+	19		15			4.3			45
+	20		175			4.3			210

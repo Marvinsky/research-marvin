@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = astar(merge_and_shrink())
-argv[4] = XDG_VTNR=1
-argv[5] = XDG_SESSION_ID=c1
+argv[4] = XDG_VTNR=5
+argv[5] = XDG_SESSION_ID=c5
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -32,7 +32,7 @@ got 2 heuristics
 f_evaluator populated
 # heuristics:1
 starting timings
-node gen_and_exp_cost:1.4134e-06
+node gen_and_exp_cost:2.60516e-06
 active heuristics size:1
 Initializing merge-and-shrink heuristic...
 Merge strategy: linear CG/GOAL, tie breaking on level (main)
@@ -228,24 +228,50 @@ reopened states = 0
 f: 6 [1 evaluated, 0 expanded, t=1.02s,generated_states:,0,additional_states:,0,],random_comb_index:-1
 last_jump:6,F_bound_to_print:0
 gen_to_exp_ratio: -nan
-F_bound:,6,Peak memory=,30.2031
+F_bound:,6,Peak memory=,18.2109
 Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=1.02s]
 starting timing individual heuristics
-h[,0,] is:,heur is not named,measured time cost:6.14951e-07,h:6
+h[,0,] is:,heur is not named,measured time cost:1.1101e-06,h:6
 memory before deleting databases:
-VmRSS memory: 17812 KB
+VmRSS memory: 9608 KB
 memory after deleting all databases:
-VmRSS memory: 17812 KB
+VmRSS memory: 9608 KB
 Remaining heuristics:
 remaining initial heurheur is not named
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes:1000
+
+Raiz node h = 6,g = 0, f = 6
 search_timer() = 1.13
+	line 656 node h = 7,g = 1, f = 8
+	line 656 node h = 5,g = 1, f = 6
 Best heuristic value: 5 [g=1, 3 evaluated, 1 expanded, t=1.13s]
+	line 656 node h = 7,g = 1, f = 8
+
+Raiz node h = 5,g = 1, f = 6
+	line 656 node h = 6,g = 2, f = 8
+	line 656 node h = 4,g = 2, f = 6
 Best heuristic value: 4 [g=2, 6 evaluated, 2 expanded, t=1.13s]
+	line 656 node h = 6,g = 2, f = 8
+
+Raiz node h = 4,g = 2, f = 6
+	line 656 node h = 5,g = 3, f = 8
+	line 656 node h = 3,g = 3, f = 6
 Best heuristic value: 3 [g=3, 9 evaluated, 3 expanded, t=1.13s]
+
+Raiz node h = 3,g = 3, f = 6
+	line 656 node h = 4,g = 4, f = 8
+	line 656 node h = 2,g = 4, f = 6
 Best heuristic value: 2 [g=4, 11 evaluated, 4 expanded, t=1.13s]
+
+Raiz node h = 2,g = 4, f = 6
+	line 656 node h = 1,g = 5, f = 6
 Best heuristic value: 1 [g=5, 12 evaluated, 5 expanded, t=1.13s]
+
+Raiz node h = 1,g = 5, f = 6
+	line 656 node h = 0,g = 6, f = 6
 Best heuristic value: 0 [g=6, 13 evaluated, 6 expanded, t=1.13s]
+
+Raiz node h = 0,g = 6, f = 6
  _________________________________
 |          Solution found!        |
  _________________________________
@@ -264,21 +290,23 @@ lastjump expanded states = 0
 lastjump reopened states = 0
 generated_states - lastjump_generated_states = 17
 expanded_states - lastjump_expanded_states = 7
-fnivel: 7
-nodesGeneratedByLevel: 17
+fnivel: 6
+nodesGeneratedByLevel: 7
  time0: 1.13
-nodesGeneratedToTheLevel: 17
+nodesGeneratedToTheLevel: 7
 f: 8 [13 evaluated, 7 expanded, t=1.13s,generated_states:,17,additional_states:,17,],random_comb_index:-1
 last_jump:8,F_bound_to_print:0
 gen_to_exp_ratio: 2.42857
-F_bound:,8,Peak memory=,30.2031
+F_bound:,8,Peak memory=,18.2109
 F:8
-F_bound:8,Peak memory=30.2031,nodes:13,Nodes mem_space:0.40625,F_boundary_Range:5
+F_bound:8,Peak memory=18.2109,nodes:13,Nodes mem_space:0.40625,F_boundary_Range:5
 F:8
 F_bound:8F_boundary_time:1.06577e-16,Hoff Potential Range:5,leaves_to_sample:5
 new F_bound:8chosen_Hoff_Roots_size:0 out of 5
-Memory after Sampling::30928
-Memory before starting new F-boundary:30928
+Memory after Sampling::18648
+Memory before starting new F-boundary:18648
+
+Raiz node h = 4,g = 4, f = 8
 totalniveles: 1
 count_last_nodes_gerados: 0
  ____________________________________
@@ -308,8 +336,8 @@ Search space hash size: 13
 Search space hash bucket count: 193
 Search time: 1.13s
 Total time: 1.13s
-Peak memory: 30928 KB
-VmRSS memory: 2288 KB
-VmHWM memory: 18604 KB
+Peak memory: 18648 KB
+VmRSS memory: 2220 KB
+VmHWM memory: 9848 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

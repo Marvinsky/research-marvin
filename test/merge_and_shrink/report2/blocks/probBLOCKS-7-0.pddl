@@ -2,6 +2,6 @@
 	totalleveles: 3
 
 	d		#Nodes_by_level		Runtime(s)		#NodesToTheLevel
-	17			20			3.25		20
-	18			81			3.25		101
-	19			25			3.25		126
+	17			8			4.3		8
+	18			22			4.3		30
+	19			15			4.3		45
