@@ -1,4 +1,3 @@
 22
-2
-blind
-merge_and_shrink
+1
+dijkstra

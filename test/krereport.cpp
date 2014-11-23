@@ -91,8 +91,8 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 
         astar2.open(astarText.c_str());	
 	outputFile<<"\tf\t\t#Nodes_by_level\t\tRuntime(s)\t\t#Nodes_to_the_level\n";
-        int c1 = 1;
-	int c2 = 1;
+        //int c1 = 1;
+	//int c2 = 1;
 	while (astar2>>amount) {
            if (amount != tniveles) {
 	        if (amount == fnivel) {
@@ -100,21 +100,25 @@ void create_report2(string astarText, string fileName, string pasta, string heur
                         outputFile<<"\t"<<amount<<"\t\t";
                        
 		} else if (amount == nodosNivel) {
- 			if (c1 != (total_niveles-1)) {
-			astar2>>amount;
-			outputFile<<amount<<"\t\t";
-		} else {
-			astar2>>amount;
-			int a1 = atoi(amount.c_str());
-			int n1 = a1 + count_lastNodes;
-			outputFile<<n1<<"\t\t";
-		}
-                c1++;
+                           astar2>>amount;
+			   outputFile<<amount<<"\t\t";
+ 			/*if (c1 != (total_niveles-1)) {
+			   astar2>>amount;
+			   outputFile<<amount<<"\t\t";
+		        } else {
+			   astar2>>amount;
+			   int a1 = atoi(amount.c_str());
+			   int n1 = a1 + count_lastNodes;
+			   outputFile<<n1<<"\t\t";
+		        }
+                        c1++;*/
 		} else if (amount == time) {
 			astar2>>amount;
 			outputFile<<"\t"<<amount<<"\t\t";
 		} else if (amount == nodesUpToNivel) {
-			if (c2 != (total_niveles-1)) {
+	                   astar2>>amount;
+                           outputFile<<"\t"<<amount<<"\n";
+			/*if (c2 != (total_niveles-1)) {
 				astar2>>amount;
                         	outputFile<<"\t"<<amount<<"\n";
 			} else {
@@ -123,7 +127,7 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 				int n2 = a2 + count_lastNodes;
 				outputFile<<"\t"<<n2<<"\n";
 			}
-		c2++;
+		        c2++;*/
 		}
 	   }
 	}
@@ -136,7 +140,7 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 	int r = 0;
 
 	ifstream astar3;
-	if (isBlind) {
+	if (false) {
 	   astar3.open(astarText.c_str());
 	   while (astar3>>amount) {
                 if (amount ==  branchingFactor) {
@@ -235,7 +239,7 @@ void create_report1(string heuristic, int countProblems) {
 		system(pastaReporte.c_str());     
 
 		bool isBlind = heuristic=="blind";
-		if (isBlind) {
+		if (false) {
 	           string  pastaInterpolar = "mkdir /home/marvin/marvin/test/"+heuristic+"/krereport/"+pasta+"/interpolar";
 		   system(pastaInterpolar.c_str());     
 		}

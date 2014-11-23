@@ -266,7 +266,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 				for (map<int, int>::iterator it = m.begin(); it != m.end(); it++) {
 				    int f = it->first;
 				    
-                                    if (f <= threshold) {
+                                    if (f == threshold) {
 				       sumR = sumR + it->second;
 				    }
 				} 

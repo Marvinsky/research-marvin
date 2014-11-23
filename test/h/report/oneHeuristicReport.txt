@@ -1,4 +1,4 @@
 1
 2
-blind
+dijkstra
 merge_and_shrink

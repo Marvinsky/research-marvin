@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = ss(merge_and_shrink())
-argv[4] = XDG_VTNR=4
-argv[5] = XDG_SESSION_ID=c4
+argv[4] = XDG_VTNR=1
+argv[5] = XDG_SESSION_ID=c6
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -22,21 +22,21 @@ registered: ss
  ______________________________
 registered: merge_and_shrink
 parser is not dry_run
-g object = 0x98efb90
+g object = 0x9551bd0
 ScalarEvaluator vector pointer []
-ScalarEvaluator vector pointer after add g = [0x98efb90]
-ScalarEvaluator vector pointer after add eval = [0x98efb90, 0x98f0378]
+ScalarEvaluator vector pointer after add g = [0x9551bd0]
+ScalarEvaluator vector pointer after add eval = [0x9551bd0, 0x95523b8]
 subevaluators_.size:2
-new vector of ScalarEvaluator created = [0x98f1e00, 0x98f0378]
-OpenList vector of state_var_t objects = 0x98f2550
-engine = 0x98f18e8
+new vector of ScalarEvaluator created = [0x9553e40, 0x95523b8]
+OpenList vector of state_var_t objects = 0x9554590
+engine = 0x9553928
  ___________________________________
 |         calling initialize        |
  ___________________________________
  __________________________________________
 |  initialize() - ss_search.cc             |
  __________________________________________
-Conducting best first search with reopening closed nodes, (real) bound = 0
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
 first_sample set to true
 something here
 argc_copy = 0
@@ -50,9 +50,9 @@ f_evaluator populated
 conditional_effects_present = 0
 Conditional effects present = 0
 starting timings 
-initial state = 0x98e9088
-node_counter = 408812
-node_gen_and_exp_cost = 2,44611e-06
+initial state = 0x954b0c8
+node_counter = 742709
+node_gen_and_exp_cost = 1,34642e-06
 active heuristics size : 1
 # heristics = 1
 dead_end = 1
@@ -187,24 +187,24 @@ Atomic abstraction #2: 2 states, ???/21 arcs, 808 bytes
 Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Merging abstraction (6/9 vars) and atomic abstraction #2
 Abstraction (7/9 vars): 2000 states, ???/13800 arcs, 133068 bytes
-Abstraction (7/9 vars): distances not computed [t=1,01s]
+Abstraction (7/9 vars): distances not computed [t=1s]
 Next variable: #1
 Abstraction (7/9 vars): computing distances using unit-cost algorithm
 Atomic abstraction #1: distances already known
 Abstraction (7/9 vars): 2000 states, ???/13800 arcs, 149068 bytes
-Abstraction (7/9 vars): init h=8, max f=25, max g=14, max h=13 [t=1,01s]
+Abstraction (7/9 vars): init h=8, max f=25, max g=14, max h=13 [t=1s]
 Atomic abstraction #1: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1,01s]
+Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Abstraction (7/9 vars): normalizing with label reduction
 Label reduction: 7 pruned vars, 32 labels, 11 reduced labels
 Abstraction (7/9 vars): 2000 states, ???/13800 arcs, 165644 bytes
-Abstraction (7/9 vars): init h=8, max f=25, max g=14, max h=13 [t=1,02s]
+Abstraction (7/9 vars): init h=8, max f=25, max g=14, max h=13 [t=1s]
 Atomic abstraction #1: normalizing without label reduction
 Atomic abstraction #1: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1,02s]
+Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Merging abstraction (7/9 vars) and atomic abstraction #1
 Abstraction (8/9 vars): 4000 states, ???/22400 arcs, 223852 bytes
-Abstraction (8/9 vars): distances not computed [t=1,02s]
+Abstraction (8/9 vars): distances not computed [t=1s]
 Next variable: #0
 Abstraction (8/9 vars): computing distances using unit-cost algorithm
 Abstraction (8/9 vars): unreachable: 1016 states, irrelevant: 0 states
@@ -214,16 +214,16 @@ Abstraction (8/9 vars): applying abstraction to lookup table
 Abstraction (8/9 vars): size after shrink 2984, target 4000
 Atomic abstraction #0: distances already known
 Abstraction (8/9 vars): 2984 states, ???/18576 arcs, 246732 bytes
-Abstraction (8/9 vars): init h=8, max f=25, max g=15, max h=13 [t=1,02s]
+Abstraction (8/9 vars): init h=8, max f=25, max g=15, max h=13 [t=1,01s]
 Atomic abstraction #0: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1,02s]
+Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1,01s]
 Abstraction (8/9 vars): normalizing with label reduction
 Label reduction: 8 pruned vars, 32 labels, 9 reduced labels
 Abstraction (8/9 vars): 2984 states, ???/18576 arcs, 247756 bytes
-Abstraction (8/9 vars): init h=8, max f=25, max g=15, max h=13 [t=1,02s]
+Abstraction (8/9 vars): init h=8, max f=25, max g=15, max h=13 [t=1,01s]
 Atomic abstraction #0: normalizing without label reduction
 Atomic abstraction #0: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1,02s]
+Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1,01s]
 Merging abstraction (8/9 vars) and atomic abstraction #0
 Abstraction (9/9 vars): 14920 states, ???/46908 arcs, 486348 bytes
 Abstraction (9/9 vars): distances not computed [t=1,02s]
@@ -239,16 +239,16 @@ Abstraction (9/9 vars): applying abstraction to lookup table
 Abstraction (9/9 vars): size after shrink 125, target 125
 Abstraction (9/9 vars): distances already known
 Abstraction (9/9 vars): 125 states, ???/272 arcs, 99444 bytes
-Abstraction (9/9 vars): init h=10, max f=24, max g=12, max h=12 [t=1,03s]
-Done initializing merge-and-shrink heuristic [0,03s]
+Abstraction (9/9 vars): init h=10, max f=24, max g=12, max h=12 [t=1,02s]
+Done initializing merge-and-shrink heuristic [0,02s]
 initial h value: 10
 Estimated peak memory for abstraction: 486348 bytes
 heur_name = No Name
-h[,0,] is:,heur is not named,measured time cost: 1,49442e-06,h:10
+h[,0,] is:,heur is not named,measured time cost: 7,76935e-07,h:10
 memory before deleting databases: 
-VmRSS memory: 9728 KB
+VmRSS memory: 17332 KB
 memory after deleting all databases: 
-VmRSS memory: 9728 KB
+VmRSS memory: 17332 KB
 Remaining heuristics:
 remaining initial heur heur is not named
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
@@ -273,54 +273,54 @@ time = Runtime(s)
 heuristic value of te initial node based on the heuristic vector = 10
 ******************************************
 Raiz:  h = 10 g = 0 f = 10
-g : 1
+g : 0
 Childs:  h = 9 g = 1 f = 10
 	Child Pruned  h = 9 g = 1 f = 10
 		
-		 level: 2 (to confirm).
+		 level: 1 (to confirm).
 		
 	New node h = 9 g = 1 f = 10
 ******************************************
 Raiz:  h = 9 g = 1 f = 10
-g : 2
+g : 1
 Childs:  h = 10 g = 2 f = 12
 	Child Pruned  h = 10 g = 2 f = 12
 		
-		 level: 3 (to confirm).
+		 level: 2 (to confirm).
 		
 	New node h = 10 g = 2 f = 12
 Childs:  h = 8 g = 2 f = 10
 	Child Pruned  h = 8 g = 2 f = 10
 		
-		 level: 3 (to confirm).
+		 level: 2 (to confirm).
 		h = 10, g = 2, f = 12
 		
 	New node h = 8 g = 2 f = 10
 ******************************************
 Raiz:  h = 8 g = 2 f = 10
-g : 3
+g : 2
 Childs:  h = 9 g = 3 f = 12
 	Child Pruned  h = 9 g = 3 f = 12
 		
-		 level: 4 (to confirm).
+		 level: 3 (to confirm).
 		h = 10, g = 2, f = 12
 		
 	New node h = 9 g = 3 f = 12
 Childs:  h = 7 g = 3 f = 10
 	Child Pruned  h = 7 g = 3 f = 10
 		
-		 level: 4 (to confirm).
+		 level: 3 (to confirm).
 		h = 10, g = 2, f = 12
 		h = 9, g = 3, f = 12
 		
 	New node h = 7 g = 3 f = 10
 ******************************************
 Raiz:  h = 10 g = 2 f = 12
-g : 3
+g : 2
 Childs:  h = 9 g = 3 f = 12
 	Child Pruned  h = 9 g = 3 f = 12
 		
-		 level: 4 (to confirm).
+		 level: 3 (to confirm).
 		h = 7, g = 3, f = 10
 		h = 9, g = 3, f = 12
 Node is in the queue and should not be added.
@@ -330,40 +330,41 @@ Update w from 1 to 2
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 7 g = 3 f = 10
-g : 4
+g : 3
 Childs:  h = 8 g = 4 f = 12
 	Child Pruned  h = 8 g = 4 f = 12
 		
-		 level: 5 (to confirm).
+		 level: 4 (to confirm).
 		h = 9, g = 3, f = 12
 		
 	New node h = 8 g = 4 f = 12
 Childs:  h = 8 g = 4 f = 12
 	Child Pruned  h = 8 g = 4 f = 12
 		
-		 level: 5 (to confirm).
+		 level: 4 (to confirm).
 		h = 9, g = 3, f = 12
 		h = 8, g = 4, f = 12
 Node is in the queue and should not be added.
 		
 Duplicate node h = 8 g = 4 f = 12
 Update w from 1 to 2
- a >= prob do not add the new element.
+remove the old node. 
+ a < prob add new child with w = 2
 Childs:  h = 6 g = 4 f = 10
 	Child Pruned  h = 6 g = 4 f = 10
 		
-		 level: 5 (to confirm).
+		 level: 4 (to confirm).
 		h = 9, g = 3, f = 12
 		h = 8, g = 4, f = 12
 		
 	New node h = 6 g = 4 f = 10
 ******************************************
 Raiz:  h = 9 g = 3 f = 12
-g : 4
+g : 3
 Childs:  h = 10 g = 4 f = 14
 	Child Pruned  h = 10 g = 4 f = 14
 		
-		 level: 5 (to confirm).
+		 level: 4 (to confirm).
 		h = 6, g = 4, f = 10
 		h = 8, g = 4, f = 12
 		
@@ -371,7 +372,7 @@ Childs:  h = 10 g = 4 f = 14
 Childs:  h = 8 g = 4 f = 12
 	Child Pruned  h = 8 g = 4 f = 12
 		
-		 level: 5 (to confirm).
+		 level: 4 (to confirm).
 		h = 6, g = 4, f = 10
 		h = 8, g = 4, f = 12
 Node is in the queue and should not be added.
@@ -382,11 +383,11 @@ Update w from 2 to 4
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 6 g = 4 f = 10
-g : 5
+g : 4
 Childs:  h = 5 g = 5 f = 10
 	Child Pruned  h = 5 g = 5 f = 10
 		
-		 level: 6 (to confirm).
+		 level: 5 (to confirm).
 		h = 8, g = 4, f = 12
 		h = 10, g = 4, f = 14
 		
@@ -394,7 +395,7 @@ Childs:  h = 5 g = 5 f = 10
 Childs:  h = 7 g = 5 f = 12
 	Child Pruned  h = 7 g = 5 f = 12
 		
-		 level: 6 (to confirm).
+		 level: 5 (to confirm).
 		h = 8, g = 4, f = 12
 		h = 10, g = 4, f = 14
 		h = 5, g = 5, f = 10
@@ -403,7 +404,7 @@ Childs:  h = 7 g = 5 f = 12
 Childs:  h = 7 g = 5 f = 12
 	Child Pruned  h = 7 g = 5 f = 12
 		
-		 level: 6 (to confirm).
+		 level: 5 (to confirm).
 		h = 8, g = 4, f = 12
 		h = 10, g = 4, f = 14
 		h = 5, g = 5, f = 10
@@ -415,11 +416,11 @@ Update w from 1 to 2
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 8 g = 4 f = 12
-g : 5
+g : 4
 Childs:  h = 9 g = 5 f = 14
 	Child Pruned  h = 9 g = 5 f = 14
 		
-		 level: 6 (to confirm).
+		 level: 5 (to confirm).
 		h = 10, g = 4, f = 14
 		h = 5, g = 5, f = 10
 		h = 7, g = 5, f = 12
@@ -428,7 +429,7 @@ Childs:  h = 9 g = 5 f = 14
 Childs:  h = 7 g = 5 f = 12
 	Child Pruned  h = 7 g = 5 f = 12
 		
-		 level: 6 (to confirm).
+		 level: 5 (to confirm).
 		h = 10, g = 4, f = 14
 		h = 5, g = 5, f = 10
 		h = 7, g = 5, f = 12
@@ -437,29 +438,29 @@ Node is in the queue and should not be added.
 		
 Duplicate node h = 7 g = 5 f = 12
 Update w from 2 to 6
- a < prob add new child.
+ a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 10 g = 4 f = 14
-g : 5
+g : 4
 Childs:  h = 9 g = 5 f = 14
 	Child Pruned  h = 9 g = 5 f = 14
 		
-		 level: 6 (to confirm).
+		 level: 5 (to confirm).
 		h = 5, g = 5, f = 10
 		h = 7, g = 5, f = 12
 		h = 9, g = 5, f = 14
 Node is in the queue and should not be added.
 		
 Duplicate node h = 9 g = 5 f = 14
-Update w from 2 to 4
+Update w from 4 to 6
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 5 g = 5 f = 10
-g : 6
+g : 5
 Childs:  h = 4 g = 6 f = 10
 	Child Pruned  h = 4 g = 6 f = 10
 		
-		 level: 7 (to confirm).
+		 level: 6 (to confirm).
 		h = 7, g = 5, f = 12
 		h = 9, g = 5, f = 14
 		
@@ -467,7 +468,7 @@ Childs:  h = 4 g = 6 f = 10
 Childs:  h = 6 g = 6 f = 12
 	Child Pruned  h = 6 g = 6 f = 12
 		
-		 level: 7 (to confirm).
+		 level: 6 (to confirm).
 		h = 7, g = 5, f = 12
 		h = 9, g = 5, f = 14
 		h = 4, g = 6, f = 10
@@ -476,7 +477,7 @@ Childs:  h = 6 g = 6 f = 12
 Childs:  h = 6 g = 6 f = 12
 	Child Pruned  h = 6 g = 6 f = 12
 		
-		 level: 7 (to confirm).
+		 level: 6 (to confirm).
 		h = 7, g = 5, f = 12
 		h = 9, g = 5, f = 14
 		h = 4, g = 6, f = 10
@@ -485,11 +486,12 @@ Node is in the queue and should not be added.
 		
 Duplicate node h = 6 g = 6 f = 12
 Update w from 1 to 2
- a < prob add new child.
+remove the old node. 
+ a < prob add new child with w = 2
 Childs:  h = 6 g = 6 f = 12
 	Child Pruned  h = 6 g = 6 f = 12
 		
-		 level: 7 (to confirm).
+		 level: 6 (to confirm).
 		h = 7, g = 5, f = 12
 		h = 9, g = 5, f = 14
 		h = 4, g = 6, f = 10
@@ -501,11 +503,11 @@ Update w from 2 to 3
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 7 g = 5 f = 12
-g : 6
+g : 5
 Childs:  h = 8 g = 6 f = 14
 	Child Pruned  h = 8 g = 6 f = 14
 		
-		 level: 7 (to confirm).
+		 level: 6 (to confirm).
 		h = 9, g = 5, f = 14
 		h = 4, g = 6, f = 10
 		h = 6, g = 6, f = 12
@@ -514,7 +516,7 @@ Childs:  h = 8 g = 6 f = 14
 Childs:  h = 8 g = 6 f = 14
 	Child Pruned  h = 8 g = 6 f = 14
 		
-		 level: 7 (to confirm).
+		 level: 6 (to confirm).
 		h = 9, g = 5, f = 14
 		h = 4, g = 6, f = 10
 		h = 6, g = 6, f = 12
@@ -523,11 +525,12 @@ Node is in the queue and should not be added.
 		
 Duplicate node h = 8 g = 6 f = 14
 Update w from 6 to 12
- a < prob add new child.
+remove the old node. 
+ a < prob add new child with w = 12
 Childs:  h = 6 g = 6 f = 12
 	Child Pruned  h = 6 g = 6 f = 12
 		
-		 level: 7 (to confirm).
+		 level: 6 (to confirm).
 		h = 9, g = 5, f = 14
 		h = 4, g = 6, f = 10
 		h = 6, g = 6, f = 12
@@ -535,15 +538,15 @@ Node is in the queue and should not be added.
 		h = 8, g = 6, f = 14
 		
 Duplicate node h = 6 g = 6 f = 12
-Update w from 3 to 9
- a < prob add new child.
+Update w from 6 to 12
+ a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 9 g = 5 f = 14
-g : 6
+g : 5
 Childs:  h = 10 g = 6 f = 16
 	Child Pruned  h = 10 g = 6 f = 16
 		
-		 level: 7 (to confirm).
+		 level: 6 (to confirm).
 		h = 4, g = 6, f = 10
 		h = 6, g = 6, f = 12
 		h = 8, g = 6, f = 14
@@ -552,7 +555,7 @@ Childs:  h = 10 g = 6 f = 16
 Childs:  h = 8 g = 6 f = 14
 	Child Pruned  h = 8 g = 6 f = 14
 		
-		 level: 7 (to confirm).
+		 level: 6 (to confirm).
 		h = 4, g = 6, f = 10
 		h = 6, g = 6, f = 12
 		h = 8, g = 6, f = 14
@@ -560,15 +563,28 @@ Node is in the queue and should not be added.
 		h = 10, g = 6, f = 16
 		
 Duplicate node h = 8 g = 6 f = 14
-Update w from 12 to 16
+Update w from 12 to 18
+ a >= prob do not add the new element.
+Childs:  h = 8 g = 6 f = 14
+	Child Pruned  h = 8 g = 6 f = 14
+		
+		 level: 6 (to confirm).
+		h = 4, g = 6, f = 10
+		h = 6, g = 6, f = 12
+		h = 8, g = 6, f = 14
+Node is in the queue and should not be added.
+		h = 10, g = 6, f = 16
+		
+Duplicate node h = 8 g = 6 f = 14
+Update w from 18 to 24
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 4 g = 6 f = 10
-g : 7
+g : 6
 Childs:  h = 5 g = 7 f = 12
 	Child Pruned  h = 5 g = 7 f = 12
 		
-		 level: 8 (to confirm).
+		 level: 7 (to confirm).
 		h = 6, g = 6, f = 12
 		h = 8, g = 6, f = 14
 		h = 10, g = 6, f = 16
@@ -577,7 +593,7 @@ Childs:  h = 5 g = 7 f = 12
 Childs:  h = 3 g = 7 f = 10
 	Child Pruned  h = 3 g = 7 f = 10
 		
-		 level: 8 (to confirm).
+		 level: 7 (to confirm).
 		h = 6, g = 6, f = 12
 		h = 8, g = 6, f = 14
 		h = 10, g = 6, f = 16
@@ -587,7 +603,7 @@ Childs:  h = 3 g = 7 f = 10
 Childs:  h = 5 g = 7 f = 12
 	Child Pruned  h = 5 g = 7 f = 12
 		
-		 level: 8 (to confirm).
+		 level: 7 (to confirm).
 		h = 6, g = 6, f = 12
 		h = 8, g = 6, f = 14
 		h = 10, g = 6, f = 16
@@ -597,14 +613,15 @@ Node is in the queue and should not be added.
 		
 Duplicate node h = 5 g = 7 f = 12
 Update w from 1 to 2
- a < prob add new child.
+remove the old node. 
+ a < prob add new child with w = 2
 ******************************************
 Raiz:  h = 6 g = 6 f = 12
-g : 7
+g : 6
 Childs:  h = 5 g = 7 f = 12
 	Child Pruned  h = 5 g = 7 f = 12
 		
-		 level: 8 (to confirm).
+		 level: 7 (to confirm).
 		h = 8, g = 6, f = 14
 		h = 10, g = 6, f = 16
 		h = 3, g = 7, f = 10
@@ -612,12 +629,13 @@ Childs:  h = 5 g = 7 f = 12
 Node is in the queue and should not be added.
 		
 Duplicate node h = 5 g = 7 f = 12
-Update w from 9 to 18
- a < prob add new child.
+Update w from 2 to 14
+remove the old node. 
+ a < prob add new child with w = 14
 Childs:  h = 7 g = 7 f = 14
 	Child Pruned  h = 7 g = 7 f = 14
 		
-		 level: 8 (to confirm).
+		 level: 7 (to confirm).
 		h = 8, g = 6, f = 14
 		h = 10, g = 6, f = 16
 		h = 3, g = 7, f = 10
@@ -627,7 +645,7 @@ Childs:  h = 7 g = 7 f = 14
 Childs:  h = 7 g = 7 f = 14
 	Child Pruned  h = 7 g = 7 f = 14
 		
-		 level: 8 (to confirm).
+		 level: 7 (to confirm).
 		h = 8, g = 6, f = 14
 		h = 10, g = 6, f = 16
 		h = 3, g = 7, f = 10
@@ -636,41 +654,42 @@ Childs:  h = 7 g = 7 f = 14
 Node is in the queue and should not be added.
 		
 Duplicate node h = 7 g = 7 f = 14
-Update w from 9 to 18
- a < prob add new child.
+Update w from 12 to 24
+ a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 8 g = 6 f = 14
-g : 7
-Childs:  h = 7 g = 7 f = 14
-	Child Pruned  h = 7 g = 7 f = 14
-		
-		 level: 8 (to confirm).
-		h = 10, g = 6, f = 16
-		h = 3, g = 7, f = 10
-		h = 5, g = 7, f = 12
-		h = 7, g = 7, f = 14
-Node is in the queue and should not be added.
-		
-Duplicate node h = 7 g = 7 f = 14
-Update w from 18 to 34
- a >= prob do not add the new element.
+g : 6
 Childs:  h = 9 g = 7 f = 16
 	Child Pruned  h = 9 g = 7 f = 16
 		
-		 level: 8 (to confirm).
+		 level: 7 (to confirm).
 		h = 10, g = 6, f = 16
 		h = 3, g = 7, f = 10
 		h = 5, g = 7, f = 12
 		h = 7, g = 7, f = 14
 		
 	New node h = 9 g = 7 f = 16
+Childs:  h = 7 g = 7 f = 14
+	Child Pruned  h = 7 g = 7 f = 14
+		
+		 level: 7 (to confirm).
+		h = 10, g = 6, f = 16
+		h = 3, g = 7, f = 10
+		h = 5, g = 7, f = 12
+		h = 7, g = 7, f = 14
+Node is in the queue and should not be added.
+		h = 9, g = 7, f = 16
+		
+Duplicate node h = 7 g = 7 f = 14
+Update w from 24 to 48
+ a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 10 g = 6 f = 16
-g : 7
+g : 6
 Childs:  h = 9 g = 7 f = 16
 	Child Pruned  h = 9 g = 7 f = 16
 		
-		 level: 8 (to confirm).
+		 level: 7 (to confirm).
 		h = 3, g = 7, f = 10
 		h = 5, g = 7, f = 12
 		h = 7, g = 7, f = 14
@@ -678,66 +697,84 @@ Childs:  h = 9 g = 7 f = 16
 Node is in the queue and should not be added.
 		
 Duplicate node h = 9 g = 7 f = 16
-Update w from 16 to 20
- a < prob add new child.
-******************************************
-Raiz:  h = 3 g = 7 f = 10
-g : 8
-Childs:  h = 2 g = 8 f = 10
-	Child Pruned  h = 2 g = 8 f = 10
+Update w from 24 to 30
+remove the old node. 
+ a < prob add new child with w = 30
+Childs:  h = 11 g = 7 f = 18
+	Child Pruned  h = 11 g = 7 f = 18
 		
-		 level: 9 (to confirm).
+		 level: 7 (to confirm).
+		h = 3, g = 7, f = 10
 		h = 5, g = 7, f = 12
 		h = 7, g = 7, f = 14
 		h = 9, g = 7, f = 16
+		
+	New node h = 11 g = 7 f = 18
+******************************************
+Raiz:  h = 3 g = 7 f = 10
+g : 7
+Childs:  h = 2 g = 8 f = 10
+	Child Pruned  h = 2 g = 8 f = 10
+		
+		 level: 8 (to confirm).
+		h = 5, g = 7, f = 12
+		h = 7, g = 7, f = 14
+		h = 9, g = 7, f = 16
+		h = 11, g = 7, f = 18
 		
 	New node h = 2 g = 8 f = 10
 Childs:  h = 4 g = 8 f = 12
 	Child Pruned  h = 4 g = 8 f = 12
 		
-		 level: 9 (to confirm).
+		 level: 8 (to confirm).
 		h = 5, g = 7, f = 12
 		h = 7, g = 7, f = 14
 		h = 9, g = 7, f = 16
+		h = 11, g = 7, f = 18
 		h = 2, g = 8, f = 10
 		
 	New node h = 4 g = 8 f = 12
 Childs:  h = 4 g = 8 f = 12
 	Child Pruned  h = 4 g = 8 f = 12
 		
-		 level: 9 (to confirm).
+		 level: 8 (to confirm).
 		h = 5, g = 7, f = 12
 		h = 7, g = 7, f = 14
 		h = 9, g = 7, f = 16
+		h = 11, g = 7, f = 18
 		h = 2, g = 8, f = 10
 		h = 4, g = 8, f = 12
 Node is in the queue and should not be added.
 		
 Duplicate node h = 4 g = 8 f = 12
 Update w from 1 to 2
- a < prob add new child.
+remove the old node. 
+ a < prob add new child with w = 2
 ******************************************
 Raiz:  h = 5 g = 7 f = 12
-g : 8
+g : 7
 Childs:  h = 4 g = 8 f = 12
 	Child Pruned  h = 4 g = 8 f = 12
 		
-		 level: 9 (to confirm).
+		 level: 8 (to confirm).
 		h = 7, g = 7, f = 14
 		h = 9, g = 7, f = 16
+		h = 11, g = 7, f = 18
 		h = 2, g = 8, f = 10
 		h = 4, g = 8, f = 12
 Node is in the queue and should not be added.
 		
 Duplicate node h = 4 g = 8 f = 12
-Update w from 2 to 20
- a < prob add new child.
+Update w from 14 to 28
+remove the old node. 
+ a < prob add new child with w = 28
 Childs:  h = 6 g = 8 f = 14
 	Child Pruned  h = 6 g = 8 f = 14
 		
-		 level: 9 (to confirm).
+		 level: 8 (to confirm).
 		h = 7, g = 7, f = 14
 		h = 9, g = 7, f = 16
+		h = 11, g = 7, f = 18
 		h = 2, g = 8, f = 10
 		h = 4, g = 8, f = 12
 		
@@ -745,39 +782,42 @@ Childs:  h = 6 g = 8 f = 14
 Childs:  h = 6 g = 8 f = 14
 	Child Pruned  h = 6 g = 8 f = 14
 		
-		 level: 9 (to confirm).
+		 level: 8 (to confirm).
 		h = 7, g = 7, f = 14
 		h = 9, g = 7, f = 16
+		h = 11, g = 7, f = 18
 		h = 2, g = 8, f = 10
 		h = 4, g = 8, f = 12
 		h = 6, g = 8, f = 14
 Node is in the queue and should not be added.
 		
 Duplicate node h = 6 g = 8 f = 14
-Update w from 18 to 36
+Update w from 14 to 28
  a >= prob do not add the new element.
 Childs:  h = 6 g = 8 f = 14
 	Child Pruned  h = 6 g = 8 f = 14
 		
-		 level: 9 (to confirm).
+		 level: 8 (to confirm).
 		h = 7, g = 7, f = 14
 		h = 9, g = 7, f = 16
+		h = 11, g = 7, f = 18
 		h = 2, g = 8, f = 10
 		h = 4, g = 8, f = 12
 		h = 6, g = 8, f = 14
 Node is in the queue and should not be added.
 		
 Duplicate node h = 6 g = 8 f = 14
-Update w from 36 to 54
+Update w from 28 to 42
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 7 g = 7 f = 14
-g : 8
+g : 7
 Childs:  h = 8 g = 8 f = 16
 	Child Pruned  h = 8 g = 8 f = 16
 		
-		 level: 9 (to confirm).
+		 level: 8 (to confirm).
 		h = 9, g = 7, f = 16
+		h = 11, g = 7, f = 18
 		h = 2, g = 8, f = 10
 		h = 4, g = 8, f = 12
 		h = 6, g = 8, f = 14
@@ -786,8 +826,9 @@ Childs:  h = 8 g = 8 f = 16
 Childs:  h = 8 g = 8 f = 16
 	Child Pruned  h = 8 g = 8 f = 16
 		
-		 level: 9 (to confirm).
+		 level: 8 (to confirm).
 		h = 9, g = 7, f = 16
+		h = 11, g = 7, f = 18
 		h = 2, g = 8, f = 10
 		h = 4, g = 8, f = 12
 		h = 6, g = 8, f = 14
@@ -795,13 +836,15 @@ Childs:  h = 8 g = 8 f = 16
 Node is in the queue and should not be added.
 		
 Duplicate node h = 8 g = 8 f = 16
-Update w from 34 to 68
- a < prob add new child.
+Update w from 48 to 96
+remove the old node. 
+ a < prob add new child with w = 96
 Childs:  h = 6 g = 8 f = 14
 	Child Pruned  h = 6 g = 8 f = 14
 		
-		 level: 9 (to confirm).
+		 level: 8 (to confirm).
 		h = 9, g = 7, f = 16
+		h = 11, g = 7, f = 18
 		h = 2, g = 8, f = 10
 		h = 4, g = 8, f = 12
 		h = 6, g = 8, f = 14
@@ -809,15 +852,16 @@ Node is in the queue and should not be added.
 		h = 8, g = 8, f = 16
 		
 Duplicate node h = 6 g = 8 f = 14
-Update w from 34 to 68
+Update w from 42 to 90
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 9 g = 7 f = 16
-g : 8
+g : 7
 Childs:  h = 10 g = 8 f = 18
 	Child Pruned  h = 10 g = 8 f = 18
 		
-		 level: 9 (to confirm).
+		 level: 8 (to confirm).
+		h = 11, g = 7, f = 18
 		h = 2, g = 8, f = 10
 		h = 4, g = 8, f = 12
 		h = 6, g = 8, f = 14
@@ -827,7 +871,8 @@ Childs:  h = 10 g = 8 f = 18
 Childs:  h = 8 g = 8 f = 16
 	Child Pruned  h = 8 g = 8 f = 16
 		
-		 level: 9 (to confirm).
+		 level: 8 (to confirm).
+		h = 11, g = 7, f = 18
 		h = 2, g = 8, f = 10
 		h = 4, g = 8, f = 12
 		h = 6, g = 8, f = 14
@@ -836,42 +881,90 @@ Node is in the queue and should not be added.
 		h = 10, g = 8, f = 18
 		
 Duplicate node h = 8 g = 8 f = 16
-Update w from 68 to 88
+Update w from 96 to 126
+ a >= prob do not add the new element.
+Childs:  h = 8 g = 8 f = 16
+	Child Pruned  h = 8 g = 8 f = 16
+		
+		 level: 8 (to confirm).
+		h = 11, g = 7, f = 18
+		h = 2, g = 8, f = 10
+		h = 4, g = 8, f = 12
+		h = 6, g = 8, f = 14
+		h = 8, g = 8, f = 16
+Node is in the queue and should not be added.
+		h = 10, g = 8, f = 18
+		
+Duplicate node h = 8 g = 8 f = 16
+Update w from 126 to 156
  a >= prob do not add the new element.
 ******************************************
-Raiz:  h = 2 g = 8 f = 10
-g : 9
-Childs:  h = 3 g = 9 f = 12
-	Child Pruned  h = 3 g = 9 f = 12
+Raiz:  h = 11 g = 7 f = 18
+g : 7
+Childs:  h = 12 g = 8 f = 20
+	Child Pruned  h = 12 g = 8 f = 20
 		
-		 level: 10 (to confirm).
+		 level: 8 (to confirm).
+		h = 2, g = 8, f = 10
 		h = 4, g = 8, f = 12
 		h = 6, g = 8, f = 14
 		h = 8, g = 8, f = 16
 		h = 10, g = 8, f = 18
+		
+	New node h = 12 g = 8 f = 20
+Childs:  h = 10 g = 8 f = 18
+	Child Pruned  h = 10 g = 8 f = 18
+		
+		 level: 8 (to confirm).
+		h = 2, g = 8, f = 10
+		h = 4, g = 8, f = 12
+		h = 6, g = 8, f = 14
+		h = 8, g = 8, f = 16
+		h = 10, g = 8, f = 18
+Node is in the queue and should not be added.
+		h = 12, g = 8, f = 20
+		
+Duplicate node h = 10 g = 8 f = 18
+Update w from 6 to 12
+remove the old node. 
+ a < prob add new child with w = 12
+******************************************
+Raiz:  h = 2 g = 8 f = 10
+g : 8
+Childs:  h = 3 g = 9 f = 12
+	Child Pruned  h = 3 g = 9 f = 12
+		
+		 level: 9 (to confirm).
+		h = 4, g = 8, f = 12
+		h = 6, g = 8, f = 14
+		h = 8, g = 8, f = 16
+		h = 10, g = 8, f = 18
+		h = 12, g = 8, f = 20
 		
 	New node h = 3 g = 9 f = 12
 Childs:  h = 1 g = 9 f = 10
 	Child Pruned  h = 1 g = 9 f = 10
 		
-		 level: 10 (to confirm).
+		 level: 9 (to confirm).
 		h = 4, g = 8, f = 12
 		h = 6, g = 8, f = 14
 		h = 8, g = 8, f = 16
 		h = 10, g = 8, f = 18
+		h = 12, g = 8, f = 20
 		h = 3, g = 9, f = 12
 		
 	New node h = 1 g = 9 f = 10
 ******************************************
 Raiz:  h = 4 g = 8 f = 12
-g : 9
+g : 8
 Childs:  h = 5 g = 9 f = 14
 	Child Pruned  h = 5 g = 9 f = 14
 		
-		 level: 10 (to confirm).
+		 level: 9 (to confirm).
 		h = 6, g = 8, f = 14
 		h = 8, g = 8, f = 16
 		h = 10, g = 8, f = 18
+		h = 12, g = 8, f = 20
 		h = 1, g = 9, f = 10
 		h = 3, g = 9, f = 12
 		
@@ -879,41 +972,63 @@ Childs:  h = 5 g = 9 f = 14
 Childs:  h = 3 g = 9 f = 12
 	Child Pruned  h = 3 g = 9 f = 12
 		
-		 level: 10 (to confirm).
+		 level: 9 (to confirm).
 		h = 6, g = 8, f = 14
 		h = 8, g = 8, f = 16
 		h = 10, g = 8, f = 18
+		h = 12, g = 8, f = 20
 		h = 1, g = 9, f = 10
 		h = 3, g = 9, f = 12
 Node is in the queue and should not be added.
 		h = 5, g = 9, f = 14
 		
 Duplicate node h = 3 g = 9 f = 12
-Update w from 20 to 40
- a < prob add new child.
-******************************************
-Raiz:  h = 6 g = 8 f = 14
-g : 9
+Update w from 28 to 56
+remove the old node. 
+ a < prob add new child with w = 56
 Childs:  h = 5 g = 9 f = 14
 	Child Pruned  h = 5 g = 9 f = 14
 		
-		 level: 10 (to confirm).
+		 level: 9 (to confirm).
+		h = 6, g = 8, f = 14
 		h = 8, g = 8, f = 16
 		h = 10, g = 8, f = 18
+		h = 12, g = 8, f = 20
 		h = 1, g = 9, f = 10
 		h = 3, g = 9, f = 12
 		h = 5, g = 9, f = 14
 Node is in the queue and should not be added.
 		
 Duplicate node h = 5 g = 9 f = 14
-Update w from 20 to 88
- a < prob add new child.
+Update w from 28 to 56
+remove the old node. 
+ a < prob add new child with w = 56
+******************************************
+Raiz:  h = 6 g = 8 f = 14
+g : 8
+Childs:  h = 5 g = 9 f = 14
+	Child Pruned  h = 5 g = 9 f = 14
+		
+		 level: 9 (to confirm).
+		h = 8, g = 8, f = 16
+		h = 10, g = 8, f = 18
+		h = 12, g = 8, f = 20
+		h = 1, g = 9, f = 10
+		h = 3, g = 9, f = 12
+		h = 5, g = 9, f = 14
+Node is in the queue and should not be added.
+		
+Duplicate node h = 5 g = 9 f = 14
+Update w from 56 to 146
+remove the old node. 
+ a < prob add new child with w = 146
 Childs:  h = 7 g = 9 f = 16
 	Child Pruned  h = 7 g = 9 f = 16
 		
-		 level: 10 (to confirm).
+		 level: 9 (to confirm).
 		h = 8, g = 8, f = 16
 		h = 10, g = 8, f = 18
+		h = 12, g = 8, f = 20
 		h = 1, g = 9, f = 10
 		h = 3, g = 9, f = 12
 		h = 5, g = 9, f = 14
@@ -922,9 +1037,10 @@ Childs:  h = 7 g = 9 f = 16
 Childs:  h = 7 g = 9 f = 16
 	Child Pruned  h = 7 g = 9 f = 16
 		
-		 level: 10 (to confirm).
+		 level: 9 (to confirm).
 		h = 8, g = 8, f = 16
 		h = 10, g = 8, f = 18
+		h = 12, g = 8, f = 20
 		h = 1, g = 9, f = 10
 		h = 3, g = 9, f = 12
 		h = 5, g = 9, f = 14
@@ -932,43 +1048,49 @@ Childs:  h = 7 g = 9 f = 16
 Node is in the queue and should not be added.
 		
 Duplicate node h = 7 g = 9 f = 16
-Update w from 68 to 136
- a >= prob do not add the new element.
+Update w from 90 to 180
+remove the old node. 
+ a < prob add new child with w = 180
 ******************************************
 Raiz:  h = 8 g = 8 f = 16
-g : 9
-Childs:  h = 7 g = 9 f = 16
-	Child Pruned  h = 7 g = 9 f = 16
-		
-		 level: 10 (to confirm).
-		h = 10, g = 8, f = 18
-		h = 1, g = 9, f = 10
-		h = 3, g = 9, f = 12
-		h = 5, g = 9, f = 14
-		h = 7, g = 9, f = 16
-Node is in the queue and should not be added.
-		
-Duplicate node h = 7 g = 9 f = 16
-Update w from 88 to 176
- a >= prob do not add the new element.
+g : 8
 Childs:  h = 9 g = 9 f = 18
 	Child Pruned  h = 9 g = 9 f = 18
 		
-		 level: 10 (to confirm).
+		 level: 9 (to confirm).
 		h = 10, g = 8, f = 18
+		h = 12, g = 8, f = 20
 		h = 1, g = 9, f = 10
 		h = 3, g = 9, f = 12
 		h = 5, g = 9, f = 14
 		h = 7, g = 9, f = 16
 		
 	New node h = 9 g = 9 f = 18
+Childs:  h = 7 g = 9 f = 16
+	Child Pruned  h = 7 g = 9 f = 16
+		
+		 level: 9 (to confirm).
+		h = 10, g = 8, f = 18
+		h = 12, g = 8, f = 20
+		h = 1, g = 9, f = 10
+		h = 3, g = 9, f = 12
+		h = 5, g = 9, f = 14
+		h = 7, g = 9, f = 16
+Node is in the queue and should not be added.
+		h = 9, g = 9, f = 18
+		
+Duplicate node h = 7 g = 9 f = 16
+Update w from 180 to 336
+remove the old node. 
+ a < prob add new child with w = 336
 ******************************************
 Raiz:  h = 10 g = 8 f = 18
-g : 9
+g : 8
 Childs:  h = 9 g = 9 f = 18
 	Child Pruned  h = 9 g = 9 f = 18
 		
-		 level: 10 (to confirm).
+		 level: 9 (to confirm).
+		h = 12, g = 8, f = 20
 		h = 1, g = 9, f = 10
 		h = 3, g = 9, f = 12
 		h = 5, g = 9, f = 14
@@ -977,56 +1099,92 @@ Childs:  h = 9 g = 9 f = 18
 Node is in the queue and should not be added.
 		
 Duplicate node h = 9 g = 9 f = 18
-Update w from 88 to 108
+Update w from 156 to 168
  a >= prob do not add the new element.
-******************************************
-Raiz:  h = 1 g = 9 f = 10
-g : 10
-Childs:  h = 0 g = 10 f = 10
-	Child Pruned  h = 0 g = 10 f = 10
+Childs:  h = 11 g = 9 f = 20
+	Child Pruned  h = 11 g = 9 f = 20
 		
-		 level: 11 (to confirm).
+		 level: 9 (to confirm).
+		h = 12, g = 8, f = 20
+		h = 1, g = 9, f = 10
 		h = 3, g = 9, f = 12
 		h = 5, g = 9, f = 14
 		h = 7, g = 9, f = 16
 		h = 9, g = 9, f = 18
+		
+	New node h = 11 g = 9 f = 20
+******************************************
+Raiz:  h = 12 g = 8 f = 20
+g : 8
+Childs:  h = 11 g = 9 f = 20
+	Child Pruned  h = 11 g = 9 f = 20
+		
+		 level: 9 (to confirm).
+		h = 1, g = 9, f = 10
+		h = 3, g = 9, f = 12
+		h = 5, g = 9, f = 14
+		h = 7, g = 9, f = 16
+		h = 9, g = 9, f = 18
+		h = 11, g = 9, f = 20
+Node is in the queue and should not be added.
+		
+Duplicate node h = 11 g = 9 f = 20
+Update w from 6 to 12
+remove the old node. 
+ a < prob add new child with w = 12
+******************************************
+Raiz:  h = 1 g = 9 f = 10
+g : 9
+Childs:  h = 0 g = 10 f = 10
+	Child Pruned  h = 0 g = 10 f = 10
+		
+		 level: 10 (to confirm).
+		h = 3, g = 9, f = 12
+		h = 5, g = 9, f = 14
+		h = 7, g = 9, f = 16
+		h = 9, g = 9, f = 18
+		h = 11, g = 9, f = 20
 		
 	New node h = 0 g = 10 f = 10
 Childs:  h = 2 g = 10 f = 12
 	Child Pruned  h = 2 g = 10 f = 12
 		
-		 level: 11 (to confirm).
+		 level: 10 (to confirm).
 		h = 3, g = 9, f = 12
 		h = 5, g = 9, f = 14
 		h = 7, g = 9, f = 16
 		h = 9, g = 9, f = 18
+		h = 11, g = 9, f = 20
 		h = 0, g = 10, f = 10
 		
 	New node h = 2 g = 10 f = 12
 ******************************************
 Raiz:  h = 3 g = 9 f = 12
-g : 10
+g : 9
 Childs:  h = 2 g = 10 f = 12
 	Child Pruned  h = 2 g = 10 f = 12
 		
-		 level: 11 (to confirm).
+		 level: 10 (to confirm).
 		h = 5, g = 9, f = 14
 		h = 7, g = 9, f = 16
 		h = 9, g = 9, f = 18
+		h = 11, g = 9, f = 20
 		h = 0, g = 10, f = 10
 		h = 2, g = 10, f = 12
 Node is in the queue and should not be added.
 		
 Duplicate node h = 2 g = 10 f = 12
-Update w from 40 to 80
- a < prob add new child.
+Update w from 56 to 112
+remove the old node. 
+ a < prob add new child with w = 112
 Childs:  h = 4 g = 10 f = 14
 	Child Pruned  h = 4 g = 10 f = 14
 		
-		 level: 11 (to confirm).
+		 level: 10 (to confirm).
 		h = 5, g = 9, f = 14
 		h = 7, g = 9, f = 16
 		h = 9, g = 9, f = 18
+		h = 11, g = 9, f = 20
 		h = 0, g = 10, f = 10
 		h = 2, g = 10, f = 12
 		
@@ -1034,41 +1192,45 @@ Childs:  h = 4 g = 10 f = 14
 Childs:  h = 4 g = 10 f = 14
 	Child Pruned  h = 4 g = 10 f = 14
 		
-		 level: 11 (to confirm).
+		 level: 10 (to confirm).
 		h = 5, g = 9, f = 14
 		h = 7, g = 9, f = 16
 		h = 9, g = 9, f = 18
+		h = 11, g = 9, f = 20
 		h = 0, g = 10, f = 10
 		h = 2, g = 10, f = 12
 		h = 4, g = 10, f = 14
 Node is in the queue and should not be added.
 		
 Duplicate node h = 4 g = 10 f = 14
-Update w from 40 to 80
+Update w from 56 to 112
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 5 g = 9 f = 14
-g : 10
+g : 9
 Childs:  h = 4 g = 10 f = 14
 	Child Pruned  h = 4 g = 10 f = 14
 		
-		 level: 11 (to confirm).
+		 level: 10 (to confirm).
 		h = 7, g = 9, f = 16
 		h = 9, g = 9, f = 18
+		h = 11, g = 9, f = 20
 		h = 0, g = 10, f = 10
 		h = 2, g = 10, f = 12
 		h = 4, g = 10, f = 14
 Node is in the queue and should not be added.
 		
 Duplicate node h = 4 g = 10 f = 14
-Update w from 88 to 176
- a < prob add new child.
+Update w from 112 to 258
+remove the old node. 
+ a < prob add new child with w = 258
 Childs:  h = 6 g = 10 f = 16
 	Child Pruned  h = 6 g = 10 f = 16
 		
-		 level: 11 (to confirm).
+		 level: 10 (to confirm).
 		h = 7, g = 9, f = 16
 		h = 9, g = 9, f = 18
+		h = 11, g = 9, f = 20
 		h = 0, g = 10, f = 10
 		h = 2, g = 10, f = 12
 		h = 4, g = 10, f = 14
@@ -1077,9 +1239,10 @@ Childs:  h = 6 g = 10 f = 16
 Childs:  h = 6 g = 10 f = 16
 	Child Pruned  h = 6 g = 10 f = 16
 		
-		 level: 11 (to confirm).
+		 level: 10 (to confirm).
 		h = 7, g = 9, f = 16
 		h = 9, g = 9, f = 18
+		h = 11, g = 9, f = 20
 		h = 0, g = 10, f = 10
 		h = 2, g = 10, f = 12
 		h = 4, g = 10, f = 14
@@ -1087,16 +1250,33 @@ Childs:  h = 6 g = 10 f = 16
 Node is in the queue and should not be added.
 		
 Duplicate node h = 6 g = 10 f = 16
-Update w from 88 to 176
+Update w from 146 to 292
+ a >= prob do not add the new element.
+Childs:  h = 6 g = 10 f = 16
+	Child Pruned  h = 6 g = 10 f = 16
+		
+		 level: 10 (to confirm).
+		h = 7, g = 9, f = 16
+		h = 9, g = 9, f = 18
+		h = 11, g = 9, f = 20
+		h = 0, g = 10, f = 10
+		h = 2, g = 10, f = 12
+		h = 4, g = 10, f = 14
+		h = 6, g = 10, f = 16
+Node is in the queue and should not be added.
+		
+Duplicate node h = 6 g = 10 f = 16
+Update w from 292 to 438
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 7 g = 9 f = 16
-g : 10
+g : 9
 Childs:  h = 8 g = 10 f = 18
 	Child Pruned  h = 8 g = 10 f = 18
 		
-		 level: 11 (to confirm).
+		 level: 10 (to confirm).
 		h = 9, g = 9, f = 18
+		h = 11, g = 9, f = 20
 		h = 0, g = 10, f = 10
 		h = 2, g = 10, f = 12
 		h = 4, g = 10, f = 14
@@ -1106,8 +1286,9 @@ Childs:  h = 8 g = 10 f = 18
 Childs:  h = 8 g = 10 f = 18
 	Child Pruned  h = 8 g = 10 f = 18
 		
-		 level: 11 (to confirm).
+		 level: 10 (to confirm).
 		h = 9, g = 9, f = 18
+		h = 11, g = 9, f = 20
 		h = 0, g = 10, f = 10
 		h = 2, g = 10, f = 12
 		h = 4, g = 10, f = 14
@@ -1116,13 +1297,15 @@ Childs:  h = 8 g = 10 f = 18
 Node is in the queue and should not be added.
 		
 Duplicate node h = 8 g = 10 f = 18
-Update w from 176 to 352
- a >= prob do not add the new element.
+Update w from 336 to 672
+remove the old node. 
+ a < prob add new child with w = 672
 Childs:  h = 6 g = 10 f = 16
 	Child Pruned  h = 6 g = 10 f = 16
 		
-		 level: 11 (to confirm).
+		 level: 10 (to confirm).
 		h = 9, g = 9, f = 18
+		h = 11, g = 9, f = 20
 		h = 0, g = 10, f = 10
 		h = 2, g = 10, f = 12
 		h = 4, g = 10, f = 14
@@ -1131,15 +1314,17 @@ Node is in the queue and should not be added.
 		h = 8, g = 10, f = 18
 		
 Duplicate node h = 6 g = 10 f = 16
-Update w from 176 to 352
- a < prob add new child.
+Update w from 438 to 774
+remove the old node. 
+ a < prob add new child with w = 774
 ******************************************
 Raiz:  h = 9 g = 9 f = 18
-g : 10
+g : 9
 Childs:  h = 10 g = 10 f = 20
 	Child Pruned  h = 10 g = 10 f = 20
 		
-		 level: 11 (to confirm).
+		 level: 10 (to confirm).
+		h = 11, g = 9, f = 20
 		h = 0, g = 10, f = 10
 		h = 2, g = 10, f = 12
 		h = 4, g = 10, f = 14
@@ -1150,7 +1335,8 @@ Childs:  h = 10 g = 10 f = 20
 Childs:  h = 8 g = 10 f = 18
 	Child Pruned  h = 8 g = 10 f = 18
 		
-		 level: 11 (to confirm).
+		 level: 10 (to confirm).
+		h = 11, g = 9, f = 20
 		h = 0, g = 10, f = 10
 		h = 2, g = 10, f = 12
 		h = 4, g = 10, f = 14
@@ -1160,61 +1346,114 @@ Node is in the queue and should not be added.
 		h = 10, g = 10, f = 20
 		
 Duplicate node h = 8 g = 10 f = 18
-Update w from 108 to 216
- a < prob add new child.
-******************************************
-Raiz:  h = 0 g = 10 f = 10
-g : 11
-Childs:  h = 1 g = 11 f = 12
-	Child Pruned  h = 1 g = 11 f = 12
+Update w from 168 to 336
+remove the old node. 
+ a < prob add new child with w = 336
+Childs:  h = 8 g = 10 f = 18
+	Child Pruned  h = 8 g = 10 f = 18
 		
-		 level: 12 (to confirm).
+		 level: 10 (to confirm).
+		h = 11, g = 9, f = 20
+		h = 0, g = 10, f = 10
+		h = 2, g = 10, f = 12
+		h = 4, g = 10, f = 14
+		h = 6, g = 10, f = 16
+		h = 8, g = 10, f = 18
+Node is in the queue and should not be added.
+		h = 10, g = 10, f = 20
+		
+Duplicate node h = 8 g = 10 f = 18
+Update w from 336 to 504
+ a >= prob do not add the new element.
+******************************************
+Raiz:  h = 11 g = 9 f = 20
+g : 9
+Childs:  h = 12 g = 10 f = 22
+	Child Pruned  h = 12 g = 10 f = 22
+		
+		 level: 10 (to confirm).
+		h = 0, g = 10, f = 10
 		h = 2, g = 10, f = 12
 		h = 4, g = 10, f = 14
 		h = 6, g = 10, f = 16
 		h = 8, g = 10, f = 18
 		h = 10, g = 10, f = 20
 		
-	New node h = 1 g = 11 f = 12
-******************************************
-Raiz:  h = 2 g = 10 f = 12
-g : 11
-Childs:  h = 3 g = 11 f = 14
-	Child Pruned  h = 3 g = 11 f = 14
+	New node h = 12 g = 10 f = 22
+Childs:  h = 10 g = 10 f = 20
+	Child Pruned  h = 10 g = 10 f = 20
 		
-		 level: 12 (to confirm).
+		 level: 10 (to confirm).
+		h = 0, g = 10, f = 10
+		h = 2, g = 10, f = 12
 		h = 4, g = 10, f = 14
 		h = 6, g = 10, f = 16
 		h = 8, g = 10, f = 18
 		h = 10, g = 10, f = 20
+Node is in the queue and should not be added.
+		h = 12, g = 10, f = 22
+		
+Duplicate node h = 10 g = 10 f = 20
+Update w from 168 to 180
+ a >= prob do not add the new element.
+******************************************
+Raiz:  h = 0 g = 10 f = 10
+g : 10
+Childs:  h = 1 g = 11 f = 12
+	Child Pruned  h = 1 g = 11 f = 12
+		
+		 level: 11 (to confirm).
+		h = 2, g = 10, f = 12
+		h = 4, g = 10, f = 14
+		h = 6, g = 10, f = 16
+		h = 8, g = 10, f = 18
+		h = 10, g = 10, f = 20
+		h = 12, g = 10, f = 22
+		
+	New node h = 1 g = 11 f = 12
+******************************************
+Raiz:  h = 2 g = 10 f = 12
+g : 10
+Childs:  h = 3 g = 11 f = 14
+	Child Pruned  h = 3 g = 11 f = 14
+		
+		 level: 11 (to confirm).
+		h = 4, g = 10, f = 14
+		h = 6, g = 10, f = 16
+		h = 8, g = 10, f = 18
+		h = 10, g = 10, f = 20
+		h = 12, g = 10, f = 22
 		h = 1, g = 11, f = 12
 		
 	New node h = 3 g = 11 f = 14
 Childs:  h = 1 g = 11 f = 12
 	Child Pruned  h = 1 g = 11 f = 12
 		
-		 level: 12 (to confirm).
+		 level: 11 (to confirm).
 		h = 4, g = 10, f = 14
 		h = 6, g = 10, f = 16
 		h = 8, g = 10, f = 18
 		h = 10, g = 10, f = 20
+		h = 12, g = 10, f = 22
 		h = 1, g = 11, f = 12
 Node is in the queue and should not be added.
 		h = 3, g = 11, f = 14
 		
 Duplicate node h = 1 g = 11 f = 12
-Update w from 80 to 160
- a >= prob do not add the new element.
+Update w from 112 to 224
+remove the old node. 
+ a < prob add new child with w = 224
 ******************************************
 Raiz:  h = 4 g = 10 f = 14
-g : 11
+g : 10
 Childs:  h = 5 g = 11 f = 16
 	Child Pruned  h = 5 g = 11 f = 16
 		
-		 level: 12 (to confirm).
+		 level: 11 (to confirm).
 		h = 6, g = 10, f = 16
 		h = 8, g = 10, f = 18
 		h = 10, g = 10, f = 20
+		h = 12, g = 10, f = 22
 		h = 1, g = 11, f = 12
 		h = 3, g = 11, f = 14
 		
@@ -1222,54 +1461,72 @@ Childs:  h = 5 g = 11 f = 16
 Childs:  h = 3 g = 11 f = 14
 	Child Pruned  h = 3 g = 11 f = 14
 		
-		 level: 12 (to confirm).
+		 level: 11 (to confirm).
 		h = 6, g = 10, f = 16
 		h = 8, g = 10, f = 18
 		h = 10, g = 10, f = 20
+		h = 12, g = 10, f = 22
 		h = 1, g = 11, f = 12
 		h = 3, g = 11, f = 14
 Node is in the queue and should not be added.
 		h = 5, g = 11, f = 16
 		
 Duplicate node h = 3 g = 11 f = 14
-Update w from 176 to 352
+Update w from 258 to 516
  a >= prob do not add the new element.
-******************************************
-Raiz:  h = 6 g = 10 f = 16
-g : 11
 Childs:  h = 5 g = 11 f = 16
 	Child Pruned  h = 5 g = 11 f = 16
 		
-		 level: 12 (to confirm).
+		 level: 11 (to confirm).
+		h = 6, g = 10, f = 16
 		h = 8, g = 10, f = 18
 		h = 10, g = 10, f = 20
+		h = 12, g = 10, f = 22
 		h = 1, g = 11, f = 12
 		h = 3, g = 11, f = 14
 		h = 5, g = 11, f = 16
 Node is in the queue and should not be added.
 		
 Duplicate node h = 5 g = 11 f = 16
-Update w from 352 to 704
- a < prob add new child.
+Update w from 258 to 516
+ a >= prob do not add the new element.
+******************************************
+Raiz:  h = 6 g = 10 f = 16
+g : 10
+Childs:  h = 5 g = 11 f = 16
+	Child Pruned  h = 5 g = 11 f = 16
+		
+		 level: 11 (to confirm).
+		h = 8, g = 10, f = 18
+		h = 10, g = 10, f = 20
+		h = 12, g = 10, f = 22
+		h = 1, g = 11, f = 12
+		h = 3, g = 11, f = 14
+		h = 5, g = 11, f = 16
+Node is in the queue and should not be added.
+		
+Duplicate node h = 5 g = 11 f = 16
+Update w from 774 to 1548
+ a >= prob do not add the new element.
 Childs:  h = 7 g = 11 f = 18
 	Child Pruned  h = 7 g = 11 f = 18
 		
-		 level: 12 (to confirm).
+		 level: 11 (to confirm).
 		h = 8, g = 10, f = 18
 		h = 10, g = 10, f = 20
+		h = 12, g = 10, f = 22
 		h = 1, g = 11, f = 12
 		h = 3, g = 11, f = 14
 		h = 5, g = 11, f = 16
 		
 	New node h = 7 g = 11 f = 18
-******************************************
-Raiz:  h = 8 g = 10 f = 18
-g : 11
 Childs:  h = 7 g = 11 f = 18
 	Child Pruned  h = 7 g = 11 f = 18
 		
-		 level: 12 (to confirm).
+		 level: 11 (to confirm).
+		h = 8, g = 10, f = 18
 		h = 10, g = 10, f = 20
+		h = 12, g = 10, f = 22
 		h = 1, g = 11, f = 12
 		h = 3, g = 11, f = 14
 		h = 5, g = 11, f = 16
@@ -1277,26 +1534,48 @@ Childs:  h = 7 g = 11 f = 18
 Node is in the queue and should not be added.
 		
 Duplicate node h = 7 g = 11 f = 18
-Update w from 352 to 568
- a >= prob do not add the new element.
+Update w from 774 to 1548
+remove the old node. 
+ a < prob add new child with w = 1548
+******************************************
+Raiz:  h = 8 g = 10 f = 18
+g : 10
 Childs:  h = 9 g = 11 f = 20
 	Child Pruned  h = 9 g = 11 f = 20
 		
-		 level: 12 (to confirm).
+		 level: 11 (to confirm).
 		h = 10, g = 10, f = 20
+		h = 12, g = 10, f = 22
 		h = 1, g = 11, f = 12
 		h = 3, g = 11, f = 14
 		h = 5, g = 11, f = 16
 		h = 7, g = 11, f = 18
 		
 	New node h = 9 g = 11 f = 20
+Childs:  h = 7 g = 11 f = 18
+	Child Pruned  h = 7 g = 11 f = 18
+		
+		 level: 11 (to confirm).
+		h = 10, g = 10, f = 20
+		h = 12, g = 10, f = 22
+		h = 1, g = 11, f = 12
+		h = 3, g = 11, f = 14
+		h = 5, g = 11, f = 16
+		h = 7, g = 11, f = 18
+Node is in the queue and should not be added.
+		h = 9, g = 11, f = 20
+		
+Duplicate node h = 7 g = 11 f = 18
+Update w from 1548 to 2052
+ a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 10 g = 10 f = 20
-g : 11
+g : 10
 Childs:  h = 9 g = 11 f = 20
 	Child Pruned  h = 9 g = 11 f = 20
 		
-		 level: 12 (to confirm).
+		 level: 11 (to confirm).
+		h = 12, g = 10, f = 22
 		h = 1, g = 11, f = 12
 		h = 3, g = 11, f = 14
 		h = 5, g = 11, f = 16
@@ -1305,56 +1584,90 @@ Childs:  h = 9 g = 11 f = 20
 Node is in the queue and should not be added.
 		
 Duplicate node h = 9 g = 11 f = 20
-Update w from 108 to 216
+Update w from 180 to 360
  a >= prob do not add the new element.
-******************************************
-Raiz:  h = 1 g = 11 f = 12
-g : 12
-Childs:  h = 0 g = 12 f = 12
-	Child Pruned  h = 0 g = 12 f = 12
+Childs:  h = 11 g = 11 f = 22
+	Child Pruned  h = 11 g = 11 f = 22
 		
-		 level: 13 (to confirm).
+		 level: 11 (to confirm).
+		h = 12, g = 10, f = 22
+		h = 1, g = 11, f = 12
 		h = 3, g = 11, f = 14
 		h = 5, g = 11, f = 16
 		h = 7, g = 11, f = 18
 		h = 9, g = 11, f = 20
+		
+	New node h = 11 g = 11 f = 22
+******************************************
+Raiz:  h = 12 g = 10 f = 22
+g : 10
+Childs:  h = 11 g = 11 f = 22
+	Child Pruned  h = 11 g = 11 f = 22
+		
+		 level: 11 (to confirm).
+		h = 1, g = 11, f = 12
+		h = 3, g = 11, f = 14
+		h = 5, g = 11, f = 16
+		h = 7, g = 11, f = 18
+		h = 9, g = 11, f = 20
+		h = 11, g = 11, f = 22
+Node is in the queue and should not be added.
+		
+Duplicate node h = 11 g = 11 f = 22
+Update w from 180 to 192
+ a >= prob do not add the new element.
+******************************************
+Raiz:  h = 1 g = 11 f = 12
+g : 11
+Childs:  h = 0 g = 12 f = 12
+	Child Pruned  h = 0 g = 12 f = 12
+		
+		 level: 12 (to confirm).
+		h = 3, g = 11, f = 14
+		h = 5, g = 11, f = 16
+		h = 7, g = 11, f = 18
+		h = 9, g = 11, f = 20
+		h = 11, g = 11, f = 22
 		
 	New node h = 0 g = 12 f = 12
 Childs:  h = 2 g = 12 f = 14
 	Child Pruned  h = 2 g = 12 f = 14
 		
-		 level: 13 (to confirm).
+		 level: 12 (to confirm).
 		h = 3, g = 11, f = 14
 		h = 5, g = 11, f = 16
 		h = 7, g = 11, f = 18
 		h = 9, g = 11, f = 20
+		h = 11, g = 11, f = 22
 		h = 0, g = 12, f = 12
 		
 	New node h = 2 g = 12 f = 14
 ******************************************
 Raiz:  h = 3 g = 11 f = 14
-g : 12
+g : 11
 Childs:  h = 2 g = 12 f = 14
 	Child Pruned  h = 2 g = 12 f = 14
 		
-		 level: 13 (to confirm).
+		 level: 12 (to confirm).
 		h = 5, g = 11, f = 16
 		h = 7, g = 11, f = 18
 		h = 9, g = 11, f = 20
+		h = 11, g = 11, f = 22
 		h = 0, g = 12, f = 12
 		h = 2, g = 12, f = 14
 Node is in the queue and should not be added.
 		
 Duplicate node h = 2 g = 12 f = 14
-Update w from 352 to 704
+Update w from 516 to 1032
  a >= prob do not add the new element.
 Childs:  h = 4 g = 12 f = 16
 	Child Pruned  h = 4 g = 12 f = 16
 		
-		 level: 13 (to confirm).
+		 level: 12 (to confirm).
 		h = 5, g = 11, f = 16
 		h = 7, g = 11, f = 18
 		h = 9, g = 11, f = 20
+		h = 11, g = 11, f = 22
 		h = 0, g = 12, f = 12
 		h = 2, g = 12, f = 14
 		
@@ -1362,41 +1675,45 @@ Childs:  h = 4 g = 12 f = 16
 Childs:  h = 4 g = 12 f = 16
 	Child Pruned  h = 4 g = 12 f = 16
 		
-		 level: 13 (to confirm).
+		 level: 12 (to confirm).
 		h = 5, g = 11, f = 16
 		h = 7, g = 11, f = 18
 		h = 9, g = 11, f = 20
+		h = 11, g = 11, f = 22
 		h = 0, g = 12, f = 12
 		h = 2, g = 12, f = 14
 		h = 4, g = 12, f = 16
 Node is in the queue and should not be added.
 		
 Duplicate node h = 4 g = 12 f = 16
-Update w from 352 to 704
+Update w from 516 to 1032
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 5 g = 11 f = 16
-g : 12
+g : 11
 Childs:  h = 4 g = 12 f = 16
 	Child Pruned  h = 4 g = 12 f = 16
 		
-		 level: 13 (to confirm).
+		 level: 12 (to confirm).
 		h = 7, g = 11, f = 18
 		h = 9, g = 11, f = 20
+		h = 11, g = 11, f = 22
 		h = 0, g = 12, f = 12
 		h = 2, g = 12, f = 14
 		h = 4, g = 12, f = 16
 Node is in the queue and should not be added.
 		
 Duplicate node h = 4 g = 12 f = 16
-Update w from 704 to 1408
- a >= prob do not add the new element.
+Update w from 1032 to 2580
+remove the old node. 
+ a < prob add new child with w = 2580
 Childs:  h = 6 g = 12 f = 18
 	Child Pruned  h = 6 g = 12 f = 18
 		
-		 level: 13 (to confirm).
+		 level: 12 (to confirm).
 		h = 7, g = 11, f = 18
 		h = 9, g = 11, f = 20
+		h = 11, g = 11, f = 22
 		h = 0, g = 12, f = 12
 		h = 2, g = 12, f = 14
 		h = 4, g = 12, f = 16
@@ -1405,9 +1722,10 @@ Childs:  h = 6 g = 12 f = 18
 Childs:  h = 6 g = 12 f = 18
 	Child Pruned  h = 6 g = 12 f = 18
 		
-		 level: 13 (to confirm).
+		 level: 12 (to confirm).
 		h = 7, g = 11, f = 18
 		h = 9, g = 11, f = 20
+		h = 11, g = 11, f = 22
 		h = 0, g = 12, f = 12
 		h = 2, g = 12, f = 14
 		h = 4, g = 12, f = 16
@@ -1415,27 +1733,64 @@ Childs:  h = 6 g = 12 f = 18
 Node is in the queue and should not be added.
 		
 Duplicate node h = 6 g = 12 f = 18
-Update w from 704 to 1408
- a < prob add new child.
+Update w from 1548 to 3096
+remove the old node. 
+ a < prob add new child with w = 3096
+Childs:  h = 6 g = 12 f = 18
+	Child Pruned  h = 6 g = 12 f = 18
+		
+		 level: 12 (to confirm).
+		h = 7, g = 11, f = 18
+		h = 9, g = 11, f = 20
+		h = 11, g = 11, f = 22
+		h = 0, g = 12, f = 12
+		h = 2, g = 12, f = 14
+		h = 4, g = 12, f = 16
+		h = 6, g = 12, f = 18
+Node is in the queue and should not be added.
+		
+Duplicate node h = 6 g = 12 f = 18
+Update w from 3096 to 4644
+remove the old node. 
+ a < prob add new child with w = 4644
 ******************************************
 Raiz:  h = 7 g = 11 f = 18
-g : 12
+g : 11
 Childs:  h = 8 g = 12 f = 20
 	Child Pruned  h = 8 g = 12 f = 20
 		
-		 level: 13 (to confirm).
+		 level: 12 (to confirm).
 		h = 9, g = 11, f = 20
+		h = 11, g = 11, f = 22
 		h = 0, g = 12, f = 12
 		h = 2, g = 12, f = 14
 		h = 4, g = 12, f = 16
 		h = 6, g = 12, f = 18
 		
 	New node h = 8 g = 12 f = 20
+Childs:  h = 8 g = 12 f = 20
+	Child Pruned  h = 8 g = 12 f = 20
+		
+		 level: 12 (to confirm).
+		h = 9, g = 11, f = 20
+		h = 11, g = 11, f = 22
+		h = 0, g = 12, f = 12
+		h = 2, g = 12, f = 14
+		h = 4, g = 12, f = 16
+		h = 6, g = 12, f = 18
+		h = 8, g = 12, f = 20
+Node is in the queue and should not be added.
+		
+Duplicate node h = 8 g = 12 f = 20
+Update w from 2052 to 4104
+remove the old node. 
+ a < prob add new child with w = 4104
 Childs:  h = 6 g = 12 f = 18
 	Child Pruned  h = 6 g = 12 f = 18
 		
-		 level: 13 (to confirm).
+		 level: 12 (to confirm).
 		h = 9, g = 11, f = 20
+		h = 11, g = 11, f = 22
 		h = 0, g = 12, f = 12
 		h = 2, g = 12, f = 14
 		h = 4, g = 12, f = 16
@@ -1444,15 +1799,16 @@ Node is in the queue and should not be added.
 		h = 8, g = 12, f = 20
 		
 Duplicate node h = 6 g = 12 f = 18
-Update w from 568 to 1136
- a < prob add new child.
+Update w from 4644 to 6696
+ a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 9 g = 11 f = 20
-g : 12
+g : 11
 Childs:  h = 10 g = 12 f = 22
 	Child Pruned  h = 10 g = 12 f = 22
 		
-		 level: 13 (to confirm).
+		 level: 12 (to confirm).
+		h = 11, g = 11, f = 22
 		h = 0, g = 12, f = 12
 		h = 2, g = 12, f = 14
 		h = 4, g = 12, f = 16
@@ -1463,7 +1819,8 @@ Childs:  h = 10 g = 12 f = 22
 Childs:  h = 8 g = 12 f = 20
 	Child Pruned  h = 8 g = 12 f = 20
 		
-		 level: 13 (to confirm).
+		 level: 12 (to confirm).
+		h = 11, g = 11, f = 22
 		h = 0, g = 12, f = 12
 		h = 2, g = 12, f = 14
 		h = 4, g = 12, f = 16
@@ -1473,61 +1830,113 @@ Node is in the queue and should not be added.
 		h = 10, g = 12, f = 22
 		
 Duplicate node h = 8 g = 12 f = 20
-Update w from 568 to 784
+Update w from 4104 to 4464
+remove the old node. 
+ a < prob add new child with w = 4464
+Childs:  h = 8 g = 12 f = 20
+	Child Pruned  h = 8 g = 12 f = 20
+		
+		 level: 12 (to confirm).
+		h = 11, g = 11, f = 22
+		h = 0, g = 12, f = 12
+		h = 2, g = 12, f = 14
+		h = 4, g = 12, f = 16
+		h = 6, g = 12, f = 18
+		h = 8, g = 12, f = 20
+Node is in the queue and should not be added.
+		h = 10, g = 12, f = 22
+		
+Duplicate node h = 8 g = 12 f = 20
+Update w from 4464 to 4824
  a >= prob do not add the new element.
 ******************************************
-Raiz:  h = 0 g = 12 f = 12
-g : 13
-Childs:  h = 1 g = 13 f = 14
-	Child Pruned  h = 1 g = 13 f = 14
+Raiz:  h = 11 g = 11 f = 22
+g : 11
+Childs:  h = 12 g = 12 f = 24
+	Child Pruned  h = 12 g = 12 f = 24
 		
-		 level: 14 (to confirm).
+		 level: 12 (to confirm).
+		h = 0, g = 12, f = 12
 		h = 2, g = 12, f = 14
 		h = 4, g = 12, f = 16
 		h = 6, g = 12, f = 18
 		h = 8, g = 12, f = 20
 		h = 10, g = 12, f = 22
 		
-	New node h = 1 g = 13 f = 14
-******************************************
-Raiz:  h = 2 g = 12 f = 14
-g : 13
-Childs:  h = 3 g = 13 f = 16
-	Child Pruned  h = 3 g = 13 f = 16
+	New node h = 12 g = 12 f = 24
+Childs:  h = 10 g = 12 f = 22
+	Child Pruned  h = 10 g = 12 f = 22
 		
-		 level: 14 (to confirm).
+		 level: 12 (to confirm).
+		h = 0, g = 12, f = 12
+		h = 2, g = 12, f = 14
 		h = 4, g = 12, f = 16
 		h = 6, g = 12, f = 18
 		h = 8, g = 12, f = 20
 		h = 10, g = 12, f = 22
+Node is in the queue and should not be added.
+		h = 12, g = 12, f = 24
+		
+Duplicate node h = 10 g = 12 f = 22
+Update w from 192 to 384
+ a >= prob do not add the new element.
+******************************************
+Raiz:  h = 0 g = 12 f = 12
+g : 12
+Childs:  h = 1 g = 13 f = 14
+	Child Pruned  h = 1 g = 13 f = 14
+		
+		 level: 13 (to confirm).
+		h = 2, g = 12, f = 14
+		h = 4, g = 12, f = 16
+		h = 6, g = 12, f = 18
+		h = 8, g = 12, f = 20
+		h = 10, g = 12, f = 22
+		h = 12, g = 12, f = 24
+		
+	New node h = 1 g = 13 f = 14
+******************************************
+Raiz:  h = 2 g = 12 f = 14
+g : 12
+Childs:  h = 3 g = 13 f = 16
+	Child Pruned  h = 3 g = 13 f = 16
+		
+		 level: 13 (to confirm).
+		h = 4, g = 12, f = 16
+		h = 6, g = 12, f = 18
+		h = 8, g = 12, f = 20
+		h = 10, g = 12, f = 22
+		h = 12, g = 12, f = 24
 		h = 1, g = 13, f = 14
 		
 	New node h = 3 g = 13 f = 16
 Childs:  h = 1 g = 13 f = 14
 	Child Pruned  h = 1 g = 13 f = 14
 		
-		 level: 14 (to confirm).
+		 level: 13 (to confirm).
 		h = 4, g = 12, f = 16
 		h = 6, g = 12, f = 18
 		h = 8, g = 12, f = 20
 		h = 10, g = 12, f = 22
+		h = 12, g = 12, f = 24
 		h = 1, g = 13, f = 14
 Node is in the queue and should not be added.
 		h = 3, g = 13, f = 16
 		
 Duplicate node h = 1 g = 13 f = 14
-Update w from 704 to 1408
+Update w from 1032 to 2064
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 4 g = 12 f = 16
-g : 13
+g : 12
 Childs:  h = 5 g = 13 f = 18
 	Child Pruned  h = 5 g = 13 f = 18
 		
-		 level: 14 (to confirm).
+		 level: 13 (to confirm).
 		h = 6, g = 12, f = 18
 		h = 8, g = 12, f = 20
 		h = 10, g = 12, f = 22
+		h = 12, g = 12, f = 24
 		h = 1, g = 13, f = 14
 		h = 3, g = 13, f = 16
 		
@@ -1535,54 +1944,72 @@ Childs:  h = 5 g = 13 f = 18
 Childs:  h = 3 g = 13 f = 16
 	Child Pruned  h = 3 g = 13 f = 16
 		
-		 level: 14 (to confirm).
+		 level: 13 (to confirm).
 		h = 6, g = 12, f = 18
 		h = 8, g = 12, f = 20
 		h = 10, g = 12, f = 22
+		h = 12, g = 12, f = 24
 		h = 1, g = 13, f = 14
 		h = 3, g = 13, f = 16
 Node is in the queue and should not be added.
 		h = 5, g = 13, f = 18
 		
 Duplicate node h = 3 g = 13 f = 16
-Update w from 1408 to 2816
+Update w from 2580 to 5160
  a >= prob do not add the new element.
-******************************************
-Raiz:  h = 6 g = 12 f = 18
-g : 13
 Childs:  h = 5 g = 13 f = 18
 	Child Pruned  h = 5 g = 13 f = 18
 		
-		 level: 14 (to confirm).
+		 level: 13 (to confirm).
+		h = 6, g = 12, f = 18
 		h = 8, g = 12, f = 20
 		h = 10, g = 12, f = 22
+		h = 12, g = 12, f = 24
 		h = 1, g = 13, f = 14
 		h = 3, g = 13, f = 16
 		h = 5, g = 13, f = 18
 Node is in the queue and should not be added.
 		
 Duplicate node h = 5 g = 13 f = 18
-Update w from 1136 to 2272
+Update w from 2580 to 5160
+ a >= prob do not add the new element.
+******************************************
+Raiz:  h = 6 g = 12 f = 18
+g : 12
+Childs:  h = 5 g = 13 f = 18
+	Child Pruned  h = 5 g = 13 f = 18
+		
+		 level: 13 (to confirm).
+		h = 8, g = 12, f = 20
+		h = 10, g = 12, f = 22
+		h = 12, g = 12, f = 24
+		h = 1, g = 13, f = 14
+		h = 3, g = 13, f = 16
+		h = 5, g = 13, f = 18
+Node is in the queue and should not be added.
+		
+Duplicate node h = 5 g = 13 f = 18
+Update w from 6696 to 13392
  a >= prob do not add the new element.
 Childs:  h = 7 g = 13 f = 20
 	Child Pruned  h = 7 g = 13 f = 20
 		
-		 level: 14 (to confirm).
+		 level: 13 (to confirm).
 		h = 8, g = 12, f = 20
 		h = 10, g = 12, f = 22
+		h = 12, g = 12, f = 24
 		h = 1, g = 13, f = 14
 		h = 3, g = 13, f = 16
 		h = 5, g = 13, f = 18
 		
 	New node h = 7 g = 13 f = 20
-******************************************
-Raiz:  h = 8 g = 12 f = 20
-g : 13
 Childs:  h = 7 g = 13 f = 20
 	Child Pruned  h = 7 g = 13 f = 20
 		
-		 level: 14 (to confirm).
+		 level: 13 (to confirm).
+		h = 8, g = 12, f = 20
 		h = 10, g = 12, f = 22
+		h = 12, g = 12, f = 24
 		h = 1, g = 13, f = 14
 		h = 3, g = 13, f = 16
 		h = 5, g = 13, f = 18
@@ -1590,69 +2017,157 @@ Childs:  h = 7 g = 13 f = 20
 Node is in the queue and should not be added.
 		
 Duplicate node h = 7 g = 13 f = 20
-Update w from 784 to 1568
+Update w from 6696 to 13392
+remove the old node. 
+ a < prob add new child with w = 13392
+Childs:  h = 7 g = 13 f = 20
+	Child Pruned  h = 7 g = 13 f = 20
+		
+		 level: 13 (to confirm).
+		h = 8, g = 12, f = 20
+		h = 10, g = 12, f = 22
+		h = 12, g = 12, f = 24
+		h = 1, g = 13, f = 14
+		h = 3, g = 13, f = 16
+		h = 5, g = 13, f = 18
+		h = 7, g = 13, f = 20
+Node is in the queue and should not be added.
+		
+Duplicate node h = 7 g = 13 f = 20
+Update w from 13392 to 20088
  a >= prob do not add the new element.
 ******************************************
-Raiz:  h = 10 g = 12 f = 22
-g : 13
+Raiz:  h = 8 g = 12 f = 20
+g : 12
 Childs:  h = 9 g = 13 f = 22
 	Child Pruned  h = 9 g = 13 f = 22
 		
-		 level: 14 (to confirm).
+		 level: 13 (to confirm).
+		h = 10, g = 12, f = 22
+		h = 12, g = 12, f = 24
 		h = 1, g = 13, f = 14
 		h = 3, g = 13, f = 16
 		h = 5, g = 13, f = 18
 		h = 7, g = 13, f = 20
 		
 	New node h = 9 g = 13 f = 22
-******************************************
-Raiz:  h = 1 g = 13 f = 14
-g : 14
-Childs:  h = 0 g = 14 f = 14
-	Child Pruned  h = 0 g = 14 f = 14
+Childs:  h = 7 g = 13 f = 20
+	Child Pruned  h = 7 g = 13 f = 20
 		
-		 level: 15 (to confirm).
+		 level: 13 (to confirm).
+		h = 10, g = 12, f = 22
+		h = 12, g = 12, f = 24
+		h = 1, g = 13, f = 14
+		h = 3, g = 13, f = 16
+		h = 5, g = 13, f = 18
+		h = 7, g = 13, f = 20
+Node is in the queue and should not be added.
+		h = 9, g = 13, f = 22
+		
+Duplicate node h = 7 g = 13 f = 20
+Update w from 20088 to 24912
+ a >= prob do not add the new element.
+******************************************
+Raiz:  h = 10 g = 12 f = 22
+g : 12
+Childs:  h = 9 g = 13 f = 22
+	Child Pruned  h = 9 g = 13 f = 22
+		
+		 level: 13 (to confirm).
+		h = 12, g = 12, f = 24
+		h = 1, g = 13, f = 14
 		h = 3, g = 13, f = 16
 		h = 5, g = 13, f = 18
 		h = 7, g = 13, f = 20
 		h = 9, g = 13, f = 22
+Node is in the queue and should not be added.
+		
+Duplicate node h = 9 g = 13 f = 22
+Update w from 384 to 768
+ a >= prob do not add the new element.
+Childs:  h = 11 g = 13 f = 24
+	Child Pruned  h = 11 g = 13 f = 24
+		
+		 level: 13 (to confirm).
+		h = 12, g = 12, f = 24
+		h = 1, g = 13, f = 14
+		h = 3, g = 13, f = 16
+		h = 5, g = 13, f = 18
+		h = 7, g = 13, f = 20
+		h = 9, g = 13, f = 22
+		
+	New node h = 11 g = 13 f = 24
+******************************************
+Raiz:  h = 12 g = 12 f = 24
+g : 12
+Childs:  h = 11 g = 13 f = 24
+	Child Pruned  h = 11 g = 13 f = 24
+		
+		 level: 13 (to confirm).
+		h = 1, g = 13, f = 14
+		h = 3, g = 13, f = 16
+		h = 5, g = 13, f = 18
+		h = 7, g = 13, f = 20
+		h = 9, g = 13, f = 22
+		h = 11, g = 13, f = 24
+Node is in the queue and should not be added.
+		
+Duplicate node h = 11 g = 13 f = 24
+Update w from 192 to 384
+remove the old node. 
+ a < prob add new child with w = 384
+******************************************
+Raiz:  h = 1 g = 13 f = 14
+g : 13
+Childs:  h = 0 g = 14 f = 14
+	Child Pruned  h = 0 g = 14 f = 14
+		
+		 level: 14 (to confirm).
+		h = 3, g = 13, f = 16
+		h = 5, g = 13, f = 18
+		h = 7, g = 13, f = 20
+		h = 9, g = 13, f = 22
+		h = 11, g = 13, f = 24
 		
 	New node h = 0 g = 14 f = 14
 Childs:  h = 2 g = 14 f = 16
 	Child Pruned  h = 2 g = 14 f = 16
 		
-		 level: 15 (to confirm).
+		 level: 14 (to confirm).
 		h = 3, g = 13, f = 16
 		h = 5, g = 13, f = 18
 		h = 7, g = 13, f = 20
 		h = 9, g = 13, f = 22
+		h = 11, g = 13, f = 24
 		h = 0, g = 14, f = 14
 		
 	New node h = 2 g = 14 f = 16
 ******************************************
 Raiz:  h = 3 g = 13 f = 16
-g : 14
+g : 13
 Childs:  h = 2 g = 14 f = 16
 	Child Pruned  h = 2 g = 14 f = 16
 		
-		 level: 15 (to confirm).
+		 level: 14 (to confirm).
 		h = 5, g = 13, f = 18
 		h = 7, g = 13, f = 20
 		h = 9, g = 13, f = 22
+		h = 11, g = 13, f = 24
 		h = 0, g = 14, f = 14
 		h = 2, g = 14, f = 16
 Node is in the queue and should not be added.
 		
 Duplicate node h = 2 g = 14 f = 16
-Update w from 2816 to 5632
- a < prob add new child.
+Update w from 5160 to 10320
+ a >= prob do not add the new element.
 Childs:  h = 4 g = 14 f = 18
 	Child Pruned  h = 4 g = 14 f = 18
 		
-		 level: 15 (to confirm).
+		 level: 14 (to confirm).
 		h = 5, g = 13, f = 18
 		h = 7, g = 13, f = 20
 		h = 9, g = 13, f = 22
+		h = 11, g = 13, f = 24
 		h = 0, g = 14, f = 14
 		h = 2, g = 14, f = 16
 		
@@ -1660,41 +2175,45 @@ Childs:  h = 4 g = 14 f = 18
 Childs:  h = 4 g = 14 f = 18
 	Child Pruned  h = 4 g = 14 f = 18
 		
-		 level: 15 (to confirm).
+		 level: 14 (to confirm).
 		h = 5, g = 13, f = 18
 		h = 7, g = 13, f = 20
 		h = 9, g = 13, f = 22
+		h = 11, g = 13, f = 24
 		h = 0, g = 14, f = 14
 		h = 2, g = 14, f = 16
 		h = 4, g = 14, f = 18
 Node is in the queue and should not be added.
 		
 Duplicate node h = 4 g = 14 f = 18
-Update w from 2816 to 5632
+Update w from 5160 to 10320
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 5 g = 13 f = 18
-g : 14
+g : 13
 Childs:  h = 4 g = 14 f = 18
 	Child Pruned  h = 4 g = 14 f = 18
 		
-		 level: 15 (to confirm).
+		 level: 14 (to confirm).
 		h = 7, g = 13, f = 20
 		h = 9, g = 13, f = 22
+		h = 11, g = 13, f = 24
 		h = 0, g = 14, f = 14
 		h = 2, g = 14, f = 16
 		h = 4, g = 14, f = 18
 Node is in the queue and should not be added.
 		
 Duplicate node h = 4 g = 14 f = 18
-Update w from 2272 to 4544
- a >= prob do not add the new element.
+Update w from 10320 to 23712
+remove the old node. 
+ a < prob add new child with w = 23712
 Childs:  h = 6 g = 14 f = 20
 	Child Pruned  h = 6 g = 14 f = 20
 		
-		 level: 15 (to confirm).
+		 level: 14 (to confirm).
 		h = 7, g = 13, f = 20
 		h = 9, g = 13, f = 22
+		h = 11, g = 13, f = 24
 		h = 0, g = 14, f = 14
 		h = 2, g = 14, f = 16
 		h = 4, g = 14, f = 18
@@ -1703,9 +2222,10 @@ Childs:  h = 6 g = 14 f = 20
 Childs:  h = 6 g = 14 f = 20
 	Child Pruned  h = 6 g = 14 f = 20
 		
-		 level: 15 (to confirm).
+		 level: 14 (to confirm).
 		h = 7, g = 13, f = 20
 		h = 9, g = 13, f = 22
+		h = 11, g = 13, f = 24
 		h = 0, g = 14, f = 14
 		h = 2, g = 14, f = 16
 		h = 4, g = 14, f = 18
@@ -1713,27 +2233,63 @@ Childs:  h = 6 g = 14 f = 20
 Node is in the queue and should not be added.
 		
 Duplicate node h = 6 g = 14 f = 20
-Update w from 2272 to 4544
+Update w from 13392 to 26784
  a >= prob do not add the new element.
+Childs:  h = 6 g = 14 f = 20
+	Child Pruned  h = 6 g = 14 f = 20
+		
+		 level: 14 (to confirm).
+		h = 7, g = 13, f = 20
+		h = 9, g = 13, f = 22
+		h = 11, g = 13, f = 24
+		h = 0, g = 14, f = 14
+		h = 2, g = 14, f = 16
+		h = 4, g = 14, f = 18
+		h = 6, g = 14, f = 20
+Node is in the queue and should not be added.
+		
+Duplicate node h = 6 g = 14 f = 20
+Update w from 26784 to 40176
+remove the old node. 
+ a < prob add new child with w = 40176
 ******************************************
 Raiz:  h = 7 g = 13 f = 20
-g : 14
+g : 13
 Childs:  h = 8 g = 14 f = 22
 	Child Pruned  h = 8 g = 14 f = 22
 		
-		 level: 15 (to confirm).
+		 level: 14 (to confirm).
 		h = 9, g = 13, f = 22
+		h = 11, g = 13, f = 24
 		h = 0, g = 14, f = 14
 		h = 2, g = 14, f = 16
 		h = 4, g = 14, f = 18
 		h = 6, g = 14, f = 20
 		
 	New node h = 8 g = 14 f = 22
+Childs:  h = 8 g = 14 f = 22
+	Child Pruned  h = 8 g = 14 f = 22
+		
+		 level: 14 (to confirm).
+		h = 9, g = 13, f = 22
+		h = 11, g = 13, f = 24
+		h = 0, g = 14, f = 14
+		h = 2, g = 14, f = 16
+		h = 4, g = 14, f = 18
+		h = 6, g = 14, f = 20
+		h = 8, g = 14, f = 22
+Node is in the queue and should not be added.
+		
+Duplicate node h = 8 g = 14 f = 22
+Update w from 24912 to 49824
+remove the old node. 
+ a < prob add new child with w = 49824
 Childs:  h = 6 g = 14 f = 20
 	Child Pruned  h = 6 g = 14 f = 20
 		
-		 level: 15 (to confirm).
+		 level: 14 (to confirm).
 		h = 9, g = 13, f = 22
+		h = 11, g = 13, f = 24
 		h = 0, g = 14, f = 14
 		h = 2, g = 14, f = 16
 		h = 4, g = 14, f = 18
@@ -1742,15 +2298,33 @@ Node is in the queue and should not be added.
 		h = 8, g = 14, f = 22
 		
 Duplicate node h = 6 g = 14 f = 20
-Update w from 1568 to 3136
+Update w from 40176 to 65088
  a >= prob do not add the new element.
+Childs:  h = 6 g = 14 f = 20
+	Child Pruned  h = 6 g = 14 f = 20
+		
+		 level: 14 (to confirm).
+		h = 9, g = 13, f = 22
+		h = 11, g = 13, f = 24
+		h = 0, g = 14, f = 14
+		h = 2, g = 14, f = 16
+		h = 4, g = 14, f = 18
+		h = 6, g = 14, f = 20
+Node is in the queue and should not be added.
+		h = 8, g = 14, f = 22
+		
+Duplicate node h = 6 g = 14 f = 20
+Update w from 24912 to 49824
+remove the old node. 
+ a < prob add new child with w = 49824
 ******************************************
 Raiz:  h = 9 g = 13 f = 22
-g : 14
+g : 13
 Childs:  h = 10 g = 14 f = 24
 	Child Pruned  h = 10 g = 14 f = 24
 		
-		 level: 15 (to confirm).
+		 level: 14 (to confirm).
+		h = 11, g = 13, f = 24
 		h = 0, g = 14, f = 14
 		h = 2, g = 14, f = 16
 		h = 4, g = 14, f = 18
@@ -1761,7 +2335,8 @@ Childs:  h = 10 g = 14 f = 24
 Childs:  h = 8 g = 14 f = 22
 	Child Pruned  h = 8 g = 14 f = 22
 		
-		 level: 15 (to confirm).
+		 level: 14 (to confirm).
+		h = 11, g = 13, f = 24
 		h = 0, g = 14, f = 14
 		h = 2, g = 14, f = 16
 		h = 4, g = 14, f = 18
@@ -1771,61 +2346,114 @@ Node is in the queue and should not be added.
 		h = 10, g = 14, f = 24
 		
 Duplicate node h = 8 g = 14 f = 22
-Update w from 1568 to 1784
+Update w from 49824 to 50592
+ a >= prob do not add the new element.
+Childs:  h = 8 g = 14 f = 22
+	Child Pruned  h = 8 g = 14 f = 22
+		
+		 level: 14 (to confirm).
+		h = 11, g = 13, f = 24
+		h = 0, g = 14, f = 14
+		h = 2, g = 14, f = 16
+		h = 4, g = 14, f = 18
+		h = 6, g = 14, f = 20
+		h = 8, g = 14, f = 22
+Node is in the queue and should not be added.
+		h = 10, g = 14, f = 24
+		
+Duplicate node h = 8 g = 14 f = 22
+Update w from 50592 to 51360
  a >= prob do not add the new element.
 ******************************************
-Raiz:  h = 0 g = 14 f = 14
-g : 15
-Childs:  h = 1 g = 15 f = 16
-	Child Pruned  h = 1 g = 15 f = 16
+Raiz:  h = 11 g = 13 f = 24
+g : 13
+Childs:  h = 12 g = 14 f = 26
+	Child Pruned  h = 12 g = 14 f = 26
 		
-		 level: 16 (to confirm).
+		 level: 14 (to confirm).
+		h = 0, g = 14, f = 14
 		h = 2, g = 14, f = 16
 		h = 4, g = 14, f = 18
 		h = 6, g = 14, f = 20
 		h = 8, g = 14, f = 22
 		h = 10, g = 14, f = 24
 		
-	New node h = 1 g = 15 f = 16
-******************************************
-Raiz:  h = 2 g = 14 f = 16
-g : 15
-Childs:  h = 3 g = 15 f = 18
-	Child Pruned  h = 3 g = 15 f = 18
+	New node h = 12 g = 14 f = 26
+Childs:  h = 10 g = 14 f = 24
+	Child Pruned  h = 10 g = 14 f = 24
 		
-		 level: 16 (to confirm).
+		 level: 14 (to confirm).
+		h = 0, g = 14, f = 14
+		h = 2, g = 14, f = 16
 		h = 4, g = 14, f = 18
 		h = 6, g = 14, f = 20
 		h = 8, g = 14, f = 22
 		h = 10, g = 14, f = 24
+Node is in the queue and should not be added.
+		h = 12, g = 14, f = 26
+		
+Duplicate node h = 10 g = 14 f = 24
+Update w from 384 to 768
+remove the old node. 
+ a < prob add new child with w = 768
+******************************************
+Raiz:  h = 0 g = 14 f = 14
+g : 14
+Childs:  h = 1 g = 15 f = 16
+	Child Pruned  h = 1 g = 15 f = 16
+		
+		 level: 15 (to confirm).
+		h = 2, g = 14, f = 16
+		h = 4, g = 14, f = 18
+		h = 6, g = 14, f = 20
+		h = 8, g = 14, f = 22
+		h = 10, g = 14, f = 24
+		h = 12, g = 14, f = 26
+		
+	New node h = 1 g = 15 f = 16
+******************************************
+Raiz:  h = 2 g = 14 f = 16
+g : 14
+Childs:  h = 3 g = 15 f = 18
+	Child Pruned  h = 3 g = 15 f = 18
+		
+		 level: 15 (to confirm).
+		h = 4, g = 14, f = 18
+		h = 6, g = 14, f = 20
+		h = 8, g = 14, f = 22
+		h = 10, g = 14, f = 24
+		h = 12, g = 14, f = 26
 		h = 1, g = 15, f = 16
 		
 	New node h = 3 g = 15 f = 18
 Childs:  h = 1 g = 15 f = 16
 	Child Pruned  h = 1 g = 15 f = 16
 		
-		 level: 16 (to confirm).
+		 level: 15 (to confirm).
 		h = 4, g = 14, f = 18
 		h = 6, g = 14, f = 20
 		h = 8, g = 14, f = 22
 		h = 10, g = 14, f = 24
+		h = 12, g = 14, f = 26
 		h = 1, g = 15, f = 16
 Node is in the queue and should not be added.
 		h = 3, g = 15, f = 18
 		
 Duplicate node h = 1 g = 15 f = 16
-Update w from 5632 to 11264
- a >= prob do not add the new element.
+Update w from 10320 to 20640
+remove the old node. 
+ a < prob add new child with w = 20640
 ******************************************
 Raiz:  h = 4 g = 14 f = 18
-g : 15
+g : 14
 Childs:  h = 5 g = 15 f = 20
 	Child Pruned  h = 5 g = 15 f = 20
 		
-		 level: 16 (to confirm).
+		 level: 15 (to confirm).
 		h = 6, g = 14, f = 20
 		h = 8, g = 14, f = 22
 		h = 10, g = 14, f = 24
+		h = 12, g = 14, f = 26
 		h = 1, g = 15, f = 16
 		h = 3, g = 15, f = 18
 		
@@ -1833,54 +2461,74 @@ Childs:  h = 5 g = 15 f = 20
 Childs:  h = 3 g = 15 f = 18
 	Child Pruned  h = 3 g = 15 f = 18
 		
-		 level: 16 (to confirm).
+		 level: 15 (to confirm).
 		h = 6, g = 14, f = 20
 		h = 8, g = 14, f = 22
 		h = 10, g = 14, f = 24
+		h = 12, g = 14, f = 26
 		h = 1, g = 15, f = 16
 		h = 3, g = 15, f = 18
 Node is in the queue and should not be added.
 		h = 5, g = 15, f = 20
 		
 Duplicate node h = 3 g = 15 f = 18
-Update w from 4544 to 9088
- a < prob add new child.
-******************************************
-Raiz:  h = 6 g = 14 f = 20
-g : 15
+Update w from 23712 to 47424
+remove the old node. 
+ a < prob add new child with w = 47424
 Childs:  h = 5 g = 15 f = 20
 	Child Pruned  h = 5 g = 15 f = 20
 		
-		 level: 16 (to confirm).
+		 level: 15 (to confirm).
+		h = 6, g = 14, f = 20
 		h = 8, g = 14, f = 22
 		h = 10, g = 14, f = 24
+		h = 12, g = 14, f = 26
 		h = 1, g = 15, f = 16
 		h = 3, g = 15, f = 18
 		h = 5, g = 15, f = 20
 Node is in the queue and should not be added.
 		
 Duplicate node h = 5 g = 15 f = 20
-Update w from 3136 to 6272
+Update w from 23712 to 47424
+remove the old node. 
+ a < prob add new child with w = 47424
+******************************************
+Raiz:  h = 6 g = 14 f = 20
+g : 14
+Childs:  h = 5 g = 15 f = 20
+	Child Pruned  h = 5 g = 15 f = 20
+		
+		 level: 15 (to confirm).
+		h = 8, g = 14, f = 22
+		h = 10, g = 14, f = 24
+		h = 12, g = 14, f = 26
+		h = 1, g = 15, f = 16
+		h = 3, g = 15, f = 18
+		h = 5, g = 15, f = 20
+Node is in the queue and should not be added.
+		
+Duplicate node h = 5 g = 15 f = 20
+Update w from 47424 to 97248
  a >= prob do not add the new element.
 Childs:  h = 7 g = 15 f = 22
 	Child Pruned  h = 7 g = 15 f = 22
 		
-		 level: 16 (to confirm).
+		 level: 15 (to confirm).
 		h = 8, g = 14, f = 22
 		h = 10, g = 14, f = 24
+		h = 12, g = 14, f = 26
 		h = 1, g = 15, f = 16
 		h = 3, g = 15, f = 18
 		h = 5, g = 15, f = 20
 		
 	New node h = 7 g = 15 f = 22
-******************************************
-Raiz:  h = 8 g = 14 f = 22
-g : 15
 Childs:  h = 7 g = 15 f = 22
 	Child Pruned  h = 7 g = 15 f = 22
 		
-		 level: 16 (to confirm).
+		 level: 15 (to confirm).
+		h = 8, g = 14, f = 22
 		h = 10, g = 14, f = 24
+		h = 12, g = 14, f = 26
 		h = 1, g = 15, f = 16
 		h = 3, g = 15, f = 18
 		h = 5, g = 15, f = 20
@@ -1888,69 +2536,174 @@ Childs:  h = 7 g = 15 f = 22
 Node is in the queue and should not be added.
 		
 Duplicate node h = 7 g = 15 f = 22
-Update w from 1784 to 3568
+Update w from 49824 to 99648
+remove the old node. 
+ a < prob add new child with w = 99648
+Childs:  h = 7 g = 15 f = 22
+	Child Pruned  h = 7 g = 15 f = 22
+		
+		 level: 15 (to confirm).
+		h = 8, g = 14, f = 22
+		h = 10, g = 14, f = 24
+		h = 12, g = 14, f = 26
+		h = 1, g = 15, f = 16
+		h = 3, g = 15, f = 18
+		h = 5, g = 15, f = 20
+		h = 7, g = 15, f = 22
+Node is in the queue and should not be added.
+		
+Duplicate node h = 7 g = 15 f = 22
+Update w from 99648 to 149472
  a >= prob do not add the new element.
 ******************************************
-Raiz:  h = 10 g = 14 f = 24
-g : 15
+Raiz:  h = 8 g = 14 f = 22
+g : 14
 Childs:  h = 9 g = 15 f = 24
 	Child Pruned  h = 9 g = 15 f = 24
 		
-		 level: 16 (to confirm).
+		 level: 15 (to confirm).
+		h = 10, g = 14, f = 24
+		h = 12, g = 14, f = 26
 		h = 1, g = 15, f = 16
 		h = 3, g = 15, f = 18
 		h = 5, g = 15, f = 20
 		h = 7, g = 15, f = 22
 		
 	New node h = 9 g = 15 f = 24
-******************************************
-Raiz:  h = 1 g = 15 f = 16
-g : 16
-Childs:  h = 0 g = 16 f = 16
-	Child Pruned  h = 0 g = 16 f = 16
+Childs:  h = 7 g = 15 f = 22
+	Child Pruned  h = 7 g = 15 f = 22
 		
-		 level: 17 (to confirm).
+		 level: 15 (to confirm).
+		h = 10, g = 14, f = 24
+		h = 12, g = 14, f = 26
+		h = 1, g = 15, f = 16
+		h = 3, g = 15, f = 18
+		h = 5, g = 15, f = 20
+		h = 7, g = 15, f = 22
+Node is in the queue and should not be added.
+		h = 9, g = 15, f = 24
+		
+Duplicate node h = 7 g = 15 f = 22
+Update w from 51360 to 102720
+ a >= prob do not add the new element.
+Childs:  h = 9 g = 15 f = 24
+	Child Pruned  h = 9 g = 15 f = 24
+		
+		 level: 15 (to confirm).
+		h = 10, g = 14, f = 24
+		h = 12, g = 14, f = 26
+		h = 1, g = 15, f = 16
 		h = 3, g = 15, f = 18
 		h = 5, g = 15, f = 20
 		h = 7, g = 15, f = 22
 		h = 9, g = 15, f = 24
+Node is in the queue and should not be added.
+		
+Duplicate node h = 9 g = 15 f = 24
+Update w from 51360 to 102720
+remove the old node. 
+ a < prob add new child with w = 102720
+******************************************
+Raiz:  h = 10 g = 14 f = 24
+g : 14
+Childs:  h = 9 g = 15 f = 24
+	Child Pruned  h = 9 g = 15 f = 24
+		
+		 level: 15 (to confirm).
+		h = 12, g = 14, f = 26
+		h = 1, g = 15, f = 16
+		h = 3, g = 15, f = 18
+		h = 5, g = 15, f = 20
+		h = 7, g = 15, f = 22
+		h = 9, g = 15, f = 24
+Node is in the queue and should not be added.
+		
+Duplicate node h = 9 g = 15 f = 24
+Update w from 102720 to 103488
+ a >= prob do not add the new element.
+Childs:  h = 11 g = 15 f = 26
+	Child Pruned  h = 11 g = 15 f = 26
+		
+		 level: 15 (to confirm).
+		h = 12, g = 14, f = 26
+		h = 1, g = 15, f = 16
+		h = 3, g = 15, f = 18
+		h = 5, g = 15, f = 20
+		h = 7, g = 15, f = 22
+		h = 9, g = 15, f = 24
+		
+	New node h = 11 g = 15 f = 26
+******************************************
+Raiz:  h = 12 g = 14 f = 26
+g : 14
+Childs:  h = 11 g = 15 f = 26
+	Child Pruned  h = 11 g = 15 f = 26
+		
+		 level: 15 (to confirm).
+		h = 1, g = 15, f = 16
+		h = 3, g = 15, f = 18
+		h = 5, g = 15, f = 20
+		h = 7, g = 15, f = 22
+		h = 9, g = 15, f = 24
+		h = 11, g = 15, f = 26
+Node is in the queue and should not be added.
+		
+Duplicate node h = 11 g = 15 f = 26
+Update w from 384 to 768
+remove the old node. 
+ a < prob add new child with w = 768
+******************************************
+Raiz:  h = 1 g = 15 f = 16
+g : 15
+Childs:  h = 0 g = 16 f = 16
+	Child Pruned  h = 0 g = 16 f = 16
+		
+		 level: 16 (to confirm).
+		h = 3, g = 15, f = 18
+		h = 5, g = 15, f = 20
+		h = 7, g = 15, f = 22
+		h = 9, g = 15, f = 24
+		h = 11, g = 15, f = 26
 		
 	New node h = 0 g = 16 f = 16
 Childs:  h = 2 g = 16 f = 18
 	Child Pruned  h = 2 g = 16 f = 18
 		
-		 level: 17 (to confirm).
+		 level: 16 (to confirm).
 		h = 3, g = 15, f = 18
 		h = 5, g = 15, f = 20
 		h = 7, g = 15, f = 22
 		h = 9, g = 15, f = 24
+		h = 11, g = 15, f = 26
 		h = 0, g = 16, f = 16
 		
 	New node h = 2 g = 16 f = 18
 ******************************************
 Raiz:  h = 3 g = 15 f = 18
-g : 16
+g : 15
 Childs:  h = 2 g = 16 f = 18
 	Child Pruned  h = 2 g = 16 f = 18
 		
-		 level: 17 (to confirm).
+		 level: 16 (to confirm).
 		h = 5, g = 15, f = 20
 		h = 7, g = 15, f = 22
 		h = 9, g = 15, f = 24
+		h = 11, g = 15, f = 26
 		h = 0, g = 16, f = 16
 		h = 2, g = 16, f = 18
 Node is in the queue and should not be added.
 		
 Duplicate node h = 2 g = 16 f = 18
-Update w from 9088 to 18176
- a < prob add new child.
+Update w from 47424 to 94848
+ a >= prob do not add the new element.
 Childs:  h = 4 g = 16 f = 20
 	Child Pruned  h = 4 g = 16 f = 20
 		
-		 level: 17 (to confirm).
+		 level: 16 (to confirm).
 		h = 5, g = 15, f = 20
 		h = 7, g = 15, f = 22
 		h = 9, g = 15, f = 24
+		h = 11, g = 15, f = 26
 		h = 0, g = 16, f = 16
 		h = 2, g = 16, f = 18
 		
@@ -1958,41 +2711,29 @@ Childs:  h = 4 g = 16 f = 20
 Childs:  h = 4 g = 16 f = 20
 	Child Pruned  h = 4 g = 16 f = 20
 		
-		 level: 17 (to confirm).
+		 level: 16 (to confirm).
 		h = 5, g = 15, f = 20
 		h = 7, g = 15, f = 22
 		h = 9, g = 15, f = 24
+		h = 11, g = 15, f = 26
 		h = 0, g = 16, f = 16
 		h = 2, g = 16, f = 18
 		h = 4, g = 16, f = 20
 Node is in the queue and should not be added.
 		
 Duplicate node h = 4 g = 16 f = 20
-Update w from 9088 to 18176
- a < prob add new child.
+Update w from 47424 to 94848
+ a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 5 g = 15 f = 20
-g : 16
-Childs:  h = 4 g = 16 f = 20
-	Child Pruned  h = 4 g = 16 f = 20
-		
-		 level: 17 (to confirm).
-		h = 7, g = 15, f = 22
-		h = 9, g = 15, f = 24
-		h = 0, g = 16, f = 16
-		h = 2, g = 16, f = 18
-		h = 4, g = 16, f = 20
-Node is in the queue and should not be added.
-		
-Duplicate node h = 4 g = 16 f = 20
-Update w from 6272 to 12544
- a >= prob do not add the new element.
+g : 15
 Childs:  h = 6 g = 16 f = 22
 	Child Pruned  h = 6 g = 16 f = 22
 		
-		 level: 17 (to confirm).
+		 level: 16 (to confirm).
 		h = 7, g = 15, f = 22
 		h = 9, g = 15, f = 24
+		h = 11, g = 15, f = 26
 		h = 0, g = 16, f = 16
 		h = 2, g = 16, f = 18
 		h = 4, g = 16, f = 20
@@ -2001,9 +2742,10 @@ Childs:  h = 6 g = 16 f = 22
 Childs:  h = 6 g = 16 f = 22
 	Child Pruned  h = 6 g = 16 f = 22
 		
-		 level: 17 (to confirm).
+		 level: 16 (to confirm).
 		h = 7, g = 15, f = 22
 		h = 9, g = 15, f = 24
+		h = 11, g = 15, f = 26
 		h = 0, g = 16, f = 16
 		h = 2, g = 16, f = 18
 		h = 4, g = 16, f = 20
@@ -2011,27 +2753,63 @@ Childs:  h = 6 g = 16 f = 22
 Node is in the queue and should not be added.
 		
 Duplicate node h = 6 g = 16 f = 22
-Update w from 6272 to 12544
+Update w from 97248 to 194496
  a >= prob do not add the new element.
+Childs:  h = 4 g = 16 f = 20
+	Child Pruned  h = 4 g = 16 f = 20
+		
+		 level: 16 (to confirm).
+		h = 7, g = 15, f = 22
+		h = 9, g = 15, f = 24
+		h = 11, g = 15, f = 26
+		h = 0, g = 16, f = 16
+		h = 2, g = 16, f = 18
+		h = 4, g = 16, f = 20
+Node is in the queue and should not be added.
+		h = 6, g = 16, f = 22
+		
+Duplicate node h = 4 g = 16 f = 20
+Update w from 94848 to 192096
+remove the old node. 
+ a < prob add new child with w = 192096
 ******************************************
 Raiz:  h = 7 g = 15 f = 22
-g : 16
+g : 15
 Childs:  h = 8 g = 16 f = 24
 	Child Pruned  h = 8 g = 16 f = 24
 		
-		 level: 17 (to confirm).
+		 level: 16 (to confirm).
 		h = 9, g = 15, f = 24
+		h = 11, g = 15, f = 26
 		h = 0, g = 16, f = 16
 		h = 2, g = 16, f = 18
 		h = 4, g = 16, f = 20
 		h = 6, g = 16, f = 22
 		
 	New node h = 8 g = 16 f = 24
+Childs:  h = 8 g = 16 f = 24
+	Child Pruned  h = 8 g = 16 f = 24
+		
+		 level: 16 (to confirm).
+		h = 9, g = 15, f = 24
+		h = 11, g = 15, f = 26
+		h = 0, g = 16, f = 16
+		h = 2, g = 16, f = 18
+		h = 4, g = 16, f = 20
+		h = 6, g = 16, f = 22
+		h = 8, g = 16, f = 24
+Node is in the queue and should not be added.
+		
+Duplicate node h = 8 g = 16 f = 24
+Update w from 102720 to 205440
+remove the old node. 
+ a < prob add new child with w = 205440
 Childs:  h = 6 g = 16 f = 22
 	Child Pruned  h = 6 g = 16 f = 22
 		
-		 level: 17 (to confirm).
+		 level: 16 (to confirm).
 		h = 9, g = 15, f = 24
+		h = 11, g = 15, f = 26
 		h = 0, g = 16, f = 16
 		h = 2, g = 16, f = 18
 		h = 4, g = 16, f = 20
@@ -2040,15 +2818,32 @@ Node is in the queue and should not be added.
 		h = 8, g = 16, f = 24
 		
 Duplicate node h = 6 g = 16 f = 22
-Update w from 3568 to 7136
- a < prob add new child.
+Update w from 194496 to 297216
+ a >= prob do not add the new element.
+Childs:  h = 6 g = 16 f = 22
+	Child Pruned  h = 6 g = 16 f = 22
+		
+		 level: 16 (to confirm).
+		h = 9, g = 15, f = 24
+		h = 11, g = 15, f = 26
+		h = 0, g = 16, f = 16
+		h = 2, g = 16, f = 18
+		h = 4, g = 16, f = 20
+		h = 6, g = 16, f = 22
+Node is in the queue and should not be added.
+		h = 8, g = 16, f = 24
+		
+Duplicate node h = 6 g = 16 f = 22
+Update w from 297216 to 399936
+ a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 9 g = 15 f = 24
-g : 16
+g : 15
 Childs:  h = 10 g = 16 f = 26
 	Child Pruned  h = 10 g = 16 f = 26
 		
-		 level: 17 (to confirm).
+		 level: 16 (to confirm).
+		h = 11, g = 15, f = 26
 		h = 0, g = 16, f = 16
 		h = 2, g = 16, f = 18
 		h = 4, g = 16, f = 20
@@ -2056,10 +2851,28 @@ Childs:  h = 10 g = 16 f = 26
 		h = 8, g = 16, f = 24
 		
 	New node h = 10 g = 16 f = 26
+Childs:  h = 10 g = 16 f = 26
+	Child Pruned  h = 10 g = 16 f = 26
+		
+		 level: 16 (to confirm).
+		h = 11, g = 15, f = 26
+		h = 0, g = 16, f = 16
+		h = 2, g = 16, f = 18
+		h = 4, g = 16, f = 20
+		h = 6, g = 16, f = 22
+		h = 8, g = 16, f = 24
+		h = 10, g = 16, f = 26
+Node is in the queue and should not be added.
+		
+Duplicate node h = 10 g = 16 f = 26
+Update w from 103488 to 206976
+remove the old node. 
+ a < prob add new child with w = 206976
 Childs:  h = 8 g = 16 f = 24
 	Child Pruned  h = 8 g = 16 f = 24
 		
-		 level: 17 (to confirm).
+		 level: 16 (to confirm).
+		h = 11, g = 15, f = 26
 		h = 0, g = 16, f = 16
 		h = 2, g = 16, f = 18
 		h = 4, g = 16, f = 20
@@ -2069,61 +2882,96 @@ Node is in the queue and should not be added.
 		h = 10, g = 16, f = 26
 		
 Duplicate node h = 8 g = 16 f = 24
-Update w from 3568 to 3784
+Update w from 103488 to 206976
  a >= prob do not add the new element.
 ******************************************
-Raiz:  h = 0 g = 16 f = 16
-g : 17
-Childs:  h = 1 g = 17 f = 18
-	Child Pruned  h = 1 g = 17 f = 18
+Raiz:  h = 11 g = 15 f = 26
+g : 15
+Childs:  h = 12 g = 16 f = 28
+	Child Pruned  h = 12 g = 16 f = 28
 		
-		 level: 18 (to confirm).
+		 level: 16 (to confirm).
+		h = 0, g = 16, f = 16
 		h = 2, g = 16, f = 18
 		h = 4, g = 16, f = 20
 		h = 6, g = 16, f = 22
 		h = 8, g = 16, f = 24
 		h = 10, g = 16, f = 26
 		
-	New node h = 1 g = 17 f = 18
-******************************************
-Raiz:  h = 2 g = 16 f = 18
-g : 17
-Childs:  h = 3 g = 17 f = 20
-	Child Pruned  h = 3 g = 17 f = 20
+	New node h = 12 g = 16 f = 28
+Childs:  h = 10 g = 16 f = 26
+	Child Pruned  h = 10 g = 16 f = 26
 		
-		 level: 18 (to confirm).
+		 level: 16 (to confirm).
+		h = 0, g = 16, f = 16
+		h = 2, g = 16, f = 18
 		h = 4, g = 16, f = 20
 		h = 6, g = 16, f = 22
 		h = 8, g = 16, f = 24
 		h = 10, g = 16, f = 26
+Node is in the queue and should not be added.
+		h = 12, g = 16, f = 28
+		
+Duplicate node h = 10 g = 16 f = 26
+Update w from 206976 to 207744
+ a >= prob do not add the new element.
+******************************************
+Raiz:  h = 0 g = 16 f = 16
+g : 16
+Childs:  h = 1 g = 17 f = 18
+	Child Pruned  h = 1 g = 17 f = 18
+		
+		 level: 17 (to confirm).
+		h = 2, g = 16, f = 18
+		h = 4, g = 16, f = 20
+		h = 6, g = 16, f = 22
+		h = 8, g = 16, f = 24
+		h = 10, g = 16, f = 26
+		h = 12, g = 16, f = 28
+		
+	New node h = 1 g = 17 f = 18
+******************************************
+Raiz:  h = 2 g = 16 f = 18
+g : 16
+Childs:  h = 3 g = 17 f = 20
+	Child Pruned  h = 3 g = 17 f = 20
+		
+		 level: 17 (to confirm).
+		h = 4, g = 16, f = 20
+		h = 6, g = 16, f = 22
+		h = 8, g = 16, f = 24
+		h = 10, g = 16, f = 26
+		h = 12, g = 16, f = 28
 		h = 1, g = 17, f = 18
 		
 	New node h = 3 g = 17 f = 20
 Childs:  h = 1 g = 17 f = 18
 	Child Pruned  h = 1 g = 17 f = 18
 		
-		 level: 18 (to confirm).
+		 level: 17 (to confirm).
 		h = 4, g = 16, f = 20
 		h = 6, g = 16, f = 22
 		h = 8, g = 16, f = 24
 		h = 10, g = 16, f = 26
+		h = 12, g = 16, f = 28
 		h = 1, g = 17, f = 18
 Node is in the queue and should not be added.
 		h = 3, g = 17, f = 20
 		
 Duplicate node h = 1 g = 17 f = 18
-Update w from 18176 to 36352
+Update w from 94848 to 189696
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 4 g = 16 f = 20
-g : 17
+g : 16
 Childs:  h = 5 g = 17 f = 22
 	Child Pruned  h = 5 g = 17 f = 22
 		
-		 level: 18 (to confirm).
+		 level: 17 (to confirm).
 		h = 6, g = 16, f = 22
 		h = 8, g = 16, f = 24
 		h = 10, g = 16, f = 26
+		h = 12, g = 16, f = 28
 		h = 1, g = 17, f = 18
 		h = 3, g = 17, f = 20
 		
@@ -2131,124 +2979,215 @@ Childs:  h = 5 g = 17 f = 22
 Childs:  h = 3 g = 17 f = 20
 	Child Pruned  h = 3 g = 17 f = 20
 		
-		 level: 18 (to confirm).
+		 level: 17 (to confirm).
 		h = 6, g = 16, f = 22
 		h = 8, g = 16, f = 24
 		h = 10, g = 16, f = 26
+		h = 12, g = 16, f = 28
 		h = 1, g = 17, f = 18
 		h = 3, g = 17, f = 20
 Node is in the queue and should not be added.
 		h = 5, g = 17, f = 22
 		
 Duplicate node h = 3 g = 17 f = 20
-Update w from 12544 to 25088
- a >= prob do not add the new element.
-******************************************
-Raiz:  h = 6 g = 16 f = 22
-g : 17
+Update w from 192096 to 384192
+remove the old node. 
+ a < prob add new child with w = 384192
 Childs:  h = 5 g = 17 f = 22
 	Child Pruned  h = 5 g = 17 f = 22
 		
-		 level: 18 (to confirm).
+		 level: 17 (to confirm).
+		h = 6, g = 16, f = 22
 		h = 8, g = 16, f = 24
 		h = 10, g = 16, f = 26
+		h = 12, g = 16, f = 28
 		h = 1, g = 17, f = 18
 		h = 3, g = 17, f = 20
 		h = 5, g = 17, f = 22
 Node is in the queue and should not be added.
 		
 Duplicate node h = 5 g = 17 f = 22
-Update w from 7136 to 14272
+Update w from 192096 to 384192
  a >= prob do not add the new element.
+******************************************
+Raiz:  h = 6 g = 16 f = 22
+g : 16
 Childs:  h = 7 g = 17 f = 24
 	Child Pruned  h = 7 g = 17 f = 24
 		
-		 level: 18 (to confirm).
+		 level: 17 (to confirm).
 		h = 8, g = 16, f = 24
 		h = 10, g = 16, f = 26
+		h = 12, g = 16, f = 28
 		h = 1, g = 17, f = 18
 		h = 3, g = 17, f = 20
 		h = 5, g = 17, f = 22
 		
 	New node h = 7 g = 17 f = 24
-******************************************
-Raiz:  h = 8 g = 16 f = 24
-g : 17
-Childs:  h = 7 g = 17 f = 24
-	Child Pruned  h = 7 g = 17 f = 24
+Childs:  h = 5 g = 17 f = 22
+	Child Pruned  h = 5 g = 17 f = 22
 		
-		 level: 18 (to confirm).
+		 level: 17 (to confirm).
+		h = 8, g = 16, f = 24
 		h = 10, g = 16, f = 26
+		h = 12, g = 16, f = 28
 		h = 1, g = 17, f = 18
 		h = 3, g = 17, f = 20
 		h = 5, g = 17, f = 22
-		h = 7, g = 17, f = 24
 Node is in the queue and should not be added.
+		h = 7, g = 17, f = 24
 		
-Duplicate node h = 7 g = 17 f = 24
-Update w from 3784 to 7568
- a < prob add new child.
+Duplicate node h = 5 g = 17 f = 22
+Update w from 384192 to 784128
+ a >= prob do not add the new element.
 ******************************************
-Raiz:  h = 10 g = 16 f = 26
-g : 17
+Raiz:  h = 8 g = 16 f = 24
+g : 16
 Childs:  h = 9 g = 17 f = 26
 	Child Pruned  h = 9 g = 17 f = 26
 		
-		 level: 18 (to confirm).
+		 level: 17 (to confirm).
+		h = 10, g = 16, f = 26
+		h = 12, g = 16, f = 28
 		h = 1, g = 17, f = 18
 		h = 3, g = 17, f = 20
 		h = 5, g = 17, f = 22
 		h = 7, g = 17, f = 24
 		
 	New node h = 9 g = 17 f = 26
-******************************************
-Raiz:  h = 1 g = 17 f = 18
-g : 18
-Childs:  h = 0 g = 18 f = 18
-	Child Pruned  h = 0 g = 18 f = 18
+Childs:  h = 7 g = 17 f = 24
+	Child Pruned  h = 7 g = 17 f = 24
 		
-		 level: 19 (to confirm).
+		 level: 17 (to confirm).
+		h = 10, g = 16, f = 26
+		h = 12, g = 16, f = 28
+		h = 1, g = 17, f = 18
+		h = 3, g = 17, f = 20
+		h = 5, g = 17, f = 22
+		h = 7, g = 17, f = 24
+Node is in the queue and should not be added.
+		h = 9, g = 17, f = 26
+		
+Duplicate node h = 7 g = 17 f = 24
+Update w from 399936 to 606912
+ a >= prob do not add the new element.
+Childs:  h = 9 g = 17 f = 26
+	Child Pruned  h = 9 g = 17 f = 26
+		
+		 level: 17 (to confirm).
+		h = 10, g = 16, f = 26
+		h = 12, g = 16, f = 28
+		h = 1, g = 17, f = 18
 		h = 3, g = 17, f = 20
 		h = 5, g = 17, f = 22
 		h = 7, g = 17, f = 24
 		h = 9, g = 17, f = 26
+Node is in the queue and should not be added.
+		
+Duplicate node h = 9 g = 17 f = 26
+Update w from 206976 to 413952
+ a >= prob do not add the new element.
+******************************************
+Raiz:  h = 10 g = 16 f = 26
+g : 16
+Childs:  h = 11 g = 17 f = 28
+	Child Pruned  h = 11 g = 17 f = 28
+		
+		 level: 17 (to confirm).
+		h = 12, g = 16, f = 28
+		h = 1, g = 17, f = 18
+		h = 3, g = 17, f = 20
+		h = 5, g = 17, f = 22
+		h = 7, g = 17, f = 24
+		h = 9, g = 17, f = 26
+		
+	New node h = 11 g = 17 f = 28
+Childs:  h = 9 g = 17 f = 26
+	Child Pruned  h = 9 g = 17 f = 26
+		
+		 level: 17 (to confirm).
+		h = 12, g = 16, f = 28
+		h = 1, g = 17, f = 18
+		h = 3, g = 17, f = 20
+		h = 5, g = 17, f = 22
+		h = 7, g = 17, f = 24
+		h = 9, g = 17, f = 26
+Node is in the queue and should not be added.
+		h = 11, g = 17, f = 28
+		
+Duplicate node h = 9 g = 17 f = 26
+Update w from 413952 to 621696
+ a >= prob do not add the new element.
+******************************************
+Raiz:  h = 12 g = 16 f = 28
+g : 16
+Childs:  h = 11 g = 17 f = 28
+	Child Pruned  h = 11 g = 17 f = 28
+		
+		 level: 17 (to confirm).
+		h = 1, g = 17, f = 18
+		h = 3, g = 17, f = 20
+		h = 5, g = 17, f = 22
+		h = 7, g = 17, f = 24
+		h = 9, g = 17, f = 26
+		h = 11, g = 17, f = 28
+Node is in the queue and should not be added.
+		
+Duplicate node h = 11 g = 17 f = 28
+Update w from 207744 to 208512
+ a >= prob do not add the new element.
+******************************************
+Raiz:  h = 1 g = 17 f = 18
+g : 17
+Childs:  h = 0 g = 18 f = 18
+	Child Pruned  h = 0 g = 18 f = 18
+		
+		 level: 18 (to confirm).
+		h = 3, g = 17, f = 20
+		h = 5, g = 17, f = 22
+		h = 7, g = 17, f = 24
+		h = 9, g = 17, f = 26
+		h = 11, g = 17, f = 28
 		
 	New node h = 0 g = 18 f = 18
 Childs:  h = 2 g = 18 f = 20
 	Child Pruned  h = 2 g = 18 f = 20
 		
-		 level: 19 (to confirm).
+		 level: 18 (to confirm).
 		h = 3, g = 17, f = 20
 		h = 5, g = 17, f = 22
 		h = 7, g = 17, f = 24
 		h = 9, g = 17, f = 26
+		h = 11, g = 17, f = 28
 		h = 0, g = 18, f = 18
 		
 	New node h = 2 g = 18 f = 20
 ******************************************
 Raiz:  h = 3 g = 17 f = 20
-g : 18
+g : 17
 Childs:  h = 2 g = 18 f = 20
 	Child Pruned  h = 2 g = 18 f = 20
 		
-		 level: 19 (to confirm).
+		 level: 18 (to confirm).
 		h = 5, g = 17, f = 22
 		h = 7, g = 17, f = 24
 		h = 9, g = 17, f = 26
+		h = 11, g = 17, f = 28
 		h = 0, g = 18, f = 18
 		h = 2, g = 18, f = 20
 Node is in the queue and should not be added.
 		
 Duplicate node h = 2 g = 18 f = 20
-Update w from 25088 to 50176
- a < prob add new child.
+Update w from 384192 to 768384
+ a >= prob do not add the new element.
 Childs:  h = 4 g = 18 f = 22
 	Child Pruned  h = 4 g = 18 f = 22
 		
-		 level: 19 (to confirm).
+		 level: 18 (to confirm).
 		h = 5, g = 17, f = 22
 		h = 7, g = 17, f = 24
 		h = 9, g = 17, f = 26
+		h = 11, g = 17, f = 28
 		h = 0, g = 18, f = 18
 		h = 2, g = 18, f = 20
 		
@@ -2256,41 +3195,46 @@ Childs:  h = 4 g = 18 f = 22
 Childs:  h = 4 g = 18 f = 22
 	Child Pruned  h = 4 g = 18 f = 22
 		
-		 level: 19 (to confirm).
+		 level: 18 (to confirm).
 		h = 5, g = 17, f = 22
 		h = 7, g = 17, f = 24
 		h = 9, g = 17, f = 26
+		h = 11, g = 17, f = 28
 		h = 0, g = 18, f = 18
 		h = 2, g = 18, f = 20
 		h = 4, g = 18, f = 22
 Node is in the queue and should not be added.
 		
 Duplicate node h = 4 g = 18 f = 22
-Update w from 25088 to 50176
- a < prob add new child.
+Update w from 384192 to 768384
+remove the old node. 
+ a < prob add new child with w = 768384
 ******************************************
 Raiz:  h = 5 g = 17 f = 22
-g : 18
+g : 17
 Childs:  h = 4 g = 18 f = 22
 	Child Pruned  h = 4 g = 18 f = 22
 		
-		 level: 19 (to confirm).
+		 level: 18 (to confirm).
 		h = 7, g = 17, f = 24
 		h = 9, g = 17, f = 26
+		h = 11, g = 17, f = 28
 		h = 0, g = 18, f = 18
 		h = 2, g = 18, f = 20
 		h = 4, g = 18, f = 22
 Node is in the queue and should not be added.
 		
 Duplicate node h = 4 g = 18 f = 22
-Update w from 14272 to 28544
- a >= prob do not add the new element.
+Update w from 784128 to 1568256
+remove the old node. 
+ a < prob add new child with w = 1568256
 Childs:  h = 6 g = 18 f = 24
 	Child Pruned  h = 6 g = 18 f = 24
 		
-		 level: 19 (to confirm).
+		 level: 18 (to confirm).
 		h = 7, g = 17, f = 24
 		h = 9, g = 17, f = 26
+		h = 11, g = 17, f = 28
 		h = 0, g = 18, f = 18
 		h = 2, g = 18, f = 20
 		h = 4, g = 18, f = 22
@@ -2299,9 +3243,10 @@ Childs:  h = 6 g = 18 f = 24
 Childs:  h = 6 g = 18 f = 24
 	Child Pruned  h = 6 g = 18 f = 24
 		
-		 level: 19 (to confirm).
+		 level: 18 (to confirm).
 		h = 7, g = 17, f = 24
 		h = 9, g = 17, f = 26
+		h = 11, g = 17, f = 28
 		h = 0, g = 18, f = 18
 		h = 2, g = 18, f = 20
 		h = 4, g = 18, f = 22
@@ -2309,16 +3254,33 @@ Childs:  h = 6 g = 18 f = 24
 Node is in the queue and should not be added.
 		
 Duplicate node h = 6 g = 18 f = 24
-Update w from 14272 to 28544
+Update w from 784128 to 1568256
+ a >= prob do not add the new element.
+Childs:  h = 6 g = 18 f = 24
+	Child Pruned  h = 6 g = 18 f = 24
+		
+		 level: 18 (to confirm).
+		h = 7, g = 17, f = 24
+		h = 9, g = 17, f = 26
+		h = 11, g = 17, f = 28
+		h = 0, g = 18, f = 18
+		h = 2, g = 18, f = 20
+		h = 4, g = 18, f = 22
+		h = 6, g = 18, f = 24
+Node is in the queue and should not be added.
+		
+Duplicate node h = 6 g = 18 f = 24
+Update w from 1568256 to 2352384
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 7 g = 17 f = 24
-g : 18
+g : 17
 Childs:  h = 8 g = 18 f = 26
 	Child Pruned  h = 8 g = 18 f = 26
 		
-		 level: 19 (to confirm).
+		 level: 18 (to confirm).
 		h = 9, g = 17, f = 26
+		h = 11, g = 17, f = 28
 		h = 0, g = 18, f = 18
 		h = 2, g = 18, f = 20
 		h = 4, g = 18, f = 22
@@ -2328,8 +3290,9 @@ Childs:  h = 8 g = 18 f = 26
 Childs:  h = 6 g = 18 f = 24
 	Child Pruned  h = 6 g = 18 f = 24
 		
-		 level: 19 (to confirm).
+		 level: 18 (to confirm).
 		h = 9, g = 17, f = 26
+		h = 11, g = 17, f = 28
 		h = 0, g = 18, f = 18
 		h = 2, g = 18, f = 20
 		h = 4, g = 18, f = 22
@@ -2338,15 +3301,16 @@ Node is in the queue and should not be added.
 		h = 8, g = 18, f = 26
 		
 Duplicate node h = 6 g = 18 f = 24
-Update w from 7568 to 15136
- a < prob add new child.
+Update w from 2352384 to 2959296
+ a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 9 g = 17 f = 26
-g : 18
+g : 17
 Childs:  h = 10 g = 18 f = 28
 	Child Pruned  h = 10 g = 18 f = 28
 		
-		 level: 19 (to confirm).
+		 level: 18 (to confirm).
+		h = 11, g = 17, f = 28
 		h = 0, g = 18, f = 18
 		h = 2, g = 18, f = 20
 		h = 4, g = 18, f = 22
@@ -2357,7 +3321,8 @@ Childs:  h = 10 g = 18 f = 28
 Childs:  h = 8 g = 18 f = 26
 	Child Pruned  h = 8 g = 18 f = 26
 		
-		 level: 19 (to confirm).
+		 level: 18 (to confirm).
+		h = 11, g = 17, f = 28
 		h = 0, g = 18, f = 18
 		h = 2, g = 18, f = 20
 		h = 4, g = 18, f = 22
@@ -2367,61 +3332,114 @@ Node is in the queue and should not be added.
 		h = 10, g = 18, f = 28
 		
 Duplicate node h = 8 g = 18 f = 26
-Update w from 7568 to 7784
+Update w from 606912 to 1228608
+remove the old node. 
+ a < prob add new child with w = 1228608
+Childs:  h = 8 g = 18 f = 26
+	Child Pruned  h = 8 g = 18 f = 26
+		
+		 level: 18 (to confirm).
+		h = 11, g = 17, f = 28
+		h = 0, g = 18, f = 18
+		h = 2, g = 18, f = 20
+		h = 4, g = 18, f = 22
+		h = 6, g = 18, f = 24
+		h = 8, g = 18, f = 26
+Node is in the queue and should not be added.
+		h = 10, g = 18, f = 28
+		
+Duplicate node h = 8 g = 18 f = 26
+Update w from 1228608 to 1850304
  a >= prob do not add the new element.
 ******************************************
-Raiz:  h = 0 g = 18 f = 18
-g : 19
-Childs:  h = 1 g = 19 f = 20
-	Child Pruned  h = 1 g = 19 f = 20
+Raiz:  h = 11 g = 17 f = 28
+g : 17
+Childs:  h = 12 g = 18 f = 30
+	Child Pruned  h = 12 g = 18 f = 30
 		
-		 level: 20 (to confirm).
+		 level: 18 (to confirm).
+		h = 0, g = 18, f = 18
 		h = 2, g = 18, f = 20
 		h = 4, g = 18, f = 22
 		h = 6, g = 18, f = 24
 		h = 8, g = 18, f = 26
 		h = 10, g = 18, f = 28
 		
-	New node h = 1 g = 19 f = 20
-******************************************
-Raiz:  h = 2 g = 18 f = 20
-g : 19
-Childs:  h = 3 g = 19 f = 22
-	Child Pruned  h = 3 g = 19 f = 22
+	New node h = 12 g = 18 f = 30
+Childs:  h = 10 g = 18 f = 28
+	Child Pruned  h = 10 g = 18 f = 28
 		
-		 level: 20 (to confirm).
+		 level: 18 (to confirm).
+		h = 0, g = 18, f = 18
+		h = 2, g = 18, f = 20
 		h = 4, g = 18, f = 22
 		h = 6, g = 18, f = 24
 		h = 8, g = 18, f = 26
 		h = 10, g = 18, f = 28
+Node is in the queue and should not be added.
+		h = 12, g = 18, f = 30
+		
+Duplicate node h = 10 g = 18 f = 28
+Update w from 621696 to 830208
+ a >= prob do not add the new element.
+******************************************
+Raiz:  h = 0 g = 18 f = 18
+g : 18
+Childs:  h = 1 g = 19 f = 20
+	Child Pruned  h = 1 g = 19 f = 20
+		
+		 level: 19 (to confirm).
+		h = 2, g = 18, f = 20
+		h = 4, g = 18, f = 22
+		h = 6, g = 18, f = 24
+		h = 8, g = 18, f = 26
+		h = 10, g = 18, f = 28
+		h = 12, g = 18, f = 30
+		
+	New node h = 1 g = 19 f = 20
+******************************************
+Raiz:  h = 2 g = 18 f = 20
+g : 18
+Childs:  h = 3 g = 19 f = 22
+	Child Pruned  h = 3 g = 19 f = 22
+		
+		 level: 19 (to confirm).
+		h = 4, g = 18, f = 22
+		h = 6, g = 18, f = 24
+		h = 8, g = 18, f = 26
+		h = 10, g = 18, f = 28
+		h = 12, g = 18, f = 30
 		h = 1, g = 19, f = 20
 		
 	New node h = 3 g = 19 f = 22
 Childs:  h = 1 g = 19 f = 20
 	Child Pruned  h = 1 g = 19 f = 20
 		
-		 level: 20 (to confirm).
+		 level: 19 (to confirm).
 		h = 4, g = 18, f = 22
 		h = 6, g = 18, f = 24
 		h = 8, g = 18, f = 26
 		h = 10, g = 18, f = 28
+		h = 12, g = 18, f = 30
 		h = 1, g = 19, f = 20
 Node is in the queue and should not be added.
 		h = 3, g = 19, f = 22
 		
 Duplicate node h = 1 g = 19 f = 20
-Update w from 50176 to 100352
- a < prob add new child.
+Update w from 768384 to 1536768
+remove the old node. 
+ a < prob add new child with w = 1536768
 ******************************************
 Raiz:  h = 4 g = 18 f = 22
-g : 19
+g : 18
 Childs:  h = 5 g = 19 f = 24
 	Child Pruned  h = 5 g = 19 f = 24
 		
-		 level: 20 (to confirm).
+		 level: 19 (to confirm).
 		h = 6, g = 18, f = 24
 		h = 8, g = 18, f = 26
 		h = 10, g = 18, f = 28
+		h = 12, g = 18, f = 30
 		h = 1, g = 19, f = 20
 		h = 3, g = 19, f = 22
 		
@@ -2429,54 +3447,74 @@ Childs:  h = 5 g = 19 f = 24
 Childs:  h = 3 g = 19 f = 22
 	Child Pruned  h = 3 g = 19 f = 22
 		
-		 level: 20 (to confirm).
+		 level: 19 (to confirm).
 		h = 6, g = 18, f = 24
 		h = 8, g = 18, f = 26
 		h = 10, g = 18, f = 28
+		h = 12, g = 18, f = 30
 		h = 1, g = 19, f = 20
 		h = 3, g = 19, f = 22
 Node is in the queue and should not be added.
 		h = 5, g = 19, f = 24
 		
 Duplicate node h = 3 g = 19 f = 22
-Update w from 28544 to 57088
- a >= prob do not add the new element.
-******************************************
-Raiz:  h = 6 g = 18 f = 24
-g : 19
+Update w from 1568256 to 3136512
+remove the old node. 
+ a < prob add new child with w = 3136512
 Childs:  h = 5 g = 19 f = 24
 	Child Pruned  h = 5 g = 19 f = 24
 		
-		 level: 20 (to confirm).
+		 level: 19 (to confirm).
+		h = 6, g = 18, f = 24
 		h = 8, g = 18, f = 26
 		h = 10, g = 18, f = 28
+		h = 12, g = 18, f = 30
 		h = 1, g = 19, f = 20
 		h = 3, g = 19, f = 22
 		h = 5, g = 19, f = 24
 Node is in the queue and should not be added.
 		
 Duplicate node h = 5 g = 19 f = 24
-Update w from 15136 to 30272
+Update w from 1568256 to 3136512
+remove the old node. 
+ a < prob add new child with w = 3136512
+******************************************
+Raiz:  h = 6 g = 18 f = 24
+g : 18
+Childs:  h = 5 g = 19 f = 24
+	Child Pruned  h = 5 g = 19 f = 24
+		
+		 level: 19 (to confirm).
+		h = 8, g = 18, f = 26
+		h = 10, g = 18, f = 28
+		h = 12, g = 18, f = 30
+		h = 1, g = 19, f = 20
+		h = 3, g = 19, f = 22
+		h = 5, g = 19, f = 24
+Node is in the queue and should not be added.
+		
+Duplicate node h = 5 g = 19 f = 24
+Update w from 3136512 to 6095808
  a >= prob do not add the new element.
 Childs:  h = 7 g = 19 f = 26
 	Child Pruned  h = 7 g = 19 f = 26
 		
-		 level: 20 (to confirm).
+		 level: 19 (to confirm).
 		h = 8, g = 18, f = 26
 		h = 10, g = 18, f = 28
+		h = 12, g = 18, f = 30
 		h = 1, g = 19, f = 20
 		h = 3, g = 19, f = 22
 		h = 5, g = 19, f = 24
 		
 	New node h = 7 g = 19 f = 26
-******************************************
-Raiz:  h = 8 g = 18 f = 26
-g : 19
 Childs:  h = 7 g = 19 f = 26
 	Child Pruned  h = 7 g = 19 f = 26
 		
-		 level: 20 (to confirm).
+		 level: 19 (to confirm).
+		h = 8, g = 18, f = 26
 		h = 10, g = 18, f = 28
+		h = 12, g = 18, f = 30
 		h = 1, g = 19, f = 20
 		h = 3, g = 19, f = 22
 		h = 5, g = 19, f = 24
@@ -2484,69 +3522,139 @@ Childs:  h = 7 g = 19 f = 26
 Node is in the queue and should not be added.
 		
 Duplicate node h = 7 g = 19 f = 26
-Update w from 7784 to 15568
+Update w from 2959296 to 5918592
  a >= prob do not add the new element.
 ******************************************
-Raiz:  h = 10 g = 18 f = 28
-g : 19
+Raiz:  h = 8 g = 18 f = 26
+g : 18
 Childs:  h = 9 g = 19 f = 28
 	Child Pruned  h = 9 g = 19 f = 28
 		
-		 level: 20 (to confirm).
+		 level: 19 (to confirm).
+		h = 10, g = 18, f = 28
+		h = 12, g = 18, f = 30
 		h = 1, g = 19, f = 20
 		h = 3, g = 19, f = 22
 		h = 5, g = 19, f = 24
 		h = 7, g = 19, f = 26
 		
 	New node h = 9 g = 19 f = 28
-******************************************
-Raiz:  h = 1 g = 19 f = 20
-g : 20
-Childs:  h = 0 g = 20 f = 20
-	Child Pruned  h = 0 g = 20 f = 20
+Childs:  h = 7 g = 19 f = 26
+	Child Pruned  h = 7 g = 19 f = 26
 		
-		 level: 21 (to confirm).
+		 level: 19 (to confirm).
+		h = 10, g = 18, f = 28
+		h = 12, g = 18, f = 30
+		h = 1, g = 19, f = 20
+		h = 3, g = 19, f = 22
+		h = 5, g = 19, f = 24
+		h = 7, g = 19, f = 26
+Node is in the queue and should not be added.
+		h = 9, g = 19, f = 28
+		
+Duplicate node h = 7 g = 19 f = 26
+Update w from 5918592 to 7768896
+ a >= prob do not add the new element.
+******************************************
+Raiz:  h = 10 g = 18 f = 28
+g : 18
+Childs:  h = 9 g = 19 f = 28
+	Child Pruned  h = 9 g = 19 f = 28
+		
+		 level: 19 (to confirm).
+		h = 12, g = 18, f = 30
+		h = 1, g = 19, f = 20
 		h = 3, g = 19, f = 22
 		h = 5, g = 19, f = 24
 		h = 7, g = 19, f = 26
 		h = 9, g = 19, f = 28
+Node is in the queue and should not be added.
+		
+Duplicate node h = 9 g = 19 f = 28
+Update w from 830208 to 1660416
+ a >= prob do not add the new element.
+Childs:  h = 11 g = 19 f = 30
+	Child Pruned  h = 11 g = 19 f = 30
+		
+		 level: 19 (to confirm).
+		h = 12, g = 18, f = 30
+		h = 1, g = 19, f = 20
+		h = 3, g = 19, f = 22
+		h = 5, g = 19, f = 24
+		h = 7, g = 19, f = 26
+		h = 9, g = 19, f = 28
+		
+	New node h = 11 g = 19 f = 30
+******************************************
+Raiz:  h = 12 g = 18 f = 30
+g : 18
+Childs:  h = 11 g = 19 f = 30
+	Child Pruned  h = 11 g = 19 f = 30
+		
+		 level: 19 (to confirm).
+		h = 1, g = 19, f = 20
+		h = 3, g = 19, f = 22
+		h = 5, g = 19, f = 24
+		h = 7, g = 19, f = 26
+		h = 9, g = 19, f = 28
+		h = 11, g = 19, f = 30
+Node is in the queue and should not be added.
+		
+Duplicate node h = 11 g = 19 f = 30
+Update w from 830208 to 1038720
+ a >= prob do not add the new element.
+******************************************
+Raiz:  h = 1 g = 19 f = 20
+g : 19
+Childs:  h = 0 g = 20 f = 20
+	Child Pruned  h = 0 g = 20 f = 20
+		
+		 level: 20 (to confirm).
+		h = 3, g = 19, f = 22
+		h = 5, g = 19, f = 24
+		h = 7, g = 19, f = 26
+		h = 9, g = 19, f = 28
+		h = 11, g = 19, f = 30
 		
 	New node h = 0 g = 20 f = 20
 Childs:  h = 2 g = 20 f = 22
 	Child Pruned  h = 2 g = 20 f = 22
 		
-		 level: 21 (to confirm).
+		 level: 20 (to confirm).
 		h = 3, g = 19, f = 22
 		h = 5, g = 19, f = 24
 		h = 7, g = 19, f = 26
 		h = 9, g = 19, f = 28
+		h = 11, g = 19, f = 30
 		h = 0, g = 20, f = 20
 		
 	New node h = 2 g = 20 f = 22
 ******************************************
 Raiz:  h = 3 g = 19 f = 22
-g : 20
+g : 19
 Childs:  h = 2 g = 20 f = 22
 	Child Pruned  h = 2 g = 20 f = 22
 		
-		 level: 21 (to confirm).
+		 level: 20 (to confirm).
 		h = 5, g = 19, f = 24
 		h = 7, g = 19, f = 26
 		h = 9, g = 19, f = 28
+		h = 11, g = 19, f = 30
 		h = 0, g = 20, f = 20
 		h = 2, g = 20, f = 22
 Node is in the queue and should not be added.
 		
 Duplicate node h = 2 g = 20 f = 22
-Update w from 57088 to 114176
- a < prob add new child.
+Update w from 3136512 to 6273024
+ a >= prob do not add the new element.
 Childs:  h = 4 g = 20 f = 24
 	Child Pruned  h = 4 g = 20 f = 24
 		
-		 level: 21 (to confirm).
+		 level: 20 (to confirm).
 		h = 5, g = 19, f = 24
 		h = 7, g = 19, f = 26
 		h = 9, g = 19, f = 28
+		h = 11, g = 19, f = 30
 		h = 0, g = 20, f = 20
 		h = 2, g = 20, f = 22
 		
@@ -2554,41 +3662,30 @@ Childs:  h = 4 g = 20 f = 24
 Childs:  h = 4 g = 20 f = 24
 	Child Pruned  h = 4 g = 20 f = 24
 		
-		 level: 21 (to confirm).
+		 level: 20 (to confirm).
 		h = 5, g = 19, f = 24
 		h = 7, g = 19, f = 26
 		h = 9, g = 19, f = 28
+		h = 11, g = 19, f = 30
 		h = 0, g = 20, f = 20
 		h = 2, g = 20, f = 22
 		h = 4, g = 20, f = 24
 Node is in the queue and should not be added.
 		
 Duplicate node h = 4 g = 20 f = 24
-Update w from 57088 to 114176
- a >= prob do not add the new element.
+Update w from 3136512 to 6273024
+remove the old node. 
+ a < prob add new child with w = 6273024
 ******************************************
 Raiz:  h = 5 g = 19 f = 24
-g : 20
-Childs:  h = 4 g = 20 f = 24
-	Child Pruned  h = 4 g = 20 f = 24
-		
-		 level: 21 (to confirm).
-		h = 7, g = 19, f = 26
-		h = 9, g = 19, f = 28
-		h = 0, g = 20, f = 20
-		h = 2, g = 20, f = 22
-		h = 4, g = 20, f = 24
-Node is in the queue and should not be added.
-		
-Duplicate node h = 4 g = 20 f = 24
-Update w from 30272 to 60544
- a >= prob do not add the new element.
+g : 19
 Childs:  h = 6 g = 20 f = 26
 	Child Pruned  h = 6 g = 20 f = 26
 		
-		 level: 21 (to confirm).
+		 level: 20 (to confirm).
 		h = 7, g = 19, f = 26
 		h = 9, g = 19, f = 28
+		h = 11, g = 19, f = 30
 		h = 0, g = 20, f = 20
 		h = 2, g = 20, f = 22
 		h = 4, g = 20, f = 24
@@ -2597,9 +3694,10 @@ Childs:  h = 6 g = 20 f = 26
 Childs:  h = 6 g = 20 f = 26
 	Child Pruned  h = 6 g = 20 f = 26
 		
-		 level: 21 (to confirm).
+		 level: 20 (to confirm).
 		h = 7, g = 19, f = 26
 		h = 9, g = 19, f = 28
+		h = 11, g = 19, f = 30
 		h = 0, g = 20, f = 20
 		h = 2, g = 20, f = 22
 		h = 4, g = 20, f = 24
@@ -2607,27 +3705,62 @@ Childs:  h = 6 g = 20 f = 26
 Node is in the queue and should not be added.
 		
 Duplicate node h = 6 g = 20 f = 26
-Update w from 30272 to 60544
+Update w from 6095808 to 12191616
+remove the old node. 
+ a < prob add new child with w = 12191616
+Childs:  h = 4 g = 20 f = 24
+	Child Pruned  h = 4 g = 20 f = 24
+		
+		 level: 20 (to confirm).
+		h = 7, g = 19, f = 26
+		h = 9, g = 19, f = 28
+		h = 11, g = 19, f = 30
+		h = 0, g = 20, f = 20
+		h = 2, g = 20, f = 22
+		h = 4, g = 20, f = 24
+Node is in the queue and should not be added.
+		h = 6, g = 20, f = 26
+		
+Duplicate node h = 4 g = 20 f = 24
+Update w from 6095808 to 12191616
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 7 g = 19 f = 26
-g : 20
+g : 19
 Childs:  h = 8 g = 20 f = 28
 	Child Pruned  h = 8 g = 20 f = 28
 		
-		 level: 21 (to confirm).
+		 level: 20 (to confirm).
 		h = 9, g = 19, f = 28
+		h = 11, g = 19, f = 30
 		h = 0, g = 20, f = 20
 		h = 2, g = 20, f = 22
 		h = 4, g = 20, f = 24
 		h = 6, g = 20, f = 26
 		
 	New node h = 8 g = 20 f = 28
+Childs:  h = 8 g = 20 f = 28
+	Child Pruned  h = 8 g = 20 f = 28
+		
+		 level: 20 (to confirm).
+		h = 9, g = 19, f = 28
+		h = 11, g = 19, f = 30
+		h = 0, g = 20, f = 20
+		h = 2, g = 20, f = 22
+		h = 4, g = 20, f = 24
+		h = 6, g = 20, f = 26
+		h = 8, g = 20, f = 28
+Node is in the queue and should not be added.
+		
+Duplicate node h = 8 g = 20 f = 28
+Update w from 7768896 to 15537792
+ a >= prob do not add the new element.
 Childs:  h = 6 g = 20 f = 26
 	Child Pruned  h = 6 g = 20 f = 26
 		
-		 level: 21 (to confirm).
+		 level: 20 (to confirm).
 		h = 9, g = 19, f = 28
+		h = 11, g = 19, f = 30
 		h = 0, g = 20, f = 20
 		h = 2, g = 20, f = 22
 		h = 4, g = 20, f = 24
@@ -2636,15 +3769,16 @@ Node is in the queue and should not be added.
 		h = 8, g = 20, f = 28
 		
 Duplicate node h = 6 g = 20 f = 26
-Update w from 15568 to 31136
- a < prob add new child.
+Update w from 12191616 to 19960512
+ a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 9 g = 19 f = 28
-g : 20
+g : 19
 Childs:  h = 10 g = 20 f = 30
 	Child Pruned  h = 10 g = 20 f = 30
 		
-		 level: 21 (to confirm).
+		 level: 20 (to confirm).
+		h = 11, g = 19, f = 30
 		h = 0, g = 20, f = 20
 		h = 2, g = 20, f = 22
 		h = 4, g = 20, f = 24
@@ -2655,7 +3789,8 @@ Childs:  h = 10 g = 20 f = 30
 Childs:  h = 8 g = 20 f = 28
 	Child Pruned  h = 8 g = 20 f = 28
 		
-		 level: 21 (to confirm).
+		 level: 20 (to confirm).
+		h = 11, g = 19, f = 30
 		h = 0, g = 20, f = 20
 		h = 2, g = 20, f = 22
 		h = 4, g = 20, f = 24
@@ -2665,35 +3800,89 @@ Node is in the queue and should not be added.
 		h = 10, g = 20, f = 30
 		
 Duplicate node h = 8 g = 20 f = 28
-Update w from 15568 to 15784
+Update w from 15537792 to 17198208
+ a >= prob do not add the new element.
+Childs:  h = 8 g = 20 f = 28
+	Child Pruned  h = 8 g = 20 f = 28
+		
+		 level: 20 (to confirm).
+		h = 11, g = 19, f = 30
+		h = 0, g = 20, f = 20
+		h = 2, g = 20, f = 22
+		h = 4, g = 20, f = 24
+		h = 6, g = 20, f = 26
+		h = 8, g = 20, f = 28
+Node is in the queue and should not be added.
+		h = 10, g = 20, f = 30
+		
+Duplicate node h = 8 g = 20 f = 28
+Update w from 17198208 to 18858624
+ a >= prob do not add the new element.
+******************************************
+Raiz:  h = 11 g = 19 f = 30
+g : 19
+Childs:  h = 12 g = 20 f = 32
+	Child Pruned  h = 12 g = 20 f = 32
+		
+		 level: 20 (to confirm).
+		h = 0, g = 20, f = 20
+		h = 2, g = 20, f = 22
+		h = 4, g = 20, f = 24
+		h = 6, g = 20, f = 26
+		h = 8, g = 20, f = 28
+		h = 10, g = 20, f = 30
+		
+	New node h = 12 g = 20 f = 32
+Childs:  h = 10 g = 20 f = 30
+	Child Pruned  h = 10 g = 20 f = 30
+		
+		 level: 20 (to confirm).
+		h = 0, g = 20, f = 20
+		h = 2, g = 20, f = 22
+		h = 4, g = 20, f = 24
+		h = 6, g = 20, f = 26
+		h = 8, g = 20, f = 28
+		h = 10, g = 20, f = 30
+Node is in the queue and should not be added.
+		h = 12, g = 20, f = 32
+		
+Duplicate node h = 10 g = 20 f = 30
+Update w from 1038720 to 2077440
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 0 g = 20 f = 20
-g : 21
+g : 20
 Childs:  h = 1 g = 21 f = 22
 ******************************************
 Raiz:  h = 2 g = 20 f = 22
-g : 21
+g : 20
 Childs:  h = 3 g = 21 f = 24
 Childs:  h = 1 g = 21 f = 22
 ******************************************
 Raiz:  h = 4 g = 20 f = 24
-g : 21
+g : 20
 Childs:  h = 5 g = 21 f = 26
 Childs:  h = 3 g = 21 f = 24
+Childs:  h = 5 g = 21 f = 26
 ******************************************
 Raiz:  h = 6 g = 20 f = 26
-g : 21
-Childs:  h = 5 g = 21 f = 26
+g : 20
 Childs:  h = 7 g = 21 f = 28
+Childs:  h = 5 g = 21 f = 26
 ******************************************
 Raiz:  h = 8 g = 20 f = 28
-g : 21
+g : 20
 Childs:  h = 7 g = 21 f = 28
+Childs:  h = 9 g = 21 f = 30
 ******************************************
 Raiz:  h = 10 g = 20 f = 30
-g : 21
+g : 20
 Childs:  h = 9 g = 21 f = 30
+Childs:  h = 11 g = 21 f = 32
+******************************************
+Raiz:  h = 12 g = 20 f = 32
+g : 20
+Childs:  h = 11 g = 21 f = 32
 v_f_value.size() = 0
 ****************************************************************
 total levels = 22
@@ -2703,101 +3892,101 @@ sum: 3
 sum: 5
 sum: 8
 sum: 15
-sum: 26
-sum: 56
-sum: 129
-sum: 326
-sum: 739
-sum: 1831
-sum: 3831
-sum: 9487
-sum: 17767
-sum: 44343
-sum: 74751
-sum: 152959
-sum: 236455
-sum: 438663
-sum: 642159
-The f-Distribution for max_g of this iteration 22
+sum: 28
+sum: 71
+sum: 170
+sum: 463
+sum: 1182
+sum: 3246
+sum: 8138
+sum: 25910
+sum: 72590
+sum: 229598
+sum: 601886
+sum: 1893950
+sum: 4689086
+sum: 14410814
+sum: 35647934
+The f-Distribution for max_g of this iteration 21
 
 ****************************************************************
-counter in te while k = 91
-Number of expanded nodes with threshold 20 = 864015
+counter in te while k = 105
+Number of expanded nodes with threshold 20 = 96047870
 the directory was not created
 -----------------Print the f-Distribution of each level-----------------
+g: 0
+f: 10 q: 1
 g: 1
 f: 10 q: 1
 g: 2
 f: 10 q: 1
+f: 12 q: 1
 g: 3
 f: 10 q: 1
 f: 12 q: 1
 g: 4
 f: 10 q: 1
-f: 12 q: 1
+f: 12 q: 2
 g: 5
 f: 10 q: 1
 f: 12 q: 2
 g: 6
 f: 10 q: 1
-f: 12 q: 2
+f: 12 q: 3
 g: 7
 f: 10 q: 1
-f: 12 q: 3
+f: 12 q: 2
 g: 8
 f: 10 q: 1
 f: 12 q: 2
 g: 9
 f: 10 q: 1
-f: 12 q: 2
+f: 12 q: 1
 g: 10
 f: 10 q: 1
 f: 12 q: 1
 g: 11
-f: 10 q: 1
 f: 12 q: 1
 g: 12
 f: 12 q: 1
+f: 14 q: 1
 g: 13
-f: 12 q: 1
 f: 14 q: 1
 g: 14
 f: 14 q: 1
+f: 16 q: 1
 g: 15
-f: 14 q: 1
 f: 16 q: 1
 g: 16
 f: 16 q: 1
+f: 18 q: 1
 g: 17
-f: 16 q: 1
 f: 18 q: 1
 g: 18
 f: 18 q: 1
+f: 20 q: 1
 g: 19
-f: 18 q: 1
 f: 20 q: 1
 g: 20
 f: 20 q: 1
-g: 21
-f: 20 q: 1
 f: 22 q: 1
-g: 22
+g: 21
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
-Actual search time: 0s [t=1,11s]
+Actual search time: 0,01s [t=1,12s]
 Expanded 0 state(s).
 Reopened 0 state(s).
 Evaluated 1 state(s).
 Evaluations: 1
 Generated 0 state(s).
 Dead ends: 1 state(s).
-Search space hash size: 32
+Search space hash size: 49
 Search space hash bucket count: 193
-Search time: 1,11s
-Total time: 1,11s
-Peak memory: 18648 KB
-VmRSS memory: 1896 KB
-VmHWM memory: 10212 KB
+Search time: 1,12s
+Total time: 1,12s
+Peak memory: 30944 KB
+VmRSS memory: 2300 KB
+VmHWM memory: 18128 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

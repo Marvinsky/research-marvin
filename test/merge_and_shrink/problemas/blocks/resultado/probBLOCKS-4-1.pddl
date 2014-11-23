@@ -4,19 +4,19 @@ Estos son los inicios de los inicios.
 argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
-argv[2] = astar(merge_and_shrink())
-argv[4] = XDG_VTNR=5
-argv[5] = XDG_SESSION_ID=c5
+argv[2] = astar(blind())
+argv[4] = XDG_VTNR=1
+argv[5] = XDG_SESSION_ID=c6
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
 registered: astar
 calling parse_astar
-registered: merge_and_shrink
+registered: blind
 OptionParser::parse_cmd_line
 registered: astar
 calling parse_astar
-registered: merge_and_shrink
+registered: blind
 parser is not dry_run
 subevaluators_.size:2
  ___________________________________
@@ -32,303 +32,589 @@ got 2 heuristics
 f_evaluator populated
 # heuristics:1
 starting timings
-node gen_and_exp_cost:2.55248e-06
+node gen_and_exp_cost:1.38563e-06
 active heuristics size:1
-Initializing merge-and-shrink heuristic...
-Merge strategy: linear CG/GOAL, tie breaking on level (main)
-Shrink strategy: f-preserving
-Abstraction size limit: 50000
-Abstraction size limit right before merge: 50000
-Prefer shrinking high or low f states: high
-Prefer shrinking high or low h states: low
-Number of abstractions to maximize over: 1
-Label reduction: enabled
-Expensive statistics: disabled
-Building abstraction #1...
-Building atomic abstractions... 
-Shrinking atomic abstractions...
-Atomic abstraction #0: computing distances using unit-cost algorithm
-Atomic abstraction #1: computing distances using unit-cost algorithm
-Atomic abstraction #2: computing distances using unit-cost algorithm
-Atomic abstraction #3: computing distances using unit-cost algorithm
-Atomic abstraction #4: computing distances using unit-cost algorithm
-Atomic abstraction #5: computing distances using unit-cost algorithm
-Atomic abstraction #6: computing distances using unit-cost algorithm
-Atomic abstraction #7: computing distances using unit-cost algorithm
-Atomic abstraction #8: computing distances using unit-cost algorithm
-Merging abstractions...
-First variable: #8
-Atomic abstraction #8: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #8: init h=2, max f=4, max g=2, max h=2 [t=1s]
-Next variable: #5
-Atomic abstraction #8: distances already known
-Atomic abstraction #5: distances already known
-Atomic abstraction #8: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #8: init h=2, max f=4, max g=2, max h=2 [t=1s]
-Atomic abstraction #5: 2 states, ???/48 arcs, 1088 bytes
-Atomic abstraction #5: init h=0, max f=1, max g=1, max h=0 [t=1s]
-Atomic abstraction #8: normalizing with label reduction
-Label reduction: 1 pruned vars, 8 labels, 8 reduced labels
-Atomic abstraction #8: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #8: init h=2, max f=4, max g=2, max h=2 [t=1s]
-Atomic abstraction #5: normalizing without label reduction
-Atomic abstraction #5: 2 states, ???/48 arcs, 1088 bytes
-Atomic abstraction #5: init h=0, max f=1, max g=1, max h=0 [t=1s]
-Merging atomic abstraction #8 and atomic abstraction #5
-Abstraction (2/9 vars): 10 states, ???/192 arcs, 2320 bytes
-Abstraction (2/9 vars): distances not computed [t=1s]
-Next variable: #7
-Abstraction (2/9 vars): computing distances using unit-cost algorithm
-Atomic abstraction #7: distances already known
-Abstraction (2/9 vars): 10 states, ???/192 arcs, 2400 bytes
-Abstraction (2/9 vars): init h=2, max f=6, max g=3, max h=3 [t=1s]
-Atomic abstraction #7: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #7: init h=0, max f=4, max g=2, max h=2 [t=1s]
-Abstraction (2/9 vars): normalizing with label reduction
-Label reduction: 2 pruned vars, 32 labels, 32 reduced labels
-Abstraction (2/9 vars): 10 states, ???/192 arcs, 3264 bytes
-Abstraction (2/9 vars): init h=2, max f=6, max g=3, max h=3 [t=1s]
-Atomic abstraction #7: normalizing without label reduction
-Atomic abstraction #7: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #7: init h=0, max f=4, max g=2, max h=2 [t=1s]
-Merging abstraction (2/9 vars) and atomic abstraction #7
-Abstraction (3/9 vars): 50 states, ???/720 arcs, 6796 bytes
-Abstraction (3/9 vars): distances not computed [t=1s]
-Next variable: #6
-Abstraction (3/9 vars): computing distances using unit-cost algorithm
-Atomic abstraction #6: distances already known
-Abstraction (3/9 vars): 50 states, ???/720 arcs, 7196 bytes
-Abstraction (3/9 vars): init h=2, max f=10, max g=5, max h=5 [t=1s]
-Atomic abstraction #6: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #6: init h=2, max f=4, max g=2, max h=2 [t=1s]
-Abstraction (3/9 vars): normalizing with label reduction
-Label reduction: 3 pruned vars, 32 labels, 30 reduced labels
-Abstraction (3/9 vars): 50 states, ???/720 arcs, 8988 bytes
-Abstraction (3/9 vars): init h=2, max f=10, max g=5, max h=5 [t=1s]
-Atomic abstraction #6: normalizing without label reduction
-Atomic abstraction #6: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #6: init h=2, max f=4, max g=2, max h=2 [t=1s]
-Merging abstraction (3/9 vars) and atomic abstraction #6
-Abstraction (4/9 vars): 250 states, ???/2400 arcs, 21708 bytes
-Abstraction (4/9 vars): distances not computed [t=1s]
-Next variable: #4
-Abstraction (4/9 vars): computing distances using unit-cost algorithm
-Atomic abstraction #4: distances already known
-Abstraction (4/9 vars): 250 states, ???/2400 arcs, 23708 bytes
-Abstraction (4/9 vars): init h=4, max f=14, max g=7, max h=7 [t=1s]
-Atomic abstraction #4: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #4: init h=0, max f=1, max g=1, max h=0 [t=1s]
-Abstraction (4/9 vars): normalizing with label reduction
-Label reduction: 4 pruned vars, 32 labels, 26 reduced labels
-Abstraction (4/9 vars): 250 states, ???/2400 arcs, 27548 bytes
-Abstraction (4/9 vars): init h=4, max f=14, max g=7, max h=7 [t=1s]
-Atomic abstraction #4: normalizing without label reduction
-Atomic abstraction #4: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #4: init h=0, max f=1, max g=1, max h=0 [t=1s]
-Merging abstraction (4/9 vars) and atomic abstraction #4
-Abstraction (5/9 vars): 500 states, ???/4350 arcs, 40964 bytes
-Abstraction (5/9 vars): distances not computed [t=1s]
-Next variable: #3
-Abstraction (5/9 vars): computing distances using unit-cost algorithm
-Atomic abstraction #3: distances already known
-Abstraction (5/9 vars): 500 states, ???/4350 arcs, 44964 bytes
-Abstraction (5/9 vars): init h=4, max f=17, max g=10, max h=9 [t=1s]
-Atomic abstraction #3: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #3: init h=0, max f=1, max g=1, max h=0 [t=1s]
-Abstraction (5/9 vars): normalizing with label reduction
-Label reduction: 5 pruned vars, 32 labels, 21 reduced labels
-Abstraction (5/9 vars): 500 states, ???/4350 arcs, 50356 bytes
-Abstraction (5/9 vars): init h=4, max f=17, max g=10, max h=9 [t=1s]
-Atomic abstraction #3: normalizing without label reduction
-Atomic abstraction #3: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #3: init h=0, max f=1, max g=1, max h=0 [t=1s]
-Merging abstraction (5/9 vars) and atomic abstraction #3
-Abstraction (6/9 vars): 1000 states, ???/7800 arcs, 74076 bytes
-Abstraction (6/9 vars): distances not computed [t=1s]
-Next variable: #2
-Abstraction (6/9 vars): computing distances using unit-cost algorithm
-Atomic abstraction #2: distances already known
-Abstraction (6/9 vars): 1000 states, ???/7800 arcs, 82076 bytes
-Abstraction (6/9 vars): init h=6, max f=21, max g=14, max h=11 [t=1.01s]
-Atomic abstraction #2: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1.01s]
-Abstraction (6/9 vars): normalizing with label reduction
-Label reduction: 6 pruned vars, 32 labels, 15 reduced labels
-Abstraction (6/9 vars): 1000 states, ???/7800 arcs, 89308 bytes
-Abstraction (6/9 vars): init h=6, max f=21, max g=14, max h=11 [t=1.01s]
-Atomic abstraction #2: normalizing without label reduction
-Atomic abstraction #2: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1.01s]
-Merging abstraction (6/9 vars) and atomic abstraction #2
-Abstraction (7/9 vars): 2000 states, ???/13800 arcs, 133068 bytes
-Abstraction (7/9 vars): distances not computed [t=1.01s]
-Next variable: #1
-Abstraction (7/9 vars): computing distances using unit-cost algorithm
-Atomic abstraction #1: distances already known
-Abstraction (7/9 vars): 2000 states, ???/13800 arcs, 149068 bytes
-Abstraction (7/9 vars): init h=8, max f=25, max g=14, max h=13 [t=1.01s]
-Atomic abstraction #1: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1.01s]
-Abstraction (7/9 vars): normalizing with label reduction
-Label reduction: 7 pruned vars, 32 labels, 11 reduced labels
-Abstraction (7/9 vars): 2000 states, ???/13800 arcs, 165644 bytes
-Abstraction (7/9 vars): init h=8, max f=25, max g=14, max h=13 [t=1.01s]
-Atomic abstraction #1: normalizing without label reduction
-Atomic abstraction #1: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1.01s]
-Merging abstraction (7/9 vars) and atomic abstraction #1
-Abstraction (8/9 vars): 4000 states, ???/22400 arcs, 223852 bytes
-Abstraction (8/9 vars): distances not computed [t=1.01s]
-Next variable: #0
-Abstraction (8/9 vars): computing distances using unit-cost algorithm
-Abstraction (8/9 vars): unreachable: 1016 states, irrelevant: 0 states
-Abstraction (8/9 vars): shrink forced to prune unreachable/irrelevant states
-Abstraction (8/9 vars): applying abstraction (4000 to 2984 states)
-Abstraction (8/9 vars): applying abstraction to lookup table
-Abstraction (8/9 vars): size after shrink 2984, target 4000
-Atomic abstraction #0: distances already known
-Abstraction (8/9 vars): 2984 states, ???/18576 arcs, 246732 bytes
-Abstraction (8/9 vars): init h=8, max f=25, max g=15, max h=13 [t=1.02s]
-Atomic abstraction #0: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1.02s]
-Abstraction (8/9 vars): normalizing with label reduction
-Label reduction: 8 pruned vars, 32 labels, 9 reduced labels
-Abstraction (8/9 vars): 2984 states, ???/18576 arcs, 247756 bytes
-Abstraction (8/9 vars): init h=8, max f=25, max g=15, max h=13 [t=1.02s]
-Atomic abstraction #0: normalizing without label reduction
-Atomic abstraction #0: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1.02s]
-Merging abstraction (8/9 vars) and atomic abstraction #0
-Abstraction (9/9 vars): 14920 states, ???/46908 arcs, 486348 bytes
-Abstraction (9/9 vars): distances not computed [t=1.02s]
-Abstraction (9/9 vars): computing distances using unit-cost algorithm
-Abstraction (9/9 vars): unreachable: 14795 states, irrelevant: 0 states
-Abstraction (9/9 vars): shrink forced to prune unreachable/irrelevant states
-Abstraction (9/9 vars): applying abstraction (14920 to 125 states)
-Abstraction (9/9 vars): applying abstraction to lookup table
-Abstraction (9/9 vars): size after shrink 125, target 14920
-Abstraction (9/9 vars): shrink forced to prune unreachable/irrelevant states
-Abstraction (9/9 vars): applying abstraction (125 to 125 states)
-Abstraction (9/9 vars): applying abstraction to lookup table
-Abstraction (9/9 vars): size after shrink 125, target 125
-Abstraction (9/9 vars): distances already known
-Abstraction (9/9 vars): 125 states, ???/272 arcs, 99444 bytes
-Abstraction (9/9 vars): init h=10, max f=24, max g=12, max h=12 [t=1.04s]
-Done initializing merge-and-shrink heuristic [0.04s]
-initial h value: 10
-Estimated peak memory for abstraction: 486348 bytes
+Initializing blind search heuristic...
 	Maxing_h[0]:0
-	Maxing_h[1]:10
+	Maxing_h[1]:1
 lastjumpt_f_value = -1
-f in report_f_value = 10
+f in report_f_value = 1
 generated states = 0
 evaluated states = 1
 expanded states = 0
 reopened states = 0
-f: 10 [1 evaluated, 0 expanded, t=1.04s,generated_states:,0,additional_states:,0,],random_comb_index:-1
-last_jump:10,F_bound_to_print:0
+f: 1 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
+last_jump:1,F_bound_to_print:0
 gen_to_exp_ratio: -nan
-F_bound:,10,Peak memory=,18.2109
-Best heuristic value: 10 [g=0, 1 evaluated, 0 expanded, t=1.04s]
+F_bound:,1,Peak memory=,30.2188
+Best heuristic value: 1 [g=0, 1 evaluated, 0 expanded, t=1s]
 starting timing individual heuristics
-h[,0,] is:,heur is not named,measured time cost:9.86308e-07,h:10
+h[,0,] is:,,heur:blind,measured time cost:4.95058e-07,h:1
 memory before deleting databases:
-VmRSS memory: 9764 KB
+VmRSS memory: 15904 KB
 memory after deleting all databases:
-VmRSS memory: 9764 KB
+VmRSS memory: 15904 KB
 Remaining heuristics:
-remaining initial heurheur is not named
+remaining initial heur,heur:blind
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes:1000
 
-Raiz node h = 10,g = 0, f = 10
-search_timer() = 1.15
-	line 656 node h = 9,g = 1, f = 10
-Best heuristic value: 9 [g=1, 2 evaluated, 1 expanded, t=1.15s]
-
-Raiz node h = 9,g = 1, f = 10
-	line 656 node h = 8,g = 2, f = 10
-Best heuristic value: 8 [g=2, 3 evaluated, 2 expanded, t=1.15s]
-
-Raiz node h = 8,g = 2, f = 10
-	line 656 node h = 7,g = 3, f = 10
-Best heuristic value: 7 [g=3, 4 evaluated, 3 expanded, t=1.15s]
-
-Raiz node h = 7,g = 3, f = 10
-	line 656 node h = 8,g = 4, f = 12
-	line 656 node h = 6,g = 4, f = 10
-Best heuristic value: 6 [g=4, 6 evaluated, 4 expanded, t=1.15s]
-
-Raiz node h = 6,g = 4, f = 10
-	line 656 node h = 5,g = 5, f = 10
-Best heuristic value: 5 [g=5, 7 evaluated, 5 expanded, t=1.15s]
-	line 656 node h = 7,g = 5, f = 12
-
-Raiz node h = 5,g = 5, f = 10
-	line 656 node h = 4,g = 6, f = 10
-Best heuristic value: 4 [g=6, 9 evaluated, 6 expanded, t=1.15s]
-	line 656 node h = 6,g = 6, f = 12
-	line 656 node h = 6,g = 6, f = 12
-
-Raiz node h = 4,g = 6, f = 10
-	line 656 node h = 3,g = 7, f = 10
-Best heuristic value: 3 [g=7, 12 evaluated, 7 expanded, t=1.15s]
-	line 656 node h = 5,g = 7, f = 12
-
-Raiz node h = 3,g = 7, f = 10
-	line 656 node h = 2,g = 8, f = 10
-Best heuristic value: 2 [g=8, 14 evaluated, 8 expanded, t=1.15s]
-	line 656 node h = 4,g = 8, f = 12
-
-Raiz node h = 2,g = 8, f = 10
-	line 656 node h = 1,g = 9, f = 10
-Best heuristic value: 1 [g=9, 16 evaluated, 9 expanded, t=1.15s]
-
-Raiz node h = 1,g = 9, f = 10
-	line 656 node h = 0,g = 10, f = 10
-Best heuristic value: 0 [g=10, 17 evaluated, 10 expanded, t=1.15s]
-
-Raiz node h = 0,g = 10, f = 10
- _________________________________
-|          Solution found!        |
- _________________________________
-overall generated nodes to last iter:,25,search_time:,1.15,overall time:,1.15
-
-Count the nodes in the last level.
-lastjumpt_f_value = 10
-f in report_f_value = 12
-generated states = 25
-evaluated states = 17
-expanded states = 11
+Raiz node h = 1,g = 0, f = 1
+search_timer() = 1.11
+	line 656 node h = 1,g = 1, f = 2
+lastjumpt_f_value = 1
+f in report_f_value = 2
+generated states = 1
+evaluated states = 2
+expanded states = 1
 reopened states = 0
 lastjump generated states = 0
 lastjump evaluated states = 1
 lastjump expanded states = 0
 lastjump reopened states = 0
-generated_states - lastjump_generated_states = 25
-expanded_states - lastjump_expanded_states = 11
-fnivel: 10
-nodesGeneratedByLevel: 11
- time0: 1.15
-nodesGeneratedToTheLevel: 11
-f: 12 [17 evaluated, 11 expanded, t=1.15s,generated_states:,25,additional_states:,25,],random_comb_index:-1
-last_jump:12,F_bound_to_print:0
-gen_to_exp_ratio: 2.27273
-F_bound:,12,Peak memory=,18.2109
-F:12
-F_bound:12,Peak memory=18.2109,nodes:17,Nodes mem_space:0.53125,F_boundary_Range:5
-F:12
-F_bound:12F_boundary_time:8.87962e-17,Hoff Potential Range:5,leaves_to_sample:5
-new F_bound:12chosen_Hoff_Roots_size:0 out of 5
-Memory after Sampling::18648
-Memory before starting new F-boundary:18648
+generated_states - lastjump_generated_states = 1
+expanded_states - lastjump_expanded_states = 1
+fnivel1: 1
+nodesGeneratedByLevel1: 1
+ time01: 1.11
+nodesGeneratedToTheLevel1: 1
+f: 2 [2 evaluated, 1 expanded, t=1.11s,generated_states:,1,additional_states:,1,],random_comb_index:-1
+last_jump:2,F_bound_to_print:0
+gen_to_exp_ratio: 1
+F_bound:,2,Peak memory=,30.2188
+F_bound:2,Peak memory=30.2188,nodes:2,Nodes mem_space:0.0625,F_boundary_Range:0
+F_bound:2F_boundary_time:0.11,Hoff Potential Range:0,leaves_to_sample:0
+new F_bound:2chosen_Hoff_Roots_size:0 out of 0
+Memory after Sampling::30944
+Memory before starting new F-boundary:30944
 
-Raiz node h = 4,g = 8, f = 12
-totalniveles: 1
-count_last_nodes_gerados: 0
+Raiz node h = 1,g = 1, f = 2
+	line 656 node h = 1,g = 2, f = 3
+lastjumpt_f_value = 2
+f in report_f_value = 3
+generated states = 3
+evaluated states = 3
+expanded states = 2
+reopened states = 0
+lastjump generated states = 1
+lastjump evaluated states = 2
+lastjump expanded states = 1
+lastjump reopened states = 0
+generated_states - lastjump_generated_states = 2
+expanded_states - lastjump_expanded_states = 1
+fnivel1: 2
+nodesGeneratedByLevel1: 1
+ time01: 1.11
+nodesGeneratedToTheLevel1: 2
+f: 3 [3 evaluated, 2 expanded, t=1.11s,generated_states:,3,additional_states:,2,],random_comb_index:-1
+last_jump:3,F_bound_to_print:0
+gen_to_exp_ratio: 2
+F_bound:,3,Peak memory=,30.2188
+F_bound:3,Peak memory=30.2188,nodes:3,Nodes mem_space:0.09375,F_boundary_Range:0
+F_bound:3F_boundary_time:-9.76866e-17,Hoff Potential Range:0,leaves_to_sample:0
+new F_bound:3chosen_Hoff_Roots_size:0 out of 0
+Memory after Sampling::30944
+Memory before starting new F-boundary:30944
+
+Raiz node h = 1,g = 2, f = 3
+	line 656 node h = 1,g = 3, f = 4
+lastjumpt_f_value = 3
+f in report_f_value = 4
+generated states = 5
+evaluated states = 4
+expanded states = 3
+reopened states = 0
+lastjump generated states = 3
+lastjump evaluated states = 3
+lastjump expanded states = 2
+lastjump reopened states = 0
+generated_states - lastjump_generated_states = 2
+expanded_states - lastjump_expanded_states = 1
+fnivel1: 3
+nodesGeneratedByLevel1: 1
+ time01: 1.11
+nodesGeneratedToTheLevel1: 3
+f: 4 [4 evaluated, 3 expanded, t=1.11s,generated_states:,5,additional_states:,2,],random_comb_index:-1
+last_jump:4,F_bound_to_print:0
+gen_to_exp_ratio: 2
+F_bound:,4,Peak memory=,30.2188
+F_bound:4,Peak memory=30.2188,nodes:4,Nodes mem_space:0.125,F_boundary_Range:0
+F_bound:4F_boundary_time:-9.76866e-17,Hoff Potential Range:0,leaves_to_sample:0
+new F_bound:4chosen_Hoff_Roots_size:0 out of 0
+Memory after Sampling::30944
+Memory before starting new F-boundary:30944
+
+Raiz node h = 1,g = 3, f = 4
+	line 656 node h = 1,g = 4, f = 5
+	line 656 node h = 1,g = 4, f = 5
+lastjumpt_f_value = 4
+f in report_f_value = 5
+generated states = 8
+evaluated states = 6
+expanded states = 4
+reopened states = 0
+lastjump generated states = 5
+lastjump evaluated states = 4
+lastjump expanded states = 3
+lastjump reopened states = 0
+generated_states - lastjump_generated_states = 3
+expanded_states - lastjump_expanded_states = 1
+fnivel1: 4
+nodesGeneratedByLevel1: 1
+ time01: 1.11
+nodesGeneratedToTheLevel1: 4
+f: 5 [6 evaluated, 4 expanded, t=1.11s,generated_states:,8,additional_states:,3,],random_comb_index:-1
+last_jump:5,F_bound_to_print:0
+gen_to_exp_ratio: 3
+F_bound:,5,Peak memory=,30.2188
+F:5
+F_bound:5,Peak memory=30.2188,nodes:6,Nodes mem_space:0.1875,F_boundary_Range:1
+F:5
+F_bound:5F_boundary_time:-9.76866e-17,Hoff Potential Range:1,leaves_to_sample:1
+new F_bound:5chosen_Hoff_Roots_size:0 out of 1
+Memory after Sampling::30944
+Memory before starting new F-boundary:30944
+
+Raiz node h = 1,g = 4, f = 5
+	line 656 node h = 1,g = 5, f = 6
+
+Raiz node h = 1,g = 4, f = 5
+	line 656 node h = 1,g = 5, f = 6
+	line 656 node h = 1,g = 5, f = 6
+lastjumpt_f_value = 5
+f in report_f_value = 6
+generated states = 13
+evaluated states = 9
+expanded states = 6
+reopened states = 0
+lastjump generated states = 8
+lastjump evaluated states = 6
+lastjump expanded states = 4
+lastjump reopened states = 0
+generated_states - lastjump_generated_states = 5
+expanded_states - lastjump_expanded_states = 2
+fnivel1: 5
+nodesGeneratedByLevel1: 2
+ time01: 1.11
+nodesGeneratedToTheLevel1: 6
+f: 6 [9 evaluated, 6 expanded, t=1.11s,generated_states:,13,additional_states:,5,],random_comb_index:-1
+last_jump:6,F_bound_to_print:0
+gen_to_exp_ratio: 2.5
+F_bound:,6,Peak memory=,30.2188
+F:6
+F_bound:6,Peak memory=30.2188,nodes:9,Nodes mem_space:0.28125,F_boundary_Range:2
+F:6
+F_bound:6F_boundary_time:-9.76866e-17,Hoff Potential Range:2,leaves_to_sample:2
+new F_bound:6chosen_Hoff_Roots_size:0 out of 2
+Memory after Sampling::30944
+Memory before starting new F-boundary:30944
+
+Raiz node h = 1,g = 5, f = 6
+	line 656 node h = 1,g = 6, f = 7
+	line 656 node h = 1,g = 6, f = 7
+
+Raiz node h = 1,g = 5, f = 6
+	line 656 node h = 1,g = 6, f = 7
+	line 656 node h = 1,g = 6, f = 7
+	line 656 node h = 1,g = 6, f = 7
+
+Raiz node h = 1,g = 5, f = 6
+	line 656 node h = 1,g = 6, f = 7
+	line 656 node h = 1,g = 6, f = 7
+lastjumpt_f_value = 6
+f in report_f_value = 7
+generated states = 23
+evaluated states = 16
+expanded states = 9
+reopened states = 0
+lastjump generated states = 13
+lastjump evaluated states = 9
+lastjump expanded states = 6
+lastjump reopened states = 0
+generated_states - lastjump_generated_states = 10
+expanded_states - lastjump_expanded_states = 3
+fnivel1: 6
+nodesGeneratedByLevel1: 3
+ time01: 1.11
+nodesGeneratedToTheLevel1: 9
+f: 7 [16 evaluated, 9 expanded, t=1.11s,generated_states:,23,additional_states:,10,],random_comb_index:-1
+last_jump:7,F_bound_to_print:0
+gen_to_exp_ratio: 3.33333
+F_bound:,7,Peak memory=,30.2188
+F:7
+F_bound:7,Peak memory=30.2188,nodes:16,Nodes mem_space:0.5,F_boundary_Range:6
+F:7
+F_bound:7F_boundary_time:-9.76866e-17,Hoff Potential Range:6,leaves_to_sample:6
+new F_bound:7chosen_Hoff_Roots_size:0 out of 6
+Memory after Sampling::30944
+Memory before starting new F-boundary:30944
+
+Raiz node h = 1,g = 6, f = 7
+	line 656 node h = 1,g = 7, f = 8
+
+Raiz node h = 1,g = 6, f = 7
+	line 656 node h = 1,g = 7, f = 8
+	line 656 node h = 1,g = 7, f = 8
+
+Raiz node h = 1,g = 6, f = 7
+	line 656 node h = 1,g = 7, f = 8
+	line 656 node h = 1,g = 7, f = 8
+
+Raiz node h = 1,g = 6, f = 7
+	line 656 node h = 1,g = 7, f = 8
+	line 656 node h = 1,g = 7, f = 8
+
+Raiz node h = 1,g = 6, f = 7
+	line 656 node h = 1,g = 7, f = 8
+	line 656 node h = 1,g = 7, f = 8
+
+Raiz node h = 1,g = 6, f = 7
+	line 656 node h = 1,g = 7, f = 8
+
+Raiz node h = 1,g = 6, f = 7
+	line 656 node h = 1,g = 7, f = 8
+lastjumpt_f_value = 7
+f in report_f_value = 8
+generated states = 42
+evaluated states = 27
+expanded states = 16
+reopened states = 0
+lastjump generated states = 23
+lastjump evaluated states = 16
+lastjump expanded states = 9
+lastjump reopened states = 0
+generated_states - lastjump_generated_states = 19
+expanded_states - lastjump_expanded_states = 7
+fnivel1: 7
+nodesGeneratedByLevel1: 7
+ time01: 1.11
+nodesGeneratedToTheLevel1: 16
+f: 8 [27 evaluated, 16 expanded, t=1.11s,generated_states:,42,additional_states:,19,],random_comb_index:-1
+last_jump:8,F_bound_to_print:0
+gen_to_exp_ratio: 2.71429
+F_bound:,8,Peak memory=,30.2188
+F:8
+F_bound:8,Peak memory=30.2188,nodes:27,Nodes mem_space:0.84375,F_boundary_Range:10
+F:8
+F_bound:8F_boundary_time:-9.76866e-17,Hoff Potential Range:10,leaves_to_sample:10
+new F_bound:8chosen_Hoff_Roots_size:0 out of 10
+Memory after Sampling::30944
+Memory before starting new F-boundary:30944
+
+Raiz node h = 1,g = 7, f = 8
+	line 656 node h = 1,g = 8, f = 9
+
+Raiz node h = 1,g = 7, f = 8
+	line 656 node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 8, f = 9
+
+Raiz node h = 1,g = 7, f = 8
+	line 656 node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 8, f = 9
+
+Raiz node h = 1,g = 7, f = 8
+	line 656 node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 8, f = 9
+
+Raiz node h = 1,g = 7, f = 8
+	line 656 node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 8, f = 9
+
+Raiz node h = 1,g = 7, f = 8
+	line 656 node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 8, f = 9
+
+Raiz node h = 1,g = 7, f = 8
+	line 656 node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 8, f = 9
+
+Raiz node h = 1,g = 7, f = 8
+	line 656 node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 8, f = 9
+
+Raiz node h = 1,g = 7, f = 8
+	line 656 node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 8, f = 9
+
+Raiz node h = 1,g = 7, f = 8
+	line 656 node h = 1,g = 8, f = 9
+
+Raiz node h = 1,g = 7, f = 8
+	line 656 node h = 1,g = 8, f = 9
+lastjumpt_f_value = 8
+f in report_f_value = 9
+generated states = 76
+evaluated states = 48
+expanded states = 27
+reopened states = 0
+lastjump generated states = 42
+lastjump evaluated states = 27
+lastjump expanded states = 16
+lastjump reopened states = 0
+generated_states - lastjump_generated_states = 34
+expanded_states - lastjump_expanded_states = 11
+fnivel1: 8
+nodesGeneratedByLevel1: 11
+ time01: 1.11
+nodesGeneratedToTheLevel1: 27
+f: 9 [48 evaluated, 27 expanded, t=1.11s,generated_states:,76,additional_states:,34,],random_comb_index:-1
+last_jump:9,F_bound_to_print:0
+gen_to_exp_ratio: 3.09091
+F_bound:,9,Peak memory=,30.2188
+F:9
+F_bound:9,Peak memory=30.2188,nodes:48,Nodes mem_space:1.5,F_boundary_Range:20
+F:9
+F_bound:9F_boundary_time:-9.76866e-17,Hoff Potential Range:20,leaves_to_sample:20
+new F_bound:9chosen_Hoff_Roots_size:0 out of 20
+Memory after Sampling::30944
+Memory before starting new F-boundary:30944
+
+Raiz node h = 1,g = 8, f = 9
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+
+Raiz node h = 1,g = 8, f = 9
+
+Raiz node h = 1,g = 8, f = 9
+	line 656 node h = 1,g = 9, f = 10
+lastjumpt_f_value = 9
+f in report_f_value = 10
+generated states = 124
+evaluated states = 69
+expanded states = 48
+reopened states = 0
+lastjump generated states = 76
+lastjump evaluated states = 48
+lastjump expanded states = 27
+lastjump reopened states = 0
+generated_states - lastjump_generated_states = 48
+expanded_states - lastjump_expanded_states = 21
+fnivel1: 9
+nodesGeneratedByLevel1: 21
+ time01: 1.11
+nodesGeneratedToTheLevel1: 48
+f: 10 [69 evaluated, 48 expanded, t=1.11s,generated_states:,124,additional_states:,48,],random_comb_index:-1
+last_jump:10,F_bound_to_print:0
+gen_to_exp_ratio: 2.28571
+F_bound:,10,Peak memory=,30.2188
+F:10
+F_bound:10,Peak memory=30.2188,nodes:69,Nodes mem_space:2.15625,F_boundary_Range:20
+F:10
+F_bound:10F_boundary_time:-9.76866e-17,Hoff Potential Range:20,leaves_to_sample:20
+new F_bound:10chosen_Hoff_Roots_size:0 out of 20
+Memory after Sampling::30944
+Memory before starting new F-boundary:30944
+
+Raiz node h = 1,g = 9, f = 10
+	line 656 node h = 1,g = 10, f = 11
+	line 656 node h = 1,g = 10, f = 11
+
+Raiz node h = 1,g = 9, f = 10
+	line 656 node h = 1,g = 10, f = 11
+	line 656 node h = 1,g = 10, f = 11
+
+Raiz node h = 1,g = 9, f = 10
+	line 656 node h = 1,g = 10, f = 11
+
+Raiz node h = 1,g = 9, f = 10
+	line 656 node h = 1,g = 10, f = 11
+	line 656 node h = 1,g = 10, f = 11
+
+Raiz node h = 1,g = 9, f = 10
+	line 656 node h = 1,g = 10, f = 11
+
+Raiz node h = 1,g = 9, f = 10
+	line 656 node h = 1,g = 10, f = 11
+
+Raiz node h = 1,g = 9, f = 10
+	line 656 node h = 0,g = 10, f = 10
+Best heuristic value: 0 [g=10, 79 evaluated, 55 expanded, t=1.11s]
+
+Raiz node h = 0,g = 10, f = 10
+ _________________________________
+|          Solution found!        |
+ _________________________________
+overall generated nodes to last iter:,143,search_time:,1.11,overall time:,1.11
+effectiveBranchingFactor: 1
+effectiveBranchingFactor: 2
+effectiveBranchingFactor: 2
+effectiveBranchingFactor: 3
+effectiveBranchingFactor: 5
+effectiveBranchingFactor: 5
+effectiveBranchingFactor: 6.33333
+effectiveBranchingFactor: 4.85714
+effectiveBranchingFactor: 4.36364
+
+Count the nodes in the last level.
+g.size() = 11
+Display
+g = 0
+1 
+
+g = 1
+2 
+
+g = 2
+3 
+
+g = 3
+4 
+
+g = 4
+5 5 
+
+g = 5
+6 6 6 
+
+g = 6
+7 7 7 7 7 7 7 
+
+g = 7
+8 8 8 8 8 8 8 8 8 8 8 
+
+g = 8
+9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+
+g = 9
+10 10 10 10 10 10 10 
+
+g = 10
+10 
+
+f_exp.size() = 56
+f(camada)	#nodes expanded
+1	1
+2	1
+3	1
+4	1
+5	2
+6	3
+7	7
+8	11
+9	21
+10	8
+
+Nodes by camadas.
+totalniveles: 10
+
+fnivel: 1
+nodesGeneratedByLevel: 1
+time0: 1
+nodesGeneratedToTheLevel: 5
+
+
+fnivel: 2
+nodesGeneratedByLevel: 1
+time0: 1
+nodesGeneratedToTheLevel: 5
+
+
+fnivel: 3
+nodesGeneratedByLevel: 1
+time0: 1
+nodesGeneratedToTheLevel: 5
+
+
+fnivel: 4
+nodesGeneratedByLevel: 1
+time0: 1
+nodesGeneratedToTheLevel: 5
+
+
+fnivel: 5
+nodesGeneratedByLevel: 2
+time0: 1
+nodesGeneratedToTheLevel: 5
+
+
+fnivel: 6
+nodesGeneratedByLevel: 3
+time0: 1
+nodesGeneratedToTheLevel: 5
+
+
+fnivel: 7
+nodesGeneratedByLevel: 7
+time0: 1
+nodesGeneratedToTheLevel: 5
+
+
+fnivel: 8
+nodesGeneratedByLevel: 11
+time0: 1
+nodesGeneratedToTheLevel: 5
+
+
+fnivel: 9
+nodesGeneratedByLevel: 21
+time0: 1
+nodesGeneratedToTheLevel: 5
+
+
+fnivel: 10
+nodesGeneratedByLevel: 8
+time0: 1
+nodesGeneratedToTheLevel: 5
+
  ____________________________________
-|   total numero of call step() = 11   |
+|   total numero of call step() = 55   |
  ____________________________________
-Actual search time: 0s [t=1.15s]
+Actual search time: 0s [t=1.11s]
 unstack b c (1)
 put-down b (1)
 unstack c a (1)
@@ -341,23 +627,23 @@ pick-up d (1)
 stack d c (1)
 Plan length: 10 step(s).
 Plan cost: 10
-Initial state h value: 10.
-Expanded 12 state(s).
+Initial state h value: 1.
+Expanded 56 state(s).
 Reopened 0 state(s).
-Evaluated 17 state(s).
-Evaluations: 17
-Generated 25 state(s).
+Evaluated 79 state(s).
+Evaluations: 79
+Generated 143 state(s).
 Dead ends: 0 state(s).
-Expanded until last jump: 11 state(s).
+Expanded until last jump: 48 state(s).
 Reopened until last jump: 0 state(s).
-Evaluated until last jump: 17 state(s).
-Generated until last jump: 25 state(s).
-Search space hash size: 17
+Evaluated until last jump: 69 state(s).
+Generated until last jump: 124 state(s).
+Search space hash size: 79
 Search space hash bucket count: 193
-Search time: 1.15s
-Total time: 1.15s
-Peak memory: 18648 KB
-VmRSS memory: 2216 KB
-VmHWM memory: 10572 KB
+Search time: 1.11s
+Total time: 1.11s
+Peak memory: 30944 KB
+VmRSS memory: 1272 KB
+VmHWM memory: 17740 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
