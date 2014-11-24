@@ -165,13 +165,13 @@ Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=0s]
 Abstraction (7/9 vars): normalizing with label reduction
 Label reduction: 7 pruned vars, 32 labels, 11 reduced labels
 Abstraction (7/9 vars): 2000 states, ???/13800 arcs, 165644 bytes
-Abstraction (7/9 vars): init h=6, max f=21, max g=12, max h=13 [t=0.01s]
+Abstraction (7/9 vars): init h=6, max f=21, max g=12, max h=13 [t=0s]
 Atomic abstraction #1: normalizing without label reduction
 Atomic abstraction #1: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=0.01s]
+Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=0s]
 Merging abstraction (7/9 vars) and atomic abstraction #1
 Abstraction (8/9 vars): 4000 states, ???/22400 arcs, 223852 bytes
-Abstraction (8/9 vars): distances not computed [t=0.01s]
+Abstraction (8/9 vars): distances not computed [t=0s]
 Next variable: #0
 Abstraction (8/9 vars): computing distances using unit-cost algorithm
 Abstraction (8/9 vars): unreachable: 1016 states, irrelevant: 0 states
@@ -181,16 +181,16 @@ Abstraction (8/9 vars): applying abstraction to lookup table
 Abstraction (8/9 vars): size after shrink 2984, target 4000
 Atomic abstraction #0: distances already known
 Abstraction (8/9 vars): 2984 states, ???/18576 arcs, 246732 bytes
-Abstraction (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=0.01s]
+Abstraction (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=0s]
 Atomic abstraction #0: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=0.01s]
+Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=0s]
 Abstraction (8/9 vars): normalizing with label reduction
 Label reduction: 8 pruned vars, 32 labels, 9 reduced labels
 Abstraction (8/9 vars): 2984 states, ???/18576 arcs, 247756 bytes
-Abstraction (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=0.01s]
+Abstraction (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=0s]
 Atomic abstraction #0: normalizing without label reduction
 Atomic abstraction #0: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=0.01s]
+Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=0s]
 Merging abstraction (8/9 vars) and atomic abstraction #0
 Abstraction (9/9 vars): 14920 states, ???/46908 arcs, 486348 bytes
 Abstraction (9/9 vars): distances not computed [t=0.01s]
@@ -206,8 +206,8 @@ Abstraction (9/9 vars): applying abstraction to lookup table
 Abstraction (9/9 vars): size after shrink 125, target 125
 Abstraction (9/9 vars): distances already known
 Abstraction (9/9 vars): 125 states, ???/272 arcs, 99444 bytes
-Abstraction (9/9 vars): init h=6, max f=18, max g=6, max h=12 [t=0.02s]
-Done initializing merge-and-shrink heuristic [0.02s]
+Abstraction (9/9 vars): init h=6, max f=18, max g=6, max h=12 [t=0.01s]
+Done initializing merge-and-shrink heuristic [0.01s]
 initial h value: 6
 Estimated peak memory for abstraction: 486348 bytes
 	Initial State h = 0 g = 0
@@ -219,9 +219,9 @@ Estimated peak memory for abstraction: 486348 bytes
 				h = 6
 				best_h = -1
 				new best_h = 6
-Best heuristic value: 0/6 [g=0, 1 evaluated, 0 expanded, t=0.02s]
+Best heuristic value: 0/6 [g=0, 1 evaluated, 0 expanded, t=0.01s]
 
-			NODE: h = 0 g = 0
+				NODE: h = 0 g = 0
 
 
 	h = 6
@@ -284,9 +284,9 @@ Parent node: h 0 g = 0 f = 0
 				h = 5
 				best_h = 6
 				new best_h = 5
-Best heuristic value: 0/5 [g=1, 3 evaluated, 2 expanded, t=0.02s]
+Best heuristic value: 0/5 [g=1, 3 evaluated, 2 expanded, t=0.01s]
 
-			NODE: h = 0 g = 1
+				NODE: h = 0 g = 1
 
 
 	h = 5
@@ -319,9 +319,9 @@ Parent node: h 0 g = 1 f = 1
 				h = 4
 				best_h = 5
 				new best_h = 4
-Best heuristic value: 0/4 [g=2, 4 evaluated, 3 expanded, t=0.02s]
+Best heuristic value: 0/4 [g=2, 4 evaluated, 3 expanded, t=0.01s]
 
-			NODE: h = 0 g = 2
+				NODE: h = 0 g = 2
 
 
 	h = 4
@@ -408,9 +408,9 @@ Parent node: h 0 g = 2 f = 2
 				h = 3
 				best_h = 4
 				new best_h = 3
-Best heuristic value: 0/3 [g=3, 7 evaluated, 6 expanded, t=0.02s]
+Best heuristic value: 0/3 [g=3, 7 evaluated, 6 expanded, t=0.01s]
 
-			NODE: h = 0 g = 3
+				NODE: h = 0 g = 3
 
 
 	h = 3
@@ -463,9 +463,9 @@ Parent node: h 0 g = 3 f = 3
 				h = 2
 				best_h = 3
 				new best_h = 2
-Best heuristic value: 0/2 [g=4, 9 evaluated, 8 expanded, t=0.02s]
+Best heuristic value: 0/2 [g=4, 9 evaluated, 8 expanded, t=0.01s]
 
-			NODE: h = 0 g = 4
+				NODE: h = 0 g = 4
 
 
 	h = 2
@@ -540,9 +540,9 @@ Parent node: h 0 g = 4 f = 4
 				h = 1
 				best_h = 2
 				new best_h = 1
-Best heuristic value: 0/1 [g=5, 12 evaluated, 11 expanded, t=0.02s]
+Best heuristic value: 0/1 [g=5, 12 evaluated, 11 expanded, t=0.01s]
 
-			NODE: h = 0 g = 5
+				NODE: h = 0 g = 5
 
 
 	h = 1
@@ -616,7 +616,7 @@ f: 6 q: 1
  ____________________________________
 |   total numero of call step() = 16   |
  ____________________________________
-Actual search time: 0.02s [t=0.02s]
+Actual search time: 0.01s [t=0.01s]
 pick-up b (1)
 stack b a (1)
 pick-up c (1)
@@ -632,10 +632,10 @@ Evaluated 13 state(s).
 Evaluations: 26
 Generated 39 state(s).
 Dead ends: 0 state(s).
-Search time: 0.02s
-Total time: 0.02s
+Search time: 0.01s
+Total time: 0.01s
 Peak memory: 7616 KB
-VmRSS memory: 2056 KB
-VmHWM memory: 2508 KB
+VmRSS memory: 2052 KB
+VmHWM memory: 2500 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
