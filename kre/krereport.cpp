@@ -50,121 +50,35 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
         int totallevels2;
        	ifstream fNi(Ni.c_str());
 	
-	bool interpolar = false;
-
  	vector<int> v_Ni;
         float** levels; // = new float*[totallevels];
 
-	if (interpolar) {   
-	   fNi>>title;
-           fNi>>str;
-           fNi>>totallevels;
-           fNi>>str; //g
-           fNi>>str; //#nodes
-           //fNi>>str;
-           //fNi>>str;
-           levels = new float*[totallevels];
 
-	   for (int i = 0; i < totallevels; i++) {
-	       levels[i] = new float[2];
-	   }
-	   for (int i = 0; i < totallevels; i++) {
-	       for (int j = 0; j < 2; j++) {
-		   fNi>>levels[i][j];
-	       }
-	   }
-	   for (int i = 0; i < totallevels; i++) {
-	       v_Ni.insert(v_Ni.begin() + i, levels[i][1]);
-               cout<<levels[i][1]<<endl;
-	   }
-	} else {
-	   fNi>>title;
-           fNi>>str;
-           fNi>>totallevels;
-           fNi>>str; //g
-           fNi>>str; //#nodes
-           fNi>>str;
-           fNi>>str;
-           levels = new float*[totallevels];
+	fNi>>title;
+        fNi>>str;
+        fNi>>totallevels;
+        fNi>>str; //g
+        fNi>>str; //#nodes
+        fNi>>str;
+        fNi>>str;
+        levels = new float*[totallevels];
 
-           cout<<"totallevels = "<<totallevels<<endl;
-	   for (int i = 0; i < totallevels; i++) {
-	       levels[i] = new float[4];
-	   }
-	   for (int i = 0; i < totallevels; i++) {
-	       for (int j = 0; j < 4; j++) {
-		   fNi>>levels[i][j];
-	       }
-	   }
-	   for (int i = 0; i < totallevels; i++) {
-	       v_Ni.insert(v_Ni.begin() + i, levels[i][1]);
-               cout<<levels[i][1]<<endl;
-	   }
-
+        cout<<"totallevels = "<<totallevels<<endl;
+        for (int i = 0; i < totallevels; i++) {
+	    levels[i] = new float[4];
+	}
+	for (int i = 0; i < totallevels; i++) {
+	    for (int j = 0; j < 4; j++) {
+		fNi>>levels[i][j];
+	    }
+	}
+	for (int i = 0; i < totallevels; i++) {
+	    v_Ni.insert(v_Ni.begin() + i, levels[i][1]);
+            cout<<levels[i][1]<<endl;
 	}
 	
         fNi.close(); 
-        /*
-        cout<<"---------------------Branching factor--------------------"<<endl;
        
-	cout<<"bf = "<<bf<<endl;
-      
-        ifstream fbf(bf.c_str());
-	fbf>>str;
-        fbf>>str;
-        fbf>>totallevels2;
-        fbf>>str;
-        fbf>>str;
-        fbf>>str;
-        fbf>>str;
- 	float** levels2 = new float*[totallevels2];
-        for (int i = 0; i < totallevels2; i++) {
-	    levels2[i] = new float[2];
-	}
-	for (int i = 0; i < totallevels2; i++) {
-	    for (int j = 0; j < 2; j++) {
-		fbf>>levels2[i][j];
-	    }
-	}       
-
-	vector<float> v_bf;
-	for (int i = 0; i < totallevels2 - 1; i++) {
-	    v_bf.insert(v_bf.begin() + i, levels2[i][1]);
-	}
- 
-        fbf.close();        
-	*/
-	/*
-	cout<<"-------------------F distribution------------"<<endl;
-        int totallevels3;
-        int threshold;
-        cout<<"fdist = "<<fdist<<endl;
-        ifstream ffdist(fdist.c_str());
-        ffdist>>str; //title
-        ffdist>>str; //totalniveles
-        ffdist>>totallevels3;
-        ffdist>>str; //threshold
-        ffdist>>threshold;
-        ffdist>>str; //level
-        ffdist>>str; //percentage        
-  
-        float** levels3 = new float*[threshold];
-        for (int i = 0; i < threshold; i++) {
-	    levels3[i] = new float[2];
-	}
-
-	vector<float> v_fdist;
-        for (int i = 0; i < threshold; i++) {
-	    for (int j = 0; j < 2; j++) {
-		ffdist>>levels3[i][j];
-	    }
-	}
-
-	for (int i = 0; i < threshold; i++) {
-	    v_fdist.insert(v_fdist.begin() + i, levels3[i][1]);
-	}
-	*/
-	
 	//Call A* + consisten heuristic (e,g. merge_and_shrink) - Information to compare.
 	int totallevels4;
 	ifstream fastar(astar.c_str());
@@ -218,7 +132,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	    //outputFile<<threshold<<"\n\n";
             double pred = 0.0;
             vector<double> v_pred;
-            for (int j = 0; j < threshold; j++) {
+            for (int j = 0; j <= threshold; j++) {
                 int g = j;
                 int ni = v_Ni.at(j);
 		cout<<"N"<<j<<" = "<<ni<<endl;
@@ -230,7 +144,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
                 string amount;
 
 		level += "g:";
-                pivot<<g+1;
+                pivot<<g;
                 level += pivot.str();
                 //level += string(":");
                 //cout<<level.c_str()<<endl; 
@@ -266,7 +180,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 				for (map<int, int>::iterator it = m.begin(); it != m.end(); it++) {
 				    int f = it->first;
 				    
-                                    if (f == threshold) {
+                                    if (f <= threshold) {
 				       sumR = sumR + it->second;
 				    }
 				} 
@@ -274,9 +188,9 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 				//outputFile<<"nodes with f less than or equal to"<<threshold<<" = "<<sumR<<"\n";
 
 
-
+                         
                                 double percentage = (double)sumR/(double)sumq;
-                                
+                                cout<<"percentage = "<<percentage<<endl;       
 				//outputFile<<"percentage = "<<percentage<<"\n";
 				//cout<<"percentage = "<<percentage<<" ";
 			 	double kre_i = ni*percentage;
@@ -307,9 +221,9 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	    outputFile<<"\t"<<v_astar_f.at(i)<<"\t\t"<<v_astar_n.at(i)<<"\t\t"<<vpred.at(i)<<"\n";
 	}
 	
-	cout<<"ya escribio."<<endl;
+	cout<<"end."<<endl;
         outputFile.close();
-        cout<<"ya cerro."<<endl;
+        
 }
 
 void create_report1(string heuristic, string blind, int countProblems) {
@@ -336,20 +250,12 @@ void create_report1(string heuristic, string blind, int countProblems) {
                
 		//Read the files to get the number of nodes by level of Dijkstra = A* + blind
         	string output;
-		bool interpolar = false;
-		if (interpolar) {
-	 	   output =  pasta+"/interpolar/"+output;
-		   output = "test/"+blind+"/krereport/"+output;
-		   output = "marvin/" + output;
-		   output = "marvin/" + output;
-		   output = "/home/" + output;	 
-		} else {
-		   output =  pasta+"/"+output;
-		   output = "test/"+blind+"/krereport/"+output;
-		   output = "marvin/" + output;
-		   output = "marvin/" + output;
-		   output = "/home/" + output;	
-		}
+		output =  pasta+"/"+output;
+		output = "test/"+blind+"/krereport/"+output;
+		output = "marvin/" + output;
+		output = "marvin/" + output;
+		output = "/home/" + output;	
+		
                
 	
         	DIR *dir;
@@ -371,38 +277,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 	    		cout<<"Error trying to open the directory: "<<output.c_str()<<endl;
 		}
 
-    	
-   		//Bf left it empty for a while. 
-		//Read the files that contains the Branching factor of the BFS = A* + blind
-		string output3;
-                output3 = "resultado/"+output3;
-                output3 =  pasta+"/"+output3;
-		output3 = "test/"+blind+"/report/"+output3;
-		output3 = "marvin/" + output3;
-		output3 = "marvin/" + output3;
-		output3 = "/home/" + output3;	
-		
-        	DIR *dir2;
-        	struct dirent *ent2;
-        
-       	 	dir2 = opendir(output3.c_str());
-        	if (dir2 != NULL) {
-	    		while ((ent2 = readdir(dir2)) != NULL) {
-				string fileName = ent2->d_name;
-				int sizeName = fileName.size();
-                		if ((sizeName == 1)  || (sizeName == 2)) {
-					//TODO
-				} else {
-		    			fileNames2.push_back(fileName);
-				}
-            		}
-            		closedir(dir2);
-		} else {
-	    		cout<<"Error trying to open the directory: "<<output3.c_str()<<endl;
-
-		}
-
-        
+           
            
 		//Read the files that contains the f-Distribution BFS = ss + heuristic (e.g, merge_and_shrink)
 
@@ -418,7 +293,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
         	struct dirent *ent3;
         
        	 	dir3 = opendir(output5.c_str());
-        	if (dir2 != NULL) {
+        	if (dir3 != NULL) {
 	    		while ((ent3 = readdir(dir3)) != NULL) {
 				string fileName = ent3->d_name;
 				int sizeName = fileName.size();
@@ -439,7 +314,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 
 		string output7;
                 output7 =  pasta+"/"+output7;
-		output7 = "test/"+heuristic+"/report2/"+output7;
+		output7 = "test/"+heuristic+"/krereport/"+output7;
 		output7 = "marvin/" + output7;
 		output7 = "marvin/" + output7;
 		output7 = "/home/" + output7;	
@@ -465,29 +340,6 @@ void create_report1(string heuristic, string blind, int countProblems) {
 
 		}
            
-		//Send  only the files that match the files in the directories.
-		/*for (int i = 0; i < fileNames.size(); i++) {
-                    string one = fileNames.at(i);
-                    Ni = output+fileNames.at(i); 
-		    for (int j = 0; j < fileNames2.size(); j++) {
-                        string two = fileNames2.at(j);
-                        bf = output3+fileNames2.at(j);
-			for (int k = 0; k < fileNames3.size(); k++) {
-                            fdist = output5+fileNames3.at(k);
-			    string three = fileNames3.at(k);
-                            for (int z = 0; z < fileNames4.size(); z++) {
-				astar = output7+fileNames4.at(z);
-				string four = fileNames4.at(z);
-				if ((one == two) && (one == three) && (one == four) && (two == three) && (two == four) && (three == four)) {	
-                                   cout<<"one = "<<one<<endl; 
-				   create_kre_report(Ni.c_str(), bf.c_str(), fdist.c_str(), astar.c_str(), heuristic, pasta, one);
-			    	}
-			    }
-             		}
-		    }
-		}*/
-
-
 	//Send  only the files that match the files in the directories.
                 
 		for (int i = 0; i < fileNames.size(); i++) {
@@ -510,8 +362,6 @@ void create_report1(string heuristic, string blind, int countProblems) {
 
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
-
-
 }
 
 

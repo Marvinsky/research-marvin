@@ -251,7 +251,8 @@ void create_report1(string heuristic, string blind, int countProblems) {
 		readFile>>pasta;
                 
 		string  pastaReporte = "mkdir /home/marvin/marvin/kre/"+heuristic+"/krereport/"+pasta;
-		system(pastaReporte.c_str());     
+		
+                system(pastaReporte.c_str());     
                 //Read the files to get the number of nodes by level of Dijkstra
         	string output;
 
@@ -280,7 +281,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 	    		cout<<"Error trying to open the directory: "<<output.c_str()<<endl;
 		}
 
-            
+                cout<<"2"<<endl; 
            
 		//Read the files that contains the f-Distribution BFS = ss + heuristic (e.g, merge_and_shrink)
 
@@ -312,7 +313,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 
 		}
                 
-
+                cout<<"3"<<endl;
 		//Read the files that contains the execution of the problem using A* + merge_and_shrink
 
 		string output7;
@@ -342,19 +343,23 @@ void create_report1(string heuristic, string blind, int countProblems) {
 	    		cout<<"Error trying to open the directory: "<<output7.c_str()<<endl;
 
 		}
-           
+               
+                cout<<"4"<<endl;
 
 	        //Send  only the files that match the files in the directories.
                 
 		for (int i = 0; i < fileNames.size(); i++) {
                     string one = fileNames.at(i);
+                    cout<<"one = "<<one<<endl;
                     Ni = output+fileNames.at(i);  
 			for (int k = 0; k < fileNames3.size(); k++) {
                             fdist = output5+fileNames3.at(k);
 			    string three = fileNames3.at(k);
+                            cout<<"three = "<<three<<endl;
                             for (int z = 0; z < fileNames4.size(); z++) {
 				astar = output7+fileNames4.at(z);
 				string four = fileNames4.at(z);
+                                cout<<"four = "<<four<<endl;
 				if ((one == three) && (one == four) && (three == four)) {	
                                    cout<<"one = "<<one<<endl; 
 				   create_kre_report(Ni.c_str(), "nada", fdist.c_str(), astar.c_str(), heuristic, pasta, one);

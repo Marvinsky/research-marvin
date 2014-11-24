@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < Astarblocks1.sas
 
-src/search/downward --search "lazy_greedy([dijkstra(), merge_and_shrink()])" <  Astarblocks1 >> ${RESULTS}/probBLOCKS-4-0.pddl
+src/search/downward --search "astar(merge_and_shrink())" <  Astarblocks1 >> ${RESULTS}/probBLOCKS-4-0.pddl
 
 
 
