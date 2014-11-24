@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = astar(dijkstra())
-argv[4] = XDG_VTNR=4
-argv[5] = XDG_SESSION_ID=c4
+argv[4] = XDG_VTNR=1
+argv[5] = XDG_SESSION_ID=c1
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -25,6 +25,7 @@ subevaluators_.size:2
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
 first_sample set to true
 first_time set to false and count_last_nodes_gerados to zero.
+mpd = 0
 Initial state:S:0,0,0,0,0,4,4,4,4,calling get_involved heuristics
 got 2 heuristics
 got involved heuristics
@@ -32,9 +33,12 @@ got 2 heuristics
 f_evaluator populated
 # heuristics:1
 starting timings
-node gen_and_exp_cost:1.35066e-06
+node gen_and_exp_cost:1.38767e-06
 active heuristics size:1
 Initializing goal DijkstraSearchHeuristic ...
+************************
+Setting initial h: 0
+************************
 	Maxing_h[0]:0
 	Maxing_h[1]:0
 lastjumpt_f_value = -1
@@ -51,27 +55,27 @@ F_bound:,0,Peak memory=,30.2305
 				new best_h = 0
 Best heuristic value: 0 [g=0, 1 evaluated, 0 expanded, t=1s]
 starting timing individual heuristics
-h[,0,] is:,,heur:dijkstra,measured time cost:5.38445e-07,h:0
+h[,0,] is:,,heur:dijkstra,measured time cost:5.09769e-07,h:0
 memory before deleting databases:
-VmRSS memory: 16080 KB
+VmRSS memory: 16896 KB
 memory after deleting all databases:
-VmRSS memory: 16080 KB
+VmRSS memory: 16896 KB
 Remaining heuristics:
 remaining initial heur,heur:dijkstra
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes:1000
 
 Raiz node h = 0,g = 0, f = 0
 search_timer() = 1.11
-	Child node h = 0,g = 1, f = 1
+	Child node h = 0,g = 1, f = 1 m&s h+g = 1
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 1, f = 1
+	Child node h = 0,g = 1, f = 1 m&s h+g = 1
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 1, f = 1
+	Child node h = 0,g = 1, f = 1 m&s h+g = 1
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 1, f = 1
+	Child node h = 0,g = 1, f = 1 m&s h+g = 1
 				h = 0
 				best_h = 0
 lastjumpt_f_value = 0
@@ -103,46 +107,46 @@ Memory after Sampling::30956
 Memory before starting new F-boundary:30956
 
 Raiz node h = 0,g = 1, f = 1
-	Child node h = 0,g = 2, f = 2
+	Child node h = 0,g = 2, f = 2 m&s h+g = 2
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 2, f = 2
+	Child node h = 0,g = 2, f = 2 m&s h+g = 2
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 2, f = 2
-				h = 0
-				best_h = 0
-
-Raiz node h = 0,g = 1, f = 1
-	Child node h = 0,g = 2, f = 2
-				h = 0
-				best_h = 0
-	Child node h = 0,g = 2, f = 2
-				h = 0
-				best_h = 0
-	Child node h = 0,g = 2, f = 2
+	Child node h = 0,g = 2, f = 2 m&s h+g = 2
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 1, f = 1
-	Child node h = 0,g = 2, f = 2
+	Child node h = 0,g = 2, f = 2 m&s h+g = 2
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 2, f = 2
+	Child node h = 0,g = 2, f = 2 m&s h+g = 2
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 2, f = 2
+	Child node h = 0,g = 2, f = 2 m&s h+g = 2
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 1, f = 1
-	Child node h = 0,g = 2, f = 2
+	Child node h = 0,g = 2, f = 2 m&s h+g = 2
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 2, f = 2
+	Child node h = 0,g = 2, f = 2 m&s h+g = 2
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 2, f = 2
+	Child node h = 0,g = 2, f = 2 m&s h+g = 2
+				h = 0
+				best_h = 0
+
+Raiz node h = 0,g = 1, f = 1
+	Child node h = 0,g = 2, f = 2 m&s h+g = 2
+				h = 0
+				best_h = 0
+	Child node h = 0,g = 2, f = 2 m&s h+g = 2
+				h = 0
+				best_h = 0
+	Child node h = 0,g = 2, f = 2 m&s h+g = 2
 				h = 0
 				best_h = 0
 lastjumpt_f_value = 1
@@ -174,98 +178,98 @@ Memory after Sampling::30956
 Memory before starting new F-boundary:30956
 
 Raiz node h = 0,g = 2, f = 2
-	Child node h = 0,g = 3, f = 3
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 3, f = 3
-				h = 0
-				best_h = 0
-
-Raiz node h = 0,g = 2, f = 2
-	Child node h = 0,g = 3, f = 3
-				h = 0
-				best_h = 0
-	Child node h = 0,g = 3, f = 3
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 2, f = 2
-	Child node h = 0,g = 3, f = 3
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 3, f = 3
-				h = 0
-				best_h = 0
-
-Raiz node h = 0,g = 2, f = 2
-	Child node h = 0,g = 3, f = 3
-				h = 0
-				best_h = 0
-	Child node h = 0,g = 3, f = 3
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 2, f = 2
-	Child node h = 0,g = 3, f = 3
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 3, f = 3
-				h = 0
-				best_h = 0
-
-Raiz node h = 0,g = 2, f = 2
-	Child node h = 0,g = 3, f = 3
-				h = 0
-				best_h = 0
-	Child node h = 0,g = 3, f = 3
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 2, f = 2
-	Child node h = 0,g = 3, f = 3
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 3, f = 3
-				h = 0
-				best_h = 0
-
-Raiz node h = 0,g = 2, f = 2
-	Child node h = 0,g = 3, f = 3
-				h = 0
-				best_h = 0
-	Child node h = 0,g = 3, f = 3
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 2, f = 2
-	Child node h = 0,g = 3, f = 3
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 3, f = 3
-				h = 0
-				best_h = 0
-
-Raiz node h = 0,g = 2, f = 2
-	Child node h = 0,g = 3, f = 3
-				h = 0
-				best_h = 0
-	Child node h = 0,g = 3, f = 3
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 2, f = 2
-	Child node h = 0,g = 3, f = 3
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 3, f = 3
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 2, f = 2
-	Child node h = 0,g = 3, f = 3
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 3, f = 3
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
+				h = 0
+				best_h = 0
+
+Raiz node h = 0,g = 2, f = 2
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
+				h = 0
+				best_h = 0
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
+				h = 0
+				best_h = 0
+
+Raiz node h = 0,g = 2, f = 2
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
+				h = 0
+				best_h = 0
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
+				h = 0
+				best_h = 0
+
+Raiz node h = 0,g = 2, f = 2
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
+				h = 0
+				best_h = 0
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
+				h = 0
+				best_h = 0
+
+Raiz node h = 0,g = 2, f = 2
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
+				h = 0
+				best_h = 0
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
+				h = 0
+				best_h = 0
+
+Raiz node h = 0,g = 2, f = 2
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
+				h = 0
+				best_h = 0
+	Child node h = 0,g = 3, f = 3 m&s h+g = 3
 				h = 0
 				best_h = 0
 lastjumpt_f_value = 2
@@ -297,158 +301,158 @@ Memory after Sampling::30956
 Memory before starting new F-boundary:30956
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 4, f = 4
-				h = 0
-				best_h = 0
-
-Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
-				h = 0
-				best_h = 0
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 4, f = 4
-				h = 0
-				best_h = 0
-
-Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
-				h = 0
-				best_h = 0
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 4, f = 4
-				h = 0
-				best_h = 0
-
-Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
-				h = 0
-				best_h = 0
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 4, f = 4
-				h = 0
-				best_h = 0
-
-Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
-				h = 0
-				best_h = 0
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
+				h = 0
+				best_h = 0
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 4, f = 4
-				h = 0
-				best_h = 0
-
-Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 4, f = 4
-				h = 0
-				best_h = 0
-
-Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
-	Child node h = 0,g = 4, f = 4
-				h = 0
-				best_h = 0
-
-Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
-				h = 0
-				best_h = 0
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
+				h = 0
+				best_h = 0
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
+				h = 0
+				best_h = 0
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
+				h = 0
+				best_h = 0
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
+				h = 0
+				best_h = 0
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
+				h = 0
+				best_h = 0
+
+Raiz node h = 0,g = 3, f = 3
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
+				h = 0
+				best_h = 0
+
+Raiz node h = 0,g = 3, f = 3
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
+				h = 0
+				best_h = 0
+
+Raiz node h = 0,g = 3, f = 3
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
+				h = 0
+				best_h = 0
+
+Raiz node h = 0,g = 3, f = 3
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
+				h = 0
+				best_h = 0
+
+Raiz node h = 0,g = 3, f = 3
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
+				h = 0
+				best_h = 0
+
+Raiz node h = 0,g = 3, f = 3
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
+				h = 0
+				best_h = 0
+
+Raiz node h = 0,g = 3, f = 3
+	Child node h = 0,g = 4, f = 4 m&s h+g = 4
 				h = 0
 				best_h = 0
 lastjumpt_f_value = 3
@@ -480,146 +484,146 @@ Memory after Sampling::30956
 Memory before starting new F-boundary:30956
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
-				h = 0
-				best_h = 0
-
-Raiz node h = 0,g = 4, f = 4
-
-Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
-				h = 0
-				best_h = 0
-
-Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+
+Raiz node h = 0,g = 4, f = 4
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
+				h = 0
+				best_h = 0
+
+Raiz node h = 0,g = 4, f = 4
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
+				h = 0
+				best_h = 0
+
+Raiz node h = 0,g = 4, f = 4
+	Child node h = 0,g = 5, f = 5 m&s h+g = 5
 				h = 0
 				best_h = 0
 lastjumpt_f_value = 4
@@ -651,122 +655,122 @@ Memory after Sampling::30956
 Memory before starting new F-boundary:30956
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 
 Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6
+	Child node h = 0,g = 6, f = 6 m&s h+g = 6
 				h = 0
 				best_h = 0
 lastjumpt_f_value = 5
@@ -1004,7 +1008,7 @@ Search space hash bucket count: 193
 Search time: 1.11s
 Total time: 1.11s
 Peak memory: 30956 KB
-VmRSS memory: 1232 KB
-VmHWM memory: 17916 KB
+VmRSS memory: 1272 KB
+VmHWM memory: 18732 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
