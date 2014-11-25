@@ -71,7 +71,7 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 			astar2>>amount;
 			outputFile<<"\t"<<amount<<"\t\t";
 		} else if (amount == nodosNivel) {
- 			if (c1 != (total_niveles-2)) {
+ 			if (c1 != (total_niveles)) {
 				astar2>>amount;
 				outputFile<<amount<<"\t\t";
 			} else {
@@ -85,7 +85,7 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 			astar2>>amount;
 			outputFile<<"\t"<<amount<<"\t\t";
 		} else if (amount == nodesUpToNivel) {
-			if (c2 != (total_niveles - 2)) {
+			if (c2 != (total_niveles)) {
 				astar2>>amount;
                         	outputFile<<"\t"<<amount<<"\n";
 			} else {
