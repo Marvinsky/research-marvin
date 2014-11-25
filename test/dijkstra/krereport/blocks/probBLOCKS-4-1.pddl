@@ -1,15 +1,15 @@
 	/home/marvin/marvin/test/dijkstra/problemas/blocks/resultado/probBLOCKS-4-1.pddl
-totalniveles:	12
+totalniveles:	11
 	f		#Nodes_by_level		Runtime(s)		#Nodes_to_the_level
-	0		1			1			5
-	1		1			1			5
-	2		1			1			5
-	3		1			1			5
-	4		2			1			5
-	5		3			1			5
-	6		7			1			5
-	7		11			1			5
-	8		21			1			5
-	9		21			1			5
-	10		26			1			5
-	11		1			1			5
+	0		1			1			1
+	1		1			1			2
+	2		1			1			3
+	3		1			1			4
+	4		2			1			6
+	5		3			1			9
+	6		7			1			16
+	7		11			1			27
+	8		21			1			48
+	9		21			1			69
+	10		26			1			95
+	11		1			1			96

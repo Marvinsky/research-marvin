@@ -105,7 +105,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 
 	for (int i = 0; i < totallevels4; i++) {
 	    v_astar_f.insert(v_astar_f.begin() + i, levels4[i][0]);
-	    v_astar_n.insert(v_astar_n.begin() + i, levels4[i][1]);
+	    v_astar_n.insert(v_astar_n.begin() + i, levels4[i][3]);
 	}
 	
         
@@ -195,11 +195,14 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 				//cout<<"percentage = "<<percentage<<" ";
 			 	double kre_i = ni*percentage;
                                 v_pred.push_back(kre_i);
+                                m.clear();
 			} //end if
 			//ffdist.close();
-	       	} //end while	
+	       	} //end while
+                ffdist.close();
 	    } //end inner for
 	    pred = returnPred(v_pred);
+            
 	    //outputFile<<"Prediction for threshold "<<threshold<<" = "<<pred<<"\n\n";
             cout<<"i  = "<<i<<endl;
 	    vpred.insert(vpred.begin() + i, pred);

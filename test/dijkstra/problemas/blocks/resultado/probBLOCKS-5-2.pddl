@@ -33,7 +33,7 @@ got 2 heuristics
 f_evaluator populated
 # heuristics:1
 starting timings
-node gen_and_exp_cost:1.53303e-06
+node gen_and_exp_cost:2.88165e-06
 active heuristics size:1
 Initializing goal DijkstraSearchHeuristic ...
 ************************
@@ -49,17 +49,17 @@ expanded states = 0
 reopened states = 0
 f: 0 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
 gen_to_exp_ratio: -nan
-F_bound:,0,Peak memory=,54.2617
+F_bound:,0,Peak memory=,30.2617
 				h = 0
 				best_h = -1
 				new best_h = 0
 Best heuristic value: 0 [g=0, 1 evaluated, 0 expanded, t=1s]
 starting timing individual heuristics
-h[,0,] is:,,heur:dijkstra,measured time cost:4.99179e-07,h:0
+h[,0,] is:,,heur:dijkstra,measured time cost:9.68523e-07,h:0
 memory before deleting databases:
-VmRSS memory: 18940 KB
+VmRSS memory: 10448 KB
 memory after deleting all databases:
-VmRSS memory: 18940 KB
+VmRSS memory: 10448 KB
 Remaining heuristics:
 remaining initial heur,heur:dijkstra
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes:1000
@@ -88,12 +88,12 @@ nodesGeneratedToTheLevel1: 1
 f: 1 [2 evaluated, 1 expanded, t=1.11s,generated_states:,1,additional_states:,1,],random_comb_index:-1
 last_jump:1,F_bound_to_print:0
 gen_to_exp_ratio: 1
-F_bound:,1,Peak memory=,54.2617
-F_bound:1,Peak memory=54.2617,nodes:2,Nodes mem_space:0.0625,F_boundary_Range:0
+F_bound:,1,Peak memory=,30.2617
+F_bound:1,Peak memory=30.2617,nodes:2,Nodes mem_space:0.0625,F_boundary_Range:0
 F_bound:1F_boundary_time:0.11,Hoff Potential Range:0,leaves_to_sample:0
 new F_bound:1chosen_Hoff_Roots_size:0 out of 0
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 1, f = 1
 	Child node h = 0,g = 2, f = 2 m&s h+g = 2
@@ -118,12 +118,12 @@ nodesGeneratedToTheLevel1: 2
 f: 2 [3 evaluated, 2 expanded, t=1.11s,generated_states:,3,additional_states:,2,],random_comb_index:-1
 last_jump:2,F_bound_to_print:0
 gen_to_exp_ratio: 2
-F_bound:,2,Peak memory=,54.2617
-F_bound:2,Peak memory=54.2617,nodes:3,Nodes mem_space:0.09375,F_boundary_Range:0
+F_bound:,2,Peak memory=,30.2617
+F_bound:2,Peak memory=30.2617,nodes:3,Nodes mem_space:0.09375,F_boundary_Range:0
 F_bound:2F_boundary_time:-9.76866e-17,Hoff Potential Range:0,leaves_to_sample:0
 new F_bound:2chosen_Hoff_Roots_size:0 out of 0
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 2, f = 2
 	Child node h = 0,g = 3, f = 3 m&s h+g = 3
@@ -148,12 +148,12 @@ nodesGeneratedToTheLevel1: 3
 f: 3 [4 evaluated, 3 expanded, t=1.11s,generated_states:,5,additional_states:,2,],random_comb_index:-1
 last_jump:3,F_bound_to_print:0
 gen_to_exp_ratio: 2
-F_bound:,3,Peak memory=,54.2617
-F_bound:3,Peak memory=54.2617,nodes:4,Nodes mem_space:0.125,F_boundary_Range:0
+F_bound:,3,Peak memory=,30.2617
+F_bound:3,Peak memory=30.2617,nodes:4,Nodes mem_space:0.125,F_boundary_Range:0
 F_bound:3F_boundary_time:-9.76866e-17,Hoff Potential Range:0,leaves_to_sample:0
 new F_bound:3chosen_Hoff_Roots_size:0 out of 0
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 3, f = 3
 	Child node h = 0,g = 4, f = 4 m&s h+g = 4
@@ -181,14 +181,14 @@ nodesGeneratedToTheLevel1: 4
 f: 4 [6 evaluated, 4 expanded, t=1.11s,generated_states:,8,additional_states:,3,],random_comb_index:-1
 last_jump:4,F_bound_to_print:0
 gen_to_exp_ratio: 3
-F_bound:,4,Peak memory=,54.2617
+F_bound:,4,Peak memory=,30.2617
 F:4
-F_bound:4,Peak memory=54.2617,nodes:6,Nodes mem_space:0.1875,F_boundary_Range:1
+F_bound:4,Peak memory=30.2617,nodes:6,Nodes mem_space:0.1875,F_boundary_Range:1
 F:4
 F_bound:4F_boundary_time:-9.76866e-17,Hoff Potential Range:1,leaves_to_sample:1
 new F_bound:4chosen_Hoff_Roots_size:0 out of 1
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 4, f = 4
 	Child node h = 0,g = 5, f = 5 m&s h+g = 5
@@ -221,14 +221,14 @@ nodesGeneratedToTheLevel1: 6
 f: 5 [9 evaluated, 6 expanded, t=1.11s,generated_states:,13,additional_states:,5,],random_comb_index:-1
 last_jump:5,F_bound_to_print:0
 gen_to_exp_ratio: 2.5
-F_bound:,5,Peak memory=,54.2617
+F_bound:,5,Peak memory=,30.2617
 F:5
-F_bound:5,Peak memory=54.2617,nodes:9,Nodes mem_space:0.28125,F_boundary_Range:2
+F_bound:5,Peak memory=30.2617,nodes:9,Nodes mem_space:0.28125,F_boundary_Range:2
 F:5
 F_bound:5F_boundary_time:-9.76866e-17,Hoff Potential Range:2,leaves_to_sample:2
 new F_bound:5chosen_Hoff_Roots_size:0 out of 2
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 5, f = 5
 	Child node h = 0,g = 6, f = 6 m&s h+g = 6
@@ -275,14 +275,14 @@ nodesGeneratedToTheLevel1: 9
 f: 6 [16 evaluated, 9 expanded, t=1.11s,generated_states:,23,additional_states:,10,],random_comb_index:-1
 last_jump:6,F_bound_to_print:0
 gen_to_exp_ratio: 3.33333
-F_bound:,6,Peak memory=,54.2617
+F_bound:,6,Peak memory=,30.2617
 F:6
-F_bound:6,Peak memory=54.2617,nodes:16,Nodes mem_space:0.5,F_boundary_Range:6
+F_bound:6,Peak memory=30.2617,nodes:16,Nodes mem_space:0.5,F_boundary_Range:6
 F:6
 F_bound:6F_boundary_time:-9.76866e-17,Hoff Potential Range:6,leaves_to_sample:6
 new F_bound:6chosen_Hoff_Roots_size:0 out of 6
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 6, f = 6
 	Child node h = 0,g = 7, f = 7 m&s h+g = 7
@@ -349,14 +349,14 @@ nodesGeneratedToTheLevel1: 16
 f: 7 [27 evaluated, 16 expanded, t=1.11s,generated_states:,42,additional_states:,19,],random_comb_index:-1
 last_jump:7,F_bound_to_print:0
 gen_to_exp_ratio: 2.71429
-F_bound:,7,Peak memory=,54.2617
+F_bound:,7,Peak memory=,30.2617
 F:7
-F_bound:7,Peak memory=54.2617,nodes:27,Nodes mem_space:0.84375,F_boundary_Range:10
+F_bound:7,Peak memory=30.2617,nodes:27,Nodes mem_space:0.84375,F_boundary_Range:10
 F:7
 F_bound:7F_boundary_time:-9.76866e-17,Hoff Potential Range:10,leaves_to_sample:10
 new F_bound:7chosen_Hoff_Roots_size:0 out of 10
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 7, f = 7
 	Child node h = 0,g = 8, f = 8 m&s h+g = 8
@@ -476,14 +476,14 @@ nodesGeneratedToTheLevel1: 27
 f: 8 [53 evaluated, 27 expanded, t=1.11s,generated_states:,81,additional_states:,39,],random_comb_index:-1
 last_jump:8,F_bound_to_print:0
 gen_to_exp_ratio: 3.54545
-F_bound:,8,Peak memory=,54.2617
+F_bound:,8,Peak memory=,30.2617
 F:8
-F_bound:8,Peak memory=54.2617,nodes:53,Nodes mem_space:1.65625,F_boundary_Range:25
+F_bound:8,Peak memory=30.2617,nodes:53,Nodes mem_space:1.65625,F_boundary_Range:25
 F:8
 F_bound:8F_boundary_time:-9.76866e-17,Hoff Potential Range:25,leaves_to_sample:25
 new F_bound:8chosen_Hoff_Roots_size:0 out of 25
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 8, f = 8
 	Child node h = 0,g = 9, f = 9 m&s h+g = 9
@@ -681,14 +681,14 @@ nodesGeneratedToTheLevel1: 53
 f: 9 [95 evaluated, 53 expanded, t=1.11s,generated_states:,159,additional_states:,78,],random_comb_index:-1
 last_jump:9,F_bound_to_print:0
 gen_to_exp_ratio: 3
-F_bound:,9,Peak memory=,54.2617
+F_bound:,9,Peak memory=,30.2617
 F:9
-F_bound:9,Peak memory=54.2617,nodes:95,Nodes mem_space:2.96875,F_boundary_Range:41
+F_bound:9,Peak memory=30.2617,nodes:95,Nodes mem_space:2.96875,F_boundary_Range:41
 F:9
 F_bound:9F_boundary_time:-9.76866e-17,Hoff Potential Range:41,leaves_to_sample:41
 new F_bound:9chosen_Hoff_Roots_size:0 out of 41
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 9, f = 9
 	Child node h = 0,g = 10, f = 10 m&s h+g = 10
@@ -1062,14 +1062,14 @@ nodesGeneratedToTheLevel1: 95
 f: 10 [185 evaluated, 95 expanded, t=1.11s,generated_states:,310,additional_states:,151,],random_comb_index:-1
 last_jump:10,F_bound_to_print:0
 gen_to_exp_ratio: 3.59524
-F_bound:,10,Peak memory=,54.2617
+F_bound:,10,Peak memory=,30.2617
 F:10
-F_bound:10,Peak memory=54.2617,nodes:185,Nodes mem_space:5.78125,F_boundary_Range:89
+F_bound:10,Peak memory=30.2617,nodes:185,Nodes mem_space:5.78125,F_boundary_Range:89
 F:10
 F_bound:10F_boundary_time:-9.76866e-17,Hoff Potential Range:89,leaves_to_sample:89
 new F_bound:10chosen_Hoff_Roots_size:0 out of 89
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 10, f = 10
 
@@ -1605,14 +1605,14 @@ nodesGeneratedToTheLevel1: 185
 f: 11 [297 evaluated, 185 expanded, t=1.11s,generated_states:,560,additional_states:,250,],random_comb_index:-1
 last_jump:11,F_bound_to_print:0
 gen_to_exp_ratio: 2.77778
-F_bound:,11,Peak memory=,54.2617
+F_bound:,11,Peak memory=,30.2617
 F:11
-F_bound:11,Peak memory=54.2617,nodes:297,Nodes mem_space:9.28125,F_boundary_Range:111
+F_bound:11,Peak memory=30.2617,nodes:297,Nodes mem_space:9.28125,F_boundary_Range:111
 F:11
 F_bound:11F_boundary_time:-9.76866e-17,Hoff Potential Range:111,leaves_to_sample:100
 new F_bound:11chosen_Hoff_Roots_size:0 out of 111
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 11, f = 11
 	Child node h = 0,g = 12, f = 12 m&s h+g = 12
@@ -2342,14 +2342,14 @@ nodesGeneratedToTheLevel1: 297
 f: 12 [459 evaluated, 297 expanded, t=1.12s,generated_states:,918,additional_states:,358,],random_comb_index:-1
 last_jump:12,F_bound_to_print:0
 gen_to_exp_ratio: 3.19643
-F_bound:,12,Peak memory=,54.2617
+F_bound:,12,Peak memory=,30.2617
 F:12
-F_bound:12,Peak memory=54.2617,nodes:459,Nodes mem_space:14.3438,F_boundary_Range:161
+F_bound:12,Peak memory=30.2617,nodes:459,Nodes mem_space:14.3438,F_boundary_Range:161
 F:12
 F_bound:12F_boundary_time:0.01,Hoff Potential Range:161,leaves_to_sample:100
 new F_bound:12chosen_Hoff_Roots_size:0 out of 161
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 12, f = 12
 	Child node h = 0,g = 13, f = 13 m&s h+g = 13
@@ -3075,14 +3075,14 @@ nodesGeneratedToTheLevel1: 459
 f: 13 [586 evaluated, 459 expanded, t=1.12s,generated_states:,1287,additional_states:,369,],random_comb_index:-1
 last_jump:13,F_bound_to_print:0
 gen_to_exp_ratio: 2.27778
-F_bound:,13,Peak memory=,54.2617
+F_bound:,13,Peak memory=,30.2617
 F:13
-F_bound:13,Peak memory=54.2617,nodes:586,Nodes mem_space:18.3125,F_boundary_Range:126
+F_bound:13,Peak memory=30.2617,nodes:586,Nodes mem_space:18.3125,F_boundary_Range:126
 F:13
 F_bound:13F_boundary_time:-1.06577e-16,Hoff Potential Range:126,leaves_to_sample:100
 new F_bound:13chosen_Hoff_Roots_size:0 out of 126
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 13, f = 13
 	Child node h = 0,g = 14, f = 14 m&s h+g = 14
@@ -3783,19 +3783,19 @@ generated_states - lastjump_generated_states = 346
 expanded_states - lastjump_expanded_states = 127
 fnivel1: 13
 nodesGeneratedByLevel1: 127
- time01: 1.12
+ time01: 1.13
 nodesGeneratedToTheLevel1: 586
-f: 14 [730 evaluated, 586 expanded, t=1.12s,generated_states:,1633,additional_states:,346,],random_comb_index:-1
+f: 14 [730 evaluated, 586 expanded, t=1.13s,generated_states:,1633,additional_states:,346,],random_comb_index:-1
 last_jump:14,F_bound_to_print:0
 gen_to_exp_ratio: 2.72441
-F_bound:,14,Peak memory=,54.2617
+F_bound:,14,Peak memory=,30.2617
 F:14
-F_bound:14,Peak memory=54.2617,nodes:730,Nodes mem_space:22.8125,F_boundary_Range:143
+F_bound:14,Peak memory=30.2617,nodes:730,Nodes mem_space:22.8125,F_boundary_Range:143
 F:14
-F_bound:14F_boundary_time:-1.06577e-16,Hoff Potential Range:143,leaves_to_sample:100
+F_bound:14F_boundary_time:0.01,Hoff Potential Range:143,leaves_to_sample:100
 new F_bound:14chosen_Hoff_Roots_size:0 out of 143
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 14, f = 14
 	Child node h = 0,g = 15, f = 15 m&s h+g = 15
@@ -4302,19 +4302,19 @@ generated_states - lastjump_generated_states = 253
 expanded_states - lastjump_expanded_states = 144
 fnivel1: 14
 nodesGeneratedByLevel1: 144
- time01: 1.12
+ time01: 1.13
 nodesGeneratedToTheLevel1: 730
-f: 15 [798 evaluated, 730 expanded, t=1.12s,generated_states:,1886,additional_states:,253,],random_comb_index:-1
+f: 15 [798 evaluated, 730 expanded, t=1.13s,generated_states:,1886,additional_states:,253,],random_comb_index:-1
 last_jump:15,F_bound_to_print:0
 gen_to_exp_ratio: 1.75694
-F_bound:,15,Peak memory=,54.2617
+F_bound:,15,Peak memory=,30.2617
 F:15
-F_bound:15,Peak memory=54.2617,nodes:798,Nodes mem_space:24.9375,F_boundary_Range:67
+F_bound:15,Peak memory=30.2617,nodes:798,Nodes mem_space:24.9375,F_boundary_Range:67
 F:15
-F_bound:15F_boundary_time:-1.06577e-16,Hoff Potential Range:67,leaves_to_sample:67
+F_bound:15F_boundary_time:1.06577e-16,Hoff Potential Range:67,leaves_to_sample:67
 new F_bound:15chosen_Hoff_Roots_size:0 out of 67
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 15, f = 15
 	Child node h = 0,g = 16, f = 16 m&s h+g = 16
@@ -4602,7 +4602,7 @@ Raiz node h = 0,g = 15, f = 15
 				best_h = 0
 
 Raiz node h = 0,g = 15, f = 15
-search_timer() = 1.12
+search_timer() = 1.13
 	Child node h = 0,g = 16, f = 16 m&s h+g = 16
 				h = 0
 				best_h = 0
@@ -4670,19 +4670,19 @@ generated_states - lastjump_generated_states = 136
 expanded_states - lastjump_expanded_states = 68
 fnivel1: 15
 nodesGeneratedByLevel1: 68
- time01: 1.12
+ time01: 1.13
 nodesGeneratedToTheLevel1: 798
-f: 16 [866 evaluated, 798 expanded, t=1.12s,generated_states:,2022,additional_states:,136,],random_comb_index:-1
+f: 16 [866 evaluated, 798 expanded, t=1.13s,generated_states:,2022,additional_states:,136,],random_comb_index:-1
 last_jump:16,F_bound_to_print:0
 gen_to_exp_ratio: 2
-F_bound:,16,Peak memory=,54.2617
+F_bound:,16,Peak memory=,30.2617
 F:16
-F_bound:16,Peak memory=54.2617,nodes:866,Nodes mem_space:27.0625,F_boundary_Range:67
+F_bound:16,Peak memory=30.2617,nodes:866,Nodes mem_space:27.0625,F_boundary_Range:67
 F:16
-F_bound:16F_boundary_time:-1.06577e-16,Hoff Potential Range:67,leaves_to_sample:67
+F_bound:16F_boundary_time:1.06577e-16,Hoff Potential Range:67,leaves_to_sample:67
 new F_bound:16chosen_Hoff_Roots_size:0 out of 67
-Memory after Sampling::55564
-Memory before starting new F-boundary:55564
+Memory after Sampling::30988
+Memory before starting new F-boundary:30988
 
 Raiz node h = 0,g = 16, f = 16
 
@@ -4718,7 +4718,7 @@ Raiz node h = 0,g = 16, f = 16
  _________________________________
 |          Solution found!        |
  _________________________________
-overall generated nodes to last iter:,2037,search_time:,1.12,overall time:,1.12
+overall generated nodes to last iter:,2037,search_time:,1.13,overall time:,1.13
 effectiveBranchingFactor: 1
 effectiveBranchingFactor: 2
 effectiveBranchingFactor: 2
@@ -5026,125 +5026,125 @@ f: 0 q: 1
 fnivel: 0
 nodesGeneratedByLevel: 1
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 1
 
 f: 1 q: 1
 
 fnivel: 1
 nodesGeneratedByLevel: 1
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 2
 
 f: 2 q: 1
 
 fnivel: 2
 nodesGeneratedByLevel: 1
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 3
 
 f: 3 q: 1
 
 fnivel: 3
 nodesGeneratedByLevel: 1
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 4
 
 f: 4 q: 2
 
 fnivel: 4
 nodesGeneratedByLevel: 2
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 6
 
 f: 5 q: 3
 
 fnivel: 5
 nodesGeneratedByLevel: 3
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 9
 
 f: 6 q: 7
 
 fnivel: 6
 nodesGeneratedByLevel: 7
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 16
 
 f: 7 q: 11
 
 fnivel: 7
 nodesGeneratedByLevel: 11
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 27
 
 f: 8 q: 26
 
 fnivel: 8
 nodesGeneratedByLevel: 26
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 53
 
 f: 9 q: 42
 
 fnivel: 9
 nodesGeneratedByLevel: 42
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 95
 
 f: 10 q: 90
 
 fnivel: 10
 nodesGeneratedByLevel: 90
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 185
 
 f: 11 q: 112
 
 fnivel: 11
 nodesGeneratedByLevel: 112
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 297
 
 f: 12 q: 162
 
 fnivel: 12
 nodesGeneratedByLevel: 162
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 459
 
 f: 13 q: 127
 
 fnivel: 13
 nodesGeneratedByLevel: 127
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 586
 
 f: 14 q: 144
 
 fnivel: 14
 nodesGeneratedByLevel: 144
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 730
 
 f: 15 q: 68
 
 fnivel: 15
 nodesGeneratedByLevel: 68
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 798
 
 f: 16 q: 68
 
 fnivel: 16
 nodesGeneratedByLevel: 68
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 866
 
 failed to get n!
  ____________________________________
 |   total numero of call step() = 866   |
  ____________________________________
-Actual search time: 0.01s [t=1.12s]
+Actual search time: 0.02s [t=1.13s]
 unstack d e (1)
 put-down d (1)
 unstack e c (1)
@@ -5176,10 +5176,10 @@ Evaluated until last jump: 866 state(s).
 Generated until last jump: 2022 state(s).
 Search space hash size: 866
 Search space hash bucket count: 1543
-Search time: 1.12s
-Total time: 1.12s
-Peak memory: 55564 KB
-VmRSS memory: 1276 KB
-VmHWM memory: 35104 KB
+Search time: 1.13s
+Total time: 1.13s
+Peak memory: 30988 KB
+VmRSS memory: 1280 KB
+VmHWM memory: 18428 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

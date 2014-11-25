@@ -33,7 +33,7 @@ got 2 heuristics
 f_evaluator populated
 # heuristics:1
 starting timings
-node gen_and_exp_cost:1.68198e-06
+node gen_and_exp_cost:3.15888e-06
 active heuristics size:1
 Initializing merge-and-shrink heuristic...
 Merge strategy: linear CG/GOAL, tie breaking on level (main)
@@ -132,24 +132,24 @@ Atomic abstraction #9: 7 states, ???/12 arcs, 1276 bytes
 Atomic abstraction #9: init h=2, max f=4, max g=2, max h=2 [t=1s]
 Merging abstraction (4/13 vars) and atomic abstraction #9
 Abstraction (5/13 vars): 4802 states, ???/111132 arcs, 922844 bytes
-Abstraction (5/13 vars): distances not computed [t=1s]
+Abstraction (5/13 vars): distances not computed [t=1.01s]
 Next variable: #8
 Abstraction (5/13 vars): computing distances using unit-cost algorithm
 Atomic abstraction #8: distances already known
 Abstraction (5/13 vars): 4802 states, ???/111132 arcs, 961260 bytes
-Abstraction (5/13 vars): init h=8, max f=18, max g=9, max h=9 [t=1.01s]
+Abstraction (5/13 vars): init h=8, max f=18, max g=9, max h=9 [t=1.02s]
 Atomic abstraction #8: 7 states, ???/12 arcs, 1276 bytes
-Atomic abstraction #8: init h=2, max f=4, max g=2, max h=2 [t=1.01s]
+Atomic abstraction #8: init h=2, max f=4, max g=2, max h=2 [t=1.02s]
 Abstraction (5/13 vars): normalizing with label reduction
 Label reduction: 5 pruned vars, 72 labels, 60 reduced labels
 Abstraction (5/13 vars): 4802 states, ???/111132 arcs, 1595916 bytes
-Abstraction (5/13 vars): init h=8, max f=18, max g=9, max h=9 [t=1.02s]
+Abstraction (5/13 vars): init h=8, max f=18, max g=9, max h=9 [t=1.04s]
 Atomic abstraction #8: normalizing without label reduction
 Atomic abstraction #8: 7 states, ???/12 arcs, 1276 bytes
-Atomic abstraction #8: init h=2, max f=4, max g=2, max h=2 [t=1.02s]
+Atomic abstraction #8: init h=2, max f=4, max g=2, max h=2 [t=1.04s]
 Merging abstraction (5/13 vars) and atomic abstraction #8
 Abstraction (6/13 vars): 33614 states, ???/518616 arcs, 4376156 bytes
-Abstraction (6/13 vars): distances not computed [t=1.03s]
+Abstraction (6/13 vars): distances not computed [t=1.05s]
 Next variable: #6
 Abstraction (6/13 vars): computing distances using unit-cost algorithm
 Atomic abstraction #6: distances already known
@@ -158,19 +158,19 @@ Abstraction (6/13 vars): applying abstraction (33614 to 25000 states)
 Abstraction (6/13 vars): applying abstraction to lookup table
 Abstraction (6/13 vars): size after shrink 25000, target 25000
 Abstraction (6/13 vars): 25000 states, ???/518616 arcs, 4567548 bytes
-Abstraction (6/13 vars): init h=10, max f=22, max g=11, max h=11 [t=1.07s]
+Abstraction (6/13 vars): init h=10, max f=22, max g=11, max h=11 [t=1.17s]
 Atomic abstraction #6: 2 states, ???/33 arcs, 1448 bytes
-Atomic abstraction #6: init h=0, max f=1, max g=1, max h=0 [t=1.07s]
+Atomic abstraction #6: init h=0, max f=1, max g=1, max h=0 [t=1.17s]
 Abstraction (6/13 vars): normalizing with label reduction
 Label reduction: 6 pruned vars, 72 labels, 52 reduced labels
-Abstraction (6/13 vars): 25000 states, ???/453655 arcs, 5071676 bytes
-Abstraction (6/13 vars): init h=10, max f=22, max g=11, max h=11 [t=1.14s]
+Abstraction (6/13 vars): 25000 states, ???/453483 arcs, 5071676 bytes
+Abstraction (6/13 vars): init h=10, max f=22, max g=11, max h=11 [t=1.27s]
 Atomic abstraction #6: normalizing without label reduction
 Atomic abstraction #6: 2 states, ???/33 arcs, 1448 bytes
-Atomic abstraction #6: init h=0, max f=1, max g=1, max h=0 [t=1.14s]
+Atomic abstraction #6: init h=0, max f=1, max g=1, max h=0 [t=1.27s]
 Merging abstraction (6/13 vars) and atomic abstraction #6
-Abstraction (7/13 vars): 50000 states, ???/848440 arcs, 7339052 bytes
-Abstraction (7/13 vars): distances not computed [t=1.15s]
+Abstraction (7/13 vars): 50000 states, ???/848115 arcs, 7336452 bytes
+Abstraction (7/13 vars): distances not computed [t=1.29s]
 Next variable: #5
 Abstraction (7/13 vars): computing distances using unit-cost algorithm
 Atomic abstraction #5: distances already known
@@ -178,20 +178,20 @@ Abstraction (7/13 vars): shrink from size 50000 (threshold: 25000)
 Abstraction (7/13 vars): applying abstraction (50000 to 25000 states)
 Abstraction (7/13 vars): applying abstraction to lookup table
 Abstraction (7/13 vars): size after shrink 25000, target 25000
-Abstraction (7/13 vars): 25000 states, ???/848440 arcs, 7514060 bytes
-Abstraction (7/13 vars): init h=10, max f=22, max g=15, max h=13 [t=1.23s]
+Abstraction (7/13 vars): 25000 states, ???/848115 arcs, 7511460 bytes
+Abstraction (7/13 vars): init h=10, max f=22, max g=15, max h=13 [t=1.44s]
 Atomic abstraction #5: 2 states, ???/33 arcs, 1448 bytes
-Atomic abstraction #5: init h=0, max f=1, max g=1, max h=0 [t=1.23s]
+Atomic abstraction #5: init h=0, max f=1, max g=1, max h=0 [t=1.44s]
 Abstraction (7/13 vars): normalizing with label reduction
 Label reduction: 7 pruned vars, 72 labels, 43 reduced labels
-Abstraction (7/13 vars): 25000 states, ???/488657 arcs, 6247948 bytes
-Abstraction (7/13 vars): init h=10, max f=22, max g=15, max h=13 [t=1.29s]
+Abstraction (7/13 vars): 25000 states, ???/488547 arcs, 6247948 bytes
+Abstraction (7/13 vars): init h=10, max f=22, max g=15, max h=13 [t=1.54s]
 Atomic abstraction #5: normalizing without label reduction
 Atomic abstraction #5: 2 states, ???/33 arcs, 1448 bytes
-Atomic abstraction #5: init h=0, max f=1, max g=1, max h=0 [t=1.29s]
+Atomic abstraction #5: init h=0, max f=1, max g=1, max h=0 [t=1.54s]
 Merging abstraction (7/13 vars) and atomic abstraction #5
-Abstraction (8/13 vars): 50000 states, ???/907845 arcs, 7814292 bytes
-Abstraction (8/13 vars): distances not computed [t=1.3s]
+Abstraction (8/13 vars): 50000 states, ???/907654 arcs, 7812764 bytes
+Abstraction (8/13 vars): distances not computed [t=1.56s]
 Next variable: #4
 Abstraction (8/13 vars): computing distances using unit-cost algorithm
 Atomic abstraction #4: distances already known
@@ -199,20 +199,20 @@ Abstraction (8/13 vars): shrink from size 50000 (threshold: 25000)
 Abstraction (8/13 vars): applying abstraction (50000 to 25000 states)
 Abstraction (8/13 vars): applying abstraction to lookup table
 Abstraction (8/13 vars): size after shrink 25000, target 25000
-Abstraction (8/13 vars): 25000 states, ???/907845 arcs, 7989300 bytes
-Abstraction (8/13 vars): init h=10, max f=22, max g=16, max h=15 [t=1.38s]
+Abstraction (8/13 vars): 25000 states, ???/907654 arcs, 7987772 bytes
+Abstraction (8/13 vars): init h=10, max f=22, max g=16, max h=15 [t=1.69s]
 Atomic abstraction #4: 2 states, ???/33 arcs, 1448 bytes
-Atomic abstraction #4: init h=0, max f=1, max g=1, max h=0 [t=1.38s]
+Atomic abstraction #4: init h=0, max f=1, max g=1, max h=0 [t=1.69s]
 Abstraction (8/13 vars): normalizing with label reduction
 Label reduction: 8 pruned vars, 72 labels, 33 reduced labels
-Abstraction (8/13 vars): 25000 states, ???/501817 arcs, 6854156 bytes
-Abstraction (8/13 vars): init h=10, max f=22, max g=16, max h=15 [t=1.45s]
+Abstraction (8/13 vars): 25000 states, ???/501116 arcs, 6854156 bytes
+Abstraction (8/13 vars): init h=10, max f=22, max g=16, max h=15 [t=1.79s]
 Atomic abstraction #4: normalizing without label reduction
 Atomic abstraction #4: 2 states, ???/33 arcs, 1448 bytes
-Atomic abstraction #4: init h=0, max f=1, max g=1, max h=0 [t=1.45s]
+Atomic abstraction #4: init h=0, max f=1, max g=1, max h=0 [t=1.79s]
 Merging abstraction (8/13 vars) and atomic abstraction #4
-Abstraction (9/13 vars): 50000 states, ???/928145 arcs, 7976692 bytes
-Abstraction (9/13 vars): distances not computed [t=1.46s]
+Abstraction (9/13 vars): 50000 states, ???/926858 arcs, 7966396 bytes
+Abstraction (9/13 vars): distances not computed [t=1.8s]
 Next variable: #3
 Abstraction (9/13 vars): computing distances using unit-cost algorithm
 Atomic abstraction #3: distances already known
@@ -220,20 +220,20 @@ Abstraction (9/13 vars): shrink from size 50000 (threshold: 25000)
 Abstraction (9/13 vars): applying abstraction (50000 to 25000 states)
 Abstraction (9/13 vars): applying abstraction to lookup table
 Abstraction (9/13 vars): size after shrink 25000, target 25000
-Abstraction (9/13 vars): 25000 states, ???/928145 arcs, 8151700 bytes
-Abstraction (9/13 vars): init h=10, max f=22, max g=16, max h=15 [t=1.54s]
+Abstraction (9/13 vars): 25000 states, ???/926858 arcs, 8141404 bytes
+Abstraction (9/13 vars): init h=10, max f=22, max g=16, max h=15 [t=1.93s]
 Atomic abstraction #3: 2 states, ???/33 arcs, 1448 bytes
-Atomic abstraction #3: init h=0, max f=1, max g=1, max h=0 [t=1.54s]
+Atomic abstraction #3: init h=0, max f=1, max g=1, max h=0 [t=1.93s]
 Abstraction (9/13 vars): normalizing with label reduction
 Label reduction: 9 pruned vars, 72 labels, 25 reduced labels
-Abstraction (9/13 vars): 25000 states, ???/492170 arcs, 6526476 bytes
-Abstraction (9/13 vars): init h=10, max f=22, max g=16, max h=15 [t=1.6s]
+Abstraction (9/13 vars): 25000 states, ???/492541 arcs, 6526476 bytes
+Abstraction (9/13 vars): init h=10, max f=22, max g=16, max h=15 [t=2.03s]
 Atomic abstraction #3: normalizing without label reduction
 Atomic abstraction #3: 2 states, ???/33 arcs, 1448 bytes
-Atomic abstraction #3: init h=0, max f=1, max g=1, max h=0 [t=1.6s]
+Atomic abstraction #3: init h=0, max f=1, max g=1, max h=0 [t=2.04s]
 Merging abstraction (9/13 vars) and atomic abstraction #3
-Abstraction (10/13 vars): 50000 states, ???/902235 arcs, 7769412 bytes
-Abstraction (10/13 vars): distances not computed [t=1.61s]
+Abstraction (10/13 vars): 50000 states, ???/902880 arcs, 7774572 bytes
+Abstraction (10/13 vars): distances not computed [t=2.05s]
 Next variable: #2
 Abstraction (10/13 vars): computing distances using unit-cost algorithm
 Atomic abstraction #2: distances already known
@@ -241,20 +241,20 @@ Abstraction (10/13 vars): shrink from size 50000 (threshold: 25000)
 Abstraction (10/13 vars): applying abstraction (50000 to 25000 states)
 Abstraction (10/13 vars): applying abstraction to lookup table
 Abstraction (10/13 vars): size after shrink 25000, target 25000
-Abstraction (10/13 vars): 25000 states, ???/902235 arcs, 7944420 bytes
-Abstraction (10/13 vars): init h=10, max f=22, max g=17, max h=15 [t=1.68s]
+Abstraction (10/13 vars): 25000 states, ???/902880 arcs, 7949580 bytes
+Abstraction (10/13 vars): init h=10, max f=22, max g=17, max h=15 [t=2.18s]
 Atomic abstraction #2: 2 states, ???/33 arcs, 1448 bytes
-Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1.68s]
+Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=2.18s]
 Abstraction (10/13 vars): normalizing with label reduction
 Label reduction: 10 pruned vars, 72 labels, 19 reduced labels
-Abstraction (10/13 vars): 25000 states, ???/518733 arcs, 7083532 bytes
-Abstraction (10/13 vars): init h=10, max f=22, max g=17, max h=15 [t=1.74s]
+Abstraction (10/13 vars): 25000 states, ???/518185 arcs, 7083532 bytes
+Abstraction (10/13 vars): init h=10, max f=22, max g=17, max h=15 [t=2.28s]
 Atomic abstraction #2: normalizing without label reduction
 Atomic abstraction #2: 2 states, ???/33 arcs, 1448 bytes
-Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1.74s]
+Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=2.28s]
 Merging abstraction (10/13 vars) and atomic abstraction #2
-Abstraction (11/13 vars): 50000 states, ???/950898 arcs, 8158716 bytes
-Abstraction (11/13 vars): distances not computed [t=1.75s]
+Abstraction (11/13 vars): 50000 states, ???/949911 arcs, 8150820 bytes
+Abstraction (11/13 vars): distances not computed [t=2.29s]
 Next variable: #1
 Abstraction (11/13 vars): computing distances using unit-cost algorithm
 Atomic abstraction #1: distances already known
@@ -262,62 +262,62 @@ Abstraction (11/13 vars): shrink from size 50000 (threshold: 25000)
 Abstraction (11/13 vars): applying abstraction (50000 to 25000 states)
 Abstraction (11/13 vars): applying abstraction to lookup table
 Abstraction (11/13 vars): size after shrink 25000, target 25000
-Abstraction (11/13 vars): 25000 states, ???/950898 arcs, 8333724 bytes
-Abstraction (11/13 vars): init h=12, max f=22, max g=18, max h=15 [t=1.83s]
+Abstraction (11/13 vars): 25000 states, ???/949911 arcs, 8325828 bytes
+Abstraction (11/13 vars): init h=12, max f=22, max g=18, max h=15 [t=2.41s]
 Atomic abstraction #1: 2 states, ???/33 arcs, 1448 bytes
-Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1.83s]
+Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=2.41s]
 Abstraction (11/13 vars): normalizing with label reduction
 Label reduction: 11 pruned vars, 72 labels, 15 reduced labels
-Abstraction (11/13 vars): 25000 states, ???/570418 arcs, 7017996 bytes
-Abstraction (11/13 vars): init h=12, max f=22, max g=18, max h=15 [t=1.89s]
+Abstraction (11/13 vars): 25000 states, ???/570120 arcs, 7017996 bytes
+Abstraction (11/13 vars): init h=12, max f=22, max g=18, max h=15 [t=2.51s]
 Atomic abstraction #1: normalizing without label reduction
 Atomic abstraction #1: 2 states, ???/33 arcs, 1448 bytes
-Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1.89s]
+Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=2.51s]
 Merging abstraction (11/13 vars) and atomic abstraction #1
-Abstraction (12/13 vars): 50000 states, ???/939158 arcs, 8064796 bytes
-Abstraction (12/13 vars): distances not computed [t=1.9s]
+Abstraction (12/13 vars): 50000 states, ???/938786 arcs, 8061820 bytes
+Abstraction (12/13 vars): distances not computed [t=2.52s]
 Next variable: #0
 Abstraction (12/13 vars): computing distances using unit-cost algorithm
-Abstraction (12/13 vars): unreachable: 3167 states, irrelevant: 0 states
+Abstraction (12/13 vars): unreachable: 3179 states, irrelevant: 0 states
 Abstraction (12/13 vars): shrink forced to prune unreachable/irrelevant states
-Abstraction (12/13 vars): applying abstraction (50000 to 46833 states)
+Abstraction (12/13 vars): applying abstraction (50000 to 46821 states)
 Abstraction (12/13 vars): applying abstraction to lookup table
-Abstraction (12/13 vars): size after shrink 46833, target 50000
+Abstraction (12/13 vars): size after shrink 46821, target 50000
 Atomic abstraction #0: distances already known
-Abstraction (12/13 vars): shrink from size 46833 (threshold: 7142)
-Abstraction (12/13 vars): applying abstraction (46833 to 7142 states)
+Abstraction (12/13 vars): shrink from size 46821 (threshold: 7142)
+Abstraction (12/13 vars): applying abstraction (46821 to 7142 states)
 Abstraction (12/13 vars): applying abstraction to lookup table
 Abstraction (12/13 vars): size after shrink 7142, target 7142
-Abstraction (12/13 vars): 7142 states, ???/918435 arcs, 7913300 bytes
-Abstraction (12/13 vars): init h=12, max f=22, max g=18, max h=15 [t=1.97s]
+Abstraction (12/13 vars): 7142 states, ???/918085 arcs, 7910500 bytes
+Abstraction (12/13 vars): init h=12, max f=22, max g=18, max h=15 [t=2.66s]
 Atomic abstraction #0: 7 states, ???/12 arcs, 1276 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1.97s]
+Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=2.66s]
 Abstraction (12/13 vars): normalizing with label reduction
 Label reduction: 12 pruned vars, 72 labels, 13 reduced labels
-Abstraction (12/13 vars): 7142 states, ???/165406 arcs, 2269756 bytes
-Abstraction (12/13 vars): init h=12, max f=22, max g=18, max h=15 [t=2.01s]
+Abstraction (12/13 vars): 7142 states, ???/165824 arcs, 2794044 bytes
+Abstraction (12/13 vars): init h=12, max f=22, max g=18, max h=15 [t=2.71s]
 Atomic abstraction #0: normalizing without label reduction
 Atomic abstraction #0: 7 states, ???/12 arcs, 1276 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=2.01s]
+Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=2.71s]
 Merging abstraction (12/13 vars) and atomic abstraction #0
-Abstraction (13/13 vars): 49994 states, ???/556774 arcs, 4791404 bytes
-Abstraction (13/13 vars): distances not computed [t=2.02s]
+Abstraction (13/13 vars): 49994 states, ???/559562 arcs, 4813708 bytes
+Abstraction (13/13 vars): distances not computed [t=2.71s]
 Abstraction (13/13 vars): computing distances using unit-cost algorithm
-Abstraction (13/13 vars): unreachable: 2973 states, irrelevant: 0 states
+Abstraction (13/13 vars): unreachable: 2953 states, irrelevant: 0 states
 Abstraction (13/13 vars): shrink forced to prune unreachable/irrelevant states
-Abstraction (13/13 vars): applying abstraction (49994 to 47021 states)
+Abstraction (13/13 vars): applying abstraction (49994 to 47041 states)
 Abstraction (13/13 vars): applying abstraction to lookup table
-Abstraction (13/13 vars): size after shrink 47021, target 49994
+Abstraction (13/13 vars): size after shrink 47041, target 49994
 Abstraction (13/13 vars): shrink forced to prune unreachable/irrelevant states
-Abstraction (13/13 vars): applying abstraction (47021 to 47021 states)
+Abstraction (13/13 vars): applying abstraction (47041 to 47041 states)
 Abstraction (13/13 vars): applying abstraction to lookup table
-Abstraction (13/13 vars): size after shrink 47021, target 47021
+Abstraction (13/13 vars): size after shrink 47041, target 47041
 Abstraction (13/13 vars): distances already known
-Abstraction (13/13 vars): 47021 states, ???/551320 arcs, 5120964 bytes
-Abstraction (13/13 vars): init h=12, max f=30, max g=19, max h=20 [t=2.06s]
-Done initializing merge-and-shrink heuristic [1.06s]
+Abstraction (13/13 vars): 47041 states, ???/554391 arcs, 5145724 bytes
+Abstraction (13/13 vars): init h=12, max f=30, max g=19, max h=20 [t=2.81s]
+Done initializing merge-and-shrink heuristic [1.81s]
 initial h value: 12
-Estimated peak memory for abstraction: 5120964 bytes
+Estimated peak memory for abstraction: 5145724 bytes
 ************************
 Setting initial h: 12
 ************************
@@ -332,30 +332,30 @@ generated states = 0
 evaluated states = 1
 expanded states = 0
 reopened states = 0
-f: 0 [1 evaluated, 0 expanded, t=2.06s,generated_states:,0,additional_states:,0,],random_comb_index:-1
+f: 0 [1 evaluated, 0 expanded, t=2.81s,generated_states:,0,additional_states:,0,],random_comb_index:-1
 gen_to_exp_ratio: -nan
-F_bound:,0,Peak memory=,67.0234
+F_bound:,0,Peak memory=,50.9766
 				h = 12
 				best_h = -1
 				new best_h = 12
-Best heuristic value: 12 [g=0, 1 evaluated, 0 expanded, t=2.06s]
+Best heuristic value: 12 [g=0, 1 evaluated, 0 expanded, t=2.81s]
 starting timing individual heuristics
-h[,0,] is:,heur is not named,measured time cost:8.04953e-07,h:12
+h[,0,] is:,heur is not named,measured time cost:1.45609e-06,h:12
 memory before deleting databases:
-VmRSS memory: 33252 KB
+VmRSS memory: 26540 KB
 memory after deleting all databases:
-VmRSS memory: 33252 KB
+VmRSS memory: 26540 KB
 Remaining heuristics:
 remaining initial heurheur is not named
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes:1000
 
 Raiz node h = 0,g = 0, f = 0
-search_timer() = 2.17
+search_timer() = 2.92
 	Child node h = 0,g = 1, f = 1 m&s h+g = 12
 				h = 11
 				best_h = 12
 				new best_h = 11
-Best heuristic value: 11 [g=1, 2 evaluated, 1 expanded, t=2.17s]
+Best heuristic value: 11 [g=1, 2 evaluated, 1 expanded, t=2.92s]
 	Child node h = 0,g = 1, f = 1 m&s h+g = 14
 				h = 13
 				best_h = 11
@@ -373,19 +373,19 @@ generated_states - lastjump_generated_states = 2
 expanded_states - lastjump_expanded_states = 1
 fnivel1: 0
 nodesGeneratedByLevel1: 1
- time01: 2.17
+ time01: 2.92
 nodesGeneratedToTheLevel1: 1
-f: 1 [3 evaluated, 1 expanded, t=2.17s,generated_states:,2,additional_states:,2,],random_comb_index:-1
+f: 1 [3 evaluated, 1 expanded, t=2.92s,generated_states:,2,additional_states:,2,],random_comb_index:-1
 last_jump:1,F_bound_to_print:0
 gen_to_exp_ratio: 2
-F_bound:,1,Peak memory=,67.0234
+F_bound:,1,Peak memory=,50.9766
 F:1
-F_bound:1,Peak memory=67.0234,nodes:3,Nodes mem_space:0.09375,F_boundary_Range:1
+F_bound:1,Peak memory=50.9766,nodes:3,Nodes mem_space:0.09375,F_boundary_Range:1
 F:1
 F_bound:1F_boundary_time:7.11237e-17,Hoff Potential Range:1,leaves_to_sample:1
 new F_bound:1chosen_Hoff_Roots_size:0 out of 1
-Memory after Sampling::68632
-Memory before starting new F-boundary:68632
+Memory after Sampling::52200
+Memory before starting new F-boundary:52200
 
 Raiz node h = 0,g = 1, f = 1
 	Child node h = 0,g = 2, f = 2 m&s h+g = 14
@@ -395,7 +395,7 @@ Raiz node h = 0,g = 1, f = 1
 				h = 10
 				best_h = 11
 				new best_h = 10
-Best heuristic value: 10 [g=2, 5 evaluated, 2 expanded, t=2.17s]
+Best heuristic value: 10 [g=2, 5 evaluated, 2 expanded, t=2.92s]
 
 Raiz node h = 0,g = 1, f = 1
 	Child node h = 0,g = 2, f = 2 m&s h+g = 16
@@ -418,19 +418,19 @@ generated_states - lastjump_generated_states = 6
 expanded_states - lastjump_expanded_states = 2
 fnivel1: 1
 nodesGeneratedByLevel1: 2
- time01: 2.17
+ time01: 2.92
 nodesGeneratedToTheLevel1: 3
-f: 2 [7 evaluated, 3 expanded, t=2.17s,generated_states:,8,additional_states:,6,],random_comb_index:-1
+f: 2 [7 evaluated, 3 expanded, t=2.92s,generated_states:,8,additional_states:,6,],random_comb_index:-1
 last_jump:2,F_bound_to_print:0
 gen_to_exp_ratio: 3
-F_bound:,2,Peak memory=,67.0234
+F_bound:,2,Peak memory=,50.9766
 F:2
-F_bound:2,Peak memory=67.0234,nodes:7,Nodes mem_space:0.21875,F_boundary_Range:3
+F_bound:2,Peak memory=50.9766,nodes:7,Nodes mem_space:0.21875,F_boundary_Range:3
 F:2
 F_bound:2F_boundary_time:7.11237e-17,Hoff Potential Range:3,leaves_to_sample:3
 new F_bound:2chosen_Hoff_Roots_size:0 out of 3
-Memory after Sampling::68632
-Memory before starting new F-boundary:68632
+Memory after Sampling::52200
+Memory before starting new F-boundary:52200
 
 Raiz node h = 0,g = 2, f = 2
 	Child node h = 0,g = 3, f = 3 m&s h+g = 16
@@ -445,7 +445,7 @@ Raiz node h = 0,g = 2, f = 2
 				h = 9
 				best_h = 10
 				new best_h = 9
-Best heuristic value: 9 [g=3, 10 evaluated, 5 expanded, t=2.17s]
+Best heuristic value: 9 [g=3, 10 evaluated, 5 expanded, t=2.92s]
 
 Raiz node h = 0,g = 2, f = 2
 	Child node h = 0,g = 3, f = 3 m&s h+g = 18
@@ -473,19 +473,19 @@ generated_states - lastjump_generated_states = 10
 expanded_states - lastjump_expanded_states = 4
 fnivel1: 2
 nodesGeneratedByLevel1: 4
- time01: 2.17
+ time01: 2.92
 nodesGeneratedToTheLevel1: 7
-f: 3 [13 evaluated, 7 expanded, t=2.17s,generated_states:,18,additional_states:,10,],random_comb_index:-1
+f: 3 [13 evaluated, 7 expanded, t=2.92s,generated_states:,18,additional_states:,10,],random_comb_index:-1
 last_jump:3,F_bound_to_print:0
 gen_to_exp_ratio: 2.5
-F_bound:,3,Peak memory=,67.0234
+F_bound:,3,Peak memory=,50.9766
 F:3
-F_bound:3,Peak memory=67.0234,nodes:13,Nodes mem_space:0.40625,F_boundary_Range:5
+F_bound:3,Peak memory=50.9766,nodes:13,Nodes mem_space:0.40625,F_boundary_Range:5
 F:3
 F_bound:3F_boundary_time:7.11237e-17,Hoff Potential Range:5,leaves_to_sample:5
 new F_bound:3chosen_Hoff_Roots_size:0 out of 5
-Memory after Sampling::68632
-Memory before starting new F-boundary:68632
+Memory after Sampling::52200
+Memory before starting new F-boundary:52200
 
 Raiz node h = 0,g = 3, f = 3
 	Child node h = 0,g = 4, f = 4 m&s h+g = 18
@@ -514,7 +514,7 @@ Raiz node h = 0,g = 3, f = 3
 				h = 8
 				best_h = 9
 				new best_h = 8
-Best heuristic value: 8 [g=4, 20 evaluated, 10 expanded, t=2.17s]
+Best heuristic value: 8 [g=4, 20 evaluated, 10 expanded, t=2.92s]
 	Child node h = 0,g = 4, f = 4 m&s h+g = 14
 				h = 10
 				best_h = 8
@@ -559,19 +559,19 @@ generated_states - lastjump_generated_states = 22
 expanded_states - lastjump_expanded_states = 6
 fnivel1: 3
 nodesGeneratedByLevel1: 6
- time01: 2.17
+ time01: 2.92
 nodesGeneratedToTheLevel1: 13
-f: 4 [28 evaluated, 13 expanded, t=2.17s,generated_states:,40,additional_states:,22,],random_comb_index:-1
+f: 4 [28 evaluated, 13 expanded, t=2.92s,generated_states:,40,additional_states:,22,],random_comb_index:-1
 last_jump:4,F_bound_to_print:0
 gen_to_exp_ratio: 3.66667
-F_bound:,4,Peak memory=,67.0234
+F_bound:,4,Peak memory=,50.9766
 F:4
-F_bound:4,Peak memory=67.0234,nodes:28,Nodes mem_space:0.875,F_boundary_Range:14
+F_bound:4,Peak memory=50.9766,nodes:28,Nodes mem_space:0.875,F_boundary_Range:14
 F:4
 F_bound:4F_boundary_time:7.11237e-17,Hoff Potential Range:14,leaves_to_sample:14
 new F_bound:4chosen_Hoff_Roots_size:0 out of 14
-Memory after Sampling::68632
-Memory before starting new F-boundary:68632
+Memory after Sampling::52200
+Memory before starting new F-boundary:52200
 
 Raiz node h = 0,g = 4, f = 4
 	Child node h = 0,g = 5, f = 5 m&s h+g = 19
@@ -626,7 +626,7 @@ Raiz node h = 0,g = 4, f = 4
 				h = 7
 				best_h = 8
 				new best_h = 7
-Best heuristic value: 7 [g=5, 41 evaluated, 20 expanded, t=2.17s]
+Best heuristic value: 7 [g=5, 41 evaluated, 20 expanded, t=2.92s]
 
 Raiz node h = 0,g = 4, f = 4
 	Child node h = 0,g = 5, f = 5 m&s h+g = 16
@@ -702,19 +702,19 @@ generated_states - lastjump_generated_states = 46
 expanded_states - lastjump_expanded_states = 15
 fnivel1: 4
 nodesGeneratedByLevel1: 15
- time01: 2.17
+ time01: 2.92
 nodesGeneratedToTheLevel1: 28
-f: 5 [56 evaluated, 28 expanded, t=2.17s,generated_states:,86,additional_states:,46,],random_comb_index:-1
+f: 5 [56 evaluated, 28 expanded, t=2.92s,generated_states:,86,additional_states:,46,],random_comb_index:-1
 last_jump:5,F_bound_to_print:0
 gen_to_exp_ratio: 3.06667
-F_bound:,5,Peak memory=,67.0234
+F_bound:,5,Peak memory=,50.9766
 F:5
-F_bound:5,Peak memory=67.0234,nodes:56,Nodes mem_space:1.75,F_boundary_Range:27
+F_bound:5,Peak memory=50.9766,nodes:56,Nodes mem_space:1.75,F_boundary_Range:27
 F:5
 F_bound:5F_boundary_time:7.11237e-17,Hoff Potential Range:27,leaves_to_sample:27
 new F_bound:5chosen_Hoff_Roots_size:0 out of 27
-Memory after Sampling::68632
-Memory before starting new F-boundary:68632
+Memory after Sampling::52200
+Memory before starting new F-boundary:52200
 
 Raiz node h = 0,g = 5, f = 5
 	Child node h = 0,g = 6, f = 6 m&s h+g = 19
@@ -832,7 +832,7 @@ Raiz node h = 0,g = 5, f = 5
 				h = 6
 				best_h = 7
 				new best_h = 6
-Best heuristic value: 6 [g=6, 86 evaluated, 41 expanded, t=2.17s]
+Best heuristic value: 6 [g=6, 86 evaluated, 41 expanded, t=2.92s]
 	Child node h = 0,g = 6, f = 6 m&s h+g = 14
 				h = 8
 				best_h = 6
@@ -982,19 +982,19 @@ generated_states - lastjump_generated_states = 102
 expanded_states - lastjump_expanded_states = 28
 fnivel1: 5
 nodesGeneratedByLevel1: 28
- time01: 2.17
+ time01: 2.92
 nodesGeneratedToTheLevel1: 56
-f: 6 [121 evaluated, 56 expanded, t=2.17s,generated_states:,188,additional_states:,102,],random_comb_index:-1
+f: 6 [121 evaluated, 56 expanded, t=2.92s,generated_states:,188,additional_states:,102,],random_comb_index:-1
 last_jump:6,F_bound_to_print:0
 gen_to_exp_ratio: 3.64286
-F_bound:,6,Peak memory=,67.0234
+F_bound:,6,Peak memory=,50.9766
 F:6
-F_bound:6,Peak memory=67.0234,nodes:121,Nodes mem_space:3.78125,F_boundary_Range:64
+F_bound:6,Peak memory=50.9766,nodes:121,Nodes mem_space:3.78125,F_boundary_Range:64
 F:6
 F_bound:6F_boundary_time:7.11237e-17,Hoff Potential Range:64,leaves_to_sample:64
 new F_bound:6chosen_Hoff_Roots_size:0 out of 64
-Memory after Sampling::68632
-Memory before starting new F-boundary:68632
+Memory after Sampling::52200
+Memory before starting new F-boundary:52200
 
 Raiz node h = 0,g = 6, f = 6
 
@@ -1191,7 +1191,7 @@ Raiz node h = 0,g = 6, f = 6
 				h = 5
 				best_h = 6
 				new best_h = 5
-Best heuristic value: 5 [g=7, 166 evaluated, 86 expanded, t=2.17s]
+Best heuristic value: 5 [g=7, 166 evaluated, 86 expanded, t=2.92s]
 	Child node h = 0,g = 7, f = 7 m&s h+g = 14
 				h = 7
 				best_h = 5
@@ -1390,8 +1390,8 @@ Raiz node h = 0,g = 6, f = 6
 	Child node h = 0,g = 7, f = 7 m&s h+g = 18
 				h = 11
 				best_h = 5
-	Child node h = 0,g = 7, f = 7 m&s h+g = 18
-				h = 11
+	Child node h = 0,g = 7, f = 7 m&s h+g = 19
+				h = 12
 				best_h = 5
 
 Raiz node h = 0,g = 6, f = 6
@@ -1441,19 +1441,19 @@ generated_states - lastjump_generated_states = 192
 expanded_states - lastjump_expanded_states = 65
 fnivel1: 6
 nodesGeneratedByLevel1: 65
- time01: 2.17
+ time01: 2.93
 nodesGeneratedToTheLevel1: 121
-f: 7 [221 evaluated, 121 expanded, t=2.17s,generated_states:,380,additional_states:,192,],random_comb_index:-1
+f: 7 [221 evaluated, 121 expanded, t=2.93s,generated_states:,380,additional_states:,192,],random_comb_index:-1
 last_jump:7,F_bound_to_print:0
 gen_to_exp_ratio: 2.95385
-F_bound:,7,Peak memory=,67.0234
+F_bound:,7,Peak memory=,50.9766
 F:7
-F_bound:7,Peak memory=67.0234,nodes:221,Nodes mem_space:6.90625,F_boundary_Range:99
+F_bound:7,Peak memory=50.9766,nodes:221,Nodes mem_space:6.90625,F_boundary_Range:99
 F:7
-F_bound:7F_boundary_time:7.11237e-17,Hoff Potential Range:99,leaves_to_sample:99
+F_bound:7F_boundary_time:0.01,Hoff Potential Range:99,leaves_to_sample:99
 new F_bound:7chosen_Hoff_Roots_size:0 out of 99
-Memory after Sampling::68632
-Memory before starting new F-boundary:68632
+Memory after Sampling::52200
+Memory before starting new F-boundary:52200
 
 Raiz node h = 0,g = 7, f = 7
 	Child node h = 0,g = 8, f = 8 m&s h+g = 20
@@ -1839,7 +1839,7 @@ Raiz node h = 0,g = 7, f = 7
 				h = 4
 				best_h = 5
 				new best_h = 4
-Best heuristic value: 4 [g=8, 319 evaluated, 166 expanded, t=2.17s]
+Best heuristic value: 4 [g=8, 319 evaluated, 166 expanded, t=2.93s]
 
 Raiz node h = 0,g = 7, f = 7
 	Child node h = 0,g = 8, f = 8 m&s h+g = 16
@@ -1973,8 +1973,8 @@ Raiz node h = 0,g = 7, f = 7
 	Child node h = 0,g = 8, f = 8 m&s h+g = 18
 				h = 10
 				best_h = 4
-	Child node h = 0,g = 8, f = 8 m&s h+g = 19
-				h = 11
+	Child node h = 0,g = 8, f = 8 m&s h+g = 18
+				h = 10
 				best_h = 4
 
 Raiz node h = 0,g = 7, f = 7
@@ -2252,8 +2252,8 @@ Raiz node h = 0,g = 7, f = 7
 	Child node h = 0,g = 8, f = 8 m&s h+g = 19
 				h = 11
 				best_h = 4
-	Child node h = 0,g = 8, f = 8 m&s h+g = 19
-				h = 11
+	Child node h = 0,g = 8, f = 8 m&s h+g = 20
+				h = 12
 				best_h = 4
 
 Raiz node h = 0,g = 7, f = 7
@@ -2315,19 +2315,19 @@ generated_states - lastjump_generated_states = 376
 expanded_states - lastjump_expanded_states = 100
 fnivel1: 7
 nodesGeneratedByLevel1: 100
- time01: 2.17
+ time01: 2.93
 nodesGeneratedToTheLevel1: 221
-f: 8 [436 evaluated, 221 expanded, t=2.17s,generated_states:,756,additional_states:,376,],random_comb_index:-1
+f: 8 [436 evaluated, 221 expanded, t=2.93s,generated_states:,756,additional_states:,376,],random_comb_index:-1
 last_jump:8,F_bound_to_print:0
 gen_to_exp_ratio: 3.76
-F_bound:,8,Peak memory=,67.0234
+F_bound:,8,Peak memory=,50.9766
 F:8
-F_bound:8,Peak memory=67.0234,nodes:436,Nodes mem_space:13.625,F_boundary_Range:214
+F_bound:8,Peak memory=50.9766,nodes:436,Nodes mem_space:13.625,F_boundary_Range:214
 F:8
-F_bound:8F_boundary_time:7.11237e-17,Hoff Potential Range:214,leaves_to_sample:100
+F_bound:8F_boundary_time:-1.59811e-16,Hoff Potential Range:214,leaves_to_sample:100
 new F_bound:8chosen_Hoff_Roots_size:0 out of 214
-Memory after Sampling::68632
-Memory before starting new F-boundary:68632
+Memory after Sampling::52200
+Memory before starting new F-boundary:52200
 
 Raiz node h = 0,g = 8, f = 8
 	Child node h = 0,g = 9, f = 9 m&s h+g = 20
@@ -2509,8 +2509,8 @@ Raiz node h = 0,g = 8, f = 8
 				best_h = 4
 
 Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 19
-				h = 10
+	Child node h = 0,g = 9, f = 9 m&s h+g = 18
+				h = 9
 				best_h = 4
 	Child node h = 0,g = 9, f = 9 m&s h+g = 19
 				h = 10
@@ -2689,8 +2689,8 @@ Raiz node h = 0,g = 8, f = 8
 				best_h = 4
 
 Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
+	Child node h = 0,g = 9, f = 9 m&s h+g = 19
+				h = 10
 				best_h = 4
 	Child node h = 0,g = 9, f = 9 m&s h+g = 20
 				h = 11
@@ -2984,7 +2984,7 @@ Raiz node h = 0,g = 8, f = 8
 				h = 3
 				best_h = 4
 				new best_h = 3
-Best heuristic value: 3 [g=9, 589 evaluated, 319 expanded, t=2.17s]
+Best heuristic value: 3 [g=9, 589 evaluated, 319 expanded, t=2.93s]
 	Child node h = 0,g = 9, f = 9 m&s h+g = 14
 				h = 5
 				best_h = 3
@@ -3234,8 +3234,8 @@ Raiz node h = 0,g = 8, f = 8
 				best_h = 3
 
 Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 19
-				h = 10
+	Child node h = 0,g = 9, f = 9 m&s h+g = 18
+				h = 9
 				best_h = 3
 
 Raiz node h = 0,g = 8, f = 8
@@ -3536,8 +3536,8 @@ Raiz node h = 0,g = 8, f = 8
 				best_h = 3
 
 Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
+	Child node h = 0,g = 9, f = 9 m&s h+g = 19
+				h = 10
 				best_h = 3
 
 Raiz node h = 0,g = 8, f = 8
@@ -3606,8 +3606,8 @@ Raiz node h = 0,g = 8, f = 8
 				best_h = 3
 
 Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 19
-				h = 10
+	Child node h = 0,g = 9, f = 9 m&s h+g = 20
+				h = 11
 				best_h = 3
 
 Raiz node h = 0,g = 8, f = 8
@@ -3722,19 +3722,19 @@ generated_states - lastjump_generated_states = 664
 expanded_states - lastjump_expanded_states = 215
 fnivel1: 8
 nodesGeneratedByLevel1: 215
- time01: 2.17
+ time01: 2.94
 nodesGeneratedToTheLevel1: 436
-f: 9 [752 evaluated, 436 expanded, t=2.17s,generated_states:,1420,additional_states:,664,],random_comb_index:-1
+f: 9 [752 evaluated, 436 expanded, t=2.94s,generated_states:,1420,additional_states:,664,],random_comb_index:-1
 last_jump:9,F_bound_to_print:0
 gen_to_exp_ratio: 3.08837
-F_bound:,9,Peak memory=,67.0234
+F_bound:,9,Peak memory=,50.9766
 F:9
-F_bound:9,Peak memory=67.0234,nodes:752,Nodes mem_space:23.5,F_boundary_Range:315
+F_bound:9,Peak memory=50.9766,nodes:752,Nodes mem_space:23.5,F_boundary_Range:315
 F:9
-F_bound:9F_boundary_time:7.11237e-17,Hoff Potential Range:315,leaves_to_sample:100
+F_bound:9F_boundary_time:0.01,Hoff Potential Range:315,leaves_to_sample:100
 new F_bound:9chosen_Hoff_Roots_size:0 out of 315
-Memory after Sampling::68632
-Memory before starting new F-boundary:68632
+Memory after Sampling::52200
+Memory before starting new F-boundary:52200
 
 Raiz node h = 0,g = 9, f = 9
 	Child node h = 0,g = 10, f = 10 m&s h+g = 20
@@ -4065,8 +4065,8 @@ Raiz node h = 0,g = 9, f = 9
 				best_h = 3
 
 Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
+	Child node h = 0,g = 10, f = 10 m&s h+g = 19
+				h = 9
 				best_h = 3
 	Child node h = 0,g = 10, f = 10 m&s h+g = 20
 				h = 10
@@ -4989,7 +4989,7 @@ Raiz node h = 0,g = 9, f = 9
 				best_h = 3
 
 Raiz node h = 0,g = 9, f = 9
-search_timer() = 2.17
+search_timer() = 2.95
 	Child node h = 0,g = 10, f = 10 m&s h+g = 22
 				h = 12
 				best_h = 3
@@ -5015,7 +5015,7 @@ Raiz node h = 0,g = 9, f = 9
 				h = 2
 				best_h = 3
 				new best_h = 2
-Best heuristic value: 2 [g=10, 1076 evaluated, 589 expanded, t=2.18s]
+Best heuristic value: 2 [g=10, 1076 evaluated, 589 expanded, t=2.95s]
 	Child node h = 0,g = 10, f = 10 m&s h+g = 14
 				h = 4
 				best_h = 2
@@ -6283,19 +6283,19 @@ generated_states - lastjump_generated_states = 1200
 expanded_states - lastjump_expanded_states = 316
 fnivel1: 9
 nodesGeneratedByLevel1: 316
- time01: 2.18
+ time01: 2.96
 nodesGeneratedToTheLevel1: 752
-f: 10 [1385 evaluated, 752 expanded, t=2.18s,generated_states:,2620,additional_states:,1200,],random_comb_index:-1
+f: 10 [1385 evaluated, 752 expanded, t=2.96s,generated_states:,2620,additional_states:,1200,],random_comb_index:-1
 last_jump:10,F_bound_to_print:0
 gen_to_exp_ratio: 3.79747
-F_bound:,10,Peak memory=,67.0234
+F_bound:,10,Peak memory=,50.9766
 F:10
-F_bound:10,Peak memory=67.0234,nodes:1385,Nodes mem_space:43.2812,F_boundary_Range:632
+F_bound:10,Peak memory=50.9766,nodes:1385,Nodes mem_space:43.2812,F_boundary_Range:632
 F:10
-F_bound:10F_boundary_time:-1.59811e-16,Hoff Potential Range:632,leaves_to_sample:100
+F_bound:10F_boundary_time:0.01,Hoff Potential Range:632,leaves_to_sample:100
 new F_bound:10chosen_Hoff_Roots_size:0 out of 632
-Memory after Sampling::68632
-Memory before starting new F-boundary:68632
+Memory after Sampling::52200
+Memory before starting new F-boundary:52200
 
 Raiz node h = 0,g = 10, f = 10
 	Child node h = 0,g = 11, f = 11 m&s h+g = 20
@@ -7517,8 +7517,8 @@ Raiz node h = 0,g = 10, f = 10
 				best_h = 2
 
 Raiz node h = 0,g = 10, f = 10
-	Child node h = 0,g = 11, f = 11 m&s h+g = 21
-				h = 10
+	Child node h = 0,g = 11, f = 11 m&s h+g = 22
+				h = 11
 				best_h = 2
 
 Raiz node h = 0,g = 10, f = 10
@@ -8250,7 +8250,7 @@ Raiz node h = 0,g = 10, f = 10
 				h = 1
 				best_h = 2
 				new best_h = 1
-Best heuristic value: 1 [g=11, 1820 evaluated, 1076 expanded, t=2.19s]
+Best heuristic value: 1 [g=11, 1820 evaluated, 1076 expanded, t=2.97s]
 
 Raiz node h = 0,g = 10, f = 10
 
@@ -8337,8 +8337,8 @@ Raiz node h = 0,g = 10, f = 10
 	Child node h = 0,g = 11, f = 11 m&s h+g = 21
 				h = 10
 				best_h = 1
-	Child node h = 0,g = 11, f = 11 m&s h+g = 20
-				h = 9
+	Child node h = 0,g = 11, f = 11 m&s h+g = 21
+				h = 10
 				best_h = 1
 	Child node h = 0,g = 11, f = 11 m&s h+g = 22
 				h = 11
@@ -8674,8 +8674,8 @@ Raiz node h = 0,g = 10, f = 10
 	Child node h = 0,g = 11, f = 11 m&s h+g = 18
 				h = 7
 				best_h = 1
-	Child node h = 0,g = 11, f = 11 m&s h+g = 18
-				h = 7
+	Child node h = 0,g = 11, f = 11 m&s h+g = 19
+				h = 8
 				best_h = 1
 
 Raiz node h = 0,g = 10, f = 10
@@ -8707,11 +8707,11 @@ Raiz node h = 0,g = 10, f = 10
 				best_h = 1
 
 Raiz node h = 0,g = 10, f = 10
+	Child node h = 0,g = 11, f = 11 m&s h+g = 20
+				h = 9
+				best_h = 1
 	Child node h = 0,g = 11, f = 11 m&s h+g = 21
 				h = 10
-				best_h = 1
-	Child node h = 0,g = 11, f = 11 m&s h+g = 20
-				h = 9
 				best_h = 1
 
 Raiz node h = 0,g = 10, f = 10
@@ -9722,8 +9722,8 @@ Raiz node h = 0,g = 10, f = 10
 				best_h = 1
 
 Raiz node h = 0,g = 10, f = 10
-	Child node h = 0,g = 11, f = 11 m&s h+g = 21
-				h = 10
+	Child node h = 0,g = 11, f = 11 m&s h+g = 22
+				h = 11
 				best_h = 1
 	Child node h = 0,g = 11, f = 11 m&s h+g = 21
 				h = 10
@@ -9918,19 +9918,19 @@ generated_states - lastjump_generated_states = 1920
 expanded_states - lastjump_expanded_states = 633
 fnivel1: 10
 nodesGeneratedByLevel1: 633
- time01: 2.19
+ time01: 2.98
 nodesGeneratedToTheLevel1: 1385
-f: 11 [2165 evaluated, 1385 expanded, t=2.19s,generated_states:,4540,additional_states:,1920,],random_comb_index:-1
+f: 11 [2165 evaluated, 1385 expanded, t=2.98s,generated_states:,4540,additional_states:,1920,],random_comb_index:-1
 last_jump:11,F_bound_to_print:0
 gen_to_exp_ratio: 3.03318
-F_bound:,11,Peak memory=,67.0234
+F_bound:,11,Peak memory=,50.9766
 F:11
-F_bound:11,Peak memory=67.0234,nodes:2165,Nodes mem_space:67.6562,F_boundary_Range:779
+F_bound:11,Peak memory=50.9766,nodes:2165,Nodes mem_space:67.6562,F_boundary_Range:779
 F:11
-F_bound:11F_boundary_time:5.33427e-17,Hoff Potential Range:779,leaves_to_sample:100
+F_bound:11F_boundary_time:0.01,Hoff Potential Range:779,leaves_to_sample:100
 new F_bound:11chosen_Hoff_Roots_size:0 out of 779
-Memory after Sampling::68632
-Memory before starting new F-boundary:68632
+Memory after Sampling::52200
+Memory before starting new F-boundary:52200
 
 Raiz node h = 0,g = 11, f = 11
 	Child node h = 0,g = 12, f = 12 m&s h+g = 20
@@ -10795,8 +10795,8 @@ Raiz node h = 0,g = 11, f = 11
 				best_h = 1
 
 Raiz node h = 0,g = 11, f = 11
-	Child node h = 0,g = 12, f = 12 m&s h+g = 21
-				h = 9
+	Child node h = 0,g = 12, f = 12 m&s h+g = 22
+				h = 10
 				best_h = 1
 
 Raiz node h = 0,g = 11, f = 11
@@ -11960,8 +11960,8 @@ Raiz node h = 0,g = 11, f = 11
 				best_h = 1
 
 Raiz node h = 0,g = 11, f = 11
-	Child node h = 0,g = 12, f = 12 m&s h+g = 21
-				h = 9
+	Child node h = 0,g = 12, f = 12 m&s h+g = 22
+				h = 10
 				best_h = 1
 	Child node h = 0,g = 12, f = 12 m&s h+g = 21
 				h = 9
@@ -12348,8 +12348,8 @@ Raiz node h = 0,g = 11, f = 11
 				best_h = 1
 
 Raiz node h = 0,g = 11, f = 11
-	Child node h = 0,g = 12, f = 12 m&s h+g = 21
-				h = 9
+	Child node h = 0,g = 12, f = 12 m&s h+g = 22
+				h = 10
 				best_h = 1
 
 Raiz node h = 0,g = 11, f = 11
@@ -12594,7 +12594,7 @@ Raiz node h = 0,g = 11, f = 11
 				best_h = 1
 
 Raiz node h = 0,g = 11, f = 11
-search_timer() = 2.2
+search_timer() = 2.99
 	Child node h = 0,g = 12, f = 12 m&s h+g = 22
 				h = 10
 				best_h = 1
@@ -12647,8 +12647,8 @@ Raiz node h = 0,g = 11, f = 11
 				best_h = 1
 
 Raiz node h = 0,g = 11, f = 11
-	Child node h = 0,g = 12, f = 12 m&s h+g = 22
-				h = 10
+	Child node h = 0,g = 12, f = 12 m&s h+g = 21
+				h = 9
 				best_h = 1
 	Child node h = 0,g = 12, f = 12 m&s h+g = 22
 				h = 10
@@ -12885,7 +12885,7 @@ Raiz node h = 0,g = 11, f = 11
 				h = 0
 				best_h = 1
 				new best_h = 0
-Best heuristic value: 0 [g=12, 2859 evaluated, 1820 expanded, t=2.2s]
+Best heuristic value: 0 [g=12, 2859 evaluated, 1820 expanded, t=2.99s]
 
 Raiz node h = 0,g = 11, f = 11
 	Child node h = 0,g = 12, f = 12 m&s h+g = 17
@@ -13260,8 +13260,8 @@ Raiz node h = 0,g = 11, f = 11
 				best_h = 0
 
 Raiz node h = 0,g = 11, f = 11
-	Child node h = 0,g = 12, f = 12 m&s h+g = 21
-				h = 9
+	Child node h = 0,g = 12, f = 12 m&s h+g = 22
+				h = 10
 				best_h = 0
 
 Raiz node h = 0,g = 11, f = 11
@@ -13724,8 +13724,8 @@ Raiz node h = 0,g = 11, f = 11
 	Child node h = 0,g = 12, f = 12 m&s h+g = 21
 				h = 9
 				best_h = 0
-	Child node h = 0,g = 12, f = 12 m&s h+g = 22
-				h = 10
+	Child node h = 0,g = 12, f = 12 m&s h+g = 21
+				h = 9
 				best_h = 0
 
 Raiz node h = 0,g = 11, f = 11
@@ -14839,8 +14839,8 @@ Raiz node h = 0,g = 11, f = 11
 				best_h = 0
 
 Raiz node h = 0,g = 11, f = 11
-	Child node h = 0,g = 12, f = 12 m&s h+g = 23
-				h = 11
+	Child node h = 0,g = 12, f = 12 m&s h+g = 24
+				h = 12
 				best_h = 0
 
 Raiz node h = 0,g = 11, f = 11
@@ -14976,8 +14976,8 @@ Raiz node h = 0,g = 11, f = 11
 				best_h = 0
 
 Raiz node h = 0,g = 11, f = 11
-	Child node h = 0,g = 12, f = 12 m&s h+g = 21
-				h = 9
+	Child node h = 0,g = 12, f = 12 m&s h+g = 22
+				h = 10
 				best_h = 0
 	Child node h = 0,g = 12, f = 12 m&s h+g = 20
 				h = 8
@@ -15105,19 +15105,19 @@ generated_states - lastjump_generated_states = 2744
 expanded_states - lastjump_expanded_states = 780
 fnivel1: 11
 nodesGeneratedByLevel1: 780
- time01: 2.21
+ time01: 3.01
 nodesGeneratedToTheLevel1: 2165
-f: 12 [3364 evaluated, 2165 expanded, t=2.21s,generated_states:,7284,additional_states:,2744,],random_comb_index:-1
+f: 12 [3364 evaluated, 2165 expanded, t=3.01s,generated_states:,7284,additional_states:,2744,],random_comb_index:-1
 last_jump:12,F_bound_to_print:0
 gen_to_exp_ratio: 3.51795
-F_bound:,12,Peak memory=,67.0234
+F_bound:,12,Peak memory=,50.9766
 F:12
-F_bound:12,Peak memory=67.0234,nodes:3364,Nodes mem_space:105.125,F_boundary_Range:1198
+F_bound:12,Peak memory=50.9766,nodes:3364,Nodes mem_space:105.125,F_boundary_Range:1198
 F:12
-F_bound:12F_boundary_time:0.01,Hoff Potential Range:1198,leaves_to_sample:119
+F_bound:12F_boundary_time:0.02,Hoff Potential Range:1198,leaves_to_sample:119
 new F_bound:12chosen_Hoff_Roots_size:0 out of 1198
-Memory after Sampling::68632
-Memory before starting new F-boundary:68632
+Memory after Sampling::52200
+Memory before starting new F-boundary:52200
 
 Raiz node h = 0,g = 12, f = 12
 	Child node h = 0,g = 13, f = 13 m&s h+g = 20
@@ -15664,8 +15664,8 @@ Raiz node h = 0,g = 12, f = 12
 				best_h = 0
 
 Raiz node h = 0,g = 12, f = 12
-	Child node h = 0,g = 13, f = 13 m&s h+g = 22
-				h = 9
+	Child node h = 0,g = 13, f = 13 m&s h+g = 23
+				h = 10
 				best_h = 0
 
 Raiz node h = 0,g = 12, f = 12
@@ -15987,8 +15987,8 @@ Raiz node h = 0,g = 12, f = 12
 				best_h = 0
 
 Raiz node h = 0,g = 12, f = 12
-	Child node h = 0,g = 13, f = 13 m&s h+g = 24
-				h = 11
+	Child node h = 0,g = 13, f = 13 m&s h+g = 22
+				h = 9
 				best_h = 0
 
 Raiz node h = 0,g = 12, f = 12
@@ -16144,8 +16144,8 @@ Raiz node h = 0,g = 12, f = 12
 				best_h = 0
 
 Raiz node h = 0,g = 12, f = 12
-	Child node h = 0,g = 13, f = 13 m&s h+g = 21
-				h = 8
+	Child node h = 0,g = 13, f = 13 m&s h+g = 22
+				h = 9
 				best_h = 0
 
 Raiz node h = 0,g = 12, f = 12
@@ -16969,8 +16969,8 @@ Raiz node h = 0,g = 12, f = 12
 				best_h = 0
 
 Raiz node h = 0,g = 12, f = 12
-	Child node h = 0,g = 13, f = 13 m&s h+g = 24
-				h = 11
+	Child node h = 0,g = 13, f = 13 m&s h+g = 25
+				h = 12
 				best_h = 0
 
 Raiz node h = 0,g = 12, f = 12
@@ -17054,8 +17054,8 @@ Raiz node h = 0,g = 12, f = 12
 				best_h = 0
 
 Raiz node h = 0,g = 12, f = 12
-	Child node h = 0,g = 13, f = 13 m&s h+g = 22
-				h = 9
+	Child node h = 0,g = 13, f = 13 m&s h+g = 21
+				h = 8
 				best_h = 0
 
 Raiz node h = 0,g = 12, f = 12
@@ -17805,8 +17805,8 @@ Raiz node h = 0,g = 12, f = 12
 	Child node h = 0,g = 13, f = 13 m&s h+g = 24
 				h = 11
 				best_h = 0
-	Child node h = 0,g = 13, f = 13 m&s h+g = 23
-				h = 10
+	Child node h = 0,g = 13, f = 13 m&s h+g = 22
+				h = 9
 				best_h = 0
 
 Raiz node h = 0,g = 12, f = 12
@@ -18306,8 +18306,8 @@ Raiz node h = 0,g = 12, f = 12
 				best_h = 0
 
 Raiz node h = 0,g = 12, f = 12
-	Child node h = 0,g = 13, f = 13 m&s h+g = 22
-				h = 9
+	Child node h = 0,g = 13, f = 13 m&s h+g = 21
+				h = 8
 				best_h = 0
 
 Raiz node h = 0,g = 12, f = 12
@@ -18537,7 +18537,7 @@ Raiz node h = 0,g = 12, f = 12
  _________________________________
 |          Solution found!        |
  _________________________________
-overall generated nodes to last iter:,9179,search_time:,2.22,overall time:,2.22
+overall generated nodes to last iter:,9179,search_time:,3.02,overall time:,3.02
 effectiveBranchingFactor: 2
 effectiveBranchingFactor: 6
 effectiveBranchingFactor: 5
@@ -20586,19 +20586,19 @@ generated_states - lastjump_generated_states = 1895
 expanded_states - lastjump_expanded_states = 1199
 fnivel1: 12
 nodesGeneratedByLevel1: 1199
- time01: 2.22
+ time01: 3.03
 nodesGeneratedToTheLevel1: 3364
-f: 13 [4040 evaluated, 3364 expanded, t=2.22s,generated_states:,9179,additional_states:,1895,],random_comb_index:-1
+f: 13 [4040 evaluated, 3364 expanded, t=3.03s,generated_states:,9179,additional_states:,1895,],random_comb_index:-1
 last_jump:13,F_bound_to_print:0
 gen_to_exp_ratio: 1.58048
-F_bound:,13,Peak memory=,67.0234
+F_bound:,13,Peak memory=,50.9766
 F:13
-F_bound:13,Peak memory=67.0234,nodes:4040,Nodes mem_space:126.25,F_boundary_Range:675
+F_bound:13,Peak memory=50.9766,nodes:4040,Nodes mem_space:126.25,F_boundary_Range:675
 F:13
-F_bound:13F_boundary_time:0.01,Hoff Potential Range:675,leaves_to_sample:100
+F_bound:13F_boundary_time:0.02,Hoff Potential Range:675,leaves_to_sample:100
 new F_bound:13chosen_Hoff_Roots_size:0 out of 675
-Memory after Sampling::68632
-Memory before starting new F-boundary:68632
+Memory after Sampling::52200
+Memory before starting new F-boundary:52200
 
 Raiz node h = 0,g = 13, f = 13
 nivel = 12
@@ -20628,25 +20628,25 @@ g = 6
 19 19 19 18 18 19 18 19 18 18 18 19 19 19 18 18 18 16 16 14 16 18 18 18 18 16 16 16 14 12 14 18 18 16 18 18 16 24 19 19 18 18 19 19 18 19 19 18 18 18 18 18 18 18 19 19 18 18 18 18 18 18 18 18 18 
 
 g = 7
-19 19 19 19 19 20 19 18 19 19 18 18 19 18 20 19 20 18 19 19 18 18 18 18 18 16 14 18 18 18 19 19 19 19 18 18 18 16 18 18 18 18 16 16 12 14 16 16 19 18 18 19 18 18 18 18 19 18 18 18 18 19 19 18 19 19 18 19 19 19 19 19 19 19 19 19 19 19 19 18 19 18 19 19 19 19 19 18 18 19 18 18 19 18 18 19 18 19 19 19 
+19 19 19 19 19 20 19 18 19 19 18 18 19 18 20 19 20 18 19 19 18 18 18 18 18 16 14 18 18 18 19 19 19 19 18 18 18 16 18 18 18 18 16 16 12 14 16 16 19 18 18 19 18 18 18 18 19 18 18 18 18 19 19 18 19 19 18 19 19 19 19 19 19 19 19 19 19 19 19 18 19 18 19 19 19 19 19 18 18 19 18 19 19 18 18 19 18 19 19 19 
 
 g = 8
-20 21 20 21 20 19 20 21 20 20 20 19 19 20 19 19 19 19 19 20 19 19 18 19 19 19 19 19 18 19 21 19 21 19 18 19 19 19 19 21 19 19 20 20 18 19 18 18 20 20 18 19 18 18 18 18 16 16 14 16 19 19 18 18 19 18 18 20 20 19 19 19 19 19 19 20 20 19 19 19 20 20 18 18 19 18 19 18 18 18 18 18 18 18 18 18 14 12 16 16 16 17 18 18 18 19 19 19 20 20 19 19 20 21 20 19 19 19 19 19 19 19 20 20 19 18 19 19 19 18 18 18 18 19 18 18 18 19 19 19 20 19 20 20 21 20 20 20 20 20 20 20 20 20 20 20 20 20 19 19 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 18 19 20 20 18 19 20 20 20 19 20 20 19 19 18 19 20 19 19 19 19 19 19 19 19 19 20 19 20 20 20 19 19 19 19 19 19 19 
+20 21 20 21 20 19 20 21 20 20 20 19 19 20 19 19 19 19 19 20 19 19 18 19 19 19 19 19 18 19 21 19 21 19 18 19 19 19 19 21 19 19 20 20 18 19 18 18 20 20 18 19 18 18 18 18 16 16 14 16 19 19 18 18 19 18 18 20 20 19 19 19 19 19 19 20 20 19 19 19 20 20 18 18 19 18 19 18 18 18 18 18 18 18 18 18 14 12 16 16 16 17 18 18 18 19 19 19 20 20 19 19 20 21 20 19 19 19 19 19 19 19 20 20 19 18 19 19 19 18 18 18 18 18 18 18 18 19 19 19 20 19 20 20 21 20 20 20 20 20 20 20 20 20 20 20 20 20 19 19 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 18 19 20 20 18 19 20 20 20 19 20 20 19 19 18 19 20 19 19 19 19 19 19 19 19 20 20 19 20 20 20 19 19 19 19 19 19 19 
 
 g = 9
-20 20 20 19 19 21 20 22 21 22 20 21 21 19 19 21 19 19 19 19 19 19 19 19 19 20 21 20 19 19 18 18 19 19 20 20 19 19 19 19 19 19 19 19 19 21 20 19 18 20 19 19 19 19 19 19 21 20 19 20 19 21 21 21 19 20 18 19 19 19 19 19 20 19 19 20 18 21 21 21 19 20 18 19 19 18 20 19 20 18 18 19 18 18 18 18 16 16 18 18 20 20 19 19 19 20 19 20 19 19 19 19 20 19 19 20 21 21 19 20 19 19 19 21 19 20 21 21 19 20 19 20 21 19 20 20 19 19 20 18 18 18 18 18 18 19 20 20 19 20 16 16 12 14 18 18 18 18 17 18 18 18 18 18 20 19 20 21 20 20 20 19 19 20 21 21 21 19 19 20 20 20 19 19 19 19 20 19 19 20 20 20 20 21 21 19 19 19 18 18 19 19 19 19 19 19 20 18 18 18 20 18 19 19 20 18 18 20 20 19 19 19 20 21 21 21 21 20 20 21 21 20 21 21 21 20 20 19 20 20 21 20 20 20 20 20 20 21 20 20 20 20 20 20 20 20 20 21 20 21 18 18 20 20 20 18 18 20 20 21 21 19 19 20 18 19 20 20 22 19 19 19 19 19 19 19 19 20 19 21 19 20 20 19 20 20 21 20 20 20 22 19 20 19 19 20 19 19 19 19 20 20 19 20 19 21 
+20 20 20 19 19 21 20 22 21 22 20 21 21 19 19 21 19 19 19 19 19 19 19 19 19 20 21 20 19 19 18 18 19 19 20 20 19 19 19 19 19 18 19 19 19 21 20 19 18 20 19 19 19 19 19 19 21 20 19 20 19 21 21 21 19 20 18 19 19 19 19 19 20 19 19 20 18 21 21 21 19 20 18 19 19 19 20 19 20 18 18 19 18 18 18 18 16 16 18 18 20 20 19 19 19 20 19 20 19 19 19 19 20 19 19 20 21 21 19 20 19 19 19 21 19 20 21 21 19 20 19 20 21 19 20 20 19 19 20 18 18 18 18 18 18 19 20 20 19 20 16 16 12 14 18 18 18 18 17 18 18 18 18 18 20 19 20 21 20 20 20 19 19 20 21 21 21 19 19 20 20 20 19 19 19 19 20 19 19 20 20 20 20 21 21 19 19 19 18 18 19 19 19 19 19 19 20 18 18 18 20 18 18 19 20 18 18 20 20 19 19 19 20 21 21 21 21 20 20 21 21 20 21 21 21 20 20 19 20 20 21 20 20 20 20 20 20 21 20 20 20 20 20 20 20 20 20 21 20 21 18 18 20 20 20 18 18 20 20 21 21 19 19 20 19 19 20 20 22 19 19 19 19 19 19 19 19 20 19 21 20 20 20 19 20 20 21 20 20 20 22 19 20 19 19 20 19 19 19 19 20 20 19 20 19 21 
 
 g = 10
-20 21 21 21 22 21 22 21 21 20 19 20 22 21 22 21 21 21 22 22 22 21 22 22 22 20 20 20 22 22 21 22 20 20 20 20 20 23 21 20 20 20 20 21 20 20 20 19 20 20 20 20 19 20 21 20 22 22 23 23 21 21 21 20 20 21 20 20 18 19 20 20 20 20 20 20 21 21 20 20 20 20 20 20 20 20 20 20 20 20 20 19 20 20 19 20 19 20 20 20 19 20 21 21 22 22 20 20 20 19 18 19 20 20 20 20 20 20 20 21 21 20 20 20 20 20 20 20 23 22 22 21 21 22 20 20 20 22 22 22 22 22 20 20 20 22 21 20 20 20 20 20 19 20 21 20 20 20 20 19 20 21 21 20 20 20 20 19 20 22 21 20 20 22 22 22 22 20 20 20 22 21 20 20 21 20 20 20 20 19 20 20 22 21 20 20 20 20 22 21 20 20 19 19 19 18 19 19 18 19 18 19 18 19 19 17 16 18 18 17 18 18 19 19 18 19 22 21 20 20 20 20 20 20 20 20 19 20 22 21 20 20 20 20 22 21 19 20 20 20 19 20 19 20 20 20 19 20 19 20 20 20 20 19 20 22 22 22 21 21 21 21 21 21 21 21 21 21 21 22 21 21 21 21 21 21 21 21 20 21 20 21 20 21 21 21 21 22 22 19 19 19 19 18 19 19 19 19 19 19 18 19 21 20 22 22 21 21 22 22 18 17 18 12 14 16 16 20 18 19 19 19 20 17 18 18 18 18 18 20 20 19 19 21 21 21 21 21 21 20 20 20 20 20 20 22 22 21 22 21 21 22 22 22 20 20 20 20 20 22 21 20 20 20 22 21 19 20 20 19 20 19 20 20 20 19 20 21 21 21 21 21 21 22 21 21 20 20 20 20 21 18 20 19 19 19 19 20 20 20 20 20 20 20 20 21 21 18 18 18 18 18 18 20 20 21 20 20 20 20 20 20 22 22 18 20 19 19 19 19 19 19 21 21 21 20 20 20 22 21 21 21 22 21 22 22 22 21 22 21 22 22 22 22 22 22 22 23 22 22 21 22 21 21 20 20 23 20 20 20 20 22 20 20 20 20 20 20 20 20 22 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 22 20 20 22 18 20 20 18 22 20 20 20 20 18 20 20 20 18 20 20 20 23 23 20 20 20 20 22 22 19 19 20 20 20 22 21 22 22 20 20 19 20 20 19 19 20 20 20 19 20 20 20 20 20 20 21 20 19 20 21 20 20 20 20 20 20 22 22 20 20 20 21 21 20 20 20 20 20 20 20 20 20 20 22 20 20 20 21 21 21 19 20 20 19 20 21 21 19 20 20 20 19 20 19 20 20 20 19 20 20 20 20 21 20 21 21 21 
+20 21 21 21 22 21 22 21 21 20 19 20 22 21 22 21 21 21 22 22 22 21 22 22 22 20 20 20 22 22 21 22 20 20 20 20 20 23 21 20 20 20 20 21 20 20 20 19 20 20 20 20 19 20 21 20 22 22 23 23 21 21 21 20 20 21 20 20 18 19 20 20 20 20 20 20 21 21 20 20 20 20 20 20 19 20 20 20 20 20 20 19 20 20 19 20 19 20 20 20 19 20 21 21 22 22 20 20 20 19 18 19 20 20 20 20 20 20 20 21 21 20 20 20 20 20 20 20 23 22 22 21 21 22 20 20 20 22 22 22 22 22 20 20 20 22 21 20 20 20 20 20 19 20 21 20 20 20 20 19 20 21 21 20 20 20 20 19 20 22 21 20 20 22 22 22 22 20 20 20 22 21 20 20 21 20 20 20 20 19 20 20 22 21 20 20 20 20 22 21 20 20 19 19 19 18 19 19 18 19 18 19 18 19 19 17 16 18 18 17 18 18 19 19 18 19 22 21 20 20 20 20 20 20 20 20 19 20 22 21 20 20 20 20 22 21 19 20 20 20 19 20 19 20 20 20 19 20 19 20 20 20 20 19 20 22 22 22 21 21 21 21 21 21 21 21 21 21 21 22 21 21 21 21 21 21 21 21 20 21 20 21 20 21 21 21 21 22 22 19 19 19 19 18 19 19 19 19 19 19 18 19 21 20 22 22 21 21 22 22 18 17 18 12 14 16 16 20 18 19 19 19 20 17 18 18 18 18 18 20 20 19 19 21 21 21 21 21 21 20 20 20 20 20 20 22 22 21 22 21 21 22 22 22 20 20 20 20 20 22 21 20 20 20 22 21 19 20 20 19 20 19 20 20 20 19 20 21 21 21 21 21 21 22 21 21 20 20 20 20 21 18 20 19 19 19 19 20 20 20 20 20 20 20 20 21 21 18 18 18 18 18 18 20 20 21 20 20 20 20 20 20 22 22 18 20 19 19 19 19 19 19 21 21 21 20 20 20 22 21 21 21 22 21 22 22 22 21 22 21 22 22 22 22 22 22 22 23 22 22 21 22 21 21 20 20 23 20 20 20 20 22 20 20 20 20 20 20 20 20 22 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 22 20 20 22 18 20 20 18 22 20 20 20 20 18 20 20 20 18 20 20 20 23 23 20 20 20 20 22 22 19 19 20 20 20 22 21 22 22 20 20 19 20 20 19 19 20 20 20 19 20 20 20 20 20 20 21 20 19 20 21 20 20 20 20 20 20 22 22 20 20 20 21 21 20 20 20 20 20 20 20 20 20 20 22 20 20 20 21 21 21 19 20 20 19 20 21 21 19 20 20 20 19 20 19 20 20 20 19 20 20 20 20 21 20 21 21 21 
 
 g = 11
-20 21 21 21 22 22 21 22 22 23 21 21 22 19 19 21 21 21 22 21 21 21 21 21 21 22 22 22 22 21 22 22 22 20 22 22 20 20 20 22 22 22 22 21 22 22 20 20 20 20 20 20 20 21 20 20 20 21 21 21 21 20 21 20 20 20 20 20 20 20 20 20 20 21 20 20 23 21 22 21 21 22 20 21 21 21 20 22 21 18 20 20 20 22 20 22 20 21 21 23 21 23 22 20 21 20 21 20 21 20 20 20 21 20 20 20 20 22 20 20 22 20 20 20 21 21 19 20 20 20 20 20 19 21 20 20 19 21 20 21 21 22 20 20 20 22 20 22 20 19 20 18 19 20 22 20 20 22 20 22 20 20 20 20 20 21 20 20 20 20 21 20 20 21 20 20 20 21 20 22 22 21 20 22 20 20 22 22 22 22 22 22 22 21 20 22 20 22 21 22 22 21 22 22 21 20 22 21 20 20 20 20 20 20 20 20 21 20 20 22 20 20 22 20 20 22 21 21 21 22 20 20 20 20 22 20 20 22 20 20 20 22 20 22 21 21 21 22 20 20 22 23 22 22 22 22 22 21 20 22 20 22 21 22 22 21 22 21 22 21 20 22 20 20 20 21 21 20 20 21 22 22 21 20 20 21 22 22 22 23 21 20 19 20 19 19 19 18 20 19 19 19 18 20 19 20 19 18 20 19 19 17 16 18 18 17 18 18 19 19 19 18 19 19 23 23 21 20 22 20 22 21 20 20 22 22 21 20 21 20 22 20 22 21 20 20 20 22 22 21 21 20 20 21 22 22 22 23 21 19 21 20 20 19 21 20 19 20 22 20 20 22 20 20 22 19 20 22 20 20 22 20 22 20 20 22 23 21 23 21 22 22 21 21 21 21 21 23 21 21 21 21 23 21 22 22 22 21 22 21 21 23 22 21 22 22 23 19 19 19 19 18 19 19 19 19 19 22 20 22 23 19 19 20 12 17 22 18 20 20 19 21 22 21 17 18 20 18 18 20 20 18 21 20 22 22 20 19 20 19 20 22 22 21 21 20 22 20 20 22 20 20 20 21 22 21 21 21 21 22 22 22 22 22 20 21 20 22 20 21 20 22 22 21 21 20 20 22 21 19 20 20 19 20 22 20 20 22 20 20 22 21 22 22 22 21 21 20 20 22 21 22 21 18 18 20 19 19 20 20 19 21 20 22 20 20 20 21 22 21 22 21 22 22 18 18 20 18 18 20 20 18 20 20 20 22 20 21 20 22 22 20 22 22 22 22 22 18 20 20 19 20 19 20 19 20 20 19 20 19 20 21 21 22 21 22 22 20 20 20 22 20 22 22 21 21 21 22 23 22 22 23 23 22 21 22 21 22 22 22 22 22 22 23 22 23 22 20 20 22 20 21 20 20 21 22 20 22 20 20 22 20 23 20 20 20 20 22 20 22 20 22 20 22 20 21 20 21 22 20 22 20 20 22 20 20 20 20 20 23 22 22 18 20 20 22 18 20 20 20 20 22 20 23 20 20 22 20 22 22 22 20 22 22 22 22 21 22 22 22 21 19 21 20 20 19 20 20 20 20 20 20 20 20 20 21 20 21 19 20 21 21 20 20 20 20 21 20 21 22 22 22 22 20 21 20 21 20 22 22 20 20 20 22 21 20 21 20 22 21 21 21 21 21 21 19 20 21 21 20 21 21 20 20 21 21 21 19 20 20 20 19 20 21 20 21 20 21 20 20 21 20 20 20 20 21 21 21 21 21 
+20 21 21 21 22 22 21 22 22 23 21 21 22 19 19 21 21 21 22 21 21 21 21 21 21 22 22 22 22 21 22 22 22 20 22 22 20 20 20 22 22 22 22 21 22 22 20 20 20 20 20 20 20 21 20 20 20 21 21 21 21 20 21 20 20 20 20 20 20 20 20 20 20 21 20 20 23 21 22 21 21 22 20 21 21 21 20 22 21 18 20 20 20 22 20 22 20 21 21 23 21 23 22 20 21 20 21 20 21 20 20 20 21 20 20 20 20 22 20 20 22 20 20 20 21 21 19 20 20 20 20 20 19 21 20 20 19 21 20 21 21 22 20 20 20 22 20 22 20 19 20 18 19 20 22 20 20 22 20 22 20 20 20 20 20 21 20 20 20 20 21 20 20 21 20 20 20 21 20 22 22 21 20 22 20 20 22 22 22 22 22 22 22 21 20 22 20 22 21 22 22 21 22 22 21 20 22 21 20 20 20 20 20 20 20 20 21 20 20 22 20 20 22 20 20 22 21 21 21 22 20 20 20 20 22 20 20 22 20 20 20 22 20 22 21 21 21 22 20 20 22 23 22 22 22 22 22 21 20 22 20 22 21 22 22 21 22 21 22 21 20 22 20 20 20 21 21 20 20 22 22 22 21 20 20 21 22 22 22 23 21 20 19 20 19 19 19 18 20 19 19 19 18 20 19 20 19 18 20 19 19 17 16 18 18 17 18 18 19 19 19 18 19 19 23 23 21 20 22 20 22 21 20 20 22 22 21 20 21 20 22 20 22 21 20 20 20 22 22 21 21 20 20 21 22 22 22 23 21 19 21 20 20 19 21 20 19 20 22 20 20 22 20 20 22 19 20 22 20 20 22 20 22 20 20 22 23 21 23 21 22 22 21 21 21 21 21 23 21 21 21 21 23 21 22 22 22 21 22 21 21 23 22 21 22 22 23 19 19 19 19 18 19 19 19 19 19 22 20 22 23 19 19 20 12 17 22 18 20 20 19 21 22 21 17 18 20 18 18 20 20 18 21 21 22 22 20 19 20 19 20 22 22 21 21 20 22 20 20 22 20 20 20 21 22 21 21 21 21 22 22 22 22 22 20 21 20 22 20 21 20 22 22 21 21 20 20 22 21 19 20 20 19 20 22 20 20 22 20 20 22 21 22 22 22 21 21 20 20 22 21 22 21 18 19 20 19 19 20 20 19 20 21 22 20 20 20 21 22 21 22 21 22 22 18 18 20 18 18 20 20 18 20 20 20 22 20 21 20 22 22 20 22 22 22 22 22 18 20 20 19 20 19 20 19 20 20 19 20 19 20 21 21 22 21 22 22 20 20 20 22 20 22 22 21 21 21 22 23 22 22 23 23 22 21 22 21 22 22 22 22 22 22 23 22 23 22 20 20 22 20 21 20 20 21 22 20 22 20 20 22 20 23 20 20 20 20 22 20 22 20 22 20 22 20 21 20 21 22 20 22 20 20 22 20 20 20 20 20 23 22 22 18 20 20 22 18 20 20 20 20 22 20 23 20 20 22 20 22 22 22 20 22 22 22 22 21 22 22 22 21 19 21 20 20 19 20 20 20 20 20 20 20 20 20 21 20 21 19 20 21 21 20 20 20 20 21 20 21 22 22 22 22 20 21 20 21 20 22 22 20 20 20 22 21 20 21 20 22 21 22 21 21 21 21 19 20 21 21 20 21 21 20 20 21 21 21 19 20 20 20 19 20 21 20 21 20 21 20 20 21 20 20 20 20 21 21 21 21 21 
 
 g = 12
-20 21 22 22 22 22 22 22 22 22 22 22 23 22 22 22 22 22 22 23 22 23 21 21 22 22 24 24 20 21 20 21 22 21 21 21 21 22 22 22 22 22 22 22 22 22 21 22 22 22 22 21 22 22 22 22 22 21 22 23 24 24 23 24 22 22 24 22 22 22 22 22 22 24 22 22 22 22 22 24 24 22 24 20 20 22 22 20 22 22 22 22 22 24 23 22 22 22 21 22 22 22 22 22 22 20 22 22 22 22 22 22 22 22 20 20 22 22 22 23 22 22 22 22 23 22 23 22 22 23 20 22 22 20 21 20 22 22 20 22 20 22 21 20 22 22 22 22 20 22 22 23 23 22 22 23 23 21 22 21 22 22 23 23 22 23 22 22 22 22 20 22 24 23 22 18 20 22 22 22 22 24 24 20 22 22 23 22 21 22 22 23 23 23 23 23 23 22 22 22 21 20 22 20 22 22 22 22 20 20 22 23 21 21 22 22 24 23 22 20 22 22 23 24 22 21 21 22 22 19 20 22 20 20 22 20 19 20 22 20 20 22 20 23 22 22 22 22 22 22 22 22 22 22 22 22 20 20 22 22 22 22 22 22 22 22 22 20 20 22 22 20 20 20 20 20 22 22 22 22 22 22 22 22 20 20 20 22 22 22 22 22 22 22 22 20 20 22 22 22 22 22 22 22 22 22 22 22 22 20 20 20 22 21 20 22 22 22 22 22 22 21 20 22 22 20 20 20 20 22 22 22 23 24 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 23 24 22 23 22 23 22 24 22 20 22 24 22 22 22 20 22 20 22 21 21 20 22 22 22 22 20 22 22 22 22 20 20 20 22 20 21 20 22 22 22 22 22 22 22 22 22 20 22 22 22 20 22 22 20 22 22 22 20 21 21 20 22 22 22 22 22 22 22 22 22 20 22 22 24 24 22 22 24 22 22 22 22 22 22 22 22 22 22 22 22 22 23 24 22 24 22 23 22 22 22 24 22 22 20 22 24 20 22 22 21 22 22 21 21 22 22 24 23 22 21 21 21 22 22 22 22 22 21 21 20 20 21 21 19 20 20 20 20 20 22 19 19 20 21 20 21 20 22 19 20 20 21 21 21 17 18 18 19 18 19 19 18 20 20 19 19 20 20 21 20 24 23 22 22 22 22 22 22 22 22 20 22 22 22 22 20 22 22 20 22 22 22 22 22 22 20 22 22 20 22 20 22 22 22 23 20 21 21 22 22 22 22 22 22 21 21 21 22 22 22 22 23 22 19 20 22 20 20 22 20 23 22 19 20 21 22 20 20 20 20 20 22 19 20 21 22 20 22 20 20 22 20 22 22 24 22 25 22 22 22 22 23 21 22 22 21 23 23 21 22 23 22 22 22 22 23 22 23 22 22 22 23 23 22 22 22 23 24 22 22 22 23 24 21 23 23 21 23 23 23 22 22 24 23 24 20 20 20 21 19 20 20 21 19 19 19 20 24 21 23 24 21 21 21 22 12 17 24 20 22 22 22 22 22 24 24 22 17 18 20 22 22 20 19 20 21 21 20 20 21 21 21 21 23 22 22 22 20 20 22 20 20 21 23 23 23 22 22 22 22 22 22 22 22 22 22 22 22 22 20 22 20 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 23 20 22 23 20 22 21 21 21 22 22 22 22 22 22 21 21 21 22 22 19 20 20 22 19 20 21 22 20 22 20 21 22 22 22 23 23 23 23 22 22 22 22 22 22 22 24 23 22 18 20 20 22 22 20 20 20 21 21 20 20 21 21 24 22 22 22 22 22 22 22 22 22 22 24 18 18 20 20 22 22 20 19 20 21 21 20 20 21 21 22 23 20 20 22 20 20 22 22 22 22 22 22 22 22 22 18 20 20 21 22 22 22 20 20 20 20 20 20 21 22 20 21 21 20 20 20 21 21 21 21 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 24 24 22 22 22 22 22 24 23 23 23 22 22 22 22 23 23 22 22 22 24 24 22 24 24 22 22 24 24 24 22 24 24 24 24 23 22 22 22 24 20 22 22 20 22 22 22 20 20 22 20 22 24 22 24 24 22 22 22 22 22 22 22 22 22 22 22 20 22 20 22 22 24 20 22 24 20 22 22 22 22 20 20 22 20 22 24 22 20 20 20 22 20 22 24 22 22 22 18 20 22 18 20 20 20 20 20 22 22 22 22 22 24 24 20 20 20 22 22 22 22 24 24 24 23 22 22 22 22 22 24 22 22 23 23 22 22 23 23 20 22 20 22 20 20 20 20 20 20 20 22 22 22 22 22 22 22 22 22 21 21 22 22 22 22 20 20 22 22 22 22 21 22 22 22 20 22 20 22 22 23 22 22 23 22 22 23 21 21 22 22 21 22 21 22 21 22 22 21 21 22 21 21 22 22 24 22 21 23 22 22 23 22 21 20 20 21 21 22 22 22 22 22 22 21 21 22 22 22 22 20 20 22 20 22 22 20 20 20 21 20 22 21 22 20 22 22 22 21 21 20 22 22 22 21 21 22 22 22 22 22 21 21 21 21 21 
+20 21 22 22 22 22 22 22 22 22 22 22 23 22 22 22 22 22 22 23 22 23 21 21 22 22 24 24 20 21 20 21 22 21 21 21 21 22 22 22 22 22 22 22 22 22 21 22 22 22 22 21 22 22 22 22 22 21 22 23 24 24 23 24 22 22 24 22 22 22 22 22 22 24 22 22 22 22 22 24 24 22 24 20 20 22 22 20 22 22 22 22 22 24 23 22 22 22 21 22 22 22 22 22 22 20 22 22 22 22 22 22 22 22 20 20 22 22 22 23 22 22 22 22 23 22 23 22 22 23 20 22 22 20 21 20 22 22 20 22 20 22 21 20 22 22 22 22 20 22 22 23 23 22 22 23 23 21 22 21 22 22 23 23 22 23 22 22 22 22 20 22 24 23 22 18 20 22 22 22 22 24 24 20 22 22 23 22 21 22 22 23 23 23 23 23 23 22 22 22 21 20 22 20 22 22 22 22 20 20 22 23 22 21 22 22 24 23 22 20 22 22 23 24 22 21 21 22 22 19 20 22 20 20 22 20 19 20 22 20 20 22 20 23 22 22 22 22 22 22 22 22 22 22 22 22 20 20 22 22 22 22 22 22 22 22 22 20 20 22 22 20 20 20 20 20 22 22 22 22 22 22 22 22 20 20 20 22 22 22 22 22 22 22 22 20 20 22 22 22 22 22 22 22 22 22 22 22 22 20 20 20 22 21 20 22 22 22 22 22 22 21 20 22 22 20 20 20 20 22 22 22 23 24 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 23 24 22 23 22 23 22 24 22 20 22 24 22 22 22 20 22 20 22 21 21 20 22 22 22 22 20 22 22 22 22 20 20 20 22 20 21 20 22 22 22 22 22 22 22 22 22 20 22 22 22 20 22 22 20 22 22 22 20 21 21 20 22 22 22 22 22 22 22 22 22 20 22 22 24 24 22 22 24 22 22 22 22 22 22 22 22 22 22 22 22 22 23 24 22 24 22 23 22 22 22 24 22 22 20 22 24 20 22 22 21 22 22 21 21 22 22 24 23 22 22 21 21 22 22 22 22 22 21 21 20 20 21 21 19 20 20 20 20 20 22 19 19 20 21 20 21 20 22 19 20 20 21 21 21 17 18 18 19 18 19 19 18 20 20 19 19 20 20 21 20 24 23 22 22 22 22 22 22 22 22 20 22 22 22 22 20 22 22 20 22 22 22 22 22 22 20 22 22 20 22 20 22 22 22 23 20 21 22 22 22 22 22 22 22 21 21 21 22 22 22 22 23 22 19 20 22 20 20 22 20 23 22 19 20 21 22 20 20 20 20 20 22 19 20 21 22 20 22 20 20 22 20 22 22 24 22 25 22 22 22 22 23 21 22 22 21 23 23 21 22 23 21 22 22 22 23 22 23 22 22 22 23 23 22 22 22 23 24 22 22 22 23 24 21 23 23 21 23 23 23 22 22 24 23 24 20 20 20 21 19 20 20 21 19 19 19 20 24 21 23 24 21 21 21 22 12 17 24 20 22 22 22 22 22 24 24 22 17 18 20 22 22 20 19 20 21 21 20 20 21 21 21 21 23 22 22 22 20 20 22 20 20 21 23 23 23 22 22 22 22 22 22 22 22 22 22 22 22 22 20 22 20 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 23 20 22 23 20 22 21 21 22 22 22 22 22 22 22 21 21 21 22 22 19 20 20 22 19 20 21 22 20 22 20 21 22 22 22 23 23 23 23 22 22 22 22 22 22 22 24 23 22 18 20 20 22 22 20 20 20 21 21 20 20 21 21 24 22 22 22 22 22 22 22 22 22 22 24 18 18 20 20 22 22 20 19 20 21 21 20 20 21 21 22 23 20 20 22 20 20 22 22 22 22 22 22 22 22 22 18 20 20 21 21 22 22 20 20 20 20 20 20 21 22 20 21 21 20 20 20 21 21 21 21 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 24 24 22 22 22 22 22 24 23 23 23 22 22 22 22 23 23 22 22 22 24 24 22 24 24 22 22 24 24 24 22 24 24 24 24 23 22 22 22 24 20 22 22 20 22 22 22 20 20 22 20 22 24 22 24 24 22 22 22 22 22 22 22 22 22 22 22 20 22 20 22 22 24 20 22 24 20 22 22 22 22 20 20 22 20 22 24 22 20 20 20 22 20 22 24 22 22 22 18 20 22 18 20 20 20 20 20 22 22 22 22 22 24 24 20 20 20 22 22 22 22 24 24 24 23 22 22 22 22 22 24 22 22 23 23 22 22 23 23 20 22 20 22 20 20 20 20 20 20 20 22 22 22 22 22 22 22 22 22 21 21 22 22 22 22 20 20 22 22 22 22 21 22 22 22 20 22 20 22 22 23 22 22 23 22 22 23 21 21 22 22 21 22 21 22 21 22 22 21 21 22 21 21 22 22 24 22 21 24 22 22 23 22 21 20 20 21 21 22 22 22 22 22 22 21 21 22 22 22 22 20 20 22 20 22 22 20 20 20 22 20 22 21 22 20 22 22 22 21 21 20 22 22 22 21 21 22 22 22 22 22 21 21 21 21 21 
 
 g = 13
-20 21 22 22 22 22 22 22 22 22 22 22 22 22 22 23 23 24 23 22 23 22 22 23 23 22 21 21 22 23 24 22 21 22 21 22 21 21 22 21 22 22 22 22 23 22 23 23 22 22 22 22 22 22 22 22 22 22 22 22 22 22 23 24 24 24 24 23 24 22 24 24 24 24 22 24 22 22 24 24 22 23 22 22 22 24 22 26 22 20 22 22 22 22 24 22 24 24 23 24 22 22 24 24 23 23 24 24 24 22 22 23 22 22 23 22 22 22 24 23 23 23 24 24 23 24 23 25 23 23 22 23 23 23 20 22 21 21 22 21 22 23 23 22 23 24 20 22 23 22 23 23 24 24 25 23 22 22 24 23 22 24 22 22 24 24 20 22 22 24 25 22 22 23 22 21 21 24 24 24 23 25 24 23 24 23 23 24 23 24 21 22 21 22 22 22 23 20 21 23 21 22 22 24 24 24 22 20 22 22 23 24 24 23 24 21 24 22 24 20 24 23 20 22 22 22 24 22 20 20 24 22 21 21 22 22 22 23 24 23 22 22 22 22 22 22 22 22 22 22 22 23 23 22 22 22 24 22 22 24 22 24 22 24 22 24 22 21 24 22 24 20 22 22 22 24 24 23 22 22 23 22 22 22 22 24 24 24 22 23 23 23 23 22 22 22 22 23 23 22 22 22 22 23 22 23 20 21 22 21 20 22 22 22 22 23 22 21 22 21 20 22 22 22 22 22 22 22 23 25 22 22 23 24 24 22 23 24 24 22 22 22 24 24 22 23 22 22 22 22 23 23 23 23 23 22 24 23 23 24 24 22 23 23 25 23 22 24 23 24 22 24 25 24 24 22 23 23 23 20 22 21 22 22 21 22 22 22 23 23 22 23 24 20 22 23 22 24 21 20 22 22 22 22 24 22 22 22 24 24 20 22 22 22 22 20 22 22 24 22 24 22 22 22 22 22 24 22 22 22 24 22 24 22 22 24 20 22 22 24 22 24 24 24 24 22 23 24 24 24 23 22 22 22 22 24 24 24 24 23 24 23 23 23 22 24 24 24 24 22 24 22 22 24 24 24 22 22 21 21 22 23 22 23 23 22 21 22 23 23 23 23 21 21 21 21 20 21 21 21 21 24 20 21 22 20 22 22 22 24 20 22 18 20 19 20 20 19 20 20 19 19 21 21 21 24 23 22 23 22 23 22 24 23 23 24 22 22 21 22 24 23 23 22 22 22 22 24 22 24 24 22 23 24 21 20 22 23 22 22 22 21 24 22 22 23 24 22 22 22 22 24 22 22 22 22 22 22 23 22 22 22 21 22 22 23 23 23 23 24 23 20 20 20 22 21 21 22 22 23 23 22 20 20 21 22 20 22 20 20 22 23 22 20 22 21 23 21 22 22 22 24 21 24 23 22 22 24 24 24 21 22 21 23 22 23 22 22 23 22 22 23 22 24 22 22 23 24 24 24 24 24 25 24 24 23 21 23 24 23 24 23 23 23 23 23 22 24 21 21 19 22 22 22 23 24 
+20 21 22 22 22 22 22 22 22 22 22 22 22 22 22 23 23 24 23 22 23 22 22 23 23 22 21 21 22 23 24 22 21 22 21 22 21 21 22 21 22 22 22 22 23 22 23 23 22 22 22 22 22 22 22 22 22 22 22 22 22 22 23 24 24 24 24 23 24 22 24 24 24 24 22 24 22 22 24 24 22 23 22 22 22 24 22 26 22 20 22 22 22 22 24 22 24 24 23 24 22 22 24 24 23 23 24 24 24 22 23 23 22 22 23 22 22 22 24 23 23 23 24 24 23 24 23 25 23 23 22 23 23 23 20 22 21 21 22 21 22 23 23 22 23 24 20 22 23 22 23 23 24 24 25 23 22 22 24 23 22 24 22 22 24 24 20 22 22 22 25 22 22 23 22 21 21 24 24 24 23 25 24 23 24 23 23 24 23 24 21 22 21 22 22 22 23 20 21 23 22 22 22 24 24 24 22 20 22 22 23 24 24 23 24 21 24 22 24 20 24 23 20 22 22 22 24 22 20 20 24 22 21 21 22 22 22 23 24 23 22 22 22 22 22 22 22 22 22 22 22 23 23 22 22 22 24 22 22 24 22 24 22 24 22 24 22 21 24 22 24 20 22 22 22 24 24 23 22 22 23 22 22 22 22 24 24 24 22 23 23 23 23 22 22 22 22 23 23 22 22 22 22 23 22 23 20 21 22 21 20 22 22 22 22 23 22 21 22 21 20 22 22 22 22 22 22 22 23 25 22 22 23 24 24 22 23 24 24 22 22 22 24 24 22 23 22 22 22 22 23 23 23 23 23 22 24 23 23 24 24 22 23 23 25 23 22 25 23 24 22 24 25 24 24 22 23 23 23 20 22 21 22 22 21 22 21 22 23 23 22 23 24 20 22 23 22 24 21 20 22 22 22 22 24 22 22 22 24 24 20 22 22 22 22 20 22 22 24 22 24 22 22 22 22 22 24 22 22 22 24 22 24 22 22 24 20 22 22 24 22 24 24 24 24 22 23 24 24 24 23 22 22 22 22 24 24 24 24 23 24 23 23 23 22 24 24 24 24 22 24 22 22 24 24 24 22 22 21 21 22 23 22 23 23 22 21 22 23 23 23 23 21 21 21 21 20 21 21 21 21 24 20 21 22 20 22 22 22 24 20 22 18 20 19 20 20 19 20 20 19 19 21 21 21 24 23 22 23 22 23 22 24 22 23 24 22 22 21 22 24 23 23 22 22 22 22 24 22 24 24 22 23 24 21 20 22 23 22 22 22 21 24 22 22 23 24 22 22 22 22 24 22 22 22 22 22 22 23 22 22 22 21 22 22 23 23 23 23 24 23 20 20 20 22 21 21 22 22 23 23 22 20 20 21 22 20 22 20 20 22 23 22 20 22 21 23 21 22 22 22 24 21 24 23 22 22 24 24 24 21 22 21 23 22 23 21 22 23 22 22 23 22 24 22 22 23 24 24 24 24 24 25 24 24 23 21 23 24 23 24 23 23 23 23 23 22 24 21 21 19 22 22 22 23 24 
 
 f_exp.size() = 4040
 f(camada)	#nodes expanded
@@ -20654,14 +20654,14 @@ f(camada)	#nodes expanded
 14	19
 16	44
 17	13
-18	252
+18	251
 19	431
 20	1028
-21	521
-22	1244
-23	249
-24	216
-25	9
+21	518
+22	1249
+23	248
+24	215
+25	10
 26	1
 
 Nodes by camadas.
@@ -20670,7 +20670,7 @@ niveles totales 13
 fnivel: 12
 nodesGeneratedByLevel: 13
 time0: 1
-nodesGeneratedToTheLevel: 5
+nodesGeneratedToTheLevel: 13
 
 Dijkstra: Nodes by level.
 totalniveles: 1
@@ -20730,8 +20730,8 @@ size: 6
 f: 12 q: 1
 f: 14 q: 2
 f: 16 q: 6
-f: 18 q: 41
-f: 19 q: 47
+f: 18 q: 40
+f: 19 q: 48
 f: 20 q: 3
 g = 8
 size: 8
@@ -20739,9 +20739,9 @@ f: 12 q: 1
 f: 14 q: 2
 f: 16 q: 6
 f: 17 q: 1
-f: 18 q: 41
-f: 19 q: 86
-f: 20 q: 70
+f: 18 q: 42
+f: 19 q: 84
+f: 20 q: 71
 f: 21 q: 8
 g = 9
 size: 9
@@ -20750,8 +20750,8 @@ f: 14 q: 1
 f: 16 q: 4
 f: 17 q: 1
 f: 18 q: 43
-f: 19 q: 119
-f: 20 q: 99
+f: 19 q: 118
+f: 20 q: 100
 f: 21 q: 44
 f: 22 q: 4
 g = 10
@@ -20761,8 +20761,8 @@ f: 14 q: 1
 f: 16 q: 3
 f: 17 q: 4
 f: 18 q: 33
-f: 19 q: 76
-f: 20 q: 304
+f: 19 q: 77
+f: 20 q: 303
 f: 21 q: 116
 f: 22 q: 87
 f: 23 q: 8
@@ -20771,11 +20771,11 @@ size: 9
 f: 12 q: 1
 f: 16 q: 1
 f: 17 q: 4
-f: 18 q: 26
-f: 19 q: 57
-f: 20 q: 296
-f: 21 q: 171
-f: 22 q: 200
+f: 18 q: 25
+f: 19 q: 58
+f: 20 q: 295
+f: 21 q: 170
+f: 22 q: 202
 f: 23 q: 24
 g = 12
 size: 10
@@ -20784,26 +20784,26 @@ f: 17 q: 3
 f: 18 q: 12
 f: 19 q: 22
 f: 20 q: 215
-f: 21 q: 124
-f: 22 q: 665
-f: 23 q: 85
-f: 24 q: 71
+f: 21 q: 121
+f: 22 q: 668
+f: 23 q: 84
+f: 24 q: 72
 f: 25 q: 1
 g = 13
 size: 9
 f: 18 q: 1
 f: 19 q: 5
 f: 20 q: 40
-f: 21 q: 58
+f: 21 q: 59
 f: 22 q: 287
 f: 23 q: 132
-f: 24 q: 144
-f: 25 q: 8
+f: 24 q: 142
+f: 25 q: 9
 f: 26 q: 1
  ____________________________________
 |   total numero of call step() = 3364   |
  ____________________________________
-Actual search time: 0.09s [t=2.26s]
+Actual search time: 0.19s [t=3.11s]
 unstack d a (1)
 put-down d (1)
 unstack f e (1)
@@ -20831,10 +20831,10 @@ Evaluated until last jump: 4040 state(s).
 Generated until last jump: 9179 state(s).
 Search space hash size: 4040
 Search space hash bucket count: 6151
-Search time: 2.26s
-Total time: 2.26s
-Peak memory: 68632 KB
-VmRSS memory: 13432 KB
-VmHWM memory: 47880 KB
+Search time: 3.11s
+Total time: 3.11s
+Peak memory: 52200 KB
+VmRSS memory: 15576 KB
+VmHWM memory: 39580 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
