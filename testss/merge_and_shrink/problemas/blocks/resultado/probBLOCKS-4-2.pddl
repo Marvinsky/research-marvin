@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = ss(merge_and_shrink())
-argv[4] = XDG_VTNR=4
-argv[5] = XDG_SESSION_ID=c4
+argv[4] = XDG_VTNR=2
+argv[5] = XDG_SESSION_ID=c2
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -22,14 +22,14 @@ registered: ss
  ______________________________
 registered: merge_and_shrink
 parser is not dry_run
-g object = 0xa280888
+g object = 0xa379fc8
 ScalarEvaluator vector pointer []
-ScalarEvaluator vector pointer after add g = [0xa280888]
-ScalarEvaluator vector pointer after add eval = [0xa280888, 0xa281578]
+ScalarEvaluator vector pointer after add g = [0xa379fc8]
+ScalarEvaluator vector pointer after add eval = [0xa379fc8, 0xa37c3f0]
 subevaluators_.size:2
-new vector of ScalarEvaluator created = [0xa280df0, 0xa281578]
-OpenList vector of state_var_t objects = 0xa2815e8
-engine = 0xa280c18
+new vector of ScalarEvaluator created = [0xa37be10, 0xa37c3f0]
+OpenList vector of state_var_t objects = 0xa37b2e8
+engine = 0xa37b370
  ___________________________________
 |         calling initialize        |
  ___________________________________
@@ -50,13 +50,34 @@ f_evaluator populated
 conditional_effects_present = 0
 Conditional effects present = 0
 starting timings 
-initial state = 0xa2780c8
-node_counter = 700427
-node_gen_and_exp_cost = 1,4277e-06
+initial state = 0xa3730c8
+node_counter = 766235
+node_gen_and_exp_cost = 1,30508e-06
 active heuristics size : 1
 # heristics = 1
-dead_end = 1
-Initial state is a dead end.
+dead_end = 0
+heuristics[0]->get_heuristic() = -2
+max_h = 0
+is not dead end
+	Maxing_h[0]:0
+	Maxing_h[1]:1650551918
+f_evaluator = 1650551918
+lastjumpt_f_value = -1
+f in report_f_value = 1650551918
+generated states = 0
+evaluated states = 1
+expanded states = 0
+reopened states = 0
+f: 1650551918 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
+last_jump:1650551918,F_bound_to_print:0
+gen_to_exp_ratio: -nan
+F_bound:,1650551918,Peak memory=,30,2461
+				h = -2
+				best_h = -1
+				new best_h = -2
+Best heuristic value: -2 [g=0, 1 evaluated, 0 expanded, t=1s]
+heuristics[0]->get_value() = 1650551918
+node.get_state_buffer() = 
 starting timing individual heuristics.
 SAMPLING_PHASE = 0
 Current_RIDA_Phase = 0
@@ -175,36 +196,36 @@ Next variable: #2
 Abstraction (6/9 vars): computing distances using unit-cost algorithm
 Atomic abstraction #2: distances already known
 Abstraction (6/9 vars): 1000 states, ???/7800 arcs, 82076 bytes
-Abstraction (6/9 vars): init h=6, max f=19, max g=12, max h=11 [t=1s]
+Abstraction (6/9 vars): init h=6, max f=20, max g=12, max h=11 [t=1s]
 Atomic abstraction #2: 2 states, ???/21 arcs, 808 bytes
 Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Abstraction (6/9 vars): normalizing with label reduction
 Label reduction: 6 pruned vars, 32 labels, 15 reduced labels
 Abstraction (6/9 vars): 1000 states, ???/7800 arcs, 89308 bytes
-Abstraction (6/9 vars): init h=6, max f=19, max g=12, max h=11 [t=1,01s]
+Abstraction (6/9 vars): init h=6, max f=20, max g=12, max h=11 [t=1s]
 Atomic abstraction #2: normalizing without label reduction
 Atomic abstraction #2: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1,01s]
+Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Merging abstraction (6/9 vars) and atomic abstraction #2
 Abstraction (7/9 vars): 2000 states, ???/13800 arcs, 133068 bytes
-Abstraction (7/9 vars): distances not computed [t=1,01s]
+Abstraction (7/9 vars): distances not computed [t=1s]
 Next variable: #1
 Abstraction (7/9 vars): computing distances using unit-cost algorithm
 Atomic abstraction #1: distances already known
 Abstraction (7/9 vars): 2000 states, ???/13800 arcs, 149068 bytes
-Abstraction (7/9 vars): init h=6, max f=21, max g=12, max h=13 [t=1,01s]
+Abstraction (7/9 vars): init h=6, max f=23, max g=12, max h=13 [t=1s]
 Atomic abstraction #1: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1,01s]
+Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Abstraction (7/9 vars): normalizing with label reduction
 Label reduction: 7 pruned vars, 32 labels, 11 reduced labels
 Abstraction (7/9 vars): 2000 states, ???/13800 arcs, 165644 bytes
-Abstraction (7/9 vars): init h=6, max f=21, max g=12, max h=13 [t=1,01s]
+Abstraction (7/9 vars): init h=6, max f=23, max g=12, max h=13 [t=1s]
 Atomic abstraction #1: normalizing without label reduction
 Atomic abstraction #1: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1,01s]
+Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Merging abstraction (7/9 vars) and atomic abstraction #1
 Abstraction (8/9 vars): 4000 states, ???/22400 arcs, 223852 bytes
-Abstraction (8/9 vars): distances not computed [t=1,01s]
+Abstraction (8/9 vars): distances not computed [t=1s]
 Next variable: #0
 Abstraction (8/9 vars): computing distances using unit-cost algorithm
 Abstraction (8/9 vars): unreachable: 1016 states, irrelevant: 0 states
@@ -214,13 +235,13 @@ Abstraction (8/9 vars): applying abstraction to lookup table
 Abstraction (8/9 vars): size after shrink 2984, target 4000
 Atomic abstraction #0: distances already known
 Abstraction (8/9 vars): 2984 states, ???/18576 arcs, 246732 bytes
-Abstraction (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=1,01s]
+Abstraction (8/9 vars): init h=6, max f=23, max g=13, max h=13 [t=1s]
 Atomic abstraction #0: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1,01s]
+Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1s]
 Abstraction (8/9 vars): normalizing with label reduction
 Label reduction: 8 pruned vars, 32 labels, 9 reduced labels
 Abstraction (8/9 vars): 2984 states, ???/18576 arcs, 247756 bytes
-Abstraction (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=1,01s]
+Abstraction (8/9 vars): init h=6, max f=23, max g=13, max h=13 [t=1,01s]
 Atomic abstraction #0: normalizing without label reduction
 Atomic abstraction #0: 5 states, ???/8 arcs, 708 bytes
 Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1,01s]
@@ -239,16 +260,16 @@ Abstraction (9/9 vars): applying abstraction to lookup table
 Abstraction (9/9 vars): size after shrink 125, target 125
 Abstraction (9/9 vars): distances already known
 Abstraction (9/9 vars): 125 states, ???/272 arcs, 99444 bytes
-Abstraction (9/9 vars): init h=6, max f=18, max g=6, max h=12 [t=1,02s]
+Abstraction (9/9 vars): init h=6, max f=20, max g=8, max h=12 [t=1,02s]
 Done initializing merge-and-shrink heuristic [0,02s]
 initial h value: 6
 Estimated peak memory for abstraction: 486348 bytes
 heur_name = No Name
-h[,0,] is:,heur is not named,measured time cost: 7,51238e-07,h:6
+h[,0,] is:,heur is not named,measured time cost: 6,89733e-07,h:6
 memory before deleting databases: 
-VmRSS memory: 16988 KB
+VmRSS memory: 17052 KB
 memory after deleting all databases: 
-VmRSS memory: 16988 KB
+VmRSS memory: 17052 KB
 Remaining heuristics:
 remaining initial heur heur is not named
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
@@ -259,10 +280,10 @@ Implementar SS Heuristic.
 fileName size () = 1
 fileName size () = 19
 fileName size () = 2
-Path in the ss = probBLOCKS-4-0.pddl
+Path in the ss = probBLOCKS-4-2.pddl
 the directory was not created.
-rutaR = /home/marvin/marvin/test/merge_and_shrink/krereport/blocks/probBLOCKS-4-0.pddl
-titulo = /home/marvin/marvin/test/merge_and_shrink/problemas/blocks/resultado/probBLOCKS-4-0.pddl
+rutaR = /home/marvin/marvin/test/merge_and_shrink/krereport/blocks/probBLOCKS-4-2.pddl
+titulo = /home/marvin/marvin/test/merge_and_shrink/problemas/blocks/resultado/probBLOCKS-4-2.pddl
 totalniveles texto =  totalniveles:
 value total niveles = 1
 f = f
@@ -299,35 +320,24 @@ Duplicate node h = 7 g = 1 f = 8
 Update w from 1 to 2
 remove the old node. 
  a < prob add new child with w = 2
-Childs:  h = 7 g = 1 f = 8
-	Child Pruned  h = 7 g = 1 f = 8
-		
-		 level: 1 (to confirm).
-		h = 5, g = 1, f = 6
-		h = 7, g = 1, f = 8
-Node is in the queue and should not be added.
-		
-Duplicate node h = 7 g = 1 f = 8
-Update w from 2 to 3
- a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 5 g = 1 f = 6
 g : 1
-Childs:  h = 4 g = 2 f = 6
-	Child Pruned  h = 4 g = 2 f = 6
-		
-		 level: 2 (to confirm).
-		h = 7, g = 1, f = 8
-		
-	New node h = 4 g = 2 f = 6
 Childs:  h = 6 g = 2 f = 8
 	Child Pruned  h = 6 g = 2 f = 8
 		
 		 level: 2 (to confirm).
 		h = 7, g = 1, f = 8
-		h = 4, g = 2, f = 6
 		
 	New node h = 6 g = 2 f = 8
+Childs:  h = 4 g = 2 f = 6
+	Child Pruned  h = 4 g = 2 f = 6
+		
+		 level: 2 (to confirm).
+		h = 7, g = 1, f = 8
+		h = 6, g = 2, f = 8
+		
+	New node h = 4 g = 2 f = 6
 Childs:  h = 6 g = 2 f = 8
 	Child Pruned  h = 6 g = 2 f = 8
 		
@@ -362,41 +372,28 @@ Childs:  h = 8 g = 2 f = 10
 Node is in the queue and should not be added.
 		
 Duplicate node h = 8 g = 2 f = 10
-Update w from 3 to 6
+Update w from 2 to 4
  a >= prob do not add the new element.
-Childs:  h = 6 g = 2 f = 8
-	Child Pruned  h = 6 g = 2 f = 8
-		
-		 level: 2 (to confirm).
-		h = 4, g = 2, f = 6
-		h = 6, g = 2, f = 8
-Node is in the queue and should not be added.
-		h = 8, g = 2, f = 10
-		
-Duplicate node h = 6 g = 2 f = 8
-Update w from 2 to 5
-remove the old node. 
- a < prob add new child with w = 5
 ******************************************
 Raiz:  h = 4 g = 2 f = 6
 g : 2
-Childs:  h = 3 g = 3 f = 6
-	Child Pruned  h = 3 g = 3 f = 6
-		
-		 level: 3 (to confirm).
-		h = 6, g = 2, f = 8
-		h = 8, g = 2, f = 10
-		
-	New node h = 3 g = 3 f = 6
 Childs:  h = 5 g = 3 f = 8
 	Child Pruned  h = 5 g = 3 f = 8
 		
 		 level: 3 (to confirm).
 		h = 6, g = 2, f = 8
 		h = 8, g = 2, f = 10
-		h = 3, g = 3, f = 6
 		
 	New node h = 5 g = 3 f = 8
+Childs:  h = 3 g = 3 f = 6
+	Child Pruned  h = 3 g = 3 f = 6
+		
+		 level: 3 (to confirm).
+		h = 6, g = 2, f = 8
+		h = 8, g = 2, f = 10
+		h = 5, g = 3, f = 8
+		
+	New node h = 3 g = 3 f = 6
 ******************************************
 Raiz:  h = 6 g = 2 f = 8
 g : 2
@@ -409,19 +406,33 @@ Childs:  h = 7 g = 3 f = 10
 		h = 5, g = 3, f = 8
 		
 	New node h = 7 g = 3 f = 10
-Childs:  h = 5 g = 3 f = 8
-	Child Pruned  h = 5 g = 3 f = 8
+Childs:  h = 7 g = 3 f = 10
+	Child Pruned  h = 7 g = 3 f = 10
 		
 		 level: 3 (to confirm).
 		h = 8, g = 2, f = 10
 		h = 3, g = 3, f = 6
 		h = 5, g = 3, f = 8
-Node is in the queue and should not be added.
 		h = 7, g = 3, f = 10
+Node is in the queue and should not be added.
 		
-Duplicate node h = 5 g = 3 f = 8
-Update w from 1 to 6
+Duplicate node h = 7 g = 3 f = 10
+Update w from 2 to 4
  a >= prob do not add the new element.
+Childs:  h = 7 g = 3 f = 10
+	Child Pruned  h = 7 g = 3 f = 10
+		
+		 level: 3 (to confirm).
+		h = 8, g = 2, f = 10
+		h = 3, g = 3, f = 6
+		h = 5, g = 3, f = 8
+		h = 7, g = 3, f = 10
+Node is in the queue and should not be added.
+		
+Duplicate node h = 7 g = 3 f = 10
+Update w from 4 to 6
+remove the old node. 
+ a < prob add new child with w = 6
 ******************************************
 Raiz:  h = 8 g = 2 f = 10
 g : 2
@@ -434,31 +445,9 @@ Childs:  h = 9 g = 3 f = 12
 		h = 7, g = 3, f = 10
 		
 	New node h = 9 g = 3 f = 12
-Childs:  h = 9 g = 3 f = 12
-	Child Pruned  h = 9 g = 3 f = 12
-		
-		 level: 3 (to confirm).
-		h = 3, g = 3, f = 6
-		h = 5, g = 3, f = 8
-		h = 7, g = 3, f = 10
-		h = 9, g = 3, f = 12
-Node is in the queue and should not be added.
-		
-Duplicate node h = 9 g = 3 f = 12
-Update w from 6 to 12
- a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 3 g = 3 f = 6
 g : 3
-Childs:  h = 2 g = 4 f = 6
-	Child Pruned  h = 2 g = 4 f = 6
-		
-		 level: 4 (to confirm).
-		h = 5, g = 3, f = 8
-		h = 7, g = 3, f = 10
-		h = 9, g = 3, f = 12
-		
-	New node h = 2 g = 4 f = 6
 Childs:  h = 4 g = 4 f = 8
 	Child Pruned  h = 4 g = 4 f = 8
 		
@@ -466,9 +455,18 @@ Childs:  h = 4 g = 4 f = 8
 		h = 5, g = 3, f = 8
 		h = 7, g = 3, f = 10
 		h = 9, g = 3, f = 12
-		h = 2, g = 4, f = 6
 		
 	New node h = 4 g = 4 f = 8
+Childs:  h = 2 g = 4 f = 6
+	Child Pruned  h = 2 g = 4 f = 6
+		
+		 level: 4 (to confirm).
+		h = 5, g = 3, f = 8
+		h = 7, g = 3, f = 10
+		h = 9, g = 3, f = 12
+		h = 4, g = 4, f = 8
+		
+	New node h = 2 g = 4 f = 6
 ******************************************
 Raiz:  h = 5 g = 3 f = 8
 g : 3
@@ -494,7 +492,7 @@ Childs:  h = 6 g = 4 f = 10
 Node is in the queue and should not be added.
 		
 Duplicate node h = 6 g = 4 f = 10
-Update w from 6 to 12
+Update w from 1 to 2
  a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 7 g = 3 f = 10
@@ -521,9 +519,22 @@ Childs:  h = 8 g = 4 f = 12
 Node is in the queue and should not be added.
 		
 Duplicate node h = 8 g = 4 f = 12
-Update w from 5 to 10
-remove the old node. 
- a < prob add new child with w = 10
+Update w from 6 to 12
+ a >= prob do not add the new element.
+Childs:  h = 8 g = 4 f = 12
+	Child Pruned  h = 8 g = 4 f = 12
+		
+		 level: 4 (to confirm).
+		h = 9, g = 3, f = 12
+		h = 2, g = 4, f = 6
+		h = 4, g = 4, f = 8
+		h = 6, g = 4, f = 10
+		h = 8, g = 4, f = 12
+Node is in the queue and should not be added.
+		
+Duplicate node h = 8 g = 4 f = 12
+Update w from 12 to 18
+ a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 9 g = 3 f = 12
 g : 3
@@ -537,20 +548,6 @@ Childs:  h = 10 g = 4 f = 14
 		h = 8, g = 4, f = 12
 		
 	New node h = 10 g = 4 f = 14
-Childs:  h = 8 g = 4 f = 12
-	Child Pruned  h = 8 g = 4 f = 12
-		
-		 level: 4 (to confirm).
-		h = 2, g = 4, f = 6
-		h = 4, g = 4, f = 8
-		h = 6, g = 4, f = 10
-		h = 8, g = 4, f = 12
-Node is in the queue and should not be added.
-		h = 10, g = 4, f = 14
-		
-Duplicate node h = 8 g = 4 f = 12
-Update w from 10 to 22
- a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 2 g = 4 f = 6
 g : 4
@@ -567,6 +564,16 @@ Childs:  h = 1 g = 5 f = 6
 ******************************************
 Raiz:  h = 4 g = 4 f = 8
 g : 4
+Childs:  h = 5 g = 5 f = 10
+	Child Pruned  h = 5 g = 5 f = 10
+		
+		 level: 5 (to confirm).
+		h = 6, g = 4, f = 10
+		h = 8, g = 4, f = 12
+		h = 10, g = 4, f = 14
+		h = 1, g = 5, f = 6
+		
+	New node h = 5 g = 5 f = 10
 ******************************************
 Raiz:  h = 6 g = 4 f = 10
 g : 4
@@ -577,6 +584,7 @@ Childs:  h = 7 g = 5 f = 12
 		h = 8, g = 4, f = 12
 		h = 10, g = 4, f = 14
 		h = 1, g = 5, f = 6
+		h = 5, g = 5, f = 10
 		
 	New node h = 7 g = 5 f = 12
 ******************************************
@@ -588,6 +596,7 @@ Childs:  h = 9 g = 5 f = 14
 		 level: 5 (to confirm).
 		h = 10, g = 4, f = 14
 		h = 1, g = 5, f = 6
+		h = 5, g = 5, f = 10
 		h = 7, g = 5, f = 12
 		
 	New node h = 9 g = 5 f = 14
@@ -599,6 +608,7 @@ Childs:  h = 11 g = 5 f = 16
 		
 		 level: 5 (to confirm).
 		h = 1, g = 5, f = 6
+		h = 5, g = 5, f = 10
 		h = 7, g = 5, f = 12
 		h = 9, g = 5, f = 14
 		
@@ -610,11 +620,39 @@ Childs:  h = 0 g = 6 f = 6
 	Child Pruned  h = 0 g = 6 f = 6
 		
 		 level: 6 (to confirm).
+		h = 5, g = 5, f = 10
 		h = 7, g = 5, f = 12
 		h = 9, g = 5, f = 14
 		h = 11, g = 5, f = 16
 		
 	New node h = 0 g = 6 f = 6
+******************************************
+Raiz:  h = 5 g = 5 f = 10
+g : 5
+Childs:  h = 6 g = 6 f = 12
+	Child Pruned  h = 6 g = 6 f = 12
+		
+		 level: 6 (to confirm).
+		h = 7, g = 5, f = 12
+		h = 9, g = 5, f = 14
+		h = 11, g = 5, f = 16
+		h = 0, g = 6, f = 6
+		
+	New node h = 6 g = 6 f = 12
+Childs:  h = 6 g = 6 f = 12
+	Child Pruned  h = 6 g = 6 f = 12
+		
+		 level: 6 (to confirm).
+		h = 7, g = 5, f = 12
+		h = 9, g = 5, f = 14
+		h = 11, g = 5, f = 16
+		h = 0, g = 6, f = 6
+		h = 6, g = 6, f = 12
+Node is in the queue and should not be added.
+		
+Duplicate node h = 6 g = 6 f = 12
+Update w from 1 to 2
+ a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 7 g = 5 f = 12
 g : 5
@@ -625,8 +663,23 @@ Childs:  h = 8 g = 6 f = 14
 		h = 9, g = 5, f = 14
 		h = 11, g = 5, f = 16
 		h = 0, g = 6, f = 6
+		h = 6, g = 6, f = 12
 		
 	New node h = 8 g = 6 f = 14
+Childs:  h = 8 g = 6 f = 14
+	Child Pruned  h = 8 g = 6 f = 14
+		
+		 level: 6 (to confirm).
+		h = 9, g = 5, f = 14
+		h = 11, g = 5, f = 16
+		h = 0, g = 6, f = 6
+		h = 6, g = 6, f = 12
+		h = 8, g = 6, f = 14
+Node is in the queue and should not be added.
+		
+Duplicate node h = 8 g = 6 f = 14
+Update w from 2 to 4
+ a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 9 g = 5 f = 14
 g : 5
@@ -636,9 +689,25 @@ Childs:  h = 10 g = 6 f = 16
 		 level: 6 (to confirm).
 		h = 11, g = 5, f = 16
 		h = 0, g = 6, f = 6
+		h = 6, g = 6, f = 12
 		h = 8, g = 6, f = 14
 		
 	New node h = 10 g = 6 f = 16
+Childs:  h = 10 g = 6 f = 16
+	Child Pruned  h = 10 g = 6 f = 16
+		
+		 level: 6 (to confirm).
+		h = 11, g = 5, f = 16
+		h = 0, g = 6, f = 6
+		h = 6, g = 6, f = 12
+		h = 8, g = 6, f = 14
+		h = 10, g = 6, f = 16
+Node is in the queue and should not be added.
+		
+Duplicate node h = 10 g = 6 f = 16
+Update w from 18 to 36
+remove the old node. 
+ a < prob add new child with w = 36
 ******************************************
 Raiz:  h = 11 g = 5 f = 16
 g : 5
@@ -647,6 +716,7 @@ Childs:  h = 12 g = 6 f = 18
 		
 		 level: 6 (to confirm).
 		h = 0, g = 6, f = 6
+		h = 6, g = 6, f = 12
 		h = 8, g = 6, f = 14
 		h = 10, g = 6, f = 16
 		
@@ -655,39 +725,113 @@ Childs:  h = 12 g = 6 f = 18
 Raiz:  h = 0 g = 6 f = 6
 g : 6
 ******************************************
+Raiz:  h = 6 g = 6 f = 12
+g : 6
+Childs:  h = 7 g = 7 f = 14
+	Child Pruned  h = 7 g = 7 f = 14
+		
+		 level: 7 (to confirm).
+		h = 8, g = 6, f = 14
+		h = 10, g = 6, f = 16
+		h = 12, g = 6, f = 18
+		
+	New node h = 7 g = 7 f = 14
+******************************************
 Raiz:  h = 8 g = 6 f = 14
 g : 6
+Childs:  h = 9 g = 7 f = 16
+	Child Pruned  h = 9 g = 7 f = 16
+		
+		 level: 7 (to confirm).
+		h = 10, g = 6, f = 16
+		h = 12, g = 6, f = 18
+		h = 7, g = 7, f = 14
+		
+	New node h = 9 g = 7 f = 16
 ******************************************
 Raiz:  h = 10 g = 6 f = 16
 g : 6
+Childs:  h = 11 g = 7 f = 18
+	Child Pruned  h = 11 g = 7 f = 18
+		
+		 level: 7 (to confirm).
+		h = 12, g = 6, f = 18
+		h = 7, g = 7, f = 14
+		h = 9, g = 7, f = 16
+		
+	New node h = 11 g = 7 f = 18
 ******************************************
 Raiz:  h = 12 g = 6 f = 18
 g : 6
+******************************************
+Raiz:  h = 7 g = 7 f = 14
+g : 7
+Childs:  h = 8 g = 8 f = 16
+	Child Pruned  h = 8 g = 8 f = 16
+		
+		 level: 8 (to confirm).
+		h = 9, g = 7, f = 16
+		h = 11, g = 7, f = 18
+		
+	New node h = 8 g = 8 f = 16
+******************************************
+Raiz:  h = 9 g = 7 f = 16
+g : 7
+Childs:  h = 10 g = 8 f = 18
+	Child Pruned  h = 10 g = 8 f = 18
+		
+		 level: 8 (to confirm).
+		h = 11, g = 7, f = 18
+		h = 8, g = 8, f = 16
+		
+	New node h = 10 g = 8 f = 18
+******************************************
+Raiz:  h = 11 g = 7 f = 18
+g : 7
+Childs:  h = 12 g = 8 f = 20
+	Child Pruned  h = 12 g = 8 f = 20
+		
+		 level: 8 (to confirm).
+		h = 8, g = 8, f = 16
+		h = 10, g = 8, f = 18
+		
+	New node h = 12 g = 8 f = 20
+******************************************
+Raiz:  h = 8 g = 8 f = 16
+g : 8
+******************************************
+Raiz:  h = 10 g = 8 f = 18
+g : 8
+******************************************
+Raiz:  h = 12 g = 8 f = 20
+g : 8
 v_f_value.size() = 0
 ****************************************************************
 S map.
-S.size() = 23
-sumMap = 183
-total levels = 8
+S.size() = 31
+sumMap = 206
+total levels = 10
 sum: 1
 sum: 2
-sum: 6
-sum: 18
-sum: 42
-sum: 90
-sum: 137
-The f-Distribution for max_g of this iteration 7
+sum: 5
+sum: 12
+sum: 24
+sum: 50
+sum: 76
+sum: 124
+sum: 166
+The f-Distribution for max_g of this iteration 9
 
 ****************************************************************
-counter in te while k = 23
-Number of expanded nodes with threshold 12 = 183
+counter in te while k = 31
+Number of expanded nodes with threshold 12 = 206
 the directory was not created
 -----------------Print the f-Distribution of each level-----------------
 g: 0
 f: 6 q: 1
 g: 1
 f: 6 q: 1
-f: 8 q: 3
+f: 8 q: 2
 g: 2
 f: 6 q: 1
 f: 8 q: 2
@@ -702,22 +846,30 @@ f: 6 q: 1
 g: 6
 f: 6 q: 1
 g: 7
+g: 8
+f: 16 q: 1
+g: 9
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
 Actual search time: 0s [t=1,11s]
+Initial state h value: -2.
 Expanded 0 state(s).
 Reopened 0 state(s).
 Evaluated 1 state(s).
 Evaluations: 1
 Generated 0 state(s).
-Dead ends: 1 state(s).
-Search space hash size: 33
+Dead ends: 0 state(s).
+Expanded until last jump: 0 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 1 state(s).
+Generated until last jump: 0 state(s).
+Search space hash size: 42
 Search space hash bucket count: 193
 Search time: 1,11s
 Total time: 1,11s
-Peak memory: 30968 KB
-VmRSS memory: 2288 KB
-VmHWM memory: 17800 KB
+Peak memory: 30972 KB
+VmRSS memory: 2236 KB
+VmHWM memory: 17820 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
