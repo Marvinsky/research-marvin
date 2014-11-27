@@ -187,9 +187,12 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 				//outputFile<<"total nodes = "<<sumq<<"\n";
 				//outputFile<<"nodes with f less than or equal to"<<threshold<<" = "<<sumR<<"\n";
 
-
-                         
-                                double percentage = (double)sumR/(double)sumq;
+                                double percentage = 0;
+                                if (sumq > 0) {
+                                   percentage = (double)sumR/(double)sumq;
+                                } else {
+                                   percentage = 0;
+                                }
                                 cout<<"percentage = "<<percentage<<endl;       
 				//outputFile<<"percentage = "<<percentage<<"\n";
 				//cout<<"percentage = "<<percentage<<" ";
@@ -287,7 +290,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 		string output5;
                 output5 = "fdist/"+output5;
                 output5 =  pasta+"/"+output5;
-		output5 = "testss/"+heuristic+"/reportdfs/"+output5;
+		output5 = "testdfs/"+heuristic+"/reportdfs/"+output5;
 		output5 = "marvin/" + output5;
 		output5 = "marvin/" + output5;
 		output5 = "/home/" + output5;	
