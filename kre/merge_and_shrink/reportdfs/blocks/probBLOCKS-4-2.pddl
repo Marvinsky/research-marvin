@@ -2,4 +2,4 @@
 
 	d		#nodes		pred
 
-	6		7		1
+	6		7		2

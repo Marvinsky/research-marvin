@@ -5,39 +5,42 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = dfs(merge_and_shrink())
-argv[4] = XDG_VTNR=4
-argv[5] = XDG_SESSION_ID=c4
+argv[4] = XDG_VTNR=5
+argv[5] = XDG_SESSION_ID=c5
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
 registered: dfs
  ______________________________
-|  parse_ss - ss_search.cc     |
+|  parse_ss - dfs_search.cc     |
  ______________________________
 registered: merge_and_shrink
 OptionParser::parse_cmd_line
 registered: dfs
  ______________________________
-|  parse_ss - ss_search.cc     |
+|  parse_ss - dfs_search.cc     |
  ______________________________
 registered: merge_and_shrink
 parser is not dry_run
-g object = 0x85b88b8
+g object = 0x997e590
 ScalarEvaluator vector pointer []
-ScalarEvaluator vector pointer after add g = [0x85b88b8]
-ScalarEvaluator vector pointer after add eval = [0x85b88b8, 0x85b95a8]
+ScalarEvaluator vector pointer after add g = [0x997e590]
+ScalarEvaluator vector pointer after add eval = [0x997e590, 0x997f280]
 subevaluators_.size:2
-new vector of ScalarEvaluator created = [0x85b8e20, 0x85b95a8]
-OpenList vector of state_var_t objects = 0x85b9618
-engine = 0x85b8c48
+new vector of ScalarEvaluator created = [0x997eaf8, 0x997f280]
+OpenList vector of state_var_t objects = 0x997f2f0
+engine = 0x997e920
  ___________________________________
 |         calling initialize        |
  ___________________________________
  __________________________________________
-|  initialize() - ss_search.cc             |
+|  initialize() - dfs_search.cc             |
  __________________________________________
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
 first_sample set to true
+do_pathmax 0
+use_multi_path_dependence = 0
+mark_children_as_finished = 0
 something here
 argc_copy = 0
 Initial state:
@@ -50,9 +53,9 @@ f_evaluator populated
 conditional_effects_present = 0
 Conditional effects present = 0
 starting timings 
-initial state = 0x85b00f8
-node_counter = 391246
-node_gen_and_exp_cost = 2,55594e-06
+initial state = 0x9975dd0
+node_counter = 327975
+node_gen_and_exp_cost = 3,04901e-06
 active heuristics size : 1
 # heristics = 1
 dead_end = 1
@@ -164,20 +167,20 @@ Atomic abstraction #3: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Abstraction (5/9 vars): normalizing with label reduction
 Label reduction: 5 pruned vars, 32 labels, 21 reduced labels
 Abstraction (5/9 vars): 500 states, ???/4350 arcs, 50356 bytes
-Abstraction (5/9 vars): init h=6, max f=17, max g=12, max h=9 [t=1,01s]
+Abstraction (5/9 vars): init h=6, max f=17, max g=12, max h=9 [t=1s]
 Atomic abstraction #3: normalizing without label reduction
 Atomic abstraction #3: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #3: init h=0, max f=1, max g=1, max h=0 [t=1,01s]
+Atomic abstraction #3: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Merging abstraction (5/9 vars) and atomic abstraction #3
 Abstraction (6/9 vars): 1000 states, ???/7800 arcs, 74076 bytes
-Abstraction (6/9 vars): distances not computed [t=1,01s]
+Abstraction (6/9 vars): distances not computed [t=1s]
 Next variable: #2
 Abstraction (6/9 vars): computing distances using unit-cost algorithm
 Atomic abstraction #2: distances already known
 Abstraction (6/9 vars): 1000 states, ???/7800 arcs, 82076 bytes
-Abstraction (6/9 vars): init h=6, max f=19, max g=12, max h=11 [t=1,01s]
+Abstraction (6/9 vars): init h=6, max f=19, max g=12, max h=11 [t=1s]
 Atomic abstraction #2: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1,01s]
+Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Abstraction (6/9 vars): normalizing with label reduction
 Label reduction: 6 pruned vars, 32 labels, 15 reduced labels
 Abstraction (6/9 vars): 1000 states, ???/7800 arcs, 89308 bytes
@@ -244,11 +247,11 @@ Done initializing merge-and-shrink heuristic [0,04s]
 initial h value: 6
 Estimated peak memory for abstraction: 486348 bytes
 heur_name = No Name
-h[,0,] is:,heur is not named,measured time cost: 1,68901e-06,h:6
+h[,0,] is:,heur is not named,measured time cost: 1,94062e-06,h:6
 memory before deleting databases: 
-VmRSS memory: 9808 KB
+VmRSS memory: 9864 KB
 memory after deleting all databases: 
-VmRSS memory: 9808 KB
+VmRSS memory: 9864 KB
 Remaining heuristics:
 remaining initial heur heur is not named
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
@@ -256,549 +259,6100 @@ Implementar SS Heuristic.
  ____________________________
 |       step process         |
  ____________________________
+**********************************************************************
+		 h = 6, g = 0, f = 6
+**********************************************************************
 Raiz h = 6, g = 0, f = 6
-search_timer() = 1,11
+parent_op->get_cost() = 1
 	Nodes generated:  h = 7, g = 1, f = 8
-	Nodes generated:  h = 7, g = 1, f = 8
+
+		Child added :  h = 7, g = 1, f = 8
+
+parent_op->get_cost() = 1
 	Nodes generated:  h = 5, g = 1, f = 6
-	Nodes generated:  h = 5, g = 1, f = 6
+
+		Child added :  h = 5, g = 1, f = 6
+
+parent_op->get_cost() = 1
 	Nodes generated:  h = 7, g = 1, f = 8
+
+		Child added :  h = 7, g = 1, f = 8
+
+parent_op->get_cost() = 1
 	Nodes generated:  h = 7, g = 1, f = 8
-	Nodes generated:  h = 7, g = 1, f = 8
-	Nodes generated:  h = 7, g = 1, f = 8
-Raiz h = 7, g = 1, f = 8
-search_timer() = 1,11
-	Nodes generated:  h = 8, g = 2, f = 10
-	Nodes generated:  h = 8, g = 2, f = 10
-	Nodes generated:  h = 8, g = 2, f = 10
-	Nodes generated:  h = 8, g = 2, f = 10
-	Nodes generated:  h = 8, g = 2, f = 10
-	Nodes generated:  h = 8, g = 2, f = 10
-Raiz h = 8, g = 2, f = 10
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 3, f = 12
-	Nodes generated:  h = 9, g = 3, f = 12
-	Nodes generated:  h = 7, g = 3, f = 10
-	Nodes generated:  h = 7, g = 3, f = 10
-Raiz h = 7, g = 3, f = 10
-search_timer() = 1,11
-	Nodes generated:  h = 6, g = 4, f = 10
-	Nodes generated:  h = 6, g = 4, f = 10
-	Nodes generated:  h = 8, g = 4, f = 12
-	Nodes generated:  h = 8, g = 4, f = 12
-Raiz h = 8, g = 4, f = 12
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 5, f = 14
-	Nodes generated:  h = 9, g = 5, f = 14
-Raiz h = 9, g = 5, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 10, g = 6, f = 16
-	Nodes generated:  h = 10, g = 6, f = 16
-Raiz h = 10, g = 6, f = 16
-search_timer() = 1,11
-Raiz h = 6, g = 4, f = 10
-search_timer() = 1,11
-	Nodes generated:  h = 5, g = 5, f = 10
-	Nodes generated:  h = 5, g = 5, f = 10
-Raiz h = 5, g = 5, f = 10
-search_timer() = 1,11
-	Nodes generated:  h = 6, g = 6, f = 12
-	Nodes generated:  h = 6, g = 6, f = 12
-	Nodes generated:  h = 4, g = 6, f = 10
-	Nodes generated:  h = 4, g = 6, f = 10
-Raiz h = 4, g = 6, f = 10
-search_timer() = 1,11
-	Nodes generated:  h = 3, g = 7, f = 10
-	Nodes generated:  h = 3, g = 7, f = 10
-Raiz h = 3, g = 7, f = 10
-search_timer() = 1,11
-	Nodes generated:  h = 2, g = 8, f = 10
-	Nodes generated:  h = 2, g = 8, f = 10
-	Nodes generated:  h = 4, g = 8, f = 12
-	Nodes generated:  h = 4, g = 8, f = 12
-Raiz h = 4, g = 8, f = 12
-search_timer() = 1,11
-	Nodes generated:  h = 5, g = 9, f = 14
-	Nodes generated:  h = 5, g = 9, f = 14
-Raiz h = 5, g = 9, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 6, g = 10, f = 16
-	Nodes generated:  h = 6, g = 10, f = 16
-	Nodes generated:  h = 6, g = 10, f = 16
-	Nodes generated:  h = 6, g = 10, f = 16
-Raiz h = 6, g = 10, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 7, g = 11, f = 18
-	Nodes generated:  h = 7, g = 11, f = 18
-Raiz h = 7, g = 11, f = 18
-search_timer() = 1,11
-	Nodes generated:  h = 8, g = 12, f = 20
-	Nodes generated:  h = 8, g = 12, f = 20
-	Nodes generated:  h = 8, g = 12, f = 20
-	Nodes generated:  h = 8, g = 12, f = 20
-Raiz h = 8, g = 12, f = 20
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 13, f = 22
-Raiz h = 8, g = 12, f = 20
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 13, f = 22
-Raiz h = 6, g = 10, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 7, g = 11, f = 18
-	Nodes generated:  h = 7, g = 11, f = 18
-Raiz h = 7, g = 11, f = 18
-search_timer() = 1,11
-	Nodes generated:  h = 8, g = 12, f = 20
-	Nodes generated:  h = 8, g = 12, f = 20
-Raiz h = 8, g = 12, f = 20
-search_timer() = 1,11
-Raiz h = 2, g = 8, f = 10
-search_timer() = 1,11
-	Nodes generated:  h = 1, g = 9, f = 10
-	Nodes generated:  h = 1, g = 9, f = 10
-Raiz h = 1, g = 9, f = 10
-search_timer() = 1,11
-	Nodes generated:  h = 0, g = 10, f = 10
-	Nodes generated:  h = 0, g = 10, f = 10
-Raiz h = 0, g = 10, f = 10
-search_timer() = 1,11
-Raiz h = 6, g = 6, f = 12
-search_timer() = 1,11
-	Nodes generated:  h = 7, g = 7, f = 14
-	Nodes generated:  h = 7, g = 7, f = 14
-Raiz h = 7, g = 7, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 8, g = 8, f = 16
-	Nodes generated:  h = 8, g = 8, f = 16
-Raiz h = 8, g = 8, f = 16
-search_timer() = 1,11
-Raiz h = 9, g = 3, f = 12
-search_timer() = 1,11
-	Nodes generated:  h = 10, g = 4, f = 14
-	Nodes generated:  h = 10, g = 4, f = 14
-	Nodes generated:  h = 10, g = 4, f = 14
-	Nodes generated:  h = 10, g = 4, f = 14
-Raiz h = 10, g = 4, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 11, g = 5, f = 16
-	Nodes generated:  h = 11, g = 5, f = 16
-Raiz h = 11, g = 5, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 12, g = 6, f = 18
-	Nodes generated:  h = 12, g = 6, f = 18
-Raiz h = 12, g = 6, f = 18
-search_timer() = 1,11
-Raiz h = 10, g = 4, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 5, f = 14
-	Nodes generated:  h = 9, g = 5, f = 14
-Raiz h = 9, g = 5, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 10, g = 6, f = 16
-	Nodes generated:  h = 10, g = 6, f = 16
-	Nodes generated:  h = 8, g = 6, f = 14
-	Nodes generated:  h = 8, g = 6, f = 14
-Raiz h = 8, g = 6, f = 14
-search_timer() = 1,11
-Raiz h = 10, g = 6, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 11, g = 7, f = 18
-	Nodes generated:  h = 11, g = 7, f = 18
-Raiz h = 11, g = 7, f = 18
-search_timer() = 1,11
-	Nodes generated:  h = 12, g = 8, f = 20
-	Nodes generated:  h = 12, g = 8, f = 20
-Raiz h = 12, g = 8, f = 20
-search_timer() = 1,11
-Raiz h = 8, g = 2, f = 10
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 3, f = 12
-	Nodes generated:  h = 9, g = 3, f = 12
-	Nodes generated:  h = 9, g = 3, f = 12
-	Nodes generated:  h = 9, g = 3, f = 12
-Raiz h = 9, g = 3, f = 12
-search_timer() = 1,11
-	Nodes generated:  h = 10, g = 4, f = 14
-	Nodes generated:  h = 10, g = 4, f = 14
-	Nodes generated:  h = 10, g = 4, f = 14
-	Nodes generated:  h = 10, g = 4, f = 14
-Raiz h = 10, g = 4, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 11, g = 5, f = 16
-	Nodes generated:  h = 11, g = 5, f = 16
-Raiz h = 11, g = 5, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 12, g = 6, f = 18
-	Nodes generated:  h = 12, g = 6, f = 18
-Raiz h = 12, g = 6, f = 18
-search_timer() = 1,11
-Raiz h = 10, g = 4, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 5, f = 14
-	Nodes generated:  h = 9, g = 5, f = 14
-Raiz h = 9, g = 5, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 10, g = 6, f = 16
-	Nodes generated:  h = 10, g = 6, f = 16
-	Nodes generated:  h = 8, g = 6, f = 14
-	Nodes generated:  h = 8, g = 6, f = 14
-Raiz h = 8, g = 6, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 7, f = 16
-	Nodes generated:  h = 9, g = 7, f = 16
-Raiz h = 9, g = 7, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 10, g = 8, f = 18
-	Nodes generated:  h = 10, g = 8, f = 18
-	Nodes generated:  h = 8, g = 8, f = 16
-	Nodes generated:  h = 8, g = 8, f = 16
-Raiz h = 8, g = 8, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 7, g = 9, f = 16
-	Nodes generated:  h = 7, g = 9, f = 16
-Raiz h = 7, g = 9, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 8, g = 10, f = 18
-	Nodes generated:  h = 8, g = 10, f = 18
-	Nodes generated:  h = 6, g = 10, f = 16
-	Nodes generated:  h = 6, g = 10, f = 16
-Raiz h = 6, g = 10, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 7, g = 11, f = 18
-	Nodes generated:  h = 7, g = 11, f = 18
-Raiz h = 7, g = 11, f = 18
-search_timer() = 1,11
-	Nodes generated:  h = 8, g = 12, f = 20
-	Nodes generated:  h = 8, g = 12, f = 20
-	Nodes generated:  h = 8, g = 12, f = 20
-	Nodes generated:  h = 8, g = 12, f = 20
-Raiz h = 8, g = 12, f = 20
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 13, f = 22
-Raiz h = 8, g = 12, f = 20
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 13, f = 22
-Raiz h = 8, g = 10, f = 18
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 11, f = 20
-	Nodes generated:  h = 9, g = 11, f = 20
-Raiz h = 9, g = 11, f = 20
-search_timer() = 1,11
-	Nodes generated:  h = 10, g = 12, f = 22
-	Nodes generated:  h = 10, g = 12, f = 22
-Raiz h = 10, g = 12, f = 22
-search_timer() = 1,11
-Raiz h = 10, g = 8, f = 18
-search_timer() = 1,11
-	Nodes generated:  h = 11, g = 9, f = 20
-	Nodes generated:  h = 11, g = 9, f = 20
-Raiz h = 11, g = 9, f = 20
-search_timer() = 1,11
-	Nodes generated:  h = 12, g = 10, f = 22
-	Nodes generated:  h = 12, g = 10, f = 22
-Raiz h = 12, g = 10, f = 22
-search_timer() = 1,11
-Raiz h = 10, g = 6, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 11, g = 7, f = 18
-	Nodes generated:  h = 11, g = 7, f = 18
-Raiz h = 11, g = 7, f = 18
-search_timer() = 1,11
-	Nodes generated:  h = 12, g = 8, f = 20
-	Nodes generated:  h = 12, g = 8, f = 20
-Raiz h = 12, g = 8, f = 20
-search_timer() = 1,11
-Raiz h = 9, g = 3, f = 12
-search_timer() = 1,11
-	Nodes generated:  h = 10, g = 4, f = 14
-	Nodes generated:  h = 10, g = 4, f = 14
-	Nodes generated:  h = 10, g = 4, f = 14
-	Nodes generated:  h = 10, g = 4, f = 14
-Raiz h = 10, g = 4, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 11, g = 5, f = 16
-	Nodes generated:  h = 11, g = 5, f = 16
-Raiz h = 11, g = 5, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 12, g = 6, f = 18
-	Nodes generated:  h = 12, g = 6, f = 18
-Raiz h = 12, g = 6, f = 18
-search_timer() = 1,11
-Raiz h = 10, g = 4, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 5, f = 14
-	Nodes generated:  h = 9, g = 5, f = 14
-Raiz h = 9, g = 5, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 10, g = 6, f = 16
-	Nodes generated:  h = 10, g = 6, f = 16
-	Nodes generated:  h = 8, g = 6, f = 14
-	Nodes generated:  h = 8, g = 6, f = 14
-Raiz h = 8, g = 6, f = 14
-search_timer() = 1,11
-Raiz h = 10, g = 6, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 11, g = 7, f = 18
-	Nodes generated:  h = 11, g = 7, f = 18
-Raiz h = 11, g = 7, f = 18
-search_timer() = 1,11
-	Nodes generated:  h = 12, g = 8, f = 20
-	Nodes generated:  h = 12, g = 8, f = 20
-Raiz h = 12, g = 8, f = 20
-search_timer() = 1,11
-Raiz h = 8, g = 2, f = 10
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 3, f = 12
-	Nodes generated:  h = 9, g = 3, f = 12
-	Nodes generated:  h = 9, g = 3, f = 12
-	Nodes generated:  h = 9, g = 3, f = 12
-Raiz h = 9, g = 3, f = 12
-search_timer() = 1,11
-	Nodes generated:  h = 10, g = 4, f = 14
-	Nodes generated:  h = 10, g = 4, f = 14
-	Nodes generated:  h = 10, g = 4, f = 14
-	Nodes generated:  h = 10, g = 4, f = 14
-Raiz h = 10, g = 4, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 11, g = 5, f = 16
-	Nodes generated:  h = 11, g = 5, f = 16
-Raiz h = 11, g = 5, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 12, g = 6, f = 18
-	Nodes generated:  h = 12, g = 6, f = 18
-Raiz h = 12, g = 6, f = 18
-search_timer() = 1,11
-Raiz h = 10, g = 4, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 5, f = 14
-	Nodes generated:  h = 9, g = 5, f = 14
-Raiz h = 9, g = 5, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 10, g = 6, f = 16
-	Nodes generated:  h = 10, g = 6, f = 16
-	Nodes generated:  h = 8, g = 6, f = 14
-	Nodes generated:  h = 8, g = 6, f = 14
-Raiz h = 8, g = 6, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 7, f = 16
-	Nodes generated:  h = 9, g = 7, f = 16
-Raiz h = 9, g = 7, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 10, g = 8, f = 18
-	Nodes generated:  h = 10, g = 8, f = 18
-	Nodes generated:  h = 10, g = 8, f = 18
-	Nodes generated:  h = 10, g = 8, f = 18
-Raiz h = 10, g = 8, f = 18
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 9, f = 18
-	Nodes generated:  h = 9, g = 9, f = 18
-Raiz h = 9, g = 9, f = 18
-search_timer() = 1,11
-	Nodes generated:  h = 10, g = 10, f = 20
-	Nodes generated:  h = 10, g = 10, f = 20
-	Nodes generated:  h = 8, g = 10, f = 18
-	Nodes generated:  h = 8, g = 10, f = 18
-Raiz h = 8, g = 10, f = 18
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 11, f = 20
-	Nodes generated:  h = 9, g = 11, f = 20
-Raiz h = 9, g = 11, f = 20
-search_timer() = 1,11
-	Nodes generated:  h = 10, g = 12, f = 22
-	Nodes generated:  h = 10, g = 12, f = 22
-	Nodes generated:  h = 8, g = 12, f = 20
-	Nodes generated:  h = 8, g = 12, f = 20
-Raiz h = 8, g = 12, f = 20
-search_timer() = 1,11
-	Nodes generated:  h = 7, g = 13, f = 20
-Raiz h = 10, g = 12, f = 22
-search_timer() = 1,11
-	Nodes generated:  h = 11, g = 13, f = 24
-Raiz h = 10, g = 10, f = 20
-search_timer() = 1,11
-	Nodes generated:  h = 11, g = 11, f = 22
-	Nodes generated:  h = 11, g = 11, f = 22
-Raiz h = 11, g = 11, f = 22
-search_timer() = 1,11
-	Nodes generated:  h = 12, g = 12, f = 24
-	Nodes generated:  h = 12, g = 12, f = 24
-Raiz h = 12, g = 12, f = 24
-search_timer() = 1,11
-Raiz h = 10, g = 8, f = 18
-search_timer() = 1,11
-	Nodes generated:  h = 11, g = 9, f = 20
-	Nodes generated:  h = 11, g = 9, f = 20
-Raiz h = 11, g = 9, f = 20
-search_timer() = 1,11
-	Nodes generated:  h = 12, g = 10, f = 22
-	Nodes generated:  h = 12, g = 10, f = 22
-Raiz h = 12, g = 10, f = 22
-search_timer() = 1,11
-Raiz h = 10, g = 6, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 11, g = 7, f = 18
-	Nodes generated:  h = 11, g = 7, f = 18
-Raiz h = 11, g = 7, f = 18
-search_timer() = 1,11
-	Nodes generated:  h = 12, g = 8, f = 20
-	Nodes generated:  h = 12, g = 8, f = 20
-Raiz h = 12, g = 8, f = 20
-search_timer() = 1,11
-Raiz h = 9, g = 3, f = 12
-search_timer() = 1,11
-	Nodes generated:  h = 8, g = 4, f = 12
-	Nodes generated:  h = 8, g = 4, f = 12
-	Nodes generated:  h = 10, g = 4, f = 14
-	Nodes generated:  h = 10, g = 4, f = 14
-Raiz h = 10, g = 4, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 11, g = 5, f = 16
-	Nodes generated:  h = 11, g = 5, f = 16
-Raiz h = 11, g = 5, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 12, g = 6, f = 18
-	Nodes generated:  h = 12, g = 6, f = 18
-Raiz h = 12, g = 6, f = 18
-search_timer() = 1,11
-Raiz h = 8, g = 4, f = 12
-search_timer() = 1,11
-	Nodes generated:  h = 7, g = 5, f = 12
-	Nodes generated:  h = 7, g = 5, f = 12
-Raiz h = 7, g = 5, f = 12
-search_timer() = 1,11
-	Nodes generated:  h = 8, g = 6, f = 14
-	Nodes generated:  h = 8, g = 6, f = 14
-	Nodes generated:  h = 6, g = 6, f = 12
-	Nodes generated:  h = 6, g = 6, f = 12
-Raiz h = 6, g = 6, f = 12
-search_timer() = 1,11
-Raiz h = 8, g = 6, f = 14
-search_timer() = 1,11
-	Nodes generated:  h = 9, g = 7, f = 16
-	Nodes generated:  h = 9, g = 7, f = 16
-Raiz h = 9, g = 7, f = 16
-search_timer() = 1,11
-	Nodes generated:  h = 10, g = 8, f = 18
-	Nodes generated:  h = 10, g = 8, f = 18
-Raiz h = 10, g = 8, f = 18
-search_timer() = 1,11
-Raiz h = 7, g = 1, f = 8
-search_timer() = 1,11
-Raiz h = 5, g = 1, f = 6
-search_timer() = 1,11
-Raiz h = 7, g = 1, f = 8
-search_timer() = 1,11
-P.size() = 107
-		 h = 10, g = 8, f = 18
-		 h = 9, g = 7, f = 16
-		 h = 6, g = 6, f = 12
-		 h = 8, g = 6, f = 14
-		 h = 7, g = 5, f = 12
-		 h = 12, g = 6, f = 18
-		 h = 11, g = 5, f = 16
-		 h = 10, g = 4, f = 14
-		 h = 8, g = 4, f = 12
-		 h = 12, g = 8, f = 20
-		 h = 11, g = 7, f = 18
-		 h = 12, g = 10, f = 22
-		 h = 11, g = 9, f = 20
-		 h = 12, g = 12, f = 24
-		 h = 11, g = 11, f = 22
-		 h = 8, g = 12, f = 20
-		 h = 10, g = 12, f = 22
-		 h = 9, g = 11, f = 20
-		 h = 8, g = 10, f = 18
-		 h = 10, g = 10, f = 20
-		 h = 9, g = 9, f = 18
-		 h = 10, g = 8, f = 18
-		 h = 10, g = 8, f = 18
-		 h = 9, g = 7, f = 16
-		 h = 8, g = 6, f = 14
-		 h = 10, g = 6, f = 16
-		 h = 9, g = 5, f = 14
-		 h = 12, g = 6, f = 18
-		 h = 11, g = 5, f = 16
-		 h = 10, g = 4, f = 14
-		 h = 10, g = 4, f = 14
-		 h = 9, g = 3, f = 12
-		 h = 9, g = 3, f = 12
-		 h = 12, g = 8, f = 20
-		 h = 11, g = 7, f = 18
-		 h = 8, g = 6, f = 14
-		 h = 10, g = 6, f = 16
-		 h = 9, g = 5, f = 14
-		 h = 12, g = 6, f = 18
-		 h = 11, g = 5, f = 16
-		 h = 10, g = 4, f = 14
-		 h = 10, g = 4, f = 14
-		 h = 12, g = 8, f = 20
-		 h = 11, g = 7, f = 18
-		 h = 12, g = 10, f = 22
-		 h = 11, g = 9, f = 20
-		 h = 10, g = 12, f = 22
-		 h = 9, g = 11, f = 20
-		 h = 8, g = 12, f = 20
-		 h = 8, g = 12, f = 20
-		 h = 7, g = 11, f = 18
-		 h = 6, g = 10, f = 16
-		 h = 8, g = 10, f = 18
-		 h = 7, g = 9, f = 16
-		 h = 8, g = 8, f = 16
-		 h = 10, g = 8, f = 18
-		 h = 9, g = 7, f = 16
-		 h = 8, g = 6, f = 14
-		 h = 10, g = 6, f = 16
-		 h = 9, g = 5, f = 14
-		 h = 12, g = 6, f = 18
-		 h = 11, g = 5, f = 16
-		 h = 10, g = 4, f = 14
-		 h = 10, g = 4, f = 14
-		 h = 9, g = 3, f = 12
-		 h = 9, g = 3, f = 12
-		 h = 12, g = 8, f = 20
-		 h = 11, g = 7, f = 18
-		 h = 8, g = 6, f = 14
-		 h = 10, g = 6, f = 16
-		 h = 9, g = 5, f = 14
-		 h = 12, g = 6, f = 18
-		 h = 11, g = 5, f = 16
-		 h = 10, g = 4, f = 14
-		 h = 10, g = 4, f = 14
-		 h = 8, g = 8, f = 16
-		 h = 7, g = 7, f = 14
-		 h = 0, g = 10, f = 10
-		 h = 1, g = 9, f = 10
-		 h = 8, g = 12, f = 20
-		 h = 7, g = 11, f = 18
-		 h = 8, g = 12, f = 20
-		 h = 8, g = 12, f = 20
-		 h = 7, g = 11, f = 18
-		 h = 6, g = 10, f = 16
-		 h = 6, g = 10, f = 16
-		 h = 5, g = 9, f = 14
-		 h = 4, g = 8, f = 12
-		 h = 2, g = 8, f = 10
-		 h = 3, g = 7, f = 10
-		 h = 4, g = 6, f = 10
-		 h = 6, g = 6, f = 12
-		 h = 5, g = 5, f = 10
-		 h = 10, g = 6, f = 16
-		 h = 9, g = 5, f = 14
-		 h = 8, g = 4, f = 12
-		 h = 6, g = 4, f = 10
-		 h = 7, g = 3, f = 10
-		 h = 9, g = 3, f = 12
-		 h = 8, g = 2, f = 10
-		 h = 8, g = 2, f = 10
-		 h = 8, g = 2, f = 10
+
+		Child added :  h = 7, g = 1, f = 8
+
+**********************************************************************
 		 h = 7, g = 1, f = 8
 		 h = 7, g = 1, f = 8
 		 h = 5, g = 1, f = 6
 		 h = 7, g = 1, f = 8
-		 h = 6, g = 0, f = 6
+**********************************************************************
+Raiz h = 7, g = 1, f = 8
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 2, f = 10
+
+		Child added :  h = 8, g = 2, f = 10
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 2, f = 10
+
+		Child added :  h = 8, g = 2, f = 10
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 2, f = 10
+
+		Child added :  h = 8, g = 2, f = 10
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 2, f = 8
+
+		Child added :  h = 6, g = 2, f = 8
+
+**********************************************************************
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 2, f = 8
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 3, f = 10
+
+		Child added :  h = 7, g = 3, f = 10
+
+**********************************************************************
+		 h = 7, g = 3, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 3, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 4, f = 10
+
+		Child added :  h = 6, g = 4, f = 10
+
+**********************************************************************
+		 h = 6, g = 4, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 4, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 5, f = 12
+
+		Child added :  h = 7, g = 5, f = 12
+
+**********************************************************************
+		 h = 7, g = 5, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 5, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 6, f = 12
+
+		Child added :  h = 6, g = 6, f = 12
+
+**********************************************************************
+		 h = 6, g = 6, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 6, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 7, f = 14
+
+		Child added :  h = 7, g = 7, f = 14
+
+**********************************************************************
+		 h = 7, g = 7, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 7, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 8, f = 14
+
+		Child added :  h = 6, g = 8, f = 14
+
+**********************************************************************
+		 h = 6, g = 8, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 8, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 9, f = 16
+
+		Child added :  h = 7, g = 9, f = 16
+
+**********************************************************************
+		 h = 7, g = 9, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 9, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 10, f = 16
+
+		Child added :  h = 6, g = 10, f = 16
+
+**********************************************************************
+		 h = 6, g = 10, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 10, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 11, f = 18
+
+		Child added :  h = 7, g = 11, f = 18
+
+**********************************************************************
+		 h = 7, g = 11, f = 18
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 11, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 12, f = 18
+
+		Child added :  h = 6, g = 12, f = 18
+
+**********************************************************************
+		 h = 6, g = 12, f = 18
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 12, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 13, f = 20
+**********************************************************************
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 2, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 3, f = 12
+
+		Child added :  h = 9, g = 3, f = 12
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 3, f = 10
+
+		Child added :  h = 7, g = 3, f = 10
+
+**********************************************************************
+		 h = 7, g = 3, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 3, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 4, f = 10
+
+		Child added :  h = 6, g = 4, f = 10
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 4, f = 12
+
+		Child added :  h = 8, g = 4, f = 12
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 4, f = 12
+
+		Child added :  h = 8, g = 4, f = 12
+
+**********************************************************************
+		 h = 8, g = 4, f = 12
+		 h = 8, g = 4, f = 12
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 4, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 5, f = 12
+
+		Child added :  h = 7, g = 5, f = 12
+
+**********************************************************************
+		 h = 7, g = 5, f = 12
+		 h = 8, g = 4, f = 12
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 5, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 6, f = 14
+
+		Child added :  h = 8, g = 6, f = 14
+
+**********************************************************************
+		 h = 8, g = 6, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 6, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 7, f = 14
+
+		Child added :  h = 7, g = 7, f = 14
+
+**********************************************************************
+		 h = 7, g = 7, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 7, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 8, g = 4, f = 12
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 9, f = 16
+
+		Child added :  h = 7, g = 9, f = 16
+
+**********************************************************************
+		 h = 7, g = 9, f = 16
+		 h = 8, g = 4, f = 12
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 9, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 8, g = 4, f = 12
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 11, f = 18
+
+		Child added :  h = 7, g = 11, f = 18
+
+**********************************************************************
+		 h = 7, g = 11, f = 18
+		 h = 8, g = 4, f = 12
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 11, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 4, f = 12
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 13, f = 20
+**********************************************************************
+		 h = 8, g = 4, f = 12
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 4, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 5, f = 14
+
+		Child added :  h = 9, g = 5, f = 14
+
+**********************************************************************
+		 h = 9, g = 5, f = 14
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 5, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 6, f = 16
+
+		Child added :  h = 10, g = 6, f = 16
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 6, f = 14
+
+		Child added :  h = 8, g = 6, f = 14
+
+**********************************************************************
+		 h = 8, g = 6, f = 14
+		 h = 10, g = 6, f = 16
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 6, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 7, f = 16
+
+		Child added :  h = 9, g = 7, f = 16
+
+**********************************************************************
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 7, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 9, f = 18
+
+		Child added :  h = 9, g = 9, f = 18
+
+**********************************************************************
+		 h = 9, g = 9, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 9, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 10, g = 6, f = 16
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 6, f = 16
+**********************************************************************
+		 h = 6, g = 4, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 4, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 5, g = 5, f = 10
+
+		Child added :  h = 5, g = 5, f = 10
+
+**********************************************************************
+		 h = 5, g = 5, f = 10
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 5, g = 5, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 6, f = 12
+
+		Child added :  h = 6, g = 6, f = 12
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 6, f = 12
+
+		Child added :  h = 6, g = 6, f = 12
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 4, g = 6, f = 10
+
+		Child added :  h = 4, g = 6, f = 10
+
+**********************************************************************
+		 h = 4, g = 6, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 4, g = 6, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 3, g = 7, f = 10
+
+		Child added :  h = 3, g = 7, f = 10
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 5, g = 7, f = 12
+
+		Child added :  h = 5, g = 7, f = 12
+
+**********************************************************************
+		 h = 5, g = 7, f = 12
+		 h = 3, g = 7, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 5, g = 7, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 4, g = 8, f = 12
+
+		Child added :  h = 4, g = 8, f = 12
+
+**********************************************************************
+		 h = 4, g = 8, f = 12
+		 h = 3, g = 7, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 4, g = 8, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 5, g = 9, f = 14
+
+		Child added :  h = 5, g = 9, f = 14
+
+**********************************************************************
+		 h = 5, g = 9, f = 14
+		 h = 3, g = 7, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 5, g = 9, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 4, g = 10, f = 14
+
+		Child added :  h = 4, g = 10, f = 14
+
+**********************************************************************
+		 h = 4, g = 10, f = 14
+		 h = 3, g = 7, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 4, g = 10, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 5, g = 11, f = 16
+
+		Child added :  h = 5, g = 11, f = 16
+
+**********************************************************************
+		 h = 5, g = 11, f = 16
+		 h = 3, g = 7, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 5, g = 11, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 4, g = 12, f = 16
+
+		Child added :  h = 4, g = 12, f = 16
+
+**********************************************************************
+		 h = 4, g = 12, f = 16
+		 h = 3, g = 7, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 4, g = 12, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 5, g = 13, f = 18
+**********************************************************************
+		 h = 3, g = 7, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 3, g = 7, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 2, g = 8, f = 10
+
+		Child added :  h = 2, g = 8, f = 10
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 4, g = 8, f = 12
+
+		Child added :  h = 4, g = 8, f = 12
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 4, g = 8, f = 12
+
+		Child added :  h = 4, g = 8, f = 12
+
+**********************************************************************
+		 h = 4, g = 8, f = 12
+		 h = 4, g = 8, f = 12
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 4, g = 8, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 3, g = 9, f = 12
+
+		Child added :  h = 3, g = 9, f = 12
+
+**********************************************************************
+		 h = 3, g = 9, f = 12
+		 h = 4, g = 8, f = 12
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 3, g = 9, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 4, g = 10, f = 14
+
+		Child added :  h = 4, g = 10, f = 14
+
+**********************************************************************
+		 h = 4, g = 10, f = 14
+		 h = 4, g = 8, f = 12
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 4, g = 10, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 3, g = 11, f = 14
+
+		Child added :  h = 3, g = 11, f = 14
+
+**********************************************************************
+		 h = 3, g = 11, f = 14
+		 h = 4, g = 8, f = 12
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 3, g = 11, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 4, g = 12, f = 16
+
+		Child added :  h = 4, g = 12, f = 16
+
+**********************************************************************
+		 h = 4, g = 12, f = 16
+		 h = 4, g = 8, f = 12
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 4, g = 12, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 3, g = 13, f = 16
+**********************************************************************
+		 h = 4, g = 8, f = 12
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 4, g = 8, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 5, g = 9, f = 14
+
+		Child added :  h = 5, g = 9, f = 14
+
+**********************************************************************
+		 h = 5, g = 9, f = 14
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 5, g = 9, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 4, g = 10, f = 14
+
+		Child added :  h = 4, g = 10, f = 14
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 10, f = 16
+
+		Child added :  h = 6, g = 10, f = 16
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 10, f = 16
+
+		Child added :  h = 6, g = 10, f = 16
+
+**********************************************************************
+		 h = 6, g = 10, f = 16
+		 h = 6, g = 10, f = 16
+		 h = 4, g = 10, f = 14
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 10, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 11, f = 18
+
+		Child added :  h = 7, g = 11, f = 18
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 5, g = 11, f = 16
+
+		Child added :  h = 5, g = 11, f = 16
+
+**********************************************************************
+		 h = 5, g = 11, f = 16
+		 h = 7, g = 11, f = 18
+		 h = 6, g = 10, f = 16
+		 h = 4, g = 10, f = 14
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 5, g = 11, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 12, f = 18
+
+		Child added :  h = 6, g = 12, f = 18
+
+**********************************************************************
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 11, f = 18
+		 h = 6, g = 10, f = 16
+		 h = 4, g = 10, f = 14
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 12, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 5, g = 13, f = 18
+**********************************************************************
+		 h = 7, g = 11, f = 18
+		 h = 6, g = 10, f = 16
+		 h = 4, g = 10, f = 14
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 11, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 12, f = 18
+
+		Child added :  h = 6, g = 12, f = 18
+
+**********************************************************************
+		 h = 6, g = 12, f = 18
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 6, g = 10, f = 16
+		 h = 4, g = 10, f = 14
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 12, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 13, f = 20
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 6, g = 10, f = 16
+		 h = 4, g = 10, f = 14
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 6, g = 10, f = 16
+		 h = 4, g = 10, f = 14
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 6, g = 10, f = 16
+		 h = 4, g = 10, f = 14
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 10, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 11, f = 18
+
+		Child added :  h = 7, g = 11, f = 18
+
+**********************************************************************
+		 h = 7, g = 11, f = 18
+		 h = 4, g = 10, f = 14
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 11, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 12, f = 18
+
+		Child added :  h = 6, g = 12, f = 18
+
+**********************************************************************
+		 h = 6, g = 12, f = 18
+		 h = 8, g = 12, f = 20
+		 h = 4, g = 10, f = 14
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 12, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 13, f = 20
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 4, g = 10, f = 14
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+**********************************************************************
+		 h = 4, g = 10, f = 14
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 4, g = 10, f = 14
+**********************************************************************
+		 h = 2, g = 8, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 2, g = 8, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 1, g = 9, f = 10
+
+		Child added :  h = 1, g = 9, f = 10
+
+**********************************************************************
+		 h = 1, g = 9, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 1, g = 9, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 0, g = 10, f = 10
+
+		Child added :  h = 0, g = 10, f = 10
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 2, g = 10, f = 12
+
+		Child added :  h = 2, g = 10, f = 12
+
+**********************************************************************
+		 h = 2, g = 10, f = 12
+		 h = 0, g = 10, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 2, g = 10, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 1, g = 11, f = 12
+
+		Child added :  h = 1, g = 11, f = 12
+
+**********************************************************************
+		 h = 1, g = 11, f = 12
+		 h = 0, g = 10, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 1, g = 11, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 2, g = 12, f = 14
+
+		Child added :  h = 2, g = 12, f = 14
+
+**********************************************************************
+		 h = 2, g = 12, f = 14
+		 h = 0, g = 10, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 2, g = 12, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 1, g = 13, f = 14
+**********************************************************************
+		 h = 0, g = 10, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 0, g = 10, f = 10
+**********************************************************************
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 6, f = 12
+**********************************************************************
+		 h = 6, g = 6, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 6, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 7, f = 14
+
+		Child added :  h = 7, g = 7, f = 14
+
+**********************************************************************
+		 h = 7, g = 7, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 7, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 8, f = 14
+
+		Child added :  h = 6, g = 8, f = 14
+
+**********************************************************************
+		 h = 6, g = 8, f = 14
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 8, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 9, f = 16
+
+		Child added :  h = 7, g = 9, f = 16
+
+**********************************************************************
+		 h = 7, g = 9, f = 16
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 9, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 10, f = 16
+
+		Child added :  h = 6, g = 10, f = 16
+
+**********************************************************************
+		 h = 6, g = 10, f = 16
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 10, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 11, f = 18
+
+		Child added :  h = 7, g = 11, f = 18
+
+**********************************************************************
+		 h = 7, g = 11, f = 18
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 11, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 12, f = 18
+
+		Child added :  h = 6, g = 12, f = 18
+
+**********************************************************************
+		 h = 6, g = 12, f = 18
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 12, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 13, f = 20
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+**********************************************************************
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 3, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 4, f = 14
+
+		Child added :  h = 10, g = 4, f = 14
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 4, f = 14
+
+		Child added :  h = 10, g = 4, f = 14
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 4, f = 12
+
+		Child added :  h = 8, g = 4, f = 12
+
+**********************************************************************
+		 h = 8, g = 4, f = 12
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 4, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 5, f = 14
+
+		Child added :  h = 9, g = 5, f = 14
+
+**********************************************************************
+		 h = 9, g = 5, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 5, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 6, f = 14
+
+		Child added :  h = 8, g = 6, f = 14
+
+**********************************************************************
+		 h = 8, g = 6, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 6, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 7, f = 16
+
+		Child added :  h = 9, g = 7, f = 16
+
+**********************************************************************
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 7, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 9, f = 18
+
+		Child added :  h = 9, g = 9, f = 18
+
+**********************************************************************
+		 h = 9, g = 9, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 9, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 4, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 5, f = 16
+
+		Child added :  h = 11, g = 5, f = 16
+
+**********************************************************************
+		 h = 11, g = 5, f = 16
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 5, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 12, g = 6, f = 18
+
+		Child added :  h = 12, g = 6, f = 18
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 6, f = 16
+
+		Child added :  h = 10, g = 6, f = 16
+
+**********************************************************************
+		 h = 10, g = 6, f = 16
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 6, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 7, f = 18
+
+		Child added :  h = 11, g = 7, f = 18
+
+**********************************************************************
+		 h = 11, g = 7, f = 18
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 7, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 8, f = 18
+
+		Child added :  h = 10, g = 8, f = 18
+
+**********************************************************************
+		 h = 10, g = 8, f = 18
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 8, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 9, f = 20
+
+		Child added :  h = 11, g = 9, f = 20
+
+**********************************************************************
+		 h = 11, g = 9, f = 20
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 9, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 10, f = 20
+
+		Child added :  h = 10, g = 10, f = 20
+
+**********************************************************************
+		 h = 10, g = 10, f = 20
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 10, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 11, f = 22
+
+		Child added :  h = 11, g = 11, f = 22
+
+**********************************************************************
+		 h = 11, g = 11, f = 22
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 11, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 12, f = 22
+
+		Child added :  h = 10, g = 12, f = 22
+
+**********************************************************************
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 12, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 13, f = 24
+**********************************************************************
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 12, g = 6, f = 18
+**********************************************************************
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 4, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 5, f = 14
+
+		Child added :  h = 9, g = 5, f = 14
+
+**********************************************************************
+		 h = 9, g = 5, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 5, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 6, f = 16
+
+		Child added :  h = 10, g = 6, f = 16
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 6, f = 16
+
+		Child added :  h = 10, g = 6, f = 16
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 6, f = 14
+
+		Child added :  h = 8, g = 6, f = 14
+
+**********************************************************************
+		 h = 8, g = 6, f = 14
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 6, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 7, f = 16
+
+		Child added :  h = 9, g = 7, f = 16
+
+**********************************************************************
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 7, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 9, f = 18
+
+		Child added :  h = 9, g = 9, f = 18
+
+**********************************************************************
+		 h = 9, g = 9, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 9, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 6, f = 16
+**********************************************************************
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 6, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 7, f = 18
+
+		Child added :  h = 11, g = 7, f = 18
+
+**********************************************************************
+		 h = 11, g = 7, f = 18
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 7, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 12, g = 8, f = 20
+
+		Child added :  h = 12, g = 8, f = 20
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 8, f = 18
+
+		Child added :  h = 10, g = 8, f = 18
+
+**********************************************************************
+		 h = 10, g = 8, f = 18
+		 h = 12, g = 8, f = 20
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 8, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 9, f = 20
+
+		Child added :  h = 11, g = 9, f = 20
+
+**********************************************************************
+		 h = 11, g = 9, f = 20
+		 h = 12, g = 8, f = 20
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 9, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 10, f = 20
+
+		Child added :  h = 10, g = 10, f = 20
+
+**********************************************************************
+		 h = 10, g = 10, f = 20
+		 h = 12, g = 8, f = 20
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 10, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 11, f = 22
+
+		Child added :  h = 11, g = 11, f = 22
+
+**********************************************************************
+		 h = 11, g = 11, f = 22
+		 h = 12, g = 8, f = 20
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 11, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 12, f = 22
+
+		Child added :  h = 10, g = 12, f = 22
+
+**********************************************************************
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 8, f = 20
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 12, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 13, f = 24
+**********************************************************************
+		 h = 12, g = 8, f = 20
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 12, g = 8, f = 20
+**********************************************************************
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 2, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 3, f = 12
+
+		Child added :  h = 9, g = 3, f = 12
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 3, f = 12
+
+		Child added :  h = 9, g = 3, f = 12
+
+**********************************************************************
+		 h = 9, g = 3, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 3, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 4, f = 14
+
+		Child added :  h = 10, g = 4, f = 14
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 4, f = 14
+
+		Child added :  h = 10, g = 4, f = 14
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 4, f = 12
+
+		Child added :  h = 8, g = 4, f = 12
+
+**********************************************************************
+		 h = 8, g = 4, f = 12
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 4, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 5, f = 14
+
+		Child added :  h = 9, g = 5, f = 14
+
+**********************************************************************
+		 h = 9, g = 5, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 5, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 6, f = 14
+
+		Child added :  h = 8, g = 6, f = 14
+
+**********************************************************************
+		 h = 8, g = 6, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 6, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 7, f = 16
+
+		Child added :  h = 9, g = 7, f = 16
+
+**********************************************************************
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 7, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 9, f = 18
+
+		Child added :  h = 9, g = 9, f = 18
+
+**********************************************************************
+		 h = 9, g = 9, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 9, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 4, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 5, f = 16
+
+		Child added :  h = 11, g = 5, f = 16
+
+**********************************************************************
+		 h = 11, g = 5, f = 16
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 5, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 12, g = 6, f = 18
+
+		Child added :  h = 12, g = 6, f = 18
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 6, f = 16
+
+		Child added :  h = 10, g = 6, f = 16
+
+**********************************************************************
+		 h = 10, g = 6, f = 16
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 6, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 7, f = 18
+
+		Child added :  h = 11, g = 7, f = 18
+
+**********************************************************************
+		 h = 11, g = 7, f = 18
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 7, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 8, f = 18
+
+		Child added :  h = 10, g = 8, f = 18
+
+**********************************************************************
+		 h = 10, g = 8, f = 18
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 8, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 9, f = 20
+
+		Child added :  h = 11, g = 9, f = 20
+
+**********************************************************************
+		 h = 11, g = 9, f = 20
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 9, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 10, f = 20
+
+		Child added :  h = 10, g = 10, f = 20
+
+**********************************************************************
+		 h = 10, g = 10, f = 20
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 10, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 11, f = 22
+
+		Child added :  h = 11, g = 11, f = 22
+
+**********************************************************************
+		 h = 11, g = 11, f = 22
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 11, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 12, f = 22
+
+		Child added :  h = 10, g = 12, f = 22
+
+**********************************************************************
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 12, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 13, f = 24
+**********************************************************************
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 12, g = 6, f = 18
+**********************************************************************
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 4, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 5, f = 14
+
+		Child added :  h = 9, g = 5, f = 14
+
+**********************************************************************
+		 h = 9, g = 5, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 5, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 6, f = 16
+
+		Child added :  h = 10, g = 6, f = 16
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 6, f = 16
+
+		Child added :  h = 10, g = 6, f = 16
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 6, f = 14
+
+		Child added :  h = 8, g = 6, f = 14
+
+**********************************************************************
+		 h = 8, g = 6, f = 14
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 6, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 7, f = 16
+
+		Child added :  h = 9, g = 7, f = 16
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 7, f = 16
+
+		Child added :  h = 9, g = 7, f = 16
+
+**********************************************************************
+		 h = 9, g = 7, f = 16
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 7, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 9, f = 18
+
+		Child added :  h = 9, g = 9, f = 18
+
+**********************************************************************
+		 h = 9, g = 9, f = 18
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 9, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 7, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 8, f = 18
+
+		Child added :  h = 10, g = 8, f = 18
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 9, f = 18
+
+		Child added :  h = 9, g = 9, f = 18
+
+**********************************************************************
+		 h = 9, g = 9, f = 18
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 9, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 9, f = 16
+
+		Child added :  h = 7, g = 9, f = 16
+
+**********************************************************************
+		 h = 7, g = 9, f = 16
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 9, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 10, f = 16
+
+		Child added :  h = 6, g = 10, f = 16
+
+**********************************************************************
+		 h = 6, g = 10, f = 16
+		 h = 8, g = 10, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 10, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 11, f = 18
+
+		Child added :  h = 7, g = 11, f = 18
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 11, f = 18
+
+		Child added :  h = 7, g = 11, f = 18
+
+**********************************************************************
+		 h = 7, g = 11, f = 18
+		 h = 7, g = 11, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 11, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 12, f = 18
+
+		Child added :  h = 6, g = 12, f = 18
+
+**********************************************************************
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 11, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 12, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 13, f = 20
+**********************************************************************
+		 h = 7, g = 11, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 11, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 12, f = 18
+
+		Child added :  h = 6, g = 12, f = 18
+
+**********************************************************************
+		 h = 6, g = 12, f = 18
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 10, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 12, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 13, f = 20
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 10, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 10, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 12, f = 22
+
+		Child added :  h = 10, g = 12, f = 22
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 12, f = 22
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 10, g = 12, f = 22
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 12, f = 22
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+**********************************************************************
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 8, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 9, f = 20
+
+		Child added :  h = 11, g = 9, f = 20
+
+**********************************************************************
+		 h = 11, g = 9, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 9, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 12, g = 10, f = 22
+
+		Child added :  h = 12, g = 10, f = 22
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 10, f = 20
+
+		Child added :  h = 10, g = 10, f = 20
+
+**********************************************************************
+		 h = 10, g = 10, f = 20
+		 h = 12, g = 10, f = 22
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 10, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 11, f = 22
+
+		Child added :  h = 11, g = 11, f = 22
+
+**********************************************************************
+		 h = 11, g = 11, f = 22
+		 h = 12, g = 10, f = 22
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 11, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 12, f = 22
+
+		Child added :  h = 10, g = 12, f = 22
+
+**********************************************************************
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 10, f = 22
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 12, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 13, f = 24
+**********************************************************************
+		 h = 12, g = 10, f = 22
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 12, g = 10, f = 22
+**********************************************************************
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 6, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 7, f = 18
+
+		Child added :  h = 11, g = 7, f = 18
+
+**********************************************************************
+		 h = 11, g = 7, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 7, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 12, g = 8, f = 20
+
+		Child added :  h = 12, g = 8, f = 20
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 8, f = 18
+
+		Child added :  h = 10, g = 8, f = 18
+
+**********************************************************************
+		 h = 10, g = 8, f = 18
+		 h = 12, g = 8, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 8, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 9, f = 20
+
+		Child added :  h = 11, g = 9, f = 20
+
+**********************************************************************
+		 h = 11, g = 9, f = 20
+		 h = 12, g = 8, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 9, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 10, f = 20
+
+		Child added :  h = 10, g = 10, f = 20
+
+**********************************************************************
+		 h = 10, g = 10, f = 20
+		 h = 12, g = 8, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 10, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 11, f = 22
+
+		Child added :  h = 11, g = 11, f = 22
+
+**********************************************************************
+		 h = 11, g = 11, f = 22
+		 h = 12, g = 8, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 11, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 12, f = 22
+
+		Child added :  h = 10, g = 12, f = 22
+
+**********************************************************************
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 8, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 12, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 13, f = 24
+**********************************************************************
+		 h = 12, g = 8, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 12, g = 8, f = 20
+**********************************************************************
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 6, f = 16
+**********************************************************************
+		 h = 9, g = 3, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 3, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 4, f = 14
+
+		Child added :  h = 10, g = 4, f = 14
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 4, f = 14
+
+		Child added :  h = 10, g = 4, f = 14
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 4, f = 12
+
+		Child added :  h = 8, g = 4, f = 12
+
+**********************************************************************
+		 h = 8, g = 4, f = 12
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 4, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 5, f = 14
+
+		Child added :  h = 9, g = 5, f = 14
+
+**********************************************************************
+		 h = 9, g = 5, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 5, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 6, f = 14
+
+		Child added :  h = 8, g = 6, f = 14
+
+**********************************************************************
+		 h = 8, g = 6, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 6, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 7, f = 16
+
+		Child added :  h = 9, g = 7, f = 16
+
+**********************************************************************
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 7, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 9, f = 18
+
+		Child added :  h = 9, g = 9, f = 18
+
+**********************************************************************
+		 h = 9, g = 9, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 9, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 4, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 5, f = 16
+
+		Child added :  h = 11, g = 5, f = 16
+
+**********************************************************************
+		 h = 11, g = 5, f = 16
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 5, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 12, g = 6, f = 18
+
+		Child added :  h = 12, g = 6, f = 18
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 6, f = 16
+
+		Child added :  h = 10, g = 6, f = 16
+
+**********************************************************************
+		 h = 10, g = 6, f = 16
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 6, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 7, f = 18
+
+		Child added :  h = 11, g = 7, f = 18
+
+**********************************************************************
+		 h = 11, g = 7, f = 18
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 7, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 8, f = 18
+
+		Child added :  h = 10, g = 8, f = 18
+
+**********************************************************************
+		 h = 10, g = 8, f = 18
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 8, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 9, f = 20
+
+		Child added :  h = 11, g = 9, f = 20
+
+**********************************************************************
+		 h = 11, g = 9, f = 20
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 9, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 10, f = 20
+
+		Child added :  h = 10, g = 10, f = 20
+
+**********************************************************************
+		 h = 10, g = 10, f = 20
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 10, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 11, f = 22
+
+		Child added :  h = 11, g = 11, f = 22
+
+**********************************************************************
+		 h = 11, g = 11, f = 22
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 11, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 12, f = 22
+
+		Child added :  h = 10, g = 12, f = 22
+
+**********************************************************************
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 12, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 13, f = 24
+**********************************************************************
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 12, g = 6, f = 18
+**********************************************************************
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 4, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 5, f = 14
+
+		Child added :  h = 9, g = 5, f = 14
+
+**********************************************************************
+		 h = 9, g = 5, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 5, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 6, f = 16
+
+		Child added :  h = 10, g = 6, f = 16
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 6, f = 16
+
+		Child added :  h = 10, g = 6, f = 16
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 6, f = 14
+
+		Child added :  h = 8, g = 6, f = 14
+
+**********************************************************************
+		 h = 8, g = 6, f = 14
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 6, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 7, f = 16
+
+		Child added :  h = 9, g = 7, f = 16
+
+**********************************************************************
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 7, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 9, f = 18
+
+		Child added :  h = 9, g = 9, f = 18
+
+**********************************************************************
+		 h = 9, g = 9, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 9, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 6, f = 16
+**********************************************************************
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 6, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 7, f = 18
+
+		Child added :  h = 11, g = 7, f = 18
+
+**********************************************************************
+		 h = 11, g = 7, f = 18
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 7, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 12, g = 8, f = 20
+
+		Child added :  h = 12, g = 8, f = 20
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 8, f = 18
+
+		Child added :  h = 10, g = 8, f = 18
+
+**********************************************************************
+		 h = 10, g = 8, f = 18
+		 h = 12, g = 8, f = 20
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 8, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 9, f = 20
+
+		Child added :  h = 11, g = 9, f = 20
+
+**********************************************************************
+		 h = 11, g = 9, f = 20
+		 h = 12, g = 8, f = 20
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 9, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 10, f = 20
+
+		Child added :  h = 10, g = 10, f = 20
+
+**********************************************************************
+		 h = 10, g = 10, f = 20
+		 h = 12, g = 8, f = 20
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 10, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 11, f = 22
+
+		Child added :  h = 11, g = 11, f = 22
+
+**********************************************************************
+		 h = 11, g = 11, f = 22
+		 h = 12, g = 8, f = 20
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 11, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 12, f = 22
+
+		Child added :  h = 10, g = 12, f = 22
+
+**********************************************************************
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 8, f = 20
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 12, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 13, f = 24
+**********************************************************************
+		 h = 12, g = 8, f = 20
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 12, g = 8, f = 20
+**********************************************************************
+		 h = 8, g = 2, f = 10
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 2, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 3, f = 12
+
+		Child added :  h = 9, g = 3, f = 12
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 3, f = 12
+
+		Child added :  h = 9, g = 3, f = 12
+
+**********************************************************************
+		 h = 9, g = 3, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 3, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 4, f = 14
+
+		Child added :  h = 10, g = 4, f = 14
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 4, f = 14
+
+		Child added :  h = 10, g = 4, f = 14
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 4, f = 12
+
+		Child added :  h = 8, g = 4, f = 12
+
+**********************************************************************
+		 h = 8, g = 4, f = 12
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 4, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 5, f = 14
+
+		Child added :  h = 9, g = 5, f = 14
+
+**********************************************************************
+		 h = 9, g = 5, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 5, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 6, f = 14
+
+		Child added :  h = 8, g = 6, f = 14
+
+**********************************************************************
+		 h = 8, g = 6, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 6, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 7, f = 16
+
+		Child added :  h = 9, g = 7, f = 16
+
+**********************************************************************
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 7, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 9, f = 18
+
+		Child added :  h = 9, g = 9, f = 18
+
+**********************************************************************
+		 h = 9, g = 9, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 9, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 4, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 5, f = 16
+
+		Child added :  h = 11, g = 5, f = 16
+
+**********************************************************************
+		 h = 11, g = 5, f = 16
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 5, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 12, g = 6, f = 18
+
+		Child added :  h = 12, g = 6, f = 18
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 6, f = 16
+
+		Child added :  h = 10, g = 6, f = 16
+
+**********************************************************************
+		 h = 10, g = 6, f = 16
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 6, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 7, f = 18
+
+		Child added :  h = 11, g = 7, f = 18
+
+**********************************************************************
+		 h = 11, g = 7, f = 18
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 7, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 8, f = 18
+
+		Child added :  h = 10, g = 8, f = 18
+
+**********************************************************************
+		 h = 10, g = 8, f = 18
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 8, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 9, f = 20
+
+		Child added :  h = 11, g = 9, f = 20
+
+**********************************************************************
+		 h = 11, g = 9, f = 20
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 9, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 10, f = 20
+
+		Child added :  h = 10, g = 10, f = 20
+
+**********************************************************************
+		 h = 10, g = 10, f = 20
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 10, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 11, f = 22
+
+		Child added :  h = 11, g = 11, f = 22
+
+**********************************************************************
+		 h = 11, g = 11, f = 22
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 11, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 12, f = 22
+
+		Child added :  h = 10, g = 12, f = 22
+
+**********************************************************************
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 12, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 13, f = 24
+**********************************************************************
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 12, g = 6, f = 18
+**********************************************************************
+		 h = 10, g = 4, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 4, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 5, f = 14
+
+		Child added :  h = 9, g = 5, f = 14
+
+**********************************************************************
+		 h = 9, g = 5, f = 14
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 5, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 6, f = 16
+
+		Child added :  h = 10, g = 6, f = 16
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 6, f = 16
+
+		Child added :  h = 10, g = 6, f = 16
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 6, f = 14
+
+		Child added :  h = 8, g = 6, f = 14
+
+**********************************************************************
+		 h = 8, g = 6, f = 14
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 6, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 7, f = 16
+
+		Child added :  h = 9, g = 7, f = 16
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 7, f = 16
+
+		Child added :  h = 9, g = 7, f = 16
+
+**********************************************************************
+		 h = 9, g = 7, f = 16
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 7, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 9, f = 18
+
+		Child added :  h = 9, g = 9, f = 18
+
+**********************************************************************
+		 h = 9, g = 9, f = 18
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 9, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 7, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 8, f = 18
+
+		Child added :  h = 10, g = 8, f = 18
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 8, f = 18
+
+		Child added :  h = 10, g = 8, f = 18
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 9, f = 18
+
+		Child added :  h = 9, g = 9, f = 18
+
+**********************************************************************
+		 h = 9, g = 9, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 9, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 8, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 9, f = 18
+
+		Child added :  h = 9, g = 9, f = 18
+
+**********************************************************************
+		 h = 9, g = 9, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 9, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 10, f = 20
+
+		Child added :  h = 10, g = 10, f = 20
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 10, f = 20
+
+		Child added :  h = 10, g = 10, f = 20
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 9, g = 11, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 11, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 12, f = 22
+
+		Child added :  h = 10, g = 12, f = 22
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 12, f = 22
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 12, f = 22
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 13, f = 20
+**********************************************************************
+		 h = 10, g = 12, f = 22
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 12, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 13, f = 24
+**********************************************************************
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 10, f = 20
+**********************************************************************
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 10, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 11, f = 22
+
+		Child added :  h = 11, g = 11, f = 22
+
+**********************************************************************
+		 h = 11, g = 11, f = 22
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 11, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 12, g = 12, f = 24
+
+		Child added :  h = 12, g = 12, f = 24
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 12, f = 22
+
+		Child added :  h = 10, g = 12, f = 22
+
+**********************************************************************
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 12, f = 24
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 12, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 13, f = 24
+**********************************************************************
+		 h = 12, g = 12, f = 24
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 12, g = 12, f = 24
+**********************************************************************
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 8, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 9, f = 20
+
+		Child added :  h = 11, g = 9, f = 20
+
+**********************************************************************
+		 h = 11, g = 9, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 9, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 12, g = 10, f = 22
+
+		Child added :  h = 12, g = 10, f = 22
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 10, f = 20
+
+		Child added :  h = 10, g = 10, f = 20
+
+**********************************************************************
+		 h = 10, g = 10, f = 20
+		 h = 12, g = 10, f = 22
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 10, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 11, f = 22
+
+		Child added :  h = 11, g = 11, f = 22
+
+**********************************************************************
+		 h = 11, g = 11, f = 22
+		 h = 12, g = 10, f = 22
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 11, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 12, f = 22
+
+		Child added :  h = 10, g = 12, f = 22
+
+**********************************************************************
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 10, f = 22
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 12, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 13, f = 24
+**********************************************************************
+		 h = 12, g = 10, f = 22
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 12, g = 10, f = 22
+**********************************************************************
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 6, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 7, f = 18
+
+		Child added :  h = 11, g = 7, f = 18
+
+**********************************************************************
+		 h = 11, g = 7, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 7, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 12, g = 8, f = 20
+
+		Child added :  h = 12, g = 8, f = 20
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 8, f = 18
+
+		Child added :  h = 10, g = 8, f = 18
+
+**********************************************************************
+		 h = 10, g = 8, f = 18
+		 h = 12, g = 8, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 8, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 9, f = 20
+
+		Child added :  h = 11, g = 9, f = 20
+
+**********************************************************************
+		 h = 11, g = 9, f = 20
+		 h = 12, g = 8, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 9, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 10, f = 20
+
+		Child added :  h = 10, g = 10, f = 20
+
+**********************************************************************
+		 h = 10, g = 10, f = 20
+		 h = 12, g = 8, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 10, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 11, f = 22
+
+		Child added :  h = 11, g = 11, f = 22
+
+**********************************************************************
+		 h = 11, g = 11, f = 22
+		 h = 12, g = 8, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 11, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 12, f = 22
+
+		Child added :  h = 10, g = 12, f = 22
+
+**********************************************************************
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 8, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 12, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 13, f = 24
+**********************************************************************
+		 h = 12, g = 8, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 12, g = 8, f = 20
+**********************************************************************
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 6, f = 16
+**********************************************************************
+		 h = 9, g = 3, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 3, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 4, f = 12
+
+		Child added :  h = 8, g = 4, f = 12
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 4, f = 14
+
+		Child added :  h = 10, g = 4, f = 14
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 4, f = 12
+
+		Child added :  h = 8, g = 4, f = 12
+
+**********************************************************************
+		 h = 8, g = 4, f = 12
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 4, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 5, f = 14
+
+		Child added :  h = 9, g = 5, f = 14
+
+**********************************************************************
+		 h = 9, g = 5, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 5, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 6, f = 14
+
+		Child added :  h = 8, g = 6, f = 14
+
+**********************************************************************
+		 h = 8, g = 6, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 6, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 7, f = 16
+
+		Child added :  h = 9, g = 7, f = 16
+
+**********************************************************************
+		 h = 9, g = 7, f = 16
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 7, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 9, f = 18
+
+		Child added :  h = 9, g = 9, f = 18
+
+**********************************************************************
+		 h = 9, g = 9, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 9, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 4, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 5, f = 16
+
+		Child added :  h = 11, g = 5, f = 16
+
+**********************************************************************
+		 h = 11, g = 5, f = 16
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 5, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 12, g = 6, f = 18
+
+		Child added :  h = 12, g = 6, f = 18
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 6, f = 16
+
+		Child added :  h = 10, g = 6, f = 16
+
+**********************************************************************
+		 h = 10, g = 6, f = 16
+		 h = 12, g = 6, f = 18
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 6, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 7, f = 18
+
+		Child added :  h = 11, g = 7, f = 18
+
+**********************************************************************
+		 h = 11, g = 7, f = 18
+		 h = 12, g = 6, f = 18
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 7, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 8, f = 18
+
+		Child added :  h = 10, g = 8, f = 18
+
+**********************************************************************
+		 h = 10, g = 8, f = 18
+		 h = 12, g = 6, f = 18
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 8, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 9, f = 20
+
+		Child added :  h = 11, g = 9, f = 20
+
+**********************************************************************
+		 h = 11, g = 9, f = 20
+		 h = 12, g = 6, f = 18
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 9, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 10, f = 20
+
+		Child added :  h = 10, g = 10, f = 20
+
+**********************************************************************
+		 h = 10, g = 10, f = 20
+		 h = 12, g = 6, f = 18
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 10, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 11, f = 22
+
+		Child added :  h = 11, g = 11, f = 22
+
+**********************************************************************
+		 h = 11, g = 11, f = 22
+		 h = 12, g = 6, f = 18
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 11, g = 11, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 12, f = 22
+
+		Child added :  h = 10, g = 12, f = 22
+
+**********************************************************************
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 6, f = 18
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 12, f = 22
+parent_op->get_cost() = 1
+	Nodes generated:  h = 11, g = 13, f = 24
+**********************************************************************
+		 h = 12, g = 6, f = 18
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 12, g = 6, f = 18
+**********************************************************************
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 4, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 5, f = 12
+
+		Child added :  h = 7, g = 5, f = 12
+
+**********************************************************************
+		 h = 7, g = 5, f = 12
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 5, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 6, f = 14
+
+		Child added :  h = 8, g = 6, f = 14
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 6, f = 14
+
+		Child added :  h = 8, g = 6, f = 14
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 6, f = 12
+
+		Child added :  h = 6, g = 6, f = 12
+
+**********************************************************************
+		 h = 6, g = 6, f = 12
+		 h = 8, g = 6, f = 14
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 6, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 7, f = 14
+
+		Child added :  h = 7, g = 7, f = 14
+
+**********************************************************************
+		 h = 7, g = 7, f = 14
+		 h = 8, g = 6, f = 14
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 7, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 8, f = 14
+
+		Child added :  h = 6, g = 8, f = 14
+
+**********************************************************************
+		 h = 6, g = 8, f = 14
+		 h = 8, g = 6, f = 14
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 8, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 9, f = 16
+
+		Child added :  h = 7, g = 9, f = 16
+
+**********************************************************************
+		 h = 7, g = 9, f = 16
+		 h = 8, g = 6, f = 14
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 9, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 10, f = 16
+
+		Child added :  h = 6, g = 10, f = 16
+
+**********************************************************************
+		 h = 6, g = 10, f = 16
+		 h = 8, g = 6, f = 14
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 10, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 11, f = 18
+
+		Child added :  h = 7, g = 11, f = 18
+
+**********************************************************************
+		 h = 7, g = 11, f = 18
+		 h = 8, g = 6, f = 14
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 11, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 12, f = 18
+
+		Child added :  h = 6, g = 12, f = 18
+
+**********************************************************************
+		 h = 6, g = 12, f = 18
+		 h = 8, g = 6, f = 14
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 12, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 13, f = 20
+**********************************************************************
+		 h = 8, g = 6, f = 14
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 6, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 7, f = 16
+
+		Child added :  h = 9, g = 7, f = 16
+
+**********************************************************************
+		 h = 9, g = 7, f = 16
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 7, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 10, g = 8, f = 18
+
+		Child added :  h = 10, g = 8, f = 18
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 8, f = 16
+
+		Child added :  h = 8, g = 8, f = 16
+
+**********************************************************************
+		 h = 8, g = 8, f = 16
+		 h = 10, g = 8, f = 18
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 8, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 9, f = 18
+
+		Child added :  h = 9, g = 9, f = 18
+
+**********************************************************************
+		 h = 9, g = 9, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 9, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 10, f = 18
+
+		Child added :  h = 8, g = 10, f = 18
+
+**********************************************************************
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 10, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 11, f = 20
+
+		Child added :  h = 9, g = 11, f = 20
+
+**********************************************************************
+		 h = 9, g = 11, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 9, g = 11, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 12, f = 20
+
+		Child added :  h = 8, g = 12, f = 20
+
+**********************************************************************
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 12, f = 20
+parent_op->get_cost() = 1
+	Nodes generated:  h = 9, g = 13, f = 22
+**********************************************************************
+		 h = 10, g = 8, f = 18
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 10, g = 8, f = 18
+**********************************************************************
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 6, f = 14
+**********************************************************************
+		 h = 7, g = 1, f = 8
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 1, f = 8
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 2, f = 10
+
+		Child added :  h = 8, g = 2, f = 10
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 2, f = 10
+
+		Child added :  h = 8, g = 2, f = 10
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 2, f = 8
+
+		Child added :  h = 6, g = 2, f = 8
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 2, f = 8
+
+		Child added :  h = 6, g = 2, f = 8
+
+**********************************************************************
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 2, f = 8
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 3, f = 10
+
+		Child added :  h = 7, g = 3, f = 10
+
+**********************************************************************
+		 h = 7, g = 3, f = 10
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 3, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 4, f = 10
+
+		Child added :  h = 6, g = 4, f = 10
+
+**********************************************************************
+		 h = 6, g = 4, f = 10
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 4, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 5, f = 12
+
+		Child added :  h = 7, g = 5, f = 12
+
+**********************************************************************
+		 h = 7, g = 5, f = 12
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 5, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 6, f = 12
+
+		Child added :  h = 6, g = 6, f = 12
+
+**********************************************************************
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 6, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 7, f = 14
+
+		Child added :  h = 7, g = 7, f = 14
+
+**********************************************************************
+		 h = 7, g = 7, f = 14
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 7, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 8, f = 14
+
+		Child added :  h = 6, g = 8, f = 14
+
+**********************************************************************
+		 h = 6, g = 8, f = 14
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 8, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 9, f = 16
+
+		Child added :  h = 7, g = 9, f = 16
+
+**********************************************************************
+		 h = 7, g = 9, f = 16
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 9, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 10, f = 16
+
+		Child added :  h = 6, g = 10, f = 16
+
+**********************************************************************
+		 h = 6, g = 10, f = 16
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 10, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 11, f = 18
+
+		Child added :  h = 7, g = 11, f = 18
+
+**********************************************************************
+		 h = 7, g = 11, f = 18
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 11, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 12, f = 18
+
+		Child added :  h = 6, g = 12, f = 18
+
+**********************************************************************
+		 h = 6, g = 12, f = 18
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 12, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 13, f = 20
+**********************************************************************
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 2, f = 8
+**********************************************************************
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 2, f = 10
+**********************************************************************
+		 h = 8, g = 2, f = 10
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 8, g = 2, f = 10
+**********************************************************************
+		 h = 5, g = 1, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 5, g = 1, f = 6
+parent_op->get_cost() = 1
+	Nodes generated:  h = 4, g = 2, f = 6
+
+		Child added :  h = 4, g = 2, f = 6
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 2, f = 8
+
+		Child added :  h = 6, g = 2, f = 8
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 2, f = 8
+
+		Child added :  h = 6, g = 2, f = 8
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 2, f = 8
+
+		Child added :  h = 6, g = 2, f = 8
+
+**********************************************************************
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 4, g = 2, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 2, f = 8
+parent_op->get_cost() = 1
+	Nodes generated:  h = 5, g = 3, f = 8
+
+		Child added :  h = 5, g = 3, f = 8
+
+**********************************************************************
+		 h = 5, g = 3, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 4, g = 2, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 5, g = 3, f = 8
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 4, f = 10
+
+		Child added :  h = 6, g = 4, f = 10
+
+**********************************************************************
+		 h = 6, g = 4, f = 10
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 4, g = 2, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 4, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 5, g = 5, f = 10
+
+		Child added :  h = 5, g = 5, f = 10
+
+**********************************************************************
+		 h = 5, g = 5, f = 10
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 4, g = 2, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 5, g = 5, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 6, f = 12
+
+		Child added :  h = 6, g = 6, f = 12
+
+**********************************************************************
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 4, g = 2, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 6, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 5, g = 7, f = 12
+
+		Child added :  h = 5, g = 7, f = 12
+
+**********************************************************************
+		 h = 5, g = 7, f = 12
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 4, g = 2, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 5, g = 7, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 8, f = 14
+
+		Child added :  h = 6, g = 8, f = 14
+
+**********************************************************************
+		 h = 6, g = 8, f = 14
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 4, g = 2, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 8, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 5, g = 9, f = 14
+
+		Child added :  h = 5, g = 9, f = 14
+
+**********************************************************************
+		 h = 5, g = 9, f = 14
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 4, g = 2, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 5, g = 9, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 10, f = 16
+
+		Child added :  h = 6, g = 10, f = 16
+
+**********************************************************************
+		 h = 6, g = 10, f = 16
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 4, g = 2, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 10, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 5, g = 11, f = 16
+
+		Child added :  h = 5, g = 11, f = 16
+
+**********************************************************************
+		 h = 5, g = 11, f = 16
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 4, g = 2, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 5, g = 11, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 12, f = 18
+
+		Child added :  h = 6, g = 12, f = 18
+
+**********************************************************************
+		 h = 6, g = 12, f = 18
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 4, g = 2, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 12, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 5, g = 13, f = 18
+**********************************************************************
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 4, g = 2, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 2, f = 8
+**********************************************************************
+		 h = 6, g = 2, f = 8
+		 h = 4, g = 2, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 6, g = 2, f = 8
+**********************************************************************
+		 h = 4, g = 2, f = 6
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 4, g = 2, f = 6
+**********************************************************************
+		 h = 7, g = 1, f = 8
+**********************************************************************
+Raiz h = 7, g = 1, f = 8
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 2, f = 10
+
+		Child added :  h = 8, g = 2, f = 10
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 2, f = 10
+
+		Child added :  h = 8, g = 2, f = 10
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 8, g = 2, f = 10
+
+		Child added :  h = 8, g = 2, f = 10
+
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 2, f = 8
+
+		Child added :  h = 6, g = 2, f = 8
+
+**********************************************************************
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+**********************************************************************
+Raiz h = 6, g = 2, f = 8
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 3, f = 10
+
+		Child added :  h = 7, g = 3, f = 10
+
+**********************************************************************
+		 h = 7, g = 3, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+**********************************************************************
+Raiz h = 7, g = 3, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 4, f = 10
+
+		Child added :  h = 6, g = 4, f = 10
+
+**********************************************************************
+		 h = 6, g = 4, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+**********************************************************************
+Raiz h = 6, g = 4, f = 10
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 5, f = 12
+
+		Child added :  h = 7, g = 5, f = 12
+
+**********************************************************************
+		 h = 7, g = 5, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+**********************************************************************
+Raiz h = 7, g = 5, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 6, f = 12
+
+		Child added :  h = 6, g = 6, f = 12
+
+**********************************************************************
+		 h = 6, g = 6, f = 12
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+**********************************************************************
+Raiz h = 6, g = 6, f = 12
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 7, f = 14
+
+		Child added :  h = 7, g = 7, f = 14
+
+**********************************************************************
+		 h = 7, g = 7, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+**********************************************************************
+Raiz h = 7, g = 7, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 8, f = 14
+
+		Child added :  h = 6, g = 8, f = 14
+
+**********************************************************************
+		 h = 6, g = 8, f = 14
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+**********************************************************************
+Raiz h = 6, g = 8, f = 14
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 9, f = 16
+
+		Child added :  h = 7, g = 9, f = 16
+
+**********************************************************************
+		 h = 7, g = 9, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+**********************************************************************
+Raiz h = 7, g = 9, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 10, f = 16
+
+		Child added :  h = 6, g = 10, f = 16
+
+**********************************************************************
+		 h = 6, g = 10, f = 16
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+**********************************************************************
+Raiz h = 6, g = 10, f = 16
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 11, f = 18
+
+		Child added :  h = 7, g = 11, f = 18
+
+**********************************************************************
+		 h = 7, g = 11, f = 18
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+**********************************************************************
+Raiz h = 7, g = 11, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 6, g = 12, f = 18
+
+		Child added :  h = 6, g = 12, f = 18
+
+**********************************************************************
+		 h = 6, g = 12, f = 18
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+**********************************************************************
+Raiz h = 6, g = 12, f = 18
+parent_op->get_cost() = 1
+	Nodes generated:  h = 7, g = 13, f = 20
+**********************************************************************
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+**********************************************************************
+Raiz h = 8, g = 2, f = 10
+**********************************************************************
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+**********************************************************************
+Raiz h = 8, g = 2, f = 10
+**********************************************************************
+		 h = 8, g = 2, f = 10
+**********************************************************************
+Raiz h = 8, g = 2, f = 10
+Print P.
+**********************************************************************
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 6, g = 12, f = 18
+		 h = 5, g = 13, f = 18
+		 h = 6, g = 12, f = 18
+		 h = 5, g = 13, f = 18
+		 h = 6, g = 12, f = 18
+		 h = 5, g = 13, f = 18
+		 h = 6, g = 12, f = 18
+		 h = 5, g = 13, f = 18
+		 h = 6, g = 12, f = 18
+		 h = 5, g = 13, f = 18
+		 h = 6, g = 12, f = 18
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 4, g = 2, f = 6
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 9, g = 13, f = 22
+		 h = 6, g = 2, f = 8
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 2, f = 8
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 2, f = 8
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 6, f = 14
+		 h = 7, g = 13, f = 20
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 6, f = 18
+		 h = 11, g = 13, f = 24
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 12, f = 22
+		 h = 8, g = 6, f = 14
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 8, f = 20
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 10, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 12, f = 24
+		 h = 11, g = 13, f = 24
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 12, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 12, f = 22
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 10, g = 10, f = 20
+		 h = 10, g = 12, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 10, g = 12, f = 22
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 13, f = 22
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 6, f = 18
+		 h = 11, g = 13, f = 24
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 12, f = 22
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 13, f = 22
+		 h = 9, g = 13, f = 22
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 8, f = 20
+		 h = 11, g = 13, f = 24
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 12, f = 22
+		 h = 9, g = 13, f = 22
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 6, f = 18
+		 h = 11, g = 13, f = 24
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 12, f = 22
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 8, f = 20
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 10, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 12, f = 22
+		 h = 9, g = 13, f = 22
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 6, g = 2, f = 8
+		 h = 7, g = 13, f = 20
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 10, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 10, f = 18
+		 h = 10, g = 12, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 10, g = 12, f = 22
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 13, f = 22
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 6, f = 18
+		 h = 11, g = 13, f = 24
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 12, f = 22
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 13, f = 22
+		 h = 9, g = 13, f = 22
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 8, f = 20
+		 h = 11, g = 13, f = 24
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 2, f = 10
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 12, f = 22
+		 h = 9, g = 13, f = 22
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 13, f = 24
+		 h = 10, g = 12, f = 22
+		 h = 12, g = 6, f = 18
+		 h = 11, g = 13, f = 24
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 12, f = 22
+		 h = 10, g = 6, f = 16
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 8, g = 8, f = 16
+		 h = 7, g = 13, f = 20
+		 h = 2, g = 12, f = 14
+		 h = 1, g = 13, f = 14
+		 h = 2, g = 12, f = 14
+		 h = 0, g = 10, f = 10
+		 h = 1, g = 13, f = 14
+		 h = 6, g = 12, f = 18
+		 h = 8, g = 12, f = 20
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 2, f = 8
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 6, g = 2, f = 8
+		 h = 5, g = 13, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 12, f = 18
+		 h = 4, g = 10, f = 14
+		 h = 5, g = 13, f = 18
+		 h = 4, g = 2, f = 6
+		 h = 3, g = 13, f = 16
+		 h = 4, g = 2, f = 6
+		 h = 3, g = 13, f = 16
+		 h = 4, g = 2, f = 6
+		 h = 4, g = 10, f = 14
+		 h = 2, g = 12, f = 14
+		 h = 4, g = 2, f = 6
+		 h = 5, g = 13, f = 18
+		 h = 4, g = 2, f = 6
+		 h = 5, g = 13, f = 18
+		 h = 4, g = 2, f = 6
+		 h = 5, g = 13, f = 18
+		 h = 3, g = 13, f = 16
+		 h = 4, g = 2, f = 6
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 12, f = 18
+		 h = 5, g = 13, f = 18
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 6, f = 16
+		 h = 9, g = 13, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 7, g = 13, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 7, g = 13, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 7, g = 13, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 7, g = 13, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 6, g = 6, f = 12
+		 h = 7, g = 13, f = 20
+		 h = 9, g = 13, f = 22
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 7, g = 13, f = 20
+		 h = 7, g = 13, f = 20
+		 h = 5, g = 13, f = 18
+		 h = 7, g = 13, f = 20
+		 h = 6, g = 12, f = 18
+**********************************************************************
 
 Vector.
-v_f_value.size() = 107
+v_f.size() = 367
 		 h = 6, g = 0, f = 6
 		 h = 7, g = 1, f = 8
 		 h = 5, g = 1, f = 6
@@ -807,105 +6361,419 @@ v_f_value.size() = 107
 		 h = 8, g = 2, f = 10
 		 h = 8, g = 2, f = 10
 		 h = 8, g = 2, f = 10
+		 h = 6, g = 2, f = 8
+		 h = 7, g = 3, f = 10
+		 h = 6, g = 4, f = 10
+		 h = 7, g = 5, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 7, g = 7, f = 14
+		 h = 6, g = 8, f = 14
+		 h = 7, g = 9, f = 16
+		 h = 6, g = 10, f = 16
+		 h = 7, g = 11, f = 18
+		 h = 6, g = 12, f = 18
 		 h = 9, g = 3, f = 12
 		 h = 7, g = 3, f = 10
 		 h = 6, g = 4, f = 10
 		 h = 8, g = 4, f = 12
-		 h = 9, g = 5, f = 14
-		 h = 10, g = 6, f = 16
-		 h = 5, g = 5, f = 10
-		 h = 6, g = 6, f = 12
-		 h = 4, g = 6, f = 10
-		 h = 3, g = 7, f = 10
-		 h = 2, g = 8, f = 10
-		 h = 4, g = 8, f = 12
-		 h = 5, g = 9, f = 14
-		 h = 6, g = 10, f = 16
-		 h = 6, g = 10, f = 16
-		 h = 7, g = 11, f = 18
-		 h = 8, g = 12, f = 20
-		 h = 8, g = 12, f = 20
-		 h = 7, g = 11, f = 18
-		 h = 8, g = 12, f = 20
-		 h = 1, g = 9, f = 10
-		 h = 0, g = 10, f = 10
+		 h = 8, g = 4, f = 12
+		 h = 7, g = 5, f = 12
+		 h = 8, g = 6, f = 14
 		 h = 7, g = 7, f = 14
-		 h = 8, g = 8, f = 16
-		 h = 10, g = 4, f = 14
-		 h = 10, g = 4, f = 14
-		 h = 11, g = 5, f = 16
-		 h = 12, g = 6, f = 18
-		 h = 9, g = 5, f = 14
-		 h = 10, g = 6, f = 16
-		 h = 8, g = 6, f = 14
-		 h = 11, g = 7, f = 18
-		 h = 12, g = 8, f = 20
-		 h = 9, g = 3, f = 12
-		 h = 9, g = 3, f = 12
-		 h = 10, g = 4, f = 14
-		 h = 10, g = 4, f = 14
-		 h = 11, g = 5, f = 16
-		 h = 12, g = 6, f = 18
-		 h = 9, g = 5, f = 14
-		 h = 10, g = 6, f = 16
-		 h = 8, g = 6, f = 14
-		 h = 9, g = 7, f = 16
-		 h = 10, g = 8, f = 18
 		 h = 8, g = 8, f = 16
 		 h = 7, g = 9, f = 16
 		 h = 8, g = 10, f = 18
-		 h = 6, g = 10, f = 16
 		 h = 7, g = 11, f = 18
 		 h = 8, g = 12, f = 20
-		 h = 8, g = 12, f = 20
-		 h = 9, g = 11, f = 20
-		 h = 10, g = 12, f = 22
-		 h = 11, g = 9, f = 20
-		 h = 12, g = 10, f = 22
-		 h = 11, g = 7, f = 18
-		 h = 12, g = 8, f = 20
-		 h = 10, g = 4, f = 14
-		 h = 10, g = 4, f = 14
-		 h = 11, g = 5, f = 16
-		 h = 12, g = 6, f = 18
-		 h = 9, g = 5, f = 14
-		 h = 10, g = 6, f = 16
-		 h = 8, g = 6, f = 14
-		 h = 11, g = 7, f = 18
-		 h = 12, g = 8, f = 20
-		 h = 9, g = 3, f = 12
-		 h = 9, g = 3, f = 12
-		 h = 10, g = 4, f = 14
-		 h = 10, g = 4, f = 14
-		 h = 11, g = 5, f = 16
-		 h = 12, g = 6, f = 18
 		 h = 9, g = 5, f = 14
 		 h = 10, g = 6, f = 16
 		 h = 8, g = 6, f = 14
 		 h = 9, g = 7, f = 16
-		 h = 10, g = 8, f = 18
-		 h = 10, g = 8, f = 18
+		 h = 8, g = 8, f = 16
 		 h = 9, g = 9, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 5, g = 5, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 4, g = 6, f = 10
+		 h = 3, g = 7, f = 10
+		 h = 5, g = 7, f = 12
+		 h = 4, g = 8, f = 12
+		 h = 5, g = 9, f = 14
+		 h = 4, g = 10, f = 14
+		 h = 5, g = 11, f = 16
+		 h = 4, g = 12, f = 16
+		 h = 2, g = 8, f = 10
+		 h = 4, g = 8, f = 12
+		 h = 4, g = 8, f = 12
+		 h = 3, g = 9, f = 12
+		 h = 4, g = 10, f = 14
+		 h = 3, g = 11, f = 14
+		 h = 4, g = 12, f = 16
+		 h = 5, g = 9, f = 14
+		 h = 4, g = 10, f = 14
+		 h = 6, g = 10, f = 16
+		 h = 6, g = 10, f = 16
+		 h = 7, g = 11, f = 18
+		 h = 5, g = 11, f = 16
+		 h = 6, g = 12, f = 18
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 7, g = 11, f = 18
+		 h = 8, g = 12, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 1, g = 9, f = 10
+		 h = 0, g = 10, f = 10
+		 h = 2, g = 10, f = 12
+		 h = 1, g = 11, f = 12
+		 h = 2, g = 12, f = 14
+		 h = 7, g = 7, f = 14
+		 h = 8, g = 8, f = 16
+		 h = 6, g = 8, f = 14
+		 h = 7, g = 9, f = 16
+		 h = 6, g = 10, f = 16
+		 h = 7, g = 11, f = 18
+		 h = 6, g = 12, f = 18
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 9, g = 5, f = 14
+		 h = 8, g = 6, f = 14
+		 h = 9, g = 7, f = 16
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 9, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 11, g = 5, f = 16
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 11, g = 7, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 11, g = 9, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 11, g = 11, f = 22
+		 h = 10, g = 12, f = 22
+		 h = 9, g = 5, f = 14
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 6, f = 14
+		 h = 9, g = 7, f = 16
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 9, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 11, g = 7, f = 18
+		 h = 12, g = 8, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 11, g = 9, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 11, g = 11, f = 22
+		 h = 10, g = 12, f = 22
+		 h = 9, g = 3, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 9, g = 5, f = 14
+		 h = 8, g = 6, f = 14
+		 h = 9, g = 7, f = 16
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 9, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 11, g = 5, f = 16
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 11, g = 7, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 11, g = 9, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 11, g = 11, f = 22
+		 h = 10, g = 12, f = 22
+		 h = 9, g = 5, f = 14
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 6, f = 14
+		 h = 9, g = 7, f = 16
+		 h = 9, g = 7, f = 16
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 9, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 8, g = 8, f = 16
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 9, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 7, g = 9, f = 16
+		 h = 8, g = 10, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 6, g = 10, f = 16
+		 h = 7, g = 11, f = 18
+		 h = 7, g = 11, f = 18
+		 h = 6, g = 12, f = 18
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 6, g = 12, f = 18
+		 h = 9, g = 11, f = 20
+		 h = 10, g = 12, f = 22
+		 h = 8, g = 12, f = 20
+		 h = 11, g = 9, f = 20
+		 h = 12, g = 10, f = 22
+		 h = 10, g = 10, f = 20
+		 h = 11, g = 11, f = 22
+		 h = 10, g = 12, f = 22
+		 h = 11, g = 7, f = 18
+		 h = 12, g = 8, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 11, g = 9, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 11, g = 11, f = 22
+		 h = 10, g = 12, f = 22
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 9, g = 5, f = 14
+		 h = 8, g = 6, f = 14
+		 h = 9, g = 7, f = 16
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 9, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 11, g = 5, f = 16
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 11, g = 7, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 11, g = 9, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 11, g = 11, f = 22
+		 h = 10, g = 12, f = 22
+		 h = 9, g = 5, f = 14
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 6, f = 14
+		 h = 9, g = 7, f = 16
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 9, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 11, g = 7, f = 18
+		 h = 12, g = 8, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 11, g = 9, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 11, g = 11, f = 22
+		 h = 10, g = 12, f = 22
+		 h = 9, g = 3, f = 12
+		 h = 9, g = 3, f = 12
+		 h = 10, g = 4, f = 14
+		 h = 10, g = 4, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 9, g = 5, f = 14
+		 h = 8, g = 6, f = 14
+		 h = 9, g = 7, f = 16
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 9, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 11, g = 5, f = 16
+		 h = 12, g = 6, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 11, g = 7, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 11, g = 9, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 11, g = 11, f = 22
+		 h = 10, g = 12, f = 22
+		 h = 9, g = 5, f = 14
+		 h = 10, g = 6, f = 16
+		 h = 10, g = 6, f = 16
+		 h = 8, g = 6, f = 14
+		 h = 9, g = 7, f = 16
+		 h = 9, g = 7, f = 16
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 9, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 9, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 9, g = 9, f = 18
+		 h = 10, g = 10, f = 20
 		 h = 10, g = 10, f = 20
 		 h = 8, g = 10, f = 18
 		 h = 9, g = 11, f = 20
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 12, f = 20
 		 h = 10, g = 12, f = 22
+		 h = 8, g = 12, f = 20
 		 h = 8, g = 12, f = 20
 		 h = 11, g = 11, f = 22
 		 h = 12, g = 12, f = 24
+		 h = 10, g = 12, f = 22
 		 h = 11, g = 9, f = 20
 		 h = 12, g = 10, f = 22
+		 h = 10, g = 10, f = 20
+		 h = 11, g = 11, f = 22
+		 h = 10, g = 12, f = 22
 		 h = 11, g = 7, f = 18
 		 h = 12, g = 8, f = 20
+		 h = 10, g = 8, f = 18
+		 h = 11, g = 9, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 11, g = 11, f = 22
+		 h = 10, g = 12, f = 22
 		 h = 8, g = 4, f = 12
 		 h = 10, g = 4, f = 14
+		 h = 8, g = 4, f = 12
+		 h = 9, g = 5, f = 14
+		 h = 8, g = 6, f = 14
+		 h = 9, g = 7, f = 16
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 9, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 12, f = 20
 		 h = 11, g = 5, f = 16
 		 h = 12, g = 6, f = 18
+		 h = 10, g = 6, f = 16
+		 h = 11, g = 7, f = 18
+		 h = 10, g = 8, f = 18
+		 h = 11, g = 9, f = 20
+		 h = 10, g = 10, f = 20
+		 h = 11, g = 11, f = 22
+		 h = 10, g = 12, f = 22
 		 h = 7, g = 5, f = 12
 		 h = 8, g = 6, f = 14
+		 h = 8, g = 6, f = 14
 		 h = 6, g = 6, f = 12
+		 h = 7, g = 7, f = 14
+		 h = 6, g = 8, f = 14
+		 h = 7, g = 9, f = 16
+		 h = 6, g = 10, f = 16
+		 h = 7, g = 11, f = 18
+		 h = 6, g = 12, f = 18
 		 h = 9, g = 7, f = 16
 		 h = 10, g = 8, f = 18
+		 h = 8, g = 8, f = 16
+		 h = 9, g = 9, f = 18
+		 h = 8, g = 10, f = 18
+		 h = 9, g = 11, f = 20
+		 h = 8, g = 12, f = 20
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 7, g = 3, f = 10
+		 h = 6, g = 4, f = 10
+		 h = 7, g = 5, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 7, g = 7, f = 14
+		 h = 6, g = 8, f = 14
+		 h = 7, g = 9, f = 16
+		 h = 6, g = 10, f = 16
+		 h = 7, g = 11, f = 18
+		 h = 6, g = 12, f = 18
+		 h = 4, g = 2, f = 6
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 6, g = 2, f = 8
+		 h = 5, g = 3, f = 8
+		 h = 6, g = 4, f = 10
+		 h = 5, g = 5, f = 10
+		 h = 6, g = 6, f = 12
+		 h = 5, g = 7, f = 12
+		 h = 6, g = 8, f = 14
+		 h = 5, g = 9, f = 14
+		 h = 6, g = 10, f = 16
+		 h = 5, g = 11, f = 16
+		 h = 6, g = 12, f = 18
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 8, g = 2, f = 10
+		 h = 6, g = 2, f = 8
+		 h = 7, g = 3, f = 10
+		 h = 6, g = 4, f = 10
+		 h = 7, g = 5, f = 12
+		 h = 6, g = 6, f = 12
+		 h = 7, g = 7, f = 14
+		 h = 6, g = 8, f = 14
+		 h = 7, g = 9, f = 16
+		 h = 6, g = 10, f = 16
+		 h = 7, g = 11, f = 18
+		 h = 6, g = 12, f = 18
+g.size() = 13
+Display.
+g = 0
+6 
+
+g = 1
+8 6 8 8 
+
+g = 2
+10 10 10 8 10 10 12 12 14 14 16 16 18 18 12 10 
+
+g = 3
+10 12 12 12 14 14 16 16 18 18 
+
+g = 4
+20 14 16 14 16 16 18 18 20 20 10 12 12 10 10 12 12 14 14 16 16 10 
+
+g = 5
+12 12 12 14 14 16 14 14 16 16 18 16 18 20 20 18 18 20 18 10 10 12 
+
+g = 6
+12 14 14 16 14 16 16 18 18 14 14 12 14 14 16 16 18 18 20 20 16 18 16 18 18 20 20 22 22 14 16 16 14 16 16 18 18 20 20 18 
+
+g = 7
+20 18 20 20 22 22 12 12 14 14 12 14 14 16 16 18 18 20 20 16 18 16 18 18 20 20 22 22 14 16 16 
+
+g = 8
+14 16 16 16 18 18 20 20 18 16 16 18 18 20 20 16 18 18 16 18 18 18 20 20 18 20 22 20 20 22 20 22 22 18 20 18 20 20 22 22 14 14 12 
+
+g = 9
+14 14 16 16 18 18 20 20 16 18 16 18 18 20 20 22 22 14 16 16 14 16 16 18 18 20 20 18 20 18 20 20 22 22 12 12 14 
+
+g = 10
+14 12 14 14 16 16 18 18 20 20 16 18 16 18 18 20 20 22 22 14 16 16 14 16 16 16 18 18 20 20 18 18 16 18 18 20 20 18 20 20 18 20 20 20 22 20 
+
+g = 11
+20 22 24 22 20 22 20 22 22 18 20 18 20 20 22 22 12 14 12 14 14 16 16 18 18 20 20 16 18 16 18 18 20 20 22 22 12 14 14 12 14 14 16 
+
+g = 12
+16 18 18 16 18 16 18 18 20 20 10 10 8 8 10 10 12 12 14 14 16 16 18 18 6 8 8 8 8 10 10 12 12 14 14 16 16 18 10 10 10 8 10 10 12 12 14 14 16 16 18 18 
+
+f_exp.size() = 367
+f(camada)	#nodes expanded
+6	3
+8	11
+10	24
+12	33
+14	52
+16	69
+18	79
+20	67
+22	28
+24	1
+
 fileName size () = 1
 fileName size () = 19
 fileName size () = 2
@@ -918,54 +6786,117 @@ g = 0
 f: 6 q: 1
 
 g = 1
-f: 10 q: 1
+f: 6 q: 1
+f: 8 q: 3
 
 g = 2
-f: 12 q: 1
+f: 8 q: 1
+f: 10 q: 6
+f: 12 q: 3
+f: 14 q: 2
+f: 16 q: 2
+f: 18 q: 2
 
 g = 3
 f: 10 q: 1
+f: 12 q: 3
+f: 14 q: 2
+f: 16 q: 2
+f: 18 q: 2
 
 g = 4
-f: 14 q: 1
+f: 10 q: 4
+f: 12 q: 4
+f: 14 q: 4
+f: 16 q: 5
+f: 18 q: 2
+f: 20 q: 3
 
 g = 5
-f: 16 q: 1
+f: 10 q: 2
+f: 12 q: 4
+f: 14 q: 4
+f: 16 q: 4
+f: 18 q: 5
+f: 20 q: 3
 
 g = 6
+f: 12 q: 2
+f: 14 q: 9
+f: 16 q: 11
+f: 18 q: 10
+f: 20 q: 6
+f: 22 q: 2
 
 g = 7
-f: 10 q: 1
+f: 12 q: 3
+f: 14 q: 5
+f: 16 q: 6
+f: 18 q: 6
+f: 20 q: 7
+f: 22 q: 4
 
 g = 8
-f: 14 q: 1
+f: 12 q: 1
+f: 14 q: 3
+f: 16 q: 7
+f: 18 q: 13
+f: 20 q: 13
+f: 22 q: 6
 
 g = 9
+f: 12 q: 2
+f: 14 q: 5
+f: 16 q: 8
+f: 18 q: 9
+f: 20 q: 9
+f: 22 q: 4
 
 g = 10
-f: 18 q: 1
+f: 12 q: 1
+f: 14 q: 5
+f: 16 q: 10
+f: 18 q: 13
+f: 20 q: 14
+f: 22 q: 3
 
 g = 11
-f: 20 q: 1
+f: 12 q: 4
+f: 14 q: 7
+f: 16 q: 5
+f: 18 q: 7
+f: 20 q: 10
+f: 22 q: 9
+f: 24 q: 1
 
 g = 12
+f: 6 q: 1
+f: 8 q: 7
+f: 10 q: 11
+f: 12 q: 6
+f: 14 q: 6
+f: 16 q: 9
+f: 18 q: 10
+f: 20 q: 2
 
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
-Actual search time: 0s [t=1,11s]
+Actual search time: 0,04s [t=1,15s]
 Expanded 0 state(s).
 Reopened 0 state(s).
 Evaluated 1 state(s).
 Evaluations: 1
-Generated 0 state(s).
+Generated 970 state(s).
 Dead ends: 1 state(s).
 Search space hash size: 113
 Search space hash bucket count: 193
-Search time: 1,11s
-Total time: 1,11s
-Peak memory: 18712 KB
-VmRSS memory: 2256 KB
-VmHWM memory: 9848 KB
+Search time: 1,15s
+Total time: 1,15s
+Peak memory: 19352 KB
+VmRSS memory: 1876 KB
+VmHWM memory: 11056 KB
+destructor of HST eliminates all the hashed state descriptions
+destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
