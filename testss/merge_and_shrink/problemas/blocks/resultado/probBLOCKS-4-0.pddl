@@ -5,8 +5,8 @@ argv[0] = src/search/downward-1
 argv[0][0] = s
 argv[1] = --search
 argv[2] = ss(merge_and_shrink())
-argv[4] = XDG_VTNR=2
-argv[5] = XDG_SESSION_ID=c6
+argv[4] = XDG_VTNR=5
+argv[5] = XDG_SESSION_ID=c5
 argc = 3
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
@@ -22,14 +22,14 @@ registered: ss
  ______________________________
 registered: merge_and_shrink
 parser is not dry_run
-g object = 0xa224df8
+g object = 0xa28c590
 ScalarEvaluator vector pointer []
-ScalarEvaluator vector pointer after add g = [0xa224df8]
-ScalarEvaluator vector pointer after add eval = [0xa224df8, 0xa225ae8]
+ScalarEvaluator vector pointer after add g = [0xa28c590]
+ScalarEvaluator vector pointer after add eval = [0xa28c590, 0xa28d280]
 subevaluators_.size:2
-new vector of ScalarEvaluator created = [0xa225360, 0xa225ae8]
-OpenList vector of state_var_t objects = 0xa225b58
-engine = 0xa225188
+new vector of ScalarEvaluator created = [0xa28caf8, 0xa28d280]
+OpenList vector of state_var_t objects = 0xa28d2f0
+engine = 0xa28c920
  ___________________________________
 |         calling initialize        |
  ___________________________________
@@ -50,9 +50,9 @@ f_evaluator populated
 conditional_effects_present = 0
 Conditional effects present = 0
 starting timings 
-initial state = 0xa21c638
-node_counter = 663697
-node_gen_and_exp_cost = 1,50671e-06
+initial state = 0xa283dd0
+node_counter = 704496
+node_gen_and_exp_cost = 1,41945e-06
 active heuristics size : 1
 # heristics = 1
 dead_end = 1
@@ -220,10 +220,10 @@ Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1s]
 Abstraction (8/9 vars): normalizing with label reduction
 Label reduction: 8 pruned vars, 32 labels, 9 reduced labels
 Abstraction (8/9 vars): 2984 states, ???/18576 arcs, 247756 bytes
-Abstraction (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=1,01s]
+Abstraction (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=1s]
 Atomic abstraction #0: normalizing without label reduction
 Atomic abstraction #0: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1,01s]
+Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1s]
 Merging abstraction (8/9 vars) and atomic abstraction #0
 Abstraction (9/9 vars): 14920 states, ???/46908 arcs, 486348 bytes
 Abstraction (9/9 vars): distances not computed [t=1,01s]
@@ -239,16 +239,16 @@ Abstraction (9/9 vars): applying abstraction to lookup table
 Abstraction (9/9 vars): size after shrink 125, target 125
 Abstraction (9/9 vars): distances already known
 Abstraction (9/9 vars): 125 states, ???/272 arcs, 99444 bytes
-Abstraction (9/9 vars): init h=6, max f=18, max g=6, max h=12 [t=1,01s]
-Done initializing merge-and-shrink heuristic [0,01s]
+Abstraction (9/9 vars): init h=6, max f=18, max g=6, max h=12 [t=1,02s]
+Done initializing merge-and-shrink heuristic [0,02s]
 initial h value: 6
 Estimated peak memory for abstraction: 486348 bytes
 heur_name = No Name
-h[,0,] is:,heur is not named,measured time cost: 8,36642e-07,h:6
+h[,0,] is:,heur is not named,measured time cost: 7,28077e-07,h:6
 memory before deleting databases: 
-VmRSS memory: 15764 KB
+VmRSS memory: 17784 KB
 memory after deleting all databases: 
-VmRSS memory: 15764 KB
+VmRSS memory: 17784 KB
 Remaining heuristics:
 remaining initial heur heur is not named
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
@@ -297,7 +297,8 @@ Node is in the queue and should not be added.
 		
 Duplicate node h = 7 g = 1 f = 8
 Update w from 1 to 2
- a >= prob do not add the new element.
+remove the old node. 
+ a < prob add new child with w = 2
 Childs:  h = 7 g = 1 f = 8
 	Child Pruned  h = 7 g = 1 f = 8
 		
@@ -338,8 +339,7 @@ Node is in the queue and should not be added.
 		
 Duplicate node h = 6 g = 2 f = 8
 Update w from 1 to 2
-remove the old node. 
- a < prob add new child with w = 2
+ a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 7 g = 1 f = 8
 g : 1
@@ -363,18 +363,19 @@ Node is in the queue and should not be added.
 Duplicate node h = 8 g = 2 f = 10
 Update w from 3 to 6
  a >= prob do not add the new element.
-Childs:  h = 8 g = 2 f = 10
-	Child Pruned  h = 8 g = 2 f = 10
+Childs:  h = 6 g = 2 f = 8
+	Child Pruned  h = 6 g = 2 f = 8
 		
 		 level: 2 (to confirm).
 		h = 4, g = 2, f = 6
 		h = 6, g = 2, f = 8
-		h = 8, g = 2, f = 10
 Node is in the queue and should not be added.
+		h = 8, g = 2, f = 10
 		
-Duplicate node h = 8 g = 2 f = 10
-Update w from 6 to 9
- a >= prob do not add the new element.
+Duplicate node h = 6 g = 2 f = 8
+Update w from 2 to 5
+remove the old node. 
+ a < prob add new child with w = 5
 ******************************************
 Raiz:  h = 4 g = 2 f = 6
 g : 2
@@ -407,19 +408,20 @@ Childs:  h = 7 g = 3 f = 10
 		h = 5, g = 3, f = 8
 		
 	New node h = 7 g = 3 f = 10
-Childs:  h = 7 g = 3 f = 10
-	Child Pruned  h = 7 g = 3 f = 10
+Childs:  h = 5 g = 3 f = 8
+	Child Pruned  h = 5 g = 3 f = 8
 		
 		 level: 3 (to confirm).
 		h = 8, g = 2, f = 10
 		h = 3, g = 3, f = 6
 		h = 5, g = 3, f = 8
-		h = 7, g = 3, f = 10
 Node is in the queue and should not be added.
+		h = 7, g = 3, f = 10
 		
-Duplicate node h = 7 g = 3 f = 10
-Update w from 2 to 4
- a >= prob do not add the new element.
+Duplicate node h = 5 g = 3 f = 8
+Update w from 1 to 6
+remove the old node. 
+ a < prob add new child with w = 6
 ******************************************
 Raiz:  h = 8 g = 2 f = 10
 g : 2
@@ -443,9 +445,9 @@ Childs:  h = 9 g = 3 f = 12
 Node is in the queue and should not be added.
 		
 Duplicate node h = 9 g = 3 f = 12
-Update w from 9 to 18
+Update w from 6 to 12
 remove the old node. 
- a < prob add new child with w = 18
+ a < prob add new child with w = 12
 ******************************************
 Raiz:  h = 3 g = 3 f = 6
 g : 3
@@ -481,20 +483,6 @@ Childs:  h = 6 g = 4 f = 10
 		h = 4, g = 4, f = 8
 		
 	New node h = 6 g = 4 f = 10
-Childs:  h = 6 g = 4 f = 10
-	Child Pruned  h = 6 g = 4 f = 10
-		
-		 level: 4 (to confirm).
-		h = 7, g = 3, f = 10
-		h = 9, g = 3, f = 12
-		h = 2, g = 4, f = 6
-		h = 4, g = 4, f = 8
-		h = 6, g = 4, f = 10
-Node is in the queue and should not be added.
-		
-Duplicate node h = 6 g = 4 f = 10
-Update w from 1 to 2
- a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 7 g = 3 f = 10
 g : 3
@@ -520,8 +508,9 @@ Childs:  h = 8 g = 4 f = 12
 Node is in the queue and should not be added.
 		
 Duplicate node h = 8 g = 4 f = 12
-Update w from 4 to 8
- a >= prob do not add the new element.
+Update w from 5 to 10
+remove the old node. 
+ a < prob add new child with w = 10
 ******************************************
 Raiz:  h = 9 g = 3 f = 12
 g : 3
@@ -547,8 +536,9 @@ Childs:  h = 10 g = 4 f = 14
 Node is in the queue and should not be added.
 		
 Duplicate node h = 10 g = 4 f = 14
-Update w from 18 to 36
- a >= prob do not add the new element.
+Update w from 12 to 24
+remove the old node. 
+ a < prob add new child with w = 24
 ******************************************
 Raiz:  h = 2 g = 4 f = 6
 g : 4
@@ -565,16 +555,6 @@ Childs:  h = 1 g = 5 f = 6
 ******************************************
 Raiz:  h = 4 g = 4 f = 8
 g : 4
-Childs:  h = 5 g = 5 f = 10
-	Child Pruned  h = 5 g = 5 f = 10
-		
-		 level: 5 (to confirm).
-		h = 6, g = 4, f = 10
-		h = 8, g = 4, f = 12
-		h = 10, g = 4, f = 14
-		h = 1, g = 5, f = 6
-		
-	New node h = 5 g = 5 f = 10
 ******************************************
 Raiz:  h = 6 g = 4 f = 10
 g : 4
@@ -585,7 +565,6 @@ Childs:  h = 7 g = 5 f = 12
 		h = 8, g = 4, f = 12
 		h = 10, g = 4, f = 14
 		h = 1, g = 5, f = 6
-		h = 5, g = 5, f = 10
 		
 	New node h = 7 g = 5 f = 12
 ******************************************
@@ -597,7 +576,6 @@ Childs:  h = 9 g = 5 f = 14
 		 level: 5 (to confirm).
 		h = 10, g = 4, f = 14
 		h = 1, g = 5, f = 6
-		h = 5, g = 5, f = 10
 		h = 7, g = 5, f = 12
 		
 	New node h = 9 g = 5 f = 14
@@ -609,7 +587,6 @@ Childs:  h = 11 g = 5 f = 16
 		
 		 level: 5 (to confirm).
 		h = 1, g = 5, f = 6
-		h = 5, g = 5, f = 10
 		h = 7, g = 5, f = 12
 		h = 9, g = 5, f = 14
 		
@@ -621,39 +598,11 @@ Childs:  h = 0 g = 6 f = 6
 	Child Pruned  h = 0 g = 6 f = 6
 		
 		 level: 6 (to confirm).
-		h = 5, g = 5, f = 10
 		h = 7, g = 5, f = 12
 		h = 9, g = 5, f = 14
 		h = 11, g = 5, f = 16
 		
 	New node h = 0 g = 6 f = 6
-******************************************
-Raiz:  h = 5 g = 5 f = 10
-g : 5
-Childs:  h = 6 g = 6 f = 12
-	Child Pruned  h = 6 g = 6 f = 12
-		
-		 level: 6 (to confirm).
-		h = 7, g = 5, f = 12
-		h = 9, g = 5, f = 14
-		h = 11, g = 5, f = 16
-		h = 0, g = 6, f = 6
-		
-	New node h = 6 g = 6 f = 12
-Childs:  h = 6 g = 6 f = 12
-	Child Pruned  h = 6 g = 6 f = 12
-		
-		 level: 6 (to confirm).
-		h = 7, g = 5, f = 12
-		h = 9, g = 5, f = 14
-		h = 11, g = 5, f = 16
-		h = 0, g = 6, f = 6
-		h = 6, g = 6, f = 12
-Node is in the queue and should not be added.
-		
-Duplicate node h = 6 g = 6 f = 12
-Update w from 1 to 2
- a >= prob do not add the new element.
 ******************************************
 Raiz:  h = 7 g = 5 f = 12
 g : 5
@@ -664,7 +613,6 @@ Childs:  h = 8 g = 6 f = 14
 		h = 9, g = 5, f = 14
 		h = 11, g = 5, f = 16
 		h = 0, g = 6, f = 6
-		h = 6, g = 6, f = 12
 		
 	New node h = 8 g = 6 f = 14
 ******************************************
@@ -676,7 +624,6 @@ Childs:  h = 10 g = 6 f = 16
 		 level: 6 (to confirm).
 		h = 11, g = 5, f = 16
 		h = 0, g = 6, f = 6
-		h = 6, g = 6, f = 12
 		h = 8, g = 6, f = 14
 		
 	New node h = 10 g = 6 f = 16
@@ -688,7 +635,6 @@ Childs:  h = 12 g = 6 f = 18
 		
 		 level: 6 (to confirm).
 		h = 0, g = 6, f = 6
-		h = 6, g = 6, f = 12
 		h = 8, g = 6, f = 14
 		h = 10, g = 6, f = 16
 		
@@ -696,18 +642,6 @@ Childs:  h = 12 g = 6 f = 18
 ******************************************
 Raiz:  h = 0 g = 6 f = 6
 g : 6
-******************************************
-Raiz:  h = 6 g = 6 f = 12
-g : 6
-Childs:  h = 7 g = 7 f = 14
-	Child Pruned  h = 7 g = 7 f = 14
-		
-		 level: 7 (to confirm).
-		h = 8, g = 6, f = 14
-		h = 10, g = 6, f = 16
-		h = 12, g = 6, f = 18
-		
-	New node h = 7 g = 7 f = 14
 ******************************************
 Raiz:  h = 8 g = 6 f = 14
 g : 6
@@ -717,23 +651,11 @@ g : 6
 ******************************************
 Raiz:  h = 12 g = 6 f = 18
 g : 6
-******************************************
-Raiz:  h = 7 g = 7 f = 14
-g : 7
-Childs:  h = 8 g = 8 f = 16
-	Child Pruned  h = 8 g = 8 f = 16
-		
-		 level: 8 (to confirm).
-		
-	New node h = 8 g = 8 f = 16
-******************************************
-Raiz:  h = 8 g = 8 f = 16
-g : 8
 v_f_value.size() = 0
 ****************************************************************
 S map.
-S.size() = 27
-sumMap = 190
+S.size() = 23
+sumMap = 165
  ____________________________
 |       step process         |
  ____________________________
@@ -751,9 +673,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -777,9 +699,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -803,9 +725,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -829,9 +751,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -855,9 +777,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -881,9 +803,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -907,9 +829,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -933,9 +855,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -959,9 +881,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -985,9 +907,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1011,9 +933,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1037,9 +959,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1063,9 +985,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1089,9 +1011,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1115,9 +1037,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1141,9 +1063,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1167,9 +1089,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1193,9 +1115,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1219,9 +1141,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1245,9 +1167,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1271,9 +1193,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1297,9 +1219,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1323,9 +1245,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1349,9 +1271,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1375,9 +1297,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1401,9 +1323,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1427,9 +1349,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1453,9 +1375,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1479,9 +1401,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1505,9 +1427,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1531,9 +1453,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1557,9 +1479,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1583,9 +1505,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1609,9 +1531,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1635,9 +1557,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1661,9 +1583,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1687,9 +1609,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1713,9 +1635,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1739,9 +1661,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1765,9 +1687,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1791,9 +1713,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1817,9 +1739,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1843,9 +1765,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1869,9 +1791,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1895,9 +1817,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1921,9 +1843,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1947,9 +1869,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1973,9 +1895,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -1999,9 +1921,9 @@ f = f
 time = Runtime(s)
 #nodes2 = #Nodes_to_the_level
 6
-heuristic value of te initial node based on the heuristic vector = 8
+heuristic value of te initial node based on the heuristic vector = 12
 ******************************************
-Raiz:  h = 8 g = 0 f = 8
+Raiz:  h = 12 g = 0 f = 12
 g : 0
 v_f_value.size() = 0
 ****************************************************************
@@ -2009,28 +1931,29 @@ S map.
 S.size() = 1
 sumMap = 1
 #probes	prediction
-50	4,78
+50	4,28
 #probes	prediction
-50	4,78
+50	4,28
 probes: 50
-prediction: 4,78
+prediction: 4,28
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
-Actual search time: 0,05s [t=1,16s]
+Actual search time: 0,04s [t=1,15s]
 Expanded 0 state(s).
 Reopened 0 state(s).
 Evaluated 1 state(s).
 Evaluations: 1
 Generated 0 state(s).
 Dead ends: 1 state(s).
-Search space hash size: 38
+Search space hash size: 32
 Search space hash bucket count: 193
-Search time: 1,16s
-Total time: 1,16s
-Peak memory: 31312 KB
-VmRSS memory: 2276 KB
-VmHWM memory: 18632 KB
+Search time: 1,15s
+Total time: 1,15s
+Peak memory: 31640 KB
+VmRSS memory: 2316 KB
+VmHWM memory: 18596 KB
+destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
