@@ -1,6 +1,6 @@
 	/home/marvin/marvin/testdfs/merge_and_shrink/reportdfs/blocks/fdist/probBLOCKS-4-2.pddl
-totalniveles: 12
-threshold: 12
+totalniveles: 6
+threshold: 6
 
 g:0
 size: 1
@@ -44,54 +44,3 @@ size: 7
 	f: 14	q: 335
 	f: 16	q: 65
 	f: 18	q: 2
-g:7
-size: 6
-	f: 8	q: 12
-	f: 10	q: 84
-	f: 12	q: 411
-	f: 14	q: 959
-	f: 16	q: 534
-	f: 18	q: 39
-g:8
-size: 7
-	f: 8	q: 12
-	f: 10	q: 96
-	f: 12	q: 579
-	f: 14	q: 2202
-	f: 16	q: 2925
-	f: 18	q: 777
-	f: 20	q: 39
-g:9
-size: 6
-	f: 10	q: 108
-	f: 12	q: 675
-	f: 14	q: 3247
-	f: 16	q: 7960
-	f: 18	q: 5212
-	f: 20	q: 501
-g:10
-size: 7
-	f: 10	q: 108
-	f: 12	q: 783
-	f: 14	q: 4597
-	f: 16	q: 17899
-	f: 18	q: 25523
-	f: 20	q: 8169
-	f: 22	q: 501
-g:11
-size: 6
-	f: 12	q: 891
-	f: 14	q: 5380
-	f: 16	q: 26104
-	f: 18	q: 67027
-	f: 20	q: 48959
-	f: 22	q: 5438
-g:12
-size: 7
-	f: 12	q: 891
-	f: 14	q: 6271
-	f: 16	q: 36864
-	f: 18	q: 147968
-	f: 20	q: 222737
-	f: 22	q: 80155
-	f: 24	q: 5438

@@ -22,14 +22,14 @@ registered: dfs
  ______________________________
 registered: merge_and_shrink
 parser is not dry_run
-g object = 0x95738d8
+g object = 0x90bc8d8
 ScalarEvaluator vector pointer []
-ScalarEvaluator vector pointer after add g = [0x95738d8]
-ScalarEvaluator vector pointer after add eval = [0x95738d8, 0x95740c0]
+ScalarEvaluator vector pointer after add g = [0x90bc8d8]
+ScalarEvaluator vector pointer after add eval = [0x90bc8d8, 0x90bd0c0]
 subevaluators_.size:2
-new vector of ScalarEvaluator created = [0x9575b48, 0x95740c0]
-OpenList vector of state_var_t objects = 0x9576298
-engine = 0x9575630
+new vector of ScalarEvaluator created = [0x90beb48, 0x90bd0c0]
+OpenList vector of state_var_t objects = 0x90bf298
+engine = 0x90be630
  ___________________________________
 |         calling initialize        |
  ___________________________________
@@ -53,9 +53,9 @@ f_evaluator populated
 conditional_effects_present = 0
 Conditional effects present = 0
 starting timings 
-initial state = 0x956cdd0
-node_counter = 418855
-node_gen_and_exp_cost = 2,38746e-06
+initial state = 0x90b5dd0
+node_counter = 739266
+node_gen_and_exp_cost = 1,35269e-06
 active heuristics size : 1
 # heristics = 1
 dead_end = 1
@@ -247,11 +247,11 @@ Done initializing merge-and-shrink heuristic [0,02s]
 initial h value: 10
 Estimated peak memory for abstraction: 486348 bytes
 heur_name = No Name
-h[,0,] is:,heur is not named,measured time cost: 1,59499e-06,h:10
+h[,0,] is:,heur is not named,measured time cost: 7,2882e-07,h:10
 memory before deleting databases: 
-VmRSS memory: 9928 KB
+VmRSS memory: 17612 KB
 memory after deleting all databases: 
-VmRSS memory: 9928 KB
+VmRSS memory: 17612 KB
 Remaining heuristics:
 remaining initial heur heur is not named
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
@@ -260,9 +260,10 @@ Implementar SS Heuristic.
 |       step process         |
  ____________________________
 h_initial = 10
+depth = 10
 end expansion of nodes finished.
-Total of nodes expanded: 1
-collector.size() = 105
+Total of nodes expanded: 2651
+collector.size() = 40
 fileName size () = 19
 fileName size () = 1
 fileName size () = 2
@@ -343,105 +344,10 @@ size: 7
 	f: 20	q: 199
 	f: 22	q: 12
 
-g:11
-size: 6
-	f: 12	q: 16
-	f: 14	q: 140
-	f: 16	q: 806
-	f: 18	q: 2080
-	f: 20	q: 1268
-	f: 22	q: 119
-
-g:12
-size: 7
-	f: 12	q: 16
-	f: 14	q: 156
-	f: 16	q: 1086
-	f: 18	q: 4609
-	f: 20	q: 6370
-	f: 22	q: 1779
-	f: 24	q: 119
-
-g:13
-size: 6
-	f: 14	q: 172
-	f: 16	q: 1242
-	f: 18	q: 6587
-	f: 20	q: 16803
-	f: 22	q: 11100
-	f: 24	q: 1169
-
-g:14
-size: 7
-	f: 14	q: 172
-	f: 16	q: 1414
-	f: 18	q: 9071
-	f: 20	q: 37550
-	f: 22	q: 53273
-	f: 24	q: 16961
-	f: 26	q: 1169
-
-g:15
-size: 6
-	f: 16	q: 1586
-	f: 18	q: 10485
-	f: 20	q: 53802
-	f: 22	q: 139488
-	f: 24	q: 100229
-	f: 26	q: 11429
-
-g:16
-size: 7
-	f: 16	q: 1586
-	f: 18	q: 12071
-	f: 20	q: 74772
-	f: 22	q: 309729
-	f: 24	q: 456671
-	f: 26	q: 161441
-	f: 28	q: 11429
-
-g:17
-size: 6
-	f: 18	q: 13657
-	f: 20	q: 86843
-	f: 22	q: 442183
-	f: 24	q: 1176777
-	f: 26	q: 907135
-	f: 28	q: 109754
-
-g:18
-size: 7
-	f: 18	q: 13657
-	f: 20	q: 100500
-	f: 22	q: 615869
-	f: 24	q: 2583342
-	f: 26	q: 3956354
-	f: 28	q: 1509475
-	f: 30	q: 109754
-
-g:19
-size: 6
-	f: 20	q: 114157
-	f: 22	q: 716369
-	f: 24	q: 3666042
-	f: 26	q: 10027446
-	f: 28	q: 8159375
-	f: 30	q: 1031232
-
-g:20
-size: 7
-	f: 20	q: 114157
-	f: 22	q: 830526
-	f: 24	q: 5098780
-	f: 26	q: 21752291
-	f: 28	q: 34418903
-	f: 30	q: 13859187
-	f: 32	q: 1031232
-
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
-Actual search time: 499,05s [t=500,16s]
+Actual search time: 0s [t=1,11s]
 Expanded 0 state(s).
 Reopened 0 state(s).
 Evaluated 1 state(s).
@@ -450,11 +356,11 @@ Generated 0 state(s).
 Dead ends: 1 state(s).
 Search space hash size: 0
 Search space hash bucket count: 193
-Search time: 500,16s
-Total time: 500,16s
-Peak memory: 19356 KB
+Search time: 1,11s
+Total time: 1,11s
+Peak memory: 31644 KB
 VmRSS memory: 1844 KB
-VmHWM memory: 10944 KB
+VmHWM memory: 18832 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

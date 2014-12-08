@@ -22,14 +22,14 @@ registered: dfs
  ______________________________
 registered: merge_and_shrink
 parser is not dry_run
-g object = 0x8a3dcd0
+g object = 0x9103cd0
 ScalarEvaluator vector pointer []
-ScalarEvaluator vector pointer after add g = [0x8a3dcd0]
-ScalarEvaluator vector pointer after add eval = [0x8a3dcd0, 0x8a400f8]
+ScalarEvaluator vector pointer after add g = [0x9103cd0]
+ScalarEvaluator vector pointer after add eval = [0x9103cd0, 0x91060f8]
 subevaluators_.size:2
-new vector of ScalarEvaluator created = [0x8a3fb18, 0x8a400f8]
-OpenList vector of state_var_t objects = 0x8a3eff0
-engine = 0x8a3f910
+new vector of ScalarEvaluator created = [0x9105b18, 0x91060f8]
+OpenList vector of state_var_t objects = 0x9104ff0
+engine = 0x9105910
  ___________________________________
 |         calling initialize        |
  ___________________________________
@@ -53,9 +53,9 @@ f_evaluator populated
 conditional_effects_present = 0
 Conditional effects present = 0
 starting timings 
-initial state = 0x8a36dd0
-node_counter = 609238
-node_gen_and_exp_cost = 1,64139e-06
+initial state = 0x90fcdd0
+node_counter = 706841
+node_gen_and_exp_cost = 1,41475e-06
 active heuristics size : 1
 # heristics = 1
 dead_end = 0
@@ -238,16 +238,16 @@ Abstraction (8/9 vars): applying abstraction to lookup table
 Abstraction (8/9 vars): size after shrink 2984, target 4000
 Atomic abstraction #0: distances already known
 Abstraction (8/9 vars): 2984 states, ???/18576 arcs, 246732 bytes
-Abstraction (8/9 vars): init h=6, max f=23, max g=13, max h=13 [t=1s]
+Abstraction (8/9 vars): init h=6, max f=23, max g=13, max h=13 [t=1,01s]
 Atomic abstraction #0: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1s]
+Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1,01s]
 Abstraction (8/9 vars): normalizing with label reduction
 Label reduction: 8 pruned vars, 32 labels, 9 reduced labels
 Abstraction (8/9 vars): 2984 states, ???/18576 arcs, 247756 bytes
-Abstraction (8/9 vars): init h=6, max f=23, max g=13, max h=13 [t=1s]
+Abstraction (8/9 vars): init h=6, max f=23, max g=13, max h=13 [t=1,01s]
 Atomic abstraction #0: normalizing without label reduction
 Atomic abstraction #0: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1s]
+Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1,01s]
 Merging abstraction (8/9 vars) and atomic abstraction #0
 Abstraction (9/9 vars): 14920 states, ???/46908 arcs, 486348 bytes
 Abstraction (9/9 vars): distances not computed [t=1,01s]
@@ -263,16 +263,16 @@ Abstraction (9/9 vars): applying abstraction to lookup table
 Abstraction (9/9 vars): size after shrink 125, target 125
 Abstraction (9/9 vars): distances already known
 Abstraction (9/9 vars): 125 states, ???/272 arcs, 99444 bytes
-Abstraction (9/9 vars): init h=6, max f=20, max g=8, max h=12 [t=1,02s]
-Done initializing merge-and-shrink heuristic [0,02s]
+Abstraction (9/9 vars): init h=6, max f=20, max g=8, max h=12 [t=1,01s]
+Done initializing merge-and-shrink heuristic [0,01s]
 initial h value: 6
 Estimated peak memory for abstraction: 486348 bytes
 heur_name = No Name
-h[,0,] is:,heur is not named,measured time cost: 9,42757e-07,h:6
+h[,0,] is:,heur is not named,measured time cost: 7,17636e-07,h:6
 memory before deleting databases: 
-VmRSS memory: 15676 KB
+VmRSS memory: 15748 KB
 memory after deleting all databases: 
-VmRSS memory: 15676 KB
+VmRSS memory: 15748 KB
 Remaining heuristics:
 remaining initial heur heur is not named
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes: 1000
@@ -281,9 +281,10 @@ Implementar SS Heuristic.
 |       step process         |
  ____________________________
 h_initial = 6
+depth = 6
 end expansion of nodes finished.
-Total of nodes expanded: 1
-collector.size() = 67
+Total of nodes expanded: 1128
+collector.size() = 28
 fileName size () = 1
 fileName size () = 19
 fileName size () = 2
@@ -340,67 +341,10 @@ size: 7
 	f: 16	q: 65
 	f: 18	q: 2
 
-g:7
-size: 6
-	f: 8	q: 12
-	f: 10	q: 84
-	f: 12	q: 411
-	f: 14	q: 959
-	f: 16	q: 534
-	f: 18	q: 39
-
-g:8
-size: 7
-	f: 8	q: 12
-	f: 10	q: 96
-	f: 12	q: 579
-	f: 14	q: 2202
-	f: 16	q: 2925
-	f: 18	q: 777
-	f: 20	q: 39
-
-g:9
-size: 6
-	f: 10	q: 108
-	f: 12	q: 675
-	f: 14	q: 3247
-	f: 16	q: 7960
-	f: 18	q: 5212
-	f: 20	q: 501
-
-g:10
-size: 7
-	f: 10	q: 108
-	f: 12	q: 783
-	f: 14	q: 4597
-	f: 16	q: 17899
-	f: 18	q: 25523
-	f: 20	q: 8169
-	f: 22	q: 501
-
-g:11
-size: 6
-	f: 12	q: 891
-	f: 14	q: 5380
-	f: 16	q: 26104
-	f: 18	q: 67027
-	f: 20	q: 48959
-	f: 22	q: 5438
-
-g:12
-size: 7
-	f: 12	q: 891
-	f: 14	q: 6271
-	f: 16	q: 36864
-	f: 18	q: 147968
-	f: 20	q: 222737
-	f: 22	q: 80155
-	f: 24	q: 5438
-
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
-Actual search time: 2,54s [t=3,65s]
+Actual search time: 0s [t=1,11s]
 Initial state h value: -2.
 Expanded 0 state(s).
 Reopened 0 state(s).
@@ -414,11 +358,11 @@ Evaluated until last jump: 1 state(s).
 Generated until last jump: 0 state(s).
 Search space hash size: 1
 Search space hash bucket count: 193
-Search time: 3,65s
-Total time: 3,65s
+Search time: 1,11s
+Total time: 1,11s
 Peak memory: 31644 KB
-VmRSS memory: 1900 KB
-VmHWM memory: 18876 KB
+VmRSS memory: 1896 KB
+VmHWM memory: 18952 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
