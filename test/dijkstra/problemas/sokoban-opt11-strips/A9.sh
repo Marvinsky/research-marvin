@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/sokoban-opt11-strips/domain.pddl b
 
 src/preprocess/preprocess < Astarsokoban-opt11-strips9.sas
 
-src/search/downward --search "astar(dijkstra())" <  Astarsokoban-opt11-strips9 >> ${RESULTS}/p09.pddl
+src/search/downward --domain_name sokoban-opt11-strips --problem_name p09.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astarsokoban-opt11-strips9 >> ${RESULTS}/p09.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarsokoban-opt11-strips9
 
 
 rm Astarsokoban-opt11-strips9.sas
-
-
-
-rm src/translate/arquivos/p09.pddl
 

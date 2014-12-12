@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/scanalyzer-opt11-strips/domain.pdd
 
 src/preprocess/preprocess < Astarscanalyzer-opt11-strips15.sas
 
-src/search/downward --search "astar(dijkstra())" <  Astarscanalyzer-opt11-strips15 >> ${RESULTS}/p15.pddl
+src/search/downward --domain_name scanalyzer-opt11-strips --problem_name p15.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astarscanalyzer-opt11-strips15 >> ${RESULTS}/p15.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarscanalyzer-opt11-strips15
 
 
 rm Astarscanalyzer-opt11-strips15.sas
-
-
-
-rm src/translate/arquivos/p15.pddl
 

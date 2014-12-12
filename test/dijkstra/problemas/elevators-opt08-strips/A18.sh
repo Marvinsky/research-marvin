@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/elevators-opt08-strips/p18-domain.
 
 src/preprocess/preprocess < Astarelevators-opt08-strips18.sas
 
-src/search/downward --search "astar(dijkstra())" <  Astarelevators-opt08-strips18 >> ${RESULTS}/p18.pddl
+src/search/downward --domain_name elevators-opt08-strips --problem_name p18.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astarelevators-opt08-strips18 >> ${RESULTS}/p18.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarelevators-opt08-strips18
 
 
 rm Astarelevators-opt08-strips18.sas
-
-
-
-rm src/translate/arquivos/p18.pddl
 

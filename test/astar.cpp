@@ -52,12 +52,12 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 	outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
 
-	outfile<<"src/search/downward --search \"astar("<<heuristic<<"())\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	outfile<<"src/search/downward --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_dijkstra("<<heuristic<<"())\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	
 
 	outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
 	outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
-        outfile<<"\n\nrm "<<"src/translate/arquivos/"<<problema.c_str()<<"\n\n";
+        //outfile<<"\n\nrm "<<"src/translate/arquivos/"<<problema.c_str()<<"\n\n";
 
 	outfile.close();
 

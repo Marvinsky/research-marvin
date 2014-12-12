@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/visitall-opt11-strips/domain.pddl 
 
 src/preprocess/preprocess < Astarvisitall-opt11-strips20.sas
 
-src/search/downward --search "astar(dijkstra())" <  Astarvisitall-opt11-strips20 >> ${RESULTS}/problem11-half.pddl
+src/search/downward --domain_name visitall-opt11-strips --problem_name problem11-half.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astarvisitall-opt11-strips20 >> ${RESULTS}/problem11-half.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarvisitall-opt11-strips20
 
 
 rm Astarvisitall-opt11-strips20.sas
-
-
-
-rm src/translate/arquivos/problem11-half.pddl
 

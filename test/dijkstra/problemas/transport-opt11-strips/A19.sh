@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/transport-opt11-strips/domain.pddl
 
 src/preprocess/preprocess < Astartransport-opt11-strips19.sas
 
-src/search/downward --search "astar(dijkstra())" <  Astartransport-opt11-strips19 >> ${RESULTS}/p19.pddl
+src/search/downward --domain_name transport-opt11-strips --problem_name p19.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astartransport-opt11-strips19 >> ${RESULTS}/p19.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astartransport-opt11-strips19
 
 
 rm Astartransport-opt11-strips19.sas
-
-
-
-rm src/translate/arquivos/p19.pddl
 

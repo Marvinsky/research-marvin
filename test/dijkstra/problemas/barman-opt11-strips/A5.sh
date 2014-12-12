@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/barman-opt11-strips/domain.pddl be
 
 src/preprocess/preprocess < Astarbarman-opt11-strips5.sas
 
-src/search/downward --search "astar(dijkstra())" <  Astarbarman-opt11-strips5 >> ${RESULTS}/pfile02-005.pddl
+src/search/downward --domain_name barman-opt11-strips --problem_name pfile02-005.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astarbarman-opt11-strips5 >> ${RESULTS}/pfile02-005.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarbarman-opt11-strips5
 
 
 rm Astarbarman-opt11-strips5.sas
-
-
-
-rm src/translate/arquivos/pfile02-005.pddl
 

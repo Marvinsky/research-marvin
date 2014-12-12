@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < Astarblocks32.sas
 
-src/search/downward --search "astar(dijkstra())" <  Astarblocks32 >> ${RESULTS}/probBLOCKS-15-1.pddl
+src/search/downward --domain_name blocks --problem_name probBLOCKS-15-1.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astarblocks32 >> ${RESULTS}/probBLOCKS-15-1.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarblocks32
 
 
 rm Astarblocks32.sas
-
-
-
-rm src/translate/arquivos/probBLOCKS-15-1.pddl
 

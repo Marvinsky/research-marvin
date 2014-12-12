@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/parking-opt11-strips/domain.pddl b
 
 src/preprocess/preprocess < Astarparking-opt11-strips19.sas
 
-src/search/downward --search "astar(dijkstra())" <  Astarparking-opt11-strips19 >> ${RESULTS}/pfile08-029.pddl
+src/search/downward --domain_name parking-opt11-strips --problem_name pfile08-029.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astarparking-opt11-strips19 >> ${RESULTS}/pfile08-029.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarparking-opt11-strips19
 
 
 rm Astarparking-opt11-strips19.sas
-
-
-
-rm src/translate/arquivos/pfile08-029.pddl
 

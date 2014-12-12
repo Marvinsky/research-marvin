@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/woodworking-opt08-strips/p13-domai
 
 src/preprocess/preprocess < Astarwoodworking-opt08-strips13.sas
 
-src/search/downward --search "astar(dijkstra())" <  Astarwoodworking-opt08-strips13 >> ${RESULTS}/p13.pddl
+src/search/downward --domain_name woodworking-opt08-strips --problem_name p13.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astarwoodworking-opt08-strips13 >> ${RESULTS}/p13.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarwoodworking-opt08-strips13
 
 
 rm Astarwoodworking-opt08-strips13.sas
-
-
-
-rm src/translate/arquivos/p13.pddl
 

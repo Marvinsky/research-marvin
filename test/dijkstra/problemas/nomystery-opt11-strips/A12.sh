@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/nomystery-opt11-strips/domain.pddl
 
 src/preprocess/preprocess < Astarnomystery-opt11-strips12.sas
 
-src/search/downward --search "astar(dijkstra())" <  Astarnomystery-opt11-strips12 >> ${RESULTS}/p12.pddl
+src/search/downward --domain_name nomystery-opt11-strips --problem_name p12.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astarnomystery-opt11-strips12 >> ${RESULTS}/p12.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarnomystery-opt11-strips12
 
 
 rm Astarnomystery-opt11-strips12.sas
-
-
-
-rm src/translate/arquivos/p12.pddl
 

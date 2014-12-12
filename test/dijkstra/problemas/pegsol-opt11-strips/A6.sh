@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/pegsol-opt11-strips/domain.pddl be
 
 src/preprocess/preprocess < Astarpegsol-opt11-strips6.sas
 
-src/search/downward --search "astar(dijkstra())" <  Astarpegsol-opt11-strips6 >> ${RESULTS}/p06.pddl
+src/search/downward --domain_name pegsol-opt11-strips --problem_name p06.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astarpegsol-opt11-strips6 >> ${RESULTS}/p06.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarpegsol-opt11-strips6
 
 
 rm Astarpegsol-opt11-strips6.sas
-
-
-
-rm src/translate/arquivos/p06.pddl
 

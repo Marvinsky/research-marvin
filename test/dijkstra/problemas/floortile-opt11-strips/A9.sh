@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/floortile-opt11-strips/domain.pddl
 
 src/preprocess/preprocess < Astarfloortile-opt11-strips9.sas
 
-src/search/downward --search "astar(dijkstra())" <  Astarfloortile-opt11-strips9 >> ${RESULTS}/opt-p05-009.pddl
+src/search/downward --domain_name floortile-opt11-strips --problem_name opt-p05-009.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astarfloortile-opt11-strips9 >> ${RESULTS}/opt-p05-009.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarfloortile-opt11-strips9
 
 
 rm Astarfloortile-opt11-strips9.sas
-
-
-
-rm src/translate/arquivos/opt-p05-009.pddl
 

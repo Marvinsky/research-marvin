@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/sokoban-opt08-strips/p01-domain.pd
 
 src/preprocess/preprocess < Astarsokoban-opt08-strips1.sas
 
-src/search/downward --search "astar(dijkstra())" <  Astarsokoban-opt08-strips1 >> ${RESULTS}/p01.pddl
+src/search/downward --domain_name sokoban-opt08-strips --problem_name p01.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astarsokoban-opt08-strips1 >> ${RESULTS}/p01.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarsokoban-opt08-strips1
 
 
 rm Astarsokoban-opt08-strips1.sas
-
-
-
-rm src/translate/arquivos/p01.pddl
 

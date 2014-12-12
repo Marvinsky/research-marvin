@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/tidybot-opt11-strips/domain.pddl b
 
 src/preprocess/preprocess < Astartidybot-opt11-strips17.sas
 
-src/search/downward --search "astar(dijkstra())" <  Astartidybot-opt11-strips17 >> ${RESULTS}/p17.pddl
+src/search/downward --domain_name tidybot-opt11-strips --problem_name p17.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astartidybot-opt11-strips17 >> ${RESULTS}/p17.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astartidybot-opt11-strips17
 
 
 rm Astartidybot-opt11-strips17.sas
-
-
-
-rm src/translate/arquivos/p17.pddl
 

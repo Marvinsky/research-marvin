@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/openstacks-opt08-strips/p11-domain
 
 src/preprocess/preprocess < Astaropenstacks-opt08-strips11.sas
 
-src/search/downward --search "astar(dijkstra())" <  Astaropenstacks-opt08-strips11 >> ${RESULTS}/p11.pddl
+src/search/downward --domain_name openstacks-opt08-strips --problem_name p11.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astaropenstacks-opt08-strips11 >> ${RESULTS}/p11.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astaropenstacks-opt08-strips11
 
 
 rm Astaropenstacks-opt08-strips11.sas
-
-
-
-rm src/translate/arquivos/p11.pddl
 
