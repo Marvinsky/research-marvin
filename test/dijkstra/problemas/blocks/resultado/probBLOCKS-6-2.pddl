@@ -3,18 +3,18 @@ This is a unit task.
 Estos son los inicios de los inicios.
 argv[0] = src/search/downward-1
 argv[0][0] = s
-argv[1] = --search
-argv[2] = astar(dijkstra())
-argv[4] = XDG_VTNR=1
-argv[5] = XDG_SESSION_ID=c1
-argc = 3
+argv[1] = --domain_name
+argv[2] = blocks
+argv[4] = probBLOCKS-6-2.pddl
+argv[5] = --heuristic_name
+argc = 9
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
-registered: astar
+registered: astar_dijkstra
 calling parse_astar
 registered: dijkstra
 OptionParser::parse_cmd_line
-registered: astar
+registered: astar_dijkstra
 calling parse_astar
 registered: dijkstra
 parser is not dry_run
@@ -33,7 +33,7 @@ got 2 heuristics
 f_evaluator populated
 # heuristics:1
 starting timings
-node gen_and_exp_cost:3.19609e-06
+node gen_and_exp_cost:1.7654e-06
 active heuristics size:1
 Initializing goal DijkstraSearchHeuristic ...
 ************************
@@ -49,23 +49,22 @@ expanded states = 0
 reopened states = 0
 f: 0 [1 evaluated, 0 expanded, t=1s,generated_states:,0,additional_states:,0,],random_comb_index:-1
 gen_to_exp_ratio: -nan
-F_bound:,0,Peak memory=,30.2891
+F_bound:,0,Peak memory=,55.2852
 				h = 0
 				best_h = -1
 				new best_h = 0
 Best heuristic value: 0 [g=0, 1 evaluated, 0 expanded, t=1s]
 starting timing individual heuristics
-h[,0,] is:,,heur:dijkstra,measured time cost:1.09412e-06,h:0
+h[,0,] is:,,heur:dijkstra,measured time cost:4.94589e-07,h:0
 memory before deleting databases:
-VmRSS memory: 12872 KB
+VmRSS memory: 22144 KB
 memory after deleting all databases:
-VmRSS memory: 12872 KB
+VmRSS memory: 22144 KB
 Remaining heuristics:
 remaining initial heur,heur:dijkstra
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes:1000
 
 Raiz node h = 0,g = 0, f = 0
-search_timer() = 1.11
 	Child node h = 0,g = 1, f = 1 m&s h+g = 1
 				h = 0
 				best_h = 0
@@ -88,12 +87,12 @@ nodesGeneratedToTheLevel1: 1
 f: 1 [2 evaluated, 1 expanded, t=1.11s,generated_states:,1,additional_states:,1,],random_comb_index:-1
 last_jump:1,F_bound_to_print:0
 gen_to_exp_ratio: 1
-F_bound:,1,Peak memory=,30.2891
-F_bound:1,Peak memory=30.2891,nodes:2,Nodes mem_space:0.0625,F_boundary_Range:0
+F_bound:,1,Peak memory=,55.2852
+F_bound:1,Peak memory=55.2852,nodes:2,Nodes mem_space:0.078125,F_boundary_Range:0
 F_bound:1F_boundary_time:0.11,Hoff Potential Range:0,leaves_to_sample:0
 new F_bound:1chosen_Hoff_Roots_size:0 out of 0
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 1, f = 1
 	Child node h = 0,g = 2, f = 2 m&s h+g = 2
@@ -118,12 +117,12 @@ nodesGeneratedToTheLevel1: 2
 f: 2 [3 evaluated, 2 expanded, t=1.11s,generated_states:,3,additional_states:,2,],random_comb_index:-1
 last_jump:2,F_bound_to_print:0
 gen_to_exp_ratio: 2
-F_bound:,2,Peak memory=,30.2891
-F_bound:2,Peak memory=30.2891,nodes:3,Nodes mem_space:0.09375,F_boundary_Range:0
+F_bound:,2,Peak memory=,55.2852
+F_bound:2,Peak memory=55.2852,nodes:3,Nodes mem_space:0.117188,F_boundary_Range:0
 F_bound:2F_boundary_time:-9.76866e-17,Hoff Potential Range:0,leaves_to_sample:0
 new F_bound:2chosen_Hoff_Roots_size:0 out of 0
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 2, f = 2
 	Child node h = 0,g = 3, f = 3 m&s h+g = 3
@@ -148,12 +147,12 @@ nodesGeneratedToTheLevel1: 3
 f: 3 [4 evaluated, 3 expanded, t=1.11s,generated_states:,5,additional_states:,2,],random_comb_index:-1
 last_jump:3,F_bound_to_print:0
 gen_to_exp_ratio: 2
-F_bound:,3,Peak memory=,30.2891
-F_bound:3,Peak memory=30.2891,nodes:4,Nodes mem_space:0.125,F_boundary_Range:0
+F_bound:,3,Peak memory=,55.2852
+F_bound:3,Peak memory=55.2852,nodes:4,Nodes mem_space:0.15625,F_boundary_Range:0
 F_bound:3F_boundary_time:-9.76866e-17,Hoff Potential Range:0,leaves_to_sample:0
 new F_bound:3chosen_Hoff_Roots_size:0 out of 0
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 3, f = 3
 	Child node h = 0,g = 4, f = 4 m&s h+g = 4
@@ -181,14 +180,14 @@ nodesGeneratedToTheLevel1: 4
 f: 4 [6 evaluated, 4 expanded, t=1.11s,generated_states:,8,additional_states:,3,],random_comb_index:-1
 last_jump:4,F_bound_to_print:0
 gen_to_exp_ratio: 3
-F_bound:,4,Peak memory=,30.2891
+F_bound:,4,Peak memory=,55.2852
 F:4
-F_bound:4,Peak memory=30.2891,nodes:6,Nodes mem_space:0.1875,F_boundary_Range:1
+F_bound:4,Peak memory=55.2852,nodes:6,Nodes mem_space:0.234375,F_boundary_Range:1
 F:4
 F_bound:4F_boundary_time:-9.76866e-17,Hoff Potential Range:1,leaves_to_sample:1
 new F_bound:4chosen_Hoff_Roots_size:0 out of 1
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 4, f = 4
 	Child node h = 0,g = 5, f = 5 m&s h+g = 5
@@ -221,14 +220,14 @@ nodesGeneratedToTheLevel1: 6
 f: 5 [9 evaluated, 6 expanded, t=1.11s,generated_states:,13,additional_states:,5,],random_comb_index:-1
 last_jump:5,F_bound_to_print:0
 gen_to_exp_ratio: 2.5
-F_bound:,5,Peak memory=,30.2891
+F_bound:,5,Peak memory=,55.2852
 F:5
-F_bound:5,Peak memory=30.2891,nodes:9,Nodes mem_space:0.28125,F_boundary_Range:2
+F_bound:5,Peak memory=55.2852,nodes:9,Nodes mem_space:0.351562,F_boundary_Range:2
 F:5
 F_bound:5F_boundary_time:-9.76866e-17,Hoff Potential Range:2,leaves_to_sample:2
 new F_bound:5chosen_Hoff_Roots_size:0 out of 2
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 5, f = 5
 	Child node h = 0,g = 6, f = 6 m&s h+g = 6
@@ -275,14 +274,14 @@ nodesGeneratedToTheLevel1: 9
 f: 6 [16 evaluated, 9 expanded, t=1.11s,generated_states:,23,additional_states:,10,],random_comb_index:-1
 last_jump:6,F_bound_to_print:0
 gen_to_exp_ratio: 3.33333
-F_bound:,6,Peak memory=,30.2891
+F_bound:,6,Peak memory=,55.2852
 F:6
-F_bound:6,Peak memory=30.2891,nodes:16,Nodes mem_space:0.5,F_boundary_Range:6
+F_bound:6,Peak memory=55.2852,nodes:16,Nodes mem_space:0.625,F_boundary_Range:6
 F:6
 F_bound:6F_boundary_time:-9.76866e-17,Hoff Potential Range:6,leaves_to_sample:6
 new F_bound:6chosen_Hoff_Roots_size:0 out of 6
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 6, f = 6
 	Child node h = 0,g = 7, f = 7 m&s h+g = 7
@@ -349,14 +348,14 @@ nodesGeneratedToTheLevel1: 16
 f: 7 [27 evaluated, 16 expanded, t=1.11s,generated_states:,42,additional_states:,19,],random_comb_index:-1
 last_jump:7,F_bound_to_print:0
 gen_to_exp_ratio: 2.71429
-F_bound:,7,Peak memory=,30.2891
+F_bound:,7,Peak memory=,55.2852
 F:7
-F_bound:7,Peak memory=30.2891,nodes:27,Nodes mem_space:0.84375,F_boundary_Range:10
+F_bound:7,Peak memory=55.2852,nodes:27,Nodes mem_space:1.05469,F_boundary_Range:10
 F:7
 F_bound:7F_boundary_time:-9.76866e-17,Hoff Potential Range:10,leaves_to_sample:10
 new F_bound:7chosen_Hoff_Roots_size:0 out of 10
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 7, f = 7
 	Child node h = 0,g = 8, f = 8 m&s h+g = 8
@@ -476,14 +475,14 @@ nodesGeneratedToTheLevel1: 27
 f: 8 [53 evaluated, 27 expanded, t=1.11s,generated_states:,81,additional_states:,39,],random_comb_index:-1
 last_jump:8,F_bound_to_print:0
 gen_to_exp_ratio: 3.54545
-F_bound:,8,Peak memory=,30.2891
+F_bound:,8,Peak memory=,55.2852
 F:8
-F_bound:8,Peak memory=30.2891,nodes:53,Nodes mem_space:1.65625,F_boundary_Range:25
+F_bound:8,Peak memory=55.2852,nodes:53,Nodes mem_space:2.07031,F_boundary_Range:25
 F:8
 F_bound:8F_boundary_time:-9.76866e-17,Hoff Potential Range:25,leaves_to_sample:25
 new F_bound:8chosen_Hoff_Roots_size:0 out of 25
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 8, f = 8
 	Child node h = 0,g = 9, f = 9 m&s h+g = 9
@@ -681,14 +680,14 @@ nodesGeneratedToTheLevel1: 53
 f: 9 [95 evaluated, 53 expanded, t=1.11s,generated_states:,159,additional_states:,78,],random_comb_index:-1
 last_jump:9,F_bound_to_print:0
 gen_to_exp_ratio: 3
-F_bound:,9,Peak memory=,30.2891
+F_bound:,9,Peak memory=,55.2852
 F:9
-F_bound:9,Peak memory=30.2891,nodes:95,Nodes mem_space:2.96875,F_boundary_Range:41
+F_bound:9,Peak memory=55.2852,nodes:95,Nodes mem_space:3.71094,F_boundary_Range:41
 F:9
 F_bound:9F_boundary_time:-9.76866e-17,Hoff Potential Range:41,leaves_to_sample:41
 new F_bound:9chosen_Hoff_Roots_size:0 out of 41
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 9, f = 9
 	Child node h = 0,g = 10, f = 10 m&s h+g = 10
@@ -1102,19 +1101,19 @@ generated_states - lastjump_generated_states = 166
 expanded_states - lastjump_expanded_states = 42
 fnivel1: 9
 nodesGeneratedByLevel1: 42
- time01: 1.12
+ time01: 1.11
 nodesGeneratedToTheLevel1: 95
-f: 10 [200 evaluated, 95 expanded, t=1.12s,generated_states:,325,additional_states:,166,],random_comb_index:-1
+f: 10 [200 evaluated, 95 expanded, t=1.11s,generated_states:,325,additional_states:,166,],random_comb_index:-1
 last_jump:10,F_bound_to_print:0
 gen_to_exp_ratio: 3.95238
-F_bound:,10,Peak memory=,30.2891
+F_bound:,10,Peak memory=,55.2852
 F:10
-F_bound:10,Peak memory=30.2891,nodes:200,Nodes mem_space:6.25,F_boundary_Range:104
+F_bound:10,Peak memory=55.2852,nodes:200,Nodes mem_space:7.8125,F_boundary_Range:104
 F:10
-F_bound:10F_boundary_time:0.01,Hoff Potential Range:104,leaves_to_sample:100
+F_bound:10F_boundary_time:-9.76866e-17,Hoff Potential Range:104,leaves_to_sample:100
 new F_bound:10chosen_Hoff_Roots_size:0 out of 104
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 10, f = 10
 	Child node h = 0,g = 11, f = 11 m&s h+g = 11
@@ -1891,19 +1890,19 @@ generated_states - lastjump_generated_states = 354
 expanded_states - lastjump_expanded_states = 105
 fnivel1: 10
 nodesGeneratedByLevel1: 105
- time01: 1.13
+ time01: 1.11
 nodesGeneratedToTheLevel1: 200
-f: 11 [384 evaluated, 200 expanded, t=1.13s,generated_states:,679,additional_states:,354,],random_comb_index:-1
+f: 11 [384 evaluated, 200 expanded, t=1.11s,generated_states:,679,additional_states:,354,],random_comb_index:-1
 last_jump:11,F_bound_to_print:0
 gen_to_exp_ratio: 3.37143
-F_bound:,11,Peak memory=,30.2891
+F_bound:,11,Peak memory=,55.2852
 F:11
-F_bound:11,Peak memory=30.2891,nodes:384,Nodes mem_space:12,F_boundary_Range:183
+F_bound:11,Peak memory=55.2852,nodes:384,Nodes mem_space:15,F_boundary_Range:183
 F:11
-F_bound:11F_boundary_time:0.01,Hoff Potential Range:183,leaves_to_sample:100
+F_bound:11F_boundary_time:-9.76866e-17,Hoff Potential Range:183,leaves_to_sample:100
 new F_bound:11chosen_Hoff_Roots_size:0 out of 183
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 11, f = 11
 	Child node h = 0,g = 12, f = 12 m&s h+g = 12
@@ -2652,7 +2651,6 @@ Raiz node h = 0,g = 11, f = 11
 				best_h = 0
 
 Raiz node h = 0,g = 11, f = 11
-search_timer() = 1.13
 	Child node h = 0,g = 12, f = 12 m&s h+g = 12
 				h = 0
 				best_h = 0
@@ -3556,19 +3554,19 @@ generated_states - lastjump_generated_states = 731
 expanded_states - lastjump_expanded_states = 184
 fnivel1: 11
 nodesGeneratedByLevel1: 184
- time01: 1.15
+ time01: 1.12
 nodesGeneratedToTheLevel1: 384
-f: 12 [807 evaluated, 384 expanded, t=1.15s,generated_states:,1410,additional_states:,731,],random_comb_index:-1
+f: 12 [807 evaluated, 384 expanded, t=1.12s,generated_states:,1410,additional_states:,731,],random_comb_index:-1
 last_jump:12,F_bound_to_print:0
 gen_to_exp_ratio: 3.97283
-F_bound:,12,Peak memory=,30.2891
+F_bound:,12,Peak memory=,55.2852
 F:12
-F_bound:12,Peak memory=30.2891,nodes:807,Nodes mem_space:25.2188,F_boundary_Range:422
+F_bound:12,Peak memory=55.2852,nodes:807,Nodes mem_space:31.5234,F_boundary_Range:422
 F:12
-F_bound:12F_boundary_time:0.02,Hoff Potential Range:422,leaves_to_sample:100
+F_bound:12F_boundary_time:0.01,Hoff Potential Range:422,leaves_to_sample:100
 new F_bound:12chosen_Hoff_Roots_size:0 out of 422
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 12, f = 12
 
@@ -6199,19 +6197,19 @@ generated_states - lastjump_generated_states = 1348
 expanded_states - lastjump_expanded_states = 423
 fnivel1: 12
 nodesGeneratedByLevel1: 423
- time01: 1.17
+ time01: 1.12
 nodesGeneratedToTheLevel1: 807
-f: 13 [1397 evaluated, 807 expanded, t=1.17s,generated_states:,2758,additional_states:,1348,],random_comb_index:-1
+f: 13 [1397 evaluated, 807 expanded, t=1.12s,generated_states:,2758,additional_states:,1348,],random_comb_index:-1
 last_jump:13,F_bound_to_print:0
 gen_to_exp_ratio: 3.18676
-F_bound:,13,Peak memory=,30.2891
+F_bound:,13,Peak memory=,55.2852
 F:13
-F_bound:13,Peak memory=30.2891,nodes:1397,Nodes mem_space:43.6562,F_boundary_Range:589
+F_bound:13,Peak memory=55.2852,nodes:1397,Nodes mem_space:54.5703,F_boundary_Range:589
 F:13
-F_bound:13F_boundary_time:0.02,Hoff Potential Range:589,leaves_to_sample:100
+F_bound:13F_boundary_time:-1.06577e-16,Hoff Potential Range:589,leaves_to_sample:100
 new F_bound:13chosen_Hoff_Roots_size:0 out of 589
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 13, f = 13
 	Child node h = 0,g = 14, f = 14 m&s h+g = 14
@@ -10313,19 +10311,19 @@ generated_states - lastjump_generated_states = 2176
 expanded_states - lastjump_expanded_states = 590
 fnivel1: 13
 nodesGeneratedByLevel1: 590
- time01: 1.21
+ time01: 1.14
 nodesGeneratedToTheLevel1: 1397
-f: 14 [2366 evaluated, 1397 expanded, t=1.21s,generated_states:,4934,additional_states:,2176,],random_comb_index:-1
+f: 14 [2366 evaluated, 1397 expanded, t=1.14s,generated_states:,4934,additional_states:,2176,],random_comb_index:-1
 last_jump:14,F_bound_to_print:0
 gen_to_exp_ratio: 3.68814
-F_bound:,14,Peak memory=,30.2891
+F_bound:,14,Peak memory=,55.2852
 F:14
-F_bound:14,Peak memory=30.2891,nodes:2366,Nodes mem_space:73.9375,F_boundary_Range:968
+F_bound:14,Peak memory=55.2852,nodes:2366,Nodes mem_space:92.4219,F_boundary_Range:968
 F:14
-F_bound:14F_boundary_time:0.04,Hoff Potential Range:968,leaves_to_sample:100
+F_bound:14F_boundary_time:0.02,Hoff Potential Range:968,leaves_to_sample:100
 new F_bound:14chosen_Hoff_Roots_size:0 out of 968
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 14, f = 14
 	Child node h = 0,g = 15, f = 15 m&s h+g = 15
@@ -15215,19 +15213,19 @@ generated_states - lastjump_generated_states = 2688
 expanded_states - lastjump_expanded_states = 969
 fnivel1: 14
 nodesGeneratedByLevel1: 969
- time01: 1.25
+ time01: 1.15
 nodesGeneratedToTheLevel1: 2366
-f: 15 [3345 evaluated, 2366 expanded, t=1.25s,generated_states:,7622,additional_states:,2688,],random_comb_index:-1
+f: 15 [3345 evaluated, 2366 expanded, t=1.15s,generated_states:,7622,additional_states:,2688,],random_comb_index:-1
 last_jump:15,F_bound_to_print:0
 gen_to_exp_ratio: 2.77399
-F_bound:,15,Peak memory=,30.2891
+F_bound:,15,Peak memory=,55.2852
 F:15
-F_bound:15,Peak memory=30.2891,nodes:3345,Nodes mem_space:104.531,F_boundary_Range:978
+F_bound:15,Peak memory=55.2852,nodes:3345,Nodes mem_space:130.664,F_boundary_Range:978
 F:15
-F_bound:15F_boundary_time:0.04,Hoff Potential Range:978,leaves_to_sample:100
+F_bound:15F_boundary_time:0.01,Hoff Potential Range:978,leaves_to_sample:100
 new F_bound:15chosen_Hoff_Roots_size:0 out of 978
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 15, f = 15
 	Child node h = 0,g = 16, f = 16 m&s h+g = 16
@@ -20944,19 +20942,19 @@ generated_states - lastjump_generated_states = 3159
 expanded_states - lastjump_expanded_states = 979
 fnivel1: 15
 nodesGeneratedByLevel1: 979
- time01: 1.31
+ time01: 1.17
 nodesGeneratedToTheLevel1: 3345
-f: 16 [4593 evaluated, 3345 expanded, t=1.31s,generated_states:,10781,additional_states:,3159,],random_comb_index:-1
+f: 16 [4593 evaluated, 3345 expanded, t=1.17s,generated_states:,10781,additional_states:,3159,],random_comb_index:-1
 last_jump:16,F_bound_to_print:0
 gen_to_exp_ratio: 3.22676
-F_bound:,16,Peak memory=,30.2891
+F_bound:,16,Peak memory=,55.2852
 F:16
-F_bound:16,Peak memory=30.2891,nodes:4593,Nodes mem_space:143.531,F_boundary_Range:1247
+F_bound:16,Peak memory=55.2852,nodes:4593,Nodes mem_space:179.414,F_boundary_Range:1247
 F:16
-F_bound:16F_boundary_time:0.06,Hoff Potential Range:1247,leaves_to_sample:124
+F_bound:16F_boundary_time:0.02,Hoff Potential Range:1247,leaves_to_sample:124
 new F_bound:16chosen_Hoff_Roots_size:0 out of 1247
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 16, f = 16
 	Child node h = 0,g = 17, f = 17 m&s h+g = 17
@@ -21347,7 +21345,6 @@ Raiz node h = 0,g = 16, f = 16
 				best_h = 0
 
 Raiz node h = 0,g = 16, f = 16
-search_timer() = 1.31
 	Child node h = 0,g = 17, f = 17 m&s h+g = 17
 				h = 0
 				best_h = 0
@@ -23096,7 +23093,6 @@ Raiz node h = 0,g = 16, f = 16
 				best_h = 0
 
 Raiz node h = 0,g = 16, f = 16
-search_timer() = 1.33
 
 Raiz node h = 0,g = 16, f = 16
 
@@ -24828,7 +24824,6 @@ Raiz node h = 0,g = 16, f = 16
 Raiz node h = 0,g = 16, f = 16
 
 Raiz node h = 0,g = 16, f = 16
-search_timer() = 1.34
 
 Raiz node h = 0,g = 16, f = 16
 	Child node h = 0,g = 17, f = 17 m&s h+g = 17
@@ -25945,19 +25940,19 @@ generated_states - lastjump_generated_states = 2838
 expanded_states - lastjump_expanded_states = 1248
 fnivel1: 16
 nodesGeneratedByLevel1: 1248
- time01: 1.35
+ time01: 1.18
 nodesGeneratedToTheLevel1: 4593
-f: 17 [5418 evaluated, 4593 expanded, t=1.35s,generated_states:,13619,additional_states:,2838,],random_comb_index:-1
+f: 17 [5418 evaluated, 4593 expanded, t=1.18s,generated_states:,13619,additional_states:,2838,],random_comb_index:-1
 last_jump:17,F_bound_to_print:0
 gen_to_exp_ratio: 2.27404
-F_bound:,17,Peak memory=,30.2891
+F_bound:,17,Peak memory=,55.2852
 F:17
-F_bound:17,Peak memory=30.2891,nodes:5418,Nodes mem_space:169.312,F_boundary_Range:824
+F_bound:17,Peak memory=55.2852,nodes:5418,Nodes mem_space:211.641,F_boundary_Range:824
 F:17
-F_bound:17F_boundary_time:0.04,Hoff Potential Range:824,leaves_to_sample:100
+F_bound:17F_boundary_time:0.01,Hoff Potential Range:824,leaves_to_sample:100
 new F_bound:17chosen_Hoff_Roots_size:0 out of 824
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 17, f = 17
 	Child node h = 0,g = 18, f = 18 m&s h+g = 18
@@ -28680,7 +28675,6 @@ Raiz node h = 0,g = 17, f = 17
 				best_h = 0
 
 Raiz node h = 0,g = 17, f = 17
-search_timer() = 1.38
 	Child node h = 0,g = 18, f = 18 m&s h+g = 18
 				h = 0
 				best_h = 0
@@ -30320,19 +30314,19 @@ generated_states - lastjump_generated_states = 2250
 expanded_states - lastjump_expanded_states = 825
 fnivel1: 17
 nodesGeneratedByLevel1: 825
- time01: 1.39
+ time01: 1.2
 nodesGeneratedToTheLevel1: 5418
-f: 18 [6317 evaluated, 5418 expanded, t=1.39s,generated_states:,15869,additional_states:,2250,],random_comb_index:-1
+f: 18 [6317 evaluated, 5418 expanded, t=1.2s,generated_states:,15869,additional_states:,2250,],random_comb_index:-1
 last_jump:18,F_bound_to_print:0
 gen_to_exp_ratio: 2.72727
-F_bound:,18,Peak memory=,30.2891
+F_bound:,18,Peak memory=,55.2852
 F:18
-F_bound:18,Peak memory=30.2891,nodes:6317,Nodes mem_space:197.406,F_boundary_Range:898
+F_bound:18,Peak memory=55.2852,nodes:6317,Nodes mem_space:246.758,F_boundary_Range:898
 F:18
-F_bound:18F_boundary_time:0.04,Hoff Potential Range:898,leaves_to_sample:100
+F_bound:18F_boundary_time:0.02,Hoff Potential Range:898,leaves_to_sample:100
 new F_bound:18chosen_Hoff_Roots_size:0 out of 898
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 18, f = 18
 	Child node h = 0,g = 19, f = 19 m&s h+g = 19
@@ -33255,19 +33249,19 @@ generated_states - lastjump_generated_states = 1573
 expanded_states - lastjump_expanded_states = 899
 fnivel1: 18
 nodesGeneratedByLevel1: 899
- time01: 1.41
+ time01: 1.2
 nodesGeneratedToTheLevel1: 6317
-f: 19 [6687 evaluated, 6317 expanded, t=1.41s,generated_states:,17442,additional_states:,1573,],random_comb_index:-1
+f: 19 [6687 evaluated, 6317 expanded, t=1.2s,generated_states:,17442,additional_states:,1573,],random_comb_index:-1
 last_jump:19,F_bound_to_print:0
 gen_to_exp_ratio: 1.74972
-F_bound:,19,Peak memory=,30.2891
+F_bound:,19,Peak memory=,55.2852
 F:19
-F_bound:19,Peak memory=30.2891,nodes:6687,Nodes mem_space:208.969,F_boundary_Range:369
+F_bound:19,Peak memory=55.2852,nodes:6687,Nodes mem_space:261.211,F_boundary_Range:369
 F:19
-F_bound:19F_boundary_time:0.02,Hoff Potential Range:369,leaves_to_sample:100
+F_bound:19F_boundary_time:4.44523e-17,Hoff Potential Range:369,leaves_to_sample:100
 new F_bound:19chosen_Hoff_Roots_size:0 out of 369
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 19, f = 19
 	Child node h = 0,g = 20, f = 20 m&s h+g = 20
@@ -34665,7 +34659,6 @@ Raiz node h = 0,g = 19, f = 19
 				best_h = 0
 
 Raiz node h = 0,g = 19, f = 19
-search_timer() = 1.42
 	Child node h = 0,g = 20, f = 20 m&s h+g = 20
 				h = 0
 				best_h = 0
@@ -35133,19 +35126,19 @@ generated_states - lastjump_generated_states = 740
 expanded_states - lastjump_expanded_states = 370
 fnivel1: 19
 nodesGeneratedByLevel1: 370
- time01: 1.43
+ time01: 1.21
 nodesGeneratedToTheLevel1: 6687
-f: 20 [7057 evaluated, 6687 expanded, t=1.43s,generated_states:,18182,additional_states:,740,],random_comb_index:-1
+f: 20 [7057 evaluated, 6687 expanded, t=1.21s,generated_states:,18182,additional_states:,740,],random_comb_index:-1
 last_jump:20,F_bound_to_print:0
 gen_to_exp_ratio: 2
-F_bound:,20,Peak memory=,30.2891
+F_bound:,20,Peak memory=,55.2852
 F:20
-F_bound:20,Peak memory=30.2891,nodes:7057,Nodes mem_space:220.531,F_boundary_Range:369
+F_bound:20,Peak memory=55.2852,nodes:7057,Nodes mem_space:275.664,F_boundary_Range:369
 F:20
-F_bound:20F_boundary_time:0.02,Hoff Potential Range:369,leaves_to_sample:100
+F_bound:20F_boundary_time:0.01,Hoff Potential Range:369,leaves_to_sample:100
 new F_bound:20chosen_Hoff_Roots_size:0 out of 369
-Memory after Sampling::31016
-Memory before starting new F-boundary:31016
+Memory after Sampling::56612
+Memory before starting new F-boundary:56612
 
 Raiz node h = 0,g = 20, f = 20
 
@@ -35585,7 +35578,7 @@ Raiz node h = 0,g = 20, f = 20
  _________________________________
 |          Solution found!        |
  _________________________________
-overall generated nodes to last iter:,18399,search_time:,1.43,overall time:,1.43
+overall generated nodes to last iter:,18399,search_time:,1.21,overall time:,1.21
 effectiveBranchingFactor: 1
 effectiveBranchingFactor: 2
 effectiveBranchingFactor: 2
@@ -36217,249 +36210,35 @@ Raiz node h = 0,g = 20, f = 20
 nivel = 20
 last_level = 20
 Completely explored state space -- no solution!
-g.size() = 21
-Display
-g = 0
-0 
-
-g = 1
-1 
-
-g = 2
-2 
-
-g = 3
-3 
-
-g = 4
-4 4 
-
-g = 5
-5 5 5 
-
-g = 6
-6 6 6 6 6 6 6 
-
-g = 7
-7 7 7 7 7 7 7 7 7 7 7 
-
-g = 8
-8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
-
-g = 9
-9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
-
-g = 10
-10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 
-
-g = 11
-11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
-
-g = 12
-12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
-
-g = 13
-13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 
-
-g = 14
-14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 
-
-g = 15
-15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 
-
-g = 16
-16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 
-
-g = 17
-17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 
-
-g = 18
-18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 
-
-g = 19
-19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
-
-g = 20
-20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
-
-f_exp.size() = 7057
-f(camada)	#nodes expanded
-0	1
-1	1
-2	1
-3	1
-4	2
-5	3
-6	7
-7	11
-8	26
-9	42
-10	105
-11	184
-12	423
-13	590
-14	969
-15	979
-16	1248
-17	825
-18	899
-19	370
-20	370
-
-Dijkstra: Nodes by level.
-totalniveles: 21
-f: 0 q: 1
-
-fnivel: 0
-nodesGeneratedByLevel: 1
-time0: 1
-nodesGeneratedToTheLevel: 1
-
-f: 1 q: 1
-
-fnivel: 1
-nodesGeneratedByLevel: 1
-time0: 1
-nodesGeneratedToTheLevel: 2
-
-f: 2 q: 1
-
-fnivel: 2
-nodesGeneratedByLevel: 1
-time0: 1
-nodesGeneratedToTheLevel: 3
-
-f: 3 q: 1
-
-fnivel: 3
-nodesGeneratedByLevel: 1
-time0: 1
-nodesGeneratedToTheLevel: 4
-
-f: 4 q: 2
-
-fnivel: 4
-nodesGeneratedByLevel: 2
-time0: 1
-nodesGeneratedToTheLevel: 6
-
-f: 5 q: 3
-
-fnivel: 5
-nodesGeneratedByLevel: 3
-time0: 1
-nodesGeneratedToTheLevel: 9
-
-f: 6 q: 7
-
-fnivel: 6
-nodesGeneratedByLevel: 7
-time0: 1
-nodesGeneratedToTheLevel: 16
-
-f: 7 q: 11
-
-fnivel: 7
-nodesGeneratedByLevel: 11
-time0: 1
-nodesGeneratedToTheLevel: 27
-
-f: 8 q: 26
-
-fnivel: 8
-nodesGeneratedByLevel: 26
-time0: 1
-nodesGeneratedToTheLevel: 53
-
-f: 9 q: 42
-
-fnivel: 9
-nodesGeneratedByLevel: 42
-time0: 1
-nodesGeneratedToTheLevel: 95
-
-f: 10 q: 105
-
-fnivel: 10
-nodesGeneratedByLevel: 105
-time0: 1
-nodesGeneratedToTheLevel: 200
-
-f: 11 q: 184
-
-fnivel: 11
-nodesGeneratedByLevel: 184
-time0: 1
-nodesGeneratedToTheLevel: 384
-
-f: 12 q: 423
-
-fnivel: 12
-nodesGeneratedByLevel: 423
-time0: 1
-nodesGeneratedToTheLevel: 807
-
-f: 13 q: 590
-
-fnivel: 13
-nodesGeneratedByLevel: 590
-time0: 1
-nodesGeneratedToTheLevel: 1397
-
-f: 14 q: 969
-
-fnivel: 14
-nodesGeneratedByLevel: 969
-time0: 1
-nodesGeneratedToTheLevel: 2366
-
-f: 15 q: 979
-
-fnivel: 15
-nodesGeneratedByLevel: 979
-time0: 1
-nodesGeneratedToTheLevel: 3345
-
-f: 16 q: 1248
-
-fnivel: 16
-nodesGeneratedByLevel: 1248
-time0: 1
-nodesGeneratedToTheLevel: 4593
-
-f: 17 q: 825
-
-fnivel: 17
-nodesGeneratedByLevel: 825
-time0: 1
-nodesGeneratedToTheLevel: 5418
-
-f: 18 q: 899
-
-fnivel: 18
-nodesGeneratedByLevel: 899
-time0: 1
-nodesGeneratedToTheLevel: 6317
-
-f: 19 q: 370
-
-fnivel: 19
-nodesGeneratedByLevel: 370
-time0: 1
-nodesGeneratedToTheLevel: 6687
-
-f: 20 q: 370
-
-fnivel: 20
-nodesGeneratedByLevel: 370
-time0: 1
-nodesGeneratedToTheLevel: 7057
-
+dominio2 = blocks
+tarefa2 = probBLOCKS-6-2.pddl
+heuristica2 = dijkstra
+	0		1		1		1
+	1		1		1		2
+	2		1		1		3
+	3		1		1		4
+	4		2		1		6
+	5		3		1		9
+	6		7		1		16
+	7		11		1		27
+	8		26		1		53
+	9		42		1		95
+	10		105		1		200
+	11		184		1		384
+	12		423		1		807
+	13		590		1		1397
+	14		969		1		2366
+	15		979		1		3345
+	16		1248		1		4593
+	17		825		1		5418
+	18		899		1		6317
+	19		370		1		6687
+	20		370		1		7057
 failed to get n!
  ____________________________________
 |   total numero of call step() = 7057   |
  ____________________________________
-Actual search time: 0.56s [t=1.67s]
+Actual search time: 0.1s [t=1.21s]
 unstack a d (1)
 put-down a (1)
 unstack d b (1)
@@ -36495,10 +36274,13 @@ Evaluated until last jump: 7057 state(s).
 Generated until last jump: 18182 state(s).
 Search space hash size: 7057
 Search space hash bucket count: 12289
-Search time: 1.67s
-Total time: 1.67s
-Peak memory: 31016 KB
-VmRSS memory: 1988 KB
-VmHWM memory: 18804 KB
+Search time: 1.21s
+Total time: 1.21s
+Peak memory: 56612 KB
+VmRSS memory: 1748 KB
+VmHWM memory: 34212 KB
+destructor of HST eliminates all the hashed state descriptions
+destructor of HST eliminates all the hashed state descriptions
+destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

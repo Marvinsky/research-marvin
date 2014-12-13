@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/visitall-opt11-strips/domain.pddl 
 
 src/preprocess/preprocess < Astarvisitall-opt11-strips12.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astarvisitall-opt11-strips12 >> ${RESULTS}/problem07-half.pddl
+src/search/downward --domain_name visitall-opt11-strips --problem_name problem07-half.pddl --heuristic_name merge_and_shrink --search "astar(merge_and_shrink())" <  Astarvisitall-opt11-strips12 >> ${RESULTS}/problem07-half.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarvisitall-opt11-strips12
 
 
 rm Astarvisitall-opt11-strips12.sas
-
-
-
-rm src/translate/arquivos/problem07-half.pddl
 

@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/openstacks-opt08-strips/p07-domain
 
 src/preprocess/preprocess < Astaropenstacks-opt08-strips7.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astaropenstacks-opt08-strips7 >> ${RESULTS}/p07.pddl
+src/search/downward --domain_name openstacks-opt08-strips --problem_name p07.pddl --heuristic_name merge_and_shrink --search "astar(merge_and_shrink())" <  Astaropenstacks-opt08-strips7 >> ${RESULTS}/p07.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astaropenstacks-opt08-strips7
 
 
 rm Astaropenstacks-opt08-strips7.sas
-
-
-
-rm src/translate/arquivos/p07.pddl
 

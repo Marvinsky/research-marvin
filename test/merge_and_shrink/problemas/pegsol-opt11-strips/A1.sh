@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/pegsol-opt11-strips/domain.pddl be
 
 src/preprocess/preprocess < Astarpegsol-opt11-strips1.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astarpegsol-opt11-strips1 >> ${RESULTS}/p01.pddl
+src/search/downward --domain_name pegsol-opt11-strips --problem_name p01.pddl --heuristic_name merge_and_shrink --search "astar(merge_and_shrink())" <  Astarpegsol-opt11-strips1 >> ${RESULTS}/p01.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarpegsol-opt11-strips1
 
 
 rm Astarpegsol-opt11-strips1.sas
-
-
-
-rm src/translate/arquivos/p01.pddl
 

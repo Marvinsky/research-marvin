@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/elevators-opt08-strips/p06-domain.
 
 src/preprocess/preprocess < Astarelevators-opt08-strips6.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astarelevators-opt08-strips6 >> ${RESULTS}/p06.pddl
+src/search/downward --domain_name elevators-opt08-strips --problem_name p06.pddl --heuristic_name merge_and_shrink --search "astar(merge_and_shrink())" <  Astarelevators-opt08-strips6 >> ${RESULTS}/p06.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarelevators-opt08-strips6
 
 
 rm Astarelevators-opt08-strips6.sas
-
-
-
-rm src/translate/arquivos/p06.pddl
 

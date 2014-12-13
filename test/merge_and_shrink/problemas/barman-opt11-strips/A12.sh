@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/barman-opt11-strips/domain.pddl be
 
 src/preprocess/preprocess < Astarbarman-opt11-strips12.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astarbarman-opt11-strips12 >> ${RESULTS}/pfile03-012.pddl
+src/search/downward --domain_name barman-opt11-strips --problem_name pfile03-012.pddl --heuristic_name merge_and_shrink --search "astar(merge_and_shrink())" <  Astarbarman-opt11-strips12 >> ${RESULTS}/pfile03-012.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarbarman-opt11-strips12
 
 
 rm Astarbarman-opt11-strips12.sas
-
-
-
-rm src/translate/arquivos/pfile03-012.pddl
 

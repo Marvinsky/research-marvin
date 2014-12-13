@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/sokoban-opt08-strips/p30-domain.pd
 
 src/preprocess/preprocess < Astarsokoban-opt08-strips30.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astarsokoban-opt08-strips30 >> ${RESULTS}/p30.pddl
+src/search/downward --domain_name sokoban-opt08-strips --problem_name p30.pddl --heuristic_name merge_and_shrink --search "astar(merge_and_shrink())" <  Astarsokoban-opt08-strips30 >> ${RESULTS}/p30.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarsokoban-opt08-strips30
 
 
 rm Astarsokoban-opt08-strips30.sas
-
-
-
-rm src/translate/arquivos/p30.pddl
 

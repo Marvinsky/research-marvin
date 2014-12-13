@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < Astarblocks31.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astarblocks31 >> ${RESULTS}/probBLOCKS-15-0.pddl
+src/search/downward --domain_name blocks --problem_name probBLOCKS-15-0.pddl --heuristic_name merge_and_shrink --search "astar(merge_and_shrink())" <  Astarblocks31 >> ${RESULTS}/probBLOCKS-15-0.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarblocks31
 
 
 rm Astarblocks31.sas
-
-
-
-rm src/translate/arquivos/probBLOCKS-15-0.pddl
 

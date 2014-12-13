@@ -3,11 +3,11 @@ This is a unit task.
 Estos son los inicios de los inicios.
 argv[0] = src/search/downward-1
 argv[0][0] = s
-argv[1] = --search
-argv[2] = astar(merge_and_shrink())
-argv[4] = XDG_VTNR=1
-argv[5] = XDG_SESSION_ID=c1
-argc = 3
+argv[1] = --domain_name
+argv[2] = blocks
+argv[4] = probBLOCKS-4-1.pddl
+argv[5] = --heuristic_name
+argc = 9
 Simplifying transitions... done!
 OptionParser::parse_cmd_line
 registered: astar
@@ -33,7 +33,7 @@ got 2 heuristics
 f_evaluator populated
 # heuristics:1
 starting timings
-node gen_and_exp_cost:2.48148e-06
+node gen_and_exp_cost:2.58961e-06
 active heuristics size:1
 Initializing merge-and-shrink heuristic...
 Merge strategy: linear CG/GOAL, tie breaking on level (main)
@@ -156,13 +156,13 @@ Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Abstraction (6/9 vars): normalizing with label reduction
 Label reduction: 6 pruned vars, 32 labels, 15 reduced labels
 Abstraction (6/9 vars): 1000 states, ???/7800 arcs, 89308 bytes
-Abstraction (6/9 vars): init h=6, max f=21, max g=14, max h=11 [t=1.01s]
+Abstraction (6/9 vars): init h=6, max f=21, max g=14, max h=11 [t=1s]
 Atomic abstraction #2: normalizing without label reduction
 Atomic abstraction #2: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1.01s]
+Atomic abstraction #2: init h=0, max f=1, max g=1, max h=0 [t=1s]
 Merging abstraction (6/9 vars) and atomic abstraction #2
 Abstraction (7/9 vars): 2000 states, ???/13800 arcs, 133068 bytes
-Abstraction (7/9 vars): distances not computed [t=1.01s]
+Abstraction (7/9 vars): distances not computed [t=1s]
 Next variable: #1
 Abstraction (7/9 vars): computing distances using unit-cost algorithm
 Atomic abstraction #1: distances already known
@@ -189,9 +189,9 @@ Abstraction (8/9 vars): applying abstraction to lookup table
 Abstraction (8/9 vars): size after shrink 2984, target 4000
 Atomic abstraction #0: distances already known
 Abstraction (8/9 vars): 2984 states, ???/18576 arcs, 246732 bytes
-Abstraction (8/9 vars): init h=8, max f=25, max g=15, max h=13 [t=1.02s]
+Abstraction (8/9 vars): init h=8, max f=25, max g=15, max h=13 [t=1.01s]
 Atomic abstraction #0: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1.02s]
+Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=1.01s]
 Abstraction (8/9 vars): normalizing with label reduction
 Label reduction: 8 pruned vars, 32 labels, 9 reduced labels
 Abstraction (8/9 vars): 2984 states, ???/18576 arcs, 247756 bytes
@@ -218,1021 +218,217 @@ Abstraction (9/9 vars): init h=10, max f=24, max g=12, max h=12 [t=1.04s]
 Done initializing merge-and-shrink heuristic [0.04s]
 initial h value: 10
 Estimated peak memory for abstraction: 486348 bytes
-************************
 Setting initial h: 10
-************************
-************************
-Initial node h: 0
-************************
 	Maxing_h[0]:0
-	Maxing_h[1]:0
+	Maxing_h[1]:10
 lastjumpt_f_value = -1
-f in report_f_value = 0
+f in report_f_value = 10
 generated states = 0
 evaluated states = 1
 expanded states = 0
 reopened states = 0
-f: 0 [1 evaluated, 0 expanded, t=1.04s,generated_states:,0,additional_states:,0,],random_comb_index:-1
+f: 10 [1 evaluated, 0 expanded, t=1.04s,generated_states:,0,additional_states:,0,],random_comb_index:-1
+last_jump:10,F_bound_to_print:0
 gen_to_exp_ratio: -nan
-F_bound:,0,Peak memory=,18.2383
+F_bound:,10,Peak memory=,19.582
 				h = 10
 				best_h = -1
 				new best_h = 10
 Best heuristic value: 10 [g=0, 1 evaluated, 0 expanded, t=1.04s]
 starting timing individual heuristics
-h[,0,] is:,heur is not named,measured time cost:1.05834e-06,h:10
+h[,0,] is:,heur is not named,measured time cost:1.08814e-06,h:10
 memory before deleting databases:
-VmRSS memory: 10012 KB
+VmRSS memory: 9356 KB
 memory after deleting all databases:
-VmRSS memory: 10012 KB
+VmRSS memory: 9356 KB
 Remaining heuristics:
 remaining initial heurheur is not named
 node_time_adjusted_reval based on the min of half second node_gen and the most expensive heuristic or 1000 nodes:1000
 
-Raiz node h = 0,g = 0, f = 0
-search_timer() = 1.15
-	Child node h = 0,g = 1, f = 1 m&s h+g = 10
+Raiz node h = 10,g = 0, f = 10
+	Child node h = 9,g = 1, f = 10 m&s h+g = 10
 				h = 9
 				best_h = 10
 				new best_h = 9
 Best heuristic value: 9 [g=1, 2 evaluated, 1 expanded, t=1.15s]
-lastjumpt_f_value = 0
-f in report_f_value = 1
-generated states = 1
-evaluated states = 2
-expanded states = 1
-reopened states = 0
-lastjump generated states = 0
-lastjump evaluated states = 1
-lastjump expanded states = 0
-lastjump reopened states = 0
-generated_states - lastjump_generated_states = 1
-expanded_states - lastjump_expanded_states = 1
-fnivel1: 0
-nodesGeneratedByLevel1: 1
- time01: 1.15
-nodesGeneratedToTheLevel1: 1
-f: 1 [2 evaluated, 1 expanded, t=1.15s,generated_states:,1,additional_states:,1,],random_comb_index:-1
-last_jump:1,F_bound_to_print:0
-gen_to_exp_ratio: 1
-F_bound:,1,Peak memory=,18.2383
-F_bound:1,Peak memory=18.2383,nodes:2,Nodes mem_space:0.0625,F_boundary_Range:0
-F_bound:1F_boundary_time:8.87962e-17,Hoff Potential Range:0,leaves_to_sample:0
-new F_bound:1chosen_Hoff_Roots_size:0 out of 0
-Memory after Sampling::18676
-Memory before starting new F-boundary:18676
 
-Raiz node h = 0,g = 1, f = 1
-	Child node h = 0,g = 2, f = 2 m&s h+g = 10
+Raiz node h = 9,g = 1, f = 10
+	Child node h = 8,g = 2, f = 10 m&s h+g = 10
 				h = 8
 				best_h = 9
 				new best_h = 8
 Best heuristic value: 8 [g=2, 3 evaluated, 2 expanded, t=1.15s]
-lastjumpt_f_value = 1
-f in report_f_value = 2
-generated states = 3
-evaluated states = 3
-expanded states = 2
-reopened states = 0
-lastjump generated states = 1
-lastjump evaluated states = 2
-lastjump expanded states = 1
-lastjump reopened states = 0
-generated_states - lastjump_generated_states = 2
-expanded_states - lastjump_expanded_states = 1
-fnivel1: 1
-nodesGeneratedByLevel1: 1
- time01: 1.15
-nodesGeneratedToTheLevel1: 2
-f: 2 [3 evaluated, 2 expanded, t=1.15s,generated_states:,3,additional_states:,2,],random_comb_index:-1
-last_jump:2,F_bound_to_print:0
-gen_to_exp_ratio: 2
-F_bound:,2,Peak memory=,18.2383
-F_bound:2,Peak memory=18.2383,nodes:3,Nodes mem_space:0.09375,F_boundary_Range:0
-F_bound:2F_boundary_time:8.87962e-17,Hoff Potential Range:0,leaves_to_sample:0
-new F_bound:2chosen_Hoff_Roots_size:0 out of 0
-Memory after Sampling::18676
-Memory before starting new F-boundary:18676
 
-Raiz node h = 0,g = 2, f = 2
-	Child node h = 0,g = 3, f = 3 m&s h+g = 10
+Raiz node h = 8,g = 2, f = 10
+	Child node h = 7,g = 3, f = 10 m&s h+g = 10
 				h = 7
 				best_h = 8
 				new best_h = 7
 Best heuristic value: 7 [g=3, 4 evaluated, 3 expanded, t=1.15s]
-lastjumpt_f_value = 2
-f in report_f_value = 3
-generated states = 5
-evaluated states = 4
-expanded states = 3
-reopened states = 0
-lastjump generated states = 3
-lastjump evaluated states = 3
-lastjump expanded states = 2
-lastjump reopened states = 0
-generated_states - lastjump_generated_states = 2
-expanded_states - lastjump_expanded_states = 1
-fnivel1: 2
-nodesGeneratedByLevel1: 1
- time01: 1.15
-nodesGeneratedToTheLevel1: 3
-f: 3 [4 evaluated, 3 expanded, t=1.15s,generated_states:,5,additional_states:,2,],random_comb_index:-1
-last_jump:3,F_bound_to_print:0
-gen_to_exp_ratio: 2
-F_bound:,3,Peak memory=,18.2383
-F_bound:3,Peak memory=18.2383,nodes:4,Nodes mem_space:0.125,F_boundary_Range:0
-F_bound:3F_boundary_time:8.87962e-17,Hoff Potential Range:0,leaves_to_sample:0
-new F_bound:3chosen_Hoff_Roots_size:0 out of 0
-Memory after Sampling::18676
-Memory before starting new F-boundary:18676
 
-Raiz node h = 0,g = 3, f = 3
-	Child node h = 0,g = 4, f = 4 m&s h+g = 12
+Raiz node h = 7,g = 3, f = 10
+	Child node h = 8,g = 4, f = 12 m&s h+g = 12
 				h = 8
 				best_h = 7
-	Child node h = 0,g = 4, f = 4 m&s h+g = 10
+	Child node h = 6,g = 4, f = 10 m&s h+g = 10
 				h = 6
 				best_h = 7
 				new best_h = 6
 Best heuristic value: 6 [g=4, 6 evaluated, 4 expanded, t=1.15s]
-lastjumpt_f_value = 3
-f in report_f_value = 4
-generated states = 8
-evaluated states = 6
-expanded states = 4
-reopened states = 0
-lastjump generated states = 5
-lastjump evaluated states = 4
-lastjump expanded states = 3
-lastjump reopened states = 0
-generated_states - lastjump_generated_states = 3
-expanded_states - lastjump_expanded_states = 1
-fnivel1: 3
-nodesGeneratedByLevel1: 1
- time01: 1.15
-nodesGeneratedToTheLevel1: 4
-f: 4 [6 evaluated, 4 expanded, t=1.15s,generated_states:,8,additional_states:,3,],random_comb_index:-1
-last_jump:4,F_bound_to_print:0
-gen_to_exp_ratio: 3
-F_bound:,4,Peak memory=,18.2383
-F:4
-F_bound:4,Peak memory=18.2383,nodes:6,Nodes mem_space:0.1875,F_boundary_Range:1
-F:4
-F_bound:4F_boundary_time:8.87962e-17,Hoff Potential Range:1,leaves_to_sample:1
-new F_bound:4chosen_Hoff_Roots_size:0 out of 1
-Memory after Sampling::18676
-Memory before starting new F-boundary:18676
 
-Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5 m&s h+g = 14
-				h = 9
-				best_h = 6
-
-Raiz node h = 0,g = 4, f = 4
-	Child node h = 0,g = 5, f = 5 m&s h+g = 10
+Raiz node h = 6,g = 4, f = 10
+	Child node h = 5,g = 5, f = 10 m&s h+g = 10
 				h = 5
 				best_h = 6
 				new best_h = 5
-Best heuristic value: 5 [g=5, 8 evaluated, 6 expanded, t=1.15s]
-	Child node h = 0,g = 5, f = 5 m&s h+g = 12
+Best heuristic value: 5 [g=5, 7 evaluated, 5 expanded, t=1.15s]
+	Child node h = 7,g = 5, f = 12 m&s h+g = 12
 				h = 7
 				best_h = 5
-lastjumpt_f_value = 4
-f in report_f_value = 5
-generated states = 13
-evaluated states = 9
-expanded states = 6
-reopened states = 0
-lastjump generated states = 8
-lastjump evaluated states = 6
-lastjump expanded states = 4
-lastjump reopened states = 0
-generated_states - lastjump_generated_states = 5
-expanded_states - lastjump_expanded_states = 2
-fnivel1: 4
-nodesGeneratedByLevel1: 2
- time01: 1.15
-nodesGeneratedToTheLevel1: 6
-f: 5 [9 evaluated, 6 expanded, t=1.15s,generated_states:,13,additional_states:,5,],random_comb_index:-1
-last_jump:5,F_bound_to_print:0
-gen_to_exp_ratio: 2.5
-F_bound:,5,Peak memory=,18.2383
-F:5
-F_bound:5,Peak memory=18.2383,nodes:9,Nodes mem_space:0.28125,F_boundary_Range:2
-F:5
-F_bound:5F_boundary_time:8.87962e-17,Hoff Potential Range:2,leaves_to_sample:2
-new F_bound:5chosen_Hoff_Roots_size:0 out of 2
-Memory after Sampling::18676
-Memory before starting new F-boundary:18676
 
-Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6 m&s h+g = 16
-				h = 10
-				best_h = 5
-	Child node h = 0,g = 6, f = 6 m&s h+g = 14
-				h = 8
-				best_h = 5
-
-Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6 m&s h+g = 10
+Raiz node h = 5,g = 5, f = 10
+	Child node h = 4,g = 6, f = 10 m&s h+g = 10
 				h = 4
 				best_h = 5
 				new best_h = 4
-Best heuristic value: 4 [g=6, 12 evaluated, 8 expanded, t=1.15s]
-	Child node h = 0,g = 6, f = 6 m&s h+g = 12
+Best heuristic value: 4 [g=6, 9 evaluated, 6 expanded, t=1.15s]
+	Child node h = 6,g = 6, f = 12 m&s h+g = 12
 				h = 6
 				best_h = 4
-	Child node h = 0,g = 6, f = 6 m&s h+g = 12
+	Child node h = 6,g = 6, f = 12 m&s h+g = 12
 				h = 6
 				best_h = 4
 
-Raiz node h = 0,g = 5, f = 5
-	Child node h = 0,g = 6, f = 6 m&s h+g = 14
-				h = 8
-				best_h = 4
-	Child node h = 0,g = 6, f = 6 m&s h+g = 14
-				h = 8
-				best_h = 4
-lastjumpt_f_value = 5
-f in report_f_value = 6
-generated states = 23
-evaluated states = 16
-expanded states = 9
-reopened states = 0
-lastjump generated states = 13
-lastjump evaluated states = 9
-lastjump expanded states = 6
-lastjump reopened states = 0
-generated_states - lastjump_generated_states = 10
-expanded_states - lastjump_expanded_states = 3
-fnivel1: 5
-nodesGeneratedByLevel1: 3
- time01: 1.15
-nodesGeneratedToTheLevel1: 9
-f: 6 [16 evaluated, 9 expanded, t=1.15s,generated_states:,23,additional_states:,10,],random_comb_index:-1
-last_jump:6,F_bound_to_print:0
-gen_to_exp_ratio: 3.33333
-F_bound:,6,Peak memory=,18.2383
-F:6
-F_bound:6,Peak memory=18.2383,nodes:16,Nodes mem_space:0.5,F_boundary_Range:6
-F:6
-F_bound:6F_boundary_time:8.87962e-17,Hoff Potential Range:6,leaves_to_sample:6
-new F_bound:6chosen_Hoff_Roots_size:0 out of 6
-Memory after Sampling::18676
-Memory before starting new F-boundary:18676
-
-Raiz node h = 0,g = 6, f = 6
-	Child node h = 0,g = 7, f = 7 m&s h+g = 18
-				h = 11
-				best_h = 4
-
-Raiz node h = 0,g = 6, f = 6
-	Child node h = 0,g = 7, f = 7 m&s h+g = 14
-				h = 7
-				best_h = 4
-	Child node h = 0,g = 7, f = 7 m&s h+g = 16
-				h = 9
-				best_h = 4
-
-Raiz node h = 0,g = 6, f = 6
-	Child node h = 0,g = 7, f = 7 m&s h+g = 10
+Raiz node h = 4,g = 6, f = 10
+	Child node h = 3,g = 7, f = 10 m&s h+g = 10
 				h = 3
 				best_h = 4
 				new best_h = 3
-Best heuristic value: 3 [g=7, 20 evaluated, 12 expanded, t=1.15s]
-	Child node h = 0,g = 7, f = 7 m&s h+g = 12
+Best heuristic value: 3 [g=7, 12 evaluated, 7 expanded, t=1.15s]
+	Child node h = 5,g = 7, f = 12 m&s h+g = 12
 				h = 5
 				best_h = 3
 
-Raiz node h = 0,g = 6, f = 6
-	Child node h = 0,g = 7, f = 7 m&s h+g = 14
-				h = 7
-				best_h = 3
-	Child node h = 0,g = 7, f = 7 m&s h+g = 14
-				h = 7
-				best_h = 3
-
-Raiz node h = 0,g = 6, f = 6
-	Child node h = 0,g = 7, f = 7 m&s h+g = 14
-				h = 7
-				best_h = 3
-	Child node h = 0,g = 7, f = 7 m&s h+g = 14
-				h = 7
-				best_h = 3
-
-Raiz node h = 0,g = 6, f = 6
-	Child node h = 0,g = 7, f = 7 m&s h+g = 16
-				h = 9
-				best_h = 3
-
-Raiz node h = 0,g = 6, f = 6
-	Child node h = 0,g = 7, f = 7 m&s h+g = 16
-				h = 9
-				best_h = 3
-lastjumpt_f_value = 6
-f in report_f_value = 7
-generated states = 42
-evaluated states = 27
-expanded states = 16
-reopened states = 0
-lastjump generated states = 23
-lastjump evaluated states = 16
-lastjump expanded states = 9
-lastjump reopened states = 0
-generated_states - lastjump_generated_states = 19
-expanded_states - lastjump_expanded_states = 7
-fnivel1: 6
-nodesGeneratedByLevel1: 7
- time01: 1.15
-nodesGeneratedToTheLevel1: 16
-f: 7 [27 evaluated, 16 expanded, t=1.15s,generated_states:,42,additional_states:,19,],random_comb_index:-1
-last_jump:7,F_bound_to_print:0
-gen_to_exp_ratio: 2.71429
-F_bound:,7,Peak memory=,18.2383
-F:7
-F_bound:7,Peak memory=18.2383,nodes:27,Nodes mem_space:0.84375,F_boundary_Range:10
-F:7
-F_bound:7F_boundary_time:8.87962e-17,Hoff Potential Range:10,leaves_to_sample:10
-new F_bound:7chosen_Hoff_Roots_size:0 out of 10
-Memory after Sampling::18676
-Memory before starting new F-boundary:18676
-
-Raiz node h = 0,g = 7, f = 7
-	Child node h = 0,g = 8, f = 8 m&s h+g = 20
-				h = 12
-				best_h = 3
-
-Raiz node h = 0,g = 7, f = 7
-	Child node h = 0,g = 8, f = 8 m&s h+g = 16
-				h = 8
-				best_h = 3
-	Child node h = 0,g = 8, f = 8 m&s h+g = 14
-				h = 6
-				best_h = 3
-
-Raiz node h = 0,g = 7, f = 7
-	Child node h = 0,g = 8, f = 8 m&s h+g = 18
-				h = 10
-				best_h = 3
-	Child node h = 0,g = 8, f = 8 m&s h+g = 18
-				h = 10
-				best_h = 3
-
-Raiz node h = 0,g = 7, f = 7
-	Child node h = 0,g = 8, f = 8 m&s h+g = 10
+Raiz node h = 3,g = 7, f = 10
+	Child node h = 2,g = 8, f = 10 m&s h+g = 10
 				h = 2
 				best_h = 3
 				new best_h = 2
-Best heuristic value: 2 [g=8, 33 evaluated, 20 expanded, t=1.15s]
-	Child node h = 0,g = 8, f = 8 m&s h+g = 12
+Best heuristic value: 2 [g=8, 14 evaluated, 8 expanded, t=1.15s]
+	Child node h = 4,g = 8, f = 12 m&s h+g = 12
 				h = 4
 				best_h = 2
 
-Raiz node h = 0,g = 7, f = 7
-	Child node h = 0,g = 8, f = 8 m&s h+g = 14
-				h = 6
-				best_h = 2
-	Child node h = 0,g = 8, f = 8 m&s h+g = 14
-				h = 6
-				best_h = 2
-
-Raiz node h = 0,g = 7, f = 7
-	Child node h = 0,g = 8, f = 8 m&s h+g = 16
-				h = 8
-				best_h = 2
-	Child node h = 0,g = 8, f = 8 m&s h+g = 16
-				h = 8
-				best_h = 2
-
-Raiz node h = 0,g = 7, f = 7
-	Child node h = 0,g = 8, f = 8 m&s h+g = 16
-				h = 8
-				best_h = 2
-	Child node h = 0,g = 8, f = 8 m&s h+g = 16
-				h = 8
-				best_h = 2
-
-Raiz node h = 0,g = 7, f = 7
-	Child node h = 0,g = 8, f = 8 m&s h+g = 16
-				h = 8
-				best_h = 2
-	Child node h = 0,g = 8, f = 8 m&s h+g = 16
-				h = 8
-				best_h = 2
-	Child node h = 0,g = 8, f = 8 m&s h+g = 16
-				h = 8
-				best_h = 2
-
-Raiz node h = 0,g = 7, f = 7
-	Child node h = 0,g = 8, f = 8 m&s h+g = 16
-				h = 8
-				best_h = 2
-	Child node h = 0,g = 8, f = 8 m&s h+g = 16
-				h = 8
-				best_h = 2
-	Child node h = 0,g = 8, f = 8 m&s h+g = 16
-				h = 8
-				best_h = 2
-
-Raiz node h = 0,g = 7, f = 7
-	Child node h = 0,g = 8, f = 8 m&s h+g = 18
-				h = 10
-				best_h = 2
-
-Raiz node h = 0,g = 7, f = 7
-	Child node h = 0,g = 8, f = 8 m&s h+g = 18
-				h = 10
-				best_h = 2
-lastjumpt_f_value = 7
-f in report_f_value = 8
-generated states = 76
-evaluated states = 48
-expanded states = 27
-reopened states = 0
-lastjump generated states = 42
-lastjump evaluated states = 27
-lastjump expanded states = 16
-lastjump reopened states = 0
-generated_states - lastjump_generated_states = 34
-expanded_states - lastjump_expanded_states = 11
-fnivel1: 7
-nodesGeneratedByLevel1: 11
- time01: 1.15
-nodesGeneratedToTheLevel1: 27
-f: 8 [48 evaluated, 27 expanded, t=1.15s,generated_states:,76,additional_states:,34,],random_comb_index:-1
-last_jump:8,F_bound_to_print:0
-gen_to_exp_ratio: 3.09091
-F_bound:,8,Peak memory=,18.2383
-F:8
-F_bound:8,Peak memory=18.2383,nodes:48,Nodes mem_space:1.5,F_boundary_Range:20
-F:8
-F_bound:8F_boundary_time:8.87962e-17,Hoff Potential Range:20,leaves_to_sample:20
-new F_bound:8chosen_Hoff_Roots_size:0 out of 20
-Memory after Sampling::18676
-Memory before starting new F-boundary:18676
-
-Raiz node h = 0,g = 8, f = 8
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
-				best_h = 2
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
-				best_h = 2
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 14
-				h = 5
-				best_h = 2
-	Child node h = 0,g = 9, f = 9 m&s h+g = 16
-				h = 7
-				best_h = 2
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
-				best_h = 2
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 20
-				h = 11
-				best_h = 2
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 10
+Raiz node h = 2,g = 8, f = 10
+	Child node h = 1,g = 9, f = 10 m&s h+g = 10
 				h = 1
 				best_h = 2
 				new best_h = 1
-Best heuristic value: 1 [g=9, 55 evaluated, 33 expanded, t=1.15s]
+Best heuristic value: 1 [g=9, 16 evaluated, 9 expanded, t=1.15s]
 
-Raiz node h = 0,g = 8, f = 8
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 16
-				h = 7
-				best_h = 1
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 16
-				h = 7
-				best_h = 1
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
-				best_h = 1
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
-				best_h = 1
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
-				best_h = 1
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
-				best_h = 1
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
-				best_h = 1
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
-				best_h = 1
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
-				best_h = 1
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
-				best_h = 1
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
-				best_h = 1
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
-				best_h = 1
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 18
-				h = 9
-				best_h = 1
-
-Raiz node h = 0,g = 8, f = 8
-
-Raiz node h = 0,g = 8, f = 8
-	Child node h = 0,g = 9, f = 9 m&s h+g = 20
-				h = 11
-				best_h = 1
-lastjumpt_f_value = 8
-f in report_f_value = 9
-generated states = 124
-evaluated states = 69
-expanded states = 48
-reopened states = 0
-lastjump generated states = 76
-lastjump evaluated states = 48
-lastjump expanded states = 27
-lastjump reopened states = 0
-generated_states - lastjump_generated_states = 48
-expanded_states - lastjump_expanded_states = 21
-fnivel1: 8
-nodesGeneratedByLevel1: 21
- time01: 1.15
-nodesGeneratedToTheLevel1: 48
-f: 9 [69 evaluated, 48 expanded, t=1.15s,generated_states:,124,additional_states:,48,],random_comb_index:-1
-last_jump:9,F_bound_to_print:0
-gen_to_exp_ratio: 2.28571
-F_bound:,9,Peak memory=,18.2383
-F:9
-F_bound:9,Peak memory=18.2383,nodes:69,Nodes mem_space:2.15625,F_boundary_Range:20
-F:9
-F_bound:9F_boundary_time:8.87962e-17,Hoff Potential Range:20,leaves_to_sample:20
-new F_bound:9chosen_Hoff_Roots_size:0 out of 20
-Memory after Sampling::18676
-Memory before starting new F-boundary:18676
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 1
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 1
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 1
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 1
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 16
-				h = 6
-				best_h = 1
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 18
-				h = 8
-				best_h = 1
-	Child node h = 0,g = 10, f = 10 m&s h+g = 18
-				h = 8
-				best_h = 1
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 1
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 22
-				h = 12
-				best_h = 1
-
-Raiz node h = 0,g = 9, f = 9
+Raiz node h = 1,g = 9, f = 10
 	Child node h = 0,g = 10, f = 10 m&s h+g = 10
 				h = 0
 				best_h = 1
 				new best_h = 0
-Best heuristic value: 0 [g=10, 79 evaluated, 55 expanded, t=1.15s]
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 18
-				h = 8
-				best_h = 0
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 18
-				h = 8
-				best_h = 0
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 0
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 0
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 0
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 0
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 0
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 0
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 0
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 0
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 0
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 0
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 0
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 0
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 20
-				h = 10
-				best_h = 0
-
-Raiz node h = 0,g = 9, f = 9
-	Child node h = 0,g = 10, f = 10 m&s h+g = 22
-				h = 12
-				best_h = 0
-lastjumpt_f_value = 9
-f in report_f_value = 10
-generated states = 181
-evaluated states = 95
-expanded states = 69
-reopened states = 0
-lastjump generated states = 124
-lastjump evaluated states = 69
-lastjump expanded states = 48
-lastjump reopened states = 0
-generated_states - lastjump_generated_states = 57
-expanded_states - lastjump_expanded_states = 21
-fnivel1: 9
-nodesGeneratedByLevel1: 21
- time01: 1.15
-nodesGeneratedToTheLevel1: 69
-f: 10 [95 evaluated, 69 expanded, t=1.15s,generated_states:,181,additional_states:,57,],random_comb_index:-1
-last_jump:10,F_bound_to_print:0
-gen_to_exp_ratio: 2.71429
-F_bound:,10,Peak memory=,18.2383
-F:10
-F_bound:10,Peak memory=18.2383,nodes:95,Nodes mem_space:2.96875,F_boundary_Range:25
-F:10
-F_bound:10F_boundary_time:8.87962e-17,Hoff Potential Range:25,leaves_to_sample:25
-new F_bound:10chosen_Hoff_Roots_size:0 out of 25
-Memory after Sampling::18676
-Memory before starting new F-boundary:18676
-
-Raiz node h = 0,g = 10, f = 10
-	Child node h = 0,g = 11, f = 11 m&s h+g = 22
-				h = 11
-				best_h = 0
-
-Raiz node h = 0,g = 10, f = 10
-
-Raiz node h = 0,g = 10, f = 10
-
-Raiz node h = 0,g = 10, f = 10
-	Child node h = 0,g = 11, f = 11 m&s h+g = 22
-				h = 11
-				best_h = 0
-
-Raiz node h = 0,g = 10, f = 10
-	Child node h = 0,g = 11, f = 11 m&s h+g = 18
-				h = 7
-				best_h = 0
-
-Raiz node h = 0,g = 10, f = 10
-
-Raiz node h = 0,g = 10, f = 10
-	Child node h = 0,g = 11, f = 11 m&s h+g = 20
-				h = 9
-				best_h = 0
-
-Raiz node h = 0,g = 10, f = 10
-	Child node h = 0,g = 11, f = 11 m&s h+g = 22
-				h = 11
-				best_h = 0
-
-Raiz node h = 0,g = 10, f = 10
+Best heuristic value: 0 [g=10, 17 evaluated, 10 expanded, t=1.15s]
 
 Raiz node h = 0,g = 10, f = 10
  _________________________________
 |          Solution found!        |
  _________________________________
-overall generated nodes to last iter:,198,search_time:,1.16,overall time:,1.16
-effectiveBranchingFactor: 1
-effectiveBranchingFactor: 2
-effectiveBranchingFactor: 2
-effectiveBranchingFactor: 3
-effectiveBranchingFactor: 5
-effectiveBranchingFactor: 5
-effectiveBranchingFactor: 6.33333
-effectiveBranchingFactor: 4.85714
-effectiveBranchingFactor: 4.36364
-effectiveBranchingFactor: 2.71429
+overall generated nodes to last iter:,25,search_time:,1.15,overall time:,1.15
 
 Count the nodes in the last level.
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
-
-Raiz node h = 0,g = 10, f = 10
-nivel = 10
-last_level = 10
 lastjumpt_f_value = 10
-f in report_f_value = 11
-generated states = 198
-evaluated states = 100
-expanded states = 95
+f in report_f_value = 12
+generated states = 25
+evaluated states = 17
+expanded states = 11
 reopened states = 0
-lastjump generated states = 181
-lastjump evaluated states = 95
-lastjump expanded states = 69
+lastjump generated states = 0
+lastjump evaluated states = 1
+lastjump expanded states = 0
 lastjump reopened states = 0
-generated_states - lastjump_generated_states = 17
-expanded_states - lastjump_expanded_states = 26
+generated_states - lastjump_generated_states = 25
+expanded_states - lastjump_expanded_states = 11
 fnivel1: 10
-nodesGeneratedByLevel1: 26
- time01: 1.16
-nodesGeneratedToTheLevel1: 95
-f: 11 [100 evaluated, 95 expanded, t=1.16s,generated_states:,198,additional_states:,17,],random_comb_index:-1
-last_jump:11,F_bound_to_print:0
-gen_to_exp_ratio: 0.653846
-F_bound:,11,Peak memory=,18.2383
-F:11
-F_bound:11,Peak memory=18.2383,nodes:100,Nodes mem_space:3.125,F_boundary_Range:4
-F:11
-F_bound:11F_boundary_time:0.01,Hoff Potential Range:4,leaves_to_sample:4
-new F_bound:11chosen_Hoff_Roots_size:0 out of 4
-Memory after Sampling::18676
-Memory before starting new F-boundary:18676
+nodesGeneratedByLevel1: 11
+ time01: 1.15
+nodesGeneratedToTheLevel1: 11
+f: 12 [17 evaluated, 11 expanded, t=1.15s,generated_states:,25,additional_states:,25,],random_comb_index:-1
+last_jump:12,F_bound_to_print:0
+gen_to_exp_ratio: 2.27273
+F_bound:,12,Peak memory=,19.582
+F:12
+F_bound:12,Peak memory=19.582,nodes:17,Nodes mem_space:0.664062,F_boundary_Range:5
+F:12
+F_bound:12F_boundary_time:8.87962e-17,Hoff Potential Range:5,leaves_to_sample:5
+new F_bound:12chosen_Hoff_Roots_size:0 out of 5
+Memory after Sampling::20052
+Memory before starting new F-boundary:20052
 
-Raiz node h = 0,g = 11, f = 11
+Raiz node h = 4,g = 8, f = 12
 nivel = 10
-last_level = 11
-count_last_nodes_gerados: 16
-g.size() = 12
-Display
-g = 0
-10 
-
-g = 1
-10 
-
-g = 2
-10 
-
-g = 3
-10 
-
-g = 4
-12 10 
-
-g = 5
-14 10 12 
-
-g = 6
-16 14 10 12 12 14 14 
-
-g = 7
-18 14 16 10 12 14 14 14 14 16 16 
-
-g = 8
-20 16 14 18 18 10 12 14 14 16 16 16 16 16 16 16 16 16 16 18 18 
-
-g = 9
-18 18 14 16 18 20 10 16 16 18 18 18 18 18 18 18 18 18 18 18 20 
-
-g = 10
-20 20 20 20 16 18 18 20 22 10 18 18 20 20 20 20 20 20 20 20 20 20 20 20 20 22 
-
-g = 11
-22 22 18 20 22 
-
-f_exp.size() = 100
-f(camada)	#nodes expanded
-10	11
-12	6
-14	13
-16	19
-18	24
-20	22
-22	5
-
-Nodes by camadas.
-niveles totales 7
-
-fnivel: 10
-nodesGeneratedByLevel: 11
-time0: 1
-nodesGeneratedToTheLevel: 11
-
-Dijkstra: Nodes by level.
-totalniveles: 1
-fileName.size() = 19
-fileName.size() = 1
-fileName.size() = 2
-The path in eager search is: probBLOCKS-4-1.pddl
+last_level = 12
+count_last_nodes_gerados: 0
+collector.size() = 16
+L = 0
+F = 10
+second = 1
+L = 1
+F = 10
+second = 1
+L = 2
+F = 10
+second = 1
+L = 3
+F = 10
+second = 1
+L = 4
+F = 10
+second = 1
+L = 5
+F = 10
+second = 1
+L = 6
+F = 10
+second = 1
+L = 7
+F = 10
+second = 1
+L = 8
+F = 10
+second = 1
+L = 9
+F = 10
+second = 1
+L = 10
+F = 10
+second = 1
+L = 4
+F = 12
+second = 1
+L = 5
+F = 12
+second = 1
+L = 6
+F = 12
+second = 2
+L = 7
+F = 12
+second = 1
+L = 8
+F = 12
+second = 1
 dominio = blocks
 tarefa = probBLOCKS-4-1.pddl
 heuristica = merge_and_shrink
-dominio2 = blocks
-tarefa2 = probBLOCKS-4-1.pddl
-heuristica2 = merge_and_shrink
-g = 0
-size: 1
-f: 10 q: 1
-g = 1
-size: 1
-f: 10 q: 1
-g = 2
-size: 1
-f: 10 q: 1
-g = 3
-size: 1
-f: 10 q: 1
-g = 4
-size: 2
-f: 10 q: 1
-f: 12 q: 1
-g = 5
-size: 3
-f: 10 q: 1
-f: 12 q: 1
-f: 14 q: 1
-g = 6
-size: 4
-f: 10 q: 1
-f: 12 q: 2
-f: 14 q: 3
-f: 16 q: 1
-g = 7
-size: 5
-f: 10 q: 1
-f: 12 q: 1
-f: 14 q: 5
-f: 16 q: 3
-f: 18 q: 1
-g = 8
-size: 6
-f: 10 q: 1
-f: 12 q: 1
-f: 14 q: 3
-f: 16 q: 11
-f: 18 q: 4
-f: 20 q: 1
-g = 9
-size: 5
-f: 10 q: 1
-f: 14 q: 1
-f: 16 q: 3
-f: 18 q: 14
-f: 20 q: 2
-g = 10
-size: 5
-f: 10 q: 1
-f: 16 q: 1
-f: 18 q: 4
-f: 20 q: 18
-f: 22 q: 2
-g = 11
-size: 3
-f: 18 q: 1
-f: 20 q: 1
-f: 22 q: 3
+f = 10	q = 11
  ____________________________________
-|   total numero of call step() = 95   |
+|   total numero of call step() = 11   |
  ____________________________________
-Actual search time: 0.01s [t=1.16s]
+Actual search time: 0s [t=1.15s]
 unstack b c (1)
 put-down b (1)
 unstack c a (1)
@@ -1246,22 +442,26 @@ stack d c (1)
 Plan length: 10 step(s).
 Plan cost: 10
 Initial state h value: 10.
-Expanded 96 state(s).
+Expanded 12 state(s).
 Reopened 0 state(s).
-Evaluated 100 state(s).
-Evaluations: 100
-Generated 198 state(s).
+Evaluated 17 state(s).
+Evaluations: 17
+Generated 25 state(s).
 Dead ends: 0 state(s).
-Expanded until last jump: 95 state(s).
+Expanded until last jump: 11 state(s).
 Reopened until last jump: 0 state(s).
-Evaluated until last jump: 100 state(s).
-Generated until last jump: 198 state(s).
-Search space hash size: 100
+Evaluated until last jump: 17 state(s).
+Generated until last jump: 25 state(s).
+Search space hash size: 17
 Search space hash bucket count: 193
-Search time: 1.16s
-Total time: 1.16s
-Peak memory: 18676 KB
-VmRSS memory: 1892 KB
-VmHWM memory: 10460 KB
+Search time: 1.15s
+Total time: 1.15s
+Peak memory: 20052 KB
+VmRSS memory: 1944 KB
+VmHWM memory: 9976 KB
+destructor of HST eliminates all the hashed state descriptions
+destructor of HST eliminates all the hashed state descriptions
+destructor of HST eliminates all the hashed state descriptions
+destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

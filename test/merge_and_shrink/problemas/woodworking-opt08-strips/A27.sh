@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/woodworking-opt08-strips/p27-domai
 
 src/preprocess/preprocess < Astarwoodworking-opt08-strips27.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astarwoodworking-opt08-strips27 >> ${RESULTS}/p27.pddl
+src/search/downward --domain_name woodworking-opt08-strips --problem_name p27.pddl --heuristic_name merge_and_shrink --search "astar(merge_and_shrink())" <  Astarwoodworking-opt08-strips27 >> ${RESULTS}/p27.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarwoodworking-opt08-strips27
 
 
 rm Astarwoodworking-opt08-strips27.sas
-
-
-
-rm src/translate/arquivos/p27.pddl
 

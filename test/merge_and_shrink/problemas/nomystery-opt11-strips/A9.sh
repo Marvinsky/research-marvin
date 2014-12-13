@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/nomystery-opt11-strips/domain.pddl
 
 src/preprocess/preprocess < Astarnomystery-opt11-strips9.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astarnomystery-opt11-strips9 >> ${RESULTS}/p09.pddl
+src/search/downward --domain_name nomystery-opt11-strips --problem_name p09.pddl --heuristic_name merge_and_shrink --search "astar(merge_and_shrink())" <  Astarnomystery-opt11-strips9 >> ${RESULTS}/p09.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarnomystery-opt11-strips9
 
 
 rm Astarnomystery-opt11-strips9.sas
-
-
-
-rm src/translate/arquivos/p09.pddl
 

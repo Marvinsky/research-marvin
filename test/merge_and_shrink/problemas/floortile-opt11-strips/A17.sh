@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/floortile-opt11-strips/domain.pddl
 
 src/preprocess/preprocess < Astarfloortile-opt11-strips17.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astarfloortile-opt11-strips17 >> ${RESULTS}/opt-p09-017.pddl
+src/search/downward --domain_name floortile-opt11-strips --problem_name opt-p09-017.pddl --heuristic_name merge_and_shrink --search "astar(merge_and_shrink())" <  Astarfloortile-opt11-strips17 >> ${RESULTS}/opt-p09-017.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarfloortile-opt11-strips17
 
 
 rm Astarfloortile-opt11-strips17.sas
-
-
-
-rm src/translate/arquivos/opt-p09-017.pddl
 

@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/parcprinter-opt11-strips/p20-domai
 
 src/preprocess/preprocess < Astarparcprinter-opt11-strips20.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astarparcprinter-opt11-strips20 >> ${RESULTS}/p20.pddl
+src/search/downward --domain_name parcprinter-opt11-strips --problem_name p20.pddl --heuristic_name merge_and_shrink --search "astar(merge_and_shrink())" <  Astarparcprinter-opt11-strips20 >> ${RESULTS}/p20.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarparcprinter-opt11-strips20
 
 
 rm Astarparcprinter-opt11-strips20.sas
-
-
-
-rm src/translate/arquivos/p20.pddl
 

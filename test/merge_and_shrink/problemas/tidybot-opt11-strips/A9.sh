@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/tidybot-opt11-strips/domain.pddl b
 
 src/preprocess/preprocess < Astartidybot-opt11-strips9.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astartidybot-opt11-strips9 >> ${RESULTS}/p09.pddl
+src/search/downward --domain_name tidybot-opt11-strips --problem_name p09.pddl --heuristic_name merge_and_shrink --search "astar(merge_and_shrink())" <  Astartidybot-opt11-strips9 >> ${RESULTS}/p09.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astartidybot-opt11-strips9
 
 
 rm Astartidybot-opt11-strips9.sas
-
-
-
-rm src/translate/arquivos/p09.pddl
 

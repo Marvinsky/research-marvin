@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/transport-opt08-strips/p04-domain.
 
 src/preprocess/preprocess < Astartransport-opt08-strips4.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astartransport-opt08-strips4 >> ${RESULTS}/p04.pddl
+src/search/downward --domain_name transport-opt08-strips --problem_name p04.pddl --heuristic_name merge_and_shrink --search "astar(merge_and_shrink())" <  Astartransport-opt08-strips4 >> ${RESULTS}/p04.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astartransport-opt08-strips4
 
 
 rm Astartransport-opt08-strips4.sas
-
-
-
-rm src/translate/arquivos/p04.pddl
 

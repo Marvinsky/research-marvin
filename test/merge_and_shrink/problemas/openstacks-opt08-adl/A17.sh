@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/openstacks-opt08-adl/p17-domain.pd
 
 src/preprocess/preprocess < Astaropenstacks-opt08-adl17.sas
 
-src/search/downward --search "astar(merge_and_shrink())" <  Astaropenstacks-opt08-adl17 >> ${RESULTS}/p17.pddl
+src/search/downward --domain_name openstacks-opt08-adl --problem_name p17.pddl --heuristic_name merge_and_shrink --search "astar(merge_and_shrink())" <  Astaropenstacks-opt08-adl17 >> ${RESULTS}/p17.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astaropenstacks-opt08-adl17
 
 
 rm Astaropenstacks-opt08-adl17.sas
-
-
-
-rm src/translate/arquivos/p17.pddl
 
