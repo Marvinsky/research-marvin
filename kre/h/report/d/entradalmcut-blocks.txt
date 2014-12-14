@@ -1,6 +1,5 @@
-blocks
-domain.pddl
-20
-gripper
-domain.pddl
-20
+transport-opt08-strips
+transport-opt11-strips
+visitall-opt11-strips
+woodworking-opt08-strips
+woodworking-opt11-strips

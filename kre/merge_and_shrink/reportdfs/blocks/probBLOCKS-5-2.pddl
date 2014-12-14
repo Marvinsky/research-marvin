@@ -1,4 +1,4 @@
-		/home/marvin/marvin/kre/merge_and_shrink/reportdfs/blocks/probBLOCKS-5-2.pddl
+		/home/levi/marvin/marvin/kre/merge_and_shrink/reportdfs/blocks/probBLOCKS-5-2.pddl
 
 	d		#nodes		pred
 

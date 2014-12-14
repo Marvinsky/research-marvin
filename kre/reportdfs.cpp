@@ -109,7 +109,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	}
 	
         
-	//Write in krereport directory.
+	//Write in reportdfs directory.
 	string output;
 
 	output = fileName;    
@@ -117,7 +117,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	output = "kre/"+heuristic+"/reportdfs/"+output;
 	output = "marvin/" + output;
 	output = "marvin/" + output;
-	output = "/home/" + output;	
+	output = "/home/levi/" + output;	
         cout<<"output in = "<<output.c_str()<<endl;
 	
 	ofstream outputFile;
@@ -128,14 +128,14 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
         
 	for (int i = 0; i < v_astar_f.size(); i++) {
             int threshold = v_astar_f.at(i);
-            cout<<"threshold = "<<threshold<<endl;
+            //cout<<"threshold = "<<threshold<<endl;
 	    //outputFile<<threshold<<"\n\n";
             double pred = 0.0;
             vector<double> v_pred;
-            for (int j = 0; j <= threshold; j++) {
+            for (int j = 0; j < v_Ni.size(); j++) {
                 int g = j;
                 int ni = v_Ni.at(j);
-		cout<<"N"<<j<<" = "<<ni<<endl;
+		//cout<<"N"<<j<<" = "<<ni<<endl;
 		//look for the g in v_fdist
 		ifstream ffdist;
                 ffdist.open(fdist.c_str(), ios::out);
@@ -160,7 +160,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
                                 ffdist>>amount;
                                 size = atoi(amount.c_str());
                                 
-                                for (int p1 = 0; p1 < size; p1++) {
+                                for (int p1 = 0; p1 <= size; p1++) {
 				    int f = 0;
                                     int q = 0;
 				    ffdist>>amount;
@@ -235,10 +235,10 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 void create_report1(string heuristic, string blind, int countProblems) {
 
 	int countRead = 0;
-	do {
+        ifstream readFile("h/report/d/entradalmcut-blocks.txt");
 
-		ifstream readFile("h/report/d/entradalmcut-blocks.txt");
-        	string pasta;
+	do {
+	        string pasta;
         	string domain;
 		std::vector<string> fileNames;
                 std::vector<string> fileNames2;
@@ -251,8 +251,10 @@ void create_report1(string heuristic, string blind, int countProblems) {
 
 		readFile>>pasta;
                 
-		string  pastaReporte = "mkdir /home/marvin/marvin/kre/"+heuristic+"/reportdfs/"+pasta;
-		system(pastaReporte.c_str());     
+		string  pastaReporte = "mkdir /home/levi/marvin/marvin/kre/"+heuristic+"/reportdfs/"+pasta;
+		if (system(pastaReporte.c_str())) {
+                   cout<<"Directory "<<pastaReporte.c_str()<<" created."<<endl;
+                }
                
 		//Read the files to get the number of nodes by level of Dijkstra = A* + blind
         	string output;
@@ -260,7 +262,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 		output = "test/"+blind+"/krereport/"+output;
 		output = "marvin/" + output;
 		output = "marvin/" + output;
-		output = "/home/" + output;	
+		output = "/home/levi/" + output;	
 		
                
 	
@@ -293,7 +295,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 		output5 = "testdfs/"+heuristic+"/reportdfs/"+output5;
 		output5 = "marvin/" + output5;
 		output5 = "marvin/" + output5;
-		output5 = "/home/" + output5;	
+		output5 = "/home/levi/" + output5;	
 	
         	DIR *dir3;
         	struct dirent *ent3;
@@ -323,7 +325,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 		output7 = "test/"+heuristic+"/krereport/"+output7;
 		output7 = "marvin/" + output7;
 		output7 = "marvin/" + output7;
-		output7 = "/home/" + output7;	
+		output7 = "/home/levi/" + output7;	
 	     
 
 		DIR *dir4;
@@ -347,7 +349,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 		}
            
 	//Send  only the files that match the files in the directories.
-                
+                cout<<"instances that contains the three information."<<endl;
 		for (int i = 0; i < fileNames.size(); i++) {
                     string one = fileNames.at(i);
                     Ni = output+fileNames.at(i);  
@@ -358,7 +360,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 				astar = output7+fileNames4.at(z);
 				string four = fileNames4.at(z);
 				if ((one == three) && (one == four) && (three == four)) {	
-                                   cout<<"one = "<<one<<endl; 
+                                   cout<<one<<endl; 
 				   create_kre_report(Ni.c_str(), "nada", fdist.c_str(), astar.c_str(), heuristic, pasta, one);
 			    	}
 			    }

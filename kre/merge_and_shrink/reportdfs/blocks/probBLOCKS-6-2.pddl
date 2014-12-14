@@ -1,7 +1,7 @@
-		/home/marvin/marvin/kre/merge_and_shrink/reportdfs/blocks/probBLOCKS-6-2.pddl
+		/home/levi/marvin/marvin/kre/merge_and_shrink/reportdfs/blocks/probBLOCKS-6-2.pddl
 
 	d		#nodes		pred
 
-	18		44		6.79542
-	19		97		10.9438
-	20		399		56.65
+	18		44		6.56954
+	19		97		10.893
+	20		399		54.2704
