@@ -235,7 +235,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 void create_report1(string heuristic, string blind, int countProblems) {
 
 	int countRead = 0;
-        ifstream readFile("h/report/d/entradalmcut-blocks.txt");
+        ifstream readFile("h/report/d/instances360.txt"); //("h/report/d/entradalmcut-blocks.txt");
 
 	do {
 	        string pasta;
@@ -374,7 +374,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 
 
 void create_report() {
-	ifstream readFile("h/report/oneHeuristicReport.txt");
+	ifstream readFile("h/report/instances360.txt");   //("h/report/oneHeuristicReport.txt");
 	int quantidade_total_opt;
 	int total_heuristics;	 
 	readFile>>quantidade_total_opt;
