@@ -1,4 +1,4 @@
-#PBS -N merge_and_shrink_d6_p16
+#PBS ss_16
 
 #PBS -m b
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/openstacks-opt08-adl/p16-domain.pd
 
 src/preprocess/preprocess < Astaropenstacks-opt08-adl16.sas
 
-src/search/downward --search "ss(merge_and_shrink())" <  Astaropenstacks-opt08-adl16 >> ${RESULTS}/p16.pddl
+src/search/downward --domain_name openstacks-opt08-adl --problem_name p16.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astaropenstacks-opt08-adl16 >> ${RESULTS}/p16.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astaropenstacks-opt08-adl16
 
 
 rm Astaropenstacks-opt08-adl16.sas
-
-
-
-rm src/translate/arquivos/p16.pddl
 

@@ -1,4 +1,4 @@
-#PBS -N merge_and_shrink_d9_p18
+#PBS ss_18
 
 #PBS -m b
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/parcprinter-opt11-strips/p18-domai
 
 src/preprocess/preprocess < Astarparcprinter-opt11-strips18.sas
 
-src/search/downward --search "ss(merge_and_shrink())" <  Astarparcprinter-opt11-strips18 >> ${RESULTS}/p18.pddl
+src/search/downward --domain_name parcprinter-opt11-strips --problem_name p18.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarparcprinter-opt11-strips18 >> ${RESULTS}/p18.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarparcprinter-opt11-strips18
 
 
 rm Astarparcprinter-opt11-strips18.sas
-
-
-
-rm src/translate/arquivos/p18.pddl
 

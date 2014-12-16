@@ -1,4 +1,4 @@
-#PBS -N merge_and_shrink_d1_p18
+#PBS ss_18
 
 #PBS -m b
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/barman-opt11-strips/domain.pddl be
 
 src/preprocess/preprocess < Astarbarman-opt11-strips18.sas
 
-src/search/downward --search "ss(merge_and_shrink())" <  Astarbarman-opt11-strips18 >> ${RESULTS}/pfile05-018.pddl
+src/search/downward --domain_name barman-opt11-strips --problem_name pfile05-018.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarbarman-opt11-strips18 >> ${RESULTS}/pfile05-018.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarbarman-opt11-strips18
 
 
 rm Astarbarman-opt11-strips18.sas
-
-
-
-rm src/translate/arquivos/pfile05-018.pddl
 

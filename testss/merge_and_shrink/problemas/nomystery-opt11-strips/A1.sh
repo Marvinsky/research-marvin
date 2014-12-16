@@ -1,4 +1,4 @@
-#PBS -N merge_and_shrink_d5_p1
+#PBS ss_1
 
 #PBS -m b
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/nomystery-opt11-strips/domain.pddl
 
 src/preprocess/preprocess < Astarnomystery-opt11-strips1.sas
 
-src/search/downward --search "ss(merge_and_shrink())" <  Astarnomystery-opt11-strips1 >> ${RESULTS}/p01.pddl
+src/search/downward --domain_name nomystery-opt11-strips --problem_name p01.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarnomystery-opt11-strips1 >> ${RESULTS}/p01.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarnomystery-opt11-strips1
 
 
 rm Astarnomystery-opt11-strips1.sas
-
-
-
-rm src/translate/arquivos/p01.pddl
 

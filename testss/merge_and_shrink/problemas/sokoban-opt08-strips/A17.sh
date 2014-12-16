@@ -1,4 +1,4 @@
-#PBS -N merge_and_shrink_d13_p17
+#PBS ss_17
 
 #PBS -m b
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/sokoban-opt08-strips/p17-domain.pd
 
 src/preprocess/preprocess < Astarsokoban-opt08-strips17.sas
 
-src/search/downward --search "ss(merge_and_shrink())" <  Astarsokoban-opt08-strips17 >> ${RESULTS}/p17.pddl
+src/search/downward --domain_name sokoban-opt08-strips --problem_name p17.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarsokoban-opt08-strips17 >> ${RESULTS}/p17.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarsokoban-opt08-strips17
 
 
 rm Astarsokoban-opt08-strips17.sas
-
-
-
-rm src/translate/arquivos/p17.pddl
 

@@ -1,4 +1,4 @@
-#PBS -N merge_and_shrink_d20_p6
+#PBS ss_6
 
 #PBS -m b
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/woodworking-opt11-strips/domain.pd
 
 src/preprocess/preprocess < Astarwoodworking-opt11-strips6.sas
 
-src/search/downward --search "ss(merge_and_shrink())" <  Astarwoodworking-opt11-strips6 >> ${RESULTS}/p06.pddl
+src/search/downward --domain_name woodworking-opt11-strips --problem_name p06.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarwoodworking-opt11-strips6 >> ${RESULTS}/p06.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarwoodworking-opt11-strips6
 
 
 rm Astarwoodworking-opt11-strips6.sas
-
-
-
-rm src/translate/arquivos/p06.pddl
 

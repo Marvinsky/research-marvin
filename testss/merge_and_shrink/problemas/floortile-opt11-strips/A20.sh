@@ -1,4 +1,4 @@
-#PBS -N merge_and_shrink_d4_p20
+#PBS ss_20
 
 #PBS -m b
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/floortile-opt11-strips/domain.pddl
 
 src/preprocess/preprocess < Astarfloortile-opt11-strips20.sas
 
-src/search/downward --search "ss(merge_and_shrink())" <  Astarfloortile-opt11-strips20 >> ${RESULTS}/opt-p10-020.pddl
+src/search/downward --domain_name floortile-opt11-strips --problem_name opt-p10-020.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarfloortile-opt11-strips20 >> ${RESULTS}/opt-p10-020.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarfloortile-opt11-strips20
 
 
 rm Astarfloortile-opt11-strips20.sas
-
-
-
-rm src/translate/arquivos/opt-p10-020.pddl
 

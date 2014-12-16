@@ -1,4 +1,4 @@
-#PBS -N merge_and_shrink_d2_p28
+#PBS ss_28
 
 #PBS -m b
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/elevators-opt08-strips/p28-domain.
 
 src/preprocess/preprocess < Astarelevators-opt08-strips28.sas
 
-src/search/downward --search "ss(merge_and_shrink())" <  Astarelevators-opt08-strips28 >> ${RESULTS}/p28.pddl
+src/search/downward --domain_name elevators-opt08-strips --problem_name p28.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarelevators-opt08-strips28 >> ${RESULTS}/p28.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarelevators-opt08-strips28
 
 
 rm Astarelevators-opt08-strips28.sas
-
-
-
-rm src/translate/arquivos/p28.pddl
 

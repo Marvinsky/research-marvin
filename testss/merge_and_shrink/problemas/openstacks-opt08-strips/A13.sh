@@ -1,4 +1,4 @@
-#PBS -N merge_and_shrink_d7_p13
+#PBS ss_13
 
 #PBS -m b
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/openstacks-opt08-strips/p13-domain
 
 src/preprocess/preprocess < Astaropenstacks-opt08-strips13.sas
 
-src/search/downward --search "ss(merge_and_shrink())" <  Astaropenstacks-opt08-strips13 >> ${RESULTS}/p13.pddl
+src/search/downward --domain_name openstacks-opt08-strips --problem_name p13.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astaropenstacks-opt08-strips13 >> ${RESULTS}/p13.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astaropenstacks-opt08-strips13
 
 
 rm Astaropenstacks-opt08-strips13.sas
-
-
-
-rm src/translate/arquivos/p13.pddl
 

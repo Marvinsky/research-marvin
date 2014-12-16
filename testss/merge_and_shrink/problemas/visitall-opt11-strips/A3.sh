@@ -1,4 +1,4 @@
-#PBS -N merge_and_shrink_d18_p3
+#PBS ss_3
 
 #PBS -m b
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/visitall-opt11-strips/domain.pddl 
 
 src/preprocess/preprocess < Astarvisitall-opt11-strips3.sas
 
-src/search/downward --search "ss(merge_and_shrink())" <  Astarvisitall-opt11-strips3 >> ${RESULTS}/problem03-full.pddl
+src/search/downward --domain_name visitall-opt11-strips --problem_name problem03-full.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarvisitall-opt11-strips3 >> ${RESULTS}/problem03-full.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarvisitall-opt11-strips3
 
 
 rm Astarvisitall-opt11-strips3.sas
-
-
-
-rm src/translate/arquivos/problem03-full.pddl
 

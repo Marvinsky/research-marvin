@@ -1,4 +1,4 @@
-#PBS -N merge_and_shrink_d21_p8
+#PBS ss_8
 
 #PBS -m b
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < Astarblocks8.sas
 
-src/search/downward --search "ss(merge_and_shrink())" <  Astarblocks8 >> ${RESULTS}/probBLOCKS-6-1.pddl
+src/search/downward --domain_name blocks --problem_name probBLOCKS-6-1.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarblocks8 >> ${RESULTS}/probBLOCKS-6-1.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarblocks8
 
 
 rm Astarblocks8.sas
-
-
-
-rm src/translate/arquivos/probBLOCKS-6-1.pddl
 

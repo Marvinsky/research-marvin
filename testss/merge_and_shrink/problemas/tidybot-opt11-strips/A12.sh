@@ -1,4 +1,4 @@
-#PBS -N merge_and_shrink_d15_p12
+#PBS ss_12
 
 #PBS -m b
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/tidybot-opt11-strips/domain.pddl b
 
 src/preprocess/preprocess < Astartidybot-opt11-strips12.sas
 
-src/search/downward --search "ss(merge_and_shrink())" <  Astartidybot-opt11-strips12 >> ${RESULTS}/p12.pddl
+src/search/downward --domain_name tidybot-opt11-strips --problem_name p12.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astartidybot-opt11-strips12 >> ${RESULTS}/p12.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astartidybot-opt11-strips12
 
 
 rm Astartidybot-opt11-strips12.sas
-
-
-
-rm src/translate/arquivos/p12.pddl
 

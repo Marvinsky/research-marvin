@@ -1,4 +1,4 @@
-#PBS -N merge_and_shrink_d10_p16
+#PBS ss_16
 
 #PBS -m b
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/parking-opt11-strips/domain.pddl b
 
 src/preprocess/preprocess < Astarparking-opt11-strips16.sas
 
-src/search/downward --search "ss(merge_and_shrink())" <  Astarparking-opt11-strips16 >> ${RESULTS}/pfile07-026.pddl
+src/search/downward --domain_name parking-opt11-strips --problem_name pfile07-026.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarparking-opt11-strips16 >> ${RESULTS}/pfile07-026.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarparking-opt11-strips16
 
 
 rm Astarparking-opt11-strips16.sas
-
-
-
-rm src/translate/arquivos/pfile07-026.pddl
 

@@ -1,4 +1,4 @@
-#PBS -N merge_and_shrink_d16_p29
+#PBS ss_29
 
 #PBS -m b
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/transport-opt08-strips/p29-domain.
 
 src/preprocess/preprocess < Astartransport-opt08-strips29.sas
 
-src/search/downward --search "ss(merge_and_shrink())" <  Astartransport-opt08-strips29 >> ${RESULTS}/p29.pddl
+src/search/downward --domain_name transport-opt08-strips --problem_name p29.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astartransport-opt08-strips29 >> ${RESULTS}/p29.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astartransport-opt08-strips29
 
 
 rm Astartransport-opt08-strips29.sas
-
-
-
-rm src/translate/arquivos/p29.pddl
 

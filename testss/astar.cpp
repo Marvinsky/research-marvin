@@ -43,7 +43,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	sas += pasta;
 	sas += Resultado.str();
 
-	outfile<<"#PBS -N "<<heuristic<<"_d"<<numDominio<<"_p"<<(num_problema+1)<<"\n\n#PBS -m b\n\n#PBS -M marvin.zarate@ufv.br\n\n#PBS -l nodes=1:ppn=1\n\n#PBS -l walltime=1800\n\n#PBS -l pmem=6gb\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
+	outfile<<"#PBS ss_"<<(num_problema+1)<<"\n\n#PBS -m b\n\n#PBS -M marvin.zarate@ufv.br\n\n#PBS -l nodes=1:ppn=1\n\n#PBS -l walltime=1800\n\n#PBS -l pmem=6gb\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
 	//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
 
 	cout<<"pasta = "<<pasta.c_str()<<"\n\n";
@@ -52,12 +52,12 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 	outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
 
-	outfile<<"src/search/downward --search \"ss("<<heuristic<<"())\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	outfile<<"src/search/downward --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss("<<heuristic<<"())\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	
 
 	outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
 	outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
-        outfile<<"\n\nrm "<<"src/translate/arquivos/"<<problema.c_str()<<"\n\n";
+        //outfile<<"\n\nrm "<<"src/translate/arquivos/"<<problema.c_str()<<"\n\n";
 
 	outfile.close();
 
@@ -84,7 +84,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 void entrada_dados(string &pasta, string &problema, string &dominio, bool &dominio_unico, int &quantidade_problemas) {
 	
-	ifstream file2("h/ss/oneHeuristicTD-blocks.txt");
+	ifstream file2("h/ss/instances.txt");
 	int quantidade_entrada_opt;
 	int total_heuristics;
 	file2>>quantidade_entrada_opt;
@@ -95,7 +95,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 	while (counter < total_heuristics) {
 		file2>>heuristic;
 
-		ifstream file("h/ss/d/todosdominios-blocks.txt");
+		ifstream file("h/ss/d/instances.txt");
 		cout<<"heuristic = "<<heuristic<<"\n\n";
 		cout<<"quantidade_entrada_opt = "<<quantidade_entrada_opt<<"\n\n";
 		cout<<"total_heuristics = "<<total_heuristics<<"\n\n"; 

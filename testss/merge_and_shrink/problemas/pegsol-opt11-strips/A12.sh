@@ -1,4 +1,4 @@
-#PBS -N merge_and_shrink_d11_p12
+#PBS ss_12
 
 #PBS -m b
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/pegsol-opt11-strips/domain.pddl be
 
 src/preprocess/preprocess < Astarpegsol-opt11-strips12.sas
 
-src/search/downward --search "ss(merge_and_shrink())" <  Astarpegsol-opt11-strips12 >> ${RESULTS}/p12.pddl
+src/search/downward --domain_name pegsol-opt11-strips --problem_name p12.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarpegsol-opt11-strips12 >> ${RESULTS}/p12.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarpegsol-opt11-strips12
 
 
 rm Astarpegsol-opt11-strips12.sas
-
-
-
-rm src/translate/arquivos/p12.pddl
 
