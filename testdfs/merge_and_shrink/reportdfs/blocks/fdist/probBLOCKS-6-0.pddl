@@ -1,4 +1,4 @@
-	/home/marvin/marvin/testdfs/merge_and_shrink/reportdfs/blocks/fdist/probBLOCKS-6-0.pddl
+	/home/levi/marvin/marvin/testdfs/merge_and_shrink/reportdfs/blocks/fdist/probBLOCKS-6-0.pddl
 totalniveles: 12
 threshold: 12
 
@@ -76,8 +76,8 @@ size: 12
 	f: 14	q: 23
 	f: 16	q: 253
 	f: 17	q: 1
-	f: 18	q: 1640
-	f: 19	q: 340
+	f: 18	q: 1645
+	f: 19	q: 335
 	f: 20	q: 6008
 	f: 21	q: 1546
 	f: 22	q: 3901
@@ -92,8 +92,8 @@ size: 13
 	f: 17	q: 8
 	f: 18	q: 2673
 	f: 19	q: 241
-	f: 20	q: 14834
-	f: 21	q: 4993
+	f: 20	q: 14827
+	f: 21	q: 5000
 	f: 22	q: 25692
 	f: 23	q: 2993
 	f: 24	q: 3690
@@ -107,9 +107,9 @@ size: 14
 	f: 17	q: 9
 	f: 18	q: 3430
 	f: 19	q: 248
-	f: 20	q: 22790
-	f: 21	q: 12394
-	f: 22	q: 79373
+	f: 20	q: 22951
+	f: 21	q: 12230
+	f: 22	q: 79376
 	f: 23	q: 24661
 	f: 24	q: 36132
 	f: 25	q: 2528
@@ -123,11 +123,11 @@ size: 15
 	f: 17	q: 5
 	f: 18	q: 4564
 	f: 19	q: 355
-	f: 20	q: 36670
-	f: 21	q: 9709
-	f: 22	q: 221768
-	f: 23	q: 103244
-	f: 24	q: 303666
+	f: 20	q: 36680
+	f: 21	q: 9727
+	f: 22	q: 221501
+	f: 23	q: 103493
+	f: 24	q: 303656
 	f: 25	q: 32164
 	f: 26	q: 29867
 	f: 28	q: 2317

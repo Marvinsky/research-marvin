@@ -1,4 +1,4 @@
-	/home/marvin/marvin/testdfs/merge_and_shrink/reportdfs/blocks/fdist/probBLOCKS-5-0.pddl
+	/home/levi/marvin/marvin/testdfs/merge_and_shrink/reportdfs/blocks/fdist/probBLOCKS-5-0.pddl
 totalniveles: 12
 threshold: 12
 
