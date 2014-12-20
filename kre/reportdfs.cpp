@@ -95,8 +95,8 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	    levels4[i] = new float[4];
 	}
 
-	vector<float> v_astar_f;
-        vector<float> v_astar_n;         
+	vector<long> v_astar_f;
+        vector<long> v_astar_n;         
         for (int i = 0; i < totallevels4; i++) {
 	    for (int j = 0; j < 4; j++) {
 		fastar>>levels4[i][j];
@@ -221,8 +221,9 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	for (int i = 0; i < vpred.size(); i++) {
             cout<<"i = "<<i<<endl;
             cout<<"v_astar_f "<<i<<" = "<<v_astar_f.at(i)<<endl;
- 	    cout<<"vpred.at "<<i<<" = "<<vpred.at(i)<<endl;
             cout<<"v_astar_n "<<i<<" = "<<v_astar_n.at(i)<<endl;
+ 	    cout<<"vpred.at "<<i<<" = "<<vpred.at(i)<<endl;
+            
 	   
 	    outputFile<<"\t"<<v_astar_f.at(i)<<"\t\t"<<v_astar_n.at(i)<<"\t\t"<<vpred.at(i)<<"\n";
 	}
