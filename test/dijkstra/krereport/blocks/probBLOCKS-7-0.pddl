@@ -1,4 +1,4 @@
-		/home/levi/marvin/marvin/test/dijkstra/krereport/blocks/probBLOCKS-7-0.pddl
+		/home/marvin/marvin/test/dijkstra/krereport/blocks/probBLOCKS-7-0.pddl
 	totalniveles: 22
 	f		#Nodes_by_level		Runtime(s)	#Nodes_to_the_level
 	0			1		1		1

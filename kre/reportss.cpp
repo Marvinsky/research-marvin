@@ -47,6 +47,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	string str;
         string title;
         int totallevels;
+        int totallevels2;
        	ifstream fNi(Ni.c_str());
 	
  	vector<int> v_Ni;
@@ -131,7 +132,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	    //outputFile<<threshold<<"\n\n";
             double pred = 0.0;
             vector<double> v_pred;
-            for (int j = 0; j < v_Ni.size(); j++) {
+            for (int j = 0; j <= threshold; j++) {
                 int g = j;
                 int ni = v_Ni.at(j);
 		cout<<"N"<<j<<" = "<<ni<<endl;
@@ -155,10 +156,11 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
                                 int size;
                                 map<int, int> m;
 				int sumq = 0;
-				ffdist>>amount; 
+				ffdist>>amount;
                                 ffdist>>amount;
                                 size = atoi(amount.c_str());
-                                for (int p1 = 0; p1 <= size; p1++) {
+                                
+                                for (int p1 = 0; p1 < size; p1++) {
 				    int f = 0;
                                     int q = 0;
 				    ffdist>>amount;
@@ -167,9 +169,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
                                     ffdist>>amount;
                                     ffdist>>amount;
                                     q = atoi(amount.c_str());
-                                    //cout<<"q = "<<q<<endl;
                                     sumq = sumq + q;
-                                    //cout<<"sumq = "<<sumq<<endl;
                                     
                                     //outputFile<<"f = "<<f<<" q = "<<q<<"\n";
                                     m.insert(pair<int, int>(f, q));
@@ -179,19 +179,17 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
                                 int sumR = 0;	
 				for (map<int, int>::iterator it = m.begin(); it != m.end(); it++) {
 				    int f = it->first;
-				     
+				    
                                     if (f <= threshold) {
 				       sumR = sumR + it->second;
 				    }
 				} 
 				//outputFile<<"total nodes = "<<sumq<<"\n";
 				//outputFile<<"nodes with f less than or equal to"<<threshold<<" = "<<sumR<<"\n";
-                                double percentage = 0;
-                                if (sumq > 0) {
-                                   percentage =  (double)sumR/(double)sumq;
-                                } else {
-                                   percentage = 0;
-                                } 
+
+
+                         
+                                double percentage = (double)sumR/(double)sumq;
                                 cout<<"percentage = "<<percentage<<endl;       
 				//outputFile<<"percentage = "<<percentage<<"\n";
 				//cout<<"percentage = "<<percentage<<" ";
@@ -234,11 +232,10 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 void create_report1(string heuristic, string blind, int countProblems) {
 
 	int countRead = 0;
-        ifstream readFile("h/report/d/instances360.txt");//("h/report/d/entradalmcut-blocks.txt");
- 
 	do {
 
-		string pasta;
+		ifstream readFile("h/report/d/entradalmcut-blocks.txt");
+        	string pasta;
         	string domain;
 		std::vector<string> fileNames;
                 std::vector<string> fileNames2;
@@ -372,7 +369,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 
 
 void create_report() {
-	ifstream readFile("h/report/instances360.txt"); //("h/report/oneHeuristicReport.txt");
+	ifstream readFile("h/report/oneHeuristicReport.txt");
 	int quantidade_total_opt;
 	int total_heuristics;	 
 	readFile>>quantidade_total_opt;

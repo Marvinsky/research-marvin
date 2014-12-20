@@ -1,0 +1,9 @@
+		/home/levi/marvin/marvin/kre/ipdb/reportdfs/openstacks-opt11-strips/p13.pddl
+
+	d		#nodes		pred
+
+	0		1		0.5
+	1		529		1
+	2		17073		1
+	3		412529		1
+	4		8.43253e+06		1
