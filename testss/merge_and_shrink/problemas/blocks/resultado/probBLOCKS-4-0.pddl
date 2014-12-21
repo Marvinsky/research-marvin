@@ -153,19 +153,19 @@ Next variable: #1
 Abstraction (7/9 vars): computing distances using unit-cost algorithm
 Atomic abstraction #1: distances already known
 Abstraction (7/9 vars): 2000 states, ???/13800 arcs, 149068 bytes
-Abstraction (7/9 vars): init h=6, max f=21, max g=12, max h=13 [t=0.01s]
+Abstraction (7/9 vars): init h=6, max f=21, max g=12, max h=13 [t=0s]
 Atomic abstraction #1: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=0.01s]
+Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=0s]
 Abstraction (7/9 vars): normalizing with label reduction
 Label reduction: 7 pruned vars, 32 labels, 11 reduced labels
 Abstraction (7/9 vars): 2000 states, ???/13800 arcs, 165644 bytes
-Abstraction (7/9 vars): init h=6, max f=21, max g=12, max h=13 [t=0.01s]
+Abstraction (7/9 vars): init h=6, max f=21, max g=12, max h=13 [t=0s]
 Atomic abstraction #1: normalizing without label reduction
 Atomic abstraction #1: 2 states, ???/21 arcs, 808 bytes
-Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=0.01s]
+Atomic abstraction #1: init h=0, max f=1, max g=1, max h=0 [t=0s]
 Merging abstraction (7/9 vars) and atomic abstraction #1
 Abstraction (8/9 vars): 4000 states, ???/22400 arcs, 223852 bytes
-Abstraction (8/9 vars): distances not computed [t=0.01s]
+Abstraction (8/9 vars): distances not computed [t=0s]
 Next variable: #0
 Abstraction (8/9 vars): computing distances using unit-cost algorithm
 Abstraction (8/9 vars): unreachable: 1016 states, irrelevant: 0 states
@@ -181,13 +181,13 @@ Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=0.01s]
 Abstraction (8/9 vars): normalizing with label reduction
 Label reduction: 8 pruned vars, 32 labels, 9 reduced labels
 Abstraction (8/9 vars): 2984 states, ???/18576 arcs, 247756 bytes
-Abstraction (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=0.02s]
+Abstraction (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=0.01s]
 Atomic abstraction #0: normalizing without label reduction
 Atomic abstraction #0: 5 states, ???/8 arcs, 708 bytes
-Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=0.02s]
+Atomic abstraction #0: init h=0, max f=2, max g=2, max h=0 [t=0.01s]
 Merging abstraction (8/9 vars) and atomic abstraction #0
 Abstraction (9/9 vars): 14920 states, ???/46908 arcs, 486348 bytes
-Abstraction (9/9 vars): distances not computed [t=0.02s]
+Abstraction (9/9 vars): distances not computed [t=0.01s]
 Abstraction (9/9 vars): computing distances using unit-cost algorithm
 Abstraction (9/9 vars): unreachable: 14795 states, irrelevant: 0 states
 Abstraction (9/9 vars): shrink forced to prune unreachable/irrelevant states
@@ -327,12 +327,12 @@ size: 7
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
-Actual search time: 0s [t=0.02s]
-Search time: 0.02s
-Total time: 0.02s
+Actual search time: 0.01s [t=0.03s]
+Search time: 0.03s
+Total time: 0.03s
 Peak memory: 8684 KB
-VmRSS memory: 1952 KB
-VmHWM memory: 2432 KB
+VmRSS memory: 1928 KB
+VmHWM memory: 2404 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
