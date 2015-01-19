@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/barman-opt11-strips/domain.pddl be
 
 src/preprocess/preprocess < Astarbarman-opt11-strips10.sas
 
-src/search/downward --domain_name barman-opt11-strips --problem_name pfile03-010.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarbarman-opt11-strips10 >> ${RESULTS}/pfile03-010.pddl
+src/search/downward --global_probes 1000 --domain_name barman-opt11-strips --problem_name pfile03-010.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarbarman-opt11-strips10 >> ${RESULTS}/pfile03-010.pddl
 
 
 

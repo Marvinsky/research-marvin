@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/parking-opt11-strips/domain.pddl b
 
 src/preprocess/preprocess < Astarparking-opt11-strips9.sas
 
-src/search/downward --domain_name parking-opt11-strips --problem_name pfile05-019.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarparking-opt11-strips9 >> ${RESULTS}/pfile05-019.pddl
+src/search/downward --global_probes 1000 --domain_name parking-opt11-strips --problem_name pfile05-019.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarparking-opt11-strips9 >> ${RESULTS}/pfile05-019.pddl
 
 
 

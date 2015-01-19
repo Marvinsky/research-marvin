@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/woodworking-opt08-strips/p13-domai
 
 src/preprocess/preprocess < Astarwoodworking-opt08-strips13.sas
 
-src/search/downward --domain_name woodworking-opt08-strips --problem_name p13.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarwoodworking-opt08-strips13 >> ${RESULTS}/p13.pddl
+src/search/downward --global_probes 1000 --domain_name woodworking-opt08-strips --problem_name p13.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarwoodworking-opt08-strips13 >> ${RESULTS}/p13.pddl
 
 
 

@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/sokoban-opt11-strips/domain.pddl b
 
 src/preprocess/preprocess < Astarsokoban-opt11-strips14.sas
 
-src/search/downward --domain_name sokoban-opt11-strips --problem_name p14.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarsokoban-opt11-strips14 >> ${RESULTS}/p14.pddl
+src/search/downward --global_probes 1000 --domain_name sokoban-opt11-strips --problem_name p14.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarsokoban-opt11-strips14 >> ${RESULTS}/p14.pddl
 
 
 

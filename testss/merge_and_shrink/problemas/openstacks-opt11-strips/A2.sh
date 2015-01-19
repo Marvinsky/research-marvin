@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/openstacks-opt11-strips/p02-domain
 
 src/preprocess/preprocess < Astaropenstacks-opt11-strips2.sas
 
-src/search/downward --domain_name openstacks-opt11-strips --problem_name p02.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astaropenstacks-opt11-strips2 >> ${RESULTS}/p02.pddl
+src/search/downward --global_probes 1000 --domain_name openstacks-opt11-strips --problem_name p02.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astaropenstacks-opt11-strips2 >> ${RESULTS}/p02.pddl
 
 
 

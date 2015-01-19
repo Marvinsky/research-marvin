@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/openstacks-opt08-adl/p02-domain.pd
 
 src/preprocess/preprocess < Astaropenstacks-opt08-adl2.sas
 
-src/search/downward --domain_name openstacks-opt08-adl --problem_name p02.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astaropenstacks-opt08-adl2 >> ${RESULTS}/p02.pddl
+src/search/downward --global_probes 1000 --domain_name openstacks-opt08-adl --problem_name p02.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astaropenstacks-opt08-adl2 >> ${RESULTS}/p02.pddl
 
 
 

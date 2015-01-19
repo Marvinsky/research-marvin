@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/elevators-opt11-strips/domain.pddl
 
 src/preprocess/preprocess < Astarelevators-opt11-strips10.sas
 
-src/search/downward --domain_name elevators-opt11-strips --problem_name p10.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarelevators-opt11-strips10 >> ${RESULTS}/p10.pddl
+src/search/downward --global_probes 1000 --domain_name elevators-opt11-strips --problem_name p10.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarelevators-opt11-strips10 >> ${RESULTS}/p10.pddl
 
 
 

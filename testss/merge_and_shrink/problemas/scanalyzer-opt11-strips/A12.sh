@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/scanalyzer-opt11-strips/domain.pdd
 
 src/preprocess/preprocess < Astarscanalyzer-opt11-strips12.sas
 
-src/search/downward --domain_name scanalyzer-opt11-strips --problem_name p12.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarscanalyzer-opt11-strips12 >> ${RESULTS}/p12.pddl
+src/search/downward --global_probes 1000 --domain_name scanalyzer-opt11-strips --problem_name p12.pddl --heuristic_name merge_and_shrink --search "ss(merge_and_shrink())" <  Astarscanalyzer-opt11-strips12 >> ${RESULTS}/p12.pddl
 
 
 
