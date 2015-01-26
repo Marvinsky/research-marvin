@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/testss/ipdb/problemas/blocks/resultado
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/blocks/probBLOCKS-4-1.pddl Astarblocks1  blocks  probBLOCKS-4-1.pddl  ipdb
+python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/blocks/probBLOCKS-4-0.pddl Astarblocks1  blocks  probBLOCKS-4-0.pddl  ipdb
 
 src/preprocess/preprocess < Astarblocks1.sas
 
-src/search/downward --global_probes 1000 --domain_name blocks --problem_name probBLOCKS-4-1.pddl --heuristic_name ipdb --search "ss(ipdb(pdb_max_size=2000000, collection_max_size=20000000, num_samples=100, min_improvement=10, cost_type=NORMAL))" <  Astarblocks1 >> ${RESULTS}/probBLOCKS-4-1.pddl
+src/search/downward --global_probes 1000 --domain_name blocks --problem_name probBLOCKS-4-0.pddl --heuristic_name ipdb --search "ss(ipdb(pdb_max_size=2000000, collection_max_size=20000000, num_samples=100, min_improvement=10, cost_type=NORMAL))" <  Astarblocks1 >> ${RESULTS}/probBLOCKS-4-0.pddl
 
 
 
