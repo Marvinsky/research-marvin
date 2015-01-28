@@ -16,10 +16,10 @@ OptionParser::parse_cmd_line
 registered: ss2
 registered: ipdb
 Average operator cost: 1
-Memory usage before compute_additive_vars:1048
-Memory usage after compute_additive_vars:1048
-canonical_max_memory=205848
-Memory usage after compute_max_cliques:1048
+Memory usage before compute_additive_vars:1044
+Memory usage after compute_additive_vars:1044
+canonical_max_memory=205844
+Memory usage after compute_max_cliques:1044
 PDB collection construction time: 0s
 Got 4 PDBs
 Found 1 cliques
@@ -40,7 +40,7 @@ iPDB: improvement = 0
 iPDB: generated = 24
 iPDB: rejected = 0
 iPDB: max_pdb_size = 12
-Pattern generation (Haslum et al.) time: 0.07s
+Pattern generation (Haslum et al.) time: 0s
 rg: 0.01
  ___________________________________
 |         calling initialize        |
@@ -48,68 +48,412 @@ rg: 0.01
 SS2Search ...
 Initial heuristic value: 6
 h_min: 6 depth: 0 #states: 0 time: 0s
-w = 1
-w = 1
+
+		PrintQueue
+		 h = 6 g = 0 f = 6 w = 1
+
+
+		End PrintQueue
+Raiz: h = 6 g = 0 f = 6 w = 1
+	Child: h = 7 g = 1 f = 8 w = 1
+		New node added
+		h = 7 g = 1 f = 8 threshold = 12
+	Child: h = 5 g = 1 f = 6 w = 1
+		New node added
+		h = 5 g = 1 f = 6 threshold = 12
+	Child: h = 6 g = 1 f = 7 w = 1
+		New node added
+		h = 6 g = 1 f = 7 threshold = 12
+
+		PrintQueue
+		 h = 5 g = 1 f = 6 w = 1
+		 h = 6 g = 1 f = 7 w = 1
+		 h = 7 g = 1 f = 8 w = 1
+
+
+		End PrintQueue
+Raiz: h = 5 g = 1 f = 6 w = 1
+	Child: h = 4 g = 2 f = 6 w = 1
+		New node added
+		h = 4 g = 2 f = 6 threshold = 12
+	Child: h = 6 g = 2 f = 8 w = 1
+		New node added
+		h = 6 g = 2 f = 8 threshold = 12
+	Child: h = 6 g = 2 f = 8 w = 1
+	is duplicated: h = 6 g = 2 f = 8 w = 1
 		Not added.
-w = 1
+
+		PrintQueue
+		 h = 6 g = 1 f = 7 w = 1
+		 h = 7 g = 1 f = 8 w = 1
+		 h = 4 g = 2 f = 6 w = 1
+		 h = 6 g = 2 f = 8 w = 2
+
+
+		End PrintQueue
+Raiz: h = 6 g = 1 f = 7 w = 1
+	Child: h = 6 g = 2 f = 8 w = 1
+	is duplicated: h = 6 g = 2 f = 8 w = 2
 		Not added.
+	Child: h = 6 g = 2 f = 8 w = 1
+	is duplicated: h = 6 g = 2 f = 8 w = 3
 		Not added.
+	Child: h = 6 g = 2 f = 8 w = 1
+	is duplicated: h = 6 g = 2 f = 8 w = 4
 		Not added.
-w = 1
+
+		PrintQueue
+		 h = 7 g = 1 f = 8 w = 1
+		 h = 4 g = 2 f = 6 w = 1
+		 h = 6 g = 2 f = 8 w = 5
+
+
+		End PrintQueue
+Raiz: h = 7 g = 1 f = 8 w = 1
+	Child: h = 6 g = 2 f = 8 w = 1
+	is duplicated: h = 6 g = 2 f = 8 w = 5
 		Not added.
+	Child: h = 8 g = 2 f = 10 w = 1
+		New node added
+		h = 8 g = 2 f = 10 threshold = 12
+	Child: h = 8 g = 2 f = 10 w = 1
+	is duplicated: h = 8 g = 2 f = 10 w = 1
+		Added even though is duplicate.
+		h = 8 g = 2 f = 10 w = 2
+		new w = 2
+	Child: h = 8 g = 2 f = 10 w = 1
+	is duplicated: h = 8 g = 2 f = 10 w = 2
 		Not added.
-3
-w = 1
-w = 6
+
+		PrintQueue
+		 h = 4 g = 2 f = 6 w = 1
+		 h = 6 g = 2 f = 8 w = 6
+		 h = 8 g = 2 f = 10 w = 3
+
+
+		End PrintQueue
+Raiz: h = 4 g = 2 f = 6 w = 1
+	Child: h = 5 g = 3 f = 8 w = 1
+		New node added
+		h = 5 g = 3 f = 8 threshold = 12
+	Child: h = 4 g = 3 f = 7 w = 1
+		New node added
+		h = 4 g = 3 f = 7 threshold = 12
+
+		PrintQueue
+		 h = 6 g = 2 f = 8 w = 6
+		 h = 8 g = 2 f = 10 w = 3
+		 h = 4 g = 3 f = 7 w = 1
+		 h = 5 g = 3 f = 8 w = 1
+
+
+		End PrintQueue
+Raiz: h = 6 g = 2 f = 8 w = 6
+	Child: h = 7 g = 3 f = 10 w = 6
+		New node added
+		h = 7 g = 3 f = 10 threshold = 12
+	Child: h = 5 g = 3 f = 8 w = 6
+	is duplicated: h = 5 g = 3 f = 8 w = 1
+		Added even though is duplicate.
+		h = 5 g = 3 f = 8 w = 7
+		new w = 7
+
+		PrintQueue
+		 h = 8 g = 2 f = 10 w = 3
+		 h = 4 g = 3 f = 7 w = 1
+		 h = 5 g = 3 f = 8 w = 7
+		 h = 7 g = 3 f = 10 w = 6
+
+
+		End PrintQueue
+Raiz: h = 8 g = 2 f = 10 w = 3
+	Child: h = 7 g = 3 f = 10 w = 3
+	is duplicated: h = 7 g = 3 f = 10 w = 6
+		Added even though is duplicate.
+		h = 7 g = 3 f = 10 w = 9
+		new w = 9
+	Child: h = 7 g = 3 f = 10 w = 3
+	is duplicated: h = 7 g = 3 f = 10 w = 9
 		Not added.
-w = 3
-9
-12
+	Child: h = 7 g = 3 f = 10 w = 3
+	is duplicated: h = 7 g = 3 f = 10 w = 12
 		Not added.
-w = 1
-2
-w = 7
-9
-14
-w = 15
-29
-30
-45
-w = 3
+
+		PrintQueue
+		 h = 4 g = 3 f = 7 w = 1
+		 h = 5 g = 3 f = 8 w = 7
+		 h = 7 g = 3 f = 10 w = 15
+
+
+		End PrintQueue
+Raiz: h = 4 g = 3 f = 7 w = 1
+	Child: h = 4 g = 4 f = 8 w = 1
+		New node added
+		h = 4 g = 4 f = 8 threshold = 12
+	Child: h = 4 g = 4 f = 8 w = 1
+	is duplicated: h = 4 g = 4 f = 8 w = 1
+		Added even though is duplicate.
+		h = 4 g = 4 f = 8 w = 2
+		new w = 2
+
+		PrintQueue
+		 h = 5 g = 3 f = 8 w = 7
+		 h = 7 g = 3 f = 10 w = 15
+		 h = 4 g = 4 f = 8 w = 2
+
+
+		End PrintQueue
+Raiz: h = 5 g = 3 f = 8 w = 7
+	Child: h = 4 g = 4 f = 8 w = 7
+	is duplicated: h = 4 g = 4 f = 8 w = 2
+		Added even though is duplicate.
+		h = 4 g = 4 f = 8 w = 9
+		new w = 9
+	Child: h = 6 g = 4 f = 10 w = 7
+		New node added
+		h = 6 g = 4 f = 10 threshold = 12
+	Child: h = 6 g = 4 f = 10 w = 7
+	is duplicated: h = 6 g = 4 f = 10 w = 7
+		Added even though is duplicate.
+		h = 6 g = 4 f = 10 w = 14
+		new w = 14
+
+		PrintQueue
+		 h = 7 g = 3 f = 10 w = 15
+		 h = 4 g = 4 f = 8 w = 9
+		 h = 6 g = 4 f = 10 w = 14
+
+
+		End PrintQueue
+Raiz: h = 7 g = 3 f = 10 w = 15
+	Child: h = 8 g = 4 f = 12 w = 15
+		New node added
+		h = 8 g = 4 f = 12 threshold = 12
+	Child: h = 8 g = 4 f = 12 w = 15
+	is duplicated: h = 8 g = 4 f = 12 w = 15
 		Not added.
-51
+	Child: h = 8 g = 4 f = 12 w = 15
+	is duplicated: h = 8 g = 4 f = 12 w = 30
 		Not added.
+	Child: h = 8 g = 4 f = 12 w = 15
+	is duplicated: h = 8 g = 4 f = 12 w = 45
 		Not added.
-w = 9
-w = 29
-38
-w = 57
+
+		PrintQueue
+		 h = 4 g = 4 f = 8 w = 9
+		 h = 6 g = 4 f = 10 w = 14
+		 h = 8 g = 4 f = 12 w = 60
+
+
+		End PrintQueue
+Raiz: h = 4 g = 4 f = 8 w = 9
+	Child: h = 5 g = 5 f = 10 w = 9
+		New node added
+		h = 5 g = 5 f = 10 threshold = 12
+	Child: h = 4 g = 5 f = 9 w = 9
+		New node added
+		h = 4 g = 5 f = 9 threshold = 12
+
+		PrintQueue
+		 h = 6 g = 4 f = 10 w = 14
+		 h = 8 g = 4 f = 12 w = 60
+		 h = 4 g = 5 f = 9 w = 9
+		 h = 5 g = 5 f = 10 w = 9
+
+
+		End PrintQueue
+Raiz: h = 6 g = 4 f = 10 w = 14
+	Child: h = 7 g = 5 f = 12 w = 14
+		New node added
+		h = 7 g = 5 f = 12 threshold = 12
+	Child: h = 5 g = 5 f = 10 w = 14
+	is duplicated: h = 5 g = 5 f = 10 w = 9
+		Added even though is duplicate.
+		h = 5 g = 5 f = 10 w = 23
+		new w = 23
+	Child: h = 6 g = 5 f = 11 w = 14
+		New node added
+		h = 6 g = 5 f = 11 threshold = 12
+
+		PrintQueue
+		 h = 8 g = 4 f = 12 w = 60
+		 h = 4 g = 5 f = 9 w = 9
+		 h = 5 g = 5 f = 10 w = 23
+		 h = 6 g = 5 f = 11 w = 14
+		 h = 7 g = 5 f = 12 w = 14
+
+
+		End PrintQueue
+Raiz: h = 8 g = 4 f = 12 w = 60
+	Child: h = 7 g = 5 f = 12 w = 60
+	is duplicated: h = 7 g = 5 f = 12 w = 14
+		Added even though is duplicate.
+		h = 7 g = 5 f = 12 w = 74
+		new w = 74
+	Child: h = 7 g = 5 f = 12 w = 60
+	is duplicated: h = 7 g = 5 f = 12 w = 74
 		Not added.
+	Child: h = 7 g = 5 f = 12 w = 60
+	is duplicated: h = 7 g = 5 f = 12 w = 134
 		Not added.
-w = 9
-18
-w = 38
-56
-76
-w = 29
+
+		PrintQueue
+		 h = 4 g = 5 f = 9 w = 9
+		 h = 5 g = 5 f = 10 w = 23
+		 h = 6 g = 5 f = 11 w = 14
+		 h = 7 g = 5 f = 12 w = 194
+
+
+		End PrintQueue
+Raiz: h = 4 g = 5 f = 9 w = 9
+	Child: h = 4 g = 6 f = 10 w = 9
+		New node added
+		h = 4 g = 6 f = 10 threshold = 12
+	Child: h = 4 g = 6 f = 10 w = 9
+	is duplicated: h = 4 g = 6 f = 10 w = 9
+		Added even though is duplicate.
+		h = 4 g = 6 f = 10 w = 18
+		new w = 18
+
+		PrintQueue
+		 h = 5 g = 5 f = 10 w = 23
+		 h = 6 g = 5 f = 11 w = 14
+		 h = 7 g = 5 f = 12 w = 194
+		 h = 4 g = 6 f = 10 w = 18
+
+
+		End PrintQueue
+Raiz: h = 5 g = 5 f = 10 w = 23
+	Child: h = 4 g = 6 f = 10 w = 23
+	is duplicated: h = 4 g = 6 f = 10 w = 18
+		Added even though is duplicate.
+		h = 4 g = 6 f = 10 w = 41
+		new w = 41
+	Child: h = 6 g = 6 f = 12 w = 23
+		New node added
+		h = 6 g = 6 f = 12 threshold = 12
+	Child: h = 6 g = 6 f = 12 w = 23
+	is duplicated: h = 6 g = 6 f = 12 w = 23
+		Added even though is duplicate.
+		h = 6 g = 6 f = 12 w = 46
+		new w = 46
+
+		PrintQueue
+		 h = 6 g = 5 f = 11 w = 14
+		 h = 7 g = 5 f = 12 w = 194
+		 h = 4 g = 6 f = 10 w = 41
+		 h = 6 g = 6 f = 12 w = 46
+
+
+		End PrintQueue
+Raiz: h = 6 g = 5 f = 11 w = 14
+	Child: h = 6 g = 6 f = 12 w = 14
+	is duplicated: h = 6 g = 6 f = 12 w = 46
 		Not added.
+	Child: h = 6 g = 6 f = 12 w = 14
+	is duplicated: h = 6 g = 6 f = 12 w = 60
 		Not added.
+	Child: h = 6 g = 6 f = 12 w = 14
+	is duplicated: h = 6 g = 6 f = 12 w = 74
 		Not added.
-w = 143
-		Not added.
-w = 56
-w = 306
-362
-w = 56
-		Not added.
-w = 362
-		Not added.
-w = 474
+
+		PrintQueue
+		 h = 7 g = 5 f = 12 w = 194
+		 h = 4 g = 6 f = 10 w = 41
+		 h = 6 g = 6 f = 12 w = 88
+
+
+		End PrintQueue
+Raiz: h = 7 g = 5 f = 12 w = 194
+	Node was pruned!
+	h = 8 g = 6 f = 14 threshold = 12
+	Node was pruned!
+	h = 8 g = 6 f = 14 threshold = 12
+	Node was pruned!
+	h = 8 g = 6 f = 14 threshold = 12
+	Node was pruned!
+	h = 8 g = 6 f = 14 threshold = 12
+
+		PrintQueue
+		 h = 4 g = 6 f = 10 w = 41
+		 h = 6 g = 6 f = 12 w = 88
+
+
+		End PrintQueue
+Raiz: h = 4 g = 6 f = 10 w = 41
+	Child: h = 5 g = 7 f = 12 w = 41
+		New node added
+		h = 5 g = 7 f = 12 threshold = 12
+	Child: h = 4 g = 7 f = 11 w = 41
+		New node added
+		h = 4 g = 7 f = 11 threshold = 12
+
+		PrintQueue
+		 h = 6 g = 6 f = 12 w = 88
+		 h = 4 g = 7 f = 11 w = 41
+		 h = 5 g = 7 f = 12 w = 41
+
+
+		End PrintQueue
+Raiz: h = 6 g = 6 f = 12 w = 88
+	Node was pruned!
+	h = 7 g = 7 f = 14 threshold = 12
+	Child: h = 5 g = 7 f = 12 w = 88
+	is duplicated: h = 5 g = 7 f = 12 w = 41
+		Added even though is duplicate.
+		h = 5 g = 7 f = 12 w = 129
+		new w = 129
+	Node was pruned!
+	h = 6 g = 7 f = 13 threshold = 12
+
+		PrintQueue
+		 h = 4 g = 7 f = 11 w = 41
+		 h = 5 g = 7 f = 12 w = 129
+
+
+		End PrintQueue
+Raiz: h = 4 g = 7 f = 11 w = 41
+	Child: h = 4 g = 8 f = 12 w = 41
+		New node added
+		h = 4 g = 8 f = 12 threshold = 12
+	Child: h = 4 g = 8 f = 12 w = 41
+	is duplicated: h = 4 g = 8 f = 12 w = 41
+		Added even though is duplicate.
+		h = 4 g = 8 f = 12 w = 82
+		new w = 82
+
+		PrintQueue
+		 h = 5 g = 7 f = 12 w = 129
+		 h = 4 g = 8 f = 12 w = 82
+
+
+		End PrintQueue
+Raiz: h = 5 g = 7 f = 12 w = 129
+	Child: h = 4 g = 8 f = 12 w = 129
+	is duplicated: h = 4 g = 8 f = 12 w = 82
+		Added even though is duplicate.
+		h = 4 g = 8 f = 12 w = 211
+		new w = 211
+	Node was pruned!
+	h = 6 g = 8 f = 14 threshold = 12
+	Node was pruned!
+	h = 6 g = 8 f = 14 threshold = 12
+
+		PrintQueue
+		 h = 4 g = 8 f = 12 w = 211
+
+
+		End PrintQueue
+Raiz: h = 4 g = 8 f = 12 w = 211
+	Node was pruned!
+	h = 5 g = 9 f = 14 threshold = 12
+	Node was pruned!
+	h = 4 g = 9 f = 13 threshold = 12
 dominio = blocks
 tarefa = probBLOCKS-5-1.pddl
 heuristica = ipdb
-1 1 1 1 1 6 3 1 7 15 3 9 29 57 9 38 29 143 56 306 56 362 474 
-expansions = 1608
+1 1 1 1 1 6 3 1 7 15 9 14 60 9 23 14 194 41 88 41 129 211 
+expansions = 870
 Directory: ipdb created.
 Directory: fdist created.
 print.
@@ -126,42 +470,41 @@ size: 3
 g:2
 size: 3
 	f: 6	q: 1
-	f: 8	q: 1
-	f: 10	q: 1
+	f: 8	q: 6
+	f: 10	q: 3
 
 g:3
-size: 4
+size: 3
 	f: 7	q: 1
-	f: 8	q: 1
-	f: 10	q: 1
-	f: 11	q: 1
+	f: 8	q: 7
+	f: 10	q: 15
 
 g:4
 size: 3
-	f: 8	q: 1
-	f: 10	q: 1
-	f: 12	q: 1
+	f: 8	q: 9
+	f: 10	q: 14
+	f: 12	q: 60
 
 g:5
 size: 4
-	f: 9	q: 1
-	f: 10	q: 1
-	f: 11	q: 1
-	f: 12	q: 1
+	f: 9	q: 9
+	f: 10	q: 23
+	f: 11	q: 14
+	f: 12	q: 194
 
 g:6
 size: 2
-	f: 10	q: 1
-	f: 12	q: 1
+	f: 10	q: 41
+	f: 12	q: 88
 
 g:7
 size: 2
-	f: 11	q: 1
-	f: 12	q: 1
+	f: 11	q: 41
+	f: 12	q: 129
 
 g:8
 size: 1
-	f: 12	q: 1
+	f: 12	q: 211
 
 g:9
 size: 0
@@ -178,12 +521,12 @@ size: 0
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
-Actual search time: 0s [t=0.08s]
+Actual search time: 0s [t=0s]
 Search time: 0s
-Total time: 0.08s
-Peak memory: 7396 KB
-VmRSS memory: 1312 KB
-VmHWM memory: 1312 KB
+Total time: 0s
+Peak memory: 7388 KB
+VmRSS memory: 1308 KB
+VmHWM memory: 1308 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

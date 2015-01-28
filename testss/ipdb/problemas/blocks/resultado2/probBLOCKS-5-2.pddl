@@ -40,7 +40,7 @@ iPDB: improvement = 0
 iPDB: generated = 24
 iPDB: rejected = 0
 iPDB: max_pdb_size = 12
-Pattern generation (Haslum et al.) time: 0.09s
+Pattern generation (Haslum et al.) time: 0s
 rg: 0.01
  ___________________________________
 |         calling initialize        |
@@ -48,26 +48,124 @@ rg: 0.01
 SS2Search ...
 Initial heuristic value: 8
 h_min: 8 depth: 0 #states: 0 time: 0s
-w = 1
-w = 1
-2
-w = 2
+
+		PrintQueue
+		 h = 8 g = 0 f = 8 w = 1
+
+
+		End PrintQueue
+Raiz: h = 8 g = 0 f = 8 w = 1
+	Child: h = 7 g = 1 f = 8 w = 1
+		New node added
+		h = 7 g = 1 f = 8 threshold = 16
+
+		PrintQueue
+		 h = 7 g = 1 f = 8 w = 1
+
+
+		End PrintQueue
+Raiz: h = 7 g = 1 f = 8 w = 1
+	Child: h = 8 g = 2 f = 10 w = 1
+		New node added
+		h = 8 g = 2 f = 10 threshold = 16
+	Child: h = 8 g = 2 f = 10 w = 1
+	is duplicated: h = 8 g = 2 f = 10 w = 1
 		Not added.
-w = 4
+
+		PrintQueue
+		 h = 8 g = 2 f = 10 w = 2
+
+
+		End PrintQueue
+Raiz: h = 8 g = 2 f = 10 w = 2
+	Child: h = 7 g = 3 f = 10 w = 2
+		New node added
+		h = 7 g = 3 f = 10 threshold = 16
+
+		PrintQueue
+		 h = 7 g = 3 f = 10 w = 2
+
+
+		End PrintQueue
+Raiz: h = 7 g = 3 f = 10 w = 2
+	Child: h = 8 g = 4 f = 12 w = 2
+		New node added
+		h = 8 g = 4 f = 12 threshold = 16
+	Child: h = 8 g = 4 f = 12 w = 2
+	is duplicated: h = 8 g = 4 f = 12 w = 2
 		Not added.
-w = 8
-w = 8
+
+		PrintQueue
+		 h = 8 g = 4 f = 12 w = 4
+
+
+		End PrintQueue
+Raiz: h = 8 g = 4 f = 12 w = 4
+	Child: h = 7 g = 5 f = 12 w = 4
+		New node added
+		h = 7 g = 5 f = 12 threshold = 16
+
+		PrintQueue
+		 h = 7 g = 5 f = 12 w = 4
+
+
+		End PrintQueue
+Raiz: h = 7 g = 5 f = 12 w = 4
+	Child: h = 8 g = 6 f = 14 w = 4
+		New node added
+		h = 8 g = 6 f = 14 threshold = 16
+	Child: h = 8 g = 6 f = 14 w = 4
+	is duplicated: h = 8 g = 6 f = 14 w = 4
 		Not added.
-w = 16
-w = 16
+
+		PrintQueue
+		 h = 8 g = 6 f = 14 w = 8
+
+
+		End PrintQueue
+Raiz: h = 8 g = 6 f = 14 w = 8
+	Child: h = 7 g = 7 f = 14 w = 8
+		New node added
+		h = 7 g = 7 f = 14 threshold = 16
+
+		PrintQueue
+		 h = 7 g = 7 f = 14 w = 8
+
+
+		End PrintQueue
+Raiz: h = 7 g = 7 f = 14 w = 8
+	Child: h = 8 g = 8 f = 16 w = 8
+		New node added
+		h = 8 g = 8 f = 16 threshold = 16
+	Child: h = 8 g = 8 f = 16 w = 8
+	is duplicated: h = 8 g = 8 f = 16 w = 8
 		Not added.
-w = 32
-w = 32
+
+		PrintQueue
+		 h = 8 g = 8 f = 16 w = 16
+
+
+		End PrintQueue
+Raiz: h = 8 g = 8 f = 16 w = 16
+	Child: h = 7 g = 9 f = 16 w = 16
+		New node added
+		h = 7 g = 9 f = 16 threshold = 16
+
+		PrintQueue
+		 h = 7 g = 9 f = 16 w = 16
+
+
+		End PrintQueue
+Raiz: h = 7 g = 9 f = 16 w = 16
+	Node was pruned!
+	h = 8 g = 10 f = 18 threshold = 16
+	Node was pruned!
+	h = 8 g = 10 f = 18 threshold = 16
 dominio = blocks
 tarefa = probBLOCKS-5-2.pddl
 heuristica = ipdb
-1 1 2 4 8 8 16 16 32 32 
-expansions = 120
+1 1 2 2 4 4 8 8 16 16 
+expansions = 62
 Directory: ipdb created.
 Directory: fdist created.
 print.
@@ -81,35 +179,35 @@ size: 1
 
 g:2
 size: 1
-	f: 10	q: 1
+	f: 10	q: 2
 
 g:3
 size: 1
-	f: 10	q: 1
+	f: 10	q: 2
 
 g:4
 size: 1
-	f: 12	q: 1
+	f: 12	q: 4
 
 g:5
 size: 1
-	f: 12	q: 1
+	f: 12	q: 4
 
 g:6
 size: 1
-	f: 14	q: 1
+	f: 14	q: 8
 
 g:7
 size: 1
-	f: 14	q: 1
+	f: 14	q: 8
 
 g:8
 size: 1
-	f: 16	q: 1
+	f: 16	q: 16
 
 g:9
 size: 1
-	f: 16	q: 1
+	f: 16	q: 16
 
 g:10
 size: 0
@@ -135,10 +233,10 @@ size: 0
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
-Actual search time: 0s [t=0.11s]
+Actual search time: 0s [t=0s]
 Search time: 0s
-Total time: 0.11s
-Peak memory: 7396 KB
+Total time: 0s
+Peak memory: 7388 KB
 VmRSS memory: 1308 KB
 VmHWM memory: 1308 KB
 destructor of HST eliminates all the hashed state descriptions

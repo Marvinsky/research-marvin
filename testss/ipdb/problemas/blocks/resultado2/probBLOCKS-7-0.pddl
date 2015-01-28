@@ -40,7 +40,7 @@ iPDB: improvement = 0
 iPDB: generated = 48
 iPDB: rejected = 0
 iPDB: max_pdb_size = 16
-Pattern generation (Haslum et al.) time: 0.14s
+Pattern generation (Haslum et al.) time: 0s
 rg: 0.01
  ___________________________________
 |         calling initialize        |
@@ -48,49 +48,229 @@ rg: 0.01
 SS2Search ...
 Initial heuristic value: 12
 h_min: 12 depth: 0 #states: 0 time: 0s
-w = 1
-w = 1
-2
-w = 2
-w = 2
-4
+
+		PrintQueue
+		 h = 12 g = 0 f = 12 w = 1
+
+
+		End PrintQueue
+Raiz: h = 12 g = 0 f = 12 w = 1
+	Child: h = 12 g = 1 f = 13 w = 1
+		New node added
+		h = 12 g = 1 f = 13 threshold = 24
+
+		PrintQueue
+		 h = 12 g = 1 f = 13 w = 1
+
+
+		End PrintQueue
+Raiz: h = 12 g = 1 f = 13 w = 1
+	Child: h = 12 g = 2 f = 14 w = 1
+		New node added
+		h = 12 g = 2 f = 14 threshold = 24
+	Child: h = 12 g = 2 f = 14 w = 1
+	is duplicated: h = 12 g = 2 f = 14 w = 1
+		Added even though is duplicate.
+		h = 12 g = 2 f = 14 w = 2
+		new w = 2
+
+		PrintQueue
+		 h = 12 g = 2 f = 14 w = 2
+
+
+		End PrintQueue
+Raiz: h = 12 g = 2 f = 14 w = 2
+	Child: h = 12 g = 3 f = 15 w = 2
+		New node added
+		h = 12 g = 3 f = 15 threshold = 24
+	Child: h = 11 g = 3 f = 14 w = 2
+		New node added
+		h = 11 g = 3 f = 14 threshold = 24
+
+		PrintQueue
+		 h = 11 g = 3 f = 14 w = 2
+		 h = 12 g = 3 f = 15 w = 2
+
+
+		End PrintQueue
+Raiz: h = 11 g = 3 f = 14 w = 2
+	Child: h = 12 g = 4 f = 16 w = 2
+		New node added
+		h = 12 g = 4 f = 16 threshold = 24
+	Child: h = 12 g = 4 f = 16 w = 2
+	is duplicated: h = 12 g = 4 f = 16 w = 2
+		Added even though is duplicate.
+		h = 12 g = 4 f = 16 w = 4
+		new w = 4
+	Child: h = 12 g = 4 f = 16 w = 2
+	is duplicated: h = 12 g = 4 f = 16 w = 4
 		Not added.
-w = 2
+
+		PrintQueue
+		 h = 12 g = 3 f = 15 w = 2
+		 h = 12 g = 4 f = 16 w = 6
+
+
+		End PrintQueue
+Raiz: h = 12 g = 3 f = 15 w = 2
+	Child: h = 12 g = 4 f = 16 w = 2
+	is duplicated: h = 12 g = 4 f = 16 w = 6
 		Not added.
-10
-w = 10
-w = 10
-20
+	Child: h = 12 g = 4 f = 16 w = 2
+	is duplicated: h = 12 g = 4 f = 16 w = 8
 		Not added.
-w = 10
+
+		PrintQueue
+		 h = 12 g = 4 f = 16 w = 10
+
+
+		End PrintQueue
+Raiz: h = 12 g = 4 f = 16 w = 10
+	Child: h = 11 g = 5 f = 16 w = 10
+		New node added
+		h = 11 g = 5 f = 16 threshold = 24
+	Child: h = 11 g = 5 f = 16 w = 10
+	is duplicated: h = 11 g = 5 f = 16 w = 10
 		Not added.
+
+		PrintQueue
+		 h = 11 g = 5 f = 16 w = 20
+
+
+		End PrintQueue
+Raiz: h = 11 g = 5 f = 16 w = 20
+	Child: h = 12 g = 6 f = 18 w = 20
+		New node added
+		h = 12 g = 6 f = 18 threshold = 24
+	Child: h = 12 g = 6 f = 18 w = 20
+	is duplicated: h = 12 g = 6 f = 18 w = 20
 		Not added.
-w = 50
+	Child: h = 12 g = 6 f = 18 w = 20
+	is duplicated: h = 12 g = 6 f = 18 w = 40
 		Not added.
-w = 100
+
+		PrintQueue
+		 h = 12 g = 6 f = 18 w = 60
+
+
+		End PrintQueue
+Raiz: h = 12 g = 6 f = 18 w = 60
+	Child: h = 11 g = 7 f = 18 w = 60
+		New node added
+		h = 11 g = 7 f = 18 threshold = 24
+	Child: h = 11 g = 7 f = 18 w = 60
+	is duplicated: h = 11 g = 7 f = 18 w = 60
 		Not added.
+
+		PrintQueue
+		 h = 11 g = 7 f = 18 w = 120
+
+
+		End PrintQueue
+Raiz: h = 11 g = 7 f = 18 w = 120
+	Child: h = 12 g = 8 f = 20 w = 120
+		New node added
+		h = 12 g = 8 f = 20 threshold = 24
+	Child: h = 12 g = 8 f = 20 w = 120
+	is duplicated: h = 12 g = 8 f = 20 w = 120
+		Added even though is duplicate.
+		h = 12 g = 8 f = 20 w = 240
+		new w = 240
+	Child: h = 12 g = 8 f = 20 w = 120
+	is duplicated: h = 12 g = 8 f = 20 w = 240
 		Not added.
-w = 300
-600
-w = 600
+
+		PrintQueue
+		 h = 12 g = 8 f = 20 w = 360
+
+
+		End PrintQueue
+Raiz: h = 12 g = 8 f = 20 w = 360
+	Child: h = 11 g = 9 f = 20 w = 360
+		New node added
+		h = 11 g = 9 f = 20 threshold = 24
+	Child: h = 11 g = 9 f = 20 w = 360
+	is duplicated: h = 11 g = 9 f = 20 w = 360
+		Added even though is duplicate.
+		h = 11 g = 9 f = 20 w = 720
+		new w = 720
+
+		PrintQueue
+		 h = 11 g = 9 f = 20 w = 720
+
+
+		End PrintQueue
+Raiz: h = 11 g = 9 f = 20 w = 720
+	Child: h = 12 g = 10 f = 22 w = 720
+		New node added
+		h = 12 g = 10 f = 22 threshold = 24
+	Child: h = 12 g = 10 f = 22 w = 720
+	is duplicated: h = 12 g = 10 f = 22 w = 720
 		Not added.
-1800
-w = 1800
-3600
-w = 3600
+	Child: h = 12 g = 10 f = 22 w = 720
+	is duplicated: h = 12 g = 10 f = 22 w = 1440
 		Not added.
+
+		PrintQueue
+		 h = 12 g = 10 f = 22 w = 2160
+
+
+		End PrintQueue
+Raiz: h = 12 g = 10 f = 22 w = 2160
+	Child: h = 11 g = 11 f = 22 w = 2160
+		New node added
+		h = 11 g = 11 f = 22 threshold = 24
+	Child: h = 11 g = 11 f = 22 w = 2160
+	is duplicated: h = 11 g = 11 f = 22 w = 2160
+		Added even though is duplicate.
+		h = 11 g = 11 f = 22 w = 4320
+		new w = 4320
+
+		PrintQueue
+		 h = 11 g = 11 f = 22 w = 4320
+
+
+		End PrintQueue
+Raiz: h = 11 g = 11 f = 22 w = 4320
+	Child: h = 12 g = 12 f = 24 w = 4320
+		New node added
+		h = 12 g = 12 f = 24 threshold = 24
+	Child: h = 12 g = 12 f = 24 w = 4320
+	is duplicated: h = 12 g = 12 f = 24 w = 4320
 		Not added.
-w = 1800
+	Child: h = 12 g = 12 f = 24 w = 4320
+	is duplicated: h = 12 g = 12 f = 24 w = 8640
 		Not added.
-		Not added.
-		Not added.
-w = 16200
-w = 16200
+
+		PrintQueue
+		 h = 12 g = 12 f = 24 w = 12960
+
+
+		End PrintQueue
+Raiz: h = 12 g = 12 f = 24 w = 12960
+	Node was pruned!
+	h = 12 g = 13 f = 25 threshold = 24
+	Child: h = 11 g = 13 f = 24 w = 12960
+		New node added
+		h = 11 g = 13 f = 24 threshold = 24
+
+		PrintQueue
+		 h = 11 g = 13 f = 24 w = 12960
+
+
+		End PrintQueue
+Raiz: h = 11 g = 13 f = 24 w = 12960
+	Node was pruned!
+	h = 12 g = 14 f = 26 threshold = 24
+	Node was pruned!
+	h = 12 g = 14 f = 26 threshold = 24
+	Node was pruned!
+	h = 12 g = 14 f = 26 threshold = 24
 dominio = blocks
 tarefa = probBLOCKS-7-0.pddl
 heuristica = ipdb
-1 1 2 2 2 10 10 10 50 100 300 600 1800 3600 1800 16200 16200 
-expansions = 40688
+1 1 2 2 2 10 20 60 120 360 720 2160 4320 12960 12960 
+expansions = 33698
 Directory: ipdb created.
 Directory: fdist created.
 print.
@@ -104,54 +284,52 @@ size: 1
 
 g:2
 size: 1
-	f: 14	q: 1
+	f: 14	q: 2
 
 g:3
 size: 2
-	f: 14	q: 1
-	f: 15	q: 1
+	f: 14	q: 2
+	f: 15	q: 2
 
 g:4
 size: 1
-	f: 16	q: 1
+	f: 16	q: 10
 
 g:5
-size: 2
-	f: 16	q: 1
-	f: 17	q: 1
+size: 1
+	f: 16	q: 20
 
 g:6
 size: 1
-	f: 18	q: 1
+	f: 18	q: 60
 
 g:7
 size: 1
-	f: 18	q: 1
+	f: 18	q: 120
 
 g:8
 size: 1
-	f: 20	q: 1
+	f: 20	q: 360
 
 g:9
 size: 1
-	f: 20	q: 1
+	f: 20	q: 720
 
 g:10
 size: 1
-	f: 22	q: 1
+	f: 22	q: 2160
 
 g:11
-size: 2
-	f: 22	q: 1
-	f: 23	q: 1
+size: 1
+	f: 22	q: 4320
 
 g:12
 size: 1
-	f: 24	q: 1
+	f: 24	q: 12960
 
 g:13
 size: 1
-	f: 24	q: 1
+	f: 24	q: 12960
 
 g:14
 size: 0
@@ -189,10 +367,10 @@ size: 0
  ____________________________________
 |   total numero of call step() = 0   |
  ____________________________________
-Actual search time: 0s [t=0.15s]
-Search time: 0s
-Total time: 0.15s
-Peak memory: 7528 KB
+Actual search time: 0.01s [t=0.01s]
+Search time: 0.01s
+Total time: 0.01s
+Peak memory: 7520 KB
 VmRSS memory: 1312 KB
 VmHWM memory: 1312 KB
 destructor of HST eliminates all the hashed state descriptions
