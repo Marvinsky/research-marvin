@@ -25,8 +25,8 @@ protected:
 };
 
 
-double returnPred(vector<double> v) {
-	double sum = 0.0;
+long returnPred(vector<long> v) {
+	long sum = 0.0;
 	for (int i = 0; i < v.size(); i++) {
 	    sum = sum + v.at(i);
 	}
@@ -117,21 +117,21 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	output = "kre/"+heuristic+"/reportdfs/"+output;
 	output = "marvin/" + output;
 	output = "marvin/" + output;
-	output = "/home/levi/" + output;	
+	output = "/home/" + output;	
         cout<<"output in = "<<output.c_str()<<endl;
 	
 	ofstream outputFile;
 	outputFile.open(output.c_str(), ios::out);
 
 	//We do know how to implement f-dist
-        vector<double> vpred;
+        vector<long> vpred;
         
 	for (int i = 0; i < v_astar_f.size(); i++) {
             int threshold = v_astar_f.at(i);
             //cout<<"threshold = "<<threshold<<endl;
 	    //outputFile<<threshold<<"\n\n";
-            double pred = 0.0;
-            vector<double> v_pred;
+            long pred = 0.0;
+            vector<long> v_pred;
             for (int j = 0; j < v_Ni.size(); j++) {
                 int g = j;
                 int ni = v_Ni.at(j);
@@ -196,7 +196,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
                                 cout<<"percentage = "<<percentage<<endl;       
 				//outputFile<<"percentage = "<<percentage<<"\n";
 				//cout<<"percentage = "<<percentage<<" ";
-			 	double kre_i = ni*percentage;
+			 	long kre_i = ni*percentage;
                                 v_pred.push_back(kre_i);
                                 m.clear();
 			} //end if
@@ -252,7 +252,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 
 		readFile>>pasta;
                 
-		string  pastaReporte = "mkdir /home/levi/marvin/marvin/kre/"+heuristic+"/reportdfs/"+pasta;
+		string  pastaReporte = "mkdir /home/marvin/marvin/kre/"+heuristic+"/reportdfs/"+pasta;
 		if (system(pastaReporte.c_str())) {
                    cout<<"Directory "<<pastaReporte.c_str()<<" created."<<endl;
                 }
@@ -263,7 +263,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 		output = "test/"+blind+"/krereport/"+output;
 		output = "marvin/" + output;
 		output = "marvin/" + output;
-		output = "/home/levi/" + output;	
+		output = "/home/" + output;	
 		
                
 	
@@ -296,7 +296,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 		output5 = "testdfs/"+heuristic+"/reportdfs/"+output5;
 		output5 = "marvin/" + output5;
 		output5 = "marvin/" + output5;
-		output5 = "/home/levi/" + output5;	
+		output5 = "/home/" + output5;	
 	
         	DIR *dir3;
         	struct dirent *ent3;
@@ -326,7 +326,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 		output7 = "test/"+heuristic+"/krereport/"+output7;
 		output7 = "marvin/" + output7;
 		output7 = "marvin/" + output7;
-		output7 = "/home/levi/" + output7;	
+		output7 = "/home/" + output7;	
 	     
 
 		DIR *dir4;

@@ -25,8 +25,8 @@ protected:
 };
 
 
-double returnPred(vector<double> v) {
-	double sum = 0.0;
+long returnPred(vector<long> v) {
+	long sum = 0.0;
 	for (int i = 0; i < v.size(); i++) {
 	    sum = sum + v.at(i);
 	}
@@ -95,8 +95,8 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	    levels4[i] = new float[4];
 	}
 
-	vector<float> v_astar_f;
-        vector<float> v_astar_n;         
+	vector<long> v_astar_f;
+        vector<long> v_astar_n;         
         for (int i = 0; i < totallevels4; i++) {
 	    for (int j = 0; j < 4; j++) {
 		fastar>>levels4[i][j];
@@ -107,8 +107,8 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	    v_astar_f.insert(v_astar_f.begin() + i, levels4[i][0]);
 	    v_astar_n.insert(v_astar_n.begin() + i, levels4[i][3]);
 	}
-	
         
+
 	//Write in krereport directory.
 	string output;
 
@@ -124,18 +124,18 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	outputFile.open(output.c_str(), ios::out);
 
 	//We do know how to implement f-dist
-        vector<double> vpred;
-        
+        vector<long> vpred;
+ 
 	for (int i = 0; i < v_astar_f.size(); i++) {
             int threshold = v_astar_f.at(i);
-            cout<<"threshold = "<<threshold<<endl;
+            //cout<<"threshold = "<<threshold<<endl;
 	    //outputFile<<threshold<<"\n\n";
-            double pred = 0.0;
-            vector<double> v_pred;
-            for (int j = 0; j <= threshold; j++) {
+            long pred = 0.0;
+            vector<long> v_pred;
+            for (int j = 0; j < v_Ni.size(); j++) {
                 int g = j;
                 int ni = v_Ni.at(j);
-		cout<<"N"<<j<<" = "<<ni<<endl;
+		//cout<<"N"<<j<<" = "<<ni<<endl;
 		//look for the g in v_fdist
 		ifstream ffdist;
                 ffdist.open(fdist.c_str(), ios::out);
@@ -160,7 +160,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
                                 ffdist>>amount;
                                 size = atoi(amount.c_str());
                                 
-                                for (int p1 = 0; p1 < size; p1++) {
+                                for (int p1 = 0; p1 <= size; p1++) {
 				    int f = 0;
                                     int q = 0;
 				    ffdist>>amount;
@@ -187,13 +187,16 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 				//outputFile<<"total nodes = "<<sumq<<"\n";
 				//outputFile<<"nodes with f less than or equal to"<<threshold<<" = "<<sumR<<"\n";
 
-
-                         
-                                double percentage = (double)sumR/(double)sumq;
+                                double percentage = 0;
+                                if (sumq > 0) {
+                                   percentage =  (double)sumR/(double)sumq;
+                                } else {
+                                   percentage = 0;
+                                }
                                 cout<<"percentage = "<<percentage<<endl;       
 				//outputFile<<"percentage = "<<percentage<<"\n";
 				//cout<<"percentage = "<<percentage<<" ";
-			 	double kre_i = ni*percentage;
+			 	long kre_i = ni*percentage;
                                 v_pred.push_back(kre_i);
                                 m.clear();
 			} //end if
@@ -218,9 +221,10 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	for (int i = 0; i < vpred.size(); i++) {
             cout<<"i = "<<i<<endl;
             cout<<"v_astar_f "<<i<<" = "<<v_astar_f.at(i)<<endl;
- 	    cout<<"vpred.at "<<i<<" = "<<vpred.at(i)<<endl;
             cout<<"v_astar_n "<<i<<" = "<<v_astar_n.at(i)<<endl;
-	   
+ 	    cout<<"vpred.at "<<i<<" = "<<vpred.at(i)<<endl;
+          
+
 	    outputFile<<"\t"<<v_astar_f.at(i)<<"\t\t"<<v_astar_n.at(i)<<"\t\t"<<vpred.at(i)<<"\n";
 	}
 	
@@ -232,10 +236,12 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 void create_report1(string heuristic, string blind, int countProblems) {
 
 	int countRead = 0;
+        ifstream readFile("h/report/d/instances360.txt"); 
+        //("h/report/d/entradalmcut-blocks.txt");
+
 	do {
 
-		ifstream readFile("h/report/d/entradalmcut-blocks.txt");
-        	string pasta;
+		string pasta;
         	string domain;
 		std::vector<string> fileNames;
                 std::vector<string> fileNames2;
@@ -249,8 +255,10 @@ void create_report1(string heuristic, string blind, int countProblems) {
 		readFile>>pasta;
                 
 		string  pastaReporte = "mkdir /home/marvin/marvin/kre/"+heuristic+"/reportss/"+pasta;
-		system(pastaReporte.c_str());     
-               
+		if (system(pastaReporte.c_str())) {
+                   cout<<"Directory "<<pastaReporte.c_str()<<" created."<<endl;
+                }     
+  
 		//Read the files to get the number of nodes by level of Dijkstra = A* + blind
         	string output;
 		output =  pasta+"/"+output;
@@ -259,8 +267,6 @@ void create_report1(string heuristic, string blind, int countProblems) {
 		output = "marvin/" + output;
 		output = "/home/" + output;	
 		
-               
-	
         	DIR *dir;
         	struct dirent *ent;
         
@@ -282,7 +288,7 @@ void create_report1(string heuristic, string blind, int countProblems) {
 
            
            
-		//Read the files that contains the f-Distribution BFS = ss + heuristic (e.g, merge_and_shrink)
+		//Read the files that contains the f-Distribution BFS = ss + heuristic (e.g, merge_and_shrink, ipdb)
 
 		string output5;
                 output5 = "fdist/"+output5;
@@ -369,7 +375,8 @@ void create_report1(string heuristic, string blind, int countProblems) {
 
 
 void create_report() {
-	ifstream readFile("h/report/oneHeuristicReport.txt");
+	ifstream readFile("h/report/instances360.txt");  
+        //("h/report/oneHeuristicReport.txt");
 	int quantidade_total_opt;
 	int total_heuristics;	 
 	readFile>>quantidade_total_opt;

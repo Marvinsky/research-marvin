@@ -1,8 +1,8 @@
-		/home/levi/marvin/marvin/kre/ipdb/reportss/blocks/probBLOCKS-5-1.pddl
+		/home/marvin/marvin/kre/ipdb/reportss/blocks/probBLOCKS-5-1.pddl
 
 	d		#nodes		pred
 
-	6		3		2
-	7		5		4
-	8		11		14
-	10		27		85
+	6		3		1
+	7		5		2
+	8		11		13
+	10		27		57
