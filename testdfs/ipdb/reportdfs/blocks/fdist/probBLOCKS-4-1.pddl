@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testdfs/ipdb/reportdfs/blocks/fdist/probBLOCKS-4-1.pddl
-totalniveles: 4
-threshold: 4
+totalniveles: 8
+threshold: 8
 
 g:0
 size: 1
@@ -20,7 +20,18 @@ size: 2
 	f: 8	q: 1
 
 g:4
-size: 2
+size: 1
 	f: 8	q: 5
-	f: 10	q: 2
+
+g:5
+size: 0
+
+g:6
+size: 0
+
+g:7
+size: 0
+
+g:8
+size: 0
 

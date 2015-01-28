@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testdfs/ipdb/reportdfs/blocks/fdist/probBLOCKS-5-0.pddl
-totalniveles: 6
-threshold: 6
+totalniveles: 12
+threshold: 12
 
 g:0
 size: 1
@@ -29,15 +29,37 @@ size: 3
 	f: 12	q: 5
 
 g:5
-size: 4
+size: 3
 	f: 10	q: 19
 	f: 11	q: 19
 	f: 12	q: 23
-	f: 13	q: 3
 
 g:6
-size: 3
+size: 2
 	f: 10	q: 19
 	f: 12	q: 103
-	f: 14	q: 76
+
+g:7
+size: 1
+	f: 12	q: 110
+
+g:8
+size: 1
+	f: 12	q: 109
+
+g:9
+size: 1
+	f: 12	q: 6
+
+g:10
+size: 1
+	f: 12	q: 6
+
+g:11
+size: 1
+	f: 12	q: 2
+
+g:12
+size: 1
+	f: 12	q: 2
 
