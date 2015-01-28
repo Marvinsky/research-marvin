@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < Astarblocks2.sas
 
-src/search/downward --search "dfs(ipdb(pdb_max_size=2000000, collection_max_size=20000000, num_samples=1000, min_improvement=10, cost_type=NORMAL))" <  Astarblocks2 >> ${RESULTS}/probBLOCKS-4-1.pddl
+src/search/downward --search "dfs(ipdb())" <  Astarblocks2 >> ${RESULTS}/probBLOCKS-4-1.pddl
 
 
 
