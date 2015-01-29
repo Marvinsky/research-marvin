@@ -122,7 +122,7 @@ void create_report1(string heuristic, int countProblems) {
 	int countRead = 0;
 	do {
 
-		ifstream readFile("h/report/d/entradalmcut-blocks.txt");
+		ifstream readFile("h/report/d/instance360.txt");
         	string pasta;
         	string domain;
 		std::vector<string> fileNames;
@@ -174,7 +174,7 @@ void create_report1(string heuristic, int countProblems) {
 
 
 void create_report() {
-	ifstream readFile("h/report/oneHeuristicReport.txt");
+	ifstream readFile("h/report/instance360.txt");
 	int quantidade_total_opt;
 	int total_heuristics;	 
 	readFile>>quantidade_total_opt;

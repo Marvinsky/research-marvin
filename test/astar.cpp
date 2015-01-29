@@ -76,7 +76,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	allow = "chmod +x "+arquivo;	
 	cout<<allow<<"\n";
 	system(allow.c_str());
-	executeFile = "."+arquivo;
+	executeFile = "sh "+arquivo;
 	system(executeFile.c_str());
 }
 
@@ -84,7 +84,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 void entrada_dados(string &pasta, string &problema, string &dominio, bool &dominio_unico, int &quantidade_problemas) {
 	
-	ifstream file2("h/astar/oneHeuristicTD-blocks.txt");
+	ifstream file2("h/astar/instance360.txt");
 	int quantidade_entrada_opt;
 	int total_heuristics;
 	file2>>quantidade_entrada_opt;
@@ -95,7 +95,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 	while (counter < total_heuristics) {
 		file2>>heuristic;
 
-		ifstream file("h/astar/d/todosdominios-blocks.txt");
+		ifstream file("h/astar/d/instance360.txt");
 		cout<<"heuristic = "<<heuristic<<"\n\n";
 		cout<<"quantidade_entrada_opt = "<<quantidade_entrada_opt<<"\n\n";
 		cout<<"total_heuristics = "<<total_heuristics<<"\n\n"; 

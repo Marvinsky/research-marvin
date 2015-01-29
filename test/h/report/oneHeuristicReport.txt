@@ -1,4 +1,0 @@
-1
-2
-dijkstra
-merge_and_shrink
