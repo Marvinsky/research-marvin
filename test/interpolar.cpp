@@ -44,7 +44,7 @@ double getNextElement(double last, double bf) {
 }
 
 void create_report2(string astarText, string fileName, string pasta, string heuristic) {
-        //cout<<astarText<<"\n\n";
+        cout<<"que es? "<<astarText<<"\n\n";
          
         string tniveles = "totalniveles:"; //total number of levels
 	string fnivel = "f"; //nivel 
@@ -52,13 +52,8 @@ void create_report2(string astarText, string fileName, string pasta, string heur
         string time = "Runtime(s)"; //timer
         string nodesUpToNivel = "#Nodes_to_the_level"; //number of nodes generated to the  level
 
+        int total_niveles = 0;
 
-	string countLastNodesGerados = "count_last_nodes_gerados:";
-	string branchingFactor = "effectiveBranchingFactor:";
-
-
-	int count_lastNodes = 0;
-	int total_niveles = 0;
 
 	string amount;
 	ifstream astar;
@@ -69,7 +64,7 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 	string output;
 
         output = fileName;    
-        output =  pasta+"/"+output;
+        output =  pasta+"/interpolar/"+output;
 	output = "test/"+heuristic+"/krereport/"+output;
 	output = "marvin/" + output;
 	output = "marvin/" + output;
@@ -90,11 +85,72 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 	}
         astar.close();
         cout<<"totalniveles: "<<total_niveles<<endl;
-        astar2.open(astarText.c_str());	
+        astar2.open(astarText.c_str());
+        string trash;
+
+        astar2>>trash;
+        astar2>>trash;
+        astar2>>trash;
+        astar2>>trash;
+        astar2>>trash;
+        astar2>>trash;
+        astar2>>trash;
+
+        double** points = new double*[total_niveles]; 
+
+        for (int i = 0; i < total_niveles; i++) {
+            points[i] = new double[4];
+        }
+  
+        for (int i = 0; i < total_niveles; i++) { 
+             for (int j = 0; j < 4; j++) {
+                  astar2>>points[i][j];                
+             }
+        }
+       
+
+ 
+	vector<int> vn;
+	vector<int> vf;
+	for (int i = 0; i < total_niveles; i++) {
+	    vf.insert(vf.begin() + i, points[i][0]);
+	    vn.insert(vn.begin() + i, points[i][1]);
+ 	}
+
+        vector<double> v_bf;
+
+        for (int i = 0; i < vn.size()-1; i++) {
+           
+            double first = vn.at(i);
+            double next = vn.at(i+1);
+            
+            double bfactor = (double)next/first;
+            v_bf.insert(v_bf.begin() + i, bfactor);
+        }
+       
+        /*cout<<"branching factor."<<endl;
+        for (int i = 0; i < v_bf.size(); i++) {
+            cout<<v_bf.at(i)<<endl;
+        }
+        */
+        //calculating branching factor
+ 	
+
+	//Branching factor of the last element.
+	double bf1 = interpolationFunction(v_bf, v_bf.size() + 1);
+        cout<<"bf1 = "<<bf1<<endl;
+	double last = vn.at(vn.size()-1);
+        cout<<"last = "<<last<<endl; 
+	double next = getNextElement(last, bf1);	
+        cout<<"next = "<<next<<endl;
+
+	
+
+       /*
+	
 	outputFile<<"\tf\t\t#Nodes_by_level\t\tRuntime(s)\t\t#Nodes_to_the_level\n";
         
-        vector<long> v_nodes_nivel;
-
+       
 	while (astar2>>amount) {
            if (amount != tniveles) {
 	        if (amount == fnivel) {
@@ -102,9 +158,7 @@ void create_report2(string astarText, string fileName, string pasta, string heur
                         int f = atoi(amount.c_str());
 			outputFile<<"\t"<<f<<"\t\t";
 		} else if (amount == nodosNivel) {
-			astar2>>amount;
-                        int n1 = atoi(amount.c_str());
-                        v_nodes_nivel.push_back(n1);                      
+			astar2>>amount;                      
 			outputFile<<amount<<"\t\t";
 		} else if (amount == time) {
 			astar2>>amount;
@@ -119,14 +173,7 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 	astar2.close();
 	outputFile.close();
        	
-        cout<<"print."<<endl;
-        for (int i = 0; i < v_nodes_nivel.size(); i++) {
-            cout<<v_nodes_nivel.at(i)<<endl;
-        }
-
-       /*
-
-
+        
         vector<double> v_bf;
 
 
@@ -261,11 +308,21 @@ void create_report1(string heuristic, int countProblems) {
 	    		cout<<"Error trying to open the directory: "<< output.c_str()<<endl;
 		}
 
+                string output2;
+        	output2 =  pasta+"/";
+		output2 = "test/"+heuristic+"/krereport/"+output2;
+		output2 = "marvin/" + output2;
+		output2 = "marvin/" + output2;
+		output2 = "/home/" + output2;	
+		
 
+ 
         	for (std::vector<string>::size_type i = 0; i != fileNames.size(); i++) {
-			string output2 = output+fileNames.at(i);
-	        	//cout<<output2.c_str()<<" - "<<fileNames.at(i)<<endl;
-			create_report2(output2.c_str(), fileNames.at(i), pasta, heuristic);
+			string output3 = output2+fileNames.at(i);
+                        //cout<<"output3 = "<<output3<<endl;
+                        //cout<<"fileNames.at("<<i<<") = "<<fileNames.at(i)<<endl;
+	        	//cout<<output3.c_str()<<" - "<<fileNames.at(i)<<endl;
+			create_report2(output3.c_str(), fileNames.at(i), pasta, heuristic);
 		}
 
 	    	countRead = countRead + 1;
