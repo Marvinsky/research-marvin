@@ -14,37 +14,112 @@
 
 using namespace std;
 
-double interpolationFunction(vector<double> v, int x) {
+double interpolationFunction(vector<double> v, int x, vector<long> vf) {
 	double y = 0.0;
-	int size = v.size();
-	if (size <= 1) {
+	int s = v.size();
+	if (s <= 1) {
            return 0;
 	}
+        int size = s - 1;
 
-        double x1 = size-2;
-        double x2 = size-1;
-        double y1 = v.at(x1);
-        double y2 = v.at(x2);
+        double xa = size-1;
+        double ya = v.at(xa);
+        double xb = size;
+        double yb = v.at(xb);
+        //points (xa, ya) y (xb, yb)
 
-	double a = y1;
-	double b = y2-y1;
-	double c = x - x1;
-	double d = x2 -x1;
+	double a = ya;
+	double b = x - xa;
+	double c = yb - ya;
+	double d = xb -xa;
 
 	if (d >0) {
 	   y =  a + (b*c)/d;
 	} else {
 	  cout<<"can not divide between zero."<<endl;
 	}
-	return y;
+        
+        if (y > 0) {
+           return y;
+        } else {
+           return 0;
+        }
 }
 
-double getNextElement(double last, double bf) {
-       return  last/bf;
+double getNextElement(double last, double bf, double bf_last) {
+       return  (last*bf)/bf_last;
 }
 
-void create_report2(string astarText, string fileName, string pasta, string heuristic) {
-        cout<<"que es? "<<astarText<<"\n\n";
+
+int getTotalNiveles(string path) {
+	
+        string tniveles = "totalniveles:"; //total number of levels
+        string amount;
+	ifstream astar;
+        int total_niveles = 0; 	
+	astar.open(path.c_str());
+        
+ 	//first while just to find the total number of levels.
+        while (astar>>amount) {
+		if (amount == tniveles) {
+			astar>>amount;
+			total_niveles = atoi(amount.c_str()); 
+		} 
+	}
+        astar.close();
+        cout<<"70: totalniveles: "<<total_niveles<<endl;
+  
+	return total_niveles; 
+}
+
+
+int getLastLevel(string astarText) {
+        ifstream astar;
+	
+	astar.open(astarText.c_str());
+        string trash;
+        
+        astar>>trash;
+        astar>>trash;
+        astar>>trash;
+        astar>>trash;
+        astar>>trash;
+        astar>>trash;
+        astar>>trash;
+
+        int total_niveles =  getTotalNiveles(astarText.c_str());
+
+        double** points = new double*[total_niveles]; 
+
+        for (int i = 0; i < total_niveles; i++) {
+            points[i] = new double[4];
+        }
+  
+        for (int i = 0; i < total_niveles; i++) { 
+             for (int j = 0; j < 4; j++) {
+                  astar>>points[i][j];                
+             }
+        }
+       
+
+ 
+	//vector<long> vn;
+	vector<long> vf;
+  
+        cout<<"print vf."<<endl;
+	for (int i = 0; i < total_niveles; i++) {
+	    vf.insert(vf.begin() + i, points[i][0]);
+	    //vn.insert(vn.begin() + i, points[i][1]);
+            cout<<vf.at(i)<<endl;
+ 	}
+        
+        return vf.at(total_niveles -1);
+}
+
+
+
+void create_report2(string dijkstraText, string fileName, string pasta, string heuristic, string astarText) {
+        cout<<"que es? "<<dijkstraText<<"\n\n";
          
         string tniveles = "totalniveles:"; //total number of levels
 	string fnivel = "f"; //nivel 
@@ -52,15 +127,12 @@ void create_report2(string astarText, string fileName, string pasta, string heur
         string time = "Runtime(s)"; //timer
         string nodesUpToNivel = "#Nodes_to_the_level"; //number of nodes generated to the  level
 
-        int total_niveles = 0;
+        int total_niveles = getTotalNiveles(dijkstraText.c_str());
 
 
 	string amount;
-	ifstream astar;
         ifstream astar2;
-	
-	astar.open(astarText.c_str());
-        
+   
 	string output;
 
         output = fileName;    
@@ -74,18 +146,13 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 	ofstream outputFile;
 	outputFile.open(output.c_str(), ios::out);
 	
-	outputFile<<"\t"<<astarText.c_str()<<endl;
- 	//first while just to find the total number of levels.
-        while (astar>>amount) {
-		if (amount == tniveles) {
-			astar>>amount;
-			total_niveles = atoi(amount.c_str());
-    	                outputFile<<"totalniveles:\t"<<total_niveles<<"\n";
-		} 
-	}
-        astar.close();
-        cout<<"totalniveles: "<<total_niveles<<endl;
-        astar2.open(astarText.c_str());
+	outputFile<<"\t"<<dijkstraText.c_str()<<endl;
+ 
+        cout<<"153: totalniveles: "<<total_niveles<<endl;
+
+
+
+        astar2.open(dijkstraText.c_str());
         string trash;
 
         astar2>>trash;
@@ -110,8 +177,8 @@ void create_report2(string astarText, string fileName, string pasta, string heur
        
 
  
-	vector<int> vn;
-	vector<int> vf;
+	vector<long> vn;
+	vector<long> vf;
 	for (int i = 0; i < total_niveles; i++) {
 	    vf.insert(vf.begin() + i, points[i][0]);
 	    vn.insert(vn.begin() + i, points[i][1]);
@@ -128,26 +195,41 @@ void create_report2(string astarText, string fileName, string pasta, string heur
             v_bf.insert(v_bf.begin() + i, bfactor);
         }
        
-        /*cout<<"branching factor."<<endl;
-        for (int i = 0; i < v_bf.size(); i++) {
-            cout<<v_bf.at(i)<<endl;
+      
+        //Read astar
+        int last_level = getLastLevel(astarText.c_str()); 
+
+        cout<<"last_level = "<<last_level<<endl;
+       
+ 
+        //Calculating branching factor
+        double bf1 = 0.0; 
+        while ( ( (bf1 = interpolationFunction(v_bf, v_bf.size(), vf)) != 0) && (vf.size() <= last_level)     ) {
+           int index = v_bf.size(); // next
+	   //double bf1 = interpolationFunction(v_bf, index, vf);
+           cout<<"bf1 = "<<bf1<<endl;
+	   double last = vn.at(vn.size()-1);
+           cout<<"last = "<<last<<endl; 
+           double bf_last = v_bf.at(index-1);
+	   double next = getNextElement(last, bf1, bf_last);	
+           cout<<"next = "<<next<<endl;
+
+           vf.push_back(vf.size()+1);
+	   vn.insert(vn.begin() + vn.size(), next);
+           v_bf.push_back(bf1);
+
+           cout<<"branching factor."<<endl;
+           for (int i = 0; i < v_bf.size(); i++) {
+               cout<<v_bf.at(i)<<endl;
+           } 
+           cout<<"vn"<<endl;
+           for (int i = 0; i < vn.size(); i++) {
+               cout<<vn.at(i)<<endl;
+           }
         }
-        */
-        //calculating branching factor
- 	
 
-	//Branching factor of the last element.
-	double bf1 = interpolationFunction(v_bf, v_bf.size() + 1);
-        cout<<"bf1 = "<<bf1<<endl;
-	double last = vn.at(vn.size()-1);
-        cout<<"last = "<<last<<endl; 
-	double next = getNextElement(last, bf1);	
-        cout<<"next = "<<next<<endl;
-
-	
-
-       /*
-	
+/*
+      //aqui	
 	outputFile<<"\tf\t\t#Nodes_by_level\t\tRuntime(s)\t\t#Nodes_to_the_level\n";
         
        
@@ -179,7 +261,7 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 
 	ifstream astar3;
 	if (isBlind) {
-	   astar3.open(astarText.c_str());
+	   astar3.open(dijkstraText.c_str());
 	   while (astar3>>amount) {
                 if (amount ==  branchingFactor) {
 		   astar3>>amount;
@@ -203,7 +285,7 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 	   ofstream outputFile2;
 	   outputFile2.open(output2.c_str(), ios::out);
 	
-	   outputFile2<<"\t"<<astarText.c_str()<<endl;
+	   outputFile2<<"\t"<<dijkstraText.c_str()<<endl;
 
 	   ifstream astar4;
 	   int totalniveles2;
@@ -264,7 +346,7 @@ void create_report2(string astarText, string fileName, string pasta, string heur
 }
 
 
-void create_report1(string heuristic, int countProblems) {
+void create_report1(string heuristic, int countProblems, string aux_heuristic) {
 
 	int countRead = 0;
 	do {
@@ -307,14 +389,22 @@ void create_report1(string heuristic, int countProblems) {
 		} else {
 	    		cout<<"Error trying to open the directory: "<< output.c_str()<<endl;
 		}
+                //Read the files: A* + ipdb
+                string output7;
+                output7 = pasta+"/"+output7;
+                output7 = "test/"+aux_heuristic+"/krereport/"+output7;
+                output7 = "marvin/"+output7;
+                output7 = "marvin/"+output7;
+                output7 = "/home/"+output7;
+                //cout<<"output7 = "<<output7<<endl;
 
+                //krereport directory
                 string output2;
         	output2 =  pasta+"/";
 		output2 = "test/"+heuristic+"/krereport/"+output2;
 		output2 = "marvin/" + output2;
 		output2 = "marvin/" + output2;
-		output2 = "/home/" + output2;	
-		
+		output2 = "/home/" + output2;
 
  
         	for (std::vector<string>::size_type i = 0; i != fileNames.size(); i++) {
@@ -322,7 +412,9 @@ void create_report1(string heuristic, int countProblems) {
                         //cout<<"output3 = "<<output3<<endl;
                         //cout<<"fileNames.at("<<i<<") = "<<fileNames.at(i)<<endl;
 	        	//cout<<output3.c_str()<<" - "<<fileNames.at(i)<<endl;
-			create_report2(output3.c_str(), fileNames.at(i), pasta, heuristic);
+                        string output8 = output7+fileNames.at(i);
+                        //cout<<output8<<endl;
+			create_report2(output3.c_str(), fileNames.at(i), pasta, heuristic, output8);
 		}
 
 	    	countRead = countRead + 1;
@@ -339,9 +431,11 @@ void create_report() {
 	
 	int counter = 0;
 	string heuristic;
+        string aux_heuristic;
 	do {
 		readFile>>heuristic;
-		create_report1(heuristic, quantidade_total_opt);
+                readFile>>aux_heuristic;
+		create_report1(heuristic, quantidade_total_opt, aux_heuristic);
 		counter++;
 	} while (counter < total_heuristics);
 }
