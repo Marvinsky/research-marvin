@@ -1,4 +1,4 @@
-		/home/levi/marvin/marvin/test/ipdb/krereport/blocks/probBLOCKS-5-0.pddl
+		/home/marvin/marvin/test/ipdb/krereport/blocks/probBLOCKS-5-0.pddl
 	totalniveles: 6
 	f-value		#nodesByLevel		time		#nodesExpanded
 	6		3			1.14			3

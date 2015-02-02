@@ -1,4 +1,4 @@
-#PBS -N dijkstra_d21_p1
+#PBS -N dijkstra_d1_p1
 
 #PBS -m b
 
@@ -6,7 +6,7 @@
 
 #PBS -l nodes=1:ppn=1
 
-#PBS -l walltime=1800
+#PBS -l walltime=00:00:01
 
 #PBS -l pmem=6gb
 
