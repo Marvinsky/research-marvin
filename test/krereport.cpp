@@ -7,7 +7,7 @@
 #include <cstdio>
 #include <cstdlib>
 
-
+#include <math.h>
 #include <dirent.h>
 #include <vector>
 
@@ -46,8 +46,14 @@ double interpolationFunction(vector<double> v, int x) {
         }
 }
 
-double getNextElement(double last, double bf, double bf_last) {
-       return  (last*bf)/bf_last;
+long getNextElement(long last, double bf) {
+       cout<<"bf = "<<bf<<endl;
+       cout<<"last = "<<last<<endl;
+       long result = (long)round(last*bf);
+       cout<<"result = "<<result<<endl;
+       cout<<"\n";
+       
+       return result;
 }
 
 int getTotalNiveles(string path) {
@@ -73,36 +79,42 @@ int getLastLevel(string astarText) {
 	ifstream astar;
 
         astar.open(astarText.c_str());
-        string trash;
 
-        astar>>trash;
-        astar>>trash;
-        astar>>trash;
-        astar>>trash;
-        astar>>trash;
-        astar>>trash;
-        astar>>trash;
+        if (!astar) {
+           return -1;
+        } else {
+           string trash;
 
-        int total_niveles = getTotalNiveles(astarText.c_str());
+           astar>>trash;
+           astar>>trash;
+           astar>>trash;
+           astar>>trash;
+           astar>>trash;
+           astar>>trash;
+           astar>>trash;
 
-        double** points = new double*[total_niveles];
+           int total_niveles = getTotalNiveles(astarText.c_str());
+
+           double** points = new double*[total_niveles];
         
-        for (int i = 0; i < total_niveles; i++) {
-            points[i] = new double[4];
-        }
+           for (int i = 0; i < total_niveles; i++) {
+               points[i] = new double[4];
+           }
 
-        for (int i = 0; i < total_niveles; i++) {
-            for (int j = 0; j < 4; j++) {
-                astar>>points[i][j];
-            }
-        }
+           for (int i = 0; i < total_niveles; i++) {
+               for (int j = 0; j < 4; j++) {
+                   astar>>points[i][j];
+               }
+           }
 
-        vector<long> vf;
+           vector<long> vf;
 
-        for (int i = 0; i < total_niveles; i++) {
-            vf.insert(vf.begin() + i, points[i][0]);
+           for (int i = 0; i < total_niveles; i++) {
+               vf.insert(vf.begin() + i, points[i][0]);
+           }
+
+           return vf.at(total_niveles - 1);
         }
-        return vf.at(total_niveles - 1);
 }
 
 void create_report2(string dijkstraText, string fileName, string pasta, string heuristic, string astarText) {
@@ -190,13 +202,13 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
         while (inter>>trash) {
               //inter>>trash;
               count_data++;
-              cout<<count_data<<": "<<trash<<"\n";
+              //cout<<count_data<<": "<<trash<<"\n";
 
         }
         inter.close();
-        cout<<"count_data = "<<count_data<<endl;
+        //cout<<"count_data = "<<count_data<<endl;
         total_niveles = (int)count_data/4;
-        cout<<"total_niveles = "<<total_niveles<<endl;
+        //cout<<"total_niveles = "<<total_niveles<<endl;
 
         
         //inter2  
@@ -222,9 +234,9 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
 
 
 	vector<int> vf;
-	vector<int> vn;
+	vector<long> vn;
         vector<double> vt;
-        vector<double> vn2;
+        vector<long> vn2;
 
 	for (int i = 0; i < total_niveles; i++) {
 	    vf.insert(vf.begin() + i, levels[i][0]);
@@ -240,7 +252,7 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
             double bfactor = (double)next/first;
             v_bf.insert(v_bf.begin() + i, bfactor);
         }
-
+        /*
         cout<<"vn before while."<<endl;
         for (int i = 0; i < vn.size(); i++) {
             cout<<vn.at(i)<<"\t";
@@ -251,7 +263,7 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
             cout<<v_bf.at(i)<<"\t";
         }
         cout<<"\n";
-
+        */
 
         int last_level = getLastLevel(astarText);
         cout<<"last_level = "<<last_level<<endl;     
@@ -265,17 +277,23 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
 
             double bf1 = interpolationFunction(v_bf, v_bf.size());
             int index = v_bf.size();
-            cout<<"bf1 = "<<bf1<<endl;
-            double last = vn.at(vn.size() - 1);
-            cout<<"last = "<<last<<endl;
-            double bf_last = v_bf.at(index - 1);
-            double next = getNextElement(last, bf1, bf_last);
-            cout<<"next = "<<next<<endl;
+            //cout<<"bf1 = "<<bf1<<endl;
+            long last = vn.at(vn.size() - 1);
+            //cout<<"last = "<<last<<endl;
+            //double bf_last = v_bf.at(index - 1);
+            long next = getNextElement(last, bf1);
+            //cout<<"next = "<<next<<endl;
             
             vf.push_back(vf.size());
             vn.insert(vn.begin() + vn.size(), next);
             vt.push_back(0);
-            vn2.push_back(vn2.at(vn2.size() - 1));
+            cout<<"***************"<<endl;
+            cout<<"vn2 - 1 = "<<vn2.at(vn2.size() - 1)<<endl;
+            cout<<"vn - 1 = "<<vn.at(vn.size() - 1)<<endl;
+
+
+            vn2.push_back(vn2.at(vn2.size() - 1) + vn.at(vn.size() - 1));
+            cout<<"***************"<<endl;
             v_bf.push_back(bf1);
              
             total_niveles = vf.size();            
