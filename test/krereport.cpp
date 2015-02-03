@@ -46,11 +46,11 @@ double interpolationFunction(vector<double> v, int x) {
         }
 }
 
-long getNextElement(long last, double bf) {
-       cout<<"bf = "<<bf<<endl;
-       cout<<"last = "<<last<<endl;
-       long result = (long)round(last*bf);
-       cout<<"result = "<<result<<endl;
+unsigned long long getNextElement(unsigned long long last, double bf) {
+       cout<<"\nbf = "<<bf<<endl;
+       cout<<"\nlast = "<<last<<endl;
+       unsigned long long result = last*bf;
+       cout<<"\nlast*bf = "<<result<<endl;
        cout<<"\n";
        
        return result;
@@ -234,9 +234,9 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
 
 
 	vector<int> vf;
-	vector<long> vn;
+	vector<unsigned long long> vn;
         vector<double> vt;
-        vector<long> vn2;
+        vector<unsigned long long> vn2;
 
 	for (int i = 0; i < total_niveles; i++) {
 	    vf.insert(vf.begin() + i, levels[i][0]);
@@ -247,8 +247,8 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
 
         vector<double> v_bf;
         for (int i = 0; i < vn.size() - 1; i++) {
-            double first = vn.at(i); 
-            double next = vn.at(i+1);
+            unsigned long long first = vn.at(i); 
+            long next = vn.at(i+1);
             double bfactor = (double)next/first;
             v_bf.insert(v_bf.begin() + i, bfactor);
         }
@@ -278,10 +278,10 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
             double bf1 = interpolationFunction(v_bf, v_bf.size());
             int index = v_bf.size();
             //cout<<"bf1 = "<<bf1<<endl;
-            long last = vn.at(vn.size() - 1);
+            unsigned long long last = vn.at(vn.size() - 1);
             //cout<<"last = "<<last<<endl;
-            //double bf_last = v_bf.at(index - 1);
-            long next = getNextElement(last, bf1);
+            ///double bf_last = v_bf.at(index - 1);
+            unsigned long long next = getNextElement(last, bf1);
             //cout<<"next = "<<next<<endl;
             
             vf.push_back(vf.size());
@@ -290,9 +290,10 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
             cout<<"***************"<<endl;
             cout<<"vn2 - 1 = "<<vn2.at(vn2.size() - 1)<<endl;
             cout<<"vn - 1 = "<<vn.at(vn.size() - 1)<<endl;
-
-
-            vn2.push_back(vn2.at(vn2.size() - 1) + vn.at(vn.size() - 1));
+        
+            unsigned long long sub_total = vn2.at(vn2.size() - 1) + vn.at(vn.size() - 1);   
+            cout<<"sub_total = "<<sub_total<<endl;
+            vn2.push_back(sub_total);
             cout<<"***************"<<endl;
             v_bf.push_back(bf1);
              
