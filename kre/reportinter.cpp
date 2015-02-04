@@ -25,8 +25,8 @@ protected:
 };
 
 
-double returnPred(vector<double> v) {
-	double sum = 0.0;
+long returnPred(vector<long> v) {
+	long sum = 0.0;
 	for (int i = 0; i < v.size(); i++) {
 	    sum = sum + v.at(i);
 	}
@@ -124,14 +124,14 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	outputFile.open(output.c_str(), ios::out);
 
 	//We do know how to implement f-dist
-        vector<double> vpred;
+        vector<long> vpred;
  
 	for (int i = 0; i < v_astar_f.size(); i++) {
             int threshold = v_astar_f.at(i);
             //cout<<"threshold = "<<threshold<<endl;
 	    //outputFile<<threshold<<"\n\n";
-            double pred = 0.0;
-            vector<double> v_pred;
+            long pred = 0.0;
+            vector<long> v_pred;
             for (int j = 0; j < v_Ni.size(); j++) {
                 int g = j;
                 int ni = v_Ni.at(j);
@@ -196,7 +196,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
                                 cout<<"percentage = "<<percentage<<endl;       
 				//outputFile<<"percentage = "<<percentage<<"\n";
 				//cout<<"percentage = "<<percentage<<" ";
-			 	double kre_i = ni*percentage;
+			 	long kre_i = ni*percentage;
                                 v_pred.push_back(kre_i);
                                 m.clear();
 			} //end if
