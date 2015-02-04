@@ -54,13 +54,6 @@ h_min: 6 depth: 0 #states: 0 time: 0s
 
 
 		End PrintQueue
-Raiz: h = 6 g = 0 f = 6 w = 1
-	Child: h = 6 g = 1 f = 7 w = 1
-		New node added
-		h = 6 g = 1 f = 7 threshold = 12
-	Child: h = 5 g = 1 f = 6 w = 1
-		New node added
-		h = 5 g = 1 f = 6 threshold = 12
 
 		PrintQueue
 		 h = 5 g = 1 f = 6 w = 1
@@ -68,13 +61,6 @@ Raiz: h = 6 g = 0 f = 6 w = 1
 
 
 		End PrintQueue
-Raiz: h = 5 g = 1 f = 6 w = 1
-	Child: h = 4 g = 2 f = 6 w = 1
-		New node added
-		h = 4 g = 2 f = 6 threshold = 12
-	Child: h = 6 g = 2 f = 8 w = 1
-		New node added
-		h = 6 g = 2 f = 8 threshold = 12
 
 		PrintQueue
 		 h = 6 g = 1 f = 7 w = 1
@@ -83,16 +69,6 @@ Raiz: h = 5 g = 1 f = 6 w = 1
 
 
 		End PrintQueue
-Raiz: h = 6 g = 1 f = 7 w = 1
-	Child: h = 6 g = 2 f = 8 w = 1
-	is duplicated: h = 6 g = 2 f = 8 w = 1
-		Not added.
-	Child: h = 6 g = 2 f = 8 w = 1
-	is duplicated: h = 6 g = 2 f = 8 w = 2
-		Not added.
-	Child: h = 6 g = 2 f = 8 w = 1
-	is duplicated: h = 6 g = 2 f = 8 w = 3
-		Not added.
 
 		PrintQueue
 		 h = 4 g = 2 f = 6 w = 1
@@ -100,10 +76,6 @@ Raiz: h = 6 g = 1 f = 7 w = 1
 
 
 		End PrintQueue
-Raiz: h = 4 g = 2 f = 6 w = 1
-	Child: h = 5 g = 3 f = 8 w = 1
-		New node added
-		h = 5 g = 3 f = 8 threshold = 12
 
 		PrintQueue
 		 h = 6 g = 2 f = 8 w = 4
@@ -111,15 +83,7 @@ Raiz: h = 4 g = 2 f = 6 w = 1
 
 
 		End PrintQueue
-Raiz: h = 6 g = 2 f = 8 w = 4
-	Child: h = 6 g = 3 f = 9 w = 4
-		New node added
-		h = 6 g = 3 f = 9 threshold = 12
-	Child: h = 5 g = 3 f = 8 w = 4
-	is duplicated: h = 5 g = 3 f = 8 w = 1
 		Added even though is duplicate.
-		h = 5 g = 3 f = 8 w = 5
-		new w = 5
 
 		PrintQueue
 		 h = 5 g = 3 f = 8 w = 5
@@ -127,13 +91,6 @@ Raiz: h = 6 g = 2 f = 8 w = 4
 
 
 		End PrintQueue
-Raiz: h = 5 g = 3 f = 8 w = 5
-	Child: h = 4 g = 4 f = 8 w = 5
-		New node added
-		h = 4 g = 4 f = 8 threshold = 12
-	Child: h = 6 g = 4 f = 10 w = 5
-		New node added
-		h = 6 g = 4 f = 10 threshold = 12
 
 		PrintQueue
 		 h = 6 g = 3 f = 9 w = 4
@@ -142,20 +99,8 @@ Raiz: h = 5 g = 3 f = 8 w = 5
 
 
 		End PrintQueue
-Raiz: h = 6 g = 3 f = 9 w = 4
-	Child: h = 6 g = 4 f = 10 w = 4
-	is duplicated: h = 6 g = 4 f = 10 w = 5
 		Added even though is duplicate.
-		h = 6 g = 4 f = 10 w = 9
-		new w = 9
-	Child: h = 6 g = 4 f = 10 w = 4
-	is duplicated: h = 6 g = 4 f = 10 w = 9
 		Added even though is duplicate.
-		h = 6 g = 4 f = 10 w = 13
-		new w = 13
-	Child: h = 6 g = 4 f = 10 w = 4
-	is duplicated: h = 6 g = 4 f = 10 w = 13
-		Not added.
 
 		PrintQueue
 		 h = 4 g = 4 f = 8 w = 5
@@ -163,10 +108,6 @@ Raiz: h = 6 g = 3 f = 9 w = 4
 
 
 		End PrintQueue
-Raiz: h = 4 g = 4 f = 8 w = 5
-	Child: h = 5 g = 5 f = 10 w = 5
-		New node added
-		h = 5 g = 5 f = 10 threshold = 12
 
 		PrintQueue
 		 h = 6 g = 4 f = 10 w = 17
@@ -174,15 +115,7 @@ Raiz: h = 4 g = 4 f = 8 w = 5
 
 
 		End PrintQueue
-Raiz: h = 6 g = 4 f = 10 w = 17
-	Child: h = 6 g = 5 f = 11 w = 17
-		New node added
-		h = 6 g = 5 f = 11 threshold = 12
-	Child: h = 5 g = 5 f = 10 w = 17
-	is duplicated: h = 5 g = 5 f = 10 w = 5
 		Added even though is duplicate.
-		h = 5 g = 5 f = 10 w = 22
-		new w = 22
 
 		PrintQueue
 		 h = 5 g = 5 f = 10 w = 22
@@ -190,13 +123,6 @@ Raiz: h = 6 g = 4 f = 10 w = 17
 
 
 		End PrintQueue
-Raiz: h = 5 g = 5 f = 10 w = 22
-	Child: h = 4 g = 6 f = 10 w = 22
-		New node added
-		h = 4 g = 6 f = 10 threshold = 12
-	Child: h = 6 g = 6 f = 12 w = 22
-		New node added
-		h = 6 g = 6 f = 12 threshold = 12
 
 		PrintQueue
 		 h = 6 g = 5 f = 11 w = 17
@@ -205,18 +131,7 @@ Raiz: h = 5 g = 5 f = 10 w = 22
 
 
 		End PrintQueue
-Raiz: h = 6 g = 5 f = 11 w = 17
-	Child: h = 6 g = 6 f = 12 w = 17
-	is duplicated: h = 6 g = 6 f = 12 w = 22
 		Added even though is duplicate.
-		h = 6 g = 6 f = 12 w = 39
-		new w = 39
-	Child: h = 6 g = 6 f = 12 w = 17
-	is duplicated: h = 6 g = 6 f = 12 w = 39
-		Not added.
-	Child: h = 6 g = 6 f = 12 w = 17
-	is duplicated: h = 6 g = 6 f = 12 w = 56
-		Not added.
 
 		PrintQueue
 		 h = 4 g = 6 f = 10 w = 22
@@ -224,10 +139,6 @@ Raiz: h = 6 g = 5 f = 11 w = 17
 
 
 		End PrintQueue
-Raiz: h = 4 g = 6 f = 10 w = 22
-	Child: h = 5 g = 7 f = 12 w = 22
-		New node added
-		h = 5 g = 7 f = 12 threshold = 12
 
 		PrintQueue
 		 h = 6 g = 6 f = 12 w = 73
@@ -235,32 +146,18 @@ Raiz: h = 4 g = 6 f = 10 w = 22
 
 
 		End PrintQueue
-Raiz: h = 6 g = 6 f = 12 w = 73
-	Node was pruned!
-	h = 6 g = 7 f = 13 threshold = 12
-	Node was pruned!
-	h = 7 g = 7 f = 14 threshold = 12
 
 		PrintQueue
 		 h = 5 g = 7 f = 12 w = 22
 
 
 		End PrintQueue
-Raiz: h = 5 g = 7 f = 12 w = 22
-	Child: h = 4 g = 8 f = 12 w = 22
-		New node added
-		h = 4 g = 8 f = 12 threshold = 12
-	Node was pruned!
-	h = 6 g = 8 f = 14 threshold = 12
 
 		PrintQueue
 		 h = 4 g = 8 f = 12 w = 22
 
 
 		End PrintQueue
-Raiz: h = 4 g = 8 f = 12 w = 22
-	Node was pruned!
-	h = 5 g = 9 f = 14 threshold = 12
 dominio = blocks
 tarefa = probBLOCKS-5-0.pddl
 heuristica = ipdb
@@ -330,8 +227,8 @@ Actual search time: 0s [t=0s]
 Search time: 0s
 Total time: 0s
 Peak memory: 7388 KB
-VmRSS memory: 1312 KB
-VmHWM memory: 1312 KB
+VmRSS memory: 1300 KB
+VmHWM memory: 1300 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

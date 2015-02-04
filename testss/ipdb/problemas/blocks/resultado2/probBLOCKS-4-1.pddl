@@ -54,38 +54,19 @@ h_min: 4 depth: 0 #states: 0 time: 0s
 
 
 		End PrintQueue
-Raiz: h = 4 g = 0 f = 4 w = 1
-	Child: h = 4 g = 1 f = 5 w = 1
-		New node added
-		h = 4 g = 1 f = 5 threshold = 8
 
 		PrintQueue
 		 h = 4 g = 1 f = 5 w = 1
 
 
 		End PrintQueue
-Raiz: h = 4 g = 1 f = 5 w = 1
-	Child: h = 4 g = 2 f = 6 w = 1
-		New node added
-		h = 4 g = 2 f = 6 threshold = 8
-	Child: h = 4 g = 2 f = 6 w = 1
-	is duplicated: h = 4 g = 2 f = 6 w = 1
 		Added even though is duplicate.
-		h = 4 g = 2 f = 6 w = 2
-		new w = 2
 
 		PrintQueue
 		 h = 4 g = 2 f = 6 w = 2
 
 
 		End PrintQueue
-Raiz: h = 4 g = 2 f = 6 w = 2
-	Child: h = 4 g = 3 f = 7 w = 2
-		New node added
-		h = 4 g = 3 f = 7 threshold = 8
-	Child: h = 5 g = 3 f = 8 w = 2
-		New node added
-		h = 5 g = 3 f = 8 threshold = 8
 
 		PrintQueue
 		 h = 4 g = 3 f = 7 w = 2
@@ -93,15 +74,7 @@ Raiz: h = 4 g = 2 f = 6 w = 2
 
 
 		End PrintQueue
-Raiz: h = 4 g = 3 f = 7 w = 2
-	Child: h = 4 g = 4 f = 8 w = 2
-		New node added
-		h = 4 g = 4 f = 8 threshold = 8
-	Child: h = 4 g = 4 f = 8 w = 2
-	is duplicated: h = 4 g = 4 f = 8 w = 2
 		Added even though is duplicate.
-		h = 4 g = 4 f = 8 w = 4
-		new w = 4
 
 		PrintQueue
 		 h = 5 g = 3 f = 8 w = 2
@@ -109,25 +82,12 @@ Raiz: h = 4 g = 3 f = 7 w = 2
 
 
 		End PrintQueue
-Raiz: h = 5 g = 3 f = 8 w = 2
-	Child: h = 4 g = 4 f = 8 w = 2
-	is duplicated: h = 4 g = 4 f = 8 w = 4
-		Not added.
-	Node was pruned!
-	h = 6 g = 4 f = 10 threshold = 8
-	Node was pruned!
-	h = 6 g = 4 f = 10 threshold = 8
 
 		PrintQueue
 		 h = 4 g = 4 f = 8 w = 6
 
 
 		End PrintQueue
-Raiz: h = 4 g = 4 f = 8 w = 6
-	Node was pruned!
-	h = 4 g = 5 f = 9 threshold = 8
-	Node was pruned!
-	h = 5 g = 5 f = 10 threshold = 8
 dominio = blocks
 tarefa = probBLOCKS-4-1.pddl
 heuristica = ipdb
@@ -176,8 +136,8 @@ Actual search time: 0s [t=0s]
 Search time: 0s
 Total time: 0s
 Peak memory: 7388 KB
-VmRSS memory: 1284 KB
-VmHWM memory: 1284 KB
+VmRSS memory: 1268 KB
+VmHWM memory: 1268 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions

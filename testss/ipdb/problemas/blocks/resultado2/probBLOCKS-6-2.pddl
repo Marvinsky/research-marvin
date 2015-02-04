@@ -16,10 +16,10 @@ OptionParser::parse_cmd_line
 registered: ss2
 registered: ipdb
 Average operator cost: 1
-Memory usage before compute_additive_vars:1044
-Memory usage after compute_additive_vars:1044
-canonical_max_memory=205844
-Memory usage after compute_max_cliques:1044
+Memory usage before compute_additive_vars:1048
+Memory usage after compute_additive_vars:1048
+canonical_max_memory=205848
+Memory usage after compute_max_cliques:1048
 PDB collection construction time: 0s
 Got 5 PDBs
 Found 1 cliques
@@ -54,140 +54,73 @@ h_min: 10 depth: 0 #states: 0 time: 0s
 
 
 		End PrintQueue
-Raiz: h = 10 g = 0 f = 10 w = 1
-	Child: h = 9 g = 1 f = 10 w = 1
-		New node added
-		h = 9 g = 1 f = 10 threshold = 20
 
 		PrintQueue
 		 h = 9 g = 1 f = 10 w = 1
 
 
 		End PrintQueue
-Raiz: h = 9 g = 1 f = 10 w = 1
-	Child: h = 10 g = 2 f = 12 w = 1
-		New node added
-		h = 10 g = 2 f = 12 threshold = 20
-	Child: h = 10 g = 2 f = 12 w = 1
-	is duplicated: h = 10 g = 2 f = 12 w = 1
-		Not added.
 
 		PrintQueue
 		 h = 10 g = 2 f = 12 w = 2
 
 
 		End PrintQueue
-Raiz: h = 10 g = 2 f = 12 w = 2
-	Child: h = 9 g = 3 f = 12 w = 2
-		New node added
-		h = 9 g = 3 f = 12 threshold = 20
 
 		PrintQueue
 		 h = 9 g = 3 f = 12 w = 2
 
 
 		End PrintQueue
-Raiz: h = 9 g = 3 f = 12 w = 2
-	Child: h = 10 g = 4 f = 14 w = 2
-		New node added
-		h = 10 g = 4 f = 14 threshold = 20
-	Child: h = 10 g = 4 f = 14 w = 2
-	is duplicated: h = 10 g = 4 f = 14 w = 2
-		Not added.
 
 		PrintQueue
 		 h = 10 g = 4 f = 14 w = 4
 
 
 		End PrintQueue
-Raiz: h = 10 g = 4 f = 14 w = 4
-	Child: h = 9 g = 5 f = 14 w = 4
-		New node added
-		h = 9 g = 5 f = 14 threshold = 20
 
 		PrintQueue
 		 h = 9 g = 5 f = 14 w = 4
 
 
 		End PrintQueue
-Raiz: h = 9 g = 5 f = 14 w = 4
-	Child: h = 10 g = 6 f = 16 w = 4
-		New node added
-		h = 10 g = 6 f = 16 threshold = 20
-	Child: h = 10 g = 6 f = 16 w = 4
-	is duplicated: h = 10 g = 6 f = 16 w = 4
-		Not added.
 
 		PrintQueue
 		 h = 10 g = 6 f = 16 w = 8
 
 
 		End PrintQueue
-Raiz: h = 10 g = 6 f = 16 w = 8
-	Child: h = 9 g = 7 f = 16 w = 8
-		New node added
-		h = 9 g = 7 f = 16 threshold = 20
 
 		PrintQueue
 		 h = 9 g = 7 f = 16 w = 8
 
 
 		End PrintQueue
-Raiz: h = 9 g = 7 f = 16 w = 8
-	Child: h = 10 g = 8 f = 18 w = 8
-		New node added
-		h = 10 g = 8 f = 18 threshold = 20
-	Child: h = 10 g = 8 f = 18 w = 8
-	is duplicated: h = 10 g = 8 f = 18 w = 8
-		Not added.
 
 		PrintQueue
 		 h = 10 g = 8 f = 18 w = 16
 
 
 		End PrintQueue
-Raiz: h = 10 g = 8 f = 18 w = 16
-	Child: h = 9 g = 9 f = 18 w = 16
-		New node added
-		h = 9 g = 9 f = 18 threshold = 20
 
 		PrintQueue
 		 h = 9 g = 9 f = 18 w = 16
 
 
 		End PrintQueue
-Raiz: h = 9 g = 9 f = 18 w = 16
-	Child: h = 10 g = 10 f = 20 w = 16
-		New node added
-		h = 10 g = 10 f = 20 threshold = 20
-	Child: h = 10 g = 10 f = 20 w = 16
-	is duplicated: h = 10 g = 10 f = 20 w = 16
 		Added even though is duplicate.
-		h = 10 g = 10 f = 20 w = 32
-		new w = 32
 
 		PrintQueue
 		 h = 10 g = 10 f = 20 w = 32
 
 
 		End PrintQueue
-Raiz: h = 10 g = 10 f = 20 w = 32
-	Child: h = 9 g = 11 f = 20 w = 32
-		New node added
-		h = 9 g = 11 f = 20 threshold = 20
-	Node was pruned!
-	h = 10 g = 11 f = 21 threshold = 20
 
 		PrintQueue
 		 h = 9 g = 11 f = 20 w = 32
 
 
 		End PrintQueue
-Raiz: h = 9 g = 11 f = 20 w = 32
-	Node was pruned!
-	h = 10 g = 12 f = 22 threshold = 20
-	Node was pruned!
-	h = 10 g = 12 f = 22 threshold = 20
 dominio = blocks
 tarefa = probBLOCKS-6-2.pddl
 heuristica = ipdb
@@ -278,8 +211,8 @@ Actual search time: 0s [t=0s]
 Search time: 0s
 Total time: 0s
 Peak memory: 7520 KB
-VmRSS memory: 1352 KB
-VmHWM memory: 1352 KB
+VmRSS memory: 1336 KB
+VmHWM memory: 1336 KB
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
 destructor of HST eliminates all the hashed state descriptions
