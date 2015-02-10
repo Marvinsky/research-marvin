@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss/pegsol-opt11-strips/fdist/p18.pddl
-predictionSS: 806425425
+predictionSS: 3.01689e+06
 threshold: 16
 g:0
 size: 1
@@ -7,127 +7,87 @@ size: 1
 
 g:1
 size: 2
-	f: 8	q: 1
-	f: 9	q: 1
+	f: 8	q: 8
+	f: 9	q: 4
 
 g:2
 size: 2
-	f: 9	q: 1
-	f: 10	q: 2
+	f: 9	q: 16
+	f: 10	q: 8
 
 g:3
 size: 3
-	f: 10	q: 6
-	f: 11	q: 2
-	f: 12	q: 1
+	f: 10	q: 8
+	f: 11	q: 12
+	f: 12	q: 4
 
 g:4
 size: 3
-	f: 11	q: 8
-	f: 12	q: 4
-	f: 13	q: 1
+	f: 11	q: 32
+	f: 12	q: 48
+	f: 13	q: 4
 
 g:5
 size: 4
-	f: 11	q: 5
-	f: 12	q: 9
-	f: 13	q: 7
-	f: 14	q: 2
+	f: 11	q: 64
+	f: 12	q: 416
+	f: 13	q: 80
+	f: 14	q: 16
 
 g:6
 size: 4
-	f: 12	q: 5
-	f: 13	q: 11
-	f: 14	q: 9
-	f: 15	q: 3
+	f: 12	q: 224
+	f: 13	q: 1504
+	f: 14	q: 80
+	f: 15	q: 152
 
 g:7
 size: 5
-	f: 12	q: 3
-	f: 13	q: 6
-	f: 14	q: 12
-	f: 15	q: 10
-	f: 16	q: 2
+	f: 12	q: 384
+	f: 13	q: 936
+	f: 14	q: 1504
+	f: 15	q: 928
+	f: 16	q: 112
 
 g:8
-size: 5
-	f: 13	q: 4
-	f: 14	q: 10
-	f: 15	q: 10
-	f: 16	q: 9
-	f: 17	q: 3
+size: 4
+	f: 13	q: 384
+	f: 14	q: 5288
+	f: 15	q: 3680
+	f: 16	q: 3224
 
 g:9
-size: 6
-	f: 13	q: 2
-	f: 14	q: 5
-	f: 15	q: 12
-	f: 16	q: 11
-	f: 17	q: 7
-	f: 18	q: 2
+size: 4
+	f: 13	q: 3072
+	f: 14	q: 7512
+	f: 15	q: 416
+	f: 16	q: 27792
 
 g:10
-size: 6
-	f: 14	q: 3
-	f: 15	q: 9
-	f: 16	q: 14
-	f: 17	q: 9
-	f: 18	q: 7
-	f: 19	q: 1
+size: 3
+	f: 14	q: 3008
+	f: 15	q: 10920
+	f: 16	q: 160184
 
 g:11
-size: 6
-	f: 15	q: 5
-	f: 16	q: 11
-	f: 17	q: 12
-	f: 18	q: 11
-	f: 19	q: 7
-	f: 20	q: 1
+size: 2
+	f: 15	q: 768
+	f: 16	q: 207696
 
 g:12
-size: 6
-	f: 16	q: 6
-	f: 17	q: 13
-	f: 18	q: 13
-	f: 19	q: 9
-	f: 20	q: 6
-	f: 21	q: 1
+size: 1
+	f: 16	q: 37896
 
 g:13
-size: 7
-	f: 16	q: 2
-	f: 17	q: 9
-	f: 18	q: 12
-	f: 19	q: 13
-	f: 20	q: 9
-	f: 21	q: 5
-	f: 22	q: 1
+size: 1
+	f: 16	q: 5376
 
 g:14
-size: 6
-	f: 17	q: 3
-	f: 18	q: 10
-	f: 19	q: 14
-	f: 20	q: 13
-	f: 21	q: 8
-	f: 22	q: 4
+size: 0
 
 g:15
-size: 7
-	f: 18	q: 5
-	f: 19	q: 13
-	f: 20	q: 15
-	f: 21	q: 12
-	f: 22	q: 7
-	f: 23	q: 3
-	f: 24	q: 1
+size: 0
 
 g:16
-size: 6
-	f: 19	q: 4
-	f: 20	q: 14
-	f: 21	q: 14
-	f: 22	q: 14
-	f: 23	q: 9
-	f: 24	q: 4
+size: 0
 

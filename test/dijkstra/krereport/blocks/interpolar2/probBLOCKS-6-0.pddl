@@ -1,4 +1,4 @@
-	/home/marvin/marvin/test/dijkstra/problemas/blocks/resultado/probBLOCKS-6-0.pddl
+	/home/levi/marvin/marvin/test/dijkstra/problemas/blocks/resultado2/probBLOCKS-6-0.pddl
 	f		#Nodes_by_level		Runtime(s)		#Nodes_to_the_level
 	0		1			1.12			1
 	1		2			1.12			3

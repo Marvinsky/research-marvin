@@ -1,4 +1,4 @@
-	/home/marvin/marvin/test/dijkstra/problemas/blocks/resultado/probBLOCKS-7-0.pddl
+	/home/levi/marvin/marvin/test/dijkstra/problemas/blocks/resultado2/probBLOCKS-7-0.pddl
 	f		#Nodes_by_level		Runtime(s)		#Nodes_to_the_level
 	0		1			1.12			1
 	1		1			1.12			2
@@ -14,10 +14,10 @@
 	11		184			1.12			384
 	12		475			1.12			859
 	13		868			1.12			1727
-	14		2128			1.14			3855
-	15		3290			1.16			7145
-	16		5969			1.2			13114
-	17		7030			1.24			20144
-	18		9949			1.28			30093
-	19		8595			1.32			38688
-	20		10244			1.36			48932
+	14		2128			1.12			3855
+	15		3290			1.14			7145
+	16		5969			1.16			13114
+	17		7030			1.2			20144
+	18		9949			1.22			30093
+	19		8595			1.26			38688
+	20		10244			1.28			48932

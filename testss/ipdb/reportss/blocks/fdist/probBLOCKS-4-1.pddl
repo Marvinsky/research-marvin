@@ -1,5 +1,5 @@
-	/home/marvin/marvin/testss/ipdb/reportss/blocks/fdist/probBLOCKS-4-1.pddl
-predictionSS: 14
+	/home/levi/marvin/marvin/testss/ipdb/reportss/blocks/fdist/probBLOCKS-4-1.pddl
+predictionSS: 12
 threshold: 8
 g:0
 size: 1
@@ -11,16 +11,16 @@ size: 1
 
 g:2
 size: 1
-	f: 6	q: 2
+	f: 6	q: 1
 
 g:3
 size: 2
 	f: 7	q: 2
-	f: 8	q: 2
+	f: 8	q: 1
 
 g:4
 size: 1
-	f: 8	q: 6
+	f: 8	q: 2
 
 g:5
 size: 0

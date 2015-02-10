@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss/sokoban-opt08-strips/fdist/p06.pddl
-predictionSS: 7
+predictionSS: 2
 threshold: 2
 g:0
 size: 1
@@ -10,6 +10,5 @@ size: 1
 	f: 2	q: 1
 
 g:2
-size: 1
-	f: 3	q: 2
+size: 0
 

@@ -1,0 +1,10 @@
+	/home/levi/marvin/marvin/test/dijkstra/problemas/scanalyzer-opt11-strips/resultado2/p05.pddl
+	f		#Nodes_by_level		Runtime(s)		#Nodes_to_the_level
+	0		1			1.26			1
+	1		25			1.26			26
+	2		400			1.28			426
+	3		4245			1.6			4671
+	4		31250			3.8			35921
+	5		162045			15.86			197966
+	6		610923			51.6			808889
+	7		1819315			176.02			2628204
