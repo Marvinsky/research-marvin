@@ -1,8 +1,7 @@
-blocks
 barman-opt11-strips
-elevetors-opt08-strips
-elevetors-opt11-strips
-floortitle-opt11-strips
+elevators-opt08-strips
+elevators-opt11-strips
+floortile-opt11-strips
 nomystery-opt11-strips
 openstacks-opt08-adl
 openstacks-opt08-strips
@@ -14,3 +13,8 @@ scanalyzer-opt11-strips
 sokoban-opt08-strips
 sokoban-opt11-strips
 tidybot-opt11-strips
+transport-opt08-strips
+transport-opt11-strips
+visitall-opt11-strips
+woodworking-opt08-strips
+woodworking-opt11-strips

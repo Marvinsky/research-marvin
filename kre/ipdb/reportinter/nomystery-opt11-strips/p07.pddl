@@ -1,0 +1,10 @@
+		/home/marvin/marvin/kre/ipdb/reportinter/nomystery-opt11-strips/p07.pddl
+
+	d		#nodes		pred
+
+	25		13		19456497269
+	26		49		19460309139
+	27		4143		63534465662
+	28		38767		149805853671
+	29		276632		287869805270
+	30		865770		287886507051

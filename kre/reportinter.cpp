@@ -25,8 +25,8 @@ protected:
 };
 
 
-long returnPred(vector<long> v) {
-	long sum = 0.0;
+unsigned long long returnPred(vector<unsigned long long> v) {
+	unsigned long long sum = 0.0;
 	for (int i = 0; i < v.size(); i++) {
 	    sum = sum + v.at(i);
 	}
@@ -73,7 +73,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
         int totallevels2;
        	ifstream fNi(Ni.c_str());
 	
- 	vector<int> v_Ni;
+ 	vector<unsigned long long> v_Ni;
         float** levels; // = new float*[totallevels];
 
 
@@ -97,7 +97,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	}
 	for (int i = 0; i < totallevels; i++) {
 	    v_Ni.insert(v_Ni.begin() + i, levels[i][1]);
-            cout<<levels[i][1]<<endl;
+            cout<<v_Ni.at(i)<<endl;
 	}
 	
         fNi.close(); 
@@ -119,7 +119,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	}
 
 	vector<long> v_astar_f;
-        vector<long> v_astar_n;         
+        vector<unsigned long long> v_astar_n;         
         for (int i = 0; i < totallevels4; i++) {
 	    for (int j = 0; j < 4; j++) {
 		fastar>>levels4[i][j];
@@ -147,17 +147,17 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	outputFile.open(output.c_str(), ios::out);
 
 	//We do know how to implement f-dist
-        vector<long> vpred;
+        vector<unsigned long long> vpred;
  
 	for (int i = 0; i < v_astar_f.size(); i++) {
             int threshold = v_astar_f.at(i);
             //cout<<"threshold = "<<threshold<<endl;
 	    //outputFile<<threshold<<"\n\n";
-            long pred = 0.0;
-            vector<long> v_pred;
+            unsigned long long pred = 0.0;
+            vector<unsigned long long> v_pred;
             for (int j = 0; j < v_Ni.size(); j++) {
                 int g = j;
-                int ni = v_Ni.at(j);
+                unsigned long long ni = v_Ni.at(j);
 		//cout<<"N"<<j<<" = "<<ni<<endl;
 		//look for the g in v_fdist
 		ifstream ffdist;
@@ -177,15 +177,15 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 			if (amount == level.c_str()) {
                                	//outputFile<<level.c_str()<<"\n";
                                 int size;
-                                map<int, int> m;
-				int sumq = 0;
+                                map<int, unsigned long long> m;
+				unsigned long long sumq = 0;
 				ffdist>>amount;
                                 ffdist>>amount;
                                 size = atoi(amount.c_str());
                                 
                                 for (int p1 = 0; p1 <= size; p1++) {
 				    int f = 0;
-                                    int q = 0;
+                                    unsigned long long q = 0;
 				    ffdist>>amount;
                                     ffdist>>amount;
                                     f = atoi(amount.c_str());
@@ -195,12 +195,12 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
                                     sumq = sumq + q;
                                     
                                     //outputFile<<"f = "<<f<<" q = "<<q<<"\n";
-                                    m.insert(pair<int, int>(f, q));
+                                    m.insert(pair<int, unsigned long long>(f, q));
                                     
 				}
 				//Calculate the percentage
-                                int sumR = 0;	
-				for (map<int, int>::iterator it = m.begin(); it != m.end(); it++) {
+                                unsigned long long sumR = 0;	
+				for (map<int, unsigned long long>::iterator it = m.begin(); it != m.end(); it++) {
 				    int f = it->first;
 				    
                                     if (f <= threshold) {
@@ -210,7 +210,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 				//outputFile<<"total nodes = "<<sumq<<"\n";
 				//outputFile<<"nodes with f less than or equal to"<<threshold<<" = "<<sumR<<"\n";
 
-                                double percentage = 0;
+                                long double percentage = 0;
                                 if (sumq > 0) {
                                    percentage =  (double)sumR/(double)sumq;
                                 } else {
@@ -219,7 +219,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
                                 cout<<"percentage = "<<percentage<<endl;       
 				//outputFile<<"percentage = "<<percentage<<"\n";
 				//cout<<"percentage = "<<percentage<<" ";
-			 	long kre_i = ni*percentage;
+			 	unsigned long long kre_i = ni*percentage;
                                 v_pred.push_back(kre_i);
                                 m.clear();
 			} //end if
