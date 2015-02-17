@@ -1,4 +1,4 @@
-		/home/levi/marvin/marvin/kre/ipdb/reportdfs/openstacks-opt08-strips/p08.pddl
+		/home/marvin/marvin/kre/ipdb/reportdfs/openstacks-opt08-strips/p08.pddl
 
 	d		#nodes		pred
 
