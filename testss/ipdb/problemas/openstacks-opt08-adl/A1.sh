@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/openstacks-opt08-adl/p01-domain.pd
 
 src/preprocess/preprocess < Astaropenstacks-opt08-adl1.sas
 
-src/search/downward --global_probes 50 --domain_name openstacks-opt08-adl --problem_name p01.pddl --heuristic_name ipdb --search "ss(ipdb(pdb_max_size=2000000, collection_max_size=20000000, num_samples=1000, min_improvement=10, cost_type=NORMAL))" <  Astaropenstacks-opt08-adl1 >> ${RESULTS}/p01.pddl
+src/search/downward --global_probes 1 --domain_name openstacks-opt08-adl --problem_name p01.pddl --heuristic_name ipdb --search "ss(ipdb())" <  Astaropenstacks-opt08-adl1 >> ${RESULTS}/p01.pddl
 
 
 

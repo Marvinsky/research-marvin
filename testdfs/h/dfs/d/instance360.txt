@@ -1,0 +1,5 @@
+openstacks-opt08-adl
+no_unique_domain
+1
+p01-domain.pddl
+p01.pddl

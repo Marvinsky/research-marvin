@@ -1,9 +1,9 @@
-		/home/levi/marvin/marvin/kre/ipdb/reportss/openstacks-opt08-strips/p14.pddl
+		/home/marvin/marvin/kre/ipdb/reportss/openstacks-opt08-strips/p14.pddl
 
 	d		#nodes		pred
 
-	0		1		1
-	1		59		59
-	2		7315		7315
-	3		156123		156123
-	4		1292779		1292779
+	0		1		0.5
+	1		59		1
+	2		7315		1
+	3		156123		1
+	4		1292779		1

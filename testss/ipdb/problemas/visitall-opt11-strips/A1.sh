@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/visitall-opt11-strips/domain.pddl 
 
 src/preprocess/preprocess < Astarvisitall-opt11-strips1.sas
 
-src/search/downward --global_probes 50 --domain_name visitall-opt11-strips --problem_name problem02-full.pddl --heuristic_name ipdb --search "ss(ipdb(pdb_max_size=2000000, collection_max_size=20000000, num_samples=1000, min_improvement=10, cost_type=NORMAL))" <  Astarvisitall-opt11-strips1 >> ${RESULTS}/problem02-full.pddl
+src/search/downward --global_probes 1 --domain_name visitall-opt11-strips --problem_name problem02-full.pddl --heuristic_name ipdb --search "ss(ipdb())" <  Astarvisitall-opt11-strips1 >> ${RESULTS}/problem02-full.pddl
 
 
 

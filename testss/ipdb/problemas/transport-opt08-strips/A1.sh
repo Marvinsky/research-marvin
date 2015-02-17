@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/transport-opt08-strips/p01-domain.
 
 src/preprocess/preprocess < Astartransport-opt08-strips1.sas
 
-src/search/downward --global_probes 50 --domain_name transport-opt08-strips --problem_name p01.pddl --heuristic_name ipdb --search "ss(ipdb(pdb_max_size=2000000, collection_max_size=20000000, num_samples=1000, min_improvement=10, cost_type=NORMAL))" <  Astartransport-opt08-strips1 >> ${RESULTS}/p01.pddl
+src/search/downward --global_probes 1 --domain_name transport-opt08-strips --problem_name p01.pddl --heuristic_name ipdb --search "ss(ipdb())" <  Astartransport-opt08-strips1 >> ${RESULTS}/p01.pddl
 
 
 
