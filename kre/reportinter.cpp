@@ -51,7 +51,7 @@ int getTotalNiveles(string astarText)  {
               count_data++;
         }
         astar.close();
-        total_niveles = (int)count_data/4;
+        total_niveles = (int)count_data/2;
 
 	return total_niveles;
 }
@@ -88,10 +88,10 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 
         cout<<"totallevels = "<<totallevels<<endl;
         for (int i = 0; i < totallevels; i++) {
-	    levels[i] = new float[4];
+	    levels[i] = new float[2];
 	}
 	for (int i = 0; i < totallevels; i++) {
-	    for (int j = 0; j < 4; j++) {
+	    for (int j = 0; j < 2; j++) {
 		fNi>>levels[i][j];
 	    }
 	}
