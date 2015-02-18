@@ -137,7 +137,10 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
         
 	string output;
 
-        output = fileName;    
+        //change name
+        string newName = "r-"+fileName;
+        
+        output = newName;    
         output =  pasta+"/interpolar2/"+output;
 	output = "test/"+heuristic+"/krereport/"+output;
 	output = "marvin/" + output;
@@ -163,24 +166,24 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
 	ofstream outputFile;
 	outputFile.open(output.c_str(), ios::out);
 	
-	outputFile<<"\t"<<dijkstraText.c_str()<<endl;
+	//outputFile<<"\t"<<dijkstraText.c_str()<<endl;
         outputFile2<<"\t"<<dijkstraText.c_str()<<endl;
  
         
-	outputFile<<"\tf\t\t#Nodes_by_level\t\tRuntime(s)\t\t#Nodes_to_the_level\n";
+	//outputFile<<"\tf\t\t#Nodes_by_level\t\tRuntime(s)\t\t#Nodes_to_the_level\n";
         while (dijkstra>>amount) {
 	        if (amount == fnivel) {
 			dijkstra>>amount;
-                        outputFile<<"\t"<<amount<<"\t\t";                       
+                        outputFile<<"\t"<<amount<<"\t";                       
 		} else if (amount == nodosNivel) {
                         dijkstra>>amount;
-			outputFile<<amount<<"\t\t";	
+			outputFile<<amount<<"\n";	
 		} else if (amount == time) {
 			dijkstra>>amount;
-			outputFile<<"\t"<<amount<<"\t\t";
+			//outputFile<<"\t"<<amount<<"\t\t";
 		} else if (amount == nodesUpToNivel) {
 	                dijkstra>>amount;
-                        outputFile<<"\t"<<amount<<"\n";	
+                        //outputFile<<"\t"<<amount<<"\n";	
 		}
 	}
         outputFile.close();
@@ -190,11 +193,11 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
 	
 	inter.open(output.c_str());
       
-        inter>>trash;
-        inter>>trash;
-        inter>>trash;
-        inter>>trash;
-        inter>>trash;
+        //inter>>trash;
+        //inter>>trash;
+        //inter>>trash;
+        //inter>>trash;
+        //inter>>trash;
 
         //Determinar el numero de niveles
         int count_data = 0;
@@ -207,7 +210,7 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
         }
         inter.close();
         //cout<<"count_data = "<<count_data<<endl;
-        total_niveles = (int)count_data/4;
+        total_niveles = (int)count_data/2;
         //cout<<"total_niveles = "<<total_niveles<<endl;
 
         
@@ -215,19 +218,19 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
         ifstream inter2;
       	inter2.open(output.c_str());
 
-        inter2>>trash;
-        inter2>>trash;
-        inter2>>trash;
-        inter2>>trash;
-        inter2>>trash;
+        //inter2>>trash;
+        //inter2>>trash;
+        //inter2>>trash;
+        //inter2>>trash;
+        //inter2>>trash;
 
         float** levels = new float*[total_niveles];
 	for (int i = 0; i < total_niveles; i++) {
-	    levels[i] = new float[4];
+	    levels[i] = new float[2];
 	}	
 
 	for (int i = 0; i < total_niveles; i++) {
-	    for (int j = 0; j < 4; j++) {
+	    for (int j = 0; j < 2; j++) {
 		 inter2>>levels[i][j];
 	    }
 	}
@@ -241,8 +244,8 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
 	for (int i = 0; i < total_niveles; i++) {
 	    vf.insert(vf.begin() + i, levels[i][0]);
 	    vn.insert(vn.begin() + i, levels[i][1]);
-            vt.insert(vt.begin() + i, levels[i][2]);
-            vn2.insert(vn2.begin() + i, levels[i][3]);
+            //vt.insert(vt.begin() + i, levels[i][2]);
+            //vn2.insert(vn2.begin() + i, levels[i][3]);
  	}
 
         vector<double> v_bf;
@@ -286,14 +289,14 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
             
             vf.push_back(vf.size());
             vn.insert(vn.begin() + vn.size(), next);
-            vt.push_back(0);
+            //vt.push_back(0);
             cout<<"***************"<<endl;
-            cout<<"vn2 - 1 = "<<vn2.at(vn2.size() - 1)<<endl;
+            //cout<<"vn2 - 1 = "<<vn2.at(vn2.size() - 1)<<endl;
             cout<<"vn - 1 = "<<vn.at(vn.size() - 1)<<endl;
         
-            unsigned long long sub_total = vn2.at(vn2.size() - 1) + vn.at(vn.size() - 1);   
-            cout<<"sub_total = "<<sub_total<<endl;
-            vn2.push_back(sub_total);
+            //unsigned long long sub_total = vn2.at(vn2.size() - 1) + vn.at(vn.size() - 1);   
+            //cout<<"sub_total = "<<sub_total<<endl;
+            //vn2.push_back(sub_total);
             cout<<"***************"<<endl;
             v_bf.push_back(bf1);
              
@@ -326,7 +329,9 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
 
         for (int i = 0; i < vn.size(); i++) {
             //cout<<vn.at(i)<<"\t";
-            outputFile2<<"\t"<<vf.at(i)<<"\t\t"<<vn.at(i)<<"\t\t\t"<<vt.at(i)<<"\t\t"<<vn2.at(i)<<"\n";
+            outputFile2<<"\t"<<vf.at(i)<<"\t\t"<<vn.at(i)<<"\n";
+
+            //outputFile2<<"\t"<<vf.at(i)<<"\t\t"<<vn.at(i)<<"\t\t\t"<<vt.at(i)<<"\t\t"<<vn2.at(i)<<"\n";
         }
         outputFile2.close();
         

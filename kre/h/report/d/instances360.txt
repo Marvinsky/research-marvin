@@ -1,3 +1,2 @@
-openstacks-opt08-adl
-openstacks-opt08-strips
-openstacks-opt11-strips
+
+blocks
