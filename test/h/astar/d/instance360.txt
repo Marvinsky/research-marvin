@@ -1,16 +1,6 @@
 blocks
 domain.pddl
-35
-probBLOCKS-4-0.pddl
-probBLOCKS-4-1.pddl
-probBLOCKS-4-2.pddl
-probBLOCKS-5-0.pddl
-probBLOCKS-5-1.pddl
-probBLOCKS-5-2.pddl
-probBLOCKS-6-0.pddl
-probBLOCKS-6-1.pddl
-probBLOCKS-6-2.pddl
-probBLOCKS-7-0.pddl
+25
 probBLOCKS-7-1.pddl
 probBLOCKS-7-2.pddl
 probBLOCKS-8-0.pddl
@@ -33,7 +23,6 @@ probBLOCKS-14-0.pddl
 probBLOCKS-14-1.pddl
 probBLOCKS-15-0.pddl
 probBLOCKS-15-1.pddl
-probBLOCKS-16-0.pddl
 probBLOCKS-16-1.pddl
+probBLOCKS-16-2.pddl
 probBLOCKS-17-0.pddl
-
