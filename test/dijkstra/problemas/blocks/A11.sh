@@ -6,7 +6,7 @@
 
 #PBS -l nodes=1:ppn=1
 
-#PBS -l walltime=01:00:00
+#PBS -l walltime=00:03:20
 
 #PBS -l pmem=6gb
 
@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/test/dijkstra/problemas/blocks/resultado
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/blocks/probBLOCKS-7-1.pddl Astarblocks11  blocks probBLOCKS-7-1.pddl  dijkstra
+python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/blocks/probBLOCKS-10-2.pddl Astarblocks11  blocks probBLOCKS-10-2.pddl  dijkstra
 
 src/preprocess/preprocess < Astarblocks11.sas
 
-src/search/downward --domain_name blocks --problem_name probBLOCKS-7-1.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astarblocks11 >> ${RESULTS}/probBLOCKS-7-1.pddl
+src/search/downward --domain_name blocks --problem_name probBLOCKS-10-2.pddl --heuristic_name dijkstra --search "astar_dijkstra(dijkstra())" <  Astarblocks11 >> ${RESULTS}/probBLOCKS-10-2.pddl
 
 
 
