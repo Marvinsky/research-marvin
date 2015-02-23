@@ -1,4 +1,4 @@
-	/home/levi/marvin/marvin/test/dijkstra/problemas/blocks/resultado/probBLOCKS-15-1.pddl
+	/home/levi/marvin/marvin/test/dijkstra/problemas/blocks/resultado/probBLOCKS-16-2.pddl
 max-f-value-A* -1
 	f		#Nodes_by_level		Runtime(s)		#Nodes_to_the_level
 	0		1
