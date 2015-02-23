@@ -1,4 +1,4 @@
-	/home/marvin/marvin/test/dijkstra/problemas/blocks/resultado/probBLOCKS-9-1.pddl
+	/home/levi/marvin/marvin/test/dijkstra/problemas/blocks/resultado/probBLOCKS-9-1.pddl
 max-f-value-A* 28
 	f		#Nodes_by_level		Runtime(s)		#Nodes_to_the_level
 	0		1
@@ -30,3 +30,4 @@ max-f-value-A* 28
 	26		1144492
 	27		796068
 	28		887144
+	29		1
