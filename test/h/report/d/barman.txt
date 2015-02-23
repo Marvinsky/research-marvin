@@ -1,0 +1,3 @@
+barman-opt11-strips
+domain.pddl
+20

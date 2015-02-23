@@ -33,7 +33,7 @@ probBLOCKS-14-0.pddl
 probBLOCKS-14-1.pddl
 probBLOCKS-15-0.pddl
 probBLOCKS-15-1.pddl
-probBLOCKS-16-0.pddl
 probBLOCKS-16-1.pddl
+probBLOCKS-16-2.pddl
 probBLOCKS-17-0.pddl
 
