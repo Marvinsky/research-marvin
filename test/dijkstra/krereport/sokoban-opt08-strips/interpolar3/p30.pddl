@@ -1,18 +1,19 @@
-	/home/levi/marvin/marvin/test/dijkstra/problemas/sokoban-opt08-strips/resultado2/p30.pddl
+	/home/levi/marvin/marvin/test/dijkstra/problemas/sokoban-opt08-strips/resultado/p30.pddl
 max-f-value-A* 14
 	f		#Nodes_by_level		Runtime(s)		#Nodes_to_the_level
-	0		9			1.24		9
-	1		304			1.24		313
-	2		5070			1.28		5383
-	3		57784			1.58		63167
-	4		522375			4.66		585542
-	5		3951080			30.64		4536622
-	6		24051164			0		28587786
-	7		110894886			0		139482672
-	8		347582689			0		487065361
-	9		576256156			0		1063321517
-	10		104561374			0		1167882891
-	11		0			0		1167882891
-	12		0			0		1167882891
-	13		0			0		1167882891
-	14		0			0		1167882891
+	0		9
+	1		304
+	2		5070
+	3		57784
+	4		522375
+	5		3951080
+	6		24051164
+	7		110894886
+	8		347582689
+	9		576256156
+	10		104561374
+	11		0
+	12		0
+	13		0
+	14		0
+	15		0
