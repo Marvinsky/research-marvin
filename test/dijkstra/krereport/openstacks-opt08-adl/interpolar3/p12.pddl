@@ -1,7 +1,8 @@
-	/home/levi/marvin/marvin/test/dijkstra/problemas/openstacks-opt08-adl/resultado2/p12.pddl
+	/home/levi/marvin/marvin/test/dijkstra/problemas/openstacks-opt08-adl/resultado/p12.pddl
 max-f-value-A* -1
 	f		#Nodes_by_level		Runtime(s)		#Nodes_to_the_level
-	0		1			1.12		1
-	1		384			1.12		385
-	2		6752			1.18		7137
-	3		351000			5.64		358137
+	0		1
+	1		384
+	2		6752
+	3		351000
+	4		1
