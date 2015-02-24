@@ -74,7 +74,7 @@ int getTotalNiveles(string path) {
        return total_niveles;
 }
 
-
+//reading files from ipdb A-star
 int getLastLevel(string astarText) {
 	ifstream astar;
 
@@ -113,6 +113,57 @@ int getLastLevel(string astarText) {
                vf.insert(vf.begin() + i, points[i][0]);
            }
 
+           return vf.at(total_niveles - 1);
+        }
+}
+
+
+//Reading file for interpolar2
+int getLastLevelF_value(string interText) {
+	ifstream inter2;
+        inter2.open(interText.c_str());
+
+        if (!inter2) {
+           return -1;
+        } else {
+           string trash;
+           int total_niveles = 0;
+           int count_data = 0;
+
+	   while (inter2>>trash) {
+              cout<<trash<<endl; 
+              count_data++;
+           }
+           inter2.close();
+           
+
+           ifstream inter3;
+           inter3.open(interText.c_str());
+
+           
+           total_niveles = (int)count_data/2;
+           
+           double** points = new double*[total_niveles];
+        
+           for (int i = 0; i < total_niveles; i++) {
+               points[i] = new double[2];
+           }
+
+           for (int i = 0; i < total_niveles; i++) {
+               for (int j = 0; j < 2; j++) {
+                   inter3>>points[i][j];
+               }
+           }
+           
+           vector<long> vf;
+           cout<<"vf."<<endl;
+           for (int i = 0; i < total_niveles; i++) {
+               
+               vf.insert(vf.begin() + i, points[i][0]);
+               
+           }
+           inter3.close();
+           
            return vf.at(total_niveles - 1);
         }
 }
@@ -271,12 +322,20 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
         int last_level = getLastLevel(astarText);
         cout<<"last_level = "<<last_level<<endl;     
         cout<<"total_niveles = "<<total_niveles<<endl; 
-        
+           
+        //We should found a way to find the last level in interpolar2
+        int last_level_f_value = getLastLevelF_value(output.c_str());
+        cout<<"last_level_f_value = "<<last_level_f_value<<endl;
+
         //the number of levels must be greater than the max f-value
         cout<<"dijkstra = "<<dijkstraText<<endl; 
         //double bf1 = 0.0;
+
+
+        
+
         int count_zero = 0;
-        while ( total_niveles <= last_level  ) {
+        while ( last_level_f_value  <= last_level  ) {
 
             double bf1 = interpolationFunction(v_bf, v_bf.size());
             int index = v_bf.size();
@@ -287,20 +346,22 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
             unsigned long long next = getNextElement(last, bf1);
             //cout<<"next = "<<next<<endl;
             
-            vf.push_back(vf.size());
             vn.insert(vn.begin() + vn.size(), next);
             //vt.push_back(0);
-            cout<<"***************"<<endl;
+            //cout<<"***************"<<endl;
             //cout<<"vn2 - 1 = "<<vn2.at(vn2.size() - 1)<<endl;
-            cout<<"vn - 1 = "<<vn.at(vn.size() - 1)<<endl;
+            //cout<<"vn - 1 = "<<vn.at(vn.size() - 1)<<endl;
         
             //unsigned long long sub_total = vn2.at(vn2.size() - 1) + vn.at(vn.size() - 1);   
             //cout<<"sub_total = "<<sub_total<<endl;
             //vn2.push_back(sub_total);
-            cout<<"***************"<<endl;
+            //cout<<"***************"<<endl;
             v_bf.push_back(bf1);
              
-            total_niveles = vf.size();            
+            //total_niveles = vf.size();
+            last_level_f_value++;
+            vf.push_back(last_level_f_value);
+            /*
             cout<<"\tbranching factor."<<endl;
             for (int i = 0; i < v_bf.size(); i++) {
                 cout<<v_bf.at(i)<<"\t";
@@ -311,28 +372,23 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
             for (int i = 0; i < vn.size(); i++) {
                 cout<<vn.at(i)<<"\t";
             }
+            */
             count_zero++;
         }
-
-        /*if (count_zero == 0) {
-           vf.push_back(vf.size());
-           vn.insert(vn.begin() + vn.size(), 0);
-           vt.push_back(0);
-           vn2.push_back(vn2.at(vn2.size()-1));
-        }*/
-
+        
         cout<<"\n";
 
         outputFile2<<"max-f-value-A* "<<last_level<<"\n";
 	outputFile2<<"\tf\t\t#Nodes_by_level\t\tRuntime(s)\t\t#Nodes_to_the_level\n";
 
-
+       
         for (int i = 0; i < vn.size(); i++) {
             //cout<<vn.at(i)<<"\t";
             outputFile2<<"\t"<<vf.at(i)<<"\t\t"<<vn.at(i)<<"\n";
 
             //outputFile2<<"\t"<<vf.at(i)<<"\t\t"<<vn.at(i)<<"\t\t\t"<<vt.at(i)<<"\t\t"<<vn2.at(i)<<"\n";
         }
+         
         outputFile2.close();
         
 }
@@ -340,9 +396,11 @@ void create_report2(string dijkstraText, string fileName, string pasta, string h
 void create_report1(string heuristic, int countProblems, string aux_heuristic) {
 
 	int countRead = 0;
+        ifstream readFile("h/report/d/instance360.txt");
+
 	do {
 
-		ifstream readFile("h/report/d/instance360.txt");
+		
         	string pasta;
         	string domain;
 		std::vector<string> fileNames;
