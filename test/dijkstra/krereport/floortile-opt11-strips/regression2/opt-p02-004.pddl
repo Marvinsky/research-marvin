@@ -1,0 +1,30 @@
+	/home/levi/marvin/marvin/test/dijkstra/problemas/floortile-opt11-strips/resultado/opt-p02-004.pddl
+max-f-value-A* -1
+	f		#Nodes_by_level		Runtime(s)		#Nodes_to_the_level
+	0		1
+	1		4
+	2		10
+	3		29
+	4		64
+	5		141
+	6		280
+	7		570
+	8		1022
+	9		1963
+	10		3313
+	11		6057
+	12		9680
+	13		17159
+	14		26148
+	15		44848
+	16		66514
+	17		109309
+	18		160518
+	19		251854
+	20		366089
+	21		550645
+	22		786552
+	23		1141562
+	24		1593256
+	25		2241461
+	26		3039995
