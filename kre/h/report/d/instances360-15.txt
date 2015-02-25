@@ -1,8 +1,8 @@
 blocks
 barman-opt11-strips
-elevetors-opt08-strips
-elevetors-opt11-strips
-floortitle-opt11-strips
+elevators-opt08-strips
+elevators-opt11-strips
+floortile-opt11-strips
 nomystery-opt11-strips
 openstacks-opt08-adl
 openstacks-opt08-strips
