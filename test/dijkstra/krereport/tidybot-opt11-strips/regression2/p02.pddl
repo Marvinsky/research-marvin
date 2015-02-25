@@ -1,0 +1,38 @@
+	/home/levi/marvin/marvin/test/dijkstra/problemas/tidybot-opt11-strips/resultado/p02.pddl
+max-f-value-A* 33
+	f		#Nodes_by_level		Runtime(s)		#Nodes_to_the_level
+	0		1
+	1		4
+	2		6
+	3		6
+	4		9
+	5		14
+	6		17
+	7		22
+	8		32
+	9		43
+	10		61
+	11		85
+	12		116
+	13		155
+	14		210
+	15		286
+	16		391
+	17		546
+	18		766
+	19		1102
+	20		1594
+	21		2364
+	22		3529
+	23		5295
+	24		7907
+	25		11897
+	26		18006
+	27		26814
+	28		39463
+	29		57669
+	30		84360
+	31		121534
+	32		173168
+	33		244210
+	34		1
