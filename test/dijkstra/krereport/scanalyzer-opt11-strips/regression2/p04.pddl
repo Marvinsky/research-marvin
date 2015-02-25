@@ -1,0 +1,29 @@
+	/home/levi/marvin/marvin/test/dijkstra/problemas/scanalyzer-opt11-strips/resultado/p04.pddl
+max-f-value-A* 24
+	f		#Nodes_by_level		Runtime(s)		#Nodes_to_the_level
+	0		1
+	1		16
+	2		168
+	3		1108
+	4		4740
+	5		13892
+	6		33654
+	7		75400
+	8		144889
+	9		246524
+	10		408880
+	11		575168
+	12		776436
+	13		992056
+	14		1061494
+	15		1214792
+	16		1122452
+	17		789708
+	18		381528
+	19		100226
+	20		4236
+	21		0
+	22		0
+	23		0
+	24		0
+	25		0
