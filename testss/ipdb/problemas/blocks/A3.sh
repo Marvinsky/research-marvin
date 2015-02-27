@@ -17,7 +17,7 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/marvin/marvin/testss/ipdb/problemas/blocks/resultado2
+RESULTS=/home/marvin/marvin/testss/ipdb/problemas/blocks/resultado_average
 
 cd /home/marvin/fd
 
@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < Astarblocks3.sas
 
-src/search/downward --global_probes 10000 --domain_name blocks --problem_name probBLOCKS-4-2.pddl --heuristic_name ipdb --search "ss2(ipdb(pdb_max_size=2000000, collection_max_size=20000000, num_samples=100, min_improvement=10, cost_type=NORMAL))" <  Astarblocks3 >> ${RESULTS}/probBLOCKS-4-2.pddl
+src/search/downward --global_probes 10000 --domain_name blocks --problem_name probBLOCKS-4-2.pddl --heuristic_name ipdb --search "ss(ipdb())" <  Astarblocks3 >> ${RESULTS}/probBLOCKS-4-2.pddl
 
 
 
