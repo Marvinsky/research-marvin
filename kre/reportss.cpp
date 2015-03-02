@@ -74,7 +74,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	}
 	for (int i = 0; i < totallevels; i++) {
 	    v_Ni.insert(v_Ni.begin() + i, levels[i][1]);
-            cout<<levels[i][1]<<endl;
+            cout<<v_Ni.at(i)<<endl;
 	}
 	
         fNi.close(); 
