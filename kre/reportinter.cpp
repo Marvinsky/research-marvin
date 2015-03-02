@@ -25,8 +25,8 @@ protected:
 };
 
 
-unsigned long long returnPred(vector<unsigned long long> v) {
-	unsigned long long sum = 0.0;
+double returnPred(vector<double> v) {
+	double sum = 0.0;
 	for (int i = 0; i < v.size(); i++) {
 	    sum = sum + v.at(i);
 	}
@@ -147,14 +147,14 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 	outputFile.open(output.c_str(), ios::out);
 
 	//We do know how to implement f-dist
-        vector<unsigned long long> vpred;
+        vector<double> vpred;
  
 	for (int i = 0; i < v_astar_f.size(); i++) {
             int threshold = v_astar_f.at(i);
             //cout<<"threshold = "<<threshold<<endl;
 	    //outputFile<<threshold<<"\n\n";
-            unsigned long long pred = 0.0;
-            vector<unsigned long long> v_pred;
+            double pred = 0.0;
+            vector<double> v_pred;
             for (int j = 0; j < v_Ni.size(); j++) {
                 int g = j;
                 unsigned long long ni = v_Ni.at(j);
@@ -210,7 +210,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
 				//outputFile<<"total nodes = "<<sumq<<"\n";
 				//outputFile<<"nodes with f less than or equal to"<<threshold<<" = "<<sumR<<"\n";
 
-                                long double percentage = 0;
+                                double percentage = 0;
                                 if (sumq > 0) {
                                    percentage =  (double)sumR/(double)sumq;
                                 } else {
@@ -219,7 +219,7 @@ void create_kre_report(string Ni, string bf, string fdist, string astar, string 
                                 cout<<"percentage = "<<percentage<<endl;       
 				//outputFile<<"percentage = "<<percentage<<"\n";
 				//cout<<"percentage = "<<percentage<<" ";
-			 	unsigned long long kre_i = ni*percentage;
+			 	double kre_i = ni*percentage;
                                 v_pred.push_back(kre_i);
                                 m.clear();
 			} //end if
