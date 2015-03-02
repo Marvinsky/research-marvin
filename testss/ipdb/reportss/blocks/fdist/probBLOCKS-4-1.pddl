@@ -11,7 +11,7 @@ size: 1
 
 g:2
 size: 1
-	f: 6	q: 1
+	f: 6	q: 2
 
 g:3
 size: 2
@@ -20,7 +20,7 @@ size: 2
 
 g:4
 size: 1
-	f: 8	q: 2
+	f: 8	q: 5
 
 g:5
 size: 0
