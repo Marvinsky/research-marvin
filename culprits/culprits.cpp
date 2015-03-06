@@ -43,21 +43,30 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	sas += pasta;
 	sas += Resultado.str();
 
-	outfile<<"#PBS -N speed_d"<<numDominio<<"_p"<<(num_problema+1)<<"\n\n#PBS -m b\n\n#PBS -M marvin.zarate@ufv.br\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
+	outfile<<"#PBS -N culprits_d"<<numDominio<<"_p"<<(num_problema+1)<<"\n\n#PBS -m b\n\n#PBS -M marvin.zarate@ufv.br\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
 	//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
         //PBS -l walltime=200
 
 	cout<<"pasta = "<<pasta.c_str()<<"\n\n";
-	outfile<<"RESULTS=/home/marvin/marvin/culprits/"<<heuristic<<"/problemas/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd\n\n";
-	outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<" "<<problema.c_str()<<"  "<<heuristic<<"\n\n";
+	outfile<<"RESULTS=/home/marvin/marvin/culprits/"<<heuristic<<"/problemas/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd-culprits\n\n";
+	
+        outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<"\n\n";
 
-	outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
+        //first version
+        //outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<" "<<problema.c_str()<<"  "<<heuristic<<"\n\n";
 
-	outfile<<"src/search/downward --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_culprits("<<heuristic<<"())\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	//outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
+
+	outfile<<"src/preprocess/preprocess < output.sas"<<"\n\n";	
 
 
-	outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
-	outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
+	//outfile<<"src/search/downward --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar("<<heuristic<<"())\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
+
+	outfile<<"src/search/downward-release --search \"astar("<<heuristic<<"())\" <  output >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
+
+
+	//outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
+	//outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
         //outfile<<"\n\nrm "<<"src/translate/arquivos/"<<problema.c_str()<<"\n\n";
 
 	outfile.close();
