@@ -19,5 +19,5 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < output.sas
 
-src/search/downward-release --search "astar(ipdb())" <  output >> ${RESULTS}/probBLOCKS-4-1.pddl
+src/search/downward-release --global_probes 10  --domain_name blocks --problem_name probBLOCKS-4-1.pddl --heuristic_name ipdb --search "astar(min([blind(), lmcut(), merge_and_shrink()]))" <  output >> ${RESULTS}/probBLOCKS-4-1.pddl
 
