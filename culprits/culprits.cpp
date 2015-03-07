@@ -59,10 +59,12 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 	outfile<<"src/preprocess/preprocess < output.sas"<<"\n\n";	
 
+	outfile<<"src/search/downward-release --global_probes 1  --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar("<<heuristic<<"())\" <  output >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
 
-	//outfile<<"src/search/downward --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar("<<heuristic<<"())\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
 
-	outfile<<"src/search/downward-release --search \"astar("<<heuristic<<"())\" <  output >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	//outfile<<"src/search/downward --global_probes 1  --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar("<<heuristic<<"())\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
+
+	//outfile<<"src/search/downward-release --search \"astar("<<heuristic<<"())\" <  output >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
 
 
 	//outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
