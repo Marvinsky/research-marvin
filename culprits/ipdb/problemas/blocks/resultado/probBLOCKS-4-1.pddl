@@ -26,45 +26,33 @@ iPDB: max_pdb_size = 10
 iPDB: hill climbing time: 0.00s
 Pattern generation (Haslum et al.) time: 0.00s
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
-f = 4 [1 evaluated, 0 expanded, t=0.00s, 2964 KB]
-Best heuristic value: 4 [g=0, 1 evaluated, 0 expanded, t=0.00s, 2964 KB]
-f = 5 [9 evaluated, 6 expanded, t=0.00s, 2964 KB]
-f = 6 [16 evaluated, 9 expanded, t=0.00s, 2964 KB]
-Best heuristic value: 3 [g=7, 20 evaluated, 12 expanded, t=0.00s, 2964 KB]
-f = 7 [27 evaluated, 16 expanded, t=0.00s, 2964 KB]
-Best heuristic value: 2 [g=8, 33 evaluated, 20 expanded, t=0.00s, 2964 KB]
-f = 8 [48 evaluated, 27 expanded, t=0.00s, 2964 KB]
-Best heuristic value: 1 [g=9, 55 evaluated, 33 expanded, t=0.00s, 2964 KB]
-f = 9 [69 evaluated, 48 expanded, t=0.00s, 2964 KB]
-Best heuristic value: 0 [g=10, 79 evaluated, 55 expanded, t=0.00s, 2964 KB]
-f = 10 [95 evaluated, 69 expanded, t=0.00s, 2964 KB]
-Solution found!
+77: heuristics.size() = 1
+0 = 4
+f = 4 [1 evaluated, 0 expanded, t=0.00s, 2968 KB]
+Best heuristic value: 4 [g=0, 1 evaluated, 0 expanded, t=0.00s, 2968 KB]
+probes = 100
+129:
+0 - 4
+
+141: 
+b_initial_v.size() = 1
+1	g = 0
+w = 1.00
+ss_probes = 100
 Actual search time: 0.00s [t=0.00s]
-unstack b c (1)
-put-down b (1)
-unstack c a (1)
-put-down c (1)
-unstack a d (1)
-stack a b (1)
-pick-up c (1)
-stack c a (1)
-pick-up d (1)
-stack d c (1)
-Plan length: 10 step(s).
-Plan cost: 10
 Initial state h value: 4.
-Expanded 79 state(s).
+Expanded 0 state(s).
 Reopened 0 state(s).
-Evaluated 100 state(s).
-Evaluations: 100
-Generated 198 state(s).
+Evaluated 1 state(s).
+Evaluations: 1
+Generated 0 state(s).
 Dead ends: 0 state(s).
-Expanded until last jump: 69 state(s).
+Expanded until last jump: 0 state(s).
 Reopened until last jump: 0 state(s).
-Evaluated until last jump: 95 state(s).
-Generated until last jump: 181 state(s).
-Number of registered states: 100
+Evaluated until last jump: 1 state(s).
+Generated until last jump: 0 state(s).
+Number of registered states: 1
 Search time: 0.00s
 Total time: 0.00s
-Solution found.
-Peak memory: 2964 KB
+Search stopped without finding a solution.
+Peak memory: 2968 KB
