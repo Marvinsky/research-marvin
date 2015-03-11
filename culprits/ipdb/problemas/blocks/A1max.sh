@@ -19,7 +19,7 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < Astarblocks1.sas
 
-src/search/downward-release --global_probes 100  --domain_name blocks --problem_name probBLOCKS-4-0.pddl --heuristic_name ipdb --search "astar(min([ipdb(), hmax(), merge_and_shrink()]))" <  Astarblocks1 >> ${RESULTS}/probBLOCKS-4-0-min.pddl
+src/search/downward-release --global_probes 100  --domain_name blocks --problem_name probBLOCKS-4-0.pddl --heuristic_name ipdb --search "astar_original(max([ipdb(), hmax(), merge_and_shrink()]))" <  Astarblocks1 >> ${RESULTS}/probBLOCKS-4-0-max.pddl
 
 
 
