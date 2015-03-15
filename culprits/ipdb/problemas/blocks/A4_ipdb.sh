@@ -1,4 +1,4 @@
-#PBS -N culprits_d1_p1
+#PBS -N culprits_d1_p4
 
 #PBS -m b
 
@@ -15,17 +15,17 @@ RESULTS=/home/marvin/marvin/culprits/ipdb/problemas/blocks/resultado
 
 cd /home/marvin/fd-culprits
 
-python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/blocks/probBLOCKS-5-0.pddl Astarblocks1  blocks probBLOCKS-5-0.pddl  ipdb
+python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/blocks/probBLOCKS-5-0.pddl Astarblocks4  blocks probBLOCKS-5-0.pddl  ipdb
 
-src/preprocess/preprocess < Astarblocks1.sas
+src/preprocess/preprocess < Astarblocks4.sas
 
-src/search/downward-release --global_probes 100  --domain_name blocks --problem_name probBLOCKS-5-0.pddl --heuristic_name ipdb --search "astar_original(ipdb())" <  Astarblocks1 >> ${RESULTS}/probBLOCKS-5-0-ipdb
-
-
-
-rm Astarblocks1
+src/search/downward-release --global_probes 1000  --domain_name blocks --problem_name probBLOCKS-5-0.pddl --heuristic_name ipdb --search "astar(ipdb())" <  Astarblocks4 >> ${RESULTS}/probBLOCKS-5-0.pddl_ipdb
 
 
 
-rm Astarblocks1.sas
+rm Astarblocks4
+
+
+
+rm Astarblocks4.sas
 

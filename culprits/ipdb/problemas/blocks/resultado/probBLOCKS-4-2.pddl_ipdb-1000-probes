@@ -1,0 +1,6054 @@
+reading input... [t=0.00s]
+Simplifying transitions... done!
+done reading input! [t=0.00s]
+building causal graph...done! [t=0.00s]
+packing state variables...done! [t=0.00s]
+Variables: 9
+Facts: 30
+Bytes per state: 4
+done initalizing global data [t=0.00s]
+Average operator cost: 1.00
+PDB collection construction time: 0.00s
+done calculating initial pattern collection and candidate patterns for the search
+current collection size is 15
+current initial h value: 6
+pattern: [2, 6] - improvement: 8
+pattern: [3, 7] - improvement: 5
+pattern: [4, 8] - improvement: 1
+Improvement below threshold. Stop hill climbing.
+Pruned 0 of 1 cliques
+Pruned 0 of 3 PDBs
+Dominance pruning took 0.00s
+iPDB: iterations = 1
+iPDB: num_patterns = 3
+iPDB: size = 15
+iPDB: generated = 15
+iPDB: rejected = 0
+iPDB: max_pdb_size = 10
+iPDB: hill climbing time: 0.01s
+Pattern generation (Haslum et al.) time: 0.01s
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+77: heuristics.size() = 1
+0 = 6
+f = 6 [1 evaluated, 0 expanded, t=0.01s, 3012 KB,generated_states:,0,dead_end_states:0,Dup States:-1,]
+Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0.01s, 3012 KB]
+	threshold: 6
+expansions = 10748.00
+*************
+p = 10748.00
+prePrediction_0 = 10748.00
+*************
+	threshold: 6
+expansions = 5070.00
+*************
+p = 5070.00
+prePrediction_1 = 7909.00
+*************
+	threshold: 6
+expansions = 4891.00
+*************
+p = 4891.00
+prePrediction_2 = 6903.00
+*************
+	threshold: 6
+expansions = 733.00
+*************
+p = 733.00
+prePrediction_3 = 5360.50
+*************
+	threshold: 6
+expansions = 3091.00
+*************
+p = 3091.00
+prePrediction_4 = 4906.60
+*************
+	threshold: 6
+expansions = 3091.00
+*************
+p = 3091.00
+prePrediction_5 = 4604.00
+*************
+	threshold: 6
+expansions = 15275.00
+*************
+p = 15275.00
+prePrediction_6 = 6128.43
+*************
+	threshold: 6
+expansions = 1093.00
+*************
+p = 1093.00
+prePrediction_7 = 5499.00
+*************
+	threshold: 6
+expansions = 7267.00
+*************
+p = 7267.00
+prePrediction_8 = 5695.44
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_9 = 5210.00
+*************
+	threshold: 6
+expansions = 11380.00
+*************
+p = 11380.00
+prePrediction_10 = 5770.91
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_11 = 5315.08
+*************
+	threshold: 6
+expansions = 5967.00
+*************
+p = 5967.00
+prePrediction_12 = 5365.23
+*************
+	threshold: 6
+expansions = 7375.00
+*************
+p = 7375.00
+prePrediction_13 = 5508.79
+*************
+	threshold: 6
+expansions = 21969.00
+*************
+p = 21969.00
+prePrediction_14 = 6606.13
+*************
+	threshold: 6
+expansions = 3742.00
+*************
+p = 3742.00
+prePrediction_15 = 6427.12
+*************
+	threshold: 6
+expansions = 22359.00
+*************
+p = 22359.00
+prePrediction_16 = 7364.29
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_17 = 6989.39
+*************
+	threshold: 6
+expansions = 18175.00
+*************
+p = 18175.00
+prePrediction_18 = 7578.11
+*************
+	threshold: 6
+expansions = 26961.00
+*************
+p = 26961.00
+prePrediction_19 = 8547.25
+*************
+	threshold: 6
+expansions = 13087.00
+*************
+p = 13087.00
+prePrediction_20 = 8763.43
+*************
+	threshold: 6
+expansions = 21719.00
+*************
+p = 21719.00
+prePrediction_21 = 9352.32
+*************
+	threshold: 6
+expansions = 19348.00
+*************
+p = 19348.00
+prePrediction_22 = 9786.91
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_23 = 9414.17
+*************
+	threshold: 6
+expansions = 4015.00
+*************
+p = 4015.00
+prePrediction_24 = 9198.20
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_25 = 8876.77
+*************
+	threshold: 6
+expansions = 3279.00
+*************
+p = 3279.00
+prePrediction_26 = 8669.44
+*************
+	threshold: 6
+expansions = 14907.00
+*************
+p = 14907.00
+prePrediction_27 = 8892.21
+*************
+	threshold: 6
+expansions = 8275.00
+*************
+p = 8275.00
+prePrediction_28 = 8870.93
+*************
+	threshold: 6
+expansions = 38397.00
+*************
+p = 38397.00
+prePrediction_29 = 9855.13
+*************
+	threshold: 6
+expansions = 13261.00
+*************
+p = 13261.00
+prePrediction_30 = 9965.00
+*************
+	threshold: 6
+expansions = 17829.00
+*************
+p = 17829.00
+prePrediction_31 = 10210.75
+*************
+	threshold: 6
+expansions = 17892.00
+*************
+p = 17892.00
+prePrediction_32 = 10443.52
+*************
+	threshold: 6
+expansions = 18484.00
+*************
+p = 18484.00
+prePrediction_33 = 10680.00
+*************
+	threshold: 6
+expansions = 23638.00
+*************
+p = 23638.00
+prePrediction_34 = 11050.23
+*************
+	threshold: 6
+expansions = 42258.00
+*************
+p = 42258.00
+prePrediction_35 = 11917.11
+*************
+	threshold: 6
+expansions = 24051.00
+*************
+p = 24051.00
+prePrediction_36 = 12245.05
+*************
+	threshold: 6
+expansions = 4463.00
+*************
+p = 4463.00
+prePrediction_37 = 12040.26
+*************
+	threshold: 6
+expansions = 16940.00
+*************
+p = 16940.00
+prePrediction_38 = 12165.90
+*************
+	threshold: 6
+expansions = 18371.00
+*************
+p = 18371.00
+prePrediction_39 = 12321.02
+*************
+	threshold: 6
+expansions = 21175.00
+*************
+p = 21175.00
+prePrediction_40 = 12536.98
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_41 = 12245.64
+*************
+	threshold: 6
+expansions = 4405.00
+*************
+p = 4405.00
+prePrediction_42 = 12063.30
+*************
+	threshold: 6
+expansions = 9759.00
+*************
+p = 9759.00
+prePrediction_43 = 12010.93
+*************
+	threshold: 6
+expansions = 9841.00
+*************
+p = 9841.00
+prePrediction_44 = 11962.71
+*************
+	threshold: 6
+expansions = 13128.00
+*************
+p = 13128.00
+prePrediction_45 = 11988.04
+*************
+	threshold: 6
+expansions = 7744.00
+*************
+p = 7744.00
+prePrediction_46 = 11897.74
+*************
+	threshold: 6
+expansions = 4137.00
+*************
+p = 4137.00
+prePrediction_47 = 11736.06
+*************
+	threshold: 6
+expansions = 24619.00
+*************
+p = 24619.00
+prePrediction_48 = 11998.98
+*************
+	threshold: 6
+expansions = 976.00
+*************
+p = 976.00
+prePrediction_49 = 11778.52
+*************
+	threshold: 6
+expansions = 7615.00
+*************
+p = 7615.00
+prePrediction_50 = 11696.88
+*************
+	threshold: 6
+expansions = 6977.00
+*************
+p = 6977.00
+prePrediction_51 = 11606.12
+*************
+	threshold: 6
+expansions = 9326.00
+*************
+p = 9326.00
+prePrediction_52 = 11563.09
+*************
+	threshold: 6
+expansions = 43876.00
+*************
+p = 43876.00
+prePrediction_53 = 12161.48
+*************
+	threshold: 6
+expansions = 1057.00
+*************
+p = 1057.00
+prePrediction_54 = 11959.58
+*************
+	threshold: 6
+expansions = 1426.00
+*************
+p = 1426.00
+prePrediction_55 = 11771.48
+*************
+	threshold: 6
+expansions = 1822.00
+*************
+p = 1822.00
+prePrediction_56 = 11596.93
+*************
+	threshold: 6
+expansions = 23902.00
+*************
+p = 23902.00
+prePrediction_57 = 11809.09
+*************
+	threshold: 6
+expansions = 13902.00
+*************
+p = 13902.00
+prePrediction_58 = 11844.56
+*************
+	threshold: 6
+expansions = 1291.00
+*************
+p = 1291.00
+prePrediction_59 = 11668.67
+*************
+	threshold: 6
+expansions = 9346.00
+*************
+p = 9346.00
+prePrediction_60 = 11630.59
+*************
+	threshold: 6
+expansions = 10408.00
+*************
+p = 10408.00
+prePrediction_61 = 11610.87
+*************
+	threshold: 6
+expansions = 1021.00
+*************
+p = 1021.00
+prePrediction_62 = 11442.78
+*************
+	threshold: 6
+expansions = 28793.00
+*************
+p = 28793.00
+prePrediction_63 = 11713.88
+*************
+	threshold: 6
+expansions = 5337.00
+*************
+p = 5337.00
+prePrediction_64 = 11615.77
+*************
+	threshold: 6
+expansions = 6264.00
+*************
+p = 6264.00
+prePrediction_65 = 11534.68
+*************
+	threshold: 6
+expansions = 3456.00
+*************
+p = 3456.00
+prePrediction_66 = 11414.10
+*************
+	threshold: 6
+expansions = 706.00
+*************
+p = 706.00
+prePrediction_67 = 11256.63
+*************
+	threshold: 6
+expansions = 34785.00
+*************
+p = 34785.00
+prePrediction_68 = 11597.62
+*************
+	threshold: 6
+expansions = 4874.00
+*************
+p = 4874.00
+prePrediction_69 = 11501.57
+*************
+	threshold: 6
+expansions = 15187.00
+*************
+p = 15187.00
+prePrediction_70 = 11553.48
+*************
+	threshold: 6
+expansions = 1093.00
+*************
+p = 1093.00
+prePrediction_71 = 11408.19
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_72 = 11267.88
+*************
+	threshold: 6
+expansions = 10150.00
+*************
+p = 10150.00
+prePrediction_73 = 11252.77
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_74 = 11118.27
+*************
+	threshold: 6
+expansions = 36240.00
+*************
+p = 36240.00
+prePrediction_75 = 11448.82
+*************
+	threshold: 6
+expansions = 1507.00
+*************
+p = 1507.00
+prePrediction_76 = 11319.70
+*************
+	threshold: 6
+expansions = 391.00
+*************
+p = 391.00
+prePrediction_77 = 11179.59
+*************
+	threshold: 6
+expansions = 23438.00
+*************
+p = 23438.00
+prePrediction_78 = 11334.76
+*************
+	threshold: 6
+expansions = 4621.00
+*************
+p = 4621.00
+prePrediction_79 = 11250.84
+*************
+	threshold: 6
+expansions = 5303.00
+*************
+p = 5303.00
+prePrediction_80 = 11177.41
+*************
+	threshold: 6
+expansions = 2352.00
+*************
+p = 2352.00
+prePrediction_81 = 11069.78
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_82 = 10943.83
+*************
+	threshold: 6
+expansions = 30865.00
+*************
+p = 30865.00
+prePrediction_83 = 11180.99
+*************
+	threshold: 6
+expansions = 2308.00
+*************
+p = 2308.00
+prePrediction_84 = 11076.60
+*************
+	threshold: 6
+expansions = 46021.00
+*************
+p = 46021.00
+prePrediction_85 = 11482.93
+*************
+	threshold: 6
+expansions = 15777.00
+*************
+p = 15777.00
+prePrediction_86 = 11532.29
+*************
+	threshold: 6
+expansions = 11779.00
+*************
+p = 11779.00
+prePrediction_87 = 11535.09
+*************
+	threshold: 6
+expansions = 1246.00
+*************
+p = 1246.00
+prePrediction_88 = 11419.48
+*************
+	threshold: 6
+expansions = 22369.00
+*************
+p = 22369.00
+prePrediction_89 = 11541.14
+*************
+	threshold: 6
+expansions = 8788.00
+*************
+p = 8788.00
+prePrediction_90 = 11510.89
+*************
+	threshold: 6
+expansions = 4900.00
+*************
+p = 4900.00
+prePrediction_91 = 11439.03
+*************
+	threshold: 6
+expansions = 976.00
+*************
+p = 976.00
+prePrediction_92 = 11326.53
+*************
+	threshold: 6
+expansions = 976.00
+*************
+p = 976.00
+prePrediction_93 = 11216.41
+*************
+	threshold: 6
+expansions = 4565.00
+*************
+p = 4565.00
+prePrediction_94 = 11146.40
+*************
+	threshold: 6
+expansions = 7231.00
+*************
+p = 7231.00
+prePrediction_95 = 11105.61
+*************
+	threshold: 6
+expansions = 14347.00
+*************
+p = 14347.00
+prePrediction_96 = 11139.03
+*************
+	threshold: 6
+expansions = 13432.00
+*************
+p = 13432.00
+prePrediction_97 = 11162.43
+*************
+	threshold: 6
+expansions = 1696.00
+*************
+p = 1696.00
+prePrediction_98 = 11066.81
+*************
+	threshold: 6
+expansions = 31639.00
+*************
+p = 31639.00
+prePrediction_99 = 11272.53
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_100 = 11167.02
+*************
+	threshold: 6
+expansions = 3303.00
+*************
+p = 3303.00
+prePrediction_101 = 11089.92
+*************
+	threshold: 6
+expansions = 45877.00
+*************
+p = 45877.00
+prePrediction_102 = 11427.66
+*************
+	threshold: 6
+expansions = 10939.00
+*************
+p = 10939.00
+prePrediction_103 = 11422.96
+*************
+	threshold: 6
+expansions = 1696.00
+*************
+p = 1696.00
+prePrediction_104 = 11330.32
+*************
+	threshold: 6
+expansions = 391.00
+*************
+p = 391.00
+prePrediction_105 = 11227.12
+*************
+	threshold: 6
+expansions = 15200.00
+*************
+p = 15200.00
+prePrediction_106 = 11264.25
+*************
+	threshold: 6
+expansions = 29515.00
+*************
+p = 29515.00
+prePrediction_107 = 11433.24
+*************
+	threshold: 6
+expansions = 18019.00
+*************
+p = 18019.00
+prePrediction_108 = 11493.66
+*************
+	threshold: 6
+expansions = 22315.00
+*************
+p = 22315.00
+prePrediction_109 = 11592.04
+*************
+	threshold: 6
+expansions = 20067.00
+*************
+p = 20067.00
+prePrediction_110 = 11668.39
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_111 = 11569.71
+*************
+	threshold: 6
+expansions = 4403.00
+*************
+p = 4403.00
+prePrediction_112 = 11506.28
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_113 = 11412.73
+*************
+	threshold: 6
+expansions = 1705.00
+*************
+p = 1705.00
+prePrediction_114 = 11328.31
+*************
+	threshold: 6
+expansions = 1822.00
+*************
+p = 1822.00
+prePrediction_115 = 11246.36
+*************
+	threshold: 6
+expansions = 24979.00
+*************
+p = 24979.00
+prePrediction_116 = 11363.74
+*************
+	threshold: 6
+expansions = 5501.00
+*************
+p = 5501.00
+prePrediction_117 = 11314.05
+*************
+	threshold: 6
+expansions = 1093.00
+*************
+p = 1093.00
+prePrediction_118 = 11228.16
+*************
+	threshold: 6
+expansions = 20911.00
+*************
+p = 20911.00
+prePrediction_119 = 11308.85
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_120 = 11220.48
+*************
+	threshold: 6
+expansions = 34510.00
+*************
+p = 34510.00
+prePrediction_121 = 11411.38
+*************
+	threshold: 6
+expansions = 4027.00
+*************
+p = 4027.00
+prePrediction_122 = 11351.34
+*************
+	threshold: 6
+expansions = 6601.00
+*************
+p = 6601.00
+prePrediction_123 = 11313.03
+*************
+	threshold: 6
+expansions = 6819.00
+*************
+p = 6819.00
+prePrediction_124 = 11277.08
+*************
+	threshold: 6
+expansions = 3676.00
+*************
+p = 3676.00
+prePrediction_125 = 11216.75
+*************
+	threshold: 6
+expansions = 8865.00
+*************
+p = 8865.00
+prePrediction_126 = 11198.24
+*************
+	threshold: 6
+expansions = 10996.00
+*************
+p = 10996.00
+prePrediction_127 = 11196.66
+*************
+	threshold: 6
+expansions = 11475.00
+*************
+p = 11475.00
+prePrediction_128 = 11198.81
+*************
+	threshold: 6
+expansions = 22292.00
+*************
+p = 22292.00
+prePrediction_129 = 11284.15
+*************
+	threshold: 6
+expansions = 11222.00
+*************
+p = 11222.00
+prePrediction_130 = 11283.67
+*************
+	threshold: 6
+expansions = 10615.00
+*************
+p = 10615.00
+prePrediction_131 = 11278.61
+*************
+	threshold: 6
+expansions = 32395.00
+*************
+p = 32395.00
+prePrediction_132 = 11437.38
+*************
+	threshold: 6
+expansions = 11962.00
+*************
+p = 11962.00
+prePrediction_133 = 11441.29
+*************
+	threshold: 6
+expansions = 1426.00
+*************
+p = 1426.00
+prePrediction_134 = 11367.10
+*************
+	threshold: 6
+expansions = 3592.00
+*************
+p = 3592.00
+prePrediction_135 = 11309.93
+*************
+	threshold: 6
+expansions = 21667.00
+*************
+p = 21667.00
+prePrediction_136 = 11385.53
+*************
+	threshold: 6
+expansions = 10462.00
+*************
+p = 10462.00
+prePrediction_137 = 11378.84
+*************
+	threshold: 6
+expansions = 5032.00
+*************
+p = 5032.00
+prePrediction_138 = 11333.18
+*************
+	threshold: 6
+expansions = 1093.00
+*************
+p = 1093.00
+prePrediction_139 = 11260.04
+*************
+	threshold: 6
+expansions = 13455.00
+*************
+p = 13455.00
+prePrediction_140 = 11275.60
+*************
+	threshold: 6
+expansions = 5311.00
+*************
+p = 5311.00
+prePrediction_141 = 11233.60
+*************
+	threshold: 6
+expansions = 14564.00
+*************
+p = 14564.00
+prePrediction_142 = 11256.89
+*************
+	threshold: 6
+expansions = 5184.00
+*************
+p = 5184.00
+prePrediction_143 = 11214.72
+*************
+	threshold: 6
+expansions = 10363.00
+*************
+p = 10363.00
+prePrediction_144 = 11208.84
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_145 = 11134.13
+*************
+	threshold: 6
+expansions = 4571.00
+*************
+p = 4571.00
+prePrediction_146 = 11089.48
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_147 = 11020.24
+*************
+	threshold: 6
+expansions = 3091.00
+*************
+p = 3091.00
+prePrediction_148 = 10967.02
+*************
+	threshold: 6
+expansions = 51331.00
+*************
+p = 51331.00
+prePrediction_149 = 11236.11
+*************
+	threshold: 6
+expansions = 7783.00
+*************
+p = 7783.00
+prePrediction_150 = 11213.25
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_151 = 11145.01
+*************
+	threshold: 6
+expansions = 1516.00
+*************
+p = 1516.00
+prePrediction_152 = 11082.07
+*************
+	threshold: 6
+expansions = 17905.00
+*************
+p = 17905.00
+prePrediction_153 = 11126.38
+*************
+	threshold: 6
+expansions = 463.00
+*************
+p = 463.00
+prePrediction_154 = 11057.58
+*************
+	threshold: 6
+expansions = 10788.00
+*************
+p = 10788.00
+prePrediction_155 = 11055.85
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_156 = 10987.35
+*************
+	threshold: 6
+expansions = 1219.00
+*************
+p = 1219.00
+prePrediction_157 = 10925.53
+*************
+	threshold: 6
+expansions = 19587.00
+*************
+p = 19587.00
+prePrediction_158 = 10980.00
+*************
+	threshold: 6
+expansions = 1093.00
+*************
+p = 1093.00
+prePrediction_159 = 10918.21
+*************
+	threshold: 6
+expansions = 4405.00
+*************
+p = 4405.00
+prePrediction_160 = 10877.75
+*************
+	threshold: 6
+expansions = 1705.00
+*************
+p = 1705.00
+prePrediction_161 = 10821.13
+*************
+	threshold: 6
+expansions = 27027.00
+*************
+p = 27027.00
+prePrediction_162 = 10920.55
+*************
+	threshold: 6
+expansions = 5476.00
+*************
+p = 5476.00
+prePrediction_163 = 10887.35
+*************
+	threshold: 6
+expansions = 9030.00
+*************
+p = 9030.00
+prePrediction_164 = 10876.10
+*************
+	threshold: 6
+expansions = 19745.00
+*************
+p = 19745.00
+prePrediction_165 = 10929.52
+*************
+	threshold: 6
+expansions = 7191.00
+*************
+p = 7191.00
+prePrediction_166 = 10907.14
+*************
+	threshold: 6
+expansions = 1255.00
+*************
+p = 1255.00
+prePrediction_167 = 10849.68
+*************
+	threshold: 6
+expansions = 72873.00
+*************
+p = 72873.00
+prePrediction_168 = 11216.69
+*************
+	threshold: 6
+expansions = 5476.00
+*************
+p = 5476.00
+prePrediction_169 = 11182.92
+*************
+	threshold: 6
+expansions = 4459.00
+*************
+p = 4459.00
+prePrediction_170 = 11143.60
+*************
+	threshold: 6
+expansions = 32789.00
+*************
+p = 32789.00
+prePrediction_171 = 11269.44
+*************
+	threshold: 6
+expansions = 6979.00
+*************
+p = 6979.00
+prePrediction_172 = 11244.64
+*************
+	threshold: 6
+expansions = 3046.00
+*************
+p = 3046.00
+prePrediction_173 = 11197.52
+*************
+	threshold: 6
+expansions = 24301.00
+*************
+p = 24301.00
+prePrediction_174 = 11272.40
+*************
+	threshold: 6
+expansions = 25664.00
+*************
+p = 25664.00
+prePrediction_175 = 11354.17
+*************
+	threshold: 6
+expansions = 21047.00
+*************
+p = 21047.00
+prePrediction_176 = 11408.93
+*************
+	threshold: 6
+expansions = 13552.00
+*************
+p = 13552.00
+prePrediction_177 = 11420.97
+*************
+	threshold: 6
+expansions = 11137.00
+*************
+p = 11137.00
+prePrediction_178 = 11419.39
+*************
+	threshold: 6
+expansions = 6924.00
+*************
+p = 6924.00
+prePrediction_179 = 11394.41
+*************
+	threshold: 6
+expansions = 3496.00
+*************
+p = 3496.00
+prePrediction_180 = 11350.77
+*************
+	threshold: 6
+expansions = 1255.00
+*************
+p = 1255.00
+prePrediction_181 = 11295.30
+*************
+	threshold: 6
+expansions = 13986.00
+*************
+p = 13986.00
+prePrediction_182 = 11310.01
+*************
+	threshold: 6
+expansions = 8716.00
+*************
+p = 8716.00
+prePrediction_183 = 11295.91
+*************
+	threshold: 6
+expansions = 1741.00
+*************
+p = 1741.00
+prePrediction_184 = 11244.26
+*************
+	threshold: 6
+expansions = 15848.00
+*************
+p = 15848.00
+prePrediction_185 = 11269.01
+*************
+	threshold: 6
+expansions = 7627.00
+*************
+p = 7627.00
+prePrediction_186 = 11249.53
+*************
+	threshold: 6
+expansions = 5783.00
+*************
+p = 5783.00
+prePrediction_187 = 11220.46
+*************
+	threshold: 6
+expansions = 20599.00
+*************
+p = 20599.00
+prePrediction_188 = 11270.08
+*************
+	threshold: 6
+expansions = 1489.00
+*************
+p = 1489.00
+prePrediction_189 = 11218.60
+*************
+	threshold: 6
+expansions = 1003.00
+*************
+p = 1003.00
+prePrediction_190 = 11165.12
+*************
+	threshold: 6
+expansions = 7195.00
+*************
+p = 7195.00
+prePrediction_191 = 11144.44
+*************
+	threshold: 6
+expansions = 10452.00
+*************
+p = 10452.00
+prePrediction_192 = 11140.85
+*************
+	threshold: 6
+expansions = 2236.00
+*************
+p = 2236.00
+prePrediction_193 = 11094.95
+*************
+	threshold: 6
+expansions = 733.00
+*************
+p = 733.00
+prePrediction_194 = 11041.81
+*************
+	threshold: 6
+expansions = 6277.00
+*************
+p = 6277.00
+prePrediction_195 = 11017.50
+*************
+	threshold: 6
+expansions = 15754.00
+*************
+p = 15754.00
+prePrediction_196 = 11041.54
+*************
+	threshold: 6
+expansions = 6881.00
+*************
+p = 6881.00
+prePrediction_197 = 11020.53
+*************
+	threshold: 6
+expansions = 14929.00
+*************
+p = 14929.00
+prePrediction_198 = 11040.17
+*************
+	threshold: 6
+expansions = 1822.00
+*************
+p = 1822.00
+prePrediction_199 = 10994.08
+*************
+	threshold: 6
+expansions = 19973.00
+*************
+p = 19973.00
+prePrediction_200 = 11038.75
+*************
+	threshold: 6
+expansions = 1021.00
+*************
+p = 1021.00
+prePrediction_201 = 10989.16
+*************
+	threshold: 6
+expansions = 5672.00
+*************
+p = 5672.00
+prePrediction_202 = 10962.97
+*************
+	threshold: 6
+expansions = 1489.00
+*************
+p = 1489.00
+prePrediction_203 = 10916.52
+*************
+	threshold: 6
+expansions = 7240.00
+*************
+p = 7240.00
+prePrediction_204 = 10898.59
+*************
+	threshold: 6
+expansions = 24094.00
+*************
+p = 24094.00
+prePrediction_205 = 10962.65
+*************
+	threshold: 6
+expansions = 5917.00
+*************
+p = 5917.00
+prePrediction_206 = 10938.27
+*************
+	threshold: 6
+expansions = 10118.00
+*************
+p = 10118.00
+prePrediction_207 = 10934.33
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_208 = 10887.58
+*************
+	threshold: 6
+expansions = 42313.00
+*************
+p = 42313.00
+prePrediction_209 = 11037.23
+*************
+	threshold: 6
+expansions = 11623.00
+*************
+p = 11623.00
+prePrediction_210 = 11040.00
+*************
+	threshold: 6
+expansions = 1219.00
+*************
+p = 1219.00
+prePrediction_211 = 10993.68
+*************
+	threshold: 6
+expansions = 21662.00
+*************
+p = 21662.00
+prePrediction_212 = 11043.77
+*************
+	threshold: 6
+expansions = 26798.00
+*************
+p = 26798.00
+prePrediction_213 = 11117.38
+*************
+	threshold: 6
+expansions = 11056.00
+*************
+p = 11056.00
+prePrediction_214 = 11117.10
+*************
+	threshold: 6
+expansions = 32022.00
+*************
+p = 32022.00
+prePrediction_215 = 11213.88
+*************
+	threshold: 6
+expansions = 20134.00
+*************
+p = 20134.00
+prePrediction_216 = 11254.99
+*************
+	threshold: 6
+expansions = 15859.00
+*************
+p = 15859.00
+prePrediction_217 = 11276.11
+*************
+	threshold: 6
+expansions = 21959.00
+*************
+p = 21959.00
+prePrediction_218 = 11324.89
+*************
+	threshold: 6
+expansions = 24118.00
+*************
+p = 24118.00
+prePrediction_219 = 11383.04
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_220 = 11336.80
+*************
+	threshold: 6
+expansions = 25915.00
+*************
+p = 25915.00
+prePrediction_221 = 11402.47
+*************
+	threshold: 6
+expansions = 14735.00
+*************
+p = 14735.00
+prePrediction_222 = 11417.41
+*************
+	threshold: 6
+expansions = 8680.00
+*************
+p = 8680.00
+prePrediction_223 = 11405.19
+*************
+	threshold: 6
+expansions = 1822.00
+*************
+p = 1822.00
+prePrediction_224 = 11362.60
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_225 = 11317.48
+*************
+	threshold: 6
+expansions = 1021.00
+*************
+p = 1021.00
+prePrediction_226 = 11272.12
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_227 = 11225.38
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_228 = 11180.03
+*************
+	threshold: 6
+expansions = 11200.00
+*************
+p = 11200.00
+prePrediction_229 = 11180.12
+*************
+	threshold: 6
+expansions = 13468.00
+*************
+p = 13468.00
+prePrediction_230 = 11190.03
+*************
+	threshold: 6
+expansions = 24907.00
+*************
+p = 24907.00
+prePrediction_231 = 11249.15
+*************
+	threshold: 6
+expansions = 18199.00
+*************
+p = 18199.00
+prePrediction_232 = 11278.98
+*************
+	threshold: 6
+expansions = 6369.00
+*************
+p = 6369.00
+prePrediction_233 = 11258.00
+*************
+	threshold: 6
+expansions = 391.00
+*************
+p = 391.00
+prePrediction_234 = 11211.75
+*************
+	threshold: 6
+expansions = 11881.00
+*************
+p = 11881.00
+prePrediction_235 = 11214.59
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_236 = 11170.82
+*************
+	threshold: 6
+expansions = 5548.00
+*************
+p = 5548.00
+prePrediction_237 = 11147.19
+*************
+	threshold: 6
+expansions = 53308.00
+*************
+p = 53308.00
+prePrediction_238 = 11323.60
+*************
+	threshold: 6
+expansions = 10003.00
+*************
+p = 10003.00
+prePrediction_239 = 11318.10
+*************
+	threshold: 6
+expansions = 15835.00
+*************
+p = 15835.00
+prePrediction_240 = 11336.84
+*************
+	threshold: 6
+expansions = 14278.00
+*************
+p = 14278.00
+prePrediction_241 = 11348.99
+*************
+	threshold: 6
+expansions = 22459.00
+*************
+p = 22459.00
+prePrediction_242 = 11394.71
+*************
+	threshold: 6
+expansions = 22437.00
+*************
+p = 22437.00
+prePrediction_243 = 11439.97
+*************
+	threshold: 6
+expansions = 19699.00
+*************
+p = 19699.00
+prePrediction_244 = 11473.68
+*************
+	threshold: 6
+expansions = 1831.00
+*************
+p = 1831.00
+prePrediction_245 = 11434.48
+*************
+	threshold: 6
+expansions = 8788.00
+*************
+p = 8788.00
+prePrediction_246 = 11423.77
+*************
+	threshold: 6
+expansions = 4672.00
+*************
+p = 4672.00
+prePrediction_247 = 11396.54
+*************
+	threshold: 6
+expansions = 9392.00
+*************
+p = 9392.00
+prePrediction_248 = 11388.49
+*************
+	threshold: 6
+expansions = 35474.00
+*************
+p = 35474.00
+prePrediction_249 = 11484.83
+*************
+	threshold: 6
+expansions = 6772.00
+*************
+p = 6772.00
+prePrediction_250 = 11466.06
+*************
+	threshold: 6
+expansions = 15403.00
+*************
+p = 15403.00
+prePrediction_251 = 11481.68
+*************
+	threshold: 6
+expansions = 1741.00
+*************
+p = 1741.00
+prePrediction_252 = 11443.18
+*************
+	threshold: 6
+expansions = 688.00
+*************
+p = 688.00
+prePrediction_253 = 11400.83
+*************
+	threshold: 6
+expansions = 4772.00
+*************
+p = 4772.00
+prePrediction_254 = 11374.84
+*************
+	threshold: 6
+expansions = 8986.00
+*************
+p = 8986.00
+prePrediction_255 = 11365.51
+*************
+	threshold: 6
+expansions = 7100.00
+*************
+p = 7100.00
+prePrediction_256 = 11348.91
+*************
+	threshold: 6
+expansions = 4891.00
+*************
+p = 4891.00
+prePrediction_257 = 11323.88
+*************
+	threshold: 6
+expansions = 23591.00
+*************
+p = 23591.00
+prePrediction_258 = 11371.24
+*************
+	threshold: 6
+expansions = 7919.00
+*************
+p = 7919.00
+prePrediction_259 = 11357.97
+*************
+	threshold: 6
+expansions = 2236.00
+*************
+p = 2236.00
+prePrediction_260 = 11323.02
+*************
+	threshold: 6
+expansions = 27530.00
+*************
+p = 27530.00
+prePrediction_261 = 11384.87
+*************
+	threshold: 6
+expansions = 7653.00
+*************
+p = 7653.00
+prePrediction_262 = 11370.68
+*************
+	threshold: 6
+expansions = 44419.00
+*************
+p = 44419.00
+prePrediction_263 = 11495.87
+*************
+	threshold: 6
+expansions = 31983.00
+*************
+p = 31983.00
+prePrediction_264 = 11573.18
+*************
+	threshold: 6
+expansions = 1093.00
+*************
+p = 1093.00
+prePrediction_265 = 11533.78
+*************
+	threshold: 6
+expansions = 4362.00
+*************
+p = 4362.00
+prePrediction_266 = 11506.92
+*************
+	threshold: 6
+expansions = 10777.00
+*************
+p = 10777.00
+prePrediction_267 = 11504.19
+*************
+	threshold: 6
+expansions = 17165.00
+*************
+p = 17165.00
+prePrediction_268 = 11525.24
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_269 = 11484.83
+*************
+	threshold: 6
+expansions = 30853.00
+*************
+p = 30853.00
+prePrediction_270 = 11556.30
+*************
+	threshold: 6
+expansions = 1813.00
+*************
+p = 1813.00
+prePrediction_271 = 11520.48
+*************
+	threshold: 6
+expansions = 3739.00
+*************
+p = 3739.00
+prePrediction_272 = 11491.98
+*************
+	threshold: 6
+expansions = 54283.00
+*************
+p = 54283.00
+prePrediction_273 = 11648.15
+*************
+	threshold: 6
+expansions = 21423.00
+*************
+p = 21423.00
+prePrediction_274 = 11683.69
+*************
+	threshold: 6
+expansions = 14148.00
+*************
+p = 14148.00
+prePrediction_275 = 11692.62
+*************
+	threshold: 6
+expansions = 1705.00
+*************
+p = 1705.00
+prePrediction_276 = 11656.57
+*************
+	threshold: 6
+expansions = 10308.00
+*************
+p = 10308.00
+prePrediction_277 = 11651.72
+*************
+	threshold: 6
+expansions = 4481.00
+*************
+p = 4481.00
+prePrediction_278 = 11626.01
+*************
+	threshold: 6
+expansions = 5123.00
+*************
+p = 5123.00
+prePrediction_279 = 11602.79
+*************
+	threshold: 6
+expansions = 17333.00
+*************
+p = 17333.00
+prePrediction_280 = 11623.18
+*************
+	threshold: 6
+expansions = 32465.00
+*************
+p = 32465.00
+prePrediction_281 = 11697.09
+*************
+	threshold: 6
+expansions = 29131.00
+*************
+p = 29131.00
+prePrediction_282 = 11758.69
+*************
+	threshold: 6
+expansions = 3435.00
+*************
+p = 3435.00
+prePrediction_283 = 11729.38
+*************
+	threshold: 6
+expansions = 46501.00
+*************
+p = 46501.00
+prePrediction_284 = 11851.39
+*************
+	threshold: 6
+expansions = 12393.00
+*************
+p = 12393.00
+prePrediction_285 = 11853.28
+*************
+	threshold: 6
+expansions = 1822.00
+*************
+p = 1822.00
+prePrediction_286 = 11818.33
+*************
+	threshold: 6
+expansions = 11848.00
+*************
+p = 11848.00
+prePrediction_287 = 11818.43
+*************
+	threshold: 6
+expansions = 5219.00
+*************
+p = 5219.00
+prePrediction_288 = 11795.60
+*************
+	threshold: 6
+expansions = 33197.00
+*************
+p = 33197.00
+prePrediction_289 = 11869.40
+*************
+	threshold: 6
+expansions = 21466.00
+*************
+p = 21466.00
+prePrediction_290 = 11902.37
+*************
+	threshold: 6
+expansions = 11485.00
+*************
+p = 11485.00
+prePrediction_291 = 11900.95
+*************
+	threshold: 6
+expansions = 4041.00
+*************
+p = 4041.00
+prePrediction_292 = 11874.12
+*************
+	threshold: 6
+expansions = 70713.00
+*************
+p = 70713.00
+prePrediction_293 = 12074.25
+*************
+	threshold: 6
+expansions = 2551.00
+*************
+p = 2551.00
+prePrediction_294 = 12041.97
+*************
+	threshold: 6
+expansions = 21735.00
+*************
+p = 21735.00
+prePrediction_295 = 12074.72
+*************
+	threshold: 6
+expansions = 28045.00
+*************
+p = 28045.00
+prePrediction_296 = 12128.49
+*************
+	threshold: 6
+expansions = 6280.00
+*************
+p = 6280.00
+prePrediction_297 = 12108.86
+*************
+	threshold: 6
+expansions = 30806.00
+*************
+p = 30806.00
+prePrediction_298 = 12171.39
+*************
+	threshold: 6
+expansions = 5346.00
+*************
+p = 5346.00
+prePrediction_299 = 12148.64
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_300 = 12111.08
+*************
+	threshold: 6
+expansions = 26130.00
+*************
+p = 26130.00
+prePrediction_301 = 12157.50
+*************
+	threshold: 6
+expansions = 14503.00
+*************
+p = 14503.00
+prePrediction_302 = 12165.24
+*************
+	threshold: 6
+expansions = 3526.00
+*************
+p = 3526.00
+prePrediction_303 = 12136.82
+*************
+	threshold: 6
+expansions = 20491.00
+*************
+p = 20491.00
+prePrediction_304 = 12164.21
+*************
+	threshold: 6
+expansions = 22531.00
+*************
+p = 22531.00
+prePrediction_305 = 12198.09
+*************
+	threshold: 6
+expansions = 15097.00
+*************
+p = 15097.00
+prePrediction_306 = 12207.53
+*************
+	threshold: 6
+expansions = 1741.00
+*************
+p = 1741.00
+prePrediction_307 = 12173.55
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_308 = 12137.92
+*************
+	threshold: 6
+expansions = 6224.00
+*************
+p = 6224.00
+prePrediction_309 = 12118.85
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_310 = 12080.85
+*************
+	threshold: 6
+expansions = 5570.00
+*************
+p = 5570.00
+prePrediction_311 = 12059.98
+*************
+	threshold: 6
+expansions = 5041.00
+*************
+p = 5041.00
+prePrediction_312 = 12037.55
+*************
+	threshold: 6
+expansions = 3354.00
+*************
+p = 3354.00
+prePrediction_313 = 12009.90
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_314 = 11975.47
+*************
+	threshold: 6
+expansions = 14557.00
+*************
+p = 14557.00
+prePrediction_315 = 11983.64
+*************
+	threshold: 6
+expansions = 23349.00
+*************
+p = 23349.00
+prePrediction_316 = 12019.49
+*************
+	threshold: 6
+expansions = 976.00
+*************
+p = 976.00
+prePrediction_317 = 11984.76
+*************
+	threshold: 6
+expansions = 15898.00
+*************
+p = 15898.00
+prePrediction_318 = 11997.03
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_319 = 11961.47
+*************
+	threshold: 6
+expansions = 12961.00
+*************
+p = 12961.00
+prePrediction_320 = 11964.58
+*************
+	threshold: 6
+expansions = 17680.00
+*************
+p = 17680.00
+prePrediction_321 = 11982.33
+*************
+	threshold: 6
+expansions = 12837.00
+*************
+p = 12837.00
+prePrediction_322 = 11984.98
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_323 = 11948.91
+*************
+	threshold: 6
+expansions = 11557.00
+*************
+p = 11557.00
+prePrediction_324 = 11947.71
+*************
+	threshold: 6
+expansions = 8131.00
+*************
+p = 8131.00
+prePrediction_325 = 11936.00
+*************
+	threshold: 6
+expansions = 1831.00
+*************
+p = 1831.00
+prePrediction_326 = 11905.10
+*************
+	threshold: 6
+expansions = 1426.00
+*************
+p = 1426.00
+prePrediction_327 = 11873.15
+*************
+	threshold: 6
+expansions = 18937.00
+*************
+p = 18937.00
+prePrediction_328 = 11894.62
+*************
+	threshold: 6
+expansions = 28975.00
+*************
+p = 28975.00
+prePrediction_329 = 11946.38
+*************
+	threshold: 6
+expansions = 1741.00
+*************
+p = 1741.00
+prePrediction_330 = 11915.55
+*************
+	threshold: 6
+expansions = 12793.00
+*************
+p = 12793.00
+prePrediction_331 = 11918.19
+*************
+	threshold: 6
+expansions = 5296.00
+*************
+p = 5296.00
+prePrediction_332 = 11898.30
+*************
+	threshold: 6
+expansions = 5206.00
+*************
+p = 5206.00
+prePrediction_333 = 11878.27
+*************
+	threshold: 6
+expansions = 37235.00
+*************
+p = 37235.00
+prePrediction_334 = 11953.96
+*************
+	threshold: 6
+expansions = 18704.00
+*************
+p = 18704.00
+prePrediction_335 = 11974.05
+*************
+	threshold: 6
+expansions = 23563.00
+*************
+p = 23563.00
+prePrediction_336 = 12008.44
+*************
+	threshold: 6
+expansions = 16807.00
+*************
+p = 16807.00
+prePrediction_337 = 12022.63
+*************
+	threshold: 6
+expansions = 23457.00
+*************
+p = 23457.00
+prePrediction_338 = 12056.36
+*************
+	threshold: 6
+expansions = 1741.00
+*************
+p = 1741.00
+prePrediction_339 = 12026.02
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_340 = 11994.17
+*************
+	threshold: 6
+expansions = 4862.00
+*************
+p = 4862.00
+prePrediction_341 = 11973.32
+*************
+	threshold: 6
+expansions = 733.00
+*************
+p = 733.00
+prePrediction_342 = 11940.55
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_343 = 11907.63
+*************
+	threshold: 6
+expansions = 4266.00
+*************
+p = 4266.00
+prePrediction_344 = 11885.48
+*************
+	threshold: 6
+expansions = 4379.00
+*************
+p = 4379.00
+prePrediction_345 = 11863.78
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_346 = 11830.46
+*************
+	threshold: 6
+expansions = 3351.00
+*************
+p = 3351.00
+prePrediction_347 = 11806.09
+*************
+	threshold: 6
+expansions = 733.00
+*************
+p = 733.00
+prePrediction_348 = 11774.37
+*************
+	threshold: 6
+expansions = 1750.00
+*************
+p = 1750.00
+prePrediction_349 = 11745.73
+*************
+	threshold: 6
+expansions = 2551.00
+*************
+p = 2551.00
+prePrediction_350 = 11719.53
+*************
+	threshold: 6
+expansions = 211.00
+*************
+p = 211.00
+prePrediction_351 = 11686.84
+*************
+	threshold: 6
+expansions = 23827.00
+*************
+p = 23827.00
+prePrediction_352 = 11721.23
+*************
+	threshold: 6
+expansions = 6029.00
+*************
+p = 6029.00
+prePrediction_353 = 11705.15
+*************
+	threshold: 6
+expansions = 17422.00
+*************
+p = 17422.00
+prePrediction_354 = 11721.25
+*************
+	threshold: 6
+expansions = 12937.00
+*************
+p = 12937.00
+prePrediction_355 = 11724.67
+*************
+	threshold: 6
+expansions = 2551.00
+*************
+p = 2551.00
+prePrediction_356 = 11698.97
+*************
+	threshold: 6
+expansions = 4368.00
+*************
+p = 4368.00
+prePrediction_357 = 11678.49
+*************
+	threshold: 6
+expansions = 7321.00
+*************
+p = 7321.00
+prePrediction_358 = 11666.35
+*************
+	threshold: 6
+expansions = 1705.00
+*************
+p = 1705.00
+prePrediction_359 = 11638.68
+*************
+	threshold: 6
+expansions = 7636.00
+*************
+p = 7636.00
+prePrediction_360 = 11627.60
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_361 = 11597.18
+*************
+	threshold: 6
+expansions = 13881.00
+*************
+p = 13881.00
+prePrediction_362 = 11603.47
+*************
+	threshold: 6
+expansions = 9319.00
+*************
+p = 9319.00
+prePrediction_363 = 11597.19
+*************
+	threshold: 6
+expansions = 9841.00
+*************
+p = 9841.00
+prePrediction_364 = 11592.38
+*************
+	threshold: 6
+expansions = 2969.00
+*************
+p = 2969.00
+prePrediction_365 = 11568.82
+*************
+	threshold: 6
+expansions = 733.00
+*************
+p = 733.00
+prePrediction_366 = 11539.29
+*************
+	threshold: 6
+expansions = 4777.00
+*************
+p = 4777.00
+prePrediction_367 = 11520.92
+*************
+	threshold: 6
+expansions = 4011.00
+*************
+p = 4011.00
+prePrediction_368 = 11500.57
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_369 = 11472.63
+*************
+	threshold: 6
+expansions = 28207.00
+*************
+p = 28207.00
+prePrediction_370 = 11517.74
+*************
+	threshold: 6
+expansions = 13117.00
+*************
+p = 13117.00
+prePrediction_371 = 11522.04
+*************
+	threshold: 6
+expansions = 1093.00
+*************
+p = 1093.00
+prePrediction_372 = 11494.08
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_373 = 11465.59
+*************
+	threshold: 6
+expansions = 4405.00
+*************
+p = 4405.00
+prePrediction_374 = 11446.77
+*************
+	threshold: 6
+expansions = 20787.00
+*************
+p = 20787.00
+prePrediction_375 = 11471.61
+*************
+	threshold: 6
+expansions = 3621.00
+*************
+p = 3621.00
+prePrediction_376 = 11450.78
+*************
+	threshold: 6
+expansions = 11704.00
+*************
+p = 11704.00
+prePrediction_377 = 11451.45
+*************
+	threshold: 6
+expansions = 22215.00
+*************
+p = 22215.00
+prePrediction_378 = 11479.85
+*************
+	threshold: 6
+expansions = 2065.00
+*************
+p = 2065.00
+prePrediction_379 = 11455.08
+*************
+	threshold: 6
+expansions = 27517.00
+*************
+p = 27517.00
+prePrediction_380 = 11497.23
+*************
+	threshold: 6
+expansions = 7091.00
+*************
+p = 7091.00
+prePrediction_381 = 11485.70
+*************
+	threshold: 6
+expansions = 6008.00
+*************
+p = 6008.00
+prePrediction_382 = 11471.40
+*************
+	threshold: 6
+expansions = 17846.00
+*************
+p = 17846.00
+prePrediction_383 = 11488.00
+*************
+	threshold: 6
+expansions = 26725.00
+*************
+p = 26725.00
+prePrediction_384 = 11527.57
+*************
+	threshold: 6
+expansions = 5599.00
+*************
+p = 5599.00
+prePrediction_385 = 11512.22
+*************
+	threshold: 6
+expansions = 34155.00
+*************
+p = 34155.00
+prePrediction_386 = 11570.72
+*************
+	threshold: 6
+expansions = 4405.00
+*************
+p = 4405.00
+prePrediction_387 = 11552.26
+*************
+	threshold: 6
+expansions = 51619.00
+*************
+p = 51619.00
+prePrediction_388 = 11655.25
+*************
+	threshold: 6
+expansions = 9092.00
+*************
+p = 9092.00
+prePrediction_389 = 11648.68
+*************
+	threshold: 6
+expansions = 16739.00
+*************
+p = 16739.00
+prePrediction_390 = 11661.70
+*************
+	threshold: 6
+expansions = 11686.00
+*************
+p = 11686.00
+prePrediction_391 = 11661.76
+*************
+	threshold: 6
+expansions = 4272.00
+*************
+p = 4272.00
+prePrediction_392 = 11642.96
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_393 = 11616.37
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_394 = 11589.91
+*************
+	threshold: 6
+expansions = 20089.00
+*************
+p = 20089.00
+prePrediction_395 = 11611.37
+*************
+	threshold: 6
+expansions = 35941.00
+*************
+p = 35941.00
+prePrediction_396 = 11672.65
+*************
+	threshold: 6
+expansions = 16920.00
+*************
+p = 16920.00
+prePrediction_397 = 11685.84
+*************
+	threshold: 6
+expansions = 38787.00
+*************
+p = 38787.00
+prePrediction_398 = 11753.76
+*************
+	threshold: 6
+expansions = 3372.00
+*************
+p = 3372.00
+prePrediction_399 = 11732.81
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_400 = 11706.45
+*************
+	threshold: 6
+expansions = 4908.00
+*************
+p = 4908.00
+prePrediction_401 = 11689.54
+*************
+	threshold: 6
+expansions = 21811.00
+*************
+p = 21811.00
+prePrediction_402 = 11714.66
+*************
+	threshold: 6
+expansions = 4870.00
+*************
+p = 4870.00
+prePrediction_403 = 11697.71
+*************
+	threshold: 6
+expansions = 1741.00
+*************
+p = 1741.00
+prePrediction_404 = 11673.13
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_405 = 11645.89
+*************
+	threshold: 6
+expansions = 1831.00
+*************
+p = 1831.00
+prePrediction_406 = 11621.78
+*************
+	threshold: 6
+expansions = 15604.00
+*************
+p = 15604.00
+prePrediction_407 = 11631.54
+*************
+	threshold: 6
+expansions = 2713.00
+*************
+p = 2713.00
+prePrediction_408 = 11609.73
+*************
+	threshold: 6
+expansions = 1021.00
+*************
+p = 1021.00
+prePrediction_409 = 11583.91
+*************
+	threshold: 6
+expansions = 4635.00
+*************
+p = 4635.00
+prePrediction_410 = 11567.00
+*************
+	threshold: 6
+expansions = 39739.00
+*************
+p = 39739.00
+prePrediction_411 = 11635.38
+*************
+	threshold: 6
+expansions = 24677.00
+*************
+p = 24677.00
+prePrediction_412 = 11666.96
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_413 = 11639.50
+*************
+	threshold: 6
+expansions = 967.00
+*************
+p = 967.00
+prePrediction_414 = 11613.79
+*************
+	threshold: 6
+expansions = 28475.00
+*************
+p = 28475.00
+prePrediction_415 = 11654.32
+*************
+	threshold: 6
+expansions = 1003.00
+*************
+p = 1003.00
+prePrediction_416 = 11628.77
+*************
+	threshold: 6
+expansions = 13194.00
+*************
+p = 13194.00
+prePrediction_417 = 11632.52
+*************
+	threshold: 6
+expansions = 12037.00
+*************
+p = 12037.00
+prePrediction_418 = 11633.48
+*************
+	threshold: 6
+expansions = 4576.00
+*************
+p = 4576.00
+prePrediction_419 = 11616.68
+*************
+	threshold: 6
+expansions = 3703.00
+*************
+p = 3703.00
+prePrediction_420 = 11597.88
+*************
+	threshold: 6
+expansions = 1426.00
+*************
+p = 1426.00
+prePrediction_421 = 11573.78
+*************
+	threshold: 6
+expansions = 48904.00
+*************
+p = 48904.00
+prePrediction_422 = 11662.03
+*************
+	threshold: 6
+expansions = 7474.00
+*************
+p = 7474.00
+prePrediction_423 = 11652.15
+*************
+	threshold: 6
+expansions = 211.00
+*************
+p = 211.00
+prePrediction_424 = 11625.23
+*************
+	threshold: 6
+expansions = 4891.00
+*************
+p = 4891.00
+prePrediction_425 = 11609.42
+*************
+	threshold: 6
+expansions = 8617.00
+*************
+p = 8617.00
+prePrediction_426 = 11602.42
+*************
+	threshold: 6
+expansions = 14409.00
+*************
+p = 14409.00
+prePrediction_427 = 11608.97
+*************
+	threshold: 6
+expansions = 19363.00
+*************
+p = 19363.00
+prePrediction_428 = 11627.05
+*************
+	threshold: 6
+expansions = 31169.00
+*************
+p = 31169.00
+prePrediction_429 = 11672.50
+*************
+	threshold: 6
+expansions = 20299.00
+*************
+p = 20299.00
+prePrediction_430 = 11692.51
+*************
+	threshold: 6
+expansions = 967.00
+*************
+p = 967.00
+prePrediction_431 = 11667.68
+*************
+	threshold: 6
+expansions = 15146.00
+*************
+p = 15146.00
+prePrediction_432 = 11675.72
+*************
+	threshold: 6
+expansions = 20004.00
+*************
+p = 20004.00
+prePrediction_433 = 11694.91
+*************
+	threshold: 6
+expansions = 15673.00
+*************
+p = 15673.00
+prePrediction_434 = 11704.05
+*************
+	threshold: 6
+expansions = 13208.00
+*************
+p = 13208.00
+prePrediction_435 = 11707.50
+*************
+	threshold: 6
+expansions = 10786.00
+*************
+p = 10786.00
+prePrediction_436 = 11705.39
+*************
+	threshold: 6
+expansions = 35239.00
+*************
+p = 35239.00
+prePrediction_437 = 11759.12
+*************
+	threshold: 6
+expansions = 4579.00
+*************
+p = 4579.00
+prePrediction_438 = 11742.77
+*************
+	threshold: 6
+expansions = 20647.00
+*************
+p = 20647.00
+prePrediction_439 = 11763.00
+*************
+	threshold: 6
+expansions = 5051.00
+*************
+p = 5051.00
+prePrediction_440 = 11747.78
+*************
+	threshold: 6
+expansions = 25951.00
+*************
+p = 25951.00
+prePrediction_441 = 11779.92
+*************
+	threshold: 6
+expansions = 391.00
+*************
+p = 391.00
+prePrediction_442 = 11754.21
+*************
+	threshold: 6
+expansions = 1741.00
+*************
+p = 1741.00
+prePrediction_443 = 11731.66
+*************
+	threshold: 6
+expansions = 4946.00
+*************
+p = 4946.00
+prePrediction_444 = 11716.41
+*************
+	threshold: 6
+expansions = 211.00
+*************
+p = 211.00
+prePrediction_445 = 11690.61
+*************
+	threshold: 6
+expansions = 9157.00
+*************
+p = 9157.00
+prePrediction_446 = 11684.94
+*************
+	threshold: 6
+expansions = 40245.00
+*************
+p = 40245.00
+prePrediction_447 = 11748.69
+*************
+	threshold: 6
+expansions = 3857.00
+*************
+p = 3857.00
+prePrediction_448 = 11731.12
+*************
+	threshold: 6
+expansions = 11764.00
+*************
+p = 11764.00
+prePrediction_449 = 11731.19
+*************
+	threshold: 6
+expansions = 33934.00
+*************
+p = 33934.00
+prePrediction_450 = 11780.42
+*************
+	threshold: 6
+expansions = 4891.00
+*************
+p = 4891.00
+prePrediction_451 = 11765.18
+*************
+	threshold: 6
+expansions = 34639.00
+*************
+p = 34639.00
+prePrediction_452 = 11815.67
+*************
+	threshold: 6
+expansions = 2065.00
+*************
+p = 2065.00
+prePrediction_453 = 11794.19
+*************
+	threshold: 6
+expansions = 6979.00
+*************
+p = 6979.00
+prePrediction_454 = 11783.61
+*************
+	threshold: 6
+expansions = 21595.00
+*************
+p = 21595.00
+prePrediction_455 = 11805.13
+*************
+	threshold: 6
+expansions = 4135.00
+*************
+p = 4135.00
+prePrediction_456 = 11788.34
+*************
+	threshold: 6
+expansions = 24259.00
+*************
+p = 24259.00
+prePrediction_457 = 11815.57
+*************
+	threshold: 6
+expansions = 6040.00
+*************
+p = 6040.00
+prePrediction_458 = 11802.99
+*************
+	threshold: 6
+expansions = 7622.00
+*************
+p = 7622.00
+prePrediction_459 = 11793.90
+*************
+	threshold: 6
+expansions = 29277.00
+*************
+p = 29277.00
+prePrediction_460 = 11831.82
+*************
+	threshold: 6
+expansions = 3851.00
+*************
+p = 3851.00
+prePrediction_461 = 11814.55
+*************
+	threshold: 6
+expansions = 8389.00
+*************
+p = 8389.00
+prePrediction_462 = 11807.15
+*************
+	threshold: 6
+expansions = 1831.00
+*************
+p = 1831.00
+prePrediction_463 = 11785.65
+*************
+	threshold: 6
+expansions = 1219.00
+*************
+p = 1219.00
+prePrediction_464 = 11762.93
+*************
+	threshold: 6
+expansions = 2236.00
+*************
+p = 2236.00
+prePrediction_465 = 11742.48
+*************
+	threshold: 6
+expansions = 4077.00
+*************
+p = 4077.00
+prePrediction_466 = 11726.07
+*************
+	threshold: 6
+expansions = 10197.00
+*************
+p = 10197.00
+prePrediction_467 = 11722.80
+*************
+	threshold: 6
+expansions = 8353.00
+*************
+p = 8353.00
+prePrediction_468 = 11715.62
+*************
+	threshold: 6
+expansions = 29885.00
+*************
+p = 29885.00
+prePrediction_469 = 11754.27
+*************
+	threshold: 6
+expansions = 5008.00
+*************
+p = 5008.00
+prePrediction_470 = 11739.95
+*************
+	threshold: 6
+expansions = 976.00
+*************
+p = 976.00
+prePrediction_471 = 11717.15
+*************
+	threshold: 6
+expansions = 23754.00
+*************
+p = 23754.00
+prePrediction_472 = 11742.59
+*************
+	threshold: 6
+expansions = 10196.00
+*************
+p = 10196.00
+prePrediction_473 = 11739.33
+*************
+	threshold: 6
+expansions = 2236.00
+*************
+p = 2236.00
+prePrediction_474 = 11719.32
+*************
+	threshold: 6
+expansions = 1750.00
+*************
+p = 1750.00
+prePrediction_475 = 11698.38
+*************
+	threshold: 6
+expansions = 19732.00
+*************
+p = 19732.00
+prePrediction_476 = 11715.22
+*************
+	threshold: 6
+expansions = 22833.00
+*************
+p = 22833.00
+prePrediction_477 = 11738.48
+*************
+	threshold: 6
+expansions = 1210.00
+*************
+p = 1210.00
+prePrediction_478 = 11716.50
+*************
+	threshold: 6
+expansions = 25951.00
+*************
+p = 25951.00
+prePrediction_479 = 11746.16
+*************
+	threshold: 6
+expansions = 1498.00
+*************
+p = 1498.00
+prePrediction_480 = 11724.85
+*************
+	threshold: 6
+expansions = 22454.00
+*************
+p = 22454.00
+prePrediction_481 = 11747.11
+*************
+	threshold: 6
+expansions = 7331.00
+*************
+p = 7331.00
+prePrediction_482 = 11737.97
+*************
+	threshold: 6
+expansions = 40707.00
+*************
+p = 40707.00
+prePrediction_483 = 11797.82
+*************
+	threshold: 6
+expansions = 9283.00
+*************
+p = 9283.00
+prePrediction_484 = 11792.64
+*************
+	threshold: 6
+expansions = 7807.00
+*************
+p = 7807.00
+prePrediction_485 = 11784.43
+*************
+	threshold: 6
+expansions = 5999.00
+*************
+p = 5999.00
+prePrediction_486 = 11772.55
+*************
+	threshold: 6
+expansions = 17846.00
+*************
+p = 17846.00
+prePrediction_487 = 11785.00
+*************
+	threshold: 6
+expansions = 1696.00
+*************
+p = 1696.00
+prePrediction_488 = 11764.37
+*************
+	threshold: 6
+expansions = 4876.00
+*************
+p = 4876.00
+prePrediction_489 = 11750.31
+*************
+	threshold: 6
+expansions = 9517.00
+*************
+p = 9517.00
+prePrediction_490 = 11745.76
+*************
+	threshold: 6
+expansions = 10116.00
+*************
+p = 10116.00
+prePrediction_491 = 11742.45
+*************
+	threshold: 6
+expansions = 391.00
+*************
+p = 391.00
+prePrediction_492 = 11719.42
+*************
+	threshold: 6
+expansions = 30030.00
+*************
+p = 30030.00
+prePrediction_493 = 11756.49
+*************
+	threshold: 6
+expansions = 463.00
+*************
+p = 463.00
+prePrediction_494 = 11733.67
+*************
+	threshold: 6
+expansions = 5375.00
+*************
+p = 5375.00
+prePrediction_495 = 11720.85
+*************
+	threshold: 6
+expansions = 21455.00
+*************
+p = 21455.00
+prePrediction_496 = 11740.44
+*************
+	threshold: 6
+expansions = 7438.00
+*************
+p = 7438.00
+prePrediction_497 = 11731.80
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_498 = 11710.63
+*************
+	threshold: 6
+expansions = 391.00
+*************
+p = 391.00
+prePrediction_499 = 11687.99
+*************
+	threshold: 6
+expansions = 1831.00
+*************
+p = 1831.00
+prePrediction_500 = 11668.31
+*************
+	threshold: 6
+expansions = 1093.00
+*************
+p = 1093.00
+prePrediction_501 = 11647.25
+*************
+	threshold: 6
+expansions = 16721.00
+*************
+p = 16721.00
+prePrediction_502 = 11657.33
+*************
+	threshold: 6
+expansions = 733.00
+*************
+p = 733.00
+prePrediction_503 = 11635.66
+*************
+	threshold: 6
+expansions = 11484.00
+*************
+p = 11484.00
+prePrediction_504 = 11635.36
+*************
+	threshold: 6
+expansions = 2065.00
+*************
+p = 2065.00
+prePrediction_505 = 11616.44
+*************
+	threshold: 6
+expansions = 5777.00
+*************
+p = 5777.00
+prePrediction_506 = 11604.93
+*************
+	threshold: 6
+expansions = 28513.00
+*************
+p = 28513.00
+prePrediction_507 = 11638.21
+*************
+	threshold: 6
+expansions = 2551.00
+*************
+p = 2551.00
+prePrediction_508 = 11620.36
+*************
+	threshold: 6
+expansions = 976.00
+*************
+p = 976.00
+prePrediction_509 = 11599.48
+*************
+	threshold: 6
+expansions = 4772.00
+*************
+p = 4772.00
+prePrediction_510 = 11586.12
+*************
+	threshold: 6
+expansions = 8032.00
+*************
+p = 8032.00
+prePrediction_511 = 11579.18
+*************
+	threshold: 6
+expansions = 1795.00
+*************
+p = 1795.00
+prePrediction_512 = 11560.11
+*************
+	threshold: 6
+expansions = 1741.00
+*************
+p = 1741.00
+prePrediction_513 = 11541.01
+*************
+	threshold: 6
+expansions = 18411.00
+*************
+p = 18411.00
+prePrediction_514 = 11554.35
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_515 = 11533.15
+*************
+	threshold: 6
+expansions = 11458.00
+*************
+p = 11458.00
+prePrediction_516 = 11533.00
+*************
+	threshold: 6
+expansions = 17959.00
+*************
+p = 17959.00
+prePrediction_517 = 11545.41
+*************
+	threshold: 6
+expansions = 5407.00
+*************
+p = 5407.00
+prePrediction_518 = 11533.58
+*************
+	threshold: 6
+expansions = 6459.00
+*************
+p = 6459.00
+prePrediction_519 = 11523.82
+*************
+	threshold: 6
+expansions = 9607.00
+*************
+p = 9607.00
+prePrediction_520 = 11520.14
+*************
+	threshold: 6
+expansions = 10287.00
+*************
+p = 10287.00
+prePrediction_521 = 11517.78
+*************
+	threshold: 6
+expansions = 1705.00
+*************
+p = 1705.00
+prePrediction_522 = 11499.02
+*************
+	threshold: 6
+expansions = 39769.00
+*************
+p = 39769.00
+prePrediction_523 = 11552.97
+*************
+	threshold: 6
+expansions = 11450.00
+*************
+p = 11450.00
+prePrediction_524 = 11552.77
+*************
+	threshold: 6
+expansions = 2236.00
+*************
+p = 2236.00
+prePrediction_525 = 11535.06
+*************
+	threshold: 6
+expansions = 4876.00
+*************
+p = 4876.00
+prePrediction_526 = 11522.42
+*************
+	threshold: 6
+expansions = 5214.00
+*************
+p = 5214.00
+prePrediction_527 = 11510.48
+*************
+	threshold: 6
+expansions = 43578.00
+*************
+p = 43578.00
+prePrediction_528 = 11571.09
+*************
+	threshold: 6
+expansions = 1021.00
+*************
+p = 1021.00
+prePrediction_529 = 11551.19
+*************
+	threshold: 6
+expansions = 6295.00
+*************
+p = 6295.00
+prePrediction_530 = 11541.29
+*************
+	threshold: 6
+expansions = 1507.00
+*************
+p = 1507.00
+prePrediction_531 = 11522.43
+*************
+	threshold: 6
+expansions = 4411.00
+*************
+p = 4411.00
+prePrediction_532 = 11509.09
+*************
+	threshold: 6
+expansions = 1291.00
+*************
+p = 1291.00
+prePrediction_533 = 11489.95
+*************
+	threshold: 6
+expansions = 19971.00
+*************
+p = 19971.00
+prePrediction_534 = 11505.80
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_535 = 11486.51
+*************
+	threshold: 6
+expansions = 36475.00
+*************
+p = 36475.00
+prePrediction_536 = 11533.04
+*************
+	threshold: 6
+expansions = 5746.00
+*************
+p = 5746.00
+prePrediction_537 = 11522.29
+*************
+	threshold: 6
+expansions = 7043.00
+*************
+p = 7043.00
+prePrediction_538 = 11513.98
+*************
+	threshold: 6
+expansions = 19027.00
+*************
+p = 19027.00
+prePrediction_539 = 11527.89
+*************
+	threshold: 6
+expansions = 18249.00
+*************
+p = 18249.00
+prePrediction_540 = 11540.31
+*************
+	threshold: 6
+expansions = 39518.00
+*************
+p = 39518.00
+prePrediction_541 = 11591.93
+*************
+	threshold: 6
+expansions = 12087.00
+*************
+p = 12087.00
+prePrediction_542 = 11592.85
+*************
+	threshold: 6
+expansions = 16281.00
+*************
+p = 16281.00
+prePrediction_543 = 11601.46
+*************
+	threshold: 6
+expansions = 3091.00
+*************
+p = 3091.00
+prePrediction_544 = 11585.85
+*************
+	threshold: 6
+expansions = 13846.00
+*************
+p = 13846.00
+prePrediction_545 = 11589.99
+*************
+	threshold: 6
+expansions = 5443.00
+*************
+p = 5443.00
+prePrediction_546 = 11578.75
+*************
+	threshold: 6
+expansions = 4963.00
+*************
+p = 4963.00
+prePrediction_547 = 11566.68
+*************
+	threshold: 6
+expansions = 2308.00
+*************
+p = 2308.00
+prePrediction_548 = 11549.81
+*************
+	threshold: 6
+expansions = 39605.00
+*************
+p = 39605.00
+prePrediction_549 = 11600.82
+*************
+	threshold: 6
+expansions = 2308.00
+*************
+p = 2308.00
+prePrediction_550 = 11583.96
+*************
+	threshold: 6
+expansions = 3091.00
+*************
+p = 3091.00
+prePrediction_551 = 11568.57
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_552 = 11549.17
+*************
+	threshold: 6
+expansions = 25310.00
+*************
+p = 25310.00
+prePrediction_553 = 11574.01
+*************
+	threshold: 6
+expansions = 3377.00
+*************
+p = 3377.00
+prePrediction_554 = 11559.24
+*************
+	threshold: 6
+expansions = 6215.00
+*************
+p = 6215.00
+prePrediction_555 = 11549.63
+*************
+	threshold: 6
+expansions = 27189.00
+*************
+p = 27189.00
+prePrediction_556 = 11577.71
+*************
+	threshold: 6
+expansions = 12761.00
+*************
+p = 12761.00
+prePrediction_557 = 11579.83
+*************
+	threshold: 6
+expansions = 21419.00
+*************
+p = 21419.00
+prePrediction_558 = 11597.43
+*************
+	threshold: 6
+expansions = 12919.00
+*************
+p = 12919.00
+prePrediction_559 = 11599.79
+*************
+	threshold: 6
+expansions = 5099.00
+*************
+p = 5099.00
+prePrediction_560 = 11588.20
+*************
+	threshold: 6
+expansions = 10939.00
+*************
+p = 10939.00
+prePrediction_561 = 11587.05
+*************
+	threshold: 6
+expansions = 7311.00
+*************
+p = 7311.00
+prePrediction_562 = 11579.45
+*************
+	threshold: 6
+expansions = 1705.00
+*************
+p = 1705.00
+prePrediction_563 = 11561.94
+*************
+	threshold: 6
+expansions = 6995.00
+*************
+p = 6995.00
+prePrediction_564 = 11553.86
+*************
+	threshold: 6
+expansions = 211.00
+*************
+p = 211.00
+prePrediction_565 = 11533.82
+*************
+	threshold: 6
+expansions = 733.00
+*************
+p = 733.00
+prePrediction_566 = 11514.77
+*************
+	threshold: 6
+expansions = 36977.00
+*************
+p = 36977.00
+prePrediction_567 = 11559.60
+*************
+	threshold: 6
+expansions = 16369.00
+*************
+p = 16369.00
+prePrediction_568 = 11568.05
+*************
+	threshold: 6
+expansions = 27493.00
+*************
+p = 27493.00
+prePrediction_569 = 11595.99
+*************
+	threshold: 6
+expansions = 1003.00
+*************
+p = 1003.00
+prePrediction_570 = 11577.44
+*************
+	threshold: 6
+expansions = 38208.00
+*************
+p = 38208.00
+prePrediction_571 = 11623.99
+*************
+	threshold: 6
+expansions = 4664.00
+*************
+p = 4664.00
+prePrediction_572 = 11611.85
+*************
+	threshold: 6
+expansions = 6867.00
+*************
+p = 6867.00
+prePrediction_573 = 11603.58
+*************
+	threshold: 6
+expansions = 9760.00
+*************
+p = 9760.00
+prePrediction_574 = 11600.38
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_575 = 11581.70
+*************
+	threshold: 6
+expansions = 3236.00
+*************
+p = 3236.00
+prePrediction_576 = 11567.23
+*************
+	threshold: 6
+expansions = 7375.00
+*************
+p = 7375.00
+prePrediction_577 = 11559.98
+*************
+	threshold: 6
+expansions = 29281.00
+*************
+p = 29281.00
+prePrediction_578 = 11590.59
+*************
+	threshold: 6
+expansions = 11401.00
+*************
+p = 11401.00
+prePrediction_579 = 11590.26
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_580 = 11571.37
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_581 = 11552.01
+*************
+	threshold: 6
+expansions = 7828.00
+*************
+p = 7828.00
+prePrediction_582 = 11545.62
+*************
+	threshold: 6
+expansions = 10975.00
+*************
+p = 10975.00
+prePrediction_583 = 11544.64
+*************
+	threshold: 6
+expansions = 9211.00
+*************
+p = 9211.00
+prePrediction_584 = 11540.65
+*************
+	threshold: 6
+expansions = 16310.00
+*************
+p = 16310.00
+prePrediction_585 = 11548.79
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_586 = 11531.10
+*************
+	threshold: 6
+expansions = 2470.00
+*************
+p = 2470.00
+prePrediction_587 = 11515.69
+*************
+	threshold: 6
+expansions = 9778.00
+*************
+p = 9778.00
+prePrediction_588 = 11512.74
+*************
+	threshold: 6
+expansions = 4336.00
+*************
+p = 4336.00
+prePrediction_589 = 11500.58
+*************
+	threshold: 6
+expansions = 10958.00
+*************
+p = 10958.00
+prePrediction_590 = 11499.66
+*************
+	threshold: 6
+expansions = 7042.00
+*************
+p = 7042.00
+prePrediction_591 = 11492.13
+*************
+	threshold: 6
+expansions = 13668.00
+*************
+p = 13668.00
+prePrediction_592 = 11495.80
+*************
+	threshold: 6
+expansions = 6403.00
+*************
+p = 6403.00
+prePrediction_593 = 11487.22
+*************
+	threshold: 6
+expansions = 2868.00
+*************
+p = 2868.00
+prePrediction_594 = 11472.74
+*************
+	threshold: 6
+expansions = 1822.00
+*************
+p = 1822.00
+prePrediction_595 = 11456.55
+*************
+	threshold: 6
+expansions = 1741.00
+*************
+p = 1741.00
+prePrediction_596 = 11440.27
+*************
+	threshold: 6
+expansions = 6381.00
+*************
+p = 6381.00
+prePrediction_597 = 11431.81
+*************
+	threshold: 6
+expansions = 29973.00
+*************
+p = 29973.00
+prePrediction_598 = 11462.76
+*************
+	threshold: 6
+expansions = 1057.00
+*************
+p = 1057.00
+prePrediction_599 = 11445.42
+*************
+	threshold: 6
+expansions = 688.00
+*************
+p = 688.00
+prePrediction_600 = 11427.52
+*************
+	threshold: 6
+expansions = 2236.00
+*************
+p = 2236.00
+prePrediction_601 = 11412.25
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_602 = 11394.35
+*************
+	threshold: 6
+expansions = 38282.00
+*************
+p = 38282.00
+prePrediction_603 = 11438.87
+*************
+	threshold: 6
+expansions = 18741.00
+*************
+p = 18741.00
+prePrediction_604 = 11450.94
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_605 = 11433.96
+*************
+	threshold: 6
+expansions = 7464.00
+*************
+p = 7464.00
+prePrediction_606 = 11427.42
+*************
+	threshold: 6
+expansions = 6910.00
+*************
+p = 6910.00
+prePrediction_607 = 11419.99
+*************
+	threshold: 6
+expansions = 6997.00
+*************
+p = 6997.00
+prePrediction_608 = 11412.73
+*************
+	threshold: 6
+expansions = 5942.00
+*************
+p = 5942.00
+prePrediction_609 = 11403.76
+*************
+	threshold: 6
+expansions = 18319.00
+*************
+p = 18319.00
+prePrediction_610 = 11415.08
+*************
+	threshold: 6
+expansions = 5436.00
+*************
+p = 5436.00
+prePrediction_611 = 11405.31
+*************
+	threshold: 6
+expansions = 9319.00
+*************
+p = 9319.00
+prePrediction_612 = 11401.91
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_613 = 11384.71
+*************
+	threshold: 6
+expansions = 14705.00
+*************
+p = 14705.00
+prePrediction_614 = 11390.10
+*************
+	threshold: 6
+expansions = 1291.00
+*************
+p = 1291.00
+prePrediction_615 = 11373.71
+*************
+	threshold: 6
+expansions = 10318.00
+*************
+p = 10318.00
+prePrediction_616 = 11372.00
+*************
+	threshold: 6
+expansions = 29889.00
+*************
+p = 29889.00
+prePrediction_617 = 11401.96
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_618 = 11384.54
+*************
+	threshold: 6
+expansions = 4721.00
+*************
+p = 4721.00
+prePrediction_619 = 11373.79
+*************
+	threshold: 6
+expansions = 463.00
+*************
+p = 463.00
+prePrediction_620 = 11356.22
+*************
+	threshold: 6
+expansions = 1093.00
+*************
+p = 1093.00
+prePrediction_621 = 11339.72
+*************
+	threshold: 6
+expansions = 391.00
+*************
+p = 391.00
+prePrediction_622 = 11322.14
+*************
+	threshold: 6
+expansions = 13520.00
+*************
+p = 13520.00
+prePrediction_623 = 11325.67
+*************
+	threshold: 6
+expansions = 52120.00
+*************
+p = 52120.00
+prePrediction_624 = 11390.94
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_625 = 11374.08
+*************
+	threshold: 6
+expansions = 1822.00
+*************
+p = 1822.00
+prePrediction_626 = 11358.85
+*************
+	threshold: 6
+expansions = 976.00
+*************
+p = 976.00
+prePrediction_627 = 11342.32
+*************
+	threshold: 6
+expansions = 13324.00
+*************
+p = 13324.00
+prePrediction_628 = 11345.47
+*************
+	threshold: 6
+expansions = 18931.00
+*************
+p = 18931.00
+prePrediction_629 = 11357.51
+*************
+	threshold: 6
+expansions = 4147.00
+*************
+p = 4147.00
+prePrediction_630 = 11346.08
+*************
+	threshold: 6
+expansions = 13238.00
+*************
+p = 13238.00
+prePrediction_631 = 11349.07
+*************
+	threshold: 6
+expansions = 48022.00
+*************
+p = 48022.00
+prePrediction_632 = 11407.01
+*************
+	threshold: 6
+expansions = 25720.00
+*************
+p = 25720.00
+prePrediction_633 = 11429.59
+*************
+	threshold: 6
+expansions = 27025.00
+*************
+p = 27025.00
+prePrediction_634 = 11454.14
+*************
+	threshold: 6
+expansions = 4882.00
+*************
+p = 4882.00
+prePrediction_635 = 11443.81
+*************
+	threshold: 6
+expansions = 5631.00
+*************
+p = 5631.00
+prePrediction_636 = 11434.69
+*************
+	threshold: 6
+expansions = 4161.00
+*************
+p = 4161.00
+prePrediction_637 = 11423.29
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_638 = 11407.23
+*************
+	threshold: 6
+expansions = 2731.00
+*************
+p = 2731.00
+prePrediction_639 = 11393.67
+*************
+	threshold: 6
+expansions = 12861.00
+*************
+p = 12861.00
+prePrediction_640 = 11395.96
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_641 = 11378.68
+*************
+	threshold: 6
+expansions = 26705.00
+*************
+p = 26705.00
+prePrediction_642 = 11402.52
+*************
+	threshold: 6
+expansions = 35767.00
+*************
+p = 35767.00
+prePrediction_643 = 11440.35
+*************
+	threshold: 6
+expansions = 15835.00
+*************
+p = 15835.00
+prePrediction_644 = 11447.16
+*************
+	threshold: 6
+expansions = 3316.00
+*************
+p = 3316.00
+prePrediction_645 = 11434.58
+*************
+	threshold: 6
+expansions = 4728.00
+*************
+p = 4728.00
+prePrediction_646 = 11424.21
+*************
+	threshold: 6
+expansions = 4840.00
+*************
+p = 4840.00
+prePrediction_647 = 11414.05
+*************
+	threshold: 6
+expansions = 3496.00
+*************
+p = 3496.00
+prePrediction_648 = 11401.85
+*************
+	threshold: 6
+expansions = 24963.00
+*************
+p = 24963.00
+prePrediction_649 = 11422.71
+*************
+	threshold: 6
+expansions = 5011.00
+*************
+p = 5011.00
+prePrediction_650 = 11412.86
+*************
+	threshold: 6
+expansions = 4204.00
+*************
+p = 4204.00
+prePrediction_651 = 11401.81
+*************
+	threshold: 6
+expansions = 211.00
+*************
+p = 211.00
+prePrediction_652 = 11384.67
+*************
+	threshold: 6
+expansions = 5017.00
+*************
+p = 5017.00
+prePrediction_653 = 11374.93
+*************
+	threshold: 6
+expansions = 1093.00
+*************
+p = 1093.00
+prePrediction_654 = 11359.24
+*************
+	threshold: 6
+expansions = 9463.00
+*************
+p = 9463.00
+prePrediction_655 = 11356.35
+*************
+	threshold: 6
+expansions = 1741.00
+*************
+p = 1741.00
+prePrediction_656 = 11341.71
+*************
+	threshold: 6
+expansions = 6033.00
+*************
+p = 6033.00
+prePrediction_657 = 11333.64
+*************
+	threshold: 6
+expansions = 3586.00
+*************
+p = 3586.00
+prePrediction_658 = 11321.89
+*************
+	threshold: 6
+expansions = 31573.00
+*************
+p = 31573.00
+prePrediction_659 = 11352.57
+*************
+	threshold: 6
+expansions = 5164.00
+*************
+p = 5164.00
+prePrediction_660 = 11343.21
+*************
+	threshold: 6
+expansions = 25117.00
+*************
+p = 25117.00
+prePrediction_661 = 11364.01
+*************
+	threshold: 6
+expansions = 4405.00
+*************
+p = 4405.00
+prePrediction_662 = 11353.52
+*************
+	threshold: 6
+expansions = 34053.00
+*************
+p = 34053.00
+prePrediction_663 = 11387.70
+*************
+	threshold: 6
+expansions = 18955.00
+*************
+p = 18955.00
+prePrediction_664 = 11399.08
+*************
+	threshold: 6
+expansions = 4903.00
+*************
+p = 4903.00
+prePrediction_665 = 11389.33
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_666 = 11372.70
+*************
+	threshold: 6
+expansions = 7735.00
+*************
+p = 7735.00
+prePrediction_667 = 11367.26
+*************
+	threshold: 6
+expansions = 13000.00
+*************
+p = 13000.00
+prePrediction_668 = 11369.70
+*************
+	threshold: 6
+expansions = 11994.00
+*************
+p = 11994.00
+prePrediction_669 = 11370.63
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_670 = 11354.60
+*************
+	threshold: 6
+expansions = 8050.00
+*************
+p = 8050.00
+prePrediction_671 = 11349.69
+*************
+	threshold: 6
+expansions = 5047.00
+*************
+p = 5047.00
+prePrediction_672 = 11340.32
+*************
+	threshold: 6
+expansions = 39028.00
+*************
+p = 39028.00
+prePrediction_673 = 11381.40
+*************
+	threshold: 6
+expansions = 1741.00
+*************
+p = 1741.00
+prePrediction_674 = 11367.12
+*************
+	threshold: 6
+expansions = 10246.00
+*************
+p = 10246.00
+prePrediction_675 = 11365.46
+*************
+	threshold: 6
+expansions = 59945.00
+*************
+p = 59945.00
+prePrediction_676 = 11437.22
+*************
+	threshold: 6
+expansions = 3817.00
+*************
+p = 3817.00
+prePrediction_677 = 11425.98
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_678 = 11409.59
+*************
+	threshold: 6
+expansions = 28913.00
+*************
+p = 28913.00
+prePrediction_679 = 11435.33
+*************
+	threshold: 6
+expansions = 19409.00
+*************
+p = 19409.00
+prePrediction_680 = 11447.04
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_681 = 11431.97
+*************
+	threshold: 6
+expansions = 1426.00
+*************
+p = 1426.00
+prePrediction_682 = 11417.32
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_683 = 11402.33
+*************
+	threshold: 6
+expansions = 1696.00
+*************
+p = 1696.00
+prePrediction_684 = 11388.16
+*************
+	threshold: 6
+expansions = 6339.00
+*************
+p = 6339.00
+prePrediction_685 = 11380.80
+*************
+	threshold: 6
+expansions = 56946.00
+*************
+p = 56946.00
+prePrediction_686 = 11447.12
+*************
+	threshold: 6
+expansions = 2895.00
+*************
+p = 2895.00
+prePrediction_687 = 11434.69
+*************
+	threshold: 6
+expansions = 3762.00
+*************
+p = 3762.00
+prePrediction_688 = 11423.56
+*************
+	threshold: 6
+expansions = 6124.00
+*************
+p = 6124.00
+prePrediction_689 = 11415.88
+*************
+	threshold: 6
+expansions = 5600.00
+*************
+p = 5600.00
+prePrediction_690 = 11407.46
+*************
+	threshold: 6
+expansions = 1741.00
+*************
+p = 1741.00
+prePrediction_691 = 11393.49
+*************
+	threshold: 6
+expansions = 4781.00
+*************
+p = 4781.00
+prePrediction_692 = 11383.95
+*************
+	threshold: 6
+expansions = 2236.00
+*************
+p = 2236.00
+prePrediction_693 = 11370.77
+*************
+	threshold: 6
+expansions = 2731.00
+*************
+p = 2731.00
+prePrediction_694 = 11358.34
+*************
+	threshold: 6
+expansions = 3676.00
+*************
+p = 3676.00
+prePrediction_695 = 11347.30
+*************
+	threshold: 6
+expansions = 18598.00
+*************
+p = 18598.00
+prePrediction_696 = 11357.70
+*************
+	threshold: 6
+expansions = 30287.00
+*************
+p = 30287.00
+prePrediction_697 = 11384.82
+*************
+	threshold: 6
+expansions = 9255.00
+*************
+p = 9255.00
+prePrediction_698 = 11381.77
+*************
+	threshold: 6
+expansions = 9271.00
+*************
+p = 9271.00
+prePrediction_699 = 11378.76
+*************
+	threshold: 6
+expansions = 11114.00
+*************
+p = 11114.00
+prePrediction_700 = 11378.38
+*************
+	threshold: 6
+expansions = 37669.00
+*************
+p = 37669.00
+prePrediction_701 = 11415.83
+*************
+	threshold: 6
+expansions = 33043.00
+*************
+p = 33043.00
+prePrediction_702 = 11446.59
+*************
+	threshold: 6
+expansions = 706.00
+*************
+p = 706.00
+prePrediction_703 = 11431.34
+*************
+	threshold: 6
+expansions = 5277.00
+*************
+p = 5277.00
+prePrediction_704 = 11422.61
+*************
+	threshold: 6
+expansions = 8788.00
+*************
+p = 8788.00
+prePrediction_705 = 11418.88
+*************
+	threshold: 6
+expansions = 11271.00
+*************
+p = 11271.00
+prePrediction_706 = 11418.67
+*************
+	threshold: 6
+expansions = 5276.00
+*************
+p = 5276.00
+prePrediction_707 = 11409.99
+*************
+	threshold: 6
+expansions = 2470.00
+*************
+p = 2470.00
+prePrediction_708 = 11397.38
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_709 = 11381.75
+*************
+	threshold: 6
+expansions = 4891.00
+*************
+p = 4891.00
+prePrediction_710 = 11372.62
+*************
+	threshold: 6
+expansions = 55908.00
+*************
+p = 55908.00
+prePrediction_711 = 11435.17
+*************
+	threshold: 6
+expansions = 17563.00
+*************
+p = 17563.00
+prePrediction_712 = 11443.77
+*************
+	threshold: 6
+expansions = 17291.00
+*************
+p = 17291.00
+prePrediction_713 = 11451.96
+*************
+	threshold: 6
+expansions = 56038.00
+*************
+p = 56038.00
+prePrediction_714 = 11514.32
+*************
+	threshold: 6
+expansions = 11591.00
+*************
+p = 11591.00
+prePrediction_715 = 11514.42
+*************
+	threshold: 6
+expansions = 19783.00
+*************
+p = 19783.00
+prePrediction_716 = 11525.96
+*************
+	threshold: 6
+expansions = 38483.00
+*************
+p = 38483.00
+prePrediction_717 = 11563.50
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_718 = 11548.27
+*************
+	threshold: 6
+expansions = 10093.00
+*************
+p = 10093.00
+prePrediction_719 = 11546.25
+*************
+	threshold: 6
+expansions = 8716.00
+*************
+p = 8716.00
+prePrediction_720 = 11542.33
+*************
+	threshold: 6
+expansions = 3687.00
+*************
+p = 3687.00
+prePrediction_721 = 11531.45
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_722 = 11517.11
+*************
+	threshold: 6
+expansions = 15045.00
+*************
+p = 15045.00
+prePrediction_723 = 11521.98
+*************
+	threshold: 6
+expansions = 16803.00
+*************
+p = 16803.00
+prePrediction_724 = 11529.27
+*************
+	threshold: 6
+expansions = 3091.00
+*************
+p = 3091.00
+prePrediction_725 = 11517.64
+*************
+	threshold: 6
+expansions = 4405.00
+*************
+p = 4405.00
+prePrediction_726 = 11507.86
+*************
+	threshold: 6
+expansions = 10965.00
+*************
+p = 10965.00
+prePrediction_727 = 11507.11
+*************
+	threshold: 6
+expansions = 12117.00
+*************
+p = 12117.00
+prePrediction_728 = 11507.95
+*************
+	threshold: 6
+expansions = 4459.00
+*************
+p = 4459.00
+prePrediction_729 = 11498.29
+*************
+	threshold: 6
+expansions = 976.00
+*************
+p = 976.00
+prePrediction_730 = 11483.90
+*************
+	threshold: 6
+expansions = 35802.00
+*************
+p = 35802.00
+prePrediction_731 = 11517.12
+*************
+	threshold: 6
+expansions = 28223.00
+*************
+p = 28223.00
+prePrediction_732 = 11539.91
+*************
+	threshold: 6
+expansions = 3091.00
+*************
+p = 3091.00
+prePrediction_733 = 11528.40
+*************
+	threshold: 6
+expansions = 19695.00
+*************
+p = 19695.00
+prePrediction_734 = 11539.51
+*************
+	threshold: 6
+expansions = 19923.00
+*************
+p = 19923.00
+prePrediction_735 = 11550.90
+*************
+	threshold: 6
+expansions = 6353.00
+*************
+p = 6353.00
+prePrediction_736 = 11543.85
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_737 = 11529.79
+*************
+	threshold: 6
+expansions = 21235.00
+*************
+p = 21235.00
+prePrediction_738 = 11542.92
+*************
+	threshold: 6
+expansions = 11720.00
+*************
+p = 11720.00
+prePrediction_739 = 11543.16
+*************
+	threshold: 6
+expansions = 6997.00
+*************
+p = 6997.00
+prePrediction_740 = 11537.02
+*************
+	threshold: 6
+expansions = 976.00
+*************
+p = 976.00
+prePrediction_741 = 11522.79
+*************
+	threshold: 6
+expansions = 2793.00
+*************
+p = 2793.00
+prePrediction_742 = 11511.04
+*************
+	threshold: 6
+expansions = 1291.00
+*************
+p = 1291.00
+prePrediction_743 = 11497.31
+*************
+	threshold: 6
+expansions = 24529.00
+*************
+p = 24529.00
+prePrediction_744 = 11514.80
+*************
+	threshold: 6
+expansions = 5807.00
+*************
+p = 5807.00
+prePrediction_745 = 11507.15
+*************
+	threshold: 6
+expansions = 391.00
+*************
+p = 391.00
+prePrediction_746 = 11492.27
+*************
+	threshold: 6
+expansions = 1498.00
+*************
+p = 1498.00
+prePrediction_747 = 11478.90
+*************
+	threshold: 6
+expansions = 4405.00
+*************
+p = 4405.00
+prePrediction_748 = 11469.46
+*************
+	threshold: 6
+expansions = 5596.00
+*************
+p = 5596.00
+prePrediction_749 = 11461.63
+*************
+	threshold: 6
+expansions = 391.00
+*************
+p = 391.00
+prePrediction_750 = 11446.89
+*************
+	threshold: 6
+expansions = 32302.00
+*************
+p = 32302.00
+prePrediction_751 = 11474.62
+*************
+	threshold: 6
+expansions = 6375.00
+*************
+p = 6375.00
+prePrediction_752 = 11467.85
+*************
+	threshold: 6
+expansions = 16215.00
+*************
+p = 16215.00
+prePrediction_753 = 11474.14
+*************
+	threshold: 6
+expansions = 32579.00
+*************
+p = 32579.00
+prePrediction_754 = 11502.10
+*************
+	threshold: 6
+expansions = 1003.00
+*************
+p = 1003.00
+prePrediction_755 = 11488.21
+*************
+	threshold: 6
+expansions = 1093.00
+*************
+p = 1093.00
+prePrediction_756 = 11474.48
+*************
+	threshold: 6
+expansions = 15262.00
+*************
+p = 15262.00
+prePrediction_757 = 11479.47
+*************
+	threshold: 6
+expansions = 3263.00
+*************
+p = 3263.00
+prePrediction_758 = 11468.65
+*************
+	threshold: 6
+expansions = 10771.00
+*************
+p = 10771.00
+prePrediction_759 = 11467.73
+*************
+	threshold: 6
+expansions = 21291.00
+*************
+p = 21291.00
+prePrediction_760 = 11480.64
+*************
+	threshold: 6
+expansions = 12888.00
+*************
+p = 12888.00
+prePrediction_761 = 11482.49
+*************
+	threshold: 6
+expansions = 1021.00
+*************
+p = 1021.00
+prePrediction_762 = 11468.77
+*************
+	threshold: 6
+expansions = 5238.00
+*************
+p = 5238.00
+prePrediction_763 = 11460.62
+*************
+	threshold: 6
+expansions = 2236.00
+*************
+p = 2236.00
+prePrediction_764 = 11448.56
+*************
+	threshold: 6
+expansions = 18589.00
+*************
+p = 18589.00
+prePrediction_765 = 11457.88
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_766 = 11444.46
+*************
+	threshold: 6
+expansions = 2308.00
+*************
+p = 2308.00
+prePrediction_767 = 11432.57
+*************
+	threshold: 6
+expansions = 4854.00
+*************
+p = 4854.00
+prePrediction_768 = 11424.01
+*************
+	threshold: 6
+expansions = 4688.00
+*************
+p = 4688.00
+prePrediction_769 = 11415.26
+*************
+	threshold: 6
+expansions = 1831.00
+*************
+p = 1831.00
+prePrediction_770 = 11402.83
+*************
+	threshold: 6
+expansions = 463.00
+*************
+p = 463.00
+prePrediction_771 = 11388.66
+*************
+	threshold: 6
+expansions = 16826.00
+*************
+p = 16826.00
+prePrediction_772 = 11395.70
+*************
+	threshold: 6
+expansions = 22732.00
+*************
+p = 22732.00
+prePrediction_773 = 11410.34
+*************
+	threshold: 6
+expansions = 17188.00
+*************
+p = 17188.00
+prePrediction_774 = 11417.80
+*************
+	threshold: 6
+expansions = 688.00
+*************
+p = 688.00
+prePrediction_775 = 11403.97
+*************
+	threshold: 6
+expansions = 5972.00
+*************
+p = 5972.00
+prePrediction_776 = 11396.98
+*************
+	threshold: 6
+expansions = 36861.00
+*************
+p = 36861.00
+prePrediction_777 = 11429.71
+*************
+	threshold: 6
+expansions = 2236.00
+*************
+p = 2236.00
+prePrediction_778 = 11417.91
+*************
+	threshold: 6
+expansions = 1822.00
+*************
+p = 1822.00
+prePrediction_779 = 11405.61
+*************
+	threshold: 6
+expansions = 7483.00
+*************
+p = 7483.00
+prePrediction_780 = 11400.58
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_781 = 11386.79
+*************
+	threshold: 6
+expansions = 7879.00
+*************
+p = 7879.00
+prePrediction_782 = 11382.31
+*************
+	threshold: 6
+expansions = 33691.00
+*************
+p = 33691.00
+prePrediction_783 = 11410.77
+*************
+	threshold: 6
+expansions = 1291.00
+*************
+p = 1291.00
+prePrediction_784 = 11397.88
+*************
+	threshold: 6
+expansions = 9118.00
+*************
+p = 9118.00
+prePrediction_785 = 11394.97
+*************
+	threshold: 6
+expansions = 1507.00
+*************
+p = 1507.00
+prePrediction_786 = 11382.41
+*************
+	threshold: 6
+expansions = 6115.00
+*************
+p = 6115.00
+prePrediction_787 = 11375.73
+*************
+	threshold: 6
+expansions = 1093.00
+*************
+p = 1093.00
+prePrediction_788 = 11362.69
+*************
+	threshold: 6
+expansions = 77532.00
+*************
+p = 77532.00
+prePrediction_789 = 11446.45
+*************
+	threshold: 6
+expansions = 8776.00
+*************
+p = 8776.00
+prePrediction_790 = 11443.08
+*************
+	threshold: 6
+expansions = 4956.00
+*************
+p = 4956.00
+prePrediction_791 = 11434.89
+*************
+	threshold: 6
+expansions = 12517.00
+*************
+p = 12517.00
+prePrediction_792 = 11436.25
+*************
+	threshold: 6
+expansions = 8626.00
+*************
+p = 8626.00
+prePrediction_793 = 11432.71
+*************
+	threshold: 6
+expansions = 3676.00
+*************
+p = 3676.00
+prePrediction_794 = 11422.95
+*************
+	threshold: 6
+expansions = 40839.00
+*************
+p = 40839.00
+prePrediction_795 = 11459.91
+*************
+	threshold: 6
+expansions = 30789.00
+*************
+p = 30789.00
+prePrediction_796 = 11484.16
+*************
+	threshold: 6
+expansions = 12387.00
+*************
+p = 12387.00
+prePrediction_797 = 11485.29
+*************
+	threshold: 6
+expansions = 211.00
+*************
+p = 211.00
+prePrediction_798 = 11471.18
+*************
+	threshold: 6
+expansions = 18904.00
+*************
+p = 18904.00
+prePrediction_799 = 11480.47
+*************
+	threshold: 6
+expansions = 40679.00
+*************
+p = 40679.00
+prePrediction_800 = 11516.93
+*************
+	threshold: 6
+expansions = 4975.00
+*************
+p = 4975.00
+prePrediction_801 = 11508.77
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_802 = 11495.48
+*************
+	threshold: 6
+expansions = 7159.00
+*************
+p = 7159.00
+prePrediction_803 = 11490.09
+*************
+	threshold: 6
+expansions = 4405.00
+*************
+p = 4405.00
+prePrediction_804 = 11481.29
+*************
+	threshold: 6
+expansions = 976.00
+*************
+p = 976.00
+prePrediction_805 = 11468.25
+*************
+	threshold: 6
+expansions = 31109.00
+*************
+p = 31109.00
+prePrediction_806 = 11492.59
+*************
+	threshold: 6
+expansions = 16657.00
+*************
+p = 16657.00
+prePrediction_807 = 11498.98
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_808 = 11485.81
+*************
+	threshold: 6
+expansions = 3676.00
+*************
+p = 3676.00
+prePrediction_809 = 11476.17
+*************
+	threshold: 6
+expansions = 3207.00
+*************
+p = 3207.00
+prePrediction_810 = 11465.97
+*************
+	threshold: 6
+expansions = 32685.00
+*************
+p = 32685.00
+prePrediction_811 = 11492.10
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_812 = 11478.73
+*************
+	threshold: 6
+expansions = 1831.00
+*************
+p = 1831.00
+prePrediction_813 = 11466.87
+*************
+	threshold: 6
+expansions = 31901.00
+*************
+p = 31901.00
+prePrediction_814 = 11491.95
+*************
+	threshold: 6
+expansions = 967.00
+*************
+p = 967.00
+prePrediction_815 = 11479.05
+*************
+	threshold: 6
+expansions = 37529.00
+*************
+p = 37529.00
+prePrediction_816 = 11510.93
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_817 = 11497.61
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_818 = 11485.00
+*************
+	threshold: 6
+expansions = 8988.00
+*************
+p = 8988.00
+prePrediction_819 = 11481.95
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_820 = 11468.33
+*************
+	threshold: 6
+expansions = 1516.00
+*************
+p = 1516.00
+prePrediction_821 = 11456.23
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_822 = 11443.05
+*************
+	threshold: 6
+expansions = 15439.00
+*************
+p = 15439.00
+prePrediction_823 = 11447.90
+*************
+	threshold: 6
+expansions = 4913.00
+*************
+p = 4913.00
+prePrediction_824 = 11439.98
+*************
+	threshold: 6
+expansions = 7396.00
+*************
+p = 7396.00
+prePrediction_825 = 11435.09
+*************
+	threshold: 6
+expansions = 30589.00
+*************
+p = 30589.00
+prePrediction_826 = 11458.25
+*************
+	threshold: 6
+expansions = 26846.00
+*************
+p = 26846.00
+prePrediction_827 = 11476.83
+*************
+	threshold: 6
+expansions = 11329.00
+*************
+p = 11329.00
+prePrediction_828 = 11476.65
+*************
+	threshold: 6
+expansions = 8644.00
+*************
+p = 8644.00
+prePrediction_829 = 11473.24
+*************
+	threshold: 6
+expansions = 688.00
+*************
+p = 688.00
+prePrediction_830 = 11460.26
+*************
+	threshold: 6
+expansions = 4708.00
+*************
+p = 4708.00
+prePrediction_831 = 11452.15
+*************
+	threshold: 6
+expansions = 4405.00
+*************
+p = 4405.00
+prePrediction_832 = 11443.69
+*************
+	threshold: 6
+expansions = 7165.00
+*************
+p = 7165.00
+prePrediction_833 = 11438.56
+*************
+	threshold: 6
+expansions = 7204.00
+*************
+p = 7204.00
+prePrediction_834 = 11433.49
+*************
+	threshold: 6
+expansions = 4188.00
+*************
+p = 4188.00
+prePrediction_835 = 11424.82
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_836 = 11412.56
+*************
+	threshold: 6
+expansions = 17585.00
+*************
+p = 17585.00
+prePrediction_837 = 11419.93
+*************
+	threshold: 6
+expansions = 1003.00
+*************
+p = 1003.00
+prePrediction_838 = 11407.51
+*************
+	threshold: 6
+expansions = 3091.00
+*************
+p = 3091.00
+prePrediction_839 = 11397.61
+*************
+	threshold: 6
+expansions = 8302.00
+*************
+p = 8302.00
+prePrediction_840 = 11393.93
+*************
+	threshold: 6
+expansions = 16033.00
+*************
+p = 16033.00
+prePrediction_841 = 11399.44
+*************
+	threshold: 6
+expansions = 54663.00
+*************
+p = 54663.00
+prePrediction_842 = 11450.76
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_843 = 11438.57
+*************
+	threshold: 6
+expansions = 12426.00
+*************
+p = 12426.00
+prePrediction_844 = 11439.74
+*************
+	threshold: 6
+expansions = 1021.00
+*************
+p = 1021.00
+prePrediction_845 = 11427.43
+*************
+	threshold: 6
+expansions = 5590.00
+*************
+p = 5590.00
+prePrediction_846 = 11420.53
+*************
+	threshold: 6
+expansions = 976.00
+*************
+p = 976.00
+prePrediction_847 = 11408.22
+*************
+	threshold: 6
+expansions = 6322.00
+*************
+p = 6322.00
+prePrediction_848 = 11402.23
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_849 = 11389.17
+*************
+	threshold: 6
+expansions = 25907.00
+*************
+p = 25907.00
+prePrediction_850 = 11406.23
+*************
+	threshold: 6
+expansions = 10939.00
+*************
+p = 10939.00
+prePrediction_851 = 11405.68
+*************
+	threshold: 6
+expansions = 33985.00
+*************
+p = 33985.00
+prePrediction_852 = 11432.15
+*************
+	threshold: 6
+expansions = 39468.00
+*************
+p = 39468.00
+prePrediction_853 = 11464.98
+*************
+	threshold: 6
+expansions = 4693.00
+*************
+p = 4693.00
+prePrediction_854 = 11457.06
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_855 = 11444.02
+*************
+	threshold: 6
+expansions = 1741.00
+*************
+p = 1741.00
+prePrediction_856 = 11432.70
+*************
+	threshold: 6
+expansions = 2236.00
+*************
+p = 2236.00
+prePrediction_857 = 11421.98
+*************
+	threshold: 6
+expansions = 2749.00
+*************
+p = 2749.00
+prePrediction_858 = 11411.89
+*************
+	threshold: 6
+expansions = 11028.00
+*************
+p = 11028.00
+prePrediction_859 = 11411.44
+*************
+	threshold: 6
+expansions = 4395.00
+*************
+p = 4395.00
+prePrediction_860 = 11403.29
+*************
+	threshold: 6
+expansions = 7726.00
+*************
+p = 7726.00
+prePrediction_861 = 11399.02
+*************
+	threshold: 6
+expansions = 26815.00
+*************
+p = 26815.00
+prePrediction_862 = 11416.89
+*************
+	threshold: 6
+expansions = 7006.00
+*************
+p = 7006.00
+prePrediction_863 = 11411.78
+*************
+	threshold: 6
+expansions = 4252.00
+*************
+p = 4252.00
+prePrediction_864 = 11403.51
+*************
+	threshold: 6
+expansions = 2551.00
+*************
+p = 2551.00
+prePrediction_865 = 11393.28
+*************
+	threshold: 6
+expansions = 6583.00
+*************
+p = 6583.00
+prePrediction_866 = 11387.73
+*************
+	threshold: 6
+expansions = 6784.00
+*************
+p = 6784.00
+prePrediction_867 = 11382.43
+*************
+	threshold: 6
+expansions = 23621.00
+*************
+p = 23621.00
+prePrediction_868 = 11396.51
+*************
+	threshold: 6
+expansions = 733.00
+*************
+p = 733.00
+prePrediction_869 = 11384.26
+*************
+	threshold: 6
+expansions = 6250.00
+*************
+p = 6250.00
+prePrediction_870 = 11378.36
+*************
+	threshold: 6
+expansions = 19906.00
+*************
+p = 19906.00
+prePrediction_871 = 11388.14
+*************
+	threshold: 6
+expansions = 4393.00
+*************
+p = 4393.00
+prePrediction_872 = 11380.13
+*************
+	threshold: 6
+expansions = 19622.00
+*************
+p = 19622.00
+prePrediction_873 = 11389.56
+*************
+	threshold: 6
+expansions = 4891.00
+*************
+p = 4891.00
+prePrediction_874 = 11382.13
+*************
+	threshold: 6
+expansions = 23045.00
+*************
+p = 23045.00
+prePrediction_875 = 11395.45
+*************
+	threshold: 6
+expansions = 24904.00
+*************
+p = 24904.00
+prePrediction_876 = 11410.85
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_877 = 11398.20
+*************
+	threshold: 6
+expansions = 2236.00
+*************
+p = 2236.00
+prePrediction_878 = 11387.77
+*************
+	threshold: 6
+expansions = 11533.00
+*************
+p = 11533.00
+prePrediction_879 = 11387.94
+*************
+	threshold: 6
+expansions = 10453.00
+*************
+p = 10453.00
+prePrediction_880 = 11386.88
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_881 = 11374.92
+*************
+	threshold: 6
+expansions = 15608.00
+*************
+p = 15608.00
+prePrediction_882 = 11379.71
+*************
+	threshold: 6
+expansions = 1021.00
+*************
+p = 1021.00
+prePrediction_883 = 11368.00
+*************
+	threshold: 6
+expansions = 34950.00
+*************
+p = 34950.00
+prePrediction_884 = 11394.64
+*************
+	threshold: 6
+expansions = 1696.00
+*************
+p = 1696.00
+prePrediction_885 = 11383.70
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_886 = 11371.56
+*************
+	threshold: 6
+expansions = 5044.00
+*************
+p = 5044.00
+prePrediction_887 = 11364.43
+*************
+	threshold: 6
+expansions = 2236.00
+*************
+p = 2236.00
+prePrediction_888 = 11354.16
+*************
+	threshold: 6
+expansions = 19484.00
+*************
+p = 19484.00
+prePrediction_889 = 11363.30
+*************
+	threshold: 6
+expansions = 25537.00
+*************
+p = 25537.00
+prePrediction_890 = 11379.20
+*************
+	threshold: 6
+expansions = 4405.00
+*************
+p = 4405.00
+prePrediction_891 = 11371.39
+*************
+	threshold: 6
+expansions = 706.00
+*************
+p = 706.00
+prePrediction_892 = 11359.44
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_893 = 11348.04
+*************
+	threshold: 6
+expansions = 5863.00
+*************
+p = 5863.00
+prePrediction_894 = 11341.91
+*************
+	threshold: 6
+expansions = 16953.00
+*************
+p = 16953.00
+prePrediction_895 = 11348.17
+*************
+	threshold: 6
+expansions = 3199.00
+*************
+p = 3199.00
+prePrediction_896 = 11339.09
+*************
+	threshold: 6
+expansions = 10792.00
+*************
+p = 10792.00
+prePrediction_897 = 11338.48
+*************
+	threshold: 6
+expansions = 16969.00
+*************
+p = 16969.00
+prePrediction_898 = 11344.74
+*************
+	threshold: 6
+expansions = 3586.00
+*************
+p = 3586.00
+prePrediction_899 = 11336.12
+*************
+	threshold: 6
+expansions = 6311.00
+*************
+p = 6311.00
+prePrediction_900 = 11330.54
+*************
+	threshold: 6
+expansions = 1246.00
+*************
+p = 1246.00
+prePrediction_901 = 11319.36
+*************
+	threshold: 6
+expansions = 30644.00
+*************
+p = 30644.00
+prePrediction_902 = 11340.76
+*************
+	threshold: 6
+expansions = 9247.00
+*************
+p = 9247.00
+prePrediction_903 = 11338.45
+*************
+	threshold: 6
+expansions = 13652.00
+*************
+p = 13652.00
+prePrediction_904 = 11341.00
+*************
+	threshold: 6
+expansions = 8943.00
+*************
+p = 8943.00
+prePrediction_905 = 11338.36
+*************
+	threshold: 6
+expansions = 12061.00
+*************
+p = 12061.00
+prePrediction_906 = 11339.15
+*************
+	threshold: 6
+expansions = 29155.00
+*************
+p = 29155.00
+prePrediction_907 = 11358.78
+*************
+	threshold: 6
+expansions = 20956.00
+*************
+p = 20956.00
+prePrediction_908 = 11369.33
+*************
+	threshold: 6
+expansions = 3133.00
+*************
+p = 3133.00
+prePrediction_909 = 11360.28
+*************
+	threshold: 6
+expansions = 33439.00
+*************
+p = 33439.00
+prePrediction_910 = 11384.52
+*************
+	threshold: 6
+expansions = 1093.00
+*************
+p = 1093.00
+prePrediction_911 = 11373.23
+*************
+	threshold: 6
+expansions = 3953.00
+*************
+p = 3953.00
+prePrediction_912 = 11365.11
+*************
+	threshold: 6
+expansions = 1021.00
+*************
+p = 1021.00
+prePrediction_913 = 11353.79
+*************
+	threshold: 6
+expansions = 5360.00
+*************
+p = 5360.00
+prePrediction_914 = 11347.24
+*************
+	threshold: 6
+expansions = 30885.00
+*************
+p = 30885.00
+prePrediction_915 = 11368.57
+*************
+	threshold: 6
+expansions = 1831.00
+*************
+p = 1831.00
+prePrediction_916 = 11358.17
+*************
+	threshold: 6
+expansions = 13168.00
+*************
+p = 13168.00
+prePrediction_917 = 11360.14
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_918 = 11348.45
+*************
+	threshold: 6
+expansions = 1696.00
+*************
+p = 1696.00
+prePrediction_919 = 11337.96
+*************
+	threshold: 6
+expansions = 38300.00
+*************
+p = 38300.00
+prePrediction_920 = 11367.23
+*************
+	threshold: 6
+expansions = 14717.00
+*************
+p = 14717.00
+prePrediction_921 = 11370.86
+*************
+	threshold: 6
+expansions = 3787.00
+*************
+p = 3787.00
+prePrediction_922 = 11362.65
+*************
+	threshold: 6
+expansions = 25103.00
+*************
+p = 25103.00
+prePrediction_923 = 11377.52
+*************
+	threshold: 6
+expansions = 7416.00
+*************
+p = 7416.00
+prePrediction_924 = 11373.23
+*************
+	threshold: 6
+expansions = 9429.00
+*************
+p = 9429.00
+prePrediction_925 = 11371.13
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_926 = 11359.78
+*************
+	threshold: 6
+expansions = 1498.00
+*************
+p = 1498.00
+prePrediction_927 = 11349.15
+*************
+	threshold: 6
+expansions = 11515.00
+*************
+p = 11515.00
+prePrediction_928 = 11349.33
+*************
+	threshold: 6
+expansions = 10034.00
+*************
+p = 10034.00
+prePrediction_929 = 11347.91
+*************
+	threshold: 6
+expansions = 5476.00
+*************
+p = 5476.00
+prePrediction_930 = 11341.61
+*************
+	threshold: 6
+expansions = 1696.00
+*************
+p = 1696.00
+prePrediction_931 = 11331.26
+*************
+	threshold: 6
+expansions = 18351.00
+*************
+p = 18351.00
+prePrediction_932 = 11338.78
+*************
+	threshold: 6
+expansions = 4135.00
+*************
+p = 4135.00
+prePrediction_933 = 11331.07
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_934 = 11319.85
+*************
+	threshold: 6
+expansions = 15673.00
+*************
+p = 15673.00
+prePrediction_935 = 11324.50
+*************
+	threshold: 6
+expansions = 15777.00
+*************
+p = 15777.00
+prePrediction_936 = 11329.25
+*************
+	threshold: 6
+expansions = 13542.00
+*************
+p = 13542.00
+prePrediction_937 = 11331.61
+*************
+	threshold: 6
+expansions = 463.00
+*************
+p = 463.00
+prePrediction_938 = 11320.04
+*************
+	threshold: 6
+expansions = 26725.00
+*************
+p = 26725.00
+prePrediction_939 = 11336.42
+*************
+	threshold: 6
+expansions = 1795.00
+*************
+p = 1795.00
+prePrediction_940 = 11326.28
+*************
+	threshold: 6
+expansions = 10426.00
+*************
+p = 10426.00
+prePrediction_941 = 11325.33
+*************
+	threshold: 6
+expansions = 24260.00
+*************
+p = 24260.00
+prePrediction_942 = 11339.04
+*************
+	threshold: 6
+expansions = 12595.00
+*************
+p = 12595.00
+prePrediction_943 = 11340.37
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_944 = 11329.61
+*************
+	threshold: 6
+expansions = 60430.00
+*************
+p = 60430.00
+prePrediction_945 = 11381.51
+*************
+	threshold: 6
+expansions = 1795.00
+*************
+p = 1795.00
+prePrediction_946 = 11371.39
+*************
+	threshold: 6
+expansions = 391.00
+*************
+p = 391.00
+prePrediction_947 = 11359.80
+*************
+	threshold: 6
+expansions = 23125.00
+*************
+p = 23125.00
+prePrediction_948 = 11372.20
+*************
+	threshold: 6
+expansions = 2236.00
+*************
+p = 2236.00
+prePrediction_949 = 11362.59
+*************
+	threshold: 6
+expansions = 2783.00
+*************
+p = 2783.00
+prePrediction_950 = 11353.56
+*************
+	threshold: 6
+expansions = 21667.00
+*************
+p = 21667.00
+prePrediction_951 = 11364.40
+*************
+	threshold: 6
+expansions = 24910.00
+*************
+p = 24910.00
+prePrediction_952 = 11378.61
+*************
+	threshold: 6
+expansions = 3472.00
+*************
+p = 3472.00
+prePrediction_953 = 11370.32
+*************
+	threshold: 6
+expansions = 25559.00
+*************
+p = 25559.00
+prePrediction_954 = 11385.18
+*************
+	threshold: 6
+expansions = 35399.00
+*************
+p = 35399.00
+prePrediction_955 = 11410.30
+*************
+	threshold: 6
+expansions = 1246.00
+*************
+p = 1246.00
+prePrediction_956 = 11399.68
+*************
+	threshold: 6
+expansions = 25613.00
+*************
+p = 25613.00
+prePrediction_957 = 11414.51
+*************
+	threshold: 6
+expansions = 4009.00
+*************
+p = 4009.00
+prePrediction_958 = 11406.79
+*************
+	threshold: 6
+expansions = 20265.00
+*************
+p = 20265.00
+prePrediction_959 = 11416.02
+*************
+	threshold: 6
+expansions = 12207.00
+*************
+p = 12207.00
+prePrediction_960 = 11416.84
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_961 = 11405.62
+*************
+	threshold: 6
+expansions = 20871.00
+*************
+p = 20871.00
+prePrediction_962 = 11415.44
+*************
+	threshold: 6
+expansions = 10333.00
+*************
+p = 10333.00
+prePrediction_963 = 11414.32
+*************
+	threshold: 6
+expansions = 6804.00
+*************
+p = 6804.00
+prePrediction_964 = 11409.54
+*************
+	threshold: 6
+expansions = 6608.00
+*************
+p = 6608.00
+prePrediction_965 = 11404.57
+*************
+	threshold: 6
+expansions = 10174.00
+*************
+p = 10174.00
+prePrediction_966 = 11403.30
+*************
+	threshold: 6
+expansions = 1741.00
+*************
+p = 1741.00
+prePrediction_967 = 11393.32
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_968 = 11382.20
+*************
+	threshold: 6
+expansions = 2935.00
+*************
+p = 2935.00
+prePrediction_969 = 11373.49
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction_970 = 11362.41
+*************
+	threshold: 6
+expansions = 301.00
+*************
+p = 301.00
+prePrediction_971 = 11351.03
+*************
+	threshold: 6
+expansions = 26701.00
+*************
+p = 26701.00
+prePrediction_972 = 11366.81
+*************
+	threshold: 6
+expansions = 27707.00
+*************
+p = 27707.00
+prePrediction_973 = 11383.58
+*************
+	threshold: 6
+expansions = 18751.00
+*************
+p = 18751.00
+prePrediction_974 = 11391.14
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_975 = 11380.66
+*************
+	threshold: 6
+expansions = 42667.00
+*************
+p = 42667.00
+prePrediction_976 = 11412.68
+*************
+	threshold: 6
+expansions = 9841.00
+*************
+p = 9841.00
+prePrediction_977 = 11411.08
+*************
+	threshold: 6
+expansions = 1165.00
+*************
+p = 1165.00
+prePrediction_978 = 11400.61
+*************
+	threshold: 6
+expansions = 25036.00
+*************
+p = 25036.00
+prePrediction_979 = 11414.52
+*************
+	threshold: 6
+expansions = 29048.00
+*************
+p = 29048.00
+prePrediction_980 = 11432.50
+*************
+	threshold: 6
+expansions = 6576.00
+*************
+p = 6576.00
+prePrediction_981 = 11427.55
+*************
+	threshold: 6
+expansions = 33538.00
+*************
+p = 33538.00
+prePrediction_982 = 11450.05
+*************
+	threshold: 6
+expansions = 12289.00
+*************
+p = 12289.00
+prePrediction_983 = 11450.90
+*************
+	threshold: 6
+expansions = 13451.00
+*************
+p = 13451.00
+prePrediction_984 = 11452.93
+*************
+	threshold: 6
+expansions = 1093.00
+*************
+p = 1093.00
+prePrediction_985 = 11442.42
+*************
+	threshold: 6
+expansions = 6127.00
+*************
+p = 6127.00
+prePrediction_986 = 11437.04
+*************
+	threshold: 6
+expansions = 16753.00
+*************
+p = 16753.00
+prePrediction_987 = 11442.42
+*************
+	threshold: 6
+expansions = 9283.00
+*************
+p = 9283.00
+prePrediction_988 = 11440.23
+*************
+	threshold: 6
+expansions = 13432.00
+*************
+p = 13432.00
+prePrediction_989 = 11442.25
+*************
+	threshold: 6
+expansions = 5305.00
+*************
+p = 5305.00
+prePrediction_990 = 11436.05
+*************
+	threshold: 6
+expansions = 1498.00
+*************
+p = 1498.00
+prePrediction_991 = 11426.04
+*************
+	threshold: 6
+expansions = 841.00
+*************
+p = 841.00
+prePrediction_992 = 11415.38
+*************
+	threshold: 6
+expansions = 3316.00
+*************
+p = 3316.00
+prePrediction_993 = 11407.23
+*************
+	threshold: 6
+expansions = 1057.00
+*************
+p = 1057.00
+prePrediction_994 = 11396.83
+*************
+	threshold: 6
+expansions = 10939.00
+*************
+p = 10939.00
+prePrediction_995 = 11396.37
+*************
+	threshold: 6
+expansions = 1291.00
+*************
+p = 1291.00
+prePrediction_996 = 11386.23
+*************
+	threshold: 6
+expansions = 6439.00
+*************
+p = 6439.00
+prePrediction_997 = 11381.27
+*************
+	threshold: 6
+expansions = 16159.00
+*************
+p = 16159.00
+prePrediction_998 = 11386.06
+*************
+	threshold: 6
+expansions = 6220.00
+*************
+p = 6220.00
+prePrediction_999 = 11380.89
+*************
+totalPrediction = 11380.89
+bc: 1, cc: 11380.89
+ss_probes = 1000
+Actual search time: 0.33s [t=0.34s]
+Initial state h value: 6.
+Expanded 0 state(s).
+Reopened 0 state(s).
+Evaluated 1 state(s).
+Evaluations: 1
+Generated 0 state(s).
+Dead ends: 0 state(s).
+Expanded until last jump: 0 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 1 state(s).
+Generated until last jump: 0 state(s).
+Number of registered states: 120
+Search time: 0.33s
+Total time: 0.34s
+Search stopped without finding a solution.
+Peak memory: 3148 KB

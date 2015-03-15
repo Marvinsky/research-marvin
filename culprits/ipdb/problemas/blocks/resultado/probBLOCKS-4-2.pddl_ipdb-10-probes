@@ -1,0 +1,114 @@
+reading input... [t=0.00s]
+Simplifying transitions... done!
+done reading input! [t=0.00s]
+building causal graph...done! [t=0.00s]
+packing state variables...done! [t=0.00s]
+Variables: 9
+Facts: 30
+Bytes per state: 4
+done initalizing global data [t=0.00s]
+Average operator cost: 1.00
+PDB collection construction time: 0.00s
+done calculating initial pattern collection and candidate patterns for the search
+current collection size is 15
+current initial h value: 6
+pattern: [2, 6] - improvement: 8
+pattern: [3, 7] - improvement: 5
+pattern: [4, 8] - improvement: 1
+Improvement below threshold. Stop hill climbing.
+Pruned 0 of 1 cliques
+Pruned 0 of 3 PDBs
+Dominance pruning took 0.00s
+iPDB: iterations = 1
+iPDB: num_patterns = 3
+iPDB: size = 15
+iPDB: generated = 15
+iPDB: rejected = 0
+iPDB: max_pdb_size = 10
+iPDB: hill climbing time: 0.01s
+Pattern generation (Haslum et al.) time: 0.01s
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+77: heuristics.size() = 1
+0 = 6
+f = 6 [1 evaluated, 0 expanded, t=0.01s, 3008 KB,generated_states:,0,dead_end_states:0,Dup States:-1,]
+Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0.01s, 3008 KB]
+	threshold: 6
+expansions = 3280.00
+*************
+p = 3280.00
+prePrediction = 3280.00
+*************
+	threshold: 6
+expansions = 11084.00
+*************
+p = 11084.00
+prePrediction = 7182.00
+*************
+	threshold: 6
+expansions = 8311.00
+*************
+p = 8311.00
+prePrediction = 7558.33
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction = 5822.75
+*************
+	threshold: 6
+expansions = 2551.00
+*************
+p = 2551.00
+prePrediction = 5168.40
+*************
+	threshold: 6
+expansions = 616.00
+*************
+p = 616.00
+prePrediction = 4409.67
+*************
+	threshold: 6
+expansions = 9640.00
+*************
+p = 9640.00
+prePrediction = 5156.86
+*************
+	threshold: 6
+expansions = 15673.00
+*************
+p = 15673.00
+prePrediction = 6471.37
+*************
+	threshold: 6
+expansions = 3682.00
+*************
+p = 3682.00
+prePrediction = 6161.44
+*************
+	threshold: 6
+expansions = 8461.00
+*************
+p = 8461.00
+prePrediction = 6391.40
+*************
+totalPrediction = 6391.40
+bc: 1, cc: 6391.40
+ss_probes = 10
+Actual search time: 0.00s [t=0.01s]
+Initial state h value: 6.
+Expanded 0 state(s).
+Reopened 0 state(s).
+Evaluated 1 state(s).
+Evaluations: 1
+Generated 0 state(s).
+Dead ends: 0 state(s).
+Expanded until last jump: 0 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 1 state(s).
+Generated until last jump: 0 state(s).
+Number of registered states: 72
+Search time: 0.00s
+Total time: 0.01s
+Search stopped without finding a solution.
+Peak memory: 3008 KB
