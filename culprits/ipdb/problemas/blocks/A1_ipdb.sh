@@ -19,7 +19,7 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < Astarblocks1.sas
 
-src/search/downward-release --global_probes 1000  --domain_name blocks --problem_name probBLOCKS-4-0.pddl --heuristic_name ipdb --search "astar(ipdb())" <  Astarblocks1 >> ${RESULTS}/probBLOCKS-4-0.pddl_ipdb
+src/search/downward-release --global_probes 10  --domain_name blocks --problem_name probBLOCKS-4-0.pddl --heuristic_name ipdb --search "astar(ipdb())" <  Astarblocks1 >> ${RESULTS}/probBLOCKS-4-0.pddl_ipdb
 
 
 

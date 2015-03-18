@@ -21,11 +21,11 @@ RESULTS=/home/marvin/marvin/testdfs/merge_and_shrink/problemas/blocks/resultado
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/blocks/probBLOCKS-16-0.pddl Astarblocks33  blocks  probBLOCKS-16-0.pddl  merge_and_shrink
+python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/blocks/probBLOCKS-16-1.pddl Astarblocks33  blocks  probBLOCKS-16-1.pddl  merge_and_shrink
 
 src/preprocess/preprocess < Astarblocks33.sas
 
-src/search/downward --search "dfs(merge_and_shrink())" <  Astarblocks33 >> ${RESULTS}/probBLOCKS-16-0.pddl
+src/search/downward --search "dfs(merge_and_shrink())" <  Astarblocks33 >> ${RESULTS}/probBLOCKS-16-1.pddl
 
 
 
@@ -34,8 +34,4 @@ rm Astarblocks33
 
 
 rm Astarblocks33.sas
-
-
-
-rm src/translate/arquivos/probBLOCKS-16-0.pddl
 
