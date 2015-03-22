@@ -52,18 +52,15 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 	outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
 
-	outfile<<"src/search/downward --search \"dfs("<<heuristic<<"())\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	outfile<<"src/search/downward --global_probes 100 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<"  --search \"dfs("<<heuristic<<"())\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
 
 
 	
 	//outfile<<"src/search/downward --search \"dfs("<<heuristic<<"(pdb_max_size=2000000, collection_max_size=20000000, num_samples=1000, min_improvement=10, cost_type=NORMAL))\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	
 
-
-
 	outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
 	outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
-        //outfile<<"\n\nrm "<<"src/translate/arquivos/"<<problema.c_str()<<"\n\n";
 
 	outfile.close();
 
@@ -83,7 +80,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	cout<<allow<<"\n";
 	system(allow.c_str());
 	executeFile = "sh "+arquivo;
-	system(executeFile.c_str());
+	//system(executeFile.c_str());
 }
 
 
