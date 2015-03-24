@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss/blocks/fdist/probBLOCKS-5-0.pddl
-predictionSS: 464.654
+predictionSS: 465.048
 threshold: 12
 g:0
 size: 1
@@ -40,25 +40,25 @@ size: 2
 
 g:7
 size: 1
-	f: 12	q: 110
+	f: 12	q: 110.268
 
 g:8
 size: 1
-	f: 12	q: 109
+	f: 12	q: 109.308
 
 g:9
 size: 1
-	f: 12	q: 6
+	f: 12	q: 6.204
 
 g:10
 size: 1
-	f: 12	q: 6
+	f: 12	q: 6.204
 
 g:11
 size: 1
-	f: 12	q: 2
+	f: 12	q: 2.032
 
 g:12
 size: 1
-	f: 12	q: 2
+	f: 12	q: 2.032
 
