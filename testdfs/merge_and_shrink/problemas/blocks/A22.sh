@@ -35,7 +35,3 @@ rm Astarblocks22
 
 rm Astarblocks22.sas
 
-
-
-rm src/translate/arquivos/probBLOCKS-11-0.pddl
-
