@@ -35,7 +35,3 @@ rm Astarblocks19
 
 rm Astarblocks19.sas
 
-
-
-rm src/translate/arquivos/probBLOCKS-10-0.pddl
-

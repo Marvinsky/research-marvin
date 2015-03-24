@@ -1,76 +1,55 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss/blocks/fdist/probBLOCKS-4-0.pddl
-predictionSS: 8286.3
+	/home/marvin/marvin/testss/ipdb/reportss/blocks/fdist/probBLOCKS-4-0.pddl
+predictionSS: 7789.43
 threshold: 12
 g:0
 size: 1
 	f: 6	q: 1
 
 g:1
-size: 2
-	f: 6	q: 1
-	f: 8	q: 3
+size: 1
+	f: 0	q: 4
 
 g:2
-size: 3
-	f: 6	q: 1
-	f: 8	q: 7
-	f: 10	q: 8
+size: 1
+	f: 1	q: 16
 
 g:3
-size: 4
-	f: 6	q: 1
-	f: 8	q: 9
-	f: 10	q: 27
-	f: 12	q: 14
+size: 1
+	f: 2	q: 51.776
 
 g:4
-size: 4
-	f: 6	q: 1
-	f: 8	q: 11
-	f: 10	q: 59
-	f: 12	q: 87
+size: 1
+	f: 3	q: 154.88
 
 g:5
-size: 4
-	f: 6	q: 1
-	f: 8	q: 12
-	f: 10	q: 79
-	f: 12	q: 239
+size: 1
+	f: 4	q: 321.952
 
 g:6
-size: 4
-	f: 6	q: 1
-	f: 8	q: 13
-	f: 10	q: 103
-	f: 12	q: 507
+size: 1
+	f: 5	q: 613.52
 
 g:7
-size: 3
-	f: 8	q: 14
-	f: 10	q: 116
-	f: 12	q: 689
+size: 1
+	f: 6	q: 801.904
 
 g:8
-size: 3
-	f: 8	q: 14
-	f: 10	q: 130
-	f: 12	q: 921
+size: 1
+	f: 7	q: 1052.56
 
 g:9
-size: 2
-	f: 10	q: 144
-	f: 12	q: 1051
+size: 1
+	f: 8	q: 1163.15
 
 g:10
-size: 2
-	f: 10	q: 144
-	f: 12	q: 1195
+size: 1
+	f: 9	q: 1202.9
 
 g:11
 size: 1
-	f: 12	q: 1339
+	f: 10	q: 1202.9
 
 g:12
 size: 1
-	f: 12	q: 1339
+	f: 11	q: 1202.9
 
