@@ -23,23 +23,23 @@ iPDB: size = 35
 iPDB: generated = 35
 iPDB: rejected = 0
 iPDB: max_pdb_size = 14
-iPDB: hill climbing time: 0.04s
-Pattern generation (Haslum et al.) time: 0.04s
+iPDB: hill climbing time: 0.02s
+Pattern generation (Haslum et al.) time: 0.02s
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
-f = 10 [1 evaluated, 0 expanded, t=0.04s, 3284 KB]
-Best heuristic value: 10 [g=0, 1 evaluated, 0 expanded, t=0.04s, 3284 KB]
-Best heuristic value: 9 [g=1, 2 evaluated, 1 expanded, t=0.04s, 3284 KB]
-Best heuristic value: 8 [g=2, 9 evaluated, 2 expanded, t=0.04s, 3284 KB]
-Best heuristic value: 7 [g=3, 12 evaluated, 3 expanded, t=0.04s, 3284 KB]
-Best heuristic value: 6 [g=4, 16 evaluated, 4 expanded, t=0.04s, 3284 KB]
-Best heuristic value: 5 [g=5, 20 evaluated, 5 expanded, t=0.04s, 3284 KB]
-Best heuristic value: 4 [g=6, 23 evaluated, 6 expanded, t=0.04s, 3284 KB]
-Best heuristic value: 3 [g=7, 26 evaluated, 7 expanded, t=0.04s, 3284 KB]
-Best heuristic value: 2 [g=8, 29 evaluated, 8 expanded, t=0.04s, 3284 KB]
-Best heuristic value: 1 [g=9, 33 evaluated, 11 expanded, t=0.04s, 3284 KB]
-Best heuristic value: 0 [g=10, 34 evaluated, 12 expanded, t=0.04s, 3284 KB]
+f = 10 [1 evaluated, 0 expanded, t=0.02s, 3284 KB]
+Best heuristic value: 10 [g=0, 1 evaluated, 0 expanded, t=0.02s, 3284 KB]
+Best heuristic value: 9 [g=1, 2 evaluated, 1 expanded, t=0.02s, 3284 KB]
+Best heuristic value: 8 [g=2, 9 evaluated, 2 expanded, t=0.02s, 3284 KB]
+Best heuristic value: 7 [g=3, 12 evaluated, 3 expanded, t=0.02s, 3284 KB]
+Best heuristic value: 6 [g=4, 16 evaluated, 4 expanded, t=0.02s, 3284 KB]
+Best heuristic value: 5 [g=5, 20 evaluated, 5 expanded, t=0.02s, 3284 KB]
+Best heuristic value: 4 [g=6, 23 evaluated, 6 expanded, t=0.02s, 3284 KB]
+Best heuristic value: 3 [g=7, 26 evaluated, 7 expanded, t=0.02s, 3284 KB]
+Best heuristic value: 2 [g=8, 29 evaluated, 8 expanded, t=0.02s, 3284 KB]
+Best heuristic value: 1 [g=9, 33 evaluated, 11 expanded, t=0.02s, 3284 KB]
+Best heuristic value: 0 [g=10, 34 evaluated, 12 expanded, t=0.02s, 3284 KB]
 Solution found!
-f = 11 [34 evaluated, 21 expanded, t=0.04s, 3284 KB]
+f = 11 [34 evaluated, 21 expanded, t=0.02s, 3284 KB]
 count_last_nodes_generated = 8.00
 nodes_expanded.size() = 17
 mlevels.size() = 1
@@ -51,7 +51,7 @@ Directory created successfully.
 print v_timer
 -0.00
 f = 10	q = 20
-Actual search time: 0.00s [t=0.04s]
+Actual search time: 0.00s [t=0.02s]
 unstack a f (1)
 stack a d (1)
 pick-up b (1)
@@ -77,6 +77,6 @@ Evaluated until last jump: 34 state(s).
 Generated until last jump: 44 state(s).
 Number of registered states: 34
 Search time: 0.00s
-Total time: 0.04s
+Total time: 0.02s
 Solution found.
 Peak memory: 3284 KB

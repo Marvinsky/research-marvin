@@ -24,22 +24,22 @@ iPDB: size = 24
 iPDB: generated = 24
 iPDB: rejected = 0
 iPDB: max_pdb_size = 12
-iPDB: hill climbing time: 0.02s
-Pattern generation (Haslum et al.) time: 0.02s
+iPDB: hill climbing time: 0.00s
+Pattern generation (Haslum et al.) time: 0.00s
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
-f = 6 [1 evaluated, 0 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 5 [g=1, 3 evaluated, 1 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 4 [g=2, 5 evaluated, 2 expanded, t=0.02s, 3284 KB]
-f = 7 [7 evaluated, 3 expanded, t=0.02s, 3284 KB]
-f = 8 [10 evaluated, 5 expanded, t=0.02s, 3284 KB]
-f = 10 [17 evaluated, 11 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 3 [g=7, 32 evaluated, 19 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 2 [g=8, 34 evaluated, 20 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 1 [g=9, 36 evaluated, 21 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 0 [g=10, 37 evaluated, 22 expanded, t=0.02s, 3284 KB]
+f = 6 [1 evaluated, 0 expanded, t=0.00s, 3284 KB]
+Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0.00s, 3284 KB]
+Best heuristic value: 5 [g=1, 3 evaluated, 1 expanded, t=0.00s, 3284 KB]
+Best heuristic value: 4 [g=2, 5 evaluated, 2 expanded, t=0.00s, 3284 KB]
+f = 7 [7 evaluated, 3 expanded, t=0.00s, 3284 KB]
+f = 8 [10 evaluated, 5 expanded, t=0.00s, 3284 KB]
+f = 10 [17 evaluated, 11 expanded, t=0.00s, 3284 KB]
+Best heuristic value: 3 [g=7, 32 evaluated, 19 expanded, t=0.00s, 3284 KB]
+Best heuristic value: 2 [g=8, 34 evaluated, 20 expanded, t=0.00s, 3284 KB]
+Best heuristic value: 1 [g=9, 36 evaluated, 21 expanded, t=0.00s, 3284 KB]
+Best heuristic value: 0 [g=10, 37 evaluated, 22 expanded, t=0.00s, 3284 KB]
 Solution found!
-f = 11 [37 evaluated, 27 expanded, t=0.02s, 3284 KB]
+f = 11 [37 evaluated, 27 expanded, t=0.00s, 3284 KB]
 count_last_nodes_generated = 4.00
 nodes_expanded.size() = 22
 mlevels.size() = 4
@@ -49,15 +49,15 @@ tarefa = probBLOCKS-5-1.pddl
 heuristica = ipdb
 Directory created successfully.
 print v_timer
--0.00
--0.00
--0.00
--0.00
+0.00
+0.00
+0.00
+0.00
 f = 6	q = 3
 f = 7	q = 2
 f = 8	q = 5
 f = 10	q = 16
-Actual search time: 0.00s [t=0.02s]
+Actual search time: 0.00s [t=0.00s]
 unstack b a (1)
 stack b c (1)
 unstack a d (1)
@@ -83,6 +83,6 @@ Evaluated until last jump: 37 state(s).
 Generated until last jump: 57 state(s).
 Number of registered states: 37
 Search time: 0.00s
-Total time: 0.02s
+Total time: 0.00s
 Solution found.
 Peak memory: 3284 KB
