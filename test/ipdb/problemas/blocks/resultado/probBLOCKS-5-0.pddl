@@ -25,25 +25,41 @@ iPDB: max_pdb_size = 12
 iPDB: hill climbing time: 0.00s
 Pattern generation (Haslum et al.) time: 0.00s
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
-f = 6 [1 evaluated, 0 expanded, t=0.00s, 3284 KB]
-Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0.00s, 3284 KB]
-Best heuristic value: 5 [g=1, 3 evaluated, 1 expanded, t=0.00s, 3284 KB]
-Best heuristic value: 4 [g=2, 4 evaluated, 2 expanded, t=0.00s, 3284 KB]
-f = 7 [4 evaluated, 3 expanded, t=0.00s, 3284 KB]
-f = 8 [6 evaluated, 4 expanded, t=0.00s, 3284 KB]
-f = 10 [12 evaluated, 8 expanded, t=0.00s, 3284 KB]
-f = 11 [20 evaluated, 12 expanded, t=0.00s, 3284 KB]
-f = 12 [21 evaluated, 13 expanded, t=0.00s, 3284 KB]
-Best heuristic value: 3 [g=9, 30 evaluated, 18 expanded, t=0.00s, 3284 KB]
-Best heuristic value: 2 [g=10, 33 evaluated, 19 expanded, t=0.00s, 3284 KB]
-Best heuristic value: 1 [g=11, 37 evaluated, 22 expanded, t=0.00s, 3284 KB]
-Best heuristic value: 0 [g=12, 38 evaluated, 23 expanded, t=0.00s, 3284 KB]
+generated_by_level = 0
+expanded_by_level = 1
+f = 6 [1 evaluated, 0 expanded, t=0.00s, 3320 KB]
+Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0.00s, 3320 KB]
+Best heuristic value: 5 [g=1, 3 evaluated, 1 expanded, t=0.00s, 3320 KB]
+Best heuristic value: 4 [g=2, 4 evaluated, 2 expanded, t=0.00s, 3320 KB]
+generated_by_level = 5
+expanded_by_level = 3
+f = 7 [4 evaluated, 3 expanded, t=0.00s, 3320 KB]
+generated_by_level = 8
+expanded_by_level = 4
+f = 8 [6 evaluated, 4 expanded, t=0.00s, 3320 KB]
+generated_by_level = 18
+expanded_by_level = 8
+f = 10 [12 evaluated, 8 expanded, t=0.00s, 3320 KB]
+generated_by_level = 30
+expanded_by_level = 12
+f = 11 [20 evaluated, 12 expanded, t=0.00s, 3320 KB]
+generated_by_level = 32
+expanded_by_level = 13
+f = 12 [21 evaluated, 13 expanded, t=0.00s, 3320 KB]
+Best heuristic value: 3 [g=9, 30 evaluated, 18 expanded, t=0.00s, 3320 KB]
+Best heuristic value: 2 [g=10, 33 evaluated, 19 expanded, t=0.00s, 3320 KB]
+Best heuristic value: 1 [g=11, 37 evaluated, 22 expanded, t=0.00s, 3320 KB]
+Best heuristic value: 0 [g=12, 38 evaluated, 23 expanded, t=0.00s, 3320 KB]
 Solution found!
-f = 14 [38 evaluated, 30 expanded, t=0.00s, 3284 KB]
+generated_by_level = 59
+expanded_by_level = 30
+f = 14 [38 evaluated, 30 expanded, t=0.00s, 3320 KB]
 count_last_nodes_generated = 6.00
 nodes_expanded.size() = 23
-mlevels.size() = 6
-count_level = 6
+depth = 14
+F_boundary = 12
+mlevels.<size() = 6
+count_level = 7
 dominio = blocks
 tarefa = probBLOCKS-5-0.pddl
 heuristica = ipdb
@@ -56,6 +72,7 @@ print v_timer
 0.00
 0.00
 f = 6	q = 3
+f = 7	q = 1
 f = 8	q = 4
 f = 10	q = 4
 f = 11	q = 1
@@ -90,4 +107,4 @@ Number of registered states: 38
 Search time: 0.00s
 Total time: 0.00s
 Solution found.
-Peak memory: 3284 KB
+Peak memory: 3320 KB

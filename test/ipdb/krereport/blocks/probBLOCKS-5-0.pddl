@@ -2,7 +2,8 @@
 	totalniveles: 6
 	f-value		#nodesByLevel		time		#nodesExpanded
 	6		3			0			3
-	8		4			0			7
-	10		4			0			11
-	11		1			0			12
-	12		17			0			29
+	7		1			0			4
+	8		4			0			8
+	10		4			0			12
+	11		1			0			13
+	12		17			0			30

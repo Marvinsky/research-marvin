@@ -25,33 +25,57 @@ iPDB: max_pdb_size = 14
 iPDB: hill climbing time: 0.02s
 Pattern generation (Haslum et al.) time: 0.02s
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
-f = 10 [1 evaluated, 0 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 10 [g=0, 1 evaluated, 0 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 9 [g=1, 2 evaluated, 1 expanded, t=0.02s, 3284 KB]
-f = 12 [3 evaluated, 2 expanded, t=0.02s, 3284 KB]
-f = 13 [4 evaluated, 3 expanded, t=0.02s, 3284 KB]
-f = 14 [6 evaluated, 4 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 8 [g=6, 12 evaluated, 8 expanded, t=0.02s, 3284 KB]
-f = 15 [17 evaluated, 10 expanded, t=0.02s, 3284 KB]
-f = 16 [18 evaluated, 11 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 7 [g=9, 39 evaluated, 23 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 6 [g=10, 40 evaluated, 24 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 5 [g=11, 42 evaluated, 25 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 4 [g=12, 43 evaluated, 26 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 3 [g=13, 45 evaluated, 27 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 2 [g=14, 83 evaluated, 44 expanded, t=0.02s, 3284 KB]
-f = 17 [103 evaluated, 53 expanded, t=0.02s, 3284 KB]
-f = 18 [121 evaluated, 61 expanded, t=0.02s, 3284 KB]
-f = 19 [510 evaluated, 262 expanded, t=0.02s, 3284 KB]
-f = 20 [554 evaluated, 286 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 1 [g=19, 1305 evaluated, 771 expanded, t=0.02s, 3284 KB]
-Best heuristic value: 0 [g=20, 1306 evaluated, 772 expanded, t=0.02s, 3284 KB]
+generated_by_level = 0
+expanded_by_level = 1
+f = 10 [1 evaluated, 0 expanded, t=0.02s, 3320 KB]
+Best heuristic value: 10 [g=0, 1 evaluated, 0 expanded, t=0.02s, 3320 KB]
+Best heuristic value: 9 [g=1, 2 evaluated, 1 expanded, t=0.02s, 3320 KB]
+generated_by_level = 3
+expanded_by_level = 2
+f = 12 [3 evaluated, 2 expanded, t=0.02s, 3320 KB]
+generated_by_level = 5
+expanded_by_level = 3
+f = 13 [4 evaluated, 3 expanded, t=0.02s, 3320 KB]
+generated_by_level = 8
+expanded_by_level = 4
+f = 14 [6 evaluated, 4 expanded, t=0.02s, 3320 KB]
+Best heuristic value: 8 [g=6, 12 evaluated, 8 expanded, t=0.02s, 3320 KB]
+generated_by_level = 25
+expanded_by_level = 10
+f = 15 [17 evaluated, 10 expanded, t=0.02s, 3320 KB]
+generated_by_level = 27
+expanded_by_level = 11
+f = 16 [18 evaluated, 11 expanded, t=0.02s, 3320 KB]
+Best heuristic value: 7 [g=9, 39 evaluated, 23 expanded, t=0.02s, 3320 KB]
+Best heuristic value: 6 [g=10, 40 evaluated, 24 expanded, t=0.02s, 3320 KB]
+Best heuristic value: 5 [g=11, 42 evaluated, 25 expanded, t=0.02s, 3320 KB]
+Best heuristic value: 4 [g=12, 43 evaluated, 26 expanded, t=0.02s, 3320 KB]
+Best heuristic value: 3 [g=13, 45 evaluated, 27 expanded, t=0.02s, 3320 KB]
+Best heuristic value: 2 [g=14, 83 evaluated, 44 expanded, t=0.02s, 3320 KB]
+generated_by_level = 160
+expanded_by_level = 53
+f = 17 [103 evaluated, 53 expanded, t=0.02s, 3320 KB]
+generated_by_level = 187
+expanded_by_level = 61
+f = 18 [121 evaluated, 61 expanded, t=0.02s, 3320 KB]
+generated_by_level = 849
+expanded_by_level = 262
+f = 19 [510 evaluated, 262 expanded, t=0.02s, 3320 KB]
+generated_by_level = 935
+expanded_by_level = 286
+f = 20 [554 evaluated, 286 expanded, t=0.02s, 3320 KB]
+Best heuristic value: 1 [g=19, 1305 evaluated, 771 expanded, t=0.02s, 3320 KB]
+Best heuristic value: 0 [g=20, 1306 evaluated, 772 expanded, t=0.02s, 3320 KB]
 Solution found!
-f = 21 [1306 evaluated, 816 expanded, t=0.02s, 3284 KB]
+generated_by_level = 2452
+expanded_by_level = 816
+f = 21 [1306 evaluated, 816 expanded, t=0.02s, 3320 KB]
 count_last_nodes_generated = 43.00
 nodes_expanded.size() = 57
-mlevels.size() = 10
-count_level = 10
+depth = 22
+F_boundary = 20
+mlevels.<size() = 10
+count_level = 11
 dominio = blocks
 tarefa = probBLOCKS-6-2.pddl
 heuristica = ipdb
@@ -67,7 +91,7 @@ print v_timer
 -0.00
 -0.00
 -0.00
-f = 10	q = 1
+f = 10	q = 2
 f = 12	q = 1
 f = 13	q = 1
 f = 14	q = 6
@@ -115,4 +139,4 @@ Number of registered states: 1306
 Search time: 0.00s
 Total time: 0.02s
 Solution found.
-Peak memory: 3284 KB
+Peak memory: 3320 KB
