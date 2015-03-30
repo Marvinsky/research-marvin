@@ -19,7 +19,7 @@ pattern: [4, 8] - improvement: 1
 pattern: [5, 6] - improvement: 5
 found a better pattern with improvement 15
 pattern: [3, 7]
-Hill climbing time so far: 0.00s
+Hill climbing time so far: 0.02s
 current collection size is 25
 current initial h value: 6
 pattern: [1, 6] - improvement: 7
@@ -78,7 +78,7 @@ pattern: [2, 3, 5, 6, 7, 8] - improvement: 400
 pattern: [3, 4, 5, 6, 7, 8] - improvement: 113
 found a better pattern with improvement 400
 pattern: [2, 3, 5, 6, 7, 8]
-Hill climbing time so far: 0.10s
+Hill climbing time so far: 0.08s
 current collection size is 1825
 current initial h value: 6
 pattern: [3, 4, 6, 7, 8] - improvement: 64
@@ -127,31 +127,37 @@ iPDB: size = 20000
 iPDB: generated = 43
 iPDB: rejected = 0
 iPDB: max_pdb_size = 20000
-iPDB: hill climbing time: 0.24s
-Pattern generation (Haslum et al.) time: 0.24s
+iPDB: hill climbing time: 0.22s
+Pattern generation (Haslum et al.) time: 0.22s
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
-f = 6 [1 evaluated, 0 expanded, t=0.24s, 3568 KB]
-Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0.24s, 3568 KB]
-Best heuristic value: 5 [g=1, 3 evaluated, 1 expanded, t=0.24s, 3568 KB]
-Best heuristic value: 4 [g=2, 6 evaluated, 2 expanded, t=0.24s, 3568 KB]
-Best heuristic value: 3 [g=3, 9 evaluated, 3 expanded, t=0.24s, 3568 KB]
-Best heuristic value: 2 [g=4, 11 evaluated, 4 expanded, t=0.24s, 3568 KB]
-Best heuristic value: 1 [g=5, 13 evaluated, 5 expanded, t=0.24s, 3568 KB]
-Best heuristic value: 0 [g=6, 14 evaluated, 6 expanded, t=0.24s, 3568 KB]
+generated_by_level = 0
+expanded_by_level = 1
+f = 6 [1 evaluated, 0 expanded, t=0.22s, 3604 KB]
+Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0.22s, 3604 KB]
+Best heuristic value: 5 [g=1, 3 evaluated, 1 expanded, t=0.22s, 3604 KB]
+Best heuristic value: 4 [g=2, 6 evaluated, 2 expanded, t=0.22s, 3604 KB]
+Best heuristic value: 3 [g=3, 9 evaluated, 3 expanded, t=0.22s, 3604 KB]
+Best heuristic value: 2 [g=4, 11 evaluated, 4 expanded, t=0.22s, 3604 KB]
+Best heuristic value: 1 [g=5, 13 evaluated, 5 expanded, t=0.22s, 3604 KB]
+Best heuristic value: 0 [g=6, 14 evaluated, 6 expanded, t=0.22s, 3604 KB]
 Solution found!
-f = 8 [14 evaluated, 7 expanded, t=0.24s, 3568 KB]
+generated_by_level = 18
+expanded_by_level = 7
+f = 8 [14 evaluated, 7 expanded, t=0.22s, 3604 KB]
 count_last_nodes_generated = 0.00
 nodes_expanded.size() = 11
-mlevels.size() = 1
-count_level = 1
+depth = 8
+F_boundary = 6
+mlevels.<size() = 1
+count_level = 2
 dominio = blocks
 tarefa = probBLOCKS-4-0.pddl
 heuristica = ipdb
 Directory created successfully.
 print v_timer
-0.00
+-0.00
 f = 6	q = 7
-Actual search time: 0.00s [t=0.24s]
+Actual search time: 0.00s [t=0.22s]
 pick-up b (1)
 stack b a (1)
 pick-up c (1)
@@ -173,6 +179,6 @@ Evaluated until last jump: 14 state(s).
 Generated until last jump: 18 state(s).
 Number of registered states: 14
 Search time: 0.00s
-Total time: 0.24s
+Total time: 0.22s
 Solution found.
-Peak memory: 3568 KB
+Peak memory: 3604 KB
