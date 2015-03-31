@@ -1,4 +1,0 @@
-barman-opt11-strips
-domain.pddl
-1					
-pfile01-001.pddl				

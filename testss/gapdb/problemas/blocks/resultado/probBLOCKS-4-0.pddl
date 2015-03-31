@@ -9,7028 +9,7022 @@ Bytes per state: 4
 done initalizing global data [t=0.00s]
 calling ScalarEvaluator Min parser
 calling ScalarEvaluator Min parser
-use_saved_pdbs = 1
-No patterns stored,calling load_GA_Patterns_from_file
-problem_name_mod = dat/probBLOCKS-4-0.dat
-Calling load_GA_Patterns_from_file
-log_file:dat/probBLOCKS-4-0.dat,g_plan_filename:sas_plan
-is_open true
-line:sas_plan:returning best heuristic(GAPDB)[,0,]:[0,1,2,3,4,5,6,7,8]-,mp:,0.5000000,size:,50000,disjoint_patterns:,1-best_fitness:5.15255,,initial value:6,GAPDB generation time:0.06
-inside the line: 312
-
-stored_GA_patterns.size:1,time:0.00
-,problem_name_mod:sas_plan:
-disjoint_patterns:,1
-mutation_rate_string:mp:,0.5000000,
-pdb_max_size_string:size:,50000,
-line:sas_plan:returning best heuristic(GAPDB)[,0,]:[0,1,2,3,4,5,6,7,8]-,mp:,0.5000000,size:,50000,disjoint_patterns:,1-best_fitness:5.15255,,initial value:6,GAPDB generation time:0.06
+use_saved_pdbs = 0
+best_fitness = 5.15
+Pattern generation (Edelkamp) time: 0.02
+callind dump_file() with pdb_dump_counter = 0
+dat directory created.
+First call, removing system_call to avoid duplicate pdbs:/bin/dat/rm probBLOCKS-4-0.dat
+grep status:32512
+file_name: dat/probBLOCKS-4-0.dat
+returning best heuristic(GAPDB)[,0,]:[0, 1, 2, 3, 4, 5, 6, 7, 8]
+,mp:,0.50,disjoint_patterns:,0,size:,50000-best_fitness:5.15,,initial value:6,GAPDB generation time:0.02
 returning MinEvaluator
 SSSearch ...
 Initial heuristic value: 6
 h_min: 6 depth: 0 #states: 0 time: 0.00s
-cleared store_GA_patterns.
 	threshold: 12
 
-expansions = 15701.00
+expansions = 885.00
 **********
-p = 15701.00
-prePre = 15701.00
-**********
-	threshold: 12
-
-expansions = 11861.00
-**********
-p = 11861.00
-prePre = 13781.00
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9786.33
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 7549.00
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 6312.20
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 5399.67
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 4969.57
-**********
-	threshold: 12
-
-expansions = 16965.00
-**********
-p = 16965.00
-prePre = 6469.00
-**********
-	threshold: 12
-
-expansions = 43413.00
-**********
-p = 43413.00
-prePre = 10573.89
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 10369.80
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9551.18
-**********
-	threshold: 12
-
-expansions = 12933.00
-**********
-p = 12933.00
-prePre = 9833.00
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 9333.00
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 8837.00
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 8367.67
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 7994.00
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 7578.65
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 7233.44
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 6947.32
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 6725.80
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 6491.10
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 6487.18
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 6576.13
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 6407.00
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 6188.04
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 6019.15
-**********
-	threshold: 12
-
-expansions = 11781.00
-**********
-p = 11781.00
-prePre = 6232.56
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 6043.29
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 5867.07
-**********
-	threshold: 12
-
-expansions = 22613.00
-**********
-p = 22613.00
-prePre = 6425.27
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 6262.03
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 6082.00
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 5952.15
-**********
-	threshold: 12
-
-expansions = 59397.00
-**********
-p = 59397.00
-prePre = 7524.06
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 7333.00
-**********
-	threshold: 12
-
-expansions = 43413.00
-**********
-p = 43413.00
-prePre = 8335.22
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 8285.22
+p = 885.00
+prePre = 885.00
 **********
 	threshold: 12
 
 expansions = 4181.00
 **********
 p = 4181.00
-prePre = 8177.21
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 7991.46
-**********
-	threshold: 12
-
-expansions = 16965.00
-**********
-p = 16965.00
-prePre = 8215.80
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 8037.00
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 7866.71
-**********
-	threshold: 12
-
-expansions = 202069.00
-**********
-p = 202069.00
-prePre = 12383.05
-**********
-	threshold: 12
-
-expansions = 8901.00
-**********
-p = 8901.00
-prePre = 12303.91
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 12083.58
-**********
-	threshold: 12
-
-expansions = 12741.00
-**********
-p = 12741.00
-prePre = 12097.87
+prePre = 2533.00
 **********
 	threshold: 12
 
 expansions = 837.00
 **********
 p = 837.00
-prePre = 11858.28
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 11621.67
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 11412.35
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 11231.88
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 11021.47
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 10934.23
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 10761.83
-**********
-	threshold: 12
-
-expansions = 90965.00
-**********
-p = 90965.00
-prePre = 12247.07
+prePre = 1967.67
 **********
 	threshold: 12
 
 expansions = 933.00
 **********
 p = 933.00
-prePre = 12041.36
+prePre = 1709.00
 **********
 	threshold: 12
 
-expansions = 2517.00
+expansions = 6405.00
 **********
-p = 2517.00
-prePre = 11871.29
-**********
-	threshold: 12
-
-expansions = 11781.00
-**********
-p = 11781.00
-prePre = 11869.70
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 11776.86
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 11607.71
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 11469.80
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 11341.92
-**********
-	threshold: 12
-
-expansions = 12741.00
-**********
-p = 12741.00
-prePre = 11364.48
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 11205.76
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 11045.25
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 10912.08
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 10984.64
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 10870.43
+p = 6405.00
+prePre = 2648.20
 **********
 	threshold: 12
 
 expansions = 837.00
 **********
 p = 837.00
-prePre = 10722.88
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 10593.52
-**********
-	threshold: 12
-
-expansions = 59397.00
-**********
-p = 59397.00
-prePre = 11290.71
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 11157.00
+prePre = 2346.33
 **********
 	threshold: 12
 
 expansions = 837.00
 **********
 p = 837.00
-prePre = 11013.67
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 11077.88
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10934.95
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10795.83
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 10766.05
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 10643.96
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 10518.85
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10392.04
-**********
-	threshold: 12
-
-expansions = 16917.00
-**********
-p = 16917.00
-prePre = 10473.60
-**********
-	threshold: 12
-
-expansions = 12933.00
-**********
-p = 12933.00
-prePre = 10503.96
+prePre = 2130.71
 **********
 	threshold: 12
 
 expansions = 1797.00
 **********
 p = 1797.00
-prePre = 10397.78
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 10294.16
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 10187.86
+prePre = 2089.00
 **********
 	threshold: 12
 
 expansions = 885.00
 **********
 p = 885.00
-prePre = 10078.41
+prePre = 1955.22
 **********
 	threshold: 12
 
-expansions = 933.00
+expansions = 501.00
 **********
-p = 933.00
-prePre = 9972.07
-**********
-	threshold: 12
-
-expansions = 16965.00
-**********
-p = 16965.00
-prePre = 10052.45
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9948.82
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 10013.45
+p = 501.00
+prePre = 1809.80
 **********
 	threshold: 12
 
 expansions = 4437.00
 **********
 p = 4437.00
-prePre = 9951.49
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9847.64
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9749.70
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9697.22
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9619.47
-**********
-	threshold: 12
-
-expansions = 321093.00
-**********
-p = 321093.00
-prePre = 12898.14
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 12778.00
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 12651.43
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 12546.71
-**********
-	threshold: 12
-
-expansions = 11861.00
-**********
-p = 11861.00
-prePre = 12539.79
-**********
-	threshold: 12
-
-expansions = 79189.00
-**********
-p = 79189.00
-prePre = 13206.28
-**********
-	threshold: 12
-
-expansions = 11861.00
-**********
-p = 11861.00
-prePre = 13192.96
-**********
-	threshold: 12
-
-expansions = 30037.00
-**********
-p = 30037.00
-prePre = 13358.10
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 13251.60
+prePre = 2048.64
 **********
 	threshold: 12
 
 expansions = 9717.00
 **********
 p = 9717.00
-prePre = 13217.62
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 13099.70
-**********
-	threshold: 12
-
-expansions = 1605.00
-**********
-p = 1605.00
-prePre = 12991.26
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 12892.18
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 12817.89
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 12744.96
-**********
-	threshold: 12
-
-expansions = 20661.00
-**********
-p = 20661.00
-prePre = 12816.93
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 12717.65
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 12620.14
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 12512.89
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 12540.86
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 12436.17
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 12344.45
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 12260.45
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 12187.64
-**********
-	threshold: 12
-
-expansions = 59397.00
-**********
-p = 59397.00
-prePre = 12584.36
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 12520.07
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 12424.31
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 12392.41
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 12298.46
-**********
-	threshold: 12
-
-expansions = 29013.00
-**********
-p = 29013.00
-prePre = 12433.26
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 12402.06
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 12311.03
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 12218.04
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 12155.25
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 12085.37
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 12010.78
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 11926.22
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 11900.52
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 11859.80
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 11888.46
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 11831.37
-**********
-	threshold: 12
-
-expansions = 6549.00
-**********
-p = 6549.00
-prePre = 11792.53
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 11719.57
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 11664.94
+prePre = 2687.67
 **********
 	threshold: 12
 
 expansions = 1365.00
 **********
 p = 1365.00
-prePre = 11590.84
+prePre = 2585.92
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 2437.00
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 2394.33
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 2276.00
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 2197.00
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 2150.78
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 2213.00
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 2149.00
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 2196.24
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 2158.45
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 2174.04
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 2104.33
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 2040.20
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 2014.23
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 2176.85
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 2147.86
 **********
 	threshold: 12
 
 expansions = 837.00
 **********
 p = 837.00
-prePre = 11514.03
+prePre = 2102.66
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 2078.07
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 2220.23
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 2265.50
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 2331.30
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 2287.35
 **********
 	threshold: 12
 
 expansions = 16917.00
 **********
 p = 16917.00
-prePre = 11552.35
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 11477.56
-**********
-	threshold: 12
-
-expansions = 46005.00
-**********
-p = 46005.00
-prePre = 11719.01
-**********
-	threshold: 12
-
-expansions = 33477.00
-**********
-p = 33477.00
-prePre = 11870.11
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 11794.68
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 11758.32
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 11694.58
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 11767.81
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 11694.45
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 11721.16
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 11646.85
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 11573.53
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 11506.80
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 11578.40
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 11545.03
+prePre = 2705.34
 **********
 	threshold: 12
 
 expansions = 6549.00
 **********
 p = 6549.00
-prePre = 11513.00
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 11445.00
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 11399.03
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 11335.92
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 11284.70
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 11229.45
-**********
-	threshold: 12
-
-expansions = 17237.00
-**********
-p = 17237.00
-prePre = 11266.53
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 11237.20
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 11207.73
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 11142.84
-**********
-	threshold: 12
-
-expansions = 49749.00
-**********
-p = 49749.00
-prePre = 11375.41
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 11321.60
-**********
-	threshold: 12
-
-expansions = 16917.00
-**********
-p = 16917.00
-prePre = 11354.90
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 11312.46
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 11259.96
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 11220.06
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 11168.72
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 11107.06
-**********
-	threshold: 12
-
-expansions = 16965.00
-**********
-p = 16965.00
-prePre = 11140.72
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 11079.93
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 11022.27
-**********
-	threshold: 12
-
-expansions = 42837.00
-**********
-p = 42837.00
-prePre = 11202.02
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 11141.90
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 11084.87
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 11046.51
-**********
-	threshold: 12
-
-expansions = 22613.00
-**********
-p = 22613.00
-prePre = 11110.41
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 11053.97
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 10998.40
-**********
-	threshold: 12
-
-expansions = 16965.00
-**********
-p = 16965.00
-prePre = 11030.83
-**********
-	threshold: 12
-
-expansions = 9717.00
-**********
-p = 9717.00
-prePre = 11023.72
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 10986.94
-**********
-	threshold: 12
-
-expansions = 43413.00
-**********
-p = 43413.00
-prePre = 11160.34
-**********
-	threshold: 12
-
-expansions = 29013.00
-**********
-p = 29013.00
-prePre = 11255.30
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 11205.25
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 11153.46
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 11097.69
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 11052.33
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10997.66
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10945.78
-**********
-	threshold: 12
-
-expansions = 12933.00
-**********
-p = 12933.00
-prePre = 10955.97
-**********
-	threshold: 12
-
-expansions = 11781.00
-**********
-p = 11781.00
-prePre = 10960.18
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 10911.48
-**********
-	threshold: 12
-
-expansions = 33669.00
-**********
-p = 33669.00
-prePre = 11026.41
+prePre = 2812.11
 **********
 	threshold: 12
 
 expansions = 22533.00
 **********
 p = 22533.00
-prePre = 11084.24
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 11035.64
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 11092.84
-**********
-	threshold: 12
-
-expansions = 11861.00
-**********
-p = 11861.00
-prePre = 11096.64
-**********
-	threshold: 12
-
-expansions = 6693.00
-**********
-p = 6693.00
-prePre = 11074.95
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 11027.35
-**********
-	threshold: 12
-
-expansions = 11781.00
-**********
-p = 11781.00
-prePre = 11031.03
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10979.91
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 10935.55
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 10894.46
-**********
-	threshold: 12
-
-expansions = 85317.00
-**********
-p = 85317.00
-prePre = 11250.55
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 11208.35
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 11166.55
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 11125.15
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 11075.27
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 11027.88
-**********
-	threshold: 12
-
-expansions = 6549.00
-**********
-p = 6549.00
-prePre = 11007.05
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10958.41
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 10923.27
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 10889.99
-**********
-	threshold: 12
-
-expansions = 22613.00
-**********
-p = 22613.00
-prePre = 10943.52
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 10922.89
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 10890.07
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 10845.00
-**********
-	threshold: 12
-
-expansions = 46005.00
-**********
-p = 46005.00
-prePre = 11002.67
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10955.79
-**********
-	threshold: 12
-
-expansions = 9717.00
-**********
-p = 9717.00
-prePre = 10950.28
-**********
-	threshold: 12
-
-expansions = 18933.00
-**********
-p = 18933.00
-prePre = 10985.60
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 10940.89
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 10930.33
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10884.79
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 10841.31
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10798.42
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 10762.17
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10719.99
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 10684.38
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 10659.64
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 10627.78
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 10590.52
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 10549.74
-**********
-	threshold: 12
-
-expansions = 44613.00
-**********
-p = 44613.00
-prePre = 10692.26
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 10741.60
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10699.11
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10656.97
-**********
-	threshold: 12
-
-expansions = 16965.00
-**********
-p = 16965.00
-prePre = 10682.93
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 10642.77
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 10609.60
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10568.51
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10529.50
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 10496.68
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10456.53
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 10418.06
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 10402.39
-**********
-	threshold: 12
-
-expansions = 1605.00
-**********
-p = 1605.00
-prePre = 10367.48
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 10336.45
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 10310.20
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10273.42
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10235.25
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 10228.63
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 10249.84
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 10227.39
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 10200.88
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 10168.68
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 10154.31
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 10131.60
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 10111.67
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 10105.71
-**********
-	threshold: 12
-
-expansions = 6549.00
-**********
-p = 6549.00
-prePre = 10092.34
-**********
-	threshold: 12
-
-expansions = 12741.00
-**********
-p = 12741.00
-prePre = 10102.26
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 10073.48
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 10041.10
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10007.37
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9975.48
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 9970.18
-**********
-	threshold: 12
-
-expansions = 10869.00
-**********
-p = 10869.00
-prePre = 9973.47
-**********
-	threshold: 12
-
-expansions = 202069.00
-**********
-p = 202069.00
-prePre = 10674.55
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 10650.93
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10614.16
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 10584.47
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 10577.09
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 10542.18
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 10560.60
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10526.34
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 10503.84
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 10469.85
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 10463.03
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 10435.15
-**********
-	threshold: 12
-
-expansions = 11781.00
-**********
-p = 11781.00
-prePre = 10439.85
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 10408.23
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 10380.39
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10347.70
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 10318.21
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 10285.63
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10253.60
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 10229.98
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 10206.52
-**********
-	threshold: 12
-
-expansions = 22613.00
-**********
-p = 22613.00
-prePre = 10248.58
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10217.11
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 10188.76
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 10157.38
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10125.08
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10094.44
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 10063.68
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 10038.27
-**********
-	threshold: 12
-
-expansions = 6693.00
-**********
-p = 6693.00
-prePre = 10027.23
-**********
-	threshold: 12
-
-expansions = 12933.00
-**********
-p = 12933.00
-prePre = 10036.79
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 10024.88
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 10013.05
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9982.07
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9952.38
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9941.16
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9913.49
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9883.23
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9859.21
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9830.69
-**********
-	threshold: 12
-
-expansions = 77141.00
-**********
-p = 77141.00
-prePre = 10045.05
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 10017.50
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9990.11
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9964.27
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9942.81
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9914.27
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9885.90
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9870.27
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9852.60
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 9870.71
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9855.27
-**********
-	threshold: 12
-
-expansions = 151557.00
-**********
-p = 151557.00
-prePre = 10291.28
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10261.25
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 10234.04
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 10207.00
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10177.50
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 10156.76
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 10128.60
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 10100.76
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10073.23
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 10054.05
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 10026.68
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 10011.33
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9985.68
-**********
-	threshold: 12
-
-expansions = 1605.00
-**********
-p = 1605.00
-prePre = 9960.88
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9933.97
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9907.49
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 9903.46
-**********
-	threshold: 12
-
-expansions = 30037.00
-**********
-p = 30037.00
-prePre = 9962.33
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9936.01
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9919.28
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9902.65
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9880.93
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 9870.91
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9846.47
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9820.93
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9798.01
-**********
-	threshold: 12
-
-expansions = 17237.00
-**********
-p = 17237.00
-prePre = 9819.20
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9803.18
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9793.78
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9768.48
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9744.81
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 9719.92
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9694.10
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9670.83
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9645.29
-**********
-	threshold: 12
-
-expansions = 22613.00
-**********
-p = 22613.00
-prePre = 9681.31
-**********
-	threshold: 12
-
-expansions = 31061.00
-**********
-p = 31061.00
-prePre = 9740.53
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9716.20
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 9699.55
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 9696.34
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9673.52
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9649.37
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9629.59
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9607.13
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9594.29
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9572.05
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9547.60
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9523.28
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 9514.92
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9497.88
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9477.34
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9460.49
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9443.73
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9420.07
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 9401.85
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9379.57
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9363.19
-**********
-	threshold: 12
-
-expansions = 59477.00
-**********
-p = 59477.00
-prePre = 9494.38
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9472.03
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9449.54
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9427.42
-**********
-	threshold: 12
-
-expansions = 30037.00
-**********
-p = 30037.00
-prePre = 9480.81
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9473.07
-**********
-	threshold: 12
-
-expansions = 12741.00
-**********
-p = 12741.00
-prePre = 9481.49
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9473.79
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9450.78
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9427.90
-**********
-	threshold: 12
-
-expansions = 132437.00
-**********
-p = 132437.00
-prePre = 9741.69
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9719.28
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9695.88
-**********
-	threshold: 12
-
-expansions = 12741.00
-**********
-p = 12741.00
-prePre = 9703.59
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9683.63
-**********
-	threshold: 12
-
-expansions = 6549.00
-**********
-p = 6549.00
-prePre = 9675.73
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9653.76
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 9637.92
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9616.16
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9594.51
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9575.11
-**********
-	threshold: 12
-
-expansions = 30037.00
-**********
-p = 30037.00
-prePre = 9625.88
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9604.37
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 9619.42
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9598.02
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9578.86
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9556.61
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9539.08
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9523.48
-**********
-	threshold: 12
-
-expansions = 6693.00
-**********
-p = 6693.00
-prePre = 9516.59
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 9495.64
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9477.00
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9469.77
-**********
-	threshold: 12
-
-expansions = 61317.00
-**********
-p = 61317.00
-prePre = 9594.71
-**********
-	threshold: 12
-
-expansions = 22965.00
-**********
-p = 22965.00
-prePre = 9626.85
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9613.79
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9592.79
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9571.89
-**********
-	threshold: 12
-
-expansions = 42837.00
-**********
-p = 42837.00
-prePre = 9651.10
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 9634.15
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 9626.50
-**********
-	threshold: 12
-
-expansions = 12741.00
-**********
-p = 12741.00
-prePre = 9633.86
-**********
-	threshold: 12
-
-expansions = 17237.00
-**********
-p = 17237.00
-prePre = 9651.79
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9633.31
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9614.92
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9595.59
-**********
-	threshold: 12
-
-expansions = 6693.00
-**********
-p = 6693.00
-prePre = 9588.81
-**********
-	threshold: 12
-
-expansions = 16965.00
-**********
-p = 16965.00
-prePre = 9606.01
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9589.22
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9570.14
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9555.26
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9535.12
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9514.31
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9503.63
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 9533.51
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9514.82
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 9544.54
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9523.94
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9504.42
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9484.98
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 9469.22
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9451.90
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9431.74
-**********
-	threshold: 12
-
-expansions = 349525.00
-**********
-p = 349525.00
-prePre = 10195.99
-**********
-	threshold: 12
-
-expansions = 44885.00
-**********
-p = 44885.00
-prePre = 10273.77
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 10260.14
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 10240.29
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10219.56
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 10207.67
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 10189.02
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 10180.82
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10159.45
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10138.18
-**********
-	threshold: 12
-
-expansions = 1605.00
-**********
-p = 1605.00
-prePre = 10119.43
-**********
-	threshold: 12
-
-expansions = 44613.00
-**********
-p = 44613.00
-prePre = 10195.07
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 10181.91
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 10164.90
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 10150.74
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10130.70
-**********
-	threshold: 12
-
-expansions = 22613.00
-**********
-p = 22613.00
-prePre = 10157.78
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 10169.78
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 10150.76
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 10131.83
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 10120.51
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 10112.71
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 10094.90
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 10077.17
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10057.67
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 10045.17
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 10032.72
-**********
-	threshold: 12
-
-expansions = 151557.00
-**********
-p = 151557.00
-prePre = 10332.56
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 10316.04
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 10296.14
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 10279.49
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 10265.61
-**********
-	threshold: 12
-
-expansions = 22613.00
-**********
-p = 22613.00
-prePre = 10291.49
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10271.91
-**********
-	threshold: 12
-
-expansions = 11861.00
-**********
-p = 11861.00
-prePre = 10275.23
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 10258.80
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 10246.16
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 10233.58
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 10215.22
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 10195.84
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 10176.74
-**********
-	threshold: 12
-
-expansions = 12741.00
-**********
-p = 12741.00
-prePre = 10182.02
-**********
-	threshold: 12
-
-expansions = 6693.00
-**********
-p = 6693.00
-prePre = 10174.86
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10155.03
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 10137.94
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 10163.24
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 10152.45
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 10141.72
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 10127.52
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10108.03
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 10093.95
-**********
-	threshold: 12
-
-expansions = 1605.00
-**********
-p = 1605.00
-prePre = 10076.84
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 10101.90
-**********
-	threshold: 12
-
-expansions = 11781.00
-**********
-p = 11781.00
-prePre = 10105.27
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 10088.62
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 10074.73
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 10056.39
-**********
-	threshold: 12
-
-expansions = 16965.00
-**********
-p = 16965.00
-prePre = 10070.15
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 10059.81
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 10042.56
-**********
-	threshold: 12
-
-expansions = 11781.00
-**********
-p = 11781.00
-prePre = 10046.00
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 10032.73
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 10013.93
-**********
-	threshold: 12
-
-expansions = 17237.00
-**********
-p = 17237.00
-prePre = 10028.15
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 10015.00
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9997.19
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9982.30
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9964.63
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9947.02
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9929.48
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9913.69
-**********
-	threshold: 12
-
-expansions = 22613.00
-**********
-p = 22613.00
-prePre = 9938.30
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 9935.58
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9919.87
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 9931.01
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9919.95
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9904.36
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9894.72
-**********
-	threshold: 12
-
-expansions = 8901.00
-**********
-p = 8901.00
-prePre = 9892.82
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9876.54
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9860.33
-**********
-	threshold: 12
-
-expansions = 6693.00
-**********
-p = 6693.00
-prePre = 9854.31
-**********
-	threshold: 12
-
-expansions = 16965.00
-**********
-p = 16965.00
-prePre = 9867.80
-**********
-	threshold: 12
-
-expansions = 11861.00
-**********
-p = 11861.00
-prePre = 9871.58
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 9859.22
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9845.12
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 9833.49
-**********
-	threshold: 12
-
-expansions = 16965.00
-**********
-p = 16965.00
-prePre = 9846.89
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9830.17
-**********
-	threshold: 12
-
-expansions = 6549.00
-**********
-p = 6549.00
-prePre = 9824.03
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9808.21
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 9796.13
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9782.34
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9765.09
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 9751.64
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9735.31
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9720.64
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9704.42
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9687.48
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9678.62
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9663.36
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9650.04
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9634.10
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9619.80
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9611.15
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9602.53
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9586.79
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9571.12
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9555.50
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9541.49
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 9552.59
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9536.91
-**********
-	threshold: 12
-
-expansions = 77141.00
-**********
-p = 77141.00
-prePre = 9658.29
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9642.48
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 9629.73
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 9614.11
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9601.24
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9586.58
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9571.21
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9555.13
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 9546.07
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 9544.28
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 9535.27
-**********
-	threshold: 12
-
-expansions = 11781.00
-**********
-p = 11781.00
-prePre = 9539.23
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9523.34
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9507.51
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9496.36
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9481.39
-**********
-	threshold: 12
-
-expansions = 12933.00
-**********
-p = 12933.00
-prePre = 9487.42
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9476.36
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9462.25
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9447.44
-**********
-	threshold: 12
-
-expansions = 17237.00
-**********
-p = 17237.00
-prePre = 9460.94
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9446.19
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9434.00
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9419.34
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 9417.82
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9403.98
-**********
-	threshold: 12
-
-expansions = 8901.00
-**********
-p = 8901.00
-prePre = 9403.12
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 9393.30
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9378.84
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 9369.10
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9358.49
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9344.16
-**********
-	threshold: 12
-
-expansions = 6549.00
-**********
-p = 6549.00
-prePre = 9339.41
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9331.83
-**********
-	threshold: 12
-
-expansions = 428117.00
-**********
-p = 428117.00
-prePre = 10040.44
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 10029.11
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 10016.22
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 10006.83
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9998.20
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9989.59
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 9999.16
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9985.44
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9971.77
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9965.96
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9950.77
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9942.33
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9928.10
-**********
-	threshold: 12
-
-expansions = 30037.00
-**********
-p = 30037.00
-prePre = 9961.40
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9947.90
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 9936.99
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9922.15
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9916.50
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9910.87
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 9905.12
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 9896.17
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9881.52
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9866.22
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9851.51
-**********
-	threshold: 12
-
-expansions = 8901.00
-**********
-p = 8901.00
-prePre = 9849.97
-**********
-	threshold: 12
-
-expansions = 29013.00
-**********
-p = 29013.00
-prePre = 9881.08
-**********
-	threshold: 12
-
-expansions = 17237.00
-**********
-p = 17237.00
-prePre = 9893.00
-**********
-	threshold: 12
-
-expansions = 6549.00
-**********
-p = 6549.00
-prePre = 9887.59
-**********
-	threshold: 12
-
-expansions = 1605.00
-**********
-p = 1605.00
-prePre = 9874.21
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9862.14
-**********
-	threshold: 12
-
-expansions = 30037.00
-**********
-p = 30037.00
-prePre = 9894.62
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9879.52
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9868.70
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9854.38
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9848.99
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9834.60
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9819.71
-**********
-	threshold: 12
-
-expansions = 11861.00
-**********
-p = 11861.00
-prePre = 9822.96
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 9812.64
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9799.92
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9785.87
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9772.54
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 9770.59
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 9765.28
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9750.69
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9736.67
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9723.53
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9710.43
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9696.69
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 9686.75
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9672.42
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9661.07
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9647.50
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 9638.22
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9630.82
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9616.69
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9605.52
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9592.14
-**********
-	threshold: 12
-
-expansions = 11861.00
-**********
-p = 11861.00
-prePre = 9595.63
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9587.30
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9575.33
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9568.12
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9560.92
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 9556.09
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9543.59
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9532.68
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 9522.00
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9510.26
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9497.25
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9486.48
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9474.85
-**********
-	threshold: 12
-
-expansions = 11861.00
-**********
-p = 11861.00
-prePre = 9478.45
-**********
-	threshold: 12
-
-expansions = 77141.00
-**********
-p = 77141.00
-prePre = 9580.51
-**********
-	threshold: 12
-
-expansions = 11781.00
-**********
-p = 11781.00
-prePre = 9583.82
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9576.73
-**********
-	threshold: 12
-
-expansions = 1605.00
-**********
-p = 1605.00
-prePre = 9564.76
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9551.17
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 9540.64
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 9527.70
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9519.72
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9506.28
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9494.17
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 9503.39
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9490.03
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 9488.61
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 9507.91
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 9497.58
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9493.14
-**********
-	threshold: 12
-
-expansions = 12741.00
-**********
-p = 12741.00
-prePre = 9497.92
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9484.69
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9472.00
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9459.48
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 9450.51
-**********
-	threshold: 12
-
-expansions = 85317.00
-**********
-p = 85317.00
-prePre = 9561.42
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 9552.82
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9541.51
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 9560.42
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9548.51
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9544.07
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9531.59
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9519.77
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9506.73
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9493.74
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9482.65
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9469.73
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9458.70
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 9477.46
-**********
-	threshold: 12
-
-expansions = 16917.00
-**********
-p = 16917.00
-prePre = 9488.12
-**********
-	threshold: 12
-
-expansions = 11781.00
-**********
-p = 11781.00
-prePre = 9491.40
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9478.55
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 9497.18
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9484.84
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9472.54
-**********
-	threshold: 12
-
-expansions = 12933.00
-**********
-p = 12933.00
-prePre = 9477.45
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 9470.30
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9458.21
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9448.21
-**********
-	threshold: 12
-
-expansions = 132437.00
-**********
-p = 132437.00
-prePre = 9621.93
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9609.54
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9597.92
-**********
-	threshold: 12
-
-expansions = 6549.00
-**********
-p = 6549.00
-prePre = 9593.64
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9587.00
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9574.26
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 9565.52
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9554.05
-**********
-	threshold: 12
-
-expansions = 6549.00
-**********
-p = 6549.00
-prePre = 9549.85
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9537.70
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 9533.33
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9521.37
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9512.51
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9500.01
-**********
-	threshold: 12
-
-expansions = 22613.00
-**********
-p = 22613.00
-prePre = 9518.17
-**********
-	threshold: 12
-
-expansions = 6549.00
-**********
-p = 6549.00
-prePre = 9514.07
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9502.22
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9490.40
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9486.26
-**********
-	threshold: 12
-
-expansions = 30037.00
-**********
-p = 30037.00
-prePre = 9514.52
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9503.92
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9492.17
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9482.44
-**********
-	threshold: 12
-
-expansions = 30037.00
-**********
-p = 30037.00
-prePre = 9510.55
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9499.43
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9487.15
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9474.91
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9463.16
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 9453.72
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9441.57
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9430.04
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 9418.48
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 9417.28
-**********
-	threshold: 12
-
-expansions = 1605.00
-**********
-p = 1605.00
-prePre = 9406.74
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9395.32
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9385.09
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9374.31
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9363.56
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9351.68
-**********
-	threshold: 12
-
-expansions = 33669.00
-**********
-p = 33669.00
-prePre = 9384.23
-**********
-	threshold: 12
-
-expansions = 25269.00
-**********
-p = 25269.00
-prePre = 9405.47
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9394.74
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9383.33
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 9376.74
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9364.94
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9353.74
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9345.50
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9337.28
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9331.37
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9322.20
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9313.05
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9302.01
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9292.14
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 9288.34
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9277.38
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 9276.40
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9265.48
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9254.02
-**********
-	threshold: 12
-
-expansions = 6549.00
-**********
-p = 6549.00
-prePre = 9250.49
-**********
-	threshold: 12
-
-expansions = 11781.00
-**********
-p = 11781.00
-prePre = 9253.79
-**********
-	threshold: 12
-
-expansions = 114005.00
-**********
-p = 114005.00
-prePre = 9390.19
-**********
-	threshold: 12
-
-expansions = 11781.00
-**********
-p = 11781.00
-prePre = 9393.30
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9384.20
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9374.36
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 9373.27
-**********
-	threshold: 12
-
-expansions = 57861.00
-**********
-p = 57861.00
-prePre = 9436.00
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 9444.09
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9435.96
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 9434.79
-**********
-	threshold: 12
-
-expansions = 12741.00
-**********
-p = 12741.00
-prePre = 9439.05
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9428.67
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9418.87
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9408.55
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9404.81
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9396.80
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9385.43
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9376.51
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9366.30
-**********
-	threshold: 12
-
-expansions = 1605.00
-**********
-p = 1605.00
-prePre = 9356.43
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9346.28
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9336.70
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9330.16
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9321.37
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 9310.71
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9301.22
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 9292.67
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9289.13
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9279.71
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9271.05
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9261.67
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9256.17
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9246.29
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9240.82
-**********
-	threshold: 12
-
-expansions = 6549.00
-**********
-p = 6549.00
-prePre = 9237.46
-**********
-	threshold: 12
-
-expansions = 16965.00
-**********
-p = 16965.00
-prePre = 9247.09
-**********
-	threshold: 12
-
-expansions = 30037.00
-**********
-p = 30037.00
-prePre = 9272.99
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9267.51
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9258.96
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 9252.98
-**********
-	threshold: 12
-
-expansions = 215381.00
-**********
-p = 215381.00
-prePre = 9508.41
-**********
-	threshold: 12
-
-expansions = 30037.00
-**********
-p = 30037.00
-prePre = 9533.81
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 9549.88
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9539.24
-**********
-	threshold: 12
-
-expansions = 79189.00
-**********
-p = 79189.00
-prePre = 9625.12
-**********
-	threshold: 12
-
-expansions = 11733.00
-**********
-p = 11733.00
-prePre = 9627.72
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 9621.33
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9612.45
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 9603.74
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 9597.41
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9586.28
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9575.70
-**********
-	threshold: 12
-
-expansions = 22613.00
-**********
-p = 22613.00
-prePre = 9591.62
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9585.02
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9573.95
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9566.13
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9557.41
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9550.88
-**********
-	threshold: 12
-
-expansions = 11861.00
-**********
-p = 11861.00
-prePre = 9553.68
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 9569.40
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9565.67
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9554.72
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9551.02
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9540.11
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9531.51
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9521.69
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9513.13
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9504.59
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9493.80
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9484.08
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9473.35
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9463.04
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9452.88
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 9468.45
-**********
-	threshold: 12
-
-expansions = 16917.00
-**********
-p = 16917.00
-prePre = 9477.30
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9466.64
-**********
-	threshold: 12
-
-expansions = 11733.00
-**********
-p = 11733.00
-prePre = 9469.33
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 9462.06
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9451.46
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9442.41
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9432.87
-**********
-	threshold: 12
-
-expansions = 6549.00
-**********
-p = 6549.00
-prePre = 9429.47
-**********
-	threshold: 12
-
-expansions = 30037.00
-**********
-p = 30037.00
-prePre = 9453.74
-**********
-	threshold: 12
-
-expansions = 6693.00
-**********
-p = 6693.00
-prePre = 9450.50
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9445.11
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9436.83
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9429.45
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9419.00
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9411.65
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9405.54
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9396.66
-**********
-	threshold: 12
-
-expansions = 57861.00
-**********
-p = 57861.00
-prePre = 9453.15
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9443.23
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 9433.28
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9423.30
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 9417.51
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9408.18
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9398.87
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9393.63
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9383.36
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9377.36
-**********
-	threshold: 12
-
-expansions = 11781.00
-**********
-p = 11781.00
-prePre = 9380.13
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 9370.36
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9360.55
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9350.76
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 9345.13
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9335.00
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9326.37
-**********
-	threshold: 12
-
-expansions = 885.00
-**********
-p = 885.00
-prePre = 9316.73
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9306.66
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9296.62
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9287.59
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9281.78
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 9278.51
-**********
-	threshold: 12
-
-expansions = 12933.00
-**********
-p = 12933.00
-prePre = 9282.66
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9273.68
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9265.21
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9256.28
-**********
-	threshold: 12
-
-expansions = 44613.00
-**********
-p = 44613.00
-prePre = 9296.23
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 9289.50
-**********
-	threshold: 12
-
-expansions = 59477.00
-**********
-p = 59477.00
-prePre = 9346.08
-**********
-	threshold: 12
-
-expansions = 77141.00
-**********
-p = 77141.00
-prePre = 9422.42
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 9421.42
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9412.86
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9406.98
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9397.48
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9387.90
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9380.91
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 9375.39
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 9369.02
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9363.23
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9354.33
-**********
-	threshold: 12
-
-expansions = 16965.00
-**********
-p = 16965.00
-prePre = 9362.79
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9355.04
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9351.86
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 9345.56
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9336.14
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9326.36
-**********
-	threshold: 12
-
-expansions = 44613.00
-**********
-p = 44613.00
-prePre = 9365.35
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9357.65
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9347.89
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 9344.65
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9335.87
-**********
-	threshold: 12
-
-expansions = 2517.00
-**********
-p = 2517.00
-prePre = 9328.38
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9319.16
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9309.96
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 9304.63
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9295.00
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9287.45
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9278.33
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9270.17
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9260.62
-**********
-	threshold: 12
-
-expansions = 3333.00
-**********
-p = 3333.00
-prePre = 9254.17
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9248.65
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9240.09
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9233.48
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9224.02
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9219.30
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9211.28
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9201.87
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9197.20
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9188.29
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9179.30
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9171.37
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9168.48
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 9167.80
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9160.53
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9152.65
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9144.32
+prePre = 3345.11
 **********
 	threshold: 12
 
 expansions = 73941.00
 **********
 p = 73941.00
-prePre = 9213.55
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9206.26
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9197.90
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 9194.93
-**********
-	threshold: 12
-
-expansions = 16917.00
-**********
-p = 16917.00
-prePre = 9203.14
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9195.90
-**********
-	threshold: 12
-
-expansions = 82293.00
-**********
-p = 82293.00
-prePre = 9273.50
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9266.20
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 9261.08
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9255.71
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9249.25
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9240.01
+prePre = 5202.89
 **********
 	threshold: 12
 
 expansions = 1797.00
 **********
 p = 1797.00
-prePre = 9232.16
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 9229.18
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9220.44
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9213.26
-**********
-	threshold: 12
-
-expansions = 3669.00
-**********
-p = 3669.00
-prePre = 9207.44
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9198.30
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 9193.31
-**********
-	threshold: 12
-
-expansions = 4437.00
-**********
-p = 4437.00
-prePre = 9188.33
-**********
-	threshold: 12
-
-expansions = 4869.00
-**********
-p = 4869.00
-prePre = 9183.81
+prePre = 5115.56
 **********
 	threshold: 12
 
 expansions = 1797.00
 **********
 p = 1797.00
-prePre = 9176.09
-**********
-	threshold: 12
-
-expansions = 3141.00
-**********
-p = 3141.00
-prePre = 9169.79
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9160.75
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9151.73
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9144.08
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9137.06
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9128.44
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9120.39
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9113.41
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9104.84
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9095.95
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9090.87
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9082.45
-**********
-	threshold: 12
-
-expansions = 501.00
-**********
-p = 501.00
-prePre = 9073.60
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 9080.43
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9072.49
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9064.12
-**********
-	threshold: 12
-
-expansions = 8533.00
-**********
-p = 8533.00
-prePre = 9063.58
-**********
-	threshold: 12
-
-expansions = 933.00
-**********
-p = 933.00
-prePre = 9055.24
-**********
-	threshold: 12
-
-expansions = 4181.00
-**********
-p = 4181.00
-prePre = 9050.25
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9043.43
-**********
-	threshold: 12
-
-expansions = 33477.00
-**********
-p = 33477.00
-prePre = 9068.41
-**********
-	threshold: 12
-
-expansions = 12933.00
-**********
-p = 12933.00
-prePre = 9072.36
-**********
-	threshold: 12
-
-expansions = 22613.00
-**********
-p = 22613.00
-prePre = 9086.18
-**********
-	threshold: 12
-
-expansions = 6405.00
-**********
-p = 6405.00
-prePre = 9083.44
-**********
-	threshold: 12
-
-expansions = 15701.00
-**********
-p = 15701.00
-prePre = 9090.18
-**********
-	threshold: 12
-
-expansions = 837.00
-**********
-p = 837.00
-prePre = 9081.79
-**********
-	threshold: 12
-
-expansions = 6485.00
-**********
-p = 6485.00
-prePre = 9079.15
-**********
-	threshold: 12
-
-expansions = 6549.00
-**********
-p = 6549.00
-prePre = 9076.58
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9069.19
-**********
-	threshold: 12
-
-expansions = 1365.00
-**********
-p = 1365.00
-prePre = 9061.39
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9054.04
-**********
-	threshold: 12
-
-expansions = 1797.00
-**********
-p = 1797.00
-prePre = 9046.70
-**********
-	threshold: 12
-
-expansions = 2389.00
-**********
-p = 2389.00
-prePre = 9039.97
-**********
-	threshold: 12
-
-expansions = 22533.00
-**********
-p = 22533.00
-prePre = 9053.59
-**********
-	threshold: 12
-
-expansions = 33477.00
-**********
-p = 33477.00
-prePre = 9078.21
-**********
-	threshold: 12
-
-expansions = 6693.00
-**********
-p = 6693.00
-prePre = 9075.81
+prePre = 5032.60
 **********
 	threshold: 12
 
 expansions = 16965.00
 **********
 p = 16965.00
-prePre = 9083.74
+prePre = 5323.63
 **********
 	threshold: 12
 
-expansions = 1797.00
+expansions = 2389.00
 **********
-p = 1797.00
-prePre = 9076.42
+p = 2389.00
+prePre = 5253.76
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 5282.40
 **********
 	threshold: 12
 
 expansions = 501.00
 **********
 p = 501.00
-prePre = 9067.81
+prePre = 5173.73
 **********
 	threshold: 12
 
-expansions = 1365.00
+expansions = 933.00
 **********
-p = 1365.00
-prePre = 9060.09
+p = 933.00
+prePre = 5079.49
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 5059.96
+**********
+	threshold: 12
+
+expansions = 15701.00
+**********
+p = 15701.00
+prePre = 5286.36
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 5245.67
+**********
+	threshold: 12
+
+expansions = 43413.00
+**********
+p = 43413.00
+prePre = 6024.59
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 5951.88
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 5900.53
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 5910.23
+**********
+	threshold: 12
+
+expansions = 29013.00
+**********
+p = 29013.00
+prePre = 6346.13
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 6237.89
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 6242.38
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 6163.00
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 6069.56
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 6028.17
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 5940.19
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 5849.53
+**********
+	threshold: 12
+
+expansions = 33477.00
+**********
+p = 33477.00
+prePre = 6302.44
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 6251.45
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 6180.75
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 6097.25
+**********
+	threshold: 12
+
+expansions = 77141.00
+**********
+p = 77141.00
+prePre = 7190.23
 **********
 	threshold: 12
 
 expansions = 4869.00
 **********
 p = 4869.00
-prePre = 9055.89
+prePre = 7155.06
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 7062.19
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 7019.82
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 6963.61
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 6876.09
+**********
+	threshold: 12
+
+expansions = 1605.00
+**********
+p = 1605.00
+prePre = 6801.85
+**********
+	threshold: 12
+
+expansions = 22613.00
+**********
+p = 22613.00
+prePre = 7021.44
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 6949.88
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 6905.54
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 6831.67
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 6748.37
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 6672.84
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 6599.26
+**********
+	threshold: 12
+
+expansions = 202069.00
+**********
+p = 202069.00
+prePre = 9073.56
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8971.80
+**********
+	threshold: 12
+
+expansions = 16965.00
+**********
+p = 16965.00
+prePre = 9070.48
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8971.24
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8869.19
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 8839.86
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 8793.14
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8711.79
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8617.41
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8530.09
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 8566.62
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8491.40
+**********
+	threshold: 12
+
+expansions = 49749.00
+**********
+p = 49749.00
+prePre = 8944.78
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8862.39
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8786.42
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 8702.36
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8629.67
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 8566.00
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 8503.64
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 8442.55
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8366.70
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8288.04
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 8269.40
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8229.31
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8157.54
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 8121.77
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8049.19
+**********
+	threshold: 12
+
+expansions = 9717.00
+**********
+p = 9717.00
+prePre = 8064.92
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 7998.27
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 7936.85
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 7872.60
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 7809.51
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 7779.13
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 7717.14
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 7676.65
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 7652.02
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 7621.83
+**********
+	threshold: 12
+
+expansions = 15701.00
+**********
+p = 15701.00
+prePre = 7691.48
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 7632.90
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7572.46
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 7520.29
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 7511.67
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7453.73
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 7412.21
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 7404.02
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 7380.10
+**********
+	threshold: 12
+
+expansions = 16965.00
+**********
+p = 16965.00
+prePre = 7456.78
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 7405.00
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7350.64
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 7307.25
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 7274.95
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 7268.26
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 7223.20
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 7175.55
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 7210.17
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 7169.78
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 7283.58
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 7240.06
+**********
+	threshold: 12
+
+expansions = 30037.00
+**********
+p = 30037.00
+prePre = 7406.46
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7356.42
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 7313.32
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 7278.14
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 7233.14
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 7194.86
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 7151.07
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7104.89
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 7072.37
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 7033.27
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 7018.55
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 6983.27
+**********
+	threshold: 12
+
+expansions = 16965.00
+**********
+p = 16965.00
+prePre = 7050.26
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 7045.96
+**********
+	threshold: 12
+
+expansions = 30037.00
+**********
+p = 30037.00
+prePre = 7198.22
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 7175.00
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 7170.49
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 7144.32
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 7113.65
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 7091.56
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 7051.73
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7010.27
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 6981.20
+**********
+	threshold: 12
+
+expansions = 23301.00
+**********
+p = 23301.00
+prePre = 7083.20
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 7179.16
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 7143.27
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 7237.69
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 7198.95
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 7160.98
+**********
+	threshold: 12
+
+expansions = 9717.00
+**********
+p = 9717.00
+prePre = 7176.37
 **********
 	threshold: 12
 
 expansions = 8533.00
 **********
 p = 8533.00
-prePre = 9055.36
+prePre = 7184.50
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 7155.95
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7116.57
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 7124.91
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 7093.75
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7055.42
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7017.53
+**********
+	threshold: 12
+
+expansions = 33477.00
+**********
+p = 33477.00
+prePre = 7169.60
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7131.49
+**********
+	threshold: 12
+
+expansions = 428037.00
+**********
+p = 428037.00
+prePre = 9523.00
+**********
+	threshold: 12
+
+expansions = 9717.00
+**********
+p = 9717.00
+prePre = 9524.10
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 9488.24
+**********
+	threshold: 12
+
+expansions = 1605.00
+**********
+p = 1605.00
+prePre = 9444.20
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 9439.13
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 9413.88
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9367.29
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9318.84
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9281.17
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9233.71
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9191.41
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 9159.05
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9115.30
+**********
+	threshold: 12
+
+expansions = 30037.00
+**********
+p = 30037.00
+prePre = 9225.99
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9182.35
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9138.65
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9098.17
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9063.40
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9025.95
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8988.88
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 9003.12
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8961.67
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8920.64
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 8918.69
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8883.08
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8847.83
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 8820.52
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 8888.07
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8849.08
+**********
+	threshold: 12
+
+expansions = 8901.00
+**********
+p = 8901.00
+prePre = 8849.33
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8813.00
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 8811.65
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8777.92
+**********
+	threshold: 12
+
+expansions = 16965.00
+**********
+p = 16965.00
+prePre = 8817.10
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 8815.74
+**********
+	threshold: 12
+
+expansions = 29013.00
+**********
+p = 29013.00
+prePre = 8911.46
+**********
+	threshold: 12
+
+expansions = 30037.00
+**********
+p = 30037.00
+prePre = 9011.11
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 8984.46
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 8959.62
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8920.27
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8887.30
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 8857.94
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 8847.35
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 8845.91
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 8835.47
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8806.30
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8768.89
+**********
+	threshold: 12
+
+expansions = 17237.00
+**********
+p = 17237.00
+prePre = 8806.87
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8786.21
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8751.31
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8716.72
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 8706.53
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8678.82
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 8644.79
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8609.38
+**********
+	threshold: 12
+
+expansions = 15701.00
+**********
+p = 15701.00
+prePre = 8640.08
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8610.59
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8581.34
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8550.50
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8519.93
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 8510.97
+**********
+	threshold: 12
+
+expansions = 22613.00
+**********
+p = 22613.00
+prePre = 8570.47
+**********
+	threshold: 12
+
+expansions = 57861.00
+**********
+p = 57861.00
+prePre = 8777.57
+**********
+	threshold: 12
+
+expansions = 46005.00
+**********
+p = 46005.00
+prePre = 8933.33
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8900.00
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 8889.65
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8858.55
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8825.54
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 8881.72
+**********
+	threshold: 12
+
+expansions = 1605.00
+**********
+p = 1605.00
+prePre = 8852.02
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8819.83
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 8794.31
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8764.35
+**********
+	threshold: 12
+
+expansions = 49749.00
+**********
+p = 49749.00
+prePre = 8928.95
+**********
+	threshold: 12
+
+expansions = 44885.00
+**********
+p = 44885.00
+prePre = 9072.78
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9039.96
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9013.57
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8981.63
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8948.24
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8915.12
+**********
+	threshold: 12
+
+expansions = 10869.00
+**********
+p = 10869.00
+prePre = 8922.75
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8891.66
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 8860.63
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8831.69
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8802.97
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 8793.78
+**********
+	threshold: 12
+
+expansions = 17237.00
+**********
+p = 17237.00
+prePre = 8826.01
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 8878.13
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8853.55
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8823.66
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 8803.02
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 8788.28
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 8773.66
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 8765.39
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 8756.94
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8728.07
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8697.82
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8667.80
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8641.15
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8614.69
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8586.86
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8557.66
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 8557.58
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8530.25
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8508.31
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8492.91
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8477.62
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 8456.56
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 8506.13
+**********
+	threshold: 12
+
+expansions = 11861.00
+**********
+p = 11861.00
+prePre = 8517.90
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8492.89
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 8485.61
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8459.06
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8431.52
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8416.86
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8394.11
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 8376.12
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 8369.67
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8344.37
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 8327.39
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8300.95
+**********
+	threshold: 12
+
+expansions = 17237.00
+**********
+p = 17237.00
+prePre = 8331.03
+**********
+	threshold: 12
+
+expansions = 22613.00
+**********
+p = 22613.00
+prePre = 8378.96
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 8361.44
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8339.56
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8317.82
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8298.19
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 8291.94
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8267.74
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8245.10
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8224.03
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8199.97
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8177.78
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 8163.19
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8144.56
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 8190.83
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 8185.56
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 8170.06
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8145.64
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8127.36
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8105.96
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 8107.31
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8087.47
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 8082.44
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8058.75
+**********
+	threshold: 12
+
+expansions = 29013.00
+**********
+p = 29013.00
+prePre = 8124.03
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8103.04
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 8080.69
+**********
+	threshold: 12
+
+expansions = 42837.00
+**********
+p = 42837.00
+prePre = 8187.96
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8170.12
+**********
+	threshold: 12
+
+expansions = 1605.00
+**********
+p = 1605.00
+prePre = 8149.98
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 8139.95
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8116.66
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8099.25
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 8082.33
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8059.43
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8037.96
+**********
+	threshold: 12
+
+expansions = 1605.00
+**********
+p = 1605.00
+prePre = 8018.65
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8000.02
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 7980.21
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 7961.81
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 7949.07
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 7944.93
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 7928.54
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 7912.25
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 7955.12
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7933.33
+**********
+	threshold: 12
+
+expansions = 15701.00
+**********
+p = 15701.00
+prePre = 7955.97
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 7935.56
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 7916.51
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 7958.76
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7937.27
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 7926.47
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 7910.60
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7889.43
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 7872.08
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7851.14
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 7832.76
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 7814.49
+**********
+	threshold: 12
+
+expansions = 12741.00
+**********
+p = 12741.00
+prePre = 7828.37
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7807.79
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 7797.63
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 7782.52
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 7769.59
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 7766.20
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 7754.85
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7734.81
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 7715.81
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 7703.77
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 7692.72
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 7683.12
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 7663.55
+**********
+	threshold: 12
+
+expansions = 15701.00
+**********
+p = 15701.00
+prePre = 7685.39
+**********
+	threshold: 12
+
+expansions = 215381.00
+**********
+p = 215381.00
+prePre = 8248.25
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8232.42
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 8241.98
+**********
+	threshold: 12
+
+expansions = 15701.00
+**********
+p = 15701.00
+prePre = 8262.03
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8243.54
+**********
+	threshold: 12
+
+expansions = 196949.00
+**********
+p = 196949.00
+prePre = 8748.10
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8726.11
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8709.26
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 8688.50
+**********
+	threshold: 12
+
+expansions = 6693.00
+**********
+p = 6693.00
+prePre = 8683.22
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8665.05
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 8664.71
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 8701.10
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 8689.94
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8668.56
+**********
+	threshold: 12
+
+expansions = 22613.00
+**********
+p = 22613.00
+prePre = 8704.87
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8683.57
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8664.61
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8643.51
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 8630.69
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8610.90
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 8597.37
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8577.52
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8556.92
+**********
+	threshold: 12
+
+expansions = 17237.00
+**********
+p = 17237.00
+prePre = 8579.01
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 8587.13
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8571.44
+**********
+	threshold: 12
+
+expansions = 30037.00
+**********
+p = 30037.00
+prePre = 8625.65
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8608.45
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8588.08
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8572.54
+**********
+	threshold: 12
+
+expansions = 44613.00
+**********
+p = 44613.00
+prePre = 8662.64
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8643.12
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8627.57
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 8622.41
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8611.42
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8600.48
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8583.72
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 8571.64
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 8579.51
+**********
+	threshold: 12
+
+expansions = 15701.00
+**********
+p = 15701.00
+prePre = 8596.92
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8578.23
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 8573.14
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8554.59
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 8541.48
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 8532.61
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8514.30
+**********
+	threshold: 12
+
+expansions = 11861.00
+**********
+p = 11861.00
+prePre = 8522.35
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8507.64
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8488.48
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8472.51
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8455.59
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8445.44
+**********
+	threshold: 12
+
+expansions = 30037.00
+**********
+p = 30037.00
+prePre = 8496.60
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8477.70
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 8465.57
+**********
+	threshold: 12
+
+expansions = 33669.00
+**********
+p = 33669.00
+prePre = 8524.87
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8508.06
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8493.73
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8483.65
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 8465.94
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 8457.58
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 8453.00
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 8439.26
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8429.42
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8412.15
+**********
+	threshold: 12
+
+expansions = 8901.00
+**********
+p = 8901.00
+prePre = 8413.28
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 8402.39
+**********
+	threshold: 12
+
+expansions = 1605.00
+**********
+p = 1605.00
+prePre = 8386.84
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8373.15
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8356.20
+**********
+	threshold: 12
+
+expansions = 1605.00
+**********
+p = 1605.00
+prePre = 8340.85
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 8336.65
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8319.90
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 8315.75
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8298.91
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8281.39
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 8281.95
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8264.54
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8248.18
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8233.81
+**********
+	threshold: 12
+
+expansions = 59397.00
+**********
+p = 59397.00
+prePre = 8347.51
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8332.02
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 8327.94
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8311.61
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8294.41
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8278.23
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8262.12
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 8269.82
+**********
+	threshold: 12
+
+expansions = 25269.00
+**********
+p = 25269.00
+prePre = 8306.94
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8289.93
+**********
+	threshold: 12
+
+expansions = 202069.00
+**********
+p = 202069.00
+prePre = 8711.19
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8697.48
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8682.54
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8664.87
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8651.34
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 8681.20
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8663.64
+**********
+	threshold: 12
+
+expansions = 11861.00
+**********
+p = 11861.00
+prePre = 8670.49
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8653.03
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8636.37
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 8643.06
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 8642.83
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8626.49
+**********
+	threshold: 12
+
+expansions = 30037.00
+**********
+p = 30037.00
+prePre = 8671.76
+**********
+	threshold: 12
+
+expansions = 77141.00
+**********
+p = 77141.00
+prePre = 8816.21
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 8807.90
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8791.15
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8775.58
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 8764.20
+**********
+	threshold: 12
+
+expansions = 59477.00
+**********
+p = 59477.00
+prePre = 8870.07
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 8869.37
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8855.89
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 8839.36
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 8834.48
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 8833.86
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8819.35
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 8808.06
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 8799.97
+**********
+	threshold: 12
+
+expansions = 23301.00
+**********
+p = 23301.00
+prePre = 8829.69
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8815.31
+**********
+	threshold: 12
+
+expansions = 12933.00
+**********
+p = 12933.00
+prePre = 8823.71
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 8812.14
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8797.00
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 8803.05
+**********
+	threshold: 12
+
+expansions = 11733.00
+**********
+p = 11733.00
+prePre = 8808.98
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8799.63
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8783.77
+**********
+	threshold: 12
+
+expansions = 42837.00
+**********
+p = 42837.00
+prePre = 8852.29
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8839.31
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8823.47
+**********
+	threshold: 12
+
+expansions = 43413.00
+**********
+p = 43413.00
+prePre = 8892.65
+**********
+	threshold: 12
+
+expansions = 29013.00
+**********
+p = 29013.00
+prePre = 8932.81
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8916.01
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8899.28
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 8888.90
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 8877.52
+**********
+	threshold: 12
+
+expansions = 30037.00
+**********
+p = 30037.00
+prePre = 8919.34
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8903.59
+**********
+	threshold: 12
+
+expansions = 12741.00
+**********
+p = 12741.00
+prePre = 8911.14
+**********
+	threshold: 12
+
+expansions = 202069.00
+**********
+p = 202069.00
+prePre = 9290.63
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9274.24
+**********
+	threshold: 12
+
+expansions = 33669.00
+**********
+p = 33669.00
+prePre = 9321.98
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 9320.44
+**********
+	threshold: 12
+
+expansions = 16965.00
+**********
+p = 16965.00
+prePre = 9335.34
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9318.81
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9301.68
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9286.30
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 9281.01
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 9285.83
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9268.91
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 9263.55
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9249.22
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 9237.52
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 9232.26
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9218.07
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9203.93
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 9191.22
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 9175.46
+**********
+	threshold: 12
+
+expansions = 15701.00
+**********
+p = 15701.00
+prePre = 9187.82
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9172.03
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9157.30
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 9147.93
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 9142.77
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9128.99
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 9123.89
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9109.39
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 9094.04
+**********
+	threshold: 12
+
+expansions = 77141.00
+**********
+p = 77141.00
+prePre = 9220.76
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9205.18
+**********
+	threshold: 12
+
+expansions = 15701.00
+**********
+p = 15701.00
+prePre = 9217.23
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 9206.33
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9190.86
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9176.42
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9160.45
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 9151.29
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9137.80
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9121.98
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 9120.90
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9106.75
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 9105.71
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9092.42
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 9091.40
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9078.19
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9065.02
+**********
+	threshold: 12
+
+expansions = 59477.00
+**********
+p = 59477.00
+prePre = 9156.02
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9141.98
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9127.99
+**********
+	threshold: 12
+
+expansions = 36789.00
+**********
+p = 36789.00
+prePre = 9177.65
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9162.88
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9148.93
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 9134.17
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9120.32
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 9115.49
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 9104.88
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9089.62
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9076.72
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9064.90
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9049.80
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9035.51
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9022.03
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9007.08
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 9002.52
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8989.92
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8975.69
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8961.68
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 8960.94
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8946.25
+**********
+	threshold: 12
+
+expansions = 31061.00
+**********
+p = 31061.00
+prePre = 8984.58
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 8970.56
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8959.20
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8946.85
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8933.80
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8920.05
+**********
+	threshold: 12
+
+expansions = 16965.00
+**********
+p = 16965.00
+prePre = 8933.85
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 8922.86
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 8915.19
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8900.84
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8892.80
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 8888.70
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8877.67
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8864.20
+**********
+	threshold: 12
+
+expansions = 1605.00
+**********
+p = 1605.00
+prePre = 8851.92
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8838.54
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8825.21
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 8817.82
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8805.30
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8791.93
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8778.04
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 8768.61
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8757.96
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8747.35
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 8738.90
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8725.93
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 8731.00
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8719.52
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8707.36
+**********
+	threshold: 12
+
+expansions = 29013.00
+**********
+p = 29013.00
+prePre = 8740.87
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8727.29
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 8718.97
+**********
+	threshold: 12
+
+expansions = 22613.00
+**********
+p = 22613.00
+prePre = 8741.79
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8728.28
+**********
+	threshold: 12
+
+expansions = 11861.00
+**********
+p = 11861.00
+prePre = 8733.41
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 8725.13
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8712.26
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 8708.64
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8695.84
+**********
+	threshold: 12
+
+expansions = 77141.00
+**********
+p = 77141.00
+prePre = 8806.95
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8794.19
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 8793.76
+**********
+	threshold: 12
+
+expansions = 30037.00
+**********
+p = 30037.00
+prePre = 8828.08
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 8821.70
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8810.38
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8797.03
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8785.79
+**********
+	threshold: 12
+
+expansions = 16965.00
+**********
+p = 16965.00
+prePre = 8798.90
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8786.31
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8773.61
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8763.43
+**********
+	threshold: 12
+
+expansions = 43413.00
+**********
+p = 43413.00
+prePre = 8818.61
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 8815.00
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8801.80
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8794.48
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8782.04
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 8773.43
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8761.06
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8748.74
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8736.30
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8724.05
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8711.16
+**********
+	threshold: 12
+
+expansions = 11733.00
+**********
+p = 11733.00
+prePre = 8715.89
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8703.05
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8693.20
+**********
+	threshold: 12
+
+expansions = 79189.00
+**********
+p = 79189.00
+prePre = 8803.01
+**********
+	threshold: 12
+
+expansions = 1605.00
+**********
+p = 1605.00
+prePre = 8791.81
+**********
+	threshold: 12
+
+expansions = 59477.00
+**********
+p = 59477.00
+prePre = 8870.52
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8857.54
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8846.61
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 8838.61
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8826.26
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 8830.81
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 8827.08
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8814.29
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 8810.60
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8800.76
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8793.70
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 8784.11
+**********
+	threshold: 12
+
+expansions = 17237.00
+**********
+p = 17237.00
+prePre = 8797.00
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 8793.58
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8782.29
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8770.38
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 8758.43
+**********
+	threshold: 12
+
+expansions = 59397.00
+**********
+p = 59397.00
+prePre = 8835.04
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8822.45
+**********
+	threshold: 12
+
+expansions = 22613.00
+**********
+p = 22613.00
+prePre = 8843.25
+**********
+	threshold: 12
+
+expansions = 64149.00
+**********
+p = 64149.00
+prePre = 8926.54
 **********
 	threshold: 12
 
 expansions = 54933.00
 **********
 p = 54933.00
-prePre = 9101.24
+prePre = 8995.72
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8983.47
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 8971.33
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8959.16
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8949.33
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 8941.45
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8929.52
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8918.26
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 8911.60
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 8902.12
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 8892.66
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8880.74
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8870.28
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8860.72
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8851.19
+**********
+	threshold: 12
+
+expansions = 20661.00
+**********
+p = 20661.00
+prePre = 8868.55
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 8860.92
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 8855.06
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8843.33
+**********
+	threshold: 12
+
+expansions = 17237.00
+**********
+p = 17237.00
+prePre = 8855.60
+**********
+	threshold: 12
+
+expansions = 82293.00
+**********
+p = 82293.00
+prePre = 8962.80
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 8966.91
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8959.95
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 8959.33
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8947.68
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8936.06
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8929.18
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 8923.31
+**********
+	threshold: 12
+
+expansions = 30037.00
+**********
+p = 30037.00
+prePre = 8953.78
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8942.08
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8931.18
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8920.31
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8908.85
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8898.04
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8887.27
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8875.29
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8863.34
+**********
+	threshold: 12
+
+expansions = 79189.00
+**********
+p = 79189.00
+prePre = 8963.52
+**********
+	threshold: 12
+
+expansions = 15701.00
+**********
+p = 15701.00
+prePre = 8973.10
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8961.07
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8950.91
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8938.94
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 8958.17
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8946.22
+**********
+	threshold: 12
+
+expansions = 11861.00
+**********
+p = 11861.00
+prePre = 8950.33
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8940.26
+**********
+	threshold: 12
+
+expansions = 9717.00
+**********
+p = 9717.00
+prePre = 8941.35
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8932.15
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 8920.86
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8909.67
+**********
+	threshold: 12
+
+expansions = 30037.00
+**********
+p = 30037.00
+prePre = 8939.22
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8927.44
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8916.15
+**********
+	threshold: 12
+
+expansions = 17237.00
+**********
+p = 17237.00
+prePre = 8927.74
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 8916.49
+**********
+	threshold: 12
+
+expansions = 113733.00
+**********
+p = 113733.00
+prePre = 9062.07
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9052.81
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 9047.02
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9037.81
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 9029.66
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9020.50
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 9014.79
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9004.86
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8998.23
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8991.62
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 8980.52
+**********
+	threshold: 12
+
+expansions = 29013.00
+**********
+p = 29013.00
+prePre = 9007.92
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 9004.56
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8992.96
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8981.39
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 8970.44
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 8958.93
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8950.02
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8939.74
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 8933.30
+**********
+	threshold: 12
+
+expansions = 30037.00
+**********
+p = 30037.00
+prePre = 8961.82
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 8953.12
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8944.28
+**********
+	threshold: 12
+
+expansions = 17237.00
+**********
+p = 17237.00
+prePre = 8955.44
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 8945.82
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 8937.02
+**********
+	threshold: 12
+
+expansions = 15701.00
+**********
+p = 15701.00
+prePre = 8946.08
+**********
+	threshold: 12
+
+expansions = 10869.00
+**********
+p = 10869.00
+prePre = 8948.66
+**********
+	threshold: 12
+
+expansions = 12933.00
+**********
+p = 12933.00
+prePre = 8953.98
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 8943.85
+**********
+	threshold: 12
+
+expansions = 240837.00
+**********
+p = 240837.00
+prePre = 9253.04
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9243.90
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 9240.32
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9231.22
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 9227.66
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 9223.92
+**********
+	threshold: 12
+
+expansions = 42837.00
+**********
+p = 42837.00
+prePre = 9268.39
+**********
+	threshold: 12
+
+expansions = 196949.00
+**********
+p = 196949.00
+prePre = 9516.31
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9506.91
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 9509.91
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 9508.62
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9499.27
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 9490.92
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 9484.30
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 9487.30
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 9481.27
+**********
+	threshold: 12
+
+expansions = 59477.00
+**********
+p = 59477.00
+prePre = 9546.54
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9537.20
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9526.00
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 9521.94
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 9538.84
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9527.55
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 9516.36
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9505.81
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9496.62
+**********
+	threshold: 12
+
+expansions = 79189.00
+**********
+p = 79189.00
+prePre = 9586.54
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 9589.37
+**********
+	threshold: 12
+
+expansions = 16917.00
+**********
+p = 16917.00
+prePre = 9598.80
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9587.66
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9578.42
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9567.89
+**********
+	threshold: 12
+
+expansions = 15701.00
+**********
+p = 15701.00
+prePre = 9575.75
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9564.14
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9554.98
+**********
+	threshold: 12
+
+expansions = 16965.00
+**********
+p = 16965.00
+prePre = 9564.43
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9553.98
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9542.89
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 9535.43
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 9534.16
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 9528.24
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9516.82
+**********
+	threshold: 12
+
+expansions = 16965.00
+**********
+p = 16965.00
+prePre = 9526.23
+**********
+	threshold: 12
+
+expansions = 16965.00
+**********
+p = 16965.00
+prePre = 9535.63
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9526.61
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9516.34
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 9509.62
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9498.73
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 9495.03
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 9487.73
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9477.56
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 9473.72
+**********
+	threshold: 12
+
+expansions = 33477.00
+**********
+p = 33477.00
+prePre = 9503.69
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 9499.82
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9488.62
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9477.98
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9469.17
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9458.58
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9447.48
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9438.74
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 9435.09
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9425.13
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9416.45
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9405.89
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 9400.31
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9389.37
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9379.00
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9370.43
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9359.99
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9349.57
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9340.35
+**********
+	threshold: 12
+
+expansions = 9717.00
+**********
+p = 9717.00
+prePre = 9340.80
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9332.34
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9323.89
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9313.17
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9304.05
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9293.38
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9283.26
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9274.92
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9264.73
+**********
+	threshold: 12
+
+expansions = 15701.00
+**********
+p = 15701.00
+prePre = 9272.49
+**********
+	threshold: 12
+
+expansions = 151557.00
+**********
+p = 151557.00
+prePre = 9443.92
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 9436.97
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9428.50
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9418.19
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 9407.95
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9397.29
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 9391.87
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9382.80
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9374.45
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 9390.13
+**********
+	threshold: 12
+
+expansions = 16917.00
+**********
+p = 16917.00
+prePre = 9399.10
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9389.03
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9380.71
+**********
+	threshold: 12
+
+expansions = 16965.00
+**********
+p = 16965.00
+prePre = 9389.71
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 9386.27
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9376.27
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 9370.13
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9360.16
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9350.74
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9341.84
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9331.44
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9321.57
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9311.72
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 9301.84
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 9296.15
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9285.86
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 9279.30
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9270.57
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9260.85
+**********
+	threshold: 12
+
+expansions = 1605.00
+**********
+p = 1605.00
+prePre = 9251.94
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 9246.34
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9236.68
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9226.94
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9218.33
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9208.74
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9198.67
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9189.13
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 9186.08
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9177.57
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9168.58
+**********
+	threshold: 12
+
+expansions = 113733.00
+**********
+p = 113733.00
+prePre = 9288.77
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9280.17
+**********
+	threshold: 12
+
+expansions = 22613.00
+**********
+p = 22613.00
+prePre = 9295.46
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9287.55
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9277.88
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9268.34
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9258.33
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 9257.51
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 9254.35
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 9249.36
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9239.42
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 9229.94
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9220.53
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9212.79
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9203.91
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9194.08
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 9186.54
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 9179.02
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9169.25
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 9162.47
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9154.20
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9144.48
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9136.91
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 9131.65
+**********
+	threshold: 12
+
+expansions = 202069.00
+**********
+p = 202069.00
+prePre = 9347.46
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 9344.26
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 9336.64
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9327.17
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9317.34
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9308.49
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 9303.56
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9295.23
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9286.92
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 9281.26
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9271.55
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9263.94
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9254.64
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 9247.90
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9238.64
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9229.03
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 9223.76
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9214.66
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9205.11
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9196.52
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9188.42
+**********
+	threshold: 12
+
+expansions = 1605.00
+**********
+p = 1605.00
+prePre = 9180.13
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 9177.19
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9168.20
+**********
+	threshold: 12
+
+expansions = 202069.00
+**********
+p = 202069.00
+prePre = 9378.33
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9369.14
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9360.91
+**********
+	threshold: 12
+
+expansions = 79189.00
+**********
+p = 79189.00
+prePre = 9436.73
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9427.51
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 9418.25
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9409.07
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9400.37
+**********
+	threshold: 12
+
+expansions = 15701.00
+**********
+p = 15701.00
+prePre = 9407.18
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9398.04
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 9391.86
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9382.76
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9375.24
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 9369.93
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9360.88
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9351.74
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9343.66
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9334.66
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9326.61
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9317.55
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9309.07
+**********
+	threshold: 12
+
+expansions = 8901.00
+**********
+p = 8901.00
+prePre = 9308.63
+**********
+	threshold: 12
+
+expansions = 22613.00
+**********
+p = 22613.00
+prePre = 9322.79
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 9317.60
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9308.69
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9299.81
+**********
+	threshold: 12
+
+expansions = 12021.00
+**********
+p = 12021.00
+prePre = 9302.69
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9294.75
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 9290.07
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9282.79
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9273.98
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 9270.96
+**********
+	threshold: 12
+
+expansions = 113733.00
+**********
+p = 113733.00
+prePre = 9380.92
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 9377.79
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9368.92
+**********
+	threshold: 12
+
+expansions = 837.00
+**********
+p = 837.00
+prePre = 9359.96
+**********
+	threshold: 12
+
+expansions = 15701.00
+**********
+p = 15701.00
+prePre = 9366.61
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9357.78
+**********
+	threshold: 12
+
+expansions = 11781.00
+**********
+p = 11781.00
+prePre = 9360.31
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 9357.31
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9348.06
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9338.84
+**********
+	threshold: 12
+
+expansions = 3141.00
+**********
+p = 3141.00
+prePre = 9332.38
+**********
+	threshold: 12
+
+expansions = 3669.00
+**********
+p = 3669.00
+prePre = 9326.49
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 9340.22
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9331.94
+**********
+	threshold: 12
+
+expansions = 6485.00
+**********
+p = 6485.00
+prePre = 9328.98
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9320.73
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9312.49
+**********
+	threshold: 12
+
+expansions = 22533.00
+**********
+p = 22533.00
+prePre = 9326.17
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9318.39
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9309.73
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9301.10
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 9295.83
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9288.11
+**********
+	threshold: 12
+
+expansions = 9717.00
+**********
+p = 9717.00
+prePre = 9288.55
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9279.97
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9272.91
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9264.36
+**********
+	threshold: 12
+
+expansions = 4869.00
+**********
+p = 4869.00
+prePre = 9259.86
+**********
+	threshold: 12
+
+expansions = 2517.00
+**********
+p = 2517.00
+prePre = 9252.97
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 9252.23
+**********
+	threshold: 12
+
+expansions = 2389.00
+**********
+p = 2389.00
+prePre = 9245.23
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 9244.50
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9236.92
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9229.35
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9220.48
+**********
+	threshold: 12
+
+expansions = 885.00
+**********
+p = 885.00
+prePre = 9212.02
+**********
+	threshold: 12
+
+expansions = 6549.00
+**********
+p = 6549.00
+prePre = 9209.32
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9200.49
+**********
+	threshold: 12
+
+expansions = 29013.00
+**********
+p = 29013.00
+prePre = 9220.55
+**********
+	threshold: 12
+
+expansions = 933.00
+**********
+p = 933.00
+prePre = 9212.17
+**********
+	threshold: 12
+
+expansions = 1365.00
+**********
+p = 1365.00
+prePre = 9204.24
+**********
+	threshold: 12
+
+expansions = 4181.00
+**********
+p = 4181.00
+prePre = 9199.17
+**********
+	threshold: 12
+
+expansions = 8533.00
+**********
+p = 8533.00
+prePre = 9198.50
+**********
+	threshold: 12
+
+expansions = 3333.00
+**********
+p = 3333.00
+prePre = 9192.59
+**********
+	threshold: 12
+
+expansions = 501.00
+**********
+p = 501.00
+prePre = 9183.85
+**********
+	threshold: 12
+
+expansions = 4437.00
+**********
+p = 4437.00
+prePre = 9179.08
+**********
+	threshold: 12
+
+expansions = 77141.00
+**********
+p = 77141.00
+prePre = 9247.31
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 9244.46
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 9241.62
+**********
+	threshold: 12
+
+expansions = 6405.00
+**********
+p = 6405.00
+prePre = 9238.78
+**********
+	threshold: 12
+
+expansions = 1797.00
+**********
+p = 1797.00
+prePre = 9231.34
 **********
 
-totalPrediction : 9101.24
+totalPrediction : 9231.34
 dominio = blocks
 tarefa = probBLOCKS-4-0.pddl
 heuristica = gapdb
@@ -7039,9 +7033,9 @@ found = 14
 name = probBLOCKS-4-0.csv
 Directory: gapdb created.
 Directory: SSCC created.
-bc(1)cc=21301.33
-count nodes generates : 21267.65
-count nodes expanded : 9101.24
+bc(1)cc=21639.28
+count nodes generates : 21671.33
+count nodes expanded : 9231.34
 dominio = blocks
 tarefa = probBLOCKS-4-0.pddl
 heuristica = gapdb
@@ -7062,46 +7056,46 @@ size: 1
 
 g:3
 size: 1
-	f: 2	q: 52.19
+	f: 2	q: 52.06
 
 g:4
 size: 1
-	f: 3	q: 162.83
+	f: 3	q: 158.86
 
 g:5
 size: 1
-	f: 4	q: 338.10
+	f: 4	q: 327.47
 
 g:6
 size: 1
-	f: 5	q: 649.55
+	f: 5	q: 626.75
 
 g:7
 size: 1
-	f: 6	q: 855.15
+	f: 6	q: 859.22
 
 g:8
 size: 1
-	f: 7	q: 1176.85
+	f: 7	q: 1246.77
 
 g:9
 size: 1
-	f: 8	q: 1337.84
+	f: 8	q: 1375.50
 
 g:10
 size: 1
-	f: 9	q: 1502.58
+	f: 9	q: 1521.23
 
 g:11
 size: 1
-	f: 10	q: 1502.58
+	f: 10	q: 1521.23
 
 g:12
 size: 1
-	f: 11	q: 1502.58
+	f: 11	q: 1521.23
 
-Actual search time: 0.14s [t=0.14s]
+Actual search time: 0.14s [t=0.16s]
 Search time: 0.14s
-Total time: 0.14s
+Total time: 0.16s
 Search stopped without finding a solution.
 Peak memory: 3416 KB
