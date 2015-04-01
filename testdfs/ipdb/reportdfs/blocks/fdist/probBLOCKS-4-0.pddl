@@ -1,6 +1,6 @@
 	/home/marvin/marvin/testdfs/ipdb/reportdfs/blocks/fdist/probBLOCKS-4-0.pddl
 totalniveles: 12
-threshold: 12
+ida_timer: 0.02
 
 g:0
 size: 1

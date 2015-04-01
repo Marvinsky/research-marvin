@@ -43,8 +43,9 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	sas += pasta;
 	sas += Resultado.str();
 
-	outfile<<"#PBS -N "<<heuristic<<"_d"<<numDominio<<"_p"<<(num_problema+1)<<"\n\n#PBS -m b\n\n#PBS -M marvin.zarate@ufv.br\n\n#PBS -l nodes=1:ppn=1\n\n#PBS -l walltime=1800\n\n#PBS -l pmem=6gb\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
+	outfile<<"#PBS -N "<<heuristic<<"_d"<<numDominio<<"_p"<<(num_problema+1)<<"\n\n#PBS -m b\n\n#PBS -M marvin.zarate@ufv.br\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
 	//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
+        //#PBS -l walltime 18000
 
 	cout<<"pasta = "<<pasta.c_str()<<"\n\n";
 	outfile<<"RESULTS=/home/marvin/marvin/testdfs/"<<heuristic<<"/problemas/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd\n\n";
@@ -52,12 +53,8 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 	outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
 
-	outfile<<"src/search/downward --global_probes 100 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<"  --search \"dfs("<<heuristic<<"())\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	outfile<<"src/search/downward-release --global_probes 100 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<"  --search \"dfs("<<heuristic<<"())\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 
-
-	
-	//outfile<<"src/search/downward --search \"dfs("<<heuristic<<"(pdb_max_size=2000000, collection_max_size=20000000, num_samples=1000, min_improvement=10, cost_type=NORMAL))\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
-	
 
 	outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
 	outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
@@ -80,7 +77,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	cout<<allow<<"\n";
 	system(allow.c_str());
 	executeFile = "sh "+arquivo;
-	//system(executeFile.c_str());
+	system(executeFile.c_str());
 }
 
 
