@@ -16,9 +16,10 @@ best_fitness = 2.89
 Pattern generation (Edelkamp) time: 0.04
 callind dump_file() with pdb_dump_counter = 0
 dat directory created.
-First call, removing system_call to avoid duplicate pdbs:/bin/dat/rm pfile01-001.dat
+domain directory already exists.
+First call, removing system_call to avoid duplicate pdbs:/bin/dat/barman-opt11-strips/rm pfile01-001.dat
 grep status:32512
-file_name: dat/pfile01-001.dat
+file_name: dat/barman-opt11-strips/pfile01-001.dat
 returning best heuristic(GAPDB)[,0,]:[]
 []
 []
@@ -31,706 +32,706 @@ Initial heuristic value: 4
 h_min: 4 depth: 0 #states: 0 time: 0.00s
 	threshold: 12
 
-expansions = 26661.00
+expansions = 130661.00
 **********
-p = 26661.00
-prePre = 26661.00
-**********
-	threshold: 12
-
-expansions = 36661.00
-**********
-p = 36661.00
-prePre = 31661.00
-**********
-	threshold: 12
-
-expansions = 459671.00
-**********
-p = 459671.00
-prePre = 174331.00
-**********
-	threshold: 12
-
-expansions = 549561.00
-**********
-p = 549561.00
-prePre = 268138.50
-**********
-	threshold: 12
-
-expansions = 356661.00
-**********
-p = 356661.00
-prePre = 285843.00
-**********
-	threshold: 12
-
-expansions = 115661.00
-**********
-p = 115661.00
-prePre = 257479.33
-**********
-	threshold: 12
-
-expansions = 26661.00
-**********
-p = 26661.00
-prePre = 224505.29
+p = 130661.00
+prePre = 130661.00
 **********
 	threshold: 12
 
 expansions = 43991.00
 **********
 p = 43991.00
-prePre = 201941.00
+prePre = 87326.00
 **********
 	threshold: 12
 
-expansions = 36661.00
+expansions = 183061.00
 **********
-p = 36661.00
-prePre = 183576.56
-**********
-	threshold: 12
-
-expansions = 36661.00
-**********
-p = 36661.00
-prePre = 168885.00
+p = 183061.00
+prePre = 119237.67
 **********
 	threshold: 12
 
-expansions = 36661.00
+expansions = 635661.00
 **********
-p = 36661.00
-prePre = 156864.64
-**********
-	threshold: 12
-
-expansions = 26661.00
-**********
-p = 26661.00
-prePre = 146014.33
+p = 635661.00
+prePre = 248343.50
 **********
 	threshold: 12
 
-expansions = 26661.00
+expansions = 45551.00
 **********
-p = 26661.00
-prePre = 136833.31
-**********
-	threshold: 12
-
-expansions = 36661.00
-**********
-p = 36661.00
-prePre = 129678.14
+p = 45551.00
+prePre = 207785.00
 **********
 	threshold: 12
 
-expansions = 36661.00
+expansions = 62831.00
 **********
-p = 36661.00
-prePre = 123477.00
-**********
-	threshold: 12
-
-expansions = 395661.00
-**********
-p = 395661.00
-prePre = 140488.50
-**********
-	threshold: 12
-
-expansions = 159671.00
-**********
-p = 159671.00
-prePre = 141616.88
-**********
-	threshold: 12
-
-expansions = 578061.00
-**********
-p = 578061.00
-prePre = 165863.78
-**********
-	threshold: 12
-
-expansions = 91661.00
-**********
-p = 91661.00
-prePre = 161958.37
-**********
-	threshold: 12
-
-expansions = 36661.00
-**********
-p = 36661.00
-prePre = 155693.50
-**********
-	threshold: 12
-
-expansions = 36661.00
-**********
-p = 36661.00
-prePre = 150025.29
-**********
-	threshold: 12
-
-expansions = 127661.00
-**********
-p = 127661.00
-prePre = 149008.73
-**********
-	threshold: 12
-
-expansions = 455661.00
-**********
-p = 455661.00
-prePre = 162341.43
-**********
-	threshold: 12
-
-expansions = 141161.00
-**********
-p = 141161.00
-prePre = 161458.92
-**********
-	threshold: 12
-
-expansions = 259661.00
-**********
-p = 259661.00
-prePre = 165387.00
-**********
-	threshold: 12
-
-expansions = 31661.00
-**********
-p = 31661.00
-prePre = 160243.69
-**********
-	threshold: 12
-
-expansions = 36661.00
-**********
-p = 36661.00
-prePre = 155666.56
+p = 62831.00
+prePre = 183626.00
 **********
 	threshold: 12
 
 expansions = 26661.00
 **********
 p = 26661.00
-prePre = 151059.21
+prePre = 161202.43
 **********
 	threshold: 12
 
-expansions = 639671.00
+expansions = 180661.00
 **********
-p = 639671.00
-prePre = 167907.90
-**********
-	threshold: 12
-
-expansions = 26661.00
-**********
-p = 26661.00
-prePre = 163199.67
+p = 180661.00
+prePre = 163634.75
 **********
 	threshold: 12
 
-expansions = 225161.00
+expansions = 180661.00
 **********
-p = 225161.00
-prePre = 165198.42
-**********
-	threshold: 12
-
-expansions = 76661.00
-**********
-p = 76661.00
-prePre = 162431.63
+p = 180661.00
+prePre = 165526.56
 **********
 	threshold: 12
 
-expansions = 26661.00
+expansions = 156661.00
 **********
-p = 26661.00
-prePre = 158317.36
+p = 156661.00
+prePre = 164640.00
 **********
 	threshold: 12
 
-expansions = 26661.00
+expansions = 36661.00
 **********
-p = 26661.00
-prePre = 154445.12
+p = 36661.00
+prePre = 153005.55
+**********
+	threshold: 12
+
+expansions = 180661.00
+**********
+p = 180661.00
+prePre = 155310.17
+**********
+	threshold: 12
+
+expansions = 91991.00
+**********
+p = 91991.00
+prePre = 150439.46
+**********
+	threshold: 12
+
+expansions = 36661.00
+**********
+p = 36661.00
+prePre = 142312.43
 **********
 	threshold: 12
 
 expansions = 106661.00
 **********
 p = 106661.00
-prePre = 153079.86
+prePre = 139935.67
+**********
+	threshold: 12
+
+expansions = 780661.00
+**********
+p = 780661.00
+prePre = 179981.00
 **********
 	threshold: 12
 
 expansions = 130661.00
 **********
 p = 130661.00
-prePre = 152457.11
-**********
-	threshold: 12
-
-expansions = 219671.00
-**********
-p = 219671.00
-prePre = 154273.70
-**********
-	threshold: 12
-
-expansions = 1295661.00
-**********
-p = 1295661.00
-prePre = 184310.21
+prePre = 177079.82
 **********
 	threshold: 12
 
 expansions = 26661.00
 **********
 p = 26661.00
-prePre = 180267.92
+prePre = 168723.22
 **********
 	threshold: 12
 
-expansions = 156661.00
+expansions = 259661.00
 **********
-p = 156661.00
-prePre = 179677.75
-**********
-	threshold: 12
-
-expansions = 133061.00
-**********
-p = 133061.00
-prePre = 178540.76
+p = 259661.00
+prePre = 173509.42
 **********
 	threshold: 12
 
 expansions = 106661.00
 **********
 p = 106661.00
-prePre = 176829.33
+prePre = 170167.00
 **********
 	threshold: 12
 
-expansions = 36661.00
+expansions = 183061.00
 **********
-p = 36661.00
-prePre = 173569.60
+p = 183061.00
+prePre = 170781.00
+**********
+	threshold: 12
+
+expansions = 43991.00
+**********
+p = 43991.00
+prePre = 165017.82
 **********
 	threshold: 12
 
 expansions = 26661.00
 **********
 p = 26661.00
-prePre = 170230.77
-**********
-	threshold: 12
-
-expansions = 36661.00
-**********
-p = 36661.00
-prePre = 167262.56
-**********
-	threshold: 12
-
-expansions = 156661.00
-**********
-p = 156661.00
-prePre = 167032.09
-**********
-	threshold: 12
-
-expansions = 106661.00
-**********
-p = 106661.00
-prePre = 165747.60
-**********
-	threshold: 12
-
-expansions = 216791.00
-**********
-p = 216791.00
-prePre = 166811.00
-**********
-	threshold: 12
-
-expansions = 91661.00
-**********
-p = 91661.00
-prePre = 165277.33
-**********
-	threshold: 12
-
-expansions = 169391.00
-**********
-p = 169391.00
-prePre = 165359.60
-**********
-	threshold: 12
-
-expansions = 459671.00
-**********
-p = 459671.00
-prePre = 171130.41
-**********
-	threshold: 12
-
-expansions = 106661.00
-**********
-p = 106661.00
-prePre = 169890.62
+prePre = 159002.30
 **********
 	threshold: 12
 
 expansions = 26661.00
 **********
 p = 26661.00
-prePre = 167188.17
-**********
-	threshold: 12
-
-expansions = 141161.00
-**********
-p = 141161.00
-prePre = 166706.19
+prePre = 153488.08
 **********
 	threshold: 12
 
 expansions = 36661.00
 **********
 p = 36661.00
-prePre = 164341.73
+prePre = 148815.00
 **********
 	threshold: 12
 
-expansions = 36661.00
+expansions = 356661.00
 **********
-p = 36661.00
-prePre = 162061.71
-**********
-	threshold: 12
-
-expansions = 31661.00
-**********
-p = 31661.00
-prePre = 159773.98
+p = 356661.00
+prePre = 156809.08
 **********
 	threshold: 12
 
-expansions = 219671.00
+expansions = 183061.00
 **********
-p = 219671.00
-prePre = 160806.69
-**********
-	threshold: 12
-
-expansions = 36661.00
-**********
-p = 36661.00
-prePre = 158702.53
+p = 183061.00
+prePre = 157781.37
 **********
 	threshold: 12
 
-expansions = 36661.00
+expansions = 106661.00
 **********
-p = 36661.00
-prePre = 156668.50
-**********
-	threshold: 12
-
-expansions = 91661.00
-**********
-p = 91661.00
-prePre = 155602.80
+p = 106661.00
+prePre = 155955.64
 **********
 	threshold: 12
 
-expansions = 133061.00
+expansions = 106661.00
 **********
-p = 133061.00
-prePre = 155239.23
+p = 106661.00
+prePre = 154255.83
 **********
 	threshold: 12
 
 expansions = 219561.00
 **********
 p = 219561.00
-prePre = 156260.21
-**********
-	threshold: 12
-
-expansions = 36661.00
-**********
-p = 36661.00
-prePre = 154391.47
-**********
-	threshold: 12
-
-expansions = 31991.00
-**********
-p = 31991.00
-prePre = 152508.38
-**********
-	threshold: 12
-
-expansions = 43661.00
-**********
-p = 43661.00
-prePre = 150859.18
-**********
-	threshold: 12
-
-expansions = 218061.00
-**********
-p = 218061.00
-prePre = 151862.19
-**********
-	threshold: 12
-
-expansions = 533061.00
-**********
-p = 533061.00
-prePre = 157468.06
-**********
-	threshold: 12
-
-expansions = 1783061.00
-**********
-p = 1783061.00
-prePre = 181027.38
-**********
-	threshold: 12
-
-expansions = 180661.00
-**********
-p = 180661.00
-prePre = 181022.14
-**********
-	threshold: 12
-
-expansions = 26661.00
-**********
-p = 26661.00
-prePre = 178848.04
-**********
-	threshold: 12
-
-expansions = 133061.00
-**********
-p = 133061.00
-prePre = 178212.11
-**********
-	threshold: 12
-
-expansions = 180661.00
-**********
-p = 180661.00
-prePre = 178245.66
-**********
-	threshold: 12
-
-expansions = 183061.00
-**********
-p = 183061.00
-prePre = 178310.73
-**********
-	threshold: 12
-
-expansions = 903061.00
-**********
-p = 903061.00
-prePre = 187974.07
-**********
-	threshold: 12
-
-expansions = 91661.00
-**********
-p = 91661.00
-prePre = 186706.79
-**********
-	threshold: 12
-
-expansions = 6478061.00
-**********
-p = 6478061.00
-prePre = 268412.69
-**********
-	threshold: 12
-
-expansions = 636761.00
-**********
-p = 636761.00
-prePre = 273135.10
-**********
-	threshold: 12
-
-expansions = 183061.00
-**********
-p = 183061.00
-prePre = 271994.92
-**********
-	threshold: 12
-
-expansions = 530661.00
-**********
-p = 530661.00
-prePre = 275228.25
-**********
-	threshold: 12
-
-expansions = 26661.00
-**********
-p = 26661.00
-prePre = 272159.52
-**********
-	threshold: 12
-
-expansions = 26661.00
-**********
-p = 26661.00
-prePre = 269165.63
+prePre = 156432.67
 **********
 	threshold: 12
 
 expansions = 156661.00
 **********
 p = 156661.00
-prePre = 267810.16
+prePre = 156440.03
 **********
 	threshold: 12
 
-expansions = 218061.00
+expansions = 159671.00
 **********
-p = 218061.00
-prePre = 267217.90
-**********
-	threshold: 12
-
-expansions = 115661.00
-**********
-p = 115661.00
-prePre = 265434.88
+p = 159671.00
+prePre = 156541.00
 **********
 	threshold: 12
 
-expansions = 36661.00
+expansions = 169391.00
 **********
-p = 36661.00
-prePre = 262774.72
-**********
-	threshold: 12
-
-expansions = 188111.00
-**********
-p = 188111.00
-prePre = 261916.52
+p = 169391.00
+prePre = 156930.39
 **********
 	threshold: 12
 
-expansions = 783061.00
+expansions = 183061.00
 **********
-p = 783061.00
-prePre = 267838.61
-**********
-	threshold: 12
-
-expansions = 1317561.00
-**********
-p = 1317561.00
-prePre = 279633.25
+p = 183061.00
+prePre = 157698.94
 **********
 	threshold: 12
 
-expansions = 216761.00
+expansions = 156661.00
 **********
-p = 216761.00
-prePre = 278934.67
+p = 156661.00
+prePre = 157669.29
+**********
+	threshold: 12
+
+expansions = 106661.00
+**********
+p = 106661.00
+prePre = 156252.39
+**********
+	threshold: 12
+
+expansions = 935661.00
+**********
+p = 935661.00
+prePre = 177317.49
 **********
 	threshold: 12
 
 expansions = 36661.00
 **********
 p = 36661.00
-prePre = 276272.32
+prePre = 173616.00
 **********
 	threshold: 12
 
-expansions = 2001561.00
+expansions = 373871.00
 **********
-p = 2001561.00
-prePre = 295025.46
+p = 373871.00
+prePre = 178750.74
+**********
+	threshold: 12
+
+expansions = 26661.00
+**********
+p = 26661.00
+prePre = 174948.50
+**********
+	threshold: 12
+
+expansions = 37991.00
+**********
+p = 37991.00
+prePre = 171608.07
+**********
+	threshold: 12
+
+expansions = 356661.00
+**********
+p = 356661.00
+prePre = 176014.10
 **********
 	threshold: 12
 
 expansions = 133061.00
 **********
 p = 133061.00
-prePre = 293283.90
+prePre = 175015.19
 **********
 	threshold: 12
 
-expansions = 26661.00
+expansions = 153551.00
 **********
-p = 26661.00
-prePre = 290447.49
-**********
-	threshold: 12
-
-expansions = 26661.00
-**********
-p = 26661.00
-prePre = 287670.79
+p = 153551.00
+prePre = 174527.36
 **********
 	threshold: 12
 
-expansions = 31961.00
+expansions = 31991.00
 **********
-p = 31961.00
-prePre = 285007.15
+p = 31991.00
+prePre = 171359.89
+**********
+	threshold: 12
+
+expansions = 133061.00
+**********
+p = 133061.00
+prePre = 170527.30
+**********
+	threshold: 12
+
+expansions = 6501561.00
+**********
+p = 6501561.00
+prePre = 305230.15
 **********
 	threshold: 12
 
 expansions = 36661.00
 **********
 p = 36661.00
-prePre = 282446.88
+prePre = 299634.96
 **********
 	threshold: 12
 
 expansions = 36661.00
 **********
 p = 36661.00
-prePre = 279938.86
+prePre = 294268.14
+**********
+	threshold: 12
+
+expansions = 400361.00
+**********
+p = 400361.00
+prePre = 296390.00
+**********
+	threshold: 12
+
+expansions = 31991.00
+**********
+p = 31991.00
+prePre = 291205.71
+**********
+	threshold: 12
+
+expansions = 26661.00
+**********
+p = 26661.00
+prePre = 286118.31
+**********
+	threshold: 12
+
+expansions = 109991.00
+**********
+p = 109991.00
+prePre = 282795.15
+**********
+	threshold: 12
+
+expansions = 36661.00
+**********
+p = 36661.00
+prePre = 278237.11
+**********
+	threshold: 12
+
+expansions = 183061.00
+**********
+p = 183061.00
+prePre = 276506.64
 **********
 	threshold: 12
 
 expansions = 1083561.00
 **********
 p = 1083561.00
-prePre = 288056.25
+prePre = 290918.32
 **********
 	threshold: 12
 
 expansions = 36661.00
 **********
 p = 36661.00
-prePre = 285542.30
+prePre = 286457.67
+**********
+	threshold: 12
+
+expansions = 36661.00
+**********
+p = 36661.00
+prePre = 282150.83
+**********
+	threshold: 12
+
+expansions = 36661.00
+**********
+p = 36661.00
+prePre = 277989.98
+**********
+	threshold: 12
+
+expansions = 380661.00
+**********
+p = 380661.00
+prePre = 279701.17
+**********
+	threshold: 12
+
+expansions = 155661.00
+**********
+p = 155661.00
+prePre = 277667.72
+**********
+	threshold: 12
+
+expansions = 91661.00
+**********
+p = 91661.00
+prePre = 274667.61
+**********
+	threshold: 12
+
+expansions = 156661.00
+**********
+p = 156661.00
+prePre = 272794.49
+**********
+	threshold: 12
+
+expansions = 313871.00
+**********
+p = 313871.00
+prePre = 273436.31
+**********
+	threshold: 12
+
+expansions = 31991.00
+**********
+p = 31991.00
+prePre = 269721.77
+**********
+	threshold: 12
+
+expansions = 548111.00
+**********
+p = 548111.00
+prePre = 273939.79
+**********
+	threshold: 12
+
+expansions = 43661.00
+**********
+p = 43661.00
+prePre = 270502.79
+**********
+	threshold: 12
+
+expansions = 36661.00
+**********
+p = 36661.00
+prePre = 267063.94
+**********
+	threshold: 12
+
+expansions = 180661.00
+**********
+p = 180661.00
+prePre = 265811.72
+**********
+	threshold: 12
+
+expansions = 225551.00
+**********
+p = 225551.00
+prePre = 265236.57
+**********
+	threshold: 12
+
+expansions = 218061.00
+**********
+p = 218061.00
+prePre = 264572.13
+**********
+	threshold: 12
+
+expansions = 52751.00
+**********
+p = 52751.00
+prePre = 261630.17
+**********
+	threshold: 12
+
+expansions = 26661.00
+**********
+p = 26661.00
+prePre = 258411.41
+**********
+	threshold: 12
+
+expansions = 36661.00
+**********
+p = 36661.00
+prePre = 255414.78
+**********
+	threshold: 12
+
+expansions = 26661.00
+**********
+p = 26661.00
+prePre = 252364.73
+**********
+	threshold: 12
+
+expansions = 36661.00
+**********
+p = 36661.00
+prePre = 249526.53
+**********
+	threshold: 12
+
+expansions = 156761.00
+**********
+p = 156761.00
+prePre = 248321.78
+**********
+	threshold: 12
+
+expansions = 76661.00
+**********
+p = 76661.00
+prePre = 246121.00
+**********
+	threshold: 12
+
+expansions = 38351.00
+**********
+p = 38351.00
+prePre = 243491.00
+**********
+	threshold: 12
+
+expansions = 130661.00
+**********
+p = 130661.00
+prePre = 242080.62
+**********
+	threshold: 12
+
+expansions = 36661.00
+**********
+p = 36661.00
+prePre = 239544.58
+**********
+	threshold: 12
+
+expansions = 36661.00
+**********
+p = 36661.00
+prePre = 237070.39
+**********
+	threshold: 12
+
+expansions = 5613561.00
+**********
+p = 5613561.00
+prePre = 301847.39
+**********
+	threshold: 12
+
+expansions = 903061.00
+**********
+p = 903061.00
+prePre = 309004.69
+**********
+	threshold: 12
+
+expansions = 36661.00
+**********
+p = 36661.00
+prePre = 305800.65
+**********
+	threshold: 12
+
+expansions = 156661.00
+**********
+p = 156661.00
+prePre = 304066.47
+**********
+	threshold: 12
+
+expansions = 263561.00
+**********
+p = 263561.00
+prePre = 303600.89
+**********
+	threshold: 12
+
+expansions = 180661.00
+**********
+p = 180661.00
+prePre = 302203.84
+**********
+	threshold: 12
+
+expansions = 26661.00
+**********
+p = 26661.00
+prePre = 299107.85
+**********
+	threshold: 12
+
+expansions = 36661.00
+**********
+p = 36661.00
+prePre = 296191.78
+**********
+	threshold: 12
+
+expansions = 106661.00
+**********
+p = 106661.00
+prePre = 294109.02
+**********
+	threshold: 12
+
+expansions = 127661.00
+**********
+p = 127661.00
+prePre = 292299.80
+**********
+	threshold: 12
+
+expansions = 2138061.00
+**********
+p = 2138061.00
+prePre = 312146.70
+**********
+	threshold: 12
+
+expansions = 36661.00
+**********
+p = 36661.00
+prePre = 309216.00
+**********
+	threshold: 12
+
+expansions = 36661.00
+**********
+p = 36661.00
+prePre = 306347.00
+**********
+	threshold: 12
+
+expansions = 106661.00
+**********
+p = 106661.00
+prePre = 304266.94
+**********
+	threshold: 12
+
+expansions = 36661.00
+**********
+p = 36661.00
+prePre = 301508.11
+**********
+	threshold: 12
+
+expansions = 780661.00
+**********
+p = 780661.00
+prePre = 306397.43
+**********
+	threshold: 12
+
+expansions = 79661.00
+**********
+p = 79661.00
+prePre = 304107.16
+**********
+	threshold: 12
+
+expansions = 36661.00
+**********
+p = 36661.00
+prePre = 301432.70
 **********
 
-totalPrediction : 285542.30
+totalPrediction : 301432.70
 dominio = barman-opt11-strips
 tarefa = pfile01-001.pddl
 heuristica = gapdb
@@ -739,9 +740,9 @@ found = 11
 name = pfile01-001.csv
 Directory: gapdb created.
 Directory: SSCC created.
-bc(1)cc=1815061.71
-count nodes generates : 1706571.20
-count nodes expanded : 285542.30
+bc(1)cc=1930867.91
+count nodes generates : 1787492.00
+count nodes expanded : 301432.70
 dominio = barman-opt11-strips
 tarefa = pfile01-001.pddl
 heuristica = gapdb
@@ -758,31 +759,31 @@ size: 1
 
 g:2
 size: 1
-	f: 1	q: 51.10
+	f: 1	q: 51.90
 
 g:3
 size: 1
-	f: 2	q: 207.00
+	f: 2	q: 169.40
 
 g:4
 size: 1
-	f: 3	q: 1068.40
+	f: 3	q: 886.80
 
 g:5
 size: 1
-	f: 4	q: 3575.20
+	f: 4	q: 3316.00
 
 g:6
 size: 1
-	f: 5	q: 18622.40
+	f: 5	q: 18161.60
 
 g:7
 size: 1
-	f: 6	q: 72022.40
+	f: 6	q: 77022.40
 
 g:8
 size: 1
-	f: 7	q: 189984.80
+	f: 7	q: 201813.60
 
 g:9
 size: 0
@@ -796,8 +797,8 @@ size: 0
 g:12
 size: 0
 
-Actual search time: 0.08s [t=0.12s]
-Search time: 0.08s
-Total time: 0.12s
+Actual search time: 0.06s [t=0.10s]
+Search time: 0.06s
+Total time: 0.10s
 Search stopped without finding a solution.
-Peak memory: 3792 KB
+Peak memory: 3660 KB
