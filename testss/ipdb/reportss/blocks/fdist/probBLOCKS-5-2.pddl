@@ -1,6 +1,6 @@
 	/home/marvin/marvin/testss/ipdb/reportss/blocks/fdist/probBLOCKS-5-2.pddl
-predictionSS: 1321.36
-threshold: 16
+predictionSS: 1310.01
+ss_timer: 0.18
 g:0
 size: 1
 	f: 8	q: 1
@@ -15,58 +15,56 @@ size: 1
 
 g:3
 size: 1
-	f: 10	q: 2.984
+	f: 10	q: 3.046
 
 g:4
 size: 1
-	f: 12	q: 6.872
+	f: 12	q: 7.056
 
 g:5
 size: 1
-	f: 12	q: 12.496
+	f: 12	q: 12.84
 
 g:6
 size: 2
-	f: 12	q: 1.08
-	f: 14	q: 32.312
+	f: 12	q: 1.44
+	f: 14	q: 32.612
 
 g:7
 size: 3
-	f: 12	q: 1.08
-	f: 14	q: 66.504
-	f: 15	q: 4.608
+	f: 12	q: 1.44
+	f: 14	q: 68.2
+	f: 15	q: 3.816
 
 g:8
 size: 2
-	f: 14	q: 12.708
-	f: 16	q: 203.856
+	f: 14	q: 15.804
+	f: 16	q: 204.476
 
 g:9
 size: 3
-	f: 14	q: 13.428
-	f: 15	q: 1.152
-	f: 16	q: 454.86
+	f: 14	q: 15.948
+	f: 15	q: 2.16
+	f: 16	q: 452.328
 
 g:10
 size: 2
-	f: 14	q: 2.304
-	f: 16	q: 178.992
+	f: 14	q: 1.296
+	f: 16	q: 195.912
 
 g:11
 size: 1
-	f: 16	q: 208.368
+	f: 16	q: 216.36
 
 g:12
 size: 1
-	f: 16	q: 79.488
+	f: 16	q: 71.28
 
 g:13
-size: 1
-	f: 16	q: 17.136
+size: 0
 
 g:14
-size: 1
-	f: 16	q: 17.136
+size: 0
 
 g:15
 size: 0

@@ -1,4 +1,4 @@
-#PBS -N ipdb_d1_p6
+#PBS -N dfsipdb_d1_p6
 
 #PBS -m b
 

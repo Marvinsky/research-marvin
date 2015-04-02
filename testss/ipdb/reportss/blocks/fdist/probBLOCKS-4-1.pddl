@@ -1,6 +1,6 @@
 	/home/marvin/marvin/testss/ipdb/reportss/blocks/fdist/probBLOCKS-4-1.pddl
-predictionSS: 12.024
-threshold: 8
+predictionSS: 12.02
+ss_timer: 0.06
 g:0
 size: 1
 	f: 4	q: 1
@@ -16,11 +16,11 @@ size: 1
 g:3
 size: 2
 	f: 7	q: 2
-	f: 8	q: 1.012
+	f: 8	q: 1.01
 
 g:4
 size: 1
-	f: 8	q: 5.012
+	f: 8	q: 5.01
 
 g:5
 size: 0
