@@ -1,4 +1,4 @@
-#PBS -N ipdb_d1_p9
+#PBS -N dfsipdb_d1_p9
 
 #PBS -m b
 
@@ -19,7 +19,7 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < Astarblocks9.sas
 
-src/search/downward-release --global_probes 100 --domain_name blocks --problem_name probBLOCKS-6-2.pddl --heuristic_name ipdb  --search "dfs(ipdb())" <  Astarblocks9 >> ${RESULTS}/probBLOCKS-6-2.pddl
+src/search/downward-release --global_probes 100 --domain_name blocks --problem_name probBLOCKS-6-2.pddl --heuristic_name ipdb  --search "dfs(ipdb())" <  Astarblocks9 > ${RESULTS}/probBLOCKS-6-2.pddl
 
 
 
