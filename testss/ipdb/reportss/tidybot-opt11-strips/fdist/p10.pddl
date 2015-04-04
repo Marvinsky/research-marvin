@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss/tidybot-opt11-strips/fdist/p10.pddl
-predictionSS: 45786.5
-ss_timer: 39.32
+	/home/marvin/marvin/testss/ipdb/reportss/tidybot-opt11-strips/fdist/p10.pddl
+predictionSS: 46911.4
+ss_timer: 72.56
 g:0
 size: 1
 	f: 10	q: 1
@@ -24,42 +24,42 @@ size: 3
 
 g:4
 size: 3
-	f: 14	q: 29.897
-	f: 15	q: 12.811
-	f: 16	q: 7.869
+	f: 14	q: 30.15
+	f: 15	q: 13.246
+	f: 16	q: 7.853
 
 g:5
 size: 3
-	f: 15	q: 76.614
-	f: 16	q: 62.585
-	f: 17	q: 10.9
+	f: 15	q: 78.146
+	f: 16	q: 63.777
+	f: 17	q: 10.836
 
 g:6
 size: 3
-	f: 16	q: 233.588
-	f: 17	q: 154.016
-	f: 18	q: 60.976
+	f: 16	q: 239.844
+	f: 17	q: 159.859
+	f: 18	q: 61.919
 
 g:7
 size: 3
-	f: 17	q: 704.361
-	f: 18	q: 626.067
-	f: 19	q: 102.16
+	f: 17	q: 726.993
+	f: 18	q: 637.92
+	f: 19	q: 101.949
 
 g:8
 size: 3
-	f: 18	q: 2284.09
-	f: 19	q: 1762.96
-	f: 20	q: 534.719
+	f: 18	q: 2337.46
+	f: 19	q: 1850.58
+	f: 20	q: 494.698
 
 g:9
 size: 2
-	f: 19	q: 7439.98
-	f: 20	q: 6668.26
+	f: 19	q: 7711.35
+	f: 20	q: 6890.35
 
 g:10
 size: 1
-	f: 20	q: 24984.7
+	f: 20	q: 25464.5
 
 g:11
 size: 0
