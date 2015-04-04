@@ -1,4 +1,4 @@
-barman-opt11-strips
+pegsol-opt11-strips
 domain.pddl
-1			
-pfile03-010.pddl
+1
+p10.pddl
