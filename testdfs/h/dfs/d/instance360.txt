@@ -1,14 +1,4 @@
-barman-opt11-strips
+tidybot-opt11-strips
 domain.pddl
-10				
-pfile01-001.pddl				
-pfile01-002.pddl				
-pfile01-003.pddl				
-pfile01-004.pddl				
-pfile02-005.pddl
-pfile02-006.pddl
-pfile02-007.pddl
-pfile02-008.pddl
-pfile03-009.pddl
-pfile03-010.pddl
-
+1
+p10.pddl

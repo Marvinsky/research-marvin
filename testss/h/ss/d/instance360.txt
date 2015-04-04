@@ -1,4 +1,4 @@
-elevators-opt11-strips
+tidybot-opt11-strips
 domain.pddl
-1						
+1
 p10.pddl
