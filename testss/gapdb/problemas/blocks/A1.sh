@@ -25,11 +25,6 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < Astarblocks1.sas
 
-src/search/downward-release --global_probes 1 --domain_name blocks --problem_name probBLOCKS-4-0.pddl --heuristic_name gapdb  --search "ss(min([gapdb(mp=0.5)]))" <  Astarblocks1 > ${RESULTS}/probBLOCKS-4-0.pddl
+src/search/downward-release --global_probes 100 --domain_name blocks --problem_name probBLOCKS-4-0.pddl --heuristic_name gapdb  --search "ss(min([gapdb(mp=0.5), gapdb(mp=0.2)]))" <  Astarblocks1 > ${RESULTS}/probBLOCKS-4-0.pddl
 
-
-rm Astarblocks1
-
-
-rm Astarblocks1.sas
 
