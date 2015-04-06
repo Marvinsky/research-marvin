@@ -27,43 +27,35 @@ Pattern generation (Haslum et al.) time: 0.04s
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
 generated_by_level = 0
 expanded_by_level = 1
-f = 10 [1 evaluated, 0 expanded, t=0.04s, 3220 KB]
-Best heuristic value: 10 [g=0, 1 evaluated, 0 expanded, t=0.04s, 3220 KB]
+f = 10 [1 evaluated, 0 expanded, t=0.04s, 3224 KB]
+Best heuristic value: 10 [g=0, 1 evaluated, 0 expanded, t=0.04s, 3224 KB]
 h_initial = 10
 depth =20
-generated_by_level = 3
-expanded_by_level = 1
-f = 12 [1 evaluated, 0 expanded, t=0.04s, 3220 KB]
-generated_by_level = 5
-expanded_by_level = 1
-f = 13 [1 evaluated, 0 expanded, t=0.04s, 3220 KB]
-generated_by_level = 8
-expanded_by_level = 1
-f = 14 [1 evaluated, 0 expanded, t=0.04s, 3220 KB]
-generated_by_level = 11
-expanded_by_level = 1
-f = 15 [1 evaluated, 0 expanded, t=0.04s, 3220 KB]
-generated_by_level = 14
-expanded_by_level = 1
-f = 16 [1 evaluated, 0 expanded, t=0.04s, 3220 KB]
-generated_by_level = 17
-expanded_by_level = 1
-f = 17 [1 evaluated, 0 expanded, t=0.04s, 3220 KB]
-generated_by_level = 20
-expanded_by_level = 1
-f = 18 [1 evaluated, 0 expanded, t=0.04s, 3220 KB]
-generated_by_level = 23
-expanded_by_level = 1
-f = 19 [1 evaluated, 0 expanded, t=0.04s, 3220 KB]
-generated_by_level = 26
-expanded_by_level = 1
-f = 20 [1 evaluated, 0 expanded, t=0.04s, 3220 KB]
+f_boundary = 10, Parcial of nodes expanded: 0.00
+, Parcial of nodes generated: 0.00
+f_boundary = 12, Parcial of nodes expanded: 2.00
+, Parcial of nodes generated: 3.00
+f_boundary = 13, Parcial of nodes expanded: 3.00
+, Parcial of nodes generated: 5.00
+f_boundary = 14, Parcial of nodes expanded: 4.00
+, Parcial of nodes generated: 8.00
+f_boundary = 15, Parcial of nodes expanded: 5.00
+, Parcial of nodes generated: 11.00
+f_boundary = 16, Parcial of nodes expanded: 6.00
+, Parcial of nodes generated: 14.00
+f_boundary = 17, Parcial of nodes expanded: 7.00
+, Parcial of nodes generated: 17.00
+f_boundary = 18, Parcial of nodes expanded: 8.00
+, Parcial of nodes generated: 20.00
+f_boundary = 19, Parcial of nodes expanded: 9.00
+, Parcial of nodes generated: 23.00
+f_boundary = 20, Parcial of nodes expanded: 10.00
+, Parcial of nodes generated: 26.00
 ida_timer: 0.08
 end expansion of nodes finished.
-Total of nodes expanded counter marvinsky: 32649.00
+Total of nodes expanded by counter marvinsky: 32649.00
 Total of nodes expanded: 32649.00
 Total of nodes generated: 104308.00
-generated.size() = 47
 changing the code.
 dominio = blocks
 tarefa = probBLOCKS-6-2.pddl
@@ -192,9 +184,9 @@ Dead ends: 0 state(s).
 Expanded until last jump: 0 state(s).
 Reopened until last jump: 0 state(s).
 Evaluated until last jump: 1 state(s).
-Generated until last jump: 26 state(s).
+Generated until last jump: 0 state(s).
 Number of registered states: 1544
 Search time: 0.08s
 Total time: 0.12s
 Search stopped without finding a solution.
-Peak memory: 3220 KB
+Peak memory: 3224 KB

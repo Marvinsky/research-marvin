@@ -22,36 +22,32 @@ iPDB: size = 35
 iPDB: generated = 35
 iPDB: rejected = 0
 iPDB: max_pdb_size = 14
-iPDB: hill climbing time: 0.02s
-Pattern generation (Haslum et al.) time: 0.02s
+iPDB: hill climbing time: 0.06s
+Pattern generation (Haslum et al.) time: 0.06s
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
 generated_by_level = 0
 expanded_by_level = 1
-f = 10 [1 evaluated, 0 expanded, t=0.02s, 3220 KB]
-Best heuristic value: 10 [g=0, 1 evaluated, 0 expanded, t=0.02s, 3220 KB]
+f = 10 [1 evaluated, 0 expanded, t=0.06s, 3224 KB]
+Best heuristic value: 10 [g=0, 1 evaluated, 0 expanded, t=0.06s, 3224 KB]
 h_initial = 10
 depth =20
-generated_by_level = 5
-expanded_by_level = 1
-f = 12 [1 evaluated, 0 expanded, t=0.02s, 3220 KB]
-generated_by_level = 11
-expanded_by_level = 1
-f = 14 [1 evaluated, 0 expanded, t=0.02s, 3220 KB]
-generated_by_level = 17
-expanded_by_level = 1
-f = 16 [1 evaluated, 0 expanded, t=0.02s, 3220 KB]
-generated_by_level = 23
-expanded_by_level = 1
-f = 18 [1 evaluated, 0 expanded, t=0.02s, 3220 KB]
-generated_by_level = 29
-expanded_by_level = 1
-f = 20 [1 evaluated, 0 expanded, t=0.02s, 3220 KB]
-ida_timer: 5.30
+f_boundary = 10, Parcial of nodes expanded: 0.00
+, Parcial of nodes generated: 0.00
+f_boundary = 12, Parcial of nodes expanded: 2.00
+, Parcial of nodes generated: 5.00
+f_boundary = 14, Parcial of nodes expanded: 4.00
+, Parcial of nodes generated: 11.00
+f_boundary = 16, Parcial of nodes expanded: 6.00
+, Parcial of nodes generated: 17.00
+f_boundary = 18, Parcial of nodes expanded: 8.00
+, Parcial of nodes generated: 23.00
+f_boundary = 20, Parcial of nodes expanded: 10.00
+, Parcial of nodes generated: 29.00
+ida_timer: 9.92
 end expansion of nodes finished.
-Total of nodes expanded counter marvinsky: 3356543.00
+Total of nodes expanded by counter marvinsky: 3356543.00
 Total of nodes expanded: 3356543.00
 Total of nodes generated: 10005279.00
-generated.size() = 79
 changing the code.
 dominio = blocks
 tarefa = probBLOCKS-6-0.pddl
@@ -201,7 +197,7 @@ g:20
 size: 1
 	f: 20	q: 109507.00
 
-Actual search time: 5.32s [t=5.34s]
+Actual search time: 9.92s [t=9.98s]
 Initial state h value: 10.
 Expanded 0 state(s).
 Reopened 0 state(s).
@@ -212,9 +208,9 @@ Dead ends: 0 state(s).
 Expanded until last jump: 0 state(s).
 Reopened until last jump: 0 state(s).
 Evaluated until last jump: 1 state(s).
-Generated until last jump: 29 state(s).
+Generated until last jump: 0 state(s).
 Number of registered states: 4318
-Search time: 5.32s
-Total time: 5.34s
+Search time: 9.92s
+Total time: 9.98s
 Search stopped without finding a solution.
 Peak memory: 3356 KB

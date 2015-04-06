@@ -23,36 +23,32 @@ iPDB: size = 35
 iPDB: generated = 35
 iPDB: rejected = 0
 iPDB: max_pdb_size = 14
-iPDB: hill climbing time: 0.02s
-Pattern generation (Haslum et al.) time: 0.02s
+iPDB: hill climbing time: 0.08s
+Pattern generation (Haslum et al.) time: 0.08s
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
 generated_by_level = 0
 expanded_by_level = 1
-f = 10 [1 evaluated, 0 expanded, t=0.02s, 3220 KB]
-Best heuristic value: 10 [g=0, 1 evaluated, 0 expanded, t=0.02s, 3220 KB]
+f = 10 [1 evaluated, 0 expanded, t=0.08s, 3224 KB]
+Best heuristic value: 10 [g=0, 1 evaluated, 0 expanded, t=0.08s, 3224 KB]
 h_initial = 10
 depth =20
-generated_by_level = 10
-expanded_by_level = 1
-f = 12 [1 evaluated, 0 expanded, t=0.02s, 3220 KB]
-generated_by_level = 20
-expanded_by_level = 1
-f = 14 [1 evaluated, 0 expanded, t=0.02s, 3220 KB]
-generated_by_level = 30
-expanded_by_level = 1
-f = 16 [1 evaluated, 0 expanded, t=0.02s, 3220 KB]
-generated_by_level = 40
-expanded_by_level = 1
-f = 18 [1 evaluated, 0 expanded, t=0.02s, 3220 KB]
-generated_by_level = 50
-expanded_by_level = 1
-f = 20 [1 evaluated, 0 expanded, t=0.02s, 3220 KB]
-ida_timer: 838.20
+f_boundary = 10, Parcial of nodes expanded: 0.00
+, Parcial of nodes generated: 0.00
+f_boundary = 12, Parcial of nodes expanded: 2.00
+, Parcial of nodes generated: 10.00
+f_boundary = 14, Parcial of nodes expanded: 4.00
+, Parcial of nodes generated: 20.00
+f_boundary = 16, Parcial of nodes expanded: 6.00
+, Parcial of nodes generated: 30.00
+f_boundary = 18, Parcial of nodes expanded: 8.00
+, Parcial of nodes generated: 40.00
+f_boundary = 20, Parcial of nodes expanded: 10.00
+, Parcial of nodes generated: 50.00
+ida_timer: 1046.72
 end expansion of nodes finished.
-Total of nodes expanded counter marvinsky: 339093686.00
+Total of nodes expanded by counter marvinsky: 339093686.00
 Total of nodes expanded: 339093686.00
 Total of nodes generated: 1059777496.00
-generated.size() = 89
 changing the code.
 dominio = blocks
 tarefa = probBLOCKS-6-1.pddl
@@ -212,7 +208,7 @@ g:20
 size: 1
 	f: 20	q: 5077418.00
 
-Actual search time: 838.20s [t=838.22s]
+Actual search time: 1046.72s [t=1046.80s]
 Initial state h value: 10.
 Expanded 0 state(s).
 Reopened 0 state(s).
@@ -223,9 +219,9 @@ Dead ends: 0 state(s).
 Expanded until last jump: 0 state(s).
 Reopened until last jump: 0 state(s).
 Evaluated until last jump: 1 state(s).
-Generated until last jump: 50 state(s).
+Generated until last jump: 0 state(s).
 Number of registered states: 7024
-Search time: 838.20s
-Total time: 838.22s
+Search time: 1046.72s
+Total time: 1046.80s
 Search stopped without finding a solution.
-Peak memory: 3352 KB
+Peak memory: 3356 KB

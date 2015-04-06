@@ -22,33 +22,30 @@ iPDB: size = 24
 iPDB: generated = 24
 iPDB: rejected = 0
 iPDB: max_pdb_size = 12
-iPDB: hill climbing time: 0.00s
-Pattern generation (Haslum et al.) time: 0.00s
+iPDB: hill climbing time: 0.02s
+Pattern generation (Haslum et al.) time: 0.02s
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
 generated_by_level = 0
 expanded_by_level = 1
-f = 8 [1 evaluated, 0 expanded, t=0.00s, 3228 KB]
-Best heuristic value: 8 [g=0, 1 evaluated, 0 expanded, t=0.00s, 3228 KB]
+f = 8 [1 evaluated, 0 expanded, t=0.02s, 3228 KB]
+Best heuristic value: 8 [g=0, 1 evaluated, 0 expanded, t=0.02s, 3228 KB]
 h_initial = 8
 depth =16
-generated_by_level = 3
-expanded_by_level = 1
-f = 10 [1 evaluated, 0 expanded, t=0.00s, 3228 KB]
-generated_by_level = 8
-expanded_by_level = 1
-f = 12 [1 evaluated, 0 expanded, t=0.00s, 3228 KB]
-generated_by_level = 14
-expanded_by_level = 1
-f = 14 [1 evaluated, 0 expanded, t=0.00s, 3228 KB]
-generated_by_level = 20
-expanded_by_level = 1
-f = 16 [1 evaluated, 0 expanded, t=0.00s, 3228 KB]
-ida_timer: 0.00
+f_boundary = 8, Parcial of nodes expanded: 0.00
+, Parcial of nodes generated: 0.00
+f_boundary = 10, Parcial of nodes expanded: 2.00
+, Parcial of nodes generated: 3.00
+f_boundary = 12, Parcial of nodes expanded: 4.00
+, Parcial of nodes generated: 8.00
+f_boundary = 14, Parcial of nodes expanded: 6.00
+, Parcial of nodes generated: 14.00
+f_boundary = 16, Parcial of nodes expanded: 8.00
+, Parcial of nodes generated: 20.00
+ida_timer: -0.00
 end expansion of nodes finished.
-Total of nodes expanded counter marvinsky: 1497.00
+Total of nodes expanded by counter marvinsky: 1497.00
 Total of nodes expanded: 1497.00
 Total of nodes generated: 4102.00
-generated.size() = 24
 changing the code.
 dominio = blocks
 tarefa = probBLOCKS-5-2.pddl
@@ -131,7 +128,7 @@ g:16
 size: 1
 	f: 16	q: 3.00
 
-Actual search time: 0.00s [t=0.00s]
+Actual search time: 0.00s [t=0.02s]
 Initial state h value: 8.
 Expanded 0 state(s).
 Reopened 0 state(s).
@@ -142,9 +139,9 @@ Dead ends: 0 state(s).
 Expanded until last jump: 0 state(s).
 Reopened until last jump: 0 state(s).
 Evaluated until last jump: 1 state(s).
-Generated until last jump: 20 state(s).
+Generated until last jump: 0 state(s).
 Number of registered states: 293
 Search time: 0.00s
-Total time: 0.00s
+Total time: 0.02s
 Search stopped without finding a solution.
 Peak memory: 3228 KB

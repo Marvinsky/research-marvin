@@ -32,21 +32,19 @@ f = 4 [1 evaluated, 0 expanded, t=0.00s, 3088 KB]
 Best heuristic value: 4 [g=0, 1 evaluated, 0 expanded, t=0.00s, 3088 KB]
 h_initial = 4
 depth =8
-generated_by_level = 1
-expanded_by_level = 1
-f = 5 [1 evaluated, 0 expanded, t=0.00s, 3088 KB]
-generated_by_level = 3
-expanded_by_level = 1
-f = 6 [1 evaluated, 0 expanded, t=0.00s, 3088 KB]
-generated_by_level = 5
-expanded_by_level = 1
-f = 8 [1 evaluated, 0 expanded, t=0.00s, 3088 KB]
+f_boundary = 4, Parcial of nodes expanded: 0.00
+, Parcial of nodes generated: 0.00
+f_boundary = 5, Parcial of nodes expanded: 1.00
+, Parcial of nodes generated: 1.00
+f_boundary = 6, Parcial of nodes expanded: 2.00
+, Parcial of nodes generated: 3.00
+f_boundary = 8, Parcial of nodes expanded: 3.00
+, Parcial of nodes generated: 5.00
 ida_timer: 0.00
 end expansion of nodes finished.
-Total of nodes expanded counter marvinsky: 12.00
+Total of nodes expanded by counter marvinsky: 12.00
 Total of nodes expanded: 12.00
 Total of nodes generated: 21.00
-generated.size() = 6
 changing the code.
 dominio = blocks
 tarefa = probBLOCKS-4-1.pddl
@@ -98,7 +96,7 @@ Dead ends: 0 state(s).
 Expanded until last jump: 0 state(s).
 Reopened until last jump: 0 state(s).
 Evaluated until last jump: 1 state(s).
-Generated until last jump: 5 state(s).
+Generated until last jump: 0 state(s).
 Number of registered states: 6
 Search time: 0.00s
 Total time: 0.00s
