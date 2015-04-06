@@ -19,7 +19,7 @@ pattern: [4, 8] - improvement: 1
 pattern: [5, 6] - improvement: 5
 found a better pattern with improvement 15
 pattern: [3, 7]
-Hill climbing time so far: 0.00s
+Hill climbing time so far: 0.02s
 current collection size is 25
 current initial h value: 6
 pattern: [1, 6] - improvement: 7
@@ -32,7 +32,7 @@ pattern: [3, 6, 7] - improvement: 99
 pattern: [3, 7, 8] - improvement: 16
 found a better pattern with improvement 99
 pattern: [3, 6, 7]
-Hill climbing time so far: 0.02s
+Hill climbing time so far: 0.06s
 current collection size is 75
 current initial h value: 6
 pattern: [1, 6] - improvement: 4
@@ -47,7 +47,7 @@ pattern: [3, 5, 6, 7] - improvement: 124
 pattern: [3, 6, 7, 8] - improvement: 127
 found a better pattern with improvement 127
 pattern: [3, 6, 7, 8]
-Hill climbing time so far: 0.04s
+Hill climbing time so far: 0.10s
 current collection size is 325
 current initial h value: 6
 pattern: [1, 6] - improvement: 6
@@ -65,7 +65,7 @@ pattern: [3, 4, 6, 7, 8] - improvement: 107
 pattern: [3, 5, 6, 7, 8] - improvement: 386
 found a better pattern with improvement 386
 pattern: [3, 5, 6, 7, 8]
-Hill climbing time so far: 0.06s
+Hill climbing time so far: 0.14s
 current collection size is 825
 current initial h value: 6
 pattern: [2, 6] - improvement: 7
@@ -78,7 +78,7 @@ pattern: [2, 3, 5, 6, 7, 8] - improvement: 400
 pattern: [3, 4, 5, 6, 7, 8] - improvement: 113
 found a better pattern with improvement 400
 pattern: [2, 3, 5, 6, 7, 8]
-Hill climbing time so far: 0.08s
+Hill climbing time so far: 0.20s
 current collection size is 1825
 current initial h value: 6
 pattern: [3, 4, 6, 7, 8] - improvement: 64
@@ -90,7 +90,7 @@ pattern: [1, 2, 3, 5, 6, 7, 8] - improvement: 222
 pattern: [2, 3, 4, 5, 6, 7, 8] - improvement: 102
 found a better pattern with improvement 497
 pattern: [0, 2, 3, 5, 6, 7, 8]
-Hill climbing time so far: 0.10s
+Hill climbing time so far: 0.26s
 current collection size is 6825
 current initial h value: 6
 pattern: [4, 8] - improvement: 3
@@ -103,7 +103,7 @@ pattern: [0, 1, 2, 3, 5, 6, 7, 8] - improvement: 288
 pattern: [0, 2, 3, 4, 5, 6, 7, 8] - improvement: 132
 found a better pattern with improvement 288
 pattern: [0, 1, 2, 3, 5, 6, 7, 8]
-Hill climbing time so far: 0.14s
+Hill climbing time so far: 0.30s
 current collection size is 16825
 current initial h value: 6
 pattern: [4, 8] - improvement: 2
@@ -114,7 +114,7 @@ pattern: [0, 2, 3, 4, 5, 6, 7, 8] - improvement: 123
 pattern: [0, 1, 2, 3, 4, 5, 6, 7, 8] - improvement: 163
 found a better pattern with improvement 163
 pattern: [0, 1, 2, 3, 4, 5, 6, 7, 8]
-Hill climbing time so far: 0.18s
+Hill climbing time so far: 0.38s
 current collection size is 36825
 current initial h value: 6
 Improvement below threshold. Stop hill climbing.
@@ -127,35 +127,34 @@ iPDB: size = 20000
 iPDB: generated = 43
 iPDB: rejected = 0
 iPDB: max_pdb_size = 20000
-iPDB: hill climbing time: 0.20s
-Pattern generation (Haslum et al.) time: 0.20s
+iPDB: hill climbing time: 0.42s
+Pattern generation (Haslum et al.) time: 0.42s
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
 generated_by_level = 0
 expanded_by_level = 1
-f = 6 [1 evaluated, 0 expanded, t=0.20s, 3512 KB]
-Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0.20s, 3512 KB]
+f = 6 [1 evaluated, 0 expanded, t=0.42s, 3512 KB]
+Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0.42s, 3512 KB]
 h_initial = 6
 depth =12
-generated_by_level = 4
-expanded_by_level = 1
-f = 8 [1 evaluated, 0 expanded, t=0.20s, 3512 KB]
-generated_by_level = 12
-expanded_by_level = 1
-f = 10 [1 evaluated, 0 expanded, t=0.20s, 3512 KB]
-generated_by_level = 20
-expanded_by_level = 1
-f = 12 [1 evaluated, 0 expanded, t=0.20s, 3512 KB]
+f_boundary = 6, Parcial of nodes expanded: 0.00
+, Parcial of nodes generated: 0.00
+f_boundary = 8, Parcial of nodes expanded: 1.00
+, Parcial of nodes generated: 4.00
+f_boundary = 10, Parcial of nodes expanded: 3.00
+, Parcial of nodes generated: 12.00
+f_boundary = 12, Parcial of nodes expanded: 5.00
+, Parcial of nodes generated: 20.00
 ida_timer: 0.02
 end expansion of nodes finished.
-Total of nodes expanded counter marvinsky: 8283.00
+Total of nodes expanded by counter marvinsky: 8283.00
 Total of nodes expanded: 8283.00
 Total of nodes generated: 19648.00
-generated.size() = 34
 changing the code.
 dominio = blocks
 tarefa = probBLOCKS-4-0.pddl
 heuristica = ipdb
 blocks directory created.
+fdist created.
 outputFile = /home/marvin/marvin/testdfs/ipdb/reportdfs/blocks/fdist/probBLOCKS-4-0.pddl
 g:0
 size: 1
@@ -230,7 +229,7 @@ g:12
 size: 1
 	f: 12	q: 1339.00
 
-Actual search time: 0.02s [t=0.22s]
+Actual search time: 0.02s [t=0.44s]
 Initial state h value: 6.
 Expanded 0 state(s).
 Reopened 0 state(s).
@@ -241,9 +240,9 @@ Dead ends: 0 state(s).
 Expanded until last jump: 0 state(s).
 Reopened until last jump: 0 state(s).
 Evaluated until last jump: 1 state(s).
-Generated until last jump: 20 state(s).
+Generated until last jump: 0 state(s).
 Number of registered states: 89
 Search time: 0.02s
-Total time: 0.22s
+Total time: 0.44s
 Search stopped without finding a solution.
 Peak memory: 3512 KB
