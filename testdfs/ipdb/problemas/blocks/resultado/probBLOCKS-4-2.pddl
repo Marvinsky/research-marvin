@@ -25,13 +25,9 @@ iPDB: size = 15
 iPDB: generated = 15
 iPDB: rejected = 0
 iPDB: max_pdb_size = 10
-iPDB: hill climbing time: 0.02s
-Pattern generation (Haslum et al.) time: 0.02s
-Conducting best first search with reopening closed nodes, (real) bound = 2147483647
-generated_by_level = 0
-expanded_by_level = 1
-f = 6 [1 evaluated, 0 expanded, t=0.02s, 3088 KB]
-Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0.02s, 3088 KB]
+iPDB: hill climbing time: 0.00s
+Pattern generation (Haslum et al.) time: 0.00s
+max_h(constructor) = 6
 h_initial = 6
 depth =12
 f_boundary = 6, Parcial of nodes expanded: 0.00
@@ -134,20 +130,8 @@ g:12
 size: 1
 	f: 12	q: 891.00
 
-Actual search time: 0.02s [t=0.04s]
-Initial state h value: 6.
-Expanded 0 state(s).
-Reopened 0 state(s).
-Evaluated 1 state(s).
-Evaluations: 1
-Generated 26077 state(s).
-Dead ends: 0 state(s).
-Expanded until last jump: 0 state(s).
-Reopened until last jump: 0 state(s).
-Evaluated until last jump: 1 state(s).
-Generated until last jump: 0 state(s).
-Number of registered states: 123
+Actual search time: 0.02s [t=0.02s]
 Search time: 0.02s
-Total time: 0.04s
+Total time: 0.02s
 Search stopped without finding a solution.
 Peak memory: 3088 KB
