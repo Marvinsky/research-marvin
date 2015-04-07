@@ -1,6 +1,6 @@
 	/home/marvin/marvin/testdfs/ipdb/reportdfs/blocks/fdist/probBLOCKS-5-0.pddl
 nodes_expanded: 464
-ida_timer: -8.3348e-19
+ida_timer: 0
 
 g:0
 size: 1
