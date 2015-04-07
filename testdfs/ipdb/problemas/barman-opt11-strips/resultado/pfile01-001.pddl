@@ -1,12 +1,12 @@
 reading input... [t=0.00s]
 Simplifying transitions... done!
-done reading input! [t=0.00s]
-building causal graph...done! [t=0.00s]
-packing state variables...done! [t=0.00s]
+done reading input! [t=0.02s]
+building causal graph...done! [t=0.02s]
+packing state variables...done! [t=0.02s]
 Variables: 62
 Facts: 133
 Bytes per state: 12
-done initalizing global data [t=0.00s]
+done initalizing global data [t=0.02s]
 Average operator cost: 2.21
 PDB collection construction time: 0.00s
 done calculating initial pattern collection and candidate patterns for the search
@@ -62,7 +62,7 @@ pattern: [23, 46, 61] - improvement: 105
 pattern: [23, 54, 61] - improvement: 79
 found a better pattern with improvement 1000
 pattern: [27, 59]
-Hill climbing time so far: 0.06s
+Hill climbing time so far: 0.08s
 current collection size is 18
 current initial h value: 6
 pattern: [2, 19, 60] - improvement: 541
@@ -79,7 +79,7 @@ pattern: [27, 44, 59] - improvement: 148
 pattern: [27, 52, 59] - improvement: 94
 found a better pattern with improvement 541
 pattern: [2, 19, 60]
-Hill climbing time so far: 0.10s
+Hill climbing time so far: 0.14s
 current collection size is 42
 current initial h value: 6
 pattern: [5, 19, 60] - improvement: 306
@@ -96,7 +96,7 @@ pattern: [2, 19, 45, 60] - improvement: 143
 pattern: [2, 19, 53, 60] - improvement: 88
 found a better pattern with improvement 855
 pattern: [2, 5, 19, 60]
-Hill climbing time so far: 0.18s
+Hill climbing time so far: 0.22s
 current collection size is 186
 current initial h value: 7
 pattern: [19, 45, 60] - improvement: 6
@@ -114,7 +114,7 @@ pattern: [2, 5, 19, 45, 60] - improvement: 154
 pattern: [2, 5, 19, 53, 60] - improvement: 90
 found a better pattern with improvement 175
 pattern: [2, 5, 19, 50, 60]
-Hill climbing time so far: 0.26s
+Hill climbing time so far: 0.34s
 current collection size is 474
 current initial h value: 9
 pattern: [46, 61] - improvement: 167
@@ -136,7 +136,7 @@ pattern: [2, 5, 19, 45, 50, 60] - improvement: 185
 pattern: [2, 5, 19, 50, 53, 60] - improvement: 32
 found a better pattern with improvement 217
 pattern: [27, 44, 59]
-Hill climbing time so far: 0.38s
+Hill climbing time so far: 0.52s
 current collection size is 482
 current initial h value: 9
 pattern: [46, 61] - improvement: 150
@@ -160,7 +160,7 @@ pattern: [5, 27, 44, 59] - improvement: 5
 pattern: [27, 44, 52, 59] - improvement: 78
 found a better pattern with improvement 196
 pattern: [2, 5, 19, 45, 60]
-Hill climbing time so far: 0.56s
+Hill climbing time so far: 0.78s
 current collection size is 770
 current initial h value: 9
 pattern: [46, 61] - improvement: 172
@@ -179,7 +179,7 @@ pattern: [2, 5, 19, 45, 48, 60] - improvement: 19
 pattern: [2, 5, 19, 45, 53, 60] - improvement: 99
 found a better pattern with improvement 200
 pattern: [23, 46, 61]
-Hill climbing time so far: 0.80s
+Hill climbing time so far: 1.12s
 current collection size is 778
 current initial h value: 9
 pattern: [46, 61] - improvement: 27
@@ -200,7 +200,7 @@ pattern: [5, 23, 46, 61] - improvement: 12
 pattern: [23, 46, 54, 61] - improvement: 89
 found a better pattern with improvement 123
 pattern: [2, 5, 19, 37, 50, 60]
-Hill climbing time so far: 1.16s
+Hill climbing time so far: 1.62s
 current collection size is 1354
 current initial h value: 9
 pattern: [46, 61] - improvement: 48
@@ -225,7 +225,7 @@ pattern: [2, 5, 19, 37, 40, 50, 60] - improvement: 127
 pattern: [2, 5, 19, 37, 43, 50, 60] - improvement: 165
 found a better pattern with improvement 165
 pattern: [2, 5, 19, 37, 43, 50, 60]
-Hill climbing time so far: 1.60s
+Hill climbing time so far: 2.24s
 current collection size is 2506
 current initial h value: 9
 pattern: [46, 61] - improvement: 46
@@ -253,7 +253,7 @@ pattern: [2, 5, 19, 34, 37, 43, 50, 60] - improvement: 163
 pattern: [2, 5, 19, 37, 40, 43, 50, 60] - improvement: 164
 found a better pattern with improvement 164
 pattern: [2, 5, 19, 37, 40, 43, 50, 60]
-Hill climbing time so far: 2.12s
+Hill climbing time so far: 2.98s
 current collection size is 4810
 current initial h value: 9
 pattern: [46, 61] - improvement: 56
@@ -281,7 +281,7 @@ pattern: [2, 5, 19, 37, 40, 43, 50, 53, 60] - improvement: 38
 pattern: [2, 5, 19, 34, 37, 40, 43, 50, 60] - improvement: 793
 found a better pattern with improvement 793
 pattern: [2, 5, 19, 34, 37, 40, 43, 50, 60]
-Hill climbing time so far: 2.76s
+Hill climbing time so far: 3.90s
 current collection size is 9418
 current initial h value: 19
 pattern: [46, 61] - improvement: 16
@@ -311,7 +311,7 @@ pattern: [2, 5, 19, 34, 37, 40, 43, 50, 53, 60] - improvement: 91
 pattern: [2, 5, 19, 34, 37, 40, 43, 50, 51, 60] - improvement: 26
 found a better pattern with improvement 239
 pattern: [2, 5, 19, 34, 37, 40, 43, 45, 50, 60]
-Hill climbing time so far: 3.58s
+Hill climbing time so far: 5.10s
 current collection size is 18634
 current initial h value: 19
 pattern: [46, 61] - improvement: 19
@@ -340,7 +340,7 @@ pattern: [2, 5, 19, 34, 37, 40, 43, 45, 50, 53, 60] - improvement: 77
 pattern: [2, 5, 19, 34, 37, 40, 43, 45, 50, 51, 60] - improvement: 14
 found a better pattern with improvement 143
 pattern: [2, 5, 15, 19, 34, 37, 40, 43, 45, 50, 60]
-Hill climbing time so far: 4.70s
+Hill climbing time so far: 6.68s
 current collection size is 37066
 current initial h value: 19
 pattern: [46, 61] - improvement: 17
@@ -377,7 +377,7 @@ pattern: [2, 5, 15, 19, 34, 37, 40, 43, 45, 48, 50, 60] - improvement: 6
 pattern: [2, 5, 15, 19, 34, 37, 40, 43, 45, 50, 51, 60] - improvement: 23
 found a better pattern with improvement 82
 pattern: [2, 5, 15, 19, 34, 37, 40, 43, 45, 50, 53, 60]
-Hill climbing time so far: 6.12s
+Hill climbing time so far: 8.82s
 current collection size is 73930
 current initial h value: 19
 pattern: [46, 61] - improvement: 9
@@ -406,7 +406,7 @@ pattern: [2, 5, 15, 19, 34, 37, 40, 43, 45, 48, 50, 53, 60] - improvement: 4
 pattern: [2, 5, 15, 19, 34, 37, 40, 43, 45, 50, 51, 53, 60] - improvement: 19
 found a better pattern with improvement 51
 pattern: [2, 5, 19, 45, 53, 60]
-Hill climbing time so far: 8.30s
+Hill climbing time so far: 12.14s
 current collection size is 74506
 current initial h value: 19
 pattern: [46, 61] - improvement: 13
@@ -438,7 +438,7 @@ pattern: [2, 5, 15, 19, 34, 37, 40, 43, 45, 50, 51, 53, 60] - improvement: 21
 pattern: [2, 5, 19, 45, 48, 53, 60] - improvement: 20
 found a better pattern with improvement 49
 pattern: [27, 44, 52, 59]
-Hill climbing time so far: 9.62s
+Hill climbing time so far: 13.98s
 current collection size is 74522
 current initial h value: 19
 pattern: [46, 61] - improvement: 16
@@ -468,7 +468,7 @@ pattern: [2, 27, 44, 52, 59] - improvement: 1
 pattern: [5, 27, 44, 52, 59] - improvement: 8
 found a better pattern with improvement 62
 pattern: [23, 46, 54, 61]
-Hill climbing time so far: 11.98s
+Hill climbing time so far: 16.22s
 current collection size is 74538
 current initial h value: 19
 pattern: [46, 61] - improvement: 12
@@ -500,7 +500,7 @@ pattern: [2, 23, 46, 54, 61] - improvement: 3
 pattern: [5, 23, 46, 54, 61] - improvement: 11
 found a better pattern with improvement 27
 pattern: [2, 5, 19, 45, 48, 60]
-Hill climbing time so far: 15.02s
+Hill climbing time so far: 19.04s
 current collection size is 75114
 current initial h value: 19
 pattern: [44, 59] - improvement: 8
@@ -530,7 +530,7 @@ pattern: [2, 5, 19, 38, 45, 48, 60] - improvement: 11
 pattern: [2, 5, 19, 41, 45, 48, 60] - improvement: 23
 found a better pattern with improvement 45
 pattern: [2, 5, 19, 35, 45, 48, 60]
-Hill climbing time so far: 18.34s
+Hill climbing time so far: 22.14s
 current collection size is 76266
 current initial h value: 19
 pattern: [44, 59] - improvement: 16
@@ -555,7 +555,7 @@ pattern: [2, 5, 19, 35, 38, 45, 48, 60] - improvement: 22
 pattern: [2, 5, 19, 35, 41, 45, 48, 60] - improvement: 47
 found a better pattern with improvement 47
 pattern: [2, 5, 19, 35, 41, 45, 48, 60]
-Hill climbing time so far: 21.94s
+Hill climbing time so far: 25.48s
 current collection size is 78570
 current initial h value: 19
 pattern: [44, 59] - improvement: 41
@@ -581,7 +581,7 @@ pattern: [2, 5, 19, 32, 35, 41, 45, 48, 60] - improvement: 33
 pattern: [2, 5, 19, 35, 38, 41, 45, 48, 60] - improvement: 27
 found a better pattern with improvement 41
 pattern: [44, 59]
-Hill climbing time so far: 25.92s
+Hill climbing time so far: 29.14s
 current collection size is 78574
 current initial h value: 19
 pattern: [46, 61] - improvement: 1
@@ -618,7 +618,7 @@ pattern: [2, 5, 19, 32, 35, 41, 45, 48, 60] - improvement: 38
 pattern: [2, 5, 19, 35, 38, 41, 45, 48, 60] - improvement: 37
 found a better pattern with improvement 38
 pattern: [2, 5, 19, 32, 35, 41, 45, 48, 60]
-Hill climbing time so far: 30.80s
+Hill climbing time so far: 33.74s
 current collection size is 83182
 current initial h value: 19
 pattern: [2, 5, 19, 37, 45, 50, 60] - improvement: 1
@@ -645,7 +645,7 @@ pattern: [2, 5, 19, 32, 35, 41, 45, 48, 53, 60] - improvement: 24
 pattern: [2, 5, 19, 32, 35, 38, 41, 45, 48, 60] - improvement: 264
 found a better pattern with improvement 264
 pattern: [2, 5, 19, 32, 35, 38, 41, 45, 48, 60]
-Hill climbing time so far: 36.34s
+Hill climbing time so far: 38.88s
 current collection size is 92398
 current initial h value: 19
 pattern: [2, 5, 19, 37, 45, 50, 60] - improvement: 1
@@ -663,7 +663,7 @@ pattern: [2, 5, 19, 32, 35, 38, 41, 45, 48, 53, 60] - improvement: 45
 pattern: [2, 5, 19, 32, 35, 38, 41, 45, 48, 51, 60] - improvement: 17
 found a better pattern with improvement 78
 pattern: [2, 5, 13, 19, 32, 35, 38, 41, 45, 48, 60]
-Hill climbing time so far: 42.80s
+Hill climbing time so far: 44.58s
 current collection size is 110830
 current initial h value: 19
 pattern: [46, 61] - improvement: 2
@@ -692,7 +692,7 @@ pattern: [2, 5, 13, 19, 32, 35, 38, 41, 45, 48, 53, 60] - improvement: 47
 pattern: [2, 5, 13, 19, 32, 35, 38, 41, 45, 48, 51, 60] - improvement: 22
 found a better pattern with improvement 47
 pattern: [2, 5, 13, 19, 32, 35, 38, 41, 45, 48, 53, 60]
-Hill climbing time so far: 50.72s
+Hill climbing time so far: 50.98s
 current collection size is 147694
 current initial h value: 19
 pattern: [46, 61] - improvement: 6
@@ -726,7 +726,7 @@ pattern: [2, 5, 13, 19, 32, 35, 38, 41, 45, 48, 51, 60] - improvement: 17
 pattern: [2, 5, 13, 19, 32, 35, 38, 41, 45, 48, 51, 53, 60] - improvement: 18
 found a better pattern with improvement 19
 pattern: [2, 5, 15, 19, 34, 37, 40, 43, 45, 50, 51, 53, 60]
-Hill climbing time so far: 60.10s
+Hill climbing time so far: 58.80s
 current collection size is 221422
 current initial h value: 19
 pattern: [46, 61] - improvement: 2
@@ -743,7 +743,7 @@ pattern: [2, 5, 13, 19, 32, 35, 38, 41, 45, 48, 51, 60] - improvement: 14
 pattern: [2, 5, 13, 19, 32, 35, 38, 41, 45, 48, 51, 53, 60] - improvement: 16
 found a better pattern with improvement 16
 pattern: [2, 5, 13, 19, 32, 35, 38, 41, 45, 48, 51, 53, 60]
-Hill climbing time so far: 73.60s
+Hill climbing time so far: 70.00s
 current collection size is 295150
 current initial h value: 19
 pattern: [46, 61] - improvement: 3
@@ -764,38 +764,40 @@ iPDB: size = 157312
 iPDB: generated = 619
 iPDB: rejected = 0
 iPDB: max_pdb_size = 221184
-iPDB: hill climbing time: 86.30s
-Pattern generation (Haslum et al.) time: 86.30s
+iPDB: hill climbing time: 81.58s
+Pattern generation (Haslum et al.) time: 81.60s
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
 generated_by_level = 0
 expanded_by_level = 1
-f = 19 [1 evaluated, 0 expanded, t=86.30s, 78524 KB]
-Best heuristic value: 19 [g=0, 1 evaluated, 0 expanded, t=86.30s, 78524 KB]
+f = 19 [1 evaluated, 0 expanded, t=81.62s, 80512 KB]
+Best heuristic value: 19 [g=0, 1 evaluated, 0 expanded, t=81.62s, 80512 KB]
 h_initial = 19
 depth =38
-f_boundary = 19, Parcial of nodes expanded: 0.00
-, Parcial of nodes generated: 0.00
-f_boundary = 21, Parcial of nodes expanded: 2.00
-, Parcial of nodes generated: 18.00
-f_boundary = 23, Parcial of nodes expanded: 4.00
-, Parcial of nodes generated: 36.00
-f_boundary = 25, Parcial of nodes expanded: 6.00
-, Parcial of nodes generated: 54.00
-f_boundary = 27, Parcial of nodes expanded: 8.00
-, Parcial of nodes generated: 72.00
-f_boundary = 29, Parcial of nodes expanded: 10.00
-, Parcial of nodes generated: 90.00
-f_boundary = 31, Parcial of nodes expanded: 12.00
-, Parcial of nodes generated: 108.00
-f_boundary = 33, Parcial of nodes expanded: 14.00
-, Parcial of nodes generated: 126.00
-f_boundary = 35, Parcial of nodes expanded: 16.00
-, Parcial of nodes generated: 144.00
-f_boundary = 37, Parcial of nodes expanded: 18.00
-, Parcial of nodes generated: 162.00
-f_boundary = 38, Parcial of nodes expanded: 21.00
-, Parcial of nodes generated: 188.00
-f_boundary = 39, Parcial of nodes expanded: 3614287.00
-, Parcial of nodes generated: 24590551.00
-f_boundary = 40, Parcial of nodes expanded: 3614287.00
-, Parcial of nodes generated: 24590565.00
+f_boundary = 19, Parcial_of_nodes_expanded: 1.00
+, Parcial_of_nodes_generated: 10.00
+f_boundary = 21, Parcial_of_nodes_expanded: 3.00
+, Parcial_of_nodes_generated: 28.00
+f_boundary = 23, Parcial_of_nodes_expanded: 5.00
+, Parcial_of_nodes_generated: 46.00
+f_boundary = 25, Parcial_of_nodes_expanded: 7.00
+, Parcial_of_nodes_generated: 64.00
+f_boundary = 27, Parcial_of_nodes_expanded: 9.00
+, Parcial_of_nodes_generated: 82.00
+f_boundary = 29, Parcial_of_nodes_expanded: 11.00
+, Parcial_of_nodes_generated: 100.00
+f_boundary = 31, Parcial_of_nodes_expanded: 13.00
+, Parcial_of_nodes_generated: 118.00
+f_boundary = 33, Parcial_of_nodes_expanded: 15.00
+, Parcial_of_nodes_generated: 136.00
+f_boundary = 35, Parcial_of_nodes_expanded: 17.00
+, Parcial_of_nodes_generated: 154.00
+f_boundary = 37, Parcial_of_nodes_expanded: 19.00
+, Parcial_of_nodes_generated: 172.00
+f_boundary = 38, Parcial_of_nodes_expanded: 22.00
+, Parcial_of_nodes_generated: 196.00
+f_boundary = 39, Parcial_of_nodes_expanded: 3614287.00
+, Parcial_of_nodes_generated: 24590561.00
+f_boundary = 40, Parcial_of_nodes_expanded: 3614287.00
+, Parcial_of_nodes_generated: 24590569.00
+Peak memory: 80512 KB
+caught signal 15 -- exiting
