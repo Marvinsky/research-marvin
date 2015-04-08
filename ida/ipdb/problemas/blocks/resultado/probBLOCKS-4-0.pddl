@@ -19,7 +19,7 @@ pattern: [4, 8] - improvement: 1
 pattern: [5, 6] - improvement: 5
 found a better pattern with improvement 15
 pattern: [3, 7]
-Hill climbing time so far: 0.00s
+Hill climbing time so far: 0.02s
 current collection size is 25
 current initial h value: 6
 pattern: [1, 6] - improvement: 7
@@ -32,7 +32,7 @@ pattern: [3, 6, 7] - improvement: 99
 pattern: [3, 7, 8] - improvement: 16
 found a better pattern with improvement 99
 pattern: [3, 6, 7]
-Hill climbing time so far: 0.02s
+Hill climbing time so far: 0.04s
 current collection size is 75
 current initial h value: 6
 pattern: [1, 6] - improvement: 4
@@ -47,7 +47,7 @@ pattern: [3, 5, 6, 7] - improvement: 124
 pattern: [3, 6, 7, 8] - improvement: 127
 found a better pattern with improvement 127
 pattern: [3, 6, 7, 8]
-Hill climbing time so far: 0.04s
+Hill climbing time so far: 0.08s
 current collection size is 325
 current initial h value: 6
 pattern: [1, 6] - improvement: 6
@@ -65,7 +65,7 @@ pattern: [3, 4, 6, 7, 8] - improvement: 107
 pattern: [3, 5, 6, 7, 8] - improvement: 386
 found a better pattern with improvement 386
 pattern: [3, 5, 6, 7, 8]
-Hill climbing time so far: 0.06s
+Hill climbing time so far: 0.10s
 current collection size is 825
 current initial h value: 6
 pattern: [2, 6] - improvement: 7
@@ -78,7 +78,7 @@ pattern: [2, 3, 5, 6, 7, 8] - improvement: 400
 pattern: [3, 4, 5, 6, 7, 8] - improvement: 113
 found a better pattern with improvement 400
 pattern: [2, 3, 5, 6, 7, 8]
-Hill climbing time so far: 0.08s
+Hill climbing time so far: 0.16s
 current collection size is 1825
 current initial h value: 6
 pattern: [3, 4, 6, 7, 8] - improvement: 64
@@ -90,7 +90,7 @@ pattern: [1, 2, 3, 5, 6, 7, 8] - improvement: 222
 pattern: [2, 3, 4, 5, 6, 7, 8] - improvement: 102
 found a better pattern with improvement 497
 pattern: [0, 2, 3, 5, 6, 7, 8]
-Hill climbing time so far: 0.10s
+Hill climbing time so far: 0.20s
 current collection size is 6825
 current initial h value: 6
 pattern: [4, 8] - improvement: 3
@@ -103,7 +103,7 @@ pattern: [0, 1, 2, 3, 5, 6, 7, 8] - improvement: 288
 pattern: [0, 2, 3, 4, 5, 6, 7, 8] - improvement: 132
 found a better pattern with improvement 288
 pattern: [0, 1, 2, 3, 5, 6, 7, 8]
-Hill climbing time so far: 0.14s
+Hill climbing time so far: 0.26s
 current collection size is 16825
 current initial h value: 6
 pattern: [4, 8] - improvement: 2
@@ -114,7 +114,7 @@ pattern: [0, 2, 3, 4, 5, 6, 7, 8] - improvement: 123
 pattern: [0, 1, 2, 3, 4, 5, 6, 7, 8] - improvement: 163
 found a better pattern with improvement 163
 pattern: [0, 1, 2, 3, 4, 5, 6, 7, 8]
-Hill climbing time so far: 0.18s
+Hill climbing time so far: 0.34s
 current collection size is 36825
 current initial h value: 6
 Improvement below threshold. Stop hill climbing.
@@ -127,104 +127,73 @@ iPDB: size = 20000
 iPDB: generated = 43
 iPDB: rejected = 0
 iPDB: max_pdb_size = 20000
-iPDB: hill climbing time: 0.20s
-Pattern generation (Haslum et al.) time: 0.20s
+iPDB: hill climbing time: 0.40s
+Pattern generation (Haslum et al.) time: 0.40s
 max_h(constructor) = 6
 h_initial = 6
-depth =12
-f_boundary = 6, Parcial of nodes expanded: 0.00
-, Parcial of nodes generated: 0.00
-f_boundary = 8, Parcial of nodes expanded: 1.00
-, Parcial of nodes generated: 4.00
-f_boundary = 10, Parcial of nodes expanded: 3.00
-, Parcial of nodes generated: 12.00
-f_boundary = 12, Parcial of nodes expanded: 5.00
-, Parcial of nodes generated: 20.00
-ida_timer: 0.02
-end expansion of nodes finished.
-Total of nodes expanded by counter marvinsky: 8283.00
-Total of nodes expanded: 8283.00
-Total of nodes generated: 19648.00
-changing the code.
-dominio = blocks
-tarefa = probBLOCKS-4-0.pddl
-heuristica = ipdb
-outputFile = /home/marvin/marvin/ida/ipdb/reportida/blocks/fdist/probBLOCKS-4-0.pddl
-g:0
-size: 1
-	f: 6	q: 1.00
+node expanded: h = 6, g_real = 0, f = 6
+applicable_ops.size() = 4
+--------------childs-------------
+	Child_1 : h = 7, g_real = 1, f = 8
+		the soluton WAS NOT found.
+		next_bound = 8
+	Child_2 : h = 5, g_real = 1, f = 6
+		the soluton WAS NOT found.
+		call dfs again.
+node expanded: h = 5, g_real = 1, f = 6
+applicable_ops.size() = 4
+--------------childs-------------
+	Child_1 : h = 4, g_real = 2, f = 6
+		the soluton WAS NOT found.
+		call dfs again.
+node expanded: h = 4, g_real = 2, f = 6
+applicable_ops.size() = 3
+--------------childs-------------
+	Child_1 : h = 5, g_real = 3, f = 8
+		the soluton WAS NOT found.
+		next_bound = 8
+	Child_2 : h = 3, g_real = 3, f = 6
+		the soluton WAS NOT found.
+		call dfs again.
+node expanded: h = 3, g_real = 3, f = 6
+applicable_ops.size() = 3
+--------------childs-------------
+	Child_1 : h = 2, g_real = 4, f = 6
+		the soluton WAS NOT found.
+		call dfs again.
+node expanded: h = 2, g_real = 4, f = 6
+applicable_ops.size() = 2
+--------------childs-------------
+	Child_1 : h = 3, g_real = 5, f = 8
+		the soluton WAS NOT found.
+		next_bound = 8
+	Child_2 : h = 1, g_real = 5, f = 6
+		the soluton WAS NOT found.
+		call dfs again.
+node expanded: h = 1, g_real = 5, f = 6
+applicable_ops.size() = 2
+--------------childs-------------
+	Child_1 : h = 0, g_real = 6, f = 6
+Solution found!
+	Solution-found in dfs_heur.
+	best_soln_sofar = 6
+	best_soln_sofar <= bound => return 1;
+		dfs_heur is executed again and return 1;
+		dfs_heur is executed again and return 1;
+		dfs_heur is executed again and return 1;
+		dfs_heur is executed again and return 1;
+		dfs_heur is executed again and return 1;
+	bound = 6, nodes_expanded_for_bound = 6, nodes_generated_for_bound = 9
+done = 1
+break the application because done = 1
+SOLUTION FOUND
+	cost = 6, expanded nodes = 6, generated nodes = 9
 
-g:1
-size: 2
-	f: 6	q: 1.00
-	f: 8	q: 3.00
-
-g:2
-size: 3
-	f: 6	q: 1.00
-	f: 8	q: 7.00
-	f: 10	q: 8.00
-
-g:3
-size: 4
-	f: 6	q: 1.00
-	f: 8	q: 9.00
-	f: 10	q: 27.00
-	f: 12	q: 15.00
-
-g:4
-size: 4
-	f: 6	q: 1.00
-	f: 8	q: 11.00
-	f: 10	q: 59.00
-	f: 12	q: 88.00
-
-g:5
-size: 4
-	f: 6	q: 1.00
-	f: 8	q: 12.00
-	f: 10	q: 79.00
-	f: 12	q: 239.00
-
-g:6
-size: 4
-	f: 6	q: 1.00
-	f: 8	q: 13.00
-	f: 10	q: 103.00
-	f: 12	q: 507.00
-
-g:7
-size: 3
-	f: 8	q: 14.00
-	f: 10	q: 116.00
-	f: 12	q: 689.00
-
-g:8
-size: 3
-	f: 8	q: 14.00
-	f: 10	q: 130.00
-	f: 12	q: 921.00
-
-g:9
-size: 2
-	f: 10	q: 144.00
-	f: 12	q: 1051.00
-
-g:10
-size: 2
-	f: 10	q: 144.00
-	f: 12	q: 1195.00
-
-g:11
-size: 1
-	f: 12	q: 1339.00
-
-g:12
-size: 1
-	f: 12	q: 1339.00
-
-Actual search time: 0.02s [t=0.22s]
-Search time: 0.02s
-Total time: 0.22s
-Search stopped without finding a solution.
-Peak memory: 3528 KB
+	Total depth: 6, expansion: 6, generation: 9
+Actual search time: 0.00s [t=0.40s]
+Plan length: 0 step(s).
+Plan cost: 0
+Search time: 0.00s
+Total time: 0.40s
+Solution found.
+Peak memory: 3508 KB
