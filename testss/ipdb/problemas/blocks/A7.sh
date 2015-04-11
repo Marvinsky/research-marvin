@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < Astarblocks7.sas
 
-src/search/downward-release --global_probes 1000 --domain_name blocks --problem_name probBLOCKS-6-0.pddl --heuristic_name ipdb --search "ss(ipdb())" <  Astarblocks7 > ${RESULTS}/probBLOCKS-6-0.pddl
+src/search/downward-release --F_boundary 12 --global_probes 1000 --domain_name blocks --problem_name probBLOCKS-6-0.pddl --heuristic_name ipdb --search "ss(ipdb(max_time=600))" <  Astarblocks7 > ${RESULTS}/probBLOCKS-6-0.pddl
 
 
 
