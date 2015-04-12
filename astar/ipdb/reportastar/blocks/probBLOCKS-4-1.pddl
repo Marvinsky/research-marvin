@@ -1,4 +1,4 @@
-		/home/marvin/marvin/astar/ipdb/reportastar/blocks/probBLOCKS-4-1.pddl
+		/home/levi/marvin/marvin/astar/ipdb/reportastar/blocks/probBLOCKS-4-1.pddl
 	totalniveles: 5
 	f-value		#nodesByLevel		time		#nodesExpanded
 	4		1			0			1

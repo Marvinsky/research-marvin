@@ -1,4 +1,4 @@
-		/home/marvin/marvin/astar/ipdb/reportastar/blocks/speed/probBLOCKS-5-2.pddl
+		/home/levi/marvin/marvin/astar/ipdb/reportastar/blocks/speed/probBLOCKS-5-2.pddl
 	initial_value: 8
 	h_min	gen	exp		V		SEv		VeSP		NPBP
 	7	1	1		1		7		0.12		0.12
