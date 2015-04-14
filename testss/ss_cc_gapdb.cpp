@@ -52,7 +52,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 	outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
 
-	outfile<<"src/search/downward-release --global_probes 100 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([gapdb(mp=0.5)]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	outfile<<"src/search/downward-release --F_boundary 12 --global_probes 100 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([gapdb(mp=0.5)]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	
         //size=200000, eps=60, colls=5
 	outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
