@@ -1,14 +1,8 @@
 #PBS ss_2
 
-#PBS -m b
+#PBS -m a
 
 #PBS -M marvin.zarate@ufv.br
-
-#PBS -l nodes=1:ppn=1
-
-#PBS -l walltime=1800
-
-#PBS -l pmem=6gb
 
 cd $PBS_O_WORKDIR
 
@@ -25,7 +19,7 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < Astarblocks2.sas
 
-src/search/downward-release --global_probes 100 --domain_name blocks --problem_name probBLOCKS-4-1.pddl --heuristic_name gapdb --use_saved_pdbs --search "ss(gapdb(mp=0.5, size=200000, eps=60, colls=5))" <  Astarblocks2 >> ${RESULTS}/probBLOCKS-4-1.pddl
+src/search/downward-release --F_boundary 12 --global_probes 100 --domain_name blocks --problem_name probBLOCKS-4-1.pddl --heuristic_name gapdb --search "ss(min([gapdb(mp=0.5)]))" <  Astarblocks2 > ${RESULTS}/probBLOCKS-4-1.pddl
 
 
 
