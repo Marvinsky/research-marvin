@@ -11,8 +11,8 @@ Conducting best first search with reopening closed nodes, (real) bound = 2147483
 Initializing DijkstraSearchHeuristic ...
 generated_by_level = 0
 expanded_by_level = 1
-f = 0 [1 evaluated, 0 expanded, t=0.00s, 3148 KB]
-Best heuristic value: 0 [g=0, 1 evaluated, 0 expanded, t=0.00s, 3148 KB]
+f = 0 [1 evaluated, 0 expanded, t=0.00s, 3168 KB]
+Best heuristic value: 0 [g=0, 1 evaluated, 0 expanded, t=0.00s, 3168 KB]
 node expanded: h = 0, g_real = 0, f = 0, level = 0
 --------------begin childs-----------------
 	Child_1 : h = 0, g_real = 1, f = 1, level = 1
@@ -25,7 +25,7 @@ fnivel: 0
 nodesGeneratedByLevel: 1
  time0: 0.00
 nodesGeneratedToTheLevel: 1
-f = 1 [4 evaluated, 1 expanded, t=0.00s, 3148 KB]
+f = 1 [4 evaluated, 1 expanded, t=0.00s, 3168 KB]
 node expanded: h = 0, g_real = 1, f = 1, level = 1
 --------------begin childs-----------------
 	Child_2 : h = 0, g_real = 2, f = 2, level = 2
@@ -48,7 +48,7 @@ fnivel: 1
 nodesGeneratedByLevel: 3
  time0: 0.00
 nodesGeneratedToTheLevel: 4
-f = 2 [11 evaluated, 4 expanded, t=0.00s, 3148 KB]
+f = 2 [11 evaluated, 4 expanded, t=0.00s, 3168 KB]
 node expanded: h = 0, g_real = 2, f = 2, level = 2
 --------------begin childs-----------------
 	Child_1 : h = 0, g_real = 3, f = 3, level = 3
@@ -87,7 +87,7 @@ fnivel: 2
 nodesGeneratedByLevel: 7
  time0: 0.00
 nodesGeneratedToTheLevel: 11
-f = 3 [22 evaluated, 11 expanded, t=0.00s, 3148 KB]
+f = 3 [22 evaluated, 11 expanded, t=0.00s, 3168 KB]
 node expanded: h = 0, g_real = 3, f = 3, level = 3
 --------------begin childs-----------------
 	Child_1 : h = 0, g_real = 4, f = 4, level = 4
@@ -151,7 +151,7 @@ fnivel: 3
 nodesGeneratedByLevel: 11
  time0: 0.00
 nodesGeneratedToTheLevel: 22
-f = 4 [46 evaluated, 22 expanded, t=0.00s, 3148 KB]
+f = 4 [46 evaluated, 22 expanded, t=0.00s, 3168 KB]
 node expanded: h = 0, g_real = 4, f = 4, level = 4
 --------------begin childs-----------------
 	Child_2 : h = 0, g_real = 5, f = 5, level = 5
@@ -267,7 +267,7 @@ fnivel: 4
 nodesGeneratedByLevel: 24
  time0: 0.00
 nodesGeneratedToTheLevel: 46
-f = 5 [83 evaluated, 46 expanded, t=0.00s, 3148 KB]
+f = 5 [83 evaluated, 46 expanded, t=0.00s, 3168 KB]
 node expanded: h = 0, g_real = 5, f = 5, level = 5
 --------------begin childs-----------------
 	Child_1 : h = 0, g_real = 6, f = 6, level = 6
@@ -466,7 +466,7 @@ fnivel: 5
 nodesGeneratedByLevel: 37
  time0: 0.00
 nodesGeneratedToTheLevel: 83
-f = 6 [164 evaluated, 83 expanded, t=0.00s, 3148 KB]
+f = 6 [164 evaluated, 83 expanded, t=0.00s, 3168 KB]
 node expanded: h = 0, g_real = 6, f = 6, level = 6
 --------------begin childs-----------------
 	Child_2 : h = 0, g_real = 7, f = 7, level = 7
@@ -826,7 +826,7 @@ fnivel: 6
 nodesGeneratedByLevel: 81
  time0: 0.00
 nodesGeneratedToTheLevel: 164
-f = 7 [274 evaluated, 164 expanded, t=0.00s, 3148 KB]
+f = 7 [274 evaluated, 164 expanded, t=0.00s, 3168 KB]
 node expanded: h = 0, g_real = 7, f = 7, level = 7
 --------------begin childs-----------------
 	Child_1 : h = 0, g_real = 8, f = 8, level = 8
@@ -1329,7 +1329,7 @@ fnivel: 7
 nodesGeneratedByLevel: 110
  time0: 0.00
 nodesGeneratedToTheLevel: 274
-f = 8 [440 evaluated, 274 expanded, t=0.00s, 3280 KB]
+f = 8 [440 evaluated, 274 expanded, t=0.00s, 3300 KB]
 node expanded: h = 0, g_real = 8, f = 8, level = 8
 --------------begin childs-----------------
 -------------end childs------------
@@ -1968,7 +1968,7 @@ fnivel: 8
 nodesGeneratedByLevel: 166
  time0: 0.00
 nodesGeneratedToTheLevel: 440
-f = 9 [574 evaluated, 440 expanded, t=0.00s, 3280 KB]
+f = 9 [574 evaluated, 440 expanded, t=0.00s, 3300 KB]
 node expanded: h = 0, g_real = 9, f = 9, level = 9
 --------------begin childs-----------------
 	Child_1 : h = 0, g_real = 10, f = 10, level = 10
@@ -2529,7 +2529,7 @@ fnivel: 9
 nodesGeneratedByLevel: 134
  time0: 0.00
 nodesGeneratedToTheLevel: 574
-f = 10 [726 evaluated, 574 expanded, t=0.00s, 3280 KB]
+f = 10 [726 evaluated, 574 expanded, t=0.00s, 3300 KB]
 node expanded: h = 0, g_real = 10, f = 10, level = 10
 --------------begin childs-----------------
 	Child_2 : h = 0, g_real = 11, f = 11, level = 11
@@ -2541,186 +2541,549 @@ node expanded: h = 0, g_real = 10, f = 10, level = 10
 node expanded: h = 0, g_real = 10, f = 10, level = 10
 Solution found!
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_2 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+	Child_1 : h = 0, g_real = 11, f = 11, level = 11
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
+--------------begin childs-----------------
+-------------end childs------------
 node expanded: h = 0, g_real = 10, f = 10, level = 10
-generated_by_level = 4
+--------------begin childs-----------------
+-------------end childs------------
+generated_by_level = 267
 expanded_by_level = 152
 fnivel: 10
 nodesGeneratedByLevel: 152
  time0: 0.00
 nodesGeneratedToTheLevel: 726
-f = 11 [728 evaluated, 726 expanded, t=0.00s, 3280 KB]
+f = 11 [796 evaluated, 726 expanded, t=0.00s, 3300 KB]
 node expanded: h = 0, g_real = 11, f = 11, level = 11
 
 	count_last_nodes_generated = 149.00
 total_nodes_expanded_for_start_state = 727
-total_nodes_generated_for_start_state = 1765
+total_nodes_generated_for_start_state = 2028
+depth = 11
 dominio2 = blocks
 tarefa2 = probBLOCKS-5-1.pddl
 heuristica2 = dijkstra
 Directory created successfully!
-	0		1.00		0.00		1.00
-	1		3.00		0.00		4.00
-	2		7.00		0.00		11.00
-	3		11.00		0.00		22.00
-	4		24.00		0.00		46.00
-	5		37.00		0.00		83.00
-	6		81.00		0.00		164.00
-	7		110.00		0.00		274.00
-	8		166.00		0.00		440.00
-	9		134.00		0.00		574.00
-	10		152.00		0.00		726.00
-	11		1.00		0.00		727.00
-fnivel: 11
-nodesGeneratedByLevel: 1.00
- time0: 0.00
-nodesGeneratedToTheLevel: 727.00
+	0		1			1			1
+	1		3			1			4
+	2		7			1			11
+	3		11			1			22
+	4		24			1			46
+	5		37			1			83
+	6		81			1			164
+	7		110			1			274
+	8		166			1			440
+	9		134			1			574
+	10		152			1			726
+	11		1			1			727
 Actual search time: 0.00s [t=0.00s]
 unstack b a (1)
 stack b c (1)
@@ -2737,16 +3100,16 @@ Plan cost: 10
 Initial state h value: 0.
 Expanded 727 state(s).
 Reopened 0 state(s).
-Evaluated 728 state(s).
-Evaluations: 728
-Generated 1616 state(s).
+Evaluated 796 state(s).
+Evaluations: 796
+Generated 1879 state(s).
 Dead ends: 0 state(s).
 Expanded until last jump: 726 state(s).
 Reopened until last jump: 0 state(s).
-Evaluated until last jump: 728 state(s).
-Generated until last jump: 1616 state(s).
-Number of registered states: 728
+Evaluated until last jump: 796 state(s).
+Generated until last jump: 1879 state(s).
+Number of registered states: 796
 Search time: 0.00s
 Total time: 0.00s
 Solution found.
-Peak memory: 3280 KB
+Peak memory: 3300 KB

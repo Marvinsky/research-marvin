@@ -1,17 +1,17 @@
-		/home/levi/marvin/marvin/dijkstra/dijkstra/reportdijkstra/blocks/probBLOCKS-5-0.pddl
+		/home/marvin/marvin/dijkstra/dijkstra/reportdijkstra/blocks/probBLOCKS-5-0.pddl
 	totalniveles: 14
 	f		#Nodes_by_level		Runtime(s)	#Nodes_to_the_level
-	0			1		0		1
-	1			2		0		3
-	2			3		0		6
-	3			3		0		9
-	4			7		0		16
-	5			11		0		27
-	6			26		0		53
-	7			42		0		95
-	8			90		0		185
-	9			112		0		297
-	10			162		0		459
-	11			127		0		586
-	12			144		0		730
-	13			1		0		731
+	0		1			1			1
+	1		2			1			3
+	2		3			1			6
+	3		3			1			9
+	4		7			1			16
+	5		11			1			27
+	6		26			1			53
+	7		42			1			95
+	8		90			1			185
+	9		112			1			297
+	10		162			1			459
+	11		127			1			586
+	12		144			1			730
+	13		1			1			731
