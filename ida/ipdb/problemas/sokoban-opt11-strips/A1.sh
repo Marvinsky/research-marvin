@@ -23,9 +23,3 @@ src/search/downward-release --global_probes 100 --domain_name sokoban-opt11-stri
 
 
 
-rm Astarsokoban-opt11-strips1
-
-
-
-rm Astarsokoban-opt11-strips1.sas
-

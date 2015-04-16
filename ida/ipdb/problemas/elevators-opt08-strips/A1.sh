@@ -23,9 +23,3 @@ src/search/downward-release --global_probes 100 --domain_name elevators-opt08-st
 
 
 
-rm Astarelevators-opt08-strips1
-
-
-
-rm Astarelevators-opt08-strips1.sas
-
