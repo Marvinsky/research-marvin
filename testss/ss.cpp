@@ -6,6 +6,8 @@
 #include <string>
 
 #include <time.h>
+#include <vector>
+
 
 using std::string;
 using namespace std;
@@ -43,7 +45,61 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	sas += pasta;
 	sas += Resultado.str();
 
-	outfile<<"#PBS ss_"<<(num_problema+1)<<"\n\n#PBS -m b\n\n#PBS -M marvin.zarate@ufv.br\n\n#PBS -l nodes=1:ppn=1\n\n#PBS -l walltime=1800\n\n#PBS -l pmem=6gb\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
+//Begin calling the A* in order to get the max f_boundary obtained
+
+	string astar, str;
+	int totallevels;
+
+	astar = problema;
+	astar = "/" + astar; 
+	astar = pasta + astar;
+	astar = "astar/" + heuristic + "/reportastar/" + astar;
+	astar = "marvin/" + astar;
+	astar = "marvin/" + astar;
+	astar = "/home/" + astar;
+	cout<<"\nastar path = "<<astar.c_str()<<"\n";
+
+
+        ifstream fastar(astar.c_str());
+	long F_boundary = 0;
+	if (fastar) {
+
+        	fastar>>str; //title
+        	fastar>>str; // label totallevels
+        	fastar>>totallevels;
+        	cout<<"totallevels = "<<totallevels<<endl;
+        	fastar>>str; //f
+        	fastar>>str; //nodes by level
+        	fastar>>str; //runtime
+        	fastar>>str; //nodes to the level
+        	float** levels = new float*[totallevels];
+        	for (int i = 0; i < totallevels; i++) {
+            		levels[i] = new float[4];
+        	}
+
+		vector<long> v_astar_f;
+        	for (int i = 0; i < totallevels; i++) {
+            		for (int j = 0; j < 4; j++) {
+                		fastar>>levels[i][j];
+            		}
+        	}
+
+        	for (int i = 0; i < totallevels; i++) {
+            		v_astar_f.insert(v_astar_f.begin() + i, levels[i][0]);
+        	}
+
+		F_boundary = v_astar_f.at(v_astar_f.size() - 1);
+		F_boundary++;	
+	} else {
+		cout<<"\n\tFile doest not exists.\n";
+		F_boundary = 0;
+	}
+	cout<<"F_boundary = "<<F_boundary<<"\n";
+
+//End
+
+
+	outfile<<"#PBS ss_"<<(num_problema+1)<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
 	//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
 
 	cout<<"pasta = "<<pasta.c_str()<<"\n\n";
@@ -52,8 +108,11 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 	outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
 
-	outfile<<"src/search/downward-release --global_probes 1000 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss("<<heuristic<<"(max_time=600))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-	
+	if (F_boundary == 0) {
+		outfile<<"src/search/downward-release --global_probes 1000 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss("<<heuristic<<"(max_time=600))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	} else {
+		outfile<<"src/search/downward-release --F_boundary "<<F_boundary<<" --global_probes 1000 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss("<<heuristic<<"(max_time=600))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	}
 
 	outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
 	outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
