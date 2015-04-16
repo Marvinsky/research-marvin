@@ -1,4 +1,4 @@
-		/home/marvin/marvin/dijkstra/dijkstra/reportdijkstra/pegsol-opt11-strips/p01.pddl
+		/home/levi/marvin/marvin/dijkstra/dijkstra/reportdijkstra/pegsol-opt11-strips/p01.pddl
 	totalniveles: 41
 	f		#Nodes_by_level		Runtime(s)	#Nodes_to_the_level
 	0		1			1			1
