@@ -109,7 +109,7 @@ pattern: [18, 19, 21, 23] - improvement: 54
 found a better pattern with improvement 362
 pattern: [9, 13]
 Switch from bucket-based to heap-based queue at key = 9999, num_pushes = 2
-Hill climbing time so far: 0.18s
+Hill climbing time so far: 0.16s
 current collection size is 100
 current initial h value: 365825
 Switch from bucket-based to heap-based queue at key = 9999, num_pushes = 4
@@ -127,7 +127,7 @@ pattern: [9, 10, 13] - improvement: 63
 found a better pattern with improvement 202
 pattern: [10, 25]
 Switch from bucket-based to heap-based queue at key = 212790, num_pushes = 12
-Hill climbing time so far: 0.30s
+Hill climbing time so far: 0.28s
 current collection size is 124
 current initial h value: 365825
 Switch from bucket-based to heap-based queue at key = 212790, num_pushes = 24
@@ -154,7 +154,7 @@ pattern: [10, 13, 25] - improvement: 874
 found a better pattern with improvement 874
 pattern: [10, 13, 25]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 0.46s
+Hill climbing time so far: 0.42s
 current collection size is 172
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -178,7 +178,7 @@ pattern: [10, 11, 13, 25] - improvement: 152
 found a better pattern with improvement 156
 pattern: [10, 15]
 Switch from bucket-based to heap-based queue at key = 1499, num_pushes = 12
-Hill climbing time so far: 0.64s
+Hill climbing time so far: 0.60s
 current collection size is 196
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 1499, num_pushes = 24
@@ -200,7 +200,7 @@ pattern: [10, 13, 15] - improvement: 120
 found a better pattern with improvement 150
 pattern: [10, 11, 13, 25]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 0.86s
+Hill climbing time so far: 0.80s
 current collection size is 292
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -221,7 +221,7 @@ pattern: [10, 11, 13, 14, 25] - improvement: 168
 found a better pattern with improvement 168
 pattern: [10, 11, 13, 14, 25]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 1.14s
+Hill climbing time so far: 1.06s
 current collection size is 484
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -241,7 +241,7 @@ pattern: [10, 11, 12, 13, 14, 25] - improvement: 56
 found a better pattern with improvement 144
 pattern: [10, 13, 15]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 1.48s
+Hill climbing time so far: 1.36s
 current collection size is 532
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -262,7 +262,7 @@ pattern: [10, 11, 12, 13, 14, 25] - improvement: 52
 found a better pattern with improvement 52
 pattern: [10, 11, 12, 13, 25]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 1.86s
+Hill climbing time so far: 1.72s
 current collection size is 724
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -278,7 +278,7 @@ pattern: [18, 19, 21, 23] - improvement: 48
 found a better pattern with improvement 48
 pattern: [18, 19, 21, 23]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 2.34s
+Hill climbing time so far: 2.14s
 current collection size is 820
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -298,7 +298,7 @@ pattern: [18, 19, 20, 21, 23] - improvement: 24
 found a better pattern with improvement 24
 pattern: [18, 19, 20, 21, 23]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 2.90s
+Hill climbing time so far: 2.68s
 current collection size is 1012
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -317,7 +317,7 @@ pattern: [16, 18, 19, 20, 21, 23] - improvement: 24
 found a better pattern with improvement 24
 pattern: [16, 18, 19, 21, 23]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
-Hill climbing time so far: 3.84s
+Hill climbing time so far: 3.34s
 current collection size is 1204
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 48
@@ -340,8 +340,8 @@ iPDB: size = 842
 iPDB: generated = 187
 iPDB: rejected = 0
 iPDB: max_pdb_size = 2304
-iPDB: hill climbing time: 5.16s
-Pattern generation (Haslum et al.) time: 5.16s
+iPDB: hill climbing time: 4.14s
+Pattern generation (Haslum et al.) time: 4.14s
 max_h(constructor) = 367824
 h_initial = 367824
 bound = 367824, next_bound = 2147483647
@@ -995,7 +995,7 @@ return 0;
 Finish buffer
 -------------end Childs-----------
 return 0;
-	 time_1 = 5.16s, bound_1 = 367824, nodes_expanded_for_bound = 33, nodes_generated_for_bound = 115
+	 time_1 = 4.14s, bound_1 = 367824, nodes_expanded_for_bound = 33, nodes_generated_for_bound = 115
 done = 0
 the new bound is = 367923
 best_soln_sofar = 2147483647
@@ -2693,7 +2693,7 @@ return 0;
 Finish buffer
 -------------end Childs-----------
 return 0;
-	 time_2 = 5.16s, bound_2 = 367923, nodes_expanded_for_bound = 92, nodes_generated_for_bound = 325
+	 time_2 = 4.14s, bound_2 = 367923, nodes_expanded_for_bound = 92, nodes_generated_for_bound = 325
 done = 0
 the new bound is = 368022
 best_soln_sofar = 2147483647
@@ -4868,7 +4868,7 @@ return 0;
 Finish buffer
 -------------end Childs-----------
 return 0;
-	 time_3 = 5.18s, bound_3 = 368022, nodes_expanded_for_bound = 119, nodes_generated_for_bound = 421
+	 time_3 = 4.14s, bound_3 = 368022, nodes_expanded_for_bound = 119, nodes_generated_for_bound = 421
 done = 0
 the new bound is = 375821
 best_soln_sofar = 2147483647
@@ -5358,17 +5358,17 @@ Solution found!
 		dfs_heur is executed again and return 1;
 		dfs_heur is executed again and return 1;
 		dfs_heur is executed again and return 1;
-	 time_4 = 5.18s, bound_4 = 375821, nodes_expanded_for_bound = 31, nodes_generated_for_bound = 85
+	 time_4 = 4.14s, bound_4 = 375821, nodes_expanded_for_bound = 31, nodes_generated_for_bound = 85
 done = 1
 break the application because done = 1
 SOLUTION FOUND
 	cost = 375821, expanded nodes = 275, generated nodes = 946
 
 	Total depth: 375821, expansion: 275, generation: 946
-Actual search time: 0.02s [t=5.18s]
+Actual search time: 0.00s [t=4.14s]
 Plan length: 0 step(s).
 Plan cost: 0
-Search time: 0.02s
-Total time: 5.18s
+Search time: 0.00s
+Total time: 4.14s
 Solution found.
 Peak memory: 3440 KB
