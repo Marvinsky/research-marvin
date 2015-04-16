@@ -1,1 +1,1 @@
-blocks
+pegsol-opt11-strips
