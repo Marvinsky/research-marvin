@@ -1,1 +1,1 @@
-pegsol-opt11-strips
+tidybot-opt11-strips

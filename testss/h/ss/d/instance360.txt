@@ -1,4 +1,4 @@
-sokoban-opt11-strips
+tidybot-opt11-strips
 domain.pddl
 20
 p01.pddl						
