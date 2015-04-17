@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss/tidybot-opt11-strips/fdist/p20.pddl
-predictionSS: 1097.57
-ss_timer: 35.02
+predictionSS: 1080.66
+ss_timer: 34.48
 g:0
 size: 1
 	f: 8	q: 1
@@ -23,29 +23,29 @@ size: 2
 
 g:4
 size: 3
-	f: 12	q: 14.106
-	f: 13	q: 8.24
-	f: 14	q: 4.866
+	f: 12	q: 14.015
+	f: 13	q: 7.903
+	f: 14	q: 5.112
 
 g:5
 size: 2
-	f: 13	q: 35.272
-	f: 14	q: 33.252
+	f: 13	q: 34.933
+	f: 14	q: 32.953
 
 g:6
 size: 3
-	f: 14	q: 76.909
-	f: 15	q: 53.743
-	f: 16	q: 22.981
+	f: 14	q: 74.705
+	f: 15	q: 52.683
+	f: 16	q: 22.169
 
 g:7
 size: 2
-	f: 15	q: 197.485
-	f: 16	q: 187.654
+	f: 15	q: 193.362
+	f: 16	q: 187.543
 
 g:8
 size: 1
-	f: 16	q: 441.062
+	f: 16	q: 433.279
 
 g:9
 size: 0

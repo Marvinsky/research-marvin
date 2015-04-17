@@ -1,6 +1,6 @@
-	/home/marvin/marvin/testss/ipdb/reportss/tidybot-opt11-strips/fdist/p01.pddl
+	/home/levi/marvin/marvin/testss/ipdb/reportss/tidybot-opt11-strips/fdist/p01.pddl
 predictionSS: 848
-ss_timer: 1.7
+ss_timer: 1.32
 g:0
 size: 1
 	f: 4	q: 1
