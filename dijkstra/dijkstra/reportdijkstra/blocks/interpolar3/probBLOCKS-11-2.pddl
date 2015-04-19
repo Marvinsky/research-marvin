@@ -1,0 +1,39 @@
+	/home/marvin/marvin/dijkstra/dijkstra/problemas/blocks/resultado/probBLOCKS-11-2.pddl
+max-f-value-A* 34
+	f		#Nodes_by_level		Runtime(s)		#Nodes_to_the_level
+	0		1
+	1		2
+	2		4
+	3		6
+	4		15
+	5		28
+	6		70
+	7		121
+	8		305
+	9		554
+	10		1451
+	11		2744
+	12		7493
+	13		14825
+	14		41765
+	15		85568
+	16		244358
+	17		497988
+	18		1366363
+	19		2683720
+	20		6851525
+	21		12350793
+	22		12996404
+	23		3923764
+	24		0
+	25		0
+	26		0
+	27		0
+	28		0
+	29		0
+	30		0
+	31		0
+	32		0
+	33		0
+	34		0
+	35		0
