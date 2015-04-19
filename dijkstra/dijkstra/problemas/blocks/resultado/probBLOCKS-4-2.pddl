@@ -11,444 +11,58 @@ Conducting best first search with reopening closed nodes, (real) bound = 2147483
 Initializing DijkstraSearchHeuristic ...
 generated_by_level = 0
 expanded_by_level = 1
-f = 0 [1 evaluated, 0 expanded, t=0.00s, 3168 KB]
-Best heuristic value: 0 [g=0, 1 evaluated, 0 expanded, t=0.00s, 3168 KB]
-node expanded: h = 0, g_real = 0, f = 0, level = 0
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 1, f = 1, level = 1
-	Child_2 : h = 0, g_real = 1, f = 1, level = 1
-	Child_3 : h = 0, g_real = 1, f = 1, level = 1
--------------end childs------------
+f = 0 [1 evaluated, 0 expanded, t=0.00s, 4980 KB]
+Best heuristic value: 0 [g=0, 1 evaluated, 0 expanded, t=0.00s, 4980 KB]
 generated_by_level = 3
 expanded_by_level = 1
 fnivel: 0
 nodesGeneratedByLevel: 1
  time0: 0.00
 nodesGeneratedToTheLevel: 1
-f = 1 [4 evaluated, 1 expanded, t=0.00s, 3168 KB]
-node expanded: h = 0, g_real = 1, f = 1, level = 1
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 2, f = 2, level = 2
-	Child_2 : h = 0, g_real = 2, f = 2, level = 2
--------------end childs------------
-node expanded: h = 0, g_real = 1, f = 1, level = 1
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 2, f = 2, level = 2
-	Child_3 : h = 0, g_real = 2, f = 2, level = 2
-	Child_4 : h = 0, g_real = 2, f = 2, level = 2
--------------end childs------------
-node expanded: h = 0, g_real = 1, f = 1, level = 1
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 2, f = 2, level = 2
-	Child_2 : h = 0, g_real = 2, f = 2, level = 2
--------------end childs------------
+f = 1 [4 evaluated, 1 expanded, t=0.00s, 4980 KB]
 generated_by_level = 10
 expanded_by_level = 3
 fnivel: 1
 nodesGeneratedByLevel: 3
  time0: 0.00
 nodesGeneratedToTheLevel: 4
-f = 2 [11 evaluated, 4 expanded, t=0.00s, 3168 KB]
-node expanded: h = 0, g_real = 2, f = 2, level = 2
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 3, f = 3, level = 3
--------------end childs------------
-node expanded: h = 0, g_real = 2, f = 2, level = 2
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 3, f = 3, level = 3
--------------end childs------------
-node expanded: h = 0, g_real = 2, f = 2, level = 2
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 3, f = 3, level = 3
-	Child_3 : h = 0, g_real = 3, f = 3, level = 3
--------------end childs------------
-node expanded: h = 0, g_real = 2, f = 2, level = 2
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 3, f = 3, level = 3
-	Child_2 : h = 0, g_real = 3, f = 3, level = 3
--------------end childs------------
-node expanded: h = 0, g_real = 2, f = 2, level = 2
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 3, f = 3, level = 3
-	Child_2 : h = 0, g_real = 3, f = 3, level = 3
-	Child_4 : h = 0, g_real = 3, f = 3, level = 3
--------------end childs------------
-node expanded: h = 0, g_real = 2, f = 2, level = 2
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 3, f = 3, level = 3
--------------end childs------------
-node expanded: h = 0, g_real = 2, f = 2, level = 2
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 3, f = 3, level = 3
--------------end childs------------
+f = 2 [11 evaluated, 4 expanded, t=0.00s, 4980 KB]
 generated_by_level = 18
 expanded_by_level = 7
 fnivel: 2
 nodesGeneratedByLevel: 7
  time0: 0.00
 nodesGeneratedToTheLevel: 11
-f = 3 [22 evaluated, 11 expanded, t=0.00s, 3168 KB]
-node expanded: h = 0, g_real = 3, f = 3, level = 3
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 4, f = 4, level = 4
--------------end childs------------
-node expanded: h = 0, g_real = 3, f = 3, level = 3
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 4, f = 4, level = 4
-	Child_3 : h = 0, g_real = 4, f = 4, level = 4
--------------end childs------------
-node expanded: h = 0, g_real = 3, f = 3, level = 3
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 4, f = 4, level = 4
-	Child_2 : h = 0, g_real = 4, f = 4, level = 4
--------------end childs------------
-node expanded: h = 0, g_real = 3, f = 3, level = 3
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 4, f = 4, level = 4
-	Child_2 : h = 0, g_real = 4, f = 4, level = 4
--------------end childs------------
-node expanded: h = 0, g_real = 3, f = 3, level = 3
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 4, f = 4, level = 4
-	Child_2 : h = 0, g_real = 4, f = 4, level = 4
--------------end childs------------
-node expanded: h = 0, g_real = 3, f = 3, level = 3
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 4, f = 4, level = 4
-	Child_2 : h = 0, g_real = 4, f = 4, level = 4
--------------end childs------------
-node expanded: h = 0, g_real = 3, f = 3, level = 3
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 4, f = 4, level = 4
-	Child_2 : h = 0, g_real = 4, f = 4, level = 4
--------------end childs------------
-node expanded: h = 0, g_real = 3, f = 3, level = 3
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 4, f = 4, level = 4
-	Child_2 : h = 0, g_real = 4, f = 4, level = 4
-	Child_3 : h = 0, g_real = 4, f = 4, level = 4
--------------end childs------------
-node expanded: h = 0, g_real = 3, f = 3, level = 3
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 4, f = 4, level = 4
-	Child_2 : h = 0, g_real = 4, f = 4, level = 4
-	Child_3 : h = 0, g_real = 4, f = 4, level = 4
--------------end childs------------
-node expanded: h = 0, g_real = 3, f = 3, level = 3
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 4, f = 4, level = 4
--------------end childs------------
-node expanded: h = 0, g_real = 3, f = 3, level = 3
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 4, f = 4, level = 4
--------------end childs------------
+f = 3 [22 evaluated, 11 expanded, t=0.00s, 4980 KB]
 generated_by_level = 34
 expanded_by_level = 11
 fnivel: 3
 nodesGeneratedByLevel: 11
  time0: 0.00
 nodesGeneratedToTheLevel: 22
-f = 4 [43 evaluated, 22 expanded, t=0.00s, 3168 KB]
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_3 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 5, f = 5, level = 5
-	Child_3 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_3 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 5, f = 5, level = 5
-	Child_3 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 5, f = 5, level = 5
-	Child_2 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 5, f = 5, level = 5
--------------end childs------------
-node expanded: h = 0, g_real = 4, f = 4, level = 4
---------------begin childs-----------------
--------------end childs------------
+f = 4 [43 evaluated, 22 expanded, t=0.00s, 4980 KB]
 generated_by_level = 49
 expanded_by_level = 21
 fnivel: 4
 nodesGeneratedByLevel: 21
  time0: 0.00
 nodesGeneratedToTheLevel: 43
-f = 5 [65 evaluated, 43 expanded, t=0.00s, 3168 KB]
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
-	Child_2 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
-	Child_2 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
-	Child_2 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
-	Child_2 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
-	Child_2 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
-	Child_2 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
-node expanded: h = 0, g_real = 5, f = 5, level = 5
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 6, f = 6, level = 6
--------------end childs------------
+f = 5 [65 evaluated, 43 expanded, t=0.00s, 4980 KB]
 generated_by_level = 60
 expanded_by_level = 22
 fnivel: 5
 nodesGeneratedByLevel: 22
  time0: 0.00
 nodesGeneratedToTheLevel: 65
-f = 6 [93 evaluated, 65 expanded, t=0.00s, 3168 KB]
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
+f = 6 [93 evaluated, 65 expanded, t=0.00s, 4980 KB]
 Solution found!
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_2 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
-	Child_1 : h = 0, g_real = 7, f = 7, level = 7
--------------end childs------------
-node expanded: h = 0, g_real = 6, f = 6, level = 6
---------------begin childs-----------------
--------------end childs------------
 generated_by_level = 49
 expanded_by_level = 28
 fnivel: 6
 nodesGeneratedByLevel: 28
  time0: 0.00
 nodesGeneratedToTheLevel: 93
-f = 7 [109 evaluated, 93 expanded, t=0.00s, 3168 KB]
-node expanded: h = 0, g_real = 7, f = 7, level = 7
+f = 7 [109 evaluated, 93 expanded, t=0.00s, 4980 KB]
 
 	count_last_nodes_generated = 17.00
 total_nodes_expanded_for_start_state = 94
@@ -490,4 +104,4 @@ Number of registered states: 109
 Search time: 0.00s
 Total time: 0.00s
 Solution found.
-Peak memory: 3168 KB
+Peak memory: 4980 KB
