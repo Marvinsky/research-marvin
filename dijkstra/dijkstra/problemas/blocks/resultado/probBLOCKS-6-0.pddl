@@ -11,92 +11,92 @@ Conducting best first search with reopening closed nodes, (real) bound = 2147483
 Initializing DijkstraSearchHeuristic ...
 generated_by_level = 0
 expanded_by_level = 1
-f = 0 [1 evaluated, 0 expanded, t=0.00s, 5120 KB]
-Best heuristic value: 0 [g=0, 1 evaluated, 0 expanded, t=0.00s, 5120 KB]
+f = 0 [1 evaluated, 0 expanded, t=0.00s, 5132 KB]
+Best heuristic value: 0 [g=0, 1 evaluated, 0 expanded, t=0.00s, 5132 KB]
 generated_by_level = 2
 expanded_by_level = 1
 fnivel: 0
 nodesGeneratedByLevel: 1
  time0: 0.00
 nodesGeneratedToTheLevel: 1
-f = 1 [3 evaluated, 1 expanded, t=0.00s, 5120 KB]
+f = 1 [3 evaluated, 1 expanded, t=0.00s, 5132 KB]
 generated_by_level = 6
 expanded_by_level = 2
 fnivel: 1
 nodesGeneratedByLevel: 2
  time0: 0.00
 nodesGeneratedToTheLevel: 3
-f = 2 [7 evaluated, 3 expanded, t=0.00s, 5120 KB]
+f = 2 [7 evaluated, 3 expanded, t=0.00s, 5132 KB]
 generated_by_level = 10
 expanded_by_level = 4
 fnivel: 2
 nodesGeneratedByLevel: 4
  time0: 0.00
 nodesGeneratedToTheLevel: 7
-f = 3 [13 evaluated, 7 expanded, t=0.00s, 5120 KB]
+f = 3 [13 evaluated, 7 expanded, t=0.00s, 5132 KB]
 generated_by_level = 22
 expanded_by_level = 6
 fnivel: 3
 nodesGeneratedByLevel: 6
  time0: 0.00
 nodesGeneratedToTheLevel: 13
-f = 4 [28 evaluated, 13 expanded, t=0.00s, 5120 KB]
+f = 4 [28 evaluated, 13 expanded, t=0.00s, 5132 KB]
 generated_by_level = 46
 expanded_by_level = 15
 fnivel: 4
 nodesGeneratedByLevel: 15
  time0: 0.00
 nodesGeneratedToTheLevel: 28
-f = 5 [56 evaluated, 28 expanded, t=0.00s, 5120 KB]
+f = 5 [56 evaluated, 28 expanded, t=0.00s, 5132 KB]
 generated_by_level = 102
 expanded_by_level = 28
 fnivel: 5
 nodesGeneratedByLevel: 28
  time0: 0.00
 nodesGeneratedToTheLevel: 56
-f = 6 [121 evaluated, 56 expanded, t=0.00s, 5120 KB]
+f = 6 [121 evaluated, 56 expanded, t=0.00s, 5132 KB]
 generated_by_level = 192
 expanded_by_level = 65
 fnivel: 6
 nodesGeneratedByLevel: 65
  time0: 0.00
 nodesGeneratedToTheLevel: 121
-f = 7 [221 evaluated, 121 expanded, t=0.00s, 5120 KB]
+f = 7 [221 evaluated, 121 expanded, t=0.00s, 5132 KB]
 generated_by_level = 376
 expanded_by_level = 100
 fnivel: 7
 nodesGeneratedByLevel: 100
  time0: 0.00
 nodesGeneratedToTheLevel: 221
-f = 8 [436 evaluated, 221 expanded, t=0.00s, 5120 KB]
+f = 8 [436 evaluated, 221 expanded, t=0.00s, 5132 KB]
 generated_by_level = 664
 expanded_by_level = 215
 fnivel: 8
 nodesGeneratedByLevel: 215
  time0: 0.00
 nodesGeneratedToTheLevel: 436
-f = 9 [752 evaluated, 436 expanded, t=0.00s, 5120 KB]
+f = 9 [752 evaluated, 436 expanded, t=0.00s, 5132 KB]
 generated_by_level = 1200
 expanded_by_level = 316
 fnivel: 9
 nodesGeneratedByLevel: 316
  time0: 0.00
 nodesGeneratedToTheLevel: 752
-f = 10 [1385 evaluated, 752 expanded, t=0.00s, 5120 KB]
+f = 10 [1385 evaluated, 752 expanded, t=0.00s, 5132 KB]
 generated_by_level = 1920
 expanded_by_level = 633
 fnivel: 10
 nodesGeneratedByLevel: 633
  time0: 0.00
 nodesGeneratedToTheLevel: 1385
-f = 11 [2165 evaluated, 1385 expanded, t=0.00s, 5120 KB]
+f = 11 [2165 evaluated, 1385 expanded, t=0.00s, 5132 KB]
 generated_by_level = 2744
 expanded_by_level = 780
 fnivel: 11
 nodesGeneratedByLevel: 780
  time0: 0.00
 nodesGeneratedToTheLevel: 2165
-f = 12 [3364 evaluated, 2165 expanded, t=0.00s, 5244 KB]
+f = 12 [3364 evaluated, 2165 expanded, t=0.00s, 5256 KB]
 Solution found!
 generated_by_level = 3083
 expanded_by_level = 1199
@@ -104,7 +104,7 @@ fnivel: 12
 nodesGeneratedByLevel: 1199
  time0: 0.00
 nodesGeneratedToTheLevel: 3364
-f = 13 [4372 evaluated, 3364 expanded, t=0.00s, 5244 KB]
+f = 13 [4372 evaluated, 3364 expanded, t=0.00s, 5256 KB]
 
 	count_last_nodes_generated = 505.00
 total_nodes_expanded_for_start_state = 3365
@@ -128,6 +128,10 @@ Directory created successfully!
 	11		780			1			2165
 	12		1199			1			3364
 	13		1			1			3365
+fnivel: 13
+nodesGeneratedByLevel: 1
+ time0: 1
+nodesGeneratedToTheLevel: 3365
 Actual search time: 0.00s [t=0.00s]
 unstack d a (1)
 put-down d (1)
@@ -158,4 +162,4 @@ Number of registered states: 4372
 Search time: 0.00s
 Total time: 0.00s
 Solution found.
-Peak memory: 5244 KB
+Peak memory: 5256 KB
