@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss/scanalyzer-opt11-strips/fdist/p11.pddl
-predictionSS: 84052.1
-ss_timer: 0.78
+predictionSS: 8.81201e+06
+ss_timer: 2.16
 g:0
 size: 1
 	f: 24	q: 1
@@ -11,44 +11,61 @@ size: 2
 	f: 25	q: 4
 
 g:2
-size: 2
+size: 3
 	f: 24	q: 16
 	f: 25	q: 32
+	f: 26	q: 16
 
 g:3
-size: 2
+size: 4
 	f: 24	q: 64
 	f: 25	q: 192
+	f: 26	q: 192
+	f: 27	q: 64
 
 g:4
-size: 2
+size: 4
 	f: 24	q: 256
 	f: 25	q: 1024
+	f: 26	q: 1536
+	f: 27	q: 1024
 
 g:5
-size: 2
-	f: 24	q: 967.68
-	f: 25	q: 4911.1
+size: 4
+	f: 24	q: 963.072
+	f: 25	q: 4917.25
+	f: 26	q: 10034.2
+	f: 27	q: 10227.2
 
 g:6
-size: 2
-	f: 24	q: 2298.37
-	f: 25	q: 21275.1
+size: 4
+	f: 24	q: 2289.66
+	f: 25	q: 21232.6
+	f: 26	q: 55634.9
+	f: 27	q: 78781.4
 
 g:7
-size: 2
-	f: 24	q: 672.768
-	f: 25	q: 45587.5
+size: 4
+	f: 24	q: 641.024
+	f: 25	q: 44866
+	f: 26	q: 268518
+	f: 27	q: 492593
 
 g:8
-size: 1
-	f: 25	q: 6746.62
+size: 3
+	f: 25	q: 6586.88
+	f: 26	q: 529150
+	f: 27	q: 2.54114e+06
 
 g:9
-size: 0
+size: 2
+	f: 26	q: 60153.3
+	f: 27	q: 4.46472e+06
 
 g:10
-size: 0
+size: 2
+	f: 26	q: 4769.79
+	f: 27	q: 210369
 
 g:11
 size: 0
@@ -93,5 +110,11 @@ g:24
 size: 0
 
 g:25
+size: 0
+
+g:26
+size: 0
+
+g:27
 size: 0
 
