@@ -1,12 +1,8 @@
-#PBS -N dijkstra_d1_p7
+#PBS -N _dkblocks7
 
-#PBS -m b
+#PBS -m a
 
 #PBS -M marvin.zarate@ufv.br
-
-#PBS -l nodes=1:ppn=1
-
-#PBS -l pmem=6gb
 
 cd $PBS_O_WORKDIR
 
@@ -15,9 +11,9 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/marvin/marvin/dijkstra/dijkstra/problemas/blocks/resultado
+RESULTS=/home/levi/marvin/marvin/dijkstra/dijkstra/problemas/blocks/resultado
 
-cd /home/marvin/fd
+cd /home/levi/marvin/fd
 
 python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/blocks/probBLOCKS-6-0.pddl Astarblocks7  blocks probBLOCKS-6-0.pddl  dijkstra
 
