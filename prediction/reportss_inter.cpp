@@ -73,7 +73,7 @@ void create_kre_report(string Ni, string dumpFile, string fdist, string astar, s
         int totallevels2;
        	ifstream fNi(Ni.c_str());
 	
- 	vector<unsigned long long> v_Ni;
+ 	vector<double> v_Ni;
         float** levels; // = new float*[totallevels];
 
 
@@ -119,7 +119,7 @@ void create_kre_report(string Ni, string dumpFile, string fdist, string astar, s
 	}
 
 	vector<long> v_astar_f;
-        vector<unsigned long long> v_astar_n;         
+        vector<double> v_astar_n;         
         for (int i = 0; i < totallevels4; i++) {
 	    for (int j = 0; j < 4; j++) {
 		fastar>>levels4[i][j];
@@ -157,7 +157,7 @@ void create_kre_report(string Ni, string dumpFile, string fdist, string astar, s
             vector<double> v_pred;
             for (int j = 0; j < v_Ni.size(); j++) {
                 int g = j;
-                unsigned long long ni = v_Ni.at(j);
+                double ni = v_Ni.at(j);
 		//cout<<"N"<<j<<" = "<<ni<<endl;
 		//look for the g in v_fdist
 		ifstream ffdist;
@@ -177,15 +177,15 @@ void create_kre_report(string Ni, string dumpFile, string fdist, string astar, s
 			if (amount == level.c_str()) {
                                	//outputFile<<level.c_str()<<"\n";
                                 int size;
-                                map<int, unsigned long long> m;
-				unsigned long long sumq = 0;
+                                map<int, double> m;
+				double sumq = 0;
 				ffdist>>amount;
                                 ffdist>>amount;
                                 size = atoi(amount.c_str());
                                 
                                 for (int p1 = 0; p1 <= size; p1++) {
 				    int f = 0;
-                                    unsigned long long q = 0;
+                                    double q = 0;
 				    ffdist>>amount;
                                     ffdist>>amount;
                                     f = atoi(amount.c_str());
@@ -195,12 +195,12 @@ void create_kre_report(string Ni, string dumpFile, string fdist, string astar, s
                                     sumq = sumq + q;
                                     
                                     //outputFile<<"f = "<<f<<" q = "<<q<<"\n";
-                                    m.insert(pair<int, unsigned long long>(f, q));
+                                    m.insert(pair<int, double>(f, q));
                                     
 				}
 				//Calculate the percentage
-                                unsigned long long sumR = 0;	
-				for (map<int, unsigned long long>::iterator it = m.begin(); it != m.end(); it++) {
+                                double sumR = 0;	
+				for (map<int, double>::iterator it = m.begin(); it != m.end(); it++) {
 				    int f = it->first;
 				    
                                     if (f <= threshold) {
