@@ -11,120 +11,120 @@ Conducting best first search with reopening closed nodes, (real) bound = 2147483
 Initializing DijkstraSearchHeuristic ...
 generated_by_level = 0
 expanded_by_level = 1
-f = 0 [1 evaluated, 0 expanded, t=0.00s, 4980 KB]
-Best heuristic value: 0 [g=0, 1 evaluated, 0 expanded, t=0.00s, 4980 KB]
+f = 0 [1 evaluated, 0 expanded, t=0.00s, 4992 KB]
+Best heuristic value: 0 [g=0, 1 evaluated, 0 expanded, t=0.00s, 4992 KB]
 generated_by_level = 1
 expanded_by_level = 1
 fnivel: 0
 nodesGeneratedByLevel: 1
  time0: 0.00
 nodesGeneratedToTheLevel: 1
-f = 1 [2 evaluated, 1 expanded, t=0.00s, 4980 KB]
+f = 1 [2 evaluated, 1 expanded, t=0.00s, 4992 KB]
 generated_by_level = 2
 expanded_by_level = 1
 fnivel: 1
 nodesGeneratedByLevel: 1
  time0: 0.00
 nodesGeneratedToTheLevel: 2
-f = 2 [3 evaluated, 2 expanded, t=0.00s, 4980 KB]
+f = 2 [3 evaluated, 2 expanded, t=0.00s, 4992 KB]
 generated_by_level = 2
 expanded_by_level = 1
 fnivel: 2
 nodesGeneratedByLevel: 1
  time0: 0.00
 nodesGeneratedToTheLevel: 3
-f = 3 [4 evaluated, 3 expanded, t=0.00s, 4980 KB]
+f = 3 [4 evaluated, 3 expanded, t=0.00s, 4992 KB]
 generated_by_level = 3
 expanded_by_level = 1
 fnivel: 3
 nodesGeneratedByLevel: 1
  time0: 0.00
 nodesGeneratedToTheLevel: 4
-f = 4 [6 evaluated, 4 expanded, t=0.00s, 4980 KB]
+f = 4 [6 evaluated, 4 expanded, t=0.00s, 4992 KB]
 generated_by_level = 5
 expanded_by_level = 2
 fnivel: 4
 nodesGeneratedByLevel: 2
  time0: 0.00
 nodesGeneratedToTheLevel: 6
-f = 5 [9 evaluated, 6 expanded, t=0.00s, 4980 KB]
+f = 5 [9 evaluated, 6 expanded, t=0.00s, 4992 KB]
 generated_by_level = 10
 expanded_by_level = 3
 fnivel: 5
 nodesGeneratedByLevel: 3
  time0: 0.00
 nodesGeneratedToTheLevel: 9
-f = 6 [16 evaluated, 9 expanded, t=0.00s, 4980 KB]
+f = 6 [16 evaluated, 9 expanded, t=0.00s, 4992 KB]
 generated_by_level = 19
 expanded_by_level = 7
 fnivel: 6
 nodesGeneratedByLevel: 7
  time0: 0.00
 nodesGeneratedToTheLevel: 16
-f = 7 [27 evaluated, 16 expanded, t=0.00s, 4980 KB]
+f = 7 [27 evaluated, 16 expanded, t=0.00s, 4992 KB]
 generated_by_level = 39
 expanded_by_level = 11
 fnivel: 7
 nodesGeneratedByLevel: 11
  time0: 0.00
 nodesGeneratedToTheLevel: 27
-f = 8 [53 evaluated, 27 expanded, t=0.00s, 4980 KB]
+f = 8 [53 evaluated, 27 expanded, t=0.00s, 4992 KB]
 generated_by_level = 78
 expanded_by_level = 26
 fnivel: 8
 nodesGeneratedByLevel: 26
  time0: 0.00
 nodesGeneratedToTheLevel: 53
-f = 9 [95 evaluated, 53 expanded, t=0.00s, 4980 KB]
+f = 9 [95 evaluated, 53 expanded, t=0.00s, 4992 KB]
 generated_by_level = 151
 expanded_by_level = 42
 fnivel: 9
 nodesGeneratedByLevel: 42
  time0: 0.00
 nodesGeneratedToTheLevel: 95
-f = 10 [185 evaluated, 95 expanded, t=0.00s, 4980 KB]
+f = 10 [185 evaluated, 95 expanded, t=0.00s, 4992 KB]
 generated_by_level = 250
 expanded_by_level = 90
 fnivel: 10
 nodesGeneratedByLevel: 90
  time0: 0.00
 nodesGeneratedToTheLevel: 185
-f = 11 [297 evaluated, 185 expanded, t=0.00s, 4980 KB]
+f = 11 [297 evaluated, 185 expanded, t=0.00s, 4992 KB]
 generated_by_level = 358
 expanded_by_level = 112
 fnivel: 11
 nodesGeneratedByLevel: 112
  time0: 0.00
 nodesGeneratedToTheLevel: 297
-f = 12 [459 evaluated, 297 expanded, t=0.00s, 5116 KB]
+f = 12 [459 evaluated, 297 expanded, t=0.00s, 5128 KB]
 generated_by_level = 369
 expanded_by_level = 162
 fnivel: 12
 nodesGeneratedByLevel: 162
  time0: 0.00
 nodesGeneratedToTheLevel: 459
-f = 13 [586 evaluated, 459 expanded, t=0.00s, 5116 KB]
+f = 13 [586 evaluated, 459 expanded, t=0.00s, 5128 KB]
 generated_by_level = 346
 expanded_by_level = 127
 fnivel: 13
 nodesGeneratedByLevel: 127
  time0: 0.00
 nodesGeneratedToTheLevel: 586
-f = 14 [730 evaluated, 586 expanded, t=0.00s, 5116 KB]
+f = 14 [730 evaluated, 586 expanded, t=0.00s, 5128 KB]
 generated_by_level = 253
 expanded_by_level = 144
 fnivel: 14
 nodesGeneratedByLevel: 144
  time0: 0.00
 nodesGeneratedToTheLevel: 730
-f = 15 [798 evaluated, 730 expanded, t=0.00s, 5116 KB]
+f = 15 [798 evaluated, 730 expanded, t=0.00s, 5128 KB]
 generated_by_level = 136
 expanded_by_level = 68
 fnivel: 15
 nodesGeneratedByLevel: 68
  time0: 0.00
 nodesGeneratedToTheLevel: 798
-f = 16 [866 evaluated, 798 expanded, t=0.00s, 5116 KB]
+f = 16 [866 evaluated, 798 expanded, t=0.00s, 5128 KB]
 Solution found!
 Completely explored state space -- no solution!
 
@@ -153,6 +153,10 @@ Directory created successfully!
 	14		144			1			730
 	15		68			1			798
 	16		68			1			866
+fnivel: 16
+nodesGeneratedByLevel: 68
+ time0: 1
+nodesGeneratedToTheLevel: 866
 Actual search time: 0.00s [t=0.00s]
 unstack d e (1)
 put-down d (1)
@@ -187,4 +191,4 @@ Number of registered states: 866
 Search time: 0.00s
 Total time: 0.00s
 Solution found.
-Peak memory: 5116 KB
+Peak memory: 5128 KB
