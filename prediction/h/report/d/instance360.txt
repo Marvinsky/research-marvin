@@ -1,1 +1,1 @@
-blocks
+scanalyzer-opt11-strips

@@ -2,5 +2,5 @@
 	totalniveles: 3
 	f-value		#nodesByLevel		time		#nodesExpanded
 	24		1530			0.02			1530
-	25		20467			0.34			21997
-	26		137166			2.26			159163
+	25		20467			0.22			21997
+	26		137166			1.44			159163
