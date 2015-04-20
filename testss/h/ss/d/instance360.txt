@@ -1,5 +1,5 @@
-tidybot-opt11-strips
+scanalyzer-opt11-strips
 domain.pddl
 2
-p01.pddl						
+p01.pddl	
 p02.pddl						
