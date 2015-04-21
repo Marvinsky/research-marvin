@@ -54,7 +54,7 @@ pattern: [18, 24] - improvement: 150
 found a better pattern with improvement 829
 pattern: [18, 23]
 Switch from bucket-based to heap-based queue at key = 1499, num_pushes = 12
-Hill climbing time so far: 0.04s
+Hill climbing time so far: 0.06s
 current collection size is 48
 current initial h value: 360699
 Switch from bucket-based to heap-based queue at key = 1499, num_pushes = 24
@@ -82,7 +82,7 @@ pattern: [18, 21, 23] - improvement: 850
 found a better pattern with improvement 850
 pattern: [18, 21, 23]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 0.10s
+Hill climbing time so far: 0.12s
 current collection size is 96
 current initial h value: 365700
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -109,7 +109,7 @@ pattern: [18, 19, 21, 23] - improvement: 54
 found a better pattern with improvement 362
 pattern: [9, 13]
 Switch from bucket-based to heap-based queue at key = 9999, num_pushes = 2
-Hill climbing time so far: 0.16s
+Hill climbing time so far: 0.20s
 current collection size is 100
 current initial h value: 365825
 Switch from bucket-based to heap-based queue at key = 9999, num_pushes = 4
@@ -127,7 +127,7 @@ pattern: [9, 10, 13] - improvement: 63
 found a better pattern with improvement 202
 pattern: [10, 25]
 Switch from bucket-based to heap-based queue at key = 212790, num_pushes = 12
-Hill climbing time so far: 0.28s
+Hill climbing time so far: 0.30s
 current collection size is 124
 current initial h value: 365825
 Switch from bucket-based to heap-based queue at key = 212790, num_pushes = 24
@@ -154,7 +154,7 @@ pattern: [10, 13, 25] - improvement: 874
 found a better pattern with improvement 874
 pattern: [10, 13, 25]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 0.42s
+Hill climbing time so far: 0.44s
 current collection size is 172
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -178,7 +178,7 @@ pattern: [10, 11, 13, 25] - improvement: 152
 found a better pattern with improvement 156
 pattern: [10, 15]
 Switch from bucket-based to heap-based queue at key = 1499, num_pushes = 12
-Hill climbing time so far: 0.58s
+Hill climbing time so far: 0.62s
 current collection size is 196
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 1499, num_pushes = 24
@@ -200,7 +200,7 @@ pattern: [10, 13, 15] - improvement: 120
 found a better pattern with improvement 150
 pattern: [10, 11, 13, 25]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 0.80s
+Hill climbing time so far: 0.82s
 current collection size is 292
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -221,7 +221,7 @@ pattern: [10, 11, 13, 14, 25] - improvement: 168
 found a better pattern with improvement 168
 pattern: [10, 11, 13, 14, 25]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 1.06s
+Hill climbing time so far: 1.08s
 current collection size is 484
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -241,7 +241,7 @@ pattern: [10, 11, 12, 13, 14, 25] - improvement: 56
 found a better pattern with improvement 144
 pattern: [10, 13, 15]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 1.36s
+Hill climbing time so far: 1.38s
 current collection size is 532
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -262,7 +262,7 @@ pattern: [10, 11, 12, 13, 14, 25] - improvement: 52
 found a better pattern with improvement 52
 pattern: [10, 11, 12, 13, 25]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 1.72s
+Hill climbing time so far: 1.74s
 current collection size is 724
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -278,7 +278,7 @@ pattern: [18, 19, 21, 23] - improvement: 48
 found a better pattern with improvement 48
 pattern: [18, 19, 21, 23]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 2.14s
+Hill climbing time so far: 2.16s
 current collection size is 820
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -298,7 +298,7 @@ pattern: [18, 19, 20, 21, 23] - improvement: 24
 found a better pattern with improvement 24
 pattern: [18, 19, 20, 21, 23]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 2.66s
+Hill climbing time so far: 2.68s
 current collection size is 1012
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -317,7 +317,7 @@ pattern: [16, 18, 19, 20, 21, 23] - improvement: 24
 found a better pattern with improvement 24
 pattern: [16, 18, 19, 21, 23]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
-Hill climbing time so far: 3.36s
+Hill climbing time so far: 3.34s
 current collection size is 1204
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 48
@@ -340,2082 +340,489 @@ iPDB: size = 842
 iPDB: generated = 187
 iPDB: rejected = 0
 iPDB: max_pdb_size = 2304
-iPDB: hill climbing time: 4.20s
-Pattern generation (Haslum et al.) time: 4.20s
+iPDB: hill climbing time: 4.12s
+Pattern generation (Haslum et al.) time: 4.12s
 max_h(constructor) = 367824
 h_initial = 367824
-bound = 367824.00, next_bound = 2147483647.00
-node expanded: h = 367824.00, g_real = 0.00, f = 367824.00
+
+		bound = 367824.00		next_bound = 2147483647.00
+Node expanded: h = 367824.00, g_real = 0.00, f = 367824.00, level = 0.00, StateID = #0
 applicable_ops.size() = 1
---------------childs-------------
-	Child_1 : h = 367824, g_real = 0.00, f = 367824.00, level = 1.00, stateID,: 1
+------------------Child----------------
+
+		Child_1 : h = 367824, g_real = 0.00, f = 367824.00, StateID = #1
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,0,1,7,0,0,1,0,1,1,1,
+),state_id:#1
 	get_adjusted_cost(*op) == 0
 			D.size() = 1840700271
 			D.size() = 1840700271
-		Node expanded: h = 367824.00, g_real = 0.00, f = 367824.00, level = 1, stateID,: 1
+			BFSNode expanded: h = 367824.00, g_real = 0.00, f = 367824.00, level = 1, stateID,: #1
 
-Expanded state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:1
+BFSExpanded state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,0,1,7,0,0,1,0,1,1,1,
+),state_id:#1
 			BFS: applicable_ops.size() = 4
 			--------------childs-------------
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:2
-			Child_1 : h = 367699, g_real = 224.00, f = 367923.00, level = 2.00, stateID,: 2
+			BFSChild state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,7,0,0,1,0,1,1,1,
+),state_id:#2
+			BFSChild_1 : h = 367699, g_real = 224.00, f = 367923.00, level = 2.00, stateID,: #2
 			cost != 0
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:2
-			Child_2 : h = 367699, g_real = 125.00, f = 367824.00, level = 2.00, stateID,: 2
+			BFSChild state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,7,0,0,1,0,1,1,1,
+),state_id:#2
+			BFSChild_2 : h = 367699, g_real = 125.00, f = 367824.00, level = 2.00, stateID,: #2
 			cost != 0
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:3
-			Child_3 : h = 367699, g_real = 224.00, f = 367923.00, level = 2.00, stateID,: 3
+			BFSChild state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,0,0,0,0,0,1,0,1,1,1,
+),state_id:#3
+			BFSChild_3 : h = 367699, g_real = 224.00, f = 367923.00, level = 2.00, stateID,: #3
 			cost != 0
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:3
-			Child_4 : h = 367699, g_real = 125.00, f = 367824.00, level = 2.00, stateID,: 3
+			BFSChild state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,0,0,0,0,0,1,0,1,1,1,
+),state_id:#3
+			BFSChild_4 : h = 367699, g_real = 125.00, f = 367824.00, level = 2.00, stateID,: #3
 			cost != 0
 			-------------End childs------------
 			D.empty() == 1
-	Expanded node that comes from BFS: h = 367699.00, g_real = 224.00, f  = 367923.00, level = 2.00
+		Expanded node that comes from BFS: h = 367699.00, g_real = 224.00, f  = 367923.00, level = 2.00
 		applicable_ops.size() = 4
 		--------------childs-------------
-		the soluton WAS NOT found. bound = 367824.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 224, succ_h2 = 367574, sum = 368022.00
-		next_bound = 368022.00
-		the soluton WAS NOT found. bound = 367824.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 125, succ_h2 = 367574, sum = 367923.00
-		next_bound = 367923.00
-		the soluton WAS NOT found. bound = 367824.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 1499, succ_h2 = 374197, sum = 375920.00
-		next_bound = 367923.00
-		the soluton WAS NOT found. bound = 367824.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 1499, succ_h2 = 2147483647, sum = 2147485370.00
-		next_bound = 367923.00
-	Expanded node that comes from BFS: h = 367699.00, g_real = 224.00, f  = 367923.00, level = 2.00
+		The solution was not found.
+		Inserting to the queue f <= bound
+		The solution was not found.
+		Inserting to the queue f <= bound
+		The solution was not found.
+		Inserting to the queue f <= bound
+		The solution was not found.
+		Inserting to the queue f <= bound
+		Expanded node that comes from BFS: h = 367699.00, g_real = 224.00, f  = 367923.00, level = 2.00
 		applicable_ops.size() = 4
 		--------------childs-------------
-		the soluton WAS NOT found. bound = 367824.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 224, succ_h2 = 367574, sum = 368022.00
-		next_bound = 367923.00
-		the soluton WAS NOT found. bound = 367824.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 125, succ_h2 = 367574, sum = 367923.00
-		next_bound = 367923.00
-		the soluton WAS NOT found. bound = 367824.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 1499, succ_h2 = 455199, sum = 456922.00
-		next_bound = 367923.00
-		the soluton WAS NOT found. bound = 367824.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 1499, succ_h2 = 366200, sum = 367923.00
-		next_bound = 367923.00
-Finish buffer
--------------end Childs-----------
-return 0;
-	 time_1 = 4.20s, bound_1 = 367824.00, nodes_expanded_for_bound = 1, nodes_generated_for_bound = 1
-done = 0
-the new bound is = 367923.00
-best_soln_sofar = 2147483647
-bound = 367923.00, next_bound = 2147483647.00
-node expanded: h = 367824.00, g_real = 0.00, f = 367824.00
-applicable_ops.size() = 1
---------------childs-------------
-	Child_1 : h = 367824, g_real = 0.00, f = 367824.00, level = 1.00, stateID,: 1
-	get_adjusted_cost(*op) == 0
-			D.size() = 1840700271
-			D.size() = 1840700271
-		Node expanded: h = 367824.00, g_real = 0.00, f = 367824.00, level = 1, stateID,: 1
+		The solution was not found.
+		Inserting to the queue f <= bound
+		The solution was not found.
+		Inserting to the queue f <= bound
+		The solution was not found.
+		Inserting to the queue f <= bound
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_1
+-----------------End Childs------------------
 
-Expanded state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:1
-			BFS: applicable_ops.size() = 4
-			--------------childs-------------
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:2
-			Child_1 : h = 367699, g_real = 224.00, f = 367923.00, level = 2.00, stateID,: 2
-			cost != 0
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:2
-			Child_2 : h = 367699, g_real = 125.00, f = 367824.00, level = 2.00, stateID,: 2
-			cost != 0
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:3
-			Child_3 : h = 367699, g_real = 224.00, f = 367923.00, level = 2.00, stateID,: 3
-			cost != 0
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:3
-			Child_4 : h = 367699, g_real = 125.00, f = 367824.00, level = 2.00, stateID,: 3
-			cost != 0
-			-------------End childs------------
-			D.empty() == 1
-	Expanded node that comes from BFS: h = 367699.00, g_real = 224.00, f  = 367923.00, level = 2.00
-		applicable_ops.size() = 4
-		--------------childs-------------
-		the soluton WAS NOT found. bound = 367923.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 224, succ_h2 = 367574, sum = 368022.00
-		next_bound = 368022.00
-		the soluton WAS NOT found. bound = 367923.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 125, succ_h2 = 367574, sum = 367923.00
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 367574.00, g_real = 349.00, f = 367923.00
+Node expanded: h = 367824.00, g_real = 0.00, f = 367824.00, level = 1.00, StateID = #1
 applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 374072, g_real = 1848.00, f = 375920.00, level = 4.00, stateID,: 9
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 1848.00, f = 2147485495.00, level = 4.00, stateID,: 10
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 455074, g_real = 1848.00, f = 456922.00, level = 4.00, stateID,: 11
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_4 : h = 366075, g_real = 1848.00, f = 367923.00, level = 4.00, stateID,: 12
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 366075.00, g_real = 1848.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 372573, g_real = 3347.00, f = 375920.00, level = 5.00, stateID,: 13
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 3347.00, f = 2147486994.00, level = 5.00, stateID,: 14
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 2147483647, g_real = 4847.00, f = 2147488494.00, level = 5.00, stateID,: 15
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_4 : h = 358075, g_real = 9848.00, f = 367923.00, level = 5.00, stateID,: 16
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 358075.00, g_real = 9848.00, f = 367923.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 364573, g_real = 11347.00, f = 375920.00, level = 6.00, stateID,: 17
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 11347.00, f = 2147494994.00, level = 6.00, stateID,: 18
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 230285, g_real = 137638.00, f = 367923.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 230285.00, g_real = 137638.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139137.00, f = 375920.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 139137.00, f = 2147622784.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 227286, g_real = 140637.00, f = 367923.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 227286.00, g_real = 140637.00, f = 367923.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142136.00, f = 375920.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 142136.00, f = 2147625783.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 450074, g_real = 149636.00, f = 599710.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_4 : h = 225787, g_real = 142136.00, f = 367923.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 225787.00, g_real = 142136.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143635.00, f = 375920.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 143635.00, f = 2147627282.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149636.00, f = 2147633283.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145638.00, f = 609711.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-		the soluton WAS NOT found. bound = 367923.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 1499, succ_h2 = 374197, sum = 375920.00
-		next_bound = 368022.00
-		the soluton WAS NOT found. bound = 367923.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 1499, succ_h2 = 2147483647, sum = 2147485370.00
-		next_bound = 368022.00
-	Expanded node that comes from BFS: h = 367699.00, g_real = 224.00, f  = 367923.00, level = 2.00
-		applicable_ops.size() = 4
-		--------------childs-------------
-		the soluton WAS NOT found. bound = 367923.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 224, succ_h2 = 367574, sum = 368022.00
-		next_bound = 368022.00
-		the soluton WAS NOT found. bound = 367923.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 125, succ_h2 = 367574, sum = 367923.00
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 367574.00, g_real = 349.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 374072, g_real = 1848.00, f = 375920.00, level = 4.00, stateID,: 9
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 1848.00, f = 2147485495.00, level = 4.00, stateID,: 10
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 455074, g_real = 1848.00, f = 456922.00, level = 4.00, stateID,: 11
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_4 : h = 366075, g_real = 1848.00, f = 367923.00, level = 4.00, stateID,: 12
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 366075.00, g_real = 1848.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 372573, g_real = 3347.00, f = 375920.00, level = 5.00, stateID,: 13
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 3347.00, f = 2147486994.00, level = 5.00, stateID,: 14
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 2147483647, g_real = 4847.00, f = 2147488494.00, level = 5.00, stateID,: 15
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_4 : h = 358075, g_real = 9848.00, f = 367923.00, level = 5.00, stateID,: 16
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 358075.00, g_real = 9848.00, f = 367923.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 364573, g_real = 11347.00, f = 375920.00, level = 6.00, stateID,: 17
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 11347.00, f = 2147494994.00, level = 6.00, stateID,: 18
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 230285, g_real = 137638.00, f = 367923.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 230285.00, g_real = 137638.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139137.00, f = 375920.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 139137.00, f = 2147622784.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 227286, g_real = 140637.00, f = 367923.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 227286.00, g_real = 140637.00, f = 367923.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142136.00, f = 375920.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 142136.00, f = 2147625783.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 450074, g_real = 149636.00, f = 599710.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_4 : h = 225787, g_real = 142136.00, f = 367923.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 225787.00, g_real = 142136.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143635.00, f = 375920.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 143635.00, f = 2147627282.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149636.00, f = 2147633283.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145638.00, f = 609711.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-		the soluton WAS NOT found. bound = 367923.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 1499, succ_h2 = 455199, sum = 456922.00
-		next_bound = 368022.00
-		the soluton WAS NOT found. bound = 367923.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 1499, succ_h2 = 366200, sum = 367923.00
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 366200.00, g_real = 1723.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 366075, g_real = 1947.00, f = 368022.00, level = 4.00, stateID,: 12
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 366075, g_real = 1848.00, f = 367923.00, level = 4.00, stateID,: 12
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 366075.00, g_real = 1848.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 372573, g_real = 3347.00, f = 375920.00, level = 5.00, stateID,: 13
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 3347.00, f = 2147486994.00, level = 5.00, stateID,: 14
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 2147483647, g_real = 4847.00, f = 2147488494.00, level = 5.00, stateID,: 15
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_4 : h = 358075, g_real = 9848.00, f = 367923.00, level = 5.00, stateID,: 16
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 358075.00, g_real = 9848.00, f = 367923.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 364573, g_real = 11347.00, f = 375920.00, level = 6.00, stateID,: 17
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 11347.00, f = 2147494994.00, level = 6.00, stateID,: 18
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 230285, g_real = 137638.00, f = 367923.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 230285.00, g_real = 137638.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139137.00, f = 375920.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 139137.00, f = 2147622784.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 227286, g_real = 140637.00, f = 367923.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 227286.00, g_real = 140637.00, f = 367923.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142136.00, f = 375920.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 142136.00, f = 2147625783.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 450074, g_real = 149636.00, f = 599710.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_4 : h = 225787, g_real = 142136.00, f = 367923.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 225787.00, g_real = 142136.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143635.00, f = 375920.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 143635.00, f = 2147627282.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149636.00, f = 2147633283.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145638.00, f = 609711.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_3 : h = 2147483647, g_real = 4722.00, f = 2147488369.00, level = 4.00, stateID,: 31
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_4 : h = 358200, g_real = 9723.00, f = 367923.00, level = 4.00, stateID,: 32
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 358200.00, g_real = 9723.00, f = 367923.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 358075, g_real = 9947.00, f = 368022.00, level = 5.00, stateID,: 16
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 358075, g_real = 9848.00, f = 367923.00, level = 5.00, stateID,: 16
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 358075.00, g_real = 9848.00, f = 367923.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 364573, g_real = 11347.00, f = 375920.00, level = 6.00, stateID,: 17
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 11347.00, f = 2147494994.00, level = 6.00, stateID,: 18
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 230285, g_real = 137638.00, f = 367923.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 230285.00, g_real = 137638.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139137.00, f = 375920.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 139137.00, f = 2147622784.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 227286, g_real = 140637.00, f = 367923.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 227286.00, g_real = 140637.00, f = 367923.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142136.00, f = 375920.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 142136.00, f = 2147625783.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 450074, g_real = 149636.00, f = 599710.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_4 : h = 225787, g_real = 142136.00, f = 367923.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 225787.00, g_real = 142136.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143635.00, f = 375920.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 143635.00, f = 2147627282.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149636.00, f = 2147633283.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145638.00, f = 609711.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_3 : h = 230410, g_real = 137513.00, f = 367923.00, level = 5.00, stateID,: 33
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 230410.00, g_real = 137513.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 230285, g_real = 137737.00, f = 368022.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 230285, g_real = 137638.00, f = 367923.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 230285.00, g_real = 137638.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139137.00, f = 375920.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 139137.00, f = 2147622784.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 227286, g_real = 140637.00, f = 367923.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 227286.00, g_real = 140637.00, f = 367923.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142136.00, f = 375920.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 142136.00, f = 2147625783.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 450074, g_real = 149636.00, f = 599710.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_4 : h = 225787, g_real = 142136.00, f = 367923.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 225787.00, g_real = 142136.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143635.00, f = 375920.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 143635.00, f = 2147627282.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149636.00, f = 2147633283.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145638.00, f = 609711.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_3 : h = 227411, g_real = 140512.00, f = 367923.00, level = 6.00, stateID,: 34
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 227411.00, g_real = 140512.00, f = 367923.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 227286, g_real = 140736.00, f = 368022.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 227286, g_real = 140637.00, f = 367923.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 227286.00, g_real = 140637.00, f = 367923.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142136.00, f = 375920.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 142136.00, f = 2147625783.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_3 : h = 450074, g_real = 149636.00, f = 599710.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_4 : h = 225787, g_real = 142136.00, f = 367923.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 225787.00, g_real = 142136.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143635.00, f = 375920.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 143635.00, f = 2147627282.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149636.00, f = 2147633283.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_3 : h = 450199, g_real = 149511.00, f = 599710.00, level = 7.00, stateID,: 35
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_4 : h = 225912, g_real = 142011.00, f = 367923.00, level = 7.00, stateID,: 36
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 225912.00, g_real = 142011.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 225787, g_real = 142235.00, f = 368022.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 225787, g_real = 142136.00, f = 367923.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 367923.00, next_bound = 368022.00
-node expanded: h = 225787.00, g_real = 142136.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143635.00, f = 375920.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 368022.00
-	Child_2 : h = 2147483647, g_real = 143635.00, f = 2147627282.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149511.00, f = 2147633158.00, level = 7.00, stateID,: 37
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464198, g_real = 145513.00, f = 609711.00, level = 6.00, stateID,: 38
-		the soluton WAS NOT found.
-		next_bound = 368022.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-Finish buffer
--------------end Childs-----------
-return 0;
-	 time_2 = 4.20s, bound_2 = 367923.00, nodes_expanded_for_bound = 33, nodes_generated_for_bound = 115
-done = 0
-the new bound is = 368022.00
-best_soln_sofar = 2147483647
-bound = 368022.00, next_bound = 2147483647.00
-node expanded: h = 367824.00, g_real = 0.00, f = 367824.00
-applicable_ops.size() = 1
---------------childs-------------
-	Child_1 : h = 367824, g_real = 0.00, f = 367824.00, level = 1.00, stateID,: 1
-	get_adjusted_cost(*op) == 0
-			D.size() = 1840700271
-			D.size() = 1840700271
-		Node expanded: h = 367824.00, g_real = 0.00, f = 367824.00, level = 1, stateID,: 1
+------------------Child----------------
 
-Expanded state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:1
-			BFS: applicable_ops.size() = 4
-			--------------childs-------------
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:2
-			Child_1 : h = 367699, g_real = 224.00, f = 367923.00, level = 2.00, stateID,: 2
-			cost != 0
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:2
-			Child_2 : h = 367699, g_real = 125.00, f = 367824.00, level = 2.00, stateID,: 2
-			cost != 0
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:3
-			Child_3 : h = 367699, g_real = 224.00, f = 367923.00, level = 2.00, stateID,: 3
-			cost != 0
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:3
-			Child_4 : h = 367699, g_real = 125.00, f = 367824.00, level = 2.00, stateID,: 3
-			cost != 0
-			-------------End childs------------
-			D.empty() == 1
-	Expanded node that comes from BFS: h = 367699.00, g_real = 224.00, f  = 367923.00, level = 2.00
-		applicable_ops.size() = 4
-		--------------childs-------------
-		the soluton WAS NOT found. bound = 368022.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 224, succ_h2 = 367574, sum = 368022.00
-		call dfs again.
-bound = 368022.00, next_bound = 2147483647.00
-node expanded: h = 367574.00, g_real = 448.00, f = 368022.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 374072, g_real = 1947.00, f = 376019.00, level = 4.00, stateID,: 9
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 2147483647, g_real = 1947.00, f = 2147485594.00, level = 4.00, stateID,: 10
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_3 : h = 455074, g_real = 1947.00, f = 457021.00, level = 4.00, stateID,: 11
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_4 : h = 366075, g_real = 1947.00, f = 368022.00, level = 4.00, stateID,: 12
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 376019.00
-node expanded: h = 366075.00, g_real = 1947.00, f = 368022.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 372573, g_real = 3446.00, f = 376019.00, level = 5.00, stateID,: 13
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 2147483647, g_real = 3446.00, f = 2147487093.00, level = 5.00, stateID,: 14
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_3 : h = 2147483647, g_real = 4946.00, f = 2147488593.00, level = 5.00, stateID,: 15
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_4 : h = 358075, g_real = 9947.00, f = 368022.00, level = 5.00, stateID,: 16
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 376019.00
-node expanded: h = 358075.00, g_real = 9947.00, f = 368022.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 364573, g_real = 11446.00, f = 376019.00, level = 6.00, stateID,: 17
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 2147483647, g_real = 11446.00, f = 2147495093.00, level = 6.00, stateID,: 18
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_3 : h = 230285, g_real = 137737.00, f = 368022.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 376019.00
-node expanded: h = 230285.00, g_real = 137737.00, f = 368022.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139236.00, f = 376019.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 2147483647, g_real = 139236.00, f = 2147622883.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_3 : h = 227286, g_real = 140736.00, f = 368022.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 376019.00
-node expanded: h = 227286.00, g_real = 140736.00, f = 368022.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142235.00, f = 376019.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 2147483647, g_real = 142235.00, f = 2147625882.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_3 : h = 450074, g_real = 149735.00, f = 599809.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_4 : h = 225787, g_real = 142235.00, f = 368022.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 376019.00
-node expanded: h = 225787.00, g_real = 142235.00, f = 368022.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143734.00, f = 376019.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 2147483647, g_real = 143734.00, f = 2147627381.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 376019.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149735.00, f = 2147633382.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 376019.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145737.00, f = 609810.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 376019.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-		the soluton WAS NOT found. bound = 368022.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 125, succ_h2 = 367574, sum = 367923.00
-		call dfs again.
-bound = 368022.00, next_bound = 376019.00
-node expanded: h = 367574.00, g_real = 349.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 374072, g_real = 1848.00, f = 375920.00, level = 4.00, stateID,: 9
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 1848.00, f = 2147485495.00, level = 4.00, stateID,: 10
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 455074, g_real = 1848.00, f = 456922.00, level = 4.00, stateID,: 11
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 366075, g_real = 1848.00, f = 367923.00, level = 4.00, stateID,: 12
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 366075.00, g_real = 1848.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 372573, g_real = 3347.00, f = 375920.00, level = 5.00, stateID,: 13
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 3347.00, f = 2147486994.00, level = 5.00, stateID,: 14
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 2147483647, g_real = 4847.00, f = 2147488494.00, level = 5.00, stateID,: 15
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 358075, g_real = 9848.00, f = 367923.00, level = 5.00, stateID,: 16
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 358075.00, g_real = 9848.00, f = 367923.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 364573, g_real = 11347.00, f = 375920.00, level = 6.00, stateID,: 17
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 11347.00, f = 2147494994.00, level = 6.00, stateID,: 18
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 230285, g_real = 137638.00, f = 367923.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 230285.00, g_real = 137638.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139137.00, f = 375920.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 139137.00, f = 2147622784.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 227286, g_real = 140637.00, f = 367923.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 227286.00, g_real = 140637.00, f = 367923.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142136.00, f = 375920.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 142136.00, f = 2147625783.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 450074, g_real = 149636.00, f = 599710.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 225787, g_real = 142136.00, f = 367923.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 225787.00, g_real = 142136.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143635.00, f = 375920.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 143635.00, f = 2147627282.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149636.00, f = 2147633283.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145638.00, f = 609711.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-		the soluton WAS NOT found. bound = 368022.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 1499, succ_h2 = 374197, sum = 375920.00
-		next_bound = 375920.00
-		the soluton WAS NOT found. bound = 368022.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 1499, succ_h2 = 2147483647, sum = 2147485370.00
-		next_bound = 375920.00
-	Expanded node that comes from BFS: h = 367699.00, g_real = 224.00, f  = 367923.00, level = 2.00
-		applicable_ops.size() = 4
-		--------------childs-------------
-		the soluton WAS NOT found. bound = 368022.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 224, succ_h2 = 367574, sum = 368022.00
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 367574.00, g_real = 448.00, f = 368022.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 374072, g_real = 1947.00, f = 376019.00, level = 4.00, stateID,: 9
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 1947.00, f = 2147485594.00, level = 4.00, stateID,: 10
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 455074, g_real = 1947.00, f = 457021.00, level = 4.00, stateID,: 11
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 366075, g_real = 1947.00, f = 368022.00, level = 4.00, stateID,: 12
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 366075.00, g_real = 1947.00, f = 368022.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 372573, g_real = 3446.00, f = 376019.00, level = 5.00, stateID,: 13
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 3446.00, f = 2147487093.00, level = 5.00, stateID,: 14
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 2147483647, g_real = 4946.00, f = 2147488593.00, level = 5.00, stateID,: 15
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 358075, g_real = 9947.00, f = 368022.00, level = 5.00, stateID,: 16
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 358075.00, g_real = 9947.00, f = 368022.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 364573, g_real = 11446.00, f = 376019.00, level = 6.00, stateID,: 17
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 11446.00, f = 2147495093.00, level = 6.00, stateID,: 18
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 230285, g_real = 137737.00, f = 368022.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 230285.00, g_real = 137737.00, f = 368022.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139236.00, f = 376019.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 139236.00, f = 2147622883.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 227286, g_real = 140736.00, f = 368022.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 227286.00, g_real = 140736.00, f = 368022.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142235.00, f = 376019.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 142235.00, f = 2147625882.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 450074, g_real = 149735.00, f = 599809.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 225787, g_real = 142235.00, f = 368022.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 225787.00, g_real = 142235.00, f = 368022.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143734.00, f = 376019.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 143734.00, f = 2147627381.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149735.00, f = 2147633382.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145737.00, f = 609810.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-		the soluton WAS NOT found. bound = 368022.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 125, succ_h2 = 367574, sum = 367923.00
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 367574.00, g_real = 349.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 374072, g_real = 1848.00, f = 375920.00, level = 4.00, stateID,: 9
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 1848.00, f = 2147485495.00, level = 4.00, stateID,: 10
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 455074, g_real = 1848.00, f = 456922.00, level = 4.00, stateID,: 11
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 366075, g_real = 1848.00, f = 367923.00, level = 4.00, stateID,: 12
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 366075.00, g_real = 1848.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 372573, g_real = 3347.00, f = 375920.00, level = 5.00, stateID,: 13
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 3347.00, f = 2147486994.00, level = 5.00, stateID,: 14
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 2147483647, g_real = 4847.00, f = 2147488494.00, level = 5.00, stateID,: 15
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 358075, g_real = 9848.00, f = 367923.00, level = 5.00, stateID,: 16
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 358075.00, g_real = 9848.00, f = 367923.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 364573, g_real = 11347.00, f = 375920.00, level = 6.00, stateID,: 17
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 11347.00, f = 2147494994.00, level = 6.00, stateID,: 18
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 230285, g_real = 137638.00, f = 367923.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 230285.00, g_real = 137638.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139137.00, f = 375920.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 139137.00, f = 2147622784.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 227286, g_real = 140637.00, f = 367923.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 227286.00, g_real = 140637.00, f = 367923.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142136.00, f = 375920.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 142136.00, f = 2147625783.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 450074, g_real = 149636.00, f = 599710.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 225787, g_real = 142136.00, f = 367923.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 225787.00, g_real = 142136.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143635.00, f = 375920.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 143635.00, f = 2147627282.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149636.00, f = 2147633283.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145638.00, f = 609711.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-		the soluton WAS NOT found. bound = 368022.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 1499, succ_h2 = 455199, sum = 456922.00
-		next_bound = 375920.00
-		the soluton WAS NOT found. bound = 368022.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 1499, succ_h2 = 366200, sum = 367923.00
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 366200.00, g_real = 1723.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 366075, g_real = 1947.00, f = 368022.00, level = 4.00, stateID,: 12
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 366075.00, g_real = 1947.00, f = 368022.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 372573, g_real = 3446.00, f = 376019.00, level = 5.00, stateID,: 13
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 3446.00, f = 2147487093.00, level = 5.00, stateID,: 14
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 2147483647, g_real = 4946.00, f = 2147488593.00, level = 5.00, stateID,: 15
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 358075, g_real = 9947.00, f = 368022.00, level = 5.00, stateID,: 16
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 358075.00, g_real = 9947.00, f = 368022.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 364573, g_real = 11446.00, f = 376019.00, level = 6.00, stateID,: 17
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 11446.00, f = 2147495093.00, level = 6.00, stateID,: 18
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 230285, g_real = 137737.00, f = 368022.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 230285.00, g_real = 137737.00, f = 368022.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139236.00, f = 376019.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 139236.00, f = 2147622883.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 227286, g_real = 140736.00, f = 368022.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 227286.00, g_real = 140736.00, f = 368022.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142235.00, f = 376019.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 142235.00, f = 2147625882.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 450074, g_real = 149735.00, f = 599809.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 225787, g_real = 142235.00, f = 368022.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 225787.00, g_real = 142235.00, f = 368022.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143734.00, f = 376019.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 143734.00, f = 2147627381.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149735.00, f = 2147633382.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145737.00, f = 609810.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_2 : h = 366075, g_real = 1848.00, f = 367923.00, level = 4.00, stateID,: 12
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 366075.00, g_real = 1848.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 372573, g_real = 3347.00, f = 375920.00, level = 5.00, stateID,: 13
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 3347.00, f = 2147486994.00, level = 5.00, stateID,: 14
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 2147483647, g_real = 4847.00, f = 2147488494.00, level = 5.00, stateID,: 15
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 358075, g_real = 9848.00, f = 367923.00, level = 5.00, stateID,: 16
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 358075.00, g_real = 9848.00, f = 367923.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 364573, g_real = 11347.00, f = 375920.00, level = 6.00, stateID,: 17
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 11347.00, f = 2147494994.00, level = 6.00, stateID,: 18
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 230285, g_real = 137638.00, f = 367923.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 230285.00, g_real = 137638.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139137.00, f = 375920.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 139137.00, f = 2147622784.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 227286, g_real = 140637.00, f = 367923.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 227286.00, g_real = 140637.00, f = 367923.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142136.00, f = 375920.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 142136.00, f = 2147625783.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 450074, g_real = 149636.00, f = 599710.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 225787, g_real = 142136.00, f = 367923.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 225787.00, g_real = 142136.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143635.00, f = 375920.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 143635.00, f = 2147627282.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149636.00, f = 2147633283.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145638.00, f = 609711.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_3 : h = 2147483647, g_real = 4722.00, f = 2147488369.00, level = 4.00, stateID,: 31
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 358200, g_real = 9723.00, f = 367923.00, level = 4.00, stateID,: 32
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 358200.00, g_real = 9723.00, f = 367923.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 358075, g_real = 9947.00, f = 368022.00, level = 5.00, stateID,: 16
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 358075.00, g_real = 9947.00, f = 368022.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 364573, g_real = 11446.00, f = 376019.00, level = 6.00, stateID,: 17
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 11446.00, f = 2147495093.00, level = 6.00, stateID,: 18
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 230285, g_real = 137737.00, f = 368022.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 230285.00, g_real = 137737.00, f = 368022.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139236.00, f = 376019.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 139236.00, f = 2147622883.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 227286, g_real = 140736.00, f = 368022.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 227286.00, g_real = 140736.00, f = 368022.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142235.00, f = 376019.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 142235.00, f = 2147625882.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 450074, g_real = 149735.00, f = 599809.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 225787, g_real = 142235.00, f = 368022.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 225787.00, g_real = 142235.00, f = 368022.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143734.00, f = 376019.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 143734.00, f = 2147627381.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149735.00, f = 2147633382.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145737.00, f = 609810.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_2 : h = 358075, g_real = 9848.00, f = 367923.00, level = 5.00, stateID,: 16
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 358075.00, g_real = 9848.00, f = 367923.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 364573, g_real = 11347.00, f = 375920.00, level = 6.00, stateID,: 17
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 11347.00, f = 2147494994.00, level = 6.00, stateID,: 18
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 230285, g_real = 137638.00, f = 367923.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 230285.00, g_real = 137638.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139137.00, f = 375920.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 139137.00, f = 2147622784.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 227286, g_real = 140637.00, f = 367923.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 227286.00, g_real = 140637.00, f = 367923.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142136.00, f = 375920.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 142136.00, f = 2147625783.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 450074, g_real = 149636.00, f = 599710.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 225787, g_real = 142136.00, f = 367923.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 225787.00, g_real = 142136.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143635.00, f = 375920.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 143635.00, f = 2147627282.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149636.00, f = 2147633283.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145638.00, f = 609711.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_3 : h = 230410, g_real = 137513.00, f = 367923.00, level = 5.00, stateID,: 33
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 230410.00, g_real = 137513.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 230285, g_real = 137737.00, f = 368022.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 230285.00, g_real = 137737.00, f = 368022.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139236.00, f = 376019.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 139236.00, f = 2147622883.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 227286, g_real = 140736.00, f = 368022.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 227286.00, g_real = 140736.00, f = 368022.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142235.00, f = 376019.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 142235.00, f = 2147625882.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 450074, g_real = 149735.00, f = 599809.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 225787, g_real = 142235.00, f = 368022.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 225787.00, g_real = 142235.00, f = 368022.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143734.00, f = 376019.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 143734.00, f = 2147627381.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149735.00, f = 2147633382.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145737.00, f = 609810.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_2 : h = 230285, g_real = 137638.00, f = 367923.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 230285.00, g_real = 137638.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139137.00, f = 375920.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 139137.00, f = 2147622784.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 227286, g_real = 140637.00, f = 367923.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 227286.00, g_real = 140637.00, f = 367923.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142136.00, f = 375920.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 142136.00, f = 2147625783.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 450074, g_real = 149636.00, f = 599710.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 225787, g_real = 142136.00, f = 367923.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 225787.00, g_real = 142136.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143635.00, f = 375920.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 143635.00, f = 2147627282.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149636.00, f = 2147633283.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145638.00, f = 609711.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_3 : h = 227411, g_real = 140512.00, f = 367923.00, level = 6.00, stateID,: 34
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 227411.00, g_real = 140512.00, f = 367923.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 227286, g_real = 140736.00, f = 368022.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 227286.00, g_real = 140736.00, f = 368022.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142235.00, f = 376019.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 142235.00, f = 2147625882.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 450074, g_real = 149735.00, f = 599809.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 225787, g_real = 142235.00, f = 368022.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 225787.00, g_real = 142235.00, f = 368022.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143734.00, f = 376019.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 143734.00, f = 2147627381.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149735.00, f = 2147633382.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_2 : h = 227286, g_real = 140637.00, f = 367923.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 227286.00, g_real = 140637.00, f = 367923.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142136.00, f = 375920.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 142136.00, f = 2147625783.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_3 : h = 450074, g_real = 149636.00, f = 599710.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 225787, g_real = 142136.00, f = 367923.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 225787.00, g_real = 142136.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143635.00, f = 375920.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 143635.00, f = 2147627282.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149636.00, f = 2147633283.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_3 : h = 450199, g_real = 149511.00, f = 599710.00, level = 7.00, stateID,: 35
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_4 : h = 225912, g_real = 142011.00, f = 367923.00, level = 7.00, stateID,: 36
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 225912.00, g_real = 142011.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 225787, g_real = 142235.00, f = 368022.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 225787.00, g_real = 142235.00, f = 368022.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143734.00, f = 376019.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 143734.00, f = 2147627381.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_2 : h = 225787, g_real = 142136.00, f = 367923.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 368022.00, next_bound = 375920.00
-node expanded: h = 225787.00, g_real = 142136.00, f = 367923.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143635.00, f = 375920.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 375920.00
-	Child_2 : h = 2147483647, g_real = 143635.00, f = 2147627282.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149511.00, f = 2147633158.00, level = 7.00, stateID,: 37
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464198, g_real = 145513.00, f = 609711.00, level = 6.00, stateID,: 38
-		the soluton WAS NOT found.
-		next_bound = 375920.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-Finish buffer
--------------end Childs-----------
-return 0;
-	 time_3 = 4.20s, bound_3 = 368022.00, nodes_expanded_for_bound = 60, nodes_generated_for_bound = 211
-done = 0
-the new bound is = 375920.00
-best_soln_sofar = 2147483647
-bound = 375920.00, next_bound = 2147483647.00
-node expanded: h = 367824.00, g_real = 0.00, f = 367824.00
-applicable_ops.size() = 1
---------------childs-------------
-	Child_1 : h = 367824, g_real = 0.00, f = 367824.00, level = 1.00, stateID,: 1
-	get_adjusted_cost(*op) == 0
-			D.size() = 1840700271
-			D.size() = 1840700271
-		Node expanded: h = 367824.00, g_real = 0.00, f = 367824.00, level = 1, stateID,: 1
+		Child_1 : h = 367699, g_real = 224.00, f = 367923.00, StateID = #2
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,7,0,0,1,0,1,1,1,
+),state_id:#2
+		The solution was not found.
+		Finding the next_bound
+		next_bound = 367923.00
+End Child_1
+		Child_2 : h = 367699, g_real = 125.00, f = 367824.00, StateID = #2
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,7,0,0,1,0,1,1,1,
+),state_id:#2
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_2
+		Child_3 : h = 367699, g_real = 224.00, f = 367923.00, StateID = #3
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,0,0,0,0,0,1,0,1,1,1,
+),state_id:#3
+		The solution was not found.
+		Finding the next_bound
+End Child_3
+		Child_4 : h = 367699, g_real = 125.00, f = 367824.00, StateID = #3
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,0,0,0,0,0,1,0,1,1,1,
+),state_id:#3
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_4
+-----------------End Childs------------------
 
-Expanded state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:1
-			BFS: applicable_ops.size() = 4
-			--------------childs-------------
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:2
-			Child_1 : h = 367699, g_real = 224.00, f = 367923.00, level = 2.00, stateID,: 2
-			cost != 0
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:2
-			Child_2 : h = 367699, g_real = 125.00, f = 367824.00, level = 2.00, stateID,: 2
-			cost != 0
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:3
-			Child_3 : h = 367699, g_real = 224.00, f = 367923.00, level = 2.00, stateID,: 3
-			cost != 0
-			Child state:(S: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,),state_id:3
-			Child_4 : h = 367699, g_real = 125.00, f = 367824.00, level = 2.00, stateID,: 3
-			cost != 0
-			-------------End childs------------
-			D.empty() == 1
-	Expanded node that comes from BFS: h = 367699.00, g_real = 224.00, f  = 367923.00, level = 2.00
-		applicable_ops.size() = 4
-		--------------childs-------------
-		the soluton WAS NOT found. bound = 375920.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 224, succ_h2 = 367574, sum = 368022.00
-		call dfs again.
-bound = 375920.00, next_bound = 2147483647.00
-node expanded: h = 367574.00, g_real = 448.00, f = 368022.00
+Node expanded: h = 367699.00, g_real = 125.00, f = 367824.00, level = 2.00, StateID = #3
 applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 374072, g_real = 1947.00, f = 376019.00, level = 4.00, stateID,: 9
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 2147483647, g_real = 1947.00, f = 2147485594.00, level = 4.00, stateID,: 10
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_3 : h = 455074, g_real = 1947.00, f = 457021.00, level = 4.00, stateID,: 11
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_4 : h = 366075, g_real = 1947.00, f = 368022.00, level = 4.00, stateID,: 12
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 366075.00, g_real = 1947.00, f = 368022.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 372573, g_real = 3446.00, f = 376019.00, level = 5.00, stateID,: 13
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 2147483647, g_real = 3446.00, f = 2147487093.00, level = 5.00, stateID,: 14
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_3 : h = 2147483647, g_real = 4946.00, f = 2147488593.00, level = 5.00, stateID,: 15
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_4 : h = 358075, g_real = 9947.00, f = 368022.00, level = 5.00, stateID,: 16
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 358075.00, g_real = 9947.00, f = 368022.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 364573, g_real = 11446.00, f = 376019.00, level = 6.00, stateID,: 17
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 2147483647, g_real = 11446.00, f = 2147495093.00, level = 6.00, stateID,: 18
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_3 : h = 230285, g_real = 137737.00, f = 368022.00, level = 6.00, stateID,: 19
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 230285.00, g_real = 137737.00, f = 368022.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 236783, g_real = 139236.00, f = 376019.00, level = 7.00, stateID,: 20
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 2147483647, g_real = 139236.00, f = 2147622883.00, level = 7.00, stateID,: 21
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_3 : h = 227286, g_real = 140736.00, f = 368022.00, level = 7.00, stateID,: 22
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 227286.00, g_real = 140736.00, f = 368022.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 233784, g_real = 142235.00, f = 376019.00, level = 8.00, stateID,: 23
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 2147483647, g_real = 142235.00, f = 2147625882.00, level = 8.00, stateID,: 24
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_3 : h = 450074, g_real = 149735.00, f = 599809.00, level = 8.00, stateID,: 25
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_4 : h = 225787, g_real = 142235.00, f = 368022.00, level = 8.00, stateID,: 26
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 225787.00, g_real = 142235.00, f = 368022.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 232285, g_real = 143734.00, f = 376019.00, level = 9.00, stateID,: 27
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 2147483647, g_real = 143734.00, f = 2147627381.00, level = 9.00, stateID,: 28
-		the soluton WAS NOT found.
-		next_bound = 376019.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_5 : h = 2147483647, g_real = 149735.00, f = 2147633382.00, level = 8.00, stateID,: 29
-		the soluton WAS NOT found.
-		next_bound = 376019.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-	Child_4 : h = 464073, g_real = 145737.00, f = 609810.00, level = 7.00, stateID,: 30
-		the soluton WAS NOT found.
-		next_bound = 376019.00
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
--------------end Childs-----------
-return 0;
-		dfs_heur is not returning true.
-		the soluton WAS NOT found. bound = 375920.00
-		new_g_real = 224.00, get_adjusted_cost(*op2) = 125, succ_h2 = 367574, sum = 367923.00
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 367574.00, g_real = 349.00, f = 367923.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 374072, g_real = 1848.00, f = 375920.00, level = 4.00, stateID,: 9
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 374072.00, g_real = 1848.00, f = 375920.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 461572, g_real = 3347.00, f = 464919.00, level = 5.00, stateID,: 39
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 372573, g_real = 3347.00, f = 375920.00, level = 5.00, stateID,: 13
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 372573.00, g_real = 3347.00, f = 375920.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 2147483647, g_real = 8346.00, f = 2147491993.00, level = 6.00, stateID,: 40
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 362574, g_real = 13346.00, f = 375920.00, level = 6.00, stateID,: 41
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 362574.00, g_real = 13346.00, f = 375920.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 2147483647, g_real = 226136.00, f = 2147709783.00, level = 7.00, stateID,: 42
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 149784, g_real = 226136.00, f = 375920.00, level = 7.00, stateID,: 43
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 149784.00, g_real = 226136.00, f = 375920.00
-applicable_ops.size() = 4
---------------childs-------------
-	Child_1 : h = 144785, g_real = 231135.00, f = 375920.00, level = 8.00, stateID,: 44
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 144785.00, g_real = 231135.00, f = 375920.00
-applicable_ops.size() = 5
---------------childs-------------
-	Child_1 : h = 367573, g_real = 240134.00, f = 607707.00, level = 9.00, stateID,: 45
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 143286, g_real = 232634.00, f = 375920.00, level = 9.00, stateID,: 46
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 143286.00, g_real = 232634.00, f = 375920.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 141787, g_real = 234133.00, f = 375920.00, level = 10.00, stateID,: 47
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 141787.00, g_real = 234133.00, f = 375920.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 2147483647, g_real = 237132.00, f = 2147720779.00, level = 11.00, stateID,: 48
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 133787, g_real = 242133.00, f = 375920.00, level = 11.00, stateID,: 49
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 133787.00, g_real = 242133.00, f = 375920.00
-applicable_ops.size() = 1
---------------childs-------------
-	Child_1 : h = 5997, g_real = 369923.00, f = 375920.00, level = 12.00, stateID,: 50
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 5997.00, g_real = 369923.00, f = 375920.00
-applicable_ops.size() = 2
---------------childs-------------
-	Child_1 : h = 2998, g_real = 372922.00, f = 375920.00, level = 13.00, stateID,: 51
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 2998.00, g_real = 372922.00, f = 375920.00
-applicable_ops.size() = 3
---------------childs-------------
-	Child_1 : h = 225786, g_real = 381921.00, f = 607707.00, level = 14.00, stateID,: 52
-		the soluton WAS NOT found.
-		next_bound = 376019.00
-	Child_2 : h = 1499, g_real = 374421.00, f = 375920.00, level = 14.00, stateID,: 53
-		the soluton WAS NOT found.
-		call dfs again.
-bound = 375920.00, next_bound = 376019.00
-node expanded: h = 1499.00, g_real = 374421.00, f = 375920.00
-applicable_ops.size() = 1
---------------childs-------------
-	Child_1 : h = 0, g_real = 375920.00, f = 375920.00, level = 15.00, stateID,: 54
-Solution found!
-	Solution-found in dfs_heur.
-	best_soln_sofar = 375920
-	best_soln_sofar <= bound => return 1;
-		dfs_heur is executed again and return 1;
-		dfs_heur is executed again and return 1;
-		dfs_heur is executed again and return 1;
-		dfs_heur is executed again and return 1;
-		dfs_heur is executed again and return 1;
-		dfs_heur is executed again and return 1;
-		dfs_heur is executed again and return 1;
-		dfs_heur is executed again and return 1;
-		dfs_heur is executed again and return 1;
-		dfs_heur is executed again and return 1;
-		dfs_heur is executed again and return 1;
-		dfs_heur is executed again and return 1;
-	 time_4 = 4.20s, bound_4 = 375920.00, nodes_expanded_for_bound = 19, nodes_generated_for_bound = 41
-done = 1
-break the application because done = 1
-SOLUTION FOUND
-	cost = 375920, expanded nodes = 113, generated nodes = 368
+------------------Child----------------
 
-	Total depth: 375920, expansion: 113, generation: 368
-Actual search time: 0.00s [t=4.20s]
-Plan length: 0 step(s).
-Plan cost: 0
-Search time: 0.00s
-Total time: 4.20s
-Solution found.
-Peak memory: 3444 KB
+		Child_1 : h = 367574, g_real = 349.00, f = 367923.00, StateID = #4
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,1,1,
+),state_id:#4
+		The solution was not found.
+		Finding the next_bound
+End Child_1
+		Child_2 : h = 367574, g_real = 250.00, f = 367824.00, StateID = #4
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,1,1,
+),state_id:#4
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_2
+		Child_3 : h = 455199, g_real = 1624.00, f = 456823.00, StateID = #7
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,0,0,3,0,0,1,0,1,1,1,
+),state_id:#7
+		The solution was not found.
+		Finding the next_bound
+End Child_3
+		Child_4 : h = 366200, g_real = 1624.00, f = 367824.00, StateID = #8
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,0,0,9,0,0,1,0,1,1,1,
+),state_id:#8
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_4
+-----------------End Childs------------------
+
+Node expanded: h = 366200.00, g_real = 1624.00, f = 367824.00, level = 3.00, StateID = #8
+applicable_ops.size() = 4
+------------------Child----------------
+
+		Child_1 : h = 366075, g_real = 1848.00, f = 367923.00, StateID = #9
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,9,0,0,1,0,1,1,1,
+),state_id:#9
+		The solution was not found.
+		Finding the next_bound
+End Child_1
+		Child_2 : h = 366075, g_real = 1749.00, f = 367824.00, StateID = #9
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,9,0,0,1,0,1,1,1,
+),state_id:#9
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_2
+		Child_3 : h = 0, g_real = 4623.00, f = 4623.00, StateID = #10
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,0,0,10,0,0,1,0,1,1,1,
+),state_id:#10
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_3
+		Child_4 : h = 358200, g_real = 9624.00, f = 367824.00, StateID = #11
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,0,1,10,0,0,0,0,1,1,1,
+),state_id:#11
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_4
+-----------------End Childs------------------
+
+Node expanded: h = 358200.00, g_real = 9624.00, f = 367824.00, level = 4.00, StateID = #11
+applicable_ops.size() = 3
+------------------Child----------------
+
+		Child_1 : h = 358075, g_real = 9848.00, f = 367923.00, StateID = #12
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,10,0,0,0,0,1,1,1,
+),state_id:#12
+		The solution was not found.
+		Finding the next_bound
+End Child_1
+		Child_2 : h = 358075, g_real = 9749.00, f = 367824.00, StateID = #12
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,10,0,0,0,0,1,1,1,
+),state_id:#12
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_2
+		Child_3 : h = 230410, g_real = 137414.00, f = 367824.00, StateID = #13
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,1,11,0,0,0,0,1,0,1,
+),state_id:#13
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_3
+-----------------End Childs------------------
+
+Node expanded: h = 230410.00, g_real = 137414.00, f = 367824.00, level = 5.00, StateID = #13
+applicable_ops.size() = 4
+------------------Child----------------
+
+		Child_1 : h = 230285, g_real = 137638.00, f = 367923.00, StateID = #14
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,11,0,0,0,0,1,0,1,
+),state_id:#14
+		The solution was not found.
+		Finding the next_bound
+End Child_1
+		Child_2 : h = 230285, g_real = 137539.00, f = 367824.00, StateID = #14
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,11,0,0,0,0,1,0,1,
+),state_id:#14
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_2
+		Child_3 : h = 227411, g_real = 140413.00, f = 367824.00, StateID = #15
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,1,2,0,0,0,0,1,0,1,
+),state_id:#15
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_3
+		Child_4 : h = 464198, g_real = 145414.00, f = 609612.00, StateID = #16
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,0,2,0,0,1,0,1,0,1,
+),state_id:#16
+		The solution was not found.
+		Finding the next_bound
+End Child_4
+-----------------End Childs------------------
+
+Node expanded: h = 227411.00, g_real = 140413.00, f = 367824.00, level = 6.00, StateID = #15
+applicable_ops.size() = 5
+------------------Child----------------
+
+		Child_1 : h = 227286, g_real = 140637.00, f = 367923.00, StateID = #17
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,2,0,0,0,0,1,0,1,
+),state_id:#17
+		The solution was not found.
+		Finding the next_bound
+End Child_1
+		Child_2 : h = 227286, g_real = 140538.00, f = 367824.00, StateID = #17
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,2,0,0,0,0,1,0,1,
+),state_id:#17
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_2
+		Child_3 : h = 450199, g_real = 149412.00, f = 599611.00, StateID = #18
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,1,3,0,0,0,0,1,0,1,
+),state_id:#18
+		The solution was not found.
+		Finding the next_bound
+End Child_3
+		Child_4 : h = 225912, g_real = 141912.00, f = 367824.00, StateID = #19
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,1,1,0,0,0,0,1,0,1,
+),state_id:#19
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_4
+		Child_5 : h = 0, g_real = 149412.00, f = 149412.00, StateID = #20
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,1,9,0,0,0,0,1,0,1,
+),state_id:#20
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_5
+-----------------End Childs------------------
+
+Node expanded: h = 0.00, g_real = 149412.00, f = 149412.00, level = 7.00, StateID = #20
+applicable_ops.size() = 4
+------------------Child----------------
+
+		Child_1 : h = 0, g_real = 149636.00, f = 149636.00, StateID = #21
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,9,0,0,0,0,1,0,1,
+),state_id:#21
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_1
+		Child_2 : h = 0, g_real = 149537.00, f = 149537.00, StateID = #21
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,9,0,0,0,0,1,0,1,
+),state_id:#21
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_2
+		Child_3 : h = 0, g_real = 152411.00, f = 152411.00, StateID = #22
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,1,10,0,0,0,0,1,0,1,
+),state_id:#22
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_3
+		Child_4 : h = 0, g_real = 157412.00, f = 157412.00, StateID = #23
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,0,10,0,0,1,0,1,0,1,
+),state_id:#23
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_4
+-----------------End Childs------------------
+
+Node expanded: h = 0.00, g_real = 157412.00, f = 157412.00, level = 8.00, StateID = #23
+applicable_ops.size() = 3
+------------------Child----------------
+
+		Child_1 : h = 0, g_real = 157636.00, f = 157636.00, StateID = #24
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,10,0,0,1,0,1,0,1,
+),state_id:#24
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_1
+		Child_2 : h = 0, g_real = 157537.00, f = 157537.00, StateID = #24
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,10,0,0,1,0,1,0,1,
+),state_id:#24
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_2
+		Child_3 : h = 0, g_real = 285202.00, f = 285202.00, StateID = #25
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,0,11,1,0,1,0,1,0,1,
+),state_id:#25
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_3
+-----------------End Childs------------------
+
+Node expanded: h = 0.00, g_real = 285202.00, f = 285202.00, level = 9.00, StateID = #25
+applicable_ops.size() = 4
+------------------Child----------------
+
+		Child_1 : h = 0, g_real = 285426.00, f = 285426.00, StateID = #26
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,11,1,0,1,0,1,0,1,
+),state_id:#26
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_1
+		Child_2 : h = 0, g_real = 285327.00, f = 285327.00, StateID = #26
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,11,1,0,1,0,1,0,1,
+),state_id:#26
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_2
+		Child_3 : h = 0, g_real = 288201.00, f = 288201.00, StateID = #27
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,0,2,1,0,1,0,1,0,1,
+),state_id:#27
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_3
+		Child_4 : h = 0, g_real = 293202.00, f = 293202.00, StateID = #28
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,1,2,1,0,0,0,1,0,1,
+),state_id:#28
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_4
+-----------------End Childs------------------
+
+Node expanded: h = 0.00, g_real = 293202.00, f = 293202.00, level = 10.00, StateID = #28
+applicable_ops.size() = 5
+------------------Child----------------
+
+		Child_1 : h = 0, g_real = 293426.00, f = 293426.00, StateID = #29
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,2,1,0,0,0,1,0,1,
+),state_id:#29
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_1
+		Child_2 : h = 0, g_real = 293327.00, f = 293327.00, StateID = #29
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,2,1,0,0,0,1,0,1,
+),state_id:#29
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_2
+		Child_3 : h = 0, g_real = 302201.00, f = 302201.00, StateID = #30
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,1,3,1,0,0,0,1,0,1,
+),state_id:#30
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_3
+		Child_4 : h = 0, g_real = 294701.00, f = 294701.00, StateID = #31
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,1,1,1,0,0,0,1,0,1,
+),state_id:#31
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_4
+		Child_5 : h = 0, g_real = 302201.00, f = 302201.00, StateID = #32
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,1,9,1,0,0,0,1,0,1,
+),state_id:#32
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_5
+-----------------End Childs------------------
+
+Node expanded: h = 0.00, g_real = 302201.00, f = 302201.00, level = 11.00, StateID = #32
+applicable_ops.size() = 4
+------------------Child----------------
+
+		Child_1 : h = 0, g_real = 302425.00, f = 302425.00, StateID = #33
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,9,1,0,0,0,1,0,1,
+),state_id:#33
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_1
+		Child_2 : h = 0, g_real = 302326.00, f = 302326.00, StateID = #33
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,9,1,0,0,0,1,0,1,
+),state_id:#33
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_2
+		Child_3 : h = 0, g_real = 305200.00, f = 305200.00, StateID = #34
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,1,10,1,0,0,0,1,0,1,
+),state_id:#34
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_3
+		Child_4 : h = 0, g_real = 310201.00, f = 310201.00, StateID = #35
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,1,0,10,1,0,1,0,1,0,1,
+),state_id:#35
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_4
+-----------------End Childs------------------
+
+Node expanded: h = 0.00, g_real = 310201.00, f = 310201.00, level = 12.00, StateID = #35
+applicable_ops.size() = 2
+------------------Child----------------
+
+		Child_1 : h = 0, g_real = 310425.00, f = 310425.00, StateID = #36
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,10,1,0,1,0,1,0,1,
+),state_id:#36
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_1
+		Child_2 : h = 0, g_real = 310326.00, f = 310326.00, StateID = #36
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,10,1,0,1,0,1,0,1,
+),state_id:#36
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_2
+-----------------End Childs------------------
+
+Node expanded: h = 0.00, g_real = 310326.00, f = 310326.00, level = 13.00, StateID = #36
+applicable_ops.size() = 2
+------------------Child----------------
+
+		Child_1 : h = 0, g_real = 311825.00, f = 311825.00, StateID = #37
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,3,0,0,1,0,1,1,0,10,1,0,1,0,1,0,1,
+),state_id:#37
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_1
+		Child_2 : h = 0, g_real = 311825.00, f = 311825.00, StateID = #38
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,9,0,0,1,0,1,1,0,10,1,0,1,0,1,0,1,
+),state_id:#38
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_2
+-----------------End Childs------------------
+
+Node expanded: h = 0.00, g_real = 311825.00, f = 311825.00, level = 14.00, StateID = #38
+applicable_ops.size() = 2
+------------------Child----------------
+
+		Child_1 : h = 0, g_real = 314824.00, f = 314824.00, StateID = #39
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,10,0,0,1,0,1,1,0,10,1,0,1,0,1,0,1,
+),state_id:#39
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_1
+		Child_2 : h = 0, g_real = 319825.00, f = 319825.00, StateID = #40
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,10,0,0,0,0,1,1,0,10,1,0,1,0,1,0,1,
+),state_id:#40
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_2
+-----------------End Childs------------------
+
+Node expanded: h = 0.00, g_real = 319825.00, f = 319825.00, level = 15.00, StateID = #40
+applicable_ops.size() = 1
+------------------Child----------------
+
+		Child_1 : h = 0, g_real = 447615.00, f = 447615.00, StateID = #41
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,1,11,0,0,0,1,1,1,0,10,1,0,1,0,1,0,1,
+),state_id:#41
+		The solution was not found.
+		Finding the next_bound
+End Child_1
+-----------------End Childs------------------
+
+Node expanded: h = 0.00, g_real = 314824.00, f = 314824.00, level = 15.00, StateID = #39
+applicable_ops.size() = 1
+------------------Child----------------
+
+		Child_1 : h = 0, g_real = 442614.00, f = 442614.00, StateID = #42
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,11,1,0,1,0,1,1,0,10,1,0,1,0,1,0,1,
+),state_id:#42
+		The solution was not found.
+		Finding the next_bound
+End Child_1
+-----------------End Childs------------------
+
+Node expanded: h = 0.00, g_real = 311825.00, f = 311825.00, level = 14.00, StateID = #37
+applicable_ops.size() = 2
+------------------Child----------------
+
+		Child_1 : h = 0, g_real = 316824.00, f = 316824.00, StateID = #43
+		Child_state:(S: 1,0,0,0,0,0,0,0,0,0,6,0,0,1,0,1,1,0,10,1,0,1,0,1,0,1,
+),state_id:#43
+		The solution was not found.
+		Inserting to the queue f <= bound
+End Child_1
+Peak memory: 3440 KB
+caught signal 11 -- exiting
