@@ -54,7 +54,7 @@ pattern: [18, 24] - improvement: 150
 found a better pattern with improvement 829
 pattern: [18, 23]
 Switch from bucket-based to heap-based queue at key = 1499, num_pushes = 12
-Hill climbing time so far: 0.06s
+Hill climbing time so far: 0.04s
 current collection size is 48
 current initial h value: 360699
 Switch from bucket-based to heap-based queue at key = 1499, num_pushes = 24
@@ -82,7 +82,7 @@ pattern: [18, 21, 23] - improvement: 850
 found a better pattern with improvement 850
 pattern: [18, 21, 23]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 0.12s
+Hill climbing time so far: 0.10s
 current collection size is 96
 current initial h value: 365700
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -109,7 +109,7 @@ pattern: [18, 19, 21, 23] - improvement: 54
 found a better pattern with improvement 362
 pattern: [9, 13]
 Switch from bucket-based to heap-based queue at key = 9999, num_pushes = 2
-Hill climbing time so far: 0.20s
+Hill climbing time so far: 0.16s
 current collection size is 100
 current initial h value: 365825
 Switch from bucket-based to heap-based queue at key = 9999, num_pushes = 4
@@ -127,7 +127,7 @@ pattern: [9, 10, 13] - improvement: 63
 found a better pattern with improvement 202
 pattern: [10, 25]
 Switch from bucket-based to heap-based queue at key = 212790, num_pushes = 12
-Hill climbing time so far: 0.30s
+Hill climbing time so far: 0.28s
 current collection size is 124
 current initial h value: 365825
 Switch from bucket-based to heap-based queue at key = 212790, num_pushes = 24
@@ -154,7 +154,7 @@ pattern: [10, 13, 25] - improvement: 874
 found a better pattern with improvement 874
 pattern: [10, 13, 25]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 0.44s
+Hill climbing time so far: 0.42s
 current collection size is 172
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -178,7 +178,7 @@ pattern: [10, 11, 13, 25] - improvement: 152
 found a better pattern with improvement 156
 pattern: [10, 15]
 Switch from bucket-based to heap-based queue at key = 1499, num_pushes = 12
-Hill climbing time so far: 0.62s
+Hill climbing time so far: 0.60s
 current collection size is 196
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 1499, num_pushes = 24
@@ -200,7 +200,7 @@ pattern: [10, 13, 15] - improvement: 120
 found a better pattern with improvement 150
 pattern: [10, 11, 13, 25]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 0.82s
+Hill climbing time so far: 0.80s
 current collection size is 292
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -221,7 +221,7 @@ pattern: [10, 11, 13, 14, 25] - improvement: 168
 found a better pattern with improvement 168
 pattern: [10, 11, 13, 14, 25]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 1.08s
+Hill climbing time so far: 1.06s
 current collection size is 484
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -241,7 +241,7 @@ pattern: [10, 11, 12, 13, 14, 25] - improvement: 56
 found a better pattern with improvement 144
 pattern: [10, 13, 15]
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 12
-Hill climbing time so far: 1.38s
+Hill climbing time so far: 1.36s
 current collection size is 532
 current initial h value: 367824
 Switch from bucket-based to heap-based queue at key = 8000, num_pushes = 24
@@ -340,8 +340,8 @@ iPDB: size = 842
 iPDB: generated = 187
 iPDB: rejected = 0
 iPDB: max_pdb_size = 2304
-iPDB: hill climbing time: 4.12s
-Pattern generation (Haslum et al.) time: 4.12s
+iPDB: hill climbing time: 4.16s
+Pattern generation (Haslum et al.) time: 4.16s
 max_h(constructor) = 367824
 h_initial = 367824
 
@@ -380,7 +380,9 @@ BFSExpanded state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,0,1,7,0,0,1,0,1,1,1,
 			cost != 0
 			-------------End childs------------
 			D.empty() == 1
-		Expanded node that comes from BFS: h = 367699.00, g_real = 224.00, f  = 367923.00, level = 2.00
+		Expanded node that comes from BFS: h = 367699.00, g_real = 224.00, f  = 367923.00, level = 2.00, StateID = #2
+		Expanded node that comes from BFS:(S: 1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,7,0,0,1,0,1,1,1,
+),state_id:#2
 		applicable_ops.size() = 4
 		--------------childs-------------
 		The solution was not found.
@@ -391,7 +393,9 @@ BFSExpanded state:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,0,1,7,0,0,1,0,1,1,1,
 		Inserting to the queue f <= bound
 		The solution was not found.
 		Inserting to the queue f <= bound
-		Expanded node that comes from BFS: h = 367699.00, g_real = 224.00, f  = 367923.00, level = 2.00
+		Expanded node that comes from BFS: h = 367699.00, g_real = 224.00, f  = 367923.00, level = 2.00, StateID = #3
+		Expanded node that comes from BFS:(S: 1,0,0,0,0,0,0,0,0,1,7,0,0,1,0,1,0,0,0,0,0,1,0,1,1,1,
+),state_id:#3
 		applicable_ops.size() = 4
 		--------------childs-------------
 		The solution was not found.
