@@ -19,7 +19,7 @@ python3 src/translate/translate.py benchmarks/elevators-opt08-strips/p02-domain.
 
 src/preprocess/preprocess < Astarelevators-opt08-strips2.sas
 
-src/search/downward-release --global_probes 100 --domain_name elevators-opt08-strips --problem_name p02.pddl --heuristic_name ipdb  --search "ida(ipdb())" <  Astarelevators-opt08-strips2 > ${RESULTS}/p02.pddl
+src/search/downward-release --global_probes 100 --domain_name elevators-opt08-strips --problem_name p02.pddl --heuristic_name ipdb  --search "ida(ipdb(max_time=600))" <  Astarelevators-opt08-strips2 > ${RESULTS}/p02.pddl
 
 
 
