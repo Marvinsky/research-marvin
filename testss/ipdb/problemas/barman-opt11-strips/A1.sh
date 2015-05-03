@@ -25,7 +25,7 @@ python3 src/translate/translate.py benchmarks/barman-opt11-strips/domain.pddl be
 
 src/preprocess/preprocess < Astarbarman-opt11-strips1.sas
 
-src/search/downward-release --global_probes 1000 --domain_name barman-opt11-strips --problem_name pfile01-001.pddl --heuristic_name ipdb --search "ss(ipdb())" <  Astarbarman-opt11-strips1 > ${RESULTS}/pfile01-001.pddl
+src/search/downward-release --F_boundary 22 --global_probes 1000 --domain_name barman-opt11-strips --problem_name pfile01-001.pddl --heuristic_name ipdb --search "ss(ipdb())" <  Astarbarman-opt11-strips1 > ${RESULTS}/pfile01-001.pddl
 
 
 
