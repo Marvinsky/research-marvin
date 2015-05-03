@@ -1,5 +1,5 @@
-scanalyzer-opt11-strips
-domain.pddl
-2
-p01.pddl	
-p02.pddl						
+elevators-opt08-strips
+no_unique_domain
+1
+p01-domain.pddl
+p01.pddl
