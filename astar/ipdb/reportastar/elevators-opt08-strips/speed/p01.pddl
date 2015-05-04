@@ -1,4 +1,4 @@
-		/home/marvin/marvin/astar/ipdb/reportastar/elevators-opt08-strips/speed/p01.pddl
+		/home/levi/marvin/marvin/astar/ipdb/reportastar/elevators-opt08-strips/speed/p01.pddl
 	initial_value: 30
 	h_min	gen	exp		V		SEv		VeSP		NPBP
 	25	5	1		1		25		0.17		0.5

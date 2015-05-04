@@ -1,1 +1,1 @@
-transport-opt08-strips
+elevators-opt08-strips
