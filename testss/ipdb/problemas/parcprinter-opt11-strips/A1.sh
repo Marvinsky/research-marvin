@@ -1,14 +1,8 @@
 #PBS ss_1
 
-#PBS -m b
+#PBS -m a
 
 #PBS -M marvin.zarate@ufv.br
-
-#PBS -l nodes=1:ppn=1
-
-#PBS -l walltime=1800
-
-#PBS -l pmem=6gb
 
 cd $PBS_O_WORKDIR
 
@@ -25,7 +19,7 @@ python3 src/translate/translate.py benchmarks/parcprinter-opt11-strips/p01-domai
 
 src/preprocess/preprocess < Astarparcprinter-opt11-strips1.sas
 
-src/search/downward-release --F_boundary 368022 --global_probes 1000 --domain_name parcprinter-opt11-strips --problem_name p01.pddl --heuristic_name ipdb --search "ss(ipdb(max_time=600))" <  Astarparcprinter-opt11-strips1 > ${RESULTS}/p01.pddl
+src/search/downward-release --F_boundary 375822 --global_probes 1000 --domain_name parcprinter-opt11-strips --problem_name p01.pddl --heuristic_name ipdb --search "ss(ipdb(max_time=600))" <  Astarparcprinter-opt11-strips1 > ${RESULTS}/p01.pddl
 
 
 
