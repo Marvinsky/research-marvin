@@ -15,5 +15,3 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 41		140470			32631
 42		408622			139227
 
-p02.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
