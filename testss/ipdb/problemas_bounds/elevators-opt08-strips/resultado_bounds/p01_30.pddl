@@ -17,7 +17,7 @@ pattern: [1, 7] - improvement: 991
 pattern: [1, 8] - improvement: 983
 found a better pattern with improvement 991
 pattern: [1, 7]
-Hill climbing time so far: 0.02s
+Hill climbing time so far: 0.00s
 current collection size is 96
 current initial h value: 12
 pattern: [0, 6] - improvement: 21
@@ -25,7 +25,7 @@ pattern: [1, 8] - improvement: 248
 pattern: [1, 2, 7] - improvement: 45
 found a better pattern with improvement 248
 pattern: [1, 8]
-Hill climbing time so far: 0.04s
+Hill climbing time so far: 0.02s
 current collection size is 156
 current initial h value: 12
 pattern: [0, 6] - improvement: 33
@@ -41,7 +41,7 @@ pattern: [1, 2, 7] - improvement: 16
 pattern: [0, 1, 2, 8] - improvement: 29
 found a better pattern with improvement 29
 pattern: [0, 6]
-Hill climbing time so far: 0.08s
+Hill climbing time so far: 0.06s
 current collection size is 516
 current initial h value: 12
 pattern: [0, 8] - improvement: 2
@@ -50,7 +50,7 @@ pattern: [0, 1, 2, 8] - improvement: 32
 pattern: [0, 2, 6] - improvement: 935
 found a better pattern with improvement 935
 pattern: [0, 2, 6]
-Hill climbing time so far: 0.10s
+Hill climbing time so far: 0.08s
 current collection size is 816
 current initial h value: 30
 pattern: [0, 7] - improvement: 2
@@ -66,7 +66,7 @@ pattern: [1, 2, 7] - improvement: 16
 pattern: [0, 1, 2, 6] - improvement: 23
 found a better pattern with improvement 23
 pattern: [0, 1, 2, 6]
-Hill climbing time so far: 0.20s
+Hill climbing time so far: 0.18s
 current collection size is 3816
 current initial h value: 30
 pattern: [0, 7] - improvement: 1
@@ -74,13 +74,13 @@ pattern: [0, 1, 7] - improvement: 1
 pattern: [1, 2, 7] - improvement: 15
 found a better pattern with improvement 15
 pattern: [1, 2, 7]
-Hill climbing time so far: 0.26s
+Hill climbing time so far: 0.24s
 current collection size is 4116
 current initial h value: 30
 pattern: [0, 1, 2, 7] - improvement: 405
 found a better pattern with improvement 405
 pattern: [0, 1, 2, 7]
-Hill climbing time so far: 0.32s
+Hill climbing time so far: 0.30s
 current collection size is 5616
 current initial h value: 30
 Improvement below threshold. Stop hill climbing.
@@ -97,14 +97,14 @@ iPDB: hill climbing time: 0.38s
 Pattern generation (Haslum et al.) time: 0.38s
 SSSearch ...
 
-totalPrediction : 126.99
-ss_timer: 0.58
+totalPrediction : 27.00
+ss_timer: 0.34
 probes: 1000
-threshold : 31.00
-count nodes generates : 1641.96
-count nodes expanded : 4.97
+threshold : 30.00
+count nodes generates : 328.14
+count nodes expanded : 2.00
 dominio = elevators-opt08-strips
-tarefa = p01_31.pddl
+tarefa = p01_30.pddl
 heuristica = ipdb
 Directory: ipdb created.
 Directory: fdist created.
@@ -118,12 +118,10 @@ size: 1
 	f: 30	q: 1.00
 
 g:2
-size: 1
-	f: 31	q: 0.99
+size: 0
 
 g:3
-size: 1
-	f: 31	q: 1.98
+size: 0
 
 g:4
 size: 0
@@ -206,11 +204,8 @@ size: 0
 g:30
 size: 0
 
-g:31
-size: 0
-
-Actual search time: 0.58s [t=0.96s]
-Search time: 0.58s
-Total time: 0.96s
+Actual search time: 0.34s [t=0.72s]
+Search time: 0.34s
+Total time: 0.72s
 Search stopped without finding a solution.
 Peak memory: 3728 KB

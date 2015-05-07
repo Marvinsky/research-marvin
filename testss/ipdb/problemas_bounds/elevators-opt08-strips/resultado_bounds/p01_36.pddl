@@ -97,12 +97,12 @@ iPDB: hill climbing time: 0.40s
 Pattern generation (Haslum et al.) time: 0.40s
 SSSearch ...
 
-totalPrediction : 4706.17
-ss_timer: 5.32
+totalPrediction : 4996.65
+ss_timer: 5.76
 probes: 1000
 threshold : 36.00
-count nodes generates : 61586.38
-count nodes expanded : 154.13
+count nodes generates : 65418.59
+count nodes expanded : 162.74
 dominio = elevators-opt08-strips
 tarefa = p01_36.pddl
 heuristica = ipdb
@@ -121,23 +121,23 @@ size: 3
 
 g:2
 size: 3
-	f: 31	q: 1.01
-	f: 35	q: 9.05
-	f: 36	q: 1.90
+	f: 31	q: 1.04
+	f: 35	q: 8.98
+	f: 36	q: 1.95
 
 g:3
 size: 3
-	f: 31	q: 2.02
-	f: 35	q: 6.05
-	f: 36	q: 10.87
+	f: 31	q: 2.09
+	f: 35	q: 5.98
+	f: 36	q: 11.15
 
 g:4
 size: 1
-	f: 36	q: 52.37
+	f: 36	q: 55.44
 
 g:5
 size: 1
-	f: 36	q: 64.87
+	f: 36	q: 70.10
 
 g:6
 size: 0
@@ -232,8 +232,8 @@ size: 0
 g:36
 size: 0
 
-Actual search time: 5.32s [t=5.72s]
-Search time: 5.32s
-Total time: 5.72s
+Actual search time: 5.76s [t=6.16s]
+Search time: 5.76s
+Total time: 6.16s
 Search stopped without finding a solution.
 Peak memory: 3728 KB

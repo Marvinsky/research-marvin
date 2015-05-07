@@ -11,7 +11,7 @@ source /usr/share/modules/init/bash
 module load python
 module load mercurial
 
-RESULTS=/home/marvin/marvin/testss/ipdb/problemas/elevators-opt08-strips/resultado
+RESULTS=/home/marvin/marvin/testss/ipdb/problemas_bounds/elevators-opt08-strips/resultado_bounds
 
 cd /home/marvin/fd
 

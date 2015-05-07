@@ -18,12 +18,7 @@ using namespace std;
 
 
 void create_final_report(double bound, string solution) {
-	cout<<"bound = "<<bound<<", in "<<solution.c_str()<<"\n";
-	string cmd = "/home/marvin/marvin/testss/ ./ss a b";
-	cout<<"cmd = "<<cmd<<"\n";
-	string allow = "chmod +x "+cmd;
-	cout<<"allow = "<<allow<<"\n";
-	system(allow.c_str());	
+	
 }
 
 int getTotalLevels(string interText) {
@@ -98,7 +93,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                 }     
                 string resultFile;
 
-                resultFile = "/"+heuristic+".txt";
+                resultFile = "/"+domain+".txt";
                 resultFile = model + resultFile;
                 resultFile = "reports/" + resultFile;
                 resultFile = "marvin/" + resultFile;
@@ -139,18 +134,22 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		
         	string output;
 		output =  domain+"/fdist/"+output;
-		output = algorithm1+"/"+heuristic+"/report"+sufix1+"/"+output;
+		output = algorithm1+"/"+heuristic+"/report"+sufix1+"_bounds/"+output;
 		output = "marvin/" + output;
 		output = "marvin/" + output;
 		output = "/home/" + output;	
 	        cout<<"\noutput = "<<output.c_str()<<"\n";	
-        	
+
+
+		ofstream outputFile;
+		outputFile.open(resultFile.c_str(), ios::out);
+		outputFile<<"\tReport:\t\tida*-bfs-vs-ss-bfs - using "<<heuristic<<" heuristic.\n\n";
+		outputFile<<domain<<"\n";
 		for (size_t i = 0; i < fileNames2.size(); i++) {
 			string one = fileNames2.at(i);
-			string solution = output.c_str() + one;
+			outputFile<<"\n"<<one<<"\n";
 			string idabounds = output5.c_str() + one;
 			cout<<"idabounds = "<<idabounds.c_str()<<"\n";
-			cout<<"solution = "<<solution.c_str()<<"\n";
 
 			string str;
 			double h_initial, time, bound, exp, gen;
@@ -171,8 +170,6 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			cout<<"str = "<<str<<"\n";
 			int total_levels = getTotalLevels(idabounds.c_str());
 			cout<<"total_levels = "<<total_levels<<"\n";
-			idai>>str;
-			cout<<"str = "<<str<<"\n";
 			
 			levels = new string*[total_levels];
 			for (int i = 0; i < total_levels; i++) {
@@ -185,6 +182,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				}
 			}
 			
+
+			outputFile<<"bound\t\tida*-bfs (exp)\t\tss-bfs (exp)\n";
 			for (int i = 0; i < total_levels; i++) {
 				v_time.push_back(levels[i][0]);
 				v_bound.push_back(atof(levels[i][1].c_str()));
@@ -194,11 +193,30 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			idai.close();
 			
 			for (size_t i = 0; i < v_bound.size(); i++) {
-				//cout<<v_bound.at(i)<<"\n";
-				create_final_report(v_bound.at(i), solution.c_str());
+				stringstream number;
+				number<<v_bound.at(i);
+				//index one: p01.pddl
+				string t = one;
+				size_t found = t.find(".");
+				string problem_name_mod = t.substr(0, found);
+				string fname = problem_name_mod;
+				fname += "_" + number.str();
+				fname += string(".pddl");
+				string solution = output.c_str() + fname;
+				cout<<"solution2 = "<<solution<<"\n";
+
+				ifstream ssbound(solution.c_str());
+				string str;
+				double ss_exp = 0;
+				ssbound>>str;
+				ssbound>>str;
+				ssbound>>ss_exp;
+				ssbound.close();
+
+				outputFile<<v_bound.at(i)<<"\t\t"<<v_exp.at(i)<<"\t\t\t"<<ss_exp<<"\n";
 			}
 		}
-
+		outputFile.close();
                 
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);       

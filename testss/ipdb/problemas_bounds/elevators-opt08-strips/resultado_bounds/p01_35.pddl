@@ -97,14 +97,14 @@ iPDB: hill climbing time: 0.40s
 Pattern generation (Haslum et al.) time: 0.40s
 SSSearch ...
 
-totalPrediction : 368.93
-ss_timer: 2.18
+totalPrediction : 369.83
+ss_timer: 2.14
 probes: 1000
 threshold : 35.00
-count nodes generates : 4583.09
-count nodes expanded : 23.11
+count nodes generates : 4592.84
+count nodes expanded : 23.12
 dominio = elevators-opt08-strips
-tarefa = p01_35.sh
+tarefa = p01_35.pddl
 heuristica = ipdb
 Directory: ipdb created.
 Directory: fdist created.
@@ -120,13 +120,13 @@ size: 2
 
 g:2
 size: 2
-	f: 31	q: 1.04
-	f: 35	q: 8.99
+	f: 31	q: 1.05
+	f: 35	q: 8.98
 
 g:3
 size: 2
-	f: 31	q: 2.08
-	f: 35	q: 5.99
+	f: 31	q: 2.11
+	f: 35	q: 5.98
 
 g:4
 size: 0
@@ -224,8 +224,8 @@ size: 0
 g:35
 size: 0
 
-Actual search time: 2.18s [t=2.58s]
-Search time: 2.18s
-Total time: 2.58s
+Actual search time: 2.14s [t=2.54s]
+Search time: 2.14s
+Total time: 2.54s
 Search stopped without finding a solution.
 Peak memory: 3728 KB

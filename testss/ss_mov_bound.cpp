@@ -38,7 +38,7 @@ void create_final_report(double bound, string pasta, string dominio, string prob
 	//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
 
 	cout<<"pasta = "<<pasta.c_str()<<"\n\n";
-	outfile<<"RESULTS=/home/marvin/marvin/testss/"<<heuristic<<"/problemas/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd\n\n";
+	outfile<<"RESULTS=/home/marvin/marvin/testss/"<<heuristic<<"/problemas_bounds/"<<pasta.c_str()<<"/resultado_bounds"<<"\n\ncd /home/marvin/fd\n\n";
 	outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<"  "<<outname.c_str()<<"  "<<heuristic<<"\n\n";
 
 	outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
