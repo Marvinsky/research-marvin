@@ -50,7 +50,7 @@ pattern: [0, 1, 2, 8] - improvement: 32
 pattern: [0, 2, 6] - improvement: 935
 found a better pattern with improvement 935
 pattern: [0, 2, 6]
-Hill climbing time so far: 0.10s
+Hill climbing time so far: 0.08s
 current collection size is 816
 current initial h value: 30
 pattern: [0, 7] - improvement: 2
@@ -59,14 +59,14 @@ pattern: [0, 1, 2, 8] - improvement: 45
 pattern: [0, 1, 2, 6] - improvement: 25
 found a better pattern with improvement 45
 pattern: [0, 1, 2, 8]
-Hill climbing time so far: 0.16s
+Hill climbing time so far: 0.14s
 current collection size is 2316
 current initial h value: 30
 pattern: [1, 2, 7] - improvement: 16
 pattern: [0, 1, 2, 6] - improvement: 23
 found a better pattern with improvement 23
 pattern: [0, 1, 2, 6]
-Hill climbing time so far: 0.22s
+Hill climbing time so far: 0.20s
 current collection size is 3816
 current initial h value: 30
 pattern: [0, 7] - improvement: 1
@@ -74,13 +74,13 @@ pattern: [0, 1, 7] - improvement: 1
 pattern: [1, 2, 7] - improvement: 15
 found a better pattern with improvement 15
 pattern: [1, 2, 7]
-Hill climbing time so far: 0.28s
+Hill climbing time so far: 0.26s
 current collection size is 4116
 current initial h value: 30
 pattern: [0, 1, 2, 7] - improvement: 405
 found a better pattern with improvement 405
 pattern: [0, 1, 2, 7]
-Hill climbing time so far: 0.34s
+Hill climbing time so far: 0.32s
 current collection size is 5616
 current initial h value: 30
 Improvement below threshold. Stop hill climbing.
@@ -93,34 +93,159 @@ iPDB: size = 5616
 iPDB: generated = 54
 iPDB: rejected = 0
 iPDB: max_pdb_size = 6000
-iPDB: hill climbing time: 0.42s
-Pattern generation (Haslum et al.) time: 0.42s
-max_h(constructor) = 30
-h_initial = 30
-dominio = elevators-opt08-strips
-tarefa = p01.pddl
-heuristica = ipdb
-	 time_1: 0.42s, bound_1: 30.00, nodes_expanded_for_bound: 3, nodes_generated_for_bound: 13
-	 time_2: 0.42s, bound_2: 31.00, nodes_expanded_for_bound: 9, nodes_generated_for_bound: 27
-	 time_3: 0.42s, bound_3: 35.00, nodes_expanded_for_bound: 36, nodes_generated_for_bound: 144
-	 time_4: 0.42s, bound_4: 36.00, nodes_expanded_for_bound: 300, nodes_generated_for_bound: 772
-	 time_5: 0.48s, bound_5: 37.00, nodes_expanded_for_bound: 5237, nodes_generated_for_bound: 8712
-	 time_6: 1.88s, bound_6: 38.00, nodes_expanded_for_bound: 123115, nodes_generated_for_bound: 76942
-	 time_7: 3.30s, bound_7: 39.00, nodes_expanded_for_bound: 123213, nodes_generated_for_bound: 77212
-	 time_8: 4.72s, bound_8: 40.00, nodes_expanded_for_bound: 123306, nodes_generated_for_bound: 77591
-	 time_9: 6.34s, bound_9: 41.00, nodes_expanded_for_bound: 140470, nodes_generated_for_bound: 105035
-Solution found!
-	 time_10: 13.06s, bound_10: 42.00, nodes_expanded_for_bound: 408622, nodes_generated_for_bound: 502595
-d = 42
-SOLUTION FOUND
-	cost = 42, expanded nodes = 924311, generated nodes = 849043
-total_d = 42
+iPDB: hill climbing time: 0.38s
+Pattern generation (Haslum et al.) time: 0.38s
+SSSearch ...
 
-	Total depth: 42, expansion: 924311, generation: 849043
-Actual search time: 12.64s [t=13.06s]
-Plan length: 0 step(s).
-Plan cost: 0
-Search time: 12.64s
-Total time: 13.06s
-Solution found.
-Peak memory: 3720 KB
+totalPrediction : 134992.14
+ss_timer: 9.74
+probes: 1000
+threshold : 37.00
+count nodes generates : 1875429.69
+count nodes expanded : 2230.48
+dominio = elevators-opt08-strips
+tarefa = p01_37.pddl
+heuristica = ipdb
+Directory: ipdb created.
+Directory: fdist created.
+print.
+g:0
+size: 1
+	f: 30	q: 1.00
+
+g:1
+size: 4
+	f: 30	q: 1.00
+	f: 35	q: 2.99
+	f: 36	q: 1.01
+	f: 37	q: 4.00
+
+g:2
+size: 4
+	f: 31	q: 1.04
+	f: 35	q: 9.07
+	f: 36	q: 2.04
+	f: 37	q: 13.81
+
+g:3
+size: 4
+	f: 31	q: 2.08
+	f: 35	q: 6.08
+	f: 36	q: 11.38
+	f: 37	q: 30.43
+
+g:4
+size: 2
+	f: 36	q: 56.61
+	f: 37	q: 94.52
+
+g:5
+size: 2
+	f: 36	q: 71.84
+	f: 37	q: 275.29
+
+g:6
+size: 1
+	f: 37	q: 731.14
+
+g:7
+size: 1
+	f: 37	q: 910.50
+
+g:8
+size: 1
+	f: 37	q: 1.55
+
+g:9
+size: 1
+	f: 37	q: 3.10
+
+g:10
+size: 0
+
+g:11
+size: 0
+
+g:12
+size: 0
+
+g:13
+size: 0
+
+g:14
+size: 0
+
+g:15
+size: 0
+
+g:16
+size: 0
+
+g:17
+size: 0
+
+g:18
+size: 0
+
+g:19
+size: 0
+
+g:20
+size: 0
+
+g:21
+size: 0
+
+g:22
+size: 0
+
+g:23
+size: 0
+
+g:24
+size: 0
+
+g:25
+size: 0
+
+g:26
+size: 0
+
+g:27
+size: 0
+
+g:28
+size: 0
+
+g:29
+size: 0
+
+g:30
+size: 0
+
+g:31
+size: 0
+
+g:32
+size: 0
+
+g:33
+size: 0
+
+g:34
+size: 0
+
+g:35
+size: 0
+
+g:36
+size: 0
+
+g:37
+size: 0
+
+Actual search time: 9.74s [t=10.12s]
+Search time: 9.74s
+Total time: 10.12s
+Search stopped without finding a solution.
+Peak memory: 3728 KB
