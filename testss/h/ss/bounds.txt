@@ -1,9 +1,0 @@
-elevators-opt08-strips
-no_unique_domain
-3
-p01-domain.pddl
-p01.pddl
-p02-domain.pddl
-p02.pddl
-p03-domain.pddl
-p03.pddl

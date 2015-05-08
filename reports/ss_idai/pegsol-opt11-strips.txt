@@ -1,0 +1,27 @@
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1000 probes
+
+pegsol-opt11-strips
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+5		5			5
+6		51			47.832
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+2		10			7.828
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		12			12
+5		638			552.384
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+5		45			25.352
+6		2224			1416.32
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		31			21.433
+4		1535			1258.34

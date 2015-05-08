@@ -27,17 +27,21 @@ void create_final_report(double bound, string pasta, string dominio, string prob
 	string sas;
 	stringstream number;
 	number<<bound;
+	cout<<"pasta = "<<pasta<<"\n";
+	cout<<"dominio = "<<dominio<<"\n";
 	cout<<"problema = "<<problema<<"\n";
+	cout<<"outname = "<<outname<<"\n";
+	cout<<"fname = "<<fname<<"\n";
+	cout<<"heuristic = "<<heuristic<<"\n";
 	sas = "Astar";
 	sas += pasta;
 	sas += "_"+number.str();
-	cout<<"sas = "<<sas<<"\n";
 	ofstream outfile(fname.c_str(), ios::out);
 
 	outfile<<"#PBS ss_"<<bound<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
 	//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
 
-	cout<<"pasta = "<<pasta.c_str()<<"\n\n";
+	
 	outfile<<"RESULTS=/home/marvin/marvin/testss/"<<heuristic<<"/problemas_bounds/"<<pasta.c_str()<<"/resultado_bounds"<<"\n\ncd /home/marvin/fd\n\n";
 	outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<"  "<<outname.c_str()<<"  "<<heuristic<<"\n\n";
 
@@ -64,7 +68,7 @@ void create_final_report(double bound, string pasta, string dominio, string prob
 	//cout<<fname<<endl;
         string allow;
 	allow = "chmod +x "+fname;	
-	cout<<allow<<"\n";
+	//cout<<allow<<"\n";
 	system(allow.c_str());
 	executeFile = "sh "+fname;
 	system(executeFile.c_str());
@@ -114,16 +118,16 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 		file2>>heuristic;
 
 		ifstream file("h/ss/d/instance360.txt");
-		cout<<"heuristic = "<<heuristic<<"\n\n";
-		cout<<"quantidade_entrada_opt = "<<quantidade_entrada_opt<<"\n\n";
-		cout<<"total_heuristics = "<<total_heuristics<<"\n\n"; 
+		//cout<<"heuristic = "<<heuristic<<"\n\n";
+		//cout<<"quantidade_entrada_opt = "<<quantidade_entrada_opt<<"\n\n";
+		//cout<<"total_heuristics = "<<total_heuristics<<"\n\n"; 
 		for (int i = 0; i < quantidade_entrada_opt; i++) {
 			file>>pasta;
 			//cout<<"pasta = "<<pasta<<"\n";
 			file>>dominio;
 			//cout<<"dominio = "<<dominio<<"\n";
 			file>>quantidade_problemas;
-			cout<<"quantidade_problemas = "<<quantidade_problemas<<"\n";
+			//cout<<"quantidade_problemas = "<<quantidade_problemas<<"\n";
 		
 			if (dominio == "domain.pddl") {
 				dominio_unico = true;
@@ -134,13 +138,13 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 			string pastaProblema = "mkdir /home/marvin/marvin/testss/"+heuristic+"/problemas_bounds/"+pasta;
 			//string pastaProblema = "mkdir ~/testss/"+heuristic+"/problemas/"+pasta;
 			if (!system(pastaProblema.c_str())) {
-				cout<<"pasta created.\n";
+				//cout<<"pasta created.\n";
 			}
-			string pastaResultado = "mkdir /home/marvin/marvin/testss/"+heuristic+"/problemas/"+pasta+"/resultado_bounds";
+			string pastaResultado = "mkdir /home/marvin/marvin/testss/"+heuristic+"/problemas_bounds/"+pasta+"/resultado_bounds";
 		
 			//string pastaResultado = "mkdir ~/testss/"+heuristic+"/problemas/"+pasta+"/resultado";
 			if (!system(pastaResultado.c_str())) {
-				cout<<"pasta resultado created.\n";
+				//cout<<"pasta resultado created.\n";
 			}
 
 			/*Here we have to ask for the bounds...
@@ -178,7 +182,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
                 	}
 			
 			for (int j = 0; j < quantidade_problemas; j++) {
-				string send_problema, send_dominio = pasta;
+				string send_problema, send_dominio = dominio;
 				if (dominio_unico) {
 					file>>problema;
 					send_problema = problema;
@@ -213,11 +217,8 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
                         			idai>>str;
                         			idai>>str;
                         			idai>>str;
-                        			cout<<"str = "<<str<<"\n";
 						int total_levels = getTotalLevels(idabounds.c_str());
-                        			cout<<"total_levels = "<<total_levels<<"\n";
-                        			//idai>>str;
-                        			cout<<"str = "<<str<<"\n";
+                        			cout<<"total_levels = "<<total_levels<<"\n";	
 
                         			levels = new string*[total_levels];
                         			for (int i = 0; i < total_levels; i++) {
@@ -242,7 +243,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
                         			idai.close();
 						
                         			for (size_t i = 0; i < v_bound.size(); i++) {
-                                			cout<<v_bound.at(i)<<"\n";
+                                			//cout<<v_bound.at(i)<<"\n";
 							stringstream number;
 							number<<v_bound.at(i);
 							//index one: p01.pddl
@@ -255,14 +256,14 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 							string outname = fname;
 							fname += string(".sh");
 							outname += string(".pddl");
-							cout<<"outname = "<<outname<<"\n";
+							//cout<<"outname = "<<outname<<"\n";
 							fname = "/" + fname;
 							fname = pasta + fname;
 							fname = "testss/" + heuristic + "/problemas_bounds/" + fname;
 							fname = "marvin/" + fname;
 							fname = "marvin/" + fname;
 							fname = "/home/" + fname;
-							cout<<fname<<"\n";
+							//cout<<fname<<"\n";
 							
                                 			create_final_report(v_bound.at(i), pasta, send_dominio, send_problema, outname, fname, heuristic);
                         			}

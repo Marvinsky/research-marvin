@@ -1,0 +1,21 @@
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1000 probes
+
+tidybot-opt11-strips
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		5			0
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+7		5			5
+8		27			27
+9		95			95
+10		317			317.171
+11		1084			1081.22
+12		3543			3553.02
+13		12173			11914
+14		42555			41245.4
+15		154176			152867
+16		2824			616284
+
