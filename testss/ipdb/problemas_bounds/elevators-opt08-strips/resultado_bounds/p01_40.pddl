@@ -1,12 +1,12 @@
 reading input... [t=0.00s]
 Simplifying transitions... done!
-done reading input! [t=0.02s]
-building causal graph...done! [t=0.02s]
-packing state variables...done! [t=0.02s]
+done reading input! [t=0.00s]
+building causal graph...done! [t=0.00s]
+packing state variables...done! [t=0.00s]
 Variables: 9
 Facts: 61
 Bytes per state: 4
-done initalizing global data [t=0.02s]
+done initalizing global data [t=0.00s]
 Average operator cost: 2.00
 PDB collection construction time: 0.00s
 done calculating initial pattern collection and candidate patterns for the search
@@ -25,7 +25,7 @@ pattern: [1, 8] - improvement: 248
 pattern: [1, 2, 7] - improvement: 45
 found a better pattern with improvement 248
 pattern: [1, 8]
-Hill climbing time so far: 0.06s
+Hill climbing time so far: 0.04s
 current collection size is 156
 current initial h value: 12
 pattern: [0, 6] - improvement: 33
@@ -33,7 +33,7 @@ pattern: [1, 2, 7] - improvement: 37
 pattern: [1, 2, 8] - improvement: 184
 found a better pattern with improvement 184
 pattern: [1, 2, 8]
-Hill climbing time so far: 0.08s
+Hill climbing time so far: 0.06s
 current collection size is 456
 current initial h value: 12
 pattern: [0, 6] - improvement: 29
@@ -41,7 +41,7 @@ pattern: [1, 2, 7] - improvement: 16
 pattern: [0, 1, 2, 8] - improvement: 29
 found a better pattern with improvement 29
 pattern: [0, 6]
-Hill climbing time so far: 0.12s
+Hill climbing time so far: 0.10s
 current collection size is 516
 current initial h value: 12
 pattern: [0, 8] - improvement: 2
@@ -50,7 +50,7 @@ pattern: [0, 1, 2, 8] - improvement: 32
 pattern: [0, 2, 6] - improvement: 935
 found a better pattern with improvement 935
 pattern: [0, 2, 6]
-Hill climbing time so far: 0.16s
+Hill climbing time so far: 0.14s
 current collection size is 816
 current initial h value: 30
 pattern: [0, 7] - improvement: 2
@@ -59,14 +59,14 @@ pattern: [0, 1, 2, 8] - improvement: 45
 pattern: [0, 1, 2, 6] - improvement: 25
 found a better pattern with improvement 45
 pattern: [0, 1, 2, 8]
-Hill climbing time so far: 0.24s
+Hill climbing time so far: 0.22s
 current collection size is 2316
 current initial h value: 30
 pattern: [1, 2, 7] - improvement: 16
 pattern: [0, 1, 2, 6] - improvement: 23
 found a better pattern with improvement 23
 pattern: [0, 1, 2, 6]
-Hill climbing time so far: 0.34s
+Hill climbing time so far: 0.30s
 current collection size is 3816
 current initial h value: 30
 pattern: [0, 7] - improvement: 1
@@ -74,13 +74,13 @@ pattern: [0, 1, 7] - improvement: 1
 pattern: [1, 2, 7] - improvement: 15
 found a better pattern with improvement 15
 pattern: [1, 2, 7]
-Hill climbing time so far: 0.42s
+Hill climbing time so far: 0.40s
 current collection size is 4116
 current initial h value: 30
 pattern: [0, 1, 2, 7] - improvement: 405
 found a better pattern with improvement 405
 pattern: [0, 1, 2, 7]
-Hill climbing time so far: 0.52s
+Hill climbing time so far: 0.50s
 current collection size is 5616
 current initial h value: 30
 Improvement below threshold. Stop hill climbing.
@@ -93,16 +93,16 @@ iPDB: size = 5616
 iPDB: generated = 54
 iPDB: rejected = 0
 iPDB: max_pdb_size = 6000
-iPDB: hill climbing time: 0.64s
-Pattern generation (Haslum et al.) time: 0.64s
+iPDB: hill climbing time: 0.60s
+Pattern generation (Haslum et al.) time: 0.60s
 SSSearch ...
 
-totalPrediction : 4777772.99
-ss_timer: 21.56
-probes: 1000
+totalPrediction : 5006746.83
+ss_timer: 2396.26
+probes: 100000
 threshold : 40.00
-count nodes generates : 71199824.66
-count nodes expanded : 23043.40
+count nodes generates : 74171507.50
+count nodes expanded : 23907.59
 dominio = elevators-opt08-strips
 tarefa = p01_40.pddl
 heuristica = ipdb
@@ -116,67 +116,67 @@ size: 1
 g:1
 size: 5
 	f: 30	q: 1.00
-	f: 35	q: 2.96
-	f: 36	q: 1.02
-	f: 37	q: 4.02
+	f: 35	q: 3.00
+	f: 36	q: 0.99
+	f: 37	q: 4.01
 	f: 39	q: 1.00
 
 g:2
 size: 6
-	f: 31	q: 1.04
-	f: 35	q: 8.77
-	f: 36	q: 2.06
-	f: 37	q: 14.00
+	f: 31	q: 1.01
+	f: 35	q: 8.97
+	f: 36	q: 1.97
+	f: 37	q: 13.99
 	f: 39	q: 2.00
-	f: 40	q: 3.21
+	f: 40	q: 3.06
 
 g:3
 size: 7
-	f: 31	q: 2.08
-	f: 35	q: 5.81
-	f: 36	q: 11.22
-	f: 37	q: 31.31
-	f: 38	q: 8.57
-	f: 39	q: 1.02
-	f: 40	q: 17.57
+	f: 31	q: 2.03
+	f: 35	q: 5.97
+	f: 36	q: 10.96
+	f: 37	q: 30.92
+	f: 38	q: 8.35
+	f: 39	q: 1.00
+	f: 40	q: 17.22
 
 g:4
 size: 4
-	f: 36	q: 54.39
-	f: 37	q: 98.28
-	f: 38	q: 45.94
-	f: 40	q: 31.70
+	f: 36	q: 53.44
+	f: 37	q: 95.83
+	f: 38	q: 43.58
+	f: 40	q: 30.29
 
 g:5
 size: 4
-	f: 36	q: 68.09
-	f: 37	q: 285.67
-	f: 38	q: 139.79
-	f: 40	q: 18.29
+	f: 36	q: 66.93
+	f: 37	q: 279.37
+	f: 38	q: 135.13
+	f: 40	q: 16.23
 
 g:6
 size: 3
-	f: 37	q: 740.57
-	f: 38	q: 458.47
-	f: 39	q: 11.41
+	f: 37	q: 734.15
+	f: 38	q: 452.02
+	f: 39	q: 12.44
 
 g:7
 size: 3
-	f: 37	q: 873.54
-	f: 38	q: 1913.59
-	f: 39	q: 18.55
+	f: 37	q: 897.74
+	f: 38	q: 1861.76
+	f: 39	q: 19.86
 
 g:8
 size: 3
-	f: 37	q: 0.70
-	f: 38	q: 7343.38
-	f: 39	q: 4.82
+	f: 37	q: 1.05
+	f: 38	q: 7362.87
+	f: 39	q: 4.07
 
 g:9
 size: 3
-	f: 37	q: 1.39
-	f: 38	q: 10805.54
-	f: 39	q: 9.64
+	f: 37	q: 2.10
+	f: 38	q: 11712.12
+	f: 39	q: 8.14
 
 g:10
 size: 0
@@ -271,8 +271,8 @@ size: 0
 g:40
 size: 0
 
-Actual search time: 21.56s [t=22.22s]
-Search time: 21.56s
-Total time: 22.22s
+Actual search time: 2396.26s [t=2396.86s]
+Search time: 2396.26s
+Total time: 2396.86s
 Search stopped without finding a solution.
 Peak memory: 3728 KB

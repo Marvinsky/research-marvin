@@ -17,7 +17,7 @@ pattern: [1, 7] - improvement: 991
 pattern: [1, 8] - improvement: 983
 found a better pattern with improvement 991
 pattern: [1, 7]
-Hill climbing time so far: 0.02s
+Hill climbing time so far: 0.00s
 current collection size is 96
 current initial h value: 12
 pattern: [0, 6] - improvement: 21
@@ -66,7 +66,7 @@ pattern: [1, 2, 7] - improvement: 16
 pattern: [0, 1, 2, 6] - improvement: 23
 found a better pattern with improvement 23
 pattern: [0, 1, 2, 6]
-Hill climbing time so far: 0.32s
+Hill climbing time so far: 0.30s
 current collection size is 3816
 current initial h value: 30
 pattern: [0, 7] - improvement: 1
@@ -74,13 +74,13 @@ pattern: [0, 1, 7] - improvement: 1
 pattern: [1, 2, 7] - improvement: 15
 found a better pattern with improvement 15
 pattern: [1, 2, 7]
-Hill climbing time so far: 0.42s
+Hill climbing time so far: 0.40s
 current collection size is 4116
 current initial h value: 30
 pattern: [0, 1, 2, 7] - improvement: 405
 found a better pattern with improvement 405
 pattern: [0, 1, 2, 7]
-Hill climbing time so far: 0.52s
+Hill climbing time so far: 0.50s
 current collection size is 5616
 current initial h value: 30
 Improvement below threshold. Stop hill climbing.
@@ -93,16 +93,16 @@ iPDB: size = 5616
 iPDB: generated = 54
 iPDB: rejected = 0
 iPDB: max_pdb_size = 6000
-iPDB: hill climbing time: 0.64s
-Pattern generation (Haslum et al.) time: 0.64s
+iPDB: hill climbing time: 0.60s
+Pattern generation (Haslum et al.) time: 0.60s
 SSSearch ...
 
-totalPrediction : 5001147.07
-ss_timer: 27.58
-probes: 1000
+totalPrediction : 5036549.96
+ss_timer: 2260.56
+probes: 100000
 threshold : 38.00
-count nodes generates : 74214098.57
-count nodes expanded : 24159.74
+count nodes generates : 74601113.13
+count nodes expanded : 23925.66
 dominio = elevators-opt08-strips
 tarefa = p01_38.pddl
 heuristica = ipdb
@@ -117,55 +117,55 @@ g:1
 size: 4
 	f: 30	q: 1.00
 	f: 35	q: 3.00
-	f: 36	q: 0.98
-	f: 37	q: 4.02
+	f: 36	q: 0.99
+	f: 37	q: 4.01
 
 g:2
 size: 4
-	f: 31	q: 1.12
-	f: 35	q: 8.94
-	f: 36	q: 1.89
-	f: 37	q: 13.95
+	f: 31	q: 1.01
+	f: 35	q: 9.01
+	f: 36	q: 1.95
+	f: 37	q: 14.00
 
 g:3
 size: 5
-	f: 31	q: 2.24
-	f: 35	q: 5.94
-	f: 36	q: 11.08
-	f: 37	q: 31.06
-	f: 38	q: 8.68
+	f: 31	q: 2.03
+	f: 35	q: 6.01
+	f: 36	q: 11.00
+	f: 37	q: 30.94
+	f: 38	q: 8.32
 
 g:4
 size: 3
-	f: 36	q: 55.68
-	f: 37	q: 98.97
-	f: 38	q: 47.07
+	f: 36	q: 53.59
+	f: 37	q: 96.07
+	f: 38	q: 43.30
 
 g:5
 size: 3
-	f: 36	q: 70.66
-	f: 37	q: 286.61
-	f: 38	q: 141.31
+	f: 36	q: 66.99
+	f: 37	q: 280.15
+	f: 38	q: 134.57
 
 g:6
 size: 2
-	f: 37	q: 729.47
-	f: 38	q: 468.51
+	f: 37	q: 737.45
+	f: 38	q: 452.56
 
 g:7
 size: 2
-	f: 37	q: 924.74
-	f: 38	q: 1836.92
+	f: 37	q: 908.01
+	f: 38	q: 1865.46
 
 g:8
 size: 2
-	f: 37	q: 0.60
-	f: 38	q: 7237.05
+	f: 37	q: 1.20
+	f: 38	q: 7376.86
 
 g:9
 size: 2
-	f: 37	q: 1.20
-	f: 38	q: 12166.06
+	f: 37	q: 2.40
+	f: 38	q: 11812.78
 
 g:10
 size: 0
@@ -254,8 +254,8 @@ size: 0
 g:38
 size: 0
 
-Actual search time: 27.58s [t=28.22s]
-Search time: 27.58s
-Total time: 28.22s
+Actual search time: 2260.56s [t=2261.16s]
+Search time: 2260.56s
+Total time: 2261.16s
 Search stopped without finding a solution.
 Peak memory: 3728 KB

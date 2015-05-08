@@ -25,7 +25,7 @@ pattern: [1, 8] - improvement: 248
 pattern: [1, 2, 7] - improvement: 45
 found a better pattern with improvement 248
 pattern: [1, 8]
-Hill climbing time so far: 0.04s
+Hill climbing time so far: 0.06s
 current collection size is 156
 current initial h value: 12
 pattern: [0, 6] - improvement: 33
@@ -33,7 +33,7 @@ pattern: [1, 2, 7] - improvement: 37
 pattern: [1, 2, 8] - improvement: 184
 found a better pattern with improvement 184
 pattern: [1, 2, 8]
-Hill climbing time so far: 0.06s
+Hill climbing time so far: 0.08s
 current collection size is 456
 current initial h value: 12
 pattern: [0, 6] - improvement: 29
@@ -50,7 +50,7 @@ pattern: [0, 1, 2, 8] - improvement: 32
 pattern: [0, 2, 6] - improvement: 935
 found a better pattern with improvement 935
 pattern: [0, 2, 6]
-Hill climbing time so far: 0.14s
+Hill climbing time so far: 0.12s
 current collection size is 816
 current initial h value: 30
 pattern: [0, 7] - improvement: 2
@@ -59,14 +59,14 @@ pattern: [0, 1, 2, 8] - improvement: 45
 pattern: [0, 1, 2, 6] - improvement: 25
 found a better pattern with improvement 45
 pattern: [0, 1, 2, 8]
-Hill climbing time so far: 0.22s
+Hill climbing time so far: 0.18s
 current collection size is 2316
 current initial h value: 30
 pattern: [1, 2, 7] - improvement: 16
 pattern: [0, 1, 2, 6] - improvement: 23
 found a better pattern with improvement 23
 pattern: [0, 1, 2, 6]
-Hill climbing time so far: 0.30s
+Hill climbing time so far: 0.24s
 current collection size is 3816
 current initial h value: 30
 pattern: [0, 7] - improvement: 1
@@ -74,13 +74,13 @@ pattern: [0, 1, 7] - improvement: 1
 pattern: [1, 2, 7] - improvement: 15
 found a better pattern with improvement 15
 pattern: [1, 2, 7]
-Hill climbing time so far: 0.40s
+Hill climbing time so far: 0.30s
 current collection size is 4116
 current initial h value: 30
 pattern: [0, 1, 2, 7] - improvement: 405
 found a better pattern with improvement 405
 pattern: [0, 1, 2, 7]
-Hill climbing time so far: 0.48s
+Hill climbing time so far: 0.36s
 current collection size is 5616
 current initial h value: 30
 Improvement below threshold. Stop hill climbing.
@@ -93,16 +93,16 @@ iPDB: size = 5616
 iPDB: generated = 54
 iPDB: rejected = 0
 iPDB: max_pdb_size = 6000
-iPDB: hill climbing time: 0.60s
-Pattern generation (Haslum et al.) time: 0.60s
+iPDB: hill climbing time: 0.42s
+Pattern generation (Haslum et al.) time: 0.42s
 SSSearch ...
 
-totalPrediction : 12803934.43
-ss_timer: 30.36
-probes: 1000
+totalPrediction : 13761962.82
+ss_timer: 2536.84
+probes: 100000
 threshold : 42.00
-count nodes generates : 182700808.48
-count nodes expanded : 139226.92
+count nodes generates : 196620957.94
+count nodes expanded : 155474.83
 dominio = elevators-opt08-strips
 tarefa = p01_42.pddl
 heuristica = ipdb
@@ -116,97 +116,97 @@ size: 1
 g:1
 size: 5
 	f: 30	q: 1.00
-	f: 35	q: 2.99
-	f: 36	q: 1.00
+	f: 35	q: 3.00
+	f: 36	q: 0.99
 	f: 37	q: 4.01
 	f: 39	q: 1.00
 
 g:2
 size: 8
-	f: 31	q: 1.02
-	f: 35	q: 8.86
-	f: 36	q: 2.09
-	f: 37	q: 13.73
+	f: 31	q: 1.01
+	f: 35	q: 8.69
+	f: 36	q: 1.93
+	f: 37	q: 13.65
 	f: 39	q: 2.00
-	f: 40	q: 2.99
-	f: 41	q: 8.02
-	f: 42	q: 28.39
+	f: 40	q: 3.10
+	f: 41	q: 8.01
+	f: 42	q: 28.69
 
 g:3
 size: 9
-	f: 31	q: 2.04
-	f: 35	q: 5.87
-	f: 36	q: 11.26
-	f: 37	q: 31.14
-	f: 38	q: 8.10
-	f: 39	q: 1.02
-	f: 40	q: 17.36
-	f: 41	q: 45.27
-	f: 42	q: 153.28
+	f: 31	q: 2.01
+	f: 35	q: 5.69
+	f: 36	q: 10.80
+	f: 37	q: 30.15
+	f: 38	q: 8.11
+	f: 39	q: 1.00
+	f: 40	q: 16.58
+	f: 41	q: 44.46
+	f: 42	q: 155.36
 
 g:4
 size: 6
-	f: 36	q: 55.59
-	f: 37	q: 96.74
-	f: 38	q: 41.30
-	f: 40	q: 31.70
-	f: 41	q: 162.58
-	f: 42	q: 467.47
+	f: 36	q: 51.84
+	f: 37	q: 92.46
+	f: 38	q: 43.25
+	f: 40	q: 29.20
+	f: 41	q: 165.52
+	f: 42	q: 459.48
 
 g:5
 size: 6
-	f: 36	q: 70.53
-	f: 37	q: 267.98
-	f: 38	q: 130.66
-	f: 40	q: 19.56
-	f: 41	q: 881.72
-	f: 42	q: 1722.32
+	f: 36	q: 64.21
+	f: 37	q: 267.93
+	f: 38	q: 134.54
+	f: 40	q: 16.34
+	f: 41	q: 867.29
+	f: 42	q: 1635.22
 
 g:6
 size: 5
-	f: 37	q: 706.35
-	f: 38	q: 463.83
-	f: 39	q: 8.42
-	f: 41	q: 2971.43
-	f: 42	q: 6471.33
+	f: 37	q: 686.75
+	f: 38	q: 443.68
+	f: 39	q: 17.76
+	f: 41	q: 2964.86
+	f: 42	q: 6233.01
 
 g:7
 size: 5
-	f: 37	q: 909.57
-	f: 38	q: 1837.29
-	f: 39	q: 12.47
-	f: 41	q: 3324.11
-	f: 42	q: 20480.86
+	f: 37	q: 803.50
+	f: 38	q: 1821.65
+	f: 39	q: 30.14
+	f: 41	q: 3500.69
+	f: 42	q: 18934.74
 
 g:8
 size: 4
-	f: 37	q: 0.61
-	f: 38	q: 7512.24
-	f: 39	q: 2.98
-	f: 42	q: 42811.66
+	f: 37	q: 1.21
+	f: 38	q: 7040.91
+	f: 39	q: 4.58
+	f: 42	q: 44870.38
 
 g:9
 size: 4
-	f: 37	q: 1.22
-	f: 38	q: 12561.99
-	f: 39	q: 5.97
-	f: 42	q: 34823.03
+	f: 37	q: 2.43
+	f: 38	q: 10937.28
+	f: 39	q: 9.17
+	f: 42	q: 51565.86
 
 g:10
 size: 1
-	f: 42	q: 5.52
+	f: 42	q: 500.06
 
 g:11
 size: 1
-	f: 42	q: 8.68
+	f: 42	q: 889.19
 
 g:12
 size: 1
-	f: 42	q: 2.88
+	f: 42	q: 18.74
 
 g:13
 size: 1
-	f: 42	q: 2.88
+	f: 42	q: 18.74
 
 g:14
 size: 0
@@ -295,8 +295,8 @@ size: 0
 g:42
 size: 0
 
-Actual search time: 30.36s [t=30.96s]
-Search time: 30.36s
-Total time: 30.96s
+Actual search time: 2536.84s [t=2537.26s]
+Search time: 2536.84s
+Total time: 2537.26s
 Search stopped without finding a solution.
 Peak memory: 3728 KB

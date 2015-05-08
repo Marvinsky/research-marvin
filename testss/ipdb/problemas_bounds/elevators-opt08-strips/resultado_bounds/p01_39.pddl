@@ -33,7 +33,7 @@ pattern: [1, 2, 7] - improvement: 37
 pattern: [1, 2, 8] - improvement: 184
 found a better pattern with improvement 184
 pattern: [1, 2, 8]
-Hill climbing time so far: 0.08s
+Hill climbing time so far: 0.06s
 current collection size is 456
 current initial h value: 12
 pattern: [0, 6] - improvement: 29
@@ -41,7 +41,7 @@ pattern: [1, 2, 7] - improvement: 16
 pattern: [0, 1, 2, 8] - improvement: 29
 found a better pattern with improvement 29
 pattern: [0, 6]
-Hill climbing time so far: 0.10s
+Hill climbing time so far: 0.08s
 current collection size is 516
 current initial h value: 12
 pattern: [0, 8] - improvement: 2
@@ -50,7 +50,7 @@ pattern: [0, 1, 2, 8] - improvement: 32
 pattern: [0, 2, 6] - improvement: 935
 found a better pattern with improvement 935
 pattern: [0, 2, 6]
-Hill climbing time so far: 0.14s
+Hill climbing time so far: 0.12s
 current collection size is 816
 current initial h value: 30
 pattern: [0, 7] - improvement: 2
@@ -59,14 +59,14 @@ pattern: [0, 1, 2, 8] - improvement: 45
 pattern: [0, 1, 2, 6] - improvement: 25
 found a better pattern with improvement 45
 pattern: [0, 1, 2, 8]
-Hill climbing time so far: 0.24s
+Hill climbing time so far: 0.16s
 current collection size is 2316
 current initial h value: 30
 pattern: [1, 2, 7] - improvement: 16
 pattern: [0, 1, 2, 6] - improvement: 23
 found a better pattern with improvement 23
 pattern: [0, 1, 2, 6]
-Hill climbing time so far: 0.32s
+Hill climbing time so far: 0.22s
 current collection size is 3816
 current initial h value: 30
 pattern: [0, 7] - improvement: 1
@@ -74,13 +74,13 @@ pattern: [0, 1, 7] - improvement: 1
 pattern: [1, 2, 7] - improvement: 15
 found a better pattern with improvement 15
 pattern: [1, 2, 7]
-Hill climbing time so far: 0.42s
+Hill climbing time so far: 0.28s
 current collection size is 4116
 current initial h value: 30
 pattern: [0, 1, 2, 7] - improvement: 405
 found a better pattern with improvement 405
 pattern: [0, 1, 2, 7]
-Hill climbing time so far: 0.50s
+Hill climbing time so far: 0.34s
 current collection size is 5616
 current initial h value: 30
 Improvement below threshold. Stop hill climbing.
@@ -93,16 +93,16 @@ iPDB: size = 5616
 iPDB: generated = 54
 iPDB: rejected = 0
 iPDB: max_pdb_size = 6000
-iPDB: hill climbing time: 0.62s
-Pattern generation (Haslum et al.) time: 0.62s
+iPDB: hill climbing time: 0.40s
+Pattern generation (Haslum et al.) time: 0.40s
 SSSearch ...
 
-totalPrediction : 4965065.25
-ss_timer: 26.78
-probes: 1000
+totalPrediction : 5120280.73
+ss_timer: 2265.62
+probes: 100000
 threshold : 39.00
-count nodes generates : 73115120.63
-count nodes expanded : 23762.66
+count nodes generates : 75824949.80
+count nodes expanded : 24377.57
 dominio = elevators-opt08-strips
 tarefa = p01_39.pddl
 heuristica = ipdb
@@ -116,63 +116,63 @@ size: 1
 g:1
 size: 5
 	f: 30	q: 1.00
-	f: 35	q: 3.02
-	f: 36	q: 0.96
-	f: 37	q: 4.02
+	f: 35	q: 3.00
+	f: 36	q: 0.99
+	f: 37	q: 4.01
 	f: 39	q: 1.00
 
 g:2
 size: 5
-	f: 31	q: 0.97
-	f: 35	q: 9.04
-	f: 36	q: 1.70
-	f: 37	q: 14.03
+	f: 31	q: 1.02
+	f: 35	q: 9.01
+	f: 36	q: 1.96
+	f: 37	q: 13.98
 	f: 39	q: 2.00
 
 g:3
 size: 6
-	f: 31	q: 1.94
+	f: 31	q: 2.04
 	f: 35	q: 6.02
-	f: 36	q: 10.64
-	f: 37	q: 30.39
-	f: 38	q: 8.27
+	f: 36	q: 11.02
+	f: 37	q: 30.91
+	f: 38	q: 8.32
 	f: 39	q: 1.00
 
 g:4
 size: 3
-	f: 36	q: 50.81
-	f: 37	q: 95.02
-	f: 38	q: 41.61
+	f: 36	q: 53.78
+	f: 37	q: 96.23
+	f: 38	q: 43.41
 
 g:5
 size: 3
-	f: 36	q: 62.01
-	f: 37	q: 276.22
-	f: 38	q: 128.65
+	f: 36	q: 67.33
+	f: 37	q: 280.77
+	f: 38	q: 135.09
 
 g:6
 size: 3
-	f: 37	q: 738.77
-	f: 38	q: 448.82
-	f: 39	q: 13.50
+	f: 37	q: 741.46
+	f: 38	q: 456.50
+	f: 39	q: 14.61
 
 g:7
 size: 3
-	f: 37	q: 914.96
-	f: 38	q: 1864.38
-	f: 39	q: 21.47
+	f: 37	q: 912.61
+	f: 38	q: 1884.18
+	f: 39	q: 23.86
 
 g:8
 size: 3
-	f: 37	q: 0.94
-	f: 38	q: 7280.77
-	f: 39	q: 9.36
+	f: 37	q: 1.14
+	f: 38	q: 7505.10
+	f: 39	q: 4.61
 
 g:9
 size: 3
-	f: 37	q: 1.88
-	f: 38	q: 11697.75
-	f: 39	q: 18.71
+	f: 37	q: 2.27
+	f: 38	q: 12047.12
+	f: 39	q: 9.21
 
 g:10
 size: 0
@@ -264,8 +264,8 @@ size: 0
 g:39
 size: 0
 
-Actual search time: 26.78s [t=27.40s]
-Search time: 26.78s
-Total time: 27.40s
+Actual search time: 2265.62s [t=2266.02s]
+Search time: 2265.62s
+Total time: 2266.02s
 Search stopped without finding a solution.
 Peak memory: 3728 KB

@@ -19,7 +19,7 @@ python3 src/translate/translate.py benchmarks/elevators-opt08-strips/p01-domain.
 
 src/preprocess/preprocess < Astarelevators-opt08-strips_36.sas
 
-src/search/downward-release --is_mov_bound --F_boundary 36 --global_probes 1000 --domain_name elevators-opt08-strips --problem_name p01_36.pddl --heuristic_name ipdb --search "ss(ipdb(max_time=600))" <  Astarelevators-opt08-strips_36 > ${RESULTS}/p01_36.pddl
+src/search/downward-release --is_mov_bound --F_boundary 36 --global_probes 100000 --domain_name elevators-opt08-strips --problem_name p01_36.pddl --heuristic_name ipdb --search "ss(ipdb(max_time=600))" <  Astarelevators-opt08-strips_36 > ${RESULTS}/p01_36.pddl
 
 
 

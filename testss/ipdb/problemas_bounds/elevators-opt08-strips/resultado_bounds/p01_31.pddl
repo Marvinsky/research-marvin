@@ -17,7 +17,7 @@ pattern: [1, 7] - improvement: 991
 pattern: [1, 8] - improvement: 983
 found a better pattern with improvement 991
 pattern: [1, 7]
-Hill climbing time so far: 0.02s
+Hill climbing time so far: 0.00s
 current collection size is 96
 current initial h value: 12
 pattern: [0, 6] - improvement: 21
@@ -25,7 +25,7 @@ pattern: [1, 8] - improvement: 248
 pattern: [1, 2, 7] - improvement: 45
 found a better pattern with improvement 248
 pattern: [1, 8]
-Hill climbing time so far: 0.04s
+Hill climbing time so far: 0.02s
 current collection size is 156
 current initial h value: 12
 pattern: [0, 6] - improvement: 33
@@ -33,7 +33,7 @@ pattern: [1, 2, 7] - improvement: 37
 pattern: [1, 2, 8] - improvement: 184
 found a better pattern with improvement 184
 pattern: [1, 2, 8]
-Hill climbing time so far: 0.06s
+Hill climbing time so far: 0.04s
 current collection size is 456
 current initial h value: 12
 pattern: [0, 6] - improvement: 29
@@ -41,7 +41,7 @@ pattern: [1, 2, 7] - improvement: 16
 pattern: [0, 1, 2, 8] - improvement: 29
 found a better pattern with improvement 29
 pattern: [0, 6]
-Hill climbing time so far: 0.08s
+Hill climbing time so far: 0.06s
 current collection size is 516
 current initial h value: 12
 pattern: [0, 8] - improvement: 2
@@ -80,7 +80,7 @@ current initial h value: 30
 pattern: [0, 1, 2, 7] - improvement: 405
 found a better pattern with improvement 405
 pattern: [0, 1, 2, 7]
-Hill climbing time so far: 0.34s
+Hill climbing time so far: 0.32s
 current collection size is 5616
 current initial h value: 30
 Improvement below threshold. Stop hill climbing.
@@ -93,16 +93,16 @@ iPDB: size = 5616
 iPDB: generated = 54
 iPDB: rejected = 0
 iPDB: max_pdb_size = 6000
-iPDB: hill climbing time: 0.40s
-Pattern generation (Haslum et al.) time: 0.40s
+iPDB: hill climbing time: 0.38s
+Pattern generation (Haslum et al.) time: 0.38s
 SSSearch ...
 
-totalPrediction : 126.99
-ss_timer: 0.56
-probes: 1000
+totalPrediction : 129.63
+ss_timer: 72.66
+probes: 100000
 threshold : 31.00
-count nodes generates : 1641.74
-count nodes expanded : 4.97
+count nodes generates : 1677.31
+count nodes expanded : 5.05
 dominio = elevators-opt08-strips
 tarefa = p01_31.pddl
 heuristica = ipdb
@@ -119,11 +119,11 @@ size: 1
 
 g:2
 size: 1
-	f: 31	q: 0.99
+	f: 31	q: 1.02
 
 g:3
 size: 1
-	f: 31	q: 1.98
+	f: 31	q: 2.03
 
 g:4
 size: 0
@@ -209,8 +209,8 @@ size: 0
 g:31
 size: 0
 
-Actual search time: 0.56s [t=0.96s]
-Search time: 0.56s
-Total time: 0.96s
+Actual search time: 72.66s [t=73.04s]
+Search time: 72.66s
+Total time: 73.04s
 Search stopped without finding a solution.
 Peak memory: 3728 KB
