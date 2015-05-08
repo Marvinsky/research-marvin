@@ -1,6 +1,6 @@
 	/home/marvin/marvin/testss/ipdb/reportss_bounds/elevators-opt08-strips/fdist/p01_36.pddl
-predictionSS: 157.541
-ss_timer: 804.64
+predictionSS: 155.862
+ss_timer: 7.08
 g:0
 size: 1
 	f: 30	q: 1
@@ -13,23 +13,23 @@ size: 3
 
 g:2
 size: 3
-	f: 31	q: 1.02006
-	f: 35	q: 9.00652
-	f: 36	q: 1.94941
+	f: 31	q: 1
+	f: 35	q: 9
+	f: 36	q: 2
 
 g:3
 size: 3
-	f: 31	q: 2.04012
-	f: 35	q: 6.00652
-	f: 36	q: 11.0452
+	f: 31	q: 2
+	f: 35	q: 6
+	f: 36	q: 10.954
 
 g:4
 size: 1
-	f: 36	q: 53.6189
+	f: 36	q: 52.908
 
 g:5
 size: 1
-	f: 36	q: 66.8547
+	f: 36	q: 66
 
 g:6
 size: 0
