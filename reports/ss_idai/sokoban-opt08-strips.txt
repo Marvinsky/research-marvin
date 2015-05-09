@@ -2,14 +2,62 @@
 
 sokoban-opt08-strips
 
+p19.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+25		1			1
+
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+7		2			2
+9		16			16
+11		136			134.088
+13		4.1548e+06			3.8623e+06
+15		170950			3.09739e+09
+
 p05.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-8		9			3.87206e+06
+8		9			3.72349e+06
+
+p22.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+30		13			13
+
+p10.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+8		27			27
+
+p26.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+22		1			1
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1		1			1
+
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+2		3			5
+
+p21.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1		1			1
 
 p03.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		1			1
 
+p24.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+12		31			31.912
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+11		1			1
+
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		1			1
+
 p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-9		17			6292.83
+9		17			6480.37

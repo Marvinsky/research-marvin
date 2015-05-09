@@ -1,1 +1,1 @@
-woodworking-opt11-strips
+sokoban-opt11-strips

@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/sokoban-opt08-strips/fdist/p05_8.pddl
-predictionSS: 3.87206e+06
-ss_timer: 3.26
+predictionSS: 3.72349e+06
+ss_timer: 3.48
 g:0
 size: 1
 	f: 8	q: 1
@@ -22,17 +22,17 @@ size: 1
 
 g:5
 size: 1
-	f: 8	q: 401.728
+	f: 8	q: 404.64
 
 g:6
 size: 1
-	f: 8	q: 2970.62
+	f: 8	q: 2964.4
 
 g:7
 size: 1
-	f: 8	q: 5050.21
+	f: 8	q: 4962.05
 
 g:8
 size: 1
-	f: 8	q: 27711.7
+	f: 8	q: 28172.2
 
