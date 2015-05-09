@@ -4,7 +4,7 @@ woodworking-opt08-strips
 
 p01.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-150		3			0
+150		3			3
 155		7			6.984
 160		169			174.444
 165		545			545.344

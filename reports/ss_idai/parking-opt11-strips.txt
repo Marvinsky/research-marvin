@@ -4,7 +4,7 @@ parking-opt11-strips
 
 pfile03-011.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-8		1			0
+8		1			1
 9		9			9.043
 10		88			88.135
 11		824			819.793
@@ -24,9 +24,6 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 19		9.59479e+07			9.86356e+07
 20		3.14278e+06			1.12371e+09
 
-pfile04-014.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
 pfile04-015.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 13		2			2
@@ -41,7 +38,7 @@ pfile04-013.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 14		1			1
 15		18			18.15
-16		323			0
+16		323			333.164
 17		5183			5348.44
 18		83069			89053.8
 19		1.2925e+06			1.25633e+06

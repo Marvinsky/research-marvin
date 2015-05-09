@@ -8,7 +8,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p01.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-12		3			0
+12		3			3
 13		6			12.036
 
 p04.pddl
