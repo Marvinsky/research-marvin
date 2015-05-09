@@ -1,0 +1,15 @@
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1000 probes
+
+elevators-opt08-strips
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+30		3			2
+35		36			23
+36		300			156.156
+37		5237			2161.16
+38		123115			20750.8
+39		123213			21680.4
+40		123306			21906.8
+41		140470			26792.6
+42		408622			127809
