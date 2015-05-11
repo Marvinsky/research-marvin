@@ -155,7 +155,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			double h_initial, time, bound, exp, gen;
 			string** levels;
 			vector<string> v_time;
-			vector<double> v_bound;
+			vector<long> v_bound;
 			vector<double> v_exp;
 			vector<double> v_gen;
 

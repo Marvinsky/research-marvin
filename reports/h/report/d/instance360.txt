@@ -1,1 +1,1 @@
-sokoban-opt11-strips
+transport-opt08-strips

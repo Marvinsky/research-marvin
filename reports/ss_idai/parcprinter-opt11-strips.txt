@@ -10,11 +10,23 @@ p01.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 367824		1			1
 
+p10.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1170852		1			1
+
 p03.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 426587		1			1
 
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+609395		1			1
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+735648		1			1
+
 p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 412048		11			11
-438047		18			39659.7
+438047		39831			39996.4

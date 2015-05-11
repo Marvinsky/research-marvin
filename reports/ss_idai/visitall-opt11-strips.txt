@@ -2,24 +2,60 @@
 
 visitall-opt11-strips
 
+problem05-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		98441			98353.6
+
+problem06-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+35		1.99953e+07			1.99396e+07
+
+problem04-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+7		2			2
+8		12			11.825
+9		53			53.684
+10		235			231.914
+11		906			877.679
+
 problem04-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-15		16			1225.64
+15		1227			1195.95
 
 problem02-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-3		4			7
+3		7			7
 
 problem02-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		2			2
 
+problem05-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+14		31			31.786
+15		346			349.62
+16		2660			2547.9
+17		15161			14872.5
+18		103281			107215
+
 problem03-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 4		2			2
-5		8			7.983
-6		13			46.553
+5		8			7.995
+6		47			46.716
 
 problem03-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-8		9			61
+8		61			61
+
+problem06-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		2			2
+16		32			31.803
+17		291			290.002
+18		2140			2170.3
+19		13142			13411.8
+20		77089			75654.4
+21		405318			392063
+22		2.1247e+06			2.06841e+06
+23		1.03602e+07			9.66088e+06

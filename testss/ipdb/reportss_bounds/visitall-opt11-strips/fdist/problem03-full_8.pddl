@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/visitall-opt11-strips/fdist/problem03-full_8.pddl
 predictionSS: 61
-ss_timer: 0.08
+ss_timer: 0.06
 g:0
 size: 1
 	f: 8	q: 1
