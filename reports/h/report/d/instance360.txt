@@ -1,1 +1,1 @@
-parking-opt11-strips
+sokoban-opt08-strips
