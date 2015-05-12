@@ -1,1 +1,1 @@
-scanalyzer-opt11-strips
+openstacks-opt11-strips
