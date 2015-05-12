@@ -1,4 +1,5 @@
-blocks
-domain.pddl
+openstacks-opt08-strips
+no_unique_domain
 1
-probBLOCKS-4-0.pddl
+p01-domain.pddl
+p01.pddl

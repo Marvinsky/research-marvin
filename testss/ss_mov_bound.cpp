@@ -23,7 +23,7 @@ string currentDateTime() {
 }
 
 
-void create_final_report(double bound, string pasta, string dominio, string problema, string outname, string fname, string heuristic) {
+void create_final_report(long bound, string pasta, string dominio, string problema, string outname, string fname, string heuristic) {
 	string sas;
 	stringstream number;
 	number<<bound;
@@ -205,7 +205,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
                         			double h_initial, time, bound, exp, gen;
                         			string** levels;
                         			vector<string> v_time;
-                        			vector<double> v_bound;
+                        			vector<long> v_bound;
                         			vector<double> v_exp;
                         			vector<double> v_gen;
 
