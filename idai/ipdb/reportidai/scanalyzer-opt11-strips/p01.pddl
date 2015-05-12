@@ -2,4 +2,4 @@
 h_initial: 12
 	time		bound		exp		gen
 	0.60s		12.00		3		6
-	0.60s		13.00		6		10
+	0.60s		13.00		12		25

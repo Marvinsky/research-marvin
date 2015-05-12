@@ -6,14 +6,6 @@ p19.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 25		1			1
 
-p07.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-7		2			2
-9		16			16
-11		136			134.088
-13		4.1548e+06			3.8623e+06
-15		170950			3.09739e+09
-
 p05.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 8		3.63899e+06			3.61687e+06

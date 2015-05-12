@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/scanalyzer-opt11-strips/fdist/p01_13.pddl
-predictionSS: 12.036
+predictionSS: 11.976
 ss_timer: 0.06
 g:0
 size: 1
@@ -17,15 +17,15 @@ size: 2
 
 g:3
 size: 1
-	f: 13	q: 2.012
+	f: 13	q: 1.992
 
 g:4
 size: 1
-	f: 13	q: 2.012
+	f: 13	q: 1.992
 
 g:5
 size: 1
-	f: 13	q: 2.012
+	f: 13	q: 1.992
 
 g:6
 size: 0

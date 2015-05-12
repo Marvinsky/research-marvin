@@ -1,1 +1,1 @@
-sokoban-opt08-strips
+scanalyzer-opt11-strips
