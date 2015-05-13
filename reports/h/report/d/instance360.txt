@@ -1,1 +1,1 @@
-elevators-opt11-strips
+pegsol-opt11-strips
