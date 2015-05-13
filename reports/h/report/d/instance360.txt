@@ -1,1 +1,1 @@
-openstacks-opt11-strips
+elevators-opt11-strips
