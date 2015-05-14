@@ -1,0 +1,25 @@
+	Experiment 1:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1000 probes
+
+Domain		ida*		ida* time		ss error		ss time
+
+blocks		42663.000000	10
+barman-opt11-strips		-
+elevators-opt08-strips		74347070.000000	2
+elevators-opt11-strips		308256773.000000	2
+floortile-opt11-strips		-
+nomystery-opt11-strips		10534513.000000	6
+openstacks-opt08-adl		-
+openstacks-opt08-strips		1806537.000000	4
+openstacks-opt11-strips		2763237.000000	5
+parcprinter-opt11-strips		39848.000000	7
+parking-opt11-strips		1378724888.000000	4
+pegsol-opt11-strips		12130.000000	10
+scanalyzer-opt11-strips		2166850403.000000	5
+sokoban-opt08-strips		7971481.000000	14
+sokoban-opt11-strips		4325961.000000	10
+tidybot-opt11-strips		805667.000000	2
+transport-opt08-strips		15.000000	1
+transport-opt11-strips		-
+visitall-opt11-strips		33200624.000000	10
+woodworking-opt08-strips		820.000000	3
+woodworking-opt11-strips		23393053.000000	5
