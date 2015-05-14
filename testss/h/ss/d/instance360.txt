@@ -1,4 +1,4 @@
-openstacks-opt08-strips
+elevators-opt08-strips
 no_unique_domain
 1
 p01-domain.pddl
