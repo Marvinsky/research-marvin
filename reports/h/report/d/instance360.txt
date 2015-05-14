@@ -1,4 +1,4 @@
-blocks
+blocks 
 barman-opt11-strips
 elevators-opt08-strips
 elevators-opt11-strips

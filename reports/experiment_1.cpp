@@ -93,7 +93,16 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	ofstream outputFile;
 	outputFile.open(resultFile.c_str(), ios::out);
 	outputFile<<"\tExperiment 1:\t\tida*-bfs-vs-ss-bfs - using "<<heuristic<<" heuristic - 1000 probes\n\n";
-	outputFile<<"Domain\t\tida*\t\tida* time\t\tss error\t\tss time\n\n";
+	
+	outputFile<<left<<setw(20)<<"Domain";
+	outputFile<<right<<setw(15)<<"ida*";
+	outputFile<<right<<setw(15)<<"ida* time";
+	outputFile<<right<<setw(15)<<"ss error";
+	outputFile<<right<<setw(15)<<"ss time";
+	outputFile<<right<<setw(15)<<"n";
+	outputFile<<"\n"<<endl;
+
+	//outputFile<<"Domain\t\t\tida*\t\tida* time\t\tss error\t\tss time\n\n";
 
 	do {
 
@@ -134,7 +143,15 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		}
 
 		if (directory_not_found) {
-			outputFile<<domain<<"\t\t-\n";
+			outputFile<<left<<setw(20)<<domain;
+			outputFile<<right<<setw(15)<<"---";
+			outputFile<<right<<setw(15)<<"---";
+			outputFile<<right<<setw(15)<<"---";
+			outputFile<<right<<setw(15)<<"---";
+			outputFile<<right<<setw(15)<<"---";
+			outputFile<<"\n";
+
+			//outputFile<<domain<<"\t\t------------------------------------------------------------------------\n";
 			countRead = countRead + 1;
 			continue;
 		}
@@ -149,8 +166,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		output = "/home/" + output;	
 	        cout<<"\noutput = "<<output.c_str()<<"\n";	
 
-		vector<double> v_ida_exp;
-		double ida_average = 0, ida_sum_total = 0;
+		double ida_exp_average = 0, ida_sum_total = 0, ida_time_average = 0, ida_time_sum_total = 0, ss_error_average = 0, sum_pi = 0, ss_sum_time = 0, ss_time_average = 0;
 		int number_instances = 0;
 		for (size_t i = 0; i < fileNames2.size(); i++) {
 			string one = fileNames2.at(i);
@@ -190,13 +206,17 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			
 			for (int i = 0; i < total_levels; i++) {
 				v_time.push_back(levels[i][0]);
+				string t = levels[i][0];
+				size_t found = t.find("s");
+				string time_name = t.substr(0, found);
+			        ida_time_sum_total += atof(time_name.c_str());	
 				v_bound.push_back(atof(levels[i][1].c_str()));
 				v_exp.push_back(atof(levels[i][2].c_str()));
 				ida_sum_total += atof(levels[i][2].c_str());
 				v_gen.push_back(atof(levels[i][3].c_str()));
 			}
 			idai.close();
-
+			
 			for (size_t i = 0; i < v_bound.size(); i++) {
 				stringstream number;
 				number<<v_bound.at(i);
@@ -211,16 +231,33 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 				ifstream ssbound(solution.c_str());
 				string str;
-				double ss_exp = 0;
+				double ss_exp = 0, ss_time = 0, pi = 0;
 				ssbound>>str;
 				ssbound>>str;
 				ssbound>>ss_exp;
+				ssbound>>str;
+				ssbound>>ss_time;
 				ssbound.close();
+				pi = abs(ss_exp - v_exp.at(i))/v_exp.at(i);
+				sum_pi += pi;
+				ss_sum_time += ss_time;
 			}
 			number_instances++;
 		}
-		ida_average = ida_sum_total/number_instances;
-		outputFile<<domain<<"\t\t"<< fixed <<ida_sum_total<<"\t"<<number_instances<<"\n";
+		ida_exp_average = ida_sum_total/number_instances;
+		ida_time_average = ida_time_sum_total/number_instances;
+		ss_error_average = sum_pi/number_instances;
+		ss_time_average = ss_sum_time/number_instances;
+
+		outputFile<<left<<setw(20)<<domain;
+		outputFile<<right<<setw(15)<<ida_exp_average;
+		outputFile<<right<<setw(15)<<ida_time_average;
+		outputFile<<right<<setw(15)<<ss_error_average;
+		outputFile<<right<<setw(15)<<ss_time_average;
+		outputFile<<right<<setw(15)<<number_instances;
+		outputFile<<"\n";
+
+		//outputFile<<domain<<"\t\t"<<setw(8)<<ida_exp_average<<"\t\t"<<setw(6)<<ida_time_average<<"\t\t"<<setw(8)<<ss_error_average<<"\t\t"<<number_instances<<"\n";
                 
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
