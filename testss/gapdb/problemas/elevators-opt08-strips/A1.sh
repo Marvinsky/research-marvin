@@ -19,7 +19,7 @@ python3 src/translate/translate.py benchmarks/elevators-opt08-strips/p01-domain.
 
 src/preprocess/preprocess < Astarelevators-opt08-strips1.sas
 
-src/search/downward-release --use_saved_pdbs --global_probes 1000 --domain_name elevators-opt08-strips --problem_name p01.pddl --heuristic_name gapdb --search "ss(gapdb())" <  Astarelevators-opt08-strips1 > ${RESULTS}/p01.pddl
+src/search/downward-release --use_saved_pdbs --global_probes 1000 --domain_name elevators-opt08-strips --problem_name p01.pddl --heuristic_name gapdb --search "ss(min([gapdb(mp=0.5)]))" <  Astarelevators-opt08-strips1 > ${RESULTS}/p01.pddl
 
 
 

@@ -6,8 +6,6 @@
 #include <string>
 
 #include <time.h>
-#include <vector>
-
 
 using std::string;
 using namespace std;
@@ -34,7 +32,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	arquivo += string(".sh");
 	arquivo = "/" + arquivo;
 	arquivo = pasta + arquivo;
-	arquivo = "testss/"+heuristic+"/problemas/" + arquivo;
+	arquivo = "astar/"+heuristic+"/problemas/" + arquivo;
 	arquivo = "marvin/" + arquivo;
 	arquivo = "marvin/"+ arquivo;
 	arquivo = "/home/" + arquivo;
@@ -45,17 +43,17 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	sas += pasta;
 	sas += Resultado.str();
 
-
-	outfile<<"#PBS gapdb_"<<(num_problema+1)<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
+	outfile<<"#PBS -N "<<heuristic<<"_d"<<numDominio<<"_p"<<(num_problema+1)<<"\n\n#PBS -m b\n\n#PBS -M marvin.zarate@ufv.br\n\n#PBS -l nodes=1:ppn=1\n\n#PBS -l pmem=6gb\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
 	//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
+        //PBS -l walltime=200
 
 	cout<<"pasta = "<<pasta.c_str()<<"\n\n";
-	outfile<<"RESULTS=/home/marvin/marvin/testss/"<<heuristic<<"/problemas/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd\n\n";
-	outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<"  "<<problema.c_str()<<"  "<<heuristic<<"\n\n";
+	outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic<<"/problemas/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd\n\n";
+	outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<" "<<problema.c_str()<<"  "<<heuristic<<"\n\n";
 
 	outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
-	
-	outfile<<"src/search/downward-release --use_saved_pdbs --global_probes 1000 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min(["<<heuristic<<"(mp=0.5)]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+
+	outfile<<"src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar(min(["<<heuristic<<"(mp=0.5)]))\" <  "<<sas.c_str()<<" >> ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	
 
 	outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
@@ -87,7 +85,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 void entrada_dados(string &pasta, string &problema, string &dominio, bool &dominio_unico, int &quantidade_problemas) {
 	
-	ifstream file2("h/ss/instance360.txt");
+	ifstream file2("h/astar/instance360.txt");
 	int quantidade_entrada_opt;
 	int total_heuristics;
 	file2>>quantidade_entrada_opt;
@@ -98,7 +96,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 	while (counter < total_heuristics) {
 		file2>>heuristic;
 
-		ifstream file("h/ss/d/instance360.txt");
+		ifstream file("h/astar/d/instance360.txt");
 		cout<<"heuristic = "<<heuristic<<"\n\n";
 		cout<<"quantidade_entrada_opt = "<<quantidade_entrada_opt<<"\n\n";
 		cout<<"total_heuristics = "<<total_heuristics<<"\n\n"; 
@@ -117,13 +115,13 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 				dominio_unico = false;
 			}
 
-			string pastaProblema = "mkdir /home/marvin/marvin/testss/"+heuristic+"/problemas/"+pasta;
-			//string pastaProblema = "mkdir ~/testss/"+heuristic+"/problemas/"+pasta;
+			string pastaProblema = "mkdir /home/marvin/marvin/astar/"+heuristic+"/problemas/"+pasta;
+			//string pastaProblema = "mkdir ~/astar/"+heuristic+"/problemas/"+pasta;
 			printf("Tenta criar a pasta dominio.\n");
 			system(pastaProblema.c_str());
-			string pastaResultado = "mkdir /home/marvin/marvin/testss/"+heuristic+"/problemas/"+pasta+"/resultado";
+			string pastaResultado = "mkdir /home/marvin/marvin/astar/"+heuristic+"/problemas/"+pasta+"/resultado";
 		
-			//string pastaResultado = "mkdir ~/testss/"+heuristic+"/problemas/"+pasta+"/resultado";
+			//string pastaResultado = "mkdir ~/astar/"+heuristic+"/problemas/"+pasta+"/resultado";
 			printf("Tenta criar a pasta resultado.\n");
 			system(pastaResultado.c_str());		
 
