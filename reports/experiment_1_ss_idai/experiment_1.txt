@@ -7,7 +7,7 @@ barman-opt11-strips             ---            ---            ---            ---
 elevators-opt08-strips            ---            ---            ---            ---            ---
 elevators-opt11-strips            ---            ---            ---            ---            ---
 floortile-opt11-strips            ---            ---            ---            ---            ---
-nomystery-opt11-strips            ---            ---            ---            ---            ---
+nomystery-opt11-strips    3.60878e+08        2514.16       0.474518        1.10286             14
 openstacks-opt08-adl            ---            ---            ---            ---            ---
 openstacks-opt08-strips            ---            ---            ---            ---            ---
 openstacks-opt11-strips            ---            ---            ---            ---            ---
