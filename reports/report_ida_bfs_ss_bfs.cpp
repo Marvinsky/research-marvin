@@ -79,9 +79,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	do {
 
 		string domain;
-		std::vector<string> fileNames;
                 std::vector<string> fileNames2;
-                
+                bool directory_not_found = false;
                 string model1;
                 string model2;
 
@@ -126,9 +125,16 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
             		}
             		closedir(dir3);
 		} else {
+			directory_not_found = true;
 	    		cout<<"Error trying to open the directory: "<<output5.c_str()<<endl;
 
 		}
+
+		if (directory_not_found) {
+			countRead = countRead + 1;
+			continue;
+		}
+		
 
 		//Read the files from algorithm1 - ss
 		
