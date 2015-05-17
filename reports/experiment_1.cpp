@@ -92,7 +92,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 	ofstream outputFile;
 	outputFile.open(resultFile.c_str(), ios::out);
-	outputFile<<"\tExperiment 1:\t\tida*-bfs-vs-ss-bfs - using "<<heuristic<<" heuristic - 1000 probes\n\n";
+	outputFile<<"\tExperiment 1:\t\tUsing "<<heuristic<<" heuristic - 1000 probes in 24 hours.\n\n";
 	
 	outputFile<<left<<setw(20)<<"Domain";
 	outputFile<<right<<setw(15)<<"ida*";

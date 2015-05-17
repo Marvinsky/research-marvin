@@ -1,10 +1,10 @@
-	Experiment 1:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1000 probes
+	Experiment 1:		Using ipdb heuristic - 1000 probes in 24 hours.
 
 Domain                         ida*      ida* time       ss error        ss time              n
 
 blocks                          ---            ---            ---            ---            ---
 barman-opt11-strips             ---            ---            ---            ---            ---
-elevators-opt08-strips            ---            ---            ---            ---            ---
+elevators-opt08-strips     9.5651e+07        20223.9        1.58479        861.155              4
 elevators-opt11-strips            ---            ---            ---            ---            ---
 floortile-opt11-strips            ---            ---            ---            ---            ---
 nomystery-opt11-strips    3.60878e+08        2514.16       0.474518        1.10286             14
