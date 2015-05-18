@@ -1,0 +1,4 @@
+	Experiment 1:		ida*-bfs-vs-ss-bfs - using gapdb heuristic - 1000 probes
+
+Domain                         ida*      ida* time       ss error        ss time              n
+

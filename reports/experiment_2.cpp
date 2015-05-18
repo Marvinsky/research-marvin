@@ -65,15 +65,11 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	} else {
 		sufix1 = algorithm1;
 	}
-
-	string sufix2 = "";
-	if (algorithm2.length() > 4) {	
-		sufix2 = algorithm2.substr(4, algorithm2.length());
-	} else {
-		sufix2 = algorithm2;
-	}
+	cout<<"sufix1 = "<<sufix1<<"\n";
+	string sufix2 = algorithm2;
+	
 	cout<<"sufix2 = "<<sufix2<<endl;
-	string model = "experiment_1_"+sufix1 + "_" + sufix2;
+	string model = "experiment_2_"+sufix1 + "_" + sufix2;
 	cout<<"model = "<<model<<endl;
 
 	string  domainReporte = "mkdir /home/marvin/marvin/reports/"+model;
@@ -82,7 +78,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
         }
 
 	string resultFile;
-        resultFile = "/experiment_1.txt";
+        resultFile = "/experiment_2.txt";
         resultFile = model + resultFile;
         resultFile = "reports/" + resultFile;
         resultFile = "marvin/" + resultFile;
@@ -103,7 +99,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	outputFile<<"\n"<<endl;
 
 	//outputFile<<"Domain\t\t\tida*\t\tida* time\t\tss error\t\tss time\n\n";
-
+	/*
 	do {
 
 		string domain;
@@ -261,12 +257,13 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                 
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
-	outputFile.close();     
+	outputFile.close();
+	*/ 
 }
 
 
 void create_report() {
-	ifstream readFile("h/report/instance360.txt");
+	ifstream readFile("h/report/instance360_astar.txt");
 	int quantity_total_opt;
 	int total_algorithms;
 	string algorithm1;
