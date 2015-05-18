@@ -5,7 +5,7 @@ Domain                         ida*      ida* time       ss error        ss time
 blocks                          ---            ---            ---            ---            ---
 barman-opt11-strips             ---            ---            ---            ---            ---
 elevators-opt08-strips     9.5651e+07        20223.9        1.58479        861.155              4
-elevators-opt11-strips            ---            ---            ---            ---            ---
+elevators-opt11-strips    1.54128e+08        36205.9        2.84576        1178.09              2
 floortile-opt11-strips            ---            ---            ---            ---            ---
 nomystery-opt11-strips    3.60878e+08        2514.16       0.474518        1.10286             14
 openstacks-opt08-adl            ---            ---            ---            ---            ---
