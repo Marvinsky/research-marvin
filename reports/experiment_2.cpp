@@ -88,7 +88,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 	ofstream outputFile;
 	outputFile.open(resultFile.c_str(), ios::out);
-	outputFile<<"\tExperiment 1:\t\tida*-bfs-vs-ss-bfs - using "<<heuristic<<" heuristic - 1000 probes\n\n";
+	outputFile<<"\tExperiment 2:\t\t - using "<<heuristic<<" heuristic - 1000 probes\n\n";
 	
 	outputFile<<left<<setw(20)<<"Domain";
 	outputFile<<right<<setw(15)<<"ida*";
@@ -99,7 +99,6 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	outputFile<<"\n"<<endl;
 
 	//outputFile<<"Domain\t\t\tida*\t\tida* time\t\tss error\t\tss time\n\n";
-	/*
 	do {
 
 		string domain;
@@ -112,12 +111,12 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		//Read the fles from algorithm2 - idai
 		string output5;
                 //output5 = "resultado/"+output5;
-                output5 =  domain+"/"+output5;
+                output5 =  domain+"/bc/"+output5;
 		output5 = algorithm2+ "/"+heuristic+"/report"+sufix2+"/"+output5;
 		output5 = "marvin/" + output5;
 		output5 = "marvin/" + output5;
-		output5 = "/home/" + output5;	
-	
+		output5 = "/home/" + output5;
+		cout<<"119: "<<output5.c_str()<<"\n";
         	DIR *dir3;
         	struct dirent *ent3;
         
@@ -151,17 +150,17 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			countRead = countRead + 1;
 			continue;
 		}
-
+		
 		//Read the files from algorithm1 - ss
 		
         	string output;
 		output =  domain+"/fdist/"+output;
-		output = algorithm1+"/"+heuristic+"/report"+sufix1+"_bounds/"+output;
+		output = algorithm1+"/"+heuristic+"/report"+sufix1+"/"+output;
 		output = "marvin/" + output;
 		output = "marvin/" + output;
 		output = "/home/" + output;	
-	        cout<<"\noutput = "<<output.c_str()<<"\n";	
-
+	        cout<<"\n161: output = "<<output.c_str()<<"\n";	
+		/*
 		double ida_exp_average = 0, ida_sum_total = 0, ida_time_average = 0, ida_time_sum_total = 0, ss_error_average = 0, sum_pi = 0, ss_sum_time = 0, ss_time_average = 0;
 		int number_instances = 0;
 		for (size_t i = 0; i < fileNames2.size(); i++) {
@@ -254,11 +253,10 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		outputFile<<"\n";
 
 		//outputFile<<domain<<"\t\t"<<setw(8)<<ida_exp_average<<"\t\t"<<setw(6)<<ida_time_average<<"\t\t"<<setw(8)<<ss_error_average<<"\t\t"<<number_instances<<"\n";
-                
+                */
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
-	outputFile.close();
-	*/ 
+	outputFile.close(); 
 }
 
 

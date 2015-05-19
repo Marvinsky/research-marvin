@@ -40,7 +40,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 39		5057			5117.96
 40		5086			4901.67
 41		6963			6878.28
-42		33975			32742.4
+42		33975			33042.8
 
 p11.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
