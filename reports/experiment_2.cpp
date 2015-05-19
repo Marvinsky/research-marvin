@@ -102,6 +102,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	do {
 
 		string domain;
+		std::vector<string> fileNames;
                 std::vector<string> fileNames2; 
                 string model1;
                 string model2;
@@ -116,7 +117,6 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		output5 = "marvin/" + output5;
 		output5 = "marvin/" + output5;
 		output5 = "/home/" + output5;
-		cout<<"119: "<<output5.c_str()<<"\n";
         	DIR *dir3;
         	struct dirent *ent3;
         
@@ -151,16 +151,145 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			continue;
 		}
 		
+
 		//Read the files from algorithm1 - ss
-		
         	string output;
-		output =  domain+"/fdist/"+output;
+		output =  domain+"/bc/"+output;
 		output = algorithm1+"/"+heuristic+"/report"+sufix1+"/"+output;
 		output = "marvin/" + output;
 		output = "marvin/" + output;
-		output = "/home/" + output;	
-	        cout<<"\n161: output = "<<output.c_str()<<"\n";	
-		/*
+		output = "/home/" + output;
+
+		DIR *dir;
+                struct dirent *ent;
+
+                dir = opendir(output.c_str());
+                if (dir != NULL) {
+                        while ((ent = readdir(dir)) != NULL) {
+                                string fileName = ent->d_name;
+                                int sizeName = fileName.size();
+                                if ((sizeName == 1)  || (sizeName == 2) || (sizeName == 9)) {
+                                        //TODO
+                                } else {
+                                        fileNames.push_back(fileName);
+                                }
+                        }
+                        closedir(dir);
+                } else {
+                        cout<<"Error trying to open the directory: "<<output.c_str()<<endl;
+                }
+
+		cout<<"reading from fileNames.\n";
+		for(size_t i = 0; i< fileNames.size(); i++) {
+			cout<<fileNames.at(i)<<"\n";
+		}
+	
+		for (size_t i = 0; i < fileNames2.size(); i++) {
+			string astarBC = fileNames2.at(i);
+			string output_astarBC = output5 + astarBC;
+			for (size_t j = 0; j < fileNames.size(); j++) {
+				string ssBC = fileNames.at(j);
+				string output_ssBC = output + ssBC;
+				if (astarBC == ssBC) {
+					cout<<"output_astarBC = "<<output_astarBC.c_str()<<"\n";
+					cout<<"output_ssBC = "<<output_ssBC.c_str()<<"\n";
+
+					ifstream infile_astar(output_astarBC.c_str());
+					std::string line;
+					int count_slash = 0, count_line = 0, n_heuristics = 0;
+					bool in_b = false, allow_add = false;
+					vector<char> add_char;
+					while (std::getline(infile_astar, line)) {
+						for (int i = 0; i < line.length(); i++) {
+							char a = line[i];
+							if (allow_add) {
+								if (a != ')') {
+									add_char.push_back(a);
+								} else {
+									allow_add = false;
+								}
+							}
+							if (a == '/') {
+								count_slash++;
+							}
+							
+							if (a == 'b') {
+								in_b = true;
+								continue;
+							}
+							if (in_b) {
+								if (a == 'c') {
+									count_line++;
+									allow_add = true;
+								} else {
+									in_b = false;
+								}
+							}
+						}	
+					}
+					cout<<"count_slash = "<<count_slash<<"\n";
+					cout<<"count_line = "<<count_line<<"\n";
+					if (count_line > 0) {
+						n_heuristics = count_slash/count_line + 1;
+					}
+					cout<<"n_heuristics = "<<n_heuristics<<"\n";
+					infile_astar.close();
+					int h[count_line][n_heuristics];
+					int index_i = 0, index_j = 0;
+					bool first_time_used = false;
+					cout<<"lets:"<<endl;
+					for (size_t i = 0; i < add_char.size(); i++) {
+						char a = add_char.at(i);
+						if (a == '(') {
+							if (first_time_used) {
+								index_i++;
+								index_j = 0;
+							}
+						} else {
+							if (a == '/') {
+
+							} else {
+								stringstream ss, ss2;
+								string s;
+								int n;
+								ss << a;
+								ss >> s;
+								ss2 << s;
+								ss2 >> n;
+								h[index_i][index_j] = n;
+								index_j++;
+								first_time_used = true;
+							}
+						}
+					}
+					cout<<"print h:\n";
+					for (int i = 0; i < count_line; i++) {
+						for (int j = 0;  j < n_heuristics; j++) {
+							cout<<h[i][j];
+						}
+						cout<<"\n";
+					}
+					/*int h[count_line][n_heuristics];
+					
+					ifstream seek_astar(output_astarBC.c_str());
+					std::string line_seek;
+					bool in_b_seek = false;
+					while (std::getline(seek_astar, line_seek)) {
+						for (int i = 0; i < line_seek.length(); i++) {
+							char a = line[i];
+							cout<<"a = "<<a<<"\n";
+							if (a != 'b') {
+								continue;
+							}
+
+							cout<<"line = "<<line_seek.c_str()<<"\n";
+						}	
+					}*/
+				}
+			}
+		}
+
+		/*	
 		double ida_exp_average = 0, ida_sum_total = 0, ida_time_average = 0, ida_time_sum_total = 0, ss_error_average = 0, sum_pi = 0, ss_sum_time = 0, ss_time_average = 0;
 		int number_instances = 0;
 		for (size_t i = 0; i < fileNames2.size(); i++) {
