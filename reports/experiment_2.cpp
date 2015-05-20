@@ -227,6 +227,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							}
 						}	
 					}
+
 					cout<<"count_slash = "<<count_slash<<"\n";
 					cout<<"count_line = "<<count_line<<"\n";
 					if (count_line > 0) {
@@ -269,22 +270,77 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						}
 						cout<<"\n";
 					}
-					/*int h[count_line][n_heuristics];
-					
-					ifstream seek_astar(output_astarBC.c_str());
-					std::string line_seek;
-					bool in_b_seek = false;
-					while (std::getline(seek_astar, line_seek)) {
-						for (int i = 0; i < line_seek.length(); i++) {
-							char a = line[i];
-							cout<<"a = "<<a<<"\n";
-							if (a != 'b') {
-								continue;
-							}
+					//count cc
+					ifstream infile_astar2(output_astarBC.c_str());
+					std::string line2;
+					bool allow_add_cc = false, in_c = false, in_cc = false;
+					vector<char> add_char_cc;
+					int count_cc = 0;
+					while (std::getline(infile_astar2, line2)) {
+						for (int i = 0; i < line2.length(); i++) {
+							char a = line2[i];
+							if (allow_add_cc) {
+                                                                if (a == 'b') {
+									add_char_cc.push_back(',');
+                                                                        allow_add_cc = false;
+                                                                } else {
+                                                                        add_char_cc.push_back(a);
+                                                                        continue;
+                                                                }
+                                                        }
 
-							cout<<"line = "<<line_seek.c_str()<<"\n";
+							//save cc
+                                                        if (a == 'c') {
+								in_cc = true;
+								continue;
+                                                        }
+							if (in_cc) {
+								if (a == '=') {
+									allow_add_cc = true;
+								}
+								in_cc = false;
+							}
 						}	
-					}*/
+					}
+					
+					vector<char> v_add_char;
+					vector<string> v_add_string;
+
+					for (int i = 0; i < add_char_cc.size(); i++) {
+						char a = add_char_cc.at(i);
+						cout<<a;
+					}
+					cout<<"\n=======\n";
+
+					for (int i = 0; i < add_char_cc.size(); i++) {
+						char a = add_char_cc.at(i);
+						if (a == ',') {
+							std::string str(v_add_char.begin(), v_add_char.end());
+							cout<<"str = "<<str<<"\n\n";
+							v_add_string.push_back(str);
+							v_add_char.clear();
+						} else {
+							v_add_char.push_back(a);
+						}
+					}
+					if (v_add_char.size() > 0) {
+						std::string str(v_add_char.begin(), v_add_char.end());
+						cout<<"str = "<<str<<"\n\n";
+						v_add_string.push_back(str);
+						v_add_char.clear();
+					}
+					cout<<"count_line = "<<count_line<<"\n";
+					cout<<"v_add_string.size() = "<<v_add_string.size()<<"\n";
+					double cc[count_line][1];
+					for (int i = 0; i < v_add_string.size(); i++) {
+						cout<<v_add_string.at(i)<<", ";
+						cc[i][0] = atof(v_add_string.at(i).c_str());
+					}
+					cout<<"\nlet me see.\n";
+					for (int i = 0; i < count_line; i++) {
+						cout<<cc[i][0]<<"\n";
+					}
+					cout<<"\n";		
 				}
 			}
 		}
