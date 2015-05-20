@@ -1,0 +1,3 @@
+Experiment 2:                using gapdb    1000 probes              n
+
+elevators-opt11-strips

@@ -51,8 +51,172 @@ int getTotalLevels(string interText) {
 	return total_niveles;
 }
 
+map<string, double> analyzeFile(string output_BC) {
+	ifstream infile_astar(output_BC.c_str());
+	std::string line;
+	int count_slash = 0, count_line = 0, n_heuristics = 0;
+	bool in_b = false, allow_add = false;
+	vector<char> add_char;
+	while (std::getline(infile_astar, line)) {
+		for (int i = 0; i < line.length(); i++) {
+			char a = line[i];
+			if (allow_add) {
+				if (a != ')') {
+					add_char.push_back(a);
+				} else {
+					allow_add = false;
+				}
+			}
+			if (a == '/') {
+				count_slash++;
+			}
+							
+			if (a == 'b') {
+				in_b = true;
+				continue;
+			}
+			if (in_b) {
+				if (a == 'c') {
+					count_line++;
+					allow_add = true;
+				} else {
+					in_b = false;
+				}
+			}
+		}	
+	}
 
+	cout<<"count_slash = "<<count_slash<<"\n";
+	cout<<"count_line = "<<count_line<<"\n";
+	if (count_line > 0) {
+		n_heuristics = count_slash/count_line + 1;
+	}
+	cout<<"n_heuristics = "<<n_heuristics<<"\n";
+	infile_astar.close();
+	int h[count_line][n_heuristics];
+	int index_i = 0, index_j = 0;
+	bool first_time_used = false;
+	cout<<"lets:"<<endl;
+	for (size_t i = 0; i < add_char.size(); i++) {
+		char a = add_char.at(i);
+		if (a == '(') {
+			if (first_time_used) {
+				index_i++;
+				index_j = 0;
+			}
+		} else {
+			if (a == '/') {
 
+			} else {
+				stringstream ss, ss2;
+				string s;
+				int n;
+				ss << a;
+				ss >> s;
+				ss2 << s;
+				ss2 >> n;
+				h[index_i][index_j] = n;
+				index_j++;
+				first_time_used = true;
+			}
+		}
+	}
+	cout<<"print h:\n";
+	for (int i = 0; i < count_line; i++) {
+		for (int j = 0;  j < n_heuristics; j++) {
+			cout<<h[i][j];
+		}
+		cout<<"\n";
+	}
+	//count cc
+	ifstream infile_astar2(output_BC.c_str());
+	std::string line2;
+	bool allow_add_cc = false, in_c = false, in_cc = false;
+	vector<char> add_char_cc;
+	int count_cc = 0;
+	while (std::getline(infile_astar2, line2)) {
+		for (int i = 0; i < line2.length(); i++) {
+			char a = line2[i];
+			if (allow_add_cc) {
+                        	if (a == 'b') {
+					add_char_cc.push_back(',');
+                                        allow_add_cc = false;
+                                } else {
+                                        add_char_cc.push_back(a);
+                                        continue;
+                                }
+                        }
+
+			//save cc
+                        if (a == 'c') {
+				in_cc = true;
+				continue;
+                        }
+			if (in_cc) {
+				if (a == '=') {
+					allow_add_cc = true;
+				}
+				in_cc = false;
+			}
+		}	
+	}
+					
+	vector<char> v_add_char;
+	vector<string> v_add_string;
+
+	for (int i = 0; i < add_char_cc.size(); i++) {
+		char a = add_char_cc.at(i);
+		cout<<a;
+	}
+	cout<<"\n=======\n";
+
+	for (int i = 0; i < add_char_cc.size(); i++) {
+		char a = add_char_cc.at(i);
+		if (a == ',') {
+			std::string str(v_add_char.begin(), v_add_char.end());
+			cout<<"str = "<<str<<"\n\n";
+			v_add_string.push_back(str);
+			v_add_char.clear();
+		} else {
+			v_add_char.push_back(a);
+		}
+	}
+	if (v_add_char.size() > 0) {
+		std::string str(v_add_char.begin(), v_add_char.end());
+		cout<<"str = "<<str<<"\n\n";
+		v_add_string.push_back(str);
+		v_add_char.clear();
+	}
+	cout<<"count_line = "<<count_line<<"\n";
+	cout<<"v_add_string.size() = "<<v_add_string.size()<<"\n";
+	double cc[count_line][1];
+	for (int i = 0; i < v_add_string.size(); i++) {
+		cout<<v_add_string.at(i)<<", ";
+		cc[i][0] = atof(v_add_string.at(i).c_str());
+	}
+	cout<<"\nlet me see.\n";
+	for (int i = 0; i < count_line; i++) {
+		cout<<cc[i][0]<<"\n";
+	}
+	cout<<"\n";
+
+					
+	map<string, double> m;
+	for (int j = 0; j < n_heuristics; j++) {
+		double sum_ones = 0;
+		stringstream number;
+		number<<j+1;
+		string name = "gapdb_"+number.str();
+		for (int i = 0; i < count_line; i++) {
+			if (h[i][j] == 1) {
+				sum_ones += cc[i][0];
+			}
+		}
+		m.insert(pair<string, double>(name, sum_ones));	
+	}
+
+	return m;
+}
 
 void create_report1(string heuristic, string algorithm1, string algorithm2, int countProblems) {
 
@@ -77,26 +241,6 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
            cout<<"Directory "<<domainReporte.c_str()<<" created."<<endl;
         }
 
-	string resultFile;
-        resultFile = "/experiment_2.txt";
-        resultFile = model + resultFile;
-        resultFile = "reports/" + resultFile;
-        resultFile = "marvin/" + resultFile;
-        resultFile = "marvin/" + resultFile;
-        resultFile = "/home/"+ resultFile;
-        cout<<"resultFile = "<<resultFile<<endl;
-
-	ofstream outputFile;
-	outputFile.open(resultFile.c_str(), ios::out);
-	outputFile<<"\tExperiment 2:\t\t - using "<<heuristic<<" heuristic - 1000 probes\n\n";
-	
-	outputFile<<left<<setw(20)<<"Domain";
-	outputFile<<right<<setw(15)<<"ida*";
-	outputFile<<right<<setw(15)<<"ida* time";
-	outputFile<<right<<setw(15)<<"ss error";
-	outputFile<<right<<setw(15)<<"ss time";
-	outputFile<<right<<setw(15)<<"n";
-	outputFile<<"\n"<<endl;
 
 	//outputFile<<"Domain\t\t\tida*\t\tida* time\t\tss error\t\tss time\n\n";
 	do {
@@ -108,7 +252,25 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                 string model2;
 		bool directory_not_found = false;
 		readFile>>domain;
-                
+
+		string resultFile;
+        	resultFile = "/" + domain + ".txt";
+        	resultFile = model + resultFile;
+        	resultFile = "reports/" + resultFile;
+        	resultFile = "marvin/" + resultFile;
+        	resultFile = "marvin/" + resultFile;
+        	resultFile = "/home/"+ resultFile;
+        	cout<<"resultFile = "<<resultFile<<endl;
+
+		ofstream outputFile;
+		outputFile.open(resultFile.c_str(), ios::out);
+
+		outputFile<<left<<setw(20)<<"Experiment 2:";
+		outputFile<<right<<setw(15)<<"using "<<heuristic;
+		outputFile<<right<<setw(15)<<"1000 probes";
+		outputFile<<right<<setw(15)<<"n";
+		outputFile<<"\n"<<endl;
+
 		//Read the fles from algorithm2 - idai
 		string output5;
                 //output5 = "resultado/"+output5;
@@ -139,14 +301,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 		if (directory_not_found) {
 			outputFile<<left<<setw(20)<<domain;
-			outputFile<<right<<setw(15)<<"---";
-			outputFile<<right<<setw(15)<<"---";
-			outputFile<<right<<setw(15)<<"---";
-			outputFile<<right<<setw(15)<<"---";
-			outputFile<<right<<setw(15)<<"---";
 			outputFile<<"\n";
-
-			//outputFile<<domain<<"\t\t------------------------------------------------------------------------\n";
 			countRead = countRead + 1;
 			continue;
 		}
@@ -193,255 +348,20 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				if (astarBC == ssBC) {
 					cout<<"output_astarBC = "<<output_astarBC.c_str()<<"\n";
 					cout<<"output_ssBC = "<<output_ssBC.c_str()<<"\n";
-
-					ifstream infile_astar(output_astarBC.c_str());
-					std::string line;
-					int count_slash = 0, count_line = 0, n_heuristics = 0;
-					bool in_b = false, allow_add = false;
-					vector<char> add_char;
-					while (std::getline(infile_astar, line)) {
-						for (int i = 0; i < line.length(); i++) {
-							char a = line[i];
-							if (allow_add) {
-								if (a != ')') {
-									add_char.push_back(a);
-								} else {
-									allow_add = false;
-								}
-							}
-							if (a == '/') {
-								count_slash++;
-							}
-							
-							if (a == 'b') {
-								in_b = true;
-								continue;
-							}
-							if (in_b) {
-								if (a == 'c') {
-									count_line++;
-									allow_add = true;
-								} else {
-									in_b = false;
-								}
-							}
-						}	
+					map<string, double> m = analyzeFile(output_astarBC);
+					outputFile<<"A*:\t\t{";
+					for (map<string, double>::iterator it = m.begin(); it != m.end(); ++it)	{
+						string s = it->first;
+						double d = it->second;
+						outputFile<<"("<<s<<", "<<d<<") ";
 					}
-
-					cout<<"count_slash = "<<count_slash<<"\n";
-					cout<<"count_line = "<<count_line<<"\n";
-					if (count_line > 0) {
-						n_heuristics = count_slash/count_line + 1;
-					}
-					cout<<"n_heuristics = "<<n_heuristics<<"\n";
-					infile_astar.close();
-					int h[count_line][n_heuristics];
-					int index_i = 0, index_j = 0;
-					bool first_time_used = false;
-					cout<<"lets:"<<endl;
-					for (size_t i = 0; i < add_char.size(); i++) {
-						char a = add_char.at(i);
-						if (a == '(') {
-							if (first_time_used) {
-								index_i++;
-								index_j = 0;
-							}
-						} else {
-							if (a == '/') {
-
-							} else {
-								stringstream ss, ss2;
-								string s;
-								int n;
-								ss << a;
-								ss >> s;
-								ss2 << s;
-								ss2 >> n;
-								h[index_i][index_j] = n;
-								index_j++;
-								first_time_used = true;
-							}
-						}
-					}
-					cout<<"print h:\n";
-					for (int i = 0; i < count_line; i++) {
-						for (int j = 0;  j < n_heuristics; j++) {
-							cout<<h[i][j];
-						}
-						cout<<"\n";
-					}
-					//count cc
-					ifstream infile_astar2(output_astarBC.c_str());
-					std::string line2;
-					bool allow_add_cc = false, in_c = false, in_cc = false;
-					vector<char> add_char_cc;
-					int count_cc = 0;
-					while (std::getline(infile_astar2, line2)) {
-						for (int i = 0; i < line2.length(); i++) {
-							char a = line2[i];
-							if (allow_add_cc) {
-                                                                if (a == 'b') {
-									add_char_cc.push_back(',');
-                                                                        allow_add_cc = false;
-                                                                } else {
-                                                                        add_char_cc.push_back(a);
-                                                                        continue;
-                                                                }
-                                                        }
-
-							//save cc
-                                                        if (a == 'c') {
-								in_cc = true;
-								continue;
-                                                        }
-							if (in_cc) {
-								if (a == '=') {
-									allow_add_cc = true;
-								}
-								in_cc = false;
-							}
-						}	
-					}
-					
-					vector<char> v_add_char;
-					vector<string> v_add_string;
-
-					for (int i = 0; i < add_char_cc.size(); i++) {
-						char a = add_char_cc.at(i);
-						cout<<a;
-					}
-					cout<<"\n=======\n";
-
-					for (int i = 0; i < add_char_cc.size(); i++) {
-						char a = add_char_cc.at(i);
-						if (a == ',') {
-							std::string str(v_add_char.begin(), v_add_char.end());
-							cout<<"str = "<<str<<"\n\n";
-							v_add_string.push_back(str);
-							v_add_char.clear();
-						} else {
-							v_add_char.push_back(a);
-						}
-					}
-					if (v_add_char.size() > 0) {
-						std::string str(v_add_char.begin(), v_add_char.end());
-						cout<<"str = "<<str<<"\n\n";
-						v_add_string.push_back(str);
-						v_add_char.clear();
-					}
-					cout<<"count_line = "<<count_line<<"\n";
-					cout<<"v_add_string.size() = "<<v_add_string.size()<<"\n";
-					double cc[count_line][1];
-					for (int i = 0; i < v_add_string.size(); i++) {
-						cout<<v_add_string.at(i)<<", ";
-						cc[i][0] = atof(v_add_string.at(i).c_str());
-					}
-					cout<<"\nlet me see.\n";
-					for (int i = 0; i < count_line; i++) {
-						cout<<cc[i][0]<<"\n";
-					}
-					cout<<"\n";		
+					outputFile<<"}\n";
 				}
 			}
 		}
-
-		/*	
-		double ida_exp_average = 0, ida_sum_total = 0, ida_time_average = 0, ida_time_sum_total = 0, ss_error_average = 0, sum_pi = 0, ss_sum_time = 0, ss_time_average = 0;
-		int number_instances = 0;
-		for (size_t i = 0; i < fileNames2.size(); i++) {
-			string one = fileNames2.at(i);
-			string idabounds = output5.c_str() + one;
-			cout<<"idabounds = "<<idabounds.c_str()<<"\n";
-
-			string str;
-			double h_initial, time, bound, exp, gen;
-			string** levels;
-			vector<string> v_time;
-			vector<long> v_bound;
-			vector<double> v_exp;
-			vector<double> v_gen;
-
-        		ifstream idai(idabounds.c_str());
-			idai>>str;
-			idai>>str;
-			idai>>h_initial;
-			idai>>str;
-			idai>>str;
-			idai>>str;
-			idai>>str;
-			cout<<"str = "<<str<<"\n";
-			int total_levels = getTotalLevels(idabounds.c_str());
-			cout<<"total_levels = "<<total_levels<<"\n";
-			
-			levels = new string*[total_levels];
-			for (int i = 0; i < total_levels; i++) {
-				levels[i] = new string[4];
-			}
-
-			for (int i = 0; i < total_levels; i++) {
-				for (int j = 0; j < 4; j++) {
-					idai>>levels[i][j];
-				}
-			}
-			
-			for (int i = 0; i < total_levels; i++) {
-				v_time.push_back(levels[i][0]);
-				string t = levels[i][0];
-				size_t found = t.find("s");
-				string time_name = t.substr(0, found);
-			        ida_time_sum_total += atof(time_name.c_str());	
-				v_bound.push_back(atof(levels[i][1].c_str()));
-				v_exp.push_back(atof(levels[i][2].c_str()));
-				ida_sum_total += atof(levels[i][2].c_str());
-				v_gen.push_back(atof(levels[i][3].c_str()));
-			}
-			idai.close();
-			
-			for (size_t i = 0; i < v_bound.size(); i++) {
-				stringstream number;
-				number<<v_bound.at(i);
-				//index one: p01.pddl
-				string t = one;
-				size_t found = t.find(".");
-				string problem_name_mod = t.substr(0, found);
-				string fname = problem_name_mod;
-				fname += "_" + number.str();
-				fname += string(".pddl");
-				string solution = output.c_str() + fname;
-
-				ifstream ssbound(solution.c_str());
-				string str;
-				double ss_exp = 0, ss_time = 0, pi = 0;
-				ssbound>>str;
-				ssbound>>str;
-				ssbound>>ss_exp;
-				ssbound>>str;
-				ssbound>>ss_time;
-				ssbound.close();
-				pi = abs(ss_exp - v_exp.at(i))/v_exp.at(i);
-				sum_pi += pi;
-				ss_sum_time += ss_time;
-			}
-			number_instances++;
-		}
-		ida_exp_average = ida_sum_total/number_instances;
-		ida_time_average = ida_time_sum_total/number_instances;
-		ss_error_average = sum_pi/number_instances;
-		ss_time_average = ss_sum_time/number_instances;
-
-		outputFile<<left<<setw(20)<<domain;
-		outputFile<<right<<setw(15)<<ida_exp_average;
-		outputFile<<right<<setw(15)<<ida_time_average;
-		outputFile<<right<<setw(15)<<ss_error_average;
-		outputFile<<right<<setw(15)<<ss_time_average;
-		outputFile<<right<<setw(15)<<number_instances;
-		outputFile<<"\n";
-
-		//outputFile<<domain<<"\t\t"<<setw(8)<<ida_exp_average<<"\t\t"<<setw(6)<<ida_time_average<<"\t\t"<<setw(8)<<ss_error_average<<"\t\t"<<number_instances<<"\n";
-                */
+		outputFile.close();
 	    	countRead = countRead + 1;
-	} while (countRead < countProblems);
-	outputFile.close(); 
+	} while (countRead < countProblems); 
 }
 
 
