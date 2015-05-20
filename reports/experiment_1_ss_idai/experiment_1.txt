@@ -14,7 +14,7 @@ openstacks-opt11-strips    4.16623e+06          35539        0.44249        1678
 parcprinter-opt11-strips            ---            ---            ---            ---            ---
 parking-opt11-strips    3.06957e+08        7448.66        0.13508         20.748              5
 pegsol-opt11-strips         54945.3        1181.48       0.326574         39.435             20
-scanalyzer-opt11-strips            ---            ---            ---            ---            ---
+scanalyzer-opt11-strips    1.07152e+09        8163.32       0.342058        8.32571              7
 sokoban-opt08-strips            ---            ---            ---            ---            ---
 sokoban-opt11-strips            ---            ---            ---            ---            ---
 tidybot-opt11-strips    1.13122e+06          355.4      0.0955455        84.1267              3
