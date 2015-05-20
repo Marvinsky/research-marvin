@@ -1,3 +1,4 @@
-Experiment 2:                using gapdb    1000 probes              n
+Experiment 2:       parking-opt11-strips         using           gapdbwith 1000 probes              
+
 
 parking-opt11-strips

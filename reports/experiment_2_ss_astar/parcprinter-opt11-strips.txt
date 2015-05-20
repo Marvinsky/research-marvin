@@ -1,3 +1,4 @@
-Experiment 2:                using gapdb    1000 probes              n
+Experiment 2:       parcprinter-opt11-strips         using           gapdbwith 1000 probes              
+
 
 parcprinter-opt11-strips

@@ -14,13 +14,18 @@
 #include <vector>
 
 #include <map>
+#include <algorithm>
+
 
 using namespace std;
 
-
-void create_final_report(double bound, string solution) {
-	
-}
+template <typename T1, typename T2>
+struct less_second {
+    typedef pair<T1, T2> type;
+    bool operator ()(type const& a, type const& b) const {
+        return a.second < b.second;
+    }
+};
 
 int getTotalLevels(string interText) {
         ifstream inter2;
@@ -51,7 +56,7 @@ int getTotalLevels(string interText) {
 	return total_niveles;
 }
 
-map<string, double> analyzeFile(string output_BC) {
+vector<pair<string, double> >  analyzeFile(string output_BC) {
 	ifstream infile_astar(output_BC.c_str());
 	std::string line;
 	int count_slash = 0, count_line = 0, n_heuristics = 0;
@@ -215,7 +220,11 @@ map<string, double> analyzeFile(string output_BC) {
 		m.insert(pair<string, double>(name, sum_ones));	
 	}
 
-	return m;
+	vector<pair<string, double> > mapcopy(m.begin(), m.end());
+	sort(mapcopy.begin(), mapcopy.end(), less_second<string, double>());
+	cout<<"mapcopy.size() = "<<mapcopy.size()<<"\n";
+	
+	return mapcopy;
 }
 
 void create_report1(string heuristic, string algorithm1, string algorithm2, int countProblems) {
@@ -241,8 +250,6 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
            cout<<"Directory "<<domainReporte.c_str()<<" created."<<endl;
         }
 
-
-	//outputFile<<"Domain\t\t\tida*\t\tida* time\t\tss error\t\tss time\n\n";
 	do {
 
 		string domain;
@@ -266,9 +273,11 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		outputFile.open(resultFile.c_str(), ios::out);
 
 		outputFile<<left<<setw(20)<<"Experiment 2:";
-		outputFile<<right<<setw(15)<<"using "<<heuristic;
-		outputFile<<right<<setw(15)<<"1000 probes";
-		outputFile<<right<<setw(15)<<"n";
+		outputFile<<right<<setw(15)<<domain;
+		outputFile<<right<<setw(15)<<"using ";
+		outputFile<<right<<setw(15)<<heuristic;
+		outputFile<<right<<setw(15)<<"with 1000 probes";
+		outputFile<<right<<setw(15)<<"\n";
 		outputFile<<"\n"<<endl;
 
 		//Read the fles from algorithm2 - idai
@@ -348,12 +357,30 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				if (astarBC == ssBC) {
 					cout<<"output_astarBC = "<<output_astarBC.c_str()<<"\n";
 					cout<<"output_ssBC = "<<output_ssBC.c_str()<<"\n";
-					map<string, double> m = analyzeFile(output_astarBC);
+					vector<pair<string, double> > m = analyzeFile(output_astarBC);
 					outputFile<<"A*:\t\t{";
-					for (map<string, double>::iterator it = m.begin(); it != m.end(); ++it)	{
-						string s = it->first;
-						double d = it->second;
-						outputFile<<"("<<s<<", "<<d<<") ";
+
+					typedef std::vector<std::pair<std::string, double> > vector_type;
+					for (vector_type::const_iterator pos = m.begin();
+     						pos != m.end(); ++pos)
+					{
+   						string s = pos->first;
+						double d = pos->second;
+						std::cout << s << " " << d << std::endl;
+						outputFile<<"("<<s<<", "<<d<<"),";
+					}
+					outputFile<<"}\n";
+					vector<pair<string, double> > m2 = analyzeFile(output_ssBC);
+					outputFile<<"ss:\t\t{";
+
+					typedef std::vector<std::pair<std::string, double> > vector_type2;
+					for (vector_type2::const_iterator pos2 = m2.begin();
+     						pos2 != m2.end(); ++pos2)
+					{
+   						string s = pos2->first;
+						double d = pos2->second;
+						std::cout << s << " " << d << std::endl;
+						outputFile<<"("<<s<<", "<<d<<"),";
 					}
 					outputFile<<"}\n";
 				}
