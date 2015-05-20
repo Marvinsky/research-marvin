@@ -2,7 +2,7 @@
 
 Domain                         ida*      ida* time       ss error        ss time              n
 
-blocks                          ---            ---            ---            ---            ---
+blocks                  2.09693e+09        10018.2       0.742198        1.36583             24
 barman-opt11-strips             ---            ---            ---            ---            ---
 elevators-opt08-strips     9.5651e+07        20223.9        1.58258         858.46              4
 elevators-opt11-strips    1.54128e+08        36205.9        2.84576        1178.09              2
