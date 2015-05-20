@@ -1,5 +1,6 @@
-Experiment 2:       elevators-opt08-strips         using           gapdbwith 1000 probes              
+Experiment 2: elevators-opt08-strips using gapdb heuristic with 1000 probes
 
+p01_F_42.csv
 
-A*:		{(gapdb_2, 0),(gapdb_4, 1134.4),(gapdb_1, 3097.66),(gapdb_5, 3209.2),(gapdb_6, 3209.2),(gapdb_3, 4242.4),}
-ss:		{(gapdb_4, 1.6882e+06),(gapdb_1, 8.11063e+07),(gapdb_2, 8.11063e+07),(gapdb_3, 8.11063e+07),(gapdb_5, 1.41066e+09),(gapdb_6, 1.41066e+09),}
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_4, gapdb_1, gapdb_2, gapdb_3, gapdb_5, gapdb_6, }

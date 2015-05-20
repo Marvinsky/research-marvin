@@ -271,15 +271,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 		ofstream outputFile;
 		outputFile.open(resultFile.c_str(), ios::out);
-
-		outputFile<<left<<setw(20)<<"Experiment 2:";
-		outputFile<<right<<setw(15)<<domain;
-		outputFile<<right<<setw(15)<<"using ";
-		outputFile<<right<<setw(15)<<heuristic;
-		outputFile<<right<<setw(15)<<"with 1000 probes";
-		outputFile<<right<<setw(15)<<"\n";
-		outputFile<<"\n"<<endl;
-
+		outputFile<<"Experiment 2: "<<domain<<" using "<<heuristic<<" heuristic with 1000 probes\n\n";
 		//Read the fles from algorithm2 - idai
 		string output5;
                 //output5 = "resultado/"+output5;
@@ -357,6 +349,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				if (astarBC == ssBC) {
 					cout<<"output_astarBC = "<<output_astarBC.c_str()<<"\n";
 					cout<<"output_ssBC = "<<output_ssBC.c_str()<<"\n";
+					outputFile<<astarBC<<"\n\n";
 					vector<pair<string, double> > m = analyzeFile(output_astarBC);
 					outputFile<<"A*:\t\t{";
 
@@ -367,7 +360,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
    						string s = pos->first;
 						double d = pos->second;
 						std::cout << s << " " << d << std::endl;
-						outputFile<<"("<<s<<", "<<d<<"),";
+						outputFile<<s<<", ";
+						//outputFile<<"("<<s<<", "<<d<<"),";
 					}
 					outputFile<<"}\n";
 					vector<pair<string, double> > m2 = analyzeFile(output_ssBC);
@@ -380,7 +374,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
    						string s = pos2->first;
 						double d = pos2->second;
 						std::cout << s << " " << d << std::endl;
-						outputFile<<"("<<s<<", "<<d<<"),";
+						outputFile<<s<<", ";
+						//outputFile<<"("<<s<<", "<<d<<"),";
 					}
 					outputFile<<"}\n";
 				}

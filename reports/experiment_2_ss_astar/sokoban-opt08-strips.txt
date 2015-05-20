@@ -1,4 +1,3 @@
-Experiment 2:       sokoban-opt08-strips         using           gapdbwith 1000 probes              
-
+Experiment 2: sokoban-opt08-strips using gapdb heuristic with 1000 probes
 
 sokoban-opt08-strips

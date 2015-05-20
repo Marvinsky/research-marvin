@@ -1,4 +1,3 @@
-Experiment 2:       visitall-opt11-strips         using           gapdbwith 1000 probes              
-
+Experiment 2: visitall-opt11-strips using gapdb heuristic with 1000 probes
 
 visitall-opt11-strips

@@ -1,4 +1,3 @@
-Experiment 2:       openstacks-opt08-strips         using           gapdbwith 1000 probes              
-
+Experiment 2: openstacks-opt08-strips using gapdb heuristic with 1000 probes
 
 openstacks-opt08-strips
