@@ -2,7 +2,7 @@ Experiment 2: elevators-opt08-strips using gapdb heuristic with 1000 probes
 
 p01_F_42.csv
 
-A*:		{gapdb_2, gapdb_4, gapdb_5, gapdb_3, gapdb_1, gapdb_6, }
-ss:		{gapdb_4, gapdb_1, gapdb_2, gapdb_3, gapdb_5, gapdb_6, }
-error= 4
+A*:		{gapdb_1, gapdb_2, gapdb_4, gapdb_3, gapdb_5, gapdb_6, }
+ss:		{gapdb_5, gapdb_1, gapdb_2, gapdb_4, gapdb_3, gapdb_6, }
+error= 5
 

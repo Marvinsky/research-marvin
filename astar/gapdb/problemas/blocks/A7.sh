@@ -1,10 +1,8 @@
-#PBS -N gapdb_d1_p7
+#PBS -N _p7
 
-#PBS -m b
+#PBS -m a
 
 #PBS -M marvin.zarate@ufv.br
-
-#PBS -l nodes=1:ppn=1
 
 #PBS -l pmem=6gb
 
@@ -23,7 +21,7 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < Astarblocks7.sas
 
-src/search/downward-release --use_saved_pdbs --domain_name blocks --problem_name probBLOCKS-6-0.pddl --heuristic_name gapdb --search "astar(min([gapdb(mp=0.5), automate_GAs]))" <  Astarblocks7 >> ${RESULTS}/probBLOCKS-6-0.pddl
+src/search/downward-release --F_boundary 12 --use_saved_pdbs --domain_name blocks --problem_name probBLOCKS-6-0.pddl --heuristic_name gapdb --search "astar(min([gapdb(mp=0.5), automate_GAs]))" <  Astarblocks7 > ${RESULTS}/probBLOCKS-6-0.pddl
 
 
 

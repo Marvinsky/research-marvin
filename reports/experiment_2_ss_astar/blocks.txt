@@ -1,3 +1,62 @@
 Experiment 2: blocks using gapdb heuristic with 1000 probes
 
-blocks              
+probBLOCKS-4-0_F_6.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+error= 0
+
+probBLOCKS-4-1_F_10.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+error= 0
+
+probBLOCKS-5-0_F_12.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+error= 0
+
+probBLOCKS-5-1_F_10.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+error= 0
+
+probBLOCKS-7-0_F_20.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+error= 0
+
+probBLOCKS-6-0_F_12.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+error= 0
+
+probBLOCKS-6-2_F_20.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+error= 0
+
+probBLOCKS-4-2_F_6.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+error= 0
+
+probBLOCKS-6-1_F_10.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+error= 0
+
+probBLOCKS-5-2_F_16.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+error= 0
+
