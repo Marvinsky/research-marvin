@@ -22,6 +22,34 @@ string currentDateTime() {
 	return buf;
 }
 
+int getTotalLevels(string interText) {
+        ifstream inter2;
+        inter2.open(interText.c_str());
+        int total_niveles = 0;
+
+        if (!inter2) {
+           return -1;
+        } else {
+           string trash;
+
+           int count_data = 0;
+
+           inter2>>trash;
+           inter2>>trash;
+           inter2>>trash;
+           inter2>>trash;
+           inter2>>trash;
+           inter2>>trash;
+
+           while (inter2>>trash) {
+              //cout<<trash<<endl;
+              count_data++;
+           }
+           inter2.close();
+           total_niveles = (int)count_data/4;
+        }
+        return total_niveles;
+}
 
 void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic, int numDominio) {
 	string arquivo;
@@ -45,6 +73,59 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	sas += pasta;
 	sas += Resultado.str();
 
+	//Calling idai in order to get the max_bound to use
+
+	//Read the fles from idai
+        string idabounds = problema;
+        idabounds =  pasta+"/"+idabounds;
+        idabounds = "idai/ipdb/reportidai/"+idabounds;
+        idabounds = "marvin/" + idabounds;
+        idabounds = "marvin/" + idabounds;
+        idabounds = "/home/" + idabounds;
+	cout<<"idabounds = "<<idabounds<<"\n";
+	string str;
+        double h_initial, F_boundary;
+        string** levels;
+        vector<string> v_time;
+        vector<long> v_bound;
+        vector<double> v_exp;
+        vector<double> v_gen;
+
+	ifstream idai(idabounds.c_str());
+        idai>>str;
+        idai>>str;
+        idai>>h_initial;
+        idai>>str;
+        idai>>str;
+        idai>>str;
+        idai>>str;
+        cout<<"str = "<<str<<"\n";
+        int total_levels = getTotalLevels(idabounds.c_str());
+        cout<<"total_levels = "<<total_levels<<"\n";
+
+        levels = new string*[total_levels];
+        for (int i = 0; i < total_levels; i++) {
+            levels[i] = new string[4];
+        }
+
+        for (int i = 0; i < total_levels; i++) {
+            for (int j = 0; j < 4; j++) {
+                idai>>levels[i][j];
+            }
+        }
+
+        for (int i = 0; i < total_levels; i++) {
+            v_time.push_back(levels[i][0]);
+            v_bound.push_back(atof(levels[i][1].c_str()));
+            v_exp.push_back(atof(levels[i][2].c_str()));
+            v_gen.push_back(atof(levels[i][3].c_str()));
+        }
+	
+	F_boundary = v_bound.at(v_bound.size() - 1);
+	cout<<"F_boundary = "<<F_boundary<<"\n";
+        idai.close();
+
+	//end calling idai in order to get the max_bound to use
 
 	outfile<<"#PBS gapdb_"<<(num_problema+1)<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
 	//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
@@ -54,9 +135,12 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<"  "<<problema.c_str()<<"  "<<heuristic<<"\n\n";
 
 	outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
-	
-	outfile<<"src/search/downward-release --use_saved_pdbs --global_probes 1000 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min(["<<heuristic<<"(mp=0.5)]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-	
+
+	if (F_boundary) {	
+		outfile<<"src/search/downward-release --F_boundary "<<F_boundary<<" --use_saved_pdbs --global_probes 1000 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min(["<<heuristic<<"(mp=0.5), automate_GAs]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	} else {
+		outfile<<"src/search/downward-release --use_saved_pdbs --global_probes 1000 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min(["<<heuristic<<"(mp=0.5), automate_GAs]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	}
 
 	outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
 	outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
