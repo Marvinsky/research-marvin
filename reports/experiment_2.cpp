@@ -349,6 +349,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				if (astarBC == ssBC) {
 					cout<<"output_astarBC = "<<output_astarBC.c_str()<<"\n";
 					cout<<"output_ssBC = "<<output_ssBC.c_str()<<"\n";
+					vector<string> collector_astar, collector_ss;
 					outputFile<<astarBC<<"\n\n";
 					vector<pair<string, double> > m = analyzeFile(output_astarBC);
 					outputFile<<"A*:\t\t{";
@@ -361,6 +362,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						double d = pos->second;
 						std::cout << s << " " << d << std::endl;
 						outputFile<<s<<", ";
+						collector_astar.push_back(s);
 						//outputFile<<"("<<s<<", "<<d<<"),";
 					}
 					outputFile<<"}\n";
@@ -375,9 +377,20 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						double d = pos2->second;
 						std::cout << s << " " << d << std::endl;
 						outputFile<<s<<", ";
+						collector_ss.push_back(s);
 						//outputFile<<"("<<s<<", "<<d<<"),";
 					}
 					outputFile<<"}\n";
+					int count_error = 0;
+					if (collector_astar.size() == collector_ss.size()) {
+						for (size_t p = 0; p < collector_astar.size(); p++) {
+							string a_astar = collector_astar.at(p), a_ss = collector_ss.at(p);
+							if (a_astar != a_ss) {
+								count_error++;	
+							}
+						}
+						outputFile<<"error= "<<count_error<<"\n\n";
+					}
 				}
 			}
 		}
