@@ -361,9 +361,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
    						string s = pos->first;
 						double d = pos->second;
 						std::cout << s << " " << d << std::endl;
-						outputFile<<s<<", ";
+						//outputFile<<s<<", ";
 						collector_astar.push_back(s);
-						//outputFile<<"("<<s<<", "<<d<<"),";
+						outputFile<<"("<<s<<", "<<d<<"),";
 					}
 					outputFile<<"}\n";
 					vector<pair<string, double> > m2 = analyzeFile(output_ssBC);
@@ -376,9 +376,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
    						string s = pos2->first;
 						double d = pos2->second;
 						std::cout << s << " " << d << std::endl;
-						outputFile<<s<<", ";
+						//outputFile<<s<<", ";
 						collector_ss.push_back(s);
-						//outputFile<<"("<<s<<", "<<d<<"),";
+						outputFile<<"("<<s<<", "<<d<<"),";
 					}
 					outputFile<<"}\n";
 					int count_error = 0;
