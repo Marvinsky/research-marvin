@@ -91,17 +91,17 @@ vector<pair<string, double> >  analyzeFile(string output_BC) {
 		}	
 	}
 
-	cout<<"count_slash = "<<count_slash<<"\n";
-	cout<<"count_line = "<<count_line<<"\n";
+	//cout<<"count_slash = "<<count_slash<<"\n";
+	//cout<<"count_line = "<<count_line<<"\n";
 	if (count_line > 0) {
 		n_heuristics = count_slash/count_line + 1;
 	}
-	cout<<"n_heuristics = "<<n_heuristics<<"\n";
+	//cout<<"n_heuristics = "<<n_heuristics<<"\n";
 	infile_astar.close();
 	int h[count_line][n_heuristics];
 	int index_i = 0, index_j = 0;
 	bool first_time_used = false;
-	cout<<"lets:"<<endl;
+	//cout<<"lets:"<<endl;
 	for (size_t i = 0; i < add_char.size(); i++) {
 		char a = add_char.at(i);
 		if (a == '(') {
@@ -126,13 +126,13 @@ vector<pair<string, double> >  analyzeFile(string output_BC) {
 			}
 		}
 	}
-	cout<<"print h:\n";
-	for (int i = 0; i < count_line; i++) {
+	//cout<<"print h:\n";
+	/*for (int i = 0; i < count_line; i++) {
 		for (int j = 0;  j < n_heuristics; j++) {
 			cout<<h[i][j];
 		}
 		cout<<"\n";
-	}
+	}*/
 	//count cc
 	ifstream infile_astar2(output_BC.c_str());
 	std::string line2;
@@ -169,17 +169,17 @@ vector<pair<string, double> >  analyzeFile(string output_BC) {
 	vector<char> v_add_char;
 	vector<string> v_add_string;
 
-	for (int i = 0; i < add_char_cc.size(); i++) {
+	/*for (int i = 0; i < add_char_cc.size(); i++) {
 		char a = add_char_cc.at(i);
 		cout<<a;
 	}
 	cout<<"\n=======\n";
-
+	*/
 	for (int i = 0; i < add_char_cc.size(); i++) {
 		char a = add_char_cc.at(i);
 		if (a == ',') {
 			std::string str(v_add_char.begin(), v_add_char.end());
-			cout<<"str = "<<str<<"\n\n";
+			//cout<<"str = "<<str<<"\n\n";
 			v_add_string.push_back(str);
 			v_add_char.clear();
 		} else {
@@ -188,23 +188,23 @@ vector<pair<string, double> >  analyzeFile(string output_BC) {
 	}
 	if (v_add_char.size() > 0) {
 		std::string str(v_add_char.begin(), v_add_char.end());
-		cout<<"str = "<<str<<"\n\n";
+		//cout<<"str = "<<str<<"\n\n";
 		v_add_string.push_back(str);
 		v_add_char.clear();
 	}
-	cout<<"count_line = "<<count_line<<"\n";
-	cout<<"v_add_string.size() = "<<v_add_string.size()<<"\n";
+	//cout<<"count_line = "<<count_line<<"\n";
+	//cout<<"v_add_string.size() = "<<v_add_string.size()<<"\n";
 	double cc[count_line][1];
 	for (int i = 0; i < v_add_string.size(); i++) {
-		cout<<v_add_string.at(i)<<", ";
+		//cout<<v_add_string.at(i)<<", ";
 		cc[i][0] = atof(v_add_string.at(i).c_str());
 	}
-	cout<<"\nlet me see.\n";
-	for (int i = 0; i < count_line; i++) {
+	//cout<<"\nlet me see.\n";
+	/*for (int i = 0; i < count_line; i++) {
 		cout<<cc[i][0]<<"\n";
 	}
 	cout<<"\n";
-
+	*/
 					
 	map<string, double> m;
 	for (int j = 0; j < n_heuristics; j++) {
@@ -222,7 +222,7 @@ vector<pair<string, double> >  analyzeFile(string output_BC) {
 
 	vector<pair<string, double> > mapcopy(m.begin(), m.end());
 	sort(mapcopy.begin(), mapcopy.end(), less_second<string, double>());
-	cout<<"mapcopy.size() = "<<mapcopy.size()<<"\n";
+	//cout<<"mapcopy.size() = "<<mapcopy.size()<<"\n";
 	
 	return mapcopy;
 }
@@ -238,12 +238,12 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	} else {
 		sufix1 = algorithm1;
 	}
-	cout<<"sufix1 = "<<sufix1<<"\n";
+	//cout<<"sufix1 = "<<sufix1<<"\n";
 	string sufix2 = algorithm2;
 	
-	cout<<"sufix2 = "<<sufix2<<endl;
+	//cout<<"sufix2 = "<<sufix2<<endl;
 	string model = "experiment_2_"+sufix1 + "_" + sufix2;
-	cout<<"model = "<<model<<endl;
+	//cout<<"model = "<<model<<endl;
 
 	string  domainReporte = "mkdir /home/marvin/marvin/reports/"+model;
 	if (!system(domainReporte.c_str())) {
@@ -267,7 +267,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
         	resultFile = "marvin/" + resultFile;
         	resultFile = "marvin/" + resultFile;
         	resultFile = "/home/"+ resultFile;
-        	cout<<"resultFile = "<<resultFile<<endl;
+        	cout<<"\nresultFile = "<<resultFile<<"\n";
 
 		ofstream outputFile;
 		outputFile.open(resultFile.c_str(), ios::out);
@@ -333,12 +333,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                         closedir(dir);
                 } else {
                         cout<<"Error trying to open the directory: "<<output.c_str()<<endl;
-                }
-
-		cout<<"reading from fileNames.\n";
-		for(size_t i = 0; i< fileNames.size(); i++) {
-			cout<<fileNames.at(i)<<"\n";
-		}
+                }	
 	
 		for (size_t i = 0; i < fileNames2.size(); i++) {
 			string astarBC = fileNames2.at(i);
@@ -347,9 +342,10 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				string ssBC = fileNames.at(j);
 				string output_ssBC = output + ssBC;
 				if (astarBC == ssBC) {
-					cout<<"output_astarBC = "<<output_astarBC.c_str()<<"\n";
-					cout<<"output_ssBC = "<<output_ssBC.c_str()<<"\n";
+					//cout<<"output_astarBC = "<<output_astarBC.c_str()<<"\n";
+					//cout<<"output_ssBC = "<<output_ssBC.c_str()<<"\n";
 					vector<string> collector_astar, collector_ss;
+					map<double, vector<string> > map_astar, map_ss;
 					outputFile<<astarBC<<"\n\n";
 					vector<pair<string, double> > m = analyzeFile(output_astarBC);
 					outputFile<<"A*:\t\t{";
@@ -360,12 +356,48 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					{
    						string s = pos->first;
 						double d = pos->second;
-						std::cout << s << " " << d << std::endl;
+						std::cout <<"s = "<< s << ", d = " << d << std::endl;
 						//outputFile<<s<<", ";
 						collector_astar.push_back(s);
 						outputFile<<"("<<s<<", "<<d<<"),";
+						
+						typedef std::vector<std::pair<std::string, double> > vector_type_inner;	
+						vector<string> ga_name;
+						for (vector_type_inner::const_iterator pinner = m.begin();
+						pinner != m.end(); ++pinner)
+						{
+							string sinner = pinner->first;
+							double dinner = pinner->second;
+							cout<<"\tsinner = "<<sinner<<", dinner = "<<dinner<<"\n";
+							if (d == dinner) {
+								ga_name.push_back(sinner);
+							}
+						}
+						map<double, vector<string> >::iterator itmap = map_astar.find(d);
+						if (itmap != map_astar.end()) {
+
+						} else {
+							map_astar.insert(pair<double, vector<string> >(d, ga_name));
+						}
+
 					}
 					outputFile<<"}\n";
+
+					map<double, vector<string> >::iterator itmap2;
+					cout<<"count the equal doubles.\n";
+					for (itmap2 = map_astar.begin(); itmap2 != map_astar.end(); ++itmap2) {
+						double d = itmap2->first;
+						vector<string> s = itmap2->second;
+						cout<<"\t\td = "<<d<<", s = ";
+						for (size_t i = 0; i < s.size(); i++) {
+							cout<<s.at(i);
+							if (i != s.size() -1) {
+								cout<<"/";
+							}
+						}
+						cout<<"\n";
+					}
+
 					vector<pair<string, double> > m2 = analyzeFile(output_ssBC);
 					outputFile<<"ss:\t\t{";
 
@@ -375,12 +407,49 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					{
    						string s = pos2->first;
 						double d = pos2->second;
-						std::cout << s << " " << d << std::endl;
+						//std::cout << s << " " << d << std::endl;
 						//outputFile<<s<<", ";
 						collector_ss.push_back(s);
 						outputFile<<"("<<s<<", "<<d<<"),";
+
+
+						typedef std::vector<std::pair<std::string, double> > vector_type_inner2;	
+						vector<string> ga_name2;
+						for (vector_type_inner2::const_iterator pinner = m2.begin();
+						pinner != m2.end(); ++pinner)
+						{
+							string sinner = pinner->first;
+							double dinner = pinner->second;
+							cout<<"\tsinner = "<<sinner<<", dinner = "<<dinner<<"\n";
+							if (d == dinner) {
+								ga_name2.push_back(sinner);
+							}
+						}
+						map<double, vector<string> >::iterator itmap3 = map_ss.find(d);
+						if (itmap3 != map_ss.end()) {
+
+						} else {
+							map_ss.insert(pair<double, vector<string> >(d, ga_name2));
+						}
 					}
 					outputFile<<"}\n";
+
+					map<double, vector<string> >::iterator itmap4;
+					cout<<"count the equal doubles2.\n";
+					for (itmap4 = map_ss.begin(); itmap4 != map_ss.end(); ++itmap4) {
+						double d = itmap4->first;
+						vector<string> s = itmap4->second;
+						cout<<"\t\td = "<<d<<", s = ";
+						for (size_t i = 0; i < s.size(); i++) {
+							cout<<s.at(i);
+							if (i != s.size() -1) {
+								cout<<"/";
+							}
+						}
+						cout<<"\n";
+					}
+
+
 					int count_error = 0;
 					if (collector_astar.size() == collector_ss.size()) {
 						for (size_t p = 0; p < collector_astar.size(); p++) {
