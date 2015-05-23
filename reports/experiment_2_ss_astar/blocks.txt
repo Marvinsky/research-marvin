@@ -2,61 +2,61 @@ Experiment 2: blocks using gapdb heuristic with 1000 probes
 
 probBLOCKS-4-0_F_6.csv
 
-A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-error= 0
+A*:		{gapdb_2, gapdb_1, gapdb_6, gapdb_5, gapdb_4, gapdb_3, }
+ss:		{gapdb_1, gapdb_2, gapdb_5, gapdb_6, gapdb_3, gapdb_4, }
+error= 6
 
 probBLOCKS-4-1_F_10.csv
 
-A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-error= 0
+A*:		{gapdb_2, gapdb_1, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_1, gapdb_4, gapdb_5, gapdb_6, gapdb_3, gapdb_2, }
+error= 6
 
 probBLOCKS-5-0_F_12.csv
 
 A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-error= 0
+ss:		{gapdb_2, gapdb_6, gapdb_4, gapdb_5, gapdb_1, gapdb_3, }
+error= 6
 
 probBLOCKS-5-1_F_10.csv
 
-A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-error= 0
+A*:		{gapdb_1, gapdb_3, gapdb_6, gapdb_2, gapdb_4, gapdb_5, }
+ss:		{gapdb_4, gapdb_6, gapdb_5, gapdb_1, gapdb_2, gapdb_3, }
+error= 6
 
 probBLOCKS-7-0_F_20.csv
 
 A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-error= 0
+ss:		{gapdb_1, gapdb_6, gapdb_2, gapdb_5, gapdb_4, gapdb_3, }
+error= 5
 
 probBLOCKS-6-0_F_12.csv
 
 A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-error= 0
+ss:		{gapdb_2, gapdb_5, gapdb_6, gapdb_1, gapdb_3, gapdb_4, }
+error= 6
 
 probBLOCKS-6-2_F_20.csv
 
 A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-error= 0
+ss:		{gapdb_4, gapdb_6, gapdb_3, gapdb_5, gapdb_1, gapdb_2, }
+error= 5
 
 probBLOCKS-4-2_F_6.csv
 
-A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+A*:		{gapdb_1, gapdb_3, gapdb_5, gapdb_4, gapdb_6, gapdb_2, }
 ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-error= 0
+error= 4
 
 probBLOCKS-6-1_F_10.csv
 
-A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-error= 0
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_6, gapdb_4, gapdb_5, }
+ss:		{gapdb_1, gapdb_6, gapdb_3, gapdb_4, gapdb_2, gapdb_5, }
+error= 3
 
 probBLOCKS-5-2_F_16.csv
 
 A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
-error= 0
+ss:		{gapdb_1, gapdb_6, gapdb_4, gapdb_3, gapdb_2, gapdb_5, }
+error= 5
 

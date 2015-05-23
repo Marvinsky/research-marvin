@@ -1,3 +1,44 @@
 Experiment 2: scanalyzer-opt11-strips using gapdb heuristic with 1000 probes
 
-scanalyzer-opt11-strips
+p01_F_13.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_5, gapdb_6, gapdb_4, }
+ss:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_6, gapdb_5, }
+error= 2
+
+p14_F_30.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_6, gapdb_3, gapdb_5, gapdb_4, gapdb_2, gapdb_1, }
+error= 5
+
+p11_F_26.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_3, gapdb_4, gapdb_6, gapdb_5, gapdb_1, gapdb_2, }
+error= 6
+
+p13_F_34.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_3, gapdb_4, gapdb_6, gapdb_1, gapdb_5, gapdb_2, }
+error= 5
+
+p03_F_26.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_4, gapdb_1, gapdb_5, gapdb_6, gapdb_2, gapdb_3, }
+error= 6
+
+p02_F_22.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_6, gapdb_3, gapdb_1, gapdb_2, gapdb_4, gapdb_5, }
+error= 6
+
+p04_F_24.csv
+
+A*:		{gapdb_1, gapdb_2, gapdb_3, gapdb_4, gapdb_5, gapdb_6, }
+ss:		{gapdb_6, gapdb_4, gapdb_1, gapdb_3, gapdb_5, gapdb_2, }
+error= 5
+

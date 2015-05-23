@@ -1,7 +1,7 @@
-h(,0):,No Name
-h(,1):,No Name
-h(,2):,No Name
-h(,3):,No Name
-h(,4):,No Name
-h(,5):,No Name
-bc(1/1/1/1/1/1)cc=1097.53
+h(,0):,heur is GAPDB,mutation_rate:1.0000000,size=20000,with disjoint patterns
+h(,1):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
+h(,2):,heur is GAPDB,mutation_rate:0.4000000,size=20000,without disjoint patterns
+h(,3):,heur is GAPDB,mutation_rate:0.6000000,size=20000,with disjoint patterns
+h(,4):,heur is GAPDB,mutation_rate:0.8000000,size=20000,without disjoint patterns
+h(,5):,heur is GAPDB,mutation_rate:0.2000000,size=20000,without disjoint patterns
+bc(1/1/1/1/1/1)cc=15.004

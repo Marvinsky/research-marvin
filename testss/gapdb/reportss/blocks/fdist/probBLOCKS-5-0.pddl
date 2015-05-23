@@ -1,54 +1,70 @@
 	/home/marvin/marvin/testss/gapdb/reportss/blocks/fdist/probBLOCKS-5-0.pddl
-predictionSS: 81480.2
-ss_timer: 0.12
+predictionSS: 752.721
+ss_timer: 0.16
 g:0
 size: 1
-	f: 1	q: 1
+	f: 6	q: 1
 
 g:1
-size: 1
-	f: 2	q: 2
+size: 2
+	f: 6	q: 1
+	f: 8	q: 1
 
 g:2
-size: 1
-	f: 3	q: 5.01
+size: 3
+	f: 6	q: 1
+	f: 8	q: 3
+	f: 10	q: 1
 
 g:3
-size: 1
-	f: 4	q: 10.142
+size: 3
+	f: 8	q: 4
+	f: 10	q: 4.99
+	f: 12	q: 1
 
 g:4
-size: 1
-	f: 5	q: 28.564
+size: 4
+	f: 8	q: 4
+	f: 10	q: 14.976
+	f: 11	q: 0.987
+	f: 12	q: 6.99
 
 g:5
-size: 1
-	f: 6	q: 66.38
+size: 3
+	f: 10	q: 19.972
+	f: 11	q: 2.93
+	f: 12	q: 30.88
 
 g:6
-size: 1
-	f: 7	q: 206.132
+size: 2
+	f: 10	q: 20.872
+	f: 12	q: 93.031
 
 g:7
-size: 1
-	f: 8	q: 533.614
+size: 2
+	f: 10	q: 2.078
+	f: 12	q: 128.256
 
 g:8
-size: 1
-	f: 9	q: 1786.89
+size: 2
+	f: 10	q: 2.078
+	f: 12	q: 146.038
 
 g:9
-size: 1
-	f: 10	q: 5040.1
+size: 2
+	f: 10	q: 2.078
+	f: 12	q: 57.991
 
 g:10
-size: 1
-	f: 11	q: 18118.9
+size: 2
+	f: 10	q: 2.078
+	f: 12	q: 63.728
 
 g:11
 size: 1
-	f: 12	q: 55681.5
+	f: 12	q: 67.884
 
 g:12
-size: 0
+size: 1
+	f: 12	q: 67.884
 
