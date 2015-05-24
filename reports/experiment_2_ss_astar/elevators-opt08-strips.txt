@@ -12,6 +12,5 @@ ss:		{(gapdb_5, 1.72978e+06),(gapdb_1, 6.51085e+07),(gapdb_2, 6.51085e+07),(gapd
 	a_1:		{gapdb_5}
 	a_2:		{gapdb_1/gapdb_2/gapdb_4}
 	a_3:		{gapdb_3/gapdb_6}
-
-error= 2
-
+error maximo = 5
+error minimo = 2

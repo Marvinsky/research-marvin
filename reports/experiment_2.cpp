@@ -473,7 +473,21 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						final_map_ss.insert(pair<string, vector<string> >(name, s));
 						cout<<"\n";
 					}
-						
+
+
+					//Measure of error maximo
+					int count_error = 0;
+					if (collector_astar.size() == collector_ss.size()) {
+						for (size_t p = 0; p < collector_astar.size(); p++) {
+							string a_astar = collector_astar.at(p), a_ss = collector_ss.at(p);
+							if (a_astar != a_ss) {
+								count_error++;	
+							}
+						}
+						outputFile<<"error maximo = "<<count_error<<"\n";
+					}					
+
+					//Measure of error minimo
 					int count_error_final = 0, count_good_final = 0;
 					for(map<string, vector<string> >::iterator fiter1 = final_map_astar.begin();
 						fiter1 != final_map_astar.end(); fiter1++) {
@@ -510,18 +524,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						max = map2_size;
 					}
 					count_error_final = max - count_good_final;
-					outputFile<<"\nerror= "<<count_error_final<<"\n\n";
+					outputFile<<"error minimo = "<<count_error_final<<"\n";
 					cout<<"\t\tlooks like the error is "<<count_error_final<<"\n";
-					/*int count_error = 0;
-					if (collector_astar.size() == collector_ss.size()) {
-						for (size_t p = 0; p < collector_astar.size(); p++) {
-							string a_astar = collector_astar.at(p), a_ss = collector_ss.at(p);
-							if (a_astar != a_ss) {
-								count_error++;	
-							}
-						}
-						outputFile<<"error= "<<count_error<<"\n\n";
-					}*/
+					
 				}
 			}
 		}
