@@ -21,5 +21,5 @@ tidybot-opt11-strips    1.13122e+06          355.4      0.0955455        84.1267
 transport-opt08-strips             15           0.12              0           0.04              1
 transport-opt11-strips            ---            ---            ---            ---            ---
 visitall-opt11-strips    7.60463e+06        31.6927      0.0745269           0.84             11
-woodworking-opt08-strips            ---            ---            ---            ---            ---
+woodworking-opt08-strips    9.37402e+07        6484.69      0.0924333        27.8425              8
 woodworking-opt11-strips    2.49863e+08        16954.9       0.247914          59.68              3
