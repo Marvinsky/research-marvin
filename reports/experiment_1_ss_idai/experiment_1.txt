@@ -16,10 +16,10 @@ parking-opt11-strips    3.06957e+08        7448.66        0.13508         20.748
 pegsol-opt11-strips         54945.3        1181.48       0.326574         39.435             20
 scanalyzer-opt11-strips    1.07152e+09        8163.32       0.342058        8.32571              7
 sokoban-opt08-strips         280429        9.52462     0.00357773        3.65385             13
-sokoban-opt11-strips            ---            ---            ---            ---            ---
+sokoban-opt11-strips         404338        13.4578     0.00236228        4.86889              9
 tidybot-opt11-strips    1.13122e+06          355.4      0.0955455        84.1267              3
 transport-opt08-strips             15           0.12              0           0.04              1
 transport-opt11-strips            ---            ---            ---            ---            ---
 visitall-opt11-strips    7.60463e+06        31.6927      0.0745269           0.84             11
 woodworking-opt08-strips            ---            ---            ---            ---            ---
-woodworking-opt11-strips            ---            ---            ---            ---            ---
+woodworking-opt11-strips    2.49863e+08        16954.9       0.247914          59.68              3
