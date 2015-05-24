@@ -347,6 +347,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					vector<string> collector_astar, collector_ss;
 					map<double, vector<string> > map_astar, map_ss;
 					outputFile<<astarBC<<"\n\n";
+					//_________________CALLING A* _____________
 					vector<pair<string, double> > m = analyzeFile(output_astarBC);
 					outputFile<<"A*:\t\t{";
 
@@ -368,7 +369,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						{
 							string sinner = pinner->first;
 							double dinner = pinner->second;
-							cout<<"\tsinner = "<<sinner<<", dinner = "<<dinner<<"\n";
+							//cout<<"\tsinner = "<<sinner<<", dinner = "<<dinner<<"\n";
 							if (d == dinner) {
 								ga_name.push_back(sinner);
 							}
@@ -383,7 +384,10 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					}
 					outputFile<<"}\n";
 
+					//astar-------------------------------------
+					map<string, vector<string> > final_map_astar;
 					map<double, vector<string> >::iterator itmap2;
+					int astar_count = 0;
 					cout<<"count the equal doubles.\n";
 					for (itmap2 = map_astar.begin(); itmap2 != map_astar.end(); ++itmap2) {
 						double d = itmap2->first;
@@ -395,9 +399,15 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								cout<<"/";
 							}
 						}
+						stringstream number;
+						number<<astar_count++;
+						string name = "a_"+number.str();
+						cout<<"name1 = "<<name<<"\n";
+						final_map_astar.insert(pair<string, vector<string> >(name, s));
 						cout<<"\n";
 					}
 
+					//CALLING SS _____________________________________________
 					vector<pair<string, double> > m2 = analyzeFile(output_ssBC);
 					outputFile<<"ss:\t\t{";
 
@@ -407,12 +417,10 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					{
    						string s = pos2->first;
 						double d = pos2->second;
-						//std::cout << s << " " << d << std::endl;
+						std::cout <<"s = "<< s << ", d = " << d << std::endl;
 						//outputFile<<s<<", ";
 						collector_ss.push_back(s);
 						outputFile<<"("<<s<<", "<<d<<"),";
-
-
 						typedef std::vector<std::pair<std::string, double> > vector_type_inner2;	
 						vector<string> ga_name2;
 						for (vector_type_inner2::const_iterator pinner = m2.begin();
@@ -420,7 +428,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						{
 							string sinner = pinner->first;
 							double dinner = pinner->second;
-							cout<<"\tsinner = "<<sinner<<", dinner = "<<dinner<<"\n";
+							//cout<<"\tsinner = "<<sinner<<", dinner = "<<dinner<<"\n";
 							if (d == dinner) {
 								ga_name2.push_back(sinner);
 							}
@@ -434,6 +442,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					}
 					outputFile<<"}\n";
 
+					//ss ------------------------------------
+					map<string, vector<string> > final_map_ss;
+					int ss_count = 0;
 					map<double, vector<string> >::iterator itmap4;
 					cout<<"count the equal doubles2.\n";
 					for (itmap4 = map_ss.begin(); itmap4 != map_ss.end(); ++itmap4) {
@@ -446,11 +457,53 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								cout<<"/";
 							}
 						}
+						stringstream number;
+						number<<ss_count++;
+						string name = "a_"+number.str();
+						cout<<"\t\tname2 = "<<name<<"\n";
+						final_map_ss.insert(pair<string, vector<string> >(name, s));
 						cout<<"\n";
 					}
-
-
-					int count_error = 0;
+						
+					int count_error_final = 0, count_good_final = 0;
+					for(map<string, vector<string> >::iterator fiter1 = final_map_astar.begin();
+						fiter1 != final_map_astar.end(); fiter1++) {
+						string name1 = fiter1->first;
+						vector<string> v1 = fiter1->second;
+						cout<<"name1 = "<<name1<<"\n";
+						for (map<string, vector<string> >::iterator fiter2 = final_map_ss.begin();
+							fiter2 != final_map_ss.end(); fiter2++) {
+							string name2 = fiter2->first;
+							vector<string> v2 = fiter2->second;
+							int count_availables = 0;
+							cout<<"\tname2 = "<<name2<<"\n";	
+							if (name1 == name2) {
+								cout<<"\t\tname1 == name2 == "<<name1<<"\n";
+								for (size_t t1 = 0; t1 < v1.size(); t1++) {
+									string s1 = v1.at(t1);
+									for (size_t t2 = 0; t2 < v2.size(); t2++) {
+										string s2 = v2.at(t2);
+										if (s1 == s2) {
+											cout<<"\t\t\ts1 == s2 == "<<s1<<"\n";
+											count_availables++;
+										}
+									}
+								}
+							} 
+							if (count_availables > 0) {
+								count_good_final++;
+							}
+						}
+					}
+					size_t map1_size = final_map_astar.size(), map2_size = final_map_ss.size();
+					int max = map1_size;
+					if (map2_size > max) {
+						max = map2_size;
+					}
+					count_error_final = max - count_good_final;
+					outputFile<<"error= "<<count_error_final<<"\n\n";
+					cout<<"\t\tlooks like the error is "<<count_error_final<<"\n";
+					/*int count_error = 0;
 					if (collector_astar.size() == collector_ss.size()) {
 						for (size_t p = 0; p < collector_astar.size(); p++) {
 							string a_astar = collector_astar.at(p), a_ss = collector_ss.at(p);
@@ -459,7 +512,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							}
 						}
 						outputFile<<"error= "<<count_error<<"\n\n";
-					}
+					}*/
 				}
 			}
 		}

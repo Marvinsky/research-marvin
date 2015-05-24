@@ -4,19 +4,19 @@ probBLOCKS-4-0_F_6.csv
 
 A*:		{(gapdb_2, 123),(gapdb_1, 309),(gapdb_6, 309),(gapdb_5, 359),(gapdb_4, 391),(gapdb_3, 434),}
 ss:		{(gapdb_1, 14.559),(gapdb_2, 14.559),(gapdb_5, 14.559),(gapdb_6, 14.559),(gapdb_3, 25.511),(gapdb_4, 31.699),}
-error= 6
+error= 4
 
 probBLOCKS-4-1_F_10.csv
 
 A*:		{(gapdb_2, 554),(gapdb_1, 593),(gapdb_3, 593),(gapdb_4, 593),(gapdb_5, 593),(gapdb_6, 593),}
 ss:		{(gapdb_1, 23.906),(gapdb_4, 34.914),(gapdb_5, 34.914),(gapdb_6, 40.312),(gapdb_3, 41.754),(gapdb_2, 58.282),}
-error= 6
+error= 4
 
 probBLOCKS-5-0_F_12.csv
 
 A*:		{(gapdb_1, 5351),(gapdb_2, 5351),(gapdb_3, 5351),(gapdb_4, 5351),(gapdb_5, 5351),(gapdb_6, 5351),}
 ss:		{(gapdb_2, 218.237),(gapdb_6, 218.237),(gapdb_4, 263.09),(gapdb_5, 899.565),(gapdb_1, 944.375),(gapdb_3, 1091.47),}
-error= 6
+error= 4
 
 probBLOCKS-5-1_F_10.csv
 
@@ -34,19 +34,19 @@ probBLOCKS-6-0_F_12.csv
 
 A*:		{(gapdb_1, 34921),(gapdb_2, 34921),(gapdb_3, 34921),(gapdb_4, 34921),(gapdb_5, 34921),(gapdb_6, 34921),}
 ss:		{(gapdb_2, 79.476),(gapdb_5, 79.476),(gapdb_6, 167.464),(gapdb_1, 190.626),(gapdb_3, 570.592),(gapdb_4, 11541.2),}
-error= 6
+error= 4
 
 probBLOCKS-6-2_F_20.csv
 
 A*:		{(gapdb_1, 54882),(gapdb_2, 54882),(gapdb_3, 54882),(gapdb_4, 54882),(gapdb_5, 54882),(gapdb_6, 54882),}
 ss:		{(gapdb_4, 45331.5),(gapdb_6, 45331.5),(gapdb_3, 81485.6),(gapdb_5, 252414),(gapdb_1, 548048),(gapdb_2, 1.37895e+06),}
-error= 5
+error= 4
 
 probBLOCKS-4-2_F_6.csv
 
 A*:		{(gapdb_1, 120),(gapdb_3, 286),(gapdb_5, 286),(gapdb_4, 325),(gapdb_6, 325),(gapdb_2, 436),}
 ss:		{(gapdb_1, 15.004),(gapdb_2, 15.004),(gapdb_3, 15.004),(gapdb_4, 15.004),(gapdb_5, 15.004),(gapdb_6, 15.004),}
-error= 4
+error= 3
 
 probBLOCKS-6-1_F_10.csv
 
