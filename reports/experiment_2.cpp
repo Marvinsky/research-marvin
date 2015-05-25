@@ -294,7 +294,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					add_lines_heuristics.clear();
 					vector<pair<string, double> > m = analyzeFile(output_astarBC);	
 					outputFile<<"A*:\t\t{";
-					map<string, double> m_percentage;
+					map<string, double> m_astar_percentage;
 					map<string, string> heuristic_description;
 					typedef std::vector<std::pair<std::string, double> > vector_type;
 					for (vector_type::const_iterator pos = m.begin();
@@ -311,7 +311,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						heuristic_description.insert(pair<string, string>(s, add_lines_heuristics.at(n-1)));
 
 						double d = pos->second;
-						m_percentage.insert(pair<string, double>(s, d));
+						m_astar_percentage.insert(pair<string, double>(s, d));
 						collector_astar.push_back(s);
 						outputFile<<"("<<s<<", "<<d<<"),";
 						
@@ -413,6 +413,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					//Measure of error maximo
 					int count_error = 0, threshold = 3;
 					vector<string> v_percentage;
+					vector<string> v_ss_regrets; //To calculate the regrets
 					if (collector_astar.size() == collector_ss.size()) {
 						for (size_t p = 0; p < collector_astar.size(); p++) {
 							string a_astar = collector_astar.at(p), a_ss = collector_ss.at(p);
@@ -423,6 +424,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								for (size_t q = 0; q < collector_ss.size(); q++) {
 									string a_ss = collector_ss.at(q);
 									if (q < threshold) {
+										v_ss_regrets.push_back(a_ss);
 										if (a_astar == a_ss) {
 											v_percentage.push_back(a_astar);
 										}
@@ -436,13 +438,14 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					vector<string> s_v_three;
 					vector<double> d_v_three;
 					int counter_three = 0;
+					outputFile<<"\nMeasure 1:\n";
 					if (v_percentage.size() > 0) {
 						double per = ((double)v_percentage.size()/(double)threshold)*100;
-						outputFile<<"\n"<<per<<"\% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. ";
+						outputFile<<" - "<<per<<"\% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. ";
 						for (size_t p = 0; p < v_percentage.size(); p++) {
 							string key = v_percentage.at(p);
-							map<string, double>::iterator iter = m_percentage.find(key);
-							if (iter != m_percentage.end()) {
+							map<string, double>::iterator iter = m_astar_percentage.find(key);
+							if (iter != m_astar_percentage.end()) {
 								string s = iter->first;
 								double value = iter->second;
 								//outputFile<<"\t"<<s<<":\t"<<value<<"\n";
@@ -454,7 +457,10 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					} else {
 						outputFile<<"0\% of the 3 first heuristics in SS are used in the 3 first heuristics in A*.\n";
 					}
-						
+				
+					//Find the best heuristics in order to calculate the regret
+					string best_heuristic;
+					double best_nodes = 0;
 					if (counter_three == 1) {
 						string hname = s_v_three.at(0);
 						double hvalue = d_v_three.at(0);
@@ -464,13 +470,24 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						if (iterDescription != heuristic_description.end()) {
 							outputFile<<"\t"<<hname<<":\t"<<iterDescription->second<<"\n";
 						}
+						best_heuristic = hname;
+						best_nodes = hvalue;
 					} else if (counter_three == 2) {
 						string s1 = s_v_three.at(0), s2 = s_v_three.at(1);
-						double d1 = d_v_three.at(1), d2 = d_v_three.at(1);
+						double d1 = d_v_three.at(0), d2 = d_v_three.at(1);
 						if (d1 == d2) {
-							outputFile<<"\n - There are two best heuristics: "<<s1<<" and "<<s2<<" generating the same number of nodes: "<<d1<<"\n";	
+							outputFile<<"\n - There are two best heuristics: "<<s1<<" and "<<s2<<" generating the same number of nodes: "<<d1<<"\n";
+							best_heuristic = s1;
+							best_nodes = d1;
 						} else {
-							outputFile<<"\n - There are two best heuristics: ("<<s1<<", "<<d1<<"), ("<<s2<<", "<<d2<<")\n";	
+							outputFile<<"\n - There are two best heuristics: ("<<s1<<", "<<d1<<"), ("<<s2<<", "<<d2<<")\n";
+							if (d1 < d2) {
+								best_heuristic = s1;
+								best_nodes = d1;
+							} else {
+								best_heuristic = s2;
+								best_nodes = d2;
+							}
 						}
 						outputFile<<" - Description:\n";
 						for (map<string, string>::iterator iter = heuristic_description.begin();
@@ -484,10 +501,32 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							string s1 = s_v_three.at(0), s2 = s_v_three.at(1), s3 = s_v_three.at(2);
 							double d1 = d_v_three.at(0), d2 = d_v_three.at(1), d3 = d_v_three.at(2);
 							if (d1 == d2 && d1 == d3 && d2 == d3) {
-								outputFile<<"\n - There are three best heuristics: "<<s1<<", "<<s2<<" and "<<s3<<" generating the same number of nodes "<<d1<<"\n";	
+								outputFile<<"\n - There are three best heuristics: "<<s1<<", "<<s2<<" and "<<s3<<" generating the same number of nodes "<<d1<<"\n";
+								best_heuristic = s1;
+								best_nodes = d1;
 							} else {
-								
 								outputFile<<"\n - There are three best heuristics: ("<<s1<<", "<<d1<<"), ("<<s2<<", "<<d2<<") and ("<<s3<<", "<<d3<<")\n";
+								string menor;
+								double menor_nodes = 0;
+								if (d1 < d2) {
+									if (d1 < d3) {
+										menor = s1;
+										menor_nodes = d1;
+									} else {
+										menor = s3;
+										menor_nodes = d3;
+									}
+								} else {
+									if (d2 < d3) {
+										menor = s2;
+										menor_nodes = d2;
+									} else {
+										menor = s3;
+										menor_nodes = d3;
+									}
+								}
+								best_heuristic = menor;
+								best_nodes = menor_nodes;
 							}
 							outputFile<<" - Description:\n";
 							for (map<string, string>::iterator iter = heuristic_description.begin();
@@ -497,8 +536,27 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 									outputFile<<"\t"<<hname<<":\t"<<iter->second<<"\n";
 								}
 							}
-					} else {
 					}
+					outputFile<<"\nMeasure 2:\n";
+					map<string, double> m_regrets;
+					for (size_t r = 0; r < v_ss_regrets.size(); r++) {
+						string name_ss = v_ss_regrets.at(r);
+						map<string, double>::iterator iter_regret = m_astar_percentage.find(name_ss);
+						if (iter_regret != m_astar_percentage.end()) {
+							string aux_heur = iter_regret->first;
+							double aux_nodes = iter_regret->second;
+							double regret = aux_nodes - best_nodes;
+							m_regrets.insert(pair<string, double>(aux_heur, regret));
+						}
+					}
+					outputFile<<" - Best heuristic is "<<best_heuristic<<", and number of nodes generated: "<<best_nodes<<"\n";
+					outputFile<<" - Regrets:\n";
+					for (map<string, double>::iterator it_r = m_regrets.begin(); it_r != m_regrets.end(); it_r++) {
+						string a_heur = it_r->first;
+						double d_nodes = it_r->second;
+						outputFile<<"\t"<<a_heur<<":\t"<<d_nodes<<"\n";
+					}
+
 					outputFile<<"\n\n";
 					//Measure of error minimo
 					int count_error_final = 0, count_good_final = 0;
