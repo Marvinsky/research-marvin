@@ -26,35 +26,8 @@ struct less_second {
         return a.second < b.second;
     }
 };
-
-int getTotalLevels(string interText) {
-        ifstream inter2;
-        inter2.open(interText.c_str());
-	int total_niveles = 0;
-        
-	if (!inter2) {
-           return -1;
-        } else {
-           string trash;
-           
-           int count_data = 0;
-
-	   inter2>>trash;
-	   inter2>>trash;
-	   inter2>>trash;
-	   inter2>>trash;
-	   inter2>>trash;
-	   inter2>>trash;
-
-           while (inter2>>trash) {
-              //cout<<trash<<endl;
-              count_data++;
-           }
-           inter2.close();
-           total_niveles = (int)count_data/4;
-	}
-	return total_niveles;
-}
+//Global variables
+vector<string> add_lines_heuristics; 
 
 vector<pair<string, double> >  analyzeFile(string output_BC) {
 	ifstream infile_astar(output_BC.c_str());
@@ -63,6 +36,7 @@ vector<pair<string, double> >  analyzeFile(string output_BC) {
 	bool in_b = false, allow_add = false;
 	vector<char> add_char;
 	while (std::getline(infile_astar, line)) {
+		add_lines_heuristics.push_back(line);
 		for (int i = 0; i < line.length(); i++) {
 			char a = line[i];
 			if (allow_add) {
@@ -348,17 +322,28 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					map<double, vector<string> > map_astar, map_ss;
 					outputFile<<astarBC<<"\n\n";
 					//_________________CALLING A* _____________
-					vector<pair<string, double> > m = analyzeFile(output_astarBC);
+					add_lines_heuristics.clear();
+					vector<pair<string, double> > m = analyzeFile(output_astarBC);	
 					outputFile<<"A*:\t\t{";
 					map<string, double> m_percentage;
+					map<string, string> heuristic_description;
 					typedef std::vector<std::pair<std::string, double> > vector_type;
 					for (vector_type::const_iterator pos = m.begin();
      						pos != m.end(); ++pos)
 					{
    						string s = pos->first;
+				                string t = s;
+						int found = t.find("_");
+						string heuristic_name_mod = t.substr(found + 1, t.length());
+						stringstream ss;
+						int n;
+						ss << heuristic_name_mod;
+						ss >> n;
+						heuristic_description.insert(pair<string, string>(s, add_lines_heuristics.at(n-1)));
+
 						double d = pos->second;
 						m_percentage.insert(pair<string, double>(s, d));
-						std::cout <<"s = "<< s << ", d = " << d << std::endl;
+						//std::cout <<"s = "<< s << ", d = " << d << std::endl;
 						//outputFile<<s<<", ";
 						collector_astar.push_back(s);
 						outputFile<<"("<<s<<", "<<d<<"),";
@@ -389,27 +374,27 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					map<string, vector<string> > group_map_astar;
 					map<double, vector<string> >::iterator itmap2;
 					int astar_count = 1;
-					cout<<"count the equal doubles.\n";
+					//cout<<"count the equal doubles.\n";
 					for (itmap2 = map_astar.begin(); itmap2 != map_astar.end(); ++itmap2) {
 						double d = itmap2->first;
 						vector<string> s = itmap2->second;
-						cout<<"\t\td = "<<d<<", s = ";	
+						//cout<<"\t\td = "<<d<<", s = ";	
 						stringstream number;
 						number<<astar_count++;
 						string name = "a_"+number.str();
-						cout<<"name1 = "<<name<<"\n";
+						//cout<<"name1 = "<<name<<"\n";
 						//outputFile<<"\t"<<name<<":\t\t{";
 						for (size_t i = 0; i < s.size(); i++) {
-							cout<<s.at(i);
+							//cout<<s.at(i);
 							//outputFile<<s.at(i);
 							if (i != s.size() -1) {
-								cout<<"/";
+								//cout<<"/";
 								//outputFile<<"/";
 							}
 						}
 						//outputFile<<"}\n";
 						group_map_astar.insert(pair<string, vector<string> >(name, s));
-						cout<<"\n";
+						//cout<<"\n";
 					}
 					//outputFile<<"\n\n";
 					//CALLING SS _____________________________________________
@@ -422,7 +407,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					{
    						string s = pos2->first;
 						double d = pos2->second;
-						std::cout <<"s = "<< s << ", d = " << d << std::endl;
+						//std::cout <<"s = "<< s << ", d = " << d << std::endl;
 						//outputFile<<s<<", ";
 						collector_ss.push_back(s);
 						outputFile<<"("<<s<<", "<<d<<"),";
@@ -451,7 +436,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					map<string, vector<string> > group_map_ss;
 					int ss_count = 1;
 					map<double, vector<string> >::iterator itmap4;
-					cout<<"count the equal doubles2.\n";
+					//cout<<"count the equal doubles2.\n";
 					for (itmap4 = map_ss.begin(); itmap4 != map_ss.end(); ++itmap4) {
 						double d = itmap4->first;
 						vector<string> s = itmap4->second;
@@ -459,20 +444,20 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						stringstream number;
 						number<<ss_count++;
 						string name = "a_"+number.str();
-						cout<<"\t\tname2 = "<<name<<"\n";
+						//cout<<"\t\tname2 = "<<name<<"\n";
 						//outputFile<<"\t"<<name<<":\t\t{";
-						cout<<"\t\td = "<<d<<", s = ";
+						//cout<<"\t\td = "<<d<<", s = ";
 						for (size_t i = 0; i < s.size(); i++) {
-							cout<<s.at(i);
+							//cout<<s.at(i);
 							//outputFile<<s.at(i);
 							if (i != s.size() -1) {
-								cout<<"/";
+								//cout<<"/";
 								//outputFile<<"/";
 							}
 						}
 						//outputFile<<"}\n";
 						group_map_ss.insert(pair<string, vector<string> >(name, s));
-						cout<<"\n";
+						//cout<<"\n";
 					}
 					//Measure of error maximo
 					int count_error = 0, threshold = 3;
@@ -484,11 +469,11 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								count_error++;	
 							}
 							if (p < threshold) {
-								cout<<"astar name: "<<a_astar<<"\n";
+								//cout<<"astar name: "<<a_astar<<"\n";
 								for (size_t q = 0; q < collector_ss.size(); q++) {
 									string a_ss = collector_ss.at(q);
 									if (q < threshold) {
-										cout<<"ss name: "<<a_ss<<"\n";
+										//cout<<"ss name: "<<a_ss<<"\n";
 										if (a_astar == a_ss) {
 											v_percentage.push_back(a_astar);
 										}
@@ -504,7 +489,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					int counter_three = 0;
 					if (v_percentage.size() > 0) {
 						double per = ((double)v_percentage.size()/(double)threshold)*100;
-						cout<<setw(2)<<fixed<<setprecision(2)<<per<<"\% of the 3 first heuristics in SS are used in the 3 first heuristics in A*.\n";
+						//cout<<setw(2)<<fixed<<setprecision(2)<<per<<"\% of the 3 first heuristics in SS are used in the 3 first heuristics in A*.\n";
 						outputFile<<"\n"<<per<<"\% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. ";
 						for (size_t p = 0; p < v_percentage.size(); p++) {
 							string key = v_percentage.at(p);
@@ -512,7 +497,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							if (iter != m_percentage.end()) {
 								string s = iter->first;
 								double value = iter->second;
-								cout<<"\tkey = "<<s<<", value = "<<value<<"\n";
+								//cout<<"\tkey = "<<s<<", value = "<<value<<"\n";
 								//outputFile<<"\t"<<s<<":\t"<<value<<"\n";
 								s_v_three.push_back(s);
 								d_v_three.push_back(value);
@@ -520,18 +505,33 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							}
 						}
 					} else {
-						cout<<"0\% of the 3 first heuristics in SS are used in the 3 first heuristics in A*.\n";
+						//cout<<"0\% of the 3 first heuristics in SS are used in the 3 first heuristics in A*.\n";
 					}
-					cout<<"counter_three = "<<counter_three<<"\n";	
+					//cout<<"counter_three = "<<counter_three<<"\n";	
 					if (counter_three == 1) {
-						outputFile<<"\n - The best heuristic is: "<<s_v_three.at(0)<<" and generates "<<d_v_three.at(0)<<" nodes.\n";
+						string hname = s_v_three.at(0);
+						double hvalue = d_v_three.at(0);
+						outputFile<<"\n - The best heuristic is: "<<hname<<" and generates "<<hvalue<<" nodes.\n";
+						outputFile<<" - Description:\n";
+						map<string, string>::iterator iterDescription = heuristic_description.find(hname);
+						if (iterDescription != heuristic_description.end()) {
+							outputFile<<"\t"<<hname<<":\t"<<iterDescription->second<<"\n";
+						}
 					} else if (counter_three == 2) {
 						string s1 = s_v_three.at(0), s2 = s_v_three.at(1);
 						double d1 = d_v_three.at(1), d2 = d_v_three.at(1);
 						if (d1 == d2) {
-							outputFile<<"\n - There are two best heuristics: "<<s1<<" and "<<s2<<" generating the same number of nodes: "<<d1<<"\n";
+							outputFile<<"\n - There are two best heuristics: "<<s1<<" and "<<s2<<" generating the same number of nodes: "<<d1<<"\n";	
 						} else {
 							outputFile<<"\n - There are two best heuristics: ("<<s1<<", "<<d1<<"), ("<<s2<<", "<<d2<<")\n";	
+						}
+						outputFile<<" - Description:\n";
+						for (map<string, string>::iterator iter = heuristic_description.begin();
+							iter != heuristic_description.end(); iter++) {
+							string hname = iter->first;
+							if (hname == s1 || hname == s2) {
+								outputFile<<"\t"<<hname<<":\t"<<iter->second<<"\n";
+							}
 						}
 					} else if (counter_three == 3) {
 							string s1 = s_v_three.at(0), s2 = s_v_three.at(1), s3 = s_v_three.at(2);
@@ -542,8 +542,16 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								
 								outputFile<<"\n - There are three best heuristics: ("<<s1<<", "<<d1<<"), ("<<s2<<", "<<d2<<") and ("<<s3<<", "<<d3<<")\n";
 							}
+							outputFile<<" - Description:\n";
+							for (map<string, string>::iterator iter = heuristic_description.begin();
+								iter != heuristic_description.end(); iter++) {
+								string hname = iter->first;
+								if (hname == s1 || hname == s2 || hname == s3) {
+									outputFile<<"\t"<<hname<<":\t"<<iter->second<<"\n";
+								}
+							}
 					} else {
-						cout<<"counter_three == 0\n";
+						//cout<<"counter_three == 0\n";
 					}
 					outputFile<<"\n\n";
 					//Measure of error minimo
@@ -552,21 +560,21 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						fiter1 != group_map_astar.end(); fiter1++) {
 						string name1 = fiter1->first;
 						vector<string> v1 = fiter1->second;
-						cout<<"name1 = "<<name1<<"\n";
+						//cout<<"name1 = "<<name1<<"\n";
 						for (map<string, vector<string> >::iterator fiter2 = group_map_ss.begin();
 							fiter2 != group_map_ss.end(); fiter2++) {
 							string name2 = fiter2->first;
 							vector<string> v2 = fiter2->second;
 							int count_availables = 0;
-							cout<<"\tname2 = "<<name2<<"\n";	
+							//cout<<"\tname2 = "<<name2<<"\n";	
 							if (name1 == name2) {
-								cout<<"\t\tname1 == name2 == "<<name1<<"\n";
+								//cout<<"\t\tname1 == name2 == "<<name1<<"\n";
 								for (size_t t1 = 0; t1 < v1.size(); t1++) {
 									string s1 = v1.at(t1);
 									for (size_t t2 = 0; t2 < v2.size(); t2++) {
 										string s2 = v2.at(t2);
 										if (s1 == s2) {
-											cout<<"\t\t\ts1 == s2 == "<<s1<<"\n";
+											//cout<<"\t\t\ts1 == s2 == "<<s1<<"\n";
 											count_availables++;
 										}
 									}
@@ -587,7 +595,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					if (count_error >= 0 && count_error_final >= 0) {
 						//outputFile<<"error maximo = "<<count_error<<"\n";
 						//outputFile<<"error minimo = "<<count_error_final<<"\n";
-						cout<<"\t\tlooks like the error is "<<count_error_final<<"\n";
+						//cout<<"\t\tlooks like the error is "<<count_error_final<<"\n";
 					}
 				}
 			}

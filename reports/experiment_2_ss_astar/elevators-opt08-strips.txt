@@ -7,5 +7,8 @@ ss:		{(gapdb_5, 1.72978e+06),(gapdb_1, 6.51085e+07),(gapdb_2, 6.51085e+07),(gapd
 
 66.6667% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. 
  - There are two best heuristics: gapdb_1 and gapdb_2 generating the same number of nodes: 5.28517e+06
+ - Description:
+	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:1.0000000,size=20000,with disjoint patterns
+	gapdb_2:	h(,1):,heur is GAPDB,mutation_rate:0.6000000,size=20000,with disjoint patterns
 
 

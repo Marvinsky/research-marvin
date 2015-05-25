@@ -7,6 +7,10 @@ ss:		{(gapdb_1, 19.635),(gapdb_2, 19.635),(gapdb_3, 19.635),(gapdb_4, 19.635),(g
 
 100% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. 
  - There are three best heuristics: gapdb_1, gapdb_2 and gapdb_3 generating the same number of nodes 243
+ - Description:
+	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
+	gapdb_2:	h(,1):,heur is GAPDB,mutation_rate:0.2000000,size=20000,without disjoint patterns
+	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:0.6000000,size=20000,with disjoint patterns
 
 
 p14_F_30.csv
@@ -16,6 +20,8 @@ ss:		{(gapdb_6, 1.58719e+08),(gapdb_3, 2.44302e+09),(gapdb_5, 1.57551e+11),(gapd
 
 33.3333% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. 
  - The best heuristic is: gapdb_3 and generates 3.7128e+08 nodes.
+ - Description:
+	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
 
 
 p11_F_26.csv
@@ -25,6 +31,8 @@ ss:		{(gapdb_3, 3.37482e+08),(gapdb_4, 3.44086e+08),(gapdb_6, 5.11607e+09),(gapd
 
 33.3333% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. 
  - The best heuristic is: gapdb_3 and generates 6.59588e+08 nodes.
+ - Description:
+	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
 
 
 p13_F_34.csv
@@ -34,6 +42,8 @@ ss:		{(gapdb_3, 2.89375e+08),(gapdb_4, 2.89375e+08),(gapdb_6, 1.23265e+09),(gapd
 
 33.3333% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. 
  - The best heuristic is: gapdb_3 and generates 2.58021e+08 nodes.
+ - Description:
+	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:1.0000000,size=20000,with disjoint patterns
 
 
 p03_F_26.csv
@@ -43,6 +53,8 @@ ss:		{(gapdb_4, 5.07569e+07),(gapdb_1, 5.29903e+07),(gapdb_5, 2.9447e+08),(gapdb
 
 33.3333% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. 
  - The best heuristic is: gapdb_1 and generates 4.60781e+06 nodes.
+ - Description:
+	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.6000000,size=20000,with disjoint patterns
 
 
 p02_F_22.csv
@@ -52,6 +64,9 @@ ss:		{(gapdb_6, 376198),(gapdb_3, 436007),(gapdb_1, 6.2193e+06),(gapdb_2, 6.0952
 
 66.6667% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. 
  - There are two best heuristics: gapdb_1 and gapdb_3 generating the same number of nodes: 6.63337e+06
+ - Description:
+	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
+	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:0.8000000,size=20000,without disjoint patterns
 
 
 p04_F_24.csv
@@ -61,5 +76,7 @@ ss:		{(gapdb_6, 2.45677e+12),(gapdb_4, 2.45748e+12),(gapdb_1, 1.34686e+15),(gapd
 
 33.3333% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. 
  - The best heuristic is: gapdb_1 and generates 1.05487e+10 nodes.
+ - Description:
+	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.8000000,size=20000,without disjoint patterns
 
 
