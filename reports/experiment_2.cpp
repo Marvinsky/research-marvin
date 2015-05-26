@@ -29,6 +29,7 @@ struct less_second {
 //Global variables
 vector<string> add_lines_heuristics; 
 set<int> no_repeat_int;
+vector<int> repeat_random_10;
 
 vector<pair<string, double> >  analyzeFile(string output_BC) {
 	ifstream infile_astar(output_BC.c_str());
@@ -575,15 +576,36 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					//Calculate the random generation of regrets
 					map<string, double> m_regrets_random;
 					vector<string> collector_random_ss;
+					double average_regrets = 0, sum_regrets = 0;
+					int counter_regrets = 0;
 					vector<string> v_match_random_astar_ss;
 					int size_max = v_ss_regrets_random.size();						
 					do {
 						int h =   (rand() % (int)(size_max));
 						no_repeat_int.insert(h);
 					} while (no_repeat_int.size() < threshold);
-						
-					std::set<int>::iterator iter_set;
 					
+					//average regrets	
+					do {
+						int h =   (rand() % (int)(size_max));
+						repeat_random_10.push_back(h);
+					} while (repeat_random_10.size() < 10);
+					
+					
+					for (size_t p = 0; p < repeat_random_10.size(); p++) {
+						int h = repeat_random_10.at(p);
+						string name_ss = v_ss_regrets_random.at(h);
+						map<string, double>::iterator iter_regret = m_astar_percentage.find(name_ss);
+						if (iter_regret != m_astar_percentage.end()) {
+							double aux_nodes = iter_regret->second;
+							double regret = aux_nodes - best_nodes;
+							sum_regrets += regret;
+							counter_regrets++;
+						}
+					}
+					average_regrets = (double)sum_regrets/(double)counter_regrets;
+					repeat_random_10.clear();
+					std::set<int>::iterator iter_set;	
 					for (iter_set = no_repeat_int.begin(); iter_set != no_repeat_int.end(); ++iter_set) {
 						int h = *iter_set;
 						string name_ss = v_ss_regrets_random.at(h);
@@ -625,6 +647,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					} else {
 						outputFile<<" - 0\% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.\n";
 					}
+					outputFile<<" - Average regret chosing heuristics 10 times: "<<average_regrets<<"\n"; 
+
+
 					outputFile<<"\nComparing Fixed and Random Regrets:\n";
 					if (per_fixed == per_random) {
 						outputFile<<" - Fixed regrets and Random regrets have the same chance to be choosed.\n";
