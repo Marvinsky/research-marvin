@@ -564,9 +564,10 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						outputFile<<"\t"<<a_heur<<":\t"<<d_nodes<<"\n";
 					}
 					//print the percentage
+					double per_fixed = 0, per_random = 0;
 					if (v_match_fixed_astar_ss.size() > 0) {
-						double per = ((double)v_match_fixed_astar_ss.size()/(double)threshold)*100;
-						outputFile<<" - "<<per<<"\% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.\n";
+						per_fixed = ((double)v_match_fixed_astar_ss.size()/(double)threshold)*100;
+						outputFile<<" - "<<per_fixed<<"\% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.\n";
 					} else {
 						outputFile<<" - 0\% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.\n";
 					}
@@ -619,11 +620,20 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 					//print the percentage
 					if (v_match_random_astar_ss.size() > 0) {
-						double per = ((double)v_match_random_astar_ss.size()/(double)threshold)*100;
-						outputFile<<" - "<<per<<"\% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.\n";
+						per_random = ((double)v_match_random_astar_ss.size()/(double)threshold)*100;
+						outputFile<<" - "<<per_random<<"\% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.\n";
 					} else {
 						outputFile<<" - 0\% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.\n";
 					}
+					outputFile<<"\nComparing Fixed and Random Regrets:\n";
+					if (per_fixed == per_random) {
+						outputFile<<" - Fixed regrets and Random regrets have the same chance to be choosed.\n";
+					} else if (per_fixed > per_random) {
+						outputFile<<" - Fixed regrets is better option than Random regrets.\n";
+					} else {
+						outputFile<<" - Random regrets is better option than Fixed regrets.\n";
+					}
+
 					outputFile<<"\n\n";
 					//Measure of error minimo
 					int count_error_final = 0, count_good_final = 0;
