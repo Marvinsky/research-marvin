@@ -11,11 +11,11 @@
 
 #include <locale>
 #include <dirent.h>
+#include <time.h>
 #include <vector>
-
 #include <map>
 #include <algorithm>
-
+#include <set>
 
 using namespace std;
 
@@ -28,6 +28,7 @@ struct less_second {
 };
 //Global variables
 vector<string> add_lines_heuristics; 
+set<int> no_repeat_int;
 
 vector<pair<string, double> >  analyzeFile(string output_BC) {
 	ifstream infile_astar(output_BC.c_str());
@@ -413,7 +414,6 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					//Measure of error maximo
 					int count_error = 0, threshold = 3;
 					vector<string> v_percentage;
-					vector<string> v_ss_regrets; //To calculate the regrets
 					if (collector_astar.size() == collector_ss.size()) {
 						for (size_t p = 0; p < collector_astar.size(); p++) {
 							string a_astar = collector_astar.at(p), a_ss = collector_ss.at(p);
@@ -424,7 +424,6 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								for (size_t q = 0; q < collector_ss.size(); q++) {
 									string a_ss = collector_ss.at(q);
 									if (q < threshold) {
-										v_ss_regrets.push_back(a_ss);
 										if (a_astar == a_ss) {
 											v_percentage.push_back(a_astar);
 										}
@@ -433,7 +432,17 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							}
 						}
 						//outputFile<<"error maximo = "<<count_error<<"\n";
-					}		
+					}
+
+					vector<string> v_ss_regrets_fixed; //To calculate the fixed regrets
+					vector<string> v_ss_regrets_random; //To calculate the random regrets
+					for (size_t q = 0; q < collector_ss.size(); q++) {
+						string a_ss = collector_ss.at(q);
+						v_ss_regrets_random.push_back(a_ss);
+						if (q < threshold) {
+							v_ss_regrets_fixed.push_back(a_ss);
+						}
+					}	
 
 					vector<string> s_v_three;
 					vector<double> d_v_three;
@@ -537,26 +546,55 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								}
 							}
 					}
+					outputFile<<" - Best heuristic is "<<best_heuristic<<", and number of nodes generated: "<<best_nodes<<"\n";
 					outputFile<<"\nMeasure 2:\n";
-					map<string, double> m_regrets;
-					for (size_t r = 0; r < v_ss_regrets.size(); r++) {
-						string name_ss = v_ss_regrets.at(r);
+					map<string, double> m_regrets_fixed;
+					for (size_t r = 0; r < v_ss_regrets_fixed.size(); r++) {
+						string name_ss = v_ss_regrets_fixed.at(r);
 						map<string, double>::iterator iter_regret = m_astar_percentage.find(name_ss);
 						if (iter_regret != m_astar_percentage.end()) {
 							string aux_heur = iter_regret->first;
 							double aux_nodes = iter_regret->second;
 							double regret = aux_nodes - best_nodes;
-							m_regrets.insert(pair<string, double>(aux_heur, regret));
+							m_regrets_fixed.insert(pair<string, double>(aux_heur, regret));
 						}
 					}
-					outputFile<<" - Best heuristic is "<<best_heuristic<<", and number of nodes generated: "<<best_nodes<<"\n";
-					outputFile<<" - Regrets:\n";
-					for (map<string, double>::iterator it_r = m_regrets.begin(); it_r != m_regrets.end(); it_r++) {
+					outputFile<<" - Fixed Regrets:\n";
+					for (map<string, double>::iterator it_r = m_regrets_fixed.begin(); it_r != m_regrets_fixed.end(); it_r++) {
 						string a_heur = it_r->first;
 						double d_nodes = it_r->second;
 						outputFile<<"\t"<<a_heur<<":\t"<<d_nodes<<"\n";
 					}
 
+					//Calculate the random generation of regrets
+					map<string, double> m_regrets_random;	
+					int size_max = v_ss_regrets_random.size();						
+					do {
+						int h =   (rand() % (int)(size_max));
+						no_repeat_int.insert(h);
+					} while (no_repeat_int.size() < threshold);
+						
+					std::set<int>::iterator iter_set;
+					for (iter_set = no_repeat_int.begin(); iter_set != no_repeat_int.end(); ++iter_set) {
+						int h = *iter_set;
+						string name_ss = v_ss_regrets_random.at(h);
+						map<string, double>::iterator iter_regret = m_astar_percentage.find(name_ss);
+						if (iter_regret != m_astar_percentage.end()) {
+							string aux_heur = iter_regret->first;
+							double aux_nodes = iter_regret->second;
+							double regret = aux_nodes - best_nodes;
+							m_regrets_random.insert(pair<string, double>(aux_heur, regret));
+						}
+					}
+					no_repeat_int.clear();
+
+					outputFile<<"\nMeasure 3:\n";
+					outputFile<<" - Random Regrets: SS's heuristic random selection, size = 3\n";
+					for (map<string, double>::iterator it_r = m_regrets_random.begin(); it_r != m_regrets_random.end(); it_r++) {
+						string a_heur = it_r->first;
+						double d_nodes = it_r->second;
+						outputFile<<"\t"<<a_heur<<":\t"<<d_nodes<<"\n";
+					}
 					outputFile<<"\n\n";
 					//Measure of error minimo
 					int count_error_final = 0, count_good_final = 0;
@@ -629,7 +667,7 @@ void create_report() {
 }
 
 int main() {
-       
+	srand(time(NULL));       
 	create_report();
 
 	return 0;

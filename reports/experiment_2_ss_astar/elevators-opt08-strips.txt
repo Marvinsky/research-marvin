@@ -11,12 +11,18 @@ Measure 1:
  - Description:
 	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:1.0000000,size=20000,with disjoint patterns
 	gapdb_2:	h(,1):,heur is GAPDB,mutation_rate:0.6000000,size=20000,with disjoint patterns
+ - Best heuristic is gapdb_1, and number of nodes generated: 5.28517e+06
 
 Measure 2:
- - Best heuristic is gapdb_1, and number of nodes generated: 5.28517e+06
- - Regrets:
+ - Fixed Regrets:
 	gapdb_1:	0
 	gapdb_2:	0
 	gapdb_5:	113338
+
+Measure 3:
+ - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_1:	0
+	gapdb_3:	110331
+	gapdb_6:	113338
 
 

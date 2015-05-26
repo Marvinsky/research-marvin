@@ -12,13 +12,19 @@ Measure 1:
 	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
 	gapdb_2:	h(,1):,heur is GAPDB,mutation_rate:0.2000000,size=20000,without disjoint patterns
 	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:0.6000000,size=20000,with disjoint patterns
+ - Best heuristic is gapdb_1, and number of nodes generated: 243
 
 Measure 2:
- - Best heuristic is gapdb_1, and number of nodes generated: 243
- - Regrets:
+ - Fixed Regrets:
 	gapdb_1:	0
 	gapdb_2:	0
 	gapdb_3:	0
+
+Measure 3:
+ - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_3:	0
+	gapdb_4:	4
+	gapdb_6:	0
 
 
 p14_F_30.csv
@@ -31,11 +37,17 @@ Measure 1:
  - The best heuristic is: gapdb_3 and generates 3.7128e+08 nodes.
  - Description:
 	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
+ - Best heuristic is gapdb_3, and number of nodes generated: 3.7128e+08
 
 Measure 2:
- - Best heuristic is gapdb_3, and number of nodes generated: 3.7128e+08
- - Regrets:
+ - Fixed Regrets:
 	gapdb_3:	0
+	gapdb_5:	0
+	gapdb_6:	0
+
+Measure 3:
+ - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_1:	0
 	gapdb_5:	0
 	gapdb_6:	0
 
@@ -50,12 +62,18 @@ Measure 1:
  - The best heuristic is: gapdb_3 and generates 6.59588e+08 nodes.
  - Description:
 	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
+ - Best heuristic is gapdb_3, and number of nodes generated: 6.59588e+08
 
 Measure 2:
- - Best heuristic is gapdb_3, and number of nodes generated: 6.59588e+08
- - Regrets:
+ - Fixed Regrets:
 	gapdb_3:	0
 	gapdb_4:	0
+	gapdb_6:	0
+
+Measure 3:
+ - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_4:	0
+	gapdb_5:	0
 	gapdb_6:	0
 
 
@@ -69,13 +87,19 @@ Measure 1:
  - The best heuristic is: gapdb_3 and generates 2.58021e+08 nodes.
  - Description:
 	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:1.0000000,size=20000,with disjoint patterns
+ - Best heuristic is gapdb_3, and number of nodes generated: 2.58021e+08
 
 Measure 2:
- - Best heuristic is gapdb_3, and number of nodes generated: 2.58021e+08
- - Regrets:
+ - Fixed Regrets:
 	gapdb_3:	0
 	gapdb_4:	0
 	gapdb_6:	0
+
+Measure 3:
+ - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_1:	0
+	gapdb_4:	0
+	gapdb_5:	0
 
 
 p03_F_26.csv
@@ -88,13 +112,19 @@ Measure 1:
  - The best heuristic is: gapdb_1 and generates 4.60781e+06 nodes.
  - Description:
 	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.6000000,size=20000,with disjoint patterns
+ - Best heuristic is gapdb_1, and number of nodes generated: 4.60781e+06
 
 Measure 2:
- - Best heuristic is gapdb_1, and number of nodes generated: 4.60781e+06
- - Regrets:
+ - Fixed Regrets:
 	gapdb_1:	0
 	gapdb_4:	0
 	gapdb_5:	0
+
+Measure 3:
+ - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_2:	0
+	gapdb_4:	0
+	gapdb_6:	0
 
 
 p02_F_22.csv
@@ -108,12 +138,18 @@ Measure 1:
  - Description:
 	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
 	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:0.8000000,size=20000,without disjoint patterns
+ - Best heuristic is gapdb_1, and number of nodes generated: 6.63337e+06
 
 Measure 2:
- - Best heuristic is gapdb_1, and number of nodes generated: 6.63337e+06
- - Regrets:
+ - Fixed Regrets:
 	gapdb_1:	0
 	gapdb_3:	0
+	gapdb_6:	0
+
+Measure 3:
+ - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_1:	0
+	gapdb_2:	0
 	gapdb_6:	0
 
 
@@ -127,12 +163,18 @@ Measure 1:
  - The best heuristic is: gapdb_1 and generates 1.05487e+10 nodes.
  - Description:
 	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.8000000,size=20000,without disjoint patterns
+ - Best heuristic is gapdb_1, and number of nodes generated: 1.05487e+10
 
 Measure 2:
- - Best heuristic is gapdb_1, and number of nodes generated: 1.05487e+10
- - Regrets:
+ - Fixed Regrets:
 	gapdb_1:	0
 	gapdb_4:	0
+	gapdb_6:	0
+
+Measure 3:
+ - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_2:	0
+	gapdb_5:	0
 	gapdb_6:	0
 
 
