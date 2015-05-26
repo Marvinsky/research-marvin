@@ -413,7 +413,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					}
 					//Measure of error maximo
 					int count_error = 0, threshold = 3;
-					vector<string> v_percentage;
+					vector<string> v_match_fixed_astar_ss;
 					if (collector_astar.size() == collector_ss.size()) {
 						for (size_t p = 0; p < collector_astar.size(); p++) {
 							string a_astar = collector_astar.at(p), a_ss = collector_ss.at(p);
@@ -422,10 +422,10 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							}
 							if (p < threshold) {
 								for (size_t q = 0; q < collector_ss.size(); q++) {
-									string a_ss = collector_ss.at(q);
+									string a_ss_inner = collector_ss.at(q);
 									if (q < threshold) {
-										if (a_astar == a_ss) {
-											v_percentage.push_back(a_astar);
+										if (a_astar == a_ss_inner) {
+											v_match_fixed_astar_ss.push_back(a_astar);
 										}
 									}
 								}
@@ -447,12 +447,10 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					vector<string> s_v_three;
 					vector<double> d_v_three;
 					int counter_three = 0;
-					outputFile<<"\nMeasure 1:\n";
-					if (v_percentage.size() > 0) {
-						double per = ((double)v_percentage.size()/(double)threshold)*100;
-						outputFile<<" - "<<per<<"\% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. ";
-						for (size_t p = 0; p < v_percentage.size(); p++) {
-							string key = v_percentage.at(p);
+					outputFile<<"\nMeasure 1:";
+					if (v_match_fixed_astar_ss.size() > 0) {	
+						for (size_t p = 0; p < v_match_fixed_astar_ss.size(); p++) {
+							string key = v_match_fixed_astar_ss.at(p);
 							map<string, double>::iterator iter = m_astar_percentage.find(key);
 							if (iter != m_astar_percentage.end()) {
 								string s = iter->first;
@@ -463,10 +461,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								counter_three++;
 							}
 						}
-					} else {
-						outputFile<<"0\% of the 3 first heuristics in SS are used in the 3 first heuristics in A*.\n";
-					}
-				
+					}	
 					//Find the best heuristics in order to calculate the regret
 					string best_heuristic;
 					double best_nodes = 0;
@@ -545,7 +540,10 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 									outputFile<<"\t"<<hname<<":\t"<<iter->second<<"\n";
 								}
 							}
+					} else {
+						outputFile<<" - There are more than three best heuristics.\n";
 					}
+
 					outputFile<<" - Best heuristic is "<<best_heuristic<<", and number of nodes generated: "<<best_nodes<<"\n";
 					outputFile<<"\nMeasure 2:\n";
 					map<string, double> m_regrets_fixed;
@@ -565,9 +563,18 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						double d_nodes = it_r->second;
 						outputFile<<"\t"<<a_heur<<":\t"<<d_nodes<<"\n";
 					}
+					//print the percentage
+					if (v_match_fixed_astar_ss.size() > 0) {
+						double per = ((double)v_match_fixed_astar_ss.size()/(double)threshold)*100;
+						outputFile<<" - "<<per<<"\% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.\n";
+					} else {
+						outputFile<<" - 0\% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.\n";
+					}
 
 					//Calculate the random generation of regrets
-					map<string, double> m_regrets_random;	
+					map<string, double> m_regrets_random;
+					vector<string> collector_random_ss;
+					vector<string> v_match_random_astar_ss;
 					int size_max = v_ss_regrets_random.size();						
 					do {
 						int h =   (rand() % (int)(size_max));
@@ -575,9 +582,11 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					} while (no_repeat_int.size() < threshold);
 						
 					std::set<int>::iterator iter_set;
+					
 					for (iter_set = no_repeat_int.begin(); iter_set != no_repeat_int.end(); ++iter_set) {
 						int h = *iter_set;
 						string name_ss = v_ss_regrets_random.at(h);
+						collector_random_ss.push_back(name_ss); //add to the collector random
 						map<string, double>::iterator iter_regret = m_astar_percentage.find(name_ss);
 						if (iter_regret != m_astar_percentage.end()) {
 							string aux_heur = iter_regret->first;
@@ -587,6 +596,18 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						}
 					}
 					no_repeat_int.clear();
+					//count the heuristics that matches using the threshold = 3
+					for (size_t p = 0; p < collector_astar.size(); p++) {
+						string a_astar = collector_astar.at(p);					
+						if (p < threshold) {
+							for (size_t q = 0; q < collector_random_ss.size(); q++) {
+								string a_ss = collector_random_ss.at(q);
+								if (a_astar == a_ss) {
+									v_match_random_astar_ss.push_back(a_astar);
+								}
+							}
+						}
+					}
 
 					outputFile<<"\nMeasure 3:\n";
 					outputFile<<" - Random Regrets: SS's heuristic random selection, size = 3\n";
@@ -594,6 +615,14 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						string a_heur = it_r->first;
 						double d_nodes = it_r->second;
 						outputFile<<"\t"<<a_heur<<":\t"<<d_nodes<<"\n";
+					}
+
+					//print the percentage
+					if (v_match_random_astar_ss.size() > 0) {
+						double per = ((double)v_match_random_astar_ss.size()/(double)threshold)*100;
+						outputFile<<" - "<<per<<"\% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.\n";
+					} else {
+						outputFile<<" - 0\% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.\n";
 					}
 					outputFile<<"\n\n";
 					//Measure of error minimo

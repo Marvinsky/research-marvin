@@ -6,7 +6,6 @@ A*:		{(gapdb_1, 243),(gapdb_2, 243),(gapdb_3, 243),(gapdb_5, 243),(gapdb_6, 243)
 ss:		{(gapdb_1, 19.635),(gapdb_2, 19.635),(gapdb_3, 19.635),(gapdb_4, 19.635),(gapdb_6, 19.635),(gapdb_5, 542.851),}
 
 Measure 1:
- - 100% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. 
  - There are three best heuristics: gapdb_1, gapdb_2 and gapdb_3 generating the same number of nodes 243
  - Description:
 	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
@@ -19,12 +18,14 @@ Measure 2:
 	gapdb_1:	0
 	gapdb_2:	0
 	gapdb_3:	0
+ - 100% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
 
 Measure 3:
  - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_1:	0
 	gapdb_3:	0
-	gapdb_4:	4
-	gapdb_6:	0
+	gapdb_5:	0
+ - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
 
 
 p14_F_30.csv
@@ -33,7 +34,6 @@ A*:		{(gapdb_1, 3.7128e+08),(gapdb_2, 3.7128e+08),(gapdb_3, 3.7128e+08),(gapdb_4
 ss:		{(gapdb_6, 1.58719e+08),(gapdb_3, 2.44302e+09),(gapdb_5, 1.57551e+11),(gapdb_4, 3.52479e+11),(gapdb_2, 4.29006e+11),(gapdb_1, 2.778e+12),}
 
 Measure 1:
- - 33.3333% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. 
  - The best heuristic is: gapdb_3 and generates 3.7128e+08 nodes.
  - Description:
 	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
@@ -44,12 +44,14 @@ Measure 2:
 	gapdb_3:	0
 	gapdb_5:	0
 	gapdb_6:	0
+ - 33.3333% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
 
 Measure 3:
  - Random Regrets: SS's heuristic random selection, size = 3
 	gapdb_1:	0
 	gapdb_5:	0
 	gapdb_6:	0
+ - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
 
 
 p11_F_26.csv
@@ -58,7 +60,6 @@ A*:		{(gapdb_1, 6.59588e+08),(gapdb_2, 6.59588e+08),(gapdb_3, 6.59588e+08),(gapd
 ss:		{(gapdb_3, 3.37482e+08),(gapdb_4, 3.44086e+08),(gapdb_6, 5.11607e+09),(gapdb_5, 7.34827e+09),(gapdb_1, 1.17035e+10),(gapdb_2, 1.44091e+11),}
 
 Measure 1:
- - 33.3333% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. 
  - The best heuristic is: gapdb_3 and generates 6.59588e+08 nodes.
  - Description:
 	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
@@ -69,12 +70,14 @@ Measure 2:
 	gapdb_3:	0
 	gapdb_4:	0
 	gapdb_6:	0
+ - 33.3333% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
 
 Measure 3:
  - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_1:	0
 	gapdb_4:	0
-	gapdb_5:	0
 	gapdb_6:	0
+ - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
 
 
 p13_F_34.csv
@@ -83,7 +86,6 @@ A*:		{(gapdb_1, 2.58021e+08),(gapdb_2, 2.58021e+08),(gapdb_3, 2.58021e+08),(gapd
 ss:		{(gapdb_3, 2.89375e+08),(gapdb_4, 2.89375e+08),(gapdb_6, 1.23265e+09),(gapdb_1, 3.18923e+10),(gapdb_5, 6.4608e+12),(gapdb_2, 1.17635e+14),}
 
 Measure 1:
- - 33.3333% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. 
  - The best heuristic is: gapdb_3 and generates 2.58021e+08 nodes.
  - Description:
 	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:1.0000000,size=20000,with disjoint patterns
@@ -94,12 +96,14 @@ Measure 2:
 	gapdb_3:	0
 	gapdb_4:	0
 	gapdb_6:	0
+ - 33.3333% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
 
 Measure 3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_1:	0
-	gapdb_4:	0
+	gapdb_2:	0
+	gapdb_3:	0
 	gapdb_5:	0
+ - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
 
 
 p03_F_26.csv
@@ -108,7 +112,6 @@ A*:		{(gapdb_1, 4.60781e+06),(gapdb_2, 4.60781e+06),(gapdb_3, 4.60781e+06),(gapd
 ss:		{(gapdb_4, 5.07569e+07),(gapdb_1, 5.29903e+07),(gapdb_5, 2.9447e+08),(gapdb_6, 2.9447e+08),(gapdb_2, 1.03146e+10),(gapdb_3, 1.11927e+11),}
 
 Measure 1:
- - 33.3333% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. 
  - The best heuristic is: gapdb_1 and generates 4.60781e+06 nodes.
  - Description:
 	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.6000000,size=20000,with disjoint patterns
@@ -119,12 +122,14 @@ Measure 2:
 	gapdb_1:	0
 	gapdb_4:	0
 	gapdb_5:	0
+ - 33.3333% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
 
 Measure 3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_2:	0
+	gapdb_1:	0
 	gapdb_4:	0
-	gapdb_6:	0
+	gapdb_5:	0
+ - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
 
 
 p02_F_22.csv
@@ -133,7 +138,6 @@ A*:		{(gapdb_1, 6.63337e+06),(gapdb_2, 6.63337e+06),(gapdb_3, 6.63337e+06),(gapd
 ss:		{(gapdb_6, 376198),(gapdb_3, 436007),(gapdb_1, 6.2193e+06),(gapdb_2, 6.0952e+08),(gapdb_4, 5.33657e+09),(gapdb_5, 1.02979e+10),}
 
 Measure 1:
- - 66.6667% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. 
  - There are two best heuristics: gapdb_1 and gapdb_3 generating the same number of nodes: 6.63337e+06
  - Description:
 	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
@@ -145,12 +149,14 @@ Measure 2:
 	gapdb_1:	0
 	gapdb_3:	0
 	gapdb_6:	0
+ - 66.6667% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
 
 Measure 3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_1:	0
-	gapdb_2:	0
+	gapdb_3:	0
+	gapdb_4:	0
 	gapdb_6:	0
+ - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
 
 
 p04_F_24.csv
@@ -159,7 +165,6 @@ A*:		{(gapdb_1, 1.05487e+10),(gapdb_2, 1.05487e+10),(gapdb_3, 1.05487e+10),(gapd
 ss:		{(gapdb_6, 2.45677e+12),(gapdb_4, 2.45748e+12),(gapdb_1, 1.34686e+15),(gapdb_3, 2.9259e+15),(gapdb_5, 1.8567e+16),(gapdb_2, 3.97794e+17),}
 
 Measure 1:
- - 33.3333% of the 3 first heuristics in SS are used in the 3 first heuristics in A*. 
  - The best heuristic is: gapdb_1 and generates 1.05487e+10 nodes.
  - Description:
 	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.8000000,size=20000,without disjoint patterns
@@ -170,11 +175,13 @@ Measure 2:
 	gapdb_1:	0
 	gapdb_4:	0
 	gapdb_6:	0
+ - 33.3333% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
 
 Measure 3:
  - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_1:	0
 	gapdb_2:	0
-	gapdb_5:	0
 	gapdb_6:	0
+ - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
 
 
