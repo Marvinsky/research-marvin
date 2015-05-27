@@ -1,0 +1,60 @@
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1 probe
+
+scanalyzer-opt11-strips
+
+p14.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+25		277			254
+26		2677			5120
+27		16762			19901
+28		94946			85015
+29		584197			726083
+30		3.90851e+06			4.70283e+06
+
+p13.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+25		20			20
+26		84			77
+27		220			238
+28		661			778
+29		3085			1951
+30		13397			7916
+31		65569			22240
+32		343952			353966
+33		1.93993e+06			1.21774e+06
+34		1.14504e+07			8.77914e+06
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+12		3			3
+13		12			15
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		9.49122e+06			7.14779e+06
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+18		3			3
+19		60			57
+20		1002			1353
+21		14538			11893
+22		223434			152951
+23		2.76377e+06			1.55284e+06
+24		4.17112e+07			1.56727e+07
+25		4.67355e+08			1.33106e+08
+26		6.95211e+09			1.07391e+10
+
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		4222			1877
+25		82778			110137
+26		994665			844041
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+18		37			31
+19		964			841
+20		22528			19228
+21		340408			327838
+22		7.10434e+06			6.43561e+06

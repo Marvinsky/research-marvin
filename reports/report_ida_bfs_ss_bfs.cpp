@@ -149,7 +149,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 		ofstream outputFile;
 		outputFile.open(resultFile.c_str(), ios::out);
-		outputFile<<"\tReport:\t\tida*-bfs-vs-ss-bfs - using "<<heuristic<<" heuristic - 10 probes\n\n";
+		outputFile<<"\tReport:\t\tida*-bfs-vs-ss-bfs - using "<<heuristic<<" heuristic - 1 probe\n\n";
 		outputFile<<domain<<"\n";
 		for (size_t i = 0; i < fileNames2.size(); i++) {
 			string one = fileNames2.at(i);
