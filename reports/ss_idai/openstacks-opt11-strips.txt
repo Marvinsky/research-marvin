@@ -1,0 +1,23 @@
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 100 probes
+
+openstacks-opt11-strips
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+0		1			1
+1		2			2
+2		1736			1736
+3		9.73371e+06			2.801e+06
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+0		1			1
+1		2			2
+2		193			193
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+0		1			1
+1		2			2
+2		932			932
+3		2.76211e+06			942847
