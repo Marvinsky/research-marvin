@@ -1,0 +1,101 @@
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 10 probes
+
+pegsol-opt11-strips
+
+p14.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		32			27.5
+5		10130			16539.9
+
+p19.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		162			150.4
+7		8743			8801.5
+
+p18.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+8		1429			802.6
+9		929645			376728
+
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		57			31
+5		6681			4579.4
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		267			320.2
+7		4483			2820.8
+
+p13.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		4			4
+4		97			69.4
+5		4471			1376
+
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		11			11
+4		211			195
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+5		5			5
+6		51			39.2
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+2		10			8.8
+
+p10.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		164			213.3
+5		5801			1869.6
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		12			12
+5		638			12.2
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+2		9			9
+3		231			177
+
+p17.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+5		766			328.6
+6		116776			19200.3
+
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		13			13
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+5		45			26.6
+6		2224			1866
+
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		24			14.6
+4		1101			403.8
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+2		2			2
+3		25			24
+
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		121			350.7
+4		1854			2737.4
+
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		1046			718.5
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		31			31.1
+4		1535			484.1

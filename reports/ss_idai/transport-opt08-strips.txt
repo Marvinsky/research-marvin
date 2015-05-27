@@ -1,0 +1,7 @@
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 10 probes
+
+transport-opt08-strips
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+54		15			15

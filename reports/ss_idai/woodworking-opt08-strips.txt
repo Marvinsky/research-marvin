@@ -1,0 +1,67 @@
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 10 probes
+
+woodworking-opt08-strips
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+195		1			1
+205		2849			3150.2
+210		6228			4900.7
+215		9807			7692.8
+220		29094			5702.6
+225		3.94547e+06			6.33008e+06
+
+p13.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+185		2			2
+195		19			18.8
+200		21			20.4
+205		320			280.6
+210		490			508.2
+215		6.23222e+08			2.07763e+08
+
+p22.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+135		1			1
+145		15			15
+155		26			25.4
+160		51			67.6
+165		2008			2578.2
+170		2025			1730.4
+175		3873			5805.2
+180		18411			15725.7
+185		275720			104673
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+150		3			3
+155		7			6.6
+160		169			179.4
+165		545			538.4
+170		7078			5952.2
+
+p23.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+165		3			3
+170		5			5
+175		473593			420732
+180		1.59286e+06			2.40267e+06
+185		3.51675e+06			3.49512e+06
+190		1.68693e+07			4.29179e+07
+195		9.99192e+07			1.12284e+08
+
+p21.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+85		2			2
+95		201			201
+
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+110		2			2
+120		22			22
+125		29			29
+130		579			551.8
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+185		22438			25092.3
