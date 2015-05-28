@@ -54,7 +54,7 @@ int getTotalLevels(string interText) {
 
 
 
-void create_report1(string heuristic, string algorithm1, string algorithm2, int countProblems) {
+void create_report1(vector<string> heuristics, string algorithm1, string algorithm2, int countProblems) {
 
 	int countRead = 0;
         ifstream readFile("h/report/d/instance360.txt");
@@ -73,16 +73,23 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		sufix2 = algorithm2;
 	}
 	cout<<"sufix2 = "<<sufix2<<endl;
-	string model = "experiment_1_"+sufix1 + "_" + sufix2 + "_" + heuristic;
+	string model = "global_exp_1_"+sufix1 + "_" + sufix2;
 	cout<<"model = "<<model<<endl;
 
+
+	for (size_t i = 0; i < heuristics.size();i++) {
+		cout<<heuristics.at(i)<<"\n";
+	}
+
+
+	/*
 	string  domainReporte = "mkdir /home/marvin/marvin/reports/"+model;
 	if (!system(domainReporte.c_str())) {
            cout<<"Directory "<<domainReporte.c_str()<<" created."<<endl;
         }
-
+	
 	string resultFile;
-        resultFile = "/experiment_1.txt";
+        resultFile = "/global_exp_1.txt";
         resultFile = model + resultFile;
         resultFile = "reports/" + resultFile;
         resultFile = "marvin/" + resultFile;
@@ -92,7 +99,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 	ofstream outputFile;
 	outputFile.open(resultFile.c_str(), ios::out);
-	outputFile<<"\tExperiment 1:\t\tUsing "<<heuristic<<" heuristic - 1 probe in 24 hours.\n\n";
+	outputFile<<"\tExperiment 1: Global Information of heuristics\n\n";
+
+
 	
 	outputFile<<left<<setw(20)<<"Domain";
 	outputFile<<right<<setw(15)<<"ida*";
@@ -262,30 +271,34 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
 	outputFile.close();     
+	*/
 }
 
 
 void create_report() {
-	ifstream readFile("h/report/instance360.txt");
+	ifstream readFile("h/report/instance360_exp1.txt");
 	int quantity_total_opt;
-	int total_algorithms;
+	int total_heuristics;
 	string algorithm1;
         string algorithm2;
 	string heuristic;
+	vector<string> heuristics;
 
 	readFile>>quantity_total_opt;
 	readFile>>algorithm1;
         readFile>>algorithm2;
-	readFile>>total_algorithms;
+	readFile>>total_heuristics;
 
        
 	int counter = 0;
 
 	do {
-                readFile>>heuristic;		
-		create_report1(heuristic, algorithm1, algorithm2, quantity_total_opt);
+                readFile>>heuristic;
+		heuristics.push_back(heuristic);
 		counter++;
-	} while (counter < total_algorithms); 
+	} while (counter < total_heuristics);
+
+	create_report1(heuristics, algorithm1, algorithm2, quantity_total_opt);
 }
 
 int main() {
