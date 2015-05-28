@@ -115,11 +115,153 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		//find the directory which contains the results of the heuristics
 		string look_name = "experiment_1_" + sufix1 + "_" + sufix2 + "_" + heuristic;
 		cout<<"look_name = "<<look_name<<"\n";
+		vector<string> fileNames;
 
-		string  domainReporte = "mkdir /home/marvin/marvin/reports/"+model;
-		if (!system(domainReporte.c_str())) {
-           		cout<<"Directory "<<domainReporte.c_str()<<" created."<<endl;
-        	}
+		string openFile;
+        	openFile = look_name;
+        	openFile = "reports/" + openFile;
+        	openFile = "marvin/" + openFile;
+        	openFile = "marvin/" + openFile;
+        	openFile = "/home/"+ openFile;
+
+		DIR *dir;
+        	struct dirent *ent;
+        
+       	 	dir = opendir(openFile.c_str());
+        	if (dir != NULL) {
+	    		while ((ent = readdir(dir)) != NULL) {
+				string fileName = ent->d_name;	
+				int sizeName = fileName.size();
+                		if ((sizeName == 1)  || (sizeName == 2)) {
+					//TODO
+				} else {
+		    			fileNames.push_back(fileName);
+				}
+            		}
+            		closedir(dir);
+		} else {
+	    		cout<<"Error trying to open the directory: "<<openFile.c_str()<<endl;
+		}
+
+		map<int, map<string, vector<double> > > map_heur;
+		int CONST_ROWS = 21, CONST_COLUMNS = 6;
+		cout<<"fileNames.size() = "<<fileNames.size()<<"\n";
+		for (size_t i = 0; i < fileNames.size(); i++) {
+			string experiment = fileNames.at(i);
+			cout<<"experiment = "<<experiment<<"\n";
+			vector<vector<string> > all_domain_exp;
+
+			stringstream number;
+                        string t = experiment;
+			size_t found = t.find("s_");	
+                        string exp_name_mod = t.substr(found + 2, t.length());
+                        string fname = exp_name_mod;
+			cout<<"fname = "<<fname<<"\n";
+			string t2 = fname;
+			size_t found2 = t2.find(".");
+			string exp_name_mod2 = t2.substr(0, found2);
+			string num_probes = exp_name_mod2;
+			cout<<"num_probes = "<<num_probes<<"\n";
+			int number_probes = atoi(num_probes.c_str());
+			cout<<"number_probes = "<<number_probes<<"\n";
+
+			string str;
+			string** domains;
+			vector<string> v_domains;
+			vector<double> v_ida_value;
+			vector<double> v_ida_time;
+			vector<double> v_ss_value;
+			vector<double> v_ss_time;
+			vector<int> v_problems_solved;
+
+			string expFile;
+        		expFile = openFile + "/" + experiment;
+			cout<<"expFile = "<<expFile<<"\n";
+			ifstream fexp(expFile.c_str());
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+			fexp>>str;
+	
+			domains = new string*[CONST_ROWS];
+			for (int i = 0; i < CONST_ROWS; i++) {
+				domains[i] = new string[CONST_COLUMNS];
+			}	
+			
+			for (int i = 0; i < CONST_ROWS; i++) {
+				for (int j = 0; j < CONST_COLUMNS; j++) {
+					fexp>>domains[i][j];
+				}
+			}
+
+			map<string, vector<double> > map_column;
+
+	
+			for (int i = 0; i < CONST_ROWS; i++) {
+				v_domains.push_back(domains[i][0]); //domains
+				v_ida_value.push_back(atof(domains[i][1].c_str()));
+				v_ida_time.push_back(atof(domains[i][2].c_str()));
+				v_ss_value.push_back(atof(domains[i][3].c_str()));
+				v_ss_time.push_back(atof(domains[i][4].c_str()));
+				v_problems_solved.push_back(atoi(domains[i][5].c_str()));
+			}
+
+
+			for (size_t i = 0; i < v_domains.size(); i++) {
+				vector<double> all_data;
+				string d = v_domains.at(i);
+				double ida_value = v_ida_value.at(i);
+				double ida_time = v_ida_time.at(i);
+				double ss_value = v_ss_value.at(i);
+				double ss_time = v_ss_time.at(i);
+				all_data.push_back(ida_value);
+				all_data.push_back(ida_time);
+				all_data.push_back(ss_value);
+				all_data.push_back(ss_time);
+
+				stringstream number;
+				number<<( i + 1);				
+				string key = d + "_" + number.str();
+				map_column.insert(pair<string, vector<double> >(key, all_data));
+
+				//outputFile<<d<<"\t"<<ss_value<<"\t"<<ss_time<<"\t"<<ida_value<<"\t"<<ida_time<<"\n";
+			}
+			map_heur.insert(pair<int, map<string, vector<double> > >(number_probes, map_column));
+			map<int, map<string, vector<double> > >::iterator iter;
+			for (iter = map_heur.begin(); iter != map_heur.end(); iter++) {
+				int row = iter->first;
+				map<string, vector<double> > columns = iter->second;
+				cout<<"row = "<<row<<"\n";
+				//map<string, vector<double> >::iterator iter2;
+				/*for (iter2 = columns.begin(); iter2 != columns.end(); iter2++) {
+					string key = iter2->first;
+					vector<double> column = iter->second;
+					cout<<"column = "<<key<<"\n";
+					for (size_t i = 0; i < column.size(); i++) {
+						string value = column.at(i);
+						cout<<"value = "<<value<<"\n";
+					}
+				}*/
+			}
+		}
+		cout<<"\n";
 	}
 
 	outputFile.close();
@@ -321,4 +463,4 @@ int main() {
 	create_report();
 
 	return 0;
-}
+ }

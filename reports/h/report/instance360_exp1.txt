@@ -1,6 +1,5 @@
 21
 testss
 idai
-2
+1
 ipdb
-lmcut
