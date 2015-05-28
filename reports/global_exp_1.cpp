@@ -76,20 +76,13 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	string model = "global_exp_1_"+sufix1 + "_" + sufix2;
 	cout<<"model = "<<model<<endl;
 
-
-	for (size_t i = 0; i < heuristics.size();i++) {
-		cout<<heuristics.at(i)<<"\n";
-	}
-
-
-	/*
-	string  domainReporte = "mkdir /home/marvin/marvin/reports/"+model;
-	if (!system(domainReporte.c_str())) {
-           cout<<"Directory "<<domainReporte.c_str()<<" created."<<endl;
+	string  globalReporte = "mkdir /home/marvin/marvin/reports/"+model;
+	if (!system(globalReporte.c_str())) {
+           cout<<"Directory "<<globalReporte.c_str()<<" created."<<endl;
         }
-	
+
 	string resultFile;
-        resultFile = "/global_exp_1.txt";
+       	resultFile = "/global_exp_1.txt";
         resultFile = model + resultFile;
         resultFile = "reports/" + resultFile;
         resultFile = "marvin/" + resultFile;
@@ -101,16 +94,38 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	outputFile.open(resultFile.c_str(), ios::out);
 	outputFile<<"\tExperiment 1: Global Information of heuristics\n\n";
 
+	outputFile<<left<<setw(20)<<"\t";
 
+	for (size_t i = 0; i < heuristics.size();i++) {
+		outputFile<<right<<setw(20)<<heuristics.at(i);
+	}
+	outputFile<<"\n";
 	
 	outputFile<<left<<setw(20)<<"Domain";
-	outputFile<<right<<setw(15)<<"ida*";
-	outputFile<<right<<setw(15)<<"ida* time";
-	outputFile<<right<<setw(15)<<"ss error";
-	outputFile<<right<<setw(15)<<"ss time";
-	outputFile<<right<<setw(15)<<"n";
-	outputFile<<"\n"<<endl;
+	for (size_t i = 0; i < heuristics.size();i++) {
+		outputFile<<right<<setw(20)<<"ss-error\tss-time";
+	}
+	outputFile<<right<<setw(15)<<"ida*-time";
+	//outputFile<<right<<setw(15)<<"ss time";
+	//outputFile<<right<<setw(15)<<"n";
+	//outputFile<<"\n"<<endl;
 
+	for (size_t i = 0; i < heuristics.size();i++) {
+		string heuristic = heuristics.at(i);
+		//find the directory which contains the results of the heuristics
+		string look_name = "experiment_1_" + sufix1 + "_" + sufix2 + "_" + heuristic;
+		cout<<"look_name = "<<look_name<<"\n";
+
+		string  domainReporte = "mkdir /home/marvin/marvin/reports/"+model;
+		if (!system(domainReporte.c_str())) {
+           		cout<<"Directory "<<domainReporte.c_str()<<" created."<<endl;
+        	}
+	}
+
+	outputFile.close();
+
+	/*
+	
 	//outputFile<<"Domain\t\t\tida*\t\tida* time\t\tss error\t\tss time\n\n";
 
 	do {

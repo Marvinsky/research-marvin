@@ -1,0 +1,103 @@
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 5000 probe
+
+nomystery-opt11-strips
+
+p14.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		2			2
+17		23			23.1308
+18		4518			4408.23
+19		27454			29883
+
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+18		1			1
+19		8			8.0272
+20		40			39.6926
+21		6070			5714.19
+22		56709			50988.9
+23		942405			758797
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+12		6			6.0328
+13		36			36.8728
+14		280			255.612
+
+p13.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+14		5			5
+15		1899			1890.94
+
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+25		16			15.7676
+26		61			60.7298
+27		631782			642765
+28		1.03385e+07			9.02599e+06
+29		2.23111e+08			2.33104e+08
+30		3.11824e+09			3.09995e+09
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+18		1			1
+19		8			8.1136
+20		40			40.1006
+21		6071			5247.75
+22		56782			65876.3
+23		1.08306e+06			1.11119e+06
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+8		1			1
+9		3			3
+10		13			12.943
+11		207			205.872
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		2			2
+17		25			25.2476
+18		4597			3681.52
+19		106045			117167
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+23		451			450.676
+24		19546			19276.3
+25		539253			549212
+26		8.7154e+06			8.54782e+06
+
+p17.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+25		16			16.0562
+26		61			60.2464
+27		626504			641579
+28		7.9356e+06			6.31235e+06
+29		1.37269e+08			1.21186e+08
+30		1.53412e+09			1.38033e+09
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+14		13			12.7504
+15		1923			1819.15
+
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+23		451			451.74
+24		19546			18920.2
+25		524813			481699
+26		7.89641e+06			7.58523e+06
+
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+8		1			1
+10		3			3
+11		34			34.7406
+12		90			89.0212
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+12		6			5.9092
+13		36			35.2342
+14		1038			992.892

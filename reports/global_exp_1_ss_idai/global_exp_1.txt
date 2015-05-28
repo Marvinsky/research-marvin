@@ -1,0 +1,4 @@
+	Experiment 1: Global Information of heuristics
+
+	                                   ipdb               lmcut
+Domain                  ss-error	ss-time    ss-error	ss-time      ida*-time

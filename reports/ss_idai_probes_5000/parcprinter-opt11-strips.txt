@@ -1,0 +1,56 @@
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 5000 probe
+
+parcprinter-opt11-strips
+
+p19.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1375237		1			1
+
+p18.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1340732		1			1
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+853174		1			1
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+511235		1			1
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+367824		1			1
+
+p10.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1170852		1			1
+
+p17.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1523419		1			1
+
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1242885		1			1
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+426587		1			1
+
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+609395		1			1
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+735648		1			1
+
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1182475		1			1
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+412048		11			0
+438047		39831			39869.8
