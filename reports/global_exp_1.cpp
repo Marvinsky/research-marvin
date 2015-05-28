@@ -12,11 +12,19 @@
 #include <locale>
 #include <dirent.h>
 #include <vector>
+#include <algorithm>
 
 #include <map>
 
 using namespace std;
 
+template <typename T1, typename T2>
+struct less_second {
+    typedef pair<T1, T2> type;
+    bool operator ()(type const& a, type const& b) const {
+        return a.second < b.second;
+    }
+};
 
 void create_final_report(double bound, string solution) {
 	
@@ -72,9 +80,9 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	} else {
 		sufix2 = algorithm2;
 	}
-	cout<<"sufix2 = "<<sufix2<<endl;
+	//cout<<"sufix2 = "<<sufix2<<endl;
 	string model = "global_exp_1_"+sufix1 + "_" + sufix2;
-	cout<<"model = "<<model<<endl;
+	//cout<<"model = "<<model<<endl;
 
 	string  globalReporte = "mkdir /home/marvin/marvin/reports/"+model;
 	if (!system(globalReporte.c_str())) {
@@ -110,11 +118,14 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	//outputFile<<right<<setw(15)<<"n";
 	//outputFile<<"\n"<<endl;
 
+
+	vector<pair<string, map<int, map<string, vector<double> > > > > vector_heur;
+
 	for (size_t i = 0; i < heuristics.size();i++) {
 		string heuristic = heuristics.at(i);
 		//find the directory which contains the results of the heuristics
 		string look_name = "experiment_1_" + sufix1 + "_" + sufix2 + "_" + heuristic;
-		cout<<"look_name = "<<look_name<<"\n";
+		//cout<<"look_name = "<<look_name<<"\n";
 		vector<string> fileNames;
 
 		string openFile;
@@ -145,7 +156,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
 		map<int, map<string, vector<double> > > map_heur;
 		int CONST_ROWS = 21, CONST_COLUMNS = 6;
-		cout<<"fileNames.size() = "<<fileNames.size()<<"\n";
+		//cout<<"fileNames.size() = "<<fileNames.size()<<"\n";
 		for (size_t i = 0; i < fileNames.size(); i++) {
 			string experiment = fileNames.at(i);
 			cout<<"experiment = "<<experiment<<"\n";
@@ -156,12 +167,12 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			size_t found = t.find("s_");	
                         string exp_name_mod = t.substr(found + 2, t.length());
                         string fname = exp_name_mod;
-			cout<<"fname = "<<fname<<"\n";
+			//cout<<"fname = "<<fname<<"\n";
 			string t2 = fname;
 			size_t found2 = t2.find(".");
 			string exp_name_mod2 = t2.substr(0, found2);
 			string num_probes = exp_name_mod2;
-			cout<<"num_probes = "<<num_probes<<"\n";
+			//cout<<"num_probes = "<<num_probes<<"\n";
 			int number_probes = atoi(num_probes.c_str());
 			cout<<"number_probes = "<<number_probes<<"\n";
 
@@ -176,7 +187,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
 			string expFile;
         		expFile = openFile + "/" + experiment;
-			cout<<"expFile = "<<expFile<<"\n";
+			cout<<"file that contains "<<number_probes<<" probes = "<<expFile<<"\n";
 			ifstream fexp(expFile.c_str());
 			fexp>>str;
 			fexp>>str;
@@ -226,7 +237,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
 			for (size_t i = 0; i < v_domains.size(); i++) {
 				vector<double> all_data;
-				string d = v_domains.at(i);
+				string key = v_domains.at(i);
 				double ida_value = v_ida_value.at(i);
 				double ida_time = v_ida_time.at(i);
 				double ss_value = v_ss_value.at(i);
@@ -236,32 +247,39 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 				all_data.push_back(ss_value);
 				all_data.push_back(ss_time);
 
-				stringstream number;
-				number<<( i + 1);				
-				string key = d + "_" + number.str();
 				map_column.insert(pair<string, vector<double> >(key, all_data));
-
-				//outputFile<<d<<"\t"<<ss_value<<"\t"<<ss_time<<"\t"<<ida_value<<"\t"<<ida_time<<"\n";
 			}
 			map_heur.insert(pair<int, map<string, vector<double> > >(number_probes, map_column));
+			
+			vector_heur.push_back(pair<string, map<int, map<string, vector<double> > > >(heuristic, map_heur));	
+		}
+
+		typedef vector<pair<string, map<int, map<string, vector<double> > > > > vector_type;
+		for (vector_type::const_iterator pos = vector_heur.begin();
+			pos != vector_heur.end(); ++pos) {
+			string heuristic_name = pos->first;
+			cout<<"heuristic = "<<heuristic_name<<"\n";
+			map<int, map<string, vector<double> > > map_h = pos->second;
 			map<int, map<string, vector<double> > >::iterator iter;
 			for (iter = map_heur.begin(); iter != map_heur.end(); iter++) {
 				int row = iter->first;
 				map<string, vector<double> > columns = iter->second;
-				cout<<"row = "<<row<<"\n";
-				//map<string, vector<double> >::iterator iter2;
-				/*for (iter2 = columns.begin(); iter2 != columns.end(); iter2++) {
+				cout<<"\trow = "<<row<<"\n";
+				map<string, vector<double> >::iterator iter2;
+				for (iter2 = columns.begin(); iter2 != columns.end(); iter2++) {
 					string key = iter2->first;
-					vector<double> column = iter->second;
-					cout<<"column = "<<key<<"\n";
+					vector<double> column = iter2->second;
+					cout<<"\t\tcolumn = "<<key<<"\n";
+					//outputFile<<d<<"\t"<<ss_value<<"\t"<<ss_time<<"\t"<<ida_value<<"\t"<<ida_time<<"\n";
 					for (size_t i = 0; i < column.size(); i++) {
-						string value = column.at(i);
-						cout<<"value = "<<value<<"\n";
+						double value = column.at(i);
+						cout<<"\t\t\tvalue = "<<value<<"\n";
 					}
-				}*/
+				}
 			}
 		}
-		cout<<"\n";
+
+
 	}
 
 	outputFile.close();
