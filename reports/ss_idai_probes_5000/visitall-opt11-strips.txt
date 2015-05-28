@@ -1,4 +1,4 @@
-	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 5000 probe
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 5000 probes.
 
 visitall-opt11-strips
 

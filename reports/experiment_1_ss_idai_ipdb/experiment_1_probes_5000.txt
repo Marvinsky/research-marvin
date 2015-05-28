@@ -1,4 +1,4 @@
-	Experiment 1:		Using ipdb heuristic - 5000 probe in 24 hours.
+	Experiment 1:		Using ipdb heuristic - 5000 probes in 24 hours.
 
 Domain                         ida*      ida* time       ss error        ss time              n
 

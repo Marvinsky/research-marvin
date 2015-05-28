@@ -54,8 +54,11 @@ int getTotalLevels(string interText) {
 
 
 void create_report1(string heuristic, string algorithm1, string algorithm2, int countProblems) {
+	//Setting the number of probes in order to generate directories like this: ss_idai_probes_NUM_PROBES
+	int countRead = 0, NUM_PROBES = 5000;
+	stringstream num_probes;
+        num_probes<<NUM_PROBES;
 
-	int countRead = 0;
         ifstream readFile("h/report/d/instance360.txt");
        
 	string sufix1 = "";
@@ -73,7 +76,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		sufix2 = algorithm2;
 	}
 	cout<<"sufix2 = "<<sufix2<<endl;
-	string model = sufix1 + "_" + sufix2;
+	string model = sufix1 + "_" + sufix2 +  "_probes_" + num_probes.str();
 	cout<<"model = "<<model<<endl;
         
 	do {
@@ -149,7 +152,12 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 		ofstream outputFile;
 		outputFile.open(resultFile.c_str(), ios::out);
-		outputFile<<"\tReport:\t\tida*-bfs-vs-ss-bfs - using "<<heuristic<<" heuristic - 1 probe\n\n";
+		outputFile<<"\tReport:\t\tida*-bfs-vs-ss-bfs - using "<<heuristic<<" heuristic - "<<num_probes.str();
+		if (NUM_PROBES == 1) {
+			outputFile<<" probe.\n\n";
+		} else {
+			outputFile<<" probes.\n\n";
+		}
 		outputFile<<domain<<"\n";
 		for (size_t i = 0; i < fileNames2.size(); i++) {
 			string one = fileNames2.at(i);

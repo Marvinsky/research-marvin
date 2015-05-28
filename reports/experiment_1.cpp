@@ -55,8 +55,11 @@ int getTotalLevels(string interText) {
 
 
 void create_report1(string heuristic, string algorithm1, string algorithm2, int countProblems) {
+	//set the number of probes to generate file like this: experiment_1_probes_NUM_PROBES.txt
+	int countRead = 0, NUM_PROBES = 5000;
+	stringstream num_probes;
+	num_probes<<NUM_PROBES;
 
-	int countRead = 0;
         ifstream readFile("h/report/d/instance360.txt");
        
 	string sufix1 = "";
@@ -82,7 +85,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
         }
 
 	string resultFile;
-        resultFile = "/experiment_1.txt";
+        resultFile = "/experiment_1_probes_" + num_probes.str() + ".txt";
         resultFile = model + resultFile;
         resultFile = "reports/" + resultFile;
         resultFile = "marvin/" + resultFile;
@@ -92,8 +95,12 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 	ofstream outputFile;
 	outputFile.open(resultFile.c_str(), ios::out);
-	outputFile<<"\tExperiment 1:\t\tUsing "<<heuristic<<" heuristic - 1 probe in 24 hours.\n\n";
-	
+	outputFile<<"\tExperiment 1:\t\tUsing "<<heuristic<<" heuristic - "<<num_probes.str();
+	if (NUM_PROBES == 1) {
+		outputFile<<" probe in 24 hours.\n\n";
+	} else {
+		outputFile<<" probes in 24 hours.\n\n";
+	}
 	outputFile<<left<<setw(20)<<"Domain";
 	outputFile<<right<<setw(15)<<"ida*";
 	outputFile<<right<<setw(15)<<"ida* time";
