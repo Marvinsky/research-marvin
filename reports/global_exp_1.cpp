@@ -113,7 +113,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	for (size_t i = 0; i < heuristics.size();i++) {
 		outputFile<<right<<setw(20)<<"ss-error\tss-time";
 	}
-	outputFile<<right<<setw(15)<<"ida*-time";
+	outputFile<<right<<setw(15)<<"ida*-time\n";
 	//outputFile<<right<<setw(15)<<"ss time";
 	//outputFile<<right<<setw(15)<<"n";
 	//outputFile<<"\n"<<endl;
@@ -152,7 +152,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	    		cout<<"Error trying to open the directory: "<<openFile.c_str()<<endl;
 		}
 
-		map<int, map<string, vector<double> > > map_heur;
+		map<int, map<string, vector<double> > > map_probes_heur;
 		int CONST_ROWS = 21, CONST_COLUMNS = 6;
 		cout<<"fileNames.size() = "<<fileNames.size()<<"\n";
 		for (size_t i = 0; i < fileNames.size(); i++) {
@@ -247,32 +247,45 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
 				map_column.insert(pair<string, vector<double> >(key, all_data));
 			}
-			map_heur.insert(pair<int, map<string, vector<double> > >(number_probes, map_column));
-			
-			map_all_heur.insert(pair<string, map<int, map<string, vector<double> > > >(heuristic, map_heur));
+			map_probes_heur.insert(pair<int, map<string, vector<double> > >(number_probes, map_column));	
 		}
+		map_all_heur.insert(pair<string, map<int, map<string, vector<double> > > >(heuristic, map_probes_heur));
+	}
 
-		map<string, map<int, map<string, vector<double> > > >::iterator itmap;
-		for (itmap = map_all_heur.begin(); itmap != map_all_heur.end(); itmap++) {
-			string heur_name = itmap->first;
-			cout<<"heur_name = "<<heur_name<<"\n";
-			map<int, map<string, vector<double> > > map_h = itmap->second;
-			map<int, map<string, vector<double> > >::iterator iter;
-			for (iter = map_heur.begin(); iter != map_heur.end(); iter++) {
-				int row = iter->first;
-				map<string, vector<double> > columns = iter->second;
-				cout<<"\trow = "<<row<<"\n";
-				map<string, vector<double> >::iterator iter2;
-				for (iter2 = columns.begin(); iter2 != columns.end(); iter2++) {
-					string key = iter2->first;
-					vector<double> column = iter2->second;
-					cout<<"\t\tcolumn = "<<key<<"\n";
-					//outputFile<<d<<"\t"<<ss_value<<"\t"<<ss_time<<"\t"<<ida_value<<"\t"<<ida_time<<"\n";
-					for (size_t i = 0; i < column.size(); i++) {
+	vector<string> heuristics_names, domain_names;
+	vector<int> data_probes;
+	vector<double> data_rows;
+
+	map<string, map<int, map<string, vector<double> > > >::iterator itmap;
+	for (itmap = map_all_heur.begin(); itmap != map_all_heur.end(); itmap++) {
+		string heur_name = itmap->first;
+		cout<<"heur_name = "<<heur_name<<"\n";
+		map<int, map<string, vector<double> > > map_p_h = itmap->second;
+		map<int, map<string, vector<double> > >::iterator iter;
+		heuristics_names.push_back(heur_name);
+		for (iter = map_p_h.begin(); iter != map_p_h.end(); iter++) {
+			int row = iter->first;
+			map<string, vector<double> > columns = iter->second;
+			cout<<"\trow = "<<row<<"\n";
+			data_probes.push_back(row);
+			map<string, vector<double> >::iterator iter2;
+			for (iter2 = columns.begin(); iter2 != columns.end(); iter2++) {
+				string key = iter2->first;
+				vector<double> column = iter2->second;
+				cout<<"\t\tcolumn = "<<key<<"\n";
+				outputFile<<left<<setw(15)<<key<<"\t";
+				domain_names.push_back(key);
+				//outputFile<<d<<"\t"<<ss_value<<"\t"<<ss_time<<"\t"<<ida_value<<"\t"<<ida_time<<"\n";
+				for (size_t i = 0; i < column.size(); i++) {
+					if (i == 2 || i == 3) {
 						double value = column.at(i);
+						cout<<"i = "<<i<<" value = "<<value<<"\n";
 						cout<<"\t\t\tvalue = "<<value<<"\n";
+						outputFile<<right<<setw(15)<<value<<"\t";
+						data_rows.push_back(value);
 					}
 				}
+				outputFile<<"\n";
 			}
 		}
 	}
