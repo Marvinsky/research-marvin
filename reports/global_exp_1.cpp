@@ -284,24 +284,24 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		}
 	}
 
-	cout<<left<<setw(20)<<"\t";
-	outputFile<<left<<setw(20)<<"\t";
+	cout<<left<<setw(24)<<"\t";
+	outputFile<<left<<setw(24)<<"\t";
 
 	for (size_t i = 0; i < heuristics.size();i++) {
-		cout<<right<<setw(24)<<heuristics.at(i);
-		outputFile<<right<<setw(24)<<heuristics.at(i);
+		cout<<right<<setw(40)<<heuristics.at(i);
+		outputFile<<right<<setw(40)<<heuristics.at(i);
 	}
 	outputFile<<"\n";
 	cout<<"\n";
 	//print this way:       1          10              100            1000         50000
 	//               | ss-err ss-t | ss-err ss-t | ss-err ss-t |  ss-err ss-t | ss-err ss-t |
 	//print # probes
-	cout<<left<<setw(10)<<""; //empty space
-	outputFile<<left<<setw(10)<<"";
+	cout<<left<<setw(24)<<""; //empty space
+	outputFile<<left<<setw(24)<<"";
 	int index_counter_probes = index_probes.size();
 	for (int i = 0; i < index_counter_probes; i++) {
-		cout<<right<<setw(10)<<index_probes.at(i);
-		outputFile<<right<<setw(10)<<index_probes.at(i);
+		cout<<right<<setw(18)<<index_probes.at(i);
+		outputFile<<right<<setw(18)<<index_probes.at(i);
 	}
 	outputFile<<"\n";
 	cout<<"\n";

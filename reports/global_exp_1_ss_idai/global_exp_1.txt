@@ -1,7 +1,7 @@
 	Experiment 1: Global Information of heuristics
 
-	                                       ipdb
-                   1        10       100      1000      5000
+	                                                           ipdb
+                                         1                10               100              1000              5000
 Domain                       |ss-err ss-t|     |ss-err ss-t|     |ss-err ss-t|     |ss-err ss-t|     |ss-err ss-t|        |ida* time|
 barman-opt11-strips           ---      ---      ---      ---      ---      ---      ---      ---      ---      ---
 blocks                      4.789    0.002    3.543    0.013    1.678    0.134    0.742    1.366    0.485    6.909
@@ -19,7 +19,7 @@ scanalyzer-opt11-strips     1.353    0.003   49.072    0.097    0.167    0.857  
 sokoban-opt08-strips        0.112    0.006    0.026    0.035    0.005    0.372    0.004    3.654    0.003   18.271
 sokoban-opt11-strips        0.073    0.007    0.001    0.049    0.004    0.482    0.002    4.869    0.001   24.387
 tidybot-opt11-strips        1.759    0.080    0.637    0.853    0.416    8.400    0.096   84.127    0.036  420.853
-transport-opt08-strips      0.000   -0.000    0.000   -0.000    0.000    0.000    0.000    0.040    0.000    0.260
+transport-opt08-strips      0.000    0.000    0.000    0.000    0.000    0.000    0.000    0.040    0.000    0.260
 transport-opt11-strips        ---      ---      ---      ---      ---      ---      ---      ---      ---      ---
 visitall-opt11-strips       1.136    0.002    0.784    0.015    0.234    0.080    0.075    0.840    0.055    3.989
 woodworking-opt08-strips    2.541    0.037    0.950    0.287    0.384    2.817    0.092   27.843    0.054  138.885

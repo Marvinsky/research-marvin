@@ -18,7 +18,7 @@ scanalyzer-opt11-strips    1.07152e+09        8163.32        49.0723      0.0971
 sokoban-opt08-strips         280429        9.52462      0.0258643      0.0353846             13
 sokoban-opt11-strips         404338        13.4578     0.00105698      0.0488889              9
 tidybot-opt11-strips    1.13122e+06          355.4       0.636647       0.853333              3
-transport-opt08-strips             15           0.12              0   -5.54976e-18              1
+transport-opt08-strips             15           0.12              0   5.54976e-18              1
 transport-opt11-strips            ---            ---            ---            ---            ---
 visitall-opt11-strips    7.60463e+06        31.6927       0.783998      0.0145455             11
 woodworking-opt08-strips    9.37402e+07        6484.69       0.950138         0.2875              8
