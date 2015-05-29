@@ -98,22 +98,6 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	outputFile.open(resultFile.c_str(), ios::out);
 	outputFile<<"\tExperiment 1: Global Information of heuristics\n\n";
 
-	outputFile<<left<<setw(20)<<"\t";
-
-	for (size_t i = 0; i < heuristics.size();i++) {
-		outputFile<<right<<setw(20)<<heuristics.at(i);
-	}
-	outputFile<<"\n";
-	
-	outputFile<<left<<setw(20)<<"Domain";
-	for (size_t i = 0; i < heuristics.size();i++) {
-		outputFile<<right<<setw(20)<<"ss-error\tss-time";
-	}
-	outputFile<<right<<setw(15)<<"ida*-time\n";
-	//outputFile<<right<<setw(15)<<"ss time";
-	//outputFile<<right<<setw(15)<<"n";
-	//outputFile<<"\n"<<endl;
-
 	map<string, map<int, map<string, vector<double> > > > map_all_heur;
 	for (size_t i = 0; i < heuristics.size();i++) {
 		string heuristic = heuristics.at(i);
@@ -254,7 +238,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
 
 	map<string, vector<double> > map_table;
-
+	vector<int> index_probes;
 	map<string, map<int, map<string, vector<double> > > >::iterator itmap;
 	for (itmap = map_all_heur.begin(); itmap != map_all_heur.end(); itmap++) {
 		string heur_name = itmap->first;
@@ -267,7 +251,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			int row = iter->first;
 			map<string, vector<double> > columns = iter->second;
 			cout<<"\trow = "<<row<<"\n";
-			
+			index_probes.push_back(row);
 			map<string, vector<double> >::iterator iter2;
 			for (iter2 = columns.begin(); iter2 != columns.end(); iter2++) {
 				string key = iter2->first;
@@ -299,21 +283,56 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			}
 		}
 	}
-	
-	cout<<"\nprint the table here!\n";
+
+	cout<<left<<setw(20)<<"\t";
+	outputFile<<left<<setw(20)<<"\t";
+
+	for (size_t i = 0; i < heuristics.size();i++) {
+		cout<<right<<setw(24)<<heuristics.at(i);
+		outputFile<<right<<setw(24)<<heuristics.at(i);
+	}
+	outputFile<<"\n";
+	cout<<"\n";
+	//print this way:       1          10              100            1000         50000
+	//               | ss-err ss-t | ss-err ss-t | ss-err ss-t |  ss-err ss-t | ss-err ss-t |
+	//print # probes
+	cout<<left<<setw(10)<<""; //empty space
+	outputFile<<left<<setw(10)<<"";
+	int index_counter_probes = index_probes.size();
+	for (int i = 0; i < index_counter_probes; i++) {
+		cout<<right<<setw(10)<<index_probes.at(i);
+		outputFile<<right<<setw(10)<<index_probes.at(i);
+	}
+	outputFile<<"\n";
+	cout<<"\n";
+	cout<<left<<setw(24)<<"Domain";
+	outputFile<<left<<setw(24)<<"Domain";
+	for (int i = 0; i < index_counter_probes; i++) {
+		cout<<right<<setw(18)<<"|ss-err ss-t|";
+		outputFile<<right<<setw(18)<<"|ss-err ss-t|";
+	}
+
+	cout<<right<<setw(20)<<"|ida* time|\n";
+	outputFile<<right<<setw(20)<<"|ida* time|\n";
+
 	map<string, vector<double> >::iterator itmap_table2;
 	for (itmap_table2 = map_table.begin(); itmap_table2 != map_table.end(); itmap_table2++) {
 		string a = itmap_table2->first;
 		vector<double> b = itmap_table2->second;
-		cout<<a<<"\t";
-		outputFile<<left<<setw(10)<<a;
+		
+		int weight_domain = 24, weight_fixed = 9;
+		
+		cout<<left<<setw(weight_domain)<<a;
+		outputFile<<left<<setw(weight_domain)<<a;
+
 		for (size_t i = 0; i < b.size(); i++) {
 			double d = b.at(i);
-			cout<<"\t"<<d;
 			if (d == -1) {
-				outputFile<<right<<setw(10)<<"---";
+				cout<<right<<setw(weight_fixed)<<"---";
+				outputFile<<right<<setw(weight_fixed)<<"---";
 			} else {
-				outputFile<<right<<setw(10)<<b.at(i);
+				cout<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;
+				outputFile<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;
 			}
 		}
 		outputFile<<"\n";
