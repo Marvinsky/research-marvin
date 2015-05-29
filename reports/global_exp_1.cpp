@@ -118,9 +118,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	//outputFile<<right<<setw(15)<<"n";
 	//outputFile<<"\n"<<endl;
 
-
-	vector<pair<string, map<int, map<string, vector<double> > > > > vector_heur;
-
+	map<string, map<int, map<string, vector<double> > > > map_all_heur;
 	for (size_t i = 0; i < heuristics.size();i++) {
 		string heuristic = heuristics.at(i);
 		//find the directory which contains the results of the heuristics
@@ -156,7 +154,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
 		map<int, map<string, vector<double> > > map_heur;
 		int CONST_ROWS = 21, CONST_COLUMNS = 6;
-		//cout<<"fileNames.size() = "<<fileNames.size()<<"\n";
+		cout<<"fileNames.size() = "<<fileNames.size()<<"\n";
 		for (size_t i = 0; i < fileNames.size(); i++) {
 			string experiment = fileNames.at(i);
 			cout<<"experiment = "<<experiment<<"\n";
@@ -251,15 +249,14 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			}
 			map_heur.insert(pair<int, map<string, vector<double> > >(number_probes, map_column));
 			
-			vector_heur.push_back(pair<string, map<int, map<string, vector<double> > > >(heuristic, map_heur));	
+			map_all_heur.insert(pair<string, map<int, map<string, vector<double> > > >(heuristic, map_heur));
 		}
 
-		typedef vector<pair<string, map<int, map<string, vector<double> > > > > vector_type;
-		for (vector_type::const_iterator pos = vector_heur.begin();
-			pos != vector_heur.end(); ++pos) {
-			string heuristic_name = pos->first;
-			cout<<"heuristic = "<<heuristic_name<<"\n";
-			map<int, map<string, vector<double> > > map_h = pos->second;
+		map<string, map<int, map<string, vector<double> > > >::iterator itmap;
+		for (itmap = map_all_heur.begin(); itmap != map_all_heur.end(); itmap++) {
+			string heur_name = itmap->first;
+			cout<<"heur_name = "<<heur_name<<"\n";
+			map<int, map<string, vector<double> > > map_h = itmap->second;
 			map<int, map<string, vector<double> > >::iterator iter;
 			for (iter = map_heur.begin(); iter != map_heur.end(); iter++) {
 				int row = iter->first;
@@ -278,8 +275,6 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 				}
 			}
 		}
-
-
 	}
 
 	outputFile.close();
