@@ -2,108 +2,24 @@
 
 	                                   ipdb
 Domain                  ss-error	ss-time     ida*-time
-barman-opt11-strips	              0	              0	
-blocks         	        4.78902	     0.00166667	
-elevators-opt08-strips	        8.90866	          0.835	
-elevators-opt11-strips	        13.4953	           1.13	
-floortile-opt11-strips	              0	              0	
-nomystery-opt11-strips	        1429.53	     0.00285714	
-openstacks-opt08-adl	              0	              0	
-openstacks-opt08-strips	       0.376138	           0.82	
-openstacks-opt11-strips	       0.315683	        1.82667	
-parcprinter-opt11-strips	      0.0399322	    7.21733e-15	
-parking-opt11-strips	        3.58426	          0.028	
-pegsol-opt11-strips	        1.51454	          0.047	
-scanalyzer-opt11-strips	        1.35279	     0.00285714	
-sokoban-opt08-strips	       0.112137	     0.00615385	
-sokoban-opt11-strips	      0.0731528	     0.00666667	
-tidybot-opt11-strips	        1.75894	           0.08	
-transport-opt08-strips	              0	   -1.11131e-18	
-transport-opt11-strips	              0	              0	
-visitall-opt11-strips	        1.13624	     0.00181818	
-woodworking-opt08-strips	        2.54128	         0.0375	
-woodworking-opt11-strips	        3.09263	           0.06	
-barman-opt11-strips	              0	              0	
-blocks         	        3.54292	         0.0125	
-elevators-opt08-strips	        5.72406	           8.55	
-elevators-opt11-strips	         9.0431	          11.38	
-floortile-opt11-strips	              0	              0	
-nomystery-opt11-strips	        1.75874	      0.0114286	
-openstacks-opt08-adl	              0	              0	
-openstacks-opt08-strips	       0.301239	        7.63143	
-openstacks-opt11-strips	       0.449026	        16.1067	
-parcprinter-opt11-strips	      0.0114395	     0.00615385	
-parking-opt11-strips	        1.48818	            0.2	
-pegsol-opt11-strips	       0.661981	          0.387	
-scanalyzer-opt11-strips	        49.0723	      0.0971429	
-sokoban-opt08-strips	      0.0258643	      0.0353846	
-sokoban-opt11-strips	     0.00105698	      0.0488889	
-tidybot-opt11-strips	       0.636647	       0.853333	
-transport-opt08-strips	              0	   -5.54976e-18	
-transport-opt11-strips	              0	              0	
-visitall-opt11-strips	       0.783998	      0.0145455	
-woodworking-opt08-strips	       0.950138	         0.2875	
-woodworking-opt11-strips	        1.80778	       0.573333	
-barman-opt11-strips	              0	              0	
-blocks         	         1.6783	       0.134167	
-elevators-opt08-strips	        4.03035	          85.28	
-elevators-opt11-strips	        3.89762	         117.38	
-floortile-opt11-strips	              0	              0	
-nomystery-opt11-strips	        1.06487	       0.114286	
-openstacks-opt08-adl	              0	              0	
-openstacks-opt08-strips	       0.279234	        75.6657	
-openstacks-opt11-strips	       0.456962	        172.507	
-parcprinter-opt11-strips	     0.00637733	      0.0707692	
-parking-opt11-strips	       0.398515	          2.116	
-pegsol-opt11-strips	        0.34213	          3.973	
-scanalyzer-opt11-strips	        0.16661	       0.857143	
-sokoban-opt08-strips	     0.00522342	       0.372308	
-sokoban-opt11-strips	     0.00425554	       0.482222	
-tidybot-opt11-strips	       0.416409	            8.4	
-transport-opt08-strips	              0	    6.66784e-18	
-transport-opt11-strips	              0	              0	
-visitall-opt11-strips	       0.234026	           0.08	
-woodworking-opt08-strips	       0.384399	         2.8175	
-woodworking-opt11-strips	       0.354218	        5.91333	
-barman-opt11-strips	              0	              0	
-blocks         	       0.742198	        1.36583	
-elevators-opt08-strips	        1.58258	         858.46	
-elevators-opt11-strips	        2.84576	        1178.09	
-floortile-opt11-strips	              0	              0	
-nomystery-opt11-strips	       0.474518	        1.10286	
-openstacks-opt08-adl	              0	              0	
-openstacks-opt08-strips	       0.293452	        772.126	
-openstacks-opt11-strips	        0.44249	        1678.33	
-parcprinter-opt11-strips	    0.000228272	       0.735385	
-parking-opt11-strips	        0.13508	         20.748	
-pegsol-opt11-strips	       0.326574	         39.435	
-scanalyzer-opt11-strips	       0.342058	        8.32571	
-sokoban-opt08-strips	     0.00357773	        3.65385	
-sokoban-opt11-strips	     0.00236228	        4.86889	
-tidybot-opt11-strips	      0.0955455	        84.1267	
-transport-opt08-strips	              0	           0.04	
-transport-opt11-strips	              0	              0	
-visitall-opt11-strips	      0.0745269	           0.84	
-woodworking-opt08-strips	      0.0924333	        27.8425	
-woodworking-opt11-strips	       0.247914	          59.68	
-barman-opt11-strips	              0	              0	
-blocks         	       0.484669	        6.90917	
-elevators-opt08-strips	        1.18347	        4287.43	
-elevators-opt11-strips	        1.77118	        5904.64	
-floortile-opt11-strips	              0	              0	
-nomystery-opt11-strips	       0.166866	        5.53571	
-openstacks-opt08-adl	              0	              0	
-openstacks-opt08-strips	        0.28991	        4522.48	
-openstacks-opt11-strips	       0.436857	        9491.13	
-parcprinter-opt11-strips	       0.076998	        3.60308	
-parking-opt11-strips	       0.287786	        103.608	
-pegsol-opt11-strips	       0.376462	        190.308	
-scanalyzer-opt11-strips	      0.0364208	        42.4229	
-sokoban-opt08-strips	     0.00274506	        18.2708	
-sokoban-opt11-strips	    0.000826328	        24.3867	
-tidybot-opt11-strips	      0.0358149	        420.853	
-transport-opt08-strips	              0	           0.26	
-transport-opt11-strips	              0	              0	
-visitall-opt11-strips	      0.0549349	        3.98909	
-woodworking-opt08-strips	      0.0540951	        138.885	
-woodworking-opt11-strips	       0.115866	        295.787	
+barman-opt11-strips         0         0         0         0         0         0         0         0         0         0
+blocks       4.789020.00166667   3.54292    0.0125    1.6783  0.134167  0.742198   1.36583  0.484669   6.90917
+elevators-opt08-strips   8.90866     0.835   5.72406      8.55   4.03035     85.28   1.58258    858.46   1.18347   4287.43
+elevators-opt11-strips   13.4953      1.13    9.0431     11.38   3.89762    117.38   2.84576   1178.09   1.77118   5904.64
+floortile-opt11-strips         0         0         0         0         0         0         0         0         0         0
+nomystery-opt11-strips   1429.530.00285714   1.75874 0.0114286   1.06487  0.114286  0.474518   1.10286  0.166866   5.53571
+openstacks-opt08-adl         0         0         0         0         0         0         0         0         0         0
+openstacks-opt08-strips  0.376138      0.82  0.301239   7.63143  0.279234   75.6657  0.293452   772.126   0.28991   4522.48
+openstacks-opt11-strips  0.315683   1.82667  0.449026   16.1067  0.456962   172.507   0.44249   1678.33  0.436857   9491.13
+parcprinter-opt11-strips 0.03993227.21733e-15 0.01143950.006153850.00637733 0.07076920.000228272  0.735385  0.076998   3.60308
+parking-opt11-strips   3.58426     0.028   1.48818       0.2  0.398515     2.116   0.13508    20.748  0.287786   103.608
+pegsol-opt11-strips   1.51454     0.047  0.661981     0.387   0.34213     3.973  0.326574    39.435  0.376462   190.308
+scanalyzer-opt11-strips   1.352790.00285714   49.0723 0.0971429   0.16661  0.857143  0.342058   8.32571 0.0364208   42.4229
+sokoban-opt08-strips  0.1121370.00615385 0.0258643 0.03538460.00522342  0.3723080.00357773   3.653850.00274506   18.2708
+sokoban-opt11-strips 0.07315280.006666670.00105698 0.04888890.00425554  0.4822220.00236228   4.868890.000826328   24.3867
+tidybot-opt11-strips   1.75894      0.08  0.636647  0.853333  0.416409       8.4 0.0955455   84.1267 0.0358149   420.853
+transport-opt08-strips         0-1.11131e-18         0-5.54976e-18         06.66784e-18         0      0.04         0      0.26
+transport-opt11-strips         0         0         0         0         0         0         0         0         0         0
+visitall-opt11-strips   1.136240.00181818  0.783998 0.0145455  0.234026      0.08 0.0745269      0.84 0.0549349   3.98909
+woodworking-opt08-strips   2.54128    0.0375  0.950138    0.2875  0.384399    2.8175 0.0924333   27.8425 0.0540951   138.885
+woodworking-opt11-strips   3.09263      0.06   1.80778  0.573333  0.354218   5.91333  0.247914     59.68  0.115866   295.787

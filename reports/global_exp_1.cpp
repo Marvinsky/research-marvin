@@ -26,10 +26,6 @@ struct less_second {
     }
 };
 
-void create_final_report(double bound, string solution) {
-	
-}
-
 int getTotalLevels(string interText) {
         ifstream inter2;
         inter2.open(interText.c_str());
@@ -123,7 +119,6 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		string heuristic = heuristics.at(i);
 		//find the directory which contains the results of the heuristics
 		string look_name = "experiment_1_" + sufix1 + "_" + sufix2 + "_" + heuristic;
-		//cout<<"look_name = "<<look_name<<"\n";
 		vector<string> fileNames;
 
 		string openFile;
@@ -154,7 +149,6 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
 		map<int, map<string, vector<double> > > map_probes_heur;
 		int CONST_ROWS = 21, CONST_COLUMNS = 6;
-		cout<<"fileNames.size() = "<<fileNames.size()<<"\n";
 		for (size_t i = 0; i < fileNames.size(); i++) {
 			string experiment = fileNames.at(i);
 			cout<<"experiment = "<<experiment<<"\n";
@@ -165,12 +159,10 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			size_t found = t.find("s_");	
                         string exp_name_mod = t.substr(found + 2, t.length());
                         string fname = exp_name_mod;
-			//cout<<"fname = "<<fname<<"\n";
 			string t2 = fname;
 			size_t found2 = t2.find(".");
 			string exp_name_mod2 = t2.substr(0, found2);
 			string num_probes = exp_name_mod2;
-			//cout<<"num_probes = "<<num_probes<<"\n";
 			int number_probes = atoi(num_probes.c_str());
 			cout<<"number_probes = "<<number_probes<<"\n";
 
@@ -272,41 +264,26 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			for (iter2 = columns.begin(); iter2 != columns.end(); iter2++) {
 				string key = iter2->first;
 				vector<double> column = iter2->second;
-				cout<<"\t\tcolumn = "<<key<<"\n";
-				outputFile<<left<<setw(15)<<key<<"\t";
-				//outputFile<<d<<"\t"<<ss_value<<"\t"<<ss_time<<"\t"<<ida_value<<"\t"<<ida_time<<"\n";
-				
+
 				for (size_t i = 0; i < column.size(); i++) {
 					if (i == 2 || i == 3) {
 						double value = column.at(i);
-						outputFile<<right<<setw(15)<<value<<"\t";
 						v_data_rows.push_back(value);
 					}
 				}
-				outputFile<<"\n";
 				map<string, vector<double> >::iterator itmap_table = map_table.find(key);
 				
 				if (itmap_table != map_table.end()) {
-					
 					string bring_a = itmap_table->first;
-					cout<<"is a duplicate key = "<<bring_a<<"\n";
 					vector<double> bring_b = itmap_table->second;
 					
 					for (size_t r = 0; r < v_data_rows.size(); r++) {
-						cout<<"v_data_rows.at("<<r<<") = "<<v_data_rows.at(r)<<"\n";
 						bring_b.push_back(v_data_rows.at(r));
-					}
-					for (size_t r = 0; r <  bring_b.size(); r++) {
-						cout<<"\tbring_b.at("<<r<<") = "<<bring_b.at(r)<<"\n";
-					}
-					cout<<"\tbefore insert duplicate bring_b.size() = "<<bring_b.size()<<"\n";
+					}	
 					itmap_table->second = bring_b;
-					//map_table.insert(pair<string, vector<double> >(key, bring_b));
 					bring_b.clear();
 					v_data_rows.clear();
-				} else {
-					cout<<"is a new key = "<<key<<"\n";
-					cout<<"\tbefore insert first time v_data_rows.size() = "<<v_data_rows.size()<<"\n";
+				} else {	
 					map_table.insert(pair<string, vector<double> >(key, v_data_rows));
 					v_data_rows.clear();
 				}
@@ -314,185 +291,21 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		}
 	}
 	
-	cout<<"\nprint here!\n";
+	cout<<"\nprint the table here!\n";
 	map<string, vector<double> >::iterator itmap_table2;
 	for (itmap_table2 = map_table.begin(); itmap_table2 != map_table.end(); itmap_table2++) {
 		string a = itmap_table2->first;
 		vector<double> b = itmap_table2->second;
 		cout<<a<<"\t";
+		outputFile<<left<<setw(10)<<a;
 		for (size_t i = 0; i < b.size(); i++) {
 			cout<<b.at(i)<<"\t";
+			outputFile<<right<<setw(10)<<b.at(i);
 		}
+		outputFile<<"\n";
 		cout<<"\n";
 	}
-
-
-
 	outputFile.close();
-
-	/*
-	
-	//outputFile<<"Domain\t\t\tida*\t\tida* time\t\tss error\t\tss time\n\n";
-
-	do {
-
-		string domain;
-                std::vector<string> fileNames2; 
-                string model1;
-                string model2;
-		bool directory_not_found = false;
-		readFile>>domain;
-                
-		//Read the fles from algorithm2 - idai
-		string output5;
-                //output5 = "resultado/"+output5;
-                output5 =  domain+"/"+output5;
-		output5 = algorithm2+ "/"+heuristic+"/report"+sufix2+"/"+output5;
-		output5 = "marvin/" + output5;
-		output5 = "marvin/" + output5;
-		output5 = "/home/" + output5;	
-	
-        	DIR *dir3;
-        	struct dirent *ent3;
-        
-       	 	dir3 = opendir(output5.c_str());
-        	if (dir3 != NULL) {
-	    		while ((ent3 = readdir(dir3)) != NULL) {
-				string fileName = ent3->d_name;
-				int sizeName = fileName.size();
-                		if ((sizeName == 1)  || (sizeName == 2)) {
-					//TODO
-				} else {
-		    			fileNames2.push_back(fileName);
-				}
-            		}
-            		closedir(dir3);
-		} else {
-	    		cout<<"Error trying to open the directory: "<<output5.c_str()<<endl;
-			directory_not_found = true;
-		}
-
-		if (directory_not_found) {
-			outputFile<<left<<setw(20)<<domain;
-			outputFile<<right<<setw(15)<<"---";
-			outputFile<<right<<setw(15)<<"---";
-			outputFile<<right<<setw(15)<<"---";
-			outputFile<<right<<setw(15)<<"---";
-			outputFile<<right<<setw(15)<<"---";
-			outputFile<<"\n";
-
-			//outputFile<<domain<<"\t\t------------------------------------------------------------------------\n";
-			countRead = countRead + 1;
-			continue;
-		}
-
-		//Read the files from algorithm1 - ss
-		
-        	string output;
-		output =  domain+"/fdist/"+output;
-		output = algorithm1+"/"+heuristic+"/report"+sufix1+"_bounds/"+output;
-		output = "marvin/" + output;
-		output = "marvin/" + output;
-		output = "/home/" + output;	
-	        cout<<"\noutput = "<<output.c_str()<<"\n";	
-
-		double ida_exp_average = 0, ida_sum_total = 0, ida_time_average = 0, ida_time_sum_total = 0, ss_error_average = 0, sum_pi = 0, ss_sum_time = 0, ss_time_average = 0;
-		int number_instances = 0;
-		for (size_t i = 0; i < fileNames2.size(); i++) {
-			string one = fileNames2.at(i);
-			string idabounds = output5.c_str() + one;
-			cout<<"idabounds = "<<idabounds.c_str()<<"\n";
-
-			string str;
-			double h_initial, time, bound, exp, gen;
-			string** levels;
-			vector<string> v_time;
-			vector<long> v_bound;
-			vector<double> v_exp;
-			vector<double> v_gen;
-
-        		ifstream idai(idabounds.c_str());
-			idai>>str;
-			idai>>str;
-			idai>>h_initial;
-			idai>>str;
-			idai>>str;
-			idai>>str;
-			idai>>str;
-			cout<<"str = "<<str<<"\n";
-			int total_levels = getTotalLevels(idabounds.c_str());
-			cout<<"total_levels = "<<total_levels<<"\n";
-			
-			levels = new string*[total_levels];
-			for (int i = 0; i < total_levels; i++) {
-				levels[i] = new string[4];
-			}
-
-			for (int i = 0; i < total_levels; i++) {
-				for (int j = 0; j < 4; j++) {
-					idai>>levels[i][j];
-				}
-			}
-			
-			for (int i = 0; i < total_levels; i++) {
-				v_time.push_back(levels[i][0]);
-				string t = levels[i][0];
-				size_t found = t.find("s");
-				string time_name = t.substr(0, found);
-			        ida_time_sum_total += atof(time_name.c_str());	
-				v_bound.push_back(atof(levels[i][1].c_str()));
-				v_exp.push_back(atof(levels[i][2].c_str()));
-				ida_sum_total += atof(levels[i][2].c_str());
-				v_gen.push_back(atof(levels[i][3].c_str()));
-			}
-			idai.close();
-			
-			for (size_t i = 0; i < v_bound.size(); i++) {
-				stringstream number;
-				number<<v_bound.at(i);
-				//index one: p01.pddl
-				string t = one;
-				size_t found = t.find(".");
-				string problem_name_mod = t.substr(0, found);
-				string fname = problem_name_mod;
-				fname += "_" + number.str();
-				fname += string(".pddl");
-				string solution = output.c_str() + fname;
-
-				ifstream ssbound(solution.c_str());
-				string str;
-				double ss_exp = 0, ss_time = 0, pi = 0;
-				ssbound>>str;
-				ssbound>>str;
-				ssbound>>ss_exp;
-				ssbound>>str;
-				ssbound>>ss_time;
-				ssbound.close();
-				pi = abs(ss_exp - v_exp.at(i))/v_exp.at(i);
-				sum_pi += pi;
-				ss_sum_time += ss_time;
-			}
-			number_instances++;
-		}
-		ida_exp_average = ida_sum_total/number_instances;
-		ida_time_average = ida_time_sum_total/number_instances;
-		ss_error_average = sum_pi/number_instances;
-		ss_time_average = ss_sum_time/number_instances;
-
-		outputFile<<left<<setw(20)<<domain;
-		outputFile<<right<<setw(15)<<ida_exp_average;
-		outputFile<<right<<setw(15)<<ida_time_average;
-		outputFile<<right<<setw(15)<<ss_error_average;
-		outputFile<<right<<setw(15)<<ss_time_average;
-		outputFile<<right<<setw(15)<<number_instances;
-		outputFile<<"\n";
-
-		//outputFile<<domain<<"\t\t"<<setw(8)<<ida_exp_average<<"\t\t"<<setw(6)<<ida_time_average<<"\t\t"<<setw(8)<<ss_error_average<<"\t\t"<<number_instances<<"\n";
-                
-	    	countRead = countRead + 1;
-	} while (countRead < countProblems);
-	outputFile.close();     
-	*/
 }
 
 
