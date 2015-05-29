@@ -64,8 +64,8 @@ int getTotalLevels(string interText) {
 
 void create_report1(vector<string> heuristics, string algorithm1, string algorithm2, int countProblems) {
 
-	int countRead = 0;
-        ifstream readFile("h/report/d/instance360.txt");
+	//int countRead = 0;
+        //ifstream readFile("h/report/d/instance360.txt");
        
 	string sufix1 = "";
 	if (algorithm1.length() > 4) { 
@@ -252,9 +252,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		map_all_heur.insert(pair<string, map<int, map<string, vector<double> > > >(heuristic, map_probes_heur));
 	}
 
-	vector<string> heuristics_names, domain_names;
-	vector<int> data_probes;
-	vector<double> data_rows;
+
+	map<string, vector<double> > map_table;
 
 	map<string, map<int, map<string, vector<double> > > >::iterator itmap;
 	for (itmap = map_all_heur.begin(); itmap != map_all_heur.end(); itmap++) {
@@ -262,33 +261,72 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		cout<<"heur_name = "<<heur_name<<"\n";
 		map<int, map<string, vector<double> > > map_p_h = itmap->second;
 		map<int, map<string, vector<double> > >::iterator iter;
-		heuristics_names.push_back(heur_name);
+
+		vector<double> v_data_rows;
 		for (iter = map_p_h.begin(); iter != map_p_h.end(); iter++) {
 			int row = iter->first;
 			map<string, vector<double> > columns = iter->second;
 			cout<<"\trow = "<<row<<"\n";
-			data_probes.push_back(row);
+			
 			map<string, vector<double> >::iterator iter2;
 			for (iter2 = columns.begin(); iter2 != columns.end(); iter2++) {
 				string key = iter2->first;
 				vector<double> column = iter2->second;
 				cout<<"\t\tcolumn = "<<key<<"\n";
 				outputFile<<left<<setw(15)<<key<<"\t";
-				domain_names.push_back(key);
 				//outputFile<<d<<"\t"<<ss_value<<"\t"<<ss_time<<"\t"<<ida_value<<"\t"<<ida_time<<"\n";
+				
 				for (size_t i = 0; i < column.size(); i++) {
 					if (i == 2 || i == 3) {
 						double value = column.at(i);
-						cout<<"i = "<<i<<" value = "<<value<<"\n";
-						cout<<"\t\t\tvalue = "<<value<<"\n";
 						outputFile<<right<<setw(15)<<value<<"\t";
-						data_rows.push_back(value);
+						v_data_rows.push_back(value);
 					}
 				}
 				outputFile<<"\n";
+				map<string, vector<double> >::iterator itmap_table = map_table.find(key);
+				
+				if (itmap_table != map_table.end()) {
+					
+					string bring_a = itmap_table->first;
+					cout<<"is a duplicate key = "<<bring_a<<"\n";
+					vector<double> bring_b = itmap_table->second;
+					
+					for (size_t r = 0; r < v_data_rows.size(); r++) {
+						cout<<"v_data_rows.at("<<r<<") = "<<v_data_rows.at(r)<<"\n";
+						bring_b.push_back(v_data_rows.at(r));
+					}
+					for (size_t r = 0; r <  bring_b.size(); r++) {
+						cout<<"\tbring_b.at("<<r<<") = "<<bring_b.at(r)<<"\n";
+					}
+					cout<<"\tbefore insert duplicate bring_b.size() = "<<bring_b.size()<<"\n";
+					itmap_table->second = bring_b;
+					//map_table.insert(pair<string, vector<double> >(key, bring_b));
+					bring_b.clear();
+					v_data_rows.clear();
+				} else {
+					cout<<"is a new key = "<<key<<"\n";
+					cout<<"\tbefore insert first time v_data_rows.size() = "<<v_data_rows.size()<<"\n";
+					map_table.insert(pair<string, vector<double> >(key, v_data_rows));
+					v_data_rows.clear();
+				}
 			}
 		}
 	}
+	
+	cout<<"\nprint here!\n";
+	map<string, vector<double> >::iterator itmap_table2;
+	for (itmap_table2 = map_table.begin(); itmap_table2 != map_table.end(); itmap_table2++) {
+		string a = itmap_table2->first;
+		vector<double> b = itmap_table2->second;
+		cout<<a<<"\t";
+		for (size_t i = 0; i < b.size(); i++) {
+			cout<<b.at(i)<<"\t";
+		}
+		cout<<"\n";
+	}
+
+
 
 	outputFile.close();
 
