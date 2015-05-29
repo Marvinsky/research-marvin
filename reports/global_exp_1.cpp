@@ -216,7 +216,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 				double ida_time = v_ida_time.at(i);
 				double ss_value = v_ss_value.at(i);
 				double ss_time = v_ss_time.at(i);
-				cout<<"key = "<<key<<", ida_value = "<<ida_value<<", ida_time = "<<ida_time<<", ss_value = "<<ss_value<<", ss_time = "<<ss_time<<"\n";
+				//cout<<"key = "<<key<<", ida_value = "<<ida_value<<", ida_time = "<<ida_time<<", ss_value = "<<ss_value<<", ss_time = "<<ss_time<<"\n";
 				if (ida_value == 0 && ida_time == 0 && ss_time == 0 && ss_time == 0) {
 					all_data.push_back(-1);
 					all_data.push_back(-1);
@@ -242,7 +242,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	map<string, map<int, map<string, vector<double> > > >::iterator itmap;
 	for (itmap = map_all_heur.begin(); itmap != map_all_heur.end(); itmap++) {
 		string heur_name = itmap->first;
-		cout<<"heur_name = "<<heur_name<<"\n";
+		//cout<<"heur_name = "<<heur_name<<"\n";
 		map<int, map<string, vector<double> > > map_p_h = itmap->second;
 		map<int, map<string, vector<double> > >::iterator iter;
 
@@ -250,20 +250,20 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		for (iter = map_p_h.begin(); iter != map_p_h.end(); iter++) {
 			int row = iter->first;
 			map<string, vector<double> > columns = iter->second;
-			cout<<"\trow = "<<row<<"\n";
+			//cout<<"\trow = "<<row<<"\n";
 			index_probes.push_back(row);
 			map<string, vector<double> >::iterator iter2;
 			for (iter2 = columns.begin(); iter2 != columns.end(); iter2++) {
 				string key = iter2->first;
 				vector<double> column = iter2->second;
-				cout<<"\t\tkey = "<<key<<"\n";
+				//cout<<"\t\tkey = "<<key<<"\n";
 				for (size_t i = 0; i < column.size(); i++) {
 					if (i == 2 || i == 3) {
 						double value = column.at(i);
 						v_data_rows.push_back(value);
 					}
 				}
-				cout<<"\n";
+				//cout<<"\n";
 				map<string, vector<double> >::iterator itmap_table = map_table.find(key);
 				
 				if (itmap_table != map_table.end()) {
@@ -284,6 +284,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		}
 	}
 
+	//Printing the table
 	cout<<left<<setw(24)<<"\t";
 	outputFile<<left<<setw(24)<<"\t";
 
@@ -296,8 +297,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	//print this way:       1          10              100            1000         50000
 	//               | ss-err ss-t | ss-err ss-t | ss-err ss-t |  ss-err ss-t | ss-err ss-t |
 	//print # probes
-	cout<<left<<setw(24)<<""; //empty space
-	outputFile<<left<<setw(24)<<"";
+	cout<<left<<setw(18)<<""; //empty space
+	outputFile<<left<<setw(18)<<"";
 	int index_counter_probes = index_probes.size();
 	for (int i = 0; i < index_counter_probes; i++) {
 		cout<<right<<setw(18)<<index_probes.at(i);
@@ -312,8 +313,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		outputFile<<right<<setw(18)<<"|ss-err ss-t|";
 	}
 
-	cout<<right<<setw(20)<<"|ida* time|\n";
-	outputFile<<right<<setw(20)<<"|ida* time|\n";
+	cout<<right<<setw(20)<<"|ida* time|\n\n";
+	outputFile<<right<<setw(20)<<"|ida* time|\n\n";
 
 	map<string, vector<double> >::iterator itmap_table2;
 	for (itmap_table2 = map_table.begin(); itmap_table2 != map_table.end(); itmap_table2++) {
