@@ -232,10 +232,18 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 				double ida_time = v_ida_time.at(i);
 				double ss_value = v_ss_value.at(i);
 				double ss_time = v_ss_time.at(i);
-				all_data.push_back(ida_value);
-				all_data.push_back(ida_time);
-				all_data.push_back(ss_value);
-				all_data.push_back(ss_time);
+				cout<<"key = "<<key<<", ida_value = "<<ida_value<<", ida_time = "<<ida_time<<", ss_value = "<<ss_value<<", ss_time = "<<ss_time<<"\n";
+				if (ida_value == 0 && ida_time == 0 && ss_time == 0 && ss_time == 0) {
+					all_data.push_back(-1);
+					all_data.push_back(-1);
+					all_data.push_back(-1);
+					all_data.push_back(-1);
+				} else {
+					all_data.push_back(ida_value);
+					all_data.push_back(ida_time);
+					all_data.push_back(ss_value);
+					all_data.push_back(ss_time);
+				}
 
 				map_column.insert(pair<string, vector<double> >(key, all_data));
 			}
@@ -264,13 +272,14 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			for (iter2 = columns.begin(); iter2 != columns.end(); iter2++) {
 				string key = iter2->first;
 				vector<double> column = iter2->second;
-
+				cout<<"\t\tkey = "<<key<<"\n";
 				for (size_t i = 0; i < column.size(); i++) {
 					if (i == 2 || i == 3) {
 						double value = column.at(i);
 						v_data_rows.push_back(value);
 					}
 				}
+				cout<<"\n";
 				map<string, vector<double> >::iterator itmap_table = map_table.find(key);
 				
 				if (itmap_table != map_table.end()) {
@@ -299,8 +308,13 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		cout<<a<<"\t";
 		outputFile<<left<<setw(10)<<a;
 		for (size_t i = 0; i < b.size(); i++) {
-			cout<<b.at(i)<<"\t";
-			outputFile<<right<<setw(10)<<b.at(i);
+			double d = b.at(i);
+			cout<<"\t"<<d;
+			if (d == -1) {
+				outputFile<<right<<setw(10)<<"---";
+			} else {
+				outputFile<<right<<setw(10)<<b.at(i);
+			}
 		}
 		outputFile<<"\n";
 		cout<<"\n";
