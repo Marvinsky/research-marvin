@@ -240,6 +240,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	map<string, vector<double> > map_table;
 	vector<int> index_probes;
 	map<string, map<int, map<string, vector<double> > > >::iterator itmap;
+	int count_amount_heur = 0, count_amount_probes = 0;
 	for (itmap = map_all_heur.begin(); itmap != map_all_heur.end(); itmap++) {
 		string heur_name = itmap->first;
 		//cout<<"heur_name = "<<heur_name<<"\n";
@@ -306,8 +307,12 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 				}
 			}
 			counter++;
+			count_amount_probes++;
 		}
+		count_amount_heur++;
 	}
+	
+	int amount_probes = count_amount_probes/count_amount_heur;
 
 	//Printing the table
 	cout<<left<<setw(24)<<"\t";
@@ -325,26 +330,24 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	//print # probes
 	cout<<left<<setw(18)<<""; //empty space
 	outputFile<<left<<setw(18)<<"";
+
+	//modify index_probes
+	for (int i = 0;  i < count_amount_heur; i++) {
+		int p = i + 1;
+		int q = i;
+		int index = amount_probes * p + q;
+		index_probes.insert(index_probes.begin() + index, -1); 
+	}	
+
 	int index_counter_probes = index_probes.size();
-
-	vector<int> index_heur_probes;
 	for (int i = 0; i < index_counter_probes; i++) {
-		int probe_n = index_probes.at(i);
-		if (i%5 == 0 && i != 0) {
-			index_heur_probes.push_back(-1);
-		} else {
-			index_heur_probes.push_back(probe_n);
-		}
-	}
-
-	for (int i = 0; i < index_heur_probes.size(); i++) {
-		int n = index_heur_probes.at(i);
+		int n = index_probes.at(i);
 		if (n == -1) {
 			cout<<right<<setw(18)<<" ";
 			outputFile<<right<<setw(18)<<" ";
 		} else {
-			cout<<right<<setw(18)<<index_probes.at(i);
-			outputFile<<right<<setw(18)<<index_probes.at(i);
+			cout<<right<<setw(18)<<n;
+			outputFile<<right<<setw(18)<<n;
 		}
 	}	
 
@@ -352,9 +355,9 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	cout<<"\n";
 	cout<<left<<setw(24)<<"Domain";
 	outputFile<<left<<setw(24)<<"Domain";
-	int increment_weight_2 = 0;
 	for (int i = 0; i < index_counter_probes; i++) {
-		if (i != 0 && i%5 == 0) {
+		int n = index_probes.at(i);
+		if (n == -1) {
 			cout<<right<<setw(20)<<"|ida* time|";
 			outputFile<<right<<setw(20)<<"|ida* time|";
 		} else {
@@ -362,10 +365,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			outputFile<<right<<setw(18)<<"|ss-err ss-t|";
 		}
 	}
-
-	cout<<right<<setw(20)<<"|ida* time|\n\n";
-	outputFile<<right<<setw(20)<<"|ida* time|\n\n";
-
+	
 	map<string, vector<double> >::iterator itmap_table2;	
 	for (itmap_table2 = map_table.begin(); itmap_table2 != map_table.end(); itmap_table2++) {
 		string a = itmap_table2->first;
