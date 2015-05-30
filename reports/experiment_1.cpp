@@ -101,7 +101,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	} else {
 		outputFile<<" probes in 24 hours.\n\n";
 	}
-	outputFile<<left<<setw(20)<<"Domain";
+	outputFile<<left<<setw(24)<<"Domain";
 	outputFile<<right<<setw(15)<<"ida*";
 	outputFile<<right<<setw(15)<<"ida* time";
 	outputFile<<right<<setw(15)<<"ss error";
@@ -150,7 +150,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		}
 
 		if (directory_not_found) {
-			outputFile<<left<<setw(20)<<domain;
+			outputFile<<left<<setw(24)<<domain;
 			outputFile<<right<<setw(15)<<"---";
 			outputFile<<right<<setw(15)<<"---";
 			outputFile<<right<<setw(15)<<"---";
@@ -256,7 +256,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		ss_error_average = sum_pi/number_instances;
 		ss_time_average = ss_sum_time/number_instances;
 
-		outputFile<<left<<setw(20)<<domain;
+		outputFile<<left<<setw(24)<<domain;
 		outputFile<<right<<setw(15)<<ida_exp_average;
 		outputFile<<right<<setw(15)<<ida_time_average;
 		outputFile<<right<<setw(15)<<ss_error_average;
