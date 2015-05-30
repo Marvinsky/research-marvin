@@ -365,6 +365,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			outputFile<<right<<setw(18)<<"|ss-err ss-t|";
 		}
 	}
+	cout<<"\n\n";
+	outputFile<<"\n\n";
 	
 	map<string, vector<double> >::iterator itmap_table2;	
 	for (itmap_table2 = map_table.begin(); itmap_table2 != map_table.end(); itmap_table2++) {
