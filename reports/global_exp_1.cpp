@@ -246,7 +246,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		map<int, map<string, vector<double> > > map_p_h = itmap->second;
 		map<int, map<string, vector<double> > >::iterator iter;
 
-		vector<double> v_data_rows;
+		vector<double> v_data_rows, v_data_rows_ida;
+		int counter = 0, size_probes = map_p_h.size();
 		for (iter = map_p_h.begin(); iter != map_p_h.end(); iter++) {
 			int row = iter->first;
 			map<string, vector<double> > columns = iter->second;
@@ -261,6 +262,12 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 					if (i == 2 || i == 3) {
 						double value = column.at(i);
 						v_data_rows.push_back(value);
+					}
+					if (size_probes == counter + 1) {
+						if (i == 0 || i == 1) {
+							double d = column.at(i);
+							v_data_rows_ida.push_back(d);
+						}
 					}
 				}
 				//cout<<"\n";
@@ -280,7 +287,25 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 					map_table.insert(pair<string, vector<double> >(key, v_data_rows));
 					v_data_rows.clear();
 				}
+
+				if (size_probes == counter + 1) {
+					map<string, vector<double> >::iterator itmap_t = map_table.find(key);
+					if (itmap_t != map_table.end()) {
+						string bring_x = itmap_t->first;
+						vector<double> bring_y = itmap_t->second;
+
+						for (size_t r = 0; r < v_data_rows_ida.size(); r++) {
+							bring_y.push_back(v_data_rows_ida.at(r));
+						}
+						itmap_t->second = bring_y;
+						bring_y;
+						v_data_rows_ida.clear();
+					} else {
+
+					}
+				}
 			}
+			counter++;
 		}
 	}
 
@@ -317,6 +342,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	outputFile<<right<<setw(20)<<"|ida* time|\n\n";
 
 	map<string, vector<double> >::iterator itmap_table2;
+	int size_table = map_table.size(), counter_table = 0;
 	for (itmap_table2 = map_table.begin(); itmap_table2 != map_table.end(); itmap_table2++) {
 		string a = itmap_table2->first;
 		vector<double> b = itmap_table2->second;
@@ -332,12 +358,18 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 				cout<<right<<setw(weight_fixed)<<"---";
 				outputFile<<right<<setw(weight_fixed)<<"---";
 			} else {
-				cout<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;
-				outputFile<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;
+				if (size_table == counter_table + 1) {
+					cout<<right<<setw(9)<<d;
+					outputFile<<right<<setw(9)<<d;
+				} else {
+					cout<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;	
+					outputFile<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;
+				}
 			}
 		}
 		outputFile<<"\n";
 		cout<<"\n";
+		counter_table++;
 	}
 	outputFile.close();
 }
