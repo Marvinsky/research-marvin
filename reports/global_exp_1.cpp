@@ -55,7 +55,16 @@ int getTotalLevels(string interText) {
 	return total_niveles;
 }
 
-
+bool isIdaInfo(int i, vector<int> format_before) {
+	bool flag = false;
+	for (size_t j = 0; j < format_before.size(); j++) {
+		int index = format_before.at(j);
+		if (i == index) {
+			flag = true;
+		}
+	}
+	return flag;
+}
 
 
 void create_report1(vector<string> heuristics, string algorithm1, string algorithm2, int countProblems) {
@@ -321,7 +330,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	for (size_t i = 0; i < heuristics.size();i++) {
 		cout<<right<<setw(40 + increment_weight)<<heuristics.at(i);
 		outputFile<<right<<setw(40 + increment_weight)<<heuristics.at(i);
-		increment_weight += 50;
+		increment_weight += 80;
 	}
 	outputFile<<"\n";
 	cout<<"\n";
@@ -332,13 +341,19 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	outputFile<<left<<setw(18)<<"";
 
 	//modify index_probes
+	vector<int> format_before;  //print correctly the ida informatin
 	for (int i = 0;  i < count_amount_heur; i++) {
 		int p = i + 1;
 		int q = i;
 		int index = amount_probes * p + q;
-		index_probes.insert(index_probes.begin() + index, -1); 
-	}	
+		index_probes.insert(index_probes.begin() + index, -1);
 
+		int n1 = index * 2;
+		int n2 = index * 2 + 1;
+		format_before.push_back(n1);
+		format_before.push_back(n2);
+	}	
+	
 	int index_counter_probes = index_probes.size();
 	bool is_probe_set = false;
 	for (int i = 0; i < index_counter_probes; i++) {
@@ -349,8 +364,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			is_probe_set = true;
 		} else {
 			if (is_probe_set) {
-				cout<<right<<setw(24)<<n;
-				outputFile<<right<<setw(24)<<n;
+				cout<<right<<setw(30)<<n;
+				outputFile<<right<<setw(30)<<n;
 				is_probe_set = false;
 			} else {
 				cout<<right<<setw(18)<<n;
@@ -372,8 +387,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			is_ida_time = true;
 		} else {
 			if (is_ida_time) {
-				cout<<right<<setw(22)<<"|ss-err ss-t|";
-				outputFile<<right<<setw(22)<<"|ss-err ss-t|";
+				cout<<right<<setw(28)<<"|ss-err ss-t|";
+				outputFile<<right<<setw(28)<<"|ss-err ss-t|";
 				is_ida_time = false;
 			} else {
 				cout<<right<<setw(18)<<"|ss-err ss-t|";
@@ -387,17 +402,17 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	map<string, vector<double> >::iterator itmap_table2;	
 	for (itmap_table2 = map_table.begin(); itmap_table2 != map_table.end(); itmap_table2++) {
 		string a = itmap_table2->first;
-		vector<double> b = itmap_table2->second;
+		vector<double> b = itmap_table2->second; //collector of columns
 		
 		int weight_domain = 24, weight_fixed = 9;
 		
 		cout<<left<<setw(weight_domain)<<a;
 		outputFile<<left<<setw(weight_domain)<<a;
-
+		
 		for (size_t i = 0; i < b.size(); i++) {
-			double d = b.at(i);
+			double d = b.at(i);	
 			if (d == -1) {
-				if (i%10 == 0 && i != 0) {
+				if (isIdaInfo(i, format_before)) {
 					cout<<right<<setw(15)<<"---";
 					outputFile<<right<<setw(15)<<"---";
 				} else {
@@ -405,7 +420,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 					outputFile<<right<<setw(weight_fixed)<<"---";
 				}
 			} else {
-				if (i%10 == 0 && i != 0) {
+				if (isIdaInfo(i, format_before)) {
 					cout<<right<<setw(15)<<d;
 					outputFile<<right<<setw(15)<<d;
 				} else {
