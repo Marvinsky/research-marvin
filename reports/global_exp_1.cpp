@@ -340,14 +340,22 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	}	
 
 	int index_counter_probes = index_probes.size();
+	bool is_probe_set = false;
 	for (int i = 0; i < index_counter_probes; i++) {
 		int n = index_probes.at(i);
 		if (n == -1) {
 			cout<<right<<setw(18)<<" ";
 			outputFile<<right<<setw(18)<<" ";
+			is_probe_set = true;
 		} else {
-			cout<<right<<setw(18)<<n;
-			outputFile<<right<<setw(18)<<n;
+			if (is_probe_set) {
+				cout<<right<<setw(24)<<n;
+				outputFile<<right<<setw(24)<<n;
+				is_probe_set = false;
+			} else {
+				cout<<right<<setw(18)<<n;
+				outputFile<<right<<setw(18)<<n;
+			}
 		}
 	}	
 
@@ -355,14 +363,22 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	cout<<"\n";
 	cout<<left<<setw(24)<<"Domain";
 	outputFile<<left<<setw(24)<<"Domain";
+	bool is_ida_time = false;
 	for (int i = 0; i < index_counter_probes; i++) {
 		int n = index_probes.at(i);
 		if (n == -1) {
 			cout<<right<<setw(20)<<"|ida* time|";
 			outputFile<<right<<setw(20)<<"|ida* time|";
+			is_ida_time = true;
 		} else {
-			cout<<right<<setw(18)<<"|ss-err ss-t|";
-			outputFile<<right<<setw(18)<<"|ss-err ss-t|";
+			if (is_ida_time) {
+				cout<<right<<setw(22)<<"|ss-err ss-t|";
+				outputFile<<right<<setw(22)<<"|ss-err ss-t|";
+				is_ida_time = false;
+			} else {
+				cout<<right<<setw(18)<<"|ss-err ss-t|";
+				outputFile<<right<<setw(18)<<"|ss-err ss-t|";
+			}
 		}
 	}
 	cout<<"\n\n";
