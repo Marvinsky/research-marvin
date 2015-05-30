@@ -341,8 +341,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	cout<<right<<setw(20)<<"|ida* time|\n\n";
 	outputFile<<right<<setw(20)<<"|ida* time|\n\n";
 
-	map<string, vector<double> >::iterator itmap_table2;
-	int size_table = map_table.size(), counter_table = 0;
+	map<string, vector<double> >::iterator itmap_table2;	
 	for (itmap_table2 = map_table.begin(); itmap_table2 != map_table.end(); itmap_table2++) {
 		string a = itmap_table2->first;
 		vector<double> b = itmap_table2->second;
@@ -355,12 +354,17 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		for (size_t i = 0; i < b.size(); i++) {
 			double d = b.at(i);
 			if (d == -1) {
-				cout<<right<<setw(weight_fixed)<<"---";
-				outputFile<<right<<setw(weight_fixed)<<"---";
+				if (i > 9) {
+					cout<<right<<setw(15)<<"---";
+					outputFile<<right<<setw(15)<<"---";
+				} else {
+					cout<<right<<setw(weight_fixed)<<"---";
+					outputFile<<right<<setw(weight_fixed)<<"---";
+				}
 			} else {
-				if (size_table == counter_table + 1) {
-					cout<<right<<setw(9)<<d;
-					outputFile<<right<<setw(9)<<d;
+				if (i > 9) {
+					cout<<right<<setw(15)<<d;
+					outputFile<<right<<setw(15)<<d;
 				} else {
 					cout<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;	
 					outputFile<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;
@@ -369,7 +373,6 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		}
 		outputFile<<"\n";
 		cout<<"\n";
-		counter_table++;
 	}
 	outputFile.close();
 }
