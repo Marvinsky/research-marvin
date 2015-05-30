@@ -86,7 +86,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
         }
 
 	string resultFile;
-       	resultFile = "/global_exp_1.txt";
+       	resultFile = "/global_exp_1_test.txt";
         resultFile = model + resultFile;
         resultFile = "reports/" + resultFile;
         resultFile = "marvin/" + resultFile;
@@ -312,10 +312,11 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	//Printing the table
 	cout<<left<<setw(24)<<"\t";
 	outputFile<<left<<setw(24)<<"\t";
-
+	int increment_weight = 0;
 	for (size_t i = 0; i < heuristics.size();i++) {
-		cout<<right<<setw(40)<<heuristics.at(i);
-		outputFile<<right<<setw(40)<<heuristics.at(i);
+		cout<<right<<setw(40 + increment_weight)<<heuristics.at(i);
+		outputFile<<right<<setw(40 + increment_weight)<<heuristics.at(i);
+		increment_weight += 50;
 	}
 	outputFile<<"\n";
 	cout<<"\n";
@@ -325,17 +326,41 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	cout<<left<<setw(18)<<""; //empty space
 	outputFile<<left<<setw(18)<<"";
 	int index_counter_probes = index_probes.size();
+
+	vector<int> index_heur_probes;
 	for (int i = 0; i < index_counter_probes; i++) {
-		cout<<right<<setw(18)<<index_probes.at(i);
-		outputFile<<right<<setw(18)<<index_probes.at(i);
+		int probe_n = index_probes.at(i);
+		if (i%5 == 0 && i != 0) {
+			index_heur_probes.push_back(-1);
+		} else {
+			index_heur_probes.push_back(probe_n);
+		}
 	}
+
+	for (int i = 0; i < index_heur_probes.size(); i++) {
+		int n = index_heur_probes.at(i);
+		if (n == -1) {
+			cout<<right<<setw(18)<<" ";
+			outputFile<<right<<setw(18)<<" ";
+		} else {
+			cout<<right<<setw(18)<<index_probes.at(i);
+			outputFile<<right<<setw(18)<<index_probes.at(i);
+		}
+	}	
+
 	outputFile<<"\n";
 	cout<<"\n";
 	cout<<left<<setw(24)<<"Domain";
 	outputFile<<left<<setw(24)<<"Domain";
+	int increment_weight_2 = 0;
 	for (int i = 0; i < index_counter_probes; i++) {
-		cout<<right<<setw(18)<<"|ss-err ss-t|";
-		outputFile<<right<<setw(18)<<"|ss-err ss-t|";
+		if (i != 0 && i%5 == 0) {
+			cout<<right<<setw(20)<<"|ida* time|";
+			outputFile<<right<<setw(20)<<"|ida* time|";
+		} else {
+			cout<<right<<setw(18)<<"|ss-err ss-t|";
+			outputFile<<right<<setw(18)<<"|ss-err ss-t|";
+		}
 	}
 
 	cout<<right<<setw(20)<<"|ida* time|\n\n";
@@ -354,7 +379,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		for (size_t i = 0; i < b.size(); i++) {
 			double d = b.at(i);
 			if (d == -1) {
-				if (i > 9) {
+				if (i%10 == 0 && i != 0) {
 					cout<<right<<setw(15)<<"---";
 					outputFile<<right<<setw(15)<<"---";
 				} else {
@@ -362,7 +387,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 					outputFile<<right<<setw(weight_fixed)<<"---";
 				}
 			} else {
-				if (i > 9) {
+				if (i%10 == 0 && i != 0) {
 					cout<<right<<setw(15)<<d;
 					outputFile<<right<<setw(15)<<d;
 				} else {
