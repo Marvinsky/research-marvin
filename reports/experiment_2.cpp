@@ -232,8 +232,16 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
         	if (dir3 != NULL) {
 	    		while ((ent3 = readdir(dir3)) != NULL) {
 				string fileName = ent3->d_name;
+				string t = fileName;
+				size_t  found = t.find(".sw");
+				bool is_swp_file = false;
+				if (found < 100) {
+					string swp_name_mod = t.substr(found, t.length());
+					cout<<"swp_name_mod = "<<swp_name_mod<<"\n";
+					is_swp_file = true;
+				}
 				int sizeName = fileName.size();
-                		if ((sizeName == 1)  || (sizeName == 2)) {
+                		if ((sizeName == 1)  || (sizeName == 2) || (is_swp_file)) {
 					//TODO
 				} else {
 		    			fileNames2.push_back(fileName);
@@ -269,7 +277,15 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                         while ((ent = readdir(dir)) != NULL) {
                                 string fileName = ent->d_name;
                                 int sizeName = fileName.size();
-                                if ((sizeName == 1)  || (sizeName == 2) || (sizeName == 9)) {
+				string t = fileName;
+                                size_t  found = t.find(".sw");
+                                bool is_swp_file = false;
+                                if (found < 100) {
+                                        string swp_name_mod = t.substr(found, t.length());
+                                        cout<<"swp_name_mod = "<<swp_name_mod<<"\n";
+                                        is_swp_file = true;
+                                }
+                                if ((sizeName == 1)  || (sizeName == 2) || (sizeName == 9) || (is_swp_file)) {
                                         //TODO
                                 } else {
                                         fileNames.push_back(fileName);

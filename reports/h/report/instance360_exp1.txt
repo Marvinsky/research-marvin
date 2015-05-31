@@ -1,7 +1,8 @@
 21
 testss
 idai
-3
+4
 ipdb
 hmax
 merge_and_shrink
+lmcut
