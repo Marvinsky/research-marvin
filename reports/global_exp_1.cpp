@@ -127,9 +127,17 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
        	 	dir = opendir(openFile.c_str());
         	if (dir != NULL) {
 	    		while ((ent = readdir(dir)) != NULL) {
-				string fileName = ent->d_name;	
+				string fileName = ent->d_name;
+				string t = fileName;
+				size_t found = t.find(".sw");
+				bool is_swp_file = false;
+				if (found < 100) {
+					string swp_name_mod = t.substr(found, t.length());
+					cout<<"swp_name_mod = "<<swp_name_mod<<"\n";
+					is_swp_file = true;
+				}
 				int sizeName = fileName.size();
-                		if ((sizeName == 1)  || (sizeName == 2)) {
+                		if ((sizeName == 1)  || (sizeName == 2) || (is_swp_file)) {
 					//TODO
 				} else {
 		    			fileNames.push_back(fileName);
