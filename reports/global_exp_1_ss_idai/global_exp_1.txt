@@ -1,8 +1,8 @@
 	Experiment 1: Global Information of heuristics
 
 	                                                           ipdb
-                                   1                10               100              1000              5000
-Domain                       |ss-err ss-t|     |ss-err ss-t|     |ss-err ss-t|     |ss-err ss-t|     |ss-err ss-t|       |ida* time|
+                                   1                10               100              1000              5000                  
+Domain                       |ss-err ss-t|     |ss-err ss-t|     |ss-err ss-t|     |ss-err ss-t|     |ss-err ss-t|         |ida* time|
 
 barman-opt11-strips           ---      ---      ---      ---      ---      ---      ---      ---      ---      ---            ---            ---
 blocks                      4.789    0.002    3.543    0.013    1.678    0.134    0.742    1.366    0.485    6.909 2096930000.000      10018.200
