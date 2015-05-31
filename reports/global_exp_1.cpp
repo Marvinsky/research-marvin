@@ -334,11 +334,14 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	//Printing the table
 	cout<<left<<setw(24)<<"\t";
 	outputFile<<left<<setw(24)<<"\t";
-	int increment_weight = 0;
 	for (size_t i = 0; i < heuristics.size();i++) {
-		cout<<right<<setw(40 + increment_weight)<<heuristics.at(i);
-		outputFile<<right<<setw(40 + increment_weight)<<heuristics.at(i);
-		increment_weight += 80;
+		if (i > 0) {
+			cout<<right<<setw(120)<<heuristics.at(i);
+			outputFile<<right<<setw(120)<<heuristics.at(i);
+		} else {
+			cout<<right<<setw(40)<<heuristics.at(i);
+			outputFile<<right<<setw(40)<<heuristics.at(i);
+		}
 	}
 	outputFile<<"\n";
 	cout<<"\n";
