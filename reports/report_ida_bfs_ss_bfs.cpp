@@ -66,7 +66,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	} else {
 		sufix1 = algorithm1;
 	}
-        cout<<"sufix1 = "<<sufix1<<endl;
+        //cout<<"sufix1 = "<<sufix1<<endl;
 
 	string sufix2 = "";
 	if (algorithm2.length() > 4) {	
@@ -74,9 +74,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	} else {
 		sufix2 = algorithm2;
 	}
-	cout<<"sufix2 = "<<sufix2<<endl;
+	//cout<<"sufix2 = "<<sufix2<<endl;
 	string model = sufix1 + "_" + sufix2 +  "_probes_" + num_probes.str() + "_" + heuristic;
-	cout<<"model = "<<model<<endl;
+	//cout<<"model = "<<model<<endl;
         
 	do {
 
@@ -126,9 +126,17 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                                         cout<<"swp_name_mod = "<<swp_name_mod<<"\n";
                                         is_swp_file = true;
                                 }
-
+				//Validate the outputFile<< because some times the files in idai are empty, so...
+				string fileEmpty = output5 + fileName;
+				bool is_file_empty_or_damage = false;
+				ifstream testingFile(fileEmpty.c_str());
+				if (is_empty(testingFile)) {
+					cout<<"fileEmpty = "<<fileEmpty<<"\n";
+					is_file_empty_or_damage = true;
+				}
+				testingFile.close();
 				int sizeName = fileName.size();
-                		if ((sizeName == 1)  || (sizeName == 2) || (is_swp_file)) {
+                		if ((sizeName == 1)  || (sizeName == 2) || (is_swp_file) || (is_file_empty_or_damage)) {
 					//TODO
 				} else {
 		    			fileNames2.push_back(fileName);
@@ -189,9 +197,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			idai>>str;
 			idai>>str;
 			idai>>str;
-			cout<<"str = "<<str<<"\n";
+
 			int total_levels = getTotalLevels(idabounds.c_str());
-			cout<<"total_levels = "<<total_levels<<"\n";
 			
 			levels = new string*[total_levels];
 			for (int i = 0; i < total_levels; i++) {
@@ -225,7 +232,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				fname += "_" + number.str();
 				fname += string(".pddl");
 				string solution = output.c_str() + fname;
-				cout<<"solution2 = "<<solution<<"\n";
+				//cout<<"solution2 = "<<solution<<"\n";
 
 				ifstream ssbound(solution.c_str());
 				string str;

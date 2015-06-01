@@ -2,12 +2,6 @@
 
 blocks
 
-probBLOCKS-15-0.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
-probBLOCKS-16-2.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
 probBLOCKS-5-2.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 6		1			1
@@ -21,9 +15,6 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 14		3582			3740.72
 15		16187			16304.6
 16		42071			42575.8
-
-probBLOCKS-9-2.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
 
 probBLOCKS-8-2.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -84,18 +75,6 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 9		41			40.808
 10		124			122.52
 
-probBLOCKS-13-0.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
-probBLOCKS-11-0.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
-probBLOCKS-12-0.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
-probBLOCKS-13-1.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
 probBLOCKS-5-0.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 5		1			1
@@ -125,9 +104,6 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 19		7.31583e+07			8.21337e+07
 20		1.92064e+08			1.92801e+08
 
-probBLOCKS-17-0.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
 probBLOCKS-5-1.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 4		1			1
@@ -137,21 +113,6 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 8		214			220.521
 9		820			817.005
 10		2627			2746.27
-
-probBLOCKS-11-2.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
-probBLOCKS-12-1.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
-probBLOCKS-15-1.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
-probBLOCKS-7-1.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
-probBLOCKS-8-1.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
 
 probBLOCKS-6-2.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -169,12 +130,6 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 18		384894			362891
 19		2.18703e+06			2.26879e+06
 20		5.91226e+06			6.12245e+06
-
-probBLOCKS-14-0.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
-probBLOCKS-10-0.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
 
 probBLOCKS-4-0.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -199,15 +154,6 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 19		1.27108e+06			1.25722e+06
 20		3.55652e+06			3.56987e+06
 
-probBLOCKS-16-1.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
-probBLOCKS-10-2.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
-probBLOCKS-14-1.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
 probBLOCKS-6-1.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 3		1			1
@@ -218,15 +164,3 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 8		1778			1767.81
 9		9824			9826.17
 10		31354			29607.8
-
-probBLOCKS-11-1.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
-probBLOCKS-10-1.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
-probBLOCKS-9-0.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
-
-probBLOCKS-9-1.pddl
-bound		ida*-bfs (exp)		ss-bfs (exp)
