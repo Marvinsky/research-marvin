@@ -55,7 +55,7 @@ int getTotalLevels(string interText) {
 
 void create_report1(string heuristic, string algorithm1, string algorithm2, int countProblems) {
 	//Setting the number of probes in order to generate directories like this: ss_idai_probes_NUM_PROBES
-	int countRead = 0, NUM_PROBES = 5000;
+	int countRead = 0, NUM_PROBES = 1000;
 	stringstream num_probes;
         num_probes<<NUM_PROBES;
 
@@ -76,7 +76,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		sufix2 = algorithm2;
 	}
 	cout<<"sufix2 = "<<sufix2<<endl;
-	string model = sufix1 + "_" + sufix2 +  "_probes_" + num_probes.str();
+	string model = sufix1 + "_" + sufix2 +  "_probes_" + num_probes.str() + "_" + heuristic;
 	cout<<"model = "<<model<<endl;
         
 	do {

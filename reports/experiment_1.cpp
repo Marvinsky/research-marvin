@@ -56,7 +56,7 @@ int getTotalLevels(string interText) {
 
 void create_report1(string heuristic, string algorithm1, string algorithm2, int countProblems) {
 	//set the number of probes to generate file like this: experiment_1_probes_NUM_PROBES.txt
-	int countRead = 0, NUM_PROBES = 5000;
+	int countRead = 0, NUM_PROBES = 1000;
 	stringstream num_probes;
 	num_probes<<NUM_PROBES;
 

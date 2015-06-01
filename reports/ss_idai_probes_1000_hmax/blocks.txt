@@ -1,0 +1,232 @@
+	Report:		ida*-bfs-vs-ss-bfs - using hmax heuristic - 1000 probes.
+
+blocks
+
+probBLOCKS-15-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-16-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-5-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		1			1
+7		3			3
+8		7			7
+9		18			17.988
+10		43			42.84
+11		149			147.492
+12		348			352.264
+13		1482			1505.54
+14		3582			3740.72
+15		16187			16304.6
+16		42071			42575.8
+
+probBLOCKS-9-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-8-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+5		1			1
+6		7			7
+7		56			56.25
+8		282			282.344
+9		2012			2019.33
+10		7713			7817.05
+11		59229			59918.3
+12		189873			193086
+13		1.59743e+06			1.66426e+06
+14		4.5786e+06			4.9611e+06
+15		4.16095e+07			4.20334e+07
+16		1.11177e+08			1.07608e+08
+
+probBLOCKS-6-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		1			1
+6		7			7
+7		15			15.336
+8		51			50.73
+9		178			174.492
+10		507			502.58
+11		2383			2425.9
+12		6488			6229.27
+
+probBLOCKS-4-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			1
+4		4			4
+5		12			12
+6		50			50.262
+
+probBLOCKS-8-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		1			1
+6		17			17.096
+7		47			44.368
+8		267			267.616
+9		1209			1268.12
+10		4770			4939.7
+11		29180			28543.3
+12		94565			94583.2
+13		703899			674218
+14		2.0286e+06			1.8488e+06
+15		1.71776e+07			1.58819e+07
+16		4.60757e+07			4.7445e+07
+17		4.24936e+08			4.5669e+08
+18		1.09013e+09			1.14625e+09
+
+probBLOCKS-4-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+5		1			1
+6		3			3
+7		7			7
+8		17			17.024
+9		41			40.808
+10		124			122.52
+
+probBLOCKS-13-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-11-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-12-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-13-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-5-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+5		1			1
+6		4			4
+7		13			13.036
+8		37			36.944
+9		132			131.98
+10		366			360.238
+11		1393			1400.92
+12		4109			4070.34
+
+probBLOCKS-7-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		1			1
+7		4			4
+8		14			14.056
+9		44			44.17
+10		169			170.583
+11		608			608.612
+12		2294			2331.29
+13		10272			10101.5
+14		34488			34185
+15		190288			201593
+16		568439			612990
+17		3.68159e+06			3.96813e+06
+18		1.01375e+07			1.05623e+07
+19		7.31583e+07			8.21337e+07
+20		1.92064e+08			1.92801e+08
+
+probBLOCKS-17-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-5-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		1			1
+5		5			5
+6		17			17.001
+7		71			70.66
+8		214			220.521
+9		820			817.005
+10		2627			2746.27
+
+probBLOCKS-11-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-12-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-15-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-7-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-8-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-6-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+7		1			1
+8		3			3
+9		7			7
+10		19			19.046
+11		56			56.17
+12		173			176.116
+13		679			692.066
+14		1991			2010.1
+15		9614			9871.16
+16		26453			27537.4
+17		142971			146969
+18		384894			362891
+19		2.18703e+06			2.26879e+06
+20		5.91226e+06			6.12245e+06
+
+probBLOCKS-14-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-10-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-4-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+2		1			1
+4		12			11.912
+5		21			21
+6		114			112.408
+
+probBLOCKS-7-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+8		1			1
+9		3			3
+10		7			7
+11		19			19.018
+12		61			60.754
+13		218			220.972
+14		800			828.978
+15		3599			3704.83
+16		12227			12242.9
+17		66521			65076
+18		201967			205927
+19		1.27108e+06			1.25722e+06
+20		3.55652e+06			3.56987e+06
+
+probBLOCKS-16-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-10-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-14-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-6-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			1
+4		4			4
+5		28			28
+6		94			94.506
+7		542			543.074
+8		1778			1767.81
+9		9824			9826.17
+10		31354			29607.8
+
+probBLOCKS-11-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-10-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-9-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+probBLOCKS-9-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
