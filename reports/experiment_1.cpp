@@ -17,9 +17,8 @@
 
 using namespace std;
 
-
-void create_final_report(double bound, string solution) {
-	
+bool is_empty(std::ifstream& pFile) {
+    return pFile.peek() == std::ifstream::traits_type::eof();
 }
 
 int getTotalLevels(string interText) {
@@ -144,8 +143,18 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					cout<<"swp_name_mod = "<<swp_name_mod<<"\n";
 					is_swp_file = true;
 				}
+
+				//Validate the outputFile<< because some times the files in idai are empty, so...
+                                string fileEmpty = output5 + fileName;
+                                bool is_file_empty_or_damage = false;
+                                ifstream testingFile(fileEmpty.c_str());
+                                if (is_empty(testingFile)) {
+                                        cout<<"fileEmpty = "<<fileEmpty<<"\n";
+                                        is_file_empty_or_damage = true;
+                                }
+                                testingFile.close();
 				int sizeName = fileName.size();
-                		if ((sizeName == 1)  || (sizeName == 2)  || (is_swp_file)) {
+                		if ((sizeName == 1)  || (sizeName == 2)  || (is_swp_file) || (is_file_empty_or_damage)) {
 					//TODO
 				} else {
 		    			fileNames2.push_back(fileName);
