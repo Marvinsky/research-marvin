@@ -5,10 +5,28 @@
 #include <sstream>
 #include <string>
 #include <vector>
+#include <map>
+
+#include <algorithm>
+#include <set>
 #include <time.h>
+
+
 
 using std::string;
 using namespace std;
+
+template <typename T1, typename T2>
+struct less_second {
+    typedef pair<T1, T2> type;
+    bool operator ()(type const& a, type const& b) const {
+        return a.second < b.second;
+    }
+};
+
+bool is_empty(std::ifstream& pFile) {
+    return pFile.peek() == std::ifstream::traits_type::eof();
+}
 
 string currentDateTime() {
 	time_t now = time(0);
@@ -18,6 +36,205 @@ string currentDateTime() {
 	
 	strftime(buf, sizeof(buf), "%Y-%m-%d", &tstruct);
 	return buf;
+}
+
+vector<pair<string, double> >  analyzeFile(string output_BC) {
+        ifstream infile_astar(output_BC.c_str());
+        std::string line;
+        int count_slash = 0, count_line = 0, n_heuristics = 0;
+        bool in_b = false, allow_add = false;
+        vector<char> add_char;
+	vector<string> add_lines_heuristics; //add each line of the file
+        while (std::getline(infile_astar, line)) {
+                add_lines_heuristics.push_back(line);
+                for (int i = 0; i < line.length(); i++) {
+                        char a = line[i];
+                        if (allow_add) {
+                                if (a != ')') {
+                                        add_char.push_back(a);
+                                } else {
+                                        allow_add = false;
+                                }
+                        }
+                        if (a == '/') {
+                                count_slash++;
+                        }
+
+                        if (a == 'b') {
+                                in_b = true;
+                                continue;
+                        }
+                        if (in_b) {
+                                if (a == 'c') {
+                                        count_line++;
+                                        allow_add = true;
+                                } else {
+                                        in_b = false;
+                                }
+                        }
+                }
+        }
+
+        if (count_line > 0) {
+                n_heuristics = count_slash/count_line + 1;
+        }
+        infile_astar.close();
+        int h[count_line][n_heuristics];
+        int index_i = 0, index_j = 0;
+        bool first_time_used = false;
+        for (size_t i = 0; i < add_char.size(); i++) {
+                char a = add_char.at(i);
+                if (a == '(') {
+                        if (first_time_used) {
+                                index_i++;
+                                index_j = 0;
+                        }
+                } else {
+                        if (a == '/') {
+
+                        } else {
+                                stringstream ss, ss2;
+                                string s;
+                                int n;
+                                ss << a;
+                                ss >> s;
+                                ss2 << s;
+                                ss2 >> n;
+                                h[index_i][index_j] = n;
+                                index_j++;
+                                first_time_used = true;
+                        }
+                }
+        }
+
+        //count cc
+        ifstream infile_astar2(output_BC.c_str());
+        std::string line2;
+        bool allow_add_cc = false, in_c = false, in_cc = false;
+        vector<char> add_char_cc;
+        int count_cc = 0;
+        while (std::getline(infile_astar2, line2)) {
+                for (int i = 0; i < line2.length(); i++) {
+                        char a = line2[i];
+                        if (allow_add_cc) {
+                                if (a == 'b') {
+                                        add_char_cc.push_back(',');
+                                        allow_add_cc = false;
+                                } else {
+                                        add_char_cc.push_back(a);
+                                        continue;
+                                }
+                        }
+
+                        //save cc
+                        if (a == 'c') {
+                                in_cc = true;
+                                continue;
+                        }
+                        if (in_cc) {
+                                if (a == '=') {
+                                        allow_add_cc = true;
+                                }
+                                in_cc = false;
+                        }
+                }
+        }
+
+        vector<char> v_add_char;
+        vector<string> v_add_string;
+
+        for (int i = 0; i < add_char_cc.size(); i++) {
+                char a = add_char_cc.at(i);
+                if (a == ',') {
+                        std::string str(v_add_char.begin(), v_add_char.end());
+                        v_add_string.push_back(str);
+                        v_add_char.clear();
+                } else {
+                        v_add_char.push_back(a);
+                }
+        }
+        if (v_add_char.size() > 0) {
+                std::string str(v_add_char.begin(), v_add_char.end());
+                v_add_string.push_back(str);
+                v_add_char.clear();
+        }
+
+        double cc[count_line][1];
+        for (int i = 0; i < v_add_string.size(); i++) {
+                cc[i][0] = atof(v_add_string.at(i).c_str());
+        }
+
+	map<string, double> m;
+        for (int j = 0; j < n_heuristics; j++) {
+                double sum_ones = 0;
+                stringstream number;
+                number<<j+1;
+                string name = "gapdb_"+number.str();
+                for (int i = 0; i < count_line; i++) {
+                        if (h[i][j] == 1) {
+                                sum_ones += cc[i][0];
+                        }
+                }
+                m.insert(pair<string, double>(name, sum_ones));
+        }
+
+        vector<pair<string, double> > mapcopy(m.begin(), m.end());
+        sort(mapcopy.begin(), mapcopy.end(), less_second<string, double>());
+
+	//Analyze each line of heuristic with his properties
+	//h(,0):,heur is GAPDB,mutation_rate:1.0000000,size=20000,with disjoint patterns
+	string delimiter = ",";
+	for (size_t i = 0; i < n_heuristics; i++) {
+		string s = add_lines_heuristics.at(i);
+		string pot[6];
+		size_t pos = 0;
+		string token;
+		int index = 0;
+		while ((pos = s.find(delimiter)) != std::string::npos) {
+			token = s.substr(0, pos);
+			pot[index] = token;
+			s.erase(0, pos + delimiter.length());
+			index++;
+		}
+		pot[index] = s;
+
+		string number_h, 
+			number_aux, 
+			mutation_rate, 
+			mutation_rate_aux, 
+			size_gapdb,
+			size_gapdb_aux, 
+			wd,
+			wd_aux;
+		number_aux = pot[1];
+		size_t t1 = number_aux.find(")");
+		number_h = number_aux.substr(0, t1);
+		cout<<"number_h = "<<number_h<<"\n";
+		
+		mutation_rate_aux = pot[3];
+		size_t t2 = mutation_rate_aux.find(":");
+		mutation_rate = mutation_rate_aux.substr(t2 + 1, mutation_rate_aux.length());
+		cout<<"mutation_rate = "<<mutation_rate<<"\n";
+		
+		size_gapdb_aux = pot[4];
+		size_t t3 = size_gapdb_aux.find("=");
+		size_gapdb = size_gapdb_aux.substr(t3 + 1);
+		cout<<"size_gapdb = "<<size_gapdb<<"\n";
+
+//without disjoint patterns
+	
+		wd_aux = pot[5];
+		size_t t4 = wd_aux.find("out");
+		if (t4 < 100) {
+			wd = "without_disjoint_patterns";
+		} else {
+			wd = "with_disjoint_patterns";
+		}
+		cout<<"wd = "<<wd<<"\n\n";
+
+	}
+
+        return mapcopy;
 }
 
 int getTotalLevels(string interText) {
@@ -65,8 +282,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	arquivo = "marvin/"+ arquivo;
 	arquivo = "/home/" + arquivo;
 	ofstream outfile(arquivo.c_str(), ios::out);
-	
-	
+		
 	sas = "Astar";
 	sas += pasta;
 	sas += Resultado.str();
@@ -90,40 +306,74 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         vector<double> v_gen;
 
 	ifstream idai(idabounds.c_str());
-        idai>>str;
-        idai>>str;
-        idai>>h_initial;
-        idai>>str;
-        idai>>str;
-        idai>>str;
-        idai>>str;
-        cout<<"str = "<<str<<"\n";
-        int total_levels = getTotalLevels(idabounds.c_str());
-        cout<<"total_levels = "<<total_levels<<"\n";
-
-        levels = new string*[total_levels];
-        for (int i = 0; i < total_levels; i++) {
-            levels[i] = new string[4];
-        }
-
-        for (int i = 0; i < total_levels; i++) {
-            for (int j = 0; j < 4; j++) {
-                idai>>levels[i][j];
-            }
-        }
-
-        for (int i = 0; i < total_levels; i++) {
-            v_time.push_back(levels[i][0]);
-            v_bound.push_back(atof(levels[i][1].c_str()));
-            v_exp.push_back(atof(levels[i][2].c_str()));
-            v_gen.push_back(atof(levels[i][3].c_str()));
-        }
 	
-	F_boundary = v_bound.at(v_bound.size() - 1);
-	cout<<"F_boundary = "<<F_boundary<<"\n";
-        idai.close();
+	if (!is_empty(idai)) {
+        	idai>>str;
+        	idai>>str;
+        	idai>>h_initial;
+        	idai>>str;
+        	idai>>str;
+        	idai>>str;
+        	idai>>str;
+        	cout<<"str = "<<str<<"\n";
+        	int total_levels = getTotalLevels(idabounds.c_str());
+       		cout<<"total_levels = "<<total_levels<<"\n";
 
-	//end calling idai in order to get the max_bound to use
+        	levels = new string*[total_levels];
+        	for (int i = 0; i < total_levels; i++) {
+            		levels[i] = new string[4];
+        	}
+
+        	for (int i = 0; i < total_levels; i++) {
+            		for (int j = 0; j < 4; j++) {
+                		idai>>levels[i][j];
+           		 }
+        	}
+
+        	for (int i = 0; i < total_levels; i++) {
+            		v_time.push_back(levels[i][0]);
+            		v_bound.push_back(atof(levels[i][1].c_str()));
+            		v_exp.push_back(atof(levels[i][2].c_str()));
+            		v_gen.push_back(atof(levels[i][3].c_str()));
+        	}
+	
+		F_boundary = v_bound.at(v_bound.size() - 1);
+		cout<<"F_boundary = "<<F_boundary<<"\n";
+        	idai.close();
+
+		//end calling idai in order to get the max_bound to use
+		//astar_gapdb must call the bc file from ss in order to obatain the gapdb heuristics
+		string t = problema, bc_instance;
+		stringstream to_string;
+		to_string<<F_boundary;
+		size_t found = t.find(".");
+		string bcname_mod = t.substr(0, found);
+		cout<<"bcname_mod = "<<bcname_mod<<"\n";
+		bc_instance = bcname_mod + "_F_" + to_string.str() + ".csv";
+		cout<<"bc_instance = "<<bc_instance<<"\n";
+
+		string bcfile = bc_instance;
+        	bcfile =  pasta + "/bc/" + bcfile;
+        	bcfile = "testss/" + heuristic  + "/reportss/" + bcfile;
+       	 	bcfile = "marvin/" + bcfile;
+        	bcfile = "marvin/" + bcfile;
+        	bcfile = "/home/" + bcfile;
+		cout<<"bcfile in ss = "<<bcfile<<"\n";
+
+		vector<pair<string, double> > m = analyzeFile(bcfile.c_str());		
+
+		typedef std::vector<std::pair<std::string, double> > vector_type;
+                for (vector_type::const_iterator pos = m.begin();
+                     pos != m.end(); ++pos)
+                {
+                     string s = pos->first;
+		     double d = pos->second;
+		     cout<<"("<<s<<", "<<d<<")\n";
+                }
+	
+
+		//end astar_gpdb call the bc from ss
+	}
 
 	outfile<<"#PBS -N _p"<<(num_problema+1)<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\n#PBS -l pmem=6gb\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
 	//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
@@ -162,7 +412,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	cout<<allow<<"\n";
 	system(allow.c_str());
 	executeFile = "sh "+arquivo;
-	system(executeFile.c_str());
+	//system(executeFile.c_str());
 }
 
 
