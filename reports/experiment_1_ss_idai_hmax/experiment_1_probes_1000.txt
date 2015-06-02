@@ -13,7 +13,7 @@ openstacks-opt08-strips             ---            ---            ---           
 openstacks-opt11-strips             ---            ---            ---            ---            ---
 parcprinter-opt11-strips            ---            ---            ---            ---            ---
 parking-opt11-strips                ---            ---            ---            ---            ---
-pegsol-opt11-strips                 ---            ---            ---            ---            ---
+pegsol-opt11-strips              151280         10.998       0.166335          7.239             20
 scanalyzer-opt11-strips             ---            ---            ---            ---            ---
 sokoban-opt08-strips                ---            ---            ---            ---            ---
 sokoban-opt11-strips                ---            ---            ---            ---            ---
