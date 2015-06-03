@@ -396,7 +396,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 				}
 			}
 			gapdb_string+=",eps=120,colls=5)";
-			//cout<<"\tgapdb_string = "<<gapdb_string<<"\n\n";
+			cout<<"\tgapdb_string = "<<gapdb_string<<"\n\n";
 			v_gapdb_string.push_back(gapdb_string);
 		}
 		//end astar_gpdb call the bc from ss
