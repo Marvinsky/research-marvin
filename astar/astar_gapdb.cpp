@@ -406,9 +406,13 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			//creation of each sh file for the gapdb heuristic
 			string arquivo;
 			string sas;
-			stringstream Resultado;
-	
-			arquivo += "A_gapdb_";
+			stringstream Resultado, Resultado2;
+			
+			Resultado2<<num_problema+1;
+
+			arquivo += "A";
+			arquivo += Resultado2.str();
+			arquivo += "_gapdb_";
 			Resultado<<i+1;
 			arquivo += Resultado.str();
 			arquivo += string(".sh");

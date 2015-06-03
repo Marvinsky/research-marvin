@@ -177,9 +177,9 @@ generated_by_level = 8322
 expanded_by_level = 613
 fnivel: 27
 nodesGeneratedByLevel: 613
- time0: 0.00
+ time0: 0.02
 nodesGeneratedToTheLevel: 2701
-f = 28 [12999 evaluated, 2701 expanded, t=0.00s, 4208 KB]
+f = 28 [12999 evaluated, 2701 expanded, t=0.02s, 4208 KB]
 generated_by_level = 10210
 expanded_by_level = 739
 fnivel: 28
@@ -212,16 +212,16 @@ generated_by_level = 11916
 expanded_by_level = 879
 fnivel: 32
 nodesGeneratedByLevel: 879
- time0: 0.02
+ time0: 0.04
 nodesGeneratedToTheLevel: 6197
-f = 33 [26512 evaluated, 6197 expanded, t=0.02s, 4808 KB]
+f = 33 [26512 evaluated, 6197 expanded, t=0.04s, 4808 KB]
 generated_by_level = 15758
 expanded_by_level = 1175
 fnivel: 33
 nodesGeneratedByLevel: 1175
- time0: 0.02
+ time0: 0.04
 nodesGeneratedToTheLevel: 7372
-f = 34 [30267 evaluated, 7372 expanded, t=0.02s, 5076 KB]
+f = 34 [30267 evaluated, 7372 expanded, t=0.04s, 5076 KB]
 generated_by_level = 22188
 expanded_by_level = 1628
 fnivel: 34
@@ -254,9 +254,9 @@ generated_by_level = 25532
 expanded_by_level = 1852
 fnivel: 38
 nodesGeneratedByLevel: 1852
- time0: 0.08
+ time0: 0.10
 nodesGeneratedToTheLevel: 16465
-f = 39 [59818 evaluated, 16465 expanded, t=0.08s, 6608 KB]
+f = 39 [59818 evaluated, 16465 expanded, t=0.10s, 6608 KB]
 generated_by_level = 30976
 expanded_by_level = 2268
 fnivel: 39
@@ -268,24 +268,24 @@ generated_by_level = 36724
 expanded_by_level = 2714
 fnivel: 40
 nodesGeneratedByLevel: 2714
- time0: 0.10
+ time0: 0.12
 nodesGeneratedToTheLevel: 21447
-f = 41 [72580 evaluated, 21447 expanded, t=0.10s, 7136 KB]
+f = 41 [72580 evaluated, 21447 expanded, t=0.12s, 7136 KB]
 generated_by_level = 46652
 expanded_by_level = 3428
 fnivel: 41
 nodesGeneratedByLevel: 3428
- time0: 0.12
+ time0: 0.14
 nodesGeneratedToTheLevel: 24875
-f = 42 [80145 evaluated, 24875 expanded, t=0.12s, 7536 KB]
+f = 42 [80145 evaluated, 24875 expanded, t=0.14s, 7536 KB]
 Solution found!
 generated_by_level = 53729
 expanded_by_level = 3949
 fnivel: 42
 nodesGeneratedByLevel: 3949
- time0: 0.14
+ time0: 0.16
 nodesGeneratedToTheLevel: 28824
-f = 43 [88806 evaluated, 28824 expanded, t=0.14s, 7936 KB]
+f = 43 [88806 evaluated, 28824 expanded, t=0.16s, 7936 KB]
 nodes_expanded.size() = 371
 depth = 43
 F_boundary = 42
@@ -338,7 +338,7 @@ problem_name_gapdb = p01_gapdb_0.pddl
 name = p01_gapdb_0_F_42.csv
 Directory: gapdb created.
 Directory: SSCC created.
-Actual search time: 0.14s [t=0.14s]
+Actual search time: 0.16s [t=0.16s]
 board p2 slow0-0 n2 n0 n1 (0)
 move-down-slow slow0-0 n2 n1 (6)
 leave p2 slow0-0 n1 n1 n0 (0)
@@ -367,7 +367,7 @@ Reopened until last jump: 0 state(s).
 Evaluated until last jump: 88806 state(s).
 Generated until last jump: 394123 state(s).
 Number of registered states: 88806
-Search time: 0.14s
-Total time: 0.14s
+Search time: 0.16s
+Total time: 0.16s
 Solution found.
 Peak memory: 7936 KB

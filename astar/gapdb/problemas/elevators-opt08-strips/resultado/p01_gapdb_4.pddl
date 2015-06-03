@@ -184,9 +184,9 @@ generated_by_level = 10210
 expanded_by_level = 739
 fnivel: 28
 nodesGeneratedByLevel: 739
- time0: 0.00
+ time0: 0.02
 nodesGeneratedToTheLevel: 3440
-f = 29 [16048 evaluated, 3440 expanded, t=0.00s, 4208 KB]
+f = 29 [16048 evaluated, 3440 expanded, t=0.02s, 4208 KB]
 generated_by_level = 9430
 expanded_by_level = 678
 fnivel: 29
@@ -233,9 +233,9 @@ generated_by_level = 26512
 expanded_by_level = 1931
 fnivel: 35
 nodesGeneratedByLevel: 1931
- time0: 0.04
+ time0: 0.06
 nodesGeneratedToTheLevel: 10931
-f = 36 [41976 evaluated, 10931 expanded, t=0.04s, 5612 KB]
+f = 36 [41976 evaluated, 10931 expanded, t=0.06s, 5612 KB]
 generated_by_level = 25232
 expanded_by_level = 1819
 fnivel: 36
@@ -247,9 +247,9 @@ generated_by_level = 25888
 expanded_by_level = 1863
 fnivel: 37
 nodesGeneratedByLevel: 1863
- time0: 0.06
+ time0: 0.08
 nodesGeneratedToTheLevel: 14613
-f = 38 [54125 evaluated, 14613 expanded, t=0.06s, 6344 KB]
+f = 38 [54125 evaluated, 14613 expanded, t=0.08s, 6344 KB]
 generated_by_level = 25532
 expanded_by_level = 1852
 fnivel: 38
@@ -261,9 +261,9 @@ generated_by_level = 30976
 expanded_by_level = 2268
 fnivel: 39
 nodesGeneratedByLevel: 2268
- time0: 0.08
+ time0: 0.10
 nodesGeneratedToTheLevel: 18733
-f = 40 [66567 evaluated, 18733 expanded, t=0.08s, 6872 KB]
+f = 40 [66567 evaluated, 18733 expanded, t=0.10s, 6872 KB]
 generated_by_level = 36724
 expanded_by_level = 2714
 fnivel: 40
@@ -283,9 +283,9 @@ generated_by_level = 53729
 expanded_by_level = 3949
 fnivel: 42
 nodesGeneratedByLevel: 3949
- time0: 0.12
+ time0: 0.14
 nodesGeneratedToTheLevel: 28824
-f = 43 [88806 evaluated, 28824 expanded, t=0.12s, 7936 KB]
+f = 43 [88806 evaluated, 28824 expanded, t=0.14s, 7936 KB]
 nodes_expanded.size() = 371
 depth = 43
 F_boundary = 42
@@ -338,7 +338,7 @@ problem_name_gapdb = p01_gapdb_4.pddl
 name = p01_gapdb_4_F_42.csv
 Directory: gapdb created.
 Directory: SSCC created.
-Actual search time: 0.12s [t=0.12s]
+Actual search time: 0.14s [t=0.14s]
 board p2 slow0-0 n2 n0 n1 (0)
 move-down-slow slow0-0 n2 n1 (6)
 leave p2 slow0-0 n1 n1 n0 (0)
@@ -367,7 +367,7 @@ Reopened until last jump: 0 state(s).
 Evaluated until last jump: 88806 state(s).
 Generated until last jump: 394123 state(s).
 Number of registered states: 88806
-Search time: 0.12s
-Total time: 0.12s
+Search time: 0.14s
+Total time: 0.14s
 Solution found.
 Peak memory: 7936 KB

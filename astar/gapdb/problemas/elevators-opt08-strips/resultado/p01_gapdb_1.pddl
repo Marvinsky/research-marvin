@@ -163,16 +163,16 @@ generated_by_level = 4060
 expanded_by_level = 301
 fnivel: 25
 nodesGeneratedByLevel: 301
- time0: 0.00
+ time0: 0.02
 nodesGeneratedToTheLevel: 1639
-f = 26 [8681 evaluated, 1639 expanded, t=0.00s, 3896 KB]
+f = 26 [8681 evaluated, 1639 expanded, t=0.02s, 3896 KB]
 generated_by_level = 6028
 expanded_by_level = 449
 fnivel: 26
 nodesGeneratedByLevel: 449
- time0: 0.00
+ time0: 0.02
 nodesGeneratedToTheLevel: 2088
-f = 27 [10546 evaluated, 2088 expanded, t=0.00s, 4028 KB]
+f = 27 [10546 evaluated, 2088 expanded, t=0.02s, 4028 KB]
 generated_by_level = 8322
 expanded_by_level = 613
 fnivel: 27
@@ -205,9 +205,9 @@ generated_by_level = 7950
 expanded_by_level = 579
 fnivel: 31
 nodesGeneratedByLevel: 579
- time0: 0.02
+ time0: 0.04
 nodesGeneratedToTheLevel: 5318
-f = 32 [23689 evaluated, 5318 expanded, t=0.02s, 4612 KB]
+f = 32 [23689 evaluated, 5318 expanded, t=0.04s, 4612 KB]
 generated_by_level = 11916
 expanded_by_level = 879
 fnivel: 32
@@ -226,9 +226,9 @@ generated_by_level = 22188
 expanded_by_level = 1628
 fnivel: 34
 nodesGeneratedByLevel: 1628
- time0: 0.04
+ time0: 0.06
 nodesGeneratedToTheLevel: 9000
-f = 35 [35374 evaluated, 9000 expanded, t=0.04s, 5212 KB]
+f = 35 [35374 evaluated, 9000 expanded, t=0.06s, 5212 KB]
 generated_by_level = 26512
 expanded_by_level = 1931
 fnivel: 35
@@ -268,9 +268,9 @@ generated_by_level = 36724
 expanded_by_level = 2714
 fnivel: 40
 nodesGeneratedByLevel: 2714
- time0: 0.10
+ time0: 0.12
 nodesGeneratedToTheLevel: 21447
-f = 41 [72580 evaluated, 21447 expanded, t=0.10s, 7136 KB]
+f = 41 [72580 evaluated, 21447 expanded, t=0.12s, 7136 KB]
 generated_by_level = 46652
 expanded_by_level = 3428
 fnivel: 41
