@@ -1,4 +1,9 @@
 		/home/marvin/marvin/astar/gapdb/reportastar/blocks/probBLOCKS-4-0.pddl
-	totalniveles: 1
+	totalniveles: 6
 	f-value		#nodesByLevel		time		#nodesExpanded
-	6		7			2.06s			7
+	1		1			0.00s			1
+	2		4			0.00s			5
+	3		12			0.00s			17
+	4		24			0.00s			41
+	5		36			0.00s			77
+	6		25			0.00s			102
