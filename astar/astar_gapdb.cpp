@@ -395,7 +395,8 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 					gapdb_string += ",disjoint="+parameter;
 				}
 			}
-			gapdb_string+=",eps=120,colls=5)";
+			gapdb_string+=")";
+			//gapdb_string+=",eps=120,colls=5)";
 			cout<<"\tgapdb_string = "<<gapdb_string<<"\n\n";
 			v_gapdb_string.push_back(gapdb_string);
 		}
@@ -433,8 +434,8 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			//cout<<"new_problem_name_mod = "<<new_problem_name_mod<<"\n";
 			stringstream number;
 			number<<i;
-			string pro_name = new_problem_name_mod + "_gapdb_" + number.str() + ".pddl";
-			//cout<<"pro_name = "<<pro_name<<"\n";
+			string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + number.str() + ".pddl";
+			//cout<<"prob_name_gapdb = "<<prob_name_gapdb<<"\n";
 
 
 
@@ -449,9 +450,9 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
 
 			if (F_boundary) {
-				outfile<<"src/search/downward-release --F_boundary "<<F_boundary<<" --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<pro_name<<" --heuristic_name "<<heuristic<<" --search \"astar(min(["<<parameter<<"]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<pro_name<<"\n\n";
+				outfile<<"src/search/downward-release --F_boundary "<<F_boundary<<" --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --problem_name_gapdb "<<prob_name_gapdb<<"  --search \"astar(min(["<<parameter<<"]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
 			} else {
-				outfile<<"src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<pro_name<<" --heuristic_name "<<heuristic<<" --search \"astar(min(["<<parameter<<"]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<pro_name<<"\n\n";
+				outfile<<"src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<"  --problem_name_gapdb "<<prob_name_gapdb<<"  --search \"astar(min(["<<parameter<<"]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
 			}
 			outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
 			outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
