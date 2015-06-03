@@ -473,7 +473,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			cout<<allow<<"\n";
 			system(allow.c_str());
 			executeFile = "sh "+arquivo;
-			//system(executeFile.c_str());
+			system(executeFile.c_str());
 		}
 	}
 }
