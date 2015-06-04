@@ -199,7 +199,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 		string domain;
 		std::vector<string> fileNames;
-                std::vector<string> fileNames2; 
+                std::vector<string> fileNames2;
+		std::vector<string> fileNames3;
                 string model1;
                 string model2;
 		bool directory_not_found = false;
@@ -294,9 +295,133 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                         closedir(dir);
                 } else {
                         cout<<"Error trying to open the directory: "<<output.c_str()<<endl;
-                }	
-	
+                }
+
+
+		//shrink information from fileNames2
+		map<string, map<string, double> > map_bc_file_astar;
 		for (size_t i = 0; i < fileNames2.size(); i++) {
+			vector<string> fileNames4;
+			string astarBC = fileNames2.at(i);
+			string astarBC_key = astarBC;
+			string dir_astarBC = output5 + astarBC;
+			//cout<<"astarBC = "<<astarBC<<"\n";
+			//cout<<"output_astarBC = "<<dir_astarBC<<"\n";
+
+			DIR *dir;
+                	struct dirent *ent;
+
+                	dir = opendir(dir_astarBC.c_str());
+                	if (dir != NULL) {
+                        	while ((ent = readdir(dir)) != NULL) {
+                                	string fileName = ent->d_name;
+                                	int sizeName = fileName.size();
+					string t = fileName;
+                                	size_t  found = t.find(".sw");
+                                	bool is_swp_file = false;
+                                	if (found < 100) {
+                                        	string swp_name_mod = t.substr(found, t.length());
+                                        	cout<<"swp_name_mod = "<<swp_name_mod<<"\n";
+                                        	is_swp_file = true;
+                                	}
+                                	if ((sizeName == 1)  || (sizeName == 2) || (is_swp_file)) {
+                                        	//TODO
+                                	} else {
+                                        	fileNames4.push_back(fileName);
+                                	}
+                        	}
+                        	closedir(dir);
+                	} else {
+                        	cout<<"Error trying to open the directory: "<<output.c_str()<<endl;
+                	}
+
+			//find the threshold
+			string threshold_v;
+			if (fileNames4.size() > 0) {
+				string s_threshold = fileNames4.at(0);
+				string t = s_threshold;
+				size_t found0 = t.find("F_");
+				//cout<<"found0 = "<<found0<<"\n";
+				string t2 = t.substr(found0 + 2);
+				size_t found = t2.find(".");
+				threshold_v = t2.substr(0, found);
+				//cout<<"threshold_v = "<<threshold_v<<"\n";
+			}
+
+			astarBC_key += "_F_";
+			astarBC_key += threshold_v;
+			astarBC_key += ".csv";
+			//cout<<"astarBC_key = "<<astarBC_key<<"\n";
+			map<string, double > map_bc_astar;//store the gapdb info
+			string delimiter = "_";
+			for (size_t i = 0; i < fileNames4.size(); i++) {
+				string s = fileNames4.at(i);
+				string file_to_open = dir_astarBC + "/" + s;
+				//cout<<"\t\t"<<s<<"\n";
+				string pot[6];
+				string key;
+                		size_t pos = 0;
+                		string token;
+                		int index = 0;
+                		while ((pos = s.find(delimiter)) != std::string::npos) {
+                        		token = s.substr(0, pos);
+                        		pot[index] = token;
+                        		s.erase(0, pos + delimiter.length());
+                        		index++;
+                		}
+                		pot[index] = s;	
+
+				key = pot[2]; //setting the index of the gapdb
+				//cout<<"\t\tkey = "<<key<<"\n";
+				//cout<<"\t\tfile_to_open = "<<file_to_open<<"\n";
+
+				vector<pair<string, double> > m = analyzeFile(file_to_open);
+				double nodes_generated = 0;
+				if (m.size() == 1) { //considering we just using one heuristic
+					typedef std::vector<std::pair<std::string, double> > vector_type;
+					for (vector_type::const_iterator pos = m.begin();
+     						pos != m.end(); ++pos)
+					{
+   						string s = pos->first;
+				        	double d = pos->second;
+						//cout<<"\t\t\t"<<s<<"  -  "<<d<<"\n";
+						nodes_generated = d;
+					}
+				}
+				map_bc_astar.insert(pair<string, double>(key, nodes_generated));
+			}
+			map_bc_file_astar.insert(pair<string, map<string, double> >(astarBC_key, map_bc_astar));
+		}
+
+		map<string, map<string, double> >::iterator iter_m;
+		for (iter_m = map_bc_file_astar.begin(); iter_m != map_bc_file_astar.end(); iter_m++) {
+			string astarBC = iter_m->first;
+			map<string, double> m_values = iter_m->second;
+			cout<<"file: "<<astarBC<<"\n";
+			map<string, double>::iterator iter_m2;
+			for(iter_m2 = m_values.begin(); iter_m2 != m_values.end(); iter_m2++) {
+				string heur = iter_m2->first;
+				double value = iter_m2->second;
+				//cout<<"\t"<<heur<<" - "<<value<<"\n";
+			}
+
+			for (size_t j = 0; j < fileNames.size(); j++) {
+				string ssBC = fileNames.at(j);
+				cout<<"ssBC = "<<ssBC<<"\n";
+				string output_ssBC = output + ssBC;
+				cout<<"output_ssBC = "<<output_ssBC<<"\n";
+				if (astarBC == ssBC) {
+					cout<<"\t\t\tequals\n";
+				}
+			}
+
+		}
+
+
+
+
+
+		/*for (size_t i = 0; i < fileNames2.size(); i++) {
 			string astarBC = fileNames2.at(i);
 			string output_astarBC = output5 + astarBC;
 			for (size_t j = 0; j < fileNames.size(); j++) {
@@ -716,7 +841,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					}
 				}
 			}
-		}
+		}*/
 		outputFile.close();
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems); 
