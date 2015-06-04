@@ -21,7 +21,7 @@ python3 src/translate/translate.py benchmarks/elevators-opt08-strips/p01-domain.
 
 src/preprocess/preprocess < Astarelevators-opt08-strips1.sas
 
-src/search/downward-release --F_boundary 42 --use_saved_pdbs --domain_name elevators-opt08-strips --problem_name p01.pddl --heuristic_name gapdb --problem_name_gapdb p01_gapdb_0.pddl  --search "astar(min([gapdb(mp=1.0000000,size=20000,disjoint=true)]))" <  Astarelevators-opt08-strips1 > ${RESULTS}/p01_gapdb_0.pddl
+src/search/downward-release --F_boundary 42 --use_saved_pdbs --domain_name elevators-opt08-strips --problem_name p01.pddl --heuristic_name gapdb --problem_name_gapdb p01_gapdb_0.pddl  --search "astar(min([gapdb(mp=0.6000000,size=2000000,disjoint=true)]))" <  Astarelevators-opt08-strips1 > ${RESULTS}/p01_gapdb_0.pddl
 
 
 

@@ -30,60 +30,55 @@ returning best heuristic(GAPDB)[,0,]:[1, 4, 5, 6, 8]
 [0, 2, 6, 7, 8]
 ,mp:,0.50,disjoint_patterns:,0,size:,50000-best_fitness:24.95,,initial value:29,GAPDB generation time:0.08
 use_saved_pdbs = 0
-best_fitness = 15.33
-best_fitness = 27.37
-Pattern generation (Edelkamp) time: 0.02
+best_fitness = 17.06
+best_fitness = 33.86
+Pattern generation (Edelkamp) time: 2.22
 callind dump_file() with pdb_dump_counter = 1
 file_name: dat/elevators-opt08-strips/p01.dat
-returning best heuristic(GAPDB)[,1,]:[4, 5, 6]
-[0, 1, 2, 7, 8]
-,mp:,0.60,disjoint_patterns:,1,size:,20000-best_fitness:27.37,,initial value:26,GAPDB generation time:0.02
+returning best heuristic(GAPDB)[,1,]:[0, 1, 2, 3, 4, 6, 7, 8]
+[]
+,mp:,0.60,disjoint_patterns:,1,size:,2000000-best_fitness:33.86,,initial value:42,GAPDB generation time:2.22
 use_saved_pdbs = 0
-best_fitness = 16.43
+best_fitness = 23.16
 best_fitness = 27.37
-Pattern generation (Edelkamp) time: 0.06
+Pattern generation (Edelkamp) time: 3.42
 callind dump_file() with pdb_dump_counter = 2
 file_name: dat/elevators-opt08-strips/p01.dat
-returning best heuristic(GAPDB)[,2,]:[0, 1, 2, 7, 8]
-[3, 4, 5, 6]
-,mp:,1.00,disjoint_patterns:,1,size:,20000-best_fitness:27.37,,initial value:26,GAPDB generation time:0.06
+returning best heuristic(GAPDB)[,2,]:[0, 1, 2, 3, 4, 5, 7, 8]
+[6]
+,mp:,1.00,disjoint_patterns:,1,size:,2000000-best_fitness:27.37,,initial value:26,GAPDB generation time:3.42
 use_saved_pdbs = 0
-best_fitness = 14.32
-best_fitness = 18.98
-best_fitness = 22.42
-best_fitness = 23.16
-Pattern generation (Edelkamp) time: 0.10
+best_fitness = 21.23
+best_fitness = 33.86
+Pattern generation (Edelkamp) time: 4.76
 callind dump_file() with pdb_dump_counter = 3
 file_name: dat/elevators-opt08-strips/p01.dat
-returning best heuristic(GAPDB)[,3,]:[0, 1, 2, 6, 8]
-[4, 6, 7, 8]
-,mp:,0.80,disjoint_patterns:,0,size:,20000-best_fitness:23.16,,initial value:24,GAPDB generation time:0.10
+returning best heuristic(GAPDB)[,3,]:[0, 1, 2, 3, 4, 6, 7, 8]
+[]
+,mp:,0.80,disjoint_patterns:,0,size:,2000000-best_fitness:33.86,,initial value:42,GAPDB generation time:4.76
 use_saved_pdbs = 0
-best_fitness = 4.20
+best_fitness = 20.28
 best_fitness = 27.37
-Pattern generation (Edelkamp) time: 0.06
+best_fitness = 33.86
+Pattern generation (Edelkamp) time: 6.04
 callind dump_file() with pdb_dump_counter = 4
 file_name: dat/elevators-opt08-strips/p01.dat
-returning best heuristic(GAPDB)[,4,]:[0, 1, 2, 7, 8]
-[3, 4, 5, 6]
-,mp:,0.20,disjoint_patterns:,0,size:,20000-best_fitness:27.37,,initial value:26,GAPDB generation time:0.06
+returning best heuristic(GAPDB)[,4,]:[0, 1, 2, 3, 4, 6, 7, 8]
+[]
+,mp:,0.20,disjoint_patterns:,0,size:,2000000-best_fitness:33.86,,initial value:42,GAPDB generation time:6.04
 use_saved_pdbs = 0
-best_fitness = 7.74
-best_fitness = 14.08
-best_fitness = 16.76
-best_fitness = 18.53
-best_fitness = 22.42
-best_fitness = 23.16
-Pattern generation (Edelkamp) time: 0.04
+best_fitness = 32.80
+best_fitness = 33.86
+Pattern generation (Edelkamp) time: 2.90
 callind dump_file() with pdb_dump_counter = 5
 file_name: dat/elevators-opt08-strips/p01.dat
-returning best heuristic(GAPDB)[,5,]:[0, 1, 2, 6, 8]
-[1, 2, 4, 6, 7]
-,mp:,0.40,disjoint_patterns:,0,size:,20000-best_fitness:23.16,,initial value:24,GAPDB generation time:0.04
+returning best heuristic(GAPDB)[,5,]:[0, 1, 2, 3, 4, 6, 7, 8]
+[1, 7]
+,mp:,0.40,disjoint_patterns:,0,size:,2000000-best_fitness:33.86,,initial value:42,GAPDB generation time:2.90
 SSSearch ...
 
-totalPrediction : 80188159.33
-ss_timer: 86.06
+totalPrediction : 3012532.96
+ss_timer: 84.84
 probes: 1000
 threshold : 42.00
 dominio = elevators-opt08-strips
@@ -94,8 +89,8 @@ found = 3
 name = p01_F_42.csv
 Directory: gapdb created.
 Directory: SSCC created.
-count nodes generates : 1131340686.35
-count nodes expanded : 80188159.33
+count nodes generates : 41837525.78
+count nodes expanded : 3012532.96
 dominio = elevators-opt08-strips
 tarefa = p01.pddl
 heuristica = gapdb
@@ -104,305 +99,286 @@ Directory: fdist created.
 print.
 g:0
 size: 1
-	f: 24	q: 1.00
+	f: 26	q: 1.00
 
 g:1
-size: 7
-	f: 24	q: 1.00
-	f: 29	q: 3.00
-	f: 31	q: 0.99
-	f: 32	q: 1.00
-	f: 36	q: 2.00
-	f: 37	q: 1.01
-	f: 38	q: 1.00
+size: 6
+	f: 31	q: 1.00
+	f: 32	q: 1.07
+	f: 33	q: 0.93
+	f: 36	q: 4.00
+	f: 38	q: 2.00
+	f: 39	q: 1.00
 
 g:2
-size: 13
-	f: 24	q: 2.03
-	f: 27	q: 0.82
-	f: 29	q: 5.88
-	f: 31	q: 4.25
-	f: 33	q: 0.96
-	f: 34	q: 3.43
-	f: 36	q: 16.06
-	f: 37	q: 2.82
-	f: 38	q: 12.79
-	f: 39	q: 2.11
-	f: 40	q: 2.01
-	f: 41	q: 13.92
-	f: 42	q: 6.88
+size: 11
+	f: 26	q: 1.00
+	f: 27	q: 1.00
+	f: 31	q: 0.98
+	f: 33	q: 1.88
+	f: 34	q: 1.00
+	f: 36	q: 6.06
+	f: 38	q: 9.09
+	f: 39	q: 3.08
+	f: 40	q: 6.85
+	f: 41	q: 4.90
+	f: 42	q: 1.02
 
 g:3
-size: 13
-	f: 24	q: 4.45
-	f: 29	q: 23.05
-	f: 31	q: 14.90
-	f: 32	q: 1.93
-	f: 33	q: 3.75
-	f: 34	q: 13.27
-	f: 36	q: 71.23
-	f: 37	q: 8.14
-	f: 38	q: 44.90
-	f: 39	q: 0.81
-	f: 40	q: 12.00
-	f: 41	q: 64.38
-	f: 42	q: 24.91
+size: 11
+	f: 31	q: 5.05
+	f: 32	q: 2.02
+	f: 33	q: 5.92
+	f: 34	q: 4.06
+	f: 35	q: 1.21
+	f: 36	q: 26.07
+	f: 38	q: 21.16
+	f: 39	q: 7.90
+	f: 40	q: 17.17
+	f: 41	q: 16.77
+	f: 42	q: 4.26
 
 g:4
-size: 18
-	f: 24	q: 9.29
-	f: 26	q: 0.88
-	f: 27	q: 1.18
-	f: 28	q: 2.17
-	f: 29	q: 45.12
-	f: 30	q: 2.38
-	f: 31	q: 42.46
-	f: 32	q: 0.82
-	f: 33	q: 10.45
-	f: 34	q: 63.22
-	f: 35	q: 1.62
-	f: 36	q: 271.62
-	f: 37	q: 25.03
-	f: 38	q: 196.03
-	f: 39	q: 27.44
-	f: 40	q: 52.29
-	f: 41	q: 346.86
-	f: 42	q: 127.73
+size: 13
+	f: 26	q: 0.63
+	f: 27	q: 2.14
+	f: 28	q: 2.00
+	f: 31	q: 10.05
+	f: 33	q: 5.19
+	f: 34	q: 2.92
+	f: 35	q: 2.08
+	f: 36	q: 51.96
+	f: 38	q: 82.02
+	f: 39	q: 27.38
+	f: 40	q: 61.69
+	f: 41	q: 98.57
+	f: 42	q: 19.49
 
 g:5
-size: 15
-	f: 24	q: 21.46
-	f: 29	q: 118.47
-	f: 30	q: 9.70
-	f: 31	q: 142.62
-	f: 32	q: 7.65
-	f: 33	q: 41.42
-	f: 34	q: 161.63
-	f: 35	q: 65.75
-	f: 36	q: 849.25
-	f: 37	q: 93.96
-	f: 38	q: 621.26
-	f: 39	q: 117.82
-	f: 40	q: 173.59
-	f: 41	q: 1556.62
-	f: 42	q: 355.03
+size: 12
+	f: 31	q: 21.75
+	f: 32	q: 3.04
+	f: 33	q: 19.03
+	f: 34	q: 22.39
+	f: 35	q: 19.03
+	f: 36	q: 127.68
+	f: 37	q: 6.38
+	f: 38	q: 195.81
+	f: 39	q: 57.46
+	f: 40	q: 124.36
+	f: 41	q: 236.09
+	f: 42	q: 77.22
 
 g:6
-size: 17
-	f: 24	q: 15.48
-	f: 26	q: 1.67
-	f: 27	q: 1.92
-	f: 29	q: 263.18
-	f: 30	q: 22.03
-	f: 31	q: 399.66
-	f: 32	q: 11.87
-	f: 33	q: 83.51
-	f: 34	q: 531.24
-	f: 35	q: 88.34
-	f: 36	q: 2626.27
-	f: 37	q: 325.85
-	f: 38	q: 2274.24
-	f: 39	q: 399.23
-	f: 40	q: 845.50
-	f: 41	q: 5598.95
-	f: 42	q: 1743.97
+size: 14
+	f: 26	q: 0.08
+	f: 27	q: 4.54
+	f: 31	q: 20.28
+	f: 32	q: 11.98
+	f: 33	q: 0.59
+	f: 34	q: 15.23
+	f: 35	q: 3.60
+	f: 36	q: 269.17
+	f: 37	q: 16.74
+	f: 38	q: 496.04
+	f: 39	q: 176.53
+	f: 40	q: 336.65
+	f: 41	q: 886.07
+	f: 42	q: 289.15
 
 g:7
-size: 16
-	f: 24	q: 36.40
-	f: 27	q: 4.32
-	f: 29	q: 317.72
-	f: 30	q: 90.74
-	f: 31	q: 694.02
-	f: 32	q: 62.85
-	f: 33	q: 212.95
-	f: 34	q: 1169.45
-	f: 35	q: 274.97
-	f: 36	q: 7084.88
-	f: 37	q: 999.06
-	f: 38	q: 6760.88
-	f: 39	q: 1851.21
-	f: 40	q: 2392.67
-	f: 41	q: 19813.43
-	f: 42	q: 4294.74
+size: 13
+	f: 27	q: 7.94
+	f: 31	q: 41.77
+	f: 32	q: 32.76
+	f: 33	q: 31.93
+	f: 34	q: 87.69
+	f: 35	q: 40.34
+	f: 36	q: 379.80
+	f: 37	q: 82.44
+	f: 38	q: 923.73
+	f: 39	q: 428.54
+	f: 40	q: 342.96
+	f: 41	q: 1676.49
+	f: 42	q: 416.42
 
 g:8
-size: 15
-	f: 27	q: 28.57
-	f: 29	q: 893.00
-	f: 30	q: 30.45
-	f: 31	q: 1534.53
-	f: 32	q: 64.27
-	f: 33	q: 263.97
-	f: 34	q: 2658.12
-	f: 35	q: 1361.18
-	f: 36	q: 15686.01
-	f: 37	q: 4760.67
-	f: 38	q: 15587.32
-	f: 39	q: 5401.54
-	f: 40	q: 6535.86
-	f: 41	q: 56050.21
-	f: 42	q: 15044.43
+size: 13
+	f: 27	q: 18.92
+	f: 31	q: 26.68
+	f: 32	q: 109.24
+	f: 33	q: 12.30
+	f: 34	q: 173.16
+	f: 35	q: 6.78
+	f: 36	q: 851.33
+	f: 37	q: 229.60
+	f: 38	q: 1786.90
+	f: 39	q: 1358.00
+	f: 40	q: 1048.68
+	f: 41	q: 4170.70
+	f: 42	q: 1665.57
 
 g:9
 size: 14
-	f: 29	q: 1279.68
-	f: 30	q: 473.75
-	f: 31	q: 1453.12
-	f: 32	q: 101.05
-	f: 33	q: 1271.54
-	f: 34	q: 6085.72
-	f: 35	q: 2205.71
-	f: 36	q: 34343.17
-	f: 37	q: 6557.88
-	f: 38	q: 41079.34
-	f: 39	q: 15394.45
-	f: 40	q: 14633.76
-	f: 41	q: 137705.12
-	f: 42	q: 51712.68
+	f: 26	q: 0.08
+	f: 27	q: 17.31
+	f: 31	q: 4.42
+	f: 32	q: 290.54
+	f: 33	q: 51.88
+	f: 34	q: 459.86
+	f: 35	q: 59.89
+	f: 36	q: 894.96
+	f: 37	q: 531.82
+	f: 38	q: 2765.17
+	f: 39	q: 3818.73
+	f: 40	q: 1072.06
+	f: 41	q: 8954.88
+	f: 42	q: 2276.40
 
 g:10
-size: 12
-	f: 29	q: 78.74
-	f: 31	q: 3657.09
-	f: 33	q: 525.95
-	f: 34	q: 5001.66
-	f: 35	q: 7553.56
-	f: 36	q: 71163.28
-	f: 37	q: 12939.10
-	f: 38	q: 68897.18
-	f: 39	q: 33406.54
-	f: 40	q: 35941.49
-	f: 41	q: 337037.97
-	f: 42	q: 112954.13
+size: 13
+	f: 27	q: 4.20
+	f: 31	q: 15.03
+	f: 32	q: 250.28
+	f: 33	q: 151.46
+	f: 34	q: 675.85
+	f: 35	q: 150.03
+	f: 36	q: 887.62
+	f: 37	q: 721.74
+	f: 38	q: 4367.93
+	f: 39	q: 9526.65
+	f: 40	q: 3251.27
+	f: 41	q: 18570.66
+	f: 42	q: 7329.60
 
 g:11
 size: 11
-	f: 31	q: 3981.03
-	f: 32	q: 450.13
-	f: 34	q: 15634.08
-	f: 35	q: 17540.13
-	f: 36	q: 84571.88
-	f: 37	q: 22951.80
-	f: 38	q: 146478.06
-	f: 39	q: 56194.86
-	f: 40	q: 85074.82
-	f: 41	q: 622645.35
-	f: 42	q: 348606.10
+	f: 32	q: 392.69
+	f: 33	q: 634.25
+	f: 34	q: 1346.05
+	f: 35	q: 105.67
+	f: 36	q: 1600.95
+	f: 37	q: 1191.36
+	f: 38	q: 6506.23
+	f: 39	q: 17177.68
+	f: 40	q: 6751.99
+	f: 41	q: 36328.89
+	f: 42	q: 8434.58
 
 g:12
-size: 9
-	f: 34	q: 7554.43
-	f: 35	q: 24310.93
-	f: 36	q: 159370.94
-	f: 37	q: 72886.42
-	f: 38	q: 149450.48
-	f: 39	q: 166149.17
-	f: 40	q: 106211.04
-	f: 41	q: 1154806.66
-	f: 42	q: 670566.71
+size: 11
+	f: 32	q: 125.00
+	f: 33	q: 343.98
+	f: 34	q: 860.52
+	f: 35	q: 97.41
+	f: 36	q: 4374.44
+	f: 37	q: 1832.38
+	f: 38	q: 5319.16
+	f: 39	q: 41861.53
+	f: 40	q: 7052.86
+	f: 41	q: 73549.74
+	f: 42	q: 19855.29
 
 g:13
 size: 8
-	f: 34	q: 3513.99
-	f: 36	q: 161161.52
-	f: 37	q: 3852.99
-	f: 38	q: 341208.00
-	f: 39	q: 184273.76
-	f: 40	q: 257714.56
-	f: 41	q: 2043990.00
-	f: 42	q: 1271328.32
+	f: 34	q: 664.85
+	f: 36	q: 4068.11
+	f: 37	q: 1232.97
+	f: 38	q: 8913.84
+	f: 39	q: 49944.52
+	f: 40	q: 26258.80
+	f: 41	q: 95836.21
+	f: 42	q: 31608.28
 
 g:14
-size: 8
-	f: 34	q: 5094.21
-	f: 36	q: 161743.76
-	f: 37	q: 22675.53
-	f: 38	q: 475623.10
-	f: 39	q: 144479.34
-	f: 40	q: 257191.94
-	f: 41	q: 2929705.55
-	f: 42	q: 2100127.14
+size: 9
+	f: 32	q: 103.26
+	f: 33	q: 214.93
+	f: 34	q: 2479.12
+	f: 37	q: 2195.66
+	f: 38	q: 4748.60
+	f: 39	q: 94657.57
+	f: 40	q: 28762.08
+	f: 41	q: 133529.50
+	f: 42	q: 72413.77
 
 g:15
 size: 7
-	f: 36	q: 20665.12
-	f: 37	q: 1289.09
-	f: 38	q: 286552.26
-	f: 39	q: 199968.44
-	f: 40	q: 94997.42
-	f: 41	q: 4229866.30
-	f: 42	q: 3443047.37
+	f: 34	q: 2379.74
+	f: 37	q: 2749.75
+	f: 38	q: 5141.59
+	f: 39	q: 81249.33
+	f: 40	q: 26337.96
+	f: 41	q: 196463.02
+	f: 42	q: 99285.64
 
 g:16
 size: 7
-	f: 36	q: 5554.77
-	f: 37	q: 3881.56
-	f: 38	q: 59907.91
-	f: 39	q: 96835.23
-	f: 40	q: 70476.44
-	f: 41	q: 4812280.98
-	f: 42	q: 4590857.32
+	f: 34	q: 575.35
+	f: 37	q: 1933.72
+	f: 38	q: 5832.07
+	f: 39	q: 81293.45
+	f: 40	q: 9956.96
+	f: 41	q: 220609.14
+	f: 42	q: 100943.39
 
 g:17
 size: 6
-	f: 36	q: 4700.39
-	f: 38	q: 120182.96
-	f: 39	q: 70127.20
-	f: 40	q: 80.72
-	f: 41	q: 6119980.42
-	f: 42	q: 3226366.38
+	f: 37	q: 589.40
+	f: 38	q: 184.04
+	f: 39	q: 86133.20
+	f: 40	q: 20606.64
+	f: 41	q: 271190.76
+	f: 42	q: 89061.63
 
 g:18
-size: 6
-	f: 36	q: 485504.29
-	f: 38	q: 57538.15
-	f: 39	q: 80083.93
-	f: 40	q: 2538.95
-	f: 41	q: 5200163.55
-	f: 42	q: 1844156.64
+size: 5
+	f: 37	q: 864.65
+	f: 39	q: 112853.11
+	f: 40	q: 65485.83
+	f: 41	q: 157883.48
+	f: 42	q: 38508.13
 
 g:19
 size: 5
-	f: 38	q: 4001.57
-	f: 39	q: 33115.54
-	f: 40	q: 4310.42
-	f: 41	q: 3546658.39
-	f: 42	q: 2108139.06
+	f: 37	q: 133.48
+	f: 39	q: 33840.56
+	f: 40	q: 18590.19
+	f: 41	q: 163934.85
+	f: 42	q: 11684.76
 
 g:20
-size: 3
-	f: 39	q: 26531.47
-	f: 41	q: 2662677.60
-	f: 42	q: 2351351.92
+size: 4
+	f: 39	q: 13695.42
+	f: 40	q: 14473.33
+	f: 41	q: 103611.68
+	f: 42	q: 2956.14
 
 g:21
-size: 5
-	f: 38	q: 15639.67
-	f: 39	q: 1967.30
-	f: 40	q: 3.47
-	f: 41	q: 1348659.03
-	f: 42	q: 6262803.20
+size: 3
+	f: 39	q: 3789.86
+	f: 41	q: 59131.45
+	f: 42	q: 2183.95
 
 g:22
 size: 3
-	f: 39	q: 570.85
-	f: 41	q: 7961386.86
-	f: 42	q: 34594.41
+	f: 39	q: 814.02
+	f: 41	q: 18357.28
+	f: 42	q: 758.83
 
 g:23
-size: 2
-	f: 41	q: 3154923.47
-	f: 42	q: 289.58
+size: 3
+	f: 39	q: 79.19
+	f: 41	q: 4216.78
+	f: 42	q: 387.62
 
 g:24
 size: 2
-	f: 41	q: 59215.30
-	f: 42	q: 44.29
+	f: 39	q: 79.19
+	f: 41	q: 1314.24
 
 g:25
-size: 1
-	f: 41	q: 7970.91
+size: 0
 
 g:26
 size: 0
@@ -455,8 +431,8 @@ size: 0
 g:42
 size: 0
 
-Actual search time: 86.06s [t=96.02s]
-Search time: 86.06s
-Total time: 96.02s
+Actual search time: 84.84s [t=171.24s]
+Search time: 84.84s
+Total time: 171.24s
 Search stopped without finding a solution.
-Peak memory: 4944 KB
+Peak memory: 46516 KB
