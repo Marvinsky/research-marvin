@@ -45,124 +45,124 @@ tarefa = p01.pddl
 heuristica = gapdb
 Directory created successfully.
 cleared store_GA_patterns.
-Best heuristic value: 20 [g=6, 20 evaluated, 2 expanded, t=0.36s, 10528 KB]
+Best heuristic value: 20 [g=6, 20 evaluated, 2 expanded, t=0.34s, 10528 KB]
 generated_by_level = 26
 expanded_by_level = 2
 fnivel: 0
 nodesGeneratedByLevel: 2
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 2
-f = 6 [26 evaluated, 2 expanded, t=0.36s, 10528 KB]
-Best heuristic value: 19 [g=12, 92 evaluated, 10 expanded, t=0.36s, 10528 KB]
-Best heuristic value: 13 [g=13, 93 evaluated, 10 expanded, t=0.36s, 10528 KB]
+f = 6 [26 evaluated, 2 expanded, t=0.34s, 10528 KB]
+Best heuristic value: 19 [g=12, 92 evaluated, 10 expanded, t=0.34s, 10528 KB]
+Best heuristic value: 13 [g=13, 93 evaluated, 10 expanded, t=0.34s, 10528 KB]
 generated_by_level = 146
 expanded_by_level = 11
 fnivel: 6
 nodesGeneratedByLevel: 11
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 13
-f = 7 [135 evaluated, 13 expanded, t=0.36s, 10528 KB]
+f = 7 [135 evaluated, 13 expanded, t=0.34s, 10528 KB]
 generated_by_level = 170
 expanded_by_level = 13
 fnivel: 7
 nodesGeneratedByLevel: 13
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 26
-f = 8 [238 evaluated, 26 expanded, t=0.36s, 10528 KB]
+f = 8 [238 evaluated, 26 expanded, t=0.34s, 10528 KB]
 generated_by_level = 26
 expanded_by_level = 2
 fnivel: 8
 nodesGeneratedByLevel: 2
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 28
-f = 9 [244 evaluated, 28 expanded, t=0.36s, 10528 KB]
+f = 9 [244 evaluated, 28 expanded, t=0.34s, 10528 KB]
 generated_by_level = 56
 expanded_by_level = 4
 fnivel: 9
 nodesGeneratedByLevel: 4
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 32
-f = 12 [276 evaluated, 32 expanded, t=0.36s, 10528 KB]
-Best heuristic value: 7 [g=20, 454 evaluated, 55 expanded, t=0.36s, 10528 KB]
+f = 12 [276 evaluated, 32 expanded, t=0.34s, 10528 KB]
+Best heuristic value: 7 [g=20, 454 evaluated, 55 expanded, t=0.34s, 10528 KB]
 generated_by_level = 462
 expanded_by_level = 34
 fnivel: 12
 nodesGeneratedByLevel: 34
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 66
-f = 13 [597 evaluated, 66 expanded, t=0.36s, 10528 KB]
+f = 13 [597 evaluated, 66 expanded, t=0.34s, 10528 KB]
 generated_by_level = 694
 expanded_by_level = 52
 fnivel: 13
 nodesGeneratedByLevel: 52
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 118
-f = 14 [901 evaluated, 118 expanded, t=0.36s, 10528 KB]
-Best heuristic value: 6 [g=33, 1142 evaluated, 165 expanded, t=0.36s, 10528 KB]
+f = 14 [901 evaluated, 118 expanded, t=0.34s, 10528 KB]
+Best heuristic value: 6 [g=33, 1142 evaluated, 165 expanded, t=0.34s, 10528 KB]
 generated_by_level = 722
 expanded_by_level = 54
 fnivel: 14
 nodesGeneratedByLevel: 54
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 172
-f = 15 [1229 evaluated, 172 expanded, t=0.36s, 10528 KB]
+f = 15 [1229 evaluated, 172 expanded, t=0.34s, 10528 KB]
 generated_by_level = 552
 expanded_by_level = 40
 fnivel: 15
 nodesGeneratedByLevel: 40
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 212
-f = 16 [1461 evaluated, 212 expanded, t=0.36s, 10528 KB]
+f = 16 [1461 evaluated, 212 expanded, t=0.34s, 10528 KB]
 generated_by_level = 444
 expanded_by_level = 32
 fnivel: 16
 nodesGeneratedByLevel: 32
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 244
-f = 17 [1653 evaluated, 244 expanded, t=0.36s, 10528 KB]
+f = 17 [1653 evaluated, 244 expanded, t=0.34s, 10528 KB]
 generated_by_level = 56
 expanded_by_level = 4
 fnivel: 17
 nodesGeneratedByLevel: 4
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 248
-f = 18 [1685 evaluated, 248 expanded, t=0.36s, 10528 KB]
+f = 18 [1685 evaluated, 248 expanded, t=0.34s, 10528 KB]
 generated_by_level = 740
 expanded_by_level = 55
 fnivel: 18
 nodesGeneratedByLevel: 55
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 303
-f = 19 [2117 evaluated, 303 expanded, t=0.36s, 10528 KB]
-Best heuristic value: 0 [g=27, 2375 evaluated, 380 expanded, t=0.36s, 10528 KB]
+f = 19 [2117 evaluated, 303 expanded, t=0.34s, 10528 KB]
+Best heuristic value: 0 [g=27, 2375 evaluated, 380 expanded, t=0.34s, 10528 KB]
 generated_by_level = 2104
 expanded_by_level = 156
 fnivel: 19
 nodesGeneratedByLevel: 156
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 459
-f = 20 [3013 evaluated, 459 expanded, t=0.36s, 10528 KB]
+f = 20 [3013 evaluated, 459 expanded, t=0.34s, 10528 KB]
 generated_by_level = 2450
 expanded_by_level = 182
 fnivel: 20
 nodesGeneratedByLevel: 182
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 641
-f = 21 [3813 evaluated, 641 expanded, t=0.36s, 10528 KB]
+f = 21 [3813 evaluated, 641 expanded, t=0.34s, 10528 KB]
 generated_by_level = 3398
 expanded_by_level = 246
 fnivel: 21
 nodesGeneratedByLevel: 246
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 887
-f = 22 [5181 evaluated, 887 expanded, t=0.36s, 10528 KB]
+f = 22 [5181 evaluated, 887 expanded, t=0.34s, 10528 KB]
 generated_by_level = 2506
 expanded_by_level = 180
 fnivel: 22
 nodesGeneratedByLevel: 180
- time0: 0.36
+ time0: 0.34
 nodesGeneratedToTheLevel: 1067
-f = 23 [5992 evaluated, 1067 expanded, t=0.36s, 10528 KB]
+f = 23 [5992 evaluated, 1067 expanded, t=0.34s, 10528 KB]
 generated_by_level = 2200
 expanded_by_level = 157
 fnivel: 23
@@ -209,16 +209,16 @@ generated_by_level = 9430
 expanded_by_level = 678
 fnivel: 29
 nodesGeneratedByLevel: 678
- time0: 0.38
+ time0: 0.36
 nodesGeneratedToTheLevel: 4118
-f = 30 [18851 evaluated, 4118 expanded, t=0.38s, 10528 KB]
+f = 30 [18851 evaluated, 4118 expanded, t=0.36s, 10528 KB]
 generated_by_level = 8718
 expanded_by_level = 621
 fnivel: 30
 nodesGeneratedByLevel: 621
- time0: 0.38
+ time0: 0.36
 nodesGeneratedToTheLevel: 4739
-f = 31 [21706 evaluated, 4739 expanded, t=0.38s, 10528 KB]
+f = 31 [21706 evaluated, 4739 expanded, t=0.36s, 10528 KB]
 generated_by_level = 7950
 expanded_by_level = 579
 fnivel: 31
@@ -258,9 +258,9 @@ generated_by_level = 25232
 expanded_by_level = 1819
 fnivel: 36
 nodesGeneratedByLevel: 1819
- time0: 0.42
+ time0: 0.40
 nodesGeneratedToTheLevel: 12750
-f = 37 [47821 evaluated, 12750 expanded, t=0.42s, 10528 KB]
+f = 37 [47821 evaluated, 12750 expanded, t=0.40s, 10528 KB]
 generated_by_level = 25888
 expanded_by_level = 1863
 fnivel: 37
@@ -286,9 +286,9 @@ generated_by_level = 36724
 expanded_by_level = 2714
 fnivel: 40
 nodesGeneratedByLevel: 2714
- time0: 0.46
+ time0: 0.44
 nodesGeneratedToTheLevel: 21447
-f = 41 [72580 evaluated, 21447 expanded, t=0.46s, 10528 KB]
+f = 41 [72580 evaluated, 21447 expanded, t=0.44s, 10528 KB]
 generated_by_level = 46652
 expanded_by_level = 3428
 fnivel: 41
@@ -330,12 +330,11 @@ f = 42	q = 76
 dominio = elevators-opt08-strips
 tarefa = p01.pddl
 heuristica = gapdb
-found = 3
 problem_name_gapdb = p01_gapdb_2.pddl
 name = p01_gapdb_2_F_42.csv
 Directory: gapdb created.
 Directory: SSCC created.
-Actual search time: 0.12s [t=0.48s]
+Actual search time: 0.14s [t=0.48s]
 board p2 slow0-0 n2 n0 n1 (0)
 move-down-slow slow0-0 n2 n1 (6)
 leave p2 slow0-0 n1 n1 n0 (0)
