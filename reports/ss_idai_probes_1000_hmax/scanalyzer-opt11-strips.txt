@@ -1,0 +1,14 @@
+	Report:		ida*-bfs-vs-ss-bfs - using hmax heuristic - 1000 probes.
+
+scanalyzer-opt11-strips
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		1			1
+7		2			2
+8		4			4
+9		6			6
+10		10			9.994
+11		15			14.957
+12		24			24.078
+13		39			39.752
