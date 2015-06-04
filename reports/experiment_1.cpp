@@ -274,24 +274,28 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			ida_time_average = ida_time_sum_total/number_instances;
 			ss_error_average = sum_pi/number_instances;
 			ss_time_average = ss_sum_time/number_instances;
+
+			outputFile<<left<<setw(24)<<domain;
+			outputFile<<right<<setw(15)<<ida_exp_average;
+			outputFile<<right<<setw(15)<<ida_time_average;
+			outputFile<<right<<setw(15)<<ss_error_average;
+			outputFile<<right<<setw(15)<<ss_time_average;	
 		} else {
 			ida_exp_average = ida_sum_total;
 			ida_time_average = ida_time_sum_total;
 			ss_error_average = sum_pi;
 			ss_time_average = ss_sum_time;
-		}
-		
 
-		outputFile<<left<<setw(24)<<domain;
-		outputFile<<right<<setw(15)<<ida_exp_average;
-		outputFile<<right<<setw(15)<<ida_time_average;
-		outputFile<<right<<setw(15)<<ss_error_average;
-		outputFile<<right<<setw(15)<<ss_time_average;
+			outputFile<<left<<setw(24)<<domain;
+			outputFile<<right<<setw(15)<<"---";
+			outputFile<<right<<setw(15)<<"---";
+			outputFile<<right<<setw(15)<<"---";
+			outputFile<<right<<setw(15)<<"---";
+			
+		}
 		outputFile<<right<<setw(15)<<number_instances;
 		outputFile<<"\n";
 
-		//outputFile<<domain<<"\t\t"<<setw(8)<<ida_exp_average<<"\t\t"<<setw(6)<<ida_time_average<<"\t\t"<<setw(8)<<ss_error_average<<"\t\t"<<number_instances<<"\n";
-                
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
 	outputFile.close();     
