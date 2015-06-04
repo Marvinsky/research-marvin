@@ -268,10 +268,19 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			}
 			number_instances++;
 		}
-		ida_exp_average = ida_sum_total/number_instances;
-		ida_time_average = ida_time_sum_total/number_instances;
-		ss_error_average = sum_pi/number_instances;
-		ss_time_average = ss_sum_time/number_instances;
+
+		if (number_instances > 0) {
+			ida_exp_average = ida_sum_total/number_instances;
+			ida_time_average = ida_time_sum_total/number_instances;
+			ss_error_average = sum_pi/number_instances;
+			ss_time_average = ss_sum_time/number_instances;
+		} else {
+			ida_exp_average = ida_sum_total;
+			ida_time_average = ida_time_sum_total;
+			ss_error_average = sum_pi;
+			ss_time_average = ss_sum_time;
+		}
+		
 
 		outputFile<<left<<setw(24)<<domain;
 		outputFile<<right<<setw(15)<<ida_exp_average;

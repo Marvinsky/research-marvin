@@ -5,14 +5,14 @@ Domain                             ida*      ida* time       ss error        ss 
 blocks                      1.56474e+08        10770.9       0.159125           23.3             13
 barman-opt11-strips                 ---            ---            ---            ---            ---
 elevators-opt08-strips      1.60464e+06        4358.74        1.77734        7571.86              1
-elevators-opt11-strips              ---            ---            ---            ---            ---
+elevators-opt11-strips                0              0              0              0              0
 floortile-opt11-strips              ---            ---            ---            ---            ---
 nomystery-opt11-strips      2.91101e+06        289.453        0.36861        36.8467              6
 openstacks-opt08-adl                ---            ---            ---            ---            ---
-openstacks-opt08-strips             ---            ---            ---            ---            ---
+openstacks-opt08-strips          361346        786.512       0.347987         674.52              5
 openstacks-opt11-strips             ---            ---            ---            ---            ---
 parcprinter-opt11-strips            ---            ---            ---            ---            ---
-parking-opt11-strips                ---            ---            ---            ---            ---
+parking-opt11-strips                  0              0              0              0              0
 pegsol-opt11-strips              151280         10.998      0.0265342          7.933             20
 scanalyzer-opt11-strips             101           0.16      0.0259987           8.08              1
 sokoban-opt08-strips                ---            ---            ---            ---            ---
