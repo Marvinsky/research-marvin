@@ -1,0 +1,3 @@
+Experiment 2: parcprinter-opt11-strips using gapdb heuristic with 1000 probes
+
+parcprinter-opt11-strips

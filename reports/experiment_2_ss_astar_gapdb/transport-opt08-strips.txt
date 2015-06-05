@@ -1,0 +1,3 @@
+Experiment 2: transport-opt08-strips using gapdb heuristic with 1000 probes
+
+transport-opt08-strips

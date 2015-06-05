@@ -1,0 +1,3 @@
+Experiment 2: woodworking-opt08-strips using gapdb heuristic with 1000 probes
+
+woodworking-opt08-strips
