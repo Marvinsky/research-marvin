@@ -7,60 +7,80 @@ Variables: 13
 Facts: 56
 Bytes per state: 4
 done initalizing global data [t=0.00s]
-args[12]:ss(min([gapdb(mp=0.5), automate_GAs]))
+args[11]:ss(min([gapdb(mp=0.5), automate_GAs]))
 input arg:ss(min([gapdb(mp=0.5), automate_GAs]))
 new arg after erase:ss(min([gapdb(mp=0.5), 
-args[12]:ss(min([gapdb(mp=0.5), automate_GAs]))
+args[11]:ss(min([gapdb(mp=0.5), automate_GAs]))
 input arg:ss(min([gapdb(mp=0.5), automate_GAs]))
 new arg after erase:ss(min([gapdb(mp=0.5), 
-use_saved_pdbs = 1
-No patterns stored,calling load_GA_Patterns_from_file
-problem_name_mod = dat/blocks/probBLOCKS-6-0.dat
-Calling load_GA_Patterns_from_file
-log_file:dat/blocks/probBLOCKS-6-0.dat,g_plan_filename:sas_plan
-is_open true
-problem_found among stored GAs:sas_plan
-stored_GA_patterns.size:6,time:0.00
-,problem_name_mod:sas_plan:
-disjoint_patterns:,0
-mutation_rate_string:mp:,0.5000000,
-pdb_max_size_string:size:,50000,
-line:sas_plan:returning best heuristic(GAPDB)[,0,]:[2,4,5,7,8,9,10,11]-[0,1,3,6,12]-,mp:,0.5000000,size:,50000,disjoint_patterns:,0-best_fitness:8.21218,,initial value:12,GAPDB generation time:0.2
-use_saved_pdbs = 1
-,problem_name_mod:sas_plan:
-disjoint_patterns:,1
-mutation_rate_string:mp:,0.6000000,
-pdb_max_size_string:size:,20000,
-line:sas_plan:returning best heuristic(GAPDB)[,1,]:[1,3,4,5,6,9,11,12]-[0,2,7,8,10]-,mp:,0.6000000,size:,20000,disjoint_patterns:,1-best_fitness:6.06378,,initial value:6,GAPDB generation time:0.06
-use_saved_pdbs = 1
-,problem_name_mod:sas_plan:
-disjoint_patterns:,1
-mutation_rate_string:mp:,1.0000000,
-pdb_max_size_string:size:,20000,
-line:sas_plan:returning best heuristic(GAPDB)[,2,]:[3,6,7,8,9,10,11]-[0,1,2,4,5,12]-,mp:,1.0000000,size:,20000,disjoint_patterns:,1-best_fitness:7.32028,,initial value:8,GAPDB generation time:0.1
-use_saved_pdbs = 1
-,problem_name_mod:sas_plan:
-disjoint_patterns:,0
-mutation_rate_string:mp:,0.8000000,
-pdb_max_size_string:size:,20000,
-line:sas_plan:returning best heuristic(GAPDB)[,3,]:[2,8,9,10,12]-[0,2,5,7,9,11]-,mp:,0.8000000,size:,20000,disjoint_patterns:,0-best_fitness:8.02166,,initial value:11,GAPDB generation time:0.06
-use_saved_pdbs = 1
-,problem_name_mod:sas_plan:
-disjoint_patterns:,0
-mutation_rate_string:mp:,0.2000000,
-pdb_max_size_string:size:,20000,
-line:sas_plan:returning best heuristic(GAPDB)[,4,]:[1,2,4,8,9,10,12]-[1,3,5,7,11,12]-,mp:,0.2000000,size:,20000,disjoint_patterns:,0-best_fitness:8.23386,,initial value:11,GAPDB generation time:0.08
-use_saved_pdbs = 1
-,problem_name_mod:sas_plan:
-disjoint_patterns:,0
-mutation_rate_string:mp:,0.4000000,
-pdb_max_size_string:size:,20000,
-line:sas_plan:returning best heuristic(GAPDB)[,5,]:[3,6,9,10,11,12]-[0,1,2,4,5,7,8]-,mp:,0.4000000,size:,20000,disjoint_patterns:,0-best_fitness:8.18992,,initial value:10,GAPDB generation time:0.08
+use_saved_pdbs = 0
+best_fitness = 6.21
+best_fitness = 8.21
+Pattern generation (Edelkamp) time: 0.26
+callind dump_file() with pdb_dump_counter = 0
+dat directory created.
+domain directory created.
+First call, removing system_call to avoid duplicate pdbs:/bin/rm dat/blocks/probBLOCKS-6-0.dat
+rm status:256
+file_name: dat/blocks/probBLOCKS-6-0.dat
+returning best heuristic(GAPDB)[,0,]:[2, 4, 5, 7, 8, 9, 10, 11]
+[0, 1, 3, 6, 12]
+,mp:,0.50,disjoint_patterns:,0,size:,50000-best_fitness:8.21,,initial value:12,GAPDB generation time:0.26
+use_saved_pdbs = 0
+best_fitness = 8.47
+best_fitness = 10.28
+Pattern generation (Edelkamp) time: 4.54
+callind dump_file() with pdb_dump_counter = 1
+file_name: dat/blocks/probBLOCKS-6-0.dat
+returning best heuristic(GAPDB)[,1,]:[1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12]
+[]
+,mp:,0.60,disjoint_patterns:,1,size:,2000000-best_fitness:10.28,,initial value:12,GAPDB generation time:4.54
+use_saved_pdbs = 0
+best_fitness = 8.64
+best_fitness = 8.98
+best_fitness = 9.11
+best_fitness = 10.36
+Pattern generation (Edelkamp) time: 6.54
+callind dump_file() with pdb_dump_counter = 2
+file_name: dat/blocks/probBLOCKS-6-0.dat
+returning best heuristic(GAPDB)[,2,]:[1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12]
+[]
+,mp:,1.00,disjoint_patterns:,1,size:,2000000-best_fitness:10.36,,initial value:12,GAPDB generation time:6.54
+use_saved_pdbs = 0
+best_fitness = 7.25
+best_fitness = 8.82
+best_fitness = 9.11
+best_fitness = 10.03
+Pattern generation (Edelkamp) time: 4.72
+callind dump_file() with pdb_dump_counter = 3
+file_name: dat/blocks/probBLOCKS-6-0.dat
+returning best heuristic(GAPDB)[,3,]:[2, 3, 4, 5, 7, 8, 9, 10, 11, 12]
+[0, 3, 9, 11, 12]
+,mp:,0.80,disjoint_patterns:,0,size:,2000000-best_fitness:10.03,,initial value:12,GAPDB generation time:4.72
+use_saved_pdbs = 0
+best_fitness = 8.80
+best_fitness = 8.81
+best_fitness = 9.11
+best_fitness = 10.28
+Pattern generation (Edelkamp) time: 9.10
+callind dump_file() with pdb_dump_counter = 4
+file_name: dat/blocks/probBLOCKS-6-0.dat
+returning best heuristic(GAPDB)[,4,]:[2, 3, 5, 6, 7, 8, 9, 10, 11, 12]
+[0, 1, 4, 5, 8, 10, 11, 12]
+,mp:,0.20,disjoint_patterns:,0,size:,2000000-best_fitness:10.28,,initial value:12,GAPDB generation time:9.10
+use_saved_pdbs = 0
+best_fitness = 8.74
+best_fitness = 10.40
+Pattern generation (Edelkamp) time: 4.56
+callind dump_file() with pdb_dump_counter = 5
+file_name: dat/blocks/probBLOCKS-6-0.dat
+returning best heuristic(GAPDB)[,5,]:[1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+[]
+,mp:,0.40,disjoint_patterns:,0,size:,2000000-best_fitness:10.40,,initial value:12,GAPDB generation time:4.56
 SSSearch ...
-cleared store_GA_patterns.
 
-totalPrediction : 4184.38
-ss_timer: 0.36
+totalPrediction : 61.67
+ss_timer: 0.10
 probes: 1000
 threshold : 12.00
 dominio = blocks
@@ -71,8 +91,8 @@ found = 14
 name = probBLOCKS-6-0_F_12.csv
 Directory: gapdb created.
 Directory: SSCC created.
-count nodes generates : 11609.00
-count nodes expanded : 4184.38
+count nodes generates : 205.68
+count nodes expanded : 61.67
 dominio = blocks
 tarefa = probBLOCKS-6-0.pddl
 heuristica = gapdb
@@ -81,89 +101,58 @@ Directory: fdist created.
 print.
 g:0
 size: 1
-	f: 6	q: 1.00
+	f: 12	q: 1.00
 
 g:1
-size: 2
-	f: 6	q: 1.00
-	f: 8	q: 1.00
+size: 1
+	f: 12	q: 2.00
 
 g:2
-size: 3
-	f: 6	q: 1.00
-	f: 8	q: 4.00
-	f: 9	q: 1.00
+size: 1
+	f: 12	q: 4.00
 
 g:3
-size: 4
-	f: 6	q: 1.00
-	f: 8	q: 5.98
-	f: 9	q: 1.06
-	f: 10	q: 6.00
+size: 1
+	f: 12	q: 4.90
 
 g:4
-size: 6
-	f: 6	q: 1.00
-	f: 8	q: 6.97
-	f: 9	q: 1.01
-	f: 10	q: 25.15
-	f: 11	q: 10.14
-	f: 12	q: 1.96
+size: 1
+	f: 12	q: 5.78
 
 g:5
-size: 6
-	f: 6	q: 1.00
-	f: 8	q: 8.91
-	f: 9	q: 1.99
-	f: 10	q: 46.78
-	f: 11	q: 16.76
-	f: 12	q: 42.82
+size: 1
+	f: 12	q: 6.64
 
 g:6
-size: 4
-	f: 8	q: 9.87
-	f: 10	q: 53.01
-	f: 11	q: 22.62
-	f: 12	q: 197.73
+size: 1
+	f: 12	q: 5.42
 
 g:7
-size: 5
-	f: 8	q: 9.87
-	f: 9	q: 1.09
-	f: 10	q: 74.79
-	f: 11	q: 38.90
-	f: 12	q: 420.43
+size: 1
+	f: 12	q: 5.30
 
 g:8
-size: 4
-	f: 8	q: 1.09
-	f: 10	q: 81.36
-	f: 11	q: 8.26
-	f: 12	q: 440.05
+size: 1
+	f: 12	q: 4.40
 
 g:9
-size: 3
-	f: 10	q: 83.53
-	f: 11	q: 28.94
-	f: 12	q: 668.38
+size: 1
+	f: 12	q: 7.89
 
 g:10
-size: 3
-	f: 10	q: 23.59
-	f: 11	q: 2.56
-	f: 12	q: 709.82
+size: 1
+	f: 12	q: 6.98
 
 g:11
-size: 2
-	f: 11	q: 1.27
-	f: 12	q: 754.77
+size: 1
+	f: 12	q: 3.68
 
 g:12
 size: 1
-	f: 12	q: 364.92
+	f: 12	q: 3.68
 
-Actual search time: 0.36s [t=0.42s]
-Search time: 0.36s
-Total time: 0.42s
+Actual search time: 0.10s [t=159.04s]
+Search time: 0.10s
+Total time: 159.04s
 Search stopped without finding a solution.
-Peak memory: 3820 KB
+Peak memory: 32324 KB
