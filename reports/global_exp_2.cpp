@@ -110,7 +110,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	for (size_t i = 0; i < heuristics.size();i++) {
 		string heuristic = heuristics.at(i);
 		//find the directory which contains the results of the heuristics
-		string look_name = "experiment_1_" + sufix1 + "_" + sufix2 + "_" + heuristic;
+		string look_name = "experiment_2_" + sufix1 + "_" + sufix2 + "_" + heuristic;
 		vector<string> fileNames;
 
 		string openFile;
@@ -146,6 +146,11 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		} else {
 	    		cout<<"Error trying to open the directory: "<<openFile.c_str()<<endl;
 		}
+
+		for (size_t i = 0; i < fileNames.size(); i++) {
+			cout<<fileNames.at(i)<<"\n";
+		}
+
 		/*
 		map<int, map<string, vector<double> > > map_probes_heur;
 		int CONST_ROWS = 21, CONST_COLUMNS = 6;
