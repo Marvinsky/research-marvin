@@ -2,32 +2,5 @@ Experiment 2: elevators-opt08-strips using gapdb heuristic with 1000 probes
 
 p01_F_42.csv
 
-A*:		{(gapdb_1, 5.28517e+06),(gapdb_2, 5.28517e+06),(gapdb_4, 5.28517e+06),(gapdb_3, 5.3955e+06),(gapdb_5, 5.3985e+06),(gapdb_6, 5.3985e+06),}
-ss:		{(gapdb_5, 1.72978e+06),(gapdb_1, 6.51085e+07),(gapdb_2, 6.51085e+07),(gapdb_4, 6.51085e+07),(gapdb_3, 2.27058e+09),(gapdb_6, 2.27058e+09),}
-
-Measure 1:
- - There are two best heuristics: gapdb_1 and gapdb_2 generating the same number of nodes: 5.28517e+06
- - Description:
-	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:1.0000000,size=20000,with disjoint patterns
-	gapdb_2:	h(,1):,heur is GAPDB,mutation_rate:0.6000000,size=20000,with disjoint patterns
- - Best heuristic is gapdb_1, and number of nodes generated: 5.28517e+06
-
-Measure 2:
- - Fixed Regrets:
-	gapdb_1:	0
-	gapdb_2:	0
-	gapdb_5:	113338
- - 66.6667% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
-
-Measure 3:
- - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_2:	0
-	gapdb_5:	113338
-	gapdb_6:	113338
- - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 67702.1
-
-Comparing Fixed and Random Regrets:
- - Fixed regrets is better option than Random regrets.
-
-
+A*:		{(0, 347683),(1, 347683),(3, 347683),(4, 347683),(2, 386435),(5, 393943),}
+ss:		{(gapdb_1, 36.296),(gapdb_2, 36.296),(gapdb_4, 36.296),(gapdb_5, 36.296),(gapdb_6, 3.27539e+06),(gapdb_3, 8.0196e+07),}
