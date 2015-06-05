@@ -188,7 +188,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		sufix1 = algorithm1;
 	}
 	string sufix2 = algorithm2;
-	string model = "experiment_2_"+sufix1 + "_" + sufix2;
+	string model = "experiment_2_"+sufix1 + "_" + sufix2 + "_" + heuristic;
 
 	string  domainReporte = "mkdir /home/marvin/marvin/reports/"+model;
 	if (!system(domainReporte.c_str())) {
