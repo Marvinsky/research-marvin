@@ -2,30 +2,28 @@ Experiment 2: blocks using gapdb heuristic with 1000 probes
 
 probBLOCKS-4-0_F_6.csv
 
-A*:		{(gapdb_2, 123),(gapdb_1, 309),(gapdb_6, 309),(gapdb_5, 359),(gapdb_4, 391),(gapdb_3, 434),}
-ss:		{(gapdb_1, 14.559),(gapdb_2, 14.559),(gapdb_5, 14.559),(gapdb_6, 14.559),(gapdb_3, 25.511),(gapdb_4, 31.699),}
+A*:		{(gapdb_4, 41),(gapdb_1, 137),(gapdb_0, 151),(gapdb_5, 151),(gapdb_2, 168),(gapdb_3, 189),}
+ss:		{(gapdb_1, 15.567),(gapdb_4, 15.567),(gapdb_0, 26.798),(gapdb_5, 26.798),(gapdb_2, 32.626),(gapdb_3, 36.626),}
 
 Measure 1:
- - There are two best heuristics: (gapdb_2, 123), (gapdb_1, 309)
+ - There are three best heuristics: (gapdb_4, 41), (gapdb_1, 137) and (gapdb_0, 151)
  - Description:
-	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.2000000,size=20000,without disjoint patterns
-	gapdb_2:	h(,1):,heur is GAPDB,mutation_rate:1.0000000,size=20000,with disjoint patterns
- - Best heuristic is gapdb_2, and number of nodes generated: 123
+ - Best heuristic is gapdb_4, and number of nodes generated: 41
 
 Measure 2:
  - Fixed Regrets:
-	gapdb_1:	186
-	gapdb_2:	0
-	gapdb_5:	236
- - 66.6667% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
+	gapdb_0:	110
+	gapdb_1:	96
+	gapdb_4:	0
+ - 100% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
 
 Measure 3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_1:	186
-	gapdb_3:	311
-	gapdb_4:	268
- - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 158.8
+	gapdb_0:	110
+	gapdb_2:	127
+	gapdb_4:	0
+ - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 102
 
 Comparing Fixed and Random Regrets:
  - Fixed regrets is better option than Random regrets.
@@ -33,29 +31,57 @@ Comparing Fixed and Random Regrets:
 
 probBLOCKS-4-1_F_10.csv
 
-A*:		{(gapdb_2, 554),(gapdb_1, 593),(gapdb_3, 593),(gapdb_4, 593),(gapdb_5, 593),(gapdb_6, 593),}
-ss:		{(gapdb_1, 23.906),(gapdb_4, 34.914),(gapdb_5, 34.914),(gapdb_6, 40.312),(gapdb_3, 41.754),(gapdb_2, 58.282),}
+A*:		{(gapdb_1, 217),(gapdb_0, 226),(gapdb_2, 226),(gapdb_3, 226),(gapdb_4, 226),(gapdb_5, 226),}
+ss:		{(gapdb_1, 24.594),(gapdb_0, 40.872),(gapdb_3, 42.458),(gapdb_2, 58.662),(gapdb_4, 58.662),(gapdb_5, 62.582),}
 
 Measure 1:
- - The best heuristic is: gapdb_1 and generates 593 nodes.
+ - There are two best heuristics: (gapdb_1, 217), (gapdb_0, 226)
  - Description:
-	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.6000000,size=20000,with disjoint patterns
- - Best heuristic is gapdb_1, and number of nodes generated: 593
+ - Best heuristic is gapdb_1, and number of nodes generated: 217
 
 Measure 2:
  - Fixed Regrets:
+	gapdb_0:	9
 	gapdb_1:	0
-	gapdb_4:	0
-	gapdb_5:	0
+	gapdb_3:	9
+ - 66.6667% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
+
+Measure 3:
+ - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_0:	9
+	gapdb_1:	0
+	gapdb_4:	9
+ - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 9
+
+Comparing Fixed and Random Regrets:
+ - Fixed regrets and Random regrets have the same chance to be choosed.
+
+
+probBLOCKS-4-2_F_6.csv
+
+A*:		{(gapdb_0, 41),(gapdb_4, 120),(gapdb_5, 132),(gapdb_1, 135),(gapdb_2, 169),(gapdb_3, 169),}
+ss:		{(gapdb_0, 15.148),(gapdb_1, 15.148),(gapdb_2, 15.148),(gapdb_3, 15.148),(gapdb_4, 15.148),(gapdb_5, 21.13),}
+
+Measure 1:
+ - The best heuristic is: gapdb_0 and generates 41 nodes.
+ - Description:
+ - Best heuristic is gapdb_0, and number of nodes generated: 41
+
+Measure 2:
+ - Fixed Regrets:
+	gapdb_0:	0
+	gapdb_1:	94
+	gapdb_2:	128
  - 33.3333% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
 
 Measure 3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_2:	-39
-	gapdb_4:	0
-	gapdb_6:	0
+	gapdb_2:	128
+	gapdb_3:	128
+	gapdb_5:	91
  - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: -7.8
+ - Average regret chosing heuristics 10 times: 84.5
 
 Comparing Fixed and Random Regrets:
  - Fixed regrets and Random regrets have the same chance to be choosed.
@@ -63,212 +89,57 @@ Comparing Fixed and Random Regrets:
 
 probBLOCKS-5-0_F_12.csv
 
-A*:		{(gapdb_1, 5351),(gapdb_2, 5351),(gapdb_3, 5351),(gapdb_4, 5351),(gapdb_5, 5351),(gapdb_6, 5351),}
-ss:		{(gapdb_2, 218.237),(gapdb_6, 218.237),(gapdb_4, 263.09),(gapdb_5, 899.565),(gapdb_1, 944.375),(gapdb_3, 1091.47),}
+A*:		{(gapdb_2, 1265),(gapdb_0, 1885),(gapdb_1, 1885),(gapdb_3, 1885),(gapdb_4, 1885),(gapdb_5, 1885),}
+ss:		{(gapdb_2, 78.753),(gapdb_0, 207.785),(gapdb_1, 267.883),(gapdb_3, 319.031),(gapdb_5, 2058.95),(gapdb_4, 933382),}
 
 Measure 1:
- - The best heuristic is: gapdb_2 and generates 5351 nodes.
+ - There are three best heuristics: (gapdb_2, 1265), (gapdb_0, 1885) and (gapdb_1, 1885)
  - Description:
-	gapdb_2:	h(,1):,heur is GAPDB,mutation_rate:0.4000000,size=20000,without disjoint patterns
- - Best heuristic is gapdb_2, and number of nodes generated: 5351
+ - Best heuristic is gapdb_2, and number of nodes generated: 1265
 
 Measure 2:
  - Fixed Regrets:
+	gapdb_0:	620
+	gapdb_1:	620
 	gapdb_2:	0
-	gapdb_4:	0
-	gapdb_6:	0
- - 33.3333% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
+ - 100% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
 
 Measure 3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_1:	0
-	gapdb_3:	0
-	gapdb_6:	0
+	gapdb_0:	620
+	gapdb_1:	620
+	gapdb_5:	620
  - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 0
-
-Comparing Fixed and Random Regrets:
- - Random regrets is better option than Fixed regrets.
-
-
-probBLOCKS-5-1_F_10.csv
-
-A*:		{(gapdb_1, 5318),(gapdb_3, 5330),(gapdb_6, 5333),(gapdb_2, 5342),(gapdb_4, 5342),(gapdb_5, 5342),}
-ss:		{(gapdb_4, 169.89),(gapdb_6, 386.631),(gapdb_5, 412.972),(gapdb_1, 447.559),(gapdb_2, 1149.77),(gapdb_3, 1272.75),}
-
-Measure 1:
- - The best heuristic is: gapdb_6 and generates 5333 nodes.
- - Description:
-	gapdb_6:	h(,5):,heur is GAPDB,mutation_rate:1.0000000,size=20000,with disjoint patterns
- - Best heuristic is gapdb_6, and number of nodes generated: 5333
-
-Measure 2:
- - Fixed Regrets:
-	gapdb_4:	9
-	gapdb_5:	9
-	gapdb_6:	0
- - 33.3333% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
-
-Measure 3:
- - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_1:	-15
-	gapdb_2:	9
-	gapdb_3:	-3
- - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 0
-
-Comparing Fixed and Random Regrets:
- - Random regrets is better option than Fixed regrets.
-
-
-probBLOCKS-7-0_F_20.csv
-
-A*:		{(gapdb_1, 515382),(gapdb_2, 515382),(gapdb_3, 515382),(gapdb_4, 515382),(gapdb_5, 515382),(gapdb_6, 515382),}
-ss:		{(gapdb_1, 2360.94),(gapdb_6, 2472.66),(gapdb_2, 6989.91),(gapdb_5, 39627.5),(gapdb_4, 87161.7),(gapdb_3, 1.15795e+06),}
-
-Measure 1:
- - There are two best heuristics: gapdb_1 and gapdb_2 generating the same number of nodes: 515382
- - Description:
-	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.2000000,size=20000,without disjoint patterns
-	gapdb_2:	h(,1):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
- - Best heuristic is gapdb_1, and number of nodes generated: 515382
-
-Measure 2:
- - Fixed Regrets:
-	gapdb_1:	0
-	gapdb_2:	0
-	gapdb_6:	0
- - 66.6667% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
-
-Measure 3:
- - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_2:	0
-	gapdb_3:	0
-	gapdb_4:	0
- - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 0
-
-Comparing Fixed and Random Regrets:
- - Fixed regrets and Random regrets have the same chance to be choosed.
-
-
-probBLOCKS-6-0_F_12.csv
-
-A*:		{(gapdb_1, 34921),(gapdb_2, 34921),(gapdb_3, 34921),(gapdb_4, 34921),(gapdb_5, 34921),(gapdb_6, 34921),}
-ss:		{(gapdb_2, 79.476),(gapdb_5, 79.476),(gapdb_6, 167.464),(gapdb_1, 190.626),(gapdb_3, 570.592),(gapdb_4, 11541.2),}
-
-Measure 1:
- - The best heuristic is: gapdb_2 and generates 34921 nodes.
- - Description:
-	gapdb_2:	h(,1):,heur is GAPDB,mutation_rate:0.6000000,size=20000,with disjoint patterns
- - Best heuristic is gapdb_2, and number of nodes generated: 34921
-
-Measure 2:
- - Fixed Regrets:
-	gapdb_2:	0
-	gapdb_5:	0
-	gapdb_6:	0
- - 33.3333% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
-
-Measure 3:
- - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_1:	0
-	gapdb_5:	0
-	gapdb_6:	0
- - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 0
-
-Comparing Fixed and Random Regrets:
- - Fixed regrets and Random regrets have the same chance to be choosed.
-
-
-probBLOCKS-6-2_F_20.csv
-
-A*:		{(gapdb_1, 54882),(gapdb_2, 54882),(gapdb_3, 54882),(gapdb_4, 54882),(gapdb_5, 54882),(gapdb_6, 54882),}
-ss:		{(gapdb_4, 45331.5),(gapdb_6, 45331.5),(gapdb_3, 81485.6),(gapdb_5, 252414),(gapdb_1, 548048),(gapdb_2, 1.37895e+06),}
-
-Measure 1:
- - The best heuristic is: gapdb_3 and generates 54882 nodes.
- - Description:
-	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:0.4000000,size=20000,without disjoint patterns
- - Best heuristic is gapdb_3, and number of nodes generated: 54882
-
-Measure 2:
- - Fixed Regrets:
-	gapdb_3:	0
-	gapdb_4:	0
-	gapdb_6:	0
- - 33.3333% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
-
-Measure 3:
- - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_1:	0
-	gapdb_3:	0
-	gapdb_6:	0
- - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 0
-
-Comparing Fixed and Random Regrets:
- - Random regrets is better option than Fixed regrets.
-
-
-probBLOCKS-4-2_F_6.csv
-
-A*:		{(gapdb_1, 120),(gapdb_3, 286),(gapdb_5, 286),(gapdb_4, 325),(gapdb_6, 325),(gapdb_2, 436),}
-ss:		{(gapdb_1, 15.004),(gapdb_2, 15.004),(gapdb_3, 15.004),(gapdb_4, 15.004),(gapdb_5, 15.004),(gapdb_6, 15.004),}
-
-Measure 1:
- - There are two best heuristics: (gapdb_1, 120), (gapdb_3, 286)
- - Description:
-	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:1.0000000,size=20000,with disjoint patterns
-	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:0.4000000,size=20000,without disjoint patterns
- - Best heuristic is gapdb_1, and number of nodes generated: 120
-
-Measure 2:
- - Fixed Regrets:
-	gapdb_1:	0
-	gapdb_2:	316
-	gapdb_3:	166
- - 66.6667% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
-
-Measure 3:
- - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_2:	316
-	gapdb_4:	205
-	gapdb_5:	166
- - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 126.3
+ - Average regret chosing heuristics 10 times: 434
 
 Comparing Fixed and Random Regrets:
  - Fixed regrets is better option than Random regrets.
 
 
-probBLOCKS-6-1_F_10.csv
+probBLOCKS-5-1_F_10.csv
 
-A*:		{(gapdb_1, 48291),(gapdb_2, 49545),(gapdb_3, 49545),(gapdb_6, 49741),(gapdb_4, 51723),(gapdb_5, 52606),}
-ss:		{(gapdb_1, 88.69),(gapdb_6, 129.082),(gapdb_3, 139.036),(gapdb_4, 139.036),(gapdb_2, 2722.61),(gapdb_5, 3250.4),}
+A*:		{(gapdb_2, 556),(gapdb_5, 556),(gapdb_3, 1666),(gapdb_0, 1879),(gapdb_1, 1879),(gapdb_4, 1879),}
+ss:		{(gapdb_2, 45.749),(gapdb_5, 45.749),(gapdb_3, 92.288),(gapdb_1, 150.785),(gapdb_4, 159.689),(gapdb_0, 553266),}
 
 Measure 1:
- - There are two best heuristics: (gapdb_1, 48291), (gapdb_3, 49545)
+ - There are three best heuristics: (gapdb_2, 556), (gapdb_5, 556) and (gapdb_3, 1666)
  - Description:
-	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:0.2000000,size=20000,without disjoint patterns
-	gapdb_3:	h(,2):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
- - Best heuristic is gapdb_1, and number of nodes generated: 48291
+ - Best heuristic is gapdb_5, and number of nodes generated: 556
 
 Measure 2:
  - Fixed Regrets:
-	gapdb_1:	0
-	gapdb_3:	1254
-	gapdb_6:	1450
- - 66.6667% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
+	gapdb_2:	0
+	gapdb_3:	1110
+	gapdb_5:	0
+ - 100% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
 
 Measure 3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_1:	0
-	gapdb_5:	4315
-	gapdb_6:	1450
+	gapdb_1:	1323
+	gapdb_2:	0
+	gapdb_4:	1323
  - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 1585.9
+ - Average regret chosing heuristics 10 times: 862.2
 
 Comparing Fixed and Random Regrets:
  - Fixed regrets is better option than Random regrets.
@@ -276,27 +147,139 @@ Comparing Fixed and Random Regrets:
 
 probBLOCKS-5-2_F_16.csv
 
-A*:		{(gapdb_1, 5690),(gapdb_2, 5690),(gapdb_3, 5690),(gapdb_4, 5690),(gapdb_5, 5690),(gapdb_6, 5690),}
-ss:		{(gapdb_1, 529.938),(gapdb_6, 677.802),(gapdb_4, 1030.07),(gapdb_3, 3744.98),(gapdb_2, 4608.93),(gapdb_5, 5873.88),}
+A*:		{(gapdb_0, 2089),(gapdb_2, 2089),(gapdb_3, 2089),(gapdb_4, 2089),(gapdb_5, 2089),}
+ss:		{(gapdb_0, 79.658),(gapdb_3, 120.73),(gapdb_4, 271.198),(gapdb_5, 512.29),(gapdb_2, 2079.39),(gapdb_1, 1.42913e+07),}
 
-Measure 1:
- - The best heuristic is: gapdb_1 and generates 5690 nodes.
- - Description:
-	gapdb_1:	h(,0):,heur is GAPDB,mutation_rate:1.0000000,size=20000,with disjoint patterns
- - Best heuristic is gapdb_1, and number of nodes generated: 5690
+Measure 1: - There are more than three best heuristics.
+ - Best heuristic is , and number of nodes generated: 0
 
 Measure 2:
  - Fixed Regrets:
-	gapdb_1:	0
-	gapdb_4:	0
-	gapdb_6:	0
- - 33.3333% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
+	gapdb_0:	2089
+	gapdb_3:	2089
+	gapdb_4:	2089
+ - 0% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
+
+Measure 3:
+ - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_0:	2089
+	gapdb_5:	2089
+ - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 2089
+
+Comparing Fixed and Random Regrets:
+ - Random regrets is better option than Fixed regrets.
+
+
+probBLOCKS-6-0_F_12.csv
+
+A*:		{(gapdb_0, 9205),(gapdb_4, 9408),(gapdb_5, 9783),(gapdb_2, 10013),(gapdb_1, 10367),(gapdb_3, 10367),}
+ss:		{(gapdb_0, 39.923),(gapdb_4, 41.387),(gapdb_2, 42.027),(gapdb_5, 48.379),(gapdb_3, 53.963),(gapdb_1, 189.103),}
+
+Measure 1:
+ - There are two best heuristics: (gapdb_0, 9205), (gapdb_4, 9408)
+ - Description:
+ - Best heuristic is gapdb_0, and number of nodes generated: 9205
+
+Measure 2:
+ - Fixed Regrets:
+	gapdb_0:	0
+	gapdb_2:	808
+	gapdb_4:	203
+ - 66.6667% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
+
+Measure 3:
+ - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_0:	0
+	gapdb_1:	1162
+	gapdb_2:	808
+ - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 600.1
+
+Comparing Fixed and Random Regrets:
+ - Fixed regrets is better option than Random regrets.
+
+
+probBLOCKS-6-1_F_10.csv
+
+A*:		{(gapdb_3, 5225),(gapdb_0, 8237),(gapdb_5, 8249),(gapdb_2, 8613),(gapdb_4, 9277),(gapdb_1, 15960),}
+ss:		{(gapdb_3, 41.502),(gapdb_2, 86.194),(gapdb_0, 87.706),(gapdb_4, 91.234),(gapdb_5, 93.178),(gapdb_1, 156.786),}
+
+Measure 1:
+ - There are two best heuristics: (gapdb_3, 5225), (gapdb_0, 8237)
+ - Description:
+ - Best heuristic is gapdb_3, and number of nodes generated: 5225
+
+Measure 2:
+ - Fixed Regrets:
+	gapdb_0:	3012
+	gapdb_2:	3388
+	gapdb_3:	0
+ - 66.6667% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
+
+Measure 3:
+ - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_0:	3012
+	gapdb_3:	0
+	gapdb_4:	4052
+ - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 2628.8
+
+Comparing Fixed and Random Regrets:
+ - Fixed regrets and Random regrets have the same chance to be choosed.
+
+
+probBLOCKS-6-2_F_20.csv
+
+A*:		{(gapdb_0, 18551),(gapdb_1, 18551),(gapdb_2, 18551),(gapdb_3, 18551),(gapdb_4, 18551),(gapdb_5, 18551),}
+ss:		{(gapdb_3, 3432.49),(gapdb_0, 12368.5),(gapdb_2, 20628.1),(gapdb_4, 21480.6),(gapdb_1, 447659),(gapdb_5, 486098),}
+
+Measure 1:
+ - There are two best heuristics: gapdb_0 and gapdb_2 generating the same number of nodes: 18551
+ - Description:
+ - Best heuristic is gapdb_0, and number of nodes generated: 18551
+
+Measure 2:
+ - Fixed Regrets:
+	gapdb_0:	0
+	gapdb_2:	0
+	gapdb_3:	0
+ - 66.6667% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
 
 Measure 3:
  - Random Regrets: SS's heuristic random selection, size = 3
 	gapdb_2:	0
+	gapdb_4:	0
+	gapdb_5:	0
+ - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 0
+
+Comparing Fixed and Random Regrets:
+ - Fixed regrets is better option than Random regrets.
+
+
+probBLOCKS-7-0_F_20.csv
+
+A*:		{(gapdb_0, 152105),(gapdb_1, 152105),(gapdb_2, 152105),(gapdb_3, 152105),(gapdb_4, 152105),(gapdb_5, 152105),}
+ss:		{(gapdb_4, 2768.25),(gapdb_2, 3598.31),(gapdb_3, 10413.3),(gapdb_0, 1.29754e+09),(gapdb_1, 1.29754e+09),(gapdb_5, 1.29754e+09),}
+
+Measure 1:
+ - The best heuristic is: gapdb_2 and generates 152105 nodes.
+ - Description:
+ - Best heuristic is gapdb_2, and number of nodes generated: 152105
+
+Measure 2:
+ - Fixed Regrets:
+	gapdb_2:	0
 	gapdb_3:	0
-	gapdb_6:	0
+	gapdb_4:	0
+ - 33.3333% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
+
+Measure 3:
+ - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_0:	0
+	gapdb_1:	0
+	gapdb_3:	0
  - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
  - Average regret chosing heuristics 10 times: 0
 

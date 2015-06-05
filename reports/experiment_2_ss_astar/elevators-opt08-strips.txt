@@ -19,11 +19,11 @@ Measure 2:
 
 Measure 3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_2:	38752
 	gapdb_3:	0
 	gapdb_4:	0
+	gapdb_5:	46260
  - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 17002.4
+ - Average regret chosing heuristics 10 times: 25503.6
 
 Comparing Fixed and Random Regrets:
  - Fixed regrets is better option than Random regrets.
