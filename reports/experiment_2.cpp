@@ -160,7 +160,7 @@ vector<pair<string, double> >  analyzeFile(string output_BC) {
 	for (int j = 0; j < n_heuristics; j++) {
 		double sum_ones = 0;
 		stringstream number;
-		number<<j+1;
+		number<<j;
 		string name = "gapdb_"+number.str();
 		for (int i = 0; i < count_line; i++) {
 			if (h[i][j] == 1) {

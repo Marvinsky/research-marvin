@@ -3,28 +3,29 @@ Experiment 2: elevators-opt08-strips using gapdb heuristic with 1000 probes
 p01_F_42.csv
 
 A*:		{(gapdb_0, 347683),(gapdb_1, 347683),(gapdb_3, 347683),(gapdb_4, 347683),(gapdb_2, 386435),(gapdb_5, 393943),}
-ss:		{(gapdb_1, 36.296),(gapdb_2, 36.296),(gapdb_4, 36.296),(gapdb_5, 36.296),(gapdb_6, 3.27539e+06),(gapdb_3, 8.0196e+07),}
+ss:		{(gapdb_0, 36.296),(gapdb_1, 36.296),(gapdb_3, 36.296),(gapdb_4, 36.296),(gapdb_5, 3.27539e+06),(gapdb_2, 8.0196e+07),}
 
 Measure 1:
- - The best heuristic is: gapdb_1 and generates 347683 nodes.
+ - There are three best heuristics: gapdb_0, gapdb_1 and gapdb_3 generating the same number of nodes 347683
  - Description:
- - Best heuristic is gapdb_1, and number of nodes generated: 347683
+ - Best heuristic is gapdb_0, and number of nodes generated: 347683
 
 Measure 2:
  - Fixed Regrets:
+	gapdb_0:	0
 	gapdb_1:	0
-	gapdb_2:	38752
-	gapdb_4:	0
- - 33.3333% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
+	gapdb_3:	0
+ - 100% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
 
 Measure 3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_1:	0
+	gapdb_2:	38752
 	gapdb_3:	0
- - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 11565
+	gapdb_4:	0
+ - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 17002.4
 
 Comparing Fixed and Random Regrets:
- - Random regrets is better option than Fixed regrets.
+ - Fixed regrets is better option than Random regrets.
 
 
