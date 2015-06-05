@@ -1,3 +1,0 @@
-Experiment 2: nomystery-opt11-strips using gapdb heuristic with 1000 probes
-
-nomystery-opt11-strips

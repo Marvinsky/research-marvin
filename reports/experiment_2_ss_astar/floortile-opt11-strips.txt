@@ -1,3 +1,0 @@
-Experiment 2: floortile-opt11-strips using gapdb heuristic with 1000 probes
-
-floortile-opt11-strips
