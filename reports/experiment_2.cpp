@@ -359,7 +359,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				string file_to_open = dir_astarBC + "/" + s;
 				//cout<<"\t\t"<<s<<"\n";
 				string pot[6];
-				string key;
+				string key, key_final;
                 		size_t pos = 0;
                 		string token;
                 		int index = 0;
@@ -374,6 +374,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				key = pot[2]; //setting the index of the gapdb
 				//cout<<"\t\tkey = "<<key<<"\n";
 				//cout<<"\t\tfile_to_open = "<<file_to_open<<"\n";
+				key_final = "gapdb_" + key;
 
 				vector<pair<string, double> > m = analyzeFile(file_to_open);
 				double nodes_generated = 0;
@@ -388,7 +389,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						nodes_generated = d;
 					}
 				}
-				map_bc_astar.insert(pair<string, double>(key, nodes_generated));
+				map_bc_astar.insert(pair<string, double>(key_final, nodes_generated));
 			}
 			//sort the elements by second parameter
 			vector<pair<string, double> > sort_v(map_bc_astar.begin(), map_bc_astar.end());
@@ -513,7 +514,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						}
 					}
 					outputFile<<"}\n";
-					/*
+					
 					//ss ------------------------------------
 					map<string, vector<string> > group_map_ss;
 					int ss_count = 1;
@@ -557,7 +558,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						}
 						//outputFile<<"error maximo = "<<count_error<<"\n";
 					}
-
+					
 					vector<string> v_ss_regrets_fixed; //To calculate the fixed regrets
 					vector<string> v_ss_regrets_random; //To calculate the random regrets
 					for (size_t q = 0; q < collector_ss.size(); q++) {
@@ -695,7 +696,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					} else {
 						outputFile<<" - 0\% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.\n";
 					}
-
+					
 					//Calculate the random generation of regrets
 					map<string, double> m_regrets_random;
 					vector<string> collector_random_ss;
@@ -754,7 +755,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							}
 						}
 					}
-
+					
 					outputFile<<"\nMeasure 3:\n";
 					outputFile<<" - Random Regrets: SS's heuristic random selection, size = 3\n";
 					for (map<string, double>::iterator it_r = m_regrets_random.begin(); it_r != m_regrets_random.end(); it_r++) {
@@ -820,10 +821,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					if (count_error >= 0 && count_error_final >= 0) {
 						//outputFile<<"error maximo = "<<count_error<<"\n";
 						//outputFile<<"error minimo = "<<count_error_final<<"\n";
-					}*/
-					//end
-				
-
+					}
 				}
 			}
 
