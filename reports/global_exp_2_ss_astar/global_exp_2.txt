@@ -1,2 +1,25 @@
-	Experiment 1: Global Information of heuristics
+	Experiment 2: Global Information of heuristics
 
+Domain                  
+
+barman-opt11-strips          0.000     0.000
+blocks                     549.133   632.500
+elevators-opt08-strips       0.000     0.000
+elevators-opt11-strips       0.000     0.000
+floortile-opt11-strips       0.000     0.000
+nomystery-opt11-strips       0.000     0.000
+openstacks-opt08-adl         0.000     0.000
+openstacks-opt08-strips      0.000     0.000
+openstacks-opt11-strips      0.000     0.000
+parcprinter-opt11-strips     0.000     0.000
+parking-opt11-strips         0.000     0.000
+pegsol-opt11-strips          0.000     0.000
+scanalyzer-opt11-strips      0.190     0.190
+sokoban-opt08-strips         0.000     0.000
+sokoban-opt11-strips         0.000     0.000
+tidybot-opt11-strips         0.000     0.000
+transport-opt08-strips       0.000     0.000
+transport-opt11-strips       0.000     0.000
+visitall-opt11-strips        0.000     0.000
+woodworking-opt08-strips     0.000     0.000
+woodworking-opt11-strips     0.000     0.000

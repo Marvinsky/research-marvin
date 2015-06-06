@@ -72,8 +72,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	//int countRead = 0;
         //ifstream readFile("h/report/d/instance360.txt");
 
-	cout<<"algorithm1 = "<<algorithm1<<"\n";
-	cout<<"algorithm2 = "<<algorithm2<<"\n";
+	//cout<<"algorithm1 = "<<algorithm1<<"\n";
+	//cout<<"algorithm2 = "<<algorithm2<<"\n";
 	string sufix1 = "";
 	if (algorithm1.length() > 4) { 
         	sufix1 = algorithm1.substr(4, algorithm1.length());
@@ -83,10 +83,10 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
 	string sufix2 = algorithm2;
 
-	cout<<"sufix1 = "<<sufix1<<endl;
-	cout<<"sufix2 = "<<sufix2<<endl;
+	//cout<<"sufix1 = "<<sufix1<<endl;
+	//cout<<"sufix2 = "<<sufix2<<endl;
 	string model = "global_exp_2_"+sufix1 + "_" + sufix2;
-	cout<<"model = "<<model<<endl;
+	//cout<<"model = "<<model<<endl;
 
 	string  globalReporte = "mkdir /home/marvin/marvin/reports/"+model;
 	if (!system(globalReporte.c_str())) {
@@ -104,9 +104,9 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
 	ofstream outputFile;
 	outputFile.open(resultFile.c_str(), ios::out);
-	outputFile<<"\tExperiment 1: Global Information of heuristics\n\n";
+	outputFile<<"\tExperiment 2: Global Information of heuristics\n\n";
 
-	map<string, map<string, vector<double> > > map_all_heur;
+	map<string, vector<double> > map_gapdb;
 	for (size_t i = 0; i < heuristics.size();i++) {
 		string heuristic = heuristics.at(i);
 		//find the directory which contains the results of the heuristics
@@ -157,9 +157,9 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
 		for (size_t i = 0; i < fileNames.size(); i++) {
 			string experiment = fileNames.at(i);
-			cout<<"experiment = "<<experiment<<"\n";
+			//cout<<"experiment = "<<experiment<<"\n";
 			string expFile = openFile + "/" + experiment;
-			cout<<"expFile = "<<expFile<<"\n";
+			//cout<<"expFile = "<<expFile<<"\n";
 			ifstream fexp(expFile.c_str());
 
 			
@@ -169,8 +169,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 				if (next == look_instance_name) {
 				
 					fexp>>next;
-					cout<<"instance_name: "<<next<<"\n";
-					cout<<"\nMeasure_2:\n";
+					//cout<<"instance_name: "<<next<<"\n";
+					//cout<<"\nMeasure_2:\n";
 					int count = 0;
 					while (fexp>>next && count != 1) {
 						string str_gapdb1, str_gapdb2, str_gapdb3, value_gapdb1, value_gapdb2, value_gapdb3;
@@ -185,20 +185,20 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 							fexp>>str_gapdb3;
 							fexp>>value_gapdb3;
 							
-							cout<<"("<<str_gapdb1<<", "<<value_gapdb1<<")\n";
-							cout<<"("<<str_gapdb2<<", "<<value_gapdb2<<")\n";
-							cout<<"("<<str_gapdb3<<", "<<value_gapdb3<<")\n";
+							//cout<<"("<<str_gapdb1<<", "<<value_gapdb1<<")\n";
+							//cout<<"("<<str_gapdb2<<", "<<value_gapdb2<<")\n";
+							//cout<<"("<<str_gapdb3<<", "<<value_gapdb3<<")\n";
 							double to_number1, to_number2, to_number3;
 							to_number1 = atof(value_gapdb1.c_str());
 							to_number2 = atof(value_gapdb2.c_str());
 							to_number3 = atof(value_gapdb3.c_str());
 							double average = (to_number1 + to_number2 + to_number3)/3;
-							cout<<"average = "<<average<<"\n\n";
+							//cout<<"average = "<<average<<"\n\n";
 							v_fixed.push_back(average);
 							count++;
 						}
 					}
-					cout<<"Measure_3:\n";
+					//cout<<"Measure_3:\n";
 					int count1 = 0;
 					while (fexp>>next && count1 != 1) {
 						string str_gapdb1, str_gapdb2, str_gapdb3, value_gapdb1, value_gapdb2, value_gapdb3;
@@ -221,15 +221,15 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 							fexp>>str_gapdb3;
 							fexp>>value_gapdb3;
 							
-							cout<<"("<<str_gapdb1<<", "<<value_gapdb1<<")\n";
-							cout<<"("<<str_gapdb2<<", "<<value_gapdb2<<")\n";
-							cout<<"("<<str_gapdb3<<", "<<value_gapdb3<<")\n";
+							//cout<<"("<<str_gapdb1<<", "<<value_gapdb1<<")\n";
+							//cout<<"("<<str_gapdb2<<", "<<value_gapdb2<<")\n";
+							//cout<<"("<<str_gapdb3<<", "<<value_gapdb3<<")\n";
 							double to_number1, to_number2, to_number3;
 							to_number1 = atof(value_gapdb1.c_str());
 							to_number2 = atof(value_gapdb2.c_str());
 							to_number3 = atof(value_gapdb3.c_str());
 							double average = (to_number1 + to_number2 + to_number3)/3;
-							cout<<"average = "<<average<<"\n\n";
+							//cout<<"average = "<<average<<"\n\n";
 							v_random.push_back(average);
 							count1++;
 						}
@@ -244,9 +244,6 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			domain_m_fixed.insert(pair<string, vector<double> >(key, v_fixed));
 			domain_m_random.insert(pair<string, vector<double> >(key, v_random));
 		}
-
-
-		
 
 		map<string, vector<double> >::iterator iter, iter2;
 		for (iter = domain_m_fixed.begin(); iter != domain_m_fixed.end(); iter++) {
@@ -263,6 +260,15 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 				cout<<"("<<key<<", "<<average_domain<<")\n";
 			} else {
 				cout<<"("<<key<<", --- )\n";
+			}
+			vector<double> avr_value;
+			avr_value.push_back(average_domain);
+
+			map<string, vector<double> >::iterator iter_found = map_gapdb.find(key);
+			if (iter_found != map_gapdb.end()) {
+				//IN THEORY ALL THE ELEMENTS ARE NEW
+			} else {
+				map_gapdb.insert(pair<string, vector<double> >(key, avr_value));
 			}
 		}
 		cout<<"\n\n";
@@ -281,10 +287,45 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			} else {
 				cout<<"("<<key<<", --- )\n";
 			}
+
+			vector<double> avr_value;
+			avr_value.push_back(average_domain);
+
+			map<string, vector<double> >::iterator iter_found = map_gapdb.find(key);
+			if (iter_found != map_gapdb.end()) {
+				string k = iter_found->first;
+				vector<double> v = iter_found->second;	
+				v.push_back(average_domain);	
+				iter_found->second = v;
+			} else {
+				cout<<"new\n";
+				//IN THEORY, THERE IS NOTHING NEW
+			}
 		}	
 	}
-	/*
 
+	cout<<left<<setw(24)<<"Domain";
+	outputFile<<left<<setw(24)<<"Domain";
+	outputFile<<"\n\n";
+	cout<<"\n\n";
+	
+	//outputFile<<"\n\n";
+	map<string, vector<double> >::iterator iter;
+	for (iter = map_gapdb.begin(); iter != map_gapdb.end(); iter++) {
+		string key = iter->first;
+		cout<<left<<setw(24)<<key;
+		outputFile<<left<<setw(24)<<key;
+		vector<double> v = iter->second;
+		for (size_t i = 0; i < v.size(); i++) {
+			double d = v.at(i);
+			outputFile<<right<<setw(10)<<fixed<<setprecision(3)<<d;
+			cout<<right<<setw(10)<<fixed<<setprecision(3)<<d;
+		}
+		outputFile<<"\n";
+		cout<<"\n";
+	}
+
+	/*
 	map<string, vector<double> > map_table;
 	vector<int> index_probes;
 	map<string, map<int, map<string, vector<double> > > >::iterator itmap;
