@@ -15,8 +15,8 @@ parcprinter-opt11-strips              1              0              0          3
 parking-opt11-strips                ---            ---            ---            ---              0
 pegsol-opt11-strips              151280         10.998      0.0265342          7.933             20
 scanalyzer-opt11-strips             101           0.16      0.0259987           8.08              1
-sokoban-opt08-strips                ---            ---            ---            ---            ---
-sokoban-opt11-strips                ---            ---            ---            ---            ---
+sokoban-opt08-strips            5545.65          1.813      0.0230996          30.99             20
+sokoban-opt11-strips            8245.92        2.62154      0.0249197        33.0108             13
 tidybot-opt11-strips        2.71646e+06        17900.1       0.269407        2843.17              3
 transport-opt08-strips              ---            ---            ---            ---            ---
 transport-opt11-strips              ---            ---            ---            ---            ---
