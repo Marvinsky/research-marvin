@@ -104,7 +104,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
 	ofstream outputFile;
 	outputFile.open(resultFile.c_str(), ios::out);
-	outputFile<<"\tExperiment 2: Global Information of heuristics\n\n";
+	outputFile<<"\tExperiment 2: Regrets fixed and random information using three heuristics.\n\n";
 
 	map<string, vector<double> > map_gapdb;
 	for (size_t i = 0; i < heuristics.size();i++) {
@@ -304,8 +304,17 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		}	
 	}
 
+	cout<<right<<setw(39)<<"gapdb";
+	outputFile<<right<<setw(39)<<"gapdb";
+	outputFile<<"\n\n";
+	cout<<"\n\n";
+
 	cout<<left<<setw(24)<<"Domain";
 	outputFile<<left<<setw(24)<<"Domain";
+	cout<<right<<setw(10)<<"fixed";	
+	outputFile<<right<<setw(10)<<"fixed";
+	cout<<right<<setw(10)<<"random";	
+	outputFile<<right<<setw(10)<<"random";
 	outputFile<<"\n\n";
 	cout<<"\n\n";
 	
@@ -318,8 +327,13 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		vector<double> v = iter->second;
 		for (size_t i = 0; i < v.size(); i++) {
 			double d = v.at(i);
-			outputFile<<right<<setw(10)<<fixed<<setprecision(3)<<d;
-			cout<<right<<setw(10)<<fixed<<setprecision(3)<<d;
+			if (d != 0) {
+				outputFile<<right<<setw(10)<<fixed<<setprecision(3)<<d;
+				cout<<right<<setw(10)<<fixed<<setprecision(3)<<d;
+			} else {
+				outputFile<<right<<setw(10)<<fixed<<setprecision(3)<<"---";
+				cout<<right<<setw(10)<<fixed<<setprecision(3)<<"---";
+			}
 		}
 		outputFile<<"\n";
 		cout<<"\n";
