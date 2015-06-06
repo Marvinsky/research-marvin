@@ -104,6 +104,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
 	ofstream outputFile;
 	outputFile.open(resultFile.c_str(), ios::out);
+	cout<<"\tExperiment 2: Regrets fixed and random information using three heuristics.\n\n";
 	outputFile<<"\tExperiment 2: Regrets fixed and random information using three heuristics.\n\n";
 
 	map<string, vector<double> > map_gapdb;
@@ -295,7 +296,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			if (iter_found != map_gapdb.end()) {
 				string k = iter_found->first;
 				vector<double> v = iter_found->second;	
-				v.push_back(average_domain);	
+				v.push_back(average_domain);
+				v.push_back(size);
 				iter_found->second = v;
 			} else {
 				cout<<"new\n";
@@ -315,6 +317,9 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	outputFile<<right<<setw(10)<<"fixed";
 	cout<<right<<setw(10)<<"random";	
 	outputFile<<right<<setw(10)<<"random";
+	cout<<right<<setw(10)<<"n";	
+	outputFile<<right<<setw(10)<<"n";
+
 	outputFile<<"\n\n";
 	cout<<"\n\n";
 	
@@ -325,14 +330,25 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		cout<<left<<setw(24)<<key;
 		outputFile<<left<<setw(24)<<key;
 		vector<double> v = iter->second;
+		double n = v.at(2);
 		for (size_t i = 0; i < v.size(); i++) {
 			double d = v.at(i);
-			if (d != 0) {
-				outputFile<<right<<setw(10)<<fixed<<setprecision(3)<<d;
-				cout<<right<<setw(10)<<fixed<<setprecision(3)<<d;
+			if (i != 2) {
+				if (n > 0) {
+					outputFile<<right<<setw(10)<<fixed<<setprecision(3)<<d;
+					cout<<right<<setw(10)<<fixed<<setprecision(3)<<d;
+				} else {
+					outputFile<<right<<setw(10)<<fixed<<setprecision(3)<<"---";
+					cout<<right<<setw(10)<<fixed<<setprecision(3)<<"---";
+				}
 			} else {
-				outputFile<<right<<setw(10)<<fixed<<setprecision(3)<<"---";
-				cout<<right<<setw(10)<<fixed<<setprecision(3)<<"---";
+				if (d > 0) {
+					outputFile<<right<<setw(10)<<fixed<<setprecision(3)<<(int)d;
+					cout<<right<<setw(10)<<fixed<<setprecision(3)<<(int)d;
+				} else {
+					outputFile<<right<<setw(10)<<fixed<<setprecision(3)<<"---";
+					cout<<right<<setw(10)<<fixed<<setprecision(3)<<"---";
+				}
 			}
 		}
 		outputFile<<"\n";
