@@ -1,5 +1,5 @@
-barman-opt11-strips
 blocks
+barman-opt11-strips
 elevators-opt08-strips
 elevators-opt11-strips
 floortile-opt11-strips
