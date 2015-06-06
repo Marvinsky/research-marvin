@@ -1,0 +1,10 @@
+	Report:		ida*-bfs-vs-ss-bfs - using hmax heuristic - 1000 probes.
+
+transport-opt08-strips
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+51		1			1
+52		3			3
+53		9			9.016
+54		25			25.4
