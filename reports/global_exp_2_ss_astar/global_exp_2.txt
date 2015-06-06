@@ -5,8 +5,8 @@
 Domain                       fixed    random         n
 
 barman-opt11-strips            ---       ---       ---
-blocks                     549.133   632.500        10
-elevators-opt08-strips       0.000     0.000         1
+blocks                     549.133   573.044        10
+elevators-opt08-strips       0.000 15420.000         1
 elevators-opt11-strips         ---       ---       ---
 floortile-opt11-strips         ---       ---       ---
 nomystery-opt11-strips         ---       ---       ---
@@ -16,7 +16,7 @@ openstacks-opt11-strips        ---       ---       ---
 parcprinter-opt11-strips       ---       ---       ---
 parking-opt11-strips           ---       ---       ---
 pegsol-opt11-strips            ---       ---       ---
-scanalyzer-opt11-strips      0.190     0.190         7
+scanalyzer-opt11-strips      0.190     0.381         7
 sokoban-opt08-strips           ---       ---       ---
 sokoban-opt11-strips           ---       ---       ---
 tidybot-opt11-strips           ---       ---       ---
