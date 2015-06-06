@@ -106,7 +106,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	outputFile.open(resultFile.c_str(), ios::out);
 	outputFile<<"\tExperiment 1: Global Information of heuristics\n\n";
 
-	map<string, map<int, map<string, vector<double> > > > map_all_heur;
+	map<string, map<string, vector<double> > > map_all_heur;
 	for (size_t i = 0; i < heuristics.size();i++) {
 		string heuristic = heuristics.at(i);
 		//find the directory which contains the results of the heuristics
@@ -147,115 +147,141 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	    		cout<<"Error trying to open the directory: "<<openFile.c_str()<<endl;
 		}
 
-		for (size_t i = 0; i < fileNames.size(); i++) {
-			cout<<fileNames.at(i)<<"\n";
-		}
+		string look_instance_name = "instance_name:";
+		string look_measure_two = "Measure_2:";
+		string look_measure_three = "Measure_3:";
 
-		/*
-		map<int, map<string, vector<double> > > map_probes_heur;
-		int CONST_ROWS = 21, CONST_COLUMNS = 6;
+
+		//domain
+		map<string, vector<double> > domain_m_fixed, domain_m_random;
+
 		for (size_t i = 0; i < fileNames.size(); i++) {
 			string experiment = fileNames.at(i);
 			cout<<"experiment = "<<experiment<<"\n";
-			vector<vector<string> > all_domain_exp;
-
-			stringstream number;
-                        string t = experiment;
-			size_t found = t.find("s_");	
-                        string exp_name_mod = t.substr(found + 2, t.length());
-                        string fname = exp_name_mod;
-			string t2 = fname;
-			size_t found2 = t2.find(".");
-			string exp_name_mod2 = t2.substr(0, found2);
-			string num_probes = exp_name_mod2;
-			int number_probes = atoi(num_probes.c_str());
-			cout<<"number_probes = "<<number_probes<<"\n";
-
-			string str;
-			string** domains;
-			vector<string> v_domains;
-			vector<double> v_ida_value;
-			vector<double> v_ida_time;
-			vector<double> v_ss_value;
-			vector<double> v_ss_time;
-			vector<int> v_problems_solved;
-
-			string expFile;
-        		expFile = openFile + "/" + experiment;
-			cout<<"file that contains "<<number_probes<<" probes = "<<expFile<<"\n";
+			string expFile = openFile + "/" + experiment;
+			cout<<"expFile = "<<expFile<<"\n";
 			ifstream fexp(expFile.c_str());
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
 
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
-			fexp>>str;
-	
-			domains = new string*[CONST_ROWS];
-			for (int i = 0; i < CONST_ROWS; i++) {
-				domains[i] = new string[CONST_COLUMNS];
-			}	
 			
-			for (int i = 0; i < CONST_ROWS; i++) {
-				for (int j = 0; j < CONST_COLUMNS; j++) {
-					fexp>>domains[i][j];
+			vector<double> v_fixed, v_random;
+			string next;
+			while (fexp>>next) {
+				if (next == look_instance_name) {
+				
+					fexp>>next;
+					cout<<"instance_name: "<<next<<"\n";
+					cout<<"\nMeasure_2:\n";
+					int count = 0;
+					while (fexp>>next && count != 1) {
+						string str_gapdb1, str_gapdb2, str_gapdb3, value_gapdb1, value_gapdb2, value_gapdb3;
+						if (next == look_measure_two) {
+							fexp>>next;
+							fexp>>next;
+							fexp>>next;
+							fexp>>str_gapdb1;
+							fexp>>value_gapdb1;
+							fexp>>str_gapdb2;
+							fexp>>value_gapdb2;
+							fexp>>str_gapdb3;
+							fexp>>value_gapdb3;
+							
+							cout<<"("<<str_gapdb1<<", "<<value_gapdb1<<")\n";
+							cout<<"("<<str_gapdb2<<", "<<value_gapdb2<<")\n";
+							cout<<"("<<str_gapdb3<<", "<<value_gapdb3<<")\n";
+							double to_number1, to_number2, to_number3;
+							to_number1 = atof(value_gapdb1.c_str());
+							to_number2 = atof(value_gapdb2.c_str());
+							to_number3 = atof(value_gapdb3.c_str());
+							double average = (to_number1 + to_number2 + to_number3)/3;
+							cout<<"average = "<<average<<"\n\n";
+							v_fixed.push_back(average);
+							count++;
+						}
+					}
+					cout<<"Measure_3:\n";
+					int count1 = 0;
+					while (fexp>>next && count1 != 1) {
+						string str_gapdb1, str_gapdb2, str_gapdb3, value_gapdb1, value_gapdb2, value_gapdb3;
+						if (next == look_measure_three) {
+							fexp>>next;
+							fexp>>next;
+							fexp>>next;
+							fexp>>next;
+							fexp>>next;
+							fexp>>next;
+							fexp>>next;
+							fexp>>next;
+							fexp>>next;
+							fexp>>next;
+
+							fexp>>str_gapdb1;
+							fexp>>value_gapdb1;
+							fexp>>str_gapdb2;
+							fexp>>value_gapdb2;
+							fexp>>str_gapdb3;
+							fexp>>value_gapdb3;
+							
+							cout<<"("<<str_gapdb1<<", "<<value_gapdb1<<")\n";
+							cout<<"("<<str_gapdb2<<", "<<value_gapdb2<<")\n";
+							cout<<"("<<str_gapdb3<<", "<<value_gapdb3<<")\n";
+							double to_number1, to_number2, to_number3;
+							to_number1 = atof(value_gapdb1.c_str());
+							to_number2 = atof(value_gapdb2.c_str());
+							to_number3 = atof(value_gapdb3.c_str());
+							double average = (to_number1 + to_number2 + to_number3)/3;
+							cout<<"average = "<<average<<"\n\n";
+							v_random.push_back(average);
+							count1++;
+						}
+					}
+
+				
 				}
 			}
-
-			map<string, vector<double> > map_column;
-
-	
-			for (int i = 0; i < CONST_ROWS; i++) {
-				v_domains.push_back(domains[i][0]); //domains
-				v_ida_value.push_back(atof(domains[i][1].c_str()));
-				v_ida_time.push_back(atof(domains[i][2].c_str()));
-				v_ss_value.push_back(atof(domains[i][3].c_str()));
-				v_ss_time.push_back(atof(domains[i][4].c_str()));
-				v_problems_solved.push_back(atoi(domains[i][5].c_str()));
-			}
-
-
-			for (size_t i = 0; i < v_domains.size(); i++) {
-				vector<double> all_data;
-				string key = v_domains.at(i);
-				double ida_value = v_ida_value.at(i);
-				double ida_time = v_ida_time.at(i);
-				double ss_value = v_ss_value.at(i);
-				double ss_time = v_ss_time.at(i);
-				//cout<<"key = "<<key<<", ida_value = "<<ida_value<<", ida_time = "<<ida_time<<", ss_value = "<<ss_value<<", ss_time = "<<ss_time<<"\n";
-				if (ida_value == 0 && ida_time == 0 && ss_time == 0 && ss_time == 0) {
-					all_data.push_back(-1);
-					all_data.push_back(-1);
-					all_data.push_back(-1);
-					all_data.push_back(-1);
-				} else {
-					all_data.push_back(ida_value);
-					all_data.push_back(ida_time);
-					all_data.push_back(ss_value);
-					all_data.push_back(ss_time);
-				}
-
-				map_column.insert(pair<string, vector<double> >(key, all_data));
-			}
-			map_probes_heur.insert(pair<int, map<string, vector<double> > >(number_probes, map_column));	
+			string t = experiment;
+			size_t found = t.find(".");
+			string key = t.substr(0, found);
+			domain_m_fixed.insert(pair<string, vector<double> >(key, v_fixed));
+			domain_m_random.insert(pair<string, vector<double> >(key, v_random));
 		}
-		map_all_heur.insert(pair<string, map<int, map<string, vector<double> > > >(heuristic, map_probes_heur));
-		*/
+
+
+		
+
+		map<string, vector<double> >::iterator iter, iter2;
+		for (iter = domain_m_fixed.begin(); iter != domain_m_fixed.end(); iter++) {
+			string key = iter->first;
+			vector<double> v = iter->second;
+			double sum_fixed = 0, average_domain = 0, size = v.size();
+			for(size_t i = 0; i < v.size(); i++) {
+				double d = v.at(i);
+				//cout<<"\t- "<<d<<"\n";
+				sum_fixed += d;
+			}
+			if (size > 0) {
+				average_domain = sum_fixed/size;
+				cout<<"("<<key<<", "<<average_domain<<")\n";
+			} else {
+				cout<<"("<<key<<", --- )\n";
+			}
+		}
+		cout<<"\n\n";
+		for (iter2 = domain_m_random.begin(); iter2 != domain_m_random.end(); iter2++) {
+			string key = iter2->first;
+			vector<double> v = iter2->second;
+			double sum_random = 0, average_domain = 0, size= v.size();
+			for(size_t i = 0; i < v.size(); i++) {
+				double d = v.at(i);
+				//cout<<"\t- "<<d<<"\n";
+				sum_random += d;
+			}
+			if (size > 0) {
+				average_domain = sum_random/size;
+				cout<<"("<<key<<", "<<average_domain<<")\n";
+			} else {
+				cout<<"("<<key<<", --- )\n";
+			}
+		}	
 	}
 	/*
 

@@ -415,7 +415,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					vector<string> collector_astar, collector_ss;
 					map<double, vector<string> > map_astar, map_ss;
 
-					outputFile<<astarBC<<"\n\n";
+					outputFile<<"instance_name: "<<astarBC<<"\n\n";
 					//_________________CALLING A* _____________
 					add_lines_heuristics.clear();					
 					outputFile<<"A*:\t\t{";
@@ -572,7 +572,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					vector<string> s_v_three;
 					vector<double> d_v_three;
 					int counter_three = 0;
-					outputFile<<"\nMeasure 1:";
+					outputFile<<"\nMeasure_1:";
 					if (v_match_fixed_astar_ss.size() > 0) {	
 						for (size_t p = 0; p < v_match_fixed_astar_ss.size(); p++) {
 							string key = v_match_fixed_astar_ss.at(p);
@@ -670,7 +670,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					}
 
 					outputFile<<" - Best heuristic is "<<best_heuristic<<", and number of nodes generated: "<<best_nodes<<"\n";
-					outputFile<<"\nMeasure 2:\n";
+					outputFile<<"\nMeasure_2:\n";
 					map<string, double> m_regrets_fixed;
 					for (size_t r = 0; r < v_ss_regrets_fixed.size(); r++) {
 						string name_ss = v_ss_regrets_fixed.at(r);
@@ -756,7 +756,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						}
 					}
 					
-					outputFile<<"\nMeasure 3:\n";
+					outputFile<<"\nMeasure_3:\n";
 					outputFile<<" - Random Regrets: SS's heuristic random selection, size = 3\n";
 					for (map<string, double>::iterator it_r = m_regrets_random.begin(); it_r != m_regrets_random.end(); it_r++) {
 						string a_heur = it_r->first;
