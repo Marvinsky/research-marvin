@@ -10,7 +10,7 @@ floortile-opt11-strips              ---            ---            ---           
 nomystery-opt11-strips      2.91101e+06        289.453        0.36861        36.8467              6
 openstacks-opt08-adl                ---            ---            ---            ---            ---
 openstacks-opt08-strips          361346        786.512       0.347987         674.52              5
-openstacks-opt11-strips             ---            ---            ---            ---            ---
+openstacks-opt11-strips             195           2.56              0          798.2              1
 parcprinter-opt11-strips              1              0              0          3.344             20
 parking-opt11-strips                ---            ---            ---            ---              0
 pegsol-opt11-strips              151280         10.998      0.0265342          7.933             20
@@ -19,7 +19,7 @@ sokoban-opt08-strips            5545.65          1.813      0.0230996          3
 sokoban-opt11-strips            8245.92        2.62154      0.0249197        33.0108             13
 tidybot-opt11-strips        2.71646e+06        17900.1       0.269407        2843.17              3
 transport-opt08-strips               38              0      0.0177778            0.8              1
-transport-opt11-strips              ---            ---            ---            ---            ---
+transport-opt11-strips              ---            ---            ---            ---              0
 visitall-opt11-strips       5.36308e+06        96.1171       0.017455            3.2              7
 woodworking-opt08-strips            ---            ---            ---            ---            ---
 woodworking-opt11-strips            ---            ---            ---            ---            ---
