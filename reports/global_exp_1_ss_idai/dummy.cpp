@@ -2,6 +2,8 @@
 #include <fstream>
 #include <vector>
 #include <iomanip>
+#include <sstream>
+#include <string>
 
 using namespace std;
 
@@ -14,7 +16,7 @@ int main() {
 	
 	for (int i = 0; i < 25; i++) {
 		ofile>>str;
-		cout<<"str = "<<str<<"\n";
+		//cout<<"str = "<<str<<"\n";
 	}
 
 	int CONST_ROWS = 21, CONST_COLUMNS = 13;
@@ -60,14 +62,19 @@ int main() {
 		v_ida_time.push_back(data[i][12]);
 	}
 
+	vector<string> v_dummy = v_err_1;  //set te vector
+	int n_probes = 1; //set the number of probes
+	stringstream ss;
+	ss<<n_probes;
+	string data_name ="data" + ss.str();
+	cout<<"data_name = "<<data_name<<"\n";
 
-	string result = "/home/marvin/marvin/reports/global_exp_1_ss_idai/data.txt";
+	string result = "/home/marvin/marvin/reports/global_exp_1_ss_idai/data" + ss.str() + ".txt";
+
+	cout<<"result = "<<result<<"\n";
 
 	ofstream outputFile;
 	outputFile.open(result.c_str(), ios::out);
-	
-	vector<string> v_dummy = v_err_5000;  //set te vector
-	int n_probes = 5000; //set the number of probes
 
 	for (size_t i = 0; i < v_dummy.size(); i++) {
 		string value = v_dummy.at(i);
