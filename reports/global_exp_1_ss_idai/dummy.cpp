@@ -5,6 +5,8 @@
 #include <sstream>
 #include <string>
 
+#include <map>
+
 using namespace std;
 
 
@@ -46,6 +48,9 @@ int main() {
 		}
 	}
 
+
+	map<int, vector<string> > m_all_v;
+
 	for (int i = 0; i < CONST_ROWS; i++) {
 		v_domain.push_back(data[i][0]); 
 		v_err_1.push_back(data[i][1]);
@@ -62,12 +67,20 @@ int main() {
 		v_ida_time.push_back(data[i][12]);
 	}
 
+	m_all_v.insert(pair<int, vector<string> >(1, v_err_1));
+	m_all_v.insert(pair<int, vector<string> >(10, v_err_10));
+	m_all_v.insert(pair<int, vector<string> >(100, v_err_100));
+	m_all_v.insert(pair<int, vector<string> >(1000, v_err_1000));
+	m_all_v.insert(pair<int, vector<string> >(5000, v_err_5000));
+	
+
+	//print individual files - probes
 	vector<string> v_dummy = v_err_1;  //set te vector
 	int n_probes = 1; //set the number of probes
 	stringstream ss;
 	ss<<n_probes;
 	string data_name ="data" + ss.str();
-	cout<<"data_name = "<<data_name<<"\n";
+	cout<<"\n\nPrinting individual file: "<<data_name<<"\n";
 
 	string result = "/home/marvin/marvin/reports/global_exp_1_ss_idai/data" + ss.str() + ".txt";
 
@@ -93,9 +106,37 @@ int main() {
 			cout<<right<<setw(10)<<value<<"\n";
 		}
 	}
-	
-
 	outputFile.close();
+
+	cout<<"\n\nPrinting alldata.txt\n";
+
+	//print one file containing all the information
+	string resultAll = "/home/marvin/marvin/reports/global_exp_1_ss_idai/alldata.txt";
+	ofstream outputFile2(resultAll.c_str(), ios::out);
+
+	map<int, vector<string> >::iterator iter;
+	for (iter = m_all_v.begin(); iter != m_all_v.end(); iter++) {
+		int key = iter->first;
+		cout<<"key = "<<key<<"\n";
+		vector<string> v = iter->second;
+		for (size_t i = 0; i < v.size(); i++) {
+			string value = v.at(i);
+			if (value == "---") {
+				outputFile2<<left<<setw(10)<<0;
+				outputFile2<<right<<setw(10)<<0<<"\n";
+
+				cout<<left<<setw(10)<<0;
+				cout<<right<<setw(10)<<0<<"\n";
+			} else {
+				outputFile2<<left<<setw(10)<<key;
+				outputFile2<<right<<setw(10)<<value<<"\n";
+
+				cout<<left<<setw(10)<<key;
+				cout<<right<<setw(10)<<value<<"\n";
+			}
+		}
+	}
+	outputFile2.close();
 
 	return 0;
 }
