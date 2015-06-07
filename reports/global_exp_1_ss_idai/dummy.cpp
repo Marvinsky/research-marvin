@@ -66,8 +66,8 @@ int main() {
 	ofstream outputFile;
 	outputFile.open(result.c_str(), ios::out);
 	
-	vector<string> v_dummy = v_err_1;  //set te vector
-	int n_probes = 1; //set the number of probes
+	vector<string> v_dummy = v_err_5000;  //set te vector
+	int n_probes = 5000; //set the number of probes
 
 	for (size_t i = 0; i < v_dummy.size(); i++) {
 		string value = v_dummy.at(i);
