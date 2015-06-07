@@ -60,7 +60,7 @@ dfall <- data.frame(df1, df2)
 
 #plot(dfall, col.axis = "sky blue", col.lab = "thistle")
 
-plot(x0, y0, col.axis = "sky blue", col.lab = "thistle")
+plot(x0, y0, col.axis = "sky blue", col.lab = "thistle", log = "xy", pch = 4, col = "blue")
 title(main = "ipdb using 1, 10, 100, 1000, 5000 probes", xlab = "probes", ylab = "ss-error")
 
 
