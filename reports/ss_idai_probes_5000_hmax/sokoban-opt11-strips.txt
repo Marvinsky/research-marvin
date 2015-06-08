@@ -1,0 +1,62 @@
+	Report:		ida*-bfs-vs-ss-bfs - using hmax heuristic - 5000 probes.
+
+sokoban-opt11-strips
+
+p14.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		1			1
+
+p19.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+8		1			1
+
+p18.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+2		1			1
+
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		1			1
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+2		5			5
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+7		1			1
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+2		2			2
+3		8			8
+4		28			28.0142
+5		186			180.624
+6		647			641.877
+7		4224			4042.52
+8		13709			12362.7
+9		88377			73830.1
+
+p10.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1		1			1
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+9		1			1
+
+p17.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+9		1			1
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+5		1			1
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			1
+
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1		1			1

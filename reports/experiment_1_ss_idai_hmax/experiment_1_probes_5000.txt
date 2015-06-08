@@ -1,25 +1,25 @@
-	Experiment 1:		Using ipdb heuristic - 5000 probes in 24 hours.
+	Experiment 1:		Using hmax heuristic - 5000 probes in 24 hours.
 
 Domain                             ida*      ida* time       ss error        ss time              n
 
-blocks                      2.09693e+09        10018.2       0.484669        6.90917             24
+blocks                      1.56474e+08        10770.9        2.92496        116.478             13
 barman-opt11-strips                 ---            ---            ---            ---            ---
-elevators-opt08-strips       9.5651e+07        20223.9        1.18347        4287.43              4
-elevators-opt11-strips      1.54128e+08        36205.9        1.77118        5904.64              2
+elevators-opt08-strips      1.60464e+06        4358.74        1.55087        37949.9              1
+elevators-opt11-strips              ---            ---            ---            ---              0
 floortile-opt11-strips              ---            ---            ---            ---            ---
-nomystery-opt11-strips      3.60878e+08        2514.16       0.166866        5.53571             14
+nomystery-opt11-strips      2.91101e+06        289.453       0.129911        183.897              6
 openstacks-opt08-adl                ---            ---            ---            ---            ---
-openstacks-opt08-strips      2.0436e+06          15633        0.28991        4522.48              7
-openstacks-opt11-strips     4.16623e+06          35539       0.436857        9491.13              3
-parcprinter-opt11-strips        3065.69        337.491       0.076998        3.60308             13
-parking-opt11-strips        3.06957e+08        7448.66       0.287786        103.608              5
-pegsol-opt11-strips             54945.3        1181.48       0.376462        190.308             20
-scanalyzer-opt11-strips     1.07152e+09        8163.32      0.0364208        42.4229              7
-sokoban-opt08-strips             280429        9.52462     0.00274506        18.2708             13
-sokoban-opt11-strips             404338        13.4578    0.000826328        24.3867              9
-tidybot-opt11-strips        1.13122e+06          355.4      0.0358149        420.853              3
-transport-opt08-strips               15           0.12              0           0.26              1
-transport-opt11-strips              ---            ---            ---            ---            ---
-visitall-opt11-strips       7.60463e+06        31.6927      0.0549349        3.98909             11
-woodworking-opt08-strips    9.37402e+07        6484.69      0.0540951        138.885              8
-woodworking-opt11-strips    2.49863e+08        16954.9       0.115866        295.787              3
+openstacks-opt08-strips          361346        786.512       0.146575        3370.52              5
+openstacks-opt11-strips             195           2.56              0        4196.76              1
+parcprinter-opt11-strips              1              0              0         17.286             20
+parking-opt11-strips                ---            ---            ---            ---              0
+pegsol-opt11-strips              151280         10.998     0.00727977         39.331             20
+scanalyzer-opt11-strips             101           0.16      0.0193254          39.92              1
+sokoban-opt08-strips            5545.65          1.813      0.0153433        155.113             20
+sokoban-opt11-strips            8245.92        2.62154      0.0263922        165.671             13
+tidybot-opt11-strips        2.71646e+06        17900.1       0.185517        15769.2              3
+transport-opt08-strips               38              0     0.00689778           4.08              1
+transport-opt11-strips              ---            ---            ---            ---              0
+visitall-opt11-strips       5.36308e+06        96.1171      0.0159371        16.2457              7
+woodworking-opt08-strips    5.19035e+06        1023.72       0.345123        646.345              4
+woodworking-opt11-strips            ---            ---            ---            ---            ---
