@@ -1,0 +1,66 @@
+	Report:		ida*-bfs-vs-ss-bfs - using hmax heuristic - 100 probes.
+
+visitall-opt11-strips
+
+problem04-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		1			1
+5		3			3
+6		11			11
+7		35			35
+8		117			117
+9		391			390.16
+10		1269			1263.1
+11		4367			4462.84
+
+problem04-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		1			1
+5		3			3
+6		11			11
+7		35			35
+8		117			117
+9		391			392.02
+10		1269			1269.12
+11		4319			4227.38
+12		13961			13718
+13		47873			48287.6
+14		154971			152475
+15		532209			531391
+
+problem02-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+2		1			1
+3		7			7
+
+problem02-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1		2			2
+
+problem05-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		1			1
+6		11			11
+8		123			119.68
+10		1449			1433
+12		17385			16793
+13		17465			16843
+14		210173			218590
+15		213023			221344
+16		2.55372e+06			2.35078e+06
+17		2.62001e+06			2.75028e+06
+18		3.11459e+07			2.88556e+07
+
+problem03-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+2		1			1
+4		9			9
+5		11			11.08
+6		89			89
+
+problem03-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+2		1			1
+4		9			9
+6		81			81
+8		705			692.84

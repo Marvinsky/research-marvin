@@ -1,0 +1,29 @@
+	Report:		ida*-bfs-vs-ss-bfs - using hmax heuristic - 100 probes.
+
+openstacks-opt08-strips
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1		2			2
+2		32			32
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1		2			2
+2		2062			2062
+3		1.80288e+06			649665
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1		2			2
+2		193			193
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1		2			2
+2		1149			1149
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1		2			2
+2		406			406
