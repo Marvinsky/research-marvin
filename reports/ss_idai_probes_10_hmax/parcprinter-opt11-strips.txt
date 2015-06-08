@@ -1,0 +1,83 @@
+	Report:		ida*-bfs-vs-ss-bfs - using hmax heuristic - 10 probes.
+
+parcprinter-opt11-strips
+
+p14.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+243039		1			1
+
+p19.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+243779		1			1
+
+p18.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+243779		1			1
+
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+243039		1			1
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+243779		1			1
+
+p13.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+243039		1			1
+
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+243039		1			1
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+222414		1			1
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+222414		1			1
+
+p10.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+222414		1			1
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+243039		1			1
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+243039		1			1
+
+p17.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+243779		1			1
+
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+222414		1			1
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+243779		1			1
+
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+243779		1			1
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+222414		1			1
+
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+243039		1			1
+
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+222414		1			1
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+243039		1			1

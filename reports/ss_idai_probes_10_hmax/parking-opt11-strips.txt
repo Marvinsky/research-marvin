@@ -1,0 +1,3 @@
+	Report:		ida*-bfs-vs-ss-bfs - using hmax heuristic - 10 probes.
+
+parking-opt11-strips
