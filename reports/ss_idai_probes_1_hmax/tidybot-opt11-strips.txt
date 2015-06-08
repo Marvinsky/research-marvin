@@ -1,0 +1,38 @@
+	Report:		ida*-bfs-vs-ss-bfs - using hmax heuristic - 1 probe.
+
+tidybot-opt11-strips
+
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+7		2			2
+8		10			9
+9		48			73
+10		227			279
+11		963			891
+12		3961			1727
+13		16426			4025
+14		64093			35153
+15		257457			69393
+16		975342			132625
+17		3.78642e+06			222069
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1		1			1
+2		8			8
+3		49			50
+4		278			218
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		1			1
+7		5			4
+8		25			14
+9		115			106
+10		497			272
+11		2115			459
+12		8801			1760
+13		35920			4082
+14		145400			18496
+15		574649			353936
+16		2.27658e+06			232672
