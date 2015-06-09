@@ -1,0 +1,3 @@
+	Report:		ida*-bfs-vs-ss-bfs - using hmax heuristic - 5000 probes.
+
+woodworking-opt11-strips

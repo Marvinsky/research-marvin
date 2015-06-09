@@ -22,4 +22,4 @@ transport-opt08-strips               38              0       0.622222           
 transport-opt11-strips              ---            ---            ---            ---              0
 visitall-opt11-strips       5.36308e+06        96.1171       0.445487              0              7
 woodworking-opt08-strips    5.19035e+06        1023.72        7.06298          0.095              4
-woodworking-opt11-strips            ---            ---            ---            ---            ---
+woodworking-opt11-strips            ---            ---            ---            ---              0
