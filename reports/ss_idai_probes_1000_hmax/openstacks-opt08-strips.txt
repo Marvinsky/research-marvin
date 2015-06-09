@@ -4,14 +4,14 @@ openstacks-opt08-strips
 
 p01.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-1		2			0
+1		2			2
 2		32			32
 
 p04.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		2			2
 2		2062			2062
-3		1.80288e+06			468868
+3		1.80288e+06			534304
 
 p06.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)

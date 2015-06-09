@@ -9,7 +9,7 @@ elevators-opt11-strips              ---            ---            ---           
 floortile-opt11-strips              ---            ---            ---            ---            ---
 nomystery-opt11-strips      2.91101e+06        289.453        0.36861        36.8467              6
 openstacks-opt08-adl                ---            ---            ---            ---            ---
-openstacks-opt08-strips          361346        786.512       0.347987         674.52              5
+openstacks-opt08-strips          361346        786.512       0.140728        679.132              5
 openstacks-opt11-strips             195           2.56              0          798.2              1
 parcprinter-opt11-strips              1              0              0          3.344             20
 parking-opt11-strips                ---            ---            ---            ---              0
