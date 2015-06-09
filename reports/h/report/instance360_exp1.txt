@@ -2,7 +2,7 @@
 testss
 idai
 4
-ipdb
 hmax
-merge_and_shrink
+ipdb
 lmcut
+merge_and_shrink
