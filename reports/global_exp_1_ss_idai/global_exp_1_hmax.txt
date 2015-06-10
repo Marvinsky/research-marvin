@@ -2,7 +2,7 @@
 
 	                                                           hmax
                                    1                10               100              1000              5000                  
-Domain                       |ss-err ss-t|     |ss-err ss-t|     |ss-err ss-t|     |ss-err ss-t|     |ss-err ss-t|         |ida* time|
+Domain                  |  ss-err    ss-t||  ss-err    ss-t||  ss-err    ss-t||  ss-err    ss-t||  ss-err    ss-t||          ida*          time|
 
 barman-opt11-strips           ---      ---      ---      ---      ---      ---      ---      ---      ---      ---            ---            ---
 blocks                      2.648    0.003    1.113    0.178    0.498    2.266    0.159   23.300    0.087  116.332  156474000.000      10770.900

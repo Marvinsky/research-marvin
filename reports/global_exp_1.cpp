@@ -336,8 +336,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	outputFile<<left<<setw(24)<<"\t";
 	for (size_t i = 0; i < heuristics.size();i++) {
 		if (i > 0) {
-			cout<<right<<setw(120)<<heuristics.at(i);
-			outputFile<<right<<setw(120)<<heuristics.at(i);
+			cout<<right<<setw(135)<<heuristics.at(i);
+			outputFile<<right<<setw(135)<<heuristics.at(i);
 		} else {
 			cout<<right<<setw(40)<<heuristics.at(i);
 			outputFile<<right<<setw(40)<<heuristics.at(i);
@@ -375,8 +375,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			is_probe_set = true;
 		} else {
 			if (is_probe_set) {
-				cout<<right<<setw(30)<<n;
-				outputFile<<right<<setw(30)<<n;
+				cout<<right<<setw(40)<<n;
+				outputFile<<right<<setw(40)<<n;
 				is_probe_set = false;
 			} else {
 				cout<<right<<setw(18)<<n;
@@ -393,17 +393,17 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	for (int i = 0; i < index_counter_probes; i++) {
 		int n = index_probes.at(i);
 		if (n == -1) {
-			cout<<right<<setw(20)<<"|ida* time|";
-			outputFile<<right<<setw(20)<<"|ida* time|";
+			      cout<<right<<setw(30)<<"|          ida*          time|";//setw(20)
+			outputFile<<right<<setw(30)<<"|          ida*          time|";//setw(20)
 			is_ida_time = true;
 		} else {
 			if (is_ida_time) {
-				cout<<right<<setw(28)<<"|ss-err ss-t|";
-				outputFile<<right<<setw(28)<<"|ss-err ss-t|";
+				      cout<<right<<setw(28)<<"|  ss-err    ss-t|";
+				outputFile<<right<<setw(28)<<"|  ss-err    ss-t|";
 				is_ida_time = false;
 			} else {
-				cout<<right<<setw(18)<<"|ss-err ss-t|";
-				outputFile<<right<<setw(18)<<"|ss-err ss-t|";
+				      cout<<right<<setw(18)<<"|  ss-err    ss-t|";
+				outputFile<<right<<setw(18)<<"|  ss-err    ss-t|";
 			}
 		}
 	}
@@ -419,24 +419,38 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		
 		cout<<left<<setw(weight_domain)<<a;
 		outputFile<<left<<setw(weight_domain)<<a;
-		
+		bool set_ida_info = false;
 		for (size_t i = 0; i < b.size(); i++) {
 			double d = b.at(i);	
 			if (d == -1) {
 				if (isIdaInfo(i, format_before)) {
 					cout<<right<<setw(15)<<"---";
 					outputFile<<right<<setw(15)<<"---";
+					set_ida_info = true;
 				} else {
-					cout<<right<<setw(weight_fixed)<<"---";
-					outputFile<<right<<setw(weight_fixed)<<"---";
+					if (set_ida_info) {
+						cout<<right<<setw(19)<<"---";
+						outputFile<<right<<setw(19)<<"---";
+						set_ida_info = false;
+					} else {
+						cout<<right<<setw(weight_fixed)<<"---";
+						outputFile<<right<<setw(weight_fixed)<<"---";
+					}
 				}
 			} else {
 				if (isIdaInfo(i, format_before)) {
 					cout<<right<<setw(15)<<d;
 					outputFile<<right<<setw(15)<<d;
+					set_ida_info = true;
 				} else {
-					cout<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;	
-					outputFile<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;
+					if (set_ida_info) {
+						cout<<right<<setw(19)<<fixed<<setprecision(3)<<d;	
+						outputFile<<right<<setw(19)<<fixed<<setprecision(3)<<d;
+						set_ida_info = false;
+					} else {
+						cout<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;	
+						outputFile<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;
+					}
 				}
 			}
 		}
