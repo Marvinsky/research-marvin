@@ -11,7 +11,7 @@ p04.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		2			2
 2		2062			2062
-3		1.80288e+06			481593
+3		1.80288e+06			485400
 
 p06.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)

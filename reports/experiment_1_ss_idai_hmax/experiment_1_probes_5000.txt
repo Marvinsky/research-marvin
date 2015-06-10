@@ -2,21 +2,21 @@
 
 Domain                             ida*      ida* time       ss error        ss time              n
 
-blocks                      1.56474e+08        10770.9        2.92496        116.478             13
+blocks                      1.56474e+08        10770.9      0.0866094        116.332             13
 barman-opt11-strips                 ---            ---            ---            ---            ---
 elevators-opt08-strips      1.60464e+06        4358.74        1.55087        37949.9              1
 elevators-opt11-strips              ---            ---            ---            ---              0
 floortile-opt11-strips              ---            ---            ---            ---            ---
 nomystery-opt11-strips      2.91101e+06        289.453       0.129911        183.897              6
 openstacks-opt08-adl                ---            ---            ---            ---            ---
-openstacks-opt08-strips          361346        786.512       0.146575        3370.52              5
+openstacks-opt08-strips          361346        786.512       0.146153        3365.82              5
 openstacks-opt11-strips             195           2.56              0        4196.76              1
 parcprinter-opt11-strips              1              0              0         17.286             20
 parking-opt11-strips                ---            ---            ---            ---              0
 pegsol-opt11-strips              151280         10.998     0.00727977         39.331             20
 scanalyzer-opt11-strips             101           0.16      0.0193254          39.92              1
 sokoban-opt08-strips            5545.65          1.813      0.0153433        155.113             20
-sokoban-opt11-strips            8245.92        2.62154      0.0263922        165.671             13
+sokoban-opt11-strips            8245.92        2.62154      0.0145769        162.382             13
 tidybot-opt11-strips        2.71646e+06        17900.1       0.185517        15769.2              3
 transport-opt08-strips               38              0     0.00689778           4.08              1
 transport-opt11-strips              ---            ---            ---            ---              0
