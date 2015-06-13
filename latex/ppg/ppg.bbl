@@ -1,0 +1,39 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Hart and Raphael(1968)]{hart1968formal}
+N.~J.; Hart, P. E.;~Nilsson and B.~Raphael.
+\newblock A formal basis for the heuristic determination of minimum cost paths.
+\newblock \emph{IEEE Transactions on Systems Science and Cybernetics SSC},
+  4\penalty0 (2):\penalty0 100--107, 1968.
+
+\bibitem[Lelis et~al.(2013)Lelis, Zilles, and Holte]{lelis2013predicting}
+Levi~HS Lelis, Sandra Zilles, and Robert~C Holte.
+\newblock Predicting the size of ida* search tree.
+\newblock \emph{Artificial Intelligence}, 196:\penalty0 53--76, 2013.
+
+\bibitem[Zahavi et~al.(2010)Zahavi, Felner, Burch, and
+  Holte]{zahavi2010predicting}
+Uzi Zahavi, Ariel Felner, Neil Burch, and Robert~C Holte.
+\newblock Predicting the performance of ida* using conditional distributions.
+\newblock \emph{Journal of Artificial Intelligence Research}, 37\penalty0
+  (1):\penalty0 41--84, 2010.
+
+\bibitem[Knuth(1975)]{knuth1975Estimating}
+Donald~E. Knuth.
+\newblock Estimating the efficiency of backtrack programs.
+\newblock \emph{Mathematic of Computation}, 29\penalty0 (129):\penalty0
+  121--136, 1975.
+
+\bibitem[Chen(1992)]{chen1992heuristic}
+P.-C. Chen.
+\newblock Heuristic sampling: A method for predicting the performance of tree
+  searching programs.
+\newblock \emph{SIAM Journal on Computing}, \penalty0 (21):\penalty0 295--315,
+  1992.
+
+\end{thebibliography}
