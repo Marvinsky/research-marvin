@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -13,27 +13,10 @@ Michael~W. Barley, Santiago Franco, and Patricia~J. Riddle.
   Automated Planning and Scheduling, {ICAPS} 2014, Portsmouth, New Hampshire,
   USA, June 21-26, 2014}, 2014.
 
-\bibitem[Helmert(2006)]{helmert2006fast}
-Malte Helmert.
-\newblock The fast downward planning system.
-\newblock \emph{J. Artif. Intell. Res.(JAIR)}, 26:\penalty0 191--246, 2006.
-
-\bibitem[Rayner et~al.(2013)Rayner, Sturtevant, and Bowling]{raynersss13}
-Chris Rayner, Nathan Sturtevant, and Michael Bowling.
-\newblock Subset selection of search heuristics.
-\newblock \emph{Proceedings of the Twenty-Third International Joint Conference
-  on Artificial Intelligence}, pages 637--643, 2013.
-
-\bibitem[Korf(1985)]{Korf85ida}
-Richard~E. Korf.
-\newblock Depth-first iterative-deepening: An optimal admissible tree search.
-\newblock \emph{Artificial Intelligence}, 27:\penalty0 97--109, 1985.
-
-\bibitem[B{\"a}ckstr{\"o}m and Nebel(1995)]{backstrom1995complexity}
-Christer B{\"a}ckstr{\"o}m and Bernhard Nebel.
-\newblock Complexity results for sas+ planning.
-\newblock \emph{Computational Intelligence}, 11\penalty0 (4):\penalty0
-  625--655, 1995.
+\bibitem[Lelis et~al.(2013)Lelis, Zilles, and Holte]{lelis2013predicting}
+Levi~HS Lelis, Sandra Zilles, and Robert~C Holte.
+\newblock Predicting the size of ida* search tree.
+\newblock \emph{Artificial Intelligence}, 196:\penalty0 53--76, 2013.
 
 \bibitem[Hart and Raphael(1968)]{hart1968formal}
 N.~J.; Hart, P. E.;~Nilsson and B.~Raphael.
@@ -41,9 +24,9 @@ N.~J.; Hart, P. E.;~Nilsson and B.~Raphael.
 \newblock \emph{IEEE Transactions on Systems Science and Cybernetics SSC},
   4\penalty0 (2):\penalty0 100--107, 1968.
 
-\bibitem[Lelis et~al.(2013)Lelis, Zilles, and Holte]{lelis2013predicting}
-Levi~HS Lelis, Sandra Zilles, and Robert~C Holte.
-\newblock Predicting the size of ida* search tree.
-\newblock \emph{Artificial Intelligence}, 196:\penalty0 53--76, 2013.
+\bibitem[Helmert(2006)]{helmert2006fast}
+Malte Helmert.
+\newblock The fast downward planning system.
+\newblock \emph{J. Artif. Intell. Res.(JAIR)}, 26:\penalty0 191--246, 2006.
 
 \end{thebibliography}
