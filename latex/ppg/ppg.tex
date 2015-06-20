@@ -48,15 +48,15 @@
 \usepackage{amsfonts}
 \usepackage{amsthm}
 
+%algorithm
+%\usepackage{algorithm}
+%\usepackage[noend]{algpseudocode}
+\usepackage[]{algorithm2e}
+
 %langle
 \usepackage{scalerel}
 \usepackage{graphicx}
 
-%cite
-
-%\usepackage[USenglish]{babel}
-%\usepackage[nodayofweek,level]{datetime}
-%\newcommand{\mydate}{\formatdate{4}{11}{2014}}
 
 \makeindex
 
@@ -203,7 +203,21 @@ where \textit{N} could be determined by a hard constraint such as the maximum nu
 \section{Greedy Heuristic Selection}
 Greedy Heuristic Selection (GHS), is an approximation algorithm for selecting a subset $\zeta\sp{\prime} \subseteq \zeta$.
 The algorithm receives as input a planning problem 
-$\triangledown$, a set of heuristics $\zeta$ a cardinality size \textit{N}, and it returns a subset $\zeta\sp{\prime} \subseteq \zeta$ of size \textit{N}. In each iteration GHS greedily selects from $\zeta$ the heuristic \textit{h} which will result in the largest reducction of the value of \textit{J}. GHS returns $\zeta\sp{\prime}$ once it has the desired cardinality size \textit{N}.
+$\triangledown$, a set of heuristics $\zeta$ a cardinality size \textit{N}, and it returns a subset $\zeta\sp{\prime} \subseteq \zeta$ of size \textit{N}. In each iteration GHS greedily selects from $\zeta$ the heuristic \textit{h} which will result in the largest reducction of the value of \textit{J}. GHS returns $\zeta\sp{\prime}$ once it has the desired cardinality size \textit{N}.\\
+
+\begin{algorithm}[H]
+\textbf{Input:} problem $\triangledown$, set heuristics $\zeta
+$, cardinality \textit{N}.\\
+\textbf{Output:} heuristic subset $\zeta\sp{\prime} \subseteq \zeta$ of size \textit{N}\\
+\SetAlgoLined
+ $\zeta\sp{\prime} \leftarrow 0$\;
+ \While{$|\zeta\sp{\prime}| < N$}{
+  $h \leftarrow \arg\min\limits_{ h\epsilon \zeta}J(\zeta\sp{\prime} \cup \{h\}, \triangledown)$\\
+  $\zeta\sp{\prime} \leftarrow  \zeta\sp{\prime} \cup \{h\}$\\
+ }
+ return $\zeta\sp{\prime}$
+ \caption{Greedy Heuristic Selection}
+\end{algorithm}
 
 %Imports the bibliography file "references.bib"
 \bibliography{references}

@@ -1,28 +1,32 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Barley et~al.(2014)Barley, Franco, and Riddle]{BarleySantiagoOver}
-Michael~W. Barley, Santiago Franco, and Patricia~J. Riddle.
-\newblock Overcoming the utility problem in heuristic generation: Why time
-  matters.
-\newblock \emph{Proceedings of the Twenty-Fourth International Conference on
-  Automated Planning and Scheduling, {ICAPS} 2014, Portsmouth, New Hampshire,
-  USA, June 21-26, 2014}, 2014.
-
-\bibitem[Lelis et~al.(2013)Lelis, Zilles, and Holte]{lelis2013predicting}
-Levi~HS Lelis, Sandra Zilles, and Robert~C Holte.
-\newblock Predicting the size of ida* search tree.
-\newblock \emph{Artificial Intelligence}, 196:\penalty0 53--76, 2013.
-
 \bibitem[Hart and Raphael(1968)]{hart1968formal}
 N.~J.; Hart, P. E.;~Nilsson and B.~Raphael.
 \newblock A formal basis for the heuristic determination of minimum cost paths.
 \newblock \emph{IEEE Transactions on Systems Science and Cybernetics SSC},
   4\penalty0 (2):\penalty0 100--107, 1968.
+
+\bibitem[Rayner et~al.(2013)Rayner, Sturtevant, and Bowling]{raynersss13}
+Chris Rayner, Nathan Sturtevant, and Michael Bowling.
+\newblock Subset selection of search heuristics.
+\newblock \emph{Proceedings of the Twenty-Third International Joint Conference
+  on Artificial Intelligence}, pages 637--643, 2013.
+
+\bibitem[Korf et~al.(2001)Korf, Reid, and Edelkamp]{korf2001timecomplexity}
+Richard~E Korf, Michael Reid, and Stefan Edelkamp.
+\newblock Time complexity of iterative-deepening-a*.
+\newblock \emph{Artificial Intelligence}, 129\penalty0 (1):\penalty0 199--218,
+  2001.
+
+\bibitem[Lelis et~al.(2013)Lelis, Zilles, and Holte]{lelis2013predicting}
+Levi~HS Lelis, Sandra Zilles, and Robert~C Holte.
+\newblock Predicting the size of ida* search tree.
+\newblock \emph{Artificial Intelligence}, 196:\penalty0 53--76, 2013.
 
 \bibitem[Helmert(2006)]{helmert2006fast}
 Malte Helmert.
