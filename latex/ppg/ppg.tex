@@ -46,7 +46,7 @@
 \usepackage{latexsym}
 \usepackage{amssymb}
 \usepackage{amsfonts}
-
+\usepackage{amsthm}
 
 %langle
 \usepackage{scalerel}
@@ -175,9 +175,35 @@ In these domains all or some of the cost operators have the value equal to zero.
 \end{enumerate}
 
 
+\section{Problem Formulation}
+When solving $\triangledown$ using the consistent function $h_{\substack{max}}(\zeta\sp{\prime})$, for $\zeta\sp{\prime} \subseteq \zeta$, A* expands in the worst case $J(\zeta\sp{\prime}, \triangledown)$ nodes, where:
 
+\begin{equation}
+J(\zeta\sp{\prime}, \triangledown)  = |\{ s \epsilon V | f_{\substack{max}}(s, \zeta\sp{\prime}) \leq C\sp{\star}  \}|
+\end{equation}
 
-\newpage
+\begin{equation}
+J(\zeta\sp{\prime}, \triangledown)  = |\{ s \epsilon V | h_{\substack{max}}(s, \zeta\sp{\prime}) \leq C\sp{\star} - g(s)\}|
+\end{equation}
+
+We write $J(\zeta\sp{\prime})$ instead of $J(\zeta\sp{\prime}, \triangledown)$ whenever $\triangledown$ is clear from context.\\
+
+We present a greedy algorithm for approximately solving the following optimization problem.
+
+\begin{equation}
+	\min\limits_{\zeta\sp{\prime} \epsilon2\sp{|\zeta|}  }    J(\zeta\sp{\prime}, \triangledown)
+\end{equation}
+
+\begin{equation}
+	subject\ to\ \ |\zeta\sp{\prime}| = N
+\end{equation}
+
+where \textit{N} could be determined by a hard constraint such as the maximum number of PDBs one can store in memory.
+
+\section{Greedy Heuristic Selection}
+Greedy Heuristic Selection (GHS), is an approximation algorithm for selecting a subset $\zeta\sp{\prime} \subseteq \zeta$.
+The algorithm receives as input a planning problem 
+$\triangledown$, a set of heuristics $\zeta$ a cardinality size \textit{N}, and it returns a subset $\zeta\sp{\prime} \subseteq \zeta$ of size \textit{N}. In each iteration GHS greedily selects from $\zeta$ the heuristic \textit{h} which will result in the largest reducction of the value of \textit{J}. GHS returns $\zeta\sp{\prime}$ once it has the desired cardinality size \textit{N}.
 
 %Imports the bibliography file "references.bib"
 \bibliography{references}
