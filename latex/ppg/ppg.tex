@@ -39,6 +39,7 @@
 
 %for formula references
 \usepackage{amsmath}
+
 \newtheorem{mydef}{Definition}
 
 \usepackage{changes}
@@ -179,10 +180,12 @@ In these domains all or some of the cost operators have the value equal to zero.
 When solving $\triangledown$ using the consistent function $h_{\substack{max}}(\zeta\sp{\prime})$, for $\zeta\sp{\prime} \subseteq \zeta$, A* expands in the worst case $J(\zeta\sp{\prime}, \triangledown)$ nodes, where:
 
 \begin{equation}
+\label{eq:1}
 J(\zeta\sp{\prime}, \triangledown)  = |\{ s \epsilon V | f_{\substack{max}}(s, \zeta\sp{\prime}) \leq C\sp{\star}  \}|
 \end{equation}
 
 \begin{equation}
+\label{eq:2}
 J(\zeta\sp{\prime}, \triangledown)  = |\{ s \epsilon V | h_{\substack{max}}(s, \zeta\sp{\prime}) \leq C\sp{\star} - g(s)\}|
 \end{equation}
 
@@ -191,10 +194,12 @@ We write $J(\zeta\sp{\prime})$ instead of $J(\zeta\sp{\prime}, \triangledown)$ w
 We present a greedy algorithm for approximately solving the following optimization problem.
 
 \begin{equation}
+\label{eq:3}
 	\min\limits_{\zeta\sp{\prime} \epsilon2\sp{|\zeta|}  }    J(\zeta\sp{\prime}, \triangledown)
 \end{equation}
 
 \begin{equation}
+\label{eq:4}
 	subject\ to\ \ |\zeta\sp{\prime}| = N
 \end{equation}
 
@@ -218,6 +223,13 @@ $, cardinality \textit{N}.\\
  return $\zeta\sp{\prime}$
  \caption{Greedy Heuristic Selection}
 \end{algorithm}
+
+\subsection{GHS Approximation Analysis}
+In the following analysis all heuristic functions are assumed to be consistent. We also assume that A* expands all nodes \textit{n} with \textit{f(n) $\leq C\sp{\star}$} while solving $\triangledown$, as shown in Equation \ref{eq:1}.
+
+
+
+
 
 %Imports the bibliography file "references.bib"
 \bibliography{references}
