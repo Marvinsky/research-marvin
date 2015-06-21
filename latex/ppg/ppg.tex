@@ -225,15 +225,71 @@ $, cardinality \textit{N}.\\
 \end{algorithm}
 
 \subsection{GHS Approximation Analysis}
-In the following analysis all heuristic functions are assumed to be consistent. We also assume that A* expands all nodes \textit{n} with \textit{f(n) $\leq C\sp{\star}$} while solving $\triangledown$, as shown in Equation \ref{eq:1}.
+In the following analysis all heuristic functions are assumed to be consistent. We also assume that A* expands all nodes \textit{n} with \textit{f(n) $\leq C\sp{\star}$} while solving $\triangledown$, as shown in Equation \ref{eq:1}.\\
 
+\textbf{Lemma 1}\ $J(\zeta\sp{\prime} \cup \{h\}) \leq J(\zeta\sp{\prime})$ 
+\textit{for any $\zeta\sp{\prime}$ and any h}.
 
+\textit{Proof.} Fix $\zeta\sp{\prime}$ and \textit{h}. Then\\
 
+\begin{equation}
+\label{eq:5}
+J(\zeta\sp{\prime} \cup \{h\}) = |\{s \epsilon V| h_{\substack{max}}(s, \zeta\sp{\prime} \cup \{h\}) \leq C\sp{\star} - g(s)|
+\end{equation}
 
+\begin{equation}
+\label{eq:6}
+J(\zeta\sp{\prime} \cup \{h\}) \leq |\{s \epsilon V| h_{\substack{max}}(s, \zeta\sp{\prime}) \leq C\sp{\star} - g(s) \}|
+\end{equation}
+
+\begin{equation}
+\label{eq:7}
+J(\zeta\sp{\prime} \cup \{h\}) = J(\zeta\sp{\prime})
+\end{equation}
+
+Where the inequality follows from the fact that $h_{\substack{max}}(s, \zeta\sp{\prime} \cup \{h\}) \geq  h_{\substack{max}}(s, \zeta\sp{\prime})$  for all \textit{s}.\\
+
+Let \textit{S} be a set and \textit{{\O}} a function over $2\sp{S}$. \textit{{\O}} is supermodular if for any \textit{A, B x} with \textit{A} $\subset$ \textit{B} $\subset$ \textit{S} and \textit{x} $\epsilon$ \textit{S} $\backslash$ \textit{B}:\\
+
+\begin{equation}
+\label{eq:8}
+\textit{{\O}}(\textit{A}) - \textit{{\O}}(\textit{A} \cup \{\textit{x}\}) \geq {\O}(\textit{B} \cup \{\textit{x}\})
+\end{equation}
+
+Intuitively, Equation \ref{eq:8} captures the idea of diminishing returns. In the context of  search tree size, if we add a heuristic function \textit{h} to a set of heuristics \textit{A} strictly contained in a set \textit{B}, then we would expect $J(A) - J(A \cup \{h\})$ to be larger than $J(B) - J(B \cup \{h\})$ as \textit{h} would "contribute more" to \textit{A} than to \textit{B}.\\
+
+\textbf{Lemma 2} \textit{J is supermodular.}  \\
+\textit{Proof.} Let $A \subset B  \subset \zeta$ and $h \ \epsilon \ \zeta \ \backslash \ B$. By Lemma 1,  $J(A) - J(A \cup \{h\}) \geq 0$ and $J(B) - J(B \cup \{h\})$. We consider two cases.\\
+\textit{Case 1.} $J(B) - J(B \cup \{h\}) = 0$. Then $J(A) - J(A \cup \{h\}) \geq J(B) - J(B \cup \{h\})$.\\
+\textit{Case 2.} $J(B) - J(B \cup \{h\}) = k > 0$. Let $s_1,....s_k$ be all the states in \textit{V} that satisfy $h_{\substack{max}}(s_i, B) \leq C\sp{\star} - g(s_i)$ and $h_{\substack{max}}(s_i, B \cup \{h\}) > C\sp{\star} - g(s_i)$. This implies $h(s_i) > C\sp{\star} - g(s_i)$ and thus $h_{\substack{max}}(s_i, A \cup \{h\}) > C\sp{\star} - g(s_i)$, for all \textit{i} $\epsilon \ \{1,...,k\}$. Further, since $A \subset B$, we have $h_{\substack{max}}(s_i, A) \leq h_{\substack{max}}(s_i, B) \leq C\sp{\star} - g(s_i)$, for all \textit{i} $\epsilon \{1,...,k\}$. Consequently, $J(A) - J(A \cup \{h\}) \geq k = J(B) - J(B \cup \{h\})$.\\
+
+A stronger version of Lemma 1 can be proven: if $S(\zeta\sp{\prime})$ denotes the set of states $\{ s \epsilon V | h_{\substack{max}}(s, \zeta\sp{\prime}) \leq C\sp{\star} - g(s)\}$, so that $J(\zeta\sp{\prime})$ is the cardinality of $S(\zeta\sp{\prime})$, we obtain
+
+\begin{equation}
+\label{eq:9}
+S(\zeta\sp{\prime} \cup \{h\}) \subseteq S(\zeta\sp{\prime}) for\  any\  h
+\end{equation}
+
+Similarly, one can strengthen the statement of Lemma 2: the proof given above contains the core idea for proving $S(A)  \backslash S(A \cup \{h\}) \supseteq S(B)  \backslash  S(B \cup \{h\})$, which, together with Equation \ref{eq:9}, immediately implies the weaker statement $J(A) - J(A \cup \{h\}) \geq J(B) - J(B \cup \{h\})$. In the form stated above, however, Lemma 1 and 2 are already sufficient for using a result by \citep{nemhauser1978analysis} to conclude the following.\\
+
+\textbf{Theorem 1} \textit{Let} $\zeta\sp{\prime}$ \textit{be a subset selected by GHS. Then} $J(\zeta\sp{\prime}, \triangledown)$ \textit{is within a factor of} $\dfrac{e+1}{e} \approx $ 1.36 \textit{of optimal.}\\
+
+Let $T(\zeta\sp{\prime}, \triangledown)$ be an approximation to the running time of A* when using $h_{\substack{max}}(\zeta\sp{\prime})$ for solving $\triangledown$, defined as follows.\\
+
+\begin{equation}
+\label{eq:10}
+T(\zeta\sp{\prime}, \triangledown) = J(\zeta\sp{\prime}, \triangledown) \times t_{\substack{h_{\substack{max}}(\zeta\sp{\prime})}}
+\end{equation}
+
+where, for any heuristic function \textit{h}, the term $t_h$ refers to the running time used for computing the \textit{h}-value of any state \textit{s}.\\
+In order to compute the running time A* exactly we would also have to account for the time required for node generation and for the operations on A*'s \textbf{OPEN} and \textbf{CLOSED} list. However, these two factors do not depend directly on the heuristic employed. Thus, $T(\zeta\sp{\prime}, \triangledown)$ is a reasonable approximation for A*'s running time  for the heuristic subset selection problem.\\
+
+\textbf{Theorem 2} $ Suppose\ t_{\substack{h_1}} = t_{\substack{h_2}}$\  \textit{for any} $h_1, h_2\  \epsilon\  \zeta$. \textit{Then, for any fixed subset size N, GHS yields a subset $\zeta\sp{\prime}$ that is within a factor of $\dfrac{e+1}{e}$} \textit{of optimal with respect to T($\zeta\sp{\prime}, \triangledown$)}.
+
+\textit{Proof.} Since $t_h$ is constant over $h\  \epsilon\  \zeta$, the value $t_{\substack{h_{\substack{max}}(\zeta\sp{\prime})}}$ is independent  of $\zeta\sp{\prime}$. Hence the value $T(\zeta\sp{\prime}, \triangledown)$ is a constant factor of $J(\zeta\sp{\prime}, \triangledown)$. The latter is within a factor of $\dfrac{e+1}{e}$ of optimal by Theorem 1.\\
 
 %Imports the bibliography file "references.bib"
 \bibliography{references}
 %\bibliographystyle{references}
 
 \end{document}
-
