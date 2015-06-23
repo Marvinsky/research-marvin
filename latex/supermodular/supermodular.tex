@@ -1,0 +1,285 @@
+
+\documentclass[11pt,a4paper,oneside]{report}
+
+\synctex=1
+
+\usepackage{pslatex,palatino,avant,graphicx,color}
+\usepackage[margin=2cm]{geometry}
+
+\usepackage{mathptmx}       % selects Times Roman as basic font
+
+\usepackage{helvet}         % selects Helvetica as sans-serif font
+\usepackage{courier}        % selects Courier as typewriter font
+\usepackage{type1cm}        % activate if the above 3 fonts are
+                            % not available on your system
+
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\usepackage{multicol}        % used for the two-column index
+\usepackage{multirow}
+\usepackage{booktabs}
+
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+
+\usepackage[utf8]{inputenc}
+\inputencoding{utf8}
+
+
+%\usepackage[round]{natbib}
+\usepackage[square,sort]{natbib}
+\bibliographystyle{unsrtnat}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{longtable}
+\usepackage{pdflscape}
+
+%for formula references
+\usepackage{amsmath}
+
+\newtheorem{mydef}{Definition}
+
+\usepackage{changes}
+%triangledown
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+%algorithm
+%\usepackage{algorithm}
+%\usepackage[noend]{algpseudocode}
+\usepackage[]{algorithm2e}
+
+%langle
+\usepackage{scalerel}
+\usepackage{graphicx}
+
+
+\makeindex
+
+\begin{document}
+
+
+\begin{titlepage}
+
+%\begin{titlepage}
+
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=8cm]{./image/ufv1}
+\end{center}
+\end{figure}
+
+CENTRO DE CIENCIAS EXATAS E TECNOLOGICAS - CCE\\
+\vspace*{0.15in}
+DEPARTAMENTO DE INFORMATICA \\
+\vspace*{0.6in}
+\begin{large}
+THESIS PROJECT:\\
+\end{large}
+\vspace*{0.2in}
+\begin{Large}
+\textbf{ON SELECTING HEURISTIC FUNCTIONS FOR DOMAIN-INDEPENDENT PLANNING.} \\
+\end{Large}
+\vspace*{0.3in}
+\begin{large}
+A Thesis Project submitted by Marvin Abisrror for the degree of Master to the PPG\\
+\end{large}
+\vspace*{0.3in}
+\rule{80mm}{0.1mm}\\
+\vspace*{0.1in}
+\begin{large}
+Supervised by: \\
+Levi Enrique Santana de Lelis, Santiago Franco \\
+\end{large}
+\end{center}
+
+\end{titlepage}
+
+
+%\begin{figure}[htb]
+%\begin{center}
+%\includegraphics[width=4cm]{./image/ufv1}
+%\end{center}
+%\end{figure}
+
+%\title{On Selecting Heuristics Functions for Domain-Independent Planning.}
+%\providecommand{\keywords}[1]{\textbf{keywords} #1}
+%\author{Student: Marvin Abisrror Zarate\\\\
+%Advisor: Levi Lelis \\\\
+%Departamento de Informática \\Universidade Federal de Vicosa \\Viçosa, Brazil}
+
+%\date{\color{black}July 2015}
+%\maketitle
+
+%\end{titlepage}
+
+Let \textit{N} be a finite set and $F$ a nonempty collection of subsets \textit{N} which have the property that $F_1\  \epsilon\  F\  and\  F_2\  \subset\  \epsilon\  F$, A real-valued function function \textit{z} defined on the subsets of \textit{N} that satisfies $z(S) \leq z(T)$ and $z(S) + z(T) \geq z(S \cup T) + z(S \cap T)$ for all $S, T \subseteq N$ is called nondecreasing and submodular. We consider the problem 
+$max_{\substack{S\subseteq N}}\{S\epsilon F, z(S)  submodular\  and\  nondecreasing\}$ and several special cases of it.\\
+We analyze greedy and local improvement heuristics, and a linear programming relaxation when \textit{z(S)} is linear. Our results are worst case bounds on the quality of the approximations. For example, when \textit{(N, F)} is described by the intersection of \textit{P} matroids, we show that a greedy heuristic always produces a solution whose value is at least $\dfrac{1}{P+1}$ times the optimal value. This bound can be achieved for all postive integers \textit{P}. 
+
+\section{Introduction}
+Let \textit{N = \{1, ..., n\}} be a finite set and \textit{z} a real-valued function defined on the subset of \textit{N} that satisfies\\
+
+$z(S) + z(T) \geq z(S \cup T) + z(S \cap T)$\\
+
+for all \textit{S, T} in N. Such a set function is called \textit{submodular}. This paper is the third in a series dealing with approximate methods for maximizing submodular set functions. We additionally assume here that \textit{z(S)} is nondecreasing, i.e., $z(S) \subseteq z(T)$ for all $S \subset T \subseteq N$.\\
+
+In [2] we studied the uncapacitated location problem\\
+
+$\max\limits_{S \subseteq N}\{z(S):z(S) = \sum\limits_{i \epsilon I} \max\limits_{j \epsilon S}C_{\substack{ij}}, |S| \subseteq K\}$\\
+
+where \textit{C = ($C_{\substack{ij}}$)} is a nonnegative matrix with column index set \textit{N} and row index set I and \textit{z(${\O}$)} = 0, In [7] we generalized the results to the problem.\\
+
+\begin{equation}
+\label{eq:1}
+\max\limits_{S \subseteq N}\{z(S):|S| \subseteq \   K,\ z(S)\  submodular\  and\  nondecrasing  \} 
+\end{equation}
+
+Since many combinatorial optimization problems, including the maximum \textit{m-cut} problem [8], a storage allocation problem [1] and the matroid partition problem [3], require an optimal partition or packing, we were motivated to extend our results to the problem.\\
+
+\begin{equation}
+\label{eq:2}
+\max\limits_{S_1 \subseteq N, ..., S_m \subseteq N} \{\sum_{i=1}^{m} z_i(S_i): U_{i=1}^{m} S_i \subseteq N, S_i \cap \S_k = {\O}, k  \neq i, \  z_i(S)\  submodular\  and\  nondecreasing\  i\ = 1,...m\}
+\end{equation}
+
+We like to think of Equation \ref{eq:2} as the \textit{"m-box"} model in which putting $S_i$ in box \textit{i} yields a value of $z_i(S_i)$ and the objective is to maximize the value summed over all boxes.\\
+
+The \textit{m-box} model can be used to describe a multiproduct version of the uncapacitated location problem. Here each box corresponds to a different product. Assigning the set of locations $S_i \subset N$ to box \textit{i} means that these locations supply product \textit{i}. The objective is to maximize $\sum_{i=1}^{m}   \sum_{k \epsilon I}   \max_{\substack{j \epsilon S_i}} C_{\substack{kj}}^{i}$
+
+By adding the restricctions $|S_i| \leq 1$ to the \textit{m-box} model we obtain the constraints of an assignment problem. Now by generalizing the objective function to include terms involving pairs of boxed we obtain a model of the quadratic assignment problem. Here the objective is no longer a sum of set functions but multidimensional set function of the form $v(S_i,...,S_m)$. We can treat these multidimensional set functions directly by defining a multidimensional version of submodularity, i.e.,\\
+
+$v(S_1,...,S_m) + v(T_1,...,T_m) \geq v(S_1 \cup T_1,..., S_m \cup T_m) + v(S_1 \cap T_1,..., S_m \cap T_m)$
+
+However, an alternative viewpoint of the box model renders this multidimensional construct unnecessary and provides a more general and unified framework for the extensions of Equation \ref{eq:1} that we consider here.
+
+Let \textit{M} be the set of boxed, rename the set of elements to be put into the boxes \textit{E}, let $N = \{(i, j): i \in M, j \in E\}$ and $N_j = \{(i, j):i \in M\}$, $j \in E$. There is a one-to-one correspondence between packing $(S_1,...S_m)$ of E and subsets $S \subseteq N$ that satisfy $|S \cap N_j| \leq 1,j \in E$. The correspondence is given by $S_i = \{j:(i, j) \in S\}$ and $S = \{(i,j): j \in S_i, i \in M\}$ Therefore a generalized version of the \textit{m-box} problem Equation \ref{eq:2} is\\
+
+\begin{equation}
+\label{eq:3}
+\max\limits_{S \subseteq N}\{z(S): |S \cap N_j| \leq 1, j \in E.\   z(S)\  submodular\  and \  nondecreasing\}
+\end{equation}
+
+
+Now comparing Equation \ref{eq:1} and Equation \ref{eq:2}, we see that they differ only in their constraints. However in each case the family F of feasible or independent sets forms a matroid $M = (N, F)$; i.e., $F_1 \in F$ and $F_2 \subset F_1  => F_2 \in F [(N, F)\  is\  an\  independence\  system ]$ and for all $N\sp{\prime} \subseteq N$ every maximal member of $F(N\sp{\prime}) = \{F:F\in F, F \subseteq N\sp{\prime} \}$ has the same cardinality. In Equation \ref{eq:1} \textit{M} is the matroid in which all subsets of cardinality \textit{K} or smaller are independent and in \ref{eq:3} \textit{M} is a partition matroid. Thus a natural generalization of \ref{eq:1} and \ref{eq:3} is\\
+
+\begin{equation}
+\label{eq:4}
+\max\limits_{S \subseteq N}\{z(S): S \in F, M = (N, F) \  a\   motroid,\  z(S)\  submodular\  and\  nondecreasing\}
+\end{equation}
+
+and an obvious generalization of \ref{eq:4} is
+
+\begin{equation}
+\label{eq:5}
+\max\limits_{S \subseteq N}\{z(S): S \in \cap_{p=1}^{P} F_p, M_p = (N, F_p)\  are\  matroids\,  p = 1,...,P,\  submodular\  and\  nondecreasing.\}
+\end{equation}
+
+Note that any independence system can be described as the intersection of \textit{P} matroids for suitably large \textit{P}.
+
+Finally, a different generalization of problem Equation \ref{eq:3} is
+
+\begin{equation}
+\label{eq:6}
+\max\limits_{S \subseteq N} \{z(S): N = \cup_{j=1}^{n}N_j, Nj \cap N_k = {\O},j \neq k, S \cap N_j \in  F\sp{j},\  submodular\  and\  nondecreasing\}
+\end{equation}
+
+where $(N_j, F\sp{j})\  j\  =\  1,...n$ are independence systems, each the intersection of \textit{P} or fewer matroids. Note that combining the disjoint independence system gives a problem over \textit{N} of the form \ref{eq:5} involving the intersection of \textit{P} matroids. Alternatively we can view \ref{eq:6} as a generalization of \ref{eq:5}, where \ref{eq:5} is obtained from \ref{eq:6} by taking n = 1.
+
+We now summarize our results. In section 2 we consider a greedy heuristic for problem \ref{eq:5} with the constraint $|S| = 1$ to obtain a set $S\sp{\prime}$ and then iteratively builds a nested sequence of sets $\{S\sp{\prime}\}$, \textit{t = 2,3,...,} where $\{S\sp{\prime}\}  \in \cap_{i=1}^{P}F_i$ and $|S\sp{\prime}| = t.S\sp{t+1}$ is determinated by adding to $S\sp{t}$ (if possible) a $j\sp{\star}$ such that\\
+
+$z(S\sp{t} \cup \{j\sp{\star}\}) = \max\{z(S\sp{t} \cup \{j\}): S\sp{t} \cup \{j\} \in \cap_{i = 1}^{P}F_i, j \notin S\sp{t}\}$
+
+We obtain the tight bound\\
+
+$\dfrac{value\ of\ greedy\ approximation}{value\ of\ optimal\ solution} \geq \dfrac{1}{P+1}$
+
+We also show that without regard to \textit{P}, if \textit{K} is the cardinality of a largest independent set, and \textit{k+1} the cardinality of a smallest dependent (not independent) set,\\
+
+$\dfrac{value\  of\  greedy\  approximation}{value\  of\  optimal\  solution} \geq 1 - (\dfrac{K - 1}{K})\sp{k}$
+
+Problem 1. is the special case of this model with $k = K$.
+In Section 3 we assume that $z(S)$ is linear, in which case Equation \ref{eq:5} can be represented as an intenger program. We study the linear programming relaxation of this integer program, which is obtained by suppressing the integrality restrictions. Our result is\\
+
+$\dfrac{value\ of\ greedy\ approximation}{value\ of\ linear\  programming\  solution} \geq \dfrac{1}{P}$,
+
+which is a bound on the duality gap and also implies the bound obtained by JenKyns 5 and Korte and Hausmann [6] on the ratio of the greedy and integer solutions.\\
+
+In Section [4] we examine problem Equation \ref{eq:6} and show that the greedy heuristic can be simplified and the bound of $\dfrac{1}{P+1}$ maintained. Also, for example Equation \ref{eq:3} when $z(S)$ has a certain symmetry with respect to the boxed, the bound of $\frac{1}{2}$ can be improved to $\frac{m}{2m-1}$, where \textit{m} is the number of boxes.\\
+
+In Section 5 we examine a local improvement heuristic for model \ref{eq:5}. We show that when \textit{P = 1}\\
+
+$\frac{value\  of\  local\   improvement\  approximation}{value\  of\  optimal\  solution} \geq \frac{1}{2}$\\
+
+but that the heuristic is arbitrarily bad when $P \geq 2$\\
+We close this section by giving two other equivalent definitions of submodularity that are proved in [7]. Although this paper can be read independently, we strongly recomend the prior reading of [7].\\
+
+Let $\rho_j(S) = z(S \cup \{j\}) - z(S)$
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%Imports the bibliography file "references.bib"
+\bibliography{references}
+%\bibliographystyle{references}
+
+\end{document}
