@@ -222,58 +222,20 @@ We close this section by giving two other equivalent definitions of submodularit
 
 Let $\rho_j(S) = z(S \cup \{j\}) - z(S)$
 
+\textbf{Proposition 1.1} \textit{Each of the following statements is equivalent and defines a nondecreasing submodular set function.}\\
 
+\begin{enumerate}
+\item $z(S) + z(T) \geq z(S \cup T) + z(S \cap T), \forall S, T \subseteq N$\\
+$z(S) \leq z(T), \forall S \subseteq T \subseteq N$
+\item $\rho_j(S) \geq \rho_j(T) \geq 0, \forall S \subset T \subset N\  and\  j \in N-T$
+\item $z(T) \leq z(S) + \sum\limits_{j \in T-S}\rho_j(S),\  \forall S, T \subseteq N$
+\end{enumerate}
 
+Finally, we assume throughout the paper that $z \neq z({\O})$ and therefore exclude the trivial possibility of ${\O}$ being an optimal solution.
 
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\section{The greedy heuristic}
+We first describe the greedy heuristic and then obtain two worst case bounds for problem Equation \ref{eq:5}\\
+\textit{\textbf{The greedy heuristic for nondecreasing set functions on independence system (N, F)}}
 
 
 
