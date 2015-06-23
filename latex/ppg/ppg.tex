@@ -25,8 +25,6 @@
 \usepackage[utf8]{inputenc}
 \inputencoding{utf8}
 
-
-%\usepackage[round]{natbib}
 \usepackage[square,sort]{natbib}
 \bibliographystyle{unsrtnat}
 
@@ -49,9 +47,6 @@
 \usepackage{amsfonts}
 \usepackage{amsthm}
 
-%algorithm
-%\usepackage{algorithm}
-%\usepackage[noend]{algpseudocode}
 \usepackage[]{algorithm2e}
 
 %langle
@@ -65,8 +60,6 @@
 
 
 \begin{titlepage}
-
-%\begin{titlepage}
 
 \begin{center}
 \vspace*{-1in}
@@ -104,35 +97,29 @@ Levi Henrique Santana de Lelis, Santiago Franco \\
 \end{titlepage}
 
 
-%\begin{figure}[htb]
-%\begin{center}
-%\includegraphics[width=4cm]{./image/ufv1}
-%\end{center}
-%\end{figure}
-
-%\title{On Selecting Heuristics Functions for Domain-Independent Planning.}
-%\providecommand{\keywords}[1]{\textbf{keywords} #1}
-%\author{Student: Marvin Abisrror Zarate\\\\
-%Advisor: Levi Lelis \\\\
-%Departamento de Informática \\Universidade Federal de Vicosa \\Viçosa, Brazil}
-
-%\date{\color{black}July 2015}
-%\maketitle
-
-%\end{titlepage}
-
-\section{Project}
-Solving domains independent problems is a very hard task when we do planning, sometimes we can try to solve instances that could take too much time to find the solution, and the experience tell us that the main reasons why this could be happening are: The size of the tree is very large, the inconsistency of the heuristic used to do the search, The complexity of the instance that could contains cycles, etc. For the reasons mentioned we started to think about how to try to solve problems quickly without spending too much time or avoid using randomly heuristics.\\
-
- 
-
-
-We present a greedy method based on the theory of supermodular optimization for selecting a subset of heuristic functions, without relying on domain knowledge, to guide the A* search algorithm. If the heuristics are consistent, our method selects a subset which is guaranteed to be near optimal to the resulting A* search tree size. Furthermore to being consistent, if all heuristics have the same evaluation time, we expect the subset would be near-optimal with respect to the resulting A* search tree size.\\
+\tableofcontents
+\newpage
 
 \section{Introduction}
-This theses project is concerned with cost-optimal state-space planning using the A* algorithm \citep{hart1968formal}. We asume that a pool, $\zeta$, of hundreds or even thousands of heuristics is available, and that the final heuristic used to guide A*, $h_{\substack{max}}$, will be defined as the maximum over a subset $\zeta\sp{\prime}$ of those heuristics ($h_{\substack{max}(s, \zeta\sp{\prime})} = \max\limits_{ h\epsilon \zeta\sp{\prime}}h(s)$). The choice of the subset $\zeta\sp{\prime}$ can greatly affect the efficiency of A*. For a given size \textit{N} and planning task $\triangledown$, a subset containing \textit{N} heuristics from $\zeta$ is optimal if no other subset containing \textit{N} heuristics from $\zeta$ results in A* expanding fewer nodes when solving $\triangledown$.\\
+Solving independent domains is a very hard task when we do planning. Sometimes we will find instances that takes too much time to find the solution, and the measure of that time could be hours, days or even years. Users of search algorithms usually do not know \textit{a priori} how long it will take to solve a problem instance $-$ some instances could be solved quickly while others could take long time. Many researchs in the area of heuristic search explains why this could be happening, some of those reasons are: That the size of the tree is very large, the inconsistency of the heuristic used to do the search or the complexity of the instance that could contains cycles or even dead end areas which avoid to make any movement in the search space tree, etc.\\
 
-\section{Contributions}
+Furthermore, domain independent planning is related to the general problems solving where we basically require a very inteligent domain-independent search algorithm or heuristic to do the search in order to solve the instance without knowing in detail how is the problem and the search space it produces.\\
+
+Also, the need to solve the major number of problems using restricted resources of memory and time is vital in the area of Artificial Intelligence (AI), because each time are released problems with high grade of difficulty that can not be solved using the last state of the art in planning. In addition, the seek for solving domain independent planning is critical is the areas manufacturing, space systems, software engineers, robotics, education, and entertainment.\\
+
+On the whole, finding an strategy which allow us to solve the major number of problems using domain indepenent planning is a very important task in AI.\\
+
+Finally, the proposal of this project is to develop an approach of selecting heuristics functions to optimize the search of the solution applied by the domain independent planning. In order to reduze the amount of memory and time.
+
+
+
+\section{Problem and Importance}
+This project is concerned with cost-optimal state-space planning using the A* algorithm \citep{hart1968formal}. We asume that a pool, $\zeta$, of hundreds or even thousands of heuristics is available, and that the final heuristic used to guide A*, $h_{\substack{max}}$, will be defined as the maximum over a subset $\zeta\sp{\prime}$ of those heuristics ($h_{\substack{max}(s, \zeta\sp{\prime})} = \max\limits_{ h\epsilon \zeta\sp{\prime}}h(s)$). The choice of the subset $\zeta\sp{\prime}$ can greatly affect the efficiency of A*. For a given size \textit{N} and planning task $\triangledown$, a subset containing \textit{N} heuristics from $\zeta$ is optimal if no other subset containing \textit{N} heuristics from $\zeta$ results in A* expanding fewer nodes when solving $\triangledown$.\\
+
+\section{Hypotheses}
+We present a greedy method based on the theory of supermodular optimization for selecting a subset of heuristic functions, without relying on domain knowledge, to guide the A* search algorithm. If the heuristics are consistent, our method selects a subset which is guaranteed to be near optimal to the resulting A* search tree size. Furthermore to being consistent, if all heuristics have the same evaluation time, we expect the subset would be near-optimal with respect to the resulting A* search tree size.\\
+
+\section{Objectives}
 The first contribution of this research is to show that the problem of finding the optimal subset of $\zeta$ of size \textit{N} for a given problem task is supermodular, and therefore a greedy algorithm, which we call Greedy Heuristic Selection (GHS), that selects heuristics from $\zeta$ one at a time is guaranteed to produce a subset $\zeta\sp{\prime}$ such that the number of nodes expanded by A* is no more than approximately 1.36 times optimal. Moreover, if all heuristics in $\zeta$ have the same evaluation time, then the A* running time using $\zeta\sp{\prime}$ is also guaranteed to be no more than approximately 1.36 times optimal. An optimization procedure which is similar to ours is presented by \citep{raynersss13}, but their procedure maximizes the average heuristic value. By contrast, GHS minimizes the search tree size.\\
 
 GHS requires a prediction of the number of nodes expanded by A* using any given subset. Although there are methods for accurately predicting the number of nodes expanded by Iterative Deepening-A* \citep{korf2001timecomplexity} (IDA*), Stratified Sampling \citep{lelis2013predicting} (SS), these methods can't be easily adapted to A* because A*'s duplicate pruning makes it very difficult to predict how many nodes will occur at depth \textit{d} of A*'s search tree (the tree of nodes expanded by A*). In this research we want to make another contribution showing that the Stratification Sampling(SS) generates very good predictions for the A*'s search tree.\\
@@ -142,44 +129,21 @@ The second contribution of this research is an empirical evaluation of GHS in op
 The main aim of this research is to develop an approach to resolves problems quickly. The approach we are proposing can be applied for solving optimal domain problems in the Fast-Downward Planner \citep{helmert2006fast}. A few of these domains are: Elevators opt08 and opt11, Floortile opt11, Nomystery opt11, etc.
 \\
 
-\section{Domain Independent Problems.}
-The Domain Independent Problems are well know as general problem solving. In order to avoid cycles and dead ends during the search we have modified the Stratification Sampling (SS) to solve this issues using BFS each time the cost operator being zero.\\
+\section{Literature}
+State-space search algorithms, such as A* \citep{hart1968formal}, are fundamental in many AI applications. A* uses the $f(s) = g(s) + h(s)$ cost function to guide its search. Here, $g(s)$ is the cost of the path from the start state to state \textit{s}, and $h(s)$ is the estimated cost-to-go from \textit{s} to a goal; $h(.)$ is known as the heuristic function. A heuristic \textit{h} is \textit{admissible} if $h(s) \leq dist(s, goal)$ for every state \textbf{s} and goal state \textit{goal}, where \textit{dist(n, m)} is the cost of at least-cost path from \textit{n} to \textit{m}. If $h(n)$ is admissible, \textit{i,e.} always returns a lower bound estimate of the optimal cost, these algorithms are guaranteed to find an optimal path from the start state to a goal state if one exists.\\
+
+In addition to being admissible the heuristic also could be \textit{consistent}. A heuristic \textit{h} is \textit{consistent} if for every pair of states, \textit{m} and \textit{n}, $h(m) - h(n) \leq dist(m, n)$
 
 
-We categorize these domains in the following:
-\subsection{Unit cost Domains}
-In these domains all the cost operators have the value of one. For example:
-\begin{enumerate}
-	\item nomystery-opt11-strips
-	\item openstacks-opt08-strips
-	\item openstacks-opt11-strips
-	\item parking-opt11-strips
-	\item pegsol-opt11-strips
-	\item tidybot-opt11-strips
-	\item visitall-opt11-strips
-\end{enumerate}
+\section{Metodology}
+sdfsdfsdf
 
-\subsection{Non Unit cost Domains}
-In these domains all the cost operators have the value greather than one. For example:
-\begin{enumerate}
-	\item barman-opt11-strips
-	\item floortile-opt11-strips
-	\item scanalyzer-opt11-strips
-	\item transport-opt08-strips
-	\item transport-opt11-strips
-	\item woodworking-opt08-strips
-	\item woodworking-opt11-strips
-\end{enumerate}
+\section{Timetable}
+ssfdsf
 
-\subsection{Zero cost Domains}
-In these domains all or some of the cost operators have the value equal to zero. For example:
-\begin{enumerate}
-	\item elevators-opt08-strips
-	\item elevators-opt11-strips
-	\item parcprinter-opt11-strips
-	\item sokoban-opt08-strips
-	\item sokoban-opt11-strips
-\end{enumerate}
+
+
+
 
 
 \section{Problem Formulation}
@@ -210,89 +174,6 @@ We present a greedy algorithm for approximately solving the following optimizati
 \end{equation}
 
 where \textit{N} could be determined by a hard constraint such as the maximum number of PDBs one can store in memory.
-
-\section{Greedy Heuristic Selection}
-Greedy Heuristic Selection (GHS), is an approximation algorithm for selecting a subset $\zeta\sp{\prime} \subseteq \zeta$.
-The algorithm receives as input a planning problem 
-$\triangledown$, a set of heuristics $\zeta$ a cardinality size \textit{N}, and it returns a subset $\zeta\sp{\prime} \subseteq \zeta$ of size \textit{N}. In each iteration GHS greedily selects from $\zeta$ the heuristic \textit{h} which will result in the largest reducction of the value of \textit{J}. GHS returns $\zeta\sp{\prime}$ once it has the desired cardinality size \textit{N}.\\
-
-\begin{algorithm}[H]
-\textbf{Input:} problem $\triangledown$, set heuristics $\zeta
-$, cardinality \textit{N}.\\
-\textbf{Output:} heuristic subset $\zeta\sp{\prime} \subseteq \zeta$ of size \textit{N}\\
-\SetAlgoLined
- $\zeta\sp{\prime} \leftarrow 0$\;
- \While{$|\zeta\sp{\prime}| < N$}{
-  $h \leftarrow \arg\min\limits_{ h\epsilon \zeta}J(\zeta\sp{\prime} \cup \{h\}, \triangledown)$\\
-  $\zeta\sp{\prime} \leftarrow  \zeta\sp{\prime} \cup \{h\}$\\
- }
- return $\zeta\sp{\prime}$
- \caption{Greedy Heuristic Selection}
-\end{algorithm}
-
-\subsection{GHS Approximation Analysis}
-In the following analysis all heuristic functions are assumed to be consistent. We also assume that A* expands all nodes \textit{n} with \textit{f(n) $\leq C\sp{\star}$} while solving $\triangledown$, as shown in Equation \ref{eq:1}.\\
-
-\textbf{Lemma 1}\ $J(\zeta\sp{\prime} \cup \{h\}) \leq J(\zeta\sp{\prime})$ 
-\textit{for any $\zeta\sp{\prime}$ and any h}.
-
-\textit{Proof.} Fix $\zeta\sp{\prime}$ and \textit{h}. Then\\
-
-\begin{equation}
-\label{eq:5}
-J(\zeta\sp{\prime} \cup \{h\}) = |\{s \epsilon V| h_{\substack{max}}(s, \zeta\sp{\prime} \cup \{h\}) \leq C\sp{\star} - g(s)|
-\end{equation}
-
-\begin{equation}
-\label{eq:6}
-J(\zeta\sp{\prime} \cup \{h\}) \leq |\{s \epsilon V| h_{\substack{max}}(s, \zeta\sp{\prime}) \leq C\sp{\star} - g(s) \}|
-\end{equation}
-
-\begin{equation}
-\label{eq:7}
-J(\zeta\sp{\prime} \cup \{h\}) = J(\zeta\sp{\prime})
-\end{equation}
-
-Where the inequality follows from the fact that $h_{\substack{max}}(s, \zeta\sp{\prime} \cup \{h\}) \geq  h_{\substack{max}}(s, \zeta\sp{\prime})$  for all \textit{s}.\\
-
-Let \textit{S} be a set and \textit{{\O}} a function over $2\sp{S}$. \textit{{\O}} is supermodular if for any \textit{A, B x} with \textit{A} $\subset$ \textit{B} $\subset$ \textit{S} and \textit{x} $\epsilon$ \textit{S} $\backslash$ \textit{B}:\\
-
-\begin{equation}
-\label{eq:8}
-\textit{{\O}}(\textit{A}) - \textit{{\O}}(\textit{A} \cup \{\textit{x}\}) \geq {\O}(\textit{B} \cup \{\textit{x}\})
-\end{equation}
-
-Intuitively, Equation \ref{eq:8} captures the idea of diminishing returns. In the context of  search tree size, if we add a heuristic function \textit{h} to a set of heuristics \textit{A} strictly contained in a set \textit{B}, then we would expect $J(A) - J(A \cup \{h\})$ to be larger than $J(B) - J(B \cup \{h\})$ as \textit{h} would "contribute more" to \textit{A} than to \textit{B}.\\
-
-\textbf{Lemma 2} \textit{J is supermodular.}  \\
-\textit{Proof.} Let $A \subset B  \subset \zeta$ and $h \ \epsilon \ \zeta \ \backslash \ B$. By Lemma 1,  $J(A) - J(A \cup \{h\}) \geq 0$ and $J(B) - J(B \cup \{h\})$. We consider two cases.\\
-\textit{Case 1.} $J(B) - J(B \cup \{h\}) = 0$. Then $J(A) - J(A \cup \{h\}) \geq J(B) - J(B \cup \{h\})$.\\
-\textit{Case 2.} $J(B) - J(B \cup \{h\}) = k > 0$. Let $s_1,....s_k$ be all the states in \textit{V} that satisfy $h_{\substack{max}}(s_i, B) \leq C\sp{\star} - g(s_i)$ and $h_{\substack{max}}(s_i, B \cup \{h\}) > C\sp{\star} - g(s_i)$. This implies $h(s_i) > C\sp{\star} - g(s_i)$ and thus $h_{\substack{max}}(s_i, A \cup \{h\}) > C\sp{\star} - g(s_i)$, for all \textit{i} $\epsilon \ \{1,...,k\}$. Further, since $A \subset B$, we have $h_{\substack{max}}(s_i, A) \leq h_{\substack{max}}(s_i, B) \leq C\sp{\star} - g(s_i)$, for all \textit{i} $\epsilon \{1,...,k\}$. Consequently, $J(A) - J(A \cup \{h\}) \geq k = J(B) - J(B \cup \{h\})$.\\
-
-A stronger version of Lemma 1 can be proven: if $S(\zeta\sp{\prime})$ denotes the set of states $\{ s \epsilon V | h_{\substack{max}}(s, \zeta\sp{\prime}) \leq C\sp{\star} - g(s)\}$, so that $J(\zeta\sp{\prime})$ is the cardinality of $S(\zeta\sp{\prime})$, we obtain
-
-\begin{equation}
-\label{eq:9}
-S(\zeta\sp{\prime} \cup \{h\}) \subseteq S(\zeta\sp{\prime}) for\  any\  h
-\end{equation}
-
-Similarly, one can strengthen the statement of Lemma 2: the proof given above contains the core idea for proving $S(A)  \backslash S(A \cup \{h\}) \supseteq S(B)  \backslash  S(B \cup \{h\})$, which, together with Equation \ref{eq:9}, immediately implies the weaker statement $J(A) - J(A \cup \{h\}) \geq J(B) - J(B \cup \{h\})$. In the form stated above, however, Lemma 1 and 2 are already sufficient for using a result by \citep{nemhauser1978analysis} to conclude the following.\\
-
-\textbf{Theorem 1} \textit{Let} $\zeta\sp{\prime}$ \textit{be a subset selected by GHS. Then} $J(\zeta\sp{\prime}, \triangledown)$ \textit{is within a factor of} $\dfrac{e+1}{e} \approx $ 1.36 \textit{of optimal.}\\
-
-Let $T(\zeta\sp{\prime}, \triangledown)$ be an approximation to the running time of A* when using $h_{\substack{max}}(\zeta\sp{\prime})$ for solving $\triangledown$, defined as follows.\\
-
-\begin{equation}
-\label{eq:10}
-T(\zeta\sp{\prime}, \triangledown) = J(\zeta\sp{\prime}, \triangledown) \times t_{\substack{h_{\substack{max}}(\zeta\sp{\prime})}}
-\end{equation}
-
-where, for any heuristic function \textit{h}, the term $t_h$ refers to the running time used for computing the \textit{h}-value of any state \textit{s}.\\
-In order to compute the running time A* exactly we would also have to account for the time required for node generation and for the operations on A*'s \textbf{OPEN} and \textbf{CLOSED} list. However, these two factors do not depend directly on the heuristic employed. Thus, $T(\zeta\sp{\prime}, \triangledown)$ is a reasonable approximation for A*'s running time  for the heuristic subset selection problem.\\
-
-\textbf{Theorem 2} $ Suppose\ t_{\substack{h_1}} = t_{\substack{h_2}}$\  \textit{for any} $h_1, h_2\  \epsilon\  \zeta$. \textit{Then, for any fixed subset size N, GHS yields a subset $\zeta\sp{\prime}$ that is within a factor of $\dfrac{e+1}{e}$} \textit{of optimal with respect to T($\zeta\sp{\prime}, \triangledown$)}.
-
-\textit{Proof.} Since $t_h$ is constant over $h\  \epsilon\  \zeta$, the value $t_{\substack{h_{\substack{max}}(\zeta\sp{\prime})}}$ is independent  of $\zeta\sp{\prime}$. Hence the value $T(\zeta\sp{\prime}, \triangledown)$ is a constant factor of $J(\zeta\sp{\prime}, \triangledown)$. The latter is within a factor of $\dfrac{e+1}{e}$ of optimal by Theorem 1.\\
 
 %Imports the bibliography file "references.bib"
 \bibliography{references}
