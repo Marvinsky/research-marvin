@@ -58,6 +58,13 @@
 \usepackage{scalerel}
 \usepackage{graphicx}
 
+%F caligraphic
+\usepackage{calrsfs}
+\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+\newcommand{\Fa}{\mathcal{F}}
+\newcommand{\Fb}{\pazocal{F}}
+\newcommand{\Ma}{\mathcal{M}}
+
 
 \makeindex
 
@@ -235,7 +242,20 @@ Finally, we assume throughout the paper that $z \neq z({\O})$ and therefore excl
 
 \section{The greedy heuristic}
 We first describe the greedy heuristic and then obtain two worst case bounds for problem Equation \ref{eq:5}\\
-\textit{\textbf{The greedy heuristic for nondecreasing set functions on independence system (N, F)}}
+\textit{\textbf{The greedy heuristic for nondecreasing set functions on independence system (N, F)}}\\
+\textit{Initialization.} Let $S\sp{0} = {\O}, N\sp{\O} = N$ and set $t = 1$.\\
+\textit{Iteration\  t}\\
+\textit{Step 0} If $N\sp{t-1} = {\O},$ stop with $S\sp{t-1}$ the greedy solution.\\
+\textit{Step 1} Select $i(t) \in N\sp{t-1}$ for which $\rho_{i(t)}(S\sp{t-1}) = \max_{i \in N\sp{t-1}}\rho_i(S\sp{t-1})$, with ties settled arbitrarily.\\
+\textit{Step 2a} If $S\sp{t-1}\cup \{i(t)\} \notin F,\  set\  N\sp{t-1} = N\sp{t-1}- \{i(t)\}$ and return to Step 0.\\
+\textit{Step 2b} If $S\sp{t-1} \cup \{i(t)\} \in F,\  set\  \rho_{t-1} = \rho_{i(t)}(S\sp{t-1}), S\sp{t} = S\sp{t-1} \cup \{i(t)\}$ and $N\sp{t} = N\sp{t-1} - \{i(t)\}$\\
+\textit{Step 3} Set $t \to t+1$ and continue.\\
+
+Let $U\sp{t}$ be the set of elements considered in the first $t+1$ iterations of the greedy heuristic before the addition of a $(t+1)$st element $\Fa = \cap_{p=1}^{p} \Fa_p,$  where $\Ma_p = (N, \Fa_p)$ are matroids $p = 1,...P$. Define $r_p(S)$, called the rank of $S$ in matroid $p$, and define $sp\sp{p}(S) = \{j \in N: r_p(S \cup \{j\}) = r_p(S)\}$
+
+
+
+
 
 
 
