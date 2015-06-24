@@ -1,0 +1,224 @@
+
+\documentclass[11pt,a4paper,oneside]{report}
+
+\synctex=1
+
+\usepackage{pslatex,palatino,avant,graphicx,color}
+\usepackage[margin=2cm]{geometry}
+
+\usepackage{mathptmx}       % selects Times Roman as basic font
+
+\usepackage{helvet}         % selects Helvetica as sans-serif font
+\usepackage{courier}        % selects Courier as typewriter font
+\usepackage{type1cm}        % activate if the above 3 fonts are
+                            % not available on your system
+
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\usepackage{multicol}        % used for the two-column index
+\usepackage{multirow}
+\usepackage{booktabs}
+
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+
+\usepackage[utf8]{inputenc}
+\inputencoding{utf8}
+
+\usepackage[square,sort]{natbib}
+\bibliographystyle{unsrtnat}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{longtable}
+\usepackage{pdflscape}
+
+%for formula references
+\usepackage{amsmath}
+
+\newtheorem{mydef}{Definition}
+
+\usepackage{changes}
+%triangledown
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage[]{algorithm2e}
+
+%langle
+\usepackage{scalerel}
+\usepackage{graphicx}
+
+
+%width of the column
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+%rotate the name of the column
+\usepackage{adjustbox}
+\usepackage{array}
+
+\newcolumntype{R}[2]{%
+    >{\adjustbox{angle=#1,lap=\width-(#2)}\bgroup}%
+    l%
+    <{\egroup}%
+}
+\newcommand*\rot{\multicolumn{1}{R{90}{1em}}}% no optional argument here, please!
+
+%checkmark
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+
+\makeindex
+
+\begin{document}
+
+
+\begin{titlepage}
+
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=8cm]{./image/ufv1}
+\end{center}
+\end{figure}
+
+CENTRO DE CIENCIAS EXATAS E TECNOLOGICAS - CCE\\
+\vspace*{0.15in}
+DEPARTAMENTO DE INFORMATICA \\
+\vspace*{0.6in}
+\begin{large}
+PROJECT:\\
+\end{large}
+\vspace*{0.2in}
+\begin{Large}
+\textbf{ON SELECTING HEURISTIC FUNCTIONS FOR DOMAIN-INDEPENDENT PLANNING.} \\
+\end{Large}
+\vspace*{0.3in}
+\begin{large}
+%A Thesis Project submitted by Marvin Abisrror for the degree of Master to the PPG\\
+Marvin Abisrror\\
+\end{large}
+\vspace*{0.3in}
+\rule{80mm}{0.1mm}\\
+\vspace*{0.1in}
+\begin{large}
+Supervised by: \\
+Levi Henrique Santana de Lelis, Santiago Franco \\
+\end{large}
+\end{center}
+
+\end{titlepage}
+
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+Solving domain-independent problems is a very hard task when we do planning. Sometimes we will find instances that takes too much time to find the solution, and the measure of that time could be hours, days or even years. Users of search algorithms usually do not know \textit{a priori} how long it will take to solve a problem instance $-$ some instances could be solved quickly while others could take long time. Many researchs in the area of heuristic search explains why this could be happening, some of those reasons are: That the size of the tree is very large, the inconsistency of the heuristic used to do the search or the complexity of the instance that could contains cycles or even dead end areas which avoid to make any movement in the search space tree, etc.\\
+
+Furthermore, domain-independent planning is related to the general problems solving where we basically require a very inteligent domain-independent search algorithm or heuristic to do the search in order to solve the instance without knowing in detail how is the problem and the search space it produces.\\
+
+ In addition, the search for solving domain-independent planning is critical in areas such as manufacturing, space systems, software engineers, robotics, education, and entertainment. On the whole, finding an strategy which allow us to solve the major number of problems using domain indepenent planning is a very important task in AI.\\
+
+In the last few decades, AI has made significant strides in domain-independent planning. Some of the progress has resulted from adopting the heuristic search approach to problem-solving, where use of an appropiate heuristic often means substantial reduction in the time needed to solve hard problems. Initially heuristics were hand-crafted. These heuristics required domain-specific expertise and often much trial-and-error effort.\\
+
+Recently, techniques have been developed to automatically generate heuristics for domain and problem specifications. The component that generate these heuristics are called \textit{heuristic generators.}. And we find a good oportunity to use it in this project. We pretend to use the \textit{heuristic generator} in order to create a large set of heuristics.\\
+
+Finally, the proposal of this project is to develop an approach of selecting heuristics functions from a large set of heuristics. Not only to optimize the search of the solution applied by the domain-independent planning but also reduze the resources used of amount of memory and time.
+
+\section{Problem}
+Instances of domain-independent problems that requires a lot of time to find the solution are processes that require a lot of resources. The machines that execute this kind of process allocates a considerable amount of memory for this purpose. However, the main culprit for this behavior is the approach used to solve the problem. That is the reason why is needed an new approach based on selection that help us to solve the problems quickly and without spend a lot of time.\\
+
+When we try to solve problems using only one heuristic. Even if the heuristic is \textit{admissible} and \textit{consistent} is not enough to find the solution quickly, because there are other variables that affect the search, for example: The distribution of the search tree, or the existence of nodes that is not possible to obtain their heuristic value. So, we thought that using hundreds or even thousands of heuristics instead of only one in the search will help us to find the solution quickly and resolves more problems.\\
+
+So, the idea we have in mind is based in two steps: First, we make selection of the better heuristics from a bunch of heuristics. Then, we evaluate each node with the subset of heuristics in order to obtain the optimal path to the solution during the process of search. In this way, we assume that we can solve problems quickly and without spend too much time. 
+
+\subsection{Formalizing the Problem}
+This project is concerned with cost-optimal state-space planning using the A* algorithm \citep{hart1968formal}. We asume that a pool, $\zeta$, of hundreds or even thousands of heuristics is available, and that the final heuristic we assume to guide A*, $h_{\substack{max}}$, will be defined as the maximum over a subset $\zeta\sp{\prime}$ of those heuristics ($h_{\substack{max}(s, \zeta\sp{\prime})} = \max\limits_{ h \in \zeta\sp{\prime}}h(s)$). The choice of the subset $\zeta\sp{\prime}$ can greatly affect the efficiency of A*. For a given size \textit{N} and planning task $\triangledown$, a subset containing \textit{N} heuristics from $\zeta$ is optimal if no other subset containing \textit{N} heuristics from $\zeta$ results in A* expanding fewer nodes when solving $\triangledown$.\\
+
+\section{Objective}
+
+The general objective of this project is to develop an approach of selection of heuristics functions in order to optimize the process of search the solution of domains problems. In addition, we pretend to find the best way to get the subset of heuristics that allow us to obtain the optimal path to the solution.
+
+\subsection{Specific Objectives}
+What we expect to achieve as a specific objectives are:
+\begin{enumerate}
+\item Finding the optimal subset of $\zeta$ of size \textit{N} for a given problem task can be obtained using optimization process.
+\item We are going to try different strategies to obtain the size \textit{N} that fits the best the subset of heuristics.
+\item We know that Stratification Sampling (SS) does not make even reasonable predictions for the number of nodes expanded by A*. Nevertheless, even though SS produces poor predictions for the number of nodes expanded by A*, we would like to verify whether these predictions can be helpful in selecting a subset of heuristics to guide the A* search.
+\item For optimally solving domain-independent problems. We are going to use the Fast Downward planner as our base implementation.
+\end{enumerate}
+
+\section{Literature}
+Domain-Indepentent automatic planning require the basic knowledge of State-space search algorithms, such as A* \citep{hart1968formal}, which fundamental in many AI applications. A* uses the $f(s) = g(s) + h(s)$ cost function to guide its search. Here, $g(s)$ is the cost of the path from the start state to state \textit{s}, and $h(s)$ is the estimated cost-to-go from \textit{s} to a goal; $h(.)$ is known as the heuristic function.\\
+
+ A heuristic \textit{h} is \textit{admissible} if $h(s) \leq dist(s, goal)$ for every state \textbf{s} and goal state \textit{goal}, where \textit{dist(n, m)} is the cost of at least-cost path from \textit{n} to \textit{m}. If $h(n)$ is admissible, \textit{i,e.} always returns a lower bound estimate of the optimal cost, these algorithms are guaranteed to find an optimal path from the start state to a goal state if one exists.\\
+
+In addition to being admissible the heuristic also could be \textit{consistent}. A heuristic \textit{h} is \textit{consistent} if for every pair of states, \textit{m} and \textit{n}, $h(m) - h(n) \leq dist(m, n)$\\
+
+The system most similar to our proposal of selecting heuristics is RIDA* \citep{BarleySantiagoOver}. RIDA* also selects a subset from a pool of heuristics to guide the A* search. In RIDA* this is done by starting with an empty subset and trying all combinations of size one before trying the combination of size two and so on. RIDA* stops after evaluating a fixed number of subsets. While RIDA* is able to evaluate a set of heuristics with tens of elements, we pretend that our approach could evaluate a set of heuristics with thousands of elements.\\
+\newpage
+
+\section{Budget}
+
+\begin{table}[h]
+\centering
+\caption{Total Cost of the Master}
+\label{my-label}
+\begin{tabular}{|L{3cm}|l|l|l|}
+\hline
+Cost Specification                           & Description                                               & Cost (\$R)   & Source of Income \\ \hline
+1.- Personal                                 & Stipend to conduct the research (Scholarship amount X 24) & 36,000 & CAPES            \\ \hline
+\textbf{Subtotal 1}                                   &                                                           & \textbf{36,000} &                  \\ \hline
+2.- Bibliographic Material                   & Books, Technical Journal, etc                             & 400    & Own Resources    \\ \hline
+\textbf{Subtotal 2}                                   &                                                           & \textbf{400}    &                  \\ \hline
+3.- Materials                                & Sheets of papers                                          & 50     & Own Resources    \\ \hline
+                                             & Printing                                                  & 100    & Own Resources    \\ \hline
+                                             & USB                                                       & 20     & Own Resources    \\ \hline
+\textbf{Subtotal 3}                                   &                                                           & \textbf{170}    &                  \\ \hline
+                                             &                                                           &        &                  \\ \hline
+\textbf{Total = Subtotal 1 + Subtotal 2 + Subtotal 3} &                                                           & \textbf{36,570} &                  \\ \hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+
+
+\section{Timetable}
+
+%c | L{3cm} | C{3cm} | R{3cm}
+
+\begin{table}[h]
+\centering
+\caption{Schedule from June to March}
+\label{my-label}
+\begin{tabular}{|L{3cm}|l|l|l|l|l|l|l|l|l|l|}
+\hline
+Activities                                                                                            & \rot{June} & \rot{July} & \rot{August} & \rot{September} & \rot{October} & \rot{November} & \rot{December} & \rot{January} & \rot{February} & \rot{March} \\ \hline
+Present the project to the PPG                                                   & \checkmark    &      &        &           &         &          &          &         &          &       \\ \hline
+Implementing the \textit{heuristic generator}                                                   & \checkmark    &      &        &           &         &          &          &         &          &       \\ \hline
+Implementing the prediction strategy A* or SS                                                   &      & \checkmark    &        &           &         &          &          &         &          &       \\ \hline
+Test which strategy of prediction fits the best the subset of heuristics                        &      & \checkmark    & \checkmark      &           &         &          &          &         &          &       \\ \hline
+Testing with the domain-independent problems of Fast-Downward                                   &      &      & \checkmark      & \checkmark         &         &          &          &         &          &       \\ \hline
+Analyze the results and prepare a paper to submit                                               &      &      &        & \checkmark         &         &          &          &         &          &       \\ \hline
+Organize and Analyze the results of SS compared with IDA* and Selection of heuristics functions &      &      &        &           & \checkmark       & \checkmark        &          &         &          &       \\ \hline
+Writing the theses                                                                              &      &      &        &           &         & \checkmark        & \checkmark        & \checkmark       & \checkmark        &       \\ \hline
+Dissertation theses                                                                             &      &      &        &           &         &          &          &         &          & \checkmark     \\ \hline
+\end{tabular}
+\end{table}
+
+%Imports the bibliography file "references.bib"
+\bibliography{references}
+%\bibliographystyle{references}
+
+\end{document}
