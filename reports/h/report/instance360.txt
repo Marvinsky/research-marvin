@@ -2,4 +2,4 @@
 testss
 idai
 1
-hmax
+lmcut
