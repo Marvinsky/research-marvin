@@ -1,0 +1,36 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: project.aux
+The style file: acm.bst
+Database file #1: bibliography.bib
+I was expecting a `,' or a `}'---line 8 of file bibliography.bib
+ :   
+ :   volume = {33},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 156 of file bibliography.bib
+ :   
+ :   publisher = {ACM},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "geolifeuserguide" isn't style-file defined
+--line 255 of file bibliography.bib
+Repeated entry---line 291 of file bibliography.bib
+ : @inproceedings{vanKreveld2007
+ :                              ,
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "pumpichet2012"
+refers to entry "conf/icc/2012", which doesn't exist
+A bad cross reference---entry "deAquino2013"
+refers to entry "conf/geoinfo/2013", which doesn't exist
+A bad cross reference---entry "fontes2013"
+refers to entry "conf/geoinfo/2013", which doesn't exist
+A bad cross reference---entry "berndt94"
+refers to entry "conf/kdd/1994", which doesn't exist
+A bad cross reference---entry "vlachos2002ICDE"
+refers to entry "conf/icde/2002", which doesn't exist
+Warning--I didn't find a database entry for "conf/icde/2002"
+Warning--I didn't find a database entry for "conf/geoinfo/2013"
+Warning--I didn't find a database entry for "conf/kdd/1994"
+Warning--I didn't find a database entry for "conf/icc/2012"
+Warning--empty booktitle in ester96
+Warning--empty year in zheng2010
+(There were 8 error messages)

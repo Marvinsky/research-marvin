@@ -1,15 +1,49 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Haslum et~al.(2007)Haslum, Botea, Helmert, Bonet, and
+  Koenig]{haslum2007domain}
+Patrik Haslum, Adi Botea, Malte Helmert, Blai Bonet, and Sven Koenig.
+\newblock Domain-independent construction of pattern database heuristics for
+  cost-optimal planning.
+\newblock \emph{AAAI}, 7:\penalty0 1007--1012, 2007.
+
+\bibitem[Edelkamp(2007)]{edelkamp2007automated}
+Stefan Edelkamp.
+\newblock Automated creation of pattern database search heuristics.
+\newblock In \emph{Model Checking and Artificial Intelligence}, pages 35--50.
+  Springer Berlin Heidelberg, 2007.
+
+\bibitem[Nissim et~al.(2011)Nissim, Hoffmann, and Helmert]{nissim2011computing}
+Raz Nissim, J{\"o}rg Hoffmann, and Malte Helmert.
+\newblock Computing perfect heuristics in polynomial time: On bisimulation and
+  merge-and-shrink abstraction in optimal planning.
+\newblock In \emph{22nd International Joint Conference on Artificial
+  Intelligence (IJCAI'11)}, 2011.
+
 \bibitem[Hart and Raphael(1968)]{hart1968formal}
 N.~J.; Hart, P. E.;~Nilsson and B.~Raphael.
 \newblock A formal basis for the heuristic determination of minimum cost paths.
 \newblock \emph{IEEE Transactions on Systems Science and Cybernetics SSC},
   4\penalty0 (2):\penalty0 100--107, 1968.
+
+\bibitem[Domshlak et~al.(2011)Domshlak, Helmert, Karpas, and
+  Markovitch]{domshlak2011selmax}
+Carmel Domshlak, Malte Helmert, Erez Karpas, and Shaul Markovitch.
+\newblock The selmax planner: Online learning for speeding up optimal planning.
+\newblock \emph{Seventh international planning competition (IPC 2011),
+  deterministic part}, pages 108--112, 2011.
+
+\bibitem[Minton(1990)]{Minton1990363}
+Steven Minton.
+\newblock Quantitative results concerning the utility of explanation-based
+  learning.
+\newblock \emph{Artificial Intelligence}, 42\penalty0 (2–3):\penalty0 363 --
+  391, 1990.
 
 \bibitem[Barley et~al.(2014)Barley, Franco, and Riddle]{BarleySantiagoOver}
 Michael~W. Barley, Santiago Franco, and Patricia~J. Riddle.
@@ -18,5 +52,18 @@ Michael~W. Barley, Santiago Franco, and Patricia~J. Riddle.
 \newblock \emph{Proceedings of the Twenty-Fourth International Conference on
   Automated Planning and Scheduling, {ICAPS} 2014, Portsmouth, New Hampshire,
   USA, June 21-26, 2014}, 2014.
+
+\bibitem[Helmert(2006)]{helmert2006fast}
+Malte Helmert.
+\newblock The fast downward planning system.
+\newblock \emph{J. Artif. Intell. Res.(JAIR)}, 26:\penalty0 191--246, 2006.
+
+\bibitem[Nemhauser et~al.(1978)Nemhauser, Wolsey, and
+  Fisher]{nemhauser1978analysis}
+George~L Nemhauser, Laurence~A Wolsey, and Marshall~L Fisher.
+\newblock An analysis of approximations for maximizing submodular set
+  functions—i.
+\newblock \emph{Mathematical Programming}, 14\penalty0 (1):\penalty0 265--294,
+  1978.
 
 \end{thebibliography}

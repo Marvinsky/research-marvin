@@ -1,9 +1,10 @@
 \select@language {english}
-\contentsline {section}{\numberline {0.1}Introduction}{2}
-\contentsline {section}{\numberline {0.2}Problem}{2}
-\contentsline {subsection}{\numberline {0.2.1}Formalizing the Problem}{3}
-\contentsline {section}{\numberline {0.3}Objective}{3}
-\contentsline {subsection}{\numberline {0.3.1}Specific Objectives}{3}
-\contentsline {section}{\numberline {0.4}Literature}{3}
-\contentsline {section}{\numberline {0.5}Budget}{4}
-\contentsline {section}{\numberline {0.6}Timetable}{5}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Related Work}{2}
+\contentsline {section}{\numberline {3}Problem}{3}
+\contentsline {subsection}{\numberline {3.1}Formalizing the Problem}{4}
+\contentsline {section}{\numberline {4}Objective}{4}
+\contentsline {subsection}{\numberline {4.1}Specific Objectives}{4}
+\contentsline {section}{\numberline {5}Metodology}{5}
+\contentsline {section}{\numberline {6}Budget}{6}
+\contentsline {section}{\numberline {7}Timetable}{7}

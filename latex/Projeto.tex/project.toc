@@ -1,0 +1,21 @@
+\select@language {brazil}
+\contentsline {section}{\numberline {1}INTRODUCTION}{3}
+\contentsline {section}{\numberline {2}RELATED WORK}{4}
+\contentsline {section}{\numberline {3}METHODOLOGY}{6}
+\contentsline {subsection}{\numberline {3.1}Data Cleaning: Datasets}{7}
+\contentsline {subsubsection}{\numberline {3.1.1}GeoLife Dataset}{7}
+\contentsline {subsubsection}{\numberline {3.1.2}T-Drive Dataset}{8}
+\contentsline {subsection}{\numberline {3.2}Data Integration}{8}
+\contentsline {subsubsection}{\numberline {3.2.1}Check Trajectories Similarity}{11}
+\contentsline {subsection}{\numberline {3.3}Data Cleaning}{13}
+\contentsline {subsubsection}{\numberline {3.3.1}Preliminaries}{13}
+\contentsline {subsubsection}{\numberline {3.3.2}Data Transformation}{15}
+\contentsline {subsubsection}{\numberline {3.3.3}Data Cleaning Steps}{15}
+\contentsline {paragraph}{STEP 1: Removing Duplicate Coordinates.}{15}
+\contentsline {paragraph}{STEP 2: Removing Inconsistent Values.}{15}
+\contentsline {paragraph}{STEP 3: Predicting Missing Values.}{16}
+\contentsline {paragraph}{STEP 4: Identifying and Ignoring Noisy Coordinates.}{17}
+\contentsline {subsection}{\numberline {3.4}DATA REDUCTION}{20}
+\contentsline {section}{\numberline {4}EXPERIMENTAL VALIDATION}{21}
+\contentsline {section}{\numberline {5}TIMELINE}{21}
+\contentsline {section}{\numberline {6}BUDGET}{22}

@@ -1,6 +1,6 @@
 
-\documentclass[11pt,a4paper,oneside]{report}
-
+%\documentclass[11pt,a4paper,oneside]{report}
+\documentclass[a4paper,12pt]{article}
 \synctex=1
 
 \usepackage{pslatex,palatino,avant,graphicx,color}
@@ -105,17 +105,37 @@ PROJECT:\\
 \vspace*{0.3in}
 \begin{large}
 %A Thesis Project submitted by Marvin Abisrror for the degree of Master to the PPG\\
-Marvin Abisrror\\
+\textbf{Marvin Abisrror Zarate} \\
+MSc Student in Computer Science \\
 \end{large}
 \vspace*{0.3in}
 \rule{80mm}{0.1mm}\\
 \vspace*{0.1in}
 \begin{large}
-Supervised by: \\
-Levi Henrique Santana de Lelis, Santiago Franco \\
-\end{large}
-\end{center}
+Levi Henrique Santana de Lelis \\
+(Advisor)
+\
 
+\
+
+\
+
+\
+Santiago Franco \\
+(Co-Advisor)
+\
+
+\
+
+\
+
+\
+
+\
+\end{large}
+VIÇOSA - MINAS GERAIS\\
+JULY - 2015
+\end{center}
 \end{titlepage}
 
 
@@ -123,17 +143,35 @@ Levi Henrique Santana de Lelis, Santiago Franco \\
 \newpage
 
 \section{Introduction}
+In the last few decades, Artificial Intelligence has made significant strides in domain-independent planning. Some of the progress has resulted from adopting the heuristic search approach to problem-solving, where use of an appropiate heuristic often means substantial reduction in the time needed to solve hard problems. Initially heuristics were hand-crafted. These heuristics required domain-specific expertise and often much trial-and-error effort.\\
+
+Recently, techniques \citep{haslum2007domain, edelkamp2007automated, nissim2011computing} have been developed to automatically generate heuristics for domain and problem specifications. The component that generate these heuristics are called \textit{heuristic generators.} Many of these heuristic generators work by creating abstractions of the original problem spaces. Usually there are a number of different ways to abstract the problem space, and the generators search for a good abstraction to create their heuristic. These searches are often guided by predictions about the impact that different choices will have on the size of the problem's search space.\\
+
 Solving domain-independent problems is a very hard task when we do planning. Sometimes we will find instances that takes too much time to find the solution, and the measure of that time could be hours, days or even years. Users of search algorithms usually do not know \textit{a priori} how long it will take to solve a problem instance $-$ some instances could be solved quickly while others could take long time. Many researchs in the area of heuristic search explains why this could be happening, some of those reasons are: That the size of the tree is very large, the inconsistency of the heuristic used to do the search or the complexity of the instance that could contains cycles or even dead end areas which avoid to make any movement in the search space tree, etc.\\
 
 Furthermore, domain-independent planning is related to the general problems solving where we basically require a very inteligent domain-independent search algorithm or heuristic to do the search in order to solve the instance without knowing in detail how is the problem and the search space it produces.\\
 
  In addition, the search for solving domain-independent planning is critical in areas such as manufacturing, space systems, software engineers, robotics, education, and entertainment. On the whole, finding an strategy which allow us to solve the major number of problems using domain indepenent planning is a very important task in AI.\\
 
-In the last few decades, AI has made significant strides in domain-independent planning. Some of the progress has resulted from adopting the heuristic search approach to problem-solving, where use of an appropiate heuristic often means substantial reduction in the time needed to solve hard problems. Initially heuristics were hand-crafted. These heuristics required domain-specific expertise and often much trial-and-error effort.\\
-
-Recently, techniques have been developed to automatically generate heuristics for domain and problem specifications. The component that generate these heuristics are called \textit{heuristic generators.}. And we find a good oportunity to use it in this project. We pretend to use the \textit{heuristic generator} in order to create a large set of heuristics.\\
-
 Finally, the proposal of this project is to develop an approach of selecting heuristics functions from a large set of heuristics. Not only to optimize the search of the solution applied by the domain-independent planning but also reduze the resources used of amount of memory and time.
+
+\section{Related Work}
+Domain-Indepentent automatic planning require the basic knowledge of State-space search algorithms, such as A* \citep{hart1968formal}, which fundamental in many AI applications. A* uses the $f(s) = g(s) + h(s)$ cost function to guide its search. Here, $g(s)$ is the cost of the path from the start state to state \textit{s}, and $h(s)$ is the estimated cost-to-go from \textit{s} to a goal; $h(.)$ is known as the heuristic function.\\
+
+ A heuristic \textit{h} is \textit{admissible} if $h(s) \leq dist(s, goal)$ for every state \textbf{s} and goal state \textit{goal}, where \textit{dist(n, m)} is the cost of at least-cost path from \textit{n} to \textit{m}. If $h(n)$ is admissible, \textit{i,e.} always returns a lower bound estimate of the optimal cost, these algorithms are guaranteed to find an optimal path from the start state to a goal state if one exists.\\
+
+In addition to being admissible the heuristic also could be \textit{consistent}. A heuristic \textit{h} is \textit{consistent} if for every pair of states, \textit{m} and \textit{n}, $h(m) - h(n) \leq dist(m, n)$\\
+
+Furthermore, if the heuristic used to do the search is \textit{consistent} it means that the \textit{f-value} monotonically increase along the search paths. Because we are using A* with consistent heuristics, we can look upon A* as expanding layers of nodes, where each layer consists of all the nodes with the same \textit{f-value}. This layer is called and \textit{f-level} and the leaves of layer are called an \textit{f-boundary.}\\
+
+The idea of not using all heuristics to evaluate every node has appeared several times recently \textit{selmax} \citet{domshlak2011selmax}, Lazy A* (LA*) and Rational Lazy A* (RLA*). These decide which of a set of heuristics should be used to evaluate a given node. They can be explained most easily as choosing between a cheap and less accurate heuristic, h1, and an accurate but expensive heuristic, h2. \textit{selmax} chooses which to use by estimating whether more time will be saved by using h1 and possibly not expanding it. \textit{selmax} learns online a classifier that predicts when it should use h2 at a node. \textit{selmax} may expand more nodes than max but its overall problem solving time should be lower than either max or random.\\
+
+Althought, the idea of use multi-heuristics and get a subset of heuristics that enhance the search is a good approach, in the work on maxing and randomizing over multiple Pattern Database (PDBs), we often encounter the problem that simply reducing the search tree does not necessarily decrease the search time.\
+This is a form of the \textit{utility} problem. In the 1980's there was work on learning search control rules for planners that has many parallels with the current work on multiple PDBs. The goal of both is to add new sources of knowledge to speedup the search for solutions. In the 1980's, learning methods automated the acquisition of search control rules. However, \citep{Minton1990363} found that sometimes adding more search control rules would reduce the search space but could also increase the search time. Minton's approach to this problem was to estimate the utility of a new search control rule and only add those rules whose benefits outweighed their costs.\\
+
+Recent work on combining multiple PDBs has encountered the same problem. Adding another PDB to max over, reduces the size of the search tree but increases the per node evaluation costs. Sometimes the benefits of having a smaller search tree are outweighed by the additional per node costs.Before adding another PDB to the combination, its utility must be estimated. Estimating a PDB's utility involves not only reasoning about its impact on search tree size bur also per node evaluation costs. These two impacts must be evaluated in light of how they both affect search time.\\
+
+The system most similar to our proposal of selecting heuristics is RIDA* \citep{BarleySantiagoOver}. RIDA* also selects a subset from a pool of heuristics to guide the A* search. In RIDA* this is done by starting with an empty subset and trying all combinations of size one before trying the combination of size two and so on. RIDA* stops after evaluating a fixed number of subsets. While RIDA* is able to evaluate a set of heuristics with tens of elements, we pretend that our approach could evaluate a set of heuristics with thousands of elements.\\
 
 \section{Problem}
 Instances of domain-independent problems that requires a lot of time to find the solution are processes that require a lot of resources. The machines that execute this kind of process allocates a considerable amount of memory for this purpose. However, the main culprit for this behavior is the approach used to solve the problem. That is the reason why is needed an new approach based on selection that help us to solve the problems quickly and without spend a lot of time.\\
@@ -158,23 +196,22 @@ What we expect to achieve as a specific objectives are:
 \item For optimally solving domain-independent problems. We are going to use the Fast Downward planner as our base implementation.
 \end{enumerate}
 
-\section{Literature}
-Domain-Indepentent automatic planning require the basic knowledge of State-space search algorithms, such as A* \citep{hart1968formal}, which fundamental in many AI applications. A* uses the $f(s) = g(s) + h(s)$ cost function to guide its search. Here, $g(s)$ is the cost of the path from the start state to state \textit{s}, and $h(s)$ is the estimated cost-to-go from \textit{s} to a goal; $h(.)$ is known as the heuristic function.\\
+\section{Metodology}
+Heuristic are meant to be estimated of the remaining distance from a node to the goal. This information can be exploited by search algorithm to assess whether one state is more promising than the rest. Heuristics help to reduce the number of alternatives from an exponential number to a polynomial number.\\
 
- A heuristic \textit{h} is \textit{admissible} if $h(s) \leq dist(s, goal)$ for every state \textbf{s} and goal state \textit{goal}, where \textit{dist(n, m)} is the cost of at least-cost path from \textit{n} to \textit{m}. If $h(n)$ is admissible, \textit{i,e.} always returns a lower bound estimate of the optimal cost, these algorithms are guaranteed to find an optimal path from the start state to a goal state if one exists.\\
+The term search in planning is related to the process of finding solutions. Every search algorithm searches for the completation of a given task. The process of problem solving can often be modeled as a search in a state space starting from some given initial state with rules describing how transform one state into another. The rules have to be applied over and over again to eventually satisfy some goal condition. In the common case, we aim a the best one of such paths, often in terms of path length or path cost. Search has been an important part of Artificial Intelligence since its very beginning, as the core technique for problem solving. Many important applications of search algorithms have emerged since then, including ones in action and route planning, robotics, software and hadware, theorem proving and computational biology.
 
-In addition to being admissible the heuristic also could be \textit{consistent}. A heuristic \textit{h} is \textit{consistent} if for every pair of states, \textit{m} and \textit{n}, $h(m) - h(n) \leq dist(m, n)$\\
+The problems resolved by the domain-independent planning are the standard benchmark for classical planning systems. And the planner we use to resolve those domains problems is the planning system Fast-Downward \citep{helmert2006fast}. Fast-Downward is a classical planning system based on heuristic search. It can deal with general deterministic planning problems encoded in the propositional fragment of PDDL.2.2, including advanced features like ALD conditions and effects and derived predicated (axioms). We will use Fast-Downward as our planning system to develop our new approach selecting approach because it contains benchmarks domains such as Assembly, Grid, Gripper, Logistics, Movie, Mystery, MPrime, Blocks World, etc.\\
 
-The system most similar to our proposal of selecting heuristics is RIDA* \citep{BarleySantiagoOver}. RIDA* also selects a subset from a pool of heuristics to guide the A* search. In RIDA* this is done by starting with an empty subset and trying all combinations of size one before trying the combination of size two and so on. RIDA* stops after evaluating a fixed number of subsets. While RIDA* is able to evaluate a set of heuristics with tens of elements, we pretend that our approach could evaluate a set of heuristics with thousands of elements.\\
+During the research we want to find an optimal approach using optimization for the selection of an optimal subset of heuristics from a bunch of hundreds or even thousand of heuristics and to do this we will study further the state of the art in Maximazing submodular set functions \citep{nemhauser1978analysis}.\\
 \newpage
 
 \section{Budget}
-
 \begin{table}[h]
 \centering
 \caption{Total Cost of the Master}
 \label{my-label}
-\begin{tabular}{|L{3cm}|l|l|l|}
+\begin{tabular}{|L{3cm}|L{4cm}|l|l|}
 \hline
 Cost Specification                           & Description                                               & Cost (\$R)   & Source of Income \\ \hline
 1.- Personal                                 & Stipend to conduct the research (Scholarship amount X 24) & 36,000 & CAPES            \\ \hline
@@ -191,18 +228,12 @@ Cost Specification                           & Description                      
 \end{table}
 
 \newpage
-
-
-
 \section{Timetable}
-
-%c | L{3cm} | C{3cm} | R{3cm}
-
 \begin{table}[h]
 \centering
 \caption{Schedule from June to March}
 \label{my-label}
-\begin{tabular}{|L{3cm}|l|l|l|l|l|l|l|l|l|l|}
+\begin{tabular}{|L{5cm}|l|l|l|l|l|l|l|l|l|l|}
 \hline
 Activities                                                                                            & \rot{June} & \rot{July} & \rot{August} & \rot{September} & \rot{October} & \rot{November} & \rot{December} & \rot{January} & \rot{February} & \rot{March} \\ \hline
 Present the project to the PPG                                                   & \checkmark    &      &        &           &         &          &          &         &          &       \\ \hline
@@ -217,6 +248,8 @@ Dissertation theses                                                             
 \end{tabular}
 \end{table}
 
+
+\newpage
 %Imports the bibliography file "references.bib"
 \bibliography{references}
 %\bibliographystyle{references}

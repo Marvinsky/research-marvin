@@ -1,0 +1,293 @@
+\begin{thebibliography}{10}
+
+\bibitem{alvares2007}
+{\sc Alvares, L.~O., Bogorny, V., Kuijpers, B., de~Macedo, J. A.~F., Moelans,
+  B., and Vaisman, A.}
+\newblock A model for enriching trajectories with semantic geographical
+  information.
+\newblock In {\em Proceedings of the 15th Annual ACM International Symposium on
+  Advances in Geographic Information Systems\/} (New York, NY, USA, 2007), GIS
+  '07, ACM, pp.~22:1--22:8.
+
+\bibitem{alvares2009}
+{\sc Alvares, L.~O., Oliveira, G., and Bogorny, V.}
+\newblock A framework for trajectory data preprocessing for data mining.
+\newblock {\em Proceedings of the 21st International Conference on Software
+  Engineering {\&} Knowledge Engineering (SEKE'2009). Boston, Massachusetts,
+  USA\/} (2009).
+
+\bibitem{anton2010}
+{\sc Anton, H.}
+\newblock {\em Elementary Linear Algebra}, 10th~ed.
+\newblock John Wiley \& Sons, 2010.
+
+\bibitem{barclay2000}
+{\sc Barclay, T., Gray, J., and Slutz, D.}
+\newblock Microsoft terraserver: A spatial data warehouse.
+\newblock {\em SIGMOD Rec. 29}, 2 (May 2000), 307--318.
+
+\bibitem{berndt94}
+{\sc Berndt, D.~J., and Clifford, J.}
+\newblock Using dynamic time warping to find patterns in time series.
+\newblock In {\em KDD Workshop\/} (1994), U.~M. Fayyad and R.~Uthurusamy, Eds.,
+  AAAI Press, pp.~359--370.
+
+\bibitem{bogorny2006weka}
+{\sc Bogorny, V., Palma, A.~T., Engel, P., and Alvares, L.~O.}
+\newblock Weka-gdpm: Integrating classical data mining toolkit to geographic
+  information systems.
+\newblock In {\em SBBD Workshop on Data Mining Algorithms and Aplications
+  (WAAMD 2006), Florianopolis, Brasil, October\/} (2006), pp.~16--20.
+
+\bibitem{buchin2009}
+{\sc Buchin, K., Buchin, M., and Wang, Y.}
+\newblock Exact algorithm for partial curve matching via the fr\'{e}chet
+  distance.
+\newblock In {\em Proceedings of 20th ACM-SIAM Symposium on Discrete
+  Algorithms\/} (2009).
+
+\bibitem{cao2006}
+{\sc Cao, H., Wolfson, O., and Trajcevski, G.}
+\newblock Spatio-temporal data reduction with deterministic error bounds.
+\newblock {\em The VLDB Journal 15}, 3 (Sept. 2006), 211--228.
+
+\bibitem{chapman2005quality}
+{\sc Chapman, A., and Facility, G. B.~I.}
+\newblock {\em Principles of Data Quality}.
+\newblock Global Biodiversity Information Facility, 2005.
+
+\bibitem{chapman2005cleaning}
+{\sc Chapman, A.~D.}
+\newblock {\em Principles and Methods of Data Cleaning: Primary Species and
+  Species-occurrence Data}.
+\newblock Global Biodiversity Information Facility, 2005.
+
+\bibitem{chen98}
+{\sc Chen, D.~Z., and Daescu, O.}
+\newblock Space-efficient algorithms for approximating polygonal curves in
+  two-dimensional space.
+\newblock In {\em Proceeding of the 4th International Computing and
+  Combinatorics Conference\/} (1998), pp.~55--64.
+
+\bibitem{chen2011}
+{\sc Chen, Z., Shen, H.~T., and Zhou, X.}
+\newblock Discovering popular routes from trajectories.
+\newblock In {\em Proceedings of the 2011 IEEE 27th International Conference on
+  Data Engineering\/} (Washington, DC, USA, 2011), ICDE '11, IEEE Computer
+  Society, pp.~900--911.
+
+\bibitem{deAquino2013}
+{\sc de~Aquino, A.~R., Alvares, L.~O., Renso, C., and Bogorny, V.}
+\newblock Towards semantic trajectory outlier detection.
+\newblock In {\em GeoInfo\/} (2013), MCT/INPE, pp.~115--126.
+
+\bibitem{douglas73}
+{\sc Douglas, D.~H., and Peucker, T.~K.}
+\newblock Algorithms for the reduction of the number of points required to
+  represent a digitized line or its caricature.
+\newblock {\em Cartographica: The International Journal for Geographic
+  Information and Geovisualization 10}, 2 (1973), 112--122.
+
+\bibitem{ester96}
+{\sc Ester, M., peter Kriegel, H., S, J., and Xu, X.}
+\newblock A density-based algorithm for discovering clusters in large spatial
+  databases with noise.
+\newblock AAAI Press, pp.~226--231.
+
+\bibitem{fazzinga2014}
+{\sc Fazzinga, B., Flesca, S., Furfaro, F., and Parisi, F.}
+\newblock Cleaning trajectory data of rfid-monitored objects through
+  conditioning under integrity constraints.
+\newblock In {\em EDBT\/} (2014), pp.~379--390.
+
+\bibitem{fontes2013}
+{\sc Fontes, V.~C., de~Alencar, L.~A., Renso, C., and Bogorny, V.}
+\newblock Discovering trajectory outliers between regions of interest.
+\newblock In {\em GeoInfo\/} (2013), MCT/INPE, pp.~49--60.
+
+\bibitem{oxford2000}
+{\sc Groot, R., and McLaughlin, J.}
+\newblock {\em Geospatial data infrastructure: Concepts, cases and good
+  practice.}, vol.~93.
+\newblock Oxford: Oxford University Press., 2000.
+
+\bibitem{gudmundsson2012}
+{\sc Gudmundsson, J., Thom, A., and Vahrenhold, J.}
+\newblock Of motifs and goals: Mining trajectory data.
+\newblock In {\em Proceedings of the 20th International Conference on Advances
+  in Geographic Information Systems\/} (New York, NY, USA, 2012), SIGSPATIAL
+  '12, ACM, pp.~129--138.
+
+\bibitem{gupta2014}
+{\sc Gupta, M., Gao, J., Aggarwal, C.~C., and Han, J.}
+\newblock Outlier detection for temporal data: A survey, 2014.
+
+\bibitem{han2011}
+{\sc Han, J., Kamber, M., and Pei, J.}
+\newblock {\em Data Mining: Concepts and Techniques}, 3rd~ed.
+\newblock Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 2011.
+
+\bibitem{idrissov2012}
+{\sc Idrissov, A., and Nascimento, M.~A.}
+\newblock A trajectory cleaning framework for trajectory clustering.
+\newblock In {\em Mobile Data Challenge (by Nokia) Workshop\/} (2012).
+
+\bibitem{isaaks90}
+{\sc Isaaks, E.~H., and Srivastava, M.~R.}
+\newblock {\em An Introduction to Applied Geostatistics}.
+\newblock Oxford University Press, USA, Jan. 1990.
+
+\bibitem{lange2008}
+{\sc Lange, R., D\"{u}rr, F., and Rothermel, K.}
+\newblock Online trajectory data reduction using connection-preserving dead
+  reckoning.
+\newblock In {\em Proceedings of the 5th Annual International Conference on
+  Mobile and Ubiquitous Systems: Computing, Networking, and Services\/} (ICST,
+  Brussels, Belgium, Belgium, 2008), Mobiquitous '08, ICST (Institute for
+  Computer Sciences, Social-Informatics and Telecommunications Engineering),
+  pp.~52:1--52:10.
+
+\bibitem{nokia2012}
+{\sc Laurila, J.~K., Blom, J., Dousse, O., Gatica-perez, D., Bornet, O.,
+  Eberle, J., Aad, I., and Miettinen, M.}
+\newblock The mobile data challenge: Big data for mobile computing research.
+\newblock In {\em Pervasive Computing\/} (Newcastle, UK, 2012).
+
+\bibitem{lay2003}
+{\sc Lay, D.~C.}
+\newblock {\em Linear Algebra and Its Applications}, 3rd~ed.
+\newblock Pearson Education, Addison-Wesley Publishing Company, 2003.
+
+\bibitem{lee2008}
+{\sc Lee, J.-G., Han, J., and Li, X.}
+\newblock Trajectory outlier detection: A partition-and-detect framework.
+\newblock In {\em Proceedings of the 2008 IEEE 24th International Conference on
+  Data Engineering\/} (Washington, DC, USA, 2008), ICDE '08, IEEE Computer
+  Society, pp.~140--149.
+
+\bibitem{liu2012}
+{\sc Liu, H., and Schneider, M.}
+\newblock Similarity measurement of moving object trajectories.
+\newblock In {\em Proceedings of the 3rd ACM SIGSPATIAL International Workshop
+  on GeoStreaming\/} (New York, NY, USA, 2012), IWGS '12, ACM, pp.~19--22.
+
+\bibitem{geolifeuserguide}
+{\sc MicrosoftCorporation}.
+\newblock Geolife - user guide.
+\newblock Version 1.3 (2012/08/01).
+
+\bibitem{pumpichet2012}
+{\sc Pumpichet, S., Pissinou, N., Jin, X., and Pan, D.}
+\newblock Belief-based cleaning in trajectory sensor streams.
+\newblock In {\em ICC\/} (2012), IEEE, pp.~208--212.
+
+\bibitem{rajabifard1999}
+{\sc Rajabifard, A., and Williamson, I.~P.}
+\newblock Spatial data infrastructures: Concept, sdi hierarchy and future
+  directions.
+\newblock In {\em Suitability of Internet Technologies for Access, Transmission
+  and Updating Digital Cadastral Databases on the Web. Proceedings of AURISA
+  97\/} (1999).
+
+\bibitem{rajaraman2012}
+{\sc Rajaraman, A., and Ullman, J.~D.}
+\newblock {\em Mining of massive datasets}.
+\newblock Cambridge University Press., Cambridge, UK, 2012.
+
+\bibitem{sampaio2010}
+{\sc Sampaio, G.~B., Nalon, F.~R., and Filho, J.~L.}
+\newblock Geoprofile - uml profile for conceptual modeling of geographic
+  databases.
+\newblock In {\em ICEIS International Conference On Enterprise Iformation
+  Systems (3)\/} (2010), J.~Filipe and J.~Cordeiro, Eds., SciTePress,
+  pp.~409--412.
+
+\bibitem{sankararaman2013}
+{\sc Sankararaman, S., Agarwal, P.~K., Molhave, T., and Boedihardjo, A.~P.}
+\newblock Computing similarity between a pair of trajectories.
+\newblock {\em CoRR 1303.1585\/} (2013).
+
+\bibitem{siirtola2008}
+{\sc Siirtola, P., Laurinen, P., and R\"{o}ning, J.}
+\newblock A weighted distance measure for calculating the similarity of
+  sparsely distributed trajectories.
+\newblock In {\em ICMLA\/} (2008), M.~A. Wani, X.~wen Chen, D.~Casasent, L.~A.
+  Kurgan, T.~Hu, and K.~Hafeez, Eds., IEEE Computer Society, pp.~802--807.
+
+\bibitem{spaccapietra2008}
+{\sc Spaccapietra, S., Parent, C., Damiani, M.~L., de~Macedo, J.~A., Porto, F.,
+  and Vangenot, C.}
+\newblock A conceptual view on trajectories.
+\newblock {\em Data Knowledge Engineering 65}, 1 (Apr. 2008), 126--146.
+
+\bibitem{tiakas2009}
+{\sc Tiakas, E., Papadopoulos, A.~N., Nanopoulos, A., Manolopoulos, Y.,
+  Stojanovic, D., and Djordjevic-Kajan, S.}
+\newblock Searching for similar trajectories in spatial networks.
+\newblock {\em The Journal of Systems and Software 82}, 5 (2009), 772--788.
+
+\bibitem{vanKreveld2007}
+{\sc van Kreveld, M., and Luo, J.}
+\newblock The definition and computation of trajectory and subtrajectory
+  similarity.
+\newblock In {\em Proceedings of the 15th Annual ACM International Symposium on
+  Advances in Geographic Information Systems\/} (2007), GIS '07,
+  pp.~44:1--44:4.
+
+\bibitem{vlachos2002ICDE}
+{\sc Vlachos, M., Gunopulos, D., and Kollios, G.}
+\newblock Discovering similar multidimensional trajectories.
+\newblock In {\em ICDE\/} (2002), R.~Agrawal and K.~R. Dittrich, Eds., IEEE
+  Computer Society, pp.~673--684.
+
+\bibitem{vlachos2002DEXA}
+{\sc Vlachos, M., Gunopulos, D., and Kollios, G.}
+\newblock Robust similarity measures for mobile object trajectories.
+\newblock In {\em DEXA Workshops\/} (2002), IEEE Computer Society,
+  pp.~721--728.
+
+\bibitem{wackerly2007}
+{\sc Wackerly, D., Mendenhall, W., and Scheaffer, R.}
+\newblock {\em Mathematical Statistics with Applications}, 7th~ed.
+\newblock Cengage Learning, 2007.
+
+\bibitem{wong2005}
+{\sc Wong, D. W.-S., and Lee, J.}
+\newblock {\em Statistical Analysis of Geographic Information with ArcView GIS
+  and ArcGIS}.
+\newblock John Wiley \& Sons Hoboken, NJ, USA, 2005.
+
+\bibitem{yuan2011}
+{\sc Yuan, J., Zheng, Y., Xie, X., and Sun, G.}
+\newblock Driving with knowledge from the physical world.
+\newblock In {\em Proceedings of the 17th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining\/} (New York, NY, USA, 2011), KDD '11,
+  ACM, pp.~316--324.
+
+\bibitem{yuan2010}
+{\sc Yuan, J., Zheng, Y., Zhang, C., Xie, W., Xie, X., Sun, G., and Huang, Y.}
+\newblock T-drive: Driving directions based on taxi trajectories.
+\newblock In {\em Proceedings of the 18th SIGSPATIAL International Conference
+  on Advances in Geographic Information Systems\/} (New York, NY, USA, 2010),
+  GIS '10, ACM, pp.~99--108.
+
+\bibitem{zheng2008}
+{\sc Zheng, Y., Li, Q., Chen, Y., Xie, X., and Ma, W.-Y.}
+\newblock Understanding mobility based on gps data.
+\newblock In {\em Proceedings of the 10th international conference on
+  Ubiquitous computing\/} (2008), ACM, pp.~312--321.
+
+\bibitem{zheng2010}
+{\sc Zheng, Y., Xie, X., and Ma, W.-Y.}
+\newblock Geolife: A collaborative social networking service among user,
+  location and trajectory.
+\newblock {\em IEEE Data Engineering Bulletin}, 2, 32--39.
+
+\bibitem{zheng2009}
+{\sc Zheng, Y., Zhang, L., Xie, X., and Ma, W.-Y.}
+\newblock Mining interesting locations and travel sequences from gps
+  trajectories.
+\newblock In {\em Proceedings of the 18th international conference on World
+  wide web\/} (2009), ACM, pp.~791--800.
+
+\end{thebibliography}
