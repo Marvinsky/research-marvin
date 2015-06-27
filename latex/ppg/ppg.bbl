@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -25,26 +25,6 @@ Raz Nissim, J{\"o}rg Hoffmann, and Malte Helmert.
 \newblock In \emph{22nd International Joint Conference on Artificial
   Intelligence (IJCAI'11)}, 2011.
 
-\bibitem[Hart and Raphael(1968)]{hart1968formal}
-N.~J.; Hart, P. E.;~Nilsson and B.~Raphael.
-\newblock A formal basis for the heuristic determination of minimum cost paths.
-\newblock \emph{IEEE Transactions on Systems Science and Cybernetics SSC},
-  4\penalty0 (2):\penalty0 100--107, 1968.
-
-\bibitem[Domshlak et~al.(2011)Domshlak, Helmert, Karpas, and
-  Markovitch]{domshlak2011selmax}
-Carmel Domshlak, Malte Helmert, Erez Karpas, and Shaul Markovitch.
-\newblock The selmax planner: Online learning for speeding up optimal planning.
-\newblock \emph{Seventh international planning competition (IPC 2011),
-  deterministic part}, pages 108--112, 2011.
-
-\bibitem[Minton(1990)]{Minton1990363}
-Steven Minton.
-\newblock Quantitative results concerning the utility of explanation-based
-  learning.
-\newblock \emph{Artificial Intelligence}, 42\penalty0 (2–3):\penalty0 363 --
-  391, 1990.
-
 \bibitem[Barley et~al.(2014)Barley, Franco, and Riddle]{BarleySantiagoOver}
 Michael~W. Barley, Santiago Franco, and Patricia~J. Riddle.
 \newblock Overcoming the utility problem in heuristic generation: Why time
@@ -53,10 +33,85 @@ Michael~W. Barley, Santiago Franco, and Patricia~J. Riddle.
   Automated Planning and Scheduling, {ICAPS} 2014, Portsmouth, New Hampshire,
   USA, June 21-26, 2014}, 2014.
 
+\bibitem[Bylander(1994)]{bylander1994computational}
+Tom Bylander.
+\newblock The computational complexity of propositional strips planning.
+\newblock \emph{Artificial Intelligence}, 69\penalty0 (1):\penalty0 165--204,
+  1994.
+
 \bibitem[Helmert(2006)]{helmert2006fast}
 Malte Helmert.
 \newblock The fast downward planning system.
 \newblock \emph{J. Artif. Intell. Res.(JAIR)}, 26:\penalty0 191--246, 2006.
+
+\bibitem[Hart and Raphael(1968)]{hart1968formal}
+N.~J.; Hart, P. E.;~Nilsson and B.~Raphael.
+\newblock A formal basis for the heuristic determination of minimum cost paths.
+\newblock \emph{IEEE Transactions on Systems Science and Cybernetics SSC},
+  4\penalty0 (2):\penalty0 100--107, 1968.
+
+\bibitem[Culberson and Schaeffer(1996)]{culberson1996searching}
+Joseph~C Culberson and Jonathan Schaeffer.
+\newblock Searching with pattern databases.
+\newblock In \emph{Advances in Artifical Intelligence}, pages 402--416.
+  Springer Berlin Heidelberg, 1996.
+
+\bibitem[Bonet and Geffner(2001)]{bonet2001planning}
+Blai Bonet and H{\'e}ctor Geffner.
+\newblock Planning as heuristic search.
+\newblock \emph{Artificial Intelligence}, 129\penalty0 (1):\penalty0 5--33,
+  2001.
+
+\bibitem[Helmert and Domshlak(2009)]{helmert2009landmarks}
+Malte Helmert and Carmel Domshlak.
+\newblock Landmarks, critical paths and abstractions: what's the difference
+  anyway?
+\newblock In \emph{ICAPS}, pages 162--169, 2009.
+
+\bibitem[Holte and Hern{\'a}dv{\"o}lgyi(1999)]{holte1999space}
+Robert~C Holte and Istv{\'a}n~T Hern{\'a}dv{\"o}lgyi.
+\newblock A space-time tradeoff for memory-based heuristics.
+\newblock In \emph{AAAI/IAAI}, pages 704--709, 1999.
+
+\bibitem[Culberson and Schaeffer(1998)]{culberson1998pattern}
+Joseph~C Culberson and Jonathan Schaeffer.
+\newblock Pattern databases.
+\newblock \emph{Computational Intelligence}, 14\penalty0 (3):\penalty0
+  318--334, 1998.
+
+\bibitem[Holte et~al.(2004)Holte, Newton, Felner, Meshulam, and
+  Furcy]{holte2004multiple}
+Robert~C Holte, Jack Newton, Ariel Felner, Ram Meshulam, and David Furcy.
+\newblock Multiple pattern databases.
+\newblock In \emph{ICAPS}, pages 122--131, 2004.
+
+\bibitem[Zahavi et~al.(2007)Zahavi, Felner, Schaeffer, and
+  Sturtevant]{zahavi2007inconsistent}
+Uzi Zahavi, Ariel Felner, Jonathan Schaeffer, and Nathan~R Sturtevant.
+\newblock Inconsistent heuristics.
+\newblock \emph{Proceedings of the national conference on artificial
+  intelligence}, 22\penalty0 (2):\penalty0 1211, 2007.
+
+\bibitem[Domshlak et~al.(2011)Domshlak, Helmert, Karpas, and
+  Markovitch]{domshlak2011selmax}
+Carmel Domshlak, Malte Helmert, Erez Karpas, and Shaul Markovitch.
+\newblock The selmax planner: Online learning for speeding up optimal planning.
+\newblock \emph{Seventh international planning competition (IPC 2011),
+  deterministic part}, pages 108--112, 2011.
+
+\bibitem[Tolpin et~al.(2013)Tolpin, Beja, Shimony, Felner, and
+  Karpas]{tolpin2013towards}
+David Tolpin, Tal Beja, Solomon~Eyal Shimony, Ariel Felner, and Erez Karpas.
+\newblock Towards rational deployment of multiple heuristics in a*.
+\newblock In \emph{Proceedings of the Twenty-Third international joint
+  conference on Artificial Intelligence}, pages 674--680. AAAI Press, 2013.
+
+\bibitem[Minton(1990)]{Minton1990363}
+Steven Minton.
+\newblock Quantitative results concerning the utility of explanation-based
+  learning.
+\newblock \emph{Artificial Intelligence}, 42\penalty0 (2–3):\penalty0 363 --
+  391, 1990.
 
 \bibitem[Nemhauser et~al.(1978)Nemhauser, Wolsey, and
   Fisher]{nemhauser1978analysis}
