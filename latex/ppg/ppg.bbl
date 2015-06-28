@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -32,12 +32,6 @@ Michael~W. Barley, Santiago Franco, and Patricia~J. Riddle.
 \newblock \emph{Proceedings of the Twenty-Fourth International Conference on
   Automated Planning and Scheduling, {ICAPS} 2014, Portsmouth, New Hampshire,
   USA, June 21-26, 2014}, 2014.
-
-\bibitem[Bylander(1994)]{bylander1994computational}
-Tom Bylander.
-\newblock The computational complexity of propositional strips planning.
-\newblock \emph{Artificial Intelligence}, 69\penalty0 (1):\penalty0 165--204,
-  1994.
 
 \bibitem[Helmert(2006)]{helmert2006fast}
 Malte Helmert.
