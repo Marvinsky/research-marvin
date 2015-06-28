@@ -1,5 +1,4 @@
-elevators-opt08-strips
-no_unique_domain
+blocks
+domain.pddl
 1
-p01-domain.pddl
-p01.pddl
+probBLOCKS-9-0.pddl

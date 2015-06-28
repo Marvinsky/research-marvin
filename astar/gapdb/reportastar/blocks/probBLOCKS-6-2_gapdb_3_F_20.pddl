@@ -1,11 +1,11 @@
-		/home/marvin/marvin/astar/gapdb/reportastar/blocks/probBLOCKS-6-2_gapdb_3_F_20.pddl
+		/home/levi/marvin/marvin/astar/gapdb/reportastar/blocks/probBLOCKS-6-2_gapdb_3_F_20.pddl
 	totalniveles: 8
 	f-value		#nodesByLevel		time		#nodesExpanded
-	13		1			0.90s			1
-	14		1			0.90s			2
-	15		3			0.90s			5
-	16		2			0.90s			7
-	17		6			0.90s			13
-	18		20			0.90s			33
-	19		32			0.90s			65
-	20		88			0.90s			153
+	11		2			1.42s			2
+	13		1			1.42s			3
+	15		5			1.42s			8
+	16		9			1.42s			17
+	17		16			1.42s			33
+	18		35			1.42s			68
+	19		41			1.42s			109
+	20		148			1.42s			257

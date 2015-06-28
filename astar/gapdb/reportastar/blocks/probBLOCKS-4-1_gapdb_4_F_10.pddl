@@ -1,4 +1,4 @@
-		/home/marvin/marvin/astar/gapdb/reportastar/blocks/probBLOCKS-4-1_gapdb_4_F_10.pddl
+		/home/levi/marvin/marvin/astar/gapdb/reportastar/blocks/probBLOCKS-4-1_gapdb_4_F_10.pddl
 	totalniveles: 2
 	f-value		#nodesByLevel		time		#nodesExpanded
 	8		4			0.00s			4

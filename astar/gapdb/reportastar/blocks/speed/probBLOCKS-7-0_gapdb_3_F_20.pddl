@@ -1,14 +1,4 @@
-		/home/marvin/marvin/astar/gapdb/reportastar/blocks/speed/probBLOCKS-7-0_gapdb_3_F_20.pddl
-	initial_value: 11
+		/home/levi/marvin/marvin/astar/gapdb/reportastar/blocks/speed/probBLOCKS-7-0_gapdb_3_F_20.pddl
+	initial_value: 1
 	h_min	gen	exp		V		SEv		VeSP		NPBP
-	10	5	3		0.2		50		0.091		5.1e-313
-	9	48	18		0.042		2.2e+02		0.18		5.1e-313
-	8	91	31		0.033		2.4e+02		0.27		5.1e-313
-	7	367	110		0.011		6.4e+02		0.36		5.1e-313
-	6	784	227		0.0064		9.4e+02		0.45		5.1e-313
-	5	1661	447		0.0036		1.4e+03		0.55		5.1e-313
-	4	3653	970		0.0019		2.1e+03		0.64		5.1e-313
-	3	7792	1975		0.001		2.9e+03		0.73		5.1e-313
-	2	16137	4233		0.00056		3.6e+03		0.82		5.1e-313
-	1	75510	20845		0.00013		7.6e+03		0.91		5.1e-313
-	0	103469	30816		0.00011		0		1		5.1e-313
+	0	120374	35986		8.3e-06		0		1		0

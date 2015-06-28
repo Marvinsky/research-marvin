@@ -1,27 +1,27 @@
 	Experiment 2: Regrets fixed and random information using three heuristics.
 
-                                  gapdb
+                                                           gapdb
 
-Domain                       fixed    random         n
+Domain                                           fixed              random                   n
 
-barman-opt11-strips            ---       ---       ---
-blocks                     549.133   573.044        10
-elevators-opt08-strips       0.000 15420.000         1
-elevators-opt11-strips         ---       ---       ---
-floortile-opt11-strips         ---       ---       ---
-nomystery-opt11-strips         ---       ---       ---
-openstacks-opt08-adl           ---       ---       ---
-openstacks-opt08-strips        ---       ---       ---
-openstacks-opt11-strips        ---       ---       ---
-parcprinter-opt11-strips       ---       ---       ---
-parking-opt11-strips           ---       ---       ---
-pegsol-opt11-strips            ---       ---       ---
-scanalyzer-opt11-strips      0.190     0.381         7
-sokoban-opt08-strips           ---       ---       ---
-sokoban-opt11-strips           ---       ---       ---
-tidybot-opt11-strips           ---       ---       ---
-transport-opt08-strips         ---       ---       ---
-transport-opt11-strips         ---       ---       ---
-visitall-opt11-strips          ---       ---       ---
-woodworking-opt08-strips       ---       ---       ---
-woodworking-opt11-strips       ---       ---       ---
+barman-opt11-strips                      ---                 ---                 ---
+blocks                           1539626.370         1539650.284                  18
+elevators-opt08-strips                 0.000               0.000                   1
+elevators-opt11-strips                   ---                 ---                 ---
+floortile-opt11-strips                   ---                 ---                 ---
+nomystery-opt11-strips                   ---                 ---                 ---
+openstacks-opt08-adl                     ---                 ---                 ---
+openstacks-opt08-strips                  ---                 ---                 ---
+openstacks-opt11-strips                  ---                 ---                 ---
+parcprinter-opt11-strips                 ---                 ---                 ---
+parking-opt11-strips                     ---                 ---                 ---
+pegsol-opt11-strips                      ---                 ---                 ---
+scanalyzer-opt11-strips                0.190               0.381                   7
+sokoban-opt08-strips                     ---                 ---                 ---
+sokoban-opt11-strips                     ---                 ---                 ---
+tidybot-opt11-strips                     ---                 ---                 ---
+transport-opt08-strips                   ---                 ---                 ---
+transport-opt11-strips                   ---                 ---                 ---
+visitall-opt11-strips                    ---                 ---                 ---
+woodworking-opt08-strips                 ---                 ---                 ---
+woodworking-opt11-strips                 ---                 ---                 ---

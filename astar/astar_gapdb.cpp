@@ -384,21 +384,31 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			string s = iter->first;
 			vector<string> info = iter->second;
 			//cout<<"heuristic = "<<s<<"\n";
+			bool is_blind_heuristic = false;
 			for (size_t i = 0; i < info.size(); i++) {
-				string parameter = info.at(i);
+				string parameter = info.at(i);	
 				//cout<<"\t"<<parameter<<"\n";
 				if (i == 1) {
 					gapdb_string += parameter;
 				} else if (i == 2) {
 					gapdb_string += ",size="+parameter;
+					if (parameter == "") {
+						is_blind_heuristic = true;
+					}
 				} else if (i == 3) {
 					gapdb_string += ",disjoint="+parameter;
 				}
 			}
 			gapdb_string+=")";
 			//gapdb_string+=",eps=120,colls=5)";
-			cout<<"\tgapdb_string = "<<gapdb_string<<"\n\n";
-			v_gapdb_string.push_back(gapdb_string);
+			//cout<<"\tgapdb_string = "<<gapdb_string<<"\n\n";
+
+			if (is_blind_heuristic) {
+				string heur_blind = "blind()";
+				v_gapdb_string.push_back(heur_blind);
+			} else {
+				v_gapdb_string.push_back(gapdb_string);
+			}
 		}
 		//end astar_gpdb call the bc from ss
 
@@ -430,7 +440,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			//End creation of each sh file for the gapdb heuristic
 
 			string parameter = v_gapdb_string.at(i);
-			//cout<<"parameter_"<<i<<" = "<<parameter<<"\n";
+			cout<<"parameter_"<<i<<" = "<<parameter<<"\n";
 			string new_problem_name = problema.c_str();
 			string t = new_problem_name;
 			size_t found = t.find(".");

@@ -306,19 +306,19 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		}	
 	}
 
-	cout<<right<<setw(39)<<"gapdb";
-	outputFile<<right<<setw(39)<<"gapdb";
+	cout<<right<<setw(64)<<"gapdb";
+	outputFile<<right<<setw(64)<<"gapdb";
 	outputFile<<"\n\n";
 	cout<<"\n\n";
 
-	cout<<left<<setw(24)<<"Domain";
-	outputFile<<left<<setw(24)<<"Domain";
-	cout<<right<<setw(10)<<"fixed";	
-	outputFile<<right<<setw(10)<<"fixed";
-	cout<<right<<setw(10)<<"random";	
-	outputFile<<right<<setw(10)<<"random";
-	cout<<right<<setw(10)<<"n";	
-	outputFile<<right<<setw(10)<<"n";
+	cout<<left<<setw(34)<<"Domain";
+	outputFile<<left<<setw(34)<<"Domain";
+	cout<<right<<setw(20)<<"fixed";	
+	outputFile<<right<<setw(20)<<"fixed";
+	cout<<right<<setw(20)<<"random";	
+	outputFile<<right<<setw(20)<<"random";
+	cout<<right<<setw(20)<<"n";	
+	outputFile<<right<<setw(20)<<"n";
 
 	outputFile<<"\n\n";
 	cout<<"\n\n";
@@ -327,7 +327,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	map<string, vector<double> >::iterator iter;
 	for (iter = map_gapdb.begin(); iter != map_gapdb.end(); iter++) {
 		string key = iter->first;
-		cout<<left<<setw(24)<<key;
+		cout<<left<<setw(34)<<key;
 		outputFile<<left<<setw(24)<<key;
 		vector<double> v = iter->second;
 		double n = v.at(2);
@@ -335,19 +335,19 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			double d = v.at(i);
 			if (i != 2) {
 				if (n > 0) {
-					outputFile<<right<<setw(10)<<fixed<<setprecision(3)<<d;
-					cout<<right<<setw(10)<<fixed<<setprecision(3)<<d;
+					outputFile<<right<<setw(20)<<fixed<<setprecision(3)<<d;
+					cout<<right<<setw(20)<<fixed<<setprecision(3)<<d;
 				} else {
-					outputFile<<right<<setw(10)<<fixed<<setprecision(3)<<"---";
-					cout<<right<<setw(10)<<fixed<<setprecision(3)<<"---";
+					outputFile<<right<<setw(20)<<fixed<<setprecision(3)<<"---";
+					cout<<right<<setw(20)<<fixed<<setprecision(3)<<"---";
 				}
 			} else {
 				if (d > 0) {
-					outputFile<<right<<setw(10)<<fixed<<setprecision(3)<<(int)d;
-					cout<<right<<setw(10)<<fixed<<setprecision(3)<<(int)d;
+					outputFile<<right<<setw(20)<<fixed<<setprecision(3)<<(int)d;
+					cout<<right<<setw(20)<<fixed<<setprecision(3)<<(int)d;
 				} else {
-					outputFile<<right<<setw(10)<<fixed<<setprecision(3)<<"---";
-					cout<<right<<setw(10)<<fixed<<setprecision(3)<<"---";
+					outputFile<<right<<setw(20)<<fixed<<setprecision(3)<<"---";
+					cout<<right<<setw(20)<<fixed<<setprecision(3)<<"---";
 				}
 			}
 		}
