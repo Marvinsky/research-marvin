@@ -1,0 +1,43 @@
+	Report:		ida*-bfs-vs-ss-bfs - using lmcut heuristic - 100 probes.
+
+woodworking-opt08-strips
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+205		1			1
+215		3			3
+225		4.69736e+06			3.13311e+06
+
+p22.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+145		1			1
+165		10			10.69
+175		14			15.23
+180		31			30.22
+185		245625			289744
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+160		3			3
+165		7			7
+170		10606			11101.2
+
+p23.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+175		1			1
+185		3			3
+190		5			5
+195		3.73442e+07			3.30418e+07
+
+p21.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+95		199			206.8
+
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+120		2			2
+130		575			547.21
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+185		39010			35342.4
