@@ -1,0 +1,96 @@
+	Report:		ida*-bfs-vs-ss-bfs - using lmcut heuristic - 1 probe.
+
+nomystery-opt11-strips
+
+p14.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		2			2
+17		31			35
+18		799			3534
+19		7897			136173
+
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+20		142			60
+21		681			203
+22		9331			343
+23		62726			835926
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+11		2			2
+12		4			4
+13		74			41
+14		458			363
+
+p13.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+13		5			5
+14		46			63
+15		1312			225
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+20		142			60
+21		681			73
+22		9331			1016
+23		63498			1184
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+9		9			7
+10		46			25
+11		326			478
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		2			2
+17		31			35
+18		979			139
+19		17300			5377
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+22		1			1
+23		18			3
+24		54			5
+25		4425			15
+26		81515			503
+
+p17.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		14			17
+25		112			38
+26		915			259
+27		7563			1297
+28		87516			10553
+29		700299			21794
+30		7.26466e+06			470893
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+13		5			5
+14		46			93
+15		1406			577
+
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+22		1			1
+23		18			33
+24		54			113
+25		4425			5449
+26		81515			192201
+
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+9		7			7
+10		10			7
+11		86			100
+12		230			109
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+11		2			2
+12		4			4
+13		74			98
+14		834			54
