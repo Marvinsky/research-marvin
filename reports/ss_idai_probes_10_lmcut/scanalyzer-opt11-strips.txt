@@ -1,0 +1,44 @@
+	Report:		ida*-bfs-vs-ss-bfs - using lmcut heuristic - 10 probes.
+
+scanalyzer-opt11-strips
+
+p14.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+26		80			56.6
+27		1341			1412.6
+28		10903			8616.6
+29		77634			68593.4
+30		587832			571087
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+12		2			2
+13		11			11
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		175569			139617
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+19		3			3
+20		20			20
+21		230			249.5
+22		1997			2265.4
+23		22910			19379.4
+24		251271			221505
+25		3.11983e+06			2.79005e+06
+26		3.86201e+07			4.34131e+07
+
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		17			16.6
+25		861			740.2
+26		41773			30559.4
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+19		45			43.6
+20		1120			1155.1
+21		20468			22533.7
+22		336211			362257
