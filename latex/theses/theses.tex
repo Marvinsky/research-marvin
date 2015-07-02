@@ -1,0 +1,270 @@
+
+%\documentclass[11pt,a4paper,oneside]{report}
+\documentclass[a4paper,12pt]{article}
+\synctex=1
+
+\usepackage{pslatex,palatino,avant,graphicx,color}
+\usepackage[margin=2cm]{geometry}
+
+\usepackage{mathptmx}       % selects Times Roman as basic font
+
+\usepackage{helvet}         % selects Helvetica as sans-serif font
+\usepackage{courier}        % selects Courier as typewriter font
+\usepackage{type1cm}        % activate if the above 3 fonts are
+                            % not available on your system
+
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\usepackage{multicol}        % used for the two-column index
+\usepackage{multirow}
+\usepackage{booktabs}
+
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+
+\usepackage[utf8]{inputenc}
+\inputencoding{utf8}
+
+\usepackage[square,sort]{natbib}
+\bibliographystyle{unsrtnat}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{longtable}
+\usepackage{pdflscape}
+
+%for formula references
+\usepackage{amsmath}
+
+\newtheorem{mydef}{Definition}
+
+\usepackage{changes}
+%triangledown
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage[]{algorithm2e}
+
+%langle
+\usepackage{scalerel}
+\usepackage{graphicx}
+
+
+%width of the column
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+%rotate the name of the column
+\usepackage{adjustbox}
+\usepackage{array}
+
+\newcolumntype{R}[2]{%
+    >{\adjustbox{angle=#1,lap=\width-(#2)}\bgroup}%
+    l%
+    <{\egroup}%
+}
+\newcommand*\rot{\multicolumn{1}{R{90}{1em}}}% no optional argument here, please!
+
+%checkmark
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+
+\makeindex
+
+\begin{document}
+
+
+\begin{titlepage}
+
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=8cm]{./image/ufv1}
+\end{center}
+\end{figure}
+
+CENTRO DE CIENCIAS EXATAS E TECNOLOGICAS - CCE\\
+\vspace*{0.15in}
+DEPARTAMENTO DE INFORMATICA \\
+\vspace*{0.6in}
+\begin{large}
+THESSES:\\
+\end{large}
+\vspace*{0.2in}
+\begin{Large}
+\textbf{ON SELECTING HEURISTIC FUNCTIONS FOR DOMAIN-INDEPENDENT PLANNING.} \\
+\end{Large}
+\vspace*{0.3in}
+\begin{large}
+%A Thesis Project submitted by Marvin Abisrror for the degree of Master to the PPG\\
+\textbf{Marvin Abisrror Zarate} \\
+MSc Student in Computer Science \\
+\end{large}
+\vspace*{0.3in}
+\rule{80mm}{0.1mm}\\
+\vspace*{0.1in}
+\begin{large}
+Levi Henrique Santana de Lelis \\
+(Advisor)
+\
+
+\
+
+\
+
+\
+Santiago Franco \\
+(Co-Advisor)
+\
+
+\
+
+\
+
+\
+
+\
+\end{large}
+VIÇOSA - MINAS GERAIS\\
+JULY - 2015
+\end{center}
+\end{titlepage}
+
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+\begin{enumerate}
+\item clarify the problem or opportunity
+\item analyze the problem or opportunity
+\item develop alternative solutions
+\item evaluate potential outcomes of each alternative
+\item decide
+\item act
+\end{enumerate}
+
+
+
+Many important problems can be represented as a state space problem. In the last few decades, Artificial Intelligence 
+
+
+In the last few decades, Artificial Intelligence has made significant strides in domain-independent planning. Some of the progress has resulted from adopting the heuristic search approach to problem-solving, where use of an appropriate heuristic often means substantial reduction in the time needed to solve hard problems. Initially heuristics were hand-crafted. These heuristics required domain-specific expertise and often much trial-and-error effort.\\
+
+Recently, techniques \citep{haslum2007domain, edelkamp2007automated, nissim2011computing}  have been developed to automatically generate heuristics from domain and problem specifications. The component that generate heuristics have the name of \textit{heuristic generators} \citep{BarleySantiagoOver}.  Many of these \textit{heuristic generators} work by creating abstractions of the original problem spaces. Usually there are a number of different ways to abstract the problem space, and the generators search for a good abstraction to create their heuristic. These searches can be guided by predictions about the impact that different choices will have on the size of the problem's search space \citep{haslum2007domain}.\\
+
+Solving domain-independent planning problems can be very hard. Most of the benchmark problems are NP-Complete \citep{helmert2006fast}.\\
+
+Sometimes we will find instances that takes too much time to find the solution, and the measure of that time could be hours, days or even years. Users of search algorithms usually do not know \textit{a priori} how long it will take to solve a problem instance $-$ some instances could be solved quickly while others could take long time.\\
+
+In domain-independent planning one is required to solve a problem without a priori information about the problem. Moreover, the process of solving the problem is fully automated.\\
+
+Domain-independent planners can potentially be applied in various areas such as manufacturing, space systems, software engineers, robotics, education, and entertainment. On the whole, an strategy which allows us to solve a larger number of problems using domain-independent planning is a very important task in AI.\\
+
+The proposal of this project is to develop an approach for selecting heuristics functions from a large set of heuristics with the objective to optimize the search of the solution applied by the domain-independent planning.
+
+\section{Related Work}
+Search Algorithms, such as A* \citep{hart1968formal}, are fundamental in many AI applications. A* uses the $f(s) = g(s) + h(s)$ cost function to guide its search. Here, $g(s)$ is the cost of the path from the start state to state \textit{s}, and $h(s)$ is the estimated cost-to-go from \textit{s} to a goal; $h(.)$ is known as the heuristic function.\\
+
+ A heuristic \textit{h} is \textit{admissible} if $h(s) \leq dist(s, goal)$ for every state \textbf{s} and goal state \textit{goal}, where \textit{dist(n, m)} is the cost of the least-cost path from \textit{n} to \textit{m}. If $h(n)$ is admissible, \textit{i.e.,} always returns a lower bound estimate of the optimal cost. Search algorithms that use an admissible heuristic are guaranteed to find an optimal path from the start state to a goal state if one exists.\\
+
+In addition to being admissible, the heuristic also could be \textit{consistent}. A heuristic \textit{h} is \textit{consistent} if for every pair of states, \textit{m} and \textit{n}, $h(m) - h(n) \leq dist(m, n)$\\
+
+There are different approaches for creating heuristics: abstractions (e.g., pattern databsses (PDBs) \citep{culberson1996searching}), delete relaxations (e.g., $h\sp{max}$ \citep{bonet2001planning}), and landmarks (e.g., LM-cut \citep{helmert2009landmarks}).\\
+
+Works related to PDBs shows that, on average, for a single PDB the larger the PDB (i.e., the less abstract the pattern), the smaller the search tree \citep{holte1999space}. Another approach mention the possibility of combining patterns for smaller problems with the object of producing heuristics for larger problems \citep{culberson1998pattern}, e.g., 8-puzzle and/or 15-puzzle to create a heuristic to work with 24-puzzle.\\
+
+\citep{holte2004multiple} experimented with heuristic search algorithms guided by heuristic functions which considered the maximum value of a set of heuristics (max), and heuristic functions which considered the value of a heuristic selected randomly from a set of heuristics (random). Holte et.,found that maxing over multiple PDBs, the per node evaluation cost is equal to the sum of the individual PDB evaluation costs. Holte et al., also found that the running time of search algorithms expanding smaller search trees could be larger than the running time of search algorithms expanding larger search trees. \citep{zahavi2007inconsistent} use random combiner and showed that using a large set of PDBs can reduce the search tree size more than using max over a smaller subset of those PDBs. This is because, for large PDB we have less abstract pattern. Consequently, the smaller the search tree.\\
+
+The idea of not using all heuristics to evaluate every node has appeared several times recently. See for instance \textit{selmax} \citet{domshlak2011selmax}, Lazy A* (LA*), and Rational Lazy A* (RLA*) \citep{tolpin2013towards}. These algorithms decide which heuristics from a set should be used to evaluate a given node. They can be explained most easily as choosing between a cheap and less accurate heuristic, h1, and an accurate but expensive heuristic, h2. \textit{Selmax} chooses which to use by estimating whether more time will be saved by using h1 and possibly not expanding it. \textit{Selmax} learns online a classifier that predicts when it should use h2 at a node. \textit{Selmax} may expand more nodes than max but its overall problem solving time is often lower than both max or random.\\
+
+The previous works mentioned above showed that reducing the search tree size does not necessarily reduces the search running time. This is a form of \textit{utility} problem. In the 1980's there was work on learning search control rules for planners that has many parallels with the current work on multiple PDBs. The goal of both is to add new sources of knowledge to speedup the search for solutions. In the 1980's, learning methods automated the acquisition of search control rules. However, \citep{Minton1990363} found that sometimes adding more search control rules would reduce the search space but could also increase the search time. Minton's approach to this problem was to estimate the utility of a new search control rule and only add those rules whose benefits outweighed their costs.\\
+
+Recent work on combining multiple PDBs has encountered the same problem. Adding another PDB to max often reduces the size of the search tree, but it increases the per node evaluation costs. Sometimes the benefits of having a smaller search tree are outweighed by the additional per node costs. Before adding another PDB to the combination, its utility must be estimated. Estimating a PDB's utility involves not only reasoning about its impact on search tree size but also per node evaluation costs. These two impacts must be evaluated in light of how they both affect search time.\\
+
+The system most similar to our proposal of selecting heuristics is RIDA* \citep{BarleySantiagoOver}. RIDA* also selects a subset from a pool of heuristics to guide the A* search. In RIDA* this is done by starting with an empty subset and trying all combinations of size one before trying the combination of size two and so on. RIDA* stops after evaluating a fixed number of subsets. While RIDA* is able to evaluate a set of heuristics with tens of elements, we want that our approach could evaluate a set of heuristics with thousands of elements.\\
+
+\section{Problem}
+This project is concerned with cost-optimal state-space planning using the A* algorithm \citep{hart1968formal}. We asume that a pool, $\zeta$, of hundreds or even thousands of heuristics is available, and that the final heuristic we assume to guide A*, $h_{\substack{max}}$, will be defined as the maximum over a subset $\zeta\sp{\prime}$ of those heuristics ($h_{\substack{max}(s, \zeta\sp{\prime})} = \max\limits_{ h \in \zeta\sp{\prime}}h(s)$). The choice of the subset $\zeta\sp{\prime}$ can greatly affect the efficiency of A*. For a given size \textit{N} and planning task $\triangledown$, a subset containing \textit{N} heuristics from $\zeta$ is optimal if no other subset containing \textit{N} heuristics from $\zeta$ results in A* expanding fewer nodes when solving $\triangledown$.\\
+
+\section{Objective}
+
+The general objective of this project is to develop an approach for selecting a subset of heuristic functions with the goal of reducing the running time of search algorithms employing these functions. The cardinality of the subset of heuristics found is also part of the research.
+
+\subsection{Specific Objectives}
+We expect to achieve the following specific objectives in this project.
+\begin{enumerate}
+\item Develop a method to find a subset of heuristics $\zeta$ from a large pool that optimize in number of nodes expanded the process of search.
+\item We are going to try different strategies to obtain the size \textit{N} aiming at reducing the search running time.
+\item We know that Stratification Sampling (SS) does not make even reasonable predictions for the number of nodes expanded by A*. Nevertheless, even though SS produces poor predictions for the number of nodes expanded by A*, we would like to verify whether these predictions can be helpful in selecting a subset of heuristics to guide the A* search.
+\end{enumerate}
+
+\section{Methodology}
+Heuristic functions estimate the distance-to-go from a given node to the goal. This information can be exploited by search algorithms to assess whether one state is more promising than the rest. Heuristics can help reducing the number of alternatives from exponential to polynomial.\\
+
+The term search in planning is related to the process of finding solutions.       
+Search algorithms seeks a path from start to goal.The process of problem solving can often be modeled as a search in a state space starting from some given initial state with rules describing how transform one state into another. The rules have to be applied over and over again to eventually satisfy some goal conditions. In the common case, we aim at the best of such paths, often in terms of path length or path cost. Many important applications of search algorithms have emerged since then, including ones in action and route planning, robotics, software and hadware, theorem proving and computational biology.\\
+
+The planner we use to solve the domain-independent problems is the planning system Fast-Downward \citep{helmert2006fast}. Fast-Downward is a classical planning system based on heuristic search. It can deal with general deterministic planning problems encoded in the propositional fragment of PDDL 2.2. We will use Fast-Downward as our planning system to develop our new approach and test it in the domain-independent planning benchmarks domains.\\
+
+As part of the metodology, we will study the state of the art in Maximazing submodular set functions \citep{nemhauser1978analysis}.\\
+\newpage
+
+\section{Budget}
+\begin{table}[h]
+\centering
+\caption{Total Cost of the Master}
+\label{my-label}
+\begin{tabular}{|L{3cm}|L{4cm}|l|l|}
+\hline
+Cost Specification                           & Description                                               & Cost (\$R)   & Source of Income \\ \hline
+1.- Personal                                 & Stipend to conduct the research (Scholarship amount X 24) & 36,000 & CAPES            \\ \hline
+\textbf{Subtotal 1}                                   &                                                           & \textbf{36,000} &                  \\ \hline
+2.- Bibliographic Material                   & Books, Technical Journal, etc                             & 400    & Own Resources    \\ \hline
+\textbf{Subtotal 2}                                   &                                                           & \textbf{400}    &                  \\ \hline
+3.- Materials                                & Sheets of papers                                          & 50     & Own Resources    \\ \hline
+                                             & Printing                                                  & 100    & Own Resources    \\ \hline
+                                             & USB                                                       & 20     & Own Resources    \\ \hline
+\textbf{Subtotal 3}                                   &                                                           & \textbf{170}    &                  \\ \hline
+                                             &                                                           &        &                  \\ \hline
+\textbf{Total = Subtotal 1 + Subtotal 2 + Subtotal 3} &                                                           & \textbf{36,570} &                  \\ \hline
+\end{tabular}
+\end{table}
+
+\newpage
+\section{Timetable}
+\begin{table}[h]
+\centering
+\caption{Schedule from June to March}
+\label{my-label}
+\begin{tabular}{|L{5cm}|l|l|l|l|l|l|l|l|l|l|}
+\hline
+Activities                                                                                            & \rot{June} & \rot{July} & \rot{August} & \rot{September} & \rot{October} & \rot{November} & \rot{December} & \rot{January} & \rot{February} & \rot{March} \\ \hline
+Present the project to the PPG                                                   & \checkmark    &      &        &           &         &          &          &         &          &       \\ \hline
+Implementing the \textit{heuristic generator}                                                   & \checkmark    &      &        &           &         &          &          &         &          &       \\ \hline
+Implementing the prediction strategy A* or SS                                                   &      & \checkmark    &        &           &         &          &          &         &          &       \\ \hline
+Test which strategy of prediction fits the best the subset of heuristics                        &      & \checkmark    & \checkmark      &           &         &          &          &         &          &       \\ \hline
+Testing with the domain-independent problems of Fast-Downward                                   &      &      & \checkmark      & \checkmark         &         &          &          &         &          &       \\ \hline
+Analyze the results and prepare a paper to submit                                               &      &      &        & \checkmark         &         &          &          &         &          &       \\ \hline
+Organize and Analyze the results of SS compared with IDA* and Selection of heuristics functions &      &      &        &           & \checkmark       & \checkmark        &          &         &          &       \\ \hline
+Writing the theses                                                                              &      &      &        &           &         & \checkmark        & \checkmark        & \checkmark       & \checkmark        &       \\ \hline
+Dissertation theses                                                                             &      &      &        &           &         &          &          &         &          & \checkmark     \\ \hline
+\end{tabular}
+\end{table}
+
+
+\newpage
+%Imports the bibliography file "references.bib"
+\bibliography{references}
+%\bibliographystyle{references}
+
+\end{document}
