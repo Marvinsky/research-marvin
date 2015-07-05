@@ -66,7 +66,11 @@ I think the text is complex, because it presents new approach, theorems, lemmas 
 There are two evidences that support the writer's idea about selection which I think are Strong, Relevant and Persuasive.
 
 6.- Are the conclusions reached final, limited, qualifed or preliminary?
-
+The writer's conclusions reached are final because he presents what he has achieved, for example:
+. Shows that the optimal subset of size N of a set of heuristics for a given problem task is submodular.
+. The writer's approach which selects heuristics guaranteed to produce a subset such that the number of nodes expanded by A* is no more than approximately 1.36 times optimal.
+. The writer's approach is competitive with other systems designed for using multiple heuristic functions.
+ 
 
 
 
