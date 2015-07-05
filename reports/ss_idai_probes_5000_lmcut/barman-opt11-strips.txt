@@ -1,0 +1,3 @@
+	Report:		ida*-bfs-vs-ss-bfs - using lmcut heuristic - 5000 probes.
+
+barman-opt11-strips

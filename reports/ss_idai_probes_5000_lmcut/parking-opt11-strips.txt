@@ -1,0 +1,12 @@
+	Report:		ida*-bfs-vs-ss-bfs - using lmcut heuristic - 5000 probes.
+
+parking-opt11-strips
+
+pfile03-011.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+9		2			2
+10		28			27.4804
+11		275			272.391
+12		2668			2548.53
+13		26317			25148.9
+14		257522			242117

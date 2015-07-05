@@ -1,0 +1,16 @@
+. The topic, or the main question it proposes to answer.
+R: Finding a subset of heuristic will help to solve problems quickly?
+
+. Why does the author think the question(s) is important?
+R: Because that is the main aim of the research. Which is develop an approach for selecting a subset of heuristic functions with the goal of reducing the running time of search algorithms employing these functions.
+
+.The arguments (answers with reasons) that it makes.
+R: Marvin's idea about selecting subset of heuristics from a large set seems especially relevant for domain-independent planning.
+Marvin also claims that even though Stratified Sampling (SS) does not make even reasonable predictions for the number of nodes expanded by A*. He would like to verify whether these predictions can be helpful in selecting a subset of heuristics to guide the A* search.
+
+.The sructure of the text or the method used to answer the question.
+R:The method used is developed under the assumption that given a large set of heuristics we always can obtain a subset that is results of maximazing subsets of heuristics.
+
+.The evidence used to support answers.
+R: Marvin's evidence are the experiments evaluated in Fast Downward[Helmert, 2006] and compared with other planners (page 3).
+ 
