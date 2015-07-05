@@ -1,3 +1,5 @@
+A description of the text.
+
 . The topic, or the main question it proposes to answer.
 R: Finding a subset of heuristic will help to solve problems quickly?
 
@@ -14,3 +16,61 @@ R:The method used is developed under the assumption that given a large set of he
 .The evidence used to support answers.
 R: Marvin's evidence are the experiments evaluated in Fast Downward[Helmert, 2006] and compared with other planners (page 3).
  
+ We run two sets of experiments. 
+ 
+ In the first set of experiments we verify whether the approximation of number of nodes expanded provided by our method of prediction allow our selection method to make near-optimal subset selections.
+ 
+ In the second set of experiments we compare our selection method using different set of heuristics to current state-of-the.art planners.
+ 
+.The conclusion reached in the text.
+The researchers want to develop an approach of selection of heuristics, in order to do that, they want probe that the problem of finding the optimal subset of size N of a set of heuristics for a given problem task is supermodular with respect to the search tree size. They probe that doing experiments in the planner (Fast-Downward) and present their results.
+   
+. Any further questions raised, but not answered in the text.
+1.- How do the writer solve the problem of finding the optimal subset of heuristics? Do the writer read about maximazing submodular set of functions?
+
+2.- Why do the writer use prediction in the approach? What other approach of predictions do the writer use?
+
+
+3.- What other evidences that support the writer's argument exists?
+
+
+Evaluation / Judgement / Critique.
+
+I think the writer's idea about selection of heuristics from a large set of heuristics to solve problems seems especially relevant for domain-independent planning.
+
+The writer bases the research in the evidences that in the last decade the heuristic search approach has made significant strides to problem solving. Researchers such as Haslum, Bonet and Geffner (2005), Edelkamp (2007), Nissim, Hoffmann, and Helmert (2011) have been develop to automatically generate heuristics from domain and problem specifications. The writer requires at least one of those techniques in order to generate the large set of heuristics. Nevertheless, the writer did not mention which approach or heuristic generatation are going to use to obtain that large set of heuristics.
+
+The writer's evidences about other approaches are Rayner et al., (2013) and Barley et al., (2014). Rayner's approach maximizes the average heuristic value and Barney's RIDA* system is the most similar to what the writer poses. Based those evidences I think the writer approach's contribution is that minimizes the search tree size and that is able to evaluate a set of heuristics with thousands of elements.
+
+The writer's assumption is that from a pool of hundreds or even thousand of heuristics we can select a subset heuristics that can guide the search to the solution quickly.
+
+In addition to these approaches - the approximation analysis analysis is really good in that it might persuade the readers about maximazing submodular set of functions through Lemmas, Theorems, and Definitions. Also, the tables are clearly explained and presented.
+
+In conclusion, I think the writer's idea about selection was spread clearly and showing evidences that corroborate the start of the research. Perhaps, in the Background more contributions of others researches about this topic should be added.
+
+When evaluating the text you could answer some of the following questions. The underlined terms are possible criteria:
+
+1.- Is the question the text tries to answer relevant, intersting, new, useful?
+Yes, the word relevant is used in the phrase: I think writer's idea about selection of heuristics from a large set of heuristics to solve problems seems especially RELEVANT for domain-independent problemas.
+
+2.- Who will find the text useful? Why?
+The researchers that works in the area of Heuristic Search are going to find useful the writer's idea. Because, is a new approach that wants to solve the major number of problems than other approaches.
+
+3.- Does the text give new answers or interpretations to an old question?
+I think the writer look for the answer to a question about, if the subset of heuristics allows to perform a good search.
+
+4.- Is the text detailed, or brief? Simple or complex?
+I think the text is complex, because it presents new approach, theorems, lemmas and definitions which are explained carefully. In addition, the audience of this text are researchers in the area Heuristic Search and if the text is submited to some conference it could be read by experts in the area, so the language used in the text is complex.
+
+5.- Is the evidence presented to support the answer extensive? Strong? Weak? Relevant? Persuasive? Contradictory?
+There are two evidences that support the writer's idea about selection which I think are Strong, Relevant and Persuasive.
+
+6.- Are the conclusions reached final, limited, qualifed or preliminary?
+
+
+
+
+
+
+
+
