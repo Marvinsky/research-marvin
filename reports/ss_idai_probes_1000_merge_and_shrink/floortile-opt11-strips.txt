@@ -1,0 +1,3 @@
+	Report:		ida*-bfs-vs-ss-bfs - using merge_and_shrink heuristic - 1000 probes.
+
+floortile-opt11-strips
