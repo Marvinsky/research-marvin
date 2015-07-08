@@ -1,0 +1,108 @@
+	Report:		ida*-bfs-vs-ss-bfs - using merge_and_shrink heuristic - 1 probe.
+
+blocks
+
+probBLOCKS-5-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		41			30
+
+probBLOCKS-9-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		6			6
+18		111			113
+20		1972			255
+22		41088			49341
+23		41173			49341
+24		1.00969e+06			672197
+25		1.02561e+06			26232
+26		2.81522e+07			468752
+
+probBLOCKS-8-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		875			172
+
+probBLOCKS-6-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+12		13			13
+
+probBLOCKS-4-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		7			7
+
+probBLOCKS-8-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		245			899
+17		448			391
+18		22892			923
+
+probBLOCKS-4-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		11			11
+
+probBLOCKS-5-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+12		23			23
+
+probBLOCKS-7-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		14			14
+17		59			113
+18		542			278
+19		1351			1400
+20		15681			7092
+
+probBLOCKS-5-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		20			20
+
+probBLOCKS-7-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+17		39			8
+18		199			1975
+19		831			345
+20		7828			569
+21		23296			2865
+22		264642			61253
+
+probBLOCKS-8-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		30			18
+16		779			899
+17		1836			2497
+18		28766			190
+19		59602			1400
+20		854890			1.42261e+06
+
+probBLOCKS-6-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+18		40			86
+19		99			134
+20		1364			2547
+
+probBLOCKS-4-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		7			7
+
+probBLOCKS-7-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+17		8			8
+18		30			24
+19		78			55
+20		798			243
+
+probBLOCKS-6-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		11			11
+
+probBLOCKS-9-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		6			6
+18		44			39
+20		383			210
+22		4658			1110
+23		4762			1860
+24		86023			20059
+25		101016			12396
+26		2.14998e+06			204110
+27		3.21677e+06			204110
+28		6.16126e+07			1.93345e+06
