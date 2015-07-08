@@ -1,0 +1,3 @@
+	Report:		ida*-bfs-vs-ss-bfs - using merge_and_shrink heuristic - 100 probes.
+
+barman-opt11-strips

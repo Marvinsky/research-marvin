@@ -1,0 +1,15 @@
+	Report:		ida*-bfs-vs-ss-bfs - using merge_and_shrink heuristic - 100 probes.
+
+woodworking-opt11-strips
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+195		3.73441e+07			3.89555e+07
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+205		2849			2796.41
+210		5767			6654.2
+215		4.33579e+06			4.37468e+06
+220		8.49558e+06			7.87335e+06
+225		2.25634e+07			2.58017e+07
