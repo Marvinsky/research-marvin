@@ -1,0 +1,108 @@
+	Report:		ida*-bfs-vs-ss-bfs - using merge_and_shrink heuristic - 10 probes.
+
+blocks
+
+probBLOCKS-5-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		41			38.8
+
+probBLOCKS-9-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		6			6
+18		111			70
+20		1972			1833.1
+22		41088			86176
+23		41173			44740.8
+24		1.00969e+06			4.31705e+07
+25		1.02561e+06			272587
+26		2.81522e+07			4.64132e+06
+
+probBLOCKS-8-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		875			185.5
+
+probBLOCKS-6-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+12		13			13
+
+probBLOCKS-4-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		7			7
+
+probBLOCKS-8-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		245			111.6
+17		448			310.6
+18		22892			16069
+
+probBLOCKS-4-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		11			11
+
+probBLOCKS-5-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+12		23			23
+
+probBLOCKS-7-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		14			14
+17		59			91.4
+18		542			325.9
+19		1351			1171.8
+20		15681			11885.3
+
+probBLOCKS-5-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		20			20
+
+probBLOCKS-7-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+17		39			33.8
+18		199			145.4
+19		831			493
+20		7828			8282.6
+21		23296			12658.6
+22		264642			426887
+
+probBLOCKS-8-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		30			38
+16		779			540.8
+17		1836			1764.3
+18		28766			32889.1
+19		59602			39781.7
+20		854890			615778
+
+probBLOCKS-6-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+18		40			34.8
+19		99			51
+20		1364			1491.6
+
+probBLOCKS-4-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		7			7
+
+probBLOCKS-7-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+17		8			8
+18		30			39.2
+19		78			78.4
+20		798			711.2
+
+probBLOCKS-6-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		11			11
+
+probBLOCKS-9-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		6			6
+18		44			49.4
+20		383			319.2
+22		4658			4337.1
+23		4762			4337.1
+24		86023			44088.1
+25		101016			44088.1
+26		2.14998e+06			323393
+27		3.21677e+06			323393
+28		6.16126e+07			3.59184e+06

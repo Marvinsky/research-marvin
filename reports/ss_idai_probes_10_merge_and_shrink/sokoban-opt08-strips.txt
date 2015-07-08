@@ -1,0 +1,19 @@
+	Report:		ida*-bfs-vs-ss-bfs - using merge_and_shrink heuristic - 10 probes.
+
+sokoban-opt08-strips
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+11		10903			10903
+
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+2		5			5
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		4004			3832.4
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+9		1628			1628

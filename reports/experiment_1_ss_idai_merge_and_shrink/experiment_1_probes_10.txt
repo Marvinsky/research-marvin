@@ -1,25 +1,25 @@
-	Experiment 1:		Using ipdb heuristic - 10 probes in 24 hours.
+	Experiment 1:		Using merge_and_shrink heuristic - 10 probes in 24 hours.
 
 Domain                             ida*      ida* time       ss error        ss time              n
 
-blocks                      2.09693e+09        10018.2        3.54292         0.0125             24
-barman-opt11-strips                 ---            ---            ---            ---            ---
-elevators-opt08-strips       9.5651e+07        20223.9        5.72406           8.55              4
-elevators-opt11-strips      1.54128e+08        36205.9         9.0431          11.38              2
-floortile-opt11-strips              ---            ---            ---            ---            ---
-nomystery-opt11-strips      3.60878e+08        2514.16        1.75874      0.0114286             14
+blocks                      5.80797e+06        75.2882        3.34619        13.4435             17
+barman-opt11-strips                 ---            ---            ---            ---              0
+elevators-opt08-strips      6.91785e+07        14434.6        1.96768           7.37              2
+elevators-opt11-strips              ---            ---            ---            ---              0
+floortile-opt11-strips              ---            ---            ---            ---              0
+nomystery-opt11-strips      8.00639e+08        3766.92       0.452846       0.865714             14
 openstacks-opt08-adl                ---            ---            ---            ---            ---
-openstacks-opt08-strips      2.0436e+06          15633       0.301239        7.63143              7
-openstacks-opt11-strips     4.16623e+06          35539       0.449026        16.1067              3
-parcprinter-opt11-strips        3065.69        337.491      0.0114395     0.00615385             13
-parking-opt11-strips        3.06957e+08        7448.66        1.48818            0.2              5
-pegsol-opt11-strips             54945.3        1181.48       0.661981          0.387             20
-scanalyzer-opt11-strips     1.07152e+09        8163.32        49.0723      0.0971429              7
-sokoban-opt08-strips             280429        9.52462      0.0258643      0.0353846             13
-sokoban-opt11-strips             404338        13.4578     0.00105698      0.0488889              9
-tidybot-opt11-strips        1.13122e+06          355.4       0.636647       0.853333              3
-transport-opt08-strips               15           0.12              0    5.54976e-18              1
-transport-opt11-strips              ---            ---            ---            ---            ---
-visitall-opt11-strips       7.60463e+06        31.6927       0.783998      0.0145455             11
-woodworking-opt08-strips    9.37402e+07        6484.69       0.950138         0.2875              8
-woodworking-opt11-strips    2.49863e+08        16954.9        1.80778       0.573333              3
+openstacks-opt08-strips          451632         358.62       0.518121         26.655              4
+openstacks-opt11-strips             ---            ---            ---            ---            ---
+parcprinter-opt11-strips        3064.85        16.8723     0.00841749          17.26             13
+parking-opt11-strips                ---            ---            ---            ---            ---
+pegsol-opt11-strips                 ---            ---            ---            ---            ---
+scanalyzer-opt11-strips             ---            ---            ---            ---            ---
+sokoban-opt08-strips               4135         57.275      0.0107143           56.5              4
+sokoban-opt11-strips                  5         223.34              0         267.32              1
+tidybot-opt11-strips                 65        1823.72              1              0              1
+transport-opt08-strips           1391.8          0.024      0.0253406           0.02              5
+transport-opt11-strips              ---            ---            ---            ---              0
+visitall-opt11-strips       2.61337e+06        9.67333       0.415919       0.902222              9
+woodworking-opt08-strips    1.06992e+07        303.166       0.400268        11.9057              7
+woodworking-opt11-strips    3.63737e+07        1057.37        1.76147          35.48              2
