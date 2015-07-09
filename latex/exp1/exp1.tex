@@ -1,0 +1,163 @@
+
+%\documentclass[11pt,a4paper,oneside]{report}
+\documentclass[a4paper,12pt]{article}
+\synctex=1
+
+\usepackage{pslatex,palatino,avant,graphicx,color}
+\usepackage[margin=2cm]{geometry}
+
+\usepackage{mathptmx}       % selects Times Roman as basic font
+
+\usepackage{helvet}         % selects Helvetica as sans-serif font
+\usepackage{courier}        % selects Courier as typewriter font
+\usepackage{type1cm}        % activate if the above 3 fonts are
+                            % not available on your system
+
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\usepackage{multicol}        % used for the two-column index
+\usepackage{multirow}
+\usepackage{booktabs}
+
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+
+\usepackage[utf8]{inputenc}
+\inputencoding{utf8}
+
+\usepackage[square,sort]{natbib}
+\bibliographystyle{unsrtnat}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{longtable}
+\usepackage{pdflscape}
+
+%for formula references
+\usepackage{amsmath}
+
+\newtheorem{mydef}{Definition}
+
+\usepackage{changes}
+%triangledown
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage[]{algorithm2e}
+
+%langle
+\usepackage{scalerel}
+\usepackage{graphicx}
+
+
+%width of the column
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+%rotate the name of the column
+\usepackage{adjustbox}
+\usepackage{array}
+
+\newcolumntype{R}[2]{%
+    >{\adjustbox{angle=#1,lap=\width-(#2)}\bgroup}%
+    l%
+    <{\egroup}%
+}
+\newcommand*\rot{\multicolumn{1}{R{90}{1em}}}% no optional argument here, please!
+
+%checkmark
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+
+\makeindex
+
+\begin{document}
+
+
+\begin{titlepage}
+
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=8cm]{./image/ufv1}
+\end{center}
+\end{figure}
+
+CENTRO DE CIENCIAS EXATAS E TECNOLOGICAS - CCE\\
+\vspace*{0.15in}
+DEPARTAMENTO DE INFORMATICA \\
+\vspace*{0.6in}
+\begin{large}
+REPORT:\\
+\end{large}
+\vspace*{0.2in}
+\begin{Large}
+\textbf{COMPARISON BETWEEN SS AND IDA*} \\
+\end{Large}
+\vspace*{0.3in}
+\begin{large}
+%A Thesis Project submitted by Marvin Abisrror for the degree of Master to the PPG\\
+\textbf{Marvin Abisrror Zarate} \\
+MSc Student in Computer Science \\
+\end{large}
+\vspace*{0.3in}
+\rule{80mm}{0.1mm}\\
+\vspace*{0.1in}
+\begin{large}
+Levi Henrique Santana de Lelis \\
+(Advisor)
+\
+
+\
+
+\
+
+\
+Santiago Franco \\
+(Co-Advisor)
+\
+
+\
+
+\
+
+\
+
+\
+\end{large}
+VIÇOSA - MINAS GERAIS\\
+JULY - 2015
+\end{center}
+\end{titlepage}
+
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+The new approach for selecting a subset of heuristics functions for domain-independent planning has two objectives: First, make a selection of heuristics from a large set of heuristics with the goal of reducing the running time of a search algorithm employing the subset functions. Second, find out if the prediction of Stratified Sampling (SS) might be helpful in selecting a subset of heuristics to guide the A* search.
+
+In order to achieve the first objective we present The Greedy Algorithm, which provides a good approximation to the optimal solution of the NP-hard optimization problem \citep{krause2012submodular}. 
+
+In order to achieve the second objective we use the \textit{relative usigned error} to probe the accuracy of the predictions of SS with respect to IDA*. We know that SS does not make even reasonable predictions for the number of nodes expanded by A*. Nevertheless, even though SS produces poor predictions for the number of nodes expanded by A*, we would like to verify whether these predictions can be helpful in selecting a subset of heuristics to guide the A* search.
+
+This report const of three sections, the first section is the introduction, the second is the experiment 1 which contains 4 tables showing the results of the \textit{relative usigned error}. and the last section in the conclusion.
+
+\section{Comparison of SS with IDA*}
+  
+
+
+\newpage
+%Imports the bibliography file "references.bib"
+\bibliography{references}
+%\bibliographystyle{references}
+
+\end{document}
