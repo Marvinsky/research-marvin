@@ -1,0 +1,16 @@
+h(,0):,heur is GAPDB,mutation_rate:0.6000000,size=2000000,with disjoint patterns
+h(,1):,heur is GAPDB,mutation_rate:1.0000000,size=2000000,with disjoint patterns
+h(,2):,heur is GAPDB,mutation_rate:0.5000000,size=50000,without disjoint patterns
+h(,3):,heur is GAPDB,mutation_rate:0.8000000,size=2000000,without disjoint patterns
+h(,4):,No Name
+h(,5):,heur is GAPDB,mutation_rate:0.2000000,size=2000000,without disjoint patterns
+bc(0/0/0/0/1/0)cc=127.494
+bc(1/0/0/0/1/0)cc=17.589
+bc(1/0/0/1/1/0)cc=2.076
+bc(0/0/0/0/1/1)cc=3.804
+bc(0/0/0/1/1/1)cc=1.902
+bc(1/0/0/1/1/1)cc=4.176
+bc(1/1/0/1/1/1)cc=10.838
+bc(0/0/1/1/1/1)cc=21.759
+bc(1/0/1/1/1/1)cc=1.005
+bc(1/1/1/1/1/1)cc=11.798

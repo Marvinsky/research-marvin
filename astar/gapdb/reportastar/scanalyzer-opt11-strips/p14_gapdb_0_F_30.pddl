@@ -1,15 +1,12 @@
-		/home/marvin/marvin/astar/gapdb/reportastar/scanalyzer-opt11-strips/p14_gapdb_0_F_30.pddl
-	totalniveles: 12
+		/home/levi/marvin/marvin/astar/gapdb/reportastar/scanalyzer-opt11-strips/p14_gapdb_0_F_30.pddl
+	totalniveles: 9
 	f-value		#nodesByLevel		time		#nodesExpanded
-	19		10			52.70s			10
-	20		96			52.70s			106
-	21		552			52.70s			658
-	22		2848			52.70s			3506
-	23		13058			52.70s			16564
-	24		50655			52.70s			67219
-	25		158419			52.70s			225638
-	26		391732			52.70s			617370
-	27		760168			52.70s			1377538
-	28		1182378			52.70s			2559916
-	29		1545708			52.70s			4105624
-	30		1726606			52.70s			5832230
+	22		11			77.22s			11
+	23		108			77.22s			119
+	24		813			77.22s			932
+	25		4454			77.22s			5386
+	26		19894			77.22s			25280
+	27		75275			77.22s			100555
+	28		236090			77.22s			336645
+	29		591684			77.22s			928329
+	30		1144052			77.22s			2072381

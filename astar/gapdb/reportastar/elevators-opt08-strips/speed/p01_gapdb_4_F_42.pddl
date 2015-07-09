@@ -1,4 +1,4 @@
-		/home/marvin/marvin/astar/gapdb/reportastar/elevators-opt08-strips/speed/p01_gapdb_4_F_42.pddl
+		/home/levi/marvin/marvin/astar/gapdb/reportastar/elevators-opt08-strips/speed/p01_gapdb_4_F_42.pddl
 	initial_value: 42
 	h_min	gen	exp		V		SEv		VeSP		NPBP
 	39	5	1		0.6		65		0.071		0

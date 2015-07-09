@@ -1,4 +1,4 @@
-		/home/marvin/marvin/astar/gapdb/reportastar/scanalyzer-opt11-strips/speed/p03_gapdb_3_F_26.pddl
+		/home/levi/marvin/marvin/astar/gapdb/reportastar/scanalyzer-opt11-strips/speed/p03_gapdb_3_F_26.pddl
 	initial_value: 26
 	h_min	gen	exp		V		SEv		VeSP		NPBP
 	23	1	1		3		7.7		0.12		0

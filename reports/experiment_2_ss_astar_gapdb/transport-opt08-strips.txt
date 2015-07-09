@@ -1,3 +1,31 @@
 Experiment 2: transport-opt08-strips using gapdb heuristic with 1000 probes
 
-transport-opt08-strips
+instance_name: p01_F_54.csv
+
+A*:		{(gapdb_0, 112),(gapdb_1, 112),(gapdb_2, 112),(gapdb_3, 112),(gapdb_4, 112),(gapdb_5, 112),}
+ss:		{(gapdb_0, 60.006),(gapdb_1, 60.006),(gapdb_2, 60.006),(gapdb_3, 60.006),(gapdb_4, 60.006),(gapdb_5, 60.006),}
+
+Measure_1:
+ - There are three best heuristics: gapdb_0, gapdb_1 and gapdb_2 generating the same number of nodes 112
+ - Description:
+ - Best heuristic is gapdb_0, and number of nodes generated: 112
+
+Measure_2:
+ - Fixed Regrets:
+	gapdb_0:	0
+	gapdb_1:	0
+	gapdb_2:	0
+ - 100% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
+
+Measure_3:
+ - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_1:	0
+	gapdb_3:	0
+	gapdb_5:	0
+ - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 0
+
+Comparing Fixed and Random Regrets:
+ - Fixed regrets is better option than Random regrets.
+
+
