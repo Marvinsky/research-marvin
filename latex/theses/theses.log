@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  1 JUL 2015 14:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  9 JUL 2015 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1315,6 +1315,9 @@ Writing index file theses.idx
 
 LaTeX Warning: Label `my-label' multiply defined.
 
+
+LaTeX Warning: Label `my-label' multiply defined.
+
 )
 \openout1 = `theses.aux'.
 
@@ -1476,192 +1479,208 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 \openout5 = `theses.toc'.
 
  [1]
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 171.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 176.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 176.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 176.
+
+Overfull \hbox (51.96236pt too wide) in paragraph at lines 176--205
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
 
 Package natbib Warning: Citation `haslum2007domain' on page 2 undefined on inpu
-t line 163.
+t line 212.
 
 
 Package natbib Warning: Citation `edelkamp2007automated' on page 2 undefined on
- input line 163.
+ input line 212.
 
 
 Package natbib Warning: Citation `nissim2011computing' on page 2 undefined on i
-nput line 163.
+nput line 212.
 
 
 Package natbib Warning: Citation `BarleySantiagoOver' on page 2 undefined on in
-put line 163.
+put line 212.
 
 
 Package natbib Warning: Citation `haslum2007domain' on page 2 undefined on inpu
-t line 163.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
-
-Package natbib Warning: Citation `helmert2006fast' on page 2 undefined on input
- line 165.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
-
- []
-
-
-Package natbib Warning: Citation `hart1968formal' on page 2 undefined on input 
-line 176.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
-
- []
-
-
-Package natbib Warning: Citation `culberson1996searching' on page 3 undefined o
-n input line 182.
-
-
-Package natbib Warning: Citation `bonet2001planning' on page 3 undefined on inp
-ut line 182.
-
-
-Package natbib Warning: Citation `helmert2009landmarks' on page 3 undefined on 
-input line 182.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
-
- []
-
-
-Package natbib Warning: Citation `holte1999space' on page 3 undefined on input 
-line 184.
-
-
-Package natbib Warning: Citation `culberson1998pattern' on page 3 undefined on 
-input line 184.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
-
- []
-
-
-Package natbib Warning: Citation `holte2004multiple' on page 3 undefined on inp
-ut line 186.
-
-
-Package natbib Warning: Citation `zahavi2007inconsistent' on page 3 undefined o
-n input line 186.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
-
- []
-
-
-Package natbib Warning: Citation `domshlak2011selmax' on page 3 undefined on in
-put line 188.
-
-
-Package natbib Warning: Citation `tolpin2013towards' on page 3 undefined on inp
-ut line 188.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-
- []
-
-
-Package natbib Warning: Citation `Minton1990363' on page 3 undefined on input l
-ine 190.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
-
- []
-
-[3]
-
-Package natbib Warning: Citation `BarleySantiagoOver' on page 4 undefined on in
-put line 194.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
-
- []
-
-
-Package natbib Warning: Citation `hart1968formal' on page 4 undefined on input 
-line 197.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
-
- []
+t line 212.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
+
+Package natbib Warning: Citation `helmert2006fast' on page 2 undefined on input
+ line 214.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+
+Package natbib Warning: Citation `hart1968formal' on page 3 undefined on input 
+line 225.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
+
+ []
+
+
+Package natbib Warning: Citation `culberson1996searching' on page 3 undefined o
+n input line 231.
+
+
+Package natbib Warning: Citation `bonet2001planning' on page 3 undefined on inp
+ut line 231.
+
+
+Package natbib Warning: Citation `helmert2009landmarks' on page 3 undefined on 
+input line 231.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+
+ []
+
+
+Package natbib Warning: Citation `holte1999space' on page 3 undefined on input 
+line 233.
+
+
+Package natbib Warning: Citation `culberson1998pattern' on page 3 undefined on 
+input line 233.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
+
+ []
+
+
+Package natbib Warning: Citation `holte2004multiple' on page 3 undefined on inp
+ut line 235.
+
+
+Package natbib Warning: Citation `zahavi2007inconsistent' on page 3 undefined o
+n input line 235.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+
+ []
+
+[3]
+
+Package natbib Warning: Citation `domshlak2011selmax' on page 4 undefined on in
+put line 237.
+
+
+Package natbib Warning: Citation `tolpin2013towards' on page 4 undefined on inp
+ut line 237.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+
+ []
+
+
+Package natbib Warning: Citation `Minton1990363' on page 4 undefined on input l
+ine 239.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
+
+ []
+
+
+Package natbib Warning: Citation `BarleySantiagoOver' on page 4 undefined on in
+put line 243.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+
+ []
+
+
+Package natbib Warning: Citation `hart1968formal' on page 4 undefined on input 
+line 246.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+ []
+
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 214--216
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--265
 
  []
 
 
 Package natbib Warning: Citation `helmert2006fast' on page 5 undefined on input
- line 217.
+ line 266.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
 
 Package natbib Warning: Citation `nemhauser1978analysis' on page 5 undefined on
- input line 219.
+ input line 268.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
@@ -1679,11 +1698,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17433 strings out of 493104
- 315342 string characters out of 6136932
- 403592 words of memory out of 5000000
- 20425 multiletter control sequences out of 15000+600000
- 30492 words of font info for 72 fonts, out of 8000000 for 9000
+ 17465 strings out of 493104
+ 315800 string characters out of 6136932
+ 407592 words of memory out of 5000000
+ 20456 multiletter control sequences out of 15000+600000
+ 41643 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,54p,938b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1694,7 +1713,7 @@ type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on theses.pdf (8 pages, 129696 bytes).
+Output written on theses.pdf (8 pages, 131607 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
