@@ -1,0 +1,63 @@
+	Report:		ida*-bfs-vs-ss-bfs - using merge_and_shrink heuristic - 5000 probes.
+
+nomystery-opt11-strips
+
+p14.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+19		2832			2832.18
+
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+23		2596			2650.88
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+14		84			83.9712
+
+p13.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		897			896.871
+
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+28		2.50075e+07			1.06876e+07
+29		3.47873e+08			4.23902e+08
+30		7.04952e+09			3.96174e+09
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+23		2596			2604.5
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+11		180			179.252
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+19		11933			11948.5
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+26		10721			10712.7
+
+p17.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+28		2.10605e+07			2.26548e+07
+29		1.94127e+08			2.19638e+08
+30		3.57131e+09			8.92462e+09
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		897			896.448
+
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+26		10721			10755
+
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+12		44			43.9792
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+14		472			473.533

@@ -1,0 +1,108 @@
+	Report:		ida*-bfs-vs-ss-bfs - using merge_and_shrink heuristic - 5000 probes.
+
+blocks
+
+probBLOCKS-5-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		41			40.7404
+
+probBLOCKS-9-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		6			6
+18		111			109.645
+20		1972			1903.86
+22		41088			43140.8
+23		41173			43140.8
+24		1.00969e+06			965087
+25		1.02561e+06			965941
+26		2.81522e+07			2.77801e+07
+
+probBLOCKS-8-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		875			843.385
+
+probBLOCKS-6-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+12		13			13
+
+probBLOCKS-4-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		7			7
+
+probBLOCKS-8-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		245			758.678
+17		448			443.344
+18		22892			21403.9
+
+probBLOCKS-4-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		11			11
+
+probBLOCKS-5-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+12		23			23
+
+probBLOCKS-7-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		14			14
+17		59			59.2372
+18		542			546.193
+19		1351			1331.92
+20		15681			7626.42
+
+probBLOCKS-5-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		20			20
+
+probBLOCKS-7-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+17		39			39.2176
+18		199			205.046
+19		831			834.906
+20		7828			7594.45
+21		23296			22395.4
+22		264642			300606
+
+probBLOCKS-8-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		30			29.6024
+16		779			770.55
+17		1836			1901.18
+18		28766			28361
+19		59602			56054.1
+20		854890			842695
+
+probBLOCKS-6-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+18		40			39.0984
+19		99			97.796
+20		1364			1335.03
+
+probBLOCKS-4-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		7			7
+
+probBLOCKS-7-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+17		8			8
+18		30			29.9012
+19		78			78.1536
+20		798			842.116
+
+probBLOCKS-6-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		11			11
+
+probBLOCKS-9-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		6			6
+18		44			43.899
+20		383			383.194
+22		4658			4741.77
+23		4762			4850.52
+24		86023			75733.2
+25		101016			104302
+26		2.14998e+06			2.50689e+06
+27		3.21677e+06			4.18878e+06
+28		6.16126e+07			5.12694e+07

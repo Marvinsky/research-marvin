@@ -1,0 +1,21 @@
+	Report:		ida*-bfs-vs-ss-bfs - using merge_and_shrink heuristic - 5000 probes.
+
+elevators-opt08-strips
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+40		5512			5541.84
+41		13915			13990.4
+42		15832			16250.6
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+13		51			51
+14		3309			3296.61
+19		11729			10932.7
+20		806519			647412
+21		2.29758e+06			1.67569e+06
+22		2.45306e+06			1.71747e+06
+23		2.77563e+06			2.12165e+06
+25		3.65898e+06			2.95884e+06
+26		1.26315e+08			5.75263e+07

@@ -1,0 +1,42 @@
+	Report:		ida*-bfs-vs-ss-bfs - using merge_and_shrink heuristic - 5000 probes.
+
+visitall-opt11-strips
+
+problem05-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+21		31			31
+22		431000			446412
+23		868051			932929
+24		2.22196e+07			2.25118e+07
+
+problem04-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+11		32			31.9964
+
+problem04-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		359			350.621
+
+problem02-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		7			7
+
+problem02-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1		2			2
+
+problem05-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+18		786			795.607
+
+problem03-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		7			7
+
+problem03-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+8		61			61
+
+problem06-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+23		439			432.44

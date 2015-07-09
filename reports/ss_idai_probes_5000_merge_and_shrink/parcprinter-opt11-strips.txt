@@ -1,0 +1,55 @@
+	Report:		ida*-bfs-vs-ss-bfs - using merge_and_shrink heuristic - 5000 probes.
+
+parcprinter-opt11-strips
+
+p19.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+29563		1			1
+
+p18.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+45619		1			1
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+36881		1			1
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+519232		1			1
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+375821		1			1
+
+p10.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+233407		1			1
+
+p17.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+33645		1			1
+
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+239902		1			1
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+510256		1			1
+
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+63033		1			1
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6496		1			1
+
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+143532		1			1
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+438047		39831			39867.2
