@@ -95,7 +95,13 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
         }
 
 	string resultFile;
-       	resultFile = "/global_exp_1_latex.txt";
+
+	if (heuristics.size() == 1) {
+		resultFile = "/global_exp_1_"+heuristics.at(0)+".txt";
+	} else {
+		resultFile = "/global_exp_1_all.txt";
+	}
+       	
         resultFile = model + resultFile;
         resultFile = "reports/" + resultFile;
         resultFile = "marvin/" + resultFile;
@@ -337,9 +343,15 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	outputFile<<"\\begin{table}[]\n";
 	cout<<"\\footnotesize\\setlength{\\tabcolsep}{1.8pt}\n";
 	outputFile<<"\\footnotesize\\setlength{\\tabcolsep}{1.8pt}\n";
-
-	cout<<"\\caption{Experiment 1 - Comparison using hmax heuristic}\n";
-	outputFile<<"\\caption{Experiment 1 - Comparison using hmax heuristic}\n";
+	
+	if (heuristics.size() == 1) {
+		cout<<"\\caption{Experiment 1 - Comparison using "<<heuristics.at(0)<<" heuristic}\n";
+		outputFile<<"\\caption{Experiment 1 - Comparison using "<<heuristics.at(0)<<" heuristic}\n";
+	} else {
+		cout<<"\\caption{Experiment 1 - Comparison using all the heuristics}\n";
+		outputFile<<"\\caption{Experiment 1 - Comparison using all the heuristics}\n";
+	}
+	
 
 	cout<<"\\label{my-label}\n";
 	outputFile<<"\\label{my-label}\n";
