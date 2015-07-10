@@ -52,7 +52,7 @@ int getTotalLevels(string interText) {
 }
 
 //vector<pair<string, double> >  
-map<string, vector<string> >  analyzeFile(string output_BC) {
+vector<vector<string> >  analyzeFile(string output_BC) {
 	int total_bounds = getTotalLevels(output_BC.c_str());
 	//cout<<"total_bounds = "<<total_bounds<<"\n";
 
@@ -97,10 +97,10 @@ map<string, vector<string> >  analyzeFile(string output_BC) {
 		infile_idai.close();
 	}
 
-	map<string, vector<string> > m;
+	vector<vector<string> > m;
 	for (size_t i = 0; i < v_time.size(); i++) {
 		stringstream number;
-		ostringstream strs, strs1, strs2, strs3;
+		ostringstream strs, strs1, strs2;
 		
 		number<<i+1;
 		string time = "row_" + number.str();
@@ -109,6 +109,8 @@ map<string, vector<string> >  analyzeFile(string output_BC) {
 
 		cout<<v_time.at(i)<<", "<<v_bound.at(i)<<", "<<v_exp.at(i)<<", "<<v_gen.at(i)<<"\n";
 		v_all.push_back(v_time.at(i));
+
+
 		strs << v_bound.at(i); 
 		v_all.push_back(strs.str());
 		strs1 << v_exp.at(i);
@@ -116,7 +118,8 @@ map<string, vector<string> >  analyzeFile(string output_BC) {
 		strs2 << v_gen.at(i);
 		v_all.push_back(strs2.str());
 
-		m.insert(pair<string, vector<string> >(time, v_all));
+		m.push_back(v_all);
+		//m.insert(pair<string, vector<string> >(time, v_all));
 	}
 
 	return m;
@@ -197,19 +200,15 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			string fileR = resultFile.c_str() + fileNames.at(i);
 			cout<<fileR<<"\n";
 
-			map<string, vector<string> > m = analyzeFile(fileR.c_str());
-			map<string, vector<string> >::iterator iter;
-			int count_bound = 1;
-			for (iter = m.begin(); iter != m.end(); iter++) {
-				string s = iter->first;
-				vector<string> v = iter->second;
+			vector<vector<string> > m = analyzeFile(fileR.c_str());
+			for (size_t i = 0; i < m.size(); i++) {
+				vector<string> v = m.at(i);
 
-				outputFile<<"\t time_"<<count_bound<<": "<<v.at(0);
-                		outputFile<<", bound_"<<count_bound<<": "<<v.at(1);
-                		outputFile<<", nodes_expanded_for_bound: "<<v.at(2);
-                		outputFile<<", nodes_generated_for_bound: "<<v.at(3);
+				outputFile<<"\t"<<v.at(0);
+                		outputFile<<"\t\t"<<v.at(1);
+                		outputFile<<"\t\t"<<v.at(2);
+                		outputFile<<"\t\t"<<v.at(3);
                 		outputFile<<"\n";
-				count_bound++;
 			}
 			outputFile.close();
 		}
