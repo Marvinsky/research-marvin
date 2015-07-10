@@ -2,7 +2,7 @@
 
                                                            gapdb
 
-Domain                                           fixed              random                   n
+Domain                                 fixed              random                   n
 
 barman-opt11-strips                      ---                 ---                 ---
 blocks                           1539626.370         1070588.975                  18
