@@ -143,16 +143,16 @@ JULY - 2015
 \newpage
 
 \section{Introduction}
-The new approach for selecting a subset of heuristics functions for domain-independent planning has two objectives: First, make a selection of heuristics from a large set of heuristics with the goal of reducing the running time of a search algorithm employing the subset functions. Second, find out if the prediction of Stratified Sampling (SS) might be helpful in selecting a subset of heuristics to guide the A* search.
+The new approach for selecting a subset of heuristics functions for domain-independent planning has two main objectives: First, make a selection of heuristics from a large set of heuristics with the goal of reducing the running time of a search algorithm employing the subset functions. Second, find out if the prediction of Stratified Sampling (SS) might be helpful in selecting a subset of heuristics to guide the A* search.
 
 In order to achieve the first objective we present The Greedy Algorithm, which provides a good approximation to the optimal solution of the NP-hard optimization problem \citep{krause2012submodular}. 
 
-In order to achieve the second objective we use the \textit{relative usigned error} to probe the accuracy of the predictions of SS with respect to IDA*. We know that SS does not make even reasonable predictions for the number of nodes expanded by A*. Nevertheless, even though SS produces poor predictions for the number of nodes expanded by A*, we would like to verify whether these predictions can be helpful in selecting a subset of heuristics to guide the A* search.
+In order to achieve the second objective we use the \textit{relative unsigned error} to probe the accuracy of the predictions of SS with respect to IDA*. We know that SS does not make even reasonable predictions for the number of nodes expanded by A*. Nevertheless, even though SS produces poor predictions for the number of nodes expanded by A*, we would like to verify whether these predictions can be helpful in selecting a subset of heuristics to guide the A* search.
 
-This report const of three sections, the first section is the introduction, the second is the experiment 1 which contains 4 tables showing the results of the \textit{relative usigned error}. and the last section in the conclusion.
+This report have three sections, the first section is the introduction, the second is the experiment 1 which contains four main tables showing the results of the \textit{relative unsigned error}. and the last section in the conclusion.
 
 \section{Comparison of SS with IDA*}
-Stratification Sampling is an algorithm that estimates the number of nodes expanded performed by heuristic search algorithm seeking solutions in state space. We apply SS to predict the number of nodes expanded by IDA* in a given \textit{f-}layer when using consistent heuristics.
+Stratification Sampling is an algorithm that estimates the number of nodes expanded performed by heuristic search algorithm seeking solutions in state space. We apply SS to predict the number of nodes expanded by IDA* in a given \textit{f-}layer when using a consistent heuristics.
 
 We first ran IDA* for Fast-Downward benchmark for optimal domains. Our evaluation metric is coverage, \textit{i.e.,} number of problems solved within 24 hours time limit. We note that in 24 hours non all the instances for a specific domain using a consistent heuristic can be solved. Afterwards, run SS using as a threshold the \textit{f}-layer for each instance of each domain, this process is executed using different number of probes \textit{i.e.,} 1, 10, 100, 1000, and 5000. 
 
@@ -168,7 +168,7 @@ $
 Where \textit{PI} is the set of problem instances, \textit{Pred(s, d)} and \textit{R(s, d)} are the predicted and actual number of nodes expanded by IDA* for start state \textit{s} and cost bound \textit{d}. A perfect score according to this measure is 0.000.
 
 
-The heuristics used for this experiment 1 were: hmax, ipdb, lmcut, and {merge\_and\_shrink}. There are 4 tables, each table shows the results running IDA* and SS using one consistent heuristic. The first column represent the optimal domains for Fast-Downward benchmark. The remaining 10 columns shows the 5 different probes \textit{i.e.,} 1, 10, 100, 1000, and 5000. Each probe has two columns which represent the ss-error and the ss-time. The last two columns are the information for IDA* which represent the average value of the number of nodes expanded and the average time respectively. The text "---" means that IDA* could not solve the problems, consequently there are not results for SS.
+The heuristics used for this experiment 1 were: hmax, ipdb, lmcut, and {merge\_and\_shrink}. There are 4 tables, each table shows the results running IDA* and SS using one consistent heuristic. The first column represent the optimal domains for Fast-Downward benchmark. The remaining 10 columns shows the 5 different probes \textit{i.e.,} 1, 10, 100, 1000, and 5000. Each probe has two columns which represent the ss-err and the ss-time. The last two columns are the information for IDA* which represent the average value of the number of nodes expanded and the average time respectively. The text "---" means that IDA* could not solve the problems, consequently there are not results for SS.
 
   
 \newpage
@@ -206,9 +206,22 @@ woodworking-opt11-strips& --- & --- & --- & --- & --- & --- & --- & --- & --- & 
 \end{tabular}
 \end{table}
 
-In Table \ref{table1} we can see that there are seven domains which IDA* could not solve any instance in 24 hours. The ss-err decrease for each domain according the number of probes decreases. The domains that have the perfect score are: openstacks-opt11-strips, parcprinter-opt11-strips. 
+In the Table \ref{table1} we can see that there are seven domains which IDA* could not solve any instance in 24 hours. The ss-err decrease for each domain according the number of probes increases. The domains that have the perfect score are: openstacks-opt11-strips, parcprinter-opt11-strips. 
 
 
+\begin{table}[]
+\footnotesize\setlength{\tabcolsep}{2.0pt}
+\caption{ss-err variation}
+\label{subTable1}
+\begin{tabular}{l@{\hspace{6pt}} *{12}{c}}
+\hline
+                        & \multicolumn{2}{c|}{1} & \multicolumn{2}{c|}{10} & \multicolumn{2}{c|}{100} & \multicolumn{2}{c|}{1000} & \multicolumn{2}{c|}{5000} &            &          \\ \hline
+Domain                  & ss-err        & ss-t   & ss-err        & ss-t    & ss-err        & ss-t     & ss-err        & ss-t      & ss-err        & ss-t      & ida*       & ida-time \\ \hline
+openstacks-opt08-strips & {\bf 0.192}   & 0.668  & {\bf 0.141}   & 6.636   & {\bf 0.128}   & 67.228   & {\bf 0.141}   & 679.132   & {\bf 0.146}   & 3365.820  & 361346.000 & 786.512  \\ \hline
+\end{tabular}
+\end{table}
+
+In the Table \ref{subTable1} the ss-err with 1 probe is \textbf{0.192}, afterwards it descrease with 10 probes to \textbf{0.141}, afterwards it decrease to \textbf{0.128}, but with 1000 probes instead to continue decreasing the opposite happens, it increase to \textbf{0.141} and continue increasing using 5000 probes to \textbf{0.146}. This kind of results might be due the fact that SS can consider more predictions and that some of them increase the result of the ss-err.
 
 \newpage
 
@@ -246,8 +259,21 @@ woodworking-opt11-strips& 3.093 & 0.060 & 1.808 & 0.573 & 0.354 & 5.913 & 0.248 
 \end{tabular}
 \end{table}
 
-In Table \ref{table2} we can see that there are four domains which IDA* could not solve any instance in 24 hours. The ss-err decrease for each domain according the number of probes decreases. The domains that have the perfect score is transport-opt08-strips. 
+In Table \ref{table2} we can see that there are four domains which IDA* could not solve any instance in 24 hours. The ss-err decrease for most of the domains domain according the number of probes increases. There are few exception for example the domain parcrinter-opt11-strips that have the following result:
 
+\begin{table}[]
+\footnotesize\setlength{\tabcolsep}{2.4pt}
+\caption{ss-err variation}
+\label{subTable2}
+\begin{tabular}{l@{\hspace{6pt}} *{12}{c}}
+\hline
+                         & \multicolumn{2}{|c|}{1} & \multicolumn{2}{c|}{10} & \multicolumn{2}{c|}{100} & \multicolumn{2}{c|}{1000} & \multicolumn{2}{c|}{5000} &          &          \\ \hline
+Domain                   & ss-err     & ss-t      & ss-err      & ss-t      & ss-err      & ss-t       & ss-err       & ss-t       & ss-err       & ss-t       & ida*     & ida-time \\ \hline
+parcprinter-opt11-strips & \textbf{0.040}      & 0.000     & \textbf{0.011}       & 0.006     & \textbf{0.006}       & 0.071      & \textbf{0.000}        & 0.735      & \textbf{0.077}        & 3.603      & 3065.690 & 337.491  \\ \hline
+\end{tabular}
+\end{table}
+
+In the Table \ref{subTable2} the perfect score is found in the probe 1000. In the probe 5000 the ss-err change to 0.077. The true is that there are not better number than the perfect score. When SS is run using 5000 probes is possible that exists quite changes in the results that increase the result of the ss-err.
 \newpage
 
 \begin{table}[]
@@ -284,7 +310,8 @@ woodworking-opt11-strips& 0.789 & 0.320 & 0.131 & 3.490 & 0.228 & 32.830 & 0.063
 \end{tabular}
 \end{table}
 
-In Table \ref{table3} we can see that there are three domains which IDA* could not solve any instance in 24 hours. The ss-err decrease for each domain according the number of probes decreases. The are domains with perfect score.
+In the Table \ref{table3} we can see that there are three domains which IDA* could not solve any instance in 24 hours. The ss-err decrease for most of the domains according the number of probes increases, except for openstacks-opt08-strips, parcprinter-opt11-strips, sokoban-opt08-strips, visitall-opt11-strips. Nevertheless, the decrease is not a pattern, it means that only occur between two consecutive probes and the difference is minimal. The domains that have the perfect score are: openstacks-opt11-strips and parcprinter-opt11-strips.
+
 \newpage
 
 \begin{table}[]
@@ -321,11 +348,13 @@ woodworking-opt11-strips& 1.686 & 32.360 & 1.761 & 35.480 & 0.221 & 43.670 & 0.0
 \end{tabular}
 \end{table}
 
-In Table \ref{table4} we can see that there are nine domains which IDA* could not solve any instance in 24 hours. The ss-err decrease for each domain according the number of probes decreases. The domains that have the perfect score are: parcprinter-opt11-strips, sokoban-opt08-strips, sokoban-opt11-strips, and tidybot-opt11-strips.
+In the Table \ref{table4} we can see that there are nine domains which IDA* could not solve any instance in 24 hours. The ss-err decrease for each domain according the number of probes increases. The domains that have the perfect score are: parcprinter-opt11-strips, sokoban-opt08-strips, sokoban-opt11-strips, and tidybot-opt11-strips.
 
 \newpage
 \section{Conclusions}
-The Table \ref{table4} using {merge\_and\_shrink} has more unsolved domains and one of the reason why this happen is because it throws run out memory for most of the problems. However, is the same Table \ref{table4} which contains more perfect scores and the reason could be that {merge\_and\_shrink} generates more precise pattern database when it initializes.
+The Table \ref{table4} using {merge\_and\_shrink} has more unsolved domains and one of the reason why this happen is because it throws run out memory for most of the problems. However, is the same Table \ref{table4} which contains more perfect scores and the reason could be that {merge\_and\_shrink} generates more precise pattern database when it initializes and give us better heuristics to guide the search. The Table \ref{table3} shows that the heuristic lmcut solved most of the domains in  24 hours, which implies that lmcut give us better heuristics too. The domains that could not be solved by all the consistent heuristic were openstacks-opt08-adl, barman-opt11-strips, and transport-opt11-strips. The problem of openstacks-opt08-adl is that do not support axioms and the other domains contains difficult instances that were not possible to solve any instance within 24 hours.\\
+
+Generally, the ss-err decreases for the most part of the domains when the number of probes increases. I think SS gives us good predictions for IDA*.
 
 \newpage
 
