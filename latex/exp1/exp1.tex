@@ -152,13 +152,30 @@ In order to achieve the second objective we use the \textit{relative usigned err
 This report const of three sections, the first section is the introduction, the second is the experiment 1 which contains 4 tables showing the results of the \textit{relative usigned error}. and the last section in the conclusion.
 
 \section{Comparison of SS with IDA*}
-  Something here
+Stratification Sampling is an algorithm that estimates the number of nodes expanded performed by heuristic search algorithm seeking solutions in state space. We apply SS to predict the number of nodes expanded by IDA* in a given \textit{f-}layer when using consistent heuristics.
+
+We first ran IDA* for Fast-Downward benchmark for optimal domains. Our evaluation metric is coverage, \textit{i.e.,} number of problems solved within 24 hours time limit. We note that in 24 hours non all the instances for a specific domain using a consistent heuristic can be solved. Afterwards, run SS using as a threshold the \textit{f}-layer for each instance of each domain, this process is executed using different number of probes \textit{i.e.,} 1, 10, 100, 1000, and 5000. 
+
+In our experiment 1, prediction accuracy is measured in terms of the \textit{Relative Unsigned Error} (ss-err), which is calculated as:
+
+
+\begin{center}
+$
+\frac{\sum_{s\in PI} \frac{Pred(s, d) - R(s, d)}{R(s, d)}}{|PI|}
+$
+\end{center}
+
+Where \textit{PI} is the set of problem instances, \textit{Pred(s, d)} and \textit{R(s, d)} are the predicted and actual number of nodes expanded by IDA* for start state \textit{s} and cost bound \textit{d}. A perfect score according to this measure is 0.000.
+
+
+The heuristics used for this experiment 1 were: hmax, ipdb, lmcut, and {merge\_and\_shrink}. There are 4 tables, each table shows the results running IDA* and SS using one consistent heuristic. The first column represent the optimal domains for Fast-Downward benchmark. The remaining 10 columns shows the 5 different probes \textit{i.e.,} 1, 10, 100, 1000, and 5000. Each probe has two columns which represent the ss-error and the ss-time. The last two columns are the information for IDA* which represent the average value of the number of nodes expanded and the average time respectively. The text "---" means that IDA* could not solve the problems, consequently there are not results for SS.
+
   
 \newpage
 \begin{table}[]
 \footnotesize\setlength{\tabcolsep}{1.8pt}
 \caption{Experiment 1 - Comparison using hmax heuristic}
-\label{my-label}
+\label{table1}
 \begin{tabular}{l@{\hspace{6pt}} *{12}{c}}
 \hline
                                                         & \multicolumn{10}{c}{hmax}                                                                                                          & \multicolumn{2}{l}{}      \\ \hline
@@ -189,12 +206,16 @@ woodworking-opt11-strips& --- & --- & --- & --- & --- & --- & --- & --- & --- & 
 \end{tabular}
 \end{table}
 
+In Table \ref{table1} we can see that there are seven domains which IDA* could not solve any instance in 24 hours. The ss-err decrease for each domain according the number of probes decreases. The domains that have the perfect score are: openstacks-opt11-strips, parcprinter-opt11-strips. 
+
+
+
 \newpage
 
 \begin{table}[]
 \footnotesize\setlength{\tabcolsep}{1.0pt}
 \caption{Experiment 1 - Comparison using ipdb heuristic}
-\label{my-label}
+\label{table2}
 \begin{tabular}{l@{\hspace{4pt}} *{12}{c}}
 \hline
                                                         & \multicolumn{10}{c}{ipdb}                                                                                                          & \multicolumn{2}{l}{}      \\ \hline
@@ -224,13 +245,15 @@ woodworking-opt08-strips& 2.541 & 0.037 & 0.950 & 0.287 & 0.384 & 2.817 & 0.092 
 woodworking-opt11-strips& 3.093 & 0.060 & 1.808 & 0.573 & 0.354 & 5.913 & 0.248 & 59.680 & 0.116 & 295.787 & 249863000.000 & 16954.900 \\ \hline
 \end{tabular}
 \end{table}
-\newpage
 
+In Table \ref{table2} we can see that there are four domains which IDA* could not solve any instance in 24 hours. The ss-err decrease for each domain according the number of probes decreases. The domains that have the perfect score is transport-opt08-strips. 
+
+\newpage
 
 \begin{table}[]
 \footnotesize\setlength{\tabcolsep}{0.2pt}
 \caption{Experiment 1 - Comparison using lmcut heuristic}
-\label{my-label}
+\label{table3}
 \begin{tabular}{l@{\hspace{2pt}} *{12}{c}}
 \hline
                                                         & \multicolumn{10}{c}{lmcut}                                                                                                          & \multicolumn{2}{l}{}      \\ \hline
@@ -260,15 +283,14 @@ woodworking-opt08-strips& 1.123 & 0.211 & 0.266 & 1.854 & 0.148 & 18.497 & 0.019
 woodworking-opt11-strips& 0.789 & 0.320 & 0.131 & 3.490 & 0.228 & 32.830 & 0.063 & 322.000 & 0.013 & 1654.180 & 21020800.000 & 6462.270 \\ \hline
 \end{tabular}
 \end{table}
+
+In Table \ref{table3} we can see that there are three domains which IDA* could not solve any instance in 24 hours. The ss-err decrease for each domain according the number of probes decreases. The are domains with perfect score.
 \newpage
-
-
-
 
 \begin{table}[]
 \footnotesize\setlength{\tabcolsep}{1.0pt}
 \caption{Experiment 1 - Comparison using {merge\_and\_shrink} heuristic}
-\label{my-label}
+\label{table4}
 \begin{tabular}{l@{\hspace{4pt}} *{12}{c}}
 \hline
                                       & \multicolumn{10}{c}{{merge\_and\_shrink}}                                                                                                          & \multicolumn{2}{l}{}      \\ \hline
@@ -299,9 +321,13 @@ woodworking-opt11-strips& 1.686 & 32.360 & 1.761 & 35.480 & 0.221 & 43.670 & 0.0
 \end{tabular}
 \end{table}
 
-\section{Conclusions}
-Here goes the conclusions
+In Table \ref{table4} we can see that there are nine domains which IDA* could not solve any instance in 24 hours. The ss-err decrease for each domain according the number of probes decreases. The domains that have the perfect score are: parcprinter-opt11-strips, sokoban-opt08-strips, sokoban-opt11-strips, and tidybot-opt11-strips.
 
+\newpage
+\section{Conclusions}
+The Table \ref{table4} using {merge\_and\_shrink} has more unsolved domains and one of the reason why this happen is because it throws run out memory for most of the problems. However, is the same Table \ref{table4} which contains more perfect scores and the reason could be that {merge\_and\_shrink} generates more precise pattern database when it initializes.
+
+\newpage
 
 %Imports the bibliography file "references.bib"
 \bibliography{references}
