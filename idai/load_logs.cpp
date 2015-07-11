@@ -27,6 +27,10 @@ struct less_second {
     }
 };
 
+bool is_empty(std::ifstream& pFile) {
+    return pFile.peek() == std::ifstream::traits_type::eof();
+}
+
 int getTotalLevels(string interText) {
         ifstream inter2;
         inter2.open(interText.c_str());
@@ -141,25 +145,23 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		std::vector<string> fileNames;
 		readFile>>domain;
 
+		string idaiO;
+		idaiO = "/" + idaiO;
+                idaiO = "/reportidai/" + domain + idaiO;
+                idaiO =  heuristic + idaiO;
+                idaiO = algorithm1  + "/" + idaiO;
+                idaiO = "marvin/" + idaiO;
+                idaiO = "marvin/" + idaiO;
+                idaiO = "/home/"+ idaiO;
+		cout<<"idaiO = "<<idaiO.c_str()<<"\n";
 
-		string resultFile;
-		resultFile = "/resultado/";
-                resultFile = "/problemas/" + domain + resultFile;
-                resultFile =  heuristic + resultFile;
-                resultFile = algorithm1  + "/" + resultFile;
-                resultFile = "marvin/" + resultFile;
-                resultFile = "marvin/" + resultFile;
-                resultFile = "/home/"+ resultFile;
+		DIR *dir;
+                struct dirent *ent;
 
-		cout<<"resultFile = "<<resultFile.c_str()<<"\n";
-
-		DIR *dir3;
-                struct dirent *ent3;
-
-                dir3 = opendir(resultFile.c_str());
-                if (dir3 != NULL) {
-                        while ((ent3 = readdir(dir3)) != NULL) {
-                                string fileName = ent3->d_name;
+                dir = opendir(idaiO.c_str());
+                if (dir != NULL) {
+                        while ((ent = readdir(dir)) != NULL) {
+                                string fileName = ent->d_name;
                                 string t = fileName;
                                 size_t  found = t.find(".sw");
                                 bool is_swp_file = false;
@@ -175,45 +177,129 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                                         fileNames.push_back(fileName);
                                 }
                         }
-                        closedir(dir3);
+                        closedir(dir);
                 } else {
-                        cout<<"Error trying to open the directory: "<<resultFile.c_str()<<endl;
+                        cout<<"Error trying to open the directory: "<<idaiO.c_str()<<endl;
                         directory_not_found = true;
                 }
+	
+		for (size_t i = 0; i < fileNames.size(); i++) {
+			string idaiCheck = idaiO + fileNames.at(i);
+			ifstream idaiCH(idaiCheck.c_str());
+			if (is_empty(idaiCH)) {
+				//cout<<"idaiCheck = "<<idaiCheck<<"\n";
 
-		for(int i = 0; i < fileNames.size(); i++) {
-			string idaiR;
-                	idaiR = "/" + fileNames.at(i);
-                	idaiR = "/reportidai/" + domain + idaiR;
-                	idaiR =  heuristic + idaiR;
-                	idaiR = algorithm1  + "/" + idaiR;
-                	idaiR = "marvin/" + idaiR;
-                	idaiR = "marvin/" + idaiR;
-                	idaiR = "/home/"+ idaiR;
+				//call file from the result directory
+				string resultFile;
+                        	resultFile = "/resultado/" + fileNames.at(i);
+                        	resultFile = "/problemas/" + domain + resultFile;
+                        	resultFile =  heuristic + resultFile;
+                        	resultFile = algorithm1  + "/" + resultFile;
+                        	resultFile = "marvin/" + resultFile;
+                        	resultFile = "marvin/" + resultFile;
+                        	resultFile = "/home/"+ resultFile;
+				
+				ofstream outputFile;
+				outputFile.open(idaiCheck.c_str(), ios::out);
 
-			ofstream outputFile;
-			outputFile.open(idaiR.c_str(), ios::out);
-			outputFile<<"\t\t"<<idaiR.c_str()<<"\n";
-			outputFile<<"h_initial: random\n";
-			outputFile<<"\ttime\t\tbound\t\texp\t\tgen\n";
 
-			string fileR = resultFile.c_str() + fileNames.at(i);
-			cout<<fileR<<"\n";
 
-			vector<vector<string> > m = analyzeFile(fileR.c_str());
-			for (size_t i = 0; i < m.size(); i++) {
-				vector<string> v = m.at(i);
+				outputFile<<"\t\t"<<idaiCheck.c_str()<<"\n";
+				outputFile<<"h_initial: random\n";
+				outputFile<<"\ttime\t\tbound\t\texp\t\tgen\n";
 
-				outputFile<<"\t"<<v.at(0);
-                		outputFile<<"\t\t"<<v.at(1);
-                		outputFile<<"\t\t"<<v.at(2);
-                		outputFile<<"\t\t"<<v.at(3);
-                		outputFile<<"\n";
+				vector<vector<string> > m = analyzeFile(resultFile.c_str());
+				for (size_t i = 0; i < m.size(); i++) {
+					vector<string> v = m.at(i);
+
+					outputFile<<"\t"<<v.at(0);
+                			outputFile<<"\t\t"<<v.at(1);
+                			outputFile<<"\t\t"<<v.at(2);
+                			outputFile<<"\t\t"<<v.at(3);
+                			outputFile<<"\n";
+				}
+				outputFile.close();
+				
 			}
-			outputFile.close();
 		}
-		cout<<"\n----\n";
 
+		if (false) {
+			cout<<"directory not found = "<<idaiO.c_str()<<"\n";
+			vector<string> fileNames2;			
+
+			string resultFile;
+			resultFile = "/resultado/";
+                	resultFile = "/problemas/" + domain + resultFile;
+                	resultFile =  heuristic + resultFile;
+                	resultFile = algorithm1  + "/" + resultFile;
+                	resultFile = "marvin/" + resultFile;
+                	resultFile = "marvin/" + resultFile;
+                	resultFile = "/home/"+ resultFile;
+
+			cout<<"resultFile = "<<resultFile.c_str()<<"\n";
+
+			DIR *dir2;
+                	struct dirent *ent2;
+
+                	dir2 = opendir(resultFile.c_str());
+                	if (dir2 != NULL) {
+                        	while ((ent2 = readdir(dir2)) != NULL) {
+                                	string fileName = ent2->d_name;
+                                	string t = fileName;
+                                	size_t  found = t.find(".sw");
+                                	bool is_swp_file = false;
+                                	if (found < 100) {
+                                        	string swp_name_mod = t.substr(found, t.length());
+                                        	cout<<"swp_name_mod = "<<swp_name_mod<<"\n";
+                                        	is_swp_file = true;
+                                	}
+                                	int sizeName = fileName.size();
+                                	if ((sizeName == 1)  || (sizeName == 2) || (is_swp_file)) {
+                                        	//TODO
+                                	} else {
+                                        	fileNames2.push_back(fileName);
+                                	}
+                        	}
+                        	closedir(dir2);
+                	} else {
+                        	cout<<"Error trying to open the directory: "<<resultFile.c_str()<<endl;
+                	}
+
+			for(int i = 0; i < fileNames2.size(); i++) {
+				string idaiR;
+                		idaiR = "/" + fileNames2.at(i);
+                		idaiR = "/reportidai/" + domain + idaiR;
+                		idaiR =  heuristic + idaiR;
+                		idaiR = algorithm1  + "/" + idaiR;
+                		idaiR = "marvin/" + idaiR;
+                		idaiR = "marvin/" + idaiR;
+                		idaiR = "/home/"+ idaiR;
+                                cout<<"idaiR = "<<idaiR.c_str()<<"\n";
+				ofstream outputFile;
+				cout<<"before\n";
+				outputFile.open(idaiR.c_str(), ios::out);
+				cout<<"after\n";
+				outputFile<<"\t\t"<<idaiR.c_str()<<"\n";
+				outputFile<<"h_initial: random\n";
+				outputFile<<"\ttime\t\tbound\t\texp\t\tgen\n";
+				cout<<"after after\n";
+				string fileR = resultFile.c_str() + fileNames2.at(i);
+				cout<<"fileR = "<<fileR<<"\n";
+
+				vector<vector<string> > m = analyzeFile(fileR.c_str());
+				for (size_t i = 0; i < m.size(); i++) {
+					vector<string> v = m.at(i);
+
+					outputFile<<"\t"<<v.at(0);
+                			outputFile<<"\t\t"<<v.at(1);
+                			outputFile<<"\t\t"<<v.at(2);
+                			outputFile<<"\t\t"<<v.at(3);
+                			outputFile<<"\n";
+				}
+				outputFile.close();
+			}
+			cout<<"\n----\n";
+		} //end directory not found
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
 }
