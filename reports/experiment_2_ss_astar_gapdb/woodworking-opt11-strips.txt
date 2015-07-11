@@ -16,14 +16,14 @@ Measure_2:
 
 Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_0:	1.41558e+07
 	gapdb_1:	632940
-	gapdb_5:	3.46298e+06
- - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 4.58425e+06
+	gapdb_3:	2.815e+06
+	gapdb_4:	0
+ - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 5.6288e+06
 
 Comparing Fixed and Random Regrets:
- - Fixed regrets and Random regrets have the same chance to be choosed.
+ - Random regrets is better option than Fixed regrets.
 
 
 instance_name: p02_F_225.csv
@@ -44,11 +44,11 @@ Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
 	gapdb_1:	0
 	gapdb_2:	2.56043e+07
-	gapdb_3:	1.75195e+07
- - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 1.48241e+07
+	gapdb_5:	0
+ - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 7.68129e+06
 
 Comparing Fixed and Random Regrets:
- - Fixed regrets and Random regrets have the same chance to be choosed.
+ - Random regrets is better option than Fixed regrets.
 
 

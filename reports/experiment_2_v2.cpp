@@ -594,51 +594,50 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							}
 						}
 						//outputFile<<"error maximo = "<<count_error<<"\n";
-					}
+						//}//here to remove
 					
-					vector<string> v_ss_regrets_fixed; //To calculate the fixed regrets
-					vector<string> v_ss_regrets_random; //To calculate the random regrets
-					for (size_t q = 0; q < collector_ss.size(); q++) {
-						string a_ss = collector_ss.at(q);
-						v_ss_regrets_random.push_back(a_ss);
-						if (q < threshold) {
-							v_ss_regrets_fixed.push_back(a_ss);
-						}
-					}	
+						vector<string> v_ss_regrets_fixed; //To calculate the fixed regrets
+						vector<string> v_ss_regrets_random; //To calculate the random regrets
+						for (size_t q = 0; q < collector_ss.size(); q++) {
+							string a_ss = collector_ss.at(q);
+							v_ss_regrets_random.push_back(a_ss);
+							if (q < threshold) {
+								v_ss_regrets_fixed.push_back(a_ss);
+							}
+						}	
 
-					vector<string> s_v_three;
-					vector<double> d_v_three;
-					int counter_three = 0;
-					outputFile<<"\nMeasure_1:";
-					if (v_match_fixed_astar_ss.size() > 0) {	
-						for (size_t p = 0; p < v_match_fixed_astar_ss.size(); p++) {
-							string key = v_match_fixed_astar_ss.at(p);
-							map<string, double>::iterator iter = m_astar_percentage.find(key);
-							if (iter != m_astar_percentage.end()) {
-								string s = iter->first;
-								double value = iter->second;
-								//outputFile<<"\t"<<s<<":\t"<<value<<"\n";
-								s_v_three.push_back(s);
-								d_v_three.push_back(value);
-								counter_three++;
+						vector<string> s_v_three;
+						vector<double> d_v_three;
+						int counter_three = 0;
+						outputFile<<"\nMeasure_1:";
+						if (v_match_fixed_astar_ss.size() > 0) {	
+							for (size_t p = 0; p < v_match_fixed_astar_ss.size(); p++) {
+								string key = v_match_fixed_astar_ss.at(p);
+								map<string, double>::iterator iter = m_astar_percentage.find(key);
+								if (iter != m_astar_percentage.end()) {
+									string s = iter->first;
+									double value = iter->second;
+									//outputFile<<"\t"<<s<<":\t"<<value<<"\n";
+									s_v_three.push_back(s);
+									d_v_three.push_back(value);
+									counter_three++;
+								}
 							}
 						}
-					}
 
-
-					//fill the three_first_d
-					for (size_t i = 0; i < three_first_s.size(); i++) {
-						string key = three_first_s.at(i);
-						map<string, double>::iterator iter = m_astar_percentage.find(key);
-						if (iter != m_astar_percentage.end()) {
-							double value = iter->second;
-							three_first_d.push_back(value);
+						//fill the three_first_d
+						for (size_t i = 0; i < three_first_s.size(); i++) {
+							string key = three_first_s.at(i);
+							map<string, double>::iterator iter = m_astar_percentage.find(key);
+							if (iter != m_astar_percentage.end()) {
+								double value = iter->second;
+								three_first_d.push_back(value);
+							}
 						}
-					}
 
-					//Find the best heuristics in order to calculate the regret
-					string best_heuristic = "---";
-					double best_nodes = 0;
+						//Find the best heuristics in order to calculate the regret
+						string best_heuristic = "---";
+						double best_nodes = 0;
 
 					/*
 					if (counter_three == 1) {
@@ -720,172 +719,169 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						outputFile<<" - There are more than three best heuristics.\n";
 					}*/
 
-					int size_s = three_first_s.size(), size_d = three_first_d.size();
-					//cout<<"size_s = "<<size_s<<", size_d = "<<size_d<<"\n";
-					if (size_s == 0 || size_d == 0) {
+						int size_s = three_first_s.size(), size_d = three_first_d.size();
+						cout<<"size_s = "<<size_s<<", size_d = "<<size_d<<"\n";
+						if (size_s == 0 || size_d == 0) {
 
-					} else {	
-						pair<string, double> pData = getPair(three_first_s, three_first_d);
-						best_heuristic = pData.first;
-						best_nodes = pData.second;
-					}
+						} else {	
+							pair<string, double> pData = getPair(three_first_s, three_first_d);
+							best_heuristic = pData.first;
+							best_nodes = pData.second;
+						}
 
-					outputFile<<" - Best heuristic is "<<best_heuristic<<", and number of nodes generated: "<<best_nodes<<"\n";
-					outputFile<<"\nMeasure_2:\n";
-					map<string, double> m_regrets_fixed;
-					for (size_t r = 0; r < v_ss_regrets_fixed.size(); r++) {
-						string name_ss = v_ss_regrets_fixed.at(r);
-						map<string, double>::iterator iter_regret = m_astar_percentage.find(name_ss);
-						if (iter_regret != m_astar_percentage.end()) {
-							string aux_heur = iter_regret->first;
-							double aux_nodes = iter_regret->second;
-							double regret = aux_nodes - best_nodes;
-							m_regrets_fixed.insert(pair<string, double>(aux_heur, regret));
-						}
-					}
-					outputFile<<" - Fixed Regrets:\n";
-					for (map<string, double>::iterator it_r = m_regrets_fixed.begin(); it_r != m_regrets_fixed.end(); it_r++) {
-						string a_heur = it_r->first;
-						double d_nodes = it_r->second;
-						outputFile<<"\t"<<a_heur<<":\t"<<d_nodes<<"\n";
-					}
-					//print the percentage
-					double per_fixed = 0, per_random = 0;
-					if (v_match_fixed_astar_ss.size() > 0) {
-						per_fixed = ((double)v_match_fixed_astar_ss.size()/(double)threshold)*100;
-						outputFile<<" - "<<per_fixed<<"\% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.\n";
-					} else {
-						outputFile<<" - 0\% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.\n";
-					}
-					
-					//Calculate the random generation of regrets
-					map<string, double> m_regrets_random;
-					vector<string> collector_random_ss;
-					double average_regrets = 0, sum_regrets = 0;
-					int counter_regrets = 0;
-					vector<string> v_match_random_astar_ss;
-					int size_max = v_ss_regrets_random.size();						
-					do {
-						int h =   (rand() % (int)(size_max));
-						no_repeat_int.insert(h);
-					} while (no_repeat_int.size() < threshold);
-					
-					//average regrets	
-					do {
-						int h =   (rand() % (int)(size_max));
-						repeat_random_10.push_back(h);
-					} while (repeat_random_10.size() < 10);
-					
-					
-					for (size_t p = 0; p < repeat_random_10.size(); p++) {
-						int h = repeat_random_10.at(p);
-						string name_ss = v_ss_regrets_random.at(h);
-						map<string, double>::iterator iter_regret = m_astar_percentage.find(name_ss);
-						if (iter_regret != m_astar_percentage.end()) {
-							double aux_nodes = iter_regret->second;
-							double regret = aux_nodes - best_nodes;
-							sum_regrets += regret;
-							counter_regrets++;
-						}
-					}
-					average_regrets = (double)sum_regrets/(double)counter_regrets;
-					repeat_random_10.clear();
-					std::set<int>::iterator iter_set;	
-					for (iter_set = no_repeat_int.begin(); iter_set != no_repeat_int.end(); ++iter_set) {
-						int h = *iter_set;
-						string name_ss = v_ss_regrets_random.at(h);
-						collector_random_ss.push_back(name_ss); //add to the collector random
-						map<string, double>::iterator iter_regret = m_astar_percentage.find(name_ss);
-						if (iter_regret != m_astar_percentage.end()) {
-							string aux_heur = iter_regret->first;
-							double aux_nodes = iter_regret->second;
-							double regret = aux_nodes - best_nodes;
-							m_regrets_random.insert(pair<string, double>(aux_heur, regret));
-						}
-					}
-					no_repeat_int.clear();
-					//count the heuristics that matches using the threshold = 3
-					for (size_t p = 0; p < collector_astar.size(); p++) {
-						string a_astar = collector_astar.at(p);					
-						if (p < threshold) {
-							for (size_t q = 0; q < collector_random_ss.size(); q++) {
-								string a_ss = collector_random_ss.at(q);
-								if (a_astar == a_ss) {
-									v_match_random_astar_ss.push_back(a_astar);
-								}
+						outputFile<<" - Best heuristic is "<<best_heuristic<<", and number of nodes generated: "<<best_nodes<<"\n";
+						outputFile<<"\nMeasure_2:\n";
+						map<string, double> m_regrets_fixed;
+						for (size_t r = 0; r < v_ss_regrets_fixed.size(); r++) {
+							string name_ss = v_ss_regrets_fixed.at(r);
+							map<string, double>::iterator iter_regret = m_astar_percentage.find(name_ss);
+							if (iter_regret != m_astar_percentage.end()) {
+								string aux_heur = iter_regret->first;
+								double aux_nodes = iter_regret->second;
+								double regret = aux_nodes - best_nodes;
+								m_regrets_fixed.insert(pair<string, double>(aux_heur, regret));
 							}
 						}
-					}
+						outputFile<<" - Fixed Regrets:\n";
+						for (map<string, double>::iterator it_r = m_regrets_fixed.begin(); it_r != m_regrets_fixed.end(); it_r++) {
+							string a_heur = it_r->first;
+							double d_nodes = it_r->second;
+							outputFile<<"\t"<<a_heur<<":\t"<<d_nodes<<"\n";
+						}
+						//print the percentage
+						double per_fixed = 0, per_random = 0;
+						if (v_match_fixed_astar_ss.size() > 0) {
+							per_fixed = ((double)v_match_fixed_astar_ss.size()/(double)threshold)*100;
+							outputFile<<" - "<<per_fixed<<"\% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.\n";
+						} else {
+							outputFile<<" - 0\% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.\n";
+						}
 					
-					outputFile<<"\nMeasure_3:\n";
-					outputFile<<" - Random Regrets: SS's heuristic random selection, size = 3\n";
-					for (map<string, double>::iterator it_r = m_regrets_random.begin(); it_r != m_regrets_random.end(); it_r++) {
-						string a_heur = it_r->first;
-						double d_nodes = it_r->second;
-						outputFile<<"\t"<<a_heur<<":\t"<<d_nodes<<"\n";
-					}
-
-					//print the percentage
-					if (v_match_random_astar_ss.size() > 0) {
-						per_random = ((double)v_match_random_astar_ss.size()/(double)threshold)*100;
-						outputFile<<" - "<<per_random<<"\% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.\n";
-					} else {
-						outputFile<<" - 0\% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.\n";
-					}
-					outputFile<<" - Average regret chosing heuristics 10 times: "<<average_regrets<<"\n"; 
-
-
-					outputFile<<"\nComparing Fixed and Random Regrets:\n";
-					if (per_fixed == per_random) {
-						outputFile<<" - Fixed regrets and Random regrets have the same chance to be choosed.\n";
-					} else if (per_fixed > per_random) {
-						outputFile<<" - Fixed regrets is better option than Random regrets.\n";
-					} else {
-						outputFile<<" - Random regrets is better option than Fixed regrets.\n";
-					}
-
-					outputFile<<"\n\n";
-					//Measure of error minimo
-					int count_error_final = 0, count_good_final = 0;
-					for(map<string, vector<string> >::iterator fiter1 = group_map_astar.begin();
-						fiter1 != group_map_astar.end(); fiter1++) {
-						string name1 = fiter1->first;
-						vector<string> v1 = fiter1->second;
-						for (map<string, vector<string> >::iterator fiter2 = group_map_ss.begin();
-							fiter2 != group_map_ss.end(); fiter2++) {
-							string name2 = fiter2->first;
-							vector<string> v2 = fiter2->second;
-							int count_availables = 0;
-							if (name1 == name2) {
-								for (size_t t1 = 0; t1 < v1.size(); t1++) {
-									string s1 = v1.at(t1);
-									for (size_t t2 = 0; t2 < v2.size(); t2++) {
-										string s2 = v2.at(t2);
-										if (s1 == s2) {
-											count_availables++;
-										}
+						//Calculate the random generation of regrets
+						map<string, double> m_regrets_random;
+						vector<string> collector_random_ss;
+						double average_regrets = 0, sum_regrets = 0;
+						int counter_regrets = 0;
+						vector<string> v_match_random_astar_ss;
+						int size_max = v_ss_regrets_random.size();						
+						do {
+							int h =   (rand() % (int)(size_max));
+							no_repeat_int.insert(h);
+						} while (no_repeat_int.size() < threshold);
+					
+						//average regrets	
+						do {
+							int h =   (rand() % (int)(size_max));
+							repeat_random_10.push_back(h);
+						} while (repeat_random_10.size() < 10);
+					
+						for (size_t p = 0; p < repeat_random_10.size(); p++) {
+							int h = repeat_random_10.at(p);
+							string name_ss = v_ss_regrets_random.at(h);
+							map<string, double>::iterator iter_regret = m_astar_percentage.find(name_ss);
+							if (iter_regret != m_astar_percentage.end()) {
+								double aux_nodes = iter_regret->second;
+								double regret = aux_nodes - best_nodes;
+								sum_regrets += regret;
+								counter_regrets++;
+							}
+						}
+						average_regrets = (double)sum_regrets/(double)counter_regrets;
+						repeat_random_10.clear();
+						std::set<int>::iterator iter_set;	
+						for (iter_set = no_repeat_int.begin(); iter_set != no_repeat_int.end(); ++iter_set) {
+							int h = *iter_set;
+							string name_ss = v_ss_regrets_random.at(h);
+							collector_random_ss.push_back(name_ss); //add to the collector random
+							map<string, double>::iterator iter_regret = m_astar_percentage.find(name_ss);
+							if (iter_regret != m_astar_percentage.end()) {
+								string aux_heur = iter_regret->first;
+								double aux_nodes = iter_regret->second;
+								double regret = aux_nodes - best_nodes;
+								m_regrets_random.insert(pair<string, double>(aux_heur, regret));
+							}
+						}
+						no_repeat_int.clear();
+						//count the heuristics that matches using the threshold = 3
+						for (size_t p = 0; p < collector_astar.size(); p++) {
+							string a_astar = collector_astar.at(p);					
+							if (p < threshold) {
+								for (size_t q = 0; q < collector_random_ss.size(); q++) {
+									string a_ss = collector_random_ss.at(q);
+									if (a_astar == a_ss) {
+										v_match_random_astar_ss.push_back(a_astar);
 									}
 								}
-							} 
-							if (count_availables > 0) {
-								count_good_final++;
 							}
 						}
-					}
-					size_t map1_size = group_map_astar.size(), map2_size = group_map_ss.size();
-					int max = map1_size;
-					if (map2_size > max) {
-						max = map2_size;
-					}
-					count_error_final = max - count_good_final;
+					
+						outputFile<<"\nMeasure_3:\n";
+						outputFile<<" - Random Regrets: SS's heuristic random selection, size = 3\n";
+						for (map<string, double>::iterator it_r = m_regrets_random.begin(); it_r != m_regrets_random.end(); it_r++) {
+							string a_heur = it_r->first;
+							double d_nodes = it_r->second;
+							outputFile<<"\t"<<a_heur<<":\t"<<d_nodes<<"\n";
+						}
 
-					if (count_error >= 0 && count_error_final >= 0) {
-						//outputFile<<"error maximo = "<<count_error<<"\n";
-						//outputFile<<"error minimo = "<<count_error_final<<"\n";
+						//print the percentage
+						if (v_match_random_astar_ss.size() > 0) {
+							per_random = ((double)v_match_random_astar_ss.size()/(double)threshold)*100;
+							outputFile<<" - "<<per_random<<"\% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.\n";
+						} else {
+							outputFile<<" - 0\% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.\n";
+						}
+						outputFile<<" - Average regret chosing heuristics 10 times: "<<average_regrets<<"\n"; 
+						outputFile<<"\nComparing Fixed and Random Regrets:\n";
+						if (per_fixed == per_random) {
+							outputFile<<" - Fixed regrets and Random regrets have the same chance to be choosed.\n";
+						} else if (per_fixed > per_random) {
+							outputFile<<" - Fixed regrets is better option than Random regrets.\n";
+						} else {
+							outputFile<<" - Random regrets is better option than Fixed regrets.\n";
+						}
+
+						outputFile<<"\n\n";
+						//Measure of error minimo
+						int count_error_final = 0, count_good_final = 0;
+						for(map<string, vector<string> >::iterator fiter1 = group_map_astar.begin();
+							fiter1 != group_map_astar.end(); fiter1++) {
+							string name1 = fiter1->first;
+							vector<string> v1 = fiter1->second;
+							for (map<string, vector<string> >::iterator fiter2 = group_map_ss.begin();
+								fiter2 != group_map_ss.end(); fiter2++) {
+								string name2 = fiter2->first;
+								vector<string> v2 = fiter2->second;
+								int count_availables = 0;
+								if (name1 == name2) {
+									for (size_t t1 = 0; t1 < v1.size(); t1++) {
+										string s1 = v1.at(t1);
+										for (size_t t2 = 0; t2 < v2.size(); t2++) {
+											string s2 = v2.at(t2);
+											if (s1 == s2) {
+												count_availables++;
+											}
+										}
+									}
+								} 
+								if (count_availables > 0) {
+									count_good_final++;
+								}
+							}
+						}
+						size_t map1_size = group_map_astar.size(), map2_size = group_map_ss.size();
+						int max = map1_size;
+						if (map2_size > max) {
+							max = map2_size;
+						}
+						count_error_final = max - count_good_final;
+
+						if (count_error >= 0 && count_error_final >= 0) {
+							//outputFile<<"error maximo = "<<count_error<<"\n";
+							//outputFile<<"error minimo = "<<count_error_final<<"\n";
+						}
 					}
 				}
-			}
-
+			} // end validation of the size
 		}
 		outputFile.close();
 	    	countRead = countRead + 1;

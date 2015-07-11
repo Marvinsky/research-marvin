@@ -18,7 +18,7 @@ Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
 	gapdb_1:	0
 	gapdb_3:	0
-	gapdb_5:	0
+	gapdb_4:	0
  - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
  - Average regret chosing heuristics 10 times: 0
 
@@ -42,11 +42,11 @@ Measure_2:
 
 Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_1:	2
+	gapdb_0:	0
 	gapdb_3:	2
-	gapdb_4:	2
+	gapdb_5:	2
  - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 1.2
+ - Average regret chosing heuristics 10 times: 0.6
 
 Comparing Fixed and Random Regrets:
  - Fixed regrets is better option than Random regrets.
@@ -68,9 +68,9 @@ Measure_2:
 
 Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_1:	0
+	gapdb_0:	0
 	gapdb_2:	0
-	gapdb_4:	0
+	gapdb_3:	0
  - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
  - Average regret chosing heuristics 10 times: 0
 
@@ -94,11 +94,11 @@ Measure_2:
 
 Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_0:	0
 	gapdb_2:	0
 	gapdb_3:	3
-	gapdb_4:	3
- - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 0.6
+ - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 1.2
 
 Comparing Fixed and Random Regrets:
  - Fixed regrets is better option than Random regrets.
@@ -120,10 +120,10 @@ Measure_2:
 
 Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_2:	0
 	gapdb_3:	0
+	gapdb_4:	0
 	gapdb_5:	0
- - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - 0% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
  - Average regret chosing heuristics 10 times: 0
 
 Comparing Fixed and Random Regrets:
@@ -147,10 +147,10 @@ Measure_2:
 Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
 	gapdb_0:	0
+	gapdb_3:	0
 	gapdb_4:	8
-	gapdb_5:	8
- - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 4.8
+ - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 2.4
 
 Comparing Fixed and Random Regrets:
  - Fixed regrets is better option than Random regrets.
@@ -172,14 +172,14 @@ Measure_2:
 
 Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_1:	0
-	gapdb_2:	0
+	gapdb_0:	0
 	gapdb_3:	0
- - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+	gapdb_4:	0
+ - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
  - Average regret chosing heuristics 10 times: 0
 
 Comparing Fixed and Random Regrets:
- - Fixed regrets and Random regrets have the same chance to be choosed.
+ - Fixed regrets is better option than Random regrets.
 
 
 instance_name: problem05-half_F_18.csv
@@ -199,13 +199,13 @@ Measure_2:
 Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
 	gapdb_0:	0
-	gapdb_4:	165
-	gapdb_5:	78
- - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 106.8
+	gapdb_2:	0
+	gapdb_3:	78
+ - 100% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 63.3
 
 Comparing Fixed and Random Regrets:
- - Fixed regrets is better option than Random regrets.
+ - Random regrets is better option than Fixed regrets.
 
 
 instance_name: problem06-half_F_23.csv
@@ -225,10 +225,10 @@ Measure_2:
 Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
 	gapdb_0:	1260
-	gapdb_3:	0
-	gapdb_5:	1260
+	gapdb_1:	0
+	gapdb_4:	1260
  - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 882
+ - Average regret chosing heuristics 10 times: 1008
 
 Comparing Fixed and Random Regrets:
  - Fixed regrets and Random regrets have the same chance to be choosed.

@@ -16,11 +16,11 @@ Measure_2:
 
 Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_1:	599
 	gapdb_2:	309
 	gapdb_4:	2051
+	gapdb_5:	1041
  - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 966.2
+ - Average regret chosing heuristics 10 times: 482.8
 
 Comparing Fixed and Random Regrets:
  - Fixed regrets is better option than Random regrets.
@@ -42,40 +42,20 @@ Measure_2:
 
 Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
+	gapdb_0:	40
+	gapdb_1:	0
 	gapdb_2:	147
-	gapdb_4:	280
-	gapdb_5:	459
- - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 230.7
+ - 100% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 182
 
 Comparing Fixed and Random Regrets:
- - Fixed regrets is better option than Random regrets.
+ - Fixed regrets and Random regrets have the same chance to be choosed.
 
 
 instance_name: p03_F_426587.csv
 
 A*:		{(gapdb_4, 2638),(gapdb_3, 3146),(gapdb_2, 4165),(gapdb_0, 5992),(gapdb_5, 6121),}
 ss:		{(gapdb_0, 0),(gapdb_1, 258648),(gapdb_3, 6.26012e+06),(gapdb_4, 6.26012e+06),(gapdb_5, 6.26012e+06),(gapdb_2, 2.06246e+07),}
-
-Measure_1: - Best heuristic is ---, and number of nodes generated: 0
-
-Measure_2:
- - Fixed Regrets:
-	gapdb_0:	5992
-	gapdb_3:	3146
- - 0% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.
-
-Measure_3:
- - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_0:	5992
-	gapdb_2:	4165
- - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 3948.44
-
-Comparing Fixed and Random Regrets:
- - Random regrets is better option than Fixed regrets.
-
-
 instance_name: p05_F_511235.csv
 
 A*:		{(gapdb_4, 58673),(gapdb_5, 71825),(gapdb_1, 81238),(gapdb_0, 89709),(gapdb_3, 92660),(gapdb_2, 116815),}
@@ -92,14 +72,14 @@ Measure_2:
 
 Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_1:	22565
+	gapdb_0:	31036
 	gapdb_2:	58142
-	gapdb_4:	0
- - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 25962.2
+	gapdb_3:	33987
+ - 0% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 25569.2
 
 Comparing Fixed and Random Regrets:
- - Random regrets is better option than Fixed regrets.
+ - Fixed regrets is better option than Random regrets.
 
 
 instance_name: p08_F_735648.csv
@@ -118,14 +98,14 @@ Measure_2:
 
 Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_0:	3.45034e+06
-	gapdb_1:	4.02196e+06
-	gapdb_3:	3.82904e+06
- - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 3.48317e+06
+	gapdb_2:	0
+	gapdb_4:	3.38761e+06
+	gapdb_5:	4.07635e+06
+ - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 2.96252e+06
 
 Comparing Fixed and Random Regrets:
- - Fixed regrets is better option than Random regrets.
+ - Fixed regrets and Random regrets have the same chance to be choosed.
 
 
 instance_name: p09_F_609395.csv
@@ -144,13 +124,13 @@ Measure_2:
 
 Measure_3:
  - Random Regrets: SS's heuristic random selection, size = 3
-	gapdb_0:	612597
+	gapdb_2:	58430
 	gapdb_3:	483033
 	gapdb_4:	126766
- - 33.3333% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
- - Average regret chosing heuristics 10 times: 190237
+ - 66.6667% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.
+ - Average regret chosing heuristics 10 times: 196059
 
 Comparing Fixed and Random Regrets:
- - Fixed regrets and Random regrets have the same chance to be choosed.
+ - Random regrets is better option than Fixed regrets.
 
 
