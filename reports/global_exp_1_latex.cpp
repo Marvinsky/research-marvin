@@ -229,7 +229,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			vector<double> v_ida_time;
 			vector<double> v_ss_value;
 			vector<double> v_ss_time;
-			vector<int> v_problems_solved;
+			vector<double> v_problems_solved;
 
 			string expFile;
         		expFile = openFile + "/" + experiment;
@@ -277,7 +277,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 				v_ida_time.push_back(atof(domains[i][2].c_str()));
 				v_ss_value.push_back(atof(domains[i][3].c_str()));
 				v_ss_time.push_back(atof(domains[i][4].c_str()));
-				v_problems_solved.push_back(atoi(domains[i][5].c_str()));
+				v_problems_solved.push_back(atof(domains[i][5].c_str()));
 			}
 
 
@@ -288,6 +288,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 				double ida_time = v_ida_time.at(i);
 				double ss_value = v_ss_value.at(i);
 				double ss_time = v_ss_time.at(i);
+				double n_solved = v_problems_solved.at(i);
 				//cout<<"key = "<<key<<", ida_value = "<<ida_value<<", ida_time = "<<ida_time<<", ss_value = "<<ss_value<<", ss_time = "<<ss_time<<"\n";
 				if (ida_value == 0 && ida_time == 0 && ss_time == 0 && ss_time == 0) {
 					all_data.push_back(-1);
@@ -299,6 +300,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 					all_data.push_back(ida_time);
 					all_data.push_back(ss_value);
 					all_data.push_back(ss_time);
+					all_data.push_back(n_solved);
 				}
 
 				map_column.insert(pair<string, vector<double> >(key, all_data));
@@ -337,7 +339,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 						v_data_rows.push_back(value);
 					}
 					if (size_probes == counter + 1) {
-						if (i == 0 || i == 1) {
+						if (i == 0 || i == 1 || i == 4) {
 							double d = column.at(i);
 							v_data_rows_ida.push_back(d);
 						}
@@ -405,8 +407,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	cout<<"\\label{my-label}\n";
 	outputFile<<"\\label{my-label}\n";
 
-	cout<<"\\begin{tabular}{l@{\\hspace{6pt}} *{12}{c}}\n";
-	outputFile<<"\\begin{tabular}{l@{\\hspace{6pt}} *{12}{c}}\n";
+	cout<<"\\begin{tabular}{l@{\\hspace{6pt}} *{13}{c}}\n";
+	outputFile<<"\\begin{tabular}{l@{\\hspace{6pt}} *{13}{c}}\n";
 
 	cout<<"\\hline\n";
 	outputFile<<"\\hline\n";
@@ -416,13 +418,13 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
         outputFile<<left<<setw(24)<<"\t";
         for (size_t i = 0; i < heuristics.size();i++) {
                 if (i > 0) {
-			cout<<"                         & \\multicolumn{10}{c}{"<<heuristics.at(i)<<"}                                                                                                          & \\multicolumn{2}{l}{}      \\\\ \\hline\n";
-			outputFile<<"                         & \\multicolumn{10}{c}{"<<heuristics.at(i)<<"}                                                                                                          & \\multicolumn{2}{l}{}      \\\\ \\hline\n";
+			cout<<"                         & \\multicolumn{11}{c}{"<<heuristics.at(i)<<"}                                                                                                          & \\multicolumn{2}{l}{}      \\\\ \\hline\n";
+			outputFile<<"                         & \\multicolumn{11}{c}{"<<heuristics.at(i)<<"}                                                                                                          & \\multicolumn{2}{l}{}      \\\\ \\hline\n";
                         //cout<<right<<setw(135)<<heuristics.at(i);
                         //outputFile<<right<<setw(135)<<heuristics.at(i);
                 } else {
-			cout<<"                         & \\multicolumn{10}{c}{"<<heuristics.at(i)<<"}                                                                                                          & \\multicolumn{2}{l}{}      \\\\ \\hline\n";
-			outputFile<<"                         & \\multicolumn{10}{c}{"<<heuristics.at(i)<<"}                                                                                                          & \\multicolumn{2}{l}{}      \\\\ \\hline\n";
+			cout<<"                         & \\multicolumn{11}{c}{"<<heuristics.at(i)<<"}                                                                                                          & \\multicolumn{2}{l}{}      \\\\ \\hline\n";
+			outputFile<<"                         & \\multicolumn{11}{c}{"<<heuristics.at(i)<<"}                                                                                                          & \\multicolumn{2}{l}{}      \\\\ \\hline\n";
                         //cout<<right<<setw(40)<<heuristics.at(i);
                         //outputFile<<right<<setw(40)<<heuristics.at(i);
                 }
@@ -485,21 +487,21 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		if (n == -1) {
 			      //cout<<right<<setw(30)<<"|          ida*          time|";//setw(20)
 			//outputFile<<right<<setw(30)<<"|          ida*          time|";//setw(20)
-				cout<<"& ida*  & ida-time  ";
-			  outputFile<<"& ida*  & ida-time  ";
+				cout<<"& ida*  & ida*-time  & n";
+			  outputFile<<"& ida*  & ida*-time  & n";
 			is_ida_time = true;
 		} else {
 			if (is_ida_time) {
 				      //cout<<right<<setw(28)<<"|  ss-err    ss-t|";
 				//outputFile<<right<<setw(28)<<"|  ss-err    ss-t|";
-				      cout<<"& ss-err  & ss-t  ";
-				outputFile<<"& ss-err  & ss-t  ";
+				      cout<<"& error  & time  ";
+				outputFile<<"& error  & time  ";
 				is_ida_time = false;
 			} else {
 				      //cout<<right<<setw(18)<<"|  ss-err    ss-t|";
 				//outputFile<<right<<setw(18)<<"|  ss-err    ss-t|";
-			              cout<<"& ss-err  & ss-t  ";
-				outputFile<<"& ss-err  & ss-t  ";
+			              cout<<"& error  & time  ";
+				outputFile<<"& error  & time  ";
 			}
 		}
 	}
