@@ -1,27 +1,27 @@
 	Experiment 2: Regrets fixed and random information using three heuristics.
 
-                                                           gapdb
+                                                 gapdb
 
 Domain                                 fixed              random                   n
 
 barman-opt11-strips                      ---                 ---                 ---
-blocks                           1539626.370         1070588.975                  18
-elevators-opt08-strips            673406.000          689211.222                   4
-elevators-opt11-strips             63326.667           94596.667                   2
+blocks                               202.353             418.294                  17
+elevators-opt08-strips             63313.333           68985.333                   2
+elevators-opt11-strips             63326.667           62933.333                   2
 floortile-opt11-strips                   ---                 ---                 ---
-nomystery-opt11-strips            512719.167          477606.597                   8
+nomystery-opt11-strips            152076.095          142259.190                   7
 openstacks-opt08-adl                     ---                 ---                 ---
 openstacks-opt08-strips                  ---                 ---                 ---
 openstacks-opt11-strips                  ---                 ---                 ---
-parcprinter-opt11-strips          440344.500          415638.019                   6
+parcprinter-opt11-strips          544003.200          550596.133                   5
 parking-opt11-strips                     ---                 ---                 ---
-pegsol-opt11-strips               153023.961          131606.144                  17
+pegsol-opt11-strips               165191.711          183464.556                  15
 scanalyzer-opt11-strips                0.190               0.381                   7
 sokoban-opt08-strips                     ---                 ---                 ---
 sokoban-opt11-strips                     ---                 ---                 ---
 tidybot-opt11-strips                   0.000               0.000                   3
 transport-opt08-strips                 0.000               0.000                   1
 transport-opt11-strips                   ---                 ---                 ---
-visitall-opt11-strips                 49.630             146.407                   9
-woodworking-opt08-strips         4944657.524         3646077.302                   7
-woodworking-opt11-strips        11152260.000         5431680.000                   2
+visitall-opt11-strips                 49.630              96.778                   9
+woodworking-opt08-strips         1963313.889         2274092.778                   3
+woodworking-opt11-strips        11468723.333         4842040.000                   2
