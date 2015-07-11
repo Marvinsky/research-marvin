@@ -67,6 +67,55 @@ bool isIdaInfo(int i, vector<int> format_before) {
 }
 
 
+string domainConvertor(string key) {
+	string r;
+	if (key == "barman-opt11-strips") {
+		r = "barman-opt11";
+	} else if (key == "blocks") {
+		r = "blocks";
+	} else if (key == "elevators-opt08-strips") {
+		r = "elevators-opt08";
+	} else if (key == "elevators-opt11-strips") {
+		r = "elevators-opt11";
+	} else if (key == "floortile-opt11-strips") {
+		r = "floortile-opt11";
+	} else if (key == "nomystery-opt11-strips") {
+		r = "nomystery-opt11";
+	} else if (key == "openstacks-opt08-adl") {
+		r = "openstacks-adl";
+	} else if (key == "openstacks-opt08-strips") {
+		r = "openstacks-opt08";
+	} else if (key == "openstacks-opt11-strips") {
+		r = "openstacks-opt11";
+	} else if (key == "parcprinter-opt11-strips") {
+		r = "parcprinter-opt11";
+	} else if (key == "parking-opt11-strips") {
+		r = "parking-opt11";
+	} else if (key == "pegsol-opt11-strips") {
+		r = "pegsol-opt11";
+	} else if (key == "scanalyzer-opt11-strips") {
+		r = "scanalyzer-opt11";
+	} else if (key == "sokoban-opt08-strips") {
+		r = "sokoban-opt08";
+	} else if (key == "sokoban-opt11-strips") {
+		r = "sokoban-opt11";
+	} else if (key == "tidybot-opt11-strips") {
+		r = "tidybot-opt11";
+	} else if (key == "transport-opt08-strips") {
+		r = "transport-opt08";
+	} else if (key == "transport-opt11-strips") {
+		r = "transport-opt11";
+	} else if (key == "visitall-opt11-strips") {
+		r = "visitall-opt11";
+	} else if (key == "woodworking-opt08-strips") {
+		r = "woodworking-opt08";
+	} else if (key == "woodworking-opt11-strips") {
+		r = "woodworking-opt08";
+	}
+	return r;
+}
+
+
 void create_report1(vector<string> heuristics, string algorithm1, string algorithm2, int countProblems) {
 
 	//int countRead = 0;
@@ -463,9 +512,9 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 		vector<double> b = itmap_table2->second; //collector of columns
 		
 		int weight_domain = 24, weight_fixed = 9;
-		
-		cout<<left<<setw(weight_domain)<<a;
-		outputFile<<left<<setw(weight_domain)<<a;
+		string domain = domainConvertor(a);
+		cout<<left<<setw(weight_domain)<<domain;
+		outputFile<<left<<setw(weight_domain)<<domain;
 		bool set_ida_info = false;
 		for (size_t i = 0; i < b.size(); i++) {
 			double d = b.at(i);	
@@ -501,14 +550,14 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 					if (set_ida_info) {
 						//cout<<right<<setw(19)<<fixed<<setprecision(3)<<d;	
 						//outputFile<<right<<setw(19)<<fixed<<setprecision(3)<<d;
-						cout<<"& "<<fixed<<setprecision(3)<<d<<" ";
-						outputFile<<"& "<<fixed<<setprecision(3)<<d<<" ";
+						cout<<"& "<<fixed<<setprecision(2)<<d<<" ";
+						outputFile<<"& "<<fixed<<setprecision(2)<<d<<" ";
 						set_ida_info = false;
 					} else {
 						//cout<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;	
 						//outputFile<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;
-						cout<<"& "<<fixed<<setprecision(3)<<d<<" ";
-						outputFile<<"& "<<fixed<<setprecision(3)<<d<<" ";
+						cout<<"& "<<fixed<<setprecision(2)<<d<<" ";
+						outputFile<<"& "<<fixed<<setprecision(2)<<d<<" ";
 					}
 				}
 			}
