@@ -243,7 +243,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
         	resultFile = "marvin/" + resultFile;
         	resultFile = "marvin/" + resultFile;
         	resultFile = "/home/"+ resultFile;
-        	cout<<"\nresultFile = "<<resultFile<<"\n";
+        	//cout<<"\nresultFile = "<<resultFile<<"\n";
 
 		ofstream outputFile;
 		outputFile.open(resultFile.c_str(), ios::out);
@@ -381,7 +381,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			astarBC_key += "_F_";
 			astarBC_key += threshold_v;
 			astarBC_key += ".csv";
-			cout<<"astarBC_key = "<<astarBC_key<<"\n";
+			//cout<<"astarBC_key = "<<astarBC_key<<"\n";
 			map<string, double > map_bc_astar;//store the gapdb info
 			string delimiter = "_";
 			for (size_t i = 0; i < fileNames4.size(); i++) {
@@ -429,19 +429,21 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			map_bc_file_astar.insert(pair<string, vector<pair<string, double > > >(astarBC_key, sort_v));
 		}
 
-
 		map<string, vector<pair<string, double> > >::iterator iter_m;
 		for (iter_m = map_bc_file_astar.begin(); iter_m != map_bc_file_astar.end(); iter_m++) {
 			string astarBC = iter_m->first;
+			//cout<<"astarBC = "<<astarBC<<"\n";
 			vector<pair<string, double> > m_values = iter_m->second;
-			cout<<"file: "<<astarBC<<"\n";
+			//cout<<"m_values.size() = "<<m_values.size()<<"\n";
+			//cout<<"file: "<<astarBC<<"\n";
 
 			for (size_t j = 0; j < fileNames.size(); j++) {
 				string ssBC = fileNames.at(j);
-				//cout<<"ssBC = "<<ssBC<<"\n";
+				//cout<<"\t\tssBC = "<<ssBC<<"\n";
 				string output_ssBC = output + ssBC;
-				//cout<<"output_ssBC = "<<output_ssBC<<"\n";
+				//cout<<"output_ssBC = "<<output_ssBC<<"\n\n";
 				if (astarBC == ssBC) {
+					//cout<<"astarBC == ssBC\n";
 					vector<string> collector_astar, collector_ss;
 					map<double, vector<string> > map_astar, map_ss;
 
@@ -455,6 +457,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					typedef std::vector<std::pair<std::string, double> > vector_type;
 					for (vector_type::const_iterator pos = m_values.begin(); pos != m_values.end(); ++pos)
 					{
+						//cout<<"into the vector_type\n";
    						string s = pos->first;
 				                string t = s;
 						int found = t.find("_");
@@ -569,6 +572,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					//Measure of error maximo
 					int count_error = 0, threshold = 3;
 					vector<string> v_match_fixed_astar_ss;
+					vector<string> three_first_s;
+					vector<double> three_first_d;
 					if (collector_astar.size() == collector_ss.size()) {
 						for (size_t p = 0; p < collector_astar.size(); p++) {
 							string a_astar = collector_astar.at(p), a_ss = collector_ss.at(p);
@@ -576,6 +581,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								count_error++;	
 							}
 							if (p < threshold) {
+								//cout<<"added: "<<a_astar<<"\n";
+								three_first_s.push_back(a_astar);
 								for (size_t q = 0; q < collector_ss.size(); q++) {
 									string a_ss_inner = collector_ss.at(q);
 									if (q < threshold) {
@@ -617,14 +624,23 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							}
 						}
 					}
-					
-					//pair<string, double> pairData = getPair(s_v_three, d_v_three);
+
+
+					//fill the three_first_d
+					for (size_t i = 0; i < three_first_s.size(); i++) {
+						string key = three_first_s.at(i);
+						map<string, double>::iterator iter = m_astar_percentage.find(key);
+						if (iter != m_astar_percentage.end()) {
+							double value = iter->second;
+							three_first_d.push_back(value);
+						}
+					}
+
 					//Find the best heuristics in order to calculate the regret
-					string best_heuristic; // = pairData.first;
-					double best_nodes; // = pairData.second;
-					//cout<<"best_heuristic = "<<best_heuristic<<"\n";
-					//cout<<"best_nodes = "<<best_nodes<<"\n";
-					
+					string best_heuristic = "---";
+					double best_nodes = 0;
+
+					/*
 					if (counter_three == 1) {
 						string hname = s_v_three.at(0);
 						double hvalue = d_v_three.at(0);
@@ -702,6 +718,16 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							}
 					} else {
 						outputFile<<" - There are more than three best heuristics.\n";
+					}*/
+
+					int size_s = three_first_s.size(), size_d = three_first_d.size();
+					//cout<<"size_s = "<<size_s<<", size_d = "<<size_d<<"\n";
+					if (size_s == 0 || size_d == 0) {
+
+					} else {	
+						pair<string, double> pData = getPair(three_first_s, three_first_d);
+						best_heuristic = pData.first;
+						best_nodes = pData.second;
 					}
 
 					outputFile<<" - Best heuristic is "<<best_heuristic<<", and number of nodes generated: "<<best_nodes<<"\n";
