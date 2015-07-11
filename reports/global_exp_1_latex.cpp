@@ -295,6 +295,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 					all_data.push_back(-1);
 					all_data.push_back(-1);
 					all_data.push_back(-1);
+					all_data.push_back(-1);
 				} else {
 					all_data.push_back(ida_value);
 					all_data.push_back(ida_time);
@@ -407,8 +408,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	cout<<"\\label{my-label}\n";
 	outputFile<<"\\label{my-label}\n";
 
-	cout<<"\\begin{tabular}{l@{\\hspace{6pt}} *{13}{c}}\n";
-	outputFile<<"\\begin{tabular}{l@{\\hspace{6pt}} *{13}{c}}\n";
+	cout<<"\\begin{tabular}{l@{\\hspace{6pt}} *{13}{|r}}\n";
+	outputFile<<"\\begin{tabular}{l@{\\hspace{6pt}} *{13}{|r}}\n";
 
 	cout<<"\\hline\n";
 	outputFile<<"\\hline\n";
@@ -440,6 +441,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
         //modify index_probes
         vector<int> format_before;  //print correctly the ida informatin
+	vector<int> v_nsolved; // the number of the column that contains the number of problem solved
         for (int i = 0;  i < count_amount_heur; i++) {
                 int p = i + 1;
                 int q = i;
@@ -448,8 +450,12 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
                 int n1 = index * 2;
                 int n2 = index * 2 + 1;
+		int n3 = n2 + 1;
                 format_before.push_back(n1);
                 format_before.push_back(n2);
+		format_before.push_back(n3);
+
+		v_nsolved.push_back(n3);
         }
 
 	int index_counter_probes = index_probes.size();
@@ -545,8 +551,13 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 				if (isIdaInfo(i, format_before)) {
 					//cout<<right<<setw(15)<<d;
 					//outputFile<<right<<setw(15)<<d;
-					cout<<"& "<<d<<" ";
-					outputFile<<"& "<<d<<" ";
+					if (isIdaInfo(i, v_nsolved)) {
+							cout<<"& "<<(int)d<<" ";
+							outputFile<<"& "<<(int)d<<" ";
+					} else {
+							cout<<"& "<<d<<" ";
+							outputFile<<"& "<<d<<" ";
+					}
 					set_ida_info = true;
 				} else {
 					if (set_ida_info) {

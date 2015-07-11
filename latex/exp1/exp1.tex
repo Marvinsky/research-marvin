@@ -356,6 +356,43 @@ The Table \ref{table4} using {merge\_and\_shrink} has more unsolved domains and 
 
 Generally, the ss-err decreases for the most part of the domains when the number of probes increases. I think SS gives us good predictions for IDA*.
 
+\begin{table}[]
+\footnotesize\setlength{\tabcolsep}{1.8pt}
+\caption{Experiment 1 - Comparison using hmax heuristic}
+\label{my-label}
+\begin{tabular}{l@{\hspace{6pt}} *{13}{|r}}
+\hline
+                                                        & \multicolumn{11}{c}{hmax}                                                                                                          & \multicolumn{2}{l}{}      \\ \hline
+
+                  & \multicolumn{2}{c|}{1} & \multicolumn{2}{c|}{10} & \multicolumn{2}{c|}{100} & \multicolumn{2}{c|}{1000} & \multicolumn{2}{c|}{5000}                   \\ \hline
+Domain                  & error  & time  & error  & time  & error  & time  & error  & time  & error  & time  & ida*  & ida*-time  & n\\ \hline
+barman-opt11            & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\ \hline
+blocks                  & 2.65 & 0.00 & 1.11 & 0.18 & 0.50 & 2.27 & 0.16 & 23.30 & 0.09 & 116.33 & 156474000.00 & 10770.90 & 13 \\ \hline
+elevators-opt08         & 5.53 & 7.32 & 4.82 & 75.70 & 1.79 & 739.50 & 1.78 & 7571.86 & 1.55 & 37949.90 & 1604640.00 & 4358.74 & 1 \\ \hline
+elevators-opt11         & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\ \hline
+floortile-opt11         & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\ \hline
+nomystery-opt11         & 9.20 & 0.04 & 2.47 & 0.36 & 0.74 & 3.71 & 0.37 & 36.85 & 0.13 & 183.90 & 2911010.00 & 289.45 & 6 \\ \hline
+openstacks-adl          & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\ \hline
+openstacks-opt08        & 0.19 & 0.67 & 0.14 & 6.64 & 0.13 & 67.23 & 0.14 & 679.13 & 0.15 & 3365.82 & 361346.00 & 786.51 & 5 \\ \hline
+openstacks-opt11        & 0.00 & 0.86 & 0.00 & 8.30 & 0.00 & 80.40 & 0.00 & 798.20 & 0.00 & 4196.76 & 195.00 & 2.56 & 1 \\ \hline
+parcprinter-opt11       & 0.00 & 0.00 & 0.00 & 0.04 & 0.00 & 0.39 & 0.00 & 3.34 & 0.00 & 17.29 & 1.00 & 0.00 & 20 \\ \hline
+parking-opt11           & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\ \hline
+pegsol-opt11            & 0.29 & 0.01 & 0.11 & 0.08 & 0.03 & 0.85 & 0.03 & 7.93 & 0.01 & 39.33 & 151280.00 & 11.00 & 20 \\ \hline
+scanalyzer-opt11        & 0.96 & 0.08 & 0.18 & 0.12 & 0.12 & 0.88 & 0.03 & 8.08 & 0.02 & 39.92 & 101.00 & 0.16 & 1 \\ \hline
+sokoban-opt08           & 0.11 & 0.04 & 0.31 & 0.35 & 0.29 & 3.52 & 0.02 & 30.99 & 0.02 & 155.11 & 5545.65 & 1.81 & 20 \\ \hline
+sokoban-opt11           & 1.80 & 0.04 & 0.14 & 0.33 & 0.12 & 3.32 & 0.02 & 33.01 & 0.01 & 162.38 & 8245.92 & 2.62 & 13 \\ \hline
+tidybot-opt11           & 3.75 & 5.73 & 1.58 & 29.97 & 0.61 & 287.37 & 0.27 & 2843.17 & 0.19 & 15769.20 & 2716460.00 & 17900.10 & 3 \\ \hline
+transport-opt08         & 0.62 & 0.00 & 0.22 & 0.00 & 0.02 & 0.04 & 0.02 & 0.80 & 0.01 & 4.08 & 38.00 & 0.00 & 1 \\ \hline
+transport-opt11         & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\ \hline
+visitall-opt11          & 0.45 & 0.00 & 0.19 & 0.00 & 0.07 & 0.28 & 0.02 & 3.20 & 0.02 & 16.25 & 5363080.00 & 96.12 & 7 \\ \hline
+woodworking-opt08       & 7.06 & 0.10 & 5.48 & 1.25 & 1.70 & 12.90 & 0.53 & 129.28 & 0.35 & 646.35 & 5190350.00 & 1023.72 & 4 \\ \hline
+woodworking-opt08       & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
 \newpage
 %Imports the bibliography file "references.bib"
 \bibliography{references}
