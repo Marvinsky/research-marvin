@@ -205,7 +205,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 
 				outputFile<<"\t\t"<<idaiCheck.c_str()<<"\n";
-				outputFile<<"h_initial: random\n";
+				outputFile<<"h_initial: "<<0<<"\n";
 				outputFile<<"\ttime\t\tbound\t\texp\t\tgen\n";
 
 				vector<vector<string> > m = analyzeFile(resultFile.c_str());
