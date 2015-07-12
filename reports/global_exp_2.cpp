@@ -160,7 +160,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			string experiment = fileNames.at(i);
 			//cout<<"experiment = "<<experiment<<"\n";
 			string expFile = openFile + "/" + experiment;
-			//cout<<"expFile = "<<expFile<<"\n";
+			cout<<"expFile = "<<expFile<<"\n";
 			ifstream fexp(expFile.c_str());
 
 			
@@ -193,6 +193,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 							to_number1 = atof(value_gapdb1.c_str());
 							to_number2 = atof(value_gapdb2.c_str());
 							to_number3 = atof(value_gapdb3.c_str());
+							//cout<<to_number1<<", "<<to_number2<<", "<<to_number3<<"\n";
 							double average = (to_number1 + to_number2 + to_number3)/3;
 							//cout<<"average = "<<average<<"\n\n";
 							v_fixed.push_back(average);
@@ -229,6 +230,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 							to_number1 = atof(value_gapdb1.c_str());
 							to_number2 = atof(value_gapdb2.c_str());
 							to_number3 = atof(value_gapdb3.c_str());
+							//cout<<to_number1<<", "<<to_number2<<", "<<to_number3<<"\n";
+
 							double average = (to_number1 + to_number2 + to_number3)/3;
 							//cout<<"average = "<<average<<"\n\n";
 							v_random.push_back(average);
@@ -282,6 +285,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 				//cout<<"\t- "<<d<<"\n";
 				sum_random += d;
 			}
+			//cout<<"\n";
 			if (size > 0) {
 				average_domain = sum_random/size;
 				cout<<"("<<key<<", "<<average_domain<<")\n";

@@ -1,8 +1,8 @@
 	Experiment 2: Regrets fixed and random information using three heuristics.
 
-                                                 gapdb
+                                                           gapdb
 
-Domain                                 fixed              random                   n
+Domain                                           fixed              random                   n
 
 barman-opt11-strips                      ---                 ---                 ---
 blocks                               202.353             418.294                  17
