@@ -648,8 +648,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					if (index_collector.size() == 0) {
 						outputFile<<"- There are no match between ratio heuristics.\n";
 					} else {
-
 						multimap<double, pair<int, int> >::iterator iter;
+						outputFile<<"- The heuristics that have the same ratio are:\n";
 						for (iter = ratiomap.begin(); iter != ratiomap.end(); iter++) {
 							double ratio = iter->first;
 							pair<int, int> pratio = iter->second;
@@ -666,10 +666,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							outputFile<<"\t"<<name1<<", "<<name2<<"\n";
 						}
 
-
-
-
-						/*typedef std::vector<std::pair<int, int> > vector_type3;
+						/*
+						typedef std::vector<std::pair<int, int> > vector_type3;
 						outputFile<<"- The heuristics that have the same ratio are:\n";
 						for (vector_type3::const_iterator pos3 = index_collector.begin(); pos3 != index_collector.end(); ++pos3) {
 							int first_heur = pos3->first;

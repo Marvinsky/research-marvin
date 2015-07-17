@@ -6,6 +6,7 @@ A*:		{(gapdb_0, 112),(gapdb_1, 112),(gapdb_2, 112),(gapdb_3, 112),(gapdb_4, 112)
 ss:		{(gapdb_0, 60.006),(gapdb_1, 60.006),(gapdb_2, 60.006),(gapdb_3, 60.006),(gapdb_4, 60.006),(gapdb_5, 60.006),}
 
 Measure_1:
+- The heuristics that have the same ratio are:
 	gapdb_0, gapdb_1
 	gapdb_0, gapdb_2
 	gapdb_0, gapdb_3

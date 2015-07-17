@@ -6,6 +6,7 @@ A*:		{(gapdb_0, 118),(gapdb_1, 118),(gapdb_2, 122),(gapdb_3, 118),(gapdb_4, 122)
 ss:		{(gapdb_0, 20.155),(gapdb_1, 20.155),(gapdb_2, 20.155),(gapdb_3, 20.155),(gapdb_4, 33.951),(gapdb_5, 20.155),}
 
 Measure_1:
+- The heuristics that have the same ratio are:
 	gapdb_0, gapdb_1
 	gapdb_0, gapdb_3
 	gapdb_1, gapdb_0
@@ -22,6 +23,7 @@ A*:		{(gapdb_0, 552780),(gapdb_1, 552780),(gapdb_2, 552780),(gapdb_3, 552780),(g
 ss:		{(gapdb_0, 779617),(gapdb_1, 6.46814e+08),(gapdb_2, 61565.6),(gapdb_3, 74705),(gapdb_4, 74705),(gapdb_5, 61565.6),}
 
 Measure_1:
+- The heuristics that have the same ratio are:
 	gapdb_2, gapdb_5
 	gapdb_3, gapdb_4
 	gapdb_4, gapdb_3
@@ -34,6 +36,7 @@ A*:		{(gapdb_0, 460780),(gapdb_1, 460780),(gapdb_2, 460780),(gapdb_3, 460780),(g
 ss:		{(gapdb_0, 1.57655e+06),(gapdb_1, 1.06869e+07),(gapdb_2, 9.10233e+09),(gapdb_3, 1.57655e+06),(gapdb_4, 1.06869e+07),(gapdb_5, 1.24846e+07),}
 
 Measure_1:
+- The heuristics that have the same ratio are:
 	gapdb_0, gapdb_3
 	gapdb_1, gapdb_4
 	gapdb_3, gapdb_0
@@ -46,6 +49,7 @@ A*:		{(gapdb_0, 3.29646e+08),(gapdb_1, 3.29646e+08),(gapdb_2, 3.29646e+08),(gapd
 ss:		{(gapdb_0, 1.4256e+15),(gapdb_1, 1.1982e+12),(gapdb_2, 3.44983e+26),(gapdb_3, 3.44983e+26),(gapdb_4, 1.14169e+11),(gapdb_5, 3.44983e+26),}
 
 Measure_1:
+- The heuristics that have the same ratio are:
 	gapdb_2, gapdb_3
 	gapdb_2, gapdb_5
 	gapdb_3, gapdb_2
@@ -60,6 +64,7 @@ A*:		{(gapdb_0, 8.24485e+07),(gapdb_1, 8.24485e+07),(gapdb_2, 8.24485e+07),(gapd
 ss:		{(gapdb_0, 1.11151e+08),(gapdb_1, 2.70482e+16),(gapdb_2, 5.70323e+09),(gapdb_3, 2.70482e+16),(gapdb_4, 2.70482e+16),(gapdb_5, 2.38738e+07),}
 
 Measure_1:
+- The heuristics that have the same ratio are:
 	gapdb_1, gapdb_3
 	gapdb_1, gapdb_4
 	gapdb_3, gapdb_1
@@ -74,6 +79,7 @@ A*:		{(gapdb_0, 5.16041e+07),(gapdb_1, 5.16041e+07),(gapdb_2, 5.16041e+07),(gapd
 ss:		{(gapdb_0, 2.91921e+10),(gapdb_1, 2.2832e+08),(gapdb_2, 1.18567e+21),(gapdb_3, 1.18567e+21),(gapdb_4, 1.18567e+21),(gapdb_5, 5.05545e+08),}
 
 Measure_1:
+- The heuristics that have the same ratio are:
 	gapdb_2, gapdb_3
 	gapdb_2, gapdb_4
 	gapdb_3, gapdb_2
@@ -88,6 +94,7 @@ A*:		{(gapdb_0, 6.188e+07),(gapdb_1, 6.188e+07),(gapdb_2, 6.188e+07),(gapdb_3, 6
 ss:		{(gapdb_0, 9.09906e+08),(gapdb_1, 1.91561e+07),(gapdb_2, 1.28119e+18),(gapdb_3, 1.28119e+18),(gapdb_4, 1.28119e+18),(gapdb_5, 1.27073e+11),}
 
 Measure_1:
+- The heuristics that have the same ratio are:
 	gapdb_2, gapdb_3
 	gapdb_2, gapdb_4
 	gapdb_3, gapdb_2

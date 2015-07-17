@@ -6,6 +6,7 @@ A*:		{(gapdb_0, 539),(gapdb_1, 539),(gapdb_2, 539),(gapdb_3, 539),(gapdb_4, 539)
 ss:		{(gapdb_0, 252.008),(gapdb_1, 252.008),(gapdb_2, 252.008),(gapdb_3, 252.008),(gapdb_4, 252.008),(gapdb_5, 252.008),}
 
 Measure_1:
+- The heuristics that have the same ratio are:
 	gapdb_0, gapdb_1
 	gapdb_0, gapdb_2
 	gapdb_0, gapdb_3
@@ -44,6 +45,7 @@ A*:		{(gapdb_0, 58389),(gapdb_1, 58389),(gapdb_2, 58389),(gapdb_3, 58389),(gapdb
 ss:		{(gapdb_0, 1.17344e+07),(gapdb_1, 3.59507e+07),(gapdb_2, 3.595e+07),(gapdb_3, 1.31975e+08),(gapdb_4, 3.59507e+07),(gapdb_5, 1.31975e+08),}
 
 Measure_1:
+- The heuristics that have the same ratio are:
 	gapdb_1, gapdb_4
 	gapdb_4, gapdb_1
 
@@ -54,6 +56,7 @@ A*:		{(gapdb_0, 85479),(gapdb_1, 85479),(gapdb_2, 85479),(gapdb_3, 85479),(gapdb
 ss:		{(gapdb_0, 1.24878e+08),(gapdb_1, 7.31873e+07),(gapdb_2, 4.46951e+08),(gapdb_3, 4.46951e+08),(gapdb_4, 4.48732e+08),(gapdb_5, 1.24878e+08),}
 
 Measure_1:
+- The heuristics that have the same ratio are:
 	gapdb_0, gapdb_5
 	gapdb_2, gapdb_3
 	gapdb_3, gapdb_2
