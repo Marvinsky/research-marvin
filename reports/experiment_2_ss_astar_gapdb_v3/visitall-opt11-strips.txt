@@ -1,0 +1,137 @@
+Experiment 2: visitall-opt11-strips using gapdb heuristic with 1000 probes
+
+instance_name: problem02-full_F_3.csv
+
+A*:		{(gapdb_0, 22),(gapdb_1, 22),(gapdb_2, 22),(gapdb_3, 22),(gapdb_4, 22),(gapdb_5, 22),}
+ss:		{(gapdb_0, 11.979),(gapdb_1, 11.979),(gapdb_3, 11.979),(gapdb_5, 11.979),(gapdb_4, 15.979),(gapdb_2, 20.003),}
+
+Measure_1:
+- The heuristics that have the same ratio are:
+	gapdb_1, gapdb_0
+	gapdb_2, gapdb_0
+	gapdb_3, gapdb_0
+	gapdb_0, gapdb_1
+	gapdb_2, gapdb_1
+	gapdb_3, gapdb_1
+	gapdb_0, gapdb_2
+	gapdb_1, gapdb_2
+	gapdb_3, gapdb_2
+	gapdb_0, gapdb_3
+	gapdb_1, gapdb_3
+	gapdb_2, gapdb_3
+
+
+instance_name: problem02-half_F_1.csv
+
+A*:		{(gapdb_0, 2),(gapdb_2, 2),(gapdb_1, 4),(gapdb_3, 4),(gapdb_4, 4),(gapdb_5, 4),}
+ss:		{(gapdb_0, 2.003),(gapdb_1, 2.003),(gapdb_2, 2.003),(gapdb_3, 2.003),(gapdb_4, 2.003),(gapdb_5, 2.003),}
+
+Measure_1:
+- The heuristics that have the same ratio are:
+	gapdb_1, gapdb_0
+	gapdb_0, gapdb_1
+	gapdb_3, gapdb_2
+	gapdb_4, gapdb_2
+	gapdb_5, gapdb_2
+	gapdb_2, gapdb_3
+	gapdb_4, gapdb_3
+	gapdb_5, gapdb_3
+	gapdb_2, gapdb_4
+	gapdb_3, gapdb_4
+	gapdb_5, gapdb_4
+	gapdb_2, gapdb_5
+	gapdb_3, gapdb_5
+	gapdb_4, gapdb_5
+
+
+instance_name: problem03-full_F_8.csv
+
+A*:		{(gapdb_0, 1980),(gapdb_1, 1980),(gapdb_2, 1980),(gapdb_3, 1980),(gapdb_4, 1980),(gapdb_5, 1980),}
+ss:		{(gapdb_0, 148.579),(gapdb_2, 148.579),(gapdb_3, 148.579),(gapdb_5, 180.08),(gapdb_1, 281.931),(gapdb_4, 289.784),}
+
+Measure_1:
+- The heuristics that have the same ratio are:
+	gapdb_1, gapdb_0
+	gapdb_2, gapdb_0
+	gapdb_0, gapdb_1
+	gapdb_2, gapdb_1
+	gapdb_0, gapdb_2
+	gapdb_1, gapdb_2
+
+
+instance_name: problem03-half_F_6.csv
+
+A*:		{(gapdb_0, 203),(gapdb_1, 203),(gapdb_2, 203),(gapdb_5, 203),(gapdb_3, 206),(gapdb_4, 206),}
+ss:		{(gapdb_0, 13.841),(gapdb_1, 13.841),(gapdb_2, 13.841),(gapdb_5, 13.841),(gapdb_3, 61.345),(gapdb_4, 1185.02),}
+
+Measure_1:
+- The heuristics that have the same ratio are:
+	gapdb_1, gapdb_0
+	gapdb_2, gapdb_0
+	gapdb_3, gapdb_0
+	gapdb_0, gapdb_1
+	gapdb_2, gapdb_1
+	gapdb_3, gapdb_1
+	gapdb_0, gapdb_2
+	gapdb_1, gapdb_2
+	gapdb_3, gapdb_2
+	gapdb_0, gapdb_3
+	gapdb_1, gapdb_3
+	gapdb_2, gapdb_3
+
+
+instance_name: problem04-full_F_15.csv
+
+A*:		{(gapdb_0, 200136),(gapdb_1, 200136),(gapdb_2, 200136),(gapdb_3, 200136),(gapdb_4, 200136),(gapdb_5, 200136),}
+ss:		{(gapdb_2, 598.697),(gapdb_1, 1063.56),(gapdb_3, 1868.2),(gapdb_5, 6659.28),(gapdb_4, 7217.59),(gapdb_0, 2.94681e+08),}
+
+Measure_1:
+- There are no match between ratio heuristics.
+
+
+instance_name: problem04-half_F_11.csv
+
+A*:		{(gapdb_0, 2955),(gapdb_1, 2955),(gapdb_3, 2955),(gapdb_2, 2963),(gapdb_4, 2963),(gapdb_5, 2963),}
+ss:		{(gapdb_0, 85.151),(gapdb_1, 85.151),(gapdb_3, 85.151),(gapdb_5, 85.151),(gapdb_2, 106.983),(gapdb_4, 1427.18),}
+
+Measure_1:
+- The heuristics that have the same ratio are:
+	gapdb_1, gapdb_0
+	gapdb_2, gapdb_0
+	gapdb_0, gapdb_1
+	gapdb_2, gapdb_1
+	gapdb_0, gapdb_2
+	gapdb_1, gapdb_2
+
+
+instance_name: problem05-full_F_24.csv
+
+A*:		{(gapdb_0, 6.29384e+07),(gapdb_1, 6.29384e+07),(gapdb_2, 6.29384e+07),(gapdb_3, 6.29384e+07),(gapdb_4, 6.29384e+07),(gapdb_5, 6.29384e+07),}
+ss:		{(gapdb_2, 130070),(gapdb_4, 2.99583e+06),(gapdb_0, 2.99632e+06),(gapdb_1, 1.02755e+07),(gapdb_5, 1.27218e+07),(gapdb_3, 1.91984e+07),}
+
+Measure_1:
+- There are no match between ratio heuristics.
+
+
+instance_name: problem05-half_F_18.csv
+
+A*:		{(gapdb_0, 351472),(gapdb_2, 351472),(gapdb_3, 351550),(gapdb_5, 351550),(gapdb_1, 351637),(gapdb_4, 351637),}
+ss:		{(gapdb_0, 1527.14),(gapdb_2, 1527.14),(gapdb_5, 2022.26),(gapdb_3, 3186.05),(gapdb_4, 64257.8),(gapdb_1, 3.74543e+10),}
+
+Measure_1:
+- The heuristics that have the same ratio are:
+	gapdb_1, gapdb_0
+	gapdb_0, gapdb_1
+
+
+instance_name: problem06-half_F_23.csv
+
+A*:		{(gapdb_1, 1.47148e+06),(gapdb_3, 1.47148e+06),(gapdb_0, 1.47274e+06),(gapdb_2, 1.47274e+06),(gapdb_4, 1.47274e+06),(gapdb_5, 1.47274e+06),}
+ss:		{(gapdb_1, 82.117),(gapdb_3, 82.117),(gapdb_2, 42197.7),(gapdb_0, 114564),(gapdb_5, 249043),(gapdb_4, 4.80748e+13),}
+
+Measure_1:
+- The heuristics that have the same ratio are:
+	gapdb_1, gapdb_0
+	gapdb_0, gapdb_1
+
+

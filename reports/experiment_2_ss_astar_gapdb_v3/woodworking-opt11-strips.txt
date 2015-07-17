@@ -1,0 +1,20 @@
+Experiment 2: woodworking-opt11-strips using gapdb heuristic with 1000 probes
+
+instance_name: p01_F_195.csv
+
+A*:		{(gapdb_4, 5.18665e+06),(gapdb_1, 5.81959e+06),(gapdb_2, 8.00021e+06),(gapdb_3, 8.00165e+06),(gapdb_5, 8.64963e+06),(gapdb_0, 1.93425e+07),}
+ss:		{(gapdb_1, 4.94219e+09),(gapdb_0, 7.00792e+09),(gapdb_3, 4.00013e+10),(gapdb_2, 4.27663e+10),(gapdb_4, 4.84896e+10),(gapdb_5, 8.3883e+10),}
+
+Measure_1:
+- There are no match between ratio heuristics.
+
+
+instance_name: p02_F_225.csv
+
+A*:		{(gapdb_1, 1.00722e+07),(gapdb_5, 1.00722e+07),(gapdb_0, 2.75917e+07),(gapdb_3, 2.75917e+07),(gapdb_2, 3.56765e+07),(gapdb_4, 3.56765e+07),}
+ss:		{(gapdb_1, 4.36659e+09),(gapdb_2, 1.15157e+10),(gapdb_4, 2.23206e+10),(gapdb_5, 2.45434e+10),(gapdb_3, 2.46428e+10),(gapdb_0, 3.7419e+10),}
+
+Measure_1:
+- There are no match between ratio heuristics.
+
+

@@ -1,0 +1,22 @@
+Experiment 2: elevators-opt11-strips using gapdb heuristic with 1000 probes
+
+instance_name: p01_F_56.csv
+
+A*:		{(gapdb_3, 2.58713e+06),(gapdb_1, 2.77471e+06),(gapdb_4, 2.77471e+06),(gapdb_5, 2.77471e+06),(gapdb_0, 2.77707e+06),(gapdb_2, 2.77707e+06),}
+ss:		{(gapdb_3, 2545.11),(gapdb_0, 4.89108e+07),(gapdb_2, 6.15922e+07),(gapdb_1, 1.06369e+08),(gapdb_4, 1.06369e+08),(gapdb_5, 1.06369e+08),}
+
+Measure_1:
+- The heuristics that have the same ratio are:
+	gapdb_5, gapdb_4
+	gapdb_4, gapdb_5
+
+
+instance_name: p03_F_54.csv
+
+A*:		{(gapdb_2, 3.5547e+06),(gapdb_0, 3.55474e+06),(gapdb_1, 3.55474e+06),(gapdb_3, 3.55474e+06),(gapdb_4, 3.55474e+06),(gapdb_5, 3.55474e+06),}
+ss:		{(gapdb_3, 1.5731e+08),(gapdb_4, 6.61851e+08),(gapdb_2, 1.64062e+09),(gapdb_5, 1.76359e+09),(gapdb_0, 1.76375e+09),(gapdb_1, 1.33041e+10),}
+
+Measure_1:
+- There are no match between ratio heuristics.
+
+
