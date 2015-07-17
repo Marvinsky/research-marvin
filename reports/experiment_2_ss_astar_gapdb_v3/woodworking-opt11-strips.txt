@@ -3,18 +3,37 @@ Experiment 2: woodworking-opt11-strips using gapdb heuristic with 1000 probes
 instance_name: p01_F_195.csv
 
 A*:		{(gapdb_0, 1.93425e+07),(gapdb_1, 5.81959e+06),(gapdb_2, 8.00021e+06),(gapdb_3, 8.00165e+06),(gapdb_4, 5.18665e+06),(gapdb_5, 8.64963e+06),}
-ss:		{(gapdb_0, 7.00792e+09),(gapdb_1, 4.94219e+09),(gapdb_2, 4.27663e+10),(gapdb_3, 4.00013e+10),(gapdb_4, 4.84896e+10),(gapdb_5, 8.3883e+10),}
+ss:		{(gapdb_0, 7007923402.01),(gapdb_1, 4942191952.01),(gapdb_2, 42766267150.00),(gapdb_3, 40001344482.01),(gapdb_4, 48489592872.01),(gapdb_5, 83882982652.01),}
 
 Measure_1:
-- There are no match between ratio heuristics.
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_4, gapdb_2):	0.65	-	1.13	=	-0.49
+	(gapdb_1, gapdb_0):	0.30	-	0.71	=	-0.40
+	(gapdb_2, gapdb_3):	1.00	-	1.07	=	-0.07
+	(gapdb_5, gapdb_4):	1.67	-	1.73	=	-0.06
+	(gapdb_4, gapdb_5):	0.60	-	0.58	=	0.02
+	(gapdb_3, gapdb_2):	1.00	-	0.94	=	0.06
+	(gapdb_2, gapdb_5):	0.92	-	0.51	=	0.42
+	(gapdb_3, gapdb_5):	0.93	-	0.48	=	0.45
 
 
 instance_name: p02_F_225.csv
 
-A*:		{(gapdb_0, 2.75917e+07),(gapdb_1, 1.00722e+07),(gapdb_2, 3.56765e+07),(gapdb_3, 2.75917e+07),(gapdb_4, 3.56765e+07),(gapdb_5, 1.00722e+07),}
-ss:		{(gapdb_0, 3.7419e+10),(gapdb_1, 4.36659e+09),(gapdb_2, 1.15157e+10),(gapdb_3, 2.46428e+10),(gapdb_4, 2.23206e+10),(gapdb_5, 2.45434e+10),}
+A*:		{(gapdb_0, 27591700.00),(gapdb_1, 10072200.00),(gapdb_2, 35676500.00),(gapdb_3, 27591700.00),(gapdb_4, 35676500.00),(gapdb_5, 10072200.00),}
+ss:		{(gapdb_0, 37418980651.70),(gapdb_1, 4366590548.40),(gapdb_2, 11515728404.30),(gapdb_3, 24642798497.40),(gapdb_4, 22320646596.60),(gapdb_5, 24543414270.00),}
 
 Measure_1:
-- There are no match between ratio heuristics.
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_3, gapdb_4):	0.77	-	1.10	=	-0.33
+	(gapdb_5, gapdb_0):	0.37	-	0.66	=	-0.29
+	(gapdb_1, gapdb_2):	0.28	-	0.38	=	-0.10
+	(gapdb_1, gapdb_4):	0.28	-	0.20	=	0.09
+	(gapdb_1, gapdb_3):	0.37	-	0.18	=	0.19
+	(gapdb_1, gapdb_0):	0.37	-	0.12	=	0.25
+	(gapdb_3, gapdb_0):	1.00	-	0.66	=	0.34
+	(gapdb_4, gapdb_3):	1.29	-	0.91	=	0.39
+	(gapdb_2, gapdb_4):	1.00	-	0.52	=	0.48
 
 

@@ -193,6 +193,15 @@ vector<pair<string, double> >  analyzeFile(string output_BC, bool first_paramete
 	return mapcopy;
 }
 
+//check if the difference between the ratios are in the range
+bool isInRange(double ss, double a, double range) {
+	if (abs(ss - a) > range) {
+		return false;
+	} else {
+		return true;
+	}
+}
+
 
 pair<string, double> getPair(vector<string> s_v_three, vector<double> d_v_three) {
 	string s1 = s_v_three.at(0), s2 = s_v_three.at(1), s3 = s_v_three.at(2);
@@ -468,6 +477,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					add_lines_heuristics.clear();					
 					outputFile<<"A*:\t\t{";
 					map<string, double> m_astar_percentage;
+					map<string, double> m_ss_percentage;
 					map<string, string> heuristic_description;
 
 					//enhance 3: create matrix fracss
@@ -572,7 +582,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						fracastar[i] = new double[total_heuristics2];
 					}
 
-					outputFile<<"ss:\t\t{";
+					outputFile<<setprecision(2)<<fixed<<"ss:\t\t{";
 
 					typedef std::vector<std::pair<std::string, double> > vector_type2;
 					int row_count2 = 0;
@@ -582,7 +592,10 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
    						string s = pos2->first;
 						double d = pos2->second;
 						collector_ss.push_back(s);
+						cout<<"("<<s<<", "<<d<<"),";
 						outputFile<<"("<<s<<", "<<d<<"),";
+						m_ss_percentage.insert(pair<string, double>(s, d)); //insert data into m_ss_percentage
+
 						typedef std::vector<std::pair<std::string, double> > vector_type_inner2;	
 						vector<string> ga_name2;
 						int col_count2 = 0;
@@ -631,10 +644,11 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						for (int i = 0; i < total_heuristics; i++) {
 							for (int j = 0; j < total_heuristics; j++) {
 								if (i != j) {
-									if (fracss[i][j] == fracastar[i][j]) {
+									if (isInRange(fracss[i][j], fracastar[i][j], 0.5)) { //-1 + 1
 										//cout<<i<<", "<<j<<"\n";
 										index_collector.push_back(pair<int, int>(i, j));
-										ratiomap.insert(pair<double, pair<int, int> >(fracss[i][j],  pair<int, int>(i, j)));	
+										double diffssa = fracss[i][j] - fracastar[i][j];
+										ratiomap.insert(pair<double, pair<int, int> >(diffssa, pair<int, int>(i, j)));
 									}
 								}
 							}
@@ -649,9 +663,10 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						outputFile<<"- There are no match between ratio heuristics.\n";
 					} else {
 						multimap<double, pair<int, int> >::iterator iter;
-						outputFile<<"- The heuristics that have the same ratio are:\n";
+						outputFile<<"- The heuristics that have the similar ratio are:\n";
+						outputFile<<"\t(h1     ,h2     ):\tfracss\t-\tfracastar\t=\tdiff\n";
 						for (iter = ratiomap.begin(); iter != ratiomap.end(); iter++) {
-							double ratio = iter->first;
+							double diff = iter->first;
 							pair<int, int> pratio = iter->second;
 						
 							int first_heur = pratio.first;
@@ -662,13 +677,27 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							string name1 = "gapdb_"+number1.str();
 							string name2 = "gapdb_"+number2.str();
 
-							cout<<"("<<name1<<", "<<name2<<"): ";
-							outputFile<<"\t"<<name1<<", "<<name2<<"\n";
+							/*
+							//info string, double for m_astar_percentage for astar
+ 							map<string, double>::iterator iter1 = m_astar_percentage.find(name1);
+							double expastar = 0;
+							if (iter1 != m_astar_percentage.end()) {
+								expastar = iter1->second;
+							}
+
+							//info string, double for m_ss_percentage for ss
+							map<string, double>::iterator iter2 = m_ss_percentage.find(name2);
+							double expss = 0;
+							if (iter2 != m_ss_percentage.end()) {
+								expss = iter2->second;
+							}*/
+
+							cout<<"("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
+							outputFile<<"\t("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
 						}
 
-						/*
-						typedef std::vector<std::pair<int, int> > vector_type3;
-						outputFile<<"- The heuristics that have the same ratio are:\n";
+						/*typedef std::vector<std::pair<int, int> > vector_type3;
+						outputFile<<"- The heuristics that have similar ratio are:\n";
 						for (vector_type3::const_iterator pos3 = index_collector.begin(); pos3 != index_collector.end(); ++pos3) {
 							int first_heur = pos3->first;
 							int second_heur = pos3->second;
@@ -678,7 +707,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							string name1 = "gapdb_"+number1.str();
 							string name2 = "gapdb_"+number2.str();
 
-							cout<<"("<<name1<<", "<<name2<<"): ";
+							cout<<"("<<name1<<"/"<<name2<<"): \n";
 							outputFile<<"\t"<<name1<<", "<<name2<<"\n";
 						}*/
 					}

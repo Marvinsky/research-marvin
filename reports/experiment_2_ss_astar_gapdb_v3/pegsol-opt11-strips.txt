@@ -3,43 +3,93 @@ Experiment 2: pegsol-opt11-strips using gapdb heuristic with 1000 probes
 instance_name: p01_F_2.csv
 
 A*:		{(gapdb_0, 520),(gapdb_1, 418),(gapdb_2, 520),(gapdb_3, 520),(gapdb_4, 520),(gapdb_5, 416),}
-ss:		{(gapdb_0, 47.482),(gapdb_1, 22.636),(gapdb_2, 34.562),(gapdb_3, 53.554),(gapdb_4, 202.441),(gapdb_5, 55.282),}
+ss:		{(gapdb_0, 47.48),(gapdb_1, 22.64),(gapdb_2, 34.56),(gapdb_3, 53.55),(gapdb_4, 202.44),(gapdb_5, 55.28),}
 
 Measure_1:
-- There are no match between ratio heuristics.
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_0, gapdb_2):	1.00	-	1.37	=	-0.37
+	(gapdb_5, gapdb_0):	0.80	-	1.16	=	-0.36
+	(gapdb_2, gapdb_1):	1.24	-	1.53	=	-0.28
+	(gapdb_5, gapdb_3):	0.80	-	1.03	=	-0.23
+	(gapdb_3, gapdb_0):	1.00	-	1.13	=	-0.13
+	(gapdb_0, gapdb_3):	1.00	-	0.89	=	0.11
+	(gapdb_1, gapdb_2):	0.80	-	0.65	=	0.15
+	(gapdb_2, gapdb_0):	1.00	-	0.73	=	0.27
+	(gapdb_3, gapdb_5):	1.25	-	0.97	=	0.28
+	(gapdb_1, gapdb_0):	0.80	-	0.48	=	0.33
+	(gapdb_2, gapdb_3):	1.00	-	0.65	=	0.35
+	(gapdb_1, gapdb_3):	0.80	-	0.42	=	0.38
+	(gapdb_0, gapdb_5):	1.25	-	0.86	=	0.39
 
 
 instance_name: p02_F_4.csv
 
-A*:		{(gapdb_0, 607543),(gapdb_1, 523447),(gapdb_2, 607543),(gapdb_3, 607543),(gapdb_4, 607543),(gapdb_5, 502777),}
-ss:		{(gapdb_0, 8226.18),(gapdb_1, 25068),(gapdb_2, 41450.4),(gapdb_3, 22268.1),(gapdb_4, 668285),(gapdb_5, 16529),}
+A*:		{(gapdb_0, 607543.00),(gapdb_1, 523447.00),(gapdb_2, 607543.00),(gapdb_3, 607543.00),(gapdb_4, 607543.00),(gapdb_5, 502777.00),}
+ss:		{(gapdb_0, 8226.18),(gapdb_1, 25067.95),(gapdb_2, 41450.44),(gapdb_3, 22268.06),(gapdb_4, 668284.66),(gapdb_5, 16528.99),}
 
 Measure_1:
-- There are no match between ratio heuristics.
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_2, gapdb_1):	1.16	-	1.65	=	-0.49
+	(gapdb_1, gapdb_5):	1.04	-	1.52	=	-0.48
+	(gapdb_1, gapdb_3):	0.86	-	1.13	=	-0.26
+	(gapdb_3, gapdb_5):	1.21	-	1.35	=	-0.14
+	(gapdb_5, gapdb_3):	0.83	-	0.74	=	0.09
+	(gapdb_1, gapdb_2):	0.86	-	0.60	=	0.26
+	(gapdb_3, gapdb_1):	1.16	-	0.89	=	0.27
+	(gapdb_5, gapdb_1):	0.96	-	0.66	=	0.30
+	(gapdb_5, gapdb_2):	0.83	-	0.40	=	0.43
+	(gapdb_3, gapdb_2):	1.00	-	0.54	=	0.46
 
 
 instance_name: p03_F_6.csv
 
-A*:		{(gapdb_0, 125359),(gapdb_1, 103755),(gapdb_2, 125359),(gapdb_3, 125359),(gapdb_4, 125359),(gapdb_5, 99792),}
-ss:		{(gapdb_0, 252042),(gapdb_1, 194567),(gapdb_2, 388130),(gapdb_3, 201372),(gapdb_4, 3.90383e+06),(gapdb_5, 198205),}
+A*:		{(gapdb_0, 125359.00),(gapdb_1, 103755.00),(gapdb_2, 125359.00),(gapdb_3, 125359.00),(gapdb_4, 125359.00),(gapdb_5, 99792.00),}
+ss:		{(gapdb_0, 252041.93),(gapdb_1, 194567.29),(gapdb_2, 388130.05),(gapdb_3, 201371.71),(gapdb_4, 3903825.25),(gapdb_5, 198204.91),}
 
 Measure_1:
-- There are no match between ratio heuristics.
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_0, gapdb_3):	1.00	-	1.25	=	-0.25
+	(gapdb_5, gapdb_3):	0.80	-	0.98	=	-0.19
+	(gapdb_1, gapdb_3):	0.83	-	0.97	=	-0.14
+	(gapdb_0, gapdb_1):	1.21	-	1.30	=	-0.09
+	(gapdb_5, gapdb_1):	0.96	-	1.02	=	-0.06
+	(gapdb_0, gapdb_5):	1.26	-	1.27	=	-0.02
+	(gapdb_5, gapdb_0):	0.80	-	0.79	=	0.01
+	(gapdb_1, gapdb_0):	0.83	-	0.77	=	0.06
+	(gapdb_1, gapdb_5):	1.04	-	0.98	=	0.06
+	(gapdb_3, gapdb_1):	1.21	-	1.03	=	0.17
+	(gapdb_3, gapdb_0):	1.00	-	0.80	=	0.20
+	(gapdb_3, gapdb_5):	1.26	-	1.02	=	0.24
+	(gapdb_5, gapdb_2):	0.80	-	0.51	=	0.29
+	(gapdb_1, gapdb_2):	0.83	-	0.50	=	0.33
+	(gapdb_0, gapdb_2):	1.00	-	0.65	=	0.35
+	(gapdb_3, gapdb_2):	1.00	-	0.52	=	0.48
 
 
 instance_name: p04_F_5.csv
 
-A*:		{(gapdb_0, 540400),(gapdb_1, 432056),(gapdb_2, 540400),(gapdb_3, 540301),(gapdb_4, 540400),(gapdb_5, 426926),}
-ss:		{(gapdb_0, 91235.8),(gapdb_1, 132046),(gapdb_2, 163318),(gapdb_3, 31183.4),(gapdb_4, 4.18501e+06),(gapdb_5, 67957.2),}
+A*:		{(gapdb_0, 540400.00),(gapdb_1, 432056.00),(gapdb_2, 540400.00),(gapdb_3, 540301.00),(gapdb_4, 540400.00),(gapdb_5, 426926.00),}
+ss:		{(gapdb_0, 91235.85),(gapdb_1, 132045.83),(gapdb_2, 163317.95),(gapdb_3, 31183.43),(gapdb_4, 4185006.90),(gapdb_5, 67957.22),}
 
 Measure_1:
-- There are no match between ratio heuristics.
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_0, gapdb_5):	1.27	-	1.34	=	-0.08
+	(gapdb_1, gapdb_2):	0.80	-	0.81	=	-0.01
+	(gapdb_2, gapdb_1):	1.25	-	1.24	=	0.01
+	(gapdb_5, gapdb_0):	0.79	-	0.74	=	0.05
+	(gapdb_5, gapdb_2):	0.79	-	0.42	=	0.37
+	(gapdb_0, gapdb_2):	1.00	-	0.56	=	0.44
+	(gapdb_5, gapdb_1):	0.99	-	0.51	=	0.47
 
 
 instance_name: p05_F_6.csv
 
-A*:		{(gapdb_0, 160841),(gapdb_1, 76981),(gapdb_2, 160841),(gapdb_3, 160787),(gapdb_5, 73123),}
-ss:		{(gapdb_0, 45673.8),(gapdb_1, 151.752),(gapdb_2, 131490),(gapdb_3, 44407.5),(gapdb_4, 1.15338e+06),(gapdb_5, 44636),}
+A*:		{(gapdb_0, 160841.00),(gapdb_1, 76981.00),(gapdb_2, 160841.00),(gapdb_3, 160787.00),(gapdb_5, 73123.00),}
+ss:		{(gapdb_0, 45673.84),(gapdb_1, 151.75),(gapdb_2, 131489.86),(gapdb_3, 44407.46),(gapdb_4, 1153381.07),(gapdb_5, 44636.04),}
 
 Measure_1:
 - There are no match between ratio heuristics.
@@ -47,35 +97,48 @@ Measure_1:
 
 instance_name: p06_F_3.csv
 
-A*:		{(gapdb_0, 492872),(gapdb_1, 469940),(gapdb_2, 494462),(gapdb_3, 491902),(gapdb_4, 494864),(gapdb_5, 459144),}
-ss:		{(gapdb_0, 240.817),(gapdb_1, 1785.3),(gapdb_2, 2269.2),(gapdb_3, 291.625),(gapdb_4, 76431.7),(gapdb_5, 899.553),}
+A*:		{(gapdb_0, 492872.00),(gapdb_1, 469940.00),(gapdb_2, 494462.00),(gapdb_3, 491902.00),(gapdb_4, 494864.00),(gapdb_5, 459144.00),}
+ss:		{(gapdb_0, 240.82),(gapdb_1, 1785.30),(gapdb_2, 2269.20),(gapdb_3, 291.62),(gapdb_4, 76431.74),(gapdb_5, 899.55),}
 
 Measure_1:
-- There are no match between ratio heuristics.
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_2, gapdb_1):	1.05	-	1.27	=	-0.22
+	(gapdb_3, gapdb_0):	1.00	-	1.21	=	-0.21
+	(gapdb_1, gapdb_2):	0.95	-	0.79	=	0.16
+	(gapdb_0, gapdb_3):	1.00	-	0.83	=	0.18
+	(gapdb_5, gapdb_1):	0.98	-	0.50	=	0.47
 
 
 instance_name: p07_F_4.csv
 
-A*:		{(gapdb_0, 538109),(gapdb_1, 497073),(gapdb_2, 538195),(gapdb_3, 538118),(gapdb_4, 538195),(gapdb_5, 477602),}
-ss:		{(gapdb_0, 515.185),(gapdb_1, 1302.09),(gapdb_2, 8967.6),(gapdb_3, 7132.9),(gapdb_4, 651247),(gapdb_5, 2538.77),}
+A*:		{(gapdb_0, 538109.00),(gapdb_1, 497073.00),(gapdb_2, 538195.00),(gapdb_3, 538118.00),(gapdb_4, 538195.00),(gapdb_5, 477602.00),}
+ss:		{(gapdb_0, 515.18),(gapdb_1, 1302.09),(gapdb_2, 8967.60),(gapdb_3, 7132.90),(gapdb_4, 651247.37),(gapdb_5, 2538.77),}
 
 Measure_1:
-- There are no match between ratio heuristics.
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_2, gapdb_3):	1.00	-	1.26	=	-0.26
+	(gapdb_3, gapdb_2):	1.00	-	0.80	=	0.20
 
 
 instance_name: p08_F_3.csv
 
-A*:		{(gapdb_0, 1.22048e+06),(gapdb_1, 1.13238e+06),(gapdb_2, 1.22078e+06),(gapdb_3, 1.22054e+06),(gapdb_4, 1.22078e+06),(gapdb_5, 1.06783e+06),}
-ss:		{(gapdb_0, 33.788),(gapdb_1, 847.81),(gapdb_2, 1130.91),(gapdb_3, 137.642),(gapdb_4, 47664.9),(gapdb_5, 376.658),}
+A*:		{(gapdb_0, 1220480.00),(gapdb_1, 1132380.00),(gapdb_2, 1220780.00),(gapdb_3, 1220540.00),(gapdb_4, 1220780.00),(gapdb_5, 1067830.00),}
+ss:		{(gapdb_0, 33.79),(gapdb_1, 847.81),(gapdb_2, 1130.91),(gapdb_3, 137.64),(gapdb_4, 47664.87),(gapdb_5, 376.66),}
 
 Measure_1:
-- There are no match between ratio heuristics.
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_2, gapdb_1):	1.08	-	1.33	=	-0.26
+	(gapdb_1, gapdb_2):	0.93	-	0.75	=	0.18
+	(gapdb_5, gapdb_1):	0.94	-	0.44	=	0.50
 
 
 instance_name: p09_F_4.csv
 
-A*:		{(gapdb_0, 936833),(gapdb_1, 871106),(gapdb_2, 938090),(gapdb_3, 937746),(gapdb_4, 938090),(gapdb_5, 847113),}
-ss:		{(gapdb_0, 796.093),(gapdb_1, 3030.74),(gapdb_2, 44454.1),(gapdb_3, 9024.24),(gapdb_4, 819203),(gapdb_5, 15649.9),}
+A*:		{(gapdb_0, 936833.00),(gapdb_1, 871106.00),(gapdb_2, 938090.00),(gapdb_3, 937746.00),(gapdb_4, 938090.00),(gapdb_5, 847113.00),}
+ss:		{(gapdb_0, 796.09),(gapdb_1, 3030.74),(gapdb_2, 44454.07),(gapdb_3, 9024.24),(gapdb_4, 819203.28),(gapdb_5, 15649.89),}
 
 Measure_1:
 - There are no match between ratio heuristics.
@@ -83,26 +146,42 @@ Measure_1:
 
 instance_name: p10_F_5.csv
 
-A*:		{(gapdb_0, 994450),(gapdb_1, 1.20619e+06),(gapdb_2, 1.20619e+06),(gapdb_3, 1.20619e+06),(gapdb_4, 1.0041e+06),(gapdb_5, 1.20593e+06),}
-ss:		{(gapdb_0, 123685),(gapdb_1, 263008),(gapdb_2, 142756),(gapdb_3, 8.94929e+06),(gapdb_4, 75849.1),(gapdb_5, 79488.8),}
+A*:		{(gapdb_0, 994450.00),(gapdb_1, 1206190.00),(gapdb_2, 1206190.00),(gapdb_3, 1206190.00),(gapdb_4, 1004100.00),(gapdb_5, 1205930.00),}
+ss:		{(gapdb_0, 123684.87),(gapdb_1, 263008.12),(gapdb_2, 142755.64),(gapdb_3, 8949290.21),(gapdb_4, 75849.10),(gapdb_5, 79488.80),}
 
 Measure_1:
-- There are no match between ratio heuristics.
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_4, gapdb_5):	0.83	-	0.95	=	-0.12
+	(gapdb_0, gapdb_2):	0.82	-	0.87	=	-0.04
+	(gapdb_2, gapdb_0):	1.21	-	1.15	=	0.06
+	(gapdb_5, gapdb_4):	1.20	-	1.05	=	0.15
+	(gapdb_4, gapdb_2):	0.83	-	0.53	=	0.30
+	(gapdb_0, gapdb_1):	0.82	-	0.47	=	0.35
+	(gapdb_4, gapdb_0):	1.01	-	0.61	=	0.40
+	(gapdb_5, gapdb_2):	1.00	-	0.56	=	0.44
+	(gapdb_2, gapdb_1):	1.00	-	0.54	=	0.46
 
 
 instance_name: p11_F_4.csv
 
-A*:		{(gapdb_0, 148272),(gapdb_1, 154775),(gapdb_2, 154775),(gapdb_3, 154775),(gapdb_4, 149426),(gapdb_5, 154775),}
-ss:		{(gapdb_0, 22887.8),(gapdb_1, 38114.5),(gapdb_2, 8956.98),(gapdb_3, 549917),(gapdb_4, 32557.6),(gapdb_5, 1908.09),}
+A*:		{(gapdb_0, 148272.00),(gapdb_1, 154775.00),(gapdb_2, 154775.00),(gapdb_3, 154775.00),(gapdb_4, 149426.00),(gapdb_5, 154775.00),}
+ss:		{(gapdb_0, 22887.84),(gapdb_1, 38114.53),(gapdb_2, 8956.98),(gapdb_3, 549916.62),(gapdb_4, 32557.57),(gapdb_5, 1908.09),}
 
 Measure_1:
-- There are no match between ratio heuristics.
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_4, gapdb_0):	1.01	-	1.42	=	-0.41
+	(gapdb_1, gapdb_4):	1.04	-	1.17	=	-0.13
+	(gapdb_4, gapdb_1):	0.97	-	0.85	=	0.11
+	(gapdb_0, gapdb_4):	0.99	-	0.70	=	0.29
+	(gapdb_0, gapdb_1):	0.96	-	0.60	=	0.36
 
 
 instance_name: p12_F_7.csv
 
-A*:		{(gapdb_0, 28559),(gapdb_1, 74296),(gapdb_2, 74296),(gapdb_4, 28834),(gapdb_5, 74296),}
-ss:		{(gapdb_0, 292401),(gapdb_1, 542903),(gapdb_2, 401209),(gapdb_3, 5.71776e+06),(gapdb_4, 252016),(gapdb_5, 180292),}
+A*:		{(gapdb_0, 28559.00),(gapdb_1, 74296.00),(gapdb_2, 74296.00),(gapdb_4, 28834.00),(gapdb_5, 74296.00),}
+ss:		{(gapdb_0, 292401.15),(gapdb_1, 542902.94),(gapdb_2, 401208.51),(gapdb_3, 5717759.62),(gapdb_4, 252016.11),(gapdb_5, 180291.78),}
 
 Measure_1:
 - There are no match between ratio heuristics.
@@ -110,44 +189,69 @@ Measure_1:
 
 instance_name: p13_F_5.csv
 
-A*:		{(gapdb_0, 2.84503e+06),(gapdb_1, 2.51661e+06),(gapdb_2, 2.84503e+06),(gapdb_3, 2.84503e+06),(gapdb_4, 2.84503e+06),(gapdb_5, 2.41228e+06),}
-ss:		{(gapdb_0, 60303.9),(gapdb_1, 77939.1),(gapdb_2, 188011),(gapdb_3, 104385),(gapdb_4, 7.02283e+06),(gapdb_5, 39860),}
+A*:		{(gapdb_0, 2845030.00),(gapdb_1, 2516610.00),(gapdb_2, 2845030.00),(gapdb_3, 2845030.00),(gapdb_4, 2845030.00),(gapdb_5, 2412280.00),}
+ss:		{(gapdb_0, 60303.92),(gapdb_1, 77939.14),(gapdb_2, 188011.27),(gapdb_3, 104384.92),(gapdb_4, 7022828.89),(gapdb_5, 39860.00),}
 
 Measure_1:
-- There are no match between ratio heuristics.
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_1, gapdb_0):	0.88	-	1.29	=	-0.41
+	(gapdb_0, gapdb_5):	1.18	-	1.51	=	-0.33
+	(gapdb_3, gapdb_1):	1.13	-	1.34	=	-0.21
+	(gapdb_1, gapdb_3):	0.88	-	0.75	=	0.14
+	(gapdb_5, gapdb_0):	0.85	-	0.66	=	0.19
+	(gapdb_0, gapdb_1):	1.13	-	0.77	=	0.36
+	(gapdb_0, gapdb_3):	1.00	-	0.58	=	0.42
+	(gapdb_3, gapdb_2):	1.00	-	0.56	=	0.44
+	(gapdb_5, gapdb_1):	0.96	-	0.51	=	0.45
+	(gapdb_5, gapdb_3):	0.85	-	0.38	=	0.47
+	(gapdb_1, gapdb_2):	0.88	-	0.41	=	0.47
 
 
 instance_name: p14_F_5.csv
 
-A*:		{(gapdb_0, 3.92357e+06),(gapdb_1, 3.69029e+06),(gapdb_2, 3.92357e+06),(gapdb_3, 3.92357e+06),(gapdb_4, 3.92357e+06),(gapdb_5, 3.65066e+06),}
-ss:		{(gapdb_0, 295840),(gapdb_1, 742876),(gapdb_2, 717537),(gapdb_3, 33302.5),(gapdb_4, 3.71805e+07),(gapdb_5, 8728.57),}
+A*:		{(gapdb_0, 3923570.00),(gapdb_1, 3690290.00),(gapdb_2, 3923570.00),(gapdb_3, 3923570.00),(gapdb_4, 3923570.00),(gapdb_5, 3650660.00),}
+ss:		{(gapdb_0, 295839.52),(gapdb_1, 742875.55),(gapdb_2, 717536.84),(gapdb_3, 33302.53),(gapdb_4, 37180534.74),(gapdb_5, 8728.57),}
 
 Measure_1:
-- There are no match between ratio heuristics.
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_1, gapdb_2):	0.94	-	1.04	=	-0.09
+	(gapdb_2, gapdb_1):	1.06	-	0.97	=	0.10
 
 
 instance_name: p15_F_5.csv
 
-A*:		{(gapdb_0, 3.03366e+06),(gapdb_1, 2.86096e+06),(gapdb_2, 3.03366e+06),(gapdb_3, 3.03366e+06),(gapdb_4, 3.03366e+06),(gapdb_5, 2.78981e+06),}
-ss:		{(gapdb_0, 38623.7),(gapdb_1, 105306),(gapdb_2, 374055),(gapdb_3, 203906),(gapdb_4, 9.25283e+06),(gapdb_5, 14968.5),}
+A*:		{(gapdb_0, 3033660.00),(gapdb_1, 2860960.00),(gapdb_2, 3033660.00),(gapdb_3, 3033660.00),(gapdb_4, 3033660.00),(gapdb_5, 2789810.00),}
+ss:		{(gapdb_0, 38623.68),(gapdb_1, 105306.48),(gapdb_2, 374054.91),(gapdb_3, 203906.44),(gapdb_4, 9252825.92),(gapdb_5, 14968.51),}
 
 Measure_1:
-- There are no match between ratio heuristics.
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_1, gapdb_3):	0.94	-	0.52	=	0.43
+	(gapdb_3, gapdb_2):	1.00	-	0.55	=	0.45
 
 
 instance_name: p16_F_4.csv
 
-A*:		{(gapdb_0, 1.7613e+07),(gapdb_1, 1.59869e+07),(gapdb_2, 1.76154e+07),(gapdb_3, 1.76047e+07),(gapdb_4, 1.76154e+07),(gapdb_5, 1.57648e+07),}
-ss:		{(gapdb_0, 2807.22),(gapdb_1, 6210.64),(gapdb_2, 7322.85),(gapdb_3, 1811.72),(gapdb_4, 1.08487e+06),(gapdb_5, 4100.68),}
+A*:		{(gapdb_0, 17613000.00),(gapdb_1, 15986900.00),(gapdb_2, 17615400.00),(gapdb_3, 17604700.00),(gapdb_4, 17615400.00),(gapdb_5, 15764800.00),}
+ss:		{(gapdb_0, 2807.22),(gapdb_1, 6210.64),(gapdb_2, 7322.85),(gapdb_3, 1811.72),(gapdb_4, 1084871.60),(gapdb_5, 4100.68),}
 
 Measure_1:
-- There are no match between ratio heuristics.
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_2, gapdb_1):	1.10	-	1.18	=	-0.08
+	(gapdb_1, gapdb_2):	0.91	-	0.85	=	0.06
+	(gapdb_5, gapdb_1):	0.99	-	0.66	=	0.33
+	(gapdb_5, gapdb_2):	0.89	-	0.56	=	0.33
+	(gapdb_3, gapdb_0):	1.00	-	0.65	=	0.35
+	(gapdb_0, gapdb_5):	1.12	-	0.68	=	0.43
 
 
 instance_name: p17_F_6.csv
 
-A*:		{(gapdb_0, 2.0072e+07),(gapdb_1, 1.96673e+07),(gapdb_2, 2.0072e+07),(gapdb_3, 2.0072e+07),(gapdb_4, 2.0072e+07),(gapdb_5, 1.95764e+07),}
-ss:		{(gapdb_0, 2.58015e+06),(gapdb_1, 8.93711e+06),(gapdb_2, 3.52156e+07),(gapdb_3, 162540),(gapdb_4, 2.26e+09),(gapdb_5, 1.13849e+06),}
+A*:		{(gapdb_0, 20072000.00),(gapdb_1, 19667300.00),(gapdb_2, 20072000.00),(gapdb_3, 20072000.00),(gapdb_4, 20072000.00),(gapdb_5, 19576400.00),}
+ss:		{(gapdb_0, 2580146.44),(gapdb_1, 8937114.40),(gapdb_2, 35215580.55),(gapdb_3, 162540.16),(gapdb_4, 2260000614.96),(gapdb_5, 1138492.38),}
 
 Measure_1:
 - There are no match between ratio heuristics.
