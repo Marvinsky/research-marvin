@@ -2,8 +2,8 @@ Experiment 2: parcprinter-opt11-strips using gapdb heuristic with 1000 probes
 
 instance_name: p01_F_367824.csv
 
-A*:		{(gapdb_3, 380),(gapdb_0, 559),(gapdb_2, 689),(gapdb_1, 979),(gapdb_5, 1421),(gapdb_4, 2431),}
-ss:		{(gapdb_0, 0),(gapdb_2, 1955.13),(gapdb_3, 1955.13),(gapdb_5, 3111.55),(gapdb_4, 3513.03),(gapdb_1, 3918.5),}
+A*:		{(gapdb_0, 559),(gapdb_1, 979),(gapdb_2, 689),(gapdb_3, 380),(gapdb_4, 2431),(gapdb_5, 1421),}
+ss:		{(gapdb_0, 0),(gapdb_1, 3918.5),(gapdb_2, 1955.13),(gapdb_3, 1955.13),(gapdb_4, 3513.03),(gapdb_5, 3111.55),}
 
 Measure_1:
 - There are no match between ratio heuristics.
@@ -11,8 +11,8 @@ Measure_1:
 
 instance_name: p02_F_438047.csv
 
-A*:		{(gapdb_1, 292),(gapdb_0, 332),(gapdb_2, 439),(gapdb_4, 572),(gapdb_3, 733),(gapdb_5, 751),}
-ss:		{(gapdb_0, 70551),(gapdb_1, 122360),(gapdb_2, 146910),(gapdb_4, 146910),(gapdb_5, 146910),(gapdb_3, 153917),}
+A*:		{(gapdb_0, 332),(gapdb_1, 292),(gapdb_2, 439),(gapdb_3, 733),(gapdb_4, 572),(gapdb_5, 751),}
+ss:		{(gapdb_0, 70551),(gapdb_1, 122360),(gapdb_2, 146910),(gapdb_3, 153917),(gapdb_4, 146910),(gapdb_5, 146910),}
 
 Measure_1:
 - There are no match between ratio heuristics.
@@ -20,8 +20,8 @@ Measure_1:
 
 instance_name: p03_F_426587.csv
 
-A*:		{(gapdb_4, 2638),(gapdb_3, 3146),(gapdb_2, 4165),(gapdb_0, 5992),(gapdb_5, 6121),}
-ss:		{(gapdb_0, 0),(gapdb_1, 258648),(gapdb_3, 6.26012e+06),(gapdb_4, 6.26012e+06),(gapdb_5, 6.26012e+06),(gapdb_2, 2.06246e+07),}
+A*:		{(gapdb_0, 5992),(gapdb_2, 4165),(gapdb_3, 3146),(gapdb_4, 2638),(gapdb_5, 6121),}
+ss:		{(gapdb_0, 0),(gapdb_1, 258648),(gapdb_2, 2.06246e+07),(gapdb_3, 6.26012e+06),(gapdb_4, 6.26012e+06),(gapdb_5, 6.26012e+06),}
 
 Measure_1:
 - There are no match between ratio heuristics.
@@ -29,8 +29,8 @@ Measure_1:
 
 instance_name: p05_F_511235.csv
 
-A*:		{(gapdb_4, 58673),(gapdb_5, 71825),(gapdb_1, 81238),(gapdb_0, 89709),(gapdb_3, 92660),(gapdb_2, 116815),}
-ss:		{(gapdb_0, 6.35659e+07),(gapdb_1, 1.48874e+08),(gapdb_3, 1.66427e+08),(gapdb_4, 1.90764e+08),(gapdb_2, 2.0023e+08),(gapdb_5, 2.04141e+08),}
+A*:		{(gapdb_0, 89709),(gapdb_1, 81238),(gapdb_2, 116815),(gapdb_3, 92660),(gapdb_4, 58673),(gapdb_5, 71825),}
+ss:		{(gapdb_0, 6.35659e+07),(gapdb_1, 1.48874e+08),(gapdb_2, 2.0023e+08),(gapdb_3, 1.66427e+08),(gapdb_4, 1.90764e+08),(gapdb_5, 2.04141e+08),}
 
 Measure_1:
 - There are no match between ratio heuristics.
@@ -38,8 +38,8 @@ Measure_1:
 
 instance_name: p08_F_735648.csv
 
-A*:		{(gapdb_2, 2.57171e+06),(gapdb_4, 5.95932e+06),(gapdb_0, 6.02205e+06),(gapdb_3, 6.40075e+06),(gapdb_1, 6.59367e+06),(gapdb_5, 6.64806e+06),}
-ss:		{(gapdb_0, 8.69565e+12),(gapdb_2, 1.09814e+17),(gapdb_3, 1.15811e+17),(gapdb_4, 1.15967e+17),(gapdb_5, 1.1597e+17),(gapdb_1, 1.33774e+17),}
+A*:		{(gapdb_0, 6.02205e+06),(gapdb_1, 6.59367e+06),(gapdb_2, 2.57171e+06),(gapdb_3, 6.40075e+06),(gapdb_4, 5.95932e+06),(gapdb_5, 6.64806e+06),}
+ss:		{(gapdb_0, 8.69565e+12),(gapdb_1, 1.33774e+17),(gapdb_2, 1.09814e+17),(gapdb_3, 1.15811e+17),(gapdb_4, 1.15967e+17),(gapdb_5, 1.1597e+17),}
 
 Measure_1:
 - There are no match between ratio heuristics.
@@ -47,8 +47,8 @@ Measure_1:
 
 instance_name: p09_F_609395.csv
 
-A*:		{(gapdb_5, 440393),(gapdb_2, 498823),(gapdb_4, 567159),(gapdb_1, 691335),(gapdb_3, 923426),(gapdb_0, 1.05299e+06),}
-ss:		{(gapdb_1, 1.43365e+11),(gapdb_2, 2.06154e+11),(gapdb_3, 3.72853e+11),(gapdb_5, 6.95459e+11),(gapdb_4, 7.40475e+11),(gapdb_0, 8.27605e+11),}
+A*:		{(gapdb_0, 1.05299e+06),(gapdb_1, 691335),(gapdb_2, 498823),(gapdb_3, 923426),(gapdb_4, 567159),(gapdb_5, 440393),}
+ss:		{(gapdb_0, 8.27605e+11),(gapdb_1, 1.43365e+11),(gapdb_2, 2.06154e+11),(gapdb_3, 3.72853e+11),(gapdb_4, 7.40475e+11),(gapdb_5, 6.95459e+11),}
 
 Measure_1:
 - There are no match between ratio heuristics.

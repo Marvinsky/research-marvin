@@ -19,6 +19,8 @@
 
 using namespace std;
 
+
+//less second parameter
 template <typename T1, typename T2>
 struct less_second {
     typedef pair<T1, T2> type;
@@ -26,12 +28,23 @@ struct less_second {
         return a.second < b.second;
     }
 };
+
+
+//less first parameter
+template <typename T1, typename T2>
+struct less_first {
+    typedef pair<T1, T2> type;
+    bool operator ()(type const& a, type const& b) const {
+        return a.first < b.first;
+    }
+};
+
 //Global variables
 vector<string> add_lines_heuristics; 
 set<int> no_repeat_int;
 vector<int> repeat_random_10;
 
-vector<pair<string, double> >  analyzeFile(string output_BC) {
+vector<pair<string, double> >  analyzeFile(string output_BC, bool first_parameter) {
 	ifstream infile_astar(output_BC.c_str());
 	std::string line;
 	int count_slash = 0, count_line = 0, n_heuristics = 0;
@@ -171,8 +184,12 @@ vector<pair<string, double> >  analyzeFile(string output_BC) {
 	}
 
 	vector<pair<string, double> > mapcopy(m.begin(), m.end());
-	sort(mapcopy.begin(), mapcopy.end(), less_second<string, double>());
 
+	if (first_parameter) {
+		sort(mapcopy.begin(), mapcopy.end(), less_first<string, double>());
+	} else {
+		sort(mapcopy.begin(), mapcopy.end(), less_second<string, double>());
+	}
 	return mapcopy;
 }
 
@@ -406,7 +423,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				//cout<<"\t\tfile_to_open = "<<file_to_open<<"\n";
 				key_final = "gapdb_" + key;
 
-				vector<pair<string, double> > m = analyzeFile(file_to_open);
+				vector<pair<string, double> > m = analyzeFile(file_to_open, true);
 				double nodes_generated = 0;
 				if (m.size() == 1) { //considering we just using one heuristic
 					typedef std::vector<std::pair<std::string, double> > vector_type;
@@ -423,8 +440,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			}
 			//sort the elements by second parameter
 			vector<pair<string, double> > sort_v(map_bc_astar.begin(), map_bc_astar.end());
-			sort(sort_v.begin(), sort_v.end(), less_second<string, double>());
-		
+			sort(sort_v.begin(), sort_v.end(), less_first<string, double>());
 
 			map_bc_file_astar.insert(pair<string, vector<pair<string, double > > >(astarBC_key, sort_v));
 		}
@@ -547,7 +563,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 					//outputFile<<"\n\n";
 					//CALLING SS _____________________________________________
-					vector<pair<string, double> > m2 = analyzeFile(output_ssBC);
+					vector<pair<string, double> > m2 = analyzeFile(output_ssBC, true);
 					//enhance 3: create matrix fracastar
 					double** fracastar;
 					int total_heuristics2 = m2.size(); 
@@ -608,6 +624,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					cout<<"fracss size = "<<total_heuristics<<"\n";
 					cout<<"fracastar size = "<<total_heuristics2<<"\n";
 
+
+					multimap<double, pair<int, int> > ratiomap;
 					vector<pair<int, int> > index_collector; //collect the index that represent the best heuristics
 					if (total_heuristics == total_heuristics2) {
 						for (int i = 0; i < total_heuristics; i++) {
@@ -616,6 +634,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 									if (fracss[i][j] == fracastar[i][j]) {
 										//cout<<i<<", "<<j<<"\n";
 										index_collector.push_back(pair<int, int>(i, j));
+										ratiomap.insert(pair<double, pair<int, int> >(fracss[i][j],  pair<int, int>(i, j)));	
 									}
 								}
 							}
@@ -629,7 +648,28 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					if (index_collector.size() == 0) {
 						outputFile<<"- There are no match between ratio heuristics.\n";
 					} else {
-						typedef std::vector<std::pair<int, int> > vector_type3;
+
+						multimap<double, pair<int, int> >::iterator iter;
+						for (iter = ratiomap.begin(); iter != ratiomap.end(); iter++) {
+							double ratio = iter->first;
+							pair<int, int> pratio = iter->second;
+						
+							int first_heur = pratio.first;
+							int second_heur = pratio.second;
+							stringstream number1, number2;
+							number1<<first_heur;
+							number2<<second_heur;
+							string name1 = "gapdb_"+number1.str();
+							string name2 = "gapdb_"+number2.str();
+
+							cout<<"("<<name1<<", "<<name2<<"): ";
+							outputFile<<"\t"<<name1<<", "<<name2<<"\n";
+						}
+
+
+
+
+						/*typedef std::vector<std::pair<int, int> > vector_type3;
 						outputFile<<"- The heuristics that have the same ratio are:\n";
 						for (vector_type3::const_iterator pos3 = index_collector.begin(); pos3 != index_collector.end(); ++pos3) {
 							int first_heur = pos3->first;
@@ -640,9 +680,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							string name1 = "gapdb_"+number1.str();
 							string name2 = "gapdb_"+number2.str();
 
-							cout<<name1<<", "<<name2<<"\n";
+							cout<<"("<<name1<<", "<<name2<<"): ";
 							outputFile<<"\t"<<name1<<", "<<name2<<"\n";
-						}
+						}*/
 					}
 					outputFile<<"\n\n";
 

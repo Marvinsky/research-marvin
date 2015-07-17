@@ -2,99 +2,102 @@ Experiment 2: nomystery-opt11-strips using gapdb heuristic with 1000 probes
 
 instance_name: p01_F_11.csv
 
-A*:		{(gapdb_1, 3980),(gapdb_3, 3980),(gapdb_4, 3980),(gapdb_5, 3980),(gapdb_0, 4624),(gapdb_2, 9381),}
-ss:		{(gapdb_0, 7660.59),(gapdb_1, 88017.1),(gapdb_3, 103252),(gapdb_4, 103252),(gapdb_5, 103252),(gapdb_2, 215615),}
+A*:		{(gapdb_0, 4624),(gapdb_1, 3980),(gapdb_2, 9381),(gapdb_3, 3980),(gapdb_4, 3980),(gapdb_5, 3980),}
+ss:		{(gapdb_0, 7660.59),(gapdb_1, 88017.1),(gapdb_2, 215615),(gapdb_3, 103252),(gapdb_4, 103252),(gapdb_5, 103252),}
 
 Measure_1:
-- The heuristics that have the same ratio are:
-	gapdb_3, gapdb_2
-	gapdb_2, gapdb_3
+	gapdb_3, gapdb_4
+	gapdb_3, gapdb_5
+	gapdb_4, gapdb_3
+	gapdb_4, gapdb_5
+	gapdb_5, gapdb_3
+	gapdb_5, gapdb_4
 
 
 instance_name: p02_F_14.csv
 
-A*:		{(gapdb_2, 40398),(gapdb_3, 40398),(gapdb_0, 337701),(gapdb_1, 337701),(gapdb_4, 338066),(gapdb_5, 338066),}
-ss:		{(gapdb_2, 2520.64),(gapdb_0, 2528.44),(gapdb_1, 2528.44),(gapdb_3, 58383.3),(gapdb_4, 128261),(gapdb_5, 128261),}
+A*:		{(gapdb_0, 337701),(gapdb_1, 337701),(gapdb_2, 40398),(gapdb_3, 40398),(gapdb_4, 338066),(gapdb_5, 338066),}
+ss:		{(gapdb_0, 2528.44),(gapdb_1, 2528.44),(gapdb_2, 2520.64),(gapdb_3, 58383.3),(gapdb_4, 128261),(gapdb_5, 128261),}
 
 Measure_1:
-- The heuristics that have the same ratio are:
-	gapdb_5, gapdb_4
+	gapdb_0, gapdb_1
+	gapdb_1, gapdb_0
 	gapdb_4, gapdb_5
+	gapdb_5, gapdb_4
 
 
 instance_name: p03_F_15.csv
 
-A*:		{(gapdb_2, 31046),(gapdb_5, 237479),(gapdb_0, 679575),(gapdb_1, 679575),(gapdb_4, 679575),(gapdb_3, 687358),}
-ss:		{(gapdb_0, 4841.27),(gapdb_1, 4841.27),(gapdb_4, 7477.54),(gapdb_5, 7477.54),(gapdb_2, 9137.82),(gapdb_3, 11774.1),}
+A*:		{(gapdb_0, 679575),(gapdb_1, 679575),(gapdb_2, 31046),(gapdb_3, 687358),(gapdb_4, 679575),(gapdb_5, 237479),}
+ss:		{(gapdb_0, 4841.27),(gapdb_1, 4841.27),(gapdb_2, 9137.82),(gapdb_3, 11774.1),(gapdb_4, 7477.54),(gapdb_5, 7477.54),}
 
 Measure_1:
-- The heuristics that have the same ratio are:
-	gapdb_3, gapdb_2
-	gapdb_2, gapdb_3
+	gapdb_0, gapdb_1
+	gapdb_1, gapdb_0
 
 
 instance_name: p04_F_19.csv
 
-A*:		{(gapdb_4, 4.47325e+07),(gapdb_5, 4.48292e+07),(gapdb_0, 4.48983e+07),(gapdb_1, 4.49522e+07),(gapdb_2, 4.49522e+07),(gapdb_3, 4.49522e+07),}
-ss:		{(gapdb_4, 218.837),(gapdb_5, 218.837),(gapdb_0, 2025.08),(gapdb_1, 2.11611e+12),(gapdb_2, 2.11611e+12),(gapdb_3, 2.11611e+12),}
+A*:		{(gapdb_0, 4.48983e+07),(gapdb_1, 4.49522e+07),(gapdb_2, 4.49522e+07),(gapdb_3, 4.49522e+07),(gapdb_4, 4.47325e+07),(gapdb_5, 4.48292e+07),}
+ss:		{(gapdb_0, 2025.08),(gapdb_1, 2.11611e+12),(gapdb_2, 2.11611e+12),(gapdb_3, 2.11611e+12),(gapdb_4, 218.837),(gapdb_5, 218.837),}
 
 Measure_1:
-- The heuristics that have the same ratio are:
-	gapdb_4, gapdb_3
-	gapdb_5, gapdb_3
-	gapdb_3, gapdb_4
-	gapdb_5, gapdb_4
-	gapdb_3, gapdb_5
-	gapdb_4, gapdb_5
+	gapdb_1, gapdb_2
+	gapdb_1, gapdb_3
+	gapdb_2, gapdb_1
+	gapdb_2, gapdb_3
+	gapdb_3, gapdb_1
+	gapdb_3, gapdb_2
 
 
 instance_name: p11_F_12.csv
 
-A*:		{(gapdb_1, 413),(gapdb_3, 413),(gapdb_5, 413),(gapdb_0, 3736),(gapdb_2, 3736),(gapdb_4, 3736),}
-ss:		{(gapdb_1, 126.182),(gapdb_3, 24491.7),(gapdb_5, 24491.7),(gapdb_2, 26444.7),(gapdb_4, 26860),(gapdb_0, 36317.6),}
+A*:		{(gapdb_0, 3736),(gapdb_1, 413),(gapdb_2, 3736),(gapdb_3, 413),(gapdb_4, 3736),(gapdb_5, 413),}
+ss:		{(gapdb_0, 36317.6),(gapdb_1, 126.182),(gapdb_2, 26444.7),(gapdb_3, 24491.7),(gapdb_4, 26860),(gapdb_5, 24491.7),}
 
 Measure_1:
-- The heuristics that have the same ratio are:
-	gapdb_2, gapdb_1
-	gapdb_1, gapdb_2
+	gapdb_3, gapdb_5
+	gapdb_5, gapdb_3
 
 
 instance_name: p12_F_14.csv
 
-A*:		{(gapdb_1, 51217),(gapdb_3, 51217),(gapdb_4, 51217),(gapdb_5, 51217),(gapdb_0, 51230),(gapdb_2, 51230),}
-ss:		{(gapdb_1, 928.45),(gapdb_3, 928.45),(gapdb_4, 928.45),(gapdb_5, 928.45),(gapdb_0, 283291),(gapdb_2, 2.1042e+08),}
+A*:		{(gapdb_0, 51230),(gapdb_1, 51217),(gapdb_2, 51230),(gapdb_3, 51217),(gapdb_4, 51217),(gapdb_5, 51217),}
+ss:		{(gapdb_0, 283291),(gapdb_1, 928.45),(gapdb_2, 2.1042e+08),(gapdb_3, 928.45),(gapdb_4, 928.45),(gapdb_5, 928.45),}
 
 Measure_1:
-- The heuristics that have the same ratio are:
-	gapdb_1, gapdb_0
-	gapdb_2, gapdb_0
-	gapdb_3, gapdb_0
-	gapdb_0, gapdb_1
-	gapdb_2, gapdb_1
-	gapdb_3, gapdb_1
-	gapdb_0, gapdb_2
-	gapdb_1, gapdb_2
-	gapdb_3, gapdb_2
-	gapdb_0, gapdb_3
 	gapdb_1, gapdb_3
-	gapdb_2, gapdb_3
+	gapdb_1, gapdb_4
+	gapdb_1, gapdb_5
+	gapdb_3, gapdb_1
+	gapdb_3, gapdb_4
+	gapdb_3, gapdb_5
+	gapdb_4, gapdb_1
+	gapdb_4, gapdb_3
+	gapdb_4, gapdb_5
+	gapdb_5, gapdb_1
+	gapdb_5, gapdb_3
+	gapdb_5, gapdb_4
 
 
 instance_name: p13_F_15.csv
 
-A*:		{(gapdb_4, 535),(gapdb_1, 130622),(gapdb_2, 130622),(gapdb_3, 130622),(gapdb_5, 130622),(gapdb_0, 131961),}
-ss:		{(gapdb_1, 3986.91),(gapdb_2, 3986.91),(gapdb_3, 3986.91),(gapdb_0, 4183.14),(gapdb_4, 4278.17),(gapdb_5, 7279.4),}
+A*:		{(gapdb_0, 131961),(gapdb_1, 130622),(gapdb_2, 130622),(gapdb_3, 130622),(gapdb_4, 535),(gapdb_5, 130622),}
+ss:		{(gapdb_0, 4183.14),(gapdb_1, 3986.91),(gapdb_2, 3986.91),(gapdb_3, 3986.91),(gapdb_4, 4278.17),(gapdb_5, 7279.4),}
 
 Measure_1:
-- The heuristics that have the same ratio are:
-	gapdb_2, gapdb_1
 	gapdb_1, gapdb_2
+	gapdb_1, gapdb_3
+	gapdb_2, gapdb_1
+	gapdb_2, gapdb_3
+	gapdb_3, gapdb_1
+	gapdb_3, gapdb_2
 
 
 instance_name: p14_F_19.csv
 
-A*:		{(gapdb_0, 5.72264e+06),(gapdb_4, 5.72264e+06),(gapdb_1, 5.72487e+06),(gapdb_5, 5.72487e+06),(gapdb_3, 5.72596e+06),}
-ss:		{(gapdb_2, 18653.6),(gapdb_0, 18975.2),(gapdb_1, 21773.1),(gapdb_4, 37635),(gapdb_5, 40432.9),(gapdb_3, 81642.7),}
+A*:		{(gapdb_0, 5.72264e+06),(gapdb_1, 5.72487e+06),(gapdb_3, 5.72596e+06),(gapdb_4, 5.72264e+06),(gapdb_5, 5.72487e+06),}
+ss:		{(gapdb_0, 18975.2),(gapdb_1, 21773.1),(gapdb_2, 18653.6),(gapdb_3, 81642.7),(gapdb_4, 37635),(gapdb_5, 40432.9),}
 
 Measure_1:
 - There are no match between ratio heuristics.
