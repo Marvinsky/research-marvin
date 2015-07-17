@@ -653,7 +653,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								}
 							}
 						}
-					}
+					}	
+					//sort(ratiomap.begin(), ratiomap.end(), less_first<double, double>());
 					sort(index_collector.begin(), index_collector.end(), less_second<int, int>());
 
 					cout<<"index_collector.size() = "<<index_collector.size()<<"\n";
@@ -691,12 +692,12 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							if (iter2 != m_ss_percentage.end()) {
 								expss = iter2->second;
 							}*/
-
+								
 							cout<<"("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
 							outputFile<<"\t("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
 						}
-
-						/*typedef std::vector<std::pair<int, int> > vector_type3;
+						/*
+						typedef std::vector<std::pair<int, int> > vector_type3;
 						outputFile<<"- The heuristics that have similar ratio are:\n";
 						for (vector_type3::const_iterator pos3 = index_collector.begin(); pos3 != index_collector.end(); ++pos3) {
 							int first_heur = pos3->first;
@@ -707,8 +708,12 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							string name1 = "gapdb_"+number1.str();
 							string name2 = "gapdb_"+number2.str();
 
-							cout<<"("<<name1<<"/"<<name2<<"): \n";
-							outputFile<<"\t"<<name1<<", "<<name2<<"\n";
+							double diffR = fracss[first_heur][second_heur] - fracastar[first_heur][second_heur]; 
+
+							cout<<"("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diffR<<"\n";
+							outputFile<<"\t("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diffR<<"\n";
+							//cout<<"("<<name1<<"/"<<name2<<"): \n";
+							//outputFile<<"\t"<<name1<<", "<<name2<<"\n";
 						}*/
 					}
 					outputFile<<"\n\n";
