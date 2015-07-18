@@ -660,6 +660,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					cout<<"index_collector.size() = "<<index_collector.size()<<"\n";
 					outputFile<<"\nMeasure_1:\n";
 
+
+					set<string> no_repeat_h1, no_repeat_h2; 
 					if (index_collector.size() == 0) {
 						outputFile<<"- There are no match between ratio heuristics.\n";
 					} else {
@@ -677,21 +679,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							number2<<second_heur;
 							string name1 = "gapdb_"+number1.str();
 							string name2 = "gapdb_"+number2.str();
-
-							/*
-							//info string, double for m_astar_percentage for astar
- 							map<string, double>::iterator iter1 = m_astar_percentage.find(name1);
-							double expastar = 0;
-							if (iter1 != m_astar_percentage.end()) {
-								expastar = iter1->second;
-							}
-
-							//info string, double for m_ss_percentage for ss
-							map<string, double>::iterator iter2 = m_ss_percentage.find(name2);
-							double expss = 0;
-							if (iter2 != m_ss_percentage.end()) {
-								expss = iter2->second;
-							}*/
+							
+							no_repeat_h1.insert(name1);
+							no_repeat_h2.insert(name2);
 								
 							cout<<"("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
 							outputFile<<"\t("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
@@ -716,12 +706,36 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							//outputFile<<"\t"<<name1<<", "<<name2<<"\n";
 						}*/
 					}
-					outputFile<<"\n\n";
-
 					outputFile<<"\nMeasure_2:\n";
 
+					outputFile<<"\t-h1("<<no_repeat_h1.size()<<"):\t\tSS\t\tA*\n";
+					std::set<string>::iterator iter_set;
+					for (iter_set = no_repeat_h1.begin(); iter_set != no_repeat_h1.end(); ++iter_set) {
+                                                string h1 = *iter_set;
 
+						map<string, double>::iterator iterastar = m_astar_percentage.find(h1);
+						map<string, double>::iterator iterss = m_ss_percentage.find(h1);
+						double expastar = iterastar->second;
+						double expss = iterss->second;
 
+						outputFile<<"\t"<<h1<<"\t\t"<<expss<<"\t\t"<<expastar<<"\n";
+					}
+
+					outputFile<<"\n";
+
+					outputFile<<"\t-h2("<<no_repeat_h2.size()<<"):\t\tSS\t\tA*\n";
+					std::set<string>::iterator iter_set2;
+					for (iter_set2 = no_repeat_h2.begin(); iter_set2 != no_repeat_h2.end(); ++iter_set2) {
+                                                string h2 = *iter_set2;
+						
+						map<string, double>::iterator iterastar = m_astar_percentage.find(h2);
+						map<string, double>::iterator iterss = m_ss_percentage.find(h2);
+						double expastar = iterastar->second;
+						double expss = iterss->second;
+
+						outputFile<<"\t"<<h2<<"\t\t"<<expss<<"\t\t"<<expastar<<"\n";
+					}
+					outputFile<<"\n";
 
 					cout<<"end info--\n";
 					/*	

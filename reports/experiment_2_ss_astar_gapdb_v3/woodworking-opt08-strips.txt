@@ -8,9 +8,11 @@ ss:		{(gapdb_0, 1397802.57),(gapdb_1, 144296.50),(gapdb_2, 302587.97),(gapdb_3, 
 Measure_1:
 - There are no match between ratio heuristics.
 
-
-
 Measure_2:
+	-h1(0):		SS		A*
+
+	-h2(0):		SS		A*
+
 instance_name: p02_F_185.csv
 
 A*:		{(gapdb_0, 363892.00),(gapdb_1, 363892.00),(gapdb_4, 363892.00),(gapdb_5, 363892.00),}
@@ -19,9 +21,11 @@ ss:		{(gapdb_0, 230973791.50),(gapdb_1, 7787083.50),(gapdb_2, 7787083.50),(gapdb
 Measure_1:
 - There are no match between ratio heuristics.
 
-
-
 Measure_2:
+	-h1(0):		SS		A*
+
+	-h2(0):		SS		A*
+
 instance_name: p11_F_130.csv
 
 A*:		{(gapdb_0, 54728.00),(gapdb_1, 54728.00),(gapdb_2, 38188.00),(gapdb_3, 38188.00),(gapdb_4, 21673.00),(gapdb_5, 21673.00),}
@@ -40,9 +44,20 @@ Measure_1:
 	(gapdb_3, gapdb_1):	0.70	-	0.24	=	0.46
 	(gapdb_2, gapdb_1):	0.70	-	0.21	=	0.48
 
-
-
 Measure_2:
+	-h1(5):		SS		A*
+	gapdb_0		5110.44		54728.00
+	gapdb_2		5110.44		38188.00
+	gapdb_3		5650.32		38188.00
+	gapdb_4		6736.71		21673.00
+	gapdb_5		14472.92		21673.00
+
+	-h2(4):		SS		A*
+	gapdb_0		5110.44		54728.00
+	gapdb_1		23864.32		54728.00
+	gapdb_2		5110.44		38188.00
+	gapdb_3		5650.32		38188.00
+
 instance_name: p12_F_225.csv
 
 A*:		{(gapdb_1, 10072200.00),(gapdb_2, 35676500.00),(gapdb_3, 27591700.00),(gapdb_4, 35676500.00),(gapdb_5, 10072200.00),}
@@ -51,9 +66,11 @@ ss:		{(gapdb_0, 33947590362.30),(gapdb_1, 7902915168.30),(gapdb_2, 10911132001.3
 Measure_1:
 - There are no match between ratio heuristics.
 
-
-
 Measure_2:
+	-h1(0):		SS		A*
+
+	-h2(0):		SS		A*
+
 instance_name: p21_F_95.csv
 
 A*:		{(gapdb_0, 3518.00),(gapdb_1, 3524.00),(gapdb_2, 3524.00),(gapdb_3, 3518.00),(gapdb_4, 3518.00),(gapdb_5, 3518.00),}
@@ -82,9 +99,22 @@ Measure_1:
 	(gapdb_2, gapdb_1):	1.00	-	0.64	=	0.36
 	(gapdb_0, gapdb_1):	1.00	-	0.50	=	0.50
 
-
-
 Measure_2:
+	-h1(5):		SS		A*
+	gapdb_0		3080.25		3518.00
+	gapdb_2		3933.74		3524.00
+	gapdb_3		2534.60		3518.00
+	gapdb_4		3942.87		3518.00
+	gapdb_5		2534.60		3518.00
+
+	-h2(6):		SS		A*
+	gapdb_0		3080.25		3518.00
+	gapdb_1		6173.15		3524.00
+	gapdb_2		3933.74		3524.00
+	gapdb_3		2534.60		3518.00
+	gapdb_4		3942.87		3518.00
+	gapdb_5		2534.60		3518.00
+
 instance_name: p22_F_185.csv
 
 A*:		{(gapdb_0, 800772.00),(gapdb_1, 4253660.00),(gapdb_2, 4253660.00),(gapdb_3, 800772.00),(gapdb_4, 2376040.00),}
@@ -93,9 +123,11 @@ ss:		{(gapdb_0, 11896882.82),(gapdb_1, 29536396.91),(gapdb_2, 24928802.77),(gapd
 Measure_1:
 - There are no match between ratio heuristics.
 
-
-
 Measure_2:
+	-h1(0):		SS		A*
+
+	-h2(0):		SS		A*
+
 instance_name: p23_F_195.csv
 
 A*:		{(gapdb_0, 19342500.00),(gapdb_1, 5819590.00),(gapdb_2, 8000210.00),(gapdb_3, 8001650.00),(gapdb_4, 5186650.00),(gapdb_5, 8649630.00),}
@@ -113,6 +145,18 @@ Measure_1:
 	(gapdb_2, gapdb_5):	0.92	-	0.51	=	0.42
 	(gapdb_3, gapdb_5):	0.93	-	0.47	=	0.46
 
-
-
 Measure_2:
+	-h1(5):		SS		A*
+	gapdb_1		5113293362.67		5819590.00
+	gapdb_2		33764728660.00		8000210.00
+	gapdb_3		30832911442.67		8001650.00
+	gapdb_4		37039904332.67		5186650.00
+	gapdb_5		66271657362.67		8649630.00
+
+	-h2(5):		SS		A*
+	gapdb_0		7528677422.67		19342500.00
+	gapdb_2		33764728660.00		8000210.00
+	gapdb_3		30832911442.67		8001650.00
+	gapdb_4		37039904332.67		5186650.00
+	gapdb_5		66271657362.67		8649630.00
+

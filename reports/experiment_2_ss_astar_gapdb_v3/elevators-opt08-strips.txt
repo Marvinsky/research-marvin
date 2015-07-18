@@ -3,14 +3,37 @@ Experiment 2: elevators-opt08-strips using gapdb heuristic with 1000 probes
 instance_name: p01_F_42.csv
 
 A*:		{(gapdb_0, 347683),(gapdb_1, 386435),(gapdb_2, 347683),(gapdb_3, 393943),(gapdb_4, 347683),(gapdb_5, 347683),}
-ss:		{(gapdb_0, 49484612.08),(gapdb_1, 3170169794.49),(gapdb_2, 997810.13),(gapdb_3, 582788.59),(gapdb_4, 43086529.60),(gapdb_5, 43086529.60),(gapdb_6, 51.64),}
+ss:		{(gapdb_0, 108.63),(gapdb_1, 74786058.76),(gapdb_2, 108.63),(gapdb_3, 3178888.76),(gapdb_4, 108.63),(gapdb_5, 108.63),}
 
 Measure_1:
-- There are no match between ratio heuristics.
-
-
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_0, gapdb_2):	1.00	-	1.00	=	0.00
+	(gapdb_0, gapdb_4):	1.00	-	1.00	=	0.00
+	(gapdb_0, gapdb_5):	1.00	-	1.00	=	0.00
+	(gapdb_2, gapdb_0):	1.00	-	1.00	=	0.00
+	(gapdb_2, gapdb_4):	1.00	-	1.00	=	0.00
+	(gapdb_2, gapdb_5):	1.00	-	1.00	=	0.00
+	(gapdb_4, gapdb_0):	1.00	-	1.00	=	0.00
+	(gapdb_4, gapdb_2):	1.00	-	1.00	=	0.00
+	(gapdb_4, gapdb_5):	1.00	-	1.00	=	0.00
+	(gapdb_5, gapdb_0):	1.00	-	1.00	=	0.00
+	(gapdb_5, gapdb_2):	1.00	-	1.00	=	0.00
+	(gapdb_5, gapdb_4):	1.00	-	1.00	=	0.00
 
 Measure_2:
+	-h1(4):		SS		A*
+	gapdb_0		108.63		347683.00
+	gapdb_2		108.63		347683.00
+	gapdb_4		108.63		347683.00
+	gapdb_5		108.63		347683.00
+
+	-h2(4):		SS		A*
+	gapdb_0		108.63		347683.00
+	gapdb_2		108.63		347683.00
+	gapdb_4		108.63		347683.00
+	gapdb_5		108.63		347683.00
+
 instance_name: p02_F_26.csv
 
 A*:		{(gapdb_1, 307218.00),(gapdb_2, 311554.00),(gapdb_3, 311292.00),(gapdb_4, 284334.00),(gapdb_5, 267364.00),}
@@ -19,9 +42,11 @@ ss:		{(gapdb_0, 16015812.50),(gapdb_1, 19296964.20),(gapdb_2, 1768688529.00),(ga
 Measure_1:
 - There are no match between ratio heuristics.
 
-
-
 Measure_2:
+	-h1(0):		SS		A*
+
+	-h2(0):		SS		A*
+
 instance_name: p11_F_56.csv
 
 A*:		{(gapdb_0, 2777070.00),(gapdb_1, 2774710.00),(gapdb_2, 2777070.00),(gapdb_3, 2587130.00),(gapdb_4, 2774710.00),(gapdb_5, 2774710.00),}
@@ -37,9 +62,17 @@ Measure_1:
 	(gapdb_5, gapdb_1):	1.00	-	1.00	=	0.00
 	(gapdb_5, gapdb_4):	1.00	-	1.00	=	0.00
 
-
-
 Measure_2:
+	-h1(3):		SS		A*
+	gapdb_1		127390150.68		2774710.00
+	gapdb_4		127390150.68		2774710.00
+	gapdb_5		127390150.68		2774710.00
+
+	-h2(3):		SS		A*
+	gapdb_1		127390150.68		2774710.00
+	gapdb_4		127390150.68		2774710.00
+	gapdb_5		127390150.68		2774710.00
+
 instance_name: p12_F_54.csv
 
 A*:		{(gapdb_0, 3554740.00),(gapdb_1, 3554740.00),(gapdb_2, 3554700.00),(gapdb_3, 3554740.00),(gapdb_5, 3554740.00),}
@@ -48,6 +81,8 @@ ss:		{(gapdb_0, 2844973051.81),(gapdb_1, 14048312068.70),(gapdb_2, 1611392158.80
 Measure_1:
 - There are no match between ratio heuristics.
 
-
-
 Measure_2:
+	-h1(0):		SS		A*
+
+	-h2(0):		SS		A*
+
