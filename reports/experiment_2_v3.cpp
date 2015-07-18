@@ -480,12 +480,19 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					map<string, double> m_ss_percentage;
 					map<string, string> heuristic_description;
 
-					//enhance 3: create matrix fracss
-					double** fracss;
+					//enhance 3: create matrix fracastar
+					/*double** fracss;
 					int total_heuristics = m_values.size(); 
 					fracss = new double*[total_heuristics];
 					for (int i = 0; i < total_heuristics; i++) {
 						fracss[i] = new double[total_heuristics];
+					}*/
+
+					double** fracastar;
+					int total_heuristics = m_values.size();
+					fracastar = new double*[total_heuristics];
+					for (int i = 0; i < total_heuristics; i++) {
+						fracastar[i] = new double[total_heuristics];
 					}
 
 					int row_count = 0;
@@ -527,7 +534,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 							//fill the fracss with the data ratio
 							double dratio = d/dinner;
-							fracss[row_count][col_count] = dratio;
+							fracastar[row_count][col_count] = dratio;
 							col_count++;
 					
 						}
@@ -542,6 +549,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					}
 					outputFile<<"}\n";
 
+					/*
 					cout<<"print fracss\n";	
 					for (int i = 0; i < total_heuristics; i++) {
 						for (int j = 0; j < total_heuristics; j++) {
@@ -549,6 +557,16 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						}
 						cout<<"\n";
 					}
+					*/
+
+					cout<<"print fracastar\n";	
+					for (int i = 0; i < total_heuristics; i++) {
+						for (int j = 0; j < total_heuristics; j++) {
+							cout<<fracastar[i][j]<<"\t";
+						}
+						cout<<"\n";
+					}
+					cout<<"\n\n\n";
 					
 					//astar-------------------------------------
 					map<string, vector<string> > group_map_astar;
@@ -574,15 +592,24 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					//outputFile<<"\n\n";
 					//CALLING SS _____________________________________________
 					vector<pair<string, double> > m2 = analyzeFile(output_ssBC, true);
-					//enhance 3: create matrix fracastar
+					//enhance 3: create matrix fracss
+					/*
 					double** fracastar;
 					int total_heuristics2 = m2.size(); 
 					fracastar = new double*[total_heuristics2];
 					for (int i = 0; i < total_heuristics2; i++) {
 						fracastar[i] = new double[total_heuristics2];
 					}
+					*/
 
+					double** fracss;
+					int total_heuristics2 = m2.size(); 
+					fracss = new double*[total_heuristics2];
+					for (int i = 0; i < total_heuristics2; i++) {
+						fracss[i] = new double[total_heuristics2];
+					}
 					outputFile<<setprecision(2)<<fixed<<"ss:\t\t{";
+					//outputFile<<"ss:\t\t{";
 
 					typedef std::vector<std::pair<std::string, double> > vector_type2;
 					int row_count2 = 0;
@@ -611,7 +638,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							
 							//enhance 3:
 							double dratio = d/dinner;
-							fracastar[row_count2][col_count2] = dratio;							
+							fracss[row_count2][col_count2] = dratio;							
 							col_count2++;
 						}
 						row_count2++;
@@ -625,7 +652,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					}
 					outputFile<<"}\n";
 				
-					cout<<"print fracastar\n";	
+					/*cout<<"print fracastar\n";	
 					for (int i = 0; i < total_heuristics; i++) {
 						for (int j = 0; j < total_heuristics; j++) {
 							cout<<fracastar[i][j]<<"\t";
@@ -633,6 +660,15 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						cout<<"\n";
 					}
 					cout<<"\n\n\n";
+					*/
+
+					cout<<"print fracss\n";	
+					for (int i = 0; i < total_heuristics2; i++) {
+						for (int j = 0; j < total_heuristics2; j++) {
+							cout<<fracss[i][j]<<"\t";
+						}
+						cout<<"\n";
+					}
 
 					cout<<"fracss size = "<<total_heuristics<<"\n";
 					cout<<"fracastar size = "<<total_heuristics2<<"\n";

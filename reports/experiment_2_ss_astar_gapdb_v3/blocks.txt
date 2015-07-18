@@ -8,26 +8,26 @@ ss:		{(gapdb_0, 25.84),(gapdb_1, 14.88),(gapdb_2, 31.53),(gapdb_3, 25.84),(gapdb
 Measure_1:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_1, gapdb_0):	0.27	-	0.58	=	-0.30
-	(gapdb_1, gapdb_3):	0.27	-	0.58	=	-0.30
-	(gapdb_1, gapdb_2):	0.24	-	0.47	=	-0.23
-	(gapdb_1, gapdb_5):	0.22	-	0.42	=	-0.20
-	(gapdb_5, gapdb_0):	1.25	-	1.38	=	-0.12
-	(gapdb_5, gapdb_3):	1.25	-	1.38	=	-0.12
-	(gapdb_2, gapdb_0):	1.11	-	1.22	=	-0.11
-	(gapdb_2, gapdb_3):	1.11	-	1.22	=	-0.11
-	(gapdb_5, gapdb_2):	1.12	-	1.13	=	-0.00
+	(gapdb_4, gapdb_2):	0.47	-	0.82	=	-0.34
+	(gapdb_4, gapdb_0):	0.58	-	0.91	=	-0.33
+	(gapdb_4, gapdb_3):	0.58	-	0.91	=	-0.33
+	(gapdb_4, gapdb_5):	0.42	-	0.72	=	-0.31
+	(gapdb_0, gapdb_2):	0.82	-	0.90	=	-0.08
+	(gapdb_3, gapdb_2):	0.82	-	0.90	=	-0.08
+	(gapdb_0, gapdb_5):	0.73	-	0.80	=	-0.07
+	(gapdb_3, gapdb_5):	0.73	-	0.80	=	-0.07
+	(gapdb_2, gapdb_5):	0.89	-	0.89	=	-0.00
 	(gapdb_0, gapdb_3):	1.00	-	1.00	=	0.00
 	(gapdb_3, gapdb_0):	1.00	-	1.00	=	0.00
-	(gapdb_2, gapdb_5):	0.89	-	0.89	=	0.00
-	(gapdb_0, gapdb_5):	0.80	-	0.73	=	0.07
-	(gapdb_3, gapdb_5):	0.80	-	0.73	=	0.07
-	(gapdb_0, gapdb_2):	0.90	-	0.82	=	0.08
-	(gapdb_3, gapdb_2):	0.90	-	0.82	=	0.08
-	(gapdb_4, gapdb_5):	0.72	-	0.42	=	0.31
-	(gapdb_4, gapdb_0):	0.91	-	0.58	=	0.33
-	(gapdb_4, gapdb_3):	0.91	-	0.58	=	0.33
-	(gapdb_4, gapdb_2):	0.82	-	0.47	=	0.34
+	(gapdb_5, gapdb_2):	1.13	-	1.12	=	0.00
+	(gapdb_2, gapdb_0):	1.22	-	1.11	=	0.11
+	(gapdb_2, gapdb_3):	1.22	-	1.11	=	0.11
+	(gapdb_5, gapdb_0):	1.38	-	1.25	=	0.12
+	(gapdb_5, gapdb_3):	1.38	-	1.25	=	0.12
+	(gapdb_1, gapdb_5):	0.42	-	0.22	=	0.20
+	(gapdb_1, gapdb_2):	0.47	-	0.24	=	0.23
+	(gapdb_1, gapdb_0):	0.58	-	0.27	=	0.30
+	(gapdb_1, gapdb_3):	0.58	-	0.27	=	0.30
 
 Measure_2:
 	-h1(6):		SS		A*
@@ -52,27 +52,27 @@ ss:		{(gapdb_0, 61.98),(gapdb_1, 43.13),(gapdb_2, 27.20),(gapdb_3, 46.81),(gapdb
 Measure_1:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_0, gapdb_1):	1.00	-	1.44	=	-0.44
-	(gapdb_4, gapdb_1):	1.00	-	1.44	=	-0.44
-	(gapdb_5, gapdb_3):	1.00	-	1.43	=	-0.43
-	(gapdb_0, gapdb_3):	1.00	-	1.32	=	-0.32
-	(gapdb_4, gapdb_3):	1.00	-	1.32	=	-0.32
-	(gapdb_3, gapdb_1):	1.00	-	1.09	=	-0.09
-	(gapdb_5, gapdb_0):	1.00	-	1.08	=	-0.08
-	(gapdb_5, gapdb_4):	1.00	-	1.08	=	-0.08
+	(gapdb_2, gapdb_3):	0.58	-	0.96	=	-0.38
+	(gapdb_1, gapdb_5):	0.65	-	1.00	=	-0.35
+	(gapdb_2, gapdb_1):	0.63	-	0.96	=	-0.33
+	(gapdb_1, gapdb_0):	0.70	-	1.00	=	-0.30
+	(gapdb_1, gapdb_4):	0.70	-	1.00	=	-0.30
+	(gapdb_3, gapdb_5):	0.70	-	1.00	=	-0.30
+	(gapdb_3, gapdb_0):	0.76	-	1.00	=	-0.24
+	(gapdb_3, gapdb_4):	0.76	-	1.00	=	-0.24
+	(gapdb_1, gapdb_3):	0.92	-	1.00	=	-0.08
+	(gapdb_0, gapdb_5):	0.93	-	1.00	=	-0.07
+	(gapdb_4, gapdb_5):	0.93	-	1.00	=	-0.07
 	(gapdb_0, gapdb_4):	1.00	-	1.00	=	0.00
 	(gapdb_4, gapdb_0):	1.00	-	1.00	=	0.00
-	(gapdb_0, gapdb_5):	1.00	-	0.93	=	0.07
-	(gapdb_4, gapdb_5):	1.00	-	0.93	=	0.07
-	(gapdb_1, gapdb_3):	1.00	-	0.92	=	0.08
-	(gapdb_3, gapdb_0):	1.00	-	0.76	=	0.24
-	(gapdb_3, gapdb_4):	1.00	-	0.76	=	0.24
-	(gapdb_3, gapdb_5):	1.00	-	0.70	=	0.30
-	(gapdb_1, gapdb_0):	1.00	-	0.70	=	0.30
-	(gapdb_1, gapdb_4):	1.00	-	0.70	=	0.30
-	(gapdb_2, gapdb_1):	0.96	-	0.63	=	0.33
-	(gapdb_1, gapdb_5):	1.00	-	0.65	=	0.35
-	(gapdb_2, gapdb_3):	0.96	-	0.58	=	0.38
+	(gapdb_5, gapdb_0):	1.08	-	1.00	=	0.08
+	(gapdb_5, gapdb_4):	1.08	-	1.00	=	0.08
+	(gapdb_3, gapdb_1):	1.09	-	1.00	=	0.09
+	(gapdb_0, gapdb_3):	1.32	-	1.00	=	0.32
+	(gapdb_4, gapdb_3):	1.32	-	1.00	=	0.32
+	(gapdb_5, gapdb_3):	1.43	-	1.00	=	0.43
+	(gapdb_0, gapdb_1):	1.44	-	1.00	=	0.44
+	(gapdb_4, gapdb_1):	1.44	-	1.00	=	0.44
 
 Measure_2:
 	-h1(6):		SS		A*
@@ -98,23 +98,23 @@ ss:		{(gapdb_0, 14.33),(gapdb_1, 20.19),(gapdb_2, 14.33),(gapdb_3, 14.33),(gapdb
 Measure_1:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_1, gapdb_5):	0.98	-	1.41	=	-0.43
-	(gapdb_4, gapdb_1):	0.31	-	0.71	=	-0.40
-	(gapdb_1, gapdb_2):	1.10	-	1.41	=	-0.31
-	(gapdb_2, gapdb_0):	0.71	-	1.00	=	-0.29
-	(gapdb_2, gapdb_3):	0.71	-	1.00	=	-0.29
-	(gapdb_5, gapdb_0):	0.80	-	1.00	=	-0.20
-	(gapdb_5, gapdb_3):	0.80	-	1.00	=	-0.20
-	(gapdb_2, gapdb_5):	0.89	-	1.00	=	-0.11
+	(gapdb_0, gapdb_2):	1.00	-	1.41	=	-0.41
+	(gapdb_3, gapdb_2):	1.00	-	1.41	=	-0.41
+	(gapdb_5, gapdb_1):	0.71	-	1.02	=	-0.31
+	(gapdb_0, gapdb_5):	1.00	-	1.25	=	-0.25
+	(gapdb_3, gapdb_5):	1.00	-	1.25	=	-0.25
+	(gapdb_2, gapdb_1):	0.71	-	0.91	=	-0.20
+	(gapdb_5, gapdb_2):	1.00	-	1.12	=	-0.12
 	(gapdb_0, gapdb_3):	1.00	-	1.00	=	0.00
 	(gapdb_3, gapdb_0):	1.00	-	1.00	=	0.00
-	(gapdb_5, gapdb_2):	1.12	-	1.00	=	0.12
-	(gapdb_2, gapdb_1):	0.91	-	0.71	=	0.20
-	(gapdb_0, gapdb_5):	1.25	-	1.00	=	0.25
-	(gapdb_3, gapdb_5):	1.25	-	1.00	=	0.25
-	(gapdb_5, gapdb_1):	1.02	-	0.71	=	0.31
-	(gapdb_0, gapdb_2):	1.41	-	1.00	=	0.41
-	(gapdb_3, gapdb_2):	1.41	-	1.00	=	0.41
+	(gapdb_2, gapdb_5):	1.00	-	0.89	=	0.11
+	(gapdb_5, gapdb_0):	1.00	-	0.80	=	0.20
+	(gapdb_5, gapdb_3):	1.00	-	0.80	=	0.20
+	(gapdb_2, gapdb_0):	1.00	-	0.71	=	0.29
+	(gapdb_2, gapdb_3):	1.00	-	0.71	=	0.29
+	(gapdb_1, gapdb_2):	1.41	-	1.10	=	0.31
+	(gapdb_4, gapdb_1):	0.71	-	0.31	=	0.40
+	(gapdb_1, gapdb_5):	1.41	-	0.98	=	0.43
 
 Measure_2:
 	-h1(6):		SS		A*
@@ -140,11 +140,11 @@ ss:		{(gapdb_0, 36.24),(gapdb_1, 244.87),(gapdb_2, 929711.48),(gapdb_3, 342.93),
 Measure_1:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_3, gapdb_1):	1.00	-	1.40	=	-0.40
-	(gapdb_5, gapdb_3):	1.00	-	1.18	=	-0.18
-	(gapdb_3, gapdb_5):	1.00	-	0.85	=	0.15
-	(gapdb_1, gapdb_3):	1.00	-	0.71	=	0.29
-	(gapdb_1, gapdb_5):	1.00	-	0.60	=	0.40
+	(gapdb_1, gapdb_5):	0.60	-	1.00	=	-0.40
+	(gapdb_1, gapdb_3):	0.71	-	1.00	=	-0.29
+	(gapdb_3, gapdb_5):	0.85	-	1.00	=	-0.15
+	(gapdb_5, gapdb_3):	1.18	-	1.00	=	0.18
+	(gapdb_3, gapdb_1):	1.40	-	1.00	=	0.40
 
 Measure_2:
 	-h1(3):		SS		A*
@@ -165,20 +165,20 @@ ss:		{(gapdb_0, 79.41),(gapdb_1, 492909.19),(gapdb_2, 130.53),(gapdb_3, 32.00),(
 Measure_1:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_3, gapdb_0):	0.33	-	0.40	=	-0.07
-	(gapdb_5, gapdb_0):	0.33	-	0.40	=	-0.07
-	(gapdb_4, gapdb_2):	1.00	-	1.04	=	-0.04
+	(gapdb_0, gapdb_4):	0.58	-	0.89	=	-0.30
+	(gapdb_3, gapdb_1):	0.00	-	0.30	=	-0.30
+	(gapdb_5, gapdb_1):	0.00	-	0.30	=	-0.30
+	(gapdb_0, gapdb_2):	0.61	-	0.89	=	-0.28
+	(gapdb_3, gapdb_4):	0.23	-	0.30	=	-0.06
+	(gapdb_5, gapdb_4):	0.23	-	0.30	=	-0.06
+	(gapdb_3, gapdb_2):	0.25	-	0.30	=	-0.05
+	(gapdb_5, gapdb_2):	0.25	-	0.30	=	-0.05
+	(gapdb_2, gapdb_4):	0.96	-	1.00	=	-0.04
 	(gapdb_3, gapdb_5):	1.00	-	1.00	=	0.00
 	(gapdb_5, gapdb_3):	1.00	-	1.00	=	0.00
-	(gapdb_2, gapdb_4):	1.00	-	0.96	=	0.04
-	(gapdb_3, gapdb_2):	0.30	-	0.25	=	0.05
-	(gapdb_5, gapdb_2):	0.30	-	0.25	=	0.05
-	(gapdb_3, gapdb_4):	0.30	-	0.23	=	0.06
-	(gapdb_5, gapdb_4):	0.30	-	0.23	=	0.06
-	(gapdb_0, gapdb_2):	0.89	-	0.61	=	0.28
-	(gapdb_3, gapdb_1):	0.30	-	0.00	=	0.30
-	(gapdb_5, gapdb_1):	0.30	-	0.00	=	0.30
-	(gapdb_0, gapdb_4):	0.89	-	0.58	=	0.30
+	(gapdb_4, gapdb_2):	1.04	-	1.00	=	0.04
+	(gapdb_3, gapdb_0):	0.40	-	0.33	=	0.07
+	(gapdb_5, gapdb_0):	0.40	-	0.33	=	0.07
 
 Measure_2:
 	-h1(5):		SS		A*
@@ -204,8 +204,8 @@ ss:		{(gapdb_0, 9056694.75),(gapdb_1, 273.44),(gapdb_2, 492.57),(gapdb_3, 2603.6
 Measure_1:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_4, gapdb_5):	1.00	-	0.63	=	0.37
-	(gapdb_1, gapdb_2):	1.00	-	0.56	=	0.44
+	(gapdb_1, gapdb_2):	0.56	-	1.00	=	-0.44
+	(gapdb_4, gapdb_5):	0.63	-	1.00	=	-0.37
 
 Measure_2:
 	-h1(2):		SS		A*
@@ -224,26 +224,26 @@ ss:		{(gapdb_0, 53.55),(gapdb_1, 44.42),(gapdb_2, 59.83),(gapdb_3, 212.68),(gapd
 Measure_1:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_2, gapdb_4):	1.04	-	1.29	=	-0.26
-	(gapdb_2, gapdb_1):	1.13	-	1.35	=	-0.22
-	(gapdb_2, gapdb_5):	1.10	-	1.30	=	-0.20
-	(gapdb_0, gapdb_4):	0.98	-	1.16	=	-0.18
-	(gapdb_0, gapdb_1):	1.06	-	1.21	=	-0.14
-	(gapdb_0, gapdb_5):	1.04	-	1.17	=	-0.13
-	(gapdb_2, gapdb_0):	1.06	-	1.12	=	-0.06
-	(gapdb_5, gapdb_4):	0.94	-	0.99	=	-0.05
-	(gapdb_1, gapdb_4):	0.92	-	0.96	=	-0.04
-	(gapdb_5, gapdb_1):	1.02	-	1.03	=	-0.01
-	(gapdb_1, gapdb_5):	0.98	-	0.97	=	0.01
-	(gapdb_4, gapdb_1):	1.09	-	1.04	=	0.04
-	(gapdb_0, gapdb_2):	0.94	-	0.90	=	0.05
-	(gapdb_4, gapdb_5):	1.06	-	1.01	=	0.06
-	(gapdb_5, gapdb_0):	0.96	-	0.86	=	0.10
-	(gapdb_1, gapdb_0):	0.94	-	0.83	=	0.11
-	(gapdb_5, gapdb_2):	0.91	-	0.77	=	0.14
-	(gapdb_1, gapdb_2):	0.89	-	0.74	=	0.15
-	(gapdb_4, gapdb_0):	1.02	-	0.87	=	0.16
-	(gapdb_4, gapdb_2):	0.97	-	0.77	=	0.19
+	(gapdb_4, gapdb_2):	0.77	-	0.97	=	-0.19
+	(gapdb_4, gapdb_0):	0.87	-	1.02	=	-0.16
+	(gapdb_1, gapdb_2):	0.74	-	0.89	=	-0.15
+	(gapdb_5, gapdb_2):	0.77	-	0.91	=	-0.14
+	(gapdb_1, gapdb_0):	0.83	-	0.94	=	-0.11
+	(gapdb_5, gapdb_0):	0.86	-	0.96	=	-0.10
+	(gapdb_4, gapdb_5):	1.01	-	1.06	=	-0.06
+	(gapdb_0, gapdb_2):	0.90	-	0.94	=	-0.05
+	(gapdb_4, gapdb_1):	1.04	-	1.09	=	-0.04
+	(gapdb_1, gapdb_5):	0.97	-	0.98	=	-0.01
+	(gapdb_5, gapdb_1):	1.03	-	1.02	=	0.01
+	(gapdb_1, gapdb_4):	0.96	-	0.92	=	0.04
+	(gapdb_5, gapdb_4):	0.99	-	0.94	=	0.05
+	(gapdb_2, gapdb_0):	1.12	-	1.06	=	0.06
+	(gapdb_0, gapdb_5):	1.17	-	1.04	=	0.13
+	(gapdb_0, gapdb_1):	1.21	-	1.06	=	0.14
+	(gapdb_0, gapdb_4):	1.16	-	0.98	=	0.18
+	(gapdb_2, gapdb_5):	1.30	-	1.10	=	0.20
+	(gapdb_2, gapdb_1):	1.35	-	1.13	=	0.22
+	(gapdb_2, gapdb_4):	1.29	-	1.04	=	0.26
 
 Measure_2:
 	-h1(5):		SS		A*
@@ -268,33 +268,33 @@ ss:		{(gapdb_0, 85.24),(gapdb_1, 36.38),(gapdb_2, 75.97),(gapdb_3, 134.79),(gapd
 Measure_1:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_2, gapdb_1):	1.65	-	2.09	=	-0.44
-	(gapdb_5, gapdb_1):	1.78	-	2.11	=	-0.33
-	(gapdb_0, gapdb_5):	0.89	-	1.11	=	-0.22
-	(gapdb_0, gapdb_2):	0.96	-	1.12	=	-0.16
-	(gapdb_0, gapdb_4):	1.00	-	1.12	=	-0.12
-	(gapdb_0, gapdb_3):	0.52	-	0.63	=	-0.12
-	(gapdb_4, gapdb_5):	0.89	-	0.99	=	-0.10
-	(gapdb_2, gapdb_5):	0.93	-	0.99	=	-0.06
-	(gapdb_4, gapdb_3):	0.52	-	0.56	=	-0.05
-	(gapdb_4, gapdb_2):	0.96	-	1.00	=	-0.05
-	(gapdb_3, gapdb_5):	1.72	-	1.76	=	-0.04
-	(gapdb_2, gapdb_3):	0.54	-	0.56	=	-0.02
-	(gapdb_5, gapdb_3):	0.58	-	0.57	=	0.01
-	(gapdb_2, gapdb_4):	1.05	-	1.00	=	0.05
-	(gapdb_1, gapdb_3):	0.33	-	0.27	=	0.06
-	(gapdb_5, gapdb_2):	1.08	-	1.01	=	0.07
-	(gapdb_3, gapdb_2):	1.85	-	1.77	=	0.08
-	(gapdb_1, gapdb_5):	0.56	-	0.47	=	0.09
-	(gapdb_4, gapdb_0):	1.00	-	0.89	=	0.11
-	(gapdb_5, gapdb_4):	1.13	-	1.01	=	0.12
-	(gapdb_1, gapdb_2):	0.61	-	0.48	=	0.13
-	(gapdb_2, gapdb_0):	1.04	-	0.89	=	0.15
-	(gapdb_1, gapdb_4):	0.63	-	0.48	=	0.16
-	(gapdb_3, gapdb_4):	1.94	-	1.77	=	0.17
-	(gapdb_1, gapdb_0):	0.63	-	0.43	=	0.21
-	(gapdb_5, gapdb_0):	1.12	-	0.90	=	0.22
-	(gapdb_3, gapdb_0):	1.93	-	1.58	=	0.35
+	(gapdb_3, gapdb_0):	1.58	-	1.93	=	-0.35
+	(gapdb_5, gapdb_0):	0.90	-	1.12	=	-0.22
+	(gapdb_1, gapdb_0):	0.43	-	0.63	=	-0.21
+	(gapdb_3, gapdb_4):	1.77	-	1.94	=	-0.17
+	(gapdb_1, gapdb_4):	0.48	-	0.63	=	-0.16
+	(gapdb_2, gapdb_0):	0.89	-	1.04	=	-0.15
+	(gapdb_1, gapdb_2):	0.48	-	0.61	=	-0.13
+	(gapdb_5, gapdb_4):	1.01	-	1.13	=	-0.12
+	(gapdb_4, gapdb_0):	0.89	-	1.00	=	-0.11
+	(gapdb_1, gapdb_5):	0.47	-	0.56	=	-0.09
+	(gapdb_3, gapdb_2):	1.77	-	1.85	=	-0.08
+	(gapdb_5, gapdb_2):	1.01	-	1.08	=	-0.07
+	(gapdb_1, gapdb_3):	0.27	-	0.33	=	-0.06
+	(gapdb_2, gapdb_4):	1.00	-	1.05	=	-0.05
+	(gapdb_5, gapdb_3):	0.57	-	0.58	=	-0.01
+	(gapdb_2, gapdb_3):	0.56	-	0.54	=	0.02
+	(gapdb_3, gapdb_5):	1.76	-	1.72	=	0.04
+	(gapdb_4, gapdb_2):	1.00	-	0.96	=	0.05
+	(gapdb_4, gapdb_3):	0.56	-	0.52	=	0.05
+	(gapdb_2, gapdb_5):	0.99	-	0.93	=	0.06
+	(gapdb_4, gapdb_5):	0.99	-	0.89	=	0.10
+	(gapdb_0, gapdb_3):	0.63	-	0.52	=	0.12
+	(gapdb_0, gapdb_4):	1.12	-	1.00	=	0.12
+	(gapdb_0, gapdb_2):	1.12	-	0.96	=	0.16
+	(gapdb_0, gapdb_5):	1.11	-	0.89	=	0.22
+	(gapdb_5, gapdb_1):	2.11	-	1.78	=	0.33
+	(gapdb_2, gapdb_1):	2.09	-	1.65	=	0.44
 
 Measure_2:
 	-h1(6):		SS		A*
@@ -321,12 +321,12 @@ ss:		{(gapdb_0, 20859.29),(gapdb_1, 460267.84),(gapdb_2, 471862.93),(gapdb_3, 24
 Measure_1:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_3, gapdb_0):	1.00	-	1.15	=	-0.15
-	(gapdb_2, gapdb_1):	1.00	-	1.03	=	-0.03
-	(gapdb_1, gapdb_2):	1.00	-	0.98	=	0.02
-	(gapdb_0, gapdb_3):	1.00	-	0.87	=	0.13
-	(gapdb_5, gapdb_0):	1.00	-	0.60	=	0.40
-	(gapdb_5, gapdb_3):	1.00	-	0.53	=	0.47
+	(gapdb_5, gapdb_3):	0.53	-	1.00	=	-0.47
+	(gapdb_5, gapdb_0):	0.60	-	1.00	=	-0.40
+	(gapdb_0, gapdb_3):	0.87	-	1.00	=	-0.13
+	(gapdb_1, gapdb_2):	0.98	-	1.00	=	-0.02
+	(gapdb_2, gapdb_1):	1.03	-	1.00	=	0.03
+	(gapdb_3, gapdb_0):	1.15	-	1.00	=	0.15
 
 Measure_2:
 	-h1(5):		SS		A*
@@ -376,14 +376,14 @@ ss:		{(gapdb_0, 1792670011508.00),(gapdb_1, 1792670011508.00),(gapdb_2, 1759508.
 Measure_1:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_2, gapdb_4):	1.00	-	1.11	=	-0.11
+	(gapdb_4, gapdb_2):	0.90	-	1.00	=	-0.10
 	(gapdb_0, gapdb_1):	1.00	-	1.00	=	0.00
 	(gapdb_0, gapdb_5):	1.00	-	1.00	=	0.00
 	(gapdb_1, gapdb_0):	1.00	-	1.00	=	0.00
 	(gapdb_1, gapdb_5):	1.00	-	1.00	=	0.00
 	(gapdb_5, gapdb_0):	1.00	-	1.00	=	0.00
 	(gapdb_5, gapdb_1):	1.00	-	1.00	=	0.00
-	(gapdb_4, gapdb_2):	1.00	-	0.90	=	0.10
+	(gapdb_2, gapdb_4):	1.11	-	1.00	=	0.11
 
 Measure_2:
 	-h1(5):		SS		A*
@@ -466,9 +466,9 @@ ss:		{(gapdb_0, 9731397100406.70),(gapdb_1, 7796842933.70),(gapdb_2, 97313971004
 Measure_1:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_5, gapdb_4):	0.64	-	1.00	=	-0.36
 	(gapdb_0, gapdb_2):	1.00	-	1.00	=	0.00
 	(gapdb_2, gapdb_0):	1.00	-	1.00	=	0.00
-	(gapdb_5, gapdb_4):	1.00	-	0.64	=	0.36
 
 Measure_2:
 	-h1(3):		SS		A*
@@ -515,10 +515,10 @@ ss:		{(gapdb_0, 534447880000.00),(gapdb_1, 4882876600.00),(gapdb_2, 930678416600
 Measure_1:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_0, gapdb_3):	1.00	-	1.36	=	-0.36
-	(gapdb_3, gapdb_0):	1.00	-	0.73	=	0.27
-	(gapdb_0, gapdb_2):	1.00	-	0.57	=	0.43
-	(gapdb_4, gapdb_1):	1.00	-	0.53	=	0.47
+	(gapdb_4, gapdb_1):	0.53	-	1.00	=	-0.47
+	(gapdb_0, gapdb_2):	0.57	-	1.00	=	-0.43
+	(gapdb_3, gapdb_0):	0.73	-	1.00	=	-0.27
+	(gapdb_0, gapdb_3):	1.36	-	1.00	=	0.36
 
 Measure_2:
 	-h1(3):		SS		A*
@@ -540,13 +540,13 @@ ss:		{(gapdb_0, 22421349300.00),(gapdb_1, 178364300.00),(gapdb_2, 297803000.00),
 Measure_1:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(gapdb_1, gapdb_2):	0.60	-	1.00	=	-0.40
 	(gapdb_3, gapdb_4):	1.00	-	1.00	=	0.00
 	(gapdb_3, gapdb_5):	1.00	-	1.00	=	0.00
 	(gapdb_4, gapdb_3):	1.00	-	1.00	=	0.00
 	(gapdb_4, gapdb_5):	1.00	-	1.00	=	0.00
 	(gapdb_5, gapdb_3):	1.00	-	1.00	=	0.00
 	(gapdb_5, gapdb_4):	1.00	-	1.00	=	0.00
-	(gapdb_1, gapdb_2):	1.00	-	0.60	=	0.40
 
 Measure_2:
 	-h1(4):		SS		A*
