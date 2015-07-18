@@ -718,6 +718,11 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					}
 					outputFile<<"\n\n";
 
+					outputFile<<"\nMeasure_2:\n";
+
+
+
+
 					cout<<"end info--\n";
 					/*	
 					//ss ------------------------------------

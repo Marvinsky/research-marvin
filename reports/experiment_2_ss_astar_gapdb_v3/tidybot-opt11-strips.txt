@@ -40,6 +40,8 @@ Measure_1:
 	(gapdb_5, gapdb_4):	1.00	-	1.00	=	0.00
 
 
+
+Measure_2:
 instance_name: p03_F_16.csv
 
 A*:		{(gapdb_0, 58389.00),(gapdb_1, 58389.00),(gapdb_2, 58389.00),(gapdb_3, 58389.00),(gapdb_4, 58389.00),(gapdb_5, 58389.00),}
@@ -58,6 +60,8 @@ Measure_1:
 	(gapdb_2, gapdb_4):	1.00	-	1.00	=	0.00
 
 
+
+Measure_2:
 instance_name: p07_F_17.csv
 
 A*:		{(gapdb_0, 85479.00),(gapdb_1, 85479.00),(gapdb_2, 85479.00),(gapdb_3, 85479.00),(gapdb_4, 85479.00),(gapdb_5, 85479.00),}
@@ -78,3 +82,5 @@ Measure_1:
 	(gapdb_1, gapdb_5):	1.00	-	0.59	=	0.41
 
 
+
+Measure_2:

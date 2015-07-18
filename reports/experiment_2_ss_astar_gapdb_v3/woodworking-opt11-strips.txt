@@ -18,6 +18,8 @@ Measure_1:
 	(gapdb_3, gapdb_5):	0.93	-	0.48	=	0.45
 
 
+
+Measure_2:
 instance_name: p02_F_225.csv
 
 A*:		{(gapdb_0, 27591700.00),(gapdb_1, 10072200.00),(gapdb_2, 35676500.00),(gapdb_3, 27591700.00),(gapdb_4, 35676500.00),(gapdb_5, 10072200.00),}
@@ -37,3 +39,5 @@ Measure_1:
 	(gapdb_2, gapdb_4):	1.00	-	0.52	=	0.48
 
 
+
+Measure_2:

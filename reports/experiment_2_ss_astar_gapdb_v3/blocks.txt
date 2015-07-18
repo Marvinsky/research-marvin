@@ -30,6 +30,8 @@ Measure_1:
 	(gapdb_4, gapdb_2):	0.82	-	0.47	=	0.34
 
 
+
+Measure_2:
 instance_name: probBLOCKS-4-1_F_10.csv
 
 A*:		{(gapdb_0, 226.00),(gapdb_1, 226.00),(gapdb_2, 217.00),(gapdb_3, 226.00),(gapdb_4, 226.00),(gapdb_5, 226.00),}
@@ -61,6 +63,8 @@ Measure_1:
 	(gapdb_2, gapdb_3):	0.96	-	0.58	=	0.38
 
 
+
+Measure_2:
 instance_name: probBLOCKS-4-2_F_6.csv
 
 A*:		{(gapdb_0, 169.00),(gapdb_1, 132.00),(gapdb_2, 120.00),(gapdb_3, 169.00),(gapdb_4, 41.00),(gapdb_5, 135.00),}
@@ -88,6 +92,8 @@ Measure_1:
 	(gapdb_3, gapdb_2):	1.41	-	1.00	=	0.41
 
 
+
+Measure_2:
 instance_name: probBLOCKS-5-0_F_12.csv
 
 A*:		{(gapdb_0, 1265.00),(gapdb_1, 1885.00),(gapdb_2, 1885.00),(gapdb_3, 1885.00),(gapdb_4, 1885.00),(gapdb_5, 1885.00),}
@@ -103,6 +109,8 @@ Measure_1:
 	(gapdb_1, gapdb_5):	1.00	-	0.60	=	0.40
 
 
+
+Measure_2:
 instance_name: probBLOCKS-5-1_F_10.csv
 
 A*:		{(gapdb_0, 1666.00),(gapdb_1, 1879.00),(gapdb_2, 1879.00),(gapdb_3, 556.00),(gapdb_4, 1879.00),(gapdb_5, 556.00),}
@@ -127,6 +135,8 @@ Measure_1:
 	(gapdb_0, gapdb_4):	0.89	-	0.58	=	0.30
 
 
+
+Measure_2:
 instance_name: probBLOCKS-5-2_F_16.csv
 
 A*:		{(gapdb_0, 2089.00),(gapdb_1, 2089.00),(gapdb_2, 2089.00),(gapdb_3, 2089.00),(gapdb_4, 2089.00),(gapdb_5, 2089.00),}
@@ -139,6 +149,8 @@ Measure_1:
 	(gapdb_1, gapdb_2):	1.00	-	0.56	=	0.44
 
 
+
+Measure_2:
 instance_name: probBLOCKS-6-0_F_12.csv
 
 A*:		{(gapdb_0, 9783.00),(gapdb_1, 9205.00),(gapdb_2, 10367.00),(gapdb_3, 10367.00),(gapdb_4, 10013.00),(gapdb_5, 9408.00),}
@@ -169,6 +181,8 @@ Measure_1:
 	(gapdb_4, gapdb_2):	0.97	-	0.77	=	0.19
 
 
+
+Measure_2:
 instance_name: probBLOCKS-6-1_F_10.csv
 
 A*:		{(gapdb_0, 8249.00),(gapdb_1, 5225.00),(gapdb_2, 8613.00),(gapdb_3, 15960.00),(gapdb_4, 8237.00),(gapdb_5, 9277.00),}
@@ -206,6 +220,8 @@ Measure_1:
 	(gapdb_3, gapdb_0):	1.93	-	1.58	=	0.35
 
 
+
+Measure_2:
 instance_name: probBLOCKS-6-2_F_20.csv
 
 A*:		{(gapdb_0, 18551.00),(gapdb_1, 18551.00),(gapdb_2, 18551.00),(gapdb_3, 18551.00),(gapdb_4, 18551.00),(gapdb_5, 18551.00),}
@@ -222,6 +238,8 @@ Measure_1:
 	(gapdb_5, gapdb_3):	1.00	-	0.53	=	0.47
 
 
+
+Measure_2:
 instance_name: probBLOCKS-7-0_F_20.csv
 
 A*:		{(gapdb_0, 152105.00),(gapdb_1, 152105.00),(gapdb_2, 152105.00),(gapdb_3, 152105.00),(gapdb_4, 152105.00),(gapdb_5, 152105.00),}
@@ -238,6 +256,8 @@ Measure_1:
 	(gapdb_3, gapdb_1):	1.00	-	1.00	=	0.00
 
 
+
+Measure_2:
 instance_name: probBLOCKS-7-1_F_22.csv
 
 A*:		{(gapdb_0, 186577.00),(gapdb_1, 186577.00),(gapdb_2, 186577.00),(gapdb_3, 186577.00),(gapdb_4, 186577.00),(gapdb_5, 186577.00),}
@@ -256,6 +276,8 @@ Measure_1:
 	(gapdb_4, gapdb_2):	1.00	-	0.90	=	0.10
 
 
+
+Measure_2:
 instance_name: probBLOCKS-7-2_F_20.csv
 
 A*:		{(gapdb_0, 182635.00),(gapdb_1, 182635.00),(gapdb_2, 182635.00),(gapdb_3, 182635.00),(gapdb_4, 182635.00),(gapdb_5, 182635.00),}
@@ -274,6 +296,8 @@ Measure_1:
 	(gapdb_5, gapdb_4):	1.00	-	1.00	=	0.00
 
 
+
+Measure_2:
 instance_name: probBLOCKS-8-0_F_18.csv
 
 A*:		{(gapdb_0, 1935190.00),(gapdb_1, 1935190.00),(gapdb_2, 1935190.00),(gapdb_3, 1935190.00),(gapdb_4, 1935190.00),(gapdb_5, 1935190.00),}
@@ -290,6 +314,8 @@ Measure_1:
 	(gapdb_5, gapdb_1):	1.00	-	1.00	=	0.00
 
 
+
+Measure_2:
 instance_name: probBLOCKS-8-1_F_20.csv
 
 A*:		{(gapdb_0, 2063610.00),(gapdb_1, 2063610.00),(gapdb_2, 2063610.00),(gapdb_3, 2063610.00),(gapdb_4, 2063610.00),(gapdb_5, 2063610.00),}
@@ -303,6 +329,8 @@ Measure_1:
 	(gapdb_5, gapdb_4):	1.00	-	0.64	=	0.36
 
 
+
+Measure_2:
 instance_name: probBLOCKS-8-2_F_16.csv
 
 A*:		{(gapdb_0, 1785270.00),(gapdb_1, 1785270.00),(gapdb_2, 1785270.00),(gapdb_3, 1785270.00),(gapdb_4, 1785270.00),(gapdb_5, 1785270.00),}
@@ -319,6 +347,8 @@ Measure_1:
 	(gapdb_5, gapdb_4):	1.00	-	1.00	=	0.00
 
 
+
+Measure_2:
 instance_name: probBLOCKS-9-0_F_30.csv
 
 A*:		{(gapdb_0, 25951100.00),(gapdb_1, 25951100.00),(gapdb_2, 25951100.00),(gapdb_3, 25951100.00),(gapdb_4, 25951100.00),(gapdb_5, 25951100.00),}
@@ -333,6 +363,8 @@ Measure_1:
 	(gapdb_4, gapdb_1):	1.00	-	0.53	=	0.47
 
 
+
+Measure_2:
 instance_name: probBLOCKS-9-1_F_28.csv
 
 A*:		{(gapdb_0, 23552700.00),(gapdb_1, 23552700.00),(gapdb_2, 23552700.00),(gapdb_3, 23552700.00),(gapdb_4, 23552700.00),(gapdb_5, 23552700.00),}
@@ -350,6 +382,8 @@ Measure_1:
 	(gapdb_1, gapdb_2):	1.00	-	0.60	=	0.40
 
 
+
+Measure_2:
 instance_name: probBLOCKS-9-2_F_26.csv
 
 A*:		{(gapdb_0, 23552700.00),(gapdb_1, 23552700.00),(gapdb_2, 23552700.00),(gapdb_3, 23552700.00),}
@@ -359,3 +393,5 @@ Measure_1:
 - There are no match between ratio heuristics.
 
 
+
+Measure_2:

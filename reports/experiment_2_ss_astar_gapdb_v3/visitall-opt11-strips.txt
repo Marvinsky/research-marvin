@@ -36,6 +36,8 @@ Measure_1:
 	(gapdb_5, gapdb_2):	1.00	-	0.60	=	0.40
 
 
+
+Measure_2:
 instance_name: problem02-half_F_1.csv
 
 A*:		{(gapdb_0, 2.00),(gapdb_1, 4.00),(gapdb_2, 2.00),(gapdb_3, 4.00),(gapdb_4, 4.00),(gapdb_5, 4.00),}
@@ -68,6 +70,8 @@ Measure_1:
 	(gapdb_5, gapdb_4):	1.00	-	1.00	=	0.00
 
 
+
+Measure_2:
 instance_name: problem03-full_F_8.csv
 
 A*:		{(gapdb_0, 1980.00),(gapdb_1, 1980.00),(gapdb_2, 1980.00),(gapdb_3, 1980.00),(gapdb_4, 1980.00),(gapdb_5, 1980.00),}
@@ -100,6 +104,8 @@ Measure_1:
 	(gapdb_3, gapdb_4):	1.00	-	0.51	=	0.49
 
 
+
+Measure_2:
 instance_name: problem03-half_F_6.csv
 
 A*:		{(gapdb_0, 203.00),(gapdb_1, 203.00),(gapdb_2, 203.00),(gapdb_3, 206.00),(gapdb_4, 206.00),(gapdb_5, 203.00),}
@@ -122,6 +128,8 @@ Measure_1:
 	(gapdb_5, gapdb_2):	1.00	-	1.00	=	0.00
 
 
+
+Measure_2:
 instance_name: problem04-full_F_15.csv
 
 A*:		{(gapdb_0, 200136.00),(gapdb_1, 200136.00),(gapdb_2, 200136.00),(gapdb_3, 200136.00),(gapdb_4, 200136.00),(gapdb_5, 200136.00),}
@@ -136,6 +144,8 @@ Measure_1:
 	(gapdb_2, gapdb_1):	1.00	-	0.56	=	0.44
 
 
+
+Measure_2:
 instance_name: problem04-half_F_11.csv
 
 A*:		{(gapdb_0, 2955.00),(gapdb_1, 2955.00),(gapdb_2, 2963.00),(gapdb_3, 2955.00),(gapdb_4, 2963.00),(gapdb_5, 2963.00),}
@@ -166,6 +176,8 @@ Measure_1:
 	(gapdb_5, gapdb_2):	1.00	-	0.80	=	0.20
 
 
+
+Measure_2:
 instance_name: problem05-full_F_24.csv
 
 A*:		{(gapdb_0, 62938400.00),(gapdb_1, 62938400.00),(gapdb_2, 62938400.00),(gapdb_3, 62938400.00),(gapdb_4, 62938400.00),(gapdb_5, 62938400.00),}
@@ -182,6 +194,8 @@ Measure_1:
 	(gapdb_1, gapdb_3):	1.00	-	0.54	=	0.46
 
 
+
+Measure_2:
 instance_name: problem05-half_F_18.csv
 
 A*:		{(gapdb_0, 351472.00),(gapdb_1, 351637.00),(gapdb_2, 351472.00),(gapdb_3, 351550.00),(gapdb_4, 351637.00),(gapdb_5, 351550.00),}
@@ -199,6 +213,8 @@ Measure_1:
 	(gapdb_5, gapdb_3):	1.00	-	0.63	=	0.37
 
 
+
+Measure_2:
 instance_name: problem06-half_F_23.csv
 
 A*:		{(gapdb_0, 1472740.00),(gapdb_1, 1471480.00),(gapdb_2, 1472740.00),(gapdb_3, 1471480.00),(gapdb_4, 1472740.00),(gapdb_5, 1472740.00),}
@@ -211,3 +227,5 @@ Measure_1:
 	(gapdb_3, gapdb_1):	1.00	-	1.00	=	0.00
 
 
+
+Measure_2:

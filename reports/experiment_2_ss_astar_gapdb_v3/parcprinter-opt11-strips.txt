@@ -21,6 +21,8 @@ Measure_1:
 	(gapdb_5, gapdb_2):	2.06	-	1.59	=	0.47
 
 
+
+Measure_2:
 instance_name: p02_F_438047.csv
 
 A*:		{(gapdb_0, 332.00),(gapdb_1, 292.00),(gapdb_2, 439.00),(gapdb_3, 733.00),(gapdb_4, 572.00),(gapdb_5, 751.00),}
@@ -53,6 +55,8 @@ Measure_1:
 	(gapdb_5, gapdb_4):	1.31	-	1.00	=	0.31
 
 
+
+Measure_2:
 instance_name: p03_F_426587.csv
 
 A*:		{(gapdb_0, 5992.00),(gapdb_2, 4165.00),(gapdb_3, 3146.00),(gapdb_4, 2638.00),(gapdb_5, 6121.00),}
@@ -62,6 +66,8 @@ Measure_1:
 - There are no match between ratio heuristics.
 
 
+
+Measure_2:
 instance_name: p05_F_511235.csv
 
 A*:		{(gapdb_0, 89709.00),(gapdb_1, 81238.00),(gapdb_2, 116815.00),(gapdb_3, 92660.00),(gapdb_4, 58673.00),(gapdb_5, 71825.00),}
@@ -87,6 +93,8 @@ Measure_1:
 	(gapdb_3, gapdb_5):	1.29	-	0.82	=	0.47
 
 
+
+Measure_2:
 instance_name: p08_F_735648.csv
 
 A*:		{(gapdb_0, 6022050.00),(gapdb_1, 6593670.00),(gapdb_2, 2571710.00),(gapdb_3, 6400750.00),(gapdb_4, 5959320.00),(gapdb_5, 6648060.00),}
@@ -110,6 +118,8 @@ Measure_1:
 	(gapdb_5, gapdb_1):	1.01	-	0.87	=	0.14
 
 
+
+Measure_2:
 instance_name: p09_F_609395.csv
 
 A*:		{(gapdb_0, 1052990.00),(gapdb_1, 691335.00),(gapdb_2, 498823.00),(gapdb_3, 923426.00),(gapdb_4, 567159.00),(gapdb_5, 440393.00),}
@@ -130,3 +140,5 @@ Measure_1:
 	(gapdb_1, gapdb_0):	0.66	-	0.17	=	0.48
 
 
+
+Measure_2:
