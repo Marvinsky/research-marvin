@@ -671,9 +671,11 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						for (int i = 0; i < total_heuristics; i++) {
 							for (int j = 0; j < total_heuristics; j++) {
 								outputFile<<"\t"<<fracastar[i][j];
-								double fraa1 = fracastar[i][j];
-								double frass1 = fracss[i][j];
-								plot_info.push_back(pair<double, double>(frass1, fraa1));
+								if (i != j) {
+									double fraa1 = fracastar[i][j];
+									double frass1 = fracss[i][j];
+									plot_info.push_back(pair<double, double>(frass1, fraa1));
+								}
 							}
 							outputFile<<"\n";
 						}
