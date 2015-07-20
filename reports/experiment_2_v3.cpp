@@ -543,10 +543,13 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							}
 
 							//fill the fracss with the data ratio
-							double dratio = d/dinner;
-							fracastar[row_count][col_count] = dratio;
+							if (dinner != 0) {
+								double dratio = d/dinner;
+								fracastar[row_count][col_count] = dratio;
+							} else {
+								fracastar[row_count][col_count] = 0;
+							}
 							col_count++;
-					
 						}
 						row_count++;
 
@@ -628,8 +631,12 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							}
 							
 							//enhance 3:
-							double dratio = d/dinner;
-							fracss[row_count2][col_count2] = dratio;							
+							if (dinner != 0) {
+								double dratio = d/dinner;
+								fracss[row_count2][col_count2] = dratio;
+							} else {
+								fracss[row_count2][col_count2] = 0;
+							}
 							col_count2++;
 						}
 						row_count2++;
