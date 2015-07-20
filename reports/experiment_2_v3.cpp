@@ -481,13 +481,6 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					map<string, string> heuristic_description;
 
 					//enhance 3: create matrix fracastar
-					/*double** fracss;
-					int total_heuristics = m_values.size(); 
-					fracss = new double*[total_heuristics];
-					for (int i = 0; i < total_heuristics; i++) {
-						fracss[i] = new double[total_heuristics];
-					}*/
-
 					double** fracastar;
 					int total_heuristics = m_values.size();
 					fracastar = new double*[total_heuristics];
@@ -504,12 +497,6 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				                string t = s;
 						int found = t.find("_");
 						string heuristic_name_mod = t.substr(found + 1, t.length());
-						//stringstream ss;
-						//int n;
-						//ss << heuristic_name_mod;
-						//ss >> n;
-
-						//heuristic_description.insert(pair<string, string>(s, add_lines_heuristics.at(n-1)));
 
 						double d = pos->second;
 						m_astar_percentage.insert(pair<string, double>(s, d));
@@ -547,18 +534,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							map_astar.insert(pair<double, vector<string> >(d, ga_name));
 						}	
 					}
-					outputFile<<"}\n";
-
-					/*
-					cout<<"print fracss\n";	
-					for (int i = 0; i < total_heuristics; i++) {
-						for (int j = 0; j < total_heuristics; j++) {
-							cout<<fracss[i][j]<<"\t";
-						}
-						cout<<"\n";
-					}
-					*/
-
+					outputFile<<"}\n";	
 					cout<<"print fracastar\n";	
 					for (int i = 0; i < total_heuristics; i++) {
 						for (int j = 0; j < total_heuristics; j++) {
@@ -592,15 +568,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					//outputFile<<"\n\n";
 					//CALLING SS _____________________________________________
 					vector<pair<string, double> > m2 = analyzeFile(output_ssBC, true);
-					//enhance 3: create matrix fracss
-					/*
-					double** fracastar;
-					int total_heuristics2 = m2.size(); 
-					fracastar = new double*[total_heuristics2];
-					for (int i = 0; i < total_heuristics2; i++) {
-						fracastar[i] = new double[total_heuristics2];
-					}
-					*/
+					//enhance 3: create matrix fracss	
 
 					double** fracss;
 					int total_heuristics2 = m2.size(); 
@@ -650,17 +618,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							map_ss.insert(pair<double, vector<string> >(d, ga_name2));
 						}
 					}
-					outputFile<<"}\n";
-				
-					/*cout<<"print fracastar\n";	
-					for (int i = 0; i < total_heuristics; i++) {
-						for (int j = 0; j < total_heuristics; j++) {
-							cout<<fracastar[i][j]<<"\t";
-						}
-						cout<<"\n";
-					}
-					cout<<"\n\n\n";
-					*/
+					outputFile<<"}\n";	
 
 					cout<<"print fracss\n";	
 					for (int i = 0; i < total_heuristics2; i++) {
@@ -673,10 +631,26 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					cout<<"fracss size = "<<total_heuristics<<"\n";
 					cout<<"fracastar size = "<<total_heuristics2<<"\n";
 
-
 					multimap<double, pair<int, int> > ratiomap;
 					vector<pair<int, int> > index_collector; //collect the index that represent the best heuristics
 					if (total_heuristics == total_heuristics2) {
+
+						outputFile<<"\nMeasure_1:\n";
+						outputFile<<"\n-A* h1/h2\n";
+						for (int i = 0; i < total_heuristics; i++) {
+							for (int j = 0; j < total_heuristics; j++) {
+								outputFile<<"\t"<<fracastar[i][j];
+							}
+							outputFile<<"\n";
+						}
+						outputFile<<"\n-ss h1/h2\n";
+						for (int i = 0; i < total_heuristics2; i++) {
+							for (int j = 0; j < total_heuristics2; j++) {
+								outputFile<<"\t"<<fracss[i][j];
+							}
+							outputFile<<"\n";
+						}
+
 						for (int i = 0; i < total_heuristics; i++) {
 							for (int j = 0; j < total_heuristics; j++) {
 								if (i != j) {
@@ -689,355 +663,72 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								}
 							}
 						}
-					}	
-					//sort(ratiomap.begin(), ratiomap.end(), less_first<double, double>());
-					sort(index_collector.begin(), index_collector.end(), less_second<int, int>());
 
-					cout<<"index_collector.size() = "<<index_collector.size()<<"\n";
-					outputFile<<"\nMeasure_1:\n";
+						//sort(ratiomap.begin(), ratiomap.end(), less_first<double, double>());
+						sort(index_collector.begin(), index_collector.end(), less_second<int, int>());
 
 
-					set<string> no_repeat_h1, no_repeat_h2; 
-					if (index_collector.size() == 0) {
-						outputFile<<"- There are no match between ratio heuristics.\n";
-					} else {
-						multimap<double, pair<int, int> >::iterator iter;
-						outputFile<<"- The heuristics that have the similar ratio are:\n";
-						outputFile<<"\t(h1     ,h2     ):\tfracss\t-\tfracastar\t=\tdiff\n";
-						for (iter = ratiomap.begin(); iter != ratiomap.end(); iter++) {
-							double diff = iter->first;
-							pair<int, int> pratio = iter->second;
-						
-							int first_heur = pratio.first;
-							int second_heur = pratio.second;
-							stringstream number1, number2;
-							number1<<first_heur;
-							number2<<second_heur;
-							string name1 = "gapdb_"+number1.str();
-							string name2 = "gapdb_"+number2.str();
-							
-							no_repeat_h1.insert(name1);
-							no_repeat_h2.insert(name2);
-								
-							cout<<"("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
-							outputFile<<"\t("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
-						}
-						/*
-						typedef std::vector<std::pair<int, int> > vector_type3;
-						outputFile<<"- The heuristics that have similar ratio are:\n";
-						for (vector_type3::const_iterator pos3 = index_collector.begin(); pos3 != index_collector.end(); ++pos3) {
-							int first_heur = pos3->first;
-							int second_heur = pos3->second;
-							stringstream number1, number2;
-							number1<<first_heur;
-							number2<<second_heur;
-							string name1 = "gapdb_"+number1.str();
-							string name2 = "gapdb_"+number2.str();
-
-							double diffR = fracss[first_heur][second_heur] - fracastar[first_heur][second_heur]; 
-
-							cout<<"("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diffR<<"\n";
-							outputFile<<"\t("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diffR<<"\n";
-							//cout<<"("<<name1<<"/"<<name2<<"): \n";
-							//outputFile<<"\t"<<name1<<", "<<name2<<"\n";
-						}*/
-					}
-					outputFile<<"\nMeasure_2:\n";
-
-					outputFile<<"\t-h1("<<no_repeat_h1.size()<<"):\t\tSS\t\tA*\n";
-					std::set<string>::iterator iter_set;
-					for (iter_set = no_repeat_h1.begin(); iter_set != no_repeat_h1.end(); ++iter_set) {
-                                                string h1 = *iter_set;
-
-						map<string, double>::iterator iterastar = m_astar_percentage.find(h1);
-						map<string, double>::iterator iterss = m_ss_percentage.find(h1);
-						double expastar = iterastar->second;
-						double expss = iterss->second;
-
-						outputFile<<"\t"<<h1<<"\t\t"<<expss<<"\t\t"<<expastar<<"\n";
-					}
-
-					outputFile<<"\n";
-
-					outputFile<<"\t-h2("<<no_repeat_h2.size()<<"):\t\tSS\t\tA*\n";
-					std::set<string>::iterator iter_set2;
-					for (iter_set2 = no_repeat_h2.begin(); iter_set2 != no_repeat_h2.end(); ++iter_set2) {
-                                                string h2 = *iter_set2;
-						
-						map<string, double>::iterator iterastar = m_astar_percentage.find(h2);
-						map<string, double>::iterator iterss = m_ss_percentage.find(h2);
-						double expastar = iterastar->second;
-						double expss = iterss->second;
-
-						outputFile<<"\t"<<h2<<"\t\t"<<expss<<"\t\t"<<expastar<<"\n";
-					}
-					outputFile<<"\n";
-
-					cout<<"end info--\n";
-					/*	
-					//ss ------------------------------------
-					map<string, vector<string> > group_map_ss;
-					int ss_count = 1;
-					map<double, vector<string> >::iterator itmap4;
-					for (itmap4 = map_ss.begin(); itmap4 != map_ss.end(); ++itmap4) {
-						double d = itmap4->first;
-						vector<string> s = itmap4->second;
-						
-						stringstream number;
-						number<<ss_count++;
-						string name = "a_"+number.str();
-						//outputFile<<"\t"<<name<<":\t\t{";
-						for (size_t i = 0; i < s.size(); i++) {
-							//outputFile<<s.at(i);
-							if (i != s.size() -1) {
-								//outputFile<<"/";
-							}
-						}
-						//outputFile<<"}\n";
-						group_map_ss.insert(pair<string, vector<string> >(name, s));
-					}
-					//Measure of error maximo
-					int count_error = 0, threshold = 3;
-					vector<string> v_match_fixed_astar_ss;
-					vector<string> three_first_s;
-					vector<double> three_first_d;
-
-					*/
-
-
-
-					/*
-					if (collector_astar.size() == collector_ss.size()) {
-						for (size_t p = 0; p < collector_astar.size(); p++) {
-							string a_astar = collector_astar.at(p), a_ss = collector_ss.at(p);
-							if (a_astar != a_ss) {
-								count_error++;	
-							}
-							if (p < threshold) {
-								//cout<<"added: "<<a_astar<<"\n";
-								three_first_s.push_back(a_astar);
-								for (size_t q = 0; q < collector_ss.size(); q++) {
-									string a_ss_inner = collector_ss.at(q);
-									if (q < threshold) {
-										if (a_astar == a_ss_inner) {
-											v_match_fixed_astar_ss.push_back(a_astar);
-										}
-									}
-								}
-							}
-						}
-						//outputFile<<"error maximo = "<<count_error<<"\n";
-						//}//here to remove
-					
-						vector<string> v_ss_regrets_fixed; //To calculate the fixed regrets
-						vector<string> v_ss_regrets_random; //To calculate the random regrets
-						for (size_t q = 0; q < collector_ss.size(); q++) {
-							string a_ss = collector_ss.at(q);
-							v_ss_regrets_random.push_back(a_ss);
-							if (q < threshold) {
-								v_ss_regrets_fixed.push_back(a_ss);
-							}
-						}	
-
-						vector<string> s_v_three;
-						vector<double> d_v_three;
-						int counter_three = 0;
-						outputFile<<"\nMeasure_1:";
-						if (v_match_fixed_astar_ss.size() > 0) {	
-							for (size_t p = 0; p < v_match_fixed_astar_ss.size(); p++) {
-								string key = v_match_fixed_astar_ss.at(p);
-								map<string, double>::iterator iter = m_astar_percentage.find(key);
-								if (iter != m_astar_percentage.end()) {
-									string s = iter->first;
-									double value = iter->second;
-									//outputFile<<"\t"<<s<<":\t"<<value<<"\n";
-									s_v_three.push_back(s);
-									d_v_three.push_back(value);
-									counter_three++;
-								}
-							}
-						}
-
-						//fill the three_first_d
-						for (size_t i = 0; i < three_first_s.size(); i++) {
-							string key = three_first_s.at(i);
-							map<string, double>::iterator iter = m_astar_percentage.find(key);
-							if (iter != m_astar_percentage.end()) {
-								double value = iter->second;
-								three_first_d.push_back(value);
-							}
-						}
-
-						//Find the best heuristics in order to calculate the regret
-						string best_heuristic = "---";
-						double best_nodes = 0;
-
-					
-
-						int size_s = three_first_s.size(), size_d = three_first_d.size();
-						cout<<"size_s = "<<size_s<<", size_d = "<<size_d<<"\n";
-						if (size_s == 0 || size_d == 0) {
-
-						} else {	
-							pair<string, double> pData = getPair(three_first_s, three_first_d);
-							best_heuristic = pData.first;
-							best_nodes = pData.second;
-						}
-
-						outputFile<<" - Best heuristic is "<<best_heuristic<<", and number of nodes generated: "<<best_nodes<<"\n";
 						outputFile<<"\nMeasure_2:\n";
-						map<string, double> m_regrets_fixed;
-						for (size_t r = 0; r < v_ss_regrets_fixed.size(); r++) {
-							string name_ss = v_ss_regrets_fixed.at(r);
-							map<string, double>::iterator iter_regret = m_astar_percentage.find(name_ss);
-							if (iter_regret != m_astar_percentage.end()) {
-								string aux_heur = iter_regret->first;
-								double aux_nodes = iter_regret->second;
-								double regret = aux_nodes - best_nodes;
-								m_regrets_fixed.insert(pair<string, double>(aux_heur, regret));
-							}
-						}
-						outputFile<<" - Fixed Regrets:\n";
-						for (map<string, double>::iterator it_r = m_regrets_fixed.begin(); it_r != m_regrets_fixed.end(); it_r++) {
-							string a_heur = it_r->first;
-							double d_nodes = it_r->second;
-							outputFile<<"\t"<<a_heur<<":\t"<<d_nodes<<"\n";
-						}
-						//print the percentage
-						double per_fixed = 0, per_random = 0;
-						if (v_match_fixed_astar_ss.size() > 0) {
-							per_fixed = ((double)v_match_fixed_astar_ss.size()/(double)threshold)*100;
-							outputFile<<" - "<<per_fixed<<"\% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.\n";
+						set<string> no_repeat_h1, no_repeat_h2; 
+						if (index_collector.size() == 0) {
+							outputFile<<"- There are no match between ratio heuristics.\n";
 						} else {
-							outputFile<<" - 0\% of the 3 first heuristics from SS are used in the 3 first heuristics in A*.\n";
+							multimap<double, pair<int, int> >::iterator iter;
+							outputFile<<"- The heuristics that have the similar ratio are:\n";
+							outputFile<<"\t(h1     ,h2     ):\tfracss\t-\tfracastar\t=\tdiff\n";
+							for (iter = ratiomap.begin(); iter != ratiomap.end(); iter++) {
+								double diff = iter->first;
+								pair<int, int> pratio = iter->second;
+						
+								int first_heur = pratio.first;
+								int second_heur = pratio.second;
+								stringstream number1, number2;
+								number1<<first_heur;
+								number2<<second_heur;
+								string name1 = "gapdb_"+number1.str();
+								string name2 = "gapdb_"+number2.str();
+							
+								no_repeat_h1.insert(name1);
+								no_repeat_h2.insert(name2);
+								
+								cout<<"("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
+								outputFile<<"\t("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
+							}	
 						}
-					
-						//Calculate the random generation of regrets
-						map<string, double> m_regrets_random;
-						vector<string> collector_random_ss;
-						double average_regrets = 0, sum_regrets = 0;
-						int counter_regrets = 0;
-						vector<string> v_match_random_astar_ss;
-						int size_max = v_ss_regrets_random.size();						
-						do {
-							int h =   (rand() % (int)(size_max));
-							no_repeat_int.insert(h);
-						} while (no_repeat_int.size() < threshold);
-					
-						//average regrets	
-						do {
-							int h =   (rand() % (int)(size_max));
-							repeat_random_10.push_back(h);
-						} while (repeat_random_10.size() < 10);
-					
-						for (size_t p = 0; p < repeat_random_10.size(); p++) {
-							int h = repeat_random_10.at(p);
-							string name_ss = v_ss_regrets_random.at(h);
-							map<string, double>::iterator iter_regret = m_astar_percentage.find(name_ss);
-							if (iter_regret != m_astar_percentage.end()) {
-								double aux_nodes = iter_regret->second;
-								double regret = aux_nodes - best_nodes;
-								sum_regrets += regret;
-								counter_regrets++;
-							}
-						}
-						average_regrets = (double)sum_regrets/(double)counter_regrets;
-						repeat_random_10.clear();
-						std::set<int>::iterator iter_set;	
-						for (iter_set = no_repeat_int.begin(); iter_set != no_repeat_int.end(); ++iter_set) {
-							int h = *iter_set;
-							string name_ss = v_ss_regrets_random.at(h);
-							collector_random_ss.push_back(name_ss); //add to the collector random
-							map<string, double>::iterator iter_regret = m_astar_percentage.find(name_ss);
-							if (iter_regret != m_astar_percentage.end()) {
-								string aux_heur = iter_regret->first;
-								double aux_nodes = iter_regret->second;
-								double regret = aux_nodes - best_nodes;
-								m_regrets_random.insert(pair<string, double>(aux_heur, regret));
-							}
-						}
-						no_repeat_int.clear();
-						//count the heuristics that matches using the threshold = 3
-						for (size_t p = 0; p < collector_astar.size(); p++) {
-							string a_astar = collector_astar.at(p);					
-							if (p < threshold) {
-								for (size_t q = 0; q < collector_random_ss.size(); q++) {
-									string a_ss = collector_random_ss.at(q);
-									if (a_astar == a_ss) {
-										v_match_random_astar_ss.push_back(a_astar);
-									}
-								}
-							}
-						}
-					
 						outputFile<<"\nMeasure_3:\n";
-						outputFile<<" - Random Regrets: SS's heuristic random selection, size = 3\n";
-						for (map<string, double>::iterator it_r = m_regrets_random.begin(); it_r != m_regrets_random.end(); it_r++) {
-							string a_heur = it_r->first;
-							double d_nodes = it_r->second;
-							outputFile<<"\t"<<a_heur<<":\t"<<d_nodes<<"\n";
+
+						outputFile<<"\t-h1("<<no_repeat_h1.size()<<"):\t\tSS\t\tA*\n";
+						std::set<string>::iterator iter_set;
+						for (iter_set = no_repeat_h1.begin(); iter_set != no_repeat_h1.end(); ++iter_set) {
+                                                	string h1 = *iter_set;
+
+							map<string, double>::iterator iterastar = m_astar_percentage.find(h1);
+							map<string, double>::iterator iterss = m_ss_percentage.find(h1);
+							double expastar = iterastar->second;
+							double expss = iterss->second;
+
+							outputFile<<"\t"<<h1<<"\t\t"<<expss<<"\t\t"<<expastar<<"\n";
 						}
 
-						//print the percentage
-						if (v_match_random_astar_ss.size() > 0) {
-							per_random = ((double)v_match_random_astar_ss.size()/(double)threshold)*100;
-							outputFile<<" - "<<per_random<<"\% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.\n";
-						} else {
-							outputFile<<" - 0\% of the 3 random heuristics from SS are used in the 3 first heuristics in A*.\n";
-						}
-						outputFile<<" - Average regret chosing heuristics 10 times: "<<average_regrets<<"\n"; 
-						outputFile<<"\nComparing Fixed and Random Regrets:\n";
-						if (per_fixed == per_random) {
-							outputFile<<" - Fixed regrets and Random regrets have the same chance to be choosed.\n";
-						} else if (per_fixed > per_random) {
-							outputFile<<" - Fixed regrets is better option than Random regrets.\n";
-						} else {
-							outputFile<<" - Random regrets is better option than Fixed regrets.\n";
-						}
+						outputFile<<"\n";
+						outputFile<<"\t-h2("<<no_repeat_h2.size()<<"):\t\tSS\t\tA*\n";
+						std::set<string>::iterator iter_set2;
+						for (iter_set2 = no_repeat_h2.begin(); iter_set2 != no_repeat_h2.end(); ++iter_set2) {
+                                                	string h2 = *iter_set2;
+						
+							map<string, double>::iterator iterastar = m_astar_percentage.find(h2);
+							map<string, double>::iterator iterss = m_ss_percentage.find(h2);
+							double expastar = iterastar->second;
+							double expss = iterss->second;
 
-						outputFile<<"\n\n";
-						//Measure of error minimo
-						int count_error_final = 0, count_good_final = 0;
-						for(map<string, vector<string> >::iterator fiter1 = group_map_astar.begin();
-							fiter1 != group_map_astar.end(); fiter1++) {
-							string name1 = fiter1->first;
-							vector<string> v1 = fiter1->second;
-							for (map<string, vector<string> >::iterator fiter2 = group_map_ss.begin();
-								fiter2 != group_map_ss.end(); fiter2++) {
-								string name2 = fiter2->first;
-								vector<string> v2 = fiter2->second;
-								int count_availables = 0;
-								if (name1 == name2) {
-									for (size_t t1 = 0; t1 < v1.size(); t1++) {
-										string s1 = v1.at(t1);
-										for (size_t t2 = 0; t2 < v2.size(); t2++) {
-											string s2 = v2.at(t2);
-											if (s1 == s2) {
-												count_availables++;
-											}
-										}
-									}
-								} 
-								if (count_availables > 0) {
-									count_good_final++;
-								}
-							}
+							outputFile<<"\t"<<h2<<"\t\t"<<expss<<"\t\t"<<expastar<<"\n";
 						}
-						size_t map1_size = group_map_astar.size(), map2_size = group_map_ss.size();
-						int max = map1_size;
-						if (map2_size > max) {
-							max = map2_size;
-						}
-						count_error_final = max - count_good_final;
+						outputFile<<"\n";
 
-						if (count_error >= 0 && count_error_final >= 0) {
-							//outputFile<<"error maximo = "<<count_error<<"\n";
-							//outputFile<<"error minimo = "<<count_error_final<<"\n";
-						}
-					} //end validation file
-					*/
-				}
-			} // end validation of the size
+						cout<<"end info--\n";
+					}	
+				} //end validation of the size
+			}
 		}
 		outputFile.close();
 	    	countRead = countRead + 1;
