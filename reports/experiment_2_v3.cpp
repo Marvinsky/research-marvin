@@ -245,10 +245,17 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	}
 	string sufix2 = algorithm2;
 	string model = "experiment_2_"+sufix1 + "_" + sufix2 + "_" + heuristic + "_v3";
+	string model_global = "global_exp_2_" + sufix1 + "_" + sufix2 + "_v3";
 
-	string  domainReporte = "mkdir /home/marvin/marvin/reports/"+model;
+	string  domainReporte = "mkdir /home/marvin/marvin/reports/"+model;	
+	string  domainReporte2 = "mkdir /home/marvin/marvin/reports/"+model_global;
+
 	if (!system(domainReporte.c_str())) {
            cout<<"Directory "<<domainReporte.c_str()<<" created."<<endl;
+        }
+
+	if (!system(domainReporte2.c_str())) {
+           cout<<"Directory "<<domainReporte2.c_str()<<" created."<<endl;
         }
 
 	do {
@@ -271,9 +278,25 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
         	resultFile = "/home/"+ resultFile;
         	//cout<<"\nresultFile = "<<resultFile<<"\n";
 
+
+		//print the results to plot
+		string resultFile2;
+        	resultFile2 = "/" + domain + ".txt";
+        	resultFile2 = model_global + resultFile2;
+        	resultFile2 = "reports/" + resultFile2;
+        	resultFile2 = "marvin/" + resultFile2;
+        	resultFile2 = "marvin/" + resultFile2;
+        	resultFile2 = "/home/"+ resultFile2;
+		cout<<"\nresultFile2 = "<<resultFile2<<"\n";
+
 		ofstream outputFile;
 		outputFile.open(resultFile.c_str(), ios::out);
 		outputFile<<"Experiment 2: "<<domain<<" using "<<heuristic<<" heuristic with 1000 probes\n\n";
+		
+		//print each file
+		ofstream outputFile2;
+		outputFile2.open(resultFile2.c_str(), ios::out);
+
 		//Read the fles from algorithm2 - idai
 		string output5;
                 //output5 = "resultado/"+output5;
@@ -633,6 +656,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 					multimap<double, pair<int, int> > ratiomap;
 					vector<pair<int, int> > index_collector; //collect the index that represent the best heuristics
+					vector<pair<double, double> > plot_info;
 					if (total_heuristics == total_heuristics2) {
 
 						outputFile<<"\nMeasure_1:\n";
@@ -640,6 +664,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						for (int i = 0; i < total_heuristics; i++) {
 							for (int j = 0; j < total_heuristics; j++) {
 								outputFile<<"\t"<<fracastar[i][j];
+								double fraa1 = fracastar[i][j];
+								double frass1 = fracss[i][j];
+								plot_info.push_back(pair<double, double>(frass1, fraa1));
 							}
 							outputFile<<"\n";
 						}
@@ -666,7 +693,16 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 						//sort(ratiomap.begin(), ratiomap.end(), less_first<double, double>());
 						sort(index_collector.begin(), index_collector.end(), less_second<int, int>());
-
+						
+						//plot_info without sort
+						typedef vector<pair<double, double> > vector_plot;
+						for (vector_plot::const_iterator posplot = plot_info.begin();
+							posplot != plot_info.end(); ++posplot) {
+							double x1 = posplot->first; //ss
+							double y1 = posplot->second; //astar
+							outputFile2<<setprecision(2)<<fixed<<"\t"<<x1<<"\t\t"<<y1<<"\n";
+						}
+						outputFile2.close();
 
 						outputFile<<"\nMeasure_2:\n";
 						set<string> no_repeat_h1, no_repeat_h2; 
