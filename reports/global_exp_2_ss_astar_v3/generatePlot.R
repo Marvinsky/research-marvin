@@ -14,7 +14,7 @@ y <- instance$V2
 
 
 i <- order(x, y); x <- x[i]; y <- y[i]
-plot(x, y, col.axis = "sky blue", col.lab = "thistle", log = "xy", pch = 4, col = "blue")
+plot(x, y, col.axis = "sky blue", col.lab = "thistle", pch = 4, col = "blue")
 title(main = "SS vs A*", xlab = "SS", ylab = "A*")
 
 ## draw arrows from point to point :
