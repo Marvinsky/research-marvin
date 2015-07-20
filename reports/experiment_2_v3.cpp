@@ -701,8 +701,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						}
 
 						//sort(ratiomap.begin(), ratiomap.end(), less_first<double, double>());
-						sort(index_collector.begin(), index_collector.end(), less_second<int, int>());
-						
+						sort(index_collector.begin(), index_collector.end(), less_second<int, int>());	
+						sort(plot_info.begin(), plot_info.end(), less_first<double, double>());
+
 						//plot_info without sort
 						typedef vector<pair<double, double> > vector_plot;
 						for (vector_plot::const_iterator posplot = plot_info.begin();
