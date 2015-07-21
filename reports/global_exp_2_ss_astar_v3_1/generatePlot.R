@@ -14,14 +14,14 @@ r <- c("barman-opt11-strips.txt",
        "scanalyzer-opt11-strips.txt",
        "sokoban-opt08-strips.txt",
        "sokoban-opt11-strips.txt",
-       "tidybot-opt11-strips.txt",
-       "transport-opt08-strips.txt",
+       #"tidybot-opt11-strips.txt",
+       #"transport-opt08-strips.txt",
        "transport-opt11-strips.txt",
        "visitall-opt11-strips.txt",
        "woodworking-opt08-strips.txt",
        "woodworking-opt11-strips.txt")
 
-for (m in 1:21) {
+for (m in 1:19) {
       rname <- r[m]
       #print(rname)
 
@@ -60,7 +60,12 @@ for (m in 1:21) {
       
           model <- lm(y ~ x)
           abline(model)
-          title(main = "SS vs A*", xlab = "SS", ylab = "A*")
+          
+          title <- "SS vs A* "
+          problem <- s3
+          finalTitle <- paste(title, problem, sep="- ")
+          
+          title(main = finalTitle, xlab = "SS", ylab = "A*")
           
           
           #png(filename="Rplot.jpeg")
