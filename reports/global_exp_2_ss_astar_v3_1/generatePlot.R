@@ -14,14 +14,14 @@ r <- c("barman-opt11-strips.txt",
        "scanalyzer-opt11-strips.txt",
        "sokoban-opt08-strips.txt",
        "sokoban-opt11-strips.txt",
-       #"tidybot-opt11-strips.txt",
-       #"transport-opt08-strips.txt",
+       "tidybot-opt11-strips.txt",
+       "transport-opt08-strips.txt",
        "transport-opt11-strips.txt",
        "visitall-opt11-strips.txt",
        "woodworking-opt08-strips.txt",
        "woodworking-opt11-strips.txt")
 
-for (m in 1:19) {
+for (m in 1:21) {
       rname <- r[m]
       #print(rname)
 
