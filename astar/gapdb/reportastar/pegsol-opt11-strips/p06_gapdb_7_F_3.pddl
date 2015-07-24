@@ -1,0 +1,13 @@
+		/home/levi/marvin/marvin/astar/gapdb/reportastar/pegsol-opt11-strips/p06_gapdb_7_F_3.pddl
+	totalniveles: 10
+	f-value		#nodesByLevel		time		#nodesExpanded
+	0		1			2.34s			1
+	1		48			2.34s			49
+	2		736			2.34s			785
+	3		5860			2.34s			6645
+	4		26050			2.34s			32695
+	5		60258			2.34s			92953
+	6		79382			2.34s			172335
+	7		62172			2.34s			234507
+	8		28498			2.34s			263005
+	9		9653			2.34s			272658
