@@ -258,6 +258,11 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
            cout<<"Directory "<<domainReporte2.c_str()<<" created."<<endl;
         }
 
+	//info file: Collect files that were not executed correctly
+	ofstream info;
+	string infoFile = "/home/marvin/marvin/reports/info.txt";
+	info.open(infoFile.c_str(), ios::out);
+
 	do {
 
 		string domain;
@@ -297,12 +302,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		ofstream outputFile2;
 		outputFile2.open(resultFile2.c_str(), ios::out);
 
-		//info file: Collect files that were not executed correctly
-		ofstream info;
-		string infoFile = "/home/marvin/marvin/reports/info.txt";
-		info.open(infoFile.c_str(), ios::out);
-
-
+		
 		//Read the fles from algorithm2 - idai
 		string output5;
                 //output5 = "resultado/"+output5;
@@ -789,9 +789,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		}
 		outputFile.close();
 		outputFile2.close();
-		info.close();
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
+	info.close();
 }
 
 
