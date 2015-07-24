@@ -1,29 +1,8 @@
 		ssBC = probBLOCKS-10-2_F_34.csv
 output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/blocks/bc/probBLOCKS-10-2_F_34.csv
 
-		ssBC = probBLOCKS-4-1_F_10.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/blocks/bc/probBLOCKS-4-1_F_10.csv
-
-		ssBC = probBLOCKS-8-2_F_16.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/blocks/bc/probBLOCKS-8-2_F_16.csv
-
-		ssBC = probBLOCKS-9-0_F_30.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/blocks/bc/probBLOCKS-9-0_F_30.csv
-
-		ssBC = probBLOCKS-9-1_F_28.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/blocks/bc/probBLOCKS-9-1_F_28.csv
-
-		ssBC = probBLOCKS-9-2_F_26.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/blocks/bc/probBLOCKS-9-2_F_26.csv
-
-		ssBC = p12_F_54.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/elevators-opt08-strips/bc/p12_F_54.csv
-
 		ssBC = p17_F_30.csv
 output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/nomystery-opt11-strips/bc/p17_F_30.csv
-
-		ssBC = p05_F_511235.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/parcprinter-opt11-strips/bc/p05_F_511235.csv
 
 		ssBC = p08_F_735648.csv
 output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/parcprinter-opt11-strips/bc/p08_F_735648.csv
@@ -31,54 +10,6 @@ output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/parcprinter-opt11-strips
 		ssBC = p09_F_609395.csv
 output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/parcprinter-opt11-strips/bc/p09_F_609395.csv
 
-		ssBC = p02_F_4.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/pegsol-opt11-strips/bc/p02_F_4.csv
-
-		ssBC = p03_F_6.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/pegsol-opt11-strips/bc/p03_F_6.csv
-
-		ssBC = p04_F_5.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/pegsol-opt11-strips/bc/p04_F_5.csv
-
-		ssBC = p06_F_3.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/pegsol-opt11-strips/bc/p06_F_3.csv
-
-		ssBC = p07_F_4.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/pegsol-opt11-strips/bc/p07_F_4.csv
-
-		ssBC = p08_F_3.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/pegsol-opt11-strips/bc/p08_F_3.csv
-
-		ssBC = p09_F_4.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/pegsol-opt11-strips/bc/p09_F_4.csv
-
-		ssBC = p10_F_5.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/pegsol-opt11-strips/bc/p10_F_5.csv
-
-		ssBC = p11_F_4.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/pegsol-opt11-strips/bc/p11_F_4.csv
-
-		ssBC = p13_F_5.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/pegsol-opt11-strips/bc/p13_F_5.csv
-
-		ssBC = p17_F_6.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/pegsol-opt11-strips/bc/p17_F_6.csv
-
-		ssBC = p02_F_22.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/scanalyzer-opt11-strips/bc/p02_F_22.csv
-
-		ssBC = p04_F_24.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/scanalyzer-opt11-strips/bc/p04_F_24.csv
-
 		ssBC = p14_F_30.csv
 output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/scanalyzer-opt11-strips/bc/p14_F_30.csv
-
-		ssBC = problem03-full_F_8.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/visitall-opt11-strips/bc/problem03-full_F_8.csv
-
-		ssBC = problem04-half_F_11.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/visitall-opt11-strips/bc/problem04-half_F_11.csv
-
-		ssBC = problem06-half_F_23.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/visitall-opt11-strips/bc/problem06-half_F_23.csv
 
