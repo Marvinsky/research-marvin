@@ -244,8 +244,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		sufix1 = algorithm1;
 	}
 	string sufix2 = algorithm2;
-	string model = "experiment_2_"+sufix1 + "_" + sufix2 + "_" + heuristic + "_v3_2";
-	string model_global = "global_exp_2_" + sufix1 + "_" + sufix2 + "_v3_2";
+	string model = "experiment_2_"+sufix1 + "_" + sufix2 + "_" + heuristic + "_v3_3";
+	string model_global = "global_exp_2_" + sufix1 + "_" + sufix2 + "_v3_3";
 
 	string  domainReporte = "mkdir /home/marvin/marvin/reports/"+model;	
 	string  domainReporte2 = "mkdir /home/marvin/marvin/reports/"+model_global;
@@ -718,7 +718,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							double y1 = posplot->second; //astar
 							outputFile2<<setprecision(2)<<fixed<<"\t"<<x1<<"\t\t"<<y1<<"\n";
 						}
-						outputFile2.close();
+						//outputFile2.close();
 
 						outputFile<<"\nMeasure_2:\n";
 						set<string> no_repeat_h1, no_repeat_h2; 
@@ -788,6 +788,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			}
 		}
 		outputFile.close();
+		outputFile2.close();
 		info.close();
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
