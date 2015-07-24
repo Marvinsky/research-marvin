@@ -1,4 +1,4 @@
 		/home/levi/marvin/marvin/astar/gapdb/reportastar/visitall-opt11-strips/problem05-half_gapdb_2_F_18.pddl
 	totalniveles: 1
 	f-value		#nodesByLevel		time		#nodesExpanded
-	18		295			0.62s			295
+	18		295			0.36s			295
