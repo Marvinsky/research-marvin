@@ -287,7 +287,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
         	resultFile2 = "marvin/" + resultFile2;
         	resultFile2 = "marvin/" + resultFile2;
         	resultFile2 = "/home/"+ resultFile2;
-		cout<<"\nresultFile2 = "<<resultFile2<<"\n";
+		//cout<<"\nresultFile2 = "<<resultFile2<<"\n";
 
 		ofstream outputFile;
 		outputFile.open(resultFile.c_str(), ios::out);
@@ -296,6 +296,12 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		//print each file
 		ofstream outputFile2;
 		outputFile2.open(resultFile2.c_str(), ios::out);
+
+		//info file: Collect files that were not executed correctly
+		ofstream info;
+		string infoFile = "/home/marvin/marvin/reports/info.txt";
+		info.open(infoFile.c_str(), ios::out);
+
 
 		//Read the fles from algorithm2 - idai
 		string output5;
@@ -772,13 +778,19 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						outputFile<<"\n";
 
 						cout<<"end info--\n";
-					}	
-				} //end validation of the size
+					} else {//end validation of the size
+						info<<"\t\tssBC = "<<ssBC<<"\n";
+						cout<<"\t\tssBC = "<<ssBC<<"\n";	
+						info<<"output_ssBC = "<<output_ssBC<<"\n\n";
+						cout<<"output_ssBC = "<<output_ssBC<<"\n\n";
+					}
+				}
 			}
 		}
 		outputFile.close();
+		info.close();
 	    	countRead = countRead + 1;
-	} while (countRead < countProblems); 
+	} while (countRead < countProblems);
 }
 
 
