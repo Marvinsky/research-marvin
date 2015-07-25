@@ -1,14 +1,14 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/elevators-opt08-strips/fdist/p12_17.pddl
 predictionSS: 8
-ss_timer: 22.1
+ss_timer: 21.64
 g:0
 size: 1
 	f: 10	q: 1
 
 g:1
 size: 2
-	f: 16	q: 4.97
-	f: 17	q: 2.03
+	f: 16	q: 4.995
+	f: 17	q: 2.005
 
 g:2
 size: 0
