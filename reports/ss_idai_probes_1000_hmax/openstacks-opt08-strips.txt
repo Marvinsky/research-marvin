@@ -83,7 +83,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p26.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		2			2
-2		8513			0
+2		8513			----zero_info----
 
 p06.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -98,7 +98,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p20.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		2			2
-2		43605			0
+2		43605			----zero_info----
 
 p28.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -113,7 +113,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p21.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		2			2
-2		1261			0
+2		1261			----zero_info----
 
 p03.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -123,7 +123,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p24.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		2			2
-2		40385			0
+2		40385			----zero_info----
 
 p09.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)

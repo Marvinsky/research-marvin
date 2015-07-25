@@ -242,7 +242,11 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				ssbound>>ss_exp;
 				ssbound.close();
 
-				outputFile<<v_bound.at(i)<<"\t\t"<<v_exp.at(i)<<"\t\t\t"<<ss_exp<<"\n";
+				if (ss_exp == 0) {
+					outputFile<<v_bound.at(i)<<"\t\t"<<v_exp.at(i)<<"\t\t\t----zero_info----\n";
+				} else {	
+					outputFile<<v_bound.at(i)<<"\t\t"<<v_exp.at(i)<<"\t\t\t"<<ss_exp<<"\n";
+				}
 			}
 		}
 		outputFile.close();
