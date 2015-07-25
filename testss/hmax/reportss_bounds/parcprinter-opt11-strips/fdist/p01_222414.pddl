@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/parcprinter-opt11-strips/fdist/p01_222414.pddl
 predictionSS: 1
-ss_timer: 0.16
+ss_timer: 0.14
 g:0
 size: 1
 	f: 222414	q: 1

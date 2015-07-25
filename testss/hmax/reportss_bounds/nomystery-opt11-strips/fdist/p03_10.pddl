@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/nomystery-opt11-strips/fdist/p03_10.pddl
-predictionSS: 10782.6
-ss_timer: 6.6
+predictionSS: 11100.3
+ss_timer: 6.66
 g:0
 size: 1
 	f: 4	q: 1
@@ -14,35 +14,35 @@ size: 3
 g:2
 size: 3
 	f: 5	q: 4
-	f: 6	q: 18.028
-	f: 7	q: 4.012
+	f: 6	q: 18.016
+	f: 7	q: 3.944
 
 g:3
 size: 3
-	f: 6	q: 17.112
-	f: 7	q: 72.685
-	f: 8	q: 18.413
+	f: 6	q: 16.827
+	f: 7	q: 71.291
+	f: 8	q: 17.844
 
 g:4
 size: 3
-	f: 7	q: 66.089
-	f: 8	q: 286.989
-	f: 9	q: 69.339
+	f: 7	q: 64.748
+	f: 8	q: 283.815
+	f: 9	q: 68.99
 
 g:5
 size: 3
-	f: 8	q: 258.737
-	f: 9	q: 1094.46
-	f: 10	q: 265.231
+	f: 8	q: 253.218
+	f: 9	q: 1096.62
+	f: 10	q: 265.891
 
 g:6
 size: 2
-	f: 9	q: 964.286
-	f: 10	q: 4059.46
+	f: 9	q: 946.655
+	f: 10	q: 4224.14
 
 g:7
 size: 1
-	f: 10	q: 3576.74
+	f: 10	q: 3757.27
 
 g:8
 size: 0

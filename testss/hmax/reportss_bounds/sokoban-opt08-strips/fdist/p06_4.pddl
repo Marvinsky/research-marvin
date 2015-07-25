@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/sokoban-opt08-strips/fdist/p06_4.pddl
-predictionSS: 27.663
-ss_timer: 16.14
+predictionSS: 28.058
+ss_timer: 16.34
 g:0
 size: 1
 	f: 2	q: 1

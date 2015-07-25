@@ -1,0 +1,373 @@
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/transport-opt08-strips/fdist/p10_106.pddl
+predictionSS: 980.277
+ss_timer: 487.22
+g:0
+size: 1
+	f: 91	q: 1
+
+g:1
+size: 5
+	f: 91	q: 1
+	f: 92	q: 0.9
+	f: 102	q: 2.014
+	f: 104	q: 3.024
+	f: 106	q: 1.062
+
+g:2
+size: 8
+	f: 91	q: 0.986
+	f: 92	q: 1.826
+	f: 93	q: 0.75
+	f: 102	q: 3.192
+	f: 103	q: 3.904
+	f: 104	q: 5.94
+	f: 105	q: 5.604
+	f: 106	q: 1.056
+
+g:3
+size: 8
+	f: 92	q: 2.822
+	f: 93	q: 2.063
+	f: 94	q: 0.6
+	f: 102	q: 3.332
+	f: 103	q: 8.759
+	f: 104	q: 15.022
+	f: 105	q: 17.728
+	f: 106	q: 12.71
+
+g:4
+size: 7
+	f: 93	q: 4.223
+	f: 94	q: 1.531
+	f: 95	q: 0.3
+	f: 103	q: 12.648
+	f: 104	q: 22.617
+	f: 105	q: 43.359
+	f: 106	q: 47.075
+
+g:5
+size: 5
+	f: 94	q: 5.425
+	f: 95	q: 1.21
+	f: 104	q: 38.96
+	f: 105	q: 40.624
+	f: 106	q: 131.633
+
+g:6
+size: 3
+	f: 95	q: 5.259
+	f: 105	q: 102.066
+	f: 106	q: 77.853
+
+g:7
+size: 2
+	f: 96	q: 9.536
+	f: 106	q: 245.304
+
+g:8
+size: 1
+	f: 97	q: 9.536
+
+g:9
+size: 1
+	f: 98	q: 9.536
+
+g:10
+size: 1
+	f: 99	q: 9.536
+
+g:11
+size: 1
+	f: 100	q: 9.536
+
+g:12
+size: 1
+	f: 101	q: 9.536
+
+g:13
+size: 1
+	f: 102	q: 9.536
+
+g:14
+size: 1
+	f: 103	q: 9.536
+
+g:15
+size: 1
+	f: 104	q: 9.536
+
+g:16
+size: 1
+	f: 105	q: 9.536
+
+g:17
+size: 1
+	f: 106	q: 9.536
+
+g:18
+size: 0
+
+g:19
+size: 0
+
+g:20
+size: 0
+
+g:21
+size: 0
+
+g:22
+size: 0
+
+g:23
+size: 0
+
+g:24
+size: 0
+
+g:25
+size: 0
+
+g:26
+size: 0
+
+g:27
+size: 0
+
+g:28
+size: 0
+
+g:29
+size: 0
+
+g:30
+size: 0
+
+g:31
+size: 0
+
+g:32
+size: 0
+
+g:33
+size: 0
+
+g:34
+size: 0
+
+g:35
+size: 0
+
+g:36
+size: 0
+
+g:37
+size: 0
+
+g:38
+size: 0
+
+g:39
+size: 0
+
+g:40
+size: 0
+
+g:41
+size: 0
+
+g:42
+size: 0
+
+g:43
+size: 0
+
+g:44
+size: 0
+
+g:45
+size: 0
+
+g:46
+size: 0
+
+g:47
+size: 0
+
+g:48
+size: 0
+
+g:49
+size: 0
+
+g:50
+size: 0
+
+g:51
+size: 0
+
+g:52
+size: 0
+
+g:53
+size: 0
+
+g:54
+size: 0
+
+g:55
+size: 0
+
+g:56
+size: 0
+
+g:57
+size: 0
+
+g:58
+size: 0
+
+g:59
+size: 0
+
+g:60
+size: 0
+
+g:61
+size: 0
+
+g:62
+size: 0
+
+g:63
+size: 0
+
+g:64
+size: 0
+
+g:65
+size: 0
+
+g:66
+size: 0
+
+g:67
+size: 0
+
+g:68
+size: 0
+
+g:69
+size: 0
+
+g:70
+size: 0
+
+g:71
+size: 0
+
+g:72
+size: 0
+
+g:73
+size: 0
+
+g:74
+size: 0
+
+g:75
+size: 0
+
+g:76
+size: 0
+
+g:77
+size: 0
+
+g:78
+size: 0
+
+g:79
+size: 0
+
+g:80
+size: 0
+
+g:81
+size: 0
+
+g:82
+size: 0
+
+g:83
+size: 0
+
+g:84
+size: 0
+
+g:85
+size: 0
+
+g:86
+size: 0
+
+g:87
+size: 0
+
+g:88
+size: 0
+
+g:89
+size: 0
+
+g:90
+size: 0
+
+g:91
+size: 0
+
+g:92
+size: 0
+
+g:93
+size: 0
+
+g:94
+size: 0
+
+g:95
+size: 0
+
+g:96
+size: 0
+
+g:97
+size: 0
+
+g:98
+size: 0
+
+g:99
+size: 0
+
+g:100
+size: 0
+
+g:101
+size: 0
+
+g:102
+size: 0
+
+g:103
+size: 0
+
+g:104
+size: 0
+
+g:105
+size: 0
+
+g:106
+size: 0
+

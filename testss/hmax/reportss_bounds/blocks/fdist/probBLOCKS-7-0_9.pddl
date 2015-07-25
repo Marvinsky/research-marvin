@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/blocks/fdist/probBLOCKS-7-0_9.pddl
 predictionSS: 3
-ss_timer: 0.1
+ss_timer: 0.16
 g:0
 size: 1
 	f: 8	q: 1

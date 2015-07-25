@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/pegsol-opt11-strips/fdist/p08_2.pddl
 predictionSS: 10
-ss_timer: 2.56
+ss_timer: 3.56
 g:0
 size: 1
 	f: 1	q: 1

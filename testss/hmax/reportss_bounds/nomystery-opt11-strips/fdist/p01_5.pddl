@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/nomystery-opt11-strips/fdist/p01_5.pddl
-predictionSS: 14.02
-ss_timer: 0.46
+predictionSS: 13.954
+ss_timer: 0.44
 g:0
 size: 1
 	f: 3	q: 1
@@ -11,7 +11,7 @@ size: 1
 
 g:2
 size: 1
-	f: 5	q: 10.02
+	f: 5	q: 9.954
 
 g:3
 size: 0

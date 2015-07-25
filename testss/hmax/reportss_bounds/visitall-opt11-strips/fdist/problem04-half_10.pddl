@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/visitall-opt11-strips/fdist/problem04-half_10.pddl
-predictionSS: 1267.73
-ss_timer: 0.52
+predictionSS: 1270.93
+ss_timer: 0.54
 g:0
 size: 1
 	f: 4	q: 1
@@ -35,12 +35,12 @@ size: 2
 
 g:6
 size: 2
-	f: 9	q: 13.02
-	f: 10	q: 588.98
+	f: 9	q: 11.904
+	f: 10	q: 590.096
 
 g:7
 size: 1
-	f: 10	q: 34.73
+	f: 10	q: 37.926
 
 g:8
 size: 0

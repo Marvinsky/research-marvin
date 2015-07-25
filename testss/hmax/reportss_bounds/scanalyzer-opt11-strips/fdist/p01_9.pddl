@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/scanalyzer-opt11-strips/fdist/p01_9.pddl
 predictionSS: 6
-ss_timer: 0.76
+ss_timer: 0.86
 g:0
 size: 1
 	f: 6	q: 1
