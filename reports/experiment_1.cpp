@@ -15,6 +15,10 @@
 
 #include <map>
 
+//enhance to read files reportss_bounds_probes_NUM_PROBES
+#define NUM_PROBES 1000
+//
+
 using namespace std;
 
 bool is_empty(std::ifstream& pFile) {
@@ -55,7 +59,7 @@ int getTotalLevels(string interText) {
 
 void create_report1(string heuristic, string algorithm1, string algorithm2, int countProblems) {
 	//set the number of probes to generate file like this: experiment_1_probes_NUM_PROBES.txt
-	int countRead = 0, NUM_PROBES = 1000;
+	int countRead = 0;
 	stringstream num_probes;
 	num_probes<<NUM_PROBES;
 
@@ -181,14 +185,25 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		}
 
 		//Read the files from algorithm1 - ss
-		
+                //enhance to the read the files reportss_bounds_probes_NUM_PROBES
+                string reportSS0 = "report" + sufix1 + "_bounds";
+                reportSS0 += "_probes_";
+                stringstream nameProbes;
+                nameProbes<<NUM_PROBES;
+                string reportSS = reportSS0 + nameProbes.str();
+                cout<<"reportSS = "<<reportSS<<"\n";
+                //end enhance
+
+
+		//this output path is only used to read the prediction number: In the future would be nice to avoid this step and found another way to do it!
         	string output;
 		output =  domain+"/fdist/"+output;
-		output = algorithm1+"/"+heuristic+"/report"+sufix1+"_bounds/"+output;
+		output = algorithm1+"/"+heuristic+"/"+ reportSS  +"/"+output;
 		output = "marvin/" + output;
 		output = "marvin/" + output;
 		output = "/home/" + output;	
-	        cout<<"\noutput = "<<output.c_str()<<"\n";	
+	        cout<<"\noutput = "<<output.c_str()<<"\n";
+		//end call
 
 		double ida_exp_average = 0, ida_sum_total = 0, ida_time_average = 0, ida_time_sum_total = 0, ss_error_average = 0, sum_pi = 0, ss_sum_time = 0, ss_time_average = 0;
 		int number_instances = 0;
