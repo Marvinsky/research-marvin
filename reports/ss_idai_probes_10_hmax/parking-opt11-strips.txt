@@ -1,3 +1,186 @@
 	Report:		ida*-bfs-vs-ss-bfs - using hmax heuristic - 10 probes.
 
 parking-opt11-strips
+
+pfile08-029.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		12			----zero_info----
+5		254			----zero_info----
+6		5336			----zero_info----
+7		112300			----zero_info----
+
+pfile05-018.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		9			----zero_info----
+5		137			----zero_info----
+6		2057			----zero_info----
+7		30985			----zero_info----
+8		466697			----zero_info----
+
+pfile07-027.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		21			----zero_info----
+5		401			----zero_info----
+6		7641			----zero_info----
+7		145561			----zero_info----
+
+pfile06-023.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		19			----zero_info----
+5		325			----zero_info----
+6		5545			----zero_info----
+7		94573			----zero_info----
+8		1.61298e+06			----zero_info----
+
+pfile08-030.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		23			----zero_info----
+5		485			----zero_info----
+6		10209			----zero_info----
+7		214853			----zero_info----
+
+pfile07-028.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		21			----zero_info----
+5		401			----zero_info----
+6		7641			----zero_info----
+7		145561			----zero_info----
+
+pfile05-019.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		9			----zero_info----
+5		137			----zero_info----
+6		2057			----zero_info----
+7		30985			----zero_info----
+8		466697			----zero_info----
+
+pfile06-021.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		19			----zero_info----
+5		325			----zero_info----
+6		5545			----zero_info----
+7		94573			----zero_info----
+8		1.61298e+06			----zero_info----
+
+pfile03-011.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		13			----zero_info----
+5		145			----zero_info----
+6		1609			----zero_info----
+7		17833			----zero_info----
+8		197641			----zero_info----
+9		2.19041e+06			----zero_info----
+
+pfile07-026.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		11			----zero_info----
+5		211			----zero_info----
+6		4011			----zero_info----
+7		76411			----zero_info----
+8		1.45561e+06			----zero_info----
+
+pfile05-017.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		9			----zero_info----
+5		137			----zero_info----
+6		2057			----zero_info----
+7		30985			----zero_info----
+8		466697			----zero_info----
+
+pfile03-012.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		7			----zero_info----
+5		79			----zero_info----
+6		871			----zero_info----
+7		9655			----zero_info----
+8		106999			----zero_info----
+9		1.18585e+06			----zero_info----
+10		1.31425e+07			----zero_info----
+
+pfile06-024.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		19			----zero_info----
+5		325			----zero_info----
+6		5545			----zero_info----
+7		94573			----zero_info----
+8		1.61298e+06			----zero_info----
+
+pfile06-022.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		19			----zero_info----
+5		325			----zero_info----
+6		5545			----zero_info----
+7		94573			----zero_info----
+8		1.61298e+06			----zero_info----
+
+pfile04-014.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		8			----zero_info----
+5		106			----zero_info----
+6		1380			----zero_info----
+7		18040			----zero_info----
+8		235796			----zero_info----
+9		3.08211e+06			----zero_info----
+
+pfile05-020.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		17			----zero_info----
+5		257			----zero_info----
+6		3873			----zero_info----
+7		58337			----zero_info----
+8		878689			----zero_info----
+
+pfile04-015.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		8			----zero_info----
+5		106			----zero_info----
+6		1380			----zero_info----
+7		18040			----zero_info----
+8		235796			----zero_info----
+9		3.08211e+06			----zero_info----
+
+pfile07-025.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		11			----zero_info----
+5		211			----zero_info----
+6		4011			----zero_info----
+7		76411			----zero_info----
+8		1.45561e+06			----zero_info----
+
+pfile04-013.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		15			----zero_info----
+5		197			----zero_info----
+6		2577			----zero_info----
+7		33685			----zero_info----
+8		440301			----zero_info----
+9		5.7552e+06			----zero_info----
+
+pfile04-016.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		1			----zero_info----
+4		8			----zero_info----
+5		106			----zero_info----
+6		1380			----zero_info----
+7		18040			----zero_info----
+8		235796			----zero_info----
+9		3.08211e+06			----zero_info----

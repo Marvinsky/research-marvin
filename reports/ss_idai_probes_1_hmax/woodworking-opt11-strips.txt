@@ -1,3 +1,363 @@
 	Report:		ida*-bfs-vs-ss-bfs - using hmax heuristic - 1 probe.
 
 woodworking-opt11-strips
+
+p14.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+60		1			----zero_info----
+70		2			----zero_info----
+80		7			----zero_info----
+85		11			----zero_info----
+90		55			----zero_info----
+95		127			----zero_info----
+100		535			----zero_info----
+105		1554			----zero_info----
+110		6286			----zero_info----
+115		19208			----zero_info----
+120		77049			----zero_info----
+125		249048			----zero_info----
+130		889101			----zero_info----
+135		2.78447e+06			----zero_info----
+140		1.01966e+07			----zero_info----
+
+p19.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+75		1			----zero_info----
+85		5			----zero_info----
+90		12			----zero_info----
+95		49			----zero_info----
+100		125			----zero_info----
+105		592			----zero_info----
+110		1782			----zero_info----
+115		7949			----zero_info----
+120		27998			----zero_info----
+125		129849			----zero_info----
+130		504995			----zero_info----
+135		2.4202e+06			----zero_info----
+140		1.04937e+07			----zero_info----
+
+p18.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+75		1			----zero_info----
+90		2			----zero_info----
+100		4			----zero_info----
+105		30			----zero_info----
+110		40			----zero_info----
+115		158			----zero_info----
+120		289			----zero_info----
+125		1066			----zero_info----
+130		2833			----zero_info----
+135		15718			----zero_info----
+140		56151			----zero_info----
+145		336669			----zero_info----
+150		1.47149e+06			----zero_info----
+155		8.52781e+06			----zero_info----
+
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+60		1			----zero_info----
+70		6			----zero_info----
+75		13			----zero_info----
+80		73			----zero_info----
+85		280			----zero_info----
+90		1613			----zero_info----
+95		9474			----zero_info----
+100		60275			----zero_info----
+105		402850			----zero_info----
+110		2.78402e+06			----zero_info----
+115		1.89352e+07			----zero_info----
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+60		1			----zero_info----
+70		4			----zero_info----
+80		32			----zero_info----
+85		94			----zero_info----
+90		368			----zero_info----
+95		1858			----zero_info----
+100		9069			----zero_info----
+105		35724			----zero_info----
+110		177975			----zero_info----
+115		710027			----zero_info----
+120		2.40917e+06			----zero_info----
+125		1.01918e+07			----zero_info----
+130		4.16458e+07			----zero_info----
+
+p13.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+105		1			----zero_info----
+110		3			----zero_info----
+115		8			----zero_info----
+125		61			----zero_info----
+130		91			----zero_info----
+135		986			----zero_info----
+140		1889			----zero_info----
+145		16166			----zero_info----
+150		42024			----zero_info----
+155		259467			----zero_info----
+160		897928			----zero_info----
+165		3.98687e+06			----zero_info----
+170		1.63566e+07			----zero_info----
+175		6.05817e+07			----zero_info----
+
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+45		1			----zero_info----
+60		2			----zero_info----
+65		3			----zero_info----
+70		6			----zero_info----
+75		21			----zero_info----
+80		51			----zero_info----
+85		164			----zero_info----
+90		544			----zero_info----
+95		1840			----zero_info----
+100		6534			----zero_info----
+105		25210			----zero_info----
+110		87304			----zero_info----
+115		292929			----zero_info----
+120		1.05684e+06			----zero_info----
+125		3.71145e+06			----zero_info----
+130		1.23204e+07			----zero_info----
+135		4.22435e+07			----zero_info----
+140		1.46621e+08			----zero_info----
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+60		1			----zero_info----
+70		2			----zero_info----
+75		5			----zero_info----
+80		15			----zero_info----
+85		24			----zero_info----
+90		69			----zero_info----
+95		150			----zero_info----
+100		485			----zero_info----
+105		1243			----zero_info----
+110		4666			----zero_info----
+115		15819			----zero_info----
+120		62603			----zero_info----
+125		246179			----zero_info----
+130		1.02661e+06			----zero_info----
+135		4.24399e+06			----zero_info----
+140		1.78134e+07			----zero_info----
+145		7.27601e+07			----zero_info----
+
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+60		1			----zero_info----
+70		4			----zero_info----
+75		5			----zero_info----
+80		20			----zero_info----
+85		28			----zero_info----
+90		93			----zero_info----
+95		196			----zero_info----
+100		536			----zero_info----
+105		1070			----zero_info----
+110		3042			----zero_info----
+115		7195			----zero_info----
+120		17621			----zero_info----
+125		43015			----zero_info----
+130		111708			----zero_info----
+135		275275			----zero_info----
+140		700770			----zero_info----
+145		1.80798e+06			----zero_info----
+150		4.65243e+06			----zero_info----
+155		1.20153e+07			----zero_info----
+160		3.15372e+07			----zero_info----
+165		8.27478e+07			----zero_info----
+170		2.17045e+08			----zero_info----
+
+p10.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+75		1			----zero_info----
+80		2			----zero_info----
+85		5			----zero_info----
+90		10			----zero_info----
+95		51			----zero_info----
+100		106			----zero_info----
+105		799			----zero_info----
+110		2140			----zero_info----
+115		17107			----zero_info----
+120		60635			----zero_info----
+125		414691			----zero_info----
+130		1.74888e+06			----zero_info----
+135		1.03788e+07			----zero_info----
+140		4.76053e+07			----zero_info----
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+105		3			----zero_info----
+115		11			----zero_info----
+125		66			----zero_info----
+130		70			----zero_info----
+135		704			----zero_info----
+140		860			----zero_info----
+145		7468			----zero_info----
+150		10998			----zero_info----
+155		84121			----zero_info----
+160		154640			----zero_info----
+165		927598			----zero_info----
+170		2.06641e+06			----zero_info----
+175		1.04184e+07			----zero_info----
+180		2.71615e+07			----zero_info----
+185		1.17677e+08			----zero_info----
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+60		1			----zero_info----
+70		2			----zero_info----
+75		3			----zero_info----
+80		8			----zero_info----
+85		14			----zero_info----
+90		75			----zero_info----
+95		87			----zero_info----
+100		710			----zero_info----
+105		926			----zero_info----
+110		8846			----zero_info----
+115		12840			----zero_info----
+120		108365			----zero_info----
+125		169006			----zero_info----
+130		1.30205e+06			----zero_info----
+135		2.21813e+06			----zero_info----
+140		1.31859e+07			----zero_info----
+145		2.38291e+07			----zero_info----
+
+p17.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+75		1			----zero_info----
+85		3			----zero_info----
+95		15			----zero_info----
+105		171			----zero_info----
+110		211			----zero_info----
+115		2015			----zero_info----
+120		2983			----zero_info----
+125		28932			----zero_info----
+130		50464			----zero_info----
+135		458310			----zero_info----
+140		933258			----zero_info----
+145		7.37105e+06			----zero_info----
+
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+105		1			----zero_info----
+110		4			----zero_info----
+115		10			----zero_info----
+125		95			----zero_info----
+130		122			----zero_info----
+135		1931			----zero_info----
+140		3117			----zero_info----
+145		42142			----zero_info----
+150		93440			----zero_info----
+155		937140			----zero_info----
+160		2.91348e+06			----zero_info----
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+60		1			----zero_info----
+70		3			----zero_info----
+75		4			----zero_info----
+80		23			----zero_info----
+85		43			----zero_info----
+90		295			----zero_info----
+95		805			----zero_info----
+100		3889			----zero_info----
+105		13759			----zero_info----
+110		52031			----zero_info----
+115		190075			----zero_info----
+120		650433			----zero_info----
+125		2.11288e+06			----zero_info----
+130		7.1169e+06			----zero_info----
+135		2.12007e+07			----zero_info----
+140		6.56617e+07			----zero_info----
+
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+50		1			----zero_info----
+80		16			----zero_info----
+85		18			----zero_info----
+90		65			----zero_info----
+95		90			----zero_info----
+100		269			----zero_info----
+105		412			----zero_info----
+110		1803			----zero_info----
+115		3432			----zero_info----
+120		15662			----zero_info----
+125		38122			----zero_info----
+130		150696			----zero_info----
+135		421071			----zero_info----
+140		1.51264e+06			----zero_info----
+145		4.4792e+06			----zero_info----
+150		1.52214e+07			----zero_info----
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+105		1			----zero_info----
+110		2			----zero_info----
+115		4			----zero_info----
+125		34			----zero_info----
+130		45			----zero_info----
+135		737			----zero_info----
+140		1335			----zero_info----
+145		17311			----zero_info----
+150		45493			----zero_info----
+155		428681			----zero_info----
+160		1.57649e+06			----zero_info----
+165		1.07909e+07			----zero_info----
+
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+60		1			----zero_info----
+70		6			----zero_info----
+75		15			----zero_info----
+80		59			----zero_info----
+85		181			----zero_info----
+90		762			----zero_info----
+95		2575			----zero_info----
+100		10238			----zero_info----
+105		39216			----zero_info----
+110		153304			----zero_info----
+115		608349			----zero_info----
+120		2.49015e+06			----zero_info----
+125		1.01467e+07			----zero_info----
+
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+60		1			----zero_info----
+70		4			----zero_info----
+75		8			----zero_info----
+80		50			----zero_info----
+85		133			----zero_info----
+90		1045			----zero_info----
+95		4734			----zero_info----
+100		30755			----zero_info----
+105		182245			----zero_info----
+110		1.09017e+06			----zero_info----
+115		6.79585e+06			----zero_info----
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+60		1			----zero_info----
+70		3			----zero_info----
+80		13			----zero_info----
+90		67			----zero_info----
+95		76			----zero_info----
+100		134			----zero_info----
+105		425			----zero_info----
+110		916			----zero_info----
+115		1085			----zero_info----
+120		2604			----zero_info----
+125		5886			----zero_info----
+130		9824			----zero_info----
+135		21254			----zero_info----
+140		38992			----zero_info----
+145		71511			----zero_info----
+150		149981			----zero_info----
+155		317716			----zero_info----
+160		528952			----zero_info----
+165		1.10564e+06			----zero_info----
+170		2.30967e+06			----zero_info----
+175		4.23023e+06			----zero_info----
+180		8.30342e+06			----zero_info----
+185		1.74681e+07			----zero_info----
+190		3.28075e+07			----zero_info----
+195		6.35551e+07			----zero_info----
+200		1.33861e+08			----zero_info----

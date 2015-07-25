@@ -2,6 +2,105 @@
 
 visitall-opt11-strips
 
+problem09-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+8		1			----zero_info----
+9		2			----zero_info----
+10		9			----zero_info----
+11		23			----zero_info----
+12		93			----zero_info----
+13		270			----zero_info----
+14		1081			----zero_info----
+15		3385			----zero_info----
+16		13541			----zero_info----
+17		44466			----zero_info----
+18		177861			----zero_info----
+19		602756			----zero_info----
+20		2.41084e+06			----zero_info----
+21		8.34688e+06			----zero_info----
+22		3.33832e+07			----zero_info----
+23		1.17281e+08			----zero_info----
+24		4.69052e+08			----zero_info----
+
+problem05-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		1			----zero_info----
+6		9			----zero_info----
+8		93			----zero_info----
+10		1065			----zero_info----
+12		12645			----zero_info----
+14		151593			----zero_info----
+15		151833			----zero_info----
+16		1.82529e+06			----zero_info----
+17		1.83424e+06			----zero_info----
+18		2.20412e+07			----zero_info----
+19		2.22525e+07			----zero_info----
+20		2.66717e+08			----zero_info----
+21		2.70793e+08			----zero_info----
+22		3.2326e+09			----zero_info----
+
+problem08-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+7		1			----zero_info----
+8		2			----zero_info----
+9		9			----zero_info----
+10		23			----zero_info----
+11		93			----zero_info----
+12		270			----zero_info----
+13		1081			----zero_info----
+14		3385			----zero_info----
+15		13531			----zero_info----
+16		44420			----zero_info----
+17		177059			----zero_info----
+18		599953			----zero_info----
+19		2.3804e+06			----zero_info----
+20		8.24962e+06			----zero_info----
+21		3.25447e+07			----zero_info----
+22		1.1469e+08			----zero_info----
+23		4.49715e+08			----zero_info----
+24		1.60523e+09			----zero_info----
+
+problem06-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		1			----zero_info----
+7		3			----zero_info----
+8		11			----zero_info----
+9		35			----zero_info----
+10		123			----zero_info----
+11		417			----zero_info----
+12		1487			----zero_info----
+13		5213			----zero_info----
+14		18735			----zero_info----
+15		66835			----zero_info----
+16		240743			----zero_info----
+17		866757			----zero_info----
+18		3.12336e+06			----zero_info----
+19		1.13034e+07			----zero_info----
+20		4.07291e+07			----zero_info----
+21		1.47856e+08			----zero_info----
+22		5.32705e+08			----zero_info----
+23		1.93765e+09			----zero_info----
+
+problem11-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		1			----zero_info----
+11		2			----zero_info----
+12		11			----zero_info----
+13		23			----zero_info----
+14		123			----zero_info----
+15		270			----zero_info----
+16		1495			----zero_info----
+17		3385			----zero_info----
+18		19261			----zero_info----
+19		44471			----zero_info----
+20		257915			----zero_info----
+21		603373			----zero_info----
+22		3.54789e+06			----zero_info----
+23		8.37817e+06			----zero_info----
+24		4.97747e+07			----zero_info----
+25		1.18356e+08			----zero_info----
+26		7.08702e+08			----zero_info----
+
 problem04-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 4		1			1
@@ -33,6 +132,71 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 2		1			1
 3		7			7
 
+problem09-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+8		1			----zero_info----
+10		9			----zero_info----
+12		93			----zero_info----
+14		1081			----zero_info----
+16		13541			----zero_info----
+18		177861			----zero_info----
+20		2.41084e+06			----zero_info----
+22		3.33832e+07			----zero_info----
+24		4.69043e+08			----zero_info----
+
+problem07-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		1			----zero_info----
+8		9			----zero_info----
+10		93			----zero_info----
+12		1081			----zero_info----
+14		13521			----zero_info----
+16		176257			----zero_info----
+18		2.34997e+06			----zero_info----
+20		3.17068e+07			----zero_info----
+21		3.17089e+07			----zero_info----
+22		4.30502e+08			----zero_info----
+23		4.30614e+08			----zero_info----
+
+problem10-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+9		1			----zero_info----
+11		9			----zero_info----
+12		13			----zero_info----
+13		93			----zero_info----
+14		153			----zero_info----
+15		1081			----zero_info----
+16		1909			----zero_info----
+17		13541			----zero_info----
+18		24981			----zero_info----
+19		177873			----zero_info----
+20		337853			----zero_info----
+21		2.41216e+06			----zero_info----
+22		4.67589e+06			----zero_info----
+23		3.34478e+07			----zero_info----
+24		6.5788e+07			----zero_info----
+25		4.71231e+08			----zero_info----
+
+problem08-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+8		1			----zero_info----
+9		3			----zero_info----
+10		11			----zero_info----
+11		35			----zero_info----
+12		123			----zero_info----
+13		417			----zero_info----
+14		1495			----zero_info----
+15		5275			----zero_info----
+16		19251			----zero_info----
+17		69589			----zero_info----
+18		256989			----zero_info----
+19		942917			----zero_info----
+20		3.50803e+06			----zero_info----
+21		1.29926e+07			----zero_info----
+22		4.85526e+07			----zero_info----
+23		1.80902e+08			----zero_info----
+24		6.77759e+08			----zero_info----
+
 problem02-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		2			2
@@ -51,6 +215,18 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 17		2.62001e+06			2.44732e+06
 18		3.11459e+07			3.23765e+07
 
+problem11-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		1			----zero_info----
+12		9			----zero_info----
+14		93			----zero_info----
+16		1081			----zero_info----
+18		13541			----zero_info----
+20		177885			----zero_info----
+22		2.41349e+06			----zero_info----
+24		3.35124e+07			----zero_info----
+26		4.73419e+08			----zero_info----
+
 problem03-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 2		1			1
@@ -58,9 +234,63 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 5		11			9
 6		89			113
 
+problem10-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		1			----zero_info----
+11		3			----zero_info----
+12		11			----zero_info----
+13		35			----zero_info----
+14		123			----zero_info----
+15		417			----zero_info----
+16		1495			----zero_info----
+17		5275			----zero_info----
+18		19261			----zero_info----
+19		69681			----zero_info----
+20		257903			----zero_info----
+21		948715			----zero_info----
+22		3.54654e+06			----zero_info----
+23		1.31995e+07			----zero_info----
+24		4.97074e+07			----zero_info----
+25		1.86562e+08			----zero_info----
+26		7.06366e+08			----zero_info----
+
+problem07-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		1			----zero_info----
+8		9			----zero_info----
+10		93			----zero_info----
+12		1081			----zero_info----
+14		13521			----zero_info----
+16		176257			----zero_info----
+18		2.34997e+06			----zero_info----
+20		3.17061e+07			----zero_info----
+21		3.17089e+07			----zero_info----
+22		4.30466e+08			----zero_info----
+23		4.30608e+08			----zero_info----
+
 problem03-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 2		1			1
 4		9			9
 6		81			81
 8		705			657
+
+problem06-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+5		1			----zero_info----
+7		9			----zero_info----
+8		11			----zero_info----
+9		93			----zero_info----
+10		123			----zero_info----
+11		1073			----zero_info----
+12		1487			----zero_info----
+13		13083			----zero_info----
+14		18735			----zero_info----
+15		163925			----zero_info----
+16		240743			----zero_info----
+17		2.08487e+06			----zero_info----
+18		3.1242e+06			----zero_info----
+19		2.67608e+07			----zero_info----
+20		4.07743e+07			----zero_info----
+21		3.45593e+08			----zero_info----
+22		5.34146e+08			----zero_info----
