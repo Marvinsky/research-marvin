@@ -14,6 +14,11 @@
 
 #include <map>
 
+//enhance to read files reportss_bounds_probes_NUM_PROBES
+#define NUM_PROBES 100
+//
+
+
 using namespace std;
 
 bool is_empty(std::ifstream& pFile) {
@@ -54,7 +59,7 @@ int getTotalLevels(string interText) {
 
 void create_report1(string heuristic, string algorithm1, string algorithm2, int countProblems) {
 	//Setting the number of probes in order to generate directories like this: ss_idai_probes_NUM_PROBES
-	int countRead = 0, NUM_PROBES = 1000;
+	int countRead = 0;
 	stringstream num_probes;
         num_probes<<NUM_PROBES;
 
@@ -156,15 +161,24 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		
 
 		//Read the files from algorithm1 - ss
-		
+		//enhance to the read the files reportss_bounds_probes_NUM_PROBES
+		string reportSS0 = "report" + sufix1 + "_bounds";
+		reportSS0 += "_probes_";
+		stringstream nameProbes;
+        	nameProbes<<NUM_PROBES;
+        	string reportSS = reportSS0 + nameProbes.str();
+		cout<<"reportSS = "<<reportSS<<"\n";
+		//end enhance
+
+		//this output path is only used to read the prediction number: In the future would be nice to avoid this step and found another way to do it!
         	string output;
 		output =  domain+"/fdist/"+output;
-		output = algorithm1+"/"+heuristic+"/report"+sufix1+"_bounds/"+output;
+		output = algorithm1+"/"+heuristic+"/"+ reportSS  +"/"+output;
 		output = "marvin/" + output;
 		output = "marvin/" + output;
 		output = "/home/" + output;	
-	        cout<<"\noutput = "<<output.c_str()<<"\n";	
-
+	        cout<<"\noutput = "<<output.c_str()<<"\n";
+		//end output
 
 		ofstream outputFile;
 		outputFile.open(resultFile.c_str(), ios::out);
