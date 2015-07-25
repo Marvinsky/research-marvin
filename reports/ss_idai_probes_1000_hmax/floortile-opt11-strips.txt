@@ -1,0 +1,84 @@
+	Report:		ida*-bfs-vs-ss-bfs - using hmax heuristic - 1000 probes.
+
+floortile-opt11-strips
+
+opt-p07-014.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+opt-p09-017.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+opt-p02-003.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+opt-p07-013.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+opt-p04-008.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+opt-p01-001.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+7		1			1
+8		5			5
+9		22			21.034
+10		89			87.922
+11		341			345.277
+12		1284			1226.43
+13		4673			4118.31
+14		17358			12279.6
+15		61873			57163.5
+16		229557			166256
+17		808041			468086
+18		3.00757e+06			2.56885e+06
+19		1.04889e+07			7.25206e+06
+20		3.92164e+07			2.75898e+07
+21		1.35718e+08			1.10113e+08
+22		5.09868e+08			1.57874e+08
+
+opt-p01-002.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+opt-p02-004.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+opt-p03-006.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		1			1
+7		3			3
+8		17			16.92
+9		66			64.459
+10		307			317.339
+11		1205			1189.83
+12		5579			5419.17
+13		23094			24845.8
+14		106440			102536
+15		452720			446900
+16		2.05587e+06			2.16026e+06
+17		8.78696e+06			7.34119e+06
+18		3.9068e+07			2.98989e+07
+19		1.65746e+08			8.81699e+07
+
+opt-p06-012.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+opt-p03-005.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+opt-p05-009.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+opt-p06-011.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+opt-p04-007.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+opt-p08-015.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+opt-p05-010.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+opt-p08-016.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
