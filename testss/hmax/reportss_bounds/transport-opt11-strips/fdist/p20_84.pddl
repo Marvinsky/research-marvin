@@ -1,46 +1,66 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/transport-opt11-strips/fdist/p20_73.pddl
-predictionSS: 2
-ss_timer: 5.32
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/transport-opt11-strips/fdist/p20_84.pddl
+predictionSS: 50.39
+ss_timer: 57.44
 g:0
 size: 1
 	f: 72	q: 1
 
 g:1
-size: 1
-	f: 73	q: 1
+size: 3
+	f: 73	q: 1.01
+	f: 77	q: 1
+	f: 84	q: 0.99
 
 g:2
-size: 0
+size: 2
+	f: 74	q: 1.01
+	f: 78	q: 2.01
 
 g:3
-size: 0
+size: 2
+	f: 75	q: 1.01
+	f: 79	q: 3.02
 
 g:4
-size: 0
+size: 2
+	f: 76	q: 1.01
+	f: 80	q: 4.03
 
 g:5
-size: 0
+size: 2
+	f: 77	q: 1.01
+	f: 81	q: 5.04
 
 g:6
-size: 0
+size: 2
+	f: 78	q: 1.01
+	f: 82	q: 6.05
 
 g:7
-size: 0
+size: 2
+	f: 79	q: 1.01
+	f: 83	q: 7.06
 
 g:8
-size: 0
+size: 2
+	f: 80	q: 1.01
+	f: 84	q: 8.07
 
 g:9
-size: 0
+size: 1
+	f: 81	q: 1.01
 
 g:10
-size: 0
+size: 1
+	f: 82	q: 1.01
 
 g:11
-size: 0
+size: 1
+	f: 83	q: 1.01
 
 g:12
-size: 0
+size: 1
+	f: 84	q: 1.01
 
 g:13
 size: 0
@@ -223,5 +243,38 @@ g:72
 size: 0
 
 g:73
+size: 0
+
+g:74
+size: 0
+
+g:75
+size: 0
+
+g:76
+size: 0
+
+g:77
+size: 0
+
+g:78
+size: 0
+
+g:79
+size: 0
+
+g:80
+size: 0
+
+g:81
+size: 0
+
+g:82
+size: 0
+
+g:83
+size: 0
+
+g:84
 size: 0
 

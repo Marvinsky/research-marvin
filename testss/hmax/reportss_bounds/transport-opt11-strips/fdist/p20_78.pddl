@@ -1,28 +1,35 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/transport-opt11-strips/fdist/p20_73.pddl
-predictionSS: 2
-ss_timer: 5.32
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/transport-opt11-strips/fdist/p20_78.pddl
+predictionSS: 10
+ss_timer: 26.38
 g:0
 size: 1
 	f: 72	q: 1
 
 g:1
-size: 1
+size: 2
 	f: 73	q: 1
+	f: 77	q: 1
 
 g:2
-size: 0
+size: 2
+	f: 74	q: 1
+	f: 78	q: 2
 
 g:3
-size: 0
+size: 1
+	f: 75	q: 1
 
 g:4
-size: 0
+size: 1
+	f: 76	q: 1
 
 g:5
-size: 0
+size: 1
+	f: 77	q: 1
 
 g:6
-size: 0
+size: 1
+	f: 78	q: 1
 
 g:7
 size: 0
@@ -223,5 +230,20 @@ g:72
 size: 0
 
 g:73
+size: 0
+
+g:74
+size: 0
+
+g:75
+size: 0
+
+g:76
+size: 0
+
+g:77
+size: 0
+
+g:78
 size: 0
 
