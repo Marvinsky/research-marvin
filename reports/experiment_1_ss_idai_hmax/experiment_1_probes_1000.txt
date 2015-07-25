@@ -22,4 +22,4 @@ transport-opt08-strips      6.76065e+07        44253.8        9.13342        101
 transport-opt11-strips       1.4334e+08         123154        15.2034        2652.76             20
 visitall-opt11-strips       8.27527e+08        43160.6      0.0534831         67.264             20
 woodworking-opt08-strips    6.17172e+07        60014.5        1.96074        2084.11             30
-woodworking-opt11-strips    7.70861e+07        74171.4        2.75558        1910.03             20
+woodworking-opt11-strips    7.70861e+07        74171.4        2.72067        1961.93             20
