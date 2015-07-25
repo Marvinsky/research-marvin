@@ -144,7 +144,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p01.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 60		1			1
-70		4			----zero_info----
+70		4			4
 75		5			5
 80		20			20.092
 85		28			28.154
@@ -337,7 +337,7 @@ p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 60		1			1
 70		3			3
-80		13			----zero_info----
+80		13			13.02
 90		67			65.196
 95		76			75.45
 100		134			146.216
