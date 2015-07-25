@@ -1,5 +1,5 @@
-		/home/marvin/marvin/idai/hmax/reportidai/parking-opt11-strips/pfile05-019.pddl
-h_initial: random
+		/home/levi/marvin/marvin/idai/hmax/reportidai/parking-opt11-strips/pfile05-019.pddl
+h_initial: 0
 	time		bound		exp		gen
 	0.54s,		3		1		8
 	0.70s,		4		9		152

@@ -1,5 +1,5 @@
-		/home/marvin/marvin/idai/hmax/reportidai/blocks/probBLOCKS-16-1.pddl
-h_initial: random
+		/home/levi/marvin/marvin/idai/hmax/reportidai/blocks/probBLOCKS-16-1.pddl
+h_initial: 0
 	time		bound		exp		gen
 	0.02s,		13		1		3
 	0.02s,		14		5		17

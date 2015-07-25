@@ -1,5 +1,5 @@
-		/home/marvin/marvin/idai/hmax/reportidai/nomystery-opt11-strips/p07.pddl
-h_initial: random
+		/home/levi/marvin/marvin/idai/hmax/reportidai/nomystery-opt11-strips/p07.pddl
+h_initial: 0
 	time		bound		exp		gen
 	0.12s,		5		2		9
 	0.12s,		6		5		29

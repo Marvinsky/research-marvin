@@ -1,5 +1,5 @@
-		/home/marvin/marvin/idai/hmax/reportidai/visitall-opt11-strips/problem06-full.pddl
-h_initial: random
+		/home/levi/marvin/marvin/idai/hmax/reportidai/visitall-opt11-strips/problem06-full.pddl
+h_initial: 0
 	time		bound		exp		gen
 	0.00s,		6		1		4
 	0.00s,		7		3		12

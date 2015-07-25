@@ -1,5 +1,5 @@
-		/home/marvin/marvin/idai/hmax/reportidai/woodworking-opt11-strips/p06.pddl
-h_initial: random
+		/home/levi/marvin/marvin/idai/hmax/reportidai/woodworking-opt11-strips/p06.pddl
+h_initial: 0
 	time		bound		exp		gen
 	0.02s,		60		1		20
 	0.02s,		70		2		38

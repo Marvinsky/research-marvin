@@ -1,5 +1,5 @@
-		/home/marvin/marvin/idai/hmax/reportidai/tidybot-opt11-strips/p04.pddl
-h_initial: random
+		/home/levi/marvin/marvin/idai/hmax/reportidai/tidybot-opt11-strips/p04.pddl
+h_initial: 0
 	time		bound		exp		gen
 	1.04s,		16		9		36
 	1.24s,		17		57		183

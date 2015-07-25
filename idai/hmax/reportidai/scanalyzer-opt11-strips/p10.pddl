@@ -1,5 +1,5 @@
-		/home/marvin/marvin/idai/hmax/reportidai/scanalyzer-opt11-strips/p10.pddl
-h_initial: random
+		/home/levi/marvin/marvin/idai/hmax/reportidai/scanalyzer-opt11-strips/p10.pddl
+h_initial: 0
 	time		bound		exp		gen
 	0.78s,		4		1		128
 	9.06s,		5		65		8320

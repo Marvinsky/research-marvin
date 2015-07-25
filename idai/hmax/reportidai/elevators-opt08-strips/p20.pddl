@@ -1,5 +1,5 @@
-		/home/marvin/marvin/idai/hmax/reportidai/elevators-opt08-strips/p20.pddl
-h_initial: random
+		/home/levi/marvin/marvin/idai/hmax/reportidai/elevators-opt08-strips/p20.pddl
+h_initial: 0
 	time		bound		exp		gen
 	0.02s,		8		1		21
 	0.04s,		14		4		90

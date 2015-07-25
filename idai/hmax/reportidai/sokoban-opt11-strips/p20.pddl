@@ -1,5 +1,5 @@
-		/home/marvin/marvin/idai/hmax/reportidai/sokoban-opt11-strips/p20.pddl
-h_initial: random
+		/home/levi/marvin/marvin/idai/hmax/reportidai/sokoban-opt11-strips/p20.pddl
+h_initial: 0
 	time		bound		exp		gen
 	0.02s,		8		9		26
 	0.06s,		10		47		132

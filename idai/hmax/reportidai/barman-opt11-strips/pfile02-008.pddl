@@ -1,5 +1,5 @@
-		/home/marvin/marvin/idai/hmax/reportidai/barman-opt11-strips/pfile02-008.pddl
-h_initial: random
+		/home/levi/marvin/marvin/idai/hmax/reportidai/barman-opt11-strips/pfile02-008.pddl
+h_initial: 0
 	time		bound		exp		gen
 	0.04s,		14		11		102
 	0.04s,		15		13		116

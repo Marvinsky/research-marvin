@@ -1,5 +1,5 @@
-		/home/marvin/marvin/idai/hmax/reportidai/transport-opt08-strips/p18.pddl
-h_initial: random
+		/home/levi/marvin/marvin/idai/hmax/reportidai/transport-opt08-strips/p18.pddl
+h_initial: 0
 	time		bound		exp		gen
 	0.24s,		282		3		42
 	0.28s,		284		5		76
