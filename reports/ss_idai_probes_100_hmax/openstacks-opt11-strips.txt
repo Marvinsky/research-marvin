@@ -74,7 +74,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p03.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-1		2			----zero_info----
+1		2			2
 2		918			918
 3		1.03978e+06			338949
 

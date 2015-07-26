@@ -3,22 +3,22 @@
 Domain                             ida*      ida* time       ss error        ss time              n
 
 blocks                      3.31534e+08        35245.9       0.715072        12.3714             35
-barman-opt11-strips         9.36615e+07        63773.6        2.16077         33.921             20
-elevators-opt08-strips      1.83448e+07        95262.5        6.36226        1892.74             30
-elevators-opt11-strips      1.90363e+07        93766.4        4.64739        1898.51             20
+barman-opt11-strips         9.36615e+07        63773.6        2.11849         34.071             20
+elevators-opt08-strips      1.83448e+07        95262.5         4.0826        2192.81             30
+elevators-opt11-strips      1.90363e+07        93766.4        4.59739        1898.52             20
 floortile-opt11-strips      5.38628e+07        6917.15       0.710351        1.22353             17
-nomystery-opt11-strips       7.7804e+07        38593.8       0.893794         42.793             20
+nomystery-opt11-strips       7.7804e+07        38593.8       0.844223         42.966             20
 openstacks-opt08-adl                ---            ---            ---            ---            ---
-openstacks-opt08-strips          155920        5695.04       0.241079        2689.86             30
-openstacks-opt11-strips          132179        6628.36       0.263705        2082.26             20
+openstacks-opt08-strips          155920        5695.04       0.207745        2689.89             30
+openstacks-opt11-strips          132179        6628.36       0.213705        2082.29             20
 parcprinter-opt11-strips              1              0              0          0.348             20
-parking-opt11-strips        2.30579e+06        34486.1       0.172084        693.129             20
+parking-opt11-strips        2.30579e+06        34486.1      0.0723337        702.807             20
 pegsol-opt11-strips              151280         10.998      0.0363873          0.808             20
 scanalyzer-opt11-strips     5.45018e+07        31737.7         122.98         1806.7             20
 sokoban-opt08-strips        8.77103e+06        11173.6       0.304211        66.7853             30
 sokoban-opt11-strips        1.20063e+07        15140.8       0.420078         82.468             20
-tidybot-opt11-strips        4.37806e+06          55476        59.8284        2334.77             20
-transport-opt08-strips      6.76065e+07        44253.8        19.3715        375.989             27
+tidybot-opt11-strips        4.37806e+06          55476        59.6368         2423.4             20
+transport-opt08-strips      6.76065e+07        44253.8        12.4814        1068.36             27
 transport-opt11-strips       1.4334e+08         123154        13.0324        321.855             20
 visitall-opt11-strips       8.27527e+08        43160.6       0.143092          6.488             20
 woodworking-opt08-strips    6.17172e+07        60014.5        5.17751        206.349             30
