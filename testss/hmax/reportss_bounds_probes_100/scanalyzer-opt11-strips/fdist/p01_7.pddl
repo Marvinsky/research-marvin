@@ -1,4 +1,4 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/scanalyzer-opt11-strips/fdist/p01_7.pddl
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_100/scanalyzer-opt11-strips/fdist/p01_7.pddl
 predictionSS: 2
 ss_timer: 0.04
 g:0

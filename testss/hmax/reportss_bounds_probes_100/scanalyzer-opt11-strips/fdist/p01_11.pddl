@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/scanalyzer-opt11-strips/fdist/p01_11.pddl
-predictionSS: 14.81
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_100/scanalyzer-opt11-strips/fdist/p01_11.pddl
+predictionSS: 15.12
 ss_timer: 0.14
 g:0
 size: 1
@@ -12,24 +12,24 @@ size: 2
 
 g:2
 size: 3
-	f: 8	q: 1.02
+	f: 8	q: 1.06
 	f: 9	q: 1
-	f: 10	q: 1.98
+	f: 10	q: 1.94
 
 g:3
 size: 3
-	f: 9	q: 0.93
-	f: 10	q: 1.02
-	f: 11	q: 3.07
+	f: 9	q: 1.02
+	f: 10	q: 1.06
+	f: 11	q: 2.98
 
 g:4
 size: 2
-	f: 10	q: 0.93
-	f: 11	q: 0.93
+	f: 10	q: 1.02
+	f: 11	q: 1.02
 
 g:5
 size: 1
-	f: 11	q: 0.93
+	f: 11	q: 1.02
 
 g:6
 size: 0

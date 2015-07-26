@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/visitall-opt11-strips/fdist/problem05-half_16.pddl
-predictionSS: 2.35078e+06
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_100/visitall-opt11-strips/fdist/problem05-half_16.pddl
+predictionSS: 2.50449e+06
 ss_timer: 0.16
 g:0
 size: 1
@@ -11,66 +11,67 @@ size: 1
 
 g:2
 size: 2
-	f: 6	q: 6.32
-	f: 8	q: 9.68
+	f: 6	q: 5.92
+	f: 8	q: 10.08
 
 g:3
 size: 2
-	f: 8	q: 42.72
-	f: 10	q: 16.8
+	f: 8	q: 42.52
+	f: 10	q: 18.32
 
 g:4
 size: 3
-	f: 8	q: 60.72
-	f: 10	q: 133.68
-	f: 12	q: 16.8
+	f: 8	q: 58.44
+	f: 10	q: 142.52
+	f: 12	q: 18.32
 
 g:5
 size: 2
-	f: 10	q: 482.88
-	f: 12	q: 239.04
+	f: 10	q: 487.72
+	f: 12	q: 285.04
 
 g:6
 size: 3
-	f: 10	q: 701.56
-	f: 12	q: 1594.68
-	f: 14	q: 239.04
+	f: 10	q: 730
+	f: 12	q: 1724.88
+	f: 14	q: 285.04
 
 g:7
 size: 2
-	f: 12	q: 5764.4
-	f: 14	q: 2969.84
+	f: 12	q: 5969.88
+	f: 14	q: 3576.32
 
 g:8
 size: 3
-	f: 12	q: 7776.4
-	f: 14	q: 19687.3
-	f: 16	q: 2969.84
+	f: 12	q: 8109.08
+	f: 14	q: 21422
+	f: 16	q: 3576.32
 
 g:9
 size: 3
-	f: 13	q: 71.04
-	f: 14	q: 66215.7
-	f: 16	q: 37795.5
+	f: 13	q: 33.92
+	f: 14	q: 71124
+	f: 16	q: 42117.7
 
 g:10
 size: 3
-	f: 14	q: 91253.4
-	f: 15	q: 142.08
-	f: 16	q: 235750
+	f: 14	q: 99206
+	f: 15	q: 2517.12
+	f: 16	q: 250238
 
 g:11
-size: 2
-	f: 15	q: 1124.48
-	f: 16	q: 769016
+size: 3
+	f: 14	q: 1440
+	f: 15	q: 2577.92
+	f: 16	q: 828183
 
 g:12
 size: 1
-	f: 16	q: 1.07003e+06
+	f: 16	q: 1.12111e+06
 
 g:13
 size: 1
-	f: 16	q: 36666.2
+	f: 16	q: 39475.2
 
 g:14
 size: 0

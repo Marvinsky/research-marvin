@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/woodworking-opt08-strips/fdist/p11_60.pddl
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_100/woodworking-opt08-strips/fdist/p11_60.pddl
 predictionSS: 3
-ss_timer: 0.02
+ss_timer: 0.04
 g:0
 size: 1
 	f: 50	q: 1

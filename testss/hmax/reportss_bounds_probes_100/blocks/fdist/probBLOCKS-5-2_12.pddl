@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/blocks/fdist/probBLOCKS-5-2_12.pddl
-predictionSS: 374.18
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_100/blocks/fdist/probBLOCKS-5-2_12.pddl
+predictionSS: 352.24
 ss_timer: 0.08
 g:0
 size: 1
@@ -28,35 +28,35 @@ size: 3
 g:5
 size: 3
 	f: 9	q: 2
-	f: 10	q: 6.2
+	f: 10	q: 5.96
 	f: 11	q: 5
 
 g:6
 size: 4
-	f: 9	q: 4.4
-	f: 10	q: 15.2
-	f: 11	q: 11.2
+	f: 9	q: 3.92
+	f: 10	q: 14.96
+	f: 11	q: 10.96
 	f: 12	q: 5
 
 g:7
 size: 3
-	f: 10	q: 1.2
-	f: 11	q: 28.4
-	f: 12	q: 34.12
+	f: 10	q: 1.08
+	f: 11	q: 26.72
+	f: 12	q: 33.2
 
 g:8
 size: 3
-	f: 10	q: 1.2
-	f: 11	q: 66.28
-	f: 12	q: 108.5
+	f: 10	q: 1.08
+	f: 11	q: 66.6
+	f: 12	q: 102.06
 
 g:9
 size: 1
-	f: 12	q: 31.52
+	f: 12	q: 25.68
 
 g:10
 size: 1
-	f: 12	q: 39.96
+	f: 12	q: 34.02
 
 g:11
 size: 0
