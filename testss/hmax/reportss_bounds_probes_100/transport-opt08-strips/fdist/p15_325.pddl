@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_100/transport-opt08-strips/fdist/p15_325.pddl
-predictionSS: 75.6
-ss_timer: 2.98
+predictionSS: 74.74
+ss_timer: 2.96
 g:0
 size: 1
 	f: 297	q: 1
@@ -21,37 +21,37 @@ g:3
 size: 7
 	f: 297	q: 1
 	f: 300	q: 2
-	f: 303	q: 1.2
-	f: 305	q: 0.93
-	f: 314	q: 1.02
-	f: 322	q: 4.55
-	f: 325	q: 5.3
+	f: 303	q: 0.9
+	f: 305	q: 0.96
+	f: 314	q: 1.05
+	f: 322	q: 4.85
+	f: 325	q: 5.24
 
 g:4
 size: 9
-	f: 300	q: 2.2
-	f: 303	q: 1.54
-	f: 305	q: 0.88
-	f: 306	q: 2.82
-	f: 314	q: 0.44
-	f: 315	q: 1.5
-	f: 320	q: 2.2
-	f: 322	q: 5.71
-	f: 325	q: 10.61
+	f: 300	q: 2.31
+	f: 303	q: 0.99
+	f: 305	q: 0.77
+	f: 306	q: 1.77
+	f: 314	q: 0.99
+	f: 315	q: 1.2
+	f: 320	q: 1.9
+	f: 322	q: 5.37
+	f: 325	q: 12.36
 
 g:5
 size: 7
-	f: 306	q: 3.5
-	f: 315	q: 1.1
-	f: 320	q: 0.77
-	f: 321	q: 1.2
-	f: 322	q: 0.4
-	f: 323	q: 2.2
-	f: 325	q: 12.33
+	f: 306	q: 2.11
+	f: 315	q: 1.15
+	f: 320	q: 0.94
+	f: 321	q: 0.9
+	f: 322	q: 0.42
+	f: 323	q: 2.31
+	f: 325	q: 13.35
 
 g:6
 size: 1
-	f: 321	q: 1.2
+	f: 321	q: 0.9
 
 g:7
 size: 0

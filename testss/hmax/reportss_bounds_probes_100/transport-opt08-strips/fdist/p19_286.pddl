@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_100/transport-opt08-strips/fdist/p19_286.pddl
-predictionSS: 26.2
-ss_timer: 21.94
+predictionSS: 25.78
+ss_timer: 22.58
 g:0
 size: 1
 	f: 267	q: 1
@@ -9,23 +9,23 @@ g:1
 size: 5
 	f: 267	q: 1
 	f: 272	q: 1
-	f: 279	q: 0.96
-	f: 281	q: 0.88
-	f: 283	q: 2.16
+	f: 279	q: 0.8
+	f: 281	q: 1.28
+	f: 283	q: 1.92
 
 g:2
 size: 6
-	f: 272	q: 1.26
-	f: 279	q: 1.44
-	f: 281	q: 1.62
-	f: 283	q: 4.68
-	f: 284	q: 2.12
-	f: 286	q: 1.72
+	f: 272	q: 0.81
+	f: 279	q: 2.07
+	f: 281	q: 2.52
+	f: 283	q: 3.6
+	f: 284	q: 1.6
+	f: 286	q: 2.48
 
 g:3
 size: 2
-	f: 284	q: 3.46
-	f: 286	q: 2.9
+	f: 284	q: 2.44
+	f: 286	q: 3.26
 
 g:4
 size: 0

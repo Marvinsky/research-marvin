@@ -1,21 +1,21 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_100/transport-opt08-strips/fdist/p18_285.pddl
 predictionSS: 10
-ss_timer: 10.26
+ss_timer: 10.64
 g:0
 size: 1
 	f: 282	q: 1
 
 g:1
 size: 3
-	f: 282	q: 0.9
-	f: 284	q: 1.1
+	f: 282	q: 0.92
+	f: 284	q: 1.08
 	f: 285	q: 2
 
 g:2
 size: 3
-	f: 282	q: 0.78
-	f: 284	q: 0.96
-	f: 285	q: 2.26
+	f: 282	q: 0.9
+	f: 284	q: 1.23
+	f: 285	q: 1.87
 
 g:3
 size: 1

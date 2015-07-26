@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_100/transport-opt08-strips/fdist/p22_234.pddl
 predictionSS: 23
-ss_timer: 0.34
+ss_timer: 0.4
 g:0
 size: 1
 	f: 212	q: 1

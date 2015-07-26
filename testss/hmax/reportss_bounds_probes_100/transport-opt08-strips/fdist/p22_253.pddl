@@ -1,34 +1,34 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_100/transport-opt08-strips/fdist/p22_253.pddl
-predictionSS: 2047
-ss_timer: 0.26
+predictionSS: 2364.44
+ss_timer: 0.28
 g:0
 size: 1
 	f: 212	q: 1
 
 g:1
 size: 2
-	f: 213	q: 1.22
-	f: 244	q: 0.78
+	f: 213	q: 1.1
+	f: 244	q: 0.9
 
 g:2
 size: 2
-	f: 214	q: 1.32
-	f: 245	q: 2.68
+	f: 214	q: 0.96
+	f: 245	q: 3.04
 
 g:3
 size: 2
-	f: 215	q: 1.2
-	f: 246	q: 6.8
+	f: 215	q: 1.12
+	f: 246	q: 6.88
 
 g:4
 size: 2
-	f: 216	q: 1.28
-	f: 247	q: 14.72
+	f: 216	q: 0.8
+	f: 247	q: 15.2
 
 g:5
 size: 2
-	f: 217	q: 1.28
-	f: 248	q: 30.72
+	f: 217	q: 0.96
+	f: 248	q: 31.04
 
 g:6
 size: 2
@@ -41,109 +41,143 @@ size: 2
 	f: 250	q: 126.72
 
 g:8
-size: 1
-	f: 251	q: 256
+size: 2
+	f: 220	q: 2.56
+	f: 251	q: 253.44
 
 g:9
-size: 1
-	f: 252	q: 512
+size: 2
+	f: 221	q: 5.12
+	f: 252	q: 506.88
 
 g:10
-size: 1
-	f: 253	q: 1024
+size: 2
+	f: 222	q: 10.24
+	f: 253	q: 1013.76
 
 g:11
-size: 0
+size: 1
+	f: 223	q: 10.24
 
 g:12
-size: 0
+size: 1
+	f: 224	q: 10.24
 
 g:13
-size: 0
+size: 1
+	f: 225	q: 10.24
 
 g:14
-size: 0
+size: 1
+	f: 226	q: 10.24
 
 g:15
-size: 0
+size: 1
+	f: 227	q: 10.24
 
 g:16
-size: 0
+size: 1
+	f: 228	q: 10.24
 
 g:17
-size: 0
+size: 1
+	f: 229	q: 10.24
 
 g:18
-size: 0
+size: 1
+	f: 230	q: 10.24
 
 g:19
-size: 0
+size: 1
+	f: 231	q: 10.24
 
 g:20
-size: 0
+size: 1
+	f: 232	q: 10.24
 
 g:21
-size: 0
+size: 1
+	f: 233	q: 10.24
 
 g:22
-size: 0
+size: 1
+	f: 234	q: 10.24
 
 g:23
-size: 0
+size: 1
+	f: 235	q: 10.24
 
 g:24
-size: 0
+size: 1
+	f: 236	q: 10.24
 
 g:25
-size: 0
+size: 1
+	f: 237	q: 10.24
 
 g:26
-size: 0
+size: 1
+	f: 238	q: 10.24
 
 g:27
-size: 0
+size: 1
+	f: 239	q: 10.24
 
 g:28
-size: 0
+size: 1
+	f: 240	q: 10.24
 
 g:29
-size: 0
+size: 1
+	f: 241	q: 10.24
 
 g:30
-size: 0
+size: 1
+	f: 242	q: 10.24
 
 g:31
-size: 0
+size: 1
+	f: 243	q: 10.24
 
 g:32
-size: 0
+size: 1
+	f: 244	q: 10.24
 
 g:33
-size: 0
+size: 1
+	f: 245	q: 10.24
 
 g:34
-size: 0
+size: 1
+	f: 246	q: 10.24
 
 g:35
-size: 0
+size: 1
+	f: 247	q: 10.24
 
 g:36
-size: 0
+size: 1
+	f: 248	q: 10.24
 
 g:37
-size: 0
+size: 1
+	f: 249	q: 10.24
 
 g:38
-size: 0
+size: 1
+	f: 250	q: 10.24
 
 g:39
-size: 0
+size: 1
+	f: 251	q: 10.24
 
 g:40
-size: 0
+size: 1
+	f: 252	q: 10.24
 
 g:41
-size: 0
+size: 1
+	f: 253	q: 10.24
 
 g:42
 size: 0

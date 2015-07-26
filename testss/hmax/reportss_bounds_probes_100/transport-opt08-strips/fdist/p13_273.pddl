@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_100/transport-opt08-strips/fdist/p13_273.pddl
-predictionSS: 8
+predictionSS: 7.84
 ss_timer: 0.4
 g:0
 size: 1
@@ -8,12 +8,12 @@ size: 1
 g:1
 size: 3
 	f: 249	q: 1
-	f: 259	q: 1
-	f: 265	q: 1
+	f: 259	q: 0.84
+	f: 265	q: 1.16
 
 g:2
 size: 1
-	f: 273	q: 3
+	f: 273	q: 2.84
 
 g:3
 size: 1

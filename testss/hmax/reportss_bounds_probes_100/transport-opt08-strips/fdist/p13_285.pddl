@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_100/transport-opt08-strips/fdist/p13_285.pddl
-predictionSS: 81.49
+predictionSS: 76.25
 ss_timer: 2.5
 g:0
 size: 1
@@ -8,19 +8,19 @@ size: 1
 g:1
 size: 7
 	f: 249	q: 1
-	f: 259	q: 0.95
-	f: 265	q: 1.1
-	f: 276	q: 1.05
-	f: 277	q: 1.05
-	f: 282	q: 0.85
+	f: 259	q: 0.85
+	f: 265	q: 0.75
+	f: 276	q: 1.4
+	f: 277	q: 0.9
+	f: 282	q: 1.1
 	f: 283	q: 1
 
 g:2
 size: 4
-	f: 273	q: 3
+	f: 273	q: 2.87
 	f: 277	q: 0.88
-	f: 279	q: 2.05
-	f: 283	q: 3.12
+	f: 279	q: 1.73
+	f: 283	q: 2.57
 
 g:3
 size: 2
@@ -39,52 +39,52 @@ size: 2
 
 g:6
 size: 2
-	f: 276	q: 2.12
+	f: 276	q: 2.1
 	f: 277	q: 1
 
 g:7
 size: 2
-	f: 277	q: 3.12
+	f: 277	q: 3.1
 	f: 278	q: 1
 
 g:8
 size: 2
-	f: 278	q: 3.26
+	f: 278	q: 2.92
 	f: 279	q: 1
 
 g:9
 size: 2
-	f: 279	q: 4.26
+	f: 279	q: 3.92
 	f: 280	q: 1
 
 g:10
 size: 2
-	f: 280	q: 4.38
+	f: 280	q: 3.96
 	f: 281	q: 1
 
 g:11
 size: 2
-	f: 281	q: 5.38
+	f: 281	q: 4.96
 	f: 282	q: 1
 
 g:12
 size: 2
-	f: 282	q: 5.74
+	f: 282	q: 4.78
 	f: 283	q: 1
 
 g:13
 size: 2
-	f: 283	q: 6.74
+	f: 283	q: 5.78
 	f: 284	q: 1
 
 g:14
 size: 2
-	f: 284	q: 6.22
+	f: 284	q: 5.84
 	f: 285	q: 1
 
 g:15
 size: 1
-	f: 285	q: 7.22
+	f: 285	q: 6.84
 
 g:16
 size: 0
