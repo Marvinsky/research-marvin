@@ -17,7 +17,7 @@ pegsol-opt11-strips              151280         10.998      0.0182324          8
 scanalyzer-opt11-strips     5.45018e+07        31737.7        0.13379        20018.2             20
 sokoban-opt08-strips        8.77103e+06        11173.6       0.162786        706.235             30
 sokoban-opt11-strips        1.20063e+07        15140.8       0.193721        856.529             20
-tidybot-opt11-strips        4.37806e+06          55476       0.179036        27569.7             20
+tidybot-opt11-strips        4.37806e+06          55476       0.129675          27883             20
 transport-opt08-strips      6.76065e+07        44253.8        6.03381          10942             27
 transport-opt11-strips       1.4334e+08         123154        8.07361        3244.67             20
 visitall-opt11-strips       8.27527e+08        43160.6      0.0534831         67.264             20
