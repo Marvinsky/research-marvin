@@ -3,6 +3,10 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: exp1.aux
 The style file: unsrtnat.bst
 Database file #1: references.bib
+Repeated entry---line 276 of file references.bib
+ : @article{krause2012submodular
+ :                              ,
+I'm skipping whatever remains of this entry
 You've used 1 entry,
             2481 wiz_defined-function locations,
             557 strings with 4566 characters,
@@ -44,3 +48,4 @@ warning$ -- 0
 while$ -- 3
 width$ -- 0
 write$ -- 20
+(There was 1 error message)
