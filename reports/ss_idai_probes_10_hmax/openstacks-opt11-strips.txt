@@ -59,7 +59,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p06.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-1		2			----zero_info----
+1		2			2
 2		869			869
 
 p17.pddl

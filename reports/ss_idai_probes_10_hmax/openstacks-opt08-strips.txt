@@ -50,7 +50,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p07.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		2			2
-2		424			----zero_info----
+2		424			424
 3		1.42554e+06			693526
 
 p05.pddl
