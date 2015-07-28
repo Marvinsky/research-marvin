@@ -15,7 +15,7 @@
 #include <map>
 
 //enhance to read files reportss_bounds_probes_NUM_PROBES
-#define NUM_PROBES 100
+#define NUM_PROBES 1
 //
 
 
