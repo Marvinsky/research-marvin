@@ -1,0 +1,36 @@
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/parking-opt11-strips/fdist/pfile05-018_8.pddl
+predictionSS: 421411
+ss_timer: 13.96
+g:0
+size: 1
+	f: 3	q: 1
+
+g:1
+size: 1
+	f: 4	q: 8
+
+g:2
+size: 1
+	f: 5	q: 128
+
+g:3
+size: 1
+	f: 6	q: 1843.2
+
+g:4
+size: 1
+	f: 7	q: 26214.4
+
+g:5
+size: 1
+	f: 8	q: 393216
+
+g:6
+size: 0
+
+g:7
+size: 0
+
+g:8
+size: 0
+

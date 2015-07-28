@@ -1,4 +1,4 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/sokoban-opt11-strips/fdist/p18_2.pddl
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/sokoban-opt11-strips/fdist/p18_2.pddl
 predictionSS: 1
 ss_timer: 0.16
 g:0

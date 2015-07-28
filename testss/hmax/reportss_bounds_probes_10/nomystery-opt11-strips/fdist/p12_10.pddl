@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/nomystery-opt11-strips/fdist/p12_10.pddl
-predictionSS: 2375.7
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/nomystery-opt11-strips/fdist/p12_10.pddl
+predictionSS: 2827.8
 ss_timer: 0.04
 g:0
 size: 1
@@ -17,29 +17,29 @@ size: 2
 
 g:3
 size: 2
-	f: 6	q: 16.9
-	f: 7	q: 25.3
+	f: 6	q: 17.2
+	f: 7	q: 23.2
 
 g:4
 size: 3
-	f: 7	q: 58.7
-	f: 8	q: 98.2
-	f: 9	q: 13.2
+	f: 7	q: 61.7
+	f: 8	q: 77.6
+	f: 9	q: 5.5
 
 g:5
 size: 3
-	f: 8	q: 116.5
-	f: 9	q: 381.8
-	f: 10	q: 68.8
+	f: 8	q: 180.7
+	f: 9	q: 194.5
+	f: 10	q: 31.8
 
 g:6
 size: 2
-	f: 9	q: 213.9
-	f: 10	q: 963.4
+	f: 9	q: 342.5
+	f: 10	q: 815.9
 
 g:7
 size: 1
-	f: 10	q: 404
+	f: 10	q: 1062.2
 
 g:8
 size: 0

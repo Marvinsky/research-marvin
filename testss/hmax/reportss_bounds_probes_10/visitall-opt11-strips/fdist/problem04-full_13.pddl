@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/visitall-opt11-strips/fdist/problem04-full_13.pddl
-predictionSS: 43864.8
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/visitall-opt11-strips/fdist/problem04-full_13.pddl
+predictionSS: 48283.6
 ss_timer: 0
 g:0
 size: 1
@@ -47,17 +47,19 @@ size: 3
 	f: 13	q: 742
 
 g:8
-size: 2
-	f: 12	q: 6298
+size: 3
+	f: 11	q: 194.6
+	f: 12	q: 6103.4
 	f: 13	q: 7782
 
 g:9
-size: 1
-	f: 13	q: 20378
+size: 2
+	f: 12	q: 1065
+	f: 13	q: 19702.2
 
 g:10
 size: 1
-	f: 13	q: 2037.8
+	f: 13	q: 6067.4
 
 g:11
 size: 0

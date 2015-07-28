@@ -1,0 +1,103 @@
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/barman-opt11-strips/fdist/pfile01-004_25.pddl
+predictionSS: 4.43722e+07
+ss_timer: 0.14
+g:0
+size: 1
+	f: 14	q: 1
+
+g:1
+size: 2
+	f: 14	q: 8
+	f: 15	q: 2
+
+g:2
+size: 2
+	f: 16	q: 38
+	f: 25	q: 38
+
+g:3
+size: 2
+	f: 16	q: 144.4
+	f: 17	q: 83.6
+
+g:4
+size: 2
+	f: 17	q: 45.6
+	f: 18	q: 995.6
+
+g:5
+size: 2
+	f: 18	q: 3876
+	f: 19	q: 1687.2
+
+g:6
+size: 1
+	f: 20	q: 29503.2
+
+g:7
+size: 2
+	f: 20	q: 51649.6
+	f: 21	q: 7356.8
+
+g:8
+size: 1
+	f: 22	q: 302389
+
+g:9
+size: 2
+	f: 22	q: 1.75466e+06
+	f: 23	q: 746229
+
+g:10
+size: 2
+	f: 23	q: 286915
+	f: 24	q: 1.18161e+07
+
+g:11
+size: 2
+	f: 24	q: 2.26942e+07
+	f: 25	q: 3.52023e+06
+
+g:12
+size: 1
+	f: 25	q: 3.15607e+06
+
+g:13
+size: 0
+
+g:14
+size: 0
+
+g:15
+size: 0
+
+g:16
+size: 0
+
+g:17
+size: 0
+
+g:18
+size: 0
+
+g:19
+size: 0
+
+g:20
+size: 0
+
+g:21
+size: 0
+
+g:22
+size: 0
+
+g:23
+size: 0
+
+g:24
+size: 0
+
+g:25
+size: 0
+
