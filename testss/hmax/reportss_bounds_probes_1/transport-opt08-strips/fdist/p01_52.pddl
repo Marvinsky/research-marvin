@@ -1,4 +1,4 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/transport-opt08-strips/fdist/p01_52.pddl
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_1/transport-opt08-strips/fdist/p01_52.pddl
 predictionSS: 3
 ss_timer: 0
 g:0

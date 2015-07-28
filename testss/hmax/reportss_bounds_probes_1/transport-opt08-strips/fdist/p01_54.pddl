@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/transport-opt08-strips/fdist/p01_54.pddl
-predictionSS: 35
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_1/transport-opt08-strips/fdist/p01_54.pddl
+predictionSS: 15
 ss_timer: 0
 g:0
 size: 1
@@ -14,17 +14,14 @@ size: 1
 	f: 53	q: 4
 
 g:3
-size: 2
-	f: 53	q: 4
+size: 1
 	f: 54	q: 8
 
 g:4
-size: 1
-	f: 54	q: 8
+size: 0
 
 g:5
-size: 1
-	f: 54	q: 8
+size: 0
 
 g:6
 size: 0

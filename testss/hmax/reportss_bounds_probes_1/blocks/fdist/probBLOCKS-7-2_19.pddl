@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/blocks/fdist/probBLOCKS-7-2_19.pddl
-predictionSS: 1.24314e+07
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_1/blocks/fdist/probBLOCKS-7-2_19.pddl
+predictionSS: 1.34839e+07
 ss_timer: 0
 g:0
 size: 1
@@ -19,100 +19,100 @@ size: 3
 g:3
 size: 4
 	f: 8	q: 2
-	f: 9	q: 5
-	f: 10	q: 7
+	f: 9	q: 7
+	f: 10	q: 4
 	f: 11	q: 1
 
 g:4
 size: 5
-	f: 8	q: 2
-	f: 9	q: 19
-	f: 10	q: 19
-	f: 11	q: 8
+	f: 8	q: 6
+	f: 9	q: 16
+	f: 10	q: 15
+	f: 11	q: 5
 	f: 12	q: 1
 
 g:5
 size: 4
-	f: 10	q: 25
-	f: 11	q: 38
-	f: 12	q: 27
-	f: 13	q: 9
+	f: 10	q: 34
+	f: 11	q: 47
+	f: 12	q: 20
+	f: 13	q: 6
 
 g:6
 size: 5
-	f: 10	q: 25
-	f: 11	q: 126
-	f: 12	q: 92
-	f: 13	q: 36
-	f: 14	q: 9
+	f: 10	q: 102
+	f: 11	q: 128
+	f: 12	q: 87
+	f: 13	q: 26
+	f: 14	q: 6
 
 g:7
 size: 4
-	f: 12	q: 201
-	f: 13	q: 218
-	f: 14	q: 220
-	f: 15	q: 45
+	f: 12	q: 434
+	f: 13	q: 343
+	f: 14	q: 113
+	f: 15	q: 32
 
 g:8
 size: 5
-	f: 12	q: 603
-	f: 13	q: 637
-	f: 14	q: 658
-	f: 15	q: 265
-	f: 16	q: 45
+	f: 12	q: 1302
+	f: 13	q: 1463
+	f: 14	q: 569
+	f: 15	q: 145
+	f: 16	q: 32
 
 g:9
 size: 5
-	f: 13	q: 603
-	f: 14	q: 1843
-	f: 15	q: 1295
-	f: 16	q: 1581
-	f: 17	q: 310
+	f: 13	q: 1302
+	f: 14	q: 5369
+	f: 15	q: 3495
+	f: 16	q: 1283
+	f: 17	q: 177
 
 g:10
 size: 6
-	f: 13	q: 603
-	f: 14	q: 7338
-	f: 15	q: 5728
-	f: 16	q: 4457
-	f: 17	q: 1891
-	f: 18	q: 310
+	f: 13	q: 3906
+	f: 14	q: 18711
+	f: 15	q: 15854
+	f: 16	q: 6061
+	f: 17	q: 1460
+	f: 18	q: 177
 
 g:11
 size: 5
-	f: 15	q: 9750
-	f: 16	q: 27742
-	f: 17	q: 15913
-	f: 18	q: 6348
-	f: 19	q: 2201
+	f: 15	q: 38241
+	f: 16	q: 71987
+	f: 17	q: 37769
+	f: 18	q: 13582
+	f: 19	q: 1637
 
 g:12
 size: 5
-	f: 15	q: 29250
-	f: 16	q: 102726
-	f: 17	q: 59568
-	f: 18	q: 28609
-	f: 19	q: 8549
+	f: 15	q: 114723
+	f: 16	q: 292443
+	f: 17	q: 185294
+	f: 18	q: 64933
+	f: 19	q: 15219
 
 g:13
 size: 3
-	f: 17	q: 219726
-	f: 18	q: 367746
-	f: 19	q: 147745
+	f: 17	q: 458892
+	f: 18	q: 1.06262e+06
+	f: 19	q: 435521
 
 g:14
 size: 3
-	f: 17	q: 439452
-	f: 18	q: 1.54269e+06
-	f: 19	q: 810981
+	f: 17	q: 458892
+	f: 18	q: 4.56454e+06
+	f: 19	q: 1.93366e+06
 
 g:15
 size: 1
-	f: 19	q: 2.86105e+06
+	f: 19	q: 1.83557e+06
 
 g:16
 size: 1
-	f: 19	q: 5.72209e+06
+	f: 19	q: 1.83557e+06
 
 g:17
 size: 0

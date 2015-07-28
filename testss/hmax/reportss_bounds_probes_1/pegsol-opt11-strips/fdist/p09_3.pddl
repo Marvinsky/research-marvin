@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/pegsol-opt11-strips/fdist/p09_3.pddl
-predictionSS: 31
-ss_timer: 0.02
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_1/pegsol-opt11-strips/fdist/p09_3.pddl
+predictionSS: 394
+ss_timer: 0.04
 g:0
 size: 1
 	f: 2	q: 1
@@ -15,5 +15,5 @@ size: 0
 
 g:3
 size: 1
-	f: 3	q: 18
+	f: 3	q: 60
 
