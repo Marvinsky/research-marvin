@@ -1,4 +1,4 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/visitall-opt11-strips/fdist/problem04-half_7.pddl
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_1/visitall-opt11-strips/fdist/problem04-half_7.pddl
 predictionSS: 35
 ss_timer: 0
 g:0

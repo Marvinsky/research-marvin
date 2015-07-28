@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_1/openstacks-opt11-strips/fdist/p16_2.pddl
 predictionSS: 1261
-ss_timer: 890.18
+ss_timer: 1064.44
 g:0
 size: 1
 	f: 1	q: 1
