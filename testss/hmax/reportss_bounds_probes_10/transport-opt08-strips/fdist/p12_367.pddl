@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/transport-opt08-strips/fdist/p12_367.pddl
-predictionSS: 515.8
-ss_timer: 0.12
+predictionSS: 347.8
+ss_timer: 0.1
 g:0
 size: 1
 	f: 266	q: 1
@@ -12,248 +12,210 @@ size: 2
 
 g:2
 size: 9
-	f: 297	q: 0.8
-	f: 305	q: 2.4
-	f: 312	q: 1.6
-	f: 313	q: 4.8
+	f: 297	q: 1.6
+	f: 305	q: 0.8
+	f: 312	q: 2.4
+	f: 313	q: 5.6
 	f: 320	q: 2
-	f: 326	q: 2
-	f: 336	q: 2
-	f: 344	q: 4.8
-	f: 360	q: 1.6
+	f: 326	q: 1.6
+	f: 336	q: 2.4
+	f: 344	q: 4.4
+	f: 360	q: 1.2
 
 g:3
-size: 12
-	f: 321	q: 2
-	f: 328	q: 7.2
-	f: 330	q: 19.2
-	f: 336	q: 4.8
-	f: 340	q: 12
-	f: 341	q: 4.4
-	f: 344	q: 11.2
+size: 14
+	f: 312	q: 9.6
+	f: 328	q: 4.8
+	f: 330	q: 4.8
+	f: 331	q: 2
+	f: 336	q: 8.8
+	f: 340	q: 8.8
+	f: 341	q: 4.8
+	f: 343	q: 1.6
+	f: 344	q: 12
 	f: 351	q: 1.2
-	f: 358	q: 6.8
-	f: 359	q: 10
-	f: 361	q: 4.8
-	f: 367	q: 7.6
+	f: 358	q: 3.6
+	f: 359	q: 7.6
+	f: 361	q: 5.2
+	f: 367	q: 11.2
 
 g:4
-size: 9
-	f: 322	q: 2
-	f: 341	q: 13.6
-	f: 346	q: 1.2
+size: 10
+	f: 346	q: 2
 	f: 347	q: 14.4
-	f: 351	q: 16
+	f: 351	q: 27.2
 	f: 352	q: 1.2
-	f: 359	q: 32
-	f: 361	q: 22.8
-	f: 365	q: 27.2
+	f: 358	q: 10.4
+	f: 359	q: 44.8
+	f: 360	q: 2
+	f: 361	q: 21.6
+	f: 366	q: 9.6
+	f: 367	q: 8.4
 
 g:5
-size: 6
-	f: 323	q: 2
-	f: 346	q: 1.6
+size: 8
+	f: 346	q: 0.8
 	f: 353	q: 1.2
-	f: 360	q: 10.8
-	f: 362	q: 0.8
+	f: 358	q: 10.4
+	f: 360	q: 8.4
+	f: 362	q: 2.4
 	f: 364	q: 14.4
+	f: 365	q: 2
+	f: 367	q: 9.6
 
 g:6
 size: 3
-	f: 324	q: 2
 	f: 354	q: 1.2
-	f: 361	q: 12.8
+	f: 361	q: 3.6
+	f: 365	q: 2
 
 g:7
-size: 3
-	f: 325	q: 2
+size: 2
 	f: 355	q: 1.2
-	f: 362	q: 14.8
+	f: 362	q: 3.6
 
 g:8
-size: 3
-	f: 326	q: 2
+size: 2
 	f: 356	q: 1.2
-	f: 363	q: 16.8
+	f: 363	q: 3.6
 
 g:9
-size: 3
-	f: 327	q: 2
+size: 2
 	f: 357	q: 1.2
-	f: 364	q: 18.8
+	f: 364	q: 3.6
 
 g:10
-size: 3
-	f: 328	q: 2
+size: 2
 	f: 358	q: 1.2
-	f: 365	q: 20.8
+	f: 365	q: 3.6
 
 g:11
-size: 3
-	f: 329	q: 2
+size: 2
 	f: 359	q: 1.2
-	f: 366	q: 22.8
+	f: 366	q: 3.6
 
 g:12
-size: 3
-	f: 330	q: 2
+size: 2
 	f: 360	q: 1.2
-	f: 367	q: 24.8
+	f: 367	q: 3.6
 
 g:13
-size: 2
-	f: 331	q: 2
+size: 1
 	f: 361	q: 1.2
 
 g:14
-size: 2
-	f: 332	q: 2
+size: 1
 	f: 362	q: 1.2
 
 g:15
-size: 2
-	f: 333	q: 2
+size: 1
 	f: 363	q: 1.2
 
 g:16
-size: 2
-	f: 334	q: 2
+size: 1
 	f: 364	q: 1.2
 
 g:17
-size: 2
-	f: 335	q: 2
+size: 1
 	f: 365	q: 1.2
 
 g:18
-size: 2
-	f: 336	q: 2
+size: 1
 	f: 366	q: 1.2
 
 g:19
-size: 2
-	f: 337	q: 2
+size: 1
 	f: 367	q: 1.2
 
 g:20
-size: 1
-	f: 338	q: 2
+size: 0
 
 g:21
-size: 1
-	f: 339	q: 2
+size: 0
 
 g:22
-size: 1
-	f: 340	q: 2
+size: 0
 
 g:23
-size: 1
-	f: 341	q: 2
+size: 0
 
 g:24
-size: 1
-	f: 342	q: 2
+size: 0
 
 g:25
-size: 1
-	f: 343	q: 2
+size: 0
 
 g:26
-size: 1
-	f: 344	q: 2
+size: 0
 
 g:27
-size: 1
-	f: 345	q: 2
+size: 0
 
 g:28
-size: 1
-	f: 346	q: 2
+size: 0
 
 g:29
-size: 1
-	f: 347	q: 2
+size: 0
 
 g:30
-size: 1
-	f: 348	q: 2
+size: 0
 
 g:31
-size: 1
-	f: 349	q: 2
+size: 0
 
 g:32
-size: 1
-	f: 350	q: 2
+size: 0
 
 g:33
-size: 1
-	f: 351	q: 2
+size: 0
 
 g:34
-size: 1
-	f: 352	q: 2
+size: 0
 
 g:35
-size: 1
-	f: 353	q: 2
+size: 0
 
 g:36
-size: 1
-	f: 354	q: 2
+size: 0
 
 g:37
-size: 1
-	f: 355	q: 2
+size: 0
 
 g:38
-size: 1
-	f: 356	q: 2
+size: 0
 
 g:39
-size: 1
-	f: 357	q: 2
+size: 0
 
 g:40
-size: 1
-	f: 358	q: 2
+size: 0
 
 g:41
-size: 1
-	f: 359	q: 2
+size: 0
 
 g:42
-size: 1
-	f: 360	q: 2
+size: 0
 
 g:43
-size: 1
-	f: 361	q: 2
+size: 0
 
 g:44
-size: 1
-	f: 362	q: 2
+size: 0
 
 g:45
-size: 1
-	f: 363	q: 2
+size: 0
 
 g:46
-size: 1
-	f: 364	q: 2
+size: 0
 
 g:47
-size: 1
-	f: 365	q: 2
+size: 0
 
 g:48
-size: 1
-	f: 366	q: 2
+size: 0
 
 g:49
-size: 1
-	f: 367	q: 2
+size: 0
 
 g:50
 size: 0

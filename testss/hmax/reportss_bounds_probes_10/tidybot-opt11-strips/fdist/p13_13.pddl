@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/tidybot-opt11-strips/fdist/p13_13.pddl
-predictionSS: 2476.6
-ss_timer: 15.1
+predictionSS: 2096.8
+ss_timer: 14.74
 g:0
 size: 1
 	f: 8	q: 1
@@ -29,25 +29,25 @@ size: 5
 
 g:4
 size: 4
-	f: 10	q: 20.5
-	f: 11	q: 37.8
-	f: 12	q: 19.3
+	f: 10	q: 12.4
+	f: 11	q: 39.6
+	f: 12	q: 20.8
 	f: 13	q: 40.8
 
 g:5
 size: 3
-	f: 11	q: 73.5
-	f: 12	q: 141.7
-	f: 13	q: 98
+	f: 11	q: 80.5
+	f: 12	q: 70.1
+	f: 13	q: 128.3
 
 g:6
 size: 2
-	f: 12	q: 243.2
-	f: 13	q: 523.6
+	f: 12	q: 121.1
+	f: 13	q: 528.2
 
 g:7
 size: 1
-	f: 13	q: 1220.2
+	f: 13	q: 997
 
 g:8
 size: 0

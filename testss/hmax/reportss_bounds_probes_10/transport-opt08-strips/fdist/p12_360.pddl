@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/transport-opt08-strips/fdist/p12_360.pddl
-predictionSS: 231.2
-ss_timer: 0.12
+predictionSS: 267
+ss_timer: 0.14
 g:0
 size: 1
 	f: 266	q: 1
@@ -11,205 +11,193 @@ size: 2
 	f: 297	q: 2
 
 g:2
-size: 9
-	f: 297	q: 2.4
-	f: 305	q: 1.6
-	f: 312	q: 1.6
-	f: 313	q: 4
+size: 8
+	f: 305	q: 2.4
+	f: 312	q: 1.2
+	f: 313	q: 5.6
 	f: 320	q: 2
-	f: 326	q: 2.4
-	f: 336	q: 1.6
+	f: 326	q: 1.6
+	f: 336	q: 2.4
 	f: 344	q: 4.8
-	f: 360	q: 1.6
+	f: 360	q: 2
 
 g:3
 size: 11
-	f: 321	q: 1.4
-	f: 326	q: 4
+	f: 321	q: 2
+	f: 328	q: 4.8
+	f: 330	q: 9.6
 	f: 331	q: 2
-	f: 336	q: 4
-	f: 341	q: 4
-	f: 343	q: 1.6
-	f: 344	q: 28
-	f: 351	q: 3
-	f: 358	q: 5.2
-	f: 359	q: 6
-	f: 360	q: 14.4
+	f: 336	q: 4.8
+	f: 340	q: 7.2
+	f: 341	q: 1.6
+	f: 344	q: 24
+	f: 358	q: 6.8
+	f: 359	q: 8.4
+	f: 360	q: 4.8
 
 g:4
-size: 10
-	f: 322	q: 1.4
-	f: 331	q: 0.8
-	f: 341	q: 4.8
-	f: 343	q: 4
-	f: 345	q: 4
-	f: 346	q: 1.6
-	f: 347	q: 3.2
-	f: 352	q: 3
-	f: 359	q: 17
+size: 7
+	f: 322	q: 2
+	f: 331	q: 4
+	f: 346	q: 1.2
+	f: 347	q: 7.2
+	f: 357	q: 8.8
+	f: 359	q: 48.8
 	f: 360	q: 2
 
 g:5
-size: 4
-	f: 323	q: 1.4
-	f: 346	q: 1.6
-	f: 353	q: 3
-	f: 360	q: 10
+size: 3
+	f: 323	q: 2
+	f: 346	q: 0.8
+	f: 360	q: 13.2
 
 g:6
-size: 2
-	f: 324	q: 1.4
-	f: 354	q: 3
+size: 1
+	f: 324	q: 2
 
 g:7
-size: 2
-	f: 325	q: 1.4
-	f: 355	q: 3
+size: 1
+	f: 325	q: 2
 
 g:8
-size: 2
-	f: 326	q: 1.4
-	f: 356	q: 3
+size: 1
+	f: 326	q: 2
 
 g:9
-size: 2
-	f: 327	q: 1.4
-	f: 357	q: 3
+size: 1
+	f: 327	q: 2
 
 g:10
-size: 2
-	f: 328	q: 1.4
-	f: 358	q: 3
+size: 1
+	f: 328	q: 2
 
 g:11
-size: 2
-	f: 329	q: 1.4
-	f: 359	q: 3
+size: 1
+	f: 329	q: 2
 
 g:12
-size: 2
-	f: 330	q: 1.4
-	f: 360	q: 3
+size: 1
+	f: 330	q: 2
 
 g:13
 size: 1
-	f: 331	q: 1.4
+	f: 331	q: 2
 
 g:14
 size: 1
-	f: 332	q: 1.4
+	f: 332	q: 2
 
 g:15
 size: 1
-	f: 333	q: 1.4
+	f: 333	q: 2
 
 g:16
 size: 1
-	f: 334	q: 1.4
+	f: 334	q: 2
 
 g:17
 size: 1
-	f: 335	q: 1.4
+	f: 335	q: 2
 
 g:18
 size: 1
-	f: 336	q: 1.4
+	f: 336	q: 2
 
 g:19
 size: 1
-	f: 337	q: 1.4
+	f: 337	q: 2
 
 g:20
 size: 1
-	f: 338	q: 1.4
+	f: 338	q: 2
 
 g:21
 size: 1
-	f: 339	q: 1.4
+	f: 339	q: 2
 
 g:22
 size: 1
-	f: 340	q: 1.4
+	f: 340	q: 2
 
 g:23
 size: 1
-	f: 341	q: 1.4
+	f: 341	q: 2
 
 g:24
 size: 1
-	f: 342	q: 1.4
+	f: 342	q: 2
 
 g:25
 size: 1
-	f: 343	q: 1.4
+	f: 343	q: 2
 
 g:26
 size: 1
-	f: 344	q: 1.4
+	f: 344	q: 2
 
 g:27
 size: 1
-	f: 345	q: 1.4
+	f: 345	q: 2
 
 g:28
 size: 1
-	f: 346	q: 1.4
+	f: 346	q: 2
 
 g:29
 size: 1
-	f: 347	q: 1.4
+	f: 347	q: 2
 
 g:30
 size: 1
-	f: 348	q: 1.4
+	f: 348	q: 2
 
 g:31
 size: 1
-	f: 349	q: 1.4
+	f: 349	q: 2
 
 g:32
 size: 1
-	f: 350	q: 1.4
+	f: 350	q: 2
 
 g:33
 size: 1
-	f: 351	q: 1.4
+	f: 351	q: 2
 
 g:34
 size: 1
-	f: 352	q: 1.4
+	f: 352	q: 2
 
 g:35
 size: 1
-	f: 353	q: 1.4
+	f: 353	q: 2
 
 g:36
 size: 1
-	f: 354	q: 1.4
+	f: 354	q: 2
 
 g:37
 size: 1
-	f: 355	q: 1.4
+	f: 355	q: 2
 
 g:38
 size: 1
-	f: 356	q: 1.4
+	f: 356	q: 2
 
 g:39
 size: 1
-	f: 357	q: 1.4
+	f: 357	q: 2
 
 g:40
 size: 1
-	f: 358	q: 1.4
+	f: 358	q: 2
 
 g:41
 size: 1
-	f: 359	q: 1.4
+	f: 359	q: 2
 
 g:42
 size: 1
-	f: 360	q: 1.4
+	f: 360	q: 2
 
 g:43
 size: 0

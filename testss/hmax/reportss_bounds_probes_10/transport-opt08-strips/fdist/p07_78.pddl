@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/transport-opt08-strips/fdist/p07_78.pddl
 predictionSS: 14
-ss_timer: 0.88
+ss_timer: 1.12
 g:0
 size: 1
 	f: 65	q: 1

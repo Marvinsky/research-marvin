@@ -1,120 +1,94 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/transport-opt08-strips/fdist/p09_89.pddl
-predictionSS: 8048.7
-ss_timer: 4.46
+predictionSS: 423.7
+ss_timer: 3.6
 g:0
 size: 1
 	f: 66	q: 1
 
 g:1
-size: 8
-	f: 67	q: 1.8
+size: 6
 	f: 68	q: 1
 	f: 76	q: 1
-	f: 79	q: 1.8
 	f: 81	q: 1.8
 	f: 84	q: 1.8
-	f: 87	q: 0.9
-	f: 88	q: 0.9
+	f: 87	q: 1.8
+	f: 88	q: 3.6
 
 g:2
-size: 9
-	f: 69	q: 3.9
-	f: 77	q: 2
-	f: 80	q: 9.9
-	f: 81	q: 2.8
-	f: 82	q: 4.6
+size: 8
+	f: 69	q: 0.6
+	f: 81	q: 3.4
+	f: 82	q: 2.8
+	f: 83	q: 0.9
 	f: 85	q: 3.6
 	f: 86	q: 0.9
-	f: 88	q: 0.9
-	f: 89	q: 11.6
+	f: 88	q: 1.8
+	f: 89	q: 4.6
 
 g:3
-size: 9
-	f: 70	q: 6.6
-	f: 78	q: 2
-	f: 81	q: 9.9
-	f: 82	q: 12.4
-	f: 83	q: 18.4
-	f: 84	q: 1.8
+size: 6
+	f: 82	q: 4.3
+	f: 83	q: 3.4
+	f: 84	q: 2.7
 	f: 86	q: 7.2
 	f: 87	q: 2.7
-	f: 89	q: 0.9
+	f: 89	q: 1.8
 
 g:4
-size: 8
-	f: 71	q: 2.7
-	f: 79	q: 2
-	f: 82	q: 9.9
-	f: 83	q: 24.4
-	f: 84	q: 47.8
-	f: 85	q: 25.5
+size: 5
+	f: 83	q: 5.2
+	f: 84	q: 3.4
+	f: 85	q: 5.4
 	f: 87	q: 14.4
 	f: 88	q: 6.3
 
 g:5
-size: 7
-	f: 80	q: 2
-	f: 83	q: 9.9
-	f: 84	q: 50.8
-	f: 85	q: 100
-	f: 86	q: 70.2
+size: 5
+	f: 84	q: 6.1
+	f: 85	q: 3.4
+	f: 86	q: 10.8
 	f: 88	q: 28.8
 	f: 89	q: 13.5
 
 g:6
-size: 6
-	f: 81	q: 2
-	f: 84	q: 9.9
-	f: 85	q: 82
-	f: 86	q: 198.1
-	f: 87	q: 198
+size: 4
+	f: 85	q: 7
+	f: 86	q: 3.4
+	f: 87	q: 21.6
 	f: 89	q: 57.6
 
 g:7
-size: 5
-	f: 82	q: 2
-	f: 85	q: 9.9
-	f: 86	q: 144.4
-	f: 87	q: 393.4
-	f: 88	q: 568.8
+size: 3
+	f: 86	q: 7.9
+	f: 87	q: 3.4
+	f: 88	q: 43.2
 
 g:8
-size: 5
-	f: 83	q: 2
-	f: 86	q: 9.9
-	f: 87	q: 269.2
-	f: 88	q: 783.1
-	f: 89	q: 1656
+size: 3
+	f: 87	q: 8.8
+	f: 88	q: 3.4
+	f: 89	q: 86.4
 
 g:9
-size: 4
-	f: 84	q: 2
-	f: 87	q: 9.9
-	f: 88	q: 518.8
-	f: 89	q: 1561.6
+size: 2
+	f: 88	q: 9.7
+	f: 89	q: 3.4
 
 g:10
-size: 3
-	f: 85	q: 2
-	f: 88	q: 9.9
-	f: 89	q: 1018
+size: 1
+	f: 89	q: 17.9
 
 g:11
-size: 2
-	f: 86	q: 2
-	f: 89	q: 9.9
+size: 0
 
 g:12
-size: 1
-	f: 87	q: 2
+size: 0
 
 g:13
-size: 1
-	f: 88	q: 2
+size: 0
 
 g:14
-size: 1
-	f: 89	q: 2
+size: 0
 
 g:15
 size: 0

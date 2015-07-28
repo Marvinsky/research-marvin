@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/transport-opt08-strips/fdist/p24_303.pddl
-predictionSS: 81.4
+predictionSS: 54.4
 ss_timer: 0.04
 g:0
 size: 1
@@ -11,26 +11,24 @@ size: 2
 	f: 298	q: 2.1
 
 g:2
-size: 2
-	f: 257	q: 1.8
-	f: 299	q: 1.8
+size: 1
+	f: 299	q: 3.6
 
 g:3
-size: 2
-	f: 258	q: 2.7
+size: 1
 	f: 300	q: 4.5
 
 g:4
 size: 1
-	f: 301	q: 10.8
+	f: 301	q: 8.1
 
 g:5
 size: 1
-	f: 302	q: 18.9
+	f: 302	q: 11.7
 
 g:6
 size: 1
-	f: 303	q: 36.9
+	f: 303	q: 22.5
 
 g:7
 size: 0

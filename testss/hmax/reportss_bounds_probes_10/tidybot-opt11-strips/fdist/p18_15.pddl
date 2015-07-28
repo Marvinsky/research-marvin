@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/tidybot-opt11-strips/fdist/p18_15.pddl
-predictionSS: 5631.8
-ss_timer: 41.08
+predictionSS: 5645.8
+ss_timer: 34.38
 g:0
 size: 1
 	f: 9	q: 1
@@ -21,55 +21,56 @@ size: 5
 	f: 9	q: 1
 	f: 11	q: 6
 	f: 12	q: 2
-	f: 13	q: 7.8
+	f: 13	q: 9.2
 	f: 14	q: 2
 
 g:4
-size: 5
+size: 6
 	f: 10	q: 2
 	f: 11	q: 8
-	f: 12	q: 4.4
-	f: 13	q: 19.8
-	f: 14	q: 15.8
+	f: 12	q: 2.6
+	f: 13	q: 21.2
+	f: 14	q: 17.2
+	f: 15	q: 0.4
 
 g:5
 size: 6
-	f: 10	q: 1
-	f: 11	q: 13
-	f: 12	q: 6.4
-	f: 13	q: 39.8
-	f: 14	q: 27.8
-	f: 15	q: 58.8
+	f: 10	q: 1.2
+	f: 11	q: 13.2
+	f: 12	q: 4.2
+	f: 13	q: 38.8
+	f: 14	q: 23.2
+	f: 15	q: 50
 
 g:6
 size: 5
-	f: 11	q: 3.4
-	f: 12	q: 38.2
-	f: 13	q: 64.4
-	f: 14	q: 59.2
-	f: 15	q: 138.4
+	f: 11	q: 6.2
+	f: 12	q: 41.8
+	f: 13	q: 57.6
+	f: 14	q: 46
+	f: 15	q: 118.4
 
 g:7
 size: 4
-	f: 12	q: 21.4
-	f: 13	q: 165
-	f: 14	q: 106
-	f: 15	q: 325.2
+	f: 12	q: 16.4
+	f: 13	q: 169.2
+	f: 14	q: 115.6
+	f: 15	q: 265.2
 
 g:8
 size: 3
-	f: 13	q: 82
-	f: 14	q: 607.4
-	f: 15	q: 594
+	f: 13	q: 32.8
+	f: 14	q: 522.6
+	f: 15	q: 621.4
 
 g:9
 size: 2
-	f: 14	q: 182.8
-	f: 15	q: 2134.2
+	f: 14	q: 192.2
+	f: 15	q: 1810.6
 
 g:10
 size: 1
-	f: 15	q: 883.6
+	f: 15	q: 1416.6
 
 g:11
 size: 0

@@ -1,144 +1,187 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/transport-opt08-strips/fdist/p24_299.pddl
-predictionSS: 7.3
-ss_timer: 0.02
+predictionSS: 43.9
+ss_timer: 0.06
 g:0
 size: 1
 	f: 255	q: 1
 
 g:1
 size: 2
-	f: 256	q: 0.6
-	f: 298	q: 2.4
+	f: 256	q: 0.3
+	f: 298	q: 2.7
 
 g:2
-size: 1
-	f: 299	q: 3.3
+size: 2
+	f: 257	q: 0.9
+	f: 299	q: 1.2
 
 g:3
-size: 0
+size: 1
+	f: 258	q: 0.9
 
 g:4
-size: 0
+size: 1
+	f: 259	q: 0.9
 
 g:5
-size: 0
+size: 1
+	f: 260	q: 0.9
 
 g:6
-size: 0
+size: 1
+	f: 261	q: 0.9
 
 g:7
-size: 0
+size: 1
+	f: 262	q: 0.9
 
 g:8
-size: 0
+size: 1
+	f: 263	q: 0.9
 
 g:9
-size: 0
+size: 1
+	f: 264	q: 0.9
 
 g:10
-size: 0
+size: 1
+	f: 265	q: 0.9
 
 g:11
-size: 0
+size: 1
+	f: 266	q: 0.9
 
 g:12
-size: 0
+size: 1
+	f: 267	q: 0.9
 
 g:13
-size: 0
+size: 1
+	f: 268	q: 0.9
 
 g:14
-size: 0
+size: 1
+	f: 269	q: 0.9
 
 g:15
-size: 0
+size: 1
+	f: 270	q: 0.9
 
 g:16
-size: 0
+size: 1
+	f: 271	q: 0.9
 
 g:17
-size: 0
+size: 1
+	f: 272	q: 0.9
 
 g:18
-size: 0
+size: 1
+	f: 273	q: 0.9
 
 g:19
-size: 0
+size: 1
+	f: 274	q: 0.9
 
 g:20
-size: 0
+size: 1
+	f: 275	q: 0.9
 
 g:21
-size: 0
+size: 1
+	f: 276	q: 0.9
 
 g:22
-size: 0
+size: 1
+	f: 277	q: 0.9
 
 g:23
-size: 0
+size: 1
+	f: 278	q: 0.9
 
 g:24
-size: 0
+size: 1
+	f: 279	q: 0.9
 
 g:25
-size: 0
+size: 1
+	f: 280	q: 0.9
 
 g:26
-size: 0
+size: 1
+	f: 281	q: 0.9
 
 g:27
-size: 0
+size: 1
+	f: 282	q: 0.9
 
 g:28
-size: 0
+size: 1
+	f: 283	q: 0.9
 
 g:29
-size: 0
+size: 1
+	f: 284	q: 0.9
 
 g:30
-size: 0
+size: 1
+	f: 285	q: 0.9
 
 g:31
-size: 0
+size: 1
+	f: 286	q: 0.9
 
 g:32
-size: 0
+size: 1
+	f: 287	q: 0.9
 
 g:33
-size: 0
+size: 1
+	f: 288	q: 0.9
 
 g:34
-size: 0
+size: 1
+	f: 289	q: 0.9
 
 g:35
-size: 0
+size: 1
+	f: 290	q: 0.9
 
 g:36
-size: 0
+size: 1
+	f: 291	q: 0.9
 
 g:37
-size: 0
+size: 1
+	f: 292	q: 0.9
 
 g:38
-size: 0
+size: 1
+	f: 293	q: 0.9
 
 g:39
-size: 0
+size: 1
+	f: 294	q: 0.9
 
 g:40
-size: 0
+size: 1
+	f: 295	q: 0.9
 
 g:41
-size: 0
+size: 1
+	f: 296	q: 0.9
 
 g:42
-size: 0
+size: 1
+	f: 297	q: 0.9
 
 g:43
-size: 0
+size: 1
+	f: 298	q: 0.9
 
 g:44
-size: 0
+size: 1
+	f: 299	q: 0.9
 
 g:45
 size: 0

@@ -1,182 +1,182 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/transport-opt08-strips/fdist/p24_298.pddl
-predictionSS: 29.2
-ss_timer: 0.08
+predictionSS: 67
+ss_timer: 0.16
 g:0
 size: 1
 	f: 255	q: 1
 
 g:1
 size: 2
-	f: 256	q: 0.6
-	f: 298	q: 2.4
+	f: 256	q: 1.5
+	f: 298	q: 1.5
 
 g:2
 size: 1
-	f: 257	q: 0.6
+	f: 257	q: 1.5
 
 g:3
 size: 1
-	f: 258	q: 0.6
+	f: 258	q: 1.5
 
 g:4
 size: 1
-	f: 259	q: 0.6
+	f: 259	q: 1.5
 
 g:5
 size: 1
-	f: 260	q: 0.6
+	f: 260	q: 1.5
 
 g:6
 size: 1
-	f: 261	q: 0.6
+	f: 261	q: 1.5
 
 g:7
 size: 1
-	f: 262	q: 0.6
+	f: 262	q: 1.5
 
 g:8
 size: 1
-	f: 263	q: 0.6
+	f: 263	q: 1.5
 
 g:9
 size: 1
-	f: 264	q: 0.6
+	f: 264	q: 1.5
 
 g:10
 size: 1
-	f: 265	q: 0.6
+	f: 265	q: 1.5
 
 g:11
 size: 1
-	f: 266	q: 0.6
+	f: 266	q: 1.5
 
 g:12
 size: 1
-	f: 267	q: 0.6
+	f: 267	q: 1.5
 
 g:13
 size: 1
-	f: 268	q: 0.6
+	f: 268	q: 1.5
 
 g:14
 size: 1
-	f: 269	q: 0.6
+	f: 269	q: 1.5
 
 g:15
 size: 1
-	f: 270	q: 0.6
+	f: 270	q: 1.5
 
 g:16
 size: 1
-	f: 271	q: 0.6
+	f: 271	q: 1.5
 
 g:17
 size: 1
-	f: 272	q: 0.6
+	f: 272	q: 1.5
 
 g:18
 size: 1
-	f: 273	q: 0.6
+	f: 273	q: 1.5
 
 g:19
 size: 1
-	f: 274	q: 0.6
+	f: 274	q: 1.5
 
 g:20
 size: 1
-	f: 275	q: 0.6
+	f: 275	q: 1.5
 
 g:21
 size: 1
-	f: 276	q: 0.6
+	f: 276	q: 1.5
 
 g:22
 size: 1
-	f: 277	q: 0.6
+	f: 277	q: 1.5
 
 g:23
 size: 1
-	f: 278	q: 0.6
+	f: 278	q: 1.5
 
 g:24
 size: 1
-	f: 279	q: 0.6
+	f: 279	q: 1.5
 
 g:25
 size: 1
-	f: 280	q: 0.6
+	f: 280	q: 1.5
 
 g:26
 size: 1
-	f: 281	q: 0.6
+	f: 281	q: 1.5
 
 g:27
 size: 1
-	f: 282	q: 0.6
+	f: 282	q: 1.5
 
 g:28
 size: 1
-	f: 283	q: 0.6
+	f: 283	q: 1.5
 
 g:29
 size: 1
-	f: 284	q: 0.6
+	f: 284	q: 1.5
 
 g:30
 size: 1
-	f: 285	q: 0.6
+	f: 285	q: 1.5
 
 g:31
 size: 1
-	f: 286	q: 0.6
+	f: 286	q: 1.5
 
 g:32
 size: 1
-	f: 287	q: 0.6
+	f: 287	q: 1.5
 
 g:33
 size: 1
-	f: 288	q: 0.6
+	f: 288	q: 1.5
 
 g:34
 size: 1
-	f: 289	q: 0.6
+	f: 289	q: 1.5
 
 g:35
 size: 1
-	f: 290	q: 0.6
+	f: 290	q: 1.5
 
 g:36
 size: 1
-	f: 291	q: 0.6
+	f: 291	q: 1.5
 
 g:37
 size: 1
-	f: 292	q: 0.6
+	f: 292	q: 1.5
 
 g:38
 size: 1
-	f: 293	q: 0.6
+	f: 293	q: 1.5
 
 g:39
 size: 1
-	f: 294	q: 0.6
+	f: 294	q: 1.5
 
 g:40
 size: 1
-	f: 295	q: 0.6
+	f: 295	q: 1.5
 
 g:41
 size: 1
-	f: 296	q: 0.6
+	f: 296	q: 1.5
 
 g:42
 size: 1
-	f: 297	q: 0.6
+	f: 297	q: 1.5
 
 g:43
 size: 1
-	f: 298	q: 0.6
+	f: 298	q: 1.5
 
 g:44
 size: 0

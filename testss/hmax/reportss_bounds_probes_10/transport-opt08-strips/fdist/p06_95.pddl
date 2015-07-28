@@ -1,72 +1,96 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/transport-opt08-strips/fdist/p06_95.pddl
-predictionSS: 283.8
-ss_timer: 0.68
+predictionSS: 339.3
+ss_timer: 1.2
 g:0
 size: 1
 	f: 72	q: 1
 
 g:1
 size: 5
-	f: 73	q: 1
+	f: 73	q: 1.5
 	f: 77	q: 1
-	f: 84	q: 1.5
+	f: 84	q: 2
 	f: 87	q: 1
-	f: 94	q: 1.5
+	f: 90	q: 0.5
 
 g:2
-size: 6
-	f: 78	q: 2.7
-	f: 85	q: 6.5
+size: 8
+	f: 78	q: 3.6
+	f: 85	q: 4.5
 	f: 87	q: 1
-	f: 89	q: 1.7
+	f: 88	q: 2.5
+	f: 89	q: 3.6
+	f: 91	q: 0.5
 	f: 92	q: 1.8
-	f: 95	q: 2.8
+	f: 95	q: 2.5
 
 g:3
-size: 2
-	f: 86	q: 6.5
-	f: 90	q: 16.3
+size: 6
+	f: 86	q: 4.5
+	f: 88	q: 2.5
+	f: 89	q: 2.5
+	f: 90	q: 16.2
+	f: 92	q: 0.5
+	f: 93	q: 5.2
 
 g:4
-size: 2
-	f: 87	q: 6.5
-	f: 91	q: 22.8
+size: 6
+	f: 87	q: 4.5
+	f: 89	q: 5
+	f: 90	q: 2.5
+	f: 91	q: 20.7
+	f: 93	q: 0.5
+	f: 94	q: 7.7
 
 g:5
-size: 2
-	f: 88	q: 6.5
-	f: 92	q: 29.3
+size: 6
+	f: 88	q: 4.5
+	f: 90	q: 2.5
+	f: 91	q: 2.5
+	f: 92	q: 25.2
+	f: 94	q: 0.5
+	f: 95	q: 10.2
 
 g:6
-size: 2
-	f: 89	q: 6.5
-	f: 93	q: 35.8
+size: 5
+	f: 89	q: 4.5
+	f: 91	q: 5
+	f: 92	q: 2.5
+	f: 93	q: 29.7
+	f: 95	q: 0.5
 
 g:7
-size: 2
-	f: 90	q: 6.5
-	f: 94	q: 42.3
+size: 4
+	f: 90	q: 4.5
+	f: 92	q: 7.5
+	f: 93	q: 2.5
+	f: 94	q: 34.2
 
 g:8
-size: 2
-	f: 91	q: 6.5
-	f: 95	q: 48.8
+size: 4
+	f: 91	q: 4.5
+	f: 93	q: 10
+	f: 94	q: 2.5
+	f: 95	q: 38.7
 
 g:9
-size: 1
-	f: 92	q: 6.5
+size: 3
+	f: 92	q: 4.5
+	f: 94	q: 12.5
+	f: 95	q: 2.5
 
 g:10
-size: 1
-	f: 93	q: 6.5
+size: 2
+	f: 93	q: 4.5
+	f: 95	q: 15
 
 g:11
 size: 1
-	f: 94	q: 6.5
+	f: 94	q: 4.5
 
 g:12
 size: 1
-	f: 95	q: 6.5
+	f: 95	q: 4.5
 
 g:13
 size: 0

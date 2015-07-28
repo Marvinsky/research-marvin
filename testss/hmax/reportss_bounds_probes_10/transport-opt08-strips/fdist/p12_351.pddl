@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_10/transport-opt08-strips/fdist/p12_351.pddl
-predictionSS: 165
-ss_timer: 0.1
+predictionSS: 200.2
+ss_timer: 0.16
 g:0
 size: 1
 	f: 266	q: 1
@@ -12,153 +12,154 @@ size: 2
 
 g:2
 size: 8
-	f: 297	q: 4
-	f: 305	q: 1.6
-	f: 312	q: 2
-	f: 313	q: 2.4
+	f: 297	q: 2.4
+	f: 305	q: 2.4
+	f: 312	q: 1.6
+	f: 313	q: 3.2
 	f: 320	q: 2
 	f: 326	q: 1.6
 	f: 336	q: 2.4
-	f: 344	q: 4
+	f: 344	q: 4.4
 
 g:3
-size: 9
-	f: 321	q: 2
-	f: 330	q: 3.6
-	f: 331	q: 2
-	f: 336	q: 10.8
+size: 11
+	f: 321	q: 2.4
+	f: 326	q: 3.6
+	f: 328	q: 10.4
+	f: 330	q: 10.4
+	f: 331	q: 1.2
+	f: 336	q: 7.2
 	f: 340	q: 10.4
-	f: 341	q: 4.4
-	f: 343	q: 3.6
-	f: 344	q: 17.6
-	f: 351	q: 4
+	f: 341	q: 5.6
+	f: 343	q: 1.2
+	f: 344	q: 3.6
+	f: 351	q: 2
 
 g:4
-size: 7
-	f: 322	q: 2
-	f: 331	q: 0.8
-	f: 341	q: 2.4
-	f: 343	q: 4.4
-	f: 345	q: 2.4
-	f: 346	q: 2
-	f: 347	q: 7.6
+size: 6
+	f: 322	q: 2.4
+	f: 341	q: 3.6
+	f: 343	q: 9.2
+	f: 345	q: 14.8
+	f: 346	q: 1.6
+	f: 347	q: 14.4
 
 g:5
 size: 2
-	f: 323	q: 2
-	f: 346	q: 2
+	f: 323	q: 2.4
+	f: 346	q: 1.6
 
 g:6
 size: 1
-	f: 324	q: 2
+	f: 324	q: 2.4
 
 g:7
 size: 1
-	f: 325	q: 2
+	f: 325	q: 2.4
 
 g:8
 size: 1
-	f: 326	q: 2
+	f: 326	q: 2.4
 
 g:9
 size: 1
-	f: 327	q: 2
+	f: 327	q: 2.4
 
 g:10
 size: 1
-	f: 328	q: 2
+	f: 328	q: 2.4
 
 g:11
 size: 1
-	f: 329	q: 2
+	f: 329	q: 2.4
 
 g:12
 size: 1
-	f: 330	q: 2
+	f: 330	q: 2.4
 
 g:13
 size: 1
-	f: 331	q: 2
+	f: 331	q: 2.4
 
 g:14
 size: 1
-	f: 332	q: 2
+	f: 332	q: 2.4
 
 g:15
 size: 1
-	f: 333	q: 2
+	f: 333	q: 2.4
 
 g:16
 size: 1
-	f: 334	q: 2
+	f: 334	q: 2.4
 
 g:17
 size: 1
-	f: 335	q: 2
+	f: 335	q: 2.4
 
 g:18
 size: 1
-	f: 336	q: 2
+	f: 336	q: 2.4
 
 g:19
 size: 1
-	f: 337	q: 2
+	f: 337	q: 2.4
 
 g:20
 size: 1
-	f: 338	q: 2
+	f: 338	q: 2.4
 
 g:21
 size: 1
-	f: 339	q: 2
+	f: 339	q: 2.4
 
 g:22
 size: 1
-	f: 340	q: 2
+	f: 340	q: 2.4
 
 g:23
 size: 1
-	f: 341	q: 2
+	f: 341	q: 2.4
 
 g:24
 size: 1
-	f: 342	q: 2
+	f: 342	q: 2.4
 
 g:25
 size: 1
-	f: 343	q: 2
+	f: 343	q: 2.4
 
 g:26
 size: 1
-	f: 344	q: 2
+	f: 344	q: 2.4
 
 g:27
 size: 1
-	f: 345	q: 2
+	f: 345	q: 2.4
 
 g:28
 size: 1
-	f: 346	q: 2
+	f: 346	q: 2.4
 
 g:29
 size: 1
-	f: 347	q: 2
+	f: 347	q: 2.4
 
 g:30
 size: 1
-	f: 348	q: 2
+	f: 348	q: 2.4
 
 g:31
 size: 1
-	f: 349	q: 2
+	f: 349	q: 2.4
 
 g:32
 size: 1
-	f: 350	q: 2
+	f: 350	q: 2.4
 
 g:33
 size: 1
-	f: 351	q: 2
+	f: 351	q: 2.4
 
 g:34
 size: 0
