@@ -4,12 +4,12 @@ openstacks-opt08-strips
 
 p14.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-1		2			----zero_info----
-2		325			----zero_info----
+1		2			2
+2		325			325
 
 p19.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-1		2			----zero_info----
+1		2			2
 2		20287			20287
 
 p29.pddl
@@ -25,7 +25,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p15.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		2			2
-2		3743			----zero_info----
+2		3743			3743
 
 p25.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -102,7 +102,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p28.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-1		2			----zero_info----
+1		2			2
 2		14589			14589
 
 p23.pddl
@@ -122,13 +122,13 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p24.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-1		2			----zero_info----
+1		2			2
 2		40385			40385
 
 p09.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		2			2
-2		932			----zero_info----
+2		932			932
 
 p08.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -139,7 +139,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p16.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		2			2
-2		7371			----zero_info----
+2		7371			7371
 
 p11.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)

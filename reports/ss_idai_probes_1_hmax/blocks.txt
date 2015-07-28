@@ -13,7 +13,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 13		144630			183951
 14		929372			332089
 15		6.54968e+06			6.97141e+06
-16		4.65705e+07			----zero_info----
+16		4.65705e+07			5.77648e+07
 17		2.99296e+08			2.09843e+08
 
 probBLOCKS-16-2.pddl
@@ -270,7 +270,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 probBLOCKS-15-1.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 14		1			1
-15		4			----zero_info----
+15		4			4
 16		15			14
 17		58			44
 18		250			145

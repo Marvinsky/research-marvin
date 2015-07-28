@@ -79,7 +79,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p20.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-8		9			----zero_info----
+8		9			9
 10		47			25
 11		121			69
 12		745			333
