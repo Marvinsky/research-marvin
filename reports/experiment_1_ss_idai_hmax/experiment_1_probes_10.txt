@@ -2,24 +2,24 @@
 
 Domain                             ida*      ida* time       ss error        ss time              n
 
-blocks                      1.56474e+08        10770.9        1.11279       0.178462             13
-barman-opt11-strips                 ---            ---            ---            ---            ---
-elevators-opt08-strips      1.60464e+06        4358.74        4.82272           75.7              1
-elevators-opt11-strips              ---            ---            ---            ---              0
-floortile-opt11-strips              ---            ---            ---            ---            ---
-nomystery-opt11-strips      2.91101e+06        289.453        2.46547       0.363333              6
+blocks                      3.31534e+08        35245.9        2.00239        1.18971             35
+barman-opt11-strips         9.36615e+07        63773.6        4.72837          3.442             20
+elevators-opt08-strips      1.83448e+07        95262.5        9.55483        221.056             30
+elevators-opt11-strips      1.90363e+07        93766.4        8.40993        193.829             20
+floortile-opt11-strips      5.38628e+07        6917.15        1.08892       0.122353             17
+nomystery-opt11-strips       7.7804e+07        38593.8         3.1108          4.457             20
 openstacks-opt08-adl                ---            ---            ---            ---            ---
-openstacks-opt08-strips          361346        786.512       0.141459          6.636              5
-openstacks-opt11-strips             195           2.56              0            8.3              1
+openstacks-opt08-strips          155920        5695.04       0.124066        1707.07             30
+openstacks-opt11-strips          132179        6628.36       0.105329        1627.19             20
 parcprinter-opt11-strips              1              0              0          0.035             20
-parking-opt11-strips                ---            ---            ---            ---              0
-pegsol-opt11-strips              151280         10.998       0.107171          0.084             20
-scanalyzer-opt11-strips             101           0.16       0.176859           0.12              1
-sokoban-opt08-strips            5545.65          1.813       0.307512          0.351             20
-sokoban-opt11-strips            8245.92        2.62154       0.138141       0.329231             13
-tidybot-opt11-strips        2.71646e+06        17900.1        1.58227        29.9667              3
-transport-opt08-strips               38              0       0.222222              0              1
-transport-opt11-strips              ---            ---            ---            ---              0
-visitall-opt11-strips       5.36308e+06        96.1171         0.1902     0.00285714              7
-woodworking-opt08-strips    5.19035e+06        1023.72        5.48336          1.245              4
-woodworking-opt11-strips            ---            ---            ---            ---              0
+parking-opt11-strips        2.30579e+06        34486.1       0.267833         68.738             20
+pegsol-opt11-strips              151280         10.998      0.0944636          0.086             20
+scanalyzer-opt11-strips     5.45018e+07        31737.7        1.93167        172.282             20
+sokoban-opt08-strips        8.77103e+06        11173.6       0.736604        6.44133             30
+sokoban-opt11-strips        1.20063e+07        15140.8       0.985367          7.701             20
+tidybot-opt11-strips        4.37806e+06          55476        2.40838        199.975             20
+transport-opt08-strips      6.76065e+07        44253.8        35.4382        36.8948             27
+transport-opt11-strips       1.4334e+08         123154        29.7161         33.101             20
+visitall-opt11-strips       8.27527e+08        43160.6       0.438878            0.6             20
+woodworking-opt08-strips    6.17172e+07        60014.5        8.40158        21.3053             30
+woodworking-opt11-strips    7.70861e+07        74171.4        10.3224         19.872             20

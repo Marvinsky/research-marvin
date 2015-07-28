@@ -24,20 +24,20 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p13.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-6		9			----zero_info----
-7		65			----zero_info----
-8		265			----zero_info----
-9		885			----zero_info----
-10		4357			----zero_info----
-11		23849			----zero_info----
-12		157633			----zero_info----
-13		1.05971e+06			----zero_info----
-14		8.45429e+06			----zero_info----
-15		6.53049e+07			----zero_info----
+6		9			9
+7		65			65
+8		265			249
+9		885			697
+10		4357			6714.6
+11		23849			19870.6
+12		157633			77067.4
+13		1.05971e+06			946768
+14		8.45429e+06			3.65481e+06
+15		6.53049e+07			3.40049e+07
 
 p07.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-4		3			----zero_info----
+4		3			3
 
 p05.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -47,12 +47,12 @@ p01.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 2		2			2
 3		8			8
-4		28			34.3
-5		186			177.2
-6		647			602.7
-7		4224			6489.3
-8		13709			3227.5
-9		88377			102004
+4		28			29.3
+5		186			182.3
+6		647			546.8
+7		4224			2307.8
+8		13709			15596
+9		88377			37732.3
 
 p10.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -64,14 +64,14 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p06.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-11		7			----zero_info----
-12		61			----zero_info----
-13		427			----zero_info----
-14		2815			----zero_info----
-15		24466			----zero_info----
-16		240235			----zero_info----
-17		2.97989e+06			----zero_info----
-18		3.0964e+07			----zero_info----
+11		7			7
+12		61			61
+13		427			416.8
+14		2815			2832.7
+15		24466			23073.1
+16		240235			219572
+17		2.97989e+06			1.68469e+06
+18		3.0964e+07			7.3172e+06
 
 p17.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -79,15 +79,15 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p20.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-8		9			----zero_info----
-10		47			----zero_info----
-11		121			----zero_info----
-12		745			----zero_info----
-13		4317			----zero_info----
-14		41677			----zero_info----
-15		364761			----zero_info----
-16		3.93458e+06			----zero_info----
-17		3.94608e+07			----zero_info----
+8		9			9
+10		47			51.4
+11		121			133.2
+12		745			711.6
+13		4317			4744.6
+14		41677			36132.4
+15		364761			1.18054e+06
+16		3.93458e+06			2.26745e+06
+17		3.94608e+07			6.84937e+07
 
 p03.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -95,15 +95,15 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p09.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-4		1			----zero_info----
-5		4			----zero_info----
-6		12			----zero_info----
-7		40			----zero_info----
-9		2088			----zero_info----
-10		10440			----zero_info----
-11		146936			----zero_info----
-12		1.76961e+06			----zero_info----
-13		3.19526e+07			----zero_info----
+4		1			1
+5		4			4
+6		12			12
+7		40			32.8
+9		2088			2114.3
+10		10440			15369.8
+11		146936			197200
+12		1.76961e+06			730553
+13		3.19526e+07			5.60205e+06
 
 p08.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -111,14 +111,14 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p16.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-22		4			----zero_info----
-23		58			----zero_info----
-24		529			----zero_info----
-25		4015			----zero_info----
-26		29863			----zero_info----
-27		221095			----zero_info----
-28		1.54983e+06			----zero_info----
-29		1.0071e+07			----zero_info----
+22		4			4
+23		58			58
+24		529			487.3
+25		4015			5099.2
+26		29863			19750
+27		221095			190058
+28		1.54983e+06			829709
+29		1.0071e+07			2.84068e+06
 
 p11.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -126,15 +126,15 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-3		1			----zero_info----
-5		9			----zero_info----
-6		37			----zero_info----
-7		169			----zero_info----
-8		645			----zero_info----
-9		2117			----zero_info----
-10		8469			----zero_info----
-11		41801			----zero_info----
-12		235043			----zero_info----
-13		1.20577e+06			----zero_info----
-14		6.54928e+06			----zero_info----
-15		3.31934e+07			----zero_info----
+3		1			1
+5		9			9
+6		37			37.8
+7		169			181.4
+8		645			795.2
+9		2117			1646
+10		8469			8099.8
+11		41801			160287
+12		235043			102504
+13		1.20577e+06			470144
+14		6.54928e+06			2.31403e+06
+15		3.31934e+07			7.98764e+06
