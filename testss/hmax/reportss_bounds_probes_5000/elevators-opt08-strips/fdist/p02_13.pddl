@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/elevators-opt08-strips/fdist/p02_13.pddl
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_5000/elevators-opt08-strips/fdist/p02_13.pddl
 predictionSS: 51
-ss_timer: 745.94
+ss_timer: 807.8
 g:0
 size: 1
 	f: 7	q: 1

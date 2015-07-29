@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/blocks/fdist/probBLOCKS-5-1_5.pddl
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_5000/blocks/fdist/probBLOCKS-5-1_5.pddl
 predictionSS: 5
-ss_timer: 0.78
+ss_timer: 1.1
 g:0
 size: 1
 	f: 4	q: 1
