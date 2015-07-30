@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/hmax/reportss_bounds/woodworking-opt08-strips/fdist/p11_85.pddl
-predictionSS: 26.392
-ss_timer: 8.14
+	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_5000/woodworking-opt08-strips/fdist/p11_85.pddl
+predictionSS: 26.0492
+ss_timer: 8.12
 g:0
 size: 1
 	f: 50	q: 1
@@ -8,24 +8,24 @@ size: 1
 g:1
 size: 4
 	f: 60	q: 2
-	f: 70	q: 1.0476
+	f: 70	q: 1.0026
 	f: 75	q: 1
-	f: 80	q: 1.9524
+	f: 80	q: 1.9974
 
 g:2
 size: 3
-	f: 70	q: 2.0104
-	f: 80	q: 8.1292
-	f: 85	q: 4.1556
+	f: 70	q: 2.042
+	f: 80	q: 7.968
+	f: 85	q: 4.004
 
 g:3
 size: 2
-	f: 80	q: 3.096
-	f: 85	q: 0.9784
+	f: 80	q: 3.03
+	f: 85	q: 1.032
 
 g:4
 size: 1
-	f: 85	q: 1.0224
+	f: 85	q: 0.9732
 
 g:5
 size: 0
