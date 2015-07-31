@@ -73,9 +73,9 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 pfile03-011.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 3		1			----zero_info----
-4		13			----zero_info----
-5		145			----zero_info----
-6		1609			----zero_info----
+4		13			13
+5		145			144.688
+6		1609			1599.61
 7		17833			----zero_info----
 8		197641			----zero_info----
 9		2.19041e+06			----zero_info----
@@ -100,8 +100,8 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 pfile03-012.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-3		1			----zero_info----
-4		7			----zero_info----
+3		1			1
+4		7			7
 5		79			----zero_info----
 6		871			----zero_info----
 7		9655			----zero_info----
