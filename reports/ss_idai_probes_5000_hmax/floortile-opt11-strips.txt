@@ -82,3 +82,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 opt-p08-016.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
+
+Files that contains zero_info:
+opt-p01-001.pddl
+opt-p03-006.pddl

@@ -11,7 +11,7 @@
 #include <locale>
 #include <dirent.h>
 #include <vector>
-
+#include <algorithm>
 #include <map>
 
 //enhance to read files reportss_bounds_probes_NUM_PROBES
@@ -189,7 +189,10 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			outputFile<<" probes.\n\n";
 		}
 		outputFile<<domain<<"\n";
+		vector<string> has_zero_info_v;
 		for (size_t i = 0; i < fileNames2.size(); i++) {
+			bool has_zero_info = false; //bool variable to check if the file contains zero_info
+			
 			string one = fileNames2.at(i);
 			outputFile<<"\n"<<one<<"\n";
 			string idabounds = output5.c_str() + one;
@@ -258,9 +261,22 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 				if (ss_exp == 0) {
 					outputFile<<v_bound.at(i)<<"\t\t"<<v_exp.at(i)<<"\t\t\t----zero_info----\n";
+					has_zero_info = true;
 				} else {	
 					outputFile<<v_bound.at(i)<<"\t\t"<<v_exp.at(i)<<"\t\t\t"<<ss_exp<<"\n";
 				}
+			}
+
+			if (has_zero_info) {
+				has_zero_info_v.push_back(one);
+			}
+		}// end for
+
+		if (has_zero_info_v.size() > 0) {
+			outputFile<<"\nFiles that contains zero_info:\n";
+			sort(has_zero_info_v.begin(), has_zero_info_v.end());
+			for (size_t i = 0; i < has_zero_info_v.size(); i++) {
+				outputFile<<has_zero_info_v.at(i)<<"\n";
 			}
 		}
 		outputFile.close();

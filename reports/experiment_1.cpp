@@ -281,7 +281,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				sum_pi += pi;
 				ss_sum_time += ss_time;
 			}
-			number_instances++;
+			if (total_levels > 0) {
+				number_instances++; //at least the instance has found one bound
+			}
 		}
 
 		if (number_instances > 0) {

@@ -190,3 +190,15 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 7		4			4
 8		412			415.196
 9		3260			3351.13
+
+Files that contains zero_info:
+p03.pddl
+p07.pddl
+p08.pddl
+p10.pddl
+p11.pddl
+p15.pddl
+p17.pddl
+p23.pddl
+p25.pddl
+p28.pddl

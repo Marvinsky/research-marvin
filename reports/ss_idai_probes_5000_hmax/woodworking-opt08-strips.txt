@@ -535,3 +535,6 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 165		2.15841e+07			2.01105e+07
 170		5.60019e+07			5.66422e+07
 175		1.43339e+08			1.52223e+08
+
+Files that contains zero_info:
+p04.pddl

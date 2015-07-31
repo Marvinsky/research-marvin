@@ -184,3 +184,12 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 7		18040			18039.8
 8		235796			237323
 9		3.08211e+06			3.1088e+06
+
+Files that contains zero_info:
+pfile03-011.pddl
+pfile07-025.pddl
+pfile07-026.pddl
+pfile07-027.pddl
+pfile07-028.pddl
+pfile08-029.pddl
+pfile08-030.pddl
