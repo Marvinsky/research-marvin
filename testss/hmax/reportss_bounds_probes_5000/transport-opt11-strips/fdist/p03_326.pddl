@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_5000/transport-opt11-strips/fdist/p03_326.pddl
 predictionSS: 35
-ss_timer: 18.74
+ss_timer: 19.44
 g:0
 size: 1
 	f: 266	q: 1
@@ -13,17 +13,17 @@ size: 2
 g:2
 size: 6
 	f: 297	q: 2.0544
-	f: 305	q: 1.976
+	f: 305	q: 1.9952
 	f: 312	q: 2
-	f: 313	q: 3.9696
+	f: 313	q: 3.9504
 	f: 320	q: 2
 	f: 326	q: 2
 
 g:3
 size: 3
-	f: 312	q: 2.0112
+	f: 312	q: 1.9888
 	f: 321	q: 2
-	f: 326	q: 1.9888
+	f: 326	q: 2.0112
 
 g:4
 size: 1

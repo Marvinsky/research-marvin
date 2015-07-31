@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_5000/transport-opt11-strips/fdist/p04_275.pddl
-predictionSS: 12.9928
-ss_timer: 34.86
+predictionSS: 13.012
+ss_timer: 35.12
 g:0
 size: 1
 	f: 235	q: 1
@@ -8,12 +8,12 @@ size: 1
 g:1
 size: 3
 	f: 249	q: 1
-	f: 259	q: 0.9928
-	f: 265	q: 1.0072
+	f: 259	q: 1.012
+	f: 265	q: 0.988
 
 g:2
 size: 1
-	f: 273	q: 2.9928
+	f: 273	q: 3.012
 
 g:3
 size: 2
