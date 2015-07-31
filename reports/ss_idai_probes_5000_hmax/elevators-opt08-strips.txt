@@ -222,7 +222,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p30.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 9		1			1
-14		315			----zero_info----
+14		315			315
 15		1257			----zero_info----
 16		2513			----zero_info----
 19		18738			----zero_info----
