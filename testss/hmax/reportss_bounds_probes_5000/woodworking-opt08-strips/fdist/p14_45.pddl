@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_5000/woodworking-opt08-strips/fdist/p14_45.pddl
 predictionSS: 1
-ss_timer: 3.32
+ss_timer: 3.44
 g:0
 size: 1
 	f: 45	q: 1
