@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/hmax/reportss_bounds_probes_5000/transport-opt11-strips/fdist/p17_81.pddl
 predictionSS: 119
-ss_timer: 366.28
+ss_timer: 369.72
 g:0
 size: 1
 	f: 68	q: 1
