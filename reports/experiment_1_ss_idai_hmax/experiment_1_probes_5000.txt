@@ -19,7 +19,7 @@ sokoban-opt08-strips        8.77103e+06        11173.6        2.31023        103
 sokoban-opt11-strips        1.20063e+07        15140.8        2.85947        105.548             20
 tidybot-opt11-strips        4.37806e+06          55476        8.87783        2365.37             20
 transport-opt08-strips      6.76065e+07        44253.8        46.0743       0.151111             27
-transport-opt11-strips       1.4334e+08         123154          54.65              0             20
-visitall-opt11-strips       8.27527e+08        43160.6        9.55558          5.686             20
-woodworking-opt08-strips    6.17172e+07        60014.5        8.75938        2172.55             30
+transport-opt11-strips       1.4334e+08         123154        41.0236        1813.71             20
+visitall-opt11-strips       8.27527e+08        43160.6       0.022851        326.968             20
+woodworking-opt08-strips    6.17172e+07        60014.5        1.38846        9555.53             30
 woodworking-opt11-strips    7.70861e+07        74171.4        1.04277        9961.15             20
