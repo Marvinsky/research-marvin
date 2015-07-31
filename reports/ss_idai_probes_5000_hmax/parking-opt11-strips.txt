@@ -7,7 +7,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 3		1			1
 4		12			12
 5		254			254
-6		5336			----zero_info----
+6		5336			5304.88
 7		112300			----zero_info----
 
 pfile05-018.pddl
@@ -25,7 +25,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 4		21			21
 5		401			401.12
 6		7641			7610.88
-7		145561			----zero_info----
+7		145561			145050
 
 pfile06-023.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -40,8 +40,8 @@ pfile08-030.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 3		1			1
 4		23			23
-5		485			----zero_info----
-6		10209			----zero_info----
+5		485			483.526
+6		10209			10165.8
 7		214853			----zero_info----
 
 pfile07-028.pddl
@@ -50,7 +50,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 4		21			21
 5		401			400.24
 6		7641			7619.32
-7		145561			----zero_info----
+7		145561			145061
 
 pfile05-019.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -87,7 +87,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 5		211			211
 6		4011			4007.8
 7		76411			76408.6
-8		1.45561e+06			----zero_info----
+8		1.45561e+06			1.45342e+06
 
 pfile05-017.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -163,7 +163,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 5		211			211
 6		4011			3999.8
 7		76411			76420.2
-8		1.45561e+06			----zero_info----
+8		1.45561e+06			1.44898e+06
 
 pfile04-013.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -187,9 +187,5 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 Files that contains zero_info:
 pfile03-011.pddl
-pfile07-025.pddl
-pfile07-026.pddl
-pfile07-027.pddl
-pfile07-028.pddl
 pfile08-029.pddl
 pfile08-030.pddl
