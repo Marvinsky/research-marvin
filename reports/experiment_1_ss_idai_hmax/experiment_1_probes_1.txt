@@ -6,7 +6,7 @@ blocks                      3.31534e+08        35245.9        4.91593       0.19
 barman-opt11-strips         9.36615e+07        63773.6        6.33301          0.616             20
 elevators-opt08-strips      1.83448e+07        95262.5        13.2698         31.918             30
 elevators-opt11-strips      1.90363e+07        93766.4        16.4638         27.599             20
-floortile-opt11-strips      5.38628e+07        6917.15        3.56722      0.0152941             17
+floortile-opt11-strips      4.57834e+08        58795.8        30.3214           0.13              2
 nomystery-opt11-strips       7.7804e+07        38593.8        6.27027          0.774             20
 openstacks-opt08-adl                ---            ---            ---            ---            ---
 openstacks-opt08-strips          155920        5695.04        1.23991        175.369             30

@@ -155,3 +155,9 @@ p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		2			2
 2		406			406
+
+Files that contains zero_info:
+p20.pddl
+p21.pddl
+p24.pddl
+p26.pddl
