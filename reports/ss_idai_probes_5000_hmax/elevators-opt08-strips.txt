@@ -226,8 +226,8 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 15		1257			1257
 16		2513			2513
 19		18738			18934.3
-20		296796			----zero_info----
-21		1.35643e+06			----zero_info----
+20		296796			227931
+21		1.35643e+06			754766
 
 p07.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -705,4 +705,3 @@ p24.pddl
 p26.pddl
 p27.pddl
 p28.pddl
-p30.pddl
