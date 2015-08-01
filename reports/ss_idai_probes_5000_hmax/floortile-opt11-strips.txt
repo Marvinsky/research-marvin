@@ -19,22 +19,22 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 opt-p01-001.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-7		1			----zero_info----
-8		5			----zero_info----
-9		22			----zero_info----
-10		89			----zero_info----
-11		341			----zero_info----
-12		1284			----zero_info----
-13		4673			----zero_info----
-14		17358			----zero_info----
-15		61873			----zero_info----
-16		229557			----zero_info----
-17		808041			----zero_info----
-18		3.00757e+06			----zero_info----
-19		1.04889e+07			----zero_info----
-20		3.92164e+07			----zero_info----
-21		1.35718e+08			----zero_info----
-22		5.09868e+08			----zero_info----
+7		1			1
+8		5			5
+9		22			21.8964
+10		89			87.679
+11		341			331.691
+12		1284			1254.85
+13		4673			4399.28
+14		17358			15231.4
+15		61873			57680.5
+16		229557			193897
+17		808041			587692
+18		3.00757e+06			1.84848e+06
+19		1.04889e+07			9.15069e+06
+20		3.92164e+07			6.55148e+07
+21		1.35718e+08			1.05917e+08
+22		5.09868e+08			2.97964e+08
 
 opt-p01-002.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -44,20 +44,20 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 opt-p03-006.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-6		1			----zero_info----
-7		3			----zero_info----
+6		1			1
+7		3			3
 8		17			----zero_info----
-9		66			----zero_info----
-10		307			----zero_info----
-11		1205			----zero_info----
-12		5579			----zero_info----
-13		23094			----zero_info----
-14		106440			----zero_info----
-15		452720			----zero_info----
-16		2.05587e+06			----zero_info----
-17		8.78696e+06			----zero_info----
-18		3.9068e+07			----zero_info----
-19		1.65746e+08			----zero_info----
+9		66			66.2076
+10		307			310.09
+11		1205			1199
+12		5579			5497.15
+13		23094			22462.9
+14		106440			103985
+15		452720			441972
+16		2.05587e+06			1.88991e+06
+17		8.78696e+06			7.32183e+06
+18		3.9068e+07			3.93537e+07
+19		1.65746e+08			1.02768e+08
 
 opt-p06-012.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -84,5 +84,4 @@ opt-p08-016.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 
 Files that contains zero_info:
-opt-p01-001.pddl
 opt-p03-006.pddl

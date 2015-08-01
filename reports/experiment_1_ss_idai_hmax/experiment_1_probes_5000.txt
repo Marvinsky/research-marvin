@@ -4,9 +4,9 @@ Domain                             ida*      ida* time       ss error        ss 
 
 blocks                      3.31534e+08        35245.9       0.140949        767.113             35
 barman-opt11-strips         9.36615e+07        63773.6       0.395658        2274.65             20
-elevators-opt08-strips      1.83448e+07        95262.5        9.76159        40138.2             30
-elevators-opt11-strips      1.90363e+07        93766.4        2.91022        82979.2             20
-floortile-opt11-strips      4.57834e+08        58795.8             15              0              2
+elevators-opt08-strips      1.83448e+07        95262.5        9.72826        43236.2             30
+elevators-opt11-strips      1.90363e+07        93766.4         2.8135        83207.4             20
+floortile-opt11-strips      4.57834e+08        58795.8        2.15347         543.65              2
 nomystery-opt11-strips       7.7804e+07        38593.8       0.159466        2145.22             20
 openstacks-opt08-adl                ---            ---            ---            ---            ---
 openstacks-opt08-strips          155920        5695.04       0.476498        20469.2             30
@@ -18,7 +18,7 @@ scanalyzer-opt11-strips     5.45018e+07        31737.7        6.20097          1
 sokoban-opt08-strips        8.77103e+06        11173.6        2.31023        103.409             30
 sokoban-opt11-strips        1.20063e+07        15140.8        2.85947        105.548             20
 tidybot-opt11-strips        4.37806e+06          55476        8.87783        2365.37             20
-transport-opt08-strips      6.76065e+07        44253.8        28.5105        8732.56             27
+transport-opt08-strips      6.76065e+07        44253.8        19.6755          12849             27
 transport-opt11-strips       1.4334e+08         123154        6.06074        15865.5             20
 visitall-opt11-strips       8.27527e+08        43160.6       0.022851        326.968             20
 woodworking-opt08-strips    6.17172e+07        60014.5       0.999527        10150.8             30
