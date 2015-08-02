@@ -204,7 +204,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 		file2>>heuristic;
 
 		//enhance NUM_PROBES: create directory problemas_bounds_probes_NUM_PROBES
-		string dirPROB_PROBES = "mkdir /home/levi/marvin/marvin/testss/"+heuristic+"/"+PROB_PROBES;
+		string dirPROB_PROBES = "mkdir /home/marvin/marvin/testss/"+heuristic+"/"+PROB_PROBES;
 		
 		if (!system(dirPROB_PROBES.c_str())) {
 			cout<<PROB_PROBES<<" created!\n";
@@ -212,7 +212,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 
 		
 		//enhance NUM_PROBES: create directory reportss_bounds_probes_NUM_PROBES
-		string dirRESU_PROBES = "mkdir /home/levi/marvin/marvin/testss/"+heuristic+"/"+RESU_PROBES;
+		string dirRESU_PROBES = "mkdir /home/marvin/marvin/testss/"+heuristic+"/"+RESU_PROBES;
 		
 		if (!system(dirRESU_PROBES.c_str())) {
 			cout<<RESU_PROBES<<" created!\n";
