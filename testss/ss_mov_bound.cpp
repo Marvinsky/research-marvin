@@ -9,6 +9,14 @@
 #include <vector>
 #include <dirent.h>
 
+
+//enhance the running of different probes
+#define NUM_PROBES 1
+#define PROB_PROBES "problemas_bounds_1"
+#define RESU_PROBES "reportss_bounds_probes_1"
+//end enhance
+
+
 using std::string;
 using namespace std;
 
@@ -22,26 +30,104 @@ string currentDateTime() {
 	return buf;
 }
 
+string domainConvertor(string key) {
+        string r;
+        if (key == "barman-opt11-strips") {
+                r = "d1";
+        } else if (key == "blocks") {
+                r = "d2";
+        } else if (key == "elevators-opt08-strips") {
+                r = "d3";
+        } else if (key == "elevators-opt11-strips") {
+                r = "d4";
+        } else if (key == "floortile-opt11-strips") {
+                r = "d5";
+        } else if (key == "nomystery-opt11-strips") {
+                r = "d6";
+        } else if (key == "openstacks-opt08-adl") {
+                r = "d7";
+        } else if (key == "openstacks-opt08-strips") {
+                r = "d8";
+        } else if (key == "openstacks-opt11-strips") {
+                r = "d9";
+        } else if (key == "parcprinter-opt11-strips") {
+                r = "d10";
+        } else if (key == "parking-opt11-strips") {
+                r = "d11";
+        } else if (key == "pegsol-opt11-strips") {
+                r = "d12";
+        } else if (key == "scanalyzer-opt11-strips") {
+                r = "d13";
+        } else if (key == "sokoban-opt08-strips") {
+                r = "d14";
+        } else if (key == "sokoban-opt11-strips") {
+                r = "d15";
+        } else if (key == "tidybot-opt11-strips") {
+                r = "d16";
+        } else if (key == "transport-opt08-strips") {
+                r = "d17";
+        } else if (key == "transport-opt11-strips") {
+                r = "d18";
+        } else if (key == "visitall-opt11-strips") {
+                r = "d19";
+        } else if (key == "woodworking-opt08-strips") {
+                r = "d20";
+        } else if (key == "woodworking-opt11-strips") {
+                r = "d21";
+        }
+        return r;
+}
+
+string getPrefixed(int nProbes) {
+	string r = "";
+	if (nProbes == 1) {
+		r = "1";
+	} else if (nProbes == 10) {
+		r = "2";
+	} else if (nProbes == 100) {
+		r = "3";
+	} else if (nProbes == 1000) {
+		r = "4";
+	} else if (nProbes == 5000) {
+		r = "5";
+	}
+	return r;
+}
+
+
 
 void create_final_report(long bound, string pasta, string dominio, string problema, string outname, string fname, string heuristic) {
 	string sas;
 	stringstream number;
 	number<<bound;
-	cout<<"pasta = "<<pasta<<"\n";
-	cout<<"dominio = "<<dominio<<"\n";
 	cout<<"problema = "<<problema<<"\n";
-	cout<<"outname = "<<outname<<"\n";
-	cout<<"fname = "<<fname<<"\n";
-	cout<<"heuristic = "<<heuristic<<"\n";
+	//begin fnamet information to show in the list
+	string auxt = problema;	
+	size_t foundt = auxt.find(".");
+	string problem_name_modt = auxt.substr(0, foundt);
+	string fnamet = problem_name_modt;
+
+	stringstream nameBound;
+        nameBound<<bound;
+	//string nnamet = "_wp" + fnamet + nameBound.str();
+	//cout<<"nnamet = "<<nnamet<<"\n";
+
+	string aux_name = domainConvertor(pasta);
+	string preFixed = getPrefixed(NUM_PROBES);
+	string nnamet = "_" + preFixed + aux_name + nameBound.str(); //name of the process
+	cout<<"nnamet = "<<nnamet<<"\n";
+	//end
+	
 	sas = "Astar";
 	sas += pasta;
 	sas += "_"+number.str();
+	//cout<<"sas = "<<sas<<"\n";
 	ofstream outfile(fname.c_str(), ios::out);
 
-	outfile<<"#PBS ss_"<<bound<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
+	outfile<<"#PBS -N "<<nnamet<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
 	//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
 
-	
+	cout<<"pasta = "<<pasta.c_str()<<"\n\n";
 	outfile<<"RESULTS=/home/marvin/marvin/testss/"<<heuristic<<"/problemas_bounds/"<<pasta.c_str()<<"/resultado_bounds"<<"\n\ncd /home/marvin/fd\n\n";
 	outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<"  "<<outname.c_str()<<"  "<<heuristic<<"\n\n";
 
@@ -117,17 +203,32 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 	while (counter < total_heuristics) {
 		file2>>heuristic;
 
+		//enhance NUM_PROBES: create directory problemas_bounds_probes_NUM_PROBES
+		string dirPROB_PROBES = "mkdir /home/levi/marvin/marvin/testss/"+heuristic+"/"+PROB_PROBES;
+		
+		if (!system(dirPROB_PROBES.c_str())) {
+			cout<<PROB_PROBES<<" created!\n";
+		}
+
+		
+		//enhance NUM_PROBES: create directory reportss_bounds_probes_NUM_PROBES
+		string dirRESU_PROBES = "mkdir /home/levi/marvin/marvin/testss/"+heuristic+"/"+RESU_PROBES;
+		
+		if (!system(dirRESU_PROBES.c_str())) {
+			cout<<RESU_PROBES<<" created!\n";
+		}
+
 		ifstream file("h/ss/d/instance360.txt");
-		//cout<<"heuristic = "<<heuristic<<"\n\n";
-		//cout<<"quantidade_entrada_opt = "<<quantidade_entrada_opt<<"\n\n";
-		//cout<<"total_heuristics = "<<total_heuristics<<"\n\n"; 
+		cout<<"heuristic = "<<heuristic<<"\n\n";
+		cout<<"quantidade_entrada_opt = "<<quantidade_entrada_opt<<"\n\n";
+		cout<<"total_heuristics = "<<total_heuristics<<"\n\n"; 
 		for (int i = 0; i < quantidade_entrada_opt; i++) {
 			file>>pasta;
 			//cout<<"pasta = "<<pasta<<"\n";
 			file>>dominio;
 			//cout<<"dominio = "<<dominio<<"\n";
 			file>>quantidade_problemas;
-			//cout<<"quantidade_problemas = "<<quantidade_problemas<<"\n";
+			cout<<"quantidade_problemas = "<<quantidade_problemas<<"\n";
 		
 			if (dominio == "domain.pddl") {
 				dominio_unico = true;
