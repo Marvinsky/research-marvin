@@ -4,11 +4,11 @@ tidybot-opt11-strips
 
 p14.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-9		5			----zero_info----
-10		27			----zero_info----
-11		127			125.87
-12		575			----zero_info----
-13		2236			----zero_info----
+9		5			5
+10		27			26.9488
+11		127			126.627
+12		575			572.016
+13		2236			2195.47
 14		9504			----zero_info----
 15		34210			----zero_info----
 16		142108			----zero_info----
@@ -29,9 +29,9 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p18.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-9		4			----zero_info----
-10		7			----zero_info----
-11		44			----zero_info----
+9		4			4
+10		7			7.0012
+11		44			43.7752
 12		115			----zero_info----
 13		498			----zero_info----
 14		1577			----zero_info----
@@ -43,9 +43,9 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p15.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-13		22			----zero_info----
-14		288			----zero_info----
-15		1886			----zero_info----
+13		22			22.2624
+14		288			286.495
+15		1886			1907.42
 16		11201			----zero_info----
 17		66287			----zero_info----
 18		289088			----zero_info----
@@ -53,34 +53,34 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p12.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-13		13			----zero_info----
-14		39			----zero_info----
-15		256			----zero_info----
+13		13			13
+14		39			38.7116
+15		256			256.116
 16		976			----zero_info----
-17		4242			----zero_info----
-18		19144			----zero_info----
-19		68102			----zero_info----
-20		337874			----zero_info----
-21		1.08869e+06			----zero_info----
+17		4242			4218.6
+18		19144			19086.7
+19		68102			68424.5
+20		337874			337524
+21		1.08869e+06			1.08593e+06
 
 p13.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-8		3			----zero_info----
-9		11			----zero_info----
-10		43			----zero_info----
-11		169			----zero_info----
-12		527			----zero_info----
-13		2256			----zero_info----
-14		6266			----zero_info----
-15		28808			----zero_info----
-16		74289			----zero_info----
-17		363909			----zero_info----
-18		889119			----zero_info----
+8		3			3
+9		11			11.0004
+10		43			43.1322
+11		169			168.955
+12		527			523.7
+13		2256			2230.7
+14		6266			6290.93
+15		28808			28933.7
+16		74289			73108
+17		363909			361850
+18		889119			897136
 
 p07.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 7		2			2
-8		10			9.908
+8		10			9.997
 9		48			47.6852
 10		227			223.994
 11		963			945.393
@@ -93,15 +93,15 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p05.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-16		11			----zero_info----
-17		78			----zero_info----
-18		304			----zero_info----
-19		2491			----zero_info----
-20		6856			----zero_info----
-21		56604			----zero_info----
-22		135572			----zero_info----
-23		1.08652e+06			----zero_info----
-24		2.41259e+06			----zero_info----
+16		11			11
+17		78			78
+18		304			298.945
+19		2491			2474.11
+20		6856			6854.47
+21		56604			56101.5
+22		135572			133657
+23		1.08652e+06			1.07866e+06
+24		2.41259e+06			2.38785e+06
 
 p01.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -126,36 +126,36 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p04.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 16		9			9
-17		57			56.968
-18		201			199.838
-19		1174			1173.26
-20		3304			3300.01
-21		16719			16646.6
-22		46440			46683.3
-23		204958			----zero_info----
-24		593506			----zero_info----
-25		2.34015e+06			----zero_info----
-26		7.16016e+06			----zero_info----
+17		57			56.92
+18		201			201.603
+19		1174			1173.71
+20		3304			3256.87
+21		16719			16604.8
+22		46440			45991.5
+23		204958			204068
+24		593506			583241
+25		2.34015e+06			2.29765e+06
+26		7.16016e+06			7.08728e+06
 
 p06.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-16		9			----zero_info----
-17		12			----zero_info----
-18		139			----zero_info----
-19		281			----zero_info----
-20		1891			----zero_info----
-21		5729			----zero_info----
-22		26605			----zero_info----
-23		107616			----zero_info----
-24		395280			----zero_info----
-25		1.8902e+06			----zero_info----
-26		6.12089e+06			----zero_info----
+16		9			9
+17		12			12
+18		139			138.508
+19		281			279.052
+20		1891			1872.29
+21		5729			5700.88
+22		26605			26295.8
+23		107616			106614
+24		395280			391067
+25		1.8902e+06			1.84715e+06
+26		6.12089e+06			6.02017e+06
 
 p17.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-12		6			----zero_info----
-13		33			----zero_info----
-14		137			----zero_info----
+12		6			6
+13		33			33
+14		137			137.042
 15		677			----zero_info----
 16		2480			----zero_info----
 17		10810			----zero_info----
@@ -168,7 +168,7 @@ p20.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 16		9			----zero_info----
 17		10			----zero_info----
-18		125			----zero_info----
+18		125			125
 19		157			----zero_info----
 20		1378			----zero_info----
 21		2019			----zero_info----
@@ -194,7 +194,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p09.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-11		6			----zero_info----
+11		6			6
 12		50			----zero_info----
 13		251			----zero_info----
 14		1151			----zero_info----
@@ -221,10 +221,10 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p16.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-13		13			----zero_info----
-14		19			----zero_info----
-15		232			----zero_info----
-16		367			----zero_info----
+13		13			13
+14		19			19
+15		232			231.201
+16		367			365.698
 17		3330			----zero_info----
 18		5855			5818.69
 19		44421			----zero_info----
@@ -238,12 +238,12 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 8		6			----zero_info----
 9		23			----zero_info----
 10		80			----zero_info----
-11		228			----zero_info----
-12		866			----zero_info----
-13		2122			----zero_info----
-14		8464			----zero_info----
-15		19124			----zero_info----
-16		79258			----zero_info----
+11		228			225.237
+12		866			865.5
+13		2122			2078.56
+14		8464			8374.12
+15		19124			18637.5
+16		79258			79341.3
 17		170426			----zero_info----
 18		729384			----zero_info----
 19		1.52366e+06			----zero_info----
@@ -266,15 +266,11 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 24		1.57105e+07			1.58242e+07
 
 Files that contains zero_info:
-p04.pddl
-p05.pddl
-p06.pddl
 p08.pddl
 p09.pddl
 p10.pddl
 p11.pddl
 p12.pddl
-p13.pddl
 p14.pddl
 p15.pddl
 p16.pddl
