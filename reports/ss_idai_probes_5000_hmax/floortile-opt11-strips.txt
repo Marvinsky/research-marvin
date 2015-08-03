@@ -46,7 +46,7 @@ opt-p03-006.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 6		1			1
 7		3			3
-8		17			----zero_info----
+8		17			16.9784
 9		66			66.2076
 10		307			310.09
 11		1205			1199
@@ -82,6 +82,3 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 opt-p08-016.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-
-Files that contains zero_info:
-opt-p03-006.pddl
