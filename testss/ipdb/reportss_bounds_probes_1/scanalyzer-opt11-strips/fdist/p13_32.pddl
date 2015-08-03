@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/scanalyzer-opt11-strips/fdist/p13_32.pddl
-predictionSS: 353966
-ss_timer: -4.26308e-16
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/scanalyzer-opt11-strips/fdist/p13_32.pddl
+predictionSS: 153168
+ss_timer: -1.77809e-16
 g:0
 size: 1
 	f: 25	q: 1
@@ -14,98 +14,89 @@ size: 3
 g:2
 size: 6
 	f: 25	q: 3
-	f: 26	q: 2
+	f: 26	q: 8
 	f: 27	q: 1
-	f: 28	q: 8
+	f: 28	q: 2
 	f: 29	q: 7
 	f: 30	q: 4
 
 g:3
 size: 7
 	f: 25	q: 4
-	f: 26	q: 3
+	f: 26	q: 15
 	f: 27	q: 3
-	f: 28	q: 18
-	f: 29	q: 37
-	f: 30	q: 26
+	f: 28	q: 6
+	f: 29	q: 43
+	f: 30	q: 20
 	f: 31	q: 34
 
 g:4
 size: 8
 	f: 25	q: 5
-	f: 26	q: 4
-	f: 27	q: 56
-	f: 28	q: 44
-	f: 29	q: 49
-	f: 30	q: 105
-	f: 31	q: 254
-	f: 32	q: 108
+	f: 26	q: 24
+	f: 27	q: 6
+	f: 28	q: 12
+	f: 29	q: 103
+	f: 30	q: 127
+	f: 31	q: 136
+	f: 32	q: 212
 
 g:5
 size: 8
 	f: 25	q: 5
-	f: 26	q: 16
-	f: 27	q: 10
-	f: 28	q: 32
-	f: 29	q: 201
-	f: 30	q: 432
-	f: 31	q: 904
-	f: 32	q: 1188
+	f: 26	q: 32
+	f: 27	q: 96
+	f: 28	q: 20
+	f: 29	q: 167
+	f: 30	q: 400
+	f: 31	q: 399
+	f: 32	q: 1006
 
 g:6
-size: 6
-	f: 26	q: 26
-	f: 28	q: 62
-	f: 29	q: 462
-	f: 30	q: 818
-	f: 31	q: 2941
-	f: 32	q: 4608
+size: 7
+	f: 26	q: 12
+	f: 27	q: 87
+	f: 28	q: 52
+	f: 29	q: 287
+	f: 30	q: 790
+	f: 31	q: 1722
+	f: 32	q: 2953
 
 g:7
-size: 4
-	f: 29	q: 431
-	f: 30	q: 2398
-	f: 31	q: 7182
-	f: 32	q: 15354
+size: 5
+	f: 28	q: 50
+	f: 29	q: 82
+	f: 30	q: 1536
+	f: 31	q: 4896
+	f: 32	q: 7225
 
 g:8
 size: 3
-	f: 29	q: 367
-	f: 31	q: 9636
-	f: 32	q: 41716
+	f: 30	q: 334
+	f: 31	q: 5991
+	f: 32	q: 29059
 
 g:9
-size: 3
-	f: 29	q: 367
-	f: 31	q: 9636
-	f: 32	q: 54806
+size: 2
+	f: 31	q: 5997
+	f: 32	q: 54768
 
 g:10
-size: 4
-	f: 29	q: 367
-	f: 30	q: 367
-	f: 31	q: 8762
-	f: 32	q: 48426
+size: 1
+	f: 32	q: 33997
 
 g:11
-size: 4
-	f: 29	q: 367
-	f: 30	q: 734
-	f: 31	q: 9129
-	f: 32	q: 57188
+size: 1
+	f: 32	q: 424
 
 g:12
-size: 2
-	f: 31	q: 734
-	f: 32	q: 37307
+size: 0
 
 g:13
-size: 1
-	f: 32	q: 18470
+size: 0
 
 g:14
-size: 1
-	f: 32	q: 17736
+size: 0
 
 g:15
 size: 0

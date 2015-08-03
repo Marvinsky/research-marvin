@@ -1,23 +1,20 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/pegsol-opt11-strips/fdist/p07_4.pddl
-predictionSS: 194
-ss_timer: 0.02
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/pegsol-opt11-strips/fdist/p07_4.pddl
+predictionSS: 4
+ss_timer: -4.55191e-14
 g:0
 size: 1
-	f: 3	q: 1
+	f: 4	q: 1
 
 g:1
-size: 2
-	f: 3	q: 10
+size: 1
 	f: 4	q: 3
 
 g:2
 size: 0
 
 g:3
-size: 1
-	f: 4	q: 60
+size: 0
 
 g:4
-size: 1
-	f: 4	q: 100
+size: 0
 

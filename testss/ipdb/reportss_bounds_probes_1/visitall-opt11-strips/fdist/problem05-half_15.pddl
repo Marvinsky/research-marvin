@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/visitall-opt11-strips/fdist/problem05-half_15.pddl
-predictionSS: 327
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/visitall-opt11-strips/fdist/problem05-half_15.pddl
+predictionSS: 777
 ss_timer: 4.43845e-18
 g:0
 size: 1
@@ -11,30 +11,35 @@ size: 2
 	f: 15	q: 1
 
 g:2
-size: 1
-	f: 15	q: 14
+size: 2
+	f: 14	q: 6
+	f: 15	q: 8
 
 g:3
-size: 1
-	f: 15	q: 28
+size: 2
+	f: 14	q: 12
+	f: 15	q: 22
 
 g:4
-size: 1
-	f: 15	q: 56
+size: 2
+	f: 14	q: 12
+	f: 15	q: 68
 
 g:5
 size: 1
-	f: 15	q: 112
+	f: 15	q: 92
 
 g:6
 size: 1
-	f: 15	q: 112
+	f: 15	q: 184
 
 g:7
-size: 0
+size: 1
+	f: 15	q: 184
 
 g:8
-size: 0
+size: 1
+	f: 15	q: 184
 
 g:9
 size: 0

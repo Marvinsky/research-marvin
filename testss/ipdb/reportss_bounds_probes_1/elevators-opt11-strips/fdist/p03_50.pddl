@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/elevators-opt11-strips/fdist/p03_50.pddl
-predictionSS: 55223
-ss_timer: 0.06
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/elevators-opt11-strips/fdist/p03_50.pddl
+predictionSS: 36904
+ss_timer: 0.04
 g:0
 size: 1
 	f: 27	q: 1
@@ -11,96 +11,102 @@ size: 6
 	f: 29	q: 1
 	f: 32	q: 2
 	f: 33	q: 3
+	f: 34	q: 3
 	f: 37	q: 6
-	f: 39	q: 3
 
 g:2
 size: 9
 	f: 32	q: 8
 	f: 33	q: 4
-	f: 36	q: 17
-	f: 38	q: 42
-	f: 39	q: 75
-	f: 43	q: 11
-	f: 44	q: 34
-	f: 46	q: 37
-	f: 48	q: 6
+	f: 34	q: 41
+	f: 38	q: 5
+	f: 42	q: 59
+	f: 43	q: 14
+	f: 44	q: 40
+	f: 46	q: 3
+	f: 47	q: 54
 
 g:3
-size: 6
-	f: 38	q: 96
-	f: 44	q: 820
-	f: 47	q: 292
-	f: 48	q: 126
-	f: 49	q: 350
-	f: 50	q: 558
+size: 7
+	f: 39	q: 204
+	f: 41	q: 279
+	f: 42	q: 53
+	f: 44	q: 304
+	f: 48	q: 286
+	f: 49	q: 259
+	f: 50	q: 420
 
 g:4
-size: 5
+size: 7
 	f: 37	q: 8
-	f: 42	q: 32
-	f: 44	q: 2050
-	f: 49	q: 1086
-	f: 50	q: 2318
+	f: 44	q: 2
+	f: 46	q: 1676
+	f: 47	q: 72
+	f: 48	q: 1165
+	f: 49	q: 137
+	f: 50	q: 2463
 
 g:5
 size: 4
-	f: 44	q: 752
-	f: 46	q: 512
-	f: 49	q: 4188
-	f: 50	q: 4162
+	f: 46	q: 692
+	f: 47	q: 173
+	f: 48	q: 125
+	f: 49	q: 3712
 
 g:6
 size: 3
-	f: 46	q: 1256
-	f: 49	q: 1348
-	f: 50	q: 7040
+	f: 48	q: 580
+	f: 49	q: 716
+	f: 50	q: 3037
 
 g:7
-size: 3
-	f: 48	q: 122
-	f: 49	q: 96
-	f: 50	q: 8342
+size: 4
+	f: 46	q: 1384
+	f: 48	q: 344
+	f: 49	q: 908
+	f: 50	q: 408
 
 g:8
 size: 3
-	f: 46	q: 58
-	f: 49	q: 3164
+	f: 48	q: 344
+	f: 49	q: 398
 	f: 50	q: 156
 
 g:9
-size: 2
-	f: 49	q: 152
-	f: 50	q: 4904
+size: 3
+	f: 48	q: 688
+	f: 49	q: 32
+	f: 50	q: 4986
 
 g:10
-size: 1
-	f: 49	q: 216
+size: 3
+	f: 48	q: 688
+	f: 49	q: 16
+	f: 50	q: 688
 
 g:11
 size: 2
-	f: 49	q: 160
-	f: 50	q: 5472
+	f: 48	q: 2752
+	f: 50	q: 2376
 
 g:12
-size: 1
-	f: 49	q: 3856
+size: 2
+	f: 48	q: 1376
+	f: 50	q: 1376
 
 g:13
-size: 1
-	f: 49	q: 160
+size: 2
+	f: 48	q: 688
+	f: 50	q: 688
 
 g:14
-size: 1
-	f: 49	q: 640
+size: 0
 
 g:15
-size: 1
-	f: 49	q: 320
+size: 0
 
 g:16
-size: 1
-	f: 49	q: 160
+size: 0
 
 g:17
 size: 0

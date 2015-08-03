@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/blocks/fdist/probBLOCKS-11-1_29.pddl
-predictionSS: 1.07792e+07
-ss_timer: 6.66784e-18
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/blocks/fdist/probBLOCKS-11-1_29.pddl
+predictionSS: 2.88547e+08
+ss_timer: -3.33392e-18
 g:0
 size: 1
 	f: 20	q: 1
@@ -10,103 +10,80 @@ size: 1
 	f: 20	q: 4
 
 g:2
-size: 2
-	f: 20	q: 4
-	f: 22	q: 16
+size: 1
+	f: 22	q: 20
 
 g:3
-size: 4
-	f: 20	q: 8
-	f: 21	q: 4
-	f: 22	q: 52
-	f: 23	q: 16
+size: 1
+	f: 22	q: 80
 
 g:4
-size: 3
-	f: 20	q: 8
-	f: 22	q: 52
-	f: 24	q: 340
+size: 2
+	f: 22	q: 80
+	f: 24	q: 320
 
 g:5
-size: 6
-	f: 20	q: 8
-	f: 21	q: 8
-	f: 22	q: 120
-	f: 23	q: 52
-	f: 24	q: 1072
-	f: 25	q: 340
+size: 2
+	f: 22	q: 240
+	f: 24	q: 1680
 
 g:6
-size: 4
-	f: 20	q: 8
-	f: 22	q: 192
-	f: 24	q: 1812
-	f: 26	q: 5988
+size: 3
+	f: 22	q: 240
+	f: 24	q: 960
+	f: 26	q: 10080
 
 g:7
-size: 8
-	f: 20	q: 8
-	f: 21	q: 8
-	f: 22	q: 208
-	f: 23	q: 192
-	f: 24	q: 5820
-	f: 25	q: 1812
-	f: 26	q: 25764
-	f: 27	q: 5988
+size: 5
+	f: 22	q: 240
+	f: 23	q: 240
+	f: 24	q: 3360
+	f: 25	q: 960
+	f: 26	q: 51360
 
 g:8
-size: 4
-	f: 22	q: 280
-	f: 24	q: 1792
-	f: 26	q: 45792
-	f: 28	q: 164748
+size: 3
+	f: 24	q: 2160
+	f: 26	q: 25920
+	f: 28	q: 308160
 
 g:9
-size: 8
-	f: 22	q: 280
-	f: 23	q: 280
-	f: 24	q: 2072
-	f: 25	q: 1792
-	f: 26	q: 140960
-	f: 27	q: 45792
-	f: 28	q: 540036
-	f: 29	q: 164748
+size: 5
+	f: 24	q: 2160
+	f: 25	q: 2160
+	f: 26	q: 108000
+	f: 27	q: 25920
+	f: 28	q: 1.56672e+06
 
 g:10
-size: 3
-	f: 24	q: 4312
-	f: 26	q: 17248
-	f: 28	q: 1.12051e+06
+size: 2
+	f: 26	q: 19440
+	f: 28	q: 2.39616e+06
 
 g:11
-size: 6
-	f: 24	q: 4312
-	f: 25	q: 4312
-	f: 26	q: 21560
-	f: 27	q: 17248
-	f: 28	q: 4.51654e+06
-	f: 29	q: 1.12051e+06
+size: 4
+	f: 26	q: 38880
+	f: 27	q: 19440
+	f: 28	q: 1.20002e+07
+	f: 29	q: 2.39616e+06
 
 g:12
-size: 2
-	f: 26	q: 34496
-	f: 28	q: 172480
+size: 1
+	f: 28	q: 1.2253e+07
 
 g:13
-size: 4
-	f: 26	q: 34496
-	f: 27	q: 34496
-	f: 28	q: 379456
-	f: 29	q: 172480
+size: 2
+	f: 28	q: 4.90118e+07
+	f: 29	q: 1.2253e+07
 
 g:14
 size: 1
-	f: 28	q: 655424
+	f: 28	q: 4.90118e+07
 
 g:15
 size: 2
-	f: 28	q: 655424
-	f: 29	q: 655424
+	f: 28	q: 9.80237e+07
+	f: 29	q: 4.90118e+07
 
 g:16
 size: 0

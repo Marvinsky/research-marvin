@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/tidybot-opt11-strips/fdist/p07_17.pddl
-predictionSS: 494895
-ss_timer: 0.04
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/tidybot-opt11-strips/fdist/p07_17.pddl
+predictionSS: 2.35175e+06
+ss_timer: 0.02
 g:0
 size: 1
 	f: 7	q: 1
@@ -27,60 +27,60 @@ size: 4
 	f: 11	q: 12
 
 g:4
-size: 4
+size: 5
 	f: 9	q: 36
 	f: 10	q: 44
-	f: 11	q: 68
-	f: 12	q: 10
+	f: 11	q: 80
+	f: 12	q: 12
+	f: 13	q: 12
 
 g:5
 size: 4
 	f: 10	q: 116
-	f: 11	q: 192
-	f: 12	q: 30
-	f: 13	q: 20
+	f: 11	q: 284
+	f: 12	q: 116
+	f: 13	q: 140
 
 g:6
-size: 5
-	f: 11	q: 424
-	f: 12	q: 368
-	f: 13	q: 312
-	f: 14	q: 20
-	f: 15	q: 20
+size: 3
+	f: 11	q: 516
+	f: 12	q: 1200
+	f: 13	q: 512
 
 g:7
 size: 4
-	f: 12	q: 1216
-	f: 13	q: 1360
-	f: 14	q: 372
-	f: 15	q: 412
+	f: 12	q: 2748
+	f: 13	q: 5140
+	f: 14	q: 512
+	f: 15	q: 512
 
 g:8
 size: 3
-	f: 13	q: 3792
-	f: 14	q: 3320
-	f: 15	q: 2928
+	f: 13	q: 10636
+	f: 14	q: 16444
+	f: 15	q: 2048
 
 g:9
-size: 3
-	f: 14	q: 10904
-	f: 15	q: 13360
-	f: 16	q: 3320
+size: 4
+	f: 14	q: 48352
+	f: 15	q: 47620
+	f: 16	q: 2048
+	f: 17	q: 2048
 
 g:10
 size: 3
-	f: 15	q: 35168
-	f: 16	q: 30904
-	f: 17	q: 20000
+	f: 15	q: 144324
+	f: 16	q: 146956
+	f: 17	q: 8192
 
 g:11
 size: 2
-	f: 16	q: 101240
-	f: 17	q: 81808
+	f: 16	q: 435604
+	f: 17	q: 302104
 
 g:12
 size: 1
-	f: 17	q: 183048
+	f: 17	q: 1.17331e+06
 
 g:13
 size: 0

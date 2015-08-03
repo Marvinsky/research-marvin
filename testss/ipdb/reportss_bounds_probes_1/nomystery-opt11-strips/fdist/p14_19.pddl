@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/nomystery-opt11-strips/fdist/p14_19.pddl
-predictionSS: 2239
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/nomystery-opt11-strips/fdist/p14_19.pddl
+predictionSS: 345
 ss_timer: -6.66784e-18
 g:0
 size: 1
@@ -17,38 +17,33 @@ size: 2
 
 g:3
 size: 3
-	f: 17	q: 6
-	f: 18	q: 22
-	f: 19	q: 36
+	f: 17	q: 12
+	f: 18	q: 6
+	f: 19	q: 6
 
 g:4
-size: 2
-	f: 18	q: 22
-	f: 19	q: 92
+size: 1
+	f: 19	q: 60
 
 g:5
 size: 1
-	f: 19	q: 136
+	f: 19	q: 120
 
 g:6
 size: 1
-	f: 19	q: 272
+	f: 19	q: 120
 
 g:7
-size: 1
-	f: 19	q: 272
+size: 0
 
 g:8
-size: 1
-	f: 19	q: 272
+size: 0
 
 g:9
-size: 1
-	f: 19	q: 544
+size: 0
 
 g:10
-size: 1
-	f: 19	q: 544
+size: 0
 
 g:11
 size: 0
