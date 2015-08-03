@@ -1,101 +1,118 @@
-	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1 probe
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1 probe.
 
 pegsol-opt11-strips
 
 p14.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-4		32			146
-5		10130			4228
+4		32			----zero_info----
+5		10130			----zero_info----
 
 p19.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-6		162			40
-7		8743			1396
+6		162			----zero_info----
+7		8743			11
 
 p18.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-8		1429			489
-9		929645			88213
+8		1429			9
+9		929645			132261
 
 p15.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-4		57			7
-5		6681			1147
+4		57			4
+5		6681			502
 
 p12.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-6		267			49
-7		4483			772
+6		267			76
+7		4483			2252
 
 p13.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-3		4			4
-4		97			49
-5		4471			2750
+3		4			----zero_info----
+4		97			2
+5		4471			62
 
 p07.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-3		11			11
-4		211			194
+3		11			----zero_info----
+4		211			4
 
 p05.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-5		5			5
-6		51			20
+5		5			----zero_info----
+6		51			1
 
 p01.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-2		10			10
+2		10			----zero_info----
 
 p10.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-4		164			1475
-5		5801			3942
+4		164			----zero_info----
+5		5801			5
 
 p04.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-4		12			12
-5		638			542
+4		12			----zero_info----
+5		638			1
 
 p06.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-2		9			9
+2		9			----zero_info----
 3		231			177
 
 p17.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-5		766			1716
+5		766			----zero_info----
 6		116776			7465
 
 p20.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-10		13			13
+10		13			----zero_info----
 
 p03.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-5		45			89
-6		2224			4698
+5		45			9
+6		2224			298
 
 p09.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-3		24			21
-4		1101			213
+3		24			----zero_info----
+4		1101			4
 
 p08.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-2		2			2
-3		25			44
+2		2			----zero_info----
+3		25			----zero_info----
 
 p16.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-3		121			131
-4		1854			1354
+3		121			2
+4		1854			46
 
 p11.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-4		1046			3277
+4		1046			----zero_info----
 
 p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-3		31			8
-4		1535			1823
+3		31			----zero_info----
+4		1535			19
+
+Files that contains zero_info:
+p01.pddl
+p02.pddl
+p04.pddl
+p05.pddl
+p06.pddl
+p07.pddl
+p08.pddl
+p09.pddl
+p10.pddl
+p11.pddl
+p13.pddl
+p14.pddl
+p17.pddl
+p19.pddl
+p20.pddl

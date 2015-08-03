@@ -1,4 +1,4 @@
-	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1 probe
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1 probe.
 
 woodworking-opt11-strips
 
@@ -6,11 +6,11 @@ p01.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 165		3			3
 170		5			5
-175		473593			310116
-180		1.59286e+06			558716
-185		3.51675e+06			1.81264e+06
-190		1.68693e+07			1.28259e+07
-195		9.99192e+07			206091
+175		473593			334646
+180		1.59286e+06			1.10728e+06
+185		3.51675e+06			1.67745e+07
+190		1.68693e+07			3.4135e+06
+195		9.99192e+07			2.12133e+08
 
 p03.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -24,8 +24,8 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 195		1			1
-205		2849			1544
-210		6228			7982
-215		9807			8837
-220		29094			76733
-225		3.94547e+06			6.73123e+06
+205		2849			1448
+210		6228			9962
+215		9807			35
+220		29094			18398
+225		3.94547e+06			7.27078e+06

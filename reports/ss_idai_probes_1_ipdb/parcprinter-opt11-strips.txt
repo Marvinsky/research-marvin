@@ -1,4 +1,4 @@
-	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1 probe
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1 probe.
 
 parcprinter-opt11-strips
 
@@ -53,4 +53,4 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 412048		11			11
-438047		39831			19154
+438047		39831			31491

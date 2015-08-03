@@ -1,4 +1,4 @@
-	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1 probe
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1 probe.
 
 sokoban-opt08-strips
 
@@ -8,7 +8,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p05.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-8		3.63899e+06			5.34401e+06
+8		3.63899e+06			1.0881e+06
 
 p22.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -52,4 +52,4 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-9		6501			5103
+9		6501			6216
