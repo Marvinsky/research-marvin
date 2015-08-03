@@ -38,8 +38,9 @@ for (m in 1:21) {
           y <- instance$V2
           
           all = c(x,y)
-          range = c(min(all), max(all))
-          
+          #range = c(min(all), max(all))
+          rangex = c(min(x), max(x))
+          rangey = c(min(y), max(y))
           
           s1 <- c(rname)
           n1 <- nchar(rname) - 4
@@ -56,7 +57,7 @@ for (m in 1:21) {
           
           jpeg(filename=mname,  width = 480, height = 480, units = "px")
           
-          plot(x, y, xlim=range, ylim=range, col.axis = "sky blue", col.lab = "thistle", pch = 4, col = "blue")
+          plot(x, y, xlim=rangex, ylim=rangey, col.axis = "sky blue", col.lab = "thistle", pch = 4, col = "blue")
       
           #model <- lm(y ~ x)
           abline(a = 0, b = 1)
