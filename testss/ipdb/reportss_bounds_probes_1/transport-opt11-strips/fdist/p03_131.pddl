@@ -11,7 +11,7 @@ size: 1
 
 g:2
 size: 1
-	f: 100	q: 20
+	f: 70	q: 20
 
 g:3
 size: 1

@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/visitall-opt11-strips/fdist/problem06-half_17.pddl
-predictionSS: 57
+predictionSS: 69
 ss_timer: -5.54976e-18
 g:0
 size: 1
@@ -18,7 +18,7 @@ size: 2
 g:3
 size: 2
 	f: 16	q: 4
-	f: 17	q: 12
+	f: 17	q: 24
 
 g:4
 size: 2

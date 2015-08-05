@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/visitall-opt11-strips/fdist/problem07-half_36.pddl
-predictionSS: 679653
+predictionSS: 845955
 ss_timer: -5.54976e-18
 g:0
 size: 1
@@ -19,99 +19,101 @@ size: 3
 g:3
 size: 4
 	f: 32	q: 4
-	f: 33	q: 24
-	f: 34	q: 18
+	f: 33	q: 18
+	f: 34	q: 24
 	f: 35	q: 18
 
 g:4
 size: 5
-	f: 32	q: 4
-	f: 33	q: 60
-	f: 34	q: 102
-	f: 35	q: 36
+	f: 32	q: 8
+	f: 33	q: 44
+	f: 34	q: 84
+	f: 35	q: 66
 	f: 36	q: 54
 
 g:5
 size: 5
-	f: 32	q: 8
-	f: 33	q: 128
-	f: 34	q: 222
-	f: 35	q: 276
-	f: 36	q: 180
+	f: 32	q: 16
+	f: 33	q: 104
+	f: 34	q: 172
+	f: 35	q: 234
+	f: 36	q: 306
 
 g:6
 size: 5
 	f: 32	q: 16
-	f: 33	q: 264
-	f: 34	q: 700
-	f: 35	q: 222
-	f: 36	q: 1188
+	f: 33	q: 136
+	f: 34	q: 656
+	f: 35	q: 406
+	f: 36	q: 1080
 
 g:7
 size: 5
-	f: 32	q: 16
-	f: 33	q: 280
-	f: 34	q: 1492
-	f: 35	q: 2100
-	f: 36	q: 1854
+	f: 32	q: 32
+	f: 33	q: 288
+	f: 34	q: 272
+	f: 35	q: 3436
+	f: 36	q: 1486
 
 g:8
-size: 4
-	f: 33	q: 328
-	f: 34	q: 2052
-	f: 35	q: 7184
-	f: 36	q: 6054
+size: 5
+	f: 32	q: 64
+	f: 33	q: 320
+	f: 34	q: 848
+	f: 35	q: 7688
+	f: 36	q: 8358
 
 g:9
-size: 3
-	f: 34	q: 656
-	f: 35	q: 4104
-	f: 36	q: 34790
+size: 4
+	f: 33	q: 768
+	f: 34	q: 1168
+	f: 35	q: 17920
+	f: 36	q: 15376
 
 g:10
-size: 3
-	f: 34	q: 656
-	f: 35	q: 1312
-	f: 36	q: 47102
+size: 4
+	f: 33	q: 1536
+	f: 34	q: 1536
+	f: 35	q: 21424
+	f: 36	q: 51216
 
 g:11
-size: 2
-	f: 35	q: 1968
-	f: 36	q: 5248
+size: 4
+	f: 33	q: 3072
+	f: 34	q: 3072
+	f: 35	q: 48992
+	f: 36	q: 21424
 
 g:12
-size: 2
-	f: 35	q: 1968
-	f: 36	q: 3936
+size: 4
+	f: 33	q: 3072
+	f: 34	q: 9216
+	f: 35	q: 6144
+	f: 36	q: 195968
 
 g:13
-size: 2
-	f: 35	q: 3936
-	f: 36	q: 5904
+size: 3
+	f: 34	q: 6144
+	f: 35	q: 39936
+	f: 36	q: 12288
 
 g:14
 size: 2
-	f: 35	q: 7872
-	f: 36	q: 25584
+	f: 35	q: 58368
+	f: 36	q: 92160
 
 g:15
-size: 2
-	f: 35	q: 15744
-	f: 36	q: 41328
+size: 1
+	f: 36	q: 208896
 
 g:16
-size: 2
-	f: 35	q: 15744
-	f: 36	q: 114144
+size: 0
 
 g:17
-size: 2
-	f: 35	q: 15744
-	f: 36	q: 129888
+size: 0
 
 g:18
-size: 1
-	f: 36	q: 177120
+size: 0
 
 g:19
 size: 0

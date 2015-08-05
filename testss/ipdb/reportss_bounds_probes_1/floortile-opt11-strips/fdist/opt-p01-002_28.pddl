@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/floortile-opt11-strips/fdist/opt-p01-002_28.pddl
-predictionSS: 1.63806e+07
-ss_timer: 9.93997e-16
+predictionSS: 684730
+ss_timer: -7.11237e-16
 g:0
 size: 1
 	f: 23	q: 1
@@ -8,90 +8,99 @@ size: 1
 g:1
 size: 3
 	f: 23	q: 4
-	f: 27	q: 3
+	f: 25	q: 3
 	f: 28	q: 4
 
 g:2
-size: 3
-	f: 23	q: 12
-	f: 25	q: 18
-	f: 28	q: 28
+size: 4
+	f: 23	q: 3
+	f: 24	q: 9
+	f: 27	q: 21
+	f: 28	q: 25
 
 g:3
-size: 4
-	f: 23	q: 58
-	f: 24	q: 80
-	f: 25	q: 135
-	f: 28	q: 44
+size: 3
+	f: 23	q: 12
+	f: 27	q: 137
+	f: 28	q: 99
 
 g:4
-size: 4
-	f: 23	q: 100
-	f: 24	q: 140
-	f: 25	q: 983
-	f: 28	q: 972
+size: 3
+	f: 23	q: 48
+	f: 27	q: 665
+	f: 28	q: 336
 
 g:5
-size: 3
-	f: 23	q: 27
-	f: 25	q: 6368
-	f: 28	q: 3399
+size: 4
+	f: 23	q: 96
+	f: 25	q: 102
+	f: 27	q: 2798
+	f: 28	q: 1319
 
 g:6
 size: 4
-	f: 23	q: 54
-	f: 25	q: 7030
-	f: 27	q: 11653
-	f: 28	q: 15707
+	f: 23	q: 192
+	f: 25	q: 1394
+	f: 27	q: 9335
+	f: 28	q: 3020
 
 g:7
 size: 4
-	f: 23	q: 54
-	f: 25	q: 14114
-	f: 27	q: 104768
-	f: 28	q: 15497
+	f: 23	q: 96
+	f: 25	q: 6536
+	f: 27	q: 23527
+	f: 28	q: 7882
 
 g:8
-size: 5
-	f: 23	q: 54
-	f: 25	q: 7084
-	f: 26	q: 7030
-	f: 27	q: 237710
-	f: 28	q: 216987
+size: 4
+	f: 23	q: 96
+	f: 25	q: 2162
+	f: 27	q: 53686
+	f: 28	q: 38233
 
 g:9
-size: 3
-	f: 23	q: 54
-	f: 27	q: 503648
-	f: 28	q: 528949
+size: 4
+	f: 23	q: 96
+	f: 26	q: 2258
+	f: 27	q: 58010
+	f: 28	q: 114457
 
 g:10
 size: 2
-	f: 27	q: 1.00724e+06
-	f: 28	q: 779680
+	f: 26	q: 2258
+	f: 28	q: 153588
 
 g:11
 size: 2
-	f: 27	q: 1.51084e+06
-	f: 28	q: 1.78572e+06
+	f: 26	q: 4516
+	f: 28	q: 50936
 
 g:12
-size: 2
-	f: 27	q: 1.51078e+06
-	f: 28	q: 3.29645e+06
+size: 3
+	f: 26	q: 2258
+	f: 27	q: 9032
+	f: 28	q: 2258
 
 g:13
-size: 1
-	f: 28	q: 4.80712e+06
+size: 3
+	f: 26	q: 2258
+	f: 27	q: 6774
+	f: 28	q: 18064
 
 g:14
-size: 0
+size: 3
+	f: 26	q: 2258
+	f: 27	q: 11290
+	f: 28	q: 24838
 
 g:15
-size: 0
+size: 2
+	f: 27	q: 15806
+	f: 28	q: 36128
 
 g:16
-size: 0
+size: 1
+	f: 28	q: 15806
 
 g:17
 size: 0

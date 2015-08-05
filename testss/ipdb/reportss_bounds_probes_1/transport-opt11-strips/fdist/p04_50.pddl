@@ -7,7 +7,7 @@ size: 1
 
 g:1
 size: 1
-	f: 49	q: 7
+	f: 32	q: 7
 
 g:2
 size: 0

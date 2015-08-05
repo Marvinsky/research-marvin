@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/visitall-opt11-strips/fdist/problem08-half_35.pddl
-predictionSS: 66707
-ss_timer: 4.43845e-18
+predictionSS: 139263
+ss_timer: -5.54976e-18
 g:0
 size: 1
 	f: 32	q: 1
@@ -19,80 +19,65 @@ size: 3
 g:3
 size: 4
 	f: 32	q: 2
-	f: 33	q: 26
-	f: 34	q: 28
+	f: 33	q: 16
+	f: 34	q: 38
 	f: 35	q: 8
 
 g:4
 size: 4
 	f: 32	q: 2
-	f: 33	q: 58
-	f: 34	q: 108
-	f: 35	q: 72
+	f: 33	q: 54
+	f: 34	q: 92
+	f: 35	q: 92
 
 g:5
 size: 4
 	f: 32	q: 4
-	f: 33	q: 2
-	f: 34	q: 556
-	f: 35	q: 180
+	f: 33	q: 110
+	f: 34	q: 200
+	f: 35	q: 368
 
 g:6
 size: 4
 	f: 32	q: 4
-	f: 33	q: 8
-	f: 34	q: 564
-	f: 35	q: 1292
+	f: 33	q: 338
+	f: 34	q: 510
+	f: 35	q: 400
 
 g:7
-size: 4
-	f: 32	q: 8
+size: 3
 	f: 33	q: 12
-	f: 34	q: 588
-	f: 35	q: 564
+	f: 34	q: 1524
+	f: 35	q: 1530
 
 g:8
-size: 4
-	f: 32	q: 8
-	f: 33	q: 24
-	f: 34	q: 624
-	f: 35	q: 1176
+size: 2
+	f: 34	q: 1560
+	f: 35	q: 9162
 
 g:9
-size: 4
-	f: 32	q: 16
-	f: 33	q: 40
-	f: 34	q: 1320
-	f: 35	q: 624
+size: 1
+	f: 35	q: 15402
 
 g:10
-size: 4
-	f: 32	q: 16
-	f: 33	q: 112
-	f: 34	q: 1400
-	f: 35	q: 2640
+size: 1
+	f: 35	q: 15402
 
 g:11
-size: 4
-	f: 32	q: 16
-	f: 33	q: 128
-	f: 34	q: 3136
-	f: 35	q: 4040
+size: 1
+	f: 35	q: 15402
 
 g:12
-size: 3
-	f: 33	q: 432
-	f: 34	q: 3264
-	f: 35	q: 6272
+size: 1
+	f: 35	q: 15402
 
 g:13
-size: 2
-	f: 34	q: 1296
-	f: 35	q: 16064
+size: 1
+	f: 35	q: 30804
 
 g:14
 size: 1
-	f: 35	q: 19952
+	f: 35	q: 30804
 
 g:15
 size: 0

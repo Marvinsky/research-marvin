@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/pegsol-opt11-strips/fdist/p14_4.pddl
 predictionSS: 0
-ss_timer: 1.00031e-13
+ss_timer: 9.10383e-15
 g:0
 size: 0
 

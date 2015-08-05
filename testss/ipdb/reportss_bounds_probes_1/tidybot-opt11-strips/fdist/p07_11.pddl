@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/tidybot-opt11-strips/fdist/p07_11.pddl
-predictionSS: 1540
+predictionSS: 1137
 ss_timer: 0.02
 g:0
 size: 1
@@ -30,16 +30,16 @@ g:4
 size: 3
 	f: 9	q: 36
 	f: 10	q: 82
-	f: 11	q: 94
+	f: 11	q: 77
 
 g:5
 size: 2
 	f: 10	q: 154
-	f: 11	q: 388
+	f: 11	q: 272
 
 g:6
 size: 1
-	f: 11	q: 696
+	f: 11	q: 426
 
 g:7
 size: 0

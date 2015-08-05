@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/scanalyzer-opt11-strips/fdist/p11_24.pddl
-predictionSS: 4437
-ss_timer: -8.52617e-16
+predictionSS: 3413
+ss_timer: 2.84495e-16
 g:0
 size: 1
 	f: 24	q: 1
@@ -27,7 +27,7 @@ size: 1
 
 g:6
 size: 1
-	f: 24	q: 3072
+	f: 24	q: 2048
 
 g:7
 size: 0

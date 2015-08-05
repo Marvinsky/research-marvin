@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/transport-opt11-strips/fdist/p03_285.pddl
-predictionSS: 72605
+predictionSS: 110025
 ss_timer: 0
 g:0
 size: 1
@@ -7,133 +7,189 @@ size: 1
 
 g:1
 size: 1
-	f: 45	q: 4
+	f: 53	q: 4
 
 g:2
 size: 1
-	f: 84	q: 24
+	f: 70	q: 20
 
 g:3
 size: 1
-	f: 131	q: 96
+	f: 109	q: 80
 
 g:4
 size: 1
-	f: 170	q: 480
+	f: 248	q: 480
 
 g:5
-size: 1
-	f: 193	q: 2880
+size: 2
+	f: 248	q: 480
+	f: 283	q: 960
 
 g:6
-size: 1
-	f: 240	q: 17280
+size: 2
+	f: 250	q: 480
+	f: 283	q: 1920
 
 g:7
-size: 1
-	f: 279	q: 51840
+size: 2
+	f: 250	q: 480
+	f: 285	q: 2880
 
 g:8
-size: 0
+size: 2
+	f: 252	q: 480
+	f: 285	q: 3840
 
 g:9
-size: 0
+size: 2
+	f: 252	q: 480
+	f: 269	q: 480
 
 g:10
-size: 0
+size: 2
+	f: 254	q: 480
+	f: 269	q: 960
 
 g:11
-size: 0
+size: 2
+	f: 254	q: 480
+	f: 271	q: 1440
 
 g:12
-size: 0
+size: 2
+	f: 256	q: 480
+	f: 271	q: 1920
 
 g:13
-size: 0
+size: 2
+	f: 256	q: 480
+	f: 273	q: 2400
 
 g:14
-size: 0
+size: 2
+	f: 258	q: 480
+	f: 273	q: 2880
 
 g:15
-size: 0
+size: 2
+	f: 258	q: 480
+	f: 275	q: 3360
 
 g:16
-size: 0
+size: 2
+	f: 260	q: 480
+	f: 275	q: 3840
 
 g:17
-size: 0
+size: 2
+	f: 260	q: 480
+	f: 277	q: 4320
 
 g:18
-size: 0
+size: 2
+	f: 262	q: 480
+	f: 277	q: 4800
 
 g:19
-size: 0
+size: 2
+	f: 262	q: 480
+	f: 279	q: 5280
 
 g:20
-size: 0
+size: 2
+	f: 264	q: 480
+	f: 279	q: 5760
 
 g:21
-size: 0
+size: 2
+	f: 264	q: 480
+	f: 281	q: 6240
 
 g:22
-size: 0
+size: 2
+	f: 266	q: 480
+	f: 281	q: 6720
 
 g:23
-size: 0
+size: 2
+	f: 266	q: 480
+	f: 283	q: 7200
 
 g:24
-size: 0
+size: 2
+	f: 268	q: 480
+	f: 283	q: 7680
 
 g:25
-size: 0
+size: 2
+	f: 268	q: 480
+	f: 285	q: 8160
 
 g:26
-size: 0
+size: 2
+	f: 270	q: 480
+	f: 285	q: 8640
 
 g:27
-size: 0
+size: 1
+	f: 270	q: 480
 
 g:28
-size: 0
+size: 1
+	f: 272	q: 480
 
 g:29
-size: 0
+size: 1
+	f: 272	q: 480
 
 g:30
-size: 0
+size: 1
+	f: 274	q: 480
 
 g:31
-size: 0
+size: 1
+	f: 274	q: 480
 
 g:32
-size: 0
+size: 1
+	f: 276	q: 480
 
 g:33
-size: 0
+size: 1
+	f: 276	q: 480
 
 g:34
-size: 0
+size: 1
+	f: 278	q: 480
 
 g:35
-size: 0
+size: 1
+	f: 278	q: 480
 
 g:36
-size: 0
+size: 1
+	f: 280	q: 480
 
 g:37
-size: 0
+size: 1
+	f: 280	q: 480
 
 g:38
-size: 0
+size: 1
+	f: 282	q: 480
 
 g:39
-size: 0
+size: 1
+	f: 282	q: 480
 
 g:40
-size: 0
+size: 1
+	f: 284	q: 480
 
 g:41
-size: 0
+size: 1
+	f: 284	q: 480
 
 g:42
 size: 0

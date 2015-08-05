@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/parking-opt11-strips/fdist/pfile05-018_18.pddl
-predictionSS: 135917
-ss_timer: -3.55618e-17
+predictionSS: 227837
+ss_timer: 0.02
 g:0
 size: 1
 	f: 14	q: 1
@@ -11,26 +11,29 @@ size: 2
 	f: 15	q: 7
 
 g:2
-size: 2
+size: 3
 	f: 15	q: 22
-	f: 16	q: 106
+	f: 16	q: 99
+	f: 17	q: 7
 
 g:3
-size: 2
-	f: 16	q: 458
-	f: 17	q: 742
+size: 3
+	f: 16	q: 407
+	f: 17	q: 1437
+	f: 18	q: 148
 
 g:4
 size: 2
-	f: 17	q: 6870
-	f: 18	q: 12330
+	f: 17	q: 5698
+	f: 18	q: 23954
 
 g:5
 size: 1
-	f: 18	q: 115380
+	f: 18	q: 98028
 
 g:6
-size: 0
+size: 1
+	f: 18	q: 98028
 
 g:7
 size: 0

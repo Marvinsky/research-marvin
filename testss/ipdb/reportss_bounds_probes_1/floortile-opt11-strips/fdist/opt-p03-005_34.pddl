@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/floortile-opt11-strips/fdist/opt-p03-005_34.pddl
-predictionSS: 2.44581e+06
-ss_timer: 2.84148e-15
+predictionSS: 521137
+ss_timer: -2.84148e-15
 g:0
 size: 1
 	f: 31	q: 1
@@ -18,73 +18,71 @@ size: 3
 
 g:3
 size: 4
-	f: 31	q: 38
-	f: 32	q: 24
-	f: 33	q: 22
+	f: 31	q: 20
+	f: 32	q: 18
+	f: 33	q: 52
 	f: 34	q: 6
 
 g:4
 size: 3
-	f: 31	q: 92
-	f: 33	q: 386
-	f: 34	q: 34
+	f: 32	q: 56
+	f: 33	q: 334
+	f: 34	q: 40
 
 g:5
 size: 3
-	f: 32	q: 338
-	f: 33	q: 1866
-	f: 34	q: 68
+	f: 32	q: 218
+	f: 33	q: 388
+	f: 34	q: 1022
 
 g:6
-size: 3
-	f: 32	q: 108
-	f: 33	q: 8146
-	f: 34	q: 626
+size: 2
+	f: 32	q: 218
+	f: 34	q: 3682
 
 g:7
-size: 3
-	f: 32	q: 216
-	f: 33	q: 18872
-	f: 34	q: 9060
+size: 2
+	f: 32	q: 436
+	f: 34	q: 8140
 
 g:8
 size: 3
-	f: 32	q: 216
-	f: 33	q: 40204
-	f: 34	q: 59780
+	f: 32	q: 436
+	f: 33	q: 436
+	f: 34	q: 20620
 
 g:9
 size: 3
-	f: 32	q: 432
-	f: 33	q: 111336
-	f: 34	q: 176336
+	f: 32	q: 872
+	f: 33	q: 872
+	f: 34	q: 38028
 
 g:10
 size: 3
-	f: 32	q: 432
-	f: 33	q: 188984
-	f: 34	q: 369564
+	f: 32	q: 436
+	f: 33	q: 1744
+	f: 34	q: 57172
 
 g:11
 size: 3
-	f: 32	q: 432
-	f: 33	q: 83000
-	f: 34	q: 553628
+	f: 32	q: 436
+	f: 33	q: 2180
+	f: 34	q: 73036
 
 g:12
 size: 3
-	f: 32	q: 432
-	f: 33	q: 12000
-	f: 34	q: 709356
+	f: 32	q: 436
+	f: 33	q: 3488
+	f: 34	q: 132212
 
 g:13
 size: 2
-	f: 33	q: 6648
-	f: 34	q: 85592
+	f: 33	q: 1308
+	f: 34	q: 85732
 
 g:14
 size: 1
-	f: 34	q: 7512
+	f: 34	q: 87040
 
 g:15
 size: 0

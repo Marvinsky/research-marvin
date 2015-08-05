@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/floortile-opt11-strips/fdist/opt-p02-003_21.pddl
 predictionSS: 2
-ss_timer: 0
+ss_timer: 5.68295e-15
 g:0
 size: 1
 	f: 20	q: 1

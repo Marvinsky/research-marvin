@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/scanalyzer-opt11-strips/fdist/p03_26.pddl
-predictionSS: 5.79217e+09
-ss_timer: -9.76866e-17
+predictionSS: 4.29342e+09
+ss_timer: 1.06577e-16
 g:0
 size: 1
 	f: 18	q: 1
@@ -24,52 +24,52 @@ size: 3
 
 g:4
 size: 3
-	f: 20	q: 280
-	f: 21	q: 3159
+	f: 20	q: 523
+	f: 21	q: 2916
 	f: 22	q: 6561
 
 g:5
-size: 3
-	f: 21	q: 5959
-	f: 22	q: 34992
+size: 4
+	f: 20	q: 523
+	f: 21	q: 7623
+	f: 22	q: 32805
 	f: 23	q: 59049
 
 g:6
 size: 3
-	f: 22	q: 94582
-	f: 23	q: 373977
+	f: 22	q: 110604
+	f: 23	q: 357955
 	f: 24	q: 531441
 
 g:7
-size: 3
-	f: 23	q: 1.3198e+06
-	f: 24	q: 3.89723e+06
+size: 4
+	f: 22	q: 52300
+	f: 23	q: 1.44464e+06
+	f: 24	q: 3.72009e+06
 	f: 25	q: 4.78297e+06
 
 g:8
-size: 3
-	f: 24	q: 1.70952e+07
-	f: 25	q: 3.98581e+07
+size: 4
+	f: 23	q: 1.75844e+06
+	f: 24	q: 1.69311e+07
+	f: 25	q: 3.82638e+07
 	f: 26	q: 4.30467e+07
 
 g:9
-size: 3
-	f: 24	q: 1.70952e+07
-	f: 25	q: 1.93715e+08
-	f: 26	q: 4.01769e+08
+size: 2
+	f: 25	q: 1.88761e+08
+	f: 26	q: 4.07097e+08
 
 g:10
-size: 2
-	f: 25	q: 1.53857e+08
-	f: 26	q: 2.1452e+09
+size: 1
+	f: 26	q: 1.88761e+09
 
 g:11
 size: 1
-	f: 26	q: 1.38471e+09
+	f: 26	q: 1.69885e+09
 
 g:12
-size: 1
-	f: 26	q: 1.38471e+09
+size: 0
 
 g:13
 size: 0

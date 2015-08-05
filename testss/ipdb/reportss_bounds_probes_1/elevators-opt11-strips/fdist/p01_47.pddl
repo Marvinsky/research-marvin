@@ -14,8 +14,8 @@ size: 4
 
 g:2
 size: 2
-	f: 44	q: 12
-	f: 46	q: 11
+	f: 44	q: 22
+	f: 46	q: 1
 
 g:3
 size: 2
@@ -44,7 +44,7 @@ size: 1
 
 g:8
 size: 1
-	f: 44	q: 82
+	f: 44	q: 64
 
 g:9
 size: 1
@@ -52,7 +52,7 @@ size: 1
 
 g:10
 size: 1
-	f: 44	q: 183
+	f: 44	q: 147
 
 g:11
 size: 1
@@ -60,7 +60,7 @@ size: 1
 
 g:12
 size: 1
-	f: 44	q: 82
+	f: 44	q: 136
 
 g:13
 size: 0

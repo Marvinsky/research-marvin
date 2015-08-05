@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/elevators-opt08-strips/fdist/p12_49.pddl
-predictionSS: 11464
-ss_timer: 0.04
+predictionSS: 152576
+ss_timer: 0.08
 g:0
 size: 1
 	f: 27	q: 1
@@ -9,98 +9,116 @@ g:1
 size: 6
 	f: 27	q: 1
 	f: 29	q: 1
+	f: 32	q: 2
 	f: 33	q: 3
-	f: 35	q: 2
-	f: 36	q: 3
+	f: 39	q: 3
 	f: 46	q: 6
 
 g:2
-size: 7
+size: 8
 	f: 33	q: 4
-	f: 34	q: 8
-	f: 41	q: 57
-	f: 43	q: 21
-	f: 44	q: 22
-	f: 46	q: 20
-	f: 48	q: 24
+	f: 35	q: 8
+	f: 38	q: 8
+	f: 39	q: 22
+	f: 43	q: 51
+	f: 46	q: 23
+	f: 48	q: 21
+	f: 49	q: 19
 
 g:3
 size: 6
-	f: 41	q: 95
-	f: 43	q: 148
-	f: 45	q: 117
-	f: 47	q: 126
-	f: 48	q: 208
-	f: 49	q: 167
+	f: 41	q: 90
+	f: 43	q: 42
+	f: 45	q: 142
+	f: 46	q: 104
+	f: 47	q: 127
+	f: 48	q: 340
 
 g:4
-size: 5
-	f: 44	q: 54
-	f: 46	q: 604
-	f: 47	q: 416
-	f: 48	q: 40
-	f: 49	q: 596
+size: 7
+	f: 37	q: 48
+	f: 43	q: 48
+	f: 44	q: 40
+	f: 45	q: 274
+	f: 46	q: 82
+	f: 48	q: 104
+	f: 49	q: 890
 
 g:5
-size: 5
-	f: 44	q: 166
-	f: 46	q: 414
-	f: 47	q: 187
-	f: 48	q: 216
-	f: 49	q: 238
+size: 4
+	f: 44	q: 276
+	f: 46	q: 194
+	f: 48	q: 1568
+	f: 49	q: 48
 
 g:6
-size: 3
-	f: 46	q: 569
-	f: 48	q: 40
-	f: 49	q: 990
+size: 6
+	f: 37	q: 414
+	f: 43	q: 192
+	f: 44	q: 38
+	f: 46	q: 288
+	f: 48	q: 1732
+	f: 49	q: 478
 
 g:7
-size: 3
-	f: 46	q: 52
-	f: 48	q: 216
-	f: 49	q: 596
+size: 7
+	f: 43	q: 1950
+	f: 44	q: 38
+	f: 45	q: 192
+	f: 46	q: 3448
+	f: 47	q: 96
+	f: 48	q: 1966
+	f: 49	q: 1260
 
 g:8
-size: 3
-	f: 46	q: 556
-	f: 48	q: 62
-	f: 49	q: 494
+size: 5
+	f: 43	q: 5026
+	f: 46	q: 2348
+	f: 47	q: 1212
+	f: 48	q: 194
+	f: 49	q: 2758
 
 g:9
-size: 1
-	f: 49	q: 416
+size: 4
+	f: 44	q: 1626
+	f: 46	q: 1116
+	f: 48	q: 228
+	f: 49	q: 13258
 
 g:10
-size: 2
-	f: 46	q: 596
-	f: 49	q: 312
+size: 3
+	f: 45	q: 192
+	f: 47	q: 192
+	f: 49	q: 11854
 
 g:11
-size: 1
-	f: 49	q: 520
+size: 2
+	f: 44	q: 3252
+	f: 49	q: 13570
 
 g:12
 size: 1
-	f: 49	q: 208
+	f: 49	q: 10776
 
 g:13
 size: 1
-	f: 49	q: 1248
+	f: 49	q: 9756
 
 g:14
 size: 1
-	f: 49	q: 416
+	f: 49	q: 13008
 
 g:15
 size: 1
-	f: 49	q: 208
+	f: 49	q: 19512
 
 g:16
-size: 0
+size: 1
+	f: 49	q: 13008
 
 g:17
-size: 0
+size: 1
+	f: 49	q: 13008
 
 g:18
 size: 0

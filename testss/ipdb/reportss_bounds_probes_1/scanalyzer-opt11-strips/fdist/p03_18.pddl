@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/scanalyzer-opt11-strips/fdist/p03_18.pddl
 predictionSS: 3
-ss_timer: -9.76866e-17
+ss_timer: -1.95373e-16
 g:0
 size: 1
 	f: 18	q: 1

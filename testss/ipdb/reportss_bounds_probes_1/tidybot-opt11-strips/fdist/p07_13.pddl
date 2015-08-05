@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/tidybot-opt11-strips/fdist/p07_13.pddl
-predictionSS: 11459
-ss_timer: 0.04
+predictionSS: 5423
+ss_timer: -1.70523e-15
 g:0
 size: 1
 	f: 7	q: 1
@@ -27,34 +27,30 @@ size: 4
 	f: 11	q: 12
 
 g:4
-size: 5
+size: 3
 	f: 9	q: 36
-	f: 10	q: 68
-	f: 11	q: 80
-	f: 12	q: 12
-	f: 13	q: 12
+	f: 10	q: 44
+	f: 11	q: 68
 
 g:5
-size: 4
-	f: 10	q: 140
-	f: 11	q: 264
-	f: 12	q: 116
-	f: 13	q: 140
+size: 2
+	f: 10	q: 116
+	f: 11	q: 192
 
 g:6
 size: 3
-	f: 11	q: 404
-	f: 12	q: 760
-	f: 13	q: 776
+	f: 11	q: 308
+	f: 12	q: 192
+	f: 13	q: 192
 
 g:7
 size: 2
-	f: 12	q: 1568
-	f: 13	q: 2716
+	f: 12	q: 808
+	f: 13	q: 884
 
 g:8
 size: 1
-	f: 13	q: 4284
+	f: 13	q: 2500
 
 g:9
 size: 0

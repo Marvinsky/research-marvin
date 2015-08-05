@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/nomystery-opt11-strips/fdist/p05_22.pddl
-predictionSS: 57437
-ss_timer: 0
+predictionSS: 419
+ss_timer: 1.77538e-17
 g:0
 size: 1
 	f: 18	q: 1
@@ -12,81 +12,54 @@ size: 2
 
 g:2
 size: 2
-	f: 20	q: 9
+	f: 20	q: 12
 	f: 21	q: 3
 
 g:3
-size: 3
-	f: 20	q: 18
-	f: 21	q: 9
-	f: 22	q: 9
+size: 2
+	f: 21	q: 42
+	f: 22	q: 15
 
 g:4
-size: 3
-	f: 20	q: 18
-	f: 21	q: 36
-	f: 22	q: 90
+size: 1
+	f: 22	q: 171
 
 g:5
-size: 3
-	f: 20	q: 36
-	f: 21	q: 18
-	f: 22	q: 126
+size: 1
+	f: 22	q: 171
 
 g:6
-size: 3
-	f: 20	q: 36
-	f: 21	q: 72
-	f: 22	q: 288
+size: 0
 
 g:7
-size: 2
-	f: 21	q: 180
-	f: 22	q: 972
+size: 0
 
 g:8
-size: 2
-	f: 21	q: 180
-	f: 22	q: 1512
+size: 0
 
 g:9
-size: 2
-	f: 21	q: 360
-	f: 22	q: 180
+size: 0
 
 g:10
-size: 2
-	f: 21	q: 1080
-	f: 22	q: 720
+size: 0
 
 g:11
-size: 2
-	f: 21	q: 2160
-	f: 22	q: 1800
+size: 0
 
 g:12
-size: 2
-	f: 21	q: 2160
-	f: 22	q: 2160
+size: 0
 
 g:13
-size: 2
-	f: 21	q: 2160
-	f: 22	q: 6480
+size: 0
 
 g:14
-size: 2
-	f: 21	q: 2160
-	f: 22	q: 8640
+size: 0
 
 g:15
-size: 2
-	f: 21	q: 2160
-	f: 22	q: 8640
+size: 0
 
 g:16
-size: 1
-	f: 22	q: 12960
+size: 0
 
 g:17
 size: 0

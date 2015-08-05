@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/parking-opt11-strips/fdist/pfile03-012_12.pddl
 predictionSS: 1
-ss_timer: -5.33427e-17
+ss_timer: -4.44523e-17
 g:0
 size: 1
 	f: 12	q: 1

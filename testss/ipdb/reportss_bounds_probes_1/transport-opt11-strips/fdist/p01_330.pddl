@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/transport-opt11-strips/fdist/p01_330.pddl
-predictionSS: 33082
-ss_timer: -1.99764e-17
+predictionSS: 47971
+ss_timer: -2.2199e-17
 g:0
 size: 1
 	f: 322	q: 1
@@ -22,80 +22,80 @@ size: 2
 g:4
 size: 3
 	f: 322	q: 2
-	f: 324	q: 6
+	f: 324	q: 11
 	f: 326	q: 1
 
 g:5
 size: 3
 	f: 322	q: 2
-	f: 324	q: 12
-	f: 326	q: 6
+	f: 324	q: 15
+	f: 326	q: 13
 
 g:6
 size: 4
 	f: 322	q: 2
-	f: 324	q: 14
-	f: 326	q: 27
+	f: 324	q: 17
+	f: 326	q: 51
 	f: 328	q: 1
 
 g:7
 size: 4
 	f: 322	q: 2
-	f: 324	q: 20
-	f: 326	q: 59
-	f: 328	q: 21
+	f: 324	q: 23
+	f: 326	q: 85
+	f: 328	q: 49
 
 g:8
 size: 5
 	f: 322	q: 2
-	f: 324	q: 20
-	f: 326	q: 79
-	f: 328	q: 119
+	f: 324	q: 23
+	f: 326	q: 108
+	f: 328	q: 229
 	f: 330	q: 1
 
 g:9
 size: 4
-	f: 324	q: 24
-	f: 326	q: 139
-	f: 328	q: 277
-	f: 330	q: 81
+	f: 324	q: 27
+	f: 326	q: 177
+	f: 328	q: 437
+	f: 330	q: 193
 
 g:10
 size: 4
-	f: 324	q: 24
-	f: 326	q: 139
-	f: 328	q: 416
-	f: 330	q: 517
+	f: 324	q: 27
+	f: 326	q: 177
+	f: 328	q: 614
+	f: 330	q: 1013
 
 g:11
 size: 3
-	f: 326	q: 187
-	f: 328	q: 833
-	f: 330	q: 1269
+	f: 326	q: 231
+	f: 328	q: 1145
+	f: 330	q: 2133
 
 g:12
 size: 3
-	f: 326	q: 187
-	f: 328	q: 833
-	f: 330	q: 2102
+	f: 326	q: 231
+	f: 328	q: 1145
+	f: 330	q: 3278
 
 g:13
 size: 2
-	f: 328	q: 1207
-	f: 330	q: 4601
+	f: 328	q: 1607
+	f: 330	q: 6713
 
 g:14
 size: 2
-	f: 328	q: 1207
-	f: 330	q: 4601
+	f: 328	q: 1607
+	f: 330	q: 6713
 
 g:15
 size: 1
-	f: 330	q: 7015
+	f: 330	q: 9927
 
 g:16
 size: 1
-	f: 330	q: 7015
+	f: 330	q: 9927
 
 g:17
 size: 0

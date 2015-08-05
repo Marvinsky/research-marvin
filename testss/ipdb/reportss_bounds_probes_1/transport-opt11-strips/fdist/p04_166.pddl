@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/transport-opt11-strips/fdist/p04_166.pddl
-predictionSS: 37
+predictionSS: 32338
 ss_timer: -4.1674e-19
 g:0
 size: 1
@@ -7,20 +7,23 @@ size: 1
 
 g:1
 size: 1
-	f: 131	q: 9
+	f: 32	q: 9
 
 g:2
 size: 1
-	f: 161	q: 27
+	f: 56	q: 72
 
 g:3
-size: 0
+size: 1
+	f: 103	q: 504
 
 g:4
-size: 0
+size: 1
+	f: 127	q: 4536
 
 g:5
-size: 0
+size: 1
+	f: 159	q: 27216
 
 g:6
 size: 0

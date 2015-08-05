@@ -1,57 +1,56 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/floortile-opt11-strips/fdist/opt-p02-004_26.pddl
-predictionSS: 2970
-ss_timer: 8.53484e-16
+predictionSS: 8249
+ss_timer: 2.55698e-15
 g:0
 size: 1
 	f: 23	q: 1
 
 g:1
 size: 2
-	f: 23	q: 3
-	f: 24	q: 4
+	f: 23	q: 1
+	f: 24	q: 6
 
 g:2
-size: 3
-	f: 23	q: 4
-	f: 24	q: 5
-	f: 25	q: 38
+size: 4
+	f: 23	q: 2
+	f: 24	q: 4
+	f: 25	q: 24
+	f: 26	q: 15
 
 g:3
 size: 4
-	f: 23	q: 4
-	f: 24	q: 11
-	f: 25	q: 143
-	f: 26	q: 78
+	f: 23	q: 2
+	f: 24	q: 4
+	f: 25	q: 64
+	f: 26	q: 84
 
 g:4
-size: 3
-	f: 24	q: 6
-	f: 25	q: 24
-	f: 26	q: 630
+size: 2
+	f: 25	q: 138
+	f: 26	q: 244
 
 g:5
 size: 2
-	f: 25	q: 12
-	f: 26	q: 411
+	f: 25	q: 252
+	f: 26	q: 352
 
 g:6
 size: 2
-	f: 25	q: 12
-	f: 26	q: 244
+	f: 25	q: 504
+	f: 26	q: 504
 
 g:7
 size: 2
-	f: 25	q: 24
-	f: 26	q: 430
+	f: 25	q: 504
+	f: 26	q: 1680
 
 g:8
-size: 2
-	f: 25	q: 12
-	f: 26	q: 652
+size: 1
+	f: 26	q: 3024
 
 g:9
 size: 1
-	f: 26	q: 222
+	f: 26	q: 840
 
 g:10
 size: 0

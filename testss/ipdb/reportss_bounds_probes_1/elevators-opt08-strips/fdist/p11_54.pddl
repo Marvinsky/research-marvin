@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/elevators-opt08-strips/fdist/p11_54.pddl
-predictionSS: 14051
-ss_timer: 0.16
+predictionSS: 8.93499e+06
+ss_timer: 0.22
 g:0
 size: 1
 	f: 39	q: 1
@@ -10,117 +10,131 @@ size: 7
 	f: 39	q: 1
 	f: 41	q: 1
 	f: 44	q: 6
-	f: 45	q: 3
 	f: 48	q: 1
+	f: 49	q: 3
 	f: 50	q: 1
 	f: 52	q: 1
 
 g:2
 size: 6
-	f: 44	q: 26
-	f: 48	q: 10
-	f: 50	q: 28
-	f: 52	q: 16
-	f: 53	q: 24
-	f: 54	q: 28
+	f: 44	q: 9
+	f: 46	q: 15
+	f: 49	q: 31
+	f: 52	q: 12
+	f: 53	q: 17
+	f: 54	q: 40
 
 g:3
-size: 5
-	f: 49	q: 106
-	f: 51	q: 1
-	f: 52	q: 2
-	f: 53	q: 83
-	f: 54	q: 207
+size: 7
+	f: 44	q: 40
+	f: 49	q: 114
+	f: 50	q: 15
+	f: 51	q: 39
+	f: 52	q: 16
+	f: 53	q: 2
+	f: 54	q: 136
 
 g:4
-size: 5
+size: 7
 	f: 44	q: 2
-	f: 51	q: 8
-	f: 52	q: 6
-	f: 53	q: 118
-	f: 54	q: 235
+	f: 46	q: 140
+	f: 50	q: 6
+	f: 51	q: 161
+	f: 52	q: 148
+	f: 53	q: 7
+	f: 54	q: 473
 
 g:5
 size: 6
 	f: 44	q: 4
-	f: 49	q: 6
-	f: 50	q: 4
-	f: 51	q: 8
-	f: 52	q: 13
-	f: 54	q: 153
+	f: 49	q: 148
+	f: 51	q: 106
+	f: 52	q: 493
+	f: 53	q: 533
+	f: 54	q: 642
 
 g:6
-size: 4
-	f: 49	q: 8
-	f: 51	q: 1
-	f: 53	q: 187
-	f: 54	q: 34
+size: 5
+	f: 49	q: 688
+	f: 51	q: 80
+	f: 52	q: 901
+	f: 53	q: 737
+	f: 54	q: 1332
 
 g:7
-size: 2
-	f: 53	q: 349
-	f: 54	q: 454
+size: 4
+	f: 49	q: 1142
+	f: 52	q: 1400
+	f: 53	q: 1020
+	f: 54	q: 2354
 
 g:8
-size: 4
+size: 5
 	f: 44	q: 14
-	f: 49	q: 56
-	f: 53	q: 361
-	f: 54	q: 466
+	f: 49	q: 4232
+	f: 51	q: 14
+	f: 52	q: 560
+	f: 54	q: 4862
 
 g:9
 size: 2
-	f: 53	q: 1425
-	f: 54	q: 254
+	f: 53	q: 375
+	f: 54	q: 23034
 
 g:10
-size: 2
-	f: 53	q: 392
-	f: 54	q: 140
+size: 3
+	f: 49	q: 2284
+	f: 53	q: 314
+	f: 54	q: 57594
 
 g:11
 size: 3
+	f: 49	q: 13593
 	f: 52	q: 28
-	f: 53	q: 2800
-	f: 54	q: 196
+	f: 54	q: 147988
 
 g:12
 size: 3
+	f: 49	q: 110052
 	f: 52	q: 28
-	f: 53	q: 48
-	f: 54	q: 1920
+	f: 54	q: 115432
 
 g:13
-size: 4
-	f: 49	q: 84
+size: 5
+	f: 49	q: 28
+	f: 51	q: 56
 	f: 52	q: 28
-	f: 53	q: 2611
-	f: 54	q: 28
+	f: 53	q: 56
+	f: 54	q: 407560
 
 g:14
 size: 1
-	f: 54	q: 392
+	f: 54	q: 908168
 
 g:15
-size: 1
-	f: 53	q: 500
+size: 2
+	f: 53	q: 112
+	f: 54	q: 1.47121e+06
 
 g:16
 size: 1
-	f: 54	q: 112
+	f: 54	q: 2.17912e+06
 
 g:17
 size: 1
-	f: 53	q: 32
+	f: 54	q: 603584
 
 g:18
-size: 0
+size: 1
+	f: 54	q: 2.61628e+06
 
 g:19
-size: 0
+size: 1
+	f: 54	q: 109632
 
 g:20
-size: 0
+size: 1
+	f: 54	q: 145732
 
 g:21
 size: 0

@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/nomystery-opt11-strips/fdist/p07_28.pddl
-predictionSS: 5304
+predictionSS: 1120
 ss_timer: 2.22261e-17
 g:0
 size: 1
@@ -17,39 +17,33 @@ size: 3
 
 g:3
 size: 4
-	f: 25	q: 6
-	f: 26	q: 10
-	f: 27	q: 17
-	f: 28	q: 5
+	f: 25	q: 3
+	f: 26	q: 2
+	f: 27	q: 20
+	f: 28	q: 4
 
 g:4
-size: 4
-	f: 25	q: 6
-	f: 26	q: 22
-	f: 27	q: 81
-	f: 28	q: 84
+size: 3
+	f: 26	q: 2
+	f: 27	q: 75
+	f: 28	q: 56
 
 g:5
-size: 4
-	f: 25	q: 6
-	f: 26	q: 44
-	f: 27	q: 139
-	f: 28	q: 318
+size: 2
+	f: 27	q: 150
+	f: 28	q: 216
 
 g:6
-size: 3
-	f: 26	q: 44
-	f: 27	q: 181
-	f: 28	q: 1178
+size: 2
+	f: 27	q: 150
+	f: 28	q: 216
 
 g:7
-size: 2
-	f: 27	q: 181
-	f: 28	q: 1486
+size: 1
+	f: 28	q: 216
 
 g:8
-size: 1
-	f: 28	q: 1486
+size: 0
 
 g:9
 size: 0

@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/sokoban-opt11-strips/fdist/p19_30.pddl
 predictionSS: 13
-ss_timer: 4.88433e-17
+ss_timer: 2.66714e-17
 g:0
 size: 1
 	f: 30	q: 1

@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/nomystery-opt11-strips/fdist/p11_12.pddl
-predictionSS: 13
+predictionSS: 23
 ss_timer: 2.21923e-18
 g:0
 size: 1
@@ -18,11 +18,11 @@ size: 2
 g:3
 size: 2
 	f: 11	q: 1
-	f: 12	q: 1
+	f: 12	q: 6
 
 g:4
 size: 1
-	f: 12	q: 1
+	f: 12	q: 6
 
 g:5
 size: 0

@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/transport-opt11-strips/fdist/p03_233.pddl
-predictionSS: 198865
+predictionSS: 2525
 ss_timer: 0
 g:0
 size: 1
@@ -7,164 +7,219 @@ size: 1
 
 g:1
 size: 1
-	f: 53	q: 4
+	f: 45	q: 4
 
 g:2
 size: 1
-	f: 100	q: 20
+	f: 184	q: 24
 
 g:3
-size: 1
-	f: 123	q: 120
+size: 2
+	f: 184	q: 24
+	f: 227	q: 96
 
 g:4
-size: 1
-	f: 158	q: 720
+size: 2
+	f: 186	q: 24
+	f: 231	q: 96
 
 g:5
-size: 1
-	f: 175	q: 3600
+size: 2
+	f: 186	q: 24
+	f: 229	q: 192
 
 g:6
-size: 1
-	f: 192	q: 21600
+size: 2
+	f: 188	q: 24
+	f: 225	q: 96
 
 g:7
-size: 1
-	f: 215	q: 86400
+size: 2
+	f: 188	q: 24
+	f: 231	q: 168
 
 g:8
-size: 1
-	f: 232	q: 86400
+size: 2
+	f: 190	q: 24
+	f: 231	q: 72
 
 g:9
-size: 0
+size: 2
+	f: 190	q: 24
+	f: 229	q: 144
 
 g:10
-size: 0
+size: 2
+	f: 192	q: 24
+	f: 233	q: 216
 
 g:11
-size: 0
+size: 2
+	f: 192	q: 24
+	f: 231	q: 24
 
 g:12
-size: 0
+size: 2
+	f: 194	q: 24
+	f: 231	q: 48
 
 g:13
-size: 0
+size: 2
+	f: 194	q: 24
+	f: 233	q: 72
 
 g:14
-size: 0
+size: 2
+	f: 196	q: 24
+	f: 233	q: 96
 
 g:15
-size: 0
+size: 1
+	f: 196	q: 24
 
 g:16
-size: 0
+size: 1
+	f: 198	q: 24
 
 g:17
-size: 0
+size: 1
+	f: 198	q: 24
 
 g:18
-size: 0
+size: 1
+	f: 200	q: 24
 
 g:19
-size: 0
+size: 1
+	f: 200	q: 24
 
 g:20
-size: 0
+size: 1
+	f: 202	q: 24
 
 g:21
-size: 0
+size: 1
+	f: 202	q: 24
 
 g:22
-size: 0
+size: 1
+	f: 204	q: 24
 
 g:23
-size: 0
+size: 1
+	f: 204	q: 24
 
 g:24
-size: 0
+size: 1
+	f: 206	q: 24
 
 g:25
-size: 0
+size: 1
+	f: 206	q: 24
 
 g:26
-size: 0
+size: 1
+	f: 208	q: 24
 
 g:27
-size: 0
+size: 1
+	f: 208	q: 24
 
 g:28
-size: 0
+size: 1
+	f: 210	q: 24
 
 g:29
-size: 0
+size: 1
+	f: 210	q: 24
 
 g:30
-size: 0
+size: 1
+	f: 212	q: 24
 
 g:31
-size: 0
+size: 1
+	f: 212	q: 24
 
 g:32
-size: 0
+size: 1
+	f: 214	q: 24
 
 g:33
-size: 0
+size: 1
+	f: 214	q: 24
 
 g:34
-size: 0
+size: 1
+	f: 216	q: 24
 
 g:35
-size: 0
+size: 1
+	f: 216	q: 24
 
 g:36
-size: 0
+size: 1
+	f: 218	q: 24
 
 g:37
-size: 0
+size: 1
+	f: 218	q: 24
 
 g:38
-size: 0
+size: 1
+	f: 220	q: 24
 
 g:39
-size: 0
+size: 1
+	f: 220	q: 24
 
 g:40
-size: 0
+size: 1
+	f: 222	q: 24
 
 g:41
-size: 0
+size: 1
+	f: 222	q: 24
 
 g:42
-size: 0
+size: 1
+	f: 224	q: 24
 
 g:43
-size: 0
+size: 1
+	f: 224	q: 24
 
 g:44
-size: 0
+size: 1
+	f: 226	q: 24
 
 g:45
-size: 0
+size: 1
+	f: 226	q: 24
 
 g:46
-size: 0
+size: 1
+	f: 228	q: 24
 
 g:47
-size: 0
+size: 1
+	f: 228	q: 24
 
 g:48
-size: 0
+size: 1
+	f: 230	q: 24
 
 g:49
-size: 0
+size: 1
+	f: 230	q: 24
 
 g:50
-size: 0
+size: 1
+	f: 232	q: 24
 
 g:51
-size: 0
+size: 1
+	f: 232	q: 24
 
 g:52
 size: 0

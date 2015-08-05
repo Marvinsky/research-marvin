@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/transport-opt11-strips/fdist/p03_206.pddl
-predictionSS: 581
+predictionSS: 12745
 ss_timer: 0
 g:0
 size: 1
@@ -7,103 +7,84 @@ size: 1
 
 g:1
 size: 1
-	f: 45	q: 4
+	f: 53	q: 4
 
 g:2
 size: 1
-	f: 184	q: 24
+	f: 100	q: 20
 
 g:3
 size: 1
-	f: 184	q: 24
+	f: 117	q: 120
 
 g:4
 size: 1
-	f: 186	q: 24
+	f: 134	q: 600
 
 g:5
 size: 1
-	f: 186	q: 24
+	f: 169	q: 2400
 
 g:6
 size: 1
-	f: 188	q: 24
+	f: 192	q: 9600
 
 g:7
-size: 1
-	f: 188	q: 24
+size: 0
 
 g:8
-size: 1
-	f: 190	q: 24
+size: 0
 
 g:9
-size: 1
-	f: 190	q: 24
+size: 0
 
 g:10
-size: 1
-	f: 192	q: 24
+size: 0
 
 g:11
-size: 1
-	f: 192	q: 24
+size: 0
 
 g:12
-size: 1
-	f: 194	q: 24
+size: 0
 
 g:13
-size: 1
-	f: 194	q: 24
+size: 0
 
 g:14
-size: 1
-	f: 196	q: 24
+size: 0
 
 g:15
-size: 1
-	f: 196	q: 24
+size: 0
 
 g:16
-size: 1
-	f: 198	q: 24
+size: 0
 
 g:17
-size: 1
-	f: 198	q: 24
+size: 0
 
 g:18
-size: 1
-	f: 200	q: 24
+size: 0
 
 g:19
-size: 1
-	f: 200	q: 24
+size: 0
 
 g:20
-size: 1
-	f: 202	q: 24
+size: 0
 
 g:21
-size: 1
-	f: 202	q: 24
+size: 0
 
 g:22
-size: 1
-	f: 204	q: 24
+size: 0
 
 g:23
-size: 1
-	f: 204	q: 24
+size: 0
 
 g:24
-size: 1
-	f: 206	q: 24
+size: 0
 
 g:25
-size: 1
-	f: 206	q: 24
+size: 0
 
 g:26
 size: 0

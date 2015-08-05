@@ -7,11 +7,11 @@ size: 1
 
 g:1
 size: 1
-	f: 53	q: 4
+	f: 45	q: 4
 
 g:2
 size: 1
-	f: 92	q: 20
+	f: 84	q: 20
 
 g:3
 size: 0

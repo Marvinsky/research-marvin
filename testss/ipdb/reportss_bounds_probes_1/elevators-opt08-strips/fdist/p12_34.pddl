@@ -15,8 +15,8 @@ size: 5
 
 g:2
 size: 2
-	f: 32	q: 4
-	f: 34	q: 10
+	f: 32	q: 9
+	f: 34	q: 5
 
 g:3
 size: 2
@@ -25,8 +25,8 @@ size: 2
 
 g:4
 size: 2
-	f: 32	q: 5
-	f: 34	q: 1
+	f: 32	q: 2
+	f: 34	q: 4
 
 g:5
 size: 0

@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/barman-opt11-strips/fdist/pfile02-005_24.pddl
-predictionSS: 673
-ss_timer: 0
+predictionSS: 409
+ss_timer: -4.54498e-15
 g:0
 size: 1
 	f: 21	q: 1
@@ -18,13 +18,13 @@ size: 2
 
 g:3
 size: 2
-	f: 23	q: 156
-	f: 24	q: 40
+	f: 23	q: 88
+	f: 24	q: 84
 
 g:4
 size: 2
-	f: 23	q: 40
-	f: 24	q: 270
+	f: 23	q: 20
+	f: 24	q: 50
 
 g:5
 size: 1

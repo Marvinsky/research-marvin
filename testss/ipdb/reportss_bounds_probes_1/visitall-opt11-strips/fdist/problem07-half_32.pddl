@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/visitall-opt11-strips/fdist/problem07-half_32.pddl
-predictionSS: 47
-ss_timer: -3.33392e-18
+predictionSS: 561
+ss_timer: -5.54976e-18
 g:0
 size: 1
 	f: 32	q: 1
@@ -11,31 +11,31 @@ size: 1
 
 g:2
 size: 1
-	f: 32	q: 4
+	f: 32	q: 6
 
 g:3
 size: 1
-	f: 32	q: 4
+	f: 32	q: 12
 
 g:4
 size: 1
-	f: 32	q: 4
+	f: 32	q: 36
 
 g:5
 size: 1
-	f: 32	q: 8
+	f: 32	q: 72
 
 g:6
 size: 1
-	f: 32	q: 8
+	f: 32	q: 144
 
 g:7
 size: 1
-	f: 32	q: 8
+	f: 32	q: 144
 
 g:8
 size: 1
-	f: 32	q: 8
+	f: 32	q: 144
 
 g:9
 size: 0
