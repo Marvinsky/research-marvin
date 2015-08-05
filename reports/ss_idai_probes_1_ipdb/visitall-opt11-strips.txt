@@ -2,37 +2,85 @@
 
 visitall-opt11-strips
 
+problem09-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+49		886			76
+50		25547			785
+51		498671			26181
+52		8.4668e+06			2.81174e+06
+53		1.31915e+08			4.72952e+06
+
 problem05-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-24		98441			279197
+24		98441			44921
+
+problem08-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+32		55			111
+33		1230			1979
+34		18150			30607
+35		219045			139263
+36		2.28299e+06			702331
+37		2.13192e+07			2.16502e+08
+38		1.82024e+08			2.88466e+08
+39		1.44924e+09			5.07108e+09
+40		1.08788e+10			2.69945e+10
 
 problem06-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-35		1.99953e+07			4.96934e+06
+35		1.99953e+07			3.32978e+07
+
+problem11-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+57		48			37
+58		924			129
+59		12461			967
+60		141024			27025
+61		1.43834e+06			324657
+62		1.38622e+07			4.67319e+07
+63		1.29348e+08			4.84933e+06
+64		1.1865e+09			5.46704e+07
 
 problem04-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 7		2			2
-8		12			14
-9		53			50
-10		235			137
-11		906			467
+8		12			8
+9		53			47
+10		235			173
+11		906			1631
 
 problem04-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-15		1227			1709
+15		1227			1217
 
 problem02-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 3		7			7
 
+problem09-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
 problem07-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-32		745			47
-33		20048			185
-34		326575			37607
-35		4.1926e+06			1.51264e+06
-36		4.59104e+07			679653
+32		745			561
+33		20048			27163
+34		326575			64161
+35		4.1926e+06			888349
+36		4.59104e+07			845955
+
+problem10-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+47		19			3
+48		365			401
+49		5302			2985
+50		65211			67601
+51		709825			261209
+52		7.15008e+06			1.09082e+06
+53		6.82876e+07			4.13736e+07
+54		6.30346e+08			9.09387e+07
+
+problem08-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
 
 problem02-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -40,17 +88,26 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 problem05-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-14		31			34
-15		346			777
-16		2660			3615
-17		15161			14233
-18		103281			170531
+14		31			118
+15		346			509
+16		2660			587
+17		15161			14769
+18		103281			140593
+
+problem11-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
 
 problem03-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 4		2			2
-5		8			6
-6		47			43
+5		8			9
+6		47			49
+
+problem10-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+problem07-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
 
 problem03-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -59,11 +116,11 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 problem06-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 15		2			2
-16		32			12
-17		291			57
-18		2140			209
-19		13142			882
-20		77089			3348
-21		405318			14508
-22		2.1247e+06			520380
-23		1.03602e+07			2.67093e+06
+16		32			17
+17		291			69
+18		2140			249
+19		13142			2673
+20		77089			116493
+21		405318			645057
+22		2.1247e+06			148497
+23		1.03602e+07			7.02527e+06

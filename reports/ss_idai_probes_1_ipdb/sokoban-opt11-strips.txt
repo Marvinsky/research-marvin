@@ -2,6 +2,10 @@
 
 sokoban-opt11-strips
 
+p14.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+8		253			249
+
 p19.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 30		13			13
@@ -9,6 +13,10 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p18.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		1			1
+
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+29		214163			336043
 
 p12.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -32,8 +40,85 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p10.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-8		3.63899e+06			778779
+8		3.63899e+06			4.97134e+06
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		3			3
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		841			841
 
 p17.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 25		1			1
+
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		189			193
+16		1029			1461
+17		7261			5209
+18		56061			8653
+19		322989			106737
+20		2.41454e+06			477265
+21		1.32902e+07			875785
+22		1.06154e+08			3.11285e+09
+23		7.95981e+08			2.60002e+08
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		47			47
+12		1159			1943
+13		3463			4391
+14		35319			13023
+16		2.5413e+06			970871
+17		8.37503e+06			4.85676e+07
+18		3.94824e+07			2.05811e+07
+19		3.79252e+08			1.38111e+08
+20		2.1694e+09			1.58251e+09
+
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+7		2			2
+9		16			16
+11		136			136
+13		4.1548e+06			3.01851e+06
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		16			16
+5		649			961
+6		5848			1081
+7		24697			7072
+8		201196			52537
+9		929902			343966
+10		7.71392e+06			1.69835e+06
+11		4.02344e+07			3.59448e+06
+12		3.14957e+08			3.12713e+07
+13		1.88458e+09			2.76671e+07
+
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+56		16336			17695
+
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		145			81
+6		11585			18929
+8		906881			660833
+10		7.51805e+07			7.87621e+07
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+5		3			3
+7		19			19
+9		1079			833
+11		5971			4555
+12		58759			3577
+13		321323			935805
+14		1.26867e+06			1.38946e+06
+15		5.93686e+06			430035
+16		2.97079e+07			1.59519e+06
+17		3.05945e+08			1.88152e+08
+18		1.23944e+09			5.25564e+07
