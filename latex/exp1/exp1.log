@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  26 JUL 2015 22:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  6 AUG 2015 18:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1446,99 +1446,99 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 
  [1]
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 16
-5.
+6.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 16
-5.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 16
-5.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 16
-5.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 165.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 166.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 165.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 166.
  [2]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 177.
+               Default added (so using `tbp') on input line 178.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 181.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 182.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 181.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 182.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 181.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 182.
 
-Overfull \hbox (51.96236pt too wide) in paragraph at lines 181--209
+Overfull \hbox (51.96236pt too wide) in paragraph at lines 182--210
 [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 214.
+               Default added (so using `tbp') on input line 215.
 
 
-Overfull \hbox (1.12138pt too wide) in paragraph at lines 218--224
+Overfull \hbox (1.12138pt too wide) in paragraph at lines 219--225
 [][] 
  []
 
 [3]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 230.
+               Default added (so using `tbp') on input line 231.
 
 
-Overfull \hbox (50.76228pt too wide) in paragraph at lines 234--262
+Overfull \hbox (50.76228pt too wide) in paragraph at lines 235--263
 [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 266.
+               Default added (so using `tbp') on input line 267.
 
 [4]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 281.
+               Default added (so using `tbp') on input line 282.
 
 
-Overfull \hbox (54.56221pt too wide) in paragraph at lines 285--313
+Overfull \hbox (54.56221pt too wide) in paragraph at lines 286--314
 [][] 
  []
 
 [5]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 319.
+               Default added (so using `tbp') on input line 320.
 
 
-Overfull \hbox (50.76228pt too wide) in paragraph at lines 323--351
+Overfull \hbox (50.76228pt too wide) in paragraph at lines 324--352
 [][] 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 361.
+               Default added (so using `tbp') on input line 362.
 
 [7] (./exp1.bbl)
 \Changes@OutFile=\write6
@@ -1546,10 +1546,10 @@ LaTeX Warning: No positions in optional float specifier.
 
  [8] (./exp1.aux) ) 
 Here is how much of TeX's memory you used:
- 17443 strings out of 493104
- 315046 string characters out of 6136932
- 410638 words of memory out of 5000000
- 20431 multiletter control sequences out of 15000+600000
+ 17450 strings out of 493104
+ 315173 string characters out of 6136932
+ 410711 words of memory out of 5000000
+ 20438 multiletter control sequences out of 15000+600000
  43612 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,9n,54p,918b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1560,7 +1560,7 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on exp1.pdf (9 pages, 124725 bytes).
+Output written on exp1.pdf (9 pages, 125433 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream
