@@ -98,10 +98,37 @@ void create_report1(string domain) {
 
 	plot.close();
 
-
+	//find the average	
+	double sum_x = 0;
 	for (int i = 0; i < axix_x.size(); i++) {
 		cout<<axix_x.at(i)<<"  "<<axix_y.at(i)<<"\n";
+		sum_x += axix_x.at(i);
 	}
+	double average = sum_x/axix_x.size();
+	cout<<"average = "<<average<<"\n";
+
+	//fill the new axix_x and axix_y
+	vector<double> new_axix_x, new_axix_y;
+
+	for (int i = 0; i < axix_x.size(); i++) {
+		double x = axix_x.at(i);
+		double y = axix_y.at(i);
+		if (x > average) {
+			new_axix_x.push_back(average);
+		} else {
+			new_axix_x.push_back(x);
+		}
+		new_axix_y.push_back(y);
+	}
+
+	cout<<"axix_x.size() = "<<axix_x.size()<<"\n";
+	cout<<"new_axix_x.size() = "<<new_axix_x.size()<<"\n";
+	for (int i = 0; i < new_axix_x.size(); i++) {
+		double x1 = new_axix_x.at(i);
+		double y1 = new_axix_y.at(i); 
+		outputFile<<setprecision(2)<<fixed<<"\t"<<x1<<"\t\t"<<y1<<"\n";
+	}
+	outputFile.close();
 }
 
 void create_report() {
