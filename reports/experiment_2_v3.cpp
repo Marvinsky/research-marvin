@@ -738,8 +738,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
         					//change this if needed
         					int deno = 2;//axix_x.size() * 4;
 
-        					double average_x = 50;//getMaxElement(axix_x)/deno;            //sum_x/deno;
-        					double average_y = 50;//getMaxElement(axix_y)/deno;            //sum_y/deno;
+        					double average_x = 20;//getMaxElement(axix_x)/deno;            //sum_x/deno;
+        					double average_y = 20;//getMaxElement(axix_y)/deno;            //sum_y/deno;
         					cout<<"average_x = "<<average_x<<"\n";
         					cout<<"average_y = "<<average_y<<"\n";
 
