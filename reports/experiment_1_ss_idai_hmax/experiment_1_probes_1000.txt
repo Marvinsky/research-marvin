@@ -2,24 +2,24 @@
 
 Domain                             ida*      ida* time       ss error        ss time              n
 
-blocks                      3.31534e+08        35245.9       0.310655        126.331             35
-barman-opt11-strips         9.36615e+07        63773.6       0.732119        345.247             20
-elevators-opt08-strips      1.83448e+07        95262.5        2.62136        22648.9             30
-elevators-opt11-strips      1.90363e+07        93766.4        2.60875        19588.3             20
-floortile-opt11-strips      4.57834e+08        58795.8        2.03681         103.92              2
-nomystery-opt11-strips       7.7804e+07        38593.8       0.299094        430.741             20
+blocks                      2.85103e+07        3030.97      0.0267148        10.8639             35
+barman-opt11-strips         8.83599e+06        6016.38      0.0690678        32.5705             20
+elevators-opt08-strips           923397        4795.09       0.131948        1140.05             30
+elevators-opt11-strips           966309        4759.72       0.132424        994.331             20
+floortile-opt11-strips      3.05223e+07        3919.72       0.135788          6.928              2
+nomystery-opt11-strips      6.56574e+06        3256.86        0.02524        36.3495             20
 openstacks-opt08-adl                ---            ---            ---            ---            ---
-openstacks-opt08-strips          155920        5695.04       0.211506        26387.1             30
-openstacks-opt11-strips          132179        6628.36        0.20658        21311.6             20
+openstacks-opt08-strips         73087.3        2669.55      0.0991433        12368.9             30
+openstacks-opt11-strips         62942.4        3156.36      0.0983713        10148.4             20
 parcprinter-opt11-strips              1              0              0          3.484             20
-parking-opt11-strips        2.30579e+06        34486.1      0.0210821         7360.5             20
-pegsol-opt11-strips              151280         10.998      0.0182324          8.129             20
-scanalyzer-opt11-strips     5.45018e+07        31737.7        0.13379        20018.2             20
-sokoban-opt08-strips        8.77103e+06        11173.6       0.162786        706.235             30
-sokoban-opt11-strips        1.20063e+07        15140.8       0.193721        856.529             20
-tidybot-opt11-strips        4.37806e+06          55476       0.129675          27883             20
-transport-opt08-strips      6.76065e+07        44253.8        6.03381          10942             27
-transport-opt11-strips       1.4334e+08         123154        8.07361        3244.67             20
-visitall-opt11-strips       8.27527e+08        43160.6      0.0534831         67.264             20
-woodworking-opt08-strips    6.17172e+07        60014.5         1.9274        2084.23             30
-woodworking-opt11-strips    7.70861e+07        74171.4        2.62075        1962.28             20
+parking-opt11-strips             374925         5607.5     0.00342799        1196.83             20
+pegsol-opt11-strips             68763.7        4.99909     0.00828744          3.695             20
+scanalyzer-opt11-strips     8.25785e+06        4808.75      0.0202712        3033.06             20
+sokoban-opt08-strips        2.65789e+06        3385.95       0.049329        214.011             30
+sokoban-opt11-strips        3.11853e+06        3932.69      0.0503171        222.475             20
+tidybot-opt11-strips             431336        5465.62      0.0127758         2747.1             20
+transport-opt08-strips      1.46264e+06        957.415       0.130539        236.725             27
+transport-opt11-strips      2.62288e+06        2253.51       0.147733        59.3717             20
+visitall-opt11-strips       7.10324e+07        3704.78     0.00459082        5.77373             20
+woodworking-opt08-strips    4.17008e+06        4055.03        0.13023        140.826             30
+woodworking-opt11-strips    5.13907e+06        4944.76       0.174716        130.819             20

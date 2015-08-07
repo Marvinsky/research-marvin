@@ -206,7 +206,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		//end call
 
 		double ida_exp_average = 0, ida_sum_total = 0, ida_time_average = 0, ida_time_sum_total = 0, ss_error_average = 0, sum_pi = 0, ss_sum_time = 0, ss_time_average = 0;
-		int number_instances = 0;
+		int number_instances = 0, predictions = 0;
 		for (size_t i = 0; i < fileNames2.size(); i++) {
 			string one = fileNames2.at(i);
 			string idabounds = output5.c_str() + one;
@@ -278,6 +278,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				ssbound>>ss_time;
 				ssbound.close();
 				pi = abs(ss_exp - v_exp.at(i))/v_exp.at(i);
+				predictions++;
 				sum_pi += pi;
 				ss_sum_time += ss_time;
 			}
@@ -286,11 +287,12 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			}
 		}
 
+
 		if (number_instances > 0) {
-			ida_exp_average = ida_sum_total/number_instances;
-			ida_time_average = ida_time_sum_total/number_instances;
-			ss_error_average = sum_pi/number_instances;
-			ss_time_average = ss_sum_time/number_instances;
+			ida_exp_average = ida_sum_total/predictions;   //number_instances;
+			ida_time_average = ida_time_sum_total/predictions;  //number_instances;
+			ss_error_average = sum_pi/predictions;  //number_instances;
+			ss_time_average = ss_sum_time/predictions;   //number_instances;
 
 			outputFile<<left<<setw(24)<<domain;
 			outputFile<<right<<setw(15)<<ida_exp_average;
