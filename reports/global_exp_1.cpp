@@ -95,7 +95,12 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
         }
 
 	string resultFile;
-       	resultFile = "/global_exp_1_test.txt";
+	if (heuristics.size() == 1) { 
+       		resultFile = "/global_exp_1_"+heuristics.at(0)+".txt";
+	} else {
+       		resultFile = "/global_exp_1_all_heuristics.txt";
+	}
+
         resultFile = model + resultFile;
         resultFile = "reports/" + resultFile;
         resultFile = "marvin/" + resultFile;

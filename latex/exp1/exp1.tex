@@ -173,44 +173,48 @@ Where \textit{PI} is the set of problem instances, \textit{Pred(s, d)} and \text
 
 The heuristics used for this experiment 1 were: hmax, ipdb, lmcut, and {merge\_and\_shrink}. There are 4 tables, each table shows the results running IDA* and SS using one consistent heuristic. The first column represent the optimal domains for Fast-Downward benchmark. The remaining 10 columns shows the 5 different probes \textit{i.e.,} 1, 10, 100, 1000, and 5000. Each probe has two columns which represent the ss-err and the ss-time. The last two columns are the information for IDA* which represent the average value of the number of nodes expanded and the average time respectively. The text "---" means that IDA* could not solve the problems, consequently there are not results for SS.
 
-  
-\newpage
+
 \begin{table}[]
 \footnotesize\setlength{\tabcolsep}{1.8pt}
 \caption{Experiment 1 - Comparison using hmax heuristic}
-\label{table1}
-\begin{tabular}{l@{\hspace{6pt}} *{12}{c}}
+\label{my-label}
+\begin{tabular}{l@{\hspace{6pt}} *{13}{|r}}
 \hline
-                                                        & \multicolumn{10}{c}{hmax}                                                                                                          & \multicolumn{2}{l}{}      \\ \hline
+	                                                & \multicolumn{11}{c}{hmax}                                                                                                          & \multicolumn{2}{l}{}      \\ \hline
 
-                  & \multicolumn{2}{|c|}{1} & \multicolumn{2}{c|}{10} & \multicolumn{2}{c|}{100} & \multicolumn{2}{c|}{1000} & \multicolumn{2}{c|}{5000}                   \\ \hline
-Domain                  & ss-err  & ss-t  & ss-err  & ss-t  & ss-err  & ss-t  & ss-err  & ss-t  & ss-err  & ss-t  & ida*  & ida-time  \\ \hline
-barman-opt11-strips     & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\ \hline
-blocks                  & 2.648 & 0.003 & 1.113 & 0.178 & 0.498 & 2.266 & 0.159 & 23.300 & 0.087 & 116.332 & 156474000.000 & 10770.900 \\ \hline
-elevators-opt08-strips  & 5.530 & 7.320 & 4.823 & 75.700 & 1.791 & 739.500 & 1.777 & 7571.860 & 1.551 & 37949.900 & 1604640.000 & 4358.740 \\ \hline
-elevators-opt11-strips  & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\ \hline
-floortile-opt11-strips  & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\ \hline
-nomystery-opt11-strips  & 9.204 & 0.043 & 2.465 & 0.363 & 0.735 & 3.707 & 0.369 & 36.847 & 0.130 & 183.897 & 2911010.000 & 289.453 \\ \hline
-openstacks-opt08-adl    & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\ \hline
-openstacks-opt08-strips & 0.192 & 0.668 & 0.141 & 6.636 & 0.128 & 67.228 & 0.141 & 679.132 & 0.146 & 3365.820 & 361346.000 & 786.512 \\ \hline
-openstacks-opt11-strips & 0.000 & 0.860 & 0.000 & 8.300 & 0.000 & 80.400 & 0.000 & 798.200 & 0.000 & 4196.760 & 195.000 & 2.560 \\ \hline
-parcprinter-opt11-strips& 0.000 & 0.003 & 0.000 & 0.035 & 0.000 & 0.392 & 0.000 & 3.344 & 0.000 & 17.286 & 1.000 & 0.000 \\ \hline
-parking-opt11-strips    & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\ \hline
-pegsol-opt11-strips     & 0.285 & 0.011 & 0.107 & 0.084 & 0.028 & 0.852 & 0.027 & 7.933 & 0.007 & 39.331 & 151280.000 & 10.998 \\ \hline
-scanalyzer-opt11-strips & 0.961 & 0.080 & 0.177 & 0.120 & 0.118 & 0.880 & 0.026 & 8.080 & 0.019 & 39.920 & 101.000 & 0.160 \\ \hline
-sokoban-opt08-strips    & 0.114 & 0.035 & 0.308 & 0.351 & 0.286 & 3.518 & 0.023 & 30.990 & 0.015 & 155.113 & 5545.650 & 1.813 \\ \hline
-sokoban-opt11-strips    & 1.795 & 0.035 & 0.138 & 0.329 & 0.123 & 3.323 & 0.025 & 33.011 & 0.015 & 162.382 & 8245.920 & 2.622 \\ \hline
-tidybot-opt11-strips    & 3.754 & 5.727 & 1.582 & 29.967 & 0.608 & 287.373 & 0.269 & 2843.170 & 0.186 & 15769.200 & 2716460.000 & 17900.100 \\ \hline
-transport-opt08-strips  & 0.622 & 0.000 & 0.222 & 0.000 & 0.025 & 0.040 & 0.018 & 0.800 & 0.007 & 4.080 & 38.000 & 0.000 \\ \hline
-transport-opt11-strips  & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\ \hline
-visitall-opt11-strips   & 0.445 & 0.000 & 0.190 & 0.003 & 0.073 & 0.277 & 0.017 & 3.200 & 0.016 & 16.246 & 5363080.000 & 96.117 \\ \hline
-woodworking-opt08-strips& 7.063 & 0.095 & 5.483 & 1.245 & 1.702 & 12.900 & 0.529 & 129.285 & 0.345 & 646.345 & 5190350.000 & 1023.720 \\ \hline
-woodworking-opt11-strips& --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\ \hline
+                  & \multicolumn{2}{c|}{1} & \multicolumn{2}{c|}{10} & \multicolumn{2}{c|}{100} & \multicolumn{2}{c|}{1000} & \multicolumn{2}{c|}{5000}                   \\ \hline  
+Domain                  & error  & time  & error  & time  & error  & time  & error  & time  & error  & time  & ida*  & ida*-time  & n\\ \hline
+barman-opt11            & 0.60 & 0.06 & 0.45 & 0.32 & 0.20 & 3.21 & 0.07 & 32.57 & 0.04 & 214.59 & 8835990.00 & 6016.38 & 20 \\ \hline
+blocks                  & 0.42 & 0.02 & 0.17 & 0.10 & 0.06 & 1.06 & 0.03 & 10.86 & 0.01 & 65.97 & 28510300.00 & 3030.97 & 35 \\ \hline
+elevators-opt08         & 0.67 & 1.61 & 0.48 & 11.13 & 0.21 & 110.38 & 0.13 & 1140.05 & 0.48 & 3012.95 & 923397.00 & 4795.09 & 30 \\ \hline
+elevators-opt11         & 0.84 & 1.40 & 0.42 & 9.85 & 0.23 & 96.37 & 0.13 & 994.33 & 0.14 & 4223.73 & 966309.00 & 4759.72 & 20 \\ \hline
+floortile-opt11         & 2.02 & 0.01 & 0.62 & 0.07 & 0.40 & 0.69 & 0.14 & 6.93 & 0.11 & 36.60 & 30522300.00 & 3919.72 & 2 \\ \hline
+nomystery-opt11         & 0.53 & 0.07 & 0.26 & 0.38 & 0.07 & 3.63 & 0.03 & 36.35 & 0.01 & 181.03 & 6565740.00 & 3256.86 & 20 \\ \hline
+openstacks-adl          & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\ \hline
+openstacks-opt08        & 0.58 & 82.20 & 0.04 & 800.37 & 0.10 & 1260.88 & 0.10 & 12368.90 & 0.22 & 9594.93 & 73087.30 & 2669.55 & 30 \\ \hline
+openstacks-opt11        & 0.03 & 94.79 & 0.03 & 774.86 & 0.10 & 991.57 & 0.10 & 10148.40 & 0.24 & 8779.80 & 62942.40 & 3156.36 & 20 \\ \hline
+parcprinter-opt11       & 0.00 & 0.01 & 0.00 & 0.04 & 0.00 & 0.35 & 0.00 & 3.48 & 0.00 & 17.29 & 1.00 & 0.00 & 20 \\ \hline
+parking-opt11           & 0.17 & 1.79 & 0.04 & 11.36 & 0.01 & 114.28 & 0.00 & 1196.83 & 0.00 & 5835.03 & 374925.00 & 5607.50 & 20 \\ \hline
+pegsol-opt11            & 0.17 & 0.01 & 0.04 & 0.04 & 0.02 & 0.37 & 0.01 & 3.69 & 0.00 & 17.88 & 68763.70 & 5.00 & 20 \\ \hline
+scanalyzer-opt11        & 0.43 & 3.13 & 0.25 & 28.79 & 18.63 & 273.74 & 0.02 & 3033.06 & 0.04 & 10021.00 & 8257850.00 & 4808.75 & 20 \\ \hline
+sokoban-opt08           & 0.35 & 0.27 & 0.22 & 1.95 & 0.09 & 20.24 & 0.05 & 214.01 & 0.03 & 965.40 & 2657890.00 & 3385.95 & 30 \\ \hline
+sokoban-opt11           & 0.41 & 0.31 & 0.26 & 2.00 & 0.11 & 21.42 & 0.05 & 222.47 & 0.04 & 1056.61 & 3118530.00 & 3932.69 & 20 \\ \hline
+tidybot-opt11           & 300.86 & 4.40 & 1072.40 & 26.48 & 5.88 & 238.76 & 0.01 & 2747.10 & 0.04 & 11572.90 & 431336.00 & 5465.62 & 20 \\ \hline
+transport-opt08         & 0.55 & 0.33 & 0.36 & 2.57 & 0.27 & 23.11 & 0.13 & 236.72 & 0.10 & 1363.04 & 1462640.00 & 957.41 & 27 \\ \hline
+transport-opt11         & 0.63 & 0.09 & 0.54 & 0.61 & 0.24 & 5.89 & 0.15 & 59.37 & 0.11 & 290.31 & 2622880.00 & 2253.51 & 20 \\ \hline
+visitall-opt11          & 0.12 & 0.00 & 0.04 & 0.05 & 0.01 & 0.56 & 0.00 & 5.77 & 0.00 & 28.07 & 71032400.00 & 3704.78 & 20 \\ \hline
+woodworking-opt08       & 0.89 & 0.16 & 0.57 & 1.44 & 0.35 & 13.94 & 0.13 & 140.83 & 0.07 & 685.86 & 4170080.00 & 4055.03 & 30 \\ \hline
+woodworking-opt08       & 1.28 & 0.15 & 0.69 & 1.33 & 0.27 & 13.21 & 0.17 & 130.82 & 0.07 & 664.08 & 5139070.00 & 4944.76 & 20 \\ \hline
 \end{tabular}
 \end{table}
 
+
 In the Table \ref{table1} we can see that there are seven domains which IDA* could not solve any instance in 24 hours. The ss-err decrease for each domain according the number of probes increases. The domains that have the perfect score are: openstacks-opt11-strips, parcprinter-opt11-strips. 
 
+
+
+
+\iffalse
 
 \begin{table}[]
 \footnotesize\setlength{\tabcolsep}{2.0pt}
@@ -393,7 +397,7 @@ woodworking-opt08       & --- & --- & --- & --- & --- & --- & --- & --- & --- & 
 \end{tabular}
 \end{table}
 
-
+\fi
 
 
 \newpage
