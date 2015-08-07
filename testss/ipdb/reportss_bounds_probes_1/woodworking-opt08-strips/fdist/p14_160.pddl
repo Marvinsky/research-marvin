@@ -1,13 +1,11 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/woodworking-opt08-strips/fdist/p11_110.pddl
-predictionSS: 2
-ss_timer: -4.26742e-16
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/woodworking-opt08-strips/fdist/p14_160.pddl
+predictionSS: 0
+ss_timer: 0.02
 g:0
-size: 1
-	f: 110	q: 1
+size: 0
 
 g:1
-size: 1
-	f: 110	q: 1
+size: 0
 
 g:2
 size: 0
@@ -334,5 +332,155 @@ g:109
 size: 0
 
 g:110
+size: 0
+
+g:111
+size: 0
+
+g:112
+size: 0
+
+g:113
+size: 0
+
+g:114
+size: 0
+
+g:115
+size: 0
+
+g:116
+size: 0
+
+g:117
+size: 0
+
+g:118
+size: 0
+
+g:119
+size: 0
+
+g:120
+size: 0
+
+g:121
+size: 0
+
+g:122
+size: 0
+
+g:123
+size: 0
+
+g:124
+size: 0
+
+g:125
+size: 0
+
+g:126
+size: 0
+
+g:127
+size: 0
+
+g:128
+size: 0
+
+g:129
+size: 0
+
+g:130
+size: 0
+
+g:131
+size: 0
+
+g:132
+size: 0
+
+g:133
+size: 0
+
+g:134
+size: 0
+
+g:135
+size: 0
+
+g:136
+size: 0
+
+g:137
+size: 0
+
+g:138
+size: 0
+
+g:139
+size: 0
+
+g:140
+size: 0
+
+g:141
+size: 0
+
+g:142
+size: 0
+
+g:143
+size: 0
+
+g:144
+size: 0
+
+g:145
+size: 0
+
+g:146
+size: 0
+
+g:147
+size: 0
+
+g:148
+size: 0
+
+g:149
+size: 0
+
+g:150
+size: 0
+
+g:151
+size: 0
+
+g:152
+size: 0
+
+g:153
+size: 0
+
+g:154
+size: 0
+
+g:155
+size: 0
+
+g:156
+size: 0
+
+g:157
+size: 0
+
+g:158
+size: 0
+
+g:159
+size: 0
+
+g:160
 size: 0
 

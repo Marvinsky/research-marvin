@@ -1,43 +1,39 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/woodworking-opt08-strips/fdist/p11_130.pddl
-predictionSS: 915
-ss_timer: -3.55618e-16
+predictionSS: 685
+ss_timer: 0.02
 g:0
 size: 1
 	f: 110	q: 1
 
 g:1
 size: 2
-	f: 120	q: 2
+	f: 110	q: 2
 	f: 130	q: 2
 
 g:2
 size: 2
-	f: 120	q: 6
-	f: 130	q: 4
+	f: 120	q: 8
+	f: 130	q: 10
 
 g:3
-size: 2
-	f: 120	q: 6
-	f: 130	q: 30
+size: 1
+	f: 130	q: 32
 
 g:4
-size: 3
-	f: 120	q: 6
-	f: 125	q: 12
-	f: 130	q: 78
+size: 1
+	f: 130	q: 70
 
 g:5
-size: 2
-	f: 125	q: 24
-	f: 130	q: 184
+size: 1
+	f: 130	q: 136
 
 g:6
 size: 1
-	f: 130	q: 304
+	f: 130	q: 216
 
 g:7
 size: 1
-	f: 130	q: 256
+	f: 130	q: 208
 
 g:8
 size: 0

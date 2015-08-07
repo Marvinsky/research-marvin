@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/woodworking-opt08-strips/fdist/p11_120.pddl
 predictionSS: 29
-ss_timer: -3.55618e-16
+ss_timer: 7.11237e-17
 g:0
 size: 1
 	f: 110	q: 1

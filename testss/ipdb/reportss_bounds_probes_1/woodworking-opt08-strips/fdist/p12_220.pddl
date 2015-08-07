@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/woodworking-opt08-strips/fdist/p12_220.pddl
-predictionSS: 13901
+predictionSS: 37889
 ss_timer: 0.02
 g:0
 size: 1
@@ -16,48 +16,50 @@ size: 2
 	f: 215	q: 6
 
 g:3
-size: 3
+size: 2
 	f: 205	q: 12
-	f: 215	q: 6
-	f: 220	q: 6
+	f: 220	q: 12
 
 g:4
-size: 3
-	f: 205	q: 33
-	f: 210	q: 24
-	f: 220	q: 30
+size: 2
+	f: 205	q: 60
+	f: 220	q: 18
 
 g:5
-size: 3
-	f: 205	q: 33
-	f: 210	q: 216
-	f: 220	q: 78
+size: 4
+	f: 205	q: 60
+	f: 210	q: 147
+	f: 215	q: 72
+	f: 220	q: 210
 
 g:6
-size: 2
-	f: 210	q: 432
-	f: 220	q: 474
+size: 4
+	f: 205	q: 54
+	f: 210	q: 873
+	f: 215	q: 357
+	f: 220	q: 690
 
 g:7
-size: 3
-	f: 210	q: 636
-	f: 215	q: 498
-	f: 220	q: 1392
+size: 4
+	f: 205	q: 54
+	f: 210	q: 981
+	f: 215	q: 924
+	f: 220	q: 5994
 
 g:8
 size: 3
-	f: 210	q: 558
-	f: 215	q: 1188
-	f: 220	q: 2196
+	f: 205	q: 324
+	f: 215	q: 10134
+	f: 220	q: 3042
 
 g:9
 size: 2
-	f: 210	q: 2052
-	f: 220	q: 2010
+	f: 210	q: 1896
+	f: 220	q: 4458
 
 g:10
 size: 1
-	f: 220	q: 2010
+	f: 220	q: 7500
 
 g:11
 size: 0
