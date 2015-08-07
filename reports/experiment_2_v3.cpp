@@ -244,8 +244,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		sufix1 = algorithm1;
 	}
 	string sufix2 = algorithm2;
-	string model = "experiment_2_"+sufix1 + "_" + sufix2 + "_" + heuristic + "_v3_3";
-	string model_global = "global_exp_2_" + sufix1 + "_" + sufix2 + "_v3_3";
+	string model = "experiment_2_"+sufix1 + "_" + sufix2 + "_" + heuristic + "_v3_4";
+	string model_global = "global_exp_2_" + sufix1 + "_" + sufix2 + "_v3_4";
 
 	string  domainReporte = "mkdir /home/marvin/marvin/reports/"+model;	
 	string  domainReporte2 = "mkdir /home/marvin/marvin/reports/"+model_global;
@@ -712,13 +712,68 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 						//plot_info without sort
 						typedef vector<pair<double, double> > vector_plot;
+
+						//implement average_info
+						vector<double> axix_x, axix_y;
+
 						for (vector_plot::const_iterator posplot = plot_info.begin();
 							posplot != plot_info.end(); ++posplot) {
 							double x1 = posplot->first; //ss
 							double y1 = posplot->second; //astar
-							outputFile2<<setprecision(2)<<fixed<<"\t"<<x1<<"\t\t"<<y1<<"\n";
+							axix_x.push_back(x1);
+							axix_y.push_back(y1);
+							//outputFile2<<setprecision(2)<<fixed<<"\t"<<x1<<"\t\t"<<y1<<"\n";
 						}
 						//outputFile2.close();
+
+
+						//find the average      
+        					double sum_x = 0, sum_y = 0;
+        					for (int i = 0; i < axix_x.size(); i++) {
+               						//cout<<axix_x.at(i)<<"  "<<axix_y.at(i)<<"\n";
+                					sum_x += axix_x.at(i);
+                					sum_y += axix_y.at(i);
+        					}
+
+        					//change this if needed
+        					int deno = 2;//axix_x.size() * 4;
+
+        					double average_x = 50;//getMaxElement(axix_x)/deno;            //sum_x/deno;
+        					double average_y = 50;//getMaxElement(axix_y)/deno;            //sum_y/deno;
+        					cout<<"average_x = "<<average_x<<"\n";
+        					cout<<"average_y = "<<average_y<<"\n";
+
+        					//fill the new axix_x and axix_y
+        					vector<double> new_axix_x, new_axix_y;
+
+        					for (int i = 0; i < axix_x.size(); i++) {
+                					double x = axix_x.at(i);
+                					double y = axix_y.at(i);	
+                					if (x > average_x) {
+                        					new_axix_x.push_back(average_x);
+                					} else {
+                        					new_axix_x.push_back(x);
+                					}
+
+                					if (y > average_y) {
+                        					new_axix_y.push_back(average_y);
+                					} else {
+                        					new_axix_y.push_back(y);
+                					}
+        					}
+
+        					cout<<"axix_x.size() = "<<axix_x.size()<<"\n";
+        					cout<<"new_axix_x.size() = "<<new_axix_x.size()<<"\n";
+        					cout<<"axix_y.size() = "<<axix_y.size()<<"\n";
+        					cout<<"new_axix_y.size() = "<<new_axix_y.size()<<"\n";
+						
+						for (int i = 0; i < new_axix_x.size(); i++) {
+                					double x1 = new_axix_x.at(i);
+                					double y1 = new_axix_y.at(i);
+                					outputFile2<<setprecision(2)<<fixed<<"\t"<<x1<<"\t\t"<<y1<<"\n";
+        					}
+						//end of average info
+
 
 						outputFile<<"\nMeasure_2:\n";
 						set<string> no_repeat_h1, no_repeat_h2; 

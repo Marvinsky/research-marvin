@@ -17,6 +17,10 @@
 #include <algorithm>
 #include <set>
 
+#include <limits>
+#include <cstddef>
+
+
 using namespace std;
 
 int getTotalLevels(string interText) {
@@ -41,6 +45,31 @@ int getTotalLevels(string interText) {
         }
         return total_niveles;
 }
+
+
+double getMaxElement(vector<double> v) {
+	double max = 0;
+	for (int i = 0; i < v.size(); i++) {
+		double e = v.at(i);
+		if (max < e) {
+			max = e;
+		}
+	}
+	return max;
+}
+
+double getMinElement(vector<double> v) {
+	double min = std::numeric_limits<double>::max();
+	cout<<"max = "<<min<<"\n";
+	for (int i = 0; i < v.size(); i++) {
+		double e = v.at(i);
+		if (min > e) {
+			min = e;
+		}
+	}
+	return min;
+}
+
 
 void create_report1(string domain) {
 
@@ -99,13 +128,20 @@ void create_report1(string domain) {
 	plot.close();
 
 	//find the average	
-	double sum_x = 0;
+	double sum_x = 0, sum_y = 0;
 	for (int i = 0; i < axix_x.size(); i++) {
 		cout<<axix_x.at(i)<<"  "<<axix_y.at(i)<<"\n";
 		sum_x += axix_x.at(i);
+		sum_y += axix_y.at(i);
 	}
-	double average = sum_x/axix_x.size();
-	cout<<"average = "<<average<<"\n";
+
+	//change this if needed
+	int deno = 2;//axix_x.size() * 4;
+
+	double average_x = 50;//getMaxElement(axix_x)/deno;            //sum_x/deno;
+	double average_y = 50;//getMaxElement(axix_y)/deno;            //sum_y/deno;
+	cout<<"average_x = "<<average_x<<"\n";
+	cout<<"average_y = "<<average_y<<"\n";
 
 	//fill the new axix_x and axix_y
 	vector<double> new_axix_x, new_axix_y;
@@ -113,16 +149,23 @@ void create_report1(string domain) {
 	for (int i = 0; i < axix_x.size(); i++) {
 		double x = axix_x.at(i);
 		double y = axix_y.at(i);
-		if (x > average) {
-			new_axix_x.push_back(average);
+		if (x > average_x) {
+			new_axix_x.push_back(average_x);
 		} else {
 			new_axix_x.push_back(x);
 		}
-		new_axix_y.push_back(y);
+
+		if (y > average_y) {
+			new_axix_y.push_back(average_y);
+		} else {
+			new_axix_y.push_back(y);
+		}
 	}
 
 	cout<<"axix_x.size() = "<<axix_x.size()<<"\n";
 	cout<<"new_axix_x.size() = "<<new_axix_x.size()<<"\n";
+	cout<<"axix_y.size() = "<<axix_y.size()<<"\n";
+	cout<<"new_axix_y.size() = "<<new_axix_y.size()<<"\n";
 	for (int i = 0; i < new_axix_x.size(); i++) {
 		double x1 = new_axix_x.at(i);
 		double y1 = new_axix_y.at(i); 
