@@ -4,10 +4,10 @@ Domain                             ida*      ida* time       ss error        ss 
 
 blocks                      3.33961e+09        21588.7        3559.92     0.00114286             35
 barman-opt11-strips         1.68439e+10         224406        10.9877           0.04              5
-elevators-opt08-strips       7.3668e+07        47547.2          9.457        3.23188             32
+elevators-opt08-strips        7.525e+07        50257.3        9.15413        3.44733             30
 elevators-opt11-strips      9.62041e+07          60303        10.2727            3.5             20
 floortile-opt11-strips      1.64671e+10         179411        12.4628          0.052              5
-nomystery-opt11-strips        9.802e+08        7817.89        4.12212    0.000952381             21
+nomystery-opt11-strips      1.02921e+09         8208.7        4.12823          0.001             20
 openstacks-opt08-adl                ---            ---            ---            ---            ---
 openstacks-opt08-strips          860377        8489.33       0.246865        8.73533             30
 openstacks-opt11-strips     1.18886e+06        12567.2       0.244552           9.03             20
@@ -21,5 +21,5 @@ tidybot-opt11-strips         1.6478e+08        59908.1        6.47142          0
 transport-opt08-strips      9.50438e+09         188616        68.1866      0.0846667             30
 transport-opt11-strips       1.9341e+10         150369        41.0311          0.047             20
 visitall-opt11-strips       9.86422e+08         4601.9         3.2907     0.00266667             15
-woodworking-opt08-strips    2.72058e+07        15319.9        3.97274           0.01             30
+woodworking-opt08-strips    2.72058e+07        15319.9        3.92718     0.00933333             30
 woodworking-opt11-strips    4.07744e+07        9137.81        4.67871          0.006             20
