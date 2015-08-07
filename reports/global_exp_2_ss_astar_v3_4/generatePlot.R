@@ -60,7 +60,8 @@ for (m in 1:21) {
     plot(x, y, xlim=range, ylim=range, col.axis = "sky blue", col.lab = "thistle", pch = 4, col = "blue")
     
     #model <- lm(y ~ x)
-    abline(a = 0, b = 1)
+    abline(a = 0, b = 1)  # y = x
+    abline(h = 0, v = 50) # x = 50
     
     title <- "SS vs A* "
     problem <- s3
