@@ -1,0 +1,20 @@
+instance_name: p01_F_11.csv
+instance_name: p02_F_14.csv
+instance_name: p03_F_15.csv
+instance_name: p04_F_19.csv
+instance_name: p11_F_12.csv
+instance_name: p12_F_14.csv
+instance_name: p13_F_15.csv
+info[9][0] == 0
+info[9][1] == 0
+info[9][2] == 0
+info[9][3] == 0
+info[9][4] == 0
+info[9][5] == 0
+info[9][6] == 0
+info[9][7] == 0
+info[9][8] == 0
+info[9][10] == 0
+info[9][11] == 0
+instance_name: p14_F_19.csv
+instance_name: p17_F_30.csv

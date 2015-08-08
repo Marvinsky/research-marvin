@@ -1,0 +1,7 @@
+instance_name: p01_F_170.csv
+instance_name: p02_F_185.csv
+instance_name: p11_F_130.csv
+instance_name: p12_F_225.csv
+instance_name: p21_F_95.csv
+instance_name: p22_F_185.csv
+instance_name: p23_F_195.csv

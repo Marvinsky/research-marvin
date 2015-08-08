@@ -1,0 +1,9 @@
+instance_name: problem02-full_F_3.csv
+instance_name: problem02-half_F_1.csv
+instance_name: problem03-full_F_8.csv
+instance_name: problem03-half_F_6.csv
+instance_name: problem04-full_F_15.csv
+instance_name: problem04-half_F_11.csv
+instance_name: problem05-full_F_24.csv
+instance_name: problem05-half_F_18.csv
+instance_name: problem06-half_F_23.csv

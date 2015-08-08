@@ -1,0 +1,26 @@
+instance_name: p01_F_367824.csv
+instance_name: p02_F_438047.csv
+info[1][0] == 0
+info[2][0] == 0
+info[3][0] == 0
+info[4][0] == 0
+info[5][0] == 0
+info[6][0] == 0
+info[7][0] == 0
+info[8][0] == 0
+info[9][0] == 0
+info[10][0] == 0
+info[11][0] == 0
+instance_name: p03_F_426587.csv
+info[1][0] == 0
+info[2][0] == 0
+info[3][0] == 0
+info[4][0] == 0
+info[5][0] == 0
+info[7][0] == 0
+info[8][0] == 0
+info[9][0] == 0
+info[10][0] == 0
+info[11][0] == 0
+instance_name: p05_F_511235.csv
+instance_name: p08_F_735648.csv
