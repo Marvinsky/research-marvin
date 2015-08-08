@@ -449,12 +449,12 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 					set_ida_info = true;
 				} else {
 					if (set_ida_info) {
-						cout<<right<<setw(19)<<fixed<<setprecision(3)<<d;	
-						outputFile<<right<<setw(19)<<fixed<<setprecision(3)<<d;
+						cout<<right<<setw(19)<<fixed<<setprecision(2)<<d; //" "<<d;	
+						outputFile<<right<<setw(19)<<fixed<<setprecision(2)<<d; //" "<<d;
 						set_ida_info = false;
 					} else {
-						cout<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;	
-						outputFile<<right<<setw(weight_fixed)<<fixed<<setprecision(3)<<d;
+						cout<<right<<setw(weight_fixed)<<fixed<<setprecision(2)<<d; //" "<<d;
+						outputFile<<right<<setw(weight_fixed)<<fixed<<setprecision(2)<<d; //" "<<d;
 					}
 				}
 			}

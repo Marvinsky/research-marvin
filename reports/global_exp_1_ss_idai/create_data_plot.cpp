@@ -10,12 +10,13 @@
 using namespace std;
 
 void create_report1(string heuristic) {
-	string dir = "/home/marvin/marvin/reports/global_exp_1_ss_idai/global_exp_"+ heuristic +".txt";
+	string dir = "/home/marvin/marvin/reports/global_exp_1_ss_idai/global_exp_1_"+ heuristic +".txt";
+	cout<<"dir = "<<dir<<"\n";
 	ifstream ofile(dir.c_str());
 	string str;
 
 	
-	for (int i = 0; i < 25; i++) {
+	for (int i = 0; i < 26; i++) {
 		ofile>>str;
 		//cout<<"str = "<<str<<"\n";
 	}
@@ -71,7 +72,7 @@ void create_report1(string heuristic) {
 	m_all_v.insert(pair<int, vector<string> >(100, v_err_100));
 	m_all_v.insert(pair<int, vector<string> >(1000, v_err_1000));
 	m_all_v.insert(pair<int, vector<string> >(5000, v_err_5000));
-	
+
 
 	//print individual files - probes
 	/*vector<string> v_dummy = v_err_1;  //set te vector

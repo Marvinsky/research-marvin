@@ -1,5 +1,2 @@
-4
+1
 hmax
-ipdb
-lmcut
-merge_and_shrink
