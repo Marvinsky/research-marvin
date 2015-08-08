@@ -296,6 +296,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 		ofstream outputFile;
 		outputFile.open(resultFile.c_str(), ios::out);
+		//Take into account that the experiment two was run by ss using 1000 probes
 		outputFile<<"Experiment 2: "<<domain<<" using "<<heuristic<<" heuristic with 1000 probes\n\n";
 		
 		//print each file
@@ -738,8 +739,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
         					//change this if needed
         					int deno = 2;//axix_x.size() * 4;
 
-        					double average_x = 10;//getMaxElement(axix_x)/deno;            //sum_x/deno;
-        					double average_y = 10;//getMaxElement(axix_y)/deno;            //sum_y/deno;
+        					double average_x = 2;//getMaxElement(axix_x)/deno;            //sum_x/deno;
+        					double average_y = 2;//getMaxElement(axix_y)/deno;            //sum_y/deno;
         					cout<<"average_x = "<<average_x<<"\n";
         					cout<<"average_y = "<<average_y<<"\n";
 

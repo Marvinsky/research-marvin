@@ -61,7 +61,7 @@ for (m in 1:21) {
     
     #model <- lm(y ~ x)
     abline(a = 0, b = 1)  # y = x
-    abline(v = 10, col = "gray60") # x = 10
+    abline(v = 2, col = "gray60") # x = 2
     
     title <- "SS vs A* "
     problem <- s3
