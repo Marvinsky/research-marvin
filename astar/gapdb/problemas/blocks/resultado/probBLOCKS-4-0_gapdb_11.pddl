@@ -7,44 +7,12 @@ Variables: 9
 Facts: 30
 Bytes per state: 4
 done initalizing global data [t=0.00s]
-args[12]:astar(min([gapdb(mp=0.9000000,size=2000000,disjoint=true)]))
-GA type:int=true)]))
-args[12]:astar(min([gapdb(mp=0.9000000,size=2000000,disjoint=true)]))
-GA type:int=true)]))
-use_saved_pdbs = 1
-No patterns stored,calling load_GA_Patterns_from_file
-problem_name_mod = dat/blocks/probBLOCKS-4-0.dat
-Calling load_GA_Patterns_from_file
-log_file:dat/blocks/probBLOCKS-4-0.dat,g_plan_filename2:probBLOCKS-4-0.pddl:
-is_open true
-line:probBLOCKS-4-0.pddl:returning best heuristic(GAPDB)[,0,]:[0,1,2,3,4,5,6,7,8]-,mp:,1.0000000,size:,2000000,disjoint_patterns:,0-best_fitness:5.15255,,initial value:6,GAPDB generation time:0.02
-inside the line
-line:probBLOCKS-4-0.pddl:returning best heuristic(GAPDB)[,1,]:[1,2,3,5,6,7,8]-,mp:,0.4000000,size:,2000000,disjoint_patterns:,1-best_fitness:6.0685,,initial value:6,GAPDB generation time:0.04
-inside the line
-line:probBLOCKS-4-0.pddl:returning best heuristic(GAPDB)[,2,]:[2,3,4,5,6,7,8]-,mp:,0.2000000,size:,2000000,disjoint_patterns:,0-best_fitness:6.109,,initial value:6,GAPDB generation time:0.04
-inside the line
-line:probBLOCKS-4-0.pddl:returning best heuristic(GAPDB)[,3,]:[1,2,3,4,6,7,8]-,mp:,0.3000000,size:,2000000,disjoint_patterns:,1-best_fitness:5.851,,initial value:6,GAPDB generation time:0.04
-inside the line
-line:probBLOCKS-4-0.pddl:returning best heuristic(GAPDB)[,4,]:[1,2,5,6,7,8]-,mp:,0.9000000,size:,2000000,disjoint_patterns:,1-best_fitness:5.317,,initial value:6,GAPDB generation time:0.02
-inside the line
-line:probBLOCKS-4-0.pddl:returning best heuristic(GAPDB)[,5,]:[1,2,3,4,5,6,7,8]-,mp:,0.7000000,size:,2000000,disjoint_patterns:,0-best_fitness:6.48725,,initial value:6,GAPDB generation time:0.02
-inside the line
-line:probBLOCKS-4-0.pddl:returning best heuristic(GAPDB)[,6,]:[2,3,4,5,6,7,8]-,mp:,0.6000000,size:,2000000,disjoint_patterns:,0-best_fitness:6.109,,initial value:6,GAPDB generation time:0.02
-inside the line
-line:probBLOCKS-4-0.pddl:returning best heuristic(GAPDB)[,7,]:[1,2,5,6,7,8]-,mp:,0.8000000,size:,2000000,disjoint_patterns:,1-best_fitness:5.317,,initial value:6,GAPDB generation time:0.02
-inside the line
-line:probBLOCKS-4-0.pddl:returning best heuristic(GAPDB)[,8,]:[1,4,5,6,7,8]-,mp:,0.1000000,size:,2000000,disjoint_patterns:,1-best_fitness:5.058,,initial value:6,GAPDB generation time:0.04
-inside the line
-line:probBLOCKS-4-0.pddl:returning best heuristic(GAPDB)[,9,]:[1,2,3,5,6,7,8]-,mp:,0.5000000,size:,2000000,disjoint_patterns:,0-best_fitness:6.0685,,initial value:6,GAPDB generation time:0.02
-inside the line
-problem_found among stored GAs:probBLOCKS-4-0.pddl:
-stored_GA_patterns.size:10,time:0.00
-,problem_name_mod:probBLOCKS-4-0.pddl:
-disjoint_patterns:,1
-mutation_rate_string:mp:,0.9000000,
-pdb_max_size_string:size:,2000000,
-stored_GA_patterns.size():10
+args[12]:astar(min([lmcut()]))
+GA type:([lmcut()]))
+args[12]:astar(min([lmcut()]))
+GA type:([lmcut()]))
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+Initializing landmark cut heuristic...
 initial threshold = 6
 generated_by_level = 0
 expanded_by_level = 1
@@ -105,23 +73,23 @@ nodesGeneratedToTheLevel: 101
 f = 6 [125 evaluated, 101 expanded, t=0.00s, 3260 KB]
 Solution found!
 Completely explored state space -- no solution!
-nodes_expanded.size() = 35
-depth = 15
+nodes_expanded.size() = 28
+depth = 13
 F_boundary = 6
 count_level = 2
 dominio = blocks
 tarefa = probBLOCKS-4-0.pddl
 heuristica = gapdb
 Directory created successfully.
-f = 6	q = 12
+f = 6	q = 10
 dominio = blocks
 tarefa = probBLOCKS-4-0.pddl
 heuristica = gapdb
-problem_name_gapdb = probBLOCKS-4-0_gapdb_2.pddl
+problem_name_gapdb = probBLOCKS-4-0_gapdb_11.pddl
 Directory: gapdb created.
 Directory: SSCC created.
 Directory: SSCCFile created.
-name = probBLOCKS-4-0_gapdb_2_F_6.csv
+name = probBLOCKS-4-0_gapdb_11_F_6.csv
 Actual search time: 0.00s [t=0.00s]
 pick-up b (1)
 stack b a (1)

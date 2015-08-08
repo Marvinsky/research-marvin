@@ -1,4 +1,4 @@
 blocks
 domain.pddl
 1
-probBLOCKS-9-0.pddl
+probBLOCKS-4-0.pddl

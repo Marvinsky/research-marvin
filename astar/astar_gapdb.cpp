@@ -209,13 +209,25 @@ map<string, vector<string> > analyzeFile(string output_BC) {
 			size_gapdb,
 			size_gapdb_aux, 
 			wd,
-			wd_aux;
+			wd_aux,
+			heuristic_name_created,
+			name;
 		number_aux = pot[1];
 		size_t t1 = number_aux.find(")");
 		number_h = number_aux.substr(0, t1);
 		//cout<<"number_h = "<<number_h<<"\n";
+	
+		//pot[2] to create the name of the heuristic
+		//cout<<"pot[2] = "<<pot[2]<<"\n";
+		heuristic_name_created = pot[2];
 
-		string name = "gapdb_" + number_h;
+		if (heuristic_name_created == "ipdb") {
+			name = "ipdb_" + number_h;
+		} else if (heuristic_name_created == "lmcut") {
+			name = "lmcut_" + number_h;
+		} else {	
+			name = "gapdb_" + number_h;
+		}
 		
 		mutation_rate_aux = pot[3];
 		size_t t2 = mutation_rate_aux.find(":");
@@ -228,8 +240,8 @@ map<string, vector<string> > analyzeFile(string output_BC) {
 		//cout<<"size_gapdb = "<<size_gapdb<<"\n";
 
 		//without disjoint patterns
-	
 		wd_aux = pot[5];
+		//cout<<"wd_aux = "<<wd_aux<<"\n";
 		size_t t4 = wd_aux.find("out");
 		if (t4 < 100) {
 			wd = "false";
@@ -383,7 +395,13 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			string gapdb_string = heuristic+"(mp=";
 			string s = iter->first;
 			vector<string> info = iter->second;
-			//cout<<"heuristic = "<<s<<"\n";
+			cout<<"heuristic (s) = "<<s<<"\n";
+			//find the number
+			string t = s;
+			size_t found = t.find("_");
+			string t_final = t.substr(found + 1, t.length());
+			//cout<<"t_final = "<<t_final<<"\n";
+
 			bool is_blind_heuristic = false;
 			for (size_t i = 0; i < info.size(); i++) {
 				string parameter = info.at(i);	
@@ -399,12 +417,22 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 					gapdb_string += ",disjoint="+parameter;
 				}
 			}
-			gapdb_string+=")";
+			gapdb_string+=")_" + t_final;
 			//gapdb_string+=",eps=120,colls=5)";
 			//cout<<"\tgapdb_string = "<<gapdb_string<<"\n\n";
 
 			if (is_blind_heuristic) {
-				string heur_blind = "blind()";
+				//Workaround
+				string task2 = s;
+				size_t found_task2 =  task2.find("_");
+				string new_s = task2.substr(0, found_task2);
+	
+				string heur_blind = "blind()_" + t_final;
+				if (new_s == "ipdb") {	
+					heur_blind = "ipdb()_" + t_final;
+				} else if (new_s == "lmcut") {
+					heur_blind = "lmcut()_" + t_final;
+				}
 				v_gapdb_string.push_back(heur_blind);
 			} else {
 				v_gapdb_string.push_back(gapdb_string);
@@ -413,6 +441,16 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 		//end astar_gpdb call the bc from ss
 
 		for (int i = 0; i < v_gapdb_string.size(); i++) {
+			
+			//get the real name
+			string real_heur = v_gapdb_string.at(i);
+			string task = real_heur;
+			size_t found_task = task.find("_");
+			string final_real_heur = task.substr(0, found_task); 
+			cout<<"final_real_heur = "<<final_real_heur<<"\n";
+			//end get real name
+
+
 			//creation of each sh file for the gapdb heuristic
 			string arquivo;
 			string sas;
@@ -439,7 +477,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			sas += Resultado.str();
 			//End creation of each sh file for the gapdb heuristic
 
-			string parameter = v_gapdb_string.at(i);
+			string parameter =  final_real_heur;//v_gapdb_string.at(i);
 			cout<<"parameter_"<<i<<" = "<<parameter<<"\n";
 			string new_problem_name = problema.c_str();
 			string t = new_problem_name;

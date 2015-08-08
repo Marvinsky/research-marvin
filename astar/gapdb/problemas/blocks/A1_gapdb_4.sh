@@ -17,11 +17,11 @@ RESULTS=/home/marvin/marvin/astar/gapdb/problemas/blocks/resultado
 
 cd /home/marvin/fd
 
-python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/blocks/probBLOCKS-9-0.pddl Astarblocks4  blocks probBLOCKS-9-0.pddl  gapdb
+python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/blocks/probBLOCKS-4-0.pddl Astarblocks4  blocks probBLOCKS-4-0.pddl  gapdb
 
 src/preprocess/preprocess < Astarblocks4.sas
 
-src/search/downward-release --F_boundary 30 --use_saved_pdbs --domain_name blocks --problem_name probBLOCKS-9-0.pddl --heuristic_name gapdb --problem_name_gapdb probBLOCKS-9-0_gapdb_3.pddl  --search "astar(min([blind()]))" <  Astarblocks4 > ${RESULTS}/probBLOCKS-9-0_gapdb_3.pddl
+src/search/downward-release --F_boundary 6 --use_saved_pdbs --domain_name blocks --problem_name probBLOCKS-4-0.pddl --heuristic_name gapdb --problem_name_gapdb probBLOCKS-4-0_gapdb_3.pddl  --search "astar(min([gapdb(mp=0.6000000,size=2000000,disjoint=false)]))" <  Astarblocks4 > ${RESULTS}/probBLOCKS-4-0_gapdb_3.pddl
 
 
 

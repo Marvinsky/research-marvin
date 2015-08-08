@@ -7,9 +7,9 @@ Variables: 9
 Facts: 30
 Bytes per state: 4
 done initalizing global data [t=0.00s]
-args[12]:astar(min([gapdb(mp=0.4000000,size=2000000,disjoint=true)]))
+args[12]:astar(min([gapdb(mp=0.8000000,size=2000000,disjoint=true)]))
 GA type:int=true)]))
-args[12]:astar(min([gapdb(mp=0.4000000,size=2000000,disjoint=true)]))
+args[12]:astar(min([gapdb(mp=0.8000000,size=2000000,disjoint=true)]))
 GA type:int=true)]))
 use_saved_pdbs = 1
 No patterns stored,calling load_GA_Patterns_from_file
@@ -41,7 +41,7 @@ problem_found among stored GAs:probBLOCKS-4-0.pddl:
 stored_GA_patterns.size:10,time:0.00
 ,problem_name_mod:probBLOCKS-4-0.pddl:
 disjoint_patterns:,1
-mutation_rate_string:mp:,0.4000000,
+mutation_rate_string:mp:,0.8000000,
 pdb_max_size_string:size:,2000000,
 stored_GA_patterns.size():10
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
@@ -63,49 +63,49 @@ nodesGeneratedByLevel: 1
  time0: 0.00
 nodesGeneratedToTheLevel: 1
 f = 1 [5 evaluated, 1 expanded, t=0.00s, 3260 KB]
-Best heuristic value: 4 [g=2, 9 evaluated, 3 expanded, t=0.00s, 3392 KB]
+Best heuristic value: 4 [g=2, 9 evaluated, 3 expanded, t=0.00s, 3260 KB]
 generated_by_level = 16
 expanded_by_level = 4
 fnivel: 1
 nodesGeneratedByLevel: 4
  time0: 0.00
 nodesGeneratedToTheLevel: 5
-f = 2 [17 evaluated, 5 expanded, t=0.00s, 3392 KB]
-Best heuristic value: 3 [g=3, 24 evaluated, 9 expanded, t=0.00s, 3392 KB]
+f = 2 [17 evaluated, 5 expanded, t=0.00s, 3260 KB]
+Best heuristic value: 3 [g=3, 24 evaluated, 9 expanded, t=0.00s, 3260 KB]
 generated_by_level = 36
 expanded_by_level = 12
 fnivel: 2
 nodesGeneratedByLevel: 12
  time0: 0.00
 nodesGeneratedToTheLevel: 17
-f = 3 [41 evaluated, 17 expanded, t=0.00s, 3392 KB]
-Best heuristic value: 2 [g=4, 54 evaluated, 24 expanded, t=0.00s, 3392 KB]
+f = 3 [41 evaluated, 17 expanded, t=0.00s, 3260 KB]
+Best heuristic value: 2 [g=4, 54 evaluated, 24 expanded, t=0.00s, 3260 KB]
 generated_by_level = 72
 expanded_by_level = 24
 fnivel: 3
 nodesGeneratedByLevel: 24
  time0: 0.00
 nodesGeneratedToTheLevel: 41
-f = 4 [77 evaluated, 41 expanded, t=0.00s, 3392 KB]
-Best heuristic value: 1 [g=5, 84 evaluated, 54 expanded, t=0.00s, 3392 KB]
+f = 4 [77 evaluated, 41 expanded, t=0.00s, 3260 KB]
+Best heuristic value: 1 [g=5, 84 evaluated, 54 expanded, t=0.00s, 3260 KB]
 generated_by_level = 72
 expanded_by_level = 36
 fnivel: 4
 nodesGeneratedByLevel: 36
  time0: 0.00
 nodesGeneratedToTheLevel: 77
-f = 5 [101 evaluated, 77 expanded, t=0.00s, 3392 KB]
-Best heuristic value: 0 [g=6, 108 evaluated, 84 expanded, t=0.00s, 3392 KB]
+f = 5 [101 evaluated, 77 expanded, t=0.00s, 3260 KB]
+Best heuristic value: 0 [g=6, 108 evaluated, 84 expanded, t=0.00s, 3260 KB]
 generated_by_level = 48
 expanded_by_level = 24
 fnivel: 5
 nodesGeneratedByLevel: 24
  time0: 0.00
 nodesGeneratedToTheLevel: 101
-f = 6 [125 evaluated, 101 expanded, t=0.00s, 3392 KB]
+f = 6 [125 evaluated, 101 expanded, t=0.00s, 3260 KB]
 Solution found!
 Completely explored state space -- no solution!
-nodes_expanded.size() = 36
+nodes_expanded.size() = 35
 depth = 15
 F_boundary = 6
 count_level = 2
@@ -113,15 +113,15 @@ dominio = blocks
 tarefa = probBLOCKS-4-0.pddl
 heuristica = gapdb
 Directory created successfully.
-f = 6	q = 7
+f = 6	q = 12
 dominio = blocks
 tarefa = probBLOCKS-4-0.pddl
 heuristica = gapdb
-problem_name_gapdb = probBLOCKS-4-0_gapdb_5.pddl
+problem_name_gapdb = probBLOCKS-4-0_gapdb_8.pddl
 Directory: gapdb created.
 Directory: SSCC created.
 Directory: SSCCFile created.
-name = probBLOCKS-4-0_gapdb_5_F_6.csv
+name = probBLOCKS-4-0_gapdb_8_F_6.csv
 Actual search time: 0.00s [t=0.00s]
 pick-up b (1)
 stack b a (1)
@@ -146,4 +146,4 @@ Number of registered states: 125
 Search time: 0.00s
 Total time: 0.00s
 Solution found.
-Peak memory: 3392 KB
+Peak memory: 3260 KB
