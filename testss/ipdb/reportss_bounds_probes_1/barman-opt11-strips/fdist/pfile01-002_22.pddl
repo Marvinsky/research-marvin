@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/barman-opt11-strips/fdist/pfile01-002_22.pddl
 predictionSS: 365
-ss_timer: -1.42074e-15
+ss_timer: -1.70523e-15
 g:0
 size: 1
 	f: 20	q: 1
