@@ -608,8 +608,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					for (int i = 0; i < total_heuristics2; i++) {
 						fracss[i] = new double[total_heuristics2];
 					}
-					outputFile<<setprecision(2)<<fixed<<"ss:\t\t{";
-					//outputFile<<"ss:\t\t{";
+					//outputFile<<setprecision(2)<<fixed<<"ss:\t\t{";
+					outputFile<<"ss:\t\t{";
 
 					typedef std::vector<std::pair<std::string, double> > vector_type2;
 					int row_count2 = 0;
@@ -770,7 +770,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						for (int i = 0; i < new_axix_x.size(); i++) {
                 					double x1 = new_axix_x.at(i);
                 					double y1 = new_axix_y.at(i);
-                					outputFile2<<setprecision(2)<<fixed<<"\t"<<x1<<"\t\t"<<y1<<"\n";
+                					//outputFile2<<setprecision(2)<<fixed<<"\t"<<x1<<"\t\t"<<y1<<"\n";
+                					outputFile2<<"\t"<<x1<<"\t\t"<<y1<<"\n";
         					}
 						//end of average info
 
