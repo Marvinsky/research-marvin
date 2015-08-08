@@ -608,8 +608,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					for (int i = 0; i < total_heuristics2; i++) {
 						fracss[i] = new double[total_heuristics2];
 					}
-					outputFile<<setprecision(2)<<fixed<<"ss:\t\t{";
-					//outputFile<<"ss:\t\t{";
+					//outputFile<<setprecision(2)<<fixed<<"ss:\t\t{";
+					outputFile<<"ss:\t\t{";
 
 					typedef std::vector<std::pair<std::string, double> > vector_type2;
 					int row_count2 = 0;
