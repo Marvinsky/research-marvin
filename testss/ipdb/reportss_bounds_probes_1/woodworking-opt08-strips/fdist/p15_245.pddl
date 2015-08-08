@@ -1,17 +1,21 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/woodworking-opt08-strips/fdist/p15_245.pddl
-predictionSS: 0
-ss_timer: -2.91323e-13
+predictionSS: 13
+ss_timer: 0.02
 g:0
-size: 0
+size: 1
+	f: 240	q: 1
 
 g:1
-size: 0
+size: 1
+	f: 245	q: 2
 
 g:2
-size: 0
+size: 1
+	f: 245	q: 2
 
 g:3
-size: 0
+size: 1
+	f: 245	q: 8
 
 g:4
 size: 0

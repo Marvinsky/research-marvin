@@ -1,17 +1,21 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/woodworking-opt08-strips/fdist/p15_240.pddl
-predictionSS: 0
-ss_timer: -4.36984e-13
+predictionSS: 7
+ss_timer: -4.54636e-14
 g:0
-size: 0
+size: 1
+	f: 240	q: 1
 
 g:1
-size: 0
+size: 1
+	f: 240	q: 1
 
 g:2
-size: 0
+size: 1
+	f: 240	q: 1
 
 g:3
-size: 0
+size: 1
+	f: 240	q: 4
 
 g:4
 size: 0
