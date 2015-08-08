@@ -25,7 +25,7 @@ p18.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 0		1			1
 1		2			2
-2		2294			----zero_info----
+2		2294			2294
 
 p15.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -189,6 +189,3 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 0		1			1
 1		2			2
 2		406			406
-
-Files that contains zero_info:
-p18.pddl

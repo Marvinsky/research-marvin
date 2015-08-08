@@ -28,7 +28,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 28		15			33
 29		222			27
 30		171904			181
-31		1.0371e+07			----zero_info----
+31		1.0371e+07			6448
 32		9.8026e+07			24979
 33		2.0507e+09			20713
 
@@ -80,7 +80,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p10.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 30		655			315
-31		2415			----zero_info----
+31		2415			4635
 32		77862			425
 33		506007			2.91254e+06
 34		1.06529e+07			925987
@@ -117,7 +117,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 32		82452			2205
 33		487758			20715
 34		1.03747e+07			1.95567e+06
-35		7.77619e+07			----zero_info----
+35		7.77619e+07			851189
 36		1.54938e+09			2.1895e+06
 
 p03.pddl
@@ -167,8 +167,3 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 12		6			10
 13		36			22
 14		1038			46
-
-Files that contains zero_info:
-p10.pddl
-p18.pddl
-p20.pddl
