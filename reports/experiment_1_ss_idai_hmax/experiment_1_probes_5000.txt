@@ -4,20 +4,20 @@ Domain                             ida*      ida* time       ss error        ss 
 
 blocks                      2.85103e+07        3030.97       0.012121        65.9679             35
 barman-opt11-strips         8.83599e+06        6016.38      0.0373262        214.589             20
-elevators-opt08-strips           923397        4795.09       0.484117        3012.95             30
-elevators-opt11-strips           966309        4759.72       0.142817        4223.73             20
+elevators-opt08-strips      1.62824e+06        8455.25      0.0903369        5312.77             30
+elevators-opt11-strips      1.01257e+06        4987.57       0.101782        4425.93             20
 floortile-opt11-strips      3.05223e+07        3919.72       0.110274        36.5967              2
 nomystery-opt11-strips      6.56574e+06        3256.86       0.013457        181.031             20
 openstacks-opt08-adl                ---            ---            ---            ---            ---
-openstacks-opt08-strips         73087.3        2669.55       0.223358        9594.93             30
-openstacks-opt11-strips         62942.4        3156.36       0.241707         8779.8             20
+openstacks-opt08-strips         89953.6         3285.6      0.0441332        11809.1             30
+openstacks-opt11-strips         80108.5        4017.19      0.0348993        11174.3             20
 parcprinter-opt11-strips              1              0              0         17.286             20
 parking-opt11-strips             374925         5607.5     0.00216678        5835.03             20
 pegsol-opt11-strips             68763.7        4.99909     0.00330899        17.8777             20
-scanalyzer-opt11-strips     8.25785e+06        4808.75      0.0365587          10021             20
+scanalyzer-opt11-strips     8.44989e+06        4920.58       0.014153          10254             20
 sokoban-opt08-strips        2.65789e+06        3385.95      0.0289206        965.405             30
 sokoban-opt11-strips        3.11853e+06        3932.69      0.0361622        1056.61             20
-tidybot-opt11-strips             431336        5465.62       0.036898        11572.9             20
+tidybot-opt11-strips             444473        5632.08     0.00756493        11925.4             20
 transport-opt08-strips      1.46264e+06        957.415       0.103191        1363.04             27
 transport-opt11-strips      2.62288e+06        2253.51       0.110901        290.311             20
 visitall-opt11-strips       7.10324e+07        3704.78     0.00196146        28.0659             20

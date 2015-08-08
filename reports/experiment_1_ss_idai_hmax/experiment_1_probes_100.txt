@@ -9,8 +9,8 @@ elevators-opt11-strips           966309        4759.72        0.23337        96.
 floortile-opt11-strips      3.05223e+07        3919.72       0.402532       0.693333              2
 nomystery-opt11-strips      6.56574e+06        3256.86      0.0712425        3.62582             20
 openstacks-opt08-adl                ---            ---            ---            ---            ---
-openstacks-opt08-strips         73087.3        2669.55      0.0973806        1260.88             30
-openstacks-opt11-strips         62942.4        3156.36       0.101764        991.567             20
+openstacks-opt08-strips         77959.8        2847.52      0.0372059        1344.94             30
+openstacks-opt11-strips         67784.2        3399.16       0.032669        1067.84             20
 parcprinter-opt11-strips              1              0              0          0.348             20
 parking-opt11-strips             374925         5607.5      0.0117616        114.278             20
 pegsol-opt11-strips             68763.7        4.99909      0.0165397       0.367273             20

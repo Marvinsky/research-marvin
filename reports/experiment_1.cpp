@@ -16,7 +16,7 @@
 #include <map>
 
 //enhance to read files reportss_bounds_probes_NUM_PROBES
-#define NUM_PROBES 1
+#define NUM_PROBES 5000
 //
 
 using namespace std;
@@ -269,18 +269,20 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				string solution = output.c_str() + fname;
 
 				ifstream ssbound(solution.c_str());
-				string str;
-				double ss_exp = 0, ss_time = 0, pi = 0;
-				ssbound>>str;
-				ssbound>>str;
-				ssbound>>ss_exp;
-				ssbound>>str;
-				ssbound>>ss_time;
-				ssbound.close();
-				pi = abs(ss_exp - v_exp.at(i))/v_exp.at(i);
-				predictions++;
-				sum_pi += pi;
-				ss_sum_time += ss_time;
+				if (!is_empty(ssbound)) { //avoiding zero info
+					string str;
+					double ss_exp = 0, ss_time = 0, pi = 0;
+					ssbound>>str;
+					ssbound>>str;
+					ssbound>>ss_exp;
+					ssbound>>str;
+					ssbound>>ss_time;
+					ssbound.close();
+					pi = abs(ss_exp - v_exp.at(i))/v_exp.at(i);
+					predictions++;
+					sum_pi += pi;
+					ss_sum_time += ss_time;
+				}
 			}
 			if (total_levels > 0) {
 				number_instances++; //at least the instance has found one bound
