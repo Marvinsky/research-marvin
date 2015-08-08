@@ -13,11 +13,11 @@ openstacks-opt08-strips          263381        2598.77      0.0653668        2.6
 openstacks-opt11-strips          360262        3808.23      0.0741067        2.73636             20
 parcprinter-opt11-strips    5.71829e+06        4405.97       0.184717      0.0111111             16
 parking-opt11-strips        4.61683e+07        1621.43       0.466544     0.00514286             20
-pegsol-opt11-strips             28918.6        621.831       0.978197     0.00842105             20
+pegsol-opt11-strips             28918.6        621.831       0.949196      0.0126316             20
 scanalyzer-opt11-strips     2.44702e+08        3087.54       0.286845     0.00290909             13
 sokoban-opt08-strips        1.07432e+08        3404.77        0.65118      0.0108434             30
 sokoban-opt11-strips        1.21849e+08        3699.11       0.944847      0.0104918             20
-tidybot-opt11-strips        1.06654e+07        3877.55       0.409297      0.0373463             20
+tidybot-opt11-strips        1.05968e+07        3852.61       0.406775      0.0373633             20
 transport-opt08-strips      1.43282e+08        2843.46        1.02794     0.00127638             30
 transport-opt11-strips      3.96331e+08        3081.33       0.840802    0.000963115             20
 visitall-opt11-strips       2.34862e+08        1095.69       0.783499    0.000634921             15

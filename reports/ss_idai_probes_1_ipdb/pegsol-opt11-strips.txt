@@ -4,12 +4,12 @@ pegsol-opt11-strips
 
 p14.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-4		32			----zero_info----
-5		10130			----zero_info----
+4		32			226
+5		10130			237
 
 p19.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-6		162			----zero_info----
+6		162			265
 7		8743			11
 
 p18.pddl
@@ -29,47 +29,47 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p13.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-3		4			----zero_info----
+3		4			4
 4		97			2
 5		4471			86
 
 p07.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-3		11			----zero_info----
+3		11			11
 4		211			4
 
 p05.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-5		5			----zero_info----
+5		5			5
 6		51			1
 
 p01.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-2		10			----zero_info----
+2		10			4
 
 p10.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-4		164			----zero_info----
+4		164			735
 5		5801			21
 
 p04.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-4		12			----zero_info----
+4		12			12
 5		638			1
 
 p06.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-2		9			----zero_info----
+2		9			9
 3		231			8
 
 p17.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-5		766			----zero_info----
+5		766			8
 6		116776			907
 
 p20.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-10		13			----zero_info----
+10		13			13
 
 p03.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -78,13 +78,13 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p09.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-3		24			----zero_info----
+3		24			6
 4		1101			4
 
 p08.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-2		2			----zero_info----
-3		25			----zero_info----
+2		2			2
+3		25			44
 
 p16.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -93,26 +93,9 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p11.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-4		1046			----zero_info----
+4		1046			71
 
 p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-3		31			----zero_info----
+3		31			9
 4		1535			10
-
-Files that contains zero_info:
-p01.pddl
-p02.pddl
-p04.pddl
-p05.pddl
-p06.pddl
-p07.pddl
-p08.pddl
-p09.pddl
-p10.pddl
-p11.pddl
-p13.pddl
-p14.pddl
-p17.pddl
-p19.pddl
-p20.pddl

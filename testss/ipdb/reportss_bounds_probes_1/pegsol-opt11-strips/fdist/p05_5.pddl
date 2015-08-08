@@ -1,11 +1,13 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1/pegsol-opt11-strips/fdist/p05_5.pddl
-predictionSS: 0
-ss_timer: 9.09273e-14
+predictionSS: 5
+ss_timer: 3.63598e-14
 g:0
-size: 0
+size: 1
+	f: 5	q: 1
 
 g:1
-size: 0
+size: 1
+	f: 5	q: 4
 
 g:2
 size: 0
