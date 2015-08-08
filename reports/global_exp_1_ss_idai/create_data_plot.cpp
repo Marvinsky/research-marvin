@@ -74,41 +74,44 @@ void create_report1(string heuristic) {
 	m_all_v.insert(pair<int, vector<string> >(5000, v_err_5000));
 
 
-	//print individual files - probes
-	/*vector<string> v_dummy = v_err_1;  //set te vector
-	int n_probes = 1; //set the number of probes
-	stringstream ss;
-	ss<<n_probes;
-	string data_name ="data" + ss.str();
-	cout<<"\n\nPrinting individual file: "<<data_name<<"\n";
+	map<int, vector<string> >::iterator iter0;
+	for (iter0 = m_all_v.begin(); iter0 != m_all_v.end(); iter0++) {
+		int key = iter0->first;
+		cout<<"key = "<<key<<"\n";
+		vector<string> v = iter0->second;
 
-	string result = "/home/marvin/marvin/reports/global_exp_1_ss_idai/data" + ss.str() + ".txt";
+		//print individual files - probes
+		vector<string> v_dummy = v;  //set te vector
+		int n_probes = key; //set the number of probes
+		stringstream ss;
+		ss<<n_probes;
+		string data_name ="data" + ss.str();
+		cout<<"\n\nPrinting individual file: "<<data_name<<"\n";
 
-	cout<<"result = "<<result<<"\n";
+		string result = "/home/marvin/marvin/reports/global_exp_1_ss_idai/" + heuristic + "_data_" + ss.str() + ".txt";
+		cout<<"result = "<<result<<"\n";
+		ofstream outputFile;
+		outputFile.open(result.c_str(), ios::out);
 
-	ofstream outputFile;
-	outputFile.open(result.c_str(), ios::out);
+		for (size_t i = 0; i < v_dummy.size(); i++) {
+			string value = v_dummy.at(i);
+			if (value == "---") {
+				outputFile<<left<<setw(10)<<0;
+				outputFile<<right<<setw(10)<<0<<"\n";
 
-	for (size_t i = 0; i < v_dummy.size(); i++) {
-		string value = v_dummy.at(i);
-		if (value == "---") {
-			outputFile<<left<<setw(10)<<0;
-			outputFile<<right<<setw(10)<<0<<"\n";
+				cout<<left<<setw(10)<<0;
+				cout<<right<<setw(10)<<0<<"\n";
+			} else {
+				outputFile<<left<<setw(10)<<n_probes;
+				outputFile<<right<<setw(10)<<value<<"\n";
 
-			cout<<left<<setw(10)<<0;
-			cout<<right<<setw(10)<<0<<"\n";
-
-		} else {
-			outputFile<<left<<setw(10)<<n_probes;
-			outputFile<<right<<setw(10)<<value<<"\n";
-
-			cout<<left<<setw(10)<<n_probes;
-			cout<<right<<setw(10)<<value<<"\n";
+				cout<<left<<setw(10)<<n_probes;
+				cout<<right<<setw(10)<<value<<"\n";
+			}
 		}
-	}
-	outputFile.close();
-	*/
-
+		outputFile.close();
+	}// end printing individual probe vs error
+	
 	cout<<"\n\nPrinting alldata.txt\n";
 
 	//print one file containing all the information
