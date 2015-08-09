@@ -44,7 +44,7 @@ pfile08-030.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 22		3			3
 23		113			117.82
-24		3367			----zero_info----
+24		3367			3984.11
 25		92930			97883.3
 26		2.46554e+06			2.52736e+06
 27		6.38168e+07			6.89299e+07
@@ -201,6 +201,3 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 17		1.77248e+06			1.79013e+06
 18		2.42049e+07			2.38248e+07
 19		3.26594e+08			3.37341e+08
-
-Files that contains zero_info:
-pfile08-030.pddl
