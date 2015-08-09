@@ -448,6 +448,12 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			size_t found_task = task.find("_");
 			string final_real_heur = task.substr(0, found_task); 
 			cout<<"final_real_heur = "<<final_real_heur<<"\n";
+			
+			string task3 = real_heur;
+			size_t found_task3 = task3.find("_");
+			string final_number_heur = task3.substr(found_task3 + 1, task3.length());
+			cout<<"final_number_heur = "<<final_number_heur<<"\n";
+
 			//end get real name
 
 
@@ -484,10 +490,12 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			size_t found = t.find(".");
 			string new_problem_name_mod = t.substr(0, found);
 			//cout<<"new_problem_name_mod = "<<new_problem_name_mod<<"\n";
-			stringstream number;
-			number<<i;
-			string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + number.str() + ".pddl";
-			//cout<<"prob_name_gapdb = "<<prob_name_gapdb<<"\n";
+			//stringstream number;
+			//number<<i; //this should contains the real number
+			//name that will be used in the backend
+			//string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + number.str() + ".pddl";
+			string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + final_number_heur  + ".pddl";
+			cout<<"prob_name_gapdb = "<<prob_name_gapdb<<"\n";
 
 
 

@@ -21,7 +21,7 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < Astarblocks11.sas
 
-src/search/downward-release --F_boundary 6 --use_saved_pdbs --domain_name blocks --problem_name probBLOCKS-4-0.pddl --heuristic_name gapdb --problem_name_gapdb probBLOCKS-4-0_gapdb_10.pddl  --search "astar(min([ipdb()]))" <  Astarblocks11 > ${RESULTS}/probBLOCKS-4-0_gapdb_10.pddl
+src/search/downward-release --F_boundary 6 --use_saved_pdbs --domain_name blocks --problem_name probBLOCKS-4-0.pddl --heuristic_name gapdb --problem_name_gapdb probBLOCKS-4-0_gapdb_0.pddl  --search "astar(min([ipdb()]))" <  Astarblocks11 > ${RESULTS}/probBLOCKS-4-0_gapdb_0.pddl
 
 
 
