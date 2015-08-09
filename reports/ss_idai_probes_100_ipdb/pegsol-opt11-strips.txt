@@ -1,71 +1,71 @@
-	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 100 probes
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 100 probes.
 
 pegsol-opt11-strips
 
 p14.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-4		32			29.75
-5		10130			7808.62
+4		32			33.2
+5		10130			8991.19
 
 p19.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-6		162			118.42
-7		8743			7032.4
+6		162			109.69
+7		8743			6563.84
 
 p18.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-8		1429			879.64
-9		929645			571259
+8		1429			933.72
+9		929645			457836
 
 p15.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-4		57			35.62
-5		6681			4797.36
+4		57			36.76
+5		6681			4540.7
 
 p12.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-6		267			137.41
-7		4483			3748.71
+6		267			223.81
+7		4483			3713.73
 
 p13.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 3		4			4
-4		97			76.72
-5		4471			2494.49
+4		97			82.48
+5		4471			2055.56
 
 p07.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 3		11			11
-4		211			173.4
+4		211			225.2
 
 p05.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 5		5			5
-6		51			52
+6		51			44.96
 
 p01.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-2		10			8.32
+2		10			7.3
 
 p10.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-4		164			142.9
-5		5801			5022.97
+4		164			107.81
+5		5801			6570.01
 
 p04.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 4		12			12
-5		638			553.44
+5		638			450.26
 
 p06.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 2		9			9
-3		231			234.6
+3		231			232.2
 
 p17.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-5		766			688.12
-6		116776			61569.1
+5		766			697.92
+6		116776			92529.7
 
 p20.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -73,29 +73,29 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p03.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-5		45			29
-6		2224			2957.28
+5		45			25
+6		2224			1824.32
 
 p09.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-3		24			14.6
-4		1101			715.64
+3		24			13
+4		1101			723.44
 
 p08.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 2		2			2
-3		25			24.2
+3		25			24.8
 
 p16.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-3		121			107.08
-4		1854			1720.61
+3		121			125.15
+4		1854			1819.07
 
 p11.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-4		1046			1023.35
+4		1046			911.07
 
 p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-3		31			25
-4		1535			1321.77
+3		31			23.68
+4		1535			1069.2

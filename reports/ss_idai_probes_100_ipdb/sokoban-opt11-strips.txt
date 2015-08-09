@@ -1,6 +1,10 @@
-	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 100 probes
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 100 probes.
 
 sokoban-opt11-strips
+
+p14.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+8		253			251.4
 
 p19.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -9,6 +13,10 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p18.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		1			1
+
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+29		214163			199076
 
 p12.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -32,8 +40,85 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p10.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-8		3.63899e+06			3.49962e+06
+8		3.63899e+06			3.61099e+06
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		3			3
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		841			841
 
 p17.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 25		1			1
+
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		189			190.4
+16		1029			1052.64
+17		7261			6817.52
+18		56061			103014
+19		322989			205458
+20		2.41454e+06			1.91374e+06
+21		1.32902e+07			1.61123e+07
+22		1.06154e+08			6.5812e+07
+23		7.95981e+08			3.70499e+08
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		47			47
+12		1159			1146.64
+13		3463			3535.2
+14		35319			32543.4
+16		2.5413e+06			2.26516e+06
+17		8.37503e+06			7.68356e+06
+18		3.94824e+07			4.59474e+07
+19		3.79252e+08			3.50612e+08
+20		2.1694e+09			2.16225e+09
+
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+7		2			2
+9		16			16
+11		136			136
+13		4.1548e+06			3.93145e+06
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		16			16
+5		649			519.22
+6		5848			6393.67
+7		24697			24422.4
+8		201196			316691
+9		929902			799106
+10		7.71392e+06			7.37761e+06
+11		4.02344e+07			1.02492e+08
+12		3.14957e+08			3.27269e+08
+13		1.88458e+09			2.79767e+09
+
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+56		16336			16253.9
+
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		145			136.68
+6		11585			11353.3
+8		906881			731410
+10		7.51805e+07			6.86579e+07
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+5		3			3
+7		19			19
+9		1079			1047.82
+11		5971			5824.44
+12		58759			49342.2
+13		321323			372752
+14		1.26867e+06			876632
+15		5.93686e+06			6.18633e+06
+16		2.97079e+07			2.67751e+07
+17		3.05945e+08			2.96166e+08
+18		1.23944e+09			5.87733e+08
