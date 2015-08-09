@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/scanalyzer-opt11-strips/fdist/p13_29.pddl
-predictionSS: 3025.9
-ss_timer: 0.02
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_10/scanalyzer-opt11-strips/fdist/p13_29.pddl
+predictionSS: 2987.9
+ss_timer: 3.55618e-17
 g:0
 size: 1
 	f: 25	q: 1
@@ -14,64 +14,62 @@ size: 3
 g:2
 size: 5
 	f: 25	q: 3
-	f: 26	q: 3.2
+	f: 26	q: 4.4
 	f: 27	q: 1
-	f: 28	q: 6.8
+	f: 28	q: 5.6
 	f: 29	q: 7
 
 g:3
 size: 5
 	f: 25	q: 4
 	f: 26	q: 9
-	f: 27	q: 3
-	f: 28	q: 16
-	f: 29	q: 32.4
+	f: 27	q: 11.6
+	f: 28	q: 14.2
+	f: 29	q: 28.2
 
 g:4
 size: 5
 	f: 25	q: 5
-	f: 26	q: 18
-	f: 27	q: 10.4
-	f: 28	q: 30.2
-	f: 29	q: 99.7
+	f: 26	q: 14
+	f: 27	q: 24.2
+	f: 28	q: 39.8
+	f: 29	q: 82.8
 
 g:5
 size: 5
 	f: 25	q: 5
-	f: 26	q: 22
-	f: 27	q: 22.4
-	f: 28	q: 63.2
-	f: 29	q: 248.4
+	f: 26	q: 18.4
+	f: 27	q: 48.6
+	f: 28	q: 87.2
+	f: 29	q: 218
 
 g:6
 size: 4
-	f: 26	q: 10.2
-	f: 27	q: 58.3
-	f: 28	q: 103.2
-	f: 29	q: 398.7
+	f: 26	q: 10.6
+	f: 27	q: 71.3
+	f: 28	q: 130.2
+	f: 29	q: 403.1
 
 g:7
 size: 3
-	f: 27	q: 51
-	f: 28	q: 108.5
-	f: 29	q: 484.8
+	f: 27	q: 36
+	f: 28	q: 170.3
+	f: 29	q: 604
 
 g:8
 size: 2
-	f: 28	q: 84.7
-	f: 29	q: 557.6
+	f: 28	q: 48.5
+	f: 29	q: 507.5
 
 g:9
 size: 1
-	f: 29	q: 455
+	f: 29	q: 369.4
 
 g:10
-size: 1
-	f: 29	q: 49.1
+size: 0
 
 g:11
-size: 1
-	f: 29	q: 49.1
+size: 0
 
 g:12
 size: 0

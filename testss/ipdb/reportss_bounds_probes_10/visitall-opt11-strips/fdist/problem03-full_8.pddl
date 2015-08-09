@@ -1,4 +1,4 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/visitall-opt11-strips/fdist/problem03-full_8.pddl
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_10/visitall-opt11-strips/fdist/problem03-full_8.pddl
 predictionSS: 61
 ss_timer: -1.66696e-18
 g:0

@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/nomystery-opt11-strips/fdist/p06_25.pddl
-predictionSS: 1.42902e+06
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_10/nomystery-opt11-strips/fdist/p06_25.pddl
+predictionSS: 261013
 ss_timer: 0.02
 g:0
 size: 1
@@ -18,107 +18,107 @@ size: 3
 
 g:3
 size: 3
-	f: 23	q: 10.4
+	f: 23	q: 11.2
 	f: 24	q: 6
-	f: 25	q: 15.4
+	f: 25	q: 16.2
 
 g:4
 size: 3
-	f: 23	q: 18.4
+	f: 23	q: 22.4
 	f: 24	q: 21.6
-	f: 25	q: 85.7
+	f: 25	q: 98.1
 
 g:5
 size: 3
-	f: 23	q: 30.4
-	f: 24	q: 54
-	f: 25	q: 280.2
+	f: 23	q: 32
+	f: 24	q: 62
+	f: 25	q: 390.5
 
 g:6
 size: 3
-	f: 23	q: 55.2
-	f: 24	q: 152
-	f: 25	q: 730.8
+	f: 23	q: 50.4
+	f: 24	q: 157.2
+	f: 25	q: 1048.4
 
 g:7
 size: 3
 	f: 23	q: 81.6
-	f: 24	q: 343.2
-	f: 25	q: 1623
+	f: 24	q: 339.6
+	f: 25	q: 2286.6
 
 g:8
 size: 3
-	f: 23	q: 86.4
-	f: 24	q: 731.2
-	f: 25	q: 4063.4
+	f: 23	q: 96
+	f: 24	q: 570
+	f: 25	q: 3747.2
 
 g:9
 size: 3
-	f: 23	q: 57.6
-	f: 24	q: 1368.8
-	f: 25	q: 9570.4
+	f: 23	q: 86.4
+	f: 24	q: 1189.2
+	f: 25	q: 8222.8
 
 g:10
 size: 3
 	f: 23	q: 28.8
-	f: 24	q: 2165.6
-	f: 25	q: 21843.2
+	f: 24	q: 2332.8
+	f: 25	q: 16735.2
 
 g:11
 size: 2
-	f: 24	q: 3404.8
-	f: 25	q: 28608
+	f: 24	q: 3193.6
+	f: 25	q: 26107.2
 
 g:12
 size: 2
-	f: 24	q: 4272
-	f: 25	q: 49923.2
+	f: 24	q: 2440
+	f: 25	q: 23456.8
 
 g:13
 size: 2
-	f: 24	q: 8179.2
-	f: 25	q: 94569.6
+	f: 24	q: 2324.8
+	f: 25	q: 9481.6
 
 g:14
 size: 2
-	f: 24	q: 8179.2
-	f: 25	q: 175613
+	f: 24	q: 451.2
+	f: 25	q: 14342.4
 
 g:15
 size: 2
-	f: 24	q: 7929.6
-	f: 25	q: 188966
+	f: 24	q: 451.2
+	f: 25	q: 14371.2
 
 g:16
 size: 2
-	f: 24	q: 7929.6
-	f: 25	q: 212794
+	f: 24	q: 451.2
+	f: 25	q: 18403.2
 
 g:17
 size: 2
-	f: 24	q: 4012.8
-	f: 25	q: 256973
+	f: 24	q: 115.2
+	f: 25	q: 24950.4
 
 g:18
 size: 2
 	f: 24	q: 115.2
-	f: 25	q: 112243
+	f: 25	q: 23270.4
 
 g:19
-size: 2
-	f: 24	q: 115.2
-	f: 25	q: 74380.8
+size: 1
+	f: 25	q: 23500.8
 
 g:20
 size: 1
-	f: 25	q: 73689.6
+	f: 25	q: 21196.8
 
 g:21
 size: 1
-	f: 25	q: 73689.6
+	f: 25	q: 7372.8
 
 g:22
-size: 0
+size: 1
+	f: 25	q: 7372.8
 
 g:23
 size: 0

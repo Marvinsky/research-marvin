@@ -1,98 +1,97 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/elevators-opt08-strips/fdist/p01_40.pddl
-predictionSS: 4434
-ss_timer: 1
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_10/elevators-opt08-strips/fdist/p01_40.pddl
+predictionSS: 5687.8
+ss_timer: 0.98
 g:0
 size: 1
 	f: 30	q: 1
 
 g:1
 size: 4
-	f: 35	q: 3.2
-	f: 36	q: 1.8
-	f: 37	q: 3
+	f: 35	q: 2.6
+	f: 36	q: 1.2
+	f: 37	q: 4.2
 	f: 39	q: 1
 
 g:2
 size: 5
 	f: 31	q: 1
-	f: 35	q: 4.2
-	f: 37	q: 6.2
+	f: 35	q: 1.8
+	f: 37	q: 6.8
 	f: 39	q: 1
-	f: 40	q: 2.4
+	f: 40	q: 3.6
 
 g:3
 size: 6
-	f: 35	q: 3.1
-	f: 36	q: 11
-	f: 37	q: 11.2
-	f: 38	q: 9.9
+	f: 35	q: 4.1
+	f: 36	q: 13.4
+	f: 37	q: 10.6
+	f: 38	q: 5.2
 	f: 39	q: 1
-	f: 40	q: 7.2
+	f: 40	q: 4.9
 
 g:4
 size: 4
-	f: 36	q: 7.4
-	f: 37	q: 27.7
-	f: 38	q: 10.1
-	f: 40	q: 9.8
+	f: 36	q: 5.4
+	f: 37	q: 32.9
+	f: 38	q: 8.8
+	f: 40	q: 8.4
 
 g:5
 size: 4
-	f: 36	q: 21.8
-	f: 37	q: 36.7
-	f: 38	q: 23.6
-	f: 40	q: 9.6
+	f: 36	q: 22.1
+	f: 37	q: 42.9
+	f: 38	q: 19.3
+	f: 40	q: 7.4
 
 g:6
 size: 5
-	f: 36	q: 5
-	f: 37	q: 60.9
-	f: 38	q: 44.8
-	f: 39	q: 3.6
-	f: 40	q: 2.8
+	f: 36	q: 5.5
+	f: 37	q: 81.7
+	f: 38	q: 43
+	f: 39	q: 8
+	f: 40	q: 3.2
 
 g:7
 size: 3
-	f: 37	q: 95.7
-	f: 38	q: 69.2
-	f: 39	q: 3.6
+	f: 37	q: 136.3
+	f: 38	q: 111.8
+	f: 39	q: 7.2
 
 g:8
-size: 3
-	f: 37	q: 137.4
-	f: 38	q: 134.9
-	f: 39	q: 5.4
+size: 2
+	f: 37	q: 172
+	f: 38	q: 229.6
 
 g:9
 size: 2
-	f: 37	q: 93.9
-	f: 38	q: 293.5
+	f: 37	q: 105.4
+	f: 38	q: 497.1
 
 g:10
 size: 2
-	f: 37	q: 38.7
-	f: 38	q: 628.4
+	f: 37	q: 38.3
+	f: 38	q: 785.6
 
 g:11
 size: 2
-	f: 37	q: 13.2
-	f: 38	q: 801.9
+	f: 37	q: 15
+	f: 38	q: 929.3
 
 g:12
 size: 1
-	f: 38	q: 797.7
+	f: 38	q: 1055.7
 
 g:13
 size: 1
-	f: 38	q: 595.5
+	f: 38	q: 782.1
 
 g:14
 size: 1
-	f: 38	q: 242.4
+	f: 38	q: 276.6
 
 g:15
 size: 1
-	f: 38	q: 150.6
+	f: 38	q: 193.8
 
 g:16
 size: 0

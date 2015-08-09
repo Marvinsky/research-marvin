@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/scanalyzer-opt11-strips/fdist/p02_19.pddl
-predictionSS: 904.9
-ss_timer: 3.19623e-16
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_10/scanalyzer-opt11-strips/fdist/p02_19.pddl
+predictionSS: 939.1
+ss_timer: 0.02
 g:0
 size: 1
 	f: 18	q: 1
@@ -18,12 +18,12 @@ size: 2
 g:3
 size: 2
 	f: 18	q: 18
-	f: 19	q: 237.6
+	f: 19	q: 232.2
 
 g:4
 size: 2
-	f: 18	q: 3.6
-	f: 19	q: 569.7
+	f: 18	q: 5.4
+	f: 19	q: 607.5
 
 g:5
 size: 0

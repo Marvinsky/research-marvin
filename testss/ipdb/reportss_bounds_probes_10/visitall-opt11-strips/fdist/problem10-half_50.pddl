@@ -1,0 +1,204 @@
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_10/visitall-opt11-strips/fdist/problem10-half_50.pddl
+predictionSS: 24598.6
+ss_timer: 0.02
+g:0
+size: 1
+	f: 47	q: 1
+
+g:1
+size: 2
+	f: 47	q: 2
+	f: 48	q: 2
+
+g:2
+size: 3
+	f: 47	q: 1.6
+	f: 48	q: 8.4
+	f: 49	q: 6
+
+g:3
+size: 4
+	f: 47	q: 3.2
+	f: 48	q: 14
+	f: 49	q: 34.8
+	f: 50	q: 12
+
+g:4
+size: 4
+	f: 47	q: 3.2
+	f: 48	q: 27.6
+	f: 49	q: 59
+	f: 50	q: 131.4
+
+g:5
+size: 4
+	f: 47	q: 3.2
+	f: 48	q: 43
+	f: 49	q: 184.2
+	f: 50	q: 295.6
+
+g:6
+size: 3
+	f: 48	q: 37.6
+	f: 49	q: 266.4
+	f: 50	q: 970.6
+
+g:7
+size: 3
+	f: 48	q: 18
+	f: 49	q: 338.8
+	f: 50	q: 2205
+
+g:8
+size: 3
+	f: 48	q: 6
+	f: 49	q: 172.6
+	f: 50	q: 3156.4
+
+g:9
+size: 3
+	f: 48	q: 4
+	f: 49	q: 194.4
+	f: 50	q: 1415
+
+g:10
+size: 3
+	f: 48	q: 6
+	f: 49	q: 90.8
+	f: 50	q: 1916.2
+
+g:11
+size: 3
+	f: 48	q: 4
+	f: 49	q: 95
+	f: 50	q: 2148.2
+
+g:12
+size: 3
+	f: 48	q: 4
+	f: 49	q: 41
+	f: 50	q: 2693.2
+
+g:13
+size: 3
+	f: 48	q: 4
+	f: 49	q: 64
+	f: 50	q: 3324.6
+
+g:14
+size: 2
+	f: 49	q: 38
+	f: 50	q: 2351.8
+
+g:15
+size: 2
+	f: 49	q: 26
+	f: 50	q: 1475.4
+
+g:16
+size: 1
+	f: 50	q: 577.4
+
+g:17
+size: 1
+	f: 50	q: 122
+
+g:18
+size: 0
+
+g:19
+size: 0
+
+g:20
+size: 0
+
+g:21
+size: 0
+
+g:22
+size: 0
+
+g:23
+size: 0
+
+g:24
+size: 0
+
+g:25
+size: 0
+
+g:26
+size: 0
+
+g:27
+size: 0
+
+g:28
+size: 0
+
+g:29
+size: 0
+
+g:30
+size: 0
+
+g:31
+size: 0
+
+g:32
+size: 0
+
+g:33
+size: 0
+
+g:34
+size: 0
+
+g:35
+size: 0
+
+g:36
+size: 0
+
+g:37
+size: 0
+
+g:38
+size: 0
+
+g:39
+size: 0
+
+g:40
+size: 0
+
+g:41
+size: 0
+
+g:42
+size: 0
+
+g:43
+size: 0
+
+g:44
+size: 0
+
+g:45
+size: 0
+
+g:46
+size: 0
+
+g:47
+size: 0
+
+g:48
+size: 0
+
+g:49
+size: 0
+
+g:50
+size: 0
+

@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/woodworking-opt08-strips/fdist/p21_85.pddl
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_10/woodworking-opt08-strips/fdist/p21_85.pddl
 predictionSS: 2
-ss_timer: 1.06577e-16
+ss_timer: 8.89046e-18
 g:0
 size: 1
 	f: 85	q: 1

@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/visitall-opt11-strips/fdist/problem06-half_20.pddl
-predictionSS: 39925.4
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_10/visitall-opt11-strips/fdist/problem06-half_20.pddl
+predictionSS: 61090.9
 ss_timer: 0.02
 g:0
 size: 1
@@ -12,78 +12,73 @@ size: 2
 
 g:2
 size: 2
-	f: 16	q: 4.9
-	f: 17	q: 11.1
+	f: 16	q: 5.5
+	f: 17	q: 10.5
 
 g:3
 size: 3
-	f: 16	q: 2.6
-	f: 17	q: 27.5
-	f: 18	q: 33.9
+	f: 16	q: 2.9
+	f: 17	q: 29.6
+	f: 18	q: 30
 
 g:4
 size: 4
-	f: 16	q: 3.7
-	f: 17	q: 14
-	f: 18	q: 111.1
-	f: 19	q: 116.1
+	f: 16	q: 5
+	f: 17	q: 13.8
+	f: 18	q: 111.7
+	f: 19	q: 108.3
 
 g:5
 size: 5
-	f: 16	q: 4.4
-	f: 17	q: 26.6
-	f: 18	q: 96.1
-	f: 19	q: 472.8
-	f: 20	q: 319.5
+	f: 16	q: 1.4
+	f: 17	q: 30.8
+	f: 18	q: 105.6
+	f: 19	q: 460.7
+	f: 20	q: 293.1
 
 g:6
 size: 5
-	f: 16	q: 8.8
-	f: 17	q: 15.2
-	f: 18	q: 161.7
-	f: 19	q: 407.2
-	f: 20	q: 1602.8
+	f: 16	q: 2.8
+	f: 17	q: 30.6
+	f: 18	q: 217.2
+	f: 19	q: 545
+	f: 20	q: 1396
 
 g:7
 size: 4
-	f: 17	q: 51.2
-	f: 18	q: 142.4
-	f: 19	q: 427.4
-	f: 20	q: 2204.4
+	f: 17	q: 53.4
+	f: 18	q: 375.8
+	f: 19	q: 1136.2
+	f: 20	q: 2183.4
 
 g:8
-size: 4
-	f: 17	q: 32
-	f: 18	q: 214.4
-	f: 19	q: 451.2
-	f: 20	q: 3045.4
+size: 3
+	f: 18	q: 301.6
+	f: 19	q: 1830.8
+	f: 20	q: 5782.2
 
 g:9
 size: 3
-	f: 18	q: 179.2
-	f: 19	q: 1140.8
-	f: 20	q: 2740.8
+	f: 18	q: 59.2
+	f: 19	q: 2962.8
+	f: 20	q: 7180.8
 
 g:10
-size: 3
-	f: 18	q: 256
-	f: 19	q: 1780.8
-	f: 20	q: 5731.2
+size: 2
+	f: 19	q: 1823.6
+	f: 20	q: 10348
 
 g:11
-size: 3
-	f: 18	q: 256
-	f: 19	q: 468.8
-	f: 20	q: 8702.4
+size: 1
+	f: 20	q: 10643.6
 
 g:12
-size: 2
-	f: 19	q: 512
-	f: 20	q: 4560
+size: 1
+	f: 20	q: 9664.4
 
 g:13
 size: 1
-	f: 20	q: 3584
+	f: 20	q: 3339.6
 
 g:14
 size: 0

@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/pegsol-opt11-strips/fdist/p03_6.pddl
-predictionSS: 1866
-ss_timer: 0.16
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_10/pegsol-opt11-strips/fdist/p03_6.pddl
+predictionSS: 796.4
+ss_timer: 0.14
 g:0
 size: 1
 	f: 5	q: 1
@@ -15,17 +15,17 @@ size: 0
 
 g:3
 size: 1
-	f: 6	q: 51.2
+	f: 6	q: 38.4
 
 g:4
 size: 1
-	f: 6	q: 62.4
+	f: 6	q: 27.2
 
 g:5
 size: 1
-	f: 6	q: 33.6
+	f: 6	q: 52.8
 
 g:6
 size: 1
-	f: 6	q: 204.8
+	f: 6	q: 131.2
 

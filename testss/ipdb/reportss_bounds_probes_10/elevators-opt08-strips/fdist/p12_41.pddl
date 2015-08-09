@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/elevators-opt08-strips/fdist/p12_41.pddl
-predictionSS: 1053.8
-ss_timer: 0.32
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_10/elevators-opt08-strips/fdist/p12_41.pddl
+predictionSS: 1475.6
+ss_timer: 0.34
 g:0
 size: 1
 	f: 27	q: 1
@@ -9,97 +9,103 @@ g:1
 size: 9
 	f: 27	q: 1
 	f: 29	q: 1
-	f: 32	q: 1.4
-	f: 33	q: 2.4
-	f: 34	q: 1.9
+	f: 32	q: 1.8
+	f: 33	q: 2
+	f: 34	q: 2.1
 	f: 35	q: 1.2
-	f: 36	q: 0.6
-	f: 37	q: 3.6
+	f: 36	q: 1.2
+	f: 37	q: 2.8
 	f: 39	q: 0.9
 
 g:2
-size: 9
-	f: 32	q: 4.4
-	f: 33	q: 1.2
+size: 10
+	f: 32	q: 2.8
+	f: 33	q: 2
 	f: 34	q: 4
-	f: 35	q: 5.6
-	f: 37	q: 14.3
-	f: 38	q: 6.9
-	f: 39	q: 24.9
-	f: 40	q: 9
-	f: 41	q: 18.7
+	f: 35	q: 6.4
+	f: 36	q: 6.4
+	f: 37	q: 5.5
+	f: 38	q: 13
+	f: 39	q: 25.8
+	f: 40	q: 6.2
+	f: 41	q: 21.3
 
 g:3
-size: 6
-	f: 32	q: 4.7
-	f: 37	q: 8.2
-	f: 38	q: 2.7
-	f: 39	q: 39.5
-	f: 40	q: 18.9
-	f: 41	q: 48.7
+size: 7
+	f: 32	q: 4.6
+	f: 34	q: 4.4
+	f: 37	q: 9.8
+	f: 38	q: 2
+	f: 39	q: 58.3
+	f: 40	q: 16.8
+	f: 41	q: 43.2
 
 g:4
 size: 6
-	f: 34	q: 2.8
-	f: 37	q: 19.7
-	f: 38	q: 1.2
-	f: 39	q: 53.6
-	f: 40	q: 23.7
-	f: 41	q: 29.2
+	f: 35	q: 6.4
+	f: 37	q: 8.4
+	f: 38	q: 13.8
+	f: 39	q: 45
+	f: 40	q: 18.3
+	f: 41	q: 63.5
 
 g:5
 size: 5
-	f: 37	q: 9.2
-	f: 38	q: 19.6
-	f: 39	q: 38.8
-	f: 40	q: 30.3
-	f: 41	q: 43.4
+	f: 37	q: 0.2
+	f: 38	q: 22.2
+	f: 39	q: 26.6
+	f: 40	q: 73.4
+	f: 41	q: 51.8
 
 g:6
-size: 4
-	f: 37	q: 23.9
-	f: 39	q: 69.4
-	f: 40	q: 25.3
-	f: 41	q: 22.4
+size: 5
+	f: 37	q: 4.2
+	f: 38	q: 8.4
+	f: 39	q: 21.2
+	f: 40	q: 99
+	f: 41	q: 69.3
 
 g:7
 size: 4
-	f: 37	q: 6.8
-	f: 39	q: 13
-	f: 40	q: 13.2
-	f: 41	q: 24.4
+	f: 37	q: 1.6
+	f: 39	q: 10.4
+	f: 40	q: 24.4
+	f: 41	q: 44.4
 
 g:8
 size: 4
-	f: 37	q: 23.6
-	f: 39	q: 66.2
-	f: 40	q: 35.8
-	f: 41	q: 32.8
+	f: 37	q: 5.2
+	f: 39	q: 99.4
+	f: 40	q: 117.2
+	f: 41	q: 25.4
 
 g:9
-size: 3
-	f: 37	q: 4.8
-	f: 39	q: 14.4
-	f: 41	q: 12.8
+size: 4
+	f: 37	q: 1.6
+	f: 39	q: 18.4
+	f: 40	q: 36.8
+	f: 41	q: 23.2
 
 g:10
 size: 4
-	f: 37	q: 51.6
-	f: 39	q: 26.8
-	f: 40	q: 9.6
-	f: 41	q: 40.4
+	f: 37	q: 6.4
+	f: 39	q: 50.8
+	f: 40	q: 94
+	f: 41	q: 79.6
 
 g:11
-size: 3
-	f: 37	q: 9.6
-	f: 39	q: 9.6
-	f: 41	q: 6.4
+size: 4
+	f: 37	q: 3.2
+	f: 39	q: 3.2
+	f: 40	q: 19.2
+	f: 41	q: 12.8
 
 g:12
-size: 3
-	f: 37	q: 4.8
-	f: 39	q: 4.8
-	f: 41	q: 3.2
+size: 4
+	f: 37	q: 1.6
+	f: 39	q: 1.6
+	f: 40	q: 9.6
+	f: 41	q: 6.4
 
 g:13
 size: 0

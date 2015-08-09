@@ -1,102 +1,109 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/elevators-opt08-strips/fdist/p01_41.pddl
-predictionSS: 7940.2
-ss_timer: 0.94
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_10/elevators-opt08-strips/fdist/p01_41.pddl
+predictionSS: 11981.6
+ss_timer: 1.14
 g:0
 size: 1
 	f: 30	q: 1
 
 g:1
 size: 4
-	f: 35	q: 2.6
-	f: 36	q: 0.6
-	f: 37	q: 4.8
+	f: 35	q: 3.6
+	f: 36	q: 1.5
+	f: 37	q: 2.9
 	f: 39	q: 1
 
 g:2
 size: 6
-	f: 31	q: 0.2
-	f: 35	q: 2.9
-	f: 37	q: 7
+	f: 31	q: 1.6
+	f: 35	q: 0.7
+	f: 37	q: 5.7
 	f: 39	q: 1
-	f: 40	q: 2.2
-	f: 41	q: 7.3
+	f: 40	q: 5.3
+	f: 41	q: 9.6
 
 g:3
 size: 7
-	f: 35	q: 3.3
-	f: 36	q: 8.2
-	f: 37	q: 10.8
-	f: 38	q: 6.1
+	f: 35	q: 3.9
+	f: 36	q: 8.7
+	f: 37	q: 11.1
+	f: 38	q: 11
 	f: 39	q: 1
-	f: 40	q: 8
-	f: 41	q: 8.4
+	f: 40	q: 4.8
+	f: 41	q: 6.3
 
 g:4
 size: 5
-	f: 36	q: 1.9
-	f: 37	q: 37.3
-	f: 38	q: 2.5
-	f: 40	q: 8.4
-	f: 41	q: 47.6
+	f: 36	q: 11.9
+	f: 37	q: 15.5
+	f: 38	q: 22
+	f: 40	q: 8.5
+	f: 41	q: 64.3
 
 g:5
 size: 5
-	f: 36	q: 7.1
-	f: 37	q: 63.3
-	f: 38	q: 21.4
-	f: 40	q: 5.3
-	f: 41	q: 93.5
+	f: 36	q: 16.9
+	f: 37	q: 57
+	f: 38	q: 28.7
+	f: 40	q: 7.3
+	f: 41	q: 104.5
 
 g:6
 size: 6
-	f: 36	q: 4.1
-	f: 37	q: 63.7
-	f: 38	q: 17.6
-	f: 39	q: 4.7
-	f: 40	q: 2.3
-	f: 41	q: 242.9
+	f: 36	q: 13.2
+	f: 37	q: 69.5
+	f: 38	q: 61.5
+	f: 39	q: 12.9
+	f: 40	q: 3.8
+	f: 41	q: 283.3
 
 g:7
-size: 3
-	f: 37	q: 162
-	f: 38	q: 86.2
-	f: 41	q: 374.3
+size: 4
+	f: 37	q: 150.8
+	f: 38	q: 137.4
+	f: 39	q: 66.5
+	f: 41	q: 372.5
 
 g:8
-size: 3
-	f: 37	q: 238
-	f: 38	q: 221.5
-	f: 41	q: 472.6
+size: 4
+	f: 37	q: 189.9
+	f: 38	q: 268.6
+	f: 39	q: 5.4
+	f: 41	q: 615.7
 
 g:9
 size: 3
-	f: 37	q: 109
-	f: 38	q: 446.8
-	f: 41	q: 283.9
+	f: 37	q: 131.7
+	f: 38	q: 666.6
+	f: 41	q: 625.3
 
 g:10
-size: 2
-	f: 38	q: 841
-	f: 41	q: 67.3
+size: 3
+	f: 37	q: 100.2
+	f: 38	q: 1176.5
+	f: 41	q: 318.5
 
 g:11
-size: 2
-	f: 38	q: 1212.1
-	f: 41	q: 2.4
+size: 3
+	f: 37	q: 50.1
+	f: 38	q: 1617.2
+	f: 41	q: 101.7
 
 g:12
-size: 1
-	f: 38	q: 1633.8
+size: 2
+	f: 38	q: 1771.5
+	f: 41	q: 15.6
 
 g:13
 size: 1
-	f: 38	q: 1089.3
+	f: 38	q: 1245.3
 
 g:14
-size: 0
+size: 1
+	f: 38	q: 845.1
 
 g:15
-size: 0
+size: 1
+	f: 38	q: 648
 
 g:16
 size: 0

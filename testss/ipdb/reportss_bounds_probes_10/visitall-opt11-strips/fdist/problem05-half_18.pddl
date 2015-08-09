@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/visitall-opt11-strips/fdist/problem05-half_18.pddl
-predictionSS: 122543
-ss_timer: 0.02
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_10/visitall-opt11-strips/fdist/problem05-half_18.pddl
+predictionSS: 65098.2
+ss_timer: 4.43845e-18
 g:0
 size: 1
 	f: 14	q: 1
@@ -12,89 +12,83 @@ size: 2
 
 g:2
 size: 3
-	f: 14	q: 3
-	f: 15	q: 11
+	f: 14	q: 0.6
+	f: 15	q: 13.4
 	f: 16	q: 2
 
 g:3
 size: 4
-	f: 14	q: 6
-	f: 15	q: 23.8
-	f: 16	q: 25.8
-	f: 17	q: 2.8
+	f: 14	q: 1.2
+	f: 15	q: 18.2
+	f: 16	q: 30.8
+	f: 17	q: 4
 
 g:4
 size: 5
-	f: 14	q: 12
-	f: 15	q: 38.2
-	f: 16	q: 58.2
-	f: 17	q: 86.8
-	f: 18	q: 6.8
+	f: 14	q: 2.4
+	f: 15	q: 22.2
+	f: 16	q: 39.2
+	f: 17	q: 108.8
+	f: 18	q: 9.8
 
 g:5
 size: 5
-	f: 14	q: 9.6
-	f: 15	q: 53.8
-	f: 16	q: 158
-	f: 17	q: 249.6
-	f: 18	q: 190.6
+	f: 14	q: 2.4
+	f: 15	q: 27.4
+	f: 16	q: 88.6
+	f: 17	q: 215.2
+	f: 18	q: 267.6
 
 g:6
 size: 5
-	f: 14	q: 12
-	f: 15	q: 71.4
-	f: 16	q: 204.2
-	f: 17	q: 788.2
-	f: 18	q: 751
+	f: 14	q: 4.8
+	f: 15	q: 20
+	f: 16	q: 104.2
+	f: 17	q: 506.8
+	f: 18	q: 737
 
 g:7
-size: 5
-	f: 14	q: 2.4
-	f: 15	q: 78.4
-	f: 16	q: 359.8
-	f: 17	q: 1645.8
-	f: 18	q: 2803.4
+size: 4
+	f: 15	q: 14.4
+	f: 16	q: 116.2
+	f: 17	q: 834
+	f: 18	q: 2085
 
 g:8
-size: 5
-	f: 14	q: 2.4
-	f: 15	q: 91.2
-	f: 16	q: 538.8
-	f: 17	q: 3027.8
-	f: 18	q: 5938
+size: 4
+	f: 15	q: 14.4
+	f: 16	q: 71.2
+	f: 17	q: 1138.4
+	f: 18	q: 4712.2
 
 g:9
-size: 4
-	f: 15	q: 20.8
-	f: 16	q: 566.4
-	f: 17	q: 3928.2
-	f: 18	q: 11095.4
+size: 3
+	f: 16	q: 85.6
+	f: 17	q: 1116.8
+	f: 18	q: 8204.8
 
 g:10
-size: 4
-	f: 15	q: 11.2
-	f: 16	q: 580
-	f: 17	q: 4540.2
-	f: 18	q: 16778
+size: 3
+	f: 16	q: 28
+	f: 17	q: 1152.8
+	f: 18	q: 9684
 
 g:11
-size: 3
-	f: 16	q: 22.4
-	f: 17	q: 4853
-	f: 18	q: 21191
+size: 2
+	f: 17	q: 828.8
+	f: 18	q: 11127.2
 
 g:12
-size: 2
-	f: 17	q: 1062.6
-	f: 18	q: 31320.6
+size: 1
+	f: 18	q: 13870.4
 
 g:13
 size: 1
-	f: 18	q: 7770
+	f: 18	q: 3891.2
 
 g:14
 size: 1
-	f: 18	q: 1545.6
+	f: 18	q: 3891.2
 
 g:15
 size: 0

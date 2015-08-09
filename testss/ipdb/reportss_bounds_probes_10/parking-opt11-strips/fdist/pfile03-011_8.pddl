@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/parking-opt11-strips/fdist/pfile03-011_8.pddl
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_10/parking-opt11-strips/fdist/pfile03-011_8.pddl
 predictionSS: 1
-ss_timer: 9.76866e-17
+ss_timer: 5.32885e-17
 g:0
 size: 1
 	f: 8	q: 1

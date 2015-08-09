@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/sokoban-opt08-strips/fdist/p02_9.pddl
-predictionSS: 7161.3
-ss_timer: 0.06
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_10/sokoban-opt08-strips/fdist/p02_9.pddl
+predictionSS: 6943.2
+ss_timer: 0.04
 g:0
 size: 1
 	f: 9	q: 1
