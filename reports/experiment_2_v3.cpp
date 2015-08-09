@@ -40,7 +40,7 @@ struct less_first {
 };
 
 //Global variables
-vector<string> add_lines_heuristics; 
+//vector<string> add_lines_heuristics; 
 set<int> no_repeat_int;
 vector<int> repeat_random_10;
 
@@ -50,7 +50,9 @@ vector<pair<string, double> >  analyzeFile(string output_BC, bool first_paramete
 	int count_slash = 0, count_line = 0, n_heuristics = 0;
 	bool in_b = false, allow_add = false;
 	vector<char> add_char;
+	vector<string> add_lines_heuristics; 
 	while (std::getline(infile_astar, line)) {
+		//cout<<"line = "<<line<<"\n";
 		add_lines_heuristics.push_back(line);
 		for (int i = 0; i < line.length(); i++) {
 			char a = line[i];
@@ -170,11 +172,72 @@ vector<pair<string, double> >  analyzeFile(string output_BC, bool first_paramete
 	}	
 					
 	map<string, double> m;
+	string delimiter = ",";
 	for (int j = 0; j < n_heuristics; j++) {
-		double sum_ones = 0;
+		//cout<<"n_heurisitcs = "<<n_heuristics<<"\n";
+		//test code that recover the heuristics of the file
+		string s = add_lines_heuristics.at(j);
+		//cout<<"s = "<<s<<"\n";
+                string pot[6];
+                size_t pos = 0;
+                string token;
+                int index = 0;
+                while ((pos = s.find(delimiter)) != std::string::npos) {
+                        token = s.substr(0, pos);
+                        pot[index] = token;
+                        s.erase(0, pos + delimiter.length());
+                        index++;
+                }
+                pot[index] = s;
+
+                //storing the information
+                string number_h,
+                        number_aux,
+                        mutation_rate,
+                        mutation_rate_aux,
+                        size_gapdb,
+                        size_gapdb_aux,
+                        wd,
+                        wd_aux,
+                        heuristic_name_created,
+                        name;
+                number_aux = pot[1];
+                size_t t1 = number_aux.find(")");
+                number_h = number_aux.substr(0, t1);
+                //cout<<"number_h = "<<number_h<<"\n";
+
+                //pot[2] to create the name of the heuristic
+                //cout<<"pot[2] = "<<pot[2]<<"\n";
+                heuristic_name_created = pot[2];
+		//cout<<"heuristic_name_created = "<<heuristic_name_created<<"\n";
+
 		stringstream number;
-		number<<j;
-		string name = "gapdb_"+number.str();
+		number<<j; //in SS the heuristics are ordened from 0 to max_number_heuristics
+
+		if (n_heuristics == 1) { //This means we are collectin just one heuristic running A*
+                	if (heuristic_name_created == "ipdb") {
+                        	name = "_ipdb";
+                	} else if (heuristic_name_created == "lmcut") {
+                        	name = "_lmcut";
+                	} else {
+                        	name = "_gapdb";
+                	}
+		} else { //Here we collect many heuristics
+			if (heuristic_name_created == "ipdb") {
+                        	name =  number.str() + "_ipdb";
+                	} else if (heuristic_name_created == "lmcut") {
+                        	name = number.str() + "_lmcut";
+                	} else {
+                        	name = number.str() + "_gapdb";
+                	}
+		}
+
+		//end test code that recover from the file
+
+		//calculate the CC = culprit counter
+		double sum_ones = 0;
+		
+		//string name = "gapdb_"+number.str();
 		for (int i = 0; i < count_line; i++) {
 			if (h[i][j] == 1) {
 				sum_ones += cc[i][0];
@@ -191,6 +254,38 @@ vector<pair<string, double> >  analyzeFile(string output_BC, bool first_paramete
 		sort(mapcopy.begin(), mapcopy.end(), less_second<string, double>());
 	}
 	return mapcopy;
+}
+
+
+vector<pair<string, double> > get_heur_ordered(vector<pair<string,double> > m_values) {
+        //Here we have to order the results of m_values in this way: ipdb_0, gapdb_1, gapdb_2, gapdb_3, lmcut_4, gapdb_5, gapdb_6, gapdb_7, gapdb_8, gapdb_9, gapdb_10, gapdb_11        
+        map<int, pair<string, double> > map_order_by_int;
+        typedef std::vector<std::pair<std::string, double> > vector_type;
+        for (vector_type::const_iterator pos = m_values.begin(); pos != m_values.end(); ++pos) {
+        	string s = pos->first;
+                double d = pos->second;
+                string t = s;
+                int found = t.find("_");
+                string heuristic_name_mod = t.substr(0,  found);
+
+                int number_order = atoi(heuristic_name_mod.c_str());
+
+                map_order_by_int.insert(pair<int, pair<string, double> >(number_order, pair<string, double>(s, d)));
+        }
+        vector<pair<int, pair<string, double> > > map_to_copy(map_order_by_int.begin(), map_order_by_int.end());
+        sort(map_to_copy.begin(), map_to_copy.end(), less_first<int, pair<string, double> >());
+
+        vector<pair<string, double> > m_heur_ordered;
+        typedef std::vector<std::pair<int, pair<string, double> > > vector_type_transform;
+        for (vector_type_transform::const_iterator pos = map_to_copy.begin(); pos != map_to_copy.end(); ++pos) {
+        	int key = pos->first;
+                //cout<<"key = "<<key<<"\n";
+                pair<string, double> pairData = pos->second;
+                //cout<<pairData.first<<" "<<pairData.second<<"\n";
+                m_heur_ordered.push_back(pairData);
+        }
+        //end order heuristics
+	return m_heur_ordered;
 }
 
 //check if the difference between the ratios are in the range
@@ -443,7 +538,6 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			for (size_t i = 0; i < fileNames4.size(); i++) {
 				string s = fileNames4.at(i);
 				string file_to_open = dir_astarBC + "/" + s;
-				//cout<<"\t\t"<<s<<"\n";
 				string pot[6];
 				string key, key_final;
                 		size_t pos = 0;
@@ -460,21 +554,24 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				key = pot[2]; //setting the index of the gapdb
 				//cout<<"\t\tkey = "<<key<<"\n";
 				//cout<<"\t\tfile_to_open = "<<file_to_open<<"\n";
-				key_final = "gapdb_" + key;
+				//key_final = "gapdb_" + key;
 
 				vector<pair<string, double> > m = analyzeFile(file_to_open, true);
 				double nodes_generated = 0;
 				if (m.size() == 1) { //considering we just using one heuristic
+					string s;
 					typedef std::vector<std::pair<std::string, double> > vector_type;
 					for (vector_type::const_iterator pos = m.begin();
      						pos != m.end(); ++pos)
 					{
-   						string s = pos->first;
+   						s = pos->first;
 				        	double d = pos->second;
 						//cout<<"\t\t\t"<<s<<"  -  "<<d<<"\n";
 						nodes_generated = d;
 					}
+					key_final = key + s; //s + key
 				}
+				//cout<<"\t\t\tkey_final = "<<key_final<<"\n\n\n";
 				map_bc_astar.insert(pair<string, double>(key_final, nodes_generated));
 			}
 			//sort the elements by second parameter
@@ -483,14 +580,14 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 			map_bc_file_astar.insert(pair<string, vector<pair<string, double > > >(astarBC_key, sort_v));
 		}
-
+		
 		map<string, vector<pair<string, double> > >::iterator iter_m;
 		for (iter_m = map_bc_file_astar.begin(); iter_m != map_bc_file_astar.end(); iter_m++) {
 			string astarBC = iter_m->first;
 			//cout<<"astarBC = "<<astarBC<<"\n";
 			vector<pair<string, double> > m_values = iter_m->second;
-			//cout<<"m_values.size() = "<<m_values.size()<<"\n";
-			//cout<<"file: "<<astarBC<<"\n";
+			vector<pair<string, double> > m_heur_ordered = get_heur_ordered(m_values);	
+			//end order heuristics
 
 			for (size_t j = 0; j < fileNames.size(); j++) {
 				string ssBC = fileNames.at(j);
@@ -502,9 +599,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					vector<string> collector_astar, collector_ss;
 					map<double, vector<string> > map_astar, map_ss;
 
-					outputFile<<"instance_name: "<<astarBC<<"\n\n";
+					outputFile<<"\n\ninstance_name: "<<astarBC<<"\n\n";
 					//_________________CALLING A* _____________
-					add_lines_heuristics.clear();					
+					//add_lines_heuristics.clear();					
 					outputFile<<"A*:\t\t{";
 					map<string, double> m_astar_percentage;
 					map<string, double> m_ss_percentage;
@@ -512,7 +609,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 					//enhance 3: create matrix fracastar
 					double** fracastar;
-					int total_heuristics = m_values.size();
+					int total_heuristics = m_heur_ordered.size();
 					fracastar = new double*[total_heuristics];
 					for (int i = 0; i < total_heuristics; i++) {
 						fracastar[i] = new double[total_heuristics];
@@ -520,7 +617,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 					int row_count = 0;
 					typedef std::vector<std::pair<std::string, double> > vector_type;
-					for (vector_type::const_iterator pos = m_values.begin(); pos != m_values.end(); ++pos)
+					for (vector_type::const_iterator pos = m_heur_ordered.begin(); pos != m_heur_ordered.end(); ++pos)
 					{
 						//cout<<"into the vector_type\n";
    						string s = pos->first;
@@ -539,8 +636,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						typedef std::vector<std::pair<std::string, double> > vector_type_inner;	
 						vector<string> ga_name;
 						int col_count = 0;
-						for (vector_type_inner::const_iterator pinner = m_values.begin();
-						pinner != m_values.end(); ++pinner)
+						for (vector_type_inner::const_iterator pinner = m_heur_ordered.begin();
+						pinner != m_heur_ordered.end(); ++pinner)
 						{
 							// do this to group all the heuristics that generates the same number of nodes
 							string sinner = pinner->first;
@@ -549,7 +646,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								ga_name.push_back(sinner);
 							}
 
-							//fill the fracss with the data ratio
+							//fill the fracastar with the data ratio
 							if (dinner != 0) {
 								double dratio = d/dinner;
 								fracastar[row_count][col_count] = dratio;
@@ -567,6 +664,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							map_astar.insert(pair<double, vector<string> >(d, ga_name));
 						}	
 					}
+
 					outputFile<<"}\n";	
 					cout<<"print fracastar\n";	
 					for (int i = 0; i < total_heuristics; i++) {
@@ -601,10 +699,11 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					//outputFile<<"\n\n";
 					//CALLING SS _____________________________________________
 					vector<pair<string, double> > m2 = analyzeFile(output_ssBC, true);
+					vector<pair<string, double> > m2_heur_ordered = get_heur_ordered(m2);
 					//enhance 3: create matrix fracss	
 
 					double** fracss;
-					int total_heuristics2 = m2.size(); 
+					int total_heuristics2 = m2_heur_ordered.size(); 
 					fracss = new double*[total_heuristics2];
 					for (int i = 0; i < total_heuristics2; i++) {
 						fracss[i] = new double[total_heuristics2];
@@ -614,8 +713,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 					typedef std::vector<std::pair<std::string, double> > vector_type2;
 					int row_count2 = 0;
-					for (vector_type2::const_iterator pos2 = m2.begin();
-     						pos2 != m2.end(); ++pos2)
+					for (vector_type2::const_iterator pos2 = m2_heur_ordered.begin();
+     						pos2 != m2_heur_ordered.end(); ++pos2)
 					{
    						string s = pos2->first;
 						double d = pos2->second;
@@ -627,8 +726,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						typedef std::vector<std::pair<std::string, double> > vector_type_inner2;	
 						vector<string> ga_name2;
 						int col_count2 = 0;
-						for (vector_type_inner2::const_iterator pinner = m2.begin();
-						pinner != m2.end(); ++pinner)
+						for (vector_type_inner2::const_iterator pinner = m2_heur_ordered.begin();
+						pinner != m2_heur_ordered.end(); ++pinner)
 						{
 							// this is done in order to group the heuristics that have the same number of nodes
 							string sinner = pinner->first;
@@ -841,7 +940,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						info<<"output_ssBC = "<<output_ssBC<<"\n\n";
 						cout<<"output_ssBC = "<<output_ssBC<<"\n\n";
 					}
-				}
+				} //compare astarBC == ssBC 
 			}
 		}
 		outputFile.close();
