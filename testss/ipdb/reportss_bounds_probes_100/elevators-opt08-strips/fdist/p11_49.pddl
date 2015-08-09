@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/elevators-opt08-strips/fdist/p11_49.pddl
-predictionSS: 35103.9
-ss_timer: 11.86
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_100/elevators-opt08-strips/fdist/p11_49.pddl
+predictionSS: 49063.2
+ss_timer: 12.64
 g:0
 size: 1
 	f: 39	q: 1
@@ -10,108 +10,109 @@ size: 6
 	f: 39	q: 1
 	f: 41	q: 1
 	f: 44	q: 6
-	f: 45	q: 1.02
+	f: 45	q: 0.84
 	f: 48	q: 1
-	f: 49	q: 1.98
+	f: 49	q: 2.16
 
 g:2
 size: 5
-	f: 44	q: 12.52
-	f: 46	q: 5.9
-	f: 47	q: 4.54
-	f: 48	q: 0.9
-	f: 49	q: 24.16
+	f: 44	q: 13.45
+	f: 46	q: 6.64
+	f: 47	q: 2.93
+	f: 48	q: 1.44
+	f: 49	q: 23.38
 
 g:3
 size: 3
-	f: 44	q: 3.24
-	f: 47	q: 4.74
-	f: 49	q: 63.36
+	f: 44	q: 3.49
+	f: 47	q: 3.32
+	f: 49	q: 68.77
 
 g:4
 size: 5
-	f: 44	q: 11.86
-	f: 46	q: 2.79
+	f: 44	q: 11.38
+	f: 46	q: 2.99
 	f: 47	q: 8.01
-	f: 48	q: 2.2
-	f: 49	q: 36.56
+	f: 48	q: 2
+	f: 49	q: 35.27
 
 g:5
 size: 5
-	f: 44	q: 12.79
-	f: 46	q: 1.76
+	f: 44	q: 15.97
+	f: 46	q: 2.12
 	f: 47	q: 4
-	f: 48	q: 2.24
-	f: 49	q: 120.8
+	f: 48	q: 1.88
+	f: 49	q: 116.57
 
 g:6
 size: 2
-	f: 44	q: 23.35
-	f: 49	q: 215.48
+	f: 44	q: 31
+	f: 49	q: 214.44
 
 g:7
 size: 2
-	f: 44	q: 45.12
-	f: 49	q: 458.27
+	f: 44	q: 48.72
+	f: 49	q: 464.02
 
 g:8
 size: 2
-	f: 44	q: 73.74
-	f: 49	q: 1033.11
+	f: 44	q: 69.39
+	f: 49	q: 958.94
 
 g:9
 size: 2
-	f: 44	q: 54.97
-	f: 49	q: 1538.57
+	f: 44	q: 50.97
+	f: 49	q: 1458.94
 
 g:10
 size: 2
-	f: 44	q: 178.59
-	f: 49	q: 1904.87
+	f: 44	q: 197.8
+	f: 49	q: 2062.06
 
 g:11
 size: 1
-	f: 49	q: 4867.25
+	f: 49	q: 4973.51
 
 g:12
 size: 2
-	f: 44	q: 174.6
-	f: 49	q: 2165.6
+	f: 44	q: 177.82
+	f: 49	q: 2734.72
 
 g:13
-size: 1
-	f: 49	q: 8040.12
+size: 2
+	f: 44	q: 282.2
+	f: 49	q: 8941.15
 
 g:14
 size: 1
-	f: 49	q: 2699.02
+	f: 49	q: 3903.16
 
 g:15
 size: 1
-	f: 49	q: 6536.65
+	f: 49	q: 9250.7
 
 g:16
 size: 1
-	f: 49	q: 873.16
+	f: 49	q: 2113.42
 
 g:17
 size: 1
-	f: 49	q: 2136.15
+	f: 49	q: 6507.04
 
 g:18
 size: 1
-	f: 49	q: 17.76
+	f: 49	q: 216
 
 g:19
 size: 1
-	f: 49	q: 1033.8
+	f: 49	q: 1101.68
 
 g:20
 size: 0
 
 g:21
 size: 1
-	f: 49	q: 698.4
+	f: 49	q: 2968.88
 
 g:22
 size: 0

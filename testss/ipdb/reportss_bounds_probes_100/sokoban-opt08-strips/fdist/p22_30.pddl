@@ -1,4 +1,4 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/sokoban-opt08-strips/fdist/p22_30.pddl
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_100/sokoban-opt08-strips/fdist/p22_30.pddl
 predictionSS: 13
 ss_timer: 0.06
 g:0

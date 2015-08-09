@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/woodworking-opt11-strips/fdist/p01_180.pddl
-predictionSS: 1.60677e+06
-ss_timer: 0.5
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_100/woodworking-opt11-strips/fdist/p01_180.pddl
+predictionSS: 1.8107e+06
+ss_timer: 0.48
 g:0
 size: 1
 	f: 165	q: 1
@@ -12,54 +12,54 @@ size: 2
 
 g:2
 size: 3
-	f: 165	q: 0.87
-	f: 170	q: 2.13
+	f: 165	q: 0.84
+	f: 170	q: 2.16
 	f: 175	q: 5
 
 g:3
 size: 2
-	f: 175	q: 25.49
-	f: 180	q: 6.33
+	f: 175	q: 23.98
+	f: 180	q: 8.16
 
 g:4
 size: 2
-	f: 175	q: 116.36
-	f: 180	q: 38.01
+	f: 175	q: 114.83
+	f: 180	q: 42.36
 
 g:5
 size: 2
-	f: 175	q: 555.89
-	f: 180	q: 259.24
+	f: 175	q: 518.48
+	f: 180	q: 296.19
 
 g:6
 size: 2
-	f: 175	q: 2471.12
-	f: 180	q: 1575.33
+	f: 175	q: 2271.07
+	f: 180	q: 1699.06
 
 g:7
 size: 2
-	f: 175	q: 9977.87
-	f: 180	q: 8022.85
+	f: 175	q: 8722.08
+	f: 180	q: 8820.86
 
 g:8
 size: 2
-	f: 175	q: 33038.7
-	f: 180	q: 36321.8
+	f: 175	q: 31436.2
+	f: 180	q: 37729.9
 
 g:9
 size: 2
-	f: 175	q: 88836.6
-	f: 180	q: 136263
+	f: 175	q: 76125.8
+	f: 180	q: 154582
 
 g:10
 size: 2
-	f: 175	q: 153787
-	f: 180	q: 374713
+	f: 175	q: 184635
+	f: 180	q: 403671
 
 g:11
 size: 2
-	f: 175	q: 280202
-	f: 180	q: 480552
+	f: 175	q: 278829
+	f: 180	q: 621167
 
 g:12
 size: 0

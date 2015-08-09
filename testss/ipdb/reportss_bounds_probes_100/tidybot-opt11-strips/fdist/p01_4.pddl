@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/tidybot-opt11-strips/fdist/p01_4.pddl
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_100/tidybot-opt11-strips/fdist/p01_4.pddl
 predictionSS: 65
-ss_timer: 0.06
+ss_timer: 0.04
 g:0
 size: 1
 	f: 4	q: 1

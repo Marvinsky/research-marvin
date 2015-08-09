@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/elevators-opt11-strips/fdist/p01_47.pddl
-predictionSS: 637.64
-ss_timer: 5.5
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_100/elevators-opt11-strips/fdist/p01_47.pddl
+predictionSS: 714.7
+ss_timer: 5.58
 g:0
 size: 1
 	f: 39	q: 1
@@ -14,9 +14,9 @@ size: 4
 
 g:2
 size: 3
-	f: 44	q: 12.76
-	f: 46	q: 6.61
-	f: 47	q: 3.63
+	f: 44	q: 12.71
+	f: 46	q: 6
+	f: 47	q: 4.29
 
 g:3
 size: 2
@@ -26,50 +26,50 @@ size: 2
 g:4
 size: 3
 	f: 44	q: 11
-	f: 46	q: 3.8
-	f: 47	q: 7.2
+	f: 46	q: 2.72
+	f: 47	q: 8.28
 
 g:5
 size: 3
-	f: 44	q: 15.08
+	f: 44	q: 15.2
 	f: 46	q: 2
 	f: 47	q: 4
 
 g:6
 size: 1
-	f: 44	q: 28.1
+	f: 44	q: 28.38
 
 g:7
 size: 1
-	f: 44	q: 44.64
+	f: 44	q: 49.56
 
 g:8
 size: 1
-	f: 44	q: 69.92
+	f: 44	q: 78.46
 
 g:9
 size: 1
-	f: 44	q: 21.8
+	f: 44	q: 27.6
 
 g:10
 size: 1
-	f: 44	q: 183.1
+	f: 44	q: 201.3
 
 g:11
 size: 1
-	f: 44	q: 42.44
+	f: 44	q: 53.16
 
 g:12
 size: 1
-	f: 44	q: 125.96
+	f: 44	q: 151.24
 
 g:13
 size: 1
-	f: 44	q: 22.56
+	f: 44	q: 24.48
 
 g:14
 size: 1
-	f: 44	q: 15.04
+	f: 44	q: 16.32
 
 g:15
 size: 0

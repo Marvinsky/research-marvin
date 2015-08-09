@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/elevators-opt11-strips/fdist/p03_33.pddl
-predictionSS: 16.92
-ss_timer: 0.32
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_100/elevators-opt11-strips/fdist/p03_33.pddl
+predictionSS: 17.12
+ss_timer: 0.44
 g:0
 size: 1
 	f: 27	q: 1
@@ -9,21 +9,21 @@ g:1
 size: 4
 	f: 27	q: 1
 	f: 29	q: 1
-	f: 32	q: 1.96
-	f: 33	q: 2.04
+	f: 32	q: 2.06
+	f: 33	q: 1.94
 
 g:2
 size: 2
-	f: 32	q: 4
-	f: 33	q: 2
+	f: 32	q: 4.08
+	f: 33	q: 1.92
 
 g:3
 size: 1
-	f: 32	q: 1.96
+	f: 32	q: 2.06
 
 g:4
 size: 1
-	f: 32	q: 1.96
+	f: 32	q: 2.06
 
 g:5
 size: 0
