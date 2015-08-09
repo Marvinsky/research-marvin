@@ -6,7 +6,7 @@ p14.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 0		1			1
 1		2			2
-2		325			----zero_info----
+2		325			325
 3		3.70168e+06			862869
 
 p19.pddl
@@ -150,7 +150,7 @@ p24.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 0		1			1
 1		2			2
-2		40385			----zero_info----
+2		40385			40385
 
 p09.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -189,7 +189,3 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 0		1			1
 1		2			2
 2		406			406
-
-Files that contains zero_info:
-p14.pddl
-p24.pddl
