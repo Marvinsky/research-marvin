@@ -8,7 +8,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 22		41			36
 23		1072			869.5
 24		27106			20444
-25		678209			----zero_info----
+25		678209			643093
 26		1.67729e+07			1.42381e+07
 
 pfile05-018.pddl
@@ -23,9 +23,9 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 pfile07-027.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-20		2			----zero_info----
-21		57			----zero_info----
-22		1289			----zero_info----
+20		2			2
+21		57			61.5
+22		1289			1386.9
 23		28848			39172.7
 24		637863			587300
 25		1.40456e+07			1.19881e+07
@@ -35,7 +35,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 16		1			1
 17		21			23.4
 18		462			394.6
-19		10437			----zero_info----
+19		10437			8801.2
 20		227587			151269
 21		4.77978e+06			5.62838e+06
 22		9.69391e+07			8.045e+07
@@ -51,11 +51,11 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 pfile07-028.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-20		1			----zero_info----
+20		1			1
 21		28			27
-22		681			----zero_info----
-23		16387			----zero_info----
-24		388237			----zero_info----
+22		681			581
+23		16387			22769
+24		388237			332213
 25		9.07834e+06			3.95271e+06
 
 pfile05-019.pddl
@@ -63,15 +63,15 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 16		1			1
 17		15			9.8
 18		305			392.2
-19		5989			----zero_info----
-20		113023			----zero_info----
+19		5989			5711.4
+20		113023			157433
 21		2.097e+06			1.69642e+06
 22		3.81276e+07			3.702e+07
 23		6.82969e+08			9.45796e+08
 
 pfile06-021.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-17		3			----zero_info----
+17		3			3
 18		86			90.8
 19		2517			2991
 20		64194			62356.6
@@ -123,11 +123,11 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 pfile06-024.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 17		1			1
-18		40			----zero_info----
+18		40			31.4
 19		1327			755.8
-20		36497			----zero_info----
-21		882357			----zero_info----
-22		1.94712e+07			----zero_info----
+20		36497			23931.4
+21		882357			603138
+22		1.94712e+07			2.2386e+07
 23		4.04024e+08			2.28572e+08
 
 pfile06-022.pddl
@@ -135,7 +135,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 18		1			1
 19		30			28
 20		727			755.2
-21		17354			----zero_info----
+21		17354			17084.8
 22		391954			271790
 23		8.54093e+06			8.04908e+06
 24		1.8079e+08			1.67874e+08
@@ -177,7 +177,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 20		1			1
 21		29			38
 22		1152			831
-23		35657			----zero_info----
+23		35657			58200
 24		1.01507e+06			906050
 25		2.70094e+07			2.06914e+07
 
@@ -204,12 +204,3 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 Files that contains zero_info:
 pfile04-014.pddl
-pfile05-019.pddl
-pfile06-021.pddl
-pfile06-022.pddl
-pfile06-023.pddl
-pfile06-024.pddl
-pfile07-025.pddl
-pfile07-027.pddl
-pfile07-028.pddl
-pfile08-029.pddl
