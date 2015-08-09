@@ -40,127 +40,127 @@ Measure_1:
 Measure_2:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_0, gapdb_1):	0.89936	-	1	=	-0.10064
-	(gapdb_2, gapdb_3):	1	-	1	=	0
-	(gapdb_2, gapdb_4):	1	-	1	=	0
-	(gapdb_2, gapdb_5):	1	-	1	=	0
-	(gapdb_2, gapdb_6):	1	-	1	=	0
-	(gapdb_2, gapdb_7):	1	-	1	=	0
-	(gapdb_2, gapdb_8):	1	-	1	=	0
-	(gapdb_2, gapdb_9):	1	-	1	=	0
-	(gapdb_2, gapdb_10):	1	-	1	=	0
-	(gapdb_2, gapdb_11):	1	-	1	=	0
-	(gapdb_3, gapdb_2):	1	-	1	=	0
-	(gapdb_3, gapdb_4):	1	-	1	=	0
-	(gapdb_3, gapdb_5):	1	-	1	=	0
-	(gapdb_3, gapdb_6):	1	-	1	=	0
-	(gapdb_3, gapdb_7):	1	-	1	=	0
-	(gapdb_3, gapdb_8):	1	-	1	=	0
-	(gapdb_3, gapdb_9):	1	-	1	=	0
-	(gapdb_3, gapdb_10):	1	-	1	=	0
-	(gapdb_3, gapdb_11):	1	-	1	=	0
-	(gapdb_4, gapdb_2):	1	-	1	=	0
-	(gapdb_4, gapdb_3):	1	-	1	=	0
-	(gapdb_4, gapdb_5):	1	-	1	=	0
-	(gapdb_4, gapdb_6):	1	-	1	=	0
-	(gapdb_4, gapdb_7):	1	-	1	=	0
-	(gapdb_4, gapdb_8):	1	-	1	=	0
-	(gapdb_4, gapdb_9):	1	-	1	=	0
-	(gapdb_4, gapdb_10):	1	-	1	=	0
-	(gapdb_4, gapdb_11):	1	-	1	=	0
-	(gapdb_5, gapdb_2):	1	-	1	=	0
-	(gapdb_5, gapdb_3):	1	-	1	=	0
-	(gapdb_5, gapdb_4):	1	-	1	=	0
-	(gapdb_5, gapdb_6):	1	-	1	=	0
-	(gapdb_5, gapdb_7):	1	-	1	=	0
-	(gapdb_5, gapdb_8):	1	-	1	=	0
-	(gapdb_5, gapdb_9):	1	-	1	=	0
-	(gapdb_5, gapdb_10):	1	-	1	=	0
-	(gapdb_5, gapdb_11):	1	-	1	=	0
-	(gapdb_6, gapdb_2):	1	-	1	=	0
-	(gapdb_6, gapdb_3):	1	-	1	=	0
-	(gapdb_6, gapdb_4):	1	-	1	=	0
-	(gapdb_6, gapdb_5):	1	-	1	=	0
-	(gapdb_6, gapdb_7):	1	-	1	=	0
-	(gapdb_6, gapdb_8):	1	-	1	=	0
-	(gapdb_6, gapdb_9):	1	-	1	=	0
-	(gapdb_6, gapdb_10):	1	-	1	=	0
-	(gapdb_6, gapdb_11):	1	-	1	=	0
-	(gapdb_7, gapdb_2):	1	-	1	=	0
-	(gapdb_7, gapdb_3):	1	-	1	=	0
-	(gapdb_7, gapdb_4):	1	-	1	=	0
-	(gapdb_7, gapdb_5):	1	-	1	=	0
-	(gapdb_7, gapdb_6):	1	-	1	=	0
-	(gapdb_7, gapdb_8):	1	-	1	=	0
-	(gapdb_7, gapdb_9):	1	-	1	=	0
-	(gapdb_7, gapdb_10):	1	-	1	=	0
-	(gapdb_7, gapdb_11):	1	-	1	=	0
-	(gapdb_8, gapdb_2):	1	-	1	=	0
-	(gapdb_8, gapdb_3):	1	-	1	=	0
-	(gapdb_8, gapdb_4):	1	-	1	=	0
-	(gapdb_8, gapdb_5):	1	-	1	=	0
-	(gapdb_8, gapdb_6):	1	-	1	=	0
-	(gapdb_8, gapdb_7):	1	-	1	=	0
-	(gapdb_8, gapdb_9):	1	-	1	=	0
-	(gapdb_8, gapdb_10):	1	-	1	=	0
-	(gapdb_8, gapdb_11):	1	-	1	=	0
-	(gapdb_9, gapdb_2):	1	-	1	=	0
-	(gapdb_9, gapdb_3):	1	-	1	=	0
-	(gapdb_9, gapdb_4):	1	-	1	=	0
-	(gapdb_9, gapdb_5):	1	-	1	=	0
-	(gapdb_9, gapdb_6):	1	-	1	=	0
-	(gapdb_9, gapdb_7):	1	-	1	=	0
-	(gapdb_9, gapdb_8):	1	-	1	=	0
-	(gapdb_9, gapdb_10):	1	-	1	=	0
-	(gapdb_9, gapdb_11):	1	-	1	=	0
-	(gapdb_10, gapdb_2):	1	-	1	=	0
-	(gapdb_10, gapdb_3):	1	-	1	=	0
-	(gapdb_10, gapdb_4):	1	-	1	=	0
-	(gapdb_10, gapdb_5):	1	-	1	=	0
-	(gapdb_10, gapdb_6):	1	-	1	=	0
-	(gapdb_10, gapdb_7):	1	-	1	=	0
-	(gapdb_10, gapdb_8):	1	-	1	=	0
-	(gapdb_10, gapdb_9):	1	-	1	=	0
-	(gapdb_10, gapdb_11):	1	-	1	=	0
-	(gapdb_11, gapdb_2):	1	-	1	=	0
-	(gapdb_11, gapdb_3):	1	-	1	=	0
-	(gapdb_11, gapdb_4):	1	-	1	=	0
-	(gapdb_11, gapdb_5):	1	-	1	=	0
-	(gapdb_11, gapdb_6):	1	-	1	=	0
-	(gapdb_11, gapdb_7):	1	-	1	=	0
-	(gapdb_11, gapdb_8):	1	-	1	=	0
-	(gapdb_11, gapdb_9):	1	-	1	=	0
-	(gapdb_11, gapdb_10):	1	-	1	=	0
-	(gapdb_1, gapdb_0):	1.1119	-	1	=	0.111902
+	(0_gapdb, 1_gapdb):	0.89936	-	1	=	-0.10064
+	(2_gapdb, 3_gapdb):	1	-	1	=	0
+	(2_gapdb, 4_gapdb):	1	-	1	=	0
+	(2_gapdb, 5_gapdb):	1	-	1	=	0
+	(2_gapdb, 6_gapdb):	1	-	1	=	0
+	(2_gapdb, 7_gapdb):	1	-	1	=	0
+	(2_gapdb, 8_gapdb):	1	-	1	=	0
+	(2_gapdb, 9_gapdb):	1	-	1	=	0
+	(2_gapdb, 10_gapdb):	1	-	1	=	0
+	(2_gapdb, 11_gapdb):	1	-	1	=	0
+	(3_gapdb, 2_gapdb):	1	-	1	=	0
+	(3_gapdb, 4_gapdb):	1	-	1	=	0
+	(3_gapdb, 5_gapdb):	1	-	1	=	0
+	(3_gapdb, 6_gapdb):	1	-	1	=	0
+	(3_gapdb, 7_gapdb):	1	-	1	=	0
+	(3_gapdb, 8_gapdb):	1	-	1	=	0
+	(3_gapdb, 9_gapdb):	1	-	1	=	0
+	(3_gapdb, 10_gapdb):	1	-	1	=	0
+	(3_gapdb, 11_gapdb):	1	-	1	=	0
+	(4_gapdb, 2_gapdb):	1	-	1	=	0
+	(4_gapdb, 3_gapdb):	1	-	1	=	0
+	(4_gapdb, 5_gapdb):	1	-	1	=	0
+	(4_gapdb, 6_gapdb):	1	-	1	=	0
+	(4_gapdb, 7_gapdb):	1	-	1	=	0
+	(4_gapdb, 8_gapdb):	1	-	1	=	0
+	(4_gapdb, 9_gapdb):	1	-	1	=	0
+	(4_gapdb, 10_gapdb):	1	-	1	=	0
+	(4_gapdb, 11_gapdb):	1	-	1	=	0
+	(5_gapdb, 2_gapdb):	1	-	1	=	0
+	(5_gapdb, 3_gapdb):	1	-	1	=	0
+	(5_gapdb, 4_gapdb):	1	-	1	=	0
+	(5_gapdb, 6_gapdb):	1	-	1	=	0
+	(5_gapdb, 7_gapdb):	1	-	1	=	0
+	(5_gapdb, 8_gapdb):	1	-	1	=	0
+	(5_gapdb, 9_gapdb):	1	-	1	=	0
+	(5_gapdb, 10_gapdb):	1	-	1	=	0
+	(5_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 2_gapdb):	1	-	1	=	0
+	(6_gapdb, 3_gapdb):	1	-	1	=	0
+	(6_gapdb, 4_gapdb):	1	-	1	=	0
+	(6_gapdb, 5_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 2_gapdb):	1	-	1	=	0
+	(7_gapdb, 3_gapdb):	1	-	1	=	0
+	(7_gapdb, 4_gapdb):	1	-	1	=	0
+	(7_gapdb, 5_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 2_gapdb):	1	-	1	=	0
+	(8_gapdb, 3_gapdb):	1	-	1	=	0
+	(8_gapdb, 4_gapdb):	1	-	1	=	0
+	(8_gapdb, 5_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 2_gapdb):	1	-	1	=	0
+	(9_gapdb, 3_gapdb):	1	-	1	=	0
+	(9_gapdb, 4_gapdb):	1	-	1	=	0
+	(9_gapdb, 5_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 2_gapdb):	1	-	1	=	0
+	(10_gapdb, 3_gapdb):	1	-	1	=	0
+	(10_gapdb, 4_gapdb):	1	-	1	=	0
+	(10_gapdb, 5_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(11_gapdb, 2_gapdb):	1	-	1	=	0
+	(11_gapdb, 3_gapdb):	1	-	1	=	0
+	(11_gapdb, 4_gapdb):	1	-	1	=	0
+	(11_gapdb, 5_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
+	(1_gapdb, 0_gapdb):	1.1119	-	1	=	0.111902
 
 Measure_3:
 	-h1(12):		SS		A*
-	gapdb_0		1.12694e-316		1.12757e-316
-	gapdb_1		1.12694e-316		1.12757e-316
-	gapdb_10		1.12694e-316		1.12757e-316
-	gapdb_11		1.12694e-316		1.12757e-316
-	gapdb_2		1.12694e-316		1.12757e-316
-	gapdb_3		1.12694e-316		1.12757e-316
-	gapdb_4		1.12694e-316		1.12757e-316
-	gapdb_5		1.12694e-316		1.12757e-316
-	gapdb_6		1.12694e-316		1.12757e-316
-	gapdb_7		1.12694e-316		1.12757e-316
-	gapdb_8		1.12694e-316		1.12757e-316
-	gapdb_9		1.12694e-316		1.12757e-316
+	0_gapdb		1.37041e-316		520
+	10_gapdb		159.079		520
+	11_gapdb		159.079		520
+	1_gapdb		1.37041e-316		520
+	2_gapdb		159.079		520
+	3_gapdb		159.079		520
+	4_gapdb		159.079		520
+	5_gapdb		159.079		520
+	6_gapdb		159.079		520
+	7_gapdb		159.079		520
+	8_gapdb		159.079		520
+	9_gapdb		159.079		520
 
 	-h2(12):		SS		A*
-	gapdb_0		1.12694e-316		1.12757e-316
-	gapdb_1		1.12694e-316		1.12757e-316
-	gapdb_10		1.12694e-316		1.12757e-316
-	gapdb_11		1.12694e-316		1.12757e-316
-	gapdb_2		1.12694e-316		1.12757e-316
-	gapdb_3		1.12694e-316		1.12757e-316
-	gapdb_4		1.12694e-316		1.12757e-316
-	gapdb_5		1.12694e-316		1.12757e-316
-	gapdb_6		1.12694e-316		1.12757e-316
-	gapdb_7		1.12694e-316		1.12757e-316
-	gapdb_8		1.12694e-316		1.12757e-316
-	gapdb_9		1.12694e-316		1.12757e-316
+	0_gapdb		1.37041e-316		520
+	10_gapdb		159.079		520
+	11_gapdb		159.079		520
+	1_gapdb		1.37041e-316		520
+	2_gapdb		159.079		520
+	3_gapdb		159.079		520
+	4_gapdb		159.079		520
+	5_gapdb		159.079		520
+	6_gapdb		159.079		520
+	7_gapdb		159.079		520
+	8_gapdb		159.079		520
+	9_gapdb		159.079		520
 
 
 
@@ -202,121 +202,121 @@ Measure_1:
 Measure_2:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_0, gapdb_1):	1	-	1	=	0
-	(gapdb_0, gapdb_3):	1	-	1	=	0
-	(gapdb_0, gapdb_5):	1	-	1	=	0
-	(gapdb_0, gapdb_6):	1	-	1	=	0
-	(gapdb_0, gapdb_7):	1	-	1	=	0
-	(gapdb_0, gapdb_8):	1	-	1	=	0
-	(gapdb_0, gapdb_9):	1	-	1	=	0
-	(gapdb_0, gapdb_10):	1	-	1	=	0
-	(gapdb_0, gapdb_11):	1	-	1	=	0
-	(gapdb_1, gapdb_0):	1	-	1	=	0
-	(gapdb_1, gapdb_3):	1	-	1	=	0
-	(gapdb_1, gapdb_5):	1	-	1	=	0
-	(gapdb_1, gapdb_6):	1	-	1	=	0
-	(gapdb_1, gapdb_7):	1	-	1	=	0
-	(gapdb_1, gapdb_8):	1	-	1	=	0
-	(gapdb_1, gapdb_9):	1	-	1	=	0
-	(gapdb_1, gapdb_10):	1	-	1	=	0
-	(gapdb_1, gapdb_11):	1	-	1	=	0
-	(gapdb_3, gapdb_0):	1	-	1	=	0
-	(gapdb_3, gapdb_1):	1	-	1	=	0
-	(gapdb_3, gapdb_5):	1	-	1	=	0
-	(gapdb_3, gapdb_6):	1	-	1	=	0
-	(gapdb_3, gapdb_7):	1	-	1	=	0
-	(gapdb_3, gapdb_8):	1	-	1	=	0
-	(gapdb_3, gapdb_9):	1	-	1	=	0
-	(gapdb_3, gapdb_10):	1	-	1	=	0
-	(gapdb_3, gapdb_11):	1	-	1	=	0
-	(gapdb_5, gapdb_0):	1	-	1	=	0
-	(gapdb_5, gapdb_1):	1	-	1	=	0
-	(gapdb_5, gapdb_3):	1	-	1	=	0
-	(gapdb_5, gapdb_6):	1	-	1	=	0
-	(gapdb_5, gapdb_7):	1	-	1	=	0
-	(gapdb_5, gapdb_8):	1	-	1	=	0
-	(gapdb_5, gapdb_9):	1	-	1	=	0
-	(gapdb_5, gapdb_10):	1	-	1	=	0
-	(gapdb_5, gapdb_11):	1	-	1	=	0
-	(gapdb_6, gapdb_0):	1	-	1	=	0
-	(gapdb_6, gapdb_1):	1	-	1	=	0
-	(gapdb_6, gapdb_3):	1	-	1	=	0
-	(gapdb_6, gapdb_5):	1	-	1	=	0
-	(gapdb_6, gapdb_7):	1	-	1	=	0
-	(gapdb_6, gapdb_8):	1	-	1	=	0
-	(gapdb_6, gapdb_9):	1	-	1	=	0
-	(gapdb_6, gapdb_10):	1	-	1	=	0
-	(gapdb_6, gapdb_11):	1	-	1	=	0
-	(gapdb_7, gapdb_0):	1	-	1	=	0
-	(gapdb_7, gapdb_1):	1	-	1	=	0
-	(gapdb_7, gapdb_3):	1	-	1	=	0
-	(gapdb_7, gapdb_5):	1	-	1	=	0
-	(gapdb_7, gapdb_6):	1	-	1	=	0
-	(gapdb_7, gapdb_8):	1	-	1	=	0
-	(gapdb_7, gapdb_9):	1	-	1	=	0
-	(gapdb_7, gapdb_10):	1	-	1	=	0
-	(gapdb_7, gapdb_11):	1	-	1	=	0
-	(gapdb_8, gapdb_0):	1	-	1	=	0
-	(gapdb_8, gapdb_1):	1	-	1	=	0
-	(gapdb_8, gapdb_3):	1	-	1	=	0
-	(gapdb_8, gapdb_5):	1	-	1	=	0
-	(gapdb_8, gapdb_6):	1	-	1	=	0
-	(gapdb_8, gapdb_7):	1	-	1	=	0
-	(gapdb_8, gapdb_9):	1	-	1	=	0
-	(gapdb_8, gapdb_10):	1	-	1	=	0
-	(gapdb_8, gapdb_11):	1	-	1	=	0
-	(gapdb_9, gapdb_0):	1	-	1	=	0
-	(gapdb_9, gapdb_1):	1	-	1	=	0
-	(gapdb_9, gapdb_3):	1	-	1	=	0
-	(gapdb_9, gapdb_5):	1	-	1	=	0
-	(gapdb_9, gapdb_6):	1	-	1	=	0
-	(gapdb_9, gapdb_7):	1	-	1	=	0
-	(gapdb_9, gapdb_8):	1	-	1	=	0
-	(gapdb_9, gapdb_10):	1	-	1	=	0
-	(gapdb_9, gapdb_11):	1	-	1	=	0
-	(gapdb_10, gapdb_0):	1	-	1	=	0
-	(gapdb_10, gapdb_1):	1	-	1	=	0
-	(gapdb_10, gapdb_3):	1	-	1	=	0
-	(gapdb_10, gapdb_5):	1	-	1	=	0
-	(gapdb_10, gapdb_6):	1	-	1	=	0
-	(gapdb_10, gapdb_7):	1	-	1	=	0
-	(gapdb_10, gapdb_8):	1	-	1	=	0
-	(gapdb_10, gapdb_9):	1	-	1	=	0
-	(gapdb_10, gapdb_11):	1	-	1	=	0
-	(gapdb_11, gapdb_0):	1	-	1	=	0
-	(gapdb_11, gapdb_1):	1	-	1	=	0
-	(gapdb_11, gapdb_3):	1	-	1	=	0
-	(gapdb_11, gapdb_5):	1	-	1	=	0
-	(gapdb_11, gapdb_6):	1	-	1	=	0
-	(gapdb_11, gapdb_7):	1	-	1	=	0
-	(gapdb_11, gapdb_8):	1	-	1	=	0
-	(gapdb_11, gapdb_9):	1	-	1	=	0
-	(gapdb_11, gapdb_10):	1	-	1	=	0
+	(0_gapdb, 1_gapdb):	1	-	1	=	0
+	(0_gapdb, 3_gapdb):	1	-	1	=	0
+	(0_gapdb, 5_gapdb):	1	-	1	=	0
+	(0_gapdb, 6_gapdb):	1	-	1	=	0
+	(0_gapdb, 7_gapdb):	1	-	1	=	0
+	(0_gapdb, 8_gapdb):	1	-	1	=	0
+	(0_gapdb, 9_gapdb):	1	-	1	=	0
+	(0_gapdb, 10_gapdb):	1	-	1	=	0
+	(0_gapdb, 11_gapdb):	1	-	1	=	0
+	(1_gapdb, 0_gapdb):	1	-	1	=	0
+	(1_gapdb, 3_gapdb):	1	-	1	=	0
+	(1_gapdb, 5_gapdb):	1	-	1	=	0
+	(1_gapdb, 6_gapdb):	1	-	1	=	0
+	(1_gapdb, 7_gapdb):	1	-	1	=	0
+	(1_gapdb, 8_gapdb):	1	-	1	=	0
+	(1_gapdb, 9_gapdb):	1	-	1	=	0
+	(1_gapdb, 10_gapdb):	1	-	1	=	0
+	(1_gapdb, 11_gapdb):	1	-	1	=	0
+	(3_gapdb, 0_gapdb):	1	-	1	=	0
+	(3_gapdb, 1_gapdb):	1	-	1	=	0
+	(3_gapdb, 5_gapdb):	1	-	1	=	0
+	(3_gapdb, 6_gapdb):	1	-	1	=	0
+	(3_gapdb, 7_gapdb):	1	-	1	=	0
+	(3_gapdb, 8_gapdb):	1	-	1	=	0
+	(3_gapdb, 9_gapdb):	1	-	1	=	0
+	(3_gapdb, 10_gapdb):	1	-	1	=	0
+	(3_gapdb, 11_gapdb):	1	-	1	=	0
+	(5_gapdb, 0_gapdb):	1	-	1	=	0
+	(5_gapdb, 1_gapdb):	1	-	1	=	0
+	(5_gapdb, 3_gapdb):	1	-	1	=	0
+	(5_gapdb, 6_gapdb):	1	-	1	=	0
+	(5_gapdb, 7_gapdb):	1	-	1	=	0
+	(5_gapdb, 8_gapdb):	1	-	1	=	0
+	(5_gapdb, 9_gapdb):	1	-	1	=	0
+	(5_gapdb, 10_gapdb):	1	-	1	=	0
+	(5_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 0_gapdb):	1	-	1	=	0
+	(6_gapdb, 1_gapdb):	1	-	1	=	0
+	(6_gapdb, 3_gapdb):	1	-	1	=	0
+	(6_gapdb, 5_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 0_gapdb):	1	-	1	=	0
+	(7_gapdb, 1_gapdb):	1	-	1	=	0
+	(7_gapdb, 3_gapdb):	1	-	1	=	0
+	(7_gapdb, 5_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 0_gapdb):	1	-	1	=	0
+	(8_gapdb, 1_gapdb):	1	-	1	=	0
+	(8_gapdb, 3_gapdb):	1	-	1	=	0
+	(8_gapdb, 5_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 0_gapdb):	1	-	1	=	0
+	(9_gapdb, 1_gapdb):	1	-	1	=	0
+	(9_gapdb, 3_gapdb):	1	-	1	=	0
+	(9_gapdb, 5_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 0_gapdb):	1	-	1	=	0
+	(10_gapdb, 1_gapdb):	1	-	1	=	0
+	(10_gapdb, 3_gapdb):	1	-	1	=	0
+	(10_gapdb, 5_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(11_gapdb, 0_gapdb):	1	-	1	=	0
+	(11_gapdb, 1_gapdb):	1	-	1	=	0
+	(11_gapdb, 3_gapdb):	1	-	1	=	0
+	(11_gapdb, 5_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
 
 Measure_3:
 	-h1(10):		SS		A*
-	gapdb_0		1.12746e-316		1.12757e-316
-	gapdb_1		1.12746e-316		1.12757e-316
-	gapdb_10		1.12746e-316		1.12757e-316
-	gapdb_11		1.12746e-316		1.12757e-316
-	gapdb_3		1.12746e-316		1.12757e-316
-	gapdb_5		1.12746e-316		1.12757e-316
-	gapdb_6		1.12746e-316		1.12757e-316
-	gapdb_7		1.12746e-316		1.12757e-316
-	gapdb_8		1.12746e-316		1.12757e-316
-	gapdb_9		1.12746e-316		1.12757e-316
+	0_gapdb		609943		607543
+	10_gapdb		609943		607543
+	11_gapdb		609943		607543
+	1_gapdb		609943		607543
+	3_gapdb		609943		607543
+	5_gapdb		609943		607543
+	6_gapdb		609943		607543
+	7_gapdb		609943		607543
+	8_gapdb		609943		607543
+	9_gapdb		609943		607543
 
 	-h2(10):		SS		A*
-	gapdb_0		1.12746e-316		1.12757e-316
-	gapdb_1		1.12746e-316		1.12757e-316
-	gapdb_10		1.12746e-316		1.12757e-316
-	gapdb_11		1.12746e-316		1.12757e-316
-	gapdb_3		1.12746e-316		1.12757e-316
-	gapdb_5		1.12746e-316		1.12757e-316
-	gapdb_6		1.12746e-316		1.12757e-316
-	gapdb_7		1.12746e-316		1.12757e-316
-	gapdb_8		1.12746e-316		1.12757e-316
-	gapdb_9		1.12746e-316		1.12757e-316
+	0_gapdb		609943		607543
+	10_gapdb		609943		607543
+	11_gapdb		609943		607543
+	1_gapdb		609943		607543
+	3_gapdb		609943		607543
+	5_gapdb		609943		607543
+	6_gapdb		609943		607543
+	7_gapdb		609943		607543
+	8_gapdb		609943		607543
+	9_gapdb		609943		607543
 
 
 
@@ -358,106 +358,106 @@ Measure_1:
 Measure_2:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_1, gapdb_0):	0.00842342	-	0.206338	=	-0.197914
-	(gapdb_2, gapdb_0):	0.0423775	-	0.206338	=	-0.16396
-	(gapdb_3, gapdb_4):	1	-	1	=	0
-	(gapdb_3, gapdb_5):	1	-	1	=	0
-	(gapdb_3, gapdb_6):	1	-	1	=	0
-	(gapdb_3, gapdb_7):	1	-	1	=	0
-	(gapdb_3, gapdb_8):	1	-	1	=	0
-	(gapdb_3, gapdb_9):	1	-	1	=	0
-	(gapdb_3, gapdb_10):	1	-	1	=	0
-	(gapdb_3, gapdb_11):	1	-	1	=	0
-	(gapdb_4, gapdb_3):	1	-	1	=	0
-	(gapdb_4, gapdb_5):	1	-	1	=	0
-	(gapdb_4, gapdb_6):	1	-	1	=	0
-	(gapdb_4, gapdb_7):	1	-	1	=	0
-	(gapdb_4, gapdb_8):	1	-	1	=	0
-	(gapdb_4, gapdb_9):	1	-	1	=	0
-	(gapdb_4, gapdb_10):	1	-	1	=	0
-	(gapdb_4, gapdb_11):	1	-	1	=	0
-	(gapdb_5, gapdb_3):	1	-	1	=	0
-	(gapdb_5, gapdb_4):	1	-	1	=	0
-	(gapdb_5, gapdb_6):	1	-	1	=	0
-	(gapdb_5, gapdb_7):	1	-	1	=	0
-	(gapdb_5, gapdb_8):	1	-	1	=	0
-	(gapdb_5, gapdb_9):	1	-	1	=	0
-	(gapdb_5, gapdb_10):	1	-	1	=	0
-	(gapdb_5, gapdb_11):	1	-	1	=	0
-	(gapdb_6, gapdb_3):	1	-	1	=	0
-	(gapdb_6, gapdb_4):	1	-	1	=	0
-	(gapdb_6, gapdb_5):	1	-	1	=	0
-	(gapdb_6, gapdb_7):	1	-	1	=	0
-	(gapdb_6, gapdb_8):	1	-	1	=	0
-	(gapdb_6, gapdb_9):	1	-	1	=	0
-	(gapdb_6, gapdb_10):	1	-	1	=	0
-	(gapdb_6, gapdb_11):	1	-	1	=	0
-	(gapdb_7, gapdb_3):	1	-	1	=	0
-	(gapdb_7, gapdb_4):	1	-	1	=	0
-	(gapdb_7, gapdb_5):	1	-	1	=	0
-	(gapdb_7, gapdb_6):	1	-	1	=	0
-	(gapdb_7, gapdb_8):	1	-	1	=	0
-	(gapdb_7, gapdb_9):	1	-	1	=	0
-	(gapdb_7, gapdb_10):	1	-	1	=	0
-	(gapdb_7, gapdb_11):	1	-	1	=	0
-	(gapdb_8, gapdb_3):	1	-	1	=	0
-	(gapdb_8, gapdb_4):	1	-	1	=	0
-	(gapdb_8, gapdb_5):	1	-	1	=	0
-	(gapdb_8, gapdb_6):	1	-	1	=	0
-	(gapdb_8, gapdb_7):	1	-	1	=	0
-	(gapdb_8, gapdb_9):	1	-	1	=	0
-	(gapdb_8, gapdb_10):	1	-	1	=	0
-	(gapdb_8, gapdb_11):	1	-	1	=	0
-	(gapdb_9, gapdb_3):	1	-	1	=	0
-	(gapdb_9, gapdb_4):	1	-	1	=	0
-	(gapdb_9, gapdb_5):	1	-	1	=	0
-	(gapdb_9, gapdb_6):	1	-	1	=	0
-	(gapdb_9, gapdb_7):	1	-	1	=	0
-	(gapdb_9, gapdb_8):	1	-	1	=	0
-	(gapdb_9, gapdb_10):	1	-	1	=	0
-	(gapdb_9, gapdb_11):	1	-	1	=	0
-	(gapdb_10, gapdb_3):	1	-	1	=	0
-	(gapdb_10, gapdb_4):	1	-	1	=	0
-	(gapdb_10, gapdb_5):	1	-	1	=	0
-	(gapdb_10, gapdb_6):	1	-	1	=	0
-	(gapdb_10, gapdb_7):	1	-	1	=	0
-	(gapdb_10, gapdb_8):	1	-	1	=	0
-	(gapdb_10, gapdb_9):	1	-	1	=	0
-	(gapdb_10, gapdb_11):	1	-	1	=	0
-	(gapdb_11, gapdb_3):	1	-	1	=	0
-	(gapdb_11, gapdb_4):	1	-	1	=	0
-	(gapdb_11, gapdb_5):	1	-	1	=	0
-	(gapdb_11, gapdb_6):	1	-	1	=	0
-	(gapdb_11, gapdb_7):	1	-	1	=	0
-	(gapdb_11, gapdb_8):	1	-	1	=	0
-	(gapdb_11, gapdb_9):	1	-	1	=	0
-	(gapdb_11, gapdb_10):	1	-	1	=	0
+	(1_gapdb, 0_gapdb):	0.00842342	-	0.206338	=	-0.197914
+	(2_gapdb, 0_gapdb):	0.0423775	-	0.206338	=	-0.16396
+	(3_gapdb, 4_gapdb):	1	-	1	=	0
+	(3_gapdb, 5_gapdb):	1	-	1	=	0
+	(3_gapdb, 6_gapdb):	1	-	1	=	0
+	(3_gapdb, 7_gapdb):	1	-	1	=	0
+	(3_gapdb, 8_gapdb):	1	-	1	=	0
+	(3_gapdb, 9_gapdb):	1	-	1	=	0
+	(3_gapdb, 10_gapdb):	1	-	1	=	0
+	(3_gapdb, 11_gapdb):	1	-	1	=	0
+	(4_gapdb, 3_gapdb):	1	-	1	=	0
+	(4_gapdb, 5_gapdb):	1	-	1	=	0
+	(4_gapdb, 6_gapdb):	1	-	1	=	0
+	(4_gapdb, 7_gapdb):	1	-	1	=	0
+	(4_gapdb, 8_gapdb):	1	-	1	=	0
+	(4_gapdb, 9_gapdb):	1	-	1	=	0
+	(4_gapdb, 10_gapdb):	1	-	1	=	0
+	(4_gapdb, 11_gapdb):	1	-	1	=	0
+	(5_gapdb, 3_gapdb):	1	-	1	=	0
+	(5_gapdb, 4_gapdb):	1	-	1	=	0
+	(5_gapdb, 6_gapdb):	1	-	1	=	0
+	(5_gapdb, 7_gapdb):	1	-	1	=	0
+	(5_gapdb, 8_gapdb):	1	-	1	=	0
+	(5_gapdb, 9_gapdb):	1	-	1	=	0
+	(5_gapdb, 10_gapdb):	1	-	1	=	0
+	(5_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 3_gapdb):	1	-	1	=	0
+	(6_gapdb, 4_gapdb):	1	-	1	=	0
+	(6_gapdb, 5_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 3_gapdb):	1	-	1	=	0
+	(7_gapdb, 4_gapdb):	1	-	1	=	0
+	(7_gapdb, 5_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 3_gapdb):	1	-	1	=	0
+	(8_gapdb, 4_gapdb):	1	-	1	=	0
+	(8_gapdb, 5_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 3_gapdb):	1	-	1	=	0
+	(9_gapdb, 4_gapdb):	1	-	1	=	0
+	(9_gapdb, 5_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 3_gapdb):	1	-	1	=	0
+	(10_gapdb, 4_gapdb):	1	-	1	=	0
+	(10_gapdb, 5_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(11_gapdb, 3_gapdb):	1	-	1	=	0
+	(11_gapdb, 4_gapdb):	1	-	1	=	0
+	(11_gapdb, 5_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
 
 Measure_3:
 	-h1(11):		SS		A*
-	gapdb_1		1.12753e-316		1.12757e-316
-	gapdb_10		1.12753e-316		1.12757e-316
-	gapdb_11		1.12753e-316		1.12757e-316
-	gapdb_2		1.12753e-316		1.12757e-316
-	gapdb_3		1.12753e-316		1.12757e-316
-	gapdb_4		1.12753e-316		1.12757e-316
-	gapdb_5		1.12753e-316		1.12757e-316
-	gapdb_6		1.12753e-316		1.12757e-316
-	gapdb_7		1.12753e-316		1.12757e-316
-	gapdb_8		1.12753e-316		1.12757e-316
-	gapdb_9		1.12753e-316		1.12757e-316
+	10_gapdb		3.31124e+06		125359
+	11_gapdb		3.31124e+06		125359
+	1_gapdb		1.36982e-316		125359
+	2_gapdb		1.36982e-316		125359
+	3_gapdb		3.31124e+06		125359
+	4_gapdb		3.31124e+06		125359
+	5_gapdb		3.31124e+06		125359
+	6_gapdb		3.31124e+06		125359
+	7_gapdb		3.31124e+06		125359
+	8_gapdb		3.31124e+06		125359
+	9_gapdb		3.31124e+06		125359
 
 	-h2(10):		SS		A*
-	gapdb_0		1.12753e-316		1.12757e-316
-	gapdb_10		1.12753e-316		1.12757e-316
-	gapdb_11		1.12753e-316		1.12757e-316
-	gapdb_3		1.12753e-316		1.12757e-316
-	gapdb_4		1.12753e-316		1.12757e-316
-	gapdb_5		1.12753e-316		1.12757e-316
-	gapdb_6		1.12753e-316		1.12757e-316
-	gapdb_7		1.12753e-316		1.12757e-316
-	gapdb_8		1.12753e-316		1.12757e-316
-	gapdb_9		1.12753e-316		1.12757e-316
+	0_gapdb		3.31124e+06		607543
+	10_gapdb		3.31124e+06		125359
+	11_gapdb		3.31124e+06		125359
+	3_gapdb		3.31124e+06		125359
+	4_gapdb		3.31124e+06		125359
+	5_gapdb		3.31124e+06		125359
+	6_gapdb		3.31124e+06		125359
+	7_gapdb		3.31124e+06		125359
+	8_gapdb		3.31124e+06		125359
+	9_gapdb		3.31124e+06		125359
 
 
 
@@ -499,127 +499,127 @@ Measure_1:
 Measure_2:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_2, gapdb_3):	0.713703	-	1	=	-0.286297
-	(gapdb_0, gapdb_1):	1	-	1	=	0
-	(gapdb_0, gapdb_4):	1	-	1	=	0
-	(gapdb_0, gapdb_5):	1	-	1	=	0
-	(gapdb_0, gapdb_6):	1	-	1	=	0
-	(gapdb_0, gapdb_7):	1	-	1	=	0
-	(gapdb_0, gapdb_8):	1	-	1	=	0
-	(gapdb_0, gapdb_9):	1	-	1	=	0
-	(gapdb_0, gapdb_10):	1	-	1	=	0
-	(gapdb_0, gapdb_11):	1	-	1	=	0
-	(gapdb_1, gapdb_0):	1	-	1	=	0
-	(gapdb_1, gapdb_4):	1	-	1	=	0
-	(gapdb_1, gapdb_5):	1	-	1	=	0
-	(gapdb_1, gapdb_6):	1	-	1	=	0
-	(gapdb_1, gapdb_7):	1	-	1	=	0
-	(gapdb_1, gapdb_8):	1	-	1	=	0
-	(gapdb_1, gapdb_9):	1	-	1	=	0
-	(gapdb_1, gapdb_10):	1	-	1	=	0
-	(gapdb_1, gapdb_11):	1	-	1	=	0
-	(gapdb_4, gapdb_0):	1	-	1	=	0
-	(gapdb_4, gapdb_1):	1	-	1	=	0
-	(gapdb_4, gapdb_5):	1	-	1	=	0
-	(gapdb_4, gapdb_6):	1	-	1	=	0
-	(gapdb_4, gapdb_7):	1	-	1	=	0
-	(gapdb_4, gapdb_8):	1	-	1	=	0
-	(gapdb_4, gapdb_9):	1	-	1	=	0
-	(gapdb_4, gapdb_10):	1	-	1	=	0
-	(gapdb_4, gapdb_11):	1	-	1	=	0
-	(gapdb_5, gapdb_0):	1	-	1	=	0
-	(gapdb_5, gapdb_1):	1	-	1	=	0
-	(gapdb_5, gapdb_4):	1	-	1	=	0
-	(gapdb_5, gapdb_6):	1	-	1	=	0
-	(gapdb_5, gapdb_7):	1	-	1	=	0
-	(gapdb_5, gapdb_8):	1	-	1	=	0
-	(gapdb_5, gapdb_9):	1	-	1	=	0
-	(gapdb_5, gapdb_10):	1	-	1	=	0
-	(gapdb_5, gapdb_11):	1	-	1	=	0
-	(gapdb_6, gapdb_0):	1	-	1	=	0
-	(gapdb_6, gapdb_1):	1	-	1	=	0
-	(gapdb_6, gapdb_4):	1	-	1	=	0
-	(gapdb_6, gapdb_5):	1	-	1	=	0
-	(gapdb_6, gapdb_7):	1	-	1	=	0
-	(gapdb_6, gapdb_8):	1	-	1	=	0
-	(gapdb_6, gapdb_9):	1	-	1	=	0
-	(gapdb_6, gapdb_10):	1	-	1	=	0
-	(gapdb_6, gapdb_11):	1	-	1	=	0
-	(gapdb_7, gapdb_0):	1	-	1	=	0
-	(gapdb_7, gapdb_1):	1	-	1	=	0
-	(gapdb_7, gapdb_4):	1	-	1	=	0
-	(gapdb_7, gapdb_5):	1	-	1	=	0
-	(gapdb_7, gapdb_6):	1	-	1	=	0
-	(gapdb_7, gapdb_8):	1	-	1	=	0
-	(gapdb_7, gapdb_9):	1	-	1	=	0
-	(gapdb_7, gapdb_10):	1	-	1	=	0
-	(gapdb_7, gapdb_11):	1	-	1	=	0
-	(gapdb_8, gapdb_0):	1	-	1	=	0
-	(gapdb_8, gapdb_1):	1	-	1	=	0
-	(gapdb_8, gapdb_4):	1	-	1	=	0
-	(gapdb_8, gapdb_5):	1	-	1	=	0
-	(gapdb_8, gapdb_6):	1	-	1	=	0
-	(gapdb_8, gapdb_7):	1	-	1	=	0
-	(gapdb_8, gapdb_9):	1	-	1	=	0
-	(gapdb_8, gapdb_10):	1	-	1	=	0
-	(gapdb_8, gapdb_11):	1	-	1	=	0
-	(gapdb_9, gapdb_0):	1	-	1	=	0
-	(gapdb_9, gapdb_1):	1	-	1	=	0
-	(gapdb_9, gapdb_4):	1	-	1	=	0
-	(gapdb_9, gapdb_5):	1	-	1	=	0
-	(gapdb_9, gapdb_6):	1	-	1	=	0
-	(gapdb_9, gapdb_7):	1	-	1	=	0
-	(gapdb_9, gapdb_8):	1	-	1	=	0
-	(gapdb_9, gapdb_10):	1	-	1	=	0
-	(gapdb_9, gapdb_11):	1	-	1	=	0
-	(gapdb_10, gapdb_0):	1	-	1	=	0
-	(gapdb_10, gapdb_1):	1	-	1	=	0
-	(gapdb_10, gapdb_4):	1	-	1	=	0
-	(gapdb_10, gapdb_5):	1	-	1	=	0
-	(gapdb_10, gapdb_6):	1	-	1	=	0
-	(gapdb_10, gapdb_7):	1	-	1	=	0
-	(gapdb_10, gapdb_8):	1	-	1	=	0
-	(gapdb_10, gapdb_9):	1	-	1	=	0
-	(gapdb_10, gapdb_11):	1	-	1	=	0
-	(gapdb_11, gapdb_0):	1	-	1	=	0
-	(gapdb_11, gapdb_1):	1	-	1	=	0
-	(gapdb_11, gapdb_4):	1	-	1	=	0
-	(gapdb_11, gapdb_5):	1	-	1	=	0
-	(gapdb_11, gapdb_6):	1	-	1	=	0
-	(gapdb_11, gapdb_7):	1	-	1	=	0
-	(gapdb_11, gapdb_8):	1	-	1	=	0
-	(gapdb_11, gapdb_9):	1	-	1	=	0
-	(gapdb_11, gapdb_10):	1	-	1	=	0
-	(gapdb_3, gapdb_2):	1.40114	-	1	=	0.401143
+	(2_gapdb, 3_gapdb):	0.713703	-	1	=	-0.286297
+	(0_gapdb, 1_gapdb):	1	-	1	=	0
+	(0_gapdb, 4_gapdb):	1	-	1	=	0
+	(0_gapdb, 5_gapdb):	1	-	1	=	0
+	(0_gapdb, 6_gapdb):	1	-	1	=	0
+	(0_gapdb, 7_gapdb):	1	-	1	=	0
+	(0_gapdb, 8_gapdb):	1	-	1	=	0
+	(0_gapdb, 9_gapdb):	1	-	1	=	0
+	(0_gapdb, 10_gapdb):	1	-	1	=	0
+	(0_gapdb, 11_gapdb):	1	-	1	=	0
+	(1_gapdb, 0_gapdb):	1	-	1	=	0
+	(1_gapdb, 4_gapdb):	1	-	1	=	0
+	(1_gapdb, 5_gapdb):	1	-	1	=	0
+	(1_gapdb, 6_gapdb):	1	-	1	=	0
+	(1_gapdb, 7_gapdb):	1	-	1	=	0
+	(1_gapdb, 8_gapdb):	1	-	1	=	0
+	(1_gapdb, 9_gapdb):	1	-	1	=	0
+	(1_gapdb, 10_gapdb):	1	-	1	=	0
+	(1_gapdb, 11_gapdb):	1	-	1	=	0
+	(4_gapdb, 0_gapdb):	1	-	1	=	0
+	(4_gapdb, 1_gapdb):	1	-	1	=	0
+	(4_gapdb, 5_gapdb):	1	-	1	=	0
+	(4_gapdb, 6_gapdb):	1	-	1	=	0
+	(4_gapdb, 7_gapdb):	1	-	1	=	0
+	(4_gapdb, 8_gapdb):	1	-	1	=	0
+	(4_gapdb, 9_gapdb):	1	-	1	=	0
+	(4_gapdb, 10_gapdb):	1	-	1	=	0
+	(4_gapdb, 11_gapdb):	1	-	1	=	0
+	(5_gapdb, 0_gapdb):	1	-	1	=	0
+	(5_gapdb, 1_gapdb):	1	-	1	=	0
+	(5_gapdb, 4_gapdb):	1	-	1	=	0
+	(5_gapdb, 6_gapdb):	1	-	1	=	0
+	(5_gapdb, 7_gapdb):	1	-	1	=	0
+	(5_gapdb, 8_gapdb):	1	-	1	=	0
+	(5_gapdb, 9_gapdb):	1	-	1	=	0
+	(5_gapdb, 10_gapdb):	1	-	1	=	0
+	(5_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 0_gapdb):	1	-	1	=	0
+	(6_gapdb, 1_gapdb):	1	-	1	=	0
+	(6_gapdb, 4_gapdb):	1	-	1	=	0
+	(6_gapdb, 5_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 0_gapdb):	1	-	1	=	0
+	(7_gapdb, 1_gapdb):	1	-	1	=	0
+	(7_gapdb, 4_gapdb):	1	-	1	=	0
+	(7_gapdb, 5_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 0_gapdb):	1	-	1	=	0
+	(8_gapdb, 1_gapdb):	1	-	1	=	0
+	(8_gapdb, 4_gapdb):	1	-	1	=	0
+	(8_gapdb, 5_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 0_gapdb):	1	-	1	=	0
+	(9_gapdb, 1_gapdb):	1	-	1	=	0
+	(9_gapdb, 4_gapdb):	1	-	1	=	0
+	(9_gapdb, 5_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 0_gapdb):	1	-	1	=	0
+	(10_gapdb, 1_gapdb):	1	-	1	=	0
+	(10_gapdb, 4_gapdb):	1	-	1	=	0
+	(10_gapdb, 5_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(11_gapdb, 0_gapdb):	1	-	1	=	0
+	(11_gapdb, 1_gapdb):	1	-	1	=	0
+	(11_gapdb, 4_gapdb):	1	-	1	=	0
+	(11_gapdb, 5_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
+	(3_gapdb, 2_gapdb):	1.40114	-	1	=	0.401143
 
 Measure_3:
 	-h1(12):		SS		A*
-	gapdb_0		1.12699e-316		1.12757e-316
-	gapdb_1		1.12699e-316		1.12757e-316
-	gapdb_10		1.12699e-316		1.12757e-316
-	gapdb_11		1.12699e-316		1.12757e-316
-	gapdb_2		1.12699e-316		1.12757e-316
-	gapdb_3		1.12699e-316		1.12757e-316
-	gapdb_4		1.12699e-316		1.12757e-316
-	gapdb_5		1.12699e-316		1.12757e-316
-	gapdb_6		1.12699e-316		1.12757e-316
-	gapdb_7		1.12699e-316		1.12757e-316
-	gapdb_8		1.12699e-316		1.12757e-316
-	gapdb_9		1.12699e-316		1.12757e-316
+	0_gapdb		3.65314e+06		540400
+	10_gapdb		3.65314e+06		540400
+	11_gapdb		3.65314e+06		540400
+	1_gapdb		3.65314e+06		540400
+	2_gapdb		1.37004e-316		540400
+	3_gapdb		1.37004e-316		540400
+	4_gapdb		3.65314e+06		540400
+	5_gapdb		3.65314e+06		540400
+	6_gapdb		3.65314e+06		540400
+	7_gapdb		3.65314e+06		540400
+	8_gapdb		3.65314e+06		540400
+	9_gapdb		3.65314e+06		540400
 
 	-h2(12):		SS		A*
-	gapdb_0		1.12699e-316		1.12757e-316
-	gapdb_1		1.12699e-316		1.12757e-316
-	gapdb_10		1.12699e-316		1.12757e-316
-	gapdb_11		1.12699e-316		1.12757e-316
-	gapdb_2		1.12699e-316		1.12757e-316
-	gapdb_3		1.12699e-316		1.12757e-316
-	gapdb_4		1.12699e-316		1.12757e-316
-	gapdb_5		1.12699e-316		1.12757e-316
-	gapdb_6		1.12699e-316		1.12757e-316
-	gapdb_7		1.12699e-316		1.12757e-316
-	gapdb_8		1.12699e-316		1.12757e-316
-	gapdb_9		1.12699e-316		1.12757e-316
+	0_gapdb		3.65314e+06		540400
+	10_gapdb		3.65314e+06		540400
+	11_gapdb		3.65314e+06		540400
+	1_gapdb		3.65314e+06		540400
+	2_gapdb		1.37004e-316		540400
+	3_gapdb		1.37004e-316		540400
+	4_gapdb		3.65314e+06		540400
+	5_gapdb		3.65314e+06		540400
+	6_gapdb		3.65314e+06		540400
+	7_gapdb		3.65314e+06		540400
+	8_gapdb		3.65314e+06		540400
+	9_gapdb		3.65314e+06		540400
 
 
 
@@ -661,121 +661,121 @@ Measure_1:
 Measure_2:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_0, gapdb_3):	1	-	1	=	0
-	(gapdb_0, gapdb_4):	1	-	1	=	0
-	(gapdb_0, gapdb_5):	1	-	1	=	0
-	(gapdb_0, gapdb_6):	1	-	1	=	0
-	(gapdb_0, gapdb_7):	1	-	1	=	0
-	(gapdb_0, gapdb_8):	1	-	1	=	0
-	(gapdb_0, gapdb_9):	1	-	1	=	0
-	(gapdb_0, gapdb_10):	1	-	1	=	0
-	(gapdb_0, gapdb_11):	1	-	1	=	0
-	(gapdb_3, gapdb_0):	1	-	1	=	0
-	(gapdb_3, gapdb_4):	1	-	1	=	0
-	(gapdb_3, gapdb_5):	1	-	1	=	0
-	(gapdb_3, gapdb_6):	1	-	1	=	0
-	(gapdb_3, gapdb_7):	1	-	1	=	0
-	(gapdb_3, gapdb_8):	1	-	1	=	0
-	(gapdb_3, gapdb_9):	1	-	1	=	0
-	(gapdb_3, gapdb_10):	1	-	1	=	0
-	(gapdb_3, gapdb_11):	1	-	1	=	0
-	(gapdb_4, gapdb_0):	1	-	1	=	0
-	(gapdb_4, gapdb_3):	1	-	1	=	0
-	(gapdb_4, gapdb_5):	1	-	1	=	0
-	(gapdb_4, gapdb_6):	1	-	1	=	0
-	(gapdb_4, gapdb_7):	1	-	1	=	0
-	(gapdb_4, gapdb_8):	1	-	1	=	0
-	(gapdb_4, gapdb_9):	1	-	1	=	0
-	(gapdb_4, gapdb_10):	1	-	1	=	0
-	(gapdb_4, gapdb_11):	1	-	1	=	0
-	(gapdb_5, gapdb_0):	1	-	1	=	0
-	(gapdb_5, gapdb_3):	1	-	1	=	0
-	(gapdb_5, gapdb_4):	1	-	1	=	0
-	(gapdb_5, gapdb_6):	1	-	1	=	0
-	(gapdb_5, gapdb_7):	1	-	1	=	0
-	(gapdb_5, gapdb_8):	1	-	1	=	0
-	(gapdb_5, gapdb_9):	1	-	1	=	0
-	(gapdb_5, gapdb_10):	1	-	1	=	0
-	(gapdb_5, gapdb_11):	1	-	1	=	0
-	(gapdb_6, gapdb_0):	1	-	1	=	0
-	(gapdb_6, gapdb_3):	1	-	1	=	0
-	(gapdb_6, gapdb_4):	1	-	1	=	0
-	(gapdb_6, gapdb_5):	1	-	1	=	0
-	(gapdb_6, gapdb_7):	1	-	1	=	0
-	(gapdb_6, gapdb_8):	1	-	1	=	0
-	(gapdb_6, gapdb_9):	1	-	1	=	0
-	(gapdb_6, gapdb_10):	1	-	1	=	0
-	(gapdb_6, gapdb_11):	1	-	1	=	0
-	(gapdb_7, gapdb_0):	1	-	1	=	0
-	(gapdb_7, gapdb_3):	1	-	1	=	0
-	(gapdb_7, gapdb_4):	1	-	1	=	0
-	(gapdb_7, gapdb_5):	1	-	1	=	0
-	(gapdb_7, gapdb_6):	1	-	1	=	0
-	(gapdb_7, gapdb_8):	1	-	1	=	0
-	(gapdb_7, gapdb_9):	1	-	1	=	0
-	(gapdb_7, gapdb_10):	1	-	1	=	0
-	(gapdb_7, gapdb_11):	1	-	1	=	0
-	(gapdb_8, gapdb_0):	1	-	1	=	0
-	(gapdb_8, gapdb_3):	1	-	1	=	0
-	(gapdb_8, gapdb_4):	1	-	1	=	0
-	(gapdb_8, gapdb_5):	1	-	1	=	0
-	(gapdb_8, gapdb_6):	1	-	1	=	0
-	(gapdb_8, gapdb_7):	1	-	1	=	0
-	(gapdb_8, gapdb_9):	1	-	1	=	0
-	(gapdb_8, gapdb_10):	1	-	1	=	0
-	(gapdb_8, gapdb_11):	1	-	1	=	0
-	(gapdb_9, gapdb_0):	1	-	1	=	0
-	(gapdb_9, gapdb_3):	1	-	1	=	0
-	(gapdb_9, gapdb_4):	1	-	1	=	0
-	(gapdb_9, gapdb_5):	1	-	1	=	0
-	(gapdb_9, gapdb_6):	1	-	1	=	0
-	(gapdb_9, gapdb_7):	1	-	1	=	0
-	(gapdb_9, gapdb_8):	1	-	1	=	0
-	(gapdb_9, gapdb_10):	1	-	1	=	0
-	(gapdb_9, gapdb_11):	1	-	1	=	0
-	(gapdb_10, gapdb_0):	1	-	1	=	0
-	(gapdb_10, gapdb_3):	1	-	1	=	0
-	(gapdb_10, gapdb_4):	1	-	1	=	0
-	(gapdb_10, gapdb_5):	1	-	1	=	0
-	(gapdb_10, gapdb_6):	1	-	1	=	0
-	(gapdb_10, gapdb_7):	1	-	1	=	0
-	(gapdb_10, gapdb_8):	1	-	1	=	0
-	(gapdb_10, gapdb_9):	1	-	1	=	0
-	(gapdb_10, gapdb_11):	1	-	1	=	0
-	(gapdb_11, gapdb_0):	1	-	1	=	0
-	(gapdb_11, gapdb_3):	1	-	1	=	0
-	(gapdb_11, gapdb_4):	1	-	1	=	0
-	(gapdb_11, gapdb_5):	1	-	1	=	0
-	(gapdb_11, gapdb_6):	1	-	1	=	0
-	(gapdb_11, gapdb_7):	1	-	1	=	0
-	(gapdb_11, gapdb_8):	1	-	1	=	0
-	(gapdb_11, gapdb_9):	1	-	1	=	0
-	(gapdb_11, gapdb_10):	1	-	1	=	0
+	(0_gapdb, 3_gapdb):	1	-	1	=	0
+	(0_gapdb, 4_gapdb):	1	-	1	=	0
+	(0_gapdb, 5_gapdb):	1	-	1	=	0
+	(0_gapdb, 6_gapdb):	1	-	1	=	0
+	(0_gapdb, 7_gapdb):	1	-	1	=	0
+	(0_gapdb, 8_gapdb):	1	-	1	=	0
+	(0_gapdb, 9_gapdb):	1	-	1	=	0
+	(0_gapdb, 10_gapdb):	1	-	1	=	0
+	(0_gapdb, 11_gapdb):	1	-	1	=	0
+	(3_gapdb, 0_gapdb):	1	-	1	=	0
+	(3_gapdb, 4_gapdb):	1	-	1	=	0
+	(3_gapdb, 5_gapdb):	1	-	1	=	0
+	(3_gapdb, 6_gapdb):	1	-	1	=	0
+	(3_gapdb, 7_gapdb):	1	-	1	=	0
+	(3_gapdb, 8_gapdb):	1	-	1	=	0
+	(3_gapdb, 9_gapdb):	1	-	1	=	0
+	(3_gapdb, 10_gapdb):	1	-	1	=	0
+	(3_gapdb, 11_gapdb):	1	-	1	=	0
+	(4_gapdb, 0_gapdb):	1	-	1	=	0
+	(4_gapdb, 3_gapdb):	1	-	1	=	0
+	(4_gapdb, 5_gapdb):	1	-	1	=	0
+	(4_gapdb, 6_gapdb):	1	-	1	=	0
+	(4_gapdb, 7_gapdb):	1	-	1	=	0
+	(4_gapdb, 8_gapdb):	1	-	1	=	0
+	(4_gapdb, 9_gapdb):	1	-	1	=	0
+	(4_gapdb, 10_gapdb):	1	-	1	=	0
+	(4_gapdb, 11_gapdb):	1	-	1	=	0
+	(5_gapdb, 0_gapdb):	1	-	1	=	0
+	(5_gapdb, 3_gapdb):	1	-	1	=	0
+	(5_gapdb, 4_gapdb):	1	-	1	=	0
+	(5_gapdb, 6_gapdb):	1	-	1	=	0
+	(5_gapdb, 7_gapdb):	1	-	1	=	0
+	(5_gapdb, 8_gapdb):	1	-	1	=	0
+	(5_gapdb, 9_gapdb):	1	-	1	=	0
+	(5_gapdb, 10_gapdb):	1	-	1	=	0
+	(5_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 0_gapdb):	1	-	1	=	0
+	(6_gapdb, 3_gapdb):	1	-	1	=	0
+	(6_gapdb, 4_gapdb):	1	-	1	=	0
+	(6_gapdb, 5_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 0_gapdb):	1	-	1	=	0
+	(7_gapdb, 3_gapdb):	1	-	1	=	0
+	(7_gapdb, 4_gapdb):	1	-	1	=	0
+	(7_gapdb, 5_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 0_gapdb):	1	-	1	=	0
+	(8_gapdb, 3_gapdb):	1	-	1	=	0
+	(8_gapdb, 4_gapdb):	1	-	1	=	0
+	(8_gapdb, 5_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 0_gapdb):	1	-	1	=	0
+	(9_gapdb, 3_gapdb):	1	-	1	=	0
+	(9_gapdb, 4_gapdb):	1	-	1	=	0
+	(9_gapdb, 5_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 0_gapdb):	1	-	1	=	0
+	(10_gapdb, 3_gapdb):	1	-	1	=	0
+	(10_gapdb, 4_gapdb):	1	-	1	=	0
+	(10_gapdb, 5_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(11_gapdb, 0_gapdb):	1	-	1	=	0
+	(11_gapdb, 3_gapdb):	1	-	1	=	0
+	(11_gapdb, 4_gapdb):	1	-	1	=	0
+	(11_gapdb, 5_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
 
 Measure_3:
 	-h1(10):		SS		A*
-	gapdb_0		1.12756e-316		1.12757e-316
-	gapdb_10		1.12756e-316		1.12757e-316
-	gapdb_11		1.12756e-316		1.12757e-316
-	gapdb_3		1.12756e-316		1.12757e-316
-	gapdb_4		1.12756e-316		1.12757e-316
-	gapdb_5		1.12756e-316		1.12757e-316
-	gapdb_6		1.12756e-316		1.12757e-316
-	gapdb_7		1.12756e-316		1.12757e-316
-	gapdb_8		1.12756e-316		1.12757e-316
-	gapdb_9		1.12756e-316		1.12757e-316
+	0_gapdb		75437.6		494864
+	10_gapdb		75437.6		494864
+	11_gapdb		75437.6		494864
+	3_gapdb		75437.6		494864
+	4_gapdb		75437.6		494864
+	5_gapdb		75437.6		494864
+	6_gapdb		75437.6		494864
+	7_gapdb		75437.6		494864
+	8_gapdb		75437.6		494864
+	9_gapdb		75437.6		494864
 
 	-h2(10):		SS		A*
-	gapdb_0		1.12756e-316		1.12757e-316
-	gapdb_10		1.12756e-316		1.12757e-316
-	gapdb_11		1.12756e-316		1.12757e-316
-	gapdb_3		1.12756e-316		1.12757e-316
-	gapdb_4		1.12756e-316		1.12757e-316
-	gapdb_5		1.12756e-316		1.12757e-316
-	gapdb_6		1.12756e-316		1.12757e-316
-	gapdb_7		1.12756e-316		1.12757e-316
-	gapdb_8		1.12756e-316		1.12757e-316
-	gapdb_9		1.12756e-316		1.12757e-316
+	0_gapdb		75437.6		494864
+	10_gapdb		75437.6		494864
+	11_gapdb		75437.6		494864
+	3_gapdb		75437.6		494864
+	4_gapdb		75437.6		494864
+	5_gapdb		75437.6		494864
+	6_gapdb		75437.6		494864
+	7_gapdb		75437.6		494864
+	8_gapdb		75437.6		494864
+	9_gapdb		75437.6		494864
 
 
 
@@ -817,121 +817,121 @@ Measure_1:
 Measure_2:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_0, gapdb_1):	1	-	1	=	0
-	(gapdb_0, gapdb_2):	1	-	1	=	0
-	(gapdb_0, gapdb_5):	1	-	1	=	0
-	(gapdb_0, gapdb_6):	1	-	1	=	0
-	(gapdb_0, gapdb_7):	1	-	1	=	0
-	(gapdb_0, gapdb_8):	1	-	1	=	0
-	(gapdb_0, gapdb_9):	1	-	1	=	0
-	(gapdb_0, gapdb_10):	1	-	1	=	0
-	(gapdb_0, gapdb_11):	1	-	1	=	0
-	(gapdb_1, gapdb_0):	1	-	1	=	0
-	(gapdb_1, gapdb_2):	1	-	1	=	0
-	(gapdb_1, gapdb_5):	1	-	1	=	0
-	(gapdb_1, gapdb_6):	1	-	1	=	0
-	(gapdb_1, gapdb_7):	1	-	1	=	0
-	(gapdb_1, gapdb_8):	1	-	1	=	0
-	(gapdb_1, gapdb_9):	1	-	1	=	0
-	(gapdb_1, gapdb_10):	1	-	1	=	0
-	(gapdb_1, gapdb_11):	1	-	1	=	0
-	(gapdb_2, gapdb_0):	1	-	1	=	0
-	(gapdb_2, gapdb_1):	1	-	1	=	0
-	(gapdb_2, gapdb_5):	1	-	1	=	0
-	(gapdb_2, gapdb_6):	1	-	1	=	0
-	(gapdb_2, gapdb_7):	1	-	1	=	0
-	(gapdb_2, gapdb_8):	1	-	1	=	0
-	(gapdb_2, gapdb_9):	1	-	1	=	0
-	(gapdb_2, gapdb_10):	1	-	1	=	0
-	(gapdb_2, gapdb_11):	1	-	1	=	0
-	(gapdb_5, gapdb_0):	1	-	1	=	0
-	(gapdb_5, gapdb_1):	1	-	1	=	0
-	(gapdb_5, gapdb_2):	1	-	1	=	0
-	(gapdb_5, gapdb_6):	1	-	1	=	0
-	(gapdb_5, gapdb_7):	1	-	1	=	0
-	(gapdb_5, gapdb_8):	1	-	1	=	0
-	(gapdb_5, gapdb_9):	1	-	1	=	0
-	(gapdb_5, gapdb_10):	1	-	1	=	0
-	(gapdb_5, gapdb_11):	1	-	1	=	0
-	(gapdb_6, gapdb_0):	1	-	1	=	0
-	(gapdb_6, gapdb_1):	1	-	1	=	0
-	(gapdb_6, gapdb_2):	1	-	1	=	0
-	(gapdb_6, gapdb_5):	1	-	1	=	0
-	(gapdb_6, gapdb_7):	1	-	1	=	0
-	(gapdb_6, gapdb_8):	1	-	1	=	0
-	(gapdb_6, gapdb_9):	1	-	1	=	0
-	(gapdb_6, gapdb_10):	1	-	1	=	0
-	(gapdb_6, gapdb_11):	1	-	1	=	0
-	(gapdb_7, gapdb_0):	1	-	1	=	0
-	(gapdb_7, gapdb_1):	1	-	1	=	0
-	(gapdb_7, gapdb_2):	1	-	1	=	0
-	(gapdb_7, gapdb_5):	1	-	1	=	0
-	(gapdb_7, gapdb_6):	1	-	1	=	0
-	(gapdb_7, gapdb_8):	1	-	1	=	0
-	(gapdb_7, gapdb_9):	1	-	1	=	0
-	(gapdb_7, gapdb_10):	1	-	1	=	0
-	(gapdb_7, gapdb_11):	1	-	1	=	0
-	(gapdb_8, gapdb_0):	1	-	1	=	0
-	(gapdb_8, gapdb_1):	1	-	1	=	0
-	(gapdb_8, gapdb_2):	1	-	1	=	0
-	(gapdb_8, gapdb_5):	1	-	1	=	0
-	(gapdb_8, gapdb_6):	1	-	1	=	0
-	(gapdb_8, gapdb_7):	1	-	1	=	0
-	(gapdb_8, gapdb_9):	1	-	1	=	0
-	(gapdb_8, gapdb_10):	1	-	1	=	0
-	(gapdb_8, gapdb_11):	1	-	1	=	0
-	(gapdb_9, gapdb_0):	1	-	1	=	0
-	(gapdb_9, gapdb_1):	1	-	1	=	0
-	(gapdb_9, gapdb_2):	1	-	1	=	0
-	(gapdb_9, gapdb_5):	1	-	1	=	0
-	(gapdb_9, gapdb_6):	1	-	1	=	0
-	(gapdb_9, gapdb_7):	1	-	1	=	0
-	(gapdb_9, gapdb_8):	1	-	1	=	0
-	(gapdb_9, gapdb_10):	1	-	1	=	0
-	(gapdb_9, gapdb_11):	1	-	1	=	0
-	(gapdb_10, gapdb_0):	1	-	1	=	0
-	(gapdb_10, gapdb_1):	1	-	1	=	0
-	(gapdb_10, gapdb_2):	1	-	1	=	0
-	(gapdb_10, gapdb_5):	1	-	1	=	0
-	(gapdb_10, gapdb_6):	1	-	1	=	0
-	(gapdb_10, gapdb_7):	1	-	1	=	0
-	(gapdb_10, gapdb_8):	1	-	1	=	0
-	(gapdb_10, gapdb_9):	1	-	1	=	0
-	(gapdb_10, gapdb_11):	1	-	1	=	0
-	(gapdb_11, gapdb_0):	1	-	1	=	0
-	(gapdb_11, gapdb_1):	1	-	1	=	0
-	(gapdb_11, gapdb_2):	1	-	1	=	0
-	(gapdb_11, gapdb_5):	1	-	1	=	0
-	(gapdb_11, gapdb_6):	1	-	1	=	0
-	(gapdb_11, gapdb_7):	1	-	1	=	0
-	(gapdb_11, gapdb_8):	1	-	1	=	0
-	(gapdb_11, gapdb_9):	1	-	1	=	0
-	(gapdb_11, gapdb_10):	1	-	1	=	0
+	(0_gapdb, 1_gapdb):	1	-	1	=	0
+	(0_gapdb, 2_gapdb):	1	-	1	=	0
+	(0_gapdb, 5_gapdb):	1	-	1	=	0
+	(0_gapdb, 6_gapdb):	1	-	1	=	0
+	(0_gapdb, 7_gapdb):	1	-	1	=	0
+	(0_gapdb, 8_gapdb):	1	-	1	=	0
+	(0_gapdb, 9_gapdb):	1	-	1	=	0
+	(0_gapdb, 10_gapdb):	1	-	1	=	0
+	(0_gapdb, 11_gapdb):	1	-	1	=	0
+	(1_gapdb, 0_gapdb):	1	-	1	=	0
+	(1_gapdb, 2_gapdb):	1	-	1	=	0
+	(1_gapdb, 5_gapdb):	1	-	1	=	0
+	(1_gapdb, 6_gapdb):	1	-	1	=	0
+	(1_gapdb, 7_gapdb):	1	-	1	=	0
+	(1_gapdb, 8_gapdb):	1	-	1	=	0
+	(1_gapdb, 9_gapdb):	1	-	1	=	0
+	(1_gapdb, 10_gapdb):	1	-	1	=	0
+	(1_gapdb, 11_gapdb):	1	-	1	=	0
+	(2_gapdb, 0_gapdb):	1	-	1	=	0
+	(2_gapdb, 1_gapdb):	1	-	1	=	0
+	(2_gapdb, 5_gapdb):	1	-	1	=	0
+	(2_gapdb, 6_gapdb):	1	-	1	=	0
+	(2_gapdb, 7_gapdb):	1	-	1	=	0
+	(2_gapdb, 8_gapdb):	1	-	1	=	0
+	(2_gapdb, 9_gapdb):	1	-	1	=	0
+	(2_gapdb, 10_gapdb):	1	-	1	=	0
+	(2_gapdb, 11_gapdb):	1	-	1	=	0
+	(5_gapdb, 0_gapdb):	1	-	1	=	0
+	(5_gapdb, 1_gapdb):	1	-	1	=	0
+	(5_gapdb, 2_gapdb):	1	-	1	=	0
+	(5_gapdb, 6_gapdb):	1	-	1	=	0
+	(5_gapdb, 7_gapdb):	1	-	1	=	0
+	(5_gapdb, 8_gapdb):	1	-	1	=	0
+	(5_gapdb, 9_gapdb):	1	-	1	=	0
+	(5_gapdb, 10_gapdb):	1	-	1	=	0
+	(5_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 0_gapdb):	1	-	1	=	0
+	(6_gapdb, 1_gapdb):	1	-	1	=	0
+	(6_gapdb, 2_gapdb):	1	-	1	=	0
+	(6_gapdb, 5_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 0_gapdb):	1	-	1	=	0
+	(7_gapdb, 1_gapdb):	1	-	1	=	0
+	(7_gapdb, 2_gapdb):	1	-	1	=	0
+	(7_gapdb, 5_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 0_gapdb):	1	-	1	=	0
+	(8_gapdb, 1_gapdb):	1	-	1	=	0
+	(8_gapdb, 2_gapdb):	1	-	1	=	0
+	(8_gapdb, 5_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 0_gapdb):	1	-	1	=	0
+	(9_gapdb, 1_gapdb):	1	-	1	=	0
+	(9_gapdb, 2_gapdb):	1	-	1	=	0
+	(9_gapdb, 5_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 0_gapdb):	1	-	1	=	0
+	(10_gapdb, 1_gapdb):	1	-	1	=	0
+	(10_gapdb, 2_gapdb):	1	-	1	=	0
+	(10_gapdb, 5_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(11_gapdb, 0_gapdb):	1	-	1	=	0
+	(11_gapdb, 1_gapdb):	1	-	1	=	0
+	(11_gapdb, 2_gapdb):	1	-	1	=	0
+	(11_gapdb, 5_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
 
 Measure_3:
 	-h1(10):		SS		A*
-	gapdb_0		1.12756e-316		1.12757e-316
-	gapdb_1		1.12756e-316		1.12757e-316
-	gapdb_10		1.12756e-316		1.12757e-316
-	gapdb_11		1.12756e-316		1.12757e-316
-	gapdb_2		1.12756e-316		1.12757e-316
-	gapdb_5		1.12756e-316		1.12757e-316
-	gapdb_6		1.12756e-316		1.12757e-316
-	gapdb_7		1.12756e-316		1.12757e-316
-	gapdb_8		1.12756e-316		1.12757e-316
-	gapdb_9		1.12756e-316		1.12757e-316
+	0_gapdb		591308		538195
+	10_gapdb		591308		538195
+	11_gapdb		591308		538195
+	1_gapdb		591308		538195
+	2_gapdb		591308		538195
+	5_gapdb		591308		538195
+	6_gapdb		591308		538195
+	7_gapdb		591308		538195
+	8_gapdb		591308		538195
+	9_gapdb		591308		538195
 
 	-h2(10):		SS		A*
-	gapdb_0		1.12756e-316		1.12757e-316
-	gapdb_1		1.12756e-316		1.12757e-316
-	gapdb_10		1.12756e-316		1.12757e-316
-	gapdb_11		1.12756e-316		1.12757e-316
-	gapdb_2		1.12756e-316		1.12757e-316
-	gapdb_5		1.12756e-316		1.12757e-316
-	gapdb_6		1.12756e-316		1.12757e-316
-	gapdb_7		1.12756e-316		1.12757e-316
-	gapdb_8		1.12756e-316		1.12757e-316
-	gapdb_9		1.12756e-316		1.12757e-316
+	0_gapdb		591308		538195
+	10_gapdb		591308		538195
+	11_gapdb		591308		538195
+	1_gapdb		591308		538195
+	2_gapdb		591308		538195
+	5_gapdb		591308		538195
+	6_gapdb		591308		538195
+	7_gapdb		591308		538195
+	8_gapdb		591308		538195
+	9_gapdb		591308		538195
 
 
 
@@ -973,121 +973,121 @@ Measure_1:
 Measure_2:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_0, gapdb_1):	1	-	1	=	0
-	(gapdb_0, gapdb_2):	1	-	1	=	0
-	(gapdb_0, gapdb_3):	1	-	1	=	0
-	(gapdb_0, gapdb_6):	1	-	1	=	0
-	(gapdb_0, gapdb_7):	1	-	1	=	0
-	(gapdb_0, gapdb_8):	1	-	1	=	0
-	(gapdb_0, gapdb_9):	1	-	1	=	0
-	(gapdb_0, gapdb_10):	1	-	1	=	0
-	(gapdb_0, gapdb_11):	1	-	1	=	0
-	(gapdb_1, gapdb_0):	1	-	1	=	0
-	(gapdb_1, gapdb_2):	1	-	1	=	0
-	(gapdb_1, gapdb_3):	1	-	1	=	0
-	(gapdb_1, gapdb_6):	1	-	1	=	0
-	(gapdb_1, gapdb_7):	1	-	1	=	0
-	(gapdb_1, gapdb_8):	1	-	1	=	0
-	(gapdb_1, gapdb_9):	1	-	1	=	0
-	(gapdb_1, gapdb_10):	1	-	1	=	0
-	(gapdb_1, gapdb_11):	1	-	1	=	0
-	(gapdb_2, gapdb_0):	1	-	1	=	0
-	(gapdb_2, gapdb_1):	1	-	1	=	0
-	(gapdb_2, gapdb_3):	1	-	1	=	0
-	(gapdb_2, gapdb_6):	1	-	1	=	0
-	(gapdb_2, gapdb_7):	1	-	1	=	0
-	(gapdb_2, gapdb_8):	1	-	1	=	0
-	(gapdb_2, gapdb_9):	1	-	1	=	0
-	(gapdb_2, gapdb_10):	1	-	1	=	0
-	(gapdb_2, gapdb_11):	1	-	1	=	0
-	(gapdb_3, gapdb_0):	1	-	1	=	0
-	(gapdb_3, gapdb_1):	1	-	1	=	0
-	(gapdb_3, gapdb_2):	1	-	1	=	0
-	(gapdb_3, gapdb_6):	1	-	1	=	0
-	(gapdb_3, gapdb_7):	1	-	1	=	0
-	(gapdb_3, gapdb_8):	1	-	1	=	0
-	(gapdb_3, gapdb_9):	1	-	1	=	0
-	(gapdb_3, gapdb_10):	1	-	1	=	0
-	(gapdb_3, gapdb_11):	1	-	1	=	0
-	(gapdb_6, gapdb_0):	1	-	1	=	0
-	(gapdb_6, gapdb_1):	1	-	1	=	0
-	(gapdb_6, gapdb_2):	1	-	1	=	0
-	(gapdb_6, gapdb_3):	1	-	1	=	0
-	(gapdb_6, gapdb_7):	1	-	1	=	0
-	(gapdb_6, gapdb_8):	1	-	1	=	0
-	(gapdb_6, gapdb_9):	1	-	1	=	0
-	(gapdb_6, gapdb_10):	1	-	1	=	0
-	(gapdb_6, gapdb_11):	1	-	1	=	0
-	(gapdb_7, gapdb_0):	1	-	1	=	0
-	(gapdb_7, gapdb_1):	1	-	1	=	0
-	(gapdb_7, gapdb_2):	1	-	1	=	0
-	(gapdb_7, gapdb_3):	1	-	1	=	0
-	(gapdb_7, gapdb_6):	1	-	1	=	0
-	(gapdb_7, gapdb_8):	1	-	1	=	0
-	(gapdb_7, gapdb_9):	1	-	1	=	0
-	(gapdb_7, gapdb_10):	1	-	1	=	0
-	(gapdb_7, gapdb_11):	1	-	1	=	0
-	(gapdb_8, gapdb_0):	1	-	1	=	0
-	(gapdb_8, gapdb_1):	1	-	1	=	0
-	(gapdb_8, gapdb_2):	1	-	1	=	0
-	(gapdb_8, gapdb_3):	1	-	1	=	0
-	(gapdb_8, gapdb_6):	1	-	1	=	0
-	(gapdb_8, gapdb_7):	1	-	1	=	0
-	(gapdb_8, gapdb_9):	1	-	1	=	0
-	(gapdb_8, gapdb_10):	1	-	1	=	0
-	(gapdb_8, gapdb_11):	1	-	1	=	0
-	(gapdb_9, gapdb_0):	1	-	1	=	0
-	(gapdb_9, gapdb_1):	1	-	1	=	0
-	(gapdb_9, gapdb_2):	1	-	1	=	0
-	(gapdb_9, gapdb_3):	1	-	1	=	0
-	(gapdb_9, gapdb_6):	1	-	1	=	0
-	(gapdb_9, gapdb_7):	1	-	1	=	0
-	(gapdb_9, gapdb_8):	1	-	1	=	0
-	(gapdb_9, gapdb_10):	1	-	1	=	0
-	(gapdb_9, gapdb_11):	1	-	1	=	0
-	(gapdb_10, gapdb_0):	1	-	1	=	0
-	(gapdb_10, gapdb_1):	1	-	1	=	0
-	(gapdb_10, gapdb_2):	1	-	1	=	0
-	(gapdb_10, gapdb_3):	1	-	1	=	0
-	(gapdb_10, gapdb_6):	1	-	1	=	0
-	(gapdb_10, gapdb_7):	1	-	1	=	0
-	(gapdb_10, gapdb_8):	1	-	1	=	0
-	(gapdb_10, gapdb_9):	1	-	1	=	0
-	(gapdb_10, gapdb_11):	1	-	1	=	0
-	(gapdb_11, gapdb_0):	1	-	1	=	0
-	(gapdb_11, gapdb_1):	1	-	1	=	0
-	(gapdb_11, gapdb_2):	1	-	1	=	0
-	(gapdb_11, gapdb_3):	1	-	1	=	0
-	(gapdb_11, gapdb_6):	1	-	1	=	0
-	(gapdb_11, gapdb_7):	1	-	1	=	0
-	(gapdb_11, gapdb_8):	1	-	1	=	0
-	(gapdb_11, gapdb_9):	1	-	1	=	0
-	(gapdb_11, gapdb_10):	1	-	1	=	0
+	(0_gapdb, 1_gapdb):	1	-	1	=	0
+	(0_gapdb, 2_gapdb):	1	-	1	=	0
+	(0_gapdb, 3_gapdb):	1	-	1	=	0
+	(0_gapdb, 6_gapdb):	1	-	1	=	0
+	(0_gapdb, 7_gapdb):	1	-	1	=	0
+	(0_gapdb, 8_gapdb):	1	-	1	=	0
+	(0_gapdb, 9_gapdb):	1	-	1	=	0
+	(0_gapdb, 10_gapdb):	1	-	1	=	0
+	(0_gapdb, 11_gapdb):	1	-	1	=	0
+	(1_gapdb, 0_gapdb):	1	-	1	=	0
+	(1_gapdb, 2_gapdb):	1	-	1	=	0
+	(1_gapdb, 3_gapdb):	1	-	1	=	0
+	(1_gapdb, 6_gapdb):	1	-	1	=	0
+	(1_gapdb, 7_gapdb):	1	-	1	=	0
+	(1_gapdb, 8_gapdb):	1	-	1	=	0
+	(1_gapdb, 9_gapdb):	1	-	1	=	0
+	(1_gapdb, 10_gapdb):	1	-	1	=	0
+	(1_gapdb, 11_gapdb):	1	-	1	=	0
+	(2_gapdb, 0_gapdb):	1	-	1	=	0
+	(2_gapdb, 1_gapdb):	1	-	1	=	0
+	(2_gapdb, 3_gapdb):	1	-	1	=	0
+	(2_gapdb, 6_gapdb):	1	-	1	=	0
+	(2_gapdb, 7_gapdb):	1	-	1	=	0
+	(2_gapdb, 8_gapdb):	1	-	1	=	0
+	(2_gapdb, 9_gapdb):	1	-	1	=	0
+	(2_gapdb, 10_gapdb):	1	-	1	=	0
+	(2_gapdb, 11_gapdb):	1	-	1	=	0
+	(3_gapdb, 0_gapdb):	1	-	1	=	0
+	(3_gapdb, 1_gapdb):	1	-	1	=	0
+	(3_gapdb, 2_gapdb):	1	-	1	=	0
+	(3_gapdb, 6_gapdb):	1	-	1	=	0
+	(3_gapdb, 7_gapdb):	1	-	1	=	0
+	(3_gapdb, 8_gapdb):	1	-	1	=	0
+	(3_gapdb, 9_gapdb):	1	-	1	=	0
+	(3_gapdb, 10_gapdb):	1	-	1	=	0
+	(3_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 0_gapdb):	1	-	1	=	0
+	(6_gapdb, 1_gapdb):	1	-	1	=	0
+	(6_gapdb, 2_gapdb):	1	-	1	=	0
+	(6_gapdb, 3_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 0_gapdb):	1	-	1	=	0
+	(7_gapdb, 1_gapdb):	1	-	1	=	0
+	(7_gapdb, 2_gapdb):	1	-	1	=	0
+	(7_gapdb, 3_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 0_gapdb):	1	-	1	=	0
+	(8_gapdb, 1_gapdb):	1	-	1	=	0
+	(8_gapdb, 2_gapdb):	1	-	1	=	0
+	(8_gapdb, 3_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 0_gapdb):	1	-	1	=	0
+	(9_gapdb, 1_gapdb):	1	-	1	=	0
+	(9_gapdb, 2_gapdb):	1	-	1	=	0
+	(9_gapdb, 3_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 0_gapdb):	1	-	1	=	0
+	(10_gapdb, 1_gapdb):	1	-	1	=	0
+	(10_gapdb, 2_gapdb):	1	-	1	=	0
+	(10_gapdb, 3_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(11_gapdb, 0_gapdb):	1	-	1	=	0
+	(11_gapdb, 1_gapdb):	1	-	1	=	0
+	(11_gapdb, 2_gapdb):	1	-	1	=	0
+	(11_gapdb, 3_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
 
 Measure_3:
 	-h1(10):		SS		A*
-	gapdb_0		1.12738e-316		1.12757e-316
-	gapdb_1		1.12738e-316		1.12757e-316
-	gapdb_10		1.12738e-316		1.12757e-316
-	gapdb_11		1.12738e-316		1.12757e-316
-	gapdb_2		1.12738e-316		1.12757e-316
-	gapdb_3		1.12738e-316		1.12757e-316
-	gapdb_6		1.12738e-316		1.12757e-316
-	gapdb_7		1.12738e-316		1.12757e-316
-	gapdb_8		1.12738e-316		1.12757e-316
-	gapdb_9		1.12738e-316		1.12757e-316
+	0_gapdb		46368.8		1.22078e+06
+	10_gapdb		46368.8		1.22078e+06
+	11_gapdb		46368.8		1.22078e+06
+	1_gapdb		46368.8		1.22078e+06
+	2_gapdb		46368.8		1.22078e+06
+	3_gapdb		46368.8		1.22078e+06
+	6_gapdb		46368.8		1.22078e+06
+	7_gapdb		46368.8		1.22078e+06
+	8_gapdb		46368.8		1.22078e+06
+	9_gapdb		46368.8		1.22078e+06
 
 	-h2(10):		SS		A*
-	gapdb_0		1.12738e-316		1.12757e-316
-	gapdb_1		1.12738e-316		1.12757e-316
-	gapdb_10		1.12738e-316		1.12757e-316
-	gapdb_11		1.12738e-316		1.12757e-316
-	gapdb_2		1.12738e-316		1.12757e-316
-	gapdb_3		1.12738e-316		1.12757e-316
-	gapdb_6		1.12738e-316		1.12757e-316
-	gapdb_7		1.12738e-316		1.12757e-316
-	gapdb_8		1.12738e-316		1.12757e-316
-	gapdb_9		1.12738e-316		1.12757e-316
+	0_gapdb		46368.8		1.22078e+06
+	10_gapdb		46368.8		1.22078e+06
+	11_gapdb		46368.8		1.22078e+06
+	1_gapdb		46368.8		1.22078e+06
+	2_gapdb		46368.8		1.22078e+06
+	3_gapdb		46368.8		1.22078e+06
+	6_gapdb		46368.8		1.22078e+06
+	7_gapdb		46368.8		1.22078e+06
+	8_gapdb		46368.8		1.22078e+06
+	9_gapdb		46368.8		1.22078e+06
 
 
 
@@ -1129,127 +1129,127 @@ Measure_1:
 Measure_2:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_3, gapdb_4):	0.745565	-	1	=	-0.254435
-	(gapdb_0, gapdb_1):	1	-	1	=	0
-	(gapdb_0, gapdb_2):	1	-	1	=	0
-	(gapdb_0, gapdb_5):	1	-	1	=	0
-	(gapdb_0, gapdb_6):	1	-	1	=	0
-	(gapdb_0, gapdb_7):	1	-	1	=	0
-	(gapdb_0, gapdb_8):	1	-	1	=	0
-	(gapdb_0, gapdb_9):	1	-	1	=	0
-	(gapdb_0, gapdb_10):	1	-	1	=	0
-	(gapdb_0, gapdb_11):	1	-	1	=	0
-	(gapdb_1, gapdb_0):	1	-	1	=	0
-	(gapdb_1, gapdb_2):	1	-	1	=	0
-	(gapdb_1, gapdb_5):	1	-	1	=	0
-	(gapdb_1, gapdb_6):	1	-	1	=	0
-	(gapdb_1, gapdb_7):	1	-	1	=	0
-	(gapdb_1, gapdb_8):	1	-	1	=	0
-	(gapdb_1, gapdb_9):	1	-	1	=	0
-	(gapdb_1, gapdb_10):	1	-	1	=	0
-	(gapdb_1, gapdb_11):	1	-	1	=	0
-	(gapdb_2, gapdb_0):	1	-	1	=	0
-	(gapdb_2, gapdb_1):	1	-	1	=	0
-	(gapdb_2, gapdb_5):	1	-	1	=	0
-	(gapdb_2, gapdb_6):	1	-	1	=	0
-	(gapdb_2, gapdb_7):	1	-	1	=	0
-	(gapdb_2, gapdb_8):	1	-	1	=	0
-	(gapdb_2, gapdb_9):	1	-	1	=	0
-	(gapdb_2, gapdb_10):	1	-	1	=	0
-	(gapdb_2, gapdb_11):	1	-	1	=	0
-	(gapdb_5, gapdb_0):	1	-	1	=	0
-	(gapdb_5, gapdb_1):	1	-	1	=	0
-	(gapdb_5, gapdb_2):	1	-	1	=	0
-	(gapdb_5, gapdb_6):	1	-	1	=	0
-	(gapdb_5, gapdb_7):	1	-	1	=	0
-	(gapdb_5, gapdb_8):	1	-	1	=	0
-	(gapdb_5, gapdb_9):	1	-	1	=	0
-	(gapdb_5, gapdb_10):	1	-	1	=	0
-	(gapdb_5, gapdb_11):	1	-	1	=	0
-	(gapdb_6, gapdb_0):	1	-	1	=	0
-	(gapdb_6, gapdb_1):	1	-	1	=	0
-	(gapdb_6, gapdb_2):	1	-	1	=	0
-	(gapdb_6, gapdb_5):	1	-	1	=	0
-	(gapdb_6, gapdb_7):	1	-	1	=	0
-	(gapdb_6, gapdb_8):	1	-	1	=	0
-	(gapdb_6, gapdb_9):	1	-	1	=	0
-	(gapdb_6, gapdb_10):	1	-	1	=	0
-	(gapdb_6, gapdb_11):	1	-	1	=	0
-	(gapdb_7, gapdb_0):	1	-	1	=	0
-	(gapdb_7, gapdb_1):	1	-	1	=	0
-	(gapdb_7, gapdb_2):	1	-	1	=	0
-	(gapdb_7, gapdb_5):	1	-	1	=	0
-	(gapdb_7, gapdb_6):	1	-	1	=	0
-	(gapdb_7, gapdb_8):	1	-	1	=	0
-	(gapdb_7, gapdb_9):	1	-	1	=	0
-	(gapdb_7, gapdb_10):	1	-	1	=	0
-	(gapdb_7, gapdb_11):	1	-	1	=	0
-	(gapdb_8, gapdb_0):	1	-	1	=	0
-	(gapdb_8, gapdb_1):	1	-	1	=	0
-	(gapdb_8, gapdb_2):	1	-	1	=	0
-	(gapdb_8, gapdb_5):	1	-	1	=	0
-	(gapdb_8, gapdb_6):	1	-	1	=	0
-	(gapdb_8, gapdb_7):	1	-	1	=	0
-	(gapdb_8, gapdb_9):	1	-	1	=	0
-	(gapdb_8, gapdb_10):	1	-	1	=	0
-	(gapdb_8, gapdb_11):	1	-	1	=	0
-	(gapdb_9, gapdb_0):	1	-	1	=	0
-	(gapdb_9, gapdb_1):	1	-	1	=	0
-	(gapdb_9, gapdb_2):	1	-	1	=	0
-	(gapdb_9, gapdb_5):	1	-	1	=	0
-	(gapdb_9, gapdb_6):	1	-	1	=	0
-	(gapdb_9, gapdb_7):	1	-	1	=	0
-	(gapdb_9, gapdb_8):	1	-	1	=	0
-	(gapdb_9, gapdb_10):	1	-	1	=	0
-	(gapdb_9, gapdb_11):	1	-	1	=	0
-	(gapdb_10, gapdb_0):	1	-	1	=	0
-	(gapdb_10, gapdb_1):	1	-	1	=	0
-	(gapdb_10, gapdb_2):	1	-	1	=	0
-	(gapdb_10, gapdb_5):	1	-	1	=	0
-	(gapdb_10, gapdb_6):	1	-	1	=	0
-	(gapdb_10, gapdb_7):	1	-	1	=	0
-	(gapdb_10, gapdb_8):	1	-	1	=	0
-	(gapdb_10, gapdb_9):	1	-	1	=	0
-	(gapdb_10, gapdb_11):	1	-	1	=	0
-	(gapdb_11, gapdb_0):	1	-	1	=	0
-	(gapdb_11, gapdb_1):	1	-	1	=	0
-	(gapdb_11, gapdb_2):	1	-	1	=	0
-	(gapdb_11, gapdb_5):	1	-	1	=	0
-	(gapdb_11, gapdb_6):	1	-	1	=	0
-	(gapdb_11, gapdb_7):	1	-	1	=	0
-	(gapdb_11, gapdb_8):	1	-	1	=	0
-	(gapdb_11, gapdb_9):	1	-	1	=	0
-	(gapdb_11, gapdb_10):	1	-	1	=	0
-	(gapdb_4, gapdb_3):	1.34127	-	1	=	0.341265
+	(3_gapdb, 4_gapdb):	0.745565	-	1	=	-0.254435
+	(0_gapdb, 1_gapdb):	1	-	1	=	0
+	(0_gapdb, 2_gapdb):	1	-	1	=	0
+	(0_gapdb, 5_gapdb):	1	-	1	=	0
+	(0_gapdb, 6_gapdb):	1	-	1	=	0
+	(0_gapdb, 7_gapdb):	1	-	1	=	0
+	(0_gapdb, 8_gapdb):	1	-	1	=	0
+	(0_gapdb, 9_gapdb):	1	-	1	=	0
+	(0_gapdb, 10_gapdb):	1	-	1	=	0
+	(0_gapdb, 11_gapdb):	1	-	1	=	0
+	(1_gapdb, 0_gapdb):	1	-	1	=	0
+	(1_gapdb, 2_gapdb):	1	-	1	=	0
+	(1_gapdb, 5_gapdb):	1	-	1	=	0
+	(1_gapdb, 6_gapdb):	1	-	1	=	0
+	(1_gapdb, 7_gapdb):	1	-	1	=	0
+	(1_gapdb, 8_gapdb):	1	-	1	=	0
+	(1_gapdb, 9_gapdb):	1	-	1	=	0
+	(1_gapdb, 10_gapdb):	1	-	1	=	0
+	(1_gapdb, 11_gapdb):	1	-	1	=	0
+	(2_gapdb, 0_gapdb):	1	-	1	=	0
+	(2_gapdb, 1_gapdb):	1	-	1	=	0
+	(2_gapdb, 5_gapdb):	1	-	1	=	0
+	(2_gapdb, 6_gapdb):	1	-	1	=	0
+	(2_gapdb, 7_gapdb):	1	-	1	=	0
+	(2_gapdb, 8_gapdb):	1	-	1	=	0
+	(2_gapdb, 9_gapdb):	1	-	1	=	0
+	(2_gapdb, 10_gapdb):	1	-	1	=	0
+	(2_gapdb, 11_gapdb):	1	-	1	=	0
+	(5_gapdb, 0_gapdb):	1	-	1	=	0
+	(5_gapdb, 1_gapdb):	1	-	1	=	0
+	(5_gapdb, 2_gapdb):	1	-	1	=	0
+	(5_gapdb, 6_gapdb):	1	-	1	=	0
+	(5_gapdb, 7_gapdb):	1	-	1	=	0
+	(5_gapdb, 8_gapdb):	1	-	1	=	0
+	(5_gapdb, 9_gapdb):	1	-	1	=	0
+	(5_gapdb, 10_gapdb):	1	-	1	=	0
+	(5_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 0_gapdb):	1	-	1	=	0
+	(6_gapdb, 1_gapdb):	1	-	1	=	0
+	(6_gapdb, 2_gapdb):	1	-	1	=	0
+	(6_gapdb, 5_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 0_gapdb):	1	-	1	=	0
+	(7_gapdb, 1_gapdb):	1	-	1	=	0
+	(7_gapdb, 2_gapdb):	1	-	1	=	0
+	(7_gapdb, 5_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 0_gapdb):	1	-	1	=	0
+	(8_gapdb, 1_gapdb):	1	-	1	=	0
+	(8_gapdb, 2_gapdb):	1	-	1	=	0
+	(8_gapdb, 5_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 0_gapdb):	1	-	1	=	0
+	(9_gapdb, 1_gapdb):	1	-	1	=	0
+	(9_gapdb, 2_gapdb):	1	-	1	=	0
+	(9_gapdb, 5_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 0_gapdb):	1	-	1	=	0
+	(10_gapdb, 1_gapdb):	1	-	1	=	0
+	(10_gapdb, 2_gapdb):	1	-	1	=	0
+	(10_gapdb, 5_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(11_gapdb, 0_gapdb):	1	-	1	=	0
+	(11_gapdb, 1_gapdb):	1	-	1	=	0
+	(11_gapdb, 2_gapdb):	1	-	1	=	0
+	(11_gapdb, 5_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
+	(4_gapdb, 3_gapdb):	1.34127	-	1	=	0.341265
 
 Measure_3:
 	-h1(12):		SS		A*
-	gapdb_0		1.12832e-316		1.12757e-316
-	gapdb_1		1.12832e-316		1.12757e-316
-	gapdb_10		1.12832e-316		1.12757e-316
-	gapdb_11		1.12832e-316		1.12757e-316
-	gapdb_2		1.12832e-316		1.12757e-316
-	gapdb_3		1.12832e-316		1.12757e-316
-	gapdb_4		1.12832e-316		1.12757e-316
-	gapdb_5		1.12832e-316		1.12757e-316
-	gapdb_6		1.12832e-316		1.12757e-316
-	gapdb_7		1.12832e-316		1.12757e-316
-	gapdb_8		1.12832e-316		1.12757e-316
-	gapdb_9		1.12832e-316		1.12757e-316
+	0_gapdb		753805		938090
+	10_gapdb		753805		938090
+	11_gapdb		753805		938090
+	1_gapdb		753805		938090
+	2_gapdb		753805		938090
+	3_gapdb		1.36252e-316		938090
+	4_gapdb		1.36252e-316		938090
+	5_gapdb		753805		938090
+	6_gapdb		753805		938090
+	7_gapdb		753805		938090
+	8_gapdb		753805		938090
+	9_gapdb		753805		938090
 
 	-h2(12):		SS		A*
-	gapdb_0		1.12832e-316		1.12757e-316
-	gapdb_1		1.12832e-316		1.12757e-316
-	gapdb_10		1.12832e-316		1.12757e-316
-	gapdb_11		1.12832e-316		1.12757e-316
-	gapdb_2		1.12832e-316		1.12757e-316
-	gapdb_3		1.12832e-316		1.12757e-316
-	gapdb_4		1.12832e-316		1.12757e-316
-	gapdb_5		1.12832e-316		1.12757e-316
-	gapdb_6		1.12832e-316		1.12757e-316
-	gapdb_7		1.12832e-316		1.12757e-316
-	gapdb_8		1.12832e-316		1.12757e-316
-	gapdb_9		1.12832e-316		1.12757e-316
+	0_gapdb		753805		938090
+	10_gapdb		753805		938090
+	11_gapdb		753805		938090
+	1_gapdb		753805		938090
+	2_gapdb		753805		938090
+	3_gapdb		1.36252e-316		938090
+	4_gapdb		1.36252e-316		938090
+	5_gapdb		753805		938090
+	6_gapdb		753805		938090
+	7_gapdb		753805		938090
+	8_gapdb		753805		938090
+	9_gapdb		753805		938090
 
 
 
@@ -1291,124 +1291,124 @@ Measure_1:
 Measure_2:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_5, gapdb_2):	0.647527	-	1	=	-0.352473
-	(gapdb_0, gapdb_1):	1	-	1	=	0
-	(gapdb_0, gapdb_3):	1	-	1	=	0
-	(gapdb_0, gapdb_4):	1	-	1	=	0
-	(gapdb_0, gapdb_6):	1	-	1	=	0
-	(gapdb_0, gapdb_7):	1	-	1	=	0
-	(gapdb_0, gapdb_8):	1	-	1	=	0
-	(gapdb_0, gapdb_9):	1	-	1	=	0
-	(gapdb_0, gapdb_10):	1	-	1	=	0
-	(gapdb_0, gapdb_11):	1	-	1	=	0
-	(gapdb_1, gapdb_0):	1	-	1	=	0
-	(gapdb_1, gapdb_3):	1	-	1	=	0
-	(gapdb_1, gapdb_4):	1	-	1	=	0
-	(gapdb_1, gapdb_6):	1	-	1	=	0
-	(gapdb_1, gapdb_7):	1	-	1	=	0
-	(gapdb_1, gapdb_8):	1	-	1	=	0
-	(gapdb_1, gapdb_9):	1	-	1	=	0
-	(gapdb_1, gapdb_10):	1	-	1	=	0
-	(gapdb_1, gapdb_11):	1	-	1	=	0
-	(gapdb_3, gapdb_0):	1	-	1	=	0
-	(gapdb_3, gapdb_1):	1	-	1	=	0
-	(gapdb_3, gapdb_4):	1	-	1	=	0
-	(gapdb_3, gapdb_6):	1	-	1	=	0
-	(gapdb_3, gapdb_7):	1	-	1	=	0
-	(gapdb_3, gapdb_8):	1	-	1	=	0
-	(gapdb_3, gapdb_9):	1	-	1	=	0
-	(gapdb_3, gapdb_10):	1	-	1	=	0
-	(gapdb_3, gapdb_11):	1	-	1	=	0
-	(gapdb_4, gapdb_0):	1	-	1	=	0
-	(gapdb_4, gapdb_1):	1	-	1	=	0
-	(gapdb_4, gapdb_3):	1	-	1	=	0
-	(gapdb_4, gapdb_6):	1	-	1	=	0
-	(gapdb_4, gapdb_7):	1	-	1	=	0
-	(gapdb_4, gapdb_8):	1	-	1	=	0
-	(gapdb_4, gapdb_9):	1	-	1	=	0
-	(gapdb_4, gapdb_10):	1	-	1	=	0
-	(gapdb_4, gapdb_11):	1	-	1	=	0
-	(gapdb_6, gapdb_0):	1	-	1	=	0
-	(gapdb_6, gapdb_1):	1	-	1	=	0
-	(gapdb_6, gapdb_3):	1	-	1	=	0
-	(gapdb_6, gapdb_4):	1	-	1	=	0
-	(gapdb_6, gapdb_7):	1	-	1	=	0
-	(gapdb_6, gapdb_8):	1	-	1	=	0
-	(gapdb_6, gapdb_9):	1	-	1	=	0
-	(gapdb_6, gapdb_10):	1	-	1	=	0
-	(gapdb_6, gapdb_11):	1	-	1	=	0
-	(gapdb_7, gapdb_0):	1	-	1	=	0
-	(gapdb_7, gapdb_1):	1	-	1	=	0
-	(gapdb_7, gapdb_3):	1	-	1	=	0
-	(gapdb_7, gapdb_4):	1	-	1	=	0
-	(gapdb_7, gapdb_6):	1	-	1	=	0
-	(gapdb_7, gapdb_8):	1	-	1	=	0
-	(gapdb_7, gapdb_9):	1	-	1	=	0
-	(gapdb_7, gapdb_10):	1	-	1	=	0
-	(gapdb_7, gapdb_11):	1	-	1	=	0
-	(gapdb_8, gapdb_0):	1	-	1	=	0
-	(gapdb_8, gapdb_1):	1	-	1	=	0
-	(gapdb_8, gapdb_3):	1	-	1	=	0
-	(gapdb_8, gapdb_4):	1	-	1	=	0
-	(gapdb_8, gapdb_6):	1	-	1	=	0
-	(gapdb_8, gapdb_7):	1	-	1	=	0
-	(gapdb_8, gapdb_9):	1	-	1	=	0
-	(gapdb_8, gapdb_10):	1	-	1	=	0
-	(gapdb_8, gapdb_11):	1	-	1	=	0
-	(gapdb_9, gapdb_0):	1	-	1	=	0
-	(gapdb_9, gapdb_1):	1	-	1	=	0
-	(gapdb_9, gapdb_3):	1	-	1	=	0
-	(gapdb_9, gapdb_4):	1	-	1	=	0
-	(gapdb_9, gapdb_6):	1	-	1	=	0
-	(gapdb_9, gapdb_7):	1	-	1	=	0
-	(gapdb_9, gapdb_8):	1	-	1	=	0
-	(gapdb_9, gapdb_10):	1	-	1	=	0
-	(gapdb_9, gapdb_11):	1	-	1	=	0
-	(gapdb_10, gapdb_0):	1	-	1	=	0
-	(gapdb_10, gapdb_1):	1	-	1	=	0
-	(gapdb_10, gapdb_3):	1	-	1	=	0
-	(gapdb_10, gapdb_4):	1	-	1	=	0
-	(gapdb_10, gapdb_6):	1	-	1	=	0
-	(gapdb_10, gapdb_7):	1	-	1	=	0
-	(gapdb_10, gapdb_8):	1	-	1	=	0
-	(gapdb_10, gapdb_9):	1	-	1	=	0
-	(gapdb_10, gapdb_11):	1	-	1	=	0
-	(gapdb_11, gapdb_0):	1	-	1	=	0
-	(gapdb_11, gapdb_1):	1	-	1	=	0
-	(gapdb_11, gapdb_3):	1	-	1	=	0
-	(gapdb_11, gapdb_4):	1	-	1	=	0
-	(gapdb_11, gapdb_6):	1	-	1	=	0
-	(gapdb_11, gapdb_7):	1	-	1	=	0
-	(gapdb_11, gapdb_8):	1	-	1	=	0
-	(gapdb_11, gapdb_9):	1	-	1	=	0
-	(gapdb_11, gapdb_10):	1	-	1	=	0
+	(5_gapdb, 2_gapdb):	0.647527	-	1	=	-0.352473
+	(0_gapdb, 1_gapdb):	1	-	1	=	0
+	(0_gapdb, 3_gapdb):	1	-	1	=	0
+	(0_gapdb, 4_gapdb):	1	-	1	=	0
+	(0_gapdb, 6_gapdb):	1	-	1	=	0
+	(0_gapdb, 7_gapdb):	1	-	1	=	0
+	(0_gapdb, 8_gapdb):	1	-	1	=	0
+	(0_gapdb, 9_gapdb):	1	-	1	=	0
+	(0_gapdb, 10_gapdb):	1	-	1	=	0
+	(0_gapdb, 11_gapdb):	1	-	1	=	0
+	(1_gapdb, 0_gapdb):	1	-	1	=	0
+	(1_gapdb, 3_gapdb):	1	-	1	=	0
+	(1_gapdb, 4_gapdb):	1	-	1	=	0
+	(1_gapdb, 6_gapdb):	1	-	1	=	0
+	(1_gapdb, 7_gapdb):	1	-	1	=	0
+	(1_gapdb, 8_gapdb):	1	-	1	=	0
+	(1_gapdb, 9_gapdb):	1	-	1	=	0
+	(1_gapdb, 10_gapdb):	1	-	1	=	0
+	(1_gapdb, 11_gapdb):	1	-	1	=	0
+	(3_gapdb, 0_gapdb):	1	-	1	=	0
+	(3_gapdb, 1_gapdb):	1	-	1	=	0
+	(3_gapdb, 4_gapdb):	1	-	1	=	0
+	(3_gapdb, 6_gapdb):	1	-	1	=	0
+	(3_gapdb, 7_gapdb):	1	-	1	=	0
+	(3_gapdb, 8_gapdb):	1	-	1	=	0
+	(3_gapdb, 9_gapdb):	1	-	1	=	0
+	(3_gapdb, 10_gapdb):	1	-	1	=	0
+	(3_gapdb, 11_gapdb):	1	-	1	=	0
+	(4_gapdb, 0_gapdb):	1	-	1	=	0
+	(4_gapdb, 1_gapdb):	1	-	1	=	0
+	(4_gapdb, 3_gapdb):	1	-	1	=	0
+	(4_gapdb, 6_gapdb):	1	-	1	=	0
+	(4_gapdb, 7_gapdb):	1	-	1	=	0
+	(4_gapdb, 8_gapdb):	1	-	1	=	0
+	(4_gapdb, 9_gapdb):	1	-	1	=	0
+	(4_gapdb, 10_gapdb):	1	-	1	=	0
+	(4_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 0_gapdb):	1	-	1	=	0
+	(6_gapdb, 1_gapdb):	1	-	1	=	0
+	(6_gapdb, 3_gapdb):	1	-	1	=	0
+	(6_gapdb, 4_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 0_gapdb):	1	-	1	=	0
+	(7_gapdb, 1_gapdb):	1	-	1	=	0
+	(7_gapdb, 3_gapdb):	1	-	1	=	0
+	(7_gapdb, 4_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 0_gapdb):	1	-	1	=	0
+	(8_gapdb, 1_gapdb):	1	-	1	=	0
+	(8_gapdb, 3_gapdb):	1	-	1	=	0
+	(8_gapdb, 4_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 0_gapdb):	1	-	1	=	0
+	(9_gapdb, 1_gapdb):	1	-	1	=	0
+	(9_gapdb, 3_gapdb):	1	-	1	=	0
+	(9_gapdb, 4_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 0_gapdb):	1	-	1	=	0
+	(10_gapdb, 1_gapdb):	1	-	1	=	0
+	(10_gapdb, 3_gapdb):	1	-	1	=	0
+	(10_gapdb, 4_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(11_gapdb, 0_gapdb):	1	-	1	=	0
+	(11_gapdb, 1_gapdb):	1	-	1	=	0
+	(11_gapdb, 3_gapdb):	1	-	1	=	0
+	(11_gapdb, 4_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
 
 Measure_3:
 	-h1(11):		SS		A*
-	gapdb_0		1.12798e-316		1.12757e-316
-	gapdb_1		1.12798e-316		1.12757e-316
-	gapdb_10		1.12798e-316		1.12757e-316
-	gapdb_11		1.12798e-316		1.12757e-316
-	gapdb_3		1.12798e-316		1.12757e-316
-	gapdb_4		1.12798e-316		1.12757e-316
-	gapdb_5		1.12798e-316		1.12757e-316
-	gapdb_6		1.12798e-316		1.12757e-316
-	gapdb_7		1.12798e-316		1.12757e-316
-	gapdb_8		1.12798e-316		1.12757e-316
-	gapdb_9		1.12798e-316		1.12757e-316
+	0_gapdb		8.02541e+06		1.20619e+06
+	10_gapdb		8.02541e+06		1.20619e+06
+	11_gapdb		8.02541e+06		1.20619e+06
+	1_gapdb		8.02541e+06		1.20619e+06
+	3_gapdb		8.02541e+06		1.20619e+06
+	4_gapdb		8.02541e+06		1.20619e+06
+	5_gapdb		1.37088e-316		1.20619e+06
+	6_gapdb		8.02541e+06		1.20619e+06
+	7_gapdb		8.02541e+06		1.20619e+06
+	8_gapdb		8.02541e+06		1.20619e+06
+	9_gapdb		8.02541e+06		1.20619e+06
 
 	-h2(11):		SS		A*
-	gapdb_0		1.12798e-316		1.12757e-316
-	gapdb_1		1.12798e-316		1.12757e-316
-	gapdb_10		1.12798e-316		1.12757e-316
-	gapdb_11		1.12798e-316		1.12757e-316
-	gapdb_2		1.12798e-316		1.12757e-316
-	gapdb_3		1.12798e-316		1.12757e-316
-	gapdb_4		1.12798e-316		1.12757e-316
-	gapdb_6		1.12798e-316		1.12757e-316
-	gapdb_7		1.12798e-316		1.12757e-316
-	gapdb_8		1.12798e-316		1.12757e-316
-	gapdb_9		1.12798e-316		1.12757e-316
+	0_gapdb		8.02541e+06		1.20619e+06
+	10_gapdb		8.02541e+06		1.20619e+06
+	11_gapdb		8.02541e+06		1.20619e+06
+	1_gapdb		8.02541e+06		1.20619e+06
+	2_gapdb		1.37088e-316		1.20619e+06
+	3_gapdb		8.02541e+06		1.20619e+06
+	4_gapdb		8.02541e+06		1.20619e+06
+	6_gapdb		8.02541e+06		1.20619e+06
+	7_gapdb		8.02541e+06		1.20619e+06
+	8_gapdb		8.02541e+06		1.20619e+06
+	9_gapdb		8.02541e+06		1.20619e+06
 
 
 
@@ -1450,121 +1450,121 @@ Measure_1:
 Measure_2:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_0, gapdb_3):	1	-	1	=	0
-	(gapdb_0, gapdb_4):	1	-	1	=	0
-	(gapdb_0, gapdb_5):	1	-	1	=	0
-	(gapdb_0, gapdb_6):	1	-	1	=	0
-	(gapdb_0, gapdb_7):	1	-	1	=	0
-	(gapdb_0, gapdb_8):	1	-	1	=	0
-	(gapdb_0, gapdb_9):	1	-	1	=	0
-	(gapdb_0, gapdb_10):	1	-	1	=	0
-	(gapdb_0, gapdb_11):	1	-	1	=	0
-	(gapdb_3, gapdb_0):	1	-	1	=	0
-	(gapdb_3, gapdb_4):	1	-	1	=	0
-	(gapdb_3, gapdb_5):	1	-	1	=	0
-	(gapdb_3, gapdb_6):	1	-	1	=	0
-	(gapdb_3, gapdb_7):	1	-	1	=	0
-	(gapdb_3, gapdb_8):	1	-	1	=	0
-	(gapdb_3, gapdb_9):	1	-	1	=	0
-	(gapdb_3, gapdb_10):	1	-	1	=	0
-	(gapdb_3, gapdb_11):	1	-	1	=	0
-	(gapdb_4, gapdb_0):	1	-	1	=	0
-	(gapdb_4, gapdb_3):	1	-	1	=	0
-	(gapdb_4, gapdb_5):	1	-	1	=	0
-	(gapdb_4, gapdb_6):	1	-	1	=	0
-	(gapdb_4, gapdb_7):	1	-	1	=	0
-	(gapdb_4, gapdb_8):	1	-	1	=	0
-	(gapdb_4, gapdb_9):	1	-	1	=	0
-	(gapdb_4, gapdb_10):	1	-	1	=	0
-	(gapdb_4, gapdb_11):	1	-	1	=	0
-	(gapdb_5, gapdb_0):	1	-	1	=	0
-	(gapdb_5, gapdb_3):	1	-	1	=	0
-	(gapdb_5, gapdb_4):	1	-	1	=	0
-	(gapdb_5, gapdb_6):	1	-	1	=	0
-	(gapdb_5, gapdb_7):	1	-	1	=	0
-	(gapdb_5, gapdb_8):	1	-	1	=	0
-	(gapdb_5, gapdb_9):	1	-	1	=	0
-	(gapdb_5, gapdb_10):	1	-	1	=	0
-	(gapdb_5, gapdb_11):	1	-	1	=	0
-	(gapdb_6, gapdb_0):	1	-	1	=	0
-	(gapdb_6, gapdb_3):	1	-	1	=	0
-	(gapdb_6, gapdb_4):	1	-	1	=	0
-	(gapdb_6, gapdb_5):	1	-	1	=	0
-	(gapdb_6, gapdb_7):	1	-	1	=	0
-	(gapdb_6, gapdb_8):	1	-	1	=	0
-	(gapdb_6, gapdb_9):	1	-	1	=	0
-	(gapdb_6, gapdb_10):	1	-	1	=	0
-	(gapdb_6, gapdb_11):	1	-	1	=	0
-	(gapdb_7, gapdb_0):	1	-	1	=	0
-	(gapdb_7, gapdb_3):	1	-	1	=	0
-	(gapdb_7, gapdb_4):	1	-	1	=	0
-	(gapdb_7, gapdb_5):	1	-	1	=	0
-	(gapdb_7, gapdb_6):	1	-	1	=	0
-	(gapdb_7, gapdb_8):	1	-	1	=	0
-	(gapdb_7, gapdb_9):	1	-	1	=	0
-	(gapdb_7, gapdb_10):	1	-	1	=	0
-	(gapdb_7, gapdb_11):	1	-	1	=	0
-	(gapdb_8, gapdb_0):	1	-	1	=	0
-	(gapdb_8, gapdb_3):	1	-	1	=	0
-	(gapdb_8, gapdb_4):	1	-	1	=	0
-	(gapdb_8, gapdb_5):	1	-	1	=	0
-	(gapdb_8, gapdb_6):	1	-	1	=	0
-	(gapdb_8, gapdb_7):	1	-	1	=	0
-	(gapdb_8, gapdb_9):	1	-	1	=	0
-	(gapdb_8, gapdb_10):	1	-	1	=	0
-	(gapdb_8, gapdb_11):	1	-	1	=	0
-	(gapdb_9, gapdb_0):	1	-	1	=	0
-	(gapdb_9, gapdb_3):	1	-	1	=	0
-	(gapdb_9, gapdb_4):	1	-	1	=	0
-	(gapdb_9, gapdb_5):	1	-	1	=	0
-	(gapdb_9, gapdb_6):	1	-	1	=	0
-	(gapdb_9, gapdb_7):	1	-	1	=	0
-	(gapdb_9, gapdb_8):	1	-	1	=	0
-	(gapdb_9, gapdb_10):	1	-	1	=	0
-	(gapdb_9, gapdb_11):	1	-	1	=	0
-	(gapdb_10, gapdb_0):	1	-	1	=	0
-	(gapdb_10, gapdb_3):	1	-	1	=	0
-	(gapdb_10, gapdb_4):	1	-	1	=	0
-	(gapdb_10, gapdb_5):	1	-	1	=	0
-	(gapdb_10, gapdb_6):	1	-	1	=	0
-	(gapdb_10, gapdb_7):	1	-	1	=	0
-	(gapdb_10, gapdb_8):	1	-	1	=	0
-	(gapdb_10, gapdb_9):	1	-	1	=	0
-	(gapdb_10, gapdb_11):	1	-	1	=	0
-	(gapdb_11, gapdb_0):	1	-	1	=	0
-	(gapdb_11, gapdb_3):	1	-	1	=	0
-	(gapdb_11, gapdb_4):	1	-	1	=	0
-	(gapdb_11, gapdb_5):	1	-	1	=	0
-	(gapdb_11, gapdb_6):	1	-	1	=	0
-	(gapdb_11, gapdb_7):	1	-	1	=	0
-	(gapdb_11, gapdb_8):	1	-	1	=	0
-	(gapdb_11, gapdb_9):	1	-	1	=	0
-	(gapdb_11, gapdb_10):	1	-	1	=	0
+	(0_gapdb, 3_gapdb):	1	-	1	=	0
+	(0_gapdb, 4_gapdb):	1	-	1	=	0
+	(0_gapdb, 5_gapdb):	1	-	1	=	0
+	(0_gapdb, 6_gapdb):	1	-	1	=	0
+	(0_gapdb, 7_gapdb):	1	-	1	=	0
+	(0_gapdb, 8_gapdb):	1	-	1	=	0
+	(0_gapdb, 9_gapdb):	1	-	1	=	0
+	(0_gapdb, 10_gapdb):	1	-	1	=	0
+	(0_gapdb, 11_gapdb):	1	-	1	=	0
+	(3_gapdb, 0_gapdb):	1	-	1	=	0
+	(3_gapdb, 4_gapdb):	1	-	1	=	0
+	(3_gapdb, 5_gapdb):	1	-	1	=	0
+	(3_gapdb, 6_gapdb):	1	-	1	=	0
+	(3_gapdb, 7_gapdb):	1	-	1	=	0
+	(3_gapdb, 8_gapdb):	1	-	1	=	0
+	(3_gapdb, 9_gapdb):	1	-	1	=	0
+	(3_gapdb, 10_gapdb):	1	-	1	=	0
+	(3_gapdb, 11_gapdb):	1	-	1	=	0
+	(4_gapdb, 0_gapdb):	1	-	1	=	0
+	(4_gapdb, 3_gapdb):	1	-	1	=	0
+	(4_gapdb, 5_gapdb):	1	-	1	=	0
+	(4_gapdb, 6_gapdb):	1	-	1	=	0
+	(4_gapdb, 7_gapdb):	1	-	1	=	0
+	(4_gapdb, 8_gapdb):	1	-	1	=	0
+	(4_gapdb, 9_gapdb):	1	-	1	=	0
+	(4_gapdb, 10_gapdb):	1	-	1	=	0
+	(4_gapdb, 11_gapdb):	1	-	1	=	0
+	(5_gapdb, 0_gapdb):	1	-	1	=	0
+	(5_gapdb, 3_gapdb):	1	-	1	=	0
+	(5_gapdb, 4_gapdb):	1	-	1	=	0
+	(5_gapdb, 6_gapdb):	1	-	1	=	0
+	(5_gapdb, 7_gapdb):	1	-	1	=	0
+	(5_gapdb, 8_gapdb):	1	-	1	=	0
+	(5_gapdb, 9_gapdb):	1	-	1	=	0
+	(5_gapdb, 10_gapdb):	1	-	1	=	0
+	(5_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 0_gapdb):	1	-	1	=	0
+	(6_gapdb, 3_gapdb):	1	-	1	=	0
+	(6_gapdb, 4_gapdb):	1	-	1	=	0
+	(6_gapdb, 5_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 0_gapdb):	1	-	1	=	0
+	(7_gapdb, 3_gapdb):	1	-	1	=	0
+	(7_gapdb, 4_gapdb):	1	-	1	=	0
+	(7_gapdb, 5_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 0_gapdb):	1	-	1	=	0
+	(8_gapdb, 3_gapdb):	1	-	1	=	0
+	(8_gapdb, 4_gapdb):	1	-	1	=	0
+	(8_gapdb, 5_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 0_gapdb):	1	-	1	=	0
+	(9_gapdb, 3_gapdb):	1	-	1	=	0
+	(9_gapdb, 4_gapdb):	1	-	1	=	0
+	(9_gapdb, 5_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 0_gapdb):	1	-	1	=	0
+	(10_gapdb, 3_gapdb):	1	-	1	=	0
+	(10_gapdb, 4_gapdb):	1	-	1	=	0
+	(10_gapdb, 5_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(11_gapdb, 0_gapdb):	1	-	1	=	0
+	(11_gapdb, 3_gapdb):	1	-	1	=	0
+	(11_gapdb, 4_gapdb):	1	-	1	=	0
+	(11_gapdb, 5_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
 
 Measure_3:
 	-h1(10):		SS		A*
-	gapdb_0		1.12649e-316		1.12757e-316
-	gapdb_10		1.12649e-316		1.12757e-316
-	gapdb_11		1.12649e-316		1.12757e-316
-	gapdb_3		1.12649e-316		1.12757e-316
-	gapdb_4		1.12649e-316		1.12757e-316
-	gapdb_5		1.12649e-316		1.12757e-316
-	gapdb_6		1.12649e-316		1.12757e-316
-	gapdb_7		1.12649e-316		1.12757e-316
-	gapdb_8		1.12649e-316		1.12757e-316
-	gapdb_9		1.12649e-316		1.12757e-316
+	0_gapdb		499937		154775
+	10_gapdb		499937		154775
+	11_gapdb		499937		154775
+	3_gapdb		499937		154775
+	4_gapdb		499937		154775
+	5_gapdb		499937		154775
+	6_gapdb		499937		154775
+	7_gapdb		499937		154775
+	8_gapdb		499937		154775
+	9_gapdb		499937		154775
 
 	-h2(10):		SS		A*
-	gapdb_0		1.12649e-316		1.12757e-316
-	gapdb_10		1.12649e-316		1.12757e-316
-	gapdb_11		1.12649e-316		1.12757e-316
-	gapdb_3		1.12649e-316		1.12757e-316
-	gapdb_4		1.12649e-316		1.12757e-316
-	gapdb_5		1.12649e-316		1.12757e-316
-	gapdb_6		1.12649e-316		1.12757e-316
-	gapdb_7		1.12649e-316		1.12757e-316
-	gapdb_8		1.12649e-316		1.12757e-316
-	gapdb_9		1.12649e-316		1.12757e-316
+	0_gapdb		499937		154775
+	10_gapdb		499937		154775
+	11_gapdb		499937		154775
+	3_gapdb		499937		154775
+	4_gapdb		499937		154775
+	5_gapdb		499937		154775
+	6_gapdb		499937		154775
+	7_gapdb		499937		154775
+	8_gapdb		499937		154775
+	9_gapdb		499937		154775
 
 
 
@@ -1606,127 +1606,127 @@ Measure_1:
 Measure_2:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_3, gapdb_2):	0.754636	-	1	=	-0.245364
-	(gapdb_0, gapdb_1):	1	-	1	=	0
-	(gapdb_0, gapdb_4):	1	-	1	=	0
-	(gapdb_0, gapdb_5):	1	-	1	=	0
-	(gapdb_0, gapdb_6):	1	-	1	=	0
-	(gapdb_0, gapdb_7):	1	-	1	=	0
-	(gapdb_0, gapdb_8):	1	-	1	=	0
-	(gapdb_0, gapdb_9):	1	-	1	=	0
-	(gapdb_0, gapdb_10):	1	-	1	=	0
-	(gapdb_0, gapdb_11):	1	-	1	=	0
-	(gapdb_1, gapdb_0):	1	-	1	=	0
-	(gapdb_1, gapdb_4):	1	-	1	=	0
-	(gapdb_1, gapdb_5):	1	-	1	=	0
-	(gapdb_1, gapdb_6):	1	-	1	=	0
-	(gapdb_1, gapdb_7):	1	-	1	=	0
-	(gapdb_1, gapdb_8):	1	-	1	=	0
-	(gapdb_1, gapdb_9):	1	-	1	=	0
-	(gapdb_1, gapdb_10):	1	-	1	=	0
-	(gapdb_1, gapdb_11):	1	-	1	=	0
-	(gapdb_4, gapdb_0):	1	-	1	=	0
-	(gapdb_4, gapdb_1):	1	-	1	=	0
-	(gapdb_4, gapdb_5):	1	-	1	=	0
-	(gapdb_4, gapdb_6):	1	-	1	=	0
-	(gapdb_4, gapdb_7):	1	-	1	=	0
-	(gapdb_4, gapdb_8):	1	-	1	=	0
-	(gapdb_4, gapdb_9):	1	-	1	=	0
-	(gapdb_4, gapdb_10):	1	-	1	=	0
-	(gapdb_4, gapdb_11):	1	-	1	=	0
-	(gapdb_5, gapdb_0):	1	-	1	=	0
-	(gapdb_5, gapdb_1):	1	-	1	=	0
-	(gapdb_5, gapdb_4):	1	-	1	=	0
-	(gapdb_5, gapdb_6):	1	-	1	=	0
-	(gapdb_5, gapdb_7):	1	-	1	=	0
-	(gapdb_5, gapdb_8):	1	-	1	=	0
-	(gapdb_5, gapdb_9):	1	-	1	=	0
-	(gapdb_5, gapdb_10):	1	-	1	=	0
-	(gapdb_5, gapdb_11):	1	-	1	=	0
-	(gapdb_6, gapdb_0):	1	-	1	=	0
-	(gapdb_6, gapdb_1):	1	-	1	=	0
-	(gapdb_6, gapdb_4):	1	-	1	=	0
-	(gapdb_6, gapdb_5):	1	-	1	=	0
-	(gapdb_6, gapdb_7):	1	-	1	=	0
-	(gapdb_6, gapdb_8):	1	-	1	=	0
-	(gapdb_6, gapdb_9):	1	-	1	=	0
-	(gapdb_6, gapdb_10):	1	-	1	=	0
-	(gapdb_6, gapdb_11):	1	-	1	=	0
-	(gapdb_7, gapdb_0):	1	-	1	=	0
-	(gapdb_7, gapdb_1):	1	-	1	=	0
-	(gapdb_7, gapdb_4):	1	-	1	=	0
-	(gapdb_7, gapdb_5):	1	-	1	=	0
-	(gapdb_7, gapdb_6):	1	-	1	=	0
-	(gapdb_7, gapdb_8):	1	-	1	=	0
-	(gapdb_7, gapdb_9):	1	-	1	=	0
-	(gapdb_7, gapdb_10):	1	-	1	=	0
-	(gapdb_7, gapdb_11):	1	-	1	=	0
-	(gapdb_8, gapdb_0):	1	-	1	=	0
-	(gapdb_8, gapdb_1):	1	-	1	=	0
-	(gapdb_8, gapdb_4):	1	-	1	=	0
-	(gapdb_8, gapdb_5):	1	-	1	=	0
-	(gapdb_8, gapdb_6):	1	-	1	=	0
-	(gapdb_8, gapdb_7):	1	-	1	=	0
-	(gapdb_8, gapdb_9):	1	-	1	=	0
-	(gapdb_8, gapdb_10):	1	-	1	=	0
-	(gapdb_8, gapdb_11):	1	-	1	=	0
-	(gapdb_9, gapdb_0):	1	-	1	=	0
-	(gapdb_9, gapdb_1):	1	-	1	=	0
-	(gapdb_9, gapdb_4):	1	-	1	=	0
-	(gapdb_9, gapdb_5):	1	-	1	=	0
-	(gapdb_9, gapdb_6):	1	-	1	=	0
-	(gapdb_9, gapdb_7):	1	-	1	=	0
-	(gapdb_9, gapdb_8):	1	-	1	=	0
-	(gapdb_9, gapdb_10):	1	-	1	=	0
-	(gapdb_9, gapdb_11):	1	-	1	=	0
-	(gapdb_10, gapdb_0):	1	-	1	=	0
-	(gapdb_10, gapdb_1):	1	-	1	=	0
-	(gapdb_10, gapdb_4):	1	-	1	=	0
-	(gapdb_10, gapdb_5):	1	-	1	=	0
-	(gapdb_10, gapdb_6):	1	-	1	=	0
-	(gapdb_10, gapdb_7):	1	-	1	=	0
-	(gapdb_10, gapdb_8):	1	-	1	=	0
-	(gapdb_10, gapdb_9):	1	-	1	=	0
-	(gapdb_10, gapdb_11):	1	-	1	=	0
-	(gapdb_11, gapdb_0):	1	-	1	=	0
-	(gapdb_11, gapdb_1):	1	-	1	=	0
-	(gapdb_11, gapdb_4):	1	-	1	=	0
-	(gapdb_11, gapdb_5):	1	-	1	=	0
-	(gapdb_11, gapdb_6):	1	-	1	=	0
-	(gapdb_11, gapdb_7):	1	-	1	=	0
-	(gapdb_11, gapdb_8):	1	-	1	=	0
-	(gapdb_11, gapdb_9):	1	-	1	=	0
-	(gapdb_11, gapdb_10):	1	-	1	=	0
-	(gapdb_2, gapdb_3):	1.32514	-	1	=	0.325142
+	(3_gapdb, 2_gapdb):	0.754636	-	1	=	-0.245364
+	(0_gapdb, 1_gapdb):	1	-	1	=	0
+	(0_gapdb, 4_gapdb):	1	-	1	=	0
+	(0_gapdb, 5_gapdb):	1	-	1	=	0
+	(0_gapdb, 6_gapdb):	1	-	1	=	0
+	(0_gapdb, 7_gapdb):	1	-	1	=	0
+	(0_gapdb, 8_gapdb):	1	-	1	=	0
+	(0_gapdb, 9_gapdb):	1	-	1	=	0
+	(0_gapdb, 10_gapdb):	1	-	1	=	0
+	(0_gapdb, 11_gapdb):	1	-	1	=	0
+	(1_gapdb, 0_gapdb):	1	-	1	=	0
+	(1_gapdb, 4_gapdb):	1	-	1	=	0
+	(1_gapdb, 5_gapdb):	1	-	1	=	0
+	(1_gapdb, 6_gapdb):	1	-	1	=	0
+	(1_gapdb, 7_gapdb):	1	-	1	=	0
+	(1_gapdb, 8_gapdb):	1	-	1	=	0
+	(1_gapdb, 9_gapdb):	1	-	1	=	0
+	(1_gapdb, 10_gapdb):	1	-	1	=	0
+	(1_gapdb, 11_gapdb):	1	-	1	=	0
+	(4_gapdb, 0_gapdb):	1	-	1	=	0
+	(4_gapdb, 1_gapdb):	1	-	1	=	0
+	(4_gapdb, 5_gapdb):	1	-	1	=	0
+	(4_gapdb, 6_gapdb):	1	-	1	=	0
+	(4_gapdb, 7_gapdb):	1	-	1	=	0
+	(4_gapdb, 8_gapdb):	1	-	1	=	0
+	(4_gapdb, 9_gapdb):	1	-	1	=	0
+	(4_gapdb, 10_gapdb):	1	-	1	=	0
+	(4_gapdb, 11_gapdb):	1	-	1	=	0
+	(5_gapdb, 0_gapdb):	1	-	1	=	0
+	(5_gapdb, 1_gapdb):	1	-	1	=	0
+	(5_gapdb, 4_gapdb):	1	-	1	=	0
+	(5_gapdb, 6_gapdb):	1	-	1	=	0
+	(5_gapdb, 7_gapdb):	1	-	1	=	0
+	(5_gapdb, 8_gapdb):	1	-	1	=	0
+	(5_gapdb, 9_gapdb):	1	-	1	=	0
+	(5_gapdb, 10_gapdb):	1	-	1	=	0
+	(5_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 0_gapdb):	1	-	1	=	0
+	(6_gapdb, 1_gapdb):	1	-	1	=	0
+	(6_gapdb, 4_gapdb):	1	-	1	=	0
+	(6_gapdb, 5_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 0_gapdb):	1	-	1	=	0
+	(7_gapdb, 1_gapdb):	1	-	1	=	0
+	(7_gapdb, 4_gapdb):	1	-	1	=	0
+	(7_gapdb, 5_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 0_gapdb):	1	-	1	=	0
+	(8_gapdb, 1_gapdb):	1	-	1	=	0
+	(8_gapdb, 4_gapdb):	1	-	1	=	0
+	(8_gapdb, 5_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 0_gapdb):	1	-	1	=	0
+	(9_gapdb, 1_gapdb):	1	-	1	=	0
+	(9_gapdb, 4_gapdb):	1	-	1	=	0
+	(9_gapdb, 5_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 0_gapdb):	1	-	1	=	0
+	(10_gapdb, 1_gapdb):	1	-	1	=	0
+	(10_gapdb, 4_gapdb):	1	-	1	=	0
+	(10_gapdb, 5_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(11_gapdb, 0_gapdb):	1	-	1	=	0
+	(11_gapdb, 1_gapdb):	1	-	1	=	0
+	(11_gapdb, 4_gapdb):	1	-	1	=	0
+	(11_gapdb, 5_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
+	(2_gapdb, 3_gapdb):	1.32514	-	1	=	0.325142
 
 Measure_3:
 	-h1(12):		SS		A*
-	gapdb_0		1.12825e-316		1.12757e-316
-	gapdb_1		1.12825e-316		1.12757e-316
-	gapdb_10		1.12825e-316		1.12757e-316
-	gapdb_11		1.12825e-316		1.12757e-316
-	gapdb_2		1.12825e-316		1.12757e-316
-	gapdb_3		1.12825e-316		1.12757e-316
-	gapdb_4		1.12825e-316		1.12757e-316
-	gapdb_5		1.12825e-316		1.12757e-316
-	gapdb_6		1.12825e-316		1.12757e-316
-	gapdb_7		1.12825e-316		1.12757e-316
-	gapdb_8		1.12825e-316		1.12757e-316
-	gapdb_9		1.12825e-316		1.12757e-316
+	0_gapdb		6.98407e+06		2.84503e+06
+	10_gapdb		6.98407e+06		2.84503e+06
+	11_gapdb		6.98407e+06		2.84503e+06
+	1_gapdb		6.98407e+06		2.84503e+06
+	2_gapdb		1.37099e-316		2.84503e+06
+	3_gapdb		1.37099e-316		2.84503e+06
+	4_gapdb		6.98407e+06		2.84503e+06
+	5_gapdb		6.98407e+06		2.84503e+06
+	6_gapdb		6.98407e+06		2.84503e+06
+	7_gapdb		6.98407e+06		2.84503e+06
+	8_gapdb		6.98407e+06		2.84503e+06
+	9_gapdb		6.98407e+06		2.84503e+06
 
 	-h2(12):		SS		A*
-	gapdb_0		1.12825e-316		1.12757e-316
-	gapdb_1		1.12825e-316		1.12757e-316
-	gapdb_10		1.12825e-316		1.12757e-316
-	gapdb_11		1.12825e-316		1.12757e-316
-	gapdb_2		1.12825e-316		1.12757e-316
-	gapdb_3		1.12825e-316		1.12757e-316
-	gapdb_4		1.12825e-316		1.12757e-316
-	gapdb_5		1.12825e-316		1.12757e-316
-	gapdb_6		1.12825e-316		1.12757e-316
-	gapdb_7		1.12825e-316		1.12757e-316
-	gapdb_8		1.12825e-316		1.12757e-316
-	gapdb_9		1.12825e-316		1.12757e-316
+	0_gapdb		6.98407e+06		2.84503e+06
+	10_gapdb		6.98407e+06		2.84503e+06
+	11_gapdb		6.98407e+06		2.84503e+06
+	1_gapdb		6.98407e+06		2.84503e+06
+	2_gapdb		1.37099e-316		2.84503e+06
+	3_gapdb		1.37099e-316		2.84503e+06
+	4_gapdb		6.98407e+06		2.84503e+06
+	5_gapdb		6.98407e+06		2.84503e+06
+	6_gapdb		6.98407e+06		2.84503e+06
+	7_gapdb		6.98407e+06		2.84503e+06
+	8_gapdb		6.98407e+06		2.84503e+06
+	9_gapdb		6.98407e+06		2.84503e+06
 
 
 
@@ -1768,124 +1768,124 @@ Measure_1:
 Measure_2:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_3, gapdb_2):	0.626685	-	1	=	-0.373315
-	(gapdb_0, gapdb_1):	1	-	1	=	0
-	(gapdb_0, gapdb_4):	1	-	1	=	0
-	(gapdb_0, gapdb_5):	1	-	1	=	0
-	(gapdb_0, gapdb_6):	1	-	1	=	0
-	(gapdb_0, gapdb_7):	1	-	1	=	0
-	(gapdb_0, gapdb_8):	1	-	1	=	0
-	(gapdb_0, gapdb_9):	1	-	1	=	0
-	(gapdb_0, gapdb_10):	1	-	1	=	0
-	(gapdb_0, gapdb_11):	1	-	1	=	0
-	(gapdb_1, gapdb_0):	1	-	1	=	0
-	(gapdb_1, gapdb_4):	1	-	1	=	0
-	(gapdb_1, gapdb_5):	1	-	1	=	0
-	(gapdb_1, gapdb_6):	1	-	1	=	0
-	(gapdb_1, gapdb_7):	1	-	1	=	0
-	(gapdb_1, gapdb_8):	1	-	1	=	0
-	(gapdb_1, gapdb_9):	1	-	1	=	0
-	(gapdb_1, gapdb_10):	1	-	1	=	0
-	(gapdb_1, gapdb_11):	1	-	1	=	0
-	(gapdb_4, gapdb_0):	1	-	1	=	0
-	(gapdb_4, gapdb_1):	1	-	1	=	0
-	(gapdb_4, gapdb_5):	1	-	1	=	0
-	(gapdb_4, gapdb_6):	1	-	1	=	0
-	(gapdb_4, gapdb_7):	1	-	1	=	0
-	(gapdb_4, gapdb_8):	1	-	1	=	0
-	(gapdb_4, gapdb_9):	1	-	1	=	0
-	(gapdb_4, gapdb_10):	1	-	1	=	0
-	(gapdb_4, gapdb_11):	1	-	1	=	0
-	(gapdb_5, gapdb_0):	1	-	1	=	0
-	(gapdb_5, gapdb_1):	1	-	1	=	0
-	(gapdb_5, gapdb_4):	1	-	1	=	0
-	(gapdb_5, gapdb_6):	1	-	1	=	0
-	(gapdb_5, gapdb_7):	1	-	1	=	0
-	(gapdb_5, gapdb_8):	1	-	1	=	0
-	(gapdb_5, gapdb_9):	1	-	1	=	0
-	(gapdb_5, gapdb_10):	1	-	1	=	0
-	(gapdb_5, gapdb_11):	1	-	1	=	0
-	(gapdb_6, gapdb_0):	1	-	1	=	0
-	(gapdb_6, gapdb_1):	1	-	1	=	0
-	(gapdb_6, gapdb_4):	1	-	1	=	0
-	(gapdb_6, gapdb_5):	1	-	1	=	0
-	(gapdb_6, gapdb_7):	1	-	1	=	0
-	(gapdb_6, gapdb_8):	1	-	1	=	0
-	(gapdb_6, gapdb_9):	1	-	1	=	0
-	(gapdb_6, gapdb_10):	1	-	1	=	0
-	(gapdb_6, gapdb_11):	1	-	1	=	0
-	(gapdb_7, gapdb_0):	1	-	1	=	0
-	(gapdb_7, gapdb_1):	1	-	1	=	0
-	(gapdb_7, gapdb_4):	1	-	1	=	0
-	(gapdb_7, gapdb_5):	1	-	1	=	0
-	(gapdb_7, gapdb_6):	1	-	1	=	0
-	(gapdb_7, gapdb_8):	1	-	1	=	0
-	(gapdb_7, gapdb_9):	1	-	1	=	0
-	(gapdb_7, gapdb_10):	1	-	1	=	0
-	(gapdb_7, gapdb_11):	1	-	1	=	0
-	(gapdb_8, gapdb_0):	1	-	1	=	0
-	(gapdb_8, gapdb_1):	1	-	1	=	0
-	(gapdb_8, gapdb_4):	1	-	1	=	0
-	(gapdb_8, gapdb_5):	1	-	1	=	0
-	(gapdb_8, gapdb_6):	1	-	1	=	0
-	(gapdb_8, gapdb_7):	1	-	1	=	0
-	(gapdb_8, gapdb_9):	1	-	1	=	0
-	(gapdb_8, gapdb_10):	1	-	1	=	0
-	(gapdb_8, gapdb_11):	1	-	1	=	0
-	(gapdb_9, gapdb_0):	1	-	1	=	0
-	(gapdb_9, gapdb_1):	1	-	1	=	0
-	(gapdb_9, gapdb_4):	1	-	1	=	0
-	(gapdb_9, gapdb_5):	1	-	1	=	0
-	(gapdb_9, gapdb_6):	1	-	1	=	0
-	(gapdb_9, gapdb_7):	1	-	1	=	0
-	(gapdb_9, gapdb_8):	1	-	1	=	0
-	(gapdb_9, gapdb_10):	1	-	1	=	0
-	(gapdb_9, gapdb_11):	1	-	1	=	0
-	(gapdb_10, gapdb_0):	1	-	1	=	0
-	(gapdb_10, gapdb_1):	1	-	1	=	0
-	(gapdb_10, gapdb_4):	1	-	1	=	0
-	(gapdb_10, gapdb_5):	1	-	1	=	0
-	(gapdb_10, gapdb_6):	1	-	1	=	0
-	(gapdb_10, gapdb_7):	1	-	1	=	0
-	(gapdb_10, gapdb_8):	1	-	1	=	0
-	(gapdb_10, gapdb_9):	1	-	1	=	0
-	(gapdb_10, gapdb_11):	1	-	1	=	0
-	(gapdb_11, gapdb_0):	1	-	1	=	0
-	(gapdb_11, gapdb_1):	1	-	1	=	0
-	(gapdb_11, gapdb_4):	1	-	1	=	0
-	(gapdb_11, gapdb_5):	1	-	1	=	0
-	(gapdb_11, gapdb_6):	1	-	1	=	0
-	(gapdb_11, gapdb_7):	1	-	1	=	0
-	(gapdb_11, gapdb_8):	1	-	1	=	0
-	(gapdb_11, gapdb_9):	1	-	1	=	0
-	(gapdb_11, gapdb_10):	1	-	1	=	0
+	(3_gapdb, 2_gapdb):	0.626685	-	1	=	-0.373315
+	(0_gapdb, 1_gapdb):	1	-	1	=	0
+	(0_gapdb, 4_gapdb):	1	-	1	=	0
+	(0_gapdb, 5_gapdb):	1	-	1	=	0
+	(0_gapdb, 6_gapdb):	1	-	1	=	0
+	(0_gapdb, 7_gapdb):	1	-	1	=	0
+	(0_gapdb, 8_gapdb):	1	-	1	=	0
+	(0_gapdb, 9_gapdb):	1	-	1	=	0
+	(0_gapdb, 10_gapdb):	1	-	1	=	0
+	(0_gapdb, 11_gapdb):	1	-	1	=	0
+	(1_gapdb, 0_gapdb):	1	-	1	=	0
+	(1_gapdb, 4_gapdb):	1	-	1	=	0
+	(1_gapdb, 5_gapdb):	1	-	1	=	0
+	(1_gapdb, 6_gapdb):	1	-	1	=	0
+	(1_gapdb, 7_gapdb):	1	-	1	=	0
+	(1_gapdb, 8_gapdb):	1	-	1	=	0
+	(1_gapdb, 9_gapdb):	1	-	1	=	0
+	(1_gapdb, 10_gapdb):	1	-	1	=	0
+	(1_gapdb, 11_gapdb):	1	-	1	=	0
+	(4_gapdb, 0_gapdb):	1	-	1	=	0
+	(4_gapdb, 1_gapdb):	1	-	1	=	0
+	(4_gapdb, 5_gapdb):	1	-	1	=	0
+	(4_gapdb, 6_gapdb):	1	-	1	=	0
+	(4_gapdb, 7_gapdb):	1	-	1	=	0
+	(4_gapdb, 8_gapdb):	1	-	1	=	0
+	(4_gapdb, 9_gapdb):	1	-	1	=	0
+	(4_gapdb, 10_gapdb):	1	-	1	=	0
+	(4_gapdb, 11_gapdb):	1	-	1	=	0
+	(5_gapdb, 0_gapdb):	1	-	1	=	0
+	(5_gapdb, 1_gapdb):	1	-	1	=	0
+	(5_gapdb, 4_gapdb):	1	-	1	=	0
+	(5_gapdb, 6_gapdb):	1	-	1	=	0
+	(5_gapdb, 7_gapdb):	1	-	1	=	0
+	(5_gapdb, 8_gapdb):	1	-	1	=	0
+	(5_gapdb, 9_gapdb):	1	-	1	=	0
+	(5_gapdb, 10_gapdb):	1	-	1	=	0
+	(5_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 0_gapdb):	1	-	1	=	0
+	(6_gapdb, 1_gapdb):	1	-	1	=	0
+	(6_gapdb, 4_gapdb):	1	-	1	=	0
+	(6_gapdb, 5_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 0_gapdb):	1	-	1	=	0
+	(7_gapdb, 1_gapdb):	1	-	1	=	0
+	(7_gapdb, 4_gapdb):	1	-	1	=	0
+	(7_gapdb, 5_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 0_gapdb):	1	-	1	=	0
+	(8_gapdb, 1_gapdb):	1	-	1	=	0
+	(8_gapdb, 4_gapdb):	1	-	1	=	0
+	(8_gapdb, 5_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 0_gapdb):	1	-	1	=	0
+	(9_gapdb, 1_gapdb):	1	-	1	=	0
+	(9_gapdb, 4_gapdb):	1	-	1	=	0
+	(9_gapdb, 5_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 0_gapdb):	1	-	1	=	0
+	(10_gapdb, 1_gapdb):	1	-	1	=	0
+	(10_gapdb, 4_gapdb):	1	-	1	=	0
+	(10_gapdb, 5_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(11_gapdb, 0_gapdb):	1	-	1	=	0
+	(11_gapdb, 1_gapdb):	1	-	1	=	0
+	(11_gapdb, 4_gapdb):	1	-	1	=	0
+	(11_gapdb, 5_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
 
 Measure_3:
 	-h1(11):		SS		A*
-	gapdb_0		1.12886e-316		1.12757e-316
-	gapdb_1		1.12886e-316		1.12757e-316
-	gapdb_10		1.12886e-316		1.12757e-316
-	gapdb_11		1.12886e-316		1.12757e-316
-	gapdb_3		1.12886e-316		1.12757e-316
-	gapdb_4		1.12886e-316		1.12757e-316
-	gapdb_5		1.12886e-316		1.12757e-316
-	gapdb_6		1.12886e-316		1.12757e-316
-	gapdb_7		1.12886e-316		1.12757e-316
-	gapdb_8		1.12886e-316		1.12757e-316
-	gapdb_9		1.12886e-316		1.12757e-316
+	0_gapdb		3.94559e+07		3.92357e+06
+	10_gapdb		3.94559e+07		3.92357e+06
+	11_gapdb		3.94559e+07		3.92357e+06
+	1_gapdb		3.94559e+07		3.92357e+06
+	3_gapdb		1.3715e-316		3.92357e+06
+	4_gapdb		3.94559e+07		3.92357e+06
+	5_gapdb		3.94559e+07		3.92357e+06
+	6_gapdb		3.94559e+07		3.92357e+06
+	7_gapdb		3.94559e+07		3.92357e+06
+	8_gapdb		3.94559e+07		3.92357e+06
+	9_gapdb		3.94559e+07		3.92357e+06
 
 	-h2(11):		SS		A*
-	gapdb_0		1.12886e-316		1.12757e-316
-	gapdb_1		1.12886e-316		1.12757e-316
-	gapdb_10		1.12886e-316		1.12757e-316
-	gapdb_11		1.12886e-316		1.12757e-316
-	gapdb_2		1.12886e-316		1.12757e-316
-	gapdb_4		1.12886e-316		1.12757e-316
-	gapdb_5		1.12886e-316		1.12757e-316
-	gapdb_6		1.12886e-316		1.12757e-316
-	gapdb_7		1.12886e-316		1.12757e-316
-	gapdb_8		1.12886e-316		1.12757e-316
-	gapdb_9		1.12886e-316		1.12757e-316
+	0_gapdb		3.94559e+07		3.92357e+06
+	10_gapdb		3.94559e+07		3.92357e+06
+	11_gapdb		3.94559e+07		3.92357e+06
+	1_gapdb		3.94559e+07		3.92357e+06
+	2_gapdb		1.3715e-316		3.92357e+06
+	4_gapdb		3.94559e+07		3.92357e+06
+	5_gapdb		3.94559e+07		3.92357e+06
+	6_gapdb		3.94559e+07		3.92357e+06
+	7_gapdb		3.94559e+07		3.92357e+06
+	8_gapdb		3.94559e+07		3.92357e+06
+	9_gapdb		3.94559e+07		3.92357e+06
 
 
 
@@ -1927,121 +1927,121 @@ Measure_1:
 Measure_2:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_0, gapdb_2):	1	-	1	=	0
-	(gapdb_0, gapdb_4):	1	-	1	=	0
-	(gapdb_0, gapdb_5):	1	-	1	=	0
-	(gapdb_0, gapdb_6):	1	-	1	=	0
-	(gapdb_0, gapdb_7):	1	-	1	=	0
-	(gapdb_0, gapdb_8):	1	-	1	=	0
-	(gapdb_0, gapdb_9):	1	-	1	=	0
-	(gapdb_0, gapdb_10):	1	-	1	=	0
-	(gapdb_0, gapdb_11):	1	-	1	=	0
-	(gapdb_2, gapdb_0):	1	-	1	=	0
-	(gapdb_2, gapdb_4):	1	-	1	=	0
-	(gapdb_2, gapdb_5):	1	-	1	=	0
-	(gapdb_2, gapdb_6):	1	-	1	=	0
-	(gapdb_2, gapdb_7):	1	-	1	=	0
-	(gapdb_2, gapdb_8):	1	-	1	=	0
-	(gapdb_2, gapdb_9):	1	-	1	=	0
-	(gapdb_2, gapdb_10):	1	-	1	=	0
-	(gapdb_2, gapdb_11):	1	-	1	=	0
-	(gapdb_4, gapdb_0):	1	-	1	=	0
-	(gapdb_4, gapdb_2):	1	-	1	=	0
-	(gapdb_4, gapdb_5):	1	-	1	=	0
-	(gapdb_4, gapdb_6):	1	-	1	=	0
-	(gapdb_4, gapdb_7):	1	-	1	=	0
-	(gapdb_4, gapdb_8):	1	-	1	=	0
-	(gapdb_4, gapdb_9):	1	-	1	=	0
-	(gapdb_4, gapdb_10):	1	-	1	=	0
-	(gapdb_4, gapdb_11):	1	-	1	=	0
-	(gapdb_5, gapdb_0):	1	-	1	=	0
-	(gapdb_5, gapdb_2):	1	-	1	=	0
-	(gapdb_5, gapdb_4):	1	-	1	=	0
-	(gapdb_5, gapdb_6):	1	-	1	=	0
-	(gapdb_5, gapdb_7):	1	-	1	=	0
-	(gapdb_5, gapdb_8):	1	-	1	=	0
-	(gapdb_5, gapdb_9):	1	-	1	=	0
-	(gapdb_5, gapdb_10):	1	-	1	=	0
-	(gapdb_5, gapdb_11):	1	-	1	=	0
-	(gapdb_6, gapdb_0):	1	-	1	=	0
-	(gapdb_6, gapdb_2):	1	-	1	=	0
-	(gapdb_6, gapdb_4):	1	-	1	=	0
-	(gapdb_6, gapdb_5):	1	-	1	=	0
-	(gapdb_6, gapdb_7):	1	-	1	=	0
-	(gapdb_6, gapdb_8):	1	-	1	=	0
-	(gapdb_6, gapdb_9):	1	-	1	=	0
-	(gapdb_6, gapdb_10):	1	-	1	=	0
-	(gapdb_6, gapdb_11):	1	-	1	=	0
-	(gapdb_7, gapdb_0):	1	-	1	=	0
-	(gapdb_7, gapdb_2):	1	-	1	=	0
-	(gapdb_7, gapdb_4):	1	-	1	=	0
-	(gapdb_7, gapdb_5):	1	-	1	=	0
-	(gapdb_7, gapdb_6):	1	-	1	=	0
-	(gapdb_7, gapdb_8):	1	-	1	=	0
-	(gapdb_7, gapdb_9):	1	-	1	=	0
-	(gapdb_7, gapdb_10):	1	-	1	=	0
-	(gapdb_7, gapdb_11):	1	-	1	=	0
-	(gapdb_8, gapdb_0):	1	-	1	=	0
-	(gapdb_8, gapdb_2):	1	-	1	=	0
-	(gapdb_8, gapdb_4):	1	-	1	=	0
-	(gapdb_8, gapdb_5):	1	-	1	=	0
-	(gapdb_8, gapdb_6):	1	-	1	=	0
-	(gapdb_8, gapdb_7):	1	-	1	=	0
-	(gapdb_8, gapdb_9):	1	-	1	=	0
-	(gapdb_8, gapdb_10):	1	-	1	=	0
-	(gapdb_8, gapdb_11):	1	-	1	=	0
-	(gapdb_9, gapdb_0):	1	-	1	=	0
-	(gapdb_9, gapdb_2):	1	-	1	=	0
-	(gapdb_9, gapdb_4):	1	-	1	=	0
-	(gapdb_9, gapdb_5):	1	-	1	=	0
-	(gapdb_9, gapdb_6):	1	-	1	=	0
-	(gapdb_9, gapdb_7):	1	-	1	=	0
-	(gapdb_9, gapdb_8):	1	-	1	=	0
-	(gapdb_9, gapdb_10):	1	-	1	=	0
-	(gapdb_9, gapdb_11):	1	-	1	=	0
-	(gapdb_10, gapdb_0):	1	-	1	=	0
-	(gapdb_10, gapdb_2):	1	-	1	=	0
-	(gapdb_10, gapdb_4):	1	-	1	=	0
-	(gapdb_10, gapdb_5):	1	-	1	=	0
-	(gapdb_10, gapdb_6):	1	-	1	=	0
-	(gapdb_10, gapdb_7):	1	-	1	=	0
-	(gapdb_10, gapdb_8):	1	-	1	=	0
-	(gapdb_10, gapdb_9):	1	-	1	=	0
-	(gapdb_10, gapdb_11):	1	-	1	=	0
-	(gapdb_11, gapdb_0):	1	-	1	=	0
-	(gapdb_11, gapdb_2):	1	-	1	=	0
-	(gapdb_11, gapdb_4):	1	-	1	=	0
-	(gapdb_11, gapdb_5):	1	-	1	=	0
-	(gapdb_11, gapdb_6):	1	-	1	=	0
-	(gapdb_11, gapdb_7):	1	-	1	=	0
-	(gapdb_11, gapdb_8):	1	-	1	=	0
-	(gapdb_11, gapdb_9):	1	-	1	=	0
-	(gapdb_11, gapdb_10):	1	-	1	=	0
+	(0_gapdb, 2_gapdb):	1	-	1	=	0
+	(0_gapdb, 4_gapdb):	1	-	1	=	0
+	(0_gapdb, 5_gapdb):	1	-	1	=	0
+	(0_gapdb, 6_gapdb):	1	-	1	=	0
+	(0_gapdb, 7_gapdb):	1	-	1	=	0
+	(0_gapdb, 8_gapdb):	1	-	1	=	0
+	(0_gapdb, 9_gapdb):	1	-	1	=	0
+	(0_gapdb, 10_gapdb):	1	-	1	=	0
+	(0_gapdb, 11_gapdb):	1	-	1	=	0
+	(2_gapdb, 0_gapdb):	1	-	1	=	0
+	(2_gapdb, 4_gapdb):	1	-	1	=	0
+	(2_gapdb, 5_gapdb):	1	-	1	=	0
+	(2_gapdb, 6_gapdb):	1	-	1	=	0
+	(2_gapdb, 7_gapdb):	1	-	1	=	0
+	(2_gapdb, 8_gapdb):	1	-	1	=	0
+	(2_gapdb, 9_gapdb):	1	-	1	=	0
+	(2_gapdb, 10_gapdb):	1	-	1	=	0
+	(2_gapdb, 11_gapdb):	1	-	1	=	0
+	(4_gapdb, 0_gapdb):	1	-	1	=	0
+	(4_gapdb, 2_gapdb):	1	-	1	=	0
+	(4_gapdb, 5_gapdb):	1	-	1	=	0
+	(4_gapdb, 6_gapdb):	1	-	1	=	0
+	(4_gapdb, 7_gapdb):	1	-	1	=	0
+	(4_gapdb, 8_gapdb):	1	-	1	=	0
+	(4_gapdb, 9_gapdb):	1	-	1	=	0
+	(4_gapdb, 10_gapdb):	1	-	1	=	0
+	(4_gapdb, 11_gapdb):	1	-	1	=	0
+	(5_gapdb, 0_gapdb):	1	-	1	=	0
+	(5_gapdb, 2_gapdb):	1	-	1	=	0
+	(5_gapdb, 4_gapdb):	1	-	1	=	0
+	(5_gapdb, 6_gapdb):	1	-	1	=	0
+	(5_gapdb, 7_gapdb):	1	-	1	=	0
+	(5_gapdb, 8_gapdb):	1	-	1	=	0
+	(5_gapdb, 9_gapdb):	1	-	1	=	0
+	(5_gapdb, 10_gapdb):	1	-	1	=	0
+	(5_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 0_gapdb):	1	-	1	=	0
+	(6_gapdb, 2_gapdb):	1	-	1	=	0
+	(6_gapdb, 4_gapdb):	1	-	1	=	0
+	(6_gapdb, 5_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 0_gapdb):	1	-	1	=	0
+	(7_gapdb, 2_gapdb):	1	-	1	=	0
+	(7_gapdb, 4_gapdb):	1	-	1	=	0
+	(7_gapdb, 5_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 0_gapdb):	1	-	1	=	0
+	(8_gapdb, 2_gapdb):	1	-	1	=	0
+	(8_gapdb, 4_gapdb):	1	-	1	=	0
+	(8_gapdb, 5_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 0_gapdb):	1	-	1	=	0
+	(9_gapdb, 2_gapdb):	1	-	1	=	0
+	(9_gapdb, 4_gapdb):	1	-	1	=	0
+	(9_gapdb, 5_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 0_gapdb):	1	-	1	=	0
+	(10_gapdb, 2_gapdb):	1	-	1	=	0
+	(10_gapdb, 4_gapdb):	1	-	1	=	0
+	(10_gapdb, 5_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(11_gapdb, 0_gapdb):	1	-	1	=	0
+	(11_gapdb, 2_gapdb):	1	-	1	=	0
+	(11_gapdb, 4_gapdb):	1	-	1	=	0
+	(11_gapdb, 5_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
 
 Measure_3:
 	-h1(10):		SS		A*
-	gapdb_0		1.12905e-316		1.12757e-316
-	gapdb_10		1.12905e-316		1.12757e-316
-	gapdb_11		1.12905e-316		1.12757e-316
-	gapdb_2		1.12905e-316		1.12757e-316
-	gapdb_4		1.12905e-316		1.12757e-316
-	gapdb_5		1.12905e-316		1.12757e-316
-	gapdb_6		1.12905e-316		1.12757e-316
-	gapdb_7		1.12905e-316		1.12757e-316
-	gapdb_8		1.12905e-316		1.12757e-316
-	gapdb_9		1.12905e-316		1.12757e-316
+	0_gapdb		8.35485e+06		3.03366e+06
+	10_gapdb		8.35485e+06		3.03366e+06
+	11_gapdb		8.35485e+06		3.03366e+06
+	2_gapdb		8.35485e+06		3.03366e+06
+	4_gapdb		8.35485e+06		3.03366e+06
+	5_gapdb		8.35485e+06		3.03366e+06
+	6_gapdb		8.35485e+06		3.03366e+06
+	7_gapdb		8.35485e+06		3.03366e+06
+	8_gapdb		8.35485e+06		3.03366e+06
+	9_gapdb		8.35485e+06		3.03366e+06
 
 	-h2(10):		SS		A*
-	gapdb_0		1.12905e-316		1.12757e-316
-	gapdb_10		1.12905e-316		1.12757e-316
-	gapdb_11		1.12905e-316		1.12757e-316
-	gapdb_2		1.12905e-316		1.12757e-316
-	gapdb_4		1.12905e-316		1.12757e-316
-	gapdb_5		1.12905e-316		1.12757e-316
-	gapdb_6		1.12905e-316		1.12757e-316
-	gapdb_7		1.12905e-316		1.12757e-316
-	gapdb_8		1.12905e-316		1.12757e-316
-	gapdb_9		1.12905e-316		1.12757e-316
+	0_gapdb		8.35485e+06		3.03366e+06
+	10_gapdb		8.35485e+06		3.03366e+06
+	11_gapdb		8.35485e+06		3.03366e+06
+	2_gapdb		8.35485e+06		3.03366e+06
+	4_gapdb		8.35485e+06		3.03366e+06
+	5_gapdb		8.35485e+06		3.03366e+06
+	6_gapdb		8.35485e+06		3.03366e+06
+	7_gapdb		8.35485e+06		3.03366e+06
+	8_gapdb		8.35485e+06		3.03366e+06
+	9_gapdb		8.35485e+06		3.03366e+06
 
 
 
@@ -2083,121 +2083,121 @@ Measure_1:
 Measure_2:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_0, gapdb_2):	1	-	1	=	0
-	(gapdb_0, gapdb_4):	1	-	1	=	0
-	(gapdb_0, gapdb_5):	1	-	1	=	0
-	(gapdb_0, gapdb_6):	1	-	1	=	0
-	(gapdb_0, gapdb_7):	1	-	1	=	0
-	(gapdb_0, gapdb_8):	1	-	1	=	0
-	(gapdb_0, gapdb_9):	1	-	1	=	0
-	(gapdb_0, gapdb_10):	1	-	1	=	0
-	(gapdb_0, gapdb_11):	1	-	1	=	0
-	(gapdb_2, gapdb_0):	1	-	1	=	0
-	(gapdb_2, gapdb_4):	1	-	1	=	0
-	(gapdb_2, gapdb_5):	1	-	1	=	0
-	(gapdb_2, gapdb_6):	1	-	1	=	0
-	(gapdb_2, gapdb_7):	1	-	1	=	0
-	(gapdb_2, gapdb_8):	1	-	1	=	0
-	(gapdb_2, gapdb_9):	1	-	1	=	0
-	(gapdb_2, gapdb_10):	1	-	1	=	0
-	(gapdb_2, gapdb_11):	1	-	1	=	0
-	(gapdb_4, gapdb_0):	1	-	1	=	0
-	(gapdb_4, gapdb_2):	1	-	1	=	0
-	(gapdb_4, gapdb_5):	1	-	1	=	0
-	(gapdb_4, gapdb_6):	1	-	1	=	0
-	(gapdb_4, gapdb_7):	1	-	1	=	0
-	(gapdb_4, gapdb_8):	1	-	1	=	0
-	(gapdb_4, gapdb_9):	1	-	1	=	0
-	(gapdb_4, gapdb_10):	1	-	1	=	0
-	(gapdb_4, gapdb_11):	1	-	1	=	0
-	(gapdb_5, gapdb_0):	1	-	1	=	0
-	(gapdb_5, gapdb_2):	1	-	1	=	0
-	(gapdb_5, gapdb_4):	1	-	1	=	0
-	(gapdb_5, gapdb_6):	1	-	1	=	0
-	(gapdb_5, gapdb_7):	1	-	1	=	0
-	(gapdb_5, gapdb_8):	1	-	1	=	0
-	(gapdb_5, gapdb_9):	1	-	1	=	0
-	(gapdb_5, gapdb_10):	1	-	1	=	0
-	(gapdb_5, gapdb_11):	1	-	1	=	0
-	(gapdb_6, gapdb_0):	1	-	1	=	0
-	(gapdb_6, gapdb_2):	1	-	1	=	0
-	(gapdb_6, gapdb_4):	1	-	1	=	0
-	(gapdb_6, gapdb_5):	1	-	1	=	0
-	(gapdb_6, gapdb_7):	1	-	1	=	0
-	(gapdb_6, gapdb_8):	1	-	1	=	0
-	(gapdb_6, gapdb_9):	1	-	1	=	0
-	(gapdb_6, gapdb_10):	1	-	1	=	0
-	(gapdb_6, gapdb_11):	1	-	1	=	0
-	(gapdb_7, gapdb_0):	1	-	1	=	0
-	(gapdb_7, gapdb_2):	1	-	1	=	0
-	(gapdb_7, gapdb_4):	1	-	1	=	0
-	(gapdb_7, gapdb_5):	1	-	1	=	0
-	(gapdb_7, gapdb_6):	1	-	1	=	0
-	(gapdb_7, gapdb_8):	1	-	1	=	0
-	(gapdb_7, gapdb_9):	1	-	1	=	0
-	(gapdb_7, gapdb_10):	1	-	1	=	0
-	(gapdb_7, gapdb_11):	1	-	1	=	0
-	(gapdb_8, gapdb_0):	1	-	1	=	0
-	(gapdb_8, gapdb_2):	1	-	1	=	0
-	(gapdb_8, gapdb_4):	1	-	1	=	0
-	(gapdb_8, gapdb_5):	1	-	1	=	0
-	(gapdb_8, gapdb_6):	1	-	1	=	0
-	(gapdb_8, gapdb_7):	1	-	1	=	0
-	(gapdb_8, gapdb_9):	1	-	1	=	0
-	(gapdb_8, gapdb_10):	1	-	1	=	0
-	(gapdb_8, gapdb_11):	1	-	1	=	0
-	(gapdb_9, gapdb_0):	1	-	1	=	0
-	(gapdb_9, gapdb_2):	1	-	1	=	0
-	(gapdb_9, gapdb_4):	1	-	1	=	0
-	(gapdb_9, gapdb_5):	1	-	1	=	0
-	(gapdb_9, gapdb_6):	1	-	1	=	0
-	(gapdb_9, gapdb_7):	1	-	1	=	0
-	(gapdb_9, gapdb_8):	1	-	1	=	0
-	(gapdb_9, gapdb_10):	1	-	1	=	0
-	(gapdb_9, gapdb_11):	1	-	1	=	0
-	(gapdb_10, gapdb_0):	1	-	1	=	0
-	(gapdb_10, gapdb_2):	1	-	1	=	0
-	(gapdb_10, gapdb_4):	1	-	1	=	0
-	(gapdb_10, gapdb_5):	1	-	1	=	0
-	(gapdb_10, gapdb_6):	1	-	1	=	0
-	(gapdb_10, gapdb_7):	1	-	1	=	0
-	(gapdb_10, gapdb_8):	1	-	1	=	0
-	(gapdb_10, gapdb_9):	1	-	1	=	0
-	(gapdb_10, gapdb_11):	1	-	1	=	0
-	(gapdb_11, gapdb_0):	1	-	1	=	0
-	(gapdb_11, gapdb_2):	1	-	1	=	0
-	(gapdb_11, gapdb_4):	1	-	1	=	0
-	(gapdb_11, gapdb_5):	1	-	1	=	0
-	(gapdb_11, gapdb_6):	1	-	1	=	0
-	(gapdb_11, gapdb_7):	1	-	1	=	0
-	(gapdb_11, gapdb_8):	1	-	1	=	0
-	(gapdb_11, gapdb_9):	1	-	1	=	0
-	(gapdb_11, gapdb_10):	1	-	1	=	0
+	(0_gapdb, 2_gapdb):	1	-	1	=	0
+	(0_gapdb, 4_gapdb):	1	-	1	=	0
+	(0_gapdb, 5_gapdb):	1	-	1	=	0
+	(0_gapdb, 6_gapdb):	1	-	1	=	0
+	(0_gapdb, 7_gapdb):	1	-	1	=	0
+	(0_gapdb, 8_gapdb):	1	-	1	=	0
+	(0_gapdb, 9_gapdb):	1	-	1	=	0
+	(0_gapdb, 10_gapdb):	1	-	1	=	0
+	(0_gapdb, 11_gapdb):	1	-	1	=	0
+	(2_gapdb, 0_gapdb):	1	-	1	=	0
+	(2_gapdb, 4_gapdb):	1	-	1	=	0
+	(2_gapdb, 5_gapdb):	1	-	1	=	0
+	(2_gapdb, 6_gapdb):	1	-	1	=	0
+	(2_gapdb, 7_gapdb):	1	-	1	=	0
+	(2_gapdb, 8_gapdb):	1	-	1	=	0
+	(2_gapdb, 9_gapdb):	1	-	1	=	0
+	(2_gapdb, 10_gapdb):	1	-	1	=	0
+	(2_gapdb, 11_gapdb):	1	-	1	=	0
+	(4_gapdb, 0_gapdb):	1	-	1	=	0
+	(4_gapdb, 2_gapdb):	1	-	1	=	0
+	(4_gapdb, 5_gapdb):	1	-	1	=	0
+	(4_gapdb, 6_gapdb):	1	-	1	=	0
+	(4_gapdb, 7_gapdb):	1	-	1	=	0
+	(4_gapdb, 8_gapdb):	1	-	1	=	0
+	(4_gapdb, 9_gapdb):	1	-	1	=	0
+	(4_gapdb, 10_gapdb):	1	-	1	=	0
+	(4_gapdb, 11_gapdb):	1	-	1	=	0
+	(5_gapdb, 0_gapdb):	1	-	1	=	0
+	(5_gapdb, 2_gapdb):	1	-	1	=	0
+	(5_gapdb, 4_gapdb):	1	-	1	=	0
+	(5_gapdb, 6_gapdb):	1	-	1	=	0
+	(5_gapdb, 7_gapdb):	1	-	1	=	0
+	(5_gapdb, 8_gapdb):	1	-	1	=	0
+	(5_gapdb, 9_gapdb):	1	-	1	=	0
+	(5_gapdb, 10_gapdb):	1	-	1	=	0
+	(5_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 0_gapdb):	1	-	1	=	0
+	(6_gapdb, 2_gapdb):	1	-	1	=	0
+	(6_gapdb, 4_gapdb):	1	-	1	=	0
+	(6_gapdb, 5_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 0_gapdb):	1	-	1	=	0
+	(7_gapdb, 2_gapdb):	1	-	1	=	0
+	(7_gapdb, 4_gapdb):	1	-	1	=	0
+	(7_gapdb, 5_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 0_gapdb):	1	-	1	=	0
+	(8_gapdb, 2_gapdb):	1	-	1	=	0
+	(8_gapdb, 4_gapdb):	1	-	1	=	0
+	(8_gapdb, 5_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 0_gapdb):	1	-	1	=	0
+	(9_gapdb, 2_gapdb):	1	-	1	=	0
+	(9_gapdb, 4_gapdb):	1	-	1	=	0
+	(9_gapdb, 5_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 0_gapdb):	1	-	1	=	0
+	(10_gapdb, 2_gapdb):	1	-	1	=	0
+	(10_gapdb, 4_gapdb):	1	-	1	=	0
+	(10_gapdb, 5_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(11_gapdb, 0_gapdb):	1	-	1	=	0
+	(11_gapdb, 2_gapdb):	1	-	1	=	0
+	(11_gapdb, 4_gapdb):	1	-	1	=	0
+	(11_gapdb, 5_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
 
 Measure_3:
 	-h1(10):		SS		A*
-	gapdb_0		1.12894e-316		1.12757e-316
-	gapdb_10		1.12894e-316		1.12757e-316
-	gapdb_11		1.12894e-316		1.12757e-316
-	gapdb_2		1.12894e-316		1.12757e-316
-	gapdb_4		1.12894e-316		1.12757e-316
-	gapdb_5		1.12894e-316		1.12757e-316
-	gapdb_6		1.12894e-316		1.12757e-316
-	gapdb_7		1.12894e-316		1.12757e-316
-	gapdb_8		1.12894e-316		1.12757e-316
-	gapdb_9		1.12894e-316		1.12757e-316
+	0_gapdb		1.05542e+06		1.76154e+07
+	10_gapdb		1.05542e+06		1.76154e+07
+	11_gapdb		1.05542e+06		1.76154e+07
+	2_gapdb		1.05542e+06		1.76154e+07
+	4_gapdb		1.05542e+06		1.76154e+07
+	5_gapdb		1.05542e+06		1.76154e+07
+	6_gapdb		1.05542e+06		1.76154e+07
+	7_gapdb		1.05542e+06		1.76154e+07
+	8_gapdb		1.05542e+06		1.76154e+07
+	9_gapdb		1.05542e+06		1.76154e+07
 
 	-h2(10):		SS		A*
-	gapdb_0		1.12894e-316		1.12757e-316
-	gapdb_10		1.12894e-316		1.12757e-316
-	gapdb_11		1.12894e-316		1.12757e-316
-	gapdb_2		1.12894e-316		1.12757e-316
-	gapdb_4		1.12894e-316		1.12757e-316
-	gapdb_5		1.12894e-316		1.12757e-316
-	gapdb_6		1.12894e-316		1.12757e-316
-	gapdb_7		1.12894e-316		1.12757e-316
-	gapdb_8		1.12894e-316		1.12757e-316
-	gapdb_9		1.12894e-316		1.12757e-316
+	0_gapdb		1.05542e+06		1.76154e+07
+	10_gapdb		1.05542e+06		1.76154e+07
+	11_gapdb		1.05542e+06		1.76154e+07
+	2_gapdb		1.05542e+06		1.76154e+07
+	4_gapdb		1.05542e+06		1.76154e+07
+	5_gapdb		1.05542e+06		1.76154e+07
+	6_gapdb		1.05542e+06		1.76154e+07
+	7_gapdb		1.05542e+06		1.76154e+07
+	8_gapdb		1.05542e+06		1.76154e+07
+	9_gapdb		1.05542e+06		1.76154e+07
 
 
 
@@ -2239,122 +2239,122 @@ Measure_1:
 Measure_2:
 - The heuristics that have the similar ratio are:
 	(h1     ,h2     ):	fracss	-	fracastar	=	diff
-	(gapdb_2, gapdb_3):	0.624193	-	1	=	-0.375807
-	(gapdb_0, gapdb_1):	1	-	1	=	0
-	(gapdb_0, gapdb_4):	1	-	1	=	0
-	(gapdb_0, gapdb_5):	1	-	1	=	0
-	(gapdb_0, gapdb_6):	1	-	1	=	0
-	(gapdb_0, gapdb_7):	1	-	1	=	0
-	(gapdb_0, gapdb_8):	1	-	1	=	0
-	(gapdb_0, gapdb_9):	1	-	1	=	0
-	(gapdb_0, gapdb_10):	1	-	1	=	0
-	(gapdb_0, gapdb_11):	1	-	1	=	0
-	(gapdb_1, gapdb_0):	1	-	1	=	0
-	(gapdb_1, gapdb_4):	1	-	1	=	0
-	(gapdb_1, gapdb_5):	1	-	1	=	0
-	(gapdb_1, gapdb_6):	1	-	1	=	0
-	(gapdb_1, gapdb_7):	1	-	1	=	0
-	(gapdb_1, gapdb_8):	1	-	1	=	0
-	(gapdb_1, gapdb_9):	1	-	1	=	0
-	(gapdb_1, gapdb_10):	1	-	1	=	0
-	(gapdb_1, gapdb_11):	1	-	1	=	0
-	(gapdb_4, gapdb_0):	1	-	1	=	0
-	(gapdb_4, gapdb_1):	1	-	1	=	0
-	(gapdb_4, gapdb_5):	1	-	1	=	0
-	(gapdb_4, gapdb_6):	1	-	1	=	0
-	(gapdb_4, gapdb_7):	1	-	1	=	0
-	(gapdb_4, gapdb_8):	1	-	1	=	0
-	(gapdb_4, gapdb_9):	1	-	1	=	0
-	(gapdb_4, gapdb_10):	1	-	1	=	0
-	(gapdb_4, gapdb_11):	1	-	1	=	0
-	(gapdb_5, gapdb_0):	1	-	1	=	0
-	(gapdb_5, gapdb_1):	1	-	1	=	0
-	(gapdb_5, gapdb_4):	1	-	1	=	0
-	(gapdb_5, gapdb_6):	1	-	1	=	0
-	(gapdb_5, gapdb_7):	1	-	1	=	0
-	(gapdb_5, gapdb_8):	1	-	1	=	0
-	(gapdb_5, gapdb_9):	1	-	1	=	0
-	(gapdb_5, gapdb_10):	1	-	1	=	0
-	(gapdb_5, gapdb_11):	1	-	1	=	0
-	(gapdb_6, gapdb_0):	1	-	1	=	0
-	(gapdb_6, gapdb_1):	1	-	1	=	0
-	(gapdb_6, gapdb_4):	1	-	1	=	0
-	(gapdb_6, gapdb_5):	1	-	1	=	0
-	(gapdb_6, gapdb_7):	1	-	1	=	0
-	(gapdb_6, gapdb_8):	1	-	1	=	0
-	(gapdb_6, gapdb_9):	1	-	1	=	0
-	(gapdb_6, gapdb_10):	1	-	1	=	0
-	(gapdb_6, gapdb_11):	1	-	1	=	0
-	(gapdb_7, gapdb_0):	1	-	1	=	0
-	(gapdb_7, gapdb_1):	1	-	1	=	0
-	(gapdb_7, gapdb_4):	1	-	1	=	0
-	(gapdb_7, gapdb_5):	1	-	1	=	0
-	(gapdb_7, gapdb_6):	1	-	1	=	0
-	(gapdb_7, gapdb_8):	1	-	1	=	0
-	(gapdb_7, gapdb_9):	1	-	1	=	0
-	(gapdb_7, gapdb_10):	1	-	1	=	0
-	(gapdb_7, gapdb_11):	1	-	1	=	0
-	(gapdb_8, gapdb_0):	1	-	1	=	0
-	(gapdb_8, gapdb_1):	1	-	1	=	0
-	(gapdb_8, gapdb_4):	1	-	1	=	0
-	(gapdb_8, gapdb_5):	1	-	1	=	0
-	(gapdb_8, gapdb_6):	1	-	1	=	0
-	(gapdb_8, gapdb_7):	1	-	1	=	0
-	(gapdb_8, gapdb_9):	1	-	1	=	0
-	(gapdb_8, gapdb_10):	1	-	1	=	0
-	(gapdb_8, gapdb_11):	1	-	1	=	0
-	(gapdb_9, gapdb_0):	1	-	1	=	0
-	(gapdb_9, gapdb_1):	1	-	1	=	0
-	(gapdb_9, gapdb_4):	1	-	1	=	0
-	(gapdb_9, gapdb_5):	1	-	1	=	0
-	(gapdb_9, gapdb_6):	1	-	1	=	0
-	(gapdb_9, gapdb_7):	1	-	1	=	0
-	(gapdb_9, gapdb_8):	1	-	1	=	0
-	(gapdb_9, gapdb_10):	1	-	1	=	0
-	(gapdb_9, gapdb_11):	1	-	1	=	0
-	(gapdb_10, gapdb_0):	1	-	1	=	0
-	(gapdb_10, gapdb_1):	1	-	1	=	0
-	(gapdb_10, gapdb_4):	1	-	1	=	0
-	(gapdb_10, gapdb_5):	1	-	1	=	0
-	(gapdb_10, gapdb_6):	1	-	1	=	0
-	(gapdb_10, gapdb_7):	1	-	1	=	0
-	(gapdb_10, gapdb_8):	1	-	1	=	0
-	(gapdb_10, gapdb_9):	1	-	1	=	0
-	(gapdb_10, gapdb_11):	1	-	1	=	0
-	(gapdb_11, gapdb_0):	1	-	1	=	0
-	(gapdb_11, gapdb_1):	1	-	1	=	0
-	(gapdb_11, gapdb_4):	1	-	1	=	0
-	(gapdb_11, gapdb_5):	1	-	1	=	0
-	(gapdb_11, gapdb_6):	1	-	1	=	0
-	(gapdb_11, gapdb_7):	1	-	1	=	0
-	(gapdb_11, gapdb_8):	1	-	1	=	0
-	(gapdb_11, gapdb_9):	1	-	1	=	0
-	(gapdb_11, gapdb_10):	1	-	1	=	0
+	(2_gapdb, 3_gapdb):	0.624193	-	1	=	-0.375807
+	(0_gapdb, 1_gapdb):	1	-	1	=	0
+	(0_gapdb, 4_gapdb):	1	-	1	=	0
+	(0_gapdb, 5_gapdb):	1	-	1	=	0
+	(0_gapdb, 6_gapdb):	1	-	1	=	0
+	(0_gapdb, 7_gapdb):	1	-	1	=	0
+	(0_gapdb, 8_gapdb):	1	-	1	=	0
+	(0_gapdb, 9_gapdb):	1	-	1	=	0
+	(0_gapdb, 10_gapdb):	1	-	1	=	0
+	(0_gapdb, 11_gapdb):	1	-	1	=	0
+	(1_gapdb, 0_gapdb):	1	-	1	=	0
+	(1_gapdb, 4_gapdb):	1	-	1	=	0
+	(1_gapdb, 5_gapdb):	1	-	1	=	0
+	(1_gapdb, 6_gapdb):	1	-	1	=	0
+	(1_gapdb, 7_gapdb):	1	-	1	=	0
+	(1_gapdb, 8_gapdb):	1	-	1	=	0
+	(1_gapdb, 9_gapdb):	1	-	1	=	0
+	(1_gapdb, 10_gapdb):	1	-	1	=	0
+	(1_gapdb, 11_gapdb):	1	-	1	=	0
+	(4_gapdb, 0_gapdb):	1	-	1	=	0
+	(4_gapdb, 1_gapdb):	1	-	1	=	0
+	(4_gapdb, 5_gapdb):	1	-	1	=	0
+	(4_gapdb, 6_gapdb):	1	-	1	=	0
+	(4_gapdb, 7_gapdb):	1	-	1	=	0
+	(4_gapdb, 8_gapdb):	1	-	1	=	0
+	(4_gapdb, 9_gapdb):	1	-	1	=	0
+	(4_gapdb, 10_gapdb):	1	-	1	=	0
+	(4_gapdb, 11_gapdb):	1	-	1	=	0
+	(5_gapdb, 0_gapdb):	1	-	1	=	0
+	(5_gapdb, 1_gapdb):	1	-	1	=	0
+	(5_gapdb, 4_gapdb):	1	-	1	=	0
+	(5_gapdb, 6_gapdb):	1	-	1	=	0
+	(5_gapdb, 7_gapdb):	1	-	1	=	0
+	(5_gapdb, 8_gapdb):	1	-	1	=	0
+	(5_gapdb, 9_gapdb):	1	-	1	=	0
+	(5_gapdb, 10_gapdb):	1	-	1	=	0
+	(5_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 0_gapdb):	1	-	1	=	0
+	(6_gapdb, 1_gapdb):	1	-	1	=	0
+	(6_gapdb, 4_gapdb):	1	-	1	=	0
+	(6_gapdb, 5_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 0_gapdb):	1	-	1	=	0
+	(7_gapdb, 1_gapdb):	1	-	1	=	0
+	(7_gapdb, 4_gapdb):	1	-	1	=	0
+	(7_gapdb, 5_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 0_gapdb):	1	-	1	=	0
+	(8_gapdb, 1_gapdb):	1	-	1	=	0
+	(8_gapdb, 4_gapdb):	1	-	1	=	0
+	(8_gapdb, 5_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 0_gapdb):	1	-	1	=	0
+	(9_gapdb, 1_gapdb):	1	-	1	=	0
+	(9_gapdb, 4_gapdb):	1	-	1	=	0
+	(9_gapdb, 5_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 0_gapdb):	1	-	1	=	0
+	(10_gapdb, 1_gapdb):	1	-	1	=	0
+	(10_gapdb, 4_gapdb):	1	-	1	=	0
+	(10_gapdb, 5_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(11_gapdb, 0_gapdb):	1	-	1	=	0
+	(11_gapdb, 1_gapdb):	1	-	1	=	0
+	(11_gapdb, 4_gapdb):	1	-	1	=	0
+	(11_gapdb, 5_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
 
 Measure_3:
 	-h1(11):		SS		A*
-	gapdb_0		1.12894e-316		1.12757e-316
-	gapdb_1		1.12894e-316		1.12757e-316
-	gapdb_10		1.12894e-316		1.12757e-316
-	gapdb_11		1.12894e-316		1.12757e-316
-	gapdb_2		1.12894e-316		1.12757e-316
-	gapdb_4		1.12894e-316		1.12757e-316
-	gapdb_5		1.12894e-316		1.12757e-316
-	gapdb_6		1.12894e-316		1.12757e-316
-	gapdb_7		1.12894e-316		1.12757e-316
-	gapdb_8		1.12894e-316		1.12757e-316
-	gapdb_9		1.12894e-316		1.12757e-316
+	0_gapdb		2.39507e+09		2.0072e+07
+	10_gapdb		2.39507e+09		2.0072e+07
+	11_gapdb		2.39507e+09		2.0072e+07
+	1_gapdb		2.39507e+09		2.0072e+07
+	2_gapdb		1.37191e-316		2.0072e+07
+	4_gapdb		2.39507e+09		2.0072e+07
+	5_gapdb		2.39507e+09		2.0072e+07
+	6_gapdb		2.39507e+09		2.0072e+07
+	7_gapdb		2.39507e+09		2.0072e+07
+	8_gapdb		2.39507e+09		2.0072e+07
+	9_gapdb		2.39507e+09		2.0072e+07
 
 	-h2(11):		SS		A*
-	gapdb_0		1.12894e-316		1.12757e-316
-	gapdb_1		1.12894e-316		1.12757e-316
-	gapdb_10		1.12894e-316		1.12757e-316
-	gapdb_11		1.12894e-316		1.12757e-316
-	gapdb_3		1.12894e-316		1.12757e-316
-	gapdb_4		1.12894e-316		1.12757e-316
-	gapdb_5		1.12894e-316		1.12757e-316
-	gapdb_6		1.12894e-316		1.12757e-316
-	gapdb_7		1.12894e-316		1.12757e-316
-	gapdb_8		1.12894e-316		1.12757e-316
-	gapdb_9		1.12894e-316		1.12757e-316
+	0_gapdb		2.39507e+09		2.0072e+07
+	10_gapdb		2.39507e+09		2.0072e+07
+	11_gapdb		2.39507e+09		2.0072e+07
+	1_gapdb		2.39507e+09		2.0072e+07
+	3_gapdb		1.37191e-316		2.0072e+07
+	4_gapdb		2.39507e+09		2.0072e+07
+	5_gapdb		2.39507e+09		2.0072e+07
+	6_gapdb		2.39507e+09		2.0072e+07
+	7_gapdb		2.39507e+09		2.0072e+07
+	8_gapdb		2.39507e+09		2.0072e+07
+	9_gapdb		2.39507e+09		2.0072e+07
 

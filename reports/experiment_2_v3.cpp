@@ -598,6 +598,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					//cout<<"astarBC == ssBC\n";
 					vector<string> collector_astar, collector_ss;
 					map<double, vector<string> > map_astar, map_ss;
+					map<int ,string> look_for_heuristic; //map to look the name of the heuristic
 
 					outputFile<<"\n\ninstance_name: "<<astarBC<<"\n\n";
 					//_________________CALLING A* _____________
@@ -623,7 +624,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
    						string s = pos->first;
 				                string t = s;
 						int found = t.find("_");
-						string heuristic_name_mod = t.substr(found + 1, t.length());
+						string heuristic_name_mod = t.substr(0, found);
+						int heur_number	= atoi(heuristic_name_mod.c_str());	
+						look_for_heuristic.insert(pair<int, string>(heur_number, s)); //store the name of the heuristics for global use in the instance
 
 						double d = pos->second;
 						m_astar_percentage.insert(pair<string, double>(s, d));
@@ -890,11 +893,22 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						
 								int first_heur = pratio.first;
 								int second_heur = pratio.second;
+	
 								stringstream number1, number2;
 								number1<<first_heur;
 								number2<<second_heur;
-								string name1 = "gapdb_"+number1.str();
-								string name2 = "gapdb_"+number2.str();
+								string name1; // = "gapdb_"+number1.str();
+								string name2; // = "gapdb_"+number2.str();
+
+								std::map<int, string>::iterator rt1 =  look_for_heuristic.find(first_heur);
+								if (rt1 != look_for_heuristic.end()) {
+									name1 = rt1->second;
+								}
+
+								std::map<int, string>::iterator rt2 =  look_for_heuristic.find(second_heur);
+								if (rt2 != look_for_heuristic.end()) {
+									name2 = rt2->second;
+								}
 							
 								no_repeat_h1.insert(name1);
 								no_repeat_h2.insert(name2);
