@@ -125,7 +125,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 22		2.1247e+06			2.10926e+06
 23		1.03602e+07			1.01058e+07
 
-Files that contains zero_info:
+Files that contains zero_info:	4
 problem08-half.pddl
 problem09-half.pddl
 problem10-half.pddl

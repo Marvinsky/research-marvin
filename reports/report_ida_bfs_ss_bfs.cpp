@@ -271,11 +271,11 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				has_zero_info_v.push_back(one);
 			}
 		}// end for
-
-		if (has_zero_info_v.size() > 0) {
-			outputFile<<"\nFiles that contains zero_info:\n";
+		int n_zero_info = has_zero_info_v.size();
+		if (n_zero_info > 0) {
+			outputFile<<"\nFiles that contains zero_info:\t"<<n_zero_info<<"\n";
 			sort(has_zero_info_v.begin(), has_zero_info_v.end());
-			for (size_t i = 0; i < has_zero_info_v.size(); i++) {
+			for (size_t i = 0; i < n_zero_info; i++) {
 				outputFile<<has_zero_info_v.at(i)<<"\n";
 			}
 		}

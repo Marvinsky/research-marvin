@@ -439,7 +439,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 27		14012			13556
 28		179863			151904
 
-Files that contains zero_info:
+Files that contains zero_info:	11
 probBLOCKS-11-0.pddl
 probBLOCKS-12-0.pddl
 probBLOCKS-13-0.pddl
