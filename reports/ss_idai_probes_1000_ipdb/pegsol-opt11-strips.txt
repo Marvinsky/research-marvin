@@ -1,4 +1,4 @@
-	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1000 probes
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1000 probes.
 
 pegsol-opt11-strips
 

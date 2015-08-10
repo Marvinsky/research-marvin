@@ -1,10 +1,64 @@
-	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1000 probes
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1000 probes.
 
 sokoban-opt08-strips
+
+p14.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		47			----zero_info----
+12		1159			----zero_info----
+13		3463			----zero_info----
+14		35319			----zero_info----
+16		2.5413e+06			----zero_info----
+17		8.37503e+06			----zero_info----
+18		3.94824e+07			----zero_info----
+19		3.79252e+08			----zero_info----
+20		2.1694e+09			----zero_info----
 
 p19.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 25		1			1
+
+p29.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+12		244			----zero_info----
+13		3574			----zero_info----
+14		1.54038e+06			----zero_info----
+15		6.1079e+07			----zero_info----
+
+p18.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+29		214163			----zero_info----
+
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+56		16336			----zero_info----
+
+p25.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+25		1763			----zero_info----
+27		3.39476e+07			----zero_info----
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+8		253			----zero_info----
+
+p13.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+4		145			----zero_info----
+6		11585			----zero_info----
+8		906881			----zero_info----
+10		7.51805e+07			----zero_info----
+
+p30.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+12		2.17734e+07			----zero_info----
+
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+7		2			----zero_info----
+9		16			----zero_info----
+11		136			----zero_info----
+13		4.1548e+06			----zero_info----
 
 p05.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -14,9 +68,17 @@ p22.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 30		13			13
 
+p01.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		3478			----zero_info----
+
 p10.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 8		27			27
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		3			----zero_info----
 
 p26.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -26,9 +88,41 @@ p06.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		1			1
 
+p17.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+5		3			----zero_info----
+7		19			----zero_info----
+9		1079			----zero_info----
+11		5971			----zero_info----
+12		58759			----zero_info----
+13		321323			----zero_info----
+14		1.26867e+06			----zero_info----
+15		5.93686e+06			----zero_info----
+16		2.97079e+07			----zero_info----
+17		3.05945e+08			----zero_info----
+18		1.23944e+09			----zero_info----
+
 p20.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 2		5			5
+
+p28.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+18		1.04383e+06			----zero_info----
+19		1.75242e+07			----zero_info----
+20		4.08887e+08			----zero_info----
+
+p23.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		189			----zero_info----
+16		1029			----zero_info----
+17		7261			----zero_info----
+18		56061			----zero_info----
+19		322989			----zero_info----
+20		2.41454e+06			----zero_info----
+21		1.32902e+07			----zero_info----
+22		1.06154e+08			----zero_info----
+23		7.95981e+08			----zero_info----
 
 p21.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -42,6 +136,19 @@ p24.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 12		31			31.768
 
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+3		16			----zero_info----
+5		649			----zero_info----
+6		5848			----zero_info----
+7		24697			----zero_info----
+8		201196			----zero_info----
+9		929902			----zero_info----
+10		7.71392e+06			----zero_info----
+11		4.02344e+07			----zero_info----
+12		3.14957e+08			----zero_info----
+13		1.88458e+09			----zero_info----
+
 p08.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 11		1			1
@@ -50,6 +157,39 @@ p16.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 15		1			1
 
+p11.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		841			----zero_info----
+
+p27.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		64			----zero_info----
+11		4393			----zero_info----
+12		74482			----zero_info----
+13		627442			----zero_info----
+14		8.64582e+06			----zero_info----
+15		6.10321e+07			----zero_info----
+16		8.6792e+08			----zero_info----
+
 p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 9		6501			6600.17
+
+Files that contains zero_info:
+p01.pddl
+p04.pddl
+p07.pddl
+p09.pddl
+p11.pddl
+p12.pddl
+p13.pddl
+p14.pddl
+p15.pddl
+p17.pddl
+p18.pddl
+p23.pddl
+p25.pddl
+p27.pddl
+p28.pddl
+p29.pddl
+p30.pddl

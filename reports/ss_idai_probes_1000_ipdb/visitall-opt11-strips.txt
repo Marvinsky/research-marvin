@@ -1,14 +1,45 @@
-	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1000 probes
+	Report:		ida*-bfs-vs-ss-bfs - using ipdb heuristic - 1000 probes.
 
 visitall-opt11-strips
+
+problem09-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+49		886			----zero_info----
+50		25547			----zero_info----
+51		498671			----zero_info----
+52		8.4668e+06			----zero_info----
+53		1.31915e+08			----zero_info----
 
 problem05-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 24		98441			98572.5
 
+problem08-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+32		55			----zero_info----
+33		1230			----zero_info----
+34		18150			----zero_info----
+35		219045			----zero_info----
+36		2.28299e+06			----zero_info----
+37		2.13192e+07			----zero_info----
+38		1.82024e+08			----zero_info----
+39		1.44924e+09			----zero_info----
+40		1.08788e+10			----zero_info----
+
 problem06-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 35		1.99953e+07			2.09635e+07
+
+problem11-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+57		48			----zero_info----
+58		924			----zero_info----
+59		12461			----zero_info----
+60		141024			----zero_info----
+61		1.43834e+06			----zero_info----
+62		1.38622e+07			----zero_info----
+63		1.29348e+08			----zero_info----
+64		1.1865e+09			----zero_info----
 
 problem04-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -26,6 +57,9 @@ problem02-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 3		7			7
 
+problem09-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
 problem07-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 32		745			789.458
@@ -33,6 +67,20 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 34		326575			308423
 35		4.1926e+06			3.94559e+06
 36		4.59104e+07			5.18445e+07
+
+problem10-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+47		19			----zero_info----
+48		365			----zero_info----
+49		5302			----zero_info----
+50		65211			----zero_info----
+51		709825			----zero_info----
+52		7.15008e+06			----zero_info----
+53		6.82876e+07			----zero_info----
+54		6.30346e+08			----zero_info----
+
+problem08-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
 
 problem02-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -46,11 +94,20 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 17		15161			15152.3
 18		103281			102303
 
+problem11-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
 problem03-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 4		2			2
 5		8			7.884
 6		47			48.195
+
+problem10-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+problem07-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
 
 problem03-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -67,3 +124,9 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 21		405318			394455
 22		2.1247e+06			2.10926e+06
 23		1.03602e+07			1.01058e+07
+
+Files that contains zero_info:
+problem08-half.pddl
+problem09-half.pddl
+problem10-half.pddl
+problem11-half.pddl
