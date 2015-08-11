@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1000/visitall-opt11-strips/fdist/problem11-half_58.pddl
-predictionSS: 891.272
+predictionSS: 924.326
 ss_timer: 0.4
 g:0
 size: 1
@@ -12,77 +12,77 @@ size: 2
 
 g:2
 size: 2
-	f: 57	q: 3.014
-	f: 58	q: 6.986
+	f: 57	q: 3.016
+	f: 58	q: 6.984
 
 g:3
 size: 2
 	f: 57	q: 4
-	f: 58	q: 18.084
+	f: 58	q: 18.022
 
 g:4
 size: 2
-	f: 57	q: 3.86
-	f: 58	q: 29.91
+	f: 57	q: 4.072
+	f: 58	q: 29.98
 
 g:5
 size: 2
-	f: 57	q: 2.864
-	f: 58	q: 38.692
+	f: 57	q: 2.96
+	f: 58	q: 39.768
 
 g:6
 size: 2
-	f: 57	q: 3.568
-	f: 58	q: 51.708
+	f: 57	q: 3.968
+	f: 58	q: 52.566
 
 g:7
 size: 2
-	f: 57	q: 2.624
-	f: 58	q: 48.246
+	f: 57	q: 2.816
+	f: 58	q: 52.548
 
 g:8
 size: 2
-	f: 57	q: 5.248
-	f: 58	q: 63.848
+	f: 57	q: 5.632
+	f: 58	q: 69.09
 
 g:9
 size: 2
-	f: 57	q: 5.696
-	f: 58	q: 78.404
+	f: 57	q: 5.376
+	f: 58	q: 82.62
 
 g:10
 size: 2
-	f: 57	q: 4.8
-	f: 58	q: 115.796
+	f: 57	q: 5.44
+	f: 58	q: 112.708
 
 g:11
 size: 2
-	f: 57	q: 4.992
-	f: 58	q: 117.052
+	f: 57	q: 5.12
+	f: 58	q: 126.008
 
 g:12
 size: 1
-	f: 58	q: 112.848
+	f: 58	q: 105.496
 
 g:13
 size: 1
-	f: 58	q: 93.6
+	f: 58	q: 114.576
 
 g:14
 size: 1
-	f: 58	q: 28.192
+	f: 58	q: 24.736
 
 g:15
 size: 1
-	f: 58	q: 27.968
+	f: 58	q: 23.2
 
 g:16
 size: 1
-	f: 58	q: 5.824
+	f: 58	q: 8.64
 
 g:17
 size: 1
-	f: 58	q: 8.448
+	f: 58	q: 9.984
 
 g:18
 size: 0

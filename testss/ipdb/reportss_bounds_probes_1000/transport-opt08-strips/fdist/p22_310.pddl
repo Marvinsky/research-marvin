@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1000/transport-opt08-strips/fdist/p22_310.pddl
-predictionSS: 73342.2
-ss_timer: 0.58
+predictionSS: 73370.2
+ss_timer: 0.6
 g:0
 size: 1
 	f: 300	q: 1
@@ -16,65 +16,65 @@ size: 2
 
 g:3
 size: 2
-	f: 300	q: 3.99
+	f: 300	q: 3.969
 	f: 302	q: 5
 
 g:4
 size: 3
-	f: 300	q: 3.99
-	f: 302	q: 15.99
+	f: 300	q: 3.969
+	f: 302	q: 15.969
 	f: 304	q: 1
 
 g:5
 size: 2
-	f: 302	q: 31.605
+	f: 302	q: 31.806
 	f: 304	q: 17
 
 g:6
 size: 3
-	f: 302	q: 31.605
-	f: 304	q: 79.605
+	f: 302	q: 31.806
+	f: 304	q: 79.806
 	f: 306	q: 1
 
 g:7
 size: 2
-	f: 304	q: 189.66
+	f: 304	q: 189.897
 	f: 306	q: 65
 
 g:8
 size: 3
-	f: 304	q: 189.66
-	f: 306	q: 381.66
+	f: 304	q: 189.897
+	f: 306	q: 381.897
 	f: 308	q: 1
 
 g:9
 size: 2
-	f: 306	q: 1014.38
+	f: 306	q: 1020.93
 	f: 308	q: 257
 
 g:10
 size: 3
-	f: 306	q: 1014.38
-	f: 308	q: 1782.38
+	f: 306	q: 1020.93
+	f: 308	q: 1788.93
 	f: 310	q: 1
 
 g:11
 size: 2
-	f: 308	q: 5087.11
+	f: 308	q: 5104.14
 	f: 310	q: 1025
 
 g:12
 size: 2
-	f: 308	q: 5087.11
-	f: 310	q: 8159.11
+	f: 308	q: 5104.14
+	f: 310	q: 8176.14
 
 g:13
 size: 1
-	f: 310	q: 24445
+	f: 310	q: 24423
 
 g:14
 size: 1
-	f: 310	q: 24445
+	f: 310	q: 24423
 
 g:15
 size: 0

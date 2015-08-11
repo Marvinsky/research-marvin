@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1000/woodworking-opt08-strips/fdist/p06_345.pddl
-predictionSS: 143.954
-ss_timer: 57.1
+predictionSS: 144.782
+ss_timer: 57.22
 g:0
 size: 1
 	f: 345	q: 1
@@ -11,19 +11,19 @@ size: 1
 
 g:2
 size: 1
-	f: 345	q: 6.004
+	f: 345	q: 5.932
 
 g:3
 size: 1
-	f: 345	q: 14.998
+	f: 345	q: 15.034
 
 g:4
 size: 1
-	f: 345	q: 29.988
+	f: 345	q: 30.204
 
 g:5
 size: 1
-	f: 345	q: 89.964
+	f: 345	q: 90.612
 
 g:6
 size: 0

@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1000/visitall-opt11-strips/fdist/problem09-half_49.pddl
-predictionSS: 818.722
+predictionSS: 998.443
 ss_timer: 0.18
 g:0
 size: 1
@@ -11,83 +11,79 @@ size: 1
 
 g:2
 size: 1
-	f: 49	q: 6.978
+	f: 49	q: 6.999
 
 g:3
 size: 1
-	f: 49	q: 9.876
+	f: 49	q: 10.29
 
 g:4
 size: 1
-	f: 49	q: 20.238
+	f: 49	q: 20.658
 
 g:5
 size: 1
-	f: 49	q: 30.576
+	f: 49	q: 31.974
 
 g:6
 size: 1
-	f: 49	q: 63.372
+	f: 49	q: 66.234
 
 g:7
 size: 1
-	f: 49	q: 70.788
+	f: 49	q: 79.344
 
 g:8
 size: 1
-	f: 49	q: 111.384
+	f: 49	q: 133.968
 
 g:9
 size: 1
-	f: 49	q: 74.586
+	f: 49	q: 108.972
 
 g:10
 size: 1
-	f: 49	q: 101.976
+	f: 49	q: 169.836
 
 g:11
 size: 1
-	f: 49	q: 64.356
+	f: 49	q: 89.508
 
 g:12
 size: 1
-	f: 49	q: 82.872
+	f: 49	q: 120.708
 
 g:13
 size: 1
-	f: 49	q: 39.048
+	f: 49	q: 51.408
 
 g:14
 size: 1
-	f: 49	q: 55.296
+	f: 49	q: 61.488
 
 g:15
 size: 1
-	f: 49	q: 17.712
+	f: 49	q: 23.472
 
 g:16
 size: 1
-	f: 49	q: 13.824
+	f: 49	q: 16.704
 
 g:17
 size: 1
-	f: 49	q: 10.368
+	f: 49	q: 2.88
 
 g:18
-size: 1
-	f: 49	q: 10.368
+size: 0
 
 g:19
-size: 1
-	f: 49	q: 10.368
+size: 0
 
 g:20
-size: 1
-	f: 49	q: 10.368
+size: 0
 
 g:21
-size: 1
-	f: 49	q: 10.368
+size: 0
 
 g:22
 size: 0

@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1000/woodworking-opt08-strips/fdist/p07_280.pddl
-predictionSS: 545.257
-ss_timer: 506.24
+predictionSS: 555.746
+ss_timer: 502.42
 g:0
 size: 1
 	f: 270	q: 1
@@ -12,25 +12,25 @@ size: 2
 
 g:2
 size: 3
-	f: 270	q: 3.009
-	f: 275	q: 8.712
-	f: 280	q: 17.159
+	f: 270	q: 2.904
+	f: 275	q: 9.198
+	f: 280	q: 17.158
 
 g:3
 size: 3
-	f: 270	q: 3.101
-	f: 275	q: 27.318
-	f: 280	q: 55.06
+	f: 270	q: 2.838
+	f: 275	q: 29.096
+	f: 280	q: 53.581
 
 g:4
 size: 2
-	f: 275	q: 33.207
-	f: 280	q: 227.19
+	f: 275	q: 33.959
+	f: 280	q: 231.789
 
 g:5
 size: 2
-	f: 275	q: 9.323
-	f: 280	q: 156.178
+	f: 275	q: 9.98
+	f: 280	q: 160.243
 
 g:6
 size: 0

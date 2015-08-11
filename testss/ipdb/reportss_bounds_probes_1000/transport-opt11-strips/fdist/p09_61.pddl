@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1000/transport-opt11-strips/fdist/p09_61.pddl
-predictionSS: 65.41
+predictionSS: 67.288
 ss_timer: 0.16
 g:0
 size: 1
@@ -11,27 +11,27 @@ size: 1
 
 g:2
 size: 1
-	f: 61	q: 2.976
+	f: 61	q: 3.03
 
 g:3
 size: 1
-	f: 61	q: 4.928
+	f: 61	q: 5.09
 
 g:4
 size: 1
-	f: 61	q: 10.832
+	f: 61	q: 11.21
 
 g:5
 size: 1
-	f: 61	q: 17.712
+	f: 61	q: 18.36
 
 g:6
 size: 1
-	f: 61	q: 18.882
+	f: 61	q: 19.53
 
 g:7
 size: 1
-	f: 61	q: 7.08
+	f: 61	q: 7.068
 
 g:8
 size: 0

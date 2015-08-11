@@ -1,5 +1,5 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1000/transport-opt11-strips/fdist/p11_380.pddl
-predictionSS: 171.154
+predictionSS: 169.262
 ss_timer: 0.4
 g:0
 size: 1
@@ -15,36 +15,36 @@ size: 1
 
 g:3
 size: 2
-	f: 378	q: 3.074
+	f: 378	q: 3.046
 	f: 380	q: 2
 
 g:4
 size: 2
-	f: 378	q: 3.074
-	f: 380	q: 9.074
+	f: 378	q: 3.046
+	f: 380	q: 9.046
 
 g:5
 size: 2
-	f: 378	q: 5.074
-	f: 380	q: 15.01
+	f: 378	q: 5.046
+	f: 380	q: 15.014
 
 g:6
 size: 2
-	f: 378	q: 4.006
-	f: 380	q: 24.17
+	f: 378	q: 4.03
+	f: 380	q: 24.068
 
 g:7
 size: 2
-	f: 378	q: 1.902
-	f: 380	q: 42.408
+	f: 378	q: 2.016
+	f: 380	q: 42.476
 
 g:8
 size: 1
-	f: 380	q: 38.518
+	f: 380	q: 38.16
 
 g:9
 size: 1
-	f: 380	q: 18.844
+	f: 380	q: 17.314
 
 g:10
 size: 0

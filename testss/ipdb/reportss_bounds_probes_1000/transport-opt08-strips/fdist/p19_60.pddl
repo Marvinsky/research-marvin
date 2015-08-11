@@ -1,47 +1,48 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1000/transport-opt08-strips/fdist/p19_60.pddl
-predictionSS: 117.38
-ss_timer: 0.32
+predictionSS: 123.3
+ss_timer: 0.3
 g:0
 size: 1
 	f: 20	q: 1
 
 g:1
 size: 12
-	f: 32	q: 1.06
-	f: 34	q: 0.92
-	f: 36	q: 1.68
-	f: 37	q: 1.1
-	f: 38	q: 1.22
-	f: 39	q: 2.3
-	f: 40	q: 0.92
-	f: 43	q: 1.02
-	f: 47	q: 2
-	f: 48	q: 2.78
-	f: 49	q: 4.1
-	f: 50	q: 0.9
+	f: 32	q: 0.96
+	f: 34	q: 1.1
+	f: 36	q: 2.1
+	f: 37	q: 1.14
+	f: 38	q: 1.14
+	f: 39	q: 1.9
+	f: 40	q: 1.1
+	f: 43	q: 0.66
+	f: 47	q: 2.28
+	f: 48	q: 2.7
+	f: 49	q: 4.22
+	f: 50	q: 0.7
 
 g:2
 size: 15
-	f: 44	q: 0.26
-	f: 46	q: 1.66
-	f: 48	q: 4.54
-	f: 49	q: 6.6
-	f: 50	q: 2.96
-	f: 51	q: 7.76
-	f: 52	q: 8.26
-	f: 53	q: 8.12
-	f: 54	q: 10
-	f: 55	q: 8.84
-	f: 56	q: 10.32
-	f: 57	q: 2.74
-	f: 58	q: 5.26
-	f: 59	q: 5.54
-	f: 60	q: 5.14
+	f: 44	q: 2.08
+	f: 46	q: 0.72
+	f: 48	q: 3.38
+	f: 49	q: 4.96
+	f: 50	q: 3.98
+	f: 51	q: 7.5
+	f: 52	q: 10.86
+	f: 53	q: 9
+	f: 54	q: 9.28
+	f: 55	q: 8.38
+	f: 56	q: 12.8
+	f: 57	q: 3.12
+	f: 58	q: 4.12
+	f: 59	q: 4.48
+	f: 60	q: 5.02
 
 g:3
-size: 2
-	f: 58	q: 2.36
-	f: 60	q: 6.02
+size: 3
+	f: 56	q: 3.12
+	f: 58	q: 0.92
+	f: 60	q: 8.58
 
 g:4
 size: 0

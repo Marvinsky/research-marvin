@@ -1,32 +1,32 @@
 	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1000/transport-opt08-strips/fdist/p20_56.pddl
-predictionSS: 28.378
-ss_timer: 0.18
+predictionSS: 27.988
+ss_timer: 0.16
 g:0
 size: 1
 	f: 22	q: 1
 
 g:1
 size: 10
-	f: 35	q: 1.001
-	f: 36	q: 0.806
-	f: 40	q: 1.157
-	f: 41	q: 0.936
-	f: 45	q: 1.183
-	f: 46	q: 1.183
-	f: 47	q: 0.962
-	f: 48	q: 0.91
-	f: 49	q: 1.911
-	f: 50	q: 2.951
+	f: 35	q: 0.936
+	f: 36	q: 0.754
+	f: 40	q: 1.196
+	f: 41	q: 0.975
+	f: 45	q: 1.014
+	f: 46	q: 1.027
+	f: 47	q: 0.91
+	f: 48	q: 1.027
+	f: 49	q: 2.158
+	f: 50	q: 3.003
 
 g:2
 size: 7
-	f: 48	q: 1.17
+	f: 48	q: 0.78
 	f: 49	q: 1.95
-	f: 50	q: 1.105
-	f: 53	q: 2.158
-	f: 54	q: 1.885
-	f: 55	q: 5.07
-	f: 56	q: 1.04
+	f: 50	q: 0.65
+	f: 53	q: 2.379
+	f: 54	q: 1.872
+	f: 55	q: 5.343
+	f: 56	q: 1.014
 
 g:3
 size: 0
