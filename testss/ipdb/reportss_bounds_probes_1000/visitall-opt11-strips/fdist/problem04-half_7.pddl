@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/visitall-opt11-strips/fdist/problem04-half_7.pddl
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1000/visitall-opt11-strips/fdist/problem04-half_7.pddl
 predictionSS: 2
-ss_timer: 0.02
+ss_timer: -8.3348e-19
 g:0
 size: 1
 	f: 7	q: 1

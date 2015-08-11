@@ -1,0 +1,99 @@
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1000/parking-opt11-strips/fdist/pfile08-029_24.pddl
+predictionSS: 27681.8
+ss_timer: 10.84
+g:0
+size: 1
+	f: 21	q: 1
+
+g:1
+size: 2
+	f: 21	q: 1
+	f: 22	q: 10
+
+g:2
+size: 3
+	f: 22	q: 24.06
+	f: 23	q: 217.19
+	f: 24	q: 0.75
+
+g:3
+size: 3
+	f: 22	q: 5.452
+	f: 23	q: 561.849
+	f: 24	q: 4474.52
+
+g:4
+size: 2
+	f: 23	q: 239.48
+	f: 24	q: 12588.5
+
+g:5
+size: 2
+	f: 23	q: 20.825
+	f: 24	q: 7597.56
+
+g:6
+size: 2
+	f: 23	q: 6.176
+	f: 24	q: 1204.38
+
+g:7
+size: 2
+	f: 23	q: 2.52
+	f: 24	q: 408.502
+
+g:8
+size: 1
+	f: 24	q: 218.938
+
+g:9
+size: 1
+	f: 24	q: 70.556
+
+g:10
+size: 1
+	f: 24	q: 14.28
+
+g:11
+size: 1
+	f: 24	q: 14.28
+
+g:12
+size: 0
+
+g:13
+size: 0
+
+g:14
+size: 0
+
+g:15
+size: 0
+
+g:16
+size: 0
+
+g:17
+size: 0
+
+g:18
+size: 0
+
+g:19
+size: 0
+
+g:20
+size: 0
+
+g:21
+size: 0
+
+g:22
+size: 0
+
+g:23
+size: 0
+
+g:24
+size: 0
+

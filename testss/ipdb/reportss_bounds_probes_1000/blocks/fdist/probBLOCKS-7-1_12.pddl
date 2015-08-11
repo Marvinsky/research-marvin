@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/blocks/fdist/probBLOCKS-7-1_12.pddl
-predictionSS: 15.156
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1000/blocks/fdist/probBLOCKS-7-1_12.pddl
+predictionSS: 14.972
 ss_timer: 0.04
 g:0
 size: 1
@@ -16,15 +16,15 @@ size: 1
 
 g:3
 size: 1
-	f: 12	q: 5.996
+	f: 12	q: 5.988
 
 g:4
 size: 1
-	f: 12	q: 1.08
+	f: 12	q: 0.992
 
 g:5
 size: 1
-	f: 12	q: 1.08
+	f: 12	q: 0.992
 
 g:6
 size: 0

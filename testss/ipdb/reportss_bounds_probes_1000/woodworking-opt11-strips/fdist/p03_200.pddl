@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/woodworking-opt11-strips/fdist/p03_200.pddl
-predictionSS: 21.222
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1000/woodworking-opt11-strips/fdist/p03_200.pddl
+predictionSS: 20.924
 ss_timer: 2.02
 g:0
 size: 1
@@ -16,12 +16,12 @@ size: 1
 
 g:3
 size: 2
-	f: 195	q: 6.996
-	f: 200	q: 2.036
+	f: 195	q: 7.072
+	f: 200	q: 1.904
 
 g:4
 size: 1
-	f: 195	q: 6.19
+	f: 195	q: 5.948
 
 g:5
 size: 0

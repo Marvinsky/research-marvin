@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/nomystery-opt11-strips/fdist/p06_24.pddl
-predictionSS: 22219.4
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1000/nomystery-opt11-strips/fdist/p06_24.pddl
+predictionSS: 18931.9
 ss_timer: 0.34
 g:0
 size: 1
@@ -16,79 +16,79 @@ size: 2
 
 g:3
 size: 2
-	f: 23	q: 10.948
+	f: 23	q: 10.984
 	f: 24	q: 6
 
 g:4
 size: 2
-	f: 23	q: 20.848
-	f: 24	q: 21.892
+	f: 23	q: 21.024
+	f: 24	q: 21.896
 
 g:5
 size: 2
-	f: 23	q: 31.16
-	f: 24	q: 59.548
+	f: 23	q: 32.48
+	f: 24	q: 59.248
 
 g:6
 size: 2
-	f: 23	q: 50.456
-	f: 24	q: 138.628
+	f: 23	q: 54.304
+	f: 24	q: 137.1
 
 g:7
 size: 2
-	f: 23	q: 80.256
-	f: 24	q: 286.376
+	f: 23	q: 85.632
+	f: 24	q: 286.8
 
 g:8
 size: 2
-	f: 23	q: 110.16
-	f: 24	q: 543.608
+	f: 23	q: 111.744
+	f: 24	q: 576.096
 
 g:9
 size: 2
-	f: 23	q: 96.48
-	f: 24	q: 959.376
+	f: 23	q: 97.056
+	f: 24	q: 985.152
 
 g:10
 size: 2
-	f: 23	q: 36.288
-	f: 24	q: 1540.93
+	f: 23	q: 35.136
+	f: 24	q: 1441.24
 
 g:11
 size: 1
-	f: 24	q: 2103.5
+	f: 24	q: 1810.19
 
 g:12
 size: 1
-	f: 24	q: 2626.62
+	f: 24	q: 2154.14
 
 g:13
 size: 1
-	f: 24	q: 2907.71
+	f: 24	q: 2366.38
 
 g:14
 size: 1
-	f: 24	q: 2809.54
+	f: 24	q: 2307.7
 
 g:15
 size: 1
-	f: 24	q: 2650.66
+	f: 24	q: 2156.54
 
 g:16
 size: 1
-	f: 24	q: 2351.71
+	f: 24	q: 1967.81
 
 g:17
 size: 1
-	f: 24	q: 1648.99
+	f: 24	q: 1456.99
 
 g:18
 size: 1
-	f: 24	q: 894.336
+	f: 24	q: 606.72
 
 g:19
 size: 1
-	f: 24	q: 226.368
+	f: 24	q: 136.512
 
 g:20
 size: 0

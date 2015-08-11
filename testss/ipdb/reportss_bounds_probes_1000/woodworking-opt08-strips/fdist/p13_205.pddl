@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/woodworking-opt08-strips/fdist/p13_205.pddl
-predictionSS: 315.172
-ss_timer: 9.54
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_1000/woodworking-opt08-strips/fdist/p13_205.pddl
+predictionSS: 319.84
+ss_timer: 9.3
 g:0
 size: 1
 	f: 185	q: 1
@@ -14,26 +14,26 @@ size: 3
 g:2
 size: 2
 	f: 195	q: 3
-	f: 205	q: 17.97
+	f: 205	q: 17.94
 
 g:3
 size: 3
-	f: 195	q: 6.95
-	f: 200	q: 2.024
-	f: 205	q: 28.822
+	f: 195	q: 6.954
+	f: 200	q: 2.04
+	f: 205	q: 29.142
 
 g:4
 size: 2
-	f: 195	q: 5.994
-	f: 205	q: 40.006
+	f: 195	q: 5.96
+	f: 205	q: 41.102
 
 g:5
 size: 1
-	f: 205	q: 84.134
+	f: 205	q: 85.586
 
 g:6
 size: 1
-	f: 205	q: 118.272
+	f: 205	q: 120.116
 
 g:7
 size: 0
