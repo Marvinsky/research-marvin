@@ -11,6 +11,29 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 29		584197			588339
 30		3.90851e+06			3.99241e+06
 
+p19.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p18.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+48		876809			----zero_info----
+
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+30		1631			----zero_info----
+31		385456			----zero_info----
+32		5.85189e+07			----zero_info----
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		3			----zero_info----
+25		104			----zero_info----
+26		3088			----zero_info----
+27		86023			----zero_info----
+28		2.31324e+06			----zero_info----
+29		6.07435e+07			----zero_info----
+30		1.56516e+09			----zero_info----
+
 p13.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 25		20			20
@@ -24,14 +47,38 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 33		1.93993e+06			1.97453e+06
 34		1.14504e+07			1.17142e+07
 
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
 p01.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 12		3			3
 13		12			11.964
 
+p10.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
 p04.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 24		9.49122e+06			9.89026e+06
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		261			----zero_info----
+25		29525			----zero_info----
+26		1.98709e+06			----zero_info----
+27		9.63692e+07			----zero_info----
+28		4.16622e+09			----zero_info----
+
+p17.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+42		95901			----zero_info----
+
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p03.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -44,6 +91,17 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 24		4.17112e+07			4.16421e+07
 25		4.67355e+08			4.69226e+08
 26		6.95211e+09			7.03723e+09
+
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+36		11743			----zero_info----
+37		5.13364e+06			----zero_info----
 
 p11.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -58,3 +116,11 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 20		22528			22537.7
 21		340408			341829
 22		7.10434e+06			7.16399e+06
+
+Files that contains zero_info:	6
+p06.pddl
+p12.pddl
+p15.pddl
+p16.pddl
+p17.pddl
+p18.pddl

@@ -2,6 +2,35 @@
 
 blocks
 
+probBLOCKS-15-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+26		38			----zero_info----
+28		2993			----zero_info----
+30		181180			----zero_info----
+32		9.92211e+06			----zero_info----
+33		9.92522e+06			----zero_info----
+34		5.20199e+08			----zero_info----
+35		5.20998e+08			----zero_info----
+
+probBLOCKS-16-2.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+26		3			----zero_info----
+28		21			----zero_info----
+29		23			----zero_info----
+30		175			----zero_info----
+31		194			----zero_info----
+32		1943			----zero_info----
+33		2140			----zero_info----
+34		29110			----zero_info----
+35		32004			----zero_info----
+36		565198			----zero_info----
+37		626809			----zero_info----
+38		1.34376e+07			----zero_info----
+39		1.51338e+07			----zero_info----
+40		3.69302e+08			----zero_info----
+41		4.2336e+08			----zero_info----
+42		1.11719e+10			----zero_info----
+
 probBLOCKS-5-2.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 8		2			2
@@ -60,6 +89,67 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 9		17			17.0372
 10		48			48.5196
 
+probBLOCKS-13-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		4			----zero_info----
+26		55			----zero_info----
+28		927			----zero_info----
+30		26066			----zero_info----
+31		26142			----zero_info----
+32		981982			----zero_info----
+33		995413			----zero_info----
+34		4.01068e+07			----zero_info----
+35		4.14996e+07			----zero_info----
+36		1.69652e+09			----zero_info----
+37		1.8084e+09			----zero_info----
+
+probBLOCKS-11-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+20		23			----zero_info----
+21		28			----zero_info----
+22		1315			----zero_info----
+23		1618			----zero_info----
+24		69606			----zero_info----
+25		86557			----zero_info----
+26		3.51914e+06			----zero_info----
+27		4.40907e+06			----zero_info----
+28		1.72089e+08			----zero_info----
+29		2.15908e+08			----zero_info----
+30		8.24758e+09			----zero_info----
+
+probBLOCKS-12-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+32		6			----zero_info----
+34		378			----zero_info----
+35		383			----zero_info----
+36		23938			----zero_info----
+37		24643			----zero_info----
+38		1.47186e+06			----zero_info----
+39		1.54168e+06			----zero_info----
+40		9.86696e+07			----zero_info----
+41		1.04724e+08			----zero_info----
+42		8.44534e+09			----zero_info----
+
+probBLOCKS-13-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		2			----zero_info----
+25		3			----zero_info----
+26		18			----zero_info----
+27		23			----zero_info----
+28		146			----zero_info----
+29		179			----zero_info----
+30		1400			----zero_info----
+31		1675			----zero_info----
+32		18011			----zero_info----
+33		21211			----zero_info----
+34		330699			----zero_info----
+35		389140			----zero_info----
+36		8.21884e+06			----zero_info----
+37		9.74226e+06			----zero_info----
+38		2.6014e+08			----zero_info----
+39		3.08652e+08			----zero_info----
+40		1.0654e+10			----zero_info----
+
 probBLOCKS-5-0.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 6		3			3
@@ -80,6 +170,19 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 18		20469			21861.6
 19		20730			22133
 20		201387			201892
+
+probBLOCKS-17-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+32		6			----zero_info----
+34		378			----zero_info----
+35		383			----zero_info----
+36		23938			----zero_info----
+37		24643			----zero_info----
+38		1.47186e+06			----zero_info----
+39		1.54168e+06			----zero_info----
+40		9.86696e+07			----zero_info----
+41		1.04724e+08			----zero_info----
+42		8.44534e+09			----zero_info----
 
 probBLOCKS-5-1.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -123,6 +226,21 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 33		434440			441016
 34		1.41259e+07			5.79804e+06
 
+probBLOCKS-15-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+26		3			----zero_info----
+28		23			----zero_info----
+30		187			----zero_info----
+32		1808			----zero_info----
+34		20530			----zero_info----
+36		262065			----zero_info----
+38		3.63558e+06			----zero_info----
+39		3.63713e+06			----zero_info----
+40		5.43013e+07			----zero_info----
+41		5.44712e+07			----zero_info----
+42		8.93324e+08			----zero_info----
+43		9.04538e+08			----zero_info----
+
 probBLOCKS-7-1.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 10		2			2
@@ -164,6 +282,23 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 19		2448			2097.73
 20		32649			29691.8
 
+probBLOCKS-14-0.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+22		3			----zero_info----
+24		29			----zero_info----
+26		295			----zero_info----
+27		305			----zero_info----
+28		3807			----zero_info----
+29		4067			----zero_info----
+30		72380			----zero_info----
+31		79198			----zero_info----
+32		2.18189e+06			----zero_info----
+33		2.41801e+06			----zero_info----
+34		8.90774e+07			----zero_info----
+35		9.94127e+07			----zero_info----
+36		4.09385e+09			----zero_info----
+37		4.59419e+09			----zero_info----
+
 probBLOCKS-10-0.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 18		5			5.0008
@@ -197,6 +332,23 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 19		160			158.743
 20		1753			1898.25
 
+probBLOCKS-16-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+30		3			----zero_info----
+31		4			----zero_info----
+32		50			----zero_info----
+33		62			----zero_info----
+34		801			----zero_info----
+35		971			----zero_info----
+36		14231			----zero_info----
+37		16983			----zero_info----
+38		315635			----zero_info----
+39		371353			----zero_info----
+40		1.11229e+07			----zero_info----
+41		1.28852e+07			----zero_info----
+42		6.78888e+08			----zero_info----
+43		7.71909e+08			----zero_info----
+
 probBLOCKS-10-2.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 18		3			3
@@ -214,6 +366,19 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 32		3.64288e+08			1.7547e+08
 33		4.52207e+08			2.21112e+08
 34		1.37079e+10			1.34764e+10
+
+probBLOCKS-14-1.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+26		9			----zero_info----
+27		10			----zero_info----
+28		460			----zero_info----
+29		498			----zero_info----
+30		27864			----zero_info----
+31		29972			----zero_info----
+32		2.21613e+06			----zero_info----
+33		2.38745e+06			----zero_info----
+34		2.16682e+08			----zero_info----
+35		2.34922e+08			----zero_info----
 
 probBLOCKS-6-1.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -273,3 +438,16 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 26		13278			12416.6
 27		14012			13130.4
 28		179863			152216
+
+Files that contains zero_info:	11
+probBLOCKS-11-0.pddl
+probBLOCKS-12-0.pddl
+probBLOCKS-13-0.pddl
+probBLOCKS-13-1.pddl
+probBLOCKS-14-0.pddl
+probBLOCKS-14-1.pddl
+probBLOCKS-15-0.pddl
+probBLOCKS-15-1.pddl
+probBLOCKS-16-1.pddl
+probBLOCKS-16-2.pddl
+probBLOCKS-17-0.pddl
