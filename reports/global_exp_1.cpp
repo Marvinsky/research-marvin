@@ -179,7 +179,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			vector<double> v_ida_time;
 			vector<double> v_ss_value;
 			vector<double> v_ss_time;
-			vector<int> v_problems_solved;
+			vector<double> v_problems_solved;
 
 			string expFile;
         		expFile = openFile + "/" + experiment;
@@ -227,7 +227,12 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 				v_ida_time.push_back(atof(domains[i][2].c_str()));
 				v_ss_value.push_back(atof(domains[i][3].c_str()));
 				v_ss_time.push_back(atof(domains[i][4].c_str()));
-				v_problems_solved.push_back(atoi(domains[i][5].c_str()));
+				string string_problems_solved = domains[i][5];
+				if (string_problems_solved == "---") {
+					v_problems_solved.push_back(0);
+				} else {
+					v_problems_solved.push_back(atof(domains[i][5].c_str()));
+				}
 			}
 
 
@@ -238,8 +243,10 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 				double ida_time = v_ida_time.at(i);
 				double ss_value = v_ss_value.at(i);
 				double ss_time = v_ss_time.at(i);
+				double n_solved = v_problems_solved.at(i); //feature number of problems solved
 				//cout<<"key = "<<key<<", ida_value = "<<ida_value<<", ida_time = "<<ida_time<<", ss_value = "<<ss_value<<", ss_time = "<<ss_time<<"\n";
-				if (ida_value == 0 && ida_time == 0 && ss_time == 0 && ss_time == 0) {
+				if (ida_value == 0 && ida_time == 0 && ss_time == 0 && ss_time == 0 && n_solved == 0) {
+					all_data.push_back(-1);
 					all_data.push_back(-1);
 					all_data.push_back(-1);
 					all_data.push_back(-1);
@@ -249,6 +256,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 					all_data.push_back(ida_time);
 					all_data.push_back(ss_value);
 					all_data.push_back(ss_time);
+					all_data.push_back(n_solved); //feature number of problems solved
 				}
 
 				map_column.insert(pair<string, vector<double> >(key, all_data));
@@ -287,7 +295,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 						v_data_rows.push_back(value);
 					}
 					if (size_probes == counter + 1) {
-						if (i == 0 || i == 1) {
+						if (i == 0 || i == 1 || i == 4) {
 							double d = column.at(i);
 							v_data_rows_ida.push_back(d);
 						}
@@ -358,6 +366,7 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
 	//modify index_probes
 	vector<int> format_before;  //print correctly the ida informatin
+	vector<int> v_nsolved; // the number of the column that contains the number of problem solved
 	for (int i = 0;  i < count_amount_heur; i++) {
 		int p = i + 1;
 		int q = i;
@@ -366,8 +375,12 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 
 		int n1 = index * 2;
 		int n2 = index * 2 + 1;
-		format_before.push_back(n1);
-		format_before.push_back(n2);
+		int n3 = n2 + 1;
+		format_before.push_back(n1); // ida*
+		format_before.push_back(n2); // ida* time
+		format_before.push_back(n3); //column number of problem solved
+
+		v_nsolved.push_back(n3);
 	}	
 	
 	int index_counter_probes = index_probes.size();
@@ -398,8 +411,8 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 	for (int i = 0; i < index_counter_probes; i++) {
 		int n = index_probes.at(i);
 		if (n == -1) {
-			      cout<<right<<setw(30)<<"|          ida*          time|";//setw(20)
-			outputFile<<right<<setw(30)<<"|          ida*          time|";//setw(20)
+			      cout<<right<<setw(30)<<"|          ida*          time|    n";//setw(20)
+			outputFile<<right<<setw(30)<<"|          ida*          time|    n";//setw(20)
 			is_ida_time = true;
 		} else {
 			if (is_ida_time) {
@@ -429,13 +442,19 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 			double d = b.at(i);	
 			if (d == -1) {
 				if (isIdaInfo(i, format_before)) {
-					cout<<right<<setw(15)<<"---";
-					outputFile<<right<<setw(15)<<"---";
+					if (isIdaInfo(i, v_nsolved)) {//implementation of the number of problems solved
+						cout<<right<<setw(5)<<"---";
+						outputFile<<right<<setw(5)<<"---";
+					} else {
+						cout<<right<<setw(15)<<"---";
+						outputFile<<right<<setw(15)<<"---";
+					}
 					set_ida_info = true;
 				} else {
 					if (set_ida_info) {
 						cout<<right<<setw(19)<<"---";
 						outputFile<<right<<setw(19)<<"---";
+						
 						set_ida_info = false;
 					} else {
 						cout<<right<<setw(weight_fixed)<<"---";
@@ -444,8 +463,13 @@ void create_report1(vector<string> heuristics, string algorithm1, string algorit
 				}
 			} else {
 				if (isIdaInfo(i, format_before)) {
-					cout<<right<<setw(15)<<d;
-					outputFile<<right<<setw(15)<<d;
+					if (isIdaInfo(i, v_nsolved)) { //implementation of the number of problems solved
+						cout<<right<<setw(5)<<(int)d<<" ";
+						outputFile<<right<<setw(5)<<(int)d<<" ";
+					} else {
+						cout<<right<<setw(15)<<d;
+						outputFile<<right<<setw(15)<<d;
+					}
 					set_ida_info = true;
 				} else {
 					if (set_ida_info) {

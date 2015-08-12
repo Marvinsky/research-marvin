@@ -159,11 +159,11 @@ void create_report1(string algorithm1, string algorithm2, string heuristic) {
 
 	string str;
 	ifstream fdata(file_to_read.c_str());
-	for (int i = 0; i < 26; i++) {
+	for (int i = 0; i < 27; i++) {
 		fdata>>str;
 	}
 
-        int CONST_ROWS = 21, CONST_COLUMNS = 13;
+        int CONST_ROWS = 21, CONST_COLUMNS = 14; //Incluying the number of problems solved
         string** data;
         
 
@@ -197,12 +197,11 @@ void create_report1(string algorithm1, string algorithm2, string heuristic) {
 		each_row.push_back(data[i][6]);
 		each_row.push_back(data[i][8]);
 		each_row.push_back(data[i][10]);
+		each_row.push_back(data[i][13]);
 		
 		map_each_domain.insert(pair<string, vector<string> >(key, each_row));
         }
 
-
-		
 	cout<<left<<setw(24)<<"\t";
 	outputFile<<left<<setw(24)<<"\t";
 	cout<<right<<setw(40)<<heuristic;
@@ -240,6 +239,7 @@ void create_report1(string algorithm1, string algorithm2, string heuristic) {
 	index_probes.push_back("100");
 	index_probes.push_back("1000");
 	index_probes.push_back("50000");
+	index_probes.push_back("n");
         int index_counter_probes = index_probes.size();
         for (int i = 0; i < index_counter_probes; i++) {
                 string n = index_probes.at(i);
