@@ -211,6 +211,41 @@ woodworking-opt08       & 1.28 & 0.15 & 0.69 & 1.33 & 0.27 & 13.21 & 0.17 & 130.
 
 In the Table \ref{table1} we can see that there are seven domains which IDA* could not solve any instance in 24 hours. The ss-err decrease for each domain according the number of probes increases. The domains that have the perfect score are: openstacks-opt11-strips, parcprinter-opt11-strips. 
 
+\newpage
+
+\begin{table}[]
+\footnotesize\setlength{\tabcolsep}{1.8pt}
+\caption{Experiment 1 - Comparison using hmax heuristic}
+\label{hmax_label}
+\begin{tabular}{l@{\hspace{6pt}} *{12}{|r}}
+\hline
+\multicolumn{1}{c|}{} & \multicolumn{12}{c}{hmax}
+\\ \hline
+\multicolumn{1}{c|}{} &             &         & \multicolumn{5}{c|}{ss-error}                                                                  & \multicolumn{5}{c}{time}                                                                                                           \\ \hline
+Domain        & IDA*         & time       & 1      & 10     & 100    & 1000    & 5000       & 1      & 10     & 100    & 1000 & 50000 \\ \hline 
+barman-opt11-strips & 8835990.00& 6016.38& 0.60& 0.45& 0.20& 0.07& 0.04& 0.06& 0.32& 3.21& 32.57& 214.59\\ \hline
+blocks & 28510300.00& 3030.97& 0.42& 0.17& 0.06& 0.03& 0.01& 0.02& 0.10& 1.06& 10.86& 65.97\\ \hline
+elevators-opt08-strips & 923397.00& 4795.09& 0.67& 0.48& 0.21& 0.13& 0.48& 1.61& 11.13& 110.38& 1140.05& 3012.95\\ \hline
+elevators-opt11-strips & 966309.00& 4759.72& 0.84& 0.42& 0.23& 0.13& 0.14& 1.40& 9.85& 96.37& 994.33& 4223.73\\ \hline
+floortile-opt11-strips & 30522300.00& 3919.72& 2.02& 0.62& 0.40& 0.14& 0.11& 0.01& 0.07& 0.69& 6.93& 36.60\\ \hline
+nomystery-opt11-strips & 6565740.00& 3256.86& 0.53& 0.26& 0.07& 0.03& 0.01& 0.07& 0.38& 3.63& 36.35& 181.03\\ \hline
+openstacks-opt08-adl & ---& ---& ---& ---& ---& ---& ---& ---& ---& ---& ---& ---\\ \hline
+openstacks-opt08-strips & 73087.30& 2669.55& 0.58& 0.04& 0.10& 0.10& 0.22& 82.20& 800.37& 1260.88& 12368.90& 9594.93\\ \hline
+openstacks-opt11-strips & 62942.40& 3156.36& 0.03& 0.03& 0.10& 0.10& 0.24& 94.79& 774.86& 991.57& 10148.40& 8779.80\\ \hline
+parcprinter-opt11-strips & 1.00& 0.00& 0.00& 0.00& 0.00& 0.00& 0.00& 0.01& 0.04& 0.35& 3.48& 17.29\\ \hline
+parking-opt11-strips & 374925.00& 5607.50& 0.17& 0.04& 0.01& 0.00& 0.00& 1.79& 11.36& 114.28& 1196.83& 5835.03\\ \hline
+pegsol-opt11-strips & 68763.70& 5.00& 0.17& 0.04& 0.02& 0.01& 0.00& 0.01& 0.04& 0.37& 3.69& 17.88\\ \hline
+scanalyzer-opt11-strips & 8257850.00& 4808.75& 0.43& 0.25& 18.63& 0.02& 0.04& 3.13& 28.79& 273.74& 3033.06& 10021.00\\ \hline
+sokoban-opt08-strips & 2657890.00& 3385.95& 0.35& 0.22& 0.09& 0.05& 0.03& 0.27& 1.95& 20.24& 214.01& 965.40\\ \hline
+sokoban-opt11-strips & 3118530.00& 3932.69& 0.41& 0.26& 0.11& 0.05& 0.04& 0.31& 2.00& 21.42& 222.47& 1056.61\\ \hline
+tidybot-opt11-strips & 431336.00& 5465.62& 300.86& 1072.40& 5.88& 0.01& 0.04& 4.40& 26.48& 238.76& 2747.10& 11572.90\\ \hline
+transport-opt08-strips & 1462640.00& 957.41& 0.55& 0.36& 0.27& 0.13& 0.10& 0.33& 2.57& 23.11& 236.72& 1363.04\\ \hline
+transport-opt11-strips & 2622880.00& 2253.51& 0.63& 0.54& 0.24& 0.15& 0.11& 0.09& 0.61& 5.89& 59.37& 290.31\\ \hline
+visitall-opt11-strips & 71032400.00& 3704.78& 0.12& 0.04& 0.01& 0.00& 0.00& 0.00& 0.05& 0.56& 5.77& 28.07\\ \hline
+woodworking-opt08-strips & 4170080.00& 4055.03& 0.89& 0.57& 0.35& 0.13& 0.07& 0.16& 1.44& 13.94& 140.83& 685.86\\ \hline
+woodworking-opt11-strips & 5139070.00& 4944.76& 1.28& 0.69& 0.27& 0.17& 0.07& 0.15& 1.33& 13.21& 130.82& 664.08\\ \hline
+\end{tabular}
+\end{table}
 
 
 
