@@ -74,6 +74,54 @@ string domainConvertor(int key) {
         return r;
 }
 
+string getShortDomain(string key) {
+        string r;
+        if (key == "barman-opt11-strips") {
+                r = "barman-opt11";
+        } else if (key == "blocks") {
+                r = "blocks";
+        } else if (key == "elevators-opt08-strips") {
+                r = "elevators-opt08";
+        } else if (key == "elevators-opt11-strips") {
+                r = "elevators-opt11";
+        } else if (key == "floortile-opt11-strips") {
+                r = "floortile-opt11";
+        } else if (key == "nomystery-opt11-strips") {
+                r = "nomystery-opt11";
+        } else if (key == "openstacks-opt08-adl") {
+                r = "openstacks-adl";
+        } else if (key == "openstacks-opt08-strips") {
+                r = "openstacks-opt08";
+        } else if (key == "openstacks-opt11-strips") {
+                r = "openstacks-opt11";
+        } else if (key == "parcprinter-opt11-strips") {
+                r = "parcprinter-opt11";
+        } else if (key == "parking-opt11-strips") {
+                r = "parking-opt11";
+        } else if (key == "pegsol-opt11-strips") {
+                r = "pegsol-opt11";
+        } else if (key == "scanalyzer-opt11-strips") {
+                r = "scanalyzer-opt11";
+        } else if (key == "sokoban-opt08-strips") {
+                r = "sokoban-opt08";
+        } else if (key == "sokoban-opt11-strips") {
+                r = "sokoban-opt11";
+        } else if (key == "tidybot-opt11-strips") {
+                r = "tidybot-opt11";
+        } else if (key == "transport-opt08-strips") {
+                r = "transport-opt08";
+        } else if (key == "transport-opt11-strips") {
+                r = "transport-opt11";
+        } else if (key == "visitall-opt11-strips") {
+                r = "visitall-opt11";
+        } else if (key == "woodworking-opt08-strips") {
+                r = "woodworking-opt08";
+        } else if (key == "woodworking-opt11-strips") {
+                r = "woodworking-opt08";
+        }
+        return r;
+}
+
 int getTotalLevels(string interText) {
         ifstream inter2;
         inter2.open(interText.c_str());
@@ -283,8 +331,9 @@ void create_report1(string algorithm1, string algorithm2, string heuristic) {
 			if (i == 0) {
 			      	//cout<<left<<setw(24)<<data; //" "<<d;     
                         	//outputFile<<left<<setw(24)<<data; //" "<<d;
-				cout<<data<<" ";
-				outputFile<<data<<" ";
+				string shortDomain = getShortDomain(data);
+				cout<<shortDomain<<" ";
+				outputFile<<shortDomain<<" ";
 			} else {
 				//cout<<right<<setw(10)<<data; //" "<<d; 
                         	//outputFile<<right<<setw(10)<<data; //" "<<d;
