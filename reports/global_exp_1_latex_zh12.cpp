@@ -207,11 +207,11 @@ void create_report1(string algorithm1, string algorithm2, string heuristic) {
 
 	string str;
 	ifstream fdata(file_to_read.c_str());
-	for (int i = 0; i < 26; i++) {
+	for (int i = 0; i < 27; i++) {
 		fdata>>str;
 	}
 
-        int CONST_ROWS = 21, CONST_COLUMNS = 13;
+        int CONST_ROWS = 21, CONST_COLUMNS = 14; // considering the number of probes
         string** data;
         
 
@@ -245,6 +245,7 @@ void create_report1(string algorithm1, string algorithm2, string heuristic) {
 		each_row.push_back(data[i][6]);
 		each_row.push_back(data[i][8]);
 		each_row.push_back(data[i][10]);
+		each_row.push_back(data[i][13]);
 		
 		map_each_domain.insert(pair<string, vector<string> >(key, each_row));
         }
@@ -263,8 +264,8 @@ void create_report1(string algorithm1, string algorithm2, string heuristic) {
 	cout<<"\\label{"<<heuristic<<"_label}\n";
 	outputFile<<"\\label{"<<heuristic<<"_label}\n";
 	
-        cout<<"\\begin{tabular}{l@{\\hspace{6pt}} *{12}{|r}}\n";
-        outputFile<<"\\begin{tabular}{l@{\\hspace{6pt}} *{12}{|r}}\n";
+        cout<<"\\begin{tabular}{l@{\\hspace{6pt}} *{13}{|r}}\n";
+        outputFile<<"\\begin{tabular}{l@{\\hspace{6pt}} *{13}{|r}}\n";
 
 	//cout<<"\\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|}\n";
 	//outputFile<<"\\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|}\n";
@@ -272,16 +273,16 @@ void create_report1(string algorithm1, string algorithm2, string heuristic) {
 
 	cout<<"\\hline\n";
 	outputFile<<"\\hline\n";
-	cout<<"\\multicolumn{1}{c|}{} & \\multicolumn{12}{c}{hmax}";
-	outputFile<<"\\multicolumn{1}{c|}{} & \\multicolumn{12}{c}{hmax}";
+	cout<<"\\multicolumn{1}{c|}{} & \\multicolumn{13}{c}{hmax}";
+	outputFile<<"\\multicolumn{1}{c|}{} & \\multicolumn{13}{c}{hmax}";
 
 	outputFile<<"\n";
 	cout<<"\n";
 	
 	cout<<"\\\\ \\hline\n";
 	outputFile<<"\\\\ \\hline\n";
-	cout<<"\\multicolumn{1}{c|}{} &             &         & \\multicolumn{5}{c|}{ss-error}                                                                  & \\multicolumn{5}{c}{time}                                                                                                           \\\\ \\hline";
-	outputFile<<"\\multicolumn{1}{c|}{} &             &         & \\multicolumn{5}{c|}{ss-error}                                                                  & \\multicolumn{5}{c}{time}                                                                                                           \\\\ \\hline";
+	cout<<"\\multicolumn{1}{c|}{} &             &         & \\multicolumn{5}{c|}{ss-error}                                                                  & \\multicolumn{5}{c|}{time}                                                                                                           \\\\ \\hline";
+	outputFile<<"\\multicolumn{1}{c|}{} &             &         & \\multicolumn{5}{c|}{ss-error}                                                                  & \\multicolumn{5}{c|}{time}                                                                                                           \\\\ \\hline";
 	outputFile<<"\n";
         cout<<"\n";
         //cout<<left<<setw(24)<<"Domain";
@@ -302,7 +303,8 @@ void create_report1(string algorithm1, string algorithm2, string heuristic) {
 	index_probes.push_back("& 10 ");
 	index_probes.push_back("& 100 ");
 	index_probes.push_back("& 1000 ");
-	index_probes.push_back("& 50000 \\\\ \\hline ");
+	index_probes.push_back("& 50000 ");
+	index_probes.push_back("& n \\\\ \\hline ");
         int index_counter_probes = index_probes.size();
         for (int i = 0; i < index_counter_probes; i++) {
                 string n = index_probes.at(i);
