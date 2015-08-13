@@ -1,15 +1,55 @@
-		ssBC = probBLOCKS-10-2_F_34.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/blocks/bc/probBLOCKS-10-2_F_34.csv
+	output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/barman-opt11-strips/bc/pfile01-001_F_33.csv
+	ssBC = pfile01-001_F_33.csv
+	astarBC = pfile01-001_F_33.csv
 
-		ssBC = p17_F_30.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/nomystery-opt11-strips/bc/p17_F_30.csv
 
-		ssBC = p08_F_735648.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/parcprinter-opt11-strips/bc/p08_F_735648.csv
+	output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/barman-opt11-strips/bc/pfile01-002_F_33.csv
+	ssBC = pfile01-002_F_33.csv
+	astarBC = pfile01-002_F_33.csv
 
-		ssBC = p09_F_609395.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/parcprinter-opt11-strips/bc/p09_F_609395.csv
 
-		ssBC = p14_F_30.csv
-output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/scanalyzer-opt11-strips/bc/p14_F_30.csv
+	output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/barman-opt11-strips/bc/pfile01-003_F_33.csv
+	ssBC = pfile01-003_F_33.csv
+	astarBC = pfile01-003_F_33.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/barman-opt11-strips/bc/pfile01-004_F_33.csv
+	ssBC = pfile01-004_F_33.csv
+	astarBC = pfile01-004_F_33.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/barman-opt11-strips/bc/pfile02-005_F_33.csv
+	ssBC = pfile02-005_F_33.csv
+	astarBC = pfile02-005_F_33.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/floortile-opt11-strips/bc/opt-p02-003_F_40.csv
+	ssBC = opt-p02-003_F_40.csv
+	astarBC = opt-p02-003_F_40.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/floortile-opt11-strips/bc/opt-p02-004_F_34.csv
+	ssBC = opt-p02-004_F_34.csv
+	astarBC = opt-p02-004_F_34.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/floortile-opt11-strips/bc/opt-p03-005_F_38.csv
+	ssBC = opt-p03-005_F_38.csv
+	astarBC = opt-p03-005_F_38.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/nomystery-opt11-strips/bc/p15_F_23.csv
+	ssBC = p15_F_23.csv
+	astarBC = p15_F_23.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/openstacks-opt11-strips/bc/p20_F_2.csv
+	ssBC = p20_F_2.csv
+	astarBC = p20_F_2.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb/reportss/parcprinter-opt11-strips/bc/p04_F_824096.csv
+	ssBC = p04_F_824096.csv
+	astarBC = p04_F_824096.csv
+
 
