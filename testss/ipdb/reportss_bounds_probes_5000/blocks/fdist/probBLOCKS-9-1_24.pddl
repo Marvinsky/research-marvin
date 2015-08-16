@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/blocks/fdist/probBLOCKS-9-1_24.pddl
-predictionSS: 1393.13
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_5000/blocks/fdist/probBLOCKS-9-1_24.pddl
+predictionSS: 1345.24
 ss_timer: 0.48
 g:0
 size: 1
@@ -20,48 +20,48 @@ size: 1
 
 g:4
 size: 2
-	f: 18	q: 2.0274
-	f: 20	q: 4.9452
+	f: 18	q: 1.9842
+	f: 20	q: 5.0316
 
 g:5
 size: 1
-	f: 20	q: 12.8826
+	f: 20	q: 13.086
 
 g:6
 size: 2
-	f: 20	q: 6.003
-	f: 22	q: 28.6884
+	f: 20	q: 6.1272
+	f: 22	q: 29.0124
 
 g:7
 size: 2
-	f: 20	q: 1.0152
-	f: 22	q: 75.2058
+	f: 20	q: 1.053
+	f: 22	q: 76.3128
 
 g:8
 size: 2
-	f: 22	q: 28.7064
-	f: 24	q: 203.126
+	f: 22	q: 28.1502
+	f: 24	q: 205.502
 
 g:9
 size: 2
-	f: 22	q: 18.1548
-	f: 24	q: 548.802
+	f: 22	q: 15.849
+	f: 24	q: 557.161
 
 g:10
 size: 1
-	f: 24	q: 215.482
+	f: 24	q: 198.542
 
 g:11
 size: 1
-	f: 24	q: 233.053
+	f: 24	q: 195.896
 
 g:12
 size: 1
-	f: 24	q: 2.8512
+	f: 24	q: 1.6848
 
 g:13
 size: 1
-	f: 24	q: 5.184
+	f: 24	q: 2.8512
 
 g:14
 size: 0

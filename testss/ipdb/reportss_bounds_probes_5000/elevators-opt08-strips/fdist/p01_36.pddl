@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/elevators-opt08-strips/fdist/p01_36.pddl
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_5000/elevators-opt08-strips/fdist/p01_36.pddl
 predictionSS: 56
-ss_timer: 79.18
+ss_timer: 79.34
 g:0
 size: 1
 	f: 30	q: 1

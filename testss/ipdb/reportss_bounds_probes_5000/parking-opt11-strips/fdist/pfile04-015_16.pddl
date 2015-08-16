@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/parking-opt11-strips/fdist/pfile04-015_16.pddl
-predictionSS: 9498.78
-ss_timer: 14
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_5000/parking-opt11-strips/fdist/pfile04-015_16.pddl
+predictionSS: 9415.46
+ss_timer: 14.32
 g:0
 size: 1
 	f: 13	q: 1
@@ -12,64 +12,64 @@ size: 2
 
 g:2
 size: 3
-	f: 14	q: 16.0588
-	f: 15	q: 80.8564
-	f: 16	q: 1.0848
+	f: 14	q: 16.0228
+	f: 15	q: 80.9116
+	f: 16	q: 1.0656
 
 g:3
 size: 3
-	f: 14	q: 3.9802
-	f: 15	q: 238.811
-	f: 16	q: 1012.04
+	f: 14	q: 3.9106
+	f: 15	q: 239.31
+	f: 16	q: 1008.36
 
 g:4
 size: 3
-	f: 14	q: 1.0488
-	f: 15	q: 115.493
-	f: 16	q: 3323.19
+	f: 14	q: 1.0906
+	f: 15	q: 116.084
+	f: 16	q: 3311.95
 
 g:5
 size: 3
-	f: 14	q: 1.0488
-	f: 15	q: 35.1074
-	f: 16	q: 2357.25
+	f: 14	q: 1.0906
+	f: 15	q: 33.7458
+	f: 16	q: 2389.07
 
 g:6
 size: 2
-	f: 15	q: 29.9968
-	f: 16	q: 1001.47
+	f: 15	q: 29.0104
+	f: 16	q: 1017.22
 
 g:7
 size: 2
-	f: 15	q: 13.0158
-	f: 16	q: 721.624
+	f: 15	q: 13.6558
+	f: 16	q: 700.695
 
 g:8
 size: 2
-	f: 15	q: 7.5038
-	f: 16	q: 245.846
+	f: 15	q: 8.3236
+	f: 16	q: 211.804
 
 g:9
 size: 2
-	f: 15	q: 3.3552
-	f: 16	q: 166.538
+	f: 15	q: 4.0878
+	f: 16	q: 138.429
 
 g:10
 size: 2
-	f: 15	q: 3.3552
-	f: 16	q: 53.8956
+	f: 15	q: 4.0878
+	f: 16	q: 43.0902
 
 g:11
 size: 1
-	f: 16	q: 44.6486
+	f: 16	q: 25.8176
 
 g:12
 size: 1
-	f: 16	q: 8.5954
+	f: 16	q: 6.8076
 
 g:13
 size: 1
-	f: 16	q: 4.9732
+	f: 16	q: 1.8288
 
 g:14
 size: 0

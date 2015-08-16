@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/openstacks-opt11-strips/fdist/p04_3.pddl
-predictionSS: 1.13355e+06
-ss_timer: 11466.8
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_5000/openstacks-opt11-strips/fdist/p04_3.pddl
+predictionSS: 1.13308e+06
+ss_timer: 13840.7
 g:0
 size: 1
 	f: 0	q: 1
@@ -15,6 +15,6 @@ size: 1
 
 g:3
 size: 2
-	f: 2	q: 89.9576
-	f: 3	q: 2.0424
+	f: 2	q: 90.16
+	f: 3	q: 1.84
 

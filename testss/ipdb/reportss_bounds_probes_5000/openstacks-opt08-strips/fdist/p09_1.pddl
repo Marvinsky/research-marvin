@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds/openstacks-opt08-strips/fdist/p09_1.pddl
+	/home/levi/marvin/marvin/testss/ipdb/reportss_bounds_probes_5000/openstacks-opt08-strips/fdist/p09_1.pddl
 predictionSS: 2
-ss_timer: 12.26
+ss_timer: 19.94
 g:0
 size: 1
 	f: 0	q: 1
