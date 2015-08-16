@@ -1,0 +1,5 @@
+		/home/levi/marvin/marvin/astar/gapdb/reportastar/pegsol-opt11-strips/speed/p08_gapdb_1_F_3.pddl
+	initial_value: 2
+	h_min	gen	exp		V		SEv		VeSP		NPBP
+	1	1	1		1		1		0.5		4e-269
+	0	67874	23186		2.9e-05		0		1		4e-269
