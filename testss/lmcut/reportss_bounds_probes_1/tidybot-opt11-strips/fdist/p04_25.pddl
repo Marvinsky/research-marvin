@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/tidybot-opt11-strips/fdist/p04_25.pddl
-predictionSS: 75
-ss_timer: 0.62
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/tidybot-opt11-strips/fdist/p04_25.pddl
+predictionSS: 39
+ss_timer: 0.58
 g:0
 size: 1
 	f: 25	q: 1
@@ -49,28 +49,22 @@ size: 1
 	f: 25	q: 6
 
 g:11
-size: 1
-	f: 25	q: 6
+size: 0
 
 g:12
-size: 1
-	f: 25	q: 6
+size: 0
 
 g:13
-size: 1
-	f: 25	q: 6
+size: 0
 
 g:14
-size: 1
-	f: 25	q: 6
+size: 0
 
 g:15
-size: 1
-	f: 25	q: 6
+size: 0
 
 g:16
-size: 1
-	f: 25	q: 6
+size: 0
 
 g:17
 size: 0

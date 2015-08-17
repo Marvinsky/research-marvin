@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/elevators-opt08-strips/fdist/p11_55.pddl
-predictionSS: 59325
-ss_timer: 11
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/elevators-opt08-strips/fdist/p11_55.pddl
+predictionSS: 26952
+ss_timer: 14.5
 g:0
 size: 1
 	f: 39	q: 1
@@ -9,96 +9,103 @@ g:1
 size: 5
 	f: 38	q: 1
 	f: 41	q: 1
-	f: 43	q: 7
-	f: 47	q: 2
+	f: 43	q: 4
+	f: 47	q: 5
 	f: 49	q: 3
 
 g:2
 size: 10
 	f: 41	q: 4
-	f: 43	q: 10
 	f: 44	q: 18
-	f: 47	q: 26
+	f: 45	q: 4
+	f: 46	q: 12
 	f: 48	q: 16
-	f: 50	q: 9
-	f: 51	q: 21
-	f: 52	q: 25
-	f: 54	q: 15
-	f: 55	q: 18
+	f: 49	q: 9
+	f: 51	q: 15
+	f: 52	q: 19
+	f: 54	q: 6
+	f: 55	q: 47
 
 g:3
-size: 6
-	f: 45	q: 271
-	f: 48	q: 91
-	f: 50	q: 133
-	f: 53	q: 107
-	f: 54	q: 201
-	f: 55	q: 142
+size: 5
+	f: 49	q: 190
+	f: 50	q: 56
+	f: 53	q: 111
+	f: 54	q: 189
+	f: 55	q: 71
 
 g:4
-size: 6
+size: 7
 	f: 47	q: 4
-	f: 51	q: 23
-	f: 52	q: 466
-	f: 53	q: 35
-	f: 54	q: 661
-	f: 55	q: 1605
+	f: 50	q: 4
+	f: 51	q: 31
+	f: 52	q: 385
+	f: 53	q: 12
+	f: 54	q: 103
+	f: 55	q: 266
 
 g:5
 size: 5
-	f: 51	q: 522
-	f: 52	q: 890
-	f: 53	q: 124
-	f: 54	q: 1433
-	f: 55	q: 1806
+	f: 50	q: 23
+	f: 51	q: 62
+	f: 52	q: 91
+	f: 54	q: 224
+	f: 55	q: 115
 
 g:6
-size: 4
-	f: 51	q: 23
-	f: 52	q: 3562
-	f: 54	q: 2681
-	f: 55	q: 1400
+size: 5
+	f: 50	q: 46
+	f: 52	q: 362
+	f: 53	q: 244
+	f: 54	q: 292
+	f: 55	q: 36
 
 g:7
-size: 5
-	f: 50	q: 1157
-	f: 52	q: 858
-	f: 53	q: 1362
-	f: 54	q: 1508
-	f: 55	q: 2273
+size: 4
+	f: 50	q: 92
+	f: 52	q: 574
+	f: 53	q: 996
+	f: 54	q: 842
 
 g:8
-size: 2
-	f: 54	q: 424
-	f: 55	q: 3065
+size: 4
+	f: 52	q: 676
+	f: 53	q: 488
+	f: 54	q: 804
+	f: 55	q: 326
 
 g:9
-size: 2
-	f: 52	q: 1364
-	f: 55	q: 3893
+size: 3
+	f: 53	q: 1152
+	f: 54	q: 1188
+	f: 55	q: 228
 
 g:10
-size: 2
-	f: 51	q: 1132
-	f: 55	q: 9960
+size: 3
+	f: 53	q: 488
+	f: 54	q: 976
+	f: 55	q: 480
 
 g:11
-size: 2
-	f: 52	q: 1332
-	f: 55	q: 9760
+size: 1
+	f: 54	q: 4608
 
 g:12
-size: 1
-	f: 55	q: 4880
+size: 2
+	f: 54	q: 976
+	f: 55	q: 192
 
 g:13
-size: 0
+size: 1
+	f: 54	q: 3904
 
 g:14
-size: 0
+size: 1
+	f: 54	q: 2928
 
 g:15
-size: 0
+size: 1
+	f: 54	q: 1952
 
 g:16
 size: 0

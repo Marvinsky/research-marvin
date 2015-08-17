@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/woodworking-opt08-strips/fdist/p12_205.pddl
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/woodworking-opt08-strips/fdist/p12_205.pddl
 predictionSS: 1
-ss_timer: 0
+ss_timer: -4.1674e-19
 g:0
 size: 1
 	f: 205	q: 1

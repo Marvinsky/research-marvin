@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/transport-opt08-strips/fdist/p02_117.pddl
-predictionSS: 5
-ss_timer: 0
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/transport-opt08-strips/fdist/p02_117.pddl
+predictionSS: 25
+ss_timer: 0.02
 g:0
 size: 1
 	f: 115	q: 1
@@ -10,35 +10,45 @@ size: 1
 	f: 117	q: 2
 
 g:2
-size: 1
+size: 2
+	f: 109	q: 2
 	f: 117	q: 2
 
 g:3
-size: 0
+size: 1
+	f: 109	q: 2
 
 g:4
-size: 0
+size: 1
+	f: 111	q: 2
 
 g:5
-size: 0
+size: 1
+	f: 111	q: 2
 
 g:6
-size: 0
+size: 1
+	f: 113	q: 2
 
 g:7
-size: 0
+size: 1
+	f: 113	q: 2
 
 g:8
-size: 0
+size: 1
+	f: 115	q: 2
 
 g:9
-size: 0
+size: 1
+	f: 115	q: 2
 
 g:10
-size: 0
+size: 1
+	f: 117	q: 2
 
 g:11
-size: 0
+size: 1
+	f: 117	q: 2
 
 g:12
 size: 0

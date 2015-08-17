@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/tidybot-opt11-strips/fdist/p04_30.pddl
-predictionSS: 150503
-ss_timer: 4.14
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/tidybot-opt11-strips/fdist/p04_30.pddl
+predictionSS: 22774
+ss_timer: 4.2
 g:0
 size: 1
 	f: 25	q: 1
@@ -18,108 +18,96 @@ size: 3
 	f: 27	q: 7
 
 g:3
-size: 5
+size: 3
 	f: 24	q: 3
-	f: 25	q: 3
-	f: 26	q: 15
-	f: 27	q: 7
-	f: 29	q: 14
+	f: 26	q: 5
+	f: 27	q: 10
 
 g:4
-size: 5
-	f: 24	q: 3
-	f: 25	q: 9
-	f: 26	q: 46
-	f: 28	q: 15
-	f: 29	q: 57
+size: 3
+	f: 25	q: 3
+	f: 26	q: 21
+	f: 29	q: 20
 
 g:5
 size: 6
-	f: 24	q: 12
-	f: 25	q: 12
-	f: 26	q: 58
-	f: 27	q: 3
-	f: 28	q: 133
-	f: 29	q: 103
+	f: 24	q: 3
+	f: 25	q: 3
+	f: 26	q: 24
+	f: 27	q: 21
+	f: 28	q: 21
+	f: 29	q: 20
 
 g:6
 size: 5
-	f: 24	q: 12
-	f: 25	q: 24
-	f: 26	q: 39
-	f: 27	q: 76
-	f: 28	q: 355
+	f: 25	q: 3
+	f: 26	q: 3
+	f: 27	q: 36
+	f: 28	q: 110
+	f: 29	q: 21
 
 g:7
-size: 8
-	f: 23	q: 12
-	f: 24	q: 36
-	f: 25	q: 12
-	f: 26	q: 87
-	f: 27	q: 88
-	f: 28	q: 433
-	f: 29	q: 228
-	f: 30	q: 355
+size: 6
+	f: 24	q: 3
+	f: 26	q: 45
+	f: 27	q: 36
+	f: 28	q: 152
+	f: 29	q: 131
+	f: 30	q: 110
 
 g:8
-size: 8
-	f: 23	q: 48
-	f: 24	q: 12
-	f: 25	q: 48
-	f: 26	q: 36
-	f: 27	q: 147
-	f: 28	q: 315
-	f: 29	q: 1240
-	f: 30	q: 1449
+size: 6
+	f: 23	q: 3
+	f: 25	q: 3
+	f: 27	q: 48
+	f: 28	q: 45
+	f: 29	q: 305
+	f: 30	q: 545
 
 g:9
-size: 7
-	f: 24	q: 60
-	f: 25	q: 60
-	f: 26	q: 192
-	f: 27	q: 426
-	f: 28	q: 1555
-	f: 29	q: 1276
-	f: 30	q: 3319
+size: 5
+	f: 24	q: 3
+	f: 26	q: 57
+	f: 27	q: 6
+	f: 28	q: 446
+	f: 30	q: 1245
 
 g:10
-size: 6
-	f: 25	q: 372
-	f: 26	q: 120
-	f: 27	q: 618
-	f: 28	q: 312
-	f: 29	q: 1555
-	f: 30	q: 4874
+size: 5
+	f: 25	q: 63
+	f: 26	q: 3
+	f: 27	q: 63
+	f: 29	q: 503
+	f: 30	q: 446
 
 g:11
 size: 5
-	f: 26	q: 492
-	f: 27	q: 432
-	f: 28	q: 3349
-	f: 29	q: 1548
-	f: 30	q: 8296
+	f: 26	q: 66
+	f: 27	q: 3
+	f: 28	q: 695
+	f: 29	q: 126
+	f: 30	q: 1452
 
 g:12
-size: 4
-	f: 27	q: 4765
-	f: 28	q: 924
-	f: 29	q: 4897
-	f: 30	q: 4213
+size: 3
+	f: 27	q: 827
+	f: 28	q: 69
+	f: 29	q: 821
 
 g:13
 size: 3
-	f: 28	q: 5689
-	f: 29	q: 924
-	f: 30	q: 19564
+	f: 28	q: 896
+	f: 29	q: 69
+	f: 30	q: 2544
 
 g:14
 size: 2
-	f: 29	q: 30942
-	f: 30	q: 6613
+	f: 29	q: 4336
+	f: 30	q: 965
 
 g:15
 size: 1
-	f: 30	q: 37555
+	f: 30	q: 5301
 
 g:16
 size: 0

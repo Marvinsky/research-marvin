@@ -1,4 +1,4 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/nomystery-opt11-strips/fdist/p11_10.pddl
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/nomystery-opt11-strips/fdist/p11_10.pddl
 predictionSS: 7
 ss_timer: 0
 g:0

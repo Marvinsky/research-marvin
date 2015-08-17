@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/scanalyzer-opt11-strips/fdist/p03_26.pddl
-predictionSS: 4.3037e+07
-ss_timer: 0.54
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/scanalyzer-opt11-strips/fdist/p03_26.pddl
+predictionSS: 3.11735e+07
+ss_timer: 0.88
 g:0
 size: 1
 	f: 19	q: 1
@@ -15,71 +15,71 @@ g:2
 size: 5
 	f: 19	q: 1
 	f: 20	q: 8
-	f: 21	q: 28
-	f: 22	q: 51
+	f: 21	q: 40
+	f: 22	q: 39
 	f: 23	q: 12
 
 g:3
-size: 6
-	f: 20	q: 10
-	f: 21	q: 78
-	f: 22	q: 199
-	f: 23	q: 536
-	f: 24	q: 126
-	f: 25	q: 51
+size: 5
+	f: 20	q: 20
+	f: 21	q: 108
+	f: 22	q: 240
+	f: 23	q: 569
+	f: 24	q: 63
 
 g:4
-size: 6
-	f: 21	q: 88
-	f: 22	q: 637
-	f: 23	q: 2545
-	f: 24	q: 4603
-	f: 25	q: 2076
-	f: 26	q: 51
+size: 5
+	f: 21	q: 176
+	f: 22	q: 951
+	f: 23	q: 2837
+	f: 24	q: 5247
+	f: 25	q: 789
 
 g:5
 size: 5
-	f: 22	q: 818
-	f: 23	q: 1920
-	f: 24	q: 23997
-	f: 25	q: 52163
-	f: 26	q: 18975
+	f: 22	q: 563
+	f: 23	q: 11286
+	f: 24	q: 36671
+	f: 25	q: 34182
+	f: 26	q: 17298
 
 g:6
 size: 5
-	f: 22	q: 360
-	f: 23	q: 8260
-	f: 24	q: 33758
-	f: 25	q: 267043
-	f: 26	q: 485311
+	f: 22	q: 68
+	f: 23	q: 4625
+	f: 24	q: 122089
+	f: 25	q: 282913
+	f: 26	q: 460268
 
 g:7
-size: 4
-	f: 23	q: 720
-	f: 24	q: 31640
-	f: 25	q: 900482
-	f: 26	q: 3.283e+06
+size: 5
+	f: 22	q: 68
+	f: 23	q: 1712
+	f: 24	q: 10173
+	f: 25	q: 1.19068e+06
+	f: 26	q: 3.35703e+06
 
 g:8
-size: 3
-	f: 24	q: 85180
-	f: 25	q: 1.47156e+06
-	f: 26	q: 1.33821e+07
+size: 4
+	f: 23	q: 68
+	f: 24	q: 9212
+	f: 25	q: 55960
+	f: 26	q: 1.26059e+07
 
 g:9
 size: 3
-	f: 24	q: 90932
-	f: 25	q: 529056
-	f: 26	q: 6.8914e+06
+	f: 24	q: 14860
+	f: 25	q: 137016
+	f: 26	q: 9.02295e+06
 
 g:10
 size: 2
-	f: 25	q: 545592
-	f: 26	q: 9.71368e+06
+	f: 25	q: 151876
+	f: 26	q: 1.6656e+06
 
 g:11
 size: 1
-	f: 26	q: 5.20791e+06
+	f: 26	q: 1.96935e+06
 
 g:12
 size: 0

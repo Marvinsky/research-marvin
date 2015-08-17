@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/visitall-opt11-strips/fdist/problem06-half_21.pddl
-predictionSS: 2352
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/visitall-opt11-strips/fdist/problem06-half_21.pddl
+predictionSS: 2841
 ss_timer: 0.02
 g:0
 size: 1
@@ -18,38 +18,44 @@ size: 3
 	f: 20	q: 1
 
 g:3
-size: 3
-	f: 19	q: 32
-	f: 20	q: 9
-	f: 21	q: 16
+size: 4
+	f: 18	q: 16
+	f: 19	q: 16
+	f: 20	q: 31
+	f: 21	q: 1
 
 g:4
-size: 2
-	f: 20	q: 137
-	f: 21	q: 73
+size: 4
+	f: 18	q: 32
+	f: 19	q: 16
+	f: 20	q: 96
+	f: 21	q: 49
 
 g:5
-size: 2
-	f: 20	q: 137
-	f: 21	q: 420
+size: 4
+	f: 17	q: 32
+	f: 19	q: 96
+	f: 20	q: 64
+	f: 21	q: 193
 
 g:6
-size: 1
-	f: 19	q: 137
+size: 3
+	f: 19	q: 32
+	f: 20	q: 256
+	f: 21	q: 289
 
 g:7
 size: 2
-	f: 20	q: 137
-	f: 21	q: 137
+	f: 19	q: 320
+	f: 21	q: 321
 
 g:8
-size: 2
-	f: 20	q: 137
-	f: 21	q: 411
+size: 1
+	f: 21	q: 320
 
 g:9
 size: 1
-	f: 21	q: 548
+	f: 21	q: 640
 
 g:10
 size: 0

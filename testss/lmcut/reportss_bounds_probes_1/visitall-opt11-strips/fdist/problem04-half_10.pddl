@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/visitall-opt11-strips/fdist/problem04-half_10.pddl
-predictionSS: 10
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/visitall-opt11-strips/fdist/problem04-half_10.pddl
+predictionSS: 7
 ss_timer: 0
 g:0
 size: 1
@@ -12,11 +12,11 @@ size: 2
 
 g:2
 size: 1
-	f: 10	q: 3
+	f: 10	q: 1
 
 g:3
 size: 1
-	f: 10	q: 3
+	f: 10	q: 2
 
 g:4
 size: 0

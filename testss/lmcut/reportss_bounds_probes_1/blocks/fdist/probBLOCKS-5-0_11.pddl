@@ -1,4 +1,4 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/blocks/fdist/probBLOCKS-5-0_11.pddl
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/blocks/fdist/probBLOCKS-5-0_11.pddl
 predictionSS: 72
 ss_timer: 0
 g:0
@@ -18,8 +18,8 @@ size: 2
 g:3
 size: 3
 	f: 9	q: 2
-	f: 10	q: 5
-	f: 11	q: 5
+	f: 10	q: 2
+	f: 11	q: 8
 
 g:4
 size: 2

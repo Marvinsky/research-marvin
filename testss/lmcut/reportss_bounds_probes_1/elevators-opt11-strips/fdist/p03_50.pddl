@@ -1,110 +1,90 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/elevators-opt11-strips/fdist/p03_50.pddl
-predictionSS: 3714
-ss_timer: 19.82
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/elevators-opt11-strips/fdist/p03_50.pddl
+predictionSS: 993
+ss_timer: 15.1
 g:0
 size: 1
 	f: 30	q: 1
 
 g:1
-size: 7
-	f: 35	q: 4
+size: 8
+	f: 35	q: 1
 	f: 36	q: 1
 	f: 37	q: 1
+	f: 39	q: 3
 	f: 40	q: 1
 	f: 42	q: 2
 	f: 44	q: 3
-	f: 49	q: 3
+	f: 48	q: 3
 
 g:2
-size: 10
-	f: 40	q: 6
-	f: 41	q: 6
-	f: 42	q: 12
-	f: 44	q: 10
+size: 7
+	f: 40	q: 10
+	f: 42	q: 30
+	f: 43	q: 3
+	f: 44	q: 17
 	f: 45	q: 2
-	f: 46	q: 24
-	f: 47	q: 15
-	f: 48	q: 17
-	f: 49	q: 18
-	f: 50	q: 3
+	f: 47	q: 27
+	f: 50	q: 9
 
 g:3
-size: 8
-	f: 34	q: 3
+size: 5
 	f: 39	q: 1
-	f: 40	q: 6
-	f: 44	q: 16
-	f: 46	q: 11
-	f: 47	q: 12
-	f: 49	q: 108
-	f: 50	q: 11
+	f: 47	q: 134
+	f: 48	q: 39
+	f: 49	q: 53
+	f: 50	q: 10
 
 g:4
 size: 7
-	f: 41	q: 25
-	f: 42	q: 9
-	f: 44	q: 71
-	f: 45	q: 8
-	f: 47	q: 20
-	f: 49	q: 99
-	f: 50	q: 130
+	f: 41	q: 23
+	f: 44	q: 21
+	f: 46	q: 2
+	f: 47	q: 44
+	f: 48	q: 75
+	f: 49	q: 67
+	f: 50	q: 22
 
 g:5
-size: 7
-	f: 44	q: 10
-	f: 45	q: 130
-	f: 46	q: 14
-	f: 47	q: 98
-	f: 48	q: 17
-	f: 49	q: 293
-	f: 50	q: 58
+size: 4
+	f: 47	q: 139
+	f: 48	q: 18
+	f: 49	q: 33
+	f: 50	q: 36
 
 g:6
-size: 7
-	f: 42	q: 26
-	f: 45	q: 88
-	f: 46	q: 14
-	f: 47	q: 82
-	f: 48	q: 228
-	f: 49	q: 78
-	f: 50	q: 118
+size: 3
+	f: 45	q: 3
+	f: 49	q: 10
+	f: 50	q: 18
 
 g:7
-size: 6
-	f: 45	q: 44
-	f: 46	q: 8
-	f: 47	q: 80
-	f: 48	q: 38
-	f: 49	q: 617
-	f: 50	q: 60
+size: 3
+	f: 46	q: 2
+	f: 49	q: 17
+	f: 50	q: 2
 
 g:8
-size: 5
-	f: 45	q: 16
-	f: 46	q: 90
-	f: 48	q: 60
-	f: 49	q: 94
-	f: 50	q: 108
+size: 1
+	f: 50	q: 36
 
 g:9
-size: 4
-	f: 45	q: 44
-	f: 48	q: 128
-	f: 49	q: 106
-	f: 50	q: 56
+size: 2
+	f: 49	q: 4
+	f: 50	q: 10
 
 g:10
-size: 3
-	f: 45	q: 28
-	f: 48	q: 140
-	f: 49	q: 28
+size: 2
+	f: 49	q: 8
+	f: 50	q: 24
 
 g:11
-size: 1
-	f: 48	q: 56
+size: 2
+	f: 46	q: 4
+	f: 50	q: 16
 
 g:12
-size: 0
+size: 1
+	f: 50	q: 8
 
 g:13
 size: 0

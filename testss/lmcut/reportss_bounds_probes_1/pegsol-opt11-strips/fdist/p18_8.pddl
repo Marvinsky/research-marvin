@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/pegsol-opt11-strips/fdist/p18_8.pddl
-predictionSS: 3.37425e+07
-ss_timer: 0.26
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/pegsol-opt11-strips/fdist/p18_8.pddl
+predictionSS: 2.91422e+06
+ss_timer: 0.34
 g:0
 size: 1
 	f: 5	q: 1
@@ -16,43 +16,42 @@ g:2
 size: 0
 
 g:3
-size: 4
-	f: 4	q: 66
-	f: 5	q: 56
-	f: 6	q: 12
-	f: 8	q: 8
+size: 5
+	f: 4	q: 28
+	f: 5	q: 20
+	f: 6	q: 26
+	f: 7	q: 42
+	f: 8	q: 22
 
 g:4
-size: 5
-	f: 4	q: 78
-	f: 5	q: 296
-	f: 6	q: 116
-	f: 7	q: 134
-	f: 8	q: 30
+size: 4
+	f: 4	q: 26
+	f: 5	q: 94
+	f: 6	q: 66
+	f: 7	q: 34
 
 g:5
-size: 4
-	f: 5	q: 524
-	f: 6	q: 1070
-	f: 7	q: 756
-	f: 8	q: 16
+size: 3
+	f: 5	q: 1078
+	f: 6	q: 568
+	f: 8	q: 172
 
 g:6
 size: 4
-	f: 5	q: 372
-	f: 6	q: 2044
-	f: 7	q: 3994
-	f: 8	q: 1616
+	f: 5	q: 636
+	f: 6	q: 2742
+	f: 7	q: 1702
+	f: 8	q: 1374
 
 g:7
 size: 3
-	f: 6	q: 5880
-	f: 7	q: 15722
-	f: 8	q: 21684
+	f: 6	q: 13290
+	f: 7	q: 7704
+	f: 8	q: 2732
 
 g:8
 size: 3
-	f: 5	q: 4124
-	f: 7	q: 77900
-	f: 8	q: 1000
+	f: 5	q: 2492
+	f: 7	q: 20632
+	f: 8	q: 34286
 

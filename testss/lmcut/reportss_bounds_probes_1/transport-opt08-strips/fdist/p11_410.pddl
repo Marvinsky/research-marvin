@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/transport-opt08-strips/fdist/p11_410.pddl
-predictionSS: 5
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/transport-opt08-strips/fdist/p11_410.pddl
+predictionSS: 125
 ss_timer: 0
 g:0
 size: 1
@@ -7,19 +7,23 @@ size: 1
 
 g:1
 size: 1
-	f: 410	q: 4
+	f: 274	q: 4
 
 g:2
-size: 0
+size: 1
+	f: 304	q: 8
 
 g:3
-size: 0
+size: 1
+	f: 334	q: 16
 
 g:4
-size: 0
+size: 1
+	f: 364	q: 32
 
 g:5
-size: 0
+size: 1
+	f: 394	q: 64
 
 g:6
 size: 0

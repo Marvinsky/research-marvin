@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/parking-opt11-strips/fdist/pfile03-011_12.pddl
-predictionSS: 1262
-ss_timer: 1.34
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/parking-opt11-strips/fdist/pfile03-011_12.pddl
+predictionSS: 1072
+ss_timer: 2.28
 g:0
 size: 1
 	f: 9	q: 1
@@ -13,26 +13,26 @@ size: 2
 g:2
 size: 3
 	f: 10	q: 3
-	f: 11	q: 80
-	f: 12	q: 55
+	f: 11	q: 69
+	f: 12	q: 66
 
 g:3
-size: 3
-	f: 10	q: 3
-	f: 11	q: 113
-	f: 12	q: 245
+size: 2
+	f: 11	q: 24
+	f: 12	q: 561
 
 g:4
 size: 2
-	f: 11	q: 116
-	f: 12	q: 259
+	f: 11	q: 24
+	f: 12	q: 264
 
 g:5
 size: 1
-	f: 12	q: 375
+	f: 12	q: 24
 
 g:6
-size: 0
+size: 1
+	f: 12	q: 24
 
 g:7
 size: 0

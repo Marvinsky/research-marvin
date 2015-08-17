@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/tidybot-opt11-strips/fdist/p10_27.pddl
-predictionSS: 5860
-ss_timer: 8.8
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/tidybot-opt11-strips/fdist/p10_27.pddl
+predictionSS: 4238
+ss_timer: 16.28
 g:0
 size: 1
 	f: 22	q: 1
@@ -26,57 +26,66 @@ size: 5
 	f: 26	q: 10
 
 g:4
-size: 4
+size: 5
+	f: 22	q: 2
 	f: 23	q: 3
 	f: 24	q: 13
 	f: 26	q: 18
 	f: 27	q: 6
 
 g:5
-size: 5
+size: 6
+	f: 22	q: 2
 	f: 23	q: 6
-	f: 24	q: 32
-	f: 25	q: 6
+	f: 24	q: 36
+	f: 25	q: 8
 	f: 26	q: 13
 	f: 27	q: 37
 
 g:6
 size: 4
-	f: 23	q: 6
-	f: 24	q: 32
-	f: 25	q: 50
-	f: 26	q: 158
+	f: 23	q: 2
+	f: 24	q: 6
+	f: 25	q: 68
+	f: 26	q: 166
 
 g:7
 size: 4
-	f: 24	q: 32
-	f: 25	q: 24
-	f: 26	q: 430
-	f: 27	q: 82
+	f: 24	q: 8
+	f: 25	q: 142
+	f: 26	q: 314
+	f: 27	q: 6
 
 g:8
 size: 3
-	f: 25	q: 56
-	f: 26	q: 526
-	f: 27	q: 560
+	f: 25	q: 8
+	f: 26	q: 36
+	f: 27	q: 882
 
 g:9
-size: 2
-	f: 26	q: 582
-	f: 27	q: 1288
+size: 3
+	f: 23	q: 36
+	f: 26	q: 80
+	f: 27	q: 906
 
 g:10
-size: 1
-	f: 27	q: 1870
+size: 3
+	f: 25	q: 36
+	f: 26	q: 36
+	f: 27	q: 36
 
 g:11
-size: 0
+size: 2
+	f: 25	q: 144
+	f: 27	q: 180
 
 g:12
-size: 0
+size: 1
+	f: 27	q: 324
 
 g:13
-size: 0
+size: 1
+	f: 27	q: 648
 
 g:14
 size: 0

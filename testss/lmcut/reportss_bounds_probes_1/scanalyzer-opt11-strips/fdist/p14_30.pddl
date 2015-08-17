@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/scanalyzer-opt11-strips/fdist/p14_30.pddl
-predictionSS: 218163
-ss_timer: 14.48
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/scanalyzer-opt11-strips/fdist/p14_30.pddl
+predictionSS: 388931
+ss_timer: 25.94
 g:0
 size: 1
 	f: 26	q: 1
@@ -32,38 +32,42 @@ size: 5
 	f: 30	q: 256
 
 g:5
-size: 4
+size: 5
+	f: 26	q: 32
 	f: 27	q: 320
-	f: 28	q: 1312
-	f: 29	q: 1792
-	f: 30	q: 2304
+	f: 28	q: 1280
+	f: 29	q: 2176
+	f: 30	q: 2432
 
 g:6
 size: 5
-	f: 26	q: 32
-	f: 27	q: 416
-	f: 28	q: 3872
-	f: 29	q: 9312
-	f: 30	q: 11008
+	f: 26	q: 48
+	f: 27	q: 592
+	f: 28	q: 3360
+	f: 29	q: 8224
+	f: 30	q: 13696
 
 g:7
 size: 4
-	f: 27	q: 160
-	f: 28	q: 800
-	f: 29	q: 22112
-	f: 30	q: 48864
+	f: 27	q: 528
+	f: 28	q: 5424
+	f: 29	q: 15712
+	f: 30	q: 68432
 
 g:8
-size: 2
-	f: 29	q: 1920
-	f: 30	q: 104704
+size: 3
+	f: 28	q: 4256
+	f: 29	q: 23776
+	f: 30	q: 116544
 
 g:9
-size: 1
-	f: 30	q: 7680
+size: 2
+	f: 29	q: 7232
+	f: 30	q: 103104
 
 g:10
-size: 0
+size: 1
+	f: 30	q: 10208
 
 g:11
 size: 0

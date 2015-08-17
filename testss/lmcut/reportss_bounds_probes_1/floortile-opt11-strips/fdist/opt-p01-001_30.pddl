@@ -1,37 +1,37 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/floortile-opt11-strips/fdist/opt-p01-001_30.pddl
-predictionSS: 162
-ss_timer: 0.04
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/floortile-opt11-strips/fdist/opt-p01-001_30.pddl
+predictionSS: 135
+ss_timer: 0.06
 g:0
 size: 1
 	f: 28	q: 1
 
 g:1
-size: 2
+size: 3
+	f: 28	q: 3
 	f: 29	q: 2
-	f: 30	q: 6
+	f: 30	q: 3
 
 g:2
 size: 2
 	f: 29	q: 4
-	f: 30	q: 21
+	f: 30	q: 33
 
 g:3
-size: 1
-	f: 30	q: 56
+size: 2
+	f: 29	q: 4
+	f: 30	q: 43
 
 g:4
-size: 2
-	f: 29	q: 8
-	f: 30	q: 40
+size: 1
+	f: 30	q: 18
 
 g:5
-size: 2
-	f: 29	q: 8
-	f: 30	q: 8
+size: 1
+	f: 29	q: 12
 
 g:6
 size: 1
-	f: 30	q: 8
+	f: 30	q: 12
 
 g:7
 size: 0

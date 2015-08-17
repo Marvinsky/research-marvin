@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/tidybot-opt11-strips/fdist/p06_31.pddl
-predictionSS: 2475
-ss_timer: 5.86
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/tidybot-opt11-strips/fdist/p06_31.pddl
+predictionSS: 11973
+ss_timer: 6.76
 g:0
 size: 1
 	f: 27	q: 1
@@ -35,8 +35,8 @@ size: 5
 	f: 27	q: 1
 	f: 28	q: 1
 	f: 29	q: 9
-	f: 30	q: 19
-	f: 31	q: 15
+	f: 30	q: 26
+	f: 31	q: 8
 
 g:6
 size: 5
@@ -72,41 +72,50 @@ size: 4
 
 g:10
 size: 4
-	f: 28	q: 185
-	f: 29	q: 20
-	f: 30	q: 43
-	f: 31	q: 208
+	f: 28	q: 208
+	f: 29	q: 83
+	f: 30	q: 40
+	f: 31	q: 148
 
 g:11
 size: 2
-	f: 30	q: 248
-	f: 31	q: 456
+	f: 30	q: 331
+	f: 31	q: 331
 
 g:12
 size: 2
-	f: 30	q: 496
-	f: 31	q: 248
+	f: 30	q: 993
+	f: 31	q: 331
 
 g:13
-size: 0
+size: 2
+	f: 30	q: 993
+	f: 31	q: 993
 
 g:14
-size: 0
+size: 1
+	f: 31	q: 993
 
 g:15
-size: 0
+size: 1
+	f: 30	q: 993
 
 g:16
-size: 0
+size: 1
+	f: 30	q: 993
 
 g:17
-size: 0
+size: 1
+	f: 31	q: 993
 
 g:18
-size: 0
+size: 1
+	f: 30	q: 993
 
 g:19
-size: 0
+size: 2
+	f: 30	q: 993
+	f: 31	q: 993
 
 g:20
 size: 0

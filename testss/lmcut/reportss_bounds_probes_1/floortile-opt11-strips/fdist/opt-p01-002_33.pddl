@@ -1,113 +1,100 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/floortile-opt11-strips/fdist/opt-p01-002_33.pddl
-predictionSS: 4.89229e+07
-ss_timer: 0.28
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/floortile-opt11-strips/fdist/opt-p01-002_33.pddl
+predictionSS: 1.59269e+06
+ss_timer: 0.34
 g:0
 size: 1
 	f: 24	q: 1
 
 g:1
 size: 4
-	f: 25	q: 6
-	f: 26	q: 1
+	f: 25	q: 3
+	f: 26	q: 4
 	f: 27	q: 2
 	f: 32	q: 1
 
 g:2
-size: 5
-	f: 24	q: 3
-	f: 25	q: 3
-	f: 26	q: 25
-	f: 32	q: 28
+size: 4
+	f: 26	q: 34
+	f: 27	q: 5
+	f: 28	q: 23
 	f: 33	q: 10
 
 g:3
-size: 5
-	f: 25	q: 9
-	f: 26	q: 3
-	f: 28	q: 70
-	f: 29	q: 143
-	f: 33	q: 115
+size: 4
+	f: 26	q: 12
+	f: 27	q: 149
+	f: 29	q: 220
+	f: 30	q: 124
 
 g:4
-size: 6
-	f: 24	q: 9
-	f: 26	q: 12
-	f: 27	q: 58
-	f: 28	q: 434
-	f: 29	q: 64
-	f: 30	q: 180
+size: 5
+	f: 27	q: 537
+	f: 28	q: 896
+	f: 30	q: 278
+	f: 31	q: 1360
+	f: 32	q: 184
 
 g:5
 size: 5
-	f: 25	q: 9
-	f: 26	q: 12
-	f: 29	q: 3896
-	f: 30	q: 504
-	f: 31	q: 784
+	f: 27	q: 561
+	f: 30	q: 3986
+	f: 31	q: 2030
+	f: 32	q: 12681
+	f: 33	q: 644
 
 g:6
-size: 6
-	f: 28	q: 1128
-	f: 29	q: 8703
-	f: 30	q: 11599
-	f: 31	q: 4440
-	f: 32	q: 5790
-	f: 33	q: 784
+size: 5
+	f: 26	q: 561
+	f: 28	q: 561
+	f: 30	q: 2555
+	f: 31	q: 1994
+	f: 33	q: 60199
 
 g:7
-size: 6
-	f: 27	q: 1119
-	f: 29	q: 9070
-	f: 30	q: 47849
-	f: 31	q: 6235
-	f: 32	q: 84455
-	f: 33	q: 53244
+size: 5
+	f: 27	q: 561
+	f: 28	q: 561
+	f: 29	q: 4799
+	f: 32	q: 21760
+	f: 33	q: 31063
 
 g:8
-size: 5
-	f: 28	q: 11308
-	f: 30	q: 21863
-	f: 31	q: 205846
-	f: 32	q: 50775
-	f: 33	q: 230205
+size: 4
+	f: 28	q: 5921
+	f: 30	q: 7604
+	f: 32	q: 23806
+	f: 33	q: 9348
 
 g:9
-size: 6
-	f: 28	q: 11308
-	f: 29	q: 11308
-	f: 30	q: 32052
-	f: 31	q: 413855
-	f: 32	q: 354770
-	f: 33	q: 275590
+size: 5
+	f: 29	q: 5921
+	f: 30	q: 7043
+	f: 31	q: 41197
+	f: 32	q: 5921
+	f: 33	q: 12964
 
 g:10
-size: 4
-	f: 29	q: 11308
-	f: 30	q: 895558
-	f: 32	q: 1.3509e+06
-	f: 33	q: 889002
+size: 3
+	f: 30	q: 58960
+	f: 32	q: 73046
+	f: 33	q: 74168
 
 g:11
-size: 4
-	f: 30	q: 1.34334e+06
-	f: 31	q: 1.85522e+06
-	f: 32	q: 436471
-	f: 33	q: 5.32565e+06
+size: 3
+	f: 31	q: 58960
+	f: 32	q: 67125
+	f: 33	q: 252170
 
 g:12
-size: 3
-	f: 30	q: 436471
-	f: 31	q: 1.77981e+06
-	f: 32	q: 1.35026e+07
+size: 1
+	f: 32	q: 370090
 
 g:13
-size: 2
-	f: 32	q: 4.86903e+06
-	f: 33	q: 1.03719e+07
+size: 1
+	f: 33	q: 370090
 
 g:14
-size: 1
-	f: 33	q: 3.99609e+06
+size: 0
 
 g:15
 size: 0

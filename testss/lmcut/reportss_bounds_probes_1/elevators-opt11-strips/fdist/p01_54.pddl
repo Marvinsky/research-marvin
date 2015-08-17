@@ -1,65 +1,88 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/elevators-opt11-strips/fdist/p01_54.pddl
-predictionSS: 1310
-ss_timer: 0.76
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/elevators-opt11-strips/fdist/p01_54.pddl
+predictionSS: 6234
+ss_timer: 14.18
 g:0
 size: 1
 	f: 39	q: 1
 
 g:1
-size: 5
+size: 6
 	f: 38	q: 1
 	f: 41	q: 1
-	f: 42	q: 2
-	f: 43	q: 7
+	f: 43	q: 4
+	f: 46	q: 3
+	f: 47	q: 2
 	f: 49	q: 3
 
 g:2
 size: 9
-	f: 41	q: 4
-	f: 43	q: 14
-	f: 44	q: 10
-	f: 45	q: 10
-	f: 47	q: 27
-	f: 48	q: 29
-	f: 50	q: 21
-	f: 51	q: 22
-	f: 54	q: 18
+	f: 41	q: 1
+	f: 44	q: 15
+	f: 45	q: 1
+	f: 48	q: 22
+	f: 50	q: 43
+	f: 51	q: 9
+	f: 52	q: 21
+	f: 53	q: 6
+	f: 54	q: 19
 
 g:3
-size: 6
-	f: 46	q: 40
-	f: 49	q: 91
-	f: 50	q: 253
-	f: 51	q: 54
-	f: 53	q: 147
-	f: 54	q: 211
+size: 4
+	f: 48	q: 35
+	f: 52	q: 205
+	f: 53	q: 98
+	f: 54	q: 195
 
 g:4
-size: 2
-	f: 53	q: 41
-	f: 54	q: 262
+size: 6
+	f: 46	q: 25
+	f: 47	q: 4
+	f: 48	q: 76
+	f: 49	q: 99
+	f: 52	q: 171
+	f: 54	q: 168
 
 g:5
-size: 1
-	f: 54	q: 41
+size: 5
+	f: 50	q: 306
+	f: 51	q: 116
+	f: 52	q: 266
+	f: 53	q: 262
+	f: 54	q: 225
 
 g:6
-size: 0
+size: 5
+	f: 50	q: 249
+	f: 51	q: 91
+	f: 52	q: 233
+	f: 53	q: 223
+	f: 54	q: 274
 
 g:7
-size: 0
+size: 4
+	f: 51	q: 116
+	f: 52	q: 248
+	f: 53	q: 681
+	f: 54	q: 710
 
 g:8
-size: 0
+size: 3
+	f: 51	q: 194
+	f: 52	q: 88
+	f: 54	q: 416
 
 g:9
-size: 0
+size: 2
+	f: 52	q: 104
+	f: 54	q: 156
 
 g:10
-size: 0
+size: 1
+	f: 52	q: 24
 
 g:11
-size: 0
+size: 1
+	f: 52	q: 24
 
 g:12
 size: 0

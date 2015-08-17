@@ -1,131 +1,124 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/elevators-opt08-strips/fdist/p12_54.pddl
-predictionSS: 53769
-ss_timer: 30.92
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/elevators-opt08-strips/fdist/p12_54.pddl
+predictionSS: 5565
+ss_timer: 28.94
 g:0
 size: 1
 	f: 30	q: 1
 
 g:1
-size: 7
-	f: 35	q: 4
+size: 8
+	f: 35	q: 1
 	f: 36	q: 1
 	f: 37	q: 1
 	f: 40	q: 1
 	f: 42	q: 3
 	f: 44	q: 3
 	f: 47	q: 3
+	f: 48	q: 3
 
 g:2
-size: 11
-	f: 41	q: 7
-	f: 42	q: 13
-	f: 44	q: 3
-	f: 45	q: 29
-	f: 47	q: 32
-	f: 49	q: 41
+size: 9
+	f: 43	q: 5
+	f: 44	q: 24
+	f: 45	q: 2
+	f: 46	q: 29
+	f: 49	q: 3
 	f: 50	q: 3
-	f: 51	q: 16
-	f: 52	q: 10
-	f: 53	q: 23
-	f: 54	q: 28
+	f: 52	q: 40
+	f: 53	q: 35
+	f: 54	q: 19
 
 g:3
-size: 9
-	f: 34	q: 3
+size: 8
 	f: 39	q: 1
-	f: 46	q: 104
-	f: 47	q: 19
-	f: 49	q: 20
-	f: 51	q: 97
-	f: 52	q: 75
-	f: 53	q: 348
-	f: 54	q: 135
+	f: 48	q: 5
+	f: 49	q: 160
+	f: 50	q: 62
+	f: 51	q: 42
+	f: 52	q: 38
+	f: 53	q: 237
+	f: 54	q: 98
 
 g:4
-size: 10
-	f: 41	q: 25
-	f: 42	q: 3
-	f: 44	q: 24
-	f: 47	q: 168
-	f: 48	q: 39
-	f: 49	q: 370
-	f: 51	q: 5
-	f: 52	q: 14
-	f: 53	q: 356
-	f: 54	q: 611
+size: 7
+	f: 46	q: 6
+	f: 48	q: 8
+	f: 49	q: 28
+	f: 51	q: 44
+	f: 52	q: 309
+	f: 53	q: 38
+	f: 54	q: 268
 
 g:5
-size: 8
-	f: 46	q: 372
-	f: 47	q: 13
-	f: 48	q: 57
-	f: 49	q: 31
-	f: 51	q: 695
-	f: 52	q: 199
-	f: 53	q: 967
-	f: 54	q: 864
+size: 5
+	f: 48	q: 158
+	f: 50	q: 88
+	f: 51	q: 165
+	f: 53	q: 99
+	f: 54	q: 469
 
 g:6
-size: 5
-	f: 42	q: 583
-	f: 51	q: 575
-	f: 52	q: 267
-	f: 53	q: 671
-	f: 54	q: 2259
+size: 4
+	f: 46	q: 22
+	f: 52	q: 32
+	f: 53	q: 279
+	f: 54	q: 524
 
 g:7
-size: 5
-	f: 46	q: 1460
-	f: 51	q: 187
-	f: 52	q: 702
-	f: 53	q: 1506
-	f: 54	q: 1725
+size: 6
+	f: 46	q: 2
+	f: 49	q: 142
+	f: 50	q: 28
+	f: 51	q: 180
+	f: 52	q: 51
+	f: 54	q: 85
 
 g:8
 size: 3
-	f: 50	q: 12
-	f: 52	q: 1642
-	f: 54	q: 7891
+	f: 52	q: 45
+	f: 53	q: 487
+	f: 54	q: 19
 
 g:9
 size: 3
-	f: 52	q: 3703
-	f: 53	q: 66
-	f: 54	q: 7713
+	f: 49	q: 4
+	f: 53	q: 110
+	f: 54	q: 6
 
 g:10
-size: 5
-	f: 49	q: 572
-	f: 50	q: 28
-	f: 52	q: 48
-	f: 53	q: 3441
-	f: 54	q: 6032
+size: 6
+	f: 49	q: 8
+	f: 50	q: 4
+	f: 51	q: 28
+	f: 52	q: 39
+	f: 53	q: 8
+	f: 54	q: 10
 
 g:11
 size: 4
-	f: 49	q: 338
-	f: 52	q: 12
-	f: 53	q: 256
-	f: 54	q: 3140
+	f: 46	q: 4
+	f: 51	q: 12
+	f: 53	q: 8
+	f: 54	q: 132
 
 g:12
-size: 1
-	f: 53	q: 459
+size: 2
+	f: 53	q: 8
+	f: 54	q: 260
 
 g:13
 size: 2
-	f: 53	q: 336
-	f: 54	q: 464
+	f: 53	q: 16
+	f: 54	q: 316
 
 g:14
 size: 2
-	f: 53	q: 144
-	f: 54	q: 856
+	f: 53	q: 32
+	f: 54	q: 88
 
 g:15
-size: 2
-	f: 53	q: 24
-	f: 54	q: 820
+size: 1
+	f: 54	q: 76
 
 g:16
 size: 0

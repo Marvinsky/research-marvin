@@ -1,5 +1,5 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/floortile-opt11-strips/fdist/opt-p01-001_29.pddl
-predictionSS: 35
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/floortile-opt11-strips/fdist/opt-p01-001_29.pddl
+predictionSS: 21
 ss_timer: 0.04
 g:0
 size: 1
@@ -7,17 +7,16 @@ size: 1
 
 g:1
 size: 2
-	f: 28	q: 4
-	f: 29	q: 1
+	f: 28	q: 2
+	f: 29	q: 3
 
 g:2
-size: 2
-	f: 28	q: 4
-	f: 29	q: 9
+size: 1
+	f: 29	q: 7
 
 g:3
 size: 1
-	f: 29	q: 12
+	f: 29	q: 4
 
 g:4
 size: 1

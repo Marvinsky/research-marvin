@@ -1,105 +1,106 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/elevators-opt08-strips/fdist/p11_56.pddl
-predictionSS: 11762
-ss_timer: 9.72
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/elevators-opt08-strips/fdist/p11_56.pddl
+predictionSS: 13833
+ss_timer: 9.34
 g:0
 size: 1
 	f: 39	q: 1
 
 g:1
-size: 6
+size: 5
 	f: 38	q: 1
 	f: 41	q: 1
 	f: 43	q: 4
-	f: 46	q: 5
-	f: 47	q: 2
-	f: 49	q: 1
+	f: 47	q: 5
+	f: 49	q: 3
 
 g:2
-size: 10
+size: 11
 	f: 41	q: 4
-	f: 43	q: 4
-	f: 44	q: 22
-	f: 47	q: 8
-	f: 48	q: 41
-	f: 49	q: 25
-	f: 50	q: 12
-	f: 53	q: 11
-	f: 54	q: 40
-	f: 56	q: 6
+	f: 44	q: 18
+	f: 45	q: 4
+	f: 48	q: 12
+	f: 50	q: 16
+	f: 51	q: 39
+	f: 52	q: 19
+	f: 53	q: 23
+	f: 54	q: 7
+	f: 55	q: 9
+	f: 56	q: 4
 
 g:3
 size: 6
-	f: 50	q: 94
-	f: 52	q: 300
-	f: 53	q: 56
-	f: 54	q: 466
-	f: 55	q: 158
-	f: 56	q: 56
+	f: 50	q: 330
+	f: 51	q: 6
+	f: 52	q: 99
+	f: 53	q: 136
+	f: 54	q: 140
+	f: 55	q: 80
 
 g:4
-size: 5
+size: 7
 	f: 47	q: 4
-	f: 51	q: 11
-	f: 54	q: 108
-	f: 55	q: 739
-	f: 56	q: 990
+	f: 50	q: 162
+	f: 51	q: 23
+	f: 52	q: 691
+	f: 53	q: 157
+	f: 54	q: 43
+	f: 55	q: 31
 
 g:5
 size: 6
-	f: 51	q: 158
-	f: 52	q: 145
-	f: 53	q: 158
-	f: 54	q: 1094
-	f: 55	q: 402
-	f: 56	q: 832
+	f: 50	q: 23
+	f: 52	q: 67
+	f: 53	q: 149
+	f: 54	q: 554
+	f: 55	q: 280
+	f: 56	q: 490
 
 g:6
-size: 3
-	f: 52	q: 220
-	f: 55	q: 788
-	f: 56	q: 1166
+size: 5
+	f: 50	q: 46
+	f: 52	q: 82
+	f: 53	q: 198
+	f: 55	q: 285
+	f: 56	q: 1590
 
 g:7
-size: 6
-	f: 51	q: 50
-	f: 52	q: 150
-	f: 53	q: 50
-	f: 54	q: 622
-	f: 55	q: 367
-	f: 56	q: 134
+size: 5
+	f: 50	q: 152
+	f: 51	q: 100
+	f: 52	q: 234
+	f: 54	q: 734
+	f: 56	q: 1788
 
 g:8
-size: 4
-	f: 53	q: 46
-	f: 54	q: 460
-	f: 55	q: 22
-	f: 56	q: 114
+size: 5
+	f: 50	q: 46
+	f: 52	q: 560
+	f: 54	q: 576
+	f: 55	q: 492
+	f: 56	q: 520
 
 g:9
 size: 4
-	f: 52	q: 152
-	f: 54	q: 48
-	f: 55	q: 92
-	f: 56	q: 154
+	f: 52	q: 32
+	f: 54	q: 80
+	f: 55	q: 161
+	f: 56	q: 742
 
 g:10
 size: 2
-	f: 55	q: 92
-	f: 56	q: 308
+	f: 55	q: 216
+	f: 56	q: 160
 
 g:11
-size: 2
-	f: 54	q: 596
-	f: 55	q: 32
+size: 1
+	f: 56	q: 48
 
 g:12
-size: 2
-	f: 55	q: 64
-	f: 56	q: 44
+size: 0
 
 g:13
 size: 1
-	f: 55	q: 32
+	f: 56	q: 1356
 
 g:14
 size: 0

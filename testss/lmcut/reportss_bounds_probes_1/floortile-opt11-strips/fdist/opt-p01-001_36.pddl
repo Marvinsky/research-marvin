@@ -1,82 +1,99 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/floortile-opt11-strips/fdist/opt-p01-001_36.pddl
-predictionSS: 205296
-ss_timer: 0.3
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/floortile-opt11-strips/fdist/opt-p01-001_36.pddl
+predictionSS: 139032
+ss_timer: 0.44
 g:0
 size: 1
 	f: 28	q: 1
 
 g:1
-size: 4
+size: 3
 	f: 29	q: 2
-	f: 30	q: 4
+	f: 30	q: 8
 	f: 31	q: 1
-	f: 32	q: 4
 
 g:2
 size: 5
-	f: 30	q: 64
+	f: 29	q: 18
+	f: 30	q: 50
 	f: 31	q: 4
-	f: 32	q: 18
-	f: 35	q: 1
-	f: 36	q: 7
+	f: 33	q: 3
+	f: 35	q: 23
 
 g:3
-size: 6
-	f: 30	q: 146
-	f: 32	q: 160
-	f: 33	q: 126
-	f: 34	q: 1
-	f: 35	q: 187
-	f: 36	q: 68
+size: 5
+	f: 30	q: 92
+	f: 31	q: 156
+	f: 34	q: 20
+	f: 35	q: 370
+	f: 36	q: 2
 
 g:4
-size: 5
-	f: 31	q: 978
-	f: 33	q: 807
-	f: 34	q: 1122
-	f: 35	q: 288
-	f: 36	q: 297
+size: 6
+	f: 30	q: 116
+	f: 31	q: 182
+	f: 33	q: 490
+	f: 34	q: 364
+	f: 35	q: 589
+	f: 36	q: 1894
 
 g:5
-size: 5
-	f: 32	q: 1785
-	f: 33	q: 90
-	f: 34	q: 2153
-	f: 35	q: 6481
-	f: 36	q: 5401
+size: 6
+	f: 29	q: 24
+	f: 31	q: 24
+	f: 32	q: 116
+	f: 34	q: 490
+	f: 35	q: 3511
+	f: 36	q: 3756
 
 g:6
-size: 4
-	f: 32	q: 2996
-	f: 33	q: 1031
-	f: 35	q: 10029
-	f: 36	q: 20631
+size: 6
+	f: 30	q: 24
+	f: 31	q: 24
+	f: 33	q: 96
+	f: 34	q: 144
+	f: 35	q: 5985
+	f: 36	q: 8489
 
 g:7
-size: 2
-	f: 34	q: 1031
-	f: 36	q: 70100
+size: 4
+	f: 31	q: 288
+	f: 33	q: 264
+	f: 35	q: 2176
+	f: 36	q: 6984
 
 g:8
-size: 2
-	f: 35	q: 7120
-	f: 36	q: 65042
+size: 5
+	f: 32	q: 288
+	f: 33	q: 240
+	f: 34	q: 1560
+	f: 35	q: 2464
+	f: 36	q: 836
 
 g:9
-size: 1
-	f: 36	q: 7120
+size: 3
+	f: 33	q: 2640
+	f: 35	q: 288
+	f: 36	q: 4416
 
 g:10
-size: 0
+size: 3
+	f: 33	q: 2640
+	f: 34	q: 6816
+	f: 36	q: 5280
 
 g:11
-size: 0
+size: 2
+	f: 34	q: 2640
+	f: 35	q: 32112
 
 g:12
-size: 0
+size: 2
+	f: 35	q: 5280
+	f: 36	q: 29472
 
 g:13
-size: 0
+size: 1
+	f: 36	q: 5280
 
 g:14
 size: 0

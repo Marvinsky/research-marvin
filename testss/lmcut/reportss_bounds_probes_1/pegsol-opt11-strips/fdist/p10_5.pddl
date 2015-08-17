@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/pegsol-opt11-strips/fdist/p10_5.pddl
-predictionSS: 33595
-ss_timer: 0.06
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/pegsol-opt11-strips/fdist/p10_5.pddl
+predictionSS: 14289
+ss_timer: 0.08
 g:0
 size: 1
 	f: 1	q: 1
@@ -17,9 +17,9 @@ size: 0
 
 g:3
 size: 3
-	f: 3	q: 80
+	f: 3	q: 83
 	f: 4	q: 40
-	f: 5	q: 55
+	f: 5	q: 52
 
 g:4
 size: 3
@@ -29,6 +29,6 @@ size: 3
 
 g:5
 size: 2
-	f: 4	q: 410
-	f: 5	q: 995
+	f: 4	q: 581
+	f: 5	q: 478
 

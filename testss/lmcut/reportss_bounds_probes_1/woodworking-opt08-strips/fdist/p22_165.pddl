@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/woodworking-opt08-strips/fdist/p22_165.pddl
-predictionSS: 4
-ss_timer: 0
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/woodworking-opt08-strips/fdist/p22_165.pddl
+predictionSS: 19
+ss_timer: 0.02
 g:0
 size: 1
 	f: 145	q: 1
@@ -10,10 +10,12 @@ size: 1
 	f: 165	q: 3
 
 g:2
-size: 0
+size: 1
+	f: 165	q: 3
 
 g:3
-size: 0
+size: 1
+	f: 165	q: 12
 
 g:4
 size: 0

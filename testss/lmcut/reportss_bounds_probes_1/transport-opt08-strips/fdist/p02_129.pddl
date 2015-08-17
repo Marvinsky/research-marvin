@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/transport-opt08-strips/fdist/p02_129.pddl
-predictionSS: 70538
-ss_timer: 0.18
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_1/transport-opt08-strips/fdist/p02_129.pddl
+predictionSS: 245574
+ss_timer: 0.12
 g:0
 size: 1
 	f: 115	q: 1
@@ -12,111 +12,112 @@ size: 2
 
 g:2
 size: 3
+	f: 109	q: 2
+	f: 117	q: 5
 	f: 118	q: 2
-	f: 127	q: 2
-	f: 128	q: 5
 
 g:3
-size: 2
-	f: 119	q: 4
+size: 3
+	f: 109	q: 2
+	f: 119	q: 14
 	f: 129	q: 14
 
 g:4
 size: 4
-	f: 111	q: 4
-	f: 119	q: 4
-	f: 120	q: 4
-	f: 129	q: 2
+	f: 111	q: 2
+	f: 119	q: 14
+	f: 120	q: 14
+	f: 129	q: 14
 
 g:5
 size: 2
-	f: 111	q: 4
-	f: 121	q: 16
+	f: 111	q: 2
+	f: 121	q: 56
 
 g:6
 size: 3
-	f: 113	q: 20
-	f: 121	q: 16
-	f: 122	q: 16
+	f: 113	q: 2
+	f: 121	q: 56
+	f: 122	q: 56
 
 g:7
 size: 2
-	f: 113	q: 20
-	f: 123	q: 64
+	f: 113	q: 2
+	f: 123	q: 224
 
 g:8
 size: 3
-	f: 115	q: 84
-	f: 123	q: 64
-	f: 124	q: 64
+	f: 115	q: 226
+	f: 123	q: 224
+	f: 124	q: 224
 
 g:9
 size: 2
-	f: 115	q: 84
-	f: 125	q: 256
+	f: 115	q: 226
+	f: 125	q: 896
 
 g:10
 size: 3
-	f: 117	q: 340
-	f: 125	q: 256
-	f: 126	q: 256
+	f: 117	q: 1122
+	f: 125	q: 896
+	f: 126	q: 896
 
 g:11
 size: 2
-	f: 117	q: 340
-	f: 127	q: 1024
+	f: 117	q: 1122
+	f: 127	q: 3584
 
 g:12
 size: 3
-	f: 119	q: 1364
-	f: 127	q: 1024
-	f: 128	q: 1024
+	f: 119	q: 4706
+	f: 127	q: 3584
+	f: 128	q: 3584
 
 g:13
 size: 2
-	f: 119	q: 1364
-	f: 129	q: 4096
+	f: 119	q: 4706
+	f: 129	q: 14336
 
 g:14
 size: 2
-	f: 121	q: 5460
-	f: 129	q: 4096
+	f: 121	q: 19042
+	f: 129	q: 14336
 
 g:15
 size: 1
-	f: 121	q: 5460
+	f: 121	q: 19042
 
 g:16
 size: 1
-	f: 123	q: 5460
+	f: 123	q: 19042
 
 g:17
 size: 1
-	f: 123	q: 5460
+	f: 123	q: 19042
 
 g:18
 size: 1
-	f: 125	q: 5460
+	f: 125	q: 19042
 
 g:19
 size: 1
-	f: 125	q: 5460
+	f: 125	q: 19042
 
 g:20
 size: 1
-	f: 127	q: 5460
+	f: 127	q: 19042
 
 g:21
 size: 1
-	f: 127	q: 5460
+	f: 127	q: 19042
 
 g:22
 size: 1
-	f: 129	q: 5460
+	f: 129	q: 19042
 
 g:23
 size: 1
-	f: 129	q: 5460
+	f: 129	q: 19042
 
 g:24
 size: 0
