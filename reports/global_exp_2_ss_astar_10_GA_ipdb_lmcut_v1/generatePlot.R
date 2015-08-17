@@ -67,6 +67,18 @@ for (m in 1:21) {
     abline(a = 0, b = 1)  # y = x
     abline(v = 2, col = "gray60") # x = 2
     
+    leg.txt <- c("blue = ipdb", "red = lmcut", "green = gapdb")
+    minx <- min(all)
+    maxy <- max(all)
+    
+    legend(list(x = minx, y = maxy),
+          legend = leg.txt,
+          pch = 4,
+          bty = "o",
+          col = c("blue", "red", "green")
+          )
+    
+    
     title <- "SS vs A* "
     problem <- paste(s3, instances_solved, sep = " : ")
     finalTitle <- paste(title, problem, sep="- ")
