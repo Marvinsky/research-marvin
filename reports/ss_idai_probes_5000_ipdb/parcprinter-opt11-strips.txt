@@ -25,7 +25,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p07.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-1067140		352715			----zero_info----
+1067140		352715			349218
 
 p05.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -41,12 +41,12 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p04.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-824096		445093			----zero_info----
+824096		445093			447203
 
 p06.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1384200		1.60747e+06			----zero_info----
-1392200		1.00484e+08			----zero_info----
+1392200		1.00484e+08			1.57225e+06
 
 p17.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -54,7 +54,7 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p20.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-1242885		1			1
+1242885		1			1.87316e+22
 
 p03.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -73,15 +73,12 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p11.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-1182475		1			1
+1182475		1			1.21835e+14
 
 p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-412048		11			----zero_info----
-438047		39831			39869.8
+412048		11			11
+438047		39831			39541.6
 
-Files that contains zero_info:	4
-p02.pddl
-p04.pddl
+Files that contains zero_info:	1
 p06.pddl
-p07.pddl

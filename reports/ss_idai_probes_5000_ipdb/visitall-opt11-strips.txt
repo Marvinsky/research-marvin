@@ -4,54 +4,54 @@ visitall-opt11-strips
 
 problem09-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-49		886			----zero_info----
-50		25547			----zero_info----
-51		498671			----zero_info----
-52		8.4668e+06			----zero_info----
-53		1.31915e+08			----zero_info----
+49		886			874.131
+50		25547			26162.2
+51		498671			462206
+52		8.4668e+06			8.62216e+06
+53		1.31915e+08			1.14976e+08
 
 problem05-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-24		98441			100626
+24		98441			94844.6
 
 problem08-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-32		55			----zero_info----
-33		1230			----zero_info----
-34		18150			----zero_info----
-35		219045			----zero_info----
-36		2.28299e+06			----zero_info----
-37		2.13192e+07			----zero_info----
-38		1.82024e+08			----zero_info----
-39		1.44924e+09			----zero_info----
-40		1.08788e+10			----zero_info----
+32		55			54.9508
+33		1230			1228.38
+34		18150			18430.2
+35		219045			228527
+36		2.28299e+06			2.30881e+06
+37		2.13192e+07			2.11039e+07
+38		1.82024e+08			1.85704e+08
+39		1.44924e+09			1.34374e+09
+40		1.08788e+10			1.11176e+10
 
 problem06-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-35		1.99953e+07			2.06802e+07
+35		1.99953e+07			2.02603e+07
 
 problem11-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-57		48			----zero_info----
-58		924			----zero_info----
-59		12461			----zero_info----
-60		141024			----zero_info----
-61		1.43834e+06			----zero_info----
-62		1.38622e+07			----zero_info----
-63		1.29348e+08			----zero_info----
-64		1.1865e+09			----zero_info----
+57		48			46.9564
+58		924			899.542
+59		12461			12153.3
+60		141024			140951
+61		1.43834e+06			1.40739e+06
+62		1.38622e+07			1.3847e+07
+63		1.29348e+08			1.31802e+08
+64		1.1865e+09			1.19118e+09
 
 problem04-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 7		2			2
-8		12			12.0752
-9		53			52.7642
-10		235			232.532
-11		906			896.1
+8		12			11.9924
+9		53			52.7954
+10		235			236.766
+11		906			882.725
 
 problem04-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-15		1227			1228.98
+15		1227			1222.17
 
 problem02-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -62,22 +62,22 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 problem07-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-32		745			817.902
-33		20048			18758.7
-34		326575			312921
-35		4.1926e+06			4.12531e+06
-36		4.59104e+07			4.76978e+07
+32		745			718.975
+33		20048			19490.4
+34		326575			331467
+35		4.1926e+06			4.33342e+06
+36		4.59104e+07			4.71186e+07
 
 problem10-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-47		19			----zero_info----
-48		365			----zero_info----
-49		5302			----zero_info----
-50		65211			----zero_info----
-51		709825			----zero_info----
-52		7.15008e+06			----zero_info----
-53		6.82876e+07			----zero_info----
-54		6.30346e+08			----zero_info----
+47		19			19.024
+48		365			368.731
+49		5302			5384.77
+50		65211			62424.7
+51		709825			691998
+52		7.15008e+06			7.54016e+06
+53		6.82876e+07			6.55369e+07
+54		6.30346e+08			6.39279e+08
 
 problem08-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -88,11 +88,11 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 
 problem05-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-14		31			31.0708
-15		346			350.022
-16		2660			2621.68
-17		15161			14984
-18		103281			99958.7
+14		31			30.6208
+15		346			346.177
+16		2660			2667
+17		15161			15595.1
+18		103281			103952
 
 problem11-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -100,8 +100,8 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 problem03-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 4		2			2
-5		8			7.9626
-6		47			47.2454
+5		8			7.983
+6		47			47.2164
 
 problem10-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -116,17 +116,11 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 problem06-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 15		2			2
-16		32			32.5652
-17		291			287.91
-18		2140			2101.97
-19		13142			12633.8
-20		77089			75674.1
-21		405318			385255
-22		2.1247e+06			2.1289e+06
-23		1.03602e+07			1.01684e+07
-
-Files that contains zero_info:	4
-problem08-half.pddl
-problem09-half.pddl
-problem10-half.pddl
-problem11-half.pddl
+16		32			32.4436
+17		291			277.727
+18		2140			2070.95
+19		13142			13122.7
+20		77089			75635.5
+21		405318			396811
+22		2.1247e+06			2.08707e+06
+23		1.03602e+07			1.00951e+07
