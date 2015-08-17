@@ -4,41 +4,105 @@ scanalyzer-opt11-strips
 
 p14.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-26		80			63
-27		1341			1155
-28		10903			8243
-29		77634			92467
-30		587832			218163
+26		80			111
+27		1341			1907
+28		10903			9507
+29		77634			63491
+30		587832			388931
+
+p19.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p18.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+31		1535			1631
+32		146630			177181
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+25		3			3
+26		27			32
+27		441			373
+28		5343			6103
+29		91152			65921
+30		1.44917e+06			1.31807e+06
+
+p13.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+26		5			5
+27		46			56
+28		184			171
+29		855			884
+30		5784			3716
+31		41003			39158
+32		286074			427134
+
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p01.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 12		2			2
 13		11			11
 
+p10.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
 p04.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-24		175569			246417
+24		175569			236337
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+25		243			261
+26		12789			7941
+27		453359			381125
+28		1.39085e+07			1.36804e+07
+
+p17.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+43		91581			95901
+
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+36		1290			6016
 
 p03.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 19		3			3
 20		20			16
-21		230			260
-22		1997			2002
-23		22910			18964
-24		251271			211563
-25		3.11983e+06			2.24405e+06
-26		3.86201e+07			4.3037e+07
+21		230			199
+22		1997			1240
+23		22910			21802
+24		251271			208859
+25		3.11983e+06			9.69803e+06
+26		3.86201e+07			3.11735e+07
+
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+37		11143			11743
 
 p11.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-24		17			39
-25		861			733
-26		41773			84345
+24		17			7
+25		861			1057
+26		41773			5
 
 p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-19		45			31
-20		1120			1453
-21		20468			23782
-22		336211			524956
+19		45			49
+20		1120			913
+21		20468			18364
+22		336211			409054

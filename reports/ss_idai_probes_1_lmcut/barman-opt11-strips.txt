@@ -1,3 +1,96 @@
 	Report:		ida*-bfs-vs-ss-bfs - using lmcut heuristic - 1 probe.
 
 barman-opt11-strips
+
+pfile05-018.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+pfile01-004.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+pfile03-009.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+pfile05-019.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+pfile03-011.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+pfile05-017.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+pfile03-012.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+30		3.43477e+06			1.83855e+06
+31		1.63833e+07			2.95288e+06
+
+pfile02-006.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+18		12			12
+19		14			13
+20		330			232
+21		425			232
+22		7442			11620
+23		10749			5786
+24		166885			43658
+25		267320			34396
+26		3.74696e+06			333112
+27		6.58031e+06			412828
+
+pfile02-005.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+pfile04-014.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+32		2.06261e+07			1.42607e+07
+
+pfile02-008.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+pfile02-007.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+41		27			23
+42		79			73
+43		2.07092e+07			645
+
+pfile05-020.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+pfile04-015.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+36		10			10
+37		52			37
+38		510			361
+39		2000			5437
+40		18072			19621
+41		1.14474e+06			18181
+
+pfile01-003.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+pfile01-002.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+pfile03-010.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+30		3.43477e+06			5.29333e+06
+31		1.63833e+07			2.75525e+07
+
+pfile04-013.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+31		2.06261e+07			2.6293e+07
+
+pfile01-001.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+28		264106			----zero_info----
+29		913980			1.96607e+06
+30		4.88361e+06			5.43708e+06
+31		1.74265e+07			1.9474e+07
+
+pfile04-016.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+31		2.06261e+07			1.96234e+07
+
+Files that contains zero_info:	1
+pfile01-001.pddl

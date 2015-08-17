@@ -2,11 +2,154 @@
 
 parking-opt11-strips
 
+pfile08-029.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+21		1			1
+22		6			3
+23		122			115
+24		3028			950
+25		77382			14189
+
+pfile05-018.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+14		1			1
+16		48			57
+17		1247			805
+18		30582			36665
+19		712737			282833
+
+pfile07-027.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+20		1			1
+21		20			13
+22		406			205
+23		9281			5913
+24		213439			64229
+
+pfile06-023.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+19		105			53
+20		2903			971
+21		87017			17859
+
+pfile08-030.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+22		6			7
+23		103			105
+24		2422			3072
+25		59313			81512
+
+pfile07-028.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+23		361			277
+24		10341			4302
+25		283095			59656
+
+pfile05-019.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+17		1			1
+18		37			22
+19		690			339
+20		15277			2507
+21		310555			460172
+
+pfile06-021.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+19		98			55
+20		3192			2263
+21		100985			169924
+
 pfile03-011.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 9		2			2
-10		28			19
-11		275			168
-12		2668			1262
-13		26317			19019
-14		257522			166363
+10		28			16
+11		275			130
+12		2668			1072
+13		26317			5281
+14		257522			68969
+
+pfile07-026.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+19		8			9
+20		208			74
+21		5663			9589
+22		144379			93963
+
+pfile05-017.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		1			----zero_info----
+16		16			----zero_info----
+17		376			67
+18		7893			3995
+19		147891			502939
+
+pfile03-012.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+13		7			4
+14		97			61
+15		1500			2410
+16		20326			19795
+17		272160			1.96974e+06
+18		3.50265e+06			1.56727e+07
+
+pfile06-024.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+18		91			100
+19		2062			1111
+20		46241			46084
+
+pfile06-022.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+20		113			89
+21		3065			1928
+22		66383			63758
+
+pfile04-014.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+14		4			5
+15		44			32
+16		913			1087
+17		13770			5958
+18		209300			24890
+
+pfile05-020.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		3			3
+17		36			39
+18		527			1919
+19		8467			7313
+20		140364			77353
+
+pfile04-015.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+13		1			1
+14		13			5
+15		246			72
+16		4156			664
+17		67614			60264
+18		1.07344e+06			4.45112e+06
+
+pfile07-025.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+21		46			30
+22		1505			1324
+23		39689			12730
+
+pfile04-013.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		2			2
+16		31			21
+17		566			253
+18		9868			4646
+19		170705			57960
+
+pfile04-016.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+13		3			3
+14		40			74
+15		638			1247
+16		10267			25754
+17		149174			129320
+
+Files that contains zero_info:	1
+pfile05-017.pddl
