@@ -43,6 +43,7 @@ for (m in 1:21) {
     
     x <- instance$V1
     y <- instance$V2
+    family <- instance$V3
     
     all = c(x,y)
     range = c(min(all), max(all))
@@ -57,7 +58,11 @@ for (m in 1:21) {
     
     jpeg(filename=mname,  width = 480, height = 480, units = "px")
     
-    plot(x, y, xlim=range, ylim=range, bty = "n", col.axis = "sky blue", col.lab = "thistle", pch = 4, col = "blue")
+    #ipdb = blue
+    #lmcut = red
+    #gapdb = green
+    plot(x, y, col = ifelse(family == 'ipdb', 'blue', ifelse(family == 'lmcut', 'red', 'green')), xlim=range, ylim=range, bty = "n", pch = 4)
+    #plot(x, y, xlim=range, ylim=range, bty = "n", col.axis = "sky blue", col.lab = "thistle", pch = 4, col = "blue")
     
     abline(a = 0, b = 1)  # y = x
     abline(v = 2, col = "gray60") # x = 2
