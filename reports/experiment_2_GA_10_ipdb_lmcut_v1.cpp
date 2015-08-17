@@ -786,20 +786,30 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 									plot_info.push_back(pair<double, double>(frass1, fraa1));
 									
 									//get the category
-									string name1, name2;
+									string name1, name2, final_name1, final_name2;
 									std::map<int, string>::iterator rt1 =  look_for_heuristic.find(i);
                                                                 	if (rt1 != look_for_heuristic.end()) {
                                                                         	name1 = rt1->second;
+										string t1 = name1;
+                								int found1 = t1.find("_");
+                								string heuristic_name_mod1 = t1.substr(found1 + 1,  t1.length());
+										final_name1 = heuristic_name_mod1;
+										//cout<<"final_name1 = "<<final_name1<<"\n";
                                                                 	}
 
                                                                 	std::map<int, string>::iterator rt2 =  look_for_heuristic.find(j);
                                                                 	if (rt2 != look_for_heuristic.end()) {
                                                                         	name2 = rt2->second;
+										string t2 = name2;
+                								int found2 = t2.find("_");
+                								string heuristic_name_mod2 = t2.substr(found2 + 1,  t2.length());
+										final_name2 = heuristic_name_mod2;
+										//cout<<"final_name2 = "<<final_name2<<"\n";
                                                                 	}
 									string category;
-									if (name1 == "ipdb" || name2 == "ipdb") {
+									if (final_name1 == "ipdb" || final_name2 == "ipdb") {
 										category = "ipdb";
-									} else if (name1 == "lmcut" || name2 == "lmcut") {
+									} else if (final_name1 == "lmcut" || final_name2 == "lmcut") {
 										category = "lmcut";
 									} else {
 										category = "gapdb";
@@ -836,19 +846,13 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						sort(plot_info.begin(), plot_info.end(), less_first<double, double>());
 
 						//plot_info without sort
-						typedef vector<pair<double, double> > vector_plot;
-
 						//implement average_info
-						vector<double> axix_x, axix_y;
+						vector<double> axix_x, axix_y;	
 
-						for (vector_plot::const_iterator posplot = plot_info.begin();
-							posplot != plot_info.end(); ++posplot) {
-							double x1 = posplot->first; //ss
-							double y1 = posplot->second; //astar
-							axix_x.push_back(x1);
-							axix_y.push_back(y1);
-							//outputFile2<<setprecision(2)<<fixed<<"\t"<<x1<<"\t\t"<<y1<<"\n";
-						}
+						double average_x = 2;//getMaxElement(axix_x)/deno;            //sum_x/deno;
+                                                double average_y = 2;//getMaxElement(axix_y)/deno;            //sum_y/deno;
+                                                cout<<"average_x = "<<average_x<<"\n";
+                                                cout<<"average_y = "<<average_y<<"\n";
 
 						multimap<string, vector<pair<double, double> > >::iterator multimap_category;
 						for (multimap_category = category_plot_info.begin(); multimap_category != category_plot_info.end(); multimap_category++) {
@@ -858,61 +862,25 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 							for (category_plot::const_iterator posplot2 = plot_info2.begin();
 								posplot2 != plot_info2.end(); ++posplot2) {
+								double x1 = posplot2->first; //ss
+								double y1 = posplot2->second; //astar
+								double new_x1, new_y1;
+								if (x1 > average_x) {
+									new_x1 = average_x;
+								} else {
+									new_x1 = x1;
+								}
 
+								if (y1 > average_y) {
+									new_y1 = average_y;
+								} else {
+									new_y1 = y1;
+								}
+                						outputFile2<<"\t"<<new_x1<<"\t\t"<<new_y1<<"\t\t"<<category<<"\n";
 							}
 						}
 
-						//outputFile2.close();
-
-
-						//find the average      
-        					double sum_x = 0, sum_y = 0;
-        					for (int i = 0; i < axix_x.size(); i++) {
-               						//cout<<axix_x.at(i)<<"  "<<axix_y.at(i)<<"\n";
-                					sum_x += axix_x.at(i);
-                					sum_y += axix_y.at(i);
-        					}
-
-        					//change this if needed
-        					int deno = 2;//axix_x.size() * 4;
-
-        					double average_x = 2;//getMaxElement(axix_x)/deno;            //sum_x/deno;
-        					double average_y = 2;//getMaxElement(axix_y)/deno;            //sum_y/deno;
-        					cout<<"average_x = "<<average_x<<"\n";
-        					cout<<"average_y = "<<average_y<<"\n";
-
-        					//fill the new axix_x and axix_y
-        					vector<double> new_axix_x, new_axix_y;
-
-        					for (int i = 0; i < axix_x.size(); i++) {
-                					double x = axix_x.at(i);
-                					double y = axix_y.at(i);	
-                					if (x > average_x) {
-                        					new_axix_x.push_back(average_x);
-                					} else {
-                        					new_axix_x.push_back(x);
-                					}
-
-                					if (y > average_y) {
-                        					new_axix_y.push_back(average_y);
-                					} else {
-                        					new_axix_y.push_back(y);
-                					}
-        					}
-
-        					cout<<"axix_x.size() = "<<axix_x.size()<<"\n";
-        					cout<<"new_axix_x.size() = "<<new_axix_x.size()<<"\n";
-        					cout<<"axix_y.size() = "<<axix_y.size()<<"\n";
-        					cout<<"new_axix_y.size() = "<<new_axix_y.size()<<"\n";
-						
-						for (int i = 0; i < new_axix_x.size(); i++) {
-                					double x1 = new_axix_x.at(i);
-                					double y1 = new_axix_y.at(i);
-                					//outputFile2<<setprecision(2)<<fixed<<"\t"<<x1<<"\t\t"<<y1<<"\n";
-                					outputFile2<<"\t"<<x1<<"\t\t"<<y1<<"\n";
-        					}
 						//end of average info
-
 
 						outputFile<<"\nMeasure_2:\n";
 						set<string> no_repeat_h1, no_repeat_h2; 
