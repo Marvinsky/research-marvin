@@ -397,7 +397,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		//print each file
 		ofstream outputFile2;
 		outputFile2.open(resultFile2.c_str(), ios::out);
-
+		int all_instances_solved = 0;
 		
 		//Read the fles from algorithm2 - idai
 		string output5;
@@ -576,7 +576,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			}
 			//sort the elements by second parameter
 			vector<pair<string, double> > sort_v(map_bc_astar.begin(), map_bc_astar.end());
-			sort(sort_v.begin(), sort_v.end(), less_first<string, double>());
+			sort(sort_v.begin(), sort_v.end(), less_first<string, double>());	
 
 			map_bc_file_astar.insert(pair<string, vector<pair<string, double > > >(astarBC_key, sort_v));
 		}
@@ -774,7 +774,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					vector<pair<int, int> > index_collector; //collect the index that represent the best heuristics
 					vector<pair<double, double> > plot_info;
 					if (total_heuristics == total_heuristics2) {
-
+						all_instances_solved++; //counting the instances that have solved all the heuristics in A*
 						outputFile<<"\nMeasure_1:\n";
 						outputFile<<"\n-A* h1/h2\n";
 						for (int i = 0; i < total_heuristics; i++) {
@@ -961,6 +961,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			}
 		}
 		outputFile.close();
+		if (all_instances_solved != 0) {
+			outputFile2<<"all_instances_solved: "<<all_instances_solved<<"\n";
+		}
 		outputFile2.close();
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);

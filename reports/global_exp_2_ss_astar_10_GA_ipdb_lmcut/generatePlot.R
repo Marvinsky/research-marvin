@@ -23,6 +23,7 @@ r <- c("barman-opt11-strips.txt",
 
 for (m in 1:21) {
   rname <- r[m]
+  dump_name <- r[m]
   #print(rname)
   
   info = file.info(rname)
@@ -30,7 +31,13 @@ for (m in 1:21) {
   #print(size)
   if (size != 0) {
     
-    instance <- read.table(rname)
+    all_rows <- read.table(dump_name)
+    total_rows <- nrow(all_rows)
+    header <- read.table(dump_name, skip = total_rows -1 , nrow = 1)
+    instances_solved <- header$V2
+    print(instances_solved)
+    
+    instance <- read.table(rname, nrow = total_rows - 1)
     summary(instance) 
     print(instance)
     
@@ -64,7 +71,7 @@ for (m in 1:21) {
     abline(v = 2, col = "gray60") # x = 2
     
     title <- "SS vs A* "
-    problem <- s3
+    problem <- paste(s3, instances_solved, sep = " : ")
     finalTitle <- paste(title, problem, sep="- ")
     
     title(main = finalTitle, xlab = "SS", ylab = "A*")

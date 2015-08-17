@@ -2374,3 +2374,4 @@
 	2		1
 	2		1
 	2		1
+all_instances_solved: 18

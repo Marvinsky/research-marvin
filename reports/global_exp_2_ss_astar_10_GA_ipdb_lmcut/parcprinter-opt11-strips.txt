@@ -526,3 +526,4 @@
 	2		2
 	2		2
 	2		2
+all_instances_solved: 4
