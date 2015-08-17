@@ -61,7 +61,7 @@ for (m in 1:21) {
     #ipdb = blue
     #lmcut = red
     #gapdb = green
-    plot(x, y, col = ifelse(family == 'ipdb', 'blue', ifelse(family == 'lmcut', 'red', 'green')), xlim=range, ylim=range, bty = "n", pch = 4)
+    plot(x, y, col = ifelse(family == 'ipdb', 'blue', ifelse(family == 'lmcut', 'red', 'green')), xlim=range, ylim=range, bty = "n", pch = 4, col.axis = "sky blue", col.lab = "thistle")
     #plot(x, y, xlim=range, ylim=range, bty = "n", col.axis = "sky blue", col.lab = "thistle", pch = 4, col = "blue")
     
     abline(a = 0, b = 1)  # y = x
