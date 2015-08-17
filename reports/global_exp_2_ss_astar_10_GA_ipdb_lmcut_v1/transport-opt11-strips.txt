@@ -526,4 +526,4 @@
 	0		2		lmcut
 	0		2		lmcut
 	0		2		lmcut
-all_instances_solved: 4
+all_instances_solved: 4		---

@@ -1054,4 +1054,4 @@
 	1.20637		2		lmcut
 	1.20637		2		lmcut
 	1.2257		2		lmcut
-all_instances_solved: 8
+all_instances_solved: 8		---

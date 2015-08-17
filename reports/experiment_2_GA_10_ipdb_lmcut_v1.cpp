@@ -962,7 +962,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		}
 		outputFile.close();
 		if (all_instances_solved != 0) {
-			outputFile2<<"all_instances_solved: "<<all_instances_solved<<"\n";
+			outputFile2<<"all_instances_solved: "<<all_instances_solved<<"\t\t---\n";
 		}
 		outputFile2.close();
 	    	countRead = countRead + 1;

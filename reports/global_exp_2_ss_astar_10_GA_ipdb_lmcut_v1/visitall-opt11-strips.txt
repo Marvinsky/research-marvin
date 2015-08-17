@@ -1054,4 +1054,4 @@
 	0.0405287		1		lmcut
 	0.00213966		0.999144		lmcut
 	0.00213966		0.999144		lmcut
-all_instances_solved: 8
+all_instances_solved: 8		---

@@ -1978,4 +1978,4 @@
 	2		1.05724		lmcut
 	2		1.05724		lmcut
 	2		1.05724		lmcut
-all_instances_solved: 15
+all_instances_solved: 15		---

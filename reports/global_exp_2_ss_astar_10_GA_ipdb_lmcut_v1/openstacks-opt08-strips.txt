@@ -2770,4 +2770,4 @@
 	2		1		lmcut
 	2		1		lmcut
 	2		1		lmcut
-all_instances_solved: 21
+all_instances_solved: 21		---

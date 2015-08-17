@@ -1186,4 +1186,4 @@
 	0		1.2206		lmcut
 	0		0.474473		lmcut
 	0		0.606441		lmcut
-all_instances_solved: 9
+all_instances_solved: 9		---

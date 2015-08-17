@@ -1978,4 +1978,4 @@
 	1.61962		1		lmcut
 	1.61962		1		lmcut
 	1.61962		1		lmcut
-all_instances_solved: 15
+all_instances_solved: 15		---

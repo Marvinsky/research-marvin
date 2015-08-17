@@ -922,4 +922,4 @@
 	2		2		lmcut
 	2		2		lmcut
 	2		2		lmcut
-all_instances_solved: 7
+all_instances_solved: 7		---

@@ -30,7 +30,7 @@ for (m in 1:21) {
   size <- info$size
   #print(size)
   if (size != 0) {
-    
+    #family <-as.factor()
     all_rows <- read.table(dump_name)
     total_rows <- nrow(all_rows)
     header <- read.table(dump_name, skip = total_rows -1 , nrow = 1)
@@ -46,27 +46,19 @@ for (m in 1:21) {
     
     all = c(x,y)
     range = c(min(all), max(all))
-    #rangex = c(min(x), max(x))
-    #rangey = c(min(y), max(y))
     
     s1 <- c(rname)
     n1 <- nchar(rname) - 4
     s3 <- substring(s1, first=1, last=n1)
-    #print(s3)
     
     s2 <- ".jpeg"
     mname <-paste(s3, s2, sep = "")
     print(mname)
     
-    #dir <- "/home/marvin/marvin/reports/global_exp_2_ss_astar_v3_1/"
-    #file <- paste(dir, mname, sep = "")
-    #print(file)
-    
     jpeg(filename=mname,  width = 480, height = 480, units = "px")
     
     plot(x, y, xlim=range, ylim=range, bty = "n", col.axis = "sky blue", col.lab = "thistle", pch = 4, col = "blue")
     
-    #model <- lm(y ~ x)
     abline(a = 0, b = 1)  # y = x
     abline(v = 2, col = "gray60") # x = 2
     
@@ -76,8 +68,6 @@ for (m in 1:21) {
     
     title(main = finalTitle, xlab = "SS", ylab = "A*")
     
-    
-    #png(filename="Rplot.jpeg")
     dev.off()
   }
 }

@@ -394,4 +394,4 @@
 	2		1.00309		lmcut
 	2		1.00309		lmcut
 	2		1.00309		lmcut
-all_instances_solved: 3
+all_instances_solved: 3		---
