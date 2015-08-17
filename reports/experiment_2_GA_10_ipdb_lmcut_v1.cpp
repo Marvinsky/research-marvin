@@ -772,7 +772,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					multimap<double, pair<int, int> > ratiomap;
 					vector<pair<int, int> > index_collector; //collect the index that represent the best heuristics
 					vector<pair<double, double> > plot_info;
-					multimap<string, vector<pair<double, double> > > category_plot_info;
+					multimap<string, pair<double, double> > category_plot_info;
 					if (total_heuristics == total_heuristics2) {
 						all_instances_solved++; //counting the instances that have solved all the heuristics in A*
 						outputFile<<"\nMeasure_1:\n";
@@ -814,7 +814,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 									} else {
 										category = "gapdb";
 									}
-									category_plot_info.insert(pair<string, vector<pair<double, double> > >(category, plot_info));
+									category_plot_info.insert(pair<string, pair<double, double> >(category, pair<double, double>(frass1, fraa1)));
 									//end get category
 								}
 							}
@@ -854,30 +854,27 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                                                 cout<<"average_x = "<<average_x<<"\n";
                                                 cout<<"average_y = "<<average_y<<"\n";
 
-						multimap<string, vector<pair<double, double> > >::iterator multimap_category;
+						multimap<string, pair<double, double> >::iterator multimap_category;
 						for (multimap_category = category_plot_info.begin(); multimap_category != category_plot_info.end(); multimap_category++) {
 							string category = multimap_category->first;
-							vector<pair<double, double> > plot_info2 = multimap_category->second;
-							typedef vector<pair<double, double> > category_plot;
+							pair<double, double> plot_info2 = multimap_category->second;
 
-							for (category_plot::const_iterator posplot2 = plot_info2.begin();
-								posplot2 != plot_info2.end(); ++posplot2) {
-								double x1 = posplot2->first; //ss
-								double y1 = posplot2->second; //astar
-								double new_x1, new_y1;
-								if (x1 > average_x) {
-									new_x1 = average_x;
-								} else {
-									new_x1 = x1;
-								}
-
-								if (y1 > average_y) {
-									new_y1 = average_y;
-								} else {
-									new_y1 = y1;
-								}
-                						outputFile2<<"\t"<<new_x1<<"\t\t"<<new_y1<<"\t\t"<<category<<"\n";
+							double x1 = plot_info2.first; //ss
+							double y1 = plot_info2.second; //astar
+							double new_x1, new_y1;
+							if (x1 > average_x) {
+								new_x1 = average_x;
+							} else {
+								new_x1 = x1;
 							}
+
+							if (y1 > average_y) {
+								new_y1 = average_y;
+							} else {
+								new_y1 = y1;
+							}
+                					outputFile2<<"\t"<<new_x1<<"\t\t"<<new_y1<<"\t\t"<<category<<"\n";
+							
 						}
 
 						//end of average info
