@@ -62,22 +62,22 @@ for (m in 1:21) {
       #ipdb = blue
       #lmcut = red
       #gapdb = green
-      plot(x, y, col = ifelse(family == 'ipdb', 'blue', ifelse(family == 'lmcut', 'red', 'green')), xlim=range, ylim=range, bty = "n", pch = 4, col.axis = "sky blue", col.lab = "thistle")
-      #plot(x, y, xlim=range, ylim=range, bty = "n", col.axis = "sky blue", col.lab = "thistle", pch = 4, col = "blue")
+      #plot(x, y, col = ifelse(family == 'ipdb', 'blue', ifelse(family == 'lmcut', 'red', 'green')), xlim=range, ylim=range, bty = "n", pch = 4, col.axis = "sky blue", col.lab = "thistle")
+      plot(x, y, xlim=range, ylim=range, bty = "n", col.axis = "sky blue", col.lab = "thistle", pch = 4, col = "blue")
     
       abline(a = 0, b = 1)  # y = x
       abline(v = 2, col = "gray60") # x = 2
     
-      leg.txt <- c("blue = ipdb", "red = lmcut", "green = gapdb")
-      minx <- min(all)
-      maxy <- max(all)
+      #leg.txt <- c("blue = ipdb", "red = lmcut", "green = gapdb")
+      #minx <- min(all)
+      #maxy <- max(all)
     
-      legend(list(x = minx, y = maxy),
-            legend = leg.txt,
-            pch = 4,
-            bty = "o",
-            col = c("blue", "red", "green")
-            )
+      #legend(list(x = minx, y = maxy),
+            #legend = leg.txt,
+            #pch = 4,
+            #bty = "o",
+            #col = c("blue", "red", "green")
+            #)
     
     
       title <- "SS vs A* "
