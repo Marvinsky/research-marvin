@@ -60,123 +60,124 @@ bool isIdaInfo(int i, vector<int> format_before) {
 }
 
 
-void create_report1(string domain) {
-
-	string openFile;
-       	openFile =  domain + ".txt";
-        openFile = "global_exp_2_ss_astar_10_GA_ipdb_lmcut_v1/" + openFile;
-        openFile = "reports/" + openFile;
-        openFile = "marvin/" + openFile;
-        openFile = "marvin/" + openFile;
-        openFile = "/home/"+ openFile;
-        cout<<"openFile = "<<openFile<<endl;
-
-	ifstream readFile(openFile.c_str());
-
-	string resultFile;
-	resultFile = domain + "_info.txt";
-        resultFile = "global_exp_2_ss_astar_10_GA_ipdb_lmcut/report_info/" + resultFile;
-        resultFile = "reports/" + resultFile;
-        resultFile = "marvin/" + resultFile;
-        resultFile = "marvin/" + resultFile;
-        resultFile = "/home/"+ resultFile;
-        //cout<<"resultFile = "<<resultFile<<endl;
+void create_report1(vector<string> domains, string resultFile) {
 
 	ofstream outputFile(resultFile.c_str(), ios::out);
+	outputFile<<"\t\tPercentage of points in each quadrant:  10 GA + ipdb + lmcut - 5000 probes\n\n";
+	outputFile<<left<<setw(24)<<"Domain"<<right<<setw(15)<<"I (%)"<<right<<setw(15)<<"II (%)"<<right<<setw(15)<<"III (%)"<<right<<setw(15)<<"IV (%)\n\n";
 
+	for (size_t k = 0; k < domains.size(); k++) {
+		string domain = domains.at(k);
+		string openFile;
+       		openFile =  domain + ".txt";
+        	openFile = "global_exp_2_ss_astar_10_GA_ipdb_lmcut_v1/" + openFile;
+        	openFile = "reports/" + openFile;
+        	openFile = "marvin/" + openFile;
+        	openFile = "marvin/" + openFile;
+        	openFile = "/home/"+ openFile;
+        	cout<<"openFile = "<<openFile<<endl;
 
-	int total_levels = getTotalLevels(openFile.c_str());
-	cout<<"total_levels = "<<total_levels<<"\n";
-	if (total_levels > 0) {
-		int total_rows = total_levels - 1;
-		string** row_plot = new string*[total_rows];
-		for (int i = 0; i < total_rows; i++) {
-			row_plot[i] = new string[3];
-		}
+		ifstream readFile(openFile.c_str());
 
-		for (int i = 0; i < total_rows; i++) {
-			for (int j = 0; j < 3; j++) {
-				readFile>>row_plot[i][j];
+		int total_levels = getTotalLevels(openFile.c_str());
+		cout<<"total_levels = "<<total_levels<<"\n";
+		if (total_levels > 0) {
+			int total_rows = total_levels - 1;
+			string** row_plot = new string*[total_rows];
+			for (int i = 0; i < total_rows; i++) {
+				row_plot[i] = new string[3];
 			}
-		}
 
-
-		vector<pair<double, double> > first_square, second_square, third_square, fourth_square;
-		int count_first_square = 0, count_second_square = 0, count_third_square = 0, count_fourth_square = 0;
-		int count_ones_x = 0, count_ones_y = 0;
-		int count_zero_x = 0, count_zero_y = 0;
-		int count_two_x = 0, count_two_y = 0;
-
-		for (int i = 0; i < total_rows; i++) {
-			string x_label = row_plot[i][0];
-			string y_label = row_plot[i][1];
-			string heuristic = row_plot[i][2];
-			double x = atof(x_label.c_str());
-			double y = atof(y_label.c_str());
-			//First square
-			if ((x > 0 && x < 1) && (y > 1 && y < 2)) {
-				count_first_square++;
-				first_square.push_back(pair<double, double>(x, y));
-			} else if ((x > 0 && x < 1) && (y > 0 && y < 1)) { //Second square
-				count_second_square++;
-				second_square.push_back(pair<double, double>(x, y));
-			} else if ((x > 1 && x < 2) && (y > 0 && y < 1)) { //Third square
-				count_third_square++;
-				third_square.push_back(pair<double, double>(x, y));
-			} else if ((x > 1 && x < 2) && (y > 1 && y < 2)) { //fourth square
-				count_fourth_square++;
-				fourth_square.push_back(pair<double, double>(x, y));
-			} else if (x == 1 && y > 0) {
-				count_ones_x++;
-			} else if (y == 1 && x > 0) {
-				count_ones_y++;
-			} else if (x == 0 && y > 0) {
-				count_zero_x++;
-			} else if (y == 0 && y > 0) {
-				count_zero_y++;
-			} else if (x == 2 && y > 0) {
-				count_two_x++;
-			} else if (y == 2 && x > 0) {
-				count_two_y++;
+			for (int i = 0; i < total_rows; i++) {
+				for (int j = 0; j < 3; j++) {
+					readFile>>row_plot[i][j];
+				}
 			}
-		}
 
-		delete row_plot;
+			vector<pair<double, double> > first_square, second_square, third_square, fourth_square;
+			int count_first_square = 0, count_second_square = 0, count_third_square = 0, count_fourth_square = 0;
+			int count_ones_x = 0, count_ones_y = 0;
+			int count_zero_x = 0, count_zero_y = 0;
+			int count_two_x = 0, count_two_y = 0;
 
+			for (int i = 0; i < total_rows; i++) {
+				string x_label = row_plot[i][0];
+				string y_label = row_plot[i][1];
+				string heuristic = row_plot[i][2];
+				double x = atof(x_label.c_str());
+				double y = atof(y_label.c_str());
+				//First square
+				if ((x > 0 && x < 1) && (y > 1 && y < 2)) {
+					count_first_square++;
+					first_square.push_back(pair<double, double>(x, y));
+				} else if ((x > 0 && x < 1) && (y > 0 && y < 1)) { //Second square
+					count_second_square++;
+					second_square.push_back(pair<double, double>(x, y));
+				} else if ((x > 1 && x < 2) && (y > 0 && y < 1)) { //Third square
+					count_third_square++;
+					third_square.push_back(pair<double, double>(x, y));
+				} else if ((x > 1 && x < 2) && (y > 1 && y < 2)) { //fourth square
+					count_fourth_square++;
+					fourth_square.push_back(pair<double, double>(x, y));
+				} else if (x == 1 && y > 0) {
+					count_ones_x++;
+				} else if (y == 1 && x > 0) {
+					count_ones_y++;
+				} else if (x == 0 && y > 0) {
+					count_zero_x++;
+				} else if (y == 0 && y > 0) {
+					count_zero_y++;
+				} else if (x == 2 && y > 0) {
+					count_two_x++;
+				} else if (y == 2 && x > 0) {
+					count_two_y++;
+				}
+			}
+
+			delete row_plot;
 		
-		cout<<"I = "<<count_first_square<<"\n";
-		cout<<"II = "<<count_second_square<<"\n";
-		cout<<"III = "<<count_third_square<<"\n";
-		cout<<"IV = "<<count_fourth_square<<"\n";
-		cout<<"count_ones_x = "<<count_ones_x<<"\n";
-		cout<<"count_ones_y = "<<count_ones_y<<"\n";
-		cout<<"count_zero_x = "<<count_zero_x<<"\n";
-		cout<<"count_zero_y = "<<count_zero_y<<"\n";
-		cout<<"count_two_x = "<<count_two_x<<"\n";
-		cout<<"count_two_y = "<<count_two_y<<"\n";
+			cout<<"I = "<<count_first_square<<"\n";
+			cout<<"II = "<<count_second_square<<"\n";
+			cout<<"III = "<<count_third_square<<"\n";
+			cout<<"IV = "<<count_fourth_square<<"\n";
+			cout<<"count_ones_x = "<<count_ones_x<<"\n";
+			cout<<"count_ones_y = "<<count_ones_y<<"\n";
+			cout<<"count_zero_x = "<<count_zero_x<<"\n";
+			cout<<"count_zero_y = "<<count_zero_y<<"\n";
+			cout<<"count_two_x = "<<count_two_x<<"\n";
+			cout<<"count_two_y = "<<count_two_y<<"\n";
 
-		double sum_ranged_values = count_first_square + 
-					count_second_square +
-					count_third_square +
-					count_fourth_square;
+			double sum_ranged_values = count_first_square + 
+						count_second_square +
+						count_third_square +
+						count_fourth_square;
 
-		double per_first_square = ((double)count_first_square/sum_ranged_values)*100;
-		double per_second_square = ((double)count_second_square/sum_ranged_values)*100;
-		double per_third_square = ((double)count_third_square/sum_ranged_values)*100;
-		double per_fourth_square = ((double)count_fourth_square/sum_ranged_values)*100;
+			if (sum_ranged_values > 0) {
+				double per_first_square = ((double)count_first_square/sum_ranged_values)*100;
+				double per_second_square = ((double)count_second_square/sum_ranged_values)*100;
+				double per_third_square = ((double)count_third_square/sum_ranged_values)*100;
+				double per_fourth_square = ((double)count_fourth_square/sum_ranged_values)*100;
 
+				cout<<"per_first_square = "<<setprecision(2)<<fixed<<per_first_square<<" %\n";
+				cout<<"per_second_square = "<<per_second_square<<" %\n";
+				cout<<"per_thrid_square = "<<per_third_square<<" %\n";
+				cout<<"per_fourth_square = "<<per_fourth_square<<"%\n";
 
-		cout<<"per_first_square = "<<setprecision(2)<<fixed<<per_first_square<<" %\n";
-		cout<<"per_second_square = "<<per_second_square<<" %\n";
-		cout<<"per_thrid_square = "<<per_third_square<<" %\n";
-		cout<<"per_fourth_square = "<<per_fourth_square<<"%\n";
-	}
-
-	/*for (int i = 0; i < total_rows; i++) {
-		for (int j = 0; j < 3; j++) {
-			
+				outputFile<<left<<setw(24)<<domain;
+				outputFile<<right<<setw(15)<<setprecision(2)<<fixed<<per_first_square;
+				outputFile<<right<<setw(15)<<per_second_square;
+				outputFile<<right<<setw(15)<<per_third_square;
+				outputFile<<right<<setw(15)<<per_fourth_square<<"\n";
+			} else {
+				outputFile<<left<<setw(24)<<domain;
+				outputFile<<right<<setw(15)<<"---";
+				outputFile<<right<<setw(15)<<"---";
+				outputFile<<right<<setw(15)<<"---";
+				outputFile<<right<<setw(15)<<"---\n";
+			}
 		}
-	}*/	
+	}
+	outputFile.close();	
 }
 
 
@@ -189,7 +190,7 @@ void create_report() {
 
 
 	string dirFile;
-	dirFile = "zero_info/" + dirFile;
+	dirFile = "report_info/" + dirFile;
         dirFile = "global_exp_2_ss_astar_10_GA_ipdb_lmcut_v1/" + dirFile;
         dirFile = "reports/" + dirFile;
         dirFile = "marvin/" + dirFile;
@@ -201,11 +202,24 @@ void create_report() {
 		cout<<"dir Created!\n";
 	}
 
+	string resultFile = "report_info.txt";
+	resultFile = "report_info/" + resultFile;
+        resultFile = "global_exp_2_ss_astar_10_GA_ipdb_lmcut_v1/" + resultFile;
+        resultFile = "reports/" + resultFile;
+        resultFile = "marvin/" + resultFile;
+        resultFile = "marvin/" + resultFile;
+        resultFile = "/home/"+ resultFile;
+
+
+
+	vector<string> domains;
 	do {
                 readFile>>domain;
-		create_report1(domain);
+		domains.push_back(domain);
 		counter++;
-	} while (counter < total_domains);
+	} while (counter < total_domains);	
+	
+	create_report1(domains, resultFile);
 }
 
 int main() {
