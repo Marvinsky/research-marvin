@@ -110,13 +110,13 @@ void create_report1(vector<string> domains, string resultFile) {
 				if ((x > 0 && x < 1) && (y > 1 && y < 2)) {
 					count_first_square++;
 					first_square.push_back(pair<double, double>(x, y));
-				} else if ((x > 0 && x < 1) && (y > 0 && y < 1)) { //Second square
+				} else if ((x > 1 && x < 2) && (y > 1 && y < 2))       { //Second square
 					count_second_square++;
 					second_square.push_back(pair<double, double>(x, y));
-				} else if ((x > 1 && x < 2) && (y > 0 && y < 1)) { //Third square
+				} else if ((x > 0 && x < 1) && (y > 0 && y < 1)) { //Third square
 					count_third_square++;
 					third_square.push_back(pair<double, double>(x, y));
-				} else if ((x > 1 && x < 2) && (y > 1 && y < 2)) { //fourth square
+				} else if ((x > 1 && x < 2) && (y > 0 && y < 1)) { //fourth square
 					count_fourth_square++;
 					fourth_square.push_back(pair<double, double>(x, y));
 				} else if (x == 1 && y > 0) {
