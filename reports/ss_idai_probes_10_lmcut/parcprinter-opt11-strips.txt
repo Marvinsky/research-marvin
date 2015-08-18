@@ -2,6 +2,9 @@
 
 parcprinter-opt11-strips
 
+p14.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
 p19.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1443164		1			1
@@ -10,9 +13,21 @@ p18.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1370922		1			1
 
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
 p12.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 851450		1			1
+
+p13.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+1219110		4			----zero_info----
+1224110		7			0.9
+1225110		839182			0.9
+
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p05.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -25,6 +40,13 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p10.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1196841		1			1
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+871096		27			27
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p17.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -46,10 +68,16 @@ p08.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 751642		1			1
 
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
 p11.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1216462		1			1
 
 p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-438047		39831			43157.4
+438047		39831			36848.8
+
+Files that contains zero_info:	1
+p13.pddl

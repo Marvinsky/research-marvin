@@ -4,41 +4,108 @@ scanalyzer-opt11-strips
 
 p14.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-26		80			56.6
-27		1341			1412.6
-28		10903			8616.6
-29		77634			68593.4
-30		587832			571087
+26		80			90.2
+27		1341			1211.8
+28		10903			9788.6
+29		77634			85495.8
+30		587832			494083
+
+p19.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p18.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+31		1535			1571
+32		146630			133106
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+25		3			3
+26		27			27.6
+27		441			424.7
+28		5343			5698.9
+29		91152			78362.3
+30		1.44917e+06			1.50317e+06
+
+p13.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+26		5			5
+27		46			53.4
+28		184			149.9
+29		855			775.6
+30		5784			5129.1
+31		41003			49039.9
+32		286074			196390
+
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
 
 p01.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 12		2			2
 13		11			11
 
+p10.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
 p04.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-24		175569			139617
+24		175569			192849
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+25		243			261
+26		12789			13112.2
+27		453359			505568
+28		1.39085e+07			1.64795e+07
+
+p17.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+43		91581			88845
+
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+36		1290			----zero_info----
 
 p03.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 19		3			3
-20		20			20
-21		230			249.5
-22		1997			2265.4
-23		22910			19379.4
-24		251271			221505
-25		3.11983e+06			2.79005e+06
-26		3.86201e+07			4.34131e+07
+20		20			18.4
+21		230			251.3
+22		1997			1764.2
+23		22910			20824.3
+24		251271			286239
+25		3.11983e+06			3.32346e+06
+26		3.86201e+07			2.56352e+07
+
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+37		11143			11743
 
 p11.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-24		17			16.6
-25		861			740.2
+24		17			7.8
+25		861			849.8
 26		41773			30559.4
 
 p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
-19		45			43.6
-20		1120			1155.1
-21		20468			22533.7
-22		336211			362257
+19		45			45.4
+20		1120			1111.9
+21		20468			19083.1
+22		336211			317284
+
+Files that contains zero_info:	1
+p20.pddl
