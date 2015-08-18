@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/nomystery-opt11-strips/fdist/p17_29.pddl
-predictionSS: 1.62778e+06
-ss_timer: 22.68
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/nomystery-opt11-strips/fdist/p17_29.pddl
+predictionSS: 346185
+ss_timer: 27.7
 g:0
 size: 1
 	f: 24	q: 1
@@ -20,93 +20,85 @@ size: 6
 
 g:3
 size: 7
-	f: 23	q: 1
-	f: 24	q: 3
+	f: 23	q: 0.6
+	f: 24	q: 3.4
 	f: 25	q: 5
-	f: 26	q: 13
-	f: 27	q: 5
+	f: 26	q: 12.6
+	f: 27	q: 5.4
 	f: 28	q: 6
 	f: 29	q: 3
 
 g:4
 size: 6
-	f: 24	q: 3
-	f: 25	q: 24.3
-	f: 26	q: 50.2
-	f: 27	q: 27.3
-	f: 28	q: 24.4
-	f: 29	q: 23.7
+	f: 24	q: 3.4
+	f: 25	q: 29.2
+	f: 26	q: 50.8
+	f: 27	q: 25.6
+	f: 28	q: 24
+	f: 29	q: 25.4
 
 g:5
 size: 6
 	f: 24	q: 1.8
-	f: 25	q: 63.5
-	f: 26	q: 138.6
-	f: 27	q: 163.2
-	f: 28	q: 179.1
-	f: 29	q: 94.5
+	f: 25	q: 57.7
+	f: 26	q: 126.8
+	f: 27	q: 157.1
+	f: 28	q: 174.4
+	f: 29	q: 98.7
 
 g:6
 size: 5
-	f: 25	q: 141.7
-	f: 26	q: 222.4
-	f: 27	q: 571.5
-	f: 28	q: 834.5
-	f: 29	q: 615.3
+	f: 25	q: 72.7
+	f: 26	q: 186
+	f: 27	q: 487.8
+	f: 28	q: 869.4
+	f: 29	q: 563.3
 
 g:7
 size: 5
-	f: 25	q: 207.8
-	f: 26	q: 328.3
-	f: 27	q: 2352.1
-	f: 28	q: 2893
-	f: 29	q: 2805.9
+	f: 25	q: 49.2
+	f: 26	q: 116.1
+	f: 27	q: 1206.2
+	f: 28	q: 2936
+	f: 29	q: 2809.5
 
 g:8
 size: 4
-	f: 26	q: 375.4
-	f: 27	q: 6602.6
-	f: 28	q: 6514.7
-	f: 29	q: 11451.6
+	f: 25	q: 37.2
+	f: 27	q: 2380.3
+	f: 28	q: 5418.8
+	f: 29	q: 8457.6
 
 g:9
-size: 4
-	f: 26	q: 553.8
-	f: 27	q: 11193.7
-	f: 28	q: 12503.7
-	f: 29	q: 41042.5
+size: 3
+	f: 27	q: 2218.8
+	f: 28	q: 12134.1
+	f: 29	q: 19382.9
 
 g:10
-size: 4
-	f: 26	q: 273.6
-	f: 27	q: 12017.5
-	f: 28	q: 14963
-	f: 29	q: 136005
+size: 3
+	f: 27	q: 2218.8
+	f: 28	q: 12843.8
+	f: 29	q: 40915.1
 
 g:11
-size: 3
-	f: 27	q: 9043.3
-	f: 28	q: 20211.6
-	f: 29	q: 307761
+size: 2
+	f: 28	q: 6395.7
+	f: 29	q: 80441.8
 
 g:12
-size: 3
-	f: 27	q: 684
-	f: 28	q: 3515.4
-	f: 29	q: 522245
+size: 1
+	f: 29	q: 78422.8
 
 g:13
-size: 2
-	f: 28	q: 3202.8
-	f: 29	q: 420375
+size: 1
+	f: 29	q: 64800
 
 g:14
-size: 1
-	f: 29	q: 37717.2
+size: 0
 
 g:15
-size: 1
-	f: 29	q: 37717.2
+size: 0
 
 g:16
 size: 0

@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/elevators-opt11-strips/fdist/p01_51.pddl
-predictionSS: 957.2
-ss_timer: 20.12
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/elevators-opt11-strips/fdist/p01_51.pddl
+predictionSS: 1295.5
+ss_timer: 55.98
 g:0
 size: 1
 	f: 39	q: 1
@@ -9,84 +9,89 @@ g:1
 size: 7
 	f: 38	q: 1
 	f: 41	q: 1
-	f: 42	q: 1.7
-	f: 43	q: 4.6
-	f: 46	q: 1.6
-	f: 47	q: 2.1
-	f: 49	q: 2
+	f: 42	q: 2.1
+	f: 43	q: 4
+	f: 46	q: 1.8
+	f: 47	q: 2.3
+	f: 49	q: 1.8
 
 g:2
 size: 10
 	f: 41	q: 1.6
-	f: 43	q: 8
-	f: 44	q: 9.8
-	f: 45	q: 9.2
-	f: 46	q: 5
-	f: 47	q: 0.6
-	f: 48	q: 23.3
-	f: 49	q: 16
-	f: 50	q: 18.2
-	f: 51	q: 12.5
+	f: 43	q: 9.6
+	f: 44	q: 6.3
+	f: 45	q: 12.1
+	f: 46	q: 2.7
+	f: 47	q: 7.7
+	f: 48	q: 21.3
+	f: 49	q: 12.1
+	f: 50	q: 19
+	f: 51	q: 14.6
 
 g:3
-size: 6
-	f: 44	q: 12.5
-	f: 46	q: 5.9
-	f: 48	q: 11.8
-	f: 49	q: 38.5
-	f: 50	q: 105.3
-	f: 51	q: 50.8
+size: 7
+	f: 43	q: 16.4
+	f: 45	q: 2.9
+	f: 46	q: 1.2
+	f: 48	q: 56.3
+	f: 49	q: 38.6
+	f: 50	q: 60.8
+	f: 51	q: 56.7
 
 g:4
 size: 7
-	f: 45	q: 0.3
-	f: 46	q: 2.5
-	f: 47	q: 14.6
-	f: 48	q: 31.3
-	f: 49	q: 7.3
-	f: 50	q: 6.4
-	f: 51	q: 56.6
+	f: 45	q: 11.1
+	f: 46	q: 9.2
+	f: 47	q: 2.8
+	f: 48	q: 36.2
+	f: 49	q: 25.1
+	f: 50	q: 50
+	f: 51	q: 36.9
 
 g:5
-size: 5
-	f: 45	q: 10.8
-	f: 47	q: 13.2
-	f: 48	q: 14.6
-	f: 50	q: 28.3
-	f: 51	q: 54.3
+size: 7
+	f: 45	q: 5.6
+	f: 46	q: 0.4
+	f: 47	q: 1.5
+	f: 48	q: 19.1
+	f: 49	q: 4
+	f: 50	q: 102.8
+	f: 51	q: 59.5
 
 g:6
-size: 4
-	f: 47	q: 14.3
-	f: 48	q: 12.5
-	f: 50	q: 42.2
-	f: 51	q: 29.5
+size: 5
+	f: 46	q: 3
+	f: 47	q: 2.9
+	f: 48	q: 17.9
+	f: 50	q: 28.6
+	f: 51	q: 106.3
 
 g:7
 size: 3
 	f: 48	q: 0.3
-	f: 50	q: 64.9
-	f: 51	q: 38.1
+	f: 50	q: 110.7
+	f: 51	q: 99.5
 
 g:8
 size: 2
-	f: 50	q: 10.5
-	f: 51	q: 41.5
+	f: 50	q: 33.4
+	f: 51	q: 37.8
 
 g:9
-size: 1
-	f: 51	q: 26.4
+size: 2
+	f: 50	q: 10.8
+	f: 51	q: 11.2
 
 g:10
 size: 1
-	f: 51	q: 64
+	f: 51	q: 92.4
 
 g:11
 size: 0
 
 g:12
 size: 1
-	f: 51	q: 28.8
+	f: 51	q: 21.6
 
 g:13
 size: 0

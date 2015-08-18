@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/elevators-opt08-strips/fdist/p11_51.pddl
-predictionSS: 1486.2
-ss_timer: 32.12
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/elevators-opt08-strips/fdist/p11_51.pddl
+predictionSS: 1526.3
+ss_timer: 56.62
 g:0
 size: 1
 	f: 39	q: 1
@@ -9,90 +9,85 @@ g:1
 size: 7
 	f: 38	q: 1
 	f: 41	q: 1
-	f: 42	q: 1.1
-	f: 43	q: 4.3
-	f: 46	q: 1.5
-	f: 47	q: 2.7
-	f: 49	q: 2.4
+	f: 42	q: 1.8
+	f: 43	q: 4.6
+	f: 46	q: 2.2
+	f: 47	q: 2
+	f: 49	q: 1.4
 
 g:2
 size: 10
-	f: 41	q: 2.5
-	f: 43	q: 9.3
-	f: 44	q: 5.8
-	f: 45	q: 9
-	f: 46	q: 5
-	f: 47	q: 6.4
-	f: 48	q: 20.9
-	f: 49	q: 15.1
-	f: 50	q: 14.4
-	f: 51	q: 11.5
+	f: 41	q: 1.6
+	f: 43	q: 9.2
+	f: 44	q: 12.5
+	f: 45	q: 13
+	f: 46	q: 2.3
+	f: 47	q: 5
+	f: 48	q: 23.2
+	f: 49	q: 11.5
+	f: 50	q: 19.9
+	f: 51	q: 13.4
 
 g:3
-size: 7
-	f: 44	q: 13.4
-	f: 45	q: 3
-	f: 46	q: 5.6
-	f: 48	q: 30.5
-	f: 49	q: 37.4
-	f: 50	q: 88.1
-	f: 51	q: 34.1
+size: 6
+	f: 45	q: 9.5
+	f: 46	q: 5.3
+	f: 48	q: 33.1
+	f: 49	q: 58
+	f: 50	q: 116.2
+	f: 51	q: 38.8
 
 g:4
 size: 7
-	f: 45	q: 1.9
-	f: 46	q: 19.4
-	f: 47	q: 19.5
-	f: 48	q: 42.5
-	f: 49	q: 17.7
-	f: 50	q: 26.7
-	f: 51	q: 69
+	f: 45	q: 19.4
+	f: 46	q: 9.3
+	f: 47	q: 6.1
+	f: 48	q: 18.2
+	f: 49	q: 14
+	f: 50	q: 41.1
+	f: 51	q: 16.5
 
 g:5
-size: 7
-	f: 45	q: 19.9
-	f: 46	q: 1.2
-	f: 47	q: 18.3
-	f: 48	q: 19.8
-	f: 49	q: 13.4
-	f: 50	q: 42.8
-	f: 51	q: 81.2
+size: 6
+	f: 45	q: 13.1
+	f: 46	q: 0.8
+	f: 48	q: 9.6
+	f: 49	q: 5.9
+	f: 50	q: 79.5
+	f: 51	q: 57.3
 
 g:6
-size: 6
-	f: 46	q: 9.2
-	f: 47	q: 23.7
-	f: 48	q: 24.2
-	f: 49	q: 8.7
-	f: 50	q: 50.4
-	f: 51	q: 47.7
+size: 4
+	f: 47	q: 6.8
+	f: 48	q: 4.6
+	f: 50	q: 29.9
+	f: 51	q: 69.7
 
 g:7
-size: 3
-	f: 48	q: 0.7
-	f: 50	q: 125.9
-	f: 51	q: 76.8
+size: 2
+	f: 50	q: 201.9
+	f: 51	q: 111.9
 
 g:8
 size: 2
-	f: 50	q: 30.6
-	f: 51	q: 95.3
+	f: 50	q: 21.3
+	f: 51	q: 88.3
 
 g:9
 size: 2
-	f: 50	q: 7.8
-	f: 51	q: 53.3
+	f: 50	q: 12
+	f: 51	q: 35.6
 
 g:10
 size: 1
-	f: 51	q: 97
+	f: 51	q: 186.8
 
 g:11
 size: 0
 
 g:12
 size: 1
-	f: 51	q: 114.6
+	f: 51	q: 79.2
 
 g:13
 size: 0

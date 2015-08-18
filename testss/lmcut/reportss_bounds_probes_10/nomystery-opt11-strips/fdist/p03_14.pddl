@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/nomystery-opt11-strips/fdist/p03_14.pddl
-predictionSS: 65
-ss_timer: 0.44
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/nomystery-opt11-strips/fdist/p03_14.pddl
+predictionSS: 47.2
+ss_timer: 0.48
 g:0
 size: 1
 	f: 13	q: 1
@@ -17,19 +17,19 @@ size: 2
 
 g:3
 size: 1
-	f: 14	q: 12.2
+	f: 14	q: 9
 
 g:4
 size: 1
-	f: 14	q: 19.4
+	f: 14	q: 11.2
 
 g:5
 size: 1
-	f: 14	q: 20.2
+	f: 14	q: 12.2
 
 g:6
 size: 1
-	f: 14	q: 1
+	f: 14	q: 2.6
 
 g:7
 size: 0

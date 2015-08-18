@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/tidybot-opt11-strips/fdist/p10_22.pddl
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/tidybot-opt11-strips/fdist/p10_22.pddl
 predictionSS: 1
-ss_timer: 1.52
+ss_timer: 3.52
 g:0
 size: 1
 	f: 22	q: 1

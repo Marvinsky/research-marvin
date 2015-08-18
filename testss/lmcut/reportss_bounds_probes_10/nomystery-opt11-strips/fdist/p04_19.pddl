@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/nomystery-opt11-strips/fdist/p04_19.pddl
-predictionSS: 5452.9
-ss_timer: 2.6
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/nomystery-opt11-strips/fdist/p04_19.pddl
+predictionSS: 2239.8
+ss_timer: 3.08
 g:0
 size: 1
 	f: 16	q: 1
@@ -13,66 +13,58 @@ size: 2
 g:2
 size: 3
 	f: 17	q: 6
-	f: 18	q: 4.9
-	f: 19	q: 5.1
+	f: 18	q: 6.7
+	f: 19	q: 3.3
 
 g:3
 size: 3
-	f: 17	q: 5.4
-	f: 18	q: 17.6
-	f: 19	q: 35.9
+	f: 17	q: 7.8
+	f: 18	q: 23.1
+	f: 19	q: 33.1
 
 g:4
 size: 3
-	f: 17	q: 10.2
-	f: 18	q: 19.4
-	f: 19	q: 106.3
+	f: 17	q: 13.2
+	f: 18	q: 29.3
+	f: 19	q: 111.1
 
 g:5
 size: 3
 	f: 17	q: 6
-	f: 18	q: 60
-	f: 19	q: 173.9
+	f: 18	q: 67.2
+	f: 19	q: 223.6
 
 g:6
 size: 3
 	f: 17	q: 3.6
-	f: 18	q: 111.2
-	f: 19	q: 364.6
+	f: 18	q: 102
+	f: 19	q: 464.2
 
 g:7
 size: 2
-	f: 18	q: 150
-	f: 19	q: 387.8
+	f: 18	q: 140.4
+	f: 19	q: 367
 
 g:8
 size: 2
-	f: 18	q: 128
-	f: 19	q: 508.8
+	f: 18	q: 129.6
+	f: 19	q: 368
 
 g:9
-size: 2
-	f: 18	q: 194.4
-	f: 19	q: 591.2
+size: 1
+	f: 19	q: 129.6
 
 g:10
-size: 2
-	f: 18	q: 194.4
-	f: 19	q: 468.8
+size: 0
 
 g:11
-size: 2
-	f: 18	q: 259.2
-	f: 19	q: 339.2
+size: 0
 
 g:12
-size: 2
-	f: 18	q: 129.6
-	f: 19	q: 518.4
+size: 0
 
 g:13
-size: 1
-	f: 19	q: 648
+size: 0
 
 g:14
 size: 0

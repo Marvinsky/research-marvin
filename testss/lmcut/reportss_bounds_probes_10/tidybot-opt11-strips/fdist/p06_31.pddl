@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/tidybot-opt11-strips/fdist/p06_31.pddl
-predictionSS: 12125.1
-ss_timer: 64.36
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/tidybot-opt11-strips/fdist/p06_31.pddl
+predictionSS: 49844.4
+ss_timer: 109.6
 g:0
 size: 1
 	f: 27	q: 1
@@ -35,8 +35,8 @@ size: 5
 	f: 27	q: 1
 	f: 28	q: 1
 	f: 29	q: 9
-	f: 30	q: 28.5
-	f: 31	q: 5.5
+	f: 30	q: 25.5
+	f: 31	q: 8.5
 
 g:6
 size: 5
@@ -60,78 +60,92 @@ size: 5
 	f: 26	q: 17
 	f: 27	q: 2
 	f: 28	q: 1
-	f: 29	q: 95
-	f: 30	q: 13
+	f: 29	q: 93.5
+	f: 30	q: 14.5
 
 g:9
-size: 4
+size: 6
+	f: 26	q: 1.7
+	f: 27	q: 1.7
 	f: 28	q: 20
 	f: 29	q: 20
-	f: 30	q: 23
-	f: 31	q: 125
+	f: 30	q: 30.8
+	f: 31	q: 132.8
 
 g:10
-size: 4
-	f: 28	q: 203.7
-	f: 29	q: 40.7
-	f: 30	q: 24.3
-	f: 31	q: 203.7
+size: 5
+	f: 27	q: 1.7
+	f: 28	q: 197.5
+	f: 29	q: 69
+	f: 30	q: 32.6
+	f: 31	q: 190.4
 
 g:11
-size: 4
-	f: 28	q: 37.3
-	f: 29	q: 37.3
-	f: 30	q: 268.7
-	f: 31	q: 351.9
+size: 5
+	f: 26	q: 1.7
+	f: 28	q: 51
+	f: 29	q: 52.7
+	f: 30	q: 288.8
+	f: 31	q: 356.9
 
 g:12
-size: 3
-	f: 29	q: 37.3
-	f: 30	q: 857.5
-	f: 31	q: 665.4
+size: 5
+	f: 26	q: 1.7
+	f: 28	q: 13.4
+	f: 29	q: 61
+	f: 30	q: 954.7
+	f: 31	q: 895.2
 
 g:13
-size: 3
-	f: 28	q: 37.3
-	f: 30	q: 440.4
-	f: 31	q: 477.7
+size: 5
+	f: 27	q: 1.7
+	f: 28	q: 77.8
+	f: 29	q: 1.7
+	f: 30	q: 898.2
+	f: 31	q: 947.1
 
 g:14
-size: 3
-	f: 28	q: 37.3
-	f: 30	q: 111.9
-	f: 31	q: 477.7
+size: 4
+	f: 26	q: 1.7
+	f: 28	q: 88
+	f: 30	q: 482.6
+	f: 31	q: 1221.8
 
 g:15
-size: 3
-	f: 29	q: 37.3
-	f: 30	q: 664.2
-	f: 31	q: 86.8
+size: 6
+	f: 26	q: 1.7
+	f: 27	q: 1.7
+	f: 28	q: 1.7
+	f: 29	q: 89.7
+	f: 30	q: 1880.4
+	f: 31	q: 143.5
 
 g:16
-size: 2
-	f: 28	q: 37.3
-	f: 30	q: 987
+size: 3
+	f: 28	q: 98.2
+	f: 29	q: 6.8
+	f: 30	q: 2531.3
 
 g:17
 size: 4
-	f: 28	q: 37.3
-	f: 29	q: 37.3
-	f: 30	q: 37.3
-	f: 31	q: 1024.3
+	f: 28	q: 111.8
+	f: 29	q: 1346.6
+	f: 30	q: 98.2
+	f: 31	q: 6802.2
 
 g:18
 size: 2
-	f: 30	q: 1210.8
-	f: 31	q: 149.2
+	f: 30	q: 2626.9
+	f: 31	q: 2916.8
 
 g:19
 size: 2
-	f: 30	q: 1509.2
-	f: 31	q: 1426
+	f: 30	q: 8336
+	f: 31	q: 8336
 
 g:20
-size: 0
+size: 1
+	f: 31	q: 7036
 
 g:21
 size: 0

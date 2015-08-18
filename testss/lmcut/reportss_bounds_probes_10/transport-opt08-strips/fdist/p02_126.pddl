@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/transport-opt08-strips/fdist/p02_126.pddl
-predictionSS: 5789.8
-ss_timer: 0.82
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/transport-opt08-strips/fdist/p02_126.pddl
+predictionSS: 5745
+ss_timer: 1.3
 g:0
 size: 1
 	f: 115	q: 1
@@ -22,78 +22,78 @@ size: 2
 
 g:4
 size: 3
-	f: 111	q: 5
+	f: 111	q: 3.4
 	f: 119	q: 8
 	f: 120	q: 8
 
 g:5
 size: 2
-	f: 111	q: 5
+	f: 111	q: 3.4
 	f: 121	q: 32
 
 g:6
 size: 3
-	f: 113	q: 17.8
+	f: 113	q: 25.8
 	f: 121	q: 32
 	f: 122	q: 32
 
 g:7
 size: 2
-	f: 113	q: 17.8
+	f: 113	q: 25.8
 	f: 123	q: 128
 
 g:8
 size: 3
-	f: 115	q: 94.6
+	f: 115	q: 89.8
 	f: 123	q: 128
 	f: 124	q: 128
 
 g:9
 size: 2
-	f: 115	q: 94.6
+	f: 115	q: 89.8
 	f: 125	q: 512
 
 g:10
 size: 3
-	f: 117	q: 350.6
+	f: 117	q: 345.8
 	f: 125	q: 512
 	f: 126	q: 512
 
 g:11
 size: 1
-	f: 117	q: 350.6
+	f: 117	q: 345.8
 
 g:12
 size: 1
-	f: 119	q: 350.6
+	f: 119	q: 345.8
 
 g:13
 size: 1
-	f: 119	q: 350.6
+	f: 119	q: 345.8
 
 g:14
 size: 1
-	f: 121	q: 350.6
+	f: 121	q: 345.8
 
 g:15
 size: 1
-	f: 121	q: 350.6
+	f: 121	q: 345.8
 
 g:16
 size: 1
-	f: 123	q: 350.6
+	f: 123	q: 345.8
 
 g:17
 size: 1
-	f: 123	q: 350.6
+	f: 123	q: 345.8
 
 g:18
 size: 1
-	f: 125	q: 350.6
+	f: 125	q: 345.8
 
 g:19
 size: 1
-	f: 125	q: 350.6
+	f: 125	q: 345.8
 
 g:20
 size: 0

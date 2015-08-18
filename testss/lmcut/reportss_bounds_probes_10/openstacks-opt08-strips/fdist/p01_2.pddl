@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/openstacks-opt08-strips/fdist/p01_2.pddl
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/openstacks-opt08-strips/fdist/p01_2.pddl
 predictionSS: 32
-ss_timer: 0.2
+ss_timer: 0.24
 g:0
 size: 1
 	f: 1	q: 1

@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/woodworking-opt08-strips/fdist/p02_185.pddl
-predictionSS: 38771.3
-ss_timer: 3.2
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/woodworking-opt08-strips/fdist/p02_185.pddl
+predictionSS: 40679.1
+ss_timer: 4.02
 g:0
 size: 1
 	f: 185	q: 1
@@ -11,35 +11,35 @@ size: 1
 
 g:2
 size: 1
-	f: 185	q: 17.2
+	f: 185	q: 20.2
 
 g:3
 size: 1
-	f: 185	q: 82.6
+	f: 185	q: 92.2
 
 g:4
 size: 1
-	f: 185	q: 359.8
+	f: 185	q: 424.7
 
 g:5
 size: 1
-	f: 185	q: 1400
+	f: 185	q: 1544
 
 g:6
 size: 1
-	f: 185	q: 4405.8
+	f: 185	q: 4625.9
 
 g:7
 size: 1
-	f: 185	q: 10236.9
+	f: 185	q: 10456.4
 
 g:8
 size: 1
-	f: 185	q: 15132.8
+	f: 185	q: 15550.3
 
 g:9
 size: 1
-	f: 185	q: 7131.2
+	f: 185	q: 7960.4
 
 g:10
 size: 0

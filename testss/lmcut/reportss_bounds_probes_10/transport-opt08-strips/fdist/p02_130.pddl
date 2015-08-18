@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/transport-opt08-strips/fdist/p02_130.pddl
-predictionSS: 86558.2
-ss_timer: 1.24
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/transport-opt08-strips/fdist/p02_130.pddl
+predictionSS: 100366
+ss_timer: 1.9
 g:0
 size: 1
 	f: 115	q: 1
@@ -12,116 +12,116 @@ size: 2
 
 g:2
 size: 5
-	f: 109	q: 0.8
-	f: 117	q: 1.5
+	f: 109	q: 1
+	f: 117	q: 2
 	f: 118	q: 2
-	f: 127	q: 1.2
-	f: 128	q: 3.5
+	f: 127	q: 1
+	f: 128	q: 3
 
 g:3
 size: 3
-	f: 109	q: 0.8
-	f: 119	q: 7
+	f: 109	q: 1
+	f: 119	q: 8
 	f: 129	q: 14
 
 g:4
 size: 5
-	f: 111	q: 3.4
-	f: 119	q: 6.7
-	f: 120	q: 7
-	f: 129	q: 5.9
-	f: 130	q: 20.6
+	f: 111	q: 5
+	f: 119	q: 5.1
+	f: 120	q: 8
+	f: 129	q: 5
+	f: 130	q: 26
 
 g:5
 size: 2
-	f: 111	q: 3.4
-	f: 121	q: 27.4
+	f: 111	q: 5
+	f: 121	q: 26.2
 
 g:6
 size: 3
-	f: 113	q: 11.4
-	f: 121	q: 27.4
-	f: 122	q: 27.4
+	f: 113	q: 16.4
+	f: 121	q: 26.2
+	f: 122	q: 26.2
 
 g:7
 size: 2
-	f: 113	q: 11.4
-	f: 123	q: 109.6
+	f: 113	q: 16.4
+	f: 123	q: 104.8
 
 g:8
 size: 3
-	f: 115	q: 44.2
-	f: 123	q: 109.6
-	f: 124	q: 109.6
+	f: 115	q: 70
+	f: 123	q: 104.8
+	f: 124	q: 104.8
 
 g:9
 size: 2
-	f: 115	q: 44.2
-	f: 125	q: 438.4
+	f: 115	q: 70
+	f: 125	q: 419.2
 
 g:10
 size: 3
-	f: 117	q: 268.2
-	f: 125	q: 438.4
-	f: 126	q: 438.4
+	f: 117	q: 236.4
+	f: 125	q: 419.2
+	f: 126	q: 419.2
 
 g:11
 size: 2
-	f: 117	q: 268.2
-	f: 127	q: 1753.6
+	f: 117	q: 236.4
+	f: 127	q: 1676.8
 
 g:12
 size: 3
-	f: 119	q: 1573.8
-	f: 127	q: 1753.6
-	f: 128	q: 1753.6
+	f: 119	q: 1503.6
+	f: 127	q: 1676.8
+	f: 128	q: 1676.8
 
 g:13
 size: 2
-	f: 119	q: 1573.8
-	f: 129	q: 7014.4
+	f: 119	q: 1503.6
+	f: 129	q: 6707.2
 
 g:14
 size: 3
-	f: 121	q: 5465
-	f: 129	q: 7014.4
-	f: 130	q: 7014.4
+	f: 121	q: 6982
+	f: 129	q: 6707.2
+	f: 130	q: 6707.2
 
 g:15
 size: 1
-	f: 121	q: 5465
+	f: 121	q: 6982
 
 g:16
 size: 1
-	f: 123	q: 5465
+	f: 123	q: 6982
 
 g:17
 size: 1
-	f: 123	q: 5465
+	f: 123	q: 6982
 
 g:18
 size: 1
-	f: 125	q: 5465
+	f: 125	q: 6982
 
 g:19
 size: 1
-	f: 125	q: 5465
+	f: 125	q: 6982
 
 g:20
 size: 1
-	f: 127	q: 5465
+	f: 127	q: 6982
 
 g:21
 size: 1
-	f: 127	q: 5465
+	f: 127	q: 6982
 
 g:22
 size: 1
-	f: 129	q: 5465
+	f: 129	q: 6982
 
 g:23
 size: 1
-	f: 129	q: 5465
+	f: 129	q: 6982
 
 g:24
 size: 0

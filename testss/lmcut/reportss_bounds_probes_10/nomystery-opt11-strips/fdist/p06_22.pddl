@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/nomystery-opt11-strips/fdist/p06_22.pddl
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/nomystery-opt11-strips/fdist/p06_22.pddl
 predictionSS: 1
-ss_timer: 0.34
+ss_timer: 0.38
 g:0
 size: 1
 	f: 22	q: 1

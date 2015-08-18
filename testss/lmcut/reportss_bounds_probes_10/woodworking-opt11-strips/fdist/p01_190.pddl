@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/woodworking-opt11-strips/fdist/p01_190.pddl
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/woodworking-opt11-strips/fdist/p01_190.pddl
 predictionSS: 5
-ss_timer: 0.14
+ss_timer: 0.22
 g:0
 size: 1
 	f: 175	q: 1
@@ -11,8 +11,8 @@ size: 1
 
 g:2
 size: 2
-	f: 185	q: 0.6
-	f: 190	q: 2.4
+	f: 185	q: 0.9
+	f: 190	q: 2.1
 
 g:3
 size: 0

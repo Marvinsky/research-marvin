@@ -1,102 +1,102 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/elevators-opt08-strips/fdist/p01_38.pddl
-predictionSS: 2865.3
-ss_timer: 24.6
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/elevators-opt08-strips/fdist/p01_38.pddl
+predictionSS: 2007.1
+ss_timer: 30.34
 g:0
 size: 1
 	f: 25	q: 1
 
 g:1
-size: 7
-	f: 26	q: 0.6
+size: 6
+	f: 26	q: 1
 	f: 27	q: 1
-	f: 31	q: 0.9
-	f: 32	q: 3
-	f: 34	q: 1.5
+	f: 32	q: 4.4
+	f: 34	q: 0.6
 	f: 35	q: 1
 	f: 38	q: 1
 
 g:2
 size: 10
-	f: 26	q: 2.9
-	f: 27	q: 0.4
-	f: 31	q: 2.4
-	f: 32	q: 6.1
-	f: 33	q: 3.5
-	f: 34	q: 5.7
-	f: 35	q: 6.8
-	f: 36	q: 3.6
-	f: 37	q: 1.8
-	f: 38	q: 7.9
+	f: 26	q: 0.6
+	f: 27	q: 1.4
+	f: 31	q: 1.8
+	f: 32	q: 4.6
+	f: 33	q: 4
+	f: 34	q: 5.5
+	f: 35	q: 6.7
+	f: 36	q: 2.4
+	f: 37	q: 6
+	f: 38	q: 7
 
 g:3
 size: 10
-	f: 26	q: 0.9
-	f: 27	q: 0.5
-	f: 31	q: 1.3
-	f: 32	q: 1
-	f: 33	q: 18.7
-	f: 34	q: 5.8
-	f: 35	q: 32.1
-	f: 36	q: 10.1
-	f: 37	q: 24.2
-	f: 38	q: 31.5
+	f: 26	q: 0.7
+	f: 27	q: 3.5
+	f: 31	q: 0.9
+	f: 32	q: 4.3
+	f: 33	q: 11.2
+	f: 34	q: 4.9
+	f: 35	q: 19.2
+	f: 36	q: 6.8
+	f: 37	q: 21.5
+	f: 38	q: 25.3
 
 g:4
-size: 6
-	f: 33	q: 24.6
-	f: 34	q: 7.8
-	f: 35	q: 53.2
-	f: 36	q: 40.5
-	f: 37	q: 64
-	f: 38	q: 67.3
+size: 7
+	f: 32	q: 5
+	f: 33	q: 8.9
+	f: 34	q: 18.3
+	f: 35	q: 49.2
+	f: 36	q: 9.2
+	f: 37	q: 41.4
+	f: 38	q: 65.3
 
 g:5
 size: 6
-	f: 33	q: 33.1
-	f: 34	q: 9.4
-	f: 35	q: 74.6
-	f: 36	q: 83.4
-	f: 37	q: 71.8
-	f: 38	q: 105.6
+	f: 33	q: 12.3
+	f: 34	q: 14
+	f: 35	q: 37.4
+	f: 36	q: 60.1
+	f: 37	q: 24
+	f: 38	q: 108.3
 
 g:6
 size: 6
-	f: 33	q: 7.8
-	f: 34	q: 6.8
-	f: 35	q: 2.7
-	f: 36	q: 158.4
-	f: 37	q: 67
-	f: 38	q: 239.9
+	f: 33	q: 31.5
+	f: 34	q: 12
+	f: 35	q: 8.8
+	f: 36	q: 105
+	f: 37	q: 50.5
+	f: 38	q: 146.1
 
 g:7
-size: 5
-	f: 34	q: 1.2
-	f: 35	q: 5.4
-	f: 36	q: 313.7
-	f: 37	q: 34
-	f: 38	q: 237.1
+size: 6
+	f: 33	q: 2.8
+	f: 34	q: 6
+	f: 35	q: 1.4
+	f: 36	q: 145.1
+	f: 37	q: 37.9
+	f: 38	q: 190.4
 
 g:8
 size: 3
-	f: 36	q: 308.6
-	f: 37	q: 43.8
-	f: 38	q: 213.5
+	f: 36	q: 206.9
+	f: 37	q: 52.5
+	f: 38	q: 158.7
 
 g:9
 size: 3
-	f: 36	q: 161.4
-	f: 37	q: 5.4
-	f: 38	q: 127.5
+	f: 36	q: 116.6
+	f: 37	q: 10.4
+	f: 38	q: 85.8
 
 g:10
-size: 3
-	f: 36	q: 71.4
-	f: 37	q: 9
-	f: 38	q: 34.6
+size: 2
+	f: 37	q: 10.4
+	f: 38	q: 23.8
 
 g:11
 size: 1
-	f: 38	q: 3.6
+	f: 38	q: 2.8
 
 g:12
 size: 0

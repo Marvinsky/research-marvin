@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/scanalyzer-opt11-strips/fdist/p03_26.pddl
-predictionSS: 4.34131e+07
-ss_timer: 5.16
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/scanalyzer-opt11-strips/fdist/p03_26.pddl
+predictionSS: 2.56352e+07
+ss_timer: 8.16
 g:0
 size: 1
 	f: 19	q: 1
@@ -15,84 +15,83 @@ g:2
 size: 5
 	f: 19	q: 1
 	f: 20	q: 8
-	f: 21	q: 36.1
-	f: 22	q: 42.9
+	f: 21	q: 32.5
+	f: 22	q: 46.5
 	f: 23	q: 12
 
 g:3
-size: 5
-	f: 20	q: 7.2
-	f: 21	q: 86.5
-	f: 22	q: 277.9
-	f: 23	q: 511.1
-	f: 24	q: 117.3
+size: 6
+	f: 20	q: 7.4
+	f: 21	q: 82.9
+	f: 22	q: 263.9
+	f: 23	q: 531.2
+	f: 24	q: 104.4
+	f: 25	q: 10.2
 
 g:4
-size: 5
-	f: 21	q: 88.7
-	f: 22	q: 771.5
-	f: 23	q: 2741.8
-	f: 24	q: 4933.1
-	f: 25	q: 1464.9
+size: 6
+	f: 21	q: 76.5
+	f: 22	q: 729.6
+	f: 23	q: 2591.3
+	f: 24	q: 4750.6
+	f: 25	q: 1795.6
+	f: 26	q: 56.4
 
 g:5
-size: 5
-	f: 22	q: 852.9
-	f: 23	q: 8033.7
-	f: 24	q: 28998.4
-	f: 25	q: 46108.2
-	f: 26	q: 15976
+size: 6
+	f: 21	q: 38.8
+	f: 22	q: 929.7
+	f: 23	q: 6987.7
+	f: 24	q: 26213.1
+	f: 25	q: 50610.8
+	f: 26	q: 14452
 
 g:6
 size: 5
-	f: 22	q: 46.1
-	f: 23	q: 9860.1
-	f: 24	q: 82405.9
-	f: 25	q: 309431
-	f: 26	q: 453530
+	f: 22	q: 51.6
+	f: 23	q: 4479.8
+	f: 24	q: 77982.1
+	f: 25	q: 295434
+	f: 26	q: 439310
 
 g:7
 size: 5
-	f: 22	q: 13
-	f: 23	q: 1133.3
-	f: 24	q: 132028
-	f: 25	q: 839672
-	f: 26	q: 3.36569e+06
+	f: 22	q: 5.6
+	f: 23	q: 1609
+	f: 24	q: 55580.4
+	f: 25	q: 881428
+	f: 26	q: 2.78583e+06
 
 g:8
 size: 4
-	f: 23	q: 29
-	f: 24	q: 16171.9
-	f: 25	q: 1.20032e+06
-	f: 26	q: 9.66019e+06
+	f: 23	q: 5.6
+	f: 24	q: 16648.5
+	f: 25	q: 544820
+	f: 26	q: 8.91244e+06
 
 g:9
 size: 3
-	f: 24	q: 3587.9
-	f: 25	q: 382882
-	f: 26	q: 1.25537e+07
+	f: 24	q: 218.4
+	f: 25	q: 442464
+	f: 26	q: 6.92228e+06
 
 g:10
 size: 2
-	f: 25	q: 36182.3
-	f: 26	q: 9.60066e+06
+	f: 25	q: 1083.2
+	f: 26	q: 3.801e+06
 
 g:11
-size: 2
-	f: 25	q: 20760.9
-	f: 26	q: 4.01866e+06
+size: 1
+	f: 26	q: 342173
 
 g:12
-size: 1
-	f: 26	q: 610787
+size: 0
 
 g:13
-size: 1
-	f: 26	q: 2160
+size: 0
 
 g:14
-size: 1
-	f: 26	q: 2160
+size: 0
 
 g:15
 size: 0

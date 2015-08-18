@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/blocks/fdist/probBLOCKS-12-1_32.pddl
-predictionSS: 70836
-ss_timer: 0.8
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/blocks/fdist/probBLOCKS-12-1_32.pddl
+predictionSS: 27570.6
+ss_timer: 0.42
 g:0
 size: 1
 	f: 22	q: 1
@@ -14,49 +14,45 @@ size: 1
 	f: 24	q: 6
 
 g:3
-size: 2
-	f: 25	q: 13.2
-	f: 26	q: 2.4
+size: 1
+	f: 25	q: 14.4
 
 g:4
-size: 2
-	f: 26	q: 47.4
-	f: 27	q: 4.2
+size: 1
+	f: 26	q: 46.8
 
 g:5
 size: 2
-	f: 27	q: 99.6
-	f: 28	q: 30
+	f: 27	q: 97.2
+	f: 28	q: 10.8
 
 g:6
 size: 2
-	f: 28	q: 342.6
-	f: 29	q: 64.8
+	f: 28	q: 302.4
+	f: 29	q: 18
 
 g:7
 size: 2
-	f: 29	q: 808.8
-	f: 30	q: 159
+	f: 29	q: 604.8
+	f: 30	q: 68.4
 
 g:8
 size: 2
-	f: 30	q: 2869.2
-	f: 31	q: 346.2
+	f: 30	q: 1911.6
+	f: 31	q: 136.8
 
 g:9
-size: 3
-	f: 30	q: 1000.8
-	f: 31	q: 7683
-	f: 32	q: 847.2
+size: 2
+	f: 31	q: 4604.4
+	f: 32	q: 687.6
 
 g:10
-size: 2
-	f: 31	q: 1000.8
-	f: 32	q: 33821.4
+size: 1
+	f: 32	q: 16855.2
 
 g:11
 size: 1
-	f: 32	q: 21686.4
+	f: 32	q: 2203.2
 
 g:12
 size: 0

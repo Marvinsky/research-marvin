@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/sokoban-opt08-strips/fdist/p09_4.pddl
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/sokoban-opt08-strips/fdist/p09_4.pddl
 predictionSS: 1
-ss_timer: 0.12
+ss_timer: 0.22
 g:0
 size: 1
 	f: 4	q: 1

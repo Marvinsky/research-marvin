@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/pegsol-opt11-strips/fdist/p18_8.pddl
-predictionSS: 1.32662e+07
-ss_timer: 2.54
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/pegsol-opt11-strips/fdist/p18_8.pddl
+predictionSS: 3.56148e+07
+ss_timer: 3.28
 g:0
 size: 1
 	f: 5	q: 1
@@ -17,47 +17,47 @@ size: 0
 
 g:3
 size: 5
-	f: 4	q: 42.6
-	f: 5	q: 29.8
-	f: 6	q: 24.4
-	f: 7	q: 22.8
-	f: 8	q: 14.2
+	f: 4	q: 38.4
+	f: 5	q: 24.6
+	f: 6	q: 29
+	f: 7	q: 23.4
+	f: 8	q: 18
 
 g:4
 size: 5
-	f: 4	q: 55.4
-	f: 5	q: 204.4
-	f: 6	q: 113.8
-	f: 7	q: 94.2
-	f: 8	q: 12.6
+	f: 4	q: 49.6
+	f: 5	q: 183
+	f: 6	q: 110.4
+	f: 7	q: 86.2
+	f: 8	q: 7.8
 
 g:5
 size: 5
-	f: 4	q: 88.2
-	f: 5	q: 559.8
-	f: 6	q: 622.6
-	f: 7	q: 553.6
-	f: 8	q: 140
+	f: 4	q: 48.6
+	f: 5	q: 586
+	f: 6	q: 521.4
+	f: 7	q: 483
+	f: 8	q: 237.6
 
 g:6
 size: 5
-	f: 4	q: 12.4
-	f: 5	q: 909.6
-	f: 6	q: 2831.6
-	f: 7	q: 2990
-	f: 8	q: 1446.2
+	f: 4	q: 48
+	f: 5	q: 431.6
+	f: 6	q: 2611.6
+	f: 7	q: 2872.2
+	f: 8	q: 1267.2
 
 g:7
 size: 4
-	f: 5	q: 1112
-	f: 6	q: 5739.2
-	f: 7	q: 11415.4
-	f: 8	q: 11131.4
+	f: 5	q: 1973.4
+	f: 6	q: 9955
+	f: 7	q: 11839.6
+	f: 8	q: 5436.8
 
 g:8
 size: 4
-	f: 5	q: 1348.4
-	f: 6	q: 12346.8
-	f: 7	q: 26740.8
-	f: 8	q: 40815.4
+	f: 5	q: 460
+	f: 6	q: 15515.8
+	f: 7	q: 18858
+	f: 8	q: 45961.8
 

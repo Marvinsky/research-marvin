@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/elevators-opt11-strips/fdist/p01_52.pddl
-predictionSS: 1912
-ss_timer: 40.3
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/elevators-opt11-strips/fdist/p01_52.pddl
+predictionSS: 2222.4
+ss_timer: 78.82
 g:0
 size: 1
 	f: 39	q: 1
@@ -9,96 +9,96 @@ g:1
 size: 7
 	f: 38	q: 1
 	f: 41	q: 1
-	f: 42	q: 1.8
-	f: 43	q: 4.6
-	f: 46	q: 1.8
-	f: 47	q: 1.4
-	f: 49	q: 2.4
+	f: 42	q: 3
+	f: 43	q: 2.5
+	f: 46	q: 3.6
+	f: 47	q: 1.7
+	f: 49	q: 1.2
 
 g:2
-size: 11
-	f: 41	q: 1.9
-	f: 43	q: 7.4
-	f: 44	q: 14.2
-	f: 45	q: 9.1
-	f: 46	q: 2.4
-	f: 47	q: 2.4
-	f: 48	q: 11.8
-	f: 49	q: 14
-	f: 50	q: 18.2
-	f: 51	q: 20.6
-	f: 52	q: 21.5
+size: 10
+	f: 41	q: 2.2
+	f: 43	q: 7.3
+	f: 44	q: 10.3
+	f: 45	q: 11.3
+	f: 47	q: 5.1
+	f: 48	q: 16.7
+	f: 49	q: 10.8
+	f: 50	q: 23.5
+	f: 51	q: 21.4
+	f: 52	q: 21.8
 
 g:3
-size: 7
-	f: 45	q: 2.5
-	f: 46	q: 9.7
-	f: 48	q: 12.6
-	f: 49	q: 33.6
-	f: 50	q: 114.6
-	f: 51	q: 54.9
-	f: 52	q: 75
+size: 6
+	f: 46	q: 1.1
+	f: 48	q: 51.1
+	f: 49	q: 21.2
+	f: 50	q: 101.2
+	f: 51	q: 55.3
+	f: 52	q: 92.8
 
 g:4
 size: 8
-	f: 45	q: 2.2
-	f: 46	q: 11.6
-	f: 47	q: 12.2
-	f: 48	q: 18.5
-	f: 49	q: 6.7
-	f: 50	q: 86.8
-	f: 51	q: 15.9
-	f: 52	q: 21.6
+	f: 45	q: 7.8
+	f: 46	q: 4.5
+	f: 47	q: 18.6
+	f: 48	q: 14.5
+	f: 49	q: 2.3
+	f: 50	q: 62.4
+	f: 51	q: 15.7
+	f: 52	q: 67.6
 
 g:5
-size: 7
-	f: 46	q: 11.8
-	f: 47	q: 6.4
-	f: 48	q: 6.5
-	f: 49	q: 53.6
-	f: 50	q: 42.9
-	f: 51	q: 23
-	f: 52	q: 118.8
+size: 6
+	f: 46	q: 0.7
+	f: 47	q: 1.8
+	f: 48	q: 9.6
+	f: 50	q: 123.1
+	f: 51	q: 73.9
+	f: 52	q: 109.3
 
 g:6
-size: 7
-	f: 46	q: 2.2
-	f: 47	q: 0.3
-	f: 48	q: 6.3
-	f: 49	q: 20.5
-	f: 50	q: 35.7
-	f: 51	q: 56.2
-	f: 52	q: 128.7
+size: 6
+	f: 46	q: 3.6
+	f: 47	q: 4.9
+	f: 48	q: 7.4
+	f: 50	q: 62.2
+	f: 51	q: 50.4
+	f: 52	q: 89.2
 
 g:7
-size: 3
-	f: 50	q: 44.4
-	f: 51	q: 141.4
-	f: 52	q: 173.1
+size: 5
+	f: 48	q: 2.8
+	f: 49	q: 7.5
+	f: 50	q: 59
+	f: 51	q: 61.3
+	f: 52	q: 259.5
 
 g:8
 size: 3
-	f: 50	q: 7.7
-	f: 51	q: 56
-	f: 52	q: 66.1
+	f: 50	q: 56.4
+	f: 51	q: 52.4
+	f: 52	q: 69.9
 
 g:9
-size: 2
-	f: 51	q: 27.7
-	f: 52	q: 113.4
+size: 3
+	f: 50	q: 12
+	f: 51	q: 64.8
+	f: 52	q: 126.1
 
 g:10
 size: 2
-	f: 51	q: 20
-	f: 52	q: 48
+	f: 51	q: 27.2
+	f: 52	q: 99.5
 
 g:11
-size: 1
-	f: 52	q: 74.2
+size: 2
+	f: 51	q: 12.8
+	f: 52	q: 51.2
 
 g:12
 size: 1
-	f: 52	q: 10.2
+	f: 51	q: 62.4
 
 g:13
 size: 0

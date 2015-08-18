@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/transport-opt08-strips/fdist/p02_129.pddl
-predictionSS: 91898.2
-ss_timer: 1.2
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/transport-opt08-strips/fdist/p02_129.pddl
+predictionSS: 45243
+ss_timer: 1.6
 g:0
 size: 1
 	f: 115	q: 1
@@ -12,114 +12,114 @@ size: 2
 
 g:2
 size: 5
-	f: 109	q: 0.4
-	f: 117	q: 1.5
+	f: 109	q: 0.8
+	f: 117	q: 0.5
 	f: 118	q: 2
-	f: 127	q: 1.6
-	f: 128	q: 3.5
+	f: 127	q: 1.2
+	f: 128	q: 4.5
 
 g:3
 size: 3
-	f: 109	q: 0.4
-	f: 119	q: 7
+	f: 109	q: 0.8
+	f: 119	q: 5
 	f: 129	q: 14
 
 g:4
 size: 4
-	f: 111	q: 3
-	f: 119	q: 7
-	f: 120	q: 7
-	f: 129	q: 5.6
+	f: 111	q: 4.6
+	f: 119	q: 5
+	f: 120	q: 5
+	f: 129	q: 2.4
 
 g:5
 size: 2
-	f: 111	q: 3
-	f: 121	q: 28
+	f: 111	q: 4.6
+	f: 121	q: 20
 
 g:6
 size: 3
-	f: 113	q: 20.6
-	f: 121	q: 28
-	f: 122	q: 28
+	f: 113	q: 19.8
+	f: 121	q: 20
+	f: 122	q: 20
 
 g:7
 size: 2
-	f: 113	q: 20.6
-	f: 123	q: 112
+	f: 113	q: 19.8
+	f: 123	q: 80
 
 g:8
 size: 3
-	f: 115	q: 119.8
-	f: 123	q: 112
-	f: 124	q: 112
+	f: 115	q: 39
+	f: 123	q: 80
+	f: 124	q: 80
 
 g:9
 size: 2
-	f: 115	q: 119.8
-	f: 125	q: 448
+	f: 115	q: 39
+	f: 125	q: 320
 
 g:10
 size: 3
-	f: 117	q: 222.2
-	f: 125	q: 448
-	f: 126	q: 448
+	f: 117	q: 90.2
+	f: 125	q: 320
+	f: 126	q: 320
 
 g:11
 size: 2
-	f: 117	q: 222.2
-	f: 127	q: 1792
+	f: 117	q: 90.2
+	f: 127	q: 1280
 
 g:12
 size: 3
-	f: 119	q: 1195
-	f: 127	q: 1792
-	f: 128	q: 1792
+	f: 119	q: 755.8
+	f: 127	q: 1280
+	f: 128	q: 1280
 
 g:13
 size: 2
-	f: 119	q: 1195
-	f: 129	q: 7168
+	f: 119	q: 755.8
+	f: 129	q: 5120
 
 g:14
 size: 2
-	f: 121	q: 6724.6
-	f: 129	q: 7168
+	f: 121	q: 2803.8
+	f: 129	q: 5120
 
 g:15
 size: 1
-	f: 121	q: 6724.6
+	f: 121	q: 2803.8
 
 g:16
 size: 1
-	f: 123	q: 6724.6
+	f: 123	q: 2803.8
 
 g:17
 size: 1
-	f: 123	q: 6724.6
+	f: 123	q: 2803.8
 
 g:18
 size: 1
-	f: 125	q: 6724.6
+	f: 125	q: 2803.8
 
 g:19
 size: 1
-	f: 125	q: 6724.6
+	f: 125	q: 2803.8
 
 g:20
 size: 1
-	f: 127	q: 6724.6
+	f: 127	q: 2803.8
 
 g:21
 size: 1
-	f: 127	q: 6724.6
+	f: 127	q: 2803.8
 
 g:22
 size: 1
-	f: 129	q: 6724.6
+	f: 129	q: 2803.8
 
 g:23
 size: 1
-	f: 129	q: 6724.6
+	f: 129	q: 2803.8
 
 g:24
 size: 0

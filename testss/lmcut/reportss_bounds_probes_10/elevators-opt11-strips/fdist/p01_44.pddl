@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/elevators-opt11-strips/fdist/p01_44.pddl
-predictionSS: 28
-ss_timer: 0.72
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/elevators-opt11-strips/fdist/p01_44.pddl
+predictionSS: 29.8
+ss_timer: 1.28
 g:0
 size: 1
 	f: 39	q: 1
@@ -14,9 +14,9 @@ size: 4
 
 g:2
 size: 3
-	f: 41	q: 1.9
-	f: 43	q: 7
-	f: 44	q: 10.1
+	f: 41	q: 2.8
+	f: 43	q: 9.7
+	f: 44	q: 8.3
 
 g:3
 size: 0

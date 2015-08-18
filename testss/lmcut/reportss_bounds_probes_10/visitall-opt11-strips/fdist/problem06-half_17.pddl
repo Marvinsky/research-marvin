@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/visitall-opt11-strips/fdist/problem06-half_17.pddl
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/visitall-opt11-strips/fdist/problem06-half_17.pddl
 predictionSS: 2
-ss_timer: 0
+ss_timer: 0.02
 g:0
 size: 1
 	f: 17	q: 1

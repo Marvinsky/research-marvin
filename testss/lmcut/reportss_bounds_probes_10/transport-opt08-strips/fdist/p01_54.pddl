@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/transport-opt08-strips/fdist/p01_54.pddl
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_10/transport-opt08-strips/fdist/p01_54.pddl
 predictionSS: 15
-ss_timer: 0.02
+ss_timer: 0
 g:0
 size: 1
 	f: 53	q: 1
