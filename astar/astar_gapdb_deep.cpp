@@ -46,7 +46,7 @@ string getInstanceName(string bc_file)  {
         if (found1 > 0) {
         	name_instance = t1.substr(0, found1 - 1);
         }
-        name_instance += ".pddl";
+        name_instance += ".csv";
 	return name_instance;
 }
 
@@ -71,6 +71,22 @@ int getMaxInstance(vector<int> v) {
 		}
 	}
 	return max;
+}
+
+//probBLOCKS-4-0_F_66.csv
+string constructInstance(string key, int f_boundary) {
+	string instance = key;
+	
+	string t = instance;
+	size_t found1 = t.find(".");
+	string t2 = t.substr(0, found1);
+	cout<<"t2 = "<<t2<<"\n";
+	t2 += "_F_";
+	ostringstream convert;
+	convert << f_boundary;
+	t2 += convert.str();
+	t2 += ".csv";
+	return t2;
 }
 
 //vector<pair<string, double> >  
@@ -260,6 +276,8 @@ map<string, vector<string> > analyzeFile(string output_BC) {
 			name = "ipdb_" + number_h;
 		} else if (heuristic_name_created == "lmcut") {
 			name = "lmcut_" + number_h;
+		} else if (heuristic_name_created == "merge_and_shrink") {
+			name = "merge_and_shrink_" + number_h;
 		} else {	
 			name = "gapdb_" + number_h;
 		}
@@ -413,237 +431,171 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	map<string, int>::iterator iter_bound;
 	for (iter_bound = map_instance_bound.begin(); iter_bound != map_instance_bound.end(); iter_bound++) {
 		string key = iter_bound->first;
-		int value = iter_bound->second;
-		cout<<key<<", "<<value<<"\n";
-	}
+		int F_boundary = iter_bound->second;
+		cout<<key<<", "<<F_boundary<<"\n";
+		//probBLOCKS-4-0_F_66.csv
+		string bc_instance = constructInstance(key, F_boundary);
+		cout<<"instance = "<<bc_instance<<"\n";
 
-	/*
-	//Calling idai in order to get the max_bound to use
-	//Read the fles from idai
-        string idabounds = problema;
-        idabounds =  pasta+"/"+idabounds;
-        idabounds = "idai/ipdb/reportidai/"+idabounds;
-        idabounds = "marvin/" + idabounds;
-        idabounds = "marvin/" + idabounds;
-        idabounds = "/home/" + idabounds;
-	cout<<"idabounds = "<<idabounds<<"\n";
-	string str;
-        double h_initial, F_boundary;
-        string** levels;
-        vector<string> v_time;
-        vector<long> v_bound;
-        vector<double> v_exp;
-        vector<double> v_gen;
+		string bcfile = bc_instance;
+        	bcfile =  pasta + "/bc/" + bcfile;
+        	bcfile = "testss/" + heuristic  + "/reportss/" + bcfile;
+       	 	bcfile = "marvin/" + bcfile;
+        	bcfile = "marvin/" + bcfile;
+        	bcfile = "/home/" + bcfile;
+		//cout<<"bcfile in ss = "<<bcfile<<"\n";
 
-	ifstream idai(idabounds.c_str());
+		map<string, vector<string> >  m = analyzeFile(bcfile.c_str());
+		vector<string> v_gapdb_string;  
+		
+		map<string, vector<string> >::iterator iter;
+		for (iter = m.begin(); iter != m.end(); iter++) {
+			string gapdb_string = heuristic+"(mp=";
+			string s = iter->first;
+			vector<string> info = iter->second;
+			cout<<"heuristic (s) = "<<s<<"\n";
+			//find the number
+			string t = s;
+			size_t found = t.find("_");
+			string t_final = t.substr(found + 1, t.length());
+			//cout<<"t_final = "<<t_final<<"\n";
+
+			bool is_blind_heuristic = false;
+			for (size_t i = 0; i < info.size(); i++) {
+				string parameter = info.at(i);	
+				//cout<<"\t"<<parameter<<"\n";
+				if (i == 1) {
+					gapdb_string += parameter;
+				} else if (i == 2) {
+					gapdb_string += ",size="+parameter;
+					if (parameter == "") {
+						is_blind_heuristic = true;
+					}
+				} else if (i == 3) {
+					gapdb_string += ",disjoint="+parameter;
+				}
+			}
+			gapdb_string+=")_" + t_final;
+			//gapdb_string+=",eps=120,colls=5)";
+			//cout<<"\tgapdb_string = "<<gapdb_string<<"\n\n";
+
+			if (is_blind_heuristic) {
+				//Workaround
+				string task2 = s;
+				size_t found_task2 =  task2.find("_");
+				string new_s = task2.substr(0, found_task2);
 	
-	if (!is_empty(idai)) {
-        	idai>>str;
-        	idai>>str;
-        	idai>>h_initial;
-        	idai>>str;
-        	idai>>str;
-        	idai>>str;
-        	idai>>str;
-        	int total_levels = getTotalLevels(idabounds.c_str());
-       		//cout<<"total_levels = "<<total_levels<<"\n";
+				string heur_blind = "blind()_" + t_final;
+				if (new_s == "ipdb") {	
+					heur_blind = "ipdb()_" + t_final;
+				} else if (new_s == "lmcut") {
+					heur_blind = "lmcut()_" + t_final;
+				} else if (new_s == "merge_and_shrink") {
+					heur_blind = "merge_and_shrink()_" + t_final;
+				}
+				v_gapdb_string.push_back(heur_blind);
+			} else {
+				v_gapdb_string.push_back(gapdb_string);
+			}
+		}
 
-		if (total_levels != 0) {
+		//end astar_gpdb call the bc from ss
 
-        		levels = new string*[total_levels];
-        		for (int i = 0; i < total_levels; i++) {
-            			levels[i] = new string[4];
-        		}
+		for (int i = 0; i < v_gapdb_string.size(); i++) {
+			
+			//get the real name
+			string real_heur = v_gapdb_string.at(i);
+			string task = real_heur;
+			size_t found_task = task.find("_");
+			string final_real_heur = task.substr(0, found_task); 
+			cout<<"final_real_heur = "<<final_real_heur<<"\n";
+			
+			string task3 = real_heur;
+			size_t found_task3 = task3.find("_");
+			string final_number_heur = task3.substr(found_task3 + 1, task3.length());
+			cout<<"final_number_heur = "<<final_number_heur<<"\n";
 
-        		for (int i = 0; i < total_levels; i++) {
-            			for (int j = 0; j < 4; j++) {
-                			idai>>levels[i][j];
-           		 	}
-        		}
+			//end get real name
 
-        		for (int i = 0; i < total_levels; i++) {
-            			v_time.push_back(levels[i][0]);
-            			v_bound.push_back(atof(levels[i][1].c_str()));
-            			v_exp.push_back(atof(levels[i][2].c_str()));
-            			v_gen.push_back(atof(levels[i][3].c_str()));
-        		}
-	
-			F_boundary = v_bound.at(v_bound.size() - 1);
-			cout<<"F_boundary = "<<F_boundary<<"\n";
-        		idai.close();
+			//creation of each sh file for the gapdb heuristic
+			string arquivo;
+			string sas;
+			stringstream Resultado, Resultado2;
+			
+			Resultado2<<num_problema+1;
 
-			//end calling idai in order to get the max_bound to use
-			//astar_gapdb must call the bc file from ss in order to obatain the gapdb heuristics
-			string t = problema, bc_instance;
-			stringstream to_string;
-			to_string<<F_boundary;
+			arquivo += "A";
+			arquivo += Resultado2.str();
+			arquivo += "_gapdb_";
+			Resultado<<i+1;
+			arquivo += Resultado.str();
+			arquivo += string(".sh");
+			arquivo = "/" + arquivo;
+			arquivo = pasta + arquivo;
+			arquivo = "astar/"+heuristic+"/problemas/" + arquivo;
+			arquivo = "marvin/" + arquivo;
+			arquivo = "marvin/"+ arquivo;
+			arquivo = "/home/" + arquivo;
+			ofstream outfile(arquivo.c_str(), ios::out);
+		
+			sas = "Astar";
+			sas += pasta;
+			sas += Resultado.str();
+			//End creation of each sh file for the gapdb heuristic
+
+			string parameter =  final_real_heur;//v_gapdb_string.at(i);
+			cout<<"parameter_"<<i<<" = "<<parameter<<"\n";
+			string new_problem_name = problema.c_str();
+			string t = new_problem_name;
 			size_t found = t.find(".");
-			string bcname_mod = t.substr(0, found);
-			//cout<<"bcname_mod = "<<bcname_mod<<"\n";
-			bc_instance = bcname_mod + "_F_" + to_string.str() + ".csv";
-			//cout<<"bc_instance = "<<bc_instance<<"\n";
+			string new_problem_name_mod = t.substr(0, found);
+			//cout<<"new_problem_name_mod = "<<new_problem_name_mod<<"\n";
+			//stringstream number;
+			//number<<i; //this should contains the real number
+			//name that will be used in the backend
+			//string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + number.str() + ".pddl";
+			string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + final_number_heur  + ".pddl";
+			cout<<"prob_name_gapdb = "<<prob_name_gapdb<<"\n";
 
-			string bcfile = bc_instance;
-        		bcfile =  pasta + "/bc/" + bcfile;
-        		bcfile = "testss/" + heuristic  + "/reportss/" + bcfile;
-       	 		bcfile = "marvin/" + bcfile;
-        		bcfile = "marvin/" + bcfile;
-        		bcfile = "/home/" + bcfile;
-			//cout<<"bcfile in ss = "<<bcfile<<"\n";
 
-			map<string, vector<string> >  m = analyzeFile(bcfile.c_str());
-			vector<string> v_gapdb_string;  
-		
-			map<string, vector<string> >::iterator iter;
-			for (iter = m.begin(); iter != m.end(); iter++) {
-				string gapdb_string = heuristic+"(mp=";
-				string s = iter->first;
-				vector<string> info = iter->second;
-				cout<<"heuristic (s) = "<<s<<"\n";
-				//find the number
-				string t = s;
-				size_t found = t.find("_");
-				string t_final = t.substr(found + 1, t.length());
-				//cout<<"t_final = "<<t_final<<"\n";
 
-				bool is_blind_heuristic = false;
-				for (size_t i = 0; i < info.size(); i++) {
-					string parameter = info.at(i);	
-					//cout<<"\t"<<parameter<<"\n";
-					if (i == 1) {
-						gapdb_string += parameter;
-					} else if (i == 2) {
-						gapdb_string += ",size="+parameter;
-						if (parameter == "") {
-							is_blind_heuristic = true;
-						}
-					} else if (i == 3) {
-						gapdb_string += ",disjoint="+parameter;
-					}
-				}
-				gapdb_string+=")_" + t_final;
-				//gapdb_string+=",eps=120,colls=5)";
-				//cout<<"\tgapdb_string = "<<gapdb_string<<"\n\n";
+			outfile<<"#PBS -N _p"<<(num_problema+1)<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\n#PBS -l pmem=6gb\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
+			//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
+        		//PBS -l walltime=200
 
-				if (is_blind_heuristic) {
-					//Workaround
-					string task2 = s;
-					size_t found_task2 =  task2.find("_");
-					string new_s = task2.substr(0, found_task2);
+			cout<<"pasta = "<<pasta.c_str()<<"\n\n";
+			outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic<<"/problemas/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd\n\n";
+			outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<" "<<problema.c_str()<<"  "<<heuristic<<"\n\n";
+
+			outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
+
+			//Santiago's code to find the F_boundary on the fly	
+			outfile<<"src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --problem_name_gapdb "<<prob_name_gapdb<<"  --search \"astar(min(["<<parameter<<"]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
 	
-					string heur_blind = "blind()_" + t_final;
-					if (new_s == "ipdb") {	
-						heur_blind = "ipdb()_" + t_final;
-					} else if (new_s == "lmcut") {
-						heur_blind = "lmcut()_" + t_final;
-					}
-					v_gapdb_string.push_back(heur_blind);
-				} else {
-					v_gapdb_string.push_back(gapdb_string);
-				}
-			}
-			//end astar_gpdb call the bc from ss
-
-			for (int i = 0; i < v_gapdb_string.size(); i++) {
-			
-				//get the real name
-				string real_heur = v_gapdb_string.at(i);
-				string task = real_heur;
-				size_t found_task = task.find("_");
-				string final_real_heur = task.substr(0, found_task); 
-				cout<<"final_real_heur = "<<final_real_heur<<"\n";
-			
-				string task3 = real_heur;
-				size_t found_task3 = task3.find("_");
-				string final_number_heur = task3.substr(found_task3 + 1, task3.length());
-				cout<<"final_number_heur = "<<final_number_heur<<"\n";
-
-				//end get real name
-
-
-				//creation of each sh file for the gapdb heuristic
-				string arquivo;
-				string sas;
-				stringstream Resultado, Resultado2;
-			
-				Resultado2<<num_problema+1;
-
-				arquivo += "A";
-				arquivo += Resultado2.str();
-				arquivo += "_gapdb_";
-				Resultado<<i+1;
-				arquivo += Resultado.str();
-				arquivo += string(".sh");
-				arquivo = "/" + arquivo;
-				arquivo = pasta + arquivo;
-				arquivo = "astar/"+heuristic+"/problemas/" + arquivo;
-				arquivo = "marvin/" + arquivo;
-				arquivo = "marvin/"+ arquivo;
-				arquivo = "/home/" + arquivo;
-				ofstream outfile(arquivo.c_str(), ios::out);
-		
-				sas = "Astar";
-				sas += pasta;
-				sas += Resultado.str();
-				//End creation of each sh file for the gapdb heuristic
-
-				string parameter =  final_real_heur;//v_gapdb_string.at(i);
-				cout<<"parameter_"<<i<<" = "<<parameter<<"\n";
-				string new_problem_name = problema.c_str();
-				string t = new_problem_name;
-				size_t found = t.find(".");
-				string new_problem_name_mod = t.substr(0, found);
-				//cout<<"new_problem_name_mod = "<<new_problem_name_mod<<"\n";
-				//stringstream number;
-				//number<<i; //this should contains the real number
-				//name that will be used in the backend
-				//string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + number.str() + ".pddl";
-				string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + final_number_heur  + ".pddl";
-				cout<<"prob_name_gapdb = "<<prob_name_gapdb<<"\n";
-
-
-
-				outfile<<"#PBS -N _p"<<(num_problema+1)<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\n#PBS -l pmem=6gb\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
-				//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
-        			//PBS -l walltime=200
-
-				cout<<"pasta = "<<pasta.c_str()<<"\n\n";
-				outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic<<"/problemas/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd\n\n";
-				outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<" "<<problema.c_str()<<"  "<<heuristic<<"\n\n";
-
-				outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
-
-				//Santiago's code to find the F_boundary on the fly	
-				outfile<<"src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --problem_name_gapdb "<<prob_name_gapdb<<"  --search \"astar(min(["<<parameter<<"]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
-	
-				outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
-				outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
+			outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
+			outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
         
-				outfile.close();
+			outfile.close();
 
-				string date = currentDateTime();
-				string executeFile;
-				//executeFile = "qsub -o ";
-				//executeFile += "logs/"+date;
-				//executeFile += string(".log");
-				//executeFile += " -j oe ";
-				//executeFile += arquivo;
-				//cout<<executeFile<<"\n\n";
-				//arquivo = "qsub "+ arquivo;
-				//cout<<arquivo<<endl;
-        			string allow;
-				allow = "chmod +x "+arquivo;	
-				cout<<allow<<"\n";
-				system(allow.c_str());
-				executeFile = "sh "+arquivo;
-				system(executeFile.c_str());
-			}
-		} // end total_levels != 0
+			string date = currentDateTime();
+			string executeFile;
+			//executeFile = "qsub -o ";
+			//executeFile += "logs/"+date;
+			//executeFile += string(".log");
+			//executeFile += " -j oe ";	
+			//executeFile += arquivo;
+			//cout<<executeFile<<"\n\n";
+			//arquivo = "qsub "+ arquivo;
+			//cout<<arquivo<<endl;
+        		string allow;
+			allow = "chmod +x "+arquivo;	
+			cout<<allow<<"\n";
+			system(allow.c_str());
+			executeFile = "sh "+arquivo;
+			system(executeFile.c_str());
+		}
 	}
-	*/
 }
-
-
 
 void entrada_dados(string &pasta, string &problema, string &dominio, bool &dominio_unico, int &quantidade_problemas) {
 	
