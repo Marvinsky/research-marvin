@@ -9,6 +9,27 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 18		799			676.26
 19		7897			17445.4
 
+p19.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+28		11			----zero_info----
+29		31			----zero_info----
+30		227			----zero_info----
+31		1714			----zero_info----
+32		24099			----zero_info----
+33		626145			----zero_info----
+
+p18.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		1			----zero_info----
+25		11			----zero_info----
+26		13			----zero_info----
+27		211			----zero_info----
+28		777			----zero_info----
+29		9326			----zero_info----
+30		67340			----zero_info----
+31		843059			----zero_info----
+32		7.05723e+06			----zero_info----
+
 p15.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 20		142			131.23
@@ -29,6 +50,15 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 14		46			49.32
 15		1312			1219.19
 
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		14			----zero_info----
+25		112			----zero_info----
+26		915			----zero_info----
+27		7563			----zero_info----
+28		87516			----zero_info----
+29		752993			----zero_info----
+
 p05.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 20		142			134.79
@@ -41,6 +71,12 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 9		9			9.1
 10		46			44.74
 11		326			283.36
+
+p10.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+30		1			----zero_info----
+34		113230			----zero_info----
+35		1.42716e+06			----zero_info----
 
 p04.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -67,11 +103,37 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 29		700299			585370
 30		7.26466e+06			8.15618e+06
 
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+30		1			----zero_info----
+34		113230			----zero_info----
+35		1.42028e+06			----zero_info----
+
 p03.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 13		5			5
 14		46			44.5
 15		1406			857.38
+
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+28		11			----zero_info----
+29		31			----zero_info----
+30		227			----zero_info----
+31		1714			----zero_info----
+32		24099			----zero_info----
+33		626145			----zero_info----
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		1			----zero_info----
+25		11			----zero_info----
+26		13			----zero_info----
+27		211			----zero_info----
+28		777			----zero_info----
+29		9326			----zero_info----
+30		67340			----zero_info----
+31		849768			----zero_info----
 
 p16.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -94,3 +156,12 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 12		4			4
 13		74			62.9
 14		834			706.38
+
+Files that contains zero_info:	7
+p07.pddl
+p08.pddl
+p09.pddl
+p10.pddl
+p18.pddl
+p19.pddl
+p20.pddl

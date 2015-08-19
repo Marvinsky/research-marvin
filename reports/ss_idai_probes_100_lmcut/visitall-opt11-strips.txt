@@ -2,6 +2,15 @@
 
 visitall-opt11-strips
 
+problem09-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+39		4378			----zero_info----
+40		26864			----zero_info----
+41		95732			----zero_info----
+42		595016			----zero_info----
+43		2.57106e+06			----zero_info----
+44		1.48176e+07			----zero_info----
+
 problem05-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 17		63			63.18
@@ -12,6 +21,41 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 22		202144			215703
 23		808058			774935
 24		4.11206e+06			3.48822e+06
+
+problem08-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+31		829			----zero_info----
+32		2190			----zero_info----
+33		19691			----zero_info----
+34		66221			----zero_info----
+35		450622			----zero_info----
+36		1.71742e+06			----zero_info----
+37		9.92459e+06			----zero_info----
+38		4.1967e+07			----zero_info----
+
+problem06-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		365			----zero_info----
+25		2236			----zero_info----
+26		13341			----zero_info----
+27		62955			----zero_info----
+28		338560			----zero_info----
+29		1.525e+06			----zero_info----
+30		7.78593e+06			----zero_info----
+31		3.52499e+07			----zero_info----
+32		1.73161e+08			----zero_info----
+
+problem11-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+50		5			----zero_info----
+51		57			----zero_info----
+52		189			----zero_info----
+53		1165			----zero_info----
+54		7338			----zero_info----
+55		57693			----zero_info----
+56		285508			----zero_info----
+57		1.52936e+06			----zero_info----
+58		7.47971e+06			----zero_info----
 
 problem04-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -32,6 +76,42 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 2		1			1
 3		7			7
 
+problem09-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+48		7.05466e+06			----zero_info----
+49		3.90244e+07			----zero_info----
+
+problem07-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+24		1			----zero_info----
+25		3			----zero_info----
+26		28			----zero_info----
+27		225			----zero_info----
+28		808			----zero_info----
+29		5447			----zero_info----
+30		20835			----zero_info----
+31		112808			----zero_info----
+32		461440			----zero_info----
+33		2.31912e+06			----zero_info----
+34		1.00487e+07			----zero_info----
+35		4.89775e+07			----zero_info----
+
+problem10-half.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+45		17105			----zero_info----
+46		111486			----zero_info----
+47		485534			----zero_info----
+48		2.53213e+06			----zero_info----
+49		1.15186e+07			----zero_info----
+
+problem08-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+39		34190			----zero_info----
+40		185002			----zero_info----
+41		1.10186e+06			----zero_info----
+42		5.55746e+06			----zero_info----
+43		2.68369e+07			----zero_info----
+
 problem02-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 1		2			2
@@ -46,10 +126,28 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 17		6425			6794.16
 18		35120			33755.6
 
+problem11-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
 problem03-half.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 5		2			2
 6		18			19.52
+
+problem10-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+problem07-full.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+29		337			----zero_info----
+30		2891			----zero_info----
+31		11599			----zero_info----
+32		71416			----zero_info----
+33		300156			----zero_info----
+34		1.48592e+06			----zero_info----
+35		6.29074e+06			----zero_info----
+36		2.88784e+07			----zero_info----
+37		1.22153e+08			----zero_info----
 
 problem03-full.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -66,3 +164,14 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 21		4464			4162.52
 22		25834			26090
 23		104591			101971
+
+Files that contains zero_info:	9
+problem06-full.pddl
+problem07-full.pddl
+problem07-half.pddl
+problem08-full.pddl
+problem08-half.pddl
+problem09-full.pddl
+problem09-half.pddl
+problem10-half.pddl
+problem11-half.pddl

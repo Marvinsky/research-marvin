@@ -2,11 +2,95 @@
 
 woodworking-opt08-strips
 
+p14.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+140		1			----zero_info----
+160		10			----zero_info----
+165		19			----zero_info----
+170		35			----zero_info----
+175		65			----zero_info----
+180		316			----zero_info----
+185		904			----zero_info----
+190		2389			----zero_info----
+195		21236			----zero_info----
+200		92664			----zero_info----
+205		1.33156e+06			----zero_info----
+210		2.14768e+07			----zero_info----
+
+p19.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+345		49			----zero_info----
+355		1373			----zero_info----
+360		1975			----zero_info----
+365		8657			----zero_info----
+370		12976			----zero_info----
+375		450063			----zero_info----
+380		715904			----zero_info----
+
+p29.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+505		3			----zero_info----
+510		4			----zero_info----
+515		21			----zero_info----
+520		30			----zero_info----
+
+p18.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+355		3			----zero_info----
+365		9			----zero_info----
+370		15			----zero_info----
+375		43			----zero_info----
+385		497			----zero_info----
+390		689			----zero_info----
+395		4253			----zero_info----
+400		8865			----zero_info----
+405		236520			----zero_info----
+410		396778			----zero_info----
+
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p25.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+370		1			----zero_info----
+
 p12.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 205		1			1
 215		3			3
 225		4.69736e+06			3.13311e+06
+
+p13.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+165		1			----zero_info----
+185		6			----zero_info----
+190		7			----zero_info----
+195		6.56494e+06			----zero_info----
+200		9.55256e+06			----zero_info----
+205		1.09254e+07			----zero_info----
+
+p30.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+610		61			----zero_info----
+620		1122			----zero_info----
+630		210284			----zero_info----
+635		296439			----zero_info----
+
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+350		831			----zero_info----
+355		3125			----zero_info----
+360		9364			----zero_info----
+365		57202			----zero_info----
+370		673813			----zero_info----
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+230		3			----zero_info----
+250		214			----zero_info----
+255		282			----zero_info----
+260		2192			----zero_info----
+265		4281			----zero_info----
 
 p22.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -22,6 +106,71 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 165		7			7
 170		10606			11101.2
 
+p10.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+410		2			----zero_info----
+420		3			----zero_info----
+425		4			----zero_info----
+430		391			----zero_info----
+435		532			----zero_info----
+440		6070			----zero_info----
+445		14174			----zero_info----
+450		143771			----zero_info----
+455		423872			----zero_info----
+
+p04.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+205		1			----zero_info----
+225		29			----zero_info----
+230		34			----zero_info----
+
+p26.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+190		1			----zero_info----
+200		3			----zero_info----
+205		7			----zero_info----
+210		89			----zero_info----
+215		219			----zero_info----
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p17.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+250		6			----zero_info----
+255		10			----zero_info----
+265		30			----zero_info----
+270		1516			----zero_info----
+275		3980			----zero_info----
+280		90610			----zero_info----
+285		299598			----zero_info----
+
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+385		1			----zero_info----
+395		14			----zero_info----
+400		22			----zero_info----
+405		67			----zero_info----
+410		390			----zero_info----
+
+p28.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+355		1			----zero_info----
+375		13			----zero_info----
+380		14			----zero_info----
+385		41			----zero_info----
+390		43			----zero_info----
+395		255			----zero_info----
+400		301			----zero_info----
+405		1918			----zero_info----
+410		2241			----zero_info----
+415		7661			----zero_info----
+420		9697			----zero_info----
+425		104154			----zero_info----
+430		138368			----zero_info----
+435		398524			----zero_info----
+440		542842			----zero_info----
+
 p23.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 175		1			1
@@ -33,11 +182,88 @@ p21.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 95		199			206.8
 
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+265		3			----zero_info----
+
+p24.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+205		19			----zero_info----
+210		55			----zero_info----
+215		235			----zero_info----
+220		843			----zero_info----
+225		2877			----zero_info----
+230		8500			----zero_info----
+
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+370		49			----zero_info----
+375		77			----zero_info----
+380		287			----zero_info----
+385		794			----zero_info----
+390		21336			----zero_info----
+395		44110			----zero_info----
+400		895773			----zero_info----
+
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+230		13			----zero_info----
+235		14			----zero_info----
+240		445			----zero_info----
+245		791			----zero_info----
+250		8633			----zero_info----
+255		21572			----zero_info----
+260		63996			----zero_info----
+265		513914			----zero_info----
+270		3.46551e+06			----zero_info----
+
 p11.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 120		2			2
 130		575			547.21
 
+p27.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+240		3			----zero_info----
+245		4			----zero_info----
+250		5			----zero_info----
+255		7			----zero_info----
+260		100			----zero_info----
+265		155			----zero_info----
+270		405			----zero_info----
+275		747			----zero_info----
+280		2244			----zero_info----
+285		4774			----zero_info----
+290		34928			----zero_info----
+295		86273			----zero_info----
+300		360505			----zero_info----
+305		965269			----zero_info----
+
 p02.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 185		39010			35342.4
+
+Files that contains zero_info:	20
+p03.pddl
+p04.pddl
+p05.pddl
+p07.pddl
+p08.pddl
+p10.pddl
+p13.pddl
+p14.pddl
+p16.pddl
+p17.pddl
+p18.pddl
+p19.pddl
+p20.pddl
+p24.pddl
+p25.pddl
+p26.pddl
+p27.pddl
+p28.pddl
+p29.pddl
+p30.pddl

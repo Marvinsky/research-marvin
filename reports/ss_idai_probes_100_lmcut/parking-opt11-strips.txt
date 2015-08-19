@@ -2,6 +2,63 @@
 
 parking-opt11-strips
 
+pfile08-029.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+21		1			----zero_info----
+22		6			----zero_info----
+23		122			----zero_info----
+24		3028			----zero_info----
+25		77382			----zero_info----
+
+pfile05-018.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+14		1			----zero_info----
+16		48			----zero_info----
+17		1247			----zero_info----
+18		30582			----zero_info----
+19		712737			----zero_info----
+
+pfile07-027.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+20		1			----zero_info----
+21		20			----zero_info----
+22		406			----zero_info----
+23		9281			----zero_info----
+24		213439			----zero_info----
+
+pfile06-023.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+19		105			----zero_info----
+20		2903			----zero_info----
+21		87017			----zero_info----
+
+pfile08-030.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+22		6			----zero_info----
+23		103			----zero_info----
+24		2422			----zero_info----
+25		59313			----zero_info----
+
+pfile07-028.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+23		361			----zero_info----
+24		10341			----zero_info----
+25		283095			----zero_info----
+
+pfile05-019.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+17		1			----zero_info----
+18		37			----zero_info----
+19		690			----zero_info----
+20		15277			----zero_info----
+21		310555			----zero_info----
+
+pfile06-021.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+19		98			----zero_info----
+20		3192			----zero_info----
+21		100985			----zero_info----
+
 pfile03-011.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 9		2			2
@@ -10,3 +67,107 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 12		2668			2845.18
 13		26317			25648.5
 14		257522			260508
+
+pfile07-026.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+19		8			----zero_info----
+20		208			----zero_info----
+21		5663			----zero_info----
+22		144379			----zero_info----
+
+pfile05-017.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		1			----zero_info----
+16		16			----zero_info----
+17		376			----zero_info----
+18		7893			----zero_info----
+19		147891			----zero_info----
+
+pfile03-012.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+13		7			----zero_info----
+14		97			----zero_info----
+15		1500			----zero_info----
+16		20326			----zero_info----
+17		272160			----zero_info----
+18		3.50265e+06			----zero_info----
+
+pfile06-024.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+18		91			----zero_info----
+19		2062			----zero_info----
+20		46241			----zero_info----
+
+pfile06-022.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+20		113			----zero_info----
+21		3065			----zero_info----
+22		66383			----zero_info----
+
+pfile04-014.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+14		4			----zero_info----
+15		44			----zero_info----
+16		913			----zero_info----
+17		13770			----zero_info----
+18		209300			----zero_info----
+
+pfile05-020.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		3			----zero_info----
+17		36			----zero_info----
+18		527			----zero_info----
+19		8467			----zero_info----
+20		140364			----zero_info----
+
+pfile04-015.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+13		1			----zero_info----
+14		13			----zero_info----
+15		246			----zero_info----
+16		4156			----zero_info----
+17		67614			----zero_info----
+18		1.07344e+06			----zero_info----
+
+pfile07-025.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+21		46			----zero_info----
+22		1505			----zero_info----
+23		39689			----zero_info----
+
+pfile04-013.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		2			----zero_info----
+16		31			----zero_info----
+17		566			----zero_info----
+18		9868			----zero_info----
+19		170705			----zero_info----
+
+pfile04-016.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+13		3			----zero_info----
+14		40			----zero_info----
+15		638			----zero_info----
+16		10267			----zero_info----
+17		149174			----zero_info----
+
+Files that contains zero_info:	19
+pfile03-012.pddl
+pfile04-013.pddl
+pfile04-014.pddl
+pfile04-015.pddl
+pfile04-016.pddl
+pfile05-017.pddl
+pfile05-018.pddl
+pfile05-019.pddl
+pfile05-020.pddl
+pfile06-021.pddl
+pfile06-022.pddl
+pfile06-023.pddl
+pfile06-024.pddl
+pfile07-025.pddl
+pfile07-026.pddl
+pfile07-027.pddl
+pfile07-028.pddl
+pfile08-029.pddl
+pfile08-030.pddl

@@ -10,14 +10,68 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 29		77634			72616.4
 30		587832			614500
 
+p19.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p18.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p15.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+31		1535			----zero_info----
+32		146630			----zero_info----
+
+p12.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+25		3			----zero_info----
+26		27			----zero_info----
+27		441			----zero_info----
+28		5343			----zero_info----
+29		91152			----zero_info----
+30		1.44917e+06			----zero_info----
+
+p13.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+26		5			----zero_info----
+27		46			----zero_info----
+28		184			----zero_info----
+29		855			----zero_info----
+30		5784			----zero_info----
+31		41003			----zero_info----
+32		286074			----zero_info----
+
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p05.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
 p01.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 12		2			2
 13		11			11
 
+p10.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
 p04.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 24		175569			175238
+
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+25		243			----zero_info----
+26		12789			----zero_info----
+27		453359			----zero_info----
+28		1.39085e+07			----zero_info----
+
+p17.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+43		91581			----zero_info----
+
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+36		1290			----zero_info----
 
 p03.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -29,6 +83,16 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 24		251271			257166
 25		3.11983e+06			3.27579e+06
 26		3.86201e+07			3.88939e+07
+
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p08.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+37		11143			----zero_info----
 
 p11.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -42,3 +106,12 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 20		1120			1129.72
 21		20468			19900.8
 22		336211			315463
+
+Files that contains zero_info:	7
+p06.pddl
+p12.pddl
+p13.pddl
+p15.pddl
+p16.pddl
+p17.pddl
+p20.pddl

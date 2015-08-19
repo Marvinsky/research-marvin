@@ -2,6 +2,11 @@
 
 sokoban-opt11-strips
 
+p14.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+7		21			----zero_info----
+8		53			----zero_info----
+
 p19.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 28		1			1
@@ -17,6 +22,21 @@ bound		ida*-bfs (exp)		ss-bfs (exp)
 p12.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 2		5			5
+
+p13.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+13		45			----zero_info----
+
+p07.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		27			----zero_info----
+11		121			----zero_info----
+12		545			----zero_info----
+13		1625			----zero_info----
+14		14449			----zero_info----
+15		240705			----zero_info----
+16		2.4308e+06			----zero_info----
+17		4.99554e+07			----zero_info----
 
 p05.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
@@ -34,14 +54,77 @@ p04.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 24		1			1
 
+p06.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+16		94			----zero_info----
+17		391			----zero_info----
+18		5539			----zero_info----
+19		19144			----zero_info----
+20		374092			----zero_info----
+21		1.14845e+06			----zero_info----
+
 p17.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 25		1			1
+
+p20.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+15		21			----zero_info----
+
+p03.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+10		3			----zero_info----
+11		47			----zero_info----
+13		2127			----zero_info----
+14		12551			----zero_info----
+15		31927			----zero_info----
+16		246439			----zero_info----
+17		1.51657e+06			----zero_info----
+18		9.1717e+06			----zero_info----
+
+p09.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+7		1			----zero_info----
+8		4			----zero_info----
+11		24			----zero_info----
+13		59968			----zero_info----
+14		3.172e+06			----zero_info----
 
 p08.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 4		1			1
 
+p16.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+55		1516			----zero_info----
+56		69598			----zero_info----
+57		745429			----zero_info----
+
 p11.pddl
 bound		ida*-bfs (exp)		ss-bfs (exp)
 4		1			1
+
+p02.pddl
+bound		ida*-bfs (exp)		ss-bfs (exp)
+6		1			----zero_info----
+8		9			----zero_info----
+9		73			----zero_info----
+10		379			----zero_info----
+11		644			----zero_info----
+12		3469			----zero_info----
+13		34919			----zero_info----
+14		114785			----zero_info----
+15		674897			----zero_info----
+16		2.45591e+06			----zero_info----
+17		1.71775e+07			----zero_info----
+
+Files that contains zero_info:	9
+p02.pddl
+p03.pddl
+p06.pddl
+p07.pddl
+p09.pddl
+p13.pddl
+p14.pddl
+p16.pddl
+p20.pddl
