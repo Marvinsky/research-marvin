@@ -1,1 +1,0 @@
-all_instances_solved: 15		---

@@ -329,7 +329,7 @@ pair<string, double> getPair(vector<string> s_v_three, vector<double> d_v_three)
 void create_report1(string heuristic, string algorithm1, string algorithm2, int countProblems) {
 
 	int countRead = 0;
-        ifstream readFile("h/report/d/instance360_10_GA_ipdb_lmcut.txt");
+        ifstream readFile("h/report/d/instance360_deep.txt");
        
 	string sufix1 = "";
 	if (algorithm1.length() > 4) { 
@@ -978,7 +978,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 
 void create_report() {
-	ifstream readFile("h/report/instance360_10_GA_ipdb_lmcut.txt");
+	ifstream readFile("h/report/instance360_deep.txt");
 	int quantity_total_opt;
 	int total_algorithms;
 	string algorithm1;
