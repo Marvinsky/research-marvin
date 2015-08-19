@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/elevators-opt08-strips/fdist/p02_20.pddl
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_100/elevators-opt08-strips/fdist/p02_20.pddl
 predictionSS: 1
-ss_timer: 21.68
+ss_timer: 31.64
 g:0
 size: 1
 	f: 20	q: 1

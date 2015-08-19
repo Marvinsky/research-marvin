@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/elevators-opt08-strips/fdist/p11_47.pddl
-predictionSS: 94.14
-ss_timer: 92.16
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_100/elevators-opt08-strips/fdist/p11_47.pddl
+predictionSS: 95.59
+ss_timer: 147.42
 g:0
 size: 1
 	f: 39	q: 1
@@ -9,43 +9,43 @@ g:1
 size: 6
 	f: 38	q: 1
 	f: 41	q: 1
-	f: 42	q: 2.02
-	f: 43	q: 3.58
-	f: 46	q: 2.05
-	f: 47	q: 2.35
+	f: 42	q: 1.9
+	f: 43	q: 3.97
+	f: 46	q: 2.14
+	f: 47	q: 1.99
 
 g:2
 size: 6
-	f: 41	q: 1.87
-	f: 43	q: 7.2
-	f: 44	q: 9.89
-	f: 45	q: 9.77
-	f: 46	q: 5.24
-	f: 47	q: 3.15
+	f: 41	q: 1.99
+	f: 43	q: 7.82
+	f: 44	q: 11.27
+	f: 45	q: 9.16
+	f: 46	q: 4.68
+	f: 47	q: 3.64
 
 g:3
 size: 4
-	f: 43	q: 0.53
-	f: 44	q: 0.75
-	f: 45	q: 5.28
-	f: 46	q: 5.25
+	f: 43	q: 1.45
+	f: 44	q: 0.48
+	f: 45	q: 4.75
+	f: 46	q: 5.15
 
 g:4
 size: 3
-	f: 45	q: 5.77
-	f: 46	q: 4.55
-	f: 47	q: 7.53
+	f: 45	q: 5.38
+	f: 46	q: 5.11
+	f: 47	q: 7.23
 
 g:5
 size: 3
-	f: 45	q: 2.36
-	f: 46	q: 2.11
-	f: 47	q: 1.79
+	f: 45	q: 2.12
+	f: 46	q: 2.41
+	f: 47	q: 1.49
 
 g:6
 size: 2
-	f: 46	q: 3.84
-	f: 47	q: 4.26
+	f: 46	q: 5.55
+	f: 47	q: 2.91
 
 g:7
 size: 0

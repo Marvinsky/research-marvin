@@ -1,6 +1,6 @@
-	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds/blocks/fdist/probBLOCKS-10-2_20.pddl
+	/home/levi/marvin/marvin/testss/lmcut/reportss_bounds_probes_100/blocks/fdist/probBLOCKS-10-2_20.pddl
 predictionSS: 3
-ss_timer: 0.24
+ss_timer: 0.38
 g:0
 size: 1
 	f: 19	q: 1
