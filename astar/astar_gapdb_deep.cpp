@@ -482,46 +482,19 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			if (is_blind_heuristic) {
 				//Workaround
 				string task2 = s;
-				//size_t found_task2 =  task2.find("_");
-				/*size_t found_task4 = task2.find("shrink");
-				cout<<"found_task4 = "<<found_task4<<"\n";
-				if  (found_task4 < 100) {
-					string delimiter = "_";
-                			string s2 = s;
-                			string pot[6];
-                			size_t pos = 0;
-                			string token;
-                			int index = 0;
-                			while ((pos = s2.find(delimiter)) != std::string::npos) {
-                        			token = s2.substr(0, pos);
-                        			pot[index] = token;
-                        			s2.erase(0, pos + delimiter.length());
-                        			index++;
-                			}
-					cout<<"index = "<<index<<"\n";
-                			pot[index] = s2;
-
-					cout<<"pot[0] = "<<pot[0]<<"\n";
-					cout<<"pot[1] = "<<pot[1]<<"\n";
-					cout<<"pot[2] = "<<pot[2]<<"\n";
-					cout<<"pot[3] = "<<pot[3]<<"\n";
-					string heur_merge_and_shrink = "mands()_" + t_final;
-					
-					v_gapdb_string.push_back(heur_merge_and_shrink);
-				} else {*/
-					size_t found_task2 =  task2.find("_");
-					string new_s = task2.substr(0, found_task2);
+				
+				size_t found_task2 =  task2.find("_");
+				string new_s = task2.substr(0, found_task2);
 	
-					string heur_blind = "blind()_" + t_final;
-					if (new_s == "ipdb") {	
-						heur_blind = "ipdb()_" + t_final;
-					} else if (new_s == "lmcut") {
-						heur_blind = "lmcut()_" + t_final;
-					} else if (new_s == "mands") {
-						heur_blind = "mands()_" + t_final;
-					}
-					v_gapdb_string.push_back(heur_blind);
-				//}
+				string heur_blind = "blind()_" + t_final;
+				if (new_s == "ipdb") {	
+					heur_blind = "ipdb()_" + t_final;
+				} else if (new_s == "lmcut") {
+					heur_blind = "lmcut()_" + t_final;
+				} else if (new_s == "mands") {
+					heur_blind = "mands()_" + t_final;
+				}
+				v_gapdb_string.push_back(heur_blind);
 			} else {
 				v_gapdb_string.push_back(gapdb_string);
 			}
@@ -533,36 +506,76 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			
 			//get the real name
 			string real_heur = v_gapdb_string.at(i);
+	
 			string task = real_heur;
-			size_t found_task = task.find("_");
-			string previous_real_heur = task.substr(0, found_task);
+			size_t found_task = task.find("deep");
+			string final_real_heur, final_number_heur;
+                        string delimiter = "_";
+			if (found_task > 100) {
+				string t0 = real_heur;
+				size_t found_t0 = t0.find("_");
+				string previous_real_heur = t0.substr(0, found_t0);
 
-			string final_real_heur = previous_real_heur;
-			if (previous_real_heur == "mands()") {
-				final_real_heur = "merge_and_shrink()";
+				final_real_heur = previous_real_heur;
+				if (previous_real_heur == "mands()") {
+					final_real_heur = "merge_and_shrink()";
+				}
+			
+				//get the heuristic number
+				string t1 = real_heur;
+			        size_t found_t1 = t1.find("_");
+			        final_number_heur = t1.substr(found_t1 + 1, t1.length());	
+                        	
+			} else {
+				string s2 = real_heur;
+                        	string pot[6];
+                        	size_t pos = 0;
+                        	string token;
+                        	int index = 0;
+                        	while ((pos = s2.find(delimiter)) != std::string::npos) {
+                        		token = s2.substr(0, pos);
+                        		pot[index] = token;
+                        		s2.erase(0, pos + delimiter.length());
+                        		index++;
+                        	}
+                        	//cout<<"index = "<<index<<"\n";
+                        	pot[index] = s2;
+
+                        	cout<<"pot[0] = "<<pot[0]<<"\n";
+                        	cout<<"pot[1] = "<<pot[1]<<"\n";
+                        	cout<<"pot[2] = "<<pot[2]<<"\n";
+
+				final_real_heur = "gapdb_deep()";
+				final_number_heur = pot[2];
 			}
-			cout<<"final_real_heur = "<<final_real_heur<<"\n";			
 
-			string task3 = real_heur;
-			size_t found_task3 = task3.find("_");
-			string final_number_heur = task3.substr(found_task3 + 1, task3.length());
-			cout<<"final_number_heur = "<<final_number_heur<<"\n";
-			/*
+			cout<<"final_real_heur = "<<final_real_heur<<"\n";
+			cout<<"final_number_heur = "<<final_number_heur<<"\n\n";
+
+			//begin
+			string new_problem_name = problema.c_str();
+                        string t = new_problem_name;
+                        size_t found = t.find(".");
+                        string new_problem_name_mod = t.substr(0, found);
+                        //cout<<"new_problem_name_mod = "<<new_problem_name_mod<<"\n";
+                        //stringstream number;
+                        //number<<i; //this should contains the real number
+                        //name that will be used in the backend
+                        //string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + number.str() + ".pddl";
+                        string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + final_number_heur  + ".pddl";
+                        cout<<"prob_name_gapdb = "<<prob_name_gapdb<<"\n";
+			//end
+
+	
 			//end get real name
-
 			//creation of each sh file for the gapdb heuristic
 			string arquivo;
 			string sas;
-			stringstream Resultado, Resultado2;
+			stringstream Resultado;
 			
-			Resultado2<<num_problema+1;
+			Resultado<<i+1;	
 
-			arquivo += "A";
-			arquivo += Resultado2.str();
-			arquivo += "_gapdb_";
-			Resultado<<i+1;
-			arquivo += Resultado.str();
-			arquivo += string(".sh");
+			arquivo = new_problem_name_mod + "_gapdb_" + final_number_heur + ".sh";	
 			arquivo = "/" + arquivo;
 			arquivo = pasta + arquivo;
 			arquivo = "astar/"+heuristic+"/problemas/" + arquivo;
@@ -578,23 +591,8 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 			string parameter =  final_real_heur;//v_gapdb_string.at(i);
 			cout<<"parameter_"<<i<<" = "<<parameter<<"\n";
-
-
-
-			string new_problem_name = problema.c_str();
-			string t = new_problem_name;
-			size_t found = t.find(".");
-			string new_problem_name_mod = t.substr(0, found);
-			//cout<<"new_problem_name_mod = "<<new_problem_name_mod<<"\n";
-			//stringstream number;
-			//number<<i; //this should contains the real number
-			//name that will be used in the backend
-			//string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + number.str() + ".pddl";
-			string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + final_number_heur  + ".pddl";
-			cout<<"prob_name_gapdb = "<<prob_name_gapdb<<"\n";
-			*/
-
-			/*
+			
+			//Begin construction of the sh file
 			outfile<<"#PBS -N _p"<<(num_problema+1)<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\n#PBS -l pmem=6gb\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
 			//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
         		//PBS -l walltime=200
@@ -621,8 +619,8 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			cout<<allow<<"\n";
 			system(allow.c_str());
 			executeFile = "sh "+arquivo;
-			//system(executeFile.c_str());
-			*/
+			system(executeFile.c_str());
+			
 		}
 	}
 }
