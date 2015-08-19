@@ -277,7 +277,7 @@ map<string, vector<string> > analyzeFile(string output_BC) {
 		} else if (heuristic_name_created == "lmcut") {
 			name = "lmcut_" + number_h;
 		} else if (heuristic_name_created == "merge_and_shrink") {
-			name = "merge_and_shrink_" + number_h;
+			name = "mands_" + number_h;
 		} else {	
 			name = "gapdb_" + number_h;
 		}
@@ -453,7 +453,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			string gapdb_string = heuristic+"(mp=";
 			string s = iter->first;
 			vector<string> info = iter->second;
-			cout<<"heuristic (s) = "<<s<<"\n";
+			//cout<<"heuristic (s) = "<<s<<"\n";
 			//find the number
 			string t = s;
 			size_t found = t.find("_");
@@ -482,18 +482,46 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			if (is_blind_heuristic) {
 				//Workaround
 				string task2 = s;
-				size_t found_task2 =  task2.find("_");
-				string new_s = task2.substr(0, found_task2);
+				//size_t found_task2 =  task2.find("_");
+				/*size_t found_task4 = task2.find("shrink");
+				cout<<"found_task4 = "<<found_task4<<"\n";
+				if  (found_task4 < 100) {
+					string delimiter = "_";
+                			string s2 = s;
+                			string pot[6];
+                			size_t pos = 0;
+                			string token;
+                			int index = 0;
+                			while ((pos = s2.find(delimiter)) != std::string::npos) {
+                        			token = s2.substr(0, pos);
+                        			pot[index] = token;
+                        			s2.erase(0, pos + delimiter.length());
+                        			index++;
+                			}
+					cout<<"index = "<<index<<"\n";
+                			pot[index] = s2;
+
+					cout<<"pot[0] = "<<pot[0]<<"\n";
+					cout<<"pot[1] = "<<pot[1]<<"\n";
+					cout<<"pot[2] = "<<pot[2]<<"\n";
+					cout<<"pot[3] = "<<pot[3]<<"\n";
+					string heur_merge_and_shrink = "mands()_" + t_final;
+					
+					v_gapdb_string.push_back(heur_merge_and_shrink);
+				} else {*/
+					size_t found_task2 =  task2.find("_");
+					string new_s = task2.substr(0, found_task2);
 	
-				string heur_blind = "blind()_" + t_final;
-				if (new_s == "ipdb") {	
-					heur_blind = "ipdb()_" + t_final;
-				} else if (new_s == "lmcut") {
-					heur_blind = "lmcut()_" + t_final;
-				} else if (new_s == "merge_and_shrink") {
-					heur_blind = "merge_and_shrink()_" + t_final;
-				}
-				v_gapdb_string.push_back(heur_blind);
+					string heur_blind = "blind()_" + t_final;
+					if (new_s == "ipdb") {	
+						heur_blind = "ipdb()_" + t_final;
+					} else if (new_s == "lmcut") {
+						heur_blind = "lmcut()_" + t_final;
+					} else if (new_s == "mands") {
+						heur_blind = "mands()_" + t_final;
+					}
+					v_gapdb_string.push_back(heur_blind);
+				//}
 			} else {
 				v_gapdb_string.push_back(gapdb_string);
 			}
@@ -507,14 +535,19 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			string real_heur = v_gapdb_string.at(i);
 			string task = real_heur;
 			size_t found_task = task.find("_");
-			string final_real_heur = task.substr(0, found_task); 
-			cout<<"final_real_heur = "<<final_real_heur<<"\n";
-			
+			string previous_real_heur = task.substr(0, found_task);
+
+			string final_real_heur = previous_real_heur;
+			if (previous_real_heur == "mands()") {
+				final_real_heur = "merge_and_shrink()";
+			}
+			cout<<"final_real_heur = "<<final_real_heur<<"\n";			
+
 			string task3 = real_heur;
 			size_t found_task3 = task3.find("_");
 			string final_number_heur = task3.substr(found_task3 + 1, task3.length());
 			cout<<"final_number_heur = "<<final_number_heur<<"\n";
-
+			/*
 			//end get real name
 
 			//creation of each sh file for the gapdb heuristic
@@ -545,6 +578,9 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 			string parameter =  final_real_heur;//v_gapdb_string.at(i);
 			cout<<"parameter_"<<i<<" = "<<parameter<<"\n";
+
+
+
 			string new_problem_name = problema.c_str();
 			string t = new_problem_name;
 			size_t found = t.find(".");
@@ -556,9 +592,9 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			//string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + number.str() + ".pddl";
 			string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + final_number_heur  + ".pddl";
 			cout<<"prob_name_gapdb = "<<prob_name_gapdb<<"\n";
+			*/
 
-
-
+			/*
 			outfile<<"#PBS -N _p"<<(num_problema+1)<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\n#PBS -l pmem=6gb\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
 			//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
         		//PBS -l walltime=200
@@ -579,20 +615,14 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 			string date = currentDateTime();
 			string executeFile;
-			//executeFile = "qsub -o ";
-			//executeFile += "logs/"+date;
-			//executeFile += string(".log");
-			//executeFile += " -j oe ";	
-			//executeFile += arquivo;
-			//cout<<executeFile<<"\n\n";
-			//arquivo = "qsub "+ arquivo;
-			//cout<<arquivo<<endl;
+			
         		string allow;
 			allow = "chmod +x "+arquivo;	
 			cout<<allow<<"\n";
 			system(allow.c_str());
 			executeFile = "sh "+arquivo;
-			system(executeFile.c_str());
+			//system(executeFile.c_str());
+			*/
 		}
 	}
 }
