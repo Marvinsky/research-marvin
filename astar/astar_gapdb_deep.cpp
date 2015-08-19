@@ -544,8 +544,13 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
                         	cout<<"pot[0] = "<<pot[0]<<"\n";
                         	cout<<"pot[1] = "<<pot[1]<<"\n";
                         	cout<<"pot[2] = "<<pot[2]<<"\n";
+				//remove deep from pot[1]
+				string pot1 = pot[1];
+				size_t found_pot1 = pot1.find("(");
+				string new_pot1 = pot1.substr(found_pot1, pot1.length());
+				//end remove deep from pot[1]
 
-				final_real_heur = "gapdb_deep()";
+				final_real_heur = "gapdb" + new_pot1;
 				final_number_heur = pot[2];
 			}
 
@@ -620,7 +625,6 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			system(allow.c_str());
 			executeFile = "sh "+arquivo;
 			system(executeFile.c_str());
-			
 		}
 	}
 }

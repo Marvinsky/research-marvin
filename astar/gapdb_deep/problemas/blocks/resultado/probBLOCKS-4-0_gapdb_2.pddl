@@ -21,6 +21,7 @@ Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0.00s, 3284 KB]
 dominio = blocks
 tarefa = probBLOCKS-4-0.pddl
 heuristica = gapdb_deep
+Directory created successfully.
 cleared store_GA_patterns.
 Best heuristic value: 5 [g=1, 3 evaluated, 1 expanded, t=0.00s, 3284 KB]
 generated_by_level = 4

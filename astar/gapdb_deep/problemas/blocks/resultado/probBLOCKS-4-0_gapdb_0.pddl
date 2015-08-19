@@ -201,12 +201,15 @@ count_level = 2
 dominio = blocks
 tarefa = probBLOCKS-4-0.pddl
 heuristica = gapdb_deep
+Directory created successfully.
 f = 6	q = 7
 dominio = blocks
 tarefa = probBLOCKS-4-0.pddl
 heuristica = gapdb_deep
 problem_name_gapdb = probBLOCKS-4-0_gapdb_0.pddl
 Directory: gapdb_deep created.
+Directory: SSCC created.
+Directory: SSCCFile created.
 name = probBLOCKS-4-0_gapdb_0_F_6.csv
 Actual search time: 0.00s [t=0.20s]
 pick-up b (1)

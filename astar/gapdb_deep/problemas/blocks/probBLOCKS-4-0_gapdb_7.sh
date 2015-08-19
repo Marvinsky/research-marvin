@@ -21,7 +21,7 @@ python3 src/translate/translate.py benchmarks/blocks/domain.pddl benchmarks/bloc
 
 src/preprocess/preprocess < Astarblocks8.sas
 
-src/search/downward-release --use_saved_pdbs --domain_name blocks --problem_name probBLOCKS-4-0.pddl --heuristic_name gapdb_deep --problem_name_gapdb probBLOCKS-4-0_gapdb_7.pddl  --search "astar(min([gapdb_deep()]))" <  Astarblocks8 > ${RESULTS}/probBLOCKS-4-0_gapdb_7.pddl
+src/search/downward-release --use_saved_pdbs --domain_name blocks --problem_name probBLOCKS-4-0.pddl --heuristic_name gapdb_deep --problem_name_gapdb probBLOCKS-4-0_gapdb_7.pddl  --search "astar(min([gapdb(mp=0.1000000,size=2000000,disjoint=true)]))" <  Astarblocks8 > ${RESULTS}/probBLOCKS-4-0_gapdb_7.pddl
 
 
 

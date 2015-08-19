@@ -117,82 +117,82 @@ Transition system (6/9 vars): init h=6, max f=19, max g=12, max h=11 [t=0.00s]
 Merging transition system (6/9 vars) and atomic transition system #2
 Transition system (7/9 vars): computing distances using unit-cost algorithm
 Transition system (7/9 vars): 2000 states, ???/13800 arcs, 205528 bytes
-Transition system (7/9 vars): init h=6, max f=21, max g=12, max h=13 [t=0.00s]
+Transition system (7/9 vars): init h=6, max f=21, max g=12, max h=13 [t=0.02s]
 Next variable: 1
 Transition system (7/9 vars): 2000 states, ???/13800 arcs, 205528 bytes
-Transition system (7/9 vars): init h=6, max f=21, max g=12, max h=13 [t=0.00s]
+Transition system (7/9 vars): init h=6, max f=21, max g=12, max h=13 [t=0.02s]
 Atomic transition system #1: 2 states, ???/5 arcs, 1928 bytes
-Atomic transition system #1: init h=0, max f=1, max g=1, max h=0 [t=0.00s]
+Atomic transition system #1: init h=0, max f=1, max g=1, max h=0 [t=0.02s]
 Label reduction: 15 labels, 11 after reduction
 Atomic transition system #1: 2 states, ???/5 arcs, 1896 bytes
-Atomic transition system #1: init h=0, max f=1, max g=1, max h=0 [t=0.00s]
+Atomic transition system #1: init h=0, max f=1, max g=1, max h=0 [t=0.02s]
 Transition system (7/9 vars): 2000 states, ???/13800 arcs, 205464 bytes
-Transition system (7/9 vars): init h=6, max f=21, max g=12, max h=13 [t=0.00s]
+Transition system (7/9 vars): init h=6, max f=21, max g=12, max h=13 [t=0.02s]
 Merging transition system (7/9 vars) and atomic transition system #1
 Transition system (8/9 vars): computing distances using unit-cost algorithm
 Transition system (8/9 vars): unreachable: 1016 states, irrelevant: 0 states
 Transition system (8/9 vars): applying abstraction (4000 to 2984 states)
 Transition system (8/9 vars): applying abstraction to lookup table
 Transition system (8/9 vars): 2984 states, ???/18576 arcs, 363640 bytes
-Transition system (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=0.00s]
+Transition system (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=0.02s]
 Next variable: 0
 Transition system (8/9 vars): 2984 states, ???/18576 arcs, 363640 bytes
-Transition system (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=0.00s]
+Transition system (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=0.02s]
 Atomic transition system #0: 5 states, ???/13 arcs, 2112 bytes
-Atomic transition system #0: init h=0, max f=2, max g=2, max h=0 [t=0.00s]
+Atomic transition system #0: init h=0, max f=2, max g=2, max h=0 [t=0.02s]
 Label reduction: 11 labels, 9 after reduction
 Atomic transition system #0: 5 states, ???/13 arcs, 2096 bytes
-Atomic transition system #0: init h=0, max f=2, max g=2, max h=0 [t=0.00s]
+Atomic transition system #0: init h=0, max f=2, max g=2, max h=0 [t=0.02s]
 Transition system (8/9 vars): 2984 states, ???/18576 arcs, 325724 bytes
-Transition system (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=0.00s]
+Transition system (8/9 vars): init h=6, max f=23, max g=12, max h=13 [t=0.02s]
 Merging transition system (8/9 vars) and atomic transition system #0
 Transition system (9/9 vars): computing distances using unit-cost algorithm
 Transition system (9/9 vars): unreachable: 14795 states, irrelevant: 0 states
 Transition system (9/9 vars): applying abstraction (14920 to 125 states)
 Transition system (9/9 vars): applying abstraction to lookup table
 Transition system (9/9 vars): 125 states, ???/272 arcs, 102464 bytes
-Transition system (9/9 vars): init h=6, max f=18, max g=6, max h=12 [t=0.00s]
+Transition system (9/9 vars): init h=6, max f=18, max g=6, max h=12 [t=0.02s]
 Transition system (9/9 vars): 125 states, ???/272 arcs, 102464 bytes
-Transition system (9/9 vars): init h=6, max f=18, max g=6, max h=12 [t=0.00s]
+Transition system (9/9 vars): init h=6, max f=18, max g=6, max h=12 [t=0.02s]
 Order of merged transition systems: 8 5, 9 7, 10 6, 11 4, 12 3, 13 2, 14 1, 15 0, 
 Final transition system size: 125
-Done initializing merge-and-shrink heuristic [0.00s]
+Done initializing merge-and-shrink heuristic [0.02s]
 initial h value: 6
 Estimated peak memory for transition system: 102464 bytes
 initial threshold = 6
 generated_by_level = 0
 expanded_by_level = 1
-f = 0 [1 evaluated, 0 expanded, t=0.00s, 4800 KB]
-Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0.00s, 4800 KB]
+f = 0 [1 evaluated, 0 expanded, t=0.02s, 4800 KB]
+Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0.02s, 4800 KB]
 dominio = blocks
 tarefa = probBLOCKS-4-0.pddl
 heuristica = gapdb_deep
 Directory created successfully.
 cleared store_GA_patterns.
-Best heuristic value: 5 [g=1, 3 evaluated, 1 expanded, t=0.00s, 4800 KB]
+Best heuristic value: 5 [g=1, 3 evaluated, 1 expanded, t=0.02s, 4800 KB]
 generated_by_level = 4
 expanded_by_level = 1
 fnivel: 0
 nodesGeneratedByLevel: 1
- time0: 0.00
+ time0: 0.02
 nodesGeneratedToTheLevel: 1
-f = 1 [5 evaluated, 1 expanded, t=0.00s, 4800 KB]
-Best heuristic value: 4 [g=2, 9 evaluated, 3 expanded, t=0.00s, 4800 KB]
+f = 1 [5 evaluated, 1 expanded, t=0.02s, 4800 KB]
+Best heuristic value: 4 [g=2, 9 evaluated, 3 expanded, t=0.02s, 4800 KB]
 generated_by_level = 16
 expanded_by_level = 4
 fnivel: 1
 nodesGeneratedByLevel: 4
- time0: 0.00
+ time0: 0.02
 nodesGeneratedToTheLevel: 5
-f = 2 [17 evaluated, 5 expanded, t=0.00s, 4800 KB]
-Best heuristic value: 3 [g=3, 24 evaluated, 9 expanded, t=0.00s, 4800 KB]
+f = 2 [17 evaluated, 5 expanded, t=0.02s, 4800 KB]
+Best heuristic value: 3 [g=3, 24 evaluated, 9 expanded, t=0.02s, 4800 KB]
 generated_by_level = 36
 expanded_by_level = 12
 fnivel: 2
 nodesGeneratedByLevel: 12
- time0: 0.00
+ time0: 0.02
 nodesGeneratedToTheLevel: 17
-f = 3 [41 evaluated, 17 expanded, t=0.00s, 4800 KB]
+f = 3 [41 evaluated, 17 expanded, t=0.02s, 4800 KB]
 Best heuristic value: 2 [g=4, 54 evaluated, 24 expanded, t=0.02s, 4800 KB]
 generated_by_level = 72
 expanded_by_level = 24
@@ -236,7 +236,7 @@ Directory: gapdb_deep created.
 Directory: SSCC created.
 Directory: SSCCFile created.
 name = probBLOCKS-4-0_gapdb_5_F_6.csv
-Actual search time: 0.02s [t=0.02s]
+Actual search time: 0.00s [t=0.02s]
 pick-up b (1)
 stack b a (1)
 pick-up c (1)
