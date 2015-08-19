@@ -1,0 +1,4 @@
+blocks
+domain.pddl
+1
+probBLOCKS-4-0.pddl

@@ -11,7 +11,7 @@
 #include <set>
 #include <time.h>
 
-
+#include <dirent.h>
 
 using std::string;
 using namespace std;
@@ -36,6 +36,41 @@ string currentDateTime() {
 	
 	strftime(buf, sizeof(buf), "%Y-%m-%d", &tstruct);
 	return buf;
+}
+
+string getInstanceName(string bc_file)  {
+	string t1 = bc_file;
+        size_t found1 = t1.find("F");
+
+        string name_instance;
+        if (found1 > 0) {
+        	name_instance = t1.substr(0, found1 - 1);
+        }
+        name_instance += ".pddl";
+	return name_instance;
+}
+
+int getInstanceNumber(string bc_file) {
+	string t = bc_file;
+	size_t found1 = t.find("F");
+	string instance_number1 = t.substr(found1 + 2, t.length());
+	size_t found3 = instance_number1.find(".");
+        //cout<<"found3 = "<<found3<<"\n";
+        string instance_number2 = instance_number1.substr(0, found3);
+       	//cout<<"instance_number2 = "<<instance_number2<<"\n\n";
+        int number_instance = atoi(instance_number2.c_str());
+	return number_instance;
+}
+
+int getMaxInstance(vector<int> v) {
+	int max = 0;
+	for (size_t i = 0; i < v.size(); i++) {
+		int n = v.at(i);
+		if (max < n) {
+			max = n;
+		}
+	}
+	return max;
 }
 
 //vector<pair<string, double> >  
@@ -314,9 +349,76 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	sas += Resultado.str();
 	*/
 
+	//find the F_boundary for each instance: /marvin/testss/gapdb_deep/reportss/blocks/bc$
 
+	string bcdirectory;
+	bcdirectory = pasta + "/bc/" + bcdirectory;
+	bcdirectory = "/reportss/" + bcdirectory;
+	bcdirectory = "testss/" + heuristic + bcdirectory;
+	bcdirectory = "marvin/" + bcdirectory;
+	bcdirectory = "marvin/" + bcdirectory;
+	bcdirectory = "/home/" + bcdirectory;
+	cout<<"bcdirectory = "<<bcdirectory<<"\n";
+	
+        vector<string> fileNames;
+
+        DIR *dir3;
+        struct dirent *ent3;
+
+        dir3 = opendir(bcdirectory.c_str());
+        if (dir3 != NULL) {
+        	while ((ent3 = readdir(dir3)) != NULL) {
+                	string fileName = ent3->d_name;
+                        int sizeName = fileName.size();
+                        if ((sizeName == 1)  || (sizeName == 2)) {
+                        	//TODO
+                        } else {
+                        	fileNames.push_back(fileName);
+                        }
+                }
+                closedir(dir3);
+        } else {
+        	cout<<"Error trying to open the directory: "<<bcdirectory.c_str()<<endl;
+        }
+
+
+	set<string> add_one_time;
+	for (size_t i = 0; i < fileNames.size(); i++) {
+		string bc_file1 = fileNames.at(i);
+		string instance_name1 = getInstanceName(bc_file1);
+		add_one_time.insert(instance_name1);	
+	}
+
+
+	map<string, int> map_instance_bound;
+	set<string>::iterator iter;
+        for (iter = add_one_time.begin(); iter != add_one_time.end(); ++iter) {	
+		string instance_name1 = *iter;
+		vector<int> all_instance_number;
+		for (size_t j = 0; j < fileNames.size(); j++) {
+			string bc_file2 = fileNames.at(j);
+			string instance_name2 = getInstanceName(bc_file2);
+			if (instance_name1 == instance_name2) {//comparing each instance
+				int instance_number = getInstanceNumber(bc_file2);
+				//cout<<"instance_number = "<<instance_number<<"\n";
+				all_instance_number.push_back(instance_number);
+			}
+		}
+
+		int F_boundary = getMaxInstance(all_instance_number);
+		cout<<"F_boundary = "<<F_boundary<<"\n";
+		map_instance_bound.insert(pair<string, int>(instance_name1, F_boundary));
+	}
+
+	map<string, int>::iterator iter_bound;
+	for (iter_bound = map_instance_bound.begin(); iter_bound != map_instance_bound.end(); iter_bound++) {
+		string key = iter_bound->first;
+		int value = iter_bound->second;
+		cout<<key<<", "<<value<<"\n";
+	}
+
+	/*
 	//Calling idai in order to get the max_bound to use
-
 	//Read the fles from idai
         string idabounds = problema;
         idabounds =  pasta+"/"+idabounds;
@@ -513,12 +615,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 				//Santiago's code to find the F_boundary on the fly	
 				outfile<<"src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --problem_name_gapdb "<<prob_name_gapdb<<"  --search \"astar(min(["<<parameter<<"]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
-
-				/*if (F_boundary) {
-					outfile<<"src/search/downward-release --F_boundary "<<F_boundary<<" --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --problem_name_gapdb "<<prob_name_gapdb<<"  --search \"astar(min(["<<parameter<<"]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
-				} else {
-					outfile<<"src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<"  --problem_name_gapdb "<<prob_name_gapdb<<"  --search \"astar(min(["<<parameter<<"]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
-				}*/
+	
 				outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
 				outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
         
@@ -543,13 +640,14 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			}
 		} // end total_levels != 0
 	}
+	*/
 }
 
 
 
 void entrada_dados(string &pasta, string &problema, string &dominio, bool &dominio_unico, int &quantidade_problemas) {
 	
-	ifstream file2("h/astar/instance360.txt");
+	ifstream file2("h/astar/instance360_deep.txt");
 	int quantidade_entrada_opt;
 	int total_heuristics;
 	file2>>quantidade_entrada_opt;
@@ -560,7 +658,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 	while (counter < total_heuristics) {
 		file2>>heuristic;
 
-		ifstream file("h/astar/d/instance360.txt");
+		ifstream file("h/astar/d/instance360_deep.txt");
 		cout<<"heuristic = "<<heuristic<<"\n\n";
 		cout<<"quantidade_entrada_opt = "<<quantidade_entrada_opt<<"\n\n";
 		cout<<"total_heuristics = "<<total_heuristics<<"\n\n"; 
