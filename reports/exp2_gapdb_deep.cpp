@@ -219,15 +219,19 @@ vector<pair<string, double> >  analyzeFile(string output_BC, bool first_paramete
                         	name = "_ipdb";
                 	} else if (heuristic_name_created == "lmcut") {
                         	name = "_lmcut";
-                	} else {
+                	} else if (heuristic_name_created == "merge_and_shrink") {
+				name = "_mands";
+			} else	{
                         	name = "_gapdb";
                 	}
-		} else { //Here we collect many heuristics
+		} else { //Here we collect many heuristics from SS
 			if (heuristic_name_created == "ipdb") {
                         	name =  number.str() + "_ipdb";
                 	} else if (heuristic_name_created == "lmcut") {
                         	name = number.str() + "_lmcut";
-                	} else {
+                	} else if (heuristic_name_created == "merge_and_shrink") {
+				name = number.str() + "_mands";
+			} else 	{
                         	name = number.str() + "_gapdb";
                 	}
 		}
@@ -583,18 +587,19 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		map<string, vector<pair<string, double> > >::iterator iter_m;
 		for (iter_m = map_bc_file_astar.begin(); iter_m != map_bc_file_astar.end(); iter_m++) {
 			string astarBC = iter_m->first;
-			//cout<<"astarBC = "<<astarBC<<"\n";
+			cout<<"astarBC = "<<astarBC<<"\n";
 			vector<pair<string, double> > m_values = iter_m->second;
 			vector<pair<string, double> > m_heur_ordered = get_heur_ordered(m_values);	
 			//end order heuristics
-
+	
 			for (size_t j = 0; j < fileNames.size(); j++) {
 				string ssBC = fileNames.at(j);
 				//cout<<"\t\tssBC = "<<ssBC<<"\n";
 				string output_ssBC = output + ssBC;
 				//cout<<"output_ssBC = "<<output_ssBC<<"\n\n";
 				if (astarBC == ssBC) {
-					//cout<<"astarBC == ssBC\n";
+					cout<<"astarBC == ssBC\n";
+					/*
 					vector<string> collector_astar, collector_ss;
 					map<double, vector<string> > map_astar, map_ss;
 					map<int ,string> look_for_heuristic; //map to look the name of the heuristic
@@ -963,7 +968,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						cout<<"\tastarBC = "<<astarBC<<"\n";
 						info<<"\n\n";	
 					}
-				} //compare astarBC == ssBC 
+					*/
+				} //compare astarBC == ssBC
 			}
 		}
 		outputFile.close();
@@ -971,6 +977,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			outputFile2<<"all_instances_solved: "<<all_instances_solved<<"\t\t---\n";
 		}
 		outputFile2.close();
+
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
 	info.close();
