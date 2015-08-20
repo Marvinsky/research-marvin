@@ -63,14 +63,14 @@ bool isIdaInfo(int i, vector<int> format_before) {
 void create_report1(vector<string> domains, string resultFile) {
 
 	ofstream outputFile(resultFile.c_str(), ios::out);
-	outputFile<<"\t\tPercentage of points in each quadrant:  10 GA + ipdb + lmcut - 5000 probes\n\n";
+	outputFile<<"\t\tPercentage of points in each quadrant:  10 GA + ipdb + lmcut + merge_and_shrink- 500 probes\n\n";
 	outputFile<<left<<setw(24)<<"Domain"<<right<<setw(15)<<"Correct (%)\n\n";
 
 	for (size_t k = 0; k < domains.size(); k++) {
 		string domain = domains.at(k);
 		string openFile;
        		openFile =  domain + ".txt";
-        	openFile = "global_exp_2_ss_astar_10_GA_ipdb_lmcut_v2/" + openFile;
+        	openFile = "global_exp_2_ss_astar_deep/" + openFile;
         	openFile = "reports/" + openFile;
         	openFile = "marvin/" + openFile;
         	openFile = "marvin/" + openFile;
@@ -187,7 +187,7 @@ void create_report() {
 
 	string dirFile;
 	dirFile = "report_info/" + dirFile;
-        dirFile = "global_exp_2_ss_astar_10_GA_ipdb_lmcut_v2/" + dirFile;
+        dirFile = "global_exp_2_ss_astar_deep/" + dirFile;
         dirFile = "reports/" + dirFile;
         dirFile = "marvin/" + dirFile;
         dirFile = "marvin/" + dirFile;
@@ -200,7 +200,7 @@ void create_report() {
 
 	string resultFile = "report_info.txt";
 	resultFile = "report_info/" + resultFile;
-        resultFile = "global_exp_2_ss_astar_10_GA_ipdb_lmcut_v2/" + resultFile;
+        resultFile = "global_exp_2_ss_astar_deep/" + resultFile;
         resultFile = "reports/" + resultFile;
         resultFile = "marvin/" + resultFile;
         resultFile = "marvin/" + resultFile;
