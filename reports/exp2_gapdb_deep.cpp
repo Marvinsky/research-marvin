@@ -599,7 +599,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				//cout<<"output_ssBC = "<<output_ssBC<<"\n\n";
 				if (astarBC == ssBC) {
 					cout<<"astarBC == ssBC\n";
-					/*
+					
 					vector<string> collector_astar, collector_ss;
 					map<double, vector<string> > map_astar, map_ss;
 					map<int ,string> look_for_heuristic; //map to look the name of the heuristic
@@ -968,7 +968,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						cout<<"\tastarBC = "<<astarBC<<"\n";
 						info<<"\n\n";	
 					}
-					*/
+
 				} //compare astarBC == ssBC
 			}
 		}
