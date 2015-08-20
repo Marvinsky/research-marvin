@@ -394,8 +394,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 		ofstream outputFile;
 		outputFile.open(resultFile.c_str(), ios::out);
-		//Take into account that the experiment two was run by ss using 5000 probes
-		outputFile<<"Experiment 2: "<<domain<<" using "<<heuristic<<" heuristic with 5000 probes\n\n";
+		//Take into account that the experiment two was run by ss using 500 probes
+		outputFile<<"Experiment 2: "<<domain<<" using "<<heuristic<<" heuristic with 500 probes\n\n";
 		
 		//print each file
 		ofstream outputFile2;

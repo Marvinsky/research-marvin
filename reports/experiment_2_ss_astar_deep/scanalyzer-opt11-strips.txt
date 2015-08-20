@@ -1,4 +1,4 @@
-Experiment 2: scanalyzer-opt11-strips using gapdb_deep heuristic with 5000 probes
+Experiment 2: scanalyzer-opt11-strips using gapdb_deep heuristic with 500 probes
 
 
 
