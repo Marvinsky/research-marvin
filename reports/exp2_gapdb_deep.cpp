@@ -17,6 +17,10 @@
 #include <algorithm>
 #include <set>
 
+//enhance to read files from reportss_5000_probes
+#define NUM_PROBES 500
+
+
 using namespace std;
 
 
@@ -395,14 +399,14 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		ofstream outputFile;
 		outputFile.open(resultFile.c_str(), ios::out);
 		//Take into account that the experiment two was run by ss using 500 probes
-		outputFile<<"Experiment 2: "<<domain<<" using "<<heuristic<<" heuristic with 500 probes\n\n";
+		outputFile<<"Experiment 2: "<<domain<<" using "<<heuristic<<" heuristic with "<<NUM_PROBES<<" probes\n\n";
 		
 		//print each file
 		ofstream outputFile2;
 		outputFile2.open(resultFile2.c_str(), ios::out);
 		int all_instances_solved = 0;
 		
-		//Read the fles from algorithm2 - idai
+		//Read the fles from algorithm2 - astar
 		string output5;
                 //output5 = "resultado/"+output5;
                 output5 =  domain+"/bc/"+output5;
@@ -447,9 +451,17 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		
 
 		//Read the files from algorithm1 - ss
+
+		string reportss_probes = "report" + sufix1;
+		stringstream nameProbes;
+		nameProbes<<NUM_PROBES;
+		reportss_probes += "_" + nameProbes.str();
+		reportss_probes += "_probes"; 
+		//cout<<"reportss_probes = "<<reportss_probes<<"\n";
+
         	string output;
 		output =  domain+"/bc/"+output;
-		output = algorithm1+"/"+heuristic+"/report"+sufix1+"/"+output;
+		output = algorithm1+"/"+heuristic+ "/" + reportss_probes + "/" + output;
 		output = "marvin/" + output;
 		output = "marvin/" + output;
 		output = "/home/" + output;
@@ -587,7 +599,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		map<string, vector<pair<string, double> > >::iterator iter_m;
 		for (iter_m = map_bc_file_astar.begin(); iter_m != map_bc_file_astar.end(); iter_m++) {
 			string astarBC = iter_m->first;
-			cout<<"astarBC = "<<astarBC<<"\n";
+			//cout<<"astarBC = "<<astarBC<<"\n";
 			vector<pair<string, double> > m_values = iter_m->second;
 			vector<pair<string, double> > m_heur_ordered = get_heur_ordered(m_values);	
 			//end order heuristics
@@ -598,7 +610,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				string output_ssBC = output + ssBC;
 				//cout<<"output_ssBC = "<<output_ssBC<<"\n\n";
 				if (astarBC == ssBC) {
-					cout<<"astarBC == ssBC\n";
+					//cout<<"astarBC == ssBC\n";
 					
 					vector<string> collector_astar, collector_ss;
 					map<double, vector<string> > map_astar, map_ss;
@@ -635,7 +647,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						double d = pos->second;
 						m_astar_percentage.insert(pair<string, double>(s, d));
 						collector_astar.push_back(s);
-						cout<<"("<<s<<", "<<d<<"),";
+						//cout<<"("<<s<<", "<<d<<"),";
 						outputFile<<"("<<s<<", "<<d<<"),";
 				
 
@@ -673,6 +685,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					}
 
 					outputFile<<"}\n";	
+					/*
 					cout<<"print fracastar\n";	
 					for (int i = 0; i < total_heuristics; i++) {
 						for (int j = 0; j < total_heuristics; j++) {
@@ -681,7 +694,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						cout<<"\n";
 					}
 					cout<<"\n\n\n";
-					
+					*/	
 					//astar-------------------------------------
 					map<string, vector<string> > group_map_astar;
 					map<double, vector<string> >::iterator itmap2;
@@ -726,7 +739,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
    						string s = pos2->first;
 						double d = pos2->second;
 						collector_ss.push_back(s);
-						cout<<"("<<s<<", "<<d<<"),";
+						//cout<<"("<<s<<", "<<d<<"),";
 						outputFile<<"("<<s<<", "<<d<<"),";
 						m_ss_percentage.insert(pair<string, double>(s, d)); //insert data into m_ss_percentage
 
@@ -763,6 +776,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					}
 					outputFile<<"}\n";	
 
+					/*
 					cout<<"print fracss\n";	
 					for (int i = 0; i < total_heuristics2; i++) {
 						for (int j = 0; j < total_heuristics2; j++) {
@@ -770,9 +784,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						}
 						cout<<"\n";
 					}
-
-					cout<<"fracss size = "<<total_heuristics<<"\n";
-					cout<<"fracastar size = "<<total_heuristics2<<"\n";
+					*/
+					//cout<<"fracss size = "<<total_heuristics<<"\n";
+					//cout<<"fracastar size = "<<total_heuristics2<<"\n";
 
 					multimap<double, pair<int, int> > ratiomap;
 					vector<pair<int, int> > index_collector; //collect the index that represent the best heuristics
@@ -856,8 +870,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 						double average_x = 2;//getMaxElement(axix_x)/deno;            //sum_x/deno;
                                                 double average_y = 2;//getMaxElement(axix_y)/deno;            //sum_y/deno;
-                                                cout<<"average_x = "<<average_x<<"\n";
-                                                cout<<"average_y = "<<average_y<<"\n";
+                                                //cout<<"average_x = "<<average_x<<"\n";
+                                                //cout<<"average_y = "<<average_y<<"\n";
 
 						multimap<string, pair<double, double> >::iterator multimap_category;
 						for (multimap_category = category_plot_info.begin(); multimap_category != category_plot_info.end(); multimap_category++) {
@@ -924,7 +938,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								no_repeat_h1.insert(name1);
 								no_repeat_h2.insert(name2);
 								
-								cout<<"("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
+								//cout<<"("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
 								outputFile<<"\t("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
 							}	
 						}
@@ -958,14 +972,14 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						}
 						outputFile<<"\n";
 
-						cout<<"end info--\n";
+						//cout<<"end info--\n";
 					} else {//end validation of the size
 						info<<"\toutput_ssBC = "<<output_ssBC<<"\n";
-						cout<<"\toutput_ssBC = "<<output_ssBC<<"\n";
+						//cout<<"\toutput_ssBC = "<<output_ssBC<<"\n";
 						info<<"\tssBC = "<<ssBC<<"\n";
-						cout<<"\tssBC = "<<ssBC<<"\n";	
+						//cout<<"\tssBC = "<<ssBC<<"\n";	
 						info<<"\tastarBC = "<<astarBC<<"\n";	
-						cout<<"\tastarBC = "<<astarBC<<"\n";
+						//cout<<"\tastarBC = "<<astarBC<<"\n";
 						info<<"\n\n";	
 					}
 
