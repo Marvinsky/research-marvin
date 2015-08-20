@@ -17,11 +17,11 @@
 #include <algorithm>
 #include <set>
 
-//enhance to read files from reportss_5000_probes
-#define NUM_PROBES 500
-
-
 using namespace std;
+
+
+//enhance to read files from reportss_5000_probes -> Using global variables
+int NUM_PROBES = 500;
 
 
 //less second parameter
@@ -346,8 +346,13 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		sufix1 = algorithm1;
 	}
 	string sufix2 = algorithm2;
-	string model = "experiment_2_"+sufix1 + "_" + sufix2 + "_deep";
-	string model_global = "global_exp_2_" + sufix1 + "_" + sufix2 + "_deep";
+	//Conver the number to string
+	stringstream text_string_probes;
+        text_string_probes<<NUM_PROBES;
+	string textProbes = text_string_probes.str();
+
+	string model = "experiment_2_"+sufix1 + "_" + sufix2 + "_deep_" + textProbes;
+	string model_global = "global_exp_2_" + sufix1 + "_" + sufix2 + "_deep_" + textProbes;
 
 	string  domainReporte = "mkdir /home/marvin/marvin/reports/"+model;	
 	string  domainReporte2 = "mkdir /home/marvin/marvin/reports/"+model_global;
@@ -399,7 +404,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		ofstream outputFile;
 		outputFile.open(resultFile.c_str(), ios::out);
 		//Take into account that the experiment two was run by ss using 500 probes
-		outputFile<<"Experiment 2: "<<domain<<" using "<<heuristic<<" heuristic with "<<NUM_PROBES<<" probes\n\n";
+		outputFile<<"Experiment 2: "<<domain<<" using "<<heuristic<<" heuristic with "<<textProbes<<" probes\n\n";
 		
 		//print each file
 		ofstream outputFile2;
@@ -447,15 +452,12 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			outputFile<<"\n";
 			countRead = countRead + 1;
 			continue;
-		}
-		
+		}	
 
 		//Read the files from algorithm1 - ss
 
 		string reportss_probes = "report" + sufix1;
-		stringstream nameProbes;
-		nameProbes<<NUM_PROBES;
-		reportss_probes += "_" + nameProbes.str();
+		reportss_probes += "_" + textProbes;
 		reportss_probes += "_probes"; 
 		//cout<<"reportss_probes = "<<reportss_probes<<"\n";
 
@@ -1021,8 +1023,20 @@ void create_report() {
 	} while (counter < total_algorithms); 
 }
 
-int main() {
-	srand(time(NULL));       
+int main(int argc, char* argv[]) {
+	srand(time(NULL));
+	if (argc < 2) {
+		cout<<"Error in: "<<argv[0]<<" - no passing the number of probes.\n";
+		cout<<"Please enter the number of probes.\n";
+		cout<<"\t500 or 1000 or 5000\n";
+		return 1;
+	} else {
+		string number_probes = argv[1];
+		int n_probes = atoi(number_probes.c_str());
+		cout<<"n_probes = "<<n_probes<<"\n";
+		NUM_PROBES = n_probes;
+	}
+
 	create_report();
 
 	return 0;
