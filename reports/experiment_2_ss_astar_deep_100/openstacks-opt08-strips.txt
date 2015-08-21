@@ -1,0 +1,402 @@
+Experiment 2: openstacks-opt08-strips using gapdb_deep heuristic with 100 probes
+
+
+
+instance_name: p01_F_9.csv
+
+A*:	{
+		(0_ipdb,597)
+		(1_gapdb,597)
+		(2_gapdb,597)
+		(3_mands,597)
+		(4_lmcut,597)
+		(5_gapdb,597)
+		(6_gapdb,597)
+		(7_gapdb,597)
+		(8_gapdb,597)
+		(9_gapdb,597)
+		(10_gapdb,597)
+		(11_gapdb,597)
+		(12_gapdb,597)
+	}
+ss:	{
+		(0_ipdb,1.3375e+09),
+		(1_mands,3.77314e+08),
+		(2_gapdb,3.77314e+08),
+		(3_lmcut,1.25494e+09),
+		(4_gapdb,3.77314e+08),
+		(5_gapdb,3.77314e+08),
+		(6_gapdb,3.77314e+08),
+		(7_gapdb,3.77314e+08),
+		(8_gapdb,3.77314e+08),
+		(9_gapdb,3.77314e+08),
+		(10_gapdb,3.77314e+08),
+		(11_gapdb,3.77314e+08),
+		(12_gapdb,3.77314e+08),
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+
+-ss h1/h2
+	1	3.54481	3.54481	1.06579	3.54481	3.54481	3.54481	3.54481	3.54481	3.54481	3.54481	3.54481	3.54481
+	0.282103	1	1	0.300662	1	1	1	1	1	1	1	1	1
+	0.282103	1	1	0.300662	1	1	1	1	1	1	1	1	1
+	0.938272	3.32599	3.32599	1	3.32599	3.32599	3.32599	3.32599	3.32599	3.32599	3.32599	3.32599	3.32599
+	0.282103	1	1	0.300662	1	1	1	1	1	1	1	1	1
+	0.282103	1	1	0.300662	1	1	1	1	1	1	1	1	1
+	0.282103	1	1	0.300662	1	1	1	1	1	1	1	1	1
+	0.282103	1	1	0.300662	1	1	1	1	1	1	1	1	1
+	0.282103	1	1	0.300662	1	1	1	1	1	1	1	1	1
+	0.282103	1	1	0.300662	1	1	1	1	1	1	1	1	1
+	0.282103	1	1	0.300662	1	1	1	1	1	1	1	1	1
+	0.282103	1	1	0.300662	1	1	1	1	1	1	1	1	1
+	0.282103	1	1	0.300662	1	1	1	1	1	1	1	1	1
+
+Measure_2:
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(3_mands, 0_ipdb):	0.938272	-	1	=	-0.0617283
+	(1_gapdb, 2_gapdb):	1	-	1	=	0
+	(1_gapdb, 4_lmcut):	1	-	1	=	0
+	(1_gapdb, 5_gapdb):	1	-	1	=	0
+	(1_gapdb, 6_gapdb):	1	-	1	=	0
+	(1_gapdb, 7_gapdb):	1	-	1	=	0
+	(1_gapdb, 8_gapdb):	1	-	1	=	0
+	(1_gapdb, 9_gapdb):	1	-	1	=	0
+	(1_gapdb, 10_gapdb):	1	-	1	=	0
+	(1_gapdb, 11_gapdb):	1	-	1	=	0
+	(1_gapdb, 12_gapdb):	1	-	1	=	0
+	(2_gapdb, 1_gapdb):	1	-	1	=	0
+	(2_gapdb, 4_lmcut):	1	-	1	=	0
+	(2_gapdb, 5_gapdb):	1	-	1	=	0
+	(2_gapdb, 6_gapdb):	1	-	1	=	0
+	(2_gapdb, 7_gapdb):	1	-	1	=	0
+	(2_gapdb, 8_gapdb):	1	-	1	=	0
+	(2_gapdb, 9_gapdb):	1	-	1	=	0
+	(2_gapdb, 10_gapdb):	1	-	1	=	0
+	(2_gapdb, 11_gapdb):	1	-	1	=	0
+	(2_gapdb, 12_gapdb):	1	-	1	=	0
+	(4_lmcut, 1_gapdb):	1	-	1	=	0
+	(4_lmcut, 2_gapdb):	1	-	1	=	0
+	(4_lmcut, 5_gapdb):	1	-	1	=	0
+	(4_lmcut, 6_gapdb):	1	-	1	=	0
+	(4_lmcut, 7_gapdb):	1	-	1	=	0
+	(4_lmcut, 8_gapdb):	1	-	1	=	0
+	(4_lmcut, 9_gapdb):	1	-	1	=	0
+	(4_lmcut, 10_gapdb):	1	-	1	=	0
+	(4_lmcut, 11_gapdb):	1	-	1	=	0
+	(4_lmcut, 12_gapdb):	1	-	1	=	0
+	(5_gapdb, 1_gapdb):	1	-	1	=	0
+	(5_gapdb, 2_gapdb):	1	-	1	=	0
+	(5_gapdb, 4_lmcut):	1	-	1	=	0
+	(5_gapdb, 6_gapdb):	1	-	1	=	0
+	(5_gapdb, 7_gapdb):	1	-	1	=	0
+	(5_gapdb, 8_gapdb):	1	-	1	=	0
+	(5_gapdb, 9_gapdb):	1	-	1	=	0
+	(5_gapdb, 10_gapdb):	1	-	1	=	0
+	(5_gapdb, 11_gapdb):	1	-	1	=	0
+	(5_gapdb, 12_gapdb):	1	-	1	=	0
+	(6_gapdb, 1_gapdb):	1	-	1	=	0
+	(6_gapdb, 2_gapdb):	1	-	1	=	0
+	(6_gapdb, 4_lmcut):	1	-	1	=	0
+	(6_gapdb, 5_gapdb):	1	-	1	=	0
+	(6_gapdb, 7_gapdb):	1	-	1	=	0
+	(6_gapdb, 8_gapdb):	1	-	1	=	0
+	(6_gapdb, 9_gapdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(6_gapdb, 11_gapdb):	1	-	1	=	0
+	(6_gapdb, 12_gapdb):	1	-	1	=	0
+	(7_gapdb, 1_gapdb):	1	-	1	=	0
+	(7_gapdb, 2_gapdb):	1	-	1	=	0
+	(7_gapdb, 4_lmcut):	1	-	1	=	0
+	(7_gapdb, 5_gapdb):	1	-	1	=	0
+	(7_gapdb, 6_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 12_gapdb):	1	-	1	=	0
+	(8_gapdb, 1_gapdb):	1	-	1	=	0
+	(8_gapdb, 2_gapdb):	1	-	1	=	0
+	(8_gapdb, 4_lmcut):	1	-	1	=	0
+	(8_gapdb, 5_gapdb):	1	-	1	=	0
+	(8_gapdb, 6_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 10_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 12_gapdb):	1	-	1	=	0
+	(9_gapdb, 1_gapdb):	1	-	1	=	0
+	(9_gapdb, 2_gapdb):	1	-	1	=	0
+	(9_gapdb, 4_lmcut):	1	-	1	=	0
+	(9_gapdb, 5_gapdb):	1	-	1	=	0
+	(9_gapdb, 6_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 10_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 12_gapdb):	1	-	1	=	0
+	(10_gapdb, 1_gapdb):	1	-	1	=	0
+	(10_gapdb, 2_gapdb):	1	-	1	=	0
+	(10_gapdb, 4_lmcut):	1	-	1	=	0
+	(10_gapdb, 5_gapdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(10_gapdb, 7_gapdb):	1	-	1	=	0
+	(10_gapdb, 8_gapdb):	1	-	1	=	0
+	(10_gapdb, 9_gapdb):	1	-	1	=	0
+	(10_gapdb, 11_gapdb):	1	-	1	=	0
+	(10_gapdb, 12_gapdb):	1	-	1	=	0
+	(11_gapdb, 1_gapdb):	1	-	1	=	0
+	(11_gapdb, 2_gapdb):	1	-	1	=	0
+	(11_gapdb, 4_lmcut):	1	-	1	=	0
+	(11_gapdb, 5_gapdb):	1	-	1	=	0
+	(11_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 10_gapdb):	1	-	1	=	0
+	(11_gapdb, 12_gapdb):	1	-	1	=	0
+	(12_gapdb, 1_gapdb):	1	-	1	=	0
+	(12_gapdb, 2_gapdb):	1	-	1	=	0
+	(12_gapdb, 4_lmcut):	1	-	1	=	0
+	(12_gapdb, 5_gapdb):	1	-	1	=	0
+	(12_gapdb, 6_gapdb):	1	-	1	=	0
+	(12_gapdb, 7_gapdb):	1	-	1	=	0
+	(12_gapdb, 8_gapdb):	1	-	1	=	0
+	(12_gapdb, 9_gapdb):	1	-	1	=	0
+	(12_gapdb, 10_gapdb):	1	-	1	=	0
+	(12_gapdb, 11_gapdb):	1	-	1	=	0
+	(0_ipdb, 3_mands):	1.06579	-	1	=	0.0657894
+
+Measure_3:
+	-h1(13):		SS		A*
+	0_ipdb		1.3375e+09		597
+	10_gapdb		3.77314e+08		597
+	11_gapdb		3.77314e+08		597
+	12_gapdb		3.77314e+08		597
+	1_gapdb		1.02997e-316		597
+	2_gapdb		3.77314e+08		597
+	3_mands		1.02997e-316		597
+	4_lmcut		1.02997e-316		597
+	5_gapdb		3.77314e+08		597
+	6_gapdb		3.77314e+08		597
+	7_gapdb		3.77314e+08		597
+	8_gapdb		3.77314e+08		597
+	9_gapdb		3.77314e+08		597
+
+	-h2(13):		SS		A*
+	0_ipdb		1.3375e+09		597
+	10_gapdb		3.77314e+08		597
+	11_gapdb		3.77314e+08		597
+	12_gapdb		3.77314e+08		597
+	1_gapdb		1.02997e-316		597
+	2_gapdb		3.77314e+08		597
+	3_mands		1.02997e-316		597
+	4_lmcut		1.02997e-316		597
+	5_gapdb		3.77314e+08		597
+	6_gapdb		3.77314e+08		597
+	7_gapdb		3.77314e+08		597
+	8_gapdb		3.77314e+08		597
+	9_gapdb		3.77314e+08		597
+
+
+
+instance_name: p02_F_4.csv
+
+A*:	{
+		(0_ipdb,3152)
+		(1_gapdb,3152)
+		(2_lmcut,3152)
+		(3_gapdb,3152)
+		(4_mands,3152)
+		(5_gapdb,3152)
+		(6_gapdb,3152)
+		(7_gapdb,3152)
+		(8_gapdb,3152)
+		(9_gapdb,3152)
+		(10_gapdb,3152)
+		(11_gapdb,3152)
+		(12_gapdb,3152)
+	}
+ss:	{
+		(0_ipdb,3.31943e+12),
+		(1_gapdb,9.6595e+11),
+		(2_gapdb,9.6595e+11),
+		(3_lmcut,3.25971e+12),
+		(4_mands,9.6595e+11),
+		(5_gapdb,9.6595e+11),
+		(6_gapdb,3.31943e+12),
+		(7_gapdb,9.6595e+11),
+		(8_gapdb,9.6595e+11),
+		(9_gapdb,9.6595e+11),
+		(10_gapdb,3.31943e+12),
+		(11_gapdb,9.6595e+11),
+		(12_gapdb,9.6595e+11),
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+	1	1	1	1	1	1	1	1	1	1	1	1	1
+
+-ss h1/h2
+	1	3.43644	3.43644	1.01832	3.43644	3.43644	1	3.43644	3.43644	3.43644	1	3.43644	3.43644
+	0.290999	1	1	0.29633	1	1	0.290999	1	1	1	0.290999	1	1
+	0.290999	1	1	0.29633	1	1	0.290999	1	1	1	0.290999	1	1
+	0.98201	3.37462	3.37462	1	3.37462	3.37462	0.98201	3.37462	3.37462	3.37462	0.98201	3.37462	3.37462
+	0.290999	1	1	0.29633	1	1	0.290999	1	1	1	0.290999	1	1
+	0.290999	1	1	0.29633	1	1	0.290999	1	1	1	0.290999	1	1
+	1	3.43644	3.43644	1.01832	3.43644	3.43644	1	3.43644	3.43644	3.43644	1	3.43644	3.43644
+	0.290999	1	1	0.29633	1	1	0.290999	1	1	1	0.290999	1	1
+	0.290999	1	1	0.29633	1	1	0.290999	1	1	1	0.290999	1	1
+	0.290999	1	1	0.29633	1	1	0.290999	1	1	1	0.290999	1	1
+	1	3.43644	3.43644	1.01832	3.43644	3.43644	1	3.43644	3.43644	3.43644	1	3.43644	3.43644
+	0.290999	1	1	0.29633	1	1	0.290999	1	1	1	0.290999	1	1
+	0.290999	1	1	0.29633	1	1	0.290999	1	1	1	0.290999	1	1
+
+Measure_2:
+- The heuristics that have the similar ratio are:
+	(h1     ,h2     ):	fracss	-	fracastar	=	diff
+	(3_gapdb, 0_ipdb):	0.98201	-	1	=	-0.0179899
+	(3_gapdb, 6_gapdb):	0.98201	-	1	=	-0.0179899
+	(3_gapdb, 10_gapdb):	0.98201	-	1	=	-0.0179899
+	(0_ipdb, 6_gapdb):	1	-	1	=	0
+	(0_ipdb, 10_gapdb):	1	-	1	=	0
+	(1_gapdb, 2_lmcut):	1	-	1	=	0
+	(1_gapdb, 4_mands):	1	-	1	=	0
+	(1_gapdb, 5_gapdb):	1	-	1	=	0
+	(1_gapdb, 7_gapdb):	1	-	1	=	0
+	(1_gapdb, 8_gapdb):	1	-	1	=	0
+	(1_gapdb, 9_gapdb):	1	-	1	=	0
+	(1_gapdb, 11_gapdb):	1	-	1	=	0
+	(1_gapdb, 12_gapdb):	1	-	1	=	0
+	(2_lmcut, 1_gapdb):	1	-	1	=	0
+	(2_lmcut, 4_mands):	1	-	1	=	0
+	(2_lmcut, 5_gapdb):	1	-	1	=	0
+	(2_lmcut, 7_gapdb):	1	-	1	=	0
+	(2_lmcut, 8_gapdb):	1	-	1	=	0
+	(2_lmcut, 9_gapdb):	1	-	1	=	0
+	(2_lmcut, 11_gapdb):	1	-	1	=	0
+	(2_lmcut, 12_gapdb):	1	-	1	=	0
+	(4_mands, 1_gapdb):	1	-	1	=	0
+	(4_mands, 2_lmcut):	1	-	1	=	0
+	(4_mands, 5_gapdb):	1	-	1	=	0
+	(4_mands, 7_gapdb):	1	-	1	=	0
+	(4_mands, 8_gapdb):	1	-	1	=	0
+	(4_mands, 9_gapdb):	1	-	1	=	0
+	(4_mands, 11_gapdb):	1	-	1	=	0
+	(4_mands, 12_gapdb):	1	-	1	=	0
+	(5_gapdb, 1_gapdb):	1	-	1	=	0
+	(5_gapdb, 2_lmcut):	1	-	1	=	0
+	(5_gapdb, 4_mands):	1	-	1	=	0
+	(5_gapdb, 7_gapdb):	1	-	1	=	0
+	(5_gapdb, 8_gapdb):	1	-	1	=	0
+	(5_gapdb, 9_gapdb):	1	-	1	=	0
+	(5_gapdb, 11_gapdb):	1	-	1	=	0
+	(5_gapdb, 12_gapdb):	1	-	1	=	0
+	(6_gapdb, 0_ipdb):	1	-	1	=	0
+	(6_gapdb, 10_gapdb):	1	-	1	=	0
+	(7_gapdb, 1_gapdb):	1	-	1	=	0
+	(7_gapdb, 2_lmcut):	1	-	1	=	0
+	(7_gapdb, 4_mands):	1	-	1	=	0
+	(7_gapdb, 5_gapdb):	1	-	1	=	0
+	(7_gapdb, 8_gapdb):	1	-	1	=	0
+	(7_gapdb, 9_gapdb):	1	-	1	=	0
+	(7_gapdb, 11_gapdb):	1	-	1	=	0
+	(7_gapdb, 12_gapdb):	1	-	1	=	0
+	(8_gapdb, 1_gapdb):	1	-	1	=	0
+	(8_gapdb, 2_lmcut):	1	-	1	=	0
+	(8_gapdb, 4_mands):	1	-	1	=	0
+	(8_gapdb, 5_gapdb):	1	-	1	=	0
+	(8_gapdb, 7_gapdb):	1	-	1	=	0
+	(8_gapdb, 9_gapdb):	1	-	1	=	0
+	(8_gapdb, 11_gapdb):	1	-	1	=	0
+	(8_gapdb, 12_gapdb):	1	-	1	=	0
+	(9_gapdb, 1_gapdb):	1	-	1	=	0
+	(9_gapdb, 2_lmcut):	1	-	1	=	0
+	(9_gapdb, 4_mands):	1	-	1	=	0
+	(9_gapdb, 5_gapdb):	1	-	1	=	0
+	(9_gapdb, 7_gapdb):	1	-	1	=	0
+	(9_gapdb, 8_gapdb):	1	-	1	=	0
+	(9_gapdb, 11_gapdb):	1	-	1	=	0
+	(9_gapdb, 12_gapdb):	1	-	1	=	0
+	(10_gapdb, 0_ipdb):	1	-	1	=	0
+	(10_gapdb, 6_gapdb):	1	-	1	=	0
+	(11_gapdb, 1_gapdb):	1	-	1	=	0
+	(11_gapdb, 2_lmcut):	1	-	1	=	0
+	(11_gapdb, 4_mands):	1	-	1	=	0
+	(11_gapdb, 5_gapdb):	1	-	1	=	0
+	(11_gapdb, 7_gapdb):	1	-	1	=	0
+	(11_gapdb, 8_gapdb):	1	-	1	=	0
+	(11_gapdb, 9_gapdb):	1	-	1	=	0
+	(11_gapdb, 12_gapdb):	1	-	1	=	0
+	(12_gapdb, 1_gapdb):	1	-	1	=	0
+	(12_gapdb, 2_lmcut):	1	-	1	=	0
+	(12_gapdb, 4_mands):	1	-	1	=	0
+	(12_gapdb, 5_gapdb):	1	-	1	=	0
+	(12_gapdb, 7_gapdb):	1	-	1	=	0
+	(12_gapdb, 8_gapdb):	1	-	1	=	0
+	(12_gapdb, 9_gapdb):	1	-	1	=	0
+	(12_gapdb, 11_gapdb):	1	-	1	=	0
+	(0_ipdb, 3_gapdb):	1.01832	-	1	=	0.0183194
+	(6_gapdb, 3_gapdb):	1.01832	-	1	=	0.0183194
+	(10_gapdb, 3_gapdb):	1.01832	-	1	=	0.0183194
+
+Measure_3:
+	-h1(13):		SS		A*
+	0_ipdb		3.31943e+12		3152
+	10_gapdb		3.31943e+12		3152
+	11_gapdb		9.6595e+11		3152
+	12_gapdb		9.6595e+11		3152
+	1_gapdb		9.6595e+11		3152
+	2_lmcut		1.02997e-316		3152
+	3_gapdb		1.02997e-316		3152
+	4_mands		9.6595e+11		3152
+	5_gapdb		9.6595e+11		3152
+	6_gapdb		3.31943e+12		3152
+	7_gapdb		9.6595e+11		3152
+	8_gapdb		9.6595e+11		3152
+	9_gapdb		9.6595e+11		3152
+
+	-h2(13):		SS		A*
+	0_ipdb		3.31943e+12		3152
+	10_gapdb		3.31943e+12		3152
+	11_gapdb		9.6595e+11		3152
+	12_gapdb		9.6595e+11		3152
+	1_gapdb		9.6595e+11		3152
+	2_lmcut		1.02997e-316		3152
+	3_gapdb		1.02997e-316		3152
+	4_mands		9.6595e+11		3152
+	5_gapdb		9.6595e+11		3152
+	6_gapdb		3.31943e+12		3152
+	7_gapdb		9.6595e+11		3152
+	8_gapdb		9.6595e+11		3152
+	9_gapdb		9.6595e+11		3152
+

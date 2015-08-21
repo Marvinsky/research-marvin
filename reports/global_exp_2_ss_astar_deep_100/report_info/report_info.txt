@@ -1,0 +1,20 @@
+		Percentage of points in each quadrant:  10 GA + ipdb + lmcut + merge_and_shrink- 100 probes
+
+Domain                    Correct (%)
+
+barman-opt11-strips               43.16
+blocks                            50.67
+elevators-opt08-strips            51.33
+elevators-opt11-strips            51.32
+floortile-opt11-strips            67.00
+nomystery-opt11-strips            75.12
+openstacks-opt08-strips            ---
+parcprinter-opt11-strips          45.45
+scanalyzer-opt11-strips           60.80
+sokoban-opt08-strips              52.33
+sokoban-opt11-strips              90.48
+transport-opt08-strips            67.40
+transport-opt11-strips            64.18
+visitall-opt11-strips             62.79
+woodworking-opt08-strips          55.47
+woodworking-opt11-strips          58.17
