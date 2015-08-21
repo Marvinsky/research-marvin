@@ -373,9 +373,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	do {
 
 		string domain;
-		std::vector<string> fileNames;
-                std::vector<string> fileNames2;
-		std::vector<string> fileNames3;
+		std::vector<string> v_files_ss_bc;
+                std::vector<string> v_files_astar_bc;
                 string model1;
                 string model2;
 		bool directory_not_found = false;
@@ -438,7 +437,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                 		if ((sizeName == 1)  || (sizeName == 2) || (is_swp_file)) {
 					//TODO
 				} else {
-		    			fileNames2.push_back(fileName);
+		    			v_files_astar_bc.push_back(fileName);
 				}
             		}
             		closedir(dir3);
@@ -487,7 +486,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                                 if ((sizeName == 1)  || (sizeName == 2) || (sizeName == 9) || (is_swp_file)) {
                                         //TODO
                                 } else {
-                                        fileNames.push_back(fileName);
+                                        v_files_ss_bc.push_back(fileName);
                                 }
                         }
                         closedir(dir);
@@ -496,11 +495,11 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                 }
 
 
-		//shrink information from fileNames2
+		//shrink information from v_files_astar_bc
 		map<string, vector<pair<string, double> > > map_bc_file_astar;
-		for (size_t i = 0; i < fileNames2.size(); i++) {
-			vector<string> fileNames4;
-			string astarBC = fileNames2.at(i);
+		for (size_t i = 0; i < v_files_astar_bc.size(); i++) {
+			vector<string> v_capture_f_boundary;
+			string astarBC = v_files_astar_bc.at(i);
 			string astarBC_key = astarBC;
 			string dir_astarBC = output5 + astarBC;
 			//cout<<"astarBC = "<<astarBC<<"\n";
@@ -525,7 +524,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                                 	if ((sizeName == 1)  || (sizeName == 2) || (is_swp_file)) {
                                         	//TODO
                                 	} else {
-                                        	fileNames4.push_back(fileName);
+                                        	v_capture_f_boundary.push_back(fileName);
                                 	}
                         	}
                         	closedir(dir);
@@ -535,8 +534,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 			//find the threshold
 			string threshold_v;
-			if (fileNames4.size() > 0) {
-				string s_threshold = fileNames4.at(0);
+			if (v_capture_f_boundary.size() > 0) {
+				string s_threshold = v_capture_f_boundary.at(0);
 				string t = s_threshold;
 				size_t found0 = t.find("F_");
 				//cout<<"found0 = "<<found0<<"\n";
@@ -552,8 +551,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			//cout<<"astarBC_key = "<<astarBC_key<<"\n";
 			map<string, double > map_bc_astar;//store the gapdb info
 			string delimiter = "_";
-			for (size_t i = 0; i < fileNames4.size(); i++) {
-				string s = fileNames4.at(i);
+			for (size_t i = 0; i < v_capture_f_boundary.size(); i++) {
+				string s = v_capture_f_boundary.at(i);
 				string file_to_open = dir_astarBC + "/" + s;
 				string pot[6];
 				string key, key_final;
@@ -606,8 +605,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			vector<pair<string, double> > m_heur_ordered = get_heur_ordered(m_values);	
 			//end order heuristics
 	
-			for (size_t j = 0; j < fileNames.size(); j++) {
-				string ssBC = fileNames.at(j);
+			for (size_t j = 0; j < v_files_ss_bc.size(); j++) {
+				string ssBC = v_files_ss_bc.at(j);
 				//cout<<"\t\tssBC = "<<ssBC<<"\n";
 				string output_ssBC = output + ssBC;
 				//cout<<"output_ssBC = "<<output_ssBC<<"\n\n";
