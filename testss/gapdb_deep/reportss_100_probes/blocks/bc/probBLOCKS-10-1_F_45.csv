@@ -1,0 +1,13 @@
+h(,0):,ipdb
+h(,1):,merge_and_shrink
+h(,2):,heur is GAPDB,mutation_rate:0.4000000,size=2000000,with disjoint patterns
+h(,3):,lmcut
+h(,4):,heur is GAPDB,mutation_rate:1.0000000,size=2000000,without disjoint patterns
+bc(0/1/0/0/0)cc=8.08894e+21
+bc(0/1/1/0/0)cc=6.77023e+19
+bc(0/0/0/0/1)cc=2.44197e+18
+bc(0/1/0/0/1)cc=3.3634e+19
+bc(0/0/1/0/1)cc=4.39697e+15
+bc(0/1/1/0/1)cc=2.14195e+19
+bc(1/1/1/0/1)cc=1.19277e+17
+bc(1/1/1/1/1)cc=1.5093e+16
