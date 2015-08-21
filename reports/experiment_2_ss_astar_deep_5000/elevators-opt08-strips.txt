@@ -1,0 +1,2 @@
+Experiment 2: elevators-opt08-strips using gapdb_deep heuristic with 5000 probes
+
