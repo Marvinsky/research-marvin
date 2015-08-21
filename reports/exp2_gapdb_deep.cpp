@@ -621,7 +621,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					outputFile<<"\n\ninstance_name: "<<astarBC<<"\n\n";
 					//_________________CALLING A* _____________
 					//add_lines_heuristics.clear();					
-					outputFile<<"A*:\t\t{";
+					outputFile<<"A*:\t{\n";
 					map<string, double> m_astar_percentage;
 					map<string, double> m_ss_percentage;
 					map<string, string> heuristic_description;
@@ -650,7 +650,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						m_astar_percentage.insert(pair<string, double>(s, d));
 						collector_astar.push_back(s);
 						//cout<<"("<<s<<", "<<d<<"),";
-						outputFile<<"("<<s<<", "<<d<<"),";
+						outputFile<<"\t\t("<<s<<", "<<d<<"),\n";
 				
 
 						//loop the vector that contains all the Css_x = number of nodes expanded by SS using heuristic x	
@@ -686,7 +686,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						}	
 					}
 
-					outputFile<<"}\n";	
+					outputFile<<"\t}\n";	
 					/*
 					cout<<"print fracastar\n";	
 					for (int i = 0; i < total_heuristics; i++) {
@@ -731,7 +731,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						fracss[i] = new double[total_heuristics2];
 					}
 					//outputFile<<setprecision(2)<<fixed<<"ss:\t\t{";
-					outputFile<<"ss:\t\t{";
+					outputFile<<"ss:\t{\n";
 
 					typedef std::vector<std::pair<std::string, double> > vector_type2;
 					int row_count2 = 0;
@@ -742,7 +742,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						double d = pos2->second;
 						collector_ss.push_back(s);
 						//cout<<"("<<s<<", "<<d<<"),";
-						outputFile<<"("<<s<<", "<<d<<"),";
+						outputFile<<"\t\t("<<s<<", "<<d<<"),\n";
 						m_ss_percentage.insert(pair<string, double>(s, d)); //insert data into m_ss_percentage
 
 						typedef std::vector<std::pair<std::string, double> > vector_type_inner2;	
@@ -776,7 +776,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							map_ss.insert(pair<double, vector<string> >(d, ga_name2));
 						}
 					}
-					outputFile<<"}\n";	
+					outputFile<<"\t}\n";	
 
 					/*
 					cout<<"print fracss\n";	

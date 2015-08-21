@@ -4,8 +4,36 @@ Experiment 2: sokoban-opt11-strips using gapdb_deep heuristic with 500 probes
 
 instance_name: p12_F_4.csv
 
-A*:		{(0_gapdb, 1725),(1_gapdb, 1725),(2_ipdb, 861),(3_mands, 861),(4_lmcut, 861),(5_gapdb, 1725),(6_gapdb, 861),(7_gapdb, 1725),(8_gapdb, 861),(9_gapdb, 861),(10_gapdb, 1725),(11_gapdb, 861),(12_gapdb, 1725),}
-ss:		{(0_gapdb, 103.038),(1_gapdb, 103.038),(2_ipdb, 53.054),(3_mands, 53.054),(4_lmcut, 53.054),(5_gapdb, 103.038),(6_gapdb, 53.054),(7_gapdb, 103.038),(8_gapdb, 53.054),(9_gapdb, 53.054),(10_gapdb, 103.038),(11_gapdb, 53.054),(12_gapdb, 103.038),}
+A*:	{
+		(0_gapdb, 1725),
+		(1_gapdb, 1725),
+		(2_ipdb, 861),
+		(3_mands, 861),
+		(4_lmcut, 861),
+		(5_gapdb, 1725),
+		(6_gapdb, 861),
+		(7_gapdb, 1725),
+		(8_gapdb, 861),
+		(9_gapdb, 861),
+		(10_gapdb, 1725),
+		(11_gapdb, 861),
+		(12_gapdb, 1725),
+	}
+ss:	{
+		(0_gapdb, 103.038),
+		(1_gapdb, 103.038),
+		(2_ipdb, 53.054),
+		(3_mands, 53.054),
+		(4_lmcut, 53.054),
+		(5_gapdb, 103.038),
+		(6_gapdb, 53.054),
+		(7_gapdb, 103.038),
+		(8_gapdb, 53.054),
+		(9_gapdb, 53.054),
+		(10_gapdb, 103.038),
+		(11_gapdb, 53.054),
+		(12_gapdb, 103.038),
+	}
 
 Measure_1:
 
