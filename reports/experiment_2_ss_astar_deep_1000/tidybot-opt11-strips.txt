@@ -1,0 +1,3 @@
+Experiment 2: tidybot-opt11-strips using gapdb_deep heuristic with 1000 probes
+
+tidybot-opt11-strips

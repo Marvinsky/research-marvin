@@ -1,0 +1,3 @@
+Experiment 2: openstacks-opt11-strips using gapdb_deep heuristic with 1000 probes
+
+openstacks-opt11-strips
