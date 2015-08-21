@@ -63,18 +63,18 @@ for (m in 1:21) {
       #lmcut = red
       #gapdb = green
       #plot(x, y, col = ifelse(family == 'ipdb', 'blue', ifelse(family == 'lmcut', 'red', 'green')), xlim=range, ylim=range, bty = "n", pch = 4, col.axis = "sky blue", col.lab = "thistle")
-      plot(x, y, xlim=range, ylim=range, bty = "n", col.axis = "sky blue", col.lab = "thistle", pch = ifelse(family == 'ipdb', 15, ifelse(family == 'lmcut', 16, 17)), col = "blue")
+      plot(x, y, xlim=range, ylim=range, bty = "n", col.axis = "sky blue", col.lab = "thistle", pch = ifelse(family == 'ipdb', 15, ifelse(family == 'lmcut', 16, ifelse(family == 'mands', 17, 18))), col = "blue")
     
       abline(a = 0, b = 1)  # y = x
       abline(v = 2, col = "gray60") # x = 2
       #square circle triangle == 15, 16, 16
-      leg.txt <- c("ipdb", "lmcut", "gapdb")
+      leg.txt <- c("ipdb", "lmcut", "gapdb", "m&s")
       minx <- min(all)
       maxy <- max(all)
     
       legend(list(x = minx, y = maxy),
             legend = leg.txt,
-            pch = c(15, 16, 17)
+            pch = c(15, 16, 17, 18)
             )
     
     
