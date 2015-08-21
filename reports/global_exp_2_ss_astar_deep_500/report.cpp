@@ -18,6 +18,10 @@
 
 using namespace std;
 
+//enhance to read files from txt of this directory -> using global variable
+int NUM_PROBES = 500;
+
+
 template <typename T1, typename T2>
 struct less_second {
     typedef pair<T1, T2> type;
@@ -60,17 +64,17 @@ bool isIdaInfo(int i, vector<int> format_before) {
 }
 
 
-void create_report1(vector<string> domains, string resultFile) {
+void create_report1(vector<string> domains, string resultFile, string textProbes) {
 
 	ofstream outputFile(resultFile.c_str(), ios::out);
-	outputFile<<"\t\tPercentage of points in each quadrant:  10 GA + ipdb + lmcut + merge_and_shrink- 500 probes\n\n";
+	outputFile<<"\t\tPercentage of points in each quadrant:  10 GA + ipdb + lmcut + merge_and_shrink- " + textProbes  + " probes\n\n";
 	outputFile<<left<<setw(24)<<"Domain"<<right<<setw(15)<<"Correct (%)\n\n";
 
 	for (size_t k = 0; k < domains.size(); k++) {
 		string domain = domains.at(k);
 		string openFile;
        		openFile =  domain + ".txt";
-        	openFile = "global_exp_2_ss_astar_deep/" + openFile;
+        	openFile = "global_exp_2_ss_astar_deep_" + textProbes +  "/" + openFile;
         	openFile = "reports/" + openFile;
         	openFile = "marvin/" + openFile;
         	openFile = "marvin/" + openFile;
@@ -182,12 +186,17 @@ void create_report() {
 	string domain;
 	int total_domains;
 	readFile>>total_domains;
-	int counter = 0;
 
+	//Conver the number to string
+	stringstream text_string_probes;
+	text_string_probes<<NUM_PROBES;
+	string textProbes = text_string_probes.str();
+
+	int counter = 0;
 
 	string dirFile;
 	dirFile = "report_info/" + dirFile;
-        dirFile = "global_exp_2_ss_astar_deep/" + dirFile;
+        dirFile = "global_exp_2_ss_astar_deep_" + textProbes  + "/" + dirFile;
         dirFile = "reports/" + dirFile;
         dirFile = "marvin/" + dirFile;
         dirFile = "marvin/" + dirFile;
@@ -200,7 +209,7 @@ void create_report() {
 
 	string resultFile = "report_info.txt";
 	resultFile = "report_info/" + resultFile;
-        resultFile = "global_exp_2_ss_astar_deep/" + resultFile;
+        resultFile = "global_exp_2_ss_astar_deep_" + textProbes  + "/" + resultFile;
         resultFile = "reports/" + resultFile;
         resultFile = "marvin/" + resultFile;
         resultFile = "marvin/" + resultFile;
@@ -215,10 +224,21 @@ void create_report() {
 		counter++;
 	} while (counter < total_domains);	
 	
-	create_report1(domains, resultFile);
+	create_report1(domains, resultFile, textProbes);
 }
 
-int main() {
+int main(int argc, char* argv[]) {
+	if (argc < 2) {
+                cout<<"Error in: "<<argv[0]<<" - no passing the number of probes.\n";
+                cout<<"Please enter the number of probes.\n";
+                cout<<"\t500 or 1000 or 5000\n";
+                return 1;
+        } else {
+                string number_probes = argv[1];
+                int n_probes = atoi(number_probes.c_str());
+                cout<<"n_probes = "<<n_probes<<"\n";
+                NUM_PROBES = n_probes;
+        }
        
 	create_report();
 
