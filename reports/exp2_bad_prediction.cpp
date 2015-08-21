@@ -337,21 +337,60 @@ pair<string, double> getPair(vector<string> s_v_three, vector<double> d_v_three)
 string getStringNexp(string str) {
 	string t = str;
 	int len = t.length();
-	//cout<<"len = "<<len<<"\n";
-	size_t f = t.find("(");
-	cout<<"f = "<<f<<"\n";
-	cout<<"t.length() = "<<t.length()<<"\n";
-	string t2 = t.substr(f + 1, t.length() - 2);
-	return t2;
+	size_t comma = t.find(",");
+	string heur = t.substr(1, comma);
+	string value = t.substr(comma, len);
+	cout<<heur<<", "<<value<<"\n";
+	return heur;
 }
 
 
 //map<string, double> 
 void get_map_heur_value(vector<string> pair_heur_value) {
+	string delimiter = ",";
 	for (size_t i = 0; i < pair_heur_value.size(); i++) {
-		string str = pair_heur_value.at(i);
-		cout<<str<<"\n";	
+		string s = pair_heur_value.at(i);
+		string pot[6];
+                size_t pos = 0;
+                string token;
+                int index = 0;
+                while ((pos = s.find(delimiter)) != std::string::npos) {
+                        token = s.substr(0, pos);
+                        pot[index] = token;
+                        s.erase(0, pos + delimiter.length());
+                        index++;
+                }
+                pot[index] = s;
+
+		cout<<"pot[0] = "<<pot[0]<<"\n";
+		cout<<"pot[1] = "<<pot[1]<<"\n";
+
+		string pot0 = pot[0];
+		string pot1 = pot[1];
+
+		string t0 = pot0;
+		size_t f0 = t0.find("(");
+		string heur = t0.substr(f0 + 1, t0.length());
+
+
+		string t1 = pot[1];
+		size_t f1 = t1.find(")");
+		string value = t1.substr(0, f1);
+
+		cout<<heur<<" "<<value<<"\n";
+		
+		/*string t = str;
+		string t2 = str;
+		int len = t.length();
+		size_t comma = t.find(",");
+		string heur, value;
+		if (comma > 0 && len > 0) {
+			heur = t.substr(1, comma - 1);
+			value = t2.substr(comma + 1, comma + 3);
+		}
+		cout<<heur<<" "<<value<<"\n";*/
 	}
+	cout<<"\n\n";
 	//return NULL;	
 }
 
@@ -389,7 +428,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	string look_instance_name = "instance_name:";
 	string look_astar_name = "A*:";
 	string look_ss_name = "ss:";
-
+	int NUM_HEURISTICS = 13;
 	do {
 
 		string domain;
@@ -415,14 +454,14 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						fexp>>next;	
 						//string string_heur = getStringNexp(next);
 						//cout<<"A*: = "<<string_heur<<"\n";
-						fexp>>next;
 						vector<string> pair_heur_value;
 						int count_astar_heur = 0;
 						do {
 							fexp>>next;
 							pair_heur_value.push_back(next);
 							count_astar_heur++;
-						} while (count_astar_heur < 13);
+						} while (count_astar_heur < NUM_HEURISTICS);
+						cout<<"\n";
 						//map<string, double> map_heur_value = 
 						get_map_heur_value(pair_heur_value);
 
