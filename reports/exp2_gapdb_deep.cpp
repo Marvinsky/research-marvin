@@ -650,8 +650,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						m_astar_percentage.insert(pair<string, double>(s, d));
 						collector_astar.push_back(s);
 						//cout<<"("<<s<<", "<<d<<"),";
-						outputFile<<"\t\t("<<s<<", "<<d<<"),\n";
-				
+						outputFile<<"\t\t("<<s<<","<<d<<")\n";
+
 
 						//loop the vector that contains all the Css_x = number of nodes expanded by SS using heuristic x	
 						typedef std::vector<std::pair<std::string, double> > vector_type_inner;	
@@ -742,7 +742,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						double d = pos2->second;
 						collector_ss.push_back(s);
 						//cout<<"("<<s<<", "<<d<<"),";
-						outputFile<<"\t\t("<<s<<", "<<d<<"),\n";
+						outputFile<<"\t\t("<<s<<","<<d<<"),\n";
 						m_ss_percentage.insert(pair<string, double>(s, d)); //insert data into m_ss_percentage
 
 						typedef std::vector<std::pair<std::string, double> > vector_type_inner2;	
@@ -832,6 +832,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 										category = "ipdb";
 									} else if (final_name1 == "lmcut" || final_name2 == "lmcut") {
 										category = "lmcut";
+									} else if (final_name1 == "mands" || final_name2 == "mands") {
+										category = "mands";
 									} else {
 										category = "gapdb";
 									}

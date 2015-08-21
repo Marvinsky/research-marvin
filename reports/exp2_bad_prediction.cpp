@@ -345,6 +345,16 @@ string getStringNexp(string str) {
 	return t2;
 }
 
+
+//map<string, double> 
+void get_map_heur_value(vector<string> pair_heur_value) {
+	for (size_t i = 0; i < pair_heur_value.size(); i++) {
+		string str = pair_heur_value.at(i);
+		cout<<str<<"\n";	
+	}
+	//return NULL;	
+}
+
 void create_report1(string heuristic, string algorithm1, string algorithm2, int countProblems) {
 
 	int countRead = 0;
@@ -403,9 +413,19 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				while (fexp>>next) {
 					if (next == look_astar_name) { //A*
 						fexp>>next;	
-						string string_heur = getStringNexp(next);
-						cout<<"A*: = "<<string_heur<<"\n";
-						//fexp>>next;
+						//string string_heur = getStringNexp(next);
+						//cout<<"A*: = "<<string_heur<<"\n";
+						fexp>>next;
+						vector<string> pair_heur_value;
+						int count_astar_heur = 0;
+						do {
+							fexp>>next;
+							pair_heur_value.push_back(next);
+							count_astar_heur++;
+						} while (count_astar_heur < 13);
+						//map<string, double> map_heur_value = 
+						get_map_heur_value(pair_heur_value);
+
 						//double double_nexp = getDoubleNexp(next);
 						//cout<<"value = "<<next<<"\n\n";
 					}

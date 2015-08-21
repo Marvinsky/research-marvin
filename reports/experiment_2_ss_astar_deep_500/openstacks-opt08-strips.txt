@@ -5,34 +5,34 @@ Experiment 2: openstacks-opt08-strips using gapdb_deep heuristic with 500 probes
 instance_name: p01_F_9.csv
 
 A*:	{
-		(0_ipdb, 597),
-		(1_gapdb, 597),
-		(2_gapdb, 597),
-		(3_mands, 597),
-		(4_lmcut, 597),
-		(5_gapdb, 597),
-		(6_gapdb, 597),
-		(7_gapdb, 597),
-		(8_gapdb, 597),
-		(9_gapdb, 597),
-		(10_gapdb, 597),
-		(11_gapdb, 597),
-		(12_gapdb, 597),
+		(0_ipdb,597)
+		(1_gapdb,597)
+		(2_gapdb,597)
+		(3_mands,597)
+		(4_lmcut,597)
+		(5_gapdb,597)
+		(6_gapdb,597)
+		(7_gapdb,597)
+		(8_gapdb,597)
+		(9_gapdb,597)
+		(10_gapdb,597)
+		(11_gapdb,597)
+		(12_gapdb,597)
 	}
 ss:	{
-		(0_ipdb, 1.15709e+09),
-		(1_gapdb, 3.2045e+08),
-		(2_gapdb, 3.2045e+08),
-		(3_mands, 3.2045e+08),
-		(4_lmcut, 1.10208e+09),
-		(5_gapdb, 3.2045e+08),
-		(6_gapdb, 3.2045e+08),
-		(7_gapdb, 3.2045e+08),
-		(8_gapdb, 3.2045e+08),
-		(9_gapdb, 3.2045e+08),
-		(10_gapdb, 3.2045e+08),
-		(11_gapdb, 3.2045e+08),
-		(12_gapdb, 3.2045e+08),
+		(0_ipdb,1.15709e+09),
+		(1_gapdb,3.2045e+08),
+		(2_gapdb,3.2045e+08),
+		(3_mands,3.2045e+08),
+		(4_lmcut,1.10208e+09),
+		(5_gapdb,3.2045e+08),
+		(6_gapdb,3.2045e+08),
+		(7_gapdb,3.2045e+08),
+		(8_gapdb,3.2045e+08),
+		(9_gapdb,3.2045e+08),
+		(10_gapdb,3.2045e+08),
+		(11_gapdb,3.2045e+08),
+		(12_gapdb,3.2045e+08),
 	}
 
 Measure_1:
@@ -219,34 +219,34 @@ Measure_3:
 instance_name: p02_F_4.csv
 
 A*:	{
-		(0_ipdb, 3152),
-		(1_gapdb, 3152),
-		(2_lmcut, 3152),
-		(3_gapdb, 3152),
-		(4_mands, 3152),
-		(5_gapdb, 3152),
-		(6_gapdb, 3152),
-		(7_gapdb, 3152),
-		(8_gapdb, 3152),
-		(9_gapdb, 3152),
-		(10_gapdb, 3152),
-		(11_gapdb, 3152),
-		(12_gapdb, 3152),
+		(0_ipdb,3152)
+		(1_gapdb,3152)
+		(2_lmcut,3152)
+		(3_gapdb,3152)
+		(4_mands,3152)
+		(5_gapdb,3152)
+		(6_gapdb,3152)
+		(7_gapdb,3152)
+		(8_gapdb,3152)
+		(9_gapdb,3152)
+		(10_gapdb,3152)
+		(11_gapdb,3152)
+		(12_gapdb,3152)
 	}
 ss:	{
-		(0_ipdb, 1.93119e+08),
-		(1_gapdb, 1.93119e+08),
-		(2_lmcut, 1.93119e+08),
-		(3_gapdb, 1.93119e+08),
-		(4_mands, 1.93119e+08),
-		(5_gapdb, 1.93119e+08),
-		(6_gapdb, 1.93119e+08),
-		(7_gapdb, 1.93119e+08),
-		(8_gapdb, 1.93119e+08),
-		(9_gapdb, 1.93119e+08),
-		(10_gapdb, 1.93119e+08),
-		(11_gapdb, 1.93119e+08),
-		(12_gapdb, 1.93119e+08),
+		(0_ipdb,1.93119e+08),
+		(1_gapdb,1.93119e+08),
+		(2_lmcut,1.93119e+08),
+		(3_gapdb,1.93119e+08),
+		(4_mands,1.93119e+08),
+		(5_gapdb,1.93119e+08),
+		(6_gapdb,1.93119e+08),
+		(7_gapdb,1.93119e+08),
+		(8_gapdb,1.93119e+08),
+		(9_gapdb,1.93119e+08),
+		(10_gapdb,1.93119e+08),
+		(11_gapdb,1.93119e+08),
+		(12_gapdb,1.93119e+08),
 	}
 
 Measure_1:

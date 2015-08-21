@@ -5,34 +5,34 @@ Experiment 2: sokoban-opt08-strips using gapdb_deep heuristic with 500 probes
 instance_name: p01_F_25.csv
 
 A*:	{
-		(0_ipdb, 877),
-		(1_gapdb, 4158),
-		(2_gapdb, 2098),
-		(3_lmcut, 829),
-		(4_gapdb, 877),
-		(5_gapdb, 877),
-		(6_gapdb, 3694),
-		(7_gapdb, 2098),
-		(8_gapdb, 877),
-		(9_gapdb, 2201),
-		(10_gapdb, 5037),
-		(11_mands, 641),
-		(12_gapdb, 4470),
+		(0_ipdb,877)
+		(1_gapdb,4158)
+		(2_gapdb,2098)
+		(3_lmcut,829)
+		(4_gapdb,877)
+		(5_gapdb,877)
+		(6_gapdb,3694)
+		(7_gapdb,2098)
+		(8_gapdb,877)
+		(9_gapdb,2201)
+		(10_gapdb,5037)
+		(11_mands,641)
+		(12_gapdb,4470)
 	}
 ss:	{
-		(0_ipdb, 2.47489e+08),
-		(1_gapdb, 4.78614e+08),
-		(2_gapdb, 3.26167e+08),
-		(3_lmcut, 2.30843e+08),
-		(4_gapdb, 2.47489e+08),
-		(5_gapdb, 2.47489e+08),
-		(6_gapdb, 4.44135e+08),
-		(7_gapdb, 3.26167e+08),
-		(8_gapdb, 2.47489e+08),
-		(9_gapdb, 3.69598e+08),
-		(10_gapdb, 4.77067e+08),
-		(11_mands, 2.11355e+08),
-		(12_gapdb, 4.77067e+08),
+		(0_ipdb,2.47489e+08),
+		(1_gapdb,4.78614e+08),
+		(2_gapdb,3.26167e+08),
+		(3_lmcut,2.30843e+08),
+		(4_gapdb,2.47489e+08),
+		(5_gapdb,2.47489e+08),
+		(6_gapdb,4.44135e+08),
+		(7_gapdb,3.26167e+08),
+		(8_gapdb,2.47489e+08),
+		(9_gapdb,3.69598e+08),
+		(10_gapdb,4.77067e+08),
+		(11_mands,2.11355e+08),
+		(12_gapdb,4.77067e+08),
 	}
 
 Measure_1:
@@ -212,34 +212,34 @@ Measure_3:
 instance_name: p02_F_21.csv
 
 A*:	{
-		(0_ipdb, 2089),
-		(1_gapdb, 5004),
-		(2_lmcut, 1944),
-		(3_gapdb, 3827),
-		(4_gapdb, 2089),
-		(5_gapdb, 2089),
-		(6_mands, 539),
-		(7_gapdb, 4805),
-		(8_gapdb, 3827),
-		(9_gapdb, 3827),
-		(10_gapdb, 2914),
-		(11_gapdb, 2786),
-		(12_gapdb, 2089),
+		(0_ipdb,2089)
+		(1_gapdb,5004)
+		(2_lmcut,1944)
+		(3_gapdb,3827)
+		(4_gapdb,2089)
+		(5_gapdb,2089)
+		(6_mands,539)
+		(7_gapdb,4805)
+		(8_gapdb,3827)
+		(9_gapdb,3827)
+		(10_gapdb,2914)
+		(11_gapdb,2786)
+		(12_gapdb,2089)
 	}
 ss:	{
-		(0_ipdb, 1.55904e+12),
-		(1_gapdb, 9.57999e+12),
-		(2_lmcut, 7.81674e+11),
-		(3_gapdb, 1.5958e+12),
-		(4_gapdb, 1.55904e+12),
-		(5_gapdb, 1.55904e+12),
-		(6_mands, 7.01707e+11),
-		(7_gapdb, 9.03383e+12),
-		(8_gapdb, 1.5958e+12),
-		(9_gapdb, 1.5958e+12),
-		(10_gapdb, 8.35912e+12),
-		(11_gapdb, 4.1892e+12),
-		(12_gapdb, 1.55904e+12),
+		(0_ipdb,1.55904e+12),
+		(1_gapdb,9.57999e+12),
+		(2_lmcut,7.81674e+11),
+		(3_gapdb,1.5958e+12),
+		(4_gapdb,1.55904e+12),
+		(5_gapdb,1.55904e+12),
+		(6_mands,7.01707e+11),
+		(7_gapdb,9.03383e+12),
+		(8_gapdb,1.5958e+12),
+		(9_gapdb,1.5958e+12),
+		(10_gapdb,8.35912e+12),
+		(11_gapdb,4.1892e+12),
+		(12_gapdb,1.55904e+12),
 	}
 
 Measure_1:
@@ -387,34 +387,34 @@ Measure_3:
 instance_name: p03_F_23.csv
 
 A*:	{
-		(0_ipdb, 718),
-		(1_lmcut, 369),
-		(2_gapdb, 512),
-		(3_gapdb, 688),
-		(4_mands, 369),
-		(5_gapdb, 563),
-		(6_gapdb, 482),
-		(7_gapdb, 831),
-		(8_gapdb, 300),
-		(9_gapdb, 697),
-		(10_gapdb, 697),
-		(11_gapdb, 799),
-		(12_gapdb, 365),
+		(0_ipdb,718)
+		(1_lmcut,369)
+		(2_gapdb,512)
+		(3_gapdb,688)
+		(4_mands,369)
+		(5_gapdb,563)
+		(6_gapdb,482)
+		(7_gapdb,831)
+		(8_gapdb,300)
+		(9_gapdb,697)
+		(10_gapdb,697)
+		(11_gapdb,799)
+		(12_gapdb,365)
 	}
 ss:	{
-		(0_ipdb, 4.65441e+11),
-		(1_lmcut, 1.8679e+11),
-		(2_gapdb, 3.92559e+11),
-		(3_gapdb, 4.03742e+11),
-		(4_mands, 1.21855e+11),
-		(5_gapdb, 4.2691e+11),
-		(6_gapdb, 2.99508e+11),
-		(7_gapdb, 2.39346e+11),
-		(8_gapdb, 3.27075e+11),
-		(9_gapdb, 4.65441e+11),
-		(10_gapdb, 4.65441e+11),
-		(11_gapdb, 2.38652e+11),
-		(12_gapdb, 2.21142e+11),
+		(0_ipdb,4.65441e+11),
+		(1_lmcut,1.8679e+11),
+		(2_gapdb,3.92559e+11),
+		(3_gapdb,4.03742e+11),
+		(4_mands,1.21855e+11),
+		(5_gapdb,4.2691e+11),
+		(6_gapdb,2.99508e+11),
+		(7_gapdb,2.39346e+11),
+		(8_gapdb,3.27075e+11),
+		(9_gapdb,4.65441e+11),
+		(10_gapdb,4.65441e+11),
+		(11_gapdb,2.38652e+11),
+		(12_gapdb,2.21142e+11),
 	}
 
 Measure_1:
@@ -581,34 +581,34 @@ Measure_3:
 instance_name: p20_F_4.csv
 
 A*:	{
-		(0_gapdb, 1725),
-		(1_gapdb, 1725),
-		(2_ipdb, 861),
-		(3_mands, 861),
-		(4_lmcut, 861),
-		(5_gapdb, 1725),
-		(6_gapdb, 861),
-		(7_gapdb, 1725),
-		(8_gapdb, 861),
-		(9_gapdb, 861),
-		(10_gapdb, 1725),
-		(11_gapdb, 861),
-		(12_gapdb, 1725),
+		(0_gapdb,1725)
+		(1_gapdb,1725)
+		(2_ipdb,861)
+		(3_mands,861)
+		(4_lmcut,861)
+		(5_gapdb,1725)
+		(6_gapdb,861)
+		(7_gapdb,1725)
+		(8_gapdb,861)
+		(9_gapdb,861)
+		(10_gapdb,1725)
+		(11_gapdb,861)
+		(12_gapdb,1725)
 	}
 ss:	{
-		(0_gapdb, 103.038),
-		(1_gapdb, 103.038),
-		(2_ipdb, 53.054),
-		(3_mands, 53.054),
-		(4_lmcut, 53.054),
-		(5_gapdb, 103.038),
-		(6_gapdb, 53.054),
-		(7_gapdb, 103.038),
-		(8_gapdb, 53.054),
-		(9_gapdb, 53.054),
-		(10_gapdb, 103.038),
-		(11_gapdb, 53.054),
-		(12_gapdb, 103.038),
+		(0_gapdb,103.038),
+		(1_gapdb,103.038),
+		(2_ipdb,53.054),
+		(3_mands,53.054),
+		(4_lmcut,53.054),
+		(5_gapdb,103.038),
+		(6_gapdb,53.054),
+		(7_gapdb,103.038),
+		(8_gapdb,53.054),
+		(9_gapdb,53.054),
+		(10_gapdb,103.038),
+		(11_gapdb,53.054),
+		(12_gapdb,103.038),
 	}
 
 Measure_1:
