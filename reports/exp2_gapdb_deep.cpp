@@ -83,6 +83,22 @@ int getMaxInstance(vector<int> v) {
         return max;
 }
 
+//probBLOCKS-4-0_F_66.csv
+string constructInstance(string key, int f_boundary) {
+        string instance = key;
+
+        string t = instance;
+        size_t found1 = t.find(".");
+        string t2 = t.substr(0, found1);
+        //cout<<"t2 = "<<t2<<"\n";
+        t2 += "_F_";
+        ostringstream convert;
+        convert << f_boundary;
+        t2 += convert.str();
+        t2 += ".csv";
+        return t2;
+}
+
 vector<pair<string, double> >  analyzeFile(string output_BC, bool first_parameter) {
 	ifstream infile_astar(output_BC.c_str());
 	std::string line;
@@ -409,6 +425,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 		string domain;
 		std::vector<string> v_files_ss_bc;
+		std::vector<string> v_files_ss_bc_set;
                 std::vector<string> v_files_astar_bc;
                 string model1;
                 string model2;
@@ -559,6 +576,18 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                 	map_instance_bound.insert(pair<string, int>(instance_name1, F_boundary));
         	}
 
+		map<string, int>::iterator iter_bound;
+        	for (iter_bound = map_instance_bound.begin(); iter_bound != map_instance_bound.end(); iter_bound++) {
+                	string key = iter_bound->first;
+                	int F_boundary = iter_bound->second;
+                	//cout<<key<<", "<<F_boundary<<"\n";
+                	//probBLOCKS-4-0_F_66.csv
+                	string bc_instance = constructInstance(key, F_boundary);
+                	//cout<<"\t\tinstance constructed= "<<bc_instance<<"\n\n";
+			v_files_ss_bc_set.push_back(bc_instance);	
+		}
+
+
 		//shrink information from v_files_astar_bc
 		map<string, vector<pair<string, double> > > map_bc_file_astar;
 		for (size_t i = 0; i < v_files_astar_bc.size(); i++) {
@@ -664,13 +693,13 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		map<string, vector<pair<string, double> > >::iterator iter_m;
 		for (iter_m = map_bc_file_astar.begin(); iter_m != map_bc_file_astar.end(); iter_m++) {
 			string astarBC = iter_m->first;
-			//cout<<"astarBC = "<<astarBC<<"\n";
+			cout<<"astarBC = "<<astarBC<<"\n";
 			vector<pair<string, double> > m_values = iter_m->second;
 			vector<pair<string, double> > m_heur_ordered = get_heur_ordered(m_values);	
 			//end order heuristics
 	
-			for (size_t j = 0; j < v_files_ss_bc.size(); j++) {
-				string ssBC = v_files_ss_bc.at(j);
+			for (size_t j = 0; j < v_files_ss_bc_set.size(); j++) {
+				string ssBC = v_files_ss_bc_set.at(j);
 				//cout<<"\t\tssBC = "<<ssBC<<"\n";
 				string output_ssBC = output + ssBC;
 				//cout<<"output_ssBC = "<<output_ssBC<<"\n\n";
