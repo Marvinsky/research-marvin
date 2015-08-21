@@ -48,6 +48,41 @@ struct less_first {
 set<int> no_repeat_int;
 vector<int> repeat_random_10;
 
+string getInstanceName(string bc_file)  {
+        string t1 = bc_file;
+        size_t found1 = t1.find("F");
+
+        string name_instance;
+        if (found1 > 0) {
+                name_instance = t1.substr(0, found1 - 1);
+        }
+        name_instance += ".csv";
+        return name_instance;
+}
+
+int getInstanceNumber(string bc_file) {
+        string t = bc_file;
+        size_t found1 = t.find("F");
+        string instance_number1 = t.substr(found1 + 2, t.length());
+        size_t found3 = instance_number1.find(".");
+        //cout<<"found3 = "<<found3<<"\n";
+        string instance_number2 = instance_number1.substr(0, found3);
+        //cout<<"instance_number2 = "<<instance_number2<<"\n\n";
+        int number_instance = atoi(instance_number2.c_str());
+        return number_instance;
+}
+
+int getMaxInstance(vector<int> v) {
+        int max = 0;
+        for (size_t i = 0; i < v.size(); i++) {
+                int n = v.at(i);
+                if (max < n) {
+                        max = n;
+                }
+        }
+        return max;
+}
+
 vector<pair<string, double> >  analyzeFile(string output_BC, bool first_parameter) {
 	ifstream infile_astar(output_BC.c_str());
 	std::string line;
@@ -494,11 +529,40 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                         cout<<"Error trying to open the directory: "<<output.c_str()<<endl;
                 }
 
+		//Theare too many data in testss/blocks/bc because ss create many files for boundary, but we have to always obtain 
+		//the information for the file that contains the greater F_boundary
+		
+		set<string> add_one_instance;
+		for (size_t i = 0; i < v_files_ss_bc.size(); i++) {
+			string bc_file1 = v_files_ss_bc.at(i);
+			string instance_name1 = getInstanceName(bc_file1);
+			add_one_instance.insert(instance_name1);
+		}
+
+		map<string, int> map_instance_bound;
+        	set<string>::iterator iter_set_instance;
+        	for (iter_set_instance = add_one_instance.begin(); iter_set_instance != add_one_instance.end(); ++iter_set_instance) {
+                	string instance_name1 = *iter_set_instance;
+                	vector<int> all_instance_number;
+                	for (size_t j = 0; j < v_files_ss_bc.size(); j++) {
+                        	string bc_file2 = v_files_ss_bc.at(j);
+                        	string instance_name2 = getInstanceName(bc_file2);
+                        	if (instance_name1 == instance_name2) {//comparing each instance
+                                	int instance_number = getInstanceNumber(bc_file2);
+                                	//cout<<"instance_number = "<<instance_number<<"\n";
+                                	all_instance_number.push_back(instance_number);
+                        	}
+                	}
+
+                	int F_boundary = getMaxInstance(all_instance_number);
+                	//cout<<"F_boundary = "<<F_boundary<<"\n";
+                	map_instance_bound.insert(pair<string, int>(instance_name1, F_boundary));
+        	}
 
 		//shrink information from v_files_astar_bc
 		map<string, vector<pair<string, double> > > map_bc_file_astar;
 		for (size_t i = 0; i < v_files_astar_bc.size(); i++) {
-			vector<string> v_capture_f_boundary;
+			vector<string> v_each_heuristic_solved;
 			string astarBC = v_files_astar_bc.at(i);
 			string astarBC_key = astarBC;
 			string dir_astarBC = output5 + astarBC;
@@ -524,7 +588,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                                 	if ((sizeName == 1)  || (sizeName == 2) || (is_swp_file)) {
                                         	//TODO
                                 	} else {
-                                        	v_capture_f_boundary.push_back(fileName);
+                                        	v_each_heuristic_solved.push_back(fileName);
                                 	}
                         	}
                         	closedir(dir);
@@ -534,8 +598,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 			//find the threshold
 			string threshold_v;
-			if (v_capture_f_boundary.size() > 0) {
-				string s_threshold = v_capture_f_boundary.at(0);
+			if (v_each_heuristic_solved.size() > 0) {
+				string s_threshold = v_each_heuristic_solved.at(0);
 				string t = s_threshold;
 				size_t found0 = t.find("F_");
 				//cout<<"found0 = "<<found0<<"\n";
@@ -551,8 +615,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			//cout<<"astarBC_key = "<<astarBC_key<<"\n";
 			map<string, double > map_bc_astar;//store the gapdb info
 			string delimiter = "_";
-			for (size_t i = 0; i < v_capture_f_boundary.size(); i++) {
-				string s = v_capture_f_boundary.at(i);
+			for (size_t i = 0; i < v_each_heuristic_solved.size(); i++) {
+				string s = v_each_heuristic_solved.at(i);
 				string file_to_open = dir_astarBC + "/" + s;
 				string pot[6];
 				string key, key_final;
