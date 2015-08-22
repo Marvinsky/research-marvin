@@ -726,16 +726,15 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				if (domain_astarBC == domain_ssBC) {
 					//cout<<"astarBC == ssBC\n";
 					
-					vector<string> collector_astar, collector_ss;
 					map<double, vector<string> > map_astar, map_ss;
-					map<int ,string> look_for_heuristic; //map to look the name of the heuristic
-
+					map<int ,string> look_for_heuristic_in_astar; //map to look the name of the heuristic
+					map<int, string> look_for_heuristic_in_ss;
 					outputFile<<"\n\ninstance_name: "<<astarBC<<"\n\n";
 					//_________________CALLING A* _____________
 					//add_lines_heuristics.clear();					
 					outputFile<<"A*:\t{\n";
-					map<string, double> m_astar_percentage;
-					map<string, double> m_ss_percentage;
+					map<string, double> m_astar_heur_value;
+					map<string, double> m_ss_heur_value;
 					map<string, string> heuristic_description;
 
 					//enhance 3: create matrix fracastar
@@ -756,11 +755,10 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						int found = t.find("_");
 						string heuristic_name_mod = t.substr(0, found);
 						int heur_number	= atoi(heuristic_name_mod.c_str());	
-						look_for_heuristic.insert(pair<int, string>(heur_number, s)); //store the name of the heuristics for global use in the instance
+						look_for_heuristic_in_astar.insert(pair<int, string>(heur_number, s)); //store the name of the heuristics for global use in the instance
 
 						double d = pos->second;
-						m_astar_percentage.insert(pair<string, double>(s, d));
-						collector_astar.push_back(s);
+						m_astar_heur_value.insert(pair<string, double>(s, d));
 						//cout<<"("<<s<<", "<<d<<"),";
 						outputFile<<"\t\t("<<s<<","<<d<<")\n";
 
@@ -852,10 +850,16 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					{
    						string s = pos2->first;
 						double d = pos2->second;
-						collector_ss.push_back(s);
+						//Insert the heuristic number in the look_for_heuristic_in_astar
+				                string t = s;
+						int found = t.find("_");
+						string heuristic_name_mod = t.substr(0, found);
+						int heur_number	= atoi(heuristic_name_mod.c_str());
+						look_for_heuristic_in_astar.insert(pair<int, string>(heur_number, s)); //store the name of the heuristics for global use in the instance
+
 						//cout<<"("<<s<<", "<<d<<"),";
 						outputFile<<"\t\t("<<s<<","<<d<<"),\n";
-						m_ss_percentage.insert(pair<string, double>(s, d)); //insert data into m_ss_percentage
+						m_ss_heur_value.insert(pair<string, double>(s, d)); //insert data into m_ss_heur_value
 
 						typedef std::vector<std::pair<std::string, double> > vector_type_inner2;	
 						vector<string> ga_name2;
@@ -920,8 +924,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 									
 									//get the category
 									string name1, name2, final_name1, final_name2;
-									std::map<int, string>::iterator rt1 =  look_for_heuristic.find(i);
-                                                                	if (rt1 != look_for_heuristic.end()) {
+									std::map<int, string>::iterator rt1 =  look_for_heuristic_in_astar.find(i);
+                                                                	if (rt1 != look_for_heuristic_in_astar.end()) {
                                                                         	name1 = rt1->second;
 										string t1 = name1;
                 								int found1 = t1.find("_");
@@ -930,8 +934,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 										//cout<<"final_name1 = "<<final_name1<<"\n";
                                                                 	}
 
-                                                                	std::map<int, string>::iterator rt2 =  look_for_heuristic.find(j);
-                                                                	if (rt2 != look_for_heuristic.end()) {
+                                                                	std::map<int, string>::iterator rt2 =  look_for_heuristic_in_astar.find(j);
+                                                                	if (rt2 != look_for_heuristic_in_astar.end()) {
                                                                         	name2 = rt2->second;
 										string t2 = name2;
                 								int found2 = t2.find("_");
@@ -1041,13 +1045,13 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								string name1; // = "gapdb_"+number1.str();
 								string name2; // = "gapdb_"+number2.str();
 
-								std::map<int, string>::iterator rt1 =  look_for_heuristic.find(first_heur);
-								if (rt1 != look_for_heuristic.end()) {
+								std::map<int, string>::iterator rt1 =  look_for_heuristic_in_astar.find(first_heur);
+								if (rt1 != look_for_heuristic_in_astar.end()) {
 									name1 = rt1->second;
 								}
 
-								std::map<int, string>::iterator rt2 =  look_for_heuristic.find(second_heur);
-								if (rt2 != look_for_heuristic.end()) {
+								std::map<int, string>::iterator rt2 =  look_for_heuristic_in_astar.find(second_heur);
+								if (rt2 != look_for_heuristic_in_astar.end()) {
 									name2 = rt2->second;
 								}
 							
@@ -1065,8 +1069,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						for (iter_set = no_repeat_h1.begin(); iter_set != no_repeat_h1.end(); ++iter_set) {
                                                 	string h1 = *iter_set;
 
-							map<string, double>::iterator iterastar = m_astar_percentage.find(h1);
-							map<string, double>::iterator iterss = m_ss_percentage.find(h1);
+							map<string, double>::iterator iterastar = m_astar_heur_value.find(h1);
+							map<string, double>::iterator iterss = m_ss_heur_value.find(h1);
 							double expastar = iterastar->second;
 							double expss = iterss->second;
 
@@ -1079,8 +1083,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						for (iter_set2 = no_repeat_h2.begin(); iter_set2 != no_repeat_h2.end(); ++iter_set2) {
                                                 	string h2 = *iter_set2;
 						
-							map<string, double>::iterator iterastar = m_astar_percentage.find(h2);
-							map<string, double>::iterator iterss = m_ss_percentage.find(h2);
+							map<string, double>::iterator iterastar = m_astar_heur_value.find(h2);
+							map<string, double>::iterator iterss = m_ss_heur_value.find(h2);
 							double expastar = iterastar->second;
 							double expss = iterss->second;
 
