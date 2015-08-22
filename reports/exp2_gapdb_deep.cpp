@@ -855,8 +855,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						int found = t.find("_");
 						string heuristic_name_mod = t.substr(0, found);
 						int heur_number	= atoi(heuristic_name_mod.c_str());
-						look_for_heuristic_in_astar.insert(pair<int, string>(heur_number, s)); //store the name of the heuristics for global use in the instance
-
+						look_for_heuristic_in_ss.insert(pair<int, string>(heur_number, s)); //store the name of the heuristics for global use in the instance
 						//cout<<"("<<s<<", "<<d<<"),";
 						outputFile<<"\t\t("<<s<<","<<d<<"),\n";
 						m_ss_heur_value.insert(pair<string, double>(s, d)); //insert data into m_ss_heur_value
@@ -922,7 +921,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 									double frass1 = fracss[i][j];
 									plot_info.push_back(pair<double, double>(frass1, fraa1));
 									
-									//get the category
+									//get the category for astar
 									string name1, name2, final_name1, final_name2;
 									std::map<int, string>::iterator rt1 =  look_for_heuristic_in_astar.find(i);
                                                                 	if (rt1 != look_for_heuristic_in_astar.end()) {
@@ -943,16 +942,69 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 										final_name2 = heuristic_name_mod2;
 										//cout<<"final_name2 = "<<final_name2<<"\n";
                                                                 	}
-									string category;
+
+									string sub_category1;
 									if (final_name1 == "ipdb" || final_name2 == "ipdb") {
-										category = "ipdb";
+										sub_category1 = "ipdb";
 									} else if (final_name1 == "lmcut" || final_name2 == "lmcut") {
-										category = "lmcut";
+										sub_category1 = "lmcut";
 									} else if (final_name1 == "mands" || final_name2 == "mands") {
+										sub_category1 = "mands";
+									} else {
+										sub_category1 = "gapdb";
+									}
+
+									//get the category for ss
+									string name3, name4, final_name3, final_name4;
+									std::map<int, string>::iterator rt3 =  look_for_heuristic_in_ss.find(i);
+                                                                	if (rt3 != look_for_heuristic_in_ss.end()) {
+                                                                        	name3 = rt3->second;
+										string t3 = name3;
+                								int found3 = t3.find("_");
+                								string heuristic_name_mod3 = t3.substr(found3 + 1,  t3.length());
+										final_name3 = heuristic_name_mod3;
+										//cout<<"final_name3 = "<<final_name3<<"\n";
+                                                                	}
+
+                                                                	std::map<int, string>::iterator rt4 =  look_for_heuristic_in_astar.find(j);
+                                                                	if (rt4 != look_for_heuristic_in_astar.end()) {
+                                                                        	name4 = rt4->second;
+										string t4 = name4;
+                								int found4 = t4.find("_");
+                								string heuristic_name_mod4 = t4.substr(found4 + 1,  t4.length());
+										final_name4 = heuristic_name_mod4;
+										//cout<<"final_name4 = "<<final_name4<<"\n";
+                                                                	}
+										
+									string sub_category2;
+									if (final_name3 == "ipdb" || final_name4 == "ipdb") {
+										sub_category2 = "ipdb";
+									} else if (final_name3 == "lmcut" || final_name4 == "lmcut") {
+										sub_category2 = "lmcut";
+									} else if (final_name3 == "mands" || final_name4 == "mands") {
+										sub_category2 = "mands";
+									} else {
+										sub_category2 = "gapdb";
+									}
+									
+									string category;
+									if (sub_category1 == "ipdb" || sub_category2 == "ipdb") {
+										category = "ipdb";
+									} else if (sub_category1 == "lmcut" || sub_category2 == "lmcut") {
+										category = "lmcut";
+									} else if (sub_category1 == "mands" || sub_category2 == "mands") {
 										category = "mands";
 									} else {
 										category = "gapdb";
 									}
+
+									/*if (sub_category1 == sub_category2) {
+										cout<<"category = "<<category<<"\n\n";
+									} else {
+										cout<<"sub_category1 = "<<sub_category1<<"\n";
+										cout<<"sub_category2 = "<<sub_category2<<"\n\n";
+									}*/
+
 									category_plot_info.insert(pair<string, pair<double, double> >(category, pair<double, double>(frass1, fraa1)));
 									//end get category
 								}
@@ -967,6 +1019,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							outputFile<<"\n";
 						}
 
+						//ratiomap is to map the difference between ratios and the elements
 						for (int i = 0; i < total_heuristics; i++) {
 							for (int j = 0; j < total_heuristics; j++) {
 								if (i != j) {
@@ -1025,13 +1078,16 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						//end of average info
 
 						outputFile<<"\nMeasure_2:\n";
-						set<string> no_repeat_h1, no_repeat_h2; 
 						if (index_collector.size() == 0) {
 							outputFile<<"- There are no match between ratio heuristics.\n";
 						} else {
 							multimap<double, pair<int, int> >::iterator iter;
-							outputFile<<"- The heuristics that have the similar ratio are:\n";
-							outputFile<<"\t(h1     ,h2     ):\tfracss\t-\tfracastar\t=\tdiff\n";
+							outputFile<<"- The heuristics that have the similar ratio are: (diff = 0.5)\n";
+							outputFile<<"\t(hss1    ,hss2    )";
+							outputFile<<"\t(ha1     ,ha2     )";
+							outputFile<<"\t(vss1    ,vss2    )";
+							outputFile<<"\t(va1     ,va2     ):";
+							outputFile<<"\tfracss\t-\tfracastar\t=\tdiff\n";
 							for (iter = ratiomap.begin(); iter != ratiomap.end(); iter++) {
 								double diff = iter->first;
 								pair<int, int> pratio = iter->second;
@@ -1045,6 +1101,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								string name1; // = "gapdb_"+number1.str();
 								string name2; // = "gapdb_"+number2.str();
 
+								//collect the heuristics name from astar
 								std::map<int, string>::iterator rt1 =  look_for_heuristic_in_astar.find(first_heur);
 								if (rt1 != look_for_heuristic_in_astar.end()) {
 									name1 = rt1->second;
@@ -1054,42 +1111,52 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 								if (rt2 != look_for_heuristic_in_astar.end()) {
 									name2 = rt2->second;
 								}
-							
-								no_repeat_h1.insert(name1);
-								no_repeat_h2.insert(name2);
+	
+								map<string, double>::iterator iterastar1 = m_astar_heur_value.find(name1);
+								map<string, double>::iterator iterastar2 = m_astar_heur_value.find(name2);
+								double va1, va2;
+								if (iterastar1 != m_astar_heur_value.end()) {
+									va1 = iterastar1->second;
+								} 
 								
+								if (iterastar2 != m_astar_heur_value.end()) {
+									va2 = iterastar2->second;
+								}
+
+								//collect the heuristics name from ss
+								string name3;
+								string name4;
+								std::map<int, string>::iterator rt3 =  look_for_heuristic_in_ss.find(first_heur);
+								if (rt1 != look_for_heuristic_in_astar.end()) {
+									name3 = rt3->second;
+								}
+
+								std::map<int, string>::iterator rt4 =  look_for_heuristic_in_ss.find(second_heur);
+								if (rt2 != look_for_heuristic_in_astar.end()) {
+									name4 = rt4->second;
+								}
+							
+								map<string, double>::iterator iterss1 = m_ss_heur_value.find(name3);
+								map<string, double>::iterator iterss2 = m_ss_heur_value.find(name4);
+								double vss1, vss2;
+								if (iterss1 != m_ss_heur_value.end()) {
+									vss1 = iterss1->second;
+								}
+
+								if (iterss2 != m_ss_heur_value.end()) {
+									vss2 = iterss2->second;
+								}
+
 								//cout<<"("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
-								outputFile<<"\t("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
-							}	
-						}
-						outputFile<<"\nMeasure_3:\n";
-
-						outputFile<<"\t-h1("<<no_repeat_h1.size()<<"):\t\tSS\t\tA*\n";
-						std::set<string>::iterator iter_set;
-						for (iter_set = no_repeat_h1.begin(); iter_set != no_repeat_h1.end(); ++iter_set) {
-                                                	string h1 = *iter_set;
-
-							map<string, double>::iterator iterastar = m_astar_heur_value.find(h1);
-							map<string, double>::iterator iterss = m_ss_heur_value.find(h1);
-							double expastar = iterastar->second;
-							double expss = iterss->second;
-
-							outputFile<<"\t"<<h1<<"\t\t"<<expss<<"\t\t"<<expastar<<"\n";
-						}
-
-						outputFile<<"\n";
-						outputFile<<"\t-h2("<<no_repeat_h2.size()<<"):\t\tSS\t\tA*\n";
-						std::set<string>::iterator iter_set2;
-						for (iter_set2 = no_repeat_h2.begin(); iter_set2 != no_repeat_h2.end(); ++iter_set2) {
-                                                	string h2 = *iter_set2;
-						
-							map<string, double>::iterator iterastar = m_astar_heur_value.find(h2);
-							map<string, double>::iterator iterss = m_ss_heur_value.find(h2);
-							double expastar = iterastar->second;
-							double expss = iterss->second;
-
-							outputFile<<"\t"<<h2<<"\t\t"<<expss<<"\t\t"<<expastar<<"\n";
-						}
+								outputFile<<"\t("<<name3<<", "<<name4<<")";
+								outputFile<<"\t("<<name1<<", "<<name2<<")";
+								outputFile<<"\t("<<vss1<<", "<<vss2<<")";
+								outputFile<<"\t("<<va1<<", "<<va2<<")";
+								outputFile<<"\t"<<fracss[first_heur][second_heur];
+								outputFile<<"\t-\t"<<fracastar[first_heur][second_heur];
+								outputFile<<"\t=\t"<<diff<<"\n";
+							}
+						}	
 						outputFile<<"\n";
 
 						//cout<<"end info--\n";
