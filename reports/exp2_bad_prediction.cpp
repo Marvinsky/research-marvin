@@ -440,7 +440,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		while (fexp >> next) {
 			if (next == look_instance_name) {
 				fexp>>next;
-				//cout<<"instance_name = "<<next<<"\n";
+				cout<<"instance_name = "<<next<<"\n";
 				string instance_name = next;
 				while (fexp>>next) {
 					if (next == look_astar_name) { //A*
@@ -466,7 +466,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						
 						instant_pair_astar.insert(pair<string, vector<pair<string, double> > >(instance_name, m));			
 					}
-	
+					//cout<<"next = "<<next<<"\n";	
 					if (next == look_ss_name) {
 						cout<<"look_ss_name = "<<next<<"\n";
 						fexp>>next;
@@ -475,6 +475,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						int count_ss_heur = 0;
 						do {
 							fexp>>next;
+							//cout<<"next = "<<count_ss_heur<<": "<<next<<"\n";
 							string t = next;
 							size_t found = t.find("}");
 							if (found == 0) {
@@ -483,41 +484,42 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							pair_heur_value2.push_back(next);
 							count_ss_heur++;
 						} while (count_ss_heur < NUM_HEURISTICS);
+						for (size_t i = 0; i < pair_heur_value2.size(); i++) {
+							string s = pair_heur_value2.at(i);
+							cout<<"s = "<<s<<"\n";
+						}
 						vector<pair<string, double> > m2 = get_map_heur_value(pair_heur_value2);
+						
 						instant_pair_ss.insert(pair<string, vector<pair<string, double> > >(instance_name, m2));
+						break;
 					}
-					break;
 				}
-
-				/*while (fexp>>next) {
-					if (next == look_ss_name) {//SS
-						cout<<"look_ss_name = "<<next<<"\n";
-						fexp>>next;
-						
-						vector<string> pair_heur_value2;
-						int count_ss_heur = 0;
-						do {
-							fexp>>next;
-							pair_heur_value2.push_back(next);
-							count_ss_heur++;
-						} while (count_ss_heur < NUM_HEURISTICS);
-						vector<pair<string, double> > m = get_map_heur_value(pair_heur_value2);
-						
-					}
-				}*/
-
 			}
 		}
 		map<string, vector<pair<string, double> > >::iterator iter_map;
 		for (iter_map = instant_pair_astar.begin(); iter_map != instant_pair_astar.end(); iter_map++) {
 			string instant = iter_map->first;
 			vector<pair<string, double> > v_pair = iter_map->second;
-			cout<<"instant = "<<instant<<"\n";
+			cout<<"instant1 = "<<instant<<"\n";
 			for (size_t i = 0; i < v_pair.size(); i++) {
 				pair<string, double> p = v_pair.at(i);
 				cout<<"\t"<<p.first<<", "<<p.second<<"\n";
 			}
 		}
+
+		cout<<"\n\n";
+
+		map<string, vector<pair<string, double> > >::iterator iter_map2;
+		for (iter_map2 = instant_pair_ss.begin(); iter_map2 != instant_pair_ss.end(); iter_map2++) {
+			string instant = iter_map2->first;
+			vector<pair<string, double> > v_pair = iter_map2->second;
+			cout<<"instant2 = "<<instant<<"\n";
+			for (size_t i = 0; i < v_pair.size(); i++) {
+				pair<string, double> p = v_pair.at(i);
+				cout<<"\t"<<p.first<<", "<<p.second<<"\n";
+			}
+		}
+
 
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
