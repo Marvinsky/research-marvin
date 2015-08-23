@@ -1,25 +1,15 @@
-	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_100_probes/blocks/bc/probBLOCKS-9-0_F_70.csv
-	ssBC = probBLOCKS-9-0_F_70.csv
+	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_5000_probes/blocks/bc/probBLOCKS-9-0_F_33.csv
+	ssBC = probBLOCKS-9-0_F_33.csv
 	astarBC = probBLOCKS-9-0_F_49.csv
 
 
-	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_100_probes/floortile-opt11-strips/bc/opt-p02-003_F_102.csv
-	ssBC = opt-p02-003_F_102.csv
+	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_5000_probes/floortile-opt11-strips/bc/opt-p02-003_F_80.csv
+	ssBC = opt-p02-003_F_80.csv
 	astarBC = opt-p02-003_F_85.csv
 
 
-	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_100_probes/floortile-opt11-strips/bc/opt-p02-004_F_82.csv
-	ssBC = opt-p02-004_F_82.csv
-	astarBC = opt-p02-004_F_68.csv
-
-
-	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_100_probes/nomystery-opt11-strips/bc/p04_F_64.csv
-	ssBC = p04_F_64.csv
+	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_5000_probes/nomystery-opt11-strips/bc/p04_F_38.csv
+	ssBC = p04_F_38.csv
 	astarBC = p04_F_39.csv
-
-
-	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_100_probes/nomystery-opt11-strips/bc/p15_F_66.csv
-	ssBC = p15_F_66.csv
-	astarBC = p15_F_49.csv
 
 

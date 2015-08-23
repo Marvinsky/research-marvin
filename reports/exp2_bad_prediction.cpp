@@ -22,7 +22,7 @@ using namespace std;
 
 //enhance to read files from reportss_5000_probes -> Using global variables
 int NUM_PROBES = 500;
-
+string HEUR_TO_ANALYZE = "empty";
 
 //less second parameter
 template <typename T1, typename T2>
@@ -345,9 +345,9 @@ string getStringNexp(string str) {
 }
 
 
-//map<string, double> 
-void get_map_heur_value(vector<string> pair_heur_value) {
+vector<pair<string, double> > get_map_heur_value(vector<string> pair_heur_value) {
 	string delimiter = ",";
+	vector<pair<string, double> > m;
 	for (size_t i = 0; i < pair_heur_value.size(); i++) {
 		string s = pair_heur_value.at(i);
 		string pot[6];
@@ -362,8 +362,8 @@ void get_map_heur_value(vector<string> pair_heur_value) {
                 }
                 pot[index] = s;
 
-		cout<<"pot[0] = "<<pot[0]<<"\n";
-		cout<<"pot[1] = "<<pot[1]<<"\n";
+		//cout<<"pot[0] = "<<pot[0]<<"\n";
+		//cout<<"pot[1] = "<<pot[1]<<"\n";
 
 		string pot0 = pot[0];
 		string pot1 = pot[1];
@@ -376,22 +376,11 @@ void get_map_heur_value(vector<string> pair_heur_value) {
 		string t1 = pot[1];
 		size_t f1 = t1.find(")");
 		string value = t1.substr(0, f1);
-
-		cout<<heur<<" "<<value<<"\n";
-		
-		/*string t = str;
-		string t2 = str;
-		int len = t.length();
-		size_t comma = t.find(",");
-		string heur, value;
-		if (comma > 0 && len > 0) {
-			heur = t.substr(1, comma - 1);
-			value = t2.substr(comma + 1, comma + 3);
-		}
-		cout<<heur<<" "<<value<<"\n";*/
+		int value_double = atoi(value.c_str());
+		//cout<<heur<<" "<<value<<"\n";
+		m.push_back(pair<string, double>(heur, value_double));
 	}
-	cout<<"\n\n";
-	//return NULL;	
+	return m;	
 }
 
 void create_report1(string heuristic, string algorithm1, string algorithm2, int countProblems) {
@@ -445,621 +434,91 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 		ifstream fexp(resultFile.c_str());
 		string next;
+
+		map<string, vector<pair<string, double> > > instant_pair_astar; 
+		map<string, vector<pair<string, double> > > instant_pair_ss; 
 		while (fexp >> next) {
 			if (next == look_instance_name) {
 				fexp>>next;
-				cout<<"instance_name = "<<next<<"\n";
+				//cout<<"instance_name = "<<next<<"\n";
+				string instance_name = next;
 				while (fexp>>next) {
 					if (next == look_astar_name) { //A*
-						fexp>>next;	
+						//cout<<"next = "<<next<<"\n";
+						fexp>>next;
 						//string string_heur = getStringNexp(next);
 						//cout<<"A*: = "<<string_heur<<"\n";
-						vector<string> pair_heur_value;
+						vector<string> pair_heur_value1;
 						int count_astar_heur = 0;
 						do {
 							fexp>>next;
-							pair_heur_value.push_back(next);
+							string t = next;
+							size_t found = t.find("}");
+							//cout<<"found = "<<found<<"\n";
+							if (found == 0) {
+								break;
+							}
+							pair_heur_value1.push_back(next);
 							count_astar_heur++;
 						} while (count_astar_heur < NUM_HEURISTICS);
-						cout<<"\n";
-						//map<string, double> map_heur_value = 
-						get_map_heur_value(pair_heur_value);
-
-						//double double_nexp = getDoubleNexp(next);
-						//cout<<"value = "<<next<<"\n\n";
-					}
-				}
-				
-			}
-		}
-
-
-		/*
-		//print the results to plot
-		string resultFile2;
-        	resultFile2 = "/" + domain + ".txt";
-        	resultFile2 = model_global + resultFile2;
-        	resultFile2 = "reports/" + resultFile2;
-        	resultFile2 = "marvin/" + resultFile2;
-        	resultFile2 = "marvin/" + resultFile2;
-        	resultFile2 = "/home/"+ resultFile2;
-		//cout<<"\nresultFile2 = "<<resultFile2<<"\n";
-
-		ofstream outputFile;
-		outputFile.open(resultFile.c_str(), ios::out);
-		//Take into account that the experiment two was run by ss using 500 probes
-		outputFile<<"Experiment 2: "<<domain<<" using "<<heuristic<<" heuristic with "<<textProbes<<" probes\n\n";
-		
-		//print each file
-		ofstream outputFile2;
-		outputFile2.open(resultFile2.c_str(), ios::out);
-		int all_instances_solved = 0;
-		
-		//Read the fles from algorithm2 - astar
-		string output5;
-                //output5 = "resultado/"+output5;
-                output5 =  domain+"/bc/"+output5;
-		output5 = algorithm2+ "/"+heuristic+"/report"+sufix2+"/"+output5;
-		output5 = "marvin/" + output5;
-		output5 = "marvin/" + output5;
-		output5 = "/home/" + output5;
-        	DIR *dir3;
-        	struct dirent *ent3;
-        
-       	 	dir3 = opendir(output5.c_str());
-        	if (dir3 != NULL) {
-	    		while ((ent3 = readdir(dir3)) != NULL) {
-				string fileName = ent3->d_name;
-				string t = fileName;
-				size_t  found = t.find(".sw");
-				bool is_swp_file = false;
-				if (found < 100) {
-					string swp_name_mod = t.substr(found, t.length());
-					cout<<"swp_name_mod = "<<swp_name_mod<<"\n";
-					is_swp_file = true;
-				}
-				int sizeName = fileName.size();
-                		if ((sizeName == 1)  || (sizeName == 2) || (is_swp_file)) {
-					//TODO
-				} else {
-		    			fileNames2.push_back(fileName);
-				}
-            		}
-            		closedir(dir3);
-		} else {
-	    		cout<<"Error trying to open the directory: "<<output5.c_str()<<endl;
-			directory_not_found = true;
-		}
-
-		if (directory_not_found) {
-			outputFile<<left<<setw(20)<<domain;
-			outputFile<<"\n";
-			countRead = countRead + 1;
-			continue;
-		}	
-
-		//Read the files from algorithm1 - ss
-
-		string reportss_probes = "report" + sufix1;
-		reportss_probes += "_" + textProbes;
-		reportss_probes += "_probes"; 
-		//cout<<"reportss_probes = "<<reportss_probes<<"\n";
-
-        	string output;
-		output =  domain+"/bc/"+output;
-		output = algorithm1+"/"+heuristic+ "/" + reportss_probes + "/" + output;
-		output = "marvin/" + output;
-		output = "marvin/" + output;
-		output = "/home/" + output;
-
-		DIR *dir;
-                struct dirent *ent;
-
-                dir = opendir(output.c_str());
-                if (dir != NULL) {
-                        while ((ent = readdir(dir)) != NULL) {
-                                string fileName = ent->d_name;
-                                int sizeName = fileName.size();
-				string t = fileName;
-                                size_t  found = t.find(".sw");
-                                bool is_swp_file = false;
-                                if (found < 100) {
-                                        string swp_name_mod = t.substr(found, t.length());
-                                        cout<<"swp_name_mod = "<<swp_name_mod<<"\n";
-                                        is_swp_file = true;
-                                }
-                                if ((sizeName == 1)  || (sizeName == 2) || (sizeName == 9) || (is_swp_file)) {
-                                        //TODO
-                                } else {
-                                        fileNames.push_back(fileName);
-                                }
-                        }
-                        closedir(dir);
-                } else {
-                        cout<<"Error trying to open the directory: "<<output.c_str()<<endl;
-                }
-
-
-		//shrink information from fileNames2
-		map<string, vector<pair<string, double> > > map_bc_file_astar;
-		for (size_t i = 0; i < fileNames2.size(); i++) {
-			vector<string> fileNames4;
-			string astarBC = fileNames2.at(i);
-			string astarBC_key = astarBC;
-			string dir_astarBC = output5 + astarBC;
-			//cout<<"astarBC = "<<astarBC<<"\n";
-			//cout<<"output_astarBC = "<<dir_astarBC<<"\n";
-
-			DIR *dir;
-                	struct dirent *ent;
-
-                	dir = opendir(dir_astarBC.c_str());
-                	if (dir != NULL) {
-                        	while ((ent = readdir(dir)) != NULL) {
-                                	string fileName = ent->d_name;
-                                	int sizeName = fileName.size();
-					string t = fileName;
-                                	size_t  found = t.find(".sw");
-                                	bool is_swp_file = false;
-                                	if (found < 100) {
-                                        	string swp_name_mod = t.substr(found, t.length());
-                                        	cout<<"swp_name_mod = "<<swp_name_mod<<"\n";
-                                        	is_swp_file = true;
-                                	}
-                                	if ((sizeName == 1)  || (sizeName == 2) || (is_swp_file)) {
-                                        	//TODO
-                                	} else {
-                                        	fileNames4.push_back(fileName);
-                                	}
-                        	}
-                        	closedir(dir);
-                	} else {
-                        	cout<<"Error trying to open the directory: "<<output.c_str()<<endl;
-                	}
-
-			//find the threshold
-			string threshold_v;
-			if (fileNames4.size() > 0) {
-				string s_threshold = fileNames4.at(0);
-				string t = s_threshold;
-				size_t found0 = t.find("F_");
-				//cout<<"found0 = "<<found0<<"\n";
-				string t2 = t.substr(found0 + 2);
-				size_t found = t2.find(".");
-				threshold_v = t2.substr(0, found);
-				//cout<<"threshold_v = "<<threshold_v<<"\n";
-			}
-
-			astarBC_key += "_F_";
-			astarBC_key += threshold_v;
-			astarBC_key += ".csv";
-			//cout<<"astarBC_key = "<<astarBC_key<<"\n";
-			map<string, double > map_bc_astar;//store the gapdb info
-			string delimiter = "_";
-			for (size_t i = 0; i < fileNames4.size(); i++) {
-				string s = fileNames4.at(i);
-				string file_to_open = dir_astarBC + "/" + s;
-				string pot[6];
-				string key, key_final;
-                		size_t pos = 0;
-                		string token;
-                		int index = 0;
-                		while ((pos = s.find(delimiter)) != std::string::npos) {
-                        		token = s.substr(0, pos);
-                        		pot[index] = token;
-                        		s.erase(0, pos + delimiter.length());
-                        		index++;
-                		}
-                		pot[index] = s;	
-
-				key = pot[2]; //setting the index of the gapdb
-				//cout<<"\t\tkey = "<<key<<"\n";
-				//cout<<"\t\tfile_to_open = "<<file_to_open<<"\n";
-				//key_final = "gapdb_" + key;
-
-				vector<pair<string, double> > m = analyzeFile(file_to_open, true);
-				double nodes_generated = 0;
-				if (m.size() == 1) { //considering we just using one heuristic
-					string s;
-					typedef std::vector<std::pair<std::string, double> > vector_type;
-					for (vector_type::const_iterator pos = m.begin();
-     						pos != m.end(); ++pos)
-					{
-   						s = pos->first;
-				        	double d = pos->second;
-						//cout<<"\t\t\t"<<s<<"  -  "<<d<<"\n";
-						nodes_generated = d;
-					}
-					key_final = key + s; //s + key
-				}
-				//cout<<"\t\t\tkey_final = "<<key_final<<"\n\n\n";
-				map_bc_astar.insert(pair<string, double>(key_final, nodes_generated));
-			}
-			//sort the elements by second parameter
-			vector<pair<string, double> > sort_v(map_bc_astar.begin(), map_bc_astar.end());
-			sort(sort_v.begin(), sort_v.end(), less_first<string, double>());	
-
-			map_bc_file_astar.insert(pair<string, vector<pair<string, double > > >(astarBC_key, sort_v));
-		}
-		
-		map<string, vector<pair<string, double> > >::iterator iter_m;
-		for (iter_m = map_bc_file_astar.begin(); iter_m != map_bc_file_astar.end(); iter_m++) {
-			string astarBC = iter_m->first;
-			//cout<<"astarBC = "<<astarBC<<"\n";
-			vector<pair<string, double> > m_values = iter_m->second;
-			vector<pair<string, double> > m_heur_ordered = get_heur_ordered(m_values);	
-			//end order heuristics
-	
-			for (size_t j = 0; j < fileNames.size(); j++) {
-				string ssBC = fileNames.at(j);
-				//cout<<"\t\tssBC = "<<ssBC<<"\n";
-				string output_ssBC = output + ssBC;
-				//cout<<"output_ssBC = "<<output_ssBC<<"\n\n";
-				if (astarBC == ssBC) {
-					//cout<<"astarBC == ssBC\n";
-					
-					vector<string> collector_astar, collector_ss;
-					map<double, vector<string> > map_astar, map_ss;
-					map<int ,string> look_for_heuristic; //map to look the name of the heuristic
-
-					outputFile<<"\n\ninstance_name: "<<astarBC<<"\n\n";
-					//_________________CALLING A* _____________
-					//add_lines_heuristics.clear();					
-					outputFile<<"A*:\t\t{";
-					map<string, double> m_astar_percentage;
-					map<string, double> m_ss_percentage;
-					map<string, string> heuristic_description;
-
-					//enhance 3: create matrix fracastar
-					double** fracastar;
-					int total_heuristics = m_heur_ordered.size();
-					fracastar = new double*[total_heuristics];
-					for (int i = 0; i < total_heuristics; i++) {
-						fracastar[i] = new double[total_heuristics];
-					}
-
-					int row_count = 0;
-					typedef std::vector<std::pair<std::string, double> > vector_type;
-					for (vector_type::const_iterator pos = m_heur_ordered.begin(); pos != m_heur_ordered.end(); ++pos)
-					{
-						//cout<<"into the vector_type\n";
-   						string s = pos->first;
-				                string t = s;
-						int found = t.find("_");
-						string heuristic_name_mod = t.substr(0, found);
-						int heur_number	= atoi(heuristic_name_mod.c_str());	
-						look_for_heuristic.insert(pair<int, string>(heur_number, s)); //store the name of the heuristics for global use in the instance
-
-						double d = pos->second;
-						m_astar_percentage.insert(pair<string, double>(s, d));
-						collector_astar.push_back(s);
-						//cout<<"("<<s<<", "<<d<<"),";
-						outputFile<<"("<<s<<", "<<d<<"),";
-				
-
-						//loop the vector that contains all the Css_x = number of nodes expanded by SS using heuristic x	
-						typedef std::vector<std::pair<std::string, double> > vector_type_inner;	
-						vector<string> ga_name;
-						int col_count = 0;
-						for (vector_type_inner::const_iterator pinner = m_heur_ordered.begin();
-						pinner != m_heur_ordered.end(); ++pinner)
-						{
-							// do this to group all the heuristics that generates the same number of nodes
-							string sinner = pinner->first;
-							double dinner = pinner->second;
-							if (d == dinner) {
-								ga_name.push_back(sinner);
-							}
-
-							//fill the fracastar with the data ratio
-							if (dinner != 0) {
-								double dratio = d/dinner;
-								fracastar[row_count][col_count] = dratio;
-							} else {
-								fracastar[row_count][col_count] = 0;
-							}
-							col_count++;
-						}
-						row_count++;
-
-						map<double, vector<string> >::iterator itmap = map_astar.find(d);
-						if (itmap != map_astar.end()) {
-
-						} else {
-							map_astar.insert(pair<double, vector<string> >(d, ga_name));
-						}	
-					}
-
-					outputFile<<"}\n";	
-	
-					//astar-------------------------------------
-					map<string, vector<string> > group_map_astar;
-					map<double, vector<string> >::iterator itmap2;
-					int astar_count = 1;
-					for (itmap2 = map_astar.begin(); itmap2 != map_astar.end(); ++itmap2) {
-						double d = itmap2->first;
-						vector<string> s = itmap2->second;
-						stringstream number;
-						number<<astar_count++;
-						string name = "a_"+number.str();
-						//outputFile<<"\t"<<name<<":\t\t{";
-						for (size_t i = 0; i < s.size(); i++) {
-							//outputFile<<s.at(i);
-							if (i != s.size() -1) {
-								//outputFile<<"/";
-							}
-						}
-						//outputFile<<"}\n";
-						group_map_astar.insert(pair<string, vector<string> >(name, s));
-					}
-
-					//outputFile<<"\n\n";
-					//CALLING SS _____________________________________________
-					vector<pair<string, double> > m2 = analyzeFile(output_ssBC, true);
-					vector<pair<string, double> > m2_heur_ordered = get_heur_ordered(m2);
-					//enhance 3: create matrix fracss	
-
-					double** fracss;
-					int total_heuristics2 = m2_heur_ordered.size(); 
-					fracss = new double*[total_heuristics2];
-					for (int i = 0; i < total_heuristics2; i++) {
-						fracss[i] = new double[total_heuristics2];
-					}
-					//outputFile<<setprecision(2)<<fixed<<"ss:\t\t{";
-					outputFile<<"ss:\t\t{";
-
-					typedef std::vector<std::pair<std::string, double> > vector_type2;
-					int row_count2 = 0;
-					for (vector_type2::const_iterator pos2 = m2_heur_ordered.begin();
-     						pos2 != m2_heur_ordered.end(); ++pos2)
-					{
-   						string s = pos2->first;
-						double d = pos2->second;
-						collector_ss.push_back(s);
-						//cout<<"("<<s<<", "<<d<<"),";
-						outputFile<<"("<<s<<", "<<d<<"),";
-						m_ss_percentage.insert(pair<string, double>(s, d)); //insert data into m_ss_percentage
-
-						typedef std::vector<std::pair<std::string, double> > vector_type_inner2;	
-						vector<string> ga_name2;
-						int col_count2 = 0;
-						for (vector_type_inner2::const_iterator pinner = m2_heur_ordered.begin();
-						pinner != m2_heur_ordered.end(); ++pinner)
-						{
-							// this is done in order to group the heuristics that have the same number of nodes
-							string sinner = pinner->first;
-							double dinner = pinner->second;
-							if (d == dinner) {
-								ga_name2.push_back(sinner);
-							}
-							
-							//enhance 3:
-							if (dinner != 0) {
-								double dratio = d/dinner;
-								fracss[row_count2][col_count2] = dratio;
-							} else {
-								fracss[row_count2][col_count2] = 0;
-							}
-							col_count2++;
-						}
-						row_count2++;
-
-						map<double, vector<string> >::iterator itmap3 = map_ss.find(d);
-						if (itmap3 != map_ss.end()) {
-
-						} else {
-							map_ss.insert(pair<double, vector<string> >(d, ga_name2));
-						}
-					}
-					outputFile<<"}\n";	
-	
-					//cout<<"fracss size = "<<total_heuristics<<"\n";
-					//cout<<"fracastar size = "<<total_heuristics2<<"\n";
-
-					multimap<double, pair<int, int> > ratiomap;
-					vector<pair<int, int> > index_collector; //collect the index that represent the best heuristics
-					vector<pair<double, double> > plot_info;
-					multimap<string, pair<double, double> > category_plot_info;
-					if (total_heuristics == total_heuristics2) {
-						all_instances_solved++; //counting the instances that have solved all the heuristics in A*
-						outputFile<<"\nMeasure_1:\n";
-						outputFile<<"\n-A* h1/h2\n";
-						for (int i = 0; i < total_heuristics; i++) {
-							for (int j = 0; j < total_heuristics; j++) {
-								outputFile<<"\t"<<fracastar[i][j];
-								if (i != j) {
-									double fraa1 = fracastar[i][j];
-									double frass1 = fracss[i][j];
-									plot_info.push_back(pair<double, double>(frass1, fraa1));
-									
-									//get the category
-									string name1, name2, final_name1, final_name2;
-									std::map<int, string>::iterator rt1 =  look_for_heuristic.find(i);
-                                                                	if (rt1 != look_for_heuristic.end()) {
-                                                                        	name1 = rt1->second;
-										string t1 = name1;
-                								int found1 = t1.find("_");
-                								string heuristic_name_mod1 = t1.substr(found1 + 1,  t1.length());
-										final_name1 = heuristic_name_mod1;
-										//cout<<"final_name1 = "<<final_name1<<"\n";
-                                                                	}
-
-                                                                	std::map<int, string>::iterator rt2 =  look_for_heuristic.find(j);
-                                                                	if (rt2 != look_for_heuristic.end()) {
-                                                                        	name2 = rt2->second;
-										string t2 = name2;
-                								int found2 = t2.find("_");
-                								string heuristic_name_mod2 = t2.substr(found2 + 1,  t2.length());
-										final_name2 = heuristic_name_mod2;
-										//cout<<"final_name2 = "<<final_name2<<"\n";
-                                                                	}
-									string category;
-									if (final_name1 == "ipdb" || final_name2 == "ipdb") {
-										category = "ipdb";
-									} else if (final_name1 == "lmcut" || final_name2 == "lmcut") {
-										category = "lmcut";
-									} else {
-										category = "gapdb";
-									}
-									category_plot_info.insert(pair<string, pair<double, double> >(category, pair<double, double>(frass1, fraa1)));
-									//end get category
-								}
-							}
-							outputFile<<"\n";
-						}
-						outputFile<<"\n-ss h1/h2\n";
-						for (int i = 0; i < total_heuristics2; i++) {
-							for (int j = 0; j < total_heuristics2; j++) {
-								outputFile<<"\t"<<fracss[i][j];
-							}
-							outputFile<<"\n";
-						}
-
-						for (int i = 0; i < total_heuristics; i++) {
-							for (int j = 0; j < total_heuristics; j++) {
-								if (i != j) {
-									if (isInRange(fracss[i][j], fracastar[i][j], 0.5)) { //-1 + 1
-										//cout<<i<<", "<<j<<"\n";
-										index_collector.push_back(pair<int, int>(i, j));
-										double diffssa = fracss[i][j] - fracastar[i][j];
-										ratiomap.insert(pair<double, pair<int, int> >(diffssa, pair<int, int>(i, j)));
-									}
-								}
-							}
-						}
-
-						//sort(ratiomap.begin(), ratiomap.end(), less_first<double, double>());
-						sort(index_collector.begin(), index_collector.end(), less_second<int, int>());	
-						sort(plot_info.begin(), plot_info.end(), less_first<double, double>());
-
-						//plot_info without sort
-						//implement average_info
-						vector<double> axix_x, axix_y;	
-
-						double average_x = 2;//getMaxElement(axix_x)/deno;            //sum_x/deno;
-                                                double average_y = 2;//getMaxElement(axix_y)/deno;            //sum_y/deno;
-                                                //cout<<"average_x = "<<average_x<<"\n";
-                                                //cout<<"average_y = "<<average_y<<"\n";
-
-						multimap<string, pair<double, double> >::iterator multimap_category;
-						for (multimap_category = category_plot_info.begin(); multimap_category != category_plot_info.end(); multimap_category++) {
-							string category = multimap_category->first;
-							pair<double, double> plot_info2 = multimap_category->second;
-
-							double x1 = plot_info2.first; //ss
-							double y1 = plot_info2.second; //astar
-							double new_x1, new_y1;
-							if (x1 > average_x) {
-								new_x1 = average_x;
-							} else {
-								new_x1 = x1;
-							}
-
-							if (y1 > average_y) {
-								new_y1 = average_y;
-							} else {
-								if (y1 == 1) {
-									//TODO
-									new_x1 = -1;
-								} else {
-									new_y1 = y1;
-								}
-							}
-							if (new_x1 != -1) {
-                						outputFile2<<"\t"<<new_x1<<"\t\t"<<new_y1<<"\t\t"<<category<<"\n";
-							}
-						}
-
-						//end of average info
-
-						outputFile<<"\nMeasure_2:\n";
-						set<string> no_repeat_h1, no_repeat_h2; 
-						if (index_collector.size() == 0) {
-							outputFile<<"- There are no match between ratio heuristics.\n";
-						} else {
-							multimap<double, pair<int, int> >::iterator iter;
-							outputFile<<"- The heuristics that have the similar ratio are:\n";
-							outputFile<<"\t(h1     ,h2     ):\tfracss\t-\tfracastar\t=\tdiff\n";
-							for (iter = ratiomap.begin(); iter != ratiomap.end(); iter++) {
-								double diff = iter->first;
-								pair<int, int> pratio = iter->second;
 						
-								int first_heur = pratio.first;
-								int second_heur = pratio.second;
-	
-								stringstream number1, number2;
-								number1<<first_heur;
-								number2<<second_heur;
-								string name1; // = "gapdb_"+number1.str();
-								string name2; // = "gapdb_"+number2.str();
-
-								std::map<int, string>::iterator rt1 =  look_for_heuristic.find(first_heur);
-								if (rt1 != look_for_heuristic.end()) {
-									name1 = rt1->second;
-								}
-
-								std::map<int, string>::iterator rt2 =  look_for_heuristic.find(second_heur);
-								if (rt2 != look_for_heuristic.end()) {
-									name2 = rt2->second;
-								}
-							
-								no_repeat_h1.insert(name1);
-								no_repeat_h2.insert(name2);
-								
-								//cout<<"("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
-								outputFile<<"\t("<<name1<<", "<<name2<<"):\t"<<fracss[first_heur][second_heur]<<"\t-\t"<<fracastar[first_heur][second_heur]<<"\t=\t"<<diff<<"\n";
-							}	
-						}
-						outputFile<<"\nMeasure_3:\n";
-
-						outputFile<<"\t-h1("<<no_repeat_h1.size()<<"):\t\tSS\t\tA*\n";
-						std::set<string>::iterator iter_set;
-						for (iter_set = no_repeat_h1.begin(); iter_set != no_repeat_h1.end(); ++iter_set) {
-                                                	string h1 = *iter_set;
-
-							map<string, double>::iterator iterastar = m_astar_percentage.find(h1);
-							map<string, double>::iterator iterss = m_ss_percentage.find(h1);
-							double expastar = iterastar->second;
-							double expss = iterss->second;
-
-							outputFile<<"\t"<<h1<<"\t\t"<<expss<<"\t\t"<<expastar<<"\n";
-						}
-
-						outputFile<<"\n";
-						outputFile<<"\t-h2("<<no_repeat_h2.size()<<"):\t\tSS\t\tA*\n";
-						std::set<string>::iterator iter_set2;
-						for (iter_set2 = no_repeat_h2.begin(); iter_set2 != no_repeat_h2.end(); ++iter_set2) {
-                                                	string h2 = *iter_set2;
+						vector<pair<string, double> > m = get_map_heur_value(pair_heur_value1);
 						
-							map<string, double>::iterator iterastar = m_astar_percentage.find(h2);
-							map<string, double>::iterator iterss = m_ss_percentage.find(h2);
-							double expastar = iterastar->second;
-							double expss = iterss->second;
-
-							outputFile<<"\t"<<h2<<"\t\t"<<expss<<"\t\t"<<expastar<<"\n";
-						}
-						outputFile<<"\n";
-
-						//cout<<"end info--\n";
-					} else {//end validation of the size
-						info<<"\toutput_ssBC = "<<output_ssBC<<"\n";
-						//cout<<"\toutput_ssBC = "<<output_ssBC<<"\n";
-						info<<"\tssBC = "<<ssBC<<"\n";
-						//cout<<"\tssBC = "<<ssBC<<"\n";	
-						info<<"\tastarBC = "<<astarBC<<"\n";	
-						//cout<<"\tastarBC = "<<astarBC<<"\n";
-						info<<"\n\n";	
+						instant_pair_astar.insert(pair<string, vector<pair<string, double> > >(instance_name, m));			
 					}
+	
+					if (next == look_ss_name) {
+						cout<<"look_ss_name = "<<next<<"\n";
+						fexp>>next;
+						
+						vector<string> pair_heur_value2;
+						int count_ss_heur = 0;
+						do {
+							fexp>>next;
+							string t = next;
+							size_t found = t.find("}");
+							if (found == 0) {
+								break;
+							}
+							pair_heur_value2.push_back(next);
+							count_ss_heur++;
+						} while (count_ss_heur < NUM_HEURISTICS);
+						vector<pair<string, double> > m2 = get_map_heur_value(pair_heur_value2);
+						instant_pair_ss.insert(pair<string, vector<pair<string, double> > >(instance_name, m2));
+					}
+					break;
+				}
 
-				} //compare astarBC == ssBC
+				/*while (fexp>>next) {
+					if (next == look_ss_name) {//SS
+						cout<<"look_ss_name = "<<next<<"\n";
+						fexp>>next;
+						
+						vector<string> pair_heur_value2;
+						int count_ss_heur = 0;
+						do {
+							fexp>>next;
+							pair_heur_value2.push_back(next);
+							count_ss_heur++;
+						} while (count_ss_heur < NUM_HEURISTICS);
+						vector<pair<string, double> > m = get_map_heur_value(pair_heur_value2);
+						
+					}
+				}*/
+
 			}
 		}
-		outputFile.close();
-		if (all_instances_solved != 0) {
-			outputFile2<<"all_instances_solved: "<<all_instances_solved<<"\t\t---\n";
+		map<string, vector<pair<string, double> > >::iterator iter_map;
+		for (iter_map = instant_pair_astar.begin(); iter_map != instant_pair_astar.end(); iter_map++) {
+			string instant = iter_map->first;
+			vector<pair<string, double> > v_pair = iter_map->second;
+			cout<<"instant = "<<instant<<"\n";
+			for (size_t i = 0; i < v_pair.size(); i++) {
+				pair<string, double> p = v_pair.at(i);
+				cout<<"\t"<<p.first<<", "<<p.second<<"\n";
+			}
 		}
-		outputFile2.close();
-		*/
+
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
 	info.close();
@@ -1091,16 +550,20 @@ void create_report() {
 
 int main(int argc, char* argv[]) {
 	srand(time(NULL));
-	if (argc < 2) {
-		cout<<"Error in: "<<argv[0]<<" - no passing the number of probes.\n";
-		cout<<"Please enter the number of probes.\n";
-		cout<<"\t500 or 1000 or 5000\n";
+	string heuristic_number_string;
+	if (argc < 3) {
+		cout<<"Error in: "<<argv[0]<<" - no passing the number of probes and the heuristic you want to compare.\n";
+		cout<<"Please enter the following parameters:.\n";
+		cout<<"\t1.- Number of probes 1, 10, 100, 500, 1000, 5000\n";
+		cout<<"\t2.- The number of heuristic you want to analyze: From 1 to 13.\n";
 		return 1;
 	} else {
 		string number_probes = argv[1];
+		string heuristic_number_string = argv[2];
 		int n_probes = atoi(number_probes.c_str());
 		cout<<"n_probes = "<<n_probes<<"\n";
 		NUM_PROBES = n_probes;
+		HEUR_TO_ANALYZE = heuristic_number_string;
 	}
 
 	create_report();
