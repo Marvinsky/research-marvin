@@ -420,7 +420,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	outputFile<<left<<setw(24)<<"Domain";
         outputFile<<right<<setw(15)<<"A*";
         outputFile<<right<<setw(15)<<"ss error";
-        outputFile<<right<<setw(15)<<"n";
+        outputFile<<right<<setw(15)<<"\n";
         outputFile<<"\n"<<endl;
 
 	string look_instance_name = "instance_name:";
@@ -504,7 +504,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 
 		//map to map all the heuristics in each instance
-		map<string, vector<pair<string, string> > > load_astar;
+		map<string, vector<pair<string, string> > > construct_info_heur;
 
 		map<string, vector<pair<string, string> > >::iterator iter_map;
 		for (iter_map = instant_pair_astar.begin(); iter_map != instant_pair_astar.end(); iter_map++) {
@@ -524,10 +524,11 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				//cout<<"heur = "<<heur<<"\n";
 				if (heur == "ipdb" || heur == "lmcut" || heur == "mands") {
 					//cout<<"heur1 = "<<heur<<"\n";
+					heur += "_A*";
 					v_pair_info.push_back(pair<string, string>(heur, d));
 				}
 			}
-			load_astar.insert(pair<string, vector<pair<string, string> > >(instant, v_pair_info));
+			construct_info_heur.insert(pair<string, vector<pair<string, string> > >(instant, v_pair_info));
 		}
 
 		//cout<<"\n\njumping\n\n";
@@ -551,21 +552,95 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				//cout<<"heur = "<<heur<<"\n";
 				if (heur == "ipdb" || heur == "lmcut" || heur == "mands") {
 					//cout<<"heur2 = "<<heur<<"\n";
+					heur += "_SS";
 					v_pair_info.push_back(pair<string, string>(heur, d));
 				}
 			}
 
-			cout<<"\tinner\n";
-			map<string, vector<pair<string, string> > >::iterator iter_info = load_astar.find(instant);
-			if (iter_info != load_astar.end()) {
-				vector<pair<string, string> > v_pair = iter_info->second;
+			//cout<<"\n\t3 heur\n";
+			map<string, vector<pair<string, string> > >::iterator iter_info = construct_info_heur.find(instant);
+			if (iter_info != construct_info_heur.end()) {
+				vector<pair<string, string> > v_pair = iter_info->second;	
+				for (size_t i = 0; i < v_pair_info.size(); i++) {
+					pair<string, string> p = v_pair_info.at(i);
+					v_pair.push_back(p);
+				}
+				iter_info->second = v_pair;
 				for (size_t i = 0; i < v_pair.size(); i++) {
 					pair<string, string> p = v_pair.at(i);
 					string s = p.first;
 					string d = p.second;
-					cout<<s<<"\t"<<d<<"\n";
+					//cout<<s<<"\t"<<d<<"\n";
 				}
 			}
+		}
+
+		string report_heur;
+		if (textNumberHeur == "1") {
+			report_heur = "ipdb";
+		} else if (textNumberHeur == "2") {
+			report_heur = "lmcut";
+		} else if (textNumberHeur == "3") {
+			report_heur = "mands";
+		}
+
+
+		double sum_pi = 0,
+			astar_exp_average = 0, astar_exp_sum_total = 0, ss_error_average = 0;
+		int predictions = 0, number_instances = 0;
+		map<string, vector<pair<string, string> > >::iterator i_print;
+		for (i_print = construct_info_heur.begin(); i_print != construct_info_heur.end(); i_print++) {
+			string instant = i_print->first;
+			vector<pair<string, string> > order_pair = i_print->second;
+			int size = order_pair.size();
+			//cout<<"size = "<<size<<"\n";
+			if (size == 6) {
+				for (size_t i = 0; i < size; i++) {
+					pair<string, string> p = order_pair.at(i);
+					string s = p.first;
+					string d = p.second;
+					//cout<<s<<"\t"<<d<<"\n";
+					string t = s;
+					size_t f = t.find("_");
+					string new_algorithm = t.substr(f + 1, t.length());
+					//cout<<"new_algorithm = "<<new_algorithm<<"\n";
+					string t2 = s;
+					size_t f2 = t2.find("_");
+					string new_heur = t2.substr(0, f2);
+					//cout<<"new_heur = "<<new_heur<<"\n";
+
+					if (report_heur == new_heur) {
+						double value_a  = 0, pred_ss = 0;
+						if (new_algorithm == "A*") {
+							value_a = atof(d.c_str());
+							cout<<"value_a = "<<value_a<<"\n";
+						} else if (new_algorithm == "SS") {
+							pred_ss = atof(d.c_str());
+							cout<<"pred_ss = "<<pred_ss<<"\n";
+						}
+						astar_exp_sum_total += value_a;
+						double pi = 0;
+						pi = abs(pred_ss - value_a)/value_a;
+						cout<<"pi = "<<pi<<"\n";
+						sum_pi += pi;
+						predictions++;
+					}
+				}
+				number_instances++;
+			}
+		}
+
+		if (number_instances > 0) {
+			astar_exp_average = astar_exp_sum_total/predictions;
+			cout<<"predictions = "<<predictions<<"\n";
+			ss_error_average = sum_pi/predictions;
+			cout<<"sum_pi = "<<sum_pi<<"\n";
+
+			outputFile<<left<<setw(24)<<domain;
+			outputFile<<right<<setw(15)<<astar_exp_average;
+			outputFile<<right<<setw(15)<<ss_error_average;
+			outputFile<<right<<setw(15)<<number_instances;
+			outputFile<<"\n";
 		}
 
 	    	countRead = countRead + 1;
@@ -603,7 +678,8 @@ int main(int argc, char* argv[]) {
 		cout<<"Error in: "<<argv[0]<<" - no passing the number of probes and the heuristic you want to compare.\n";
 		cout<<"Please enter the following parameters:.\n";
 		cout<<"\t1.- Number of probes 1, 10, 100, 500, 1000, 5000\n";
-		cout<<"\t2.- The number of heuristic you want to analyze: From 1 to 13.\n";
+		cout<<"\t2.- The number of heuristic you want to analyze: From 1 to 3.\n";
+		cout<<"\t\t- 1 == ipdb, 2 == lmcut, 3 == mands\n";
 		return 1;
 	} else {
 		string number_probes = argv[1];
