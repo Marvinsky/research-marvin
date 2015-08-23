@@ -345,9 +345,9 @@ string getStringNexp(string str) {
 }
 
 
-vector<pair<string, double> > get_map_heur_value(vector<string> pair_heur_value) {
+vector<pair<string, string> > get_map_heur_value(vector<string> pair_heur_value) {
 	string delimiter = ",";
-	vector<pair<string, double> > m;
+	vector<pair<string, string> > m;
 	for (size_t i = 0; i < pair_heur_value.size(); i++) {
 		string s = pair_heur_value.at(i);
 		string pot[6];
@@ -376,9 +376,9 @@ vector<pair<string, double> > get_map_heur_value(vector<string> pair_heur_value)
 		string t1 = pot[1];
 		size_t f1 = t1.find(")");
 		string value = t1.substr(0, f1);
-		int value_double = atoi(value.c_str());
+		//int value_double = atoi(value.c_str());
 		//cout<<heur<<" "<<value<<"\n";
-		m.push_back(pair<string, double>(heur, value_double));
+		m.push_back(pair<string, string>(heur, value));
 	}
 	return m;	
 }
@@ -435,8 +435,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 		ifstream fexp(resultFile.c_str());
 		string next;
 
-		map<string, vector<pair<string, double> > > instant_pair_astar; 
-		map<string, vector<pair<string, double> > > instant_pair_ss; 
+		map<string, vector<pair<string, string> > > instant_pair_astar; 
+		map<string, vector<pair<string, string> > > instant_pair_ss; 
 		while (fexp >> next) {
 			if (next == look_instance_name) {
 				fexp>>next;
@@ -462,9 +462,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							count_astar_heur++;
 						} while (count_astar_heur < NUM_HEURISTICS);
 						
-						vector<pair<string, double> > m = get_map_heur_value(pair_heur_value1);
+						vector<pair<string, string> > m = get_map_heur_value(pair_heur_value1);
 						
-						instant_pair_astar.insert(pair<string, vector<pair<string, double> > >(instance_name, m));			
+						instant_pair_astar.insert(pair<string, vector<pair<string, string> > >(instance_name, m));			
 					}
 					//cout<<"next = "<<next<<"\n";	
 					if (next == look_ss_name) {
@@ -483,39 +483,35 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 							}
 							pair_heur_value2.push_back(next);
 							count_ss_heur++;
-						} while (count_ss_heur < NUM_HEURISTICS);
-						for (size_t i = 0; i < pair_heur_value2.size(); i++) {
-							string s = pair_heur_value2.at(i);
-							cout<<"s = "<<s<<"\n";
-						}
-						vector<pair<string, double> > m2 = get_map_heur_value(pair_heur_value2);
+						} while (count_ss_heur < NUM_HEURISTICS);	
+						vector<pair<string, string> > m2 = get_map_heur_value(pair_heur_value2);
 						
-						instant_pair_ss.insert(pair<string, vector<pair<string, double> > >(instance_name, m2));
+						instant_pair_ss.insert(pair<string, vector<pair<string, string> > >(instance_name, m2));
 						break;
 					}
 				}
 			}
 		}
-		map<string, vector<pair<string, double> > >::iterator iter_map;
+		map<string, vector<pair<string, string> > >::iterator iter_map;
 		for (iter_map = instant_pair_astar.begin(); iter_map != instant_pair_astar.end(); iter_map++) {
 			string instant = iter_map->first;
-			vector<pair<string, double> > v_pair = iter_map->second;
+			vector<pair<string, string> > v_pair = iter_map->second;
 			cout<<"instant1 = "<<instant<<"\n";
 			for (size_t i = 0; i < v_pair.size(); i++) {
-				pair<string, double> p = v_pair.at(i);
+				pair<string, string> p = v_pair.at(i);
 				cout<<"\t"<<p.first<<", "<<p.second<<"\n";
 			}
 		}
 
 		cout<<"\n\n";
 
-		map<string, vector<pair<string, double> > >::iterator iter_map2;
+		map<string, vector<pair<string, string> > >::iterator iter_map2;
 		for (iter_map2 = instant_pair_ss.begin(); iter_map2 != instant_pair_ss.end(); iter_map2++) {
 			string instant = iter_map2->first;
-			vector<pair<string, double> > v_pair = iter_map2->second;
+			vector<pair<string, string> > v_pair = iter_map2->second;
 			cout<<"instant2 = "<<instant<<"\n";
 			for (size_t i = 0; i < v_pair.size(); i++) {
-				pair<string, double> p = v_pair.at(i);
+				pair<string, string> p = v_pair.at(i);
 				cout<<"\t"<<p.first<<", "<<p.second<<"\n";
 			}
 		}
