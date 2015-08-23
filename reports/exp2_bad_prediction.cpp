@@ -22,7 +22,7 @@ using namespace std;
 
 //enhance to read files from reportss_5000_probes -> Using global variables
 int NUM_PROBES = 500;
-string HEUR_TO_ANALYZE = "empty";
+int HEUR_TO_ANALYZE = 1;
 
 //less second parameter
 template <typename T1, typename T2>
@@ -396,9 +396,11 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	}
 	string sufix2 = algorithm2;
 	//Conver the number to string
-	stringstream text_string_probes;
+	stringstream text_string_probes, text_string_number_heur;
         text_string_probes<<NUM_PROBES;
+	text_string_number_heur<<HEUR_TO_ANALYZE;
 	string textProbes = text_string_probes.str();
+	string textNumberHeur = text_string_number_heur.str();
 
 	string model = "experiment_2_"+sufix1 + "_" + sufix2 + "_deep_" + textProbes;
 
@@ -409,11 +411,18 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
         }	
 
 	//info file: Collect files that were not executed correctly
-	ofstream info;
+	ofstream outputFile;
 	string infoFile = "/home/marvin/marvin/reports/" + model + "/report_info/report_info_" + textProbes + ".txt";
-	info.open(infoFile.c_str(), ios::out);
+	outputFile.open(infoFile.c_str(), ios::out);
 
-	
+	outputFile<<"\tExperiment 2:\t\tUsing "<<heuristic<<" heuristic - "<<textProbes;
+
+	outputFile<<left<<setw(24)<<"Domain";
+        outputFile<<right<<setw(15)<<"A*";
+        outputFile<<right<<setw(15)<<"ss error";
+        outputFile<<right<<setw(15)<<"n";
+        outputFile<<"\n"<<endl;
+
 	string look_instance_name = "instance_name:";
 	string look_astar_name = "A*:";
 	string look_ss_name = "ss:";
@@ -468,7 +477,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					}
 					//cout<<"next = "<<next<<"\n";	
 					if (next == look_ss_name) {
-						cout<<"look_ss_name = "<<next<<"\n";
+						//cout<<"look_ss_name = "<<next<<"\n";
 						fexp>>next;
 						
 						vector<string> pair_heur_value2;
@@ -492,34 +501,76 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 				}
 			}
 		}
+
+
+		//map to map all the heuristics in each instance
+		map<string, vector<pair<string, string> > > load_astar;
+
 		map<string, vector<pair<string, string> > >::iterator iter_map;
 		for (iter_map = instant_pair_astar.begin(); iter_map != instant_pair_astar.end(); iter_map++) {
 			string instant = iter_map->first;
 			vector<pair<string, string> > v_pair = iter_map->second;
-			cout<<"instant1 = "<<instant<<"\n";
+
+			//cout<<"instant1 = "<<instant<<"\n";
+			vector<pair<string, string> > v_pair_info;	
 			for (size_t i = 0; i < v_pair.size(); i++) {
 				pair<string, string> p = v_pair.at(i);
-				cout<<"\t"<<p.first<<", "<<p.second<<"\n";
+				string s = p.first;
+				string d = p.second;	
+				//cout<<"\t"<<s<<", "<<d<<"\n";
+				string t = s;
+				size_t f = t.find("_");
+				string heur = t.substr(f + 1, t.length());
+				//cout<<"heur = "<<heur<<"\n";
+				if (heur == "ipdb" || heur == "lmcut" || heur == "mands") {
+					//cout<<"heur1 = "<<heur<<"\n";
+					v_pair_info.push_back(pair<string, string>(heur, d));
+				}
 			}
+			load_astar.insert(pair<string, vector<pair<string, string> > >(instant, v_pair_info));
 		}
 
-		cout<<"\n\n";
+		//cout<<"\n\njumping\n\n";
 
 		map<string, vector<pair<string, string> > >::iterator iter_map2;
 		for (iter_map2 = instant_pair_ss.begin(); iter_map2 != instant_pair_ss.end(); iter_map2++) {
+			
 			string instant = iter_map2->first;
 			vector<pair<string, string> > v_pair = iter_map2->second;
-			cout<<"instant2 = "<<instant<<"\n";
+
+			//cout<<"instant2 = "<<instant<<"\n";
+			vector<pair<string, string> > v_pair_info;
 			for (size_t i = 0; i < v_pair.size(); i++) {
 				pair<string, string> p = v_pair.at(i);
-				cout<<"\t"<<p.first<<", "<<p.second<<"\n";
+				string s = p.first;
+				string d = p.second;
+				//cout<<"\t"<<s<<", "<<d<<"\n";
+				string t = s;
+				size_t f = t.find("_");
+				string heur = t.substr(f + 1, t.length());
+				//cout<<"heur = "<<heur<<"\n";
+				if (heur == "ipdb" || heur == "lmcut" || heur == "mands") {
+					//cout<<"heur2 = "<<heur<<"\n";
+					v_pair_info.push_back(pair<string, string>(heur, d));
+				}
+			}
+
+			cout<<"\tinner\n";
+			map<string, vector<pair<string, string> > >::iterator iter_info = load_astar.find(instant);
+			if (iter_info != load_astar.end()) {
+				vector<pair<string, string> > v_pair = iter_info->second;
+				for (size_t i = 0; i < v_pair.size(); i++) {
+					pair<string, string> p = v_pair.at(i);
+					string s = p.first;
+					string d = p.second;
+					cout<<s<<"\t"<<d<<"\n";
+				}
 			}
 		}
 
-
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
-	info.close();
+	outputFile.close();
 }
 
 
@@ -548,7 +599,6 @@ void create_report() {
 
 int main(int argc, char* argv[]) {
 	srand(time(NULL));
-	string heuristic_number_string;
 	if (argc < 3) {
 		cout<<"Error in: "<<argv[0]<<" - no passing the number of probes and the heuristic you want to compare.\n";
 		cout<<"Please enter the following parameters:.\n";
@@ -559,9 +609,11 @@ int main(int argc, char* argv[]) {
 		string number_probes = argv[1];
 		string heuristic_number_string = argv[2];
 		int n_probes = atoi(number_probes.c_str());
+		int heuristic_number = atoi(heuristic_number_string.c_str());
 		cout<<"n_probes = "<<n_probes<<"\n";
+		cout<<"heuristic_number = "<<heuristic_number;
 		NUM_PROBES = n_probes;
-		HEUR_TO_ANALYZE = heuristic_number_string;
+		HEUR_TO_ANALYZE = heuristic_number;
 	}
 
 	create_report();
