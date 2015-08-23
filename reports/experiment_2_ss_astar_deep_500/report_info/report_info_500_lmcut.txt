@@ -1,0 +1,20 @@
+	Experiment 2:		Using gapdb_deep heuristic - 500
+
+Domain                               A*       ss error            n
+
+blocks                      2.39089e+06    2.68279e+31             18
+barman-opt11-strips         7.44986e+06    9.16154e+28              4
+elevators-opt08-strips      1.17502e+07     3.7338e+19              7
+elevators-opt11-strips       1.5278e+07    5.22719e+19              5
+floortile-opt11-strips           702435    6.21105e+10              4
+nomystery-opt11-strips           267100    1.03783e+26              9
+openstacks-opt08-strips          1874.5         953648              2
+parcprinter-opt11-strips        1363.67    2.33125e+21              3
+scanalyzer-opt11-strips          334747    7.55436e+30              3
+sokoban-opt08-strips            1000.75    2.27145e+08              4
+sokoban-opt11-strips                861       0.938381              1
+transport-opt08-strips           594665    4.60306e+24              5
+transport-opt11-strips      1.48569e+06    1.15083e+25              2
+visitall-opt11-strips        8.1205e+06    3.18043e+43              8
+woodworking-opt08-strips    1.49993e+06    9.17535e+17              7
+woodworking-opt11-strips    4.81236e+06     3.2025e+18              2

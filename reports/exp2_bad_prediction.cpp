@@ -410,18 +410,26 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
            cout<<"Directory "<<report_info.c_str()<<" created."<<endl;
         }	
 
+	string report_heur;
+	if (textNumberHeur == "1") {
+		report_heur = "ipdb";
+	} else if (textNumberHeur == "2") {
+		report_heur = "lmcut";
+	} else if (textNumberHeur == "3") {
+		report_heur = "mands";
+	}
+
 	//info file: Collect files that were not executed correctly
 	ofstream outputFile;
-	string infoFile = "/home/marvin/marvin/reports/" + model + "/report_info/report_info_" + textProbes + ".txt";
+	string infoFile = "/home/marvin/marvin/reports/" + model + "/report_info/report_info_" + textProbes + "_" + report_heur + ".txt";
 	outputFile.open(infoFile.c_str(), ios::out);
 
-	outputFile<<"\tExperiment 2:\t\tUsing "<<heuristic<<" heuristic - "<<textProbes;
+	outputFile<<"\tExperiment 2:\t\tUsing "<<heuristic<<" heuristic - "<<textProbes<<"\n\n";
 
 	outputFile<<left<<setw(24)<<"Domain";
         outputFile<<right<<setw(15)<<"A*";
         outputFile<<right<<setw(15)<<"ss error";
-        outputFile<<right<<setw(15)<<"\n";
-        outputFile<<"\n"<<endl;
+        outputFile<<right<<setw(15)<<"n\n\n";
 
 	string look_instance_name = "instance_name:";
 	string look_astar_name = "A*:";
@@ -575,26 +583,17 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			}
 		}
 
-		string report_heur;
-		if (textNumberHeur == "1") {
-			report_heur = "ipdb";
-		} else if (textNumberHeur == "2") {
-			report_heur = "lmcut";
-		} else if (textNumberHeur == "3") {
-			report_heur = "mands";
-		}
+		map<string, vector<pair<double, double> > > capture_info;
 
-
-		double sum_pi = 0,
-			astar_exp_average = 0, astar_exp_sum_total = 0, ss_error_average = 0;
-		int predictions = 0, number_instances = 0;
 		map<string, vector<pair<string, string> > >::iterator i_print;
 		for (i_print = construct_info_heur.begin(); i_print != construct_info_heur.end(); i_print++) {
 			string instant = i_print->first;
 			vector<pair<string, string> > order_pair = i_print->second;
 			int size = order_pair.size();
 			//cout<<"size = "<<size<<"\n";
+			vector<pair<double, double> > astar_ss;
 			if (size == 6) {
+				double value_a  = 0, pred_ss = 0;
 				for (size_t i = 0; i < size; i++) {
 					pair<string, string> p = order_pair.at(i);
 					string s = p.first;
@@ -610,32 +609,52 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					//cout<<"new_heur = "<<new_heur<<"\n";
 
 					if (report_heur == new_heur) {
-						double value_a  = 0, pred_ss = 0;
 						if (new_algorithm == "A*") {
+							//cout<<"a_d = "<<d<<"\n";
 							value_a = atof(d.c_str());
-							cout<<"value_a = "<<value_a<<"\n";
 						} else if (new_algorithm == "SS") {
+							//cout<<"d_ss = "<<d<<"\n";
 							pred_ss = atof(d.c_str());
-							cout<<"pred_ss = "<<pred_ss<<"\n";
 						}
-						astar_exp_sum_total += value_a;
-						double pi = 0;
-						pi = abs(pred_ss - value_a)/value_a;
-						cout<<"pi = "<<pi<<"\n";
-						sum_pi += pi;
-						predictions++;
 					}
 				}
-				number_instances++;
+				astar_ss.push_back(pair<double, double>(value_a, pred_ss));
 			}
+			capture_info.insert(pair<string, vector<pair<double, double> > >(instant, astar_ss));
 		}
 
-		if (number_instances > 0) {
-			astar_exp_average = astar_exp_sum_total/predictions;
-			cout<<"predictions = "<<predictions<<"\n";
-			ss_error_average = sum_pi/predictions;
-			cout<<"sum_pi = "<<sum_pi<<"\n";
 
+		double sum_pi = 0, astar_exp_average = 0, astar_exp_sum_total = 0, ss_error_average = 0;
+		int number_instances = 0;
+		map<string, vector<pair<double, double> > >::iterator iter_loop;
+		for (iter_loop = capture_info.begin(); iter_loop != capture_info.end(); iter_loop++) {
+			string instant = iter_loop->first;
+			vector<pair<double, double> > vp = iter_loop->second;
+			for (size_t i = 0; i < vp.size(); i++) {
+				pair<double, double> p = vp.at(i);
+				double exp_a = p.first;
+				double pred_ss = p.second;
+
+				cout<<"exp_a, pred_ss = "<<exp_a<<", "<<pred_ss<<"\n";
+				astar_exp_sum_total += exp_a;
+				double pi = 0;
+				double diff = pred_ss - exp_a;
+				cout<<"diff = "<<diff<<"\n";
+				pi = abs(pred_ss - exp_a)/exp_a;
+				//cout<<"pi = "<<pi<<"\n\n";
+				sum_pi += pi;
+			}
+			number_instances++;
+			cout<<"\n";
+		}
+
+		//cout<<"number_instances = "<<number_instances<<"\n";
+		if (number_instances > 0) {
+			astar_exp_average = astar_exp_sum_total/number_instances;
+			ss_error_average = sum_pi/number_instances;
+			//cout<<"sum_pi = "<<sum_pi<<"\n";
+			//cout<<"number_instances = "<<number_instances<<"\n";
+			//cout<<"ss_error_average = "<<ss_error_average<<"\n";
 			outputFile<<left<<setw(24)<<domain;
 			outputFile<<right<<setw(15)<<astar_exp_average;
 			outputFile<<right<<setw(15)<<ss_error_average;
