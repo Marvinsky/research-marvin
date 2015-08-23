@@ -1,4 +1,4 @@
-	Experiment 2:		Using gapdb_deep heuristic - 500
+	Experiment 2:		Using lmcut heuristic - 500 in gapdb-deep.
 
 Domain                               A*       ss error            n
 

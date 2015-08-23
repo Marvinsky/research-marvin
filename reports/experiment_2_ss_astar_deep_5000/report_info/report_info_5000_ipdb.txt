@@ -1,0 +1,14 @@
+	Experiment 2:		Using ipdb heuristic - 5000 in gapdb-deep.
+
+Domain                               A*       ss error            n
+
+blocks                      2.07455e+06    7.50441e+10             18
+floortile-opt11-strips      1.86687e+07    2.04189e+14              3
+nomystery-opt11-strips          31717.2    1.81088e+14              6
+openstacks-opt08-strips             597        11958.8              1
+parcprinter-opt11-strips            321        807.264              2
+scanalyzer-opt11-strips             122        1759.04              1
+sokoban-opt08-strips                718    2.70588e+07              1
+transport-opt08-strips              664    2.48594e+75              3
+visitall-opt11-strips            279674    1.25951e+15              6
+woodworking-opt08-strips          14721    1.23656e+14              3

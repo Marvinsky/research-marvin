@@ -1,0 +1,14 @@
+	Experiment 2:		Using mands heuristic - 5000 in gapdb-deep.
+
+Domain                               A*       ss error            n
+
+blocks                      2.96963e+06    1.01954e+10             18
+floortile-opt11-strips      4.34757e+07    1.02345e+14              3
+nomystery-opt11-strips           2036.5    3.35172e+08              6
+openstacks-opt08-strips             597        11958.8              1
+parcprinter-opt11-strips            250        286.121              2
+scanalyzer-opt11-strips             118        1789.67              1
+sokoban-opt08-strips                369    2.35906e+07              1
+transport-opt08-strips              658    3.60438e+51              3
+visitall-opt11-strips            279669    2.04682e+14              6
+woodworking-opt08-strips          14721    1.23652e+14              3

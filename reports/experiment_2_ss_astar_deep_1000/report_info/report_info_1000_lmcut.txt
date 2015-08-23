@@ -1,0 +1,19 @@
+	Experiment 2:		Using lmcut heuristic - 1000 in gapdb-deep.
+
+Domain                               A*       ss error            n
+
+blocks                      2.39089e+06    3.74263e+22             18
+barman-opt11-strips         7.81293e+06    5.13026e+28              3
+elevators-opt08-strips      2.81472e+06    2.61439e+08              1
+elevators-opt11-strips      1.23612e+07    1.18471e+09              2
+floortile-opt11-strips           702435    2.20641e+11              4
+nomystery-opt11-strips           267100    2.37646e+20              9
+openstacks-opt08-strips          1874.5         723382              2
+parcprinter-opt11-strips            451        1229.43              2
+scanalyzer-opt11-strips          334747    1.37963e+30              3
+sokoban-opt08-strips            1047.33    1.01323e+08              3
+transport-opt08-strips            25889    1.85683e+25              4
+transport-opt11-strips           101616    7.67181e+21              1
+visitall-opt11-strips        8.1205e+06    1.05115e+30              8
+woodworking-opt08-strips         640203    8.04025e+18              5
+woodworking-opt11-strips    4.81236e+06    3.08444e+19              2

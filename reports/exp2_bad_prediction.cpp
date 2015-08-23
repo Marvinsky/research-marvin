@@ -424,7 +424,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	string infoFile = "/home/marvin/marvin/reports/" + model + "/report_info/report_info_" + textProbes + "_" + report_heur + ".txt";
 	outputFile.open(infoFile.c_str(), ios::out);
 
-	outputFile<<"\tExperiment 2:\t\tUsing "<<heuristic<<" heuristic - "<<textProbes<<"\n\n";
+	outputFile<<"\tExperiment 2:\t\tUsing "<<report_heur<<" heuristic - "<<textProbes<<" in gapdb-deep.\n\n";
 
 	outputFile<<left<<setw(24)<<"Domain";
         outputFile<<right<<setw(15)<<"A*";
