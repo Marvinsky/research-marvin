@@ -1,0 +1,21 @@
+\begin{table}[]
+\centering
+\caption{Poor prediction of SS against A* lmcut}
+\label{my-label}
+\begin{tabular}{l|l|l|l}
+\hline
+\multicolumn{4}{l}{Experiment 2: Using lmcut heuristic - 5000 in gapdb\_deep} \\ \hline
+Domain& A*& ss error& n \\ \hline
+
+blocks& 2.39089e+06& 1.46291e+10& 18\\ \hline
+floortile-opt11-strips& 936580& 3.14975e+11& 3\\ \hline
+nomystery-opt11-strips& 310066& 1.2419e+11& 6\\ \hline
+openstacks-opt08-strips& 597& 11958.8& 1\\ \hline
+parcprinter-opt11-strips& 451& 1293.42& 2\\ \hline
+scanalyzer-opt11-strips& 122& 1847.83& 1\\ \hline
+sokoban-opt08-strips& 369& 3.21797e+07& 1\\ \hline
+transport-opt08-strips& 646.667& 3.64972e+51& 3\\ \hline
+visitall-opt11-strips& 279545& 2.10612e+14& 6\\ \hline
+woodworking-opt08-strips& 14723& 2.01874e+14& 3\\ \hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,27 @@
+\begin{table}[]
+\centering
+\caption{Poor prediction of SS against A* ipdb}
+\label{my-label}
+\begin{tabular}{l|l|l|l}
+\hline
+\multicolumn{4}{l}{Experiment 2: Using ipdb heuristic - 500 in gapdb\_deep} \\ \hline
+Domain& A*& ss error& n \\ \hline
+
+blocks& 2.07455e+06& 9.20794e+31& 18\\ \hline
+barman-opt11-strips& 1.71877e+07& 5.84137e+32& 4\\ \hline
+elevators-opt08-strips& 1.39911e+07& 9.2879e+23& 7\\ \hline
+elevators-opt11-strips& 1.83142e+07& 1.3003e+24& 5\\ \hline
+floortile-opt11-strips& 1.40015e+07& 7.52158e+16& 4\\ \hline
+nomystery-opt11-strips& 40169.7& 1.15599e+34& 9\\ \hline
+openstacks-opt08-strips& 1874.5& 999720& 2\\ \hline
+parcprinter-opt11-strips& 1157& 2.56184e+22& 3\\ \hline
+scanalyzer-opt11-strips& 337894& 3.71451e+32& 3\\ \hline
+sokoban-opt08-strips& 1136.25& 3.48709e+08& 4\\ \hline
+sokoban-opt11-strips& 861& 0.938381& 1\\ \hline
+transport-opt08-strips& 755974& 1.90383e+39& 5\\ \hline
+transport-opt11-strips& 1.88894e+06& 2.91167e+38& 2\\ \hline
+visitall-opt11-strips& 8.12101e+06& 3.18043e+43& 8\\ \hline
+woodworking-opt08-strips& 1.50059e+06& 8.65693e+17& 7\\ \hline
+woodworking-opt11-strips& 4.81226e+06& 3.02819e+18& 2\\ \hline
+\end{tabular}
+\end{table}

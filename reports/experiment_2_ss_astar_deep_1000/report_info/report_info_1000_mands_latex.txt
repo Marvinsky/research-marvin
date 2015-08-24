@@ -1,0 +1,26 @@
+\begin{table}[]
+\centering
+\caption{Poor prediction of SS against A* mands}
+\label{my-label}
+\begin{tabular}{l|l|l|l}
+\hline
+\multicolumn{4}{l}{Experiment 2: Using mands heuristic - 1000 in gapdb\_deep} \\ \hline
+Domain& A*& ss error& n \\ \hline
+
+blocks& 2.96963e+06& 1.03608e+22& 18\\ \hline
+barman-opt11-strips& 2.66771e+07& 3.79672e+33& 3\\ \hline
+elevators-opt08-strips& 9.62062e+06& 3.14204e+13& 1\\ \hline
+elevators-opt11-strips& 1.84423e+07& 2.26481e+17& 2\\ \hline
+floortile-opt11-strips& 3.26068e+07& 1.6492e+14& 4\\ \hline
+nomystery-opt11-strips& 8236& 1.3551e+21& 9\\ \hline
+openstacks-opt08-strips& 1874.5& 337928& 2\\ \hline
+parcprinter-opt11-strips& 250& 274.011& 2\\ \hline
+scanalyzer-opt11-strips& 337893& 5.27305e+29& 3\\ \hline
+sokoban-opt08-strips& 516.333& 8.92015e+07& 3\\ \hline
+transport-opt08-strips& 22291.8& 9.32413e+25& 4\\ \hline
+transport-opt11-strips& 87193& 3.01684e+26& 1\\ \hline
+visitall-opt11-strips& 8.121e+06& 1.06666e+30& 8\\ \hline
+woodworking-opt08-strips& 2.08437e+06& 2.93654e+18& 5\\ \hline
+woodworking-opt11-strips& 1.77967e+07& 1.21646e+19& 2\\ \hline
+\end{tabular}
+\end{table}

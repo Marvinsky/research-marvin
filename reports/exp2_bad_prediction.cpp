@@ -23,6 +23,7 @@ using namespace std;
 //enhance to read files from reportss_5000_probes -> Using global variables
 int NUM_PROBES = 500;
 int HEUR_TO_ANALYZE = 1;
+bool LATEX = false;
 
 //less second parameter
 template <typename T1, typename T2>
@@ -421,15 +422,45 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 	//info file: Collect files that were not executed correctly
 	ofstream outputFile;
-	string infoFile = "/home/marvin/marvin/reports/" + model + "/report_info/report_info_" + textProbes + "_" + report_heur + ".txt";
+	string infoFile;
+	if (LATEX) {
+		infoFile = "/home/marvin/marvin/reports/" + model + "/report_info/report_info_" + textProbes + "_" + report_heur + "_latex.txt";
+	} else {
+		infoFile = "/home/marvin/marvin/reports/" + model + "/report_info/report_info_" + textProbes + "_" + report_heur + ".txt";
+	}
+
 	outputFile.open(infoFile.c_str(), ios::out);
 
-	outputFile<<"\tExperiment 2:\t\tUsing "<<report_heur<<" heuristic - "<<textProbes<<" in gapdb-deep.\n\n";
 
-	outputFile<<left<<setw(24)<<"Domain";
-        outputFile<<right<<setw(15)<<"A*";
-        outputFile<<right<<setw(15)<<"ss error";
-        outputFile<<right<<setw(15)<<"n\n\n";
+	if (LATEX) {
+		
+		cout<<"\\begin{table}[]\n";
+		outputFile<<"\\begin{table}[]\n";
+		cout<<"\\centering\n";
+		outputFile<<"\\centering\n";
+		cout<<"\\caption{Poor prediction of SS against A* "<<report_heur<<"}\n";
+		outputFile<<"\\caption{Poor prediction of SS against A* "<<report_heur<<"}\n";
+		cout<<"\\label{my-label}\n";
+		outputFile<<"\\label{my-label}\n";
+		cout<<"\\begin{tabular}{l|l|l|l}\n";
+		outputFile<<"\\begin{tabular}{l|l|l|l}\n";
+		cout<<"\\hline\n";
+		outputFile<<"\\hline\n";
+		cout<<"\\multicolumn{4}{l}{Experiment 2: Using "<<report_heur<<" heuristic - "<<textProbes<<" in gapdb\\_deep} \\\\ \\hline\n";
+		outputFile<<"\\multicolumn{4}{l}{Experiment 2: Using "<<report_heur<<" heuristic - "<<textProbes<<" in gapdb\\_deep} \\\\ \\hline\n";
+
+		outputFile<<"Domain";
+        	outputFile<<"& A*";
+        	outputFile<<"& ss error";
+        	outputFile<<"& n \\\\ \\hline\n\n";
+	} else {
+		outputFile<<"\tExperiment 2:\t\tUsing "<<report_heur<<" heuristic - "<<textProbes<<" in gapdb-deep.\n\n";
+		
+		outputFile<<left<<setw(24)<<"Domain";
+        	outputFile<<right<<setw(15)<<"A*";
+        	outputFile<<right<<setw(15)<<"ss error";
+        	outputFile<<right<<setw(15)<<"n\n\n";
+	}
 
 	string look_instance_name = "instance_name:";
 	string look_astar_name = "A*:";
@@ -655,18 +686,34 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			//cout<<"sum_pi = "<<sum_pi<<"\n";
 			//cout<<"number_instances = "<<number_instances<<"\n";
 			//cout<<"ss_error_average = "<<ss_error_average<<"\n";
-			outputFile<<left<<setw(24)<<domain;
-			outputFile<<right<<setw(15)<<astar_exp_average;
-			outputFile<<right<<setw(15)<<ss_error_average;
-			outputFile<<right<<setw(15)<<number_instances;
-			outputFile<<"\n";
+
+			if (LATEX)  {
+				outputFile<<domain;
+				outputFile<<"& "<<astar_exp_average;
+				outputFile<<"& "<<ss_error_average;
+				outputFile<<"& "<<number_instances;
+				outputFile<<"\\\\ \\hline\n";
+
+			} else {
+				outputFile<<left<<setw(24)<<domain;
+				outputFile<<right<<setw(15)<<astar_exp_average;
+				outputFile<<right<<setw(15)<<ss_error_average;
+				outputFile<<right<<setw(15)<<number_instances;
+				outputFile<<"\n";
+			}
 		}
 
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
+	if (LATEX) {
+		cout<<"\\end{tabular}\n";
+		outputFile<<"\\end{tabular}\n";
+		cout<<"\\end{table}\n";
+		outputFile<<"\\end{table}\n";
+	}
+
 	outputFile.close();
 }
-
 
 void create_report() {
 	ifstream readFile("h/report/instance360_deep.txt");
@@ -685,7 +732,7 @@ void create_report() {
 	int counter = 0;
 
 	do {
-                readFile>>heuristic;		
+                readFile>>heuristic;
 		create_report1(heuristic, algorithm1, algorithm2, quantity_total_opt);
 		counter++;
 	} while (counter < total_algorithms); 
@@ -699,14 +746,24 @@ int main(int argc, char* argv[]) {
 		cout<<"\t1.- Number of probes 1, 10, 100, 500, 1000, 5000\n";
 		cout<<"\t2.- The number of heuristic you want to analyze: From 1 to 3.\n";
 		cout<<"\t\t- 1 == ipdb, 2 == lmcut, 3 == mands\n";
+		cout<<"\t3.- Write in latex code. Yes(y)/No(n) - (Optional)\n";
 		return 1;
 	} else {
 		string number_probes = argv[1];
 		string heuristic_number_string = argv[2];
+		if (argc == 4) {
+			string yes_no = argv[3];
+			if (yes_no == "y") {
+				LATEX = true;
+			} else {
+				LATEX = false;
+			}
+		}
 		int n_probes = atoi(number_probes.c_str());
 		int heuristic_number = atoi(heuristic_number_string.c_str());
 		cout<<"n_probes = "<<n_probes<<"\n";
 		cout<<"heuristic_number = "<<heuristic_number;
+		
 		NUM_PROBES = n_probes;
 		HEUR_TO_ANALYZE = heuristic_number;
 	}

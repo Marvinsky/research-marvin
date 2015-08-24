@@ -1,0 +1,27 @@
+\begin{table}[]
+\centering
+\caption{Poor prediction of SS against A* lmcut}
+\label{my-label}
+\begin{tabular}{l|l|l|l}
+\hline
+\multicolumn{4}{l}{Experiment 2: Using lmcut heuristic - 100 in gapdb\_deep} \\ \hline
+Domain& A*& ss error& n \\ \hline
+
+blocks& 2.39089e+06& 3.96493e+66& 18\\ \hline
+barman-opt11-strips& 7.81293e+06& 2.52617e+29& 3\\ \hline
+elevators-opt08-strips& 1.17502e+07& 5.40755e+21& 7\\ \hline
+elevators-opt11-strips& 1.5278e+07& 7.57053e+21& 5\\ \hline
+floortile-opt11-strips& 702435& 4.59218e+15& 4\\ \hline
+nomystery-opt11-strips& 267100& 3.69522e+69& 9\\ \hline
+openstacks-opt08-strips& 1874.5& 5.18137e+08& 2\\ \hline
+parcprinter-opt11-strips& 1363.67& 1.9171e+21& 3\\ \hline
+scanalyzer-opt11-strips& 334747& 1.0108e+37& 3\\ \hline
+sokoban-opt08-strips& 1000.75& 9.94581e+15& 4\\ \hline
+sokoban-opt11-strips& 861& 0.940081& 1\\ \hline
+transport-opt08-strips& 594665& 1.9785e+19& 5\\ \hline
+transport-opt11-strips& 1.48569e+06& 2.36711e+19& 2\\ \hline
+visitall-opt11-strips& 8.1205e+06& 9.1764e+105& 8\\ \hline
+woodworking-opt08-strips& 1.49993e+06& 3.87297e+20& 7\\ \hline
+woodworking-opt11-strips& 4.81236e+06& 4.26917e+19& 2\\ \hline
+\end{tabular}
+\end{table}
