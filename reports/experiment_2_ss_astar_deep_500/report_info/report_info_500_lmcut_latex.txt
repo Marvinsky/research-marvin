@@ -7,21 +7,21 @@
 \multicolumn{4}{l}{Experiment 2: Using lmcut heuristic - 500 in gapdb\_deep} \\ \hline
 Domain& A*& ss error& n \\ \hline
 
-blocks& 2.39089e+06& 2.68279e+31& 18\\ \hline
-barman-opt11-strips& 7.44986e+06& 9.16154e+28& 4\\ \hline
-elevators-opt08-strips& 1.17502e+07& 3.7338e+19& 7\\ \hline
-elevators-opt11-strips& 1.5278e+07& 5.22719e+19& 5\\ \hline
-floortile-opt11-strips& 702435& 6.21105e+10& 4\\ \hline
-nomystery-opt11-strips& 267100& 1.03783e+26& 9\\ \hline
-openstacks-opt08-strips& 1874.5& 953648& 2\\ \hline
+blocks& 2.39089e+06& 6.08255e+32& 18\\ \hline
+barman-opt11-strips& 7.44986e+06& 2.20574e+30& 4\\ \hline
+floortile-opt11-strips& 702435& 4.67785e+14& 4\\ \hline
+nomystery-opt11-strips& 267100& 6.14029e+19& 9\\ \hline
+openstacks-opt08-strips& 693778& 317883& 6\\ \hline
+openstacks-opt11-strips& 570099& 0.677425& 4\\ \hline
 parcprinter-opt11-strips& 1363.67& 2.33125e+21& 3\\ \hline
-scanalyzer-opt11-strips& 334747& 7.55436e+30& 3\\ \hline
-sokoban-opt08-strips& 1000.75& 2.27145e+08& 4\\ \hline
-sokoban-opt11-strips& 861& 0.938381& 1\\ \hline
-transport-opt08-strips& 594665& 4.60306e+24& 5\\ \hline
+pegsol-opt11-strips& 398221& 6859.86& 16\\ \hline
+scanalyzer-opt11-strips& 334747& 7.5812e+31& 3\\ \hline
+sokoban-opt08-strips& 37409.8& 3.76067e+07& 11\\ \hline
+sokoban-opt11-strips& 45374& 2.74482e+06& 9\\ \hline
+transport-opt08-strips& 594665& 4.60308e+24& 5\\ \hline
 transport-opt11-strips& 1.48569e+06& 1.15083e+25& 2\\ \hline
-visitall-opt11-strips& 8.1205e+06& 3.18043e+43& 8\\ \hline
-woodworking-opt08-strips& 1.49993e+06& 9.17535e+17& 7\\ \hline
-woodworking-opt11-strips& 4.81236e+06& 3.2025e+18& 2\\ \hline
+visitall-opt11-strips& 253195& 1.68583e+46& 8\\ \hline
+woodworking-opt08-strips& 1.31244e+06& 1.03805e+18& 8\\ \hline
+woodworking-opt11-strips& 3.20824e+06& 2.76233e+18& 3\\ \hline
 \end{tabular}
 \end{table}

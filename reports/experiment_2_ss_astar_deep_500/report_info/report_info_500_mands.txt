@@ -2,19 +2,19 @@
 
 Domain                               A*       ss error            n
 
-blocks                      2.96963e+06    1.01528e+31             18
-barman-opt11-strips         2.67042e+07    2.08212e+36              4
-elevators-opt08-strips      1.58876e+07    6.50833e+26              7
-elevators-opt11-strips       2.0719e+07    9.11162e+26              5
-floortile-opt11-strips      3.26068e+07    7.36763e+16              4
-nomystery-opt11-strips             8236    2.02873e+26              9
-openstacks-opt08-strips          1874.5         299017              2
+blocks                      2.53682e+06    2.39311e+32             18
+barman-opt11-strips          6.6675e+06    1.26272e+36              4
+floortile-opt11-strips      4.46132e+06    1.90897e+12              4
+nomystery-opt11-strips             8236    1.20029e+20              9
+openstacks-opt08-strips          693699        99672.9              6
+openstacks-opt11-strips          569984       0.672143              4
 parcprinter-opt11-strips        766.333    6.35555e+20              3
-scanalyzer-opt11-strips          337893    1.76874e+29              3
-sokoban-opt08-strips              602.5    4.08107e+08              4
-sokoban-opt11-strips                861       0.938381              1
-transport-opt08-strips           741293    2.72958e+37              5
-transport-opt11-strips      1.85225e+06    6.82396e+37              2
-visitall-opt11-strips         8.121e+06    3.22741e+43              8
-woodworking-opt08-strips    5.48249e+06    1.21766e+18              7
-woodworking-opt11-strips    1.77967e+07    4.26012e+18              2
+pegsol-opt11-strips              933430        779.017             16
+scanalyzer-opt11-strips          337833    2.42409e+31              3
+sokoban-opt08-strips             605532    1.80306e+08             11
+sokoban-opt11-strips             739775    5.60316e+08              9
+transport-opt08-strips           693753    5.97997e+28              5
+transport-opt11-strips       1.7334e+06    1.49499e+29              2
+visitall-opt11-strips            253521    1.71074e+46              8
+woodworking-opt08-strips    1.31332e+06    9.31361e+17              8
+woodworking-opt11-strips    3.20687e+06    2.48257e+18              3

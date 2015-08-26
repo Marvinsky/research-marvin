@@ -1,3 +1,517 @@
 Experiment 2: pegsol-opt11-strips using gapdb_deep heuristic with 500 probes
 
-pegsol-opt11-strips 
+
+
+instance_name: p01_F_137813242.csv
+
+A*:	{
+		(0_lmcut,196)
+		(1_ipdb,481)
+		(2_mands,369)
+	}
+ss:	{
+		(0_lmcut,561.56)
+		(1_ipdb,653.888)
+		(2_mands,653.888)
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	0.407484	0.531165
+	2.45408	1	1.30352
+	1.88265	0.767152	1
+
+-ss h1/h2
+	1	0.858802	0.858802
+	1.16441	1	1
+	1.16441	1	1
+
+Measure_2:
+- The heuristics that have the similar ratio are: (diff = 0.5)
+	(hss1    ,hss2    )	(ha1     ,ha2     )	(vss1    ,vss2    )	(va1     ,va2     ):	fracss	-	fracastar	=	diff
+	(1_ipdb, 2_mands)	(1_ipdb, 2_mands)	(653.888, 653.888)	(481, 369)	1	-	1.30352	=	-0.303523
+	(2_mands, 1_ipdb)	(2_mands, 1_ipdb)	(653.888, 653.888)	(369, 481)	1	-	0.767152	=	0.232848
+	(0_lmcut, 2_mands)	(0_lmcut, 2_mands)	(561.56, 653.888)	(196, 369)	0.858802	-	0.531165	=	0.327636
+	(0_lmcut, 1_ipdb)	(0_lmcut, 1_ipdb)	(561.56, 653.888)	(196, 481)	0.858802	-	0.407484	=	0.451317
+
+
+
+instance_name: p02_F_9.csv
+
+A*:	{
+		(0_lmcut,331201)
+		(1_ipdb,566008)
+		(2_mands,534024)
+	}
+ss:	{
+		(0_lmcut,4.08447e+07)
+		(1_ipdb,1.01977e+08)
+		(2_mands,5.00505e+07)
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	0.585153	0.620199
+	1.70896	1	1.05989
+	1.61239	0.943492	1
+
+-ss h1/h2
+	1	0.400529	0.81607
+	2.4967	1	2.03748
+	1.22539	0.490802	1
+
+Measure_2:
+- The heuristics that have the similar ratio are: (diff = 0.5)
+	(hss1    ,hss2    )	(ha1     ,ha2     )	(vss1    ,vss2    )	(va1     ,va2     ):	fracss	-	fracastar	=	diff
+	(2_mands, 1_ipdb)	(2_mands, 1_ipdb)	(5.00505e+07, 1.01977e+08)	(534024, 566008)	0.490802	-	0.943492	=	-0.45269
+	(2_mands, 0_lmcut)	(2_mands, 0_lmcut)	(5.00505e+07, 4.08447e+07)	(534024, 331201)	1.22539	-	1.61239	=	-0.387001
+	(0_lmcut, 1_ipdb)	(0_lmcut, 1_ipdb)	(4.08447e+07, 1.01977e+08)	(331201, 566008)	0.400529	-	0.585153	=	-0.184624
+	(0_lmcut, 2_mands)	(0_lmcut, 2_mands)	(4.08447e+07, 5.00505e+07)	(331201, 534024)	0.81607	-	0.620199	=	0.195871
+
+
+
+instance_name: p03_F_13.csv
+
+A*:	{
+		(0_lmcut,76583)
+		(1_ipdb,122117)
+		(2_mands,123663)
+	}
+ss:	{
+		(0_lmcut,3.5593e+07)
+		(1_ipdb,4.32706e+07)
+		(2_mands,4.28736e+07)
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	0.627128	0.619288
+	1.59457	1	0.987498
+	1.61476	1.01266	1
+
+-ss h1/h2
+	1	0.822568	0.830184
+	1.21571	1	1.00926
+	1.20455	0.990826	1
+
+Measure_2:
+- The heuristics that have the similar ratio are: (diff = 0.5)
+	(hss1    ,hss2    )	(ha1     ,ha2     )	(vss1    ,vss2    )	(va1     ,va2     ):	fracss	-	fracastar	=	diff
+	(2_mands, 0_lmcut)	(2_mands, 0_lmcut)	(4.28736e+07, 3.5593e+07)	(123663, 76583)	1.20455	-	1.61476	=	-0.410206
+	(1_ipdb, 0_lmcut)	(1_ipdb, 0_lmcut)	(4.32706e+07, 3.5593e+07)	(122117, 76583)	1.21571	-	1.59457	=	-0.378865
+	(2_mands, 1_ipdb)	(2_mands, 1_ipdb)	(4.28736e+07, 4.32706e+07)	(123663, 122117)	0.990826	-	1.01266	=	-0.0218343
+	(1_ipdb, 2_mands)	(1_ipdb, 2_mands)	(4.32706e+07, 4.28736e+07)	(122117, 123663)	1.00926	-	0.987498	=	0.021761
+	(0_lmcut, 1_ipdb)	(0_lmcut, 1_ipdb)	(3.5593e+07, 4.32706e+07)	(76583, 122117)	0.822568	-	0.627128	=	0.19544
+	(0_lmcut, 2_mands)	(0_lmcut, 2_mands)	(3.5593e+07, 4.28736e+07)	(76583, 123663)	0.830184	-	0.619288	=	0.210896
+
+
+
+instance_name: p04_F_8.csv
+
+A*:	{
+		(0_lmcut,246310)
+		(1_ipdb,485315)
+		(2_mands,475214)
+	}
+ss:	{
+		(0_lmcut,9.69338e+06)
+		(1_ipdb,2.3112e+07)
+		(2_mands,8.19068e+06)
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	0.507526	0.518314
+	1.97034	1	1.02126
+	1.92933	0.979187	1
+
+-ss h1/h2
+	1	0.419409	1.18346
+	2.38431	1	2.82175
+	0.844977	0.35439	1
+
+Measure_2:
+- The heuristics that have the similar ratio are: (diff = 0.5)
+	(hss1    ,hss2    )	(ha1     ,ha2     )	(vss1    ,vss2    )	(va1     ,va2     ):	fracss	-	fracastar	=	diff
+	(0_lmcut, 1_ipdb)	(0_lmcut, 1_ipdb)	(9.69338e+06, 2.3112e+07)	(246310, 485315)	0.419409	-	0.507526	=	-0.0881175
+	(1_ipdb, 0_lmcut)	(1_ipdb, 0_lmcut)	(2.3112e+07, 9.69338e+06)	(485315, 246310)	2.38431	-	1.97034	=	0.413968
+
+
+
+instance_name: p05_F_137468436.csv
+
+A*:	{
+		(0_lmcut,43867)
+		(1_ipdb,121455)
+		(2_mands,132223)
+	}
+ss:	{
+		(0_lmcut,8.60418e+06)
+		(1_ipdb,9.8936e+06)
+		(2_mands,9.8936e+06)
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	0.361179	0.331765
+	2.76871	1	0.918562
+	3.01418	1.08866	1
+
+-ss h1/h2
+	1	0.869671	0.869671
+	1.14986	1	1
+	1.14986	1	1
+
+Measure_2:
+- The heuristics that have the similar ratio are: (diff = 0.5)
+	(hss1    ,hss2    )	(ha1     ,ha2     )	(vss1    ,vss2    )	(va1     ,va2     ):	fracss	-	fracastar	=	diff
+	(2_mands, 1_ipdb)	(2_mands, 1_ipdb)	(9.8936e+06, 9.8936e+06)	(132223, 121455)	1	-	1.08866	=	-0.0886584
+	(1_ipdb, 2_mands)	(1_ipdb, 2_mands)	(9.8936e+06, 9.8936e+06)	(121455, 132223)	1	-	0.918562	=	0.0814382
+
+
+
+instance_name: p06_F_9.csv
+
+A*:	{
+		(0_lmcut,214052)
+		(1_ipdb,446489)
+		(2_mands,396358)
+	}
+ss:	{
+		(0_lmcut,3.68711e+07)
+		(1_ipdb,7.88147e+07)
+		(2_mands,3.9767e+07)
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	0.479412	0.540047
+	2.08589	1	1.12648
+	1.85169	0.887722	1
+
+-ss h1/h2
+	1	0.467821	0.927179
+	2.13757	1	1.98191
+	1.07854	0.504564	1
+
+Measure_2:
+- The heuristics that have the similar ratio are: (diff = 0.5)
+	(hss1    ,hss2    )	(ha1     ,ha2     )	(vss1    ,vss2    )	(va1     ,va2     ):	fracss	-	fracastar	=	diff
+	(2_mands, 1_ipdb)	(2_mands, 1_ipdb)	(3.9767e+07, 7.88147e+07)	(396358, 446489)	0.504564	-	0.887722	=	-0.383158
+	(0_lmcut, 1_ipdb)	(0_lmcut, 1_ipdb)	(3.68711e+07, 7.88147e+07)	(214052, 446489)	0.467821	-	0.479412	=	-0.0115911
+	(1_ipdb, 0_lmcut)	(1_ipdb, 0_lmcut)	(7.88147e+07, 3.68711e+07)	(446489, 214052)	2.13757	-	2.08589	=	0.0516815
+	(0_lmcut, 2_mands)	(0_lmcut, 2_mands)	(3.68711e+07, 3.9767e+07)	(214052, 396358)	0.927179	-	0.540047	=	0.387131
+
+
+
+instance_name: p07_F_9.csv
+
+A*:	{
+		(0_lmcut,326381)
+		(1_ipdb,397826)
+		(2_mands,486755)
+	}
+ss:	{
+		(0_lmcut,3.7418e+07)
+		(1_ipdb,5.29774e+07)
+		(2_mands,4.44724e+07)
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	0.820411	0.670524
+	1.2189	1	0.817302
+	1.49137	1.22354	1
+
+-ss h1/h2
+	1	0.7063	0.841375
+	1.41583	1	1.19124
+	1.18853	0.839459	1
+
+Measure_2:
+- The heuristics that have the similar ratio are: (diff = 0.5)
+	(hss1    ,hss2    )	(ha1     ,ha2     )	(vss1    ,vss2    )	(va1     ,va2     ):	fracss	-	fracastar	=	diff
+	(2_mands, 1_ipdb)	(2_mands, 1_ipdb)	(4.44724e+07, 5.29774e+07)	(486755, 397826)	0.839459	-	1.22354	=	-0.384079
+	(2_mands, 0_lmcut)	(2_mands, 0_lmcut)	(4.44724e+07, 3.7418e+07)	(486755, 326381)	1.18853	-	1.49137	=	-0.30284
+	(0_lmcut, 1_ipdb)	(0_lmcut, 1_ipdb)	(3.7418e+07, 5.29774e+07)	(326381, 397826)	0.7063	-	0.820411	=	-0.114112
+	(0_lmcut, 2_mands)	(0_lmcut, 2_mands)	(3.7418e+07, 4.44724e+07)	(326381, 486755)	0.841375	-	0.670524	=	0.170851
+	(1_ipdb, 0_lmcut)	(1_ipdb, 0_lmcut)	(5.29774e+07, 3.7418e+07)	(397826, 326381)	1.41583	-	1.2189	=	0.196929
+	(1_ipdb, 2_mands)	(1_ipdb, 2_mands)	(5.29774e+07, 4.44724e+07)	(397826, 486755)	1.19124	-	0.817302	=	0.373942
+
+
+
+instance_name: p08_F_7.csv
+
+A*:	{
+		(0_lmcut,696816)
+		(1_ipdb,557555)
+		(2_mands,1.03102e+06)
+	}
+ss:	{
+		(0_lmcut,1.26946e+07)
+		(1_ipdb,2.72959e+07)
+		(2_mands,7.11803e+06)
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	1.24977	0.675851
+	0.800147	1	0.54078
+	1.47962	1.84918	1
+
+-ss h1/h2
+	1	0.465072	1.78344
+	2.1502	1	3.83475
+	0.560715	0.260773	1
+
+Measure_2:
+- There are no match between ratio heuristics.
+
+
+
+instance_name: p09_F_8.csv
+
+A*:	{
+		(0_lmcut,398563)
+		(1_ipdb,771914)
+		(2_mands,853106)
+	}
+ss:	{
+		(0_lmcut,3.42125e+07)
+		(1_ipdb,7.83337e+07)
+		(2_mands,1.96792e+07)
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	0.516331	0.46719
+	1.93674	1	0.904828
+	2.14045	1.10518	1
+
+-ss h1/h2
+	1	0.436753	1.73851
+	2.28962	1	3.98053
+	0.575206	0.251223	1
+
+Measure_2:
+- The heuristics that have the similar ratio are: (diff = 0.5)
+	(hss1    ,hss2    )	(ha1     ,ha2     )	(vss1    ,vss2    )	(va1     ,va2     ):	fracss	-	fracastar	=	diff
+	(0_lmcut, 1_ipdb)	(0_lmcut, 1_ipdb)	(3.42125e+07, 7.83337e+07)	(398563, 771914)	0.436753	-	0.516331	=	-0.0795774
+	(1_ipdb, 0_lmcut)	(1_ipdb, 0_lmcut)	(7.83337e+07, 3.42125e+07)	(771914, 398563)	2.28962	-	1.93674	=	0.352879
+
+
+
+instance_name: p10_F_9.csv
+
+A*:	{
+		(0_lmcut,92617)
+		(1_ipdb,1.11736e+06)
+		(2_mands,1.19234e+06)
+	}
+ss:	{
+		(0_lmcut,1.7375e+08)
+		(1_ipdb,4.87764e+08)
+		(2_mands,1.46425e+08)
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	0.0828891	0.0776767
+	12.0643	1	0.937115
+	12.8739	1.0671	1
+
+-ss h1/h2
+	1	0.356216	1.18661
+	2.80728	1	3.33115
+	0.842736	0.300196	1
+
+Measure_2:
+- The heuristics that have the similar ratio are: (diff = 0.5)
+	(hss1    ,hss2    )	(ha1     ,ha2     )	(vss1    ,vss2    )	(va1     ,va2     ):	fracss	-	fracastar	=	diff
+	(0_lmcut, 1_ipdb)	(0_lmcut, 1_ipdb)	(1.7375e+08, 4.87764e+08)	(92617, 1.11736e+06)	0.356216	-	0.0828891	=	0.273327
+
+
+
+instance_name: p11_F_10.csv
+
+A*:	{
+		(0_lmcut,41046)
+		(1_ipdb,154766)
+		(2_mands,154696)
+	}
+ss:	{
+		(0_lmcut,1.34228e+08)
+		(1_ipdb,2.46436e+08)
+		(2_mands,1.38282e+08)
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	0.265213	0.265333
+	3.77055	1	1.00045
+	3.76884	0.999548	1
+
+-ss h1/h2
+	1	0.544675	0.970677
+	1.83596	1	1.78212
+	1.03021	0.561129	1
+
+Measure_2:
+- The heuristics that have the similar ratio are: (diff = 0.5)
+	(hss1    ,hss2    )	(ha1     ,ha2     )	(vss1    ,vss2    )	(va1     ,va2     ):	fracss	-	fracastar	=	diff
+	(2_mands, 1_ipdb)	(2_mands, 1_ipdb)	(1.38282e+08, 2.46436e+08)	(154696, 154766)	0.561129	-	0.999548	=	-0.438419
+	(0_lmcut, 1_ipdb)	(0_lmcut, 1_ipdb)	(1.34228e+08, 2.46436e+08)	(41046, 154766)	0.544675	-	0.265213	=	0.279461
+
+
+
+instance_name: p12_F_11.csv
+
+A*:	{
+		(0_lmcut,21973)
+		(1_ipdb,74296)
+		(2_mands,73856)
+	}
+ss:	{
+		(0_lmcut,1.25053e+07)
+		(1_ipdb,1.7865e+07)
+		(2_mands,1.90586e+07)
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	0.295749	0.297511
+	3.38124	1	1.00596
+	3.36122	0.994078	1
+
+-ss h1/h2
+	1	0.699993	0.656151
+	1.42859	1	0.937369
+	1.52404	1.06682	1
+
+Measure_2:
+- The heuristics that have the similar ratio are: (diff = 0.5)
+	(hss1    ,hss2    )	(ha1     ,ha2     )	(vss1    ,vss2    )	(va1     ,va2     ):	fracss	-	fracastar	=	diff
+	(1_ipdb, 2_mands)	(1_ipdb, 2_mands)	(1.7865e+07, 1.90586e+07)	(74296, 73856)	0.937369	-	1.00596	=	-0.0685889
+	(2_mands, 1_ipdb)	(2_mands, 1_ipdb)	(1.90586e+07, 1.7865e+07)	(73856, 74296)	1.06682	-	0.994078	=	0.0727383
+	(0_lmcut, 2_mands)	(0_lmcut, 2_mands)	(1.25053e+07, 1.90586e+07)	(21973, 73856)	0.656151	-	0.297511	=	0.35864
+	(0_lmcut, 1_ipdb)	(0_lmcut, 1_ipdb)	(1.25053e+07, 1.7865e+07)	(21973, 74296)	0.699993	-	0.295749	=	0.404243
+
+
+
+instance_name: p13_F_8.csv
+
+A*:	{
+		(0_lmcut,1.10441e+06)
+		(1_ipdb,2.01036e+06)
+		(2_mands,2.59902e+06)
+	}
+ss:	{
+		(0_lmcut,6.3399e+07)
+		(1_ipdb,1.79032e+08)
+		(2_mands,2.64343e+07)
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	0.549359	0.424933
+	1.8203	1	0.773507
+	2.35331	1.29281	1
+
+-ss h1/h2
+	1	0.354121	2.39836
+	2.82389	1	6.77271
+	0.416952	0.147651	1
+
+Measure_2:
+- The heuristics that have the similar ratio are: (diff = 0.5)
+	(hss1    ,hss2    )	(ha1     ,ha2     )	(vss1    ,vss2    )	(va1     ,va2     ):	fracss	-	fracastar	=	diff
+	(0_lmcut, 1_ipdb)	(0_lmcut, 1_ipdb)	(6.3399e+07, 1.79032e+08)	(1.10441e+06, 2.01036e+06)	0.354121	-	0.549359	=	-0.195239
+
+
+
+instance_name: p14_F_11.csv
+
+A*:	{
+		(0_lmcut,469176)
+		(1_ipdb,3.8184e+06)
+		(2_mands,3.92354e+06)
+	}
+ss:	{
+		(0_lmcut,4.81947e+10)
+		(1_ipdb,1.63267e+11)
+		(2_mands,4.08797e+10)
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	0.122872	0.11958
+	8.13852	1	0.973203
+	8.36262	1.02754	1
+
+-ss h1/h2
+	1	0.29519	1.17894
+	3.38765	1	3.99383
+	0.848221	0.250386	1
+
+Measure_2:
+- The heuristics that have the similar ratio are: (diff = 0.5)
+	(hss1    ,hss2    )	(ha1     ,ha2     )	(vss1    ,vss2    )	(va1     ,va2     ):	fracss	-	fracastar	=	diff
+	(0_lmcut, 1_ipdb)	(0_lmcut, 1_ipdb)	(4.81947e+10, 1.63267e+11)	(469176, 3.8184e+06)	0.29519	-	0.122872	=	0.172318
+
+
+
+instance_name: p15_F_8.csv
+
+A*:	{
+		(0_lmcut,2.30835e+06)
+		(1_ipdb,2.82275e+06)
+		(2_mands,2.9587e+06)
+	}
+ss:	{
+		(0_lmcut,1.39788e+08)
+		(1_ipdb,5.52902e+08)
+		(2_mands,5.72107e+07)
+	}
+
+Measure_1:
+
+-A* h1/h2
+	1	0.817766	0.780191
+	1.22284	1	0.954051
+	1.28174	1.04816	1
+
+-ss h1/h2
+	1	0.252827	2.4434
+	3.95528	1	9.66431
+	0.409266	0.103474	1
+
+Measure_2:
+- There are no match between ratio heuristics.
+
+
+
+instance_name: p16_F_12.csv
+
+A*:	{
+		(0_lmcut,1.24845e+07)
+		(2_mands,1.01658e+07)
+	}
+ss:	{
+		(0_lmcut,1.93739e+11)
+		(1_ipdb,4.0356e+11)
+		(2_mands,1.97229e+11)
+	}

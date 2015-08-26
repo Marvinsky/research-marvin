@@ -1,15 +1,55 @@
-	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_5000_probes/blocks/bc/probBLOCKS-9-0_F_33.csv
-	ssBC = probBLOCKS-9-0_F_33.csv
-	astarBC = probBLOCKS-9-0_F_49.csv
+	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_500_probes/blocks/bc/probBLOCKS-9-0_F_42.csv
+	ssBC = probBLOCKS-9-0_F_42.csv
+	astarBC = probBLOCKS-9-0_F_42.csv
 
 
-	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_5000_probes/floortile-opt11-strips/bc/opt-p02-003_F_80.csv
-	ssBC = opt-p02-003_F_80.csv
-	astarBC = opt-p02-003_F_85.csv
+	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_500_probes/floortile-opt11-strips/bc/opt-p02-003_F_93.csv
+	ssBC = opt-p02-003_F_93.csv
+	astarBC = opt-p02-003_F_93.csv
 
 
-	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_5000_probes/nomystery-opt11-strips/bc/p04_F_38.csv
-	ssBC = p04_F_38.csv
-	astarBC = p04_F_39.csv
+	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_500_probes/floortile-opt11-strips/bc/opt-p02-004_F_72.csv
+	ssBC = opt-p02-004_F_72.csv
+	astarBC = opt-p02-004_F_72.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_500_probes/nomystery-opt11-strips/bc/p04_F_45.csv
+	ssBC = p04_F_45.csv
+	astarBC = p04_F_45.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_500_probes/nomystery-opt11-strips/bc/p15_F_49.csv
+	ssBC = p15_F_49.csv
+	astarBC = p15_F_49.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_500_probes/openstacks-opt11-strips/bc/p03_F_2.csv
+	ssBC = p03_F_2.csv
+	astarBC = p03_F_2.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_500_probes/pegsol-opt11-strips/bc/p16_F_12.csv
+	ssBC = p16_F_12.csv
+	astarBC = p16_F_12.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_500_probes/sokoban-opt11-strips/bc/p18_F_4.csv
+	ssBC = p18_F_4.csv
+	astarBC = p18_F_4.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_500_probes/visitall-opt11-strips/bc/problem05-full_F_53.csv
+	ssBC = problem05-full_F_53.csv
+	astarBC = problem05-full_F_53.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_500_probes/woodworking-opt08-strips/bc/p13_F_375.csv
+	ssBC = p13_F_375.csv
+	astarBC = p13_F_375.csv
+
+
+	output_ssBC = /home/marvin/marvin/testss/gapdb_deep/reportss_500_probes/woodworking-opt11-strips/bc/p03_F_375.csv
+	ssBC = p03_F_375.csv
+	astarBC = p03_F_375.csv
 
 
