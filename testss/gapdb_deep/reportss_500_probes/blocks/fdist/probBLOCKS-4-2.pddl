@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/gapdb_deep/reportss/blocks/fdist/probBLOCKS-4-2.pddl
 predictionSS: 8.14228e+32
-ss_timer: 142.8
+ss_timer: 142.7
 g:0
 size: 1
 	f: 6	q: 1

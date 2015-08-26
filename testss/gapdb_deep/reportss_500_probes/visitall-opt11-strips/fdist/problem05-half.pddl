@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/gapdb_deep/reportss/visitall-opt11-strips/fdist/problem05-half.pddl
 predictionSS: 6.80259e+18
-ss_timer: 148.28
+ss_timer: 178.76
 g:0
 size: 1
 	f: 12	q: 1

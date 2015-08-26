@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/gapdb_deep/reportss/transport-opt11-strips/fdist/p03.pddl
 predictionSS: 7.93564e+41
-ss_timer: 170.22
+ss_timer: 150.56
 g:0
 size: 1
 	f: 6	q: 1

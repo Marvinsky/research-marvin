@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/gapdb_deep/reportss/scanalyzer-opt11-strips/fdist/p02.pddl
 predictionSS: 1.57256e+31
-ss_timer: 195.58
+ss_timer: 180.12
 g:0
 size: 1
 	f: 18	q: 1

@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/gapdb_deep/reportss/visitall-opt11-strips/fdist/problem03-full.pddl
 predictionSS: 2.60279e+22
-ss_timer: 140.32
+ss_timer: 141.22
 g:0
 size: 1
 	f: 6	q: 1

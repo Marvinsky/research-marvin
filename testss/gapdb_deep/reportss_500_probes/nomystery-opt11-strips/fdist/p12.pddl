@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/gapdb_deep/reportss/nomystery-opt11-strips/fdist/p12.pddl
 predictionSS: 8.20656e+13
-ss_timer: 148.56
+ss_timer: 153.38
 g:0
 size: 1
 	f: 11	q: 1

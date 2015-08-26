@@ -1,24 +1,24 @@
-h(,0):,merge_and_shrink
-h(,1):,ipdb
+h(,0):,ipdb
+h(,1):,heur is GAPDB,mutation_rate:0.8000000,size=2000000,with disjoint patterns
 h(,2):,heur is GAPDB,mutation_rate:0.6000000,size=2000000,without disjoint patterns
-h(,3):,lmcut
-h(,4):,heur is GAPDB,mutation_rate:1.0000000,size=2000000,without disjoint patterns
-h(,5):,heur is GAPDB,mutation_rate:0.2000000,size=2000000,without disjoint patterns
-h(,6):,heur is GAPDB,mutation_rate:0.3000000,size=2000000,with disjoint patterns
-h(,7):,heur is GAPDB,mutation_rate:0.5000000,size=2000000,without disjoint patterns
-h(,8):,heur is GAPDB,mutation_rate:0.1000000,size=2000000,with disjoint patterns
-h(,9):,heur is GAPDB,mutation_rate:0.8000000,size=2000000,with disjoint patterns
-h(,10):,heur is GAPDB,mutation_rate:0.4000000,size=2000000,with disjoint patterns
+h(,3):,heur is GAPDB,mutation_rate:0.3000000,size=2000000,with disjoint patterns
+h(,4):,heur is GAPDB,mutation_rate:0.9000000,size=2000000,with disjoint patterns
+h(,5):,lmcut
+h(,6):,heur is GAPDB,mutation_rate:1.0000000,size=2000000,without disjoint patterns
+h(,7):,heur is GAPDB,mutation_rate:0.4000000,size=2000000,with disjoint patterns
+h(,8):,merge_and_shrink
+h(,9):,heur is GAPDB,mutation_rate:0.2000000,size=2000000,without disjoint patterns
+h(,10):,heur is GAPDB,mutation_rate:0.1000000,size=2000000,with disjoint patterns
 h(,11):,heur is GAPDB,mutation_rate:0.7000000,size=2000000,without disjoint patterns
-h(,12):,heur is GAPDB,mutation_rate:0.9000000,size=2000000,with disjoint patterns
-bc(0/0/0/0/0/0/0/0/1/0/0/0/0)cc=1.44402e+46
-bc(0/0/0/0/0/0/0/1/0/1/0/0/0)cc=1.14475e+46
-bc(0/1/0/0/0/0/0/1/0/1/0/0/0)cc=1.73272e+30
-bc(0/0/0/1/0/0/0/1/0/1/0/0/0)cc=5.55252e+06
-bc(0/0/0/0/0/0/0/1/1/1/0/0/0)cc=4.80846e+46
-bc(0/1/0/0/0/0/0/1/1/1/0/0/0)cc=1161.22
-bc(0/0/0/0/0/0/1/1/1/1/0/0/0)cc=5.25901e+48
-bc(0/1/0/0/0/0/1/1/1/1/0/0/0)cc=5.77573e+29
-bc(0/0/0/1/0/0/1/1/1/1/0/0/0)cc=7.07171e+09
-bc(0/1/0/1/0/0/1/1/1/1/0/0/0)cc=1.592e+09
+h(,12):,heur is GAPDB,mutation_rate:0.5000000,size=2000000,without disjoint patterns
+bc(0/0/0/0/0/0/0/0/0/0/1/0/0)cc=1.44402e+46
+bc(0/1/0/0/0/0/0/0/0/0/0/0/1)cc=1.14475e+46
+bc(1/1/0/0/0/0/0/0/0/0/0/0/1)cc=1.73272e+30
+bc(0/1/0/0/0/1/0/0/0/0/0/0/1)cc=5.55252e+06
+bc(0/1/0/0/0/0/0/0/0/0/1/0/1)cc=4.80846e+46
+bc(1/1/0/0/0/0/0/0/0/0/1/0/1)cc=1161.22
+bc(0/1/0/1/0/0/0/0/0/0/1/0/1)cc=5.25901e+48
+bc(1/1/0/1/0/0/0/0/0/0/1/0/1)cc=5.77573e+29
+bc(0/1/0/1/0/1/0/0/0/0/1/0/1)cc=7.07171e+09
+bc(1/1/0/1/0/1/0/0/0/0/1/0/1)cc=1.592e+09
 bc(1/1/1/1/1/1/1/1/1/1/1/1/1)cc=3.61529e+31

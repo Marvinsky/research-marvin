@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/gapdb_deep/reportss/woodworking-opt08-strips/fdist/p02.pddl
 predictionSS: 8.72283e+21
-ss_timer: 292.02
+ss_timer: 256.82
 g:0
 size: 1
 	f: 150	q: 1

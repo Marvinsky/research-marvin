@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/gapdb_deep/reportss/sokoban-opt08-strips/fdist/p20.pddl
-predictionSS: 9.248
-ss_timer: 475.42
+predictionSS: 9.24
+ss_timer: 553.58
 g:0
 size: 1
 	f: 1	q: 1

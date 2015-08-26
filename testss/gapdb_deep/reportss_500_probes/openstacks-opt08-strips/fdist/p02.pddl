@@ -1,6 +1,6 @@
 	/home/levi/marvin/marvin/testss/gapdb_deep/reportss/openstacks-opt08-strips/fdist/p02.pddl
 predictionSS: 13515.9
-ss_timer: 143.28
+ss_timer: 133.96
 g:0
 size: 1
 	f: 0	q: 1
@@ -14,8 +14,7 @@ size: 1
 	f: 2	q: 1
 
 g:3
-size: 2
-	f: 2	q: 0.044
+size: 1
 	f: 3	q: 1.012
 
 g:4
