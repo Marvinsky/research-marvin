@@ -11,6 +11,11 @@
 #include <set>
 #include <time.h>
 
+//put asleep
+#include <unistd.h>
+
+//enhance the running of the instances
+#define ASTAR_GA_NAME "_A_GA+3"
 
 
 using std::string;
@@ -36,6 +41,20 @@ string currentDateTime() {
 	
 	strftime(buf, sizeof(buf), "%Y-%m-%d", &tstruct);
 	return buf;
+}
+
+//exec
+std::string exec(const char* cmd) {
+    FILE* pipe = popen(cmd, "r");
+    if (!pipe) return "ERROR";
+    char buffer[128];
+    std::string result = "";
+    while(!feof(pipe)) {
+        if(fgets(buffer, 128, pipe) != NULL)
+                result += buffer;
+    }
+    pclose(pipe);
+    return result;
 }
 
 //vector<pair<string, double> >  
@@ -315,6 +334,10 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	*/
 
 
+	//create the text to call qsub
+	string instances = "qstat | grep -c ";
+	instances += ASTAR_GA_NAME;
+
 	//Calling idai in order to get the max_bound to use
 
 	//Read the fles from idai
@@ -443,7 +466,17 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			//end astar_gpdb call the bc from ss
 
 			for (int i = 0; i < v_gapdb_string.size(); i++) {
-			
+				//delay the process and only run 10 instances 
+				while (true) {
+					usleep(600000);
+					string INS = exec(instances.c_str());
+					int n_ins = atoi(INS.c_str());
+
+					if (n_ins < 20) {
+						break;
+					}
+				}
+		
 				//get the real name
 				string real_heur = v_gapdb_string.at(i);
 				string task = real_heur;
@@ -498,15 +531,13 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 				//string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + number.str() + ".pddl";
 				string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + final_number_heur  + ".pddl";
 				cout<<"prob_name_gapdb = "<<prob_name_gapdb<<"\n";
-
-
-
-				outfile<<"#PBS -N _p"<<(num_problema+1)<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\n#PBS -l pmem=6gb\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
+				
+				outfile<<"#PBS -N "<<ASTAR_GA_NAME<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\n#PBS -l walltime=00:30:00\n\n#PBS -l pmem=6gb\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
 				//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
         			//PBS -l walltime=200
 
 				cout<<"pasta = "<<pasta.c_str()<<"\n\n";
-				outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic<<"/problemas/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd\n\n";
+				outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic<<"/problemas/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd_regrets\n\n";
 				outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<" "<<problema.c_str()<<"  "<<heuristic<<"\n\n";
 
 				outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
@@ -514,29 +545,29 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 				if (F_boundary) {
 					outfile<<"src/search/downward-release --F_boundary "<<F_boundary<<" --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --problem_name_gapdb "<<prob_name_gapdb<<"  --search \"astar(min(["<<parameter<<"]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
 				} else {
-					outfile<<"src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<"  --problem_name_gapdb "<<prob_name_gapdb<<"  --search \"astar(min(["<<parameter<<"]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
+				outfile<<"src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<"  --problem_name_gapdb "<<prob_name_gapdb<<"  --search \"astar(min(["<<parameter<<"]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
 				}
 				outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
 				outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
         
 				outfile.close();
 
-				string date = currentDateTime();
 				string executeFile;
-				//executeFile = "qsub -o ";
-				//executeFile += "logs/"+date;
-				//executeFile += string(".log");
-				//executeFile += " -j oe ";
-				//executeFile += arquivo;
-				//cout<<executeFile<<"\n\n";
-				//arquivo = "qsub "+ arquivo;
-				//cout<<arquivo<<endl;
-        			string allow;
-				allow = "chmod +x "+arquivo;	
-				cout<<allow<<"\n";
-				system(allow.c_str());
-				executeFile = "sh "+arquivo;
-				system(executeFile.c_str());
+                        	//executeFile = "qsub -o ";
+                        	//executeFile += "logs/"+date;
+                        	//executeFile += string(".log");
+                        	//executeFile += " -j oe ";
+                        	//executeFile += arquivo;
+                        	executeFile = "qsub -l select=1:ncpus=1:mem=6GB "+arquivo;
+                        	cout<<executeFile<<"\n\n";
+                        	//arquivo = "qsub "+ arquivo;
+                        	//cout<<arquivo<<endl;
+                        	//string allow;
+                        	//allow = "chmod +x "+arquivo;  
+                        	//cout<<allow<<"\n";
+                        	//system(allow.c_str());
+                        	//executeFile = "."+arquivo;
+                        	system(executeFile.c_str());
 			}
 		} // end total_levels != 0
 	}
