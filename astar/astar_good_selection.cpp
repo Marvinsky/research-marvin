@@ -555,7 +555,13 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 				final_real_heur = previous_real_heur;
 				if (previous_real_heur == "mands()") {
-					final_real_heur = "merge_and_shrink()";
+					final_real_heur = "merge_and_shrink(shrink_strategy=shrink_bisimulation(max_states=100000,threshold=1,greedy=false),merge_strategy=merge_dfp())";
+
+					//final_real_heur = "merge_and_shrink()";
+				}
+
+				if (previous_real_heur == "ipdb()") {
+					final_real_heur = "ipdb(max_time=600)";
 				}
 			
 				//get the heuristic number
@@ -578,9 +584,9 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
                         	//cout<<"index = "<<index<<"\n";
                         	pot[index] = s2;
 
-                        	cout<<"pot[0] = "<<pot[0]<<"\n";
-                        	cout<<"pot[1] = "<<pot[1]<<"\n";
-                        	cout<<"pot[2] = "<<pot[2]<<"\n";
+                        	//cout<<"pot[0] = "<<pot[0]<<"\n";
+                        	//cout<<"pot[1] = "<<pot[1]<<"\n";
+                        	//cout<<"pot[2] = "<<pot[2]<<"\n";
 				//remove deep from pot[1]
 				string pot1 = pot[1];
 				size_t found_pot1 = pot1.find("(");
@@ -676,6 +682,13 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 
 	int counter = 0;
 	string heuristic;
+
+
+	string dirProblema = "mkdir /home/marvin/marvin/astar/"+heuristic+"/" + PROB_NAME;
+	if (system(dirProblema.c_str())) {
+		cout<<"create directory "<<dirProblema.c_str()<<"\n";
+	}
+
 	while (counter < total_heuristics) {
 		file2>>heuristic;
 
