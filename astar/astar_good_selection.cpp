@@ -23,8 +23,8 @@ using std::string;
 using namespace std;
 
 //Update name of the directories -> global variables
-string PROB_NAME = "problemas_500_probes";
-string RESUL_NAME = "reportss_500_probes";
+string PROB_GOOD = "problemas_500_probes";
+string RESUL_GOOD = "reportss_500_probes"; //directory that need to be called in testss
 map<string, double> add_line_map_heuristic;
 
 template <typename T1, typename T2>
@@ -400,7 +400,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	arquivo += string(".sh");
 	arquivo = "/" + arquivo;
 	arquivo = pasta + arquivo;
-	arquivo = "astar/"+heuristic+"/"+ PROB_NAME +"/" + arquivo;
+	arquivo = "astar/"+heuristic+"/"+ PROB_GOOD +"/" + arquivo;
 	arquivo = "marvin/" + arquivo;
 	arquivo = "marvin/"+ arquivo;
 	arquivo = "/home/" + arquivo;
@@ -592,7 +592,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 		arquivo = new_problem_name_mod + "_gapdb_" + final_number_heur + ".sh";	
 		arquivo = "/" + arquivo;
 		arquivo = pasta + arquivo;
-		arquivo = "astar/"+heuristic+"/" + PROB_NAME  +  "/" + arquivo;
+		arquivo = "astar/"+heuristic+"/" + PROB_GOOD  +  "/" + arquivo;
 		arquivo = "marvin/" + arquivo;
 		arquivo = "marvin/"+ arquivo;
 		arquivo = "/home/" + arquivo;
@@ -612,7 +612,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         	//PBS -l walltime=200
 
 		cout<<"pasta = "<<pasta.c_str()<<"\n\n";
-		outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic<<"/" + PROB_NAME  +  "/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd_deep\n\n";
+		outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic<<"/" + PROB_GOOD  +  "/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd\n\n";
 		outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<" "<<problema.c_str()<<"  "<<heuristic<<"\n\n";
 
 		outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
@@ -627,44 +627,45 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 		string date = currentDateTime();
 
 		string executeFile;
-                //executeFile = "qsub -o ";
-                //executeFile += "logs/"+date;
-                //executeFile += string(".log");
-                //executeFile += " -j oe ";
-                //executeFile += arquivo;
-                executeFile = "qsub -l select=1:ncpus=1:mem=6GB "+arquivo;
-                cout<<executeFile<<"\n\n";
-                //arquivo = "qsub "+ arquivo;
-                //cout<<arquivo<<endl;
-                //string allow;
-                //allow = "chmod +x "+arquivo;  
-                //cout<<allow<<"\n";
-                //system(allow.c_str());
-                //executeFile = "."+arquivo;
-                system(executeFile.c_str());
+                bool is_in_cluster = false;
+
+                if (is_in_cluster) {
+                        executeFile = "qsub -l select=1:ncpus=1:mem=6GB "+arquivo;
+                        cout<<executeFile<<"\n\n";
+                        system(executeFile.c_str());
+                } else {
+                        string allow;
+                        allow = "chmod +x "+arquivo;
+                        cout<<allow<<"\n";
+                        system(allow.c_str());
+                        executeFile = "sh "+arquivo;
+                        system(executeFile.c_str());
+                }
 	}
 }
 
 void entrada_dados(string &pasta, string &problema, string &dominio, bool &dominio_unico, int &quantidade_problemas) {
 	
-	ifstream file2("h/astar/instance360_deep.txt");
+	ifstream file2("h/astar/instance360_good.txt");
 	int quantidade_entrada_opt;
 	int total_heuristics;
 	file2>>quantidade_entrada_opt;
 	file2>>total_heuristics;
 
 	int counter = 0;
-	string heuristic;
+	string heuristic, heuristic_good;
 	while (counter < total_heuristics) {
 		file2>>heuristic;
-
-		string dirProblema = "mkdir /home/marvin/marvin/astar/"+heuristic+"/" + PROB_NAME;
+		file2>>heuristic_good;
+		//create the directory of the problemas_500_probes_good
+		string dirProblema = "mkdir /home/marvin/marvin/astar/"+heuristic_good+"/" + PROB_GOOD;
 		if (system(dirProblema.c_str())) {
 			cout<<"create directory "<<dirProblema.c_str()<<"\n";
 		}
 
-		ifstream file("h/astar/d/instance360_deep.txt");
+		ifstream file("h/astar/d/instance360_good.txt");
 		cout<<"heuristic = "<<heuristic<<"\n\n";
+		cout<<"heuristic_good = "<<heuristic_good<<"\n",
 		cout<<"quantidade_entrada_opt = "<<quantidade_entrada_opt<<"\n\n";
 		cout<<"total_heuristics = "<<total_heuristics<<"\n\n"; 
 		for (int i = 0; i < quantidade_entrada_opt; i++) {
@@ -682,23 +683,23 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 				dominio_unico = false;
 			}
 
-			string pastaProblema = "mkdir /home/marvin/marvin/astar/"+heuristic+"/" + PROB_NAME  + "/"+pasta;
-			//string pastaProblema = "mkdir ~/astar/"+heuristic+"/" + PROB_NAME  + "/"+pasta;
+			string pastaProblema = "mkdir /home/marvin/marvin/astar/"+heuristic+"/" + PROB_GOOD  + "/"+pasta;
+			//string pastaProblema = "mkdir ~/astar/"+heuristic+"/" + PROB_GOOD  + "/"+pasta;
 			printf("Tenta criar a pasta dominio.\n");
 			system(pastaProblema.c_str());
-			string pastaResultado = "mkdir /home/marvin/marvin/astar/"+heuristic+"/" + PROB_NAME  +  "/"+pasta+"/resultado";
+			string pastaResultado = "mkdir /home/marvin/marvin/astar/"+heuristic+"/" + PROB_GOOD  +  "/"+pasta+"/resultado";
 		
-			//string pastaResultado = "mkdir ~/astar/"+heuristic+"/" + PROB_NAME  + "/"+pasta+"/resultado";
+			//string pastaResultado = "mkdir ~/astar/"+heuristic+"/" + PROB_GOOD  + "/"+pasta+"/resultado";
 			printf("Tenta criar a pasta resultado.\n");
 			system(pastaResultado.c_str());		
 
 
-			//begin implementation of astar_gapdb_deep
+			//begin implementation of astar_good_selection
 	
 
 			string bcdirectory;
         		bcdirectory = pasta + "/bc/" + bcdirectory;
-        		bcdirectory = "/" + RESUL_NAME  + "/" + bcdirectory;
+        		bcdirectory = "/" + RESUL_GOOD  + "/" + bcdirectory;
         		bcdirectory = "testss/" + heuristic + bcdirectory;
         		bcdirectory = "marvin/" + bcdirectory;
         		bcdirectory = "marvin/" + bcdirectory;
@@ -765,7 +766,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 			for (int j = 0; j < quantidade_problemas; j++) {
 				string bcfile;
                                 bcfile =  pasta + "/bc/";
-                                bcfile = "testss/" + heuristic  + "/" + RESUL_NAME  +  "/" + bcfile;
+                                bcfile = "testss/" + heuristic  + "/" + RESUL_GOOD  +  "/" + bcfile;
                                 bcfile = "marvin/" + bcfile;
                                 bcfile = "marvin/" + bcfile;
                                 bcfile = "/home/" + bcfile;
