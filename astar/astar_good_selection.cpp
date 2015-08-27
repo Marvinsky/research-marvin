@@ -387,8 +387,8 @@ int getTotalLevels(string interText) {
         return total_niveles;
 }
 
-void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic, int numDominio, string pathBC, int deep_F_boundary) {
-	
+void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic_good, int numDominio, string pathBC, int deep_F_boundary) {
+
 	/*
 	string arquivo;
 	string sas;
@@ -400,7 +400,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	arquivo += string(".sh");
 	arquivo = "/" + arquivo;
 	arquivo = pasta + arquivo;
-	arquivo = "astar/"+heuristic+"/"+ PROB_GOOD +"/" + arquivo;
+	arquivo = "astar/"+heuristic_good+"/"+ PROB_GOOD +"/" + arquivo;
 	arquivo = "marvin/" + arquivo;
 	arquivo = "marvin/"+ arquivo;
 	arquivo = "/home/" + arquivo;
@@ -439,7 +439,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 		
 	map<string, vector<string> >::iterator iter;
 	for (iter = m.begin(); iter != m.end(); iter++) {
-		string gapdb_string = heuristic+"(mp=";
+		string gapdb_string = heuristic_good+"(mp=";
 		string s = iter->first;
 		vector<string> info = iter->second;
 
@@ -489,6 +489,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			} else {
 				v_gapdb_string.push_back(gapdb_string);
 			}
+			cout<<"gapdb_string = "<<gapdb_string<<"\n";
 		}// s == min_number_heuristic
 	}
 	cout<<"v_gapdb_string.size() = "<<v_gapdb_string.size()<<"\n";
@@ -507,13 +508,14 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 		}
 			
 		//get the real name
-		string real_heur = v_gapdb_string.at(i);
-	
+		string real_heur = v_gapdb_string.at(i);	
 		string task = real_heur;
-		size_t found_task = task.find("deep");
+		cout<<"task = "<<task<<"\n";
+		//size_t found_task_deep = task.find("deep");
+		size_t found_task_good = task.find("good");
 		string final_real_heur, final_number_heur;
                 string delimiter = "_";
-		if (found_task > 100) {
+		if (found_task_good > 1000) {
 			string t0 = real_heur;
 			size_t found_t0 = t0.find("_");
 			string previous_real_heur = t0.substr(0, found_t0);
@@ -592,7 +594,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 		arquivo = new_problem_name_mod + "_gapdb_" + final_number_heur + ".sh";	
 		arquivo = "/" + arquivo;
 		arquivo = pasta + arquivo;
-		arquivo = "astar/"+heuristic+"/" + PROB_GOOD  +  "/" + arquivo;
+		arquivo = "astar/"+heuristic_good+"/" + PROB_GOOD  +  "/" + arquivo;
 		arquivo = "marvin/" + arquivo;
 		arquivo = "marvin/"+ arquivo;
 		arquivo = "/home/" + arquivo;
@@ -612,13 +614,13 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         	//PBS -l walltime=200
 
 		cout<<"pasta = "<<pasta.c_str()<<"\n\n";
-		outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic<<"/" + PROB_GOOD  +  "/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd\n\n";
-		outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<" "<<problema.c_str()<<"  "<<heuristic<<"\n\n";
+		outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic_good<<"/" + PROB_GOOD  +  "/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd\n\n";
+		outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<" "<<problema.c_str()<<"  "<<heuristic_good<<"\n\n";
 
 		outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
 
 		//Santiago's code to find the F_boundary on the fly	
-		outfile<<"src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --problem_name_gapdb "<<prob_name_gapdb<<" --deep_F_boundary "<<deep_F_boundary<<"  --search \"astar(min(["<<parameter<<"]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
+		outfile<<"src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic_good<<" --problem_name_gapdb "<<prob_name_gapdb<<" --deep_F_boundary "<<deep_F_boundary<<"  --search \"astar(min(["<<parameter<<"]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
 		outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
 		outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
         
@@ -658,6 +660,12 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 		file2>>heuristic;
 		file2>>heuristic_good;
 		//create the directory of the problemas_500_probes_good
+
+		string dirProbGood = "mkdir /home/marvin/marvin/astar/"+heuristic_good+"/";
+		if (system(dirProbGood.c_str())) {
+			cout<<"create directory "<<dirProbGood.c_str()<<"\n";
+		}
+
 		string dirProblema = "mkdir /home/marvin/marvin/astar/"+heuristic_good+"/" + PROB_GOOD;
 		if (system(dirProblema.c_str())) {
 			cout<<"create directory "<<dirProblema.c_str()<<"\n";
@@ -683,13 +691,13 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 				dominio_unico = false;
 			}
 
-			string pastaProblema = "mkdir /home/marvin/marvin/astar/"+heuristic+"/" + PROB_GOOD  + "/"+pasta;
-			//string pastaProblema = "mkdir ~/astar/"+heuristic+"/" + PROB_GOOD  + "/"+pasta;
+			string pastaProblema = "mkdir /home/marvin/marvin/astar/"+heuristic_good+"/" + PROB_GOOD  + "/"+pasta;
+			//string pastaProblema = "mkdir ~/astar/"+heuristic_good+"/" + PROB_GOOD  + "/"+pasta;
 			printf("Tenta criar a pasta dominio.\n");
 			system(pastaProblema.c_str());
-			string pastaResultado = "mkdir /home/marvin/marvin/astar/"+heuristic+"/" + PROB_GOOD  +  "/"+pasta+"/resultado";
+			string pastaResultado = "mkdir /home/marvin/marvin/astar/"+heuristic_good+"/" + PROB_GOOD  +  "/"+pasta+"/resultado";
 		
-			//string pastaResultado = "mkdir ~/astar/"+heuristic+"/" + PROB_GOOD  + "/"+pasta+"/resultado";
+			//string pastaResultado = "mkdir ~/astar/"+heuristic_good+"/" + PROB_GOOD  + "/"+pasta+"/resultado";
 			printf("Tenta criar a pasta resultado.\n");
 			system(pastaResultado.c_str());		
 
@@ -786,7 +794,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
                                 		cout<<"bcfile in ss = "<<bcfile<<"\n";
 
 						cout<<"problema "<<problema<<"\n\n";
-						create_sh(pasta, dominio, problema, j, heuristic, i+1, bcfile, value);
+						create_sh(pasta, dominio, problema, j, heuristic_good, i+1, bcfile, value);
 					}
 				} else {
 					file>>dominio;
@@ -805,7 +813,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 
 						cout<<"dominio "<<dominio<<"\n\n";
 						cout<<"problema "<<problema<<"\n\n";
-						create_sh(pasta, dominio, problema, j, heuristic, i+1, bcfile, value);
+						create_sh(pasta, dominio, problema, j, heuristic_good, i+1, bcfile, value);
 					}
 				}
 			}
