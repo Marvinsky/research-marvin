@@ -537,7 +537,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         			//PBS -l walltime=200
 
 				cout<<"pasta = "<<pasta.c_str()<<"\n\n";
-				outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic<<"/problemas/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd_regrets\n\n";
+				outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic<<"/problemas/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd\n\n";
 				outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<" "<<problema.c_str()<<"  "<<heuristic<<"\n\n";
 
 				outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
@@ -553,21 +553,20 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 				outfile.close();
 
 				string executeFile;
-                        	//executeFile = "qsub -o ";
-                        	//executeFile += "logs/"+date;
-                        	//executeFile += string(".log");
-                        	//executeFile += " -j oe ";
-                        	//executeFile += arquivo;
-                        	executeFile = "qsub -l select=1:ncpus=1:mem=6GB "+arquivo;
-                        	cout<<executeFile<<"\n\n";
-                        	//arquivo = "qsub "+ arquivo;
-                        	//cout<<arquivo<<endl;
-                        	//string allow;
-                        	//allow = "chmod +x "+arquivo;  
-                        	//cout<<allow<<"\n";
-                        	//system(allow.c_str());
-                        	//executeFile = "."+arquivo;
-                        	system(executeFile.c_str());
+                		bool is_in_cluster = false;
+
+                		if (is_in_cluster) {
+                        		executeFile = "qsub -l select=1:ncpus=1:mem=6GB "+arquivo;
+                        		cout<<executeFile<<"\n\n";
+                        		system(executeFile.c_str());
+                		} else {
+                        		string allow;
+                        		allow = "chmod +x "+arquivo;
+                        		cout<<allow<<"\n";
+                        		system(allow.c_str());
+                        		executeFile = "sh "+arquivo;
+                        		system(executeFile.c_str());
+                		}
 			}
 		} // end total_levels != 0
 	}
