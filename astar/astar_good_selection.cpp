@@ -476,7 +476,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 		cout<<"min_number_heuristic = "<<min_number_heuristic<<"\n";
 		cout<<"ending m:\n";
 
-		/*
+
 		vector<string> v_gapdb_string;  
 		
 		map<string, vector<string> >::iterator iter;
@@ -484,62 +484,66 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			string gapdb_string = heuristic+"(mp=";
 			string s = iter->first;
 			vector<string> info = iter->second;
-			//cout<<"heuristic (s) = "<<s<<"\n";
-			//find the number
-			string t = s;
-			size_t found = t.find("_");
-			string t_final = t.substr(found + 1, t.length());
-			//cout<<"t_final = "<<t_final<<"\n";
 
-			bool is_blind_heuristic = false;
-			for (size_t i = 0; i < info.size(); i++) {
-				string parameter = info.at(i);	
-				//cout<<"\t"<<parameter<<"\n";
-				if (i == 1) {
-					gapdb_string += parameter;
-				} else if (i == 2) {
-					gapdb_string += ",size="+parameter;
-					if (parameter == "") {
-						is_blind_heuristic = true;
+			if (s == min_number_heuristic) {
+				cout<<"heuristic (s) = "<<s<<"\n";
+				//find the number
+				string t = s;
+				size_t found = t.find("_");
+				string t_final = t.substr(found + 1, t.length());
+				//cout<<"t_final = "<<t_final<<"\n";
+
+				bool is_blind_heuristic = false;
+				for (size_t i = 0; i < info.size(); i++) {
+					string parameter = info.at(i);	
+					//cout<<"\t"<<parameter<<"\n";
+					if (i == 1) {
+						gapdb_string += parameter;
+					} else if (i == 2) {
+						gapdb_string += ",size="+parameter;
+						if (parameter == "") {
+							is_blind_heuristic = true;
+						}
+					} else if (i == 3) {
+						gapdb_string += ",disjoint="+parameter;
 					}
-				} else if (i == 3) {
-					gapdb_string += ",disjoint="+parameter;
 				}
-			}
-			gapdb_string+=")_" + t_final;
-			//gapdb_string+=",eps=120,colls=5)";
-			//cout<<"\tgapdb_string = "<<gapdb_string<<"\n\n";
-
-			if (is_blind_heuristic) {
-				//Workaround
-				string task2 = s;
+				gapdb_string+=")_" + t_final;
+				//gapdb_string+=",eps=120,colls=5)";
+				//cout<<"\tgapdb_string = "<<gapdb_string<<"\n\n";
+				if (is_blind_heuristic) {
+					cout<<"is_blind_heuristic = true\n";
+					//Workaround
+					string task2 = s;
 				
-				size_t found_task2 =  task2.find("_");
-				string new_s = task2.substr(0, found_task2);
+					size_t found_task2 =  task2.find("_");
+					string new_s = task2.substr(0, found_task2);
 	
-				string heur_blind = "blind()_" + t_final;
-				if (new_s == "ipdb") {	
-					heur_blind = "ipdb()_" + t_final;
-				} else if (new_s == "lmcut") {
-					heur_blind = "lmcut()_" + t_final;
-				} else if (new_s == "mands") {
-					heur_blind = "mands()_" + t_final;
+					string heur_blind = "blind()_" + t_final;
+					if (new_s == "ipdb") {	
+						heur_blind = "ipdb()_" + t_final;
+					} else if (new_s == "lmcut") {
+						heur_blind = "lmcut()_" + t_final;
+					} else if (new_s == "mands") {
+						heur_blind = "mands()_" + t_final;
+					}
+					v_gapdb_string.push_back(heur_blind);
+					cout<<"gapdb_string = "<<heur_blind<<"\n";
+				} else {	
+					cout<<"is_blind_heuristic = false\n";
+					cout<<"gapdb_string = "<<gapdb_string<<"\n";
+					v_gapdb_string.push_back(gapdb_string);
 				}
-				v_gapdb_string.push_back(heur_blind);
-			} else {
-				v_gapdb_string.push_back(gapdb_string);
 			}
 		}
-		//process to select which is the heuristic that generate the lowest number of nodes expanded
-
-		
+		cout<<"v_gapdb_string.size() = "<<v_gapdb_string.size()<<"\n\n\n";
+		//process to select which is the heuristic that generate the lowest number of nodes expanded	
 		//end astar_gpdb call the bc from ss
 
-		for (int i = 0; i < v_gapdb_string.size(); i++) {
-			
+		for (int i = 0; i < v_gapdb_string.size(); i++) {			
 			//get the real name
 			string real_heur = v_gapdb_string.at(i);
-	
+
 			string task = real_heur;
 			size_t found_task = task.find("deep");
 			string final_real_heur, final_number_heur;
@@ -657,9 +661,8 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			cout<<allow<<"\n";
 			system(allow.c_str());
 			executeFile = "sh "+arquivo;
-			system(executeFile.c_str());
+			//system(executeFile.c_str());	
 		}
-		*/
 	}
 }
 
