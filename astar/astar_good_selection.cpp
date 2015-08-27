@@ -683,14 +683,13 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 	int counter = 0;
 	string heuristic;
 
-
-	string dirProblema = "mkdir /home/marvin/marvin/astar/"+heuristic+"/" + PROB_NAME;
-	if (system(dirProblema.c_str())) {
-		cout<<"create directory "<<dirProblema.c_str()<<"\n";
-	}
-
 	while (counter < total_heuristics) {
 		file2>>heuristic;
+
+		string dirProblema = "mkdir /home/marvin/marvin/astar/"+heuristic+"/" + PROB_NAME;
+		if (system(dirProblema.c_str())) {
+			cout<<"create directory "<<dirProblema.c_str()<<"\n";
+		}
 
 		ifstream file("h/astar/d/instance360_deep.txt");
 		cout<<"heuristic = "<<heuristic<<"\n\n";
