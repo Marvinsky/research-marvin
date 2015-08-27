@@ -18,9 +18,12 @@
 //enhance the running of the instances
 #define ASTAR_DEEP_NAME "_DEEP_ASTAR"
 
-
 using std::string;
 using namespace std;
+
+//Update name of the directories -> global variables
+string PROB_NAME = "problemas_500_probes";
+string RESUL_NAME = "reportss_500_probes";
 
 template <typename T1, typename T2>
 struct less_second {
@@ -386,7 +389,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	arquivo += string(".sh");
 	arquivo = "/" + arquivo;
 	arquivo = pasta + arquivo;
-	arquivo = "astar/"+heuristic+"/problemas/" + arquivo;
+	arquivo = "astar/"+heuristic+"/"+ PROB_NAME +"/" + arquivo;
 	arquivo = "marvin/" + arquivo;
 	arquivo = "marvin/"+ arquivo;
 	arquivo = "/home/" + arquivo;
@@ -557,7 +560,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 		arquivo = new_problem_name_mod + "_gapdb_" + final_number_heur + ".sh";	
 		arquivo = "/" + arquivo;
 		arquivo = pasta + arquivo;
-		arquivo = "astar/"+heuristic+"/problemas/" + arquivo;
+		arquivo = "astar/"+heuristic+"/" + PROB_NAME  +  "/" + arquivo;
 		arquivo = "marvin/" + arquivo;
 		arquivo = "marvin/"+ arquivo;
 		arquivo = "/home/" + arquivo;
@@ -577,7 +580,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         	//PBS -l walltime=200
 
 		cout<<"pasta = "<<pasta.c_str()<<"\n\n";
-		outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic<<"/problemas/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd_deep\n\n";
+		outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic<<"/" + PROB_NAME  +  "/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd_deep\n\n";
 		outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<" "<<problema.c_str()<<"  "<<heuristic<<"\n\n";
 
 		outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
@@ -623,6 +626,11 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 	while (counter < total_heuristics) {
 		file2>>heuristic;
 
+		string dirProblema = "mkdir /home/marvin/marvin/astar/"+heuristic+"/" + PROB_NAME;
+		if (system(dirProblema.c_str())) {
+			cout<<"create directory "<<dirProblema.c_str()<<"\n";
+		}
+
 		ifstream file("h/astar/d/instance360_deep.txt");
 		cout<<"heuristic = "<<heuristic<<"\n\n";
 		cout<<"quantidade_entrada_opt = "<<quantidade_entrada_opt<<"\n\n";
@@ -642,13 +650,13 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 				dominio_unico = false;
 			}
 
-			string pastaProblema = "mkdir /home/marvin/marvin/astar/"+heuristic+"/problemas/"+pasta;
-			//string pastaProblema = "mkdir ~/astar/"+heuristic+"/problemas/"+pasta;
+			string pastaProblema = "mkdir /home/marvin/marvin/astar/"+heuristic+"/" + PROB_NAME  + "/"+pasta;
+			//string pastaProblema = "mkdir ~/astar/"+heuristic+"/" + PROB_NAME  + "/"+pasta;
 			printf("Tenta criar a pasta dominio.\n");
 			system(pastaProblema.c_str());
-			string pastaResultado = "mkdir /home/marvin/marvin/astar/"+heuristic+"/problemas/"+pasta+"/resultado";
+			string pastaResultado = "mkdir /home/marvin/marvin/astar/"+heuristic+"/" + PROB_NAME  +  "/"+pasta+"/resultado";
 		
-			//string pastaResultado = "mkdir ~/astar/"+heuristic+"/problemas/"+pasta+"/resultado";
+			//string pastaResultado = "mkdir ~/astar/"+heuristic+"/" + PROB_NAME  + "/"+pasta+"/resultado";
 			printf("Tenta criar a pasta resultado.\n");
 			system(pastaResultado.c_str());		
 
@@ -658,7 +666,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 
 			string bcdirectory;
         		bcdirectory = pasta + "/bc/" + bcdirectory;
-        		bcdirectory = "/reportss/" + bcdirectory;
+        		bcdirectory = "/" + RESUL_NAME  + "/" + bcdirectory;
         		bcdirectory = "testss/" + heuristic + bcdirectory;
         		bcdirectory = "marvin/" + bcdirectory;
         		bcdirectory = "marvin/" + bcdirectory;
@@ -725,7 +733,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 			for (int j = 0; j < quantidade_problemas; j++) {
 				string bcfile;
                                 bcfile =  pasta + "/bc/";
-                                bcfile = "testss/" + heuristic  + "/reportss/" + bcfile;
+                                bcfile = "testss/" + heuristic  + "/" + RESUL_NAME  +  "/" + bcfile;
                                 bcfile = "marvin/" + bcfile;
                                 bcfile = "marvin/" + bcfile;
                                 bcfile = "/home/" + bcfile;
