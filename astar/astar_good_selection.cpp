@@ -640,7 +640,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
                         allow = "chmod +x "+arquivo;
                         cout<<allow<<"\n";
                         system(allow.c_str());
-                        executeFile = "sh "+arquivo;
+                        executeFile = "timeout 1800 sh "+arquivo; //setting the limit time
                         system(executeFile.c_str());
                 }
 	}
