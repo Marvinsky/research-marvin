@@ -418,12 +418,11 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	outputFile<<left<<setw(24)<<"Domain";
         outputFile<<right<<setw(15)<<"instance";
         outputFile<<right<<setw(15)<<"heuristic";
-        outputFile<<right<<setw(15)<<"expanded\n\n";
+        outputFile<<right<<setw(15)<<"expanded";
+        outputFile<<right<<setw(15)<<"n\n\n";
 
-	string look_instance_name = "instance_name:";
-	string look_astar_name = "A*:";
-	string look_ss_name = "ss:";
-	int NUM_HEURISTICS = 13;
+
+	int total_instances_solved = 0;
 	do {
 
 		string domain;
@@ -469,6 +468,8 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
                         cout<<"Error trying to open the directory: "<<open_good_selectionFile.c_str()<<endl;
                 }
 
+		int instances_solved = v_dirDomain.size();
+		total_instances_solved += instances_solved;
 		outputFile<<left<<setw(24)<<domain;
 
 		//open each file into the directory
@@ -522,6 +523,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 						outputFile<<right<<setw(15)<<dir_name;
 						outputFile<<right<<setw(15)<<heur;
 						outputFile<<right<<setw(15)<<exp;
+						outputFile<<right<<setw(15)<<instances_solved;
 						outputFile<<"\n";
 					} else {
 						outputFile<<left<<setw(24)<<"";
@@ -539,6 +541,14 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
+
+	outputFile<<left<<setw(24)<<"total instances solved:";
+	outputFile<<right<<setw(15)<<"";
+	outputFile<<right<<setw(15)<<"";
+	outputFile<<right<<setw(15)<<"";
+	outputFile<<right<<setw(15)<<total_instances_solved;
+	outputFile<<"\n";
+
 	
 	outputFile.close();
 }
