@@ -1,0 +1,10 @@
+		/home/marvin/marvin/astar/gapdb_good/reportastar/elevators-opt11-strips/speed/p06_gapdb_12_F_31.pddl
+	initial_value: 31
+	h_min	gen	exp		V		SEv		VeSP		NPBP
+	30	16	1		0.062		4.8e+02		0.032		0
+	24	17	1		0.41		58		0.23		0
+	18	96	5		0.14		1.3e+02		0.42		0
+	13	213	11		0.085		1.5e+02		0.58		0
+	7	65085	3227		0.00037		1.9e+04		0.77		0
+	6	65144	3230		0.00038		1.6e+04		0.81		0
+	0	65145	3230		0.00048		0		1		0

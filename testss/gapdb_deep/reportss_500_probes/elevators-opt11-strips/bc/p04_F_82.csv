@@ -1,0 +1,43 @@
+h(,0):,ipdb
+h(,1):,heur is GAPDB,mutation_rate:0.1000000,size=2000000,with disjoint patterns
+h(,2):,heur is GAPDB,mutation_rate:1.0000000,size=2000000,without disjoint patterns
+h(,3):,lmcut
+h(,4):,heur is GAPDB,mutation_rate:0.3000000,size=2000000,with disjoint patterns
+h(,5):,merge_and_shrink
+h(,6):,heur is GAPDB,mutation_rate:0.4000000,size=2000000,with disjoint patterns
+h(,7):,heur is GAPDB,mutation_rate:0.9000000,size=2000000,with disjoint patterns
+h(,8):,heur is GAPDB,mutation_rate:0.5000000,size=2000000,without disjoint patterns
+h(,9):,heur is GAPDB,mutation_rate:0.2000000,size=2000000,without disjoint patterns
+h(,10):,heur is GAPDB,mutation_rate:0.8000000,size=2000000,with disjoint patterns
+h(,11):,heur is GAPDB,mutation_rate:0.7000000,size=2000000,without disjoint patterns
+h(,12):,heur is GAPDB,mutation_rate:0.6000000,size=2000000,without disjoint patterns
+bc(1/0/0/0/0/0/0/0/0/0/0/0/0)cc=2.14031e+16
+bc(0/0/0/1/0/0/0/0/0/0/0/0/0)cc=1.34996e+18
+bc(1/0/0/1/0/0/0/0/0/0/0/0/0)cc=3.03818e+11
+bc(0/0/0/0/0/1/0/0/0/0/0/0/0)cc=2.014e+22
+bc(1/0/0/0/0/1/0/0/0/0/0/0/0)cc=1.90075e+17
+bc(0/0/0/1/0/1/0/0/0/0/0/0/0)cc=1.0154e+15
+bc(1/0/0/1/0/1/0/0/0/0/0/0/0)cc=4.73241e+13
+bc(0/0/0/0/0/0/1/1/0/0/0/0/0)cc=2.77842e+23
+bc(0/0/0/1/0/0/1/1/0/0/0/0/0)cc=1.52141e+09
+bc(0/0/0/0/0/1/1/1/0/0/0/0/0)cc=3.76831e+21
+bc(1/0/0/0/0/1/1/1/0/0/0/0/0)cc=5.82418e+19
+bc(0/0/0/1/0/1/1/1/0/0/0/0/0)cc=2.25926e+16
+bc(1/0/0/1/0/1/1/1/0/0/0/0/0)cc=5.08474e+15
+bc(0/0/0/0/0/0/0/0/0/0/1/0/0)cc=8.7061e+20
+bc(0/0/0/0/0/1/0/0/0/0/1/0/0)cc=6.77032e+19
+bc(1/0/0/0/0/1/0/0/0/0/1/0/0)cc=7.2195e+11
+bc(0/0/0/1/0/1/0/0/0/0/1/0/0)cc=6.26599e+09
+bc(1/0/0/1/0/1/0/0/0/0/1/0/0)cc=6.45001e+10
+bc(0/0/0/0/0/1/1/1/0/0/1/0/0)cc=1.69983e+14
+bc(1/0/0/0/0/1/1/1/0/0/1/0/0)cc=4.84882e+13
+bc(1/0/0/1/0/1/1/1/0/0/1/0/0)cc=1.0527e+13
+bc(0/1/1/0/1/0/1/1/1/1/0/1/1)cc=5.77781e+14
+bc(0/1/1/0/1/1/1/1/1/1/0/1/1)cc=6.10445e+18
+bc(1/1/1/0/1/1/1/1/1/1/0/1/1)cc=1.3799e+15
+bc(0/1/1/1/1/1/1/1/1/1/0/1/1)cc=7.93662e+14
+bc(1/1/1/1/1/1/1/1/1/1/0/1/1)cc=1.17894e+14
+bc(0/1/1/0/1/1/1/1/1/1/1/1/1)cc=5.28648e+13
+bc(1/1/1/0/1/1/1/1/1/1/1/1/1)cc=4.06094e+17
+bc(0/1/1/1/1/1/1/1/1/1/1/1/1)cc=7.94668e+11
+bc(1/1/1/1/1/1/1/1/1/1/1/1/1)cc=4.81228e+13
