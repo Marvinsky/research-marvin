@@ -1,0 +1,4 @@
+		/home/marvin/marvin/astar/gapdb_good/reportastar/transport-opt08-strips/p01_gapdb_1_F_54.pddl
+	totalniveles: 1
+	f-value		#nodesByLevel		time		#nodesExpanded
+	54		8			1			8

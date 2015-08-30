@@ -38,20 +38,116 @@ barman-opt11-strips         pfile01-002          lmcut    5.76405e+06
 
 elevators-opt08-strips  
 elevators-opt11-strips  
-floortile-opt11-strips  
-nomystery-opt11-strips  
+floortile-opt11-strips      opt-p01-002          mands           3066
+                            opt-p04-007          lmcut    3.48292e+07
+                            opt-p03-006          lmcut    3.55247e+06
+                            opt-p02-004          lmcut    1.10515e+06
+                            opt-p01-001          mands           7012
+                            opt-p03-005          lmcut    2.06278e+06
+                            opt-p02-003          lmcut    3.38926e+06
+
+nomystery-opt11-strips              p13          gapdb            265
+                                    p05          mands          16118
+                                    p14          mands            336
+                                    p12          gapdb            114
+                                    p11          gapdb             74
+                                    p04          mands            995
+                                    p15          mands            346
+                                    p02          gapdb            532
+                                    p03          mands            255
+                                    p01          gapdb            268
+
 openstacks-opt08-adl    
-openstacks-opt08-strips 
-openstacks-opt11-strips 
-parcprinter-opt11-strips
+openstacks-opt08-strips             p08          lmcut    1.83802e+06
+                                    p07          mands     1.6453e+06
+                                    p09          lmcut         565860
+                                    p02          gapdb           3152
+                                    p06          lmcut           9385
+                                    p01          gapdb            567
+
+openstacks-opt11-strips             p04          lmcut         565860
+                                    p02          mands     1.6453e+06
+                                    p03          lmcut    1.83802e+06
+                                    p01          lmcut           9385
+
+parcprinter-opt11-strips            p02          mands            199
+                                    p03          mands            239
+                                    p01          mands            196
+
 parking-opt11-strips    
-pegsol-opt11-strips     
-scanalyzer-opt11-strips 
-sokoban-opt08-strips    
-sokoban-opt11-strips    
+pegsol-opt11-strips                 p08          mands         321112
+                                    p13          mands         697144
+                                    p10          mands         459965
+                                    p05          lmcut          43497
+                                    p14          mands    1.03432e+06
+                                    p12          lmcut          22207
+                                    p11          lmcut          30114
+                                    p07          lmcut         146074
+                                    p04          mands         244013
+                                    p15          mands         837735
+                                    p09          mands         342187
+                                    p02          lmcut         329757
+                                    p03          lmcut          17364
+                                    p06          lmcut         206109
+                                    p16          lmcut    7.34606e+06
+                                    p01          lmcut            196
+
+scanalyzer-opt11-strips             p02          mands          10884
+                                    p03          mands          29390
+                                    p01          gapdb             18
+
+sokoban-opt08-strips                p13          lmcut          84152
+                                    p10          lmcut          33511
+                                    p14          lmcut          15552
+                                    p12          lmcut          26664
+                                    p09          lmcut           4195
+                                    p02          lmcut            485
+                                    p03          gapdb           2792
+                                    p20          gapdb            861
+                                    p17          lmcut          26910
+                                    p06          lmcut            438
+                                    p01          lmcut            476
+
+sokoban-opt11-strips                p08          lmcut           4195
+                                    p14          lmcut          26664
+                                    p12          gapdb            861
+                                    p11          lmcut          84152
+                                    p07          lmcut          33511
+                                    p18          lmcut           4208
+                                    p02          lmcut          26910
+                                    p03          lmcut          15552
+                                    p01          mands            969
+
 tidybot-opt11-strips    
-transport-opt08-strips  
-transport-opt11-strips  
-visitall-opt11-strips   
-woodworking-opt08-strips
-woodworking-opt11-strips
+transport-opt08-strips              p13          gapdb    3.60089e+06
+                                    p12          gapdb         103926
+                                    p11          gapdb            826
+                                    p21          gapdb            856
+                                    p01          gapdb             32
+
+transport-opt11-strips              p04          gapdb    3.60089e+06
+                                    p03          gapdb         103926
+
+visitall-opt11-strips    problem07-half          lmcut    4.06095e+06
+                         problem03-full          gapdb            136
+                         problem05-full          lmcut         528310
+                         problem03-half          gapdb             17
+                         problem04-full          gapdb            704
+                         problem04-half          gapdb             58
+                         problem05-half          gapdb            219
+                         problem02-full          gapdb             10
+                         problem06-half          gapdb            228
+
+woodworking-opt08-strips            p22          lmcut           9620
+                                    p13          lmcut         312318
+                                    p12           ipdb    3.83318e+06
+                                    p11          mands            363
+                                    p21          gapdb            377
+                                    p23          mands          18589
+                                    p02          mands           2240
+                                    p01          mands           6044
+
+woodworking-opt11-strips            p02           ipdb    3.83318e+06
+                                    p03          lmcut         312318
+                                    p01          mands          18589
+
