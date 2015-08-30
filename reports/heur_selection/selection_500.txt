@@ -7,7 +7,24 @@ barman-opt11-strips         pfile01-002          lmcut    5.76405e+06           
                             pfile01-003          lmcut    5.72906e+06
                             pfile01-001           ipdb    9.57769e+06
 
-elevators-opt11-strips  
+elevators-opt11-strips              p08          gapdb    1.18562e+06             17
+                                    p13          gapdb    2.11823e+07
+                                    p10          gapdb         185475
+                                    p05          gapdb          30956
+                                    p14          gapdb    1.27385e+07
+                                    p12          gapdb    5.21249e+06
+                                    p07          gapdb    7.48922e+06
+                                    p04          lmcut          55752
+                                    p18          gapdb    2.30672e+06
+                                    p09          gapdb         813293
+                                    p02          gapdb          46583
+                                    p19          gapdb     1.4144e+06
+                                    p03          lmcut          38649
+                                    p20          gapdb    2.00048e+06
+                                    p06          gapdb          82853
+                                    p16          lmcut         116352
+                                    p01          gapdb           1613
+
 floortile-opt11-strips      opt-p01-002          mands           3066              7
                             opt-p04-007          lmcut    3.48292e+07
                             opt-p03-006          lmcut    3.55247e+06
@@ -86,4 +103,4 @@ woodworking-opt11-strips            p02           ipdb    3.83318e+06           
                                     p03          lmcut         312318
                                     p01          mands          18589
 
-total instances solved:                                                           70
+total instances solved:                                                           87
