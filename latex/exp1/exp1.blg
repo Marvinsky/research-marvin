@@ -7,45 +7,45 @@ Repeated entry---line 276 of file references.bib
  : @article{krause2012submodular
  :                              ,
 I'm skipping whatever remains of this entry
-You've used 2 entries,
+You've used 4 entries,
             2481 wiz_defined-function locations,
-            566 strings with 4789 characters,
-and the built_in function-call counts, 845 in all, are:
-= -- 66
-> -- 48
-< -- 1
-+ -- 18
-- -- 14
-* -- 71
-:= -- 143
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 4
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 38
-empty$ -- 73
-format.name$ -- 18
-if$ -- 170
+            578 strings with 5201 characters,
+and the built_in function-call counts, 1647 in all, are:
+= -- 129
+> -- 102
+< -- 2
++ -- 38
+- -- 30
+* -- 136
+:= -- 277
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 8
+chr.to.int$ -- 4
+cite$ -- 4
+duplicate$ -- 75
+empty$ -- 140
+format.name$ -- 38
+if$ -- 335
 int.to.chr$ -- 1
-int.to.str$ -- 3
-missing$ -- 2
-newline$ -- 18
-num.names$ -- 6
-pop$ -- 14
+int.to.str$ -- 5
+missing$ -- 4
+newline$ -- 28
+num.names$ -- 12
+pop$ -- 30
 preamble$ -- 1
-purify$ -- 2
+purify$ -- 4
 quote$ -- 0
-skip$ -- 23
+skip$ -- 45
 stack$ -- 0
-substring$ -- 41
-swap$ -- 4
+substring$ -- 76
+swap$ -- 8
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 14
+type$ -- 28
 warning$ -- 0
-while$ -- 7
+while$ -- 13
 width$ -- 0
-write$ -- 33
+write$ -- 58
 (There was 1 error message)
