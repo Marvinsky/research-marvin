@@ -1,0 +1,80 @@
+\footnotesize  % Switch from 12pt to 11pt; otherwise, table won't fit
+\setlength\LTleft{100pt}            % default: \fill
+\setlength\LTright{200pt}           % default: \fill
+\begin{longtable}{@{\extracolsep{\fill}} llll @{}}
+\hline
+
+Level               & \textit{f-value} & quantity \\ \hline
+0                   & 6       & 1        \\ \hline
+\multirow{2}{*}{1}  & 6       & 1        \\ \cline{2-3} 
+                    & 8       & 3        \\ \hline
+\multirow{3}{*}{2}  & 6       & 1        \\ \cline{2-3} 
+                    & 8       & 7        \\ \cline{2-3} 
+                    & 10      & 8        \\ \hline
+\multirow{4}{*}{3}  & 6       & 1        \\ \cline{2-3} 
+                    & 8       & 9        \\ \cline{2-3} 
+                    & 10      & 27       \\ \cline{2-3} 
+                    & 12      & 15       \\ \hline
+\multirow{5}{*}{4}  & 6       & 1        \\ \cline{2-3} 
+                    & 8       & 11       \\ \cline{2-3} 
+                    & 10      & 59       \\ \cline{2-3} 
+                    & 12      & 88       \\ \cline{2-3} 
+                    & 14      & 25       \\ \hline
+\multirow{6}{*}{5}  & 6       & 1        \\ \cline{2-3} 
+                    & 8       & 12       \\ \cline{2-3} 
+                    & 10      & 79       \\ \cline{2-3} 
+                    & 12      & 239      \\ \cline{2-3} 
+                    & 14      & 186      \\ \cline{2-3} 
+                    & 16      & 15       \\ \hline
+\multirow{7}{*}{6}  & 6       & 1        \\ \cline{2-3} 
+                    & 8       & 13       \\ \cline{2-3} 
+                    & 10      & 103      \\ \cline{2-3} 
+                    & 12      & 507      \\ \cline{2-3} 
+                    & 14      & 832      \\ \cline{2-3} 
+                    & 16      & 321      \\ \cline{2-3} 
+                    & 18      & 15       \\ \hline
+\multirow{6}{*}{7}  & 8       & 14       \\ \cline{2-3} 
+                    & 10      & 116      \\ \cline{2-3} 
+                    & 12      & 689      \\ \cline{2-3} 
+                    & 14      & 2095     \\ \cline{2-3} 
+                    & 16      & 1824     \\ \cline{2-3} 
+                    & 18      & 210      \\ \hline
+\multirow{7}{*}{8}  & 8       & 14       \\ \cline{2-3} 
+                    & 10      & 130      \\ \cline{2-3} 
+                    & 12      & 921      \\ \cline{2-3} 
+                    & 14      & 4387     \\ \cline{2-3} 
+                    & 16      & 7480     \\ \cline{2-3} 
+                    & 18      & 3194     \\ \cline{2-3} 
+                    & 20      & 210      \\ \hline
+\multirow{6}{*}{9}  & 10      & 144      \\ \cline{2-3} 
+                    & 12      & 1051     \\ \cline{2-3} 
+                    & 14      & 5997     \\ \cline{2-3} 
+                    & 16      & 18279    \\ \cline{2-3} 
+                    & 18      & 16629    \\ \cline{2-3} 
+                    & 20      & 2160     \\ \hline
+\multirow{7}{*}{10} & 10      & 144      \\ \cline{2-3} 
+                    & 12      & 1195     \\ \cline{2-3} 
+                    & 14      & 8099     \\ \cline{2-3} 
+                    & 16      & 38063    \\ \cline{2-3} 
+                    & 18      & 65944    \\ \cline{2-3} 
+                    & 20      & 29299    \\ \cline{2-3} 
+                    & 22      & 2160     \\ \hline
+\multirow{6}{*}{11} & 12      & 1339     \\ \cline{2-3} 
+                    & 14      & 9294     \\ \cline{2-3} 
+                    & 16      & 52159    \\ \cline{2-3} 
+                    & 18      & 159155   \\ \cline{2-3} 
+                    & 20      & 147444   \\ \cline{2-3} 
+                    & 22      & 20085    \\ \hline
+\multirow{7}{*}{12} & 12      & 1339     \\ \cline{2-3} 
+                    & 14      & 10633    \\ \cline{2-3} 
+                    & 16      & 70747    \\ \cline{2-3} 
+                    & 18      & 330615   \\ \cline{2-3} 
+                    & 20      & 576668   \\ \cline{2-3} 
+                    & 22      & 260469   \\ \cline{2-3} 
+                    & 24      & 20085    \\ \hline
+
+
+
+\caption{\textit{f-value} distribution expanding the graph using depth first search and collecting the \textit{f-value} using a consistent heuristic and threshold twice the initial heuristic value.}
+\label{table:tabledfs}
+\end{longtable}

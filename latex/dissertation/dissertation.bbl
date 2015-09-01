@@ -1,0 +1,36 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Holte et~al.(2006)Holte, Felner, Newton, Meshulam, and
+  Furcy]{holte2006maximizing}
+Robert~C Holte, Ariel Felner, Jack Newton, Ram Meshulam, and David Furcy.
+\newblock Maximizing over multiple pattern databases speeds up heuristic
+  search.
+\newblock \emph{Artificial Intelligence}, 170\penalty0 (16):\penalty0
+  1123--1136, 2006.
+
+\bibitem[Krause and Golovin(2012)]{krause2012submodular}
+Andreas Krause and Daniel Golovin.
+\newblock Submodular function maximization.
+\newblock \emph{Tractability: Practical Approaches to Hard Problems},
+  3:\penalty0 19, 2012.
+
+\bibitem[Xu et~al.(2014)Xu, Fang, Jiang, Conitzer, Dughmi, and
+  Tambe]{xu2014solving}
+Haifeng Xu, Fei Fang, Albert~Xin Jiang, Vincent Conitzer, Shaddin Dughmi, and
+  Milind Tambe.
+\newblock Solving zero-sum security games in discretized spatio-temporal
+  domains.
+\newblock \emph{Proceedings of the 28th Conference on Artificial Intelligence
+  (AAAI 2014), Qubec, Canada}, 2014.
+
+\bibitem[Krause and Guestrin(2007)]{krause2007near}
+Andreas Krause and Carlos Guestrin.
+\newblock Near-optimal observation selection using submodular functions.
+\newblock \emph{AAAI}, 7:\penalty0 1650--1654, 2007.
+
+\end{thebibliography}
