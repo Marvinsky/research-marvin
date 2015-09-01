@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,6 +12,20 @@ Robert~C Holte, Ariel Felner, Jack Newton, Ram Meshulam, and David Furcy.
   search.
 \newblock \emph{Artificial Intelligence}, 170\penalty0 (16):\penalty0
   1123--1136, 2006.
+
+\bibitem[Domshlak et~al.(2010)Domshlak, Karpas, and
+  Markovitch]{domshlak2010max}
+Carmel Domshlak, Erez Karpas, and Shaul Markovitch.
+\newblock To max or not to max: Online learning for speeding up optimal
+  planning.
+\newblock In \emph{AAAI}, 2010.
+
+\bibitem[Tolpin et~al.(2013)Tolpin, Beja, Shimony, Felner, and
+  Karpas]{tolpin2013towards}
+David Tolpin, Tal Beja, Solomon~Eyal Shimony, Ariel Felner, and Erez Karpas.
+\newblock Towards rational deployment of multiple heuristics in a*.
+\newblock In \emph{Proceedings of the Twenty-Third international joint
+  conference on Artificial Intelligence}, pages 674--680. AAAI Press, 2013.
 
 \bibitem[Krause and Golovin(2012)]{krause2012submodular}
 Andreas Krause and Daniel Golovin.
@@ -32,5 +46,11 @@ Haifeng Xu, Fei Fang, Albert~Xin Jiang, Vincent Conitzer, Shaddin Dughmi, and
 Andreas Krause and Carlos Guestrin.
 \newblock Near-optimal observation selection using submodular functions.
 \newblock \emph{AAAI}, 7:\penalty0 1650--1654, 2007.
+
+\bibitem[B{\"a}ckstr{\"o}m and Nebel(1995)]{backstrom1995complexity}
+Christer B{\"a}ckstr{\"o}m and Bernhard Nebel.
+\newblock Complexity results for sas+ planning.
+\newblock \emph{Computational Intelligence}, 11\penalty0 (4):\penalty0
+  625--655, 1995.
 
 \end{thebibliography}

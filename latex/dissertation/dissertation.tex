@@ -143,7 +143,7 @@ In this dissertation we advance and develop the approach of selection for solvin
 
 \begin{itemize}
   \item Develop an approach for selecting a subset of heuristic functions with the goal of reducing the running time of the search algorithms employing these functions.
-  \item Obtain the cardinality of the subsets of heuristics found.
+  \item Develop approaches to obtain the cardinality of the subsets of heuristics found.
   \item Develop a method to find a subset of heuristics from a large pool of heuristics that optimize the number of nodes expanded in the process of search.
   \item Use Stratified Sampling (SS) algorithm for predicting the search tree size of Iterative-Deepening A* (IDA*). We use SS as our utility function. 
 \end{itemize}
@@ -156,13 +156,15 @@ In this dissertation we advance and develop the approach of selection for solvin
 \newpage
 
 \section{Introduction}
-Every problem of Artificial Intelligent (AI) can be cast as a state space problems. The state space is a set of states where each state represent a possible solution to the problem and each state is linked with other states if exists a function that goes from one state to another. In the search space could be many solutions that represent the same state, each of this solution is called node. So, many nodes can be represented as one state. To find the solution of the problem is required the use of a search algorithm for example: Depth First Search (DFS), which looks the solution of the problem traversing the search space exploring the nodes in each branch before backtracking up to find the solution. Another search algorithm is Breadth First Search (BFS), which looks for the solution exploring the neighbor nodes first, before moving to the next level of neighbors. The mentioned algorithms have the characteristic that when they do the search, they generate a larger search space, basically for two main reasons: a) Need to be consider the total number of states and each possibility need to be analyzed in order to determinate if the solution is found. b) There is no guide to get to the solution. The search space that generate these algorithms is called Brute force search tree (BFST).
+Every problem of Artificial Intelligent (AI) can be cast as a state space problems. The state space is a set of states where each state represent a possible solution to the problem and each state is linked with other states if exists a function that goes from one state to another. In the search space there are many solutions that represent the same state, each of this solution is called node. So, many nodes can be represented as one state. To find the solution of the problem is required the use of a search algorithm for example: Depth First Search (DFS), which looks the solution of the problem traversing the search space exploring the nodes in each branch before backtracking up to find the solution. Another search algorithm is Breadth First Search (BFS), which looks for the solution exploring the neighbor nodes first, before moving to the next level of neighbors. The mentioned algorithms have the characteristic that when they do the search, they generate a larger search space, basically for two main reasons: a) Consider the total number of states to be analyzed in order to determinate if the solution is found. b) There is no guide to get to the solution. The search space that generate these algorithms is called Brute force search tree (BFST).
 
-There are other types of algorithms called heuristic informed search, which are algorithms that requires the use of the heuristics. The heuristic is the estimation of the distance for one node in the search space to get to the near solution. The heuristic informed search generates a smaller search tree in comparison to the BFST, because the heuristic guide the search to get the solution reducing the running time of the search algorithm.
-  
-  
+There are other types of algorithms called heuristic informed search, which are algorithms that requires the use of heuristics. The heuristic is the estimation of the distance for one node in the search tree to get to the near solution. The heuristic informed search generates a smaller search tree in comparison to the BFST, because the heuristic guide the search exploring the nodes that are in the solution path and pruning the nodes which are not. Also, the use of heuristics reduce the running time of the search algorithm.
 
-The nodes that the algorithm need to review is 
+There are different approaches to create heuristics, and one of the approaches that have showed most successfull results in heuristic generation is called Pattern Database (PDBs), which is memory-based heuristic functions obtained by abstracting away certain problem variables, so that the remaining problem ("pattern") is small enough to be solved optimally for every state by blind exhaustive search. The results, stored in a table in memory, constitute a PDB for the original problem. The abstraction of the search space gives an admissible heuristic function, mapping states to lower bounds.
+
+Nevertheless, using all the heuristic does not guarantees to solve the major number of problems in a limit time. \citep{domshlak2010max} and \citep{tolpin2013towards} results showed that evaluating the heuristic lazily, only when they are essensial to a decision to be made in the search process is worthy in comparison to take the maximum of the set of heuristics.
+
+Finally, the objective of this dissertation is to develop an approach for selecting heuristics functions from a large set of heuristics with the goal of reducing the running time of search algorithm employing these functions.
 
 
 
@@ -172,6 +174,7 @@ Maybe writing \citep{krause2012submodular} should demostrated something.
 Cite by holte \citep{holte2006maximizing} and this.
 Another cite \citep{xu2014solving} what about this.
 Another cite \citep{krause2007near} what about this.
+Another cite by bernand nebel \citep{backstrom1995complexity} what about this.
 
 
 In order to achieve the first objective we present The Greedy Algorithm, which provides a good approximation to the optimal solution of the NP-hard optimization problem \citep{krause2012submodular}. 
