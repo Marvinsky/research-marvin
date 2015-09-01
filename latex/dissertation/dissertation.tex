@@ -132,17 +132,34 @@ MARCH - 2016
 \end{center}
 \end{titlepage}
 
-
-\tableofcontents
 \newpage
 
+\abstract{
+In this dissertation we present a greedy method based on the theory of supermodular optimization for selecting a subset of heuristics functions from a large set of heuristics with the objective of reducing the running time of the search algorithms.
+
+ \citep{holte2006maximizing} showed that search can be faster if several smaller pattern databases are used instead of one large pattern database. We introduce a greedy method for selecting a subset of the most promising heuristicss from a large set of heuristics functions to guide the A* search algorithm. If the heuristics are consistent, our method selects a subset which is guaranteed to be near optimal with respect to the resulting A* search tree size. In addition to being consistent, if all heuristics have the same evaluation time, our subset is guaranteed to be near optimal with respect to the resulting A* running time. We implemented our method in Fast Downward and showed empirically that it produces heuristics which outperform the state of the art heuristics in the International Planning Competition benchmarks.
+ 
+In this dissertation we advance and develop the approach of selection for solving different state-space problems. Namemly,
+
+\begin{itemize}
+  \item Develop an approach for selecting a subset of heuristic functions with the goal of reducing the running time of the search algorithms employing these functions.
+  \item Obtain the cardinality of the subsets of heuristics found.
+  \item Develop a method to find a subset of heuristics from a large pool of heuristics that optimize the number of nodes expanded in the process of search.
+  \item Use Stratified Sampling (SS) algorithm for predicting the search tree size of Iterative-Deepening A* (IDA*). We use SS as our utility function. 
+\end{itemize}
+ 
+ }
+\newpage
+
+\tableofcontents
+
+\newpage
 
 \section{Introduction}
-We present a greedy method based on the theory of supermodular optimization for selecting a subset of heuristics functions from a large set of heuristics with the objective of reducing the running time of the search algorithms. \citep{holte2006maximizing} showed that search can be faster if several smaller pattern databases are used instead of one large pattern database. We introduce a greedy method for selecting a subset of the most promising heuristicss from a large set of heuristics functions to guide the A* search algorithm. If the heuristics are consistent, our method selects a subset which is guaranteed to be near optimal with respect to the resulting A* search tree size. In addition to being consistent, if all heuristics have the same evaluation time, our subset is guaranteed to be near optimal with respect to the resulting A* running time. We implemented our method in Fast Downward and showed empirically that it produces heuristics which outperform the state of the art heuristics in the International Planning Competition benchmarks.
-
 Every problem of Artificial Intelligent (AI) can be cast as a state space problems. The state space is a set of states where each state represent a possible solution to the problem and each state is linked with other states if exists a function that goes from one state to another. In the search space could be many solutions that represent the same state, each of this solution is called node. So, many nodes can be represented as one state. To find the solution of the problem is required the use of a search algorithm for example: Depth First Search (DFS), which looks the solution of the problem traversing the search space exploring the nodes in each branch before backtracking up to find the solution. Another search algorithm is Breadth First Search (BFS), which looks for the solution exploring the neighbor nodes first, before moving to the next level of neighbors. The mentioned algorithms have the characteristic that when they do the search, they generate a larger search space, basically for two main reasons: a) Need to be consider the total number of states and each possibility need to be analyzed in order to determinate if the solution is found. b) There is no guide to get to the solution. The search space that generate these algorithms is called Brute force search tree (BFST).
 
-There are other types of algorithms called heuristic informed search, which are algorithms that requires the use of the heuristics. The heuristic is the estimation of the distance for one node in the search space to get to the near solution. The heuristic informed search generates a smaller search tree in comparison to the BFST  
+There are other types of algorithms called heuristic informed search, which are algorithms that requires the use of the heuristics. The heuristic is the estimation of the distance for one node in the search space to get to the near solution. The heuristic informed search generates a smaller search tree in comparison to the BFST, because the heuristic guide the search to get the solution reducing the running time of the search algorithm.
+  
   
 
 The nodes that the algorithm need to review is 
