@@ -1,6 +1,10 @@
 
-\documentclass[graybox]{svmult}
+%\documentclass[11pt,a4paper,oneside]{report}
+\documentclass[a4paper,12pt]{article}
 \synctex=1
+
+\usepackage{pslatex,palatino,avant,graphicx,color}
+\usepackage[margin=2cm]{geometry}
 
 \usepackage{mathptmx}       % selects Times Roman as basic font
 
@@ -8,7 +12,7 @@
 \usepackage{courier}        % selects Courier as typewriter font
 \usepackage{type1cm}        % activate if the above 3 fonts are
                             % not available on your system
-%
+
 \usepackage{makeidx}         % allows index generation
 \usepackage{graphicx}        % standard LaTeX graphics tool
                              % when including figure files
@@ -18,355 +22,234 @@
 
 \usepackage[bottom]{footmisc}% places footnotes at page bottom
 
-
 \usepackage[utf8]{inputenc}
 \inputencoding{utf8}
 
-
-\usepackage[round]{natbib}
+\usepackage[square,sort]{natbib}
 \bibliographystyle{unsrtnat}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
 
 \usepackage{longtable}
 \usepackage{pdflscape}
 
 %for formula references
-\usepackage{amsmath} 
+\usepackage{amsmath}
+
+\newtheorem{mydef}{Definition}
+
+\usepackage{changes}
+%triangledown
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage[]{algorithm2e}
+
+%langle
+\usepackage{scalerel}
+\usepackage{graphicx}
 
 
-\usepackage[USenglish]{babel}
-\usepackage[nodayofweek,level]{datetime}
-\newcommand{\mydate}{\formatdate{4}{11}{2014}}
+%width of the column
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
-\makeindex             
+%rotate the name of the column
+\usepackage{adjustbox}
+\usepackage{array}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcolumntype{R}[2]{%
+    >{\adjustbox{angle=#1,lap=\width-(#2)}\bgroup}%
+    l%
+    <{\egroup}%
+}
+\newcommand*\rot{\multicolumn{1}{R{90}{1em}}}% no optional argument here, please!
+
+%checkmark
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+
+\makeindex
 
 \begin{document}
-\title*{Predict the Number of Nodes Expanded by A* MARVINSKY}
-\author{Marvin Abisrror \\ Departamento de Informática \\Universidade Federal de Vicosa \\Viçosa, Brazil}
-\maketitle
-
-\abstract{Estimate the time a search algorithm will last to find a solution or which heuristic function to use to solve a particular problem instance are questions we do when we start working on solving an instance domain problem. These question are solved knowing the running time of the instance domain throught the number of nodes expanded performed by heuristic search algorithm seeking solutions in state spaces. There are instances that try to find their goal state could take much time and people do not have enough time to spend watching if the algorithm found the solution which is a boring activity. In this paper we propose a new approach to make prediction about how long an algorithm could take to find a solution, our hypotheses is based in the number of nodes the algorithm expand during the search. So, we make predictions about the number of nodes the algorithm will expand during the search until find the solution in order to know how long the algorithm will last to solve the problem. We use the optimal problem domains from fast-downward planning system to applied our approach and the results are not precise so far, but we are working on improving it.}
 
 
-\keywords{Prediction; Artificial Intelligence; A*}
+\begin{titlepage}
+
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=8cm]{./image/ufv1}
+\end{center}
+\end{figure}
+
+CENTRO DE CIENCIAS EXATAS E TECNOLOGICAS - CCE\\
+\vspace*{0.15in}
+DEPARTAMENTO DE INFORMATICA \\
+\vspace*{0.6in}
+\begin{large}
+PROJECT:\\
+\end{large}
+\vspace*{0.2in}
+\begin{Large}
+\textbf{ON SELECTING HEURISTIC FUNCTIONS FOR DOMAIN-INDEPENDENT PLANNING.} \\
+\end{Large}
+\vspace*{0.3in}
+\begin{large}
+%A Thesis Project submitted by Marvin Abisrror for the degree of Master to the PPG\\
+\textbf{Marvin Abisrror Zarate} \\
+MSc Student in Computer Science \\
+\end{large}
+\vspace*{0.3in}
+\rule{80mm}{0.1mm}\\
+\vspace*{0.1in}
+\begin{large}
+Levi Henrique Santana de Lelis \\
+(Advisor)
+\
+
+\
+
+\
+
+\
+Santiago Franco \\
+(Co-Advisor)
+\
+
+\
+
+\
+
+\
+
+\
+\end{large}
+VIÇOSA - MINAS GERAIS\\
+JULY - 2015
+\end{center}
+\end{titlepage}
+
+
+\tableofcontents
+\newpage
+
 \section{Introduction}
-\label{sec:1}
-We chosen A* \citep{hart1968formal} search algorithm to predict the number of nodes it expands for a optimal domain problems because A* is a search algorithm that correspond to the optimal domain problems we want to solve. Also, we require solutions with the least possible cost using admissible and consistent heuristics. Our approach has two main stages which are: In the first stage we use the tree generated by Dijkstra algorithm to collect the number of nodes expanded by level. In the second stage we use Stratified Sampling (SS) to generate the distribution of the \textit{f-value} by level.  With these two stages completed for the problem we make predictions based on a mathematical formulas proposed here.\newline
+In the last few decades, Artificial Intelligence has made significant strides in domain-independent planning. Some of the progress has resulted from adopting the heuristic search approach to problem-solving, where use of an appropriate heuristic often means substantial reduction in the time needed to solve hard problems. Initially heuristics were hand-crafted. These heuristics required domain-specific expertise and often much trial-and-error effort.\\
 
-Informed algorithms such as A*  is very important in AI because guide us in the resolution of interesting applications. This important algorithm has two elements: The heuristic value from a state \textbf{\textit{s}}, which give us an estimate of the remaining goal distance named as \textbf{\textit{h}}. Intuitively, nodes with lower heuristic value are more promising than nodes with higher heuristic value because they seem to be closer to the solution.  And the cost to go from the origin state to the current state named as \textbf{\textit{g}}. The sum of these elements \textbf{\textit{f = h + g}} is called cost function, which help us to prioritize node expansion during the search chosing the nodes that generate a close approximation to the solution path.
-\newline
+Recently, techniques \citep{haslum2007domain, edelkamp2007automated, nissim2011computing}  have been developed to automatically generate heuristics from domain and problem specifications. The component that generate heuristics have the name of \textit{heuristic generators} \citep{BarleySantiagoOver}.  Many of these \textit{heuristic generators} work by creating abstractions of the original problem spaces. Usually there are a number of different ways to abstract the problem space, and the generators search for a good abstraction to create their heuristic. These searches can be guided by predictions about the impact that different choices will have on the size of the problem's search space \citep{haslum2007domain}.\\
 
-Dijkstra search Algorithm generate a \textbf{SPT}(\textit{shortest path tree}) with given source \textbf{\textit{s}} as root. Dijkstra is a greedy algorithm where we maintain two sets, one set contains nodes included in shortest path tree, and the other set includes nodes not yet included in shortest path tree. In each iteration of the algorithm, we find a node which is in the other set (not yet included) and has minimum distance from the start state which is added to the shortest path tree set. The heuristic value when Dijkstra is used is \textbf{\textit{0}} for all the nodes and as consequence the guide to get the solution is the cost to go from the parent node to their child node. Then, Dijkstra is not considered as informed algorithm, for our purpose we will use the information of the nodes expanded at each level by Dijkstra as our first term of our prediction formula.
-\newline
+Solving domain-independent planning problems can be very hard. Most of the benchmark problems are NP-Complete \citep{helmert2006fast}.\\
 
-Stratification Sampling (\textbf{SS})  is applied to the problem to predict the number of nodes expanded in the tree. \textbf{SS} works iteratively expanding without counting nodes that represent the same state because it chose randomly one of the repeated node that have more chance to be used and removing or avoiding the insertion of the other. This behavior does that \textbf{SS} overestimates the real number of nodes of the tree. We collect the nodes with \textit{f-value} less than or equal to the threshold \textbf{\textit{d}} which is equal to two times the heuristic value of the initial state: 
-\[ 
-d =2 \times (s*)
-\]
-In each level of the tree geneerated by \textbf{SS} we chose the nodes that meets the condition in order to generate our distribution.  We build our distribution based on \textbf{SS} because \citep{lelis2013predicting} have shown that \textbf{SS} produce much more accurate predictions of the search tree than competing schemes such as \textbf{CDP} \citep{zahavi2010predicting}.
-\newline
+Sometimes we will find instances that takes too much time to find the solution, and the measure of that time could be hours, days or even years. Users of search algorithms usually do not know \textit{a priori} how long it will take to solve a problem instance $-$ some instances could be solved quickly while others could take long time.\\
 
-The formula to predict the number of nodes expanded by A* are  related with the information from Dijkstra Algorithm and the distribution of \textit{f-value} from \textbf{SS}.
+In domain-independent planning one is required to solve a problem without a priori information about the problem. Moreover, the process of solving the problem is fully automated.\\
 
-\section{Background}
-We use as experiments the competitions domains problems from the fast-downward benchmarks. The planner contains satisficing and optimization track problems, the satisficing problem are so hard to work and also is difficicult to found an optimal solutions, so they could be used to research because we pretend to predict the number of nodes expanded in the tree but we won't found an optimal solutions and also it would skip our analysis using consistent heuristics. In this research we will use the problems that require optimization in order to test our approach. 
+Domain-independent planners can potentially be applied in various areas such as manufacturing, space systems, software engineers, robotics, education, and entertainment. On the whole, an strategy which allows us to solve a larger number of problems using domain-independent planning is a very important task in AI.\\
 
-\subsection{Problem Domains}
-Two of the optimal domain problems we have worked are barman and parking. 
+The proposal of this project is to develop an approach for selecting heuristics functions from a large set of heuristics with the objective to optimize the search of the solution applied by the domain-independent planning.
 
-\subsubsection{Barman}
-This domain was created for the \textit{International Planning Competition (IPC)} in \textit{2011}. In this domain there is a robot barman that manipulates drink dispensers, glasses and shaker. The goal is to find a plan of the robot's actions that serves a desired set of drinks.
+\section{Related Work}
+Search Algorithms, such as A* \citep{hart1968formal}, are fundamental in many AI applications. A* uses the $f(s) = g(s) + h(s)$ cost function to guide its search. Here, $g(s)$ is the cost of the path from the start state to state \textit{s}, and $h(s)$ is the estimated cost-to-go from \textit{s} to a goal; $h(.)$ is known as the heuristic function.\\
 
-\subsubsection{Parking}
-This domain was created for learning track \textit{IPC-2008}. This domain involves parking cars on a street with N curb locations, and where cars can be double-parked but not triple-parked. The goal is to find a plan to move from one configuration of parked cars to another configuration, by driving cars from one curb location to another. 
+ A heuristic \textit{h} is \textit{admissible} if $h(s) \leq dist(s, goal)$ for every state \textbf{s} and goal state \textit{goal}, where \textit{dist(n, m)} is the cost of the least-cost path from \textit{n} to \textit{m}. If $h(n)$ is admissible, \textit{i.e.,} always returns a lower bound estimate of the optimal cost. Search algorithms that use an admissible heuristic are guaranteed to find an optimal path from the start state to a goal state if one exists.\\
 
-\subsubsection{Blocks World}
-This domain had origin in the \textit{IPC-2000}. This domain consists of a set of blocks, a table and a robot hand. The blocks can be on top of other blocks or on the table; a block that has nothing on it is clear; and the robot hand can hold one block or be empty. The goal is to find a plan to move from one configuration of blocks to another. The problem probBLOCKS-4-0 is going to be our instance that will be used to explain our results in this paper. We chosen that because is a simple problem that can be resolved in less than few seconds and also contains the characteristics of duplicate nodes.
+In addition to being admissible, the heuristic also could be \textit{consistent}. A heuristic \textit{h} is \textit{consistent} if for every pair of states, \textit{m} and \textit{n}, $h(m) - h(n) \leq dist(m, n)$\\
 
-\section{Problem Formulation}
-Let the \textit{underlying search tree} (\textit{UST}) be the full brute-force tree created from a connected, undirected and implicitly defined \textit{underlying search graph} (\textit{USG}) describing a state space. Some search algoritms expand a subtree of the \textit{UST} while searching for a solution (e.g., a portion of the \textit{UST} might not be expanded due to heuristic guidence.); we call this subtree the \textit{expanded search tree} (\textit{UST}). In this paper we want to estimate the size of the subgraph expanded by an algorithm searching the (\textit{USG}); we call this subgraph the \textit{expanded search graph} (\textit{ESG})
+There are different approaches for creating heuristics: abstractions (e.g., pattern databsses (PDBs) \citep{culberson1996searching}), delete relaxations (e.g., $h\sp{max}$ \citep{bonet2001planning}), and landmarks (e.g., LM-cut \citep{helmert2009landmarks}).\\
 
+Works related to PDBs shows that, on average, for a single PDB the larger the PDB (i.e., the less abstract the pattern), the smaller the search tree \citep{holte1999space}. Another approach mention the possibility of combining patterns for smaller problems with the object of producing heuristics for larger problems \citep{culberson1998pattern}, e.g., 8-puzzle and/or 15-puzzle to create a heuristic to work with 24-puzzle.\\
 
+\citep{holte2004multiple} experimented with heuristic search algorithms guided by heuristic functions which considered the maximum value of a set of heuristics (max), and heuristic functions which considered the value of a heuristic selected randomly from a set of heuristics (random). Holte et.,found that maxing over multiple PDBs, the per node evaluation cost is equal to the sum of the individual PDB evaluation costs. Holte et al., also found that the running time of search algorithms expanding smaller search trees could be larger than the running time of search algorithms expanding larger search trees. \citep{zahavi2007inconsistent} use random combiner and showed that using a large set of PDBs can reduce the search tree size more than using max over a smaller subset of those PDBs. This is because, for large PDB we have less abstract pattern. Consequently, the smaller the search tree.\\
 
-\begin{definition}
-  \textit{(Canonical and Duplicate Nodes). A node n in the UST is called a duplicate node if there exists another node n' in the UST such that state(s) $=$ state(n') and n' $<$  n. A node that is not duplicate is called a canonical node.}
-\end{definition}
+The idea of not using all heuristics to evaluate every node has appeared several times recently. See for instance \textit{selmax} \citet{domshlak2011selmax}, Lazy A* (LA*), and Rational Lazy A* (RLA*) \citep{tolpin2013towards}. These algorithms decide which heuristics from a set should be used to evaluate a given node. They can be explained most easily as choosing between a cheap and less accurate heuristic, h1, and an accurate but expensive heuristic, h2. \textit{Selmax} chooses which to use by estimating whether more time will be saved by using h1 and possibly not expanding it. \textit{Selmax} learns online a classifier that predicts when it should use h2 at a node. \textit{Selmax} may expand more nodes than max but its overall problem solving time is often lower than both max or random.\\
 
+The previous works mentioned above showed that reducing the search tree size does not necessarily reduces the search running time. This is a form of \textit{utility} problem. In the 1980's there was work on learning search control rules for planners that has many parallels with the current work on multiple PDBs. The goal of both is to add new sources of knowledge to speedup the search for solutions. In the 1980's, learning methods automated the acquisition of search control rules. However, \citep{Minton1990363} found that sometimes adding more search control rules would reduce the search space but could also increase the search time. Minton's approach to this problem was to estimate the utility of a new search control rule and only add those rules whose benefits outweighed their costs.\\
 
-We define three graphs: The first one is the graph generated by dijkstra algorithm (\textit{subtree of the UST}), which contains the tree without duplicate nodes. The second is the Brute Force Search tree generated by the Stratified Sampling algorithm which generate duplicate nodes and the last one is the tree generated by A* using a consistent heuristic which is also the tree we want to predict.\newline
+Recent work on combining multiple PDBs has encountered the same problem. Adding another PDB to max often reduces the size of the search tree, but it increases the per node evaluation costs. Sometimes the benefits of having a smaller search tree are outweighed by the additional per node costs. Before adding another PDB to the combination, its utility must be estimated. Estimating a PDB's utility involves not only reasoning about its impact on search tree size but also per node evaluation costs. These two impacts must be evaluated in light of how they both affect search time.\\
 
-Formally, Let \textit{G = (N, E)} be a  graph representing an expanded search graph (ESG) of  each graph explained above where \textit{N} is its set of states and  for each:
-\[  {n \in  N / op(n) =  {op_i|(n, n_i)}  \in E }  \]
+The system most similar to our proposal of selecting heuristics is RIDA* \citep{BarleySantiagoOver}. RIDA* also selects a subset from a pool of heuristics to guide the A* search. In RIDA* this is done by starting with an empty subset and trying all combinations of size one before trying the combination of size two and so on. RIDA* stops after evaluating a fixed number of subsets. While RIDA* is able to evaluate a set of heuristics with tens of elements, we want that our approach could evaluate a set of heuristics with thousands of elements.\\
 
- is its set of operators. We use the words edges and operators interchangeably. The prediction is to estimate the size of \textit{N} without fully generate the ESG from A*.
+\section{Problem}
+This project is concerned with cost-optimal state-space planning using the A* algorithm \citep{hart1968formal}. We asume that a pool, $\zeta$, of hundreds or even thousands of heuristics is available, and that the final heuristic we assume to guide A*, $h_{\substack{max}}$, will be defined as the maximum over a subset $\zeta\sp{\prime}$ of those heuristics ($h_{\substack{max}(s, \zeta\sp{\prime})} = \max\limits_{ h \in \zeta\sp{\prime}}h(s)$). The choice of the subset $\zeta\sp{\prime}$ can greatly affect the efficiency of A*. For a given size \textit{N} and planning task $\triangledown$, a subset containing \textit{N} heuristics from $\zeta$ is optimal if no other subset containing \textit{N} heuristics from $\zeta$ results in A* expanding fewer nodes when solving $\triangledown$.\\
 
+\section{Objective}
 
-\section{Predicting the size of the Search Graph}
-We now explain how we pretend to achieve the prediction of the number of  nodes expanded by A*.\newline
+The general objective of this project is to develop an approach for selecting a subset of heuristic functions with the goal of reducing the running time of search algorithms employing these functions. The cardinality of the subset of heuristics found is also part of the research.
 
-\subsection{Dijkstra Algorithm}
-Dijkstra Algorithm is an uninformed search algorithm. In our cost function the value of \textbf{\textit{h}} is \textbf{\textit{0}} for all the nodes of the search tree and the value \textbf{\textit{g}} increase according to the level of the tree. It means that there is no guide to search the goal, in each iteratation the nodes from a level expand blindly according to the value of the level  up to find the goal node. We collect the total number of nodes expanded by level without prunning. So, for our exemple in the level \textbf{\textit{0}} we have one node which is initial state, in the level \textbf{\textit{1}} we have \textbf{\textit{4}} nodes, level \textbf{\textit{2}} contains \textbf{\textit{12}} nodes, etc. This information is collected in the planner executing A* using the dijkstra heuristic which assign the value zero for all the nodes in the search tree. 
+\subsection{Specific Objectives}
+We expect to achieve the following specific objectives in this project.
+\begin{enumerate}
+\item Develop a method to find a subset of heuristics $\zeta$ from a large pool that optimize in number of nodes expanded the process of search.
+\item We are going to try different strategies to obtain the size \textit{N} aiming at reducing the search running time.
+\item We know that Stratification Sampling (SS) does not make even reasonable predictions for the number of nodes expanded by A*. Nevertheless, even though SS produces poor predictions for the number of nodes expanded by A*, we would like to verify whether these predictions can be helpful in selecting a subset of heuristics to guide the A* search.
+\end{enumerate}
 
-\begin{figure}[htb]
-\begin{center}
-\includegraphics[width=12cm]{./image/dijkstra}
-\caption{The par value (\textbf{\textit{h}}, \textbf{\textit{g}}) represent the heuristic value \textbf{\textit{h}} and the cost to go from the start state to the current node \textbf{\textit{g}}. The tree generated by Dijkstra Search Algorithm to the problem of blocks worlds probBLOCKS-4-0.}
-\label{fig:dijkstraTreeInconsistent}
-\end{center}
-\end{figure}
+\section{Methodology}
+Heuristic functions estimate the distance-to-go from a given node to the goal. This information can be exploited by search algorithms to assess whether one state is more promising than the rest. Heuristics can help reducing the number of alternatives from exponential to polynomial.\\
 
+The term search in planning is related to the process of finding solutions.       
+Search algorithms seeks a path from start to goal.The process of problem solving can often be modeled as a search in a state space starting from some given initial state with rules describing how transform one state into another. The rules have to be applied over and over again to eventually satisfy some goal conditions. In the common case, we aim at the best of such paths, often in terms of path length or path cost. Many important applications of search algorithms have emerged since then, including ones in action and route planning, robotics, software and hadware, theorem proving and computational biology.\\
 
-In the Figure~\ref{fig:dijkstraTreeInconsistent} are showed the total number of nodes expanded by level and also how the tree is distributed.\newline
+The planner we use to solve the domain-independent problems is the planning system Fast-Downward \citep{helmert2006fast}. Fast-Downward is a classical planning system based on heuristic search. It can deal with general deterministic planning problems encoded in the propositional fragment of PDDL 2.2. We will use Fast-Downward as our planning system to develop our new approach and test it in the domain-independent planning benchmarks domains.\\
 
-We also, present the Table~\ref{table:tabledijstraExpandedByLevel} which explain the distribution of nodes expanded by level during dijkstra search algorithm.\newline
+As part of the metodology, we will study the state of the art in Maximazing submodular set functions \citep{nemhauser1978analysis}.\\
+\newpage
 
-\footnotesize  % Switch from 12pt to 11pt; otherwise, table won't fit
-\setlength\LTleft{100pt}            % default: \fill
-\setlength\LTright{200pt}           % default: \fill
-\begin{longtable}{@{\extracolsep{\fill}} lll @{}} %\begin{tabular}{|c|c|}
+\section{Budget}
+\begin{table}[h]
+\centering
+\caption{Total Cost of the Master}
+\label{my-label}
+\begin{tabular}{|L{3cm}|L{4cm}|l|l|}
 \hline
-\textit{Level} && \#Nodes expanded \\ \hline
-0       && 1                \\ \hline
-1       && 4                \\ \hline
-2       && 12               \\ \hline
-3       && 24               \\ \hline
-4       && 36               \\ \hline
-5       && 24               \\ \hline
-6       && 24               \\ \hline
-\caption{Number of nodes expanded by \textit{Level} using Dijkstra algorithm.}
-\label{table:tabledijstraExpandedByLevel}
-\end{longtable}
+Cost Specification                           & Description                                               & Cost (\$R)   & Source of Income \\ \hline
+1.- Personal                                 & Stipend to conduct the research (Scholarship amount X 24) & 36,000 & CAPES            \\ \hline
+\textbf{Subtotal 1}                                   &                                                           & \textbf{36,000} &                  \\ \hline
+2.- Bibliographic Material                   & Books, Technical Journal, etc                             & 400    & Own Resources    \\ \hline
+\textbf{Subtotal 2}                                   &                                                           & \textbf{400}    &                  \\ \hline
+3.- Materials                                & Sheets of papers                                          & 50     & Own Resources    \\ \hline
+                                             & Printing                                                  & 100    & Own Resources    \\ \hline
+                                             & USB                                                       & 20     & Own Resources    \\ \hline
+\textbf{Subtotal 3}                                   &                                                           & \textbf{170}    &                  \\ \hline
+                                             &                                                           &        &                  \\ \hline
+\textbf{Total = Subtotal 1 + Subtotal 2 + Subtotal 3} &                                                           & \textbf{36,570} &                  \\ \hline
+\end{tabular}
+\end{table}
 
-\subsection{\textit{f-value} Distribution using Dijkstra and collecting \textit{f-value} with consistent heuristic - Assumption }
-In order to keep the data consistent and validate the process of the prediction we make assumptions about what we expect to obtain, for example we make comparison between \textit{f-value} distributions generated by two algorithms with the objective to see which algorithm is superior and fits fits well to our approach.\newline
-
-\begin{figure}[htb]
-\begin{center}
-\includegraphics[width=12cm]{./image/dijkstraCollecting}
-\caption{The tree generated by Dijkstra Search Algorithm and the solution route expressed by bold solid line. }
-\label{fig:dijkstraTreeConsistentHeuristic}
-\end{center}
-\end{figure}
-
-Starting with our assumptions we present the distribution of \textit{f-values} in the tree generated by dijkstra, but collecting the \textit{f-values} using a consistent heuristic.
-
-The search tree generated by Dijkstra Search Algorithm expand each node blindly with heuristic value zero. In the Figure \ref{fig:dijkstraTreeConsistentHeuristic} the solid line represents the connection from the parent nodes to their childs nodes. Each node is represented with the par \textbf{\textit{(h, g)}} which represent the heuristic value \textbf{\textit{h}} and the cost to go from the origin node to the current node \textbf{\textit{g}}.\newline 
-
-Dijkstra Algorithm iteratively expand each node in each level up to found the solution. The initial node is given by \textbf{\textit{(0, 0)}} and is located at level \textbf{\textit{0}} and the goal node is \textbf{\textit{(0, 6)}} and is at level \textbf{\textit{6}}. We expanded each node and collected the \textbf{\textit{f-value}} based on a consistent heuristic \textbf{\textit{h}} and the \textbf{\textit{g}} value of the node. The bold solid line represent the solution of using a consistent heuristic in the search. The route solution is given by: \textbf{\textit{(6, 0), (5, 1), (4, 2), (3, 3), (2, 4), (5, 1), (0, 6)}}\newline 
-
-We also present the table with the distribution of \textit{f-value} during dijkstra algorithm execution.
-\footnotesize  % Switch from 12pt to 11pt; otherwise, table won't fit
-\setlength\LTleft{100pt}            % default: \fill
-\setlength\LTright{200pt}           % default: \fill
-\begin{longtable}{@{\extracolsep{\fill}} llll @{}} %\begin{tabular}{|c|c|c|}
+\newpage
+\section{Timetable}
+\begin{table}[h]
+\centering
+\caption{Schedule from June to March}
+\label{my-label}
+\begin{tabular}{|L{5cm}|l|l|l|l|l|l|l|l|l|l|}
 \hline
-Level              & \textit{f-value} & quantity \\ \hline
-0                  & 6       & 1        \\ \hline
-\multirow{2}{*}{1} & 6       & 1        \\ \cline{2-3} 
-                   & 8       & 3        \\ \hline
-\multirow{3}{*}{2} & 6       & 1        \\ \cline{2-3} 
-                   & 8       & 3        \\ \cline{2-3} 
-                   & 10      & 8        \\ \hline
-\multirow{4}{*}{3} & 6       & 1        \\ \cline{2-3} 
-                   & 8       & 2        \\ \cline{2-3} 
-                   & 10      & 6        \\ \cline{2-3} 
-                   & 12      & 15       \\ \hline
-\multirow{4}{*}{4} & 6       & 1        \\ \cline{2-3} 
-                   & 12      & 2        \\ \cline{2-3} 
-                   & 14      & 6        \\ \cline{2-3} 
-                   & 16      & 15       \\ \hline
-\multirow{4}{*}{5} & 6       & 1        \\ \cline{2-3} 
-                   & 12      & 2        \\ \cline{2-3} 
-                   & 14      & 6        \\ \cline{2-3} 
-                   & 16      & 15       \\ \hline
-\multirow{4}{*}{6} & 6       & 1        \\ \cline{2-3} 
-                   & 14      & 2        \\ \cline{2-3} 
-                   & 16      & 6        \\ \cline{2-3} 
-                   & 18      & 15       \\ \hline
-\caption{\textit{f-value} distribution expanding the graph using dijkstra and collecting the \textit{f-value} using a consistent heuristic.}
-\label{table:tabledijkstra}
-\end{longtable}
-
-The Table \ref{table:tabledijkstra} represent the distribution of \textit{f-value} in the tree search expanded by dijkstra and using a consistent heuristic to collect the \textit{f-value}. The first column represent the level in which the node is located. The second column is the \textit{f-value} and the third column is the quantity, which represent the number of nodes in the level that have the same \textit{f-value}.
-\newline
-
-In order to make a prediction we will require the Formula~\eqref{eq:partitionFormula} on page \pageref{eq:partitionFormula}. $P_ex$ is the percentage of nodes expanded by level with \textit{f-value} \textbf{\textit{d}} less than to the threshold.
-
-\footnotesize  % Switch from 12pt to 11pt; otherwise, table won't fit
-\setlength\LTleft{100pt}            % default: \fill
-\setlength\LTright{200pt}           % default: \fill
-\begin{longtable}{@{\extracolsep{\fill}} llll @{}} %\begin{tabular}{|c|c|cl}
-\hline
-\textit{Level} &\rule{4pt}{0ex} Ni &\rule{0pt}{0ex} $P_ex(s, d = 6, \textit{Level})$ \\ \hline
-0     &\rule{4pt}{0ex} 1\rule{16pt}{0ex}  & 1                    \\ \hline
-1     &\rule{4pt}{0ex} 4\rule{4pt}{0ex}  & 0.250                \\ \hline
-2     &\rule{4pt}{0ex} 12 & 0.083                \\ \hline
-3     &\rule{4pt}{0ex} 24 & 0.041                \\ \hline
-4     &\rule{4pt}{0ex} 36 & 0.027                \\ \hline
-5     &\rule{4pt}{0ex} 24 & 0.041                \\ \hline
-6     &\rule{4pt}{0ex} 24 & 0.041                \\ \hline
-\caption{\textit{f-value} distribution expanding the graph using dijkstra and collecting the \textit{f-value} using a consistent heuristic.}
-\label{table:tabledijkstra}
-\end{longtable}
-
-Applying the Formula~\eqref{eq:generalFormula} on page \pageref{eq:generalFormula} we obtain the prediction.
-
-\footnotesize  % Switch from 12pt to 11pt; otherwise, table won't fit
-\setlength\LTleft{100pt}            % default: \fill
-\setlength\LTright{200pt}           % default: \fill
-\begin{longtable}{@{\extracolsep{\fill}} lllll @{}}
-\hline
-                                &\rule{4pt}{0ex} threshold &\rule{4pt}{0ex} \#nodes expanded &\rule{4pt}{0ex} Prediction \\ \hline
-probBLOCKS-4-0                  &\rule{4pt}{0ex} 6         &\rule{4pt}{0ex} 7                &\rule{4pt}{0ex} 7          \\ \hline
-probBLOCKS-4-1                  &\rule{4pt}{0ex} 10        &\rule{4pt}{0ex} 11               &\rule{4pt}{0ex} 11         \\ \hline
-probBLOCKS-4-2                  &\rule{4pt}{0ex} 6         &\rule{4pt}{0ex} 7                &\rule{4pt}{0ex} 7          \\ \hline
-probBLOCKS-5-0                  &\rule{4pt}{0ex} 12        &\rule{4pt}{0ex} 16               &\rule{4pt}{0ex} 16         \\ \hline
-probBLOCKS-5-1                  &\rule{4pt}{0ex} 10        &\rule{4pt}{0ex} 14               &\rule{4pt}{0ex} 14         \\ \hline
-probBLOCKS-5-2                  &\rule{4pt}{0ex} 16        &\rule{4pt}{0ex} 29               &\rule{4pt}{0ex} 29         \\ \hline
-probBLOCKS-6-0                  &\rule{4pt}{0ex} 12        &\rule{4pt}{0ex} 13               &\rule{4pt}{0ex} 13         \\ \hline
-probBLOCKS-6-1                  &\rule{4pt}{0ex} 10        &\rule{4pt}{0ex} 11               &\rule{4pt}{0ex} 11         \\ \hline
-\multirow{3}{*}{probBLOCKS-6-2} &\rule{4pt}{0ex} 18        &\rule{4pt}{0ex} 44               &\rule{4pt}{0ex} 44         \\ \cline{2-4} 
-                                &\rule{4pt}{0ex} 19        &\rule{4pt}{0ex} 97               &\rule{4pt}{0ex} 97         \\ \cline{2-4} 
-                                &\rule{4pt}{0ex} 20        &\rule{4pt}{0ex} 399              &\rule{4pt}{0ex} 399        \\ \hline
-\multirow{4}{*}{probBLOCKS-7-0} &\rule{4pt}{0ex} 17        &\rule{4pt}{0ex} 8                &\rule{4pt}{0ex} 8          \\ \cline{2-4} 
-                                &\rule{4pt}{0ex} 18        &\rule{4pt}{0ex} 30               &\rule{4pt}{0ex} 30         \\ \cline{2-4} 
-                                &\rule{4pt}{0ex} 19        &\rule{4pt}{0ex} 35               &\rule{4pt}{0ex} 35         \\ \cline{2-4} 
-                                &\rule{4pt}{0ex} 20        &\rule{4pt}{0ex} 243              &\rule{4pt}{0ex} 243        \\ \hline
-\caption{Prediction of the number of nodes expanded by A* for the first 10 blocks world domain problems.}
-\label{table:predictionDijkstra}
-\end{longtable}
-
-The Table \ref{table:predictionDijkstra} contains four columns: In the first column we have the blocks world domain problems chosen from fast-downward benchmark. We chosen 10 problems, as well as the number of the problem increases it turns more complex in terms of duplicate and expansions nodes. The second column in the threshold which represent the branches where the nodes are expanded. The third column is the number of nodes expanded by A*  in each threshold, and the last one column is the prediction.\newline
-
-The results in the Table \ref{table:predictionDijkstra} are 100\% accurate, and this predictions are the expected, because we are testing with the same data the two terms of the prediction formula~\eqref{eq:generalFormula}. 
-
-\subsection{\textit{f-value} Distribution using DFS - Assumption }
-We have an assumption that if the distribution of the \textit{f-values} of the tree generated by dijkstra have similar structure to the distribution of the \textit{f-values} generated by Depth First Search (DFS). It would mean that the prediction using the number of nodes expanded by level with dijkstra will generate accurate values conforme to the number of nodes by \textit{f-value} generated by A*.\newline
-
-Our assumption about the similarity of the \textit{f-value} distribution of Dijkstra and Depth First Search was tested with the same problem mentioned above obtaining the following behaviors: The \textit{f-value} distribution of Dijkstra was quickly elaborated, three steps were necesary, first the nodes expansions, the collection of the \textit{f-value} of the nodes and then the generation of the \textit{f-value} distribution file. Nevertheless, DFS last approximately less than 5 seconds to expand all the nodes and generate the \textit{f-value} which make sense because it expands just 2581 nodes. For other instances for example the probBLOCKS-6-2 just expand the nodes takes approximitely 6 minutes.\newline
-
-So, try to generate the \textit{f-value} distribution is expensive in computational time because expand nodes the way how DFS expand the nodes is a iterative task that could take much time. So we are going to present the distribution obtained from probBLOCKS-4-0. We found that the nodes \textbf{\textit{(6, 0), (5, 1), (4, 2), (3, 3), (2, 4), (5, 1), (0, 6)}} were expanded in the same way as expanded by dijkstra algorithm, see the Table~\ref{table:tabledijkstra}  on page ~\pageref{table:tabledijkstra}. It means that the distribution of \textit{f-value} equal to 6 in each level generated by DFS is the same as the \textit{f-value} distribution with \textit{f-value} equal to 6 in each level generated by Dijkstra.\newline
-
-According to our expience testing DFS, it could take much time to execute one instance if we set the depth of the search greater than the \textit{f-value} we are going to produce prediction. Then, after analyze the consistent heuristic we are using we set up the depth to be equal to the initial heuristic value. In this way for the problem probBLOCKS-5-0 the depth is going to be \textbf{\textit{6}}.
-
-\footnotesize  % Switch from 12pt to 11pt; otherwise, table won't fit
-\setlength\LTleft{100pt}            % default: \fill
-\setlength\LTright{200pt}           % default: \fill
-\begin{longtable}{@{\extracolsep{\fill}} llll @{}}
-\hline
-
-Level               & \textit{f-value} & quantity \\ \hline
-0                   & 6       & 1        \\ \hline
-\multirow{2}{*}{1}  & 6       & 1        \\ \cline{2-3} 
-                    & 8       & 3        \\ \hline
-\multirow{3}{*}{2}  & 6       & 1        \\ \cline{2-3} 
-                    & 8       & 7        \\ \cline{2-3} 
-                    & 10      & 8        \\ \hline
-\multirow{4}{*}{3}  & 6       & 1        \\ \cline{2-3} 
-                    & 8       & 9        \\ \cline{2-3} 
-                    & 10      & 27       \\ \cline{2-3} 
-                    & 12      & 15       \\ \hline
-\multirow{5}{*}{4}  & 6       & 1        \\ \cline{2-3} 
-                    & 8       & 11       \\ \cline{2-3} 
-                    & 10      & 59       \\ \cline{2-3} 
-                    & 12      & 88       \\ \cline{2-3} 
-                    & 14      & 25       \\ \hline
-\multirow{6}{*}{5}  & 6       & 1        \\ \cline{2-3} 
-                    & 8       & 12       \\ \cline{2-3} 
-                    & 10      & 79       \\ \cline{2-3} 
-                    & 12      & 239      \\ \cline{2-3} 
-                    & 14      & 186      \\ \cline{2-3} 
-                    & 16      & 15       \\ \hline
-\multirow{7}{*}{6}  & 6       & 1        \\ \cline{2-3} 
-                    & 8       & 13       \\ \cline{2-3} 
-                    & 10      & 103      \\ \cline{2-3} 
-                    & 12      & 507      \\ \cline{2-3} 
-                    & 14      & 832      \\ \cline{2-3} 
-                    & 16      & 321      \\ \cline{2-3} 
-                    & 18      & 15       \\ \hline
-\caption{\textit{f-value} distribution expanding the graph using depth first search and collecting the \textit{f-value} using a consistent heuristic and threshold equal to the initial heuristic value.}
-\label{table:tabledfs}
-\end{longtable}
-
-The Table \ref{table:tabledfs} represent the distribution of \textit{f-value} in the tree search expanded by depth first search using a consistent heuristic and threshold twice the initial heuristic value. Depth first search found seven nodes with \textit{f-value} equal to six in the levels \textbf{\textit{0, 1, 2, 3, 4, 5}}, and  \textbf{\textit{6}} which are the same distribution of \textit{f-value} equal to six  in Table \ref{table:tabledijkstra} on page \pageref{table:tabledijkstra}.\newline
-
-
-This result encourage to continue with our research, because the distribution of dijkstra is more quickly to obtain and also make prediction over the distribution in comparison with the depth first search tree generated that is more expensive to obtain.\newline
-
-
-\footnotesize  % Switch from 12pt to 11pt; otherwise, table won't fit
-\setlength\LTleft{100pt}            % default: \fill
-\setlength\LTright{200pt}           % default: \fill
-\begin{longtable}{@{\extracolsep{\fill}} lllll @{}}
-\hline
-                                &\rule{4pt}{0ex} Threshold &\rule{4pt}{0ex} \#nodes expanded &\rule{4pt}{0ex} Prediction \\ \hline
-probBLOCKS-4-0                  &\rule{4pt}{0ex} 6         &\rule{4pt}{0ex} 7                &\rule{4pt}{0ex} 3.4657     \\ \hline
-probBLOCKS-4-1                  &\rule{4pt}{0ex} 10        &\rule{4pt}{0ex} 11               &\rule{4pt}{0ex} 3.83765    \\ \hline
-probBLOCKS-4-2                  &\rule{4pt}{0ex} 6         &\rule{4pt}{0ex} 7                &\rule{4pt}{0ex} 3.47631    \\ \hline
-probBLOCKS-5-0                  &\rule{4pt}{0ex} 12        &\rule{4pt}{0ex} 16               &\rule{4pt}{0ex} 4.65024    \\ \hline
-probBLOCKS-5-1                  &\rule{4pt}{0ex} 10        &\rule{4pt}{0ex} 14               &\rule{4pt}{0ex} 5.34157    \\ \hline
-probBLOCKS-5-2                  &\rule{4pt}{0ex} 16        &\rule{4pt}{0ex} 29               &\rule{4pt}{0ex} 5.68251    \\ \hline
-probBLOCKS-6-0                  &\rule{4pt}{0ex} 12        &\rule{4pt}{0ex} 13               &\rule{4pt}{0ex} 3.96905    \\ \hline
-probBLOCKS-6-1                  &\rule{4pt}{0ex} 10        &\rule{4pt}{0ex} 11               &\rule{4pt}{0ex} 3.98732    \\ \hline
-\multirow{3}{*}{probBLOCKS-6-2} &\rule{4pt}{0ex} 18        &\rule{4pt}{0ex} 44               &\rule{4pt}{0ex} 6.79542    \\ \cline{2-4} 
-                                &\rule{4pt}{0ex} 19        &\rule{4pt}{0ex} 97               &\rule{4pt}{0ex} 10.9438    \\ \cline{2-4} 
-                                &\rule{4pt}{0ex} 20        &\rule{4pt}{0ex} 399              &\rule{4pt}{0ex} 56.65      \\ \hline
-\multirow{4}{*}{probBLOCKS-7-0} &\rule{4pt}{0ex} 17        &\rule{4pt}{0ex} 8                &\rule{4pt}{0ex} 3.8663     \\ \cline{2-4} 
-                                &\rule{4pt}{0ex} 18        &\rule{4pt}{0ex} 30               &\rule{4pt}{0ex} 6.49635    \\ \cline{2-4} 
-                                &\rule{4pt}{0ex} 19        &\rule{4pt}{0ex} 35               &\rule{4pt}{0ex} 15.8169    \\ \cline{2-4} 
-                                &\rule{4pt}{0ex} 20        &\rule{4pt}{0ex} 243              &\rule{4pt}{0ex} 45.0983          \\ \hline
-\caption{Prediction of the number of nodes expanded by A* using the number of nodes by level from dijkstra and the \textit{f-value} distribution obtained from DFS.}
-\label{table:predictionDFS}
-\end{longtable}
-
-
-The Table \ref{table:predictionDFS} displays the results of apply the Formula~\eqref{eq:generalFormula} using two terms: The first one, the number of nodes expanded by dijkstra, and the other is the \textit{f-value} distribution obtained from DFS. For the first row the terms are being obtained from the Table~\ref{table:tabledijstraExpandedByLevel} and the Table~\ref{table:tabledfs}.
-
-
-
-\section{Stratification Sampling}
-\cite{knuth1975Estimating} did experiments to predict the number of nodes expanded by IDA* under the assumption that all branches contained the same structure.  He realized that the method was not effective when the branches were unbalanced. \cite{chen1992heuristic} addressed the problem with stratification of the search tree through a \textit{type system}. He assumed that nodes of the same type at a level of the search tree would generate subtrees of the same size. Then, only one node of each type \textbf{SS} estimates the size of the tree.
-
-The distribution the \textit{f-values} is going to be obtained from the Brute Force Search, in this case the \textbf{SS}.
-
-\subsection{Type System}
-We require a property that allow us to represent each node in the state space search and this property can be defined using any information about the node. For example we could use a \textit{type system} which counts how many children a node generates, or how many children the parent of the current node generates or the parent of the parent of the current node, the \textit{f-value}, the \textbf{\textit{g}} value or the heuristic value \textbf{\textit{h}} of the node, etc. \newline 
-This property is used in \textbf{SS} to distinguish the nodes or stratified the state space. In our research we present a \textit{type system} that use the heuristic value of the node \textbf{\textit{h}} and the level in which the node is located \textbf{\textit{L}}. We use the following \textit{type system}:
-
-\[  {T(s) = (h(s), L(s))}  \]
-
-Two nodes at a level of the search tree will have the same \textit{type system T} and randomly one of them will be chosen because the asumption is that both generate the same subtree. Then, the subtree not chosen is removed from the tree and the number of nodes in the chosen node is upated withh the sum of nodes of the subtree of the current node and the nodes of the subtree removed.  
-
-
-\section{Prediction Formula}
-For a given state \textbf{\textit{s}} and A* threshold \textbf{\textit{d}}, \textbf{N(s, d)} is the prediction of the number of nodes that A* will expand if it use \textbf{\textit{s}} as its start state and does a complete search with an A* threshold of \textbf{\textit{d}}.
-
-\begin{equation}
-\label{eq:generalFormula}
-N(s, d) =  \sum\limits_{i=1}^dN_i (s,d)
-\end{equation}
-
-Where  \textit{N(s, d)} is the number of nodes expanded by A* at level \textit{i} when its threshold is \textit{d}.
-One way to decompose \textit{$N_i(s, d)$} is as the product of two terms. \citep{zahavi2010predicting} 
-
-\begin{equation}
-\label{eq:partitionFormula}
-N_i (s, d) =  N_i (s) \times P_ex (s, d, i)
-\end{equation}
-\newline
-Where $N_i$ is the number of nodes in level \textit{i} of \textit{BFS}, the brute-force search tree (\textit{i.e.,} the tree created by dijkstra search without heuristic pruning.) of depth \textbf{\textit{d}} rooted at start state \textbf{\textit{s}}, and $P_ex (s, d, i)$ is the percentage of nodes in level \textit{i} of BFS(\textit{i.e,} the distribution with threshold two times the heuristic of the initial state generated by the Stratified Sampling.) that are expanded by A* when its threshold is \textbf{\textit{d}}. 
-
-\section{Conclusions}
-In this paper we presented a new approach to predict the number of nodes expanded by A*, we take as assumption that the expansion of the number of nodes by level that dijkstra generates can be usefull to our prediction because according to the behavior of the distribution of nodes that dijkstra give us we can extend it using linear regression. Another information we get from the \textit{f-value} distribution that Stratified Sampling give us when search the solution of the problem. Joining both informations we can use a mathematical formula of prediction.\newline
-
-We are still working on produce good results. We started testing the differents assumptions in order to be sure about the approach we are proposing.
-
+Activities                                                                                            & \rot{June} & \rot{July} & \rot{August} & \rot{September} & \rot{October} & \rot{November} & \rot{December} & \rot{January} & \rot{February} & \rot{March} \\ \hline
+Present the project to the PPG                                                   & \checkmark    &      &        &           &         &          &          &         &          &       \\ \hline
+Implementing the \textit{heuristic generator}                                                   & \checkmark    &      &        &           &         &          &          &         &          &       \\ \hline
+Implementing the prediction strategy A* or SS                                                   &      & \checkmark    &        &           &         &          &          &         &          &       \\ \hline
+Test which strategy of prediction fits the best the subset of heuristics                        &      & \checkmark    & \checkmark      &           &         &          &          &         &          &       \\ \hline
+Testing with the domain-independent problems of Fast-Downward                                   &      &      & \checkmark      & \checkmark         &         &          &          &         &          &       \\ \hline
+Analyze the results and prepare a paper to submit                                               &      &      &        & \checkmark         &         &          &          &         &          &       \\ \hline
+Organize and Analyze the results of SS compared with IDA* and Selection of heuristics functions &      &      &        &           & \checkmark       & \checkmark        &          &         &          &       \\ \hline
+Writing the theses                                                                              &      &      &        &           &         & \checkmark        & \checkmark        & \checkmark       & \checkmark        &       \\ \hline
+Dissertation theses                                                                             &      &      &        &           &         &          &          &         &          & \checkmark     \\ \hline
+\end{tabular}
+\end{table}
 
 
 \newpage
-
 %Imports the bibliography file "references.bib"
 \bibliography{references}
+%\bibliographystyle{references}
 
 \end{document}
