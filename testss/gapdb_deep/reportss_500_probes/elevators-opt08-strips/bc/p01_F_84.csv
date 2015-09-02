@@ -1,0 +1,39 @@
+h(,0):,merge_and_shrink
+h(,1):,ipdb
+h(,2):,heur is GAPDB,mutation_rate:0.6000000,size=2000000,without disjoint patterns
+h(,3):,lmcut
+h(,4):,heur is GAPDB,mutation_rate:0.9000000,size=2000000,with disjoint patterns
+h(,5):,heur is GAPDB,mutation_rate:1.0000000,size=2000000,without disjoint patterns
+h(,6):,heur is GAPDB,mutation_rate:0.1000000,size=2000000,with disjoint patterns
+h(,7):,heur is GAPDB,mutation_rate:0.5000000,size=2000000,without disjoint patterns
+h(,8):,heur is GAPDB,mutation_rate:0.8000000,size=2000000,with disjoint patterns
+h(,9):,heur is GAPDB,mutation_rate:0.4000000,size=2000000,with disjoint patterns
+h(,10):,heur is GAPDB,mutation_rate:0.2000000,size=2000000,without disjoint patterns
+h(,11):,heur is GAPDB,mutation_rate:0.3000000,size=2000000,with disjoint patterns
+h(,12):,heur is GAPDB,mutation_rate:0.7000000,size=2000000,without disjoint patterns
+bc(1/0/0/0/0/0/0/0/0/0/0/0/0)cc=1.24692e+20
+bc(0/1/0/0/0/0/0/0/0/0/0/0/0)cc=5.90591e+12
+bc(1/1/0/0/0/0/0/0/0/0/0/0/0)cc=4.96857e+17
+bc(0/0/0/1/0/0/0/0/0/0/0/0/0)cc=1.18405e+17
+bc(1/0/0/1/0/0/0/0/0/0/0/0/0)cc=1.34307e+17
+bc(1/1/0/1/0/0/0/0/0/0/0/0/0)cc=2.00636e+16
+bc(0/0/0/0/0/0/0/0/1/0/0/0/0)cc=1.85381e+22
+bc(1/0/0/0/0/0/0/0/1/0/0/0/0)cc=4.98954e+20
+bc(1/1/0/0/0/0/0/0/1/0/0/0/0)cc=1.9595e+19
+bc(0/0/0/1/0/0/0/0/1/0/0/0/0)cc=8.00908e+13
+bc(1/0/0/1/0/0/0/0/1/0/0/0/0)cc=2.19714e+16
+bc(1/1/0/1/0/0/0/0/1/0/0/0/0)cc=3.35706e+17
+bc(0/0/1/0/1/0/0/1/0/1/0/0/0)cc=2.13725e+21
+bc(1/0/1/0/1/0/0/1/0/1/0/0/0)cc=1.38869e+16
+bc(0/1/1/0/1/0/0/1/0/1/0/0/0)cc=2.94385e+13
+bc(1/1/1/0/1/0/0/1/0/1/0/0/0)cc=3.88597e+14
+bc(0/0/1/1/1/0/0/1/0/1/0/0/0)cc=1.89351e+14
+bc(1/0/1/1/1/0/0/1/0/1/0/0/0)cc=8.42459e+14
+bc(0/1/1/1/1/0/0/1/0/1/0/0/0)cc=4.14911e+12
+bc(1/1/1/1/1/0/0/1/0/1/0/0/0)cc=3.35704e+15
+bc(1/0/1/0/1/0/0/1/1/1/0/0/0)cc=9.92853e+19
+bc(1/1/1/0/1/0/0/1/1/1/0/0/0)cc=1.19208e+15
+bc(1/0/1/1/1/0/0/1/1/1/0/0/0)cc=9.89943e+14
+bc(1/1/1/1/1/0/0/1/1/1/0/0/0)cc=1.34066e+17
+bc(1/1/1/1/1/0/1/1/1/1/0/0/1)cc=4.92068e+11
+bc(1/1/1/1/1/1/1/1/1/1/1/1/1)cc=3.98665e+17
