@@ -7,100 +7,152 @@ barman-opt11-strips         pfile01-002          lmcut    5.76405e+06           
                             pfile01-003          lmcut    5.72906e+06
                             pfile01-001           ipdb    9.57769e+06
 
-elevators-opt11-strips              p08          gapdb    1.18562e+06             17
-                                    p13          gapdb    2.11823e+07
-                                    p10          gapdb         185475
+elevators-opt11-strips              p08          gapdb         498390             16
+                                    p13          gapdb    1.26267e+07
                                     p05          gapdb          30956
-                                    p14          gapdb    1.27385e+07
-                                    p12          gapdb    5.21249e+06
+                                    p12          gapdb    2.72621e+06
                                     p07          gapdb    7.48922e+06
-                                    p04          lmcut          55752
+                                    p04          gapdb          76584
                                     p18          gapdb    2.30672e+06
+                                    p15          gapdb    1.18613e+08
                                     p09          gapdb         813293
-                                    p02          gapdb          46583
+                                    p02          lmcut          53461
                                     p19          gapdb     1.4144e+06
                                     p03          lmcut          38649
-                                    p20          gapdb    2.00048e+06
-                                    p06          gapdb          82853
+                                    p20          gapdb    2.24822e+06
+                                    p17          lmcut     1.5091e+07
                                     p16          lmcut         116352
                                     p01          gapdb           1613
 
-floortile-opt11-strips      opt-p01-002          mands           3066              7
-                            opt-p04-007          lmcut    3.48292e+07
+floortile-opt11-strips      opt-p01-002          mands           9128              6
                             opt-p03-006          lmcut    3.55247e+06
                             opt-p02-004          lmcut    1.10515e+06
-                            opt-p01-001          mands           7012
+                            opt-p01-001          mands          30817
                             opt-p03-005          lmcut    2.06278e+06
                             opt-p02-003          lmcut    3.38926e+06
 
-nomystery-opt11-strips              p13          gapdb            265             10
-                                    p05          mands          16118
+nomystery-opt11-strips              p08          mands    3.13642e+06             16
+                                    p13          gapdb            265
+                                    p05          mands          48261
                                     p14          mands            336
                                     p12          gapdb            114
                                     p11          gapdb             74
+                                    p07          lmcut         845234
                                     p04          mands            995
-                                    p15          mands            346
+                                    p18          mands    1.32794e+06
+                                    p15          mands            996
                                     p02          gapdb            532
                                     p03          mands            255
+                                    p17          mands          65598
+                                    p06          mands          97982
+                                    p16          mands           4182
                                     p01          gapdb            268
 
-openstacks-opt11-strips             p04          lmcut         565860              4
-                                    p02          mands     1.6453e+06
+openstacks-opt11-strips             p08          lmcut    2.22116e+07             14
+                                    p13          lmcut     5.0648e+07
+                                    p10          lmcut    6.38566e+06
+                                    p05          lmcut         330388
+                                    p14          lmcut    3.60453e+06
+                                    p12          lmcut    2.41121e+07
+                                    p11          lmcut    2.41121e+07
+                                    p07          lmcut    1.43142e+06
+                                    p04          lmcut         565860
+                                    p09          lmcut     8.9125e+06
+                                    p02          lmcut    1.64573e+06
                                     p03          lmcut    1.83802e+06
+                                    p06          lmcut    4.89319e+06
                                     p01          lmcut           9385
 
-parcprinter-opt11-strips            p02          mands            199              3
+parcprinter-opt11-strips            p08          lmcut          21927             12
+                                    p10          lmcut         440627
+                                    p05          mands           2213
+                                    p12          lmcut    1.46364e+06
+                                    p11          lmcut    1.81843e+06
+                                    p07          lmcut         317285
+                                    p04           ipdb          32260
+                                    p09           ipdb          19195
+                                    p02          mands            199
                                     p03          mands            239
+                                    p06          lmcut     2.1169e+06
                                     p01          mands            196
 
-parking-opt11-strips    
-pegsol-opt11-strips                 p08          mands         321112             16
-                                    p13          mands         697144
-                                    p10          mands         459965
+parking-opt11-strips        pfile03-011          mands         132916              1
+
+pegsol-opt11-strips                 p08          mands         393628             17
+                                    p13          mands         854919
+                                    p10          mands         531344
                                     p05          lmcut          43497
-                                    p14          mands    1.03432e+06
+                                    p14          mands    1.22286e+06
                                     p12          lmcut          22207
-                                    p11          lmcut          30114
+                                    p11          mands          51611
                                     p07          lmcut         146074
-                                    p04          mands         244013
-                                    p15          mands         837735
-                                    p09          mands         342187
+                                    p04          lmcut         159020
+                                    p15          mands    1.01735e+06
+                                    p09          mands         409004
                                     p02          lmcut         329757
                                     p03          lmcut          17364
+                                    p17          mands         560440
                                     p06          lmcut         206109
-                                    p16          lmcut    7.34606e+06
+                                    p16          mands    6.80365e+06
                                     p01          lmcut            196
 
-scanalyzer-opt11-strips             p02          mands          10884              3
+scanalyzer-opt11-strips             p13           ipdb    2.56806e+06              8
+                                    p05          lmcut         546050
+                                    p14          mands    2.86848e+06
+                                    p12          gapdb     1.3282e+08
+                                    p04          mands         343008
+                                    p02          mands          10884
                                     p03          mands          29390
                                     p01          gapdb             18
 
-sokoban-opt11-strips                p08          lmcut           4195              9
+sokoban-opt11-strips                p08          lmcut           4195             20
+                                    p13          lmcut    1.21471e+06
+                                    p10          lmcut          15553
+                                    p05           ipdb         582783
                                     p14          lmcut          26664
                                     p12          gapdb            861
                                     p11          lmcut          84152
                                     p07          lmcut          33511
+                                    p04          lmcut          50217
                                     p18          lmcut           4208
+                                    p15          lmcut         227611
+                                    p09           ipdb          39973
                                     p02          lmcut          26910
+                                    p19          lmcut    1.63317e+06
                                     p03          lmcut          15552
-                                    p01          mands            969
+                                    p20          lmcut         876365
+                                    p17           ipdb    2.19826e+06
+                                    p06          lmcut         216842
+                                    p16          lmcut    3.08578e+06
+                                    p01          lmcut            438
 
 tidybot-opt11-strips    
-transport-opt11-strips              p04          gapdb    3.60089e+06              2
-                                    p03          gapdb         103926
+transport-opt11-strips              p05          lmcut         144553              9
+                                    p07          gapdb         294980
+                                    p04          gapdb            628
+                                    p18          gapdb    1.01615e+08
+                                    p02          gapdb           1748
+                                    p03          gapdb            149
+                                    p17          gapdb    5.41939e+07
+                                    p06          gapdb          32720
+                                    p01          gapdb           1129
 
-visitall-opt11-strips    problem07-half          lmcut    4.06095e+06              9
+visitall-opt11-strips    problem07-half          gapdb    1.86038e+07             10
                          problem03-full          gapdb            136
                          problem05-full          lmcut         528310
                          problem03-half          gapdb             17
                          problem04-full          gapdb            704
                          problem04-half          gapdb             58
+                         problem08-half          gapdb    2.78304e+06
                          problem05-half          gapdb            219
                          problem02-full          gapdb             10
                          problem06-half          gapdb            228
 
-woodworking-opt11-strips            p02           ipdb    3.83318e+06              3
-                                    p03          lmcut         312318
+woodworking-opt11-strips            p10          mands    1.28202e+08              6
+                                    p07          lmcut    1.28492e+06
+                                    p04          mands         952287
+                                    p02           ipdb    3.83318e+06
+                                    p03           ipdb         117640
                                     p01          mands          18589
 
-total instances solved:                                                           87
+total instances solved:                                                          139
