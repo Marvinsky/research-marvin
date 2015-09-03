@@ -1,0 +1,6 @@
+h(,0):,ipdb
+h(,1):,lmcut
+h(,2):,merge_and_shrink
+bc(1/0/0)cc=1.13057e+89
+bc(1/0/1)cc=1.97664e+78
+bc(1/1/1)cc=3.71069e+19
