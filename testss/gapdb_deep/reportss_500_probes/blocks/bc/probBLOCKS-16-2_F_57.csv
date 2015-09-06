@@ -1,0 +1,24 @@
+h(,0):,lmcut
+h(,1):,ipdb
+h(,2):,heur is GAPDB,mutation_rate:0.2000000,size=2000000,without disjoint patterns
+h(,3):,heur is GAPDB,mutation_rate:0.4000000,size=2000000,with disjoint patterns
+h(,4):,heur is GAPDB,mutation_rate:0.9000000,size=2000000,with disjoint patterns
+h(,5):,heur is GAPDB,mutation_rate:0.3000000,size=2000000,with disjoint patterns
+h(,6):,heur is GAPDB,mutation_rate:1.0000000,size=2000000,without disjoint patterns
+bc(0/0/1/0/0/0/0)cc=3.29576e+26
+bc(0/0/0/0/1/0/0)cc=1.07102e+25
+bc(0/0/0/0/0/1/0)cc=8.27946e+31
+bc(0/0/1/0/0/1/0)cc=3.94685e+29
+bc(0/0/1/1/0/1/0)cc=3.93009e+22
+bc(0/0/0/0/1/1/0)cc=5.32611e+27
+bc(0/0/1/0/1/1/0)cc=4.1823e+28
+bc(0/0/1/1/1/1/0)cc=6.83621e+25
+bc(0/0/1/0/0/0/1)cc=2.26723e+21
+bc(0/0/0/0/1/0/1)cc=3.96951e+28
+bc(0/0/0/0/0/1/1)cc=2.76494e+26
+bc(0/0/1/0/0/1/1)cc=5.17511e+26
+bc(0/0/1/1/0/1/1)cc=2.01053e+22
+bc(0/0/1/0/1/1/1)cc=3.62452e+28
+bc(0/0/1/1/1/1/1)cc=1.27478e+27
+bc(0/1/1/1/1/1/1)cc=2.34455e+20
+bc(1/1/1/1/1/1/1)cc=3.69228e+18
