@@ -401,7 +401,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
         text_string_probes<<NUM_PROBES;
 	string textProbes = text_string_probes.str();
 
-	string dirGoodSelection = "mkdir /home/marvin/marvin/reports/heur_selection";
+	string dirGoodSelection = "mkdir /home/marvin/marvin/reports/"+heuristic;
 	if (!system(dirGoodSelection.c_str())) {
 		cout<<"Directory "<<dirGoodSelection.c_str()<<" created.\n";
 	}
@@ -410,7 +410,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 	ofstream outputFile;
 	string infoFile;
 	
-	infoFile = "/home/marvin/marvin/reports/heur_selection/selection_" + textProbes + ".txt";
+	infoFile = "/home/marvin/marvin/reports/"+heuristic+"/selection_" + textProbes + ".txt";
 
 	outputFile.open(infoFile.c_str(), ios::out);
 	outputFile<<"\tGood Selection information:\tUsing "<<textProbes<<" probes and gapdb-deep.\n\n";
