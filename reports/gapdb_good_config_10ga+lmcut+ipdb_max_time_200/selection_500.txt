@@ -1,0 +1,121 @@
+	Good Selection information:	Using 500 probes and gapdb-deep.
+
+Domain                         instance      heuristic       expanded            n
+
+barman-opt11-strips         pfile01-002          lmcut    7.80714e+06              4
+                            pfile01-004          lmcut    7.80736e+06
+                            pfile01-003          lmcut    7.82429e+06
+                            pfile01-001          lmcut    6.36064e+06
+
+elevators-opt11-strips              p08          gapdb    1.14112e+08             10
+                                    p05          gapdb    2.53427e+07
+                                    p04          lmcut    2.81472e+06
+                                    p09          gapdb    3.75508e+07
+                                    p02          gapdb    2.67582e+06
+                                    p19          gapdb    4.26242e+08
+                                    p03          gapdb    3.20868e+06
+                                    p06          gapdb    1.48919e+07
+                                    p16          gapdb      2.244e+08
+                                    p01          gapdb    2.44173e+06
+
+floortile-opt11-strips      opt-p01-002          lmcut    1.10387e+06              3
+                            opt-p02-004          lmcut    1.62413e+07
+                            opt-p01-001          lmcut    1.70587e+06
+
+nomystery-opt11-strips              p13          gapdb            535              9
+                                    p14          gapdb          82381
+                                    p12          gapdb            840
+                                    p11          gapdb            413
+                                    p04           ipdb    6.84113e+06
+                                    p15           ipdb    3.57408e+07
+                                    p02          gapdb          40398
+                                    p03          gapdb          28105
+                                    p01          gapdb           3980
+
+openstacks-opt11-strips             p08          lmcut     2.2452e+07             13
+                                    p13          lmcut    5.28318e+07
+                                    p10          lmcut    7.77159e+06
+                                    p05          lmcut         361908
+                                    p14          lmcut    4.46016e+06
+                                    p12          lmcut    2.61713e+07
+                                    p11          lmcut    8.84299e+07
+                                    p07          lmcut    1.49319e+06
+                                    p04          lmcut         615380
+                                    p09          lmcut    9.42033e+06
+                                    p02          lmcut    1.65404e+06
+                                    p06          lmcut    4.99677e+06
+                                    p01          lmcut          10977
+
+parcprinter-opt11-strips            p08          lmcut         979180              4
+                                    p04           ipdb         121559
+                                    p09           ipdb         265274
+                                    p01           ipdb            373
+
+parking-opt11-strips    
+pegsol-opt11-strips                 p08          lmcut         696816             15
+                                    p13          lmcut    1.10441e+06
+                                    p05          lmcut          43867
+                                    p14          lmcut         469176
+                                    p12          lmcut          21973
+                                    p07          lmcut         326381
+                                    p04          lmcut         246310
+                                    p15          lmcut    2.30835e+06
+                                    p09          lmcut         398563
+                                    p02          lmcut         331201
+                                    p03          lmcut          76583
+                                    p17          lmcut    8.80101e+06
+                                    p06          lmcut         214052
+                                    p16          lmcut    1.24845e+07
+                                    p01          lmcut            196
+
+scanalyzer-opt11-strips             p12          gapdb    1.75457e+08              6
+                                    p04          gapdb    3.29646e+08
+                                    p02          gapdb         552780
+                                    p03          gapdb         460780
+                                    p06          gapdb    2.06207e+08
+                                    p01          gapdb            118
+
+sokoban-opt11-strips                p08          lmcut           9166             20
+                                    p13          lmcut    2.73668e+06
+                                    p10          lmcut    2.21403e+06
+                                    p05           ipdb         603031
+                                    p14          lmcut          60268
+                                    p12          gapdb            861
+                                    p11          lmcut         236803
+                                    p07          lmcut          42461
+                                    p04          lmcut         100522
+                                    p18          lmcut          12371
+                                    p15          lmcut         227840
+                                    p09           ipdb         150060
+                                    p02          lmcut          41639
+                                    p19           ipdb    1.13196e+07
+                                    p03          lmcut          16696
+                                    p20          lmcut    7.07634e+06
+                                    p17           ipdb    7.77944e+06
+                                    p06          lmcut         394507
+                                    p16           ipdb    2.22608e+07
+                                    p01          lmcut            472
+
+tidybot-opt11-strips                p07          lmcut          66792              3
+                                    p03          lmcut          53591
+                                    p01          gapdb            539
+
+transport-opt11-strips              p04          gapdb    3.04438e+06              5
+                                    p02          gapdb    2.43539e+06
+                                    p03          gapdb         103247
+                                    p06          gapdb    3.47453e+07
+                                    p01          gapdb         530043
+
+visitall-opt11-strips    problem03-full          gapdb           1980              7
+                         problem03-half          gapdb            203
+                         problem04-full          gapdb         200136
+                         problem04-half          gapdb           2955
+                         problem05-half          gapdb         351472
+                         problem02-full          gapdb             22
+                         problem06-half          gapdb    1.47148e+06
+
+woodworking-opt11-strips            p04           ipdb    3.93488e+08              3
+                                    p02           ipdb    6.93451e+06
+                                    p01           ipdb    2.69001e+06
+
+total instances solved:                                                          102
