@@ -16,9 +16,8 @@
 
 //put asleep
 #include <unistd.h>
-//enhance the running of the instances
-#define ASTAR_DEEP_NAME "_DEEP_ASTAR"
-
+//enhance the running of the instanc#define ASTAR_DEEP_NAME "_ASTAR_SELECT"
+#define ASTAR_DEEP_NAME "_GOOD_SEL"
 using std::string;
 using namespace std;
 
@@ -523,7 +522,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			final_real_heur = previous_real_heur;
 			//cout<<"previous_real_heur = "<<final_real_heur<<"\n";
 			if (previous_real_heur == "mands()") {
-				final_real_heur = "merge_and_shrink(shrink_strategy=shrink_bisimulation(max_states=100000,threshold=1,greedy=false),merge_strategy=merge_dfp())";
+				final_real_heur = "merge_and_shrink(shrink_strategy=shrink_bisimulation(max_states=50000,threshold=1,greedy=false),merge_strategy=merge_dfp())";
 				//final_real_heur = "merge_and_shrink()";
 			} else if (previous_real_heur == "ipdb()") {
 				final_real_heur = "ipdb(max_time=600)";
@@ -629,7 +628,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 		string date = currentDateTime();
 
 		string executeFile;
-                bool is_in_cluster = false;
+                bool is_in_cluster = true;
 
                 if (is_in_cluster) {
                         executeFile = "qsub -l select=1:ncpus=1:mem=6GB "+arquivo;
@@ -664,6 +663,12 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 		string dirProbGood = "mkdir /home/marvin/marvin/astar/"+heuristic_good+"/";
 		if (system(dirProbGood.c_str())) {
 			cout<<"create directory "<<dirProbGood.c_str()<<"\n";
+		}
+
+		//default directory
+		string dirDefault = "mkdir /home/marvin/marvin/astar/"+heuristic_good+"/reportastar";
+		if (system(dirDefault.c_str())) {
+			cout<<"create directory "<<dirDefault.c_str()<<"\n";
 		}
 
 		string dirProblema = "mkdir /home/marvin/marvin/astar/"+heuristic_good+"/" + PROB_GOOD;
