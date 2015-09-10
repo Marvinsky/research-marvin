@@ -12,7 +12,7 @@
 #include <unistd.h>
 
 //enhance the running with nohup
-#define GA_DEEP_NAME "_SS_DEEP"
+#define GA_DEEP_NAME "_SS_ASTAR"
 
 #define NUM_PROBES 500
 #define PROB_PROBES "problemas_500_probes"
@@ -96,7 +96,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	ofstream outfile(arquivo.c_str(), ios::out);
 	
 	
-	sas = "Astar";
+	sas = "SS_Astar";
 	sas += pasta;
 	sas += Resultado.str();
 
@@ -115,6 +115,8 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
 			
 	//Santiago's code ss_gapdb_deep does not pass use F_boundary
+	//outfile<<"src/search/downward-release  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut()]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	
 	outfile<<"src/search/downward-release  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=200), automate_GAs]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 
 	//outfile<<"src/search/downward-release  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=600), merge_and_shrink(shrink_strategy=shrink_bisimulation(max_states=50000,threshold=1,greedy=false),merge_strategy=merge_dfp()), automate_GAs]))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
@@ -213,7 +215,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 					string INS = exec(instances.c_str());
 					int n_ins = atoi(INS.c_str());
 
-					if (n_ins < 40) {
+					if (n_ins < 20) {
 						break;
 					}
 
