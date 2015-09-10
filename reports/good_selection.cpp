@@ -479,7 +479,7 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			string file_name = open_good_selectionFile + dir_name;
 			
 			vector<string> v_file_best_heuristic;
-			if (heuristic == "gapdb_good_lmcut" || heuristic == "gapdb_good_ipdb") {
+			if (heuristic == "gapdb_good_lmcut" || heuristic == "gapdb_good_ipdb" || heuristic == "gapdb_good_merge_and_shrink") {
 				string best_file =  file_name;
 				vector<pair<string, double> > v_exp = analyzeFile(best_file.c_str(), false);		
 				for(size_t j = 0;  j < v_exp.size(); j++) {

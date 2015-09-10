@@ -628,7 +628,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 		string date = currentDateTime();
 
 		string executeFile;
-                bool is_in_cluster = true;
+                bool is_in_cluster = false;
 
                 if (is_in_cluster) {
                         executeFile = "qsub -l select=1:ncpus=1:mem=6GB "+arquivo;
