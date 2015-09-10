@@ -1,0 +1,174 @@
+	Good Selection information:	Using 0 probes and gapdb-deep.
+
+Domain                         instance      heuristic       expanded            n
+
+barman-opt11-strips     pfile01-001_F_19.csv           ipdb    9.57769e+06              4
+                        pfile01-004_F_20.csv           ipdb    1.46206e+07
+                        pfile01-003_F_20.csv           ipdb    1.46278e+07
+                        pfile01-002_F_20.csv           ipdb    1.46206e+07
+
+elevators-opt11-strips     p13_F_29.csv           ipdb    1.68824e+07             17
+                           p05_F_32.csv           ipdb         911640
+                           p16_F_30.csv           ipdb         786342
+                           p20_F_19.csv           ipdb    5.12855e+07
+                           p12_F_25.csv           ipdb    1.15779e+07
+                           p02_F_30.csv           ipdb         178195
+                           p18_F_29.csv           ipdb    1.93394e+07
+                           p10_F_26.csv           ipdb    3.55404e+06
+                           p04_F_29.csv           ipdb         138228
+                           p01_F_39.csv           ipdb          32537
+                           p06_F_21.csv           ipdb    1.96848e+06
+                           p08_F_28.csv           ipdb    2.63637e+06
+                           p03_F_27.csv           ipdb         194239
+                           p19_F_43.csv           ipdb    2.26034e+06
+                           p09_F_12.csv           ipdb    3.34132e+07
+                           p07_F_27.csv           ipdb     1.1735e+07
+                           p17_F_35.csv           ipdb    1.72836e+08
+
+floortile-opt11-strips  opt-p01-002_F_23.csv           ipdb         702433              2
+                        opt-p01-001_F_20.csv           ipdb    1.37481e+06
+
+nomystery-opt11-strips     p03_F_14.csv           ipdb            719             16
+                           p17_F_25.csv           ipdb    5.28193e+06
+                           p13_F_14.csv           ipdb            586
+                            p11_F_8.csv           ipdb            128
+                           p08_F_26.csv           ipdb    6.17266e+07
+                           p02_F_12.csv           ipdb           1869
+                           p05_F_18.csv           ipdb         178913
+                            p01_F_8.csv           ipdb            334
+                           p18_F_26.csv           ipdb    2.36963e+07
+                           p16_F_23.csv           ipdb         731196
+                           p07_F_25.csv           ipdb    1.37285e+07
+                           p06_F_23.csv           ipdb         824775
+                           p12_F_12.csv           ipdb            625
+                           p14_F_16.csv           ipdb           3937
+                           p15_F_18.csv           ipdb         133816
+                           p04_F_16.csv           ipdb          18538
+
+openstacks-opt11-strips     p06_F_2.csv           ipdb    4.99677e+06             17
+                            p11_F_2.csv           ipdb    8.84299e+07
+                            p08_F_2.csv           ipdb     2.2452e+07
+                            p20_F_2.csv           ipdb    1.15884e+08
+                            p05_F_2.csv           ipdb         361908
+                            p12_F_2.csv           ipdb    2.61713e+07
+                            p10_F_2.csv           ipdb    7.77159e+06
+                            p15_F_2.csv           ipdb    1.22972e+08
+                            p01_F_2.csv           ipdb          10977
+                            p13_F_2.csv           ipdb    5.28318e+07
+                            p09_F_2.csv           ipdb    9.42033e+06
+                            p02_F_2.csv           ipdb    1.65404e+06
+                            p14_F_2.csv           ipdb    4.46016e+06
+                            p07_F_2.csv           ipdb    1.49319e+06
+                            p03_F_2.csv           ipdb    1.87852e+06
+                            p04_F_2.csv           ipdb         615380
+                            p16_F_2.csv           ipdb    1.02696e+08
+
+parcprinter-opt11-stripsp07_F_1067135.csv           ipdb         501759             12
+                        p03_F_426587.csv           ipdb            664
+                        p06_F_1384204.csv           ipdb    1.07946e+07
+                        p02_F_412048.csv           ipdb            179
+                        p10_F_1170852.csv           ipdb    3.49831e+06
+                        p08_F_735648.csv           ipdb          28120
+                        p12_F_853174.csv           ipdb    1.22528e+06
+                        p11_F_1178477.csv           ipdb    2.48375e+07
+                        p04_F_824096.csv           ipdb          32260
+                        p01_F_367824.csv           ipdb            184
+                        p05_F_511235.csv           ipdb           2159
+                        p09_F_609395.csv           ipdb          19195
+
+parking-opt11-strips    pfile03-011_F_8.csv           ipdb         173646              5
+                        pfile05-018_F_14.csv           ipdb    4.92559e+07
+                        pfile04-013_F_14.csv           ipdb    1.14983e+07
+                        pfile04-015_F_13.csv           ipdb    1.47822e+07
+                        pfile03-012_F_12.csv           ipdb    4.12847e+07
+
+pegsol-opt11-strips         p06_F_2.csv           ipdb         473109             17
+                            p17_F_3.csv           ipdb    6.82023e+06
+                            p08_F_2.csv           ipdb         719446
+                            p05_F_3.csv           ipdb         113093
+                            p04_F_3.csv           ipdb         384909
+                            p03_F_3.csv           ipdb          59217
+                            p12_F_3.csv           ipdb          71978
+                            p10_F_3.csv           ipdb         781733
+                            p14_F_3.csv           ipdb    3.07508e+06
+                            p13_F_2.csv           ipdb    1.66764e+06
+                            p09_F_2.csv           ipdb         665102
+                            p02_F_2.csv           ipdb         604335
+                            p07_F_2.csv           ipdb         237639
+                            p11_F_3.csv           ipdb         129234
+                            p01_F_1.csv           ipdb            362
+                            p15_F_3.csv           ipdb    2.24678e+06
+                            p16_F_2.csv           ipdb    1.28509e+07
+
+scanalyzer-opt11-strips    p02_F_18.csv           ipdb         341508              9
+                           p01_F_12.csv           ipdb             20
+                           p06_F_24.csv           ipdb    1.84192e+08
+                           p11_F_24.csv           ipdb     1.2733e+06
+                           p13_F_25.csv           ipdb    2.56806e+06
+                           p04_F_24.csv           ipdb    3.03914e+06
+                           p03_F_18.csv           ipdb         429330
+                           p14_F_25.csv           ipdb    1.63612e+06
+                           p12_F_24.csv           ipdb    1.75466e+08
+
+sokoban-opt11-strips       p06_F_15.csv           ipdb         441540             20
+                            p09_F_7.csv           ipdb          39973
+                            p11_F_4.csv           ipdb         305516
+                           p17_F_25.csv           ipdb    2.19826e+06
+                           p03_F_10.csv           ipdb          16956
+                            p02_F_5.csv           ipdb          35987
+                           p16_F_56.csv           ipdb    3.91548e+06
+                           p13_F_11.csv           ipdb    1.53263e+06
+                           p05_F_15.csv           ipdb         582783
+                            p12_F_2.csv           ipdb            861
+                            p07_F_8.csv           ipdb         128818
+                           p15_F_29.csv           ipdb         291233
+                           p19_F_30.csv           ipdb    1.93219e+06
+                            p10_F_8.csv           ipdb          24856
+                            p18_F_1.csv           ipdb          29304
+                            p14_F_8.csv           ipdb    1.12781e+06
+                           p20_F_15.csv           ipdb     1.3451e+06
+                           p04_F_24.csv           ipdb          56516
+                            p01_F_1.csv           ipdb           1248
+                            p08_F_3.csv           ipdb         310822
+
+tidybot-opt11-strips       p10_F_10.csv           ipdb         173524             14
+                            p09_F_8.csv           ipdb         202747
+                            p11_F_8.csv           ipdb         764936
+                            p13_F_8.csv           ipdb    1.78846e+06
+                            p07_F_7.csv           ipdb           5044
+                            p01_F_4.csv           ipdb             77
+                            p02_F_9.csv           ipdb          74950
+                            p14_F_6.csv           ipdb         701129
+                            p03_F_7.csv           ipdb           3852
+                            p04_F_8.csv           ipdb          66364
+                            p08_F_9.csv           ipdb         939334
+                           p12_F_10.csv           ipdb    2.81115e+06
+                            p05_F_9.csv           ipdb    1.37602e+06
+                           p06_F_10.csv           ipdb          41310
+
+transport-opt11-strips     p02_F_88.csv           ipdb         730208              8
+                          p01_F_322.csv           ipdb          67176
+                           p07_F_72.csv           ipdb    1.41507e+08
+                          p05_F_188.csv           ipdb    1.63308e+06
+                            p03_F_6.csv           ipdb         100119
+                          p19_F_422.csv           ipdb    1.97085e+08
+                          p06_F_118.csv           ipdb    4.86713e+06
+                            p04_F_8.csv           ipdb    3.10356e+06
+
+visitall-opt11-strips   problem05-full_F_24.csv           ipdb         206556             10
+                        problem05-half_F_14.csv           ipdb          23392
+                        problem04-full_F_15.csv           ipdb           3060
+                        problem03-full_F_8.csv           ipdb            136
+                        problem07-half_F_32.csv           ipdb    1.38857e+07
+                        problem03-half_F_4.csv           ipdb             73
+                        problem04-half_F_7.csv           ipdb            433
+                        problem06-full_F_35.csv           ipdb    2.94934e+07
+                        problem02-full_F_3.csv           ipdb             10
+                        problem06-half_F_15.csv           ipdb         130599
+
+woodworking-opt11-strips  p01_F_165.csv           ipdb          38239              4
+                          p03_F_185.csv           ipdb         176315
+                          p04_F_265.csv           ipdb         159570
+                          p02_F_195.csv           ipdb    3.86702e+06
+
+total instances solved:                                                          155
