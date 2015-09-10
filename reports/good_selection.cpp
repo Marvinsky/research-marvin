@@ -479,41 +479,9 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 			string file_name = open_good_selectionFile + dir_name;
 			
 			vector<string> v_file_best_heuristic;
-
-			DIR *dir2;
-                	struct dirent *ent2;
-
-                	dir2 = opendir(file_name.c_str());
-                	if (dir != NULL) {
-                        	while ((ent2 = readdir(dir2)) != NULL) {
-                                	string fileName = ent2->d_name;
-                                	int sizeName = fileName.size();
-                                	string t = fileName;
-                                	size_t  found = t.find(".sw");
-                                	bool is_swp_file = false;
-                                	if (found < 100) {
-                                        	string swp_name_mod = t.substr(found, t.length());
-                                        	cout<<"swp_name_mod = "<<swp_name_mod<<"\n";
-                                        	is_swp_file = true;
-                                	}
-                                	if ((sizeName == 1)  || (sizeName == 2) || (sizeName == 9) || (is_swp_file)) {
-                                        	//TODO
-                                	} else {
-                                        	v_file_best_heuristic.push_back(fileName);
-                                	}
-                        	}
-                        	closedir(dir2);
-                	} else {
-                        	cout<<"Error trying to open the directory: "<<file_name.c_str()<<endl;
-                	}
-
-			for (size_t r = 0; r < v_file_best_heuristic.size(); r++) {
-				string file_name_boundary = v_file_best_heuristic.at(r);
-
-				string best_file =  file_name + "/" + file_name_boundary;
-
-				vector<pair<string, double> > v_exp = analyzeFile(best_file.c_str(), false);	
-				
+			if (heuristic == "gapdb_good_lmcut" || heuristic == "gapdb_good_ipdb") {
+				string best_file =  file_name;
+				vector<pair<string, double> > v_exp = analyzeFile(best_file.c_str(), false);		
 				for(size_t j = 0;  j < v_exp.size(); j++) {
 					pair<string, double> p = v_exp.at(j);
 					string heur = p.first;
@@ -534,11 +502,66 @@ void create_report1(string heuristic, string algorithm1, string algorithm2, int 
 					}
 					count_instances++;
 				}
+			} else {
 
+				DIR *dir2;
+                		struct dirent *ent2;
+
+                		dir2 = opendir(file_name.c_str());
+                		if (dir != NULL) {
+                        		while ((ent2 = readdir(dir2)) != NULL) {
+                                		string fileName = ent2->d_name;
+                                		int sizeName = fileName.size();
+                                		string t = fileName;
+                                		size_t  found = t.find(".sw");
+                                		bool is_swp_file = false;
+                                		if (found < 100) {
+                                        		string swp_name_mod = t.substr(found, t.length());
+                                        		cout<<"swp_name_mod = "<<swp_name_mod<<"\n";
+                                        		is_swp_file = true;
+                                		}
+                                		if ((sizeName == 1)  || (sizeName == 2) || (sizeName == 9) || (is_swp_file)) {
+                                        		//TODO
+                                		} else {
+                                        		v_file_best_heuristic.push_back(fileName);
+                                		}
+                        		}
+                        		closedir(dir2);
+                		} else {
+                        		cout<<"Error trying to open the directory: "<<file_name.c_str()<<endl;
+                		}
+
+				for (size_t r = 0; r < v_file_best_heuristic.size(); r++) {
+					string file_name_boundary = v_file_best_heuristic.at(r);
+
+					string best_file =  file_name + "/" + file_name_boundary;
+
+					vector<pair<string, double> > v_exp = analyzeFile(best_file.c_str(), false);	
+				
+					for(size_t j = 0;  j < v_exp.size(); j++) {
+						pair<string, double> p = v_exp.at(j);
+						string heur = p.first;
+						double exp = p.second;
+						cout<<heur<<", "<<exp<<"\n";
+						if (count_instances == 0) {
+							outputFile<<right<<setw(15)<<dir_name;
+							outputFile<<right<<setw(15)<<heur;
+							outputFile<<right<<setw(15)<<exp;
+							outputFile<<right<<setw(15)<<instances_solved;
+							outputFile<<"\n";
+						} else {
+							outputFile<<left<<setw(24)<<"";
+							outputFile<<right<<setw(15)<<dir_name;
+							outputFile<<right<<setw(15)<<heur;
+							outputFile<<right<<setw(15)<<exp;
+							outputFile<<"\n";
+						}
+						count_instances++;
+					}
+				}
 			}
 		}
-		outputFile<<"\n";	
-
+		outputFile<<"\n";
 	    	countRead = countRead + 1;
 	} while (countRead < countProblems);
 
@@ -584,12 +607,15 @@ int main(int argc, char* argv[]) {
 		cout<<"\t1.- Number of probes 1, 10, 100, 500, 1000, 5000\n";	
 		return 1;
 	} else {
-		string number_probes = argv[1];	
-		int n_probes = atoi(number_probes.c_str());
-		cout<<"n_probes = "<<n_probes<<"\n";	
-		NUM_PROBES = n_probes;
+		string number_probes = argv[1];
+		try {	
+			int n_probes = atoi(number_probes.c_str());
+			cout<<"n_probes = "<<n_probes<<"\n";	
+			NUM_PROBES = n_probes;
+		} catch(std::exception const & e) {
+			cout<<"error: "<<e.what()<<endl;
+		}
 	}
-
 	create_report();
 
 	return 0;
