@@ -1,0 +1,53 @@
+O que é BFST?
+
+f não foi definido (talvez seja melhor explicar o que o f aqui já) (slide 6)
+
+PDB utiliza abstrações, talvez seja melhor definir abstração.
+
+Heurísticas boas (está dizendo bons)
+
+Heuristic search algorithms may take too much time to solve problems (slide 10)
+
+Quebrar o slide 10 em dois problemas. 
+
+Submodular não foi definido (Slide 11)
+
+Primeiro explicar função heurística, depois falar de outras coisas como submodular, etc. 
+
+Vamos utilizar um algoritmo de otimização para fazer a seleção de funções heurísticas (slide 17)
+
+Usar um exemplo para explicar o problema de otimização. Acredito que o exemplo do dinheiro é o melhor deles.
+
+Porque fazer uma seleção de um subconjunto de heurísticas?? (slide 19)
+
+Não mencionou que o tamanho da árvore de busca é supermodular (Slide 22)
+
+1.36 é uma garantia dada pelo fato de J ser monotônica e supermodular.
+
+uso estranho de letras (slide 25)
+
+O mesmo tipo, não o mesmo type system.
+
+H e h (slide 28)
+
+probes não foi definido (slide 33)
+
+iPDB, LMCut, M&S são termos a audiência não está familiarizada. (slide 34)
+
+consegue selecionar -> seleciona (slide 34)
+
+criar um slide para explicar maximização de heurísticas logo no início.
+
+remplassar -> substituir
+Predezir => prever
+hasta -> até
+Rubik’s Cube -> Cubo Mágico
+Stratification Sampling -> Stratified Sampling
+type system -> sistema de tipos
+
+Não precisa explicar culprit sampling
+Não precisa mostrar o código de SS, mostrar um exemplo é melhor.
+Não precisa explicar a história de SS, pode explica-lo diretamente. 
+Não precisa explicar admissibilidade e consistência
+Não precisa explicar planejamento independente de domínio.
+Não mencionar o experimento do IDA* com SS
