@@ -2,4 +2,4 @@
 testss
 astar
 1
-gapdb_good_config_sampling_time_100_10ga+lmcut+ipdb_max_time_200_no_speed
+gapdb_good_lmcut
