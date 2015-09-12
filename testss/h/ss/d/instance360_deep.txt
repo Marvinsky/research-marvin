@@ -1,4 +1,4 @@
-blocks
+visitall-opt11-strips
 domain.pddl
 1
-probBLOCKS-4-0.pddl
+problem02-half.pddl			
