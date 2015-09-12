@@ -7,7 +7,7 @@ barman-opt11-strips     pfile01-002_F_37.csv          lmcut    5.76405e+06      
                         pfile01-001_F_28.csv          lmcut    5.06895e+06
                         pfile01-003_F_39.csv          lmcut    5.72906e+06
 
-elevators-opt11-strips     p02_F_32.csv          lmcut          53461             17
+elevators-opt11-strips     p02_F_32.csv          lmcut          53461             18
                            p03_F_30.csv          lmcut          38649
                            p09_F_27.csv          lmcut         620833
                            p16_F_35.csv          lmcut         116352
@@ -18,6 +18,7 @@ elevators-opt11-strips     p02_F_32.csv          lmcut          53461           
                            p18_F_44.csv          lmcut    1.96303e+06
                            p08_F_37.csv          lmcut         879414
                            p12_F_25.csv          lmcut         836168
+                           p17_F_48.csv          lmcut     1.5091e+07
                            p01_F_39.csv          lmcut          14735
                            p07_F_33.csv          lmcut    1.30937e+06
                            p20_F_37.csv          lmcut    1.68756e+06
@@ -32,7 +33,8 @@ floortile-opt11-strips  opt-p02-004_F_33.csv          lmcut    1.10515e+06      
                         opt-p01-001_F_28.csv          lmcut          36384
                         opt-p03-006_F_42.csv          lmcut    3.55247e+06
 
-nomystery-opt11-strips     p06_F_22.csv          lmcut          37806             13
+nomystery-opt11-strips     p06_F_22.csv          lmcut          37806             14
+                           p07_F_24.csv          lmcut         845234
                            p05_F_20.csv          lmcut          44550
                            p02_F_11.csv          lmcut           1280
                             p01_F_9.csv          lmcut            627
@@ -143,10 +145,11 @@ transport-opt11-strips    p04_F_304.csv          lmcut          13154           
                           p03_F_305.csv          lmcut           1893
                           p05_F_406.csv          lmcut         144553
 
-visitall-opt11-strips   problem05-full_F_17.csv          lmcut         528310              9
+visitall-opt11-strips   problem05-full_F_17.csv          lmcut         528310             10
                         problem04-half_F_9.csv          lmcut             94
                         problem06-half_F_17.csv          lmcut           6721
                         problem02-full_F_2.csv          lmcut             10
+                        problem02-half_F_1.csv          lmcut              2
                         problem04-full_F_11.csv          lmcut           6227
                         problem03-full_F_6.csv          lmcut            216
                         problem03-half_F_5.csv          lmcut             41
@@ -160,4 +163,4 @@ woodworking-opt11-strips  p01_F_175.csv          lmcut          19185           
                           p09_F_230.csv          lmcut    1.24351e+07
                           p02_F_205.csv          lmcut    4.12309e+06
 
-total instances solved:                                                          144
+total instances solved:                                                          147
