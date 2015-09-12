@@ -1,0 +1,7 @@
+Depois de terminar de explicar o slides "Subset Heuristics" tem que falar sobre dinheiro e felicidade.
+
+A gente tem um problema de optimizacao e tem duas propiedades de nossa funcao objetivo que se precisa probar para tornar um problema de optimizacao relativamente facil.
+
+Vou dar um exemplo para voces com relacao ao dinheiro e a felicidade quanto mais dinheiro mais feliz a pessoa fica.
+
+E um problema muito dificil, mais a gente consegue uma aproximacao proxima da otima se nossa funcao objetivo para selecionar um conjunto satisface as duas propiedades monotonicidade e submodularidade, eu vou explicar essas duas propiedades com exemplos de o dinheiro e felicidade, quanto mais dinheiro mais feliz e a pessoa.
