@@ -1,0 +1,34 @@
+h(,0):,heur is GAPDB,mutation_rate:0.7000000,size=2000000,without disjoint patterns
+h(,1):,heur is GAPDB,mutation_rate:0.3000000,size=2000000,with disjoint patterns
+h(,2):,heur is GAPDB,mutation_rate:0.6000000,size=2000000,without disjoint patterns
+h(,3):,lmcut
+h(,4):,heur is GAPDB,mutation_rate:0.4000000,size=2000000,with disjoint patterns
+h(,5):,heur is GAPDB,mutation_rate:1.0000000,size=2000000,without disjoint patterns
+h(,6):,ipdb
+h(,7):,heur is GAPDB,mutation_rate:0.9000000,size=2000000,with disjoint patterns
+h(,8):,heur is GAPDB,mutation_rate:0.5000000,size=2000000,without disjoint patterns
+h(,9):,heur is GAPDB,mutation_rate:0.2000000,size=2000000,without disjoint patterns
+h(,10):,heur is GAPDB,mutation_rate:0.8000000,size=2000000,with disjoint patterns
+h(,11):,heur is GAPDB,mutation_rate:0.1000000,size=2000000,with disjoint patterns
+bc(0/0/0/0/1/0/0/0/0/0/0/0)cc=5.18935e+18
+bc(0/0/0/0/0/0/0/1/0/0/0/0)cc=2.03882e+29
+bc(0/0/0/0/0/0/0/0/0/1/0/0)cc=2.05585e+26
+bc(0/0/0/0/0/0/0/1/0/1/0/0)cc=1.12733e+26
+bc(0/0/0/0/0/1/0/1/0/1/0/0)cc=1.91382e+12
+bc(1/0/0/0/0/1/0/1/0/1/0/0)cc=5.87871e+09
+bc(1/1/1/0/0/1/0/1/1/1/0/0)cc=2.58039e+25
+bc(0/0/0/0/0/0/0/1/0/0/1/0)cc=6.31023e+25
+bc(0/1/0/0/0/1/0/1/0/1/1/0)cc=2.22453e+21
+bc(1/1/1/0/1/1/0/1/1/1/1/0)cc=9.77736e+07
+bc(0/0/0/0/0/0/0/1/0/0/0/1)cc=1.16625e+18
+bc(1/1/1/0/0/1/0/1/1/1/0/1)cc=1.91382e+12
+bc(0/0/0/0/0/0/0/1/0/0/1/1)cc=2.20227e+22
+bc(0/0/0/0/1/0/0/1/0/0/1/1)cc=5.20902e+23
+bc(0/1/1/0/1/1/0/1/0/1/1/1)cc=2.4734e+19
+bc(1/1/1/0/1/1/0/1/0/1/1/1)cc=2.91562e+17
+bc(0/0/0/0/0/1/0/1/1/1/1/1)cc=3.84841e+28
+bc(1/0/0/0/0/1/0/1/1/1/1/1)cc=1.50311e+25
+bc(0/0/0/0/1/1/0/1/1/1/1/1)cc=7.72682e+24
+bc(1/1/1/0/1/1/0/1/1/1/1/1)cc=2.56171e+27
+bc(1/1/1/1/1/1/0/1/1/1/1/1)cc=2.01125e+13
+bc(1/1/1/1/1/1/1/1/1/1/1/1)cc=1.40214e+09

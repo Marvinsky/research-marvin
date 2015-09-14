@@ -1,0 +1,8 @@
+h(,0):,lmcut
+h(,1):,ipdb
+h(,2):,heur is GAPDB,mutation_rate:1.0000000,size=2000000,without disjoint patterns
+bc(1/0/0)cc=4.97533e+10
+bc(0/1/0)cc=4.99217e+13
+bc(1/1/0)cc=1.70733e+12
+bc(0/1/1)cc=1.00413e+12
+bc(1/1/1)cc=2.70189e+11
