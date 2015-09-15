@@ -452,7 +452,8 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 		
 	map<string, vector<string> >::iterator iter;
 	for (iter = m.begin(); iter != m.end(); iter++) {
-		string gapdb_string = heuristic_good+"(mp=";
+		//string gapdb_string = heuristic_good+"(mp=";
+		string gapdb_string = "gapdb(mp=";
 		string s = iter->first;
 		vector<string> info = iter->second;
 
@@ -479,7 +480,8 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 					gapdb_string += ",disjoint="+parameter;
 				}
 			}
-			gapdb_string+=")_" + t_final;
+			gapdb_string+="),";//+ t_final;
+			//gapdb_string+=")_" + t_final;
 			//gapdb_string+=",eps=120,colls=5)";
 			//cout<<"\tgapdb_string = "<<gapdb_string<<"\n\n";
 
@@ -507,20 +509,29 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	}
 	cout<<"v_gapdb_string.size() = "<<v_gapdb_string.size()<<"\n";
 	//end astar_gpdb call the bc from ss
-	
-	for (int i = 0; i < v_gapdb_string.size(); i++) {
-		//delay the process and only run default number of instances
-		while (true) {
-			usleep(600000);
-			string INS = exec(instances.c_str());
-			int n_ins = atoi(INS.c_str());
 
-			if (n_ins < 40) {
-				break;
-			}
+
+	string heuristic_generator = "astar(";
+	for (int i = 0; i < v_gapdb_string.size(); i++) {
+		string heur = v_gapdb_string.at(i);
+		heuristic_generator += heur;
+	}
+	heuristic_generator += ")";
+
+	cout<<"heuristic_genertor= "<<heuristic_generator<<"\n";
+
+	//delay the process and only run default number of instances
+	while (true) {
+		usleep(600000);
+		string INS = exec(instances.c_str());
+		int n_ins = atoi(INS.c_str());
+
+		if (n_ins < 40) {
+			break;
 		}
+	}
 			
-		//get the real name
+	//get the real name
 		string real_heur = v_gapdb_string.at(i);	
 		string task = real_heur;
 		cout<<"task = "<<task<<"\n";
@@ -656,7 +667,6 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
                         executeFile = "timeout 1800 sh "+arquivo; //setting the limit time
                         system(executeFile.c_str());
                 }
-	}
 }
 
 void entrada_dados(string &pasta, string &problema, string &dominio, bool &dominio_unico, int &quantidade_problemas) {
