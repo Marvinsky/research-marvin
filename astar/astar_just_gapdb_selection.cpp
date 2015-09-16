@@ -400,29 +400,7 @@ bool isGAPDB(string heur) {
 }
 
 
-void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic_good, int numDominio, string pathBC, int deep_F_boundary) {
-
-	/*
-	string arquivo;
-	string sas;
-	stringstream Resultado;
-	
-	arquivo += "A";
-	Resultado<<num_problema+1;
-	arquivo += Resultado.str();
-	arquivo += string(".sh");
-	arquivo = "/" + arquivo;
-	arquivo = pasta + arquivo;
-	arquivo = "astar/"+heuristic_good+"/"+ PROB_GOOD +"/" + arquivo;
-	arquivo = "marvin/" + arquivo;
-	arquivo = "marvin/"+ arquivo;
-	arquivo = "/home/" + arquivo;
-	ofstream outfile(arquivo.c_str(), ios::out);
-		
-	sas = "Astar";
-	sas += pasta;
-	sas += Resultado.str();
-	*/
+void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic_good, int numDominio, string pathBC, int deep_F_boundary) {	
 
 	//create the text to call qsub
 	string instances = "qstat | grep -c ";
@@ -529,144 +507,84 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 		if (n_ins < 40) {
 			break;
 		}
-	}
-			
-	//get the real name
-		string real_heur = v_gapdb_string.at(i);	
-		string task = real_heur;
-		cout<<"task = "<<task<<"\n";
-		//size_t found_task_deep = task.find("deep");
-		size_t found_task_good = task.find("good");
-		string final_real_heur, final_number_heur;
-                string delimiter = "_";
-		if (found_task_good > 1000) {
-			string t0 = real_heur;
-			size_t found_t0 = t0.find("_");
-			string previous_real_heur = t0.substr(0, found_t0);
+	}	
 
-			final_real_heur = previous_real_heur;
-			//cout<<"previous_real_heur = "<<final_real_heur<<"\n";
-			if (previous_real_heur == "mands()") {
-				final_real_heur = "merge_and_shrink(shrink_strategy=shrink_bisimulation(max_states=50000,threshold=1,greedy=false),merge_strategy=merge_dfp())";
-				//final_real_heur = "merge_and_shrink()";
-			} else if (previous_real_heur == "ipdb()") {
-				final_real_heur = "ipdb(max_time=600)";
-			}
-
-			
-			//get the heuristic number
-			string t1 = real_heur;
-			size_t found_t1 = t1.find("_");
-			final_number_heur = t1.substr(found_t1 + 1, t1.length());	
-                        	
-		} else {
-			string s2 = real_heur;
-                        string pot[6];
-                        size_t pos = 0;
-                        string token;
-                        int index = 0;
-                        while ((pos = s2.find(delimiter)) != std::string::npos) {
-                        	token = s2.substr(0, pos);
-                        	pot[index] = token;
-                        	s2.erase(0, pos + delimiter.length());
-                        	index++;
-                        }
-                        //cout<<"index = "<<index<<"\n";
-                        pot[index] = s2;
-
-                        //cout<<"pot[0] = "<<pot[0]<<"\n";
-                        //cout<<"pot[1] = "<<pot[1]<<"\n";
-                        //cout<<"pot[2] = "<<pot[2]<<"\n";
-			//remove deep from pot[1]
-			string pot1 = pot[1];
-			size_t found_pot1 = pot1.find("(");
-			string new_pot1 = pot1.substr(found_pot1, pot1.length());
-			//end remove deep from pot[1]
-
-			final_real_heur = "gapdb" + new_pot1;
-			final_number_heur = pot[2];
-		}
-
-		cout<<"final_real_heur = "<<final_real_heur<<"\n";
-		cout<<"final_number_heur = "<<final_number_heur<<"\n\n";
-
-		//create new variable called deep_F_boundary
-		cout<<"deep_F_boundary = "<<deep_F_boundary<<"\n";
+	//create new variable called deep_F_boundary
+	cout<<"deep_F_boundary = "<<deep_F_boundary<<"\n";
 		
-		//begin
-		string new_problem_name = problema.c_str();
-                string t = new_problem_name;
-                size_t found = t.find(".");
-                string new_problem_name_mod = t.substr(0, found);
-                //cout<<"new_problem_name_mod = "<<new_problem_name_mod<<"\n";
-                //stringstream number;
-                //number<<i; //this should contains the real number
-                //name that will be used in the backend
-                //string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + number.str() + ".pddl";
-                string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + final_number_heur  + ".pddl";
-                cout<<"prob_name_gapdb = "<<prob_name_gapdb<<"\n\n\n";
-		//end
+	//begin
+	string new_problem_name = problema.c_str();
+        string t = new_problem_name;
+        size_t found = t.find(".");
+        string new_problem_name_mod = t.substr(0, found);
+        //cout<<"new_problem_name_mod = "<<new_problem_name_mod<<"\n";
+        //stringstream number;
+        //number<<i; //this should contains the real number
+        //name that will be used in the backend
+        //string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + number.str() + ".pddl";
+        string prob_name_gapdb = new_problem_name_mod + "_gapdb_all.pddl";
+        cout<<"prob_name_gapdb = "<<prob_name_gapdb<<"\n\n\n";
+	//end
 
-		//end get real name
-		//creation of each sh file for the gapdb heuristic
-		string arquivo;
-		string sas;
-		stringstream Resultado;
+	//end get real name
+	//creation of each sh file for the gapdb heuristic
+	string arquivo;
 			
-		Resultado<<i+1;	
-
-		arquivo = new_problem_name_mod + "_gapdb_" + final_number_heur + ".sh";	
-		arquivo = "/" + arquivo;
-		arquivo = pasta + arquivo;
-		arquivo = "astar/"+heuristic_good+"/" + PROB_GOOD  +  "/" + arquivo;
-		arquivo = "marvin/" + arquivo;
-		arquivo = "marvin/"+ arquivo;
-		arquivo = "/home/" + arquivo;
-		ofstream outfile(arquivo.c_str(), ios::out);
+	arquivo = new_problem_name_mod + "_gapdb_all.sh";	
+	arquivo = "/" + arquivo;
+	arquivo = pasta + arquivo;
+	arquivo = "astar/"+heuristic_good+"/" + PROB_GOOD  +  "/" + arquivo;
+	arquivo = "marvin/" + arquivo;
+	arquivo = "marvin/"+ arquivo;
+	arquivo = "/home/" + arquivo;
+	ofstream outfile(arquivo.c_str(), ios::out);
 		
-		sas = "Astar";
-		sas += pasta;
-		sas += Resultado.str();
-		//End creation of each sh file for the gapdb heuristic
+	string parameter =  heuristic_generator;
+	
+	//Begin construction of the sh file
+	outfile<<"#!/bin/bash\n\n";
+	outfile<<"#PBS -N "<<ASTAR_DEEP_NAME<<"\n\n#PBS -m a\n\n#PBS -l walltime=00:30:00\n\n";
+	outfile<<"#PBS -M marvin.zarate@ufv.br\n\n";
+	outfile<<"cd $PBS_O_WORKDIR\n\n";
+	outfile<<"source /usr/share/modules/init/bash\n\n";
+	outfile<<"module load python\nmodule load mercurial\n\n";
 
-		string parameter =  final_real_heur;//v_gapdb_string.at(i);
-		cout<<"parameter_"<<i<<" = "<<parameter<<"\n";
-			
-		//Begin construction of the sh file
-		outfile<<"#PBS -N "<<ASTAR_DEEP_NAME<<"\n\n#PBS -m a\n\n#PBS -l walltime=00:30:00\n\n#PBS -M marvin.zarate@ufv.br\n\n#PBS -l pmem=6gb\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
-		//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
-        	//PBS -l walltime=200
+	outfile<<"FD_ROOT=/home/marvin/fd\n\n";
+        outfile<<"TEMP=/home/marvin/fd/temp\n\n";
+        outfile<<"DIR=$(mktemp  --tmpdir=${TEMP})\n\n";
+	cout<<"pasta = "<<pasta.c_str()<<"\n\n";
 
-		cout<<"pasta = "<<pasta.c_str()<<"\n\n";
-		outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic_good<<"/" + PROB_GOOD  +  "/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd\n\n";
-		outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<" "<<problema.c_str()<<"  "<<heuristic_good<<"\n\n";
+	outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic_good<<"/" + PROB_GOOD  +  "/"<<pasta.c_str()<<"/resultado"<<"\n\n";
+	//outfile<<"cd /home/marvin/fd\n\n";
+	outfile<<"cd ${DIR}\n\n";
+	outfile<<"python3 ${FD_ROOT}/src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" ${FD_ROOT}/benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<"\n\n";
 
-		outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
+	outfile<<"${FD_ROOT}/src/preprocess/preprocess < output.sas"<<"\n\n";	
 
-		//Santiago's code to find the F_boundary on the fly	
-		outfile<<"src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic_good<<" --problem_name_gapdb "<<prob_name_gapdb<<" --deep_F_boundary "<<deep_F_boundary<<"  --search \"astar("<<parameter<<")\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
-		outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
-		outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
-    
-		outfile.close();
+	outfile<<"${FD_ROOT}/src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic_good<<" --problem_name_gapdb "<<prob_name_gapdb<<" --deep_F_boundary "<<deep_F_boundary<<"  --search \"astar_max("<<parameter<<")\" <  output > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
 
-		string date = currentDateTime();
+	outfile<<"\n\nrm ${DIR}\n\n";
+        outfile<<"\n\nmv sas_plan ${FD_ROOT}/plan_good/"<<pasta.c_str()<<"/"<<problema.c_str()<<"\n\n";
+ 
+	outfile.close();
 
-		string executeFile;
-                bool is_in_cluster = false;
+	string date = currentDateTime();
 
-                if (is_in_cluster) {
-                        executeFile = "qsub -l select=1:ncpus=1:mem=6GB "+arquivo;
-                        cout<<executeFile<<"\n\n";
-                        system(executeFile.c_str());
-                } else {
-                        string allow;
-                        allow = "chmod +x "+arquivo;
-                        cout<<allow<<"\n";
-                        system(allow.c_str());
-                        executeFile = "timeout 1800 sh "+arquivo; //setting the limit time
-                        system(executeFile.c_str());
-                }
+	string executeFile;
+        bool is_in_cluster = false;
+
+        if (is_in_cluster) {
+        	executeFile = "qsub -l select=1:ncpus=1:mem=6GB "+arquivo;
+                cout<<executeFile<<"\n\n";
+                system(executeFile.c_str());
+        } else {
+                string allow;
+                allow = "chmod +x "+arquivo;
+                cout<<allow<<"\n";
+                system(allow.c_str());
+                executeFile = "timeout 1800 sh "+arquivo; //setting the limit time
+                system(executeFile.c_str());
+        }
 }
 
 void entrada_dados(string &pasta, string &problema, string &dominio, bool &dominio_unico, int &quantidade_problemas) {
@@ -682,7 +600,11 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 	while (counter < total_heuristics) {
 		file2>>heuristic;
 		file2>>heuristic_good;
-		//create the directory of the problemas_500_probes_good
+		//create the directory of the problemas_500_probes_good and plan
+		string dirSASPLAN = "mkdir /home/marvin/fd/plan_good/";
+                if (system(dirSASPLAN.c_str())) {
+                	cout<<"create directory "<<dirSASPLAN.c_str()<<"\n";
+                }
 
 		string dirProbGood = "mkdir /home/marvin/marvin/astar/"+heuristic_good+"/";
 		if (system(dirProbGood.c_str())) {
@@ -719,6 +641,11 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 			} else {
 				dominio_unico = false;
 			}
+
+                	string dirSASPLANDomain = "mkdir /home/marvin/fd/plan_good/"+dominio;
+                	if (system(dirSASPLANDomain.c_str())) {
+                		cout<<"create directory "<<dirSASPLANDomain.c_str()<<"\n";
+                	}
 
 			string pastaProblema = "mkdir /home/marvin/marvin/astar/"+heuristic_good+"/" + PROB_GOOD  + "/"+pasta;
 			//string pastaProblema = "mkdir ~/astar/"+heuristic_good+"/" + PROB_GOOD  + "/"+pasta;
