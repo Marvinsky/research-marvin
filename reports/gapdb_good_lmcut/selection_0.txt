@@ -1,166 +1,204 @@
 	Good Selection information:	Using 0 probes and gapdb-deep.
 
-Domain                         instance      heuristic       expanded            n
+Domain                         instance            n
 
-barman-opt11-strips     pfile01-002_F_37.csv          lmcut    5.76405e+06              4
-                        pfile01-004_F_37.csv          lmcut    5.76445e+06
-                        pfile01-001_F_28.csv          lmcut    5.06895e+06
-                        pfile01-003_F_39.csv          lmcut    5.72906e+06
+barman-opt11-strips     pfile01-003.pddl              4
+                        pfile01-001.pddl
+                        pfile01-004.pddl
+                        pfile01-002.pddl
 
-elevators-opt11-strips     p02_F_32.csv          lmcut          53461             18
-                           p03_F_30.csv          lmcut          38649
-                           p09_F_27.csv          lmcut         620833
-                           p16_F_35.csv          lmcut         116352
-                           p06_F_26.csv          lmcut         118273
-                           p19_F_31.csv          lmcut    2.70366e+06
-                           p13_F_28.csv          lmcut    3.01542e+07
-                           p05_F_38.csv          lmcut          88896
-                           p18_F_44.csv          lmcut    1.96303e+06
-                           p08_F_37.csv          lmcut         879414
-                           p12_F_25.csv          lmcut         836168
-                           p17_F_48.csv          lmcut     1.5091e+07
-                           p01_F_39.csv          lmcut          14735
-                           p07_F_33.csv          lmcut    1.30937e+06
-                           p20_F_37.csv          lmcut    1.68756e+06
-                           p14_F_26.csv          lmcut    8.72148e+06
-                           p04_F_26.csv          lmcut          55752
-                           p10_F_41.csv          lmcut         239791
+elevators-opt11-strips         p05.pddl             18
+                               p19.pddl
+                               p10.pddl
+                               p20.pddl
+                               p08.pddl
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p12.pddl
+                               p01.pddl
+                               p09.pddl
+                               p13.pddl
+                               p04.pddl
+                               p18.pddl
+                               p16.pddl
+                               p03.pddl
+                               p17.pddl
+                               p07.pddl
 
-floortile-opt11-strips  opt-p02-004_F_33.csv          lmcut    1.10515e+06              6
-                        opt-p03-005_F_40.csv          lmcut    2.06278e+06
-                        opt-p02-003_F_40.csv          lmcut    3.38926e+06
-                        opt-p01-002_F_24.csv          lmcut          12336
-                        opt-p01-001_F_28.csv          lmcut          36384
-                        opt-p03-006_F_42.csv          lmcut    3.55247e+06
+floortile-opt11-strips  opt-p01-001.pddl             14
+                        opt-p04-008.pddl
+                        opt-p01-002.pddl
+                        opt-p02-003.pddl
+                        opt-p05-010.pddl
+                        opt-p06-011.pddl
+                        opt-p03-005.pddl
+                        opt-p04-007.pddl
+                        opt-p05-009.pddl
+                        opt-p07-013.pddl
+                        opt-p02-004.pddl
+                        opt-p07-014.pddl
+                        opt-p06-012.pddl
+                        opt-p03-006.pddl
 
-nomystery-opt11-strips     p06_F_22.csv          lmcut          37806             14
-                           p07_F_24.csv          lmcut         845234
-                           p05_F_20.csv          lmcut          44550
-                           p02_F_11.csv          lmcut           1280
-                            p01_F_9.csv          lmcut            627
-                           p16_F_22.csv          lmcut          37802
-                           p13_F_13.csv          lmcut           1012
-                           p15_F_20.csv          lmcut          43680
-                           p03_F_13.csv          lmcut           1284
-                           p17_F_24.csv          lmcut         695936
-                           p12_F_11.csv          lmcut            902
-                           p14_F_16.csv          lmcut           6159
-                            p11_F_9.csv          lmcut            424
-                           p04_F_16.csv          lmcut           7723
+nomystery-opt11-strips         p05.pddl             14
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p12.pddl
+                               p01.pddl
+                               p13.pddl
+                               p04.pddl
+                               p16.pddl
+                               p03.pddl
+                               p15.pddl
+                               p17.pddl
+                               p11.pddl
+                               p07.pddl
 
-openstacks-opt11-strips     p04_F_1.csv          lmcut         565860             14
-                            p10_F_1.csv          lmcut    6.38566e+06
-                            p03_F_1.csv          lmcut    1.83802e+06
-                            p13_F_1.csv          lmcut     5.0648e+07
-                            p07_F_1.csv          lmcut    1.43142e+06
-                            p05_F_1.csv          lmcut         330388
-                            p14_F_1.csv          lmcut    3.60453e+06
-                            p12_F_1.csv          lmcut    2.41121e+07
-                            p06_F_1.csv          lmcut    4.89319e+06
-                            p09_F_1.csv          lmcut     8.9125e+06
-                            p11_F_1.csv          lmcut    8.68347e+07
-                            p01_F_1.csv          lmcut           9385
-                            p08_F_1.csv          lmcut    2.22116e+07
-                            p02_F_1.csv          lmcut    1.64573e+06
+openstacks-opt11-strips        p05.pddl             16
+                               p10.pddl
+                               p08.pddl
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p12.pddl
+                               p01.pddl
+                               p09.pddl
+                               p13.pddl
+                               p04.pddl
+                               p16.pddl
+                               p03.pddl
+                               p15.pddl
+                               p11.pddl
+                               p07.pddl
 
-parcprinter-opt11-stripsp05_F_519232.csv          lmcut           2213             12
-                        p09_F_591714.csv          lmcut          28136
-                        p12_F_851450.csv          lmcut    1.46364e+06
-                        p01_F_375821.csv          lmcut            196
-                        p11_F_1216462.csv          lmcut    1.81843e+06
-                        p04_F_871096.csv          lmcut          33336
-                        p07_F_1145132.csv          lmcut         317285
-                        p03_F_425725.csv          lmcut            823
-                        p02_F_438047.csv          lmcut            199
-                        p08_F_751642.csv          lmcut          21927
-                        p10_F_1196841.csv          lmcut         440627
-                        p06_F_1511200.csv          lmcut     2.1169e+06
+parcprinter-opt11-strips       p05.pddl             17
+                               p10.pddl
+                               p20.pddl
+                               p08.pddl
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p12.pddl
+                               p01.pddl
+                               p09.pddl
+                               p13.pddl
+                               p04.pddl
+                               p16.pddl
+                               p03.pddl
+                               p15.pddl
+                               p11.pddl
+                               p07.pddl
 
-parking-opt11-strips    pfile03-011_F_9.csv          lmcut         130740              1
+parking-opt11-strips    pfile03-011.pddl              2
+                        pfile04-013.pddl
 
-pegsol-opt11-strips         p06_F_2.csv          lmcut         206109             17
-                            p08_F_2.csv          lmcut         328541
-                            p10_F_1.csv          lmcut          81680
-                            p04_F_3.csv          lmcut         159020
-                            p16_F_3.csv          lmcut    7.34606e+06
-                            p03_F_5.csv          lmcut          17364
-                            p14_F_1.csv          lmcut         349642
-                            p05_F_5.csv          lmcut          43497
-                            p13_F_2.csv          lmcut         602673
-                            p17_F_2.csv          lmcut     1.3645e+06
-                            p12_F_4.csv          lmcut          22207
-                            p09_F_2.csv          lmcut         253384
-                            p02_F_2.csv          lmcut         329757
-                            p07_F_3.csv          lmcut         146074
-                            p11_F_1.csv          lmcut          30114
-                            p01_F_1.csv          lmcut            196
-                            p15_F_3.csv          lmcut         912862
+pegsol-opt11-strips            p05.pddl             18
+                               p10.pddl
+                               p08.pddl
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p12.pddl
+                               p01.pddl
+                               p09.pddl
+                               p13.pddl
+                               p04.pddl
+                               p18.pddl
+                               p16.pddl
+                               p03.pddl
+                               p15.pddl
+                               p17.pddl
+                               p11.pddl
+                               p07.pddl
 
-scanalyzer-opt11-strips    p01_F_12.csv          lmcut             18              6
-                           p11_F_24.csv          lmcut          66232
-                           p03_F_19.csv          lmcut         304860
-                           p04_F_24.csv          lmcut          33184
-                           p05_F_30.csv          lmcut         546050
-                           p02_F_19.csv          lmcut         101400
+scanalyzer-opt11-strips        p05.pddl             13
+                               p10.pddl
+                               p20.pddl
+                               p08.pddl
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p01.pddl
+                               p09.pddl
+                               p04.pddl
+                               p03.pddl
+                               p11.pddl
+                               p07.pddl
 
-sokoban-opt11-strips        p09_F_7.csv          lmcut          19754             20
-                           p15_F_28.csv          lmcut         227611
-                            p11_F_4.csv          lmcut          84152
-                            p08_F_4.csv          lmcut           4195
-                           p17_F_25.csv          lmcut    1.64165e+06
-                           p13_F_13.csv          lmcut    1.21471e+06
-                           p03_F_10.csv          lmcut          15552
-                            p12_F_2.csv          lmcut            861
-                           p19_F_28.csv          lmcut    1.63317e+06
-                            p01_F_2.csv          lmcut            438
-                           p16_F_55.csv          lmcut    3.08578e+06
-                            p10_F_8.csv          lmcut          15553
-                            p18_F_2.csv          lmcut           4208
-                            p02_F_6.csv          lmcut          26910
-                           p06_F_16.csv          lmcut         216842
-                           p05_F_16.csv          lmcut         462960
-                           p20_F_15.csv          lmcut         876365
-                           p04_F_24.csv          lmcut          50217
-                            p14_F_7.csv          lmcut          26664
-                           p07_F_10.csv          lmcut          33511
+sokoban-opt11-strips           p05.pddl             20
+                               p19.pddl
+                               p10.pddl
+                               p20.pddl
+                               p08.pddl
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p12.pddl
+                               p01.pddl
+                               p09.pddl
+                               p13.pddl
+                               p04.pddl
+                               p18.pddl
+                               p16.pddl
+                               p03.pddl
+                               p15.pddl
+                               p17.pddl
+                               p11.pddl
+                               p07.pddl
 
-tidybot-opt11-strips       p11_F_15.csv          lmcut          28695             13
-                           p03_F_12.csv          lmcut           1462
-                           p09_F_17.csv          lmcut          41886
-                           p06_F_27.csv          lmcut           3206
-                           p08_F_19.csv          lmcut          68582
-                           p13_F_16.csv          lmcut          93685
-                            p01_F_4.csv          lmcut             77
-                           p14_F_17.csv          lmcut          12024
-                           p04_F_25.csv          lmcut           9225
-                           p05_F_24.csv          lmcut         110276
-                           p10_F_22.csv          lmcut           8026
-                           p02_F_19.csv          lmcut          19493
-                           p07_F_13.csv          lmcut           1216
+tidybot-opt11-strips           p05.pddl             18
+                               p19.pddl
+                               p10.pddl
+                               p20.pddl
+                               p08.pddl
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p12.pddl
+                               p01.pddl
+                               p09.pddl
+                               p13.pddl
+                               p04.pddl
+                               p18.pddl
+                               p03.pddl
+                               p17.pddl
+                               p11.pddl
+                               p07.pddl
 
-transport-opt11-strips    p04_F_304.csv          lmcut          13154              6
-                          p01_F_409.csv          lmcut          11568
-                          p02_F_139.csv          lmcut          41710
-                          p06_F_171.csv          lmcut         217784
-                          p03_F_305.csv          lmcut           1893
-                          p05_F_406.csv          lmcut         144553
+transport-opt11-strips         p05.pddl              6
+                               p02.pddl
+                               p06.pddl
+                               p01.pddl
+                               p04.pddl
+                               p03.pddl
 
-visitall-opt11-strips   problem05-full_F_17.csv          lmcut         528310             10
-                        problem04-half_F_9.csv          lmcut             94
-                        problem06-half_F_17.csv          lmcut           6721
-                        problem02-full_F_2.csv          lmcut             10
-                        problem02-half_F_1.csv          lmcut              2
-                        problem04-full_F_11.csv          lmcut           6227
-                        problem03-full_F_6.csv          lmcut            216
-                        problem03-half_F_5.csv          lmcut             41
-                        problem05-half_F_12.csv          lmcut           7408
-                        problem07-half_F_24.csv          lmcut    4.06095e+06
+visitall-opt11-strips   problem02-half.pddl             10
+                        problem06-half.pddl
+                        problem04-half.pddl
+                        problem02-full.pddl
+                        problem03-full.pddl
+                        problem03-half.pddl
+                        problem07-half.pddl
+                        problem04-full.pddl
+                        problem05-full.pddl
+                        problem05-half.pddl
 
-woodworking-opt11-strips  p01_F_175.csv          lmcut          19185              6
-                          p03_F_165.csv          lmcut         312318
-                          p04_F_265.csv          lmcut         170925
-                          p07_F_140.csv          lmcut    1.28492e+06
-                          p09_F_230.csv          lmcut    1.24351e+07
-                          p02_F_205.csv          lmcut    4.12309e+06
+woodworking-opt11-strips       p05.pddl             15
+                               p10.pddl
+                               p08.pddl
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p12.pddl
+                               p01.pddl
+                               p09.pddl
+                               p04.pddl
+                               p18.pddl
+                               p16.pddl
+                               p03.pddl
+                               p11.pddl
+                               p07.pddl
 
-total instances solved:                                                          147
+total instances solved:                                                          185
