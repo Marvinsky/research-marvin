@@ -516,12 +516,12 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	//end astar_gpdb call the bc from ss
 
 
-	string heuristic_generator = "astar(";
+	string heuristic_generator;
 	for (int i = 0; i < v_gapdb_string.size(); i++) {
 		string heur = v_gapdb_string.at(i);
 		heuristic_generator += heur;
 	}
-	heuristic_generator += ")";
+	//heuristic_generator += ")";
 
 	cout<<"heuristic_genertor= "<<heuristic_generator<<"\n";
 	
@@ -589,7 +589,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 	outfile<<"${FD_ROOT}/src/preprocess/preprocess < output.sas"<<"\n\n";	
 
-	outfile<<"${FD_ROOT}/src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic_good<<" --problem_name_gapdb "<<prob_name_gapdb<<" --deep_F_boundary "<<deep_F_boundary<<"  --search \"astar_max(["<<parameter<<"])\" <  output > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
+	outfile<<"${FD_ROOT}/src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic_good<<" --problem_name_gapdb "<<prob_name_gapdb<<" --deep_F_boundary "<<deep_F_boundary<<"  --search \"astar_original(max(["<<parameter<<"]))\" <  output > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
 
 	outfile<<"\n\nrm ${DIR}\n\n";
         outfile<<"\n\nmv sas_plan ${FD_ROOT}/plan_good/"<<pasta.c_str()<<"/"<<problema.c_str()<<"\n\n";
