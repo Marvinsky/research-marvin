@@ -1,4 +1,4 @@
-	Good Selection information:	Using 0 probes and gapdb-deep.
+	Good Selection information:	Using one heuristic -> gapdb_good_lmcut.
 
 Domain                         instance            n
 
@@ -201,4 +201,4 @@ woodworking-opt11-strips       p05.pddl             15
                                p11.pddl
                                p07.pddl
 
-total instances solved:                                                          185
+total instances solved:                            185
