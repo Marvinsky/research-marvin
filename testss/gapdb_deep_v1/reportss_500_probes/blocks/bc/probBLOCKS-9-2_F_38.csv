@@ -1,9 +1,0 @@
-h(,0):,ipdb
-h(,1):,lmcut
-h(,2):,heur is GAPDB,mutation_rate:1.0000000,size=2000000,without disjoint patterns
-h(,3):,merge_and_shrink
-bc(0/0/0/1)cc=2.34975e+19
-bc(1/0/0/1)cc=5.17894e+12
-bc(0/0/1/1)cc=5.13299e+14
-bc(1/0/1/1)cc=4.22598e+13
-bc(1/1/1/1)cc=5.08171e+12

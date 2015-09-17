@@ -1,7 +1,0 @@
-h(,0):,ipdb
-h(,1):,lmcut
-h(,2):,merge_and_shrink
-bc(0/0/1)cc=1.4e+34
-bc(1/0/1)cc=6.7915e+30
-bc(0/1/1)cc=3.97384e+17
-bc(1/1/1)cc=7.2863e+29

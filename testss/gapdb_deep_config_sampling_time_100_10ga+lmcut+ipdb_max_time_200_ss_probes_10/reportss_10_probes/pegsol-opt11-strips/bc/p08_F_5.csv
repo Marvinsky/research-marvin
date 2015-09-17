@@ -1,9 +1,0 @@
-h(,0):,lmcut
-h(,1):,ipdb
-h(,2):,heur is GAPDB,mutation_rate:1.0000000,size=2000000,without disjoint patterns
-bc(1/0/0)cc=778.8
-bc(0/1/0)cc=1.1784e+06
-bc(1/1/0)cc=166009
-bc(0/0/1)cc=47319.8
-bc(0/1/1)cc=23212.2
-bc(1/1/1)cc=47998.1
