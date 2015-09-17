@@ -386,6 +386,22 @@ int getTotalLevels(string interText) {
         return total_niveles;
 }
 
+
+int getTotalGAHeurs(vector<string> v) {
+	int total_ga_heur = 0;
+	//insert all the heuristics in a vector
+	for (size_t i = 0; i < v.size(); i++) {
+		string ga_pdb_s = v.at(i);
+		size_t ga_pdb_t = ga_pdb_s.find("_");
+		string ga_pdb_new_s = ga_pdb_s.substr(0, ga_pdb_t);
+		//end insert all the heuristics in a vector
+		if ("gapdb" == ga_pdb_new_s) {
+			total_ga_heur++;
+		}
+	}
+	return total_ga_heur;
+}
+
 bool isGAPDB(string heur) {	
 	//insert all the heuristics in a vector
 	string ga_pdb_s = heur;
@@ -413,15 +429,21 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         map<string, double>::iterator iter_test;
         double min_number_expanded =  std::numeric_limits<double>::max();
         string min_number_heuristic;
+	vector<string> number_gapdb_heurs;
         for (iter_test = add_line_map_heuristic.begin(); iter_test != add_line_map_heuristic.end(); iter_test++) {
         	string s = iter_test->first;	
                 double d = iter_test->second;
+		number_gapdb_heurs.push_back(s);
                 cout<<s<<", "<<d<<"\n";
                 if (min_number_expanded > d) {
                 	min_number_expanded = d;
                 	min_number_heuristic = s;
                 }
 	}
+
+	int total_gapdb_heuristics = getTotalGAHeurs(number_gapdb_heurs);
+	cout<<"total_gapdb_heuristics = "<<total_gapdb_heuristics<<"\n";
+
         cout<<"min_number_expanded = "<<min_number_expanded<<"\n";
         cout<<"min_number_heuristic = "<<min_number_heuristic<<"\n";
         //cout<<"ending m:\n";
@@ -429,6 +451,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	vector<string> v_gapdb_string;  
 		
 	map<string, vector<string> >::iterator iter;
+	int counter_just_ga_heur = 0;
 	for (iter = m.begin(); iter != m.end(); iter++) {
 		//string gapdb_string = heuristic_good+"(mp=";
 		string gapdb_string = "gapdb(mp=";
@@ -457,11 +480,13 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 				} else if (i == 3) {
 					gapdb_string += ",disjoint="+parameter;
 				}
+			}	
+			gapdb_string+=")";//+ t_final;
+			if (counter_just_ga_heur != total_gapdb_heuristics - 1) {
+				gapdb_string+=",";//+ t_final;
 			}
-			gapdb_string+="),";//+ t_final;
-			//gapdb_string+=")_" + t_final;
-			//gapdb_string+=",eps=120,colls=5)";
-			//cout<<"\tgapdb_string = "<<gapdb_string<<"\n\n";
+			cout<<"counter_just_ga_heur = "<<counter_just_ga_heur<<"\n";
+			counter_just_ga_heur++;
 
 			if (is_blind_heuristic) {
 				//Workaround
@@ -485,6 +510,8 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			cout<<"gapdb_string = "<<gapdb_string<<"\n";
 		}// s == min_number_heuristic
 	}
+
+
 	cout<<"v_gapdb_string.size() = "<<v_gapdb_string.size()<<"\n";
 	//end astar_gpdb call the bc from ss
 
@@ -497,6 +524,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	heuristic_generator += ")";
 
 	cout<<"heuristic_genertor= "<<heuristic_generator<<"\n";
+	
 
 	//delay the process and only run default number of instances
 	while (true) {
@@ -557,11 +585,11 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic_good<<"/" + PROB_GOOD  +  "/"<<pasta.c_str()<<"/resultado"<<"\n\n";
 	//outfile<<"cd /home/marvin/fd\n\n";
 	outfile<<"cd ${DIR}\n\n";
-	outfile<<"python3 ${FD_ROOT}/src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" ${FD_ROOT}/benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<"\n\n";
+	outfile<<"python3 ${FD_ROOT}/src/translate/translate.py ${FD_ROOT}/benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" ${FD_ROOT}/benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<"\n\n";
 
 	outfile<<"${FD_ROOT}/src/preprocess/preprocess < output.sas"<<"\n\n";	
 
-	outfile<<"${FD_ROOT}/src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic_good<<" --problem_name_gapdb "<<prob_name_gapdb<<" --deep_F_boundary "<<deep_F_boundary<<"  --search \"astar_max("<<parameter<<")\" <  output > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
+	outfile<<"${FD_ROOT}/src/search/downward-release --use_saved_pdbs --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic_good<<" --problem_name_gapdb "<<prob_name_gapdb<<" --deep_F_boundary "<<deep_F_boundary<<"  --search \"astar_max(["<<parameter<<"])\" <  output > ${RESULTS}/"<<prob_name_gapdb<<"\n\n";
 
 	outfile<<"\n\nrm ${DIR}\n\n";
         outfile<<"\n\nmv sas_plan ${FD_ROOT}/plan_good/"<<pasta.c_str()<<"/"<<problema.c_str()<<"\n\n";
