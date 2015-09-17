@@ -8,6 +8,15 @@
 #include <time.h>
 #include <vector>
 
+//put asleep
+#include <unistd.h>
+
+//enhance the running with nohup
+#define SS_NAME "_SS"
+
+#define NUM_PROBES 500
+#define PROB_DIR "problemas_500_probes"
+#define RESU_DIR "reportss_500_probes"
 
 using std::string;
 using namespace std;
@@ -22,6 +31,18 @@ string currentDateTime() {
 	return buf;
 }
 
+std::string exec(const char* cmd) {
+    FILE* pipe = popen(cmd, "r");
+    if (!pipe) return "ERROR";
+    char buffer[128];
+    std::string result = "";
+    while(!feof(pipe)) {
+        if(fgets(buffer, 128, pipe) != NULL)
+                result += buffer;
+    }
+    pclose(pipe);
+    return result;
+}
 
 void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic, int numDominio) {
 	string arquivo;
@@ -34,7 +55,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	arquivo += string(".sh");
 	arquivo = "/" + arquivo;
 	arquivo = pasta + arquivo;
-	arquivo = "testss/"+heuristic+"/problemas/" + arquivo;
+	arquivo = "testss/"+heuristic+"/"+PROB_DIR+"/" + arquivo;
 	arquivo = "marvin/" + arquivo;
 	arquivo = "marvin/"+ arquivo;
 	arquivo = "/home/" + arquivo;
@@ -53,12 +74,11 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	astar = problema;
 	astar = "/" + astar; 
 	astar = pasta + astar;
-	astar = "astar/" + heuristic + "/reportastar/" + astar;
+	astar = "astar/gapdb_good_" + heuristic + "/reportastar/" + astar;
 	astar = "marvin/" + astar;
 	astar = "marvin/" + astar;
 	astar = "/home/" + astar;
 	cout<<"\nastar path = "<<astar.c_str()<<"\n";
-
 
         ifstream fastar(astar.c_str());
 	long F_boundary = 0;
@@ -94,49 +114,53 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 		cout<<"\n\tFile doest not exists.\n";
 		F_boundary = 0;
 	}
+	F_boundary = 6;
 	cout<<"F_boundary = "<<F_boundary<<"\n";
 
 //End
 
+	
+	outfile<<"#!/bin/bash\n\n";
+	outfile<<"#PBS -N "<<SS_NAME<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\n#PBS -l walltime=00:30:00\n\n";
 
-	outfile<<"#PBS ss_"<<(num_problema+1)<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\ncd $PBS_O_WORKDIR\n\nsource /usr/share/modules/init/bash\n\nmodule load python\nmodule load mercurial\n\n";
-	//outfile<<"ulimit -v 6500000\n\n"; //SET LIMIT 6GB
+        outfile<<"FD_ROOT=/home/marvin/fd\n\n";
+        outfile<<"TEMP=/home/marvin/fd/temp\n\n";
+        outfile<<"DIR=$(mktemp  --tmpdir=${TEMP})\n\n";	
+	//cout<<"pasta = "<<pasta.c_str()<<"\n\n";
+	outfile<<"RESULTS=/home/marvin/marvin/testss/"<<heuristic<<"/"<<PROB_DIR<<"/"<<pasta.c_str()<<"/resultado"<<"\n\n";
+	//outfile<<"cd /home/marvin/fd\n\n";
+	outfile<<"cd ${DIR}\n\n";
+	outfile<<"python3 ${FD_ROOT}/src/translate/translate.py ${FD_ROOT}/benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" ${FD_ROOT}/benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<"\n\n";
 
-	cout<<"pasta = "<<pasta.c_str()<<"\n\n";
-	outfile<<"RESULTS=/home/marvin/marvin/testss/"<<heuristic<<"/problemas/"<<pasta.c_str()<<"/resultado"<<"\n\ncd /home/marvin/fd\n\n";
-	outfile<<"python3 src/translate/translate.py benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<" "<<sas.c_str()<<"  "<<pasta.c_str()<<"  "<<problema.c_str()<<"  "<<heuristic<<"\n\n";
-
-	outfile<<"src/preprocess/preprocess < "<<sas.c_str()<<".sas"<<"\n\n";	
+	outfile<<"${FD_ROOT}/src/preprocess/preprocess < output.sas"<<"\n\n";
 
 	if (F_boundary == 0) {
-		outfile<<"src/search/downward-release --global_probes 1000 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss("<<heuristic<<"(max_time=600))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		outfile<<"${FD_ROOT}/src/search/downward-release --global_probes 1 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss("<<heuristic<<"(max_time=200))\" <  output > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	} else {
-		outfile<<"src/search/downward-release --F_boundary "<<F_boundary<<" --global_probes 1000 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss("<<heuristic<<"(max_time=600))\" <  "<<sas.c_str()<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		outfile<<"${FD_ROOT}/src/search/downward-release --F_boundary "<<F_boundary<<" --global_probes 1 --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss("<<heuristic<<"(max_time=200))\" <  output > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	}
 
-	outfile<<"\n\nrm "<<sas.c_str()<<"\n\n";
-	outfile<<"\n\nrm "<<sas.c_str()<<".sas"<<"\n\n";
-        
+	outfile<<"\n\nrm ${DIR}\n\n";
+        //outfile<<"\n\nrm sas_plan"<<"\n\n";
 
 	outfile.close();
 
 	string date = currentDateTime();
-
 	string executeFile;
-	//executeFile = "qsub -o ";
-	//executeFile += "logs/"+date;
-	//executeFile += string(".log");
-	//executeFile += " -j oe ";
-	//executeFile += arquivo;
-	//cout<<executeFile<<"\n\n";
-	//arquivo = "qsub "+ arquivo;
-	//cout<<arquivo<<endl;
-        string allow;
-	allow = "chmod +x "+arquivo;	
-	cout<<allow<<"\n";
-	system(allow.c_str());
-	executeFile = "sh "+arquivo;
-	system(executeFile.c_str());
+        bool is_in_cluster = false;
+
+        if (is_in_cluster) {
+                executeFile = "qsub -l select=1:ncpus=1:mem=1GB "+arquivo;
+                cout<<executeFile<<"\n\n";
+                system(executeFile.c_str());
+        } else {
+                string allow;
+                allow = "chmod +x "+arquivo;
+                cout<<allow<<"\n";
+                system(allow.c_str());
+                executeFile = "timeout 1800 sh "+arquivo; //setting the limit time
+                system(executeFile.c_str());
+        }
 }
 
 
@@ -154,10 +178,28 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 	while (counter < total_heuristics) {
 		file2>>heuristic;
 
+		//enhance NUM_PROBES: create directory problemas_bounds_probes_NUM_PROBES
+                string dirPROB_PROBES = "mkdir /home/marvin/marvin/testss/"+heuristic+"/"+PROB_DIR;
+
+                if (!system(dirPROB_PROBES.c_str())) {
+                        cout<<PROB_DIR<<" created!\n";
+                }
+
+                //enhance NUM_PROBES: create directory reportss_bounds_probes_NUM_PROBES
+                string dirRESU_PROBES = "mkdir /home/marvin/marvin/testss/"+heuristic+"/"+RESU_DIR;
+
+                if (!system(dirRESU_PROBES.c_str())) {
+                        cout<<RESU_DIR<<" created!\n";
+                }
+
 		ifstream file("h/ss/d/instance360.txt");
 		cout<<"heuristic = "<<heuristic<<"\n\n";
 		cout<<"quantidade_entrada_opt = "<<quantidade_entrada_opt<<"\n\n";
-		cout<<"total_heuristics = "<<total_heuristics<<"\n\n"; 
+		cout<<"total_heuristics = "<<total_heuristics<<"\n\n";
+
+		string instances = "qstat | grep -c ";
+                instances += SS_NAME;
+ 
 		for (int i = 0; i < quantidade_entrada_opt; i++) {
 			file>>pasta;
 			//cout<<"pasta = "<<pasta<<"\n";
@@ -173,17 +215,30 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 				dominio_unico = false;
 			}
 
-			string pastaProblema = "mkdir /home/marvin/marvin/testss/"+heuristic+"/problemas/"+pasta;
-			//string pastaProblema = "mkdir ~/testss/"+heuristic+"/problemas/"+pasta;
-			printf("Tenta criar a pasta dominio.\n");
-			system(pastaProblema.c_str());
-			string pastaResultado = "mkdir /home/marvin/marvin/testss/"+heuristic+"/problemas/"+pasta+"/resultado";
-		
-			//string pastaResultado = "mkdir ~/testss/"+heuristic+"/problemas/"+pasta+"/resultado";
-			printf("Tenta criar a pasta resultado.\n");
-			system(pastaResultado.c_str());		
+			string pastaProblema = "mkdir /home/marvin/marvin/testss/"+heuristic+"/"+PROB_DIR+"/"+pasta;
+			//string pastaProblema = "mkdir ~/testss/"+heuristic+"/"+PROB_DIR+"/"+pasta;
+			if(!system(pastaProblema.c_str())) {
+                                cout<<"directory "<<pasta<<" created.\n";
+                        }
+
+			string pastaResultado = "mkdir /home/marvin/marvin/testss/"+heuristic+"/"+PROB_DIR+"/"+pasta+"/resultado";
+			//string pastaResultado = "mkdir ~/testss/"+heuristic+"/"+PROB_DIR+"/"+pasta+"/resultado";
+			if (!system(pastaResultado.c_str())) {
+                                cout<<"directory resultado created.\n";
+                        }
 
 			for (int j = 0; j < quantidade_problemas; j++) {
+				while (true) {
+                                        usleep(600000);
+                                        string INS = exec(instances.c_str());
+                                        int n_ins = atoi(INS.c_str());
+
+                                        if (n_ins < 20) {
+                                                break;
+                                        }
+
+                                }
+
 				if (dominio_unico) {
 					file>>problema;
 					cout<<"problema "<<problema<<"\n\n";
