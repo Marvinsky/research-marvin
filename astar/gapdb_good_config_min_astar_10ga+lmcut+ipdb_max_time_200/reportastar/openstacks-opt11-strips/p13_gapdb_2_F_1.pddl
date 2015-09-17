@@ -1,7 +1,0 @@
-		/home/es84075/marvin/marvin/astar/gapdb_good/reportastar/openstacks-opt11-strips/p13_gapdb_2_F_1.pddl
-	totalniveles: 4
-	f-value		#nodesByLevel		time		#nodesExpanded
-	1		97			1			97
-	2		7312			1			7409
-	3		279072			1			286481
-	4		9366144			1			9652625
