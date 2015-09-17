@@ -434,7 +434,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         	string s = iter_test->first;	
                 double d = iter_test->second;
 		number_gapdb_heurs.push_back(s);
-                cout<<s<<", "<<d<<"\n";
+                //cout<<s<<", "<<d<<"\n";
                 if (min_number_expanded > d) {
                 	min_number_expanded = d;
                 	min_number_heuristic = s;
@@ -442,10 +442,10 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	}
 
 	int total_gapdb_heuristics = getTotalGAHeurs(number_gapdb_heurs);
-	cout<<"total_gapdb_heuristics = "<<total_gapdb_heuristics<<"\n";
+	//cout<<"total_gapdb_heuristics = "<<total_gapdb_heuristics<<"\n";
 
-        cout<<"min_number_expanded = "<<min_number_expanded<<"\n";
-        cout<<"min_number_heuristic = "<<min_number_heuristic<<"\n";
+        //cout<<"min_number_expanded = "<<min_number_expanded<<"\n";
+        //cout<<"min_number_heuristic = "<<min_number_heuristic<<"\n";
         //cout<<"ending m:\n";
 
 	vector<string> v_gapdb_string;  
@@ -485,7 +485,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			if (counter_just_ga_heur != total_gapdb_heuristics - 1) {
 				gapdb_string+=",";//+ t_final;
 			}
-			cout<<"counter_just_ga_heur = "<<counter_just_ga_heur<<"\n";
+			//cout<<"counter_just_ga_heur = "<<counter_just_ga_heur<<"\n";
 			counter_just_ga_heur++;
 
 			if (is_blind_heuristic) {
@@ -507,12 +507,12 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			} else {
 				v_gapdb_string.push_back(gapdb_string);
 			}
-			cout<<"gapdb_string = "<<gapdb_string<<"\n";
+			//cout<<"gapdb_string = "<<gapdb_string<<"\n";
 		}// s == min_number_heuristic
 	}
 
 
-	cout<<"v_gapdb_string.size() = "<<v_gapdb_string.size()<<"\n";
+	//cout<<"v_gapdb_string.size() = "<<v_gapdb_string.size()<<"\n";
 	//end astar_gpdb call the bc from ss
 
 
@@ -538,7 +538,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	}	
 
 	//create new variable called deep_F_boundary
-	cout<<"deep_F_boundary = "<<deep_F_boundary<<"\n";
+	//cout<<"deep_F_boundary = "<<deep_F_boundary<<"\n";
 		
 	//begin
 	string new_problem_name = problema.c_str();
@@ -551,7 +551,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         //name that will be used in the backend
         //string prob_name_gapdb = new_problem_name_mod + "_gapdb_" + number.str() + ".pddl";
         string prob_name_gapdb = new_problem_name_mod + "_gapdb_all.pddl";
-        cout<<"prob_name_gapdb = "<<prob_name_gapdb<<"\n\n\n";
+        //cout<<"prob_name_gapdb = "<<prob_name_gapdb<<"\n\n\n";
 	//end
 
 	//end get real name
@@ -580,7 +580,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	outfile<<"FD_ROOT=/home/marvin/fd\n\n";
         outfile<<"TEMP=/home/marvin/fd/temp\n\n";
         outfile<<"DIR=$(mktemp  --tmpdir=${TEMP})\n\n";
-	cout<<"pasta = "<<pasta.c_str()<<"\n\n";
+	//cout<<"pasta = "<<pasta.c_str()<<"\n\n";
 
 	outfile<<"RESULTS=/home/marvin/marvin/astar/"<<heuristic_good<<"/" + PROB_GOOD  +  "/"<<pasta.c_str()<<"/resultado"<<"\n\n";
 	//outfile<<"cd /home/marvin/fd\n\n";
@@ -652,9 +652,9 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 
 		ifstream file("h/astar/d/instance360_good.txt");
 		cout<<"heuristic = "<<heuristic<<"\n\n";
-		cout<<"heuristic_good = "<<heuristic_good<<"\n",
-		cout<<"quantidade_entrada_opt = "<<quantidade_entrada_opt<<"\n\n";
-		cout<<"total_heuristics = "<<total_heuristics<<"\n\n"; 
+		cout<<"heuristic_good = "<<heuristic_good<<"\n";
+		//cout<<"quantidade_entrada_opt = "<<quantidade_entrada_opt<<"\n\n";
+		//cout<<"total_heuristics = "<<total_heuristics<<"\n\n"; 
 		for (int i = 0; i < quantidade_entrada_opt; i++) {
 			file>>pasta;
 			//cout<<"pasta = "<<pasta<<"\n";
@@ -662,7 +662,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 			//cout<<"dominio = "<<dominio<<"\n";
 			int numero_problemas;
 			file>>quantidade_problemas;
-			cout<<"quantidade_problemas = "<<quantidade_problemas<<"\n";
+			//cout<<"quantidade_problemas = "<<quantidade_problemas<<"\n";
 		
 			if (dominio == "domain.pddl") {
 				dominio_unico = true;
@@ -696,7 +696,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
         		bcdirectory = "marvin/" + bcdirectory;
         		bcdirectory = "marvin/" + bcdirectory;
        	 		bcdirectory = "/home/" + bcdirectory;
-        		cout<<"bcdirectory = "<<bcdirectory<<"\n";
+        		//cout<<"bcdirectory = "<<bcdirectory<<"\n";
 
         		vector<string> fileNames;
 
@@ -751,9 +751,9 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
         		for (iter_bound = map_instance_bound.begin(); iter_bound != map_instance_bound.end(); iter_bound++) {
                 		string key = iter_bound->first;
                 		int F_boundary = iter_bound->second;
-                		cout<<key<<", "<<F_boundary<<"\n"; 
+                		//cout<<key<<", "<<F_boundary<<"\n"; 
 			}
-			cout<<"\n";
+			//cout<<"\n";
 
 			for (int j = 0; j < quantidade_problemas; j++) {
 				string bcfile;
