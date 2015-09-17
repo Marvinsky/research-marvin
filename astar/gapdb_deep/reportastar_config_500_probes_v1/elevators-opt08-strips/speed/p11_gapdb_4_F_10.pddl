@@ -1,4 +1,0 @@
-		/home/levi/marvin/marvin/astar/gapdb_deep/reportastar/elevators-opt08-strips/speed/p11_gapdb_4_F_10.pddl
-	initial_value: 10
-	h_min	gen	exp		V		SEv		VeSP		NPBP
-	0	1	1		10		0		1		8.8e+199

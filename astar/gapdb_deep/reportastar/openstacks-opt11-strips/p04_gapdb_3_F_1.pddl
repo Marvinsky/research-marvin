@@ -1,6 +1,0 @@
-		/home/levi/marvin/marvin/astar/gapdb_deep/reportastar/openstacks-opt11-strips/p04_gapdb_3_F_1.pddl
-	totalniveles: 3
-	f-value		#nodesByLevel		time		#nodesExpanded
-	1		13			1			13
-	2		1276			1			1289
-	3		111296			1			112585
