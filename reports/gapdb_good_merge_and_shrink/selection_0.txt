@@ -1,159 +1,184 @@
-	Good Selection information:	Using 0 probes and gapdb-deep.
+	Good Selection information:	Using one heuristic -> gapdb_good_merge_and_shrink.
 
-Domain                         instance      heuristic       expanded            n
+Domain                         instance            n
 
-barman-opt11-strips     pfile01-004_F_8.csv          mands    7.47703e+06              4
-                        pfile01-002_F_8.csv          mands    7.47703e+06
-                        pfile01-003_F_7.csv          mands    4.66343e+06
-                        pfile01-001_F_7.csv          mands    4.76648e+06
+barman-opt11-strips     pfile01-003.pddl              4
+                        pfile01-001.pddl
+                        pfile01-004.pddl
+                        pfile01-002.pddl
 
-elevators-opt11-strips     p06_F_13.csv          mands         896375             14
-                            p09_F_9.csv          mands    1.37127e+07
-                           p19_F_12.csv          mands    1.69588e+08
-                           p16_F_31.csv          mands    8.88117e+06
-                           p02_F_12.csv          mands    1.34559e+06
-                           p04_F_13.csv          mands    1.20192e+06
-                            p20_F_6.csv          mands    5.50105e+07
-                           p10_F_25.csv          mands    6.44941e+06
-                           p05_F_19.csv          mands    5.12388e+06
-                           p01_F_19.csv          mands         935175
-                            p13_F_9.csv          mands     1.6764e+08
-                           p12_F_19.csv          mands    7.81324e+07
-                           p03_F_16.csv          mands    1.11048e+06
-                           p08_F_13.csv          mands    5.80315e+06
+elevators-opt11-strips         p05.pddl             14
+                               p19.pddl
+                               p10.pddl
+                               p20.pddl
+                               p08.pddl
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p12.pddl
+                               p01.pddl
+                               p09.pddl
+                               p04.pddl
+                               p16.pddl
+                               p03.pddl
 
-floortile-opt11-strips  opt-p01-001_F_34.csv          mands           7012              6
-                        opt-p03-005_F_40.csv          mands    4.00342e+07
-                        opt-p01-002_F_31.csv          mands           3066
-                        opt-p02-004_F_35.csv          mands    5.24592e+06
-                        opt-p02-003_F_44.csv          mands    1.96651e+07
-                        opt-p03-006_F_42.csv          mands    8.57424e+07
+floortile-opt11-strips  opt-p01-001.pddl              8
+                        opt-p04-008.pddl
+                        opt-p01-002.pddl
+                        opt-p02-003.pddl
+                        opt-p03-005.pddl
+                        opt-p04-007.pddl
+                        opt-p02-004.pddl
+                        opt-p03-006.pddl
 
-nomystery-opt11-strips     p12_F_14.csv          mands            114             18
-                           p11_F_12.csv          mands             74
-                           p15_F_23.csv          mands            346
-                           p14_F_19.csv          mands            336
-                           p08_F_30.csv          mands    2.62846e+06
-                           p16_F_26.csv          mands            510
-                           p07_F_26.csv          mands         166405
-                           p17_F_30.csv          mands           2999
-                           p06_F_24.csv          mands          25725
-                           p18_F_30.csv          mands         494741
-                           p05_F_19.csv          mands          16118
-                           p13_F_15.csv          mands            249
-                           p03_F_15.csv          mands            255
-                           p04_F_19.csv          mands            995
-                           p10_F_31.csv          mands    5.18683e+07
-                           p02_F_14.csv          mands            532
-                           p01_F_11.csv          mands            268
-                           p20_F_32.csv          mands    2.41591e+07
+nomystery-opt11-strips         p05.pddl             19
+                               p10.pddl
+                               p20.pddl
+                               p08.pddl
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p12.pddl
+                               p01.pddl
+                               p09.pddl
+                               p13.pddl
+                               p04.pddl
+                               p18.pddl
+                               p16.pddl
+                               p03.pddl
+                               p15.pddl
+                               p17.pddl
+                               p11.pddl
+                               p07.pddl
 
-openstacks-opt11-strips     p04_F_1.csv          mands         600847             17
-                            p11_F_2.csv          mands    8.84299e+07
-                            p08_F_2.csv          mands     2.2452e+07
-                            p20_F_2.csv          mands    1.15883e+08
-                            p05_F_2.csv          mands         359048
-                            p03_F_1.csv          mands     1.8401e+06
-                            p12_F_2.csv          mands    2.61713e+07
-                            p10_F_2.csv          mands    7.76859e+06
-                            p15_F_2.csv          mands    1.22972e+08
-                            p13_F_2.csv          mands    5.28318e+07
-                            p06_F_1.csv          mands    4.96169e+06
-                            p09_F_2.csv          mands    9.42033e+06
-                            p14_F_2.csv          mands    4.46016e+06
-                            p07_F_2.csv          mands     1.4847e+06
-                            p01_F_1.csv          mands           9385
-                            p16_F_2.csv          mands    1.02696e+08
-                            p02_F_1.csv          mands     1.6453e+06
+openstacks-opt11-strips        p05.pddl             17
+                               p10.pddl
+                               p20.pddl
+                               p08.pddl
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p12.pddl
+                               p01.pddl
+                               p09.pddl
+                               p13.pddl
+                               p04.pddl
+                               p16.pddl
+                               p03.pddl
+                               p15.pddl
+                               p11.pddl
+                               p07.pddl
 
-parcprinter-opt11-stripsp07_F_945074.csv          mands    1.96029e+06              9
-                        p05_F_519232.csv          mands           2213
-                        p01_F_375821.csv          mands            196
-                        p03_F_510256.csv          mands            239
-                        p02_F_438047.csv          mands            199
-                        p08_F_476567.csv          mands         212303
-                        p04_F_876094.csv          mands          44860
-                        p09_F_548424.csv          mands          44486
-                        p06_F_935075.csv          mands    1.90214e+07
+parcprinter-opt11-strips       p05.pddl             16
+                               p10.pddl
+                               p20.pddl
+                               p08.pddl
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p12.pddl
+                               p01.pddl
+                               p09.pddl
+                               p13.pddl
+                               p04.pddl
+                               p03.pddl
+                               p17.pddl
+                               p11.pddl
+                               p07.pddl
 
-parking-opt11-strips    pfile03-011_F_6.csv          mands     8.9909e+06              1
+parking-opt11-strips    pfile03-011.pddl              2
+                        pfile03-012.pddl
 
-pegsol-opt11-strips         p06_F_2.csv          mands         349560             19
-                            p10_F_4.csv          mands         459965
-                            p08_F_2.csv          mands         321112
-                            p05_F_4.csv          mands         131525
-                            p04_F_3.csv          mands         244013
-                            p09_F_3.csv          mands         342187
-                            p19_F_5.csv          mands    8.06976e+07
-                            p18_F_8.csv          mands    6.69619e+07
-                            p01_F_2.csv          mands            101
-                            p12_F_4.csv          mands          73123
-                            p13_F_3.csv          mands         697144
-                            p02_F_2.csv          mands         520146
-                            p07_F_3.csv          mands         144510
-                            p14_F_5.csv          mands    1.03432e+06
-                            p11_F_3.csv          mands          44285
-                            p03_F_4.csv          mands          26597
-                            p15_F_3.csv          mands         837735
-                            p16_F_2.csv          mands    5.39935e+06
-                            p17_F_4.csv          mands         283482
+pegsol-opt11-strips            p05.pddl             19
+                               p19.pddl
+                               p10.pddl
+                               p08.pddl
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p12.pddl
+                               p01.pddl
+                               p09.pddl
+                               p13.pddl
+                               p04.pddl
+                               p18.pddl
+                               p16.pddl
+                               p03.pddl
+                               p15.pddl
+                               p17.pddl
+                               p11.pddl
+                               p07.pddl
 
-scanalyzer-opt11-strips    p06_F_22.csv          mands    1.13656e+08             10
-                           p01_F_13.csv          mands             18
-                           p04_F_22.csv          mands    2.19181e+06
-                           p13_F_22.csv          mands    1.72877e+07
-                           p03_F_26.csv          mands          29390
-                           p02_F_22.csv          mands          10884
-                           p11_F_22.csv          mands          92200
-                           p05_F_30.csv          mands    3.96956e+07
-                           p14_F_22.csv          mands    2.62713e+06
-                           p12_F_24.csv          mands    1.67932e+08
+scanalyzer-opt11-strips        p05.pddl             11
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p12.pddl
+                               p01.pddl
+                               p13.pddl
+                               p04.pddl
+                               p03.pddl
+                               p11.pddl
+                               p07.pddl
 
-sokoban-opt11-strips       p05_F_12.csv          mands         892561             20
-                            p20_F_8.csv          mands    3.03759e+07
-                            p09_F_7.csv          mands         102452
-                            p11_F_4.csv          mands    1.28693e+06
-                            p13_F_7.csv          mands    1.49593e+07
-                           p04_F_11.csv          mands         434359
-                            p08_F_2.csv          mands          57104
-                            p06_F_4.csv          mands         761850
-                            p07_F_4.csv          mands    1.19633e+06
-                            p12_F_2.csv          mands            861
-                            p01_F_5.csv          mands            969
-                           p15_F_13.csv          mands    7.45764e+06
-                            p02_F_3.csv          mands         146523
-                            p17_F_8.csv          mands     2.2603e+07
-                            p14_F_6.csv          mands    1.72168e+06
-                            p10_F_8.csv          mands          24856
-                           p16_F_15.csv          mands    3.41287e+07
-                            p18_F_1.csv          mands          29304
-                           p19_F_16.csv          mands    2.15885e+07
-                            p03_F_4.csv          mands         152140
+sokoban-opt11-strips           p05.pddl             20
+                               p19.pddl
+                               p10.pddl
+                               p20.pddl
+                               p08.pddl
+                               p02.pddl
+                               p06.pddl
+                               p14.pddl
+                               p12.pddl
+                               p01.pddl
+                               p09.pddl
+                               p13.pddl
+                               p04.pddl
+                               p18.pddl
+                               p16.pddl
+                               p03.pddl
+                               p15.pddl
+                               p17.pddl
+                               p11.pddl
+                               p07.pddl
 
-tidybot-opt11-strips        p01_F_4.csv          mands             77              1
+tidybot-opt11-strips           p05.pddl              9
+                               p08.pddl
+                               p02.pddl
+                               p06.pddl
+                               p01.pddl
+                               p09.pddl
+                               p04.pddl
+                               p03.pddl
+                               p07.pddl
 
-transport-opt11-strips    p07_F_125.csv          mands    1.39277e+08              7
-                          p06_F_124.csv          mands    1.25406e+06
-                          p05_F_268.csv          mands         144877
-                          p03_F_532.csv          mands           2879
-                          p01_F_498.csv          mands          15511
-                          p02_F_212.csv          mands         108003
-                          p04_F_490.csv          mands          40613
+transport-opt11-strips         p05.pddl              7
+                               p02.pddl
+                               p06.pddl
+                               p01.pddl
+                               p04.pddl
+                               p03.pddl
+                               p07.pddl
 
-visitall-opt11-strips   problem03-half_F_6.csv          mands             17              8
-                        problem04-full_F_15.csv          mands            704
-                        problem05-full_F_15.csv          mands    1.12331e+06
-                        problem05-half_F_18.csv          mands            370
-                        problem03-full_F_8.csv          mands            136
-                        problem06-half_F_21.csv          mands            859
-                        problem04-half_F_11.csv          mands             58
-                        problem02-full_F_3.csv          mands             10
+visitall-opt11-strips   problem02-half.pddl              9
+                        problem06-half.pddl
+                        problem04-half.pddl
+                        problem02-full.pddl
+                        problem03-full.pddl
+                        problem03-half.pddl
+                        problem04-full.pddl
+                        problem05-full.pddl
+                        problem05-half.pddl
 
-woodworking-opt11-strips  p04_F_275.csv          mands          69486              6
-                          p09_F_220.csv          mands    4.50242e+07
-                          p02_F_115.csv          mands    1.05221e+07
-                          p01_F_195.csv          mands          18589
-                          p03_F_135.csv          mands    5.14671e+07
-                          p05_F_245.csv          mands    2.72848e+08
+woodworking-opt11-strips       p05.pddl             10
+                               p10.pddl
+                               p02.pddl
+                               p06.pddl
+                               p12.pddl
+                               p01.pddl
+                               p09.pddl
+                               p04.pddl
+                               p03.pddl
+                               p07.pddl
 
-total instances solved:                                                          140
+total instances solved:                            165

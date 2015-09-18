@@ -2,4 +2,4 @@
 testss
 astar
 1
-gapdb_good_lmcut_bculprits
+gapdb_good_merge_and_shrink
