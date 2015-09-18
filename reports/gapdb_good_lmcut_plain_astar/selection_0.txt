@@ -1,4 +1,4 @@
-	Good Selection information:	Using one heuristic -> gapdb_good_lmcut.
+	Good Selection information:	Using one heuristic -> gapdb_good_lmcut_plain_astar.
 
 Domain                         instance            n
 

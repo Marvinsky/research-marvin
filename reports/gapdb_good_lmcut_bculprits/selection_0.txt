@@ -1,0 +1,177 @@
+	Good Selection information:	Using one heuristic -> gapdb_good_lmcut_bculprits.
+
+Domain                         instance            n
+
+barman-opt11-strips     pfile01-002_F_37.pddl              4
+                        pfile01-004_F_37.pddl
+                        pfile01-001_F_28.pddl
+                        pfile01-003_F_39.pddl
+
+elevators-opt11-strips    p02_F_32.pddl             16
+                          p03_F_30.pddl
+                          p09_F_27.pddl
+                          p16_F_35.pddl
+                          p06_F_26.pddl
+                          p19_F_31.pddl
+                          p13_F_28.pddl
+                          p05_F_38.pddl
+                          p08_F_37.pddl
+                          p20_F_29.pddl
+                          p12_F_25.pddl
+                          p01_F_39.pddl
+                          p07_F_33.pddl
+                          p14_F_26.pddl
+                          p04_F_26.pddl
+                          p10_F_41.pddl
+
+floortile-opt11-strips  opt-p04-008_F_51.pddl             14
+                        opt-p03-005_F_44.pddl
+                        opt-p01-001_F_29.pddl
+                        opt-p07-014_F_73.pddl
+                        opt-p03-006_F_45.pddl
+                        opt-p01-002_F_27.pddl
+                        opt-p06-012_F_69.pddl
+                        opt-p05-010_F_60.pddl
+                        opt-p06-011_F_68.pddl
+                        opt-p07-013_F_74.pddl
+                        opt-p05-009_F_55.pddl
+                        opt-p02-003_F_27.pddl
+                        opt-p02-004_F_37.pddl
+                        opt-p04-007_F_48.pddl
+
+nomystery-opt11-strips    p06_F_22.pddl             14
+                          p07_F_24.pddl
+                          p05_F_20.pddl
+                           p01_F_9.pddl
+                          p16_F_22.pddl
+                          p13_F_13.pddl
+                          p15_F_20.pddl
+                          p03_F_13.pddl
+                           p02_F_9.pddl
+                          p17_F_24.pddl
+                          p12_F_11.pddl
+                          p14_F_16.pddl
+                           p11_F_9.pddl
+                          p04_F_16.pddl
+
+openstacks-opt11-strips    p04_F_1.pddl             14
+                           p10_F_1.pddl
+                           p03_F_1.pddl
+                           p13_F_1.pddl
+                           p07_F_1.pddl
+                           p05_F_1.pddl
+                           p14_F_1.pddl
+                           p12_F_1.pddl
+                           p06_F_1.pddl
+                           p09_F_1.pddl
+                           p11_F_1.pddl
+                           p01_F_1.pddl
+                           p08_F_1.pddl
+                           p02_F_1.pddl
+
+parcprinter-opt11-stripsp06_F_1514199.pddl             13
+                        p05_F_519232.pddl
+                        p09_F_591714.pddl
+                        p20_F_1270874.pddl
+                        p12_F_851450.pddl
+                        p01_F_375821.pddl
+                        p11_F_1216462.pddl
+                        p07_F_1145132.pddl
+                        p03_F_425725.pddl
+                        p02_F_438047.pddl
+                        p04_F_876094.pddl
+                        p10_F_1191843.pddl
+                        p08_F_751642.pddl
+
+parking-opt11-strips    pfile03-011_F_9.pddl              1
+
+pegsol-opt11-strips        p06_F_2.pddl             17
+                           p11_F_2.pddl
+                           p08_F_2.pddl
+                           p03_F_5.pddl
+                           p10_F_3.pddl
+                           p14_F_1.pddl
+                           p05_F_5.pddl
+                           p13_F_2.pddl
+                           p17_F_2.pddl
+                           p16_F_1.pddl
+                           p12_F_4.pddl
+                           p09_F_2.pddl
+                           p02_F_2.pddl
+                           p07_F_3.pddl
+                           p04_F_4.pddl
+                           p01_F_1.pddl
+                           p15_F_3.pddl
+
+scanalyzer-opt11-strips   p01_F_12.pddl              7
+                          p20_F_25.pddl
+                          p11_F_24.pddl
+                          p03_F_19.pddl
+                          p04_F_24.pddl
+                          p05_F_30.pddl
+                          p02_F_19.pddl
+
+sokoban-opt11-strips       p09_F_7.pddl             20
+                          p15_F_28.pddl
+                           p11_F_4.pddl
+                           p08_F_4.pddl
+                          p17_F_25.pddl
+                          p13_F_13.pddl
+                          p03_F_10.pddl
+                           p12_F_2.pddl
+                          p19_F_28.pddl
+                           p01_F_2.pddl
+                          p16_F_55.pddl
+                           p10_F_8.pddl
+                           p18_F_2.pddl
+                           p02_F_6.pddl
+                          p06_F_16.pddl
+                          p05_F_16.pddl
+                          p20_F_15.pddl
+                          p04_F_24.pddl
+                           p14_F_7.pddl
+                          p07_F_10.pddl
+
+tidybot-opt11-strips      p06_F_26.pddl             15
+                          p11_F_18.pddl
+                          p03_F_12.pddl
+                          p08_F_30.pddl
+                          p09_F_18.pddl
+                           p01_F_4.pddl
+                          p14_F_17.pddl
+                          p10_F_23.pddl
+                          p17_F_23.pddl
+                          p13_F_22.pddl
+                          p02_F_25.pddl
+                          p04_F_25.pddl
+                          p05_F_30.pddl
+                          p20_F_32.pddl
+                          p07_F_13.pddl
+
+transport-opt11-strips   p04_F_304.pddl              6
+                         p01_F_409.pddl
+                         p02_F_139.pddl
+                         p06_F_171.pddl
+                         p03_F_305.pddl
+                         p05_F_406.pddl
+
+visitall-opt11-strips   problem05-full_F_17.pddl             10
+                        problem04-half_F_9.pddl
+                        problem06-half_F_17.pddl
+                        problem02-full_F_2.pddl
+                        problem02-half_F_1.pddl
+                        problem04-full_F_11.pddl
+                        problem03-full_F_6.pddl
+                        problem03-half_F_5.pddl
+                        problem05-half_F_12.pddl
+                        problem07-half_F_24.pddl
+
+woodworking-opt11-strips p02_F_215.pddl              7
+                         p03_F_205.pddl
+                         p04_F_265.pddl
+                         p11_F_240.pddl
+                         p01_F_195.pddl
+                         p07_F_205.pddl
+                         p09_F_250.pddl
+
+total instances solved:                            158
