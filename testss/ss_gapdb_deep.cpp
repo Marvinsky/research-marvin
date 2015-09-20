@@ -107,6 +107,8 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	outfile<<"#!/bin/bash\n\n";
 	outfile<<"#PBS -N "<<GA_DEEP_NAME<<"\n\n#PBS -m a\n\n#PBS -M marvin.zarate@ufv.br\n\n#PBS -l walltime=00:30:00\n\n";
 
+        outfile<<"source /usr/share/modules/init/bash\n\n";
+        outfile<<"module load python\nmodule load mercurial\n\n";
 
 	outfile<<"FD_ROOT=/home/marvin/fd\n\n";
 	outfile<<"TEMP=/home/marvin/fd/temp\n\n";
