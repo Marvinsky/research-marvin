@@ -2,4 +2,4 @@
 testss
 astar
 1
-gapdb_good_just_GA_system
+gapdb_good_symba_ST_150_probes_500_10ga_ipdb_max_time_200
