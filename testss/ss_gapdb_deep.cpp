@@ -123,7 +123,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	outfile<<"${FD_ROOT}/src/search/downward-release  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=200), automate_GAs]))\" <  output > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	
 	outfile<<"\n\nrm ${DIR}\n\n";
-	outfile<<"\n\nrm sas_plan"<<"\n\n";
+	//outfile<<"\n\nrm sas_plan"<<"\n\n";
         
 	outfile.close();
 
