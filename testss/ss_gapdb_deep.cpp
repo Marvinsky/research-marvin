@@ -15,8 +15,8 @@
 #define GA_DEEP_NAME "_SS_ASTAR"
 
 #define NUM_PROBES 500
-#define PROB_PROBES "problemas_500_probes"
-#define RESU_PROBES "reportss_500_probes"
+#define PROB_PROBES "problemas_500_probes_sscc"
+#define RESU_PROBES "reportss_500_probes_sscc"
 
 
 using std::string;
