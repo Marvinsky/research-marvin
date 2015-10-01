@@ -1,0 +1,15 @@
+About the score:
+
+Plain A* max(lmcut(),ipdb(max_time=200),10ga): 203
+Plain A* (lmcut): 185
+Plain A* (ipdb):  182
+Plain A* (m&s): 165
+
+- Based in the size of the search tree generated.
+SS(10ga+lmcut+ipdb) + plain A*: 182
+SS(10ga+ipdb)  +'plain A* : 190
+SS(10ga+lmcut+ipdb) + plain A*: 192 (Commenting the bit of code mentioned by Santiago.)
+
+
+ - Based in the time evaluation
+SS(10ga+lmcut+ipdb)+plan A*: 199
