@@ -1,3 +1,3 @@
 1
 1
-gapdb
+merge_and_shrink

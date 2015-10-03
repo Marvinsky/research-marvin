@@ -17,6 +17,11 @@
 using std::string;
 using namespace std;
 
+//Root and fd information
+string _HOME_INFO = "/home";
+string _FD_INFO = "/fd";
+
+
 bool is_empty(std::ifstream& pFile) {
     return pFile.peek() == std::ifstream::traits_type::eof();
 }
@@ -300,7 +305,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	arquivo = "testss/"+heuristic+"/" + PROB_PROBES  + "/" + arquivo;
 	arquivo = "marvin/" + arquivo;
 	arquivo = "marvin/"+ arquivo;
-	arquivo = "/home/" + arquivo;
+	arquivo =  _HOME_INFO  + "/" + arquivo;
 	ofstream outfile(arquivo.c_str(), ios::out);
 	
 	//Calling idai in order to get the max_bound to use
@@ -314,13 +319,13 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         outfile<<"source /usr/share/modules/init/bash\n\n";
         outfile<<"module load python\nmodule load mercurial\n\n";
 
-	outfile<<"FD_SYMBA_HIBRIDS=/home/marvin/fd/FD_problems_SYMBA_HYBRID\n\n";
-	outfile<<"FD_ROOT=/home/marvin/fd\n\n";
-	outfile<<"TEMP=/home/marvin/fd/temp\n\n";
+	outfile<<"FD_SYMBA_HIBRIDS="<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"/FD_problems_SYMBA_HYBRID\n\n";
+	outfile<<"FD_ROOT="<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"\n\n";
+	outfile<<"TEMP="<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"/temp\n\n";
 	outfile<<"DIR=$(mktemp  --tmpdir=${TEMP})\n\n";
 	cout<<"pasta = "<<pasta.c_str()<<"\n\n";
-	outfile<<"RESULTS=/home/marvin/marvin/testss/"<<heuristic<<"/"<<PROB_PROBES<<"/"<<pasta.c_str()<<"/resultado"<<"\n\n";
-	//outfile<<"cd /home/marvin/fd\n\n";
+	outfile<<"RESULTS="<<_HOME_INFO<<"/marvin/marvin/testss/"<<heuristic<<"/"<<PROB_PROBES<<"/"<<pasta.c_str()<<"/resultado"<<"\n\n";
+	//outfile<<"cd "<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"\n\n";
 	outfile<<"cd ${DIR}\n\n";
 
 
@@ -392,14 +397,14 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 			file2>>heuristic;
 
 			//enhance NUM_PROBES: create directory problemas_bounds_probes_NUM_PROBES
-                	string dirPROB_PROBES = "mkdir /home/marvin/marvin/testss/"+heuristic+"/"+PROB_PROBES;
+                	string dirPROB_PROBES = "mkdir "+_HOME_INFO+"/marvin/marvin/testss/"+heuristic+"/"+PROB_PROBES;
 
                 	if (!system(dirPROB_PROBES.c_str())) {
                 		cout<<PROB_PROBES<<" created!\n";
                 	}
 
 			//enhance NUM_PROBES: create directory reportss_bounds_probes_NUM_PROBES
-                	string dirRESU_PROBES = "mkdir /home/marvin/marvin/testss/"+heuristic+"/"+RESU_PROBES;
+                	string dirRESU_PROBES = "mkdir "+_HOME_INFO+"/marvin/marvin/testss/"+heuristic+"/"+RESU_PROBES;
 
                 	if (!system(dirRESU_PROBES.c_str())) {
                         	cout<<dirRESU_PROBES<<" created!\n";
@@ -428,14 +433,14 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 					dominio_unico = false;
 				}
 
-				string pastaProblema = "mkdir /home/marvin/marvin/testss/"+heuristic+"/"+ PROB_PROBES  +"/"+pasta;
+				string pastaProblema = "mkdir "+_HOME_INFO+"/marvin/marvin/testss/"+heuristic+"/"+ PROB_PROBES  +"/"+pasta;
 				//string pastaProblema = "mkdir ~/testss/"+heuristic+"/problemas/"+pasta;
 			
 				if(!system(pastaProblema.c_str())) {
 					cout<<"directory "<<pasta<<" created.\n";			
 				}
 
-				string pastaResultado = "mkdir /home/marvin/marvin/testss/"+heuristic+"/"+ PROB_PROBES +"/"+pasta+"/resultado";
+				string pastaResultado = "mkdir "+_HOME_INFO+"/marvin/marvin/testss/"+heuristic+"/"+ PROB_PROBES +"/"+pasta+"/resultado";
 				//string pastaResultado = "mkdir ~/testss/"+heuristic+"/problemas/"+pasta+"/resultado";
 				if (!system(pastaResultado.c_str())) {
 					cout<<"directory resultado created.\n";

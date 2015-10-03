@@ -16,19 +16,14 @@
 using std::string;
 using namespace std;
 
+//Root and fd information
+string _HOME_INFO = "/home";
+string _FD_INFO = "/fd";
+
 //Update name of the directories -> global variables
 string PROB_GOOD = "problemas_single_astar";
-string RESUL_GOOD = "reportastar_single_astar"; //directory that need to be called in testss
+string RESU_GOOD = "reportastar_single_astar";
 
-string currentDateTime() {
-	time_t now = time(0);
-	struct tm tstruct;
-	char buf[80];
-	tstruct = *localtime(&now);
-	
-	strftime(buf, sizeof(buf), "%Y-%m-%d", &tstruct);
-	return buf;
-}
 
 std::string exec(const char* cmd) {
     FILE* pipe = popen(cmd, "r");
@@ -41,6 +36,231 @@ std::string exec(const char* cmd) {
     }
     pclose(pipe);
     return result;
+}
+
+
+int toDecimal(int n_no) {
+	int n;
+	switch (n_no) {
+		case 11:
+			n = 1;
+			break;
+		case 12:
+			n = 2;
+			break;
+		case 13:
+			n = 3;
+			break;
+		case 14:
+			n = 4;
+			break;
+		case 15:
+			n = 5;
+			break;
+		case 16:
+			n = 6;
+			break;
+		case 17:
+			n = 7;
+			break;
+		case 18:
+			n = 8;
+			break;
+		case 19:
+			n = 9;
+			break;
+		case 20:
+			n = 10;
+			break;
+		case 21:
+			n = 11;
+			break;
+		case 22:
+			n = 12;
+			break;
+		case 23:
+			n = 13;
+			break;
+		case 24:
+			n = 14;
+			break;
+		case 25:
+			n = 15;
+			break;
+		case 26:
+			n = 16;
+			break;
+		case 27:
+			n = 17;
+			break;
+		case 28:
+			n = 18;
+			break;
+		case 29:
+			n = 19;
+			break;
+		case 30:
+			n = 20;
+			break;
+		default:
+			n = 0;
+			break;
+	}
+	return n;
+}
+
+int getVisitAllInt(string instance) {
+	int n;
+	if (instance == "problem02-full.pddl") {
+		n = 1;
+	} else if (instance == "problem02-half.pddl") {
+		n = 2;
+	} else if (instance == "problem03-full.pddl") {
+		n = 3;
+	} else if (instance == "problem03-half.pddl") {
+		n = 4;
+	} else if (instance == "problem04-full.pddl") {
+		n = 5;
+	} else if (instance == "problem04-half.pddl") {
+		n = 6;
+	} else if (instance == "problem05-full.pddl") {
+		n = 7;
+	} else if (instance == "problem05-half.pddl") {
+		n = 8;
+	} else if (instance == "problem06-full.pddl") {
+		n = 9;
+	} else if (instance == "problem06-half.pddl") {
+		n = 10;
+	} else if (instance == "problem07-full.pddl") {
+		n = 11;
+	} else if (instance == "problem07-half.pddl") {
+		n = 12;
+	} else if (instance == "problem08-full.pddl") {
+		n = 13;
+	} else if (instance == "problem08-half.pddl") {
+		n = 14;
+	} else if (instance == "problem09-full.pddl") {
+		n = 15;
+	} else if (instance == "problem09-half.pddl") {
+		n = 16;
+	} else if (instance == "problem10-full.pddl") {
+		n = 17;
+	} else if (instance == "problem10-half.pddl") {
+		n = 18;
+	} else if (instance == "problem11-full.pddl") {
+		n = 19;
+	} else if (instance == "problem11-half.pddl") {
+		n = 20;
+	} else {
+		n = 0;
+	}
+	return n;
+}
+
+string getSimplePXX(string instance, string FINAL_NAME) {
+	string result;
+	string s = instance;
+        size_t t = s.find(".");
+        string p_number = s.substr(0, t);
+        size_t t2 = p_number.find("p");
+        string number = p_number.substr(t2 +1, p_number.length());
+        int n = atoi(number.c_str());
+        ostringstream convert_number;
+        convert_number << n;
+        string Result_n = convert_number.str();
+        string globalpxx = FINAL_NAME;
+        globalpxx += Result_n;
+        result = globalpxx;
+	return result;
+}
+
+string translator(string key, string instance) {
+	cout<<"key="<<key<<"\n";
+	string result;
+	cout<<"instance="<<instance<<"\n";
+        if (key == "barman-opt11-strips") {
+                string s = instance;
+                size_t t = s.find("-");
+                string number_pddl = s.substr(t + 1, s.length());
+		size_t t2 = number_pddl.find(".");
+		string number = number_pddl.substr(0, t2);
+		int n = atoi(number.c_str());
+		ostringstream convert_number;
+                convert_number << n;
+                string Result_n = convert_number.str();	
+		string barman = "BARMAN-";
+		barman += Result_n;
+		result = barman;
+        } else if (key == "elevators-opt11-strips") {
+		result = getSimplePXX(instance, "ELEVATORS-");	
+        } else if (key == "floortile-opt11-strips") {
+		string s = instance;
+		string delimiter = "-";
+                string pot[6];
+                size_t pos = 0;
+                string token;
+                int index = 0;
+                while ((pos = s.find(delimiter)) != std::string::npos) {
+                	token = s.substr(0, pos);
+                        //cout<<"token="<<token<<"\n";
+                        pot[index] = token;
+                        s.erase(0, pos + delimiter.length());
+                        index++;
+                }
+                pot[index] = s;
+		string number_pddl = pot[2];
+		size_t t2 = number_pddl.find(".");
+		string number = number_pddl.substr(0, t2);
+		int n = atoi(number.c_str());
+		ostringstream convert_number;
+                convert_number << n;
+                string Result_n = convert_number.str();	
+		string floortile = "FLOORTILE-";
+		floortile += Result_n;
+		result = floortile;
+        } else if (key == "nomystery-opt11-strips") {
+		result = getSimplePXX(instance, "NOMYSTERY-");
+        } else if (key == "openstacks-opt11-strips") {
+		result = getSimplePXX(instance, "OPENSTACKS-");
+        } else if (key == "parcprinter-opt11-strips") {
+		result = getSimplePXX(instance, "PARCPRINTER-");
+        } else if (key == "parking-opt11-strips") {
+		string s = instance;
+                size_t t = s.find("-");
+                string number_pddl = s.substr(t + 1, s.length());
+		size_t t2 = number_pddl.find(".");
+		string number = number_pddl.substr(0, t2);
+		int n_no_translate = atoi(number.c_str());
+		int n = toDecimal(n_no_translate);
+		ostringstream convert_number;
+                convert_number << n;
+                string Result_n = convert_number.str();	
+		string parking = "PARKING-";
+		parking += Result_n;
+		result = parking;
+        } else if (key == "pegsol-opt11-strips") {
+		result = getSimplePXX(instance, "PEGSOL-");
+        } else if (key == "scanalyzer-opt11-strips") {	
+		result = getSimplePXX(instance, "SCANALYZER-");
+        } else if (key == "sokoban-opt11-strips") {	
+		result = getSimplePXX(instance, "SOKOBAN-");
+        } else if (key == "tidybot-opt11-strips") {
+		result = getSimplePXX(instance, "TIDYBOT-");
+        } else if (key == "transport-opt11-strips") {	
+		result = getSimplePXX(instance, "TRANSPORT-");
+        } else if (key == "visitall-opt11-strips") {
+		int n = getVisitAllInt(instance);
+		ostringstream convert_number;
+                convert_number << n;
+                string Result_n = convert_number.str();	
+		string visitall = "VISITALL-";
+		visitall += Result_n;
+		result = visitall;
+	
+        } else if (key == "woodworking-opt11-strips") {	
+		result = getSimplePXX(instance, "WOODWORKING-");
+        }
+        return result;
 }
 
 void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic, int numDominio) {
@@ -57,7 +277,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	arquivo = "astar/"+heuristic+"/"+ PROB_GOOD +"/" + arquivo;
 	arquivo = "marvin/" + arquivo;
 	arquivo = "marvin/"+ arquivo;
-	arquivo = "/home/es84075/" + arquivo;
+	arquivo = _HOME_INFO + "/" + arquivo;
 	ofstream outfile(arquivo.c_str(), ios::out);
 	
 	
@@ -73,41 +293,46 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	outfile<<"source /usr/share/modules/init/bash\n\n";
 	outfile<<"module load python\nmodule load mercurial\n\n";
 
-	outfile<<"FD_ROOT=/home/es84075/marvin/fd_grhs\n\n";
-        outfile<<"TEMP=/home/es84075/marvin/fd_grhs/temp\n\n";
+
+	outfile<<"FD_SYMBA_HIBRIDS="<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"/FD_problems_SYMBA_HYBRID\n\n";
+	outfile<<"FD_ROOT="<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"\n\n";
+        outfile<<"TEMP="<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"/temp\n\n";
         outfile<<"DIR=$(mktemp  --tmpdir=${TEMP})\n\n";
 	cout<<"pasta = "<<pasta.c_str()<<"\n\n";
-	outfile<<"RESULTS=/home/es84075/marvin/marvin/astar/"<<heuristic<<"/"<<PROB_GOOD<<"/"<<pasta.c_str()<<"/resultado\n\n";
-	//outfile<<"cd /home/es84075/marvin/fd_deep\n\n";
+	outfile<<"RESULTS="<<_HOME_INFO<<"/marvin/marvin/astar/"<<heuristic<<"/"<<PROB_GOOD<<"/"<<pasta.c_str()<<"/resultado\n\n";
+	//outfile<<"cd "<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"\n\n";
 	outfile<<"cd ${DIR}\n\n";
-	outfile<<"python3 ${FD_ROOT}/src/translate/translate.py ${FD_ROOT}/benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" ${FD_ROOT}/benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<"\n\n";
 
-	outfile<<"${FD_ROOT}/src/preprocess/preprocess < output.sas"<<"\n\n";	
+	//outfile<<"python3 ${FD_ROOT}/src/translate/translate.py ${FD_ROOT}/benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" ${FD_ROOT}/benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<"\n\n";
+
+	//outfile<<"${FD_ROOT}/src/preprocess/preprocess < output.sas"<<"\n\n";	
+
+	string outputSA = translator(pasta.c_str(), problema.c_str());
+	cout<<"outputSA="<<outputSA<<"\n";
 
 	//lmcut
-	//outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"())\" <  output > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	//outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"())\" < ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 
 	//merge_and_shrink
-	//outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"(shrink_strategy=shrink_bisimulation(max_states=50000,threshold=1,greedy=false),merge_strategy=merge_dfp()))\" <  output  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"(merge_dfp(), shrink_bisimulation()))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	
 	//ipdb
-	//outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"(max_time=200))\" <  output > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	//outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"(max_time=200))\" < ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 
-	if (heuristic == "10gapdb") {
-		outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([automate_GAs]))\" <  output > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-		//outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([lmcut(),ipdb(max_time=200)]))\" <  output > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-		//outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([lmcut(),ipdb(max_time=200),automate_GAs]))\" <  output > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-	}
+	/*if (heuristic == "merge_and_shrink") {
+		outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		//outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([lmcut(),ipdb(max_time=200)]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		//outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([lmcut(),ipdb(max_time=200),automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	}*/
 
 	outfile<<"\n\nrm ${DIR}\n\n";
 	outfile<<"\n\nmv sas_plan ${FD_ROOT}/plan_"+heuristic+"/"<<pasta.c_str()<<"/"<<problema.c_str()<<"\n\n"; 
 
 	outfile.close();
 
-	string date = currentDateTime();
 
         string executeFile;
-	bool is_in_cluster = true;
+	bool is_in_cluster = false;
 
         if (is_in_cluster) {
                 executeFile = "qsub -l nodes=1:ppn=1,mem=6000mb "+arquivo;
@@ -138,24 +363,24 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 	while (counter < total_heuristics) {
 		file2>>heuristic;
 
-		string dirSASPLAN = "mkdir /home/es84075/marvin/fd_grhs/plan_"+heuristic+"/";
+		string dirSASPLAN = "mkdir "+_HOME_INFO+"/marvin"+_FD_INFO+"/plan_"+heuristic+"/";
                 if (system(dirSASPLAN.c_str())) {
                         cout<<"create directory "<<dirSASPLAN.c_str()<<"\n";
                 }
 
-		string dirProbGood = "mkdir /home/es84075/marvin/marvin/astar/"+heuristic+"/";
+		string dirProbGood = "mkdir "+_HOME_INFO+"/marvin/marvin/astar/"+heuristic+"/";
                 if (system(dirProbGood.c_str())) {
                         cout<<"create directory "<<dirProbGood.c_str()<<"\n";
                 }
 
 
 		//default directory
-                string dirDefault = "mkdir /home/es84075/marvin/marvin/astar/"+heuristic+"/reportastar";
+                string dirDefault = "mkdir "+_HOME_INFO+"/marvin/marvin/astar/"+heuristic+"/"+RESU_GOOD;
                 if (system(dirDefault.c_str())) {
                         cout<<"create directory "<<dirDefault.c_str()<<"\n";
                 }
 
-		string dirProblema = "mkdir /home/es84075/marvin/marvin/astar/"+heuristic+"/" + PROB_GOOD;
+		string dirProblema = "mkdir "+_HOME_INFO+"/marvin/marvin/astar/"+heuristic+"/" + PROB_GOOD;
                 if (system(dirProblema.c_str())) {
                         cout<<"create directory "<<dirProblema.c_str()<<"\n";
                 }
@@ -183,18 +408,18 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 				dominio_unico = false;
 			}
 
-			string dirSASPLANDomain = "mkdir /home/es84075/marvin/fd_grhs/plan_"+heuristic+"/"+pasta;
+			string dirSASPLANDomain = "mkdir "+_HOME_INFO+"/marvin"+_FD_INFO+"/plan_"+heuristic+"/"+pasta;
                         if (system(dirSASPLANDomain.c_str())) {
                                 cout<<"create directory "<<dirSASPLANDomain.c_str()<<"\n";
                         }
 
-			string pastaProblema = "mkdir /home/es84075/marvin/marvin/astar/"+heuristic+"/"+ PROB_GOOD +"/"+pasta;
+			string pastaProblema = "mkdir "+_HOME_INFO+"/marvin/marvin/astar/"+heuristic+"/"+ PROB_GOOD +"/"+pasta;
 			//string pastaProblema = "mkdir ~/astar/"+heuristic+"/problemas/"+pasta;
 			if(!system(pastaProblema.c_str())) {
 				cout<<"created "<<pastaProblema.c_str()<<" directory.\n";
 			}
 
-			string pastaResultado = "mkdir /home/es84075/marvin/marvin/astar/"+heuristic+"/"+ PROB_GOOD +"/"+pasta+"/resultado";
+			string pastaResultado = "mkdir "+_HOME_INFO+"/marvin/marvin/astar/"+heuristic+"/"+ PROB_GOOD +"/"+pasta+"/resultado";
 		
 			//string pastaResultado = "mkdir ~/astar/"+heuristic+"/problemas/"+pasta+"/resultado";
 			if(!system(pastaResultado.c_str())) {
