@@ -6,7 +6,9 @@ Plain A* max(10ga): 188
 
 Plain A* (lmcut): 185
 Plain A* (ipdb):  182
-Plain A* (m&s): 165
+Plain A* (m&s - full two parameters): 165
+Plain A* (m&s - empty two parameters): 163
+
 
 - Based in the size of the search tree generated.
 SS(10ga+lmcut+ipdb) + plain A*: 182
