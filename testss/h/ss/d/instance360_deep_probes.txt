@@ -1,4 +1,4 @@
-woodworking-opt11-strips
+scanalyzer-opt11-strips
 domain.pddl
 20
 p01.pddl						

@@ -289,7 +289,6 @@ int getTotalLevels(string interText) {
 
 void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic, int numDominio, string PROB_PROBES, int NUM_PROBES) {
 	string arquivo;
-	string sas;
 	stringstream Resultado;
 	
 	arquivo += "A";
@@ -304,14 +303,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	arquivo = "/home/" + arquivo;
 	ofstream outfile(arquivo.c_str(), ios::out);
 	
-	
-	sas = "SS_Astar";
-	sas += pasta;
-	sas += Resultado.str();
-
 	//Calling idai in order to get the max_bound to use
-
-
 	//end calling idai in order to get the max_bound to use
 	outfile<<"#!/bin/bash\n\n";
 	outfile<<"#PBS -N "<<GA_DEEP_NAME<<"\n\n";
@@ -322,6 +314,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         outfile<<"source /usr/share/modules/init/bash\n\n";
         outfile<<"module load python\nmodule load mercurial\n\n";
 
+	outfile<<"FD_SYMBA_HIBRIDS=/home/marvin/fd/FD_problems_SYMBA_HYBRID\n\n";
 	outfile<<"FD_ROOT=/home/marvin/fd\n\n";
 	outfile<<"TEMP=/home/marvin/fd/temp\n\n";
 	outfile<<"DIR=$(mktemp  --tmpdir=${TEMP})\n\n";
@@ -336,10 +329,8 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 	string outputSA = translator(pasta.c_str(), problema.c_str());
 	cout<<"outputSA="<<outputSA<<"\n";
-	
-	/*
-			
-	outfile<<"${FD_ROOT}/src/search/downward-release  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=200), automate_GAs]))\" <  output > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+
+	outfile<<"${FD_ROOT}/src/search/downward-release  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=200), automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	
 	outfile<<"\n\nrm ${DIR}\n\n";
 	//outfile<<"\n\nrm sas_plan"<<"\n\n";
@@ -362,7 +353,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         	system(allow.c_str());
         	executeFile = "timeout 1800 sh "+arquivo; //setting the limit time
         	system(executeFile.c_str());
-        }*/
+        }
 }
 
 void entrada_dados(string &pasta, string &problema, string &dominio, bool &dominio_unico, int &quantidade_problemas) {
