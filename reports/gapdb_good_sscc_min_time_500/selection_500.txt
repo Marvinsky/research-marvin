@@ -103,8 +103,9 @@ parking-opt11-strips    pfile04-015.pddl              8
                         pfile08-029.pddl
                         pfile05-020.pddl
 
-pegsol-opt11-strips            p05.pddl             18
+pegsol-opt11-strips            p05.pddl             19
                                p19.pddl
+                               p10.pddl
                                p08.pddl
                                p02.pddl
                                p06.pddl
@@ -210,4 +211,4 @@ woodworking-opt11-strips       p05.pddl             12
                                p11.pddl
                                p07.pddl
 
-total instances solved:                            194
+total instances solved:                            195

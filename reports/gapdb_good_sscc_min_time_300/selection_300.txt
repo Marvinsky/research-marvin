@@ -135,7 +135,7 @@ scanalyzer-opt11-strips        p05.pddl             12
                                p03.pddl
                                p11.pddl
 
-sokoban-opt11-strips           p05.pddl             19
+sokoban-opt11-strips           p05.pddl             20
                                p19.pddl
                                p10.pddl
                                p20.pddl
@@ -149,6 +149,7 @@ sokoban-opt11-strips           p05.pddl             19
                                p13.pddl
                                p04.pddl
                                p18.pddl
+                               p16.pddl
                                p03.pddl
                                p15.pddl
                                p17.pddl
@@ -216,4 +217,4 @@ woodworking-opt11-strips       p05.pddl             14
                                p11.pddl
                                p07.pddl
 
-total instances solved:                            200
+total instances solved:                            201

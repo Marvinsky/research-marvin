@@ -21,6 +21,6 @@ SS(10ga+lmcut+ipdb - 500 probes)+plain A*: 199
 run 02/10/15
 SS(10ga+lmcut+ipdb - 100 probes)  + plain A*:194
 SS(10ga+lmcut+ipdb - 200 probes)  + plain A*:186
-SS(10ga+lmcut+ipdb - 300 probes)  + plain A*:200
-SS(10ga+lmcut+ipdb - 400 probes)  + plain A*:196
-SS(10ga+lmcut+ipdb - 500 probes)  + plain A*:194
+SS(10ga+lmcut+ipdb - 300 probes)  + plain A*:201
+SS(10ga+lmcut+ipdb - 400 probes)  + plain A*:199
+SS(10ga+lmcut+ipdb - 500 probes)  + plain A*:195
