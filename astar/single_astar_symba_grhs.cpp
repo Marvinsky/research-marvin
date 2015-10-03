@@ -265,7 +265,6 @@ string translator(string key, string instance) {
 
 void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic, int numDominio) {
 	string arquivo;
-	string sas;
 	stringstream Resultado;
 	
 	arquivo += "A";
@@ -281,9 +280,6 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	ofstream outfile(arquivo.c_str(), ios::out);
 	
 	
-	sas = "Single_Astar";
-	sas += pasta;
-	sas += Resultado.str();
 
 	outfile<<"#!/bin/bash\n\n";
 	outfile<<"#PBS -N "<<ASTAR_NAME<<"\n\n";
@@ -310,20 +306,22 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	string outputSA = translator(pasta.c_str(), problema.c_str());
 	cout<<"outputSA="<<outputSA<<"\n";
 
-	//lmcut
-	//outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"())\" < ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-
-	//merge_and_shrink
-	outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"(merge_dfp(), shrink_bisimulation()))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-	
-	//ipdb
-	//outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"(max_time=200))\" < ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-
-	/*if (heuristic == "merge_and_shrink") {
+	if (heuristic == "lmcut") {
+		//lmcut
+		outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"())\" < ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	} else if (heuristic == "merge_and_shrink") {
+		//merge_and_shrink
+		outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"(merge_dfp(), shrink_bisimulation()))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	} else if (heuristic == "ipdb")	{
+		//ipdb
+		outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"(max_time=200))\" < ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	} else if (heuristic == "lmcut_ipdb") {
+		outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([lmcut(),ipdb(max_time=200)]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	} else if (heuristic == "10gapdb") {
 		outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-		//outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([lmcut(),ipdb(max_time=200)]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-		//outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([lmcut(),ipdb(max_time=200),automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-	}*/
+	} else if (heuristic == "allheuristics") {
+		outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([lmcut(),ipdb(max_time=200),automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	}
 
 	outfile<<"\n\nrm ${DIR}\n\n";
 	outfile<<"\n\nmv sas_plan ${FD_ROOT}/plan_"+heuristic+"/"<<pasta.c_str()<<"/"<<problema.c_str()<<"\n\n"; 
