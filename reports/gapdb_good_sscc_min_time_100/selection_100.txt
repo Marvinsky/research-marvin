@@ -7,12 +7,14 @@ barman-opt11-strips     pfile01-003.pddl              4
                         pfile01-004.pddl
                         pfile01-002.pddl
 
-elevators-opt11-strips         p05.pddl             16
+elevators-opt11-strips         p05.pddl             19
                                p19.pddl
+                               p10.pddl
                                p20.pddl
                                p08.pddl
                                p02.pddl
                                p06.pddl
+                               p14.pddl
                                p12.pddl
                                p01.pddl
                                p09.pddl
@@ -21,10 +23,11 @@ elevators-opt11-strips         p05.pddl             16
                                p18.pddl
                                p16.pddl
                                p03.pddl
+                               p15.pddl
                                p17.pddl
                                p07.pddl
 
-floortile-opt11-strips  opt-p01-001.pddl             14
+floortile-opt11-strips  opt-p01-001.pddl             13
                         opt-p04-008.pddl
                         opt-p01-002.pddl
                         opt-p02-003.pddl
@@ -35,7 +38,6 @@ floortile-opt11-strips  opt-p01-001.pddl             14
                         opt-p05-009.pddl
                         opt-p07-013.pddl
                         opt-p02-004.pddl
-                        opt-p07-014.pddl
                         opt-p06-012.pddl
                         opt-p03-006.pddl
 
@@ -59,7 +61,7 @@ nomystery-opt11-strips         p05.pddl             19
                                p11.pddl
                                p07.pddl
 
-openstacks-opt11-strips        p05.pddl             17
+openstacks-opt11-strips        p05.pddl             15
                                p10.pddl
                                p20.pddl
                                p08.pddl
@@ -68,14 +70,12 @@ openstacks-opt11-strips        p05.pddl             17
                                p14.pddl
                                p12.pddl
                                p01.pddl
-                               p09.pddl
                                p13.pddl
                                p04.pddl
                                p16.pddl
                                p03.pddl
                                p15.pddl
                                p11.pddl
-                               p07.pddl
 
 parcprinter-opt11-strips       p05.pddl             16
                                p10.pddl
@@ -94,12 +94,13 @@ parcprinter-opt11-strips       p05.pddl             16
                                p11.pddl
                                p07.pddl
 
-parking-opt11-strips    pfile04-015.pddl              6
+parking-opt11-strips    pfile04-015.pddl              7
                         pfile05-018.pddl
                         pfile05-017.pddl
                         pfile03-011.pddl
                         pfile04-013.pddl
                         pfile03-012.pddl
+                        pfile05-020.pddl
 
 pegsol-opt11-strips            p05.pddl             19
                                p19.pddl
@@ -132,7 +133,7 @@ scanalyzer-opt11-strips        p05.pddl             10
                                p03.pddl
                                p11.pddl
 
-sokoban-opt11-strips           p05.pddl             19
+sokoban-opt11-strips           p05.pddl             20
                                p19.pddl
                                p10.pddl
                                p20.pddl
@@ -141,6 +142,7 @@ sokoban-opt11-strips           p05.pddl             19
                                p06.pddl
                                p14.pddl
                                p12.pddl
+                               p01.pddl
                                p09.pddl
                                p13.pddl
                                p04.pddl
@@ -169,8 +171,9 @@ tidybot-opt11-strips           p05.pddl             16
                                p11.pddl
                                p07.pddl
 
-transport-opt11-strips         p05.pddl             10
+transport-opt11-strips         p05.pddl             11
                                p19.pddl
+                               p08.pddl
                                p02.pddl
                                p06.pddl
                                p01.pddl
@@ -180,7 +183,8 @@ transport-opt11-strips         p05.pddl             10
                                p17.pddl
                                p07.pddl
 
-visitall-opt11-strips   problem02-half.pddl             15
+visitall-opt11-strips   problem02-half.pddl             16
+                        problem07-full.pddl
                         problem10-full.pddl
                         problem11-full.pddl
                         problem08-half.pddl
@@ -210,4 +214,4 @@ woodworking-opt11-strips       p05.pddl             13
                                p11.pddl
                                p07.pddl
 
-total instances solved:                            194
+total instances solved:                            198

@@ -7,12 +7,14 @@ barman-opt11-strips     pfile01-003.pddl              4
                         pfile01-004.pddl
                         pfile01-002.pddl
 
-elevators-opt11-strips         p05.pddl             16
+elevators-opt11-strips         p05.pddl             19
                                p19.pddl
+                               p10.pddl
                                p20.pddl
                                p08.pddl
                                p02.pddl
                                p06.pddl
+                               p14.pddl
                                p12.pddl
                                p01.pddl
                                p09.pddl
@@ -21,27 +23,35 @@ elevators-opt11-strips         p05.pddl             16
                                p18.pddl
                                p16.pddl
                                p03.pddl
+                               p15.pddl
                                p17.pddl
                                p07.pddl
 
-floortile-opt11-strips  opt-p04-008.pddl              8
+floortile-opt11-strips  opt-p01-001.pddl             13
+                        opt-p04-008.pddl
                         opt-p01-002.pddl
                         opt-p02-003.pddl
                         opt-p05-010.pddl
                         opt-p06-011.pddl
+                        opt-p03-005.pddl
                         opt-p04-007.pddl
-                        opt-p07-014.pddl
+                        opt-p05-009.pddl
+                        opt-p07-013.pddl
+                        opt-p02-004.pddl
+                        opt-p06-012.pddl
                         opt-p03-006.pddl
 
-nomystery-opt11-strips         p05.pddl             17
+nomystery-opt11-strips         p05.pddl             19
                                p19.pddl
                                p10.pddl
                                p08.pddl
                                p02.pddl
+                               p06.pddl
                                p14.pddl
                                p12.pddl
                                p01.pddl
                                p09.pddl
+                               p13.pddl
                                p04.pddl
                                p18.pddl
                                p16.pddl
@@ -51,8 +61,9 @@ nomystery-opt11-strips         p05.pddl             17
                                p11.pddl
                                p07.pddl
 
-openstacks-opt11-strips        p05.pddl             16
+openstacks-opt11-strips        p05.pddl             17
                                p10.pddl
+                               p20.pddl
                                p08.pddl
                                p02.pddl
                                p06.pddl
@@ -113,17 +124,20 @@ pegsol-opt11-strips            p05.pddl             19
                                p11.pddl
                                p07.pddl
 
-scanalyzer-opt11-strips        p05.pddl              9
+scanalyzer-opt11-strips        p05.pddl             12
+                               p10.pddl
                                p02.pddl
                                p06.pddl
                                p14.pddl
                                p12.pddl
                                p01.pddl
+                               p09.pddl
+                               p13.pddl
                                p04.pddl
                                p03.pddl
                                p11.pddl
 
-sokoban-opt11-strips           p05.pddl             19
+sokoban-opt11-strips           p05.pddl             20
                                p19.pddl
                                p10.pddl
                                p20.pddl
@@ -133,6 +147,7 @@ sokoban-opt11-strips           p05.pddl             19
                                p14.pddl
                                p12.pddl
                                p01.pddl
+                               p09.pddl
                                p13.pddl
                                p04.pddl
                                p18.pddl
@@ -143,24 +158,26 @@ sokoban-opt11-strips           p05.pddl             19
                                p11.pddl
                                p07.pddl
 
-tidybot-opt11-strips           p05.pddl             14
+tidybot-opt11-strips           p05.pddl             17
+                               p10.pddl
                                p20.pddl
                                p08.pddl
                                p02.pddl
                                p06.pddl
+                               p14.pddl
                                p12.pddl
                                p01.pddl
                                p09.pddl
                                p13.pddl
                                p04.pddl
+                               p18.pddl
                                p03.pddl
                                p17.pddl
                                p11.pddl
                                p07.pddl
 
-transport-opt11-strips         p05.pddl             11
+transport-opt11-strips         p05.pddl             10
                                p19.pddl
-                               p08.pddl
                                p02.pddl
                                p06.pddl
                                p01.pddl
@@ -187,12 +204,11 @@ visitall-opt11-strips   problem02-half.pddl             16
                         problem05-full.pddl
                         problem05-half.pddl
 
-woodworking-opt11-strips       p05.pddl             14
+woodworking-opt11-strips       p05.pddl             13
                                p10.pddl
                                p08.pddl
                                p02.pddl
                                p06.pddl
-                               p12.pddl
                                p01.pddl
                                p09.pddl
                                p04.pddl
@@ -202,4 +218,4 @@ woodworking-opt11-strips       p05.pddl             14
                                p11.pddl
                                p07.pddl
 
-total instances solved:                            186
+total instances solved:                            202

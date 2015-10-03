@@ -15,12 +15,9 @@ SS(10ga+lmcut+ipdb) + plain A*: 192 (Commenting the bit of code mentioned by San
 
 
  - Based in the time evaluation
-run 01/10/15
-SS(10ga+lmcut+ipdb - 500 probes)+plain A*: 199
 
-run 02/10/15
-SS(10ga+lmcut+ipdb - 100 probes)  + plain A*:194
-SS(10ga+lmcut+ipdb - 200 probes)  + plain A*:186
-SS(10ga+lmcut+ipdb - 300 probes)  + plain A*:201
+SS(10ga+lmcut+ipdb - 100 probes)  + plain A*:198
+SS(10ga+lmcut+ipdb - 200 probes)  + plain A*:202
+SS(10ga+lmcut+ipdb - 300 probes)  + plain A*:202
 SS(10ga+lmcut+ipdb - 400 probes)  + plain A*:199
-SS(10ga+lmcut+ipdb - 500 probes)  + plain A*:195
+SS(10ga+lmcut+ipdb - 500 probes)  + plain A*:203
