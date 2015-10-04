@@ -5,7 +5,7 @@ Plain A* max(lmcut(),ipdb(max_time=200)): 190
 Plain A* max(10ga): 188
 
 Plain A* (lmcut): 185
-Plain A* (ipdb):  182
+Plain A* (ipdb):  183
 Plain A* (m&s - full two parameters): 165
 Plain A* (m&s - empty two parameters): 163
 
