@@ -1,0 +1,21 @@
+4 -> number of iterations of probes 
+500  -> number of probes
+12   -> number of gapdb heuristic to create
+1 -> 1 domain
+1 -> 1 heuristic
+gapdb_deep -> heuristic
+500  -> number of probes
+120   -> number of gapdb heuristic to create
+1 -> 1 domain
+1 -> 1 heuristic
+gapdb_deep -> heuristic
+500  -> number of probes
+1200   -> number of gapdb heuristic to create
+1 -> 1 domain
+1 -> 1 heuristic
+gapdb_deep -> heuristic
+500  -> number of probes
+12000   -> number of gapdb heuristic to create
+1 -> 1 domain
+1 -> 1 heuristic
+gapdb_deep -> heuristic

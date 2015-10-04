@@ -292,7 +292,7 @@ int getTotalLevels(string interText) {
         return total_niveles;
 }
 
-void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic, int numDominio, string PROB_PROBES, int NUM_PROBES) {
+void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic, int numDominio, string PROB_PROBES, int NUM_PROBES, int NUM_HTC) {
 	string arquivo;
 	stringstream Resultado;
 	
@@ -335,7 +335,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	string outputSA = translator(pasta.c_str(), problema.c_str());
 	cout<<"outputSA="<<outputSA<<"\n";
 
-	outfile<<"${FD_ROOT}/src/search/downward-release  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=200), automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	outfile<<"${FD_ROOT}/src/search/downward-release  --run_n_heuristics "<<NUM_HTC<<"  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=200), automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	
 	outfile<<"\n\nrm ${DIR}\n\n";
 	//outfile<<"\n\nrm sas_plan"<<"\n\n";
@@ -368,33 +368,53 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 	int counter_probes = 0;
 	file2>>number_of_probes;
 	int probes_info;
+	int number_of_heuristics;
 	while (counter_probes < number_of_probes) {
 		file2>>probes_info;
+		file2>>number_of_heuristics;
 
+		//cast number of heuristics to create
+		int NUM_HTC = number_of_heuristics;
+		ostringstream convert_n_htc;
+		convert_n_htc << NUM_HTC;
+		string Result_n_htc = convert_n_htc.str();
+
+		//cast probes
 		int NUM_PROBES = probes_info;
 		ostringstream convert_probe;
 		convert_probe << NUM_PROBES;
 		string Result_probe = convert_probe.str();
 
 		string PROB_PROBES = "problemas_";
-                PROB_PROBES += Result_probe;
-                PROB_PROBES += "_probes_sscc";
-                cout<<"PROB_PROBES = "<<PROB_PROBES<<"\n";
-
 		string RESU_PROBES = "reportss_";
-		RESU_PROBES += Result_probe;
-		RESU_PROBES += "_probes_sscc";
+		if (NUM_HTC == 0) {
+                	PROB_PROBES += Result_probe;
+                	PROB_PROBES += "_probes_sscc";
+
+			RESU_PROBES += Result_probe;
+			RESU_PROBES += "_probes_sscc";
+		} else {
+			PROB_PROBES += Result_probe;
+                	PROB_PROBES += "_probes_sscc_"+Result_n_htc;
+
+			RESU_PROBES += Result_probe;
+			RESU_PROBES += "_probes_sscc_"+Result_n_htc;
+		}
+                cout<<"PROB_PROBES = "<<PROB_PROBES<<"\n";
 		cout<<"RESU_PROBES = "<<RESU_PROBES<<"\n";
 
 		int quantidade_entrada_opt;
 		int total_heuristics;
 		file2>>quantidade_entrada_opt;
 		file2>>total_heuristics;
-
+		cout<<"quantidate_entrada_opt="<<quantidade_entrada_opt<<"\n";
+		cout<<"total_heuristics="<<total_heuristics<<"\n";
+		
 		int counter = 0;
 		string heuristic;
 		while (counter < total_heuristics) {
 			file2>>heuristic;
+			cout<<"heuristic="<<heuristic<<"\n";
 
 			//enhance NUM_PROBES: create directory problemas_bounds_probes_NUM_PROBES
                 	string dirPROB_PROBES = "mkdir "+_HOME_INFO+"/marvin/marvin/testss/"+heuristic+"/"+PROB_PROBES;
@@ -461,17 +481,18 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 					if (dominio_unico) {
 						file>>problema;
 						cout<<"problema "<<problema<<"\n\n";
-						create_sh(pasta, dominio, problema, j, heuristic, i+1, PROB_PROBES, NUM_PROBES);
+						create_sh(pasta, dominio, problema, j, heuristic, i+1, PROB_PROBES, NUM_PROBES, NUM_HTC);
 					} else {
 						file>>dominio;
 						file>>problema;
 						cout<<"dominio "<<dominio<<"\n\n";
 						cout<<"problema "<<problema<<"\n\n";
-						create_sh(pasta, dominio, problema, j, heuristic, i+1, PROB_PROBES, NUM_PROBES);
+						create_sh(pasta, dominio, problema, j, heuristic, i+1, PROB_PROBES, NUM_PROBES, NUM_HTC);
 					}
 				}		
 			}	
 			counter++;
+			
 		}
 	counter_probes++;
 	}
