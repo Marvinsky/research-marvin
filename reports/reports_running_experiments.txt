@@ -16,10 +16,20 @@ SS(10ga+ipdb)  +'plain A* : 190
 SS(10ga+lmcut+ipdb) + plain A*: 192 (Commenting the bit of code mentioned by Santiago.)
 
 
- - Based in the time evaluation
+- Based in the time evaluation
 
 SS(10ga+lmcut+ipdb - 100 probes)  + plain A*:198
 SS(10ga+lmcut+ipdb - 200 probes)  + plain A*:202
 SS(10ga+lmcut+ipdb - 300 probes)  + plain A*:202
 SS(10ga+lmcut+ipdb - 400 probes)  + plain A*:199
 SS(10ga+lmcut+ipdb - 500 probes)  + plain A*:203
+
+
+- Running the meta-reasoning probes/heuristics
+
+Case   #probes/#heuristics       system                               instances solved
+1.-        500/12             SS(12ga+lmcut+ipdb)+plain A*            198 
+2.-        Removed by mistake - running again
+3.-         20/1200           SS(1200ga+lmcut+ipdb)+plain A*          189
+4.-         20/12000          SS(12000ga+lmcut+ipdb)+plain A*         187
+5.-         20/120000         SS(120000ga+lmcut+ipdb)+plain A*        175
