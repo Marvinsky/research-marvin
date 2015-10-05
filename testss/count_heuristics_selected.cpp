@@ -18,8 +18,8 @@ using std::string;
 using namespace std;
 
 //Root and fd information
-string _HOME_INFO = "/home";
-string _FD_INFO = "/fd";
+string _HOME_INFO = "/home/es84075";
+string _FD_INFO = "/fd_grhs";
 
 
 bool is_empty(std::ifstream& pFile) {
@@ -63,8 +63,9 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 	ofstream outputFile;
         outputFile.open(resultFile.c_str(), ios::out);
 
-	outputFile<<"\t\tReport: Instances not solved by SS.\n\n";
-
+	outputFile<<"\t\tReport: Instances not solved by SS.\n";
+	outputFile<<"\t\t_______________________________________________\n\n";
+	int instances_not_solved = 0;
 	while (counter_probes < number_of_probes) {
 		file2>>probes_info;
 		file2>>number_of_heuristics;
@@ -113,6 +114,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 		//cout<<"total_heuristics="<<total_heuristics<<"\n";
 		
 		int counter = 0;
+		int instances_not_solved_by_iter = 0;
 		string heuristic;
 		while (counter < total_heuristics) {
 			file2>>heuristic;
@@ -145,7 +147,8 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
                 			index++;
         			}
         			pot[index] = s_hn;
-
+				instances_not_solved_by_iter+=index;
+				instances_not_solved+=index;
 				cout<<pasta<<": "<<text_title<<" = "<<index<<"\n";
 				outputFile<<pasta<<": "<<text_title<<" = "<<index<<"\n";
 				for (int i = 0; i < index; i++) {
@@ -155,10 +158,13 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 				outputFile<<"\n";
 			}	
 			counter++;
-			outputFile<<"\n";
+			outputFile<<"\t\tInstances not solved by iter:\t"<<instances_not_solved_by_iter<<"\n";
+			outputFile<<"\t\t\n_______________________________________________\n\n";
 		}
 	counter_probes++;
 	}
+	outputFile<<"\t\t\nTotal of instances not solved:\t"<<instances_not_solved<<"\n";
+	outputFile<<"\t\t\nTotal of instances solved = 20*14 - instances_not_solved = "<<140-instances_not_solved<<"\n";
 	outputFile.close();
 }
 

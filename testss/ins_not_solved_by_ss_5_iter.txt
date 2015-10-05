@@ -36,6 +36,7 @@ woodworking-opt11-strips: SS(500GA,lmcut,ipdb)_12_probes = 2
 	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_500_probes_sscc_12/woodworking-opt11-strips/resultado/p17.pddl
 	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_500_probes_sscc_12/woodworking-opt11-strips/resultado/p20.pddl
 
+		Instances not solved by iter:	7
 		
 _______________________________________________
 
@@ -79,6 +80,7 @@ visitall-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 0
 woodworking-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 1
 	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_250_probes_sscc_120/woodworking-opt11-strips/resultado/p17.pddl
 
+		Instances not solved by iter:	12
 		
 _______________________________________________
 
@@ -118,6 +120,7 @@ woodworking-opt11-strips: SS(20GA,lmcut,ipdb)_1200_probes = 2
 	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_1200/woodworking-opt11-strips/resultado/p17.pddl
 	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_1200/woodworking-opt11-strips/resultado/p20.pddl
 
+		Instances not solved by iter:	8
 		
 _______________________________________________
 
@@ -161,6 +164,7 @@ visitall-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 2
 woodworking-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 1
 	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_12000/woodworking-opt11-strips/resultado/p17.pddl
 
+		Instances not solved by iter:	12
 		
 _______________________________________________
 
@@ -210,10 +214,16 @@ visitall-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 3
 	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_120000/visitall-opt11-strips/resultado/problem03-half.pddl
 	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_120000/visitall-opt11-strips/resultado/problem04-half.pddl
 
-woodworking-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 2
+woodworking-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 3
 	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_120000/woodworking-opt11-strips/resultado/p07.pddl
 	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_120000/woodworking-opt11-strips/resultado/p17.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_120000/woodworking-opt11-strips/resultado/p20_test.pddl
 
+		Instances not solved by iter:	23
 		
 _______________________________________________
 
+		
+Total of instances not solved:	62
+		
+Total of instances solved = 20*14 - instances_not_solved = 78
