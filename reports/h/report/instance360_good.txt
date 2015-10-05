@@ -2,4 +2,4 @@
 testss
 astar
 1
-gapdb_good_sscc_min_time_20p_120000h
+gapdb_good_sscc_min_time_250p_120h
