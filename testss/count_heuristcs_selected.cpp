@@ -40,8 +40,18 @@ std::string exec(const char* cmd) {
 }
 
 void entrada_dados(string &pasta, string &problema, string &dominio, bool &dominio_unico, int &quantidade_problemas) {
+
+	string resultFile;
+        resultFile = "instances_not_solved_by_ss.txt";
+        resultFile = "testss/" + resultFile;
+        resultFile = "marvin/" + resultFile;
+        resultFile = "marvin/" + resultFile;
+        resultFile = _HOME_INFO+"/"+ resultFile;
+
+	ofstream outputFile;
+        outputFile.open(resultFile.c_str(), ios::out);
 	
-	ifstream file2("h/ss/instance360_deep_probes.txt");
+	ifstream file2("h/ss/instance360_deep_count.txt");
 	int number_of_probes;
 	int counter_probes = 0;
 	file2>>number_of_probes;
@@ -91,8 +101,8 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 		int total_heuristics;
 		file2>>quantidade_entrada_opt;
 		file2>>total_heuristics;
-		cout<<"quantidate_entrada_opt="<<quantidade_entrada_opt<<"\n";
-		cout<<"total_heuristics="<<total_heuristics<<"\n";
+		//cout<<"quantidate_entrada_opt="<<quantidade_entrada_opt<<"\n";
+		//cout<<"total_heuristics="<<total_heuristics<<"\n";
 		
 		int counter = 0;
 		string heuristic;
@@ -114,25 +124,13 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
                         	cout<<dirRESU_PROBES<<" created!\n";
                 	}
 
-			ifstream file("h/ss/d/instance360_deep_probes.txt");
+			ifstream file("h/ss/d/instance360_deep_count.txt");
 			//cout<<"heuristic = "<<heuristic<<"\n\n";
 			//cout<<"quantidade_entrada_opt = "<<quantidade_entrada_opt<<"\n\n";
 			//cout<<"total_heuristics = "<<total_heuristics<<"\n\n";
  
 			for (int i = 0; i < quantidade_entrada_opt; i++) {
-				file>>pasta;
-				//cout<<"pasta = "<<pasta<<"\n";
-				file>>dominio;
-				//cout<<"dominio = "<<dominio<<"\n";
-				int numero_problemas;
-				file>>quantidade_problemas;
-				//cout<<"quantidade_problemas = "<<quantidade_problemas<<"\n";
-		
-				if (dominio == "domain.pddl") {
-					dominio_unico = true;
-				} else {
-					dominio_unico = false;
-				}
+				file>>pasta;	
 
 				string pastaProblema = "mkdir "+_HOME_INFO+"/marvin/marvin/testss/"+heuristic+"/"+ PROB_PROBES  +"/"+pasta;
 				//string pastaProblema = "mkdir ~/testss/"+heuristic+"/problemas/"+pasta;
@@ -167,15 +165,19 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
         			pot[index] = s_hn;
 
 				cout<<"Config: "<<text_title<<" = "<<index<<"\n";
+				outputFile<<"Config: "<<text_title<<" = "<<index<<"\n";
 				for (int i = 0; i < index; i++) {
 					cout<<"\t"<<pot[i]<<"\n";
+					outputFile<<"\t"<<pot[i]<<"\n";
 				}
+				outputFile<<"\n";
 			}	
 			counter++;
 			
 		}
 	counter_probes++;
 	}
+	outputFile.close();
 }
 
 int main() {
