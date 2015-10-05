@@ -1,0 +1,147 @@
+		Report: Instances not solved by SS.
+
+barman-opt11-strips: SS(500GA,lmcut,ipdb)_12_probes = 0
+
+elevators-opt11-strips: SS(500GA,lmcut,ipdb)_12_probes = 0
+
+floortile-opt11-strips: SS(500GA,lmcut,ipdb)_12_probes = 0
+
+nomystery-opt11-strips: SS(500GA,lmcut,ipdb)_12_probes = 0
+
+openstacks-opt11-strips: SS(500GA,lmcut,ipdb)_12_probes = 0
+
+parcprinter-opt11-strips: SS(500GA,lmcut,ipdb)_12_probes = 0
+
+parking-opt11-strips: SS(500GA,lmcut,ipdb)_12_probes = 0
+
+pegsol-opt11-strips: SS(500GA,lmcut,ipdb)_12_probes = 0
+
+scanalyzer-opt11-strips: SS(500GA,lmcut,ipdb)_12_probes = 0
+
+sokoban-opt11-strips: SS(500GA,lmcut,ipdb)_12_probes = 0
+
+tidybot-opt11-strips: SS(500GA,lmcut,ipdb)_12_probes = 0
+
+transport-opt11-strips: SS(500GA,lmcut,ipdb)_12_probes = 0
+
+visitall-opt11-strips: SS(500GA,lmcut,ipdb)_12_probes = 0
+
+woodworking-opt11-strips: SS(500GA,lmcut,ipdb)_12_probes = 0
+
+
+barman-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 0
+
+elevators-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 0
+
+floortile-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 0
+
+nomystery-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 0
+
+openstacks-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 0
+
+parcprinter-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 0
+
+parking-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 0
+
+pegsol-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 0
+
+scanalyzer-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 0
+
+sokoban-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 0
+
+tidybot-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 0
+
+transport-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 0
+
+visitall-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 0
+
+woodworking-opt11-strips: SS(250GA,lmcut,ipdb)_120_probes = 0
+
+
+barman-opt11-strips: SS(20GA,lmcut,ipdb)_1200_probes = 0
+
+elevators-opt11-strips: SS(20GA,lmcut,ipdb)_1200_probes = 0
+
+floortile-opt11-strips: SS(20GA,lmcut,ipdb)_1200_probes = 0
+
+nomystery-opt11-strips: SS(20GA,lmcut,ipdb)_1200_probes = 0
+
+openstacks-opt11-strips: SS(20GA,lmcut,ipdb)_1200_probes = 0
+
+parcprinter-opt11-strips: SS(20GA,lmcut,ipdb)_1200_probes = 0
+
+parking-opt11-strips: SS(20GA,lmcut,ipdb)_1200_probes = 0
+
+pegsol-opt11-strips: SS(20GA,lmcut,ipdb)_1200_probes = 0
+
+scanalyzer-opt11-strips: SS(20GA,lmcut,ipdb)_1200_probes = 0
+
+sokoban-opt11-strips: SS(20GA,lmcut,ipdb)_1200_probes = 0
+
+tidybot-opt11-strips: SS(20GA,lmcut,ipdb)_1200_probes = 0
+
+transport-opt11-strips: SS(20GA,lmcut,ipdb)_1200_probes = 0
+
+visitall-opt11-strips: SS(20GA,lmcut,ipdb)_1200_probes = 0
+
+woodworking-opt11-strips: SS(20GA,lmcut,ipdb)_1200_probes = 0
+
+
+barman-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 0
+
+elevators-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 0
+
+floortile-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 0
+
+nomystery-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 0
+
+openstacks-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 0
+
+parcprinter-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 0
+
+parking-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 0
+
+pegsol-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 0
+
+scanalyzer-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 0
+
+sokoban-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 0
+
+tidybot-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 0
+
+transport-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 0
+
+visitall-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 0
+
+woodworking-opt11-strips: SS(20GA,lmcut,ipdb)_12000_probes = 0
+
+
+barman-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 0
+
+elevators-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 0
+
+floortile-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 0
+
+nomystery-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 0
+
+openstacks-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 0
+
+parcprinter-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 0
+
+parking-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 0
+
+pegsol-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 0
+
+scanalyzer-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 0
+
+sokoban-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 0
+
+tidybot-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 0
+
+transport-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 0
+
+visitall-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 0
+
+woodworking-opt11-strips: SS(20GA,lmcut,ipdb)_120000_probes = 0
+
+

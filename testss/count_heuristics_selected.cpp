@@ -40,16 +40,6 @@ std::string exec(const char* cmd) {
 }
 
 void entrada_dados(string &pasta, string &problema, string &dominio, bool &dominio_unico, int &quantidade_problemas) {
-
-	string resultFile;
-        resultFile = "instances_not_solved_by_ss.txt";
-        resultFile = "testss/" + resultFile;
-        resultFile = "marvin/" + resultFile;
-        resultFile = "marvin/" + resultFile;
-        resultFile = _HOME_INFO+"/"+ resultFile;
-
-	ofstream outputFile;
-        outputFile.open(resultFile.c_str(), ios::out);
 	
 	ifstream file2("h/ss/instance360_deep_count.txt");
 	int number_of_probes;
@@ -57,6 +47,24 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 	file2>>number_of_probes;
 	int probes_info;
 	int number_of_heuristics;
+
+	int TOTAL_ITERATION = number_of_probes;
+	ostringstream convert_total_iteration;
+	convert_total_iteration << TOTAL_ITERATION;
+	string Result_total_iteration = convert_total_iteration.str();
+
+	string resultFile;
+        resultFile = "ins_not_solved_by_ss_"+Result_total_iteration+"_iter.txt";
+        resultFile = "testss/" + resultFile;
+        resultFile = "marvin/" + resultFile;
+        resultFile = "marvin/" + resultFile;
+        resultFile = _HOME_INFO+"/"+ resultFile;
+
+	ofstream outputFile;
+        outputFile.open(resultFile.c_str(), ios::out);
+
+	outputFile<<"\t\tReport: Instances not solved by SS.\n\n";
+
 	while (counter_probes < number_of_probes) {
 		file2>>probes_info;
 		file2>>number_of_heuristics;
@@ -110,41 +118,15 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 			file2>>heuristic;
 			cout<<"heuristic="<<heuristic<<"\n";
 
-			//enhance NUM_PROBES: create directory problemas_bounds_probes_NUM_PROBES
-                	string dirPROB_PROBES = "mkdir "+_HOME_INFO+"/marvin/marvin/testss/"+heuristic+"/"+PROB_PROBES;
-
-                	if (!system(dirPROB_PROBES.c_str())) {
-                		cout<<PROB_PROBES<<" created!\n";
-                	}
-
-			//enhance NUM_PROBES: create directory reportss_bounds_probes_NUM_PROBES
-                	string dirRESU_PROBES = "mkdir "+_HOME_INFO+"/marvin/marvin/testss/"+heuristic+"/"+RESU_PROBES;
-
-                	if (!system(dirRESU_PROBES.c_str())) {
-                        	cout<<dirRESU_PROBES<<" created!\n";
-                	}
-
 			ifstream file("h/ss/d/instance360_deep_count.txt");
 			//cout<<"heuristic = "<<heuristic<<"\n\n";
 			//cout<<"quantidade_entrada_opt = "<<quantidade_entrada_opt<<"\n\n";
 			//cout<<"total_heuristics = "<<total_heuristics<<"\n\n";
  
 			for (int i = 0; i < quantidade_entrada_opt; i++) {
-				file>>pasta;	
-
-				string pastaProblema = "mkdir "+_HOME_INFO+"/marvin/marvin/testss/"+heuristic+"/"+ PROB_PROBES  +"/"+pasta;
-				//string pastaProblema = "mkdir ~/testss/"+heuristic+"/problemas/"+pasta;
-			
-				if(!system(pastaProblema.c_str())) {
-					cout<<"directory "<<pasta<<" created.\n";			
-				}
+				file>>pasta;
 
 				string pathResultado = _HOME_INFO+"/marvin/marvin/testss/"+heuristic+"/"+ PROB_PROBES +"/"+pasta+"/resultado";
-				string pastaResultado = "mkdir "+ pathResultado;//string pastaResultado = "mkdir ~/testss/"+heuristic+"/problemas/"+pasta+"/resultado";
-				if (!system(pastaResultado.c_str())) {
-					cout<<"directory resultado created.\n";
-				}
-
 				string instances = "grep -L min_eval_time= ";
 				instances += pathResultado + "/*";
 				//cout<<"instances="<<instances<<"\n";
@@ -164,8 +146,8 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
         			}
         			pot[index] = s_hn;
 
-				cout<<"Config: "<<text_title<<" = "<<index<<"\n";
-				outputFile<<"Config: "<<text_title<<" = "<<index<<"\n";
+				cout<<pasta<<": "<<text_title<<" = "<<index<<"\n";
+				outputFile<<pasta<<": "<<text_title<<" = "<<index<<"\n";
 				for (int i = 0; i < index; i++) {
 					cout<<"\t"<<pot[i]<<"\n";
 					outputFile<<"\t"<<pot[i]<<"\n";
@@ -173,7 +155,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 				outputFile<<"\n";
 			}	
 			counter++;
-			
+			outputFile<<"\n";
 		}
 	counter_probes++;
 	}
