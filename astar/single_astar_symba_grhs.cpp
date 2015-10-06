@@ -347,7 +347,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	bool is_in_cluster = false;
 
         if (is_in_cluster) {
-                executeFile = "qsub -l nodes=1:ppn=1,mem=6000mb "+arquivo;
+                executeFile = "qsub -l nodes=1:ppn=1,mem=4000mb "+arquivo;
                 cout<<executeFile<<"\n\n";
                 system(executeFile.c_str());
         } else {
