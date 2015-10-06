@@ -1,11 +1,5 @@
 About the score:
 
-Plain A* max(lmcut(),ipdb(max_time=200),100ga) : 197
-Plain A* max(lmcut(),ipdb(max_time=200),1kga) : 191
-Plain A* max(lmcut(),ipdb(max_time=200),10kga) : 195
-Plain A* max(lmcut(),ipdb(max_time=200),100kga) : 180
-
-
 Plain A* max(lmcut(),ipdb(max_time=200),10ga): 203
 Plain A* max(lmcut(),ipdb(max_time=200)): 190
 Plain A* max(10ga): 188
@@ -39,3 +33,12 @@ Case   #probes/#heuristics       system                               instances 
 3.-         20/1200           SS(1200ga+lmcut+ipdb)+plain A*          189
 4.-         20/12000          SS(12000ga+lmcut+ipdb)+plain A*         187
 5.-         20/120000         SS(120000ga+lmcut+ipdb)+plain A*        175
+
+
+
+
+Case   #probes/#heuristics       system                               instances solved
+1.- 	250/100                  SS(100ga lmcut(),ipdb)+plain A*      197
+2.-      20/1k                   SS(1kga,lmcut(),ipdb)+plain A*       191
+3.-      20/10k                  SS(10kga,lmcut(),ipdb)+plain A*      195
+4.-      20/100k                 SS(100kga,lmcut(),ipdb)+plain A*     180
