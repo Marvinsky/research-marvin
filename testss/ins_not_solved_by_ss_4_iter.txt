@@ -1,0 +1,172 @@
+		Report: Instances not solved by SS.
+		_______________________________________________
+
+barman-opt11-strips: SS(250GA,lmcut,ipdb)_100_probes = 0
+
+elevators-opt11-strips: SS(250GA,lmcut,ipdb)_100_probes = 0
+
+floortile-opt11-strips: SS(250GA,lmcut,ipdb)_100_probes = 0
+
+nomystery-opt11-strips: SS(250GA,lmcut,ipdb)_100_probes = 0
+
+openstacks-opt11-strips: SS(250GA,lmcut,ipdb)_100_probes = 0
+
+parcprinter-opt11-strips: SS(250GA,lmcut,ipdb)_100_probes = 0
+
+parking-opt11-strips: SS(250GA,lmcut,ipdb)_100_probes = 0
+
+pegsol-opt11-strips: SS(250GA,lmcut,ipdb)_100_probes = 0
+
+scanalyzer-opt11-strips: SS(250GA,lmcut,ipdb)_100_probes = 2
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_250_probes_sscc_100/scanalyzer-opt11-strips/resultado/p07.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_250_probes_sscc_100/scanalyzer-opt11-strips/resultado/p19.pddl
+
+sokoban-opt11-strips: SS(250GA,lmcut,ipdb)_100_probes = 0
+
+tidybot-opt11-strips: SS(250GA,lmcut,ipdb)_100_probes = 0
+
+transport-opt11-strips: SS(250GA,lmcut,ipdb)_100_probes = 0
+
+visitall-opt11-strips: SS(250GA,lmcut,ipdb)_100_probes = 0
+
+woodworking-opt11-strips: SS(250GA,lmcut,ipdb)_100_probes = 1
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_250_probes_sscc_100/woodworking-opt11-strips/resultado/p17.pddl
+
+		Instances not solved by iter:	3
+		
+_______________________________________________
+
+barman-opt11-strips: SS(20GA,lmcut,ipdb)_1000_probes = 0
+
+elevators-opt11-strips: SS(20GA,lmcut,ipdb)_1000_probes = 0
+
+floortile-opt11-strips: SS(20GA,lmcut,ipdb)_1000_probes = 0
+
+nomystery-opt11-strips: SS(20GA,lmcut,ipdb)_1000_probes = 0
+
+openstacks-opt11-strips: SS(20GA,lmcut,ipdb)_1000_probes = 4
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_1000/openstacks-opt11-strips/resultado/p06.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_1000/openstacks-opt11-strips/resultado/p07.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_1000/openstacks-opt11-strips/resultado/p09.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_1000/openstacks-opt11-strips/resultado/p10.pddl
+
+parcprinter-opt11-strips: SS(20GA,lmcut,ipdb)_1000_probes = 0
+
+parking-opt11-strips: SS(20GA,lmcut,ipdb)_1000_probes = 0
+
+pegsol-opt11-strips: SS(20GA,lmcut,ipdb)_1000_probes = 0
+
+scanalyzer-opt11-strips: SS(20GA,lmcut,ipdb)_1000_probes = 3
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_1000/scanalyzer-opt11-strips/resultado/p07.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_1000/scanalyzer-opt11-strips/resultado/p19.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_1000/scanalyzer-opt11-strips/resultado/p20.pddl
+
+sokoban-opt11-strips: SS(20GA,lmcut,ipdb)_1000_probes = 0
+
+tidybot-opt11-strips: SS(20GA,lmcut,ipdb)_1000_probes = 0
+
+transport-opt11-strips: SS(20GA,lmcut,ipdb)_1000_probes = 0
+
+visitall-opt11-strips: SS(20GA,lmcut,ipdb)_1000_probes = 0
+
+woodworking-opt11-strips: SS(20GA,lmcut,ipdb)_1000_probes = 1
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_1000/woodworking-opt11-strips/resultado/p17.pddl
+
+		Instances not solved by iter:	8
+		
+_______________________________________________
+
+barman-opt11-strips: SS(20GA,lmcut,ipdb)_10000_probes = 0
+
+elevators-opt11-strips: SS(20GA,lmcut,ipdb)_10000_probes = 0
+
+floortile-opt11-strips: SS(20GA,lmcut,ipdb)_10000_probes = 0
+
+nomystery-opt11-strips: SS(20GA,lmcut,ipdb)_10000_probes = 0
+
+openstacks-opt11-strips: SS(20GA,lmcut,ipdb)_10000_probes = 3
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_10000/openstacks-opt11-strips/resultado/p07.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_10000/openstacks-opt11-strips/resultado/p09.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_10000/openstacks-opt11-strips/resultado/p10.pddl
+
+parcprinter-opt11-strips: SS(20GA,lmcut,ipdb)_10000_probes = 0
+
+parking-opt11-strips: SS(20GA,lmcut,ipdb)_10000_probes = 0
+
+pegsol-opt11-strips: SS(20GA,lmcut,ipdb)_10000_probes = 0
+
+scanalyzer-opt11-strips: SS(20GA,lmcut,ipdb)_10000_probes = 3
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_10000/scanalyzer-opt11-strips/resultado/p07.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_10000/scanalyzer-opt11-strips/resultado/p19.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_10000/scanalyzer-opt11-strips/resultado/p20.pddl
+
+sokoban-opt11-strips: SS(20GA,lmcut,ipdb)_10000_probes = 0
+
+tidybot-opt11-strips: SS(20GA,lmcut,ipdb)_10000_probes = 0
+
+transport-opt11-strips: SS(20GA,lmcut,ipdb)_10000_probes = 0
+
+visitall-opt11-strips: SS(20GA,lmcut,ipdb)_10000_probes = 0
+
+woodworking-opt11-strips: SS(20GA,lmcut,ipdb)_10000_probes = 1
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_10000/woodworking-opt11-strips/resultado/p17.pddl
+
+		Instances not solved by iter:	7
+		
+_______________________________________________
+
+barman-opt11-strips: SS(20GA,lmcut,ipdb)_100000_probes = 0
+
+elevators-opt11-strips: SS(20GA,lmcut,ipdb)_100000_probes = 0
+
+floortile-opt11-strips: SS(20GA,lmcut,ipdb)_100000_probes = 0
+
+nomystery-opt11-strips: SS(20GA,lmcut,ipdb)_100000_probes = 0
+
+openstacks-opt11-strips: SS(20GA,lmcut,ipdb)_100000_probes = 4
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/openstacks-opt11-strips/resultado/p07.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/openstacks-opt11-strips/resultado/p09.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/openstacks-opt11-strips/resultado/p10.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/openstacks-opt11-strips/resultado/p14.pddl
+
+parcprinter-opt11-strips: SS(20GA,lmcut,ipdb)_100000_probes = 7
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/parcprinter-opt11-strips/resultado/p06.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/parcprinter-opt11-strips/resultado/p07.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/parcprinter-opt11-strips/resultado/p11.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/parcprinter-opt11-strips/resultado/p14.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/parcprinter-opt11-strips/resultado/p15.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/parcprinter-opt11-strips/resultado/p16.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/parcprinter-opt11-strips/resultado/p20.pddl
+
+parking-opt11-strips: SS(20GA,lmcut,ipdb)_100000_probes = 0
+
+pegsol-opt11-strips: SS(20GA,lmcut,ipdb)_100000_probes = 0
+
+scanalyzer-opt11-strips: SS(20GA,lmcut,ipdb)_100000_probes = 3
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/scanalyzer-opt11-strips/resultado/p01.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/scanalyzer-opt11-strips/resultado/p07.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/scanalyzer-opt11-strips/resultado/p19.pddl
+
+sokoban-opt11-strips: SS(20GA,lmcut,ipdb)_100000_probes = 0
+
+tidybot-opt11-strips: SS(20GA,lmcut,ipdb)_100000_probes = 1
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/tidybot-opt11-strips/resultado/p01.pddl
+
+transport-opt11-strips: SS(20GA,lmcut,ipdb)_100000_probes = 0
+
+visitall-opt11-strips: SS(20GA,lmcut,ipdb)_100000_probes = 3
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/visitall-opt11-strips/resultado/problem03-full.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/visitall-opt11-strips/resultado/problem03-half.pddl
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/visitall-opt11-strips/resultado/problem04-half.pddl
+
+woodworking-opt11-strips: SS(20GA,lmcut,ipdb)_100000_probes = 1
+	/home/es84075/marvin/marvin/testss/gapdb_deep/problemas_20_probes_sscc_100000/woodworking-opt11-strips/resultado/p17.pddl
+
+		Instances not solved by iter:	19
+		
+_______________________________________________
+
+		
+Total of instances not solved:	37
+		
+Total of instances solved = 20*14 - instances_not_solved = 103

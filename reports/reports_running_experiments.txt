@@ -1,5 +1,11 @@
 About the score:
 
+Plain A* max(lmcut(),ipdb(max_time=200),100ga) : 197
+Plain A* max(lmcut(),ipdb(max_time=200),1kga) : 191
+Plain A* max(lmcut(),ipdb(max_time=200),10kga) : 195
+Plain A* max(lmcut(),ipdb(max_time=200),100kga) : 180
+
+
 Plain A* max(lmcut(),ipdb(max_time=200),10ga): 203
 Plain A* max(lmcut(),ipdb(max_time=200)): 190
 Plain A* max(10ga): 188
