@@ -20,11 +20,6 @@ using namespace std;
 string _HOME_INFO = "/home";
 string _FD_INFO = "/fd";
 
-//Update name of the directories -> global variables
-string PROB_GOOD = "problemas_single_astar";
-string RESU_GOOD = "reportastar_single_astar";
-
-
 std::string exec(const char* cmd) {
     FILE* pipe = popen(cmd, "r");
     if (!pipe) return "ERROR";
@@ -263,7 +258,7 @@ string translator(string key, string instance) {
         return result;
 }
 
-void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic, int numDominio) {
+void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic, int numDominio, string PROB_GOOD, int NUM_HTC) {
 	string arquivo;
 	stringstream Resultado;
 	
@@ -306,21 +301,40 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	string outputSA = translator(pasta.c_str(), problema.c_str());
 	cout<<"outputSA="<<outputSA<<"\n";
 
-	if (heuristic == "lmcut") {
-		//lmcut
-		outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"())\" < ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-	} else if (heuristic == "merge_and_shrink") {
-		//merge_and_shrink
-		outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"(merge_dfp(), shrink_bisimulation()))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-	} else if (heuristic == "ipdb")	{
-		//ipdb
-		outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"(max_time=200))\" < ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-	} else if (heuristic == "lmcut_ipdb") {
-		outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([lmcut(),ipdb(max_time=200)]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-	} else if (heuristic == "10gapdb") {
-		outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
-	} else if (heuristic == "allheuristics") {
-		outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([lmcut(),ipdb(max_time=200),automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+        if (NUM_HTC == 0) {
+		if (heuristic == "lmcut") {
+			//lmcut
+			outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"())\" < ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		} else if (heuristic == "merge_and_shrink") {
+			//merge_and_shrink
+			outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"(merge_dfp(), shrink_bisimulation()))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		} else if (heuristic == "ipdb")	{
+			//ipdb
+			outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original("<<heuristic<<"(max_time=200))\" < ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		} else if (heuristic == "lmcut_ipdb") {
+			outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([lmcut(),ipdb(max_time=200)]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		} else if (heuristic == "10gapdb") {
+			outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		} else if (heuristic == "allheuristics") {
+			outfile<<"${FD_ROOT}/src/search/downward-release --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"astar_original(max([lmcut(),ipdb(max_time=200),automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		}
+	} else {
+		if (heuristic == "lmcut") {
+			//lmcut
+			outfile<<"${FD_ROOT}/src/search/downward-release --run_n_heuristics "<<NUM_HTC<<" --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --dir_creation astar --search \"astar_original("<<heuristic<<"())\" < ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		} else if (heuristic == "merge_and_shrink") {
+			//merge_and_shrink
+			outfile<<"${FD_ROOT}/src/search/downward-release --run_n_heuristics "<<NUM_HTC<<" --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --dir_creation astar --search \"astar_original("<<heuristic<<"(merge_dfp(), shrink_bisimulation()))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		} else if (heuristic == "ipdb")	{
+			//ipdb
+			outfile<<"${FD_ROOT}/src/search/downward-release --run_n_heuristics "<<NUM_HTC<<" --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --dir_creation astar --search \"astar_original("<<heuristic<<"(max_time=200))\" < ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		} else if (heuristic == "lmcut_ipdb") {
+			outfile<<"${FD_ROOT}/src/search/downward-release --run_n_heuristics "<<NUM_HTC<<" --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --dir_creation astar --search \"astar_original(max([lmcut(),ipdb(max_time=200)]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		} else if (heuristic == "10gapdb") {
+			outfile<<"${FD_ROOT}/src/search/downward-release --run_n_heuristics "<<NUM_HTC<<" --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --dir_creation astar --search \"astar_original(max([automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<" > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		} else if (heuristic == "allheuristics") {
+			outfile<<"${FD_ROOT}/src/search/downward-release --run_n_heuristics "<<NUM_HTC<<" --domain_name "<<pasta.c_str()<<" --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --dir_creation astar --search \"astar_original(max([lmcut(),ipdb(max_time=200),automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		}
 	}
 
 	outfile<<"\n\nrm ${DIR}\n\n";
@@ -358,8 +372,29 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 
 	int counter = 0;
 	string heuristic;
+	int number_of_heuristics;
 	while (counter < total_heuristics) {
 		file2>>heuristic;
+		file2>>number_of_heuristics;
+
+                //cast number of heuristics to create
+                int NUM_HTC = number_of_heuristics;
+                ostringstream convert_n_htc;
+                convert_n_htc << NUM_HTC;
+                string Result_n_htc = convert_n_htc.str();
+
+		//Update name of the directories -> global variables
+ 		string PROB_GOOD = "problemas_";
+                string RESU_GOOD = "reportastar_";
+                if (NUM_HTC == 0) {
+                        PROB_GOOD += "single_astar";
+                        RESU_GOOD += "single_astar";
+                } else {
+                        PROB_GOOD += "single_astar_"+Result_n_htc;
+                        RESU_GOOD += "single_astar_"+Result_n_htc;
+                }
+                cout<<"PROB_GOOD = "<<PROB_GOOD<<"\n";
+                cout<<"RESU_GOOD = "<<RESU_GOOD<<"\n";
 
 		string dirSASPLAN = "mkdir "+_HOME_INFO+"/marvin"+_FD_INFO+"/plan_"+heuristic+"/";
                 if (system(dirSASPLAN.c_str())) {
@@ -370,7 +405,6 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
                 if (system(dirProbGood.c_str())) {
                         cout<<"create directory "<<dirProbGood.c_str()<<"\n";
                 }
-
 
 		//default directory
                 string dirDefault = "mkdir "+_HOME_INFO+"/marvin/marvin/astar/"+heuristic+"/"+RESU_GOOD;
@@ -438,13 +472,13 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 				if (dominio_unico) {
 					file>>problema;
 					cout<<"problema "<<problema<<"\n\n";
-					create_sh(pasta, dominio, problema, j, heuristic, i+1);
+					create_sh(pasta, dominio, problema, j, heuristic, i+1, PROB_GOOD, NUM_HTC);
 				} else {
 					file>>dominio;
 					file>>problema;
 					cout<<"dominio "<<dominio<<"\n\n";
 					cout<<"problema "<<problema<<"\n\n";
-					create_sh(pasta, dominio, problema, j, heuristic, i+1);
+					create_sh(pasta, dominio, problema, j, heuristic, i+1, PROB_GOOD, NUM_HTC);
 				}
 			}		
 		}	

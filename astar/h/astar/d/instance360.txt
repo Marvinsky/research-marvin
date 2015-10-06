@@ -1,4 +1,4 @@
-barman-opt11-strips
+scanalyzer-opt11-strips
 domain.pddl
-1			
-pfile01-001.pddl
+1
+p01.pddl						

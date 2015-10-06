@@ -1,3 +1,10 @@
 1
-1
-merge_and_shrink
+4
+allheuristics
+100
+allheuristics
+1000
+allheuristics
+10000
+allheuristics
+100000
