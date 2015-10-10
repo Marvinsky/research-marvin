@@ -20,6 +20,8 @@ using namespace std;
 //Root and fd information
 string _HOME_INFO = "/home";
 string _FD_INFO = "/fd";
+bool run_entropy = true;
+vector<string> storeInstances;
 
 
 bool is_empty(std::ifstream& pFile) {
@@ -175,9 +177,9 @@ string getSimplePXX(string instance, string FINAL_NAME) {
 }
 
 string translator(string key, string instance) {
-	cout<<"key="<<key<<"\n";
+	//cout<<"key="<<key<<"\n";
 	string result;
-	cout<<"instance="<<instance<<"\n";
+	//cout<<"instance="<<instance<<"\n";
         if (key == "barman-opt11-strips") {
                 string s = instance;
                 size_t t = s.find("-");
@@ -263,7 +265,7 @@ string translator(string key, string instance) {
         return result;
 }
 
-int getTotalLevels(string interText) {
+int getTotalLevels(string interText, int NUM_COLUMNS, string PID_string) {
         ifstream inter2;
         inter2.open(interText.c_str());
         int total_niveles = 0;
@@ -274,21 +276,28 @@ int getTotalLevels(string interText) {
            string trash;
 
            int count_data = 0;
-
-           inter2>>trash;
-           inter2>>trash;
-           inter2>>trash;
-           inter2>>trash;
-           inter2>>trash;
-           inter2>>trash;
-
-           while (inter2>>trash) {
-              //cout<<trash<<endl;
-              count_data++;
-           }
-           inter2.close();
-           total_niveles = (int)count_data/4;
-        }
+	   while (inter2>>trash) {
+		if (trash == PID_string) {
+           		inter2>>trash;
+           		inter2>>trash;
+           		inter2>>trash;
+           		inter2>>trash;
+           		inter2>>trash;
+           		inter2>>trash;
+           		inter2>>trash;
+           		inter2>>trash;
+           		inter2>>trash;
+           		inter2>>trash;
+          	 	inter2>>trash;
+           		while (inter2>>trash) {
+              			//cout<<trash<<endl;
+              			count_data++;
+           		}
+           		inter2.close();
+           		total_niveles = (int)count_data/NUM_COLUMNS;
+		}
+            }
+	}
         return total_niveles;
 }
 
@@ -323,7 +332,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	outfile<<"FD_ROOT="<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"\n\n";
 	outfile<<"TEMP="<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"/temp\n\n";
 	outfile<<"DIR=$(mktemp  --tmpdir=${TEMP})\n\n";
-	cout<<"pasta = "<<pasta.c_str()<<"\n\n";
+	//cout<<"pasta = "<<pasta.c_str()<<"\n\n";
 	outfile<<"RESULTS="<<_HOME_INFO<<"/marvin/marvin/testss/"<<heuristic<<"/"<<PROB_PROBES<<"/"<<pasta.c_str()<<"/resultado"<<"\n\n";
 	//outfile<<"cd "<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"\n\n";
 	outfile<<"cd ${DIR}\n\n";
@@ -333,7 +342,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	//outfile<<"${FD_ROOT}/src/preprocess/preprocess < output.sas"<<"\n\n";	
 
 	string outputSA = translator(pasta.c_str(), problema.c_str());
-	cout<<"outputSA="<<outputSA<<"\n";
+	//cout<<"outputSA="<<outputSA<<"\n";
 
 	outfile<<"${FD_ROOT}/src/search/downward-release  --run_n_heuristics "<<NUM_HTC<<"  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=200), automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	
@@ -345,20 +354,158 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 	string executeFile;
 	bool is_in_cluster = false;
-
-        if (is_in_cluster) {
-		executeFile = "qsub -l nodes=1:ppn=1,mem=4000mb "+arquivo;
-        	//executeFile = "qsub -l select=1:ncpus=1:mem=1GB "+arquivo;
-        	cout<<executeFile<<"\n\n";
-        	system(executeFile.c_str());
-        } else {
-        	string allow;
+	
+	if (!run_entropy) {
+        	if (is_in_cluster) {
+			executeFile = "qsub -l nodes=1:ppn=1,mem=4000mb "+arquivo;
+        		//executeFile = "qsub -l select=1:ncpus=1:mem=1GB "+arquivo;
+        		cout<<executeFile<<"\n\n";
+        		system(executeFile.c_str());
+        	} else {
+        		string allow;
+        		allow = "chmod +x "+arquivo;
+        		cout<<allow<<"\n";
+        		system(allow.c_str());
+        		executeFile = "timeout 1800 sh "+arquivo; //setting the limit time
+        		system(executeFile.c_str());
+        	}
+	} else {
+		string allow;
         	allow = "chmod +x "+arquivo;
-        	cout<<allow<<"\n";
+        	//cout<<allow<<"\n";
         	system(allow.c_str());
         	executeFile = "timeout 1800 sh "+arquivo; //setting the limit time
-        	system(executeFile.c_str());
-        }
+		storeInstances.push_back(executeFile);
+        	//system(executeFile.c_str());
+
+
+		string entropyFile = "entropy";
+		entropyFile += string(".sh");
+		entropyFile = "/" + entropyFile;
+		entropyFile = pasta + entropyFile;
+		entropyFile = "testss/"+heuristic+"/" + PROB_PROBES  + "/" + entropyFile;
+		entropyFile = "marvin/" + entropyFile;
+		entropyFile = "marvin/"+ entropyFile;
+		entropyFile =  _HOME_INFO  + "/" + entropyFile;
+		ofstream outProcess(entropyFile.c_str(), ios::out);
+
+		for (size_t i = 0; i < storeInstances.size(); i++) {
+			string instance = storeInstances.at(i);
+			outProcess<<instance<<" &";	
+		}
+		storeInstances.clear();
+		outProcess.close();
+
+		string allowEntropy;
+        	allowEntropy = "chmod +x "+entropyFile;
+        	cout<<allowEntropy<<"\n";
+        	system(allowEntropy.c_str());
+		string executeEntropy = "sh "+ entropyFile;
+		system(executeEntropy.c_str());
+	}
+	
+	//Execute condition
+	//run 4 process at the time
+	if (run_entropy) {
+		while (true) {
+			string top_output = "top_output.txt";
+			top_output = "/" + top_output;
+			top_output = pasta + top_output;
+			top_output = "testss/"+heuristic+"/" + PROB_PROBES  + "/" + top_output;
+			top_output = "marvin/" + top_output;
+			top_output = "marvin/"+ top_output;
+			top_output =  _HOME_INFO  + "/" + top_output;
+			cout<<"output= "<<top_output<<"\n\n";
+			string top_linux = "top -n 1 -b > " + top_output;
+			cout<<"top_linux="<<top_linux<<"\n";
+			string INS = exec(top_linux.c_str());
+			cout<<"INS= "<<INS<<"\n";
+
+			ifstream topfile(top_output.c_str());
+
+			string PID_string = "PID";
+			int NUM_COLUMNS = 12;		
+			int max_deep = getTotalLevels(top_output.c_str(), NUM_COLUMNS, PID_string);
+			cout<<"max_deep="<<max_deep<<"\n";
+			string next;
+			string** levels;
+			levels = new string*[max_deep];
+			for (int i = 0; i < max_deep; i++) {
+				levels[i] = new string[NUM_COLUMNS];
+			}
+	
+			while (topfile>>next) {
+				if (next == PID_string) {
+					topfile>>next;	
+					topfile>>next;	
+					topfile>>next;	
+					topfile>>next;	
+					topfile>>next;	
+					topfile>>next;	
+					topfile>>next;	
+					topfile>>next;	
+					topfile>>next;	
+					topfile>>next;	
+					topfile>>next;
+
+					for (int i = 0; i < max_deep; i++) {
+						for(int j = 0; j < NUM_COLUMNS; j++) {
+							topfile>>levels[i][j];
+						}
+					}
+				}
+			}
+
+			vector<int> v_pid;
+			vector<int> v_cpu;
+			vector<string> v_top;
+
+			//check: Check the "top" whether your processes are using 100% CPU (or close to that). It they are not, then reduce to 4 jobs at once.
+			for (int i = 0; i < max_deep; i++) {
+				v_pid.push_back(atoi(levels[i][0].c_str()));
+				v_cpu.push_back(atoi(levels[i][8].c_str()));
+				v_top.push_back(levels[i][11].c_str());
+			}
+
+			int n_downward_process = 0;
+			for (size_t i = 0; i < v_cpu.size(); i++) {
+				int pid = v_pid.at(i);
+				int cpu = v_cpu.at(i);
+				string cmd = v_top.at(i);
+				cout<<"pid="<<pid<<",cpu="<<cpu<<",cmd="<<cmd<<"\n";
+				if (cmd == "downward-release") {
+					cout<<"DOWNWARD_RELEASE:477\n";
+					n_downward_process++;
+				}
+			}
+
+			if (n_downward_process < 5) {
+				break;
+			}
+		}
+
+		/*
+		string entropyFile = "entropy";
+		entropyFile += string(".sh");
+		entropyFile = "/" + entropyFile;
+		entropyFile = pasta + entropyFile;
+		entropyFile = "testss/"+heuristic+"/" + PROB_PROBES  + "/" + entropyFile;
+		entropyFile = "marvin/" + entropyFile;
+		entropyFile = "marvin/"+ entropyFile;
+		entropyFile =  _HOME_INFO  + "/" + entropyFile;
+		ofstream outProcess(entropyFile.c_str(), ios::out);
+
+		for (size_t i = 0; i < storeInstances.size(); i++) {
+			string instance = storeInstances.at(i);
+			outProcess<<instance<<" &";	
+		}
+
+		string allowEntropy;
+        	allowEntropy = "chmod +x "+entropyFile;
+        	cout<<allowEntropy<<"\n";
+        	system(allowEntropy.c_str());
+		*/
+	}
 }
 
 void entrada_dados(string &pasta, string &problema, string &dominio, bool &dominio_unico, int &quantidade_problemas) {
@@ -400,21 +547,21 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 			RESU_PROBES += Result_probe;
 			RESU_PROBES += "_probes_sscc_"+Result_n_htc;
 		}
-                cout<<"PROB_PROBES = "<<PROB_PROBES<<"\n";
-		cout<<"RESU_PROBES = "<<RESU_PROBES<<"\n";
+                //cout<<"PROB_PROBES = "<<PROB_PROBES<<"\n";
+		//cout<<"RESU_PROBES = "<<RESU_PROBES<<"\n";
 
 		int quantidade_entrada_opt;
 		int total_heuristics;
 		file2>>quantidade_entrada_opt;
 		file2>>total_heuristics;
-		cout<<"quantidate_entrada_opt="<<quantidade_entrada_opt<<"\n";
-		cout<<"total_heuristics="<<total_heuristics<<"\n";
+		//cout<<"quantidate_entrada_opt="<<quantidade_entrada_opt<<"\n";
+		//cout<<"total_heuristics="<<total_heuristics<<"\n";
 		
 		int counter = 0;
 		string heuristic;
 		while (counter < total_heuristics) {
 			file2>>heuristic;
-			cout<<"heuristic="<<heuristic<<"\n";
+			//cout<<"heuristic="<<heuristic<<"\n";
 
 			//enhance NUM_PROBES: create directory problemas_bounds_probes_NUM_PROBES
                 	string dirPROB_PROBES = "mkdir "+_HOME_INFO+"/marvin/marvin/testss/"+heuristic+"/"+PROB_PROBES;
@@ -480,16 +627,97 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 
 					if (dominio_unico) {
 						file>>problema;
-						cout<<"problema "<<problema<<"\n\n";
+						//cout<<"problema "<<problema<<"\n\n";
 						create_sh(pasta, dominio, problema, j, heuristic, i+1, PROB_PROBES, NUM_PROBES, NUM_HTC);
 					} else {
 						file>>dominio;
 						file>>problema;
-						cout<<"dominio "<<dominio<<"\n\n";
-						cout<<"problema "<<problema<<"\n\n";
+						//cout<<"dominio "<<dominio<<"\n\n";
+						//cout<<"problema "<<problema<<"\n\n";
 						create_sh(pasta, dominio, problema, j, heuristic, i+1, PROB_PROBES, NUM_PROBES, NUM_HTC);
 					}
-				}		
+				}
+
+				/*
+				//run 4 process at the time
+				if (run_entropy) {
+
+					while (true) {
+						string top_output = "top_output.txt";
+						top_output = "/" + top_output;
+						top_output = pasta + top_output;
+						top_output = "testss/"+heuristic+"/" + PROB_PROBES  + "/" + top_output;
+						top_output = "marvin/" + top_output;
+						top_output = "marvin/"+ top_output;
+						top_output =  _HOME_INFO  + "/" + top_output;
+						cout<<"output= "<<top_output<<"\n\n";
+						string top_linux = "top -n 1 -b > " + top_output;
+						cout<<"top_linux="<<top_linux<<"\n";
+						string INS = exec(top_linux.c_str());
+						cout<<"INS= "<<INS<<"\n";
+
+						ifstream topfile(top_output.c_str());
+
+						string PID_string = "PID";
+						int NUM_COLUMNS = 12;		
+						int max_deep = getTotalLevels(top_output.c_str(), NUM_COLUMNS, PID_string);
+						cout<<"max_deep="<<max_deep<<"\n";
+						string next;
+						string** levels;
+						levels = new string*[max_deep];
+						for (int i = 0; i < max_deep; i++) {
+							levels[i] = new string[NUM_COLUMNS];
+						}
+	
+						while (topfile>>next) {
+							if (next == PID_string) {
+								topfile>>next;	
+								topfile>>next;	
+								topfile>>next;	
+								topfile>>next;	
+								topfile>>next;	
+								topfile>>next;	
+								topfile>>next;	
+								topfile>>next;	
+								topfile>>next;	
+								topfile>>next;	
+								topfile>>next;
+
+								for (int i = 0; i < max_deep; i++) {
+									for(int j = 0; j < NUM_COLUMNS; j++) {
+										topfile>>levels[i][j];
+									}
+								}
+							}
+						}
+
+						vector<int> v_pid;
+						vector<int> v_cpu;
+						vector<string> v_top;
+
+						//check: Check the "top" whether your processes are using 100% CPU (or close to that). It they are not, then reduce to 4 jobs at once.
+						for (int i = 0; i < max_deep; i++) {
+							v_pid.push_back(atoi(levels[i][0].c_str()));
+							v_cpu.push_back(atoi(levels[i][8].c_str()));
+							v_top.push_back(levels[i][11].c_str());
+						}
+
+						int n_downward_process = 0;
+						for (size_t i = 0; i < v_cpu.size(); i++) {
+							int pid = v_pid.at(i);
+							int cpu = v_cpu.at(i);
+							string cmd = v_top.at(i);
+							cout<<"pid="<<pid<<",cpu="<<cpu<<",cmd="<<cmd<<"\n";
+							if (cmd == "downward-release") {
+								n_downward_process++;
+							}
+						}
+
+						if (n_downward_process < 5) {
+							break;
+						}
+					}	
+				}*/
 			}	
 			counter++;
 			
