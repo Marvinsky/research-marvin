@@ -303,11 +303,11 @@ int getTotalLevels(string interText, int NUM_COLUMNS, string PID_string) {
 
 void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic, int numDominio, string PROB_PROBES, int NUM_PROBES, int NUM_HTC) {
 	string arquivo;
-	stringstream Resultado;
+	stringstream indexParsed;
 	
 	arquivo += "A";
-	Resultado<<num_problema+1;
-	arquivo += Resultado.str();
+	indexParsed<<num_problema+1;
+	arquivo += indexParsed.str();
 	arquivo += string(".sh");
 	arquivo = "/" + arquivo;
 	arquivo = pasta + arquivo;
@@ -370,43 +370,8 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         		system(executeFile.c_str());
         	}
 	} else {
-		string allow;
-        	allow = "chmod +x "+arquivo;
-        	//cout<<allow<<"\n";
-        	system(allow.c_str());
-        	executeFile = "timeout 1800 sh "+arquivo; //setting the limit time
-		storeInstances.push_back(executeFile);
-        	//system(executeFile.c_str());
-
-
-		string entropyFile = "entropy";
-		entropyFile += string(".sh");
-		entropyFile = "/" + entropyFile;
-		entropyFile = pasta + entropyFile;
-		entropyFile = "testss/"+heuristic+"/" + PROB_PROBES  + "/" + entropyFile;
-		entropyFile = "marvin/" + entropyFile;
-		entropyFile = "marvin/"+ entropyFile;
-		entropyFile =  _HOME_INFO  + "/" + entropyFile;
-		ofstream outProcess(entropyFile.c_str(), ios::out);
-
-		for (size_t i = 0; i < storeInstances.size(); i++) {
-			string instance = storeInstances.at(i);
-			outProcess<<instance<<" &";	
-		}
-		storeInstances.clear();
-		outProcess.close();
-
-		string allowEntropy;
-        	allowEntropy = "chmod +x "+entropyFile;
-        	cout<<allowEntropy<<"\n";
-        	system(allowEntropy.c_str());
-		string executeEntropy = "sh "+ entropyFile;
-		system(executeEntropy.c_str());
-	}
-	
-	//Execute condition
-	//run 4 process at the time
-	if (run_entropy) {
+		//Execute condition
+		//run 4 process at the time
 		while (true) {
 			string top_output = "top_output.txt";
 			top_output = "/" + top_output;
@@ -455,6 +420,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 					}
 				}
 			}
+			topfile.close();
 
 			vector<int> v_pid;
 			vector<int> v_cpu;
@@ -472,20 +438,29 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 				int pid = v_pid.at(i);
 				int cpu = v_cpu.at(i);
 				string cmd = v_top.at(i);
-				cout<<"pid="<<pid<<",cpu="<<cpu<<",cmd="<<cmd<<"\n";
-				if (cmd == "downward-release") {
-					cout<<"DOWNWARD_RELEASE:477\n";
+				//cout<<"pid="<<pid<<",cpu="<<cpu<<",cmd="<<cmd<<"\n";
+				if (cmd == "downward-releas") {
 					n_downward_process++;
 				}
 			}
-
+			string remove_topoutput = "rm "+ top_output;
+			system(remove_topoutput.c_str()); 
+			
 			if (n_downward_process < 5) {
 				break;
 			}
 		}
 
-		/*
+		string allow;
+        	allow = "chmod +x "+arquivo;
+        	//cout<<allow<<"\n";
+        	system(allow.c_str());
+        	executeFile = "timeout 1800 sh "+arquivo; //setting the limit time
+		storeInstances.push_back(executeFile);
+
+
 		string entropyFile = "entropy";
+		entropyFile += indexParsed.str();
 		entropyFile += string(".sh");
 		entropyFile = "/" + entropyFile;
 		entropyFile = pasta + entropyFile;
@@ -499,12 +474,15 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			string instance = storeInstances.at(i);
 			outProcess<<instance<<" &";	
 		}
+		storeInstances.clear();
+		outProcess.close();
 
 		string allowEntropy;
         	allowEntropy = "chmod +x "+entropyFile;
         	cout<<allowEntropy<<"\n";
         	system(allowEntropy.c_str());
-		*/
+		string executeEntropy = "sh "+ entropyFile;
+		system(executeEntropy.c_str());
 	}
 }
 
@@ -636,88 +614,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 						//cout<<"problema "<<problema<<"\n\n";
 						create_sh(pasta, dominio, problema, j, heuristic, i+1, PROB_PROBES, NUM_PROBES, NUM_HTC);
 					}
-				}
-
-				/*
-				//run 4 process at the time
-				if (run_entropy) {
-
-					while (true) {
-						string top_output = "top_output.txt";
-						top_output = "/" + top_output;
-						top_output = pasta + top_output;
-						top_output = "testss/"+heuristic+"/" + PROB_PROBES  + "/" + top_output;
-						top_output = "marvin/" + top_output;
-						top_output = "marvin/"+ top_output;
-						top_output =  _HOME_INFO  + "/" + top_output;
-						cout<<"output= "<<top_output<<"\n\n";
-						string top_linux = "top -n 1 -b > " + top_output;
-						cout<<"top_linux="<<top_linux<<"\n";
-						string INS = exec(top_linux.c_str());
-						cout<<"INS= "<<INS<<"\n";
-
-						ifstream topfile(top_output.c_str());
-
-						string PID_string = "PID";
-						int NUM_COLUMNS = 12;		
-						int max_deep = getTotalLevels(top_output.c_str(), NUM_COLUMNS, PID_string);
-						cout<<"max_deep="<<max_deep<<"\n";
-						string next;
-						string** levels;
-						levels = new string*[max_deep];
-						for (int i = 0; i < max_deep; i++) {
-							levels[i] = new string[NUM_COLUMNS];
-						}
-	
-						while (topfile>>next) {
-							if (next == PID_string) {
-								topfile>>next;	
-								topfile>>next;	
-								topfile>>next;	
-								topfile>>next;	
-								topfile>>next;	
-								topfile>>next;	
-								topfile>>next;	
-								topfile>>next;	
-								topfile>>next;	
-								topfile>>next;	
-								topfile>>next;
-
-								for (int i = 0; i < max_deep; i++) {
-									for(int j = 0; j < NUM_COLUMNS; j++) {
-										topfile>>levels[i][j];
-									}
-								}
-							}
-						}
-
-						vector<int> v_pid;
-						vector<int> v_cpu;
-						vector<string> v_top;
-
-						//check: Check the "top" whether your processes are using 100% CPU (or close to that). It they are not, then reduce to 4 jobs at once.
-						for (int i = 0; i < max_deep; i++) {
-							v_pid.push_back(atoi(levels[i][0].c_str()));
-							v_cpu.push_back(atoi(levels[i][8].c_str()));
-							v_top.push_back(levels[i][11].c_str());
-						}
-
-						int n_downward_process = 0;
-						for (size_t i = 0; i < v_cpu.size(); i++) {
-							int pid = v_pid.at(i);
-							int cpu = v_cpu.at(i);
-							string cmd = v_top.at(i);
-							cout<<"pid="<<pid<<",cpu="<<cpu<<",cmd="<<cmd<<"\n";
-							if (cmd == "downward-release") {
-								n_downward_process++;
-							}
-						}
-
-						if (n_downward_process < 5) {
-							break;
-						}
-					}	
-				}*/
+				}	
 			}	
 			counter++;
 			
