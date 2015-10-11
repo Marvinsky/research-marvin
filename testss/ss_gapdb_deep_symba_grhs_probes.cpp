@@ -330,12 +330,13 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 
 	outfile<<"FD_SYMBA_HIBRIDS="<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"/FD_problems_SYMBA_HYBRID\n\n";
 	outfile<<"FD_ROOT="<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"\n\n";
-	outfile<<"TEMP="<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"/temp\n\n";
-	outfile<<"DIR=$(mktemp  --tmpdir=${TEMP})\n\n";
+	//outfile<<"TEMP="<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"/temp\n\n";
+	//outfile<<"DIR=$(mktemp  --tmpdir=${TEMP})\n\n";
 	//cout<<"pasta = "<<pasta.c_str()<<"\n\n";
 	outfile<<"RESULTS="<<_HOME_INFO<<"/marvin/marvin/testss/"<<heuristic<<"/"<<PROB_PROBES<<"/"<<pasta.c_str()<<"/resultado"<<"\n\n";
 	//outfile<<"cd "<<_HOME_INFO<<"/marvin"<<_FD_INFO<<"\n\n";
-	outfile<<"cd ${DIR}\n\n";
+	//outfile<<"cd ${DIR}\n\n";
+	outfile<<"cd ${FD_ROOT}\n\n";
 
 
 	//outfile<<"python3 ${FD_ROOT}/src/translate/translate.py ${FD_ROOT}/benchmarks/"<<pasta.c_str()<<"/"<<dominio.c_str()<<" ${FD_ROOT}/benchmarks/"<<pasta.c_str()<<"/"<<problema.c_str()<<"\n\n";
@@ -344,9 +345,9 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	string outputSA = translator(pasta.c_str(), problema.c_str());
 	//cout<<"outputSA="<<outputSA<<"\n";
 
-	outfile<<"./timeout -t 10 ${FD_ROOT}/src/search/downward-release  --run_n_heuristics "<<NUM_HTC<<"  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=200), automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	outfile<<"./timeout -t 1800 ${FD_ROOT}/src/search/downward-release  --run_n_heuristics "<<NUM_HTC<<"  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=200), automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	
-	outfile<<"\n\nrm ${DIR}\n\n";
+	//outfile<<"\n\nrm ${DIR}\n\n";
 	//outfile<<"\n\nrm sas_plan"<<"\n\n";
         
 	outfile.close();
@@ -440,15 +441,16 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 				int cpu = v_cpu.at(i);
 				string cmd = v_top.at(i);
 				//cout<<"pid="<<pid<<",cpu="<<cpu<<",cmd="<<cmd<<"\n";
-				if (cmd == "downward-releas") {
+				if (cmd == "downward-releas" || cmd == "downward-r+") {
 					n_downward_process++;
 				}
 			}
-			string remove_topoutput = "rm "+ top_output;
-			system(remove_topoutput.c_str()); 
+			cout<<"\n\n\n---checking the n_downward="<<n_downward_process<<"\n";
+			//string remove_topoutput = "rm "+ top_output;
+			//system(remove_topoutput.c_str()); 
 		
 			usleep(6000000);	
-			if (n_downward_process < 5) {
+			if (n_downward_process < 4) {
 				break;
 			}
 		}
