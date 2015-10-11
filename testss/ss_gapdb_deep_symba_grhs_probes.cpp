@@ -344,7 +344,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	string outputSA = translator(pasta.c_str(), problema.c_str());
 	//cout<<"outputSA="<<outputSA<<"\n";
 
-	outfile<<"${FD_ROOT}/src/search/downward-release  --run_n_heuristics "<<NUM_HTC<<"  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=200), automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	outfile<<"./timeout -t 10 ${FD_ROOT}/src/search/downward-release  --run_n_heuristics "<<NUM_HTC<<"  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=200), automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	
 	outfile<<"\n\nrm ${DIR}\n\n";
 	//outfile<<"\n\nrm sas_plan"<<"\n\n";
@@ -382,9 +382,10 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			top_output =  _HOME_INFO  + "/" + top_output;
 			cout<<"output= "<<top_output<<"\n\n";
 			string top_linux = "top -n 1 -b > " + top_output;
-			cout<<"top_linux="<<top_linux<<"\n";
-			string INS = exec(top_linux.c_str());
-			cout<<"INS= "<<INS<<"\n";
+			system(top_linux.c_str());
+			//cout<<"top_linux="<<top_linux<<"\n";
+			//string INS = exec(top_linux.c_str());
+			//cout<<"INS= "<<INS<<"\n";
 
 			ifstream topfile(top_output.c_str());
 
@@ -445,7 +446,8 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 			}
 			string remove_topoutput = "rm "+ top_output;
 			system(remove_topoutput.c_str()); 
-			
+		
+			usleep(6000000);	
 			if (n_downward_process < 5) {
 				break;
 			}
@@ -455,7 +457,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         	allow = "chmod +x "+arquivo;
         	//cout<<allow<<"\n";
         	system(allow.c_str());
-        	executeFile = "timeout 1800 sh "+arquivo; //setting the limit time
+        	executeFile = " sh "+arquivo; //setting the limit time
 		storeInstances.push_back(executeFile);
 
 
@@ -481,7 +483,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         	allowEntropy = "chmod +x "+entropyFile;
         	cout<<allowEntropy<<"\n";
         	system(allowEntropy.c_str());
-		string executeEntropy = "sh "+ entropyFile;
+		string executeEntropy = "sh "+ entropyFile;	
 		system(executeEntropy.c_str());
 	}
 }
@@ -592,15 +594,16 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 				}
 
 				for (int j = 0; j < quantidade_problemas; j++) {
-					while (true) {
-						usleep(600000);
-						string INS = exec(instances.c_str());
-						int n_ins = atoi(INS.c_str());
-
-						if (n_ins < 20) {
-							break;
+					if (!run_entropy) {
+						while (true) {
+							usleep(600000);
+							string INS = exec(instances.c_str());
+							int n_ins = atoi(INS.c_str());
+	
+							if (n_ins < 20) {
+								break;
+							}
 						}
-
 					}
 
 					if (dominio_unico) {
@@ -614,7 +617,7 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 						//cout<<"problema "<<problema<<"\n\n";
 						create_sh(pasta, dominio, problema, j, heuristic, i+1, PROB_PROBES, NUM_PROBES, NUM_HTC);
 					}
-				}	
+				}
 			}	
 			counter++;
 			
