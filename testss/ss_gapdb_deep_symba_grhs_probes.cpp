@@ -424,7 +424,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	string outputSA = translator(pasta.c_str(), problema.c_str());
 	//cout<<"outputSA="<<outputSA<<"\n";
 
-	outfile<<"./timeout -t 1800 ${FD_ROOT}/src/search/downward-release  --run_n_heuristics "<<NUM_HTC<<"  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=200), automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
+	outfile<<"./timeout -t 1800 ${FD_ROOT}/src/search/downward-release  --run_n_heuristics "<<NUM_HTC<<"  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=200), automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  >& ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	
 	//outfile<<"\n\nrm ${DIR}\n\n";
 	//outfile<<"\n\nrm sas_plan"<<"\n\n";
@@ -475,7 +475,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         	allow = "chmod +x "+arquivo;
         	//cout<<allow<<"\n";
         	system(allow.c_str());
-        	executeFile = " sh "+arquivo; //setting the limit time
+        	executeFile = " "+arquivo; //setting the limit time
 		storeInstances.push_back(executeFile);
 
 
@@ -489,7 +489,8 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 		entropyFile = "marvin/"+ entropyFile;
 		entropyFile =  _HOME_INFO  + "/" + entropyFile;
 		ofstream outProcess(entropyFile.c_str(), ios::out);
-
+	
+		outProcess<<"#!/bin/bash\n\n";
 		for (size_t i = 0; i < storeInstances.size(); i++) {
 			string instance = storeInstances.at(i);
 			outProcess<<instance<<" &";	
