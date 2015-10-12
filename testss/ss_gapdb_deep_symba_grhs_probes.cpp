@@ -301,6 +301,85 @@ int getTotalLevels(string interText, int NUM_COLUMNS, string PID_string) {
         return total_niveles;
 }
 
+int getNumberInstances(string pasta, string heuristic, string PROB_PROBES) {
+	string top_output = "top_output.txt";
+	top_output = "/" + top_output;
+	top_output = pasta + top_output;
+	top_output = "testss/"+heuristic+"/" + PROB_PROBES  + "/" + top_output;
+	top_output = "marvin/" + top_output;
+	top_output = "marvin/"+ top_output;
+	top_output =  _HOME_INFO  + "/" + top_output;
+	cout<<"output= "<<top_output<<"\n\n";
+	string top_linux = "top -n 1 -b > " + top_output;
+	system(top_linux.c_str());
+	//cout<<"top_linux="<<top_linux<<"\n";
+	//string INS = exec(top_linux.c_str());
+	//cout<<"INS= "<<INS<<"\n";
+
+	ifstream topfile(top_output.c_str());
+
+	string PID_string = "PID";
+	int NUM_COLUMNS = 12;		
+	int max_deep = getTotalLevels(top_output.c_str(), NUM_COLUMNS, PID_string);
+	cout<<"max_deep="<<max_deep<<"\n";
+	string next;
+	string** levels;
+	levels = new string*[max_deep];
+	for (int i = 0; i < max_deep; i++) {
+		levels[i] = new string[NUM_COLUMNS];
+	}
+	
+	while (topfile>>next) {
+		if (next == PID_string) {
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;
+
+			for (int i = 0; i < max_deep; i++) {
+				for(int j = 0; j < NUM_COLUMNS; j++) {
+					topfile>>levels[i][j];
+				}
+			}
+		}
+	}
+	topfile.close();
+
+	vector<int> v_pid;
+	vector<int> v_cpu;
+	vector<string> v_top;
+
+	//check: Check the "top" whether your processes are using 100% CPU (or close to that). It they are not, then reduce to 4 jobs at once.
+	for (int i = 0; i < max_deep; i++) {
+		v_pid.push_back(atoi(levels[i][0].c_str()));
+		v_cpu.push_back(atoi(levels[i][8].c_str()));
+		v_top.push_back(levels[i][11].c_str());
+	}
+
+	int n_downward_process = 0;
+	for (size_t i = 0; i < v_cpu.size(); i++) {
+		int pid = v_pid.at(i);
+		int cpu = v_cpu.at(i);
+		string cmd = v_top.at(i);
+		//cout<<"pid="<<pid<<",cpu="<<cpu<<",cmd="<<cmd<<"\n";
+		if (cmd == "downward-releas" || cmd == "downward-r+") {
+			n_downward_process++;
+		}
+	}
+	cout<<"\n\n\n---checking the n_downward="<<n_downward_process<<"\n";
+	string remove_topoutput = "rm "+ top_output;
+	system(remove_topoutput.c_str());
+
+	return n_downward_process;
+}
+
 void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic, int numDominio, string PROB_PROBES, int NUM_PROBES, int NUM_HTC) {
 	string arquivo;
 	stringstream indexParsed;
@@ -373,82 +452,19 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	} else {
 		//Execute condition
 		//run 4 process at the time
+		bool use_grep = true;
 		while (true) {
-			string top_output = "top_output.txt";
-			top_output = "/" + top_output;
-			top_output = pasta + top_output;
-			top_output = "testss/"+heuristic+"/" + PROB_PROBES  + "/" + top_output;
-			top_output = "marvin/" + top_output;
-			top_output = "marvin/"+ top_output;
-			top_output =  _HOME_INFO  + "/" + top_output;
-			cout<<"output= "<<top_output<<"\n\n";
-			string top_linux = "top -n 1 -b > " + top_output;
-			system(top_linux.c_str());
-			//cout<<"top_linux="<<top_linux<<"\n";
-			//string INS = exec(top_linux.c_str());
-			//cout<<"INS= "<<INS<<"\n";
-
-			ifstream topfile(top_output.c_str());
-
-			string PID_string = "PID";
-			int NUM_COLUMNS = 12;		
-			int max_deep = getTotalLevels(top_output.c_str(), NUM_COLUMNS, PID_string);
-			cout<<"max_deep="<<max_deep<<"\n";
-			string next;
-			string** levels;
-			levels = new string*[max_deep];
-			for (int i = 0; i < max_deep; i++) {
-				levels[i] = new string[NUM_COLUMNS];
-			}
-	
-			while (topfile>>next) {
-				if (next == PID_string) {
-					topfile>>next;	
-					topfile>>next;	
-					topfile>>next;	
-					topfile>>next;	
-					topfile>>next;	
-					topfile>>next;	
-					topfile>>next;	
-					topfile>>next;	
-					topfile>>next;	
-					topfile>>next;	
-					topfile>>next;
-
-					for (int i = 0; i < max_deep; i++) {
-						for(int j = 0; j < NUM_COLUMNS; j++) {
-							topfile>>levels[i][j];
-						}
-					}
-				}
-			}
-			topfile.close();
-
-			vector<int> v_pid;
-			vector<int> v_cpu;
-			vector<string> v_top;
-
-			//check: Check the "top" whether your processes are using 100% CPU (or close to that). It they are not, then reduce to 4 jobs at once.
-			for (int i = 0; i < max_deep; i++) {
-				v_pid.push_back(atoi(levels[i][0].c_str()));
-				v_cpu.push_back(atoi(levels[i][8].c_str()));
-				v_top.push_back(levels[i][11].c_str());
-			}
-
 			int n_downward_process = 0;
-			for (size_t i = 0; i < v_cpu.size(); i++) {
-				int pid = v_pid.at(i);
-				int cpu = v_cpu.at(i);
-				string cmd = v_top.at(i);
-				//cout<<"pid="<<pid<<",cpu="<<cpu<<",cmd="<<cmd<<"\n";
-				if (cmd == "downward-releas" || cmd == "downward-r+") {
-					n_downward_process++;
-				}
+			if (use_grep) {
+				string execute_grep = "ps aux | grep './downward' | grep -v grep | grep -v timeout | wc -l ";
+				string INS = exec(execute_grep.c_str());
+				cout<<"INS="<<INS<<"\n";
+				n_downward_process = atoi(INS.c_str());
+				cout<<"n_downward_process="<<n_downward_process<<"\n";
+			} else {
+				n_downward_process = getNumberInstances(pasta, heuristic, PROB_PROBES);
 			}
-			cout<<"\n\n\n---checking the n_downward="<<n_downward_process<<"\n";
-			//string remove_topoutput = "rm "+ top_output;
-			//system(remove_topoutput.c_str()); 
-		
+
 			usleep(6000000);	
 			if (n_downward_process < 4) {
 				break;
