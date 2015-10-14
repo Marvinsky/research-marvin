@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  2 SEP 2015 11:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  14 OCT 2015 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1460,16 +1460,11 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
 \tf@toc=\write5
 \openout5 = `dissertation.toc'.
 
- [2]
-Overfull \hbox (6.84874pt too wide) in paragraph at lines 163--164
-\OT1/ptm/m/n/10.95 most suc-cess-full re-sults in heuris-tic gen-er-a-tion is c
-alled Pat-tern Database (PDBs), which is memory-
- []
-
-[3]
+ [2] [3]
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 17
 0.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 17
@@ -1494,56 +1489,70 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 170.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 170.
- [4]
+
+<./image/inicio.png, id=23, 1247.66125pt x 712.6625pt>
+File: ./image/inicio.png Graphic file (type png)
+
+<use ./image/inicio.png>
+Package pdftex.def Info: ./image/inicio.png used on input line 188.
+(pdftex.def)             Requested size: 113.81102pt x 65.0068pt.
+
+<./image/objetivo.png, id=24, 1249.66875pt x 712.6625pt>
+File: ./image/objetivo.png Graphic file (type png)
+
+<use ./image/objetivo.png>
+Package pdftex.def Info: ./image/objetivo.png used on input line 190.
+(pdftex.def)             Requested size: 113.81102pt x 64.89806pt.
+ [4] [5 <./image/inicio.png> <./image/objetivo.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 211.
+               Default added (so using `tbp') on input line 235.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 215.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 239.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 215.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 239.
 
-Overfull \hbox (37.25203pt too wide) in paragraph at lines 215--243
+Overfull \hbox (37.25203pt too wide) in paragraph at lines 239--267
 [][] 
  []
 
 
-LaTeX Warning: Reference `table1' on page 5 undefined on input line 246.
+LaTeX Warning: Reference `table1' on page 6 undefined on input line 270.
 
-[5] [6]
+[6]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 250.
+               Default added (so using `tbp') on input line 274.
 
 
-Overfull \hbox (32.563pt too wide) in paragraph at lines 254--282
+Overfull \hbox (32.563pt too wide) in paragraph at lines 278--306
 [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 284.
+               Default added (so using `tbp') on input line 308.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 288.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 312.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 288.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 312.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 288.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 312.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 313.
+               Default added (so using `tbp') on input line 337.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 341.
+               Default added (so using `tbp') on input line 365.
 
-(./dissertation.bbl [7] [8])
+(./dissertation.bbl [7] [8] [9])
 \Changes@OutFile=\write6
 \openout6 = `dissertation.soc'.
 
- [9] (./dissertation.aux)
+ [10] (./dissertation.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1552,11 +1561,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17525 strings out of 493104
- 316588 string characters out of 6136932
- 423315 words of memory out of 5000000
- 20499 multiletter control sequences out of 15000+600000
- 53848 words of font info for 129 fonts, out of 8000000 for 9000
+ 17539 strings out of 493104
+ 316848 string characters out of 6136932
+ 439323 words of memory out of 5000000
+ 20509 multiletter control sequences out of 15000+600000
+ 54371 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,13n,54p,1871b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1564,13 +1573,14 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
-tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (10 pages, 142694 bytes).
+ype1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symb
+ol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on dissertation.pdf (11 pages, 2269280 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
