@@ -42,3 +42,15 @@ Case   #probes/#heuristics       system                               instances 
 2.-      20/1k                   SS(1kga,lmcut(),ipdb)+plain A*       191
 3.-      20/10k                  SS(10kga,lmcut(),ipdb)+plain A*      195
 4.-      20/100k                 SS(100kga,lmcut(),ipdb)+plain A*     180
+
+
+
+Case   #probes/#heuristics       system                               instances solved
+1.-     20/100                   SS(100ga,lmcut,ipdb)+plain A*        186
+2.-     20/1000			 SS(1kga,lmcut,ipdb)+plain A*         185
+3.-     20/10000		 SS(10kga,lmcut,ipdb)+plain A*        184
+4.-     20/100000		 SS(100kga,lmcut,ipdb)+plain A*       184
+
+
+
+
