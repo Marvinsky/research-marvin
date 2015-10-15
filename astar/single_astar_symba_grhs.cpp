@@ -6,7 +6,7 @@
 #include <string>
 
 #include <time.h>
-
+#include <vector>
 
 //put asleep
 #include <unistd.h>
@@ -19,6 +19,8 @@ using namespace std;
 //Root and fd information
 string _HOME_INFO = "/home";
 string _FD_INFO = "/fd";
+bool run_entropy = true;
+vector<string> storeInstances;
 
 std::string exec(const char* cmd) {
     FILE* pipe = popen(cmd, "r");
@@ -169,6 +171,42 @@ string getSimplePXX(string instance, string FINAL_NAME) {
 	return result;
 }
 
+int getTotalLevels(string interText, int NUM_COLUMNS, string PID_string) {
+        ifstream inter2;
+        inter2.open(interText.c_str());
+        int total_niveles = 0;
+
+        if (!inter2) {
+           return -1;
+        } else {
+           string trash;
+
+           int count_data = 0;
+           while (inter2>>trash) {
+                if (trash == PID_string) {
+                        inter2>>trash;
+                        inter2>>trash;
+                        inter2>>trash;
+                        inter2>>trash;
+                        inter2>>trash;
+                        inter2>>trash;
+                        inter2>>trash;
+                        inter2>>trash;
+                        inter2>>trash;
+                        inter2>>trash;
+                        inter2>>trash;
+                        while (inter2>>trash) {
+                                //cout<<trash<<endl;
+                                count_data++;
+                        }
+                        inter2.close();
+                        total_niveles = (int)count_data/NUM_COLUMNS;
+                }
+            }
+        }
+        return total_niveles;
+}
+
 string translator(string key, string instance) {
 	cout<<"key="<<key<<"\n";
 	string result;
@@ -258,13 +296,92 @@ string translator(string key, string instance) {
         return result;
 }
 
+int getNumberInstances(string pasta, string heuristic, string PROB_GOOD) {
+	string top_output = "top_output.txt";
+	top_output = "/" + top_output;
+	top_output = pasta + top_output;
+	top_output = "testss/"+heuristic+"/" + PROB_GOOD  + "/" + top_output;
+	top_output = "marvin/" + top_output;
+	top_output = "marvin/"+ top_output;
+	top_output =  _HOME_INFO  + "/" + top_output;
+	cout<<"output= "<<top_output<<"\n\n";
+	string top_linux = "top -n 1 -b > " + top_output;
+	system(top_linux.c_str());
+	//cout<<"top_linux="<<top_linux<<"\n";
+	//string INS = exec(top_linux.c_str());
+	//cout<<"INS= "<<INS<<"\n";
+
+	ifstream topfile(top_output.c_str());
+
+	string PID_string = "PID";
+	int NUM_COLUMNS = 12;		
+	int max_deep = getTotalLevels(top_output.c_str(), NUM_COLUMNS, PID_string);
+	cout<<"max_deep="<<max_deep<<"\n";
+	string next;
+	string** levels;
+	levels = new string*[max_deep];
+	for (int i = 0; i < max_deep; i++) {
+		levels[i] = new string[NUM_COLUMNS];
+	}
+	
+	while (topfile>>next) {
+		if (next == PID_string) {
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;	
+			topfile>>next;
+
+			for (int i = 0; i < max_deep; i++) {
+				for(int j = 0; j < NUM_COLUMNS; j++) {
+					topfile>>levels[i][j];
+				}
+			}
+		}
+	}
+	topfile.close();
+
+	vector<int> v_pid;
+	vector<int> v_cpu;
+	vector<string> v_top;
+
+	//check: Check the "top" whether your processes are using 100% CPU (or close to that). It they are not, then reduce to 4 jobs at once.
+	for (int i = 0; i < max_deep; i++) {
+		v_pid.push_back(atoi(levels[i][0].c_str()));
+		v_cpu.push_back(atoi(levels[i][8].c_str()));
+		v_top.push_back(levels[i][11].c_str());
+	}
+
+	int n_downward_process = 0;
+	for (size_t i = 0; i < v_cpu.size(); i++) {
+		int pid = v_pid.at(i);
+		int cpu = v_cpu.at(i);
+		string cmd = v_top.at(i);
+		//cout<<"pid="<<pid<<",cpu="<<cpu<<",cmd="<<cmd<<"\n";
+		if (cmd == "downward-releas" || cmd == "downward-r+") {
+			n_downward_process++;
+		}
+	}
+	cout<<"\n\n\n---checking the n_downward="<<n_downward_process<<"\n";
+	string remove_topoutput = "rm "+ top_output;
+	system(remove_topoutput.c_str());
+
+	return n_downward_process;
+}
+
 void create_sh(string pasta, string dominio, string problema, int num_problema, string heuristic, int numDominio, string PROB_GOOD, int NUM_HTC) {
 	string arquivo;
-	stringstream Resultado;
+	stringstream indexParsed;
 	
 	arquivo += "A";
-	Resultado<<num_problema+1;
-	arquivo += Resultado.str();
+	indexParsed<<num_problema+1;
+	arquivo += indexParsed.str();
 	arquivo += string(".sh");
 	arquivo = "/" + arquivo;
 	arquivo = pasta + arquivo;
@@ -346,18 +463,76 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
         string executeFile;
 	bool is_in_cluster = false;
 
-        if (is_in_cluster) {
-                executeFile = "qsub -l nodes=1:ppn=1,mem=4000mb "+arquivo;
-                cout<<executeFile<<"\n\n";
-                system(executeFile.c_str());
-        } else {
+
+	if (!run_entropy) {
+
+        	if (is_in_cluster) {
+                	executeFile = "qsub -l nodes=1:ppn=1,mem=4000mb "+arquivo;
+                	cout<<executeFile<<"\n\n";
+                	system(executeFile.c_str());
+        	} else {
+                	string allow;
+                	allow = "chmod +x "+arquivo;
+                	cout<<allow<<"\n";
+                	system(allow.c_str());
+                	executeFile = "timeout 1800 sh "+arquivo; //setting the limit time
+                	system(executeFile.c_str());
+        	}
+	} else {
+		//Execute condition
+                //run 4 process at the time
+                bool use_grep = true;
+                while (true) {
+                        int n_downward_process = 0;
+                        if (use_grep) {
+                                string execute_grep = "ps aux | grep './downward' | grep -v grep | grep -v timeout | wc -l ";
+                                string INS = exec(execute_grep.c_str());
+                                cout<<"INS="<<INS<<"\n";
+                                n_downward_process = atoi(INS.c_str());
+                                cout<<"n_downward_process="<<n_downward_process<<"\n";
+                        } else {
+                                n_downward_process = getNumberInstances(pasta, heuristic, PROB_GOOD);
+                        }
+
+                        usleep(6000000);
+                        if (n_downward_process < 4) {
+                                break;
+                        }
+                }
+
                 string allow;
                 allow = "chmod +x "+arquivo;
-                cout<<allow<<"\n";
+                //cout<<allow<<"\n";
                 system(allow.c_str());
-                executeFile = "timeout 1800 sh "+arquivo; //setting the limit time
-                system(executeFile.c_str());
-        }
+                executeFile = " "+arquivo; //setting the limit time
+                storeInstances.push_back(executeFile);	
+
+		string entropyFile = "entropy";
+                entropyFile += indexParsed.str();
+                entropyFile += string(".sh");
+                entropyFile = "/" + entropyFile;
+                entropyFile = pasta + entropyFile;
+                entropyFile = "testss/"+heuristic+"/" + PROB_GOOD  + "/" + entropyFile;
+                entropyFile = "marvin/" + entropyFile;
+                entropyFile = "marvin/"+ entropyFile;
+                entropyFile =  _HOME_INFO  + "/" + entropyFile;
+                ofstream outProcess(entropyFile.c_str(), ios::out);
+
+                outProcess<<"#!/bin/bash\n\n";
+                for (size_t i = 0; i < storeInstances.size(); i++) {
+                        string instance = storeInstances.at(i);
+                        outProcess<<instance<<" &";
+                }
+                storeInstances.clear();
+                outProcess.close();
+
+                string allowEntropy;
+                allowEntropy = "chmod +x "+entropyFile;
+                cout<<allowEntropy<<"\n";
+                system(allowEntropy.c_str());
+                string executeEntropy = "sh "+ entropyFile;
+                system(executeEntropy.c_str());
+	}
 }
 
 
@@ -459,15 +634,17 @@ void entrada_dados(string &pasta, string &problema, string &dominio, bool &domin
 			}
 
 			for (int j = 0; j < quantidade_problemas; j++) {
-				while (true) {
-                                        usleep(600000);
-                                        string INS = exec(instances.c_str());
-                                        int n_ins = atoi(INS.c_str());
+				if (!run_entropy) {
+					while (true) {
+                                        	usleep(600000);
+                                        	string INS = exec(instances.c_str());
+                                        	int n_ins = atoi(INS.c_str());
 
-                                        if (n_ins < 30) {
-                                                break;
-                                        }
-                                }
+                                        	if (n_ins < 30) {
+                                                	break;
+                                        	}
+                                	}
+				}
 
 				if (dominio_unico) {
 					file>>problema;
