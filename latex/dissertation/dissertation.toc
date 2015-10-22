@@ -1,4 +1,7 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{3}
 \contentsline {section}{\numberline {2}Background}{4}
-\contentsline {section}{\numberline {3}Comparison of SS with IDA*}{5}
+\contentsline {section}{\numberline {3}Heuristics}{5}
+\contentsline {subsection}{\numberline {3.1}Out of tile}{5}
+\contentsline {subsection}{\numberline {3.2}Manhatan Distance}{5}
+\contentsline {section}{\numberline {4}Comparison of SS with IDA*}{6}
