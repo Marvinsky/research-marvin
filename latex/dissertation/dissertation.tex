@@ -223,7 +223,7 @@ Instead of using an algorithm of Brute force search that will analyze all the po
 \section{Heuristics}
 State$-$space algorithms, such as A* \citep{hart1968formal}, are important in many \texttt{AI} applications. A* uses the $f(s) = g(s) + h(s)$ cost function to guide its search. Here, $g(s)$ is the cost of the path from the start state $s$, and $h(s)$ is the estimated cost$-$to$-$go from $s$ to a gial; $h(.)$ is known as the heuristic function. The heuristic is the mathematical concept that represent to the estimate distance from the node $s$ to the nearest goal state.
 
-\begin{figure}
+\begin{figure}[htb]
 \centering
 \begin{tikzpicture}
 	%\draw[yshift=-1 em, ultra thick] (0,0) [point] -- (5,0) [point] -- (10,0) [point];
@@ -264,15 +264,33 @@ Counts the number of objects out of place.
 \begin{figure}[htb]
 \centering
 \begin{forest}
- [\usebox\myboxa] $\rightarrow$  [\usebox\myboxb]
+ [\usebox\myboxa]
+ $\draw[->,xshift=4pt,yshift=14pt] (2,1) -- (4,1);$
+ $\node [xshift=1cm,yshift=2cm] (A) at (2,0) {O.P=8};$
+ \hspace*{1.8in} 
+ %$\rightarrow$  
+ [\usebox\myboxb] 
 \end{forest}
 \caption{Out of place heuristic} \label{fig:8tilepuzzle_oop}
 \end{figure}
 
-
-
 \subsection{Manhatham Distance}
 Counts the minimum number of operations to get to the goal state.
+
+\begin{figure}[htb]
+\centering
+\begin{forest}
+ [\usebox\myboxa]
+ $\draw[->,xshift=4pt,yshift=14pt] (2,1) -- (4,1);$
+ $\node [xshift=1cm,yshift=2cm] (A) at (2,0) {M.D=1O};$
+ \hspace*{1.8in} 
+ %$\rightarrow$  
+ [\usebox\myboxb] 
+\end{forest}
+\caption{Manhatham distance heuristic} \label{fig:8tilepuzzle_md}
+\end{figure}
+
+
 
 Define the problem using examples
 
