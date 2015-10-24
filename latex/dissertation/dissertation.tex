@@ -121,6 +121,7 @@
 \newcommand{\Om}[1]{\small $\omega_{#1}$}
 \newcommand{\De}[1]{$\Delta_{#1}$}
 \newcommand{\Ga}[1]{$\Gamma_{#1}$}
+\newcommand{\Vpi}[1]{$\varphi_{#1}$}
 
 \begin{document}
 \doublespacing
@@ -353,40 +354,80 @@ One way to take advantage of heuristics would be to take the maximum of the set 
  %$\draw[->,xshift=4pt,yshift=14pt] (2,1) -- (4,1);$
  \node [xshift=2.5cm,yshift=4cm] (A) at (2,0) {S};
  
- \draw[->] (2.5cm,8em) -- (8cm,5em) node[midway,right] {\Om{2}}; 
+ %\draw[->] (2.5cm,8em) -- (8cm,5em) node[midway,right] {\Om{2}};
+ \draw[->] (4.5,3.8) -- (8.5,1) node[midway,right] {\Vpi{}};
+ \draw[->] (8.5,0) -- (8.5,-1) node[xshift=0cm,yshift=-0.2cm] {$h(s)$};
 \end{tikzpicture}
 
+\begin{tikzpicture}
+\draw[step=1cm,gray,very thin] grid (12,1);
+%\draw[step=1cm,gray,very thin] (-1.9,-1.9) grid (5.9,5.9);
+%\fill[blue!40!white] (0,0) rectangle (4,4);
+\filldraw[fill=green!40!white, draw=black] rectangle (12,1);
+\filldraw[fill=green!40!white, draw=black] rectangle (11,1);
+\filldraw[fill=green!40!white, draw=black] rectangle (10,1);
+\filldraw[fill=green!40!white, draw=black] rectangle (9,1);
+\filldraw[fill=green!40!white, draw=black] rectangle (8,1);
+\filldraw[fill=green!40!white, draw=black] rectangle (7,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (6,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (5,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (4,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (3,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (2,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (1,1);
 
-% Place the TikZ picture in a figure environment.
-\begin{figure}[htb]
-\centerline{
-  % Resize it to 5cm wide.
-  \resizebox{7cm}{!}{
-    \begin{tikzpicture}[
-      scale=0.5,
-      level/.style={thick},
-      virtual/.style={thick,densely dashed},
-      trans/.style={thick,<->,shorten >=2pt,shorten <=2pt,>=stealth},
-      classical/.style={thin,double,<->,shorten >=4pt,shorten <=4pt,>=stealth}
-    ]
-    % Draw the energy levels.
-    \draw[level] (2cm,-2em) -- (0cm,-2em) node[left] {\ket{a}};
-    \draw[level] (2cm,11em) -- (4cm,11em) node[midway,above] {\ket{b}};
-    \draw[level] (4cm,-11em) -- (6cm,-11em) node[right] {\ket{c}};
-    % Draw the virtual levels.
-    \draw[virtual] (2cm,8em) -- (4cm,8em) node[midway,above] {\De{1}};
-    \draw[virtual] (4cm,-8em) -- (6cm,-8em) node[midway,below] {\De{2}};
-    \draw[virtual] (2cm,-5em) -- (0cm,-5em) node[midway,above] {\De{3}};
-    % Draw the transitions.
-    \draw[trans] (1cm,-2em) -- (2.5cm,8em) node[midway,left] {\Om{1}};
-    \draw[trans] (3.5cm,8em) -- (5cm,-8em) node[midway,right] {\Om{2}};
-    \draw[classical] (4.5cm,-8em) -- (1.5cm,-5em) node[midway,below] {\Ga{}};
-    \end{tikzpicture}
-  }
-}
-\caption{A level diagram with some transitions drawn in TikZ, resized,
-                and placed in a figure environment.}
-\end{figure}
+ %$\draw[->,xshift=4pt,yshift=14pt] (2,1) -- (4,1);$
+ \node [xshift=2.5cm,yshift=4cm] (A) at (2,0) {S};
+ 
+ %\draw[->] (2.5cm,8em) -- (8cm,5em) node[midway,right] {\Om{2}};
+ \draw[->] (4.5,3.8) -- (4.5,1) node[midway,right] {\Vpi{1}};
+ \draw[->] (4.5,0) -- (4.5,-1) node[xshift=0cm,yshift=-0.2cm] {$h_{\substack{1}}(s)$};
+ 
+ \draw[->] (4.5,3.8) -- (8.5,1) node[midway,right] {\Vpi{2}};
+ \draw[->] (8.5,0) -- (8.5,-1) node[xshift=0cm,yshift=-0.2cm] {$h_{\substack{2}}(s)$};
+ 
+ \draw[decorate,decoration={brace,amplitude=8pt,mirror},xshift=4pt,yshift=-1.5cm]
+(4,0) -- (9,0) node [black,midway,yshift=-0.5cm] 
+{\footnotesize $max$};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\draw[step=1cm,gray,very thin] grid (12,1);
+%\draw[step=1cm,gray,very thin] (-1.9,-1.9) grid (5.9,5.9);
+%\fill[blue!40!white] (0,0) rectangle (4,4);
+\filldraw[fill=blue!40!white, draw=black] rectangle (12,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (11,1);
+\filldraw[fill=orange!40!white, draw=black] rectangle (10,1);
+\filldraw[fill=orange!40!white, draw=black] rectangle (9,1);
+\filldraw[fill=red!40!white, draw=black] rectangle (8,1);
+\filldraw[fill=red!40!white, draw=black] rectangle (7,1);
+\filldraw[fill=brown!40!white, draw=black] rectangle (6,1);
+\filldraw[fill=brown!40!white, draw=black] rectangle (5,1);
+\filldraw[fill=yellow!40!white, draw=black] rectangle (4,1);
+\filldraw[fill=yellow!40!white, draw=black] rectangle (3,1);
+\filldraw[fill=green!40!white, draw=black] rectangle (2,1);
+\filldraw[fill=green!40!white, draw=black] rectangle (1,1);
+
+ %$\draw[->,xshift=4pt,yshift=14pt] (2,1) -- (4,1);$
+ \node [xshift=2.5cm,yshift=4cm] (A) at (2,0) {S};
+
+ \draw[->] (4.5,3.8) -- (1,1) node[midway,right] {\Vpi{1}};
+ \draw[->] (1,0) -- (1,-1) node[xshift=0cm,yshift=-0.2cm] {$h_{\substack{1}}(s)$};
+ 
+ \draw[->] (4.5,3.8) -- (11,1) node[midway,right] {\Vpi{n}};
+ \draw[->] (11,0) -- (11,-1) node[xshift=0cm,yshift=-0.2cm] {$h_{\substack{n}}(s)$};
+ 
+%draw each arrow
+\draw[->] (3,0) -- (3,-1) node[xshift=0cm,yshift=-0.2cm] {};
+\draw[->] (5,0) -- (5,-1) node[xshift=0cm,yshift=-0.2cm] {};
+\draw[->] (7,0) -- (7,-1) node[xshift=0cm,yshift=-0.2cm] {};
+\draw[->] (9,0) -- (9,-1) node[xshift=0cm,yshift=-0.2cm] {}; 
+
+ \draw[decorate,decoration={brace,amplitude=12pt,mirror},xshift=4pt,yshift=-1.5cm]
+(0,0) -- (12,0) node [black,midway,yshift=-0.7cm] 
+{\footnotesize $max$};
+\end{tikzpicture}
+
 
 Define the problem using examples
 
