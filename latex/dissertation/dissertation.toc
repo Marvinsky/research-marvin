@@ -2,6 +2,12 @@
 \contentsline {section}{\numberline {1}Introduction}{3}
 \contentsline {section}{\numberline {2}Background}{4}
 \contentsline {section}{\numberline {3}Heuristics}{5}
-\contentsline {subsection}{\numberline {3.1}Out of place}{5}
-\contentsline {subsection}{\numberline {3.2}Manhatham Distance}{6}
-\contentsline {section}{\numberline {4}Comparison of SS with IDA*}{7}
+\contentsline {subsection}{\numberline {3.1}Out of place (O.P)}{5}
+\contentsline {subsection}{\numberline {3.2}Manhatham Distance (M.D)}{6}
+\contentsline {section}{\numberline {4}Heuristic Generators}{6}
+\contentsline {subsection}{\numberline {4.1}Pattern Database (PDB)}{7}
+\contentsline {subsection}{\numberline {4.2}Neural Network}{7}
+\contentsline {subsection}{\numberline {4.3}Genetic Algorithm}{7}
+\contentsline {section}{\numberline {5}Take advantage of Heuristics}{7}
+\contentsline {section}{\numberline {6}Number of heuristics to create.}{7}
+\contentsline {section}{\numberline {7}Comparison of SS with IDA*}{9}

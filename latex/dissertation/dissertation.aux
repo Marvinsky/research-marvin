@@ -13,39 +13,47 @@
 \citation{backstrom1995complexity}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Background}{4}}
 \citation{hart1968formal}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The left frame is the initial distribution of tiles and the right frame is the goal distribution of tiles.}}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The left tile$-$puzzle is the initial distribution of tiles and the right tile$-$puzzle is the goal distribution of tiles. Each one represent a State.}}{5}}
 \newlabel{fig:8tilepuzzle_begin}{{1}{5}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Heuristics}{5}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Heuristic Search: \textit  {I}: Initial State, \textit  {s}: Some Sate, \textit  {G}: Goal State}}{5}}
 \newlabel{fig:searchSpace}{{2}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Out of place}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Out of place (O.P)}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Out of place heuristic}}{6}}
+\newlabel{fig:8tilepuzzle_oop}{{3}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Manhatham Distance (M.D)}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Manhatham distance heuristic}}{6}}
+\newlabel{fig:8tilepuzzle_md}{{4}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Heuristic Generators}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Pattern Database (PDB)}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Neural Network}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Genetic Algorithm}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Take advantage of Heuristics}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Number of heuristics to create.}{7}}
 \citation{krause2012submodular}
 \citation{holte2006maximizing}
 \citation{xu2014solving}
 \citation{krause2007near}
 \citation{backstrom1995complexity}
 \citation{krause2012submodular}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Out of place heuristic}}{6}}
-\newlabel{fig:8tilepuzzle_oop}{{3}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Manhatham Distance}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Manhatham distance heuristic}}{6}}
-\newlabel{fig:8tilepuzzle_md}{{4}{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Comparison of SS with IDA*}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces A level diagram with some transitions drawn in TikZ, resized, and placed in a figure environment.}}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Comparison of SS with IDA*}{9}}
 \bibdata{references}
 \bibcite{holte2006maximizing}{{1}{2006}{{Holte et~al.}}{{Holte, Felner, Newton, Meshulam, and Furcy}}}
 \bibcite{domshlak2010max}{{2}{2010}{{Domshlak et~al.}}{{Domshlak, Karpas, and Markovitch}}}
 \bibcite{tolpin2013towards}{{3}{2013}{{Tolpin et~al.}}{{Tolpin, Beja, Shimony, Felner, and Karpas}}}
-\bibcite{krause2012submodular}{{4}{2012}{{Krause and Golovin}}{{}}}
-\bibcite{xu2014solving}{{5}{2014}{{Xu et~al.}}{{Xu, Fang, Jiang, Conitzer, Dughmi, and Tambe}}}
-\bibcite{krause2007near}{{6}{2007}{{Krause and Guestrin}}{{}}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Experiment 1 - Comparison using hmax heuristic}}{8}}
-\newlabel{my-label}{{1}{8}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Experiment 1 - Comparison using hmax heuristic}}{9}}
-\newlabel{hmax_label}{{2}{9}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Poor prediction of SS against A* ipdb}}{9}}
-\newlabel{my-label}{{3}{9}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Poor prediction of SS against A* lmcut}}{10}}
-\newlabel{my-label}{{4}{10}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Poor prediction of SS against A* mands}}{10}}
-\newlabel{my-label}{{5}{10}}
-\bibcite{backstrom1995complexity}{{7}{1995}{{B{\"a}ckstr{\"o}m and Nebel}}{{}}}
+\bibcite{backstrom1995complexity}{{4}{1995}{{B{\"a}ckstr{\"o}m and Nebel}}{{}}}
+\bibcite{hart1968formal}{{5}{1968}{{Hart and Raphael}}{{}}}
+\bibcite{krause2012submodular}{{6}{2012}{{Krause and Golovin}}{{}}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Experiment 1 - Comparison using hmax heuristic}}{10}}
+\newlabel{my-label}{{1}{10}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Experiment 1 - Comparison using hmax heuristic}}{11}}
+\newlabel{hmax_label}{{2}{11}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Poor prediction of SS against A* ipdb}}{11}}
+\newlabel{my-label}{{3}{11}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Poor prediction of SS against A* lmcut}}{12}}
+\newlabel{my-label}{{4}{12}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Poor prediction of SS against A* mands}}{12}}
+\newlabel{my-label}{{5}{12}}
+\bibcite{xu2014solving}{{7}{2014}{{Xu et~al.}}{{Xu, Fang, Jiang, Conitzer, Dughmi, and Tambe}}}
+\bibcite{krause2007near}{{8}{2007}{{Krause and Guestrin}}{{}}}

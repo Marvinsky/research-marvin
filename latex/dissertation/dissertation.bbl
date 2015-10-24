@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -27,6 +27,18 @@ David Tolpin, Tal Beja, Solomon~Eyal Shimony, Ariel Felner, and Erez Karpas.
 \newblock In \emph{Proceedings of the Twenty-Third international joint
   conference on Artificial Intelligence}, pages 674--680. AAAI Press, 2013.
 
+\bibitem[B{\"a}ckstr{\"o}m and Nebel(1995)]{backstrom1995complexity}
+Christer B{\"a}ckstr{\"o}m and Bernhard Nebel.
+\newblock Complexity results for sas+ planning.
+\newblock \emph{Computational Intelligence}, 11\penalty0 (4):\penalty0
+  625--655, 1995.
+
+\bibitem[Hart and Raphael(1968)]{hart1968formal}
+N.~J.; Hart, P. E.;~Nilsson and B.~Raphael.
+\newblock A formal basis for the heuristic determination of minimum cost paths.
+\newblock \emph{IEEE Transactions on Systems Science and Cybernetics SSC},
+  4\penalty0 (2):\penalty0 100--107, 1968.
+
 \bibitem[Krause and Golovin(2012)]{krause2012submodular}
 Andreas Krause and Daniel Golovin.
 \newblock Submodular function maximization.
@@ -46,11 +58,5 @@ Haifeng Xu, Fei Fang, Albert~Xin Jiang, Vincent Conitzer, Shaddin Dughmi, and
 Andreas Krause and Carlos Guestrin.
 \newblock Near-optimal observation selection using submodular functions.
 \newblock \emph{AAAI}, 7:\penalty0 1650--1654, 2007.
-
-\bibitem[B{\"a}ckstr{\"o}m and Nebel(1995)]{backstrom1995complexity}
-Christer B{\"a}ckstr{\"o}m and Bernhard Nebel.
-\newblock Complexity results for sas+ planning.
-\newblock \emph{Computational Intelligence}, 11\penalty0 (4):\penalty0
-  625--655, 1995.
 
 \end{thebibliography}
