@@ -10,4 +10,13 @@
 \contentsline {subsection}{\numberline {4.3}Genetic Algorithm}{7}
 \contentsline {section}{\numberline {5}Take advantage of Heuristics}{7}
 \contentsline {section}{\numberline {6}Number of heuristics to create.}{7}
-\contentsline {section}{\numberline {7}Comparison of SS with IDA*}{9}
+\contentsline {section}{\numberline {7}Heuristic Subset}{8}
+\contentsline {section}{\numberline {8}Properties}{9}
+\contentsline {subsection}{\numberline {8.1}Monotonic Function}{9}
+\contentsline {subsection}{\numberline {8.2}Submodularity}{9}
+\contentsline {section}{\numberline {9}Greedy Heuristic Selection (GHS)}{9}
+\contentsline {section}{\numberline {10}Stratified Sampling (SS)}{9}
+\contentsline {subsection}{\numberline {10.1}Type System}{9}
+\contentsline {section}{\numberline {11}Experiments}{9}
+\contentsline {section}{\numberline {12}Conclusions}{9}
+\contentsline {section}{\numberline {13}Comparison of SS with IDA*}{10}
