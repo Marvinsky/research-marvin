@@ -265,6 +265,16 @@ State$-$space algorithms, such as A* \citep{hart1968formal}, are important in ma
 
 In the figure \ref{fig:searchSpace} the optimal distance from the Initial State $I$ to  the state $s$ is 4 and represented by $g(s)$. The $h\sp{*}(s)$ represent the optimal distance from $s$ to the Goal State $G$. And the $h(s)$ is the estimation distance from $s$ to $G$.
 
+A heuristic function $h(s)$ estimates the cost of a solution path from $s$ to a goal state. A heuristic is admissible if $h(s) \leq h\sp{*}(s)$ for all $s \in V$, where $h\sp{*}(s)$ is the optimal cost of $s$. A heuristic is consisten iff $h(s) \leq c(s,t) + h(t)$ for all states $s$ and $t$, where $c(s,t)$ is the cost of the cheapest path from $s$ to $t$. For example, the heuristic function provided by a pattern database (\texttt{PDB}) heuristic \citep{culberson1998pattern} is admissible and consistent.
+
+Given a set of admissible and consistent heuristics $\zeta = \{h_{1}, h_{2}, \dots, h_{M}\}$, the heuristic $h_{max}(s,\zeta) = $max$_{h \in \zeta} h(s)$ is also admissible and consistent. When describing our method we assume all heuristics to be consistent. We define $f_{max}(s, \zeta) = g(s) + h_{max}(s, \zeta)$, where $g(s)$ is the cost of the path expanded from $I$ to $s$. $g(s)$ is minimal when A$\sp{*}$ using a consistent heuristic expands $s$. We call an A$\sp{*}$ search tree the tree defined by the states expanded by A$\sp{*}$ using a consistent heuristic while solving a problem $\triangledown$.
+
+\section{Problem Formulation}
+When solving $\triangledown$ using the consistent heuristic function $h_{max}(\zeta\sp{'})$ for $\zeta\sp{'} \subseteq \zeta$, A$\sp{*}$ expands in the worst case $J(\zeta\sp{'}, \triangledown)$ nodes, where
+
+\begin{fo
+J(\zeta\sp{'},\triangledown) = |\{s \in V | f_{max}(s,\zeta\sp{'} \leq C\sp{*})\}|
+
 
 The heuristics can be obtained from each state of the problem. For example, for the problem of the 8$-$tile$-$puzzle figure \ref{fig:8tilepuzzle_begin} we can get two heuristics.
 
@@ -328,9 +338,12 @@ It's obtained by abstracting away certain problem variables, so that the remaini
 
 
 \section{Take advantage of Heuristics}
-The heuristics generators can create hundreds or even thousand of heuristics. In fact, exists different ways to take advantage of those heuristics. For example: If we want to use all the heuristics created by the heuristic generator that might be thousands of them, would not be a good idea to use all of them because the main problem involved would be the time to evaluate each heuristic in the search tree, it could take too much time.
+The heuristics generators can create hundreds or even thousand of heuristics. In fact, exists different ways to take advantage of those heuristics. For example: If we want to use all the heuristics created by the heuristic generator. It would not be a good idea to use all of them because the main problem involved would be the time to evaluate each heuristic in the search tree, it could take too much time.
 
-One way to take advantage of heuristics would be to take the maximum of the set of heuristics. For example, using three different of heuristics $h1, h2$ and max($h1, h2$). Heuristic $h1$ and $h2$ are based on domain abstractions.
+One way to take advantage of heuristics would be to take the maximum of the set of heuristics. For example, using three different heuristics $h1, h2$ and max($h1, h2$). Heuristic $h1$ and $h2$ are based on domain abstractions and the max($h1, h2$) is the maximum heuristic value of $h1$ and $h2$.
+
+Exists different approaches to take advantage from a large set of heuristics. In this dissertation we use the meta$-$reasoning based on the minimum evaluation time.
+
 
 \section{Number of heuristics to create.}
 
@@ -429,12 +442,8 @@ One way to take advantage of heuristics would be to take the maximum of the set 
 \end{tikzpicture}
 
 \section{Heuristic Subset}
-
-$|\zeta| = $ 1000 heuristics, N $=$ 100
-
-$${1000\choose 100} = 10\sp{138} possibilities$$
-
-\section{Properties}
+The heuristics generators systems can create many heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best N $=$ 100 heuristics. This would be: $${1000\choose 100} = 10\sp{138} possibilities$$
+So, try to select heuristics from a large set of heuristics are going to be treated as an optimization problem. In order to select a subset of heuristics, our objective function should guarantee two properties: Monotonicity and Submodularity.
 
 \subsection{Monotonic Function}
 
@@ -443,16 +452,128 @@ $${1000\choose 100} = 10\sp{138} possibilities$$
 
 \section{Greedy Heuristic Selection (GHS)}
 
-\section{Stratified Sampling (SS)}
+\section{Greedy Random Heuristic Selection (GRHS)}
 
+\section{Stratified Sampling (SS)}
 
 \subsection{Type System}
 
 \section{Experiments}
 
-\section{Conclusions}
+\section{A* vs SS}
+SS is not a good way to predict the size of the search tree generated by A*.
+
+\begin{table}[htb]
+\centering
+\caption{Poor prediction of SS against A* ipdb}
+\label{my-label}
+\begin{tabular}{l|l|l|l}
+\hline
+\multicolumn{4}{l}{Experiment 2: Using ipdb heuristic - 100 in gapdb\_deep} \\ \hline
+Domain& A*& ss error& n \\ \hline
+barman-opt11-strips& 1.87585e+07& 1.52611e+33& 3\\ \hline
+elevators-opt11-strips& 1.83142e+07& 3.26597e+24& 5\\ \hline
+floortile-opt11-strips& 1.40015e+07& 2.33484e+23& 4\\ \hline
+nomystery-opt11-strips& 40169.7& 7.05838e+69& 9\\ \hline
+parcprinter-opt11-strips& 1157& 2.35735e+20& 3\\ \hline
+scanalyzer-opt11-strips& 337894& 3.72861e+38& 3\\ \hline
+sokoban-opt11-strips& 861& 0.940081& 1\\ \hline
+transport-opt11-strips& 1.88894e+06& 2.44021e+37& 2\\ \hline
+visitall-opt11-strips& 8.12101e+06& 9.1764e+105& 8\\ \hline
+woodworking-opt11-strips& 4.81226e+06& 3.41276e+19& 2\\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htb]
+\centering
+\caption{Poor prediction of SS against A* ipdb}
+\label{my-label}
+\begin{tabular}{l|l|l|l}
+\hline
+\multicolumn{4}{l}{Experiment 2: Using ipdb heuristic - 500 in gapdb\_deep} \\ \hline
+Domain& A*& ss error& n \\ \hline
+barman-opt11-strips& 1.71877e+07& 8.67924e+31& 4\\ \hline
+floortile-opt11-strips& 1.40015e+07& 1.74275e+18& 4\\ \hline
+nomystery-opt11-strips& 40169.7& 6.70826e+32& 9\\ \hline
+openstacks-opt11-strips& 570099& 0.61884& 4\\ \hline
+parcprinter-opt11-strips& 1157& 2.56184e+22& 3\\ \hline
+pegsol-opt11-strips& 841693& 2901.39& 16\\ \hline
+scanalyzer-opt11-strips& 337894& 3.93571e+33& 3\\ \hline
+sokoban-opt11-strips& 376755& 1.04117e+07& 9\\ \hline
+transport-opt11-strips& 1.88894e+06& 2.91165e+38& 2\\ \hline
+visitall-opt11-strips& 253710& 1.68583e+46& 8\\ \hline
+woodworking-opt11-strips& 3.20817e+06& 2.52904e+18& 3\\ \hline
+\end{tabular}
+\end{table}
 
 
+\begin{table}[htb]
+\centering
+\caption{Poor prediction of SS against A* ipdb}
+\label{my-label}
+\begin{tabular}{l|l|l|l}
+\hline
+\multicolumn{4}{l}{Experiment 2: Using ipdb heuristic - 1000 in gapdb\_deep} \\ \hline
+Domain& A*& ss error& n \\ \hline
+barman-opt11-strips& 1.87585e+07& 1.5356e+32& 3\\ \hline
+elevators-opt11-strips& 1.57278e+07& 8.00914e+11& 2\\ \hline
+floortile-opt11-strips& 1.40015e+07& 3.74015e+14& 4\\ \hline
+nomystery-opt11-strips& 40169.7& 7.25303e+20& 9\\ \hline
+parcprinter-opt11-strips& 321& 756.894& 2\\ \hline
+scanalyzer-opt11-strips& 337894& 5.65686e+31& 3\\ \hline
+transport-opt11-strips& 106126& 9.73192e+44& 1\\ \hline
+visitall-opt11-strips& 8.12101e+06& 1.05133e+30& 8\\ \hline
+woodworking-opt11-strips& 4.81226e+06& 3.06138e+19& 2\\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[htb]
+\centering
+\caption{Poor prediction of SS against A* ipdb}
+\label{my-label}
+\begin{tabular}{l|l|l|l}
+\hline
+\multicolumn{4}{l}{Experiment 2: Using ipdb heuristic - 5000 in gapdb\_deep} \\ \hline
+Domain& A*& ss error& n \\ \hline
+floortile-opt11-strips& 1.86687e+07& 2.04189e+14& 3\\ \hline
+nomystery-opt11-strips& 31717.2& 1.81088e+14& 6\\ \hline
+parcprinter-opt11-strips& 321& 807.264& 2\\ \hline
+scanalyzer-opt11-strips& 122& 1759.04& 1\\ \hline
+visitall-opt11-strips& 279674& 1.25951e+15& 6\\ \hline
+\end{tabular}
+\end{table}
+
+\section{IDA* vs SS}
+
+\begin{table}[]
+\footnotesize\setlength{\tabcolsep}{1.8pt}
+\caption{Experiment 1 - Comparison using hmax heuristic}
+\label{hmax_label}
+\begin{tabular}{l@{\hspace{6pt}} *{13}{|r}}
+\hline
+\multicolumn{1}{c|}{} & \multicolumn{13}{c}{hmax}
+\\ \hline
+\multicolumn{1}{c|}{} &             &         & \multicolumn{5}{c|}{ss-error}                                                                  & \multicolumn{5}{c|}{time}                                                                                                           \\ \hline
+Domain        & IDA*         & time       & 1      & 10     & 100    & 1000    & 5000       & 1      & 10     & 100    & 1000   & 50000 & n \\ \hline 
+barman-opt11 & 8835990.00& 6016.38& 0.60& 0.45& 0.20& 0.07& 0.04& 0.06& 0.32& 3.21& 32.57& 214.59& 20\\ \hline
+elevators-opt11 & 1012570.00& 4987.57& 0.84& 0.42& 0.23& 0.13& 0.10& 1.40& 9.85& 96.37& 994.33& 4425.93& 20\\ \hline
+floortile-opt11 & 30522300.00& 3919.72& 2.02& 0.62& 0.40& 0.14& 0.11& 0.01& 0.07& 0.69& 6.93& 36.60& 2\\ \hline
+nomystery-opt11 & 6565740.00& 3256.86& 0.53& 0.26& 0.07& 0.03& 0.01& 0.07& 0.38& 3.63& 36.35& 181.03& 20\\ \hline
+openstacks-opt11 & 80108.50& 4017.19& 0.03& 0.03& 0.03& 0.03& 0.03& 94.79& 774.86& 1067.84& 10929.00& 11174.30& 20\\ \hline
+parcprinter-opt11 & 1.00& 0.00& 0.00& 0.00& 0.00& 0.00& 0.00& 0.01& 0.04& 0.35& 3.48& 17.29& 20\\ \hline
+parking-opt11 & 374925.00& 5607.50& 0.17& 0.04& 0.01& 0.00& 0.00& 1.79& 11.36& 114.28& 1196.83& 5835.03& 20\\ \hline
+pegsol-opt11 & 68763.70& 5.00& 0.17& 0.04& 0.02& 0.01& 0.00& 0.01& 0.04& 0.37& 3.69& 17.88& 20\\ \hline
+scanalyzer-opt11 & 8449890.00& 4920.58& 0.43& 0.25& 18.63& 0.02& 0.01& 3.13& 28.79& 273.74& 3033.06& 10254.00& 20\\ \hline
+sokoban-opt11 & 3118530.00& 3932.69& 0.41& 0.26& 0.11& 0.05& 0.04& 0.31& 2.00& 21.42& 222.47& 1056.61& 20\\ \hline
+tidybot-opt11 & 444473.00& 5632.08& 300.86& 1072.40& 5.88& 0.01& 0.01& 4.40& 26.48& 238.76& 2747.10& 11925.40& 20\\ \hline
+transport-opt11 & 2622880.00& 2253.51& 0.63& 0.54& 0.24& 0.15& 0.11& 0.09& 0.61& 5.89& 59.37& 290.31& 20\\ \hline
+visitall-opt11 & 71032400.00& 3704.78& 0.12& 0.04& 0.01& 0.00& 0.00& 0.00& 0.05& 0.56& 5.77& 28.07& 20\\ \hline
+woodworking-opt11 & 5139070.00& 4944.76& 1.28& 0.69& 0.27& 0.17& 0.07& 0.15& 1.33& 13.21& 130.82& 664.08& 20\\ \hline
+\end{tabular}
+\end{table}
+
+\section{Conclusions}[htb]
 Define the problem using examples
 
 

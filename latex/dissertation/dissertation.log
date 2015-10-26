@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  24 OCT 2015 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  26 OCT 2015 12:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1474,6 +1474,21 @@ LaTeX Warning: Label `my-label' multiply defined.
 
 LaTeX Warning: Label `my-label' multiply defined.
 
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `hmax_label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
 )
 \openout1 = `dissertation.aux'.
 
@@ -1607,34 +1622,34 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
 
 
 [1] (./dissertation.toc
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 5.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 6.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 5.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 6.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 5.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 6.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 5.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 6.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
 )
 \tf@toc=\write5
 \openout5 = `dissertation.toc'.
@@ -1653,62 +1668,89 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 252.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 252.
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-Missing character: There is no [ in font nullfont!
-Missing character: There is no ] in font nullfont!
+
+
+Package natbib Warning: Citation `culberson1998pattern' on page 5 undefined on 
+input line 268.
+
+
+Overfull \hbox (62.85352pt too wide) in paragraph at lines 270--271
+[]\OT1/ptm/m/n/10.95 Given a set of ad-mis-si-ble and con-sis-tent heuris-tics 
+$\OML/ztmcm/m/it/10.95 ^^P \OT1/ztmcm/m/n/10.95 = \OMS/ztmcm/m/n/10.95 f\OML/zt
+mcm/m/it/10.95 h[]; h[]; [] ; h[]\OMS/ztmcm/m/n/10.95 g$\OT1/ptm/m/n/10.95 , th
+e heuris-tic $\OML/ztmcm/m/it/10.95 h[]\OT1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10
+.95 s; ^^P\OT1/ztmcm/m/n/10.95 ) =$\OT1/ptm/m/n/10.95 max$[]\OML/ztmcm/m/it/10.
+95 h\OT1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10.95 s\OT1/ztmcm/m/n/10.95 )$
+ []
 
 [5]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 Missing character: There is no [ in font nullfont!
 Missing character: There is no ] in font nullfont!
- [6] [7]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+Missing character: There is no [ in font nullfont!
+Missing character: There is no ] in font nullfont!
+ [6] [7] [8]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 435.
+(amsmath)                 on input line 445.
 
-[8] [9]
+[9]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 496.
+               Default added (so using `tbp') on input line 549.
 
 
-Overfull \hbox (37.25203pt too wide) in paragraph at lines 500--528
+Overfull \hbox (32.563pt too wide) in paragraph at lines 553--574
+[][] 
+ []
+
+[10] [11] [12]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 617.
+
+
+Overfull \hbox (37.25203pt too wide) in paragraph at lines 621--649
 [][] 
  []
 
 
-LaTeX Warning: Reference `table1' on page 10 undefined on input line 531.
+LaTeX Warning: Reference `table1' on page 13 undefined on input line 652.
 
-[10]
+[13]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 535.
+               Default added (so using `tbp') on input line 656.
 
 
-Overfull \hbox (32.563pt too wide) in paragraph at lines 539--567
+Overfull \hbox (32.563pt too wide) in paragraph at lines 660--688
 [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 569.
+               Default added (so using `tbp') on input line 690.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 598.
+               Default added (so using `tbp') on input line 719.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 626.
+               Default added (so using `tbp') on input line 747.
 
-(./dissertation.bbl [11] [12] [13])
+(./dissertation.bbl [14] [15] [16])
+
+Package natbib Warning: There were undefined citations.
+
 \Changes@OutFile=\write6
 \openout6 = `dissertation.soc'.
 
- [14] (./dissertation.aux)
+[17] (./dissertation.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1717,10 +1759,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 23870 strings out of 493104
- 500139 string characters out of 6136932
- 646925 words of memory out of 5000000
- 26744 multiletter control sequences out of 15000+600000
+ 23871 strings out of 493104
+ 500161 string characters out of 6136932
+ 646926 words of memory out of 5000000
+ 26745 multiletter control sequences out of 15000+600000
  60702 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  82i,13n,121p,1817b,830s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1735,10 +1777,10 @@ r.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (15 pages, 174969 bytes).
+Output written on dissertation.pdf (18 pages, 185714 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

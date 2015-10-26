@@ -2,21 +2,24 @@
 \contentsline {section}{\numberline {1}Introduction}{3}
 \contentsline {section}{\numberline {2}Background}{4}
 \contentsline {section}{\numberline {3}Heuristics}{5}
-\contentsline {subsection}{\numberline {3.1}Out of place (O.P)}{5}
-\contentsline {subsection}{\numberline {3.2}Manhatham Distance (M.D)}{6}
-\contentsline {section}{\numberline {4}Heuristic Generators}{6}
-\contentsline {subsection}{\numberline {4.1}Pattern Database (PDB)}{7}
-\contentsline {subsection}{\numberline {4.2}Neural Network}{7}
-\contentsline {subsection}{\numberline {4.3}Genetic Algorithm}{7}
-\contentsline {section}{\numberline {5}Take advantage of Heuristics}{7}
-\contentsline {section}{\numberline {6}Number of heuristics to create.}{7}
-\contentsline {section}{\numberline {7}Heuristic Subset}{8}
-\contentsline {section}{\numberline {8}Properties}{9}
-\contentsline {subsection}{\numberline {8.1}Monotonic Function}{9}
-\contentsline {subsection}{\numberline {8.2}Submodularity}{9}
-\contentsline {section}{\numberline {9}Greedy Heuristic Selection (GHS)}{9}
-\contentsline {section}{\numberline {10}Stratified Sampling (SS)}{9}
-\contentsline {subsection}{\numberline {10.1}Type System}{9}
-\contentsline {section}{\numberline {11}Experiments}{9}
-\contentsline {section}{\numberline {12}Conclusions}{9}
-\contentsline {section}{\numberline {13}Comparison of SS with IDA*}{10}
+\contentsline {section}{\numberline {4}Problem Formulation}{6}
+\contentsline {subsection}{\numberline {4.1}Out of place (O.P)}{6}
+\contentsline {subsection}{\numberline {4.2}Manhatham Distance (M.D)}{6}
+\contentsline {section}{\numberline {5}Heuristic Generators}{7}
+\contentsline {subsection}{\numberline {5.1}Pattern Database (PDB)}{7}
+\contentsline {subsection}{\numberline {5.2}Neural Network}{7}
+\contentsline {subsection}{\numberline {5.3}Genetic Algorithm}{7}
+\contentsline {section}{\numberline {6}Take advantage of Heuristics}{7}
+\contentsline {section}{\numberline {7}Number of heuristics to create.}{8}
+\contentsline {section}{\numberline {8}Heuristic Subset}{9}
+\contentsline {subsection}{\numberline {8.1}Monotonic Function}{10}
+\contentsline {subsection}{\numberline {8.2}Submodularity}{10}
+\contentsline {section}{\numberline {9}Greedy Heuristic Selection (GHS)}{10}
+\contentsline {section}{\numberline {10}Greedy Random Heuristic Selection (GRHS)}{10}
+\contentsline {section}{\numberline {11}Stratified Sampling (SS)}{10}
+\contentsline {subsection}{\numberline {11.1}Type System}{10}
+\contentsline {section}{\numberline {12}Experiments}{10}
+\contentsline {section}{\numberline {13}A* vs SS}{10}
+\contentsline {section}{\numberline {14}IDA* vs SS}{10}
+\contentsline {section}{\numberline {15}Conclusions}{10}
+\contentsline {section}{\numberline {16}Comparison of SS with IDA*}{12}
