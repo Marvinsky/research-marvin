@@ -123,6 +123,10 @@
 \newcommand{\Ga}[1]{$\Gamma_{#1}$}
 \newcommand{\Vpi}[1]{$\varphi_{#1}$}
 
+%jump of line
+\newcommand{\blank}[2][100]{\hfil\penalty#1\hfilneg\rule[-3pt]{#2}{0.4pt}}
+
+
 \begin{document}
 \doublespacing
 
@@ -272,9 +276,26 @@ Given a set of admissible and consistent heuristics $\zeta = \{h_{1}, h_{2}, \do
 \section{Problem Formulation}
 When solving $\triangledown$ using the consistent heuristic function $h_{max}(\zeta\sp{'})$ for $\zeta\sp{'} \subseteq \zeta$, A$\sp{*}$ expands in the worst case $J(\zeta\sp{'}, \triangledown)$ nodes, where
 
-\begin{fo
+\begin{equation}
 J(\zeta\sp{'},\triangledown) = |\{s \in V | f_{max}(s,\zeta\sp{'} \leq C\sp{*})\}|
+\label{eq:eq_size_search_tree_1}
+\end{equation}
 
+\begin{equation}
+J(\zeta\sp{'},\triangledown) = |\{s \in V | h_{max}(s,\zeta\sp{'} \leq C\sp{*}) - g(s)\}|
+\label{eq:eq_size_search_tree_2}
+\end{equation}
+
+We present a greedy algorithm for approximately solving the following optimization problem,
+
+\begin{equation}
+\begin{split}
+\textbf{minimize}_{\zeta\sp{'} \in 2\sp{|\zeta|}}J(\zeta\sp{'}, \triangledown) \\
+\textbf{subject to} |\zeta\sp{'} = N|
+\end{split}
+\end{equation}
+
+Where $N$ could be determined by a hard constraint such as the maximum number of \texttt{PDBs} one can store in memory.
 
 The heuristics can be obtained from each state of the problem. For example, for the problem of the 8$-$tile$-$puzzle figure \ref{fig:8tilepuzzle_begin} we can get two heuristics.
 
@@ -451,6 +472,35 @@ So, try to select heuristics from a large set of heuristics are going to be trea
 \subsection{Submodularity}
 
 \section{Greedy Heuristic Selection (GHS)}
+Algorithm 1 presents Greedy Heuristic Selection (\texttt{GHS}), an approximation algorithm for selecting a subset $\zeta\sp{'} \leq \zeta$.
+
+The algorithm receives as input a planning problem $\triangledown$, a set of heuristics $\zeta$, a cardinality size $N$, and it returns a subset $\zeta\sp{'} \subseteq \zeta$ of size $N$. In each iteration \texttt{GHS} greedily selects from $\zeta$ the heuristic $h$ which will result in the largest reduction of the value of $J$ (line 3). \texttt{GHS} returns $\zeta\sp{'}$ once it has the desired cardinality size $N$.\\
+
+
+\begin{algorithm}[H]
+ 
+ \textbf{Input:} Problem $\triangledown$, set  of heuristics $\zeta$, cardinality $N$
+ 
+ \textbf{Ouput:} heuristic subset $\zeta\sp{'} \subseteq \zeta$ of size $N$
+ 
+ 1:  $\zeta\sp{'} \leftarrow \emptyset$
+ 
+ 2:  \While{$|\zeta\sp{'}| < N$ do} {
+ 
+ 3:  $h \leftarrow \texttt{argmin}_{h \in \zeta} J(\zeta\sp{'} \cup \{h\}, \triangledown) $
+ 
+ 4: $\zeta\sp{'} \leftarrow \zeta\sp{'} \cup \{h\}$
+ 
+ 5: return $\zeta\sp{'}$
+ }
+ \caption{Greedy Heuristic Selection}
+\end{algorithm}
+
+\subsection{GHS Approximation Analysis}
+In the following analysis all heuristic functions are assumed to be consistent. We also assume that A$\sp{*}$ expands all nodes $n$ with $f(n) \leq C\sp{*}$ while solving $\triangledown$, as shown in Equation \eqref{eq:eq_size_search_tree_1}.
+
+
+
 
 \section{Greedy Random Heuristic Selection (GRHS)}
 
