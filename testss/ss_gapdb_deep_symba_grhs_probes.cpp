@@ -425,7 +425,7 @@ void create_sh(string pasta, string dominio, string problema, int num_problema, 
 	//cout<<"outputSA="<<outputSA<<"\n";
 
 	if (run_entropy) {
-		outfile<<"./timeout -t 1800 ${FD_ROOT}/src/search/downward-release  --run_n_heuristics "<<NUM_HTC<<"  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=200), automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  >& ${RESULTS}/"<<problema.c_str()<<"\n\n";
+		outfile<<"./timeout -t 1800 ${FD_ROOT}/src/search/downward-release  --run_n_heuristics "<<NUM_HTC<<"  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([hmax(), automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	} else {
 		outfile<<"${FD_ROOT}/src/search/downward-release  --run_n_heuristics "<<NUM_HTC<<"  --global_probes "<<NUM_PROBES<<" --domain_name "<<pasta.c_str()<<" --domain_instance_pddl "<<dominio.c_str()<<"  --problem_name "<<problema.c_str()<<" --heuristic_name "<<heuristic<<" --search \"ss(min([lmcut(), ipdb(max_time=200), automate_GAs]))\" <  ${FD_SYMBA_HIBRIDS}/"<<outputSA<<"  > ${RESULTS}/"<<problema.c_str()<<"\n\n";
 	}
