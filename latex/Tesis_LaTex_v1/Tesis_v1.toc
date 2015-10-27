@@ -16,13 +16,24 @@
 \contentsline {section}{\numberline {1.7}Contribution of the Thesis}{4}
 \contentsline {section}{\numberline {1.8}Organization of the Thesis}{4}
 \contentsline {chapter}{\numberline {2}Literature Review}{5}
-\contentsline {section}{\numberline {2.1}---}{5}
-\contentsline {subsection}{\numberline {2.1.1}---}{5}
-\contentsline {chapter}{\numberline {3}Greedy Random Heuristic Selection (GRHS)}{6}
-\contentsline {section}{\numberline {3.1}--}{6}
-\contentsline {subsection}{\numberline {3.1.1}Overview}{6}
-\contentsline {chapter}{\numberline {4}Stratified Sampling (SS)}{7}
-\contentsline {chapter}{\numberline {5}Experiments}{8}
-\contentsline {chapter}{\numberline {6}Conclusion}{9}
-\contentsline {section}{\numberline {6.1}Summary of Contributions}{9}
-\contentsline {chapter}{References}{10}
+\contentsline {section}{\numberline {2.1}Heuristics}{6}
+\contentsline {section}{\numberline {2.2}Problem Formulation}{7}
+\contentsline {subsection}{\numberline {2.2.1}Out of place (O.P)}{8}
+\contentsline {subsection}{\numberline {2.2.2}Manhatham Distance (M.D)}{8}
+\contentsline {section}{\numberline {2.3}Heuristic Generators}{9}
+\contentsline {subsection}{\numberline {2.3.1}Pattern Database (PDB)}{9}
+\contentsline {subsection}{\numberline {2.3.2}Neural Network}{9}
+\contentsline {subsection}{\numberline {2.3.3}Genetic Algorithm}{9}
+\contentsline {section}{\numberline {2.4}Take advantage of Heuristics}{9}
+\contentsline {section}{\numberline {2.5}Number of heuristics to create.}{10}
+\contentsline {section}{\numberline {2.6}Heuristic Subset}{10}
+\contentsline {section}{\numberline {2.7}---}{11}
+\contentsline {subsection}{\numberline {2.7.1}---}{11}
+\contentsline {chapter}{\numberline {3}Greedy Random Heuristic Selection (GRHS)}{12}
+\contentsline {section}{\numberline {3.1}--}{12}
+\contentsline {subsection}{\numberline {3.1.1}Overview}{12}
+\contentsline {chapter}{\numberline {4}Stratified Sampling (SS)}{13}
+\contentsline {chapter}{\numberline {5}Experiments}{14}
+\contentsline {chapter}{\numberline {6}Conclusion}{15}
+\contentsline {section}{\numberline {6.1}Summary of Contributions}{15}
+\contentsline {chapter}{References}{16}

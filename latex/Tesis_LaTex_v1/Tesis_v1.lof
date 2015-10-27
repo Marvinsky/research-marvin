@@ -1,6 +1,13 @@
 \select@language {spanish}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The left tile$-$puzzle is the initial distribution of tiles and the right tile$-$puzzle is the goal distribution of tiles. Each one represent a State.\relax }}{6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Heuristic Search: \textit {I}: Initial State, \textit {s}: Some Sate, \textit {G}: Goal State\relax }}{6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Out of place heuristic\relax }}{8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Manhatham distance heuristic\relax }}{8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces One heuristic of size M\relax }}{10}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Two heuristics of size M/2\relax }}{10}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces N heuristics of size M/N\relax }}{10}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

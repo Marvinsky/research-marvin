@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  27 OCT 2015 13:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  27 OCT 2015 21:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -593,6 +593,13 @@ LaTeX Info: Redefining \% on input line 1.
 (./Tesis_v1.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
+
+Overfull \hbox (4.70764pt too wide) in paragraph at lines 4--4
+ [][] []\T1/cmr/m/n/12 The left tile$\OMS/cmsy/m/n/12 ^^@$\T1/cmr/m/n/12 puzzle
+ is the initial dis-tri-bu-tion of ti-les and the right tile$\OMS/cmsy/m/n/12 ^
+^@$\T1/cmr/m/n/12 puzzle 
+ []
+
 )
 \tf@lof=\write5
 \openout5 = `Tesis_v1.lof'.
@@ -661,7 +668,21 @@ less on input line 11.
 
 CHAPTER 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Package natbib Warning: Citation `backstrom1995complexity' on page 5 undefined 
+on input line 16.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
@@ -670,7 +691,106 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
 
 
-])
+] <images/image_initial_end.png, id=61, 474.77374pt x 175.65625pt>
+File: images/image_initial_end.png Graphic file (type png)
+
+<use images/image_initial_end.png>
+Package pdftex.def Info: images/image_initial_end.png used on input line 24.
+(pdftex.def)             Requested size: 213.64621pt x 79.04457pt.
+
+
+Package natbib Warning: Citation `hart1968formal' on page 6 undefined on input 
+line 33.
+
+<images/image_search_tree.png, id=62, 630.355pt x 118.4425pt>
+File: images/image_search_tree.png Graphic file (type png)
+
+<use images/image_search_tree.png>
+Package pdftex.def Info: images/image_search_tree.png used on input line 37.
+(pdftex.def)             Requested size: 283.65712pt x 53.29861pt.
+LaTeX Info: Redefining \. on input line 43.
+LaTeX Info: Redefining \% on input line 43.
+ [6 <./images/image_initial_end.png> <./images/image_search_tree.png>]
+
+Package natbib Warning: Citation `culberson1998pattern' on page 7 undefined on 
+input line 44.
+
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
+[7] <images/image_op.png, id=73, 477.785pt x 161.60374pt>
+File: images/image_op.png Graphic file (type png)
+
+<use images/image_op.png>
+Package pdftex.def Info: images/image_op.png used on input line 79.
+(pdftex.def)             Requested size: 215.00125pt x 72.72101pt.
+
+<images/image_md.png, id=74, 470.75874pt x 150.5625pt>
+File: images/image_md.png Graphic file (type png)
+
+<use images/image_md.png>
+Package pdftex.def Info: images/image_md.png used on input line 91.
+(pdftex.def)             Requested size: 211.83948pt x 67.75249pt.
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
+ [8 <./images/image_op.png> <./images/image_md.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+LaTeX Info: Redefining \. on input line 125.
+LaTeX Info: Redefining \% on input line 125.
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+<images/image_1_mem.png, id=81, 530.98375pt x 254.9525pt>
+File: images/image_1_mem.png Graphic file (type png)
+
+<use images/image_1_mem.png>
+Package pdftex.def Info: images/image_1_mem.png used on input line 134.
+(pdftex.def)             Requested size: 146.5009pt x 70.34361pt.
+
+<images/image_2_mem.png, id=82, 532.99126pt x 254.9525pt>
+File: images/image_2_mem.png Graphic file (type png)
+
+<use images/image_2_mem.png>
+Package pdftex.def Info: images/image_2_mem.png used on input line 138.
+(pdftex.def)             Requested size: 146.5009pt x 70.07518pt.
+
+<images/image_n_mem.png, id=83, 509.905pt x 280.04625pt>
+File: images/image_n_mem.png Graphic file (type png)
+
+<use images/image_n_mem.png>
+Package pdftex.def Info: images/image_n_mem.png used on input line 142.
+(pdftex.def)             Requested size: 146.5009pt x 80.45924pt.
+
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 150.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
+
+ []
+
+LaTeX Info: Redefining \. on input line 162.
+LaTeX Info: Redefining \% on input line 162.
+[10 <./images/image_1_mem.png> <./images/image_2_mem.png> <./images/image_n_mem
+.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+
+ []
+
+LaTeX Info: Redefining \. on input line 169.
+LaTeX Info: Redefining \% on input line 169.
+[11])
 \openout2 = `include/10.chapter03.aux'.
 
  (./include/10.chapter03.tex
@@ -698,7 +818,7 @@ File: lstlang3.sty 2014/03/04 1.5c listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
-) [6
+) [12
 
 
 
@@ -726,7 +846,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
  []
 
-[7
+[13
 
 
 
@@ -753,7 +873,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
-[8
+[14
 
 
 
@@ -775,7 +895,7 @@ Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 10.
 
 CHAPTER 6.
-[9
+[15
 
 
 
@@ -792,43 +912,55 @@ less on input line 6.
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 7.
 
-(./Tesis_v1.bbl)) [10
+(./Tesis_v1.bbl)) [16
 
 
 
 
-] (./Tesis_v1.aux (./include/1.front_page.aux)
+]
+
+Package natbib Warning: There were undefined citations.
+
+(./Tesis_v1.aux (./include/1.front_page.aux)
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
-
-(./include/4.dedication.aux) (./include/ack.aux) (./include/2.abstract.aux)
-(./include/5.toc.aux) (./include/6.tables.aux) (./include/7.figures.aux)
-(./include/8.chapter01.aux) (./include/9.chapter02.aux)
-(./include/10.chapter03.aux) (./include/11.chapter04.aux)
-(./include/12.chapter05.aux) (./include/13.chapter06.aux)
-(./includes/bibliografia.aux)) ) 
+ (./include/4.dedication.aux)
+(./include/ack.aux) (./include/2.abstract.aux) (./include/5.toc.aux)
+(./include/6.tables.aux) (./include/7.figures.aux) (./include/8.chapter01.aux)
+(./include/9.chapter02.aux) (./include/10.chapter03.aux)
+(./include/11.chapter04.aux) (./include/12.chapter05.aux)
+(./include/13.chapter06.aux) (./includes/bibliografia.aux)) ) 
 Here is how much of TeX's memory you used:
- 8877 strings out of 493104
- 126367 string characters out of 6136932
- 222839 words of memory out of 5000000
- 11808 multiletter control sequences out of 15000+600000
- 26451 words of font info for 70 fonts, out of 8000000 for 9000
+ 8952 strings out of 493104
+ 127878 string characters out of 6136932
+ 224359 words of memory out of 5000000
+ 11870 multiletter control sequences out of 15000+600000
+ 34012 words of font info for 84 fonts, out of 8000000 for 9000
  1379 hyphenation exceptions out of 8191
- 40i,12n,51p,1342b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-s
-uper-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fo
-nts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on Tesis_v1.pdf (18 pages, 193537 bytes).
+ 40i,17n,51p,1847b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfbi1000.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sftt1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc1200.pfb>
+Output written on Tesis_v1.pdf (24 pages, 348377 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 175 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
