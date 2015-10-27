@@ -1,0 +1,54 @@
+%Empieza configuracion de capitulo
+\setstretch{1.0}
+\titleformat{\chapter}[block]{\Large\bfseries}{AP'ENDICE \Huge\thechapter\vspace{25 pt}}{0 pt}{\\\fontsize{26}{36}\selectfont}
+\titlespacing{\chapter}{0 pt}{30 pt}{50 pt}[0 pt]
+\titleformat{\section}{\Large\bfseries}{\thesection}{0 pt}{\hspace{30 pt}}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{0 pt}{\hspace{30 pt}}
+\pagestyle{fancy}
+\fancyhead[LO,LE]{\footnotesize\emph{\leftmark}}
+\fancyhead[RO,RE]{\thepage}
+\fancyfoot[CO,CE]{}
+%Termina configuracion de capitulo
+
+\chapter{Consultas SQL} %Cambia al nombre de tu capitulo
+\setstretch{1.5} %Regresa el interlineado a 1.5
+
+\normalsize
+A continuaci'on se muestran alguna de las consultas implementadas a lo largo de esta investigaci'on. \\
+
+Datos para las pruebas de \emph{clustering}.\\
+
+\begin{lstlisting}
+-- Datos para clustering
+SELECT O.OBS_EPOCH_DATE, O.OBS_AVAILABLE_SATS,  O.OBS_GLONASS_SATS, O.OBS_GPS_SATS, O.OBS_SBAS_SATS, COUNT(L.LLI_L1)
+FROM OBSERVATION_DATA O FORCE INDEX FOR JOIN (IDX_EPOCH_DATE_OBS_DATA), LLI L FORCE INDEX FOR JOIN (IDX_EPOCH_DATE_LLI)
+WHERE O.OBS_EPOCH_DATE = L.LLI_EPOCH_DATE
+AND L.LLI_L1 > 0
+GROUP BY O.OBS_EPOCH_DATE
+UNION
+SELECT O.OBS_EPOCH_DATE, O.OBS_AVAILABLE_SATS,  O.OBS_GLONASS_SATS, O.OBS_GPS_SATS, O.OBS_SBAS_SATS, COUNT(L.LLI_L2)
+FROM OBSERVATION_DATA O FORCE INDEX FOR JOIN (IDX_EPOCH_DATE_OBS_DATA), LLI L FORCE INDEX FOR JOIN (IDX_EPOCH_DATE_LLI)
+WHERE O.OBS_EPOCH_DATE = L.LLI_EPOCH_DATE
+AND L.LLI_L2 > 0
+GROUP BY O.OBS_EPOCH_DATE;
+\end{lstlisting}
+
+Frecuencia \emph{Loss of lock} en L1 por mes. \\
+
+\begin{lstlisting}
+-- Frecuencia L1 por mes
+SELECT MONTH(O.OBS_EPOCH_DATE) AS EPOCH_DATE, COUNT(L.LLI_L1) FROM OBSERVATION_DATA O, LLI L
+WHERE O.OBS_EPOCH_DATE = L.LLI_EPOCH_DATE
+AND L.LLI_L1 > 0
+GROUP BY MONTH(O.OBS_EPOCH_DATE);
+\end{lstlisting}
+
+Frecuencia \emph{Loss of lock} en L2 por dia. \\
+
+\begin{lstlisting}
+-- Frecuencia L2 por dia
+SELECT DATE(O.OBS_EPOCH_DATE) AS EPOCH_DATE, COUNT(L.LLI_L2) FROM OBSERVATION_DATA O, LLI L
+WHERE O.OBS_EPOCH_DATE = L.LLI_EPOCH_DATE
+AND L.LLI_L2 > 0
+GROUP BY DATE(O.OBS_EPOCH_DATE);
+\end{lstlisting}

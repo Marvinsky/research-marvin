@@ -21,6 +21,6 @@
 \contentsline {subsection}{\numberline {11.1}Type System}{12}
 \contentsline {section}{\numberline {12}Experiments}{12}
 \contentsline {section}{\numberline {13}A* vs SS}{12}
-\contentsline {section}{\numberline {14}IDA* vs SS}{13}
-\contentsline {section}{\numberline {15}Conclusions}{13}
+\contentsline {section}{\numberline {14}IDA* vs SS}{12}
+\contentsline {section}{\numberline {15}Conclusions}{12}
 \contentsline {section}{\numberline {16}Comparison of SS with IDA*}{14}

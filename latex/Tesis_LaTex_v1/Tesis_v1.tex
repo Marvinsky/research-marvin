@@ -1,0 +1,84 @@
+% Template de LaTex para tesis del ITESM Campus Guadalajara
+% Basado en el template de Word de Ra'ul Crespo Saucedo
+% Basado en el sistema de guiones de Universidad Computense de Madrid
+% Adaptaci'on realizada por Arturo Jafet Rodr'iguez Mu'noz
+% Revision por Marco Antonio Rangel Bocardo
+% Maestr'ia en Ciencias Computacionales - ITESM Campus Guadalajara
+% Guadalajara, Jalisco Septiembre del 2011
+% Recomiendo esta gu'ia de LaTex: http://en.wikibooks.org/wiki/LaTeX/
+
+\documentclass[12pt,letterpaper]{report}
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{amsmath,amssymb}
+\usepackage{makecell}
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+
+
+
+\let\Chapter\chapter
+\def\chapter{\addtocontents{lol}{\protect\addvspace{10pt}}\Chapter}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=SQL,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+
+
+
+
+
+\include{includes/config}
+
+\begin{document}
+           \renewcommand{\figurename}{Figure}
+           \renewcommand{\tablename}{Table}
+           \renewcommand\appendixname{Appendix}
+
+	\include{include/1.front_page}
+
+	\pagenumbering{roman}
+	\include{include/4.dedication}
+	\include{include/ack}
+	\include{include/2.abstract}
+	\include{include/2.resumen}
+%	\include{include/3.acknowledgement}%
+
+	\include{include/5.toc}
+	\include{include/6.tables}
+	\include{include/7.figures}
+	\include{include/7.5.code}
+
+	\pagenumbering{arabic}
+	\include{include/8.chapter01}
+	\include{include/9.chapter02}
+	\include{include/10.chapter03}
+           \include{include/11.chapter04}
+           \include{include/12.chapter05}
+	\include{include/13.chapter06}
+
+	\include{includes/bibliografia}
+
+	\appendix
+	\include{include/14.AppendixA}
+	\include{include/vitae}
+\end{document}
+

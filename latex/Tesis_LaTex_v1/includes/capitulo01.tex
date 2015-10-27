@@ -1,0 +1,190 @@
+%Empieza configuracion de capitulo
+\setstretch{1.0}
+\titleformat{\chapter}[block]{\Large\bfseries}{CHAPTER \Huge\thechapter\vspace{25 pt}}{0 pt}{\\\fontsize{26}{36}\selectfont}
+\titlespacing{\chapter}{0 pt}{30 pt}{50 pt}[0 pt]
+\titleformat{\section}{\Large\bfseries}{\thesection}{0 pt}{\hspace{30 pt}}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{0 pt}{\hspace{30 pt}}
+\pagestyle{fancy}
+\fancyhead[LO,LE]{\footnotesize\textit{\leftmark}}
+\fancyhead[RO,RE]{\thepage}
+\fancyfoot[CO,CE]{}
+%Termina configuracion de capitulo
+
+\chapter{Introduction} %Cambia Introducci'on al nombre de tu capitulo
+\setstretch{1.5} %Regresa el interlineado a 1.5
+
+\normalsize
+
+\section{Antecedentes}
+\vspace{30 pt}
+\noindent
+Desde hace un par de a'nos el t'ermino de Big Data es utilizado para designar los grandes vol'umenes de datos, tanto estructurados como no estructurados, que se est'an generando en la Sociedad de la Informaci'on y el Conocimiento y que, por su tama'no y heterogeneidad, plantean grandes dificultades para ser procesados por el software y los sistemas de gesti'on de bases de datos tradicionales.\\
+
+En general, la informaci'on que circula por Internet como los textos, documentos,  fotograf'ias y v'ideos; los grafos sociales (\emph{social networks}); los contenidos sociales aportados por los usuarios (\emph{social data}); los datos de los dispositivos m'oviles, los datos de los diferentes tipos de sat'elites, los datos de las redes de sensores y los \emph{RFID} (identificaci'on por radiofrecuencia) \cite{brynjolfsson_big_2011}; los registros de las actividades de los sitios Web y  la indexaci'on de las b'usquedas en Internet; la informaci'on cient'ifica en temas como la astronom'ia, meteorolog'ia, gen'omica, bioqu'imica, biol'ogica y otros datos complejos de la investigaci'on cient'ifica interdisciplinaria; los registros m'edicos; la vigilancia militar y policial; los datos generados por las administraciones p'ublicas (\emph{open data}); los datos de las transacciones en los mercados financieros; o los datos de la actividad relacionada con el comercio electr'onico, entre otros. Son estos el conjunto o la combinaci'on de todos ellos los que aportan al universo del Big Data.\\
+
+Asimismo, el tratamiento de los grandes vol'umenes de datos y contenidos plantea nuevos retos tecnol'ogicos para procesarlos de forma eficiente en un tiempo razonable. Esto va a requerir avanzar en las tecnolog'ias para el procesamiento paralelo masivo de bases de datos (\emph{MPP}); en la computaci'on en la nube (\emph{cloud computing}); en los sistemas escalables de almacenamiento; y en otros campos relacionados con los sistemas de archivos y bases de datos distribuidas o en los sistemas de miner'ia de datos (\emph{data mining}). Sin olvidar otras cuestiones de gran calado que pueden afectar la privacidad de las personas como son los criterios 'eticos y la protecci'on de los datos personales en la explotaci'on y cruce de los datos de diferentes fuentes.\\
+
+Hay cinco formas generales en que el uso de grandes vol'umenes de datos puede crear valor. Primero, los grandes vol'umenes de datos dan un valor significativo al hacer que la informaci'on sea transparente y 'util en una frecuencia mucho mayor. En segundo lugar, como las organizaciones crean y almacenan m'as datos transaccionales en formato digital, pueden recoger informaci'on m'as precisa y detallada sobre el desempe'no de todo, desde los inventarios de productos hasta los d'ias de enfermedad, y por lo tanto exponer la variabilidad y mejorar el rendimiento. Las empresas l'ideres est'an utilizando la recolecci'on y an'alisis de datos para llevar a cabo experimentos controlados para tomar mejores decisiones de gesti'on. \\
+
+En tercer lugar, el Big Data permite encontrar una relaci'on m'as estrecha entre los clientes y los productos o servicios, lo que nos resulta, es una medida mucho m'as precisa. En cuarto lugar, los an'alisis sofisticados pueden mejorar sustancialmente la toma de decisiones. Por 'ultimo, el Big Data se puede usar para mejorar el desarrollo de la pr'oxima generaci'on de productos y servicios. Por ejemplo, los fabricantes est'an utilizando datos obtenidos de sensores integrados en los productos innovadores para crear ofertas de servicios de post-venta como mantenimiento preventivo (medidas preventivas que se llevan a cabo antes de que ocurra un fallo) \cite{manyika_big_2011}.\\
+
+En los 'ultimos a'nos, los inversionistas privados y las empresas de capital de riesgo han invertido cientos de millones de d'olares en nuevas empresas que desarrollan nuevas tecnolog'ias para recopilar, almacenar, organizar y analizar vol'umenes de datos estructurados y no estructurados a una escala de petabytes. Sin embargo, el Big Data es una potente herramienta para la experimentaci'on, el an'alisis y la toma de decisiones. Es una oportunidad para experimentar en tiempo real rompiendo con las barreras de los costes y el tiempo requerido en obtener los datos, porque 'estos est'an ah'i, de forma masiva, para su explotaci'on. Desde los comportamientos de los consumidores, tal como se ha se'nalado, hasta los temas reales que preocupan a los ciudadanos en diversos 'ambitos, o los comportamientos de todos los agentes que intervienen en los procesos de negocios.
+
+\section{Problem'atica}
+\noindent
+La recolecci'on de los datos no es el principal problema, el que hacer con estos vol'umenes de informaci'on es el reto de la industria. El reto fundamental de los grandes vol'umenes de datos de diferentes fuentes es el encontrar nuevas utilidades que antes no se hab'ian evidenciado. El desaf'io para las empresas es el desarrollo de m'etodos que permitan obtener el verdadero valor de esa mina de terabytes de datos.\\
+
+De manera un poco m'as espec'ifica se presentan todo tipo de problemas en las diferentes etapas o procesos que involucran al Big Data. Por ejemplo, en la etapa de extracci'on, el proceso de almacenamiento o el proceso de extracci'on en tiempo real de diferentes fuentes de informaci'on, presentan grandes retos al relacionar variables como la velocidad, el volumen y la variedad de los datos a extraer. Algo similar acontece con el pre-procesamiento de los datos, en donde la capacidad de hardware juega un papel de vital importancia, al poder ejecutar una ``limpieza'' de la informaci'on en el menor tiempo posible.\\
+
+Para el an'alisis y visualizaci'on de la informaci'on se hace necesario presentarla de la manera m'as f'acil y sencilla de entender por cualquier persona, y en este punto, es donde implica un reto al utilizar t'ecnicas y metodolog'ias que resuman y muestren la informaci'on de forma clara y precisa.
+
+Cuando se habla de problemas referentes al Big Data es importante mencionar que para que se pueda clasificar o catalogar como un problema de Big Data se deben cumplir con las siguientes cuatro dimensiones o caracter'isticas:
+
+\begin{itemize}
+\item\textbf{ Volumen:} Hoy en d'ia los datos son generados por computadoras, redes e interacciones humanas, como el \emph{social data}. Es el tama'no o escala de los datos expresado en cantidades de miles de Gigabytes, o en Terabytes, Pentabytes, Exabytes o en Zetabytes.
+
+\item \textbf{Velocidad:} Se refiere a la velocidad en que se generan los datos, por ejemplo 10 TB por hora. Tambi'en describe la velocidad con que se pueden analizar los datos. Para ser un poco m'as precisos es la informaci'on generada en Tiempo Real o \emph{Real Time}.
+
+\item \textbf{Variedad:} Desde datos estructurados hasta datos no estructurados, como por ejemplo, audio, video, texto, im'agenes, sensores, etc. Es la variedad de fuentes de datos que se encuentran ya sea interna como en una organizaci'on o externa, como internet o una combinaci'on de ambas.
+
+\item \textbf{Veracidad:} Esta dimensi'on es la m'as importante para obtener un resultado m'as preciso y confiable, dado que hace referencia a la fuente u origen de los datos, pues esta debe de ser una fuente real de informaci'on y no una fuente ficticia. 
+\end{itemize}
+
+\section{Entorno, delimitaci'on y definici'on del problema}
+\noindent
+La  delimitaci'on  del  tema  propuesto  para  la  presente  tesis  puede  quedar  resumida  al  siguiente objetivo:\\
+
+Implementar un m'etodo 'optimo de almacenamiento para el proceso de extracci'on de informaci'on del sistema de posicionamiento global Glonass en tiempo real, el cual permita posteriormente realizar un an'alisis de Big Data a partir de la informaci'on previamente almacenada.\\
+
+El prop'osito espec'ifico de la propuesta de tesis es proponer un m'etodo de almacenamiento que permita administrar de manera eficiente los recursos de hardware para realizar la extracci'on de informaci'on del sistema de posicionamiento Glonass en tiempo real. Este m'etodo contemplar'a el almacenamiento de los metadatos y de los datos de manera independiente.\\
+
+Una vez almacenada la informaci'on se realizar'a un an'alisis de Big Data a trav'es de t'ecnicas de miner'ia de datos que nos permitan extraer el conocimiento impl'icito que se encuentra en los datos. Para esto se extraer'a un volumen aproximado o igual a los 100 Gigabytes (GB).\\
+
+El an'alisis o aplicaci'on del estudio de los datos ser'a definido una vez que se cuente con la informaci'on almacenada, dado que \emph{a priori}, no se puede definir el segmento de mercado o nicho de investigaci'on. Esto se debe que al momento de la extracci'on en tiempo real se encuentran multitud de peticiones en los sat'elites y no se cuenta con una forma expl'icita de definir qu'e tipo de informaci'on se quiere descargar.
+
+\section{Objetivos}
+\subsection{Objetivo general}
+\noindent
+\begin{itemize}
+\item Extraer informaci'on (en volumen de Big Data) en tiempo real basado en el sistema de posicionamiento Glonass.
+\end{itemize}
+
+\subsection{Objetivos espec'ificos}
+\noindent
+\begin{itemize}
+\item Implementar un m'etodo para el almacenamiento de los datos.
+
+\item Identificar la estructura de datos extra'idos.
+
+\item Implementar un modelo de datos para los metadatos de la informaci'on extra'ida.
+
+\item Proponer una arquitectura apta para el almacenamiento de la informaci'on en tiempo real.
+
+\item Identificar una aplicaci'on de Big Data de los datos extra'idos.
+
+\item Utilizar t'ecnicas de miner'ia de datos para el an'alisis e identificaci'on de conocimiento de los datos extra'idos.
+
+\item Realizar un an'alisis de Big Data a partir de los datos obtenidos.
+\end{itemize}
+
+\section{Justificaci'on}
+\noindent
+Una de las principales tendencias hoy en d'ia es el Big Data. Al ser una tendencia nueva tanto en el campo empresarial como en el investigativo no se cuentan con muchos profesionales que conozcan a profundidad sobre el tema.\\
+
+Tambi'en es poco com'un que en Latinoam'erica se trabaje con los sistemas de posicionamiento global, y menos si este sistema no es tan conocido por los profesionales del 'area de tecnolog'ia, como lo es GLONASS, lo que propone un mayor grado de complejidad en la investigaci'on.\\
+
+Adem'as, es una oportunidad 'unica en la que se relacionan temas como infraestructura, hardware, bases de datos, extracci'on de datos en tiempo real, almacenamiento de la informaci'on, datos no estructurados, arquitectura de software, internet y soluciones de Cloud Computing.\\
+
+Este proyecto permite adquirir experiencia y desarrollar habilidades necesarias para llegar a convertirse en un ``cient'ifico de datos'', el cual ha sido catalogado como ``el trabajo m'as sexy del siglo XXI''\cite{ThomasH.Davenport2012}.\\
+
+En general, este proyecto abarca un desafio en el 'area inform'atica al reunir una gran cantidad de conceptos y tecnolog'ias, y da un avance m'as en la investigaci'on de aplicaciones y an'alisis de Big Data haciendo uso de los sistemas de posicionamiento global.
+
+\section{Hip'otesis}
+\noindent
+En esta secci'on se presentan las hip'otesis hechas en el presente trabajo de tesis.
+
+\begin{itemize}
+\item \textbf{H1:} La extracci'on y almacenamiento en tiempo real de grandes vol'umenes de informaci'on es posible mediante una aplicaci'on receptora y una estructura de directorios bien definida.
+
+\item \textbf{H2:} La estructura de los datos est'a basada en el formato RINEX.
+
+\item \textbf{H3:} Al menos tres usos significativos se le puede dar a los datos descargados.
+
+\item \textbf{H4:} El porcentaje de errores en los archivos descargados no ha de ser mayor al 2\%.
+
+\end{itemize}
+\section{Metodolog'ia}
+\noindent
+En la presente secci'on se explicar'an de forma detallada las distintas fases por las que ha ido avanzando esta investigaci'on, describiendo la metodolog'ia propuesta, basada en una combinaci'on de la investigaci'on cuantitativa  y el m'etodo para la gesti'on de proyectos inform'aticos, \emph{MERISE} \cite{Avison1991}, adaptada a las necesidades propias del proyecto. Adem'as se usar'a la metodolog'ia \emph{SCRUM} para el seguimiento y control durante todo el proceso de la elaboraci'on de la tesis.\\
+
+\emph{MERISE} es un m'etodo de concepci'on, de desarrollo y de realizaci'on de proyectos inform'aticos. La meta de este m'etodo es llegar a realizar un sistema de informaci'on. El m'etodo est'a basado en la separaci'on de los datos y de los procedimientos a efectuarse en m'as modelos conceptuales y f'isicos. La separaci'on de los datos y los procedimientos asegura una vida m'as larga del modelo.\\
+
+Las fases de la metodolog'ia son:
+\begin{itemize}
+\item Estudio preliminar (fase de planificaci'on).
+
+\item Estudio detallado (fase de an'alisis y dise'no de la soluci'on).
+
+\item Implementaci'on y puesta en marcha (fase de desarrollo y producci'on).
+\end{itemize}
+
+En cuanto a \emph{SCRUM} \cite{Ambler2008}, es un marco de trabajo para la gesti'on y desarrollo de software enfocado en un proceso iterativo e incremental utilizado com'unmente en entornos basados en el desarrollo 'agil de software.  \emph{SCRUM} es un modelo de referencia que determina un conjunto de pr'acticas y roles, y que puede tomarse como punto de partida para definir el proceso de desarrollo que se ejecutar'a durante un proyecto.
+
+\subsection{Estrategia de investigaci'on}
+\noindent
+El siguiente esquema muestra el proceso que se ha seguido y se seguir'a:
+
+\begin{itemize}
+\item Formulaci'on del problema. (Abordado en el cap'itulo 1).
+\begin{itemize}
+\item Introducci'on
+\item Antecedentes
+\item Problem'atica
+\item Definici'on de los objetivos
+\item Alcance y delimitaci'on
+\end{itemize}
+\item Fase exploratoria. (Abordado en el cap'itulo 2, Estado de la T'ecnica)
+\begin{itemize}
+\item Elaboraci'on del marco te'orico
+\begin{itemize}
+\item Revisi'on de la literatura
+\item Extracci'on y recopilaci'on de la informaci'on
+\end{itemize}
+\item Construcci'on y redacci'on del marco te'orico
+\end{itemize}
+\item Dise'no de la investigaci'on
+\begin{itemize}
+\item Estudio exploratorio
+\item Formulaci'on de la hip'otesis y detecci'on de variables
+\end{itemize}
+\item Recopilaci'on de datos mediante la metodolog'ia MERISE
+\begin{itemize}
+\item Estudio preliminar
+\begin{itemize}
+\item An'alisis de situaci'on actual
+\item Propuesta de soluci'on global
+\end{itemize}
+\item Estudio detallado
+\begin{itemize}
+\item Definici'on funcional de la situaci'on
+\end{itemize}
+\item Implementaci'on
+\begin{itemize}
+\item Distribuci'on de datos y tratamiento
+\item Codificaci'on y verificaci'on de los programas
+\end{itemize}
+\item Realizaci'on y puesta en marcha
+\begin{itemize}
+\item Implementaci'on de medios t'ecnicos
+\item Implementaci'on de medios organizativos
+\end{itemize}
+\end{itemize}
+\item Trabajo de gabinete
+\begin{itemize}
+\item Presentaci'on de los datos
+\item Estructura del informe
+\item Referencias y Bibliograf'ia
+\end{itemize}
+\end{itemize}
+
+\clearpage

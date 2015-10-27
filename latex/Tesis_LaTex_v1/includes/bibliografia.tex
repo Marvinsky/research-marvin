@@ -1,0 +1,16 @@
+%Empieza configuracion
+\setstretch{1.0}
+\titleformat{\chapter}{\Huge\bfseries}{\chapter}{0 pt}{\rule{340 pt}{3 pt}\\}
+\titlespacing{\chapter}{100 pt}{-25 pt}{40 pt}[10 pt]	
+\pagestyle{fancy}
+\fancyhead[RO,RE]{\thepage}
+\fancyfoot[CO,CE]{}
+%Termina configuracion
+\setstretch{1.5}
+
+\bibliographystyle{includes/IEEEtranBST/IEEEtran}
+\renewcommand\refname{References}
+\renewcommand\bibname{References}
+\bibliography{includes/tesis}
+
+\addcontentsline{toc}{chapter}{References}

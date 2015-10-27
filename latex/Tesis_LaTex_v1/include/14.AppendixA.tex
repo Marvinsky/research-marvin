@@ -1,0 +1,101 @@
+%Empieza configuracion de capitulo
+\setstretch{1.0}
+\titleformat{\chapter}[block]{\Large\bfseries}{APPENDIX \Huge\thechapter\vspace{25 pt}}{0 pt}{\\\fontsize{26}{36}\selectfont}
+\titlespacing{\chapter}{0 pt}{30 pt}{50 pt}[0 pt]
+\titleformat{\section}{\Large\bfseries}{\thesection}{0 pt}{\hspace{30 pt}}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{0 pt}{\hspace{30 pt}}
+\pagestyle{fancy}
+\fancyhead[LO,LE]{\footnotesize\emph{\leftmark}}
+\fancyhead[RO,RE]{\thepage}
+\fancyfoot[CO,CE]{}
+%Termina configuracion de capitulo
+
+\chapter{Promela Model Algorithms} %Cambia al nombre de tu capitulo
+
+\setstretch{1.5} %Regresa el interlineado a 1.5
+
+\normalsize
+Listing  \ref{lsl_prioritychecker_r} shows the Promela code for the PriorityChecker process.\\
+
+\singlespacing
+\begin{lstlisting}[caption=PriorityChecker Process - Promela Code,
+  label=lsl_prioritychecker_r]
+proctype PriorityChecker()
+{
+  // Pick two rules.
+  int x;
+  select (x : 0 .. (num_R-1)); 
+  int y;
+  select (y : 0 .. (num_R-1)); 
+  bool local_overquota=false;
+
+  if 
+  :: (x != y && !Rules[x].is_uninstalled) ->
+    atomic{
+      Rules[x].is_traffic_generated = true;
+      if
+      :: (
+         (Rules[x].conditions.location != Rules[y].conditions.location && Rules[y].conditions.location !=255) ||
+         (Rules[x].conditions.application != Rules[y].conditions.application && Rules[y].conditions.application !=255) ||
+         (Rules[x].conditions.application == Rules[y].conditions.application && Rules[x].conditions.sub_application != Rules[y].conditions.sub_application && Rules[y].conditions.sub_application!=255)
+         ) -> 
+           Rules[x].action.action_applied = (Rules[x].action.underquota);
+           (Rules[x].is_overquota == true)
+           local_overquota = true;               
+      :: (
+         (Rules[x].conditions.tod._active && Rules[y].conditions.tod._active) &&
+         !(Rules[x].conditions.tod.mon._active && Rules[y].conditions.tod.mon._active && (Rules[x].conditions.tod.mon.start_time<Rules[y].conditions.tod.mon.end_time && Rules[x].conditions.tod.mon.end_time>Rules[y].conditions.tod.mon.start_time)) &&
+         !(Rules[x].conditions.tod.tue._active && Rules[y].conditions.tod.tue._active && (Rules[x].conditions.tod.tue.start_time<Rules[y].conditions.tod.tue.end_time && Rules[x].conditions.tod.tue.end_time>Rules[y].conditions.tod.tue.start_time)) &&
+         !(Rules[x].conditions.tod.wed._active && Rules[y].conditions.tod.wed._active && (Rules[x].conditions.tod.wed.start_time<Rules[y].conditions.tod.wed.end_time && Rules[x].conditions.tod.wed.end_time>Rules[y].conditions.tod.wed.start_time)) &&
+         !(Rules[x].conditions.tod.thr._active && Rules[y].conditions.tod.thr._active && (Rules[x].conditions.tod.thr.start_time<Rules[y].conditions.tod.thr.end_time && Rules[x].conditions.tod.thr.end_time>Rules[y].conditions.tod.thr.start_time)) &&
+         !(Rules[x].conditions.tod.fri._active && Rules[y].conditions.tod.fri._active && (Rules[x].conditions.tod.fri.start_time<Rules[y].conditions.tod.fri.end_time && Rules[x].conditions.tod.fri.end_time>Rules[y].conditions.tod.fri.start_time)) &&
+         !(Rules[x].conditions.tod.sat._active && Rules[y].conditions.tod.sat._active && (Rules[x].conditions.tod.sat.start_time<Rules[y].conditions.tod.sat.end_time && Rules[x].conditions.tod.sat.end_time>Rules[y].conditions.tod.sat.start_time)) &&
+         !(Rules[x].conditions.tod.sun._active && Rules[y].conditions.tod.sun._active && (Rules[x].conditions.tod.sun.start_time<Rules[y].conditions.tod.sun.end_time && Rules[x].conditions.tod.sun.end_time>Rules[y].conditions.tod.sun.start_time))
+         ) -> 
+           Rules[x].action.action_applied = (Rules[x].action.underquota);
+           (Rules[x].is_overquota == true)
+           local_overquota = true; 
+       :: else ->
+          if
+          ::(Rules[x].p > Rules[y].p) ->
+               Rules[x].action.action_applied = (Rules[x].action.underquota);
+               (Rules[x].is_overquota == true)
+               local_overquota = true;
+          :: else -> 
+               Rules[x].action.action_applied=NO_ACTION;                              
+          fi
+       fi
+    }
+    if
+    :: local_overquota -->Rules[x].action.action_applied = (Rules[x].action.overquota);
+    :: else -> Rules[x].action.action_applied=NO_ACTION; 
+    fi          
+  :: else -> Rules[x].is_traffic_generated = false;
+  fi
+}
+\end{lstlisting}
+\doublespacing
+
+Listing  \ref{lsl_overquota_r} shows the Promela code for the OverQuota process.\\
+
+\singlespacing
+\begin{lstlisting}[caption=OverQuota Process - Promela Code,
+  label=lsl_overquota_r]
+proctype OverQuota()
+{
+  int count = 0;
+	do
+	:: (count < num_R) ->   
+       atomic {
+         Rules[count].is_overquota = true; 
+         if :: Rules[count].is_uninstallable -> Rules[count].is_uninstalled = true;
+            :: else -> skip;
+         fi
+         count++;
+	   }
+	:: else ->
+		break;
+	od
+}
+\end{lstlisting}
+\doublespacing

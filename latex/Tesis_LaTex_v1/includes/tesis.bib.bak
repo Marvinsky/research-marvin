@@ -1,0 +1,536 @@
+% This file was created with JabRef 2.9.2.
+% Encoding: Cp1252
+
+@INPROCEEDINGS{Cheng2008,
+  author = {Cheng, Haibin and Tan, Pang-Ning and Potter, Christopher and Klooster,
+	Steven A.},
+  title = {Data mining for visual exploration and detection of ecosystem disturbances.},
+  booktitle = {GIS},
+  year = {2008},
+  editor = {Aref, Walid G. and Mokbel, Mohamed F. and Schneider, Markus},
+  pages = {60},
+  publisher = {ACM},
+  added-at = {2009-03-20T00:00:00.000+0100},
+  biburl = {http://www.bibsonomy.org/bibtex/29562c13dc92816b37956eb20fd64c9f5/dblp},
+  crossref = {conf/gis/2008},
+  date = {2009-03-20},
+  description = {dblp},
+  ee = {http://doi.acm.org/10.1145/1463434.1463505},
+  interhash = {5365e1daf3538eec028556fd3587d8ed},
+  intrahash = {9562c13dc92816b37956eb20fd64c9f5},
+  isbn = {978-1-60558-323-5},
+  keywords = {dblp},
+  timestamp = {2009-03-20T00:00:00.000+0100},
+  url = {http://dblp.uni-trier.de/db/conf/gis/gis2008.html#ChengTPK08}
+}
+
+@INPROCEEDINGS{Erickson2009,
+  author = {Erickson, David and Daniel, Jamison and Allen, Melissa and Ganguly,
+	Auroop R. and Hoffman, Forrest M. and Pawson, Steven and Ott, Lesley
+	and Neilson, Eric},
+  title = {Data Mining Geophysical Content from Satellites and Global Climate
+	Models.},
+  booktitle = {ICDM Workshops},
+  year = {2009},
+  editor = {Saygin, Yücel and Yu, Jeffrey Xu and Kargupta, Hillol and 0010, Wei
+	Wang and Ranka, Sanjay and Yu, Philip S. and Wu, Xindong},
+  pages = {214-216},
+  publisher = {IEEE Computer Society},
+  added-at = {2011-05-26T00:00:00.000+0200},
+  biburl = {http://www.bibsonomy.org/bibtex/2606d6acf93e99c161f7d7da452af4ab1/dblp},
+  crossref = {conf/icdm/2009w},
+  ee = {http://doi.ieeecomputersociety.org/10.1109/ICDMW.2009.109},
+  interhash = {4d06be60ba1ae1cbc34f16ef4e13b873},
+  intrahash = {606d6acf93e99c161f7d7da452af4ab1},
+  isbn = {978-0-7695-3902-7},
+  keywords = {dblp},
+  timestamp = {2011-05-26T00:00:00.000+0200},
+  url = {http://dblp.uni-trier.de/db/conf/icdm/icdmw2009.html#EricksonDAGHPON09}
+}
+
+@INPROCEEDINGS{Guo2005,
+  author = {Guo, Yike and Liu, Jian Guo and Ghanem, Moustafa and Mish, Kyran
+	and Curcin, Vasa and Haselwimmer, Christian and Sotiriou, D. and
+	Muraleetharan, K. K. and Taylor, L.},
+  title = {Bridging the Macro and Micro: A Computing Intensive Earthquake Study
+	Using Discovery Net.},
+  booktitle = {SC},
+  year = {2005},
+  pages = {68},
+  publisher = {IEEE Computer Society},
+  added-at = {2007-10-24T00:00:00.000+0200},
+  biburl = {http://www.bibsonomy.org/bibtex/2bae780c24f08af227ab59537cec98376/dblp},
+  crossref = {conf/sc/2005},
+  date = {2007-10-24},
+  description = {dblp},
+  ee = {http://doi.acm.org/10.1145/1105760.1105833},
+  interhash = {17325bb9fc28c30873b12eac01a2b65c},
+  intrahash = {bae780c24f08af227ab59537cec98376},
+  keywords = {dblp},
+  timestamp = {2007-10-24T00:00:00.000+0200},
+  url = {http://dblp.uni-trier.de/db/conf/sc/sc2005.html#GuoLGMCHSMT05}
+}
+
+@INPROCEEDINGS{conf/sac/MottaLNRJO13,
+  author = {Motta, Robson and de Andrade Lopes, Alneu and Nogueira, Bruno M.
+	and Rezende, Solange Oliveira and Jorge, Alípio Mário and de Oliveira,
+	Maria Cristina Ferreira},
+  title = {Comparing relational and non-relational algorithms for clustering
+	propositional data.},
+  booktitle = {SAC},
+  year = {2013},
+  editor = {Shin, Sung Y. and Maldonado, José Carlos},
+  pages = {150-155},
+  publisher = {ACM},
+  added-at = {2013-05-04T00:00:00.000+0200},
+  biburl = {http://www.bibsonomy.org/bibtex/2e9e5a777f7c19cc6f8fa255eb58b8eb1/dblp},
+  crossref = {conf/sac/2013},
+  ee = {http://doi.acm.org/10.1145/2480362.2480393},
+  interhash = {76ef4885e161d74666b7cbe1ac4b489d},
+  intrahash = {e9e5a777f7c19cc6f8fa255eb58b8eb1},
+  isbn = {978-1-4503-1656-9},
+  keywords = {dblp},
+  timestamp = {2013-05-04T00:00:00.000+0200},
+  url = {http://dblp.uni-trier.de/db/conf/sac/sac2013.html#MottaLNRJO13}
+}
+
+@MISC{IBM_Clustering,
+  author = {Michael Abernethy},
+  title = {Data mining with WEKA, Part 2: Classification and clustering},
+  month = {May},
+  year = {2010},
+  note = {Consultado el 5 de septiembre de 2014},
+  url = {http://www.ibm.com/developerworks/library/os-weka2/}
+}
+
+@ARTICLE{Ambler2008,
+  author = {Ambler, Scott W},
+  title = {Scaling Scrum},
+  journal = {Dr. Dobb's Journal},
+  year = {2008},
+  volume = {5},
+  pages = {52-54},
+  month = {May}
+}
+
+@ARTICLE{Avison1991,
+  author = {Avison, D. E.},
+  title = {MERISE: A European methodology for developing information systems},
+  journal = {European Journal of Information Systems},
+  year = {1991},
+  volume = {1},
+  pages = {183–192},
+  url = {http://dx.doi.org/10.1057/ejis.1991.33}
+}
+
+@INPROCEEDINGS{azevedo_application_2007,
+  author = {Azevedo, Denise Nunes Rotandi},
+  title = {Application of Data Mining Techniques to the Storage Management and
+	Online Distribution of Satellite Images},
+  year = {2007},
+  pages = {955--960},
+  month = oct,
+  publisher = {{IEEE}},
+  doi = {10.1109/ISDA.2007.125},
+  file = {1_Application of Data Mining Techniques to the Storage Management and Online Distribution of Satellite Images.pdf:E:\MCC_MAESTRIA_CIENCIAS_COMPUTACION\ZOTERO_LIBRARY\storage\KCNEVGQF\1_Application of Data Mining Techniques to the Storage Management and Online Distribution of Satellite Images.pdf:application/pdf},
+  isbn = {0-7695-2976-3, 978-0-7695-2976-9},
+  url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4389731},
+  urldate = {2013-09-28}
+}
+
+@INPROCEEDINGS{azevedo_applying_2012,
+  author = {Azevedo, D. R. and Ambrosio, A. M. and Vieira, M.},
+  title = {Applying Data Mining for Detecting Anomalies in Satellites},
+  year = {2012},
+  pages = {212--217},
+  month = may,
+  publisher = {{IEEE}},
+  doi = {10.1109/EDCC.2012.19},
+  file = {2_Applying Data Mining for Detecting Anomalies in Satellites.pdf:E:\MCC_MAESTRIA_CIENCIAS_COMPUTACION\ZOTERO_LIBRARY\storage\9DGPVE4C\2_Applying Data Mining for Detecting Anomalies in Satellites.pdf:application/pdf},
+  isbn = {978-1-4673-0938-7, 978-0-7695-4671-1},
+  url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6214776},
+  urldate = {2013-09-28}
+}
+
+@ARTICLE{brynjolfsson_big_2011,
+  author = {{BRYNJOLFSSON}, {ERIK} and {MCAFEE}, {ANDREW}},
+  title = {The Big Data Boom Is the Innovation Story of Our Time},
+  journal = {McKinsey \& Company},
+  year = {2011},
+  month = nov,
+  annote = {Antecedentes},
+  language = {English},
+  url = {http://www.theatlantic.com/business/archive/2011/11/the-big-data-boom-is-the-innovation-story-of-our-time/248215/}
+}
+
+@ARTICLE{2009JGeod..83..191D,
+  author = {{Dow}, J.~M. and {Neilan}, R.~E. and {Rizos}, C.},
+  title = {{The International GNSS Service in a changing landscape of Global
+	Navigation Satellite Systems}},
+  journal = {Journal of Geodesy},
+  year = {2009},
+  volume = {83},
+  pages = {191-198},
+  month = mar,
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+  adsurl = {http://adsabs.harvard.edu/abs/2009JGeod..83..191D},
+  doi = {10.1007/s00190-008-0300-3}
+}
+
+@BOOK{Dvorak_1984,
+  title = {Tropical cyclone intensity analysis using satellite data [microform]
+	/ Vernon F. Dvorak},
+  publisher = { U.S. Dept. of Commerce, National Oceanic and Atmospheric Administration,
+	National Environmental Satellite, Data, and Information Service Washington,
+	D.C },
+  year = { 1984 },
+  author = { Dvorak, Vernon F. and United States. },
+  pages = { v, 47 p. : },
+  catalogue-url = { http://nla.gov.au/nla.cat-vn3876267 },
+  language = { English },
+  life-dates = { 1984 - },
+  subjects = { Cyclones.; Cyclone forecasting - United States },
+  type = { Book, Microform }
+}
+
+@MISC{GNU_License,
+  author = {Free Software Foundation},
+  title = {GNU Lesser General Public License, Version 3},
+  month = {June},
+  year = {2007},
+  url = {https://www.gnu.org/licenses/lgpl.html}
+}
+
+@MISC{Apache_DBCP_Doc,
+  author = {The Apache Software Foundation},
+  title = {Apache Commons DBCP Configuration},
+  url = {http://commons.apache.org/proper/commons-dbcp/configuration.html}
+}
+
+@MISC{Apache_License,
+  author = {The Apache Software Foundation},
+  title = {Apache License, Version 2.0},
+  month = {January},
+  year = {2004},
+  url = {http://www.apache.org/licenses/LICENSE-2.0}
+}
+
+@ARTICLE{G.Weber2003,
+  author = {G. Weber, D. Dettmering, H. Gebhard},
+  title = {Networked Transport of RTCM via Internet Protocol (NTRIP)},
+  journal = {Federal Agency for Cartography and Geodesy},
+  year = {2003}
+}
+
+@ARTICLE{gibson00clustering,
+  author = {Gibson, David and Kleinberg, Jon M. and Raghavan, Prabhakar},
+  title = {Clustering Categorical Data: An Approach Based on Dynamical Systems},
+  journal = {VLDB Journal: Very Large Data Bases},
+  year = {2000},
+  volume = {8},
+  pages = {222--236},
+  number = {3--4},
+  added-at = {2006-07-07T13:39:09.000+0200},
+  biburl = {http://www.bibsonomy.org/bibtex/25205d8f52b2a8f22b63dd40bdd99746a/hotho},
+  description = {Clustering Categorical Data: An Approach Based on Dynamical Systems
+	- Gibson, Kleinberg, Raghavan (ResearchIndex)},
+  interhash = {8a2ea9a413538069328404c0bfe9c656},
+  intrahash = {5205d8f52b2a8f22b63dd40bdd99746a},
+  keywords = {clustering hypergraph folkrank toread},
+  timestamp = {2006-07-07T13:39:09.000+0200},
+  url = {http://citeseer.ist.psu.edu/cache/papers/cs/157/http:zSzzSzcs.cornell.eduzSzInfozSzPeoplezSzkleinberzSzvldb98.pdf/gibson98clustering.pdf}
+}
+
+@MISC{Gogps_software,
+  author = {goGPS project},
+  title = {goGPS project - open source positioning software},
+  keywords = {Open source, GPS, GNSS, software},
+  url = {http://www.gogps-project.org/}
+}
+
+@ARTICLE{Hall_2009_WDM,
+  author = {Hall, Mark and Frank, Eibe and Holmes, Geoffrey and Pfahringer, Bernhard
+	and Reutemann, Peter and Witten, Ian H.},
+  title = {The WEKA Data Mining Software: An Update},
+  journal = {SIGKDD Explor. Newsl.},
+  year = {2009},
+  volume = {11},
+  pages = {10--18},
+  number = {1},
+  month = nov,
+  acmid = {1656278},
+  address = {New York, NY, USA},
+  doi = {10.1145/1656274.1656278},
+  issn = {1931-0145},
+  issue_date = {June 2009},
+  numpages = {9},
+  publisher = {ACM},
+  url = {http://doi.acm.org/10.1145/1656274.1656278}
+}
+
+@INPROCEEDINGS{ho_automated_2008,
+  author = {Ho, Shen-Shyang and Talukder, Ashit},
+  title = {Automated cyclone discovery and tracking using knowledge sharing
+	in multiple heterogeneous satellite data},
+  booktitle = {Proceedings of the 14th {ACM} {SIGKDD} international conference on
+	Knowledge discovery and data mining},
+  year = {2008},
+  pages = {928-936},
+  file = {3_Automated Cyclone Discovery and Tracking using Knowledge Sharing in Multiple Heterogeneous Satellite Data.pdf:E:\MCC_MAESTRIA_CIENCIAS_COMPUTACION\ZOTERO_LIBRARY\storage\KDGX6MJU\3_Automated Cyclone Discovery and Tracking using Knowledge Sharing in Multiple Heterogeneous Satellite Data.pdf:application/pdf},
+  url = {http://dl.acm.org/citation.cfm?id=1402001},
+  urldate = {2013-09-28}
+}
+
+@BOOK{hofmann-wellenhof_gnss--global_2008,
+  title = {{GNSS--global} navigation satellite systems {GPS}, {GLONASS}, Galileo,
+	and more},
+  publisher = {Springer},
+  year = {2008},
+  author = {Hofmann-Wellenhof, B and Lichtenegger, Herbert and Wasle, Elmar},
+  address = {Wien; New York},
+  file = {0_ebook_GNSS_Hoffman_Springer_978-3211-730171.pdf:E:\MCC_MAESTRIA_CIENCIAS_COMPUTACION\ZOTERO_LIBRARY\storage\9Q25RWHD\0_ebook_GNSS_Hoffman_Springer_978-3211-730171.pdf:application/pdf},
+  isbn = {9783211730171 3211730176},
+  language = {English},
+  url = {http://dx.doi.org/10.1007/978-3-211-73017-1},
+  urldate = {2013-11-13}
+}
+
+@INPROCEEDINGS{Korting2008,
+  author = {Korting, T. S. and Fonseca, L. M. G. and Escada, M. I. S. and da
+	Silva, F. C. and Dos},
+  title = {GeoDMA - A Novel System for Spatial Data Mining},
+  booktitle = {Data Mining Workshops, 2008. ICDMW '08. IEEE International Conference
+	on},
+  year = {2008},
+  pages = {975--978},
+  abstract = {Although a huge amount of remote sensing data has been provided by
+	Earth observation satellites, few data manipulation techniques and
+	information extraction in large data sets have been developed. In
+	this context, the present paper aims to show a new system for spatial
+	data mining, and two test cases applied to land use change in the
+	Brazilian Amazon region. We present the operational environment named
+	GeoDMA, developed to implement such approach.},
+  added-at = {2009-05-16T04:48:03.000+0200},
+  biburl = {http://www.bibsonomy.org/bibtex/2525376cedfbe9a2da5ecd29fa5c0afdf/skosta},
+  citeulike-article-id = {4521175},
+  description = {CiteULike: My library [124 articles]},
+  doi = {10.1109/ICDMW.2008.22},
+  interhash = {39d24358fff066b1ebd6e3ba57aa0301},
+  intrahash = {525376cedfbe9a2da5ecd29fa5c0afdf},
+  journal = {Data Mining Workshops, 2008. ICDMW '08. IEEE International Conference
+	on},
+  keywords = {data\_mining, land\_change, landscape\_pattern},
+  posted-at = {2009-05-14 22:55:37},
+  priority = {2},
+  timestamp = {2009-05-16T04:48:03.000+0200},
+  url = {http://dx.doi.org/10.1109/ICDMW.2008.22}
+}
+
+@ARTICLE{Kumar2014,
+  author = {Pankaj Kumar},
+  title = {JDBC Batch Processing Example Tutorial with Insert Statements},
+  journal = {JournalDev},
+  year = {2014},
+  month = {January},
+  url = {http://www.journaldev.com/2494/jdbc-batch-processing-example-tutorial-with-insert-statements}
+}
+
+@CONFERENCE{Lenz2004,
+  author = {Elmar Lenz},
+  title = {Networked Transport of RTCM via Internet Protocol (NTRIP) – Application
+	and Benefit in Modern Surveying Systems},
+  booktitle = {Standards, Quality Assurance and Calibration},
+  year = {2004}
+}
+
+@INPROCEEDINGS{Li:2007:SRC:1247480.1247496,
+  author = {Li, Chengkai and Wang, Min and Lim, Lipyeow and Wang, Haixun and
+	Chang, Kevin Chen-Chuan},
+  title = {Supporting Ranking and Clustering As Generalized Order-by and Group-by},
+  booktitle = {Proceedings of the 2007 ACM SIGMOD International Conference on Management
+	of Data},
+  year = {2007},
+  series = {SIGMOD '07},
+  pages = {127--138},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  acmid = {1247496},
+  doi = {10.1145/1247480.1247496},
+  isbn = {978-1-59593-686-8},
+  keywords = {clustering, data exploration, grouping, query processing, ranking,
+	retrieval, top-k},
+  location = {Beijing, China},
+  numpages = {12},
+  url = {http://doi.acm.org/10.1145/1247480.1247496}
+}
+
+@INPROCEEDINGS{li_application_2009,
+  author = {Li, Ying and Wang, Yongbin and Yan, Jian and Qi, Yingjian},
+  title = {The Application of Data Mining in Satellite {TV} Broadcasting Monitoring},
+  year = {2009},
+  pages = {357--359},
+  month = apr,
+  publisher = {{IEEE}},
+  doi = {10.1109/CSO.2009.261},
+  file = {5_The Application of Data Mining in Satellite TV Broadcasting Monitoring.pdf:E:\MCC_MAESTRIA_CIENCIAS_COMPUTACION\ZOTERO_LIBRARY\storage\HH56PJIT\5_The Application of Data Mining in Satellite TV Broadcasting Monitoring.pdf:application/pdf},
+  isbn = {978-0-7695-3605-7},
+  url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5193970},
+  urldate = {2013-09-28}
+}
+
+@ARTICLE{manyika_big_2011,
+  author = {Manyika, James and Chui, Michael and Brown, Brad and Bughin, Jacques
+	and Dobbs, Richard and Roxburgh, Charles and Hung Byers, Angela},
+  title = {Big data: The next frontier for innovation, competition, and productivity},
+  journal = {The Atlantic},
+  year = {2011},
+  month = may,
+  annote = {Antecedentes},
+  language = {English},
+  url = {http://www.mckinsey.com/insights/business_technology/big_data_the_next_frontier_for_innovation/}
+}
+
+@MISC{edicion_microsoft_tendencias_2013,
+  author = {EdiciÃ³n Microsoft},
+  title = {Tendencias Big Data en empresas globales 2013},
+  month = feb,
+  year = {2013},
+  note = {Consultado el 25 de octubre de 2013},
+  journal = {{TechNet}},
+  language = {EspaÃ±ol},
+  type = {Blog oficial},
+  url = {http://blogs.technet.com/b/microsoftlatam/archive/2013/02/15/infograf-205-a-tendencias-big-data-en-empresas-globales-2013.aspx}
+}
+
+@MISC{java_doc,
+  author = {Oracle},
+  title = {Java Documentation},
+  note = {Consultado el 3 de julio de 2014},
+  url = {http://docs.oracle.com/javase/7/docs/api/}
+}
+
+@MISC{MYSQL_JDBC_DOC,
+  author = {Oracle},
+  title = {MySQL Connector/J Developer Guide},
+  note = {Consultado el 31 de julio de 2014},
+  url = {http://dev.mysql.com/doc/connector-j/en/}
+}
+
+@MISC{Jeff_Rick_Bulk_Insert_MySql,
+  author = {Jeff Rick},
+  title = {Bulk insert into a MySql Database},
+  month = {March},
+  year = {2010},
+  note = {Consultado el 5 de Agosto de 2014},
+  url = {http://jeffrick.com/2010/03/23/bulk-insert-into-a-mysql-database/}
+}
+
+@INPROCEEDINGS{self_use_2000,
+  author = {Self, Lance},
+  title = {Use of Data Mining on Satellite Data Bases for Knowledge Extraction.},
+  booktitle = {{FLAIRS} Conference},
+  year = {2000},
+  pages = {149-152},
+  file = {6_Use of Data Mining on Satellite Data Bases for Knowledge Extraction.pdf:E:\MCC_MAESTRIA_CIENCIAS_COMPUTACION\ZOTERO_LIBRARY\storage\7F9NKBRJ\6_Use of Data Mining on Satellite Data Bases for Knowledge Extraction.pdf:application/pdf},
+  url = {http://www.aaai.org/Papers/FLAIRS/2000/FLAIRS00-029.pdf},
+  urldate = {2013-09-28}
+}
+
+@ARTICLE{Sinclair1997,
+  author = {Sinclair, Mark R.},
+  title = {{Objective Identification of Cyclones and Their Circulation Intensity,
+	and Climatology}},
+  journal = {Wea. Forecasting},
+  year = {1997},
+  volume = {12},
+  pages = {595--612},
+  number = {3},
+  month = sep,
+  booktitle = {Weather and Forecasting},
+  day = {1},
+  keywords = {atmospheric-feature-detection, extratropical-cyclones, feature-detection-tracking},
+  posted-at = {2012-07-19 12:39:09},
+  publisher = {American Meteorological Society}
+}
+
+@INPROCEEDINGS{Son:1998:SDM:288692.288720,
+  author = {Son, Eun-Jeong and Kang, In-Soo and Kim, Tae-Wan and Li, Ki-Joune},
+  title = {A Spatial Data Mining Method by Clustering Analysis},
+  booktitle = {Proceedings of the 6th ACM International Symposium on Advances in
+	Geographic Information Systems},
+  year = {1998},
+  series = {GIS '98},
+  pages = {157--158},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  acmid = {288720},
+  doi = {10.1145/288692.288720},
+  isbn = {1-58113-115-1},
+  keywords = {cluster, clustering, relevance analysis, spatial data mining},
+  location = {Washington, D.C., USA},
+  numpages = {2},
+  url = {http://doi.acm.org/10.1145/288692.288720}
+}
+
+@MISC{Java_Persistence_Performance,
+  author = {James Sutherland},
+  title = {Batch Writing, and Dynamic vs Parametrized SQL, how well does your
+	database perform?},
+  month = {May},
+  year = {2013},
+  note = {Consultado el 5 de agosto de 2014},
+  url = {http://java-persistence-performance.blogspot.mx/2013/05/batch-writing-and-dynamic-vs.html}
+}
+
+@INPROCEEDINGS{tay_spatial_2003,
+  author = {Tay, Seng Chuan and Hsu, Wynne and Lim, Kim Hwa and Yap, Lee Chen},
+  title = {Spatial data mining: Clustering of hot spots and pattern recognition},
+  booktitle = {Geoscience and Remote Sensing Symposium, 2003. {IGARSS'03.} Proceedings.
+	2003 {IEEE} International},
+  year = {2003},
+  volume = {6},
+  pages = {3685â€“3687},
+  file = {10_Spatial Data Mining Clustering of Hot Spots and Pattern Recognition.pdf:E:\MCC_MAESTRIA_CIENCIAS_COMPUTACION\ZOTERO_LIBRARY\storage\4GZVJWRC\10_Spatial Data Mining Clustering of Hot Spots and Pattern Recognition.pdf:application/pdf},
+  shorttitle = {Spatial data mining},
+  url = {http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1295237}
+}
+
+@ARTICLE{ThomasH.Davenport2012,
+  author = {Thomas H. Davenport, D. J. Patil},
+  title = {Data Scientist: The Sexiest Job Of the 21st Century.},
+  journal = {Harvard Business Review},
+  year = {2012},
+  volume = {90},
+  pages = {70-76}
+}
+
+@ARTICLE{Yang2006,
+  author = {Yang, Yu-Bin and 0002, Hui Lin and Jiang, Jixi},
+  title = {Cloud Analysis by Modeling the Integration of Heterogeneous Satellite
+	Data and Imaging.},
+  journal = {IEEE Transactions on Systems, Man, and Cybernetics, Part A},
+  year = {2006},
+  volume = {36},
+  pages = {162-172},
+  number = {1},
+  added-at = {2009-06-05T00:00:00.000+0200},
+  biburl = {http://www.bibsonomy.org/bibtex/27fc73835de807756767d7b4588d676e4/dblp},
+  date = {2009-06-05},
+  description = {dblp},
+  ee = {http://doi.ieeecomputersociety.org/10.1109/TSMCA.2005.859182},
+  interhash = {eaf968678b39bfa43dac302cef610bbd},
+  intrahash = {7fc73835de807756767d7b4588d676e4},
+  keywords = {dblp},
+  timestamp = {2009-06-05T00:00:00.000+0200},
+  url = {http://dblp.uni-trier.de/db/journals/tsmc/tsmca36.html#YangLJ06}
+}
+
+@MANUAL{BKG_Manual,
+  title = {BKG Ntrip Client (BNC)},
+  organization = {FEDERAL AGENCY FOR CARTOGRAPHY AND GEODESY},
+  address = {FRANKFURT, ALEMANIA},
+  edition = {Version 2.10},
+  month = {Diciembre},
+  year = {2013}
+}
+

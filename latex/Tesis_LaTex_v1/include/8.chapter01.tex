@@ -1,0 +1,120 @@
+%Empieza configuracion de capitulo
+\setstretch{1.0}
+\titleformat{\chapter}[block]{\Large\bfseries}{CHAPTER \Huge\thechapter\vspace{25 pt}}{0 pt}{\\\fontsize{26}{36}\selectfont}
+\titlespacing{\chapter}{0 pt}{30 pt}{50 pt}[0 pt]
+\titleformat{\section}{\Large\bfseries}{\thesection}{0 pt}{\hspace{30 pt}}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{0 pt}{\hspace{30 pt}}
+\pagestyle{fancy}
+\renewcommand{\chaptername}{CHAPTER}
+\fancyhead[LO,LE]{\footnotesize\textit{\leftmark}}
+\fancyhead[RO,RE]{\thepage}
+\fancyfoot[CO,CE]{}
+%Termina configuracion de capitulo
+\chapter{Introduction} %Cambia Introducci'on al nombre de tu capitulo
+\setstretch{1.5} %Regresa el interlineado a 1.5
+\normalsize
+\section{Background}
+\vspace{30 pt}
+\noindent
+Internet is a collection of inter-connected private networks. These networks are operated by many Internet service providers (ISPs) or Network Operators in the world. How these networks interact with each other has strongly changed over the past years.\\
+
+Just a decade ago, Internet users were just starting to use high-speed broadband access. By that time, there were only 569 million Internet users and we could download a song in around 10 minutes. Now, things changed and we are over 2.27 billion Internet users in the world and Real-time entertainment is, by far, the largest category of Internet traffic. \\
+
+In order to sustain profitable business models, network operators are now looking at new ways of pricing models, beyond the standard expectation of volume-based plans \cite{Sen2013}. \\
+
+Particularly, mobile operators have realized that they need to offer a number of flexible and smartly designed data packages, aligned to the budgets of different customer segments and target groups. As an example, several mobile operators are now offering free access to certain applications such as Facebook or WhatsApp. \\
+
+\section{Problem Statement and Motivation}
+\noindent
+During the development of Broadband Plans, Network Operators specify several rules to make each plan. A rule generally defines an action to either allow or block certain applications. More complex rules, add additional constraints, such as a predefined bandwidth or a limited amount of bytes to be consumed over a period of time. \\
+
+While a Broadband Plan is composed of one or more of these rules, they are usually designed individually and developed independently to offer new plan options to customers. When rules are added to a particular plan, an unexpected conflict may rise with the existing rules of the plan. For instance, when a new rule, such as \textit{Unlimited Facebook}, which allows unlimited access to Facebook traffic, is added to a plan already including a rule to limit up to 1GB of monthly usage, a conflict happens in the case when Facebook traffic is generated and these two rules are configured. The reason is that these two rules can be applied to the Facebook traffic. \\
+	
+Such conflicts are best resolved as early as possible -- ideally before the implementation of those rules. This work is motivated by the desire to prove if Model Checking can be used to detect such those conflicts. \\
+
+Nowadays, Internet plans are evolving quickly. In fact, network operators are moving from unlimited or volume-based models to value-added data offerings \cite{Sen2013,Kimbler2012}. Consequently, it is reasonable to predict that their offer of plans will soon include a non-small number of rules, including conditions such as its current location, device, current time of the day, etc. Subscribers may even have the option to select the rules to make their own plan. \\
+
+In order for us to use Model Checking to detect conflicts between rules within a plan, we first need to design a generic model to specify the different plans. Afterwards, we can use a formal verification language to exhaustively and automatically check whether the model meets the plan specification and to detect conflicts between the rules in the plan. 
+
+\section{Aim and Objectives}
+\subsection{Aim}
+\noindent
+Explore the use of formal methods to identify conflicts between rules, within an Internet Plan. A popular technique known as model-checking has been used in many other domains. Our aim is to apply model checking to verify the model of rule-based Internet Plans and identify conflicts.  
+
+\subsection{Objectives}
+\noindent
+\begin{itemize}
+\item Create an abstract model to specify the rule-based Internet Plans.
+ 
+\item Implement algorithms to complement the model-checking verification.
+
+\item Define real and future use-cases scenarios based on Internet Plans offered in the public domain. 
+
+\item Exhaustively and automatically check whether the model meets the specification of the plan.
+
+\item Detect if there is any conflict between two or more rules within the rule-based Internet plan. 
+
+\end{itemize}
+
+\section{Scope, Limitations, and Delimitations}
+\noindent
+The model described in this Thesis was based on the fact that Internet plans, and Network Policies, have been commonly expressed in the form of rules and actions. Network specifications evolved from Network Policy languages, found in \cite{rfc1102,Sloman1999,Stone2001}, to the well-known and currently widely-used 3GPP Architecture, found in \cite{Albaladejo2008,Grgic2013}. \\
+
+Network operators using 3GPP-based technologies, requires to specify their plans in the form of rules and actions. 3GPP defines a 5-tuple set of classifiers: source IP address, destination IP address, source port number, destination port number, and protocol ID of the protocol above IP to identify a flow. However, many Network Operators are also extending them, to other classifications such as protocol/application, location and device. \\
+
+A verification modeling language will be used to specify a number of current and future use-cases scenarios found in the public domain.  Those use-cases will be verified against their expected properties expressed as Linear Temporal Logic (LTL) formulas. \\
+
+The outcome of this Thesis is to prove that Model Checking is a feasible approach to specify and verify rule-based Internet plans; bearing in mind that plans with many rules would require much more CPU resources. Other methods or approaches to specify and verify such those plans are out-of-scope of this research.
+
+\section{Justification}
+\noindent
+World$'$s population is expected to exceed 7.6 billion early in 2020, up from the current 7.2 billion; while the number of internet-connected devices is expected to double in 5 years, from 25 billion, now in 2015, to 50 billion by 2020 \cite{Evans2011}.  \\
+
+With this proliferation of Internet-connected devices, essentially the number of Internet-connected devices in the world has grown faster than the number of people in the World, network operators are trying to differentiate themselves by offering new ways of pricing models, beyond the usual vectors of volume and bandwidth.\\
+
+In most industries, customers have a choice in selecting the expected quality, which is usually tied to a well-known categorization. In the airlines industry, economy or business tickets can be bought. In the Hotel industry, the quality is dictated by the number of stars. \\
+
+Particularly in the world of fast-food restaurants, we have seen an evolution in the last 5 years. At the very beginning, the meals were fixed and simple. Now the meal options got more varied and, in some fast-food chains, it is even possible to choose all the \textit{features} in your meal: which kind of bread, which kind of ham, which dressing, and so on \cite{Cheboldaeff2011}. \\
+
+On the other hand, in the world of Retail, we see examples of a new micro payment economy. Rather than long term commitments, people are making compulsives small purchases. As an example we can see people renting a house for weekly basis, or hourly renting a car, or even purchasing certain songs and not entire albums. \\
+
+In the world of broadband data, network operators are also rethinking the notion of  the long term contracts and fixed tiered plans. Network Operators are basically moving from unlimited or volume-based models to value-added data offerings to basically offer price transparency and access to certain applications for specified amounts of time, at affordable rates \cite{Kimbler2012}. For example, Vox Telecom, a DSL provider in South Africa, partnered with a local retailer around the launch of the game ``Call of Duty: Black Ops II'' to provide 40GB of ``gamer optimized'' ADSL Bandwidth to customers who redeemed a voucher included with the purchase of the game \cite{Sandvine2014}. Similarly, China Mobile currently offers ``Lite Data Service Plans'' at reduced prices, where heavy-data-usage applications, such as Peer-To-Peer applications, are blocked, in order to rationalize the use of the data plans \cite{ChinaMobile2015}. \\
+
+Given that Network Operators are moving to value-added Internet plans, the spectrum of possible combinations of rules to form plans is huge. Consequently, Network Operators will require tools to validate the rules within a plan, and most importantly, an automated system that verifies the rule-based plans against its specification and that finds any possible conflict among the rules. \\
+
+In that sense, Model Checking can be used to exhaustively and automatically establish whether a given rule-based Internet Plan, satisfies a predefined set of properties (formal specification) and determine whether or not there is a conflict within the rules. \\
+
+\section{Hypothesis}
+\noindent
+This thesis will intend to prove the hypotheses listed below:
+\begin{itemize}
+\item \textbf{H1:} Rule-based Internet plans can be abstracted and specified in  a verification modeling language. 
+
+\item \textbf{H2:} Model Checking can be used to verify whether the model meets the specification of the plan and to detect conflicts between the rules within the plans. 
+\end{itemize}
+
+\section{Contribution of the Thesis}
+\noindent
+The main contributions of this Thesis are:
+\begin{itemize}
+\item Provide a framework to specify rule-based Internet plans via a verification modeling language. This model will let specify the rules-based Internet Plans unambiguously.  
+\item Provide real and future use-cases scenarios based on Internet Plans offered in the public domain. These scenarios will let us verify our proposed model with their properties. 
+\item Provide a set of LTL formulas to exhaustively and automatically verify rule-based Internet plans. These LTL formulas will let us verify the identified scenarios and any other possible plan specified with our proposed model.   
+\item Prove that Model Checking is a powerful approach to detect conflicts between the rules within Internet plans. 
+\end{itemize}
+
+\section{Organization of the Thesis}
+\noindent
+The Thesis is organized as follows: 
+\begin{enumerate}
+\item In Chapter 1, the introduction to the thesis is provided which also includes our motivation and defines its scope. 
+\item In Chapter 2, we review the State of the Art.
+\item In Chapter 3, we introduce our model to specify the Rule-based Internet Plans, and the LTL to be used to verify them. 
+\item In Chapter 4, we introduce MexCom, a not real Mexican Mobile Operator company offering use-cases we found in the Public Domain. 
+\item In Chapter 5, we validate the use-cases described in the previous chapter with the model studied in chapter 3. The results are analyzed and discussed at the end of the chapter.
+\item We conclude in Chapter 6 by discussing further improvements and future work.
+\end{enumerate}
+
+In the next chapter, the evolution of Internet Plans is reviewed and Model Checking is explained and discussed as a widely-used approach in many other domains. \\
+
+\clearpage

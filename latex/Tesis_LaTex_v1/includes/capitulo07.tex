@@ -1,0 +1,49 @@
+%Empieza configuracion de capitulo
+\setstretch{1.0}
+\titleformat{\chapter}[block]{\Large\bfseries}{CAP'ITULO \Huge\thechapter\vspace{25 pt}}{0 pt}{\\\fontsize{26}{36}\selectfont}
+\titlespacing{\chapter}{0 pt}{30 pt}{50 pt}[0 pt]
+\titleformat{\section}{\Large\bfseries}{\thesection}{0 pt}{\hspace{30 pt}}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{0 pt}{\hspace{30 pt}}
+\pagestyle{fancy}
+\fancyhead[LO,LE]{\footnotesize\emph{\leftmark}}
+\fancyhead[RO,RE]{\thepage}
+\fancyfoot[CO,CE]{}
+%Termina configuracion de capitulo
+
+\chapter{Conclusiones} %Cambia al nombre de tu capitulo
+\setstretch{1.5} %Regresa el interlineado a 1.5
+
+\normalsize
+\section{Conclusiones}
+\noindent
+Existe un m'etodo econ'omico para extraer las observaciones y diferentes lecturas de datos de los sistema de posicionamiento global en tiempo real, y con los cuales se puede trabajar en diferentes 'areas de la ciencia.\\
+
+La velocidad y tama'no de la descarga de los archivos depende de la red de comunicaciones y de la disponibilidad de los diferentes transmisores o \emph{broadcasters}, por lo que hay una dependencia externa para poder extraer los datos. \\
+
+El desarrollo de aplicaciones que hacen uso de las optimizaciones del lenguaje de programaci'on dan mayor confiabilidad y eficiencia, como el uso y buena administraci'on de hilos de proceso, uso de un \emph{pool} de conexiones hacia la base de datos, uso de inserci'on en conjunto o \emph{batch}. \\
+Esto es principalmente 'util para aquellas aplicaciones que tienen una alta carga y manejo de datos, y as'i mismo una masiva   comunicaci'on con una base de datos, en donde una administraci'on eficiente del \emph{Driver} marca la diferencia en el rendimiento. Haciendo uso de esas pr'acticas se logr'o que en menos de 60 minutos se procesaran alrededor de 81 GB de datos.\\
+
+Se comprob'o que debe existir un balance en el nivel de paralelismo que se realiza en el software para que aproveche al m'aximo los recursos de hardware que se poseen. \\
+
+A trav'es de un meta-modelo bien definido, es posible encontrar respuestas a preguntas no formuladas expl'icitamente, por ejemplo encontrar las frecuencias de las fallas.\\
+
+Las t'ecnicas de miner'ia de datos son eficientes, en particular, la de agrupaci'on o \emph{clustering} con el algoritmo de K-Means, es 'util para encontrar diferentes patrones que no se encuentran de manera expl'icita, dentro de una gran cantidad de datos. Para el caso de esta investigaci'on, estos patrones no se encontraron f'acilmente y por consiguiente los resultados no fueron concluyentes. Esto quiere decir que se debe complementar el algoritmo de K-Means con alg'un otro. \\
+Se requiere de un mayor esfuerzo para encontrar los patrones y esto depende de la definici'on y organizaci'on de los datos, como la especificaci'on de las caracter'isticas a agrupar.\\
+
+Los usos que se le pueden dar a los datos descargados puede variar, pero principalmente, nos sirve para la detecci'on de fallas entre las diferentes 'epocas (\emph{epoch date}), que en este caso particular no mostr'o ning'un error; la detecci'on y cuantificaci'on de fallas de los tipos de observaciones L1 y L2, como se evidencio a trav'es del \emph{Loss of Lock Indicator}; y por 'ultimo para realizar an'alisis a trav'es de t'ecnicas de miner'ia de datos con el objetivo de encontrar patrones ocultos. 
+
+\section{Trabajo futuro}
+\noindent
+Referente a el trabajo futuro hay bastante labor que realizar en esta 'area de investigaci'on, no solo por el hecho de ser un tendencia relativamente nueva, sino por el hecho que involucra diferentes tipos de tecnolog'ias. \\
+
+En ese sentido se deber'ia explotar el computo paralelo para la aplicaci'on RINEX ETL haciendo uso del \emph{framework} de CUDA. Tambi'en realizar la implementaci'on de un sistema de archivos distribuido como HDFS (\emph{Hadoop Distributed File System}) dentro del sistema de tranferencia y extracci'on del conocimiento para los GNSS (STECG).\\
+
+Por otro lado, se podr'ia implementar el algoritmo de \emph{Map Reduce} con el objetivo de mejorar los procesos de extracci'on y transformaci'on. Adem'as, ampliar el alcance de los datos recolectados y procesados para proporcionar m'as servicios, como por ejemplo, el c'alculo de coordenadas y visualizarlos a trav'es de Google Maps. Tambi'en mejorar la aplicaci'on adicionando un m'odulo de post-procesamiento para realizar las correciones de los datos medidos y un componente integrado de miner'ia de datos y visualizaci'on.\\
+
+Evaluar otras t'ecnicas de miner'ia de datos y otros algoritmos que permitan identificar los patrones ocultos de esa enorme cantidad de datos.\\
+
+Implementar una interfaz de usuario con patrones de usabilidad para una f'acil adopci'on de la aplicaci'on, como as'i mismo convertir el programa en una aplicaci'on web que este disponible para el uso cient'ifico. Se podr'ia implementar hasta el punto de convertirse en una aplicaci'on que haga uso de un \emph{grid} computacional.\\
+
+
+
+\clearpage

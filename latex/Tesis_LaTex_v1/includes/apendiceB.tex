@@ -1,0 +1,120 @@
+%Empieza configuracion de capitulo
+\setstretch{1.0}
+\titleformat{\chapter}[block]{\Large\bfseries}{AP'ENDICE \Huge\thechapter\vspace{25 pt}}{0 pt}{\\\fontsize{26}{36}\selectfont}
+\titlespacing{\chapter}{0 pt}{30 pt}{50 pt}[0 pt]
+\titleformat{\section}{\Large\bfseries}{\thesection}{0 pt}{\hspace{30 pt}}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{0 pt}{\hspace{30 pt}}
+\pagestyle{fancy}
+\fancyhead[LO,LE]{\footnotesize\emph{\leftmark}}
+\fancyhead[RO,RE]{\thepage}
+\fancyfoot[CO,CE]{}
+%Termina configuracion de capitulo
+
+\chapter{C'odigo Java, RINEX ETL} %Cambia al nombre de tu capitulo
+\setstretch{1.5} %Regresa el interlineado a 1.5
+
+\normalsize
+En este ap'endice se colocan alguna de las partes importantes del c'odigo fuente de la aplicaci'on RINEX\_ETL.\\
+
+Clase Main.java. \\
+
+\lstset{language=Java}
+
+\begin{lstlisting}
+if(maxThreads > 1){
+	//Creating and configuring the pool connection
+	pool = new PoolConnectionDB();
+	dataSource = pool.getDataSource();
+	logger.info(Constants.MSG_CREATE_POOL_CONNECTION + "\n");
+	System.out.println(Constants.MSG_CREATE_POOL_CONNECTION + "\n");
+
+	logger.info(Constants.MSG_MAX_THREADS + maxThreads + "\n");
+	System.out.println(Constants.MSG_MAX_THREADS + maxThreads +"\n");
+}else{
+	singleConnection = new ConnectionDB();
+}
+.
+.
+.
+if(maxThreads == 1){
+	if(COUNTER_FILE < listOfFiles.length){
+		if (listOfFiles[COUNTER_FILE].isFile()) {
+			System.out.println(Constants.MSG_INI_FILE + 	
+			listOfFiles[COUNTER_FILE].getName());
+			logger.info(Constants.MSG_INI_FILE + 
+			listOfFiles[COUNTER_FILE].getName());
+
+			filename = listOfFiles[COUNTER_FILE].getName().
+			substring(0,listOfFiles[COUNTER_FILE].getName().lastIndexOf("."));
+			
+			extFilename = listOfFiles[COUNTER_FILE].getName().
+			substring(listOfFiles[COUNTER_FILE].getName().lastIndexOf(".")+1, 	 
+			listOfFiles[COUNTER_FILE].getName().length());
+
+			if (extFilename.equals(Constants.EXT_OBSERVATION_FILE)){
+				parser = new RinexObservationParser
+				(listOfFiles[COUNTER_FILE],filename,singleConnection);
+
+				result = parser.init();
+			}
+			else{
+				TOTAL_FILES--;
+			}
+		}
+	}
+	COUNTER_FILE++;
+	}else{
+		if(COUNTER_FILE < listOfFiles.length){
+			List<RinexObservationParser> solvers = new 
+			ArrayList<RinexObservationParser>();
+
+			startSolvers(maxThreads,listOfFiles,
+			dataSource,COUNTER_FILE,solvers);
+			waitUntilSolvedOrFinished(maxThreads, solvers);
+		}
+	}
+\end{lstlisting}
+
+Clase RinexObservationParser.java. \\
+
+\begin{lstlisting}
+if(conn != null){
+//ArrayList for observations data and loss of lock indicator for each epoch date
+	List <Data> dataObservations = new ArrayList<Data>();
+	List <LossLockIndicator> dataLli = new ArrayList<LossLockIndicator>();
+
+	// Open file streams
+	this.open();
+
+	// Parse RINEX observation headers
+	this.parseHeaderObs(); /* Header */
+
+	// Parse Rinex observations
+	while(hasMoreObservations()){
+		this.setEpochData(new Data());
+		// Parse One Single Epoch Observation
+		this.nextObservations();
+
+		if(this.getEpochData() != null){
+			if(this.getEpochData().getEpochDate() != null){
+				if (auxObs.compareTo(this.getEpochData().getEpochDate()) == 0){
+					break;
+				}else{
+				//Adding Data object to the ArrayList for joining and inserting into DB
+					dataObservations.add(this.getEpochData());
+					auxObs = this.getEpochData().getEpochDate();
+				}
+			}
+		}
+
+		if (this.getLli() != null){
+			if(this.getLli().getEpochDate() != null){
+				if(auxLli.compareTo(this.getLli().getEpochDate()) != 0){
+					// Adding LossLockIndicator object to the ArrayList for joining and 	inserting into DB
+					dataLli.add(this.getLli());
+					auxLli = this.getLli().getEpochDate();
+				}
+			}
+		}
+}
+\end{lstlisting}

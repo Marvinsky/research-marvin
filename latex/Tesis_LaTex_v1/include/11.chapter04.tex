@@ -1,0 +1,186 @@
+%Empieza configuracion de capitulo
+\setstretch{1.0}
+\titleformat{\chapter}[block]{\Large\bfseries}{CHAPTER \Huge\thechapter\vspace{25 pt}}{0 pt}{\\\fontsize{26}{36}\selectfont}
+\titlespacing{\chapter}{0 pt}{30 pt}{50 pt}[0 pt]
+\titleformat{\section}{\Large\bfseries}{\thesection}{0 pt}{\hspace{30 pt}}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{0 pt}{\hspace{30 pt}}
+\pagestyle{fancy}
+\fancyhead[LO,LE]{\footnotesize\emph{\leftmark}}
+\fancyhead[RO,RE]{\thepage}
+\fancyfoot[CO,CE]{}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+%Termina configuracion de capitulo
+
+\chapter{Case Study: MexCom Use Cases} %Cambia al nombre de tu capitulo
+\setstretch{1.5} %Regresa el interlineado a 1.5
+
+\normalsize
+\noindent
+In this chapter, we present the rule-based plans, which will be verified using the Promela Model described in the previous chapter. \\
+
+We begin this chapter by introducing ``MexCom'', a not real company we created to illustrate the number of use-cases described below. We build the use-cases, based on the rules-based plans found in the Public Domain. We also considered some not-yet-existing rules; which, based on the literature review, are quite reasonable to predict. \\
+
+In the next chapter, MexCom plans will be modeled using our proposed Promela Model and verified through the LTL formulas previously studied. \\
+
+\section{MexCom Overview}
+\noindent
+MexCom is a new Mobile Network Operator, which is eager to start operations in Mexico soon. MexCom will target low-income subscribers, who cannot afford an unlimited mobile plan. \\
+
+The next sections describe the evolution of the service plans MexCom will offer to gain market share. It is important to mention that a plan will consist of one or more rules described below.   
+
+\section{Core Rules}
+\noindent
+MexCom wants to start operations in Mexico by offering an initial set of monthly limited usage rules, which are listed below in table \ref{LUP_initial} \\
+
+\begin{table}[H]
+\begin{center}
+\scalebox{0.8}{	
+\begin{tabular}{| l || r | r |}
+\hline
+\textbf{Core Rule ID} & \textbf{Capacity} & \textbf{Monthly Cost (MXN)} \\
+ \hline \hline
+\emph{CORE01} & 100MB & {\$}75.00   \\ \hline
+\emph{CORE02} & 200MB & {\$}100.00   \\ \hline
+\emph{CORE03} & 400MB & {\$}150.00   \\ \hline
+\emph{CORE04} & 1GB & {\$}350.00   \\ \hline
+\emph{CORE05} & 2GB & {\$}600.00   \\ \hline
+\end{tabular}}
+\end{center}
+\caption{Core Limited Usage Rules.}
+\label{LUP_initial}
+\end{table}
+
+To make the initial offer more attractive to its future subscribers, MexCom decides to offer certain commonly-used applications without charging their subscribers to their limited usage rule. This is known as Zero-Rated applications, offered at a very low-monthly cost. \\
+
+\begin{table}[H]
+\begin{center}
+\scalebox{0.8}{	
+\begin{tabular}{| l || l | r |}
+\hline
+\textbf{Rule Bolt-on ID} & \textbf{Application(s)} & \textbf{Monthly Cost (MXN)} \\
+ \hline \hline
+\emph{BOLT01} & Unlimited Local Facebook & {\$}10.00   \\ \hline
+\emph{BOLT02} & Unlimited Local Twitter & {\$}10.00   \\ \hline
+\emph{BOLT03} & Unlimited Local Whatsapp & {\$}10.00   \\ \hline
+\end{tabular}}
+\end{center}
+\caption{Bolt-on Rules}
+\end{table}
+
+The bolt-on rules above, essentially allow subscribers to form a low-cost plan by acquiring a basic limited usage rule, with any bolt-on rule. For example, a subscriber can acquire a limited monthly usage plan of 100MB with unlimited access to Facebook for {\$}85.00 MXN monthly (CORE01 + BOLT01).  
+
+\section{Roaming Bolt-on Rules}
+\noindent
+MexCom now wants to offer roaming bolt-on rules to their current offer of limited usage rules, previously described. \\
+
+\begin{table}[H]
+\begin{center}
+\scalebox{0.8}{	
+\begin{tabular}{| l || l | r |}
+\hline
+\textbf{Rule Bolt-on ID} & \textbf{Application(s)} & \textbf{Monthly Cost (MXN)} \\
+ \hline \hline
+\emph{BOLT04} & Unlimited Roaming Twitter & {\$}40.00   \\ \hline
+\emph{BOLT05} & Unlimited Roaming Whatsapp & {\$}40.00   \\ \hline
+\emph{BOLT06} & Unlimited Roaming Email & {\$}40.00   \\ \hline
+\end{tabular}}
+\end{center}
+\caption{Roaming Bolt-on Rules}
+\label{Roaming_initial}
+\end{table}
+
+Roaming data rates are usually much more expensive than local traffic rates. Most of the mobile devices, run a number of background applications which constantly consume traffic without the subscriber noticing it. With roaming bolt-on rules shown in table \ref{Roaming_initial} above, MexCom will allow subscribers to choose which applications shall only be allowed while roaming. This will prevent background applications from consuming part of a quota. 
+
+\section{Family Rules}
+\noindent
+MexCom decides to extend their offer by including family plans. Family plans let a subscriber share a monthly quota between multiple family members or devices. A family plan consists of a quota, big enough to be shared amongst family members,  listed in table \ref{FP_initial}, and individual bolt-on/constraint rules per device listed in table \ref{FP_constraints} below. \\
+
+\begin{table}[H]
+\begin{center}
+\scalebox{0.8}{	
+\begin{tabular}{| l || r | r |}
+\hline
+\textbf{Family Rule ID} & \textbf{Capacity} & \textbf{Monthly Cost (MXN)} \\
+ \hline \hline
+\emph{FAM01} & 10GB & {\$}450.00   \\ \hline
+\emph{FAM02} & 15GB & {\$}600.00   \\ \hline
+\emph{FAM03} & 20GB & {\$}800.00   \\ \hline
+\end{tabular}}
+\end{center}
+\caption{Family Shared Rules}
+\label{FP_initial}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\scalebox{0.8}{	
+\begin{tabular}{| l || l | r |}
+\hline
+\textbf{Family Rule Bolt-on/Constraint ID} & \textbf{Bolt-on/Constraint} & \textbf{Monthly Cost (MXN)} \\
+ \hline \hline
+\emph{FAMC01} & Unlimited Facebook & {\$}10.00   \\ \hline
+\emph{FAMC02} & Video Streaming HD Blocked & {\$}0.00   \\ \hline
+\emph{FAMC03} & Social Network Blocked & {\$}0.00   \\ \hline
+\emph{FAMC04} & Video Streaming Optimized & {\$}50.00   \\ \hline
+\end{tabular}}
+\end{center}
+\caption{Family Shared Rules - Bolt-ons/Constraints}
+\label{FP_constraints}
+\end{table}
+
+The above set of rules let a subscriber form its own family plan. For instance, the head of a family can acquire the FAM01 rule for all its family members; and additionally, acquire a constraint rule for blocking Social Networks to their kids device (FAMC03) or acquire a Video-Streaming-Optimization rule for an Smart TV device (FAMC04). 
+
+\section{Parental-Control Rules}
+\noindent
+Parental-Control let a subscriber add a number of constraint rules to a rule-based plan. The constraints are usually applied during the day time and are released at night. This type of plans, prevent the subscriber to access certain applications during the day, for example during class hours. \\
+
+Table \ref{rule_constraints} below, describes the rule constraints that can be added to the initial set of plans previously listed in the table \ref{LUP_initial}, to form a Parental Control plan. \\
+
+\begin{table}[H]
+\begin{center}
+\scalebox{0.8}{	
+\begin{tabular}{| l || l | l | l | r |}
+\hline
+\textbf{Rule Constraint ID} & \textbf{Traffic Condition} & \textbf{Time of Day} & \textbf{Action} & \textbf{Monthly Cost (MXN)} \\
+ \hline \hline
+\emph{CON01} & Social Networking  & Weekdays 0800-1800 & Block &{\$}0.00   \\ \hline
+\emph{CON02} & Video Streaming & Weekdays 0800-1800 & Block & {\$}0.00   \\ \hline
+\emph{CON03} & Gaming & Weekdays & Block &  {\$}0.00   \\ \hline
+\end{tabular}}
+\end{center}
+\caption{Rule Constraints}
+\label{rule_constraints}
+\end{table}
+
+These plans, let a head of a family, acquire a Limited Usage rule and on top of that, add a rule constraint to block a set of applications, during a predefined time of a day. 
+
+\section{Limited Bolt-on Rules}
+\noindent
+Limited bolt-on rules are similar to the bolt-on rules seen before, except that they are not unlimited. That is, there is a usage limit. For example, a subscriber may purchase a plan based on the unlimited usage rules previously described in table \ref{LUP_initial}, and only enhance it during a particular weekend, when an special sport event would take place. \\
+
+In order to satisfy the need described above, MexCom decides to offer the limited bolt-on rules below, so subscribers can add them to their current plans at any time. \\
+
+\begin{table}[H]
+\begin{center}
+\scalebox{0.8}{	
+\begin{tabular}{| l || l | r |}
+\hline
+\textbf{Limited Rule Bolt-on ID} & \textbf{Limited Bolt-on} & \textbf{Cost (MXN)} \\
+ \hline \hline
+\emph{LADD01} & 1GB Video Streaming Optimized & {\$}15.00   \\ \hline
+\emph{LADD02} & 2GB Video Streaming Optimized & {\$}25.00   \\ \hline
+\emph{LADD03} & 1GB Gaming Optimized & {\$}10.00   \\ \hline
+\emph{LADD04} & 1GB Free Usage & {\$}15.00   \\ \hline
+\end{tabular}}
+\end{center}
+\caption{Limited Bolt-on Rules}
+\label{limited_rules}
+\end{table}
+ 
+\section{Summary of the chapter}
+\noindent
+In this chapter, we introduced MexCom and presented the rule-based plans based on real and future use-cases scenarios found in the public domain. \\
+
+The spectrum of possible combinations of rules to form a plan is huge. We will see in the next chapter the significance of determining the right priority for each of the above rules, and most importantly, the value of an automated system that verifies the rule-based plans against its specification and that finds any possible conflict among the rules. \\
+
+\clearpage

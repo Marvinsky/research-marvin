@@ -1,0 +1,25 @@
+%Empieza configuracion
+\setstretch{1.0}
+\titleformat{\chapter}{\Huge\bfseries}{\thechapter}{0 pt}{\rule{340 pt}{3 pt}\\}
+\titlespacing{\chapter}{100 pt}{-25 pt}{40 pt}[10 pt]	
+\pagestyle{fancy}
+\fancyhead[RO,RE]{\thepage}
+\fancyfoot[CO,CE]{}
+%Termina configuracion
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\setstretch{1.5} %Regresa el interlineado a 1.5
+
+
+\normalsize
+\noindent
+This thesis presents a formal approach to verify rule-based Internet plans through Linear Temporal Logic (LTL) properties and to determine whether or not there is a conflict amongst the rules within a plan. Rule-based Internet plans are formalized as specifications using our proposed Promela model. \\
+
+Current and future use-case scenarios obtained from the public domain, are used to validate and to explain our proposed Model. The entire set of identified scenarios was successfully modeled and verified using our Promela model and LTL formulas introduced as part of this thesis. \\
+
+The results obtained, demonstrate that Model Checking is a valid and feasible tool to model and verify rule-based Internet plans. 
+\\
+
+
+\clearpage

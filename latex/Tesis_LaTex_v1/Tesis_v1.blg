@@ -1,0 +1,36 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Tesis_v1.aux
+A level-1 auxiliary file: include/1.front_page.aux
+A level-1 auxiliary file: include/2.abstract.aux
+A level-1 auxiliary file: include/2.resumen.aux
+A level-1 auxiliary file: include/4.dedication.aux
+A level-1 auxiliary file: include/5.toc.aux
+A level-1 auxiliary file: include/6.tables.aux
+A level-1 auxiliary file: include/7.figures.aux
+A level-1 auxiliary file: include/7.5.code.aux
+A level-1 auxiliary file: include/8.chapter01.aux
+A level-1 auxiliary file: include/9.chapter02.aux
+A level-1 auxiliary file: include/10.chapter03.aux
+A level-1 auxiliary file: include/11.chapter04.aux
+A level-1 auxiliary file: include/12.chapter05.aux
+A level-1 auxiliary file: include/13.chapter06.aux
+A level-1 auxiliary file: includes/bibliografia.aux
+The style file: includes/IEEEtranBST/IEEEtran.bst
+A level-1 auxiliary file: include/14.AppendixA.aux
+Database file #1: includes/tesis.bib
+I was expecting a `,' or a `}'---line 289 of file includes/tesis.bib
+ : 
+ : year={2007},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Name 1 in "Hk.chinamobile.com," has a comma at the end for entry ChinaMobile2015
+while executing---line 2411 of file includes/IEEEtranBST/IEEEtran.bst
+Name 1 in "Elitecore Technologies," has a comma at the end for entry Elitecore2012
+while executing---line 2411 of file includes/IEEEtranBST/IEEEtran.bst
+Warning--missing publisher in Elitecore2012
+Warning--empty journal in Duan2003
+
+Done.
+(There were 3 error messages)

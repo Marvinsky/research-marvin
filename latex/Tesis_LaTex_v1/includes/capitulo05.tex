@@ -1,0 +1,155 @@
+%Empieza configuracion de capitulo
+\setstretch{1.0}
+\titleformat{\chapter}[block]{\Large\bfseries}{CAP'ITULO \Huge\thechapter\vspace{25 pt}}{0 pt}{\\\fontsize{26}{36}\selectfont}
+\titlespacing{\chapter}{0 pt}{30 pt}{50 pt}[0 pt]
+\titleformat{\section}{\Large\bfseries}{\thesection}{0 pt}{\hspace{30 pt}}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{0 pt}{\hspace{30 pt}}
+\pagestyle{fancy}
+\fancyhead[LO,LE]{\footnotesize\emph{\leftmark}}
+\fancyhead[RO,RE]{\thepage}
+\fancyfoot[CO,CE]{}
+%Termina configuracion de capitulo
+
+\chapter{Experimentos} %Cambia al nombre de tu capitulo
+\setstretch{1.5} %Regresa el interlineado a 1.5
+\normalsize
+\noindent
+En el presente cap'itulo se describir'an los experimentos realizados con los \emph{Observation Files}, la base de datos, y el ambiente en el cual fueron desarrollados.\\
+
+\section{Ambiente de pruebas}
+\noindent
+A continuaci'on se describen las principales caracter'isticas del equipo port'atil o \emph{Workstation} en los cuales se realizaron los experimentos.\\
+
+\begin{table}[H]
+\begin{center}
+\scalebox{0.9}{	
+\begin{tabular}{| l || l | }
+\hline
+\textbf{Item} & \textbf{Especificaci'on} \\ \hline \hline
+Procesador & Procesador Intel Quad Core i7 4700HQ 4GHz\\ \hline
+Sistema operativo & Windows 8\\ \hline
+Chipset & Intel HM77 Chipset\\ \hline
+Memoria Ram & 16 GB, DDR3 1800 MHz SDRAM\\ \hline
+Panel TFT-LCD & C17.3" 16:9 FHD EWV LED Backlight\\ \hline
+Tarjeta Gr'afica & NVIDIA GeForce GTX 770M 3GB GDDR5 VRAM \\ \hline
+Almacenamiento & 1TB HDD 5400 RPM + 256GB SDD\\ \hline
+\end{tabular}}
+\end{center}
+\caption{Especificaciones \emph{Workstation} Asus G750J }
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\scalebox{0.9}{	
+\begin{tabular}{| l || l | }
+\hline
+\textbf{Item} & \textbf{Especificaci'on} \\ \hline \hline
+CUDA Cores &  1536\\ \hline
+Base Clock (MHz) & 1046\\ \hline
+Boost Clock (MHz) & 1085\\ \hline
+Texture Fill Rate (billion/sec) & 134\\ \hline
+Velocidad de la memoria & 7.0 Gbps\\ \hline
+Configuraci'on est'andar de la memoria & 2048 MB \\ \hline
+Interface de memoria & GDDR5\\ \hline
+Ancho de banda de memoria (GB/seg) & 224.3 \\ \hline
+\end{tabular}}
+\end{center}
+\caption{Especificaciones tarjeta gr'afica, NVIDIA GeForce GTX 770M }
+\end{table}
+
+Se hizo uso de un disco duro externo para almacenar los archivos descargados. En la siguiente tabla se muestran sus especificaciones t'ecnicas:
+
+\begin{table}[H]
+\begin{center}
+\scalebox{0.9}{	
+\begin{tabular}{| l || l | }
+\hline
+\textbf{Item} & \textbf{Especificaci'on} \\ \hline \hline
+Capacidad &  2TB\\ \hline
+Interfaz & USB 2.0 y USB 3.0\\ \hline
+Sistema operativo & Windows XP o superior\\ 
+& Max OS X 10.4.6 Tiger o superior\\
+& 10.5 Leopard o 10.6 Snow Leopard (32-bit kernel)\\ \hline
+\end{tabular}}
+\end{center}
+\caption{Especificaciones disco duro externo, Seagate GoFlex Desk }
+\end{table}
+
+Referente a la parte de software, se utilizaron las siguientes herramientas:
+
+\begin{table}[H]
+\begin{center}
+\scalebox{0.9}{	
+\begin{tabular}{| l || l | l |}
+\hline
+\textbf{Software} & \textbf{Descripci'on} & \textbf{Versi'on} \\ \hline \hline
+Eclipse IDE &  Entorno de desarrollo y ejecuci'on de pruebas (JAVA) & Luna\\ \hline
+MySQL Workbench & Entorno de desarrollo y ejecuci'on de pruebas (SQL) & 6.1\\ \hline
+VisualVM & \emph{Profiler} para la \emph{Java Virtual Machine} (JVM) & 1.3.8\\ \hline
+MySQL Server & Servidor de Base de datos relacionales & 5.6.19\\ \hline
+\end{tabular}}
+\end{center}
+\caption{Herramientas de software }
+\end{table}
+
+\section{Especificaciones generales}
+\noindent
+Las siguientes especificaciones aplican para todas las pruebas hechas con los datos de los archivos descargados.
+
+\begin{table}[H]
+\begin{center}
+\scalebox{0.9}{	
+\begin{tabular}{| l || l | }
+\hline
+\textbf{Item} & \textbf{Especificaci'on} \\ \hline \hline
+Cantidad de archivos a procesar & 40775\\ \hline
+Tama'no de los datos & 80.9 Gigabytes\\ \hline
+Porcentaje m'aximo de error & 2\\ \hline
+N'umero de ejecuciones & 3\\ \hline
+\end{tabular}}
+\end{center}
+\caption{Especificaciones generales para las pruebas}
+\end{table}
+
+Las m'etricas que se utilizaron en el desarrollo de los experimentos se detallan a continuaci'on:
+
+\begin{table}[H]
+\begin{center}
+\scalebox{0.9}{	
+\begin{tabular}{| l || l | }
+\hline
+\textbf{M'etrica} & \textbf{Especificaci'on} \\ \hline \hline
+Cantidad de archivos procesados con 'exito & n'umero natural\\ \hline
+Cantidad de archivos procesados con fallas & n'umero natural\\ \hline
+Tiempo de ejecuci'on & segundos, minutos y horas\\ \hline
+\end{tabular}}
+\end{center}
+\caption{M'etricas generales para las pruebas}
+\end{table}
+
+\section{Pruebas}
+\noindent
+\begin{enumerate}
+\item \textbf{Secuencial:} Consiste en ejecutar la aplicaci'on RINEX ETL de manera secuencial o con un 'unico hilo de ejecuci'on.
+\item \textbf{Paralelo con procesadores:} Consiste en ejecutar la aplicaci'on RINEX ETL de manera paralela a trav'es de hilos, los cuales hacen uso de los \emph{cores} de los procesadores. 
+Esta prueba se realiz'o con:
+\begin{itemize}
+\item 8 \emph{Threads}.
+\item 10 \emph{Threads}.
+\item 16 \emph{Threads}.
+\item 32 \emph{Threads}.
+\item 50 \emph{Threads}.
+\end{itemize}
+\item \textbf{Clustering:} Consiste en ejecutar la aplicaci'on \emph{Weka} y realizar la conexi'on con la base de datos del meta-modelo. Despu'es se realiz'o una consulta a la base de datos con la cual se cargaron los datos en la herramienta de miner'ia de datos y se ejecut'o el proceso de \emph{Clustering} con el objetivo de encontrar alguna anomal'ia en el \emph{Loss of Lock Indicator (LLI)} o alg'un patr'on sobre los datos descargados y de los cuales podamos inferir e intepretar posibles mejoras. Para cumplir este objetivo se utiliz'o el algoritmo de \emph{K-Means}, con el cual se definieron 4 \emph{clusters}.\\
+\item \textbf{Consultas SQL:} A trav'es del lenguaje SQL se determinaron los siguientes objetivos:
+\begin{itemize}
+\item Identificar la cantidad de fallas en las 'epocas (\emph{epoch})
+\item Identificar la cantidad de posibles deslizamientos de ciclo para el tipo de observaci'on L1
+\item Identificar la cantidad de posibles deslizamientos de ciclo para el tipo de observaci'on L2
+\item Determinar la frecuencia de los posibles deslizamientos de ciclo para el tipo de observaci'on L1
+\item Determinar la frecuencia de los posibles deslizamientos de ciclo para el tipo de observaci'on L2
+\end{itemize}
+
+\end{enumerate}
+
+\clearpage
