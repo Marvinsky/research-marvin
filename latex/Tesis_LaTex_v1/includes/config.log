@@ -1,18 +1,11 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  12 SEP 2011 22:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  27 OCT 2015 11:30
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **config.tex
 (./config.tex
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, german-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, ar
-abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
-h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
-greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, ku
-rmanji, latin, latvian, lithuanian, mongolian, mongolian2a, bokmal, nynorsk, po
-lish, portuguese, romanian, russian, sanskrit, serbian, slovak, slovenian, span
-ish, swedish, turkish, ukenglish, ukrainian, uppersorbian, welsh, loaded.
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 79 languages loaded.
 
 ! LaTeX Error: \usepackage before \documentclass.
 
@@ -22,22 +15,486 @@ Type  H <return>  for immediate help.
                                                   
 l.1 \usepackage[spanish,activeacute]{
                                      babel}
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.1 \usepackage[spanish,activeacute]{
-                                     babel}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \usepackage[T1]{
+                    fontenc}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \usepackage{
+                graphicx}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \usepackage[letterpaper]{
+                             geometry}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \usepackage{
+                titlesec}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \usepackage{
+                url}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \usepackage{
+                fancyhdr}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \usepackage{
+                fix-cm}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \usepackage{
+                setspace}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \usepackage{
+                 amsmath}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \usepackage{
+                 fmtcount}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \usepackage{
+                 threeparttable}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \usepackage{
+                 float}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \usepackage[square,sort]{
+                              natbib}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...[font=small,format=plain,labelfont=bf,it]{
+                                                  caption}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+! Undefined control sequence.
+l.16 \geometry
+              {top=2.5cm, bottom=2.5cm, left=3.0cm, right=2.5cm}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \geometry{t
+                op=2.5cm, bottom=2.5cm, left=3.0cm, right=2.5cm}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.20 \setstretch
+                {1.5}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 16--21
+[]
+ []
+
+! Improper \hyphenation will be flushed.
+\OT1-cmd ...\TextSymbolUnavailable #1}\fi \global 
+                                                  \expandafter \let \csname ...
+l.66 bi-blio-gra-f\'
+                    ia
+Hyphenation exceptions must contain only letters
+and hyphens. But continue; I'll forgive and forget.
+
+! Improper \hyphenation will be flushed.
+<recently read> \let 
+                     
+l.66 bi-blio-gra-f\'
+                    ia
+Hyphenation exceptions must contain only letters
+and hyphens. But continue; I'll forgive and forget.
+
+! Improper \hyphenation will be flushed.
+<recently read> \\' 
+                    
+l.66 bi-blio-gra-f\'
+                    ia
+Hyphenation exceptions must contain only letters
+and hyphens. But continue; I'll forgive and forget.
+
+! Improper \hyphenation will be flushed.
+\hmode@start@before@group ->\unhbox 
+                                    \voidb@x 
+l.66 bi-blio-gra-f\'
+                    ia
+Hyphenation exceptions must contain only letters
+and hyphens. But continue; I'll forgive and forget.
+
+! Not a letter.
+\hmode@start@before@group ->\unhbox \voidb@x 
+                                             
+l.66 bi-blio-gra-f\'
+                    ia
+Letters in \hyphenation words must have \lccode>0.
+Proceed; I'll ignore the character I just read.
+
+! Improper \hyphenation will be flushed.
+\UseTextAccent #1#2#3->\hmode@start@before@group {
+                                                  \let \hmode@start@before@g...
+l.66 bi-blio-gra-f\'
+                    ia
+Hyphenation exceptions must contain only letters
+and hyphens. But continue; I'll forgive and forget.
+
+! Improper \hyphenation will be flushed.
+\UseTextAccent ...\hmode@start@before@group {\let 
+                                                  \hmode@start@before@group ...
+l.66 bi-blio-gra-f\'
+                    ia
+Hyphenation exceptions must contain only letters
+and hyphens. But continue; I'll forgive and forget.
+
+! Improper \hyphenation will be flushed.
+\hmode@start@before@group ->\unhbox 
+                                    \voidb@x 
+l.66 bi-blio-gra-f\'
+                    ia
+Hyphenation exceptions must contain only letters
+and hyphens. But continue; I'll forgive and forget.
+
+! Not a letter.
+\hmode@start@before@group ->\unhbox \voidb@x 
+                                             
+l.66 bi-blio-gra-f\'
+                    ia
+Letters in \hyphenation words must have \lccode>0.
+Proceed; I'll ignore the character I just read.
+
+! Improper \hyphenation will be flushed.
+<argument> \let 
+                
+l.66 bi-blio-gra-f\'
+                    ia
+Hyphenation exceptions must contain only letters
+and hyphens. But continue; I'll forgive and forget.
+
+! Undefined control sequence.
+\UseTextAccent ...up \@firstofone \let \@curr@enc 
+                                                  \cf@encoding \@use@text@en...
+l.66 bi-blio-gra-f\'
+                    ia
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper \hyphenation will be flushed.
+\@use@text@encoding #1->\edef 
+                              \f@encoding {#1}\xdef \font@name {\csname \cur...
+l.66 bi-blio-gra-f\'
+                    ia
+Hyphenation exceptions must contain only letters
+and hyphens. But continue; I'll forgive and forget.
+
+! Not a letter.
+\f@encoding ->OT1
+                 
+l.66 bi-blio-gra-f\'
+                    ia
+Letters in \hyphenation words must have \lccode>0.
+Proceed; I'll ignore the character I just read.
+
+! Improper \hyphenation will be flushed.
+\@use@text@encoding #1->\edef \f@encoding {
+                                           #1}\xdef \font@name {\csname \cur...
+l.66 bi-blio-gra-f\'
+                    ia
+Hyphenation exceptions must contain only letters
+and hyphens. But continue; I'll forgive and forget.
+
+! Not a letter.
+<argument> OT1
+              
+l.66 bi-blio-gra-f\'
+                    ia
+Letters in \hyphenation words must have \lccode>0.
+Proceed; I'll ignore the character I just read.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 bi-blio-gra-f\'
+                    ia
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@curr@enc 
+                      
+l.66 bi-blio-gra-f\'
+                    ia
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Try loading font information for +cmr on input line 66.
+LaTeX Font Info:    No file cmr.fd. on input line 66.
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 66.
+
+! Corrupted NFSS tables.
+wrong@fontshape ...message {Corrupted NFSS tables}
+                                                  error@fontshape else let f...
+l.66 bi-blio-gra-f\'
+                    ia
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 66.
+
+! Undefined control sequence.
+<argument> \@curr@enc 
+                      
+l.66 bi-blio-gra-f\'
+                    ia
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Too many }'s.
+\UseTextAccent ...se@text@encoding \@curr@enc #3}}
+                                                  
+l.66 bi-blio-gra-f\'
+                    ia
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Extra \else.
+\OT1-cmd ...tring #1\expandafter \endcsname \else 
+                                                  \noexpand #1\fi 
+l.66 bi-blio-gra-f\'
+                    ia
+I'm ignoring this; it doesn't match any \if.
+
+! Extra \fi.
+<argument> \fi 
+               
+l.66 bi-blio-gra-f\'
+                    ia
+I'm ignoring this; it doesn't match any \if.
+
+! Extra \fi.
+<argument> \fi 
+               
+l.66 bi-blio-gra-f\'
+                    ia
+I'm ignoring this; it doesn't match any \if.
+
+Missing character: There is no – in font cmr10!
+! Too many }'s.
+l.301 }
+       
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+)
+! Emergency stop.
+<*> config.tex
+              
+*** (job aborted, no legal \end found)
+
  
 Here is how much of TeX's memory you used:
- 6 strings out of 493848
- 264 string characters out of 3149207
- 48936 words of memory out of 3000000
- 3381 multiletter control sequences out of 15000+200000
- 3640 words of font info for 14 fonts, out of 3000000 for 9000
- 714 hyphenation exceptions out of 8191
- 5i,0n,5p,52b,14s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48 strings out of 493104
+ 554 string characters out of 6136932
+ 54498 words of memory out of 5000000
+ 3583 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1169 hyphenation exceptions out of 8191
+ 17i,1n,18p,78b,67s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

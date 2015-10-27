@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  27 OCT 2015 10:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  27 OCT 2015 13:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -309,6 +309,13 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks27
 \@floatcapt=\box33
 )
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip59
+\bibsep=\skip60
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count128
+)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
@@ -323,7 +330,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen140
 \caption@hangindent=\dimen141
 )
-\c@ContinuedFloat=\count128
+\c@ContinuedFloat=\count129
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: threeparttable package is loaded.
@@ -332,22 +339,11 @@ Package caption Info: threeparttable package is loaded.
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
  (./include/4.dedication.aux)
-(./include/ack.aux) (./include/2.abstract.aux) (./include/2.resumen.aux)
-(./include/5.toc.aux) (./include/6.tables.aux) (./include/7.figures.aux)
-(./include/7.5.code.aux) (./include/8.chapter01.aux) (./include/9.chapter02.aux
-) (./include/10.chapter03.aux) (./include/11.chapter04.aux)
-(./include/12.chapter05.aux
-
-LaTeX Warning: Label `RoamingLTL' multiply defined.
-
-
-LaTeX Warning: Label `FamilyP2_Listing' multiply defined.
-
-
-LaTeX Warning: Label `CoreRules_Listing' multiply defined.
-
-) (./include/13.chapter06.aux) (./includes/bibliografia.aux)
-(./include/14.AppendixA.aux) (./include/vitae.aux))
+(./include/ack.aux) (./include/2.abstract.aux) (./include/5.toc.aux)
+(./include/6.tables.aux) (./include/7.figures.aux) (./include/8.chapter01.aux)
+(./include/9.chapter02.aux) (./include/10.chapter03.aux)
+(./include/11.chapter04.aux) (./include/12.chapter05.aux)
+(./include/13.chapter06.aux) (./includes/bibliografia.aux))
 \openout1 = `Tesis_v1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -364,20 +360,20 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
-\c@lstlisting=\count129
+\c@lstlisting=\count130
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count130
+\scratchcounter=\count131
 \scratchdimen=\dimen142
 \scratchbox=\box34
-\nofMPsegments=\count131
-\nofMParguments=\count132
+\nofMPsegments=\count132
+\nofMParguments=\count133
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count133
+\MPscratchCnt=\count134
 \MPscratchDim=\dimen143
-\MPnumerator=\count134
-\makeMPintoPDFobject=\count135
+\MPnumerator=\count135
+\makeMPintoPDFobject=\count136
 \everyMPtoPDFconversion=\toks29
 )
 LaTeX Info: Redefining \. on input line 51.
@@ -465,22 +461,31 @@ Package caption Info: End \AtBeginDocument code.
 \openout2 = `include/1.front_page.aux'.
 
 (./include/1.front_page.tex
-<images/escudo-itesm_small.png, id=1, 265.9536pt x 336.7782pt>
-File: images/escudo-itesm_small.png Graphic file (type png)
+<images/ufv_escudo.jpg, id=1, 316.18124pt x 301.125pt>
+File: images/ufv_escudo.jpg Graphic file (type jpg)
 
-<use images/escudo-itesm_small.png>
-Package pdftex.def Info: images/escudo-itesm_small.png used on input line 4.
-(pdftex.def)             Requested size: 119.67801pt x 151.54878pt.
- [1
+<use images/ufv_escudo.jpg>
+Package pdftex.def Info: images/ufv_escudo.jpg used on input line 4.
+(pdftex.def)             Requested size: 142.28024pt x 135.50499pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 22.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 22.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
 
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/escudo-itesm_smal
-l.png>])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/ufv_escudo.jpg>])
 \openout2 = `include/4.dedication.aux'.
 
- (./include/4.dedication.tex
+
+(./include/4.dedication.tex
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 6.
@@ -512,11 +517,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
@@ -542,49 +542,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--23
-
- []
-
 [3
-
-
-
-
-])
-\openout2 = `include/2.resumen.aux'.
-
- (./include/2.resumen.tex
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 6.
-
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 7.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--23
-
- []
-
-[4
 
 
 
@@ -595,23 +553,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--23
  (./include/5.toc.tex (./Tesis_v1.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+ [4
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+
+
+
+])
+\tf@toc=\write3
+\openout3 = `Tesis_v1.toc'.
+
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 10.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [5
-
-
-
-
-]
-LaTeX Info: Redefining \. on input line 55.
-LaTeX Info: Redefining \% on input line 55.
+LaTeX Info: Redefining \. on input line 65.
+LaTeX Info: Redefining \% on input line 65.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -619,14 +572,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6])
-\tf@toc=\write3
-\openout3 = `Tesis_v1.toc'.
-
-)
-LaTeX Info: Redefining \. on input line 65.
-LaTeX Info: Redefining \% on input line 65.
- [7]
+[5]
 \openout2 = `include/6.tables.aux'.
 
  (./include/6.tables.tex (./Tesis_v1.lot
@@ -636,41 +582,26 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lot=\write4
 \openout4 = `Tesis_v1.lot'.
 
-) [8
+) [6
 
 
 
 ]
 \openout2 = `include/7.figures.aux'.
 
-
-(./include/7.figures.tex (./Tesis_v1.lof
+ (./include/7.figures.tex
+(./Tesis_v1.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lof=\write5
 \openout5 = `Tesis_v1.lof'.
 
-) [9
+) [7
 
 
 
 ]
-\openout2 = `include/7.5.code.aux'.
-
- (./include/7.5.code.tex
-(./Tesis_v1.lol [10
-
-
-
-])
-\tf@lol=\write6
-\openout6 = `Tesis_v1.lol'.
-
-)
-LaTeX Info: Redefining \. on input line 68.
-LaTeX Info: Redefining \% on input line 68.
- [11]
 \openout2 = `include/8.chapter01.aux'.
 
  (./include/8.chapter01.tex
@@ -695,125 +626,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--30
-
- []
-
 [1
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-
- []
-
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 60--62
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-
- []
-
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+ [2]
 LaTeX Info: Redefining \. on input line 64.
 LaTeX Info: Redefining \% on input line 64.
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
-
- []
-
-
-Overfull \hbox (1.23987pt too wide) in paragraph at lines 73--74
-[]\T1/cmr/m/n/12 With this pro-li-fe-ra-tion of Internet-connected de-vi-ces, e
-s-sen-tially the num-ber of Internet-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-
- []
-
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
-
- []
-
-LaTeX Info: Redefining \. on input line 91.
-LaTeX Info: Redefining \% on input line 91.
-[5]
-LaTeX Info: Redefining \. on input line 113.
-LaTeX Info: Redefining \% on input line 113.
- [6]
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
-
- []
-
-LaTeX Info: Redefining \. on input line 120.
-LaTeX Info: Redefining \% on input line 120.
-[7])
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
+[4])
 \openout2 = `include/9.chapter02.aux'.
 
  (./include/9.chapter02.tex
@@ -831,193 +661,16 @@ less on input line 11.
 
 CHAPTER 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
+[5
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
- []
 
-<image/Evolution.png, id=75, 913.4928pt x 433.62pt>
-File: image/Evolution.png Graphic file (type png)
- <use image/Evolution.png>
-Package pdftex.def Info: image/Evolution.png used on input line 37.
-(pdftex.def)             Requested size: 457.80486pt x 217.31232pt.
 
-[8
-
-
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
- []
-
-
-Underfull \hbox (badness 1371) in paragraph at lines 68--68
-\T1/cmr/m/n/12 (Co-lom-bia), MTS(Russia), Air-cel, Cel-com,
- []
-
-
-Underfull \hbox (badness 2698) in paragraph at lines 68--68
-[]|\T1/cmr/m/n/12 AT&T, Ve-ri-zon, T-Mobile (USA),Celcom,
- []
-
-
-Overfull \hbox (1.44817pt too wide) in paragraph at lines 68--69
- [] 
- []
-
-LaTeX Info: Redefining \. on input line 72.
-LaTeX Info: Redefining \% on input line 72.
-[9 <./image/Evolution.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 75--77
-
- []
-
-LaTeX Info: Redefining \. on input line 77.
-LaTeX Info: Redefining \% on input line 77.
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--97
-
- []
-
-LaTeX Info: Redefining \. on input line 97.
-LaTeX Info: Redefining \% on input line 97.
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
-
- []
-
-<image/ModelChecking.png, id=91, 789.6702pt x 338.7054pt>
-File: image/ModelChecking.png Graphic file (type png)
-
-<use image/ModelChecking.png>
-Package pdftex.def Info: image/ModelChecking.png used on input line 108.
-(pdftex.def)             Requested size: 434.91321pt x 186.54178pt.
-LaTeX Info: Redefining \. on input line 112.
-LaTeX Info: Redefining \% on input line 112.
- [12]
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
-
- []
-
-LaTeX Info: Redefining \. on input line 127.
-LaTeX Info: Redefining \% on input line 127.
-[13 <./image/ModelChecking.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 129--131
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--137
-
- []
-
-LaTeX Info: Redefining \. on input line 139.
-LaTeX Info: Redefining \% on input line 139.
-[14]
-Overfull \hbox (13.41891pt too wide) in paragraph at lines 153--154
- [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--171
-
- []
-
-LaTeX Info: Redefining \. on input line 171.
-LaTeX Info: Redefining \% on input line 171.
-[15
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
-
- []
-
-LaTeX Info: Redefining \. on input line 181.
-LaTeX Info: Redefining \% on input line 181.
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
-
- []
-
-LaTeX Info: Redefining \. on input line 195.
-LaTeX Info: Redefining \% on input line 195.
-[17])
+])
 \openout2 = `include/10.chapter03.aux'.
 
  (./include/10.chapter03.tex
@@ -1045,171 +698,16 @@ File: lstlang3.sty 2014/03/04 1.5c listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
-)
-Underfull \hbox (badness 10000) in paragraph at lines 31--33
+) [6
 
- []
 
-<image/TypeDef_Diagram.png, id=116, 662.96663pt x 246.9225pt>
-File: image/TypeDef_Diagram.png Graphic file (type png)
 
-<use image/TypeDef_Diagram.png>
-Package pdftex.def Info: image/TypeDef_Diagram.png used on input line 36.
-(pdftex.def)             Requested size: 457.80486pt x 170.5161pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--43
-
- []
-
-[18
-
-
-
-
- <./image/TypeDef_Diagram.png>]
-Overfull \hbox (1.23422pt too wide) in paragraph at lines 57--58
- [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--86
-
- []
-
-LaTeX Info: Redefining \. on input line 86.
-LaTeX Info: Redefining \% on input line 86.
-[19]
-Overfull \hbox (3.13539pt too wide) in paragraph at lines 117--117
-[]|\T1/cmr/m/n/12 time_range| 
- []
-
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
-
- []
-
-LaTeX Info: Redefining \. on input line 152.
-LaTeX Info: Redefining \% on input line 152.
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 195--197
-
- []
-
-LaTeX Info: Redefining \. on input line 197.
-LaTeX Info: Redefining \% on input line 197.
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 232--234
-
- []
-
-LaTeX Info: Redefining \. on input line 234.
-LaTeX Info: Redefining \% on input line 234.
-[23]
-Overfull \hbox (6.32323pt too wide) in paragraph at lines 260--260
-[]|\T1/cmr/m/n/12 Rules[$\OMS/cmsy/m/n/12 f$\T1/cmr/m/n/12 index$\OMS/cmsy/m/n/
-12 g$\T1/cmr/m/n/12 ].action.action_applied==
- []
-
-
-Overfull \hbox (6.32323pt too wide) in paragraph at lines 260--260
-[]|\T1/cmr/m/n/12 Rules[$\OMS/cmsy/m/n/12 f$\T1/cmr/m/n/12 index$\OMS/cmsy/m/n/
-12 g$\T1/cmr/m/n/12 ].action.action_applied==
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 267--269
-
- []
-
-LaTeX Info: Redefining \. on input line 269.
-LaTeX Info: Redefining \% on input line 269.
-[24]
-Overfull \hbox (3.77869pt too wide) in paragraph at lines 279--279
-[]|\T1/cmr/bx/n/12 Classification| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
-
- []
-
-
-Overfull \hbox (0.93367pt too wide) in paragraph at lines 298--298
-[]|\T1/cmr/bx/n/12 Classification| 
- []
-
-
-Overfull \hbox (2.13773pt too wide) in paragraph at lines 298--298
-|[][]
- []
-
-
-Overfull \hbox (2.13773pt too wide) in paragraph at lines 298--298
-|[][]
- []
-
-
-Overfull \hbox (2.74898pt too wide) in paragraph at lines 298--299
- [] 
- []
-
-LaTeX Info: Redefining \. on input line 303.
-LaTeX Info: Redefining \% on input line 303.
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--311
-
- []
-
-LaTeX Info: Redefining \. on input line 311.
-LaTeX Info: Redefining \% on input line 311.
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 317--319
-
- []
-
-LaTeX Info: Redefining \. on input line 322.
-LaTeX Info: Redefining \% on input line 322.
-[27])
+])
 \openout2 = `include/11.chapter04.aux'.
 
- (./include/11.chapter04.tex
+
+(./include/11.chapter04.tex
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 8.
@@ -1228,85 +726,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--34
-
- []
-
-[28
+[7
 
 
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
-
- []
-
-LaTeX Info: Redefining \. on input line 75.
-LaTeX Info: Redefining \% on input line 75.
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 95--97
-
- []
-
-LaTeX Info: Redefining \. on input line 130.
-LaTeX Info: Redefining \% on input line 130.
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 134--136
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--160
-
- []
-
-LaTeX Info: Redefining \. on input line 160.
-LaTeX Info: Redefining \% on input line 160.
-[31]
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
-
- []
-
-LaTeX Info: Redefining \. on input line 186.
-LaTeX Info: Redefining \% on input line 186.
-[32])
+])
 \openout2 = `include/12.chapter05.aux'.
 
  (./include/12.chapter05.tex
@@ -1328,282 +753,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
+[8
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
 
- []
 
-[33
 
-
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
-
- []
-
-LaTeX Info: Redefining \. on input line 70.
-LaTeX Info: Redefining \% on input line 70.
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-
- []
-
-<image/Plans_CoreRules.png, id=173, 371.4678pt x 217.2918pt>
-File: image/Plans_CoreRules.png Graphic file (type png)
-
-<use image/Plans_CoreRules.png>
-Package pdftex.def Info: image/Plans_CoreRules.png used on input line 75.
-(pdftex.def)             Requested size: 457.80486pt x 267.81436pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-
- []
-
-LaTeX Info: Redefining \. on input line 86.
-LaTeX Info: Redefining \% on input line 86.
-[35 <./image/Plans_CoreRules.png>]
-LaTeX Info: Redefining \. on input line 128.
-LaTeX Info: Redefining \% on input line 128.
- [36]
-LaTeX Info: Redefining \. on input line 174.
-LaTeX Info: Redefining \% on input line 174.
- [37]
-LaTeX Info: Redefining \. on input line 213.
-LaTeX Info: Redefining \% on input line 213.
- [38]
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
-
- []
-
-<image/Plans_RoamingRules.png, id=189, 403.7484pt x 268.8444pt>
-File: image/Plans_RoamingRules.png Graphic file (type png)
-
-<use image/Plans_RoamingRules.png>
-Package pdftex.def Info: image/Plans_RoamingRules.png used on input line 242.
-(pdftex.def)             Requested size: 457.80486pt x 304.85722pt.
-LaTeX Info: Redefining \. on input line 246.
-LaTeX Info: Redefining \% on input line 246.
- [39]
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
-
- []
-
-LaTeX Info: Redefining \. on input line 253.
-LaTeX Info: Redefining \% on input line 253.
-[40 <./image/Plans_RoamingRules.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
-
- []
-
-<image/Plans_RoamingRules2.png, id=197, 402.7848pt x 277.9986pt>
-File: image/Plans_RoamingRules2.png Graphic file (type png)
-
-<use image/Plans_RoamingRules2.png>
-Package pdftex.def Info: image/Plans_RoamingRules2.png used on input line 293.
-(pdftex.def)             Requested size: 457.80486pt x 315.9715pt.
-LaTeX Info: Redefining \. on input line 297.
-LaTeX Info: Redefining \% on input line 297.
- [41]
-LaTeX Info: Redefining \. on input line 319.
-LaTeX Info: Redefining \% on input line 319.
- [42 <./image/Plans_RoamingRules2.png>]
-LaTeX Info: Redefining \. on input line 352.
-LaTeX Info: Redefining \% on input line 352.
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 374--375
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
-
- []
-
-LaTeX Info: Redefining \. on input line 380.
-LaTeX Info: Redefining \% on input line 380.
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
-
- []
-
-LaTeX Info: Redefining \. on input line 427.
-LaTeX Info: Redefining \% on input line 427.
-[45]
-Underfull \hbox (badness 10000) in paragraph at lines 456--458
-
- []
-
-LaTeX Info: Redefining \. on input line 461.
-LaTeX Info: Redefining \% on input line 461.
-[46]
-Underfull \hbox (badness 10000) in paragraph at lines 488--490
-
- []
-
-LaTeX Info: Redefining \. on input line 501.
-LaTeX Info: Redefining \% on input line 501.
-[47]
-Underfull \hbox (badness 10000) in paragraph at lines 520--522
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 545--546
-
- []
-
-LaTeX Info: Redefining \. on input line 546.
-LaTeX Info: Redefining \% on input line 546.
-[48]
-Underfull \hbox (badness 10000) in paragraph at lines 547--548
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 549--550
-
- []
-
-LaTeX Info: Redefining \. on input line 579.
-LaTeX Info: Redefining \% on input line 579.
-[49]
-LaTeX Info: Redefining \. on input line 628.
-LaTeX Info: Redefining \% on input line 628.
- [50]
-Underfull \hbox (badness 10000) in paragraph at lines 667--668
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 669--670
-
- []
-
-LaTeX Info: Redefining \. on input line 671.
-LaTeX Info: Redefining \% on input line 671.
-[51]
-Underfull \hbox (badness 10000) in paragraph at lines 710--711
-
- []
-
-LaTeX Info: Redefining \. on input line 714.
-LaTeX Info: Redefining \% on input line 714.
-[52]
-Underfull \hbox (badness 10000) in paragraph at lines 741--743
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 744--745
-
- []
-
-LaTeX Info: Redefining \. on input line 748.
-LaTeX Info: Redefining \% on input line 748.
-[53]
-LaTeX Info: Redefining \. on input line 796.
-LaTeX Info: Redefining \% on input line 796.
- [54]
-Underfull \hbox (badness 10000) in paragraph at lines 815--816
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 817--818
-
- []
-
-LaTeX Info: Redefining \. on input line 834.
-LaTeX Info: Redefining \% on input line 834.
-[55]
-LaTeX Info: Redefining \. on input line 870.
-LaTeX Info: Redefining \% on input line 870.
- [56]
-LaTeX Info: Redefining \. on input line 922.
-LaTeX Info: Redefining \% on input line 922.
- [57]
-Underfull \hbox (badness 10000) in paragraph at lines 937--938
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 939--940
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 942--944
-
- []
-
-LaTeX Info: Redefining \. on input line 944.
-LaTeX Info: Redefining \% on input line 944.
-[58]
-Underfull \hbox (badness 10000) in paragraph at lines 970--971
-
- []
-
-LaTeX Info: Redefining \. on input line 974.
-LaTeX Info: Redefining \% on input line 974.
-[59]
-Overfull \hbox (4.7964pt too wide) in paragraph at lines 1036--1036
-|[][]
- []
-
-
-Overfull \hbox (0.51913pt too wide) in paragraph at lines 1036--1037
- [] 
- []
-
-LaTeX Info: Redefining \. on input line 1041.
-LaTeX Info: Redefining \% on input line 1041.
-[60]
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1043
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
-
- []
-
-LaTeX Info: Redefining \. on input line 1047.
-LaTeX Info: Redefining \% on input line 1047.
-[61]
-Underfull \hbox (badness 10000) in paragraph at lines 1048--1049
-
- []
-
-LaTeX Info: Redefining \. on input line 1050.
-LaTeX Info: Redefining \% on input line 1050.
-[62])
+])
 \openout2 = `include/13.chapter06.aux'.
 
  (./include/13.chapter06.tex
@@ -1620,54 +775,12 @@ Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 10.
 
 CHAPTER 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
-
- []
-
-[63
+[9
 
 
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-
- []
-
-LaTeX Info: Redefining \. on input line 37.
-LaTeX Info: Redefining \% on input line 37.
-[64])
+])
 \openout2 = `includes/bibliografia.aux'.
 
  (./includes/bibliografia.tex
@@ -1679,209 +792,43 @@ less on input line 6.
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 7.
 
-(./Tesis_v1.bbl
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `English'. Using the pattern for
-** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `English'. Using the pattern for
-** the default language instead.
-[65
+(./Tesis_v1.bbl)) [10
 
-
-
-
-]
-LaTeX Info: Redefining \. on input line 144.
-LaTeX Info: Redefining \% on input line 144.
- [66]
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `English'. Using the pattern for
-** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `English'. Using the pattern for
-** the default language instead.
-))
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
- [67]
-\openout2 = `include/14.AppendixA.aux'.
-
- (./include/14.AppendixA.tex
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 8.
-
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 9.
-
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 10.
-
-Appendix A.
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
-[68
-
-
-
-]
-Overfull \hbox (51.29259pt too wide) in paragraph at lines 47--48
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (57.03992pt too wide) in paragraph at lines 47--48
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.29259pt too wide) in paragraph at lines 48--49
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (57.03992pt too wide) in paragraph at lines 48--49
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.29259pt too wide) in paragraph at lines 49--50
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (57.03992pt too wide) in paragraph at lines 49--50
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.29259pt too wide) in paragraph at lines 50--51
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (57.03992pt too wide) in paragraph at lines 50--51
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.29259pt too wide) in paragraph at lines 51--52
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (57.03992pt too wide) in paragraph at lines 51--52
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.29259pt too wide) in paragraph at lines 52--53
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (57.03992pt too wide) in paragraph at lines 52--53
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.29259pt too wide) in paragraph at lines 53--54
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.29259pt too wide) in paragraph at lines 53--54
-[][][][][][][][][][][][][][][][][][][][][][][][][][]  
- []
-
-LaTeX Info: Redefining \. on input line 60.
-LaTeX Info: Redefining \% on input line 60.
-[69]
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
-
- []
-
-)
-LaTeX Info: Redefining \. on input line 81.
-LaTeX Info: Redefining \% on input line 81.
- [70]
-\openout2 = `include/vitae.aux'.
-
- (./include/vitae.tex
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 6.
-
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 7.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
- []
-
-) [71
 
 
 
 ] (./Tesis_v1.aux (./include/1.front_page.aux)
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
- (./include/4.dedication.aux) (./include/ack.aux) (./include/2.abstract.aux) (.
-/include/2.resumen.aux)
+
+(./include/4.dedication.aux) (./include/ack.aux) (./include/2.abstract.aux)
 (./include/5.toc.aux) (./include/6.tables.aux) (./include/7.figures.aux)
-(./include/7.5.code.aux) (./include/8.chapter01.aux) (./include/9.chapter02.aux
-) (./include/10.chapter03.aux) (./include/11.chapter04.aux)
+(./include/8.chapter01.aux) (./include/9.chapter02.aux)
+(./include/10.chapter03.aux) (./include/11.chapter04.aux)
 (./include/12.chapter05.aux) (./include/13.chapter06.aux)
-(./includes/bibliografia.aux) (./include/14.AppendixA.aux) (./include/vitae.aux
-))
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+(./includes/bibliografia.aux)) ) 
 Here is how much of TeX's memory you used:
- 9144 strings out of 493104
- 131042 string characters out of 6136932
- 265179 words of memory out of 5000000
- 12041 multiletter control sequences out of 15000+600000
- 24331 words of font info for 54 fonts, out of 8000000 for 9000
+ 8877 strings out of 493104
+ 126367 string characters out of 6136932
+ 222839 words of memory out of 5000000
+ 11808 multiletter control sequences out of 15000+600000
+ 26451 words of font info for 70 fonts, out of 8000000 for 9000
  1379 hyphenation exceptions out of 8191
- 40i,20n,51p,1001b,1870s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super
-/sfbi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-fti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on Tesis_v1.pdf (83 pages, 817884 bytes).
+ 40i,12n,51p,1342b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-s
+uper-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sfxc1200.pfb>
+Output written on Tesis_v1.pdf (18 pages, 193537 bytes).
 PDF statistics:
- 353 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
+ 108 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
