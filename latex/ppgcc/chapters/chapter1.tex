@@ -1,0 +1,76 @@
+\section{Background}
+\vspace{30 pt}
+\noindent
+Exists many problems of Artificial Intelligent (\texttt{AI}), such as: Finding the shortest path from one point to another in a game map, solve the games of PACMAN, 8$-$tile$-$puzzle, Rubick's cube, etc. The level of difficulty to solve the problems mentioned are linked with the size of the search space generated. \\
+
+State$-$space search algorithms have been used to solve the problems mentioned above. And in this dissertation we study the approach to solve problems in order to reduce the size of the search tree generated and the running time of the search algorithm. \\
+
+\section{Problem Statement and Motivation}
+\noindent
+Every problem of Artificial Intelligent can be cast as a state space problem. The state space is a set of states where each state represent a possible solution to the problem and each state is linked with other states if exists a function that goes from one state to another. In the search space there are many solutions that represent the same state, each of this solutions are called node. So, many nodes can be represented as one state. To find the solution of the problem is required the use of search algorithms such as: Depth First Search (\texttt{DFS}), which looks the solution of the problem traversing the search space exploring the nodes in each branch before backtracking up to find the solution. Another search algorithm is Breadth First Search (\texttt{BFS}), which looks for the solution exploring the neighbors nodes first, before moving to the next level of neighbors. The mentioned algorithms have the characteristic that when they do the search, they generate a larger search space. The search space that these algorithms generate are called Brute force search tree (\texttt{BFST}). \\
+
+There are other types of algorithms called heuristics informed search, which are algorithms that requires the use of heuristics. The heuristic is the estimation of the distance for one node in the search tree to get to the near solution. The heuristic informed search generates smaller search tree in comparison to the \texttt{BFST}, because the heuristic guides the search exploring the nodes that are in the solution path and prunes the nodes which are not. Also, the use of heuristics reduce the running time of the search algorithm. \\
+
+There are different approaches to create heuristics, such as: Pattern Databases (\texttt{PDBs}), Neural Network, and Genetic Algorithm. These systems that create heuristics receive the name of Heuristics Generators. And one of the approaches that have showed most successfull results in heuristic generation is the PDBs, which is memory-based heuristic functions obtained by abstracting away certain problem variables, so that the remaining problem ("pattern") is small enough to be solved optimally for every state by blind exhaustive search. The results stored in a table, represent a PDB for the original problem. The abstraction of the search space gives an admissible heuristic function, mapping states to lower bounds. \\
+
+Exists many ways to take advantage of all the heuristics that can be created, for example: \cite{holte2006maximizing} showed that search can be faster if several smaller pattern databases are used instead of one large pattern database. In addition \cite{domshlak2010max} and \cite{tolpin2013towards} results showed that evaluating the heuristic lazily, only when they are essensial to a decision to be made in the search process is worthy in comparison to take the maximum of the set of heuristics. Then, using all the heuristics do not guarantees to solve the major number of problems in a limit time.
+
+\section{Aim and Objectives}
+\subsection{Aim}
+\noindent
+The objective of this dissertation is to develop meta-reasoning approaches for selecting heuristics functions from a large set of heuristics with the goal of reducing the running time of the search algorithm employing these functions.
+
+\subsection{Objectives}
+\noindent
+
+\begin{itemize}
+  \item Develop approaches to obtain the cardinality of the subsets of heuristics found.
+  
+  \item Develop an approach to find a subset of heuristics from a large pool of heuristics that optimize the number of nodes expanded in the process of search.
+  
+  \item Develop an approach for selecting a subset of heuristic functions based on the minimum evaluation cost of each heuristic.
+  
+  \item Develop an strategy to drop heuristics during the sampling that do not help the objective function.  
+  
+  \item Use Stratified Sampling (SS) algorithm for predicting the search tree size of Iterative-Deepening A* (IDA*). We use SS as our utility function.
+   
+\end{itemize}
+
+\section{Scope, Limitations, and Delimitations}
+\noindent
+The meta$-$reasoning described in this thesis was based on the fact that the state of the art in 
+\section{Justification}
+\noindent
+TODO
+\section{Hypothesis}
+\noindent
+This thesis will intend to prove the hypotheses listed below:
+\begin{itemize}
+\item \textbf{H1:} The verification that our objective function of selection is related with two properties: Monotonicity and Submodularity .
+\item \textbf{H2:} Reducing the size of the search tree generated helps to solve more problems.
+\end{itemize}
+
+\section{Contribution of the Thesis}
+\noindent
+The main contributions of this Thesis are:
+\begin{itemize}
+\item Provide a prediction method to estimate the size of the search tree generated.
+\item Provide a meta$-$reasoning approach based on the size of the search tree generated.
+\item Provide a meta$-$reasoning approach based on the evaluation cost of each heuristic. 
+\end{itemize}
+
+\section{Organization of the Thesis}
+\noindent
+The Thesis is organized as follows: 
+\begin{enumerate}
+\item In Chapter 1, the introduction to the thesis is provided which also includes our motivation and defines its scope. 
+\item In Chapter 2, we review the State of the Art.
+\item In Chapter 3, we introduce our meta$-$reasoning approach. 
+\item In Chapter 4, we introduce. 
+\item In Chapter 5, we .
+\item We conclude in Chapter 6 by discussing further improvements and future work.
+\end{enumerate}
+
+In the next chapter, the domain 8$-$tile$-$puzzle is used to understand the concepts that will be helpful for the other chapters. \\
+
+\clearpage
