@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -26,5 +26,23 @@ David Tolpin, Tal Beja, Solomon~Eyal Shimony, Ariel Felner, and Erez Karpas.
 \newblock Towards rational deployment of multiple heuristics in a*.
 \newblock In \emph{Proceedings of the Twenty-Third international joint
   conference on Artificial Intelligence}, pages 674--680. AAAI Press, 2013.
+
+\bibitem[B{\"a}ckstr{\"o}m and Nebel(1995)]{backstrom1995complexity}
+Christer B{\"a}ckstr{\"o}m and Bernhard Nebel.
+\newblock Complexity results for sas+ planning.
+\newblock \emph{Computational Intelligence}, 11\penalty0 (4):\penalty0
+  625--655, 1995.
+
+\bibitem[Hart and Raphael(1968)]{hart1968formal}
+N.~J.; Hart, P. E.;~Nilsson and B.~Raphael.
+\newblock A formal basis for the heuristic determination of minimum cost paths.
+\newblock \emph{IEEE Transactions on Systems Science and Cybernetics SSC},
+  4\penalty0 (2):\penalty0 100--107, 1968.
+
+\bibitem[Culberson and Schaeffer(1998)]{culberson1998pattern}
+Joseph~C Culberson and Jonathan Schaeffer.
+\newblock Pattern databases.
+\newblock \emph{Computational Intelligence}, 14\penalty0 (3):\penalty0
+  318--334, 1998.
 
 \end{thebibliography}
