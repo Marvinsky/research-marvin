@@ -43,9 +43,12 @@ The state space problem illustrated in the figure \ref{fig:8tilepuzzle_begin} is
 The legal operators are to slide any tile that is horizontally or vertically adjacent to the blank into the blank position. The problem is to rearrange the tiles from some random initial configuration into a particular desired goal configuration. The 8$-$puzzle contains 181,440 reachable states, the 15$-$puzzle contains about $10\sp{13}$ reachable states, and the 24$-$puzzle contains almost $10\sp{25}$ states. \\
 
 \begin{figure}[htb]
-\begin{center}
-\includegraphics[scale=0.45]{images/image_initial_end}
-\end{center}
+\centering
+\begin{forest}
+ [\usebox\myboxa \hspace*{1.4in} \usebox\myboxb]
+ $\node [xshift=-5.5cm,yshift=3.5cm] (A) at (2,0) {Initial};$
+ $\node [xshift=1.5cm,yshift=3.5cm] (A) at (2,0) {Goal};$
+\end{forest}
 \caption{The left tile$-$puzzle is the initial distribution of tiles and the right tile$-$puzzle is the goal distribution of tiles. Each one represent a State.} \label{fig:8tilepuzzle_begin}
 \end{figure}
 
@@ -56,9 +59,32 @@ Instead of using an algorithm of Brute force search that will analyze all the po
 State$-$space algorithms, such as A* \cite{hart1968formal}, are important in many \texttt{AI} applications. A* uses the $f(s) = g(s) + h(s)$ cost function to guide its search. Here, $g(s)$ is the cost of the path from the start state $s$, and $h(s)$ is the estimated cost$-$to$-$go from $s$ to a gial; $h(.)$ is known as the heuristic function. The heuristic is the mathematical concept that represent to the estimate distance from the node $s$ to the nearest goal state.
 
 \begin{figure}[htb]
-\begin{center}
-\includegraphics[scale=0.45]{images/image_search_tree}
-\end{center}
+\centering
+\begin{tikzpicture}
+	%\draw[yshift=-1 em, ultra thick] (0,0) [point] -- (5,0) [point] -- (10,0) [point];
+	\coordinate (I) at (0,0) (I) node[point=ultra thick, above] {I};
+	\coordinate (I1) at (2,0) (I1) node[point=ultra thick, above] {};
+	\coordinate (I2) at (4,0) (I2) node[point=ultra thick, above] {};
+	\coordinate (I3) at (6,0) (I3) node[point=ultra thick, above] {};
+	\coordinate (s) at (8,0) (s) node[point=ultra thick, above] {s};
+	\coordinate (I4) at (10,0) (I4) node[point=ultra thick, above] {};
+	\coordinate (I5) at (12,0) (I5) node[point=ultra thick, above] {};
+	\coordinate (G) at (14,0) (G) node[point=ultra thick, above] {G};
+	\draw (I) -- (G);	
+
+\draw [decorate,decoration={brace,amplitude=4pt},xshift=4pt,yshift=14pt]
+(8,0) -- (12,0) node [black,midway,yshift=0.5cm] 
+{\footnotesize $h(s)=2$};
+
+\draw [decorate,decoration={brace,amplitude=8pt,mirror},xshift=4pt,yshift=-14pt]
+(0,0) -- (8,0) node [black,midway,yshift=-0.5cm] 
+{\footnotesize $g(s)=4$};
+
+
+\draw [decorate,decoration={brace,amplitude=6pt,mirror},xshift=4pt,yshift=-14pt]
+(8,0) -- (14,0) node [black,midway,yshift=-0.5cm] 
+{\footnotesize $h\sp{*}(s)=3$};
+\end{tikzpicture}
 \caption{Heuristic Search: \textit{I}: Initial State, \textit{s}: Some Sate, \textit{G}: Goal State} \label{fig:searchSpace}
 \end{figure}
 
@@ -98,9 +124,15 @@ The heuristics can be obtained from each state of the problem. For example, for 
 Counts the number of objects out of place.
 
 \begin{figure}[htb]
-\begin{center}
-\includegraphics[scale=0.45]{images/image_op}
-\end{center}
+\centering
+\begin{forest}
+ [\usebox\myboxa]
+ $\draw[->,xshift=4pt,yshift=14pt] (2,1) -- (4,1);$
+ $\node [xshift=1cm,yshift=2cm] (A) at (2,0) {O.P=8};$
+ \hspace*{1.8in} 
+ %$\rightarrow$  
+ [\usebox\myboxb] 
+\end{forest}
 \caption{Out of place heuristic} \label{fig:8tilepuzzle_oop}
 \end{figure}
 
@@ -110,9 +142,15 @@ The tiles numbered with 4, 1, 2, 3, 6, 7, 5, 8, and 4 are out of place then each
 Counts the minimum number of operations to get to the goal state.
 
 \begin{figure}[htb]
-\begin{center}
-\includegraphics[scale=0.45]{images/image_md}
-\end{center}
+\centering
+\begin{forest}
+ [\usebox\myboxa]
+ $\draw[->,xshift=4pt,yshift=14pt] (2,1) -- (4,1);$
+ $\node [xshift=1cm,yshift=2cm] (A) at (2,0) {M.D=1O};$
+ \hspace*{1.8in} 
+ %$\rightarrow$  
+ [\usebox\myboxb] 
+\end{forest}
 \caption{Manhatham distance heuristic} \label{fig:8tilepuzzle_md}
 \end{figure}
 
