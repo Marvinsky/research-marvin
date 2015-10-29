@@ -28,13 +28,19 @@
 \chapterprecis{The purpose of this section is to understand the problem.}\index{sinopse de capítulo}
 
 % ---
-\section{Problem definition}
+\section{Similar Selection Systems}
 % ---
 
 \noindent
 An optimization procedure which is similar to ours is presented by \cite{raynersss13}, but their procedure maximizes the average heuristic value. By contrast, the meta$-$reasoning we are proposing minimizes the search tree size.\\
 
-Our meta$-$reasoning requires a prediction of the number of nodes expanded by A$\sp{*}$ using any given subset. Although there are methods for accurately predicting the number of nodes expanded by Iterative Deepening$-$A$\sp{*}$ \cite{Korf85ida} (ID$A\sp{*}$). (\texttt{SS} system  \cite{lelis2013predicting}), these methods can't be easily adapted to A$\sp{*}$ because A$\sp{*}$'s duplicate pruning makes it very difficult to predict how many nodes will occur at depth $d$ of $A\sp{*}$'s search tree (the tree of nodes expanded by $A\sp{*}$). In this 
+Our meta$-$reasoning requires a prediction of the number of nodes expanded by A$\sp{*}$ using any given subset. Although there are methods for accurately predicting the number of nodes expanded by Iterative Deepening$-$A$\sp{*}$ \cite{Korf85ida} (ID$A\sp{*}$). (\texttt{SS} system  \cite{lelis2013predicting}), these methods can't be easily adapted to A$\sp{*}$ because A$\sp{*}$'s duplicate pruning makes it very difficult to predict how many nodes will occur at depth $d$ of $A\sp{*}$'s search tree (the tree of nodes expanded by $A\sp{*}$). As a part of our proposal, we present \texttt{SS} for predicting the size of the search tree.
+
+The system most similar to ours is \textbf{RIDA$\sp{*}$} \cite{BarleySantiagoOver}. \textbf{RIDA$\sp{*}$} also selects a subset from a pool of heuristics to guide the $A\sp{*}$ search. In \textbf{RIDA$\sp{*}$} this is done by starting with an empty subset and trying all combination of size one before trying the combination of size two and so on. \textbf{RIDA$\sp{*}$} stops after evaluating a fixed number of subsets. While \textbf{RIDA$\sp{*}$} is able to evaluate a set of heuristics with tens of elements, our meta$-$reasoning is able to evaluate a set of heuristics with thousands of elements.
+
+% ---
+\section{Problem definition}
+% ---
 
 A $SAS\sp{+} planning\ task$ \cite{backstrom1995complexity} is a 4 tuple $\triangledown = \{V, O, I, G\}.$ \textit{V} is a set of \textit{state variables.} Each variable \textit{v} $\in$ \textit{V} is associated with a finite domain of possible $D_{\substack{v}}$. A state is an assignment of a value to every $v \in V.$ The set of possible states, denoted \textit{V}, is therefore $D_{\substack{v_{\substack{1}}}}    \times ... \times D_{\substack{v_{\substack{2}}}}$. \textit{O} is a set of operators, where each operator $o \in O$ is triple $\{pre_{\substack{o}} , post_{\substack{o}}, cost_{\substack{o}}\}$ specifying the preconditions, postconditions (effects), and non-negative cost of \textit{o}. $pre_{\substack{o}}\ and\ post_{\substack{o}}$ are assignments of values to subsets os variables, $V_{\substack{pre_{\substack{o}}}}\ and\ V_{\substack{post_{\substack{o}}}}$, respectively. Operator \textit{o} is applicable to state \textit{s} if \textit{s} and $pre_{\substack{o}}$ agree on the assignment of values to variables in $V_{\substack{pre_{\substack{o}}}}$. The effect of \textit{o}, when applied to \textit{s}, is to set the variables in $V_{\substack{post_{\substack{o}}}}$ to the values specified in $post_{\substack{o}}$ and to set all other variables to the value they have in \textit{s}. \textit{G} is the goal condition, an assignment of values to a subset of variables, $V_{\substack{G}}$. A state is a goal state if it and \textit{G} agree on the assignment of values to the variable in $V_{\substack{G}}$. \textit{I} is the initial state, and the planning task, $\triangledown$, is to find an optimal (least-cost) sequence of operators leading from \textit{I} to a goal state. We denote the optimal solution cost of $\triangledown$ as $C\sp{*}$ \\
 
@@ -192,18 +198,108 @@ Something here
 
 \begin{figure}[!htb]
 \minipage{0.32\textwidth}
-  \includegraphics[width=\linewidth]{images/image_1_mem}
+  \begin{tikzpicture}
+\draw[step=1cm,gray,very thin] grid (12,1);
+%\draw[step=1cm,gray,very thin] (-1.9,-1.9) grid (5.9,5.9);
+%\fill[blue!40!white] (0,0) rectangle (4,4);
+\filldraw[fill=blue!40!white, draw=black] rectangle (12,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (11,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (10,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (9,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (8,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (7,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (6,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (5,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (4,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (3,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (2,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (1,1);
+
+ %$\draw[->,xshift=4pt,yshift=14pt] (2,1) -- (4,1);$
+ \node [xshift=2.5cm,yshift=4cm] (A) at (2,0) {S};
+ 
+ %\draw[->] (2.5cm,8em) -- (8cm,5em) node[midway,right] {\Om{2}};
+ \draw[->] (4.5,3.8) -- (8.5,1) node[midway,right] {\Vpi{}};
+ \draw[->] (8.5,0) -- (8.5,-1) node[xshift=0cm,yshift=-0.2cm] {$h(s)$};
+\end{tikzpicture}
   \caption{One heuristic of size M}\label{fig:image1mem}
 \endminipage\hfill
 \minipage{0.32\textwidth}
-  \includegraphics[width=\linewidth]{images/image_2_mem}
+  \begin{tikzpicture}
+\draw[step=1cm,gray,very thin] grid (12,1);
+%\draw[step=1cm,gray,very thin] (-1.9,-1.9) grid (5.9,5.9);
+%\fill[blue!40!white] (0,0) rectangle (4,4);
+\filldraw[fill=green!40!white, draw=black] rectangle (12,1);
+\filldraw[fill=green!40!white, draw=black] rectangle (11,1);
+\filldraw[fill=green!40!white, draw=black] rectangle (10,1);
+\filldraw[fill=green!40!white, draw=black] rectangle (9,1);
+\filldraw[fill=green!40!white, draw=black] rectangle (8,1);
+\filldraw[fill=green!40!white, draw=black] rectangle (7,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (6,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (5,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (4,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (3,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (2,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (1,1);
+
+ %$\draw[->,xshift=4pt,yshift=14pt] (2,1) -- (4,1);$
+ \node [xshift=2.5cm,yshift=4cm] (A) at (2,0) {S};
+ 
+ %\draw[->] (2.5cm,8em) -- (8cm,5em) node[midway,right] {\Om{2}};
+ \draw[->] (4.5,3.8) -- (4.5,1) node[midway,right] {\Vpi{1}};
+ \draw[->] (4.5,0) -- (4.5,-1) node[xshift=0cm,yshift=-0.2cm] {$h_{\substack{1}}(s)$};
+ 
+ \draw[->] (4.5,3.8) -- (8.5,1) node[midway,right] {\Vpi{2}};
+ \draw[->] (8.5,0) -- (8.5,-1) node[xshift=0cm,yshift=-0.2cm] {$h_{\substack{2}}(s)$};
+ 
+ \draw[decorate,decoration={brace,amplitude=8pt,mirror},xshift=4pt,yshift=-1.5cm]
+(4,0) -- (9,0) node [black,midway,yshift=-0.5cm] 
+{\footnotesize $max$};
+\end{tikzpicture}
   \caption{Two heuristics of size M/2}\label{fig:image2mem}
 \endminipage\hfill
 \minipage{0.32\textwidth}%
-  \includegraphics[width=\linewidth]{images/image_n_mem}
+  \begin{tikzpicture}
+\draw[step=1cm,gray,very thin] grid (12,1);
+%\draw[step=1cm,gray,very thin] (-1.9,-1.9) grid (5.9,5.9);
+%\fill[blue!40!white] (0,0) rectangle (4,4);
+\filldraw[fill=blue!40!white, draw=black] rectangle (12,1);
+\filldraw[fill=blue!40!white, draw=black] rectangle (11,1);
+\filldraw[fill=orange!40!white, draw=black] rectangle (10,1);
+\filldraw[fill=orange!40!white, draw=black] rectangle (9,1);
+\filldraw[fill=red!40!white, draw=black] rectangle (8,1);
+\filldraw[fill=red!40!white, draw=black] rectangle (7,1);
+\filldraw[fill=brown!40!white, draw=black] rectangle (6,1);
+\filldraw[fill=brown!40!white, draw=black] rectangle (5,1);
+\filldraw[fill=yellow!40!white, draw=black] rectangle (4,1);
+\filldraw[fill=yellow!40!white, draw=black] rectangle (3,1);
+\filldraw[fill=green!40!white, draw=black] rectangle (2,1);
+\filldraw[fill=green!40!white, draw=black] rectangle (1,1);
+
+ %$\draw[->,xshift=4pt,yshift=14pt] (2,1) -- (4,1);$
+ \node [xshift=2.5cm,yshift=4cm] (A) at (2,0) {S};
+
+ \draw[->] (4.5,3.8) -- (1,1) node[midway,right] {\Vpi{1}};
+ \draw[->] (1,0) -- (1,-1) node[xshift=0cm,yshift=-0.2cm] {$h_{\substack{1}}(s)$};
+ 
+ \draw[->] (4.5,3.8) -- (11,1) node[midway,right] {\Vpi{n}};
+ \draw[->] (11,0) -- (11,-1) node[xshift=0cm,yshift=-0.2cm] {$h_{\substack{n}}(s)$};
+ 
+%draw each arrow
+\draw[->] (3,0) -- (3,-1) node[xshift=0cm,yshift=-0.2cm] {};
+\draw[->] (5,0) -- (5,-1) node[xshift=0cm,yshift=-0.2cm] {};
+\draw[->] (7,0) -- (7,-1) node[xshift=0cm,yshift=-0.2cm] {};
+\draw[->] (9,0) -- (9,-1) node[xshift=0cm,yshift=-0.2cm] {}; 
+
+ \draw[decorate,decoration={brace,amplitude=12pt,mirror},xshift=4pt,yshift=-1.5cm]
+(0,0) -- (12,0) node [black,midway,yshift=-0.7cm] 
+{\footnotesize $max$};
+\end{tikzpicture}
+
   \caption{N heuristics of size M/N}\label{fig:image3mem}
 \endminipage
 \end{figure}
+
 
 
 
