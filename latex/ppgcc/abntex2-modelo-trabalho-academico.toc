@@ -7,94 +7,78 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Introduction}{23}{chapter*.10}
-\contentsline {part}{\partnumberline {I}\MakeTextUppercase {Preparation of the research}}{25}{part.1}
+\contentsline {chapter}{Introduction}{21}{chapter*.10}
+\contentsline {part}{\partnumberline {I}\MakeTextUppercase {Preparation of the research}}{23}{part.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Background}}{27}{chapter.1}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {About the Problem}}{25}{chapter.1}
 \precistoctext {The purpose of this section if to motivate the problem.}
-\contentsline {section}{\numberline {1.1}Problem Statement and Motivation}{27}{section.1.1}
-\contentsline {section}{\numberline {1.2}Aim and Objectives}{28}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Aim}{28}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Objectives}{28}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Scope, Limitations, and Delimitations}{28}{section.1.3}
-\contentsline {section}{\numberline {1.4}Justification}{29}{section.1.4}
-\contentsline {section}{\numberline {1.5}Hypothesis}{29}{section.1.5}
-\contentsline {section}{\numberline {1.6}Contribution of the Thesis}{29}{section.1.6}
-\contentsline {section}{\numberline {1.7}Organization of the Thesis}{29}{section.1.7}
-\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Literature Review}}{31}{part.2}
+\contentsline {section}{\numberline {1.1}Problem Statement and Motivation}{25}{section.1.1}
+\contentsline {section}{\numberline {1.2}Aim and Objectives}{26}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Aim}{26}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Objectives}{26}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Scope, Limitations, and Delimitations}{26}{section.1.3}
+\contentsline {section}{\numberline {1.4}Justification}{27}{section.1.4}
+\contentsline {section}{\numberline {1.5}Hypothesis}{27}{section.1.5}
+\contentsline {section}{\numberline {1.6}Contribution of the Thesis}{27}{section.1.6}
+\contentsline {section}{\numberline {1.7}Organization of the Thesis}{27}{section.1.7}
+\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Literature Review}}{29}{part.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Resultados de comandos}}{33}{chapter.2}
-\precistoctext {Isto \IeC {\'e} uma sinopse de cap\IeC {\'\i }tulo. A ABNT n\IeC {\~a}o traz nenhuma normatiza\IeC {\c c}\IeC {\~a}o a respeito desse tipo de resumo, que \IeC {\'e} mais comum em romances e livros t\IeC {\'e}cnicos.}
-\contentsline {section}{\numberline {2.1}Codifica\IeC {\c c}\IeC {\~a}o dos arquivos: UTF8}{33}{section.2.1}
-\contentsline {section}{\numberline {2.2}Cita\IeC {\c c}\IeC {\~o}es diretas}{33}{section.2.2}
-\select@language {english}
-\select@language {english}
-\contentsline {section}{\numberline {2.3}Notas de rodap\IeC {\'e}}{34}{section.2.3}
-\contentsline {section}{\numberline {2.4}Tabelas}{34}{section.2.4}
-\contentsline {section}{\numberline {2.5}Figuras}{35}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Figuras em \emph {minipages}}{35}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Express\IeC {\~o}es matem\IeC {\'a}ticas}{36}{section.2.6}
-\contentsline {section}{\numberline {2.7}Enumera\IeC {\c c}\IeC {\~o}es: al\IeC {\'\i }neas e subal\IeC {\'\i }neas}{37}{section.2.7}
-\contentsline {section}{\numberline {2.8}Espa\IeC {\c c}amento entre par\IeC {\'a}grafos e linhas}{38}{section.2.8}
-\contentsline {section}{\numberline {2.9}Inclus\IeC {\~a}o de outros arquivos}{39}{section.2.9}
-\contentsline {section}{\numberline {2.10}Compilar o documento \LaTeX }{39}{section.2.10}
-\contentsline {section}{\numberline {2.11}Remiss\IeC {\~o}es internas}{39}{section.2.11}
-\contentsline {section}{\numberline {2.12}Divis\IeC {\~o}es do documento: se\IeC {\c c}\IeC {\~a}o}{40}{section.2.12}
-\contentsline {subsection}{\numberline {2.12.1}Divis\IeC {\~o}es do documento: subse\IeC {\c c}\IeC {\~a}o}{40}{subsection.2.12.1}
-\contentsline {subsubsection}{\numberline {2.12.1.1}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{40}{subsubsection.2.12.1.1}
-\contentsline {subsubsection}{\numberline {2.12.1.2}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{40}{subsubsection.2.12.1.2}
-\contentsline {subsection}{\numberline {2.12.2}Divis\IeC {\~o}es do documento: subse\IeC {\c c}\IeC {\~a}o}{40}{subsection.2.12.2}
-\contentsline {subsubsection}{\numberline {2.12.2.1}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{40}{subsubsection.2.12.2.1}
-\contentsline {paragraph}{\numberline {2.12.2.1.1}Esta \IeC {\'e} uma subse\IeC {\c c}\IeC {\~a}o de quinto n\IeC {\'\i }vel}{40}{paragraph.2.12.2.1.1}
-\contentsline {paragraph}{\numberline {2.12.2.1.2}Esta \IeC {\'e} outra subse\IeC {\c c}\IeC {\~a}o de quinto n\IeC {\'\i }vel}{41}{paragraph.2.12.2.1.2}
-\contentsline {paragraph}{\numberline {2.12.2.1.3}Este \IeC {\'e} um par\IeC {\'a}grafo numerado}{41}{paragraph.2.12.2.1.3}
-\contentsline {paragraph}{\numberline {2.12.2.1.4}Esta \IeC {\'e} outro par\IeC {\'a}grafo numerado}{41}{paragraph.2.12.2.1.4}
-\contentsline {section}{\numberline {2.13}Este \IeC {\'e} um exemplo de nome de se\IeC {\c c}\IeC {\~a}o longo. Ele deve estar alinhado \IeC {\`a} esquerda e a segunda e demais linhas devem iniciar logo abaixo da primeira palavra da primeira linha}{41}{section.2.13}
-\contentsline {section}{\numberline {2.14}Diferentes idiomas e hifeniza\IeC {\c c}\IeC {\~o}es}{41}{section.2.14}
-\contentsline {section}{\numberline {2.15}Consulte o manual da classe \textsf {abntex2}}{43}{section.2.15}
-\contentsline {section}{\numberline {2.16}Refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{43}{section.2.16}
-\contentsline {subsection}{\numberline {2.16.1}Acentua\IeC {\c c}\IeC {\~a}o de refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{43}{subsection.2.16.1}
-\contentsline {section}{\numberline {2.17}Precisa de ajuda?}{44}{section.2.17}
-\contentsline {section}{\numberline {2.18}Voc\IeC {\^e} pode ajudar?}{44}{section.2.18}
-\contentsline {section}{\numberline {2.19}Quer customizar os modelos do abnT\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m 2\ para sua institui\IeC {\c c}\IeC {\~a}o ou universidade?}{44}{section.2.19}
-\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Resultados}}{45}{part.3}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Background}}{31}{chapter.2}
+\precistoctext {The purpose of this section is to understand the problem.}
+\contentsline {section}{\numberline {2.1}Problem definition}{31}{section.2.1}
+\contentsline {section}{\numberline {2.2}Heuristics}{32}{section.2.2}
+\contentsline {section}{\numberline {2.3}Problem Formulation}{33}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Out of place (O.P)}{33}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Manhatham Distance (M.D)}{34}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Heuristic Generators}{34}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Pattern Database (PDB)}{34}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Neural Network}{35}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Genetic Algorithm}{35}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Take advantage of Heuristics}{35}{section.2.5}
+\contentsline {section}{\numberline {2.6}Number of heuristics to create.}{35}{section.2.6}
+\contentsline {section}{\numberline {2.7}Heuristic Subset}{35}{section.2.7}
+\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Resultados}}{37}{part.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Lectus lobortis condimentum}}{47}{chapter.3}
-\contentsline {section}{\numberline {3.1}Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae}{47}{section.3.1}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Lectus lobortis condimentum}}{39}{chapter.3}
+\contentsline {section}{\numberline {3.1}Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae}{39}{section.3.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Nam sed tellus sit amet lectus urna ullamcorper tristique interdum elementum}}{49}{chapter.4}
-\contentsline {section}{\numberline {4.1}Pellentesque sit amet pede ac sem eleifend consectetuer}{49}{section.4.1}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Nam sed tellus sit amet lectus urna ullamcorper tristique interdum elementum}}{41}{chapter.4}
+\contentsline {section}{\numberline {4.1}Pellentesque sit amet pede ac sem eleifend consectetuer}{41}{section.4.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{51}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{43}{chapter.5}
 \vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Bibliography}{45}{section*.17}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Appendix}}{53}{section*.16}
+\contentsline {part}{\uppercase {Appendix}}{47}{section*.18}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Quisque libero justo}}{55}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Quisque libero justo}}{49}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula ac pretium ante justo a nulla curabitur tristique arcu eu metus}}{57}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula ac pretium ante justo a nulla curabitur tristique arcu eu metus}}{51}{appendix.B}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANNEX \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Annex}}{59}{section*.17}
+\contentsline {part}{\uppercase {Annex}}{53}{section*.19}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Morbi ultrices rutrum lorem.}}{61}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Morbi ultrices rutrum lorem.}}{55}{appendix.anexochapback.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus}}{63}{appendix.anexochapback.2}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus}}{57}{appendix.anexochapback.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Fusce facilisis lacinia dui}}{65}{appendix.anexochapback.3}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Fusce facilisis lacinia dui}}{59}{appendix.anexochapback.3}
 \vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Index}{61}{section*.21}

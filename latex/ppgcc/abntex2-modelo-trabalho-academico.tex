@@ -487,9 +487,11 @@ In this dissertation we present a greedy method based on the theory of supermodu
 % ----------------------------------------------------------
 
 \noindent
-Exists many problems of Artificial Intelligent (\texttt{AI}), such as: Finding the shortest path from one point to another in a game map, solve the games of PACMAN, 8$-$tile$-$puzzle, Rubick's cube, etc. The level of difficulty to solve the problems mentioned are linked with the size of the search space generated. \\
+This thesis is concerned with cost$-$optimal state$-$space planning using the A$\sp{*}$ algorithm \cite{hart1968formal}. We assume that a pool, $\zeta$, of hundreds or even thousands of heuristics is available, and that the final heuristic used to guide A$\sp{*}$, $h_{max}$, will be defined as the maximum over a subset $\zeta\sp{'}$ of those heuristics ($h_{max}(s, \zeta\sp{'}) = max_{h\in\zeta\sp{'}}h(s)$). The choice of the subset $\zeta\sp{'}$ can hugely affect the efficiency of A$\sp{*}$. For a given size $N$ and planning task $\triangledown$, a subset containing $N$ heuristics from $\zeta$ is optimal if no other subset containing $N$ heuristics from $\zeta$ results in A$\sp{*}$ expanding fewer nodes when solving $\triangledown$. \\ 
 
-State$-$space search algorithms have been used to solve the problems mentioned above. And in this dissertation we study the approach to solve problems in order to reduce the size of the search tree generated and the running time of the search algorithm. \\
+Exists many problems of Artificial Intelligent (\texttt{AI}), such as: Finding the shortest path from one point to another in a game map, 8$-$tile$-$puzzle, Rubick's cube, etc. The level of difficulty to solve the problems mentioned are linked with the size of the search space generated. \\
+
+State$-$space search algorithms have been used to solve the problems mentioned above. And in this dissertation we study the approach to solve problems in order to reduce the size of the search tree generated and the running time of the search algorithm using the best subset of heuristics selected from a large set of heuristics.
 
 % ----------------------------------------------------------
 % PARTE

@@ -1,0 +1,356 @@
+This is MetaPost, version 1.902 (TeX Live 2014/Debian) (kpathsea version 6.2.0)  29 OCT 2015 02:09
+**abntex2-modelo-references.bib
+(/usr/share/texlive/texmf-dist/metapost/base/mpost.mp
+(/usr/share/texlive/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) )
+(./abntex2-modelo-references.bib
+! A statement can't begin with `@'.
+<to be read again> 
+                   @
+l.11 @
+      article{korf2001timecomplexity,
+I was looking for the beginning of a new statement.
+If you just proceed without changing anything, I'll ignore
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   @
+l.11 @
+      article{korf2001timecomplexity,
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> Nilsson
+! Isolated expression.
+<to be read again> 
+                   ,
+l.24   author={Hart, P. E.; Nilsson,
+                                     N. J.; and Raphael, B.},
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   ,
+l.24   author={Hart, P. E.; Nilsson,
+                                     N. J.; and Raphael, B.},
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+! A statement can't begin with `and'.
+<to be read again> 
+                   and
+l.24   author={Hart, P. E.; Nilsson, N. J.; and
+                                                Raphael, B.},
+I was looking for the beginning of a new statement.
+If you just proceed without changing anything, I'll ignore
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   and
+l.24   author={Hart, P. E.; Nilsson, N. J.; and
+                                                Raphael, B.},
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+! Enormous number has been reduced.
+l.64 @article{Chen:1990:HSB:75678
+                                 ,
+I can't handle numbers bigger than 32767.99998;
+so I've changed your constant to that maximum amount.
+
+! Number is too large (25842).
+l.68  note = {UMI Order No: GAX89-25842
+                                       },
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Text line contains an invalid character.
+l.130 ... for maximizing submodular set functionsâ
+                                                  €”I},
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.130 ...for maximizing submodular set functionsâ€
+                                                  ”I},
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.130 ...or maximizing submodular set functionsâ€”
+                                                  I},
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Incomplete string token has been flushed.
+l.160 ...d Hoffmann, J{\"o}rg and Helmert, Malte},
+                                                  
+Strings should finish on the same line as they began.
+I've deleted the partial string; you might want to
+insert another by typing, e.g., `I"new string"'.
+
+! Enormous number has been reduced.
+l.180 @article{Minton1990363
+                            ,
+I can't handle numbers bigger than 32767.99998;
+so I've changed your constant to that maximum amount.
+
+! Incomplete string token has been flushed.
+l.251 ... and Hern{\'a}dv{\"o}lgyi, Istv{\'a}n T},
+                                                  
+Strings should finish on the same line as they began.
+I've deleted the partial string; you might want to
+insert another by typing, e.g., `I"new string"'.
+
+>> Cambridge
+! Isolated expression.
+<to be read again> 
+                   ,
+l.273   publisher={Menlo Park, CA; Cambridge,
+                                              MA; London; AAAI Press; MIT Pr...
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   ,
+l.273   publisher={Menlo Park, CA; Cambridge,
+                                              MA; London; AAAI Press; MIT Pr...
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> London
+! Isolated expression.
+<to be read again> 
+                   ;
+l.273 ...r={Menlo Park, CA; Cambridge, MA; London;
+                                                   AAAI Press; MIT Press; 1999}
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> AAAI.Press
+! Isolated expression.
+<to be read again> 
+                   ;
+l.273 ...k, CA; Cambridge, MA; London; AAAI Press;
+                                                   MIT Press; 1999}
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> MIT.Press
+! Isolated expression.
+<to be read again> 
+                   ;
+l.273 ...ridge, MA; London; AAAI Press; MIT Press;
+                                                   1999}
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> 1999
+! Isolated expression.
+<to be read again> 
+                   }
+l.273 ... MA; London; AAAI Press; MIT Press; 1999}
+                                                  
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   }
+l.273 ... MA; London; AAAI Press; MIT Press; 1999}
+                                                  
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+! Number is too large (23907).
+l.332 ....ibge.gov.br/visualizacao/livros/liv23907
+                                                  .pdf},
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (10520).
+l.434 ...}picos espec{\'\i}ficos da ABNT NBR 10520
+                                                  :2002 e o estilo bibliogr{...
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (6023).
+l.445 ...icos compat{\'\i}veis com a ABNT NBR 6023
+                                                  },
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (14724).
+l.455 ...pat{\'\i}vel com as normas ABNT NBR 14724
+                                                  :2011, ABNT NBR 6024:2012 ...
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (6024).
+l.455 ...normas ABNT NBR 14724:2011, ABNT NBR 6024
+                                                  :2012 e outras},
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (10520).
+l.460 @manual{NBR10520
+                      :2002,
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (10520).
+l.469 ^^ITitle = {{NBR} 10520
+                             },
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (6024).
+l.472 @manual{NBR6024
+                     :2012,
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (6024).
+l.481 ^^ITitle = {{NBR} 6024
+                            },
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (6028).
+l.484 @manual{NBR6028
+                     :2003,
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (6028).
+l.493 ^^ITitle = {{NBR} 6028
+                            },
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (14724).
+l.496 @manual{NBR14724
+                      :2001,
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (14724).
+l.505 ^^ITitle = {{NBR} 14724
+                             },
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (14724).
+l.508 @manual{NBR14724
+                      :2002,
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (14724).
+l.517 ^^ITitle = {{NBR} 14724
+                             },
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (14724).
+l.520 @manual{NBR14724
+                      :2005,
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (14724).
+l.529 ^^ITitle = {{NBR} 14724
+                             },
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (14724).
+l.532 @manual{NBR14724
+                      :2011,
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (14724).
+l.537 ... = {Substitui a Ref.~\citeonline{NBR14724
+                                                  :2005}},
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+! Number is too large (14724).
+l.542 ^^ITitle = {{NBR} 14724
+                             },
+It is at least 4096. Continue and I'll try to cope
+with that big value; but it might be dangerous.
+(Set warningcheck:=0 to suppress this message.)
+
+)
+! File ended while scanning to the end of the statement.
+<inserted text> 
+                ;
+<*> abntex2-modelo-references.bib
+                                 
+A previous error seems to have propagated,
+causing me to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+! Emergency stop.
+<*> abntex2-modelo-references.bib
+                                 
+*** (job aborted, no legal end found)
+
+
