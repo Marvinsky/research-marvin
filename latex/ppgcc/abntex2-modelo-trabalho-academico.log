@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  29 OCT 2015 15:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  29 OCT 2015 18:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1764,21 +1764,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 434--435
 (./abntex2-modelo-trabalho-academico.lot) [17] [18
 
 ]
-(./abntex2-modelo-trabalho-academico.toc
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-Overfull \hbox (7.54729pt too wide) in paragraph at lines 64--64
+(./abntex2-modelo-trabalho-academico.toc [19]
+Overfull \hbox (7.54729pt too wide) in paragraph at lines 66--66
  [][] [][][]\T1/lmss/bx/n/12 NULLAM EL-E-MEN-TUM URNA VEL IM-PERDIET 
  []
 
 
-Overfull \hbox (2.41129pt too wide) in paragraph at lines 64--64
+Overfull \hbox (2.41129pt too wide) in paragraph at lines 66--66
  \T1/lmss/bx/n/12 SO-DALES ELIT IP-SUM PHARE-TRA LIGULA AC 
  []
 
 
-Overfull \hbox (5.4115pt too wide) in paragraph at lines 64--64
+Overfull \hbox (5.4115pt too wide) in paragraph at lines 66--66
  \T1/lmss/bx/n/12 PRETIUM ANTE JUSTO A NULLA CUR-ABITUR 
  []
 
@@ -1895,7 +1892,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
-[32] [33]
+[32]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 Missing character: There is no [ in font nullfont!
@@ -1904,96 +1901,100 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32766 (local)
 Missing character: There is no [ in font nullfont!
 Missing character: There is no ] in font nullfont!
- [34]
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+ [33]
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
-
- []
-
-
-Underfull \vbox (badness 3039) has occurred while \output is active []
-
- [35]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36]
+[35] [36]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 299.
+(amsmath)                 on input line 279.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
 
-[37]) [38
+[37
+
+]) [38
 
 
 
 ] [39] [40]
 \openout2 = `chapters/chapter03.aux'.
 
- (./chapters/chapter03.tex) [41
+ (./chapters/chapter03.tex
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
 
 
-] [42
+Underfull \vbox (badness 6792) has occurred while \output is active []
 
-] [43
+ [41
+
+
+])
+[42] [43
 
 ] [44
 
-]
-(./abntex2-modelo-trabalho-academico.bbl
+] [45] [46
+
+] (./abntex2-modelo-trabalho-academico.bbl
 (./abntex2-modelo-trabalho-academico.brf)
 \tf@brf=\write6
 \openout6 = `abntex2-modelo-trabalho-academico.brf'.
 
- [45] [46
+ [47] [48
 
 ]
 bibitemlist
-) [47] [48
+) [49] [50
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 645.
 
-[49
+[51
 
-] [50] [51
+] [52] [53
 
-] [52
+] [54
 
-] [53] [54
+] [55] [56
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 673.
 
-[55
+[57
 
-] [56] [57
+] [58] [59
 
-] [58
+] [60
 
-] [59] [60
+] [61] [62
 
-] (./abntex2-modelo-trabalho-academico.ind [61]
-[62
+] (./abntex2-modelo-trabalho-academico.ind [63]
+[64
 
-] [63
+] [65
 
 
 ]) 
@@ -2013,16 +2014,10 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 701.
 (./chapters/chapter02.aux) (./chapters/chapter03.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 701.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 701.
+Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
+ot changed.
+(rerunfilecheck)             Checksum: C827F3EBFCD5D0F53953ACF11ABB43F3;805.
 
-
-Package rerunfilecheck Warning: File `abntex2-modelo-trabalho-academico.brf' ha
-s changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `abntex2-modelo-trabalho-academico.b
-rf':
-(rerunfilecheck)             Before: 0E59DE31DB080F2C22676B1ED95AF7F4;808
-(rerunfilecheck)             After:  3AD66D0A459854E0A1C13D2E8194E113;805.
 
 LaTeX Warning: There were undefined references.
 
@@ -2032,101 +2027,38 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 701.
  ) 
 Here is how much of TeX's memory you used:
- 33070 strings out of 493104
- 640391 string characters out of 6136932
- 924152 words of memory out of 5000000
- 35604 multiletter control sequences out of 15000+600000
- 117082 words of font info for 173 fonts, out of 8000000 for 9000
+ 33061 strings out of 493104
+ 640305 string characters out of 6136932
+ 924860 words of memory out of 5000000
+ 35610 multiletter control sequences out of 15000+600000
+ 117724 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,17n,123p,1875b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section*.22} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{part.4} has been referenced but does not exist, rep
-laced by a fixed one
-
-pdfTeX warning (dest): name{section.1.15} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.14} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.13} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.12.1} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.12} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.11.2} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.11.1} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.11} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.10} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.9} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.1.7} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.1.6} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.1.5} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.1.4} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.1.3} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.1.2} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.1.1} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{page.65} has been referenced but does not exist, re
-placed by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr
-/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/cm-
-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/shar
-e/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmm
-i12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/l
-mssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm120
-0.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (65 pages, 419162 bytes
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/u
+sr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/c
+m-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/sh
+are/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lms
+y7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/font
+s/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1
+200.pfb>
+Output written on abntex2-modelo-trabalho-academico.pdf (67 pages, 426995 bytes
 ).
 PDF statistics:
- 803 PDF objects out of 1000 (max. 8388607)
- 705 compressed objects within 8 object streams
- 180 named destinations out of 1000 (max. 500000)
- 36773 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 799 PDF objects out of 1000 (max. 8388607)
+ 700 compressed objects within 7 object streams
+ 164 named destinations out of 1000 (max. 500000)
+ 37805 words of extra memory for PDF output out of 42996 (max. 10000000)
 

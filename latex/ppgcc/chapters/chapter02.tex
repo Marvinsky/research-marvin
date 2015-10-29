@@ -100,30 +100,6 @@ A heuristic function $h(s)$ estimates the cost of a solution path from $s$ to a 
 
 Given a set of admissible and consistent heuristics $\zeta = \{h_{1}, h_{2}, \dots, h_{M}\}$, the heuristic $h_{max}(s,\zeta) = $max$_{h \in \zeta} h(s)$ is also admissible and consistent. When describing our method we assume all heuristics to be consistent. We define $f_{max}(s, \zeta) = g(s) + h_{max}(s, \zeta)$, where $g(s)$ is the cost of the path expanded from $I$ to $s$. $g(s)$ is minimal when A$\sp{*}$ using a consistent heuristic expands $s$. We call an A$\sp{*}$ search tree the tree defined by the states expanded by A$\sp{*}$ using a consistent heuristic while solving a problem $\triangledown$.
 
-\section{Problem Formulation}
-When solving $\triangledown$ using the consistent heuristic function $h_{max}(\zeta\sp{'})$ for $\zeta\sp{'} \subseteq \zeta$, A$\sp{*}$ expands in the worst case $J(\zeta\sp{'}, \triangledown)$ nodes, where
-
-\begin{equation}
-J(\zeta\sp{'},\triangledown) = |\{s \in V | f_{max}(s,\zeta\sp{'} \leq C\sp{*})\}|
-\label{eq:eq_size_search_tree_1}
-\end{equation}
-
-\begin{equation}
-J(\zeta\sp{'},\triangledown) = |\{s \in V | h_{max}(s,\zeta\sp{'} \leq C\sp{*}) - g(s)\}|
-\label{eq:eq_size_search_tree_2}
-\end{equation}
-
-We present a greedy algorithm for approximately solving the following optimization problem,
-
-\begin{equation}
-\begin{split}
-\textbf{minimize}_{\zeta\sp{'} \in 2\sp{|\zeta|}}J(\zeta\sp{'}, \triangledown) \\
-\textbf{subject to} |\zeta\sp{'} = N|
-\end{split}
-\end{equation}
-
-Where $N$ could be determined by a hard constraint such as the maximum number of \texttt{PDBs} one can store in memory.
-
 The heuristics can be obtained from each state of the problem. For example, for the problem of the 8$-$tile$-$puzzle figure \ref{fig:8tilepuzzle_begin} we can get two heuristics.
 
 \subsection{Out of place (O.P)}
@@ -189,7 +165,7 @@ Exists different approaches to take advantage from a large set of heuristics. In
 \section{Number of heuristics created}
 Let's suppose we have to run our meta$-$reasoning using M amount of memory available. The question would be: How many heuristics our system should handle in order to avoid out of memory errors? So. one of the objectives of this tesis is to find the number of heuristics that our subset $\zeta\sp{'}$ should have.
 
-\begin{figure}[!htb]
+\begin{figure}[htb]
   \centering
   \begin{tikzpicture}
 \draw[step=1cm,gray,very thin] grid (12,1);
@@ -218,7 +194,7 @@ Let's suppose we have to run our meta$-$reasoning using M amount of memory avail
   \caption{One heuristic of size M}\label{fig:image1mem}
 \end{figure}
 
-\begin{figure}[!htb]
+\begin{figure}[htb]
   \centering
   \begin{tikzpicture}
 \draw[step=1cm,gray,very thin] grid (12,1);
@@ -254,7 +230,7 @@ Let's suppose we have to run our meta$-$reasoning using M amount of memory avail
   \caption{Two heuristics of size M/2}\label{fig:image2mem}
 \end{figure}
 
-\begin{figure}[!htb]
+\begin{figure}[htb]
   \centering
   \begin{tikzpicture}
 \draw[step=1cm,gray,very thin] grid (12,1);
@@ -294,6 +270,10 @@ Let's suppose we have to run our meta$-$reasoning using M amount of memory avail
 \end{tikzpicture}
   \caption{N heuristics of size M/N}\label{fig:image3mem}
 \end{figure}
+
+In the Figures \ref{fig:image2mem} and \ref{fig:image3mem} we are taking advantange of the heuristics doing the maximization of all the heuristics created.
+
+\clearpage
 
 \section{Heuristic Subset}
 The heuristics generator systems can create a large number of heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best N $=$ 100 heuristics. This would be: $${1000\choose 100} = 10\sp{138} possibilities$$
