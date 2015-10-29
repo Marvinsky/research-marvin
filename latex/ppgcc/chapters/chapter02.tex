@@ -173,17 +173,10 @@ Then the sum would be 10.
 In order to solve the problem, we get the heuristics, which are information from the problem to solve the problem. Exists systems that can create heuristics for each problem. Those systems are called Heuristic Generators.
 
 \section{Heuristic Generators}
-Heuristic Generators works by creating abstractions of the original problem spaces.  There are different ways to abstract the problem space such as:
+Heuristic Generators works by creating abstractions of the original problem space. The approach that has showed more successful results lately is \texttt{PDB}.
 
 \subsection{Pattern Database (PDB)}
 It's obtained by abstracting away certain problem variables, so that the remaining problem ("pattern") is small enough to be solved optimally for every state by blind exhaustive search. The results stored in a table, represent a PDB for the original problem. The abstraction of the search space gives an admissible heuristic function, mapping states to lower bounds.
-
-\subsection{Neural Network}
-
-
-\subsection{Genetic Algorithm}
-
-
 
 \section{Take advantage of Heuristics}
 The heuristics generators can create hundreds or even thousand of heuristics. In fact, exists different ways to take advantage of those heuristics. For example: If we want to use all the heuristics created by the heuristic generator. It would not be a good idea to use all of them because the main problem involved would be the time to evaluate each heuristic in the search tree, it could take too much time. \\
@@ -193,11 +186,11 @@ One way to take advantage of heuristics would be to take the maximum of the set 
 Exists different approaches to take advantage from a large set of heuristics. In this dissertation we use the meta$-$reasoning based on the minimum evaluation time. \\
 
 
-\section{Number of heuristics to create.}
-Something here
+\section{Number of heuristics created}
+Let's suppose we have to run our meta$-$reasoning using M amount of memory available. The question would be: How many heuristics our system should handle in order to avoid out of memory errors? So. one of the objectives of this tesis is to find the number of heuristics that our subset $\zeta\sp{'}$ should have.
 
 \begin{figure}[!htb]
-\minipage{0.32\textwidth}
+  \centering
   \begin{tikzpicture}
 \draw[step=1cm,gray,very thin] grid (12,1);
 %\draw[step=1cm,gray,very thin] (-1.9,-1.9) grid (5.9,5.9);
@@ -223,8 +216,10 @@ Something here
  \draw[->] (8.5,0) -- (8.5,-1) node[xshift=0cm,yshift=-0.2cm] {$h(s)$};
 \end{tikzpicture}
   \caption{One heuristic of size M}\label{fig:image1mem}
-\endminipage\hfill
-\minipage{0.32\textwidth}
+\end{figure}
+
+\begin{figure}[!htb]
+  \centering
   \begin{tikzpicture}
 \draw[step=1cm,gray,very thin] grid (12,1);
 %\draw[step=1cm,gray,very thin] (-1.9,-1.9) grid (5.9,5.9);
@@ -257,8 +252,10 @@ Something here
 {\footnotesize $max$};
 \end{tikzpicture}
   \caption{Two heuristics of size M/2}\label{fig:image2mem}
-\endminipage\hfill
-\minipage{0.32\textwidth}%
+\end{figure}
+
+\begin{figure}[!htb]
+  \centering
   \begin{tikzpicture}
 \draw[step=1cm,gray,very thin] grid (12,1);
 %\draw[step=1cm,gray,very thin] (-1.9,-1.9) grid (5.9,5.9);
@@ -295,19 +292,14 @@ Something here
 (0,0) -- (12,0) node [black,midway,yshift=-0.7cm] 
 {\footnotesize $max$};
 \end{tikzpicture}
-
   \caption{N heuristics of size M/N}\label{fig:image3mem}
-\endminipage
 \end{figure}
 
-
-
-
 \section{Heuristic Subset}
-The heuristics generators systems can create many heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best N $=$ 100 heuristics. This would be: $${1000\choose 100} = 10\sp{138} possibilities$$
-So, try to select heuristics from a large set of heuristics are going to be treated as an optimization problem. In order to select a subset of heuristics, our objective function should guarantee two properties: Monotonicity and Submodularity. \\
+The heuristics generator systems can create a large number of heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best N $=$ 100 heuristics. This would be: $${1000\choose 100} = 10\sp{138} possibilities$$
+So, try to select heuristics from a large set of heuristics are going to be treated as an optimization problem. Then, in order to obtain a good selection of subset of heuristics, our objective function should guarantee two properties: Monotonicity and Submodularity, that would be explained in the next Part. \\
  \bigskip
 
-In the next chapter, ... \\
+In the next Part, we will introduce the meta$-$reasoning proposed for selecting heuristics and will expand on the properties of our objective functions.\\
 
 \clearpage
