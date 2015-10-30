@@ -127,15 +127,29 @@
 % -- Square with colors
 
 \newcommand\crule[3][white]{\textcolor{#1}{\rule{#2}{#3}}}
+\newcommand\sanit[3][white]{\color{#1}{\rule{#2}{#3}}}
+
 % ---
 % Configuracao de forest
 %draw 8 tile puzzle
 \newcommand{\ninepuzzle}[1]{%
 \begin{tikzpicture}
     \foreach [count=\i] \val in {#1} { 
-        \draw  let \n{row}={int(mod(\i -1, 3))}, \n{col}={ int( ( \i - 1 ) / (-3) ) } in 
+        \draw[fill=white, draw=black]  let \n{row}={int(mod(\i -1, 3))}, \n{col}={ int( ( \i - 1 ) / (-3) ) } in 
             (\n{row}, \n{col}) rectangle  +(1,1) 
             +(0.5, 0.5) node{\val};
+            %\filldraw[fill=green, draw=blue];
+    }
+\end{tikzpicture}%    
+}
+
+\newcommand{\ninepuzzlets}[1]{%
+\begin{tikzpicture}
+    \foreach [count=\i] \val/\colone in {#1} { 
+        \draw[fill=\colone, draw=black]  let \n{row}={int(mod(\i -1, 3))}, \n{col}={ int( ( \i - 1 ) / (-3) ) } in 
+            (\n{row}, \n{col}) rectangle  +(1,1) 
+            +(0.5, 0.5) node{\val};
+            %\filldraw[fill=green, draw=blue];
     }
 \end{tikzpicture}%    
 }
@@ -156,112 +170,33 @@
 
 \savebox\myboxa{\ninepuzzle{4,1,2,8, ,3,5,7,6}}
 \savebox\myboxb{\ninepuzzle{1,2,3,4,5,6,7,8, }}
-\savebox\myboxc{\ninepuzzle{C,E,C,E,M,E,C,E,C}}
-
+\savebox\myboxc{\ninepuzzlets{C/cyan,E/yellow,C/cyan,E/yellow,M/white,E/yellow,C/cyan,E/yellow,C/cyan}}
 % -- center
+\savebox\myboxcenter{\ninepuzzlets{/red,/red,/red,/red,/white,/red,/red,/red,/red}}
 
-\savebox\myboxcenter{\ninepuzzle{
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm}}}
+% --corner left up = one
 
-% -- corner
+\savebox\myboxcornerone{\ninepuzzlets{/white,/red,/red,/red,/red,/red,/red,/red,/red}}
 
-\savebox\myboxcornerone{\ninepuzzle{
-\crule{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm}}}
+% -- medium left and medium up
 
-\savebox\myboxcornertwo{\ninepuzzle{
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm}}}
+\savebox\myboxmediumleft{\ninepuzzlets{/red,/red,/red,/white,/red,/red,/red,/red,/red}}
+\savebox\myboxmediumup{\ninepuzzlets{/red,/white,/red,/red,/red,/red,/red,/red,/red}}
 
-\savebox\myboxcornerthree{\ninepuzzle{
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm}}}
+% -- corner three and corner two
+\savebox\myboxcornerthree{\ninepuzzlets{/red,/red,/red,/red,/red,/red,/white,/red,/red}}
+\savebox\myboxcornertwo{\ninepuzzlets{/red,/red,/white,/red,/red,/red,/red,/red,/red}}
 
-\savebox\myboxcornerfour{\ninepuzzle{
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule{0.8cm}{0.8cm}}}
+% -- medium right and medium down
 
-% -- medium
-\savebox\myboxmediumleft{\ninepuzzle{
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm}}}
+\savebox\myboxmediumdown{\ninepuzzlets{/red,/red,/red,/red,/red,/red,/red,/white,/red}}
+\savebox\myboxmediumright{\ninepuzzlets{/red,/red,/red,/red,/red,/white,/red,/red,/red}}
 
-\savebox\myboxmediumup{\ninepuzzle{
-\crule[red]{0.8cm}{0.8cm},
-\crule{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm}}}
+% -- corner four
 
-\savebox\myboxmediumright{\ninepuzzle{
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm}}}
+\savebox\myboxcornerfour{\ninepuzzlets{/red,/red,/red,/red,/red,/red,/red,/red,/white}}
 
-\savebox\myboxmediumdown{\ninepuzzle{
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm},
-\crule{0.8cm}{0.8cm},
-\crule[red]{0.8cm}{0.8cm}}}
-
+% end type system
 
 
 % -- draw lines
