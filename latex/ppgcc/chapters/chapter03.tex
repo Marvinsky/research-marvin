@@ -87,6 +87,85 @@ In the following analysis all heuristic functions are assumed to be consistent. 
 
 \section{Stratified Sampling (SS)}
 
+
+\begin{tikzpicture}
+%	\coordinate (A) at (2,2) \node [fill=green,circle] at (A) {};
+%    \coordinate (B) at (2.0) \node [fill=green,circle] at (B) {};
+%	\coordinate (C) at (2,-2) \node [fill=green,circle] at (C) {};
+%	\coordinate (X) at (12.0) \node [fill=green,circle] at (X) {};
+%	\coordinate (Y) at (12,-2) \node [fill=green,circle] at (Y) {};
+
+    %\coordinate (A) at (-2,3.5) (A) node[point=ultra thick, above] {};
+    %\coordinate (B) at (-2,2.5) (B) node[point=ultra thick, above] {};
+	
+	
+	%\coordinate (G) at (6,1) (G) node[point=ultra thick, above] {};
+	%\draw[->,very thick,cyan] (A) to[out=130,in=-200, distance=3cm] (G);
+	%\draw[->,very thick,cyan] (B) to[out=30,in=-200, distance=2cm] (G);
+
+
+%\draw [gray!50, xshift=4cm]  (-6.3,3) -- (0,2) -- (2,1);
+%\draw [->,cyan, xshift=4cm] plot [smooth, tension=2] coordinates { (-6.3,3) (0,2) (2,1)};
+
+
+% -- center, xdim, ydim
+\draw[very thick,cyan] \boundellipse{-2,0}{2}{4};
+\draw[very thick,cyan] \boundellipse{6,0}{1}{2};
+	
+  % First, define nodes
+% -- points F  
+  
+  \draw (-2,3) node[circle, inner sep=0.8pt, fill=black, label={below:{$E$}}] (E) {};  
+  \draw (6,1) node[circle, inner sep=0.8pt, fill=black, label={below:{$F$}}] (F) {}; 
+
+  \draw[very thick,cyan, ->>]  (E) .. controls +(5,-3) and +(-4,1).. (F);
+  \path  ($(E)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(F)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
+
+  \draw (-1,2) node[circle, inner sep=0.8pt, fill=black, label={below:{$A$}}] (A) {};
+  \draw[very thick,cyan, ->>]  (A) .. controls +(5,-3) and +(-4,1).. (F);
+  \path  ($(A)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(F)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
+	
+  \draw (-3,0) node[circle, inner sep=0.8pt, fill=black, label={below:{$B$}}] (B) {};
+  \draw[very thick,cyan, ->>]  (B) .. controls +(5,-3) and +(-4,1).. (F);
+  \path  ($(B)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(F)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
+	
+% -- points in G
+
+  \draw (-2,1) node[circle, inner sep=0.8pt, fill=black, label={below:{$C$}}] (C) {};
+  \draw (6.5,0) node[circle, inner sep=0.8pt, fill=black, label={below:{$G$}}] (G) {};
+  \draw[very thick,cyan, ->>]  (C) .. controls +(5,-3) and +(-4,1).. (G);
+  \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };	
+
+\draw (-1,0) node[circle, inner sep=0.8pt, fill=black, label={below:{$D$}}] (D) {};	
+\draw[very thick,cyan, ->>]  (D) .. controls +(5,-3) and +(-4,1).. (G);
+  \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };	
+
+\draw (-3,-1) node[circle, inner sep=0.8pt, fill=black, label={below:{$H$}}] (H) {};	
+\draw[very thick,cyan, ->>]  (H) .. controls +(5,-3) and +(-4,1).. (G);
+  \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
+	
+% -- X
+\draw (-2,-2) node[circle, inner sep=0.8pt, fill=black, label={below:{$J$}}] (J) {};
+  \draw (6,-1) node[circle, inner sep=0.8pt, fill=black, label={below:{$X$}}] (X) {};
+  \draw[very thick,cyan, ->>]  (J) .. controls +(5,-3) and +(-4,1).. (X);
+  \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
+
+\draw (-2,-3) node[circle, inner sep=0.8pt, fill=black, label={below:{$K$}}] (K) {};
+\draw[very thick,cyan, ->>]  (K) .. controls +(5,-3) and +(-4,1).. (X);
+  \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
+
+	
+\end{tikzpicture}
+
+
 \subsection{Type System}
 \begin{figure}[htb]
 \centering

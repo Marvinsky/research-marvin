@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  30 OCT 2015 11:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  30 OCT 2015 13:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1858,9 +1858,22 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 88--89
 []
  []
 
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91 \begin{tikzpicture}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 ! Undefined control sequence.
-l.90 \subsection
-                {Type System}
+l.98     \coordinate
+                     (I) at (-2,3.5) (I) node[point=ultra thick, above] {};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1874,8 +1887,307 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.90 \subsection{T
-                  ype System}
+l.98     \coordinate (
+                      I) at (-2,3.5) (I) node[point=ultra thick, above] {};
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ( in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ; in font nullfont!
+! Undefined control sequence.
+l.99 	\coordinate
+                  (G) at (6,1) (G) node[point=ultra thick, above] {};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ( in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ; in font nullfont!
+! Undefined control sequence.
+l.100 	\draw
+            [->,very thick,cyan] (I) to[out=-20,in=-70, distance=3cm] (G);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no > in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 98--101
+[]
+ []
+
+! Undefined control sequence.
+l.105 \draw
+           [very thick,cyan] \boundellipse{-2,0}{2}{4};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 \draw[
+            very thick,cyan] \boundellipse{-2,0}{2}{4};
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+l.105 \draw[very thick,cyan] \boundellipse
+                                          {-2,0}{2}{4};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no - in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no ; in font nullfont!
+! Undefined control sequence.
+l.106 \draw
+           [very thick,cyan] \boundellipse{6,0}{1}{2};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+l.106 \draw[very thick,cyan] \boundellipse
+                                          {6,0}{1}{2};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 105--107
+[]
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108 \end{tikzpicture}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.111 \subsection
+                 {Type System}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \subsection{T
+                   ype System}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1896,8 +2208,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.91 \begin{figure}
-                   [htb]
+l.112 \begin{figure}
+                    [htb]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1914,8 +2226,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.93 \begin{forest}
-                   
+l.114 \begin{forest}
+                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1924,8 +2236,8 @@ Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
 <argument> \myboxc 
                    
-l.94  [\usebox\myboxc
-                      \hspace*{1.4in} \usebox\myboxb]
+l.115  [\usebox\myboxc
+                       \hspace*{1.4in} \usebox\myboxb]
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1935,8 +2247,8 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    \relax 
-l.94  [\usebox\myboxc
-                      \hspace*{1.4in} \usebox\myboxb]
+l.115  [\usebox\myboxc
+                       \hspace*{1.4in} \usebox\myboxb]
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -1944,7 +2256,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Undefined control sequence.
 <argument> \myboxb 
                    
-l.94 ...ebox\myboxc \hspace*{1.4in} \usebox\myboxb
+l.115 ...box\myboxc \hspace*{1.4in} \usebox\myboxb
                                                   ]
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1955,7 +2267,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    \relax 
-l.94 ...ebox\myboxc \hspace*{1.4in} \usebox\myboxb
+l.115 ...box\myboxc \hspace*{1.4in} \usebox\myboxb
                                                   ]
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1969,8 +2281,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 \end{forest}
-                 
+l.116 \end{forest}
+                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1982,8 +2294,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96 \caption
-             {The heuristic value is the position of the empty space in a Sp...
+l.117 \caption
+              {The heuristic value is the position of the empty space in a S...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2057,405 +2369,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.97 \end{figure}
-                 
+l.118 \end{figure}
+                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 90--98
+Overfull \hbox (20.0pt too wide) in paragraph at lines 111--119
 []
  []
 
 
-Overfull \hbox (101.17755pt too wide) in paragraph at lines 90--98
+Overfull \hbox (101.17755pt too wide) in paragraph at lines 111--119
 |                  []
- []
-
-
-! LaTeX Error: Environment forest undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.100 \begin{forest}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101  [
-        \usebox\myboxcenter]
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no [ in font nullfont!
-! Undefined control sequence.
-<argument> \myboxcenter 
-                        
-l.101  [\usebox\myboxcenter
-                           ]
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.101  [\usebox\myboxcenter
-                           ]
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-Missing character: There is no ] in font nullfont!
-
-! LaTeX Error: \begin{document} ended by \end{forest}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.102 \end{forest}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 101--103
-[]
- []
-
-
-! LaTeX Error: Environment forest undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.104 \begin{forest}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.105  [
-        \usebox\myboxcornerone]
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no [ in font nullfont!
-! Undefined control sequence.
-<argument> \myboxcornerone 
-                           
-l.105  [\usebox\myboxcornerone
-                              ]
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.105  [\usebox\myboxcornerone
-                              ]
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-Missing character: There is no ] in font nullfont!
-
-! LaTeX Error: \begin{document} ended by \end{forest}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.106 \end{forest}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 105--107
-[]
- []
-
-
-! LaTeX Error: Environment forest undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.108 \begin{forest}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109  [
-        \usebox\myboxmediumleft \hspace*{0.2in} \usebox\myboxmediumup]
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no [ in font nullfont!
-! Undefined control sequence.
-<argument> \myboxmediumleft 
-                            
-l.109  [\usebox\myboxmediumleft
-                                \hspace*{0.2in} \usebox\myboxmediumup]
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.109  [\usebox\myboxmediumleft
-                                \hspace*{0.2in} \usebox\myboxmediumup]
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Undefined control sequence.
-<argument> \myboxmediumup 
-                          
-l.109 ...eft \hspace*{0.2in} \usebox\myboxmediumup
-                                                  ]
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.109 ...eft \hspace*{0.2in} \usebox\myboxmediumup
-                                                  ]
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-Missing character: There is no ] in font nullfont!
-
-! LaTeX Error: \begin{document} ended by \end{forest}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.110 \end{forest}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (34.45377pt too wide) in paragraph at lines 109--111
-[]|    
- []
-
-
-! LaTeX Error: Environment forest undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.112 \begin{forest}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.113  [
-        \usebox\myboxcornertwo \hspace*{0.2in} \usebox\myboxcornerthree]
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no [ in font nullfont!
-! Undefined control sequence.
-<argument> \myboxcornertwo 
-                           
-l.113  [\usebox\myboxcornertwo
-                               \hspace*{0.2in} \usebox\myboxcornerthree]
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.113  [\usebox\myboxcornertwo
-                               \hspace*{0.2in} \usebox\myboxcornerthree]
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Undefined control sequence.
-<argument> \myboxcornerthree 
-                             
-l.113 ... \hspace*{0.2in} \usebox\myboxcornerthree
-                                                  ]
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.113 ... \hspace*{0.2in} \usebox\myboxcornerthree
-                                                  ]
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-Missing character: There is no ] in font nullfont!
-
-! LaTeX Error: \begin{document} ended by \end{forest}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114 \end{forest}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (34.45377pt too wide) in paragraph at lines 113--115
-[]|    
- []
-
-
-! LaTeX Error: Environment forest undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.117 \begin{forest}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.118  [
-        \usebox\myboxmediumright \hspace*{0.2in} \usebox\myboxmediumdown]
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no [ in font nullfont!
-! Undefined control sequence.
-<argument> \myboxmediumright 
-                             
-l.118  [\usebox\myboxmediumright
-                                 \hspace*{0.2in} \usebox\myboxmediumdown]
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.118  [\usebox\myboxmediumright
-                                 \hspace*{0.2in} \usebox\myboxmediumdown]
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Undefined control sequence.
-<argument> \myboxmediumdown 
-                            
-l.118 ...t \hspace*{0.2in} \usebox\myboxmediumdown
-                                                  ]
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.118 ...t \hspace*{0.2in} \usebox\myboxmediumdown
-                                                  ]
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-Missing character: There is no ] in font nullfont!
-
-! LaTeX Error: \begin{document} ended by \end{forest}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.119 \end{forest}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (34.45377pt too wide) in paragraph at lines 118--120
-[]|    
  []
 
 
@@ -2479,6 +2406,516 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.123  [
+        \usebox\myboxcenter]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+! Undefined control sequence.
+<argument> \myboxcenter 
+                        
+l.123  [\usebox\myboxcenter
+                           ]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.123  [\usebox\myboxcenter
+                           ]
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+<recently read> \node 
+                      
+l.124  $\node
+              [xshift=1cm,yshift=2cm] (A) at (2,0) {(2, M)};$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{forest}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 \end{forest}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 123--126
+[]
+ []
+
+
+Overfull \hbox (42.52615pt too wide) in paragraph at lines 123--126
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 xshift \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (61.84682pt too wide) in paragraph at lines 123--126
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 cm; yshift \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (98.07423pt too wide) in paragraph at lines 123--126
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 cm\OT1/cmr/m/n/10 ](\OML/cmm/m/it/10 A\OT1/cm
+r/m/n/10 )\OML/cmm/m/it/10 at\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/
+10 0)[];$
+ []
+
+
+! LaTeX Error: Environment forest undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 \begin{forest}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128  [
+        \usebox\myboxcornerone]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+! Undefined control sequence.
+<argument> \myboxcornerone 
+                           
+l.128  [\usebox\myboxcornerone
+                              ]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.128  [\usebox\myboxcornerone
+                              ]
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+<recently read> \node 
+                      
+l.129  $\node
+              [xshift=1cm,yshift=2cm] (A) at (2,0) {(4, C)};$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{forest}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 \end{forest}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 128--131
+[]
+ []
+
+
+Overfull \hbox (42.52615pt too wide) in paragraph at lines 128--131
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 xshift \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (61.84682pt too wide) in paragraph at lines 128--131
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 cm; yshift \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (95.14507pt too wide) in paragraph at lines 128--131
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 cm\OT1/cmr/m/n/10 ](\OML/cmm/m/it/10 A\OT1/cm
+r/m/n/10 )\OML/cmm/m/it/10 at\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/
+10 0)[];$
+ []
+
+
+! LaTeX Error: Environment forest undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.132 \begin{forest}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133  [
+        \usebox\myboxmediumleft \hspace*{0.2in} \usebox\myboxmediumup]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+! Undefined control sequence.
+<argument> \myboxmediumleft 
+                            
+l.133  [\usebox\myboxmediumleft
+                                \hspace*{0.2in} \usebox\myboxmediumup]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.133  [\usebox\myboxmediumleft
+                                \hspace*{0.2in} \usebox\myboxmediumup]
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \myboxmediumup 
+                          
+l.133 ...eft \hspace*{0.2in} \usebox\myboxmediumup
+                                                  ]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.133 ...eft \hspace*{0.2in} \usebox\myboxmediumup
+                                                  ]
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+<recently read> \node 
+                      
+l.134  $\node
+              [xshift=1cm,yshift=2cm] (A) at (4,0) {(3, E)};$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{forest}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 \end{forest}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (76.97992pt too wide) in paragraph at lines 133--136
+[]|   $\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 xshift \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (61.84682pt too wide) in paragraph at lines 133--136
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 cm; yshift \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (95.24089pt too wide) in paragraph at lines 133--136
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 cm\OT1/cmr/m/n/10 ](\OML/cmm/m/it/10 A\OT1/cm
+r/m/n/10 )\OML/cmm/m/it/10 at\OT1/cmr/m/n/10 (4\OML/cmm/m/it/10 ; \OT1/cmr/m/n/
+10 0)[];$
+ []
+
+
+! LaTeX Error: Environment forest undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 \begin{forest}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138  [
+        \usebox\myboxcornerthree \hspace*{0.2in} \usebox\myboxcornertwo]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+! Undefined control sequence.
+<argument> \myboxcornerthree 
+                             
+l.138  [\usebox\myboxcornerthree
+                                 \hspace*{0.2in} \usebox\myboxcornertwo]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.138  [\usebox\myboxcornerthree
+                                 \hspace*{0.2in} \usebox\myboxcornertwo]
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \myboxcornertwo 
+                           
+l.138 ...ee \hspace*{0.2in} \usebox\myboxcornertwo
+                                                  ]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.138 ...ee \hspace*{0.2in} \usebox\myboxcornertwo
+                                                  ]
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+<recently read> \node 
+                      
+l.139  $\node
+              [xshift=1cm,yshift=2cm] (A) at (4,0) {(2, C)};$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{forest}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 \end{forest}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (76.97992pt too wide) in paragraph at lines 138--141
+[]|   $\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 xshift \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (61.84682pt too wide) in paragraph at lines 138--141
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 cm; yshift \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (95.14507pt too wide) in paragraph at lines 138--141
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 cm\OT1/cmr/m/n/10 ](\OML/cmm/m/it/10 A\OT1/cm
+r/m/n/10 )\OML/cmm/m/it/10 at\OT1/cmr/m/n/10 (4\OML/cmm/m/it/10 ; \OT1/cmr/m/n/
+10 0)[];$
+ []
+
+
+! LaTeX Error: Environment forest undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.143 \begin{forest}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.144  [
+        \usebox\myboxmediumdown \hspace*{0.2in} \usebox\myboxmediumright]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+! Undefined control sequence.
+<argument> \myboxmediumdown 
+                            
+l.144  [\usebox\myboxmediumdown
+                                \hspace*{0.2in} \usebox\myboxmediumright]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.144  [\usebox\myboxmediumdown
+                                \hspace*{0.2in} \usebox\myboxmediumright]
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \myboxmediumright 
+                             
+l.144 ... \hspace*{0.2in} \usebox\myboxmediumright
+                                                  ]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.144 ... \hspace*{0.2in} \usebox\myboxmediumright
+                                                  ]
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+<recently read> \node 
+                      
+l.145  $\node
+              [xshift=1cm,yshift=2cm] (A) at (4,0) {(1, E)};$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{forest}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.146 \end{forest}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (76.97992pt too wide) in paragraph at lines 144--147
+[]|   $\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 xshift \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (61.84682pt too wide) in paragraph at lines 144--147
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 cm; yshift \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (95.24089pt too wide) in paragraph at lines 144--147
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 cm\OT1/cmr/m/n/10 ](\OML/cmm/m/it/10 A\OT1/cm
+r/m/n/10 )\OML/cmm/m/it/10 at\OT1/cmr/m/n/10 (4\OML/cmm/m/it/10 ; \OT1/cmr/m/n/
+10 0)[];$
+ []
+
+
+! LaTeX Error: Environment forest undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 \begin{forest}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.150  [
         \usebox\myboxcornerfour]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2487,7 +2924,7 @@ Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
 <argument> \myboxcornerfour 
                             
-l.123  [\usebox\myboxcornerfour
+l.150  [\usebox\myboxcornerfour
                                ]
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2498,13 +2935,24 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    \relax 
-l.123  [\usebox\myboxcornerfour
+l.150  [\usebox\myboxcornerfour
                                ]
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
 Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+<recently read> \node 
+                      
+l.151  $\node
+              [xshift=1cm,yshift=2cm] (A) at (2,0) {(0, C)};$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 ! LaTeX Error: \begin{document} ended by \end{forest}.
 
@@ -2512,15 +2960,32 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.124 \end{forest}
+l.152 \end{forest}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 123--125
+Overfull \hbox (20.0pt too wide) in paragraph at lines 150--153
 []
+ []
+
+
+Overfull \hbox (42.52615pt too wide) in paragraph at lines 150--153
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 xshift \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (61.84682pt too wide) in paragraph at lines 150--153
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 cm; yshift \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (95.14507pt too wide) in paragraph at lines 150--153
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 cm\OT1/cmr/m/n/10 ](\OML/cmm/m/it/10 A\OT1/cm
+r/m/n/10 )\OML/cmm/m/it/10 at\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/
+10 0)[];$
  []
 
 
@@ -2531,7 +2996,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 \clearpage
+l.154 \clearpage
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2541,7 +3006,7 @@ or  <return>  to continue without it.
 ! Undefined control sequence.
 <write> \newlabel{ghs}{{}{\thepage 
                                    }}
-l.126 \clearpage
+l.154 \clearpage
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2554,7 +3019,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <write> ...eq:eq_size_search_tree_1}{{1}{\thepage 
                                                   }}
-l.126 \clearpage
+l.154 \clearpage
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2566,7 +3031,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <write> ...eq:eq_size_search_tree_2}{{2}{\thepage 
                                                   }}
-l.126 \clearpage
+l.154 \clearpage
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2578,7 +3043,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <write> \newlabel{alg:ghs_algorithm}{{}{\thepage 
                                                  }}
-l.126 \clearpage
+l.154 \clearpage
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2590,7 +3055,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <write> \newlabel{fig:type_system}{{}{\thepage 
                                                }}
-l.126 \clearpage
+l.154 \clearpage
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2607,11 +3072,11 @@ and I'll forget about whatever was undefined.
 
  
 Here is how much of TeX's memory you used:
- 35 strings out of 493104
- 475 string characters out of 6136932
- 56498 words of memory out of 5000000
- 3595 multiletter control sequences out of 15000+600000
+ 38 strings out of 493104
+ 504 string characters out of 6136932
+ 57498 words of memory out of 5000000
+ 3598 multiletter control sequences out of 15000+600000
  4116 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,4n,14p,454b,119s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 18i,4n,14p,454b,120s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
