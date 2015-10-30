@@ -42,7 +42,9 @@
 \contentsline {section}{\numberline {3.1}Problem Formulation}{41}{section.3.1}
 \contentsline {section}{\numberline {3.2}GHS Algorithm}{41}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}GHS Approximation Analysis}{42}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae}{43}{section.3.3}
+\contentsline {section}{\numberline {3.3}Stratified Sampling (SS)}{42}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Type System}{42}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae}{44}{section.3.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Nam sed tellus sit amet lectus urna ullamcorper tristique interdum elementum}}{45}{chapter.4}
 \contentsline {section}{\numberline {4.1}Pellentesque sit amet pede ac sem eleifend consectetuer}{45}{section.4.1}

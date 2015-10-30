@@ -85,3 +85,44 @@ The algorithm receives as input a planning problem $\triangledown$, a set of heu
 \subsection{GHS Approximation Analysis}
 In the following analysis all heuristic functions are assumed to be consistent. We also assume that A$\sp{*}$ expands all nodes $n$ with $f(n) \leq C\sp{*}$ while solving $\triangledown$, as shown in Equation \eqref{eq:eq_size_search_tree_1}.
 
+\section{Stratified Sampling (SS)}
+
+\subsection{Type System}
+\begin{figure}[htb]
+\centering
+\begin{forest}
+ [\usebox\myboxc \hspace*{1.4in} \usebox\myboxb]
+\end{forest}
+\caption{The heuristic value is the position of the empty space in a Specific state.} \label{fig:type_system}
+\end{figure}
+
+
+
+\begin{figure}[htb]
+\centering
+\begin{forest}
+ [\usebox\myboxcenter]
+\end{forest}
+\caption{The heuristic value is the position of the empty space in a Specific state.} \label{fig:type_center}
+\end{figure}
+
+
+\begin{figure}[htb]
+\centering
+\begin{forest}
+ [\usebox\myboxcornerone \hspace*{0.2in} \usebox\myboxcornertwo \hspace*{0.2in} \usebox\myboxcornerthree \hspace*{0.2in} \usebox\myboxcornerfour]
+\end{forest}
+\caption{The heuristic value is the position of the empty space in a Specific state.} \label{fig:type_corner}
+\end{figure}
+
+
+
+\begin{figure}[htb]
+\centering
+\begin{forest}
+ [\usebox\myboxmediumleft \hspace*{0.2in} \usebox\myboxmediumup \hspace*{0.2in} \usebox\myboxmediumright \hspace*{0.2in} \usebox\myboxmediumdown]
+\end{forest}
+\caption{The heuristic value is the position of the empty space in a Specific state.} \label{fig:type_medium}
+\end{figure}
+
+\clearpage

@@ -95,6 +95,14 @@
 \usetikzlibrary{arrows}
 \usetikzlibrary{decorations.pathreplacing} 
 
+% -- square with colors
+\usepackage{xcolor}
+
+% Theorems
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{corollary}{Corollary}[theorem]
+%\newtheorem{lemma}[theorem]{Lemma}
+
 % --- 
 % CONFIGURAÇÕES DE PACOTES
 % --- 
@@ -116,7 +124,9 @@
 	\fi}%
 % ---
 
+% -- Square with colors
 
+\newcommand\crule[3][white]{\textcolor{#1}{\rule{#2}{#3}}}
 % ---
 % Configuracao de forest
 %draw 8 tile puzzle
@@ -133,13 +143,127 @@
 \newsavebox\myboxa
 \newsavebox\myboxb
 \newsavebox\myboxc
-\newsavebox\myboxd
-\newsavebox\myboxe
+
+\newsavebox\myboxcenter
+\newsavebox\myboxcornerone
+\newsavebox\myboxcornertwo
+\newsavebox\myboxcornerthree
+\newsavebox\myboxcornerfour
+\newsavebox\myboxmediumleft
+\newsavebox\myboxmediumup
+\newsavebox\myboxmediumright
+\newsavebox\myboxmediumdown
+
 \savebox\myboxa{\ninepuzzle{4,1,2,8, ,3,5,7,6}}
 \savebox\myboxb{\ninepuzzle{1,2,3,4,5,6,7,8, }}
 \savebox\myboxc{\ninepuzzle{C,E,C,E,M,E,C,E,C}}
-\savebox\myboxd{\ninepuzzle{,1,2,4,5,3,6,8,7}}
-\savebox\myboxe{\ninepuzzle{8,7,3,,4,6,5,1,2}}
+
+% -- center
+
+\savebox\myboxcenter{\ninepuzzle{
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm}}}
+
+% -- corner
+
+\savebox\myboxcornerone{\ninepuzzle{
+\crule{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm}}}
+
+\savebox\myboxcornertwo{\ninepuzzle{
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm}}}
+
+\savebox\myboxcornerthree{\ninepuzzle{
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm}}}
+
+\savebox\myboxcornerfour{\ninepuzzle{
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule{0.8cm}{0.8cm}}}
+
+% -- medium
+\savebox\myboxmediumleft{\ninepuzzle{
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm}}}
+
+\savebox\myboxmediumup{\ninepuzzle{
+\crule[red]{0.8cm}{0.8cm},
+\crule{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm}}}
+
+\savebox\myboxmediumright{\ninepuzzle{
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm}}}
+
+\savebox\myboxmediumdown{\ninepuzzle{
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm},
+\crule{0.8cm}{0.8cm},
+\crule[red]{0.8cm}{0.8cm}}}
+
+
+
 % -- draw lines
 \def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
 \tikzset{
