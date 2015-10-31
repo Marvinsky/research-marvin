@@ -86,8 +86,13 @@ The algorithm receives as input a planning problem $\triangledown$, a set of heu
 In the following analysis all heuristic functions are assumed to be consistent. We also assume that A$\sp{*}$ expands all nodes $n$ with $f(n) \leq C\sp{*}$ while solving $\triangledown$, as shown in Equation \eqref{eq:eq_size_search_tree_1}.
 
 \section{Stratified Sampling (SS)}
-Stratifed Sampling
+Stratified Sampling is a prediction algorithm that estimate the number of nodes expanded by some heuristic.\\
 
+\cite{knuth1975Estimating} created a method to estimate the size of the search tree such as IDA$\sp{*}$. It works doing random walk from the root of the tree. Knuth's assumption is that all branches have the same structure. So, performing a random walk down one branch is enought to estimate the size of the search tree. However, the method does not work well for unbalanced search tree. \cite{chen1992heuristic}
+ solved this problem with a stratification of the search tree through a \textit{type system} to reduce the variance of the sampling process\cite{lelis2013predicting}
+
+\begin{figure}[htb]
+\centering 
 \begin{tikzpicture}
 
 % -- center, xdim, ydim
@@ -149,8 +154,14 @@ $\node [xshift=1cm,yshift=2cm] (A) at (-3,3) {Search Space};$
 $\node [xshift=1cm,yshift=2cm] (A) at (5,1) {Type System};$
 	
 \end{tikzpicture}
+\caption{Type system is an abraction of the Search Space.} \label{fig:ss_ts}
+\end{figure}
+
 
 \subsection{Type System}
+In the figure \ref{fig:ss_ts} each node of the Search Space is mapped to the \textit{Type System}
+
+
 \begin{figure}[htb]
 \centering
 \begin{forest}
