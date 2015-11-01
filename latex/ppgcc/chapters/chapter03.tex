@@ -209,35 +209,52 @@ In the figure \ref{fig:ss_ts} each node of the Search Space is mapped to the \te
 % -- Explaining Stratified Sampling
 \begin{tikzpicture}
 
-\draw[very thick,cyan,loosely dotted] (-2,0) -- (10,0);
-\draw[very thick,cyan,loosely dotted] (-2,-1) -- (10,-1);
-\draw[very thick,cyan,loosely dotted] (-2,-2) -- (10,-2);
-\draw[very thick,cyan,loosely dotted] (-2,-3) -- (10,-3);
+\draw[very thick,cyan,loosely dotted] (-2,0) -- (12,0);
+\draw[very thick,cyan,loosely dotted] (-2,-1.5) -- (12,-1.5);
+\draw[very thick,cyan,loosely dotted] (-2,-3) -- (12,-3);
+\draw[very thick,cyan,loosely dotted] (-2,-4.5) -- (12,-4.5);
 
 $\node [xshift=1cm,yshift=2cm] (A) at (-2,-1.5) {Level 1};$
-$\node [xshift=1cm,yshift=2cm] (A) at (-2,-2.5) {Level 2};$
-$\node [xshift=1cm,yshift=2cm] (A) at (-2,-3.5) {Level 3};$
-$\node [xshift=1cm,yshift=2cm] (A) at (-2,-4.5) {Level 4};$
+$\node [xshift=1cm,yshift=2cm] (A) at (-2,-3) {Level 2};$
+$\node [xshift=1cm,yshift=2cm] (A) at (-2,-4.5) {Level 3};$
+$\node [xshift=1cm,yshift=2cm] (A) at (-2,-6) {Level 4};$
 
-\draw[black,fill=white] (2,0.5) circle (2ex);
+% -- level 1
+\draw[black,fill=white] (3,0.5) circle (2ex);
 
-\draw[red,fill=red] (1,-0.5) circle (2ex);
-\draw[cyan,fill=cyan] (3,-0.5) circle (2ex);
-\draw[red,fill=red] (5,-0.5) circle (2ex);
+% -- level 2
+\draw[red,fill=red] (1,-1) circle (2ex);
+\draw[cyan,fill=cyan] (3,-1) circle (2ex);
+\draw[red,fill=red] (5,-1) circle (2ex);
 
-\draw[cyan,fill=cyan] (3,-1.5) circle (2ex);
-\draw[red,fill=red] (4.5,-1.5) circle (2ex);
-\draw[cyan,fill=cyan] (6,-1.5) circle (2ex);
+% -- level 3
+\draw[cyan,fill=cyan] (3,-2.5) circle (2ex);
+\draw[red,fill=red] (4.5,-2.5) circle (2ex);
+\draw[cyan,fill=cyan] (6,-2.5) circle (2ex);
 
-\draw[red,fill=red] (3.5,-2.5) circle (2ex);
-\draw[cyan,fill=cyan] (5.5,-2.5) circle (2ex);
-\draw[red,fill=red] (7,-2.5) circle (2ex);
+% -- level 4
+\draw[red,fill=red] (3.5,-4) circle (2ex);
+\draw[cyan,fill=cyan] (5.5,-4) circle (2ex);
+\draw[red,fill=red] (7,-4) circle (2ex);
+
+% -- draw arrows
+\draw[->] (3,0.1) -- (1,-0.6);
+\draw[->] (3,0.1) -- (3,-0.6);
+\draw[->] (3,0.1) -- (5,-0.6);
+
+\draw[->] (3,-1.4) -- (3,-2.1);
+
+\draw[->] (5,-1.4) -- (4.5,-2.1);
+\draw[->] (5,-1.4) -- (6,-2.1);
+
+\draw[->] (4.5,-2.9) -- (3.5,-3.6);
+\draw[->] (4.5,-2.9) -- (5.5,-3.6);
+
+\draw[->] (6,-2.9) -- (7,-3.6);
+
+\node [xshift=1cm,yshift=2cm] (A) at (10,-3) {\textcolor{red}{w = 2 } \textcolor{blue}{w = 1}};
+\node [xshift=1cm,yshift=2cm] (A) at (10,-4.5) {\textcolor{red}{w = 2 } \textcolor{blue}{w = 3}};
+\node [xshift=1cm,yshift=2cm] (A) at (10,-6) {\textcolor{red}{w = 5 } \textcolor{blue}{w = 2}};
 
 \end{tikzpicture}
-
-
-
-
-
-
 \clearpage
