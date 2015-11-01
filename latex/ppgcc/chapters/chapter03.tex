@@ -91,6 +91,8 @@ Stratified Sampling is a prediction algorithm that estimate the number of nodes 
 \cite{knuth1975Estimating} created a method to estimate the size of the search tree such as IDA$\sp{*}$. It works doing random walk from the root of the tree. Knuth's assumption is that all branches have the same structure. So, performing a random walk down one branch is enought to estimate the size of the search tree. However, the method does not work well for unbalanced search tree. \cite{chen1992heuristic}
  solved this problem with a stratification of the search tree through a \textit{type system} to reduce the variance of the sampling process\cite{lelis2013predicting}
 
+In the figure \ref{fig:ss_ts} each node of the Search Space is mapped to the \textit{Type System}
+
 \begin{figure}[htb]
 \centering 
 \begin{tikzpicture}
@@ -159,7 +161,7 @@ $\node [xshift=1cm,yshift=2cm] (A) at (5,1) {Type System};$
 
 
 \subsection{Type System}
-In the figure \ref{fig:ss_ts} each node of the Search Space is mapped to the \textit{Type System}
+The \textit{Type System} is calculated based of any property of each node in the search tree.
 
 
 \begin{figure}[htb]
@@ -207,6 +209,8 @@ In the figure \ref{fig:ss_ts} each node of the Search Space is mapped to the \te
 
 
 % -- Explaining Stratified Sampling
+\begin{figure}[htb]
+\centering
 \begin{tikzpicture}
 
 \draw[very thick,cyan,loosely dotted] (-2,0) -- (12,0);
@@ -252,9 +256,12 @@ $\node [xshift=1cm,yshift=2cm] (A) at (-2,-6) {Level 4};$
 
 \draw[->] (6,-2.9) -- (7,-3.6);
 
-\node [xshift=1cm,yshift=2cm] (A) at (10,-3) {\textcolor{red}{w = 2 } \textcolor{blue}{w = 1}};
-\node [xshift=1cm,yshift=2cm] (A) at (10,-4.5) {\textcolor{red}{w = 2 } \textcolor{blue}{w = 3}};
-\node [xshift=1cm,yshift=2cm] (A) at (10,-6) {\textcolor{red}{w = 5 } \textcolor{blue}{w = 2}};
-
+\node [xshift=1cm,yshift=2cm] (A) at (10,-3) {\textcolor{red}{w = 2 } \textcolor{cyan}{w = 1}};
+\node [xshift=1cm,yshift=2cm] (A) at (10,-4.5) {\textcolor{red}{w = 2 } \textcolor{cyan}{w = 3}};
+\node [xshift=1cm,yshift=2cm] (A) at (10,-6) {\textcolor{red}{w = 5 } \textcolor{cyan}{w = 2}};
 \end{tikzpicture}
+\caption{Search tree using Type System} \label{fig:ts_search_tree}
+\end{figure}
+
+
 \clearpage
