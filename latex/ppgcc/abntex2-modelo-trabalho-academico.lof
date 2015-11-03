@@ -1,12 +1,12 @@
 \select@language {brazil}
 \select@language {english}
-\contentsline {figure}{\numberline {1}{\ignorespaces The left tile$-$puzzle is the initial distribution of tiles and the right tile$-$puzzle is the goal distribution of tiles. Each one represent a State.}}{32}{figure.2.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Heuristic Search: \textit {I}: Initial State, \textit {s}: Some Sate, \textit {G}: Goal State}}{33}{figure.2.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Out of place heuristic}}{33}{figure.2.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Manhatham distance heuristic}}{34}{figure.2.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces One heuristic of size M}}{35}{figure.2.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Two heuristics of size M/2}}{36}{figure.2.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces N heuristics of size M/N}}{36}{figure.2.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Type system and the Search Space Representation.}}{43}{figure.3.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces The heuristic value is the position of the empty space in a Specific state.}}{44}{figure.3.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Search tree using Type System}}{46}{figure.3.10}
+\contentsline {figure}{\numberline {1}{\ignorespaces The left tile$-$puzzle is the initial distribution of tiles and the right tile$-$puzzle is the goal distribution of tiles. Each one represent a State.}}{34}{figure.2.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Heuristic Search: \textit {I}: Initial State, \textit {s}: Some Sate, \textit {G}: Goal State}}{35}{figure.2.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Out of place heuristic}}{35}{figure.2.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Manhatham distance heuristic}}{36}{figure.2.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces One heuristic of size M}}{37}{figure.2.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Two heuristics of size M/2}}{38}{figure.2.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces N heuristics of size M/N}}{38}{figure.2.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Type system and the Search Space Representation.}}{45}{figure.3.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces The heuristic value is the position of the empty space in a Specific state.}}{46}{figure.3.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Search tree using Type System}}{48}{figure.3.10}

@@ -7,83 +7,84 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Introduction}{21}{chapter*.10}
-\contentsline {part}{\partnumberline {I}\MakeTextUppercase {Preparation of the research}}{23}{part.1}
+\contentsline {chapter}{Introduction}{23}{chapter*.10}
+\contentsline {part}{\partnumberline {I}\MakeTextUppercase {Preparation of the research}}{25}{part.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {About the Problem}}{25}{chapter.1}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {About the Problem}}{27}{chapter.1}
 \precistoctext {The purpose of this section if to motivate the problem.}
-\contentsline {section}{\numberline {1.1}Problem Statement and Motivation}{25}{section.1.1}
-\contentsline {section}{\numberline {1.2}Aim and Objectives}{26}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Aim}{26}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Objectives}{26}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Scope, Limitations, and Delimitations}{26}{section.1.3}
-\contentsline {section}{\numberline {1.4}Justification}{27}{section.1.4}
-\contentsline {section}{\numberline {1.5}Hypothesis}{27}{section.1.5}
-\contentsline {section}{\numberline {1.6}Contribution of the Thesis}{27}{section.1.6}
-\contentsline {section}{\numberline {1.7}Organization of the Thesis}{27}{section.1.7}
-\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Literature Review}}{29}{part.2}
+\contentsline {section}{\numberline {1.1}Problem Statement and Motivation}{27}{section.1.1}
+\contentsline {section}{\numberline {1.2}Aim and Objectives}{28}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Aim}{28}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Objectives}{28}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Scope, Limitations, and Delimitations}{28}{section.1.3}
+\contentsline {section}{\numberline {1.4}Justification}{29}{section.1.4}
+\contentsline {section}{\numberline {1.5}Hypothesis}{29}{section.1.5}
+\contentsline {section}{\numberline {1.6}Contribution of the Thesis}{29}{section.1.6}
+\contentsline {section}{\numberline {1.7}Organization of the Thesis}{29}{section.1.7}
+\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Literature Review}}{31}{part.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Background}}{31}{chapter.2}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Background}}{33}{chapter.2}
 \precistoctext {The purpose of this section is to understand the problem.}
-\contentsline {section}{\numberline {2.1}Similar Selection Systems}{31}{section.2.1}
-\contentsline {section}{\numberline {2.2}Problem definition}{31}{section.2.2}
-\contentsline {section}{\numberline {2.3}Heuristics}{32}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Out of place (O.P)}{33}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Manhatham Distance (M.D)}{34}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Heuristic Generators}{34}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Pattern Database (PDB)}{34}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Take advantage of Heuristics}{34}{section.2.5}
-\contentsline {section}{\numberline {2.6}Number of heuristics created}{35}{section.2.6}
-\contentsline {section}{\numberline {2.7}Heuristic Subset}{37}{section.2.7}
-\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Approach Proposal}}{39}{part.3}
+\contentsline {section}{\numberline {2.1}Similar Selection Systems}{33}{section.2.1}
+\contentsline {section}{\numberline {2.2}Problem definition}{33}{section.2.2}
+\contentsline {section}{\numberline {2.3}Heuristics}{34}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Out of place (O.P)}{35}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Manhatham Distance (M.D)}{36}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Heuristic Generators}{36}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Pattern Database (PDB)}{36}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}Take advantage of Heuristics}{36}{section.2.5}
+\contentsline {section}{\numberline {2.6}Number of heuristics created}{37}{section.2.6}
+\contentsline {section}{\numberline {2.7}Heuristic Subset}{39}{section.2.7}
+\contentsline {section}{\numberline {2.8}Problem Domains}{39}{section.2.8}
+\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Approach Proposal}}{41}{part.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Greedy Heuristic Selection}}{41}{chapter.3}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Greedy Heuristic Selection}}{43}{chapter.3}
 \precistoctext {The purpose of this section is to introduce the meta$-$reasoning proposed.}
-\contentsline {section}{\numberline {3.1}Problem Formulation}{41}{section.3.1}
-\contentsline {section}{\numberline {3.2}GHS Algorithm}{41}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}GHS Approximation Analysis}{42}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Stratified Sampling (SS)}{42}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Type System}{42}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Modeling}{46}{section.3.4}
-\contentsline {section}{\numberline {3.5}Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae}{47}{section.3.5}
+\contentsline {section}{\numberline {3.1}Problem Formulation}{43}{section.3.1}
+\contentsline {section}{\numberline {3.2}GHS Algorithm}{43}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}GHS Approximation Analysis}{44}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Stratified Sampling (SS)}{44}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Type System}{44}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Modeling}{48}{section.3.4}
+\contentsline {section}{\numberline {3.5}Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae}{49}{section.3.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Nam sed tellus sit amet lectus urna ullamcorper tristique interdum elementum}}{49}{chapter.4}
-\contentsline {section}{\numberline {4.1}Pellentesque sit amet pede ac sem eleifend consectetuer}{49}{section.4.1}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Nam sed tellus sit amet lectus urna ullamcorper tristique interdum elementum}}{51}{chapter.4}
+\contentsline {section}{\numberline {4.1}Pellentesque sit amet pede ac sem eleifend consectetuer}{51}{section.4.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{51}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{53}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Bibliography}{53}{section*.17}
+\contentsline {chapter}{Bibliography}{55}{section*.17}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Appendix}}{55}{section*.18}
+\contentsline {part}{\uppercase {Appendix}}{57}{section*.18}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Quisque libero justo}}{57}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Quisque libero justo}}{59}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula ac pretium ante justo a nulla curabitur tristique arcu eu metus}}{59}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula ac pretium ante justo a nulla curabitur tristique arcu eu metus}}{61}{appendix.B}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANNEX \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Annex}}{61}{section*.19}
+\contentsline {part}{\uppercase {Annex}}{63}{section*.19}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Morbi ultrices rutrum lorem.}}{63}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Morbi ultrices rutrum lorem.}}{65}{appendix.anexochapback.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus}}{65}{appendix.anexochapback.2}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus}}{67}{appendix.anexochapback.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Fusce facilisis lacinia dui}}{67}{appendix.anexochapback.3}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Fusce facilisis lacinia dui}}{69}{appendix.anexochapback.3}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Index}{69}{section*.21}
+\contentsline {chapter}{Index}{71}{section*.21}
