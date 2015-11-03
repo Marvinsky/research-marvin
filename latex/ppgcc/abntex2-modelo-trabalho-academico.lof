@@ -7,6 +7,7 @@
 \contentsline {figure}{\numberline {5}{\ignorespaces One heuristic of size M}}{37}{figure.2.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces Two heuristics of size M/2}}{38}{figure.2.6}
 \contentsline {figure}{\numberline {7}{\ignorespaces N heuristics of size M/N}}{38}{figure.2.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Type system and the Search Space Representation.}}{45}{figure.3.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces The heuristic value is the position of the empty space in a Specific state.}}{46}{figure.3.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Search tree using Type System}}{48}{figure.3.10}
+\contentsline {figure}{\numberline {8}{\ignorespaces Blocks world with three blocks.}}{40}{figure.2.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Type system and the Search Space Representation.}}{45}{figure.3.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces The heuristic value is the position of the empty space in a Specific state.}}{46}{figure.3.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Search tree using Type System}}{48}{figure.3.11}
