@@ -3,6 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: abntex2-modelo-trabalho-academico.aux
 A level-1 auxiliary file: chapters/chapter01.aux
 A level-1 auxiliary file: chapters/chapter02.aux
+A level-1 auxiliary file: chapters/chapter03.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -24,44 +25,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 13 entries,
+You've used 18 entries,
             6711 wiz_defined-function locations,
-            1277 strings with 11349 characters,
-and the built_in function-call counts, 11029 in all, are:
-= -- 960
-> -- 368
-< -- 27
-+ -- 183
-- -- 109
-* -- 813
-:= -- 1443
-add.period$ -- 43
-call.type$ -- 13
-change.case$ -- 137
-chr.to.int$ -- 34
-cite$ -- 12
-duplicate$ -- 512
-empty$ -- 798
-format.name$ -- 519
-if$ -- 2640
+            1313 strings with 12290 characters,
+and the built_in function-call counts, 15258 in all, are:
+= -- 1312
+> -- 481
+< -- 72
++ -- 259
+- -- 144
+* -- 1104
+:= -- 2006
+add.period$ -- 59
+call.type$ -- 18
+change.case$ -- 179
+chr.to.int$ -- 45
+cite$ -- 17
+duplicate$ -- 808
+empty$ -- 1068
+format.name$ -- 681
+if$ -- 3563
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 219
-newline$ -- 66
-num.names$ -- 50
-pop$ -- 282
+missing$ -- 304
+newline$ -- 93
+num.names$ -- 75
+pop$ -- 382
 preamble$ -- 1
-purify$ -- 52
+purify$ -- 69
 quote$ -- 0
-skip$ -- 609
+skip$ -- 911
 stack$ -- 1
-substring$ -- 547
-swap$ -- 272
-text.length$ -- 20
+substring$ -- 763
+swap$ -- 398
+text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1
+type$ -- 3
 warning$ -- 0
-while$ -- 91
+while$ -- 130
 width$ -- 0
-write$ -- 207
+write$ -- 285

@@ -25,6 +25,20 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 \emph{Computational Intelligence}, Wiley Online Library, v.~11, n.~4, p.
   625--655, 1995.}
 
+\bibitem[Barley, Franco e Riddle 2014]{BarleySantiagoOver}
+\abntrefinfo{Barley, Franco e Riddle}{BARLEY; FRANCO; RIDDLE}{2014}
+{BARLEY, M.~W.; FRANCO, S.; RIDDLE, P.~J. Overcoming the utility problem in
+  heuristic generation: Why time matters.
+\emph{Proceedings of the Twenty-Fourth International Conference on Automated
+  Planning and Scheduling, {ICAPS} 2014, Portsmouth, New Hampshire, USA, June
+  21-26, 2014}, 2014.}
+
+\bibitem[Chen 1992]{chen1992heuristic}
+\abntrefinfo{Chen}{CHEN}{1992}
+{CHEN, P.-C. Heuristic sampling: A method for predicting the performance of
+  tree searching programs.
+\emph{SIAM Journal on Computing}, p. 295--315, 1992.}
+
 \bibitem[Culberson e Schaeffer 1998]{culberson1998pattern}
 \abntrefinfo{Culberson e Schaeffer}{CULBERSON; SCHAEFFER}{1998}
 {CULBERSON, J.~C.; SCHAEFFER, J. Pattern databases.
@@ -54,6 +68,11 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   heuristic search.
 \emph{Artificial Intelligence}, Elsevier, v.~170, n.~16, p. 1123--1136, 2006.}
 
+\bibitem[Knuth 1975]{knuth1975Estimating}
+\abntrefinfo{Knuth}{KNUTH}{1975}
+{KNUTH, D.~E. Estimating the efficiency of backtrack programs.
+\emph{Mathematic of Computation}, v.~29, n.~129, p. 121--136, 1975.}
+
 \bibitem[Korf 1985]{Korf85ida}
 \abntrefinfo{Korf}{KORF}{1985}
 {KORF, R.~E. Depth-first iterative-deepening: An optimal admissible tree
@@ -65,6 +84,18 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 {LELIS, L.~H.; ZILLES, S.; HOLTE, R.~C. Predicting the size of ida* search
   tree.
 \emph{Artificial Intelligence}, Elsevier, v.~196, p. 53--76, 2013.}
+
+\bibitem[Lelis 2013]{Lelis2013CC}
+\abntrefinfo{Lelis}{LELIS}{2013}
+{LELIS, L.~H. Santana~de.
+\emph{Cluster-and-Conquer: A Paradigm for Solving State-Space Problems}.
+Tese (Doutorado) --- University of Alberta, 2013.}
+
+\bibitem[Prieditis 1993]{Prieditis93}
+\abntrefinfo{Prieditis}{PRIEDITIS}{1993}
+{PRIEDITIS, A. Machine discovery of effective admissible heuristics.
+\emph{Machine Learning}, v.~12, p. 117--141, 1993.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/BF00993063}.}
 
 \bibitem[Rayner, Sturtevant e Bowling 2013]{raynersss13}
 \abntrefinfo{Rayner, Sturtevant e Bowling}{RAYNER; STURTEVANT; BOWLING}{2013}

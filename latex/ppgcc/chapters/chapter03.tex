@@ -64,22 +64,22 @@ The algorithm receives as input a planning problem $\triangledown$, a set of heu
 
 \begin{algorithm}[H]
  
- \textbf{Input:} Problem $\triangledown$, set  of heuristics $\zeta$, cardinality $N$
+\textbf{Input:} Problem $\triangledown$, set  of heuristics $\zeta$, cardinality $N$
  
- \textbf{Ouput:} heuristic subset $\zeta\sp{'} \subseteq \zeta$ of size $N$
+\textbf{Ouput:} heuristic subset $\zeta\sp{'} \subseteq \zeta$ of size $N$
  
- 1:  $\zeta\sp{'} \leftarrow \emptyset$
+$\zeta\sp{'} \leftarrow \emptyset$
  
- 2:  \While{$|\zeta\sp{'}| < N$ do} {
+\While{$|\zeta\sp{'}| < N$ do} {
  
- 3:  $h \leftarrow \texttt{argmin}_{h \in \zeta} J(\zeta\sp{'} \cup \{h\}, \triangledown) $
+	$h \leftarrow \texttt{argmin}_{h \in \zeta} J(\zeta\sp{'} \cup \{h\}, \triangledown) $
  
- 4: $\zeta\sp{'} \leftarrow \zeta\sp{'} \cup \{h\}$
+	$\zeta\sp{'} \leftarrow \zeta\sp{'} \cup \{h\}$
  
- 5: return $\zeta\sp{'}$
- }
- \caption{Greedy Heuristic Selection}
- \label{alg:ghs_algorithm}
+	return $\zeta\sp{'}$
+}
+\caption{Greedy Heuristic Selection}
+\label{alg:ghs_algorithm}
 \end{algorithm}
 
 \subsection{GHS Approximation Analysis}
@@ -156,12 +156,36 @@ $\node [xshift=1cm,yshift=2cm] (A) at (-3,3) {Search Space};$
 $\node [xshift=1cm,yshift=2cm] (A) at (5,1) {Type System};$
 	
 \end{tikzpicture}
-\caption{Type system is an abraction of the Search Space.} \label{fig:ss_ts}
+\caption{Type system and the Search Space Representation.} \label{fig:ss_ts}
 \end{figure}
 
 
 \subsection{Type System}
-The \textit{Type System} is calculated based of any property of each node in the search tree.
+The \textit{Type System} is a partition of the states in the state space. It is calculated based of any property of each node in the search tree. \cite{Lelis2013CC}
+
+A common misconception is think of \textit{type systems} as state$-$space abstractions. \cite{Prieditis93} defines a state$-$space abstraction as a simplified version of the problem in which
+\begin{itemize}
+\item The cost of the least$-$cost path between two abstracted states must less than or equal to the cost of the least$-$cost path between the corresponding two states in the original state$-$space.
+\item Goal states in the original state$-$space must be goal states in the abstracted state$-$space.
+\end{itemize}
+
+In contrast with state$-$space abstractions, a \textit{type system} does not have these two requeriments. A \textit{type system} is just a partition of the nodes in the search tree.
+
+The \textit{type system} can not be represented as a graph since \textit{type system} does not necessarily define relation between the types.
+
+The relation between \textit{type system} and abstractions is the following: The \textit{type system} can not necessarily be used as abstractions, abstractions can always be used as \textit{type systems}.
+
+
+
+
+
+
+
+
+\theoremstyle{definition}
+\begin{definition}{Type System}
+
+\end{definition}
 
 
 \begin{figure}[htb]
@@ -270,6 +294,10 @@ The number of nodes expanded in the search tree is obtained summing all \textit{
 \end{tikzpicture}
 \caption{Search tree using Type System} \label{fig:ts_search_tree}
 \end{figure}
+
+\section{Modeling}
+The resources of how to run the experiments.
+
 
 
 \clearpage
