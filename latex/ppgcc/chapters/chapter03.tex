@@ -187,20 +187,21 @@ Let S = (N,E) be a UST. $T = \{t_{1},...,t_{n} \}$ is a type system for S if it 
 
 In this thesis we use \textit{type system} based only in heuristics.\cite{zahavi2010predicting} use the simpliest heuristic$-$based \textit{type system} in which two nodes $n$ and $n\sp{'}$ are of the same type if they have the same heuristic value. \\
 
-Let's explain how \textit{type system} works through an example. The problem of 8$-$tile$-$puzzle in the Figure \ref{fig:type_system}, the center tile is labeled with the letter \texttt{M} and the courners are labeled with \texttt{C} and the mediums with \texttt{E}. For this problem, for example, we can define the \textit{type system} based on the position of the empty tile regarding the position of the empty tile in the goal State. For this case, two nodes $n$ and $n\sp{'}$ would be of the same type if $n$ and $n\sp{'}$ have the blank tile with the same letter and with the same distance to the empty tile of the goal state.\\
-
-
-
 \begin{figure}[htb]
 \centering
 \begin{forest}
  [\usebox\myboxc \hspace*{1.4in} \usebox\myboxb]
 \end{forest}
-\caption{The heuristic value is the position of the empty space in a Specific state.} \label{fig:type_system}
+\caption{The heuristic value is the position of the empty tile in a Specific state.} \label{fig:type_system}
 \end{figure}
+
+Let's explain how \textit{type system} works through an example. The problem of 8$-$tile$-$puzzle in the Figure \ref{fig:type_system}, the center tile is labeled with the letter \texttt{M} and the courners are labeled with \texttt{C} and the mediums with \texttt{E}. For this problem, for example, we can define the \textit{type system} based on the position of the empty tile regarding the position of the empty tile in the goal State. For this case, two nodes $n$ and $n\sp{'}$ would be of the same type if $n$ and $n\sp{'}$ have the blank tile with the same letter and with the same distance to the empty tile of the goal state.\\
+
+In the Figure \ref{fig:empty_space_ts}, each row represent a type. The first board shows the empty tile in the center with distance to the empty tile in the goal state equal to 2, down left and right down. Then, the type would be (2,M). In the next board the empty tile is in the left top corner, and use the letter \textit{C}. The minimum distance is 4 because to get the goal empty tile is necessary to do: down, down, right, right or right, right, down, down, etc. So the type would be (4, C). In the next board there are two tiles that have the same type, because both have the same letter \textit{M} with distance equal to 3. Then, both have the type (3,E). The fourth row have two boards with the same type, because both have the same letter \textit{C} with distance equal to 2. Then, both have the type (2,C). The fifth row have two boards with the same type, because both have the same letter \textit{E} with distance equal to 1. Then, both have the type (1,E). In the last row the empty tile is in the goal empty tile. So, the distance is zero and the letter is \textit{C}. The type would be (0,C).
 
 % print types
 \begin{figure}[htb]
+\centering
 \begin{forest}
  [\usebox\myboxcenter]
  $\node [xshift=1cm,yshift=2cm] (A) at (2,0) {(2, M)};$
