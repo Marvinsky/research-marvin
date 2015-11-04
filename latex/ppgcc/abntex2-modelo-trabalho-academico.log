@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  3 NOV 2015 20:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.6.20)  4 NOV 2015 10:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1971,27 +1971,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-[37] [38]
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+
+ []
+
+[37]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 279.
+(amsmath)                 on input line 278.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
+Underfull \hbox (badness 10000) in paragraph at lines 278--280
 
  []
 
+[38]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
 
  []
 
-[39
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
 
-] [40]) [41
+ []
+
+[40]) [41
 
 
 
@@ -2022,7 +2036,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--90
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 
-Underfull \vbox (badness 4229) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [45]
 \forest@temp@box=\box32767 (local)
@@ -2133,7 +2147,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 809.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 809.
 Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
 ot changed.
-(rerunfilecheck)             Checksum: 40032B6B730FA25204FF4AA87886E817;1081.
+(rerunfilecheck)             Checksum: B159E43E5AFEE63BFFFDDEF6602CB827;1137.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -2143,7 +2157,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 809.
 Here is how much of TeX's memory you used:
  33676 strings out of 493104
  649360 string characters out of 6136932
- 981472 words of memory out of 5000000
+ 981464 words of memory out of 5000000
  36170 multiletter control sequences out of 15000+600000
  121251 words of font info for 188 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2169,11 +2183,11 @@ s/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfrm1200.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (73 pages, 482999 bytes
+Output written on abntex2-modelo-trabalho-academico.pdf (73 pages, 484233 bytes
 ).
 PDF statistics:
- 927 PDF objects out of 1000 (max. 8388607)
- 818 compressed objects within 9 object streams
+ 930 PDF objects out of 1000 (max. 8388607)
+ 821 compressed objects within 9 object streams
  196 named destinations out of 1000 (max. 500000)
  37869 words of extra memory for PDF output out of 42996 (max. 10000000)
 

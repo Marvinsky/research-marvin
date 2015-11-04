@@ -159,11 +159,14 @@ The heuristics generators can create hundreds or even thousand of heuristics. In
 
 One way to take advantage of heuristics would be to take the maximum of the set of heuristics. For example, using three different heuristics $h1, h2$ and max($h1, h2$). Heuristic $h1$ and $h2$ are based on domain abstractions and the max($h1, h2$) is the maximum heuristic value of $h1$ and $h2$. \\
 
-Exists different approaches to take advantage from a large set of heuristics. In this dissertation we use the meta$-$reasoning based on the minimum evaluation time. \\
-
+Exists different approaches to take advantage from a large set of heuristics. In this dissertation we use the meta$-$reasoning based on the minimum size of the search tree generated and the minimum evaluation time. \\
 
 \section{Number of heuristics created}
-Let's suppose we have to run our meta$-$reasoning using M amount of memory available. The question would be: How many heuristics our system should handle in order to avoid out of memory errors? So. one of the objectives of this tesis is to find the number of heuristics that our subset $\zeta\sp{'}$ should have.
+Let's suppose we have to run our meta$-$reasoning using M amount of memory available. The question would be: How many heuristics our system should handle in order to avoid out of memory errors? So. one of the objectives of this tesis is to find the number of heuristics that our subset $\zeta\sp{'}$ should have. \\
+
+\cite{holte2006maximizing} observed that maximizing over $N$ pattern databases of size $M/N$, for a suitable choice $N$, produces a significant reduction in the number of nodes generated compared to using a single pattern database of size $M$.\\
+
+In the Figures \ref{fig:image2mem} and \ref{fig:image3mem} we are taking advantange of the heuristics doing the maximization of all the heuristics created. In this thesis we are interested in heuristics that generate smaller search tree.
 
 \begin{figure}[htb]
   \centering
@@ -271,17 +274,9 @@ Let's suppose we have to run our meta$-$reasoning using M amount of memory avail
   \caption{N heuristics of size M/N}\label{fig:image3mem}
 \end{figure}
 
-In the Figures \ref{fig:image2mem} and \ref{fig:image3mem} we are taking advantange of the heuristics doing the maximization of all the heuristics created.
-
-\clearpage
-
 \section{Heuristic Subset}
 The heuristics generator systems can create a large number of heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best N $=$ 100 heuristics. This would be: $${1000\choose 100} = 10\sp{138} possibilities$$
 So, try to select heuristics from a large set of heuristics are going to be treated as an optimization problem. Then, in order to obtain a good selection of subset of heuristics, our objective function should guarantee two properties: Monotonicity and Submodularity, that would be explained in the next Part. \\
- \bigskip
-
-In the next Part, we will introduce the meta$-$reasoning proposed for selecting heuristics and will expand on the properties of our objective functions.\\
-
 
 \section{Problem Domains}
 The problems we are trying to solve are the optimal domains for International Planning Competition (\texttt{IPC}).
@@ -310,5 +305,9 @@ This domain involves parking cars on a street with N curb locations, and where c
 
 \subsection{Sokoban}
 This domain is inspired by the popular Sokoban puzzle game where an agent has the goal of pushing a set of boxes into specified goal locations in a grid with walls. The competition problems are generated in a way that guarantees solvability and generally are easy problem instances for humans.
+
+ \bigskip
+
+In the next Part, we will introduce the meta$-$reasoning proposed for selecting heuristics and will expand on the properties of our objective functions.\\
 
 \clearpage
