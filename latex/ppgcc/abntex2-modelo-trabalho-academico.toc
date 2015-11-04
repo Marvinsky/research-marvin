@@ -49,8 +49,9 @@
 \contentsline {subsection}{\numberline {3.2.1}GHS Approximation Analysis}{44}{subsection.3.2.1}
 \contentsline {section}{\numberline {3.3}Stratified Sampling (SS)}{44}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Type System}{44}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Modeling}{48}{section.3.4}
-\contentsline {section}{\numberline {3.5}Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae}{49}{section.3.5}
+\contentsline {section}{\numberline {3.4}Search Space and Search Tree}{45}{section.3.4}
+\contentsline {section}{\numberline {3.5}Modeling}{48}{section.3.5}
+\contentsline {section}{\numberline {3.6}Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae}{49}{section.3.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Nam sed tellus sit amet lectus urna ullamcorper tristique interdum elementum}}{51}{chapter.4}
 \contentsline {section}{\numberline {4.1}Pellentesque sit amet pede ac sem eleifend consectetuer}{51}{section.4.1}
