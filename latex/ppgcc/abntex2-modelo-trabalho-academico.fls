@@ -452,6 +452,9 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri10.tfm
 OUTPUT chapters/chapter02.aux
 INPUT chapters/chapter02.tex
 INPUT chapters/chapter02.tex
+INPUT images/sokoban_star_end.png
+INPUT ./images/sokoban_star_end.png
+INPUT ./images/sokoban_star_end.png
 OUTPUT chapters/chapter03.aux
 INPUT chapters/chapter03.tex
 INPUT chapters/chapter03.tex
