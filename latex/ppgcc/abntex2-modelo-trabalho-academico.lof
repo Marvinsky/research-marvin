@@ -10,6 +10,6 @@
 \contentsline {figure}{\numberline {8}{\ignorespaces Blocks world with three blocks.}}{39}{figure.2.8}
 \contentsline {figure}{\numberline {9}{\ignorespaces Sokoban with four blocks solved}}{42}{figure.2.9}
 \contentsline {figure}{\numberline {10}{\ignorespaces Type system and the Search Space Representation.}}{48}{figure.3.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces The heuristic value is the position of the empty tile in a Specific state.}}{49}{figure.3.11}
+\contentsline {figure}{\numberline {11}{\ignorespaces The heuristic value is the position of the empty tile in a Specific state.}}{50}{figure.3.11}
 \contentsline {figure}{\numberline {12}{\ignorespaces Using \textit {type system}}}{51}{figure.3.12}
 \contentsline {figure}{\numberline {13}{\ignorespaces Search tree using Type System}}{52}{figure.3.13}

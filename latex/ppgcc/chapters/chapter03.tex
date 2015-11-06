@@ -125,8 +125,27 @@ S(\zeta\sp{'} \cup \{h\}) \subseteq S(\zeta\sp{'})\ for\  any\ h.
 Similarly, one can strengthen the statement of Lemma \ref{le:lemmatwo}: the proof given above contains the core idea for proving $S(A) \backslash S(A \cup \{h\}) \supseteq S(B) \backslash S(B \cup \{h\}),$ which, together with Equation \ref{eq:eq_cardinality}, immediately implies the weaker statement $J(A) - J(A \cup \{h\}) \geq J(B) - J(B \cup \{h\}).$ In the form stated above, however, Lemma \ref{le:lemmaone} and \ref{le:lemmatwo} are alredy sufficient for using a result by \cite{nemhauser1978analysis} to conclude the following.
 
 \begin{theorem}
-Let $\zeta\sp{'}$ be a subset selected by \texttt{GHS}. Then $J(\zeta\sp{'}, \triangledown)$ is within a factor of $\dfrac{e+1}{e} \approx 1.36$ of optimal. 
+Let $\zeta\sp{'}$ be a subset selected by \texttt{GHS}. Then $J(\zeta\sp{'}, \triangledown)$ is within a factor of $\dfrac{e+1}{e} \approx 1.36$ of optimal.
+\label{th:theorem_one}
 \end{theorem}
+
+Let $T(\zeta\sp{'},\triangledown)$ be an approximation to the running time of A$\sp{*}$ when using $h_{max}(\zeta\sp{'})$ for solving $\triangledown$, defined as follows.
+
+\begin{equation}
+T(\zeta\sp{'}, \triangledown) = J(\zeta\sp{'},\triangledown) \times t_{h_{max}}(\zeta\sp{'})
+\label{eq:eq_time_solving}
+\end{equation}
+
+where, for any heuristic function $h$, the term $t_{h}$ refers to the running time used for computing the $h-$value of any state $s$. \\
+In order to compute the running time of A$\sp{*}$ exactly we would also have to account for the time required for node generation and for the operations on A$\sp{*}$'s \texttt{OPEN} and \texttt{CLOSED} lists. However, these two factors do not depend directly on the heuristic employed. Thus, $T(\zeta\sp{'},\triangledown)$ is reasonable approximation for A$\sp{*}$'s running time for the heuristic subset selection problem.
+
+\begin{theorem}
+Suppose $t_{h_{1}} = t_{h_{2}}$ for any $h_{1}$ and $h_{2} \in \zeta$. Then for any fixed subset size $N$, \texttt{GHS} yields a subset $\zeta\sp{'}$ that is within a factor $\dfrac{e+1}{e}$ of optimal with respect to $T(\zeta\sp{'},\triangledown)$
+\label{th:theorem_two}
+\end{theorem}
+
+$Proof.$ Since $t_{h}$ is constant over $h \in \zeta$, the value $t_{h_{max}}(\zeta\sp{'})$ is independent of $\zeta\sp{'}$. Hence the value $T(\zeta\sp{'},\triangledown)$ is a constant factor of $J(\zeta\sp{'},\triangledown).$ The latter is within a factor of $\dfrac{e+1}{e}$ of optimal by Theorem \ref{th:theorem_one}.
+
 
 
  
