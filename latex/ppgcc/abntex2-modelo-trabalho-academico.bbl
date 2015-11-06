@@ -91,6 +91,13 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 \emph{Cluster-and-Conquer: A Paradigm for Solving State-Space Problems}.
 Tese (Doutorado) --- University of Alberta, 2013.}
 
+\bibitem[Nemhauser, Wolsey e Fisher 1978]{nemhauser1978analysis}
+\abntrefinfo{Nemhauser, Wolsey e Fisher}{NEMHAUSER; WOLSEY; FISHER}{1978}
+{NEMHAUSER, G.~L.; WOLSEY, L.~A.; FISHER, M.~L. An analysis of approximations
+  for maximizing submodular set functions—i.
+\emph{Mathematical Programming}, Springer-Verlag, v.~14, n.~1, p. 265--294,
+  1978.}
+
 \bibitem[Prieditis 1993]{Prieditis93}
 \abntrefinfo{Prieditis}{PRIEDITIS}{1993}
 {PRIEDITIS, A. Machine discovery of effective admissible heuristics.

@@ -112,7 +112,24 @@ $J$ is supermodular. \\
 Proof. Let $A \subset B \subset \zeta$ and $h \in \zeta \backslash B.$ By Lemma \ref{le:lemmaone}, $J(A) - J(A \cup \{h\}) \geq 0$ and $J(B) - J(B \cup \{h\}) \geq 0$. We consider two cases.\\
 Case 1. $J(B) - J(B \cup \{h\}) = 0.$ Then $J(A) - J(A \cup \{h\}) \geq 0$ yields $J(A) - J(A \cup \{h\}) \geq J(B) - J(B \cup \{h\})$.\\
 Case 2. $J(B) - J(B \cup \{h\}) = k > 0.$ Let $s_{1},...,s_{k}$ be all the states in $V$ that satisfy $h_{max}(s_{i}, B) \leq  C\sp{*} - g(s_{i})$ and $h_{max}(s_{i}, B \cup \{h\}) > C\sp{*} - g(s_{i}).$  This implies $h(s_{i}) > C\sp{*} - g(s_{i}),$ for all $i \in \{1,...,k\}$ Further, since $A \subset B,$ we have $h_{max}(s_{i}, A) \leq h_{max}(s_{i},B) \leq C\sp{*} - g(s_{i}),$ for all $i \in \{1,...,k\}.$ Consequently, $J(A) - J(A \cup \{h\}) \geq k = J(B) - J(B \cup \{h\}).$
+\label{le:lemmatwo}
 \end{lemma}
+
+A stronger version of Lemma \ref{le:lemmaone} can be proven: if $S(\zeta\sp{'}) denotes the set of states \{s \in V | h_{max}(s,\zeta\sp{'}) \leq C\sp{*} - g(s)\},$ so that $J(\zeta\sp{'})$ is the cardinality of $S\sp{'}$, we obtain
+
+\begin{equation}
+S(\zeta\sp{'} \cup \{h\}) \subseteq S(\zeta\sp{'})\ for\  any\ h.
+\label{eq:eq_cardinality}
+\end{equation}
+
+Similarly, one can strengthen the statement of Lemma \ref{le:lemmatwo}: the proof given above contains the core idea for proving $S(A) \backslash S(A \cup \{h\}) \supseteq S(B) \backslash S(B \cup \{h\}),$ which, together with Equation \ref{eq:eq_cardinality}, immediately implies the weaker statement $J(A) - J(A \cup \{h\}) \geq J(B) - J(B \cup \{h\}).$ In the form stated above, however, Lemma \ref{le:lemmaone} and \ref{le:lemmatwo} are alredy sufficient for using a result by \cite{nemhauser1978analysis} to conclude the following.
+
+\begin{theorem}
+Let $\zeta\sp{'}$ be a subset selected by \texttt{GHS}. Then $J(\zeta\sp{'}, \triangledown)$ is within a factor of $\dfrac{e+1}{e} \approx 1.36$ of optimal. 
+\end{theorem}
+
+
+ 
 
 \section{Stratified Sampling (SS)}
 Stratified Sampling is a prediction algorithm that estimate the number of nodes expanded by some heuristic.\\
