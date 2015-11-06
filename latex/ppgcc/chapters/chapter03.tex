@@ -85,6 +85,38 @@ $\zeta\sp{'} \leftarrow \emptyset$
 \subsection{GHS Approximation Analysis}
 In the following analysis all heuristic functions are assumed to be consistent. We also assume that A$\sp{*}$ expands all nodes $n$ with $f(n) \leq C\sp{*}$ while solving $\triangledown$, as shown in Equation \eqref{eq:eq_size_search_tree_1}.
 
+\begin{lemma}
+$J(\zeta\sp{'} \cup \{h\}) \leq J(\zeta\sp{'})$ for any $\zeta\sp{'}$ and any h.
+
+Proof. Fix $\zeta\sp{'}$ and h. Then
+
+$J(\zeta\sp{'} \cup \{h\})  =  |\{s \in V | h_{max}(s, \zeta\sp{'} \cup \{h\}) \leq C\sp{*} - g(s)\}|\\
+\hspace*{3.3cm} \leq  |\{s \in V | h_{max}(s,\zeta\sp{'}) \leq C\sp{*} - g(s)\}|\\
+\hspace*{3.3cm} = J(\zeta\sp{'}) $
+
+Where the inequality follows from the fact that $h_{max}(s,\zeta\sp{'} \cup \{h\}) \geq h_{max}(s,\zeta\sp{'})$ for all s. \\
+
+Let $S$ be a set and $\phi$ a function over $2\sp{S}$. $\phi$ is supermodular if for any $A, B, x$ with $A \subset B \subset S$ and $x \in S \backslash B:$
+
+\begin{equation}
+\phi(A) - \phi(A \cup \{x\}) \geq \phi(B) - \phi(B \cup \{x\})
+\label{eq:function_phi}
+\end{equation}
+
+Intuitively, Equation \ref{eq:function_phi} captures the idea of disminishing returns. In the context of search tree size, if we add a heuristic function $h$ to a set of heuristics $A$ strictly contained in a set $B$, then we would expect, then we would expect $J(A) - J(A \cup \{h\})$ to be larger than $J(B) - J(B \cup \{h\})$ as $h$ would "contribute more" to $A$ than to $B$.
+\label{le:lemmaone}
+\end{lemma}
+
+\begin{lemma}
+$J$ is supermodular. \\
+Proof. Let $A \subset B \subset \zeta$ and $h \in \zeta \backslash B.$ By Lemma \ref{le:lemmaone}, $J(A) - J(A \cup \{h\}) \geq 0$ and $J(B) - J(B \cup \{h\}) \geq 0$. We consider two cases.\\
+Case 1. $J(B) - J(B \cup \{h\}) = 0.$ Then $J(A) - J(A \cup \{h\}) \geq 0$ yields $J(A) - J(A \cup \{h\}) \geq J(B) - J(B \cup \{h\})$.\\
+Case 2. $J(B) - J(B \cup \{h\}) = k > 0.$ Let $s_{1},...,s_{k}$ be all the states in $V$ that satisfy $h_{max}(s_{i}, B) \leq  C\sp{*} - g(s_{i})$ and $h_{max}(s_{i}, B \cup \{h\}) > C\sp{*} - g(s_{i}).$ This implies $h(s_{i}) > C\sp{*} - g(s_{i})$
+
+\end{lemma}
+
+
+
 \section{Stratified Sampling (SS)}
 Stratified Sampling is a prediction algorithm that estimate the number of nodes expanded by some heuristic.\\
 
