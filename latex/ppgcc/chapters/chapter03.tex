@@ -111,11 +111,8 @@ Intuitively, Equation \ref{eq:function_phi} captures the idea of disminishing re
 $J$ is supermodular. \\
 Proof. Let $A \subset B \subset \zeta$ and $h \in \zeta \backslash B.$ By Lemma \ref{le:lemmaone}, $J(A) - J(A \cup \{h\}) \geq 0$ and $J(B) - J(B \cup \{h\}) \geq 0$. We consider two cases.\\
 Case 1. $J(B) - J(B \cup \{h\}) = 0.$ Then $J(A) - J(A \cup \{h\}) \geq 0$ yields $J(A) - J(A \cup \{h\}) \geq J(B) - J(B \cup \{h\})$.\\
-Case 2. $J(B) - J(B \cup \{h\}) = k > 0.$ Let $s_{1},...,s_{k}$ be all the states in $V$ that satisfy $h_{max}(s_{i}, B) \leq  C\sp{*} - g(s_{i})$ and $h_{max}(s_{i}, B \cup \{h\}) > C\sp{*} - g(s_{i}).$ This implies $h(s_{i}) > C\sp{*} - g(s_{i})$
-
+Case 2. $J(B) - J(B \cup \{h\}) = k > 0.$ Let $s_{1},...,s_{k}$ be all the states in $V$ that satisfy $h_{max}(s_{i}, B) \leq  C\sp{*} - g(s_{i})$ and $h_{max}(s_{i}, B \cup \{h\}) > C\sp{*} - g(s_{i}).$  This implies $h(s_{i}) > C\sp{*} - g(s_{i}),$ for all $i \in \{1,...,k\}$ Further, since $A \subset B,$ we have $h_{max}(s_{i}, A) \leq h_{max}(s_{i},B) \leq C\sp{*} - g(s_{i}),$ for all $i \in \{1,...,k\}.$ Consequently, $J(A) - J(A \cup \{h\}) \geq k = J(B) - J(B \cup \{h\}).$
 \end{lemma}
-
-
 
 \section{Stratified Sampling (SS)}
 Stratified Sampling is a prediction algorithm that estimate the number of nodes expanded by some heuristic.\\
