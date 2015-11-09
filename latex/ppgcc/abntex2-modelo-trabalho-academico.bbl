@@ -33,6 +33,12 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   Planning and Scheduling, {ICAPS} 2014, Portsmouth, New Hampshire, USA, June
   21-26, 2014}, 2014.}
 
+\bibitem[Buchbinder et al. 2014]{buchbinder2014submodular}
+\abntrefinfo{Buchbinder et al.}{BUCHBINDER et al.}{2014}
+{BUCHBINDER, N. et al. Submodular maximization with cardinality constraints.
+  In:  SIAM. \emph{Proceedings of the Twenty-Fifth Annual ACM-SIAM Symposium on
+  Discrete Algorithms}. [S.l.], 2014. p. 1433--1452.}
+
 \bibitem[Chen 1992]{chen1992heuristic}
 \abntrefinfo{Chen}{CHEN}{1992}
 {CHEN, P.-C. Heuristic sampling: A method for predicting the performance of

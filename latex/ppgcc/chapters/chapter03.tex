@@ -24,63 +24,65 @@
 % comandos do abnTeX2 e de LaTeX.
 % ---
  
-\chapter{Greedy Heuristic Selection}\label{ghs}
+\chapter{Meta-Reasoning for selection}\label{rghs}
 
 \chapterprecis{The purpose of this section is to introduce the meta$-$reasoning proposed.}\index{sinopse de capítulo}
 
 % ---
-\section{Problem Formulation}
+\section{Random Greedy Heuristic Selection (RGHS)}
+\noindent
+We present a random greedy algorithm selecction for approximately solving the heuristic subset selection problem while optimizing different objective functions. We consider the following general optimization problem.
+
+\begin{equation}
+\begin{split}
+\textbf{minimize}_{\zeta\sp{'} \in 2\sp{|\zeta|}}\Psi(\zeta\sp{'}, \nabla) \\
+\textbf{subject to} |\zeta\sp{'}| = N
+\end{split}
+\label{eq:equationmin}
+\end{equation}
+
+Where $\Psi(\zeta\sp{'},\nabla)$ is an objective function and $N$ is the desired subset size. $N$ could be determined by a hard constraint such as the maximum number of \texttt{PDBs} one can store in memory. According to \cite{raynersss13} it is unlikely that there is an efficient algorithm for solving Equation \ref{eq:equationmin}. We use an algorithm based on the work of \cite{buchbinder2014submodular} we call Random Greedy Heuristic Selection (\texttt{RGHS}) to approximately solve Equation \ref{eq:equationmin} for different functions $\Psi$.\\
+
+\begin{algorithm}
+\SetKwInOut{Input}{Input}
+\SetKwInOut{Output}{Output}
+\Input{problem $\nabla$, set  of heuristics $\zeta$, cardinality $N$}
+\Output{heuristic subset $\zeta\sp{'} \subseteq \zeta$ of size $N$}
+
+$\zeta_{0}\sp{'} \leftarrow \emptyset$
+
+\For {i = 1 to N} {
+	Let $M_{i} \subseteq \zeta\ \backslash\ \zeta_{i-1}\sp{'}$ be a subset of size $N$ minimizing $\sum_{h\in M_{i}}\Psi(\zeta_{i-1}\sp{'}\cup \{h\})\ -\ \Psi(\zeta_{i}\sp{'})$\\
+	Let $h_{i}$ be a uniformly random element from $M_{i}$\\
+	$\zeta_{i}\sp{'} \leftarrow \zeta_{i-1}\sp{'} \cup \{h\}$\\
+} 
+return $\zeta_{N}\sp{'}$
+\caption{Random Greedy Heuristic Selection}
+\label{alg:rghs_algorithm}
+\end{algorithm}
+
+Algorithm \ref{alg:rghs_algorithm} shows \texttt{RGHS}. \texttt{RGHS} receives as input a problem $\nabla$, a set of heuristics $\zeta$, a cardinality size $N$, and it returns a subset $\zeta\sp{'} \subseteq \zeta$. In each iteration $i$ \texttt{RGHS} randomly selects a heuristic $h_{i}$ from a pool $M_{i}$ of "good" heurisitcs and adds $h_{i}$ to $\zeta\sp{'}$. $M_{i}$ is defined as follows. $M_{i} \subseteq \zeta\ \backslash \zeta_{i-1}\sp{'}$ is a subset of size $N$ minimizing $\sum_{h\in M_{i}}\Psi(\zeta_{i-1}\sp{'}\cup \{h\})\ -\ \Psi(\zeta_{i}\sp{'})$, where $\zeta_{i-1}\sp{'}$ is the subset of heuristics \texttt{RGHS} selects prior to iteration $i$ of the algorithm. $M_{i}$ contains the $N$ heuristics that when individually combined with $\zeta_{i-1}\sp{'}$ minimizes $\Psi$ the most. \texttt{RGHS} returns $\zeta\sp{'}$ once it reaches the desired size $N$.\\
+
+The work of \cite{raynersss13} uses a greedy algorithm introduced by \cite{nemhauser1978analysis} for approximately solving the heuristic subset selection problem. In contrast with the \texttt{RGHS} presented above, which is based on the work of \cite{buchbinder2014submodular}, \cite{nemhauser1978analysis}'s approach does not offer near$-$optimality guarantees when the problem's objective functions is non$-$monotone. As mentioned before A$\sp{*}$'s running time is a non$-$monotone objective function. While \texttt{RGHS} also offers guarantees for non$-$monotone objective functions, it retains the same guarantees offered by \cite{nemhauser1978analysis}'s algorithm when optimizing monotone objective functions \cite{buchbinder2014submodular}. That is why we only consider \cite{buchbinder2014submodular}'s approach in our theoretical and experimental analyses.
+
+% --
+\subsection{Approximately Minimizing Search Tree Size}
 % ---
-When solving $\nabla$ using the consistent heuristic function $h_{max}(\zeta\sp{'})$ for $\zeta\sp{'} \subseteq \zeta$, A$\sp{*}$ expands in the worst case $J(\zeta\sp{'}, \nabla)$ nodes, where
+\noindent
+The first objective function $\Psi$ we consider accounts for the number of expansions A$\sp{*}$ performs while solving a given planning problem. When solving $\nabla$ using the consistent heuristic function $h_{max}(\zeta\sp{'})$  for $\zeta\sp{'} \subseteq \zeta$, A$\sp{*}$ expands in the worse case $J(\zeta\sp{'},\nabla)$ nodes, where
 
 \begin{equation}
 J(\zeta\sp{'},\nabla) = |\{s \in V | f_{max}(s,\zeta\sp{'}) \leq C\sp{*}\}|
 \label{eq:eq_size_search_tree_1}
 \end{equation}
-
 \begin{equation}
 J(\zeta\sp{'},\nabla) = |\{s \in V | h_{max}(s,\zeta\sp{'}) \leq C\sp{*} - g(s)\}|
 \label{eq:eq_size_search_tree_2}
 \end{equation}
 
-We present a greedy algorithm for approximately solving the following optimization problem,
+We write $J(\zeta\sp{'})$ or simply $J$ instead of $J(\zeta\sp{'},\nabla)$. \texttt{RGHS} is guaranteed to find near$-$optimal solutions when we use $J$ as the objective function $\Psi$, as we now demostrate. In the following analysis all heuristic functions are assumed to be consistent. We also assume that A$\sp{*}$ expands all nodes $n$ with $f(n) \leq C\sp{*}$ while solving $\nabla$, as shown in Equation \ref{eq:eq_size_search_tree_1}.
 
-\begin{equation}
-\begin{split}
-\textbf{minimize}_{\zeta\sp{'} \in 2\sp{|\zeta|}}J(\zeta\sp{'}, \nabla) \\
-\textbf{subject to} |\zeta\sp{'} = N|
-\end{split}
-\end{equation}
 
-Where $N$ could be determined by a hard constraint such as the maximum number of \texttt{PDBs} one can store in memory.
-
-% ---
-\section{GHS Algorithm}
-% ---
-\noindent
-Algorithm \ref{alg:ghs_algorithm} presents Greedy Heuristic Selection (\texttt{GHS}), an approximation algorithm for selecting a subset $\zeta\sp{'} \subseteq \zeta$.
-
-The algorithm receives as input a planning problem $\nabla$, a set of heuristics $\zeta$, a cardinality size $N$, and it returns a subset $\zeta\sp{'} \subseteq \zeta$ of size $N$. In each iteration \texttt{GHS} greedily selects from $\zeta$ the heuristic $h$ which will result in the largest reduction of the value of $J$ (line 3). \texttt{GHS} returns $\zeta\sp{'}$ once it has the desired cardinality size $N$.\\
-
-\begin{algorithm}[H]
- 
-\textbf{Input:} Problem $\nabla$, set  of heuristics $\zeta$, cardinality $N$
- 
-\textbf{Ouput:} heuristic subset $\zeta\sp{'} \subseteq \zeta$ of size $N$
- 
-$\zeta\sp{'} \leftarrow \emptyset$
- 
-\While{$|\zeta\sp{'}| < N$ do} {
- 
-	$h \leftarrow \texttt{argmin}_{h \in \zeta} J(\zeta\sp{'} \cup \{h\}, \nabla) $
- 
-	$\zeta\sp{'} \leftarrow \zeta\sp{'} \cup \{h\}$
- 
-	return $\zeta\sp{'}$
-}
-\caption{Greedy Heuristic Selection}
-\label{alg:ghs_algorithm}
-\end{algorithm}
 
 \subsection{GHS Approximation Analysis}
 In the following analysis all heuristic functions are assumed to be consistent. We also assume that A$\sp{*}$ expands all nodes $n$ with $f(n) \leq C\sp{*}$ while solving $\nabla$, as shown in Equation \eqref{eq:eq_size_search_tree_1}.

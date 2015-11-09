@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.11.7)  7 NOV 2015 10:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.11.7)  9 NOV 2015 14:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2048,45 +2048,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 348--349
 \openout2 = `chapters/chapter03.aux'.
 
  (./chapters/chapter03.tex
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
 
-Underfull \vbox (badness 6792) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
- [45
+ []
+
+[45
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-[46]
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
-
- []
-
-[47] [48]
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
-
+Overfull \hbox (12.83955pt too wide) in paragraph at lines 83--84
+[]\T1/lmr/m/n/12 (-20) We write $\OML/lmm/m/it/12 J\OT1/lmr/m/n/12 (-20) (\OML/
+lmm/m/it/12 ^^P[]\OT1/lmr/m/n/12 (-20) )$ \T1/lmr/m/n/12 (-20) or sim-ply $\OML
+/lmm/m/it/12 J$ \T1/lmr/m/n/12 (-20) in-stead of $\OML/lmm/m/it/12 J\OT1/lmr/m/
+n/12 (-20) (\OML/lmm/m/it/12 ^^P[]; \OMS/lmsy/m/n/12 r\OT1/lmr/m/n/12 (-20) )$\
+T1/lmr/m/n/12 (-20) . \T1/lmtt/m/n/12 RGHS \T1/lmr/m/n/12 (-20) is guar-an-teed
+ to find near$\OMS/lmsy/m/n/12 ^^@$\T1/lmr/m/n/12 (-20) optimal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--247
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+[46] [47]
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+Underfull \vbox (badness 1052) has occurred while \output is active []
+
+ [49]
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 
-Overfull \hbox (15.57504pt too wide) in paragraph at lines 259--260
+Overfull \hbox (15.57504pt too wide) in paragraph at lines 261--262
 []\T1/lmr/m/n/12 (-20) Let's ex-plain how \T1/lmr/m/it/12 (-20) type sys-tem \T
 1/lmr/m/n/12 (-20) works through an ex-am-ple. The prob-lem of 8$\OMS/lmsy/m/n/
 12 ^^@$\T1/lmr/m/n/12 (-20) tile$\OMS/lmsy/m/n/12 ^^@$\T1/lmr/m/n/12 (-20) puzz
@@ -2094,11 +2109,11 @@ le
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
-[49]
+[50]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32767 (local)
@@ -2111,25 +2126,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--260
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50]
 Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
-[51]
+
 Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
  []
@@ -2140,6 +2147,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--309
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [52]
@@ -2211,7 +2226,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 809.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 809.
 Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
 ot changed.
-(rerunfilecheck)             Checksum: 1AEB6913EA4B0B82D52AD5282BDA52B1;1318.
+(rerunfilecheck)             Checksum: 592275993884D84244B3B2357398A817;1803.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -2219,11 +2234,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 809.
  ) 
 Here is how much of TeX's memory you used:
- 33808 strings out of 493105
- 651472 string characters out of 6137072
- 988520 words of memory out of 5000000
- 36236 multiletter control sequences out of 15000+600000
- 123003 words of font info for 202 fonts, out of 8000000 for 9000
+ 33818 strings out of 493105
+ 651761 string characters out of 6137072
+ 991089 words of memory out of 5000000
+ 36248 multiletter control sequences out of 15000+600000
+ 122535 words of font info for 202 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,21n,123p,1854b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
@@ -2248,11 +2263,11 @@ usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmtti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb
 ></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (77 pages, 587804 bytes
+Output written on abntex2-modelo-trabalho-academico.pdf (77 pages, 591995 bytes
 ).
 PDF statistics:
- 1045 PDF objects out of 1200 (max. 8388607)
- 927 compressed objects within 10 object streams
- 233 named destinations out of 1000 (max. 500000)
- 38434 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1065 PDF objects out of 1200 (max. 8388607)
+ 947 compressed objects within 10 object streams
+ 228 named destinations out of 1000 (max. 500000)
+ 37410 words of extra memory for PDF output out of 42996 (max. 10000000)
 

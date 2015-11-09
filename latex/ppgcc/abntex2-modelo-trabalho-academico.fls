@@ -462,8 +462,6 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx6.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt8.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtti10.tfm
 INPUT abntex2-modelo-trabalho-academico.bbl
 INPUT abntex2-modelo-trabalho-academico.bbl
