@@ -361,9 +361,32 @@ The number of nodes expanded in the search tree is obtained summing all \textit{
 \caption{Search tree using Type System} \label{fig:ts_search_tree}
 \end{figure}
 
+
+\begin{algorithm}[H]
+\textbf{Input:} root $n\sp{*}$ of a tree and a type system $T$ 
+
+\textbf{Ouput:} an array of sets $A$, where $A[i]$ is the set of pairs $<n,w>$ for the nodes $n$ expanded at level $i$.
+
+$A[0] \leftarrow \{n\sp{*},1\}$
+
+$i \leftarrow 0$
+
+\While{stopping condition is false} {
+	\For{each element $<n,w>$ in $A[i]$} {
+		\For{each child \^{n} of n} {
+			\If{$A[i+1]$ and element $<n\sp{'}, w\sp{'}>$ with $T(n\sp{'}) = T$(\^{n})} {
+				$w\sp{'} \leftarrow w\sp{'} + w,$ replace $<n\sp{'}, w\sp{'}>$ in\\ $A[i+1]$ by $<$\textit{\^{n}}$,w\sp{'}>$
+			%\Else {			
+			
+			}
+		}
+	}
+}
+\caption{SS, a single probe}
+\label{alg:ss_algorithm}
+\end{algorithm}
+
 \section{Modeling}
 The resources of how to run the experiments.
-
-
 
 \clearpage
