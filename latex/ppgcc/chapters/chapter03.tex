@@ -153,22 +153,21 @@ We assume that the computational cost $\beta(\zeta\sp{'} \cup \{h\})\ =\ \beta(\
 
 $T\sp{'}$ is clearly non$-$monotone as the reduction of $J\sp{'}(\zeta\sp{'},\nabla)$ caused by the addition of a heuristic to $\zeta\sp{'}$ might not compensate for the increase in $\beta(\zeta\sp{'})$. We now show that $T\sp{'}$ is supermodular.
 
+\begin{lemma}
+$T$ is supermodular. \\
+Proof. Let $A \subset B \subseteq \zeta$ and $h \in \zeta \backslash B$. We need to show that $T\sp{'}(A) - T\sp{'}(A \cup \{x\}) \geq T\sp{'}(B) - T\sp{'}(B \cup \{x\})$. We have that $T\sp{'}(A)- T\sp{'}(A \cup \{x\}) = J(A)-J(A \cup \{x\}) - \beta(x)$. and $T\sp{'}(B) - T\sp{'}(B \cup \{x\}) = J(B) - J(B \cup \{x\}) - \beta(x)$. Thus, we have that $J(A) - J(A \cup \{x\}) \geq J(B) - J(B \cup \{x\})$, which according to Lemma \ref{le:lemmatwo} is supermodular.
+\label{le:lemmathree}
+\end{lemma}
+
+Since $T\sp{'}$ is supermodular, another result by \cite{buchbinder2014submodular} and Lemma \ref{le:lemmathree} allow us to conclude the following.
 
 
+\begin{theorem}
+Let $\zeta\sp{'}$ be a subset selected by \texttt{RGHS}. Then $T(\zeta\sp{'}, \nabla)$ is within a factor of $\dfrac{e+1}{e} \approx 1.63$ of optimal.
+\label{th:theorem_three}
+\end{theorem}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+%\section{Estimating Tree Size and Running Time}
 
 \section{Stratified Sampling (SS)}
 Stratified Sampling is a prediction algorithm that estimate the number of nodes expanded by some heuristic.\\

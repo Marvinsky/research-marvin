@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.11.7)  9 NOV 2015 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.11.7)  9 NOV 2015 17:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1570,6 +1570,10 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 319.
 \openout5 = `abntex2-modelo-trabalho-academico.idx'.
 
 Writing index file abntex2-modelo-trabalho-academico.idx 
+
+LaTeX Warning: Unused global option(s):
+    [nsubseteqtwoside].
+
 (./abntex2-modelo-trabalho-academico.aux (./chapters/chapter01.aux)
 (./chapters/chapter02.aux) (./chapters/chapter03.aux))
 \openout1 = `abntex2-modelo-trabalho-academico.aux'.
@@ -2096,32 +2100,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--145
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
 [48]
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
-Underfull \vbox (badness 1052) has occurred while \output is active []
+Underfull \vbox (badness 1033) has occurred while \output is active []
 
  [49]
-Underfull \hbox (badness 10000) in paragraph at lines 265--267
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 268--270
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+
+ []
+
+[50]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 
-Overfull \hbox (15.57504pt too wide) in paragraph at lines 279--280
+Overfull \hbox (15.57504pt too wide) in paragraph at lines 282--283
 []\T1/lmr/m/n/12 (-20) Let's ex-plain how \T1/lmr/m/it/12 (-20) type sys-tem \T
 1/lmr/m/n/12 (-20) works through an ex-am-ple. The prob-lem of 8$\OMS/lmsy/m/n/
 12 ^^@$\T1/lmr/m/n/12 (-20) tile$\OMS/lmsy/m/n/12 ^^@$\T1/lmr/m/n/12 (-20) puzz
@@ -2129,11 +2139,10 @@ le
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
-[50]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32767 (local)
@@ -2147,84 +2156,81 @@ Underfull \hbox (badness 10000) in paragraph at lines 279--280
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Underfull \hbox (badness 10000) in paragraph at lines 323--324
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 325--326
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [53]
+[54]) [55
 
- [52]
-[53]) [54
-
-
-] [55
 
 ] [56
+
+] [57] [58
 
 ] (./abntex2-modelo-trabalho-academico.bbl
 (./abntex2-modelo-trabalho-academico.brf)
 \tf@brf=\write6
 \openout6 = `abntex2-modelo-trabalho-academico.brf'.
 
- [57] [58
+ [59] [60
 
 ]
 bibitemlist
-[59]) [60]
+[61]) [62]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 753.
 
-[61
+[63
 
 
-] [62] [63
+] [64] [65
 
-] [64
+] [66
 
-] [65] [66
+] [67] [68
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 781.
 
-[67
+[69
 
-] [68] [69
+] [70] [71
 
-] [70
+] [72
 
-] [71] [72
+] [73] [74
 
-] (./abntex2-modelo-trabalho-academico.ind [73]
-[74
+] (./abntex2-modelo-trabalho-academico.ind [75]
+[76
 
-] [75
+] [77
 
 
 ]) 
@@ -2246,7 +2252,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 809.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 809.
 Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
 ot changed.
-(rerunfilecheck)             Checksum: 91928F00FD1768EF15E2DDCB610993C6;1919.
+(rerunfilecheck)             Checksum: 2D96C61B36A6EC9180B7DFB35ED64F95;1982.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -2254,11 +2260,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 809.
  ) 
 Here is how much of TeX's memory you used:
- 33844 strings out of 493105
- 652323 string characters out of 6137072
- 991264 words of memory out of 5000000
- 36268 multiletter control sequences out of 15000+600000
- 122709 words of font info for 204 fonts, out of 8000000 for 9000
+ 33855 strings out of 493105
+ 652500 string characters out of 6137072
+ 990584 words of memory out of 5000000
+ 36271 multiletter control sequences out of 15000+600000
+ 122883 words of font info for 206 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,21n,123p,1854b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -2283,11 +2289,11 @@ s/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
 ist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
 rm1200.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (77 pages, 583629 bytes
+Output written on abntex2-modelo-trabalho-academico.pdf (79 pages, 587022 bytes
 ).
 PDF statistics:
- 1067 PDF objects out of 1200 (max. 8388607)
- 950 compressed objects within 10 object streams
- 230 named destinations out of 1000 (max. 500000)
+ 1083 PDF objects out of 1200 (max. 8388607)
+ 964 compressed objects within 10 object streams
+ 234 named destinations out of 1000 (max. 500000)
  37410 words of extra memory for PDF output out of 42996 (max. 10000000)
 
