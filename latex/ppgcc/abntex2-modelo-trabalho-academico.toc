@@ -51,12 +51,12 @@
 \precistoctext {The purpose of this section is to introduce the meta$-$reasoning proposed.}
 \contentsline {section}{\numberline {3.1}Random Greedy Heuristic Selection (RGHS)}{45}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Approximately Minimizing Search Tree Size}{46}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}GHS Approximation Analysis}{46}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Stratified Sampling (SS)}{48}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Type System}{48}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Search Space and Search Tree}{50}{section.3.3}
-\contentsline {section}{\numberline {3.4}Modeling}{53}{section.3.4}
-\contentsline {section}{\numberline {3.5}Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae}{54}{section.3.5}
+\contentsline {section}{\numberline {3.2}Approximately Minimizing A*'s Running Time}{47}{section.3.2}
+\contentsline {section}{\numberline {3.3}Stratified Sampling (SS)}{48}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Type System}{48}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Search Space and Search Tree}{50}{section.3.4}
+\contentsline {section}{\numberline {3.5}Modeling}{53}{section.3.5}
+\contentsline {section}{\numberline {3.6}Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae}{54}{section.3.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Nam sed tellus sit amet lectus urna ullamcorper tristique interdum elementum}}{55}{chapter.4}
 \contentsline {section}{\numberline {4.1}Pellentesque sit amet pede ac sem eleifend consectetuer}{55}{section.4.1}

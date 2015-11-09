@@ -82,11 +82,6 @@ J(\zeta\sp{'},\nabla) = |\{s \in V | h_{max}(s,\zeta\sp{'}) \leq C\sp{*} - g(s)\
 
 We write $J(\zeta\sp{'})$ or simply $J$ instead of $J(\zeta\sp{'},\nabla)$. \texttt{RGHS} is guaranteed to find near$-$optimal solutions when we use $J$ as the objective function $\Psi$, as we now demostrate. In the following analysis all heuristic functions are assumed to be consistent. We also assume that A$\sp{*}$ expands all nodes $n$ with $f(n) \leq C\sp{*}$ while solving $\nabla$, as shown in Equation \ref{eq:eq_size_search_tree_1}.
 
-
-
-\subsection{GHS Approximation Analysis}
-In the following analysis all heuristic functions are assumed to be consistent. We also assume that A$\sp{*}$ expands all nodes $n$ with $f(n) \leq C\sp{*}$ while solving $\nabla$, as shown in Equation \eqref{eq:eq_size_search_tree_1}.
-
 \begin{lemma}
 $J(\zeta\sp{'} \cup \{h\}) \leq J(\zeta\sp{'})$ for any $\zeta\sp{'}$ and any h.
 
@@ -98,7 +93,7 @@ $J(\zeta\sp{'} \cup \{h\})  =  |\{s \in V | h_{max}(s, \zeta\sp{'} \cup \{h\}) \
 
 Where the inequality follows from the fact that $h_{max}(s,\zeta\sp{'} \cup \{h\}) \geq h_{max}(s,\zeta\sp{'})$ for all s. \\
 
-Let $S$ be a set and $\phi$ a function over $2\sp{S}$. $\phi$ is supermodular if for any $A, B, x$ with $A \subset B \subset S$ and $x \in S \backslash B:$
+Let $S$ be a set and $\phi$ a function over $2\sp{S}$. $\phi$ is supermodular if for any $A, B, x$ with $A \subseteq B \subseteq S$ and $x \in S \backslash B:$
 
 \begin{equation}
 \phi(A) - \phi(A \cup \{x\}) \geq \phi(B) - \phi(B \cup \{x\})
@@ -117,21 +112,16 @@ Case 2. $J(B) - J(B \cup \{h\}) = k > 0.$ Let $s_{1},...,s_{k}$ be all the state
 \label{le:lemmatwo}
 \end{lemma}
 
-A stronger version of Lemma \ref{le:lemmaone} can be proven: if $S(\zeta\sp{'}) denotes the set of states \{s \in V | h_{max}(s,\zeta\sp{'}) \leq C\sp{*} - g(s)\},$ so that $J(\zeta\sp{'})$ is the cardinality of $S\sp{'}$, we obtain
-
-\begin{equation}
-S(\zeta\sp{'} \cup \{h\}) \subseteq S(\zeta\sp{'})\ for\  any\ h.
-\label{eq:eq_cardinality}
-\end{equation}
-
-Similarly, one can strengthen the statement of Lemma \ref{le:lemmatwo}: the proof given above contains the core idea for proving $S(A) \backslash S(A \cup \{h\}) \supseteq S(B) \backslash S(B \cup \{h\}),$ which, together with Equation \ref{eq:eq_cardinality}, immediately implies the weaker statement $J(A) - J(A \cup \{h\}) \geq J(B) - J(B \cup \{h\}).$ In the form stated above, however, Lemma \ref{le:lemmaone} and \ref{le:lemmatwo} are alredy sufficient for using a result by \cite{nemhauser1978analysis} to conclude the following.
+Lemma \ref{le:lemmaone} and \ref{le:lemmatwo} are sufficient for using a result by \cite{buchbinder2014submodular} to conclude the following.
 
 \begin{theorem}
 Let $\zeta\sp{'}$ be a subset selected by \texttt{GHS}. Then $J(\zeta\sp{'}, \nabla)$ is within a factor of $\dfrac{e+1}{e} \approx 1.36$ of optimal.
 \label{th:theorem_one}
 \end{theorem}
 
-Let $T(\zeta\sp{'},\nabla)$ be an approximation to the running time of A$\sp{*}$ when using $h_{max}(\zeta\sp{'})$ for solving $\nabla$, defined as follows.
+\section{Approximately Minimizing A*'s Running Time}
+\noindent
+Another objective function $\Psi$ we consider accounts for the A$\sp{*}$ running time and is defined as follows. Let $T(\zeta\sp{'},\nabla)$ be an approximation to the running time of A$\sp{*}$ when using $h_{max}(\zeta\sp{'})$ for solving $\nabla$, defined as follows.
 
 \begin{equation}
 T(\zeta\sp{'}, \nabla) = J(\zeta\sp{'},\nabla) \times t_{h_{max}}(\zeta\sp{'})
@@ -139,14 +129,46 @@ T(\zeta\sp{'}, \nabla) = J(\zeta\sp{'},\nabla) \times t_{h_{max}}(\zeta\sp{'})
 \end{equation}
 
 where, for any heuristic function $h$, the term $t_{h}$ refers to the running time used for computing the $h-$value of any state $s$. \\
+
+We assume that $t_{h}$ to be independent of $s$, which is a reasonable assumption for several heuristics such as \texttt{PDBs}.\\
+
 In order to compute the running time of A$\sp{*}$ exactly we would also have to account for the time required for node generation and for the operations on A$\sp{*}$'s \texttt{OPEN} and \texttt{CLOSED} lists. However, these two factors do not depend directly on the heuristic employed. Thus, $T(\zeta\sp{'},\nabla)$ is reasonable approximation for A$\sp{*}$'s running time for the heuristic subset selection problem.
 
 \begin{theorem}
-Suppose $t_{h_{1}} = t_{h_{2}}$ for any $h_{1}$ and $h_{2} \in \zeta$. Then for any fixed subset size $N$, \texttt{GHS} yields a subset $\zeta\sp{'}$ that is within a factor $\dfrac{e+1}{e}$ of optimal with respect to $T(\zeta\sp{'},\nabla)$
+Suppose $t_{h_{i}} = t_{h_{j}}$ for any $h_{i}$ and $h_{j} \in \zeta$. Then for any fixed subset size $N$, \texttt{RGHS} yields a subset $\zeta\sp{'}$ that is within a factor $\dfrac{e+1}{e}$ of optimal with respect to $T(\zeta\sp{'},\nabla)$
 \label{th:theorem_two}
 \end{theorem}
 
-$Proof.$ Since $t_{h}$ is constant over $h \in \zeta$, the value $t_{h_{max}}(\zeta\sp{'})$ is independent of $\zeta\sp{'}$. Hence the value $T(\zeta\sp{'},\nabla)$ is a constant factor of $J(\zeta\sp{'},\nabla).$ The latter is within a factor of $\dfrac{e+1}{e}$ of optimal by Theorem \ref{th:theorem_one}.
+$Proof.$ Since $t_{h}$ is constant over $h \in \zeta$, the value $t_{h_{max}}(\zeta\sp{'})$ is independent of $\zeta\sp{'}$. Hence the value $T(\zeta\sp{'},\nabla)$ is a constant factor of $J(\zeta\sp{'},\nabla).$ The latter is within a factor of $\dfrac{e+1}{e}$ of optimal by Theorem \ref{th:theorem_one}.\\
+
+The assumption that $t_{h_{i}}\ =\ t_{h_{j}}$ for any $h_{i},h_{j}\ \in\ \zeta$ often does not hold in domain$-$independent planning. For example, the \texttt{iPDB} heuristic \cite{haslum2007domain} can be few order of magnitude faster than the Incremental \texttt{LM-Cut} \cite{helmert2009landmarks} heuristic. In order to lift such an assumption we first define A$\sp{*}$'s running time in terms of its computational cost as follows.\\
+
+\begin{equation}
+T(\zeta\sp{'}, \nabla) = J(\zeta\sp{'},\nabla) + \beta(\zeta\sp{'})
+\label{eq:eq_cost_eval_time}
+\end{equation}
+
+Here $\beta(\zeta\sp{'})$ is the computational cost incurred by using $h_{max}(\zeta\sp{'})$. $T(\zeta\sp{'},\nabla)$ accounts for the computational cost of expanding $J(\zeta\sp{'}, \nabla)$ nodes added of the computational cost of employing a set of heuristics $\zeta\sp{'}$.\\
+We assume that the computational cost $\beta(\zeta\sp{'} \cup \{h\})\ =\ \beta(\zeta\sp{'}) + \beta(h)$, \textsf{i.e.,} the computational cost of employing heuristic $h$ during search is constant and independent of other heuristics in $\zeta\sp{'}$. Although this assumption is unlikely to hold in practice as $\beta(h)$ depends on the number of times A$\sp{*}$ uses $h$ to evaluate nodes during search, which in turn depends on the heuristics in $\zeta\sp{'}\ \backslash h$, we expect that the differences of $\beta(h)-$values to be negligible for different $\zeta\sp{'}$ sets.\\
+
+$T\sp{'}$ is clearly non$-$monotone as the reduction of $J\sp{'}(\zeta\sp{'},\nabla)$ caused by the addition of a heuristic to $\zeta\sp{'}$ might not compensate for the increase in $\beta(\zeta\sp{'})$. We now show that $T\sp{'}$ is supermodular.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \section{Stratified Sampling (SS)}
 Stratified Sampling is a prediction algorithm that estimate the number of nodes expanded by some heuristic.\\

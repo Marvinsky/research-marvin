@@ -63,10 +63,21 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 \emph{IEEE Transactions on Systems Science and Cybernetics SSC}, IEEE, v.~4,
   n.~2, p. 100--107, 1968.}
 
+\bibitem[Haslum et al. 2007]{haslum2007domain}
+\abntrefinfo{Haslum et al.}{HASLUM et al.}{2007}
+{HASLUM, P. et al. Domain-independent construction of pattern database
+  heuristics for cost-optimal planning.
+\emph{AAAI}, v.~7, p. 1007--1012, 2007.}
+
 \bibitem[Helmert 2006]{helmert2006fast}
 \abntrefinfo{Helmert}{HELMERT}{2006}
 {HELMERT, M. The fast downward planning system.
 \emph{J. Artif. Intell. Res.(JAIR)}, v.~26, p. 191--246, 2006.}
+
+\bibitem[Helmert e Domshlak 2009]{helmert2009landmarks}
+\abntrefinfo{Helmert e Domshlak}{HELMERT; DOMSHLAK}{2009}
+{HELMERT, M.; DOMSHLAK, C. Landmarks, critical paths and abstractions: what's
+  the difference anyway? In:  \emph{ICAPS}. [S.l.: s.n.], 2009. p. 162--169.}
 
 \bibitem[Holte et al. 2006]{holte2006maximizing}
 \abntrefinfo{Holte et al.}{HOLTE et al.}{2006}
