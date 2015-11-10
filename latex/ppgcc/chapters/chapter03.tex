@@ -167,7 +167,23 @@ Let $\zeta\sp{'}$ be a subset selected by \texttt{RGHS}. Then $T(\zeta\sp{'}, \n
 \label{th:theorem_three}
 \end{theorem}
 
-%\section{Estimating Tree Size and Running Time}
+\section{Estimating Tree Size and Running Time}
+In  practice \texttt{RGHS} used approximations of $J,T,$ and $T\sp{'}$ instead of their exact values. This is because computing $J,T,$ and $T\sp{'}$ exactly would require solving $\nabla$. We denote the approximations of $J$ as \textit{\^{J}}, and since both $T$ and$T\sp{'}$ model A$\sp{*}$'s running time, we denote the approximation for both as \textit{\^{T}}.\\
+
+We use the Culprit Sampler (\texttt{CS}) introduced by \cite{BarleySantiagoOver} and the Stratified Sampling (\texttt{SS}) algorithm introduced by \cite{chen1992heuristic} for computing \textit{\^{J}} and \textit{\^{T}}. Each of the two algorithms has its strengths and weaknesses, which we explore in the experimental Part.\\
+
+Both \texttt{CS} and \texttt{SS} must be able to quickly estimate the values of \textit{\^{J}}$(\zeta\sp{'})$ and \textit{\^{T}}$(\zeta\sp{'})$ for any subset $\zeta\sp{'}$ of $\zeta$ so they can be used in \texttt{RGHS}'s optimization process.
+
+\subsection{Culprit Sampler}
+\noindent
+\texttt{CS} runs a time$-$bounded A$\sp{*}$ search while sampling $f-culprits$ and $b-culprits$ to estimate the values of \textit{\^{J}} and \textit{\^{T}}.
+
+\begin{definition}(f-culprit)
+something here
+\label{def:def_one}
+\end{definition}
+
+
 
 \section{Stratified Sampling (SS)}
 Stratified Sampling is a prediction algorithm that estimate the number of nodes expanded by some heuristic.\\

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.11.7)  9 NOV 2015 17:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.11.7)  9 NOV 2015 17:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1823,17 +1823,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 542--543
 
 ]
 (./abntex2-modelo-trabalho-academico.toc [19]
-Overfull \hbox (7.54729pt too wide) in paragraph at lines 80--80
+Overfull \hbox (7.54729pt too wide) in paragraph at lines 82--82
  [][] [][][]\T1/lmss/bx/n/12 NULLAM EL-E-MEN-TUM URNA VEL IM-PERDIET 
  []
 
 
-Overfull \hbox (2.41129pt too wide) in paragraph at lines 80--80
+Overfull \hbox (2.41129pt too wide) in paragraph at lines 82--82
  \T1/lmss/bx/n/12 SO-DALES ELIT IP-SUM PHARE-TRA LIGULA AC 
  []
 
 
-Overfull \hbox (5.4115pt too wide) in paragraph at lines 80--80
+Overfull \hbox (5.4115pt too wide) in paragraph at lines 82--82
  \T1/lmss/bx/n/12 PRETIUM ANTE JUSTO A NULLA CUR-ABITUR 
  []
 
@@ -2033,7 +2033,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 321--322
 Underfull \vbox (badness 4036) has occurred while \output is active []
 
  [41]
-<images/sokoban_star_end.png, id=438, 639.38875pt x 196.735pt>
+<images/sokoban_star_end.png, id=442, 639.38875pt x 196.735pt>
 File: images/sokoban_star_end.png Graphic file (type png)
 
 <use images/sokoban_star_end.png>
@@ -2105,33 +2105,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--153
  []
 
 [48]
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
-Underfull \vbox (badness 1033) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
- [49]
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+ []
+
+[49] [50]
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--270
+Underfull \hbox (badness 10000) in paragraph at lines 284--286
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
-[50]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 
-Overfull \hbox (15.57504pt too wide) in paragraph at lines 282--283
+Overfull \hbox (15.57504pt too wide) in paragraph at lines 298--299
 []\T1/lmr/m/n/12 (-20) Let's ex-plain how \T1/lmr/m/it/12 (-20) type sys-tem \T
 1/lmr/m/n/12 (-20) works through an ex-am-ple. The prob-lem of 8$\OMS/lmsy/m/n/
 12 ^^@$\T1/lmr/m/n/12 (-20) tile$\OMS/lmsy/m/n/12 ^^@$\T1/lmr/m/n/12 (-20) puzz
@@ -2139,52 +2145,52 @@ le
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
-
- []
-
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
 [51]
-Underfull \hbox (badness 10000) in paragraph at lines 325--326
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--340
 
  []
 
-[52]
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53]
-[54]) [55
+ [52]
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
+
+ []
+
+[53] [54]) [55
 
 
 ] [56
@@ -2252,7 +2258,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 809.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 809.
 Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
 ot changed.
-(rerunfilecheck)             Checksum: 2D96C61B36A6EC9180B7DFB35ED64F95;1982.
+(rerunfilecheck)             Checksum: D14B1C5B281CB9EA84251FABB7446899;2091.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -2260,11 +2266,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 809.
  ) 
 Here is how much of TeX's memory you used:
- 33855 strings out of 493105
- 652500 string characters out of 6137072
- 990584 words of memory out of 5000000
- 36271 multiletter control sequences out of 15000+600000
- 122883 words of font info for 206 fonts, out of 8000000 for 9000
+ 33865 strings out of 493105
+ 652604 string characters out of 6137072
+ 990490 words of memory out of 5000000
+ 36276 multiletter control sequences out of 15000+600000
+ 123012 words of font info for 207 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,21n,123p,1854b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -2289,11 +2295,11 @@ s/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
 ist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
 rm1200.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (79 pages, 587022 bytes
+Output written on abntex2-modelo-trabalho-academico.pdf (79 pages, 590622 bytes
 ).
 PDF statistics:
- 1083 PDF objects out of 1200 (max. 8388607)
- 964 compressed objects within 10 object streams
- 234 named destinations out of 1000 (max. 500000)
- 37410 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1100 PDF objects out of 1200 (max. 8388607)
+ 981 compressed objects within 10 object streams
+ 237 named destinations out of 1000 (max. 500000)
+ 37426 words of extra memory for PDF output out of 42996 (max. 10000000)
 
