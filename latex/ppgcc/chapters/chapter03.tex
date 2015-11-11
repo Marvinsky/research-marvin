@@ -179,11 +179,33 @@ Both \texttt{CS} and \texttt{SS} must be able to quickly estimate the values of 
 \texttt{CS} runs a time$-$bounded A$\sp{*}$ search while sampling $f-culprits$ and $b-culprits$ to estimate the values of \textit{\^{J}} and \textit{\^{T}}.
 
 \begin{definition}(f-culprit)
-something here
-\label{def:def_one}
+Let $\zeta = \{h_{1}, h_{2},...,h_{M}\}$ be a set of heuristics. The f$-$culprit of a node n in an A$\sp{*}$ search tree is defined as the tuple F(n) = $\left\langle f_{1}(n), f_{2}(n),...,f_{M}(n)  \right\rangle$, where $f_{i}(n) = g(n)+h_{i}(n)$. For any n$-$tuple F, the counter $C_{F}$ denotes the number of nodes n in the tree with F(n) = F.
+\label{def:def_fculprits}
 \end{definition}
 
+\begin{definition}(b-culprit)
+Let $\zeta = \{h_{1}, h_{2},...,h_{M}\}$ be a set of heuristics and b a lower bound on the solution cost $\nabla$. The b$-$culprit of a node n in an A$\sp{*}$ search tree is defined as the tuple $B(n) = \left\langle y_{1}(n), y_{2}(n),...,y_{M}(n)\right\rangle$, where $y_{i}(n) = 1$ if g(n) + $h_{i}(n) \leq b$ and $y_{i}(n) = 0$, otherwise.  For any binary n$-$tuple B, the counter $C_{B}$ denotes the number of nodes n in the tree with B(n) = B.
+\label{def:def_bculprits}
+\end{definition}
 
+\texttt{CS} works by running an A$\sp{*}$ search bounded by a user$-$specified time limit. Then, \texttt{CS} compresses the information obtained in the A$\sp{*}$ search (\textsf{i.e.,} the $f-$values of all nodes expanded according to all heuristics $h$ in $\zeta$) in b$-$culprits, which are later used for computing \textit{\^{J}}. The b$f-$culprits are generated as an intermediate step for computing the b$-$culprits, as we explain below. The maximum number of f$-$culprits and b$-$culprits in an A$\sp{*}$ search tree is equal to the number of nodes in the tree expanded by the time$-$bounded A$\sp{*}$ search. However, in practice the number of f$-$culprits is usually much lower than the number of nodes in the tree. Moreover, in practice, the total number of different b$-$culprits tends to be even lower than the total number of f$-$culprits. Given a planning problem $\nabla$ and a set of heuristics $\zeta$, \texttt{CS} samples the A$\sp{*}$ search tree as follows.
+
+\begin{enumerate}
+    \item[1.-] \texttt{CS} runs A$\sp{*}$ using $h_{min}(s,\zeta) = min_{h \in \zeta}h(s)$ until reaching a user$-$specified time limit. A$\sp{*}$ using $h_{min}$ expands node $n$ if it were to expand $n$ while using any of the heuristics in $\zeta$ individually. For each node $n$ expanded in this time$-$bounded search we store $n$'s f$-$culprit and its counter.
+    \item[2.-] Let $f_{maxmin}$ be the largest $f-$value according to $h_{min}$ encountered in the time$-$bounded A$\sp{*}$ search described above. We now compute the set $\mathbb{B}$ of b$-$culprits and their counters based on the f$-$culprits and on the value of $f_{maxmin}$. This is done by iterating over all f$-$culprits once.\\
+
+\end{enumerate}
+    
+The process described above is performed only once \texttt{RGHS}'s execution. The value of \textit{\^{J}}$(\zeta\sp{'},\nabla)$ for any subset $\zeta\sp{'}$ of $\zeta$ if then computed by iterating over all b$-$culprits \textbf{B} and summing up the relevant values of $C_{B}$. The relevant values of $C_{B}$ represent the number of nodes A$\sp{*}$ would expand in a search bounded by $b$ if using $h_{max}(\zeta\sp{'})$. This computation can be written as follows.\\
+
+\begin{equation}
+\textit{\^{J}}(\zeta\sp{'},\nabla) = \sum_{\mathbb{B} \in B}W(B)
+\label{eq:eq_comp_w}
+\end{equation}
+
+Where $W(B)$ is 0 if there is a heuristic in $\zeta\sp{'}$ whose $y$-value in $B$ is zero (\textsf{i.e.,} there is a heuristic in $\zeta\sp{'}$ that prunes all nodes compressed into $B$), and $C_{B}$ otherwise. If the time$-$bounded A$\sp{*}$ search with $h_{min}$ expands all nodes $n$ with $f(n) \leq C\sp{*}$, then \textit{\^{J}}$=J$. In practice, however, our estimate \textit{\^{J}} will tend to be much lower than $J$.\\
+
+The value of \textit{\^{T}} is computed by multiplying \textit{\^{J}} by the sum of the evaluation time of each heuristic in $\zeta\sp{'}$. The evaluation time of the heuristics in $\zeta\sp{'}$ is measured in a separate process, before executing \texttt{CS}, by sampling a small number of nodes from $\nabla$'s start state.
 
 \section{Stratified Sampling (SS)}
 Stratified Sampling is a prediction algorithm that estimate the number of nodes expanded by some heuristic.\\
@@ -191,7 +213,7 @@ Stratified Sampling is a prediction algorithm that estimate the number of nodes 
 \cite{knuth1975Estimating} created a method to estimate the size of the search tree such as IDA$\sp{*}$. It works doing random walk from the root of the tree. Knuth's assumption is that all branches have the same structure. So, performing a random walk down one branch is enought to estimate the size of the search tree. However, the method does not work well for unbalanced search tree. \cite{chen1992heuristic}
  solved this problem with a stratification of the search tree through a \textit{type system} to reduce the variance of the sampling process\cite{lelis2013predicting}
 
-In the figure \ref{fig:ss_ts} each node of the Search Space is mapped to the \textit{Type System}
+In the figure \ref{fig:ss_ts} each state of the search space is mapped to the \textit{Type System}
 
 \begin{figure}[htb]
 \centering 
@@ -207,17 +229,17 @@ In the figure \ref{fig:ss_ts} each node of the Search Space is mapped to the \te
   \draw (-2,3) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (E) {};  
   \draw (6,1) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (F) {}; 
 
-  \draw[very thick,cyan, ->>]  (E) .. controls +(5,-3) and +(-4,1).. (F);
+  \draw[very thick,cyan, ->>>]  (E) .. controls +(5,-3) and +(-4,1).. (F);
   \path  ($(E)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(F)+(0,0.2)$) 
      {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
 
   \draw (-1,2) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (A) {};
-  \draw[very thick,cyan, ->>]  (A) .. controls +(5,-3) and +(-4,1).. (F);
+  \draw[very thick,cyan, ->>>]  (A) .. controls +(5,-3) and +(-4,1).. (F);
   \path  ($(A)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(F)+(0,0.2)$) 
      {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
 	
   \draw (-3,0) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (B) {};
-  \draw[very thick,cyan, ->>]  (B) .. controls +(5,-3) and +(-4,1).. (F);
+  \draw[very thick,cyan, ->>>]  (B) .. controls +(5,-3) and +(-4,1).. (F);
   \path  ($(B)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(F)+(0,0.2)$) 
      {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
 	
@@ -225,17 +247,17 @@ In the figure \ref{fig:ss_ts} each node of the Search Space is mapped to the \te
 
   \draw (-2,1) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (C) {};
   \draw (6.5,0) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (G) {};
-  \draw[very thick,cyan, ->>]  (C) .. controls +(5,-3) and +(-4,1).. (G);
+  \draw[very thick,cyan, ->>>]  (C) .. controls +(5,-3) and +(-4,1).. (G);
   \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
      {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };	
 
 \draw (-1,0) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (D) {};	
-\draw[very thick,cyan, ->>]  (D) .. controls +(5,-3) and +(-4,1).. (G);
+\draw[very thick,cyan, ->>>]  (D) .. controls +(5,-3) and +(-4,1).. (G);
   \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
      {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };	
 
 \draw (-3,-1) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (H) {};	
-\draw[very thick,cyan, ->>]  (H) .. controls +(5,-3) and +(-4,1).. (G);
+\draw[very thick,cyan, ->>>]  (H) .. controls +(5,-3) and +(-4,1).. (G);
   \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
      {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
 	
@@ -256,9 +278,8 @@ $\node [xshift=1cm,yshift=2cm] (A) at (-3,3) {Search Space};$
 $\node [xshift=1cm,yshift=2cm] (A) at (5,1) {Type System};$
 	
 \end{tikzpicture}
-\caption{Type system and the Search Space Representation.} \label{fig:ss_ts}
+\caption{Type system and the search space Representation.} \label{fig:ss_ts}
 \end{figure}
-
 
 \subsection{Type System}
 The \textit{Type System} is a partition of the states in the state space. It is calculated based of any property of each node in the search tree. \cite{Lelis2013CC}
@@ -282,8 +303,62 @@ Let $G = (N,E)$ be a graph representing an \textit{ESG} where $N$ is its set of 
 
 \theoremstyle{definition}
 \begin{definition}{Type System}
-Let S = (N,E) be a UST. $T = \{t_{1},...,t_{n} \}$ is a type system for S if it is a disjoint partitioning of N. If $n \in N$ and $t \in T$ with $n \in t$, we write $T(n) = t$. \\
+Let S = (N,E) be a UST. $T = \{t_{1},...,t_{n} \}$ is a type system for S if it is a disjoint partitioning of N. If $n \in N$ and $t \in T$ with $n \in t$, we write $T(n) = t$.
 \end{definition}
+
+\texttt{SS} is a general method for approximating any function of the form $\varphi = \sum_{n \in S}z(n)$, where $z$ is any function assigning a numerical value to a node.  $\varphi$ represents a numerical property of the search tree rooted at $n\sp{*}$. For instance, if $z(n)=1$ for all $n \in S$, then $\varphi$ is the size of the tree.\\
+
+Instead of traversing the entire tree and summing all $z-$values, \texttt{SS} assumes subtrees rooted at nodes of the same type will have equal values of $\varphi$ and so only one node of each type, chosen randomly, is expanded. This is the key to $\texttt{SS}$'s efficiency since the search trees of practical interest have far too many nodes to be examined examined exhaustively.\\
+
+Given a search tree $S$ and a type system $T$, \texttt{SS} estimates $\varphi$ as follows. First, it samples the tree and returns a set $A$ of $representative-weight$ pairs, with one such pair for every unique type seen during sampling. In the pair $\left\langle s,w \right\rangle$ in $A$ for type $t \in T$, $n$ is the unique node of type $t$ that was expanded during search and $w$ is an estimate of the number of nodes type $t$ in the tree. $\varphi$ is then approximated by $\hat{\varphi}$, defined as, $\hat{\varphi} =  \sum_{\left\langle s,w \right\rangle \in A}w \times z(n)$.\\
+
+By making $z(n) = 1$ for all $n \in S$ \texttt{SS} prooduces an estimate $\hat{J}$ of $J$. Similarly to our approach with \texttt{CS}, we obtain $\hat{T}$ by multiplying $\hat{J}$ by the heuristic evaluation time.
+
+
+\begin{algorithm}
+\SetKwInOut{Input}{Input}
+\SetKwInOut{Output}{Output}
+\Input{root $n\sp{*}$ of a tree and a type system $T$}
+\Output{an array of sets $A$, where $A[i]$ is the set of pairs $<n,w>$ for the nodes $n$ expanded at level $i$.}
+
+$A[0] \leftarrow \{\left\langle  n\sp{*},1 \right\rangle \}$
+
+$i \leftarrow 0$
+
+\While{A[i] is not empty} {
+	\For{each element $\left\langle n,w \right\rangle$ in $A[i]$} {
+		\For{each child $\hat{n}$ of n} {
+			\If{$g(\hat{n}) + h(\hat{n}) \leq d$} {
+				\If{$A[i+1]$ contains an element $\left\langle n\sp{'}, w\sp{'} \right\rangle$ with $T(n\sp{'}) = T(\hat{n})$} {
+				$w\sp{'} \leftarrow w\sp{'} + w$\\ 
+				with probability $w/w\sp{'}$, replace $\left\langle n\sp{'}, w\sp{'} \right\rangle$ in\\ $A[i+1]$ by $\left\langle \hat{n},w\sp{'} \right\rangle$
+				} \Else {	
+					insert new element $\left\langle \hat{n},w\sp{'} \right\rangle$	 in $A[i+1]$
+				}
+			}
+		}
+	}
+	$i \leftarrow i + 1$
+}
+\caption{SS, a single probe}
+\label{alg:ss_algorithm}
+\end{algorithm}
+
+In \texttt{SS} the types are required to be partially ordered: a node's type must be strictly greater than the type of its parent. This can be guaranteed by adding the depth of a node to the type system and then sorting the types lexicographically. That is why in our implementation of \texttt{SS} types at one level are treated separately from types ate another level by the division of $A$ into groups $A[i]$, where $A[i]$ is the set of representative$-$weight pairs for the types encountered at level $i$. If the same type occurs on differente levels the occurrences will be treated as if they were different types $-$ the depth of search is implicitly included into all of our type systems.\\
+
+Algorithm \ref{alg:ss_algorithm} shows \texttt{SS} in detail. Representative nodes from $A[i]$ are expanded to get representative nodes for $A[i+1]$ as follows. $A[0]$ is initialized to contain only the root of the search tree to be probed, with weight 1 (Line 1). In each iteration (Lines 4 through 11), all nodes in $A[i]$ are expanded. The children of each node in $A[i]$ are considered for inclusion in $A[i+1]$ if their $f-$value do not exceed an upper bound $d$ provided as input to \texttt{SS}. If a child $\hat{n}$ has a type $t$ that is already represented in $A[i+1]$ by another node $n\sp{'}$, then a $merge$ action on $\hat{n}$ and $n\sp{'}$ is performed. In a merge action we increase the weight in the corresponding representative$-$weight pair of type $t$ by the weight $w(n)$ of $\hat{n}$'s parent $n$ (from level $i$) since there were $w(n)$ nodes at level $i$ that are assumed to have children of type $t$ at level $i+1$. $\hat{n}$ will replace $n\sp{'}$ according to the probability shown in Line 9. \cite{chen1992heuristic} proved that this probability reduces the variance of the estimation. Once all the states in $A[i]$ are expanded, we move to the next iteration.\\
+
+One run of the \texttt{SS} algorithm is called a $probe$. \cite{chen1992heuristic} proved that the expected value of $\hat{\varphi}$ converges to $\varphi$ in the limit as the number of probes goes to infinity. As \cite{lelis2014estimating}, \texttt{SS} is not able to detect duplicated nodes in its sampling process. As a result, since A$\sp{*}$ does not expanded duplicates, \texttt{SS} usually overestimates the actual number of nodes A$\sp{*}$ expands. Thus, in the limit, as the number of probes grows large, \texttt{SS}'s prediction converges to a number which  is likely to overestimate the A$\sp{*}$ search tree size. We test empirically whether \texttt{SS} is able to allow \texttt{RGHS} to make good subset selects despite being unable to detect duplicated nodes during sampling.\\
+
+Similarly to \texttt{CS}, we also define a time$-$limit to run \texttt{SS}. We use \texttt{SS} with an iterative$-$deepening approach in order to ensure an estimate of $\hat{J}$ and $\hat{T}$ before reaching the time limit. We set the upper bound $d$ to the heuristic value of the start state and, after performing $p$ probes, if there is still time, we increase $d$ to twice its previous value. The values of $\hat{J}$ and $\hat{T}$ is given by the prediction produced for the last $d-$value in which \texttt{SS} was able to perform all $p$ probes.\\
+
+\texttt{SS} must also be able to estimate the values of $\hat{J}(\zeta\sp{'})$ and $\hat{T}(\zeta\sp{'})$ for any subset $\zeta\sp{'}$ of $\zeta$.
+
+
+
+
+
+
 
 In this thesis we use \textit{type system} based only in heuristics.\cite{zahavi2010predicting} use the simpliest heuristic$-$based \textit{type system} in which two nodes $n$ and $n\sp{'}$ are of the same type if they have the same heuristic value. \\
 
@@ -399,33 +474,5 @@ The number of nodes expanded in the search tree is obtained summing all \textit{
 \end{tikzpicture}
 \caption{Search tree using Type System} \label{fig:ts_search_tree}
 \end{figure}
-
-
-\begin{algorithm}[H]
-\textbf{Input:} root $n\sp{*}$ of a tree and a type system $T$ 
-
-\textbf{Ouput:} an array of sets $A$, where $A[i]$ is the set of pairs $<n,w>$ for the nodes $n$ expanded at level $i$.
-
-$A[0] \leftarrow \{n\sp{*},1\}$
-
-$i \leftarrow 0$
-
-\While{stopping condition is false} {
-	\For{each element $<n,w>$ in $A[i]$} {
-		\For{each child \^{n} of n} {
-			\If{$A[i+1]$ and element $<n\sp{'}, w\sp{'}>$ with $T(n\sp{'}) = T$(\^{n})} {
-				$w\sp{'} \leftarrow w\sp{'} + w,$ replace $<n\sp{'}, w\sp{'}>$ in\\ $A[i+1]$ by $<$\textit{\^{n}}$,w\sp{'}>$
-			%\Else {			
-			
-			}
-		}
-	}
-}
-\caption{SS, a single probe}
-\label{alg:ss_algorithm}
-\end{algorithm}
-
-\section{Modeling}
-The resources of how to run the experiments.
 
 \clearpage
