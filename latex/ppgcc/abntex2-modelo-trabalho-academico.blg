@@ -4,6 +4,7 @@ The top-level auxiliary file: abntex2-modelo-trabalho-academico.aux
 A level-1 auxiliary file: chapters/chapter01.aux
 A level-1 auxiliary file: chapters/chapter02.aux
 A level-1 auxiliary file: chapters/chapter03.aux
+A level-1 auxiliary file: chapters/chapter04.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -16,6 +17,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: abntex2-modelo-references.bib
+Warning--I didn't find a database entry for "lelis2013predicting;lelis2014memory"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -27,7 +29,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 24 entries,
             6711 wiz_defined-function locations,
-            1347 strings with 13465 characters,
+            1349 strings with 13522 characters,
 and the built_in function-call counts, 21301 in all, are:
 = -- 1773
 > -- 741
@@ -66,3 +68,4 @@ warning$ -- 0
 while$ -- 181
 width$ -- 0
 write$ -- 384
+(There was 1 warning)

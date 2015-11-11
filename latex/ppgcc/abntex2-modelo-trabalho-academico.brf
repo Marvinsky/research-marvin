@@ -38,4 +38,6 @@
 \backcite {chen1992heuristic}{{54}{13}{algocf.2}}
 \backcite {lelis2014estimating}{{54}{13}{algocf.2}}
 \backcite {zahavi2010predicting}{{54}{13}{equation.3.5.8}}
-\backcite {NBR14724:2005}{{61}{4}{section*.17}}
+\backcite {helmert2006fast}{{61}{4}{chapter.4}}
+\backcite {lelis2013predicting;lelis2014memory}{{61}{4}{chapter.4}}
+\backcite {NBR14724:2005}{{65}{5}{section*.18}}

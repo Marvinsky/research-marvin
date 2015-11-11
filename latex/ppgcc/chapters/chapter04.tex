@@ -24,9 +24,20 @@
 % comandos do abnTeX2 e de LaTeX.
 % ---
  
-\chapter{New chapter}\label{new_chapter}
+\chapter{Empirical Evaluation}\label{Empirical Evaluation}
 
-\chapterprecis{The purpose of this section is to introduce the meta$-$reasoning proposed.}\index{sinopse de capítulo}
+\chapterprecis{The purpose of this section is to present how our meta$-$reasoning is applied when solving \texttt{IPC} domain problens.}\index{sinopse de capítulo}
+
+\texttt{RGHS} is guaranteed to find a near$-$optimal heuristic subset to guide the A$\sp{*}$ search granted that it is able to compute the objective function of interest. Thus, the practical effectiveness of \texttt{RGHS} depends on its ability of finding good approximations $\hat{J}$ and $\hat{T}$. Moreover, \texttt{RGHS}'s effectiveness depends on the value of $N$ and on the quality of the set of heuristics $\zeta$. In order to verify its practical effectivess, we have implemented \texttt{RGHS} in Fast Downward \cite{helmert2006fast} and tested the A$\sp{*}$ performance using subsets of heuristics selected by \texttt{RGHS} while minimizing different objective funcions.\\
+
+We run two sets of experiments. In the first set we verify whether the approximations $\hat{J}$ and $\hat{T}$ provided by \texttt{CS} and \texttt{SS} allow \texttt{RGHS} to make near$-$optimal subset selections. In the second set of experiments we test the effectiveness of \texttt{RGHS} by measuring the total number of problem instances solved by A$\sp{*}$ using a heuristic subset selected by \texttt{RGHS}.\\
+
+In our experiments we implemented an approximation procedure to automatically choose the subset size selected by \texttt{RGHS}, which we now explain. Initially we fix $N$ to a value (in our experiments we use $N = 25$). Then, in every iteration, when computing $M_{i}$, \texttt{RGHS} removes from $\zeta$ the heuristics that cannot help reducing $\varphi$. That is, in iteration $i$, all heuristics in $\zeta \backslash \zeta_{i-1}\sp{'}$ that cannot reduce $\varphi$ when combined with $\zeta_{i-1}\sp{'}$ are removed from $\zeta$. \texttt{RGHS} stops if $\zeta$ is empty and returns the current subset $\zeta\sp{'}$ with $|\zeta\sp{'}|<N$. Likewise, should heuristic $h$ improves the objective function being optimized, then we also allow \texttt{RGHS} to add $h$ to $\zeta\sp{'}$ even if $|\zeta\sp{'}| > N$. We observed in preliminary experiments that \texttt{RGHS} is robust to the initial value of $N$, as the total number of problems solved by A$\sp{*}$ while guided by a heuristic subset selected by \texttt{RGHS} varied little with $N$.\\
+
+In all our experiments we use a type$-$system that assigned the same type for a node with the same $f-$value. Such a type system has shown to be effective in guiding \texttt{SS} to produce accurate tree size predictions in other application domains \cite{lelis2013predicting;lelis2014memory}
+
+
+
 
 % ---
 \section{New section}
