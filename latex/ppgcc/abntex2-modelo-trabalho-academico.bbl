@@ -96,6 +96,12 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   search.
 \emph{Artificial Intelligence}, v.~27, p. 97--109, 1985.}
 
+\bibitem[Lelis, Stern e Sturtevant 2014]{lelis2014estimating}
+\abntrefinfo{Lelis, Stern e Sturtevant}{LELIS; STERN; STURTEVANT}{2014}
+{LELIS, L.~H.; STERN, R.; STURTEVANT, N.~R. Estimating search tree size with
+  duplicate detection. In:  \emph{Seventh Annual Symposium on Combinatorial
+  Search}. [S.l.: s.n.], 2014.}
+
 \bibitem[Lelis, Zilles e Holte 2013]{lelis2013predicting}
 \abntrefinfo{Lelis, Zilles e Holte}{LELIS; ZILLES; HOLTE}{2013}
 {LELIS, L.~H.; ZILLES, S.; HOLTE, R.~C. Predicting the size of ida* search
