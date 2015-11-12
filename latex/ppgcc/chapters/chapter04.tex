@@ -36,6 +36,31 @@ We run two sets of experiments. In the first set we verify whether the approxima
 
 In our experiments we implemented an approximation procedure to automatically choose the subset size selected by \texttt{RGHS}, which we now explain. Initially we fix $N$ to a value (in our experiments we use $N = 25$). Then, in every iteration, when computing $M_{i}$, \texttt{RGHS} removes from $\zeta$ the heuristics that cannot help reducing $\varphi$. That is, in iteration $i$, all heuristics in $\zeta \backslash \zeta_{i-1}\sp{'}$ that cannot reduce $\varphi$ when combined with $\zeta_{i-1}\sp{'}$ are removed from $\zeta$. \texttt{RGHS} stops if $\zeta$ is empty and returns the current subset $\zeta\sp{'}$ with $|\zeta\sp{'}|<N$. Likewise, should heuristic $h$ improves the objective function being optimized, then we also allow \texttt{RGHS} to add $h$ to $\zeta\sp{'}$ even if $|\zeta\sp{'}| > N$. We observed in preliminary experiments that \texttt{RGHS} is robust to the initial value of $N$, as the total number of problems solved by A$\sp{*}$ while guided by a heuristic subset selected by \texttt{RGHS} varied little with $N$.\\
 
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[]
+\centering
+\caption{Ratios of the number of nodes expanded using $h_{max}(\zeta\sp{'})$ to the number of nodes expanded using $h_{max}(\zeta)$}
+\label{my-label}
+\begin{tabular}{lcccccc}
+\hline
+\multirow{2}{*}{Domain} & \multicolumn{2}{c}{\texttt{SS}} & \multicolumn{2}{c}{\texttt{CS}}   & \multirow{2}{*}{|$\zeta$|} & \multirow{2}{*}{n} \\ \cline{2-5}
+                        & Ratio    & |$\zeta\sp{'}$|   & Ratio  & |$\zeta\sp{'}$| &                            &                    \\ \hline
+Barman                  & 2.15     & 27.26       & 2.34   & 30.68           & 4790.16                    & 20                 \\
+Elevators               & 1.09     & 18.00       & 1.04   & 20.00           & 155.00                     & 1                  \\
+Floortile               & 1.01     & 45.86       & 1.01   & 41.14           & 136.57                     & 13                 \\
+Openstacks              & 1.00     & 1.00        & 1.00   & 1.00            & 316.62                     & 12                 \\
+Parking                 & 1.01     & 7.05        & 1.01   & 7.37            & 17.53                      & 18                 \\
+Pegsol                  & 1.00     & 32.00       & 1.00   & 48.33           & 78.00                      & 2                  \\
+Scanalyzer              & 1.01     & 37.29       & 1.07   & 21.43           & 52.14                      & 6                  \\
+Tidybot                 & 1.03     & 4.06        & 1.00   & 8.19            & 3259.00                    & 15                 \\
+Transport               & 7.33     & 9.70        & 1.45   & 12.90           & 156.50                     & 9                  \\
+Visitall                & 1.00     & 95.00       & 1.02   & 48.00           & 218.00                     & 2                  \\
+Woodworking             & 2.39     & 83.00       & 611.72 & 32.00           & 346.00                     & 5                  \\ \hline
+\end{tabular}
+\label{tb_one}
+\end{table}
+
 In all our experiments we use a type$-$system that assigned the same type for a node with the same $f-$value. Such a type system has shown to be effective in guiding \texttt{SS} to produce accurate tree size predictions in other application domains \cite{lelis2013predicting,lelis2014memory}.\\
 
 We ran our experiments on the 2011 International Planning Competition (\texttt{IPC}) instances. We used the 2011 instances instead of the 2014 instances because the former do not have problems with conditional effects, which are currently not handled by \textbf{PDB} heuristics. All experiments are run on $2.67$ GHz machines with 4GB, and are limited to 1,800 seconds of running time.\\
@@ -52,3 +77,15 @@ We collect values of $J(\zeta)$ and $J(\zeta\sp{'})$ as follows. For each proble
 
 In this experiment we refer to the approach that runs A$\sp{*}$ guided by a heuristic subset selected by \texttt{RGHS} using \texttt{CS} as \texttt{RGHS+CS}. Similarly, we write \texttt{RGHS+SS} when \texttt{SS} is used as predictor to make the heuristic subset selection.\\
 
+Table \ref{tb_one} shows the average ratios of $J(\zeta\sp{'})$ to $J(\zeta)$ for both \texttt{SS} and \texttt{CS} in different problem domains. The value of $J$, for a given problem instance, is computed as the number of nodes expanded up to the largest $f-$layer which is fully expanded by all approaches tested (\texttt{Max, RGHS} using \texttt{SS} and \texttt{RGHS} using \texttt{CS}). We only present results for instances that are not solved during \texttt{RGHS}'s \texttt{CS} sampling process. The column $"n"$ shows the number of instances used to compute the averages of each row. We also show the average number of \texttt{GA-PDBs} generated (|$\zeta$|) and the average number of \texttt{GA-PDBs} selected by \texttt{RGHS} (|$\zeta\sp{'}$|). This experiment shows that for most of the problems \texttt{RGHS}, using either \texttt{CS} or \texttt{SS}, is selecting a near$-$optimal subset of $\zeta$. For example, in Tidybot \texttt{RGHS} selects only a few \texttt{GA-PDBs} out of thousands when using either \texttt{SS} or \texttt{CS}. Moreover, the resulting A$\sp{*}$ search tree size is on average at most 3$\%$ larger than optimal for \texttt{RGHS+SS}, and is optimal for \texttt{RGHS+CS}.\\
+
+The exceptions in Table \ref{tb_one} are the ratios for Barman, Transport and Woodworking. In Transport \texttt{SS} has an average ratio of $7.33$ and \texttt{CS} of $1.45$. By looking at the ratios of \texttt{SS} for individual instances of \texttt{SS} for individual instances of Transport (results now show in Table \ref{tb_one}), we noticed that \texttt{SS} is able to make optimal selections for all but one of the 9 instances considered in this experiment. Since we do not know a priori what is the instance's optimal solution cost, \texttt{SS} samples nodes with $f-$values much larger than the instance's optimal solution cost. We believe that, in this particular instance of Transport, by sampling a portion of the state space that is not expanded during the actual A$\sp{*}$, \texttt{SS} is biasing the subset selection to select heuristics that do not contribute to reducing the actual A$\sp{*}$ search tree size.\\
+
+The \texttt{SS}'s ability of sampling deep into the search space is not always harmful. For example, \texttt{SS} allows \texttt{RGHS} to make good selections for instances of the Woodworking domain. By contrast, \texttt{CS}'s systematic approach to sampling only allow a shallow sample of the A$\sp{*}$ search tree. As a result, \texttt{RGHS} makes a limited selection of heuristics to guide A$\sp{*}$ search. While \texttt{RGHS} using \texttt{SS} selects an average of 83 heuristics in Woodworking instances, \texttt{RGHS} using \texttt{CS} selects only an average of 32 heuristics. This difference on sampling strategies reflects on the number of problems solved by A$\sp{*}$. While \texttt{RGHS+SS} solves 15 instances of the Woodworking domain, \texttt{RGHS+CS} solves only 11. In total, out of the 280 instances of the \texttt{IPC} 2011 benchmark set, \texttt{RGHS+SS} solves 200 problem instances in this experiment, while \texttt{RGHS+CS} only solves 193 problem instances. (The numbers of instances solved are not shown in Table \ref{tb_one}).
+
+\section{Comparison with Other Planning Systems}
+\noindent
+The objective of this second set of experiments is to teset the quality of the subset of heuristics \texttt{RGHS} selects while optimizing different objective functions. Our evaluation metric is coverage, \textsc{i.e.,} number of problems solved within a 1,800 second time limit. We note that the 1,800$-$second limit includes the time to generate $\zeta$, select $\zeta\sp{'}$, and run A$\sp{*}$ using $h_{max}(\zeta\sp{'})$. The $\zeta$ set of heuristics is composed of a number of different \texttt{GA-PDBs}, a \texttt{PDB} heuristic produced by the \texttt{iPDB} method \cite{haslum2007domain} and the \texttt{LM-Cut} heuristic. The generation of \texttt{GA-PDBs} is limited by 600 seconds and 1GB of memory. We use one fourth of 600 seconds to genetate \texttt{GA-PDBs} with each of the following number of entries: $\{2 \cdot 10\sp{3}, 2 \cdot 10\sp{4}, 2 \cdot 10\sp{5}, 2 \cdot 10\sp{6}\}$. Our approach allows one to generate up to thousands of \texttt{GA-PDBs}. For every problem instance, we use exactly the same $\zeta$ set for \texttt{Max} and all \texttt{RGHS} approaches.\\
+
+\section{Systems Tested}
+\noindent
