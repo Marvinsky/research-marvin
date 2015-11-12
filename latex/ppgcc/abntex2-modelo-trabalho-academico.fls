@@ -465,12 +465,12 @@ INPUT abntex2-modelo-trabalho-academico.lof
 INPUT abntex2-modelo-trabalho-academico.lof
 INPUT abntex2-modelo-trabalho-academico.lot
 INPUT abntex2-modelo-trabalho-academico.lot
-INPUT abntex2-modelo-trabalho-academico.toc
-INPUT abntex2-modelo-trabalho-academico.toc
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtti10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
+INPUT abntex2-modelo-trabalho-academico.toc
+INPUT abntex2-modelo-trabalho-academico.toc
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtti10.tfm
 OUTPUT chapters/chapter01.aux
 INPUT chapters/chapter01.tex
 INPUT chapters/chapter01.tex
@@ -500,6 +500,7 @@ OUTPUT chapters/chapter04.aux
 INPUT chapters/chapter04.tex
 INPUT chapters/chapter04.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmcsc10.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT abntex2-modelo-trabalho-academico.bbl
 INPUT abntex2-modelo-trabalho-academico.bbl
 INPUT abntex2-modelo-trabalho-academico.brf
@@ -553,6 +554,7 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb

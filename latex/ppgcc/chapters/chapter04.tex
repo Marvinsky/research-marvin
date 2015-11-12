@@ -41,7 +41,6 @@ In our experiments we implemented an approximation procedure to automatically ch
 \begin{table}[]
 \centering
 \caption{Ratios of the number of nodes expanded using $h_{max}(\zeta\sp{'})$ to the number of nodes expanded using $h_{max}(\zeta)$}
-\label{my-label}
 \begin{tabular}{lcccccc}
 \hline
 \multirow{2}{*}{Domain} & \multicolumn{2}{c}{\texttt{SS}} & \multicolumn{2}{c}{\texttt{CS}}   & \multirow{2}{*}{|$\zeta$|} & \multirow{2}{*}{n} \\ \cline{2-5}
@@ -98,3 +97,36 @@ The intuition behind \texttt{Hibrid} is that we apply \texttt{RGHS} with its str
 We compare the coverage of the \texttt{RGHS} approaches with several other state$-$of$-$the$-$art planners. Namely, we experiment with RIDA$\sp{*}$ \cite{BarleySantiagoOver}, two variants of StoneSoup (StSp1 and StSp2) as described by \cite{nissim2011computing}, two versions of Symba (SY1 and SY2), and A$\sp{*}$ being independently guided by the maximum of all heuristics in $\zeta$ (\texttt{Max}), \texttt{iPDB, LM-cut} and \texttt{Merge $\&$ Shrink}(\texttt{M$\&$S}) \cite{nissim2011computing}.\\
 
 The results are presented in Table
+
+
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[htb]
+\footnotesize\setlength{\tabcolsep}{1.8pt}
+\centering
+\caption{Coverage of different planning systems on the 2011 \texttt{IPC} benchmarks. For the \texttt{RGHS} and \texttt{Max} approaches we also present the average number of heuristics \texttt{RGHS} selects (|$\zeta\sp{'}$|).}
+\begin{tabular}{llllllllllllllll}
+\hline
+\multirow{2}{*}{Domains} & \multirow{2}{*}{\texttt{Hybrid}} & \multicolumn{2}{c}{\texttt{CS}} & \multicolumn{2}{c}{\texttt{SS}} & \multirow{2}{*}{\texttt{Sum}} & \multirow{2}{*}{RIDA$\sp{*}$} & \multirow{2}{*}{SY1} & \multirow{2}{*}{SY2} & \multirow{2}{*}{StSp1} & \multirow{2}{*}{StSp2} & \multirow{2}{*}{\texttt{Max}} & \multirow{2}{*}{iPDB} & \multirow{2}{*}{LM-Cut} & \multirow{2}{*}{M$\&$S} \\ \cline{3-6}
+                         &                                    & \texttt{Time} & \texttt{Size} & \texttt{Time} & \texttt{Size} &                                 &                       &                      &                      &                        &                        &                                 &                       &                         &                         \\ \hline
+Barman                   & 6.9                                & 4.75            & 4               & 4               & 4               & 4                               & 4                     & 10                   & 11                   & 4                      & 4                      & 4                               & 4                     & 4                       & 4                       \\
+Elevators                & 19                                 & 19              & 19              & 19              & 19              & 19                              & 19                    & 20                   & 20                   & 18                     & 18                     & 19                              & 17                    & 18                      & 12                      \\
+Floortile                & 14                                 & 14              & 14              & 14              & 14              & 14                              & 14                    & 14                   & 14                   & 14                     & 14                     & 14                              & 8                     & 14                      & 10                      \\
+Nomystery                & 20                                 & 20              & 20              & 20              & 20              & 19                              & 20                    & 16                   & 16                   & 20                     & 20                     & 20                              & 19                    & 14                      & 18                      \\
+Openstacks               & 17                                 & 17              & 15              & 17              & 15              & 15                              & 15                    & 20                   & 20                   & 17                     & 17                     & 11                              & 17                    & 15                      & 17                      \\
+Parcprinter              & 17.7                               & 18              & 19              & 15              & 16              & 16                              & 18                    & 17                   & 17                   & 18                     & 18                     & 18                              & 16                    & 17                      & 16                      \\
+Parking                  & 7                                  & 7               & 1               & 2               & 2               & 2                               & 7                     & 2                    & 1                    & 5                      & 5                      & 2                               & 7                     & 2                       & 7                       \\
+Pegsol                   & 19                                 & 19              & 19              & 19              & 19              & 19                              & 19                    & 19                   & 20                   & 19                     & 19                     & 19                              & 20                    & 17                      & 19                      \\
+Scanalyzer               & 14                                 & 13.87           & 13              & 12              & 13              & 13                              & 14                    & 9                    & 9                    & 14                     & 14                     & 14                              & 10                    & 12                      & 11                      \\
+Sokoban                  & 20                                 & 20              & 20              & 20              & 20              & 20                              & 20                    & 20                   & 20                   & 20                     & 20                     & 20                              & 20                    & 20                      & 20                      \\
+Tidybot                  & 15.9                               & 16              & 16              & 16              & 16              & 16                              & 17                    & 15                   & 17                   & 16                     & 16                     & 15                              & 14                    & 16                      & 9                       \\
+Transport                & 14                                 & 13.37           & 11              & 13              & 13              & 13                              & 10                    & 10                   & 11                   & 7                      & 8                      & 9                               & 8                     & 6                       & 7                       \\
+Visitall                 & 18                                 & 18              & 17              & 17              & 17              & 17                              & 18                    & 12                   & 12                   & 16                     & 16                     & 18                              & 16                    & 10                      & 16                      \\
+Woodworking              & 15.7                               & 15              & 15              & 12              & 16              & 16                              & 15                    & 20                   & 20                   & 15                     & 15                     & 16                              & 9                     & 15                      & 9                       \\ \hline
+Total                    & 218.4                              & 215             & 203             & 200             & 204             & 203                             & 210                   & 204                  & 208                  & 203                    & 204                    & 199                             & 185                   & 180                     & 175                     \\ \hline
+\end{tabular}
+\label{tb_two}
+\end{table}
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.11.7)  12 NOV 2015 14:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.11.7)  12 NOV 2015 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2015,11 +2015,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 551--552
 ] (./abntex2-modelo-trabalho-academico.lof) [15] [16
 
 ]
-(./abntex2-modelo-trabalho-academico.lot) [17] [18
-
-]
-(./abntex2-modelo-trabalho-academico.toc [19]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 63.
+(./abntex2-modelo-trabalho-academico.lot
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 4.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2028,7 +2025,10 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+) [17] [18
 
+]
+(./abntex2-modelo-trabalho-academico.toc [19]
 Overfull \hbox (7.54729pt too wide) in paragraph at lines 84--84
  [][] [][][]\T1/lmss/bx/n/12 NULLAM EL-E-MEN-TUM URNA VEL IM-PERDIET 
  []
@@ -2227,7 +2227,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 321--322
 Underfull \vbox (badness 4036) has occurred while \output is active []
 
  [41]
-<images/sokoban_star_end.png, id=447, 639.38875pt x 196.735pt>
+<images/sokoban_star_end.png, id=451, 639.38875pt x 196.735pt>
 File: images/sokoban_star_end.png Graphic file (type png)
 
 <use images/sokoban_star_end.png>
@@ -2473,12 +2473,12 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 41.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
@@ -2488,47 +2488,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 69.
+(hyperref)                removing `math shift' on input line 68.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 69.
+(hyperref)                removing `math shift' on input line 68.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 69.
+(hyperref)                removing `math shift' on input line 68.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 69.
+(hyperref)                removing `math shift' on input line 68.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--73
+Underfull \hbox (badness 10000) in paragraph at lines 69--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
 [62]
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
@@ -2540,42 +2540,52 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
+Underfull \hbox (badness 10000) in paragraph at lines 90--92
 
  []
 
 [64]
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-)
-Overfull \hbox (7.40154pt too wide) in paragraph at lines 98--701
+
+Overfull \hbox (7.40154pt too wide) in paragraph at lines 97--98
 []\T1/lmr/m/n/12 (-20) We com-pare the cov-er-age of the \T1/lmtt/m/n/12 RGHS \
 T1/lmr/m/n/12 (-20) ap-proaches with sev-eral other state$\OMS/lmsy/m/n/12 ^^@$
 \T1/lmr/m/n/12 (-20) of$\OMS/lmsy/m/n/12 ^^@$\T1/lmr/m/n/12 (-20) the$\OMS/lmsy
 /m/n/12 ^^@$\T1/lmr/m/n/12 (-20) art
  []
 
-[65] [66
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
 
 
-] (./abntex2-modelo-trabalho-academico.bbl
+Overfull \hbox (11.28053pt too wide) in paragraph at lines 110--131
+ [][] 
+ []
+
+) [65] [66] (./abntex2-modelo-trabalho-academico.bbl
 (./abntex2-modelo-trabalho-academico.brf)
 \tf@brf=\write6
 \openout6 = `abntex2-modelo-trabalho-academico.brf'.
 
- [67] [68
+ [67
+
+
+] [68
 
 ]
 bibitemlist
@@ -2632,7 +2642,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 825.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 825.
 Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
 ot changed.
-(rerunfilecheck)             Checksum: F568D46349EA7962A49D6DCC3773BB76;2845.
+(rerunfilecheck)             Checksum: DA868127CD57FF2831A1ACAFE9150048;2901.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -2640,11 +2650,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 825.
  ) 
 Here is how much of TeX's memory you used:
- 34668 strings out of 493105
- 664965 string characters out of 6137072
- 999659 words of memory out of 5000000
- 36972 multiletter control sequences out of 15000+600000
- 140744 words of font info for 243 fonts, out of 8000000 for 9000
+ 34672 strings out of 493105
+ 665018 string characters out of 6137072
+ 1000994 words of memory out of 5000000
+ 36974 multiletter control sequences out of 15000+600000
+ 141063 words of font info for 244 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,25n,123p,1854b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -2666,17 +2676,17 @@ nts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmtti10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pf
-b>
-Output written on abntex2-modelo-trabalho-academico.pdf (87 pages, 677372 bytes
+public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmtti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on abntex2-modelo-trabalho-academico.pdf (87 pages, 708283 bytes
 ).
 PDF statistics:
- 1224 PDF objects out of 1440 (max. 8388607)
- 1093 compressed objects within 11 object streams
- 258 named destinations out of 1000 (max. 500000)
- 47162 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1236 PDF objects out of 1440 (max. 8388607)
+ 1103 compressed objects within 12 object streams
+ 259 named destinations out of 1000 (max. 500000)
+ 47674 words of extra memory for PDF output out of 51595 (max. 10000000)
 
