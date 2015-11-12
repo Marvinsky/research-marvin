@@ -334,6 +334,8 @@ INPUT chapters/chapter03.aux
 INPUT chapters/chapter03.aux
 INPUT chapters/chapter04.aux
 INPUT chapters/chapter04.aux
+INPUT chapters/chapter05.aux
+INPUT chapters/chapter05.aux
 OUTPUT abntex2-modelo-trabalho-academico.aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
@@ -501,6 +503,9 @@ INPUT chapters/chapter04.tex
 INPUT chapters/chapter04.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt10.tfm
+OUTPUT chapters/chapter05.aux
+INPUT chapters/chapter05.tex
+INPUT chapters/chapter05.tex
 INPUT abntex2-modelo-trabalho-academico.bbl
 INPUT abntex2-modelo-trabalho-academico.bbl
 INPUT abntex2-modelo-trabalho-academico.brf
@@ -522,6 +527,8 @@ INPUT chapters/chapter03.aux
 INPUT chapters/chapter03.aux
 INPUT chapters/chapter04.aux
 INPUT chapters/chapter04.aux
+INPUT chapters/chapter05.aux
+INPUT chapters/chapter05.aux
 INPUT ./abntex2-modelo-trabalho-academico.brf
 INPUT ./abntex2-modelo-trabalho-academico.brf
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc

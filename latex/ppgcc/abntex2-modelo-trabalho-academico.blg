@@ -5,6 +5,7 @@ A level-1 auxiliary file: chapters/chapter01.aux
 A level-1 auxiliary file: chapters/chapter02.aux
 A level-1 auxiliary file: chapters/chapter03.aux
 A level-1 auxiliary file: chapters/chapter04.aux
+A level-1 auxiliary file: chapters/chapter05.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -28,7 +29,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 27 entries,
             6711 wiz_defined-function locations,
-            1364 strings with 14149 characters,
+            1365 strings with 14171 characters,
 and the built_in function-call counts, 24115 in all, are:
 = -- 1989
 > -- 858
