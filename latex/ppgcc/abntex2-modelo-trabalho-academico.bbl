@@ -5,20 +5,6 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2005]{NBR14724:2005}
-\abntrefinfo{ABNT}{ABNT}{2005}
-{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 14724}:
-  Informa{\c c}\~ao e documenta{\c c}\~ao --- trabalhos acad\^emicos ---
-  apresenta{\c c}\~ao.
-Rio de Janeiro, 2005. 9~p.}
-
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2011]{NBR14724:2011}
-\abntrefinfo{ABNT}{ABNT}{2011}
-{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 14724}:
-  Informa{\c c}\~ao e documenta{\c c}\~ao --- trabalhos acad\^emicos ---
-  apresenta{\c c}\~ao.
-Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
-
 \bibitem[B{\"a}ckstr{\"o}m e Nebel 1995]{backstrom1995complexity}
 \abntrefinfo{B{\"a}ckstr{\"o}m e Nebel}{B{\"A}CKSTR{\"O}M; NEBEL}{1995}
 {B{\"A}CKSTR{\"O}M, C.; NEBEL, B. Complexity results for sas+ planning.

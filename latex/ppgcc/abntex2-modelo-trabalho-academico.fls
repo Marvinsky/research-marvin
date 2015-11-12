@@ -459,10 +459,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss17.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss17.tfm
 INPUT abntex2-modelo-trabalho-academico.lof
 INPUT abntex2-modelo-trabalho-academico.lof
 INPUT abntex2-modelo-trabalho-academico.lot
@@ -538,7 +537,6 @@ INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc
-INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb
