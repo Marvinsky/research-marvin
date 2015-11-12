@@ -134,6 +134,13 @@ Tese (Doutorado) --- University of Alberta, 2013.}
 \emph{Mathematical Programming}, Springer-Verlag, v.~14, n.~1, p. 265--294,
   1978.}
 
+\bibitem[Nissim, Hoffmann e Helmert 2011]{nissim2011computing}
+\abntrefinfo{Nissim, Hoffmann e Helmert}{NISSIM; HOFFMANN; HELMERT}{2011}
+{NISSIM, R.; HOFFMANN, J.; HELMERT, M. Computing perfect heuristics in
+  polynomial time: On bisimulation and merge-and-shrink abstraction in optimal
+  planning. In:  \emph{22nd International Joint Conference on Artificial
+  Intelligence (IJCAI'11)}. [S.l.: s.n.], 2011.}
+
 \bibitem[Prieditis 1993]{Prieditis93}
 \abntrefinfo{Prieditis}{PRIEDITIS}{1993}
 {PRIEDITIS, A. Machine discovery of effective admissible heuristics.

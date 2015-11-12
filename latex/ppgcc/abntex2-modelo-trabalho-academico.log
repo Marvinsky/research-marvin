@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.11.7)  12 NOV 2015 12:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.11.7)  12 NOV 2015 14:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2544,49 +2544,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--89
 
  []
 
-) [64] (./abntex2-modelo-trabalho-academico.bbl
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
+
+ []
+
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+ []
+
+)
+Overfull \hbox (7.40154pt too wide) in paragraph at lines 98--701
+[]\T1/lmr/m/n/12 (-20) We com-pare the cov-er-age of the \T1/lmtt/m/n/12 RGHS \
+T1/lmr/m/n/12 (-20) ap-proaches with sev-eral other state$\OMS/lmsy/m/n/12 ^^@$
+\T1/lmr/m/n/12 (-20) of$\OMS/lmsy/m/n/12 ^^@$\T1/lmr/m/n/12 (-20) the$\OMS/lmsy
+/m/n/12 ^^@$\T1/lmr/m/n/12 (-20) art
+ []
+
+[65] [66
+
+
+] (./abntex2-modelo-trabalho-academico.bbl
 (./abntex2-modelo-trabalho-academico.brf)
 \tf@brf=\write6
 \openout6 = `abntex2-modelo-trabalho-academico.brf'.
 
- [65
-
-
-] [66
+ [67] [68
 
 ]
 bibitemlist
-[67]) [68]
+[69]) [70]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 769.
 
-[69
+[71
 
 
-] [70] [71
+] [72] [73
 
-] [72
+] [74
 
-] [73] [74
+] [75] [76
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 797.
 
-[75
+[77
 
-] [76] [77
+] [78] [79
 
-] [78
+] [80
 
-] [79] [80
+] [81] [82
 
-] (./abntex2-modelo-trabalho-academico.ind [81]
-[82
+] (./abntex2-modelo-trabalho-academico.ind [83]
+[84
 
-] [83
+] [85
 
 
 ]) 
@@ -2609,7 +2632,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 825.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 825.
 Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
 ot changed.
-(rerunfilecheck)             Checksum: 6EE8E2F9527F81705DBD9E9D5BAF62B2;2590.
+(rerunfilecheck)             Checksum: F568D46349EA7962A49D6DCC3773BB76;2845.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -2617,10 +2640,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 825.
  ) 
 Here is how much of TeX's memory you used:
- 34655 strings out of 493105
- 664670 string characters out of 6137072
- 999417 words of memory out of 5000000
- 36962 multiletter control sequences out of 15000+600000
+ 34668 strings out of 493105
+ 664965 string characters out of 6137072
+ 999659 words of memory out of 5000000
+ 36972 multiletter control sequences out of 15000+600000
  140744 words of font info for 243 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,25n,123p,1854b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2649,11 +2672,11 @@ s/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/
 cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pf
 b>
-Output written on abntex2-modelo-trabalho-academico.pdf (85 pages, 668132 bytes
+Output written on abntex2-modelo-trabalho-academico.pdf (87 pages, 677372 bytes
 ).
 PDF statistics:
- 1198 PDF objects out of 1200 (max. 8388607)
- 1069 compressed objects within 11 object streams
- 255 named destinations out of 1000 (max. 500000)
+ 1224 PDF objects out of 1440 (max. 8388607)
+ 1093 compressed objects within 11 object streams
+ 258 named destinations out of 1000 (max. 500000)
  47162 words of extra memory for PDF output out of 51595 (max. 10000000)
 
