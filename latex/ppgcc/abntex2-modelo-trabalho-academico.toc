@@ -61,7 +61,7 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Empirical Evaluation}}{61}{chapter.4}
 \precistoctext {The purpose of this section is to present how our meta$-$reasoning is applied when solving \texttt {IPC} domain problens.}
-\contentsline {section}{\numberline {4.1}New section}{61}{section.4.1}
+\contentsline {section}{\numberline {4.1}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{62}{section.4.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{63}{chapter.5}

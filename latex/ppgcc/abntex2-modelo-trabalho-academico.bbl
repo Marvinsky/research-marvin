@@ -56,6 +56,12 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 {DOMSHLAK, C.; KARPAS, E.; MARKOVITCH, S. To max or not to max: Online learning
   for speeding up optimal planning. In:  \emph{AAAI}. [S.l.: s.n.], 2010.}
 
+\bibitem[Edelkamp 2007]{edelkamp2007automated}
+\abntrefinfo{Edelkamp}{EDELKAMP}{2007}
+{EDELKAMP, S. Automated creation of pattern database search heuristics. In:
+  \emph{Model Checking and Artificial Intelligence}. [S.l.]: Springer Berlin
+  Heidelberg, 2007. p. 35--50.}
+
 \bibitem[Hart P. E.;~Nilsson e Raphael 1968]{hart1968formal}
 \abntrefinfo{Hart P. E.;~Nilsson e Raphael}{HART P. E.;~NILSSON; RAPHAEL}{1968}
 {HART P. E.;~NILSSON, N.~J.; RAPHAEL, B. A formal basis for the heuristic
@@ -95,6 +101,13 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 {KORF, R.~E. Depth-first iterative-deepening: An optimal admissible tree
   search.
 \emph{Artificial Intelligence}, v.~27, p. 97--109, 1985.}
+
+\bibitem[Lelis, Otten e Dechter 2014]{lelis2014memory}
+\abntrefinfo{Lelis, Otten e Dechter}{LELIS; OTTEN; DECHTER}{2014}
+{LELIS, L.~H.; OTTEN, L.; DECHTER, R. Memory-efficient tree size prediction for
+  depth-first search in graphical models. In:  \emph{Principles and Practice of
+  Constraint Programming}. [S.l.]: Springer International Publishing, 2014. p.
+  481--496.}
 
 \bibitem[Lelis, Stern e Sturtevant 2014]{lelis2014estimating}
 \abntrefinfo{Lelis, Stern e Sturtevant}{LELIS; STERN; STURTEVANT}{2014}

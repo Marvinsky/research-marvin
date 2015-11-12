@@ -17,7 +17,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: abntex2-modelo-references.bib
-Warning--I didn't find a database entry for "lelis2013predicting;lelis2014memory"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -27,45 +26,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 24 entries,
+You've used 26 entries,
             6711 wiz_defined-function locations,
-            1349 strings with 13522 characters,
-and the built_in function-call counts, 21301 in all, are:
-= -- 1773
-> -- 741
-< -- 85
-+ -- 358
-- -- 220
-* -- 1581
-:= -- 2774
-add.period$ -- 83
-call.type$ -- 24
-change.case$ -- 263
-chr.to.int$ -- 60
-cite$ -- 23
-duplicate$ -- 1082
-empty$ -- 1488
-format.name$ -- 1051
-if$ -- 5016
+            1360 strings with 13887 characters,
+and the built_in function-call counts, 23196 in all, are:
+= -- 1925
+> -- 807
+< -- 87
++ -- 382
+- -- 240
+* -- 1720
+:= -- 3011
+add.period$ -- 93
+call.type$ -- 26
+change.case$ -- 285
+chr.to.int$ -- 62
+cite$ -- 25
+duplicate$ -- 1171
+empty$ -- 1655
+format.name$ -- 1144
+if$ -- 5487
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 413
-newline$ -- 120
-num.names$ -- 105
-pop$ -- 530
+missing$ -- 447
+newline$ -- 128
+num.names$ -- 115
+pop$ -- 573
 preamble$ -- 1
-purify$ -- 98
+purify$ -- 106
 quote$ -- 0
-skip$ -- 1220
+skip$ -- 1322
 stack$ -- 1
-substring$ -- 1037
-swap$ -- 547
-text.length$ -- 37
+substring$ -- 1127
+swap$ -- 595
+text.length$ -- 39
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 5
+type$ -- 7
 warning$ -- 0
-while$ -- 181
+while$ -- 199
 width$ -- 0
-write$ -- 384
-(There was 1 warning)
+write$ -- 416

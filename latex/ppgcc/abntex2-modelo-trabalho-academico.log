@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.11.7)  11 NOV 2015 19:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.11.7)  12 NOV 2015 00:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1661,6 +1661,9 @@ Normal \dimen register pool exhausted, switching to extended pool.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xr.sty
+Package: xr 1994/05/28 v5.02 eXternal References (DPC)
+)
 \c@theorem=\count223
 \c@corollary=\count224
 \c@definition=\count225
@@ -1682,22 +1685,7 @@ decorations.pathreplacing.code.tex))
 \myboxblockteststar=\box89
 \myboxblocktestend=\box90
 
-Overfull \hbox (24.77307pt too wide) in paragraph at lines 239--239
-[][][][]\T1/cmr/bx/n/24.88 1  
- []
-
-
-Overfull \hbox (24.77307pt too wide) in paragraph at lines 240--240
-[][][][]\T1/cmr/bx/n/24.88 2  
- []
-
-
-Overfull \hbox (24.77307pt too wide) in paragraph at lines 241--241
-[][][][]\T1/cmr/bx/n/24.88 3  
- []
-
-
-Overfull \hbox (24.77307pt too wide) in paragraph at lines 243--243
+Overfull \hbox (24.77307pt too wide) in paragraph at lines 242--242
 [][][][]\T1/cmr/bx/n/24.88 1  
  []
 
@@ -1712,24 +1700,39 @@ Overfull \hbox (24.77307pt too wide) in paragraph at lines 244--244
  []
 
 
-Overfull \hbox (24.77307pt too wide) in paragraph at lines 244--244
+Overfull \hbox (24.77307pt too wide) in paragraph at lines 246--246
+[][][][]\T1/cmr/bx/n/24.88 1  
+ []
+
+
+Overfull \hbox (24.77307pt too wide) in paragraph at lines 246--246
 [][][][]\T1/cmr/bx/n/24.88 2  
  []
 
 
-Overfull \hbox (24.77307pt too wide) in paragraph at lines 244--244
+Overfull \hbox (24.77307pt too wide) in paragraph at lines 247--247
+[][][][]\T1/cmr/bx/n/24.88 3  
+ []
+
+
+Overfull \hbox (24.77307pt too wide) in paragraph at lines 247--247
+[][][][]\T1/cmr/bx/n/24.88 2  
+ []
+
+
+Overfull \hbox (24.77307pt too wide) in paragraph at lines 247--247
 [][][][]\T1/cmr/bx/n/24.88 1  
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 321.
+(hyperref)                removing `math shift' on input line 324.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 321.
+(hyperref)                removing `math shift' on input line 324.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 321.
+Package hyperref Info: Option `colorlinks' set `true' on input line 324.
 \abntex2-modelo-trabalho-academico@idxfile=\write5
 \openout5 = `abntex2-modelo-trabalho-academico.idx'.
 
@@ -1743,34 +1746,34 @@ LaTeX Warning: Unused global option(s):
 ))
 \openout1 = `abntex2-modelo-trabalho-academico.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 344.
-LaTeX Font Info:    ... okay on input line 344.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 344.
-LaTeX Font Info:    ... okay on input line 344.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 344.
-LaTeX Font Info:    ... okay on input line 344.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 344.
-LaTeX Font Info:    ... okay on input line 344.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 344.
-LaTeX Font Info:    ... okay on input line 344.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 344.
-LaTeX Font Info:    ... okay on input line 344.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 344.
-LaTeX Font Info:    ... okay on input line 344.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 344.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 344.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 347.
+LaTeX Font Info:    ... okay on input line 347.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 347.
+LaTeX Font Info:    ... okay on input line 347.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 347.
+LaTeX Font Info:    ... okay on input line 347.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 347.
+LaTeX Font Info:    ... okay on input line 347.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 347.
+LaTeX Font Info:    ... okay on input line 347.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 347.
+LaTeX Font Info:    ... okay on input line 347.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 347.
+LaTeX Font Info:    ... okay on input line 347.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 347.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 347.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 344.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 344.
+LaTeX Font Info:    ... okay on input line 347.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 347.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box91
-Package hyperref Info: Link coloring ON on input line 344.
+Package hyperref Info: Link coloring ON on input line 347.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1782,13 +1785,13 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 344.
-LaTeX Info: Redefining \ref on input line 344.
-LaTeX Info: Redefining \pageref on input line 344.
-LaTeX Info: Redefining \nameref on input line 344.
-LaTeX Info: Redefining \degres on input line 344.
-LaTeX Info: Redefining \dots on input line 344.
-LaTeX Info: Redefining \up on input line 344.
+LaTeX Info: Redefining \nameref on input line 347.
+LaTeX Info: Redefining \ref on input line 347.
+LaTeX Info: Redefining \pageref on input line 347.
+LaTeX Info: Redefining \nameref on input line 347.
+LaTeX Info: Redefining \degres on input line 347.
+LaTeX Info: Redefining \dots on input line 347.
+LaTeX Info: Redefining \up on input line 347.
 \myptabbox=\box92
 \myptabboxwidth=\skip262
 Package lastpage Info: Please have a look at the pageslts package at
@@ -1797,7 +1800,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 344.
+(lastpage)             ! on input line 347.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count227
@@ -1827,7 +1830,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 344.
+LaTeX Info: Redefining \microtypecontext on input line 347.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1843,7 +1846,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 361.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 364.
 
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1852,41 +1855,41 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 361.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 364.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 361.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 364.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 361
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 364
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 361
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 364
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 361.
+(Font)              <20.74> on input line 364.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 361.
+(Font)              <14.4> on input line 364.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 361.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 361.
+(Font)              <12> on input line 364.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 364.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 361.
+LaTeX Font Info:    Try loading font information for U+msa on input line 364.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1894,7 +1897,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 361.
+LaTeX Font Info:    Try loading font information for U+msb on input line 364.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1907,53 +1910,53 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 370.
+(Font)              <17.28> on input line 373.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 370.
+(Font)              <10> on input line 373.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 370.
+(Font)              <8> on input line 373.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 370.
+(Font)              <6> on input line 373.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.370 
+l.373 
        [1
 
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 414.
+(Font)              <10.95> on input line 417.
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--414
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 414--414
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
 
  []
 
 
-Overfull \hbox (16.6597pt too wide) in paragraph at lines 414--414
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
+
+ []
+
+
+Overfull \hbox (16.6597pt too wide) in paragraph at lines 417--417
 []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--414
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 414.
+(Font)              <7> on input line 417.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 414.
+(Font)              <5> on input line 417.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.423 E
+l.426 E
        lemento opcional da \citeonline[4.2.1.2]{NBR14724:2011}. Exemplo:
 [2] [3
 
@@ -1966,12 +1969,12 @@ l.423 E
 ] [7] [8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 511--513
+Underfull \hbox (badness 10000) in paragraph at lines 514--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--517
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
 
  []
 
@@ -1982,7 +1985,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 516--517
 ] [11] [12
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 544--545
+Underfull \hbox (badness 10000) in paragraph at lines 547--548
 
  []
 
@@ -2026,12 +2029,12 @@ Underfull \vbox (badness 3803) has occurred while \output is active []
 [21] [22
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 642--644
+Underfull \hbox (badness 10000) in paragraph at lines 645--647
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 645--646
+Underfull \hbox (badness 10000) in paragraph at lines 648--649
 
  []
 
@@ -2423,9 +2426,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 423--424
 \openout2 = `chapters/chapter04.aux'.
 
  (./chapters/chapter04.tex
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
- []
+Package xr Warning: 
+No file chapter03.aux
+LABELS NOT IMPORTED.
+ on input line 27.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--34
@@ -2438,28 +2443,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
  []
 
 
-LaTeX Warning: Citation `lelis2013predicting;lelis2014memory' on page 61 undefi
-ned on input line 37.
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
-) [61
-
-
-] [62
+ []
 
 
-] (./abntex2-modelo-trabalho-academico.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+[61
+
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 44.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+) [62] (./abntex2-modelo-trabalho-academico.bbl
 (./abntex2-modelo-trabalho-academico.brf)
 \tf@brf=\write6
 \openout6 = `abntex2-modelo-trabalho-academico.brf'.
 
- [63] [64
+ [63
+
+
+] [64
 
 ]
 bibitemlist
 [65]) [66]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 762.
+(hyperref)                removing `\uppercase' on input line 765.
 
 [67
 
@@ -2473,7 +2516,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 790.
+(hyperref)                removing `\uppercase' on input line 793.
 
 [73
 
@@ -2500,37 +2543,34 @@ AED: lastpage setting LastPage
 \tf@toc=\write9
 \openout9 = `abntex2-modelo-trabalho-academico.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 818.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 818.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 821.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 821.
 (./abntex2-modelo-trabalho-academico.aux (./chapters/chapter01.aux)
 (./chapters/chapter02.aux) (./chapters/chapter03.aux) (./chapters/chapter04.aux
 ))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 818.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 818.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 821.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 821.
 Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
 ot changed.
-(rerunfilecheck)             Checksum: 41646C050F85CE1859D4EEEBAE366D1F;2356.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: 3BEBD4536EBE68827C2716F6176DF07B;2537.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 818.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 821.
  ) 
 Here is how much of TeX's memory you used:
- 34507 strings out of 493105
- 662689 string characters out of 6137072
- 996058 words of memory out of 5000000
- 36841 multiletter control sequences out of 15000+600000
- 137486 words of font info for 237 fonts, out of 8000000 for 9000
+ 34545 strings out of 493105
+ 663218 string characters out of 6137072
+ 996716 words of memory out of 5000000
+ 36870 multiletter control sequences out of 15000+600000
+ 137660 words of font info for 239 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,25n,123p,1854b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc
-}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc
-/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/sh
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
+/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvi
+ps/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/sh
 are/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm
 /lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex1
@@ -2538,23 +2578,24 @@ f/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex1
 s/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1
 /public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
-s12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmtti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (83 pages, 614846 bytes
+are/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfrm1200.pfb>
+Output written on abntex2-modelo-trabalho-academico.pdf (83 pages, 638026 bytes
 ).
 PDF statistics:
- 1143 PDF objects out of 1200 (max. 8388607)
- 1018 compressed objects within 11 object streams
- 248 named destinations out of 1000 (max. 500000)
+ 1163 PDF objects out of 1200 (max. 8388607)
+ 1037 compressed objects within 11 object streams
+ 250 named destinations out of 1000 (max. 500000)
  45098 words of extra memory for PDF output out of 51595 (max. 10000000)
 
