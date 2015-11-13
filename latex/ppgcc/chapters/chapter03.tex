@@ -419,10 +419,10 @@ In the Figure \ref{fig:ts_search_tree}, we can see how \textit{Type System} work
 \centering
 \begin{tikzpicture}
 
-\draw[very thick,cyan,loosely dotted] (-2,0) -- (12,0);
-\draw[very thick,cyan,loosely dotted] (-2,-1.5) -- (12,-1.5);
-\draw[very thick,cyan,loosely dotted] (-2,-3) -- (12,-3);
-\draw[very thick,cyan,loosely dotted] (-2,-4.5) -- (12,-4.5);
+\draw[very thick,blue,loosely dotted] (-2,0) -- (12,0);
+\draw[very thick,blue,loosely dotted] (-2,-1.5) -- (12,-1.5);
+\draw[very thick,blue,loosely dotted] (-2,-3) -- (12,-3);
+\draw[very thick,blue,loosely dotted] (-2,-4.5) -- (12,-4.5);
 
 \node [xshift=1cm,yshift=2cm] (A) at (-2,-1.5) {Level 1};
 \node [xshift=1cm,yshift=2cm] (A) at (-2,-3) {Level 2};
@@ -434,17 +434,17 @@ In the Figure \ref{fig:ts_search_tree}, we can see how \textit{Type System} work
 
 % -- level 2
 \draw[red,fill=red] (1,-1) circle (2ex);
-\draw[cyan,fill=cyan] (3,-1) circle (2ex);
+\draw[blue,fill=blue] (3,-1) circle (2ex);
 \draw[red,fill=red] (5,-1) circle (2ex);
 
 % -- level 3
-\draw[cyan,fill=cyan] (3,-2.5) circle (2ex);
+\draw[blue,fill=blue] (3,-2.5) circle (2ex);
 \draw[red,fill=red] (4.5,-2.5) circle (2ex);
-\draw[cyan,fill=cyan] (6,-2.5) circle (2ex);
+\draw[blue,fill=blue] (6,-2.5) circle (2ex);
 
 % -- level 4
 \draw[red,fill=red] (3.5,-4) circle (2ex);
-\draw[cyan,fill=cyan] (5.5,-4) circle (2ex);
+\draw[blue,fill=blue] (5.5,-4) circle (2ex);
 \draw[red,fill=red] (7,-4) circle (2ex);
 
 % -- draw arrows
@@ -462,18 +462,18 @@ In the Figure \ref{fig:ts_search_tree}, we can see how \textit{Type System} work
 
 \draw[->] (6,-2.9) -- (7,-3.6);
 
-\node [xshift=1cm,yshift=2cm] (A) at (10,-3) {\textcolor{red}{w = 2 } \textcolor{cyan}{w = 1}};
-\node [xshift=1cm,yshift=2cm] (A) at (10,-4.5) {\textcolor{red}{w = 2 } \textcolor{cyan}{w = 3}};
-\node [xshift=1cm,yshift=2cm] (A) at (10,-6) {\textcolor{red}{w = 5 } \textcolor{cyan}{w = 2}};
+\node [xshift=1cm,yshift=2cm] (A) at (10,-3) {\textcolor{red}{w = 2 } \textcolor{blue}{w = 1}};
+\node [xshift=1cm,yshift=2cm] (A) at (10,-4.5) {\textcolor{red}{w = 2 } \textcolor{blue}{w = 3}};
+\node [xshift=1cm,yshift=2cm] (A) at (10,-6) {\textcolor{red}{w = 5 } \textcolor{blue}{w = 2}};
 \end{tikzpicture}
 \caption{Search tree using Type System} \label{fig:ts_search_tree}
 \end{figure}
 
-When nodes in the Level 2 are expanded. The blue node expands one node of type blue and the red node expands two nodes of type red and blue. The question here is how many nodes would be generated in the Level 3? The answer is: $1 \times \textcolor{cyan}{blue} + 2 \times \textcolor{red}{red} + 2 \times \textcolor{cyan}{blue}$. So, in the Level 3 we will have 2 nodes of red type and 3 nodes of type blue.\\ 
+When nodes in the Level 2 are expanded. The blue node expands one node of type blue and the red node expands two nodes of type red and blue. The question here is how many nodes would be generated in the Level 3? The answer is: $1 \times \textcolor{blue}{blue} + 2 \times \textcolor{red}{red} + 2 \times \textcolor{blue}{blue}$. So, in the Level 3 we will have 2 nodes of red type and 3 nodes of type blue.\\ 
 
 In the Level 3 the $w$ of the node blue would have the same $w$ of the father. The father has $w = 1$, then the child has $w = 1$. The $w$ of the red type and blue type would be 2. Once the $w$ has been updated for each node in the Level 3 we apply the \texttt{SS}'s assumption again. There are two nodes with type blue. So, we choose randomly one of them and update their $w$. Let's choose the right blue type and the updated $w$ would be 3 because 1 from the left blue type plus the 2 from the right blue type.\\
 
-When nodes in the Level 3 are expanded. They are expanded in the following way: The red node expands two nodes of types red and blue and the blue node expands one of red type. How many nodes would be generated at Level 4, then? The answer is: $2 \times \textcolor{red}{red} + 3 \times \textcolor{red}{red} + 2 \times \textcolor{cyan}{blue}$. Therefore, in the Level 4, we will have five nodes of type red and two nodes of type blue.\\
+When nodes in the Level 3 are expanded. They are expanded in the following way: The red node expands two nodes of types red and blue and the blue node expands one of red type. How many nodes would be generated at Level 4, then? The answer is: $2 \times \textcolor{red}{red} + 3 \times \textcolor{red}{red} + 2 \times \textcolor{blue}{blue}$. Therefore, in the Level 4, we will have five nodes of type red and two nodes of type blue.\\
 
 Finally, the number of nodes expanded in the search tree is obtained summing all $w$ plus one (The root node). As a result, the number of nodes expanded in the search tree would be $ 15 + 1 = 16$.\\
 
