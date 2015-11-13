@@ -66,7 +66,7 @@ Algorithm \ref{alg:rghs_algorithm} shows \texttt{RGHS}. \texttt{RGHS} receives a
 The work of \cite{raynersss13} uses a greedy algorithm introduced by \cite{nemhauser1978analysis} for approximately solving the heuristic subset selection problem. In contrast with the \texttt{RGHS} presented above, which is based on the work of \cite{buchbinder2014submodular}, \cite{nemhauser1978analysis}'s approach does not offer near$-$optimality guarantees when the problem's objective functions is non$-$monotone. As mentioned before A$\sp{*}$'s running time is a non$-$monotone objective function. While \texttt{RGHS} also offers guarantees for non$-$monotone objective functions, it retains the same guarantees offered by \cite{nemhauser1978analysis}'s algorithm when optimizing monotone objective functions \cite{buchbinder2014submodular}. That is why we only consider \cite{buchbinder2014submodular}'s approach in our theoretical and experimental analyses.
 
 % --
-\subsection{Approximately Minimizing Search Tree Size}
+\section{Approximately Minimizing Search Tree Size}
 % ---
 \noindent
 The first objective function $\Psi$ we consider accounts for the number of expansions A$\sp{*}$ performs while solving a given planning problem. When solving $\nabla$ using the consistent heuristic function $h_{max}(\zeta\sp{'})$  for $\zeta\sp{'} \subseteq \zeta$, A$\sp{*}$ expands in the worse case $J(\zeta\sp{'},\nabla)$ nodes, where
@@ -174,7 +174,7 @@ We use the Culprit Sampler (\texttt{CS}) introduced by \cite{BarleySantiagoOver}
 
 Both \texttt{CS} and \texttt{SS} must be able to quickly estimate the values of \textit{\^{J}}$(\zeta\sp{'})$ and \textit{\^{T}}$(\zeta\sp{'})$ for any subset $\zeta\sp{'}$ of $\zeta$ so they can be used in \texttt{RGHS}'s optimization process.
 
-\subsection{Culprit Sampler}
+\section{Culprit Sampler (CS)}
 \noindent
 \texttt{CS} runs a time$-$bounded A$\sp{*}$ search while sampling $f-culprits$ and $b-culprits$ to estimate the values of \textit{\^{J}} and \textit{\^{T}}.
 
@@ -208,12 +208,10 @@ Where $W(B)$ is 0 if there is a heuristic in $\zeta\sp{'}$ whose $y$-value in $B
 The value of \textit{\^{T}} is computed by multiplying \textit{\^{J}} by the sum of the evaluation time of each heuristic in $\zeta\sp{'}$. The evaluation time of the heuristics in $\zeta\sp{'}$ is measured in a separate process, before executing \texttt{CS}, by sampling a small number of nodes from $\nabla$'s start state.
 
 \section{Stratified Sampling (SS)}
-Stratified Sampling is a prediction algorithm that estimate the number of nodes expanded by some heuristic.\\
+Stratified Sampling is a prediction algorithm that estimate the number of nodes expanded by some heuristic.
 
 \cite{knuth1975Estimating} created a method to estimate the size of the search tree such as IDA$\sp{*}$. It works doing random walk from the root of the tree. Knuth's assumption is that all branches have the same structure. So, performing a random walk down one branch is enought to estimate the size of the search tree. However, the method does not work well for unbalanced search tree. \cite{chen1992heuristic}
- solved this problem with a stratification of the search tree through a \textit{type system} to reduce the variance of the sampling process\cite{lelis2013predicting}
-
-In the figure \ref{fig:ss_ts} each state of the search space is mapped to the \textit{Type System}
+ solved this problem with a stratification of the search tree through a \textit{type system} to reduce the variance of the sampling process \cite{lelis2013predicting}. In the figure \ref{fig:ss_ts} each state of the search space is mapped to the \textit{Type System}
 
 \begin{figure}[htb]
 \centering 
@@ -278,7 +276,7 @@ $\node [xshift=1cm,yshift=2cm] (A) at (-3,3) {Search Space};$
 $\node [xshift=1cm,yshift=2cm] (A) at (5,1) {Type System};$
 	
 \end{tikzpicture}
-\caption{Type system and the search space Representation.} \label{fig:ss_ts}
+\caption{Type system and the search space representation.} \label{fig:ss_ts}
 \end{figure}
 
 \subsection{Type System}
@@ -296,7 +294,7 @@ The \textit{type system} can not be represented as a graph since \textit{type sy
 
 The relation between \textit{type system} and abstractions is the following: The \textit{type system} can not necessarily be used as abstractions, abstractions can always be used as \textit{type system}.
 
-\section{Search Space and Search Tree}
+\subsection{Search Space and Search Tree}
 \cite{lelis2013predicting} defines the search space and search tree in the following way: Let the \textit{underlying search tree} (\textit{UST}) be the full brute$-$force tree created from a connected, undirected and implicitely defined \textit{underlying search graph} (\textit{USG}) describing a state space. Some search algorithms expand a subtree of the \textit{UST} while searching for a solution (\textsf{e.g.,} a portion of the \textit{UST} might not be expanded due to heuristic guidance); we call this subtree the \textit{expanded search tree} \textit{(EST)}.\\
 
 Let $G = (N,E)$ be a graph representing an \textit{ESG} where $N$ is its set of states and for each $n \in N op(n) = {op_{i}|(n, n_i) \in E}$ is its set of operators.
@@ -361,6 +359,8 @@ C_{B} = \sum_{\left\langle n,w \right\rangle \in A \wedge B(n) = B}w
 
 We recall that to compute $B(n)$ for node $n$ one needs to define a bound $b$. Here we use the bound $d$ used by \texttt{SS}. The average value of $C_{B}$ across $p$ probes is used to predict the search tree size for a given subset $\zeta\sp{'}$. As explained for \texttt{CS}, this can be done by traversing over all b$-$culprits once.\\
 
+\section{8-tile-puzzle Case Using type system}
+\noindent
 In this thesis we use \textit{type system} based only in heuristics.\cite{zahavi2010predicting} use the simpliest heuristic$-$based \textit{type system} in which two nodes $n$ and $n\sp{'}$ are of the same type if they have the same heuristic value. \\
 
 \begin{figure}[htb]
@@ -371,9 +371,9 @@ In this thesis we use \textit{type system} based only in heuristics.\cite{zahavi
 \caption{The heuristic value is the position of the empty tile in a Specific state.} \label{fig:type_system}
 \end{figure}
 
-Let's explain how \textit{type system} works through an example. The problem of 8$-$tile$-$puzzle in the Figure \ref{fig:type_system}, the center tile is labeled with the letter \texttt{M} and the courners are labeled with \texttt{C} and the mediums with \texttt{E}. For this problem, for example, we can define the \textit{type system} based on the position of the empty tile regarding the position of the empty tile in the goal State. For this case, two nodes $n$ and $n\sp{'}$ would be of the same type if $n$ and $n\sp{'}$ have the blank tile with the same letter and with the same distance to the empty tile of the goal state.\\
+Let's explain how \textit{type system} works through an example. The problem of 8$-$tile$-$puzzle in the Figure \ref{fig:type_system}, the center tile is labeled with the letter \texttt{M}, the corners labeled with \texttt{C} and the mediums with \texttt{E}. For this problem, we can define the \textit{type system} based on the position of the empty tile regarding the position of the empty tile in the goal state. For this case, two nodes $n$ and $n\sp{'}$ would be of the same type if $n$ and $n\sp{'}$ have the empty tile with the same letter and with the same distance to the empty tile of the goal state.\\
 
-In the Figure \ref{fig:empty_space_ts}, each row represent a type. The first board shows the empty tile in the center with distance to the empty tile in the goal state equal to 2, down left and right down. Then, the type would be (2,M). In the next board the empty tile is in the left top corner, and use the letter \textit{C}. The minimum distance is 4 because to get the goal empty tile is necessary to do: down, down, right, right or right, right, down, down, etc. So the type would be (4, C). In the next board there are two tiles that have the same type, because both have the same letter \textit{M} with distance equal to 3. Then, both have the type (3,E). The fourth row have two boards with the same type, because both have the same letter \textit{C} with distance equal to 2. Then, both have the type (2,C). The fifth row have two boards with the same type, because both have the same letter \textit{E} with distance equal to 1. Then, both have the type (1,E). In the last row the empty tile is in the goal empty tile. So, the distance is zero and the letter is \textit{C}. The type would be (0,C).
+In the Figure \ref{fig:empty_space_ts}, each row represent a type. The first board shows the empty tile in the center with distance to the empty tile in the goal state equal to 2. The shortest path to get to the empty tile in the goal state would be doing: down$-$left or right$-$down. Which both moves represent the same cost. Then, the type would be (2,\texttt{M}). In the next board, the empty tile is in the left top, and use the letter \texttt{C}. The minimum distance is 4 because to get the goal empty tile is necessary to do: down$-$down$-$right$-$right or right$-$right$-$down$-$down, etc. So the type would be (4, \texttt{C}). In the next board, there are two tiles that have the same type, because both have the same letter \texttt{M} with distance equal to 3. Then, both have the type (3,E). The fourth row have two boards with the same type, because both have the same letter \texttt{C} with distance equal to 2. Then, both have the type (2, \texttt{C}). The fifth row have two boards with the same type, because both have the same letter \texttt{E} with distance equal to 1. Then, both have the type (1, \texttt{E}). In the last row the empty tile is in the goal empty tile. So, the distance is zero and the letter is \texttt{C}. The type would be (0, \texttt{C}).
 
 % print types
 \begin{figure}[htb]
@@ -407,20 +407,13 @@ In the Figure \ref{fig:empty_space_ts}, each row represent a type. The first boa
  [\usebox\myboxcornerfour]
  $\node [xshift=1cm,yshift=2cm] (A) at (2,0) {(0, C)};$
 \end{forest}
-\caption{Using \textit{type system}} \label{fig:empty_space_ts}
+\caption{Each row represent a different type.} \label{fig:empty_space_ts}
 \end{figure}
 
-
+\section{SS step by step}
+\noindent
 % -- Explaining Stratified Sampling
 In the Figure \ref{fig:ts_search_tree}, we can see how \textit{Type System} works. In the Level 1, we have the root node, we add the property called weight or (\textit{W}) initialized with one. Let's suppose that three nodes are generated by the root node in the Level 2. The nodes in the Level 2 have the following types: red, blue and red respectively, and each node recive the same \textit{W} of the father. In the Level 2 we apply the concept of \textit{Type System}, two states in the same level that have the same type (The same color) root subtrees  of the same type and only one state per state must be explored. There are two nodes with type red in Level 2. So, we choose randomly one of them. Let's suppose we choose the right red node. Then, we have to update the number of nodes with the type red using the \textit{W}, both red node types have \textit{W = 1}, then we sum the \textit{W} and the the new \textit{W = 2}. So, in the Level 2 we will have two nodes of red type and one node with blue type. \\
-
-When nodes in the Level 2 are expanded. The blue node expands one node of type blue and the red node expands two nodes of type red and blue. The question here is how many nodes would be generated in the Level 3? The answer is: $1 \times \textcolor{cyan}{blue} + 2 \times \textcolor{red}{red} + 2 \times \textcolor{cyan}{blue}$. So, in the Level 3 we will have 2 nodes of red type and 3 nodes of type blue. \\ 
-
-In the Level 3 the \textit{W} of the node blue would be the same \textit{W} of the father. The father has the \textit{W = 1}, then the child has the \textit{W = 1}. The \textit{W} of the red type and blue type would be 2. Once the \textit{W} has been updated for each node in the Level 3 we apply the concept of \textit{Type System} again. There are two nodes with type blue. So, we choose randomly one of them and update the \textit{W}. Let's choose the right blue type and the updated \textit{W} would be 3 because 1 from the left blue type plus the 2 from the right blue type. \\
-
-When nodes in the Level 3 are expanded. The red node expands two nodes of types red and blue and the blue node expands one of the red. How many nodes would be generated at Level 4? The answer is: $2 \times \textcolor{red}{red} + 3 \times \textcolor{red}{red} + 2 \times \textcolor{cyan}{blue}$. So, in the Level 4 we will have five nodes of type red and two nodes of type blue.\\
-
-The number of nodes expanded in the search tree is obtained summing all \textit{W} plus one (The root node). So, the number of nodes expanded in the search tree would be $ 15 + 1 = 16$. \\
 
 \begin{figure}[htb]
 \centering
@@ -475,5 +468,13 @@ The number of nodes expanded in the search tree is obtained summing all \textit{
 \end{tikzpicture}
 \caption{Search tree using Type System} \label{fig:ts_search_tree}
 \end{figure}
+
+When nodes in the Level 2 are expanded. The blue node expands one node of type blue and the red node expands two nodes of type red and blue. The question here is how many nodes would be generated in the Level 3? The answer is: $1 \times \textcolor{cyan}{blue} + 2 \times \textcolor{red}{red} + 2 \times \textcolor{cyan}{blue}$. So, in the Level 3 we will have 2 nodes of red type and 3 nodes of type blue. \\ 
+
+In the Level 3 the \textit{W} of the node blue would be the same \textit{W} of the father. The father has the \textit{W = 1}, then the child has the \textit{W = 1}. The \textit{W} of the red type and blue type would be 2. Once the \textit{W} has been updated for each node in the Level 3 we apply the concept of \textit{Type System} again. There are two nodes with type blue. So, we choose randomly one of them and update the \textit{W}. Let's choose the right blue type and the updated \textit{W} would be 3 because 1 from the left blue type plus the 2 from the right blue type. \\
+
+When nodes in the Level 3 are expanded. The red node expands two nodes of types red and blue and the blue node expands one of the red. How many nodes would be generated at Level 4? The answer is: $2 \times \textcolor{red}{red} + 3 \times \textcolor{red}{red} + 2 \times \textcolor{cyan}{blue}$. So, in the Level 4 we will have five nodes of type red and two nodes of type blue.\\
+
+The number of nodes expanded in the search tree is obtained summing all \textit{W} plus one (The root node). So, the number of nodes expanded in the search tree would be $ 15 + 1 = 16$. \\
 
 \clearpage

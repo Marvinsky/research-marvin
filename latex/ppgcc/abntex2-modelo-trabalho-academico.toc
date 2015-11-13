@@ -49,13 +49,15 @@
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Meta-Reasoning for selection}}{41}{chapter.3}
 \precistoctext {The purpose of this section is to introduce the meta$-$reasoning proposed.}
 \contentsline {section}{\numberline {3.1}Random Greedy Heuristic Selection (RGHS)}{41}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Approximately Minimizing Search Tree Size}{42}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Approximately Minimizing A*'s Running Time}{43}{section.3.2}
-\contentsline {section}{\numberline {3.3}Estimating Tree Size and Running Time}{45}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Culprit Sampler}{45}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Stratified Sampling (SS)}{46}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Type System}{47}{subsection.3.4.1}
-\contentsline {section}{\numberline {3.5}Search Space and Search Tree}{48}{section.3.5}
+\contentsline {section}{\numberline {3.2}Approximately Minimizing Search Tree Size}{42}{section.3.2}
+\contentsline {section}{\numberline {3.3}Approximately Minimizing A*'s Running Time}{43}{section.3.3}
+\contentsline {section}{\numberline {3.4}Estimating Tree Size and Running Time}{45}{section.3.4}
+\contentsline {section}{\numberline {3.5}Culprit Sampler (CS)}{45}{section.3.5}
+\contentsline {section}{\numberline {3.6}Stratified Sampling (SS)}{47}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Type System}{47}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Search Space and Search Tree}{48}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.7}8-tile-puzzle Case Using type system}{51}{section.3.7}
+\contentsline {section}{\numberline {3.8}SS step by step}{53}{section.3.8}
 \contentsline {part}{\partnumberline {IV}\MakeTextUppercase {Empirical Evaluation}}{55}{part.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Empirical Evaluation}}{57}{chapter.4}

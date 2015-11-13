@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1447250479 "chapter03.tex" "chapter03.pdf" "chapter03" 1447250479
+["pdflatex"] 1447438613 "chapter03.tex" "chapter03.pdf" "chapter03" 1447438613
   "/etc/texmf/web2c/texmf.cnf" 1446898369 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -10,8 +10,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1424169028 31088 8e088e958dd0258cc5414842768a3a00 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1446898572 1561293 ee2f233f6325ee204ca709e796fd06a8 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1446898511 3841934 096a771fea07e43d32021cf33a8b3c1d ""
-  "chapter03.aux" 1447249846 9407 1a4477da333d2a3269686c71be33d0b6 ""
-  "chapter03.tex" 1447250478 33861 2a018a84327511db819a8ebc47122a21 ""
+  "chapter03.aux" 1447424809 9604 f09353eddc5e9a30337db2d9951e9e1b ""
+  "chapter03.tex" 1447438613 38497 e089e0d8bd1cfa05d192e0ed928f5314 ""
   (generated)
-  "chapter03.log"
   "chapter03.pdf"
+  "chapter03.log"
