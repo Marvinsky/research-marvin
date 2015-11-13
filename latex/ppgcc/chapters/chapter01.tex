@@ -57,7 +57,7 @@ The objective of this dissertation is to develop meta-reasoning approaches for s
   
   \item Develop an approach to find a subset of heuristics from a large pool of heuristics that optimize the number of nodes expanded in the process of search.
   
-  \item Develop an approach for selecting a subset of heuristic functions based on the minimum evaluation cost of each heuristic.
+  \item Develop an approach for selecting a subset of heuristics functions based on the evaluation cost of each heuristic.
   
   \item Develop an strategy to drop heuristics during the sampling that do not improve the objective function.  
   
@@ -67,9 +67,11 @@ The objective of this dissertation is to develop meta-reasoning approaches for s
 % ---
 \section{Scope, Limitations, and Delimitations}
 \noindent
-We implemented our method in Fast Downward \cite{helmert2006fast} and the problems we want to solve are the optimal domains benchmarks.
-Our meta$-$reasoning described in this thesis are going to try to solve the major number of problems using the most promising heuristics from a large set of heuristics.
-The exact way to create the large set of heuristics is beyond the scope of this thesis.
+We implemented our method in Fast Downward \cite{helmert2006fast} and the problems we want to solve are the 2011 International Planning Competition (\texttt{IPC}) instances.\\
+
+We used the 2011 instances instead of the 2014 instances because the former do not have problems with conditional effects, which are currently not handled by \texttt{PDB} heuristics.\\
+
+Our meta$-$reasoning described in this thesis are going to try to solve the major number of problems using the most promising heuristics from a large set of heuristics. The exact way to create the large set of heuristics is beyond the scope of this thesis.
 
 \section{Justification}
 \noindent
@@ -81,15 +83,15 @@ That is why we propose a meta$-$reasoning that will try to solve the major numbe
 \noindent
 This thesis will intend to prove the hypotheses listed below:
 \begin{itemize}
-\item \textbf{H1:} Probe that our objective function of selection is related with two mathematical properties: Monotonicity and Submodularity.
-\item \textbf{H2:} Reducing the size of the search tree generated helps to solve more problems.
+\item \textbf{H1:} Prove that our objective function of selection is supermodular respect to the A$\sp{*}$ search tree size and respect to the A$\sp{*}$ running time.
+
+\item \textbf{H2:} Prove that \texttt{SS} is an effective prediction method to our meta$-$reasoning.
 \end{itemize}
 
 \section{Contribution of the Thesis}
 \noindent
 The main contributions of this Thesis are:
 \begin{itemize}
-\item Provide a prediction method to estimate the size of the search tree generated.
 \item Provide a meta$-$reasoning approach based on the size of the search tree generated.
 \item Provide a meta$-$reasoning approach based on the evaluation cost of each heuristic. 
 \end{itemize}
@@ -98,12 +100,11 @@ The main contributions of this Thesis are:
 \noindent
 The Thesis is organized as follows: 
 \begin{enumerate}
-\item In Part 1, the background of the thesis is provided which also includes our motivation and define the scope. 
-\item In Part 2, we review the State of the Art.
-\item In Part 3, we introduce our meta$-$reasoning approach. 
-\item In Part 4, we introduce. 
-\item In Part 5, we .
-\item We conclude in Part 6 by discussing further improvements and future work.
+\item In Part I, the background of the thesis is provided which also includes our motivation and define the scope. 
+\item In Part II, we review the state of the art in selection.
+\item In Part III, we introduce Random Greedy Heuristic Selection (\texttt{RGHS}) and the prediction methods. 
+\item In Part IV, we explain the results obtained by using \texttt{GRHS} and compared with other planner systems. 
+\item We conclude in Part V, by discussing the concluding remarks.
 \end{enumerate}
 
 In the next chapter, the domain 8$-$tile$-$puzzle is used to understand the concepts that will be helpful for the other Parts. \\

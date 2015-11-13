@@ -67,9 +67,7 @@
 \vspace {\cftbeforechapterskip }
 \contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{65}{part.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclusions}}{67}{chapter.5}
-\precistoctext {The purpose of this section is to introduce the meta$-$reasoning proposed.}
-\contentsline {section}{\numberline {5.1}Conclusions}{67}{section.5.1}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Concluding Remarks}}{67}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{Bibliography}{69}{section*.17}
