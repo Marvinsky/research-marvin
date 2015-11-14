@@ -477,4 +477,20 @@ When nodes in the Level 3 are expanded. They are expanded in the following way: 
 
 Finally, the number of nodes expanded in the search tree is obtained summing all $w$ plus one (The root node). As a result, the number of nodes expanded in the search tree would be $ 15 + 1 = 16$.\\
 
+\section{Comparison between SS and IDA}
+\noindent
+\texttt{SS} is an algorithm that estimates the number of nodes expanded performed by heuristic search algorithm seeking solutions in state space. We apply \texttt{SS} to predict the number of nodes expanded by IDA$\sp{*}$ in a given $f-$layer when using a consistent heuristics.\\
+
+We first ran IDA$\sp{*}$ for Fast$-$Downward benchmark for optimal domains. Our evaluation metric is coverage, \texttt{i.e.,} number of problems solved within 24 hours time limit. We note that in 24 hours non all the instances for a specific domain using a consistent heuristic can be solved. Afterwards, run \texttt{SS} using as a threshold the $f-$layer for each instance of each domain, this process is executed using different number of probes \texttt{i.e.,} 1, 10, 100, 1000 and 5000.\\
+
+\begin{equation}
+\frac{\sum_{s\in PI} \frac{Pred(s, d) - R(s, d)}{R(s, d)}}{|PI|}
+\label{eq:eq_comparison}
+\end{equation}
+
+Where $PI$ is the set of problem instances, $Pred(s,d)$ and $R(s,d)$ are the predicted and actual number of nodes expanded by IDA$\sp{*}$ for start state $s$ and cost bound $d$. A perfect score according to the measure is $0.00$.\\
+
+
+
+
 \clearpage
