@@ -59,21 +59,21 @@
 \contentsline {section}{\numberline {3.7}8-tile-puzzle Case Using type system}{53}{section.3.7}
 \contentsline {section}{\numberline {3.8}SS step by step}{55}{section.3.8}
 \contentsline {section}{\numberline {3.9}Comparison between SS and IDA}{56}{section.3.9}
-\contentsline {part}{\partnumberline {IV}\MakeTextUppercase {Empirical Evaluation}}{57}{part.4}
+\contentsline {part}{\partnumberline {IV}\MakeTextUppercase {Empirical Evaluation}}{59}{part.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Empirical Evaluation}}{59}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Empirical Evaluation}}{61}{chapter.4}
 \precistoctext {The purpose of this section is to present how our meta$-$reasoning is applied when solving \texttt {IPC} domain problens.}
-\contentsline {section}{\numberline {4.1}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{60}{section.4.1}
-\contentsline {section}{\numberline {4.2}Comparison with Other Planning Systems}{62}{section.4.2}
-\contentsline {section}{\numberline {4.3}Systems Tested}{62}{section.4.3}
-\contentsline {section}{\numberline {4.4}Discussion of the Results}{64}{section.4.4}
+\contentsline {section}{\numberline {4.1}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{62}{section.4.1}
+\contentsline {section}{\numberline {4.2}Comparison with Other Planning Systems}{64}{section.4.2}
+\contentsline {section}{\numberline {4.3}Systems Tested}{64}{section.4.3}
+\contentsline {section}{\numberline {4.4}Discussion of the Results}{66}{section.4.4}
 \vspace {\cftbeforechapterskip }
-\contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{67}{part.5}
+\contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{69}{part.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Concluding Remarks}}{69}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Concluding Remarks}}{71}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Bibliography}{71}{section*.17}
+\contentsline {chapter}{Bibliography}{73}{section*.17}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Index}{73}{section*.19}
+\contentsline {chapter}{Index}{75}{section*.19}
