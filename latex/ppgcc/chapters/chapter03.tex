@@ -481,7 +481,7 @@ Finally, the number of nodes expanded in the search tree is obtained summing all
 \noindent
 \texttt{SS} is an algorithm that estimates the number of nodes expanded performed by heuristic search algorithm seeking solutions in state space. We apply \texttt{SS} to predict the number of nodes expanded by IDA$\sp{*}$ in a given $f-$layer when using a consistent heuristics.\\
 
-We first ran IDA$\sp{*}$ for Fast$-$Downward benchmark for optimal domains. Our evaluation metric is coverage, \texttt{i.e.,} number of problems solved within 24 hours time limit. We note that in 24 hours non all the instances for a specific domain using a consistent heuristic can be solved. Afterwards, run \texttt{SS} using as a threshold the $f-$layer for each instance of each domain, this process is executed using different number of probes \texttt{i.e.,} 1, 10, 100, 1000 and 5000.\\
+We first ran IDA$\sp{*}$ for Fast$-$Downward benchmark for optimal domains. Our evaluation metric is coverage, \texttt{i.e.,} number of problems solved within 30 minutes time limit. We note that in 24 hours non all the instances for a specific domain using a consistent heuristic can be solved. Afterwards, run \texttt{SS} using as a threshold the $f-$layer for each instance of each domain, this process is executed using different number of probes \texttt{i.e.,} 1, 10, 100, 1000 and 5000.\\
 
 \begin{equation}
 \frac{\sum_{s\in PI} \frac{Pred(s, d) - R(s, d)}{R(s, d)}}{|PI|}
@@ -490,29 +490,31 @@ We first ran IDA$\sp{*}$ for Fast$-$Downward benchmark for optimal domains. Our 
 
 Where $PI$ is the set of problem instances, $Pred(s,d)$ and $R(s,d)$ are the predicted and actual number of nodes expanded by IDA$\sp{*}$ for start state $s$ and cost bound $d$. A perfect score according to the measure is $0.00$.\\
 
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
 \begin{table}[]
 \footnotesize\setlength{\tabcolsep}{1.2pt}
-\caption{Experiment 1 - Comparison using hmax heuristic}
-\label{hmax_label}
-\begin{tabular}{l@{\hspace{6pt}} *{13}{|r}}
+\centering
+\caption{Comparison between \texttt{SS} and IDA$\sp{*}$ for 1, 10, 100, 1000 and 5000 probes using $hmax$ heuristic.}
+\label{my-label}
+\begin{tabular}{lccccccccccccc}
 \hline
-\multicolumn{1}{c|}{} & \multicolumn{13}{c}{hmax}
-\\ \hline
-\multicolumn{1}{c|}{} &             &         & \multicolumn{5}{c|}{ss-error}                                                                  & \multicolumn{5}{c|}{time}                                                                                                           \\ \hline
-Domain        & IDA*         & time       & 1      & 10     & 100    & 1000    & 5000       & 1      & 10     & 100    & 1000   & 50000 & n \\ \hline 
-Barman & 8835990.00& 6016.38& 0.60& 0.45& 0.20& 0.07& 0.04& 0.06& 0.32& 3.21& 32.57& 214.59& 20\\ \hline
-Elevators & 1012570.00& 4987.57& 0.84& 0.42& 0.23& 0.13& 0.10& 1.40& 9.85& 96.37& 994.33& 4425.93& 20\\ \hline
-Floortile & 30522300.00& 3919.72& 2.02& 0.62& 0.40& 0.14& 0.11& 0.01& 0.07& 0.69& 6.93& 36.60& 2\\ \hline
-Nomystery & 6565740.00& 3256.86& 0.53& 0.26& 0.07& 0.03& 0.01& 0.07& 0.38& 3.63& 36.35& 181.03& 20\\ \hline
-Openstacks & 80108.50& 4017.19& 0.03& 0.03& 0.03& 0.03& 0.03& 94.79& 774.86& 1067.84& 10929.00& 11174.30& 20\\ \hline
-Parcprinter & 1.00& 0.00& 0.00& 0.00& 0.00& 0.00& 0.00& 0.01& 0.04& 0.35& 3.48& 17.29& 20\\ \hline
-Parking & 374925.00& 5607.50& 0.17& 0.04& 0.01& 0.00& 0.00& 1.79& 11.36& 114.28& 1196.83& 5835.03& 20\\ \hline
-Pegsol & 68763.70& 5.00& 0.17& 0.04& 0.02& 0.01& 0.00& 0.01& 0.04& 0.37& 3.69& 17.88& 20\\ \hline
-Scanalyzer-opt11 & 8449890.00& 4920.58& 0.43& 0.25& 18.63& 0.02& 0.01& 3.13& 28.79& 273.74& 3033.06& 10254.00& 20\\ \hline
-Sokoban & 3118530.00& 3932.69& 0.41& 0.26& 0.11& 0.05& 0.04& 0.31& 2.00& 21.42& 222.47& 1056.61& 20\\ \hline
-Tidybot & 444473.00& 5632.08& 300.86& 1072.40& 5.88& 0.01& 0.01& 4.40& 26.48& 238.76& 2747.10& 11925.40& 20\\ \hline
-Transport & 2622880.00& 2253.51& 0.63& 0.54& 0.24& 0.15& 0.11& 0.09& 0.61& 5.89& 59.37& 290.31& 20\\ \hline
-Visitall-opt11 & 71032400.00& 3704.78& 0.12& 0.04& 0.01& 0.00& 0.00& 0.00& 0.05& 0.56& 5.77& 28.07& 20\\ \hline
+\multirow{3}{*}{Domain} & \multicolumn{13}{c}{$hmax$}                                                                                                                     \\ \cline{2-14} 
+                        & \multirow{2}{*}{IDA$\sp{*}$} & \multirow{2}{*}{time} & \multicolumn{5}{c}{relative$-$error} & \multicolumn{5}{c}{time}   & \multirow{2}{*}{n} \\ \cline{4-13}
+                        &                              &                       & 1   & 10   & 100   & 1000   & 5000   & 1 & 10 & 100 & 1000 & 5000 &                    \\ \hline
+Barman & 8835990.00& 6016.38& 0.60& 0.45& 0.20& 0.07& 0.04& 0.06& 0.32& 3.21& 32.57& 214.59& 20\\
+Elevators & 1012570.00& 4987.57& 0.84& 0.42& 0.23& 0.13& 0.10& 1.40& 9.85& 96.37& 994.33& 4425.93& 20\\
+Floortile & 30522300.00& 3919.72& 2.02& 0.62& 0.40& 0.14& 0.11& 0.01& 0.07& 0.69& 6.93& 36.60& 2\\
+Nomystery & 6565740.00& 3256.86& 0.53& 0.26& 0.07& 0.03& 0.01& 0.07& 0.38& 3.63& 36.35& 181.03& 20\\
+Openstacks & 80108.50& 4017.19& 0.03& 0.03& 0.03& 0.03& 0.03& 94.79& 774.86& 1067.84& 10929.00& 11174.30& 20\\
+Parcprinter & 1.00& 0.00& 0.00& 0.00& 0.00& 0.00& 0.00& 0.01& 0.04& 0.35& 3.48& 17.29& 20\\
+Parking & 374925.00& 5607.50& 0.17& 0.04& 0.01& 0.00& 0.00& 1.79& 11.36& 114.28& 1196.83& 5835.03& 20\\
+Pegsol & 68763.70& 5.00& 0.17& 0.04& 0.02& 0.01& 0.00& 0.01& 0.04& 0.37& 3.69& 17.88& 20\\
+Scanalyzer & 8449890.00& 4920.58& 0.43& 0.25& 18.63& 0.02& 0.01& 3.13& 28.79& 273.74& 3033.06& 10254.00& 20\\
+Sokoban & 3118530.00& 3932.69& 0.41& 0.26& 0.11& 0.05& 0.04& 0.31& 2.00& 21.42& 222.47& 1056.61& 20\\
+Tidybot & 444473.00& 5632.08& 300.86& 1072.40& 5.88& 0.01& 0.01& 4.40& 26.48& 238.76& 2747.10& 11925.40& 20\\
+Transport & 2622880.00& 2253.51& 0.63& 0.54& 0.24& 0.15& 0.11& 0.09& 0.61& 5.89& 59.37& 290.31& 20\\
+Visitall & 71032400.00& 3704.78& 0.12& 0.04& 0.01& 0.00& 0.00& 0.00& 0.05& 0.56& 5.77& 28.07& 20\\
 Woodworking & 5139070.00& 4944.76& 1.28& 0.69& 0.27& 0.17& 0.07& 0.15& 1.33& 13.21& 130.82& 664.08& 20\\ \hline
 \end{tabular}
 \end{table}
