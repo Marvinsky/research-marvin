@@ -224,49 +224,49 @@ Stratified Sampling is a prediction algorithm that estimate the number of nodes 
   % First, define nodes
 % -- points F  
   
-  \draw (-2,3) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (E) {};  
-  \draw (6,1) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (F) {}; 
+  \draw (-2,3) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (E) {};  
+  \draw (6,1) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (F) {}; 
 
   \draw[very thick,cyan, ->>]  (E) .. controls +(5,-3) and +(-4,1).. (F);
   \path  ($(E)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(F)+(0,0.2)$) 
      {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
 
-  \draw (-1,2) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (A) {};
+  \draw (-1,2) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (A) {};
   \draw[very thick,cyan, ->>]  (A) .. controls +(5,-3) and +(-4,1).. (F);
   \path  ($(A)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(F)+(0,0.2)$) 
      {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
 	
-  \draw (-3,0) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (B) {};
+  \draw (-3,0) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (B) {};
   \draw[very thick,cyan, ->>]  (B) .. controls +(5,-3) and +(-4,1).. (F);
   \path  ($(B)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(F)+(0,0.2)$) 
      {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
 	
 % -- points in G
 
-  \draw (-2,1) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (C) {};
-  \draw (6.5,0) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (G) {};
+  \draw (-2,1) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (C) {};
+  \draw (6.5,0) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (G) {};
   \draw[very thick,cyan, ->>]  (C) .. controls +(5,-3) and +(-4,1).. (G);
   \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
      {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };	
 
-\draw (-1,0) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (D) {};	
+\draw (-1,0) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (D) {};	
 \draw[very thick,cyan, ->>]  (D) .. controls +(5,-3) and +(-4,1).. (G);
   \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
      {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };	
 
-\draw (-3,-1) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (H) {};	
+\draw (-3,-1) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (H) {};	
 \draw[very thick,cyan, ->>]  (H) .. controls +(5,-3) and +(-4,1).. (G);
   \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
      {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
 	
 % -- X
-\draw (-2,-2) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (J) {};
-  \draw (6,-1) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (X) {};
+\draw (-2,-2) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (J) {};
+  \draw (6,-1) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (X) {};
   \draw[very thick,cyan, ->>]  (J) .. controls +(5,-3) and +(-4,1).. (X);
   \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
      {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
 
-\draw (-2,-3) node[circle, inner sep=0.8pt, fill=cyan, label={below:{}}] (K) {};
+\draw (-2,-3) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (K) {};
 \draw[very thick,cyan, ->>]  (K) .. controls +(5,-3) and +(-4,1).. (X);
   \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
      {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
@@ -551,7 +551,7 @@ Woodworking    & 3.20817e+06    & 2.52904e+18    & 3     \\ \hline
 \begin{table}[]
 \centering
 \caption{Poor prediction of SS against A* \texttt{LM-Cut}}
-\label{tb:pred_ss_a_ipdb}
+\label{tb:pred_ss_a_lmcut}
 \begin{tabular}{lccc}
 \hline
 \multicolumn{4}{c}{Using \texttt{LM-Cut} heuristic with 500 probes} \\ \hline
@@ -576,7 +576,7 @@ Woodworking& 3.20824e+06& 2.76233e+18& 3\\ \hline
 \begin{table}[]
 \centering
 \caption{Poor prediction of SS against A* M$\&$S}
-\label{tb:pred_ss_a_ipdb}
+\label{tb:pred_ss_a_mand}
 \begin{tabular}{lccc}
 \hline
 \multicolumn{4}{c}{Using M$\&$S heuristic with 500 probes} \\ \hline
@@ -592,7 +592,7 @@ Scanalyzer& 337833& 2.42409e+31& 3\\
 Sokoban& 739775& 5.60316e+08& 9\\
 Transport& 1.7334e+06& 1.49499e+29& 2\\
 Visitall& 253521& 1.71074e+46& 8\\
-Woodworking& 3.20687e+06& 2.48257e+18& 3\\ \hline
+woodworking& 3.20687e+06& 2.48257e+18& 3\\ \hline
 \end{tabular}
 \end{table}
 
