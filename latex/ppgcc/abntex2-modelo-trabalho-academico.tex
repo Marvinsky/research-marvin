@@ -110,6 +110,9 @@
 % -- crossover
 \usepackage{xr}
 
+% work with columns of table
+\usepackage{array}
+
 % Theorems
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}{Corollary}[theorem]
@@ -273,6 +276,11 @@
 \newcommand{\De}[1]{$\Delta_{#1}$}
 \newcommand{\Ga}[1]{$\Gamma_{#1}$}
 \newcommand{\Vpi}[1]{$\varphi_{#1}$}
+
+% set width of columns in table
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 % --
 

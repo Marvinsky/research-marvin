@@ -523,7 +523,7 @@ Woodworking & 5139070.00& 4944.76& 1.28& 0.69& 0.27& 0.17& 0.07& 0.15& 1.33& 13.
 
 \section{Comparison between SS and A*}
 
-
+\if false
 \begin{table}[]
 \centering
 \caption{Poor prediction of SS against A* ipdb}
@@ -545,8 +545,6 @@ Visitall       & 253710         & 1.68583e+46    & 8     \\
 Woodworking    & 3.20817e+06    & 2.52904e+18    & 3     \\ \hline
 \end{tabular}
 \end{table}
-
-
 
 \begin{table}[]
 \centering
@@ -571,8 +569,6 @@ Woodworking& 3.20824e+06& 2.76233e+18& 3\\ \hline
 \end{tabular}
 \end{table}
 
-
-
 \begin{table}[]
 \centering
 \caption{Poor prediction of SS against A* M$\&$S}
@@ -595,7 +591,32 @@ Visitall& 253521& 1.71074e+46& 8\\
 woodworking& 3.20687e+06& 2.48257e+18& 3\\ \hline
 \end{tabular}
 \end{table}
+\fi
 
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[]
+\footnotesize\setlength{\tabcolsep}{1.2pt}
+\centering
+\caption{Poor prediction of SS against A* using ipdb, \texttt{LM-Cut} and M$\&$S with 500 probes}
+\label{tb:ipdb_lmcut_mands}
+\begin{tabular}{lC{2cm}C{2cm}C{2cm}C{2cm}C{2cm}C{2cm}C{2cm}}
+\hline
+\multirow{2}{*}{Domain} & \multicolumn{2}{c}{ipdb} & \multicolumn{2}{c}{\texttt{LM-Cut}} & \multicolumn{2}{c}{M$\&$S} & \multirow{2}{*}{n} \\ \cline{2-7}
+                     & A*          & SS         & A*                & SS                & A*           & SS          &                    \\ \hline
+Barman               & 1.72e+07    & 8.68e+31   & 7.45e+06          & 2.21e+30          & 6.67e+06     & 1.26e+36    & 4                  \\
+Floortile            & 1.40e+07    & 1.74e+18   & 702435            & 4.68e+14          & 4.46e+06     & 1.90e+12    & 4                  \\
+Nomystery            & 40169.7     & 6.71e+32   & 267100            & 6.14e+19          & 8236         & 1.20e+20    & 9                  \\
+Openstacks           & 570099      & 0.61884    & 570099            & 0.677425          & 569984       & 0.672143    & 4                  \\
+Parcprinter          & 1157        & 2.56e+22   & 1363.67           & 2.33e+21          & 766.333      & 6.36e+20    & 3                  \\
+Pegsol               & 841693      & 2901.39    & 398221            & 6859.86           & 933430       & 779.017     & 16                 \\
+Scanalyzer           & 337894      & 3.94e+33   & 334747            & 7.58e+31          & 337833       & 2.42e+31    & 3                  \\
+Sokoban              & 376755      & 1.04e+07   & 45374             & 2.74e+06          & 739775       & 5.60e+08    & 9                  \\
+Transport            & 1.89e+06    & 2.91e+38   & 1.49e+06          & 1.15e+25          & 1.73e+06     & 1.50e+29    & 2                  \\
+Visitall             & 253710      & 1.69e+46   & 253195            & 1.69e+46          & 253521       & 1.71e+46    & 8                  \\
+Woodworking          & 3.21e+06    & 2.53e+18   & 3.20e+06          & 2.76e+18          & 3.21e+06     & 2.48e+18    & 3                  \\ \hline
+\end{tabular}
+\end{table}
 
 
 
