@@ -1,5 +1,8 @@
 \select@language {brazil}
 \select@language {english}
 \contentsline {table}{\numberline {1}{\ignorespaces Comparison between \texttt {SS} and IDA$\sp {*}$ for 1, 10, 100, 1000 and 5000 probes using $hmax$ heuristic.}}{57}{table.3.1}
-\contentsline {table}{\numberline {2}{\ignorespaces Ratios of the number of nodes expanded using $h_{max}(\zeta \sp {'})$ to the number of nodes expanded using $h_{max}(\zeta )$}}{62}{table.4.2}
-\contentsline {table}{\numberline {3}{\ignorespaces Coverage of different planning systems on the 2011 \texttt {IPC} benchmarks. For the \texttt {RGHS} and \texttt {Max} approaches we also present the average number of heuristics \texttt {RGHS} selects (|$\zeta \sp {'}$|).}}{66}{table.4.3}
+\contentsline {table}{\numberline {2}{\ignorespaces Poor prediction of SS against A* ipdb}}{58}{table.3.2}
+\contentsline {table}{\numberline {3}{\ignorespaces Poor prediction of SS against A* \texttt {LM-Cut}}}{58}{table.3.3}
+\contentsline {table}{\numberline {4}{\ignorespaces Poor prediction of SS against A* M$\&$S}}{58}{table.3.4}
+\contentsline {table}{\numberline {5}{\ignorespaces Ratios of the number of nodes expanded using $h_{max}(\zeta \sp {'})$ to the number of nodes expanded using $h_{max}(\zeta )$}}{62}{table.4.5}
+\contentsline {table}{\numberline {6}{\ignorespaces Coverage of different planning systems on the 2011 \texttt {IPC} benchmarks. For the \texttt {RGHS} and \texttt {Max} approaches we also present the average number of heuristics \texttt {RGHS} selects (|$\zeta \sp {'}$|).}}{66}{table.4.6}

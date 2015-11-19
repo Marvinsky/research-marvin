@@ -521,4 +521,82 @@ Woodworking & 5139070.00& 4944.76& 1.28& 0.69& 0.27& 0.17& 0.07& 0.15& 1.33& 13.
 \end{tabular}
 \end{table}
 
+\section{Comparison between SS and A*}
+
+
+\begin{table}[]
+\centering
+\caption{Poor prediction of SS against A* ipdb}
+\label{tb:pred_ss_a_ipdb}
+\begin{tabular}{lccc}
+\hline
+\multicolumn{4}{c}{Using ipdb heuristic with 500 probes} \\ \hline
+Domain         & A*             & SS             & n     \\ \hline
+Barman         & 1.71877e+07    & 8.67924e+31    & 4     \\
+Floortile      & 1.40015e+07    & 1.74275e+18    & 4     \\
+Nomystery      & 40169.7        & 6.70826e+32    & 9     \\
+Openstacks     & 570099         & 0.61884        & 4     \\
+Parcprinter    & 1157           & 2.56184e+22    & 3     \\
+Pegsol         & 841693         & 2901.39        & 16    \\
+Scanalyzer     & 337894         & 3.93571e+33    & 3     \\
+Sokoban        & 376755         & 1.04117e+07    & 9     \\
+Transport      & 1.88894e+06    & 2.91165e+38    & 2     \\
+Visitall       & 253710         & 1.68583e+46    & 8     \\
+Woodworking    & 3.20817e+06    & 2.52904e+18    & 3     \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[]
+\centering
+\caption{Poor prediction of SS against A* \texttt{LM-Cut}}
+\label{tb:pred_ss_a_ipdb}
+\begin{tabular}{lccc}
+\hline
+\multicolumn{4}{c}{Using \texttt{LM-Cut} heuristic with 500 probes} \\ \hline
+Domain& A*& SS& n \\ \hline
+
+Barman& 7.44986e+06& 2.20574e+30& 4\\
+Floortile& 702435& 4.67785e+14& 4\\
+Nomystery& 267100& 6.14029e+19& 9\\
+Openstacks& 570099& 0.677425& 4\\
+Parcprinter& 1363.67& 2.33125e+21& 3\\
+Pegsol& 398221& 6859.86& 16\\
+Scanalyzer& 334747& 7.5812e+31& 3\\
+Sokoban& 45374& 2.74482e+06& 9\\
+Transport& 1.48569e+06& 1.15083e+25& 2\\
+Visitall& 253195& 1.68583e+46& 8\\
+Woodworking& 3.20824e+06& 2.76233e+18& 3\\ \hline
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[]
+\centering
+\caption{Poor prediction of SS against A* M$\&$S}
+\label{tb:pred_ss_a_ipdb}
+\begin{tabular}{lccc}
+\hline
+\multicolumn{4}{c}{Using M$\&$S heuristic with 500 probes} \\ \hline
+Domain& A*& SS& n \\ \hline
+
+Barman& 6.6675e+06& 1.26272e+36& 4\\
+Floortile& 4.46132e+06& 1.90897e+12& 4\\
+Nomystery& 8236& 1.20029e+20& 9\\
+Openstacks& 569984& 0.672143& 4\\
+Parcprinter& 766.333& 6.35555e+20& 3\\
+Pegsol& 933430& 779.017& 16\\
+Scanalyzer& 337833& 2.42409e+31& 3\\
+Sokoban& 739775& 5.60316e+08& 9\\
+Transport& 1.7334e+06& 1.49499e+29& 2\\
+Visitall& 253521& 1.71074e+46& 8\\
+Woodworking& 3.20687e+06& 2.48257e+18& 3\\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
 \clearpage

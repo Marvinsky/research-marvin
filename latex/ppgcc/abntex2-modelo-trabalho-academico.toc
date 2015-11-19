@@ -59,6 +59,7 @@
 \contentsline {section}{\numberline {3.7}8-tile-puzzle Case Using type system}{53}{section.3.7}
 \contentsline {section}{\numberline {3.8}SS step by step}{55}{section.3.8}
 \contentsline {section}{\numberline {3.9}Comparison between SS and IDA}{56}{section.3.9}
+\contentsline {section}{\numberline {3.10}Comparison between SS and A*}{57}{section.3.10}
 \contentsline {part}{\partnumberline {IV}\MakeTextUppercase {Empirical Evaluation}}{59}{part.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Empirical Evaluation}}{61}{chapter.4}
