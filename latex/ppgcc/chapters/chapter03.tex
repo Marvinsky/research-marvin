@@ -407,7 +407,7 @@ In the Figure \ref{fig:empty_space_ts}, each row represent a type. The first boa
  [\usebox\myboxcornerfour]
  $\node [xshift=1cm,yshift=2cm] (A) at (2,0) {(0, C)};$
 \end{forest}
-\caption{Each row represent a different type.} \label{fig:empty_space_ts}
+\caption{Each row has one or two states that represent the same type.} \label{fig:empty_space_ts}
 \end{figure}
 
 \section{SS step by step}
@@ -477,7 +477,7 @@ When nodes in the Level 3 are expanded. They are expanded in the following way: 
 
 Finally, the number of nodes expanded in the search tree is obtained summing all $w$ plus one (The root node). As a result, the number of nodes expanded in the search tree would be $ 15 + 1 = 16$.\\
 
-\section{Comparison between SS and IDA}
+\section{Comparison between SS and IDA*}
 \noindent
 \texttt{SS} is an algorithm that estimates the number of nodes expanded performed by heuristic search algorithm seeking solutions in state space. We apply \texttt{SS} to predict the number of nodes expanded by IDA$\sp{*}$ in a given $f-$layer when using a consistent heuristics.\\
 
@@ -556,6 +556,51 @@ Woodworking          & 3.21e+06    & 2.53e+18   & 3.20e+06          & 2.76e+18  
 \end{tabular}
 \end{table}
 
+\section{Approximation Analysis for SS and A*}
+\noindent
+
+\begin{figure}[!htb]
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{images/elevators-opt11-strips}
+\endminipage\hfill
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{images/floortile-opt11-strips}
+\endminipage\hfill
+\minipage{0.32\textwidth}%
+  \includegraphics[width=\linewidth]{images/nomystery-opt11-strips}
+\endminipage
+
+%jump
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{images/parcprinter-opt11-strips}
+\endminipage\hfill
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{images/pegsol-opt11-strips}
+\endminipage\hfill
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{images/scanalyzer-opt11-strips}
+\endminipage\hfill
+
+%jump
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{images/sokoban-opt11-strips}
+\endminipage\hfill
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{images/tidybot-opt11-strips}
+\endminipage\hfill
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{images/transport-opt11-strips} 
+\endminipage\hfill
+
+%jump
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{images/visitall-opt11-strips}
+\endminipage\hfill
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{images/woodworking-opt11-strips}
+\endminipage\hfill
+\caption{\texttt{SS} vs A$\sp{*}$ for the optimal domains}\label{fig:img_analysis_domains}
+\end{figure}
 
 
 \clearpage
