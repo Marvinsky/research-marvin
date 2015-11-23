@@ -560,6 +560,37 @@ Woodworking          & 3.21e+06    & 2.53e+18   & 3.20e+06          & 2.76e+18  
 \noindent
 In order to understand how \texttt{SS} and A$\sp{*}$ behaves we have created plots with the fixed range of 2 . This way we are going to have 4 different regions as shown in the Figure a. Points on regions 2 and 3 are heuristics that \texttt{SS} correctly chose to be used with A$\sp{*}$. Points following on the other regions are those choices \texttt{SS} made incorrectly.
 
+\pagestyle{empty}
+
+\begin{figure}[!htb]
+\centering  
+\begin{tikzpicture}[scale=2]
+  \draw[->] (-0.2,0) -- (3,0) node[right] {\texttt{SS} $-$ ($h_{1}$/$h_{2}$)};
+  \draw[->] (0,-0.2) -- (0,3) node[above] {A$\sp{*}$ $-$ ($h_{1}$/$h_{2}$)};
+
+  \draw[densely dotted] (-0.1,1) -- (3,1);
+  \draw[densely dotted] (1,-0.1) -- (1,3);
+  
+  \draw[densely dotted] (-0.1,2) -- (3,2);
+  \draw[densely dotted] (2,-0.1) -- (2,3);
+
+  \draw[shift={(0.5,1.5)}] node[below] {I};
+  \draw[shift={(1.5,1.5)}] node[below] {II};
+  \draw[shift={(0.5,0.5)}] node[below] {III};
+  \draw[shift={(1.5,0.5)}] node[below] {IV};
+
+
+  \foreach \x/\xtext in {1/1, 2/2}
+    \draw[shift={(\x,0)}] (0pt,2pt) -- (0pt,-2pt) node[below] {$\xtext$};
+
+  \foreach \y/\ytext in {1/1, 2/2}
+    \draw[shift={(0,\y)}] (2pt,0pt) -- (-2pt,0pt) node[left] {$\ytext$};
+
+\end{tikzpicture}
+  \caption{Cartesian Plane with domain $\left\langle 0, 2\right\rangle$ and range $\left\langle 0, 2\right\rangle$ }\label{fig:img_cartesian_plane}
+\end{figure}
+
+
 
 
 \begin{figure}[!htb]
