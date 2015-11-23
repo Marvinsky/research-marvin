@@ -13,4 +13,4 @@
 \contentsline {figure}{\numberline {11}{\ignorespaces The heuristic value is the position of the empty tile in a Specific state.}}{53}{figure.3.11}
 \contentsline {figure}{\numberline {12}{\ignorespaces Each row has one or two states that represent the same type.}}{54}{figure.3.12}
 \contentsline {figure}{\numberline {13}{\ignorespaces Search tree using Type System}}{55}{figure.3.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces \texttt {SS} vs A$\sp {*}$ for the optimal domains}}{59}{figure.3.14}
+\contentsline {figure}{\numberline {14}{\ignorespaces \texttt {SS} vs A$\sp {*}$ for the optimal domains.}}{59}{figure.3.14}

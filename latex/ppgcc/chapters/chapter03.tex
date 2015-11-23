@@ -558,6 +558,9 @@ Woodworking          & 3.21e+06    & 2.53e+18   & 3.20e+06          & 2.76e+18  
 
 \section{Approximation Analysis for SS and A*}
 \noindent
+In order to understand how \texttt{SS} and A$\sp{*}$ behaves we have created plots with the fixed range of 2 . This way we are going to have 4 different regions as shown in the Figure a. Points on regions 2 and 3 are heuristics that \texttt{SS} correctly chose to be used with A$\sp{*}$. Points following on the other regions are those choices \texttt{SS} made incorrectly.
+
+
 
 \begin{figure}[!htb]
 \minipage{0.32\textwidth}
@@ -599,8 +602,30 @@ Woodworking          & 3.21e+06    & 2.53e+18   & 3.20e+06          & 2.76e+18  
 \minipage{0.32\textwidth}
   \includegraphics[width=\linewidth]{images/woodworking-opt11-strips}
 \endminipage\hfill
-\caption{\texttt{SS} vs A$\sp{*}$ for the optimal domains}\label{fig:img_analysis_domains}
+\caption{\texttt{SS} vs A$\sp{*}$ for the optimal domains.}\label{fig:img_analysis_domains}
 \end{figure}
+
+\begin{table}[!htb]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{lc}
+\hline
+Domain      & I and IV \\ \hline
+Elevators   & 78.57    \\
+Floortile   & 96.08    \\
+Nomystery   & 71.82    \\
+Parcprinter & 70.50    \\
+Pegsol      & 96.83    \\
+Scanalyzer  & 100.00   \\
+Sokoban     & 89.31    \\
+Tidybot     & 100.00   \\
+Transport   & 51.78    \\
+Visitall    & 98.05    \\
+Woodworking & 100.00   \\ \hline
+\end{tabular}
+\end{table}
+
 
 
 \clearpage
