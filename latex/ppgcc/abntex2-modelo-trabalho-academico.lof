@@ -14,4 +14,4 @@
 \contentsline {figure}{\numberline {12}{\ignorespaces Each row has one or two states that represent the same type.}}{54}{figure.3.12}
 \contentsline {figure}{\numberline {13}{\ignorespaces Search tree using Type System}}{55}{figure.3.13}
 \contentsline {figure}{\numberline {14}{\ignorespaces Cartesian Plane with domain $\left \delimiter "426830A 0, 2\right \delimiter "526930B $ and range $\left \delimiter "426830A 0, 2\right \delimiter "526930B $ }}{59}{figure.3.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces \texttt {SS} vs A$\sp {*}$ for the optimal domains.}}{60}{figure.3.15}
+\contentsline {figure}{\numberline {15}{\ignorespaces \texttt {SS} vs A$\sp {*}$ ratios for the optimal domains $-$ The number of instances used in each domain are showed next to the name of the Domain.}}{60}{figure.3.15}
