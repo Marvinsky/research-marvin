@@ -598,8 +598,7 @@ Points that fall in each of the regions:
   \caption{Cartesian Plane with domain $\left\langle 0, 2\right\rangle$ and range $\left\langle 0, 2\right\rangle$ }\label{fig:img_cartesian_plane}
 \end{figure}
 
-In the Figure \ref{fig:img_analysis_domains}
-
+In the Figure \ref{fig:img_analysis_domains} we can see the distribution of the points in each domain. We use three different heuristics: ipdb, \texttt{LM-Cut} and 10 \texttt{GA-PDBs} which are represented by the symbols \ding{110} , \ding{108} and \ding{115} respectively.
 
 \begin{figure}[!htb]
 \minipage{0.32\textwidth}
@@ -644,13 +643,14 @@ In the Figure \ref{fig:img_analysis_domains}
 \caption{\texttt{SS} vs A$\sp{*}$ for the optimal domains.}\label{fig:img_analysis_domains}
 \end{figure}
 
+We present in the Table \ref{tb:per_ss_made_correctly}
+
+
 \begin{table}[!htb]
 \centering
-\caption{My caption}
-\label{my-label}
 \begin{tabular}{lc}
 \hline
-Domain      & I and IV \\ \hline
+Domain      & I and IV ($\%$) \\ \hline
 Elevators   & 78.57    \\
 Floortile   & 96.08    \\
 Nomystery   & 71.82    \\
@@ -663,6 +663,8 @@ Transport   & 51.78    \\
 Visitall    & 98.05    \\
 Woodworking & 100.00   \\ \hline
 \end{tabular}
+\caption{Percentage of choices \texttt{SS} made correctly.}
+\label{tb:per_ss_made_correctly}
 \end{table}
 
 
