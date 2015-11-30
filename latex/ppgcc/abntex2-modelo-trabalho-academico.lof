@@ -1,6 +1,6 @@
 \select@language {brazil}
 \select@language {english}
-\contentsline {figure}{\numberline {1}{\ignorespaces The left tile$-$puzzle is the initial distribution of tiles and the right tile$-$puzzle is the goal distribution of tiles. Each one represent a State.}}{32}{figure.2.1}
+\contentsline {figure}{\numberline {1}{\ignorespaces The left tile$-$puzzle is the initial distribution of tiles and the right tile$-$puzzle is the goal distribution of tiles. Each one represent a state.}}{32}{figure.2.1}
 \contentsline {figure}{\numberline {2}{\ignorespaces Heuristic Search: \textit {I}: Initial State, \textit {s}: Some Sate, \textit {G}: Goal State}}{33}{figure.2.2}
 \contentsline {figure}{\numberline {3}{\ignorespaces Out of place heuristic}}{33}{figure.2.3}
 \contentsline {figure}{\numberline {4}{\ignorespaces Manhatham distance heuristic}}{34}{figure.2.4}
@@ -10,7 +10,7 @@
 \contentsline {figure}{\numberline {8}{\ignorespaces Blocks world with three blocks.}}{37}{figure.2.8}
 \contentsline {figure}{\numberline {9}{\ignorespaces Sokoban with four blocks solved}}{40}{figure.2.9}
 \contentsline {figure}{\numberline {10}{\ignorespaces Type system and the search space representation.}}{49}{figure.3.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces The heuristic value is the position of the empty tile in a Specific state.}}{53}{figure.3.11}
+\contentsline {figure}{\numberline {11}{\ignorespaces The heuristic value is the position of the empty tile in a specific state.}}{53}{figure.3.11}
 \contentsline {figure}{\numberline {12}{\ignorespaces Each row has one or two states that represent the same type.}}{54}{figure.3.12}
 \contentsline {figure}{\numberline {13}{\ignorespaces Search tree using Type System}}{55}{figure.3.13}
 \contentsline {figure}{\numberline {14}{\ignorespaces Cartesian Plane with domain $\left \delimiter "426830A 0, 2\right \delimiter "526930B $ and range $\left \delimiter "426830A 0, 2\right \delimiter "526930B $ }}{59}{figure.3.14}
