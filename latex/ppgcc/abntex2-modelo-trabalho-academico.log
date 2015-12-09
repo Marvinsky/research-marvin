@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  9 DEC 2015 12:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  9 DEC 2015 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1978,17 +1978,7 @@ Package microtype Info: Loading generic settings for font family
 (./abntex2-modelo-trabalho-academico.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 10.
- [17]) [18]
-Underfull \hbox (badness 10000) in paragraph at lines 665--667
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--669
-
- []
-
-[19
+ [17]) [18] [19
 
 
 ] [20
@@ -1996,7 +1986,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 668--669
 ] [21] [22]
 \openout2 = `chapters/chapter01.aux'.
 
- (./chapters/chapter01.tex
+
+(./chapters/chapter01.tex
 Underfull \hbox (badness 10000) in paragraph at lines 37--39
 
  []
@@ -2171,7 +2162,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--324
 Underfull \vbox (badness 4036) has occurred while \output is active []
 
  [37]
-<images/sokoban_star_end.png, id=430, 639.38875pt x 196.735pt>
+<images/sokoban_star_end.png, id=428, 639.38875pt x 196.735pt>
 File: images/sokoban_star_end.png Graphic file (type png)
 
 <use images/sokoban_star_end.png>
@@ -2453,7 +2444,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 609--610
 
  []
 
-[57] <images/elevators-opt11-strips.jpeg, id=655, 481.8pt x 481.8pt>
+[57] <images/elevators-opt11-strips.jpeg, id=653, 481.8pt x 481.8pt>
 File: images/elevators-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/elevators-opt11-strips.jpeg>
@@ -2461,7 +2452,7 @@ Package pdftex.def Info: images/elevators-opt11-strips.jpeg used on input line
 615.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/floortile-opt11-strips.jpeg, id=656, 481.8pt x 481.8pt>
+<images/floortile-opt11-strips.jpeg, id=654, 481.8pt x 481.8pt>
 File: images/floortile-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/floortile-opt11-strips.jpeg>
@@ -2469,7 +2460,7 @@ Package pdftex.def Info: images/floortile-opt11-strips.jpeg used on input line
 618.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/nomystery-opt11-strips.jpeg, id=657, 481.8pt x 481.8pt>
+<images/nomystery-opt11-strips.jpeg, id=655, 481.8pt x 481.8pt>
 File: images/nomystery-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/nomystery-opt11-strips.jpeg>
@@ -2477,7 +2468,7 @@ Package pdftex.def Info: images/nomystery-opt11-strips.jpeg used on input line
 621.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/parcprinter-opt11-strips.jpeg, id=658, 481.8pt x 481.8pt>
+<images/parcprinter-opt11-strips.jpeg, id=656, 481.8pt x 481.8pt>
 File: images/parcprinter-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/parcprinter-opt11-strips.jpeg>
@@ -2485,7 +2476,7 @@ Package pdftex.def Info: images/parcprinter-opt11-strips.jpeg used on input lin
 e 626.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/pegsol-opt11-strips.jpeg, id=659, 481.8pt x 481.8pt>
+<images/pegsol-opt11-strips.jpeg, id=657, 481.8pt x 481.8pt>
 File: images/pegsol-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/pegsol-opt11-strips.jpeg>
@@ -2493,7 +2484,7 @@ Package pdftex.def Info: images/pegsol-opt11-strips.jpeg used on input line 629
 .
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/scanalyzer-opt11-strips.jpeg, id=660, 481.8pt x 481.8pt>
+<images/scanalyzer-opt11-strips.jpeg, id=658, 481.8pt x 481.8pt>
 File: images/scanalyzer-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/scanalyzer-opt11-strips.jpeg>
@@ -2501,7 +2492,7 @@ Package pdftex.def Info: images/scanalyzer-opt11-strips.jpeg used on input line
  632.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/sokoban-opt11-strips.jpeg, id=661, 481.8pt x 481.8pt>
+<images/sokoban-opt11-strips.jpeg, id=659, 481.8pt x 481.8pt>
 File: images/sokoban-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/sokoban-opt11-strips.jpeg>
@@ -2509,7 +2500,7 @@ Package pdftex.def Info: images/sokoban-opt11-strips.jpeg used on input line 63
 7.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/tidybot-opt11-strips.jpeg, id=662, 481.8pt x 481.8pt>
+<images/tidybot-opt11-strips.jpeg, id=660, 481.8pt x 481.8pt>
 File: images/tidybot-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/tidybot-opt11-strips.jpeg>
@@ -2517,7 +2508,7 @@ Package pdftex.def Info: images/tidybot-opt11-strips.jpeg used on input line 64
 0.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/transport-opt11-strips.jpeg, id=663, 481.8pt x 481.8pt>
+<images/transport-opt11-strips.jpeg, id=661, 481.8pt x 481.8pt>
 File: images/transport-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/transport-opt11-strips.jpeg>
@@ -2525,7 +2516,7 @@ Package pdftex.def Info: images/transport-opt11-strips.jpeg used on input line
 643.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/visitall-opt11-strips.jpeg, id=664, 481.8pt x 481.8pt>
+<images/visitall-opt11-strips.jpeg, id=662, 481.8pt x 481.8pt>
 File: images/visitall-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/visitall-opt11-strips.jpeg>
@@ -2533,7 +2524,7 @@ Package pdftex.def Info: images/visitall-opt11-strips.jpeg used on input line 6
 48.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/woodworking-opt11-strips.jpeg, id=665, 481.8pt x 481.8pt>
+<images/woodworking-opt11-strips.jpeg, id=663, 481.8pt x 481.8pt>
 File: images/woodworking-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/woodworking-opt11-strips.jpeg>
@@ -2769,26 +2760,26 @@ AED: lastpage setting LastPage
 \tf@toc=\write9
 \openout9 = `abntex2-modelo-trabalho-academico.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 852.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 852.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 848.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 848.
  (./abntex2-modelo-trabalho-academico.aux (./chapters/chapter01.aux)
 (./chapters/chapter02.aux) (./chapters/chapter03.aux) (./chapters/chapter04.aux
 ) (./chapters/chapter05.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 852.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 852.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 848.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 848.
 Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
 ot changed.
-(rerunfilecheck)             Checksum: ADE2B9CA8F83FDD2DB0418D6233873A0;2846.
+(rerunfilecheck)             Checksum: EEB5BBC9E55FF663112060AEA649729F;2790.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 852.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 848.
  ) 
 Here is how much of TeX's memory you used:
  32044 strings out of 493304
  590180 string characters out of 6139870
- 935489 words of memory out of 5000000
+ 936489 words of memory out of 5000000
  34341 multiletter control sequences out of 15000+600000
  129054 words of font info for 225 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -2817,11 +2808,11 @@ are/texmf/fonts/type1/public/lm/lmtti10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public
 /cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (78 pages, 907689 bytes
+Output written on abntex2-modelo-trabalho-academico.pdf (78 pages, 906165 bytes
 ).
 PDF statistics:
- 1204 PDF objects out of 1440 (max. 8388607)
- 1071 compressed objects within 11 object streams
+ 1201 PDF objects out of 1440 (max. 8388607)
+ 1068 compressed objects within 11 object streams
  254 named destinations out of 1000 (max. 500000)
  43617 words of extra memory for PDF output out of 51595 (max. 10000000)
 
