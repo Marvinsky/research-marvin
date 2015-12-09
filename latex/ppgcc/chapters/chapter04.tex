@@ -28,7 +28,10 @@
 
 \chapter{Empirical Evaluation}\label{ch:empirical_evaluation}
 
+\iffalse
 \chapterprecis{The purpose of this section is to present how our meta$-$reasoning is applied when solving \texttt{IPC} domain problens.}\index{sinopse de capítulo}
+\fi
+
 
 \texttt{RGHS} is guaranteed to find a near$-$optimal heuristic subset to guide the A$\sp{*}$ search granted that it is able to compute the objective function of interest. Thus, the practical effectiveness of \texttt{RGHS} depends on its ability of finding good approximations $\hat{J}$ and $\hat{T}$. Moreover, \texttt{RGHS}'s effectiveness depends on the value of $N$ and on the quality of the set of heuristics $\zeta$. In order to verify its practical effectivess, we have implemented \texttt{RGHS} in Fast Downward \cite{helmert2006fast} and tested the A$\sp{*}$ performance using subsets of heuristics selected by \texttt{RGHS} while minimizing different objective funcions.\\
 

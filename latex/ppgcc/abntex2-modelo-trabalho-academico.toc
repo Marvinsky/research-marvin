@@ -6,76 +6,70 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Introduction}{21}{chapter*.8}
-\contentsline {part}{\partnumberline {I}\MakeTextUppercase {Preparation of the research}}{23}{part.1}
+\contentsline {chapter}{Introduction}{19}{chapter*.8}
+\contentsline {part}{\partnumberline {I}\MakeTextUppercase {Preparation of the research}}{21}{part.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {About the Problem}}{25}{chapter.1}
-\precistoctext {The purpose of this section if to motivate the problem.}
-\contentsline {section}{\numberline {1.1}Problem Statement and Motivation}{25}{section.1.1}
-\contentsline {section}{\numberline {1.2}Aim and Objectives}{26}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Aim}{26}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Objectives}{26}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Scope, Limitations, and Delimitations}{26}{section.1.3}
-\contentsline {section}{\numberline {1.4}Justification}{27}{section.1.4}
-\contentsline {section}{\numberline {1.5}Hypothesis}{27}{section.1.5}
-\contentsline {section}{\numberline {1.6}Contribution of the Thesis}{27}{section.1.6}
-\contentsline {section}{\numberline {1.7}Organization of the Thesis}{27}{section.1.7}
-\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Literature Review}}{29}{part.2}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {About the Problem}}{23}{chapter.1}
+\contentsline {section}{\numberline {1.1}Problem Statement and Motivation}{23}{section.1.1}
+\contentsline {section}{\numberline {1.2}Aim and Objectives}{24}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Aim}{24}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Objectives}{24}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Scope, Limitations, and Delimitations}{24}{section.1.3}
+\contentsline {section}{\numberline {1.4}Justification}{25}{section.1.4}
+\contentsline {section}{\numberline {1.5}Hypothesis}{25}{section.1.5}
+\contentsline {section}{\numberline {1.6}Contribution of the Thesis}{25}{section.1.6}
+\contentsline {section}{\numberline {1.7}Organization of the Thesis}{25}{section.1.7}
+\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Literature Review}}{27}{part.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Background}}{31}{chapter.2}
-\precistoctext {The purpose of this section is to understand the problem.}
-\contentsline {section}{\numberline {2.1}Similar Selection Systems}{31}{section.2.1}
-\contentsline {section}{\numberline {2.2}Problem definition}{31}{section.2.2}
-\contentsline {section}{\numberline {2.3}Heuristics}{32}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Out of place (O.P)}{33}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Manhatham Distance (M.D)}{34}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Heuristic Generators}{34}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Pattern Database (PDB)}{34}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Take advantage of Heuristics}{34}{section.2.5}
-\contentsline {section}{\numberline {2.6}Number of heuristics created}{35}{section.2.6}
-\contentsline {section}{\numberline {2.7}Heuristic Subset}{36}{section.2.7}
-\contentsline {section}{\numberline {2.8}Problem Domains}{37}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Blocks world}{37}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Barman}{37}{subsection.2.8.2}
-\contentsline {subsection}{\numberline {2.8.3}Elevators}{37}{subsection.2.8.3}
-\contentsline {subsection}{\numberline {2.8.4}Floortile}{38}{subsection.2.8.4}
-\contentsline {subsection}{\numberline {2.8.5}Nomystery}{38}{subsection.2.8.5}
-\contentsline {subsection}{\numberline {2.8.6}Openstacks}{39}{subsection.2.8.6}
-\contentsline {subsection}{\numberline {2.8.7}ParcPrinter}{39}{subsection.2.8.7}
-\contentsline {subsection}{\numberline {2.8.8}Parking}{39}{subsection.2.8.8}
-\contentsline {subsection}{\numberline {2.8.9}Sokoban}{40}{subsection.2.8.9}
-\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Approach Proposal}}{41}{part.3}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Background}}{29}{chapter.2}
+\contentsline {section}{\numberline {2.1}Similar Selection Systems}{29}{section.2.1}
+\contentsline {section}{\numberline {2.2}Problem definition}{29}{section.2.2}
+\contentsline {section}{\numberline {2.3}Heuristics}{30}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Out of place (O.P)}{31}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Manhatham Distance (M.D)}{32}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Heuristic Generators}{32}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Pattern Database (PDB)}{32}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}Take advantage of Heuristics}{32}{section.2.5}
+\contentsline {section}{\numberline {2.6}Number of heuristics created}{33}{section.2.6}
+\contentsline {section}{\numberline {2.7}Heuristic Subset}{34}{section.2.7}
+\contentsline {section}{\numberline {2.8}Problem Domains}{35}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Blocks world}{35}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Barman}{35}{subsection.2.8.2}
+\contentsline {subsection}{\numberline {2.8.3}Elevators}{35}{subsection.2.8.3}
+\contentsline {subsection}{\numberline {2.8.4}Floortile}{36}{subsection.2.8.4}
+\contentsline {subsection}{\numberline {2.8.5}Nomystery}{36}{subsection.2.8.5}
+\contentsline {subsection}{\numberline {2.8.6}Openstacks}{37}{subsection.2.8.6}
+\contentsline {subsection}{\numberline {2.8.7}ParcPrinter}{37}{subsection.2.8.7}
+\contentsline {subsection}{\numberline {2.8.8}Parking}{37}{subsection.2.8.8}
+\contentsline {subsection}{\numberline {2.8.9}Sokoban}{38}{subsection.2.8.9}
+\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Approach Proposal}}{39}{part.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Meta-Reasoning for selection}}{43}{chapter.3}
-\precistoctext {The purpose of this section is to introduce the meta$-$reasoning proposed.}
-\contentsline {section}{\numberline {3.1}Random Greedy Heuristic Selection (RGHS)}{43}{section.3.1}
-\contentsline {section}{\numberline {3.2}Approximately Minimizing Search Tree Size}{44}{section.3.2}
-\contentsline {section}{\numberline {3.3}Approximately Minimizing A*'s Running Time}{45}{section.3.3}
-\contentsline {section}{\numberline {3.4}Estimating Tree Size and Running Time}{47}{section.3.4}
-\contentsline {section}{\numberline {3.5}Culprit Sampler (CS)}{47}{section.3.5}
-\contentsline {section}{\numberline {3.6}Stratified Sampling (SS)}{49}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Type System}{49}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Search Space and Search Tree}{50}{subsection.3.6.2}
-\contentsline {section}{\numberline {3.7}8-tile-puzzle Case Using type system}{53}{section.3.7}
-\contentsline {section}{\numberline {3.8}SS step by step}{55}{section.3.8}
-\contentsline {section}{\numberline {3.9}Comparison between SS and IDA*}{56}{section.3.9}
-\contentsline {section}{\numberline {3.10}Comparison between SS and A*}{57}{section.3.10}
-\contentsline {section}{\numberline {3.11}Approximation Analysis for SS and A*}{58}{section.3.11}
-\contentsline {part}{\partnumberline {IV}\MakeTextUppercase {Empirical Evaluation}}{63}{part.4}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Meta-Reasoning for selection}}{41}{chapter.3}
+\contentsline {section}{\numberline {3.1}Random Greedy Heuristic Selection (RGHS)}{41}{section.3.1}
+\contentsline {section}{\numberline {3.2}Approximately Minimizing Search Tree Size}{42}{section.3.2}
+\contentsline {section}{\numberline {3.3}Approximately Minimizing A*'s Running Time}{43}{section.3.3}
+\contentsline {section}{\numberline {3.4}Estimating Tree Size and Running Time}{45}{section.3.4}
+\contentsline {section}{\numberline {3.5}Culprit Sampler (CS)}{45}{section.3.5}
+\contentsline {section}{\numberline {3.6}Stratified Sampling (SS)}{47}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Type System}{47}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Search Space and Search Tree}{48}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.7}8-tile-puzzle Case Using type system}{51}{section.3.7}
+\contentsline {section}{\numberline {3.8}SS step by step}{53}{section.3.8}
+\contentsline {section}{\numberline {3.9}Comparison between SS and IDA*}{54}{section.3.9}
+\contentsline {section}{\numberline {3.10}Comparison between SS and A*}{55}{section.3.10}
+\contentsline {section}{\numberline {3.11}Approximation Analysis for SS and A*}{56}{section.3.11}
+\contentsline {part}{\partnumberline {IV}\MakeTextUppercase {Empirical Evaluation}}{61}{part.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Empirical Evaluation}}{65}{chapter.4}
-\precistoctext {The purpose of this section is to present how our meta$-$reasoning is applied when solving \texttt {IPC} domain problens.}
-\contentsline {section}{\numberline {4.1}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{66}{section.4.1}
-\contentsline {section}{\numberline {4.2}Comparison with Other Planning Systems}{68}{section.4.2}
-\contentsline {section}{\numberline {4.3}Systems Tested}{68}{section.4.3}
-\contentsline {section}{\numberline {4.4}Discussion of the Results}{70}{section.4.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Empirical Evaluation}}{63}{chapter.4}
+\contentsline {section}{\numberline {4.1}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{64}{section.4.1}
+\contentsline {section}{\numberline {4.2}Comparison with Other Planning Systems}{66}{section.4.2}
+\contentsline {section}{\numberline {4.3}Systems Tested}{66}{section.4.3}
+\contentsline {section}{\numberline {4.4}Discussion of the Results}{68}{section.4.4}
 \vspace {\cftbeforechapterskip }
-\contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{73}{part.5}
+\contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{71}{part.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Concluding Remarks}}{75}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Concluding Remarks}}{73}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Bibliography}{77}{section*.17}
+\contentsline {chapter}{Bibliography}{75}{section*.17}
 \vspace {\cftbeforechapterskip }
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Index}{79}{section*.19}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  9 DEC 2015 12:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  9 DEC 2015 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1669,46 +1669,46 @@ Normal \count register pool exhausted, switching to extended pool.
 \myboxblockteststar=\box91
 \myboxblocktestend=\box92
 
-Overfull \hbox (28.86217pt too wide) in paragraph at lines 257--257
-[][][][]\T1/cmr/bx/n/24.88 1  
- []
-
-
-Overfull \hbox (28.86217pt too wide) in paragraph at lines 258--258
-[][][][]\T1/cmr/bx/n/24.88 2  
- []
-
-
 Overfull \hbox (28.86217pt too wide) in paragraph at lines 259--259
-[][][][]\T1/cmr/bx/n/24.88 3  
- []
-
-
-Overfull \hbox (28.86217pt too wide) in paragraph at lines 261--261
 [][][][]\T1/cmr/bx/n/24.88 1  
  []
 
 
-Overfull \hbox (28.86217pt too wide) in paragraph at lines 261--261
+Overfull \hbox (28.86217pt too wide) in paragraph at lines 260--260
 [][][][]\T1/cmr/bx/n/24.88 2  
  []
 
 
-Overfull \hbox (28.86217pt too wide) in paragraph at lines 262--262
+Overfull \hbox (28.86217pt too wide) in paragraph at lines 261--261
 [][][][]\T1/cmr/bx/n/24.88 3  
  []
 
 
-Overfull \hbox (28.86217pt too wide) in paragraph at lines 262--262
+Overfull \hbox (28.86217pt too wide) in paragraph at lines 263--263
+[][][][]\T1/cmr/bx/n/24.88 1  
+ []
+
+
+Overfull \hbox (28.86217pt too wide) in paragraph at lines 263--263
 [][][][]\T1/cmr/bx/n/24.88 2  
  []
 
 
-Overfull \hbox (28.86217pt too wide) in paragraph at lines 262--262
+Overfull \hbox (28.86217pt too wide) in paragraph at lines 264--264
+[][][][]\T1/cmr/bx/n/24.88 3  
+ []
+
+
+Overfull \hbox (28.86217pt too wide) in paragraph at lines 264--264
+[][][][]\T1/cmr/bx/n/24.88 2  
+ []
+
+
+Overfull \hbox (28.86217pt too wide) in paragraph at lines 264--264
 [][][][]\T1/cmr/bx/n/24.88 1  
  []
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 340.
+Package hyperref Info: Option `colorlinks' set `true' on input line 342.
 \abntex2-modelo-trabalho-academico@idxfile=\write5
 \openout5 = `abntex2-modelo-trabalho-academico.idx'.
 
@@ -1722,35 +1722,35 @@ LaTeX Warning: Unused global option(s):
 ) (./chapters/chapter05.aux))
 \openout1 = `abntex2-modelo-trabalho-academico.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 363.
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 363.
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 363.
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 363.
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 363.
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 363.
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 363.
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 363.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 363.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 365.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 365.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 363.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 365.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box93
-Package hyperref Info: Link coloring ON on input line 363.
+Package hyperref Info: Link coloring ON on input line 365.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1762,18 +1762,18 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 363.
-LaTeX Info: Redefining \ref on input line 363.
-LaTeX Info: Redefining \pageref on input line 363.
-LaTeX Info: Redefining \nameref on input line 363.
-LaTeX Info: Redefining \degres on input line 363.
+LaTeX Info: Redefining \nameref on input line 365.
+LaTeX Info: Redefining \ref on input line 365.
+LaTeX Info: Redefining \pageref on input line 365.
+LaTeX Info: Redefining \nameref on input line 365.
+LaTeX Info: Redefining \degres on input line 365.
 
 Package frenchb.ldf Warning: The definition of \@makecaption has been changed,
 (frenchb.ldf)                frenchb will NOT customise it;
-(frenchb.ldf)                reported on input line 363.
+(frenchb.ldf)                reported on input line 365.
 
-LaTeX Info: Redefining \dots on input line 363.
-LaTeX Info: Redefining \up on input line 363.
+LaTeX Info: Redefining \dots on input line 365.
+LaTeX Info: Redefining \up on input line 365.
 \myptabbox=\box94
 \myptabboxwidth=\skip261
 Package lastpage Info: Please have a look at the pageslts package at
@@ -1782,7 +1782,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 363.
+(lastpage)             ! on input line 365.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count280
@@ -1811,7 +1811,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 363.
+LaTeX Info: Redefining \microtypecontext on input line 365.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1827,7 +1827,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 380.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 382.
 
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1841,42 +1841,42 @@ Package microtype Info: Loading generic settings for font family
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 389.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 391.
 
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 389.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 391.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 389
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 391
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 389
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 391
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 389.
+(Font)              <12> on input line 391.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 389.
+(Font)              <8> on input line 391.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 389.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 389.
+(Font)              <6> on input line 391.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 391.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 389.
+LaTeX Font Info:    Try loading font information for U+msa on input line 391.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1884,7 +1884,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 389.
+LaTeX Font Info:    Try loading font information for U+msb on input line 391.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1895,41 +1895,41 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.389 
+l.391 
        [1
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 433--433
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--433
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
 
  []
 
 
-Overfull \hbox (16.6597pt too wide) in paragraph at lines 433--433
+Overfull \hbox (16.6597pt too wide) in paragraph at lines 435--435
 []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--433
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 433.
+(Font)              <10> on input line 435.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 433.
+(Font)              <7> on input line 435.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 433.
+(Font)              <5> on input line 435.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.481 
+l.483 
        [2] [3
 
 ] [4
@@ -1937,12 +1937,12 @@ l.481
 ] [5] [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 532--534
+Underfull \hbox (badness 10000) in paragraph at lines 534--536
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 537--538
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
 
  []
 
@@ -1953,7 +1953,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 537--538
 ] [9] [10
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 565--566
+Underfull \hbox (badness 10000) in paragraph at lines 567--568
 
  []
 
@@ -1978,92 +1978,91 @@ Package microtype Info: Loading generic settings for font family
 (./abntex2-modelo-trabalho-academico.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 10.
- [17]
-Underfull \vbox (badness 1584) has occurred while \output is active []
-
- [18])
-[19] [20
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 663--665
+ [17]) [18]
+Underfull \hbox (badness 10000) in paragraph at lines 665--667
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 666--667
+Underfull \hbox (badness 10000) in paragraph at lines 668--669
 
  []
 
-[21
+[19
 
-] [22
 
-] [23] [24]
+] [20
+
+] [21] [22]
 \openout2 = `chapters/chapter01.aux'.
 
  (./chapters/chapter01.tex
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-[25
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23
 
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 54.
- (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 55.
+
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
+Underfull \hbox (badness 10000) in paragraph at lines 70--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
-[26]
-Overfull \hbox (25.19913pt too wide) in paragraph at lines 77--79
+[24]
+Overfull \hbox (25.19913pt too wide) in paragraph at lines 78--80
 \T1/lmr/m/n/12 (-20) In the last few decades, Ar-ti-fi-cial In-tel-li-gence has
  made sig-nif-i-cant strides in domain$\OMS/lmsy/m/n/12 ^^@$\T1/lmr/m/n/12 (-20
 ) independent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
 
  []
 
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-[28]) [29
+[26]) [27
 
 
 
-] [30]
+] [28]
 \openout2 = `chapters/chapter02.aux'.
 
  (./chapters/chapter02.tex
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
 
-Overfull \hbox (5.75119pt too wide) in paragraph at lines 45--46
+Overfull \hbox (5.75119pt too wide) in paragraph at lines 47--48
 []\T1/lmr/m/n/12 (-20) A $\OML/lmm/m/it/12 SAS[]planning task$ \T1/lmr/m/n/12 (
 -20) ([][]BÄCK-STRÖM; NEBEL[][], [][]1995[][][]) is a 4 tu-ple $\OMS/lmsy/m/n/1
 2 r \OT1/lmr/m/n/12 (-20) = \OMS/lmsy/m/n/12 f\OML/lmm/m/it/12 V; O; I; G\OMS/l
@@ -2071,51 +2070,46 @@ msy/m/n/12 g\OML/lmm/m/it/12 :$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
-
- []
-
-[31
-
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
+[29
 
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-[32]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-Missing character: There is no [ in font nullfont!
-Missing character: There is no ] in font nullfont!
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-Missing character: There is no [ in font nullfont!
-Missing character: There is no ] in font nullfont!
- [33]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-[34]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+[30]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+Missing character: There is no [ in font nullfont!
+Missing character: There is no ] in font nullfont!
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+Missing character: There is no [ in font nullfont!
+Missing character: There is no ] in font nullfont!
+ [31]
 Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
-
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
@@ -2124,87 +2118,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-[35]
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+[33]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 278.
+(amsmath)                 on input line 280.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--280
+Underfull \hbox (badness 10000) in paragraph at lines 280--282
 
  []
 
-[36]
+[34]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
-
- []
-
-[37]
 Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
  []
 
-
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
 
  []
 
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 321--322
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 323--324
 
  []
 
 
 Underfull \vbox (badness 4036) has occurred while \output is active []
 
- [39]
-<images/sokoban_star_end.png, id=441, 639.38875pt x 196.735pt>
+ [37]
+<images/sokoban_star_end.png, id=430, 639.38875pt x 196.735pt>
 File: images/sokoban_star_end.png Graphic file (type png)
 
 <use images/sokoban_star_end.png>
-Package pdftex.def Info: images/sokoban_star_end.png used on input line 338.
+Package pdftex.def Info: images/sokoban_star_end.png used on input line 340.
 (pdftex.def)             Requested size: 319.69359pt x 98.36725pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
 
  []
 
-[40 <./images/sokoban_star_end.png>]) [41
+[38 <./images/sokoban_star_end.png>]) [39
 
 
 
-] [42]
+] [40]
 \openout2 = `chapters/chapter03.aux'.
 
  (./chapters/chapter03.tex
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-[43
+[41
 
 
 ]
-Overfull \hbox (12.83955pt too wide) in paragraph at lines 83--84
+Overfull \hbox (12.83955pt too wide) in paragraph at lines 85--86
 []\T1/lmr/m/n/12 (-20) We write $\OML/lmm/m/it/12 J\OT1/lmr/m/n/12 (-20) (\OML/
 lmm/m/it/12 ^^P[]\OT1/lmr/m/n/12 (-20) )$ \T1/lmr/m/n/12 (-20) or sim-ply $\OML
 /lmm/m/it/12 J$ \T1/lmr/m/n/12 (-20) in-stead of $\OML/lmm/m/it/12 J\OT1/lmr/m/
@@ -2214,50 +2213,50 @@ T1/lmr/m/n/12 (-20) . \T1/lmtt/m/n/12 RGHS \T1/lmr/m/n/12 (-20) is guar-an-teed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
 Underfull \vbox (badness 2042) has occurred while \output is active []
 
- [44]
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
-
- []
-
-
+ [42]
 Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
-[45]
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-
+[43]
 Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--153
-
- []
-
-[46]
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
+
+ []
+
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
-[47]
-Overfull \hbox (6.63968pt too wide) in paragraph at lines 195--196
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+[45]
+Overfull \hbox (6.63968pt too wide) in paragraph at lines 197--198
 []\T1/lmr/m/n/12 (-20) Let $\OML/lmm/m/it/12 f[]$ \T1/lmr/m/n/12 (-20) be the l
 argest $\OML/lmm/m/it/12 f\OMS/lmsy/m/n/12 ^^@$\T1/lmr/m/n/12 (-20) value ac-co
 rd-ing to $\OML/lmm/m/it/12 h[]$ \T1/lmr/m/n/12 (-20) en-coun-tered in the time
@@ -2265,27 +2264,22 @@ $\OMS/lmsy/m/n/12 ^^@$\T1/lmr/m/n/12 (-20) bounded
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
-[48] [49]
-Underfull \hbox (badness 10000) in paragraph at lines 298--299
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+[46] [47]
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
@@ -2294,13 +2288,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
-[50]
+
 Underfull \hbox (badness 10000) in paragraph at lines 311--312
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--346
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
 
  []
 
@@ -2309,30 +2303,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 347--348
 
  []
 
-[51]
+
 Underfull \hbox (badness 10000) in paragraph at lines 349--350
 
  []
 
-
+[49]
 Underfull \hbox (badness 10000) in paragraph at lines 351--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 
  []
 
-[52]
-Underfull \hbox (badness 10000) in paragraph at lines 363--365
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
+
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 365--367
 
  []
 
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 
-Overfull \hbox (15.57504pt too wide) in paragraph at lines 374--375
+Overfull \hbox (15.57504pt too wide) in paragraph at lines 376--377
 []\T1/lmr/m/n/12 (-20) Let's ex-plain how \T1/lmr/m/it/12 (-20) type sys-tem \T
 1/lmr/m/n/12 (-20) works through an ex-am-ple. The prob-lem of 8$\OMS/lmsy/m/n/
 12 ^^@$\T1/lmr/m/n/12 (-20) tile$\OMS/lmsy/m/n/12 ^^@$\T1/lmr/m/n/12 (-20) puzz
@@ -2340,7 +2339,7 @@ le
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--375
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
 
@@ -2356,20 +2355,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 374--375
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
-[53]
-Underfull \hbox (badness 10000) in paragraph at lines 414--417
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 416--419
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
-Underfull \hbox (badness 10000) in paragraph at lines 472--473
-
- []
-
-
+ [52]
 Underfull \hbox (badness 10000) in paragraph at lines 474--475
 
  []
@@ -2379,72 +2373,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 476--477
 
  []
 
-[55]
+
 Underfull \hbox (badness 10000) in paragraph at lines 478--479
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 481--483
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 484--485
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--492
+Underfull \hbox (badness 10000) in paragraph at lines 483--485
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 486--487
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
+
+ []
+
+[54]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 499.
+
+
+Overfull \hbox (16.40532pt too wide) in paragraph at lines 504--524
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--529
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
+
+ []
+
+[55]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 538.
+
+
+Overfull \hbox (22.56631pt too wide) in paragraph at lines 543--559
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 562--564
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
 
  []
 
 [56]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 497.
-
-
-Overfull \hbox (16.40532pt too wide) in paragraph at lines 502--522
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--527
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
-
- []
-
-[57]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 536.
-
-
-Overfull \hbox (22.56631pt too wide) in paragraph at lines 541--557
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 560--562
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 563--564
-
- []
-
-[58]
-Underfull \hbox (badness 10000) in paragraph at lines 603--604
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 605--606
 
  []
@@ -2454,106 +2448,111 @@ Underfull \hbox (badness 10000) in paragraph at lines 607--608
 
  []
 
-[59] <images/elevators-opt11-strips.jpeg, id=666, 481.8pt x 481.8pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--610
+
+ []
+
+[57] <images/elevators-opt11-strips.jpeg, id=655, 481.8pt x 481.8pt>
 File: images/elevators-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/elevators-opt11-strips.jpeg>
 Package pdftex.def Info: images/elevators-opt11-strips.jpeg used on input line 
-613.
+615.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/floortile-opt11-strips.jpeg, id=667, 481.8pt x 481.8pt>
+<images/floortile-opt11-strips.jpeg, id=656, 481.8pt x 481.8pt>
 File: images/floortile-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/floortile-opt11-strips.jpeg>
 Package pdftex.def Info: images/floortile-opt11-strips.jpeg used on input line 
-616.
+618.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/nomystery-opt11-strips.jpeg, id=668, 481.8pt x 481.8pt>
+<images/nomystery-opt11-strips.jpeg, id=657, 481.8pt x 481.8pt>
 File: images/nomystery-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/nomystery-opt11-strips.jpeg>
 Package pdftex.def Info: images/nomystery-opt11-strips.jpeg used on input line 
-619.
+621.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/parcprinter-opt11-strips.jpeg, id=669, 481.8pt x 481.8pt>
+<images/parcprinter-opt11-strips.jpeg, id=658, 481.8pt x 481.8pt>
 File: images/parcprinter-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/parcprinter-opt11-strips.jpeg>
 Package pdftex.def Info: images/parcprinter-opt11-strips.jpeg used on input lin
-e 624.
+e 626.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/pegsol-opt11-strips.jpeg, id=670, 481.8pt x 481.8pt>
+<images/pegsol-opt11-strips.jpeg, id=659, 481.8pt x 481.8pt>
 File: images/pegsol-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/pegsol-opt11-strips.jpeg>
-Package pdftex.def Info: images/pegsol-opt11-strips.jpeg used on input line 627
+Package pdftex.def Info: images/pegsol-opt11-strips.jpeg used on input line 629
 .
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/scanalyzer-opt11-strips.jpeg, id=671, 481.8pt x 481.8pt>
+<images/scanalyzer-opt11-strips.jpeg, id=660, 481.8pt x 481.8pt>
 File: images/scanalyzer-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/scanalyzer-opt11-strips.jpeg>
 Package pdftex.def Info: images/scanalyzer-opt11-strips.jpeg used on input line
- 630.
+ 632.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/sokoban-opt11-strips.jpeg, id=672, 481.8pt x 481.8pt>
+<images/sokoban-opt11-strips.jpeg, id=661, 481.8pt x 481.8pt>
 File: images/sokoban-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/sokoban-opt11-strips.jpeg>
 Package pdftex.def Info: images/sokoban-opt11-strips.jpeg used on input line 63
-5.
+7.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/tidybot-opt11-strips.jpeg, id=673, 481.8pt x 481.8pt>
+<images/tidybot-opt11-strips.jpeg, id=662, 481.8pt x 481.8pt>
 File: images/tidybot-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/tidybot-opt11-strips.jpeg>
-Package pdftex.def Info: images/tidybot-opt11-strips.jpeg used on input line 63
-8.
+Package pdftex.def Info: images/tidybot-opt11-strips.jpeg used on input line 64
+0.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/transport-opt11-strips.jpeg, id=674, 481.8pt x 481.8pt>
+<images/transport-opt11-strips.jpeg, id=663, 481.8pt x 481.8pt>
 File: images/transport-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/transport-opt11-strips.jpeg>
 Package pdftex.def Info: images/transport-opt11-strips.jpeg used on input line 
-641.
+643.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/visitall-opt11-strips.jpeg, id=675, 481.8pt x 481.8pt>
+<images/visitall-opt11-strips.jpeg, id=664, 481.8pt x 481.8pt>
 File: images/visitall-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/visitall-opt11-strips.jpeg>
 Package pdftex.def Info: images/visitall-opt11-strips.jpeg used on input line 6
-46.
+48.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/woodworking-opt11-strips.jpeg, id=676, 481.8pt x 481.8pt>
+<images/woodworking-opt11-strips.jpeg, id=665, 481.8pt x 481.8pt>
 File: images/woodworking-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/woodworking-opt11-strips.jpeg>
 Package pdftex.def Info: images/woodworking-opt11-strips.jpeg used on input lin
-e 649.
+e 651.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60 <./images/elevators-opt11-strips.jpeg> <./images/floortile-opt11-strips.jp
+ [58 <./images/elevators-opt11-strips.jpeg> <./images/floortile-opt11-strips.jp
 eg> <./images/nomystery-opt11-strips.jpeg> <./images/parcprinter-opt11-strips.j
 peg> <./images/pegsol-opt11-strips.jpeg> <./images/scanalyzer-opt11-strips.jpeg
 > <./images/sokoban-opt11-strips.jpeg> <./images/tidybot-opt11-strips.jpeg> <./
 images/transport-opt11-strips.jpeg> <./images/visitall-opt11-strips.jpeg> <./im
-ages/woodworking-opt11-strips.jpeg>] [61]) [62
+ages/woodworking-opt11-strips.jpeg>] [59]) [60
 
 
 
-] [63] [64]
+] [61] [62]
 \openout2 = `chapters/chapter04.aux'.
 
  (./chapters/chapter04.tex
@@ -2564,116 +2563,119 @@ LABELS NOT IMPORTED.
  on input line 27.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 41.
+               Default added (so using `tbp') on input line 44.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
- []
-
-[65
-
-
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--72
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-[66]
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [67]
+ [63
+
+
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 71.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
-[68]
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+[66]
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Overfull \hbox (7.40154pt too wide) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+
+Overfull \hbox (7.40154pt too wide) in paragraph at lines 100--101
 []\T1/lmr/m/n/12 (-20) We com-pare the cov-er-age of the \T1/lmtt/m/n/12 RGHS \
 T1/lmr/m/n/12 (-20) ap-proaches with sev-eral other state$\OMS/lmsy/m/n/12 ^^@$
 \T1/lmr/m/n/12 (-20) of$\OMS/lmsy/m/n/12 ^^@$\T1/lmr/m/n/12 (-20) the$\OMS/lmsy
@@ -2681,66 +2683,66 @@ T1/lmr/m/n/12 (-20) ap-proaches with sev-eral other state$\OMS/lmsy/m/n/12 ^^@$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69]
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+ [67]
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
-Overfull \hbox (11.2803pt too wide) in paragraph at lines 113--134
+Overfull \hbox (11.2803pt too wide) in paragraph at lines 116--137
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
-[70]
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
+[68]
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
-[71]) [72
+[69]) [70
 
 
 
-] [73] [74]
+] [71] [72]
 \openout2 = `chapters/chapter05.aux'.
 
  (./chapters/chapter05.tex
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-[75
+[73
 
 
 ]) (./abntex2-modelo-trabalho-academico.bbl
@@ -2748,19 +2750,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 \tf@brf=\write6
 \openout6 = `abntex2-modelo-trabalho-academico.brf'.
 
- [76
+ [74
 
 
 
 ]
 bibitemlist
-[77]) (./abntex2-modelo-trabalho-academico.ind [78] [79
-
-
-
-])
+[75]) (./abntex2-modelo-trabalho-academico.ind)
 
 AED: lastpage setting LastPage
+[76]
 \tf@lof=\write7
 \openout7 = `abntex2-modelo-trabalho-academico.lof'.
 
@@ -2770,28 +2769,28 @@ AED: lastpage setting LastPage
 \tf@toc=\write9
 \openout9 = `abntex2-modelo-trabalho-academico.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 850.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 850.
-(./abntex2-modelo-trabalho-academico.aux (./chapters/chapter01.aux)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 852.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 852.
+ (./abntex2-modelo-trabalho-academico.aux (./chapters/chapter01.aux)
 (./chapters/chapter02.aux) (./chapters/chapter03.aux) (./chapters/chapter04.aux
 ) (./chapters/chapter05.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 850.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 850.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 852.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 852.
 Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
 ot changed.
-(rerunfilecheck)             Checksum: CFD14CF99C1F856F4768235CE37F3906;2846.
+(rerunfilecheck)             Checksum: ADE2B9CA8F83FDD2DB0418D6233873A0;2846.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 850.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 852.
  ) 
 Here is how much of TeX's memory you used:
- 32052 strings out of 493304
- 590257 string characters out of 6139870
- 935485 words of memory out of 5000000
+ 32044 strings out of 493304
+ 590180 string characters out of 6139870
+ 935489 words of memory out of 5000000
  34341 multiletter control sequences out of 15000+600000
- 129312 words of font info for 227 fonts, out of 8000000 for 9000
+ 129054 words of font info for 225 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  87i,25n,123p,2126b,779s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -2818,11 +2817,11 @@ are/texmf/fonts/type1/public/lm/lmtti10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public
 /cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (81 pages, 910495 bytes
+Output written on abntex2-modelo-trabalho-academico.pdf (78 pages, 907689 bytes
 ).
 PDF statistics:
- 1226 PDF objects out of 1440 (max. 8388607)
- 1090 compressed objects within 11 object streams
- 258 named destinations out of 1000 (max. 500000)
- 43625 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1204 PDF objects out of 1440 (max. 8388607)
+ 1071 compressed objects within 11 object streams
+ 254 named destinations out of 1000 (max. 500000)
+ 43617 words of extra memory for PDF output out of 51595 (max. 10000000)
 
