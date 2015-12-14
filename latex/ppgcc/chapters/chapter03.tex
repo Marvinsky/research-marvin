@@ -296,11 +296,6 @@ The \textit{type system} can not be represented as a graph since \textit{type sy
 
 The relation between \textit{type system} and abstractions is the following: The \textit{type system} can not necessarily be used as abstractions, abstractions can always be used as \textit{type system}.
 
-\subsection{Search Space and Search Tree}
-\cite{lelis2013predicting} defines the search space and search tree in the following way: Let the \textit{underlying search tree} (\textit{UST}) be the full brute$-$force tree created from a connected, undirected and implicitely defined \textit{underlying search graph} (\textit{USG}) describing a state space. Some search algorithms expand a subtree of the \textit{UST} while searching for a solution (\textsf{e.g.,} a portion of the \textit{UST} might not be expanded due to heuristic guidance); we call this subtree the \textit{expanded search tree} \textit{(EST)}.\\
-
-Let $G = (N,E)$ be a graph representing an \textit{ESG} where $N$ is its set of states and for each $n \in N op(n) = {op_{i}|(n, n_i) \in E}$ is its set of operators.
-
 \theoremstyle{definition}
 \begin{definition}{Type System}
 Let S = (N,E) be a UST. $T = \{t_{1},...,t_{n} \}$ is a type system for S if it is a disjoint partitioning of N. If $n \in N$ and $t \in T$ with $n \in t$, we write $T(n) = t$.

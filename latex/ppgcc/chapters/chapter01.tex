@@ -30,12 +30,36 @@
 \iffalse
 \chapterprecis{The purpose of this section if to motivate the problem.}\index{sinopse de capítulo}
 \fi
+
+\section{Search Space and Search Tree Formulation}
+\cite{lelis2013predicting} defines the search space and search tree in the following way: Let the \textit{underlying search tree} (\textit{UST}) be the full brute$-$force tree created from a connected, undirected and implicitely defined \textit{underlying search graph} (\textit{USG}) describing a state space. Some search algorithms expand a subtree of the \textit{UST} while searching for a solution (\textsf{e.g.,} a portion of the \textit{UST} might not be expanded due to heuristic guidance); we call this subtree the \textit{expanded search tree} \textit{(EST)}.\\
+
+In this dissertation our methods require to estimate the size of the subgraph expanded by an algorithm searching the \textit{USG}; and the subgraph expanded recieve the name of expanded search graph. \textit{ESG}.\\
+
+Let $G = (N,E)$ be a graph representing an \textit{ESG} where $N$ is its set of states and for each $n \in N\  op(n) = {op_{i}|(n, n_i) \in E}$ is its set of operators. The term edges and operators are used interchangeably and work as a successor function which recieves as input a state and action and returns another state.\\
+
+Many search algorithms, such as IDA$\sp{*}$ \cite{Korf85ida}, expand a tree while searching the state space. By contrast, A$\sp{*}$ using a consistent heuristic expands a graph while searching the state space. The distinction between trees and graphs is important: Multiple nodes in a search tree might represent the same state in a search graph. In consequence, the tree might be substantially larger than the graph.\\
+
+The purpose of using a search algorithm is to solve the problem or find the solution. We are insterested in finding a sequence of actions that goes from the start state to the goal state. To solve the problem is required the use of search algorithms. Two well know search algorithms are Depth First Search (\texttt{DFS}) and Breadth First Search (\texttt{BFS}). \texttt{DFS} looks for the solution traversing the search space exploring the nodes in each branch before backtracking up to find the solution. \texttt{BFS} looks for the solution exploring the neighbors nodes first, before moving to the next level of neighbors. Both search algorithms have the characteristic that generate a larger search space during the search. The search space that these algorithms generate are called Brute force search tree (\texttt{BFST}).\\
+
+There are other type of algorithms called heuristic search algorithms, which are algorithms that requires the use of heuristics. The heuristic is the estimation of the distance for one node in the search tree to get the goal state. The heuristic search algorithms generate smaller search tree in comparison to the \texttt{BFST}, because the heuristic guides the search to more promising parts of the state space. Also, by reducing the search tree size, the heuristic function guidance might also reduce the overall running time of the algorithm.
+
+There are different approaches to create heuristics, such as: Pattern Databases (\texttt{PDBs}) \cite{haslum2007domain}, Neural Network, and Genetic Algorithm \cite{edelkamp2007automated}. We call these systems Heuristic Generators. And one of the approaches that have showed most successfull results in heuristic generation is the \texttt{PDBs}, which are memory$-$based heuristic functions obtained by abstracting away certain problem variables, so that the remaining problem ``patten‘’ is small enough to be solved optimally for every state by blind exhaustive search. The results of such a blind search are stored in a table which represents a heuristic function for the original problem.
+
+
+
+
 % ---
 \section{Problem Statement and Motivation}
 % ---
-
 \noindent
-Every problem of Artificial Intelligent can be cast as a state space problem. The state space is a set of states where each state represent a possible solution to the problem and each state is linked with other states if exists a function that goes from one state to another. In the search space there are many solutions that represent the same state, each of this solutions are called node. So, many nodes can be represented as one state. To find the solution of the problem is required the use of search algorithms such as: Depth First Search (\texttt{DFS}), which looks the solution of the problem traversing the search space exploring the nodes in each branch before backtracking up to find the solution. Another search algorithm is Breadth First Search (\texttt{BFS}), which looks for the solution exploring the neighbors nodes first, before moving to the next level of neighbors. The mentioned algorithms have the characteristic that when they do the search, they generate a larger search space. The search space that these algorithms generate are called Brute force search tree (\texttt{BFST}). \\
+Many real$-$world problems can be cast as state-space search problem.
+
+
+Explain the function that recieves input a state and action and returns another state.
+
+
+
 
 There are other types of algorithms called heuristics informed search, which are algorithms that requires the use of heuristics. The heuristic is the estimation of the distance for one node in the search tree to get to the near solution. The heuristic informed search generates smaller search tree in comparison to the \texttt{BFST}, because the heuristic guides the search exploring the nodes that are in the solution path and prunes the nodes which are not. Also, the use of heuristics reduce the running time of the search algorithm. \\
 
