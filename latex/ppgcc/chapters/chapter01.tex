@@ -34,7 +34,7 @@
 \section{Search Space and Search Tree Formulation}
 \cite{lelis2013predicting} defines the search space and search tree in the following way: Let the \textit{underlying search tree} (\textit{UST}) be the full brute$-$force tree created from a connected, undirected and implicitely defined \textit{underlying search graph} (\textit{USG}) describing a state space. Some search algorithms expand a subtree of the \textit{UST} while searching for a solution (\textsf{e.g.,} a portion of the \textit{UST} might not be expanded due to heuristic guidance); we call this subtree the \textit{expanded search tree} \textit{(EST)}.\\
 
-In this dissertation our methods require to estimate the size of the subgraph expanded by an algorithm searching the \textit{USG}; and the subgraph expanded recieve the name of expanded search graph. \textit{ESG}.\\
+In this dissertation our methods require to estimate the size of the subgraph expanded by an algorithm searching the \textit{USG}; and the subgraph expanded recieve the name of expanded search graph \textit{ESG}.\\
 
 Let $G = (N,E)$ be a graph representing an \textit{ESG} where $N$ is its set of states and for each $n \in N\  op(n) = {op_{i}|(n, n_i) \in E}$ is its set of operators. The term edges and operators are used interchangeably and work as a successor function which recieves as input a state and action and returns another state.\\
 
@@ -57,9 +57,9 @@ The objective of this dissertation is to develop meta-reasoning approaches for s
 \noindent
 
 \begin{itemize}
-  \item Demostrate that the problem of finding the optimal subset of $\zeta$ of size $N$ for a given problem task is supermodular respect the size of the search tree.
+  \item Demostrate that the problem of finding the optimal subset of heuristics $\zeta\sp{*}$ of size $N$ for a given problem task is supermodular respect the size of the search tree.
   
-  \item Develop an approach to find a subset of heuristics from a large pool of heuristics that optimize the number of nodes expanded in the process of search.
+  \item Develop an approach to find a subset of heuristics from a large pool of heuristics $\zeta$ that optimize the number of nodes expanded in the process of search.
   
   \item Develop an approach for selecting a subset of heuristics functions based on the size of the search tree and running time.
 
@@ -92,7 +92,7 @@ We test the following hypothesis:
 
 \section{Contribution of the Dissertation}
 \noindent
-The main contributions of this Thesis are:
+The main contributions of this Dissertation are:
 \begin{itemize}
 \item Provide a meta-reasoning approach for selecting heuristic functions while minimizing the number of nodes expanded by the selecting heuristics.
 
@@ -101,12 +101,12 @@ The main contributions of this Thesis are:
 
 \section{Organization of the Dissertation}
 \noindent
-The Thesis is organized as follows: 
+The Dissertation is organized as follows: 
 \begin{enumerate}
-\item In Chapter I, the background of the thesis is provided which also includes our motivation and define the scope. 
+\item In Chapter I, the background of the dissertation is provided. Which also includes our motivation and the scope definition.
 \item In Chapter II, we review the state of the art in selection of heuristic functions.
 \item In Chapter III, we introduce Random Greedy Heuristic Selection (\texttt{RGHS}) and the prediction methods. 
-\item In Chapter IV, we explain the results obtained by using \texttt{GRHS} and compare it with other planner systems.
+\item In Chapter IV, we explain the results obtained by using \texttt{RGHS} and compare it with other planner systems.
 \item We conclude in Chapter V.
 \end{enumerate}
 
