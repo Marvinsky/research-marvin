@@ -44,7 +44,7 @@ In our experiments we implemented an approximation procedure to automatically ch
 \begin{table}[]
 \centering
 \caption{Ratios of the number of nodes expanded using $h_{max}(\zeta\sp{'})$ to the number of nodes expanded using $h_{max}(\zeta)$}
-\begin{tabular}{lcccccc}
+\begin{tabular}{lrrrrrr}
 \hline
 \multirow{2}{*}{Domain} & \multicolumn{2}{c}{\texttt{SS}} & \multicolumn{2}{c}{\texttt{CS}}   & \multirow{2}{*}{|$\zeta$|} & \multirow{2}{*}{n} \\ \cline{2-5}
                         & Ratio    & |$\zeta\sp{'}$|   & Ratio  & |$\zeta\sp{'}$| &                            &                    \\ \hline
@@ -113,7 +113,7 @@ The system that solves the largest number of instances is \texttt{Hybrid}$-$ it 
 \footnotesize\setlength{\tabcolsep}{1.8pt}
 \centering
 \caption{Coverage of different planning systems on the 2011 \texttt{IPC} benchmarks. For the \texttt{RGHS} and \texttt{Max} approaches we also present the average number of heuristics \texttt{RGHS} selects (|$\zeta\sp{'}$|).}
-\begin{tabular}{lccccccccccccccc}
+\begin{tabular}{lrrrrrrrrrrrrrrr}
 \hline
 \multirow{2}{*}{Domains} & \multirow{2}{*}{\texttt{Hybrid}} & \multicolumn{2}{c}{\texttt{CS}} & \multicolumn{2}{c}{\texttt{SS}} & \multirow{2}{*}{\texttt{Sum}} & \multirow{2}{*}{RIDA$\sp{*}$} & \multirow{2}{*}{SY1} & \multirow{2}{*}{SY2} & \multirow{2}{*}{StSp1} & \multirow{2}{*}{StSp2} & \multirow{2}{*}{\texttt{Max}} & \multirow{2}{*}{iPDB} & \multirow{2}{*}{LM-Cut} & \multirow{2}{*}{M$\&$S} \\ \cline{3-6}
                          &                                    & \texttt{Time} & \texttt{Size} & \texttt{Time} & \texttt{Size} &                                 &                       &                      &                      &                        &                        &                                 &                       &                         &                         \\ \hline
@@ -163,11 +163,12 @@ The Table \ref{tb:comparison} shows how the relative$-$error behavies when \text
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
 \begin{table}[]
-\footnotesize\setlength{\tabcolsep}{1.2pt}
+%\footnotesize\setlength{\tabcolsep}{1.2pt}
+\tiny\setlength{\tabcolsep}{2pt}
 \centering
 \caption{Comparison between \texttt{SS} and IDA$\sp{*}$ for 1, 10, 100, 1000 and 5000 probes using $hmax$ heuristic.}
 \label{tb:comparison}
-\begin{tabular}{lccccccccccccc}
+\begin{tabular}{lrrrrrrrrrrrrr}
 \hline
 \multirow{3}{*}{Domain} & \multicolumn{13}{c}{$hmax$}                                                                                                                     \\ \cline{2-14} 
                         & \multirow{2}{*}{IDA$\sp{*}$} & \multirow{2}{*}{time} & \multicolumn{5}{c}{relative$-$error} & \multicolumn{5}{c}{time}   & \multirow{2}{*}{n} \\ \cline{4-13}
@@ -206,7 +207,7 @@ For Barman: Using M$\&$S, A$\sp{*}$ expands in average 6.67e$+$06 which is less 
 \centering
 \caption{Poor prediction of SS against A* using ipdb, \texttt{LM-Cut} and M$\&$S with 500 probes}
 \label{tb:ipdb_lmcut_mands}
-\begin{tabular}{lC{2cm}C{2cm}C{2cm}C{2cm}C{2cm}C{2cm}C{2cm}}
+\begin{tabular}{lR{2cm}R{2cm}R{2cm}R{2cm}R{2cm}R{2cm}C{2cm}}
 \hline
 \multirow{2}{*}{Domain} & \multicolumn{2}{c}{ipdb} & \multicolumn{2}{c}{\texttt{LM-Cut}} & \multicolumn{2}{c}{M$\&$S} & \multirow{2}{*}{n} \\ \cline{2-7}
                      & A*          & SS$-$error         & A*                & SS$-$error                & A*           & SS$-$error          &                    \\ \hline
