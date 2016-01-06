@@ -154,7 +154,7 @@ In order to solve the problem, we get the heuristics, which are information from
 Heuristic Generators works by creating abstractions of the original problem space. The approach that has showed more successful results lately is \texttt{PDB}.
 
 \subsection{Pattern Database (PDB)}
-It's obtained by abstracting away certain problem variables, so that the remaining problem ("pattern") is small enough to be solved optimally for every state by blind exhaustive search. The results stored in a table, represent a PDB for the original problem. The abstraction of the search space gives an admissible heuristic function, mapping states to lower bounds.
+It's obtained by abstracting away certain problem variables, so that the remaining problem (``pattern‘’) is small enough to be solved optimally for every state by blind exhaustive search. The results stored in a table, represent a PDB for the original problem. The abstraction of the search space gives an admissible heuristic function, mapping states to lower bounds.
 
 \section{Take advantage of Heuristics}
 The heuristic generators can create hundreds or even thousand of heuristics. In fact, exists different ways to take advantage of those heuristics. For example: If we want to use all the heuristics created by the heuristic generator. It would not be a good idea to use all of them because the main problem involved would be the time to evaluate each heuristic in the search tree, it could take too much time. \\
@@ -168,7 +168,10 @@ Let's suppose we have to run our meta-reasoning using $M$ amount of memory avail
 
 \cite{holte2006maximizing} observed that maximizing over $N$ pattern databases of size $M/N$, for a suitable choice $N$, produces a significant reduction in the number of nodes generated compared to using a single pattern database of size $M$.\\
 
+\if false
+
 In the Figures \ref{fig:image2mem} and \ref{fig:image3mem} we are taking advantange of the heuristics doing the maximization of all the heuristics created. In this dissertation we are interested in heuristics that generate smaller search tree.
+
 
 \begin{figure}[htb]
   \centering
@@ -276,6 +279,8 @@ In the Figures \ref{fig:image2mem} and \ref{fig:image3mem} we are taking advanta
   \caption{N heuristics of size M/N}\label{fig:image3mem}
 \end{figure}
 
+\fi
+
 \section{Heuristic Subset}
 The heuristic generators systems can create a large number of heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best N $=$ 100 heuristics. This would be: $${1000\choose 100} \approx 10\sp{138} possibilities$$
 So, try to select heuristics from a large set of heuristics are going to be treated as an optimization problem. Then, in order to obtain a good selection of subset of heuristics, our objective function should guarantee two properties: Monotonicity and Submodularity, that would be explained in the next Chapter. \\
@@ -339,7 +344,7 @@ This domain is inspired by the popular Sokoban puzzle game where an agent has th
 \begin{center}
   \includegraphics[width=12cm,scale=0.5]{images/sokoban_star_end}
 \end{center}
-\caption{Sokoban with four blocks solved}\label{fig:img_sokoban_solved}
+\caption{Sokoban with four blocks solved <http://sokoban.info/?5>}\label{fig:img_sokoban_solved}
 \end{figure}
 
 

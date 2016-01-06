@@ -356,6 +356,8 @@ C_{B} = \sum_{\left\langle n,w \right\rangle \in A \wedge B(n) = B}w
 
 We recall that to compute $B(n)$ for node $n$ one needs to define a bound $b$. Here we use the bound $d$ used by \texttt{SS}. The average value of $C_{B}$ across $p$ probes is used to predict the search tree size for a given subset $\zeta\sp{'}$. As explained for \texttt{CS}, this can be done by traversing over all b$-$culprits once.\\
 
+\if false
+
 \section{8-tile-puzzle Case Using type system}
 \noindent
 In this dissertation we use \textit{type system} based only in heuristics.\cite{zahavi2010predicting} use the simpliest heuristic$-$based \textit{type system} in which two nodes $n$ and $n\sp{'}$ are of the same type if they have the same heuristic value. \\
@@ -406,6 +408,8 @@ In the Figure \ref{fig:empty_space_ts}, each row represent a type. The first boa
 \end{forest}
 \caption{Each row has one or two states that represent the same type.} \label{fig:empty_space_ts}
 \end{figure}
+
+\fi
 
 \section{SS step by step}
 \noindent
@@ -474,6 +478,8 @@ When nodes in the Level 3 are expanded. They are expanded in the following way: 
 
 Finally, the number of nodes expanded in the search tree is obtained summing all $w$ plus one (The root node). As a result, the number of nodes expanded in the search tree would be $ 15 + 1 = 16$.\\
 
+
+\if false
 \section{Comparison between SS and IDA*}
 \noindent
 \texttt{SS} is an algorithm that estimates the number of nodes expanded performed by heuristic search algorithm seeking solutions in state space. We apply \texttt{SS} to predict the number of nodes expanded by IDA$\sp{*}$ in a given $f-$layer when using a consistent heuristics.\\
@@ -673,6 +679,6 @@ Woodworking & 100.00   \\ \hline
 \label{tb:per_ss_made_correctly}
 \end{table}
 
-
+\fi
 
 \clearpage
