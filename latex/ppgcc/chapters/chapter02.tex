@@ -34,11 +34,11 @@
 % ---
 
 \noindent
-An optimization procedure which is similar to ours is presented by \cite{raynersss13}, but their procedure maximizes the average heuristic value. By contrast, the meta$-$reasoning we are proposing minimizes the search tree size.\\
+An optimization procedure which is similar to ours is presented by \cite{raynersss13}, but their procedure maximizes the average heuristic value. By contrast, the meta-reasoning we are proposing minimizes the search tree size.\\
 
-Our meta$-$reasoning requires a prediction of the number of nodes expanded by A$\sp{*}$ using any given subset. Although there are methods for accurately predicting the number of nodes expanded by Iterative Deepening$-$A$\sp{*}$ \cite{Korf85ida} (ID$A\sp{*}$). (\texttt{SS} system  \cite{lelis2013predicting}), these methods can't be easily adapted to A$\sp{*}$ because A$\sp{*}$'s duplicate pruning makes it very difficult to predict how many nodes will occur at depth $d$ of $A\sp{*}$'s search tree (the tree of nodes expanded by $A\sp{*}$). As a part of our proposal, we present \texttt{SS} for predicting the size of the search tree.
+Our meta-reasoning requires a prediction of the number of nodes expanded by A$\sp{*}$ using any given subset. Although there are methods for accurately predicting the number of nodes expanded by Iterative Deepening$-$A$\sp{*}$ \cite{Korf85ida} (ID$A\sp{*}$). (\texttt{SS} system  \cite{lelis2013predicting}), these methods can't be easily adapted to A$\sp{*}$ because A$\sp{*}$'s duplicate pruning makes it very difficult to predict how many nodes will occur at depth $d$ of $A\sp{*}$'s search tree (the tree of nodes expanded by $A\sp{*}$). As a part of our proposal, we present \texttt{SS} for predicting the size of the search tree.
 
-The system most similar to ours is RIDA$\sp{*}$ \cite{BarleySantiagoOver}. RIDA$\sp{*}$ also selects a subset from a pool of heuristics to guide the $A\sp{*}$ search. In RIDA$\sp{*}$ this is done by starting with an empty subset and trying all combination of size one before trying the combination of size two and so on. RIDA$\sp{*}$ stops after evaluating a fixed number of subsets. While RIDA$\sp{*}$ is able to evaluate a set of heuristics with tens of elements, our meta$-$reasoning is able to evaluate a set of heuristics with thousands of elements.
+The system most similar to ours is RIDA$\sp{*}$ \cite{BarleySantiagoOver}. RIDA$\sp{*}$ also selects a subset from a pool of heuristics to guide the $A\sp{*}$ search. In RIDA$\sp{*}$ this is done by starting with an empty subset and trying all combination of size one before trying the combination of size two and so on. RIDA$\sp{*}$ stops after evaluating a fixed number of subsets. While RIDA$\sp{*}$ is able to evaluate a set of heuristics with tens of elements, our meta-reasoning is able to evaluate a set of heuristics with thousands of elements.
 
 % ---
 \section{Problem definition}
@@ -161,10 +161,10 @@ The heuristic generators can create hundreds or even thousand of heuristics. In 
 
 One way to take advantage of heuristics would be to take the maximum of the set of heuristics. For example, using three different heuristics $h1, h2$ and max($h1, h2$). Heuristic $h1$ and $h2$ are based on domain abstractions and the max($h1, h2$) is the maximum heuristic value of $h1$ and $h2$. \\
 
-Exists different approaches to take advantage from a large set of heuristics. In this dissertation we use the meta$-$reasoning based on the minimum size of the search tree generated and the minimum evaluation time. \\
+Exists different approaches to take advantage from a large set of heuristics. In this dissertation we use the meta-reasoning based on the minimum size of the search tree generated and the minimum evaluation time. \\
 
 \section{Number of heuristics created}
-Let's suppose we have to run our meta$-$reasoning using $M$ amount of memory available. Then, the question would be: How many heuristics our system should handle in order to avoid out of memory errors?. So, one of the objectives of this dissertation is to find the number of heuristics that our subset $\zeta\sp{'}$ should have.\\
+Let's suppose we have to run our meta-reasoning using $M$ amount of memory available. Then, the question would be: How many heuristics our system should handle in order to avoid out of memory errors?. So, one of the objectives of this dissertation is to find the number of heuristics that our subset $\zeta\sp{'}$ should have.\\
 
 \cite{holte2006maximizing} observed that maximizing over $N$ pattern databases of size $M/N$, for a suitable choice $N$, produces a significant reduction in the number of nodes generated compared to using a single pattern database of size $M$.\\
 
@@ -277,7 +277,7 @@ In the Figures \ref{fig:image2mem} and \ref{fig:image3mem} we are taking advanta
 \end{figure}
 
 \section{Heuristic Subset}
-The heuristic generators systems can create a large number of heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best N $=$ 100 heuristics. This would be: $${1000\choose 100} = 10\sp{138} possibilities$$
+The heuristic generators systems can create a large number of heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best N $=$ 100 heuristics. This would be: $${1000\choose 100} \approx 10\sp{138} possibilities$$
 So, try to select heuristics from a large set of heuristics are going to be treated as an optimization problem. Then, in order to obtain a good selection of subset of heuristics, our objective function should guarantee two properties: Monotonicity and Submodularity, that would be explained in the next Chapter. \\
 
 \section{Problem Domains}
@@ -347,6 +347,6 @@ This domain is inspired by the popular Sokoban puzzle game where an agent has th
 
 \bigskip
 
-In the next Chapter, we will introduce the meta$-$reasoning proposed for selecting heuristics and will expand on the properties of our objective functions.\\
+In the next Chapter, we will introduce the meta-reasoning proposed for selecting heuristics and will expand on the properties of our objective functions.\\
 
 \clearpage
