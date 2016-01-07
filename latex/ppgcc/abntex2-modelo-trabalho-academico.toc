@@ -32,9 +32,9 @@
 \contentsline {section}{\numberline {2.8}Problem Domains}{32}{section.2.8}
 \contentsline {subsection}{\numberline {2.8.1}Blocks world}{32}{subsection.2.8.1}
 \contentsline {subsection}{\numberline {2.8.2}Barman}{32}{subsection.2.8.2}
-\contentsline {subsection}{\numberline {2.8.3}Elevators}{32}{subsection.2.8.3}
+\contentsline {subsection}{\numberline {2.8.3}Elevators}{33}{subsection.2.8.3}
 \contentsline {subsection}{\numberline {2.8.4}Floortile}{33}{subsection.2.8.4}
-\contentsline {subsection}{\numberline {2.8.5}Nomystery}{33}{subsection.2.8.5}
+\contentsline {subsection}{\numberline {2.8.5}Nomystery}{34}{subsection.2.8.5}
 \contentsline {subsection}{\numberline {2.8.6}Openstacks}{34}{subsection.2.8.6}
 \contentsline {subsection}{\numberline {2.8.7}ParcPrinter}{34}{subsection.2.8.7}
 \contentsline {subsection}{\numberline {2.8.8}Parking}{34}{subsection.2.8.8}
