@@ -212,7 +212,7 @@ The value of \textit{\^{T}} is computed by multiplying \textit{\^{J}} by the sum
 \section{Stratified Sampling (SS)}
 Stratified Sampling is a prediction algorithm that estimate the number of nodes expanded by some heuristic.
 
-\cite{knuth1975Estimating} created a method to estimate the size of the search tree such as IDA$\sp{*}$. It works doing random walk from the root of the tree. Knuth's assumption is that all branches have the same structure. So, performing a random walk down one branch is enought to estimate the size of the search tree. However, the method does not work well for unbalanced search tree. \cite{chen1992heuristic}
+\cite{knuth1975Estimating} created a method to estimate the size of the search tree such as IDA$\sp{*}$. It works doing random walk from the root of the tree. Knuth's assumption is that all branches have the same structure. So, performing a random walk down one branch is enough to estimate the size of the search tree. However, the method does not work well for unbalanced search tree. \cite{chen1992heuristic}
  solved this problem with a stratification of the search tree through a \textit{type system} to reduce the variance of the sampling process \cite{lelis2013predicting}. In the figure \ref{fig:ss_ts} each state of the search space is mapped to the \textit{Type System}
 
 \begin{figure}[htb]
@@ -284,17 +284,13 @@ $\node [xshift=1cm,yshift=2cm] (A) at (5,1) {Type System};$
 \subsection{Type System}
 The \textit{Type System} is a partition of the states in the state space. It is calculated based of any property of each node in the search tree. \cite{Lelis2013CC}
 
-A common misconception is think of \textit{type system} as state$-$space abstractions. \cite{Prieditis93} defines a state$-$space abstraction as a simplified version of the problem in which:
+A common mistake about \textit{type system} is to think that it is an abstraction of the state$-$space. \cite{Prieditis93} defines a state$-$space abstraction as a simplified version of the problem where:
 \begin{itemize}
 \item The cost of the least$-$cost path between two abstracted states must less than or equal to the cost of the least$-$cost path between the corresponding two states in the original state$-$space.
 \item Goal states in the original state$-$space must be goal states in the abstracted state$-$space.
 \end{itemize}
 
-In contrast with state$-$space abstractions, a \textit{type system} does not have these two requeriments. A \textit{type system} is just a partition of the nodes in the search tree.
-
-The \textit{type system} can not be represented as a graph since \textit{type system} does not necessarily define relation between the types.
-
-The relation between \textit{type system} and abstractions is the following: The \textit{type system} can not necessarily be used as abstractions, abstractions can always be used as \textit{type system}.
+The difference between state$-$space abstractions and \textit{type system} is that the last one does not have the two requeriments mentioned above. As a \cite{Lelis2013CC} said, \textit{type system} is just a partition of the states in the state space. Also, there is not relation between types to argue that the \textit{type system} can be represented as a graph. Furthermore, the relation between \textit{type system} and abstractions is that \textit{type system} can not necessarily used as abstractions, and abstraction always can be used as a \textit{type system}.\\
 
 \theoremstyle{definition}
 \begin{definition}{Type System}
