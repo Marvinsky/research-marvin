@@ -34,11 +34,13 @@
 % ---
 
 \noindent
-An optimization procedure which is similar to ours is presented by \cite{raynersss13}, but their procedure maximizes the average heuristic value. By contrast, the meta-reasoning we are proposing minimizes the search tree size.\\
-
-Our meta-reasoning requires a prediction of the number of nodes expanded by A$\sp{*}$ using any given subset. Although there are methods for accurately predicting the number of nodes expanded by Iterative Deepening$-$A$\sp{*}$ \cite{Korf85ida} (IDA$\sp{*}$). (\texttt{SS} system  \cite{lelis2013predicting}), these methods can't be easily adapted to A$\sp{*}$ because A$\sp{*}$'s duplicate pruning makes it very difficult to predict how many nodes will occur at depth $d$ of $A\sp{*}$'s search tree (the tree of nodes expanded by $A\sp{*}$). As a part of our proposal, we present \texttt{SS} for predicting the size of the search tree.
-
 The system most similar to ours is RIDA$\sp{*}$ \cite{BarleySantiagoOver}. RIDA$\sp{*}$ also selects a subset from a pool of heuristics to guide the $A\sp{*}$ search. In RIDA$\sp{*}$ this is done by starting with an empty subset and trying all combination of size one before trying the combination of size two and so on. RIDA$\sp{*}$ stops after evaluating a fixed number of subsets. While RIDA$\sp{*}$ is able to evaluate a set of heuristics with tens of elements, our meta-reasoning is able to evaluate a set of heuristics with thousands of elements.
+
+An optimization procedure which is similar to ours is presented by \cite{raynersss13}. The optimization procedure done by Rayner et al. makes near-optimal subset selection only when the objective function is monotone. The problem is that if one sequentially add heuristics to $\zeta\sp{'}$, the cost of using another heuristic $h$ will not payoff for the extra prunning that $h$ will allow A$\sp{*}$ to make. As a result, A$\sp{*}$'s running time is a non-monotone objective function. Rayner et al. limited their experiments to an objective function that only maximize the sum of heuristic values in the state space.\\
+
+We propose an optimization procedure that guarantees for both monotone and non-monotone objective functions. Furthermore, while Rayner et al.'s optimization procedure is not directly applicable to domain-independent planning. We show how their method can be applied to domain independent planning by having Stratified Sampling to estimate the sum of heuristic values in the state space.\\
+
+Our meta-reasoning requires a prediction of the number of nodes expanded by A$\sp{*}$ using any given subset. The prediction system we choose is Stratified Sampling (\texttt{SS} system  \cite{lelis2013predicting}). Even though, \texttt{SS} give us good predictions for Iterative Deepening$-$A$\sp{*}$, it does not work very well predicting A$\sp{*}$ because it does not count duplicate nodes. However, as part of our proposal, we present \texttt{SS} for predicting the size of the search tree.\\
 
 % ---
 \section{Problem definition}
