@@ -151,10 +151,7 @@ Then the sum would be 10.
 In order to solve the problem, we get the heuristics, which are information from the problem to solve the problem. Exists systems that can create heuristics for each problem. Those systems are called Heuristic Generators.
 
 \section{Heuristic Generators}
-Heuristic Generators works by creating abstractions of the original problem space. The approach that has showed more successful results lately is \texttt{PDB}.
-
-\subsection{Pattern Database (PDB)}
-It's obtained by abstracting away certain problem variables, so that the remaining problem (``pattern‘’) is small enough to be solved optimally for every state by blind exhaustive search. The results stored in a table, represent a PDB for the original problem. The abstraction of the search space gives an admissible heuristic function, mapping states to lower bounds.
+Heuristic Generators works by creating abstractions of the original problem space. The approach that has showed more successful results lately is \texttt{PDB}. Which works the following way: The search space of the problem is abstracted, obtaining the remaining problem ``pattern‘’, which is small enough to be solved optimally by blind exhaustive search. The results are stored in a table which are the heuristic function for the original search space.\\
 
 \section{Take advantage of Heuristics}
 The heuristic generators can create hundreds or even thousand of heuristics. In fact, exists different ways to take advantage of those heuristics. For example: If we want to use all the heuristics created by the heuristic generator. It would not be a good idea to use all of them because the main problem involved would be the time to evaluate each heuristic in the search tree, it could take too much time. \\
