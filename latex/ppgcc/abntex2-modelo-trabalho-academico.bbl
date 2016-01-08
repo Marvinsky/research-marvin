@@ -77,17 +77,6 @@
   heuristic search.
 \emph{Artificial Intelligence}, Elsevier, v.~170, n.~16, p. 1123--1136, 2006.}
 
-\bibitem[Knuth 1975]{knuth1975Estimating}
-\abntrefinfo{Knuth}{KNUTH}{1975}
-{KNUTH, D.~E. Estimating the efficiency of backtrack programs.
-\emph{Mathematic of Computation}, v.~29, n.~129, p. 121--136, 1975.}
-
-\bibitem[Korf 1985]{Korf85ida}
-\abntrefinfo{Korf}{KORF}{1985}
-{KORF, R.~E. Depth-first iterative-deepening: An optimal admissible tree
-  search.
-\emph{Artificial Intelligence}, v.~27, p. 97--109, 1985.}
-
 \bibitem[Lelis, Otten e Dechter 2014]{lelis2014memory}
 \abntrefinfo{Lelis, Otten e Dechter}{LELIS; OTTEN; DECHTER}{2014}
 {LELIS, L.~H.; OTTEN, L.; DECHTER, R. Memory-efficient tree size prediction for

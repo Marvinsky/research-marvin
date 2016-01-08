@@ -432,10 +432,10 @@ OUTPUT chapters/chapter01.aux
 INPUT chapters/chapter01.tex
 INPUT chapters/chapter01.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss17.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT /usr/share/texmf/tex/latex/lm/ts1lmr.fd
 INPUT /usr/share/texmf/tex/latex/lm/ts1lmr.fd
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ts1-lmr12.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri10.tfm
 OUTPUT chapters/chapter02.aux
 INPUT chapters/chapter02.tex
 INPUT chapters/chapter02.tex

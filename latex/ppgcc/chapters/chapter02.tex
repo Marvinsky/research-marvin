@@ -40,7 +40,7 @@ An optimization procedure which is similar to ours is presented by \cite{rayners
 
 We propose an optimization procedure that guarantees for both monotone and non-monotone objective functions. Furthermore, while Rayner et al.'s optimization procedure is not directly applicable to domain-independent planning. We show how their method can be applied to domain independent planning by having Stratified Sampling to estimate the sum of heuristic values in the state space.\\
 
-Our meta-reasoning requires a prediction of the number of nodes expanded by A$\sp{*}$ using any given subset. The prediction system we choose is Stratified Sampling (\texttt{SS} system  \cite{lelis2013predicting}). Even though, \texttt{SS} give us good predictions for Iterative Deepening$-$A$\sp{*}$, it does not work very well predicting A$\sp{*}$ because it does not count duplicate nodes. However, as part of our proposal, we present \texttt{SS} for predicting the size of the search tree.\\
+Our meta-reasoning requires a prediction of the number of nodes expanded by A$\sp{*}$ using any given subset. The prediction system we choose is Stratified Sampling (\texttt{SS} system  \cite{lelis2013predicting}). Even though, \texttt{SS} give us good predictions for Iterative Deepening$-$A$\sp{*}$, it does not give us good predictions for A$\sp{*}$ because it does not count duplicate nodes. However, as part of our proposal, we present \texttt{SS} for predicting the size of the search tree.\\
 
 % ---
 \section{Problem definition}
@@ -48,7 +48,7 @@ Our meta-reasoning requires a prediction of the number of nodes expanded by A$\s
 
 A $SAS\sp{+} planning\ task$ \cite{backstrom1995complexity} is a 4 tuple $\nabla = \{V, O, I, G\}.$ \textit{V} is a set of \textit{state variables.} Each variable \textit{v} $\in$ \textit{V} is associated with a finite domain of possible $D_{\substack{v}}$. A state is an assignment of a value to every $v \in V.$ The set of possible states, denoted \textit{V}, is therefore $D_{\substack{v_{\substack{1}}}}    \times ... \times D_{\substack{v_{\substack{2}}}}$. \textit{O} is a set of operators, where each operator $o \in O$ is triple $\{pre_{\substack{o}} , post_{\substack{o}}, cost_{\substack{o}}\}$ specifying the preconditions, postconditions (effects), and non-negative cost of \textit{o}. $pre_{\substack{o}}\ and\ post_{\substack{o}}$ are assignments of values to subsets os variables, $V_{\substack{pre_{\substack{o}}}}\ and\ V_{\substack{post_{\substack{o}}}}$, respectively. Operator \textit{o} is applicable to state \textit{s} if \textit{s} and $pre_{\substack{o}}$ agree on the assignment of values to variables in $V_{\substack{pre_{\substack{o}}}}$. The effect of \textit{o}, when applied to \textit{s}, is to set the variables in $V_{\substack{post_{\substack{o}}}}$ to the values specified in $post_{\substack{o}}$ and to set all other variables to the value they have in \textit{s}. \textit{G} is the goal condition, an assignment of values to a subset of variables, $V_{\substack{G}}$. A state is a goal state if it and \textit{G} agree on the assignment of values to the variable in $V_{\substack{G}}$. \textit{I} is the initial state, and the planning task, $\nabla$, is to find an optimal (least-cost) sequence of operators leading from \textit{I} to a goal state. We denote the optimal solution cost of $\nabla$ as $C\sp{*}$ \\
 
-The state space problem illustrated in the figure \ref{fig:8tilepuzzle_begin} is a game that contains square tiles numbered in random order and one tile missing. The particular game showed is the 8-tile-puzzle, which contains 8 tiles numbered from 1 to 8 and one tile empty. The objective of this game is to place the tiles in order doing moves of the empty tile. For this case, the goal would be reached placing the tiles 1, 2 and 3 in the first row, and 4, 5 and 6 in the following row, and 7, 8 and empty tile in the last row.\\
+The state space problem illustrated in the figure \ref{fig:8tilepuzzle_begin} is a game that contains square tiles numbered in random order and one tile missing. The particular game showed is the 8-tile-puzzle, which contains 8 tiles numbered from 1 to 8 and one tile empty. The objective of this game is to place the tiles in order by doing moves of the empty tile. For this case, the goal would be reached placing the tiles 1, 2 and 3 in the first row, and 4, 5 and 6 in the following row, and 7, 8 and empty tile in the last row.\\
 
 \cite{Schaeffer:2002:GCA:512148.512149} Any tile horizontally or vertically adjacent to the blank can be slid into that position. The problem is to rearrange the tiles from some random initial configuration into a particular desired goal configuration. The 8$-$puzzle contains 181,440 reachable states, the 15$-$puzzle contains about $10\sp{13}$ reachable states, and the 24$-$puzzle contains almost $10\sp{25}$ states. \\
 
@@ -66,7 +66,7 @@ The state space problem illustrated in the figure \ref{fig:8tilepuzzle_begin} is
 Instead of using an algorithm of Brute force search that will analyze all the possible solutions. We can obtain heuristics from the problem of the slide tile puzzle that will help us to solve the problem.
 
 \section{Heuristics}
-State$-$space algorithms, such as A* \cite{hart1968formal}, are important in many \texttt{AI} applications. A* uses the $f(s) = g(s) + h(s)$ cost function to guide its search. Here, $g(s)$ is the cost of the path from the start state $s$, and $h(s)$ is the estimated cost$-$to$-$go from $s$ to the goal; $h(.)$ is known as the heuristic function. The heuristic is the mathematical concept that represent to the estimate distance from the node $s$ to the nearest goal state.
+Exists many State$-$space algorithms, and one of the most important and well know is A$\sp{*}$ \cite{hart1968formal}. It is important, because it helps to resolve many \texttt{AI} applications. A$\sp{*}$ uses the $f(s) = g(s) + h(s)$ cost function to guide its search. Where, $g(s)$ is the cost of the path from the start state $s$, and $h(s)$ is the estimated cost to go from $s$ to the goal; $h(.)$ is known as the heuristic function. The heuristic is the mathematical concept that represent to the estimate distance from the node $s$ to the nearest goal state.\\
 
 \begin{figure}[htb]
 \centering
@@ -98,7 +98,7 @@ State$-$space algorithms, such as A* \cite{hart1968formal}, are important in man
 \caption{Heuristic Search: \textit{I}: Initial State, \textit{s}: Some Sate, \textit{G}: Goal State} \label{fig:searchSpace}
 \end{figure}
 
-In the figure \ref{fig:searchSpace} the optimal distance from the Initial State $I$ to  the state $s$ is 4 and represented by $g(s)$. The $h\sp{*}(s)$ represent the optimal distance from $s$ to the Goal State $G$. And the $h(s)$ is the estimation distance from $s$ to $G$.
+In the figure \ref{fig:searchSpace} the optimal distance from the Initial State $I$ to  the state $s$ is 4 and represented by $g(s)$. The $h\sp{*}(s) = 3$ represent the optimal distance from $s$ to the Goal State $G$. And the $h(s) = 2$ is the estimation distance from $s$ to $G$.
 
 A heuristic function $h(s)$ estimates the cost of a solution path from $s$ to a goal state. A heuristic is admissible if $h(s) \leq h\sp{*}(s)$ for all $s \in V$, where $h\sp{*}(s)$ is the optimal cost of $s$. A heuristic is consisten iff $h(s) \leq c(s,t) + h(t)$ for all states $s$ and $t$, where $c(s,t)$ is the cost of the cheapest path from $s$ to $t$. For example, the heuristic function provided by a pattern database (\texttt{PDB}) heuristic \cite{culberson1998pattern} is admissible and consistent.
 
@@ -160,7 +160,7 @@ The heuristic generators can create hundreds or even thousand of heuristics. In 
 
 One way to take advantage of heuristics would be to take the maximum of the set of heuristics. For example, using three different heuristics $h1, h2$ and max($h1, h2$). Heuristic $h1$ and $h2$ are based on domain abstractions and the max($h1, h2$) is the maximum heuristic value of $h1$ and $h2$. \\
 
-If we have to choose which heuristic to use between $h1$ or $h2$ or max($h1, h2$)? The best answer would be max($h1, h2$), because that value would allow to be near from the objective.\\
+If we have to choose which heuristic to use between $h1$ or $h2$ or max($h1, h2$). The best answer would be max($h1, h2$), because that value would allow to be near from the objective.\\
 
 Exists different approaches to take advantage from a large set of heuristics. In this dissertation we use the meta-reasoning based on the minimum size of the search tree generated and the minimum evaluation time. \\
 

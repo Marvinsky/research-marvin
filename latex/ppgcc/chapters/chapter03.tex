@@ -210,9 +210,7 @@ Where $W(B)$ is 0 if there is a heuristic in $\zeta\sp{'}$ whose $y$-value in $B
 The value of \textit{\^{T}} is computed by multiplying \textit{\^{J}} by the sum of the evaluation time of each heuristic in $\zeta\sp{'}$. The evaluation time of the heuristics in $\zeta\sp{'}$ is measured in a separate process, before executing \texttt{CS}, by sampling a small number of nodes from $\nabla$'s start state.
 
 \section{Stratified Sampling (SS)}
-Stratified Sampling is a prediction algorithm that estimate the number of nodes expanded by some heuristic.
-
-\cite{knuth1975Estimating} created a method to estimate the size of the search tree such as IDA$\sp{*}$. It works doing random walk from the root of the tree. Knuth's assumption is that all branches have the same structure. So, performing a random walk down one branch is enough to estimate the size of the search tree. However, the method does not work well for unbalanced search tree. \cite{chen1992heuristic} solved this problem with a stratification of the search tree through a \textit{type system} to reduce the variance of the sampling process. In the figure \ref{fig:ss_ts} each state of the search space is mapped to the \textit{Type System}.
+\cite{chen1992heuristic} presented a method for estimating the search tree size of backtracking search algorithms by using a stratification of the search tree to guide its sampling. We define Chen’s stratification as a type system. In the figure \ref{fig:ss_ts} each state of the search space is mapped to the \textit{Type System}.
 
 \begin{figure}[htb]
 \centering 

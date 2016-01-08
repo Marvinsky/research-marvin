@@ -1,7 +1,5 @@
 \backcite {holte2006maximizing}{{11}{(document)}{Doc-Start}}
 \backcite {holte2006maximizing}{{21}{1}{chapter.1}}
-\backcite {lelis2013predicting}{{21}{1.1}{section.1.1}}
-\backcite {Korf85ida}{{22}{1.1}{section.1.1}}
 \backcite {haslum2007domain}{{22}{1.1}{section.1.1}}
 \backcite {edelkamp2007automated}{{22}{1.1}{section.1.1}}
 \backcite {holte2006maximizing}{{22}{1.1}{section.1.1}}
@@ -31,14 +29,13 @@
 \backcite {buchbinder2014submodular}{{43}{3.3}{theorem.3.3.2}}
 \backcite {BarleySantiagoOver}{{43}{3.4}{section.3.4}}
 \backcite {chen1992heuristic}{{43}{3.4}{section.3.4}}
-\backcite {knuth1975Estimating}{{45}{3.6}{section.3.6}}
 \backcite {chen1992heuristic}{{45}{3.6}{section.3.6}}
 \backcite {Lelis2013CC}{{45}{3.6.1}{subsection.3.6.1}}
 \backcite {Prieditis93}{{45}{3.6.1}{subsection.3.6.1}}
 \backcite {Lelis2013CC}{{46}{3.6.1}{subsection.3.6.1}}
 \backcite {chen1992heuristic}{{47}{13}{algocf.2}}
 \backcite {chen1992heuristic}{{47}{13}{algocf.2}}
-\backcite {lelis2014estimating}{{48}{13}{algocf.2}}
+\backcite {lelis2014estimating}{{47}{13}{algocf.2}}
 \backcite {helmert2006fast}{{53}{4}{chapter.4}}
 \backcite {lelis2013predicting,lelis2014memory}{{53}{4}{table.4.1}}
 \backcite {lelis2013predicting,lelis2014memory}{{53}{4}{table.4.1}}
