@@ -32,39 +32,37 @@
 \contentsline {section}{\numberline {2.8}Problem Domains}{32}{section.2.8}
 \contentsline {subsection}{\numberline {2.8.1}Blocks world}{32}{subsection.2.8.1}
 \contentsline {subsection}{\numberline {2.8.2}Barman}{33}{subsection.2.8.2}
-\contentsline {subsection}{\numberline {2.8.3}Elevators}{33}{subsection.2.8.3}
-\contentsline {subsection}{\numberline {2.8.4}Floortile}{33}{subsection.2.8.4}
-\contentsline {subsection}{\numberline {2.8.5}Nomystery}{34}{subsection.2.8.5}
-\contentsline {subsection}{\numberline {2.8.6}Openstacks}{34}{subsection.2.8.6}
-\contentsline {subsection}{\numberline {2.8.7}ParcPrinter}{34}{subsection.2.8.7}
-\contentsline {subsection}{\numberline {2.8.8}Parking}{35}{subsection.2.8.8}
-\contentsline {subsection}{\numberline {2.8.9}Sokoban}{35}{subsection.2.8.9}
-\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Approach Proposal}}{37}{part.3}
+\contentsline {subsection}{\numberline {2.8.3}Floortile}{33}{subsection.2.8.3}
+\contentsline {subsection}{\numberline {2.8.4}Nomystery}{33}{subsection.2.8.4}
+\contentsline {subsection}{\numberline {2.8.5}Openstacks}{33}{subsection.2.8.5}
+\contentsline {subsection}{\numberline {2.8.6}Parking}{33}{subsection.2.8.6}
+\contentsline {subsection}{\numberline {2.8.7}Sokoban}{34}{subsection.2.8.7}
+\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Approach Proposal}}{35}{part.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Meta-Reasoning for selection}}{39}{chapter.3}
-\contentsline {section}{\numberline {3.1}Random Greedy Heuristic Selection (RGHS)}{39}{section.3.1}
-\contentsline {section}{\numberline {3.2}Approximately Minimizing Search Tree Size}{40}{section.3.2}
-\contentsline {section}{\numberline {3.3}Approximately Minimizing A*'s Running Time}{41}{section.3.3}
-\contentsline {section}{\numberline {3.4}Estimating Tree Size and Running Time}{43}{section.3.4}
-\contentsline {section}{\numberline {3.5}Culprit Sampler (CS)}{43}{section.3.5}
-\contentsline {section}{\numberline {3.6}Stratified Sampling (SS)}{45}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Type System}{45}{subsection.3.6.1}
-\contentsline {section}{\numberline {3.7}SS step by step}{48}{section.3.7}
-\contentsline {part}{\partnumberline {IV}\MakeTextUppercase {Empirical Evaluation}}{51}{part.4}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Meta-Reasoning for selection}}{37}{chapter.3}
+\contentsline {section}{\numberline {3.1}Random Greedy Heuristic Selection (RGHS)}{37}{section.3.1}
+\contentsline {section}{\numberline {3.2}Approximately Minimizing Search Tree Size}{38}{section.3.2}
+\contentsline {section}{\numberline {3.3}Approximately Minimizing A*'s Running Time}{39}{section.3.3}
+\contentsline {section}{\numberline {3.4}Estimating Tree Size and Running Time}{41}{section.3.4}
+\contentsline {section}{\numberline {3.5}Culprit Sampler (CS)}{41}{section.3.5}
+\contentsline {section}{\numberline {3.6}Stratified Sampling (SS)}{43}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Type System}{43}{subsection.3.6.1}
+\contentsline {section}{\numberline {3.7}SS step by step}{46}{section.3.7}
+\contentsline {part}{\partnumberline {IV}\MakeTextUppercase {Empirical Evaluation}}{49}{part.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Empirical Evaluation}}{53}{chapter.4}
-\contentsline {section}{\numberline {4.1}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{54}{section.4.1}
-\contentsline {section}{\numberline {4.2}Comparison with Other Planning Systems}{56}{section.4.2}
-\contentsline {section}{\numberline {4.3}Systems Tested}{56}{section.4.3}
-\contentsline {section}{\numberline {4.4}Discussion of the Results}{58}{section.4.4}
-\contentsline {section}{\numberline {4.5}Comparison between SS and IDA*}{60}{section.4.5}
-\contentsline {section}{\numberline {4.6}Comparison between SS and A*}{61}{section.4.6}
-\contentsline {section}{\numberline {4.7}Approximation Analysis for SS and A*}{62}{section.4.7}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Empirical Evaluation}}{51}{chapter.4}
+\contentsline {section}{\numberline {4.1}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{52}{section.4.1}
+\contentsline {section}{\numberline {4.2}Comparison with Other Planning Systems}{54}{section.4.2}
+\contentsline {section}{\numberline {4.3}Systems Tested}{54}{section.4.3}
+\contentsline {section}{\numberline {4.4}Discussion of the Results}{56}{section.4.4}
+\contentsline {section}{\numberline {4.5}Comparison between SS and IDA*}{58}{section.4.5}
+\contentsline {section}{\numberline {4.6}Comparison between SS and A*}{59}{section.4.6}
+\contentsline {section}{\numberline {4.7}Approximation Analysis for SS and A*}{60}{section.4.7}
 \vspace {\cftbeforechapterskip }
-\contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{67}{part.5}
+\contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{65}{part.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Concluding Remarks}}{69}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Concluding Remarks}}{67}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Bibliography}{71}{section*.16}
+\contentsline {chapter}{Bibliography}{69}{section*.16}
 \vspace {\cftbeforechapterskip }
