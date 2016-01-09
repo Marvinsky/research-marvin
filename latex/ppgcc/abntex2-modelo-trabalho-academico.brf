@@ -26,10 +26,10 @@
 \backcite {buchbinder2014submodular}{{39}{3.2}{theorem.3.2.2}}
 \backcite {haslum2007domain}{{40}{3.3}{theorem.3.3.1}}
 \backcite {helmert2009landmarks}{{40}{3.3}{theorem.3.3.1}}
-\backcite {buchbinder2014submodular}{{41}{3.3}{theorem.3.3.2}}
+\backcite {buchbinder2014submodular}{{40}{3.3}{theorem.3.3.2}}
 \backcite {BarleySantiagoOver}{{41}{3.4}{section.3.4}}
 \backcite {chen1992heuristic}{{41}{3.4}{section.3.4}}
-\backcite {chen1992heuristic}{{43}{3.6}{section.3.6}}
+\backcite {chen1992heuristic}{{42}{3.6}{section.3.6}}
 \backcite {Lelis2013CC}{{43}{3.6.1}{subsection.3.6.1}}
 \backcite {Prieditis93}{{43}{3.6.1}{subsection.3.6.1}}
 \backcite {Prieditis93}{{44}{3.6.1}{subsection.3.6.1}}
@@ -37,8 +37,8 @@
 \backcite {chen1992heuristic}{{45}{13}{algocf.2}}
 \backcite {lelis2014estimating}{{45}{13}{algocf.2}}
 \backcite {helmert2006fast}{{51}{4}{chapter.4}}
-\backcite {lelis2013predicting,lelis2014memory}{{51}{4}{table.4.1}}
-\backcite {lelis2013predicting,lelis2014memory}{{51}{4}{table.4.1}}
+\backcite {lelis2013predicting}{{51}{4}{table.4.1}}
+\backcite {lelis2014memory}{{51}{4}{table.4.1}}
 \backcite {edelkamp2007automated}{{52}{4.1}{section.4.1}}
 \backcite {BarleySantiagoOver}{{52}{4.1}{section.4.1}}
 \backcite {haslum2007domain}{{54}{4.2}{section.4.2}}

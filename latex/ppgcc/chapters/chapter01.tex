@@ -33,7 +33,7 @@
 
 State space search algorithms have been used to solve important real$-$world problems, such as: Robotics, domain-independent planning, chemical compounds discovery, bin packing, sequence alignment, automating layouts of sewers, and network routing, amount others. In this dissertation we study methods for selecting a subset of heuristic functions while minimizing the search tree size and the running time of search algorithm.\\
 
-We are interested in selection of heuristics from a large set of heuristics because \cite{holte2006maximizing} showed that search can be faster if several smaller pattern databases are used instead of one large pattern database. In fact, we believe that each heuristic can give us valuable information about the solution of the problem. For example, one heuristic could be helpfull in some area of the search tree and other heuristics do not. Then, instead of using one heuristic to find the solution, would be the best to use the most promising heuristics from a large set of heuristics with the objective to find the solution of the problem.\\
+We are interested in selection of heuristics from a large set of heuristics because Holte et al., (\citeyear{holte2006maximizing}) showed that search can be faster if several smaller pattern databases are used instead of one large pattern database. In fact, we believe that each heuristic can give us valuable information about the solution of the problem. For example, one heuristic could be helpfull in some area of the search tree and other heuristics do not. Then, instead of using one heuristic to find the solution, would be the best to use the most promising heuristics from a large set of heuristics with the objective to find the solution of the problem.\\
 
 \section{Problem Formulation}
 \if false
@@ -48,9 +48,9 @@ We use search algorithm to solve problems or find the solution knowing the seque
 
 There are other type of algorithms called heuristic search algorithms, which are algorithms that requires the use of heuristics. The heuristic is the estimation of the distance for one node in the search tree to get the goal state. The heuristic search algorithms generate smaller search tree in comparison to the \texttt{BFST}, because the heuristic guides the search to more promising parts of the state space or near to the objective. Also, by reducing the search tree size, the heuristic function guidance might also reduce the overall running time of the algorithm.
 
-There are different approaches to create heuristics, such as: Pattern Databases (\texttt{PDBs}) \cite{haslum2007domain}, and Genetic Algorithm \cite{edelkamp2007automated}. We call these systems Heuristic Generators. And one of the approaches that have showed most successfull results in heuristic generation is the \texttt{PDBs}. The way how \texttt{PDBs} works is the following: The search space of the problem is abstracted, obtaining the remaining problem ``pattern‘’, which is small enough to be solved optimally by blind exhaustive search. The results are stored in a table which are the heuristic function for the original search space.\\
+There are different approaches to create heuristics, such as: Pattern Databases (\texttt{PDBs}) Haslum et al., (\citeyear{haslum2007domain}), and Genetic Algorithm Edelkamp,  (\citeyear{edelkamp2007automated}). We call these systems Heuristic Generators. And one of the approaches that have showed most successfull results in heuristic generation is the \texttt{PDBs}. The way how \texttt{PDBs} works is the following: The search space of the problem is abstracted, obtaining the remaining problem ``pattern‘’, which is small enough to be solved optimally by blind exhaustive search. The results are stored in a table which are the heuristic function for the original search space.\\
 
-There exists many ways to take advantage of a large set of heuristic functions. For example: \cite{holte2006maximizing} showed that search can be faster if several smaller \texttt{PDBs} are used instead of one large pattern database. In addition \cite{domshlak2010max} and \cite{tolpin2013towards} showed that evaluating the heuristic lazily, only when they are essential to a decision to be made in the search process is worthy in comparison to take the maximum of the set of heuristics. Then, using all the heuristics do not guarantees to solve the major number of problems in a limit time.
+There exists many ways to take advantage of a large set of heuristic functions. For example: Holte et al., (\citeyear{holte2006maximizing}) showed that search can be faster if several smaller \texttt{PDBs} are used instead of one large pattern database. In addition Domshlak; Karpas; Markovitch, (\citeyear{domshlak2010max}) and Tolpin et al.,  (\citeyear{tolpin2013towards}) showed that evaluating the heuristic lazily, only when they are essential to a decision to be made in the search process is worthy in comparison to take the maximum of the set of heuristics. Then, using all the heuristics do not guarantees to solve the major number of problems in a limit time.
 % ---
 \section{Aim and Objectives}
 \subsection{Aim}
@@ -75,7 +75,7 @@ The objective of this dissertation is to develop meta-reasoning approaches for s
 % ---
 \section{Scope, Limitations, and Delimitations}
 \noindent
-We implemented our method in Fast Downward \cite{helmert2006fast} and we test our methods on the 2011 International Planning Competition (\texttt{IPC}) domain instances.\\
+We implemented our method in Fast Downward Helmert,  (\citeyear{helmert2006fast}) and we test our methods on the 2011 International Planning Competition (\texttt{IPC}) domain instances.\\
 
 \section{Justification}
 \noindent

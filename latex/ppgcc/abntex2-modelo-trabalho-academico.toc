@@ -45,7 +45,7 @@
 \contentsline {section}{\numberline {3.3}Approximately Minimizing A*'s Running Time}{39}{section.3.3}
 \contentsline {section}{\numberline {3.4}Estimating Tree Size and Running Time}{41}{section.3.4}
 \contentsline {section}{\numberline {3.5}Culprit Sampler (CS)}{41}{section.3.5}
-\contentsline {section}{\numberline {3.6}Stratified Sampling (SS)}{43}{section.3.6}
+\contentsline {section}{\numberline {3.6}Stratified Sampling (SS)}{42}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Type System}{43}{subsection.3.6.1}
 \contentsline {section}{\numberline {3.7}SS step by step}{46}{section.3.7}
 \contentsline {part}{\partnumberline {IV}\MakeTextUppercase {Empirical Evaluation}}{49}{part.4}
