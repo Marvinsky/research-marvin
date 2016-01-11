@@ -44,10 +44,10 @@ In this dissertation our methods require to estimate the size of the subgraph ex
 Let $G = (N,E)$ be a graph representing an \textit{ESG} where $N$ is its set of states and for each $n \in N\  op(n) = {op_{i}|(n, n_i) \in E}$ is its set of operators. The term edges and operators are used interchangeably and work as a successor function which recieves as input a state and action and returns another state.\\
 \fi
 
-We use search algorithm to solve problems or find the solution knowing the sequence of actions that goes from the start state to the goal state. To solve the problem is required the use of search algorithms. Two well know search algorithms are Depth First Search (\texttt{DFS}) and Breadth First Search (\texttt{BFS}). \texttt{DFS} looks for the solution traversing the search space exploring the nodes in each branch before backtracking up to find the solution. \texttt{BFS} looks for the solution exploring the nodes in the first level, before moving to the next level of nodes. Both search algorithms have the characteristic that generate a larger search space during the search. The search space that these algorithms generate are called Brute force search tree (\texttt{BFST}).\\
+We use search algorithm to solve problems or find the solution knowing the sequence of actions that goes from the start state to the goal state. To solve the problem is required the use of search algorithms. Two well know search algorithms are Depth First Search (\texttt{DFS}) and Breadth First Search (\texttt{BFS}). \texttt{DFS} looks for the solution traversing the search space exploring the nodes in each branch before backtracking up to find the solution (See Figure \ref{fig:dfs_solution}). \texttt{BFS} looks for the solution exploring the nodes in the first level, before moving to the next level of nodes. Both search algorithms have the characteristic that generate a larger search space during the search. The search space that these algorithms generate are called Brute force search tree (\texttt{BFST}).\\
 
 
-\iffalse
+\iftrue
 
 \begin{landscape}
 

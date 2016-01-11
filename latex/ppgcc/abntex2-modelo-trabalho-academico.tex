@@ -178,9 +178,11 @@
 }
 
 %draw small 8 tile puzzle for DFS
-\newcommand{\ninepuzzlesmall}[1]{%
+\newcommand{\ninepuzzlesmall}[2]{%
 \begin{tikzpicture}[scale = 0.4]
-    \foreach [count=\i] \val in {#1} { 
+	\draw [decorate,xshift=4pt,yshift=28pt] node [black,midway,yshift=0.5cm] 
+{\footnotesize \huge{#2}};
+    \foreach [count=\i] \val in {#1} {
         \draw[fill=white, draw=black]  let \n{row}={int(mod(\i -1, 3))}, \n{col}={ int( ( \i - 1 ) / (-3) ) } in 
             (\n{row}, \n{col}) rectangle  +(1,1) 
             +(0.5, 0.5) node{\val};
@@ -261,37 +263,37 @@
 \newsavebox\myboxthirty
 \newsavebox\myboxthirtyone
 
-\savebox\myboxone{\ninepuzzlesmall{2,8,3,1,6,4,7, ,5}}
-\savebox\myboxtwo{\ninepuzzlesmall{2,8,3,1,6,4, ,7,5}}
-\savebox\myboxthree{\ninepuzzlesmall{2,8,3, ,6,4,1,7,5}}
-\savebox\myboxfour{\ninepuzzlesmall{ ,8,3,2,6,4,1,7,5}}
-\savebox\myboxfive{\ninepuzzlesmall{8, ,3,2,6,4,1,7,5}}
-\savebox\myboxsix{\ninepuzzlesmall{8,3, ,2,6,4,1,7,5}}
-\savebox\myboxseven{\ninepuzzlesmall{8,6,3,2, ,4,1,7,5}}
-\savebox\myboxeight{\ninepuzzlesmall{2,8,3,6, ,4,1,7,5}}
-\savebox\myboxnine{\ninepuzzlesmall{2, ,3,6,8,4,1,7,5}}
-\savebox\myboxten{\ninepuzzlesmall{ ,2,3,6,8,4,1,7,5}}
-\savebox\myboxeleven{\ninepuzzlesmall{2,3, ,6,8,4,1,7,5}}
-\savebox\myboxtwelve{\ninepuzzlesmall{2,8,3,6,4, ,1,7,5}}
-\savebox\myboxthirteen{\ninepuzzlesmall{2,8, ,6,4,3,1,7,5}}
-\savebox\myboxfourteen{\ninepuzzlesmall{2,8,3,6,4,5,1,7, }}
-\savebox\myboxfifteen{\ninepuzzlesmall{2,8,3,6,7,4,1, ,5}}
-\savebox\myboxsixteen{\ninepuzzlesmall{2,8,3,6,7,4, ,1,5}}
-\savebox\myboxseventeen{\ninepuzzlesmall{2,8,3,6,7,4,1,5, }}
-\savebox\myboxeighteen{\ninepuzzlesmall{2,8,3,1, ,4,7,6,5}}
-\savebox\myboxnineteen{\ninepuzzlesmall{2,8,3, ,1,4,7,6,5}}
-\savebox\myboxtwenty{\ninepuzzlesmall{ ,8,3,2,1,4,7,6,5}}
-\savebox\myboxtwentyone{\ninepuzzlesmall{8, ,3,2,1,4,7,6,5}}
-\savebox\myboxtwentytwo{\ninepuzzlesmall{8,3, ,2,1,4,7,6,5}}
-\savebox\myboxtwentythree{\ninepuzzlesmall{8,1,3,2, ,4,7,6,5}}
-\savebox\myboxtwentyfour{\ninepuzzlesmall{2,8,3,7,1,4, ,6,5}}
-\savebox\myboxtwentyfive{\ninepuzzlesmall{2,8,3,7,1,4,6, ,5}}
-\savebox\myboxtwentysix{\ninepuzzlesmall{2,8,3,7, ,4,6,1,5}}
-\savebox\myboxtwentyseven{\ninepuzzlesmall{2,8,3,7,1,4,6,5, }}
-\savebox\myboxtwentyeight{\ninepuzzlesmall{2, ,3,1,8,4,7,6,5}}
-\savebox\myboxtwentynine{\ninepuzzlesmall{ ,2,3,1,8,4,7,6,5}}
-\savebox\myboxthirty{\ninepuzzlesmall{1,2,3, ,8,4,7,6,5}}
-\savebox\myboxthirtyone{\ninepuzzlesmall{1,2,3,8, ,4,7,6,5}}
+\savebox\myboxone{\ninepuzzlesmall{2,8,3,1,6,4,7, ,5}{1}}
+\savebox\myboxtwo{\ninepuzzlesmall{2,8,3,1,6,4, ,7,5}{2}}
+\savebox\myboxthree{\ninepuzzlesmall{2,8,3, ,6,4,1,7,5}{3}}
+\savebox\myboxfour{\ninepuzzlesmall{ ,8,3,2,6,4,1,7,5}{4}}
+\savebox\myboxfive{\ninepuzzlesmall{8, ,3,2,6,4,1,7,5}{5}}
+\savebox\myboxsix{\ninepuzzlesmall{8,3, ,2,6,4,1,7,5}{6}}
+\savebox\myboxseven{\ninepuzzlesmall{8,6,3,2, ,4,1,7,5}{7}}
+\savebox\myboxeight{\ninepuzzlesmall{2,8,3,6, ,4,1,7,5}{8}}
+\savebox\myboxnine{\ninepuzzlesmall{2, ,3,6,8,4,1,7,5}{9}}
+\savebox\myboxten{\ninepuzzlesmall{ ,2,3,6,8,4,1,7,5}{10}}
+\savebox\myboxeleven{\ninepuzzlesmall{2,3, ,6,8,4,1,7,5}{11}}
+\savebox\myboxtwelve{\ninepuzzlesmall{2,8,3,6,4, ,1,7,5}{12}}
+\savebox\myboxthirteen{\ninepuzzlesmall{2,8, ,6,4,3,1,7,5}{13}}
+\savebox\myboxfourteen{\ninepuzzlesmall{2,8,3,6,4,5,1,7, }{14}}
+\savebox\myboxfifteen{\ninepuzzlesmall{2,8,3,6,7,4,1, ,5}{15}}
+\savebox\myboxsixteen{\ninepuzzlesmall{2,8,3,6,7,4, ,1,5}{16}}
+\savebox\myboxseventeen{\ninepuzzlesmall{2,8,3,6,7,4,1,5, }{17}}
+\savebox\myboxeighteen{\ninepuzzlesmall{2,8,3,1, ,4,7,6,5}{18}}
+\savebox\myboxnineteen{\ninepuzzlesmall{2,8,3, ,1,4,7,6,5}{19}}
+\savebox\myboxtwenty{\ninepuzzlesmall{ ,8,3,2,1,4,7,6,5}{20}}
+\savebox\myboxtwentyone{\ninepuzzlesmall{8, ,3,2,1,4,7,6,5}{21}}
+\savebox\myboxtwentytwo{\ninepuzzlesmall{8,3, ,2,1,4,7,6,5}{22}}
+\savebox\myboxtwentythree{\ninepuzzlesmall{8,1,3,2, ,4,7,6,5}{23}}
+\savebox\myboxtwentyfour{\ninepuzzlesmall{2,8,3,7,1,4, ,6,5}{24}}
+\savebox\myboxtwentyfive{\ninepuzzlesmall{2,8,3,7,1,4,6, ,5}{25}}
+\savebox\myboxtwentysix{\ninepuzzlesmall{2,8,3,7, ,4,6,1,5}{26}}
+\savebox\myboxtwentyseven{\ninepuzzlesmall{2,8,3,7,1,4,6,5, }{27}}
+\savebox\myboxtwentyeight{\ninepuzzlesmall{2, ,3,1,8,4,7,6,5}{28}}
+\savebox\myboxtwentynine{\ninepuzzlesmall{ ,2,3,1,8,4,7,6,5}{29}}
+\savebox\myboxthirty{\ninepuzzlesmall{1,2,3, ,8,4,7,6,5}{30}}
+\savebox\myboxthirtyone{\ninepuzzlesmall{1,2,3,8, ,4,7,6,5}{31}}
 
 % end DFS
 
