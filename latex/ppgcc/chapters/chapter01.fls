@@ -1,4 +1,4 @@
-PWD /home/master/marvin/latex/ppgcc/chapters
+PWD /home/marvin/marvin/latex/ppgcc/chapters
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf

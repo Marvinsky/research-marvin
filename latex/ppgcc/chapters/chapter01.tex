@@ -46,6 +46,74 @@ Let $G = (N,E)$ be a graph representing an \textit{ESG} where $N$ is its set of 
 
 We use search algorithm to solve problems or find the solution knowing the sequence of actions that goes from the start state to the goal state. To solve the problem is required the use of search algorithms. Two well know search algorithms are Depth First Search (\texttt{DFS}) and Breadth First Search (\texttt{BFS}). \texttt{DFS} looks for the solution traversing the search space exploring the nodes in each branch before backtracking up to find the solution. \texttt{BFS} looks for the solution exploring the nodes in the first level, before moving to the next level of nodes. Both search algorithms have the characteristic that generate a larger search space during the search. The search space that these algorithms generate are called Brute force search tree (\texttt{BFST}).\\
 
+
+\iffalse
+
+\begin{landscape}
+
+\begin{figure}[htb]
+\centering
+\begin{forest}
+for tree={
+  parent anchor=south,
+  child anchor=north,
+}
+[\usebox\myboxone
+  [\usebox\myboxtwo
+    [\usebox\myboxthree
+		[\usebox\myboxfour
+			[\usebox\myboxfive
+				[\usebox\myboxsix]
+				[\usebox\myboxseven]			
+			]
+		]
+		[\usebox\myboxeight
+			[\usebox\myboxnine
+				[\usebox\myboxten]
+				[\usebox\myboxeleven]			
+			]
+			[\usebox\myboxtwelve
+				[\usebox\myboxthirteen]
+				[\usebox\myboxfourteen]			
+			]
+			[\usebox\myboxfifteen
+				[\usebox\myboxsixteen]
+				[\usebox\myboxseventeen]
+			]		
+		]  
+    ]
+  ]
+  [\usebox\myboxeighteen
+	[\usebox\myboxnineteen
+		[\usebox\myboxtwenty
+			[\usebox\myboxtwentyone
+				[\usebox\myboxtwentytwo]
+				[\usebox\myboxtwentythree]			
+			]		
+		]
+		[\usebox\myboxtwentyfour
+			[\usebox\myboxtwentyfive
+				[\usebox\myboxtwentysix]
+				[\usebox\myboxtwentyseven]			
+			]		
+		]	
+	]
+	[\usebox\myboxtwentyeight
+		[\usebox\myboxtwentynine
+			[\usebox\myboxthirty
+				[\usebox\myboxthirtyone]
+			]		
+		]	
+	]  
+  ]
+]
+\end{forest}
+\caption{Solving 8 tile puzzle using DFS <http://www.slideshare.net/praveenkumar33449138/ai-ch2>.} \label{fig:dfs_solution}
+\end{figure}
+\end{landscape}
+
+\fi
+
 There are other type of algorithms called heuristic search algorithms, which are algorithms that requires the use of heuristics. The heuristic is the estimation of the distance for one node in the search tree to get the goal state. The heuristic search algorithms generate smaller search tree in comparison to the \texttt{BFST}, because the heuristic guides the search to more promising parts of the state space or near to the objective. Also, by reducing the search tree size, the heuristic function guidance might also reduce the overall running time of the algorithm.
 
 There are different approaches to create heuristics, such as: Pattern Databases (\texttt{PDBs}) Haslum et al., (\citeyear{haslum2007domain}), and Genetic Algorithm Edelkamp,  (\citeyear{edelkamp2007automated}). We call these systems Heuristic Generators. And one of the approaches that have showed most successfull results in heuristic generation is the \texttt{PDBs}. The way how \texttt{PDBs} works is the following: The search space of the problem is abstracted, obtaining the remaining problem ``pattern‘’, which is small enough to be solved optimally by blind exhaustive search. The results are stored in a table which are the heuristic function for the original search space.\\
