@@ -191,6 +191,24 @@
 \end{tikzpicture}%    
 }
 
+%draw small 8 tile puzzle for BFS
+\newcommand{\ninepuzzlesmallbfs}[2]{%
+\begin{tikzpicture}[scale = 0.4]
+	\draw [decorate,xshift=4pt,yshift=28pt] node [black,midway,yshift=0.5cm] 
+{\footnotesize \huge{#2}};
+    \foreach [count=\i] \val in {#1} {
+        \draw[fill=white, draw=black]  let \n{row}={int(mod(\i -1, 3))}, \n{col}={ int( ( \i - 1 ) / (-3) ) } in 
+            (\n{row}, \n{col}) rectangle  +(1,1) 
+            +(0.5, 0.5) node{\val};
+            %\filldraw[fill=green, draw=blue];
+    }
+\end{tikzpicture}%    
+}
+
+
+
+
+
 \newcommand{\ninepuzzlets}[1]{%
 \begin{tikzpicture}
     \foreach [count=\i] \val/\colone in {#1} { 
@@ -347,52 +365,52 @@
 \newsavebox\myboxbfsfortysix
 
 
-\savebox\myboxbfsone{\ninepuzzlesmall{2,8,3,1,6,4,7, ,5}{1}}
-\savebox\myboxbfstwo{\ninepuzzlesmall{2,8,3,1,6,4, ,7,5}{2}}
-\savebox\myboxbfsthree{\ninepuzzlesmall{2,8,3,1, ,4,7,6,5}{3}}
-\savebox\myboxbfsfour{\ninepuzzlesmall{2,8,3,1,6,4,7,5, }{4}}
-\savebox\myboxbfsfive{\ninepuzzlesmall{2,8,3, ,6,4,1,7,5}{5}}
-\savebox\myboxbfssix{\ninepuzzlesmall{2,8,3, ,1,4,7,6,5}{6}}
-\savebox\myboxbfsseven{\ninepuzzlesmall{2, ,3,1,8,4,7,6,5}{7}}
-\savebox\myboxbfseight{\ninepuzzlesmall{2,8,3,1,4, ,7,6,5}{8}}
-\savebox\myboxbfsnine{\ninepuzzlesmall{2,8,3,1,6, ,7,5,4}{9}}
-\savebox\myboxbfsten{\ninepuzzlesmall{ ,8,3,2,6,4,1,7,5}{10}}
-\savebox\myboxbfseleven{\ninepuzzlesmall{2,8,3,6, ,4,1,7,5}{11}}
-\savebox\myboxbfstwelve{\ninepuzzlesmall{ ,8,3,2,1,4,7,6,5}{12}}
-\savebox\myboxbfsthirteen{\ninepuzzlesmall{2,8,3,7,1,4, ,6,5}{13}}
-\savebox\myboxbfsfourteen{\ninepuzzlesmall{ ,2,3,1,8,4,7,6,5}{14}}
-\savebox\myboxbfsfifteen{\ninepuzzlesmall{2,3, ,1,8,4,7,6,5}{15}}
-\savebox\myboxbfssixteen{\ninepuzzlesmall{2,8, ,1,4,3,7,6,5}{16}}
-\savebox\myboxbfsseventeen{\ninepuzzlesmall{2,8,3,1,4,5,7,6, }{17}}
-\savebox\myboxbfseighteen{\ninepuzzlesmall{2,8,3,1, ,6,7,5,4}{18}}
-\savebox\myboxbfsnineteen{\ninepuzzlesmall{2,8, ,1,6,3,7,5,4}{19}}
-\savebox\myboxbfstwenty{\ninepuzzlesmall{8, ,3,2,6,4,1,7,5}{20}}
-\savebox\myboxbfstwentyone{\ninepuzzlesmall{2, ,3,6,8,4,1,7,5}{21}}
-\savebox\myboxbfstwentytwo{\ninepuzzlesmall{2,8,3,6,4, ,1,7,5}{22}}
-\savebox\myboxbfstwentythree{\ninepuzzlesmall{2,8,3,6,7,4,1, ,5}{23}}
-\savebox\myboxbfstwentyfour{\ninepuzzlesmall{8, ,3,2,1,4,7,6,5}{24}}
-\savebox\myboxbfstwentyfive{\ninepuzzlesmall{2,8,3,7,1,4,6, ,5}{25}}
-\savebox\myboxbfstwentysix{\ninepuzzlesmall{1,2,3, ,8,4,7,6,5}{26}}
-\savebox\myboxbfstwentyseven{\ninepuzzlesmall{2,3,4,1,8, ,7,6,5}{27}}
-\savebox\myboxbfstwentyeight{\ninepuzzlesmall{2, ,8,1,4,3,7,6,5}{28}}
-\savebox\myboxbfstwentynine{\ninepuzzlesmall{2,8,3,1,4,5,7, ,6}{29}}
-\savebox\myboxbfsthirty{\ninepuzzlesmall{2,8,3, ,1,6,7,5,4}{30}}
-\savebox\myboxbfsthirtyone{\ninepuzzlesmall{2, ,3,1,8,6,7,5,4}{31}}
-\savebox\myboxbfsthirtytwo{\ninepuzzlesmall{2,8,3,1,5,6,7, ,4}{32}}
-\savebox\myboxbfsthirtythree{\ninepuzzlesmall{2, ,8,1,6,3,7,5,4}{33}}
-\savebox\myboxbfsthirtyfour{\ninepuzzlesmall{8,3, ,2,6,4,1,7,5}{34}}
-\savebox\myboxbfsthirtyfive{\ninepuzzlesmall{8,6,3,2, ,4,1,7,5}{35}}
-\savebox\myboxbfsthirtysix{\ninepuzzlesmall{ ,2,3,6,8,4,1,7,5}{36}}
-\savebox\myboxbfsthirtyseven{\ninepuzzlesmall{2,3, ,6,8,4,1,7,5}{37}}
-\savebox\myboxbfsthirtyeight{\ninepuzzlesmall{2,8, ,6,4,3,1,7,5}{38}}
-\savebox\myboxbfsthirtynine{\ninepuzzlesmall{2,8,3,6,4,5,1,7, }{39}}
-\savebox\myboxbfsforty{\ninepuzzlesmall{2,8,3,6,7,4, ,1,5}{40}}
-\savebox\myboxbfsfortyone{\ninepuzzlesmall{2,8,3,6,7,4,1,5, }{41}}
-\savebox\myboxbfsfortytwo{\ninepuzzlesmall{8,3, ,2,1,4,7,6,5}{42}}
-\savebox\myboxbfsfortythree{\ninepuzzlesmall{8,1,3,2, ,4,7,6,5}{43}}
-\savebox\myboxbfsfortyfour{\ninepuzzlesmall{2,8,3,7, ,4,6,1,5}{44}}
-\savebox\myboxbfsfortyfive{\ninepuzzlesmall{2,8,3,7,1,4,6,5, }{45}}
-\savebox\myboxbfsfortysix{\ninepuzzlesmall{1,2,3,8, ,4,7,6,5}{46}}
+\savebox\myboxbfsone{\ninepuzzlesmallbfs{2,8,3,1,6,4,7, ,5}{1}}
+\savebox\myboxbfstwo{\ninepuzzlesmallbfs{2,8,3,1,6,4, ,7,5}{2}}
+\savebox\myboxbfsthree{\ninepuzzlesmallbfs{2,8,3,1, ,4,7,6,5}{3}}
+\savebox\myboxbfsfour{\ninepuzzlesmallbfs{2,8,3,1,6,4,7,5, }{4}}
+\savebox\myboxbfsfive{\ninepuzzlesmallbfs{2,8,3, ,6,4,1,7,5}{5}}
+\savebox\myboxbfssix{\ninepuzzlesmallbfs{2,8,3, ,1,4,7,6,5}{6}}
+\savebox\myboxbfsseven{\ninepuzzlesmallbfs{2, ,3,1,8,4,7,6,5}{7}}
+\savebox\myboxbfseight{\ninepuzzlesmallbfs{2,8,3,1,4, ,7,6,5}{8}}
+\savebox\myboxbfsnine{\ninepuzzlesmallbfs{2,8,3,1,6, ,7,5,4}{9}}
+\savebox\myboxbfsten{\ninepuzzlesmallbfs{ ,8,3,2,6,4,1,7,5}{10}}
+\savebox\myboxbfseleven{\ninepuzzlesmallbfs{2,8,3,6, ,4,1,7,5}{11}}
+\savebox\myboxbfstwelve{\ninepuzzlesmallbfs{ ,8,3,2,1,4,7,6,5}{12}}
+\savebox\myboxbfsthirteen{\ninepuzzlesmallbfs{2,8,3,7,1,4, ,6,5}{13}}
+\savebox\myboxbfsfourteen{\ninepuzzlesmallbfs{ ,2,3,1,8,4,7,6,5}{14}}
+\savebox\myboxbfsfifteen{\ninepuzzlesmallbfs{2,3, ,1,8,4,7,6,5}{15}}
+\savebox\myboxbfssixteen{\ninepuzzlesmallbfs{2,8, ,1,4,3,7,6,5}{16}}
+\savebox\myboxbfsseventeen{\ninepuzzlesmallbfs{2,8,3,1,4,5,7,6, }{17}}
+\savebox\myboxbfseighteen{\ninepuzzlesmallbfs{2,8,3,1, ,6,7,5,4}{18}}
+\savebox\myboxbfsnineteen{\ninepuzzlesmallbfs{2,8, ,1,6,3,7,5,4}{19}}
+\savebox\myboxbfstwenty{\ninepuzzlesmallbfs{8, ,3,2,6,4,1,7,5}{20}}
+\savebox\myboxbfstwentyone{\ninepuzzlesmallbfs{2, ,3,6,8,4,1,7,5}{21}}
+\savebox\myboxbfstwentytwo{\ninepuzzlesmallbfs{2,8,3,6,4, ,1,7,5}{22}}
+\savebox\myboxbfstwentythree{\ninepuzzlesmallbfs{2,8,3,6,7,4,1, ,5}{23}}
+\savebox\myboxbfstwentyfour{\ninepuzzlesmallbfs{8, ,3,2,1,4,7,6,5}{24}}
+\savebox\myboxbfstwentyfive{\ninepuzzlesmallbfs{2,8,3,7,1,4,6, ,5}{25}}
+\savebox\myboxbfstwentysix{\ninepuzzlesmallbfs{1,2,3, ,8,4,7,6,5}{26}}
+\savebox\myboxbfstwentyseven{\ninepuzzlesmallbfs{2,3,4,1,8, ,7,6,5}{27}}
+\savebox\myboxbfstwentyeight{\ninepuzzlesmallbfs{2, ,8,1,4,3,7,6,5}{28}}
+\savebox\myboxbfstwentynine{\ninepuzzlesmallbfs{2,8,3,1,4,5,7, ,6}{29}}
+\savebox\myboxbfsthirty{\ninepuzzlesmallbfs{2,8,3, ,1,6,7,5,4}{30}}
+\savebox\myboxbfsthirtyone{\ninepuzzlesmallbfs{2, ,3,1,8,6,7,5,4}{31}}
+\savebox\myboxbfsthirtytwo{\ninepuzzlesmallbfs{2,8,3,1,5,6,7, ,4}{32}}
+\savebox\myboxbfsthirtythree{\ninepuzzlesmallbfs{2, ,8,1,6,3,7,5,4}{33}}
+\savebox\myboxbfsthirtyfour{\ninepuzzlesmallbfs{8,3, ,2,6,4,1,7,5}{34}}
+\savebox\myboxbfsthirtyfive{\ninepuzzlesmallbfs{8,6,3,2, ,4,1,7,5}{35}}
+\savebox\myboxbfsthirtysix{\ninepuzzlesmallbfs{ ,2,3,6,8,4,1,7,5}{36}}
+\savebox\myboxbfsthirtyseven{\ninepuzzlesmallbfs{2,3, ,6,8,4,1,7,5}{37}}
+\savebox\myboxbfsthirtyeight{\ninepuzzlesmallbfs{2,8, ,6,4,3,1,7,5}{38}}
+\savebox\myboxbfsthirtynine{\ninepuzzlesmallbfs{2,8,3,6,4,5,1,7, }{39}}
+\savebox\myboxbfsforty{\ninepuzzlesmallbfs{2,8,3,6,7,4, ,1,5}{40}}
+\savebox\myboxbfsfortyone{\ninepuzzlesmallbfs{2,8,3,6,7,4,1,5, }{41}}
+\savebox\myboxbfsfortytwo{\ninepuzzlesmallbfs{8,3, ,2,1,4,7,6,5}{42}}
+\savebox\myboxbfsfortythree{\ninepuzzlesmallbfs{8,1,3,2, ,4,7,6,5}{43}}
+\savebox\myboxbfsfortyfour{\ninepuzzlesmallbfs{2,8,3,7, ,4,6,1,5}{44}}
+\savebox\myboxbfsfortyfive{\ninepuzzlesmallbfs{2,8,3,7,1,4,6,5, }{45}}
+\savebox\myboxbfsfortysix{\ninepuzzlesmallbfs{1,2,3,8, ,4,7,6,5}{46}}
 % end BFS
 
 \newsavebox\myboxcenter
