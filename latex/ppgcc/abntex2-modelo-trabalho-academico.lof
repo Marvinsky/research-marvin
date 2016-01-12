@@ -1,13 +1,14 @@
 \select@language {brazil}
 \select@language {english}
 \contentsline {figure}{\numberline {1}{\ignorespaces Solving 8 tile puzzle using DFS <http://www.slideshare.net/praveenkumar33449138/ai-ch2>.}}{22}{figure.1.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces The left tile$-$puzzle is the initial distribution of tiles and the right tile$-$puzzle is the goal distribution of tiles. Each one represent a state.}}{30}{figure.2.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Heuristic Search: \textit {I}: Initial State, \textit {s}: Some Sate, \textit {G}: Goal State}}{31}{figure.2.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Out of place heuristic}}{32}{figure.2.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Manhatham distance heuristic}}{32}{figure.2.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Blocks world with three blocks.}}{34}{figure.2.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Sokoban with four blocks solved <http://sokoban.info/?5>}}{36}{figure.2.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Type system and the search space representation.}}{45}{figure.3.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Search tree using Type System}}{49}{figure.3.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Cartesian Plane with domain $\left \delimiter "426830A 0, 2\right \delimiter "526930B $ and range $\left \delimiter "426830A 0, 2\right \delimiter "526930B $ }}{63}{figure.4.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces \texttt {SS} vs A$\sp {*}$ ratios for the optimal domains $-$ The number of instances used in each domain are showed next to the name of the Domain.}}{64}{figure.4.11}
+\contentsline {figure}{\numberline {2}{\ignorespaces Solving 8 tile puzzle using BFS <http://www.slideshare.net/praveenkumar33449138/ai-ch2>.}}{23}{figure.1.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces The left tile$-$puzzle is the initial distribution of tiles and the right tile$-$puzzle is the goal distribution of tiles. Each one represent a state.}}{30}{figure.2.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Heuristic Search: \textit {I}: Initial State, \textit {s}: Some Sate, \textit {G}: Goal State}}{31}{figure.2.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Out of place heuristic}}{32}{figure.2.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Manhatham distance heuristic}}{32}{figure.2.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Blocks world with three blocks.}}{34}{figure.2.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Sokoban with four blocks solved <http://sokoban.info/?5>}}{36}{figure.2.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Type system and the search space representation.}}{45}{figure.3.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Search tree using Type System}}{49}{figure.3.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Cartesian Plane with domain $\left \delimiter "426830A 0, 2\right \delimiter "526930B $ and range $\left \delimiter "426830A 0, 2\right \delimiter "526930B $ }}{63}{figure.4.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces \texttt {SS} vs A$\sp {*}$ ratios for the optimal domains $-$ The number of instances used in each domain are showed next to the name of the Domain.}}{64}{figure.4.12}

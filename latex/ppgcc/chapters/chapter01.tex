@@ -110,6 +110,94 @@ for tree={
 \end{forest}
 \caption{Solving 8 tile puzzle using DFS <http://www.slideshare.net/praveenkumar33449138/ai-ch2>.} \label{fig:dfs_solution}
 \end{figure}
+
+
+\begin{figure}[htb]
+\centering
+\begin{forest}
+for tree={
+  parent anchor=south,
+  child anchor=north,
+}
+[\usebox\myboxbfsone
+  [\usebox\myboxbfstwo
+	[\usebox\myboxbfsfive
+		[\usebox\myboxbfsten
+			[\usebox\myboxbfstwenty
+				[\usebox\myboxbfsthirtyfour]
+				[\usebox\myboxbfsthirtyfive]			
+			]		
+		]
+		[\usebox\myboxbfseleven
+			[\usebox\myboxbfstwentyone
+				[\usebox\myboxbfsthirtysix]
+				[\usebox\myboxbfsthirtyseven]			
+			]
+			[\usebox\myboxbfstwentytwo
+				[\usebox\myboxbfsthirtyeight]
+				[\usebox\myboxbfsthirtynine]			
+			]
+			[\usebox\myboxbfstwentythree
+				[\usebox\myboxbfsforty]
+				[\usebox\myboxbfsfortyone]			
+			]		
+		]	
+	]  
+  ]
+  [\usebox\myboxbfsthree
+	[\usebox\myboxbfssix
+		[\usebox\myboxbfstwelve
+			[\usebox\myboxbfstwentyfour
+				[\usebox\myboxbfsfortytwo]
+				[\usebox\myboxbfsfortythree]			
+			]		
+		]
+		[\usebox\myboxbfsthirteen
+			[\usebox\myboxbfstwentyfive
+				[\usebox\myboxbfsfortyfour]
+				[\usebox\myboxbfsfortyfive]			
+			]		
+		]	
+	]
+	[\usebox\myboxbfsseven
+		[\usebox\myboxbfsfourteen
+			[\usebox\myboxbfstwentysix
+				[\usebox\myboxbfsfortysix]			
+			]		
+		]
+		[\usebox\myboxbfsfifteen
+			[\usebox\myboxbfstwentyseven]		
+		]	
+	]
+	[\usebox\myboxbfseight
+		[\usebox\myboxbfssixteen
+			[\usebox\myboxbfstwentyeight]		
+		]
+		[\usebox\myboxbfsseventeen
+			[\usebox\myboxbfstwentynine]		
+		]	
+	]  
+  ]
+  [\usebox\myboxbfsfour
+	[\usebox\myboxbfsnine
+		[\usebox\myboxbfseighteen
+			[\usebox\myboxbfsthirty]
+			[\usebox\myboxbfsthirtyone]
+			[\usebox\myboxbfsthirtytwo]
+		]
+		[\usebox\myboxbfsnineteen
+			[\usebox\myboxbfsthirtythree]		
+		]
+	]  
+  ]
+]
+\end{forest}
+\caption{Solving 8 tile puzzle using BFS <http://www.slideshare.net/praveenkumar33449138/ai-ch2>.} \label{fig:dfs_solution}
+\end{figure}
+
+
+
+
 \end{landscape}
 
 \fi
