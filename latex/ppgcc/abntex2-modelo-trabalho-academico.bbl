@@ -19,12 +19,6 @@
   Planning and Scheduling, {ICAPS} 2014, Portsmouth, New Hampshire, USA, June
   21-26, 2014}, 2014.}
 
-\bibitem[Buchbinder et al. 2014]{buchbinder2014submodular}
-\abntrefinfo{Buchbinder et al.}{BUCHBINDER et al.}{2014}
-{BUCHBINDER, N. et al. Submodular maximization with cardinality constraints.
-  In:  SIAM. \emph{Proceedings of the Twenty-Fifth Annual ACM-SIAM Symposium on
-  Discrete Algorithms}. [S.l.], 2014. p. 1433--1452.}
-
 \bibitem[Chen 1992]{chen1992heuristic}
 \abntrefinfo{Chen}{CHEN}{1992}
 {CHEN, P.-C. Heuristic sampling: A method for predicting the performance of
@@ -66,11 +60,6 @@
 {HELMERT, M. The fast downward planning system.
 \emph{J. Artif. Intell. Res.(JAIR)}, v.~26, p. 191--246, 2006.}
 
-\bibitem[Helmert e Domshlak 2009]{helmert2009landmarks}
-\abntrefinfo{Helmert e Domshlak}{HELMERT; DOMSHLAK}{2009}
-{HELMERT, M.; DOMSHLAK, C. Landmarks, critical paths and abstractions: what's
-  the difference anyway? In:  \emph{ICAPS}. [S.l.: s.n.], 2009. p. 162--169.}
-
 \bibitem[Holte et al. 2006]{holte2006maximizing}
 \abntrefinfo{Holte et al.}{HOLTE et al.}{2006}
 {HOLTE, R.~C. et al. Maximizing over multiple pattern databases speeds up
@@ -101,13 +90,6 @@
 {LELIS, L.~H. Santana~de.
 \emph{Cluster-and-Conquer: A Paradigm for Solving State-Space Problems}.
 Tese (Doutorado) --- University of Alberta, 2013.}
-
-\bibitem[Nemhauser, Wolsey e Fisher 1978]{nemhauser1978analysis}
-\abntrefinfo{Nemhauser, Wolsey e Fisher}{NEMHAUSER; WOLSEY; FISHER}{1978}
-{NEMHAUSER, G.~L.; WOLSEY, L.~A.; FISHER, M.~L. An analysis of approximations
-  for maximizing submodular set functions—i.
-\emph{Mathematical Programming}, Springer-Verlag, v.~14, n.~1, p. 265--294,
-  1978.}
 
 \bibitem[Nissim, Hoffmann e Helmert 2011]{nissim2011computing}
 \abntrefinfo{Nissim, Hoffmann e Helmert}{NISSIM; HOFFMANN; HELMERT}{2011}

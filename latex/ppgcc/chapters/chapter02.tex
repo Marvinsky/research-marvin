@@ -25,20 +25,15 @@
 % ---
  
 \chapter{Background}\label{ch:background}
-
-\iffalse
-\chapterprecis{The purpose of this section is to understand the problem.}\index{sinopse de capítulo}
-\fi
 % ---
 \section{Similar Selection Systems}
 % ---
-
 \noindent
 The system most similar to ours is RIDA$\sp{*}$ Barley; Franco; Riddle, (\citeyear{BarleySantiagoOver}). RIDA$\sp{*}$ also selects a subset from a pool of heuristics to guide the $A\sp{*}$ search. In RIDA$\sp{*}$ this is done by starting with an empty subset and trying all combination of size one before trying the combination of size two and so on. RIDA$\sp{*}$ stops after evaluating a fixed number of subsets. While RIDA$\sp{*}$ is able to evaluate a set of heuristics with tens of elements, our meta-reasoning is able to evaluate a set of heuristics with thousands of elements.
 
 An optimization procedure which is similar to ours is presented by Rayner; Sturtevant; Bowling, (\citeyear{raynersss13}). The optimization procedure done by Rayner et al. makes near-optimal subset selection only when the objective function is monotone. The problem is that if one sequentially add heuristics to $\zeta\sp{'}$, the cost of using another heuristic $h$ will not payoff for the extra prunning that $h$ will allow A$\sp{*}$ to make. As a result, A$\sp{*}$'s running time is a non-monotone objective function. Rayner et al. limited their experiments to an objective function that only maximize the sum of heuristic values in the state space.\\
 
-We propose an optimization procedure that guarantees for both monotone and non-monotone objective functions. Furthermore, while Rayner et al.'s optimization procedure is not directly applicable to domain-independent planning. We show how their method can be applied to domain independent planning by having Stratified Sampling to estimate the sum of heuristic values in the state space.\\
+We propose an optimization procedure that work for any objective function, monotone and non-monotone. Furthermore, while Rayner et al.'s optimization procedure is not directly applicable to domain-independent planning. We show how their method can be applied to domain independent planning by having Stratified Sampling to estimate the sum of heuristic values in the state space.\\
 
 Our meta-reasoning requires a prediction of the number of nodes expanded by A$\sp{*}$ using any given subset. The prediction system we choose is Stratified Sampling (\texttt{SS} system Lelis; Zilles; Holte, (\citeyear{lelis2013predicting})). Even though, \texttt{SS} give us good predictions for Iterative Deepening$-$A$\sp{*}$, it does not give us good predictions for A$\sp{*}$ because it does not count duplicate nodes. However, as part of our proposal, we present \texttt{SS} for predicting the size of the search tree.\\
 
@@ -61,7 +56,6 @@ Schaeffer; Herik, (\citeyear{Schaeffer:2002:GCA:512148.512149}) Any tile horizon
 \end{forest}
 \caption{The left tile$-$puzzle is the initial distribution of tiles and the right tile$-$puzzle is the goal distribution of tiles. Each one represent a state.} \label{fig:8tilepuzzle_begin}
 \end{figure}
-
 
 Instead of using an algorithm of Brute force search that will analyze all the possible solutions. We can obtain heuristics from the problem of the slide tile puzzle that will help us to solve the problem.
 
@@ -169,122 +163,9 @@ Let's suppose we have to run our meta-reasoning using $M$ amount of memory avail
  
 Holte et al., (\citeyear{holte2006maximizing}) observed that maximizing over $N$ pattern databases of size $M/N$, for a suitable choice $N$, produces a significant reduction in the number of nodes generated compared to using a single pattern database of size $M$.\\
 
-\if false
-
-In the Figures \ref{fig:image2mem} and \ref{fig:image3mem} we are taking advantange of the heuristics doing the maximization of all the heuristics created. In this dissertation we are interested in heuristics that generate smaller search tree.
-
-
-\begin{figure}[htb]
-  \centering
-  \begin{tikzpicture}
-\draw[step=1cm,gray,very thin] grid (12,1);
-%\draw[step=1cm,gray,very thin] (-1.9,-1.9) grid (5.9,5.9);
-%\fill[blue!40!white] (0,0) rectangle (4,4);
-\filldraw[fill=blue, draw=black] rectangle (12,1);
-\filldraw[fill=blue, draw=black] rectangle (11,1);
-\filldraw[fill=blue, draw=black] rectangle (10,1);
-\filldraw[fill=blue, draw=black] rectangle (9,1);
-\filldraw[fill=blue, draw=black] rectangle (8,1);
-\filldraw[fill=blue, draw=black] rectangle (7,1);
-\filldraw[fill=blue, draw=black] rectangle (6,1);
-\filldraw[fill=blue, draw=black] rectangle (5,1);
-\filldraw[fill=blue, draw=black] rectangle (4,1);
-\filldraw[fill=blue, draw=black] rectangle (3,1);
-\filldraw[fill=blue, draw=black] rectangle (2,1);
-\filldraw[fill=blue, draw=black] rectangle (1,1);
-
- %$\draw[->,xshift=4pt,yshift=14pt] (2,1) -- (4,1);$
- \node [xshift=2.5cm,yshift=4cm] (A) at (2,0) {S};
- 
- %\draw[->] (2.5cm,8em) -- (8cm,5em) node[midway,right] {\Om{2}};
- \draw[->] (4.5,3.8) -- (8.5,1) node[midway,right] {\Vpi{}};
- \draw[->] (8.5,0) -- (8.5,-1) node[xshift=0cm,yshift=-0.2cm] {$h(s)$};
-\end{tikzpicture}
-  \caption{One heuristic of size M}\label{fig:image1mem}
-\end{figure}
-
-\begin{figure}[htb]
-  \centering
-  \begin{tikzpicture}
-\draw[step=1cm,gray,very thin] grid (12,1);
-%\draw[step=1cm,gray,very thin] (-1.9,-1.9) grid (5.9,5.9);
-%\fill[blue!40!white] (0,0) rectangle (4,4);
-\filldraw[fill=green, draw=black] rectangle (12,1);
-\filldraw[fill=green, draw=black] rectangle (11,1);
-\filldraw[fill=green, draw=black] rectangle (10,1);
-\filldraw[fill=green, draw=black] rectangle (9,1);
-\filldraw[fill=green, draw=black] rectangle (8,1);
-\filldraw[fill=green, draw=black] rectangle (7,1);
-\filldraw[fill=blue, draw=black] rectangle (6,1);
-\filldraw[fill=blue, draw=black] rectangle (5,1);
-\filldraw[fill=blue, draw=black] rectangle (4,1);
-\filldraw[fill=blue, draw=black] rectangle (3,1);
-\filldraw[fill=blue, draw=black] rectangle (2,1);
-\filldraw[fill=blue, draw=black] rectangle (1,1);
-
- %$\draw[->,xshift=4pt,yshift=14pt] (2,1) -- (4,1);$
- \node [xshift=2.5cm,yshift=4cm] (A) at (2,0) {S};
- 
- %\draw[->] (2.5cm,8em) -- (8cm,5em) node[midway,right] {\Om{2}};
- \draw[->] (4.5,3.8) -- (4.5,1) node[midway,right] {\Vpi{1}};
- \draw[->] (4.5,0) -- (4.5,-1) node[xshift=0cm,yshift=-0.2cm] {$h_{\substack{1}}(s)$};
- 
- \draw[->] (4.5,3.8) -- (8.5,1) node[midway,right] {\Vpi{2}};
- \draw[->] (8.5,0) -- (8.5,-1) node[xshift=0cm,yshift=-0.2cm] {$h_{\substack{2}}(s)$};
- 
- \draw[decorate,decoration={brace,amplitude=8pt,mirror},xshift=4pt,yshift=-1.5cm]
-(4,0) -- (9,0) node [black,midway,yshift=-0.5cm] 
-{\footnotesize $max$};
-\end{tikzpicture}
-  \caption{Two heuristics of size M/2}\label{fig:image2mem}
-\end{figure}
-
-\begin{figure}[htb]
-  \centering
-  \begin{tikzpicture}
-\draw[step=1cm,gray,very thin] grid (12,1);
-%\draw[step=1cm,gray,very thin] (-1.9,-1.9) grid (5.9,5.9);
-%\fill[blue!40!white] (0,0) rectangle (4,4);
-\filldraw[fill=blue, draw=black] rectangle (12,1);
-\filldraw[fill=blue, draw=black] rectangle (11,1);
-\filldraw[fill=orange, draw=black] rectangle (10,1);
-\filldraw[fill=orange, draw=black] rectangle (9,1);
-\filldraw[fill=red, draw=black] rectangle (8,1);
-\filldraw[fill=red, draw=black] rectangle (7,1);
-\filldraw[fill=brown, draw=black] rectangle (6,1);
-\filldraw[fill=brown, draw=black] rectangle (5,1);
-\filldraw[fill=yellow, draw=black] rectangle (4,1);
-\filldraw[fill=yellow, draw=black] rectangle (3,1);
-\filldraw[fill=green, draw=black] rectangle (2,1);
-\filldraw[fill=green, draw=black] rectangle (1,1);
-
- %$\draw[->,xshift=4pt,yshift=14pt] (2,1) -- (4,1);$
- \node [xshift=2.5cm,yshift=4cm] (A) at (2,0) {S};
-
- \draw[->] (4.5,3.8) -- (1,1) node[midway,right] {\Vpi{1}};
- \draw[->] (1,0) -- (1,-1) node[xshift=0cm,yshift=-0.2cm] {$h_{\substack{1}}(s)$};
- 
- \draw[->] (4.5,3.8) -- (11,1) node[midway,right] {\Vpi{n}};
- \draw[->] (11,0) -- (11,-1) node[xshift=0cm,yshift=-0.2cm] {$h_{\substack{n}}(s)$};
- 
-%draw each arrow
-\draw[->] (3,0) -- (3,-1) node[xshift=0cm,yshift=-0.2cm] {};
-\draw[->] (5,0) -- (5,-1) node[xshift=0cm,yshift=-0.2cm] {};
-\draw[->] (7,0) -- (7,-1) node[xshift=0cm,yshift=-0.2cm] {};
-\draw[->] (9,0) -- (9,-1) node[xshift=0cm,yshift=-0.2cm] {}; 
-
- \draw[decorate,decoration={brace,amplitude=12pt,mirror},xshift=4pt,yshift=-1.5cm]
-(0,0) -- (12,0) node [black,midway,yshift=-0.7cm] 
-{\footnotesize $max$};
-\end{tikzpicture}
-  \caption{N heuristics of size M/N}\label{fig:image3mem}
-\end{figure}
-
-\fi
-
 \section{Heuristic Subset}
 The heuristic generators systems can create a large number of heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best N $=$ 50 heuristics. This would be: $${1000\choose 50} \approx 10\sp{85} possibilities$$
-So, try to select heuristics from a large set of heuristics are going to be treated as an optimization problem. Then, in order to obtain a good selection of subset of heuristics, our objective function should guarantee two properties: Monotonicity and Submodularity, that would be explained in the next Chapter.\\
+So, try to select heuristics from a large set of heuristics are going to be treated as an optimization problem. Then, in order to obtain a good selection of subset of heuristics, we use our meta-reasoning approach of selection which work for monotone and non-monotone objective functions.\\
 
 \section{Problem Domains}
 Some of the problems we are trying to solve are the optimal domains for International Planning Competition (\texttt{IPC}).
@@ -333,6 +214,6 @@ The solution shown in Figure \ref{fig:img_sokoban_solved} is to use the agent to
 
 \bigskip
 
-In the next Chapter, we will introduce the meta-reasoning proposed for selecting heuristics and will expand on the properties of our objective functions.\\
+In the next Chapter, we will introduce the meta-reasoning proposed for selecting heuristics.\\
 
 \clearpage

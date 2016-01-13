@@ -26,52 +26,48 @@
  
 \chapter{Meta-Reasoning for selection}\label{ch:rghs}
 
-\iffalse
-\chapterprecis{The purpose of this section is to introduce the meta-reasoning proposed.}\index{sinopse de capítulo}
-\fi
-
 % ---
-\section{Random Greedy Heuristic Selection (RGHS)}
+\section{Greedy Heuristic Selection (GHS)}
 \noindent
-We present a random greedy algorithm selecction for approximately solving the heuristic subset selection problem while optimizing different objective functions. We consider the following general optimization problem.
+We present a greedy algorithm selecction for approximately solving the heuristic subset selection problem while optimizing different objective functions. We consider the following general optimization problem.
 
 \begin{equation}
 \begin{split}
-\textbf{minimize}_{\zeta\sp{'} \in 2\sp{|\zeta|}}\Psi(\zeta\sp{'}, \nabla) \\
-\textbf{subject to} |\zeta\sp{'}| = N
+\textbf{minimize}_{\zeta\sp{'}\ \subseteq\ \zeta}\Psi(\zeta\sp{'}, \nabla) \\
 \end{split}
 \label{eq:equationmin}
 \end{equation}
 
-Where $\Psi(\zeta\sp{'},\nabla)$ is an objective function and $N$ is the desired subset size. $N$ could be determined by a hard constraint such as the maximum number of \texttt{PDBs} one can store in memory. According to Rayner; Sturtevant; Bowling, (\citeyear{raynersss13}) it is unlikely that there is an efficient algorithm for solving Equation \ref{eq:equationmin}. We use an algorithm based on the work of Buchbinder et al., (\citeyear{buchbinder2014submodular}) we call Random Greedy Heuristic Selection (\texttt{RGHS}) to approximately solve Equation \ref{eq:equationmin} for different functions $\Psi$.\\
+Where $\Psi(\zeta\sp{'},\nabla)$ is an objective function that we want to minimize using a subset of heuristics $\zeta\sp{'}$ that is selected from $\zeta$. According to Rayner; Sturtevant; Bowling, (\citeyear{raynersss13}) it is unlikely that there is an efficient algorithm for solving Equation \ref{eq:equationmin}.We use an algorithm based on the local search we call Greedy Heuristic Selection (\texttt{GHS}) to approximately solve Equation \ref{eq:equationmin} for different functions $\Psi$.\\
 
 \begin{algorithm}
 \SetKwInOut{Input}{Input}
 \SetKwInOut{Output}{Output}
-\Input{problem $\nabla$, set  of heuristics $\zeta$, cardinality $N$}
-\Output{heuristic subset $\zeta\sp{'} \subseteq \zeta$ of size $N$}
+\Input{problem $\nabla$, set  of heuristics $\zeta$}
+\Output{heuristic subset $\zeta\sp{'} \subseteq \zeta$}
 
-$\zeta_{0}\sp{'} \leftarrow \emptyset$
-
-\For {i = 1 to N} {
-	Let $M_{i} \subseteq \zeta\ \backslash\ \zeta_{i-1}\sp{'}$ be a subset of size $N$ minimizing $\sum_{h\in M_{i}}\Psi(\zeta_{i-1}\sp{'}\cup \{h\})\ -\ \Psi(\zeta_{i}\sp{'})$\\
-	Let $h_{i}$ be a uniformly random element from $M_{i}$\\
+$\zeta_{0}\sp{'} \leftarrow \emptyset$\\
+$i\ \leftarrow 0$\\ 
+\While {$\Psi$ improves} {
+	%Let $M_{i} \subseteq \zeta\ \backslash\ \zeta_{i-1}\sp{'}$ be a subset of size $N$ minimizing $\sum_{h\in M_{i}}\Psi(\zeta_{i-1}\sp{'}\cup \{h\})\ -\ \Psi(\zeta_{i}\sp{'})$\\
+	$M_i$ contains heuristics from $\zeta\ \setminus\ \zeta_{i-1}\sp{'}$
+that minimize $\Psi(\zeta_{i-1}\sp{'} \cup \{h\})$ breaking ties arbitrarily.\\
+	Let $h_{i}$ be a uniformly the best candidate element from $M_{i}$\\
 	$\zeta_{i}\sp{'} \leftarrow \zeta_{i-1}\sp{'} \cup \{h\}$\\
+	$i++$\\
 } 
 return $\zeta_{N}\sp{'}$
-\caption{Random Greedy Heuristic Selection}
-\label{alg:rghs_algorithm}
+\caption{Greedy Heuristic Selection}
+\label{alg:ghs_algorithm}
 \end{algorithm}
 
-Algorithm \ref{alg:rghs_algorithm} shows \texttt{RGHS}. \texttt{RGHS} receives as input a problem $\nabla$, a set of heuristics $\zeta$, a cardinality size $N$, and it returns a subset $\zeta\sp{'} \subseteq \zeta$. In each iteration $i$ \texttt{RGHS} randomly selects a heuristic $h_{i}$ from a pool $M_{i}$ of "good" heurisitcs and adds $h_{i}$ to $\zeta\sp{'}$. $M_{i}$ is defined as follows. $M_{i} \subseteq \zeta\ \backslash \zeta_{i-1}\sp{'}$ is a subset of size $N$ minimizing $\sum_{h\in M_{i}}\Psi(\zeta_{i-1}\sp{'}\cup \{h\})\ -\ \Psi(\zeta_{i}\sp{'})$, where $\zeta_{i-1}\sp{'}$ is the subset of heuristics \texttt{RGHS} selects prior to iteration $i$ of the algorithm. $M_{i}$ contains the $N$ heuristics that when individually combined with $\zeta_{i-1}\sp{'}$ minimizes $\Psi$ the most. \texttt{RGHS} returns $\zeta\sp{'}$ once it reaches the desired size $N$.\\
-
-The work of Rayner; Sturtevant; Bowling, (\citeyear{raynersss13}) uses a greedy algorithm introduced by Nemhauser; Wolsey; Fisher, (\citeyear{nemhauser1978analysis}) for approximately solving the heuristic subset selection problem. In contrast with the \texttt{RGHS} presented above, which is based on the work of Buchbinder et al., (\citeyear{buchbinder2014submodular}), Nemhauser; Wolsey; Fisher, (\citeyear{nemhauser1978analysis})'s approach does not offer near$-$optimality guarantees when the problem's objective functions is non$-$monotone. As mentioned before A$\sp{*}$'s running time is a non$-$monotone objective function. While \texttt{RGHS} also offers guarantees for non$-$monotone objective functions, it retains the same guarantees offered by Nemhauser; Wolsey; Fisher, (\citeyear{nemhauser1978analysis})'s algorithm when optimizing monotone objective functions Buchbinder et al., (\citeyear{buchbinder2014submodular}). That is why we only consider Buchbinder et al., (\citeyear{buchbinder2014submodular})'s approach in our theoretical and experimental analyses.
+Algorithm \ref{alg:ghs_algorithm} shows \texttt{GHS}. \texttt{GHS} receives as input a problem $\nabla$, a set of heuristics $\zeta$, and it returns a subset $\zeta\sp{'} \subseteq \zeta$. In each iteration $i$ \texttt{GHS} selects a heuristic $h_{i}$ from a pool $M_{i}$ of ``good‘’ heurisitcs and adds $h_{i}$ to $\zeta\sp{'}$. $M_{i}$ is defined as follows. $M_{i} \subseteq \zeta\ \backslash \zeta_{i-1}\sp{'}$ is a subset minimizing $\Psi(\zeta_{i-1}\sp{'} \cup \{h\})$ breaking ties arbitrarily, where $\zeta_{i-1}\sp{'}$ is the subset of heuristics \texttt{GHS} selects prior to iteration $i$ of the algorithm. $M_{i}$ contains the $N$ heuristics that when individually combined with $\zeta_{i-1}\sp{'}$ minimizes $\Psi$ the most. \texttt{GHS} returns $\zeta\sp{'}$ when no more enhancement exists for the objective function.\\
 
 % --
 \section{Approximately Minimizing Search Tree Size}
 % ---
 \noindent
-The first objective function $\Psi$ we consider accounts for the number of expansions A$\sp{*}$ performs while solving a given planning problem. When solving $\nabla$ using the consistent heuristic function $h_{max}(\zeta\sp{'})$  for $\zeta\sp{'} \subseteq \zeta$, A$\sp{*}$ expands in the worse case $J(\zeta\sp{'},\nabla)$ nodes, where
+The first objective function $\Psi$ we consider accounts for the number of expansions A$\sp{*}$ performs while solving a given planning problem. The planning problem must be solvable, this means $C\sp{*}$ can not be infinity. When solving $\nabla$ using the consistent heuristic function $h_{max}(\zeta\sp{'})$  for $\zeta\sp{'} \subseteq \zeta$, A$\sp{*}$ expands in the upper bound $J(\zeta\sp{'},\nabla)$ nodes, where
 
 \begin{equation}
 J(\zeta\sp{'},\nabla) = |\{s \in V | f_{max}(s,\zeta\sp{'}) \leq C\sp{*}\}|
@@ -82,44 +78,7 @@ J(\zeta\sp{'},\nabla) = |\{s \in V | h_{max}(s,\zeta\sp{'}) \leq C\sp{*} - g(s)\
 \label{eq:eq_size_search_tree_2}
 \end{equation}
 
-We write $J(\zeta\sp{'})$ or simply $J$ instead of $J(\zeta\sp{'},\nabla)$. \texttt{RGHS} is guaranteed to find near$-$optimal solutions when we use $J$ as the objective function $\Psi$, as we now demostrate. In the following analysis all heuristic functions are assumed to be consistent. We also assume that A$\sp{*}$ expands all nodes $n$ with $f(n) \leq C\sp{*}$ while solving $\nabla$, as shown in Equation \ref{eq:eq_size_search_tree_1}.
-
-\begin{lemma}
-$J(\zeta\sp{'} \cup \{h\}) \leq J(\zeta\sp{'})$ for any $\zeta\sp{'}$ and any h.
-
-Proof. Fix $\zeta\sp{'}$ and h. Then
-
-$J(\zeta\sp{'} \cup \{h\})  =  |\{s \in V | h_{max}(s, \zeta\sp{'} \cup \{h\}) \leq C\sp{*} - g(s)\}|\\
-\hspace*{3.3cm} \leq  |\{s \in V | h_{max}(s,\zeta\sp{'}) \leq C\sp{*} - g(s)\}|\\
-\hspace*{3.3cm} = J(\zeta\sp{'}) $
-
-Where the inequality follows from the fact that $h_{max}(s,\zeta\sp{'} \cup \{h\}) \geq h_{max}(s,\zeta\sp{'})$ for all s. \\
-
-Let $S$ be a set and $\phi$ a function over $2\sp{S}$. $\phi$ is supermodular if for any $A, B, x$ with $A \subseteq B \subseteq S$ and $x \in S \backslash B:$
-
-\begin{equation}
-\phi(A) - \phi(A \cup \{x\}) \geq \phi(B) - \phi(B \cup \{x\})
-\label{eq:function_phi}
-\end{equation}
-
-Intuitively, Equation \ref{eq:function_phi} captures the idea of disminishing returns. In the context of search tree size, if we add a heuristic function $h$ to a set of heuristics $A$ strictly contained in a set $B$, then we would expect, then we would expect $J(A) - J(A \cup \{h\})$ to be larger than $J(B) - J(B \cup \{h\})$ as $h$ would "contribute more" to $A$ than to $B$.
-\label{le:lemmaone}
-\end{lemma}
-
-\begin{lemma}
-$J$ is supermodular. \\
-Proof. Let $A \subset B \subset \zeta$ and $h \in \zeta \backslash B.$ By Lemma \ref{le:lemmaone}, $J(A) - J(A \cup \{h\}) \geq 0$ and $J(B) - J(B \cup \{h\}) \geq 0$. We consider two cases.\\
-Case 1. $J(B) - J(B \cup \{h\}) = 0.$ Then $J(A) - J(A \cup \{h\}) \geq 0$ yields $J(A) - J(A \cup \{h\}) \geq J(B) - J(B \cup \{h\})$.\\
-Case 2. $J(B) - J(B \cup \{h\}) = k > 0.$ Let $s_{1},...,s_{k}$ be all the states in $V$ that satisfy $h_{max}(s_{i}, B) \leq  C\sp{*} - g(s_{i})$ and $h_{max}(s_{i}, B \cup \{h\}) > C\sp{*} - g(s_{i}).$  This implies $h(s_{i}) > C\sp{*} - g(s_{i}),$ for all $i \in \{1,...,k\}$ Further, since $A \subset B,$ we have $h_{max}(s_{i}, A) \leq h_{max}(s_{i},B) \leq C\sp{*} - g(s_{i}),$ for all $i \in \{1,...,k\}.$ Consequently, $J(A) - J(A \cup \{h\}) \geq k = J(B) - J(B \cup \{h\}).$
-\label{le:lemmatwo}
-\end{lemma}
-
-Lemma \ref{le:lemmaone} and \ref{le:lemmatwo} are sufficient for using a result by Buchbinder et al., (\citeyear{buchbinder2014submodular}) to conclude the following.
-
-\begin{theorem}
-Let $\zeta\sp{'}$ be a subset selected by \texttt{GHS}. Then $J(\zeta\sp{'}, \nabla)$ is within a factor of $\dfrac{e+1}{e} \approx 1.36$ of optimal.
-\label{th:theorem_one}
-\end{theorem}
+We write $J(\zeta\sp{'})$ or simply $J$ instead of $J(\zeta\sp{'},\nabla)$. \texttt{GHS} is able to find near$-$optimal solutions when we use $J$ as the objective function $\Psi$, as we now demostrate.
 
 \section{Approximately Minimizing A*'s Running Time}
 \noindent
@@ -134,47 +93,14 @@ where, for any heuristic function $h$, the term $t_{h}$ refers to the running ti
 
 We assume that $t_{h}$ to be independent of $s$, which is a reasonable assumption for several heuristics such as \texttt{PDBs}.\\
 
-In order to compute the running time of A$\sp{*}$ exactly we would also have to account for the time required for node generation and for the operations on A$\sp{*}$'s \texttt{OPEN} and \texttt{CLOSED} lists. However, these two factors do not depend directly on the heuristic employed. Thus, $T(\zeta\sp{'},\nabla)$ is reasonable approximation for A$\sp{*}$'s running time for the heuristic subset selection problem.
-
-\begin{theorem}
-Suppose $t_{h_{i}} = t_{h_{j}}$ for any $h_{i}$ and $h_{j} \in \zeta$. Then for any fixed subset size $N$, \texttt{RGHS} yields a subset $\zeta\sp{'}$ that is within a factor $\dfrac{e+1}{e}$ of optimal with respect to $T(\zeta\sp{'},\nabla)$
-\label{th:theorem_two}
-\end{theorem}
-
-$Proof.$ Since $t_{h}$ is constant over $h \in \zeta$, the value $t_{h_{max}}(\zeta\sp{'})$ is independent of $\zeta\sp{'}$. Hence the value $T(\zeta\sp{'},\nabla)$ is a constant factor of $J(\zeta\sp{'},\nabla).$ The latter is within a factor of $\dfrac{e+1}{e}$ of optimal by Theorem \ref{th:theorem_one}.\\
-
-The assumption that $t_{h_{i}}\ =\ t_{h_{j}}$ for any $h_{i},h_{j}\ \in\ \zeta$ often does not hold in domain$-$independent planning. For example, the \texttt{iPDB} heuristic Haslum et al., (\citeyear{haslum2007domain}) can be few order of magnitude faster than the Incremental \texttt{LM-Cut} Helmert; Domshlak, (\citeyear{helmert2009landmarks}) heuristic. In order to lift such an assumption we first define A$\sp{*}$'s running time in terms of its computational cost as follows.\\
-
-\begin{equation}
-T(\zeta\sp{'}, \nabla) = J(\zeta\sp{'},\nabla) + \beta(\zeta\sp{'})
-\label{eq:eq_cost_eval_time}
-\end{equation}
-
-Here $\beta(\zeta\sp{'})$ is the computational cost incurred by using $h_{max}(\zeta\sp{'})$. $T(\zeta\sp{'},\nabla)$ accounts for the computational cost of expanding $J(\zeta\sp{'}, \nabla)$ nodes added of the computational cost of employing a set of heuristics $\zeta\sp{'}$.\\
-We assume that the computational cost $\beta(\zeta\sp{'} \cup \{h\})\ =\ \beta(\zeta\sp{'}) + \beta(h)$, \textsf{i.e.,} the computational cost of employing heuristic $h$ during search is constant and independent of other heuristics in $\zeta\sp{'}$. Although this assumption is unlikely to hold in practice as $\beta(h)$ depends on the number of times A$\sp{*}$ uses $h$ to evaluate nodes during search, which in turn depends on the heuristics in $\zeta\sp{'}\ \backslash h$, we expect that the differences of $\beta(h)-$values to be negligible for different $\zeta\sp{'}$ sets.\\
-
-$T\sp{'}$ is clearly non$-$monotone as the reduction of $J\sp{'}(\zeta\sp{'},\nabla)$ caused by the addition of a heuristic to $\zeta\sp{'}$ might not compensate for the increase in $\beta(\zeta\sp{'})$. We now show that $T\sp{'}$ is supermodular.
-
-\begin{lemma}
-$T$ is supermodular. \\
-Proof. Let $A \subset B \subseteq \zeta$ and $h \in \zeta \backslash B$. We need to show that $T\sp{'}(A) - T\sp{'}(A \cup \{x\}) \geq T\sp{'}(B) - T\sp{'}(B \cup \{x\})$. We have that $T\sp{'}(A)- T\sp{'}(A \cup \{x\}) = J(A)-J(A \cup \{x\}) - \beta(x)$. and $T\sp{'}(B) - T\sp{'}(B \cup \{x\}) = J(B) - J(B \cup \{x\}) - \beta(x)$. Thus, we have that $J(A) - J(A \cup \{x\}) \geq J(B) - J(B \cup \{x\})$, which according to Lemma \ref{le:lemmatwo} is supermodular.
-\label{le:lemmathree}
-\end{lemma}
-
-Since $T\sp{'}$ is supermodular, another result by Buchbinder et al., (\citeyear{buchbinder2014submodular}) and Lemma \ref{le:lemmathree} allow us to conclude the following.
-
-
-\begin{theorem}
-Let $\zeta\sp{'}$ be a subset selected by \texttt{RGHS}. Then $T(\zeta\sp{'}, \nabla)$ is within a factor of $\dfrac{e+1}{e} \approx 1.63$ of optimal.
-\label{th:theorem_three}
-\end{theorem}
+In order to compute the running time of A$\sp{*}$ exactly we would also have to account for all nodes evaluated. Specifically, our objective function accounts for the generation time added to the heuristic evaluation time of all nodes generated, not only nodes expanded. In this way, $T(\zeta\sp{'},\nabla)$ is reasonable approximation for A$\sp{*}$'s running time for the heuristic subset selection problem.\\
 
 \section{Estimating Tree Size and Running Time}
-In  practice \texttt{RGHS} used approximations of $J,T,$ and $T\sp{'}$ instead of their exact values. This is because computing $J,T,$ and $T\sp{'}$ exactly would require solving $\nabla$. We denote the approximations of $J$ as \textit{\^{J}}, and since both $T$ and$T\sp{'}$ model A$\sp{*}$'s running time, we denote the approximation for both as \textit{\^{T}}.\\
+In  practice \texttt{GHS} used approximations models of $J,T,$ and $T\sp{'}$ instead of their exact values. This is because computing $J,T,$ and $T\sp{'}$ exactly would require solving $\nabla$. We denote the approximations of $J$ as \textit{\^{J}}, and since both $T$ and$T\sp{'}$ model A$\sp{*}$'s running time, we denote the approximation for both as \textit{\^{T}}.\\
 
 We use the Culprit Sampler (\texttt{CS}) introduced by Barley; Franco; Riddle, (\citeyear{BarleySantiagoOver}) and the Stratified Sampling (\texttt{SS}) algorithm introduced by Chen, (\citeyear{chen1992heuristic}) for computing \textit{\^{J}} and \textit{\^{T}}. Each of the two algorithms has its strengths and weaknesses, which we explore in the experimental Chapter.\\
 
-Both \texttt{CS} and \texttt{SS} must be able to quickly estimate the values of \textit{\^{J}}$(\zeta\sp{'})$ and \textit{\^{T}}$(\zeta\sp{'})$ for any subset $\zeta\sp{'}$ of $\zeta$ so they can be used in \texttt{RGHS}'s optimization process.
+Both \texttt{CS} and \texttt{SS} must be able to quickly estimate the values of \textit{\^{J}}$(\zeta\sp{'})$ and \textit{\^{T}}$(\zeta\sp{'})$ for any subset $\zeta\sp{'}$ of $\zeta$ so they can be used in \texttt{GHS}'s optimization process.
 
 \section{Culprit Sampler (CS)}
 \noindent
@@ -198,7 +124,7 @@ Let $\zeta = \{h_{1}, h_{2},...,h_{M}\}$ be a set of heuristics and b a lower bo
 
 \end{enumerate}
     
-The process described above is performed only once \texttt{RGHS}'s execution. The value of \textit{\^{J}}$(\zeta\sp{'},\nabla)$ for any subset $\zeta\sp{'}$ of $\zeta$ if then computed by iterating over all b$-$culprits \textbf{B} and summing up the relevant values of $C_{B}$. The relevant values of $C_{B}$ represent the number of nodes A$\sp{*}$ would expand in a search bounded by $b$ if using $h_{max}(\zeta\sp{'})$. This computation can be written as follows.\\
+The process described above is performed only once \texttt{GHS}'s execution. The value of \textit{\^{J}}$(\zeta\sp{'},\nabla)$ for any subset $\zeta\sp{'}$ of $\zeta$ if then computed by iterating over all b$-$culprits \textbf{B} and summing up the relevant values of $C_{B}$. The relevant values of $C_{B}$ represent the number of nodes A$\sp{*}$ would expand in a search bounded by $b$ if using $h_{max}(\zeta\sp{'})$. This computation can be written as follows.\\
 
 \begin{equation}
 \textit{\^{J}}(\zeta\sp{'},\nabla) = \sum_{\mathbb{B} \in B}W(B)
@@ -336,7 +262,7 @@ In \texttt{SS} the types are required to be partially ordered: a node's type mus
 
 Algorithm \ref{alg:ss_algorithm} shows \texttt{SS} in detail. Representative nodes from $A[i]$ are expanded to get representative nodes for $A[i+1]$ as follows. $A[0]$ is initialized to contain only the root of the search tree to be probed, with weight 1 (Line 1). In each iteration (Lines 4 through 11), all nodes in $A[i]$ are expanded. The children of each node in $A[i]$ are considered for inclusion in $A[i+1]$ if their $f-$value do not exceed an upper bound $d$ provided as input to \texttt{SS}. If a child $\hat{n}$ has a type $t$ that is already represented in $A[i+1]$ by another node $n\sp{'}$, then a $merge$ action on $\hat{n}$ and $n\sp{'}$ is performed. In a merge action we increase the weight in the corresponding representative$-$weight pair of type $t$ by the weight $w(n)$ of $\hat{n}$'s parent $n$ (from level $i$) since there were $w(n)$ nodes at level $i$ that are assumed to have children of type $t$ at level $i+1$. $\hat{n}$ will replace $n\sp{'}$ according to the probability shown in Line 9. Chen, (\citeyear{chen1992heuristic}) proved that this probability reduces the variance of the estimation. Once all the states in $A[i]$ are expanded, we move to the next iteration.\\
 
-One run of the \texttt{SS} algorithm is called a $probe$. Chen,  (\citeyear{chen1992heuristic}) proved that the expected value of $\hat{\varphi}$ converges to $\varphi$ in the limit as the number of probes goes to infinity. As Lelis; Stern; Sturtevant,  (\citeyear{lelis2014estimating}), \texttt{SS} is not able to detect duplicated nodes in its sampling process. As a result, since A$\sp{*}$ does not expanded duplicates, \texttt{SS} usually overestimates the actual number of nodes A$\sp{*}$ expands. Thus, in the limit, as the number of probes grows large, \texttt{SS}'s prediction converges to a number which  is likely to overestimate the A$\sp{*}$ search tree size. We test empirically whether \texttt{SS} is able to allow \texttt{RGHS} to make good subset selects despite being unable to detect duplicated nodes during sampling.\\
+One run of the \texttt{SS} algorithm is called a $probe$. Chen,  (\citeyear{chen1992heuristic}) proved that the expected value of $\hat{\varphi}$ converges to $\varphi$ in the limit as the number of probes goes to infinity. As Lelis; Stern; Sturtevant,  (\citeyear{lelis2014estimating}), \texttt{SS} is not able to detect duplicated nodes in its sampling process. As a result, since A$\sp{*}$ does not expanded duplicates, \texttt{SS} usually overestimates the actual number of nodes A$\sp{*}$ expands. Thus, in the limit, as the number of probes grows large, \texttt{SS}'s prediction converges to a number which  is likely to overestimate the A$\sp{*}$ search tree size. We test empirically whether \texttt{SS} is able to allow \texttt{GHS} to make good subset selects despite being unable to detect duplicated nodes during sampling.\\
 
 Similarly to \texttt{CS}, we also define a time$-$limit to run \texttt{SS}. We use \texttt{SS} with an iterative$-$deepening approach in order to ensure an estimate of $\hat{J}$ and $\hat{T}$ before reaching the time limit. We set the upper bound $d$ to the heuristic value of the start state and, after performing $p$ probes, if there is still time, we increase $d$ to twice its previous value. The values of $\hat{J}$ and $\hat{T}$ is given by the prediction produced for the last $d-$value in which \texttt{SS} was able to perform all $p$ probes.\\
 
