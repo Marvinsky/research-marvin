@@ -33,7 +33,7 @@ We are interested in selection of heuristics from a large set of heuristics beca
 
 \section{Problem Formulation}
 \noindent
-We use search algorithm to solve problems or find the solution knowing the sequence of actions that goes from the start state to the goal state. To solve the problem is required the use of search algorithms. Two well know search algorithms are Depth First Search (\texttt{DFS}) and Breadth First Search (\texttt{BFS}). \texttt{DFS} looks for the solution traversing the search space exploring the nodes in each branch before backtracking up to find the solution (See Figure \ref{fig:dfs_solution}). \texttt{BFS} looks for the solution exploring the nodes in the first level, before moving to the next level of nodes. Both search algorithms have the characteristic that generate a larger search space during the search. The search space that these algorithms generate are called Brute force search tree (\texttt{BFST}).\\
+We use search algorithm to solve problems or find the solution knowing the sequence of actions that goes from the start state to the goal state. To solve the problem is required the use of search algorithms. Two well know search algorithms are Depth First Search (\texttt{DFS}) and Breadth First Search (\texttt{BFS}). \texttt{DFS} looks for the solution traversing the search space exploring the nodes in each branch before backtracking up to find the solution. In the Figure \ref{fig:dfs_solution} we can see \texttt{DFS} takes 31 moves of the empty tile to find the objective distribution. \texttt{BFS} looks for the solution exploring the nodes in the first level, before moving to the next level of nodes. In the Figure \ref{fig:bfs_solution} we can see \texttt{BFS} takes 46 moves of the empty tile to find the objective distribution, what is much more than it takes \texttt{DFS}. Both search algorithms have the characteristic that generate a larger search space during the search. The search space that these algorithms generate are called Brute force search tree (\texttt{BFST}).\\
 
 
 \iftrue
@@ -42,10 +42,10 @@ We use search algorithm to solve problems or find the solution knowing the seque
 \begin{figure}[htb]
 %\centering
 \begin{forest}
-for tree={
-  parent anchor=south,
-  child anchor=north,
-}
+%for tree={
+%  parent anchor=south,
+%  child anchor=north,
+%}
 [\usebox\myboxone
   [\usebox\myboxtwo
     [\usebox\myboxthree
@@ -98,93 +98,99 @@ for tree={
 \end{forest}
 \caption{Solving 8 tile puzzle using DFS <http://www.slideshare.net/praveenkumar33449138/ai-ch2> slide 37.} \label{fig:dfs_solution}
 \end{figure}
-
-
-%\begin{figure}[htb]
-%%\centering
-%\begin{forest}
-%%for tree={
-%%  parent anchor=south,
-%%  child anchor=north,
-%%}
-%[\usebox\myboxbfsone
-%  [\usebox\myboxbfstwo
-%	[\usebox\myboxbfsfive
-%		[\usebox\myboxbfsten
-%			[\usebox\myboxbfstwenty
-%				[\usebox\myboxbfsthirtyfour]
-%				[\usebox\myboxbfsthirtyfive]			
-%			]		
-%		]
-%		[\usebox\myboxbfseleven
-%			[\usebox\myboxbfstwentyone
-%				[\usebox\myboxbfsthirtysix]
-%				[\usebox\myboxbfsthirtyseven]			
-%			]
-%			[\usebox\myboxbfstwentytwo
-%				[\usebox\myboxbfsthirtyeight]
-%				[\usebox\myboxbfsthirtynine]			
-%			]
-%			[\usebox\myboxbfstwentythree
-%				[\usebox\myboxbfsforty]
-%				[\usebox\myboxbfsfortyone]			
-%			]		
-%		]	
-%	]  
-%  ]
-%  [\usebox\myboxbfsthree
-%	[\usebox\myboxbfssix
-%		[\usebox\myboxbfstwelve
-%			[\usebox\myboxbfstwentyfour
-%				[\usebox\myboxbfsfortytwo]
-%				[\usebox\myboxbfsfortythree]			
-%			]		
-%		]
-%		[\usebox\myboxbfsthirteen
-%			[\usebox\myboxbfstwentyfive
-%				[\usebox\myboxbfsfortyfour]
-%				[\usebox\myboxbfsfortyfive]			
-%			]		
-%		]	
-%	]
-%	[\usebox\myboxbfsseven
-%		[\usebox\myboxbfsfourteen
-%			[\usebox\myboxbfstwentysix
-%				[\usebox\myboxbfsfortysix]			
-%			]		
-%		]
-%		[\usebox\myboxbfsfifteen
-%			[\usebox\myboxbfstwentyseven]		
-%		]	
-%	]
-%	[\usebox\myboxbfseight
-%		[\usebox\myboxbfssixteen
-%			[\usebox\myboxbfstwentyeight]		
-%		]
-%		[\usebox\myboxbfsseventeen
-%			[\usebox\myboxbfstwentynine]		
-%		]	
-%	]  
-%  ]
-%  [\usebox\myboxbfsfour
-%	[\usebox\myboxbfsnine
-%		[\usebox\myboxbfseighteen
-%			[\usebox\myboxbfsthirty]
-%			[\usebox\myboxbfsthirtyone]
-%			[\usebox\myboxbfsthirtytwo]
-%		]
-%		[\usebox\myboxbfsnineteen
-%			[\usebox\myboxbfsthirtythree]		
-%		]
-%	]  
-%  ]
-%]
-%\end{forest}
-%\caption{Solving 8 tile puzzle using BFS <http://www.slideshare.net/praveenkumar33449138/ai-ch2>.} \label{fig:dfs_solution}
-%\end{figure}
-
 \end{landscape}
+\fi
 
+\iftrue
+\begin{landscape}
+\begin{figure}[htb]
+%\centering
+
+%\resizebox{.5\linewidth}{!}{%
+%\resizebox{\linewidth}{!}{%
+\resizebox{\dimexpr\linewidth-1cm}{!}{%
+\begin{forest}
+%for tree={
+%  parent anchor=south,
+%  child anchor=north,
+%}
+[\usebox\myboxbfsone
+  [\usebox\myboxbfstwo
+	[\usebox\myboxbfsfive
+		[\usebox\myboxbfsten
+			[\usebox\myboxbfstwenty
+				[\usebox\myboxbfsthirtyfour]
+				[\usebox\myboxbfsthirtyfive]			
+			]		
+		]
+		[\usebox\myboxbfseleven
+			[\usebox\myboxbfstwentyone
+				[\usebox\myboxbfsthirtysix]
+				[\usebox\myboxbfsthirtyseven]			
+			]
+			[\usebox\myboxbfstwentytwo
+				[\usebox\myboxbfsthirtyeight]
+				[\usebox\myboxbfsthirtynine]			
+			]
+			[\usebox\myboxbfstwentythree
+				[\usebox\myboxbfsforty]
+				[\usebox\myboxbfsfortyone]			
+			]		
+		]	
+	]  
+  ]
+  [\usebox\myboxbfsthree
+	[\usebox\myboxbfssix
+		[\usebox\myboxbfstwelve
+			[\usebox\myboxbfstwentyfour
+				[\usebox\myboxbfsfortytwo]
+				[\usebox\myboxbfsfortythree]			
+			]		
+		]
+		[\usebox\myboxbfsthirteen
+			[\usebox\myboxbfstwentyfive
+				[\usebox\myboxbfsfortyfour]
+				[\usebox\myboxbfsfortyfive]			
+			]		
+		]	
+	]
+	[\usebox\myboxbfsseven
+		[\usebox\myboxbfsfourteen
+			[\usebox\myboxbfstwentysix
+				[\usebox\myboxbfsfortysix]			
+			]		
+		]
+		[\usebox\myboxbfsfifteen
+			[\usebox\myboxbfstwentyseven]		
+		]	
+	]
+	[\usebox\myboxbfseight
+		[\usebox\myboxbfssixteen
+			[\usebox\myboxbfstwentyeight]		
+		]
+		[\usebox\myboxbfsseventeen
+			[\usebox\myboxbfstwentynine]		
+		]	
+	]  
+  ]
+  [\usebox\myboxbfsfour
+	[\usebox\myboxbfsnine
+		[\usebox\myboxbfseighteen
+			[\usebox\myboxbfsthirty]
+			[\usebox\myboxbfsthirtyone]
+			[\usebox\myboxbfsthirtytwo]
+		]
+		[\usebox\myboxbfsnineteen
+			[\usebox\myboxbfsthirtythree]		
+		]
+	]  
+  ]
+]
+\end{forest}
+}
+\caption{Solving 8 tile puzzle using BFS <http://www.slideshare.net/praveenkumar33449138/ai-ch2> slide 36.} \label{fig:bfs_solution}
+\end{figure}
+\end{landscape}
 \fi
 
 There are other type of algorithms called heuristic search algorithms, which are algorithms that requires the use of heuristics. The heuristic is the estimation of the distance for one node in the search tree to get the goal state. The heuristic search algorithms generate smaller search tree in comparison to the \texttt{BFST}, because the heuristic guides the search to more promising parts of the state space or near to the objective. Also, by reducing the search tree size, the heuristic function guidance might also reduce the overall running time of the algorithm.

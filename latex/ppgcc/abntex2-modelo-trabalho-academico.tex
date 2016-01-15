@@ -88,11 +88,13 @@
 
 %langle
 \usepackage{scalerel}
-\usepackage{graphicx}
 
 %draw 8 tile puzzle
 \usepackage{forest}
 \usetikzlibrary[calc]
+
+% to shrink figures
+\usepackage{tikz-qtree}
 
 % for letters
 \usepackage{mathcomp}
@@ -204,10 +206,6 @@
     }
 \end{tikzpicture}%    
 }
-
-
-
-
 
 \newcommand{\ninepuzzlets}[1]{%
 \begin{tikzpicture}
