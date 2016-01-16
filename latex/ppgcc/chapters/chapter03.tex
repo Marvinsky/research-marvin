@@ -46,22 +46,22 @@ Where $\Psi(\zeta\sp{'},\nabla)$ is an objective function that we want to minimi
 \Input{problem $\nabla$, set  of heuristics $\zeta$}
 \Output{heuristic subset $\zeta\sp{'} \subseteq \zeta$}
 
-$\zeta_{0}\sp{'} \leftarrow \emptyset$\\
-$i\ \leftarrow 0$\\ 
-\While {$\Psi$ improves} {
-	%Let $M_{i} \subseteq \zeta\ \backslash\ \zeta_{i-1}\sp{'}$ be a subset of size $N$ minimizing $\sum_{h\in M_{i}}\Psi(\zeta_{i-1}\sp{'}\cup \{h\})\ -\ \Psi(\zeta_{i}\sp{'})$\\
-	$M_i$ contains heuristics from $\zeta\ \setminus\ \zeta_{i-1}\sp{'}$
-that minimize $\Psi(\zeta_{i-1}\sp{'} \cup \{h\})$ breaking ties arbitrarily.\\
-	Let $h_{i}$ be greedily selected from $M_{i}$\\
-	$\zeta_{i}\sp{'} \leftarrow \zeta_{i-1}\sp{'} \cup \{h\}$\\
-	$i++$\\
+$\zeta\sp{'} \leftarrow \emptyset$\\
+%$i\ \leftarrow 0$\\ 
+\While {$\Psi$ can be improved} {
+	$h\ \leftarrow\ \argminA_{h \in \zeta}  \Psi(\zeta\sp{'} \cup \{h\}, \nabla)$\\
+	$\zeta\sp{'} \leftarrow \zeta\sp{'} \cup \{h\}$\\
+	%\If{$\Psi(\zeta_{i-1}\sp{'} \cup \{h\}$ can be improved}{
+		%$\zeta_{i}\sp{'} \leftarrow \zeta_{i-1}\sp{'} \cup \{h\}$\\
+		%$i++$\\
+	%}	
 } 
 return $\zeta\sp{'}$
 \caption{Greedy Heuristic Selection}
 \label{alg:ghs_algorithm}
 \end{algorithm}
 
-Algorithm \ref{alg:ghs_algorithm} shows \texttt{GHS}. \texttt{GHS} receives as input a problem $\nabla$, a set of heuristics $\zeta$, and it returns a subset $\zeta\sp{'} \subseteq \zeta$. In each iteration $i$ \texttt{GHS} selects a heuristic $h_{i}$ from a pool $M_{i}$ of ``good‘’ heurisitcs and adds $h_{i}$ to $\zeta\sp{'}$. $M_{i}$ is defined as follows. $M_{i} \subseteq \zeta\ \backslash \zeta_{i-1}\sp{'}$ is a subset minimizing $\Psi(\zeta_{i-1}\sp{'} \cup \{h\})$ breaking ties arbitrarily, where $\zeta_{i-1}\sp{'}$ is the subset of heuristics \texttt{GHS} selects prior to iteration $i$ of the algorithm. $M_{i}$ contains heuristics that when individually combined with $\zeta_{i-1}\sp{'}$ minimizes $\Psi$ the most. \texttt{GHS} returns $\zeta\sp{'}$ when no more enhancement exists for the objective function.\\
+Algorithm \ref{alg:ghs_algorithm} shows \texttt{GHS}. \texttt{GHS} receives as input a problem $\nabla$, a set of heuristics $\zeta$, and it returns a subset $\zeta\sp{'} \subseteq \zeta$. In each iteration \texttt{GHS} greedily selects from $\zeta$ the heuristics $h$ which will result in the largest reduction of the value $\Psi$ (line 3). \texttt{GHS} returns $\zeta\sp{'}$ once the objective function can not be improved.
 
 % --
 \section{Approximately Minimizing Search Tree Size}

@@ -41,7 +41,7 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Meta-Reasoning for selection}}{39}{chapter.3}
 \contentsline {section}{\numberline {3.1}Greedy Heuristic Selection (GHS)}{39}{section.3.1}
-\contentsline {section}{\numberline {3.2}Approximately Minimizing Search Tree Size}{40}{section.3.2}
+\contentsline {section}{\numberline {3.2}Approximately Minimizing Search Tree Size}{39}{section.3.2}
 \contentsline {section}{\numberline {3.3}Approximately Minimizing A*'s Running Time}{40}{section.3.3}
 \contentsline {section}{\numberline {3.4}Estimating Tree Size and Running Time}{40}{section.3.4}
 \contentsline {section}{\numberline {3.5}Culprit Sampler (CS)}{41}{section.3.5}
