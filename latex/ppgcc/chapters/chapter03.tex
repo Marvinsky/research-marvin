@@ -61,7 +61,7 @@ return $\zeta\sp{'}$
 \label{alg:ghs_algorithm}
 \end{algorithm}
 
-Algorithm \ref{alg:ghs_algorithm} shows \texttt{GHS}. \texttt{GHS} receives as input a problem $\nabla$, a set of heuristics $\zeta$, and it returns a subset $\zeta\sp{'} \subseteq \zeta$. In each iteration \texttt{GHS} greedily selects from $\zeta$ the heuristics $h$ which will result in the largest reduction of the value $\Psi$ (line 3). \texttt{GHS} returns $\zeta\sp{'}$ once the objective function can not be improved.
+Algorithm \ref{alg:ghs_algorithm} shows \texttt{GHS}. \texttt{GHS} receives as input a problem $\nabla$, a set of heuristics $\zeta$, and it returns a subset $\zeta\sp{'} \subseteq \zeta$. In each iteration \texttt{GHS} greedily selects from $\zeta$ the heuristics $h$ which will result in the largest reduction of the value $\Psi$ (line 3). \texttt{GHS} returns $\zeta\sp{'}$ once the objective function can not be improved. In other words, the algorithm will halt when adding another heuristic does not improve the objective function.
 
 % --
 \section{Approximately Minimizing Search Tree Size}
