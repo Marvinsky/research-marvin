@@ -57,7 +57,7 @@
 \contentsline {section}{\numberline {4.4}Discussion of the Results}{55}{section.4.4}
 \contentsline {section}{\numberline {4.5}Comparison between SS and IDA*}{57}{section.4.5}
 \contentsline {section}{\numberline {4.6}Comparison between SS and A*}{59}{section.4.6}
-\contentsline {section}{\numberline {4.7}Approximation Analysis for SS and A*}{59}{section.4.7}
+\contentsline {section}{\numberline {4.7}Approximation Analysis for SS and A*}{60}{section.4.7}
 \vspace {\cftbeforechapterskip }
 \contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{65}{part.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
