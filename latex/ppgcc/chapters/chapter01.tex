@@ -27,13 +27,13 @@
 %\chapter{Resultados de comandos}\label{cap_exemplos}
 \chapter{About the Problem}\label{aboutTheProblem}
 \noindent
-State space search algorithms have been used to solve important real$-$world problems, such as: Robotics, domain-independent planning, chemical compounds discovery, bin packing, sequence alignment, automating layouts of sewers, and network routing, amount others. In this dissertation we study methods for selecting a subset of heuristic functions while minimizing the search tree size and the running time of search algorithm.\\
+State space search algorithms have been used to solve important real-world problems, such as Robotics, domain-independent planning, chemical compounds discovery, bin packing, sequence alignment, automating layouts of sewers, and network routing, amount others. In this dissertation we study methods for selecting a subset of heuristic functions while minimizing the search tree size and the running time of the A$\sp{*}$ search algorithm.\\
 
-We are interested in selection of heuristics from a large set of heuristics because Holte et al., (\citeyear{holte2006maximizing}) showed that search can be faster if several smaller pattern databases are used instead of one large pattern database. In fact, we believe that each heuristic can give us valuable information about the solution of the problem. For example, one heuristic could be helpfull in some area of the search tree and other heuristics do not. Then, instead of using one heuristic to find the solution, would be the best to use the most promising heuristics from a large set of heuristics with the objective to find the solution of the problem.\\
+We are interested in selection of heuristics from a large set of heuristics because Holte et al., (\citeyear{holte2006maximizing}) showed that search can be faster if several smaller pattern databases are used instead of one large pattern database. In fact, we believe that each heuristic can give us valuable information about the solution of the problem. For example, one heuristic can be helpful in some area of the search tree where other heuristics aren't. Then, instead of using one heuristic to find the solution, it would be best to use the most promising subset of heuristics from a possibly large set.\\
 
 \section{Problem Formulation}
 \noindent
-We use search algorithm to solve problems or find the solution knowing the sequence of actions that goes from the start state to the goal state. To solve the problem is required the use of search algorithms. Two well know search algorithms are Depth First Search (\texttt{DFS}) and Breadth First Search (\texttt{BFS}). \texttt{DFS} looks for the solution traversing the search space exploring the nodes in each branch before backtracking up to find the solution. In the Figure \ref{fig:dfs_solution} we can see \texttt{DFS} takes 31 moves of the empty tile to find the objective distribution. \texttt{BFS} looks for the solution exploring the nodes in the first level, before moving to the next level of nodes. In the Figure \ref{fig:bfs_solution} we can see \texttt{BFS} takes 46 moves of the empty tile to find the objective distribution, what is much more than it takes \texttt{DFS}. Both search algorithms have the characteristic that generate a larger search space during the search. The search space that these algorithms generate are called Brute force search tree (\texttt{BFST}).\\
+Search algorithms are used to solve Artificial Intelligence problems by finding sequence of actions that goes from the start state to the goal state in the search space. Two well know search algorithms are Depth-First Search (\texttt{DFS}) and Breadth-First Search (\texttt{BFS}). \texttt{DFS} looks for the solution by exploring the subtree rooted node $n$ before exploring the substrees rooted at $n$'s siblings up to find the solution. In the Figure \ref{fig:dfs_solution} we can see \texttt{DFS} makes 31 moves to find the goal. \texttt{BFS} looks for the solution by exploring the nodes in a given level, before moving to the next level of nodes. In the Figure \ref{fig:bfs_solution} we can see \texttt{BFS} makes 46 moves to find the goal, what is much more than it takes \texttt{DFS}. Both search algorithms have the characteristic that generate big search space during the search. The search space that these algorithms generate we called Brute force search tree (\texttt{BFST}).\\
 
 
 \iftrue
@@ -96,7 +96,7 @@ We use search algorithm to solve problems or find the solution knowing the seque
   ]
 ]
 \end{forest}
-\caption{Solving 8 tile puzzle using DFS <http://www.slideshare.net/praveenkumar33449138/ai-ch2> slide 37.} \label{fig:dfs_solution}
+\caption{<http://www.slideshare.net/praveenkumar33449138/ai-ch2> slide 37. Solving 8 tile puzzle using DFS.} \label{fig:dfs_solution}
 \end{figure}
 \end{landscape}
 \fi
@@ -188,7 +188,7 @@ We use search algorithm to solve problems or find the solution knowing the seque
 ]
 \end{forest}
 }
-\caption{Solving 8 tile puzzle using BFS <http://www.slideshare.net/praveenkumar33449138/ai-ch2> slide 36.} \label{fig:bfs_solution}
+\caption{<http://www.slideshare.net/praveenkumar33449138/ai-ch2> slide 36. Solving 8 tile puzzle using BFS.} \label{fig:bfs_solution}
 \end{figure}
 \end{landscape}
 \fi
