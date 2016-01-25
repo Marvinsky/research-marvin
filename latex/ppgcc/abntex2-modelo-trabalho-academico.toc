@@ -24,7 +24,7 @@
 \contentsline {section}{\numberline {2.2}Problem definition}{29}{section.2.2}
 \contentsline {section}{\numberline {2.3}Heuristics}{30}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Out of place (O.P)}{31}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Manhatham Distance (M.D)}{31}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Manhatham Distance (M.D)}{32}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Heuristic Generators}{32}{section.2.4}
 \contentsline {section}{\numberline {2.5}Take advantage of Heuristics}{32}{section.2.5}
 \contentsline {section}{\numberline {2.6}Number of heuristics created}{33}{section.2.6}
