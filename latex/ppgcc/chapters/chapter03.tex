@@ -136,7 +136,7 @@ Where $W(B)$ is 0 if there is a heuristic in $\zeta\sp{'}$ whose $y$-value in $B
 The value of \textit{\^{T}} is computed by multiplying \textit{\^{J}} by the sum of the evaluation time of each heuristic in $\zeta\sp{'}$. The evaluation time of the heuristics in $\zeta\sp{'}$ is measured in a separate process, before executing \texttt{CS}, by sampling a small number of nodes from $\nabla$'s start state.
 
 \section{Stratified Sampling (SS)}
-Chen, (\citeyear{chen1992heuristic}) presented a method for estimating the search tree size of backtracking search algorithms by using a stratification of the search tree to guide its sampling. We define Chen’s stratification as a type system. In the figure \ref{fig:ss_ts} each state of the search space is mapped to the \textit{Type System}.
+Chen, (\citeyear{chen1992heuristic}) presented a method for estimating the search tree size of backtracking search algorithms by using a stratification of the search tree to guide its sampling. We define Chen’s stratification as a type system. In the figure \ref{fig:ss_ts} each state of the search space is mapped to the type system.
 
 \begin{figure}[htb]
 \centering 
@@ -205,16 +205,16 @@ $\node [xshift=1cm,yshift=2cm] (A) at (5,1) {Type System};$
 \end{figure}
 
 \subsection{Type System}
-The \textit{Type System} is a partition of the states in the state space and it is calculated based of any property of each node in the search tree. Lelis, (\citeyear{Lelis2013CC})
+The Type system is a partition of the states in the state space and it is calculated based of any property of each node in the search tree. Lelis, (\citeyear{Lelis2013CC})
 
 \iffalse
-A common mistake about \textit{type system} is to think that it is an abstraction of the state$-$space. Prieditis, (\citeyear{Prieditis93}) defines a state$-$space abstraction as a simplified version of the problem where:
+A common mistake about type system is to think that it is an abstraction of the state$-$space. Prieditis, (\citeyear{Prieditis93}) defines a state$-$space abstraction as a simplified version of the problem where:
 \begin{itemize}
 \item The cost of the least$-$cost path between two abstracted states must less than or equal to the cost of the least$-$cost path between the corresponding two states in the original state$-$space.
 \item Goal states in the original state$-$space must be goal states in the abstracted state$-$space.
 \end{itemize}
 
-The difference between state$-$space abstractions and \textit{type system} is that the last one does not have the two requeriments mentioned above. Also, there is not relation between types to argue that the \textit{type system} can be represented as a graph. Furthermore, the relation between \textit{type system} and abstractions is that \textit{type system} can not necessarily used as abstractions, and abstraction always can be used as a \textit{type system} Prieditis, (\citeyear{Prieditis93}).
+The difference between state-space abstractions and type system is that the last one does not have the two requeriments mentioned above. Also, there is not relation between types to argue that the type system can be represented as a graph. Furthermore, the relation between type system and abstractions is that type system can not necessarily used as abstractions, and abstraction always can be used as a type system Prieditis, (\citeyear{Prieditis93}).
 \fi
 
 \begin{definition}{Type System}
@@ -280,7 +280,7 @@ We recall that to compute $B(n)$ for node $n$ one needs to define a bound $b$. H
 
 \section{8-tile-puzzle Case Using type system}
 \noindent
-In this dissertation we use \textit{type system} based only in heuristics.\cite{zahavi2010predicting} use the simpliest heuristic$-$based \textit{type system} in which two nodes $n$ and $n\sp{'}$ are of the same type if they have the same heuristic value. \\
+In this dissertation we use type system based only in heuristics.\cite{zahavi2010predicting} use the type system where two nodes have the same type if they have the same heuristic value.
 
 \begin{figure}[htb]
 \centering
@@ -290,7 +290,7 @@ In this dissertation we use \textit{type system} based only in heuristics.\cite{
 \caption{The heuristic value is the position of the empty tile in a specific state.} \label{fig:type_system}
 \end{figure}
 
-Let's explain how \textit{type system} works through an example. The problem of 8$-$tile$-$puzzle in the Figure \ref{fig:type_system}, the center tile is labeled with the letter \texttt{M}, the corners labeled with \texttt{C} and the mediums with \texttt{E}. For this problem, we can define the \textit{type system} based on the position of the empty tile regarding the position of the empty tile in the goal state. For this case, two nodes $n$ and $n\sp{'}$ would be of the same type if $n$ and $n\sp{'}$ have the empty tile with the same letter and with the same distance to the empty tile of the goal state.
+Let's explain how type system works through an example. The problem of 8-tile-puzzle in the Figure \ref{fig:type_system}, the center tile is labeled with the letter \texttt{M}, the corners labeled with \texttt{C} and the mediums with \texttt{E}. For this problem, we can define the type system based on the position of the empty tile regarding the position of the empty tile in the goal state. For this case, two nodes $n$ and $n\sp{'}$ would be of the same type if $n$ and $n\sp{'}$ have the empty tile with the same letter and with the same distance to the empty tile of the goal state.
 
 In the Figure \ref{fig:empty_space_ts}, each row represent a type. The first board shows the empty tile in the center with distance to the empty tile in the goal state equal to 2. The shortest path to get to the empty tile in the goal state would be doing: down$-$left or right$-$down. Which both moves represent the same cost. Then, the type would be (2,\texttt{M}). In the next board, the empty tile is in the left top, and use the letter \texttt{C}. The minimum distance is 4 because to get the goal empty tile is necessary to do: down$-$down$-$right$-$right or right$-$right$-$down$-$down, etc. So the type would be (4, \texttt{C}). In the next board, there are two tiles that have the same type, because both have the same letter \texttt{M} with distance equal to 3. Then, both have the type (3,E). The fourth row have two boards with the same type, because both have the same letter \texttt{C} with distance equal to 2. Then, both have the type (2, \texttt{C}). The fifth row have two boards with the same type, because both have the same letter \texttt{E} with distance equal to 1. Then, both have the type (1, \texttt{E}). In the last row the empty tile is in the goal empty tile. So, the distance is zero and the letter is \texttt{C}. The type would be (0, \texttt{C}).
 
@@ -334,7 +334,9 @@ In the Figure \ref{fig:empty_space_ts}, each row represent a type. The first boa
 \section{SS step by step}
 \noindent
 % -- Explaining Stratified Sampling
-In the Figure \ref{fig:ts_search_tree}, we can see how \textit{Type System} works. In the Level 1, we have the root node, the $w$ initialized with one. Let's suppose that three nodes are generated by the root node in the Level 2. The nodes in the Level 2 have the following types: red, blue and red from left to right respectively, and each node receive the same $w$ of the father. In the Level 2 we apply \texttt{SS}'s assumption, two nodes in the same level that have the same type (The same color) root subtrees of the same size and only one node of each type must be chosen randomly to be expanded. There are two nodes with type red in Level 2. In that way, we choose randomly one of them. Let's suppose we choose the right red node. Then, we have to update the number of nodes with the type red using the $w$, both red node types have $w=1$, then we sum the $w$ and the new $w=2$. As a result, in the Level 2 we will have two nodes of red type and one node with blue type.
+In the Figure \ref{fig:ts_search_tree}, we can see how Type system works. In this dissertation we use type system based only in heuristics. Zahavi et al., (\citeyear{zahavi2010predicting}) use the type system where two nodes have the same type if they have the same heuristic value. 
+
+In the Level 1, we have the root node, the $w$ initialized with one. Let's suppose that three nodes are generated by the root node in the Level 2. The nodes in the Level 2 have the following types: red, blue and red from left to right respectively, and each node receive the same $w$ of the father. In the Level 2 we apply \texttt{SS}'s assumption, two nodes in the same level that have the same type (The same color) root subtrees of the same size and only one node of each type must be chosen randomly to be expanded. There are two nodes with type red in Level 2. In that way, we choose randomly one of them. Let's suppose we choose the right red node. Then, we have to update the number of nodes with the type red using the $w$, both red node types have $w=1$, then we sum the $w$ and the new $w=2$. As a result, in the Level 2 we will have two nodes of red type and one node with blue type.
 
 \begin{figure}[htb]
 \centering

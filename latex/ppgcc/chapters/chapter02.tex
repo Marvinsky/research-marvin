@@ -144,7 +144,7 @@ The tile 5 count 1 to get to the goal position.
 The tile 8 count 1 to get to the goal position.
 Then the sum would be 10.
 
-In order to solve the problem, we get the heuristics, which are information from the problem to solve the problem. Exists systems that can create heuristics for each problem. Those systems are called Heuristic Generators.
+In order to solve the problem, we get the heuristics, which are information from the problem to solve the problem. There exists systems that can create heuristics for each problem. Those systems are called Heuristic Generators.
 
 \section{Heuristic Generators}
 Heuristic Generators works by creating abstractions of the original problem space. The approach that has showed more successful results lately is \texttt{PDB}. Which works the following way: The search space of the problem is abstracted into a smaller state space that can be enumerated with exhaustive search. The distance of all abstracted states to the abstracted goal state are stored in a lookup table, which can be used as a heuristic function for the original state space.\\
