@@ -29,13 +29,14 @@
 \contentsline {section}{\numberline {2.5}Take advantage of Heuristics}{32}{section.2.5}
 \contentsline {section}{\numberline {2.6}Number of heuristics created}{33}{section.2.6}
 \contentsline {section}{\numberline {2.7}Heuristic Subset}{33}{section.2.7}
-\contentsline {section}{\numberline {2.8}Problem Domains}{34}{section.2.8}
+\contentsline {section}{\numberline {2.8}Problem Domains}{33}{section.2.8}
 \contentsline {subsection}{\numberline {2.8.1}Blocks world}{34}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Floortile}{34}{subsection.2.8.2}
-\contentsline {subsection}{\numberline {2.8.3}Nomystery}{35}{subsection.2.8.3}
-\contentsline {subsection}{\numberline {2.8.4}Openstacks}{35}{subsection.2.8.4}
-\contentsline {subsection}{\numberline {2.8.5}Parking}{35}{subsection.2.8.5}
-\contentsline {subsection}{\numberline {2.8.6}Sokoban}{35}{subsection.2.8.6}
+\contentsline {subsection}{\numberline {2.8.2}Barman}{34}{subsection.2.8.2}
+\contentsline {subsection}{\numberline {2.8.3}Floortile}{34}{subsection.2.8.3}
+\contentsline {subsection}{\numberline {2.8.4}Nomystery}{34}{subsection.2.8.4}
+\contentsline {subsection}{\numberline {2.8.5}Openstacks}{35}{subsection.2.8.5}
+\contentsline {subsection}{\numberline {2.8.6}Parking}{35}{subsection.2.8.6}
+\contentsline {subsection}{\numberline {2.8.7}Sokoban}{35}{subsection.2.8.7}
 \contentsline {part}{\partnumberline {III}\MakeTextUppercase {Approach Proposal}}{37}{part.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Meta-Reasoning for selection}}{39}{chapter.3}
