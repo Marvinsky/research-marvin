@@ -32,7 +32,7 @@
 
 We run two sets of experiments. In the first set we verify whether the approximations $\hat{J}$ and $\hat{T}$ provided by \texttt{CS} and \texttt{SS} allow \texttt{GHS} to make near-optimal and good subset selections for A$\sp{*}$ search tree size and running time respectively. In the second set of experiments we test the effectiveness of \texttt{GHS} by measuring the total number of problem instances solved by A$\sp{*}$ using a heuristic subset selected by \texttt{GHS}.
 
-The \texttt{GHS} is executed up to no better solution is found. Then, in every iteration, when computing $M_{i}$, \texttt{GHS} removes from $\zeta$ the heuristics that cannot help reducing $\varphi$. That is, in iteration $i$, all heuristics in $\zeta \backslash \zeta_{i-1}\sp{'}$ that cannot reduce $\varphi$ when combined with $\zeta_{i-1}\sp{'}$ are removed from $\zeta$. \texttt{GHS} stops if $\zeta$ is empty and returns the current subset $\zeta\sp{'}$.
+The \texttt{GHS} is executed up to adding another heuristic does not improve the objective function. In each iteration \texttt{GHS} greedily selects from $\zeta$ the heuristic $h$ which will result in the largest reduction of the value of the objective function $\Psi$. \texttt{GHS} returns $\zeta\sp{'}$ once the objective function can not be improved.
 
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
