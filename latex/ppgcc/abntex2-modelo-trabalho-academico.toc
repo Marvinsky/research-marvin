@@ -59,10 +59,10 @@
 \contentsline {section}{\numberline {4.6}Comparison between SS and A*}{56}{section.4.6}
 \contentsline {section}{\numberline {4.7}Approximation Analysis for SS and A*}{57}{section.4.7}
 \vspace {\cftbeforechapterskip }
-\contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{61}{part.5}
+\contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{63}{part.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Concluding Remarks}}{63}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Concluding Remarks}}{65}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Bibliography}{65}{section*.16}
+\contentsline {chapter}{Bibliography}{67}{section*.16}
 \vspace {\cftbeforechapterskip }
