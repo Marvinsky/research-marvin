@@ -136,7 +136,7 @@ Where $W(B)$ is 0 if there is a heuristic in $\zeta\sp{'}$ whose $y$-value in $B
 The value of \textit{\^{T}} is computed by multiplying \textit{\^{J}} by the sum of the evaluation time of each heuristic in $\zeta\sp{'}$. The evaluation time of the heuristics in $\zeta\sp{'}$ is measured in a separate process, before executing \texttt{CS}, by sampling a small number of nodes from $\nabla$'s start state.
 
 \section{Stratified Sampling (SS)}
-Chen, (\citeyear{chen1992heuristic}) presented a method for estimating the search tree size of backtracking search algorithms by using a stratification of the search tree to guide its sampling. We define Chen’s stratification as a type system. In the figure \ref{fig:ss_ts} each state of the search space is mapped to the type system.
+Chen, (\citeyear{chen1992heuristic}) presented a method for estimating the search tree size of backtracking search algorithms by using a stratification of the search tree to guide its sampling. We define Chen’s stratification as a type system.
 
 \begin{figure}[htb]
 \centering 
@@ -205,7 +205,7 @@ $\node [xshift=1cm,yshift=2cm] (A) at (5,1) {Type System};$
 \end{figure}
 
 \subsection{Type System}
-The type system is calculated based of any property of each node in the search tree. In addition, nodes will have the same type if they have the same $f$-value. This new search space that is created with the types is called partition of the search space. Lelis, (\citeyear{Lelis2013CC})
+The type system is calculated based of any property of each node in the search space. In addition, this new search space that is created with the types is called partition of the search space and nodes are going to have the same type if they have the same $f$-value. Lelis et al., (\citeyear{lelis2013predicting}). In the Figure \ref{fig:ss_ts} we can see that the type system is a partition of the type system.
 
 \iffalse
 A common mistake about type system is to think that it is an abstraction of the state$-$space. Prieditis, (\citeyear{Prieditis93}) defines a state$-$space abstraction as a simplified version of the problem where:
@@ -221,11 +221,7 @@ The difference between state-space abstractions and type system is that the last
 Let S = (N,E) be a search tree, where N is its set of nodes and  for each n $\in$ N, $\{n\sp{'}|(n,n\sp{'})\ \in\ E \}$ is n's set of child nodes. $TS = \{t_{1},...,t_{k} \}$ is a type system for S if it is a disjoint partitioning of N. If $n\ \in\ N$ and $t\ \in\ TS$ with $n\ \in\ t$, we write $TS(n) = t$.
 \end{definition}
 
-\texttt{SS} is a general method for approximating any function of the form $\varphi = \sum_{n \in S}z(n)$, where $z$ is any function assigning a numerical value to a node.  $\varphi$ represents a numerical property of the search tree rooted at $n\sp{*}$. For instance, if $z(n)=1$ for all $n \in S$, then $\varphi$ is the size of the tree.
-
-Instead of traversing the entire tree and summing all $z-$values, \texttt{SS} assumes subtrees rooted at nodes of the same type will have equal values of $\varphi$ and only one node of each type, chosen randomly, is expanded. This is the key to $\texttt{SS}$'s efficiency since the search trees of practical interest have far too many nodes to be examined exhaustively.
-
-Given a search tree $S$ and a type system $TS$, \texttt{SS} estimates $\varphi$ as follows. First, it samples the tree and returns a set $A$ of $representative-weight$ pairs, with one such pair for every unique type seen during sampling. In the pair $\left\langle s,w \right\rangle$ in $A$ for type $t \in TS$, $n$ is the unique node of type $t$ that was expanded during search and $w$ is an estimate of the number of nodes type $t$ in the tree. $\varphi$ is then approximated by $\hat{\varphi}$, defined as, $\hat{\varphi} =  \sum_{\left\langle s,w \right\rangle \in A}w \times z(n)$.
+According to Lelis et al., (\citeyear{lelis2013predicting}), \texttt{SS} is a general method for approximating any function of the form $\varphi = \sum_{n \in S}z(n)$, where $z$ is any function assigning a numerical value to a node.  $\varphi$ represents a numerical property of the search tree rooted at $n\sp{*}$. For instance, if $z(n)=1$ for all $n \in S$, then $\varphi$ is the size of the tree. Instead of traversing the entire tree and summing all $z-$values, \texttt{SS} assumes subtrees rooted at nodes of the same type will have equal values of $\varphi$ and only one node of each type, chosen randomly, is expanded. This is the key to $\texttt{SS}$'s efficiency since the search trees of practical interest have far too many nodes to be examined exhaustively. Given a search tree $S$ and a type system $TS$, \texttt{SS} estimates $\varphi$ as follows. First, it samples the tree and returns a set $A$ of $representative-weight$ pairs, with one such pair for every unique type seen during sampling. In the pair $\left\langle s,w \right\rangle$ in $A$ for type $t \in TS$, $n$ is the unique node of type $t$ that was expanded during search and $w$ is an estimate of the number of nodes type $t$ in the tree. $\varphi$ is then approximated by $\hat{\varphi}$, defined as, $\hat{\varphi} =  \sum_{\left\langle s,w \right\rangle \in A}w \times z(n)$. 
 
 By making $z(n) = 1$ for all $n \in S$ \texttt{SS} prooduces an estimate $\hat{J}$ of $J$. Similarly to our approach with \texttt{CS}, we obtain $\hat{T}$ by multiplying $\hat{J}$ by the heuristic evaluation time.
 
@@ -233,22 +229,22 @@ By making $z(n) = 1$ for all $n \in S$ \texttt{SS} prooduces an estimate $\hat{J
 \begin{algorithm}
 \SetKwInOut{Input}{Input}
 \SetKwInOut{Output}{Output}
-\Input{root $n\sp{*}$ of a tree and a type system $T$}
-\Output{an array of sets $A$, where $A[i]$ is the set of pairs $<n,w>$ for the nodes $n$ expanded at level $i$.}
+\Input{root $n\sp{*}$ of a tree and a type system $TS$, upper bound $d$, heuristic function $h$}
+\Output{an array of sets $A$, where $A[i]$ is the set of (node, weight) pairs $<s,w>$ for the nodes $n$ expanded at level $i$.}
 
-$A[0] \leftarrow \{\left\langle  n\sp{*},1 \right\rangle \}$
+$A[0] \leftarrow \{\left\langle  s\sp{*},1 \right\rangle \}$
 
 $i \leftarrow 0$
 
 \While{A[i] is not empty} {
-	\For{each element $\left\langle n,w \right\rangle$ in $A[i]$} {
+	\For{each element $\left\langle s,w \right\rangle$ in $A[i]$} {
 		\For{each child $\hat{n}$ of n} {
 			\If{$g(\hat{n}) + h(\hat{n}) \leq d$} {
-				\If{$A[i+1]$ contains an element $\left\langle n\sp{'}, w\sp{'} \right\rangle$ with $T(n\sp{'}) = T(\hat{n})$} {
+				\If{$A[i+1]$ contains an element $\left\langle n\sp{'}, w\sp{'} \right\rangle$ with $TS(n\sp{'}) = TS(\hat{n})$} {
 				$w\sp{'} \leftarrow w\sp{'} + w$\\ 
-				with probability $w/w\sp{'}$, replace $\left\langle n\sp{'}, w\sp{'} \right\rangle$ in\\ $A[i+1]$ by $\left\langle \hat{n},w\sp{'} \right\rangle$
+				with probability $w/w\sp{'}$, replace $\left\langle n\sp{'}, w\sp{'} \right\rangle$ in $A[i+1]$ by $\left\langle \hat{n},w\sp{'} \right\rangle$
 				} \Else {	
-					insert new element $\left\langle \hat{n},w\sp{'} \right\rangle$	 in $A[i+1]$
+					insert new element $\left\langle \hat{n},w \right\rangle$	 in $A[i+1]$
 				}
 			}
 		}
@@ -263,7 +259,7 @@ In \texttt{SS} the types are required to be partially ordered: a node's type mus
 
 Algorithm \ref{alg:ss_algorithm} shows \texttt{SS} in detail. Representative nodes from $A[i]$ are expanded to get representative nodes for $A[i+1]$ as follows. $A[0]$ is initialized to contain only the root of the search tree to be probed, with weight 1 (Line 1). In each iteration (Lines 4 through 11), all nodes in $A[i]$ are expanded. The children of each node in $A[i]$ are considered for inclusion in $A[i+1]$ if their $f-$value do not exceed an upper bound $d$ provided as input to \texttt{SS}. If a child $\hat{n}$ has a type $t$ that is already represented in $A[i+1]$ by another node $n\sp{'}$, then a $merge$ action on $\hat{n}$ and $n\sp{'}$ is performed. In a merge action we increase the weight in the corresponding representative$-$weight pair of type $t$ by the weight $w(n)$ of $\hat{n}$'s parent $n$ (from level $i$) since there were $w(n)$ nodes at level $i$ that are assumed to have children of type $t$ at level $i+1$. $\hat{n}$ will replace $n\sp{'}$ according to the probability shown in Line 9. Chen, (\citeyear{chen1992heuristic}) proved that this probability reduces the variance of the estimation. Once all the states in $A[i]$ are expanded, we move to the next iteration.
 
-One run of the \texttt{SS} algorithm is called a $probe$. Chen,  (\citeyear{chen1992heuristic}) proved that the expected value of $\hat{\varphi}$ converges to $\varphi$ in the limit as the number of probes goes to infinity. As Lelis et al., (\citeyear{lelis2014estimating}), \texttt{SS} is not able to detect duplicated nodes in its sampling process. As a result, since A$\sp{*}$ does not expanded duplicates, \texttt{SS} usually overestimates the actual number of nodes A$\sp{*}$ expands. Thus, in the limit, as the number of probes grows large, \texttt{SS}'s prediction converges to a number which  is likely to overestimate the A$\sp{*}$ search tree size. We test empirically whether \texttt{SS} is able to allow \texttt{GHS} to make near-optimal subset selection with respect to A$\sp{*}$ search tree in 10\% optimal and good subset selection with respect to the A$\sp{*}$ running time, despite being unable to detect duplicated nodes during sampling.
+One run of the \texttt{SS} algorithm is called a $probe$. Chen,  (\citeyear{chen1992heuristic}) proved that the expected value of $\hat{\varphi}$ converges to $\varphi$ in the limit as the number of probes goes to infinity. As Lelis et al., (\citeyear{lelis2014estimating}), \texttt{SS} is not able to detect duplicated nodes in its sampling process. As a result, since A$\sp{*}$ does not expanded duplicates, \texttt{SS} usually overestimates the actual number of nodes A$\sp{*}$ expands. Thus, in the limit, as the number of probes grows large, \texttt{SS}'s prediction converges to a number which  is likely to overestimate the A$\sp{*}$ search tree size. We test empirically whether \texttt{SS} is able to allow \texttt{GHS} to make good subset selects despite being unable to detect duplicated nodes during sampling.
 
 Similarly to \texttt{CS}, we also define a time$-$limit to run \texttt{SS}. We use \texttt{SS} with an iterative$-$deepening approach in order to ensure an estimate of $\hat{J}$ and $\hat{T}$ before reaching the time limit. We set the upper bound $d$ to the heuristic value of the start state and, after performing $p$ probes, if there is still time, we increase $d$ to twice its previous value. The values of $\hat{J}$ and $\hat{T}$ is given by the prediction produced for the last $d-$value in which \texttt{SS} was able to perform all $p$ probes.
 
@@ -280,7 +276,7 @@ We recall that to compute $B(n)$ for node $n$ one needs to define a bound $b$. H
 
 \section{8-tile-puzzle Case Using type system}
 \noindent
-In this dissertation we use type system based only in heuristics.\cite{zahavi2010predicting} use the type system where two nodes have the same type if they have the same heuristic value.
+In this dissertation we use type system based only in heuristics.\cite{lelis2013predicting} use the type system where two nodes have the same type if they have the same heuristic value.
 
 \begin{figure}[htb]
 \centering
@@ -334,7 +330,7 @@ In the Figure \ref{fig:empty_space_ts}, each row represent a type. The first boa
 \section{SS step by step}
 \noindent
 % -- Explaining Stratified Sampling
-In the Figure \ref{fig:ts_search_tree}, we can see how type system works. In this dissertation we use type system based only in heuristics. Zahavi et al., (\citeyear{zahavi2010predicting}) use the type system where two nodes have the same type if they have the same heuristic value. 
+In the Figure \ref{fig:ts_search_tree}, we can see how type system works. In this dissertation we use type system based only in heuristics. Lelis et al., (\citeyear{lelis2013predicting}) use the type system where two nodes have the same type if they have the same heuristic value. 
 
 In the Level 1, we have the root node, the $w$ initialized with one. Let's suppose that three nodes are generated by the root node in the Level 2. The nodes in the Level 2 have the following types: red, blue and red from left to right respectively, and each node receive the same $w$ of the father. In the Level 2 we apply \texttt{SS}'s assumption, two nodes in the same level that have the same type (The same color) root subtrees of the same size and only one node of each type must be chosen randomly to be expanded. There are two nodes with type red in Level 2. In that way, we choose randomly one of them. Let's suppose we choose the right red node. Then, we have to update the number of nodes with the type red using the $w$, both red node types have $w=1$, then we sum the $w$ and the new $w=2$. As a result, in the Level 2 we will have two nodes of red type and one node with blue type.
 

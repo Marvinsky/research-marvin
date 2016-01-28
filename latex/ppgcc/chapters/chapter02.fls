@@ -6,8 +6,8 @@ INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT chapter02.tex
 OUTPUT chapter02.log
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 OUTPUT chapter02.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
