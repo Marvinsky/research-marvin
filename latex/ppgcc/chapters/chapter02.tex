@@ -158,14 +158,10 @@ If we have to choose which heuristic to use between $h1$ or $h2$ or max($h1, h2$
 
 There exists different approaches to take advantage from a large set of heuristics. In this dissertation we use the meta-reasoning based on the minimum size of the search tree generated and the minimum evaluation time.
 
-\section{Number of heuristics created}
-Let's suppose we have to run our meta-reasoning using $M$ amount of memory available. Then, the question would be: How many heuristics our system should handle in order to avoid out of memory errors?. So, one of the objectives of this dissertation is to find the number of heuristics that our subset $\zeta\sp{'}$ should have.
- 
-Holte et al., (\citeyear{holte2006maximizing}) observed that maximizing over $N$ pattern databases of size $M/N$, for a suitable choice $N$, produces a significant reduction in the number of nodes generated compared to using a single pattern database of size $M$.
-
 \section{Heuristic Subset}
-The heuristic generators systems can create a large number of heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best N $=$ 50 heuristics. This would be: $${1000\choose 50} \approx 10\sp{85} possibilities$$
-So, try to select heuristics from a large set of heuristics are going to be treated as an optimization problem. Then, in order to obtain a good selection of subset of heuristics, we use our meta-reasoning approach of selection which work for monotone and non-monotone objective functions.
+Let's suppose we have to run our meta-reasoning using $M$ amount of memory available. Then, one question is raised: How many heuristics our system should handle in order to avoid out of memory errors and stop the system? Holte et al., (\citeyear{holte2006maximizing}) observed that maximizing over $N$ pattern databases of size $M/N$, for $N < M$, produces a size of the search tree lower than using a single pattern database of size $M$. Then, the number of heuristics that we need to select from a larger set of heuristics must be suitable to make our system work without memory errors.
+
+The heuristic generators systems can create a large number of heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best $N =$ 50 heuristics. This would be: $${1000\choose 50} \approx 10\sp{85} possibilities$$. Therefore, try to select heuristics from a large set of heuristics are going to be treated as an optimization problem.
 
 \section{Problem Domains}
 Some of the problems we are trying to solve are the optimal domains for International Planning Competition (\texttt{IPC}).
