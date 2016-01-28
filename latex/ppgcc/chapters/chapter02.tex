@@ -161,7 +161,9 @@ There exists different approaches to take advantage from a large set of heuristi
 \section{Heuristic Subset}
 Let's suppose we have to run our meta-reasoning using $M$ amount of memory available. Then, one question is raised: How many heuristics our system should handle in order to avoid out of memory errors and stop the system? Holte et al., (\citeyear{holte2006maximizing}) observed that maximizing over $N$ pattern databases of size $M/N$, for $N < M$, produces a size of the search tree lower than using a single pattern database of size $M$. Then, the number of heuristics that we need to select from a larger set of heuristics must be suitable to make our system work without memory errors.
 
-The heuristic generators systems can create a large number of heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best $N =$ 50 heuristics. This would be: $${1000\choose 50} \approx 10\sp{85} possibilities$$. Therefore, try to select heuristics from a large set of heuristics are going to be treated as an optimization problem.
+The heuristic generators systems can create a large number of heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best $N =$ 50 heuristics. This would be: $${1000\choose 50} \approx 10\sp{85} possibilities$$
+
+There are a lot of posibilities to be analyzed in the selection of heuristics. Therefore, try to select heuristics from a large set of heuristics are going to be treated as an optimization problem.
 
 \section{Problem Domains}
 Some of the problems we are trying to solve are the optimal domains for International Planning Competition (\texttt{IPC}).
@@ -192,7 +194,7 @@ This domain consists in a robot that can move in four directions (up, down, left
 This domain consists in a truck that transport and load/unload packages from one node to another considering the resources consumption. For example, the fuel is measured based on the weigthed graph and each move consumes the edge weight in fuel. The goal is to find the plan that transport the packages based on the resource constrained.
 
 \subsection{Openstacks}
-This domain consists in a manufacture that produce only one product at a time. This is because changing one product to another require production stop. The time that last to produce all the elements from one product is called ``open‘’ and the time each element of that product to be stored during the production is called ``stack‘’. This is an optimization problem where require to order the products to be made in order to maximize the number of stacks that are in simultaneously.
+This domain consists in a manufacture that produce only one product at a time. This is because we want to avoid production stop when changing from one product to another. The time that last to produce all the elements from one product is called ``open‘’ and the time each element of that product to be stored during the production is called ``stack‘’. This is an optimization problem that require to order the products to be made in order to maximize the number of stacks that are in simultaneously.
 
 Finding a plan for this problem could be make it using a domain-specific algorithm, however finding an optimal solution is hard.
 
@@ -200,7 +202,7 @@ Finding a plan for this problem could be make it using a domain-specific algorit
 This domain consists in parking cars from one configuration to another. Only are allowed double-parked but not triped parked.
 
 \subsection{Sokoban}
-This domain consists in a agent and a set of blocks. The agent has to push the blocks in a specified goal location.
+This domain consists in a agent and a set of blocks. The agent has to push the blocks in a specified goal location. 
 
 \begin{figure}[!htb]
 \begin{center}
