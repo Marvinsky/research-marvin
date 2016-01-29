@@ -51,12 +51,12 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Empirical Evaluation}}{49}{chapter.4}
 \contentsline {section}{\numberline {4.1}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{50}{section.4.1}
-\contentsline {section}{\numberline {4.2}Comparison with Other Planning Systems}{51}{section.4.2}
+\contentsline {section}{\numberline {4.2}Comparison with Other Planning Systems}{52}{section.4.2}
 \contentsline {section}{\numberline {4.3}Systems Tested}{52}{section.4.3}
 \contentsline {section}{\numberline {4.4}Discussion of the Results}{53}{section.4.4}
 \contentsline {section}{\numberline {4.5}Comparison between SS and IDA*}{55}{section.4.5}
-\contentsline {section}{\numberline {4.6}Comparison between SS and A*}{56}{section.4.6}
-\contentsline {section}{\numberline {4.7}Approximation Analysis for SS and A*}{57}{section.4.7}
+\contentsline {section}{\numberline {4.6}Comparison between SS and A*}{57}{section.4.6}
+\contentsline {section}{\numberline {4.7}Approximation Analysis for SS and A*}{58}{section.4.7}
 \vspace {\cftbeforechapterskip }
 \contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{63}{part.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }

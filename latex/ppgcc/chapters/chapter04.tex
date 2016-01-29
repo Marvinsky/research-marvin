@@ -78,7 +78,34 @@ Table \ref{tb_one} shows the average ratios of $J(\zeta\sp{'})$ to $J(\zeta)$ fo
 
 The exceptions in Table \ref{tb_one} are the ratios for Elevators, Scanalyzer and Woodworking. In Elevators \texttt{SS} has an average ratio of $11.50$ and \texttt{CS} of $1.03$. By looking at the ratios of \texttt{SS} for individual instances of Scanalyzer (results now show in Table \ref{tb_one}), we noticed that \texttt{SS} is able to make good selections for all but 3 of the 7 instances considered in this experiment. Since we do not know a priori what is the instance's optimal solution cost, \texttt{SS} samples nodes with $f-$values much larger than the instance's optimal solution cost. We believe that, in this particular instance of Scanalyzer, by sampling a portion of the state space that is not expanded during the actual A$\sp{*}$, \texttt{SS} is biasing the subset selection to select heuristics that do not contribute to reducing the actual A$\sp{*}$ search tree size.
 
-The \texttt{SS}'s ability of sampling deep into the search space is not always harmful. For example, \texttt{SS} allows \texttt{GHS} to make good selections for instances of the Woodworking domain. By contrast, \texttt{CS}'s systematic approach to sampling only allow a shallow sample of the A$\sp{*}$ search tree. As a result, \texttt{GHS} makes a limited selection of heuristics to guide A$\sp{*}$ search. While \texttt{GHS} using \texttt{SS} selects an average of 3 heuristics in Woodworking instances, \texttt{GHS} using \texttt{CS} selects only an average of 5 heuristics. This difference on sampling strategies reflects on the number of problems solved by A$\sp{*}$. While \texttt{GHS+SS} solves 12 instances of the Woodworking domain, \texttt{GHS+CS} solves only 11. In total, out of the 280 instances of the \texttt{IPC} 2011 benchmark set, \texttt{GHS+SS} solves 199 problem instances in this experiment, while \texttt{GHS+CS} only solves 194 problem instances. (The numbers of instances solved are not shown in Table \ref{tb_one}).
+\begin{table}[]
+\centering
+\caption{Coverage of \texttt{SS}, \texttt{CS} and \texttt{Max} on the 2011 IPC benchmarks. For GHS using only \texttt{GA-PDBs} heuristics.}
+\label{my-label}
+\begin{tabular}{lccc}
+\hline
+Domain      & SS & CS & Max \\ \hline
+Barman      & 8          & 7          & 4           \\
+Elevators   & 19         & 19         & 19          \\
+Floortile   & 10         & 10         & 9           \\
+Nomystery   & 20         & 20         & 20          \\
+Openstacks  & 17         & 17         & 11          \\
+Parcprinter & 17         & 15         & 14          \\
+Parking     & 1          & 1          & 1           \\
+Pegsol      & 19         & 19         & 19          \\
+Scanalyzer  & 10         & 10         & 10          \\
+Sokoban     & 20         & 20         & 20          \\
+Tidybot     & 14         & 13         & 11          \\
+Transport   & 14         & 14         & 14          \\
+Visitall    & 18         & 18         & 18          \\
+Woodworking & 12         & 11         & 12          \\ \hline
+Total       & 199        & 194        & 182         \\ \hline
+\end{tabular}
+\label{tb_onlygapdbs}
+\end{table}
+
+
+The \texttt{SS}'s ability of sampling deep into the search space is not always harmful. For example, \texttt{SS} allows \texttt{GHS} to make good selections for instances of the Woodworking domain. By contrast, \texttt{CS}'s systematic approach to sampling only allow a shallow sample of the A$\sp{*}$ search tree. As a result, \texttt{GHS} makes a limited selection of heuristics to guide A$\sp{*}$ search. While \texttt{GHS} using \texttt{SS} selects an average of 3 heuristics in Woodworking instances, \texttt{GHS} using \texttt{CS} selects only an average of 5 heuristics. This difference on sampling strategies reflects on the number of problems solved by A$\sp{*}$. While \texttt{GHS+SS} solves 12 instances of the Woodworking domain, \texttt{GHS+CS} solves only 11. In total, out of the 280 instances of the \texttt{IPC} 2011 benchmark set, \texttt{GHS+SS} solves 199 problem instances in this experiment, while \texttt{GHS+CS} only solves 194 problem instances. (The numbers of instances solved are shown in Table \ref{tb_onlygapdbs}).
 
 \section{Comparison with Other Planning Systems}
 \noindent
@@ -233,7 +260,7 @@ Here we show that \texttt{SS} is able to make near-optimal selection of heuristi
 
 Even though, \texttt{SS} has poor prediction system for A$\sp{*}$, as the Table \ref{tb:ipdb_lmcut_mands} says, we have used \texttt{SS} in our utility function and observed that we get to solve many instances for optimal domains. In this experiment we analize the approximation of \texttt{SS} against A$\sp{*}$. 
 
-Moreover, in order to understand how \texttt{SS} and A$\sp{*}$ behaves we have created plots with the fixed range of 2. This way we are going to have 4 different regions as shown in the Figure \ref{fig:img_cartesian_plane} . The points represent the fraction between the  number of nodes expanded by A$\sp{*}$ using a heuristic $i$ ($J(h_{i})$), and the estimate of the number of nodes expanded by \texttt{SS} ($\hat{J}(h_{i})$). Points on regions II and III are heuristics that \texttt{SS} correctly choose to be used with A$\sp{*}$. Points following on the other regions are those choices, \texttt{SS} made incorrectly. For abscissa $y$ in the cartesian plane, which is represented by A$\sp{*}$ ratios: $J(h_{1}) > J(h_{2})$ means that A$\sp{*}$ expands fewer nodes if using $h_{h2}$.
+Moreover, in order to understand how \texttt{SS} and A$\sp{*}$ behaves we have created plots with the fixed range of 2. This way we are going to have 4 different regions as shown in the Figure \ref{fig:img_cartesian_plane} . The points represent the fraction between the  number of nodes expanded by A$\sp{*}$ using a heuristic $i$ ($J(h_{i})$), and the estimate of the number of nodes expanded by \texttt{SS} ($\hat{J}(h_{i})$). Points on regions II and III are heuristics that \texttt{SS} correctly choose to be used with A$\sp{*}$. Points following on the other regions are those choices, \texttt{SS} made incorrectly. For abscissa $y$ in the cartesian plane, which is represented by A$\sp{*}$ ratios: $J(h_{1}) > J(h_{2})$ means that A$\sp{*}$ expands fewer nodes if using $h_{2}$.
 
 Points that fall in each of the regions:
 \begin{enumerate}[label=\Roman*] 
