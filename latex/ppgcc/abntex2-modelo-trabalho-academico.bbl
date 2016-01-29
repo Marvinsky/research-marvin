@@ -72,6 +72,11 @@ Accessed: 2016-24-01.}
   heuristic search.
 \emph{Artificial Intelligence}, Elsevier, v.~170, n.~16, p. 1123--1136, 2006.}
 
+\bibitem[Lelis, Zilles e Holte 2012]{lelis2012fast}
+\abntrefinfo{Lelis, Zilles e Holte}{LELIS; ZILLES; HOLTE}{2012}
+{LELIS, L.; ZILLES, S.; HOLTE, R.~C. Fast and accurate predictions of ida*'s
+  performance. In:  \emph{AAAI}. [S.l.: s.n.], 2012.}
+
 \bibitem[Lelis, Otten e Dechter 2014]{lelis2014memory}
 \abntrefinfo{Lelis, Otten e Dechter}{LELIS; OTTEN; DECHTER}{2014}
 {LELIS, L.~H.; OTTEN, L.; DECHTER, R. Memory-efficient tree size prediction for

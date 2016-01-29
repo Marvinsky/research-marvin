@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  29 JAN 2016 18:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  29 JAN 2016 20:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2346,102 +2346,99 @@ Overfull \hbox (9.50272pt too wide) in paragraph at lines 138--159
 [54] [55]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 194.
+               Default added (so using `tbp') on input line 192.
 
 
-Underfull \vbox (badness 4084) has occurred while \output is active []
-
- [56]
-Overfull \hbox (22.56631pt too wide) in paragraph at lines 233--249
+Overfull \hbox (22.56631pt too wide) in paragraph at lines 231--247
  [][] 
  []
 
-[57] [58] <images/elevators-opt11-strips.jpeg, id=604, 481.8pt x 481.8pt>
+[56] [57] [58] <images/elevators-opt11-strips.jpeg, id=606, 481.8pt x 481.8pt>
 File: images/elevators-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/elevators-opt11-strips.jpeg>
 Package pdftex.def Info: images/elevators-opt11-strips.jpeg used on input line 
-313.
+311.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/floortile-opt11-strips.jpeg, id=605, 481.8pt x 481.8pt>
+<images/floortile-opt11-strips.jpeg, id=607, 481.8pt x 481.8pt>
 File: images/floortile-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/floortile-opt11-strips.jpeg>
 Package pdftex.def Info: images/floortile-opt11-strips.jpeg used on input line 
-316.
+314.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/nomystery-opt11-strips.jpeg, id=606, 481.8pt x 481.8pt>
+<images/nomystery-opt11-strips.jpeg, id=608, 481.8pt x 481.8pt>
 File: images/nomystery-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/nomystery-opt11-strips.jpeg>
 Package pdftex.def Info: images/nomystery-opt11-strips.jpeg used on input line 
-319.
+317.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/parcprinter-opt11-strips.jpeg, id=607, 481.8pt x 481.8pt>
+<images/parcprinter-opt11-strips.jpeg, id=609, 481.8pt x 481.8pt>
 File: images/parcprinter-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/parcprinter-opt11-strips.jpeg>
 Package pdftex.def Info: images/parcprinter-opt11-strips.jpeg used on input lin
-e 324.
+e 322.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/pegsol-opt11-strips.jpeg, id=608, 481.8pt x 481.8pt>
+<images/pegsol-opt11-strips.jpeg, id=610, 481.8pt x 481.8pt>
 File: images/pegsol-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/pegsol-opt11-strips.jpeg>
-Package pdftex.def Info: images/pegsol-opt11-strips.jpeg used on input line 327
+Package pdftex.def Info: images/pegsol-opt11-strips.jpeg used on input line 325
 .
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/scanalyzer-opt11-strips.jpeg, id=609, 481.8pt x 481.8pt>
+<images/scanalyzer-opt11-strips.jpeg, id=611, 481.8pt x 481.8pt>
 File: images/scanalyzer-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/scanalyzer-opt11-strips.jpeg>
 Package pdftex.def Info: images/scanalyzer-opt11-strips.jpeg used on input line
- 330.
+ 328.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/sokoban-opt11-strips.jpeg, id=610, 481.8pt x 481.8pt>
+<images/sokoban-opt11-strips.jpeg, id=612, 481.8pt x 481.8pt>
 File: images/sokoban-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/sokoban-opt11-strips.jpeg>
 Package pdftex.def Info: images/sokoban-opt11-strips.jpeg used on input line 33
-5.
+3.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/tidybot-opt11-strips.jpeg, id=611, 481.8pt x 481.8pt>
+<images/tidybot-opt11-strips.jpeg, id=613, 481.8pt x 481.8pt>
 File: images/tidybot-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/tidybot-opt11-strips.jpeg>
 Package pdftex.def Info: images/tidybot-opt11-strips.jpeg used on input line 33
-8.
+6.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/transport-opt11-strips.jpeg, id=612, 481.8pt x 481.8pt>
+<images/transport-opt11-strips.jpeg, id=614, 481.8pt x 481.8pt>
 File: images/transport-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/transport-opt11-strips.jpeg>
 Package pdftex.def Info: images/transport-opt11-strips.jpeg used on input line 
-341.
+339.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/visitall-opt11-strips.jpeg, id=613, 481.8pt x 481.8pt>
+<images/visitall-opt11-strips.jpeg, id=615, 481.8pt x 481.8pt>
 File: images/visitall-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/visitall-opt11-strips.jpeg>
 Package pdftex.def Info: images/visitall-opt11-strips.jpeg used on input line 3
-46.
+44.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/woodworking-opt11-strips.jpeg, id=614, 481.8pt x 481.8pt>
+<images/woodworking-opt11-strips.jpeg, id=616, 481.8pt x 481.8pt>
 File: images/woodworking-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/woodworking-opt11-strips.jpeg>
 Package pdftex.def Info: images/woodworking-opt11-strips.jpeg used on input lin
-e 349.
+e 347.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
  [59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2496,7 +2493,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1064.
 
 Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
 ot changed.
-(rerunfilecheck)             Checksum: CC3B48FDB9AA49BB31AE2F11DEC35E4E;2595.
+(rerunfilecheck)             Checksum: 2E078225721B9D3E4C07D8023CD64A85;2648.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -2504,10 +2501,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1064.
  ) 
 Here is how much of TeX's memory you used:
- 39332 strings out of 493304
- 836919 string characters out of 6139870
- 1422049 words of memory out of 5000000
- 41646 multiletter control sequences out of 15000+600000
+ 39343 strings out of 493304
+ 837125 string characters out of 6139870
+ 1422252 words of memory out of 5000000
+ 41656 multiletter control sequences out of 15000+600000
  130041 words of font info for 224 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  123i,25n,140p,2111b,6593s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2535,11 +2532,11 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1
 /public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
 m2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (70 pages, 894541 bytes
+Output written on abntex2-modelo-trabalho-academico.pdf (70 pages, 894796 bytes
 ).
 PDF statistics:
- 1046 PDF objects out of 1200 (max. 8388607)
- 919 compressed objects within 10 object streams
- 221 named destinations out of 1000 (max. 500000)
+ 1049 PDF objects out of 1200 (max. 8388607)
+ 922 compressed objects within 10 object streams
+ 222 named destinations out of 1000 (max. 500000)
  43049 words of extra memory for PDF output out of 51595 (max. 10000000)
 
