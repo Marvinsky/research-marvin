@@ -467,8 +467,6 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx6.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri7.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt8.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt8.tfm
 OUTPUT chapters/chapter04.aux
 INPUT chapters/chapter04.tex
 INPUT chapters/chapter04.tex
