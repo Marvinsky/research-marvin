@@ -101,7 +101,7 @@ Given a set of admissible and consistent heuristics $\zeta = \{h_{1}, h_{2}, \do
 The heuristics can be obtained from each state of the problem. For example, from the problem 8-tile-puzzle figure \ref{fig:8tilepuzzle_begin} we can obtain two informative heuristics.
 
 \subsection{Out of place (O.P)}
-This heuristic counts the number of tiles that are out of the position that should be in the goal state. If the tile is not in the position that should be in the goal state, then it counts as one, otherwise it would be zero. 
+This heuristic counts the number of tiles that are out of the position that should be in the goal state. If the tile is not in the position that should be in the goal state, then it counts as one, otherwise it counts as zero. 
 
 \begin{figure}[htb]
 \centering
@@ -134,14 +134,14 @@ This heuristic counts the minimum number of operations that should be applied to
 \caption{Manhatham distance heuristic} \label{fig:8tilepuzzle_md}
 \end{figure}
 
-The tile 4 count 1 to get to the goal position.
-The tile 1 count 1 to get to the goal position.
-The tile 2 count 1 to get to the goal position.
-The tile 3 count 1 to get to the goal position.
-The tile 6 count 1 to get to the goal position.
-The tile 7 count 1 to get to the goal position.
-The tile 5 count 2 to get to the goal position.
-The tile 8 count 2 to get to the goal position.
+The tile 4 counts 1 to get to the goal position.
+The tile 1 counts 1 to get to the goal position.
+The tile 2 counts 1 to get to the goal position.
+The tile 3 counts 1 to get to the goal position.
+The tile 6 counts 1 to get to the goal position.
+The tile 7 counts 1 to get to the goal position.
+The tile 5 counts 2 to get to the goal position.
+The tile 8 counts 2 to get to the goal position.
 Then the sum would be 10.
 
 In order to solve the problem, we get the heuristics, which are information from the problem to solve the problem. There exists systems that can create heuristics for each problem. Those systems are called Heuristic Generators Barley et al., (\citeyear{BarleySantiagoOver}).
@@ -150,7 +150,7 @@ In order to solve the problem, we get the heuristics, which are information from
 Heuristic Generators works by creating abstractions of the original problem space. The approach that has showed more successful results lately is \texttt{PDB}, which works the following way: The search space of the problem is abstracted into a smaller state space that can be enumerated with exhaustive search. The distance of all abstracted states to the abstracted goal state are stored in a lookup table, which can be used as a heuristic function for the original state space.\\
 
 \section{Take advantage of Heuristics}
-The heuristic generators can create hundreds or even thousand of heuristics and we need to figure it out how to take advantage of this large set of heuristics created. In fact, exists different ways to take advantage of those heuristics, however we need to take into account that if we want to use all the heuristics created by the heuristic generator, it would not be a good idea because, the main problem involved would be the time to evaluate all the heuristic for each node in the search tree. Evidently, it could take too much time.
+The heuristic generators can create hundreds or even thousand of heuristics and we need to figure it out how to take advantage of this large set of heuristics created. In fact, exists different ways to take advantage of those heuristics, however we need to take into account that if we want to use all the heuristics created by the heuristic generator, it would not be a good idea because, the main problem involved would be the time to evaluate all the heuristics for each node in the search tree. Evidently, it could take too much time.
 
 One well know approach to take advantage of heuristics is taking the maximum of all heuristics $\zeta$. For example, using three different heuristics $h1, h2$ and max($h1, h2$). Heuristic $h1$ and $h2$ are based on domain abstractions and the max($h1, h2$) is the maximum heuristic value of $h1$ and $h2$.
 
@@ -159,27 +159,27 @@ If we have to choose which heuristic to use between $h1$ or $h2$ or max($h1, h2$
 There exists different approaches to take advantage from a large set of heuristics. In this dissertation we use the meta-reasoning based on the minimum size of the search tree generated and the minimum evaluation time.
 
 \section{Heuristic Subset}
-Let's suppose we have to run our meta-reasoning using $M$ amount of memory available. Then, one question is raised: How many heuristics our system should handle in order to avoid out of memory errors and stop the system? Holte et al., (\citeyear{holte2006maximizing}) observed that maximizing over $N$ pattern databases of size $M/N$, for $N < M$, produces a size of the search tree lower than using a single pattern database of size $M$. Then, the number of heuristics that we need to select from a larger set of heuristics must be suitable to make our system work without memory errors.
+Let's suppose we have to run our meta-reasoning using $M$ amount of memory available. Then, one question is raised: How many heuristics our system should handle in order to avoid out of memory errors and stop the system? Holte et al., (\citeyear{holte2006maximizing}) observed that maximizing over $N$ pattern databases of size $M/N$, for $N < M$, produces a size of the search tree lower than using a single pattern database of size $M$. Then, the number of heuristics that we need to select from a large set of heuristics must be suitable to make our system work without memory errors.
 
-The heuristic generators systems can create a large number of heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best $N =$ 50 heuristics. This would be: $${1000\choose 50} \approx 10\sp{85} possibilities$$
+The heuristic generators systems can create a large number of heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best $N =$ 50 heuristics. This would imply solve the following combinatorial problem: $${1000\choose 50} \approx 10\sp{85} possibilities$$
 
-There are a lot of posibilities to be analyzed in the selection of heuristics. Therefore, try to select heuristics from a large set of heuristics are going to be treated as an optimization problem.
+As we have seen, there are a almost $10\sp{85}$ possibilities to be analyzed in the selection of heuristics. Therefore, try to select heuristics from a large set of heuristics are going to be treated as an optimization problem.
 
 \section{Problem Domains}
 Some of the problems we are trying to solve are the optimal domains for International Planning Competition (\texttt{IPC}).
 
 \subsection{Blocks world}
-The domain consists on a set of blocks on the table and a hand robot. The blocks might be distributed over another block or over the table. The goal is to find the plan where the robot places the blocks from one distribution of blocks to another.
+The domain is not an optimal domain, but we include it in this part because we consider that is a domain that must be explained in order to understand other more complex. This domain consists on a set of blocks on the table and a hand robot. The blocks might be distributed over another block or over the table. The goal is to find the plan where the robot places the blocks from one distribution of blocks to another.
 
 \begin{figure}[htb]
 \centering
 \begin{forest}
-[\usebox\myboxblockteststar \hspace*{0.2in} \usebox\myboxblockredthree \hspace*{1.5in} \usebox\myboxblocktestend]
+[\usebox\myboxblockteststar \hspace*{0.2in} \usebox\myboxblockgreenone \hspace*{1.5in} \usebox\myboxblocktestend]
 \end{forest}
 \caption{Blocks world with three blocks.}\label{fig:probblocks}
 \end{figure}
 
-The solution shown in Figure \ref{fig:probblocks} would be the following plan: unblock number 1 from block number 2; stack block number 2 on block number 1; and finally, stack block number 3 on block number 2.
+The solution shown in Figure \ref{fig:probblocks} would be the following plan: unblock number 3 from block number 2; stack block number 2 on block number 1; and finally, stack block number 3 on block number 2.
 
 %\iffalse
 \subsection{Barman}

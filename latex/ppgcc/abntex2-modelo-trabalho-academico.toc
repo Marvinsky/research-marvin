@@ -28,11 +28,11 @@
 \contentsline {section}{\numberline {2.4}Heuristic Generators}{32}{section.2.4}
 \contentsline {section}{\numberline {2.5}Take advantage of Heuristics}{32}{section.2.5}
 \contentsline {section}{\numberline {2.6}Heuristic Subset}{33}{section.2.6}
-\contentsline {section}{\numberline {2.7}Problem Domains}{33}{section.2.7}
+\contentsline {section}{\numberline {2.7}Problem Domains}{34}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Blocks world}{34}{subsection.2.7.1}
 \contentsline {subsection}{\numberline {2.7.2}Barman}{34}{subsection.2.7.2}
 \contentsline {subsection}{\numberline {2.7.3}Floortile}{34}{subsection.2.7.3}
-\contentsline {subsection}{\numberline {2.7.4}Nomystery}{34}{subsection.2.7.4}
+\contentsline {subsection}{\numberline {2.7.4}Nomystery}{35}{subsection.2.7.4}
 \contentsline {subsection}{\numberline {2.7.5}Openstacks}{35}{subsection.2.7.5}
 \contentsline {subsection}{\numberline {2.7.6}Parking}{35}{subsection.2.7.6}
 \contentsline {subsection}{\numberline {2.7.7}Sokoban}{35}{subsection.2.7.7}
