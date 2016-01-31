@@ -152,20 +152,25 @@
 	\renewcommand{\orientadorname}{Orientador:}
 	\renewcommand{\coorientadorname}{Co-orientador:}
 }
+
 % ---
 % Configurações do pacote backref
 % Usado sem a opção hyperpageref de backref
-\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+%\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backrefpagesname}{Cited on page(s):~}
 % Texto padrão antes do número das páginas
 \renewcommand{\backref}{}
 % Define os textos da citação
 \renewcommand*{\backrefalt}[4]{
 	\ifcase #1 %
-		Nenhuma citação no texto.%
+		%Nenhuma citação no texto.%
+		No citation in the text.
 	\or
-		Citado na página #2.%
+		%Citado na página #2.%
+		Cited on page #2.
 	\else
-		Citado #1 vezes nas páginas #2.%
+		%Citado #1 vezes nas páginas #2.%
+		Cited #1 times in the pages #2
 	\fi}%
 % ---
 
