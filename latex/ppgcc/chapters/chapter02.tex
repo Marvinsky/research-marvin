@@ -188,18 +188,18 @@ This domain consists in a set of drinks that would be available to one robot bar
 %\fi
 
 \subsection{Floortile}
-This domain consists in a robot that can move in four directions (up, down, left and right) and use different colors to paint patterns in floor tiles. They can only use one color at a time and paint in front (up) and behind (down) them, but can change the spray guns to any available. The objective is to find the plan to paint floor tiles only in front.% for a while because painting behind make the search to reach a dead-end.\\
+This domain consists in a robot that paints patterns in floor tiles using one color at a time, but changing the spray guns to any available. The objective is to find the plan to paint floor tiles only in front. This domain still have problems painting behind since the search reaches to dead-end.
 
 \subsection{Nomystery}
-This domain consists in a truck that transport and load/unload packages from one node to another considering the resources consumption. For example, the fuel is measured based on the weigthed graph and each move consumes the edge weight in fuel. The goal is to find the plan that transport the packages based on the resource constrained.
+This domain consists in a truck that transport and load/unload packages from one node to another considering the resources consumption. For example, the fuel is measured based on the weighted graph and each move consumes the edge weight in fuel. The goal is to find the plan that transport the packages based on the resource constrained.
 
 \subsection{Openstacks}
-This domain consists in a manufacture that produce only one product at a time. This is because we want to avoid production stop when changing from one product to another. The time that last to produce all the elements from one product is called ``open‘’ and the time each element of that product to be stored during the production is called ``stack‘’. This is an optimization problem that require to order the products to be made in order to maximize the number of stacks that are in simultaneously.
+This domain consists in a manufacture that produce only one product at a time. This is because we want to avoid production stop when changing from one product to another. The time that last to produce all the elements from one product is called ``open'' and the time each element of that product to be stored during the production is called ``stack''. This is an optimization problem that require to order the products to be made in order to maximize the number of stacks that are in simultaneously.
 
 Finding a plan for this problem could be make it using a domain-specific algorithm, however finding an optimal solution is hard.
 
 \subsection{Parking}
-This domain consists in parking cars from one configuration to another. Only are allowed double-parked but not triped parked.
+This domain consists in parking a set of cars from one configuration to another. Only are allowed double-parked but not triple-parked.
 
 \subsection{Sokoban}
 This domain consists in a agent and a set of blocks. The agent has to push the blocks in a specified goal location. 
