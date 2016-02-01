@@ -93,7 +93,7 @@ where, for any heuristic function $h$, the term $t_{h}$ refers to the running ti
 
 We assume that $t_{h}$ to be independent of $s$, which is a reasonable assumption for several heuristics such as \texttt{PDBs}.
 
-In order to compute the running time of A$\sp{*}$ exactly we would also have to account for all nodes evaluated. Specifically, our objective function accounts for the generation time added to the heuristic evaluation time of all nodes generated, not only nodes expanded. In this way, $T(\zeta\sp{'},\nabla)$ is reasonable approximation for A$\sp{*}$'s running time for the heuristic subset selection problem.\\
+In order to compute the running time of A$\sp{*}$ exactly we would also have to account for all nodes evaluated. Specifically, our objective function accounts for the generation time added to the heuristic evaluation time of all nodes generated, not only nodes expanded. In this way, $T(\zeta\sp{'},\nabla)$ is reasonable approximation for A$\sp{*}$'s running time for the heuristic subset selection problem.
 
 \section{Estimating Tree Size and Running Time}
 In  practice \texttt{GHS} used approximations models of $J,T,$ and $T\sp{'}$ instead of their exact values. This is because computing $J,T,$ and $T\sp{'}$ exactly would require solving $\nabla$, and this is what we obviously want to avoid. We denote the approximations of $J$ as \textit{\^{J}}, and since both $T$ and $T\sp{'}$ model A$\sp{*}$'s running time, we denote the approximation for both as \textit{\^{T}}.
