@@ -104,7 +104,7 @@ Both \texttt{CS} and \texttt{SS} must be able to quickly estimate the values of 
 
 \section{Culprit Sampler (CS)}
 \noindent
-\texttt{CS} runs a time$-$bounded A$\sp{*}$ search while sampling $f-culprits$ and $b-culprits$ to estimate the values of \textit{\^{J}} and \textit{\^{T}}.
+\texttt{CS} is an approach introduced by Barley et al., (\citeyear{BarleySantiagoOver}) and works by running in a time$-$bounded A$\sp{*}$ search while sampling $f-culprits$ and $b-culprits$. In this dissertation we use \texttt{CS} to estimate the values of \textit{\^{J}} and \textit{\^{T}}.
 
 \begin{definition}(f-culprit)
 Let $\zeta = \{h_{1}, h_{2},...,h_{M}\}$ be a set of heuristics. The f$-$culprit of a node n in an A$\sp{*}$ search tree is defined as the tuple F(n) = $\left\langle f_{1}(n), f_{2}(n),...,f_{M}(n)  \right\rangle$, where $f_{i}(n) = g(n)+h_{i}(n)$. For any n$-$tuple F, the counter $C_{F}$ denotes the number of nodes n in the tree with F(n) = F.
@@ -391,7 +391,7 @@ In the Level 1, we have the root node, and their $w$ is initialized with one. Le
 \node [xshift=1cm,yshift=2cm] (A) at (10,-4.5) {\textcolor{red}{w = 2 } \textcolor{blue}{w = 3}};
 \node [xshift=1cm,yshift=2cm] (A) at (10,-6) {\textcolor{red}{w = 5 } \textcolor{blue}{w = 2}};
 \end{tikzpicture}
-\caption{Search tree using Type System} \label{fig:ts_search_tree}
+\caption{Search tree using type system} \label{fig:ts_search_tree}
 \end{figure}
 
 Let's suppose that nodes in Level 2 are expanded. The blue node generates one node of type blue and the red node generates two nodes with the following types: red and blue from left to right. The question that raises here is how many nodes are generated in the Level 3. To answer this question, we only have to apply a simple multiplication between each type and their respectively weight $w$ and then sum all the nodes with the same type. For Level 3 the answer would be: $1 \times \textcolor{blue}{blue} + 2 \times \textcolor{red}{red} + 2 \times \textcolor{blue}{blue}$. Therefore, in Level 3 we will have 2 nodes of type red and 3 nodes of type blue.
