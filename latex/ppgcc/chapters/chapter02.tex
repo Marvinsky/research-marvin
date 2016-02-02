@@ -92,13 +92,13 @@ There exists many state-space algorithms, and one of the most important and well
 \caption{Heuristic Search: \textit{I}: Initial state, \textit{s}: Some sate, \textit{G}: Goal state} \label{fig:searchSpace}
 \end{figure}
 
-In the figure \ref{fig:searchSpace} the optimal distance from the initial state $I$ to  the state $s$ is 4 and is represented by $g(s)$. The $h\sp{*}(s) = 3$ represents the optimal distance from $s$ to the Goal State $G$, and $h(s) = 2$ is the estimation distance from $s$ to $G$.
+In the Figure \ref{fig:searchSpace} the optimal distance from the initial state $I$ to  the state $s$ is 4 and is represented by $g(s)$. The $h\sp{*}(s) = 3$ represents the optimal distance from $s$ to the Goal State $G$, and $h(s) = 2$ is the estimation distance from $s$ to $G$.
 
 A heuristic function $h(s)$ estimates the cost of a solution path from $s$ to a goal state. A heuristic is admissible if $h(s) \leq h\sp{*}(s)$ for all $s \in V$, where $h\sp{*}(s)$ is the optimal cost of $s$. A heuristic is consistent iff $h(s) \leq c(s,t) + h(t)$ for all states $s$ and $t$, where $c(s,t)$ is the cost of the cheapest path from $s$ to $t$. For example, the heuristic function provided by a pattern database (\texttt{PDB}) heuristic Culberson and Schaeffer, (\citeyear{culberson1998pattern}) is admissible and consistent.
 
 Given a set of admissible and consistent heuristics $\zeta = \{h_{1}, h_{2}, \dots, h_{M}\}$, the heuristic $h_{max}(s,\zeta) = $max$_{h \in \zeta} h(s)$ is also admissible and consistent. When describing our method we assume all heuristics to be consistent. We define $f_{max}(s, \zeta) = g(s) + h_{max}(s, \zeta)$, where $g(s)$ is the cost of the path expanded from $I$ to $s$. $g(s)$ is minimal when A$\sp{*}$ using a consistent heuristic expands $s$. We call an A$\sp{*}$ search tree the tree defined by the states expanded by A$\sp{*}$ using a consistent heuristic while solving a problem $\nabla$.
 
-The heuristics can be obtained from each state of the problem. For example, from the problem 8-tile-puzzle figure \ref{fig:8tilepuzzle_begin} we can obtain two informative heuristics.
+The heuristics can be obtained from each state of the problem. For example, from the problem 8-tile-puzzle Figure \ref{fig:8tilepuzzle_begin} we can obtain two informative heuristics.
 
 \subsection{Out of place (O.P)}
 This heuristic counts the number of tiles that are out of the position that should be in the goal state. If the tile is not in the position that should be in the goal state, then it counts as one, otherwise it counts as zero. 
