@@ -2,6 +2,7 @@
 \backcite {bernard2011}{{13}{(document)}{Doc-Start}}
 \backcite {bernard2011}{{13}{(document)}{Doc-Start}}
 \backcite {sokoban2010}{{13}{(document)}{Doc-Start}}
+\backcite {hart1968formal}{{21}{1}{chapter.1}}
 \backcite {holte2006maximizing}{{21}{1}{chapter.1}}
 \backcite {bernard2011}{{22}{1}{figure.1.1}}
 \backcite {bernard2011}{{23}{2}{figure.1.2}}
@@ -15,6 +16,7 @@
 \backcite {domshlak2010max}{{24}{1.1}{figure.1.2}}
 \backcite {tolpin2013towards}{{24}{1.1}{figure.1.2}}
 \backcite {helmert2006fast}{{25}{1.3}{section.1.3}}
+\backcite {haslum2007domain}{{25}{1.4}{section.1.4}}
 \backcite {BarleySantiagoOver}{{29}{2.1}{section.2.1}}
 \backcite {raynersss13}{{29}{2.1}{section.2.1}}
 \backcite {chen1992heuristic}{{29}{2.1}{section.2.1}}
