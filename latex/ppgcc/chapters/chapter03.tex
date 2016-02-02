@@ -394,11 +394,13 @@ In the Level 1, we have the root node, and their $w$ is initialized with one. Le
 \caption{Search tree using type system} \label{fig:ts_search_tree}
 \end{figure}
 
-Let's suppose that nodes in Level 2 are expanded. The blue node generates one node of type blue and the red node generates two nodes with the following types: red and blue from left to right. The question that raises here is how many nodes are generated in the Level 3. To answer this question, we only have to apply a simple multiplication between each type and their respectively weight $w$ and then sum all the nodes with the same type. For Level 3 the answer would be: $1 \times \textcolor{blue}{blue} + 2 \times \textcolor{red}{red} + 2 \times \textcolor{blue}{blue}$. Therefore, in Level 3 we will have 2 nodes of type red and 3 nodes of type blue.
+Let's suppose that nodes in Level 2 are expanded. The blue node generates one node of type blue and the red node generates two nodes with the following types: red and blue from left to right. The question that raises here is how many nodes are generated in the Level 3. To answer this question, we only have to apply a simple multiplication between each type and their respectively weight $w$ and then sum all the nodes with the same type. For Level 3 the answer would be: $1 \times \textcolor{blue}{blue} + 2 \times \textcolor{red}{red} + 2 \times \textcolor{blue}{blue}$. Therefore, in Level 3 we will have 2 nodes of type red and 3 nodes of type blue. This process continues until reaching the bottom of the tree.
 
+\iffalse
 In the Level 3 the $w$ of the node blue would have the same $w$ of their father. Their father has $w = 1$, then the child has $w = 1$. The $w$ of the red node and blue node would be 2. Once the $w$ has been updated for each node in the Level 3,	 we apply the \texttt{SS}'s assumption again. There are two nodes with type blue. Then, we choose randomly one of them to update their $w$. Let's suppose we choose the right blue type and their updated $w$ would be 3 because 1 from the left blue type plus 2 from the right blue type.
 
 Now, we have to expand the nodes in the Level 3. Let's imaging that they are expanded in the following way: The red node generates two nodes of types red and blue from left to right and the blue node generates one of type red. How many nodes would be generated at Level 4, then? The answer is: $2 \times \textcolor{red}{red} + 3 \times \textcolor{red}{red} + 2 \times \textcolor{blue}{blue}$. As a result, in the Level 4, we will have five nodes of type red and two nodes of type blue.
+\fi
 
 Finally, the number of nodes expanded in the search tree is obtained summing all $w$ plus one (The root node). In summarize, the number of nodes expanded in the search tree would be $ 15 + 1 = 16$. 
 

@@ -22,20 +22,21 @@
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Background}}{29}{chapter.2}
 \contentsline {section}{\numberline {2.1}Similar Selection Systems}{29}{section.2.1}
 \contentsline {section}{\numberline {2.2}Problem definition}{29}{section.2.2}
-\contentsline {section}{\numberline {2.3}Heuristics}{30}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Out of place (O.P)}{31}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Manhatham Distance (M.D)}{32}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Heuristic Generators}{32}{section.2.4}
-\contentsline {section}{\numberline {2.5}Take advantage of Heuristics}{32}{section.2.5}
-\contentsline {section}{\numberline {2.6}Heuristic Subset}{33}{section.2.6}
-\contentsline {section}{\numberline {2.7}Problem Domains}{33}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Blocks world}{34}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Barman}{34}{subsection.2.7.2}
-\contentsline {subsection}{\numberline {2.7.3}Floortile}{34}{subsection.2.7.3}
-\contentsline {subsection}{\numberline {2.7.4}Nomystery}{34}{subsection.2.7.4}
-\contentsline {subsection}{\numberline {2.7.5}Openstacks}{35}{subsection.2.7.5}
-\contentsline {subsection}{\numberline {2.7.6}Parking}{35}{subsection.2.7.6}
-\contentsline {subsection}{\numberline {2.7.7}Sokoban}{35}{subsection.2.7.7}
+\contentsline {section}{\numberline {2.3}The 8-tile-puzzle case}{30}{section.2.3}
+\contentsline {section}{\numberline {2.4}Heuristics}{30}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Out of place (O.P)}{31}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Manhatham Distance (M.D)}{31}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Heuristic Generators}{32}{section.2.5}
+\contentsline {section}{\numberline {2.6}Take advantage of Heuristics}{33}{section.2.6}
+\contentsline {section}{\numberline {2.7}Heuristic Subset}{33}{section.2.7}
+\contentsline {section}{\numberline {2.8}Problem Domains}{34}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Blocks world}{34}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Barman}{34}{subsection.2.8.2}
+\contentsline {subsection}{\numberline {2.8.3}Floortile}{34}{subsection.2.8.3}
+\contentsline {subsection}{\numberline {2.8.4}Nomystery}{35}{subsection.2.8.4}
+\contentsline {subsection}{\numberline {2.8.5}Openstacks}{35}{subsection.2.8.5}
+\contentsline {subsection}{\numberline {2.8.6}Parking}{35}{subsection.2.8.6}
+\contentsline {subsection}{\numberline {2.8.7}Sokoban}{35}{subsection.2.8.7}
 \contentsline {part}{\partnumberline {III}\MakeTextUppercase {Approach Proposal}}{37}{part.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Meta-Reasoning for selection}}{39}{chapter.3}
@@ -47,21 +48,21 @@
 \contentsline {section}{\numberline {3.6}Stratified Sampling (SS)}{42}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Type System}{42}{subsection.3.6.1}
 \contentsline {section}{\numberline {3.7}SS step by step}{45}{section.3.7}
-\contentsline {part}{\partnumberline {IV}\MakeTextUppercase {Empirical Evaluation}}{49}{part.4}
+\contentsline {part}{\partnumberline {IV}\MakeTextUppercase {Empirical Evaluation}}{47}{part.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Empirical Evaluation}}{51}{chapter.4}
-\contentsline {section}{\numberline {4.1}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{52}{section.4.1}
-\contentsline {section}{\numberline {4.2}Comparison with Other Planning Systems}{54}{section.4.2}
-\contentsline {section}{\numberline {4.3}Systems Tested}{54}{section.4.3}
-\contentsline {section}{\numberline {4.4}Discussion of the Results}{55}{section.4.4}
-\contentsline {section}{\numberline {4.5}Comparison between SS and IDA*}{57}{section.4.5}
-\contentsline {section}{\numberline {4.6}Comparison between SS and A*}{59}{section.4.6}
-\contentsline {section}{\numberline {4.7}Approximation Analysis for SS and A*}{60}{section.4.7}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Empirical Evaluation}}{49}{chapter.4}
+\contentsline {section}{\numberline {4.1}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{50}{section.4.1}
+\contentsline {section}{\numberline {4.2}Comparison with Other Planning Systems}{52}{section.4.2}
+\contentsline {section}{\numberline {4.3}Systems Tested}{52}{section.4.3}
+\contentsline {section}{\numberline {4.4}Discussion of the Results}{53}{section.4.4}
+\contentsline {section}{\numberline {4.5}Comparison between SS and IDA*}{55}{section.4.5}
+\contentsline {section}{\numberline {4.6}Comparison between SS and A*}{57}{section.4.6}
+\contentsline {section}{\numberline {4.7}Approximation Analysis for SS and A*}{58}{section.4.7}
 \vspace {\cftbeforechapterskip }
-\contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{65}{part.5}
+\contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{63}{part.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Concluding Remarks}}{67}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Concluding Remarks}}{65}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Bibliography}{69}{section*.16}
+\contentsline {chapter}{Bibliography}{67}{section*.16}
 \vspace {\cftbeforechapterskip }
