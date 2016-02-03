@@ -77,13 +77,6 @@ Accessed: 2016-24-01.}
 {LELIS, L.; ZILLES, S.; HOLTE, R.~C. Fast and accurate predictions of ida*'s
   performance. In:  \emph{AAAI}. [S.l.: s.n.], 2012.}
 
-\bibitem[Lelis, Otten e Dechter 2014]{lelis2014memory}
-\abntrefinfo{Lelis, Otten e Dechter}{LELIS; OTTEN; DECHTER}{2014}
-{LELIS, L.~H.; OTTEN, L.; DECHTER, R. Memory-efficient tree size prediction for
-  depth-first search in graphical models. In:  \emph{Principles and Practice of
-  Constraint Programming}. [S.l.]: Springer International Publishing, 2014. p.
-  481--496.}
-
 \bibitem[Lelis, Stern e Sturtevant 2014]{lelis2014estimating}
 \abntrefinfo{Lelis, Stern e Sturtevant}{LELIS; STERN; STURTEVANT}{2014}
 {LELIS, L.~H.; STERN, R.; STURTEVANT, N.~R. Estimating search tree size with

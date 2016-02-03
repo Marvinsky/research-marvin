@@ -38,8 +38,6 @@
 \backcite {chen1992heuristic}{{42}{12}{algocf.2}}
 \backcite {lelis2014estimating}{{42}{12}{algocf.2}}
 \backcite {helmert2006fast}{{47}{4}{chapter.4}}
-\backcite {lelis2013predicting}{{47}{4}{table.4.1}}
-\backcite {lelis2014memory}{{47}{4}{table.4.1}}
 \backcite {edelkamp2007automated}{{48}{4.1}{section.4.1}}
 \backcite {BarleySantiagoOver}{{48}{4.1}{section.4.1}}
 \backcite {haslum2007domain}{{50}{4.2}{section.4.2}}
@@ -49,5 +47,5 @@
 \backcite {BarleySantiagoOver}{{51}{4.3}{section.4.3}}
 \backcite {nissim2011computing}{{51}{4.3}{section.4.3}}
 \backcite {nissim2011computing}{{51}{4.3}{section.4.3}}
-\backcite {lelis2012fast}{{54}{4.5}{equation.4.5.1}}
+\backcite {lelis2012fast}{{53}{4.5}{equation.4.5.1}}
 \backcite {raynersss13}{{63}{5}{chapter.5}}
