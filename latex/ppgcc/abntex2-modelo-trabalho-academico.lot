@@ -1,8 +1,8 @@
 \select@language {brazil}
 \select@language {english}
-\contentsline {table}{\numberline {1}{\ignorespaces Ratios of the number of nodes expanded using $h_{max}(\zeta \sp {'})$ to the number of nodes expanded using $h_{max}(\zeta )$}}{49}{table.4.1}
-\contentsline {table}{\numberline {2}{\ignorespaces Coverage of \texttt {SS}, \texttt {CS} and \texttt {Max} on the 2011 IPC benchmarks. For GHS using only \texttt {GA-PDBs} heuristics.}}{51}{table.4.2}
-\contentsline {table}{\numberline {3}{\ignorespaces Coverage of different planning systems on the 2011 \texttt {IPC} benchmarks. For the \texttt {GHS} and \texttt {Max} approaches we also present the average number of heuristics \texttt {GHS} selects (|$\zeta \sp {'}$|).}}{54}{table.4.3}
-\contentsline {table}{\numberline {4}{\ignorespaces Comparison between \texttt {SS} and IDA$\sp {*}$ for 1, 10, 100, 1000 and 5000 probes using $hmax$ heuristic.}}{56}{table.4.4}
-\contentsline {table}{\numberline {5}{\ignorespaces Poor prediction of SS against A* using ipdb, \texttt {LM-Cut} and M$\&$S with 500 probes}}{57}{table.4.5}
-\contentsline {table}{\numberline {6}{\ignorespaces Percentage of choices \texttt {SS} made correctly.}}{61}{table.4.6}
+\contentsline {table}{\numberline {1}{\ignorespaces Ratios of the number of nodes expanded using $h_{max}(\zeta \sp {'})$ to the number of nodes expanded using $h_{max}(\zeta )$}}{47}{table.4.1}
+\contentsline {table}{\numberline {2}{\ignorespaces Coverage of \texttt {SS}, \texttt {CS} and \texttt {Max} on the 2011 IPC benchmarks. For GHS using only \texttt {GA-PDBs} heuristics.}}{49}{table.4.2}
+\contentsline {table}{\numberline {3}{\ignorespaces Coverage of different planning systems on the 2011 \texttt {IPC} benchmarks. For the \texttt {GHS} and \texttt {Max} approaches we also present the average number of heuristics \texttt {GHS} selects (|$\zeta \sp {'}$|).}}{52}{table.4.3}
+\contentsline {table}{\numberline {4}{\ignorespaces Comparison between \texttt {SS} and IDA$\sp {*}$ for 1, 10, 100, 1000 and 5000 probes using $hmax$ heuristic.}}{54}{table.4.4}
+\contentsline {table}{\numberline {5}{\ignorespaces Poor prediction of SS against A* using ipdb, \texttt {LM-Cut} and M$\&$S with 500 probes}}{55}{table.4.5}
+\contentsline {table}{\numberline {6}{\ignorespaces Percentage of choices \texttt {SS} made correctly.}}{59}{table.4.6}

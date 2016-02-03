@@ -29,7 +29,7 @@
 \section{Similar Selection Systems}
 % ---
 \noindent
-The system most similar to ours is RIDA$\sp{*}$ (Barley et al., \citeyear{BarleySantiagoOver}). RIDA$\sp{*}$ also selects a subset from a pool of heuristics to guide the A$\sp{*}$ search. In RIDA$\sp{*}$ this is done by starting with an empty subset and trying all combinations of size one before trying the combinations of size two and so on. RIDA$\sp{*}$ stops after evaluating a fixed number of subsets. While RIDA* is able to evaluate sets of heuristics with only tens of elements. By contrast, the method we propose in this dissertation is able to evaluate sets with thousands of elements.
+The system most similar to ours is RIDA$\sp{*}$ (Barley et al., \citeyear{BarleySantiagoOver}). RIDA$\sp{*}$ also selects a subset from a pool of heuristics to guide the A$\sp{*}$ search. In RIDA$\sp{*}$ this is done by starting with an empty subset and trying subsets of size one before trying subsets of size two and so on. RIDA$\sp{*}$ stops after evaluating a fixed number of subsets. While RIDA* is able to evaluate sets of heuristics with only tens of elements. By contrast, the method we propose in this dissertation is able to evaluate sets with thousands of elements.
 
 Rayner et al., (\citeyear{raynersss13}) present an optimization procedure that is similar to ours. In contrast with our work, Rayner et al. limited their experiments to a single objective function that sought to maximize the sum of heuristic values in the state space. Moreover, Rayner et al.'s method performs an uniform sampling of the state space to estimate the sum of heuristic values in the state space. Thus, their method is not directly applicable to domain-independent planning. In this dissertation we adapt Rayner et al.'s approach to domain-independent planning by using Chen (\citeyear{chen1992heuristic}) Stratified Sampling to estimate the sum of heuristic values in the state space. Our empirical results show that \texttt{GHS} minimizing an approximation of A$\sp{*}$'s running time is able to substantially outperform Rayner et al.'s approach in domain-independent planning. 
 
@@ -44,7 +44,7 @@ A $SAS\sp{+} planning\ task$ (B$\ddot{a}$ckstr$\ddot{o}$m; Nebel, \citeyear{back
 % ---
 \section{The 8-tile-puzzle case}
 % ---
-The state space problem illustrated in the Figure \ref{fig:8tilepuzzle_begin} consists in a board with 8 squares named tiles numbered from 1 to 8 and one square without tile and number named empty tile. The goal of the game is to order the tiles in some order. For example: From left to right and up to bottom in the following order 1, 2, 3, 4, 5, 6, 7, 8 and empty tile or ordering the tiles around the center of the board. The particular game showed is the 8-tile-puzzle, the objective of this game is to place the tiles in order by moving the numbered tiles into the empty tile. For this case, the goal would be reached by placing the tiles 1, 2 and 3 in the first row, and 4, 5 and 6 in the following row, and 7, 8 and empty tile in the last row.
+The state space problem illustrated in the Figure \ref{fig:8tilepuzzle_begin} consists in a board with 8 squares named tiles numbered from 1 to 8 and one square without tile and number named empty tile. The goal of the game is to order the tiles in some order. For example: From left to right and up to bottom in the following order 1, 2, 3, 4, 5, 6, 7, 8 and empty tile or ordering the tiles in the following way: From left to right and up to down 1, 2, 3, 8, empty tile, 4, 7, 6, 5. This distribution looks like we are ordering around the tile of the center of the board. This game is called the 8 Sliding-tile puzzle and its objective is to place the tiles in order by moving the numbered tiles into the empty tile. For this case, the goal would be reached by placing the tiles 1, 2 and 3 in the first row, and 4, 5 and 6 in the following row, and 7, 8 and empty tile in the last row.
 
 \iffalse
 Schaeffer; Herik, (\citeyear{Schaeffer:2002:GCA:512148.512149}) Any tile horizontally or vertically adjacent to the blank can be slid into that position. The problem is to rearrange the tiles from some random initial configuration into a particular desired goal configuration. The 8-puzzle contains 181,440 reachable states, the 15$-$puzzle contains about $10\sp{13}$ reachable states, and the 24-puzzle contains almost $10\sp{25}$ states.
@@ -57,13 +57,13 @@ Schaeffer; Herik, (\citeyear{Schaeffer:2002:GCA:512148.512149}) Any tile horizon
  $\node [xshift=-5.5cm,yshift=3.5cm] (A) at (2,0) {Initial};$
  $\node [xshift=1.5cm,yshift=3.5cm] (A) at (2,0) {Goal};$
 \end{forest}
-\caption{The left tile-puzzle is the initial distribution of tiles and the right tile-puzzle is the goal distribution of tiles. Each one represent a state.} \label{fig:8tilepuzzle_begin}
+\caption{The left tile-puzzle is one possible initial distribution of tiles and the right tile-puzzle is the goal distribution of tiles. Each one represents a state.} \label{fig:8tilepuzzle_begin}
 \end{figure}
 
-Instead of using an algorithm of Brute force search that will analyze all the possible solutions, we can obtain heuristics from the 8-sliding-tile puzzle that will help us to solve the problem.
+Instead of using \texttt{DFS} or \texttt{BFS} that will analyze the states encountered, we can obtain heuristics for the 8-sliding-tile puzzle that will help us solve the problem quickly.
 
 \section{Heuristics}
-There exists many state-space algorithms, and one of the most important and well know is A$\sp{*}$ (Hart P. E. et al., \citeyear{hart1968formal}). It is important, because it helps to solve many \texttt{AI} applications. Each node in the search tree generated by A$\sp{*}$ uses the $f(s) = g(s) + h(s)$ cost function to find the solution. Each member of the cost function represent the following: $g(s)$ is the cost to go from the start state to state $s$, and $h(s)$ is the estimated cost to go from $s$ to the goal; $h(.)$ is the heuristic function. The heuristic is the mathematical concept that represents to the estimate distance from the node $s$ to the nearest goal state.
+There exist many state-space algorithms, and one of the most important and well know is A$\sp{*}$ (Hart P. E. et al., \citeyear{hart1968formal}). Each node in the search tree generated by A$\sp{*}$ uses the $f(s) = g(s) + h(s)$ cost function to find the solution. $g(s)$ is the cost to go from the start state to state $s$, and $h(s)$ is the estimated cost to go from $s$ to the goal.
 
 \begin{figure}[htb]
 \centering
@@ -95,16 +95,16 @@ There exists many state-space algorithms, and one of the most important and well
 \caption{Heuristic Search: \textit{I}: Initial state, \textit{s}: Some sate, \textit{G}: Goal state} \label{fig:searchSpace}
 \end{figure}
 
-In the Figure \ref{fig:searchSpace} the optimal distance from the initial state $I$ to  the state $s$ is 4 and is represented by $g(s)$. The $h\sp{*}(s) = 3$ represents the optimal distance from $s$ to the Goal State $G$, and $h(s) = 2$ is the estimation distance from $s$ to $G$.
+In the Figure \ref{fig:searchSpace} the optimal distance from the initial state $I$ to  the state $s$ is 4 and is represented by $g(s)$. The $h\sp{*}(s) = 3$ represents the optimal distance from $s$ to the goal state $G$, and $h(s) = 2$ is the estimation distance from $s$ to $G$.
 
-A heuristic function $h(s)$ estimates the cost of a solution path from $s$ to a goal state. A heuristic is admissible if $h(s) \leq h\sp{*}(s)$ for all $s \in V$, where $h\sp{*}(s)$ is the optimal cost of $s$. A heuristic is consistent iff $h(s) \leq c(s,t) + h(t)$ for all states $s$ and $t$, where $c(s,t)$ is the cost of the cheapest path from $s$ to $t$. For example, the heuristic function provided by a pattern database (\texttt{PDB}) heuristic (Culberson and Schaeffer, (\citeyear{culberson1998pattern}) is admissible and consistent.
+A heuristic function $h(s)$ estimates the cost of a solution path from $s$ to a goal state. A heuristic is admissible if $h(s) \leq h\sp{*}(s)$ for all $s \in V$, where $h\sp{*}(s)$ is the optimal cost of $s$. A heuristic is consistent iff $h(s) \leq c(s,t) + h(t)$ for all states $s$ and $t$, where $c(s,t)$ is the cost of the cheapest path from $s$ to $t$. For example, the heuristic function provided by a pattern database (\texttt{PDB}) heuristic (Culberson and Schaeffer, \citeyear{culberson1998pattern}) is admissible and consistent.
 
-Given a set of admissible and consistent heuristics $\zeta = \{h_{1}, h_{2}, \dots, h_{M}\}$, the heuristic $h_{max}(s,\zeta) = $max$_{h \in \zeta} h(s)$ is also admissible and consistent. When describing our method we assume all heuristics to be consistent. We define $f_{max}(s, \zeta) = g(s) + h_{max}(s, \zeta)$, where $g(s)$ is the cost of the path expanded from $I$ to $s$. $g(s)$ is minimal when A$\sp{*}$ using a consistent heuristic expands $s$. We call an A$\sp{*}$ search tree the tree defined by the states expanded by A$\sp{*}$ using a consistent heuristic while solving a problem $\nabla$.
+Given a set of admissible and consistent heuristics $\zeta = \{h_{1}, h_{2}, \dots, h_{M}\}$, the heuristic $h_{max}(s,\zeta) = $max$_{h \in \zeta} h(s)$ is also admissible and consistent. When describing our method we assume all heuristics to be consistent. We define $f_{max}(s, \zeta) = g(s) + h_{max}(s, \zeta)$, where $g(s)$ is minimal when A$\sp{*}$ using a consistent heuristic expands $s$. We call an A$\sp{*}$ search tree the tree defined by the states generated by A$\sp{*}$ using a consistent heuristic while solving a problem $\nabla$.
 
-The heuristics can be obtained from each state of the problem. For example, from the problem 8-tile-puzzle Figure \ref{fig:8tilepuzzle_begin} we can obtain two informative heuristics.
+We now show two heuristics for the 8-puzzle.
 
 \subsection{Out of place (O.P)}
-This heuristic counts the number of tiles that are out of the position that should be in the goal state. If the tile is not in the position that should be in the goal state, then it counts as one, otherwise it counts as zero. 
+This heuristic counts the number of tiles that are out of the goal position. If the tile is not in the goal position, then it counts as one, otherwise it counts as zero. 
 
 \begin{figure}[htb]
 \centering
@@ -122,7 +122,7 @@ This heuristic counts the number of tiles that are out of the position that shou
 The tiles numbered with 4, 1, 2, 3, 6, 7, 5, and 8 are out of place then each tile count as 1 and the sum would be 8, then the heuristic value for this state is 8.
 
 \subsection{Manhatham Distance (M.D)}
-This heuristic counts the minimum number of operations that should be applied to any tile to place it in the position of the goal state. Let's explain with an example: The tile 5 is located in the initial state in the position left bottom of the board, then the minimum number of moves to get to the position in the goal state would be up and right or right and up, both movements equal to 2. Then, the minimum number of moves from tile 5 to get to the position of that tile in the goal state would be 2. 
+This heuristic counts the minimum number of operations that should be applied to any tile to place it in its goal position. Let us explain this with an example: Tile 5 is located on the bottom left of the tile puzzle shown on the left-hand side of Figure \ref{fig:8tilepuzzle_md}, then the minimum number of moves to get tile 5 to its goal position is 2 (either up and right or right and up), both movements equal to 2.
 
 \begin{figure}[htb]
 \centering
@@ -137,37 +137,36 @@ This heuristic counts the minimum number of operations that should be applied to
 \caption{Manhatham distance heuristic} \label{fig:8tilepuzzle_md}
 \end{figure}
 
-The tile 4 counts 1 to get to the goal position.
-The tile 1 counts 1 to get to the goal position.
-The tile 2 counts 1 to get to the goal position.
-The tile 3 counts 1 to get to the goal position.
-The tile 6 counts 1 to get to the goal position.
-The tile 7 counts 1 to get to the goal position.
-The tile 5 counts 2 to get to the goal position.
-The tile 8 counts 2 to get to the goal position.
+Tile 4 requires one move to get to its goal position;
+Tile 1 requires one move to get to its goal position;
+Tile 2 requires one move to get to its goal position;
+Tile 3 requires one move to get to its goal position;
+Tile 6 requires one move to get to its goal position;
+Tile 7 requires one move to get to its goal position;
+Tile 5 requires two moves to get to its goal position;
+Tile 8 requires two moves to get to its goal position;
 Then the sum would be 10.
 
-In order to solve the problem, we get the heuristics, which are informations from the problem, to solve the problem. There exists systems that can create heuristics for each problem. Those systems are called Heuristic Generators Barley et al., (\citeyear{BarleySantiagoOver}).
+Out-of-place and Manhattan distance are heuristics that use domain knowledge. There are methods that create heuristics without using domain knowledge. Barley et al., (\citeyear{BarleySantiagoOver}) call them heuristic generators.
 
 \section{Heuristic Generators}
-Heuristic Generators works by creating abstractions of the original problem space. The approach that has showed more successful results lately is \texttt{PDB} (Culberson and Schaeffer, \citeyear{culberson1998pattern}), which work the following way: The search space of the problem is abstracted into a smaller state space that can be enumerated with exhaustive search. The distance of all abstracted states to the abstracted goal state are stored in a lookup table, which can be used as a heuristic function for the original state space.
+Some heuristic generators work by creating abstractions of the original problem space. \texttt{PDBs} (Culberson and Schaeffer, \citeyear{culberson1998pattern}) are an effective way of generating heuristics, \texttt{PDBs} work as follows: The search space of the problem is abstracted into a smaller state space that can be enumerated with exhaustive search. The distance of all abstracted states to the abstracted goal state are stored in a lookup table, which can be used as a heuristic function for the original state space.
 
 \section{Take advantage of Heuristics}
-The heuristic generators can create hundreds or even thousands of heuristics and we need to figure it out how to take advantage of this large set of heuristics created. In fact, exist different ways to take advantage of those heuristics, however we need to take into account that if we want to use all the heuristics created by the heuristic generator, it would not be a good idea because, the main problem involved would be the time to evaluate all the heuristics for each node in the search tree. Evidently, it could take too much time.
-
 One well know approach to take advantage of heuristics is taking the maximum of all heuristics $\zeta$. For example, using three different heuristics $h1, h2$ and max($h1, h2$). Heuristic $h1$ and $h2$ are based on domain abstractions and the max($h1, h2$) is the maximum heuristic value of $h1$ and $h2$.
 
-If we have to choose which heuristic to use between $h1$ or $h2$ or max($h1, h2$). The best answer would be max($h1, h2$), because that value would allow to be near from the objective.
+If we have to choose which heuristic to use between $h1$ or $h2$ or max($h1, h2$). One of the answers would be max($h1, h2$), because that value would allow to be near from the objective.
 
-There exists different approaches to take advantage from a large set of heuristics. In this dissertation we use the meta-reasoning based on the minimum size of the search tree generated and the minimum evaluation time.
+The heuristic generators can create hundreds or even thousands of heuristics and we need to figure it out how to take advantage of this large set of heuristics created. In fact, there exist different ways to take advantage of those heuristics, however we need to take into account that if we want to use all the heuristics created by the heuristic generator, the resulting heuristic would be too expensive to guide search. This is because, the main problem involved would be the time to evaluate all the heuristics for each node in the search tree.
+
+In this dissertation we use the meta-reasoning based on the minimum of an approximation to the size of the search tree.
 
 \section{Heuristic Subset}
-Let's suppose we have to run our meta-reasoning using $M$ amount of memory available. Then, one question is raised: How many heuristics our system should handle in order to avoid out of memory errors and stop the system? Holte et al., (\citeyear{holte2006maximizing}) observed that maximizing over $N$ pattern databases of size $M/N$, for $N < M$, produces a size of the search tree lower than using a single pattern database of size $M$. Then, the number of heuristics that we need to select from a large set of heuristics must be suitable to make our system work without memory errors.
+Let's suppose we have to run our meta-reasoning considering that we have a fixed amount of memory $M$. Then, one question is raised: How many heuristics our system should handle in order to avoid a collapse of the memory and stop the system? Holte et al., (\citeyear{holte2006maximizing}) observed that maximizing over $N$ pattern databases of size $M/N$, for $N < M$, can produce a size of the search tree smaller than the search tree size generated by using a single pattern database of size $M$. Then, the number of heuristics that we need to select from a large set of heuristics must be suitable to make our system work without problems.
 
-The heuristic generators systems can create a large number of heuristics. Let's suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best $N =$ 50 heuristics. This would imply solve the following combinatorial problem: $${1000\choose 50} \approx 10\sp{85} possibilities$$
+Heuristic generator systems can create a large number of heuristics. Let us suppose $|\zeta| = $ 1000 heuristics were created considering the time and memory avaiable and we want to select the best $N =$ 50 heuristics. This would imply count the following number of combinations one can get from solving the combinatorial problem: $${1000\choose 50} \approx 10\sp{85} possibilities$$
 
-As we have seen, there are a almost $10\sp{85}$ possibilities to be analyzed in the selection of heuristics. Therefore, try to select heuristics from a large set of heuristics are going to be treated as an optimization problem.
-
+\iffalse
 \section{Problem Domains}
 Some of the problems we are trying to solve are the optimal domains for International Planning Competition (\texttt{IPC}).
 
@@ -215,6 +214,7 @@ This domain consists in a agent and a set of blocks. The agent has to push the b
 \end{figure}
 
 The solution shown in Figure \ref{fig:img_sokoban_solved} is to use the agent to push blocks located in the left figure to the goal distribution of blocks in the right figure.
+\fi
 
 \bigskip
 

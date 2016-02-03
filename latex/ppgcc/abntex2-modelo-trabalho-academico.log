@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  2 FEB 2016 21:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  2 FEB 2016 22:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2072,7 +2072,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 758--759
 ] [11] [12
 
 ] (./abntex2-modelo-trabalho-academico.lof
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 14.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 12.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2090,17 +2090,14 @@ Package microtype Info: Loading generic settings for font family
 (./abntex2-modelo-trabalho-academico.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 8.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17])
-[18] [19
+ [17]) [18] [19
 
 
 ] [20]
 \openout2 = `chapters/chapter01.aux'.
 
- (./chapters/chapter01.tex [21
+
+(./chapters/chapter01.tex [21
 
 
 ]
@@ -2230,27 +2227,17 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 167.
 
-[33]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
- [34] <images/sokoban_star_end.png, id=412, 639.38875pt x 196.735pt>
-File: images/sokoban_star_end.png Graphic file (type png)
-
-<use images/sokoban_star_end.png>
-Package pdftex.def Info: images/sokoban_star_end.png used on input line 212.
-(pdftex.def)             Requested size: 319.69359pt x 98.36725pt.
- [35 <./images/sokoban_star_end.png>])
-[36
+[33]) [34
 
 
 
-] [37] [38]
+] [35] [36]
 \openout2 = `chapters/chapter03.aux'.
 
- (./chapters/chapter03.tex [39
+ (./chapters/chapter03.tex [37
 
 
-] [40]
+] [38]
 Overfull \hbox (6.63968pt too wide) in paragraph at lines 123--124
 []\T1/lmr/m/n/12 (-20) Let $\OML/lmm/m/it/12 f[]$ \T1/lmr/m/n/12 (-20) be the l
 argest $\OML/lmm/m/it/12 f\OMS/lmsy/m/n/12 ^^@$\T1/lmr/m/n/12 (-20) value ac-co
@@ -2258,18 +2245,18 @@ rd-ing to $\OML/lmm/m/it/12 h[]$ \T1/lmr/m/n/12 (-20) en-coun-tered in the time
 $\OMS/lmsy/m/n/12 ^^@$\T1/lmr/m/n/12 (-20) bounded
  []
 
-[41] [42]
+[39] [40]
 Underfull \vbox (badness 1199) has occurred while \output is active []
 
- [43]
+ [41]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44]
-[45] [46]) [47
+ [42]
+[43] [44]) [45
 
 
 
-] [48]
+] [46]
 \openout2 = `chapters/chapter04.aux'.
 
  (./chapters/chapter04.tex
@@ -2286,7 +2273,7 @@ LaTeX Warning: No positions in optional float specifier.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49
+ [47
 
 
 ]
@@ -2309,16 +2296,16 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 66.
 
-[50]
+[48]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 81.
 
-[51]
+[49]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
- [52]
+ [50]
 Overfull \hbox (1.22653pt too wide) in paragraph at lines 122--123
 []\T1/lmr/m/n/12 (-20) We com-pare the cov-er-age of the \T1/lmtt/m/n/12 GHS \T
 1/lmr/m/n/12 (-20) ap-proaches with sev-eral other state$\OMS/lmsy/m/n/12 ^^@$\
@@ -2326,25 +2313,25 @@ T1/lmr/m/n/12 (-20) of$\OMS/lmsy/m/n/12 ^^@$\T1/lmr/m/n/12 (-20) the$\OMS/lmsy/
 m/n/12 ^^@$\T1/lmr/m/n/12 (-20) art
  []
 
-[53]
+[51]
 Overfull \hbox (9.50272pt too wide) in paragraph at lines 138--159
  [][] 
  []
 
-[54]
+[52]
 Underfull \vbox (badness 1789) has occurred while \output is active []
 
- [55]
+ [53]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 190.
 
-[56]
+[54]
 Overfull \hbox (22.56631pt too wide) in paragraph at lines 231--247
  [][] 
  []
 
-[57] [58] <images/elevators-opt11-strips.jpeg, id=614, 481.8pt x 481.8pt>
+[55] [56] <images/elevators-opt11-strips.jpeg, id=577, 481.8pt x 481.8pt>
 File: images/elevators-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/elevators-opt11-strips.jpeg>
@@ -2352,7 +2339,7 @@ Package pdftex.def Info: images/elevators-opt11-strips.jpeg used on input line
 311.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/floortile-opt11-strips.jpeg, id=615, 481.8pt x 481.8pt>
+<images/floortile-opt11-strips.jpeg, id=578, 481.8pt x 481.8pt>
 File: images/floortile-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/floortile-opt11-strips.jpeg>
@@ -2360,7 +2347,7 @@ Package pdftex.def Info: images/floortile-opt11-strips.jpeg used on input line
 314.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/nomystery-opt11-strips.jpeg, id=616, 481.8pt x 481.8pt>
+<images/nomystery-opt11-strips.jpeg, id=579, 481.8pt x 481.8pt>
 File: images/nomystery-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/nomystery-opt11-strips.jpeg>
@@ -2368,7 +2355,7 @@ Package pdftex.def Info: images/nomystery-opt11-strips.jpeg used on input line
 317.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/parcprinter-opt11-strips.jpeg, id=617, 481.8pt x 481.8pt>
+<images/parcprinter-opt11-strips.jpeg, id=580, 481.8pt x 481.8pt>
 File: images/parcprinter-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/parcprinter-opt11-strips.jpeg>
@@ -2376,7 +2363,7 @@ Package pdftex.def Info: images/parcprinter-opt11-strips.jpeg used on input lin
 e 322.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/pegsol-opt11-strips.jpeg, id=618, 481.8pt x 481.8pt>
+<images/pegsol-opt11-strips.jpeg, id=581, 481.8pt x 481.8pt>
 File: images/pegsol-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/pegsol-opt11-strips.jpeg>
@@ -2384,7 +2371,7 @@ Package pdftex.def Info: images/pegsol-opt11-strips.jpeg used on input line 325
 .
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/scanalyzer-opt11-strips.jpeg, id=619, 481.8pt x 481.8pt>
+<images/scanalyzer-opt11-strips.jpeg, id=582, 481.8pt x 481.8pt>
 File: images/scanalyzer-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/scanalyzer-opt11-strips.jpeg>
@@ -2392,7 +2379,7 @@ Package pdftex.def Info: images/scanalyzer-opt11-strips.jpeg used on input line
  328.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/sokoban-opt11-strips.jpeg, id=620, 481.8pt x 481.8pt>
+<images/sokoban-opt11-strips.jpeg, id=583, 481.8pt x 481.8pt>
 File: images/sokoban-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/sokoban-opt11-strips.jpeg>
@@ -2400,7 +2387,7 @@ Package pdftex.def Info: images/sokoban-opt11-strips.jpeg used on input line 33
 3.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/tidybot-opt11-strips.jpeg, id=621, 481.8pt x 481.8pt>
+<images/tidybot-opt11-strips.jpeg, id=584, 481.8pt x 481.8pt>
 File: images/tidybot-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/tidybot-opt11-strips.jpeg>
@@ -2408,7 +2395,7 @@ Package pdftex.def Info: images/tidybot-opt11-strips.jpeg used on input line 33
 6.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/transport-opt11-strips.jpeg, id=622, 481.8pt x 481.8pt>
+<images/transport-opt11-strips.jpeg, id=585, 481.8pt x 481.8pt>
 File: images/transport-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/transport-opt11-strips.jpeg>
@@ -2416,7 +2403,7 @@ Package pdftex.def Info: images/transport-opt11-strips.jpeg used on input line
 339.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/visitall-opt11-strips.jpeg, id=623, 481.8pt x 481.8pt>
+<images/visitall-opt11-strips.jpeg, id=586, 481.8pt x 481.8pt>
 File: images/visitall-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/visitall-opt11-strips.jpeg>
@@ -2424,30 +2411,30 @@ Package pdftex.def Info: images/visitall-opt11-strips.jpeg used on input line 3
 44.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
 
-<images/woodworking-opt11-strips.jpeg, id=624, 481.8pt x 481.8pt>
+<images/woodworking-opt11-strips.jpeg, id=587, 481.8pt x 481.8pt>
 File: images/woodworking-opt11-strips.jpeg Graphic file (type jpg)
 
 <use images/woodworking-opt11-strips.jpeg>
 Package pdftex.def Info: images/woodworking-opt11-strips.jpeg used on input lin
 e 347.
 (pdftex.def)             Requested size: 145.60333pt x 145.59975pt.
- [59]
+ [57]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60 <./images/elevators-opt11-strips.jpeg> <./images/floortile-opt11-strips.jp
+ [58 <./images/elevators-opt11-strips.jpeg> <./images/floortile-opt11-strips.jp
 eg> <./images/nomystery-opt11-strips.jpeg> <./images/parcprinter-opt11-strips.j
 peg> <./images/pegsol-opt11-strips.jpeg> <./images/scanalyzer-opt11-strips.jpeg
 > <./images/sokoban-opt11-strips.jpeg> <./images/tidybot-opt11-strips.jpeg> <./
 images/transport-opt11-strips.jpeg> <./images/visitall-opt11-strips.jpeg> <./im
-ages/woodworking-opt11-strips.jpeg>] [61]) [62
+ages/woodworking-opt11-strips.jpeg>] [59]) [60
 
 
 
-] [63] [64]
+] [61] [62]
 \openout2 = `chapters/chapter05.aux'.
 
  (./chapters/chapter05.tex
-[65
+[63
 
 
 ]) (./abntex2-modelo-trabalho-academico.bbl
@@ -2455,16 +2442,16 @@ ages/woodworking-opt11-strips.jpeg>] [61]) [62
 \tf@brf=\write6
 \openout6 = `abntex2-modelo-trabalho-academico.brf'.
 
- [66
+ [64
 
 
 
 ]
 bibitemlist
-[67]) (./abntex2-modelo-trabalho-academico.ind)
+[65]) (./abntex2-modelo-trabalho-academico.ind)
 
 AED: lastpage setting LastPage
-[68]
+[66]
 \tf@lof=\write7
 \openout7 = `abntex2-modelo-trabalho-academico.lof'.
 
@@ -2484,7 +2471,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1067.
 
 Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
 ot changed.
-(rerunfilecheck)             Checksum: 4B3AA927E2AE5516E13B4318003F73D0;2972.
+(rerunfilecheck)             Checksum: 0B3301505B241D7AFE9045DD3741D3B1;2874.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -2492,18 +2479,18 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1067.
  ) 
 Here is how much of TeX's memory you used:
- 39336 strings out of 493304
- 837020 string characters out of 6139870
- 1422186 words of memory out of 5000000
- 41653 multiletter control sequences out of 15000+600000
- 129169 words of font info for 220 fonts, out of 8000000 for 9000
+ 39296 strings out of 493304
+ 836420 string characters out of 6139870
+ 1421866 words of memory out of 5000000
+ 41629 multiletter control sequences out of 15000+600000
+ 129082 words of font info for 219 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  123i,25n,140p,2112b,6593s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
-/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvi
-ps/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/sh
-are/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm
+/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/f
+onts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/lm
 /lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex
 10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fon
@@ -2520,14 +2507,14 @@ nts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10
 usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
-m2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (70 pages, 895257 bytes
+re/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfrm2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/za
+pfding/uzdr.pfb>
+Output written on abntex2-modelo-trabalho-academico.pdf (68 pages, 825088 bytes
 ).
 PDF statistics:
- 1067 PDF objects out of 1200 (max. 8388607)
- 940 compressed objects within 10 object streams
- 223 named destinations out of 1000 (max. 500000)
- 42033 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 993 PDF objects out of 1000 (max. 8388607)
+ 873 compressed objects within 9 object streams
+ 210 named destinations out of 1000 (max. 500000)
+ 41964 words of extra memory for PDF output out of 42996 (max. 10000000)
 
