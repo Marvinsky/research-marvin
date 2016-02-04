@@ -152,6 +152,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
@@ -458,11 +462,10 @@ INPUT chapters/chapter02.tex
 OUTPUT chapters/chapter03.aux
 INPUT chapters/chapter03.tex
 INPUT chapters/chapter03.tex
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr6.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx6.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri8.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri7.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT images/elevators-opt11-strips.jpeg

@@ -33,13 +33,14 @@
 We present a greedy algorithm selection for solving the heuristic subset selection problem while optimizing different objective functions. We consider the following general optimization problem.
 
 \begin{equation}
-\begin{split}
-\textbf{minimize}_{\zeta\sp{'}\ \subseteq\ \zeta}\Psi(\zeta\sp{'}, \nabla) \\
-\end{split}
+\underset{\zeta\sp{'}\ \subseteq\ \zeta}{minimize}\ \Psi(\zeta\sp{'}, \nabla)
 \label{eq:equationmin}
 \end{equation}
+%\begin{split}
+%\textbf{minimize}_{\zeta\sp{'}\ \subseteq\ \zeta}\Psi(\zeta\sp{'}, \nabla) \\
+%\end{split}
 
-Where $\Psi(\zeta\sp{'},\nabla)$ is an objective function that we want to minimize using a subset of heuristics $\zeta\sp{'}$ that is selected from $\zeta$. According to Rayner et al., (\citeyear{raynersss13}) it is unlikely that there is an efficient algorithm for solving Equation \ref{eq:equationmin}.We use an algorithm based on the local search we call Greedy Heuristic Selection (\texttt{GHS}) to solve Equation \ref{eq:equationmin} for different functions $\Psi$.
+Where $\Psi(\zeta\sp{'},\nabla)$ is an objective function we want to minimize for a subset of heuristics $\zeta\sp{'}$ of $\zeta$. We use an algorithm based on the local search we call Greedy Heuristic Selection (\texttt{GHS}) to solve Equation \ref{eq:equationmin} for different functions $\Psi$.
 
 \begin{algorithm}
 \SetKwInOut{Input}{Input}
@@ -68,7 +69,7 @@ Algorithm \ref{alg:ghs_algorithm} shows \texttt{GHS}. \texttt{GHS} receives as i
 \section{Minimizing Search Tree Size}
 % ---
 \noindent
-The first objective function $\Psi$ we consider accounts for the number of expansions A$\sp{*}$ performs while solving a given planning problem. The planning problem must be solvable, this means $C\sp{*}$ cannot be infinity. When solving $\nabla$ using the consistent heuristic function $h_{max}(\zeta\sp{'})$  for $\zeta\sp{'} \subseteq \zeta$, A$\sp{*}$ generates a number of nodes that is bounded above by $J(\zeta\sp{'},\nabla)$, defined as,
+The first objective function $\Psi$ we consider accounts for the number of node generations A$\sp{*}$ performs while solving a given planning problem. The planning problem must be solvable, this means $C\sp{*}$ cannot be infinity. When solving $\nabla$ using the consistent heuristic function $h_{max}(\zeta\sp{'})$  for $\zeta\sp{'} \subseteq \zeta$, A$\sp{*}$ generates a number of nodes that is bounded above by $J(\zeta\sp{'},\nabla)$, defined as,
 
 \begin{equation}
 J(\zeta\sp{'},\nabla) = |\{children(s) \in V | f_{max}(s,\zeta\sp{'}) \leq C\sp{*}\}|
@@ -79,7 +80,7 @@ J(\zeta\sp{'},\nabla) = |\{children(s) \in V | h_{max}(s,\zeta\sp{'}) \leq C\sp{
 \label{eq:eq_size_search_tree_2}
 \end{equation}
 
-We write $J(\zeta\sp{'})$ or simply $J$ instead of $J(\zeta\sp{'},\nabla)$. What's more, we assume that A$\sp{*}$ expands all nodes $s$ with $f(s) \leq C\sp{*}$ while solving $\nabla$, as shown in Equation \ref{eq:eq_size_search_tree_1}.
+We write $J(\zeta\sp{'})$ or simply $J$ instead of $J(\zeta\sp{'},\nabla)$ whenever $\zeta\sp{'}$ and $\nabla$ are free from the context. What's more, we assume that A$\sp{*}$ expands all nodes $s$ with $f(s) \leq C\sp{*}$ while solving $\nabla$, as shown in Equation \ref{eq:eq_size_search_tree_1}.
 
 \iffalse
 We now show that $J(\zeta\sp{'}, \nabla)$ is minimal, for the subset $\zeta\sp{'}$ returned by \texttt{GHS}.
@@ -127,11 +128,12 @@ Given a set $\zeta$ of consistent heuristics, \texttt{GHS} returns a subset $\ze
 Another objective function $\Psi$ we consider is an approximation of the A$\sp{*}$ running time and is defined as follows.
 
 \begin{equation}
-T(\zeta\sp{'}, \nabla) = J(\zeta\sp{'},\nabla) \cdot (t_{h_{max}(\zeta\sp{'})} + t_{gen}) 
+T(\zeta\sp{'}, \nabla) = J(\zeta\sp{'},\nabla) \cdot (t_{h_{max}(\zeta\sp{'})} + t_{gen})\,, 
 \label{eq:eq_time_solving}
 \end{equation}
+\noindent
 
-where, for any heuristic function $h$, the term $t_{h}$ refers to the running time used for computing the $h$-value of any state $s$. We assume that $t_{h}$ to be independent of $s$, which is a reasonable assumption for several heuristics such as \texttt{PDBs} and $t_{gen}$ is the node generation time.
+where, for any heuristic function $h$, the term $t_{h_{max}(\zeta\sp{'})}$ refers to the running time used for computing the $h_{max}$ of any state $s$. We assume that $t_{h_{max}(\zeta\sp{'})}$ to be constant in the state space, which is a reasonable assumption for several heuristics such as \texttt{PDBs}. $t_{gen}$ is the node generation time, which we also assume to be constant.
 
 \iffalse
 Next we show that if all $h \in \zeta$ have the same evaluation time $t_{h}$, consequently the subset $\zeta\sp{'}$ \texttt{GHS} returns is guaranteed to have the lowest $T$-value amongst all subsets of size $||\zeta\sp{'}$ or larger.
@@ -159,13 +161,13 @@ In order to compute the running time of A$\sp{*}$ exactly we would also have to 
 \section{Estimating Tree Size and Running Time}
 In  practice \texttt{GHS} uses approximations of $J$ and $T$ instead of their exact values. This is because computing $J$ and $T$ exactly would require solving $\nabla$, and this is what we obviously want to avoid.
 
-We use the Culprit Sampler (\texttt{CS}) introduced by Barley et al., (\citeyear{BarleySantiagoOver}) and the Stratified Sampling (\texttt{SS}) algorithm introduced by Chen, (\citeyear{chen1992heuristic}) for computing \textit{\^{J}} and \textit{\^{T}}. Each method has its strengths and weaknesses, which we explore in Chapter \ref{ch:empirical_evaluation}, where we make an empirical comparison of GHS with other approaches. 
+We use the Culprit Sampler (\texttt{CS}) introduced by Barley et al., (\citeyear{BarleySantiagoOver}) and the Stratified Sampling (\texttt{SS}) algorithm introduced by Chen (\citeyear{chen1992heuristic}), for computing \textit{\^{J}} and \textit{\^{T}}. Each method has its strengths and weaknesses, which we explore in Chapter \ref{ch:empirical_evaluation}, where we make an empirical comparison of GHS with other approaches. 
 
 Both \texttt{CS} and \texttt{SS} must be able to quickly estimate the values of \textit{\^{J}}$(\zeta\sp{'})$ and \textit{\^{T}}$(\zeta\sp{'})$ for any subset $\zeta\sp{'}$ of $\zeta$ so they can be used in \texttt{GHS}'s optimization process.
 
 \section{Culprit Sampler (CS)}
 \noindent
-\texttt{CS} is an approach introduced by Barley et al., (\citeyear{BarleySantiagoOver}) and works by running in a time$-$bounded A$\sp{*}$ search while sampling $f$-culprits and $b$-culprits. In this dissertation we use \texttt{CS} to estimate the values of \textit{\^{J}} and \textit{\^{T}}.
+\texttt{CS} is an approach introduced by Barley et al., (\citeyear{BarleySantiagoOver}) and works by running a time-bounded A$\sp{*}$ search while sampling $f$-culprits and $b$-culprits. In this dissertation we use \texttt{CS} to estimate the values of \textit{\^{J}} and \textit{\^{T}}.
 
 \begin{definition}(f-culprit)
 Let $\zeta = \{h_{1}, h_{2},...,h_{M}\}$ be a set of heuristics. The f$-$culprit of a node n in an A$\sp{*}$ search tree is defined as the tuple F(n) = $\left\langle f_{1}(n), f_{2}(n),...,f_{M}(n)  \right\rangle$, where $f_{i}(n) = g(n)+h_{i}(n)$. For any n$-$tuple F, the counter $C_{F}$ denotes the number of nodes n in the tree with F(n) = F.
@@ -177,7 +179,7 @@ Let $\zeta = \{h_{1}, h_{2},...,h_{M}\}$ be a set of heuristics and b a lower bo
 \label{def:def_bculprits}
 \end{definition}
 
-\texttt{CS} works by running an A$\sp{*}$ search bounded by a user-specified time limit. Then, \texttt{CS} compresses the information obtained in the A$\sp{*}$ search (\textsf{i.e.,} the $f$-values of all nodes expanded according to all heuristics $h$ in $\zeta$) in $b$-culprits, which are later used for computing \textit{\^{J}}. The $f$-culprits are generated as an intermediate step for computing the $b$-culprits, as we explain below. The maximum number of $f$-culprits and $b$-culprits in an A$\sp{*}$ search tree is equal to the number of nodes in the tree expanded by the time-bounded A$\sp{*}$ search. However, in practice the number of $f$-culprits is usually much lower than the number of nodes in the tree. Moreover, in practice, the total number of different $b$-culprits tends to be even lower than the total number of $f$-culprits. Given a planning problem $\nabla$ and a set of heuristics $\zeta$, \texttt{CS} samples the A$\sp{*}$ search tree as follows.
+\texttt{CS} works by running an A$\sp{*}$ search bounded by a user-specified time limit. Then, \texttt{CS} compresses the information obtained in the A$\sp{*}$ search (i.e., the $f$-values of all nodes expanded according to all heuristics $h$ in $\zeta$) in $b$-culprits, which are later used for computing \textit{\^{J}}. The $f$-culprits are generated as an intermediate step for computing the $b$-culprits, as we explain below. The maximum number of $f$-culprits and $b$-culprits in an A$\sp{*}$ search tree is equal to the number of nodes in the tree expanded by the time-bounded A$\sp{*}$ search. However, in practice the number of $f$-culprits is usually much lower than the number of nodes in the tree. Moreover, in practice, the total number of different $b$-culprits tends to be even lower than the total number of $f$-culprits. Given a planning problem $\nabla$ and a set of heuristics $\zeta$, \texttt{CS} samples the A$\sp{*}$ search tree as follows.
 
 \begin{enumerate}
     \item[1.-] \texttt{CS} runs A$\sp{*}$ using $h_{min}(s,\zeta) = min_{h \in \zeta}h(s)$ until reaching a user-specified time limit. A$\sp{*}$ using $h_{min}$ expands node $n$ if it were to expand $n$ while using any of the heuristics in $\zeta$ individually. For each node $n$ expanded in this time-bounded search we store $n$'s $f$-culprit and its counter.
@@ -192,7 +194,7 @@ The process described above is performed only once \texttt{GHS}'s execution. The
 \label{eq:eq_comp_w}
 \end{equation}
 
-Where $W(B)$ is 0 if there is a heuristic in $\zeta\sp{'}$ whose $y$-value in $B$ is zero (\textsf{i.e.,} there is a heuristic in $\zeta\sp{'}$ that prunes all nodes compressed into $B$), and $C_{B}$ otherwise. If the time$-$bounded A$\sp{*}$ search with $h_{min}$ expands all nodes $n$ with $f(n) \leq C\sp{*}$, then \textit{\^{J}}$=J$. In practice, however, our estimate \textit{\^{J}} will tend to be much lower than $J$.
+Where $W(B)$ is 0 if there is a heuristic in $\zeta\sp{'}$ whose $y$-value in $B$ is zero (i.e., there is a heuristic in $\zeta\sp{'}$ that prunes all nodes compressed into $B$), and $C_{B}$ otherwise. If the time$-$bounded A$\sp{*}$ search with $h_{min}$ expands all nodes $n$ with $f(n) \leq C\sp{*}$, then \textit{\^{J}}$=J$. In practice, however, our estimate \textit{\^{J}} will tend to be much lower than $J$.
 
 The value of \textit{\^{T}} is computed by multiplying \textit{\^{J}} by the sum of the evaluation time of each heuristic in $\zeta\sp{'}$. The evaluation time of the heuristics in $\zeta\sp{'}$ is measured in a separate process, before executing \texttt{CS}, by sampling a small number of nodes from $\nabla$'s start state.
 
@@ -330,7 +332,7 @@ One run of the \texttt{SS} algorithm is called a $probe$. Chen,  (\citeyear{chen
 
 Similarly to \texttt{CS}, we also define a time-limit to run \texttt{SS}. We use \texttt{SS} with an iterative-deepening approach in order to ensure an estimate of $\hat{J}$ and $\hat{T}$ before reaching the time limit. We set the upper bound $d$ to the heuristic value of the start state and, after performing $p$ probes, if there is still time, we increase $d$ to twice its previous value. The values of $\hat{J}$ and $\hat{T}$ is given by the prediction produced for the last $d$-value in which \texttt{SS} was able to sample from.
 
-\texttt{SS} must also be able to estimate the values of $\hat{J}(\zeta\sp{'})$ and $\hat{T}(\zeta\sp{'})$ for any subset $\zeta\sp{'}$ of $\zeta$. This is achieved by using \texttt{SS} to estimate $b$-culprits (See Definition \ref{def:def_bculprits}) instead of the search tree size directly. Similarly to \texttt{CS, SS} used $h_{min}$ of the heuristics in $\zeta$ to decide when to prune a node (See Line 6 of Algorithm \ref{alg:ss_algorithm}) while sampling. This ensures that \texttt{SS} expands a node $n$ if A$\sp{*}$ employing at least one of the heuristics in $\zeta$ would expand $n$ according to bound $d$. The $C_{B}$ counter of each $b$-culprit $B$ encountered during $SS$'s probe is given by,
+\texttt{SS} must also be able to estimate the values of $\hat{J}(\zeta\sp{'})$ and $\hat{T}(\zeta\sp{'})$ for any subset $\zeta\sp{'}$ of $\zeta$. This is achieved by using \texttt{SS} to estimate $b$-culprits (see Definition \ref{def:def_bculprits}) instead of the search tree size directly. Similarly to \texttt{CS, SS} used $h_{min}$ of the heuristics in $\zeta$ to decide when to prune a node (see Line 6 of Algorithm \ref{alg:ss_algorithm}) while sampling. This ensures that \texttt{SS} expands a node $n$ if A$\sp{*}$ employing at least one of the heuristics in $\zeta$ would expand $n$ according to bound $d$. The $C_{B}$ counter of each $b$-culprit $B$ encountered during $SS$'s probe is given by,
 
 \begin{equation}
 C_{B} = \sum_{\left\langle n,w \right\rangle \in A \wedge B(n) = B}w
@@ -397,9 +399,9 @@ In the Figure \ref{fig:empty_space_ts}, each row represent a type. The first boa
 \section{SS step by step}
 \noindent
 % -- Explaining Stratified Sampling
-In the Figure \ref{fig:ts_search_tree}, we can see an example of a \texttt{SS} run. Thus, nodes have different types if they have different colors or are in different levels of the search tree.
+In the Figure \ref{fig:ts_search_tree}, we can see an example of an \texttt{SS} run. Thus, nodes have different types if they have different colors or are in different levels of the search tree.
 
-In the Level 1, we have the root node, and their $w$ is initialized with one. In the Level 2 three nodes are generated by the root node. The nodes in Level 2 have the following types: red, blue and red from left to right respectively, and each node receive the same $w$ from their father. Since we assume that nodes of the same type root subtrees of the same size, then only one node of each type needs to be expanded. In Level 2 there are two nodes with type red. In that way, we choose randomly one of them. Let us suppose we choose the right red node. Then, we have to update the number of nodes with the red type by summing their $w$-values, since both nodes of the red type have $w = 1$, then we sum the $w$ and the new $w=2$. As a result in Level 2 we will have two nodes of red type and one node with blue type.
+In the level 1, we have the root node, and their $w$ is initialized with one. In the level 2 three nodes are generated by the root node. The nodes in level 2 have the following types: red and blue, and each node receive the same $w$ from their parent. Since we assume that nodes of the same type root subtrees of the same size, then only one node of each type needs to be expanded. In level 2 there are two nodes with the red type. In that way, we choose randomly one of them to expand. Let us suppose we choose the right red node. Then, we have to update the number of nodes with the red type by summing their $w$-values, since both nodes of the red type have $w = 1$, then we sum the $w$ resulting in $w=2$.
 
 \begin{figure}[htb]
 \centering
@@ -455,23 +457,25 @@ In the Level 1, we have the root node, and their $w$ is initialized with one. In
 \caption{Search tree using type system} \label{fig:ts_search_tree}
 \end{figure}
 
-Let's suppose that nodes in Level 2 are expanded. The blue node generates one node of the blue type and the red node generates two nodes with the following types: red and blue. The question that raises here is how many nodes are generated in the Level 3. To answer this question, we only have to apply a simple multiplication between each type and their respectively weight $w$ and then sum all the nodes with the same type. For Level 3 the answer would be: $1 \times \textcolor{blue}{blue} + 2 \times \textcolor{red}{red} + 2 \times \textcolor{blue}{blue}$. Therefore, in Level 3 we will have 2 nodes of the red type and 3 nodes of the blue type. This process continues until reaching the bottom of the tree.
+Let's suppose that nodes in level 2 are expanded. The blue node generates one node of the blue type and the red node generates two nodes with the following types: red and blue. To compute the $w$-values of the nodes at level 3 we do the following. The $w$-value of nodes of the red type is computed by summing up the $w$-values of all parents that generated a node of the red type at level 3. In this case only one node at level 2 generated a node of the red type at level 3. Since this node has a $w$-value of 2, then \texttt{SS} estimates that there is 2 nodes of the red type at level 3 (red type's $w$-value). Two nodes at level 2 generate a blue node at level 3, thus we have to sum their $w$-values, resulting in $w = 2 + 1 = 3$ for blue nodes.
 
 \iffalse
+The question that raises here is how many nodes are generated in the Level 3. To answer this question, we only have to apply a simple multiplication between each type and their respectively weight $w$ and then sum all the nodes with the same type. For Level 3 the answer would be: $1 \times \textcolor{blue}{blue} + 2 \times \textcolor{red}{red} + 2 \times \textcolor{blue}{blue}$. Therefore, in Level 3 we will have 2 nodes of the red type and 3 nodes of the blue type. This process continues until reaching the bottom of the tree.
+
 In the Level 3 the $w$ of the node blue would have the same $w$ of their father. Their father has $w = 1$, then the child has $w = 1$. The $w$ of the red node and blue node would be 2. Once the $w$ has been updated for each node in the Level 3,	 we apply the \texttt{SS}'s assumption again. There are two nodes with type blue. Then, we choose randomly one of them to update their $w$. Let's suppose we choose the right blue type and their updated $w$ would be 3 because 1 from the left blue type plus 2 from the right blue type.
 
 Now, we have to expand the nodes in the Level 3. Let's imaging that they are expanded in the following way: The red node generates two nodes of types red and blue from left to right and the blue node generates one of type red. How many nodes would be generated at Level 4, then? The answer is: $2 \times \textcolor{red}{red} + 3 \times \textcolor{red}{red} + 2 \times \textcolor{blue}{blue}$. As a result, in the Level 4, we will have five nodes of type red and two nodes of type blue.
 \fi
 
-Finally, the number of nodes expanded in the search tree is obtained summing all $w$ plus one (The root node). In summarize, the number of nodes expanded in the search tree would be $ 15 + 1 = 16$. 
+Finally, the number of nodes expanded in the search tree is obtained summing all $w$ plus one (the root node). In summary, the number of nodes expanded in the search tree would be $ 15 + 1 = 16$. 
 
-As we know the stochastic behavior of \texttt{SS}, if we run the algorithm again maybe in Level 2 instead of choose the right red node we choose the left red node and the nodes generated in Level 3 would be different. As a consequence the number of nodes generated could be higher or lower than we have now. In other words, in each probe of the algorithm we could result in a different value of the estimation of the search tree size. In order to obtain accurate estimates of the search tree size one has to usually several probes of SS and average the results.
+If we run the algorithm again maybe in level 2 instead of choosing the right red node we could choose the left red node and the nodes generated in level 3 would be different. As a consequence, the number of nodes generated could be higher or lower than we have now. In other words, in each probe of the algorithm could result in a different value of the estimated tree size. In order to obtain accurate estimates of the search tree size one has to usually perform several probes of \texttt{SS} and average the results.
 
 \section{Comparison between SS and IDA*}
 \noindent
 In this experiment \texttt{SS} estimates the search tree size generated by IDA$\sp{*}$ using a consistent heuristic. \texttt{SS} estimates the size of the search tree up to some defined deep $f$-layer in the tree.
 
-We first ran IDA$\sp{*}$ for Fast-Downward benchmark for optimal domains. Our evaluation metric is coverage, \texttt{i.e.,} number of problems solved within 30 minutes time limit. We note that in 30 minutes non all the instances for a specific domain using a consistent heuristic can be solved. Afterwards, run \texttt{SS} using as a threshold the $f-$layer limited by the search time, this process is executed using different number of probes \texttt{i.e.,} 1, 10, 100, 1000 and 5000.
+We first ran IDA$\sp{*}$ for Fast-Downward benchmark for optimal domains. Our evaluation metric is coverage, i.e., number of problems solved within 30 minutes time limit. We note that in 30 minutes non all the instances for a specific domain using a consistent heuristic can be solved. Afterwards, run \texttt{SS} using as a threshold the $f-$layer limited by the search time, this process is executed using different number of probes i.e., 1, 10, 100, 1000 and 5000.
 
 \begin{equation}
 \frac{\sum_{s\in PI} \frac{Pred(s, d) - R(s, d)}{R(s, d)}}{|PI|}

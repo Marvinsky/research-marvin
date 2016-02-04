@@ -76,7 +76,7 @@
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
 
 %for formula references
-\usepackage{amsmath}
+\usepackage{amsmath,mathtools}
 
 % Pacotes %triangledown
 \usepackage{latexsym}
@@ -133,6 +133,10 @@
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{definition}{Definition}[section]
+% minimize and maximize underneath the word
+\def\minimize{\mathop{\mbox{\bf minimize}}}
+\def\maximize{\mathop{\mbox{\bf maximize}}}
+
 % --- 
 % CONFIGURAÇÕES DE PACOTES
 % --- 
