@@ -19,6 +19,11 @@
   Planning and Scheduling, {ICAPS} 2014, Portsmouth, New Hampshire, USA, June
   21-26, 2014}, 2014.}
 
+\bibitem[Bonet e Geffner 2001]{bonet2001planning}
+\abntrefinfo{Bonet e Geffner}{BONET; GEFFNER}{2001}
+{BONET, B.; GEFFNER, H. Planning as heuristic search.
+\emph{Artificial Intelligence}, Elsevier, v.~129, n.~1, p. 5--33, 2001.}
+
 \bibitem[Chen 2011]{bernard2011}
 \abntrefinfo{Chen}{CHEN}{2011}
 {CHEN, B. \emph{Part2 AI as Representation and Search}. 2011.

@@ -27,13 +27,13 @@
 %\chapter{Resultados de comandos}\label{cap_exemplos}
 \chapter{About the Problem}\label{aboutTheProblem}
 \noindent
-State-space search algorithms have been used to solve important real-world problems, such as problems arising in Robotics, domain-independent planning, chemical compounds discovery, bin packing, sequence alignment, automating layouts of sewers, and network routing, among others. In this dissertation we study methods for selecting a subset of heuristic functions while minimizing the search tree size and the running time of the A$\sp{*}$ search algorithm (Hart P. E. et al., \citeyear{hart1968formal}).
+State-space search algorithms have been used to solve important real-world problems, such as problems arising in Robotics, domain-independent planning, chemistry, biology, and engineering. In this dissertation we study methods for selecting a subset of heuristic functions while minimizing the search tree size and the running time of the A$\sp{*}$ search algorithm while solving state-space search problems (Hart P. E. et al., \citeyear{hart1968formal}).
 
 We are interested in selecting heuristics from a large set of possibilities because Holte et al., (\citeyear{holte2006maximizing}) showed that search can be faster if several smaller pattern databases are used instead of one large pattern database. In fact, we believe that different heuristics can give us valuable information about the solution of the problem. For example, one heuristic can be helpful in a region of the search tree where other heuristics aren't. Then, instead of using one heuristic to find the solution, it would be best to use the most promising subset of heuristics from a possibly large set.
 
 \section{Background work}
 \noindent
-Search algorithms are used to solve Artificial Intelligence (\texttt{AI}) problems by finding sequence of actions that goes from the start state to the goal state in the search space. Two well know search algorithms are Depth-First Search (\texttt{DFS}) and Breadth-First Search (\texttt{BFS}). \texttt{DFS} looks for the solution by exploring the subtree rooted node $n$ before exploring the substrees rooted at $n$'s siblings while looking for a path from start to goal. In the Figure \ref{fig:dfs_solution} we can see \texttt{DFS} expands 31 states until finding a solution to the problem. \texttt{BFS} looks for the solution by exploring the nodes in a given level, before exploring the nodes in the next level. In the Figure \ref{fig:bfs_solution} we can see \texttt{BFS} expands 46 states to find the goal. In both Figure \ref{fig:dfs_solution} and \ref{fig:bfs_solution} the numbers above of each state represent the order in which the states are visited. Furthermore, both search algorithms usually visit a large number of states before finding a solution. We call brute-force-search tree (\texttt{BFST}) the tree expanded by \texttt{DFS} and \texttt{BFS}.
+Search algorithms are used to solve Artificial Intelligence (\texttt{AI}) problems by finding sequence of actions from the start state to the goal state in the search space. Two well know search algorithms are Depth-First Search (\texttt{DFS}) and Breadth-First Search (\texttt{BFS}). \texttt{DFS} looks for the solution by exploring the subtree rooted node $n$ before exploring the subtrees rooted at $n$'s siblings while looking for a path from start to goal. In the Figure \ref{fig:dfs_solution} we can see \texttt{DFS} expands 31 states until finding a solution to the problem. \texttt{BFS} looks for the solution by exploring the nodes in a given level before exploring the nodes in the next level. In the Figure \ref{fig:bfs_solution} we can see \texttt{BFS} expands 46 states to find the goal. In both Figure \ref{fig:dfs_solution} and \ref{fig:bfs_solution} the numbers above of each state represent the order in which the states are visited. Furthermore, both search algorithms usually visit a large number of states before finding a solution. We call brute-force-search tree (\texttt{BFST}) the tree expanded by \texttt{DFS} and \texttt{BFS}.
 
 \iftrue
 \begin{landscape}
@@ -192,11 +192,11 @@ Search algorithms are used to solve Artificial Intelligence (\texttt{AI}) proble
 \end{landscape}
 \fi
 
-There are other types of algorithms called heuristic search algorithms, which use one of the most important algorithm that use heuristic is A$\sp{*}$ (Hart P. E. et al., \citeyear{hart1968formal}), which also solves problems optimally. The heuristic is the estimation of the distance for one node in the search tree to get to a goal state. The heuristic search algorithms tend to generate smaller search trees in comparison to the \texttt{BFST}, because the heuristic guides the search to more promising parts of the state space. Also, by reducing the search tree size, the heuristic function guidance might also reduce the overall running time of the algorithm.
+There are other types of algorithms called heuristic search algorithms, and the most representative algorithm of this type is A$\sp{*}$ (Hart P. E. et al., \citeyear{hart1968formal}), which also solves problems optimally. The heuristic is the estimation of the distance for one node in the search tree to get to a goal state. The heuristic search algorithms tend to generate smaller search trees than the \texttt{BFST}, because the heuristic guides the search to more promising parts of the state space. Also, by reducing the search tree size, the heuristic function guidance might also reduce the overall running time of the algorithm.
 
-There are different approaches (Haslum et al., \citeyear{haslum2007domain}; Edelkamp, \citeyear{edelkamp2007automated}; Nissim et al., \citeyear{nissim2011computing}) that have been developed to generate heuristics. The way to create heuristics could be using domain knowledge or without domain knowledge. The systems that generate a heuristic are called heuristic generators by Barley et al., (\citeyear{BarleySantiagoOver}). Actually, the approache that have showed most successful results in heuristic generation is the Pattern Database (\texttt{PDB}) (Culberson and Schaeffer, \citeyear{culberson1998pattern}). The way how \texttt{PDBs} work is the following: The search space of the problem is abstracted into a smaller state space that can be enumerated with exhaustive search. The distance of all abstracted states to the abstracted goal state are stored in a lookup table, which can be used as a heuristic function for the original state space.
+There are different approaches (Haslum et al., \citeyear{haslum2007domain}; Edelkamp, \citeyear{edelkamp2007automated}; Nissim et al., \citeyear{nissim2011computing}) for creating heuristics. The way to create heuristics could be using domain knowledge or without domain knowledge. The systems that generate a heuristic are called heuristic generators by Barley et al., (\citeyear{BarleySantiagoOver}). Actually, the approach that have shown successful results in heuristic generation is Pattern Database (\texttt{PDB}) (Culberson and Schaeffer, \citeyear{culberson1998pattern}). The way how \texttt{PDBs} work is the following: The search space of the problem is abstracted into a smaller state space that can be enumerated with exhaustive search. The distance of all abstracted states to the abstracted goal state are stored in a lookup table, which can be used as a heuristic function for the original state space.
 
-Holte et al., (\citeyear{holte2006maximizing}) showed that search can be faster if several smaller \texttt{PDBs} are used instead of one large pattern database. In addition Domshlak et al., (\citeyear{domshlak2010max}) and Tolpin et al.,  (\citeyear{tolpin2013towards}) showed that evaluating the heuristic lazily, only when they are essential to a decision to be made in the search process is worthy in comparison to take the maximum of the set of heuristics. Our meta-reasoning proposes to use selection of heuristics instead of the methods proposed already because we believe that we will outperformed other approaches using approximations.
+Holte et al., (\citeyear{holte2006maximizing}) showed that search can be faster if several smaller \texttt{PDBs} are used instead of one large pattern database. In addition Domshlak et al., (\citeyear{domshlak2010max}) and Tolpin et al.,  (\citeyear{tolpin2013towards}) showed that evaluating the heuristic lazily, only when they are essential to a decision to be made in the search process, is worthy in comparison to take the maximum of the set of heuristics.
 % ---
 \section{Aim and Objectives}
 \subsection{Aim}
@@ -215,11 +215,11 @@ The objective of this dissertation is to develop meta-reasoning approaches for s
 % ---
 \section{Scope, Limitations, and Delimitations}
 \noindent
-We implemented our method in Fast Downward (Helmert, \citeyear{helmert2006fast}) and we test our methods on the 2011 International Planning Competition (\texttt{IPC}) domain instances.
+We implemented our method in Fast Downward (Helmert, \citeyear{helmert2006fast}) and we test our methods on the 2011 International Planning Competition (\texttt{IPC}) problem instances.
 
 \section{Justification}
 \noindent
-Good results have been obtained in domain-independent planning by using heuristic search approach (Haslum et al., \citeyear{haslum2007domain}). The heuristic function used to guide the A$\sp{*}$ search can greatly affect the algorithm's running time.
+Good results have been obtained in domain-independent planning by using heuristic search approach (Blai Bonet and Hector Geffner, \citeyear{bonet2001planning}). The heuristic function used to guide the A$\sp{*}$ search can greatly affect the algorithm's running time.
 
 We use heuristic generators in order to create a large set of heuristics and obtain heuristics to solve problems.
 
@@ -234,7 +234,7 @@ We test the following hypothesis:
 \noindent
 The main contributions of this dissertation are:
 \begin{itemize}
-\item Provide a meta-reasoning approach for selecting heuristic functions while minimizing the number of nodes by A$\sp{*}$.
+\item Provide a meta-reasoning approach for selecting heuristic functions while minimizing the number of nodes generated by A$\sp{*}$.
 
 \item Provide a meta-reasoning approach for selecting heuristic functions while minimizing the running time of the A$\sp{*}$ search. 
 \end{itemize}
@@ -243,10 +243,10 @@ The main contributions of this dissertation are:
 \noindent
 The dissertation is organized as follows: 
 \begin{enumerate}
-\item In Chapter I, the background of the dissertation is provided, which also includes our motivation and the scope definition.
-\item In Chapter II, we review the state-of-the-art in selection of heuristic functions.
-\item In Chapter III, we introduce Greedy Heuristic Selection (\texttt{GHS}). 
-\item In Chapter IV, we explain the results obtained by using \texttt{GHS} and compare it with other planner systems.
+\item In Chapter I, the background of the dissertation is provided, which also includes the objectives and the scope definition.
+\item In Chapter II we review the state-of-the-art in selection of heuristic functions.
+\item In Chapter III we introduce Greedy Heuristic Selection (\texttt{GHS}). 
+\item In Chapter IV compare \texttt{GHS} with other planner systems.
 \item We conclude in Chapter V.
 \end{enumerate}
 
