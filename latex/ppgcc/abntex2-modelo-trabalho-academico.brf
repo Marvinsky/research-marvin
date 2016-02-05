@@ -36,7 +36,9 @@
 \backcite {chen1992heuristic}{{42}{12}{algocf.2}}
 \backcite {chen1992heuristic}{{42}{12}{algocf.2}}
 \backcite {lelis2014estimating}{{42}{12}{algocf.2}}
-\backcite {lelis2012fast}{{44}{3.8}{equation.3.8.7}}
+\backcite {lelis2013predicting}{{44}{3.8}{section.3.8}}
+\backcite {korf2001timecomplexity}{{44}{3.8}{section.3.8}}
+\backcite {lelis2012fast}{{44}{3.8}{section.3.8}}
 \backcite {helmert2006fast}{{53}{4}{chapter.4}}
 \backcite {edelkamp2007automated}{{54}{4.1}{section.4.1}}
 \backcite {BarleySantiagoOver}{{54}{4.1}{section.4.1}}
