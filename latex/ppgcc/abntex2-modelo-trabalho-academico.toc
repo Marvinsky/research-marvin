@@ -40,16 +40,17 @@
 \contentsline {section}{\numberline {3.6}Stratified Sampling (SS)}{40}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Type System}{40}{subsection.3.6.1}
 \contentsline {section}{\numberline {3.7}SS step by step}{43}{section.3.7}
-\contentsline {section}{\numberline {3.8}Comparison between SS and IDA*}{44}{section.3.8}
-\contentsline {section}{\numberline {3.9}Comparison between SS and A*}{46}{section.3.9}
-\contentsline {section}{\numberline {3.10}Approximation Analysis for SS and A*}{46}{section.3.10}
-\contentsline {part}{\partnumberline {IV}\MakeTextUppercase {Empirical Evaluation}}{49}{part.4}
+\contentsline {part}{\partnumberline {IV}\MakeTextUppercase {Empirical Evaluation}}{45}{part.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Empirical Evaluation}}{51}{chapter.4}
-\contentsline {section}{\numberline {4.1}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{52}{section.4.1}
-\contentsline {section}{\numberline {4.2}Comparison with Other Planning Systems}{54}{section.4.2}
-\contentsline {section}{\numberline {4.3}Systems Tested}{54}{section.4.3}
-\contentsline {section}{\numberline {4.4}Discussion of the Results}{55}{section.4.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Empirical Evaluation}}{47}{chapter.4}
+\contentsline {section}{\numberline {4.1}Comparison between SS and IDA*}{47}{section.4.1}
+\contentsline {section}{\numberline {4.2}Comparison between SS and A*}{48}{section.4.2}
+\contentsline {section}{\numberline {4.3}Approximation Analysis for SS and A*}{49}{section.4.3}
+\contentsline {section}{\numberline {4.4}Explanation of the Experiments}{50}{section.4.4}
+\contentsline {section}{\numberline {4.5}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{52}{section.4.5}
+\contentsline {section}{\numberline {4.6}Comparison with Other Planning Systems}{54}{section.4.6}
+\contentsline {section}{\numberline {4.7}Systems Tested}{54}{section.4.7}
+\contentsline {section}{\numberline {4.8}Discussion of the Results}{55}{section.4.8}
 \vspace {\cftbeforechapterskip }
 \contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{59}{part.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
