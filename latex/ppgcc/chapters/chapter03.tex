@@ -531,7 +531,7 @@ The 2011 \texttt{IPC} domains contains 20 instances per domain. Floortile only h
 
 \section{Comparison between SS and A*}
 \noindent
-The Table \ref{tb:ipdb_lmcut_mands} shows that \texttt{SS} is not a good estimator for A$\sp{*}$ and that is because \texttt{SS} does not count for duplicate nodes and A$\sp{*}$ does. \texttt{SS} overestimate the A$\sp{*}$ search tree size. As a result, \texttt{SS} often gets values by several orders of magnitude bigger than the actual A$\sp{*}$ search tree.
+The Table \ref{tb:ipdb_lmcut_mands} shows that \texttt{SS} is not a good estimator for A$\sp{*}$. This is because \texttt{SS} does not account for duplicate nodes and A$\sp{*}$ does. As a result \texttt{SS} usually overestimates by a several orders of magnitude the A$\sp{*}$ search tree size.
 
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
@@ -558,19 +558,24 @@ Woodworking          & 3.21e+06    & 2.53e+18   & 3.20e+06          & 2.76e+18  
 \end{tabular}
 \end{table}
 
-Three heuristics were used: ipdb, \texttt{LM-Cut} and M$\&$S.  The last column \textsf{n} represent the number of instances solved by A$\sp{*}$ using the three heuristics. For this experiment we decided to use only the instances that are solved by the three heuristics at the same time. The columns with A$\sp{*}$ represents the average of number of nodes expanded by A$\sp{*}$ for the instances solved using a specific heuristic. The column with \texttt{SS}-error represents the relative-error Formula \ref{eq:eq_comparison} applied to the solved instances.
+Three heuristics were used: iPDB (Haslum et al., \citeyear{haslum2007domain}), \texttt{LM-Cut} (Pommerening and Helmert, \citeyear{PommereningH13}) and M$\&$S (Nissim et al., \citeyear{nissim2011computing}). The last column \textsf{n} shows the number of instances solved by A$\sp{*}$ using the three heuristics. For this experiment we use only the instances that are solved by the three heuristics at the same time. The columns with A$\sp{*}$ represents the average of number of nodes expanded by A$\sp{*}$ for the instances solved using a specific heuristic. The column with \texttt{SS}-error represents the relative-error for the solved instances.
 
-For Barman: Using M$\&$S, A$\sp{*}$ expands in average 6.67e$+$06 which is less nodes than ipdb$-$1.72e$+$07 and \texttt{LM-Cut}$-$7.45e$+$06. However, using M$\&$S, \texttt{SS}$-$error is 1.26e$+$36, ipdb$-$8.68e$+$31 and \texttt{LM-Cut}$-$2.21e$+$30, which indicates that the number of nodes expanded by \texttt{SS} in average is in the order of magnitude from 30 to 40. In Visitall, \texttt{SS}-error shows that \texttt{SS} overestimates A$\sp{*}$ highly, which represent a very bad prediction of \texttt{SS}. In Openstack: Using the three heuristics, A$\sp{*}$ expands almost the same number of nodes for the 4 instances solved, and \texttt{SS}-error shows a score near to the perfect and the reason is that \texttt{SS} expands less nodes than A$\sp{*}$. 
+\texttt{SS} usually overestimates the number of nodes expanded by A$\sp{*}$ by several orders of magnitude, for example, in Barman with M$\&$S, A$\sp{*}$ expands on average $6.67\times10\sp{6}$ which is less nodes than iPDB$-1.72\times10\sp{7}$ and \texttt{LM-Cut}$-7.45\times10\sp{6}$. However, using M$\&$S, \texttt{SS}$-$error is $1.26\times10\sp{36}$, iPDB$-8.68\times10\sp{31}$ and \texttt{LM-Cut}$-2.21\times10\sp{30}$, which indicates that the number of nodes expanded by \texttt{SS} in average is in the order of magnitude from 30 to 40. In Visitall, \texttt{SS}-error shows that \texttt{SS} overestimates A$\sp{*}$ highly, which represent a very bad prediction of \texttt{SS}. In Openstack: Using the three heuristics, A$\sp{*}$ expands almost the same number of nodes for the 4 instances solved, and \texttt{SS}-error shows a score near to the perfect and the reason is that \texttt{SS} expands less nodes than A$\sp{*}$. 
 
+\iffalse
 Looking in the instances solved, the number of nodes expanded by \texttt{SS} using ipdb, \texttt{LM-Cut} and M$\&$S for the 4 instances of Openstack are close to the number of nodes expanded by A$\sp{*}$ using the same heuristics. For example, for the first instance (p01.pddl) using ipdb \texttt{SS} expands 10977 and A$\sp{*}$ expands 4862.23, using \texttt{LM-Cut} \texttt{SS} expands 10977 and A$\sp{*}$ expands 2729.12, using M$\&$S \texttt{SS} expands 10977 and A$\sp{*}$ expands 2729.12. The same behavior is observed in other instances. In consequence, applying relative-error Formula the result will tend to be the perfect score for this domain.
+\fi
 
 \section{Approximation Analysis for SS and A*}
 \noindent
-Here we show that \texttt{SS} is able to make good selection of heuristics ipdb, \texttt{LM-Cut} and \texttt{GA-PDBs} with respect to the A$\sp{*}$ search tree size.
+Although \texttt{SS} is not able to produce good predictions of the A$\sp{*}$ search tree size, here we show empirically that \texttt{SS} allows one to make good heuristic selections. Again we use iPDB, \texttt{LM-Cut}, and \texttt{GA-PDBs} (Edelkamp, \citeyear{edelkamp2007automated}) in this experiment.
 
-Even though, \texttt{SS} has poor prediction system for A$\sp{*}$, as the Table \ref{tb:ipdb_lmcut_mands} says, we have used \texttt{SS} in our utility function and observed that we get to solve many instances for optimal domains. In this experiment we analize the approximation of \texttt{SS} against A$\sp{*}$. 
+In order to select heuristics the predictions produced by \texttt{SS} do not have to be accurate in absolute terms, but they have to be accurate in relative terms. That is, if A$\sp{*}$ using heuristic $h_{1}$ expands fewer nodes than when using $h_{2}$, then \texttt{SS}'s predictions could be arbitrarily inaccurate for both $h_{1}$ and $h_{2}$ as long as its prediction estimated that $h_{1}$ is better than $h_{2}$ then one is able to select $h_{1}$ over $h_{2}$. 
 
-Moreover, in order to understand how \texttt{SS} and A$\sp{*}$ behaves we have created plots with the fixed range of 2. This way we are going to have 4 different regions as shown in the Figure \ref{fig:img_cartesian_plane} . The points represent the fraction between the  number of nodes expanded by A$\sp{*}$ using a heuristic $i$ ($J(h_{i})$), and the estimate of the number of nodes expanded by \texttt{SS} ($\hat{J}(h_{i})$). Points on regions II and III are heuristics that \texttt{SS} correctly choose to be used with A$\sp{*}$. Points following on the other regions are those choices, \texttt{SS} made incorrectly. For abscissa $y$ in the cartesian plane, which is represented by A$\sp{*}$ ratios: $J(h_{1}) > J(h_{2})$ means that A$\sp{*}$ expands fewer nodes if using $h_{2}$.
+In order to investigate whether \texttt{SS} is able to allow one to select the best heuristic in a set of size two: $\{h_{1} and h_{2}\}$, we construct a graph where the y-axis is the value of $J(h_{1})/J(h_{2})$ (the actual number of nodes generated by A$\sp{*}$ using $h_{1}$ over the number of nodes generated by A$\sp{*}$ using $h_{2}$); and the x-axis is the value of $\hat{J}(h_{1})/\hat{J}(h_{2})$ (the predicted search tree size of $h_{1}$ over the predicted search tree size of $h_{2}$).
+
+We limit our plot to the value of 2, and any fraction that is greater than 2 is set to 2. The plot is divided in four quadrants, as shown in Figure \ref{fig:img_cartesian_plane}. If a point falls in quadrants II and III it means that SS is able to correctly select the heuristic that will make A* expand the fewer number of nodes. If the point falls in quadrants I or IV it means that SS was unable to select the heuristic that expands fewer nodes. 
+
 
 Points that fall in each of the regions:
 \begin{enumerate}[label=\Roman*] 
@@ -585,8 +590,8 @@ Points that fall in each of the regions:
 \begin{figure}[!htb]
 \centering  
 \begin{tikzpicture}[scale=2]
-  \draw[->] (-0.2,0) -- (3,0) node[right] {\texttt{SS} $-$ ($\hat{J}(h_{1})$/$\hat{J}(h_{2})$)};
-  \draw[->] (0,-0.2) -- (0,3) node[above] {A$\sp{*}$ $-$ ($J(h_{1})$/$J(h_{2})$)};
+  \draw[->] (-0.2,0) -- (3,0) node[right] {($\hat{J}(h_{1})$/$\hat{J}(h_{2})$)};
+  \draw[->] (0,-0.2) -- (0,3) node[above] {($J(h_{1})$/$J(h_{2})$)};
 
   \draw[densely dotted] (-0.1,1) -- (3,1);
   \draw[densely dotted] (1,-0.1) -- (1,3);
@@ -610,13 +615,10 @@ Points that fall in each of the regions:
   \caption{Cartesian Plane with domain $\left\langle 0, 2\right\rangle$ and range $\left\langle 0, 2\right\rangle$ }\label{fig:img_cartesian_plane}
 \end{figure}
 
-In the Figure \ref{fig:img_analysis_domains} we can see the distribution of the points in each domain. We use three different heuristics ratios: ipdb, \texttt{LM-Cut}(lmcut) and 10 \texttt{GA-PDBs}(gapdb) which are represented by the symbols \ding{110} , \ding{108} and \ding{115} respectively. The ipdb ratio is the result of divide two search tree size generated by $h_{1} =$ ipdb and $h_{2} =$ ipdb. The \texttt{LM-Cut} ratio is the result of divide two search tree size generated by $h_{1} =$ \texttt{LM-Cut} and $h_{2} =$  \texttt{LM-Cut}. When at least one heuristic $h_{1}$ or $h_{2}$ is \texttt{GA-PDB} then the heuristic ratio is \texttt{GA-PDB}. This experiment was done using 5000 probes for \texttt{SS} and during 30 minutes.
+\iffalse
+In the Figure \ref{fig:img_analysis_domains} we can see the distribution of the points for different domains. We use three different heuristics ratios: ipdb, \texttt{LM-Cut}(lmcut) and 10 different \texttt{GA-PDBs}(gapdb) which are represented by the symbols \ding{110} , \ding{108} and \ding{115} respectively. The ipdb ratio is the result of divide two search tree size generated by $h_{1} =$ ipdb and $h_{2} =$ ipdb. The \texttt{LM-Cut} ratio is the result of divide two search tree size generated by $h_{1} =$ \texttt{LM-Cut} and $h_{2} =$  \texttt{LM-Cut}. When at least one heuristic $h_{1}$ or $h_{2}$ is \texttt{GA-PDB} then the heuristic ratio is \texttt{GA-PDB}. This experiment was done using 5000 probes for \texttt{SS} and during 30 minutes.
 
-The eleven plots displayed show the distribution of the heuristic ratios in the four quadrants. We drew the function $y = x$ because \texttt{SS} yields a perfect fraction if the point fall in that function. That is why it is important to have such a line as a reference on the plot. We decided to use the same scale on both axis, otherwise it will be hard to see which points fall on the diagonal line ($y = x$) and which points don't. Furthermore, the scale is $2$ for both axis. As a result, the points that are far away from the quadrants, are set to be in the limit. For example, if any of the ratios $r$ is larger than $1,000$ then $r$ will be on the $2$ border of the plot.
-
-The points $(0,0), (1,1), (2,2)$ mean that \texttt{SS} made a perfect choice and these points represent the function $y = x$. As we are interested in the percentage of points that fall in the quadrants II and III we are going to consider the border only for those quadrants.
-
-The points are dispersed in the positive quadrant of the cartesian plane because we do not have negative number of nodes generated by $h_{1}$ or $h_{2}$. In the case of Tidybot and Woodworking all the points are in the quadrant II or III.
+The eleven plots displayed show the distribution of the heuristic ratios in the four quadrants. We drew the function $y = x$ because \texttt{SS} yields a perfect fraction if the point fall on that line. We are interested in the percentage of points that fall in the quadrants II and III. In the case of Tidybot and Woodworking all the points are in the quadrant II or III.
 
 \begin{figure}[!htb]
 \minipage{0.32\textwidth}
@@ -660,8 +662,8 @@ The points are dispersed in the positive quadrant of the cartesian plane because
 \endminipage\hfill
 \caption{\texttt{SS} vs A$\sp{*}$ ratios for the optimal domains $-$ The number of instances used in each domain are showed next to the name of the Domain.}\label{fig:img_analysis_domains}
 \end{figure}
-
 \newpage
+\fi
 
 In Table \ref{tb:per_ss_made_correctly} we present a single number for each domain representing the percentage of choices \texttt{SS} make correctly. From all the domains all are above of the 50$\%$ which means that at least the half of the points represent good relation of heuristics. With this experiment we prove that \texttt{SS} is not as bad as we thought it would be when we want to make selection.
 
