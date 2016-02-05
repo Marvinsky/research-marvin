@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  5 FEB 2016 01:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  5 FEB 2016 01:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2387,7 +2387,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1071.
  ) 
 Here is how much of TeX's memory you used:
  39701 strings out of 493304
- 843056 string characters out of 6139870
+ 843054 string characters out of 6139870
  1433089 words of memory out of 5000000
  42069 multiletter control sequences out of 15000+600000
  122266 words of font info for 206 fonts, out of 8000000 for 9000
@@ -2415,7 +2415,7 @@ r/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/s
 ymbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sfrm2488.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (64 pages, 574326 bytes
+Output written on abntex2-modelo-trabalho-academico.pdf (64 pages, 574330 bytes
 ).
 PDF statistics:
  967 PDF objects out of 1000 (max. 8388607)
