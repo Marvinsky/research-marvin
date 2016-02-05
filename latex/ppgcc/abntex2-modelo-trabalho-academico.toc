@@ -47,7 +47,7 @@
 \contentsline {section}{\numberline {4.2}Comparison between SS and A*}{48}{section.4.2}
 \contentsline {section}{\numberline {4.3}Approximation Analysis for SS and A*}{49}{section.4.3}
 \contentsline {section}{\numberline {4.4}Explanation of the Experiments}{50}{section.4.4}
-\contentsline {section}{\numberline {4.5}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{52}{section.4.5}
+\contentsline {section}{\numberline {4.5}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{51}{section.4.5}
 \contentsline {section}{\numberline {4.6}Comparison with Other Planning Systems}{53}{section.4.6}
 \contentsline {section}{\numberline {4.7}Systems Tested}{54}{section.4.7}
 \contentsline {section}{\numberline {4.8}Discussion of the Results}{55}{section.4.8}

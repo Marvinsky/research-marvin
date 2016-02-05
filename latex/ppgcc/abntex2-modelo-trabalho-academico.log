@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  5 FEB 2016 00:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  5 FEB 2016 01:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2293,42 +2293,43 @@ Overfull \hbox (22.56631pt too wide) in paragraph at lines 101--117
  []
 
 [48] [49] [50]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 261.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 261.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 261.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 261.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 261.
+
+[51]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 256.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 285.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 285.
+               Default added (so using `tbp') on input line 274.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 285.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 285.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 285.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 303.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 302.
-
-
-Underfull \vbox (badness 4543) has occurred while \output is active []
-
  [52]
-[53] [54]
-Overfull \hbox (9.50272pt too wide) in paragraph at lines 357--391
+Underfull \vbox (badness 3364) has occurred while \output is active []
+
+ [53]
+[54]
+Overfull \hbox (9.50272pt too wide) in paragraph at lines 358--392
  [][] 
  []
 
@@ -2377,7 +2378,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1071.
 
 Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
 ot changed.
-(rerunfilecheck)             Checksum: EEEBE089D532D5737533636F7A6F7166;3099.
+(rerunfilecheck)             Checksum: 75DE3531419E5628DFBD00ECB844168B;3099.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -2387,7 +2388,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1071.
 Here is how much of TeX's memory you used:
  39701 strings out of 493304
  843056 string characters out of 6139870
- 1433088 words of memory out of 5000000
+ 1433089 words of memory out of 5000000
  42069 multiletter control sequences out of 15000+600000
  122266 words of font info for 206 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -2414,7 +2415,7 @@ r/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/s
 ymbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sfrm2488.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (64 pages, 574171 bytes
+Output written on abntex2-modelo-trabalho-academico.pdf (64 pages, 574326 bytes
 ).
 PDF statistics:
  967 PDF objects out of 1000 (max. 8388607)
