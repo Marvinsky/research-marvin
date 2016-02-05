@@ -48,14 +48,14 @@
 \contentsline {section}{\numberline {4.3}Approximation Analysis for SS and A*}{49}{section.4.3}
 \contentsline {section}{\numberline {4.4}Explanation of the Experiments}{50}{section.4.4}
 \contentsline {section}{\numberline {4.5}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{52}{section.4.5}
-\contentsline {section}{\numberline {4.6}Comparison with Other Planning Systems}{54}{section.4.6}
+\contentsline {section}{\numberline {4.6}Comparison with Other Planning Systems}{53}{section.4.6}
 \contentsline {section}{\numberline {4.7}Systems Tested}{54}{section.4.7}
 \contentsline {section}{\numberline {4.8}Discussion of the Results}{55}{section.4.8}
 \vspace {\cftbeforechapterskip }
-\contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{59}{part.5}
+\contentsline {part}{\partnumberline {V}\MakeTextUppercase {Conclusion}}{57}{part.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Concluding Remarks}}{61}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Concluding Remarks}}{59}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Bibliography}{63}{section*.16}
+\contentsline {chapter}{Bibliography}{61}{section*.16}
 \vspace {\cftbeforechapterskip }
