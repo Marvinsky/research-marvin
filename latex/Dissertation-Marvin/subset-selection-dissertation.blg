@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: subset-selection-dissertation.aux
+A level-1 auxiliary file: chapters/chapter01.aux
+A level-1 auxiliary file: chapters/chapter02.aux
+A level-1 auxiliary file: chapters/chapter03.aux
+A level-1 auxiliary file: chapters/chapter04.aux
+A level-1 auxiliary file: chapters/chapter05.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: abntex2-modelo-references.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex2.googlecode.com                           |
++---------------------------------------------------------+
+You've used 21 entries,
+            6711 wiz_defined-function locations,
+            1321 strings with 12855 characters,
+and the built_in function-call counts, 18234 in all, are:
+= -- 1462
+> -- 698
+< -- 37
++ -- 303
+- -- 209
+* -- 1371
+:= -- 2424
+add.period$ -- 71
+call.type$ -- 21
+change.case$ -- 233
+chr.to.int$ -- 48
+cite$ -- 20
+duplicate$ -- 840
+empty$ -- 1300
+format.name$ -- 985
+if$ -- 4305
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 366
+newline$ -- 103
+num.names$ -- 100
+pop$ -- 486
+preamble$ -- 1
+purify$ -- 86
+quote$ -- 0
+skip$ -- 981
+stack$ -- 1
+substring$ -- 822
+swap$ -- 432
+text.length$ -- 28
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 0
+while$ -- 163
+width$ -- 0
+write$ -- 330

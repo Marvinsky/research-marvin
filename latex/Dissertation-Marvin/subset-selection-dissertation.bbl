@@ -1,0 +1,129 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.2 }
+
+\bibitem[B{\"a}ckstr{\"o}m e Nebel 1995]{backstrom1995complexity}
+\abntrefinfo{B{\"a}ckstr{\"o}m e Nebel}{B{\"A}CKSTR{\"O}M; NEBEL}{1995}
+{B{\"A}CKSTR{\"O}M, C.; NEBEL, B. Complexity results for sas+ planning.
+\emph{Computational Intelligence}, Wiley Online Library, v.~11, n.~4, p.
+  625--655, 1995.}
+
+\bibitem[Barley, Franco e Riddle 2014]{BarleySantiagoOver}
+\abntrefinfo{Barley, Franco e Riddle}{BARLEY; FRANCO; RIDDLE}{2014}
+{BARLEY, M.~W.; FRANCO, S.; RIDDLE, P.~J. Overcoming the utility problem in
+  heuristic generation: Why time matters.
+\emph{Proceedings of the Twenty-Fourth International Conference on Automated
+  Planning and Scheduling, {ICAPS} 2014, Portsmouth, New Hampshire, USA, June
+  21-26, 2014}, 2014.}
+
+\bibitem[Bonet e Geffner 2001]{bonet2001planning}
+\abntrefinfo{Bonet e Geffner}{BONET; GEFFNER}{2001}
+{BONET, B.; GEFFNER, H. Planning as heuristic search.
+\emph{Artificial Intelligence}, Elsevier, v.~129, n.~1, p. 5--33, 2001.}
+
+\bibitem[Chen 2011]{bernard2011}
+\abntrefinfo{Chen}{CHEN}{2011}
+{CHEN, B. \emph{Part2 AI as Representation and Search}. 2011.
+  \url{http://www.slideshare.net/praveenkumar33449138/ai-ch2}.
+Accessed: 2016-24-01.}
+
+\bibitem[Chen 1992]{chen1992heuristic}
+\abntrefinfo{Chen}{CHEN}{1992}
+{CHEN, P.-C. Heuristic sampling: A method for predicting the performance of
+  tree searching programs.
+\emph{SIAM Journal on Computing}, p. 295--315, 1992.}
+
+\bibitem[Culberson e Schaeffer 1998]{culberson1998pattern}
+\abntrefinfo{Culberson e Schaeffer}{CULBERSON; SCHAEFFER}{1998}
+{CULBERSON, J.~C.; SCHAEFFER, J. Pattern databases.
+\emph{Computational Intelligence}, Wiley Online Library, v.~14, n.~3, p.
+  318--334, 1998.}
+
+\bibitem[Edelkamp 2007]{edelkamp2007automated}
+\abntrefinfo{Edelkamp}{EDELKAMP}{2007}
+{EDELKAMP, S. Automated creation of pattern database search heuristics. In:
+  \emph{Model Checking and Artificial Intelligence}. [S.l.]: Springer Berlin
+  Heidelberg, 2007. p. 35--50.}
+
+\bibitem[Hart P. E.;~Nilsson e Raphael 1968]{hart1968formal}
+\abntrefinfo{Hart P. E.;~Nilsson e Raphael}{HART P. E.;~NILSSON; RAPHAEL}{1968}
+{HART P. E.;~NILSSON, N.~J.; RAPHAEL, B. A formal basis for the heuristic
+  determination of minimum cost paths.
+\emph{IEEE Transactions on Systems Science and Cybernetics SSC}, IEEE, v.~4,
+  n.~2, p. 100--107, 1968.}
+
+\bibitem[Haslum et al. 2007]{haslum2007domain}
+\abntrefinfo{Haslum et al.}{HASLUM et al.}{2007}
+{HASLUM, P. et al. Domain-independent construction of pattern database
+  heuristics for cost-optimal planning.
+\emph{AAAI}, v.~7, p. 1007--1012, 2007.}
+
+\bibitem[Helmert 2006]{helmert2006fast}
+\abntrefinfo{Helmert}{HELMERT}{2006}
+{HELMERT, M. The fast downward planning system.
+\emph{J. Artif. Intell. Res.(JAIR)}, v.~26, p. 191--246, 2006.}
+
+\bibitem[Helmert, R\"{o}ger e Karpas 2011]{HelmertRK11}
+\abntrefinfo{Helmert, R\"{o}ger e Karpas}{HELMERT; R\"{o}GER; KARPAS}{2011}
+{HELMERT, M.; R\"{o}GER, G.; KARPAS, E. Fast downward stone soup: A baseline
+  for building planner portfolios. In:  \emph{In Proceedings of the Workshop on
+  Planning and Learning}. [S.l.]: AAAI, 2011. p. 28--35.}
+
+\bibitem[Holte et al. 2006]{holte2006maximizing}
+\abntrefinfo{Holte et al.}{HOLTE et al.}{2006}
+{HOLTE, R.~C. et al. Maximizing over multiple pattern databases speeds up
+  heuristic search.
+\emph{Artificial Intelligence}, Elsevier, v.~170, n.~16, p. 1123--1136, 2006.}
+
+\bibitem[Korf 1985]{Korf85ida}
+\abntrefinfo{Korf}{KORF}{1985}
+{KORF, R.~E. Depth-first iterative-deepening: An optimal admissible tree
+  search.
+\emph{Artificial Intelligence}, v.~27, p. 97--109, 1985.}
+
+\bibitem[Lelis, Zilles e Holte 2012]{lelis2012fast}
+\abntrefinfo{Lelis, Zilles e Holte}{LELIS; ZILLES; HOLTE}{2012}
+{LELIS, L.; ZILLES, S.; HOLTE, R.~C. Fast and accurate predictions of ida*'s
+  performance. In:  \emph{AAAI}. [S.l.: s.n.], 2012.}
+
+\bibitem[Lelis, Stern e Sturtevant 2014]{lelis2014estimating}
+\abntrefinfo{Lelis, Stern e Sturtevant}{LELIS; STERN; STURTEVANT}{2014}
+{LELIS, L.~H.; STERN, R.; STURTEVANT, N.~R. Estimating search tree size with
+  duplicate detection. In:  \emph{Seventh Annual Symposium on Combinatorial
+  Search}. [S.l.: s.n.], 2014.}
+
+\bibitem[Lelis, Zilles e Holte 2013]{lelis2013predicting}
+\abntrefinfo{Lelis, Zilles e Holte}{LELIS; ZILLES; HOLTE}{2013}
+{LELIS, L.~H.; ZILLES, S.; HOLTE, R.~C. Predicting the size of ida* search
+  tree.
+\emph{Artificial Intelligence}, Elsevier, v.~196, p. 53--76, 2013.}
+
+\bibitem[Nissim, Hoffmann e Helmert 2011]{nissim2011computing}
+\abntrefinfo{Nissim, Hoffmann e Helmert}{NISSIM; HOFFMANN; HELMERT}{2011}
+{NISSIM, R.; HOFFMANN, J.; HELMERT, M. Computing perfect heuristics in
+  polynomial time: On bisimulation and merge-and-shrink abstraction in optimal
+  planning. In:  \emph{22nd International Joint Conference on Artificial
+  Intelligence (IJCAI'11)}. [S.l.: s.n.], 2011.}
+
+\bibitem[Pommerening e Helmert 2013]{PommereningH13}
+\abntrefinfo{Pommerening e Helmert}{POMMERENING; HELMERT}{2013}
+{POMMERENING, F.; HELMERT, M. Incremental lm-cut. In:  \emph{Proceedings of the
+  International Conference on Automated Planning and Scheduling}. [S.l.: s.n.],
+  2013. p. 162--170.}
+
+\bibitem[Rayner, Sturtevant e Bowling 2013]{raynersss13}
+\abntrefinfo{Rayner, Sturtevant e Bowling}{RAYNER; STURTEVANT; BOWLING}{2013}
+{RAYNER, C.; STURTEVANT, N.; BOWLING, M. Subset selection of search heuristics.
+\emph{Proceedings of the Twenty-Third International Joint Conference on
+  Artificial Intelligence}, p. 637--643, 2013.}
+
+\bibitem[Torralba 2015]{torralba2015phd}
+\abntrefinfo{Torralba}{TORRALBA}{2015}
+{TORRALBA, {\'A}.
+\emph{Symbolic Search and Abstraction Heuristics for Cost-Optimal Planning}.
+Tese (Doutorado) --- Universidad Carlos III de Madrid, 2015.}
+
+\end{thebibliography}

@@ -1,0 +1,11 @@
+\select@language {brazil}
+\select@language {english}
+\contentsline {figure}{\numberline {1}{\ignorespaces 8 tile puzzle using DFS. (Bernard Chen, \citeyear {bernard2011})}}{16}{figure.1.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces 8 tile puzzle using BFS. (\cite {bernard2011})}}{17}{figure.1.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces The left tile-puzzle is one possible initial distribution of tiles and the right tile-puzzle is the goal distribution of tiles. Each one represents a state.}}{22}{figure.2.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Heuristic Search: \textit {I}: Initial state, \textit {s}: Some sate, \textit {G}: Goal state}}{23}{figure.2.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Out of place heuristic}}{23}{figure.2.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Manhatham distance heuristic}}{24}{figure.2.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Type system and the search space representation.}}{28}{figure.3.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Search tree using type system}}{31}{figure.3.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Cartesian Plane with domain $\left \delimiter "426830A 0, 2\right \delimiter "526930B $ and range $\left \delimiter "426830A 0, 2\right \delimiter "526930B $. Note that the ratio values could be larger than 2, and we assume that any ratio larger than 2 is automatically set to 2 in this experiment.}}{36}{figure.4.9}
