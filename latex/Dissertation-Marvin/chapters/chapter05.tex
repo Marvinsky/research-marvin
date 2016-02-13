@@ -1,0 +1,34 @@
+%% abtex2-modelo-include-comandos.tex, v-1.9.5 laurocesar
+%% Copyright 2012-2015 by abnTeX2 group at http://www.abntex.net.br/ 
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%% 
+%% The Current Maintainer of this work is the abnTeX2 team, led
+%% by Lauro César Araujo. Further information are available on 
+%% http://www.abntex.net.br/
+%%
+%% This work consists of the files abntex2-modelo-include-comandos.tex
+%% and abntex2-modelo-img-marca.pdf
+%%
+
+% ---
+% Este capítulo, utilizado por diferentes exemplos do abnTeX2, ilustra o uso de
+% comandos do abnTeX2 e de LaTeX.
+% ---
+ 
+\chapter{Concluding Remarks}\label{ch:conclusions}
+
+\noindent
+This dissertation showed that the problem of finding the subset of a set of heuristics $\zeta$ for a given problem task is solved using models of A$\sp{*}$ search tree size and models of the A$\sp{*}$ running time. We introduced the \texttt{GHS} algorithm which selects heuristics from $\zeta$ one at a time and is able to produce a good subset $\zeta\sp{'}$, with respect to the search tree size. In addition to minimizing the search tree size and the running time, we also experimented with an objective function that accounts for the sum of heuristic values in the state-space, as suggested by Rayner et al., (\citeyear{raynersss13}).
+
+Since we cannot compute the values of the objective functions exactly, \texttt{GHS} effectiveness depends on the quality of the approximations we can obtain. We tested two prediction algorithms, \texttt{CS} and \texttt{SS}, for estimating the values of the objective functions and showed empirically that both \texttt{CS} and \texttt{SS} allow \texttt{GHS} to make good subset selections with respect to the search tree size and running time.
+
+Finally, experiments on optimal domain-independent problems showed that \texttt{GHS} minimizing approximations of the A$\sp{*}$ running time outperformed all the other approaches tested, which demonstrates the effectiveness of our method for the heuristic subset selection problem.
