@@ -39,7 +39,7 @@ Our meta-reasoning requires a prediction of the number of nodes expanded by A$\s
 \section{Planning Task}
 % ---
 
-A $SAS\sp{+}$ \emph{planning task} \cite{backstrom1995complexity} is a 4 tuple $\nabla = \{V, O, I, G\}.$ \textit{V} is a set of \textit{state variables.} Each variable \textit{v} $\in$ \textit{V} is associated with a finite domain of possible $D_{\substack{v}}$. A state is an assignment of a value to every $v \in V.$ The set of possible states, denoted \textit{V}, is therefore $D_{\substack{v_{\substack{1}}}}    \times \cdots \times D_{\substack{v_{\substack{2}}}}$. \textit{O} is a set of operators, where each operator $o \in O$ is triple $\{pre_{\substack{o}} , post_{\substack{o}}, cost_{\substack{o}}\}$ specifying the preconditions, postconditions (effects), and non-negative cost of \textit{o}. $pre_{\substack{o}}\ and\ post_{\substack{o}}$ are assignments of values to subsets os variables, $V_{\substack{pre_{\substack{o}}}}\ and\ V_{\substack{post_{\substack{o}}}}$, respectively. Operator \textit{o} is applicable to state \textit{s} if \textit{s} and $pre_{\substack{o}}$ agree on the assignment of values to variables in $V_{\substack{pre_{\substack{o}}}}$. The effect of \textit{o}, when applied to \textit{s}, is to set the variables in $V_{\substack{post_{\substack{o}}}}$ to the values specified in $post_{\substack{o}}$ and to set all other variables to the value they have in $s$, resulting in a new state, which we call a \emph{child} of $s$. We define as $children(s)$ the set of child nodes of $s$. \textit{G} is the goal condition, an assignment of values to a subset of variables, $V_{\substack{G}}$. A state is a goal state if it and \textit{G} agree on the assignment of values to the variable in $V_{\substack{G}}$. \textit{I} is the initial state, and the planning task, $\nabla$, is to find an optimal (least-cost) sequence of operators leading from \textit{I} to a goal state. We denote the optimal solution cost of $\nabla$ as $C\sp{*}$. 
+A $SAS\sp{+}$ \emph{planning task} \cite{backstrom1995complexity} is a 4 tuple $\nabla = \{V, O, I, G\}.$ \textit{V} is a set of \textit{state variables.} Each variable \textit{v} $\in$ \textit{V} is associated with a finite domain of possible $D_{\substack{v}}$. A state is an assignment of a value to every $v \in V.$ The set of possible states, denoted \textit{V}, is therefore $D_{\substack{v_{\substack{1}}}}    \times \cdots \times D_{\substack{v_{\substack{2}}}}$. \textit{O} is a set of operators, where each operator $o \in O$ is triple $\{pre_{\substack{o}} , post_{\substack{o}}, cost_{\substack{o}}\}$ specifying the preconditions, postconditions (effects), and non-negative cost of \textit{o}. $pre_{\substack{o}}\ and\ post_{\substack{o}}$ are assignments of values to subsets of variables, $V_{\substack{pre_{\substack{o}}}}\ and\ V_{\substack{post_{\substack{o}}}}$, respectively. Operator \textit{o} is applicable to state \textit{s} if \textit{s} and $pre_{\substack{o}}$ agree on the assignment of values to variables in $V_{\substack{pre_{\substack{o}}}}$. The effect of \textit{o}, when applied to \textit{s}, is to set the variables in $V_{\substack{post_{\substack{o}}}}$ to the values specified in $post_{\substack{o}}$ and to set all other variables to the value they have in $s$, resulting in a new state, which we call a \emph{child} of $s$. We define as $children(s)$ the set of child nodes of $s$. \textit{G} is the goal condition, an assignment of values to a subset of variables, $V_{\substack{G}}$. A state is a goal state if it and \textit{G} agree on the assignment of values to the variable in $V_{\substack{G}}$. \textit{I} is the initial state, and the planning task, $\nabla$, is to find an optimal (least-cost) sequence of operators leading from \textit{I} to a goal state. We denote the optimal solution cost of $\nabla$ as $C\sp{*}$. 
 
 % ---
 \section{The 8-tile-puzzle case}
@@ -56,7 +56,7 @@ The domain 8-tile-puzzle is used to illustrate a few concepts that will be helpf
 \caption{The left tile-puzzle is one possible initial distribution of tiles and the right tile-puzzle is the goal distribution of tiles. Each one represents a state.} \label{fig:8tilepuzzle_begin}
 \end{figure}
 
-Instead of using \texttt{DFS} or \texttt{BFS} that will analyze all states encountered during search to solve instances of the 8-tile-puzzle, we can obtain heuristics the domain, which will allow search algorithms such as A* and IDA* to find a solution quicker.
+Instead of using \texttt{DFS} or \texttt{BFS} that will analyze all states encountered during search to solve instances of the 8-tile-puzzle, we can obtain heuristics from the domain, which will allow search algorithms such as A* and IDA* to find a solution quicker.
 
 \section{Heuristics}
 
@@ -92,7 +92,7 @@ There exist many state-space search algorithms, and one of the most important an
 \caption{Heuristic Search: \textit{I}: Initial state, \textit{s}: Some sate, \textit{G}: Goal state} \label{fig:searchSpace}
 \end{figure}
 
-In the Figure \ref{fig:searchSpace} the optimal distance from the initial state $I$ to  the state $s$ is 4 and is represented by $g(s)$. The $h\sp{*}(s) = 3$ represents the optimal distance from $s$ to the goal state $G$, and $h(s) = 2$ is the estimated cost to go from $s$ to $G$.
+In Figure \ref{fig:searchSpace} the optimal distance from the initial state $I$ to  the state $s$ is 4 and is represented by $g(s)$. $h\sp{*}(s) = 3$ represents the optimal distance from $s$ to the goal state $G$, and $h(s) = 2$ is the estimated cost to go from $s$ to $G$.
 
 A heuristic is admissible if $h(s) \leq h\sp{*}(s)$ for all $s \in V$. % where $h\sp{*}(s)$ is the optimal cost of $s$. 
 A heuristic is consistent iff $h(s) \leq c(s,t) + h(t)$ for all states $s$ and $t$, where $c(s,t)$ is the cost of the cheapest path from $s$ to $t$. For example, the heuristic function provided by a \texttt{PDB} \cite{culberson1998pattern} is admissible and consistent.
@@ -145,9 +145,9 @@ tile 1 through 7 require one move;
 %tile 7 one;
 tiles 5 and 8 require two moves;
 %tile 8 requires two;
-the sum of all moves is 10, which is the MD estimate of the cost to go for this particular state. 
+the sum of all moves is 10, which is the MD estimate of the cost to go to this particular state. 
 
-OP and MD are heuristics that use domain knowledge to estimate the cost to go for different states. Other methods, such as \texttt{PDBs}, do not require domain knowledge to create a heuristic function. In this dissertation we use a set of domain-independent heuristics to guide search. 
+OP and MD are heuristics that use domain knowledge to estimate the cost to go to different states. Other methods, such as \texttt{PDBs}, do not require domain knowledge to create a heuristic function. In this dissertation we use a set of domain-independent heuristics to guide search. 
 
 %There are methods that create heuristics without using domain knowledge, and \texttt{PDBs} are one of the most successful ways 
 
@@ -161,8 +161,47 @@ OP and MD are heuristics that use domain knowledge to estimate the cost to go fo
  %\texttt{PDBs} work as follows: The search space of the problem is abstracted into a smaller state space that can be enumerated with exhaustive search. The distance of all abstracted states to the abstracted goal state are stored in a lookup table, which can be used as a heuristic function for the original state space.
 
 \section{Using a Set of Heuristics}
+A$\sp{*}$ works using a structure called \texttt{OPEN}, where in each iteration A$\sp{*}$ expands the node with the lowest cost function in \texttt{OPEN}. In Figure \ref{fig:image_h1_astar}, we have two figures wich represent the same graph, the node \texttt{a} is the initial state and the node \texttt{G} is the goal state. The problem is solved looking for the cost path starting from the initial node and finished when \texttt{G}'s node is found. Above of each node we have the heuristic value assigned by the heuristic $h_{1}$. A$\sp{*}$ add the node \texttt{a} in \texttt{OPEN} and is expanded, generating three nodes \texttt{b,c} and \texttt{d}, the node \texttt{a} is removed from \texttt{OPEN} to put it in the solution path and \texttt{b,c,d} are added to \texttt{OPEN}, A$\sp{*}$ expands the node with the lowest cost function in \texttt{OPEN}. The cost functions are $f(b)=8, f(c)=9,$ and $ f(d)=12$, then, the node \texttt{b} is chosen. In the next iteration \texttt{b} is expanded and the node \texttt{e} is generated and added to \texttt{OPEN} their cost function is calculated $f(e)=10$. For the next iteration, \texttt{c} is chosen because it has the lowest cost function and expanded and their child \texttt{f} is added to \texttt{OPEN}. The node \texttt{f} has the lowest cost function in \texttt{OPEN} because their $f(f)=9$. The \texttt{f}'s child is \texttt{G} and is added to \texttt{OPEN}. \texttt{G} is the lowest cost function and A$\sp{*}$ ask if this is the goal, if it is, then, A$\sp{*}$ stops and return the cost function of the problem which is $f(G)=9$, which is optimal.  
 
-One well-know approach to take advantage of a set of heuristics $\zeta$ is to compute the maximum of all heuristics in $\zeta$. For example, given two heuristics $h_1$ and $h_2$, the maximum of $h_1$ and $h_2$ will tend to yield a more informed heuristic than $h_1$ and $h_2$ individually.
+\begin{figure}[!htb]
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{images/hachefull-left}
+  %\caption{A really Awesome Image}\label{fig:image1_h1_astar}
+\endminipage\hfill
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{images/hachefullabcfG-right}
+  %\caption{A really Awesome Image}\label{fig:image2_h2_astar}
+\endminipage
+\caption{The left figure represent the graph where above of each node is the heuristic value assigned by the heuristic $h_{1}$ and their cost to go from one node to another, the initial state is \texttt{a} and the goal state is \texttt{G}. The right figure represents the graph with the solution found by A$\sp{*}$. }\label{fig:image_h1_astar}
+\end{figure}
+
+\begin{figure}[!htb]
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{images/marvinh2full-left}
+  %\caption{A really Awesome Image}\label{fig:image1_h1_astar}
+\endminipage\hfill
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{images/marvinh2fulladgcfG-right}
+  %\caption{A really Awesome Image}\label{fig:image2_h2_astar}
+\endminipage
+\caption{The left figure represent the graph where above of each node is the heuristic value assigned by the heuristic $h_{2}$ and their cost to go from one node to another, the initial state is \texttt{a} and the goal state is \texttt{G}. The right figure represents the graph with the solution found by A$\sp{*}$. }\label{fig:image_h2_astar}
+\end{figure}
+
+\begin{figure}[!htb]
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{images/marvinmaxfull-left}
+  %\caption{A really Awesome Image}\label{fig:image1_h1_astar}
+\endminipage\hfill
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{images/marvinmaxfullacfG-right}
+  %\caption{A really Awesome Image}\label{fig:image2_h2_astar}
+\endminipage
+\caption{The left figure represent the graph where above of each node is the maximum heuristic value of $h_{1}$ and $h_{2}$ and their cost to go from one node to another, the initial state is \texttt{a} and the goal state is \texttt{G}. The right figure represents the graph with the solution found by A$\sp{*}$. }\label{fig:image_maxh1h2_astar}
+\end{figure}
+
+Considering that we change $h_{1}$ by another heuristic $h_2$ and for the same problem we will have the Figure \ref{fig:image_h2_astar}. The right figure shows that A$\sp{*}$ find the optimal cost path for the problem, which is 9. However, $h_{2}$ expands more nodes than $h_{1}$. Each time a node is expanded, there is a time of evaluation of the heuristic and time of generation of each node involved. If more nodes are expanded in the graph, then more time is required to solve the problem. This mean that A$\sp{*}$ with $h_{2}$ are going to last more time to find the solution than A$\sp{*}$ with $h_{1}$.
+
+One well-know approach to take advantage of a set of heuristics $\zeta$ is to compute the maximum of all heuristics in $\zeta$. For example, given the two heuristics $h_1$ and $h_2$, the maximum of $h_1$ and $h_2$ will tend to yield a more informed heuristic than $h_1$ and $h_2$ individually. In Figure \ref{fig:image_maxh1h2_astar}, A$\sp{*}$ using the maximum of heuristics values of $h_{1}$ and $h_{2}$ expands fewer nodes than each heuristic individually. This means that the solution of the problem is found quickly.
 
 One can easily create thousands of heuristics for a problem instance. For example, each different abstraction of a problem domain results in a different \texttt{PDB} heuristic. It is possible to prove that the maximum of all heuristics in $\zeta$ cannot be less informed than the maximum of any subset of $\zeta$. However, if $\zeta$ is too large, then the resulting heuristic obtained by taking the maximum of all heuristics in $\zeta$ can be too computationally expensive to be effective to guide search. That is why we select a subset of $\zeta$ to guide the A* search. This way we try to select the most informative heuristics in $\zeta$ while preventing the resulting maximum heuristic to be computationally expensive. 
 

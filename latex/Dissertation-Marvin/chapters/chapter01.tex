@@ -27,14 +27,22 @@
 %\chapter{Resultados de comandos}\label{cap_exemplos}
 \chapter{Introduction}\label{aboutTheProblem}
 \noindent
-State-space search algorithms have been used to solve important real-world problems, such as problems arising in Robotics, domain-independent planning, chemistry, biology, and engineering. In this dissertation we study methods for selecting a subset of heuristic functions while minimizing the search tree size and the running time of the A$\sp{*}$ search algorithm while solving state-space search problems \cite{hart1968formal}.
+State-space search algorithms have been used to solve important real-world problems, such as problems arising in Robotics, domain-independent planning, chemistry, biology, and engineering. For example, in Figure \ref{fig:example_fix} the agent, in the top-right requires to do a plan for the shortest path from the initial location to the location marked with the letter \texttt{g} (bottom-left corner); the shaded area represents an obstacle the agent cannot pass. The agent has two options to go to the goal: It can go to the location \texttt{b} or location \texttt{c}. The agent are going to find the shortest path going through c, because there is not obstacle to the goal. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{images/editarExampleLevi-Green}
+\caption{The agent in the top-right corner requires to do a plan path to the location marked with a letter \texttt{g}; the shaded area represents an obstacle the agent cannot pass.} \label{fig:example_fix}
+\end{figure}
+
+In this dissertation we study methods for selecting a subset of heuristic functions while minimizing the search tree size and the running time of the A$\sp{*}$ \cite{hart1968formal} search algorithm while solving state-space search problems.
 
 We are interested in selecting heuristics from a large set of possibilities because Holte et al., (\citeyear{holte2006maximizing}) showed that search can be faster if several smaller pattern databases are used instead of one large pattern database. %In fact, we believe that different heuristics can give us valuable information about the solution of the problem. For example, 
 Intuitively, one heuristic can be helpful in a region of the search tree where another heuristic isn't. Then, instead of using one heuristic to find the solution, it would be best to use the most promising subset of heuristics from a possibly large set.
 
 \section{Background work}
 \noindent
-State-space search algorithms are used to solve Artificial Intelligence (\texttt{AI}) problems by finding a sequence of actions from the start state to a goal state in the search space. Two well know search algorithms for solving state-space search problems are Depth-First Search (\texttt{DFS}) and Breadth-First Search (\texttt{BFS}). \texttt{DFS} looks for the solution by exploring the subtree rooted node $n$ before exploring the subtrees rooted at $n$'s siblings while looking for a path from start to goal. 
+State-space search algorithms are used to solve some Artificial Intelligence (\texttt{AI}) problems by finding a sequence of actions from the start state to a goal state in the search space. Two well know search algorithms for solving state-space search problems are Depth-First Search (\texttt{DFS}) and Breadth-First Search (\texttt{BFS}). \texttt{DFS} looks for the solution by exploring the subtree rooted node $n$ before exploring the subtrees rooted at $n$'s siblings while looking for a path from start to goal. 
 
 Figure \ref{fig:dfs_solution} shows the ordering in which \texttt{DFS} expands nodes while solving the 8-tile puzzle (explained in detail in Chapter~\ref{ch:background}), a state-space problem. We can see that \texttt{DFS} expands 31 states before finding a goal state (represented by the bottom right state). \texttt{BFS} looks for the solution by exploring all nodes in a given level before exploring nodes in the next level. In Figure \ref{fig:bfs_solution} we can see \texttt{BFS} expands 46 states to find the goal. In both Figure \ref{fig:dfs_solution} and Figure \ref{fig:bfs_solution} the numbers above of each state represent the order in which the states are visited. \texttt{DFS} and \texttt{BFS} are brute-force search algorithms, as they visit all states encountered during its search before finding a solution. %usually visit a large number of states before finding a solution. 
 We call brute-force-search tree (\texttt{BFST}) the tree expanded by \texttt{DFS} and \texttt{BFS}.
@@ -202,6 +210,74 @@ Heuristic search algorithms use a heuristic function for estimating the distance
 There are different approaches (\citeauthor{haslum2007domain} \citeyear{haslum2007domain}; \citeauthor{edelkamp2007automated} \citeyear{edelkamp2007automated}; \citeauthor{nissim2011computing} \citeyear{nissim2011computing}) for creating heuristics. %The way to create heuristics could be with domain knowledge or without domain knowledge. %The systems that generate a heuristic are called heuristic generators by Barley et al., (\citeyear{BarleySantiagoOver}). 
 One approach that has shown successful results in heuristic generation is Pattern Database (\texttt{PDB}) \cite{culberson1998pattern}. The way how \texttt{PDBs} work is as follows: The search space of the problem is abstracted into a smaller state space that can be enumerated with exhaustive search. The distance of all abstracted states to the abstracted goal state are stored in a lookup table, which can be used as a heuristic function for the original state space.
 
+
+\iffalse
+\begin{figure}[htb]
+\centering 
+\begin{tikzpicture}
+
+% -- center, xdim, ydim
+\draw[very thick,cyan] \boundellipse{4,0}{6}{2};
+\draw[very thick,cyan] \boundellipse{4,4}{3}{1};
+	
+  % First, define nodes
+% -- points F
+  
+  \draw (-2,3) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (E) {E};  
+  \draw (6,1) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (F) {F}; 
+
+  \draw[very thick,cyan, ->>]  (E) .. controls +(5,-3) and +(-4,1).. (F);
+  \path  ($(E)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(F)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
+
+  \draw (-1,2) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (A) {A};
+  \draw[very thick,cyan, ->>]  (A) .. controls +(5,-3) and +(-4,1).. (F);
+  \path  ($(A)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(F)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
+	
+  \draw (-3,0) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (B) {B};
+  \draw[very thick,cyan, ->>]  (B) .. controls +(5,-3) and +(-4,1).. (F);
+  \path  ($(B)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(F)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
+	
+% -- points in G
+
+  \draw (-2,1) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (C) {C};
+  \draw (6.5,0) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (G) {G};
+  \draw[very thick,cyan, ->>]  (C) .. controls +(5,-3) and +(-4,1).. (G);
+  \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };	
+
+\draw (-1,0) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (D) {D};	
+\draw[very thick,cyan, ->>]  (D) .. controls +(5,-3) and +(-4,1).. (G);
+  \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };	
+
+\draw (-3,-1) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (H) {H};	
+\draw[very thick,cyan, ->>]  (H) .. controls +(5,-3) and +(-4,1).. (G);
+  \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
+	
+% -- X
+\draw (-2,-2) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (J) {J};
+  \draw (6,-1) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (X) {X};
+  \draw[very thick,cyan, ->>]  (J) .. controls +(5,-3) and +(-4,1).. (X);
+  \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
+
+\draw (-2,-3) node[circle, inner sep=0.8pt, fill=cyan, label={{}}] (K) {K};
+\draw[very thick,cyan, ->>]  (K) .. controls +(5,-3) and +(-4,1).. (X);
+  \path  ($(C)+(0,0.2)$) .. controls +(5,-3) and +(-4,1)..  ($(G)+(0,0.2)$) 
+     {\foreach \i in {1,...,40} {  coordinate[pos=0.15+0.75*\i/40] (p\i) } };
+
+%$\node [xshift=1cm,yshift=2cm] (A) at (-3,3) {Search Space};$
+%$\node [xshift=1cm,yshift=2cm] (A) at (5,1) {Type System};$
+	
+\end{tikzpicture}
+\caption{\texttt{PDB} approach} \label{fig:ss_ts}
+\end{figure}
+\fi
+
 %Holte et al., (\citeyear{holte2006maximizing}) showed that search can be faster if several smaller \texttt{PDBs} are used instead of one large pattern database. In addition Domshlak et al., (\citeyear{domshlak2010max}) and Tolpin et al.,  (\citeyear{tolpin2013towards}) showed that evaluating the heuristic lazily, only when they are essential to a decision to be made in the search process, is worthy in comparison to take the maximum of the set of heuristics.
 % ---
 \section{Objectives}
@@ -240,11 +316,11 @@ We test the following hypothesis:
 \noindent
 The main contributions of this dissertation are:
 \begin{itemize}
-\item a meta-reasoning approach for selecting heuristic functions while minimizing the number of nodes generated by A$\sp{*}$.
+\item A meta-reasoning approach for selecting heuristic functions while minimizing the number of nodes generated by A$\sp{*}$.
 
-\item a meta-reasoning approach for selecting heuristic functions while minimizing the running time of the A$\sp{*}$ search. 
+\item A meta-reasoning approach for selecting heuristic functions while minimizing the running time of the A$\sp{*}$ search. 
 
-\item detailed experiments on domain-independent planning showing the strengths and weaknesses of the proposed approaches. Our experiments also show that one of our proposed approaches is able to outperform all other systems tested. 
+\item Detailed experiments on domain-independent planning showing the strengths and weaknesses of the proposed approaches. Our experiments also show that one of our proposed approaches is able to outperform all other systems tested. 
 
 \end{itemize}
 

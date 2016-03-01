@@ -1,4 +1,4 @@
-PWD /home/marvin/marvin/latex/ppgcc/chapters
+PWD /home/marvin/marvin/latex/Dissertation-Marvin/chapters
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -6,7 +6,5 @@ INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT chapter01.tex
 OUTPUT chapter01.log
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-OUTPUT chapter01.pdf
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm

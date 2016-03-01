@@ -1,11 +1,15 @@
 \select@language {brazil}
 \select@language {english}
-\contentsline {figure}{\numberline {1}{\ignorespaces 8 tile puzzle using DFS. \cite {bernard2011}}}{16}{figure.1.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces 8 tile puzzle using BFS. \cite {bernard2011}}}{17}{figure.1.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces The left tile-puzzle is one possible initial distribution of tiles and the right tile-puzzle is the goal distribution of tiles. Each one represents a state.}}{22}{figure.2.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Heuristic Search: \textit {I}: Initial state, \textit {s}: Some sate, \textit {G}: Goal state}}{23}{figure.2.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Out of place heuristic}}{23}{figure.2.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Manhatham distance heuristic}}{24}{figure.2.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Type system and the search space representation.}}{28}{figure.3.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Search tree using type system}}{31}{figure.3.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Cartesian Plane with domain $\left \delimiter "426830A 0, 2\right \delimiter "526930B $ and range $\left \delimiter "426830A 0, 2\right \delimiter "526930B $. Note that the ratio values could be larger than 2, and we assume that any ratio larger than 2 is automatically set to 2 in this experiment.}}{36}{figure.4.9}
+\contentsline {figure}{\numberline {1}{\ignorespaces The agent in the top-right corner requires to do a plan path to the location marked with a letter \texttt {g}; the shaded area represents an obstacle the agent cannot pass.\relax }}{17}{figure.caption.8}
+\contentsline {figure}{\numberline {2}{\ignorespaces 8 tile puzzle using DFS. \cite {bernard2011}\relax }}{19}{figure.caption.9}
+\contentsline {figure}{\numberline {3}{\ignorespaces 8 tile puzzle using BFS. \cite {bernard2011}\relax }}{20}{figure.caption.10}
+\contentsline {figure}{\numberline {4}{\ignorespaces The left tile-puzzle is one possible initial distribution of tiles and the right tile-puzzle is the goal distribution of tiles. Each one represents a state.\relax }}{24}{figure.caption.11}
+\contentsline {figure}{\numberline {5}{\ignorespaces Heuristic Search: \textit {I}: Initial state, \textit {s}: Some sate, \textit {G}: Goal state\relax }}{25}{figure.caption.12}
+\contentsline {figure}{\numberline {6}{\ignorespaces Out of place heuristic\relax }}{25}{figure.caption.13}
+\contentsline {figure}{\numberline {7}{\ignorespaces Manhatham distance heuristic\relax }}{26}{figure.caption.14}
+\contentsline {figure}{\numberline {8}{\ignorespaces The left figure represent the graph where above of each node is the heuristic value assigned by the heuristic $h_{1}$ and their cost to go from one node to another, the initial state is \texttt {a} and the goal state is \texttt {G}. The right figure represents the graph with the solution found by A$\sp {*}$. \relax }}{27}{figure.caption.15}
+\contentsline {figure}{\numberline {9}{\ignorespaces The left figure represent the graph where above of each node is the heuristic value assigned by the heuristic $h_{2}$ and their cost to go from one node to another, the initial state is \texttt {a} and the goal state is \texttt {G}. The right figure represents the graph with the solution found by A$\sp {*}$. \relax }}{27}{figure.caption.16}
+\contentsline {figure}{\numberline {10}{\ignorespaces The left figure represent the graph where above of each node is the maximum heuristic value of $h_{1}$ and $h_{2}$ and their cost to go from one node to another, the initial state is \texttt {a} and the goal state is \texttt {G}. The right figure represents the graph with the solution found by A$\sp {*}$. \relax }}{28}{figure.caption.17}
+\contentsline {figure}{\numberline {11}{\ignorespaces Type system and the search space representation.\relax }}{32}{figure.caption.19}
+\contentsline {figure}{\numberline {12}{\ignorespaces Search tree using type system\relax }}{35}{figure.caption.21}
+\contentsline {figure}{\numberline {13}{\ignorespaces Cartesian Plane with domain $\left \delimiter "426830A 0, 2\right \delimiter "526930B $ and range $\left \delimiter "426830A 0, 2\right \delimiter "526930B $. Note that the ratio values could be larger than 2, and we assume that any ratio larger than 2 is automatically set to 2 in this experiment.\relax }}{40}{figure.caption.24}
