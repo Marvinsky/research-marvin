@@ -42,7 +42,7 @@ Intuitively, one heuristic can be helpful in a region of the search tree where a
 
 \section{Background work}
 \noindent
-State-space search algorithms are used to solve some Artificial Intelligence (\texttt{AI}) problems by finding a sequence of actions from the start state to a goal state in the search space. Two well know search algorithms for solving state-space search problems are Depth-First Search (\texttt{DFS}) and Breadth-First Search (\texttt{BFS}). \texttt{DFS} looks for the solution by exploring the subtree rooted node $n$ before exploring the subtrees rooted at $n$'s siblings while looking for a path from start to goal. 
+State-space search algorithms are used to solve certain class of Artificial Intelligence (\texttt{AI}) problems by finding a sequence of actions from the start state to a goal state in the search space. Two well know search algorithms for solving state-space search problems are Depth-First Search (\texttt{DFS}) and Breadth-First Search (\texttt{BFS}). \texttt{DFS} looks for the solution by exploring the subtree rooted node $n$ before exploring the subtrees rooted at $n$'s siblings while looking for a path from start to goal. 
 
 Figure \ref{fig:dfs_solution} shows the ordering in which \texttt{DFS} expands nodes while solving the 8-tile puzzle (explained in detail in Chapter~\ref{ch:background}), a state-space problem. We can see that \texttt{DFS} expands 31 states before finding a goal state (represented by the bottom right state). \texttt{BFS} looks for the solution by exploring all nodes in a given level before exploring nodes in the next level. In Figure \ref{fig:bfs_solution} we can see \texttt{BFS} expands 46 states to find the goal. In both Figure \ref{fig:dfs_solution} and Figure \ref{fig:bfs_solution} the numbers above of each state represent the order in which the states are visited. \texttt{DFS} and \texttt{BFS} are brute-force search algorithms, as they visit all states encountered during its search before finding a solution. %usually visit a large number of states before finding a solution. 
 We call brute-force-search tree (\texttt{BFST}) the tree expanded by \texttt{DFS} and \texttt{BFS}.
@@ -210,6 +210,8 @@ Heuristic search algorithms use a heuristic function for estimating the distance
 There are different approaches (\citeauthor{haslum2007domain} \citeyear{haslum2007domain}; \citeauthor{edelkamp2007automated} \citeyear{edelkamp2007automated}; \citeauthor{nissim2011computing} \citeyear{nissim2011computing}) for creating heuristics. %The way to create heuristics could be with domain knowledge or without domain knowledge. %The systems that generate a heuristic are called heuristic generators by Barley et al., (\citeyear{BarleySantiagoOver}). 
 One approach that has shown successful results in heuristic generation is Pattern Database (\texttt{PDB}) \cite{culberson1998pattern}. The way how \texttt{PDBs} work is as follows: The search space of the problem is abstracted into a smaller state space that can be enumerated with exhaustive search. The distance of all abstracted states to the abstracted goal state are stored in a lookup table, which can be used as a heuristic function for the original state space.
 
+%Another approach is Genetic Algorithm (\texttt{GA}), proposed by Edelkamp, \citeyear{edelkamp2007automated}. Given a set of initial heuristics, in each iteration \texttt{GA} selects the heuristics that optimize certain fitness function.
+
 
 \iffalse
 \begin{figure}[htb]
@@ -297,7 +299,7 @@ The objective of this dissertation is to develop algorithms for selecting a heur
 % ---
 \section{Scope, Limitations, and Delimitations}
 \noindent
-We implemented our method in Fast Downward \cite{helmert2006fast} and we test our methods on the 2011 International Planning Competition (\texttt{IPC}) problem instances.
+We implemented our method in Fast Downward \cite{helmert2006fast} and we tested our methods on the 2011 International Planning Competition (\texttt{IPC}) problem instances.
 
 \section{Justification}
 \noindent
