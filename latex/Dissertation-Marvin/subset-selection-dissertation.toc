@@ -39,7 +39,7 @@
 \contentsline {section}{\numberline {4.4}Empirical Evaluation of $\mathaccentV {hat}05E{J}$ and $\mathaccentV {hat}05E{T}$}{41}{section.4.4}
 \contentsline {section}{\numberline {4.5}Comparison with Other Planning Systems}{43}{section.4.5}
 \contentsline {section}{\numberline {4.6}Systems Tested}{44}{section.4.6}
-\contentsline {section}{\numberline {4.7}Discussion of the Results}{45}{section.4.7}
+\contentsline {section}{\numberline {4.7}Discussion of the Results}{44}{section.4.7}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Concluding Remarks}}{47}{chapter.5}
 \vspace {\cftbeforechapterskip }
