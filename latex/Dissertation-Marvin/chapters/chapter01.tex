@@ -27,22 +27,26 @@
 %\chapter{Resultados de comandos}\label{cap_exemplos}
 \chapter{Introduction}\label{aboutTheProblem}
 \noindent
-State-space search algorithms have been used to solve important real-world problems, such as problems arising in Robotics, domain-independent planning, chemistry, biology, and engineering. For example, in Figure \ref{fig:example_fix} the agent, in the top-right requires to do a plan for the shortest path from the initial location to the location marked with the letter \texttt{g} (bottom-left corner); the shaded area represents an obstacle the agent cannot pass. The agent has two options to go to the goal: It can go to the location \texttt{b} or location \texttt{c}. The agent are going to find the shortest path going through c, because there is not obstacle to the goal. 
+State-space search algorithms have been used to solve important real-world problems, such as problems arising in Robotics \cite{DBLP:journals/corr/BadruddinA15}, domain-independent planning \cite{bonet2001planning}, chemistry \cite{XieXiangQun16}, biology \cite{clausen2015mapping}, engineering \cite{harman2009search}, among others. 
+
+\iffalse
+For example, in Figure \ref{fig:example_fix} the agent, in the top-right needs to plan the shortest path from the initial location to the location marked with the letter \texttt{g} (bottom-left corner); the shaded area represents an obstacle the agent cannot pass. The agent has two options to go to the goal: It can go to the location \texttt{b} or location \texttt{c}. The agent are going to find the shortest path going through c, because there is not obstacle to the goal. 
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=8cm]{images/editarExampleLevi-Green}
 \caption{The agent in the top-right corner requires to do a plan path to the location marked with a letter \texttt{g}; the shaded area represents an obstacle the agent cannot pass.} \label{fig:example_fix}
 \end{figure}
+\fi
 
-In this dissertation we study methods for selecting a subset of heuristic functions while minimizing the search tree size and the running time of the A$\sp{*}$ \cite{hart1968formal} search algorithm while solving state-space search problems.
+In this dissertation we study methods for selecting a subset of heuristic functions while minimizing approximations of the search tree size and of the running time of the A$\sp{*}$ \cite{hart1968formal} search algorithm while solving state-space search problems.
 
 We are interested in selecting heuristics from a large set of possibilities because Holte et al., (\citeyear{holte2006maximizing}) showed that search can be faster if several smaller pattern databases are used instead of one large pattern database. %In fact, we believe that different heuristics can give us valuable information about the solution of the problem. For example, 
 Intuitively, one heuristic can be helpful in a region of the search tree where another heuristic isn't. Then, instead of using one heuristic to find the solution, it would be best to use the most promising subset of heuristics from a possibly large set.
 
 \section{Background work}
 \noindent
-State-space search algorithms are used to solve certain class of Artificial Intelligence (\texttt{AI}) problems by finding a sequence of actions from the start state to a goal state in the search space. Two well know search algorithms for solving state-space search problems are Depth-First Search (\texttt{DFS}) and Breadth-First Search (\texttt{BFS}). \texttt{DFS} looks for the solution by exploring the subtree rooted node $n$ before exploring the subtrees rooted at $n$'s siblings while looking for a path from start to goal. 
+State-space search algorithms are used to solve certain class of Artificial Intelligence (\texttt{AI}) problems by finding a sequence of actions from the start state to a goal state in the search space. Two well known search algorithms for solving state-space search problems are Depth-First Search (\texttt{DFS}) and Breadth-First Search (\texttt{BFS}). \texttt{DFS} looks for the solution by exploring the subtree rooted node $n$ before exploring the subtrees rooted at $n$'s siblings while looking for a path from start to goal. 
 
 Figure \ref{fig:dfs_solution} shows the ordering in which \texttt{DFS} expands nodes while solving the 8-tile puzzle (explained in detail in Chapter~\ref{ch:background}), a state-space problem. We can see that \texttt{DFS} expands 31 states before finding a goal state (represented by the bottom right state). \texttt{BFS} looks for the solution by exploring all nodes in a given level before exploring nodes in the next level. In Figure \ref{fig:bfs_solution} we can see \texttt{BFS} expands 46 states to find the goal. In both Figure \ref{fig:dfs_solution} and Figure \ref{fig:bfs_solution} the numbers above of each state represent the order in which the states are visited. \texttt{DFS} and \texttt{BFS} are brute-force search algorithms, as they visit all states encountered during its search before finding a solution. %usually visit a large number of states before finding a solution. 
 We call brute-force-search tree (\texttt{BFST}) the tree expanded by \texttt{DFS} and \texttt{BFS}.
@@ -303,7 +307,7 @@ We implemented our method in Fast Downward \cite{helmert2006fast} and we tested 
 
 \section{Justification}
 \noindent
-Good results have been obtained in domain-independent planning by using heuristic search approach \cite{bonet2001planning}. The heuristic function used to guide the A$\sp{*}$ search are known to greatly affect the algorithm's running time. That is why it is important to have methods for selecting a good subset of heuristics to guide the A* search.
+Good results have been obtained in domain-independent planning by using a heuristic search approach \cite{bonet2001planning}. The heuristic function used to guide the A$\sp{*}$ search are known to greatly affect the algorithm's running time. That is why it is important to have methods for selecting a good subset of heuristics to guide the A* search.
 
 %We use heuristic generators in order to create a large set of heuristics and obtain heuristics to solve problems.
 
