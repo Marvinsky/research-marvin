@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  19 MAR 2016 09:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  19 MAR 2016 10:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2143,8 +2143,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.760 \end{dedicatoria}
-                        [2]
+l.751 \newpage
+               [2] [3] [4
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 767--769
 
  []
@@ -2154,14 +2156,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 772--773
 
  []
 
-[3
+[5
 
-
-] [4
-
-] [5] [6
+] [6
 
 ] [7] [8
+
+] [9] [10
 
 ] (./subset-selection-dissertation.lof
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 9.
@@ -2176,18 +2177,18 @@ Package microtype Info: Loading generic settings for font family
 ) (./subset-selection-dissertation.lot
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9])
+ [11])
 (./subset-selection-dissertation.toc
 Underfull \vbox (badness 4927) has occurred while \output is active []
 
- [10])
-[11]
+ [12])
+[13]
 \openout2 = `chapters/chapter01.aux'.
 
- (./chapters/chapter01.tex [12
+ (./chapters/chapter01.tex [14
 
 
-] [13]
+] [15]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -2225,7 +2226,7 @@ Overfull \hbox (6.05338pt too wide) in paragraph at lines 113--114
 [][] 
  []
 
-[14]
+[16]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -2273,7 +2274,7 @@ Overfull \hbox (6.05338pt too wide) in paragraph at lines 113--114
 \forest@temp@box=\box32723 (local)
 \forest@temp@box=\box32722 (local)
 \forest@temp@box=\box32721 (local)
- [15
+ [17
 
 
 
@@ -2282,13 +2283,13 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 298.
 
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [16
+) [18
 
-]) [17]
+]) [19]
 \openout2 = `chapters/chapter02.aux'.
 
 
-(./chapters/chapter02.tex [18
+(./chapters/chapter02.tex [20
 
 
 
@@ -2300,26 +2301,26 @@ ng task \T1/lmr/m/n/12 (-20) ([][]BÄCK-STRÖM; NEBEL[][], [][]1995[][][]) is a 4
 m/it/12 V; O; I; G\OMS/lmsy/m/n/12 g\OML/lmm/m/it/12 :$
  []
 
-[19]
+[21]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
- [20]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-Missing character: There is no [ in font nullfont!
-Missing character: There is no ] in font nullfont!
+ [22]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 Missing character: There is no [ in font nullfont!
 Missing character: There is no ] in font nullfont!
- [21] <images/hachefull-left.png, id=359, 583.17876pt x 643.40375pt>
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+Missing character: There is no [ in font nullfont!
+Missing character: There is no ] in font nullfont!
+ [23] <images/hachefull-left.png, id=368, 583.17876pt x 643.40375pt>
 File: images/hachefull-left.png Graphic file (type png)
 
 <use images/hachefull-left.png>
 Package pdftex.def Info: images/hachefull-left.png used on input line 168.
 (pdftex.def)             Requested size: 227.5pt x 250.99518pt.
 
-<images/hachefullabcfG-right.png, id=360, 583.17876pt x 643.40375pt>
+<images/hachefullabcfG-right.png, id=369, 583.17876pt x 643.40375pt>
 File: images/hachefullabcfG-right.png Graphic file (type png)
 
 <use images/hachefullabcfG-right.png>
@@ -2327,14 +2328,14 @@ Package pdftex.def Info: images/hachefullabcfG-right.png used on input line 172
 .
 (pdftex.def)             Requested size: 227.5pt x 250.99518pt.
 
-<images/marvinh2full-left.png, id=361, 611.28375pt x 656.4525pt>
+<images/marvinh2full-left.png, id=370, 611.28375pt x 656.4525pt>
 File: images/marvinh2full-left.png Graphic file (type png)
 
 <use images/marvinh2full-left.png>
 Package pdftex.def Info: images/marvinh2full-left.png used on input line 180.
 (pdftex.def)             Requested size: 227.5pt x 244.30598pt.
 
-<images/marvinh2fulladgcfG-right.png, id=362, 611.28375pt x 656.4525pt>
+<images/marvinh2fulladgcfG-right.png, id=371, 611.28375pt x 656.4525pt>
 File: images/marvinh2fulladgcfG-right.png Graphic file (type png)
 
 <use images/marvinh2fulladgcfG-right.png>
@@ -2342,52 +2343,52 @@ Package pdftex.def Info: images/marvinh2fulladgcfG-right.png used on input line
  184.
 (pdftex.def)             Requested size: 227.5pt x 244.30598pt.
 
-<images/marvinmaxfull-left.png, id=363, 689.57625pt x 640.3925pt>
+<images/marvinmaxfull-left.png, id=372, 689.57625pt x 640.3925pt>
 File: images/marvinmaxfull-left.png Graphic file (type png)
 
 <use images/marvinmaxfull-left.png>
 Package pdftex.def Info: images/marvinmaxfull-left.png used on input line 192.
 (pdftex.def)             Requested size: 227.5pt x 211.27155pt.
 
-<images/marvinmaxfullacfG-right.png, id=364, 689.57625pt x 640.3925pt>
+<images/marvinmaxfullacfG-right.png, id=373, 689.57625pt x 640.3925pt>
 File: images/marvinmaxfullacfG-right.png Graphic file (type png)
 
 <use images/marvinmaxfullacfG-right.png>
 Package pdftex.def Info: images/marvinmaxfullacfG-right.png used on input line 
 196.
 (pdftex.def)             Requested size: 227.5pt x 211.27155pt.
- [22]
+ [24]
 Underfull \vbox (badness 4954) has occurred while \output is active []
 
- [23 <./images/hachefull-left.png (PNG copy)> <./images/hachefullabcfG-right.pn
+ [25 <./images/hachefull-left.png (PNG copy)> <./images/hachefullabcfG-right.pn
 g (PNG copy)> <./images/marvinh2full-left.png (PNG copy)> <./images/marvinh2ful
-ladgcfG-right.png (PNG copy)>] [24 <./images/marvinmaxfull-left.png (PNG copy)>
+ladgcfG-right.png (PNG copy)>] [26 <./images/marvinmaxfull-left.png (PNG copy)>
  <./images/marvinmaxfullacfG-right.png (PNG copy)>])
 \openout2 = `chapters/chapter03.aux'.
 
- (./chapters/chapter03.tex [25
+ (./chapters/chapter03.tex [27
 
 
 
 
 ]
-<images/cs4-fixed.png, id=402, 702.625pt x 426.59375pt>
+<images/cs4-fixed.png, id=410, 702.625pt x 426.59375pt>
 File: images/cs4-fixed.png Graphic file (type png)
 
 <use images/cs4-fixed.png>
 Package pdftex.def Info: images/cs4-fixed.png used on input line 182.
 (pdftex.def)             Requested size: 426.79134pt x 259.12823pt.
- [26] [27 <./images/cs4-fixed.png>] [28]
+ [28] [29 <./images/cs4-fixed.png>] [30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29]
+ [31]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]
-[31]) [32]
+ [32]
+[33]) [34]
 \openout2 = `chapters/chapter04.aux'.
 
- (./chapters/chapter04.tex [33
+ (./chapters/chapter04.tex [35
 
 
 
@@ -2396,12 +2397,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 66.
 
-[34]
+[36]
 Overfull \hbox (1.36342pt too wide) in paragraph at lines 117--133
  [][] 
  []
 
-[35] [36]
+[37] [38]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <17.28> on input line 236.
 
@@ -2421,22 +2422,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 236.
 
-[37]
+[39]
 Underfull \vbox (badness 1173) has occurred while \output is active []
 
- [38]
+ [40]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 282.
 
-[39] [40]
+[41] [42]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41])
-[42]
+ [43])
+[44]
 \openout2 = `chapters/chapter05.aux'.
 
- (./chapters/chapter05.tex) [43
+ (./chapters/chapter05.tex) [45
 
 
 
@@ -2445,14 +2446,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \tf@brf=\write6
 \openout6 = `subset-selection-dissertation.brf'.
 
- [44
+ [46
 
 
 ]
 bibitemlist
-[45]) 
+[47]) 
 AED: lastpage setting LastPage
-[46]
+[48]
 \tf@lof=\write7
 \openout7 = `subset-selection-dissertation.lof'.
 
@@ -2472,7 +2473,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1013.
 
 Package rerunfilecheck Info: File `subset-selection-dissertation.brf' has not c
 hanged.
-(rerunfilecheck)             Checksum: 6B4111DBF72A707493FFF24E690CBF00;2789.
+(rerunfilecheck)             Checksum: 4B56EC15E502C961760545FC83CDDAB1;2791.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -2480,8 +2481,8 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1013.
  ) 
 Here is how much of TeX's memory you used:
- 41934 strings out of 493304
- 881723 string characters out of 6139870
+ 41936 strings out of 493304
+ 881737 string characters out of 6139870
  1488440 words of memory out of 5000000
  44293 multiletter control sequences out of 15000+600000
  117707 words of font info for 197 fonts, out of 8000000 for 9000
@@ -2510,10 +2511,10 @@ blic/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share
 /texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/p
 ublic/cm-super/sfrm2488.pfb>
-Output written on subset-selection-dissertation.pdf (48 pages, 804124 bytes).
+Output written on subset-selection-dissertation.pdf (50 pages, 804947 bytes).
 PDF statistics:
- 894 PDF objects out of 1000 (max. 8388607)
- 797 compressed objects within 8 object streams
- 180 named destinations out of 1000 (max. 500000)
+ 906 PDF objects out of 1000 (max. 8388607)
+ 806 compressed objects within 9 object streams
+ 182 named destinations out of 1000 (max. 500000)
  37240 words of extra memory for PDF output out of 42996 (max. 10000000)
 
