@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  19 MAR 2016 10:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  19 MAR 2016 21:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2313,52 +2313,52 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32766 (local)
 Missing character: There is no [ in font nullfont!
 Missing character: There is no ] in font nullfont!
- [23] <images/hachefull-left.png, id=368, 583.17876pt x 643.40375pt>
+ [23] <images/hachefull-left.png, id=368, 595.22375pt x 638.385pt>
 File: images/hachefull-left.png Graphic file (type png)
 
 <use images/hachefull-left.png>
 Package pdftex.def Info: images/hachefull-left.png used on input line 168.
-(pdftex.def)             Requested size: 227.5pt x 250.99518pt.
+(pdftex.def)             Requested size: 227.5pt x 243.9915pt.
 
-<images/hachefullabcfG-right.png, id=369, 583.17876pt x 643.40375pt>
+<images/hachefullabcfG-right.png, id=369, 595.22375pt x 638.385pt>
 File: images/hachefullabcfG-right.png Graphic file (type png)
 
 <use images/hachefullabcfG-right.png>
 Package pdftex.def Info: images/hachefullabcfG-right.png used on input line 172
 .
-(pdftex.def)             Requested size: 227.5pt x 250.99518pt.
+(pdftex.def)             Requested size: 227.5pt x 243.9915pt.
 
-<images/marvinh2full-left.png, id=370, 611.28375pt x 656.4525pt>
+<images/marvinh2full-left.png, id=370, 584.1825pt x 632.3625pt>
 File: images/marvinh2full-left.png Graphic file (type png)
 
 <use images/marvinh2full-left.png>
 Package pdftex.def Info: images/marvinh2full-left.png used on input line 180.
-(pdftex.def)             Requested size: 227.5pt x 244.30598pt.
+(pdftex.def)             Requested size: 227.5pt x 246.26337pt.
 
-<images/marvinh2fulladgcfG-right.png, id=371, 611.28375pt x 656.4525pt>
+<images/marvinh2fulladgcfG-right.png, id=371, 584.1825pt x 632.3625pt>
 File: images/marvinh2fulladgcfG-right.png Graphic file (type png)
 
 <use images/marvinh2fulladgcfG-right.png>
 Package pdftex.def Info: images/marvinh2fulladgcfG-right.png used on input line
  184.
-(pdftex.def)             Requested size: 227.5pt x 244.30598pt.
+(pdftex.def)             Requested size: 227.5pt x 246.26337pt.
 
-<images/marvinmaxfull-left.png, id=372, 689.57625pt x 640.3925pt>
+<images/marvinmaxfull-left.png, id=372, 701.62125pt x 634.37pt>
 File: images/marvinmaxfull-left.png Graphic file (type png)
 
 <use images/marvinmaxfull-left.png>
 Package pdftex.def Info: images/marvinmaxfull-left.png used on input line 192.
-(pdftex.def)             Requested size: 227.5pt x 211.27155pt.
+(pdftex.def)             Requested size: 227.5pt x 205.6935pt.
 
-<images/marvinmaxfullacfG-right.png, id=373, 689.57625pt x 640.3925pt>
+<images/marvinmaxfullacfG-right.png, id=373, 701.62125pt x 634.37pt>
 File: images/marvinmaxfullacfG-right.png Graphic file (type png)
 
 <use images/marvinmaxfullacfG-right.png>
 Package pdftex.def Info: images/marvinmaxfullacfG-right.png used on input line 
 196.
-(pdftex.def)             Requested size: 227.5pt x 211.27155pt.
+(pdftex.def)             Requested size: 227.5pt x 205.6935pt.
  [24]
-Underfull \vbox (badness 4954) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25 <./images/hachefull-left.png (PNG copy)> <./images/hachefullabcfG-right.pn
 g (PNG copy)> <./images/marvinh2full-left.png (PNG copy)> <./images/marvinh2ful
@@ -2511,7 +2511,7 @@ blic/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share
 /texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/p
 ublic/cm-super/sfrm2488.pfb>
-Output written on subset-selection-dissertation.pdf (50 pages, 804947 bytes).
+Output written on subset-selection-dissertation.pdf (50 pages, 808138 bytes).
 PDF statistics:
  906 PDF objects out of 1000 (max. 8388607)
  806 compressed objects within 9 object streams
