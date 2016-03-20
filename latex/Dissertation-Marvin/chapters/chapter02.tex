@@ -161,7 +161,7 @@ OP and MD are heuristics that use domain knowledge to estimate the cost to go to
  %\texttt{PDBs} work as follows: The search space of the problem is abstracted into a smaller state space that can be enumerated with exhaustive search. The distance of all abstracted states to the abstracted goal state are stored in a lookup table, which can be used as a heuristic function for the original state space.
 
 \section{Using a Set of Heuristics}
-A$\sp{*}$ uses a structure called \texttt{OPEN}, where in each iteration A$\sp{*}$ expands the state with the lowest cost function in \texttt{OPEN}. In Figure \ref{fig:image_h1_astar}, we have two figures which represent the same graph. The problem is to find the least-cost path from \texttt{a} to \texttt{G}. Above of each node we have the heuristic value assigned by a heuristic $h_{1}$. A$\sp{*}$ adds the state \texttt{a} in \texttt{OPEN} which is inmmediately expanded, generating three states \texttt{b,c} and \texttt{d}, the state \texttt{a} is removed from \texttt{OPEN} and \texttt{b,c,d} are added to \texttt{OPEN}, In every iteration, A$\sp{*}$ expands the state with the lowest cost function in \texttt{OPEN}. The $f($\texttt{b}$)=8, f($\texttt{c}$)=9,$ and $ f($\texttt{d}$)=12$. Thus, the state \texttt{b} is chosen. The state \texttt{e} is generated and added to \texttt{OPEN} with $f($\texttt{e}$)=10$. For the next iteration, \texttt{c} is chosen for expansion because it has the lowest cost value and child \texttt{f} is added to \texttt{OPEN}. The state \texttt{f} has the lowest cost value in \texttt{OPEN} because their $f($\texttt{f}$)=9$. The \texttt{f}'s child is \texttt{G} and is added to \texttt{OPEN}. \texttt{G} is the lowest cost function and A$\sp{*}$ stops when \texttt{G} is chosen for expansion.
+A$\sp{*}$ uses a structure called \texttt{OPEN}, where in each iteration A$\sp{*}$ expands the state with the lowest cost function in \texttt{OPEN}. In Figure \ref{fig:image_h1_astar}, we have two figures which represent the same graph. The problem is to find the least-cost path from \texttt{A} to \texttt{O}. Above of each node we have the heuristic value assigned by a heuristic $h_{1}$. A$\sp{*}$ adds the state \texttt{A} in \texttt{OPEN} which is inmmediately expanded, generating three states \texttt{B,C} and \texttt{D}, the state \texttt{A} is removed from \texttt{OPEN} and \texttt{B,C,D} are added to \texttt{OPEN}, In every iteration, A$\sp{*}$ expands the state with the lowest cost function in \texttt{OPEN}. The $f($\texttt{B}$)=8, f($\texttt{C}$)=9,$ and $ f($\texttt{D}$)=12$. Thus, the state \texttt{B} is chosen. The state \texttt{E} is generated and added to \texttt{OPEN} with $f($\texttt{E}$)=10$. For the next iteration, \texttt{C} is chosen for expansion because it has the lowest cost value and child \texttt{F} is added to \texttt{OPEN}. The state \texttt{F} has the lowest cost value in \texttt{OPEN} because their $f($\texttt{F}$)=9$. The \texttt{F}'s child is \texttt{O} and is added to \texttt{OPEN}. \texttt{O} is the lowest cost function and A$\sp{*}$ stops when \texttt{O} is chosen for expansion.
 
 \begin{figure}[!htb]
 \minipage{0.5\textwidth}
@@ -172,7 +172,7 @@ A$\sp{*}$ uses a structure called \texttt{OPEN}, where in each iteration A$\sp{*
   \includegraphics[width=\linewidth]{images/hachefullabcfG-right}
   %\caption{A really Awesome Image}\label{fig:image2_h2_astar}
 \endminipage
-\caption{The left figure shows a state space graph where the number above of each node is the heuristic value assigned by a heuristic $h_{1}$. The initial state is \texttt{a} and the goal state is \texttt{G}. The right figure shows a state space where the highlighted states are those expanded by A$\sp{*}$. }\label{fig:image_h1_astar}
+\caption{The left figure shows a state space graph where the number above of each node is the heuristic value assigned by a heuristic $h_{1}$. The initial state is \texttt{A} and the goal state is \texttt{O}. The right figure shows a state space where the highlighted states are those expanded by A$\sp{*}$. }\label{fig:image_h1_astar}
 \end{figure}
 
 \begin{figure}[!htb]
@@ -184,7 +184,7 @@ A$\sp{*}$ uses a structure called \texttt{OPEN}, where in each iteration A$\sp{*
   \includegraphics[width=\linewidth]{images/marvinh2fulladgcfG-right}
   %\caption{A really Awesome Image}\label{fig:image2_h2_astar}
 \endminipage
-\caption{The left figure shows a state space graph where the number above of each node is the heuristic value assigned by a heuristic $h_{2}$. The initial state is \texttt{a} and the goal state is \texttt{G}. The right figure shows a state space where the highlighted states are those expanded by A$\sp{*}$.}\label{fig:image_h2_astar}
+\caption{The left figure shows a state space graph where the number above of each node is the heuristic value assigned by a heuristic $h_{2}$. The initial state is \texttt{A} and the goal state is \texttt{O}. The right figure shows a state space where the highlighted states are those expanded by A$\sp{*}$.}\label{fig:image_h2_astar}
 \end{figure}
 
 \begin{figure}[!htb]
@@ -196,7 +196,7 @@ A$\sp{*}$ uses a structure called \texttt{OPEN}, where in each iteration A$\sp{*
   \includegraphics[width=\linewidth]{images/marvinmaxfullacfG-right}
   %\caption{A really Awesome Image}\label{fig:image2_h2_astar}
 \endminipage
-\caption{The left figure shows a state space graph where the number above of each node is the maximum heuristic value of $h_{1}$ and $h_{2}$. The initial state is \texttt{a} and the goal state is \texttt{G}. The right figure shows a state space where the highlighted states are thoses expanded by A$\sp{*}$. }\label{fig:image_maxh1h2_astar}
+\caption{The left figure shows a state space graph where the number above of each node is the maximum heuristic value of $h_{1}$ and $h_{2}$. The initial state is \texttt{A} and the goal state is \texttt{O}. The right figure shows a state space where the highlighted states are thoses expanded by A$\sp{*}$. }\label{fig:image_maxh1h2_astar}
 \end{figure}
 
 Consider that we replace $h_{1}$ by another heuristic $h_2$, resulting in Figure \ref{fig:image_h2_astar}. The right figure shows that A$\sp{*}$ finds the optimal cost path for the problem, which has cost 9. We also observe that A$\sp{*}$ using $h_2$ expands a different set of nodes than A$\sp{*}$ using $h_1$.
