@@ -1,11 +1,13 @@
-\backcite {holte2006maximizing}{{9}{(document)}{Doc-Start}}
 \backcite {bernard2011}{{11}{(document)}{Doc-Start}}
 \backcite {bernard2011}{{11}{(document)}{Doc-Start}}
 \backcite {DBLP:journals/corr/BadruddinA15}{{15}{1}{chapter.1}}
-\backcite {bonet2001planning}{{15}{1}{chapter.1}}
-\backcite {XieXiangQun16}{{15}{1}{chapter.1}}
-\backcite {clausen2015mapping}{{15}{1}{chapter.1}}
-\backcite {harman2009search}{{15}{1}{chapter.1}}
+\backcite {Heifets:2012:CNM:2900929.2900950}{{15}{1}{chapter.1}}
+\backcite {Korf:1998:CAA:297463.297468}{{15}{1}{chapter.1}}
+\backcite {Korf:2002:NAO:777092.777205}{{15}{1}{chapter.1}}
+\backcite {Korf:2000:DFS:647288.721444}{{15}{1}{chapter.1}}
+\backcite {Burch:2010:ALS:1860967.1861096}{{15}{1}{chapter.1}}
+\backcite {DBLP:conf/icc/LiHH05}{{15}{1}{chapter.1}}
+\backcite {Bonet:2001:PHS:380331.380332}{{15}{1}{chapter.1}}
 \backcite {hart1968formal}{{15}{1}{chapter.1}}
 \backcite {holte2006maximizing}{{15}{1}{chapter.1}}
 \backcite {bernard2011}{{16}{1}{figure.caption.7}}
@@ -41,7 +43,7 @@
 \backcite {haslum2007domain}{{37}{4.2}{section.4.2}}
 \backcite {PommereningH13}{{37}{4.2}{section.4.2}}
 \backcite {nissim2011computing}{{37}{4.2}{section.4.2}}
-\backcite {edelkamp2007automated}{{38}{4.3}{section.4.3}}
+\backcite {edelkamp2007automated}{{37}{4.3}{section.4.3}}
 \backcite {BarleySantiagoOver}{{39}{4.4}{section.4.4}}
 \backcite {raynersss13}{{42}{4.6}{section.4.6}}
 \backcite {raynersss13}{{42}{4.6}{section.4.6}}

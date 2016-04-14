@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  19 MAR 2016 21:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  13 APR 2016 23:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2179,7 +2179,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11])
 (./subset-selection-dissertation.toc
-Underfull \vbox (badness 4927) has occurred while \output is active []
+Underfull \vbox (badness 2443) has occurred while \output is active []
 
  [12])
 [13]
@@ -2222,7 +2222,7 @@ Underfull \vbox (badness 4927) has occurred while \output is active []
 \forest@temp@box=\box32737 (local)
 \forest@temp@box=\box32736 (local)
 
-Overfull \hbox (6.05338pt too wide) in paragraph at lines 113--114
+Overfull \hbox (6.05338pt too wide) in paragraph at lines 112--113
 [][] 
  []
 
@@ -2279,7 +2279,7 @@ Overfull \hbox (6.05338pt too wide) in paragraph at lines 113--114
 
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 298.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 297.
 
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2309,18 +2309,23 @@ m/it/12 V; O; I; G\OMS/lmsy/m/n/12 g\OML/lmm/m/it/12 :$
 \forest@temp@box=\box32766 (local)
 Missing character: There is no [ in font nullfont!
 Missing character: There is no ] in font nullfont!
+
+Underfull \vbox (badness 5288) has occurred while \output is active []
+
+ [23]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 Missing character: There is no [ in font nullfont!
 Missing character: There is no ] in font nullfont!
- [23] <images/hachefull-left.png, id=368, 595.22375pt x 638.385pt>
+
+<images/hachefull-left.png, id=376, 595.22375pt x 638.385pt>
 File: images/hachefull-left.png Graphic file (type png)
 
 <use images/hachefull-left.png>
 Package pdftex.def Info: images/hachefull-left.png used on input line 168.
 (pdftex.def)             Requested size: 227.5pt x 243.9915pt.
 
-<images/hachefullabcfG-right.png, id=369, 595.22375pt x 638.385pt>
+<images/hachefullabcfG-right.png, id=377, 595.22375pt x 638.385pt>
 File: images/hachefullabcfG-right.png Graphic file (type png)
 
 <use images/hachefullabcfG-right.png>
@@ -2328,14 +2333,14 @@ Package pdftex.def Info: images/hachefullabcfG-right.png used on input line 172
 .
 (pdftex.def)             Requested size: 227.5pt x 243.9915pt.
 
-<images/marvinh2full-left.png, id=370, 584.1825pt x 632.3625pt>
+<images/marvinh2full-left.png, id=378, 584.1825pt x 632.3625pt>
 File: images/marvinh2full-left.png Graphic file (type png)
 
 <use images/marvinh2full-left.png>
 Package pdftex.def Info: images/marvinh2full-left.png used on input line 180.
 (pdftex.def)             Requested size: 227.5pt x 246.26337pt.
 
-<images/marvinh2fulladgcfG-right.png, id=371, 584.1825pt x 632.3625pt>
+<images/marvinh2fulladgcfG-right.png, id=379, 584.1825pt x 632.3625pt>
 File: images/marvinh2fulladgcfG-right.png Graphic file (type png)
 
 <use images/marvinh2fulladgcfG-right.png>
@@ -2343,27 +2348,25 @@ Package pdftex.def Info: images/marvinh2fulladgcfG-right.png used on input line
  184.
 (pdftex.def)             Requested size: 227.5pt x 246.26337pt.
 
-<images/marvinmaxfull-left.png, id=372, 701.62125pt x 634.37pt>
+<images/marvinmaxfull-left.png, id=380, 701.62125pt x 634.37pt>
 File: images/marvinmaxfull-left.png Graphic file (type png)
 
 <use images/marvinmaxfull-left.png>
 Package pdftex.def Info: images/marvinmaxfull-left.png used on input line 192.
 (pdftex.def)             Requested size: 227.5pt x 205.6935pt.
 
-<images/marvinmaxfullacfG-right.png, id=373, 701.62125pt x 634.37pt>
+<images/marvinmaxfullacfG-right.png, id=381, 701.62125pt x 634.37pt>
 File: images/marvinmaxfullacfG-right.png Graphic file (type png)
 
 <use images/marvinmaxfullacfG-right.png>
 Package pdftex.def Info: images/marvinmaxfullacfG-right.png used on input line 
 196.
 (pdftex.def)             Requested size: 227.5pt x 205.6935pt.
- [24]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [25 <./images/hachefull-left.png (PNG copy)> <./images/hachefullabcfG-right.pn
-g (PNG copy)> <./images/marvinh2full-left.png (PNG copy)> <./images/marvinh2ful
-ladgcfG-right.png (PNG copy)>] [26 <./images/marvinmaxfull-left.png (PNG copy)>
- <./images/marvinmaxfullacfG-right.png (PNG copy)>])
+ [24] [25 <./images/hachefull-left.png (PNG copy)> <./images/hachefullabcfG-rig
+ht.png (PNG copy)> <./images/marvinh2full-left.png (PNG copy)> <./images/marvin
+h2fulladgcfG-right.png (PNG copy)>]
+[26 <./images/marvinmaxfull-left.png (PNG copy)> <./images/marvinmaxfullacfG-ri
+ght.png (PNG copy)>])
 \openout2 = `chapters/chapter03.aux'.
 
  (./chapters/chapter03.tex [27
@@ -2371,21 +2374,11 @@ ladgcfG-right.png (PNG copy)>] [26 <./images/marvinmaxfull-left.png (PNG copy)>
 
 
 
-]
-<images/cs4-fixed.png, id=410, 702.625pt x 426.59375pt>
-File: images/cs4-fixed.png Graphic file (type png)
+] [28]
+Underfull \vbox (badness 1675) has occurred while \output is active []
 
-<use images/cs4-fixed.png>
-Package pdftex.def Info: images/cs4-fixed.png used on input line 182.
-(pdftex.def)             Requested size: 426.79134pt x 259.12823pt.
- [28] [29 <./images/cs4-fixed.png>] [30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
-[33]) [34]
+ [29]
+[30] [31] [32] [33]) [34]
 \openout2 = `chapters/chapter04.aux'.
 
  (./chapters/chapter04.tex [35
@@ -2430,7 +2423,11 @@ Underfull \vbox (badness 1173) has occurred while \output is active []
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 282.
 
-[41] [42]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+[42]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [43])
@@ -2451,9 +2448,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 bibitemlist
-[47]) 
+[47] [48]) 
 AED: lastpage setting LastPage
-[48]
+[49]
 \tf@lof=\write7
 \openout7 = `subset-selection-dissertation.lof'.
 
@@ -2473,7 +2470,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1013.
 
 Package rerunfilecheck Info: File `subset-selection-dissertation.brf' has not c
 hanged.
-(rerunfilecheck)             Checksum: 4B56EC15E502C961760545FC83CDDAB1;2791.
+(rerunfilecheck)             Checksum: C55D9F253178182B9A981B6940307CAF;2957.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -2481,11 +2478,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1013.
  ) 
 Here is how much of TeX's memory you used:
- 41936 strings out of 493304
- 881737 string characters out of 6139870
- 1488440 words of memory out of 5000000
- 44293 multiletter control sequences out of 15000+600000
- 117707 words of font info for 197 fonts, out of 8000000 for 9000
+ 41980 strings out of 493304
+ 883495 string characters out of 6139870
+ 1488013 words of memory out of 5000000
+ 44328 multiletter control sequences out of 15000+600000
+ 118094 words of font info for 200 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  123i,25n,140p,1971b,6608s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -2511,10 +2508,10 @@ blic/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share
 /texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/p
 ublic/cm-super/sfrm2488.pfb>
-Output written on subset-selection-dissertation.pdf (50 pages, 807998 bytes).
+Output written on subset-selection-dissertation.pdf (51 pages, 784816 bytes).
 PDF statistics:
- 906 PDF objects out of 1000 (max. 8388607)
- 806 compressed objects within 9 object streams
- 182 named destinations out of 1000 (max. 500000)
- 37240 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 923 PDF objects out of 1000 (max. 8388607)
+ 824 compressed objects within 9 object streams
+ 186 named destinations out of 1000 (max. 500000)
+ 37235 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -27,7 +27,7 @@
 %\chapter{Resultados de comandos}\label{cap_exemplos}
 \chapter{Introduction}\label{aboutTheProblem}
 \noindent
-State-space search algorithms have been used to solve important real-world problems, such as problems arising in Robotics \cite{DBLP:journals/corr/BadruddinA15}, domain-independent planning \cite{bonet2001planning}, chemistry \cite{XieXiangQun16}, biology \cite{clausen2015mapping}, engineering \cite{harman2009search}, among others. 
+State-space search algorithms have been used to solve important real-world problems, such as problems arising in Robotics \cite{DBLP:journals/corr/BadruddinA15}, chemical compounds discovery \cite{Heifets:2012:CNM:2900929.2900950}, number partitioning \cite{Korf:1998:CAA:297463.297468}, bin packing \cite{Korf:2002:NAO:777092.777205}, sequence alignment \cite{Korf:2000:DFS:647288.721444}, automating layouts of sewers \cite{Burch:2010:ALS:1860967.1861096}, network routing \cite{DBLP:conf/icc/LiHH05}, and domain-independent planning \cite{Bonet:2001:PHS:380331.380332}, among others.
 
 \iffalse
 For example, in Figure \ref{fig:example_fix} the agent, in the top-right needs to plan the shortest path from the initial location to the location marked with the letter \texttt{g} (bottom-left corner); the shaded area represents an obstacle the agent cannot pass. The agent has two options to go to the goal: It can go to the location \texttt{b} or location \texttt{c}. The agent are going to find the shortest path going through c, because there is not obstacle to the goal. 
@@ -39,16 +39,15 @@ For example, in Figure \ref{fig:example_fix} the agent, in the top-right needs t
 \end{figure}
 \fi
 
-In this dissertation we study methods for selecting a subset of heuristic functions while minimizing approximations of the search tree size and of the running time of the A$\sp{*}$ \cite{hart1968formal} search algorithm while solving state-space search problems.
+In this dissertation we study methods for selecting a subset of heuristic functions while minimizing approximations of the search tree size and of the running time of the A$\sp{*}$ \cite{hart1968formal} while solving state-space search problems.
 
-We are interested in selecting heuristics from a large set of possibilities because Holte et al., (\citeyear{holte2006maximizing}) showed that search can be faster if several smaller pattern databases are used instead of one large pattern database. %In fact, we believe that different heuristics can give us valuable information about the solution of the problem. For example, 
-Intuitively, one heuristic can be helpful in a region of the search tree where another heuristic isn't. Then, instead of using one heuristic to find the solution, it would be best to use the most promising subset of heuristics from a possibly large set.
+We are interested in selecting heuristics from a large set of possibilities. This is because previous works have shown that using the maximum of multiple heuristics can reduce the search time~\cite{holte2006maximizing}. Intuitively, one heuristic can be helpful in a region of the search tree where another heuristic isn't. Then, instead of using one heuristic to find the solution, it would be best to use the most promising subset of heuristics from a possibly large set.
 
 \section{Background work}
 \noindent
-State-space search algorithms are used to solve certain class of Artificial Intelligence (\texttt{AI}) problems by finding a sequence of actions from the start state to a goal state in the search space. Two well known search algorithms for solving state-space search problems are Depth-First Search (\texttt{DFS}) and Breadth-First Search (\texttt{BFS}). \texttt{DFS} looks for the solution by exploring the subtree rooted node $n$ before exploring the subtrees rooted at $n$'s siblings while looking for a path from start to goal. 
+State-space search algorithms are used to solve certain class of Artificial Intelligence (\texttt{AI}) problems by finding a sequence of actions from the start state to a goal state in the search space. Two well known search algorithms for solving state-space search problems are Depth-First Search (\texttt{DFS}) and Breadth-First Search (\texttt{BFS}). \texttt{DFS} looks a the solution by exploring the subtree rooted at node $n$ before exploring the subtrees rooted at $n$'s siblings while looking for a path from start to goal. 
 
-Figure \ref{fig:dfs_solution} shows the ordering in which \texttt{DFS} expands nodes while solving the 8-tile puzzle (explained in detail in Chapter~\ref{ch:background}), a state-space problem. We can see that \texttt{DFS} expands 31 states before finding a goal state (represented by the bottom right state). \texttt{BFS} looks for the solution by exploring all nodes in a given level before exploring nodes in the next level. In Figure \ref{fig:bfs_solution} we can see \texttt{BFS} expands 46 states to find the goal. In both Figure \ref{fig:dfs_solution} and Figure \ref{fig:bfs_solution} the numbers above of each state represent the order in which the states are visited. \texttt{DFS} and \texttt{BFS} are brute-force search algorithms, as they visit all states encountered during its search before finding a solution. %usually visit a large number of states before finding a solution. 
+Figure \ref{fig:dfs_solution} shows the ordering in which \texttt{DFS} expands nodes while solving the 8-tile puzzle (explained in detail in Chapter~\ref{ch:background}), a state-space problem. \texttt{DFS} expands 31 states before finding a goal state (represented by the bottom right state). \texttt{BFS} looks for the solution by exploring all nodes in a given level before exploring nodes in the next level. In Figure \ref{fig:bfs_solution} we can see \texttt{BFS} expands 46 states to find the goal. In both Figure \ref{fig:dfs_solution} and Figure \ref{fig:bfs_solution} the numbers above of each state represent the order in which the states are visited. \texttt{DFS} and \texttt{BFS} are brute-force search algorithms, as they visit all states encountered during its search before finding a solution. %usually visit a large number of states before finding a solution. 
 We call brute-force-search tree (\texttt{BFST}) the tree expanded by \texttt{DFS} and \texttt{BFS}.
 
 \iftrue
@@ -212,7 +211,7 @@ There are other types of algorithms called heuristic search algorithms, and the 
 Heuristic search algorithms use a heuristic function for estimating the distance of a node in the search tree to a goal state. Heuristic search algorithms tend to generate smaller search trees than the \texttt{BFST} because the heuristic guides the search to more promising parts of the state space. Also, by reducing the search tree size, the guidance of the heuristic function might also reduce the overall running time of the algorithm.
 
 There are different approaches (\citeauthor{haslum2007domain} \citeyear{haslum2007domain}; \citeauthor{edelkamp2007automated} \citeyear{edelkamp2007automated}; \citeauthor{nissim2011computing} \citeyear{nissim2011computing}) for creating heuristics. %The way to create heuristics could be with domain knowledge or without domain knowledge. %The systems that generate a heuristic are called heuristic generators by Barley et al., (\citeyear{BarleySantiagoOver}). 
-One approach that has shown successful results in heuristic generation is Pattern Database (\texttt{PDB}) \cite{culberson1998pattern}. The way how \texttt{PDBs} work is as follows: The search space of the problem is abstracted into a smaller state space that can be enumerated with exhaustive search. The distance of all abstracted states to the abstracted goal state are stored in a lookup table, which can be used as a heuristic function for the original state space.
+One approach that has shown successful results in heuristic generation is Pattern Database (\texttt{PDB}) \cite{culberson1998pattern}. The way \texttt{PDBs} work is as follows: The search space of the problem is abstracted into a smaller state space that can be enumerated with exhaustive search. The distances of all abstracted states to the abstracted goal state are stored in a lookup table, which can be used as a heuristic function for the original state space.
 
 %Another approach is Genetic Algorithm (\texttt{GA}), proposed by Edelkamp, \citeyear{edelkamp2007automated}. Given a set of initial heuristics, in each iteration \texttt{GA} selects the heuristics that optimize certain fitness function.
 
@@ -289,7 +288,7 @@ One approach that has shown successful results in heuristic generation is Patter
 \section{Objectives}
 %\subsection{Aim}
 %\noindent
-The objective of this dissertation is to develop algorithms for selecting a heuristic subset from a large set of heuristics with the goal of solving domain-independent planning problems. Specifically our objectives are the following. 
+The general objective of this dissertation is to develop algorithms for selecting a heuristic subset from a large set of heuristics with the goal of solving domain-independent planning problems. Specifically our objectives are the following. 
 
 %\subsection{Objectives}
 %\noindent
@@ -315,16 +314,16 @@ Good results have been obtained in domain-independent planning by using a heuris
 \noindent
 We test the following hypothesis:
 \begin{itemize}
-\item A greedy algorithm is effective for selecting a good subset of heuristics to guide the A* search.
+\item A greedy algorithm is effective for selecting a good subset of heuristics to guide the A* search while solving domain-independent planning problems.
 \end{itemize}
 
 \section{Contributions}
 \noindent
 The main contributions of this dissertation are:
 \begin{itemize}
-\item A meta-reasoning approach for selecting heuristic functions while minimizing the number of nodes generated by A$\sp{*}$.
+\item An approach for selecting heuristic functions while minimizing the number of nodes generated by A$\sp{*}$.
 
-\item A meta-reasoning approach for selecting heuristic functions while minimizing the running time of the A$\sp{*}$ search. 
+\item An approach for selecting heuristic functions while minimizing the running time of the A$\sp{*}$ search. 
 
 \item Detailed experiments on domain-independent planning showing the strengths and weaknesses of the proposed approaches. Our experiments also show that one of our proposed approaches is able to outperform all other systems tested. 
 

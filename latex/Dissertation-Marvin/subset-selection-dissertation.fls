@@ -494,9 +494,6 @@ OUTPUT chapters/chapter03.aux
 INPUT chapters/chapter03.tex
 INPUT chapters/chapter03.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
-INPUT images/cs4-fixed.png
-INPUT ./images/cs4-fixed.png
-INPUT ./images/cs4-fixed.png
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr6.tfm

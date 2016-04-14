@@ -18,6 +18,9 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: abntex2-modelo-references.bib
+A bad cross reference---entry "DBLP:conf/icc/LiHH05"
+refers to entry "DBLP:conf/icc/2005", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/icc/2005"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -27,44 +30,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 25 entries,
+You've used 29 entries,
             6711 wiz_defined-function locations,
-            1349 strings with 13807 characters,
-and the built_in function-call counts, 23101 in all, are:
-= -- 1938
-> -- 840
-< -- 125
-+ -- 434
-- -- 251
-* -- 1708
-:= -- 3032
-add.period$ -- 86
-call.type$ -- 25
-change.case$ -- 281
-chr.to.int$ -- 61
-cite$ -- 24
-duplicate$ -- 1245
-empty$ -- 1517
-format.name$ -- 1186
-if$ -- 5333
-int.to.chr$ -- 0
+            1393 strings with 15210 characters,
+and the built_in function-call counts, 32654 in all, are:
+= -- 3186
+> -- 951
+< -- 418
++ -- 766
+- -- 286
+* -- 2301
+:= -- 4132
+add.period$ -- 118
+call.type$ -- 29
+change.case$ -- 320
+chr.to.int$ -- 64
+cite$ -- 28
+duplicate$ -- 2289
+empty$ -- 1887
+format.name$ -- 1350
+if$ -- 7233
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 437
-newline$ -- 126
-num.names$ -- 120
-pop$ -- 579
+missing$ -- 509
+newline$ -- 146
+num.names$ -- 140
+pop$ -- 657
 preamble$ -- 1
-purify$ -- 103
+purify$ -- 118
 quote$ -- 0
-skip$ -- 1392
+skip$ -- 2436
 stack$ -- 1
-substring$ -- 1026
-swap$ -- 597
-text.length$ -- 36
+substring$ -- 1517
+swap$ -- 995
+text.length$ -- 47
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
+type$ -- 13
 warning$ -- 0
-while$ -- 192
+while$ -- 238
 width$ -- 0
-write$ -- 397
+write$ -- 477
+(There was 1 error message)

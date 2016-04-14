@@ -26,10 +26,27 @@ Dispon{\'\i}vel em: \url{http://arxiv.org/abs/1505.00496}.}
   Planning and Scheduling, {ICAPS} 2014, Portsmouth, New Hampshire, USA, June
   21-26, 2014}, 2014.}
 
+\bibitem[Bonet e Geffner 2001]{Bonet:2001:PHS:380331.380332}
+\abntrefinfo{Bonet e Geffner}{BONET; GEFFNER}{2001a}
+{BONET, B.; GEFFNER, H. Planning as heuristic search.
+\emph{Artif. Intell.}, Elsevier Science Publishers Ltd., Essex, UK, v.~129,
+  n.~1-2, p. 5--33, jun. 2001.
+ISSN 0004-3702.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/S0004-3702(01)00108-4}.}
+
 \bibitem[Bonet e Geffner 2001]{bonet2001planning}
-\abntrefinfo{Bonet e Geffner}{BONET; GEFFNER}{2001}
+\abntrefinfo{Bonet e Geffner}{BONET; GEFFNER}{2001b}
 {BONET, B.; GEFFNER, H. Planning as heuristic search.
 \emph{Artificial Intelligence}, Elsevier, v.~129, n.~1, p. 5--33, 2001.}
+
+\bibitem[Burch et al. 2010]{Burch:2010:ALS:1860967.1861096}
+\abntrefinfo{Burch et al.}{BURCH et al.}{2010}
+{BURCH, N. et al. Automating layouts of sewers in subdivisions. In:
+  \emph{Proceedings of the 2010 Conference on ECAI 2010: 19th European
+  Conference on Artificial Intelligence}. Amsterdam, The Netherlands, The
+  Netherlands: IOS Press, 2010. p. 655--660.
+ISBN 978-1-60750-605-8. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=1860967.1861096}.}
 
 \bibitem[Chen 2011]{bernard2011}
 \abntrefinfo{Chen}{CHEN}{2011}
@@ -43,13 +60,6 @@ Accessed: 2016-24-01.}
   tree searching programs.
 \emph{SIAM Journal on Computing}, p. 295--315, 1992.}
 
-\bibitem[Clausen et al. 2015]{clausen2015mapping}
-\abntrefinfo{Clausen et al.}{CLAUSEN et al.}{2015}
-{CLAUSEN, R. et al. Mapping the conformation space of wildtype and mutant h-ras
-  with a memetic, cellular, and multiscale evolutionary algorithm.
-\emph{PLoS Comput Biol}, Public Library of Science, v.~11, n.~9, p. e1004470,
-  2015.}
-
 \bibitem[Culberson e Schaeffer 1998]{culberson1998pattern}
 \abntrefinfo{Culberson e Schaeffer}{CULBERSON; SCHAEFFER}{1998}
 {CULBERSON, J.~C.; SCHAEFFER, J. Pattern databases.
@@ -61,13 +71,6 @@ Accessed: 2016-24-01.}
 {EDELKAMP, S. Automated creation of pattern database search heuristics. In:
   \emph{Model Checking and Artificial Intelligence}. [S.l.]: Springer Berlin
   Heidelberg, 2007. p. 35--50.}
-
-\bibitem[Harman, Mansouri e Zhang 2009]{harman2009search}
-\abntrefinfo{Harman, Mansouri e Zhang}{HARMAN; MANSOURI; ZHANG}{2009}
-{HARMAN, M.; MANSOURI, S.~A.; ZHANG, Y. Search based software engineering: A
-  comprehensive analysis and review of trends techniques and applications.
-\emph{Department of Computer Science, King’s College London, Tech. Rep.
-  TR-09-03}, 2009.}
 
 \bibitem[Hart P. E.;~Nilsson e Raphael 1968]{hart1968formal}
 \abntrefinfo{Hart P. E.;~Nilsson e Raphael}{HART P. E.;~NILSSON; RAPHAEL}{1968}
@@ -81,6 +84,13 @@ Accessed: 2016-24-01.}
 {HASLUM, P. et al. Domain-independent construction of pattern database
   heuristics for cost-optimal planning.
 \emph{AAAI}, v.~7, p. 1007--1012, 2007.}
+
+\bibitem[Heifets e Jurisica 2012]{Heifets:2012:CNM:2900929.2900950}
+\abntrefinfo{Heifets e Jurisica}{HEIFETS; JURISICA}{2012}
+{HEIFETS, A.; JURISICA, I. Construction of new medicines via game proof search.
+  In:  \emph{Proceedings of the Twenty-Sixth AAAI Conference on Artificial
+  Intelligence}. AAAI Press, 2012.  (AAAI'12), p. 1564--1570. Dispon{\'\i}vel
+  em: \url{http://dl.acm.org/citation.cfm?id=2900929.2900950}.}
 
 \bibitem[Helmert 2006]{helmert2006fast}
 \abntrefinfo{Helmert}{HELMERT}{2006}
@@ -105,6 +115,31 @@ Accessed: 2016-24-01.}
   search.
 \emph{Artificial Intelligence}, v.~27, p. 97--109, 1985.}
 
+\bibitem[Korf 1998]{Korf:1998:CAA:297463.297468}
+\abntrefinfo{Korf}{KORF}{1998}
+{KORF, R.~E. A complete anytime algorithm for number partitioning.
+\emph{Artif. Intell.}, Elsevier Science Publishers Ltd., Essex, UK, v.~106,
+  n.~2, p. 181--203, dez. 1998.
+ISSN 0004-3702.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/S0004-3702(98)00086-1}.}
+
+\bibitem[Korf 2002]{Korf:2002:NAO:777092.777205}
+\abntrefinfo{Korf}{KORF}{2002}
+{KORF, R.~E. A new algorithm for optimal bin packing. In:  \emph{Eighteenth
+  National Conference on Artificial Intelligence}. Menlo Park, CA, USA:
+  American Association for Artificial Intelligence, 2002. p. 731--736.
+ISBN 0-262-51129-0. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=777092.777205}.}
+
+\bibitem[Korf e Zhang 2000]{Korf:2000:DFS:647288.721444}
+\abntrefinfo{Korf e Zhang}{KORF; ZHANG}{2000}
+{KORF, R.~E.; ZHANG, W. Divide-and-conquer frontier search applied to optimal
+  sequence alignment. In:  \emph{Proceedings of the Seventeenth National
+  Conference on Artificial Intelligence and Twelfth Conference on Innovative
+  Applications of Artificial Intelligence}. AAAI Press, 2000. p. 910--916.
+ISBN 0-262-51112-6. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=647288.721444}.}
+
 \bibitem[Lelis, Zilles e Holte 2012]{lelis2012fast}
 \abntrefinfo{Lelis, Zilles e Holte}{LELIS; ZILLES; HOLTE}{2012}
 {LELIS, L.; ZILLES, S.; HOLTE, R.~C. Fast and accurate predictions of ida*'s
@@ -121,6 +156,13 @@ Accessed: 2016-24-01.}
 {LELIS, L.~H.; ZILLES, S.; HOLTE, R.~C. Predicting the size of ida* search
   tree.
 \emph{Artificial Intelligence}, Elsevier, v.~196, p. 53--76, 2013.}
+
+\bibitem[Li, Harms e Holte 2005]{DBLP:conf/icc/LiHH05}
+\abntrefinfo{Li, Harms e Holte}{LI; HARMS; HOLTE}{2005}
+{LI, Y.; HARMS, J.~J.; HOLTE, R. Ida*{\_}mcsp: a fast exact {MCSP} algorithm.
+  In:  \emph{Proceedings of {IEEE} International Conference on Communications,
+  {ICC} 2005, Seoul, Korea, 16-20 May 2005}. [s.n.], 2005. p. 93--99.
+  Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1109/ICC.2005.1494327}.}
 
 \bibitem[Nissim, Hoffmann e Helmert 2011]{nissim2011computing}
 \abntrefinfo{Nissim, Hoffmann e Helmert}{NISSIM; HOFFMANN; HELMERT}{2011}
@@ -146,12 +188,5 @@ Accessed: 2016-24-01.}
 {TORRALBA, {\'A}.
 \emph{Symbolic Search and Abstraction Heuristics for Cost-Optimal Planning}.
 Tese (Doutorado) --- Universidad Carlos III de Madrid, 2015.}
-
-\bibitem[Xie 2010]{XieXiangQun16}
-\abntrefinfo{Xie}{XIE}{2010}
-{XIE, X.-Q.~S. Exploiting pubchem for virtual screening.
-\emph{Expert Opinion on Drug Discovery}, v.~5, n.~12, p. 1205--1220, 2010.
-PMID: 21691435.
-Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1517/17460441.2010.524924}.}
 
 \end{thebibliography}
