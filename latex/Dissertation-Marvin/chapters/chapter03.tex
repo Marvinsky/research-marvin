@@ -167,6 +167,7 @@ Both \texttt{CS} and \texttt{SS} must be able to quickly estimate the values of 
 \noindent
 \texttt{CS} is an approach introduced by Barley et al., (\citeyear{BarleySantiagoOver}) and works by running a time-bounded A$\sp{*}$ search while sampling $f$-culprits and $b$-culprits. In this dissertation we use \texttt{CS} to estimate the values of \textit{\^{J}} and \textit{\^{T}}.
 
+\iffalse
 \begin{definition}(f-culprit)
 Let $\zeta = \{h_{1}, h_{2},...,h_{M}\}$ be a set of heuristics. The f$-$culprit of a node n in an A$\sp{*}$ search tree is defined as the tuple F(n) = $\left\langle f_{1}(n), f_{2}(n),...,f_{M}(n)  \right\rangle$, where $f_{i}(n) = g(n)+h_{i}(n)$. For any n$-$tuple F, the counter $C_{F}$ denotes the number of nodes n in the tree with F(n) = F.
 \label{def:def_fculprits}
@@ -174,6 +175,19 @@ Let $\zeta = \{h_{1}, h_{2},...,h_{M}\}$ be a set of heuristics. The f$-$culprit
 
 \begin{definition}(b-culprit)
 Let $\zeta = \{h_{1}, h_{2},...,h_{M}\}$ be a set of heuristics and b a lower bound on the solution cost $\nabla$. The $b$-culprit of a node n in an A$\sp{*}$ search tree is defined as the tuple $B(n) = \left\langle y_{1}(n), y_{2}(n),...,y_{M}(n)\right\rangle$, where $y_{i}(n) = 1$ if g(n) + $h_{i}(n) \leq b$ and $y_{i}(n) = 0$, otherwise.  For any binary $n$-tuple B, the counter $C_{B}$ denotes the number of nodes n in the tree with B(n) = B.
+\label{def:def_bculprits}
+\end{definition}
+\fi
+
+\begin{definition}($f$-culprit)
+Let $\zeta = \{h_1, h_2, ..., h_M\}$ be a set of heuristics. The $f$-culprit of a node $n$ in an A$\sp{*}$ search tree is defined as the tuple  $F(n) = \left\langle f_1(n), f_2(n), ..., f_{M}(n) \right\rangle$, where $f_i(n) = g(n) + h_i(n)$. For any tuple $F$, the counter $C_{F}$ denotes the total number of children of nodes $n$ in the search tree with $F(n)=F$.
+
+\label{def:def_fculprits}
+\end{definition}
+%Note that the maximum number of different f-culprits in an A* search tree is equal to the number of nodes in the tree. Often in practice the number of f-culprits is much lower than the size of the tree.
+
+\begin{definition}($b$-culprit)
+Let $\zeta = \{h_1, h_2, ..., h_M\}$ be a set of heuristics and $b$ a lower bound on the solution cost of  $\nabla$. The $b$-culprit of a node $n$ in an A$\sp{*}$ search tree is defined as the tuple $B(n) = \left\langle y_{1}(n), y_{2}(n),...,y_{M}(n)\right\rangle$, where $y_i(n) = 1$ if $g(n) + h_i(n) \leq b$ and $y_i(n) = 0$, otherwise. For any binary tuple $B$, the counter $C_{B}$ denotes the total number of children of nodes $n$ in the search tree with $B(n)=B$. The vector $B(n)$, and thus the values of $C_{B}$ for any $B$, depend on the bound $b$, which we assume to be fixed.
 \label{def:def_bculprits}
 \end{definition}
 

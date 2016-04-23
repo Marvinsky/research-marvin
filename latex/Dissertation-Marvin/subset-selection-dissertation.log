@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  14 APR 2016 19:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  22 APR 2016 23:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2374,11 +2374,8 @@ ght.png (PNG copy)>])
 
 
 
-] [28]
-Underfull \vbox (badness 1675) has occurred while \output is active []
-
- [29]
-[30] [31] [32] [33]) [34]
+] [28] [29] [30] [31]
+[32] [33]) [34]
 \openout2 = `chapters/chapter04.aux'.
 
  (./chapters/chapter04.tex [35
@@ -2478,11 +2475,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1013.
  ) 
 Here is how much of TeX's memory you used:
- 41980 strings out of 493304
- 883495 string characters out of 6139870
+ 41984 strings out of 493304
+ 883537 string characters out of 6139870
  1488013 words of memory out of 5000000
  44328 multiletter control sequences out of 15000+600000
- 118094 words of font info for 200 fonts, out of 8000000 for 9000
+ 118310 words of font info for 202 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  123i,25n,140p,1971b,6608s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -2508,7 +2505,7 @@ blic/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share
 /texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/p
 ublic/cm-super/sfrm2488.pfb>
-Output written on subset-selection-dissertation.pdf (51 pages, 784723 bytes).
+Output written on subset-selection-dissertation.pdf (51 pages, 785281 bytes).
 PDF statistics:
  923 PDF objects out of 1000 (max. 8388607)
  824 compressed objects within 9 object streams
