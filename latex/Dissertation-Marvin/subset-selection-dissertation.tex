@@ -31,8 +31,8 @@
 \documentclass[
 	% -- opções da classe memoir --
 	12pt,				% tamanho da fonte
-	openright,		nsubseteq	% capítulos começam em pág ímpar (insere página vazia caso preciso)
-	twoside,			% para impressão em verso e anverso. Oposto a oneside
+	openright,		%nsubseteq,	%capítulos começam em pág ímpar (insere página vazia caso preciso)
+	oneside,			% para impressão em verso e anverso. Oposto a oneside
 	a4paper,			% tamanho do papel. 
 	% -- opções da classe abntex2 --
 	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
@@ -58,7 +58,6 @@
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
 % ---
-
 
 \usepackage{longtable}	
 
@@ -528,10 +527,11 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{On Selecting \\Heuristic Function Subsets For Domain Independent-Planning}
-\autor{Marvin Abisrror Zarate}
-\local{Brasil}
-\data{Fevereiro, 2016}
+\titulo{ON SELECTING HEURITIC \vspace{-1.5ex} FUNCTION SUBSET FOR DOMAIN INDEPENDENT-PLANNING}
+\autor{MARVIN ABISRROR ZARATE}
+\local{VIÇOSA \\MINAS GERAIS - BRASIL}
+\data{2016}
+\iffalse
 \orientador{Levi Henrique Santana de Lelis}
 %\coorientador{Santiago Franco}
 \instituicao{%
@@ -541,13 +541,16 @@
   \par
   Programa de Pós-Graduação}
 \tipotrabalho{Tese (Mestrado)}
+\fi
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
-\preambulo{Dissertação apresentada à Universidade Federal de Viçosa, como
-parte das exigências do Programa de Pós-Graduação em Ciência da Computação,
-para a obtenção do título de \textit{Magister Scientiae}.}
-% ---
 
+\preambulo{Dissertação apresentada à \mbox{Universidade}
+ 			\mbox{Federal} de Viçosa, como parte das 
+ 			exigências do Programa de Pós-Graduação 
+ 			em Ciência da Computação, para 
+ 			a obtenção do título de \textit{Magister Scientiae}.}
+% ---
 
 % ---
 % Configurações de aparência do PDF final
@@ -556,6 +559,7 @@ para a obtenção do título de \textit{Magister Scientiae}.}
 \definecolor{blue}{RGB}{41,5,195}
 
 % informações do PDF
+
 \makeatletter
 \hypersetup{
      	%pagebackref=true,
@@ -595,6 +599,8 @@ para a obtenção do título de \textit{Magister Scientiae}.}
 % ----
 \begin{document}
 
+\pagenumbering{gobble}
+
 % Seleciona o idioma do documento (conforme pacotes do babel)
 %\selectlanguage{english}
 \selectlanguage{english}
@@ -610,7 +616,9 @@ para a obtenção do título de \textit{Magister Scientiae}.}
 % ---
 % Capa
 % ---
+\iffalse
 \imprimircapa
+\fi
 % ---
 
 % ---
@@ -634,7 +642,7 @@ para a obtenção do título de \textit{Magister Scientiae}.}
 % \begin{fichacatalografica}
 %     \includepdf{fig_ficha_catalografica.pdf}
 % \end{fichacatalografica}
-
+\iffalse
 \begin{fichacatalografica}
 	\sffamily
 	\vspace*{\fill}					% Posição vertical
@@ -666,6 +674,7 @@ para a obtenção do título de \textit{Magister Scientiae}.}
 	\end{minipage}}
 	\end{center}
 \end{fichacatalografica}
+\fi
 % ---
 
 % ---
@@ -748,7 +757,7 @@ Zootecnia, Universidade de São Paulo, São Paulo, 2011.
 \end{folhadeaprovacao}
 \fi
 % ---
-\newpage
+
 % ---
 % Dedicatória
 % ---
@@ -758,6 +767,19 @@ Zootecnia, Universidade de São Paulo, São Paulo, 2011.
    \noindent
    \textit{ This dissertation is dedicated to my Mother.} \vspace*{\fill}
 \end{dedicatoria}
+% ---
+% Epígrafe
+% ---
+\begin{epigrafe}
+    \vspace*{\fill}
+	\begin{flushright}
+		\textit{``Não vos amoldeis às estruturas deste mundo, \\
+		mas transformai-vos pela renovação da mente, \\
+		a fim de distinguir qual é a vontade de Deus: \\
+		o que é bom, o que Lhe é agradável, o que é perfeito.\\
+		(Bíblia Sagrada, Romanos 12, 2)}
+	\end{flushright}
+\end{epigrafe}
 % ---
 
 % ---
@@ -776,44 +798,29 @@ Last, but not least, I would like to thank my Mother.
 % ---
 
 % ---
-% Epígrafe
-% ---
-\begin{epigrafe}
-    \vspace*{\fill}
-	\begin{flushright}
-		\textit{``Não vos amoldeis às estruturas deste mundo, \\
-		mas transformai-vos pela renovação da mente, \\
-		a fim de distinguir qual é a vontade de Deus: \\
-		o que é bom, o que Lhe é agradável, o que é perfeito.\\
-		(Bíblia Sagrada, Romanos 12, 2)}
-	\end{flushright}
-\end{epigrafe}
-% ---
-
-% ---
 % RESUMOS
 % ---
 
 % resumo em português
+% resumo em português
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
-\begin{resumo}
+\begin{resumo}[RESUMO]
+Nesta dissertação apresentamos métodos gulosos para a seleção de um subconjunto de funções heurísticas de um grande conjunto de possibilidades com o objetivo de reduzir o tempo de execução de algoritmos de busca. Trabalhos anteriores mostraram que a busca pode ser mais rápido se vários bancos de dados padrão menores são usados em vez de um grande banco de dados padrão. Nossos métodos são capazes de selecionar boas heurísticas de um grande conjunto de funções heurísticas para guiar uma A*. Implementamos nosso método em Fast Downward e mostrou empiricamente que produz heurísticas que superam o state-of-the-art de outros planejadores na Competição Internacional de Planejamento.
+
+ \textbf{Palavras-chave}: Seleção Heurística; A$\sp{*}$
+\end{resumo}
+
+% resumo em inglês
+\begin{resumo}[ABSTRACT]
+ \begin{otherlanguage*}{english}
 In this dissertation we present greedy methods for selecting a subset of heuristic functions from a large pool of possibilities with the objective of reducing the running time of search algorithms. Previous works showed that search can be faster if several smaller pattern databases are used instead of one large pattern database. Our methods are able to select good heuristics from a large set of heuristic functions to guide A* search. We implemented our method in Fast Downward and showed empirically that it produces heuristics which outperform the state-of-the-art planners in the International Planning Competition benchmarks.
 
- \textbf{Key-words}: Heuristics selection; A$\sp{*}$
+   \noindent 
+   \textbf{Keywords}: Heuristics Selection. A$\sp{*}$.
+ \end{otherlanguage*}
 \end{resumo}
 
 \iffalse
-% resumo em inglês
-\begin{resumo}[Abstract]
- \begin{otherlanguage*}{english}
-   This is the english abstract.
-
-   \vspace{\onelineskip}
- 
-   \noindent 
-   \textbf{Keywords}: latex. abntex. text editoration.
- \end{otherlanguage*}
-\end{resumo}
 
 % resumo em francês 
 \begin{resumo}[Résumé]
@@ -840,6 +847,7 @@ In this dissertation we present greedy methods for selecting a subset of heurist
 % ---
 \pdfbookmark[0]{\listfigurename}{lof}
 \listoffigures*
+\newpage
 %\cleardoublepage
 % ---
 
@@ -848,6 +856,7 @@ In this dissertation we present greedy methods for selecting a subset of heurist
 % ---
 \pdfbookmark[0]{\listtablename}{lot}
 \listoftables*
+\newpage
 %\cleardoublepage
 % ---
 
@@ -900,13 +909,13 @@ In this dissertation we present greedy methods for selecting a subset of heurist
 % ----------------------------------------------------------
 % Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
 % ----------------------------------------------------------
-%\if false
-%\chapter*[Introduction]{Introduction}
+%\if falseon}
 %\addcontentsline{toc}{chapter}{Introduction}
 %% ----------------------------------------------------------
 %
 %\noindent
-%State space search algorithms have been used to solve important real$-$world problems, such as: Robotics, domain-independent planning, chemical compounds discovery, bin packing, sequence alignment, automating layouts of sewers, and network routing, amount others. In this dissertation we study methods for selecting a subset of heuristic functions while minimizing the search tree size and the running time of search algorithm.
+%State space search algorithms h
+%\chapter*[Introduction]{Introductiave been used to solve important real$-$world problems, such as: Robotics, domain-independent planning, chemical compounds discovery, bin packing, sequence alignment, automating layouts of sewers, and network routing, amount others. In this dissertation we study methods for selecting a subset of heuristic functions while minimizing the search tree size and the running time of search algorithm.
 %
 %\fi
 %% ----------------------------------------------------------
