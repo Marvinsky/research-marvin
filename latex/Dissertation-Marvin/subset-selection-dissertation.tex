@@ -59,6 +59,8 @@
 \usepackage{microtype} 			% para melhorias de justificação
 % ---
 
+\usepackage{setspace}
+
 \usepackage{longtable}	
 
 \usepackage{multirow}
@@ -798,61 +800,20 @@ Last, but not least, I would like to thank my Mother.
 % ---
 
 % ---
-% RESUMOS
-% ---
-
-% resumo em português
-% resumo em português
-\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
-\begin{resumo}[RESUMO]
-Nesta dissertação apresentamos métodos gulosos para a seleção de um subconjunto de funções heurísticas de um grande conjunto de possibilidades com o objetivo de reduzir o tempo de execução de algoritmos de busca. Trabalhos anteriores mostraram que a busca pode ser mais rápido se vários bancos de dados padrão menores são usados em vez de um grande banco de dados padrão. Nossos métodos são capazes de selecionar boas heurísticas de um grande conjunto de funções heurísticas para guiar uma A*. Implementamos nosso método em Fast Downward e mostrou empiricamente que produz heurísticas que superam o state-of-the-art de outros planejadores na Competição Internacional de Planejamento.
-
- \textbf{Palavras-chave}: Seleção Heurística; A$\sp{*}$
-\end{resumo}
-
-% resumo em inglês
-\begin{resumo}[ABSTRACT]
- \begin{otherlanguage*}{english}
-In this dissertation we present greedy methods for selecting a subset of heuristic functions from a large pool of possibilities with the objective of reducing the running time of search algorithms. Previous works showed that search can be faster if several smaller pattern databases are used instead of one large pattern database. Our methods are able to select good heuristics from a large set of heuristic functions to guide A* search. We implemented our method in Fast Downward and showed empirically that it produces heuristics which outperform the state-of-the-art planners in the International Planning Competition benchmarks.
-
-   \noindent 
-   \textbf{Keywords}: Heuristics Selection. A$\sp{*}$.
- \end{otherlanguage*}
-\end{resumo}
-
-\iffalse
-
-% resumo em francês 
-\begin{resumo}[Résumé]
- \begin{otherlanguage*}{french}
-    Il s'agit d'un résumé en français.
- 
-   \textbf{Mots-clés}: latex. abntex. publication de textes.
- \end{otherlanguage*}
-\end{resumo}
-
-% resumo em espanhol
-\begin{resumo}[Resumen]
- \begin{otherlanguage*}{spanish}
-   Este es el resumen en español.
-  
-   \textbf{Palabras clave}: latex. abntex. publicación de textos.
- \end{otherlanguage*}
-\end{resumo}
-\fi
-% ---
-
-% ---
 % inserir lista de ilustrações
+
 % ---
-\pdfbookmark[0]{\listfigurename}{lof}
-\listoffigures*
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
 \newpage
 %\cleardoublepage
 % ---
 
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\newpage
 % ---
-% inserir lista de tabelas
+
 % ---
 \pdfbookmark[0]{\listtablename}{lot}
 \listoftables*
@@ -860,46 +821,37 @@ In this dissertation we present greedy methods for selecting a subset of heurist
 %\cleardoublepage
 % ---
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% % List of algorithms
-% Requires packages algorithmic, algorithm
-%\pdfbookmark[0]{\listofalgorithms}{loa}
-%\listofalgorithms*
-% \cleardoublepage
-
-%\renewcommand{\printpartname}{\chaptitlefont{Chapter}}
-%\listofalgorithms
-%\addtocontents{loa}{\def\string\figurename{Algorithm}}
-
 % ---
-% inserir lista de abreviaturas e siglas
-% ---
-%\begin{siglas}
-%  \item[ABNT] Associação Brasileira de Normas Técnicas
-%  \item[abnTeX] ABsurdas Normas para TeX
-%\end{siglas}
+% RESUMOS
 % ---
 
-% ---
-% inserir lista de símbolos
-% ---
-%\begin{simbolos}
-%  \item[$ \Gamma $] Letra grega Gama
-%  \item[$ \Lambda $] Lambda
-%  \item[$ \zeta $] Letra grega minúscula zeta
-%  \item[$ \in $] Pertence
-%\end{simbolos}
-% ---
-
-% ---
-% inserir o sumario
-% ---
-\pdfbookmark[0]{\contentsname}{toc}
-\tableofcontents*
-%\cleardoublepage
-% ---
+% resumo em português
+% resumo em português
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+\begin{resumo}[RESUMO]
 
 
+{
+LATTES, Marvin Abisrror Zarate, M.Sc., \vspace{-1.0ex}Universidade Federal de Viçosa, Fevereiro 2016. Selecção de subconjuntos de funções heurísticas\vspace{-1.0ex} para o domínio independente de planejamento. Orientador: Levi Henrique Santana de Lelis.
+}
+
+{
+Nesta dissertação apresentamos métodos gulosos para a seleção de um subconjunto de funções heurísticas de um grande conjunto de possibilidades com o objetivo de reduzir o tempo de execução de algoritmos de busca. Trabalhos anteriores mostraram que a busca pode ser mais rápido se vários bancos de dados padrão menores são usados em vez de um grande banco de dados padrão. Nossos métodos são capazes de selecionar boas heurísticas de um grande conjunto de funções heurísticas para guiar uma A*. Implementamos nosso método em Fast Downward e mostrou empiricamente que produz heurísticas que superam o state-of-the-art de outros planejadores na Competição Internacional de Planejamento.
+}
+\end{resumo}
+
+% resumo em inglês
+\begin{resumo}[ABSTRACT]
+ \begin{otherlanguage*}{english}
+
+{
+LATTES, Marvin Abisrror Zarate, M.Sc., \vspace{-1.0ex}Universidade Federal de Viçosa, Febrary 2016. On selecting heuristic\vspace{-1.0ex} function subset for domain independent-planning. Adviser: Levi Henrique Santana de Lelis.
+}
+
+In this dissertation we present greedy methods for selecting a subset of heuristic functions from a large pool of possibilities with the objective of reducing the running time of search algorithms. Previous works showed that search can be faster if several smaller pattern databases are used instead of one large pattern database. Our methods are able to select good heuristics from a large set of heuristic functions to guide A* search. We implemented our method in Fast Downward and showed empirically that it produces heuristics which outperform the state-of-the-art planners in the International Planning Competition benchmarks.
+ \end{otherlanguage*}
+\end{resumo}
+% ---
 
 % ----------------------------------------------------------
 % ELEMENTOS TEXTUAIS
