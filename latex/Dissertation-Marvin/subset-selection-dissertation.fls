@@ -434,6 +434,7 @@ INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
 INPUT subset-selection-dissertation.lot
 INPUT subset-selection-dissertation.lot
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 OUTPUT chapters/chapter01.aux
 INPUT chapters/chapter01.tex
 INPUT chapters/chapter01.tex
@@ -488,7 +489,6 @@ INPUT ./images/marvinmaxfullacfG-right.png
 OUTPUT chapters/chapter03.aux
 INPUT chapters/chapter03.tex
 INPUT chapters/chapter03.tex
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri8.tfm
