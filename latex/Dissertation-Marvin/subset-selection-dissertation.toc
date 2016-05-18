@@ -3,8 +3,12 @@
 \select@language {english}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{List of Figures}{}{chapter*.5}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{List of Tables}{}{chapter*.5}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{RESUMO}{}{chapter*.5}
+\contentsline {chapter}{ABSTRACT}{}{section*.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introduction}}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Background work}{1}{section.1.1}
